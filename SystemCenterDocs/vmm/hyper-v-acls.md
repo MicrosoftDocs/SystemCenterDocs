@@ -129,7 +129,7 @@ Type | Specifies the traffic direction for which the ACL is applied (Inbound or 
 Action | Specifies whether the ACL allows or blocks traffic (Allow or Deny)
 LocalAddressPrefix | Specifies the source IP address or subnet that's used to identify traffic that should be filtered.
 LocalPortRange | Specifies the source port range that's used to identify traffic.
-RemoteAddressPrefix | Specifies the destnation IP address or subnet that's used to identify traffic for filtering.
+RemoteAddressPrefix | Specifies the destination IP address or subnet that's used to identify traffic for filtering.
 RemotePortRange | Specifies the destination port range that's used to  identify traffic.
 Protocol | Specifies the protocol for which the rule is applied.
 Priority | Specify the priority of the rule in in port ACL. Rules are applied according to order. Set a priority between 1 and 65535, where the lowest number has highest priority. Port ACLs  rules for objects managed by Network Controller should be set equal to or greater than 100. Network Controller doesn't support priority below 100.
