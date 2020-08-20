@@ -12,6 +12,12 @@ ms.topic: article
 
 # Author with System Center - Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 Authoring in Service Manager (SM) refers to using, authoring, and customizing management packs, which enable customizations in Service Manager. The articles in this section provide an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool.
 
 ## Introduction to authoring with the Service Manager Authoring Tool
