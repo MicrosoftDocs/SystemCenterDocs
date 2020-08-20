@@ -14,6 +14,12 @@ ms.technology: virtual-machine-manager
 
 # Set up networking for Hyper-V hosts and clusters in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 Read this article to set up network settings for Hyper-V hosts and clusters in the System Center - Virtual Machine Manager (VMM) compute fabric.
 
 You can apply network settings to a Hyper-V host or cluster using a logical switch. Applying a logical switch ensure that logical networks, and other network settings, are consistently assigned to multiple physical network adapters.

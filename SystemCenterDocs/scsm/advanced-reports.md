@@ -17,6 +17,12 @@ ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
 
 # Advanced analytical reports available in Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 The following analytical reports - which are presented as Microsoft Online Analytical Processing \(OLAP\) data cubes - are available in Service Manager. The data cubes that are included in Service Manager contain measures and dimensions.  
 
 ## Dimensions  

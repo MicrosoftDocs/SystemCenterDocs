@@ -13,6 +13,12 @@ ms.technology: virtual-machine-manager
 
 # Set up logical networks in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 
 Read this article to learn how to create logical networks in System Center - Virtual Machine Manager (VMM)
 
@@ -36,7 +42,7 @@ VMM virtual machine (VM) networks are based on logical networks. VM networks pro
 Before you start, it's important to understand how logical networks work in VMM.
 
 - **Automatic logical networks**: By default, VMM creates logical networks automatically. When you provision a host in the VMM fabric and there's no VMM logical network associated with a physical network adapter on that host, VMM automatically creates a logical network and associates it with an adapter. By default for the logical network VMM first DNS suffix label of the connection-specific DNS suffix. By default VMM also creates a VM network configured with **No isolation**.
-- **Manual logical networks**: When you create a logical network manually you specify:
+- **Manual logical networks**: When you create a logical network manually, you specify:
 	- **Network type**: You specify whether the network is isolated or not, and if it is how it's isolated. Then when you create VM networks based on the logical network they'll be created with the type of network you specified.
 		- **No isolation**: This is the simplest type of network model that specifies there's just a single network within which machines can connect to each other with no need to isolate these machines from each other. VM networks in VMM provide an interface through which VMs connect to a logical network, and in a no isolation model you'll have a single VM network mapped to a logical network.  
 	 	- **Isolation**: More often you'll want to isolate networks from each other. For example you might want to isolate networks that have different purposes, or you might be a provider who wants to host workloads for multiple tenants on a single logical network, with isolation for each tenant. In this case you'll have multiple VM networks mapped to a logical network. VM networks mapped to a logical network can be  isolated using VLANs/private VLANs, or network virtualization. Note that:  
@@ -86,7 +92,7 @@ If you don't want VMM to create logical and VM networks automatically you can di
 	- **VLAN**: If you're using VLANs with static IP addressing create corresponding network site for the VLAN and subnet pairs. If you're using DHCP create corresponding network sites for VLAN information only.
 	- **Network virtualization**: If you're using network virtualization create at least one network site with an associated IP subnet so that the logical network has an IP address pool.
 	- **Load balancer**: If the logical network will contain a load balancer create at least one network site with an associated IP subnet.
-5. If you're using an external network managed by a vendor network management console or virtual switch extension manager outside VMM you can configure settings in the vendor conole and import them into VMM.
+5. If you're using an external network managed by a vendor network management console or virtual switch extension manager outside VMM you can configure settings in the vendor console and import them into VMM.
 6. In **Host groups that can use this network site** select each host group to which you want to make the logical network available.
 7. In **Associated VLANs and IP subnets** click **Insert Row** to specify the settings that you want to assign to the network site. If you selecting PVLAN you'll need to add a **SecondaryVLAN** for each VLAN. Ensure that the VLANs and subnets are available in your physical network. If you leave the VLAN field empty VMM assigns a value of 0 to indicate that VLANs aren't used. In trunk mode 0 indicates native VLAN.
 8. In **Summary** review the settings and click **Finish**. When the job shows as **Completed** verify the logical network in **Logical Networks and IP Pools**.

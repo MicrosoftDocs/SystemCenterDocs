@@ -14,6 +14,12 @@ ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 
 # Preparing your environment for System Center Data Protection Manager
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
 
 

@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Plan VMM deployment
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 There are a number of planning steps you should take before you start deploying System Center - Virtual Machine Manager (VMM). These steps help  deployment processes go smoothly by making sure prerequisites are in place for installing and deploying VMM.
 

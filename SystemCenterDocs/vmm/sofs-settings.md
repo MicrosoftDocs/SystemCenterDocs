@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Manage SOFS settings in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 You can manage scale-out file server (SOFS) in the System Center - Virtual Machine Manager (VMM) fabric as follows:
 

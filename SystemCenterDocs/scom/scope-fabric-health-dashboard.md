@@ -14,6 +14,12 @@ ms.topic: article
 
 # Scoping the Fabric Health Dashboard to a specific cloud
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Using the Fabric Health Dashboard, you can see the overall cloud health and the health of its underlying fabric, you can also use the Fabric Health Dashboard to see the fabric health of any cloud you select. When you scope the dashboard to a particular cloud in the **Cloud State** view, the Fabric Health Dashboard displays a grouping of all of the components that are relevant for that cloud only. When you see a health issue with any component, you can then drill down to investigate a single component in terms of that cloud only. In this way, a fabric administrator can do root cause analysis by digging deeper into an issue, which can lead to other dashboard views, such as the network monitoring dashboard.
 
 ## Monitor the health of a cloud

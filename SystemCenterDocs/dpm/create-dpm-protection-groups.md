@@ -14,6 +14,12 @@ ms.author: raynew
 
 # Deploy protection groups
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 A System Center Data Protection Manager (DPM) protection group is a collection of data sources such as volumes, shares, or application workloads, which have common backup and restore settings. The protection group settings specify:
 
 -   **Data sources** - The servers, computers, and workloads you want to protect.

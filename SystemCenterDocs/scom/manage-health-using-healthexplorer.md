@@ -14,26 +14,32 @@ ms.assetid: 61005760-0977-4cd8-b76d-05558160f78f
 
 # Using Health Explorer to investigate problems
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Use Health Explorer to find out which monitor is reflecting a health state issue and review knowledge about the monitor and possible causes for actions related to it. In the **Active Alerts** view, click the alert to highlight it. The Health Explorer link under **Alert Actions** in the **Tasks** pane becomes active.  Health Explorer is also accessible when selecting a monitored object from any health state view in the console.  
-  
+
 By default, when the Health Explorer window opens, all monitors in a failed state are expanded. If a monitor contains other monitors, as in the case of a roll-up monitor, Health Explorer shows all child monitors in a hierarchical layout, displaying monitoring data for all dependent services and applications. To view more information about any dependent monitor, you can right-click that monitor, and then click **Monitor Properties** to open another Health Explorer window.  
 
 ## Monitor health states
 
 The following illustration shows monitors in a healthy state:  
-  
+
 ![Health explorer showing healthy states](./media/manage-health-using-healthexplorer/om2016-healthexplorer.png)  
-  
+
 The following illustration shows some monitors in a critical state:  
-  
+
 ![Critical monitors in Health Explorer](./media/manage-health-using-healthexplorer/om2016-healthexplorer-criticalmonitors.png)  
-  
+
 Click a monitor to view more information about the monitor in the **Details** pane. The **State Change Events** tab in the **Details** pane shows you when the state for the monitor changed, and the details give you information for the context of the state change:  
-  
+
 ![Details on State Change Events tab](./media/manage-health-using-healthexplorer/om2016-healthexplorer-statechangeevents.png)  
-  
+
 ## Next steps
- 
+
 - Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md).  
 
 - To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](manage-agent-resolve-heartbeat.md).  

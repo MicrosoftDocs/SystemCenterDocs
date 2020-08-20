@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Deploy VMM for high availability
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 For resilience and scalability you can deploy System Center - Virtual Machine Manager (VMM) in high availability mode.
 

@@ -14,6 +14,12 @@ ms.assetid: acd07be8-9878-4997-86c4-4a932f5e27e2
 
 # Reports for network monitoring in Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center - Operations Manager provides the reports described in the following table. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**.   
 
 > [!NOTE]  

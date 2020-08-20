@@ -14,6 +14,12 @@ ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
 
 # What's supported and what isn't for DPM?
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 This topic summarizes some of the common support information you might need when deploying and maintaining System Center - Data Protection Manager.
 
 

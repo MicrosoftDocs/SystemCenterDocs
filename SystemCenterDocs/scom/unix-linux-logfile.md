@@ -14,6 +14,12 @@ ms.topic: article
 
 # UNIX or Linux log file
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The  **UNIX/Linux Log File Monitoring**  template lets you create an alert when a particular text is detected in a log file.
 
 ## Scenarios

@@ -14,6 +14,12 @@ ms.topic: article
 
 # Getting Started
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Welcome to Microsoft System Center - Operations Manager.  The following topics provide information to help you get started learning about Operations Manager in order to develop an effective architecture design plan that supports your requirements, a deployment strategy to successfully perform an installation of Operations Manager in your environment, and finally operational guidance so you can successfully use, manage and maintain your deployment.  
 
 ## Getting started topics

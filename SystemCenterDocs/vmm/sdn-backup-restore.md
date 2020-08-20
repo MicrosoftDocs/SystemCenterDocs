@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Back up and restore the SDN infrastructure
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 This article describes the backup and recovery process of a software defined network (SDN) infrastructure in the System Center Virtual Machine Manager (VMM) fabric, and provides any applicable recommendations for the process completion.
 

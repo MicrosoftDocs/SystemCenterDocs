@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to upgrade a management server - upgrading a distributed management group
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 When you upgrade a distributed management group, you start by upgrading each of the management servers in your management group. There are a number of pre-upgrade tasks that you must perform first. For more information, see [Pre-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-overview.md).
 
 > [!IMPORTANT]

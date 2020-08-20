@@ -14,6 +14,12 @@ ms.author: v-anesh
 
 # Run antivirus software on the DPM server
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 DPM is compatible with most popular antivirus software products. We recommend
 the following steps to avoid conflicts:
 
@@ -65,4 +71,4 @@ Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup"/s/f 
 ```
 
 ## Next steps
-[Set up DPM logging](set-up-dpm-logging.md) 
+[Set up DPM logging](set-up-dpm-logging.md)

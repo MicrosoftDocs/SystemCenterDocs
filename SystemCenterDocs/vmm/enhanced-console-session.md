@@ -13,6 +13,13 @@ ms.technology: virtual-machine-manager
 ---
 
 # Enable enhanced console session in VMM
+
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 This article provides information about how to configure enhanced console session in System Center - Virtual Machine Manager (VMM).
 
 Console connect in VMM provides a way to connect to the VM without a network connection to it.  For information on deploying VMM console, see [install VMM console](install-console.md). Prior to 1801, the console connect in VMM supported only basic session where clipboard text can only be pasted through **Type Clipboard Text menu** option.

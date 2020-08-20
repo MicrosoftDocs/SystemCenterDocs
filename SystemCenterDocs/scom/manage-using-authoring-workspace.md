@@ -13,6 +13,13 @@ ms.assetid: 8a116b94-6bc4-4160-b539-4bd542b8ee5a
 ---
 
 # Using the Authoring Workspace in Operations Manager
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The options in the Authoring workspace allow you to create new monitoring scenarios. This could be to change or add monitoring in an existing management pack or to create a new management pack for an application that doesn't have one.  
 
 Authoring is described in detail in the [Operations Manager Authoring Guide](https://social.technet.microsoft.com/wiki/contents/articles/15251.system-center-management-pack-authoring-guide.aspx). The sections below describe the different options in the Authoring workspace.  

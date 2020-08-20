@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to upgrade a gateway server
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 After you upgrade the management servers in your management group, you upgrade any gateway servers. The procedure to upgrade is performed locally on the gateway server. You can then verify whether the upgrade is successful. Before you begin the upgrade process, make sure that your gateway server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 ## To upgrade a gateway server

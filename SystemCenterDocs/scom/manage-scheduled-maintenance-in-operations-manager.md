@@ -13,6 +13,13 @@ ms.assetid: 78329674-d244-44cb-b03e-6dc3b6362468
 ---
 
 # Scheduled Maintenance in Operations Manager
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 This topic details the default schedule for System Center Operations Manager maintenance tasks.  
 
 ## Maintenance Tasks Schedule  

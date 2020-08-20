@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Add service templates to the VMM library
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Read this article to learn about setting up service templates in the System Center - Virtual Machine Manager (VMM) library.
 

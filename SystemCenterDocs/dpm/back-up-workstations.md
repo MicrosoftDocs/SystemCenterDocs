@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/30/2017
 title: Back up client computers with DPM
 ms.technology: data-protection-manager
@@ -13,6 +13,12 @@ ms.author: raynew
 ---
 
 # Back up client computers with DPM
+
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
 
 You can deploy System Center Data Protection Manager (DPM) to back up client computers. Depending on the client operating system, you can back up volumes, shares, folders, files, bare metal and system state, and deduped volumes.
 
@@ -77,7 +83,7 @@ Before you deploy DPM to protect client computer data verify the deployment prer
 
     -   Comp3.abc.domain.com
 
-    Note that if DPM can't find the text file or any of the computers it will add them to the log file. Click **Failed to add machines**to open the log file. To add new client computers to an existing protection group you right-click the group name and select **Add client computers**.
+    Note that if DPM can't find the text file or any of the computers it will add them to the log file. Click **Failed to add machines** to open the log file. To add new client computers to an existing protection group you right-click the group name and select **Add client computers**.
 
     -   On the **Specify Inclusions and Exclusions** page, specify the folders to include or exclude for protection on the selected computers. To select from a list of well-known folders, such as **Documents**, click the drop-down list. Note that:
 
@@ -87,7 +93,7 @@ Before you deploy DPM to protect client computer data verify the deployment prer
 
         -   When you include a well-known folder such as **Documents**, DPM locates the **Documents** folder for all users on the computer, and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, DPM will back up both folders.
 
-        -   In the **Folder** column you type the folder names using variables such as *programfiles*, or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
+        -   In the **Folder** column you type the folder names using variables such as *program files*, or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
 
         -   You can select **Allow users to specify protection members** to give your end users the choice to add more folders on the computer that they want to back up. However, the files and folders you have explicitly excluded as an administrator cannot be selected by the end user.
 

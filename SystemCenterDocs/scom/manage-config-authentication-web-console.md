@@ -14,6 +14,12 @@ ms.topic: article
 
 # Configure authentication with the Web console
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 ## Configure SSL encryption
 
 The following steps are necessary to configure Secure Sockets Layer (SSL) encryption after the Operations Manager Web console server has been installed on an Internet Information Services (IIS) 7.0 and higher web server.  Before performing these steps, you should first review  [Configuring Secure Sockets Layer in IIS 7](https://technet.microsoft.com/library/cc771438%28v=ws.10%29.aspx) and configure IIS to enable SSL for the web server hosting the Web console.  

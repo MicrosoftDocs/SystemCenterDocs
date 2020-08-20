@@ -14,6 +14,12 @@ ms.topic: article
 
 # OLE DB data source template
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 _OLE DB_ (Object Linking and Embedding Database) is a Microsoft technology for accessing a variety of data sources by using a common method to connect to different databases such as Microsoft SQL Server.
 
 The  **OLE DB Data Source**  template lets you monitor the availability and performance of any database that can be accessed with OLE DB. One or more watcher nodes connect to the database to verify its availability and test its performance. The watcher nodes can test the connection to the database or measure the time taken to perform a particular query.

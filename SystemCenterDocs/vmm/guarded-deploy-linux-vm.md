@@ -13,6 +13,13 @@ monikerRange: '>sc-vmm-1801'
 
 # Provision a shielded Linux virtual machine in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
+
 This article describes how to deploy Linux shielded virtual machines (VMs) in System Center 1801 - Virtual Machine Manager (VMM).
 
 

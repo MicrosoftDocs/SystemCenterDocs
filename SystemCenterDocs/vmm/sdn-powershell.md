@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Set up Software Defined Network (SDN) components in the VMM fabric using PowerShell
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 System Center - Virtual Machine Manager (VMM) can be used to deploy and manage a Software Defined Network (SDN) infrastructure.
 

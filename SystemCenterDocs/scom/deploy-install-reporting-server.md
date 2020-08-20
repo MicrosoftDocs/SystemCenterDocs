@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to install the Operations Manager Reporting server
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 In this procedure, the Reporting server is installed on a stand-alone server that is hosting the SQL Server database and SQL Server Reporting Services.
 
 > [!WARNING]

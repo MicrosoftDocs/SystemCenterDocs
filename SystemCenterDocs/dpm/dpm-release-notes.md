@@ -22,11 +22,15 @@ This article lists the release notes for System Center 2019 - Data Protection Ma
 
 ::: moniker range="sc-dpm-1807"
 
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
 This article lists the release notes for System Center 1807 - Data Protection Manager (DPM).
 
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1801"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
 
 This article lists the release notes for System Center 1801 - Data Protection Manager (DPM).
 

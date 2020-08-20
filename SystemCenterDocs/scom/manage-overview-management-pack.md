@@ -14,6 +14,12 @@ ms.topic: article
 
 # What is in an Operations Manager management pack?
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Management packs typically contain monitoring settings for applications and services. After a management pack is imported into a management group, System Center - Operations Manager immediately begins monitoring objects based on default configurations and thresholds that are defined in the management pack.  
 
 Each management pack can contain any or all of the following parts:  

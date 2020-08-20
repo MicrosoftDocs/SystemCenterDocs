@@ -13,6 +13,11 @@ ms.technology: virtual-machine-manager
 
 #  Set up a disks and a VM template to deploy shielded VMs
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 You deploy shielded virtual machines in the System Center - Virtual Machine Manager (VMM) compute fabric using a signed virtual machine hard disk (VHDX), and optionally with a VM template. This article describes how to add signed template disks to VMM, configure a shielding utility disk, deploy new shielded VMs and convert existing VMs to shielded VMs in VMM.
 

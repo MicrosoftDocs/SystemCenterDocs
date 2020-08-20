@@ -14,6 +14,12 @@ ms.topic: article
 
 # Supported UNIX and Linux operating system versions
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2019 - Operations Manager.

@@ -14,6 +14,12 @@ ms.author: raynew
 
 # Get ready to deploy DPM servers
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 There are a few planning steps to consider before you begin to deploy your System Center Data Protection Manager (DPM) servers:
 
 -   [Plan for DPM server deployment](#BKMK_Server) - Figure out how many DPM servers you'll need and where to place them.

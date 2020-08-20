@@ -13,6 +13,12 @@ ms.assetid: 086970a5-845c-4a67-b164-a15f0af3213d
 ---
 # How to enable an instant message notification channel
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using an instant message.  
 
 Before you begin, gather the following information from your instant message server:  

@@ -14,6 +14,12 @@ ms.topic: article
 
 # Configure authentication for the Reporting server
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Follow these steps to configure the Operations Manager Reporting server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS) compliant. Enabling FIPS compliance for System Center - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS-compliant.  
 
 

@@ -15,6 +15,12 @@ monikerRange: '>=sc-dpm-2016'
 
 # System Center – Data Protection Manager build versions
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 This article describes how to determine your current Microsoft System Center – Data Protection Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 > [!NOTE]

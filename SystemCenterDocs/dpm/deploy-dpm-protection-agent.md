@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/01/2016
 title: Deploy the DPM protection agent
 ms.technology: data-protection-manager
@@ -13,6 +13,12 @@ ms.assetid: 502fff45-79b5-477b-af4f-3b8a39bdde1a
 ---
 
 # Deploy the DPM protection agent
+
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
 
 The System Center Data Protection Manager (DPM) protection agent is software that you install on each computer that contains data you
 want to back up with DPM. It consists of two components - the protection agent itself and an agent coordinator. Here's what it does:

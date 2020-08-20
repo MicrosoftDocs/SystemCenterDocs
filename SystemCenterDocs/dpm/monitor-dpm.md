@@ -14,6 +14,12 @@ ms.author: raynew
 
 # Monitor DPM
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 You can monitor a single System Center Data Protection Manager (DPM) server from the DPM Administrator console, multiple DPM servers from the Central Console, or monitor DPM activity with Operations Manager.
 
 ## Monitor with the DPM console

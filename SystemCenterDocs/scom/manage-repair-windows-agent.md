@@ -13,6 +13,12 @@ ms.topic: conceptual
 ---
 
 # How to repair the Windows agent
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
 Use the one of the following procedures to repair the installation of the Windows agent on agent-managed computers.  
 
 ::: moniker range=">=sc-om-1807"

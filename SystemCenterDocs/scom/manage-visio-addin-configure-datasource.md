@@ -13,6 +13,12 @@ ms.assetid: 2b286c07-c702-4ff9-8e4c-2865b34cf53d
 ---
 # Configure the Operations Manager data source in Visio
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Before Visio can interact with System Center - Operations Manager or version 1801, you need to configure Operations Manager as a data source for your Visio document. You also need to configure the Operations Manager Web console address to enable opening the Health Explorer or Alert view directly from Visio. You need to configure these items for each Visio document you create.  
 
 >[!NOTE]

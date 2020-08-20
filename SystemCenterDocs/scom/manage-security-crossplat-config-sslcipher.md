@@ -14,6 +14,12 @@ ms.topic: article
 
 # Configuring SSL ciphers
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center - Operations Manager correctly manages UNIX and Linux computers without changes to the default Secure Sockets Layer (SSL) cipher configuration. For most organizations, the default configuration is acceptable, but you should check your organization's security policies to determine whether changes are required.  
 
 ## Using the SSL cipher configuration  
@@ -28,7 +34,7 @@ If the default SSL cipher configuration meets your organization's security polic
 
 If the default SSL cipher configuration contradicts your organization's security policy, the Operations Manager UNIX and Linux agent provides a configuration option to specify the ciphers that SSL can accept on port 1270. This option can be used to control the ciphers and bring the SSL configuration into conformance with your policies. After the Operations Manager UNIX and Linux agent is installed on each managed computer, the configuration option must be set by using the procedures described in the next section. Operations Manager does not provide any automatic or built-in way to apply these configurations; each organization must perform the configuration by using an external mechanism that works best for it.  
 
-### Setting the sslCipherSuite configuration option 
+### Setting the sslCipherSuite configuration option
 
 The SSL ciphers for port 1270 are controlled by setting the **sslciphersuite** option in the OMI configuration file, **omiserver.conf**. The **omiserver.conf** file is located in the directory `/etc/opt/omi/conf/`.  
 

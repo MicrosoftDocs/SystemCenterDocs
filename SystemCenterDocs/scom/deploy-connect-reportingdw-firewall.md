@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: Connect Reporting Data Warehouse Across a Firewall
 description: This article describes how to configure a System Center Operations Manager Report server behind a firewall.
 author: JYOTHIRMAISURI
@@ -13,6 +13,12 @@ ms.topic: article
 ---
 
 # Connecting to the Reporting Data Warehouse Across a Firewall
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
 
 This section describes how to configure your environment to support placing the Report data warehouse behind a firewall for System Center Operations Manager.
 
@@ -45,6 +51,6 @@ A "Could not verify if current user is in sysadmin Role" error message might dis
 
 ## Next steps
 
-* Review the list of [reports installed with Operations Manager](manage-reports-installed-during-setup.md), to understand the different types of reports that are available and their purpose. 
+* Review the list of [reports installed with Operations Manager](manage-reports-installed-during-setup.md), to understand the different types of reports that are available and their purpose.
 
-* [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats. 
+* [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.

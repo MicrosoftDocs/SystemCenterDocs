@@ -14,6 +14,12 @@ ms.assetid: f210ed66-1bed-4571-b506-868258f33329
 
 # Viewing network devices and data in Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 After System Center Operations Manager discovers your network devices, you can view information about the devices using the following procedures.
 
 > [!IMPORTANT]
@@ -167,6 +173,6 @@ Things to try in the vicinity view:
 
 - To understand how to configure what to monitor and alert with your network devices, see [How to configure monitoring of network devices](manage-monitor-networkdevice-configure-monitoring.md).  
 
--  Operations Manager includes several reports that help analyze performance of monitored network devices.  To learn more, see [Reports for network monitoring in Operations Manager](manage-monitor-networkdevice-reports.md). 
+-  Operations Manager includes several reports that help analyze performance of monitored network devices.  To learn more, see [Reports for network monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).
 
-- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md). 
+- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md).

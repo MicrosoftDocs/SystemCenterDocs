@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Manage storage in Storage Spaces Direct in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 This article describes how to manage storage deployed with Storage Spaces Direct (S2D) in the System Center - Virtual Manager (VMM) fabric.
 

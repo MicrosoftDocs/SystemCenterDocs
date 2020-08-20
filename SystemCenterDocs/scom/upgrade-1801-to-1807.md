@@ -15,6 +15,9 @@ ms.topic: article
 
 
 # How to upgrade to Operations Manager version 1807
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
 This article describes how to perform a successful upgrade of System Center Operations Manager version 1801 to 1807. For more information about this upgrade and what issues are addressed, see [KB4133779](https://support.microsoft.com/help/4133779).
 
 ## Requirements

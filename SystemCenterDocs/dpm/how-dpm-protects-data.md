@@ -5,13 +5,19 @@ ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/01/2017
 title: How does DPM work?
 ms.technology: data-protection-manager
 ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
 ---
 # How does DPM work?
+
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
 
 The method System Center Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It is intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers Disk-Based protection processes, Tape-Based protection processes, recovery process, as well as the protection policy.
 

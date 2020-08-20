@@ -14,6 +14,12 @@ ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
 
 # Back up Exchange with DPM
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 ::: moniker range="<=sc-dpm-1807"
 
 System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013 and Exchange 2016. To ensure your entire Exchange deployment is protected, configure protection for volumes, system state, or full bare metal recovery. This article provides the steps for configuring DPM so you can protect your Exchange deployment. If you have a large Exchange deployment, use a database availability group (DAG) to scale protection for Exchange mailbox databases. In addition to backing up mail databases, to fully protect your Exchange deployment you should back up Exchange Server roles such as the Client Access Server, or the transport service on mailbox servers.

@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to run, save, and export a report
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 You can view reports in Operations Manager by selecting it, entering the required parameters and executing it.  Once you run it, you can also choose to save the configuration to a linked report, which deploys that report with different settings.  You can export a report to another file format, such as PowerPoint, Image, PDF, Microsoft Word, or Microsoft Excel for your reporting users.  
 
 Before exporting or saving the report parameters, you must first run the report.

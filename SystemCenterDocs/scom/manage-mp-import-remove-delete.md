@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to import, export, and remove an Operations Manager management pack
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 There are numerous management packs available for System Center Operations Manager. A management pack must be installed for use by Operations Manager in order to discover and monitor one or more components depending on its complexity, and the overall health of the IT service delivered by the organization. Over time, the knowledge of what to discover and monitor, and how to monitor and report on the operational data is updated in newer releases of a management pack.  These management packs must be reimported into the management group when updated by the vendor or internally if developed by the team responsible for it.  When the management pack is no longer required to monitor , you can remove it from the management group.
 
 

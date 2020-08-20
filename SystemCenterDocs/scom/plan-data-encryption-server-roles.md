@@ -14,13 +14,19 @@ ms.topic: article
 
 # Data Encryption for Web console and Reporting server Connections
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 You can configure the Operations Manager Web console and Reporting server to use Secure Sockets Layer (SSL) connections to ensure that both incoming requests and outbound responses are encrypted prior to transmission.  Operations Manager can use Federal Information Processing Standard (FIPS) compliant algorithms for secure data encryption when accessing the Web console and when running reports in the Operations console from the Reporting server.
 
 Separate unique certificates will need to be requested and generated before you can proceed with configuring SSL connections for either role.  
 
 ## Web console encryption
 
-When you install the web console, you must specify a web site for use with the web console. The default port for accessing the web console from a browser using Windows-based authentication is the same port as the web site that is selected when the web console was installed. If the web site chosen has been configured to use SSL, then you must also select Enable SSL. 
+When you install the web console, you must specify a web site for use with the web console. The default port for accessing the web console from a browser using Windows-based authentication is the same port as the web site that is selected when the web console was installed. If the web site chosen has been configured to use SSL, then you must also select Enable SSL.
 
 You must also select an authentication mode for use with the web console. Use mixed authentication for intranet scenarios and network authentication for extranet scenarios.
 
@@ -47,16 +53,16 @@ Enabling FIPS compliance for System Center Operations Manager requires that the 
 
 The following is a summarized list of steps required to configure FIPS for your Web console server.
 
--	Install the Microsoft.EnterpriseManagement.Cryptography.dll. 
--	Edit several instances of the **machine.config** file. 
--	Edit the **WebHost\web.config** file. 
--	Edit the **MonitoringView\web.config** file. 
+-	Install the Microsoft.EnterpriseManagement.Cryptography.dll.
+-	Edit several instances of the **machine.config** file.
+-	Edit the **WebHost\web.config** file.
+-	Edit the **MonitoringView\web.config** file.
 
 You will need the Global Assembly Cache Tool, gacutil.exe. This utility is part of the Windows .NET Framework SDK, which is a installation component included in the Windows Software Development Kit.  For more information, see [Gacutil.exe (Global Assembly Cache Tool)](https://msdn.microsoft.com/library/ex0ss12c.aspx).
 
 The following is a summarized list of steps required to configure FIPS for your Reporting server:
 
-- Change the configuration for the **ReportServer** and **ReportManager** **Web.config** file. 
+- Change the configuration for the **ReportServer** and **ReportManager** **Web.config** file.
 
 ## Certificates
 
@@ -69,4 +75,4 @@ Separate certificates will need to be requested and generated before you can pro
 
 - To configure the Web console to use SSL encryption or support FIPS compliance, please review [Configure Authentication with the Web console](manage-config-authentication-web-console.md)
 
-- To configure the Reporting server to support FIPS compliance, please review [Configure Authentication with the Reporting server](manage-config-authentication-reporting-server.md) 
+- To configure the Reporting server to support FIPS compliance, please review [Configure Authentication with the Reporting server](manage-config-authentication-reporting-server.md)

@@ -13,6 +13,12 @@ ms.technology: virtual-machine-manager
 
 # Deploy a highly available VMM library
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 This article describes the steps for deploying a highly available System Center - Virtual Machine Manager (VMM) library. You set up a Windows failover cluster running the File Server role. Then you create file shares on the cluster, and assign them as VMM library shares.
 
 
