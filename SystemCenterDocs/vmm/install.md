@@ -13,6 +13,12 @@ ms.technology: virtual-machine-manager
 
 # Install VMM
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 Use this article to install the System Center - Virtual Machine Manager (VMM) management server.
 
 ## Before you start
@@ -158,7 +164,7 @@ Group Managed Service Account (gMSA) helps improve the security posture and prov
 VMM 2019 supports the use of gMSA for *Management server service account*.
 
 >[!NOTE]
-> gMSA, when used as VMM Service account, needs to have *logon as a service* and *Replace a process level token* permissions. 
+> gMSA, when used as VMM Service account, needs to have *logon as a service* and *Replace a process level token* permissions.
 
 **Prerequisites**
 

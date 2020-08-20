@@ -14,6 +14,13 @@ monikerRange: '>= sc-vmm-1801 <= sc-vmm-1807'
 
 # Manage VMs using Azure AD-based authentication & authorization and region-specific Azure subscriptions
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
+
 This article provides information about how to manage the Azure Resource Manager-based and region-specific Azure subscriptions using System Center - Virtual Machine Manager (VMM).
 
 You can add Microsoft Azure subscriptions to System Center 2016 - Virtual Machine Manager (VMM) and later, and perform required actions. [Learn more](azure-subscription.md). The VMM Azure plugin allows management of Azure subscriptions through certificate-based authentication and authorization, and VMs in public Azure region.

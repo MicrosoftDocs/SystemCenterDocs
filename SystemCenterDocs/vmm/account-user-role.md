@@ -14,6 +14,7 @@ ms.technology: virtual-machine-manager
 
 # Set up user roles in VMM
 
+
 This article describes how to set up System Center - Virtual Machine Manager (VMM) user roles.
 
 ## Before you start

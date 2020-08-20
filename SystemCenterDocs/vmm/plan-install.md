@@ -13,6 +13,13 @@ ms.technology: virtual-machine-manager
 
 # Plan VMM installation
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
+
 This article helps you to plan all the elements required for a successful System Center - Virtual Machine Manager (VMM) installation and includes information for releases VMM 2016 and later. Use these requirements as applicable for the VMM version you plan to install.
 
 For additional information on the supported versions of hardware and software, see the system requirements article for the version you install.
