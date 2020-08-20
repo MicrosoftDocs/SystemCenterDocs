@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Add file-based resources to the VMM library
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 After you've [set up](manage-library-server.md) the System Center - Virtual Machine Manager (VMM) library, use this article if you want to add file-based resources to the library, and mark objects in the library as equivalent.
 

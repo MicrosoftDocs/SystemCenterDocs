@@ -14,7 +14,11 @@ ms.technology: virtual-machine-manager
 
 # Integrate load balancing with VMM service templates
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Read this article to learn about integrating Windows network load balancing (NLB), and hardware load balancers with System Center - Virtual Machine Manager (VMM) service templates.
 

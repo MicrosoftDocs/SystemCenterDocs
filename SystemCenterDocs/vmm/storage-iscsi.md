@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Set up a Microsoft iSCSI Target Server in the VMM storage fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Microsoft iSCSI Target Server is a server role that enables a Windows server machine to function as a storage device. This article explains how to set up a Microsoft iSCSI Target Server in System Center - Virtual Machine Manager (VMM) storage.
 

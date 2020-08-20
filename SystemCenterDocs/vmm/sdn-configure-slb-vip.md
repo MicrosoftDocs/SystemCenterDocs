@@ -13,6 +13,12 @@ monikerRange: '>sc-vmm-2016'
 ---
 #	Configure SLB VIPs through VMM service templates
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 Software Defined Networking (SDN) in Windows 2016 can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 only supports deploying SLB Virtual IPs (VIPs) using power shell.
 
 System Center - Virtual Machine Manager (VMM) 1801 and later supports configuration of SLB VIPs while deploying multi-tier application by using service templates and also supports both public and internal load balancing.

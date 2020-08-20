@@ -21,11 +21,17 @@ This article describes how to create logical switches in the System Center - Vir
 
 ::: moniker range="sc-vmm-1801"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+
 [!INCLUDE [network-switch-2016-1801.md](../includes/network-switch-2016-1801.md)]
 
 ::: moniker-end
 
 ::: moniker range=">=sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
 
 [!INCLUDE [network-switch-1807.md](../includes/network-switch-1807.md)]
 
