@@ -14,6 +14,12 @@ ms.topic: article
 
 # Management packs installed with Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 When you install Operations Manager, a component of System Center, a number of management packs are installed as well. The following table describes the purposes of those management packs.  
 
 |Purpose|Associated management packs|  

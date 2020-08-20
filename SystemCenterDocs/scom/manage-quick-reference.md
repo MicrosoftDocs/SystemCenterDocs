@@ -14,6 +14,12 @@ ms.topic: article
 
 # Quick reference to Operations Manager tasks
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The following table gives a quick reference for where to perform common tasks and links to relevant information.
 
 |To perform this task|Do this|
@@ -36,15 +42,12 @@ The following table gives a quick reference for where to perform common tasks an
 |Stop monitoring a computer temporarily.|In the **Monitoring** workspace, click **Windows Computers**, right-click the computer you want to stop monitoring, and click **Maintenance Mode**. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](manage-maintenance-mode-overview.md).|
 |Monitor health of management group|In the **Monitoring** workspace, navigate to **Operations Manager\Management Group Health** to see important health status information for components and agents in the management group. For more information, see [Monitor health of the management group](manage-monitor-health-mg.md).|
 |Migrate the Operations Manager databases|If you need to upgrade your SQL Server or move to a server on new hardware, perform the steps described in the following articles to move the operational or data warehouse database<br>-  [How to move the Operational database](manage-move-opsdb.md)<br>-  [How to move the Reporting DW database](manage-move-omdwdb.md).|
-|Configure data retention of Operations Manager databases|To maintain data for a set period of time and maintain optimal performance, you can configure data retention in the Operations Manager and data warehouse database.  Perform the steps described in the following articles<br>-  [How to configure grooming for the Operational database](manage-omdb-grooming-settings.md)<br>-  [How to configure grooming for the Reporting DW database](manage-omdwdb-grooming-settings.md).| 
+|Configure data retention of Operations Manager databases|To maintain data for a set period of time and maintain optimal performance, you can configure data retention in the Operations Manager and data warehouse database.  Perform the steps described in the following articles<br>-  [How to configure grooming for the Operational database](manage-omdb-grooming-settings.md)<br>-  [How to configure grooming for the Reporting DW database](manage-omdwdb-grooming-settings.md).|
 |How and when to clear the cache|Understand how and when to clear the cache when troubleshooting console or agent issues by performing the steps described in<br>- [How and when to clear the cache](manage-clear-healthservice-cache.md)|
 |Configure communication from Operations Manager to SQL Server|If you need to move the Operations Manager databases to a different SQL Server, reconfigure the SQL Server instance, or implement SQL Always On, perform the steps described in [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md).|
-|Integrate with Azure Monitor|[Integration with Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/om-agents) logs provides an analytics platform that compliments the Data Warehouse to deliver improved analytics, query performance across large data volumes, correlate log data from Azure resources, and longer retention of monitoring data.| 
+|Integrate with Azure Monitor|[Integration with Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/om-agents) logs provides an analytics platform that compliments the Data Warehouse to deliver improved analytics, query performance across large data volumes, correlate log data from Azure resources, and longer retention of monitoring data.|
 ||
 
 ## Next steps
 
 To learn more about what to manage, how to manage, or how to support an Operations Manager management group, see the [Operations Guide for System Center - Operations Manager](manage-operations-guide-overview.md)
-
-
-

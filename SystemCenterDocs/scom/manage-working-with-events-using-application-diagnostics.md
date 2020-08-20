@@ -13,6 +13,13 @@ ms.assetid: caf7af6f-5967-48a0-b0e5-47cb0e0314f7
 ---
 
 # Working with events by using Application Diagnostics
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Working with alerts is a standard part of working with System Center - Operations Manager. Alerts for .NET application monitoring show you the information you will recognize from other alerts, such as the general information and product knowledge. However, a .NET application alert also provides a link in the alert description. This link opens the event that raised the alert in Application Diagnostics. Here you can see far more information that will help you troubleshoot and identify your problem and solution.  
 
 > [!NOTE]  

@@ -14,6 +14,10 @@ ms.technology: virtual-machine-manager
 
 # Manage VMM
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 The articles in this section describe how to configure and manage System Center Virtual Machine Manager (VMM) on a regular basis. They include information about setting up the compute, networking, and storage fabric, and describes how to deploy virtual machines and services.

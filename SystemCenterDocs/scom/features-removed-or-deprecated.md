@@ -1,5 +1,5 @@
 ---
-title: Features removed or deprecated in System Center 
+title: Features removed or deprecated in System Center
 description: This topic lists the features and functionality that have been removed or replaced in System Center Operations Manager 1801.
 author: JYOTHIRMAISURI
 ms.author: magoedte
@@ -14,6 +14,10 @@ ms.assetid:
 ---
 
 # Features deprecated from System Center Operations Manager 1801
+
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
 
 The features and capabilities listed below are included in System Center Operations Manager 1801 but planned to be removed in a future release.  Applications, code, or usage that depends on these features will continue to function in this release until otherwise specified. This list is subject to change in subsequent releases and may not include every deprecated feature or capability.
 

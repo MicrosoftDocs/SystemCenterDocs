@@ -14,7 +14,11 @@ ms.technology: virtual-machine-manager
 
 # Run a live migration in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 
 This article describes how to run a live migration of virtual machines (VMs) or VM storage, in the System Center - Virtual Machine Manager (VMM) fabric. VMM provides live migration support between standalone Hyper-V hosts, or between cluster hosts that have live migration enabled. [Learn more](migrate.md#live-migration).

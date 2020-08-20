@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Set up port profiles in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Use this article to learn about and set up uplink port profiles and virtual network adapter port profiles in the System Center  Virtual Machine Manager (VMM) networking fabric.
 

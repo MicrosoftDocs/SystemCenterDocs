@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Add an existing SOFS to the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 You can add an existing scale-out file server (SOFS) to the System Center - Virtual Machine Manager (VMM) storage fabric. When you add a file server, VMM automatically discovers all file shares on it.
 

@@ -13,6 +13,12 @@ ms.assetid: e5b25d0f-9316-42d2-aeb9-4ba0b0afc6cf
 ---
 # Agentless Monitoring in Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center Operations Manager can gather performance and availability data on a computer that does not have an agent installed by using a proxy agent that is installed on another computer. Use agentless-monitoring of computers when it is not possible or desirable to install an agent on a computer.  
 
 An agentless-managed computer is a Windows-based computer that is discovered by using the Operations console. You assign a management server or agent-managed computer to provide remote (proxy) agent functionality for the computers.  

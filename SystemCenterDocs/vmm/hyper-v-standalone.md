@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Provision a cluster from Hyper-V standalone hosts in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Use the instructions in this article to create a cluster from standalone Hyper-V host servers that are managed in the System Center - Virtual Machine Manager (VMM) fabric.
 

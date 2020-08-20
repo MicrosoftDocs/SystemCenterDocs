@@ -14,6 +14,12 @@ ms.assetid: 4a96716d-49f8-48a8-ac34-ca69e8f6363b
 
 # Not monitored and gray agents
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 In System Center Operations Manager, you may see discovered objects in the Operations console displayed as not monitored or gray, as shown in the following illustration.  
 
 ![State view showing "not monitored"](./media/manage-agents-not-healthy/om2016-operations-console-windowscomputer-healthstate.png)  

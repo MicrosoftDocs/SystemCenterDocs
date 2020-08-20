@@ -14,6 +14,12 @@ ms.technology: virtual-machine-manager
 
 # Scenario: Deploy a private VMM cloud
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 This article provides an overview of System Center - Virtual Machine Manager (VMM) private clouds.
 
 A private cloud is a cloud that is provisioned and managed on-premises by an organization. It's deployed using an organization’s own hardware to leverage the advantages of a private cloud model.

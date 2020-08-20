@@ -14,6 +14,12 @@ ms.topic: article
 
 # Configuring a Firewall for Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 This section describes how to configure your firewall to allow communication between the different Operations Manager features on your network.  
 
 ## Port assignments
@@ -27,7 +33,7 @@ The following table shows Operations Manager feature interaction across a firewa
 |Gateway server|5723 --->|management server|No||
 |Management server|1433/TCP ---><br>  1434/UDP ---> <br> 135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Reporting data warehouse|No|Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>2</sup>|
 |Reporting server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
-|Operations console|5724 --->|management server|No|| 
+|Operations console|5724 --->|management server|No||
 |Operations console|443 --->|Management Pack Catalog web service|No|Supports downloading management packs directly in the console from the catalog.<sup>1</sup>|
 |Connector framework source|51905 --->|management server|No||
 |Web console server|5724 --->|management server|No||
@@ -51,7 +57,7 @@ The following table shows Operations Manager feature interaction across a firewa
 
 <sup>1</sup> Additionally, the following URL must be allowed by your firewall - https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx.
 
-<sup>2</sup> If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following: 
+<sup>2</sup> If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following:
 
 1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for <instance name>, and then double-click **TCP/IP**.
 2. In the **TCP/IP Properties** dialog box, on the **IP Addresses** tab, note the port value for **IPAall**.  
@@ -63,4 +69,3 @@ If you plan on deploying the Operations Manager databases on a SQL Server config
 3. Expand the node of the availability group, and expand the **Availability Groups Listeners** node.
 4. Right-click the listener that you want to view, and select the **Properties** command.
 This opens the **Availability Group Listener Properties** dialog box.
-

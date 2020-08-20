@@ -14,7 +14,11 @@ ms.technology: virtual-machine-manager
 
 # Set up file storage in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 You can manage file storage that supports SMB 3.0 in the System Center - Virtual Machine Manager (VMM) storage fabric. This includes Windows file servers, scale-out file servers (SOFS), network-attached storage (NAS) devices from third-parties such as EMC, and NetApp.
 

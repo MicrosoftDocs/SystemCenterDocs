@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to upgrade a Reporting server
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 Use this procedure to upgrade a stand-alone Reporting server to System Center Operations Manager 2019. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.

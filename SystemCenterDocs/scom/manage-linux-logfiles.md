@@ -14,6 +14,13 @@ ms.topic: article
 ---
 
 # Linux Log file monitoring in System Center Operations Manager
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center Operations Manager now has enhanced log file monitoring capabilities for Linux servers by using the newest version of the agent that uses Fluentd. This update provides the following improvements over previous log file monitoring:
 
 - Wild card characters in log file name and path.

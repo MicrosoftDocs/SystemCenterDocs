@@ -13,6 +13,13 @@ ms.assetid: bb451d4a-4e48-428d-8992-0f2e2b5c240f
 ---
 
 # Working with the Application Diagnostics console
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The Application Diagnostics console is an event management system for .NET Application Performance Monitoring in System Center - Operations Manager. You can use Application Diagnostics console to monitor deployed .NET applications for slowdowns, faults, and failures, and immediately pinpoint the source of the problem.  
 
 ## User roles for Application Performance Monitoring

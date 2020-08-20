@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Resources for troubleshooting
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Resource | Description
 --- | ---

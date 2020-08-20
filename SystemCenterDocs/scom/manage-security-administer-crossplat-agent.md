@@ -14,6 +14,12 @@ ms.topic: article
 
 # Administering and configuring the UNIX - Linux agent
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 This topic describes options to administer and configure the UNIX/Linux agent for System Center - Operations Manager.  
 
 ## Agent directories  

@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to manage resource pools
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 A Resource Pool is a collection of management servers and/or gateway servers used to distribute work among themselves and take over work from a failed member.  In this section we will cover how to create and modify resource pools and their membership, as well as properly configure a resource pool dedicated to monitor UNIX and Linux computers.
 
 
@@ -76,7 +82,7 @@ By default, all management servers are members of the resource pools created whe
 8.  On the **Summary** page, click **Save**.
 
 
-## Configure certificates for UNIX and Linux dedicated resource pools 
+## Configure certificates for UNIX and Linux dedicated resource pools
 
 An additional task must be performed in order to configure management servers that are members of a resource pool dedicated for managing UNIX and Linux computers. Operations Manager uses certificates to authenticate access to the computers it is managing. When the Discovery Wizard deploys an agent, it retrieves the certificate from the agent, signs the certificate, deploys the certificate back to the agent, and then restarts the agent.
 

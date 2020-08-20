@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Remove a Software Defined Network (SDN) from VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 To remove a SDN from the System Center Virtual Machine Manager (VMM) fabric, you must remove the following objects - in the specified order:
 

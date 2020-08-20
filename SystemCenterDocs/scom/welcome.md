@@ -14,6 +14,12 @@ ms.topic: article
 
 # Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Welcome to System Center - Operations Manager.  Operations Manager provides infrastructure monitoring that is flexible and cost-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
 
 ## Operations Manager documentation
@@ -36,7 +42,4 @@ Welcome to System Center - Operations Manager.  Operations Manager provides infr
 
 -   [Management Pack Authoring Guide for Operations Manager](https://technet.microsoft.com/library/hh457564.aspx)
 
-    The Management Pack Authoring Guide for Operations Manager provides information on creating custom monitoring for your service or application. 
-
-
-
+    The Management Pack Authoring Guide for Operations Manager provides information on creating custom monitoring for your service or application.

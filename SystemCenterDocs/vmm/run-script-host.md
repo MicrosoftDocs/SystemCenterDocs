@@ -12,6 +12,13 @@ ms.technology: virtual-machine-manager
 ---
 
 # Run a script on a remote host by using Run Script command
+
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
  System Center Virtual Machine Manager (VMM) supports the ability to execute commands remotely, on a host by using the Run Script command feature. This feature is useful in scenarios where you want to start a service or collect information from a remote host.
 
  You can also run the script on the host by using the  custom resources that you added to the VMM library. Custom resources can consist of batch files that can execute specific commands against the server, but the use of custom resources is not required.

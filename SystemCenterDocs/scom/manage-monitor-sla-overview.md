@@ -14,6 +14,12 @@ ms.assetid: c7f7aac4-41b4-4094-bad6-3a509ff71bba
 
 # Monitoring service level objectives by using Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 To ensure that resources, such as applications and systems, are available and performing at acceptable levels, companies set goals for their service availability and response times. System Center Operations Manager provides the capability to monitor these service goals by tracking service level objectives.
 
 Service level objectives are measurements to ensure that you are meeting defined service level commitments. In Operations Manager, you define a service level objective - the set of monitors that you need to track (such as performance or availability) - and then run reports against that service level objective to ensure that you are meeting your goals.
@@ -105,57 +111,57 @@ You can define a service level objective (SLO) to establish the availability and
 ## Defining a service level objective against a group
 
 You can configure a service level objective (SLO) against a group of computers to ensure their availability. In the following scenario, you create a service level that consists of a group of servers (Exchange Servers) and then define a service level objective of 99.99% availability.  
-  
+
 1.  Open the Operations console with an account that is a member of the Operations Manager Administrators user role.  
-  
+
 2.  Click **Authoring**.  
-  
+
 3.  In the navigation pane, expand **Management Pack Objects**, and then click **Service Level Tracking**.  
-  
+
 4.  In the **Tasks** pane, click **Create**.  
-  
+
 5.  In the **Service Level Tracking** dialog box, type a name for the service level that you are defining. For example, type **Exchange Servers**. Optionally, you can provide a description. Click **Next**.  
-  
+
 6.  On the **Objects to Track** page, under **Targeted class**, click **Select**.  
-  
+
 7.  In the **Select a Target Class** dialog box, select a class for the service level, such as **Operations Management Group**, from the list in the text box. You can search for a class by typing its name into the **Look for** text box. Click **OK** to close the **Select a Target** dialog box.  
-  
+
 8.  You can use the **Scope** options to specify the scope of the service level. The default selection is to use all objects of the targeted class.  
-  
+
 9. Select the management pack that this service level will be saved in. You can use an existing management pack or create a new one.  
-  
+
 10. Click **Next**.  
-  
+
 11. On the **Service Level Objectives** page, click **Add**, and then click **Monitor state SLO** to create a new monitor. This monitor will track the availability of the application.  
-  
+
 12. Define the state monitor as follows:  
-  
+
     1.  In the **Service level objective name** text box, type a name for the service level objective. For this scenario, type **Availability**.  
-  
+
     2.  From the **Monitor** drop-down list, choose the specific monitor that you want to use to measure the objective. For this scenario, choose **Availability**.  
-  
+
     3.  For the **Service level objective goal**, provide the numerical measure for your objective. For example, select **99.990** to indicate that your goal is 99.99% availability.  
-  
+
     4.  You can refine what the monitor tracks to determine availability by selecting or clearing any of the following state criteria:  
-  
+
         -   **Unplanned maintenance**  
-  
+
         -   **Unmonitored**  
-  
+
         -   **Monitoring unavailable**  
-  
+
         -   **Monitor disabled**  
-  
+
         -   **Planned maintenance**  
-  
+
         -   **Warning**  
-  
+
     5.  Click **OK** to close the **Service Level Tracking** dialog box.  
-  
+
 13. On the **Service Level Objectives** page, click **Next**.  
-  
+
 14. On the **Summary** page, review the settings, and then click **Finish**.  
-  
+
 15. When the **Completion** page appears, click **Close**.  
 
 

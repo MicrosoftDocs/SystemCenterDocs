@@ -13,6 +13,13 @@ ms.topic: article
 ---
 
 # How to implement Transport Layer Security 1.2
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management groups.  
 
 Perform the following steps to enable TLS protocol version 1.2:

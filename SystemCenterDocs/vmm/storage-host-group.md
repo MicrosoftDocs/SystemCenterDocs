@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Allocate storage to host groups
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 After block storage has been discovered and classified in the System Center - Virtual Machine Manager (VMM) fabric, you can allocate it to host groups.  You can allocate an entire storage pool, or a specific logical unit (LUN).
 

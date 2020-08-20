@@ -14,6 +14,12 @@ ms.topic: article
 
 # Planning Security Credentials for Accessing Unix and Linux Computers
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 This topic describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
 
 In Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:
@@ -24,9 +30,9 @@ In Operations Manager, the management server uses two protocols to communicate w
 -  Web Services for Management (WS-Management)
     - Used for all monitoring operations and include the discovery of agents that were already installed.
 
-The protocol that is used depends on the action or information that is requested on the management server. All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account. 
+The protocol that is used depends on the action or information that is requested on the management server. All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account.
 
-In Operations Manager, the system administrator is no longer is required to provide the root password of the UNIX or Linux computer to the management server. Now by elevation, an unprivileged account can assume the identity of a privileged account on the UNIX or Linux computer. The elevation process is performed by the UNIX su (superuser) and sudo programs that use the credentials that the management server supplies. For privileged agent maintenance operations that use SSH (such as discovery, deployment, upgrades, uninstallation, and agent recovery), support for su, sudo elevation, and support for SSH key authentication (with or without passphrase) is provided. For privileged WS-Management operations (such as viewing secure log files), support for sudo elevation (without password) is added. 
+In Operations Manager, the system administrator is no longer is required to provide the root password of the UNIX or Linux computer to the management server. Now by elevation, an unprivileged account can assume the identity of a privileged account on the UNIX or Linux computer. The elevation process is performed by the UNIX su (superuser) and sudo programs that use the credentials that the management server supplies. For privileged agent maintenance operations that use SSH (such as discovery, deployment, upgrades, uninstallation, and agent recovery), support for su, sudo elevation, and support for SSH key authentication (with or without passphrase) is provided. For privileged WS-Management operations (such as viewing secure log files), support for sudo elevation (without password) is added.
 
 ## Credentials for installing agents
 
@@ -116,6 +122,3 @@ The **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wiz
 -   **Specify credentials**
 
     Select this option to specify Secure Shell (SSH) credentials by using a user name and password or a user name and a key. You can optionally provide a passphrase with a key. If the credentials are not for a privileged account, you can have them elevated to a privileged account on the target computered by using the UNIX su or sudo elevation programs. The 'su' elevation requires a password. If you use sudo elevation, you are prompted for a user name and password for agent verification by using an unprivileged account.
-
-
-
