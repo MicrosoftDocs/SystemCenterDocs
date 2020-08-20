@@ -14,6 +14,12 @@ ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8
 
 # Subscribing to alert notifications
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system.  
 
 A notification requires the following elements:  

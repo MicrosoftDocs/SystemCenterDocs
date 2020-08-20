@@ -14,6 +14,12 @@ ms.assetid: 93f9a932-d99d-41b2-ad0c-f5e179f1cccf
 
 # How to enable a text message (SMS) notification channel
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using a Short Message Service (SMS) or text message.  
 
 > [!NOTE]  

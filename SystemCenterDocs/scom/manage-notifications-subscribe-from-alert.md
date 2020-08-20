@@ -14,6 +14,12 @@ ms.assetid: d7e061b0-5d6e-49de-b93f-85215f7c4b73
 
 # How to subscribe to notifications from an alert
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.  
 
 You can create a notification subscription from an alert to ensure that you are notified if the alert is sent again. You can either create a new subscription or add the alert to an existing subscription. In the following procedure, you create a new subscription.  
