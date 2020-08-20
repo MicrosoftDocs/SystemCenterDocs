@@ -43,18 +43,18 @@ Data deduplication \(dedup\) finds and removes duplicated data in a volume  whil
     -   Virtualized backup: Backup solutions \(such as DPM running in a Hyper\-V virtual machine\) that save backup data to VHD\/VHDX files on a Windows File Server.
 
 ## DPM and dedup
-Using dedup with DPM can result in large savings. The amount of space saved by dedup when optimizing DPM backup data varies depending on the type of data being backed up. For example, a backup of an encrypted database server may result in minimal savings since any duplicate data is hidden by the encryption process. However backup of a large Virtual Desktop Infrastructure \(VDI\) deployment can result in very large savings in the range of 70\-90\+% range, since there is typically a large amount of data duplication between the virtual desktop environments. In the configuration described in this topic we ran a variety of test workloads and saw savings ranging between 50% and 90%.
+Using dedup with DPM can result in large savings. The amount of space saved by dedup when optimizing DPM backup data varies depending on the type of data being backed up. For example, a backup of an encrypted database server may result in minimal savings since any duplicate data is hidden by the encryption process. However backup of a large Virtual Desktop Infrastructure \(VDI\) deployment can result in large savings in the range of 70\-90\+% range, since there is typically a large amount of data duplication between the virtual desktop environments. In the configuration described in this topic, we ran a variety of test workloads and saw savings ranging between 50% and 90%.
 
 To use dedup for DPM storage DPM should be running in a Hyper\-V virtual machine and store backup data to VHDs in shared folders with data dedup enabled.
 
 ## Recommended deployment
-To deploy DPM as a virtual machine backing up data to a dedupl volume we recommend the following deployment topology:
+To deploy DPM as a virtual machine backing up data to a dedupl volume, we recommend the following deployment topology:
 
 -   DPM running in a virtual machine in a Hyper\-V host cluster.
 
 -   DPM storage using VHD\/VHDX files stored on an SMB 3.0 share on a file server.
 
--   For our test example we configured the file server as a scaled\-out file server \(SOFS\) deployed using storage volumes configured from Storage Spaces pools built using directly connected SAS drives. Note that this deployment ensures performance at scale.
+-   For our test example, we configured the file server as a scaled\-out file server \(SOFS\) deployed using storage volumes configured from Storage Spaces pools built using directly connected SAS drives. Note that this deployment ensures performance at scale.
 
 Note that:
 
@@ -66,17 +66,17 @@ Note that:
 
 -   This example uses remote SMB 3.0 shares to store the backup data, so primary hardware requirements center around the File Server nodes rather than the Hyper\-V nodes. The following hardware configuration is used in CPS for backup and production storage. Note that the overall hardware is used for both backup and production storage, but the number of drives listed in the drive enclosures are only those used for backup.
 
-    -   4 node Scale Out File Server cluster
+    -   Four node Scale Out File Server cluster
 
     -   Per node configuration
 
         -   2x Intel\(R\) Xeon\(R\) CPU E5\-2650 0 @ 2.00GHz, 2001 MHz, 8 cores, 16 logical processors
 
-        -   128GB 1333MHz RDIMM memory
+        -   128 GB 1333 MHz RDIMM memory
 
         -   Storage connections: 2 ports of SAS, 1 port of 10GbE iWarp\/RDMA
 
-    -   4 JBOD drive enclosures
+    -   Four JBOD drive enclosures
 
         -   18 Disks in each JBOD - 16 x 4TB HDDs \+ 2 x 800GB SSDs
 

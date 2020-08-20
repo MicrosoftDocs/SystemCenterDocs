@@ -51,9 +51,9 @@ You can install Central Console on a server computer running Windows Server 2008
 
     Note that Central Console requires the version of the management pack that's available in the DPM installation folder. However after you've installed this version you can then update to the latest management pack version, available on the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=56560).
 
-3.  After importing the pack install Central Console. To do this in the  Setup screen of Operations Manager select **Install Central Console Server and Client side Components** if you want to monitor DPM servers on which the Operations Manager agent is present and use the scoped DPM Administrator console.
+3.  After importing the pack install Central Console. To do this in the  Setup screen of Operations Manager select **Install Central Console Server and Client-side Components** if you want to monitor DPM servers on which the Operations Manager agent is present and use the scoped DPM Administrator console.
     Select **Install Central Console** if you want to use the scoped DPM Administrator console only, without server monitoring.
-    Select **Install Central Console Server side Components** if you want to monitor servers only, without using the scoped DPM Administrator console.
+    Select **Install Central Console Server-side Components** if you want to monitor servers only, without using the scoped DPM Administrator console.
 
 4.  DPM adds firewall exceptions for port 6075 and creates a default role-based access configuration.
 
