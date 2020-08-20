@@ -14,6 +14,12 @@ ms.author: raynew
 
 # Back up and restore VMM servers
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 System Center Data Protection Manager (DPM) can back up the SQL Server instances that are being used as the System Center Virtual Machines Manager (VMM) database in a couple of ways:
 
 -   You can do a regular SQL Server backup.

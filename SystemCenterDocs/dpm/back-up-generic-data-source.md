@@ -14,6 +14,12 @@ ms.author: raynew
 
 # Prepare to back up a generic data source
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 System Center Data Protection Manager (DPM) provides the Generic Data Source (GDS) infrastructure  so that you can protect any Microsoft workload as long as it has a VSS writer.
 
 Here's what you can do:
