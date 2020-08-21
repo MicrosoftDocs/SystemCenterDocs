@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Add Network Adapter Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Add Network Adapter** activity is used in a runbook to add a virtual network adapter to a virtual machine controlled by the VMware vSphere server. This can be used to connect the virtual machine to multiple networks in a multi-homed environment or to add the first network adapter as part of a provisioning process.
 
 The following tables list the required and optional properties and published data for this activity.
