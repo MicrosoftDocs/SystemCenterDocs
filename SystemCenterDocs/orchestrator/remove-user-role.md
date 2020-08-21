@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Remove User Role
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 Deletes a user role from the VMM server.
 
 ## Remove User Role required properties

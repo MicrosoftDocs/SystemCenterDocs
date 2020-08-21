@@ -11,6 +11,12 @@ manager: carmonm
 ---
 # Build and test runbooks
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Runbook Designer** is the tool that you use to create, manage, and run runbooks. You can also run runbooks and view their status in the [Orchestration Console](console-overview.md).  
 
 To build a runbook you drag activities onto the workspace. Activities are the building blocks of runbooks. In general, individual activities perform three actions:

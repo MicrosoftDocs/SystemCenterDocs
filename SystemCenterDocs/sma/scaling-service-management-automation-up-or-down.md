@@ -14,6 +14,13 @@ ms.assetid: 00e55889-02fc-49a9-9a52-f8cbdaf36255
 
 # Scaling Service Management Automation
 
+::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
+
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+
+::: moniker-end
+
+
 Use the guidance in this section to scale out a machine tier in a service that's deployed in Service Management Automation (SMA). You can add runbook workers and web services, to add additional capacity for runbook processing.
 
 ## Initial recommendations

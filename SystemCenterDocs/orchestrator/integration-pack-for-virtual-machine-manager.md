@@ -12,6 +12,12 @@ manager: carmonm
 
 # Integration pack for System Center VMM
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The integration pack for System Center - Virtual Machine Manager (VMM) is an add-in for System Center - Orchestrator. Tee pack enables you to automate the following activities:
 
 -   Manage the self-service virtual machine library

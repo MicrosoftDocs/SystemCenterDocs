@@ -12,6 +12,12 @@ manager: carmonm
 
 # Integration pack for System Center - DPM
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The integration pack for System Center - Data Protection Manager (DPM) is an add-in for System Center - Orchestrator. The pack enables you to automate the protection of physical and virtual server resources. You can use the activities in this integration pack to create runbooks that provide the following:
 
 -   Automated virtual machine protection and recovery

@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Windows Azure Activities
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The following configuration instructions apply to all runbook activities that are available in the Windows Azure integration pack.
 
 ## Activity properties

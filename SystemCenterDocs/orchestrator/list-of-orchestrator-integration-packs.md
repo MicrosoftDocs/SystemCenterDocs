@@ -8,13 +8,21 @@ ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: reference
-ms.assetid: 
+ms.assetid:
 caps.latest.revision: 12
 author: bwren
 ms.author: bwren
 manager: cfreeman
 ---
 # List of Integration Packs for Orchestrator
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
+
 The following is a list of the available integration packs and the information for each.  
 
  [Active Directory](active-directory-integration-pack.md)  

@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Reset VM activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Reset VM activity is used in a runbook to stop and restart a running virtual machine. This allows the runbook to reset a virtual machine of a VMware vSphere server that is no longer responding to ping commands.
 
 The following tables list the required and optional properties and published data for this activity.

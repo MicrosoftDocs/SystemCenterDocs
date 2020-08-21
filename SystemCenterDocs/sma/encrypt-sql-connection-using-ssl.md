@@ -13,6 +13,12 @@ ms.technology: service-management-automation-(sma)
 
 # Encrypt SMA web service connection using SSL
 
+::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
+
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+
+::: moniker-end
+
 This article provides information about how to encrypt SMA Web Service to SQL connection by using Secure Socket Layer (SSL).
 
 Use the following procedure:

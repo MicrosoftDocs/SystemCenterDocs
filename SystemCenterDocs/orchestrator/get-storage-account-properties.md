@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Storage Account Properties
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Get Storage Account Properties** activity returns system properties for the specified storage account. It is part of the **Azure Storage** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
@@ -49,4 +55,3 @@ There are no optional properties for this runbook activity.
 | Status of Primary   | Indicates whether the primary storage region is available.   | String   |
 | Status of Secondary   | Indicates whether the secondary storage region is available.   | String   |
 | Storage Account Name   | The name of the storage account.   | String   |
-

@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Update Mailbox
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 You can use the Update Mailbox activity to modify the settings of an existing mailbox in an on-premise or online environment.
 
 The following tables list the required properties, optional properties, and published data for this activity.

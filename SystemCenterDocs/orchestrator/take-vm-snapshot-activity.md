@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Take VM Snapshot Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Take VM Snapshot activity is used in a runbook to take a snapshot of a running virtual machine on a VMware vSphere server and enable a new name and description to be assigned to the snapshot. This allows the runbook to create a new virtual machine based on the configuration of an existing one.
 
 The following tables list the required and optional properties and published data for this activity.

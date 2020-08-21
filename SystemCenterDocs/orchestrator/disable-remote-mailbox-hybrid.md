@@ -16,6 +16,12 @@ manager: carmonm
 ---
 # Disable Remote Mailbox (Hybrid)
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 You can use the Disable Remote Mailbox (Hybrid) activity to remove a mailbox from the cloud-based service (hybrid environment). When you remove a mailbox with this activity, the associated user object in the on-premises Active Directory is not removed.
 
 The following tables list the required properties, optional properties, and published data for this activity.

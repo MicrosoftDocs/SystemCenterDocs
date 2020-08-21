@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Move Request Statistics
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 You can use the Get Move Request Statistics activity to retrieve statistical information about existing move requests for an on-premise environment.
 
 The following tables list the optional properties, filters, and published data for this activity.

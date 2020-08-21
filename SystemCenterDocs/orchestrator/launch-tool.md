@@ -17,6 +17,12 @@ manager: carmonm
 
 # Launch Tool
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Launch Tool activity is used in a runbook to run a specified command on a specified server.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).
@@ -62,7 +68,7 @@ The following tables list the required properties and published data for this ac
 >When using the Launch Tool activity you must ensure that you have selected an HP Operations Manager Connection that is configured with a user that has sufficient privileges for launching tools in HP Operations Manager.
 
 >[!WARNING]
->When using the Launch Tool activity to launch a server-defined tool you should be careful to ensure that the **Command** field contains the unique ID of an existing tool. Specifying an invalid unique ID may cause the Launch Tool activity to become unresponsive for long periods of time when targeting some HP Operations Manager systems, in particular those hosted on HP-UX. 
+>When using the Launch Tool activity to launch a server-defined tool you should be careful to ensure that the **Command** field contains the unique ID of an existing tool. Specifying an invalid unique ID may cause the Launch Tool activity to become unresponsive for long periods of time when targeting some HP Operations Manager systems, in particular those hosted on HP-UX.
 
 ## Other Activities
 

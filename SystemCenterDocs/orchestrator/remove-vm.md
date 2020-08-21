@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Remove VM
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Remove VM activity is used to delete a VM that is no longer needed. The Remove VM functionality can only be used on a VM that is currently shut down.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Update Annotation
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Update Annotation activity is used in a runbook to update an annotation to an existing message.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).
@@ -41,7 +47,7 @@ The following tables list the required properties and published data for this ac
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server.  | String   |
 
 >[!TIP]
->The Update Annotation activity will succeed when provided with a **Message ID** that does not match a Message stored on the HP Operations Manager management server. 
+>The Update Annotation activity will succeed when provided with a **Message ID** that does not match a Message stored on the HP Operations Manager management server.
 
 ## Other Activities
 

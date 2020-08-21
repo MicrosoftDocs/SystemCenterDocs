@@ -14,6 +14,12 @@ ms.technology: service-provider-foundation
 
 # Register the SPF endpoint in Windows Azure Pack
 
+::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
+
+[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
+
+::: moniker-end
+
 
 For System Center - Service Provider Foundation (SPF) to provide services and connectivity for delivering IaaS in Windows Azure Pack,  you need to register it.
 

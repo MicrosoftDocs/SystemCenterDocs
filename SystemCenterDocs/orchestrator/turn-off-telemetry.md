@@ -13,6 +13,12 @@ ms.technology: orchestrator
 
 # Manage telemetry settings in Orchestrator
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 This article provides information about how to manage the telemetry (Diagnostics and utility data) settings in System Center - Orchestrator.
 
 By default, Orchestrator sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security and integrity of Microsoft products and services.
@@ -32,7 +38,7 @@ Administrators can turn off this feature at any point of time.
    ![console telemetry selection](./media/telemetry/telemetry-option-selection.png)
 
    >[!NOTE]
-   >We recommend that you read the Privacy Statement before you select the option. 
+   >We recommend that you read the Privacy Statement before you select the option.
 
    -  To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
    - 	To turn off telemetry, select **No, I prefer not to send data to Microsoft**.

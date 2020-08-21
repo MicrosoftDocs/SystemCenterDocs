@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Create Remote Mailbox (Hybrid)
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 You can use the Create Remote Mailbox (Hybrid) activity to create a mail-enabled user in on-premises Active Directory and Exchange. An associated mailbox is also created in the cloud-based service (hybrid environment).
 
 The following tables list the required properties, optional properties, and published data for this activity.

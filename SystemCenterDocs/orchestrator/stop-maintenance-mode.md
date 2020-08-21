@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Stop Maintenance Mode
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Stop Maintenance Mode activity takes a monitor out of maintenance mode. If you put a monitor into maintenance mode using the Start Maintenance Mode Activity, you can use the Stop Maintenance Mode activity to put that monitor back in service before the configured duration has elapsed.
 
 If you choose to take a computer (Microsoft.Windows.Computer or Microsoft.Unix.Computer) out of maintenance mode, then all child monitors for that computer will also be taken out of maintenance mode.
