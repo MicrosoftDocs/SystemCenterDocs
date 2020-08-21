@@ -14,6 +14,12 @@ ms.assetid: 706e433d-c641-4dc3-8be5-fe582ef9f4bc
 
 # Use SQL Server AlwaysOn availability groups with Service Manager to support failover
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 The information in this topic provides tasks that you need to perform in order for Service Manager to work effectively when using availability groups. AlwaysOn support a failover environment. This information is supported only with SQL Server 2012 SP2 and above.
 
 However, this information is not intended to provide detailed instructions on how to configure a SQL Server AlwaysOn Availability Group. Additionally, Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in Service Manager connection strings.

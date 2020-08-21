@@ -6,13 +6,19 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 02/15/2016
 ms.technology: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
 ---
 
 # Configure notifications in Service Manager
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 Using Service Manager notifications, you can generate emails for almost any kind of change. For example, you can configure notifications to be sent to an analyst when changes occur to a work item or configuration item that pertains to email problems.
 

@@ -12,7 +12,13 @@ ms.topic: reference
 
 # Languages supported by System Center - Service Manager
 
-It is assumed in this article that you are installing System Center - Service Manager on a computer where no previous version of Service Manager is installed. 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
+It is assumed in this article that you are installing System Center - Service Manager on a computer where no previous version of Service Manager is installed.
 
  Including English,  Service Manager supports a total of 21 languages. Setting your Windows locale on a computer that hosts a Service Manager console to one of the supported languages results in Service Manager being displayed in that language. In addition to the languages that Service Manager supports, you must also consider the ability to search and sort data in the Service Manager databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server. Learn more about [SQL Server support](supported-configs.md).  
 

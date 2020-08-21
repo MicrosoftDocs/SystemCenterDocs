@@ -1,11 +1,11 @@
 ---
-description: 
+description: This article provides information on how you can use groups to manage configuration and work items in service manager.
 manager: cfreeman
 ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 title: Using Groups, Queues, and Lists in Service Manager
 ms.technology: service-manager
@@ -13,6 +13,12 @@ ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
 ---
 
 # Using Groups, Queues, and Lists in Service Manager
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 In Service Manager, you can use groups to manage configuration items, queues to manage work items, and lists to customize forms to classify different objects, such as incidents, change requests, activities, or configuration items. Use the overview and the procedures in the following topics to help manage these items.
 

@@ -17,6 +17,12 @@ ms.assetid: 787b218d-2f31-41e2-a8c7-3365972d029b
 
 # Software Requirements for System Center 2016 - Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This article describes the software requirements for Service Manager in System Center 2016 - Service Manager.
 
 ## Software requirements

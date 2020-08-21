@@ -13,6 +13,12 @@ monikerRange: 'sc-sm-2016'
 
 # Upgrade the Service Manager Self-Service portal
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 There are a couple of versions of the Self-Service portal:
 
 - The Service Manager 2012 R2 Silverlight-based version.

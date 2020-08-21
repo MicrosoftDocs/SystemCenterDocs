@@ -12,6 +12,12 @@ ms.topic: article
 
 # Prepare for System Center - Service Manager deployment
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 Before you start the deployment of System Center - Service Manager, you create a group of users in Active Directory Domain Services \(AD DS\), and you create or identify a domain account that will be used during the Setup process. Make sure that the domain account is a member of the appropriate groups that are necessary for proper operation of Service Manager. Keep the following in mind when you are installing Service Manager and Operations Manager on the same server:  
 
 - Operations Manager can share the database server with Service Manager.  

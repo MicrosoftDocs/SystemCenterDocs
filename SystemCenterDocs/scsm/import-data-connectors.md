@@ -12,6 +12,12 @@ ms.technology: service-manager
 
 # Use connectors to import data into Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 You can use System Center - Service Manager connectors to import data as configuration items from Active Directory Domain Services (AD DS), System Center Configuration Manager, System Center Orchestrator, System Center Virtual Machine Manager, and System Center Operations Manager. In addition, you can import alerts from Operations Manager, and you can configure these alerts to automatically generate incidents in Service Manager. You can also import data from comma-separated value (CSV) files into the Service Manager database.
 
 ## Effects of deleting a connector on configuration items

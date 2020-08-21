@@ -23,6 +23,8 @@ This article details the system requirements for System Center 2019 - Service Ma
 
 ::: moniker range="sc-sm-1807"
 
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
 This article details the system requirements for System Center 1807 - Service Manager (SM).
 
 [!INCLUDE [system-reqs-sm-1807](../includes/system-reqs-sm-1807.md)]
@@ -30,6 +32,8 @@ This article details the system requirements for System Center 1807 - Service Ma
 ::: moniker-end
 
 ::: moniker range="sc-sm-1801"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
 
 This article details the system requirements for System Center 1801 - Service Manager (SM).
 

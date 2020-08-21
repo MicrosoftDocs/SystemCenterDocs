@@ -6,13 +6,19 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 37c13875-a46b-4387-b35a-5d2c8f511f56
 ---
 
 # Use the Service Manager service catalog to offer services
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 This article provides an overview of how to use the service catalog in Service Manager. This article also contains procedures that cover management configuration scenarios for the service catalog.
 
