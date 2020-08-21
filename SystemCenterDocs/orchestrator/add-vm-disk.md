@@ -12,6 +12,12 @@ manager: carmonm
 
 # Add VM Disk
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Add VM Disk** activity adds a disk to the user image repository. It is part of the **Azure Virtual Machine Disks** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
@@ -42,4 +48,3 @@ There are no optional properties for this runbook activity.
 | OS Type   | The operating system type for the disk.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Azure before moving on to the next activity.  | Boolean   |
 | Request ID   | The unique identifier of the request to Azure.   | String   |
-

@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Add Service Certificate
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Add Service Certificate** activity is used in a runbook to add a certificate to a cloud service. It is part of the **Azure Certificates** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
