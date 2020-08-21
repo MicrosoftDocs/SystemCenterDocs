@@ -21,10 +21,6 @@ ms.assetid: 36e556eb-3db1-4900-be1a-a44dc0073d3e
 
 [!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
 
-::: moniker-end:: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
 ::: moniker-end
 
 In Service Manager, data that is present in the data warehouse can be consolidated from various sources. It is presented through Service Manager by using predefined and customized Microsoft Online Analytical Processing \(OLAP\) data cubes. In short, advanced analytics in Service Manager consist of publishing, viewing, and manipulating cube data, usually in either Microsoft Excel or Microsoft SharePoint. Excel is primarily used by itself to view and manipulate data. SharePoint is used primarily as a means of publishing and sharing cube data.  

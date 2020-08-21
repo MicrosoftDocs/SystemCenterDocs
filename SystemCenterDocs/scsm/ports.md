@@ -16,10 +16,6 @@ ms.topic: article
 
 [!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
 
-::: moniker-end:: moniker range=">= sc-sm-1801 <= sc-sm-1807"
-
-[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
-
 ::: moniker-end
 
 As part of your security infrastructure, you may want to keep track of port numbers that are used throughout your System Center - Service Manager environment. And while these port numbers are not configurable, you can review the following table that lists port numbers that are used between the parts of Service Manager. You will want to ensure that these firewall ports are opened on computers that host Service Manager.  
