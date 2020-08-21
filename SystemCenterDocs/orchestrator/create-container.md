@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Create Container
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Create Container** activity creates a new container under the specified account. It is part of the **Azure Storage** category activity.
 
 >[!NOTE]

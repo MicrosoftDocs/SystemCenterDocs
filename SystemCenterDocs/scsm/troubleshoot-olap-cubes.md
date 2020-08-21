@@ -17,6 +17,12 @@ ms.assetid: dfabe723-15b7-40e0-923a-66819be1e93c
 
 # Troubleshoot Service Manager OLAP cubes
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 The following sections describe common problems that you might need to troubleshoot online analytical processing \(OLAP\) data cubes in the Service Manager data warehouse.  
 
 ## Processing failures  

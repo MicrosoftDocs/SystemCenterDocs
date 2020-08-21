@@ -17,6 +17,12 @@ ms.assetid: 11c62b07-e735-415a-a632-df1589b53874
 
 # Deployment considerations with a disjointed namespace
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 In System Center - Service Manager, Setup might fail when you deploy either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjointed namespace exists. This problem can occur if the Setup program is unable to resolve the principal name of the computer that is hosting the Service Manager management server. For more information, see the Microsoft TechNet article [Disjointed Namespace](https://go.microsoft.com/fwlink/p/?LinkID=187367).  
 
  We recommend that you complete the following procedures before installing either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. The first procedure shows you how to determine the principal name of your Service Manager management server. The second procedure guides you in editing the hosts file on the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal.  

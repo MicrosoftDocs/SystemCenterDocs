@@ -14,6 +14,12 @@ monikerRange: '>=sc-sm-2016'
 
 # System Center – Service Manager build versions
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This article provides information about how to determine your current Microsoft System Center – Service Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 > [!NOTE]

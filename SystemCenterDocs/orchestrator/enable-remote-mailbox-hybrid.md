@@ -17,6 +17,12 @@ manager: carmonm
 
 # Enable Remote Mailbox (Hybrid)
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 You can use the Enable Remote Mailbox (Hybrid) activity to create a mailbox in the cloud-based service for an existing user in the on-premises Active Directory (hybrid environment).
 
 The following tables list the required properties, optional properties, and published data for this activity.
@@ -165,4 +171,3 @@ The following tables list the required properties, optional properties, and publ
 | When Created UTC   | UTC date and time when the mailbox was created.   | Datetime   |
 | When Mailbox Created   | Date and time when mailbox was created.   | Datetime   |
 | Windows Email Address   | Email address.   | String   |
-

@@ -17,6 +17,12 @@ robots: noindex
 ---
 # VMware vSphere Activities
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 This integration pack adds the VMware vSphere category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
 [Add Network Adapter Activity](add-network-adapter-activity.md)

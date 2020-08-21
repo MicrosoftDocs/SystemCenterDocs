@@ -13,6 +13,12 @@ manager: carmonm
 
 # Clone Linux VM activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Clone Linux VM activity is used in a runbook to create a copy of an existing Linux virtual machine or template. This can be used to create new virtual machines quickly and easily using existing virtual machines or templates as models.
 
 The following tables list the required and optional properties and published data for this activity.

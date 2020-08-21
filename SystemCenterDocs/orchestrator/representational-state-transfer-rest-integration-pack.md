@@ -12,6 +12,12 @@ manager: carmonm
 
 # REST integration pack guide
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The integration pack for Representational State Transfer (REST) is an add-on for System Center - Orchestrator that enables you to create activities within runbooks that make requests to REST web services to get data or perform functions.
 
 - Microsoft is committed to protecting your privacy. See our [privacy statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).

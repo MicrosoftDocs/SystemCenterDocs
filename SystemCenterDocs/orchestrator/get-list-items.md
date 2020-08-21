@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get List Items
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Get List Items** activity is used in a runbook to retrieve data about the items in a Microsoft SharePoint list.
 
 The following tables list the filters, required and optional properties, and Published Data for this activity. Additional filters and Published Data are generated, which are based on the SharePoint list that is retrieved when you define the activity.
@@ -57,4 +63,3 @@ The following tables list the filters, required and optional properties, and Pub
 | Modified   | The date and time when the item was last modified.   | Date/Time   |
 | Modified By   | The name of the user who last modified the item.   | String   |
 | SharePoint Site | The URL of the SharePoint site.   | String   |
-

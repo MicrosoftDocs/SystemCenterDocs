@@ -12,6 +12,12 @@ ms.technology: service-provider-foundation
 
 # Deploy SPF
 
+::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
+
+[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
+
+::: moniker-end
+
 
 This article describes how to install System Center - Service Provider Foundation (SPF).
 

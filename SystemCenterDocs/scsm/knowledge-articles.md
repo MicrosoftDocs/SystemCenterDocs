@@ -6,13 +6,19 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 50edf3f3-fa1d-4134-8383-dfc6be73ddf0
 ---
 
 # Manage Service Manager knowledge articles
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 Knowledge articles in Service Manager can help service desk analysts and end users understand and solve problems. Because any employee can search for and view knowledge articles, create knowledge articles so that end users can help themselves resolve IT problems before new work items are opened. Service desk analysts also have to link work items to knowledge articles.
 

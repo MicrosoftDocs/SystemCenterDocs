@@ -17,6 +17,12 @@ ms.assetid: 3ed8ab2f-0e0d-4b6f-b3e4-a0f44775ec13
 
 # Create a Service Manager OLAP cube using a management pack
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 A System Center online analytical processing (OLAP) cube is defined as a collection of the following management pack elements:
 
 - Measure groups, which points to the facts that are included

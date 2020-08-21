@@ -12,6 +12,12 @@ ms.technology: service-management-automation
 
 # Purge the Service Management Automation database
 
+::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
+
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+
+::: moniker-end
+
 In Service Management Automation (SMA), database purging is automatic, but you can adjust it to your needs.
 
 - To enable the automatic database purge, you must enable the SQL Server Agent (MSSQLSERVER) service for Automatic start. The service is not turned on by default, but it is frequently started by SQL Server database administrators for other tasks.

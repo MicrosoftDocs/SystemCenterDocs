@@ -12,6 +12,12 @@ ms.topic: article
 
 # Load balancing Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This article describes how you can load-balance Service Manager management servers in System Center - Service Manager.  
 
 ## Set up load balancings

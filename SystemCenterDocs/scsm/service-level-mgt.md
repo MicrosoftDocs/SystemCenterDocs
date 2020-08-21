@@ -6,13 +6,19 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: a8f84795-11fd-4c62-8f50-0929cedd3b20
 ---
 
 # Configure Service Level Management
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 This article provides an overview of how to configure service level management in Service Manager. This section also contains procedures that cover service level management configuration scenarios.
 

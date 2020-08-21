@@ -17,6 +17,12 @@ manager: carmonm
 
 # Enable Mailbox
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 You can use the Enable Mailbox activity in an on-premises environment to enable a mailbox for an existing Active Directory user or InetOrgPerson object. This activity creates additional mailbox attributes on the user object in Active Directory. When the user logs on to the mailbox or receives email messages, the system creates a mailbox object in the Exchange database.
 
 For an online cloud-based environment, you can use this activity with the Archive parameter to enable an archive for an existing mailbox.
@@ -254,4 +260,3 @@ The following tables list the required properties, optional properties, and publ
 | When Soft Deleted   | Date and time when mailbox was soft deleted.   | DateTime   |
 | Windows Email Address   | Email address .   | String   |
 | Windows Live ID (Live@edu only)   | Windows Live ID associated with the mailbox.   | String   |
-

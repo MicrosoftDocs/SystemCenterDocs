@@ -11,7 +11,13 @@ ms.author: raynew
 manager: carmonm
 robots: noindex
 ---
-# Stop Service activity 
+# Stop Service activity
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
 
 The Stop Service activity is used in a runbook to stop a VMM service.
 
@@ -27,5 +33,4 @@ There are no optional properties for this activity.
 
 ## Published data
 
-There is no published data for this activity. 
-
+There is no published data for this activity.

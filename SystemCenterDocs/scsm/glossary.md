@@ -12,6 +12,12 @@ ms.technology: service-manager
 
 # Glossary of terms in System Center - Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 |Term|Definition|
 |--------|--------------|
 |action log|A record of the actions that have been taken during the lifetime of an incident to resolve the incident. Examples include comments by the analyst, communications from the user, attachments, and task outputs.|

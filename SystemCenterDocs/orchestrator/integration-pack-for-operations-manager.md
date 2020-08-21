@@ -12,6 +12,12 @@ manager: carmonm
 
 # The integration pack for System Center Operations Manager
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The integration pack for Operations Manager is an add-in provided by System Center Orchestrator. Use the integration pack to connect an Orchestrator Runbook server to an Operations Manager management server so you can automate various actions.
 
 For more information about integration packs, see the [System Center integration guide](https://go.microsoft.com/fwlink/?LinkID=275796).
@@ -27,15 +33,15 @@ Before you deploy the Operations Manager integration pack, install and configure
     >If you're using the Orchestrator 2016 or 1801 integration pack for Operations Manager 2016 UR4 or later, if you've configured Operations Manager to accept only TLS 1.1 or 1.2 connections, make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-or-later).
 
 - To allow server interaction with Operations Manager, install the Operations Manager console where an Orchestrator Runbook server or Runbook Designer is installed.
-- The Orchestrator integration library management pack is required by the Create Alert object. 
+- The Orchestrator integration library management pack is required by the Create Alert object.
 
     >[!NOTE]
-    >The Create Alert object installs the management pack automatically in Operations Manager the first time it's run. To uninstall the integration pack, remove the Orchestrator integration library management pack from Operations Manager. 
+    >The Create Alert object installs the management pack automatically in Operations Manager the first time it's run. To uninstall the integration pack, remove the Orchestrator integration library management pack from Operations Manager.
 
 ## Download the integration pack
 
-- [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all) 
-- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605) 
+- [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
+- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
 - [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
 
 ## Register and deploy the pack
@@ -55,7 +61,7 @@ To configure a connection:
 5.  In the **User name** and **Password** boxes, type the credentials that the Orchestrator server will use to connect to the Operations Manager server.
 6. In **Monitoring Intervals\\Polling** and **Monitoring Intervals\\Reconnect**, accept the default value of 10 seconds, or change the value. The property **(default value: 10 seconds)** is configurable.
 7.  Select **Test Connection**. When the confirmation message appears, select **OK**.
-8.  Add more connections if necessary. 
+8.  Add more connections if necessary.
 1. Select **OK** > **Finish**.
 
 ## Enable SCO IP for Operations Manager 2016 UR4 or later
@@ -113,7 +119,7 @@ Follow these steps:
        $DisabledByDefault = "DisabledByDefault"
        $Enabled = "Enabled"
        $registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
-        
+
        foreach($Protocol in $ProtocolList)
        {
          Write-Host " In 1st For loop"
@@ -121,7 +127,7 @@ Follow these steps:
          {		
              $currentRegPath = $registryPath + $Protocol + "\" + $key
              Write-Host " Current Registry Path $currentRegPath"
-       
+
              if(!(Test-Path $currentRegPath))
              {
                  Write-Host "creating the registry"
@@ -148,7 +154,7 @@ Follow these steps:
 
 2. Set System Center to use only TLS 1.2.
 
-   Before you change the registry in this step, back up the registry in case you need to restore it later. Then set the following registry key values. 
+   Before you change the registry in this step, back up the registry in case you need to restore it later. Then set the following registry key values.
 
    **Values for 64-bit operating systems**
 

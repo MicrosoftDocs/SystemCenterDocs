@@ -12,6 +12,12 @@ ms.topic: article
 
 # Disaster recovery for System Center - Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 A recovery plan for potential software and equipment failures in your System Center - Service Manager environment requires a deployment strategy that separates the Service Manager and data warehouse management servers from the computers that host their respective databases. During installation, you must back up the encryption keys on all the management servers, both the Service Manager management server and data warehouse management servers.  
 
 ![cloud symbol](./media/disaster-recovery/disaster-all_symbols_cloud.png)

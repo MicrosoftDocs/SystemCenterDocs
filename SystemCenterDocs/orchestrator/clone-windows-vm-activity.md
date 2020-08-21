@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Clone Windows VM Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Clone Windows VM activity is used in a runbook to create a copy of an existing Windows virtual machine or template. This creates virtual machines quickly and easily using existing virtual machines or templates as models.
 
 The following tables list the required and optional properties and published data for this activity.
@@ -31,9 +37,9 @@ With the exception of "Source VM/Template Path," all properties and published da
 > - Subnet Mask = 255.255.255.0, DHCP, 255.0.0.0
 > - Gateway = 192.168.0.1, DHCP, 10.0.0.1
 > - DNS Suffix = a.com, b.com, c.com
-> 
+>
 > The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.
-> 
+>
 > [!NOTE]
 > If you clone an existing Windows virtual machine with guest customizations, such as IP Address, Admin Password, Computer Name, and so on, and you want to verify these customizations on the new cloned virtual machine, follow the steps below:
 > 1. After the clone operation completes, ensure that the cloned virtual machine is turned on in the vSphere client.

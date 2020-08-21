@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Rename File or Folder
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Rename File/Folder activity is used in a runbook to rename a file or folder on a FTP server.
 
 This activity publishes all of the data from the required properties into published data.

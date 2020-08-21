@@ -6,13 +6,19 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
 ---
 
 # Use Service Manager runbooks to automate procedures
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 Runbooks in Service Manger are used to automate procedures. The following sections provide details about the purpose and use of runbooks.
 

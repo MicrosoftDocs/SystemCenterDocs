@@ -12,6 +12,12 @@ ms.topic: article
 
 # Databases created by System Center - Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 Before starting the installation of System Center - Service Manager, you may want to meet with your SQL Server administration team and discuss the impact that Service Manager will have on your computers running SQL Server-specifically, the databases that will be created. The databases that are created by a deployment of Service Manager are listed in the following table.  
 
 |Service Manager parts|Database name|Contents|  

@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Documents
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Get Documents** activity is used in a runbook to retrieve details about the documents in a Microsoft SharePoint document library.
 
 The following tables list the filters, required and optional properties, and Published Data for this activity. Additional filters and Published Data are generated, which are based on the SharePoint document library that is retrieved when you define the activity.
