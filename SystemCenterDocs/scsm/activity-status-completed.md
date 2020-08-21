@@ -23,7 +23,7 @@ ms.assetid: 1e31bc91-020f-47e7-bd2b-d40ddc2fb7ca
 
 ::: moniker-end
 
-The following is a sample activity in Service Manager that sets an activity's status to complete.  
+See the following sample activity in Service Manager that sets an activity's status to complete.  
 
 ```  
 using System;  
