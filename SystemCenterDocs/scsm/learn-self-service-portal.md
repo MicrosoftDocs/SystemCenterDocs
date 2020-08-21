@@ -1,6 +1,6 @@
 ---
-title: New Self Service portal deployment scenarios and troubleshooting
-description: This article describes helps you understand what you need to know before you deploy the new Service Manager Self Service portal and troubleshoot its installation.
+title: New Self-Service portal deployment scenarios and troubleshooting
+description: This article helps you understand what you need to know before you deploy the new Service Manager Self-Service portal, and troubleshoot its installation.
 manager: carmonm
 ms.custom: na
 ms.prod: system-center
@@ -15,15 +15,21 @@ ms.topic: article
 ms.assetid: 762cd06f-cd61-49ad-a757-8c7d45330125
 ---
 
-# Learn about deploying the new Self Service portal and troubleshoot installation issues
+# Learn about deploying the new Self-Service portal and troubleshoot installation issues
 
-The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During installation, the Web app is configured to connect directly to the SDK Service running on the Service Manager server browser. A basic, newly\-configured Self\-Service Portal setup works as shown in the following diagram.  
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
+The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During installation, the Web app is configured to connect directly to the SDK Service running on the Service Manager server browser. A basic, newly\-configured Self\-Service Portal setup works as shown in the following diagram.  
 
  ![sm&#45;ssp&#45;scenario&#45;01](./media/learn-self-service-portal/deploy-sm-ssp-scenario-01.png)  
 
  Data flows between different components in the following sequence.  
 
-1.  A users type the URL of the Web app in their browser to access the Self Service Portal.  
+1.  Users type the URL of the Web app in their browser to access the Self-Service Portal.  
 
 2.  ASP.NET creates a new instance for the user and tries to content to SDK Service, provided during installation, in the user's context.  
 
@@ -34,7 +40,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  Review the following section to help you prepare for deployment.  
 
 > [!NOTE]  
->  It is not recommended to install the Self Service Portal on the same server as the primary Management Server.  
+>  It is not recommended to install the Self-Service Portal on the same server as the primary Management Server.  
 
 ### Hardware requirements  
 
@@ -53,7 +59,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  - Windows Server 2012 R2
 
 ### Supported web browsers  
- The Self Service portal needs a screen resolution above 1024 X 768.    It is supported on the following browsers.  
+ The Self-Service portal needs a screen resolution above 1024 X 768.    It is supported on the following browsers.  
 
 -   Microsoft Edge  
 
@@ -63,36 +69,36 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 -   Google Chrome 46 and later  
 
-## Deploy the new Self Service portal  
- See the [Deploy the New Self\-Service Portal](deploy-self-service-portal.md) article for detailed steps about how to deploy the new Self Service Portal. The following sections summarize key deployment considerations.  
+## Deploy the new Self-Service portal  
+ See the [Deploy the New Self\-Service Portal](deploy-self-service-portal.md) article for detailed steps about how to deploy the new Self-Service Portal. The following sections summarize key deployment considerations.  
 
 ### Install the Portal as the default website  
- If you want to install new Self Service Portal on port 80, you must first move the default website in IIS to a different port-for example, port 8080-and then move Self Service Portal to port 80.  
+ If you want to install new Self-Service Portal on port 80, you must first move the default website in IIS to a different port-for example, port 8080-and then move Self-Service Portal to port 80.  
 
 ### Use SSL  
  [SSL](http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis) is recommend to ensure secure communication, especially when using basic authentication when a  username and password are transferred across network in plain text.  
 
 ## Deployment topologies  
- You can use the following deployment topologies for the Self Service portal.  
+ You can use the following deployment topologies for the Self-Service portal.  
 
 ### Single server \(recommended\) \- Self Service portal and the Service Manager server on the same Server  
- In this topology, both the new Self Service Portal and the Management Server role are installed on the same server. This is the recommended topology because it avoids any network delay between the Portal and the SDK Service. Additionally, we recommend that you install the Self Service Portal on a secondary Service Management server to avoid any performance degradation due to workflows running on the primary server.  
+ In this topology, both the new Self-Service Portal and the Management Server role are installed on the same server. This is the recommended topology because it avoids any network delay between the Portal and the SDK Service. Additionally, we recommend that you install the Self-Service Portal on a secondary Service Management server to avoid any performance degradation due to workflows running on the primary server.  
 
  ![sm&#45;ssp&#45;scenario&#45;02](./media/learn-self-service-portal/deploy-sm-ssp-scenario-02.png)  
 
  In this topology, Windows Authentication \(configured by default\) is used to provide secure authentication without the overhead of using SSL.  
 
 ### Stand\-alone Self Service portal deployment  
- In this topology, the Self Service portal is installed a server that does not have the Service Manager management server role installed on it.  
+ In this topology, the Self-Service portal is installed a server that does not have the Service Manager management server role installed on it.  
 
  ![sm&#45;ssp&#45;scenario&#45;03](./media/learn-self-service-portal/deploy-sm-ssp-scenario-03.png)  
 
- In this configuration, the new Self Service Portal and the secondary Service Manager server are installed on different servers and a [double\-hop](http://weblogs.asp.net/owscott/iis-windows-authentication-and-the-double-hop-issue) is required to create a connection to the SDK Service from the Web app. Windows Authentication can't be used in this case and the Portal needs to be configured to use [Basic Authentication](http://www.iis.net/configreference/system.webserver/security/authentication/basicauthentication). Because Basic Authentication is inherently insecure, using SSL is recommended to avoid any deployment security issues, like accessing resources beyond firewalls and proxy servers.  
+ In this configuration, the new Self-Service Portal and the secondary Service Manager server are installed on different servers and a [double\-hop](http://weblogs.asp.net/owscott/iis-windows-authentication-and-the-double-hop-issue) is required to create a connection to the SDK Service from the Web app. Windows Authentication can't be used in this case and the Portal needs to be configured to use [Basic Authentication](http://www.iis.net/configreference/system.webserver/security/authentication/basicauthentication). Because Basic Authentication is inherently insecure, using SSL is recommended to avoid any deployment security issues, like accessing resources beyond firewalls and proxy servers.  
 
  Using SSL with network delays between the Portal and the SDK Service, makes this topology slower compared to a single\-server deployment. However, this configuration can help deployment scenarios where a double\-hop can't be avoided.  
 
 ###  Deploying a web farm
- One of the key benefits of the new Self Service Portal is that the Web app does not have any local data storage, apart from the it's caching. It reads and writes directly to the Service Manager database. This makes it easier to deploy multiple instances of the Web server, in parallel.  For large deployments, greater than 1,000 users accessing portal in parallel, you can deploy the new Self Service Portal as a [Web Farm](https://technet.microsoft.com/library/jj129543.aspx) similar to the following configuration.  
+ One of the key benefits of the new Self-Service Portal is that the Web app does not have any local data storage, apart from the it's caching. It reads and writes directly to the Service Manager database. This makes it easier to deploy multiple instances of the Web server, in parallel.  For large deployments, greater than 1,000 users accessing portal in parallel, you can deploy the new Self-Service Portal as a [Web Farm](https://technet.microsoft.com/library/jj129543.aspx) similar to the following configuration.  
 
  ![sm&#45;ssp&#45;scenario&#45;04](./media/learn-self-service-portal/deploy-sm-ssp-scenario-04.png)  
 
@@ -110,8 +116,8 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  **Resolution**: Run SetupWizard.exe as an Administrator. You can right\-click SetupWizard and then select Run as Administrator.  
 
-## Troubleshoot the New Self Service portal  
- This section describes how to troubleshoot issues you might encounter after installing the new Self Service Portal.  
+## Troubleshoot the New Self-Service portal  
+ This section describes how to troubleshoot issues you might encounter after installing the new Self-Service Portal.  
 
 ### IIS settings  
  The following portal default settings are configured during installation -  
@@ -143,7 +149,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  ![sm&#45;ssp&#45;scenario&#45;11](./media/learn-self-service-portal/deploy-sm-ssp-scenario-11.png)  
 
 #### Basic authentication  
- For a double\-hop scenario, Windows Authentication won't work so it must be disabled. Basic Authentication needs to be enabled and configured.  
+ For a double\-hop scenario, Windows Authentication won't work so it must be disabled. Enable and configure basic authentication.   
 
  ![sm&#45;ssp&#45;scenario&#45;12](./media/learn-self-service-portal/deploy-sm-ssp-scenario-12.png)  
 
@@ -183,7 +189,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  Use the following sections to help you troubleshoot deployment issues that might affect you.  
 
 ### Definition changes \(Announcements\/Request Offerings\/Service Offerings\/Knowledge Articles\) are not shown  
- The new Self Service Portal uses a caching mechanism to store static data to provide fast response times. The cache timeout is set to 30 minutes by default, which is configurable. For more information, see [Deploy the New Self\-Service Portal](deploy-self-service-portal.md) in the Basic Customization section. Any changes to definitions of announcements, request offerings, service offerings, and knowledge articles are not shown until the cache is cleared.  
+ The new Self-Service Portal uses a caching mechanism to store static data to provide fast response times. The cache timeout is set to 30 minutes by default, which is configurable. For more information, see [Deploy the New Self\-Service Portal](deploy-self-service-portal.md) in the Basic Customization section. Any changes to definitions of announcements, request offerings, service offerings, and knowledge articles are not shown until the cache is cleared.  
 
  Memory caching used is based on .NET Framework [MemoryCache](https://msdn.microsoft.com/library/system.runtime.caching.memorycache\(v=vs.110\).aspx). Cached content remains in memory until the IIS Worker process is terminated. Restarting IIS does not help, because IIS does not remove an old process and then start a new one. Instead, it reuses an existing one. To enforce fresh reading and to remove cache data, identify the IIS Worker process that is associated with the instance and select **End task** before you restart IIS.  
 
@@ -201,10 +207,10 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  ![pop&#45;up in Internet Explorer](./media/learn-self-service-portal/deploy-sm-ssp-pop-up.png)  
 
- The pop\-up above appears for the App Insights JavaScript SDK, which is integrated in the Self Service Portal to gather telemetry data. You can disable sending telemetry data by changing the value of the EnableTelemetry configuration parameter, which will remove the pop\-up.  For more information, see [Deploy the New Self\-Service Portal](deploy-self-service-portal.md) in the Basic Customization section.  
+ The pop\-up above appears for the App Insights JavaScript SDK, which is integrated in the Self-Service Portal to gather telemetry data. You can disable sending telemetry data by changing the value of the EnableTelemetry configuration parameter, which will remove the pop\-up.  For more information, see [Deploy the New Self\-Service Portal](deploy-self-service-portal.md) in the Basic Customization section.  
 
 ### You can access the portal on the computer that hosts IIS, but you can't access it from a remote computer  
- This issue may occur if Portal and SDK Service are located on different computers \(Stand\-Alone Self Service Portal Deployment\). This causes a double hop scenario when you try to access the portal from a remote computer. Therefore, the default portal configuration that is described under "Windows Authentication" won't work. To resolve this issue, use the "Basic Authentication" configuration instead.  
+ This issue may occur if Portal and SDK Service are located on different computers \(Stand\-Alone Self-Service Portal Deployment\). This causes a double hop scenario when you try to access the portal from a remote computer. Therefore, the default portal configuration that is described under "Windows Authentication" won't work. To resolve this issue, use the "Basic Authentication" configuration instead.  
 
 ### You can't see some Service Offerings or published Service Offerings in the portal  
  This is because Service Offerings are displayed only if they that meet one of the following conditions:  
@@ -217,53 +223,53 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
   ![English language](./media/learn-self-service-portal/deploy-image1-for-762cd06f-cd61-49ad-a757-8c7d45330125.png)  
 
-Here is list of languages with language codes which are supported by Portal:  
+Here is list of languages with language codes  that are supported by the portal:  
 
-- en\-US : English  
+- en\-US: English  
 
-- fr\-FR : français  
+- fr\-FR: français  
 
-- de\-DE : Deutsch  
+- de\-DE: Deutsch  
 
-- cs\-CZ : čeština  
+- cs\-CZ: čeština  
 
-- da\-DK : Dansk  
+- da\-DK: Dansk  
 
-- el\-GR : Ελληνικά  
+- el\-GR: Ελληνικά  
 
-- es\-ES : español  
+- es\-ES: español  
 
-- fi\-FI : suomi  
+- fi\-FI: suomi  
 
-- hu\-HU : magyar  
+- hu\-HU: magyar  
 
-- it\-IT : italiano  
+- it\-IT: italiano  
 
-- ja\-JP : 日本語  
+- ja\-JP: 日本語  
 
-- ko\-KR : 한국어  
+- ko\-KR: 한국어  
 
-- nb\-NO : norsk  
+- nb\-NO: norsk  
 
-- nl\-NL : Nederlands  
+- nl\-NL: Nederlands  
 
-- pl\-PL : polski  
+- pl\-PL: polski  
 
-- pt\-BR : português \(Brasil\)  
+- pt\-BR: português \(Brasil\)  
 
-- pt\-PT : português \(Portugal\)  
+- pt\-PT: português \(Portugal\)  
 
-- ru\-RU : русский  
+- ru\-RU: русский  
 
-- sv\-SE : svenska  
+- sv\-SE: svenska  
 
-- tr\-TR : Türkçe  
+- tr\-TR: Türkçe  
 
-- zh\-CHS : 中文(简体\)  
+- zh\-CHS: 中文(简体\)  
 
-- zh\-TW : 中文(简体\)  
+- zh\-TW: 中文(简体\)  
 
-- zh\-HK : 中文 \(香港特別行政區\)  
+- zh\-HK: 中文 \(香港特別行政區\)  
 
 ### The time display for my items always indicates AM
 

@@ -12,6 +12,12 @@ ms.topic: reference
 
 # Supported configurations
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This article summarized the workloads for which System Center - Service Manager is tested.
 
 - The test environment contains one Service Manager management server supporting 80 to 100 concurrent Service Manager consoles.

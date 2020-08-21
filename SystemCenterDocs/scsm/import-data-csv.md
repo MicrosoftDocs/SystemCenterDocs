@@ -6,13 +6,19 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: d968e937-59c1-4a9a-8786-8ff0bbf62db0
 ---
 
 # Use a CSV file to import data into Service Manager
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 This artilce provides an overview and procedures for importing data and configuration items into Service Manager by using comma-separated value (CSV) files.
 

@@ -22,6 +22,8 @@ This article provides the release notes for System Center Service Manager 2019.
 
 ::: moniker range="sc-sm-1807"
 
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
 This article provides the release notes for System Center 1807 - Service Manager (SM).
 
 [!INCLUDE [release-notes-sm-1807.md](../includes/release-notes-sm-1807.md)]
@@ -29,6 +31,8 @@ This article provides the release notes for System Center 1807 - Service Manager
 ::: moniker-end
 
 ::: moniker range="sc-sm-1801"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
 
 This article provides the release notes for System Center 1801 - Service Manager (SM).
 

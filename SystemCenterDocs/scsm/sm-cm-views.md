@@ -12,6 +12,12 @@ ms.technology: service-manager
 
 # Mapping System Center - Service Manager properties to Configuration Manager database views
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 The hardware inventory feature in Configuration Manager gathers information about computers in the organization. In Service Manager, by using a Configuration Manager Connector, you can import that hardware inventory data from Configuration Manager. The tables in this appendix describe the mapping between Service Manager properties and column names of Configuration Manager database views.
 
 ## Microsoft.SystemCenter.ConfigurationManager.DeployedComputer

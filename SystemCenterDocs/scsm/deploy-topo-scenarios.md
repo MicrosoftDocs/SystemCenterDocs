@@ -12,6 +12,12 @@ ms.topic: article
 
 # Recommended deployment topologies for Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 For performance and scalability planning purposes, we recommend that you plan your deployment topology for System Center - Service Manager using scenarios that we have tested. While these are not firm guidelines, Microsoft has tested deployment topologies using these scenarios and found that each configuration achieves satisfactory performance.  
 
 ## Test and small deployment scenarios

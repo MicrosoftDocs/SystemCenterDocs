@@ -17,6 +17,12 @@ ms.assetid: 22f049e0-a591-447c-b299-df44e3d95784
 
 # Create and deploy server images of Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 You can use the information in this article to create a system image that contains Windows server, SQL Server, and Service Manager for use as a template that you can apply to new servers. Follow the basic steps below to prepare the image. You can modify them, as needed for your environment. For more information about the Windows System Preparation Tool, [What is Sysprep?](https://go.microsoft.com/fwlink/p/?LinkId=271473)  
 
 > [!NOTE]  

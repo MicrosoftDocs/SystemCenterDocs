@@ -12,6 +12,12 @@ ms.topic: article
 
 # Operations Manager deployment consideration in Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This article summarizes considerations for deploying System Center - Operations Manager,together with System Center- Service Manager.
 
 ## Service Manager console
@@ -27,10 +33,10 @@ When you deploy a Service Manager management server, and a data warehouse, you n
 
 ## Database collations
 
-- You must use the same supported language collations, if you want to import data from Operations Manager into Service Manager. 
+- You must use the same supported language collations, if you want to import data from Operations Manager into Service Manager.
 - This only applies to the the Operations Manager database, and the SM DWStagingAndConfig database, when you create an Operations Manager Data Source for the data warehouse. Specifically, this appears in the Service Manager console as a Data Warehouse Data Source.
 - This doesn't affect either the Operations Manager to Service Manager Configuration Item connector, or the Operations Manager to  Service Manager Alert Incident connector.  
-- If you have databases with collations that don't match, you can't use the Operations Manager to Service Manager data warehouse connector. This connector imports alerts from the Operations Manager database, to the Service Manager DWStagingAndConfig database. 
+- If you have databases with collations that don't match, you can't use the Operations Manager to Service Manager data warehouse connector. This connector imports alerts from the Operations Manager database, to the Service Manager DWStagingAndConfig database.
 
 
 ## Service Manager compatibility

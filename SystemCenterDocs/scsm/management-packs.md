@@ -6,13 +6,19 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 3c42925f-74f3-4c18-934e-8d1cd2edaa3b
 ---
 
 # Use management packs to add functionality to Service Manager
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 There are two types of management packs: sealed management packs and unsealed management packs. A sealed management pack cannot be modified, but an unsealed management pack can be modified.
 

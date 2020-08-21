@@ -12,6 +12,12 @@ ms.topic: article
 
 # Troubleshoot upgrade issues
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This article helps you to troubleshoot upgrade issues in System Center – Service Manager.
 
  There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs:

@@ -16,6 +16,12 @@ monikerRange: '>sc-sm-2016'
 
 # Evaluation and Licensing experience for System Center - Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 System Center - Service Manager (SM) 1801 and later supports an enhanced experience for evaluating Service Manager and activating the product for retail use.  
 
 The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. In Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your  SM.

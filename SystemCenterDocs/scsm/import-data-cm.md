@@ -14,6 +14,12 @@ ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
 
 # Import data from Configuration Manager into Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This article describes how to create, configure, disable, and enable a Configuration Manager connector, and how to customize the Configuration Manager extended SMS_def.mof file for collecting hardware information. You use the connector to import data from Configuration Manager into Service Manager.
 
 The connector for Configuration Manager recognizes User-device Affinity and Mobile Devices and synchronizes them in the Service Manager database.

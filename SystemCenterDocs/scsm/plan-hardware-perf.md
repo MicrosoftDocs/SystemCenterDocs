@@ -12,6 +12,12 @@ ms.topic: article
 
 # Plan for Service Manager hardware performance
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 An important part of System Center - Service Manager performance depends on a hardware configuration and deployment topology that is planned to handle the needs of your organization. The following sections provide general guidelines to consider when you are planning for adequate hardware performance.  
 
 ## Hardware performance  

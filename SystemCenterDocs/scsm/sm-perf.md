@@ -12,6 +12,12 @@ ms.topic: article
 
 # System Center - Service Manager performance
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 Performance for System Center - Service Manager server roles and features is affected by different factors. Generally, there are three areas where positive and negative performance is most noticeable in Service Manager:  
 
 -   Service Manager console responsiveness. This is the length of time it takes from the moment you take some sort of action in the console until it completes.  
