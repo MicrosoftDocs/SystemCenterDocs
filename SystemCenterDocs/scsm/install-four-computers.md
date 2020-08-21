@@ -17,7 +17,7 @@ ms.assetid: 474fd861-01b0-44a6-b917-cf320a5d725b
 
 # Installing Service Manager on four computers
 
-:: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
 [!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
 

@@ -14,7 +14,7 @@ ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
 
 # Use Service Manager runbooks to automate procedures
 
-:: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
 [!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
 
