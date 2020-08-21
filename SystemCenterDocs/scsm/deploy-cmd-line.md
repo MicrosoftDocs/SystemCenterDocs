@@ -17,6 +17,12 @@ ms.assetid: 27c60668-1baf-4521-98ad-cf87389c8310
 
 # Deploy Service Manager from a command line
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 
 This article describes how to deploy System Center - Service Manager using command-line parameters. For easier reading, the command\-line examples in this guide list each command-line parameter on its own line. If you copy these examples, you must remove the carriage returns\/line\-feeds \(CRs\/LFs\) from each line before you can run the commands.  
 

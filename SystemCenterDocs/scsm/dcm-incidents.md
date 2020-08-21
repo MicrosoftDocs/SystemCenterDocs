@@ -12,6 +12,12 @@ ms.technology: service-manager
 
 # Set up incident generation in Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This article provides an example that shows how to inventory all computers that might require an upgrade to Microsoft Exchange Server 2016. To do this, first define the appropriate configuration baseline in Configuration Manager.
 
 In Service Manager, you must create a Configuration Manager connector to import the baseline and configure incident management to automatically generate incidents based on desired configuration management. For information about how to create a Configuration Manager connector, see [About Importing Data from System Center Configuration Manager](admin-about-importing-data-from-system-center-configuration-manager.md).
