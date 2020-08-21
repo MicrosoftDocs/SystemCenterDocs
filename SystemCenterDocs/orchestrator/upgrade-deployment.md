@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Upgrade Deployment
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Upgrade Deployment activity initiates an upgrade to a deployment. It is part of the Azure Deployments category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

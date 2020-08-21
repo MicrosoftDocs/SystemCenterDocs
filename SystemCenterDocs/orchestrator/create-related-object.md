@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Create Related Object
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Create Related Object activity is used to create a new Service Manager object that is related to other existing objects either by membership or by a hosted relationship.
 
 The following published data elements are specific to Create Related Object. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see Service Manager Published Data.

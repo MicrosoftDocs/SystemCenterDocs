@@ -17,6 +17,12 @@ manager: carmonm
 
 # FTP Integration Pack Activities
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The following configuration instructions apply to all activities in this integration pack. Links to this section are included in the configuration instructions for each activity.
 
 The procedures in this topic are performed on an activity that has been placed in the runbook window of the Orchestrator Runbook Designer.

@@ -11,6 +11,12 @@ manager: carmonm
 ---
 # VMware vSphere integration pack
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The integration pack for VMware vSphere is an add-on for System Center - Orchestrator, It assists you in automating actions in VMware vSphere, enabling full management of your virtualized computing infrastructure.
 
 [Learn more](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx) about privacy in Orchestrator.

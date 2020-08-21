@@ -17,6 +17,12 @@ manager: carmonm
 
 # Download File
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Download File activity is used in a runbook to download a file from a FTP server.
 
 This activity publishes all of the data from the required and optional properties into published data.
@@ -69,4 +75,3 @@ The following tables list the required and optional properties and published dat
 | Timeout   | The time to wait before a FTP operation times out.   | Integer   |
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |
-

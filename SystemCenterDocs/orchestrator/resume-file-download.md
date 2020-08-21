@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Resume File Download
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Resume File Download activity is used in a runbook to resume a file download. This activity is only compatible with an FTP configuration.
 
 This activity publishes all of the data from the required properties into published data.

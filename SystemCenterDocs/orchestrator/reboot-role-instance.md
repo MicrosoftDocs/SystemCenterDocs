@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Reboot Role Instance
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Reboot Role Instance** activity requests a reboot of a role instance that is running in a deployment. It is part of the **Azure Deployments** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

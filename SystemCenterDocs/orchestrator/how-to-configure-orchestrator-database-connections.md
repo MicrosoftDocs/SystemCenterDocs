@@ -14,6 +14,12 @@ manager: carmonm
 
 # How to configure Orchestrator database connections
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 As part of your day-to-day operations of Orchestrator you may need to change the connection settings to the Orchestrator database. You can us the DBSetup utility to change this setting. The common scenario is connecting to a restored backup.  
 
 This utility provides two functions:  
@@ -39,4 +45,4 @@ In contrast, DBconfig only creates a new database; it does not configure the sec
 3.  After you add a new DB server to your deployment, you must also run permissionsconfig, and then export and import the service master key to the new database server.  
 
 ## Next steps
-Learn more about how to change the Orchestrator database at [How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md). 
+Learn more about how to change the Orchestrator database at [How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md).

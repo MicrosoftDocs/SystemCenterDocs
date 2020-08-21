@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Delete Relationship
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Delete Relationship activity is used to remove an existing relationship between two entities.
 
 The following published data element is specific to Delete Relationship. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).

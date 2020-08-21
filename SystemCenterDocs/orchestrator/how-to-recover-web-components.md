@@ -17,6 +17,12 @@ manager: carmonm
 
 # How to recover web components
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 When you use the Database Configuration utility to modify the Orchestrator database, the tool will not modify the Web Service database reference \(only the installer performs this task\). You will need to manually modify it after updating with the database configuration utility.  
 
 To do this, you will need to complete the following actions:  

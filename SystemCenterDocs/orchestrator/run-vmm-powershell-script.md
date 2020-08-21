@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Run VMM PowerShell Script
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Run VMM PowerShell activity is used to call any PowerShell activity.
 
 ## Run VMM PowerShell Script required properties

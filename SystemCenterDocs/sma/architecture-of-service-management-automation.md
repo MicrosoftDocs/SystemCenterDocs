@@ -12,11 +12,17 @@ ms.technology: service-management-automation
 
 # Service Management Automation architecture
 
+::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
+
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+
+::: moniker-end
+
 This article shows a diagram that illustrates System Center Service Management Automation (SMA) features.
 
 
 ![SMA architecture diagram](/system-center/sma/media/architecture-of-service-management-automation/smaarchitecture.png)
- 
+
  ## Features
 
   - The SMA web service communicates with Windows Azure Pack and authenticates users.

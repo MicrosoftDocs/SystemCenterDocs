@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Deployment Status activity for Configuration Manager Integration Pack
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Get Deployment Status activity is used to retrieve the status of an
 application, program, task sequence, or software update deployment
 assigned to a computer or collection to determine if a software
@@ -37,12 +43,12 @@ activity
     - Task Sequence
     - Software Update
 - Filters: Filters available are dependent on the type of deployment selected. Filters modify the query sent to Configuration Manager so that the data returned to Orchestrator is already limited to desired results. This improves performance over returning all data and filtering at the Orchestrator server.
-    
+
 To add new filter criteria:
 
-1. Click **Add** and select the property on which to filter. 
+1. Click **Add** and select the property on which to filter.
 2. Select a **Relation** and then enter a value for the filter.
-  
+
    The type of relation value available will depend on the data type of the property selected.
 
 ## Get Deployment Status published data

@@ -32,4 +32,3 @@ There are no optional properties for this activity.
 ## Get Service Template Published Data
 
 There is no published data for this activity.
-

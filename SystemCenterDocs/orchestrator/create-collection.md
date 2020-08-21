@@ -18,6 +18,12 @@ robots: noindex
 
 # Create collection activity for System Center 2016 Configuration Manager
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Create Collection activity is used in a runbook to create a new
 Configuration Manager user or device collection. Collections are the
 primary means of defining targets for Configuration Manager actions such

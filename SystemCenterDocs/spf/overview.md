@@ -12,6 +12,12 @@ ms.technology: service-provider-foundation
 
 # What is Service Provider Foundation?
 
+::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
+
+[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
+
+::: moniker-end
+
 System Center – Virtual Machine Manager (VMM), provides all the resources needed to build, maintain, and monitor a cloud infrastructure. However, service providers and large enterprises need additional features to support multiple tenants, integrate infrastructures with sophisticated web-based self-service portals, and distribute management workloads across multiple datacenters.
 
 System Center - Service Provider Foundation (SPF), bundled with System Center Orchestrator, provides this functionality with an extensible [Open Data Protocol API](http://www.odata.org) over a Representational State Transfer (REST) web service that interacts with VMM.

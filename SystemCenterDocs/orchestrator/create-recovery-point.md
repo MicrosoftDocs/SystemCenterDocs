@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Create Recovery Point
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Create Recovery Point activity is used to create a backup for a selected data source. This activity allows you to create a recovery point outside the Data Protection Manager scheduled interval as configured for a protection group. This activity can also be used to force creation of an initial replica. For more information, see Protect Data Source.
 
 The behavior is synchronous - the activity will run for as long it takes for Data Protection Manager to complete the action.

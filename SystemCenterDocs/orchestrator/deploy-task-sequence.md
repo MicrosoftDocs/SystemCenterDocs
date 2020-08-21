@@ -18,6 +18,12 @@ robots: noindex
 
 # Deploy Task Sequence activity for Configuration Manager Integration Pack
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Deploy Task Sequence activity creates a new Configuration
 Manager Task Sequence Deployment that assigns an existing task sequence
 to a collection. This enables you to deploy an operating system and
@@ -80,7 +86,7 @@ activity.
 - Deployment expiration: The date/time to use for the installation deadline for this deployment.
     >[!NOTE]
     >If you set **Schedule when this deployment will expire** to **True**, this property is set to the current time unless set otherwise.
-- Mandatory Assignments Options : 
+- Mandatory Assignments Options :
   - **Use the following schedule options**:
     - **None**: Specifies that the operation does not occur.
     - **Weekly**: Specifies that the operation recurs every N weeks. If this option is selected, you must specify the day of the week on which the operation will occur.

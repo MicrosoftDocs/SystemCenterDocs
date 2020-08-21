@@ -12,6 +12,13 @@ ms.technology: service-management-automation
 
 # Windows PowerShell Workflow Concepts
 
+::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
+
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+
+::: moniker-end
+
+
 One [type of runbook](manage/runbook-types-in-service-management-automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](https://go.microsoft.com/fwlink/?LinkID=324602).
 
 The runbook structure is identical between runbooks for Service Management Automation and for [Microsoft Azure Automation](https://aka.ms/runbookauthor/azure) although the two will typically work with different resources.

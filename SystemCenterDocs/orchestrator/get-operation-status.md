@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Operation Status
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Get Operation Status** activity is used to get the status of the specified operation. After calling another activity with 'Wait for Completion' set to false, you can use the Get Operation Status activity to determine whether the operation requested by that activity has succeeded, failed, or is still in progress. Get Operation Status is part of the Azure Deployments category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
@@ -39,4 +45,3 @@ There are no optional properties for this activity.
 | Status   | The status of the asynchronous request. The valid values are InProgress, Succeeded, and Failed   | String   |
 | Error Code   | The management service error code returned if the asynchronous request failed.   | String   |
 | Error Message | The management service error message returned if the asynchronous request failed.   | String   |
-

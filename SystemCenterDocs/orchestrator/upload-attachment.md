@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Upload Attachment
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Upload Attachment activity is used to upload a file to an existing Service Manager object.
 
 The following published data elements are specific to Upload Attachment. Additional published data is generated based on the Class that you select when you define the activity. For a list of the data elements published by each Class, see [Service Manager Published Data](service-manager-published-data.md).

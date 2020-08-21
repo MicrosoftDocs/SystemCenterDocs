@@ -17,6 +17,12 @@ manager: carmonm
 
 # Exchange Admin Integration Pack for Orchestrator in System Center
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 Integration packs are add-ons for System Center - Orchestrator, a component of System Center. Integration packs help to optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and other third party products.
 
 The Integration Pack for Exchange Admin helps to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote, or cloud-based environments in Microsoft Exchange and Office 365.

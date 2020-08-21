@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Check Cloud Service Name Availability
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Check Cloud Service Name Availability** activity checks to see if the specified cloud service name is available, or if it has already been taken. It is part of the **Azure Cloud Services** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

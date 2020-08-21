@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Migrate VM activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Migrate VM activity is used in a runbook to migrate a virtual machine in any state (powered on, powered off, or suspended) to another computer. This allows the runbook to change the host system association when the host computer is upgraded. When a virtual machine is migrated only the host computer association is changed, the disk files are not moved. To move the disk files and change the host association, the Move VM activity must be used.
 
 The following tables list the required and optional properties and published data for this activity.

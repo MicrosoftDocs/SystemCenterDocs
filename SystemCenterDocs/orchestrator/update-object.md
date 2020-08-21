@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Update Object
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Update Object activity is used to change the values of one or more properties of an existing object.
 
 The following published data element is specific to Update Object activity. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).

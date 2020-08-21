@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Send E-Mail
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Send E-Mail activity is used in a runbook to send e-mail messages.
 
 This activity publishes all of the data from the required and optional properties into published data.

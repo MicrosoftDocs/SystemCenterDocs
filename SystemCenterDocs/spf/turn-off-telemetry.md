@@ -13,6 +13,12 @@ ms.technology: service-provider-foundation
 
 # Turn off telemetry settings in Service Provider Foundation
 
+::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
+
+[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
+
+::: moniker-end
+
 This article provides information about how to turn off the telemetry settings in System Center - Service Provider Foundation (SPF).
 
 By default, SPF sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security, and integrity of Microsoft products and services.

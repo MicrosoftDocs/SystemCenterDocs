@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Suspend VM
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Suspend VM activity is used to suspend a virtual machine that is currently running. A virtual machine in a suspended state can be resumed, stopped, or started.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

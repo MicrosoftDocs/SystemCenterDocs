@@ -13,6 +13,12 @@ ms.technology: service-management-automation
 
 # Establish trust between Service Management Automation and Service Provider Foundation
 
+::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
+
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+
+::: moniker-end
+
 For Service Provider Foundation to successfully call the Service Management Automation web service, the Service Management Automation web service certificate must be trusted by the server on which Service Provider Foundation is installed. This topic applies whether you are using a self-signed certificate or a certification authority certificate for your Service Management Automation web service.
 
 ## Trust the Service Management Automation certificate

@@ -18,6 +18,12 @@ robots: noindex
 
 # Query ConfigMgr activity for Configuration Manager Integration Pack
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Query ConfigMgr activity allows users to run an ad-hoc WQL query
 against Configuration Manager, returning the query results to published
 data for further action.

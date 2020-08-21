@@ -12,6 +12,12 @@ manager: carmonm
 
 # Integration pack for System Center - Service Manager
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The integration pack for System Center - Service Manager is an add-in for System Center - Orchestrator. It enables you to use Service Manager to coordinate and use operational data in an existing IT environment comprised of service desk systems, configuration management systems, and event monitoring systems.
 
 [Learn more](https://go.microsoft.com/fwlink/?LinkID=275796) about integration packs.

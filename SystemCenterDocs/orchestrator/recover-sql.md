@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Recover SQL
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Recover SQL activity is used in a runbook that recovers a SQL database to its original location or to a network folder.
 
 Be aware that the term *Network Folder* is used in this integration pack in the same way that it is used in the Data Protection Manager user interface. Choosing Network Folder recovers to a local path on a production server. Therefore, the selection of Network Folder requires the name of a production server and a local path on that production server.

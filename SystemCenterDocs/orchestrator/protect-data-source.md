@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Protect Data Source
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Protect Data Source activity is used to protect a workload by adding a data source to an existing protection group. A protection group is a named entity that holds the backup policy for a workload.
 
 >[!IMPORTANT]

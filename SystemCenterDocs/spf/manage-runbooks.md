@@ -12,6 +12,12 @@ ms.technology: service-provider-foundation
 
 # Automate and invoke runbooks from SPF
 
+::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
+
+[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
+
+::: moniker-end
+
 
 You can use System Center Service Provider Foundation (SPF) and Service Management Automation (SMA) together to provide automated solutions for your tenants. You can configure events in SPF that the SMA web service will use.
 

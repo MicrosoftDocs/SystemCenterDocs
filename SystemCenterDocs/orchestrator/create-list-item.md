@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Create List Item
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Create List Item** activity is used in a runbook to create a new item in a SharePoint list.
 
 The following tables list the required properties and Published Data for this activity. Additional required and optional properties are generated, which are based on the SharePoint list that is retrieved when you define the activity.

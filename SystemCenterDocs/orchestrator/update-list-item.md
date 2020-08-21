@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Update List Item
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Update List Item** activity is used in a runbook to update an item in a Microsoft SharePoint list.
 
 The following tables list the required properties and Published Data for this activity. Additional optional properties are generated, which are based on the SharePoint list that is retrieved when you define the activity.

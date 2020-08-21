@@ -12,6 +12,12 @@ ms.technology: service-management-automation
 ---
 # Author Service Management Automation runbooks
 
+::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
+
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+
+::: moniker-end
+
 Runbooks in Service Management Automation and Microsoft Azure Automation are Windows PowerShell workflows or PowerShell scripts. They provide the ability to automate administrative processes for managing and deploying cloud servers or any other function that a Windows PowerShell script can perform.
 
 There is no difference in the runbooks between the two systems, and the same runbook can run on either with identical functionality. When the term *Automation* is used in this guide, it refers to both Service Management Automation and Microsoft Azure Automation.

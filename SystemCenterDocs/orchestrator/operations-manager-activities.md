@@ -11,6 +11,12 @@ manager: carmonm
 ---
 # Operations Manager integration pack activities
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The following configuration instructions apply to all activities in the System Center Integration Pack for System Center - Operations Manager. Links to this section are included in the configuration instructions for each activity.
 
 ## Activity properties
@@ -37,7 +43,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 1.  Click the ellipsis **(...)** button next to the **Connection** field.
 
-2.  Select the applicable connection name. 
+2.  Select the applicable connection name.
 
 ### Filter behavior
 
