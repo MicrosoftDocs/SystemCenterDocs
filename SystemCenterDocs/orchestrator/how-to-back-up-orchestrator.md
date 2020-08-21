@@ -12,6 +12,12 @@ manager: carmonm
 
 # Back up Orchestrator
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 A complete backup of an Orchestrator environment consists of the following:  
 
 -   Backup of the Orchestrator database.  
@@ -36,7 +42,7 @@ To register the Orchestrator database used by the local management server, run t
 ## Orchestrator servers  
 Orchestrator management server, Runbook servers, and web servers do not persist any data. Runbooks and their settings are stored entirely in the Orchestrator database and accessed by these servers as required. Management servers and Runbook servers have a settings.dat file that includes configuration details to connect to the Orchestrator database. Orchestrator web servers have a web.config file with this same information. These files are backed up with standard file backups which are supported by DPM.  
 
-## Orchestrator database 
+## Orchestrator database
 
 The Orchestrator database is a standard SQL Server database that is supported by DPM. You should make sure to backup the service master key and store it in a secure off\-site location. For more information see [BACKUP SERVICE MASTER KEY \(Transact\-SQL\)](https://go.microsoft.com/fwlink/?LinkID=243093).  
 

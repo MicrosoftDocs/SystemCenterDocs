@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Attachments
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Get Attachments** activity is used in a runbook to retrieve details from the attachments of a list item.
 
 The following tables list the filters, required properties, and Published Data for this activity.
@@ -53,5 +59,3 @@ The following tables list the filters, required properties, and Published Data f
 | SharePoint Site  | The URL of the SharePoint site.   | String   |
 | Title   | The title of the attachment.   | String   |
 | URL Path   | The server relative path of the attachment.   | String   |
-
-

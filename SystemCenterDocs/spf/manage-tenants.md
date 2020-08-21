@@ -12,6 +12,12 @@ ms.technology: service-provider-foundation
 
 #  Manage tenants and user roles in SPF
 
+::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
+
+[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
+
+::: moniker-end
+
 
 System Center - Service Provider Foundation (SPF) doesn't create user roles, or define their scope. To set up tenants you need a certificate public key that's used to validate claims made (or on behalf of) a tenant.
 

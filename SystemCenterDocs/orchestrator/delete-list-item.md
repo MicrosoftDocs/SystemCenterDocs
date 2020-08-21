@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Delete List Item
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Delete List Item** activity is used in a runbook to delete an item from a Microsoft SharePoint list.
 The following tables list the required properties and published data for this activity.
 

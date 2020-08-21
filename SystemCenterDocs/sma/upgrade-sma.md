@@ -23,11 +23,15 @@ This article provides the upgrade information for System Center 2019 - Service M
 
 ::: moniker range="sc-sma-1807"
 
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+
 You must have System Center - Service Management Automation 1801 installed to apply the 1807 update. [Learn more on how to install SMA 1807 ](https://support.microsoft.com/en-us/help/4135041/system-center-service-management-automation-version-1807).
 
 ::: moniker-end
 
 ::: moniker range="sc-sma-1801"
+
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
 
 This article provides the upgrade information for System Center 1801 - Service Management Automation (SMA).
 

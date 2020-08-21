@@ -11,6 +11,12 @@ manager: carmonm
 ---
 # Classes, fields, and filters
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The following tables list the System Center - Service Manager Integration Pack classes. They also list the elements that can be used as fields or filters to create, locate, retrieve, and update objects in that class.
 
 ## Active Directory Group Class

@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Update User Role Quota
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 Updates the quotas for a certain user role and cloud.
 
 ## Update User Role Quota Required Properties

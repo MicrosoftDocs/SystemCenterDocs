@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Suspend VM Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Suspend VM activity is used in a runbook to suspend a virtual machine that has already been added to a VMware vSphere server and is already running. This, for example, enables the runbook to suspend a running virtual machine before backing it up. Then use the Start VM activity to start it again.
 
 The following tables list the required and optional properties and published data for this activity.

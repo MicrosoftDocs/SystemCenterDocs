@@ -16,6 +16,12 @@ manager: carmonm
 ---
 # Orchestrator logs
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 This article provides information on common troubleshooting issues and the available tools that can assist in identifying root problems.  
 
 ## Log files  

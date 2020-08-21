@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Delete Alert Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Delete Alert activity deletes an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer. This can be used to delete an alert that has been replaced by a newer one.
 
 The following tables list the required properties, optional properties, and published data for this activity.

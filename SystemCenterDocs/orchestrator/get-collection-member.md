@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Collection Member activity for Configuration Manager Integration Pack
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Get Collection Member activity is used in a runbook that queries an
 existing Configuration Manager collection for its member computers. This
 lets you specify computers individually to obtain status or perform
@@ -47,7 +53,7 @@ above:
 |  AMTFullVersion | Provides the Intel Active Management Technology (Intel AMT) firmware version of this computer. The format is: MAJOR.MINOR.MICRO |
 |  AMTStatus | Status of the Intel AMT component of this computer. Possible values are:<br><br>NULL: Unknown<br>0: Computer is not supported<br>1: Computer is detected<br>2: Computer is not provisioned<br>3: Computer is provisioned |
 |  ClientCertType | Type of certificate used by the client. Possible values are:<br><br>1.  Self-signed<br>2.  Issued by CA |
-|  ClientType | Type of client. Possible values are:<br><br>1.  Client<br>2.  Device | 
+|  ClientType | Type of client. Possible values are:<br><br>1.  Client<br>2.  Device |
 |  ClientVersion | he version ID of the client |
 |  Domain | Domain to which the resource belongs. |
 | Is Always Internet | True or False. True if this is an Internet-facing client. |

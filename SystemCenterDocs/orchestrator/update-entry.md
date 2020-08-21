@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Update Entry
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Update Entry activity is used in a runbook to modify existing entries in HP Service Manager.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](service-manager-activities.md).

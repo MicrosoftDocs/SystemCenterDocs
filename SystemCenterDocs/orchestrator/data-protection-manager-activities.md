@@ -11,6 +11,12 @@ manager: carmonm
 ---
 # System Center - Data Protection Manager Activities
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The following configuration instructions apply to all activities in the System Center integration pack for System Center - Data Protection Manager. Links to this section are included in the configuration instructions for each activity.
 
 ## Activity properties

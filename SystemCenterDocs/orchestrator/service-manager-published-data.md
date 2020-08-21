@@ -12,6 +12,12 @@ robots: noinde
 ---
 # Service Manager published data
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The following tables list the published data elements for all of the classes in the System Center - Service Manager Integration Pack.
 
 ## Active Directory Group Class published data

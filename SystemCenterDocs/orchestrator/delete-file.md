@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Delete File
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Delete File activity is used in a runbook to delete a file on a FTP server.
 
 This activity publishes all of the data from the required properties into published data.

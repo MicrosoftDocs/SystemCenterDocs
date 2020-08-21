@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Operating Systems
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Get Operating Systems** activity gets all Windows Azure operating systems. It is part of the **Azure Deployments** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
@@ -38,4 +44,3 @@ There are no optional properties for this runbook activity.
 | Label   | The label of the operating system version.   | String   |
 | OS Family Number  | The operating system family.   | Integer   |
 | OS Version String | The operating system version.   | String   |
-

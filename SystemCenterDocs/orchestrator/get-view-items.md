@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get View Items
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Get View Items** activity is used in a runbook to retrieve data about the items in a Microsoft SharePoint list by using one of the list's views.
 
 The following tables list the required properties and Published Data for this activity. Additional Published Data is generated, which is based on the SharePoint list that is retrieved when you define the activity.

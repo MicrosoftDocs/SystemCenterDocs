@@ -17,6 +17,12 @@ manager: carmonm
 
 # Disable Mailbox
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 For an on-premises environment, you can use the Disable Mailbox activity in a runbook to disable the mailbox of an existing user or InetOrgPerson object and remove that object's Exchange attributes from Active Directory. The user account associated with the disabled mailbox remains in Active Directory, but it is no longer associated with any mailbox. The disabled mailbox is not deleted. It can be reconnected to a user at a later time.
 
 For an online cloud-based environment, the Disable Mailbox activity can be used with the Archive parameter to disable an archive for an existing mailbox.
@@ -55,4 +61,3 @@ The following tables list the required properties, optional properties, and publ
 | Skip CN Check   | Indicates whether the client skips validation that the certificate common name (CN) of the server matches the hostname of the server.   | String   |
 | Skip Revocation Check   | Indicates whether the connection skips validation of the revocation status of the server certificate.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |
-

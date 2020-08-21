@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Update Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Update Activity activity is used to make changes to activity records for the selected activity class.
 
 The following published data elements are specific to Update Activity. Additional published data is generated based on the class that you selected when you defined the object. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).

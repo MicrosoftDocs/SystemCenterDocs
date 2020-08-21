@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Regenerate Storage Account Key
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Regenerate Storage Account Key** activity regenerates the primary or secondary access key for the specified storage account. It is part of the **Azure Storage** category activity.
 
 >[!NOTE]

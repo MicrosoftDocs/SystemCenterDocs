@@ -17,6 +17,12 @@ manager: carmonm
 
 # HP Operations Manager Integration Pack for System Center - Orchestrator
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Integration Pack for HP Operations Manager is an add-on for System Center - Orchestrator that enables you to automate the consolidation and correlation of fault and performance events across you entire physical and virtual IT infrastructure.
 
 Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).

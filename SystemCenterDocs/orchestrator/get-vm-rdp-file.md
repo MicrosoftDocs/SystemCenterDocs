@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get VM RDP File
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Get VM RDP File** activity retrieves the Remote Desktop Protocol configuration file from the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
@@ -44,4 +50,3 @@ There are no optional properties for this runbook activity.
 | VM Instance Name   | The name of the virtual machine.   | String   |
 | Location to Save RDP File | The local path to which the RDP file was saved.   |   |
 | RDP File Name   | The name of the RDP file for the virtual machine.   | String   |
-

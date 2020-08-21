@@ -18,6 +18,12 @@ robots: noindex
 
 # Update Collection Membership activity for Configuration Manager Integration Pack
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Update Collection Membership activity is used to initiate collection
 evaluation. It ensures that the membership of a collection is current
 before other activities are performed on the collection or its members.

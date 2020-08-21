@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Update OS Image
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Update OS Image** activity updates an operating system image that is in your image repository. It is part of the **Azure Virtual Machine Images** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

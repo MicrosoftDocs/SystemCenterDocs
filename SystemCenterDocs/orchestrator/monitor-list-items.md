@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Monitor List Items
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Monitor List Items** activity is used in a runbook to monitor a Microsoft SharePoint list for new and/or modified items.
 
 The following tables list the filters, required properties, and Published Data for this activity. Additional filters and Published Data are generated, which are based on the SharePoint list that is retrieved when you define the activity.

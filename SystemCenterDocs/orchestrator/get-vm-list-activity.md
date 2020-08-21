@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get VM List Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Get VM List activity is used in a runbook retrieve the virtual hardware information about a virtual machine in the VMware vSphere inventory. This allows the runbook to retrieve the information of the virtual machine and populate it into a CMDB.
 
 The following tables list the required and optional properties and published data for this activity.

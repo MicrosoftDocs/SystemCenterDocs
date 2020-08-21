@@ -17,6 +17,12 @@ robots: noindex
 ---
 # List VM Disks
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **List VM Disks** activity retrieves a list of the disks in your image repository. It is part of the **Azure Virtual Machine Disks** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

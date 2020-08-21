@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Repair VM
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Repair VM activity is used to run a retry, an undo, or a dismiss action on a virtual machine that is currently not functioning correctly or optimally.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

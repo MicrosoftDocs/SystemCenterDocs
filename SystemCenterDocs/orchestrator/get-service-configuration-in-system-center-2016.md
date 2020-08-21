@@ -31,4 +31,3 @@ There are no optional properties for this activity.
 ## Get Service Configuration Published Data
 
 There is no published data for this activity.
-

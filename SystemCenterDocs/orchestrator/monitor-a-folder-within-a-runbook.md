@@ -17,6 +17,12 @@ manager: carmonm
 
 # Example Runbook: Monitor a folder with a runbook
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 This sample shows you how to create a simple runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.  
 
 ![Monitor Folder](./media/monitor-a-folder-within-a-runbook/orch-2016-sample-monitor-folder.png)

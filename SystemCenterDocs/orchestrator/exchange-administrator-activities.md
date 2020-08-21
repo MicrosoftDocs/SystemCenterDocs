@@ -17,6 +17,12 @@ manager: carmonm
 
 # Exchange Administrator Activities
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack. The detailed configuration topics for specific Exchange Admin activities all contain links back to these general instructions.
 
 Each procedure in this topic is performed on an activity that has been placed in the runbook window of the **Orchestrator Runbook Designer**.

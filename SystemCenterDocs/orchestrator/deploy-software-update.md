@@ -2,7 +2,7 @@
 title: Deploy Software Update activity
 description: Describes the configurable properties for the Deploy Software Update activity for Configuration Manager Integration Pack.
 ms.custom: na
-ms.date: 03/15/2016 
+ms.date: 03/15/2016
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,6 +17,12 @@ robots: noindex
 ---
 
 # Deploy Software Update activity for Configuration Manager Integration Pack
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
 
 The Deploy Software Update activity is used in a runbook to create a
 Software Deployment (advertisement) to deploy software updates to a

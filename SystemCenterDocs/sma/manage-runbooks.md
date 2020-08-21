@@ -12,6 +12,12 @@ ms.technology: service-management-automation
 
 # Manage runbooks for Service Management Automation
 
+::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
+
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+
+::: moniker-end
+
 As a Service Management Automation (SMA) administrator, you need to configure and run runbooks. Activities including setting up the runbook workers, and scheduling and tracking runbooks. There are two system runbooks that are included with SMA, in addition to runbooks you author:
 
 - **DiscoverAllLocalModules**: Runs immediately after you install a runbook worker. This runbook discovers all native modules on the Windows Server system on which the runbook worker is installed. It extracts activities and activity metadata for these modules, so that their activities can be used when you authori runbooks in Windows Azure Pack.

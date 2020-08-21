@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Storage Account Keys
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Get Storage Account Keys** activity returns the primary and secondary access keys for the specified storage account. It is part of the **Azure Storage** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
@@ -38,4 +44,3 @@ There are no optional properties for this runbook activity.
 | Primary Key   | The primary access key for the storage account.   | String   |
 | Secondary Key   | The secondary access key for the storage account. | String   |
 | Storage Account Name | The name of the storage account.   | String   |
-
