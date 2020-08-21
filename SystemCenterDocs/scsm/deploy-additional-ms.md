@@ -17,6 +17,12 @@ ms.assetid: 80e03b05-c500-4b96-8ca0-4193e9cc07b1
 
 # Deploy additional Service Manager management servers
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 You can deploy additional Service Manager management servers to load\-balance additional Service Manager consoles or as part of your disaster recovery strategy.  
 
  This section describes how you can install additional Service Manager management servers. The additional Service Manager management servers can improve performance in a high\-use environment.  
