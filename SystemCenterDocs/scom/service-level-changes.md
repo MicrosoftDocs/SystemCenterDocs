@@ -5,7 +5,7 @@ description: This article describes the service-level changes that are required 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 02/04/2020
+ms.date: 08/24/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -15,10 +15,10 @@ ms.topic: article
 
 # Service-level changes
 
-This article describes the service-level changes that are required to use group Managed Service Accounts (gMSAs).
+This article describes the service-level changes that are required to use group Managed Service Accounts (gMSAs) in System Center Operations Manager.
 
 >[!NOTE]
->This article applies to System Center 2019 Update Rollup 1 (UR1) Operations Manager.
+>This article applies to Operations Manager Update Rollup 1 (UR1) and later.
 
 
 ## Change the service account for System Center Data Access Service to gMSA
@@ -76,13 +76,25 @@ Select **Service Credentials** as **Authentication Type**, which is already spec
 
 ## Change the Data Warehouse Write account to use gMSA
 
-Operations Manager stores the credentials for the Azure SQL Data Warehouse Write account within a Run As account, called the Data Warehouse Action account.
+Operations Manager stores the credentials for the Data Warehouse Write account within a Run As account, called the Data Warehouse Action account.
 
-Change the credentials of this Action account to gMSA that you intend to use as a Data Warehouse Write account.
+Change the credentials of this Action account to gMSA that you intend to use as a Data Warehouse Write account, which is a Windows account.  
 
 ![Data Warehouse Monitoring host](media/gmsa/change-data-warehouse-write-account.png)
 
 Validate that the *MonitoringHost.exe* uses the gMSA credentials for the Data Warehouse Write account.
+
+
+## Change the Data Warehouse Report Deployment account to use gMSA
+
+Operations Manager stores the credentials for the Data Warehouse Report Deployment account within a Run As account, called the Data Warehouse Action account.
+
+Change the credentials of this Action account to gMSA that you intend to use as a Data Warehouse Report Deployment account, which is a Windows account.  
+
+![Data Warehouse Monitoring host](media/gmsa/change-data-warehouse-report-deployment-account.png)
+
+Validate that the *MonitoringHost.exe* uses the gMSA credentials for the Data Warehouse Write account.
+
 
 ## Update your data warehouse database
 
