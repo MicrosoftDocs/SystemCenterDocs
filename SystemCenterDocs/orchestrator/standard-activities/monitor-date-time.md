@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Monitor Date/Time
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Monitor Date/Time activity invokes runbooks at a time or interval that you specify. Use the Monitor Date/Time activity to invoke your runbooks at a specific time once a day, week, or month. You can also schedule runbooks to be invoked when a specific number of seconds have passed since it was last invoked, or immediately after the runbook is deployed.  
 
  The Monitor Date/Time activity uses the system clock of the operating system on the computer that runs the runbook server, not Coordinated Universal Time (UTC), to verify the runbook’s launch time. This enables the Monitor Date/Time activity to function in virtual machine environments, and to continue running even when the system clock is adjusted because of the move into or out of Daylight Saving Time. However, if a runbook is scheduled to start during an hour that is skipped when the system clock is adjusted forward by one hour, that starting time is skipped, and the runbook starts at the next scheduled time. If a runbook is scheduled to start during an hour that occurs twice because the system clock is adjusted backwards by one hour, the runbook launches twice.  

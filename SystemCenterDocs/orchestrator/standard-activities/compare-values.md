@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Compare Values
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Compare Values activity compares two text values or two numerical values and then determines whether or not they are equal. This activity can also be used to test error messages or numbers against known issues and automatically route the runbook to the appropriate activity.  
 
 ## Configuring the Compare Values Activity  
