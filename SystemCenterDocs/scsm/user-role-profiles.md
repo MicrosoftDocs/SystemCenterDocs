@@ -12,6 +12,12 @@ ms.technology: service-manager
 
 # User role profiles in System Center - Service Manager
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This article provides detailed information about the scope and properties of user role profiles in System Center - Service Manager.
 
 ## Tabs in the Administrator console

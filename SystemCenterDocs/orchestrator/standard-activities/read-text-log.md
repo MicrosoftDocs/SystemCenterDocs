@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Read Text Log
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Read Text Log activity will read lines in a structured text log file. If you have log files that change names, you can configure the Read Text Log activity to read from the newest file in a folder that matches a file name pattern. The Read Text Log activity can be used to check a log for errors and then take corrective action on the server that is creating the log or send an email to an administrator to escalate the issue.  
 
 > [!IMPORTANT]

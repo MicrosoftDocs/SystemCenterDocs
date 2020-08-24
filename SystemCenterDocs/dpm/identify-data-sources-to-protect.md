@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/01/2016
 title: Identify data sources you want to protect
 ms.technology: data-protection-manager
@@ -13,6 +13,12 @@ ms.author: raynew
 ---
 
 # Identify data sources you want to protect
+
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
 
 To protect data sources with System Center Data Protection Manager (DPM) you'll need to do the following:
 

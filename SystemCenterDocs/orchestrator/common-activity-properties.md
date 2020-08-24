@@ -15,6 +15,12 @@ manager: cfreeman
 ---
 # Common Activity Properties
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 All activities have properties. The Properties dialog box for each activity has multiple tabs that provide access to the settings for the activity. The particular set of tabs varies between activities, but there are several common property types.  
 
 ## Details  

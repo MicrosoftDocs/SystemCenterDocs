@@ -12,6 +12,12 @@ ms.topic: article
 
 # Implement Service Manager disaster recovery
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This article describes the steps needed to recover from potential software and equipment failures in your System Center - Service Manager environment. It includes information about how to recover Service Manager databases, management servers, and unsealed management packs.  
 
 ## Restore a database

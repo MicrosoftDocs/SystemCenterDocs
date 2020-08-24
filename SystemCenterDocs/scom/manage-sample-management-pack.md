@@ -14,6 +14,13 @@ ms.topic: article
 ---
 
 # Sample Linux log file management pack
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 This is a sample management pack to create an alert from a log file in Linux with System Center Operations Manager version 1801 and later.  You can copy and paste the contents into an XML file and install in your Operations Manager management group.
 
 This management pack will create an alert for every collected event.  There is another rule in the comments of the management pack that will only create an alert for events with a specific event number.  To use this rule, remove the comments and replace the event number with one that you require.

@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Plan the VMM compute fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 This article describes how to plan the System Center - Virtual Machine Manager (VMM) compute fabric. The VMM compute fabric consists of the VMM library, virtualization hosts, host groups, and other infrastructure servers.
 

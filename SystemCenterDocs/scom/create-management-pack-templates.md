@@ -14,6 +14,12 @@ ms.topic: article
 
 # Create management pack templates
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Use the following procedure to create and modify management pack templates.
 
 ## To create a management pack template

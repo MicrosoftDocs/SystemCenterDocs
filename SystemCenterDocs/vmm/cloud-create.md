@@ -14,6 +14,12 @@ ms.technology: virtual-machine-manager
 
 # Scenario: Create a private cloud
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 This article provides instructions for creating a private cloud in System Center - Virtual Machine Manager (VMM).
 
 You can create a private cloud from a host group, or from a VMware resource pool. Host groups can contain a single host type or a mix of Hyper-V and VMware ESX hosts.

@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 08/04/2020
+ms.date: 08/13/2020
 title: Preparing your environment for System Center Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -14,7 +14,13 @@ ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 
 # Preparing your environment for System Center Data Protection Manager
 
-When deploying System Center - Data Protection Manager (DPM) 2016 or later, use the following information to plan your environment.
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
+Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
 
 
 ## DPM deployment considerations
@@ -91,18 +97,27 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/li
 > [!NOTE]
 > If you are upgrading SQL Database to SQL 2017 or later, ensure you install SQL SSRS post SQL upgrade.
 
-::: moniker-end
-
 
 ## DPM server
 
 |Requirement|Details|
 |-----------|-------|
-|Operating System|Windows Server 2019, Datacenter, and Standard editions (Windows Server Core 2019 is supported in DPM 2019 UR1)<br/> Windows Server 2016, Datacenter, and Standard editions<br/>Windows Server 2012 R2, Datacenter, and Standard editions (Not applicable for DPM 2019) |
-|Installation prerequisites|Microsoft .NET Framework 4.5 or later (for 2019)<br/>Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> SQL management tools (for DPM 2019)<br/><br/> Setup automatically installs the prerequisites if they aren't already installed.|
+|Operating System|Windows Server 2019, Datacenter, and Standard editions (Windows Server Core 2019 is supported)<br/> Windows Server 2016, Datacenter, and Standard editions|
+|Installation prerequisites|Microsoft .NET Framework 4.5 or later <br/> Windows Installer 4.5 or later versions<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> SQL management tools (install explicitly if your SQL Server is on remote server)<br/><br/> Setup automatically installs the prerequisites if they aren't already installed.|
 |Limitations|You can install DPM on the operation system volume or on a different volume.<br/> DPM is designed to run on a dedicated, single-purpose server. Don't install DPM on:<br/> - a server running Application Server role<br/> - An Operations Manager Management server<br/> - A server running Exchange<br/> - A server running on a cluster node<br/> DPM isn't supported on the Turkish language version of any of the supported Windows Server versions.|
 
+::: moniker-end
 
+::: moniker range="<sc-dpm-2019"
+
+## DPM server
+
+|Requirement|Details|
+|-----------|-------|
+|Operating System|Windows Server 2016, Datacenter, and Standard editions<br/>Windows Server 2012 R2, Datacenter, and Standard editions |
+|Installation prerequisites|Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> SQL management tools <br/><br/> Setup automatically installs the prerequisites if they aren't already installed.|
+
+::: moniker-end
 ## Disks and storage
 
 |Requirement|Minimum|Recommended|

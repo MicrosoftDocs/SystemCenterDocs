@@ -14,6 +14,12 @@ ms.assetid: 7fd5ca6b-cde4-4610-ba6d-6fbb7ca57373
 
 # Connecting Operations Manager with other management systems
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Microsoft System Center - Operations Manager interoperates with other management solutions through [System Center - Orchestrator](/system-center/orchestrator/learn-about-orchestrator) or product connectors built on the [Operations Manager Connector Framework (OMCF)](https://msdn.microsoft.com/library/hh328935.aspx), which are developed from the Operations Manager Software Development Kit (SDK).  The OMCF provides methods and types that you can use to initialize and manage a connector and to get or send operations data.  With earlier versions of Operations Manager, the primary means of synchronizing alerts between Operations Manager and other systems was through a connector.  An Operations Manager connector specifically created for the other system was required for this purpose, and a variety of connectors have been released by vendors of those management solutions.   
 
 Orchestrator integrates with System Center, other Microsoft products, and non-Microsoft products to enable interoperability across the data center.   

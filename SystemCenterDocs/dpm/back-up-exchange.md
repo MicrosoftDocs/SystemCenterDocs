@@ -14,6 +14,12 @@ ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
 
 # Back up Exchange with DPM
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 ::: moniker range="<=sc-dpm-1807"
 
 System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013 and Exchange 2016. To ensure your entire Exchange deployment is protected, configure protection for volumes, system state, or full bare metal recovery. This article provides the steps for configuring DPM so you can protect your Exchange deployment. If you have a large Exchange deployment, use a database availability group (DAG) to scale protection for Exchange mailbox databases. In addition to backing up mail databases, to fully protect your Exchange deployment you should back up Exchange Server roles such as the Client Access Server, or the transport service on mailbox servers.
@@ -34,6 +40,9 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
     2.  Type the fsutil command as follows to create a hard link for eseutil.exe: `fsutil hardlink create <link> <target>`
 
         For example, in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
+
+      > [!NOTE]
+      > The *Eseutil* is not forward or backward compatible. If you protect two different versions of Exchange Server database using single DPM server the integrity check will work only with the compatible version of *Eseutil*, and it will fail for all other Exchange Server version. <br>To avoid this, we recommend to either use separate DPM server for protecting each version of Exchange Server with respective *Eseutil* version installed on the DPM server. If that is not feasible, you need to turn on the integrity check for only one version of Exchange Server databases with respective version of *Eseutil*.
 
 -  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 
@@ -315,6 +324,11 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
     2.  Type the fsutil command as follows to create a hard link for eseutil.exe: `fsutil hardlink create <link> <target>`
 
         For example, in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
+
+    > [!NOTE]
+    > The *Eseutil* is not forward or backward compatible. If you protect two different versions of Exchange Server database using single DPM server the integrity check will work only with the compatible version of *Eseutil*, and it will fail for all other Exchange Server version.<br>
+    To avoid this, we recommend to either use separate DPM server for protecting each version of Exchange Server with respective *Eseutil* version installed on the DPM server. If that is not feasible, you need to turn on the integrity check for only one version of Exchange Server databases with respective version of *Eseutil*.
+
 
 -  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 

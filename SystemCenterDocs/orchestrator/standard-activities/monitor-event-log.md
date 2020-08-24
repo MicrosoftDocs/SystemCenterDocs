@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Monitor Event Log
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Monitor Event Log activity invokes runbooks when new events that match a filter that you specify appear in the Windows Event Log. You can use the Monitor Event Log activity to run runbooks that will escalate, investigate, or correct any issues in response to events being generated to the Windows Event Log. For example, a security audit failure appears in the security log which will send an email to an administrator to notify them of the problem.  The second mode invokes your runbook when the size of the Windows Event Log reaches the maximum size allowed.  
 
 ## Configuring the Monitor Event Log Activity  

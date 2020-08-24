@@ -15,6 +15,12 @@ manager: carmonm
 ---
 # Overview of the Orchestration console
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Orchestration console is a single webpage made up of multiple panes and workspaces. This topic describes those panes and workspaces and includes procedures for accessing the console and managing runbooks.  
 
 ## Navigation pane  

@@ -13,6 +13,12 @@ ms.author: raynew
 
 # Automate IT Operations with System Center  - Orchestrator Runbooks
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The power of System Center  - Orchestrator lies in providing runbooks and the individual activities that make up a runbook. Runbooks contain the instructions for an automated task or process. The individual steps throughout a runbook are called activities. Within the runbook,  additional controls provide information and instructions to control the sequence of activities in the runbook. Runbooks, activities, and each runbook control have configurable properties. You modify these properties to configure the behavior that your runbook requires.  
 
 ## Starting Point

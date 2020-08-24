@@ -14,6 +14,12 @@ ms.topic: article
 
 # Web Application Transaction Monitoring template
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The _Web Application Transaction Monitoring_ template lets you test a website or web-based application by sending requests over HTTP, validating their response, and measuring their performance. This can be a simple test to determine if the website is responding, or it can be a complex set of requests to simulate a user who is performing such actions as logging on to the site and browsing through a set of pages.
 
 The HTTP requests are sent from one or more [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29). The website that is being monitored can reside on any computer whether it has an agent for Operations Manager installed. It can be an external website, but it must be accessible from the watcher nodes. Each watcher node must have an Operations Manager agent installed.

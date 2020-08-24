@@ -12,6 +12,12 @@ manager: carmonm
 
 # Migrate Orchestrator between environments
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 This topic describes how to automatically move Orchestrator between environments. This could be useful when you want to just move to a new SQL Server 2008 R2 or if you want to move some or all of the components of Orchestrator.  
 
 The following processes and scripts enable you to easily move between environments. They are based on a full migration of all Orchestrator components to a new SQL Server machine, with a restored Orchestrator database.  
@@ -63,7 +69,7 @@ Back up the entire Orchestrator database.  You can perform the backup when the s
     ```  
 
 ## Deploy SQL Server in environment B  
-Deploy SQL Server to environment B. 
+Deploy SQL Server to environment B.
 
 ## Restore the SQL Server service master key in environment B  
 Restore the Microsoft SQL Server service master key.  This will enable decryption of Orchestrator data on the new SQL server.  

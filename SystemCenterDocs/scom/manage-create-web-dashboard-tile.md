@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: How to create a dashboard with the Tile widget in the Web console
 description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Tile widget.
 author: JYOTHIRMAISURI
@@ -14,11 +14,18 @@ ms.topic: article
 ---
 
 # How to create a dashboard with the Tile widget in the Web console
-In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Tile widget to a  dashboard in the new HTML5 Web console.  It displays a summary tile showing the health and number of alerts for the object that match a criteria. 
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
+In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Tile widget to a  dashboard in the new HTML5 Web console.  It displays a summary tile showing the health and number of alerts for the object that match a criteria.
 
 ## Add widget to dashboard
 
-1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console. 
+1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
 
 2. From the left pane in the Web console, click **+ New dashboard**.
 
@@ -28,13 +35,13 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 
     ![Specify name and description for new dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
 
-4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** drop-down list or you can save the dashboard by creating a new management pack by clicking **New** next to the **Management Pack** drop-down list and provide a name, description and optionally a version number. 
+4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** drop-down list or you can save the dashboard by creating a new management pack by clicking **New** next to the **Management Pack** drop-down list and provide a name, description and optionally a version number.
 
     ![Specify name and description for new MP](./media/create-web-dashboard-alerts/web-console-new-dashboard-03.png)
- 
+
 5. When you have completed specifying where to save the new dashboard to, click **OK**.
 
-6. Click **Save** after providing a name and description for the new dashboard. 
+6. Click **Save** after providing a name and description for the new dashboard.
 
 7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard** and **View in fullscreen** options on the top of the page.
 

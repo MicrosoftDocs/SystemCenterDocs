@@ -13,6 +13,12 @@ ms.technology: virtual-machine-manager
 
 # Load balance network traffic in an SDN fabric using VMM
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 
 In Software Define Networking (SDN) fabric, you can use the Software Load Balancer (SLB) to evenly distribute the network traffic among the workloads managed by the Cloud Service Providers (CSPs) and the tenants. Learn more about [Software Load Balancer (SLB)](sdn-slb.md).
 

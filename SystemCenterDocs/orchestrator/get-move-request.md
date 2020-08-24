@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Move Request
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 You can use the Get Move Request activity in a runbook to retrieve detailed information for an existing mailbox move request, for an on-premise environment.
 
 The following tables list the filters, optional properties, and published data for this activity.
@@ -136,5 +142,3 @@ This Activity has no required properties.
 | Target Archive Database   | Mailbox database where the mailbox archive is being moved to.   | String   |
 | Target Database   | Mailbox database where the mailbox is being moved to.   | String   |
 | Use SSL   | Indicates whether the communication with the Exchange Server is to be encrypted with SSL.   | String   |
-
-

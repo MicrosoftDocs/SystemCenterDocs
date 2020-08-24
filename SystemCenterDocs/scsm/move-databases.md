@@ -17,6 +17,12 @@ ms.assetid: 8b6c406a-7cb3-4be7-902b-5a09be71ad98
 
 # Move the Service Manager and data warehouse databases to different servers
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 After you have deployed Service Manager, you might need to move the Service Manager or data warehouse databases from one computer running Microsoft SQL Server to another for reasons such as the following:  
 
 - You need to replace hardware that is experiencing issues and that is no longer considered reliable.  

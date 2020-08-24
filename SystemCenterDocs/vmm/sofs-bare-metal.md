@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Provision a scale-out file server (SOFS) cluster from bare metal computers in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 In addition to adding existing file servers to an SOFS cluster in the System Center - Virtual Machine Manager (VMM)  fabric, VMM can discover provision bare-metal machines as SOFS cluster nodes. This article includes the steps for setting up a bare metal SOFS cluster in VMM.
 

@@ -14,6 +14,12 @@ ms.technology: virtual-machine-manager
 
 # Set up networking for Hyper-V hosts and clusters in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 Read this article to set up network settings for Hyper-V hosts and clusters in the System Center - Virtual Machine Manager (VMM) compute fabric.
 
 You can apply network settings to a Hyper-V host or cluster using a logical switch. Applying a logical switch ensure that logical networks, and other network settings, are consistently assigned to multiple physical network adapters.
@@ -86,7 +92,9 @@ For a host, affinity between vNIC and pNIC can be set at virtual switch level. Y
 
     > [!NOTE]
     >- We recommend you not to remove any of the physical adapter post teaming, as it could break the assigned affinity mappings.
-    >- Affinity cannot be defined for vNICs that handles management traffic, for the option **This virtual adapter inherits the properties from the physical management adapter**.
+    >- If the option **This virtual adapter inherits the properties from the physical management adapter** is checked, affinity cannot be defined for vNICs that handles management traffic.
+    
+    ![Affinity NIC](./media/set-affinity-vnic-pnic/option-vnic.png)
 
 ### Frequently asked questions
 

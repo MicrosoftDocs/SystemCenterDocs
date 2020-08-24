@@ -14,6 +14,12 @@ ms.author: raynew
 
 # Back up system state and bare metal
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 System Center Data Protection Manager (DPM) can back up system state and provide bare metal recovery (BMR) protection.
 
 -   **System state backup**:  Backs up operating system files, enabling you to recover when a machine starts but you've lost system files and registry. A system state backup includes:

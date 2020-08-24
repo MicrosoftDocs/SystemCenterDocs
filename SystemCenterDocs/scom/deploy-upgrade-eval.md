@@ -14,11 +14,17 @@ ms.topic: article
 
 # How to upgrade from the evaluation version of Operations Manager
 
-The System Center Operations Manager evaluation version expires 180 days after you install it. 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
-To upgrade from an evaluation version of Operations Manager to a licensed version, you must obtain a valid product key from Microsoft. For information about Operations Manager licensing, see [System Center Licensing](https://www.microsoft.com/cloud-platform/system-center-pricing). 
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-> [!NOTE] 
+::: moniker-end
+
+The System Center Operations Manager evaluation version expires 180 days after you install it.
+
+To upgrade from an evaluation version of Operations Manager to a licensed version, you must obtain a valid product key from Microsoft. For information about Operations Manager licensing, see [System Center Licensing](https://www.microsoft.com/cloud-platform/system-center-pricing).
+
+> [!NOTE]
 > To check whether Operations Manager is licensed, in the Operations console, click **Help**, and then click **About**. In the **Product version** field, it will show the version **(Retail)** after the version information.  If it shows **(Eval)**, then your installation is an evaluation version.  
 
 ::: moniker range="sc-om-1801"
@@ -60,7 +66,7 @@ Before proceeding, you need to be a member of the Operations Manager administrat
 3. Connect to your management group (New-SCOMManagementGroupConnection).
 4. Run the `Set-SCOMLicense -ProductId <yourlicensekey>` command.
 5. Restart the System Center Data Access Service service on all management servers in the management group in order for the setting to take effect.  
-6. To check whether the changes were made, run the following command: 
+6. To check whether the changes were made, run the following command:
 `Get-SCOMManagementGroup | ft skuforlicense, version, timeofexpiration –a`
 
 For more information about [Set-SCOMLicense](https://docs.microsoft.com/powershell/module/operationsmanager/set-scomlicense?view=systemcenter-ps-2016), type the following in the Operations Manager Command Shell:
@@ -70,5 +76,3 @@ For more information about [Set-SCOMLicense](https://docs.microsoft.com/powershe
 For current information about your license, you can use the [Get-SCOMLicense](https://docs.microsoft.com/powershell/module/operationsmanager/get-scomlicense?view=systemcenter-ps-2016) cmdlet. For more information, type the following in the Operations Manager Command Shell:
 
 `get-help Get-SCOMLicense`
-
-

@@ -5,12 +5,19 @@ description: This article describes how to create logical switches in the VMM fa
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 07/24/2018
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 # Create logical switches
+
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 This article describes how to create logical switches in the System Center - Virtual Machine Manager (VMM) fabric.
 
 ::: moniker range="sc-vmm-2016"

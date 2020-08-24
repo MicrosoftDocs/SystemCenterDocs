@@ -13,6 +13,12 @@ ms.technology: virtual-machine-manager
 
 # Add an Azure subscription in VMM
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 ::: moniker range="<=sc-vmm-1807"
 
 You can add Microsoft Azure subscriptions to System Center - Virtual Machine Manager (VMM), and perform basic actions on Azure instances in the subscriptions.

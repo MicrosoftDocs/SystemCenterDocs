@@ -18,6 +18,12 @@ robots: noindex
 
 # Delete collection activity for System Center 2016 Configuration Manager
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Delete Collection activity is used to remove an existing collection
 from a Configuration Manager site and optionally delete the members of
 that collection from the Configuration Manager database. You cannot

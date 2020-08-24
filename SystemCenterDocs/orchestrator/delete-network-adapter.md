@@ -9,7 +9,13 @@ author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
-# Delete Network Adapter activity 
+# Delete Network Adapter activity
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
 
 The Delete Network Adapter activity is used in a runbook to remove a virtual network adapter from a virtual machine controlled by the VMware vSphere server. The network adapter to remove is identified by its MAC address. A list of MAC addresses associated with a virtual machine can be found using the Get VM Properties activity.
 

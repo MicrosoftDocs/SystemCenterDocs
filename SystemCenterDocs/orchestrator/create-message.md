@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Create Message
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Create Message activity is used in a runbook to store a new message on the management server.
 
 The following tables list the required and optional properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).

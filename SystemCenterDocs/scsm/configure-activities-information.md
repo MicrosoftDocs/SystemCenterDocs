@@ -17,6 +17,12 @@ ms.assetid: 1c7f52a4-3af1-4640-a71c-157dcc8e7f49
 
 # Configure the way activities manage and pass information in Service Manager authoring
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 The activity properties provide ways to transfer data. For the Woodgrove Bank customization scenario, the name of the computer and the name of the group must be transferred from the automated provisioning activity to the workflow activity that does the actual work. The following illustration shows how the computer and group names pass from the Service Manager automated activity to the Windows Workflow Foundation (WF) activities in the workflow.
 
 ![Process: Add computer to group](./media/configure-activities-information/author-examplewf_function.png)

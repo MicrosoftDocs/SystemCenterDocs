@@ -14,6 +14,12 @@ ms.topic: article
 
 # SQL Server Design Considerations
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center Operations Manager requires access to an instance of a server running Microsoft SQL Server to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
 
 In a lab environment or small-scale deployment of Operations Manager, SQL Server can be co-located on the first management server in the management group.  In a medium to enterprise-scale distributed deployment, the SQL Server instance should be located on a dedicated standalone server or in a SQL Server high-availability configuration.  In either case, SQL Server must already exist and is accessible before you start the installation of the first management server or ACS collector.  

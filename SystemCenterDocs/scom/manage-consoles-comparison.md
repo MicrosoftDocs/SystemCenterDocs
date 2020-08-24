@@ -14,6 +14,12 @@ ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 
 # Comparing the Operations and Web console
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center Operations Manager includes two consoles, the Operations console and Web console.  The Operations console is the primary tool used for managing your Operations Manager deployment. In the Operations console, you view and interact with alerts and monitoring data, manage and edit monitoring configuration, generate and view reports,  administer management group settings, and build a personal workspace that is customized to your needs.
 
 The Web console is a web-based user interface which provides access to all the monitoring data and tasks that are actions that can be run against monitored computers from the Operations console.  It does not have the full functionality of the Operations console, however, and provides access to only the Monitoring and My Workspace views.

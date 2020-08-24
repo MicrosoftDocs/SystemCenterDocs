@@ -14,6 +14,12 @@ ms.assetid: 8b1c21ab-529b-4c04-9384-717a503f3df7
 
 # Install and configure the Visio Services Data Provider
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The Visio Services Data Provider for System Center - Operations Manager leverages SharePoint's Visio Services to enable Visio diagrams to show live health state from Operations Manager in SharePoint.  
 
 The Visio Services Data Provider for Operations Manager has the following prerequisites:  

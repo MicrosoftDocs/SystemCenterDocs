@@ -13,6 +13,12 @@ ms.technology: orchestrator
 
 # Set up TLS for Orchestrator
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Orchestrator.
 
 

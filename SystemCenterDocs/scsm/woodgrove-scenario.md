@@ -17,6 +17,12 @@ ms.assetid: ea9bb90e-5a00-4346-b2a2-f6076c203778
 
 # Woodgrove Bank customization sample scenario for the Service Manager Authoring Tool
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 To provide real\-world context to the step\-by\-step procedures for the Service Manager Authoring Tool, we have created a fictitious scenario that takes place at a fictitious company, Woodgrove Bank.  
 
  The Woodgrove Bank customization scenario illustrates how Ken Myer, a server application developer for Woodgrove Bank, can easily extend the default change management process to support a new compliance change request process that the organization needs. The new compliance change request process will automatically add new computers to groups in Active Directory Domain Services \(AD&nbsp;DS\) so that the group software policies apply to the new computers.  

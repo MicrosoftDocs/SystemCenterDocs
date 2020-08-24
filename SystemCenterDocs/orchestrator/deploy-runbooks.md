@@ -12,6 +12,12 @@ ms.author: raynew
 
 # Deploy runbooks
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 There are tools available in Orchestrator to help you manage the versions of your runbooks. These tools are described in the following sections.  
 
 ## Version control  

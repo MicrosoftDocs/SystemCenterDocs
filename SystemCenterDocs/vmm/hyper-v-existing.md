@@ -14,7 +14,11 @@ ms.technology: virtual-machine-manager
 
 # Add Windows servers as Hyper-V hosts or clusters in the VMM compute fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Read this article to learn about adding an existing Windows server as a Hyper-V host server or cluster to the System Center - Virtual Machine Manager (VMM) fabric, and configuring the host and cluster properties.
 
@@ -46,8 +50,8 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 	- **Same domain or domains with two-way trust**:
 		- If you click **Specify Windows Server** computers by names, in **Computer names** enter names or IP addresses, one per line. If you are adding a Hyper-V host cluster, specify the name or IP address of the cluster or of any cluster node.
 		- If you click **Specify an Active Directory** query to search for Windows Server computers, you can type or generate a query.
-	- **Untrusted domain**: Discovery page dooesn't appear
-	- **Disjointed namespace**: Enter the hos FQDN and select **Skip AD verification**.
+	- **Untrusted domain**: Discovery page doesn't appear
+	- **Disjointed namespace**: Enter the host FQDN and select **Skip AD verification**.
 
 6. In **Target resources**, specify the computers you want to add. Repeat for all hosts. If discovery succeeds the host will be listed under **Computer name**. Add as follows:
 

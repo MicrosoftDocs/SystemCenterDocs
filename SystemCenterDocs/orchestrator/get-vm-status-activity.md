@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get VM Status Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Get VM Status activity is used in a runbook to retrieve the state and other related information about a virtual machine. This, for example, enables the runbook to retrieve the current status of a virtual machine to ensure that is has been properly shut down before performing a backup.
 
 The following tables list the required and optional properties and published data for this activity.

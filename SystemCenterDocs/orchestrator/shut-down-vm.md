@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Shut Down VM
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Shut Down VM activity is used to shut down a stopped virtual machine. This activity takes the virtual machine offline and is a prerequisite to removing the virtual machine.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

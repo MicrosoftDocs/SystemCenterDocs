@@ -14,6 +14,12 @@ ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
 
 # Prepare data storage
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 A major part of your System Center Data Protection Manager (DPM) deployment will be figuring out how to store data backed up by DPM. Learn about:
 
 - [Add Modern Backup Storage](add-storage.md)

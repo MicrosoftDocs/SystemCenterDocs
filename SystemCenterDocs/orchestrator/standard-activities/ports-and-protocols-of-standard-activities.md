@@ -13,8 +13,17 @@ ms.author: bwren
 manager: cfreeman
 ---
 # Ports and Protocols of Standard Activities
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 Orchestrator standard activities can communicate between the runbook servers where the runbook is deployed and any resource. If you have firewalls in your environment, when you use a standard activity, you must enable the ports between the runbook servers and resource as indicated in the following table.  
-  
+
 |Standard activity|Port on runbook server|Port on resource server|Notes|  
 |-----------------------|----------------------------|-----------------------------|-----------|  
 |[Query Database](query-database.md)||Any port the target database requires.||  
@@ -30,9 +39,9 @@ Orchestrator standard activities can communicate between the runbook servers whe
 |[Monitor Internet Application](monitor-internet-application.md)|HTTP/SMTP/POP3/FTP/DNS|HTTP/SMTP/POP3/FTP/DNS||  
 |[Get Internet Application Status](get-internet-application-status.md)|HTTP/SMTP/POP3/FTP/DNS/Custom|HTTP/SMTP/POP3/FTP/DNS/Custom|Custom can be anything.|  
 |[Send Syslog Message](send-syslog-message.md)|syslog|syslog||  
-  
+
 ## Other resources for this product  
-  
+
 -   [Orchestrator overview](../learn-about-orchestrator.md)  
-    
+
 -   [Alphabetical List of Standard Activities](alphabetical-list-of-standard-activities.md)  

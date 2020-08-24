@@ -14,6 +14,12 @@ ms.assetid: 0f6934ea-1998-4bd5-987a-41cf4e24d408
 
 # How to customize message content for notifications
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 In System Center - Operations Manager, you can customize the format that will be used for messages that notify you of alerts. The format of an alert notification is determined by the channel by which the notification is sent. Each channel type has a default format, as shown in the following examples.  
 
 > [!NOTE]  

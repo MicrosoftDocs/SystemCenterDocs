@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Resource Pools Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Get Resource Pools activity is used in a runbook to retrieve a list of all the resource pools in managed by the VMware vSphere system. This allows the runbook to retrieve the resources pools before using the Get Resource Pool Runtime Info Activity.
 
 The following tables list the required and optional properties and published data for this activity.

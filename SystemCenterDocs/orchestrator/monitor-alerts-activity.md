@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Monitor Alerts activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Monitor Alerts activity launches a runbook when an IBM Tivoli Netcool/OMNIbus alert matches the specified criteria. You can use the Monitor Alerts activity to launch a diagnostic and corrective runbook that responds to critical alerts in your network.
 
 The Monitor Alerts activity uses filters to determine which properties of an alert launch the runbook.

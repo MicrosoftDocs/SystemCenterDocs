@@ -15,6 +15,12 @@ ms.author: raynew
 
 # Database sizing and performance
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 Database sizing is the key to understanding the performance of System Center - Orchestrator. The runbook servers, management server, and web components all depend on the Orchestrator database for their operations. Problems with Orchestrator deployments can arise from an incomplete understanding of the types of data in the database and how to manage them.  
 
 Because the Runbook Designer communicates with the Orchestrator database (through the management server), poor database performance will impede that communication.  
@@ -243,5 +249,5 @@ Use the following guidelines to manage database sizing and performance:
 -   Identify opportunities for improvement by making normalized comparisons of your measurements.  
 
 ## See Also  
-[Orchestrator Logs](orchestrator-logs.md) 
+[Orchestrator Logs](orchestrator-logs.md)
 [Orchestrator Architecture](learn-about-orchestrator.md)  

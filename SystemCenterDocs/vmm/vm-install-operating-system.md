@@ -13,6 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Install an operating system on a VM in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 This article describes how to install an operating system on a VM in the System Center - Virtual Machine Manager (VMM) fabric.
 
@@ -21,7 +26,7 @@ After you've deployed a VM is in the VMM fabric, you can install an operating sy
 You can install an operating system from a DVD, from an ISO image file in the VMM library, or from a network installation.
 
 - For the system CD or ISO image, when you [set up the VM](vm-blank-disk.md) you need a virtual drive to attach to the physical drive or image file.
-- To use an ISO image, it must be added to the VMM library. 
+- To use an ISO image, it must be added to the VMM library.
 - For a network installation, you configure a virtual network adapter.
 
 ## Prepare to install from a system DVD
@@ -68,7 +73,7 @@ If the network adapter on the host computer supports network service boots, you 
 1. Right-click the VM > **Connect to virtual machine**. Click **Yes** to start the VM.
 2. On the Remote Control menu, click **Special Keys** and then click **Send Ctrl+Alt+Delete**.
 3. Install the operating system on the VM. The boot disk partition must be the Windows partition.
-4. After completing the installation, end your session with the VM and stop the VM in VMM. 
+4. After completing the installation, end your session with the VM and stop the VM in VMM.
 
 
 ## Next steps

@@ -14,6 +14,12 @@ ms.author: v-anesh
 
 # System Center DPM Compatible Tape Libraries
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be deployed using tape-based backup for data protected by the DPM server. A tape library or stand-alone tape drive can be connected to DPM servers. For more information see [Planning the Tape Libraries Configuration](https://docs.microsoft.com/previous-versions/system-center/data-protection-manager-2010/ff399733(v=technet.10)). The following tables summarize tape libraries that are compatible with DPM in System Center 2012 R2, 2016 and 2019.
 
 > [!NOTE]

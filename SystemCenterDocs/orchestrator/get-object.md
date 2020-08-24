@@ -16,6 +16,12 @@ manager: carmonm
 ---
 # Get Object
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Get Object activity is used to search for a record based on a set of filter criteria. The Get Object activity supports incidents, changes, and activities.
 
 The following published data element is specific to Get Object. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).

@@ -5,15 +5,21 @@ ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 01/22/2018
 title: Deploy Service Management Automation
 ms.technology: service-management-automation
 ---
 
-# Deploy Service Management Automation 
+# Deploy Service Management Automation
 
-To deploy Service Management Automation (SMA), you must install the SMA Web Service, set up the SMA runbook worker, and setup the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation. 
+::: moniker range=">= sc-sma-1801 <= sc-sma-1807"
+
+[!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
+
+::: moniker-end
+
+To deploy Service Management Automation (SMA), you must install the SMA Web Service, set up the SMA runbook worker, and setup the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation.
 
 You can install the web service on any machine that can communicate with Windows Azure Pack and an instance of SQL Server.
 
@@ -194,7 +200,7 @@ The SMA endpoint requires the following information:
 
 -   The access password for the user account.
 
-## Uninstall SMA 
+## Uninstall SMA
 
 Any of the SMA components can be removed in the **Control Panel** by selecting the component in the Programs section and clicking **Uninstall**.
 

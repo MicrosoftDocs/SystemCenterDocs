@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Alerts Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Get Alerts activity retrieves an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer and replicates it to a trouble ticketing system.
 
 The following tables list the required properties, optional properties, and published data for this activity.
@@ -51,4 +57,4 @@ The following procedure describes the steps required to configure a Get Alerts a
     4.  In the **Value** box, enter the value you want to use. Click **OK** to save the filter settings.
     5.  Add additional filters as needed, and then click **Finish**.
 
-You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow. 
+You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.

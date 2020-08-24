@@ -5,7 +5,7 @@ description: This article details the known issues and workarounds in Operations
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 03/20/2020
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -24,6 +24,8 @@ This article lists the release notes for System Center 2019 - Operations Manager
 
 ::: moniker range="sc-om-1807"
 
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
 This article lists the release notes for System Center 1807 - Operations Manager.
 
 [!INCLUDE [release-notes-om-1807.md](../includes/release-notes-om-1807.md)]
@@ -39,6 +41,8 @@ This article lists the release notes for System Center 2016 - Operations Manager
 ::: moniker-end
 
 ::: moniker range="sc-om-1801"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
 This article lists the release notes for System Center 1801 - Operations Manager.
 

@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Get Computer/IP Status
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Get Computer/IP Status activity will send a ping to a remote computer or IP address and wait for a response. If a response is received, then the Get Computer/IP Status activity will succeed. If a response is not received, the activity will fail.  
 
  The Get Computer/IP Status activity can be used to confirm that a computer is available before performing an action on that computer. You can also use the Get Computer/IP Status activity to check the availability of a computer as part of the level 1 diagnostic step when performing problem management processes.  

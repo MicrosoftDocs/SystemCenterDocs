@@ -14,6 +14,12 @@ ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 
 # Using the Operations Manager consoles
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center – Operations Manager includes two consoles, the Operations console and Web console.  The [Comparing the Operations and Web console](manage-consoles-comparison.md) section provides information on the difference between them, how to configure them after installation, and how to use the consoles to view the operational data reported by the monitored services in the enterprise.  
 
 - Learn [How to Connect to the Operations and Web Console](manage-consoles-how-to-connect.md) in order to access and interact with the operational data or perform administrative tasks.  
@@ -25,4 +31,3 @@ System Center – Operations Manager includes two consoles, the Operations con
 - Learn what actions you can perform in the [Monitoring workspace](manage-using-monitoring-workspace.md), [Authoring workspace](manage-using-authoring-workspace.md), [Administration workspace](manage-using-admin-workspace.md), and [Reporting workspace](manage-using-reporting-workspace.md).  
 
 - Understand how [Finding data and objects in the Operations console](manage-console-finding-data.md) and [Using Advanced Search](manage-console-using-adv-search.md) help you quickly locate the data you need.  
-

@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Upload Attachment
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The **Upload Attachment** activity is used in a runbook to attach a file to a Microsoft SharePoint list item.
 
 The following tables list the required properties and Published Data for this activity.

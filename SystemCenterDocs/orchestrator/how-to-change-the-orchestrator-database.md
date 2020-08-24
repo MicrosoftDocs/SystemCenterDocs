@@ -12,6 +12,12 @@ manager: carmonm
 
 # Modify the Orchestrator database
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 You might have to change the location of the Orchestrator database after installation, because you might want to separate the management server and database server, move the database to a larger server or a cluster, or just reconfigure the orchestration database based on required changes in your environment. You can use standard Microsoft SQL Server methods to move the existing database to another server, but then you must configure the Orchestrator features to connect to the new server. You must perform this configuration for the management server, the web service supporting the Orchestration console, and each runbook server as described in the following procedures.  
 
 ## Management server and runbook servers  

@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Update Deployment Status
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Update Deployment Status activity initiates a change in deployment status. It is part of the Azure Deployments category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

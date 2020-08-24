@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to upgrade agents in a parallel deployment
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 When you perform a side-by-side deployment of System Center 2016 - Operations Manager or System Center Operations Manager 1801 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.  
 
 ::: moniker range="sc-om-1801"
@@ -42,7 +48,7 @@ If you want to maintain your existing Operations Manager environment, you can in
     Your image will need to be updated to include the new version and configured to assign the agent to the new Operations Manager management group.   
 
 - Manual installation where setup is manually executed on the agent or deployed through an existing software distribution tool.  
-    
+
     Your deployment process will need to be updated to inlucde the new agent Windows installer package and dependencies required.  The logic defined to interrogate, install and configure, and verify the agent will need to be updated accordingly.   
 
 Once you have completed all the post-upgrade steps and are comfortable with the state of your new Operations Manager management group, you can reconfigure the agents to remove assignment from the existing Operations Manager management group that you are preparing to retire.  This can be accomplished by following the guidance in the Operations Manager SDK to programatically [remove the management group configuration](https://msdn.microsoft.com/library/hh329017.aspx) from the agent.  

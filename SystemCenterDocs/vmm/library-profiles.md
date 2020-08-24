@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Add profiles to the VMM library
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Use this article to learn about System Center - Virtual Machine Manager (VMM) profiles, and how to add them to the VMM library.
 

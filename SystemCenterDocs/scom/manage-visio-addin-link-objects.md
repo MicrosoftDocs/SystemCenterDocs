@@ -14,6 +14,12 @@ ms.assetid: f5a4749c-e042-401c-86ae-f9830576fcf2
 
 # Link to Operations Manager objects in a new or existing Visio document
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The Visio Add-in for System Center - Operations Manager lets you link to Operations Manager objects to present health state information in a new or existing Microsoft Visio drawing.   
 
 To do this, you first specify a Operations Manager management server from which the Visio Add-in will query to get information about the managed objects and their health state. Then, you add the links by using one of the following methods:  

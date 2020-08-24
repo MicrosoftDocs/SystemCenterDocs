@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to Move the Reporting Server Role
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 You can move the System Center Operations Manager Reporting server component to a new server, or reinstall the component on the original server.  
 
 During this move, Operations Manager stops storing data in the OperationsManagerDW database until you complete the Operations Manager reporting server reinstall.

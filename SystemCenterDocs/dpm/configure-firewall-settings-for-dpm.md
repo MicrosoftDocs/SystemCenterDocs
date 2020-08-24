@@ -13,6 +13,12 @@ ms.topic: article
 
 # Configure firewall settings in DPM
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 A common question that arises during System Center Data Protection Manager (DPM) server deployment, and DPM agent deployment, concerns which ports have to be opened on the firewall. This article introduces the firewall ports and protocols that DPM uses for network traffic. For more information about firewall exceptions for DPM clients, go to: [Configure firewall exceptions for the agent](deploy-dpm-protection-agent.md#set-up-firewall-exceptions).  
 
 |Protocol|Port|Details|  

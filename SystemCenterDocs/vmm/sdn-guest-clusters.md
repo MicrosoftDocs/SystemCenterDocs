@@ -14,6 +14,13 @@ monikerRange: '>sc-vmm-2016'
 
 # Configure guest clusters in SDN through VMM
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
+
 This article explains about how to configure guest clusters in SDN using the System Center - Virtual machine Manager (VMM).
 
 VMM was supporting guest clustering.  However, with the advent of the network controller (NC), Windows Server 2016 and System Center 2016, the configuration of guest clusters has undergone some change.

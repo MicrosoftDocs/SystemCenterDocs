@@ -15,6 +15,12 @@ monikerRange: '>=sc-om-2016 <sc-om-1807 || sc-om-2019'
 
 # Upgrading System Center Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 This section of the Deployment Guide provides information about how to upgrade to System Center 2019 from an older supported version. You can upgrade to Operations Manager 2019 from Operations Manager versions 2016, 1801 or 1807.

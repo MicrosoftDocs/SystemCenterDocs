@@ -6,13 +6,19 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: bd4ce7ab-9e8f-4f83-a04a-f4385c2ac6b0
 ---
 
 # User interface customization in Service Manager
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 The sealed management packs in Service Manager contain, among other things, views, list items, and templates. Because these items are in a sealed management pack, they cannot be edited or changed. In Service Manager, you have the option of hiding views. You can duplicate list items and templates, saving the duplicates into an unsealed management pack, and because the duplicates are in an unsealed management pack, you can edit the properties of the list item or template using the Service Manager console.
 

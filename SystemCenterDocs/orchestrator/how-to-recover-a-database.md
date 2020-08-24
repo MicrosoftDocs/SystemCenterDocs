@@ -12,6 +12,12 @@ manager: carmonm
 
 # Recover a database
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Orchestrator database can be backed up and restored using most standard MS SQL Server database backup\/restore mechanisms. This includes Microsoft SQL Server Backup, DPM SQL Server backup, and others. Orchestrator provides a VSS Writer that will discover the database server that is associated with the Management Server and back up the database when the Management Server is backed up.  
 
 However, there are a few key considerations when restoring.  
@@ -23,7 +29,7 @@ However, the encryption services also depend on the MS SQL Server Service Master
 
 The database key is essentially paired with the service master key on the database server targeted by the installer. If either the database key or the service master key is lost, encrypted data stored in the data is likewise lost. This would include the license key, either entered by the user or an automatically created trial license.  
 
-### Run a backup 
+### Run a backup
 
 1.  [Back up the service master key for Microsoft SQL Server](https://go.microsoft.com/fwlink/?LinkId=249148). This is a one\-time operation. Note "password" is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key cannot be recovered from the file.  
 

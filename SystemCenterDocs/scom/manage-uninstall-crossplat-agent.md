@@ -14,6 +14,12 @@ ms.topic: article
 
 # Manually uninstalling agents from UNIX and Linux computers
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 There are three ways to uninstall the UNIX and Linux management packs and agents.
 
 1.  Delete selected UNIX or Linux system management packs from the Operations Manager Operations Console.
@@ -97,5 +103,3 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 - To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](~/scom/manage-apply-overrides-object-discovery.md).
 
 - To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](manage-upgrade-uninstall-crossplat-agent.md).
-
-

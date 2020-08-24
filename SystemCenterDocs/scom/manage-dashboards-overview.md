@@ -13,6 +13,12 @@ ms.topic: article
 
 # Dashboards in Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 A dashboard has a particular layout, which specifies the arrangement of the cells that actually host content.  Each cell in a dashboard can contain a single widget.  A widget accesses a particular set of data or performs a particular function and presents its information in the dashboard.  Each widget provides a specific set of customizations that you can modify according to your particular requirements.  Depending on the Dashboard Layout that you select, the dashboard may have a fixed set of widgets or may allow you to define a number of configuration of cells that can each contain a widget of your choice.
 
 

@@ -17,6 +17,12 @@ manager: carmonm
 
 # Get Cluster Properties Activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Get Cluster Properties activity is used in a runbook to retrieve information about a virtual machine cluster in VMware vSphere. This allows the runbook to obtain the information about a cluster before cloning or creating virtual machines on that cluster.
 
 The following tables list the required and optional properties and published data for this activity.

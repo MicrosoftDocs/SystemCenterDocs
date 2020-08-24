@@ -12,6 +12,12 @@ ms.topic: article
 
 # Post-upgrade tasks
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 This articles describes the tasks you should complete after upgrading System Center - Service Manager.
 
 ## Restart the Data Access service and workflows

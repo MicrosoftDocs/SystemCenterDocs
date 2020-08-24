@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Unlock User
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 You can use the Unlock User activity in a runbook to reset the user password in Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

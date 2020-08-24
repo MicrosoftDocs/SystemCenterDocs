@@ -14,6 +14,13 @@ monikerRange: '>sc-vmm-2016'
 
 # Configure HGS fallback URLs in VMM
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
+
 This article describes how to define the fallback Host Guardian Service (HGS) URLs in System Center - Virtual Machine Manager (VMM) global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
 
 Being at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, the host guardian service (HGS) should operate even in situations of disaster.

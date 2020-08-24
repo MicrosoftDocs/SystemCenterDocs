@@ -12,6 +12,14 @@ ms.author: raynew
 
 # Installation
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 This article provides the system requirements and steps to install the Orchestrator Integration Toolkit.  
 
 ## System Requirements  
@@ -44,7 +52,7 @@ This article provides the system requirements and steps to install the Orchestra
 
 #### To install the Orchestrator Integration Toolkit  
 
-1.  Download System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=39622), and then run the installer. The welcome page displays.  
+1.  Download System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe from the [Microsoft download center](https://www.microsoft.com/download), and then run the installer. The welcome page displays.  
 
 2.  Click **Next**. The License Agreement page displays. To continue, you must select the checkbox next to **I accept the terms in the License Agreement**, then click **Next**.  
 

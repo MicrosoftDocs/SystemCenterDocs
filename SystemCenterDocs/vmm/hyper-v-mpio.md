@@ -14,7 +14,11 @@ ms.technology: virtual-machine-manager
 
 # Manage MPIO for Hyper-V hosts in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Read this article to learn about how System Center - Virtual Machine Manager (VMM) manages Multipath I/O (MPIO) on Hyper-V hosts.
 

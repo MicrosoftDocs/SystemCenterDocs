@@ -5,7 +5,7 @@ description: This article describes about version numbers.
 author: v-anesh
 ms.author: v-anesh
 manager: vvithal
-ms.date: 07/22/2020
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -13,6 +13,12 @@ monikerRange: '>=sc-vmm-2016'
 ---
 
 # System Center – Virtual Machine Manager build versions
+
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 This article describes how to determine your current Microsoft System Center – Virtual Machine Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 

@@ -14,6 +14,12 @@ ms.topic: article
 
 # Windows Service template
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The _Windows Service_ template lets you find and monitor instances of a particular service installed on a Windows-based computer. The template locates computers that are running the service and then applies monitors and rules to test its availability and collect performance data. The only information that you have to provide is the name of the service and the types of monitoring that you want to perform.
 
 ## Scenarios

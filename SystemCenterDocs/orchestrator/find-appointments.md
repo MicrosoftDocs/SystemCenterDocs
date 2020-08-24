@@ -17,6 +17,12 @@ manager: carmonm
 
 # Find Appointments
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Find Appointments activity is used in a runbook to find an existing appointment.
 
 The following tables list the required properties, optional properties, filters, and published data for this activity.

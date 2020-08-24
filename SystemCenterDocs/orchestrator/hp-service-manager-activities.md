@@ -17,6 +17,12 @@ manager: carmonm
 
 # HP Service Manager Activities
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The following configuration instructions apply to all activities in this integration pack.
 
 ## Activity Properties

@@ -14,6 +14,12 @@ ms.topic: article
 
 # Install agent on UNIX and Linux using the Discovery Wizard
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Use the **Computer and Device Management Wizard** to discover and install agents on UNIX and Linux computers. For a list of the supported operating system versions, see [Supported Operating Systems and Versions](plan-supported-crossplat-os.md).
 
 Before you run the wizard, gather the following information:
@@ -77,7 +83,3 @@ You must have, at a minimum, a UNIX/Linux Action Account profile configured with
 - To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](~/scom/manage-upgrade-uninstall-crossplat-agent.md).
 
 - Review [Manually Uninstalling Agents from UNIX and Linux Computers](manage-uninstall-crossplat-agent.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
-
-
-
-

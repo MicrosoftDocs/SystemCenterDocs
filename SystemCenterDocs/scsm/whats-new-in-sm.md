@@ -24,6 +24,8 @@ This article details the new features supported in System Center 2019 - Service 
 
 ::: moniker range="sc-sm-1807"
 
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
 This article details the new features supported in System Center 1807 - Service Manager (SM).
 
 [!INCLUDE [whats-new-sm-1807.md](../includes/whats-new-sm-1807.md)]
@@ -31,6 +33,8 @@ This article details the new features supported in System Center 1807 - Service 
 ::: moniker-end
 
 ::: moniker range="sc-sm-1801"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
 
 This article details the new features supported in System Center 1801 - Service Manager (SM).
 

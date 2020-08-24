@@ -18,6 +18,12 @@ robots: noindex
 
 # Delete collection rule activity
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Delete Collection Rule activity is used to redefine the membership
 of a collection by removing collection membership rules from the
 collection. Membership rules determine the resources that are included

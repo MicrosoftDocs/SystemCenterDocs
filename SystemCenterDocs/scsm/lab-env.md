@@ -12,6 +12,12 @@ ms.topic: article
 
 # Set up a lab environment for upgrade testing
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 Use the following procedures to prepare for Service Manager upgrade by creating a lab environment and preparing it for production data, for the purposes of upgrade testing.
 
 Many of the procedures in this article are lengthy and might take a considerable amount of time to complete. As long as you complete the procedures in order, you do not need to complete them without stopping.

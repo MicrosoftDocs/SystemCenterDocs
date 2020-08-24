@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Junction
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Junction activity allows you to wait for multiple branches in a runbook to complete before continuing past the junction. This activity can also publish data again from any branch so that downstream activities past the Junction activity can consume the data. Data from different branches than the one you selected will not be available.  
 
  You can choose to propagate no data from any of the branches previous to the Junction activity. When you select an activity, the junction runs once, regardless of the data provided in previous activities. For example, a Monitor File activity waits for files to be added to a folder. When the files are added, two branches in the runbook will copy the file to a new location and at the same time, read the lines of the files and add them to master file. The Junction activity waits for all these to complete and then propagates the data from the Copy File branch and the Delete File activity will delete the original files.  

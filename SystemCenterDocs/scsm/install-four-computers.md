@@ -17,6 +17,12 @@ ms.assetid: 474fd861-01b0-44a6-b917-cf320a5d725b
 
 # Installing Service Manager on four computers
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 When you are ready to move System Center - Service Manager into a production environment, or if you want to maximize performance and scalability, you can consider an installation topology in which each part of the Service Manager installation resides on its own computer. This topology requires the use of four computers, as shown in figure 3.  
 
  **Figure 3: Four\-computer topology**  

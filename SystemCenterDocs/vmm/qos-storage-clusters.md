@@ -14,6 +14,13 @@ monikerRange: '>sc-vmm-2016'
 
 # Manage storage QoS for clusters
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
+
 This article describes about how to manage storage quality-of-service (QoS) policies for clusters in the System Center - Virtual Machine Manager (VMM).  
 
 

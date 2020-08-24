@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Manage scale-out file server (SOFS) in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Scale-out file server (SOFS) is a file server deployed as an active/active cluster based on SMB 3.0. Using an SOFS cluster provides supplies apps with the bandwidth of all nodes in the cluster. All nodes in the cluster accept SMB requests, providing continuous availability and transparent failover if a node goes down.
 

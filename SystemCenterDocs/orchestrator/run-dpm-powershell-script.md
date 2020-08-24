@@ -17,6 +17,12 @@ robots: noindex
 ---
 # Run DPM PowerShell Script
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+[!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
+
+::: moniker-end
+
 The Run DPM PowerShell Script activity is used in a runbook to provide a flexible way to address more complex scenarios you may have in working with System Center - Data Protection Manager (DPM).
 
 This activity allows you to run PowerShell scripts utilizing the pre-configured connection settings for the DPM Integration Pack, instead of having to use the Run .NET Script activity and manually specifying connection credentials and using PowerShell remoting commands yourself. This activity also provides better performance than using the Run .NET Script activity because it reuses any open connections to the DPM server rather than opening new connections to run commands.

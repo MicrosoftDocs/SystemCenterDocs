@@ -14,6 +14,12 @@ ms.topic: article
 
 # Planning a Management Group Design
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 ## Overview
 
 A management group is identified by a single operational database, one or more management servers, and one or more monitored agents and devices.  Connecting management groups allows alerts and other monitoring data to be viewed and edited from a single console.  Tasks can also be initiated from a local management group to run on the managed objects of a connected management group.

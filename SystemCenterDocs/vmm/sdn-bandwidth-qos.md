@@ -14,7 +14,11 @@ ms.technology: virtual-machine-manager
 
 # Control SDN virtual network bandwidth with QoS
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 This article provides information about how to configure the Quality of Service (QoS) settings for SDN virtual networks, in System Center - Virtual Machine Manager (VMM).
 Through this configuration, you can limit the bandwidth of the traffic flowing in or out of a virtual network adapter (vNIC) by specifying the minimum reserved bandwidth or maximum bandwidth for the adapter.
