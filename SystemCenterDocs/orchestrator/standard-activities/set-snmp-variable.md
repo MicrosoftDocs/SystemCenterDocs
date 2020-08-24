@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Set SNMP Variable
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Set SNMP Variable activity will modify a variable, specified by its MIB, on a network device. Use the Set SNMP Variable to update a variable that reports on the failure or success of a critical runbook.  
 
 ## Configuring the Set SNMP Variable Activity  

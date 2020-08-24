@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Get Counter Value
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Get Counter Value activity retrieves the value of a counter and returns it as a published data item. Wherever you need to use the value of a counter, use the published data that is published by the Get Counter Value to retrieve that value.  
 
 ## Configuring the Get Counter Value Activity  

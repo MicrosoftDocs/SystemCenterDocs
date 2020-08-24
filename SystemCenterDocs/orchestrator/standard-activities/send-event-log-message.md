@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Send Event Log Message
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Send Event Log Message activity creates an entry in the Windows Event Log within the Application folder. This activity can be used to create audit logs in the Windows Event Log that document any problems that occur while trying to correct issues by using an automated runbook.  
 
 ## Configuring the Send Event Log Message Activity  

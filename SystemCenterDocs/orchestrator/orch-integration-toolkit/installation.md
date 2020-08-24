@@ -12,6 +12,14 @@ ms.author: raynew
 
 # Installation
 
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 This article provides the system requirements and steps to install the Orchestrator Integration Toolkit.  
 
 ## System Requirements  

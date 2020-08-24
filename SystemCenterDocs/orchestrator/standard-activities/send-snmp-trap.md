@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Send SNMP Trap
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Send SNMP Trap activity will raise an SNMP event that can be detected by a network systems manager application. By using an enterprise identifier of a known network device, you can send SNMP Traps on behalf of a network device in your system. Use the Send SNMP Trap to create events for runbooks that need to be tracked using an SNMP monitoring product.  
 
 ## Configuring the Send SNMP Trap Activity  

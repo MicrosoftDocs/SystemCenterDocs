@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Restart System
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Restart System activity will restart a computer on your network. The Restart System activity can either wait for applications to shut down gracefully or you can configure the activity to forcefully shut down any running applications. You also can send a message to notify your users of the reason for the disruption.  
 
  Some applications may consume memory and hard disk space and will not relinquish them without restarting the system. The Restart System activity can be used to restart these systems during maintenance windows to maintain service during business hours.  

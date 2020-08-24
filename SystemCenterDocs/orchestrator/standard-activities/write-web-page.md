@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Write Web Page
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Write Web Page activity will create or add information to an HTML file. When creating new web pages with the Write Web Page activity, you can use templates that can contain any of the formatting that you require. When using the Write Web Page activity to create web pages, all occurrences of the tags \<DOC-TITLE> and \<DOC-TEXT> will be replaced by the title and text that you specify, respectively.  
 
  When using the Write Web Page activity to append to an existing web page, you will specify an HTML tag that will mark the position where the page will be appended. The Write Web Page activity will append the text above the HTML tag that you have specified.  

@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Monitor SNMP Trap
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Monitor SNMP Trap activity waits for an event to occur either in the Microsoft SNMP Trap Service, or on a port that you specify. Using filters, you can invoke your runbooks according to the device that raised the event or the enterprise, generic, or specific identifiers of the SNMP trap. Use the Monitor SNMP Trap activity to monitor a network device for critical errors, automatically create a trouble ticket, and perform level 1 diagnostics on the device.  
 
 ## Configuring the Monitor SNMP Trap Activity  

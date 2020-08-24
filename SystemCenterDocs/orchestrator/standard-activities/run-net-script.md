@@ -15,6 +15,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Run .Net Script
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Windows PowerShell. This activity is compatible with .NET CLR version 2.0 and later. Use the Microsoft System Center - Orchestrator Run .Net Script activity to run scripts that parse data or run functions against available APIs.  
 
 ## Configuring the Run .Net Script Activity  

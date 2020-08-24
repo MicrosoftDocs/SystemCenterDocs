@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Get Internet Application Status
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Get Internet Application Status activity checks the availability of an internet application server. You can check the availability of a Web (HTTP), Email (SMTP), Email (POP3), FTP, DNS, or custom server.  You can also configure a server so it is available after a power outage or a restart.  
 
 ## Configuring the Get Internet Application Status Activity  
