@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Return Data
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Return Data activity allows you to return data from the current runbook to a runbook that invoked the runbook. You configure the runbook data by configuring the data parameters in the Runbook Properties dialog box.  
 
 ## Configuring the Return Data activity  

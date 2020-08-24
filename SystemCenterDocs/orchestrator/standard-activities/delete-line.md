@@ -19,6 +19,15 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Delete Line
+
+::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
+
+> [!IMPORTANT]
+>
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+
+::: moniker-end
+
 The Delete Line activity deletes lines from a text file.  Use the Delete Line activity to delete outdated lines of text from a text file.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
