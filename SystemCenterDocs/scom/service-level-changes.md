@@ -5,7 +5,7 @@ description: This article describes the service-level changes that are required 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 08/19/2020
+ms.date: 08/24/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -15,10 +15,10 @@ ms.topic: article
 
 # Service-level changes
 
-This article describes the service-level changes that are required to use group Managed Service Accounts (gMSAs).
+This article describes the service-level changes that are required to use group Managed Service Accounts (gMSAs) in System Center Operations Manager.
 
 >[!NOTE]
->This article applies to System Center 2019 Update Rollup 1 (UR1) Operations Manager.
+>This article applies to Operations Manager Update Rollup 1 (UR1) and later.
 
 
 ## Change the service account for System Center Data Access Service to gMSA
