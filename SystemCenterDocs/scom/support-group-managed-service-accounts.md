@@ -5,7 +5,7 @@ description: This article details the group managed service accounts feature, su
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 02/04/2020
+ms.date: 08/25/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.topic: article
 
 
 # Support for group managed service accounts
-Operations Manager 2019 UR1 supports group managed service accounts (gMSA). This article details the accounts used for gMSA, and the procedures involved with gMSA support.
+Operations Manager 2019 UR1 and later supports group managed service accounts (gMSA). This article details the accounts used for gMSA, and the procedures involved with gMSA support.
 
 >[!NOTE]
 > This article is applicable for System Center 2019 UR1 - Operations Manager.
