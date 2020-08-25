@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Report
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/06/2020
+ms.date: 08/25/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -30,7 +30,7 @@ You must ensure that your server meets the minimum system requirement for Operat
 ::: moniker range="sc-om-2019"
 
 >[!NOTE]
-> Operations Manager 2019 UR1 supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
+> Operations Manager 2019 UR1 and later supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
 
 ::: moniker-end
 
