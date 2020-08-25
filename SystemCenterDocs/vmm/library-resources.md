@@ -5,7 +5,7 @@ description: This article describes management tasks for the VMM library
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 02/04/2020
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -83,7 +83,7 @@ To remove orphaned resources, modify the templates that reference the orphaned r
 ## Manage replicated library shares
 
 >[!NOTE]
->This feature is applicable for VMM 2019 UR1.
+>This feature is applicable for VMM 2019 UR1 and later.
 
 VMM now supports the management of library servers, which are replicated. You can use any replication technologies such as DFSR to replicate shares and manage the shares through VMM.
 

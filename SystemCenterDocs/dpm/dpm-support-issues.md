@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 07/10/2020
+ms.date: 08/25/2020
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -188,7 +188,7 @@ Both of these scenarios are unsupported. You can only select one of the followin
 > [!NOTE]
 >We have identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these, and will update this section as soon as we have a fix available. Until then, we are removing the support for backup of deduplicated ReFS volumes from 2019 UR1.
 >
->DPM 2019 UR1 continues to support protection and recovery of normal ReFS volumes.
+>DPM 2019 UR1 and later continues to support protection and recovery of normal ReFS volumes.
 
 ::: moniker-end
 

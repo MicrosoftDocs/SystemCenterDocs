@@ -1,7 +1,7 @@
 ---
 ms.assetid: 84899e64-8395-4d33-aecb-19b07be15b9a  
 title: Service-level changes for gMSA in System Center Operations Manager
-description: This article describes the service-level changes that are required to use group Managed Service Accounts (gMSA), a new feature supported in Operations Manager 2019 UR1.
+description: This article describes the service-level changes that are required to use group Managed Service Accounts (gMSA), a new feature supported in Operations Manager 2019 UR1 and later.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
@@ -18,7 +18,7 @@ ms.topic: article
 This article describes the service-level changes that are required to use group Managed Service Accounts (gMSAs) in System Center Operations Manager.
 
 >[!NOTE]
->This article applies to Operations Manager Update Rollup 1 (UR1) and later.
+>This article applies to Operations Manager 2019 Update Rollup 1 (UR1) and later.
 
 
 ## Change the service account for System Center Data Access Service to gMSA

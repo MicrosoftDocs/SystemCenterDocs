@@ -5,7 +5,7 @@ description: This article describes options to administer and configure the UNIX
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/04/2020
+ms.date: 08/25/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -179,9 +179,9 @@ The values of the **OSName**, **OSVersion**, and **OSFullName** properties can b
 ##	Performance and reliability improvements in the Linux agent  
 
 >[!NOTE]
-> This update is applicable for Operations Manager 2019 UR1.
+> This update is applicable for Operations Manager 2019 UR1 and later
 
-With Operations Manager 2019 UR1, to improve the reliability, a separate process is introduced to send the heartbeat. Earlier, the performance and heartbeat collection threads used to run under the same process context. Due to this, any delay in performance data collection was affecting the system availability.
+With Operations Manager 2019 UR1 and later, to improve the reliability, a separate process is introduced to send the heartbeat. Earlier, the performance and heartbeat collection threads used to run under the same process context. Due to this, any delay in performance data collection was affecting the system availability.
 
 With this change, during heartbeat collection, you can now see an additional *omiagent* process running under *omi* user.
 
