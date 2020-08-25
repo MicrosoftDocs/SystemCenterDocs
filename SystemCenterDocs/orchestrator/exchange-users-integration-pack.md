@@ -34,7 +34,7 @@ Prior to implementing the Exchange Users Integration Pack, the following listed 
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
 -   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   Microsoft .NET Framework 3.5
--   Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or Microsoft Exchange Online/Office 365
+-   Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or Microsoft Exchange Online/Microsoft 365
 
 ## Downloading the integration pack
 
