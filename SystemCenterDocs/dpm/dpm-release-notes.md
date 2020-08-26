@@ -217,8 +217,6 @@ The following issues exist in the 1807 release.
 
 **Description**: When protecting Windows Server 2008, or Windows Server 2008 R2, installing the agent can fail.
 
-**Workaround**: Upgrade the Windows Management Framework (WMF) on the production server to 4.0. Download the WMF from [https://www.microsoft.com/download/details.aspx?id=40855](https://www.microsoft.com/download/details.aspx?id=40855). Install WMF and then install the agent.
-
 ### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail.
 
 **Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data), and then re-enable protection, if you then recover a 2012 R2 copy at the original location, further backups may fail.
