@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Audit 
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/04/2020
+ms.date: 8/25/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -25,7 +25,7 @@ Use the following procedures to install an Audit Collection Services (ACS) colle
 ::: moniker range="sc-om-2019"
 
 >[!NOTE]
-> Operations Manager 2019 UR1 supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
+> Operations Manager 2019 UR1 and later supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
 
 ::: moniker-end
 

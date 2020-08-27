@@ -1,11 +1,11 @@
 ---
 ms.assetid: 8ab415e9-b004-42eb-b12e-51d24f3f3de9
 title: Console-level changes for gMSA in System Center Operations Manager
-description: This article describes the console-level changes that are required to use group Managed Service Accounts (gMSAs), a new feature supported in Operations Manager 2019 UR1.
+description: This article describes the console-level changes that are required to use group Managed Service Accounts (gMSAs), a new feature supported in Operations Manager 2019 UR1 and later.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 02/04/2020
+ms.date: 08/25/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -17,7 +17,7 @@ ms.topic: article
 This article describes the console-level changes that are required to use group Managed Service Accounts (gMSAs).
 
 >[!NOTE]
->This article applies to System Center 2019 Update Rollup 1 (UR1) Operations Manager.
+>This article applies to Operations Manager 2019 Update Rollup 1 (UR1) and later.
 
 ## Change the credentials for Action accounts
 
