@@ -84,9 +84,9 @@ There are additional management packs that are required to relate network device
 
 -   [Windows Client 2000/XP/Vista/Windows 7 Operating Systems](https://mpwiki.viacode.com/default.aspx?g=posts&t=174962)  
 
--   [Windows 8 and 8.1 Client Operating System](https://www.microsoft.com/download/details.aspx?id=38434)
+-   [Windows 8 and 8.1 Client Operating System](https://www.microsoft.com/software-download/windows8ISO)
 
--   [Windows 10 Client Operating System](https://www.microsoft.com/download/details.aspx?id=51189)  
+-   [Windows 10 Client Operating System](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot%3aoverviewtab)  
 
 
 ## How Network device discovery works  
