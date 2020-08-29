@@ -5,7 +5,7 @@ ms.topic: article
 author: v-anesh
 ms.prod: system-center
 keywords:
-ms.date: 1/31/2020
+ms.date: 08/25/2020
 title: Offline backup for DPM
 ms.technology: data-protection-manager
 ms.assetid: 0c0f9a2e-494f-4fff-8889-ac3d70863e89
@@ -48,7 +48,7 @@ Ensure that the following prerequisites are met before initiating the Offline Ba
 * Update Rollup 1 is installed on SC DPM 2019.
 
   > [!NOTE]
-  > With DPM 2019 UR1 the offline seeding authenticates using Azure Active Directory.
+  > With DPM 2019 UR1 and later the offline seeding authenticates using Azure Active Directory.
 
 * On the computer running Azure Backup agent, make sure Microsoft Edge or Internet Explorer 11 is installed, and JavaScript is enabled.
 * Create an Azure Storage account in the same subscription as the Recovery Services vault.

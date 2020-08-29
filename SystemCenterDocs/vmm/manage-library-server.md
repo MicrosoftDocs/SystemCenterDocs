@@ -5,7 +5,7 @@ description: This article provides guidance for setting up the library in the VM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 02/04/2020
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
