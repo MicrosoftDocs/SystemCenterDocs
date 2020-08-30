@@ -25,7 +25,7 @@ robots: noindex
 
 For an on-premises Exchange environment, the Create Mailbox activity creates a new mailbox and a new Active Directory user associated with the new mailbox.
 
-For the Office 365 online environment, the Create Mailbox activity can create a new user with a mailbox in the cloud-based email service.
+For the Microsoft 365 online environment, the Create Mailbox activity can create a new user with a mailbox in the cloud-based email service.
 
 The following tables list the required properties, optional properties, and published data for the Create Mailbox activity.
 
@@ -68,7 +68,7 @@ The following tables list the required properties, optional properties, and publ
 | Mailbox Plan   | The mailbox plan to associate with this mailbox. A mailbox plan specifies the permissions and features that are available to a mailbox user. The mailbox plan name must be included in the service plan of the organization in which this mailbox resides.<br>This property is available for multi-tenant deployments. This property applies to objects in the cloud-based service. It is not available for on-premises deployments.   | String   |
 | Managed Folder Mailbox Policy   | The name or identity of the managed folder mailbox policy to apply to the new mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Managed Folder Mailbox Policy Allowed | Indicates whether to bypass the warning that messaging records management (MRM) features aren't supported for email clients using versions of Microsoft Outlook earlier than Office Outlook 2007. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
-| Microsoft Online Services ID   | ID that allows access to Microsoft Online Services. <br><br><strong>Note </strong><br> This property is available only in the Office 365 environment. <br><br>   | String   |
+| Microsoft Online Services ID   | ID that allows access to Microsoft Online Services. <br><br><strong>Note </strong><br> This property is available only in the Microsoft 365 environment. <br><br>   | String   |
 | Moderated By   | A comma-separated list of users who are responsible for moderating the messages sent to this mailbox.   | String   |
 | Moderation Enabled   | Indicates whether to enable moderation for the mailbox. Default is True, when selected.   | True, False   |
 | Office   | The Microsoft Office attribute for this mailbox   | String   |

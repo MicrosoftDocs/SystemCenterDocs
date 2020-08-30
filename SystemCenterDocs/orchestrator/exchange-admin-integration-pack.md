@@ -25,7 +25,7 @@ manager: carmonm
 
 Integration packs are add-ons for System Center - Orchestrator, a component of System Center. Integration packs help to optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and other third party products.
 
-The Integration Pack for Exchange Admin helps to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote, or cloud-based environments in Microsoft Exchange and Office 365.
+The Integration Pack for Exchange Admin helps to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote, or cloud-based environments in Microsoft Exchange and Microsoft 365.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
@@ -36,7 +36,7 @@ Before you implement the Integration Pack for Exchange Admin, the following list
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
 -   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   Microsoft .NET Framework 3.5 Service Pack 1
--   Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Office 365
+-   Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Microsoft 365
 -   Microsoft Exchange Management Shell
 -   Microsoft PowerShell 2.0
 -   Microsoft WinRM 2.0
