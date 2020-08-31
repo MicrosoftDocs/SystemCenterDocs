@@ -171,6 +171,23 @@ The Replica folder contains mounted replica volumes.
 
 The ShadowCopy folder contains local backup copies of the DPM database. In addition, when you use DPMBackup.exe to create backup shadow copies of the replicas for archive by third-party backup software, the backup shadow copies are stored in the ShadowCopy folder.
 
+::: moniker range="<sc-dpm-2019"
+
 ## DPM Telemetry
 
 DPM does not collect any telemetry. If you are sending the data to Azure, the information needed by Azure Backup is sent to Microsoft. It does not contain any PII.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+## DPM Telemetry
+
+>[!NOTE]
+> Applicable from DPM 2019 UR2.
+
+By default, DPM sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security, and integrity of Microsoft products and services.
+
+Administrators can turn off this feature at any point of time. For detailed information about the data collected, see [manage telemetry in DPM](manage-telemetry.md).
+
+::: moniker-end
