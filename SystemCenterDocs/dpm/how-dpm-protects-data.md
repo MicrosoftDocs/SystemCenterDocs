@@ -126,7 +126,7 @@ The following illustration shows how each protection group member is associated 
 
 Administrators recover data from available recovery points by using the Recovery Wizard in DPM Administrator Console. When you select a data source and point in time from which to recover, DPM notifies you if the data is on tape, whether the tape is online or offline, and which tapes are needed to complete the recovery.
 
-DPM gives administrators the ability to enable their end users to perform their own recoveries by leveraging the Previous Versions feature in Windows. If you do not want to provide this capability to your end users, you recover the data for desktop computers using the using the Recovery Wizard.
+DPM gives administrators the ability to enable their end users to perform their own recoveries by leveraging the Previous Versions feature in Windows. If you do not want to provide this capability to your end users, you recover the data for desktop computers using the Recovery Wizard.
 
 ## Protection policy
 
