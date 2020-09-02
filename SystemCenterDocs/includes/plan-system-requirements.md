@@ -171,7 +171,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
     - Windows Authentication
  <br>
 - Selected website for web console: Requires a configured http or https binding.
-- The System Center 2012 R2 Operations Manager SharePoint Dashboard Viewer Web Part is supported on SharePoint 2010 and SharePoint 2013. However, it is not supported on Office 365 SharePoint.
+- The System Center 2012 R2 Operations Manager SharePoint Dashboard Viewer Web Part is supported on SharePoint 2010 and SharePoint 2013. However, it is not supported on SharePoint in Microsoft 365.
 - NET Framework 4 or .NET Framework 4.5 is required.
 
 > [!NOTE]
