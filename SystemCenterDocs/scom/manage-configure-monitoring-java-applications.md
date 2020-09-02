@@ -37,7 +37,7 @@ Getting started with monitoring Java applications requires these four general st
     > [!IMPORTANT]  
     > Although the Management Pack for JEE supports several types of application servers, Java Application Monitoring only supports Tomcat.  
 
-    Download the Management Pack for JEE and the Management Pack Guide for JEE. This management pack monitors JEE application servers and is available for IBM WebSphere, Oracle WebLogic, Red Hat JBoss, and Apache Tomcat. Go to the [System Center Management Pack for Java Enterprise Edition (JEE) on the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=44576), click **Download**, and then select the files you want to download. For example, select the management pack (SC2012OM_JEE_MP.msi) and select the Management Pack Guide for Tomcat (OpsMgr_MP_Tomcat.docx).  
+    Download the Management Pack for JEE and the Management Pack Guide for JEE. This management pack monitors JEE application servers and is available for IBM WebSphere, Oracle WebLogic, Red Hat JBoss, and Apache Tomcat. Go to the [System Center Management Pack for Java Enterprise Edition (JEE) on the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=58157), click **Download**, and then select the files you want to download. For example, select the management pack (SC2012OM_JEE_MP.msi) and select the Management Pack Guide for Tomcat (OpsMgr_MP_Tomcat.docx).  
 
     > [!IMPORTANT]  
     > Make sure to download the corresponding management pack guide (.docx file) for the application server you are using. It contains the details of how to install the management pack and describes what is monitored.  
