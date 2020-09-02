@@ -62,9 +62,9 @@ Follow steps 1 to 5 from the previous procedure. Assign the roles by using the i
 | OperationsManager DW|apm\_datareader, db\_datareader, OpsMgrReader |
 |  **Data Writer account** |         |
 |   Operations Manager DB| apm\_datareader, apm\_datawriter,  db\_datareader, dwsynch\_users|
-|OperationsManager DW|apm\_datareader, db\_datareader, db\_owner, OpsMgrWriter|
+|OperationsManager DW|apm\_datareader, apm_datawriter, db\_owner, OpsMgrWriter|
 |   **Data Reader account** |         |
-|     System Databases: master for ReportServer and ReportServerTempDB|      RSExecRole   |
+|     System Databases: master DB|      RSExecRole   |
 | System Databases: msdb for Operations Manager DW| RSExecRole, SQLAgentOperatorRole,  SQLAgentReaderRole, SQLAgentUserRole|
 | OperationsManager DW |apm\_datareader, db\_datareader, OpsMgrReader|
 |  Report Server Database      | db\_owner,  RSExecRole      |
