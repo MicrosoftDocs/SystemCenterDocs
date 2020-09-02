@@ -5,7 +5,7 @@ description: This article details the group managed service accounts feature, su
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 08/25/2020
+ms.date: 09/02/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -29,8 +29,8 @@ Currently, Operations Manager uses the following accounts and services :
       - GW Server Action account
       - Run as accounts
   - System Center Configuration Service and System Center Data Access Service (needs to be a part of local admin group)
-  - Data Reader account (for SSRS)
-  - Data Warehouse Write account (for DW)
+  - Data Reader account (for SSRS), must be a member of Operations Manager Report Security Administrators group.
+  - Data Warehouse Write account (for DW), must be a member of Operations Manager Report Security Administrators group.
   - Agent Installation account
       - MSAA by default, needs admin rights on the target computers.
 
