@@ -28,7 +28,7 @@ Currently, Operations Manager uses the following accounts and services :
       - Agent Action account
       - GW Server Action account
       - Run as accounts
-  - System Center Configuration Service and System Center Data Access Service (needs to be a part of local admin group)
+  - System Center Configuration Service and System Center Data Access Service (needs to be a part of local administrators group)
   - Data Reader account (for SSRS), must be a member of Operations Manager Report Security Administrators group.
   - Data Warehouse Write account (for DW), must be a member of Operations Manager Report Security Administrators group.
   - Agent Installation account

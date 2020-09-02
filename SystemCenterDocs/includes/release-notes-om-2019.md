@@ -164,10 +164,10 @@ This is specifically observed for SQL Server Reporting Services on SQL Server 20
 
 2.	Run the PowerShell script as detailed [here](https://support.microsoft.com/help/4519161/operations-manager-2019-and-1807-reports-fail-to-deploy).
 
-3. If this is a fresh installation of Operations Manager, Wait for 24 hours, and then apply the Update Rollup. This is applicable to all roles in Operations Manager.
+3. If this is a fresh installation of Operations Manager, wait for 24 hours, and then apply the Update Rollup. This is applicable to all roles in Operations Manager.
 
 >[!NOTE]
-> Ensure that DW and DR accounts are members of the Operations Manager Report Security Administrators group, so the issue do not recur.
+> Ensure that DW and DR accounts are members of the Operations Manager Report Security Administrators group, so the issue do not recur. See [gMSA accounts](../scom/support-group-managed-service-accounts.md) for more information.
 .
 
 ## Operations Manager 2019 UR2 release notes
