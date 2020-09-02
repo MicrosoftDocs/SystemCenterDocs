@@ -57,7 +57,7 @@ Follow steps 1 to 5 from the previous procedure. Assign the roles by using the i
 |    **Action account**     |         |
 | Operations Manager DB|db\_datareader, db\_datawriter, db\_ddladmin, dbmodule\_users|
 |   **Data Access Service account**       |         |
-|   Systems Database: msdb for OperationsManager DB |SQLAgentOperatorRole, SQLAgentReaderRole, SQLAgentUserRole |
+|   Systems Database: msdb for OperationsManager DB |SQLAgentOperatorRole, SQLAgentReaderRole, SQLAgentUserRole, db_owner |
 |Operations Manager DB |  configsvc\_users, db\_accessadmin, db\_datareader,  db\_datawriter, db\_ddladmin, db\_securityadmin, dbmodule\_users, sdk\_users, sql\_dependency\_subscriber|
 | OperationsManager DW|apm\_datareader, db\_datareader, OpsMgrReader |
 |  **Data Writer account** |         |
