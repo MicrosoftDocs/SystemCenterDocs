@@ -4,7 +4,7 @@ description: include file that summarizes the release notes for Operations Manag
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 02/04/2020
+ms.date: 09/02/2020
 ms.prod: system-center
 ms.assetid: 56adc06e-4317-4622-83f2-cc44a5f40c78
 ms.technology: operations-manager
@@ -153,6 +153,22 @@ This is specifically observed for SQL Server Reporting Services on SQL Server 20
 >From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
 >
 >To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+
+### Replacement of previously used service accounts with gMSA fails
+
+**Description:**  Replacement of previously used Operation Manager's service accounts with gMSA fails, leading to Operations Manager's console issues (Console fails to open). This occurs if the data access service is not initialized.
+
+**Workaround**:
+
+1.	Add the account running the SDK service to *builtin\Windows Authorization Access Group*.
+
+2.	Run the PowerShell script as detailed [here](https://support.microsoft.com/help/4519161/operations-manager-2019-and-1807-reports-fail-to-deploy).
+
+3. If this is a fresh installation of Operations Manager, wait for 24 hours, and then apply the Update Rollup. This is applicable to all roles in Operations Manager.
+
+>[!NOTE]
+> Ensure that DW and DR accounts are members of the Operations Manager Report Security Administrators group, so the issue does not recur. See [gMSA accounts](../scom/support-group-managed-service-accounts.md) for more information.
+.
 
 ## Operations Manager 2019 UR2 release notes
 No known issues in Operations Manager 2019 UR2.

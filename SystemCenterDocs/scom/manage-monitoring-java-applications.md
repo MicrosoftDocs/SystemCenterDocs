@@ -47,7 +47,7 @@ Supported configurations:
     -   Axis2  
 
 ## Prerequisites  
-To run the Management Pack for Java Application Performance Monitoring, you must have the Management Pack for Java Enterprise Edition (JEE) configured for deep monitoring. This management pack monitors JEE application servers and provides initial application level discovery. For more information, see [How to Configure Monitoring for Java Applications](manage-configure-monitoring-java-applications.md) and the Management Pack Guide for JEE for your particular type of application server, available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=325020).  
+To run the Management Pack for Java Application Performance Monitoring, you must have the Management Pack for Java Enterprise Edition (JEE) configured for deep monitoring. This management pack monitors JEE application servers and provides initial application level discovery. For more information, see [How to Configure Monitoring for Java Applications](manage-configure-monitoring-java-applications.md) and the Management Pack Guide for JEE for your particular type of application server, available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=58157).  
 
 ## How to monitor Java applications
 When you have a new Java application that you are learning about, you use Java Application Performance Monitoring to get baseline measures before you gradually scale up deployment. Here are some settings to start with that helps you get to know your new application. In addition, it is ideal that you begin monitoring in a test or development environment to establish a baseline configuration before implementing in production.    
