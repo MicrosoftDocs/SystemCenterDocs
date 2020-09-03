@@ -54,6 +54,7 @@ Verify the following [system requirements](system-requirements.md):
 If the VMM user installing VMM, or running VMM setup, doesn't have permissions to write the service principal name (SPN) for the VMM server in Active Directory, setup will finish with a warning. If the SPN isn't registered, other computers running the VMM console won't be able to connect to the management server, and you won't be able to deploy a Hyper-V host on a bare metal computer in the VMM fabric. To avoid this issue, you need to register the SPN as a domain administrator before you install VMM, as follows:
 
 1. Run these commands from \<SystemDrive\>\Windows\System32>, as a domain administrator:
+
     - ``setspn -u -s SCVMM/<MachineBIOSName> <VMMServiceAccount>``
     - ``setspn -u -s SCVMM/<MachineFQDN> <VMMServiceAccount>``
 
