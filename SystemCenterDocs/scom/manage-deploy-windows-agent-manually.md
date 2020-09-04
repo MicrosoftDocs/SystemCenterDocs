@@ -173,10 +173,10 @@ msiexec /x path\Directory\MOMAgent.msi /qn /l*v %temp%\OMAgentUninstall.log
 
 ## Deploy the agent with APM disabled using PowerShell
 
-The following example shows how you install the Windows agent from PowerShell with the Application Performance Monitoring (APM) component disbled.
+The following example shows how you install the Windows agent from PowerShell with the Application Performance Monitoring (APM) component disabled.
 
 ```
-Install-SCOMAgent -DNSHostName "ComputerA.contoso.net" -PrimaryManagementServer $PrimaryMS -NoAPM
+Install-SCOMAgent -DNSHostName "ComputerA.contoso.net" -PrimaryManagementServer <MSDNSName> -NoAPM
 
 ```
 
