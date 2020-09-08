@@ -7,13 +7,13 @@ author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center
 keywords:  
-ms.date: 03/14/2019
+ms.date: 09/08/2020
 ms.technology:  service-manager
 ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ---
 
 ## New features in SM 2019
-See the following sections for information about the new features/features updated in SM 2019.
+See the following sections for information about the new features/features updated in Service Manager (SM) 2019.
 
 ## Support to SQL 2017
 SM 2019 supports new installation of SQL Server 2017.
@@ -49,3 +49,18 @@ You can upgrade SQL server 2016 to SQL 2017.
 SM supports an enhanced experience for evaluating Service Manager and activating the product for retail use.  
 
 The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. With Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your SM. [Learn more](../scsm/sm-license.md).
+
+
+## New features in Service Manager UR2
+
+The following new feature is supported with Service Manager Update Rollup 2.
+
+### Support for SQL 2019 CU7 and later
+
+Service  Manager UR2 supports SQL Server 2019 with Cumulative Update 7 (CU7) and later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+
+This support is applicable for Service Manager 2019 RTM.
+
+>[!NOTE]
+> Service Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU7 or later.
+> With SQL 2019, use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
