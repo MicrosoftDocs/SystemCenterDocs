@@ -58,6 +58,7 @@
 #### [How to upgrade a Web console](deploy-upgrade-web-console.md)
 #### [How to upgrade reporting](deploy-upgrade-reporting-server.md)
 #### [How to upgrade Operations Manager databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr.md)
+#### [How to upgrade Operations Manager databases to SQL Server 2019](upgrade-sqlserver-2019-opsmgr.md)
 #### [How to upgrade to version 1807](upgrade-1801-to-1807.md)
 #### [How to upgrade from the evaluation version of Operations Manager](deploy-upgrade-eval.md)
 #### [Post-upgrade tasks when upgrading Operations Manager](deploy-upgrade-post-tasks.md)
