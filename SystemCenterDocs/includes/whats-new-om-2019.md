@@ -130,6 +130,15 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 For information about SQL Server design considerations, see [related documentation](https://docs.microsoft.com/system-center/scom/plan-sqlserver-design?view=sc-om-2019).
 
+### Support for SQL 2019 CU7 and later
+
+Operations Manager supports SQL Server 2019 with Cumulative Update 7 (CU7) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+
+
+>[!NOTE]
+> - Operations Manager 2019 supports SQL 2019 with CU7 or later. However, does not support SQL 2019 RTM.
+> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+
 ### In-place upgrade
 
  Operations Manager 2019 supports an in-place upgrade from the following versions:
@@ -328,12 +337,3 @@ In Operations Manager 2016 and later, you can create a folder and place dashboar
 
 ### Support for CentOS 8
 Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](https://docs.microsoft.com/system-center/scom/manage-install-crossplat-agent-cmdline?view=sc-om-2019#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
-
-### Support for SQL 2019 CU7 and later
-
-Operations Manager UR2 supports SQL Server 2019 with Cumulative Update 7 (CU7) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
-
-This support is applicable for Operations Manager 2019 RTM.
-
->[!NOTE]
-> Operations Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU7 or later. Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.

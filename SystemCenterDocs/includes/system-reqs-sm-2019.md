@@ -86,7 +86,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 > [!NOTE]
 > - SM  doesn’t support SSAS mode *Tabular*. Select the SSAS mode as *Multi-dimensional* during the installation of SQL Server.
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
-> - Service Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU7 or later.
+> - Service Manager 2019 supports SQL 2019 with CU7 or later. However, does not support SQL 2019 RTM.
 > - With SQL 2019 (CU7 or later), use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 |**Service Manager** |  **SQL Server 2016 and [SPs](https://docs.microsoft.com/lifecycle/products/sql-server-2016)** | **SQL Server [2017](https://docs.microsoft.com/lifecycle/products/sql-server-2017)**| **SQL Server [2019 with Cumulative Update 7](https://docs.microsoft.com/lifecycle/products/sql-server-2019)**

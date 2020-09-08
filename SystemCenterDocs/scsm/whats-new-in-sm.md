@@ -16,7 +16,7 @@ ms.technology: service-manager
 
 ::: moniker range="sc-sm-2019"
 
-This article details the new features supported in System Center 2019 and 2019 UR2. 
+This article details the new features supported in System Center 2019 - Service Manager.  
 
 [!INCLUDE [whats-new-sm-2019.md](../includes/whats-new-sm-2019.md)]
 
