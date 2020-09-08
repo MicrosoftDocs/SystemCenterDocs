@@ -154,8 +154,6 @@ The following steps provide information about upgrading to SQL 2017.
    EXEC SYS.SP_ADD_TRUSTED_ASSEMBLY @Hash1, @ClrName1        
    END
    GO
-
-   
    ```
 
 ## Server operating system
