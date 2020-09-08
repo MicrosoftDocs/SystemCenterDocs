@@ -55,12 +55,12 @@ The evaluation version of Service Manager can be installed and used for 180 days
 
 The following new feature is supported with Service Manager Update Rollup 2.
 
-### Support for SQL 2019 CU7 and later
+### Support for SQL 2019 CU7 or later
 
-Service  Manager UR2 supports SQL Server 2019 with Cumulative Update 7 (CU7) and later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+Service  Manager UR2 supports SQL Server 2019 with Cumulative Update 7 (CU7) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
 
-This support is applicable for Service Manager 2019 RTM.
+This support is applicable for Service Manager 2019.
 
 >[!NOTE]
-> Service Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU7 or later.
-> With SQL 2019 CU7, use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+> - Service Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU7 or later. 
+> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.

@@ -31,11 +31,11 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-- SQL Server 2019 with Cumulative Update 7 (CU7) and later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
+- SQL Server 2019 with Cumulative Update 7 (CU7) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
 
     >[!NOTE]
-    > Operations Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU7 or later.
-    > With SQL 2019, use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+    > - Operations Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU7 or later.
+    > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 - SQL Server 2017 and Cumulative Updates as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
 - SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)

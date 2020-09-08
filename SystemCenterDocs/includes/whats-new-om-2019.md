@@ -331,10 +331,9 @@ Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package
 
 ### Support for SQL 2019 CU7 and later
 
-Operations Manager UR2 supports SQL Server 2019 with Cumulative Update 7 (CU7) and later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+Operations Manager UR2 supports SQL Server 2019 with Cumulative Update 7 (CU7) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
 
 This support is applicable for Operations Manager 2019 RTM.
 
 >[!NOTE]
-> Operations Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU7 or later.
-> With SQL 2019 CU7, use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+> Operations Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU7 or later. Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
