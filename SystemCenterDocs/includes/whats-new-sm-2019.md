@@ -15,11 +15,11 @@ ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ## New features in SM 2019
 See the following sections for information about the new features/features updated in Service Manager (SM) 2019.
 
-## Support to SQL 2017
+## Support to SQL Server 2017
 SM 2019 supports new installation of SQL Server 2017.
 [Learn more](../scsm/system-requirements.md).
 
-### Support for SQL 2019 CU7 and later
+### Support for SQL Server 2019 CU7 and later
 
 Service Manager supports SQL Server 2019 with Cumulative Update 7 (CU7) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
 
