@@ -53,13 +53,13 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker range="sc-om-2019"
 
-Before upgrading SQL Server, see [upgrade information for  2017](upgrade-sqlserver-2017-opsmgr.md), and [upgrade information for 2019](upgrade-sqlserver-2019-opsmgr.md).
+Before upgrading SQL Server, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md), and [upgrade information for 2019](upgrade-sqlserver-2019-opsmgr.md).
 
 ::: moniker-end
 
 ::: moniker range="sc-om-1807"
 
-Before upgrading to SQL Server 2017, see [upgrade information for  2017](upgrade-sqlserver-2017-opsmgr.md).
+Before upgrading to SQL Server 2017, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md).
 
 ::: moniker-end
 
@@ -114,7 +114,10 @@ For more information, see [Hardware and Software Requirements for Installing SQL
 
 ## SQL Server collation setting
 
-The following SQL Server and Windows collations are supported by System Center Operations Manager.  
+The following SQL Server and Windows collations are supported by System Center Operations Manager.
+
+>[!NOTE]
+> To avoid any compatibility issues in comparing or copying operations, we recommend you use the same collation for the SQL and Operations Manager DB.  
 
 ### SQL Server collation
 - SQL_Latin1_General_CP1_CI_AS

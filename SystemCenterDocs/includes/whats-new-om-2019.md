@@ -337,4 +337,4 @@ This support is applicable for Operations Manager 2019 RTM.
 
 >[!NOTE]
 > Operations Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU7 or later.
-> With SQL 2019, use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+> With SQL 2019 CU7, use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
