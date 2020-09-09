@@ -5,7 +5,7 @@ description: This include file describes the new features in Operations Manager 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 08/04/2020
+ms.date: 09/09/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
