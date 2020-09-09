@@ -130,6 +130,15 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 For information about SQL Server design considerations, see [related documentation](https://docs.microsoft.com/system-center/scom/plan-sqlserver-design?view=sc-om-2019).
 
+### Support for SQL Server 2019 CU7 and later
+
+Operations Manager supports SQL Server 2019 with Cumulative Update 7 (CU7) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+
+
+>[!NOTE]
+> - Operations Manager 2019 supports SQL 2019 with CU7 or later. However, does not support SQL 2019 RTM.
+> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+
 ### In-place upgrade
 
  Operations Manager 2019 supports an in-place upgrade from the following versions:
