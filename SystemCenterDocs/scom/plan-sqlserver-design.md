@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 09/07/2020
+ms.date: 09/09/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
