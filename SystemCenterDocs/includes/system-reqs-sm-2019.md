@@ -199,7 +199,7 @@ The following steps provide information about upgrading to SQL 2019.
  |-----------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------
  |**Service Manager** Console|&#8226;|&#8226;|&#8226;|
 
-## .Net Versions supported
+## .NET Versions supported
 
 The following versions of .NET are supported for Service Manager.
 
