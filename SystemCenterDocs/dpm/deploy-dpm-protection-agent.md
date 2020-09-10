@@ -191,14 +191,14 @@ Use these steps:
 
 5.  On the RODC, from an elevated command prompt, run the command **setagentcfg.exe a DPMRA domain\\DPMserver** from the location that you specified in the previous step.
 
-6.  On the RODC server, browse to the **C:\\Program Files\\Microsoft Data Protection Manager\\DPM\\bin folder** and run the *setdpmserver* command:
+6.  On the RODC server, browse to the **C:\\Program Files\\Microsoft Data Protection Manager\\DPM\\bin folder** and run the setdpmserver command:
 
     **Setdpmserver -dpmservername DPMSERVER**
 
-7.  [Attach the protection agent](#attach-the-agent) to the DPM server, as detailed in the following section.
+7.  [Attach the protection agent](#BKMK_Attach) to the DPM server, as detailed in the following section.
 
 
-## Attach the agent
+## <a name="BKMK_Attach"></a>Attach the agent
 After you've installed the DPM agent manually you'll need to attach the agent to the DPM server.
 
 1.  In DPM Administrator Console, on the navigation bar, click **Management** > **Agents**. In the **Actions** pane, click **Install**.
