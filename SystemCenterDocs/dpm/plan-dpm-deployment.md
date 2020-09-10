@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 07/06/2020
+ms.date: 09/09/2020
 title: Get ready to deploy DPM servers
 ms.technology: data-protection-manager
 ms.assetid: 517ce276-b811-4a06-ade3-ff71303ccf5b
@@ -93,4 +93,6 @@ Before you begin a DPM deployment, verify that appropriate users have been grant
 |Recover SharePoint data|SharePoint farm admin that's also an admin on the front-end Web server on which the protection agent is installed.|
 
 >[!NOTE]
-> DPM server and protected computer communicates using DCOM. During DPMRA installation,  DPM server’s  account is added to the *Distributed COM Users* security group on the protected computer.
+> DPM server and protected computer communicates using DCOM. During DPMRA installation, DPM server’s  account is added to the *Distributed COM Users* security group on the protected computer.
+>
+>For domain controller protection, Active directory security groups will be created with the names *DPMRADCOMTRUSTEDMACHINES$DCNAME*, *DPMRADMTRUSTEDMACHINES$DCNAME*, *DPMRATRUSTEDDPMRAS$DCNAME* for each protected domain controller.
