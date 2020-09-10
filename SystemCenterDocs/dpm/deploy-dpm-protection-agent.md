@@ -198,7 +198,7 @@ Use these steps:
 7.  [Attach the protection agent](#attach-the-agent) to the DPM server, as detailed in the following section.
 
 
-## <a name="BKMK_Attach"></a>Attach the agent
+## Attach the agent
 After you've installed the DPM agent manually you'll need to attach the agent to the DPM server.
 
 1.  In DPM Administrator Console, on the navigation bar, click **Management** > **Agents**. In the **Actions** pane, click **Install**.
