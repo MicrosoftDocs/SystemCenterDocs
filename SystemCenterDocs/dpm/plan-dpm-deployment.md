@@ -95,4 +95,4 @@ Before you begin a DPM deployment, verify that appropriate users have been grant
 >[!NOTE]
 > DPM server and protected computer communicates using DCOM. During DPMRA installation, DPM server’s  account is added to the *Distributed COM Users* security group on the protected computer.
 >
->For domain controller protection, Active directory security groups will be created with the names *DPMRADCOMTRUSTEDMACHINES$DCNAME*, *DPMRADMTRUSTEDMACHINES$DCNAME*, *DPMRATRUSTEDDPMRAS$DCNAME* for each protected domain controller.
+>For domain controller protection, Active directory security groups will be created with the names *DPMRADCOMTRUSTEDMACHINES$DCNAME*, *DPMRADMTRUSTEDMACHINES$DCNAME*, *DPMRATRUSTEDDPMRAS$DCNAME*, for each protected domain controller.
