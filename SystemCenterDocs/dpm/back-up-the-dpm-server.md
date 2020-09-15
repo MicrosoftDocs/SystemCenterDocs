@@ -34,7 +34,7 @@ Information on a  DPM server can be backed up and protected by another DPM serve
 -   **Primary to secondary protection** - The database and replicas stored on a primary DPM server can be backed up to a secondary DPM server. If the primary server fails the secondary server continues to back up protected workloads. If the primary server fails you can do either of the following:
     Rebuild the primary server and restore its database and replicas from the secondary server. Then move the protected workloads back to the primary server after the rebuild.
     Select to switch protection to the secondary DPM server. With this setting you then restore to the protected computer directly from the secondary server when the need arises.
-    For instructions, see Set up secondary servers.
+    For instructions, see [Set up secondary servers](#set-up-primary-and-secondary-protection).
 
 -   **DPM chaining** - A chain of DPM servers provide protection, and each server protects the next one in in the chain. For example:
     DPM1 is protected by DPM2 \(DPM1 is the primary and DPM2 is the secondary\).
@@ -46,7 +46,7 @@ Information on a  DPM server can be backed up and protected by another DPM serve
 ### Set up primary and secondary protection
 Back up a primary DPM server using a secondary DPM server:
 
-1.  Install the DPM protection agent on each primary DPM server that you want to protect. No restart is required.
+1.  The Primary DPM server has the protection agent already installed. You need to attach this protection  agent to the secondary DPM server. Follow the steps to [attach the agent](deploy-dpm-protection-agent.md#BKMK_Attach). 
     > [!IMPORTANT]
     > Major and minor versions of the Primary and Secondary DPM servers must match.
     >
