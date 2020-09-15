@@ -46,7 +46,7 @@ Information on a  DPM server can be backed up and protected by another DPM serve
 ### Set up primary and secondary protection
 Back up a primary DPM server using a secondary DPM server:
 
-1.  The Primary DPM server has the protection agent already installed. You need to attach this protection  agent to the secondary DPM server. Follow the steps to [attach the agent](deploy-dpm-protection-agent.md#BKMK_Attach). 
+1.  The Primary DPM server has the protection agent already installed. You need to attach this protection agent to the secondary DPM server. [Follow these steps to attach the agent](deploy-dpm-protection-agent.md#BKMK_Attach). 
     > [!IMPORTANT]
     > Major and minor versions of the Primary and Secondary DPM servers must match.
     >
