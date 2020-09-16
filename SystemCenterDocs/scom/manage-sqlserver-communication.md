@@ -5,7 +5,7 @@ description: This article describes how to reconfigure Operations Manager if you
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/19/2020
+ms.date: 09/15/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -68,13 +68,13 @@ If after installing System Center Operations Manager, you move the Operations Ma
 
 8. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
 
-9. Right-click `dbo. MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring_Log`, and then click **Edit Top 200 Rows**.
+9. Right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring_Log`, and then click **Edit Top 200 Rows**.
 
 10. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.
 
 11. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
 
-12. Right-click `dbo. MT_Microsoft$SystemCenter$DataWarehouse_Log$`, and then click **Edit Top 200 Rows**.  
+12. Right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse_Log`, and then click **Edit Top 200 Rows**.  
 
 13. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.  
 
