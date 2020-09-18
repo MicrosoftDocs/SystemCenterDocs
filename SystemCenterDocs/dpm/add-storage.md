@@ -375,6 +375,8 @@ Note that you can skip this step if more than 10% of SSD is available. This can 
 
 Now, add the newly created volumes to DPM storage using the procedure detailed below.
 
+::: moniker range="sc-dpm-2019"
+
 ## Add volumes to DPM storage
 
 Follow these steps:
@@ -385,6 +387,7 @@ Follow these steps:
 4. Click **OK** to format the volumes to ReFS, so DPM can use them as MBS.
 
     ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
+
 
 
 ## Migrate data to newly created volumes
@@ -399,12 +402,12 @@ Migration of data source should have all recovery points on Modern Storage.
 >- Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are preempted.
 
 
-
 ## Configure workload-aware storage
 
 Using workload-aware storage, the volumes can be selected to preferentially store specific workloads. For example, expensive volumes that support high IOPS can be configured to store workloads that need frequent, high-volume backups such as SQL Server with transaction logs. Workloads that are backed up less frequently, such as VMs, can be backed up to low-cost volumes.
 
 You can configure workload-aware storage using Windows PowerShell cmdlets.
+
 
 ### Update the volume properties
 
@@ -446,3 +449,5 @@ After removing volume exclusion, rescan the storage. All volumes and mount point
 DPM 2019 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together, as in the case of a file server, size calculation can take long time.
 
 With DPM 2016 and later, you can configure DPM to accept the volume size as default instead of calculating the size of each file. The corresponding registry key is *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage* with the Key, *EnableCustomAllocationOnReFSStorage* as a string set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
+
+::: moniker-end
