@@ -1,12 +1,12 @@
 ---
-description: Learn about the new features when you upgrade to DPM 2016 and later. This article also provides an overview of how to upgrade your DPM installation.
+description: This article provides information on how to add and configure storage.
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 08/07/2020
+ms.date: 09/18/2020
 title: Add Modern Backup Storage to DPM
 ms.technology: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
@@ -227,153 +227,248 @@ For more information to help plan for the number of physical disks and the desir
 
 Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in sequence, as listed below.
 
-1. Configure DPM storage.
-    > [!NOTE]
-    > Migrate your current backups to a temporary volume using [Volume Migration](#migrate-data-to-newly-created-volumes), in case you wish to modify your existing storage to tiered storage.
 
-    - Create a storage pool.
-    - Create a virtual disk from the storage pool, with layout set to Simple. You can then add additional disks, or extend the virtual disk.
-    - Create tiered/simple volumes on the virtual disk.
 
-2.  Add the volumes to DPM.
-3.  Migrate your data back to the newly created volumes using Volume Migration performed in Step 1.
-    > [!NOTE]
-    > Applicable only if you have migrated your earlier backups in Step 1.
 
-4.  Configure workload-aware storage.
 
 ## Configure DPM Storage
 
-Windows Storage Spaces allows you to pool multiple physical disks together into one logical drive. Storage Spaces use thin provisioning which reserves the drive capacity as we store data to the drive. It provides an easy way to create software-defined storage using a server's local storage resources.
+Windows Storage Spaces allows you to pool multiple physical disks into one logical drive. It provides an easy way to create software-defined storage using a server's local storage resources. Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in the sequence, as listed below:
+
+>[!NOTE]
+>  In case you wish to modify your existing storage to tiered storage, migrate your current backups to a temporary volume using [Volume Migration](volume-to-volume-migration.md).
+
+1. [Prepare physical disks and create Windows Storage Pool](#prepare-physical-disks-and-create-windows-storage-pool)
+2. [Create tiered storage with required resiliency](#create-tiered-storage-volume).
+3. [Add volume to DPM storage]((#add-volumes-to-dpm-storage)
+4. Migrate your data back to the newly created volumes using [Volume Migration](volume-to-volume-migration.md)
+    >[!NOTE]
+    > Applicable only if you have migrated your backups to a temporary volume, prior to performing step 1.
+
+5. [Configure workload-aware storage](#configure-workload-aware-storage)
 
 
-### Configure Storage spaces
-Follow these steps: :
+### Prepare physical disks and create Windows storage pool
 
-1. Open **Server Manager**.
-2. Click **File and Storage Services**.
-3. Click **Storage Pools**.
-4. Select **New Storage Pool** option from **TASKS**.
-5. Enter a name for the storage pool, click **Next**.
-6. Include the physical disk to the storage pool.
-   If  a disk is missing from the primordial pool, you can add it by selecting **Add Physical Disk** option from the **TASKS** drop-down menu.
+Use the following procedures to prepare physical disks and create Windows storage pool.
 
-   ![Include Physical Disc](./media/add-storage/include-phyiscal-disk-2019.png)
+#### Initialize disks
 
-   >[!NOTE]
-   > The primordial pool is created by default and is essentially a repository for disks that are available for use in a storage pool that you create. A disk can only belong to a single storage pool.
+Based on the resiliency option that you have selected, calculate the number of HDDs ad SSDs required. Initialize the new disks that are attached to the server first, prior to adding the disks to the storage pool.
 
-7. Check the media type of the disk included. At least one of the disks should be SSD, required for SSD Tiering.
-   - Add all the disks including SSDs to the storage pool.
-   - Add only one disk to the pool to keep the column count to 1. You can then add disks as needed afterwards.
+>[!NOTE
+>]If the disks that you are using are more than 2TB in size, then the disks will be converted to GPT disks.
 
-     > [!NOTE]
-     > - If you add multiple disks to the storage pool at a go, the number of disks is stored as the number of columns. When more disks are added, they can only be a multiple of the number of columns.
-     > - For DPM running on virtual machines, expose the VHDs carved out of physical SSDs & HDDs of required size from the host computer to the VM, and use them as a tiered storage as explained above.
+To Initialize the disks, follow these steps:
 
-   The following image shows the check for disk type:
+1. Open  **Server Manager**.
+2. Click  **File and Storage Services**.
+3. Click  **Volumes** and then click **Disks Pools**.
+4. Right-click the disks and select **Initialize**.
+5. Select **Yes** to initialize the disk.
+   The disk gets converted to GPT disk in case the size is more than 2 TB.
+6. Repeat the steps for the remaining disks to initialize.
 
-   ![Check disk type ](./media/add-storage/media-type-check-2019.png)
+    ![initialize disks](./media/add-storage/initialize-disks.png)
 
-8. If the media-type for HDD or SSD disk is not recognized correctly, use the following command:
+#### Check primordial pool
 
-    *Set-PhysicalDisk -UniqueId \<UniqueId String\> -MediaType <HDD|SSD>*
+By default, available disks are included in a pool that is named as **Primordial** pool. If no Primordial pool is listed under the *Storage Pools*, this indicates that the storage does not meet the requirements for storage spaces. Make sure that the disks meet the requirements that are outlined in the [prerequisites](#prerequisites) section.
 
-    ![Set media type ](./media/add-storage/set-media-type-2019.png)
+Run the following command to view the physical disks available in the Primordial pool:
 
-9. For each of these disks, set the allocation as **Automatic**.
-   ![Disk allocation](./media/add-storage/allocation-2019.png)
-
-10. Check the options made, and click **Create to create a new storage pool**.
-
-    ![Create a new storage pool](./media/add-storage/new-storage-pool-2019.png)
-
-After successful creation of the storage pool, the newly created storage pool gets listed under  **STORAGE POOL** . **PHYSICAL DISK** displays the disks that are present in the selected pool.
-
-### Disable Write-Back Cache
-
-Disable Write-Back Cache to disable auto caching at storage pool level (needed only for tiered storage).
-
-To do this, go to PowerShell and execute the following commands:
-
+```PowerShell
+Get-StoragePool -IsPrimordial $true | Get-PhysicalDisk | Where-Object CanPool -eq $True
 ```
-Set-StoragePool -FriendlyName <String> [-WriteCacheSizeDefault <UInt64>]
- ```
-Choose -WriteCacheSizeDefault value as 0.
 
- ![Storage pool friendly name](./media/add-storage/ps-command-2019.png)
-::: moniker-end
+**Example:**
 
-### Create virtual disks
-Follow these steps:
+![Check Primordial Pool](./media/add-storage/check-primordial-pool.png)
 
-1. In the **VIRTUAL DISK** pane, select **New Virtual Disk** from **TASKS** drop-down menu.
+#### Create a storage pool
 
-    ![Virtual Disk](./media/add-storage/virtual-disk-2019.png)
+Create a new storage pool with logical sector size of 4K. You are creating the storage volume with single disk initially.
 
-2. Choose the storage pool from which you want to create a virtual disk.
+Run the following command to create the storage pool:
 
-    ![Choose Storage Pool](./media/add-storage/choose-storage-pool-2019.png)
+```PowerShell
+New-StoragePool –FriendlyName DPMPool –StorageSubsystemFriendlyName (Get-StorageSubSystem).FriendlyName –PhysicalDisks (Get-PhysicalDisk –CanPool $True) -LogicalSectorSizeDefault 4096 -FaultDomainAwarenessDefault PhysicalDisk
+```
 
-3. Provide a name for the virtual disk.
+**Example:**
 
-4. Select **Create storage tiers on this virtual disk** to create a tiered storage.   
+![Create Storage Pool](./media/add-storage/create-storage-pool.png)
+
+#### Set MediaType to SSD or HDD
+
+By default, Windows automatically detects the type of disk that is attached, and lists it as either an SSD or HDD. In case if the *MediaType* is set as *Unspecified*, use the following command to set the appropriate *MediaType* manually.
+
+> [!NOTE]
+> It is important that you identify the disk correctly (SSD/HDD) and set the *MediaType* accordingly. You can use the Size of the disk as one of the identifiers.
+
+1. Run the following command to check the MediaType:
+
+   ```PowerShell
+   Get-PhysicalDisk|FTDeviceID,BusType,MediaType,Size,UniqueId
+   ```
+
+   ![Set Media Type](./media/add-storage/set-mediatype.png)
+
+2. In the above example, assign the MediaType as SSD to the disk with DeviceID as 1 and assign HDD to the disks with DeviceID as 2,3 and 4.
+
+    To set the **MediaType**, run the following commands:
+
+    ```PowerShell
+    Set-PhysicalDisk -UniqueId "600224802D66666E313C92E116E2ADA1" -MediaType SSD
+    Set-PhysicalDisk -UniqueId "60022480965A3579C3EB929E0BA39776" -MediaType HDD
+    Set-PhysicalDisk -UniqueId "60022480183A590476AA8940A84C8E9D" -MediaType HDD
+    Set-PhysicalDisk -UniqueId "60022480DB4A64573FEC4C9C82BB48EB" -MediaType HDD
+    ```
+    ![Assign SSD](./media/add-storage/assign-ssd.png)
+
+3. Run the following command to ensure that the MediaType has been set correctly:
+
+     ```PowerShell
+     Get-PhysicalDisk | FT DeviceID, BusType, MediaType, Size, UniqueId
+     ```
+
+     **Example**:
+
+     ![Correct Media Type](./media/add-storage/correct-media-type.png)
+
+#### Disable Write-back cache
+
+Disable Write-back cache to disable auto caching at storage pool level. (applicable for tiered storage)
+To disable write-back cache, run the following PowerShell commands:
+
+```PowerShell
+Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
+```
+
+![Disable Write Back Cache](./media/add-storage/disable-write-back.png)
+
+### Create tiered storage volume
+
+Before creating the tired storage, you need to plan the column size.
+
+- The column size determines how the data is written across the physical disks in the storage pool and also decides the number of physical disks that need to be added to the storage pool before a virtual disk can be expanded, later.
+- The more the number of columns (up to 8), the better the overall performance. If you need to add physical disks later, it needs to be in multiples of the column size.
+- By default, when you create the virtual disk or volume, the column size will be automatically determined based on the number of disks available in the storage pool.
+- The default setting is used while creating new virtual disk or volume using Server Manager or when you don't specify the column size while using _New-StorageTier_ cmdlet.
+- To change the default setting, run the following commands.
+
+    - Run the following command to find the current column size settings.
+
+     ```PowerShell
+     Get-ResiliencySetting
+     ```
+
+     Example:
+
+     ![Get Resiliency Setting](./media/add-storage/get-resiliency.png)
+
+     - To change the column size setting, run the following command.
+
+        **For Mirror**:
+
+        ```PowerShell
+        Get-StoragePool DPMPool | Set-ResiliencySetting -Name Mirror -NumberOfColumnsDefault 1
+        ```
+
+        **For Parity**:
+
+        ```PowerShell
+        Get-StoragePool DPMPool | Set-ResiliencySetting -Name Parity -NumberOfColumnsDefault 3
+        ```
+
+#### Create Simple tiered volume (No Resiliency)
+
+To create the simple tiered volume (no resiliency), follow the steps below.
+
+1. Create an SSD tier by running following command.
+
+    ```PowerShell
+    New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName SSDTier -MediaType SSD -ResiliencySettingName Simple -NumberOfColumns 1 -PhysicalDiskRedundancy 0 -FaultDomainAwareness PhysicalDisk
+    ```
+
+    **Example**
+
+    ![Create SSD Tier](./media/add-storage/create-ssd-tier.png)
+
+2. Create a HDD tier by running the following command:
+
+    ```PowerShell
+    New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName HDDTier -MediaType HDD -ResiliencySettingName Simple -NumberOfColumns 1 -PhysicalDiskRedundancy 0 -FaultDomainAwareness PhysicalDisk
+    ```
+    **Example**
+
+    ![Create HDD Tier](./media/add-storage/create-hdd-tier.png)
+
+    ![HDD Tier Volume](./media/add-storage/hdd-tier-volume.png)
+
+3. Create new volume using the SSD tier and HDD tier
 
     > [!NOTE]
-    > Tiered Storage is possible only when the storage pool contains a mixture of SSD and HDD.
+    > Use the storage tier size slightly lower than the actual size as it may exceed the physical capacity of the pool. You can resize (extend) the tier later, by reviewing the details in the section [extending tiered volume](#Extending-tiered-volume).
 
-    ![Create tier storage](./media/add-storage/tier-create-2019.png)
-5. Click **Next** and select **Enable enclosure awareness (if required)**.
+    Run the following command to create new volume using SSD tier and HDD tier:
 
-    ![Enable Enclosure Awareness](./media/add-storage/enclosure-awareness-2019.png)
+    ```PowerShell
+    New-Volume -StoragePoolFriendlyName DPMPool -FriendlyName DPMVol -FileSystem ReFS -StorageTierFriendlyNames SSDTier,HDDTier -StorageTierSizes 745GB,14TB
+    ```
 
-6. Select **Simple Layout** and click **Next**.
+    ![SSD and HDD Tier](./media/add-storage/ssd-hdd-tier.png)
 
-7. **Fixed Provisioning** is the default selection.  Click **Next**.
-8. Provide the size for **Faster Tier** and **Standard Tier**.  **Faster Tier** corresponds to SSD and  **Standard Tier** corresponds to HDD. The size of the Faster Tier should be 4% the size of Standard Tier (For E.g. If the total requirement is 100 GB – if HDD is 96 GB, SDD should be 4 GB. Click **Next**.
+4.  Run the following command to  verify the performance tier and capacity tier used for the newly created volume:
 
-    ![Tier](./media/add-storage/tier-size-2019.png)
+    ```PowerShell
+    Get-StorageTier
+    ```
 
-9. Confirm the configurations and click **Create**.
+    **Example**
+    ![Performance Tier](./media/add-storage/performance-tier.png)
 
-    ![Create tiered storage](./media/add-storage/tier-size-2019.png)
+    Following image displays the end result as seen in Server Manager. You can view the volume in Windows disk management, this is ready to get added to the DPM storage pool.
 
-### Create a volume
+    ![Windows Disk Volume](./media/add-storage/window-disk-volume.png)
+
+### Add volumes to DPM storage
 
 Follow these steps:
-1. Select the virtual disk that you created and launch the **New Volume Wizard**.
 
-    ![New Volume Wizard](./media/add-storage/new-volume-wizard-2019.png)
+1. In the DPM Management console \> **Disk Storage** , click **Rescan**.
+2. In **Add Disk Storage** , click **Add**.
+3. After the volumes are added, you can give them a friendly name.
+4. Click **OK** to format the volumes to ReFS, so DPM can use them as MBS.
 
-3. In the **New Volume Wizard**, click **Next**, assign drive letter, and specify the size.
+    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
 
-    ![Assign Drive Letter](./media/add-storage/drive-letter-2019.png)
+## Disable Write Auto Tiering at file system level
 
-4. Click **Finish** to create a new volume.
-5. Format the volume that you created, from **Disk Management** console to ReFS.
+We recommend you to disable Write Auto Tiering file system level so that the entire performance tier is available for DPM to store ReFS metadata.
 
-### Disable Auto-Caching at file system level
+> [!NOTE]
+> You can skip this step if more than 10% of SSD is used in the performance tier. This can be disabled later if there is a performance degradation in terms of backup speeds.
 
-1.  Go to PowerShell.
-2.  Use the following command:
+Follow the steps below to disable write auto-caching:
+
+1. Open PowerShell.
+2. Run the following command to view current setting:
+   ```PowerShell
+   fsutil behavior query disableWriteAutoTiering <driveLetter:>
+
+   0 - Enable write auto tiering on the given volume (default)
+   1 - Disable write auto tiering on the given volume
+   ```
+3. Run the following command to disable write caching:
+
+    ```PowerShell
+    fsutil behavior set disableWriteAutoTiering <driveLetter:> 1
     ```
-    fsutil behavior disableWriteAutoTiering
-    ```
 
-    Usage:  fsutil behavior set disableWriteAutoTiering \<volume pathname\> <1|0>)
-    Values:
+    **Example**:
 
-        0 - Enable write auto tiering on the given volume (default)
-
-        1 - Disable write auto tiering on the given volume
-
-    Example:   fsutil behavior set disableWriteAutoTiering C: 1
-
-    ![fsutil behavior](./media/add-storage/fsutil-behavior-2019.png)
-
-Note that you can skip this step if more than 10% of SSD is available. This can be disabled later if there is a performance degradation in terms of backup speeds.
-
-Now, add the newly created volumes to DPM storage using the procedure detailed below.
+    ![Disable Write Caching](./media/add-storage/disable-auto-tier.png)
 
 ::: moniker range="sc-dpm-2019"
 
@@ -387,8 +482,6 @@ Follow these steps:
 4. Click **OK** to format the volumes to ReFS, so DPM can use them as MBS.
 
     ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
-
-
 
 ## Migrate data to newly created volumes
 
