@@ -100,7 +100,7 @@ You configure workload-aware storage using Windows PowerShell cmdlets.
 1. Run the **Update-DPMDiskStorage** to update the properties of a volume in the storage pool on a DPM server. The syntax is **Parameter Set: Volume**.
 2. Run the cmdlet with these parameters.
 
-    ```
+    ```PowerShell
     Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-DatasourceType] <VolumeTag[]> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
     ```
 
@@ -110,7 +110,7 @@ You configure workload-aware storage using Windows PowerShell cmdlets.
 
     ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
 
-## Volume Exclusion
+## Volume exclusion
 
 DPM servers may be managed by a team of Administrators. While there are guidelines on storage that should be used for backups, a wrong volume given to DPM as backup storage may lead to loss of critical data. Hence, with DPM 2016 UR4 and later, you can prevent such scenarios by configuring those volumes to not be shown as available for storage using PowerShell.
 
@@ -130,14 +130,14 @@ For Example, to exclude F:\ and C:\MountPoint1, here are the steps:
     ```
 After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
 
-## Backup Storage Migration
+## Backup storage migration
 
 Once all your backups are on MBS, there may be a need to migrate certain datasources from one volume to another. For example, scenarios where you need to upgrade storage, or when a volume is getting full. You can use PowerShell or the user interface to migrate datasources. The details can be found [in this blog entry](https://go.microsoft.com/fwlink/?linkid=861519).
 
 The migrating datasource should have all recovery points on Modern Storage. Migrating datasources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported.
 Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. The scheduled jobs continue as configured. When the migration completes, any running jobs in the protection group are preempted.
 
-## Custom Size Allocation
+## Custom size allocation
 
 DPM 2016 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together, as in the case of a file server, size calculation can take long time. With DPM, you can configure DPM to accept the volume size as default instead of calculating the size of each file. The corresponding registry key is "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage" with the Key, "EnableCustomAllocationOnReFSStorage" as a String set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
 
@@ -197,7 +197,7 @@ For more information on prerequisites for using Storage Spaces on a stand-alone 
 
 To configure tiered storage, the storage can be directly attached to the DPM server or it can be from the external storage like SAN. The combination of directly attached storage and external storage can also be used.
 
-Here are the possible storage combinations that are supported in both Physical DPM server or Virtual DPM Server scenario.
+Here are the possible storage combinations that are supported in both physical DPM server or virtual DPM Server scenario.
 
 - SSD and HDD directly attached to DPM Server
 - SSD and HDD from external storage
@@ -211,9 +211,9 @@ Here are the possible storage combinations that are supported in both Physical D
 
 ![Physical server deployment](./media/add-storage/physical-server-deployment.png)
 
-### Resiliency
+## Resiliency
 
-DPM supports all the three resiliency types supported by Windows Storage spaces. To configure mirror or parity mode resiliency for tiered volume multiple SSDs are required along with HDDs. When you configure simple resiliency type using a single SSD option, there might be data loss if the SSD becomes unavailable.
+DPM supports all of the three resiliency types, supported by Windows Storage spaces. To configure Mirror or Parity mode resiliency for tiered volume, multiple SSDs are required along with HDDs. When you configure simple resiliency type using a single SSD option, there might be data loss if the SSD becomes unavailable.
 
 The below chart highlights some pros and cons of the three types of resiliency, supported by Windows Storage Spaces.
 
@@ -234,12 +234,12 @@ Windows Storage Spaces allows you to pool multiple physical disks into one logic
 
 1. [Prepare physical disks and create Windows Storage Pool](#prepare-physical-disks-and-create-windows-storage-pool)
 2. [Create tiered storage with required resiliency](#create-tiered-storage-volume).
-3. [Add volume to DPM storage]((#add-volumes-to-dpm-storage)
+3. [Add volume to DPM storage](#add-volumes-to-dpm-storage)
 4. [Migrate your data back to the newly created volumes using Volume Migration](volume-to-volume-migration.md)
     >[!NOTE]
     > Applicable only if you have migrated your backups to a temporary volume, prior to performing step 1.
 
-5. [Disable Write Auto Tiering at file system level](#Disable Write Auto Tiering at file system level)
+5. [Disable Write Auto Tiering at file system level](#disable-write-auto-tiering-at-file-system-level)
 6. [Configure workload-aware storage](#configure-workload-aware-storage)
 
 
@@ -342,7 +342,7 @@ Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 
 ![Disable Write Back Cache](./media/add-storage/disable-write-back.png)
 
-### Create tiered storage volume
+## Create tiered storage volume
 
 Before creating the tired storage, you need to plan the column size.
 
@@ -358,11 +358,11 @@ Before creating the tired storage, you need to plan the column size.
      Get-ResiliencySetting
      ```
 
-     Example:
+     **Example**:
 
      ![Get Resiliency Setting](./media/add-storage/get-resiliency.png)
 
-     - To change the column size setting, run the following cmdlet.
+    - To change the column size setting, run the following cmdlet.
 
         **For Mirror**:
 
@@ -376,11 +376,11 @@ Before creating the tired storage, you need to plan the column size.
         Get-StoragePool DPMPool | Set-ResiliencySetting -Name Parity -NumberOfColumnsDefault 3
         ```
 
-#### Create Simple tiered volume (No Resiliency)
+### Create Simple tiered volume (No Resiliency)
 
 To create the simple tiered volume (no resiliency), follow the steps below.
 
-1. Create an SSD tier by running following cmdlet.
+1. Create an SSD tier by running the following cmdlet:
 
     ```PowerShell
     New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName SSDTier -MediaType SSD -ResiliencySettingName Simple -NumberOfColumns 1 -PhysicalDiskRedundancy 0 -FaultDomainAwareness PhysicalDisk
@@ -404,7 +404,7 @@ To create the simple tiered volume (no resiliency), follow the steps below.
 3. Create new volume using the SSD tier and HDD tier
 
     > [!NOTE]
-    > Use the storage tier size slightly lower than the actual size as it may exceed the physical capacity of the pool. You can resize (extend) the tier later, by reviewing the details in the section [extending tiered volume](#Extending-tiered-volume).
+    > Use the storage tier size slightly lower than the actual size as it may exceed the physical capacity of the pool. You can resize (extend) the tier later, by reviewing the details in the section [extending tiered volume](extend-tiered-volume.md).
 
     Run the following cmdlet to create new volume using SSD tier and HDD tier:
 
@@ -532,10 +532,10 @@ For Example, to exclude F:\ and C:\MountPoint1, use these steps:
     ```
 After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
 
-## Custom Size Allocation
+## Custom size allocation
 
 DPM 2019 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together, as in the case of a file server, size calculation can take long time.
 
-With DPM 2016 and later, you can configure DPM to accept the volume size as default instead of calculating the size of each file. The corresponding registry key is *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage* with the Key, *EnableCustomAllocationOnReFSStorage* as a string set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
+With DPM 2016 and later, you can configure DPM to accept the volume size as default, instead of calculating the size of each file. The corresponding registry key is *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage* with the Key, *EnableCustomAllocationOnReFSStorage* as a string, set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
 
 ::: moniker-end
