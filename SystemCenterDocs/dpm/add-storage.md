@@ -236,7 +236,7 @@ Follow the steps in the procedures below to set up MBS with tiered storage. Foll
 >  In case you wish to modify your existing storage to tiered storage, migrate your current backups to a temporary volume using [volume migration](volume-to-volume-migration.md).
 
 1. [Prepare physical disks and create Windows Storage Pool](#prepare-physical-disks-and-create-windows-storage-pool)
-2. [Create tiered storage with required resiliency](#create-tiered-storage-volume).
+2. [Create tiered storage with required resiliency](#create-tiered-storage-volume)
 3. [Add volume to DPM storage](#add-volumes-to-dpm-storage-1)
 4. [Disable Write Auto Tiering at file system level](#disable-write-auto-tiering-at-file-system-level)
 
