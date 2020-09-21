@@ -269,7 +269,7 @@ The disk gets converted to GPT disk in case the size is more than 2 TB.
 
     ![initialize disks](./media/add-storage/initialize-disks.png)
 
-#### Check primordial pool
+#### Check Primordial pool
 
 By default, available disks are included in a pool that is named as **Primordial** pool. If no Primordial pool is listed under the *Storage Pools*, this indicates that the storage does not meet the requirements for storage spaces. Make sure that the disks meet the requirements that are outlined in the [prerequisites](#prerequisites) section.
 
@@ -467,7 +467,7 @@ Follow the steps below to disable write auto-caching:
    0 - Enable write auto tiering on the given volume (default)
    1 - Disable write auto tiering on the given volume
    ```
-3. Run the following cmdlet to disable write caching:
+3. Run the following cmdlet to disable write-caching:
 
     ```PowerShell
     fsutil behavior set disableWriteAutoTiering <driveLetter:> 1
@@ -522,12 +522,12 @@ For Example, to exclude F:\ and C:\MountPoint1, use these steps:
     ```PowerShell
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
     ```
-2. Rescan the storage through UI, or use Start-DPMDiskRescan cmdlet.
+2. Rescan the storage through UI, or use *Start-DPMDiskRescan* cmdlet.
 
     The configured volumes and mountpoints are excluded.
 3. To remove volume exclusion, run the following cmdlet:
     ```PowerShell
-    Set-DPMGlobalProperty -DPMStorageVolumeExclusion ""   
+    Set-DPMGlobalProperty -DPMStorageVolumeExclusion   
     ```
 After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
 
