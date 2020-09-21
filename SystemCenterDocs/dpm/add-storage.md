@@ -166,6 +166,7 @@ DPM 2019 accepts volumes/disks for storage. Once you add a volume, DPM formats t
 
 You can directly give a volume to DPM, however, you may have issues in extending the volume if a need arises later. You can create additional volumes using storage pools, which could be exposed to DPM and extended as needed. The following sections provide the details on how to create a tiered volume, add a volume to DPM, and expand it later
 
+
 ## Set up MBS with Tiered Storage
 
 DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization and performance. MBS uses ReFS as underlying filesystem. MBS is designed to make use of hybrid storage such as tiered storage. To achieve the scale and performance claimed by MBS, we recommend using a small percentage (4% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with HDD for DPM native storage.
@@ -464,19 +465,6 @@ Follow the steps below to disable write auto-caching:
     **Example**:
 
     ![Disable Write Caching](./media/add-storage/disable-auto-tier.png)
-
-::: moniker range="sc-dpm-2019"
-
-## Add volumes to DPM storage
-
-Follow these steps:
-
-1. In the DPM Management console > **Disk Storage**, click **Rescan**.
-2. In **Add Disk Storage**, click **Add**.
-3. After the volumes are added, you can give them a friendly name.
-4. Click **OK** to format the volumes to ReFS, so DPM can use them as MBS.
-
-    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
 
 ## Migrate data to newly created volumes
 
