@@ -116,7 +116,7 @@ DPM servers may be managed by a team of Administrators. While there are guidelin
 
 For Example, to exclude F:\ and C:\MountPoint1, here are the steps:
 
-1. Run the Set0DPMGlobalPropery cmdletlet:
+1. Run the Set0DPMGlobalPropery cmdlet:
 
     ```PowerShell
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
@@ -190,7 +190,7 @@ The tiered storage is configured using [Windows Storage Spaces](https://docs.mic
 |HBA considerations|- Simple host bus adapters (HBAs) that do not support RAID functionality are recommended <br><br> - If RAID-capable, HBAs must be in non-RAID mode with all RAID functionality disabled <br><br> - Adapters must not abstract the physical disks, cache data, or obscure any attached devices. This includes enclosure services that are provided by attached just-a-bunch-of-disks (JBOD) devices.|Storage Spaces is compatible only with HBAs where you can completely disable all RAID functionality.|
 
 > [!NOTE]
-> To configure tiered storage, Windows Storage Spaces requires minimum SSD disk size of 32 GB.
+> To configure tiered storage, Windows Storage Spaces requires minimum SSD size of 32 GB.
 
 For more information on prerequisites for using Storage Spaces on a stand-alone server, see [Prerequisites to use Storage Spaces on a stand-alone server](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
@@ -226,12 +226,14 @@ The below chart highlights some pros and cons of the three types of resiliency, 
 
 For more information to help plan for the number of physical disks and the desired resiliency type for a stand-alone server deployment, use the guidelines documented [here](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
-## Configure DPM Storage
+## Configure DPM storage
 
-Windows Storage Spaces allows you to pool multiple physical disks into one logical drive. It provides an easy way to create software-defined storage using a server's local storage resources. Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in the sequence, as listed below:
+Windows Storage Spaces allows you to pool multiple physical disks into one logical drive. It provides an easy way to create software-defined storage using a server's local storage resources.
+
+Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in the sequence, as listed below:
 
 >[!NOTE]
->  In case you wish to modify your existing storage to tiered storage, migrate your current backups to a temporary volume using [Volume Migration](volume-to-volume-migration.md).
+>  In case you wish to modify your existing storage to tiered storage, migrate your current backups to a temporary volume using [volume migration](volume-to-volume-migration.md).
 
 1. [Prepare physical disks and create Windows Storage Pool](#prepare-physical-disks-and-create-windows-storage-pool)
 2. [Create tiered storage with required resiliency](#create-tiered-storage-volume).
@@ -241,7 +243,7 @@ Windows Storage Spaces allows you to pool multiple physical disks into one logic
     > Applicable only if you have migrated your backups to a temporary volume, prior to performing step 1.
 
 5. [Disable Write Auto Tiering at file system level](#disable-write-auto-tiering-at-file-system-level)
-6. [Configure workload-aware storage](#configure-workload-aware-storage)
+6. [Configure workload-aware storage](#configure-workload-aware-storage-1)
 
 
 ### Prepare physical disks and create Windows storage pool
@@ -250,7 +252,7 @@ Use the following procedures to prepare physical disks and create Windows storag
 
 #### Initialize disks
 
-Based on the resiliency option that you have selected, calculate the number of HDDs ad SSDs required. Initialize the new disks that are attached to the server first, prior to adding the disks to the storage pool.
+Based on the resiliency option that you have selected, calculate the number of HDDs and SSDs required. Initialize the new disks that are attached to the server first, prior to adding the disks to the storage pool.
 
 >[!NOTE]
 >]If the disks that you are using are more than 2TB in size, then the disks will be converted to GPT disks.
@@ -283,7 +285,7 @@ Get-StoragePool -IsPrimordial $true | Get-PhysicalDisk | Where-Object CanPool -e
 
 #### Create a storage pool
 
-Create a new storage pool with logical sector size of 4K. You are creating the storage volume with single disk initially.
+Create a new storage pool with logical sector size of 4K. Create the storage volume with single disk initially.
 
 Run the following cmdlet to create the storage pool:
 
@@ -297,7 +299,7 @@ New-StoragePool –FriendlyName DPMPool –StorageSubsystemFriendlyName (Get-Sto
 
 #### Set MediaType to SSD or HDD
 
-By default, Windows automatically detects the type of disk that is attached, and lists it as either an SSD or HDD. In case if the *MediaType* is set as *Unspecified*, use the following cmdlet to set the appropriate *MediaType* manually.
+By default, Windows automatically detects the type of disk that is attached, and lists it as either an SSD or HDD. In case the *MediaType* is set as *Unspecified*, use the following cmdlet to set the appropriate *MediaType* manually.
 
 > [!NOTE]
 > It is important that you identify the disk correctly (SSD/HDD) and set the *MediaType* accordingly. You can use the size of the disk as one of the identifiers.
@@ -307,6 +309,8 @@ By default, Windows automatically detects the type of disk that is attached, and
    ```PowerShell
    Get-PhysicalDisk|FTDeviceID,BusType,MediaType,Size,UniqueId
    ```
+
+   **Example:**
 
    ![Set Media Type](./media/add-storage/set-mediatype.png)
 
@@ -320,6 +324,9 @@ By default, Windows automatically detects the type of disk that is attached, and
     Set-PhysicalDisk -UniqueId "60022480183A590476AA8940A84C8E9D" -MediaType HDD
     Set-PhysicalDisk -UniqueId "60022480DB4A64573FEC4C9C82BB48EB" -MediaType HDD
     ```
+
+    **Example:**
+
     ![Assign SSD](./media/add-storage/assign-ssd.png)
 
 3. Run the following cmdlet to ensure that the MediaType has been set correctly:
@@ -334,22 +341,24 @@ By default, Windows automatically detects the type of disk that is attached, and
 
 #### Disable Write-back cache
 
-Disable Write-back cache to disable auto caching at storage pool level. (applicable for tiered storage)
+Disable Write-back cache to disable auto-caching at storage pool level. (applicable for tiered storage)
 To disable write-back cache, run the following PowerShell cmdlet:
 
 ```PowerShell
 Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 ```
 
+**Example:**
+
 ![Disable Write Back Cache](./media/add-storage/disable-write-back.png)
 
 ## Create tiered storage volume
 
-Before creating the tired storage, you need to plan the column size.
+Before creating the tiered storage, you need to plan the column size.
 
-- The column size determines how the data is written across the physical disks in the storage pool and also decides the number of physical disks that need to be added to the storage pool before a virtual disk can be expanded, later.
+- The column size determines how the data is written across the physical disks in the storage pool, and also decides the number of physical disks that need to be added to the storage pool before a virtual disk can be expanded, later.
 - The more the number of columns (up to 8), the better the overall performance. If you need to add physical disks later, it needs to be in multiples of the column size.
-- By default, when you create the virtual disk or volume, the column size will be automatically determined based on the number of disks available in the storage pool.
+- By default, when you create the virtual disk or volume, the column size is automatically determined based on the number of disks available in the storage pool.
 - The default setting is used while creating new virtual disk or volume using Server Manager or when you don't specify the column size while using _New-StorageTier_ cmdlet.
 - To change the default setting, run the following cmdlets.
 
@@ -391,7 +400,7 @@ To create the simple tiered volume (no resiliency), follow the steps below.
 
     ![Create SSD Tier](./media/add-storage/create-ssd-tier.png)
 
-2. Create a HDD tier by running the following cmdlet:
+2. Create an HDD tier by running the following cmdlet:
 
     ```PowerShell
     New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName HDDTier -MediaType HDD -ResiliencySettingName Simple -NumberOfColumns 1 -PhysicalDiskRedundancy 0 -FaultDomainAwareness PhysicalDisk
@@ -405,13 +414,15 @@ To create the simple tiered volume (no resiliency), follow the steps below.
 3. Create new volume using the SSD tier and HDD tier
 
     > [!NOTE]
-    > Use the storage tier size slightly lower than the actual size as it may exceed the physical capacity of the pool. You can resize (extend) the tier later, by reviewing the details in the section [extending tiered volume](extend-tiered-volume.md).
+    > Use the storage tier size slightly lower than the actual size as it may exceed the physical capacity of the pool. You can resize (extend) the tier later, by reviewing the details in [extend tiered volume](extend-tiered-volume.md).
 
     Run the following cmdlet to create new volume using SSD tier and HDD tier:
 
     ```PowerShell
     New-Volume -StoragePoolFriendlyName DPMPool -FriendlyName DPMVol -FileSystem ReFS -StorageTierFriendlyNames SSDTier,HDDTier -StorageTierSizes 745GB,14TB
     ```
+
+    **Example:**
 
     ![SSD and HDD Tier](./media/add-storage/ssd-hdd-tier.png)
 
@@ -424,7 +435,7 @@ To create the simple tiered volume (no resiliency), follow the steps below.
     **Example**
     ![Performance Tier](./media/add-storage/performance-tier.png)
 
-    Following image displays the end result as seen in Server Manager. You can view the volume in Windows disk management, this is ready to get added to the DPM storage pool.
+    Following image displays the end result as seen in Server Manager. You can view the volume in Windows disk management; this is ready to get added to the DPM storage pool.
 
     ![Windows Disk Volume](./media/add-storage/window-disk-volume.png)
 
@@ -434,8 +445,8 @@ Follow these steps:
 
 1. In the DPM Management console \> **Disk Storage** , click **Rescan**.
 2. In **Add Disk Storage** , click **Add**.
-3. After the volumes are added, you can give them a friendly name.
-4. Click **OK** to format the volumes to ReFS, so DPM can use them as MBS.
+   After the volumes are added, you can give them a friendly name.
+3. Click **OK** to format the volumes to ReFS, so DPM can use them as MBS.
 
     ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
 
@@ -478,7 +489,7 @@ Migration of data source should have all recovery points on Modern Storage.
 >- Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are preempted.
 
 
-## Configure workload aware storage
+## Configure workload-aware storage
 
 Using workload-aware storage, the volumes can be selected to preferentially store specific workloads. For example, expensive volumes that support high IOPS can be configured to store workloads that need frequent, high-volume backups such as SQL Server with transaction logs. Workloads that are backed up less frequently, such as VMs, can be backed up to low-cost volumes.
 
@@ -506,7 +517,7 @@ DPM servers may be managed by a team of Administrators. While there are guidelin
 
 For Example, to exclude F:\ and C:\MountPoint1, use these steps:
 
-1. Run the Set0DPMGlobalPropery cmdletlet:
+1. Run the Set0DPMGlobalPropery cmdlet:
 
     ```PowerShell
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
