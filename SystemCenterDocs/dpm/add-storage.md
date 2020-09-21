@@ -238,13 +238,10 @@ Follow the steps in the procedures below to set up MBS with tiered storage. Foll
 1. [Prepare physical disks and create Windows Storage Pool](#prepare-physical-disks-and-create-windows-storage-pool)
 2. [Create tiered storage with required resiliency](#create-tiered-storage-volume).
 3. [Add volume to DPM storage](#add-volumes-to-dpm-storage-1)
-4. [Migrate your data back to the newly created volumes using Volume Migration](volume-to-volume-migration.md)
-    >[!NOTE]
-    > Applicable only if you have migrated your backups to a temporary volume, prior to performing step 1.
+4. [Disable Write Auto Tiering at file system level](#disable-write-auto-tiering-at-file-system-level)
 
-5. [Disable Write Auto Tiering at file system level](#disable-write-auto-tiering-at-file-system-level)
-6. [Configure workload-aware storage](#configure-workload-aware-storage-1)
-
+>[!NOTE]
+> If you have migrated your earlier backups prior to step 1, migrate your data back to the newly created volumes using [volume migration](volume-to-volume-migration.md).
 
 ### Prepare physical disks and create Windows storage pool
 
@@ -255,7 +252,7 @@ Use the following procedures to prepare physical disks and create Windows storag
 Based on the resiliency option that you have selected, calculate the number of HDDs and SSDs required. Initialize the new disks that are attached to the server first, prior to adding the disks to the storage pool.
 
 >[!NOTE]
->]If the disks that you are using are more than 2TB in size, then the disks will be converted to GPT disks.
+> The disks that are more than 2 TB in size, will be converted to GPT disks.
 
 To Initialize the disks, follow these steps:
 
@@ -264,7 +261,7 @@ To Initialize the disks, follow these steps:
 3. Click  **Volumes** and then click **Disks Pools**.
 4. Right-click the disks and select **Initialize**.
 5. Select **Yes** to initialize the disk.
-The disk gets converted to GPT disk in case the size is more than 2 TB.
+The disk gets converted to GPT disk in case the disk size is more than 2 TB.
 6. Repeat the steps for the remaining disks to initialize.
 
     ![initialize disks](./media/add-storage/initialize-disks.png)
@@ -285,7 +282,7 @@ Get-StoragePool -IsPrimordial $true | Get-PhysicalDisk | Where-Object CanPool -e
 
 #### Create a storage pool
 
-Create a new storage pool with logical sector size of 4K. Create the storage volume with single disk initially.
+Create a new storage pool with a logical sector size of 4K. Create the storage volume with single disk initially.
 
 Run the following cmdlet to create the storage pool:
 
@@ -304,10 +301,10 @@ By default, Windows automatically detects the type of disk that is attached, and
 > [!NOTE]
 > It is important that you identify the disk correctly (SSD/HDD) and set the *MediaType* accordingly. You can use the size of the disk as one of the identifiers.
 
-1. Run the following cmdlet to check the MediaType:
+1. Run the following cmdlet to check *MediaType*:
 
    ```PowerShell
-   Get-PhysicalDisk|FTDeviceID,BusType,MediaType,Size,UniqueId
+   Get-PhysicalDisk|FT DeviceID,BusType,MediaType,Size,UniqueId
    ```
 
    **Example:**
@@ -341,7 +338,7 @@ By default, Windows automatically detects the type of disk that is attached, and
 
 #### Disable Write-back cache
 
-Disable Write-back cache to disable auto-caching at storage pool level. (applicable for tiered storage)
+Disable Write-back cache to disable auto-caching at storage pool level (applicable for tiered storage).
 To disable write-back cache, run the following PowerShell cmdlet:
 
 ```PowerShell
@@ -372,7 +369,7 @@ Before creating the tiered storage, you need to plan the column size.
 
      ![Get Resiliency Setting](./media/add-storage/get-resiliency.png)
 
-    - To change the column size setting, run the following cmdlet.
+    - To change the column size setting, run the following cmdlets.
 
         **For Mirror**:
 
@@ -388,7 +385,7 @@ Before creating the tiered storage, you need to plan the column size.
 
 ### Create Simple tiered volume (No Resiliency)
 
-To create the simple tiered volume (no resiliency), follow the steps below.
+To create simple tiered volume (no resiliency), follow the steps below.
 
 1. Create an SSD tier by running the following cmdlet:
 
@@ -409,7 +406,6 @@ To create the simple tiered volume (no resiliency), follow the steps below.
 
     ![Create HDD Tier](./media/add-storage/create-hdd-tier.png)
 
-    ![HDD Tier Volume](./media/add-storage/hdd-tier-volume.png)
 
 3. Create new volume using the SSD tier and HDD tier
 
@@ -426,7 +422,7 @@ To create the simple tiered volume (no resiliency), follow the steps below.
 
     ![SSD and HDD Tier](./media/add-storage/ssd-hdd-tier.png)
 
-4.  Run the following cmdlet to  verify the performance tier and capacity tier used for the newly created volume:
+4.  Run the following cmdlet to  verify the performance tier and capacity tier, used for the newly created volume:
 
     ```PowerShell
     Get-StorageTier
@@ -435,7 +431,7 @@ To create the simple tiered volume (no resiliency), follow the steps below.
     **Example**
     ![Performance Tier](./media/add-storage/performance-tier.png)
 
-    Following image displays the end result as seen in Server Manager. You can view the volume in Windows disk management; this is ready to get added to the DPM storage pool.
+    The following image displays the end result as seen in Server Manager. You can view the volume in Windows disk management; this is ready to get added to the DPM storage pool.
 
     ![Windows Disk Volume](./media/add-storage/window-disk-volume.png)
 
@@ -479,7 +475,7 @@ Follow the steps below to disable write auto-caching:
 
 ## Migrate data to newly created volumes
 
-In case you had upgraded your existing storage to a tiered storage, you can migrate your data by using Volume Migration. You can use PowerShell or the user interface to migrate data sources. [Learn more](volume-to-volume-migration.md).
+In case you had upgraded your existing storage to a tiered storage, you can migrate your data by using volume migration. You can use PowerShell or the user interface to migrate data sources. [Learn more](volume-to-volume-migration.md).
 
 
 Migration of data source should have all recovery points on Modern Storage.
@@ -511,13 +507,13 @@ You can configure workload-aware storage using Windows PowerShell cmdlets.
 
     ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
 
-## Volume Exclusion
+## Volume exclusion
 
-DPM servers may be managed by a team of Administrators. While there are guidelines on storage that should be used for backups, a wrong volume given to DPM as backup storage may lead to loss of critical data. Hence, with DPM 2016 UR4 and later, you can prevent such scenarios by configuring those volumes to not be shown as *available* for storage using PowerShell.
+DPM servers may be managed by a team of administrators. While there are guidelines on storage that should be used for backups, an incorrect volume given to DPM as backup storage may lead to loss of critical data. Hence, with DPM 2016 UR4 and later, you can prevent such scenarios by configuring those volumes to not be shown as *available* for storage using PowerShell.
 
 For Example, to exclude F:\ and C:\MountPoint1, use these steps:
 
-1. Run the Set0DPMGlobalPropery cmdlet:
+1. Run the *Set0DPMGlobalPropery* cmdlet:
 
     ```PowerShell
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
