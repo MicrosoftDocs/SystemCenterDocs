@@ -235,7 +235,7 @@ Windows Storage Spaces allows you to pool multiple physical disks into one logic
 
 1. [Prepare physical disks and create Windows Storage Pool](#prepare-physical-disks-and-create-windows-storage-pool)
 2. [Create tiered storage with required resiliency](#create-tiered-storage-volume).
-3. [Add volume to DPM storage](#add-volumes-to-dpm-storage)
+3. [Add volume to DPM storage](#add-volumes-to-dpm-storage-1)
 4. [Migrate your data back to the newly created volumes using Volume Migration](volume-to-volume-migration.md)
     >[!NOTE]
     > Applicable only if you have migrated your backups to a temporary volume, prior to performing step 1.
@@ -478,7 +478,7 @@ Migration of data source should have all recovery points on Modern Storage.
 >- Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are preempted.
 
 
-## Configure workload-aware storage
+## Configure workload aware storage
 
 Using workload-aware storage, the volumes can be selected to preferentially store specific workloads. For example, expensive volumes that support high IOPS can be configured to store workloads that need frequent, high-volume backups such as SQL Server with transaction logs. Workloads that are backed up less frequently, such as VMs, can be backed up to low-cost volumes.
 
