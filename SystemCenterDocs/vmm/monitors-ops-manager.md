@@ -111,7 +111,7 @@ You can monitor VMM processes and state in any of the VMM dashboards that appear
 1. In the Operations console for Operations Manager, click **Monitoring**.
 2. To monitor VMs, click **Virtual Machine Manager**. This dashboard includes health and performance information for virtual machines, hosts, and VMM servers.
 3. To monitor VMM hosts, click **VMM Host Dashboard**. You can monitor the health of virtualization hosts discovered in the VMM fabric, and get information about the host properties, status, VMs, alerts, and performance.
-4. To monitor a private cloud click **Fabric Health Dashboard**. For each cloud the dashboard monitors the state of host groups, the compute properties of the cloud (CPU, network adapters etc), storage information such as pools, file share, LUNs, and network monitoring. You can scope the dashboard to physical or virtual resources, or to a particular cloud tenant.
+4. To monitor a private cloud click **Fabric Health Dashboard**. For each cloud the dashboard monitors the state of host groups, the compute properties of the cloud (CPU, network adapters etc.,), storage information such as pools, file share, LUNs, and network monitoring. You can scope the dashboard to physical or virtual resources, or to a particular cloud tenant.
 5. In **Virtual Machine Manager Views** you can view graphic representations of managed systems. After you connect the VMM and Operation Manager servers for the first time it can take several hours until the diagrams are available in the console.
 
 ## Next steps
