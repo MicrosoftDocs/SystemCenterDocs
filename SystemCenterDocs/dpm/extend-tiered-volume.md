@@ -6,7 +6,7 @@ author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center
 keywords:
-ms.date:  09/21/2020
+ms.date:  09/23/2020
 title:  extend tiered volume in DPM
 ms.technology:  data-protection-manager
 ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7

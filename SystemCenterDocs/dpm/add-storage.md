@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 09/18/2020
+ms.date: 09/23/2020
 title: Add Modern Backup Storage to DPM
 ms.technology: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
@@ -354,7 +354,7 @@ Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 Before creating the tiered storage, you need to plan the column size.
 
 - The column size determines how the data is written across the physical disks in the storage pool, and also decides the number of physical disks that need to be added to the storage pool before a virtual disk can be expanded, later.
-- The more the number of columns (up to 8), the better the overall performance. If you need to add physical disks later, it needs to be in multiples of the column size.
+- The higher the column size (up to 8), the better the overall performance. If you need to add physical disks later, it needs to be in multiples of the column size.
 - By default, when you create the virtual disk or volume, the column size is automatically determined based on the number of disks available in the storage pool.
 - The default setting is used while creating new virtual disk or volume using Server Manager or when you don't specify the column size while using _New-StorageTier_ cmdlet.
 - To change the default setting, run the following cmdlets.
