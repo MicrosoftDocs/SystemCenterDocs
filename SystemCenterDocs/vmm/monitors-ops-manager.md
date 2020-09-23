@@ -44,15 +44,18 @@ You set up Operations Manager with VMM as follows:
 
 ## Before you start
 
+
 ::: moniker range="sc-vmm-2016"
 
-Make sure you're using a supported version of Operations Manager (running on Systems Center 2016 or a later version).
+>[!NOTE]
+> Make sure you're using a supported version of Operations Manager (running on Systems Center 2016 or a later version).
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2019"
 
-Make sure you're using a supported version of Operations Manager (running on Systems Center 2019 or a later version).
+>[!NOTE]
+> Make sure you're using a supported version of Operations Manager (running on Systems Center 2019 or a later version).
 
 ::: moniker-end
 
@@ -75,8 +78,9 @@ Make sure you're using a supported version of Operations Manager (running on Sys
 
 ## Locate the management packs
 
-1.	The latest versions of Management packs are coupled with every new release of VMM build.
-2.	Open the management packs folder on the VMM server. The default location is **C:\Program Files\Microsoft System Center \Virtual Machine Manager\ManagementPacks**.
+The latest versions of management packs are coupled with every new release of VMM build.
+
+To locate the management packs, open the management packs folder on the VMM server. The default location is **C:\Program Files\Microsoft System Center \Virtual Machine Manager\ManagementPacks**.
 
 ## Run the integration wizard
 
