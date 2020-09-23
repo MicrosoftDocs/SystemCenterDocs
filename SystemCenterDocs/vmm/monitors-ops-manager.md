@@ -5,7 +5,7 @@ description: This article describes how to integrate VMM with Operations Manager
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -33,7 +33,7 @@ You set up Operations Manager with VMM as follows:
 1. Verify prerequisites.
 2. Install the Operations Manager console on the VMM server so you can monitor VMM from the server.
 3. Install Operations Manager agents on the VMM management server and all hosts under management by VMM.
-4. Download the latest management pack.
+4. Locate the latest management pack.
 5. Run the integration wizard to integrate VMM and Operations Manager. The wizard does the following:
 
     - Imports the VMM management packs into Operations Manager.
@@ -44,7 +44,21 @@ You set up Operations Manager with VMM as follows:
 
 ## Before you start
 
-- Make sure you're using a supported version of Operations Manager (running on Systems Center 2016 or a later version).
+
+::: moniker range="sc-vmm-2016"
+
+>[!NOTE]
+> Make sure you're using a supported version of Operations Manager (running on Systems Center 2016 or a later version).
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
+>[!NOTE]
+> Make sure you're using a supported version of Operations Manager (running on Systems Center 2019 or a later version).
+
+::: moniker-end
+
 - Operations Manager must use SQL Server 2012 SP2, SQL Server 2014, or SQL Server 2016 with reporting services enabled. To use the forecasting reports, SQL Server Analysis Services must be installed on the Operations Manager reporting server. The SSAS instance name should match the SQL Server Reporting Services (MSSQLSERVER).
 - The version of the Operations Manager operations console that is installed on the VMM management server must match the version of Operations Manager with which you intend to integrate. The Operations Manager agent version agent should be supported by the Operations Manager version.
 - Ensure that the version of Windows PowerShell that's on all Operations Manager management servers is the most recent version supported by that version of Operations Manager. To determine which version of Windows PowerShell is on a server, run **Get-Host | Select-Object Version**
@@ -62,11 +76,11 @@ You set up Operations Manager with VMM as follows:
 1. Install the Operations Manager agent on each VMM server, and on each host managed in the VMM fabric.
 2. You can install the agent from the Operations Manager Operations console, from Operations Manager setup, or from the command line. To understand the different methods for agent deployment, review [Managing discovery and agents](https://docs.microsoft.com/system-center/scom/manage-deploy-windows-agent-console?view=sc-om-1801) section in Operations manager documentation.
 
-## Download the management packs
+## Locate the management packs
 
-1. [Download](https://www.microsoft.com/download/details.aspx?id=54113) the latest version of the VMM management packs from the Microsoft download center.
-2. Open the management packs folder on the VMM server. The default location is C:\Program Files\Microsoft System Center <version>\Virtual Machine Manager\ManagementPacks. Back up the existing .mp files.
-3. Extract the new .mp files to the management pack folder, overwriting the existing .mp files.
+The latest versions of management packs are coupled with every new release of VMM build.
+
+To locate the management packs, open the management packs folder on the VMM server. The default location is **C:\Program Files\Microsoft System Center \Virtual Machine Manager\ManagementPacks**.
 
 ## Run the integration wizard
 
@@ -97,7 +111,7 @@ You can monitor VMM processes and state in any of the VMM dashboards that appear
 1. In the Operations console for Operations Manager, click **Monitoring**.
 2. To monitor VMs, click **Virtual Machine Manager**. This dashboard includes health and performance information for virtual machines, hosts, and VMM servers.
 3. To monitor VMM hosts, click **VMM Host Dashboard**. You can monitor the health of virtualization hosts discovered in the VMM fabric, and get information about the host properties, status, VMs, alerts, and performance.
-4. To monitor a private cloud click **Fabric Health Dashboard**. For each cloud the dashboard monitors the state of host groups, the compute properties of the cloud (CPU, network adapters etc), storage information such as pools, file share, LUNs, and network monitoring. You can scope the dashboard to physical or virtual resources, or to a particular cloud tenant.
+4. To monitor a private cloud click **Fabric Health Dashboard**. For each cloud the dashboard monitors the state of host groups, the compute properties of the cloud (CPU, network adapters etc.,), storage information such as pools, file share, LUNs, and network monitoring. You can scope the dashboard to physical or virtual resources, or to a particular cloud tenant.
 5. In **Virtual Machine Manager Views** you can view graphic representations of managed systems. After you connect the VMM and Operation Manager servers for the first time it can take several hours until the diagrams are available in the console.
 
 ## Next steps
