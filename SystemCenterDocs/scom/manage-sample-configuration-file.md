@@ -25,6 +25,7 @@ This article details a sample configuration for collecting log files from Linux 
 
 ## Sample configuration
 
+```
 # Have a source directive for each log file source file.
 <source>
 
@@ -224,6 +225,8 @@ This article details a sample configuration for collecting log files from Linux 
     # The retry wait time doubles each time until max_retry_wait.
     max_retry_wait 9m
 </match>
+
+```
 
 ## Next steps
 
