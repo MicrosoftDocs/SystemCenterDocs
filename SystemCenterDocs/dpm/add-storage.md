@@ -264,7 +264,7 @@ To Initialize the disks, follow these steps:
 The disk gets converted to GPT disk in case the disk size is more than 2 TB.
 6. Repeat the steps for the remaining disks to initialize.
 
-    ![initialize disks](./media/add-storage/initialize-disks.png)
+    ![initialize disks](./media/add-storage/initialize-disks-1.png)
 
 #### Check Primordial pool
 
@@ -278,7 +278,7 @@ Get-StoragePool -IsPrimordial $true | Get-PhysicalDisk | Where-Object CanPool -e
 
 **Example:**
 
-![Check Primordial Pool](./media/add-storage/check-primordial-pool.png)
+![Check Primordial Pool](./media/add-storage/check-primordial-pool-1.png)
 
 #### Create a storage pool
 
@@ -292,7 +292,7 @@ New-StoragePool –FriendlyName DPMPool –StorageSubsystemFriendlyName (Get-Sto
 
 **Example:**
 
-![Create Storage Pool](./media/add-storage/create-storage-pool.png)
+![Create Storage Pool](./media/add-storage/create-storage-pool-1.png)
 
 #### Set MediaType to SSD or HDD
 
@@ -309,7 +309,7 @@ By default, Windows automatically detects the type of disk that is attached, and
 
    **Example:**
 
-   ![Set Media Type](./media/add-storage/set-mediatype.png)
+   ![Set Media Type](./media/add-storage/set-mediatype-1.png)
 
 2. In the above example, assign the MediaType as SSD to the disk with DeviceID as 1 and assign HDD to the disks with DeviceID as 2,3 and 4.
 
@@ -324,7 +324,7 @@ By default, Windows automatically detects the type of disk that is attached, and
 
     **Example:**
 
-    ![Assign SSD](./media/add-storage/assign-ssd.png)
+    ![Assign SSD](./media/add-storage/assign-ssd-1.png)
 
 3. Run the following cmdlet to ensure that the MediaType has been set correctly:
 
@@ -334,7 +334,7 @@ By default, Windows automatically detects the type of disk that is attached, and
 
      **Example**:
 
-     ![Correct Media Type](./media/add-storage/correct-media-type.png)
+     ![Correct Media Type](./media/add-storage/correct-media-type-1.png)
 
 #### Disable Write-back cache
 
@@ -347,7 +347,7 @@ Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 
 **Example:**
 
-![Disable Write Back Cache](./media/add-storage/disable-write-back.png)
+![Disable Write Back Cache](./media/add-storage/disable-write-back-1.png)
 
 ## Create tiered storage volume
 
@@ -367,7 +367,7 @@ Before creating the tiered storage, you need to plan the column size.
 
      **Example**:
 
-     ![Get Resiliency Setting](./media/add-storage/get-resiliency.png)
+     ![Get Resiliency Setting](./media/add-storage/get-resiliency-1.png)
 
     - To change the column size setting, run the following cmdlets.
 
@@ -395,7 +395,7 @@ To create simple tiered volume (no resiliency), follow the steps below.
 
     **Example**
 
-    ![Create SSD Tier](./media/add-storage/create-ssd-tier.png)
+    ![Create SSD Tier](./media/add-storage/create-ssd-tier-1.png)
 
 2. Create an HDD tier by running the following cmdlet:
 
@@ -404,7 +404,7 @@ To create simple tiered volume (no resiliency), follow the steps below.
     ```
     **Example**
 
-    ![Create HDD Tier](./media/add-storage/create-hdd-tier.png)
+    ![Create HDD Tier](./media/add-storage/create-hdd-tier-1.png)
 
 
 3. Create new volume using the SSD tier and HDD tier
@@ -420,7 +420,7 @@ To create simple tiered volume (no resiliency), follow the steps below.
 
     **Example:**
 
-    ![SSD and HDD Tier](./media/add-storage/ssd-hdd-tier.png)
+    ![SSD and HDD Tier](./media/add-storage/ssd-hdd-tier-1.png)
 
 4.  Run the following cmdlet to  verify the performance tier and capacity tier, used for the newly created volume:
 
@@ -429,11 +429,11 @@ To create simple tiered volume (no resiliency), follow the steps below.
     ```
 
     **Example**
-    ![Performance Tier](./media/add-storage/performance-tier.png)
+    ![Performance Tier](./media/add-storage/performance-tier-1.png)
 
     The following image displays the end result as seen in Server Manager. You can view the volume in Windows disk management; this is ready to get added to the DPM storage pool.
 
-    ![Windows Disk Volume](./media/add-storage/window-disk-volume.png)
+    ![Windows Disk Volume](./media/add-storage/window-disk-volume-1.png)
 
 ## Add volumes to DPM storage
 
@@ -471,7 +471,7 @@ Follow the steps below to disable write auto-caching:
 
     **Example**:
 
-    ![Disable Write Caching](./media/add-storage/disable-auto-tier.png)
+    ![Disable Write Caching](./media/add-storage/disable-auto-tier-1.png)
 
 ## Migrate data to newly created volumes
 
