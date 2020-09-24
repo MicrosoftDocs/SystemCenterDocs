@@ -78,9 +78,9 @@ You set up Operations Manager with VMM as follows:
 
 ## Locate the management packs
 
-The latest versions of management packs are coupled with every new release of VMM build.
+- The latest versions of management packs are coupled with every new release of VMM build.
 
-To locate the management packs, open the management packs folder on the VMM server. The default location is **C:\Program Files\Microsoft System Center \Virtual Machine Manager\ManagementPacks**.
+- To locate the management packs, open the management packs folder on the VMM server. The default location is **C:\Program Files\Microsoft System Center \Virtual Machine Manager\ManagementPacks**.
 
 ## Run the integration wizard
 
