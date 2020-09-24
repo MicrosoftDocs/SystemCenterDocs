@@ -26,8 +26,7 @@ DPM supports the following two options to migrate data to a new volume:
 - **Optimized migration** - allows you to move data sources to the new volume much faster. The enhanced migration process migrates only the active backup copy (active replica) to the new volume. All the new recovery points are created on the new volume, while existing recovery points are maintained on the existing volume, and are purged as per the retention policy.
 
    > [!NOTE]
-   > This option is applicable from DPM 2019 UR2 and later versions.
-
+   > This option is applicable from DPM 2019 UR2 and later.
 
 
   To use this option, first, add the registry key as per the details below:
@@ -61,7 +60,7 @@ Follow these steps:
 
 ## Migrate datasources to new volumes using PowerShell
 
-   Here is an example for migrating data source from one volume to the other volume using PowerShell:
+   Here is an example for migrating data source from one volume to the other volume using PowerShell cmdlets:
 
 ```powershell
    #Create a modifiable Protection Group of the PG the datasource is in.
