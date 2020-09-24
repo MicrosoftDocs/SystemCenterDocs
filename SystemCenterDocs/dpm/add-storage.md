@@ -171,7 +171,7 @@ You can directly give a volume to DPM, however, you may have issues in extending
 
 DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization and performance. MBS uses ReFS as underlying filesystem. MBS is designed to make use of hybrid storage such as tiered storage. To achieve the scale and performance claimed by MBS, we recommend using a small percentage (4% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with HDD for DPM native storage.
 
-Once you configure tiered storage, the ReFs file system has the intelligence to store File System Metadata on the SSD tier. This improves the overall backup job time significantly. There is no further configuration required while configuring the protection groups, etc.
+Once you configure tiered storage, the ReFS file system has the intelligence to store File System Metadata on the SSD tier. This improves the overall backup job time significantly. There is no further configuration required while configuring the protection groups, etc.
 
 > [!NOTE]
 > - Tiering is recommended for faster backups. However, this is not a mandatory requirement to configure DPM storage.

@@ -1,13 +1,13 @@
 ---
-description: This article explains how to extend the tiered volume in DPM.
+description: This article explains how to extend the tiered volume in System Center - Data Protection Manager.
 manager:  vvithal
 ms.topic:  article
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center
 keywords:
-ms.date:  09/23/2020
-title:  extend tiered volume in DPM
+ms.date:  09/24/2020
+title:  Extend tiered volume in System Center Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7
 ---
