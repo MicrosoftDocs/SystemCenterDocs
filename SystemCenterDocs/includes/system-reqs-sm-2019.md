@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 09/09/2020
+ms.date: 09/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -86,12 +86,11 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 > [!NOTE]
 > - SM  doesn’t support SSAS mode *Tabular*. Select the SSAS mode as *Multi-dimensional* during the installation of SQL Server.
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
-> - Service Manager 2019 supports SQL 2019 with CU7 or later. However, does not support SQL 2019 RTM.
-> - With SQL 2019 (CU7 or later), use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
-|**Service Manager** |  **SQL Server 2016 and [SPs](https://docs.microsoft.com/lifecycle/products/sql-server-2016)** | **SQL Server [2017](https://docs.microsoft.com/lifecycle/products/sql-server-2017)**| **SQL Server [2019 with Cumulative Update 7](https://docs.microsoft.com/lifecycle/products/sql-server-2019)**
-| --- | --- | --- |--- |
-|**Service Manager/Data Warehouse database** |  &#8226;| &#8226; |&#8226; |
+
+|**Service Manager** |  **SQL Server 2016 and [SPs](https://docs.microsoft.com/lifecycle/products/sql-server-2016)** | **SQL Server [2017](https://docs.microsoft.com/lifecycle/products/sql-server-2017)**|
+| --- | --- | --- |
+|**Service Manager/Data Warehouse database** |  &#8226;| &#8226; |
 
 
 
@@ -138,22 +137,6 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 4. Configure the SSRS as per the details shared [here](https://docs.microsoft.com/system-center/scsm/prepare-remote-ssrs).
 5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2017.
 
-## Upgrade to SQL 2019
-
-The following steps provide information about upgrading to SQL 2019.
-
- > [!NOTE]  
- > - You must use Cumulative Update 7 (CU7) or later with SQL 2019.
- > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
- > - Upgrade process to SQL 2019 uninstalls the reporting services, ensure to migrate required reports such as backup reporting DB and encryption keys.
-
- **Use the following steps to upgrade from SQL 2017 to 2019**:
-
-1. Upgrade to SQL 2019.
-2. Install SQL 2019 reporting services (SSRS), and launch the reporting services configuration manager to use the existing reporting DB, restore encryption keys.  Configure the Web service URL and Web portal URL   .
-3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2019.      
-4. Configure the SSRS as per the details shared [here](https://docs.microsoft.com/system-center/scsm/prepare-remote-ssrs).
-5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2019.
 
 
 ### Enable CLR strict security
