@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 11/01/2016
+ms.date: 09/09/2020
 title: Deploy the DPM protection agent
 ms.technology: data-protection-manager
 ms.assetid: 502fff45-79b5-477b-af4f-3b8a39bdde1a
@@ -135,6 +135,67 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
        2.  Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configure security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
 
 4. If you added the computer to the DPM server before you installed the agent, the  server begins to create backups for the protected computer. If you installed the agent before you added the computer to the DPM server, you must attach the computer before the DPM server begins to create backups.
+
+
+## Install the Protection Agent on a RODC
+
+Use these steps:
+
+1.  Either turn the firewall off on the RODC or run the following commands on the RODC before you install the agent:
+
+      - `netsh advfirewall firewall set rule group="@FirewallAPI.dll,-29502" new enable=yes`
+
+      - `netsh advfirewall firewall set rule group="@FirewallAPI.dll,-34251" new enable=yes`
+
+      - `netsh advfirewall firewall add rule name=dpmra dir=in program="%PROGRAMFILES%\Microsoft Data Protection Manager\DPM\bin\DPMRA.exe" profile=Any action=allow`
+
+      - `netsh advfirewall firewall add rule name=DPMRA_DCOM_135 dir=in action=allow protocol=TCP localport=135 profile=Any`
+
+2.  On the primary domain controller, create and then populate the following security groups, where the protected server name is the name of the RODC on which you plan to install the protection agent:
+
+      - Create a security group named **DPMRADCOMTRUSTEDMACHINES$PSNAME**, and then add the DPM server machine account as a member.
+
+      - Create a security group named **DPMRADMTRUSTEDMACHINES$PSNAME**, and then add the DPM server machine account as a member.
+
+      - Create a security group named **DPMRATRUSTEDDPMRAS$PSNAME** , and then add the DPM server machine account as a member.
+
+      - Add the DPM server machine account as a member of the **Builtin\\Distributed Com Users** security group.
+
+3.  Ensure that the security groups that you created earlier have replicated on the RODC. Then, manually install the protection agent on the RODC.
+
+4.  On the RODC server, perform the following steps to grant launch and activation permissions for the DPMRA service:
+
+    1.  Open DPM Management Shell, and then run the command **dcomcnfg.exe**.
+
+        The **Component Services** window opens.
+
+    2.  In the **Component Services** window, expand **Computers**, expand **My Computer**expand DCOM Config, right-click the**DPM RA** service, and then click **Properties**.
+
+    3.  Click **General**, and then set the **Authentication Level** to **Default**.
+
+    4.  Click **Location**, and then ensure that only **Run application on this computer** is selected.
+
+    5.  Click **Security**, select **Customize** under **Launch and Activation Permissions**, select **Customize**, and then click **Edit** to open the **Launch Permission** dialog box.
+
+    6.  In the **Launch Permission** dialog box, assign permissions for **Local Launch**, **Remote Launch**, **Local Activation**, and **Remote Activation** for the DPM server machine account.
+
+    7.  Click **OK** to close the dialog box.
+
+    8.  Navigate to **Program Files\\Microsoft System Center\\DPM\\DPM\\setup** on the DPM server, copy the following files to a folder on the RODC server.
+
+          - setagentcfg.exe
+
+          - traceprovider.dll
+
+          - LKRhDPM.dll
+
+5.  On the RODC, from an elevated command prompt, run the command **setagentcfg.exe a DPMRA domain\\DPMserver** from the location that you specified in the previous step.
+
+6.  On the RODC server, browse to the **C:\\Program Files\\Microsoft Data Protection Manager\\DPM\\bin folder** and run the setdpmserver command:
+
+    **Setdpmserver -dpmservername DPMSERVER**
+
+7.  [Attach the protection agent](#BKMK_Attach) to the DPM server, as detailed in the following section.
 
 
 ## <a name="BKMK_Attach"></a>Attach the agent

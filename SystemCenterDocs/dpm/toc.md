@@ -20,6 +20,7 @@
 ### [Install DPM ](install-dpm.md)
 ### [Upgrade your DPM installation](upgrade-dpm.md)
 ### [Add Modern Backup storage](add-storage.md)
+#### [Extend tiered volume](extend-tiered-volume.md)
 #### [Migrate datasources to new volumes](volume-to-volume-migration.md)
 ### [Deduplicate DPM storage](deduplicate-dpm-storage.md)
 ### [Deploy and manage update rollups](update-rollups.md)

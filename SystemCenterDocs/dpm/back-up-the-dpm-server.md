@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 04/16/2020
+ms.date: 09/15/2020
 title: Back up the DPM server
 ms.technology: data-protection-manager
 ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f
@@ -34,7 +34,7 @@ Information on a  DPM server can be backed up and protected by another DPM serve
 -   **Primary to secondary protection** - The database and replicas stored on a primary DPM server can be backed up to a secondary DPM server. If the primary server fails the secondary server continues to back up protected workloads. If the primary server fails you can do either of the following:
     Rebuild the primary server and restore its database and replicas from the secondary server. Then move the protected workloads back to the primary server after the rebuild.
     Select to switch protection to the secondary DPM server. With this setting you then restore to the protected computer directly from the secondary server when the need arises.
-    For instructions, see Set up secondary servers.
+    For instructions, see [Set up secondary servers](#set-up-primary-and-secondary-protection).
 
 -   **DPM chaining** - A chain of DPM servers provide protection, and each server protects the next one in in the chain. For example:
     DPM1 is protected by DPM2 \(DPM1 is the primary and DPM2 is the secondary\).
@@ -46,10 +46,19 @@ Information on a  DPM server can be backed up and protected by another DPM serve
 ### Set up primary and secondary protection
 Back up a primary DPM server using a secondary DPM server:
 
-1.  Install the DPM protection agent on each primary DPM server that you want to protect. No restart is required.
+1.  The Primary DPM server has the protection agent already installed. You need to attach this protection agent to the secondary DPM server.
     > [!IMPORTANT]
     > Major and minor versions of the Primary and Secondary DPM servers must match.
     >
+
+    Follow these steps to attach the agent:
+
+     1. In DPM Administrator Console of secondary DPM server, on the navigation bar, click **Management** > **Agents**. In the **Actions** pane, click **Install**.
+     2. On the **Select Agent Deployment Method** page, select **Attach agents** > **Computer on a trusted domain** > **Next**. The Protection Agent Installation Wizard opens.
+     3. On the **Select Computers** page, DPM displays a list of available computers. Select the name of the Primary DPM server from the **Computer name** list > **Add** > **Next**.
+     4. On the **Enter Credentials** page, type the user name and password for a domain account that is a member of the local Administrators group on the Primary DPM server.
+     5. On the **Summary** page, click **Attach**.
+
 
 2.  Add the primary DPM server to an existing protection group, or create a new one. Select to protect the following data sources:
 

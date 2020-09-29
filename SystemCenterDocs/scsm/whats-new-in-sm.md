@@ -5,7 +5,7 @@ description: This article describes the new features supported in Service Manage
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 03/14/2019
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
@@ -16,7 +16,7 @@ ms.technology: service-manager
 
 ::: moniker range="sc-sm-2019"
 
-This article details the new features supported in System Center 2019 - Service Manager (SM).
+This article details the new features supported in System Center 2019 - Service Manager.  
 
 [!INCLUDE [whats-new-sm-2019.md](../includes/whats-new-sm-2019.md)]
 

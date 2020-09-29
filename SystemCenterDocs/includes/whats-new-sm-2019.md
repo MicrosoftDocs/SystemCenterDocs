@@ -7,17 +7,18 @@ author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center
 keywords:  
-ms.date: 03/14/2019
+ms.date: 09/24/2020
 ms.technology:  service-manager
 ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ---
 
 ## New features in SM 2019
-See the following sections for information about the new features/features updated in SM 2019.
+See the following sections for information about the new features/features updated in Service Manager (SM) 2019.
 
-## Support to SQL 2017
+## Support to SQL Server 2017
 SM 2019 supports new installation of SQL Server 2017.
 [Learn more](../scsm/system-requirements.md).
+
 
 ##	Improvement in Active Directory Connector
 The Active Directory (AD) connector has been improvised to synchronize with a specific domain controller. You may now, specify the domain controller in the LDAP query of the Active Directory connector.

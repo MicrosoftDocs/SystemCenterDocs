@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/19/2020
+ms.date: 09/24/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -27,18 +27,34 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 ## SQL Server requirements
 
-::: moniker range=">=sc-om-1807"
+::: moniker range=">sc-om-1807"
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-* SQL Server 2017 and Service Packs as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
+
+- SQL Server 2017 and Cumulative Updates as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
+- SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+
+::: moniker-end
+
+::: moniker range="sc-om-1807"
+
+The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
+
+* SQL Server 2017 and Cumulative Updates as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
 * SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
 
 ::: moniker-end
 
-::: moniker range=">sc-om-1807"
+::: moniker range="sc-om-2019"
 
-Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr.md).
+Before upgrading SQL Server, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md).
+
+::: moniker-end
+
+::: moniker range="sc-om-1807"
+
+Before upgrading to SQL Server 2017, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md).
 
 ::: moniker-end
 
@@ -93,9 +109,10 @@ For more information, see [Hardware and Software Requirements for Installing SQL
 
 ## SQL Server collation setting
 
-The following SQL Server and Windows collations are supported by System Center Operations Manager.  
+The following SQL Server and Windows collations are supported by System Center Operations Manager.
+
 >[!NOTE]
-> To avoid any compatibility issues in comparing or copying operations, we recommend you use the same collation for the SQL and Operations Manager DB.
+> To avoid any compatibility issues in comparing or copying operations, we recommend you use the same collation for the SQL and Operations Manager DB.  
 
 ### SQL Server collation
 - SQL_Latin1_General_CP1_CI_AS
