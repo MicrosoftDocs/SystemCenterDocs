@@ -54,7 +54,7 @@ Getting started with monitoring Java applications requires these four general st
 
 ### Import the management pack for Java Application Performance Monitoring  
 
-1.  Now that the Management Pack for Java Enterprise Edition is imported and configured and BeanSpy deployed, import the Management Pack for Java Application Performance Monitoring. Download the management pack from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=44231).  
+1.  Now that the Management Pack for Java Enterprise Edition is imported and configured and BeanSpy deployed, import the Management Pack for Java Application Performance Monitoring. Download the management pack from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=39709).  
 
 2.  The Management Pack for Java Application Performance Monitoring (JavaAPMManagementPack.msi) contains these files:  
 
