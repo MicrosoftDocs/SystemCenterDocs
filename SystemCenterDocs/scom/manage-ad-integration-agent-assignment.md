@@ -187,18 +187,15 @@ You can use the following procedure to change the Active Directory integration s
 ## Integrate Active Directory with untrusted domain
 
 1. Create a user in an untrusted domain with permissions to read, write and delete objects in AD.  
-2. Assign the user with *logon as a service* privilege on the management server.  
-To do this, go to **Start** > **Local Security Policy** > **Local Policies** > **User Rights Assignment** > **Logon as a Service** > **Add user**, and then add the user created in step 1. [Learn more about *logon as a service*](enable-service-logon.md).
-3. Create a security group (domain local or global). Add the user (created in step 1) to this group.
-4. Run *MOMAdAdmin.exe* on the untrusted domain with the following parameters:
+2. Create a security group (domain local or global). Add the user (created in step 1) to this group.
+3. Run *MOMAdAdmin.exe* on the untrusted domain with the following parameters:
     \<path\>\MOMADAdmin.exe \<ManagementGroupName\> \<MOMAdminSecurityGroup\> \<RunAsAccount\> \<Domain\>
-5. Create a new run as account in Operations Manager, use the account created in step 1.
+4. Create a new run as account in Operations Manager, use the account created in step 1.
 Make sure that the domain name is provided with FQDN, not NetBIOS name (For Ex: CONTOSO.COM\ADUser).
-6. Distribute the account to the AD Assignment Resource Pool.
-7. Create a new run as profile in the default management pack. If this profile is created in any other management pack, ensure to seal the management pack so this can be referenced to other management pack.  
-8. Add the newly created run as account to this profile and target it to the AD Assignment Resource Pool
-9. Create the Active Directory integration rules in Operations Manager.
-
+5. Distribute the account to the AD Assignment Resource Pool.
+6. Create a new run as profile in the default management pack. If this profile is created in any other management pack, ensure to seal the management pack so this can be referenced to other management pack.  
+7. Add the newly created run as account to this profile and target it to the AD Assignment Resource Pool
+8. Create the Active Directory integration rules in Operations Manager.
 
 ## Next steps
 
