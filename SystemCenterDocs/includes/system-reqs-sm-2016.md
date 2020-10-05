@@ -5,7 +5,7 @@ description: include file to describe the system requirements for Service Manage
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 04/23/2020
+ms.date: 10/05/2020
 ms.technology: service-manager
 ms.topic: include
 ms.assetid: ff4c7819-632e-486f-a329-041b7fa6a478
@@ -70,12 +70,12 @@ The following versions of Windows client operating system are supported for the 
 
 The following versions of .Net are supported for Service Manager.
 
-|System Center 2016 component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|.NET 4.7|
-|-----------------------------------|----------------|----------|------------|--------------|--------------|------------|-------|
-|**Service Manager** Management Server|&#8226;| | |&#8226;| |&#8226; |&#8226; |
-|**Service Manager** Data Warehouse Management Server|&#8226;| | |&#8226;| | &#8226;|&#8226; |
-|**Service Manager** console|&#8226;| | |&#8226;| |&#8226; |&#8226; |
-|**Service Manager** Self\-Service Portal|&#8226;| | |&#8226;| | &#8226; |&#8226; |
+|System Center 2016 component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|.NET 4.6.1|.NET 4.7|
+|-----------------------------------|----------------|----------|------------|--------------|--------------|------------|-------|------|
+|**Service Manager** Management Server|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |
+|**Service Manager** Data Warehouse Management Server|&#8226;| | |&#8226;| | &#8226;|&#8226;|&#8226; |
+|**Service Manager** console|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |
+|**Service Manager** Self\-Service Portal|&#8226;| | |&#8226;| | &#8226; |&#8226;|&#8226; |
 
 ## PowerShell Versions supported
 
