@@ -4,7 +4,7 @@ description: This article describes how to configure and use Active Directory in
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/23/2020
+ms.date: 10/05/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -188,7 +188,7 @@ You can use the following procedure to change the Active Directory integration s
 
 1. Create a user in an untrusted domain with permissions to read, write and delete objects in AD.  
 2. Assign the user with *logon as a service* privilege on the management server.  
-To do this, go to **Start** > **Local Security Policy** > **Local Policies** > **User Rights Assignment** > **Logon as a Service** > **Add user**, and then add the user created in step 1. [Learn more about logon as a service](enable-service-logon.md).
+To do this, go to **Start** > **Local Security Policy** > **Local Policies** > **User Rights Assignment** > **Logon as a Service** > **Add user**, and then add the user created in step 1. [Learn more about *logon as a service*](enable-service-logon.md).
 3. Create a security group (domain local or global). Add the user (created in step 1) to this group.
 4. Run *MOMAdAdmin.exe* on the untrusted domain with the following parameters:
     \<path\>\MOMADAdmin.exe \<ManagementGroupName\> \<MOMAdminSecurityGroup\> \<RunAsAccount\> \<Domain\>
