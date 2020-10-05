@@ -78,9 +78,9 @@ The following versions of Windows Server operating system are supported for the 
 |:--------------------------------------------------------------------|:-----------------------------------------|:-------------------------|:-----------------------------------------|:--------------------------------|
 | **Operations Manager** Management Server                            | yes                                      | yes                      | yes                                      | yes                             |
 | **Operations Manager** Gateway Server                               | yes                                      | yes                      | yes                                      | yes                             |
-| **Operations Manager** Web Console                                  | yes                                      |                          |                                      |                                 |
+| **Operations Manager** Web Console                                  | yes                                      |                          | yes                                      |                                 |
 | **Operations Manager** ACS Collector                                | yes                                      |                          | yes                                      |                                 |
-| **Operations Manager** Operations console                           | yes                                      | yes (with FOD)           | yes                                      | yes (with FOD)                  |
+| **Operations Manager** Operations console                           | yes                                      | yes (with FOD)           | yes                                      |                 |
 | **Operations Manager** Operational, Data Warehouse,<br>ACS database | yes                                      | yes                      | yes                                      | yes                             |
 | **Operations Manager** Reporting server                             | yes                                      |                          | yes                                      |                                 |
 
