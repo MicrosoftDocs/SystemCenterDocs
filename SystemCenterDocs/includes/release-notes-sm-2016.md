@@ -217,8 +217,3 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 ## SM authoring tool console crashes while creating workflows
 This issue is fixed.
-
-##  Delays in read/update operations in SDK clients
-**Description:** You might observe delays in read/write operations in SDK clients.
-
-**Workaround:** Use old Cardinality estimation. Set the database compatibility level to a version less than 120.
