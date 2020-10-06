@@ -12,10 +12,29 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## System requirements
+::: moniker range="sc-om-2016"
 
-This article describes general performance and scalability guidance for System Center - Operations Manager. It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
+## System requirements for System Center 2016 - Operations Manager
 
+This article describes general performance and scalability guidance for System Center 2016 - Operations Manager. It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
+
+::: moniker-end
+
+::: moniker range="sc-om-1801"
+
+## System requirements for System Center 1801 - Operations Manager
+
+This article describes general performance and scalability guidance for System Center 1801 - Operations Manager. It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
+
+::: moniker-end
+
+::: moniker range="sc-om-1807"
+
+## System requirements for System Center 1807 - Operations Manager
+
+This article describes general performance and scalability guidance for System Center 1807 - Operations Manager. It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
+
+::: moniker-end
 
 
 ## Capacity limits for Operations Manager
