@@ -4,7 +4,7 @@ description: This article describes how to configure and use Active Directory in
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/23/2020
+ms.date: 10/05/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -191,12 +191,11 @@ You can use the following procedure to change the Active Directory integration s
 3. Run *MOMAdAdmin.exe* on the untrusted domain with the following parameters:
     \<path\>\MOMADAdmin.exe \<ManagementGroupName\> \<MOMAdminSecurityGroup\> \<RunAsAccount\> \<Domain\>
 4. Create a new run as account in Operations Manager, use the account created in step 1.
-    Make sure that the domain name is provided with FQDN, not NetBIOS name (For Ex: CONTOSO.COM\ADUser).
-5.  Distribute the account to the AD Assignment Resource Pool.
-5.  Create a new run as profile in the default management pack. If this profile is created in any other management pack, ensure to seal the management pack so this can be referenced to other management pack.  
-6.  Add the newly created run as account to this profile and target it to the AD Assignment Resource Pool
-7.  Create the Active Directory integration rules in Operations Manager.
-
+Make sure that the domain name is provided with FQDN, not NetBIOS name (For Ex: CONTOSO.COM\ADUser).
+5. Distribute the account to the AD Assignment Resource Pool.
+6. Create a new run as profile in the default management pack. If this profile is created in any other management pack, ensure to seal the management pack so this can be referenced to other management pack.  
+7. Add the newly created run as account to this profile and target it to the AD Assignment Resource Pool
+8. Create the Active Directory integration rules in Operations Manager.
 
 ## Next steps
 
