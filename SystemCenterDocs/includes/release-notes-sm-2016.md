@@ -220,4 +220,5 @@ This issue is fixed.
 
 ##  Delays in read/update operations in SDK clients
 **Description:** You might observe delays in read/write operations in SDK clients.
+
 **Workaround:** Use old Cardinality estimation. Set the database compatibility level to a version less than 120.
