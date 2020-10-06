@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 09/24/2020
+ms.date: 10/05/2020
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -186,12 +186,12 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 
 The following versions of .NET are supported for Service Manager.
 
-|System Center component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|.NET 4.7|
-|-----------------------------------|----------------|----------|------------|--------------|--------------|------------|------|
-|**Service Manager** Management Server|&#8226;| | |&#8226;| |&#8226; |&#8226; |
-|**Service Manager** Data Warehouse Management Server|&#8226;| | |&#8226;| |&#8226; |&#8226; |
-|**Service Manager** console|&#8226;| | |&#8226;| |&#8226; |&#8226; |
-|**Service Manager** Self\-Service Portal|&#8226;| | |&#8226;| | &#8226; |&#8226; |
+|System Center component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|.NET 4.6.1|.NET 4.7|
+|-----------------------------------|----------------|----------|------------|--------------|--------------|------------|------|----|
+|**Service Manager** Management Server|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |
+|**Service Manager** Data Warehouse Management Server|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |
+|**Service Manager** console|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |
+|**Service Manager** Self\-Service Portal|&#8226;| | |&#8226;| | &#8226; |&#8226;|&#8226; |
 
 ## PowerShell Versions supported
 
