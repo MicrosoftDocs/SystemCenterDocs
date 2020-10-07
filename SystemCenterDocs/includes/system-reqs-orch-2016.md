@@ -60,7 +60,7 @@ We recommend the following software for a full installation of Orchestrator on a
 * Join the computer to an Active Directory domain.
 
 > [!NOTE]
-> On first use of the Orchestration console, you are prompted to install Microsoft Silverlight 4 on the computer if it is not already installed.
+> On first use of the Orchestration console, you are prompted to install Microsoft Silverlight on the computer, if it is not already installed. Install  Silverlight 5.0.
 
 ## SQL Server
 
