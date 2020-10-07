@@ -7,7 +7,7 @@ ms.author: banders
 ms.prod:  system-center-threshold
 ms.technology: service-manager
 keywords:
-ms.date: 05/08/2018
+ms.date: 10/20/2020
 title:  include file
 ms.assetid: 59dcba5c-cc45-4611-9a95-9e6d534bd562
 ---
@@ -37,8 +37,11 @@ The following sections detail the release notes for SM 2016 and include the know
 - Status in System Center 2016: Removed.
 - Replacement: None.
 
-## SQL Server 2014 Cardinality Estimation might affect the performance of SM
-**Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version, you may experience slow performance.
+## SQL Server 2014 Cardinality Estimation might affect the performance of SM and SDK clients
+**Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version, you might experience:
+
+-	Slow performance of SM
+-	Delays in read/update operations in SDK clients.
 
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. For more information on changing the Cardinality Estimator, see [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](https://blogs.msdn.microsoft.com/saponsqlserver/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation/).
 
