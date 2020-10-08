@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 10/05/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
