@@ -4,7 +4,7 @@ description: This article describes how to configure and use Active Directory in
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 10/05/2020
+ms.date: 10/07/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -196,6 +196,9 @@ Make sure that the domain name is provided with FQDN, not NetBIOS name (For Ex: 
 6. Create a new run as profile in the default management pack. If this profile is created in any other management pack, ensure to seal the management pack so this can be referenced to other management pack.  
 7. Add the newly created run as account to this profile and target it to the AD Assignment Resource Pool
 8. Create the Active Directory integration rules in Operations Manager.
+
+>[!NOTE]
+> After the integration with untrusted domain, each management server displays the warning message *Security database on the server does not have a computer account for this workstation trust relationship* indicating that the validation of the run as account used by the AD assignment failed. Event ID 7000 or 1105 are generated in the Operations Manager Event log. However, this alert does not have any impact on the AD assignment in untrusted domain. 
 
 ## Next steps
 
