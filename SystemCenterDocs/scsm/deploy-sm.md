@@ -36,9 +36,9 @@ You can set the default language for a new SQL login account or change the defau
 
 **Use these steps**:
 
-1. Open SQL Management Studio with elevated privileges and connect to SQL server where you want to create Service Manager or Data Warehouse databases.
-2. Go to **Security** folder
-3. Right-click **Logins** folder and then select **New Login** as shown below.
+1. Open *SQL Management Studio* with elevated privileges and connect to SQL server, where you want to create Service Manager or Data Warehouse databases.
+2. Go to **Security** folder.
+3. Right-click **Logins** folder, and then select **New Login** as shown below:
 
     ![New login account](./media/deploy-sm/new-login.png)
 
@@ -47,7 +47,7 @@ You can set the default language for a new SQL login account or change the defau
     ![Default language for new login account](./media/deploy-sm/properties.png)
 
 
-5. To change the default language for an existing login account, from the **Logins folder**, double-click the account, and then select **Properties** to edit  the **Default language** as English.
+5. To change the default language for an existing login account, from the **Logins folder**, select and double-click the account, and then select **Properties** to edit  the **Default language** as English.
 
     ![change current language](./media/deploy-sm/change-existing-language.png)
 
