@@ -43,11 +43,15 @@ You can set the default language for a new SQL login account or change the defau
     ![New login account](./media/deploy-sm/new-login.png)
 
 4. On the properties page, from the  **Default language** drop-down list, select **English**.
-5. Click **OK**.
 
     ![Default language for new login account](./media/deploy-sm/properties.png)
 
-6. To change the default language for an existing login account, from the **Logins folder**, select and double-click the account for which you want to change the default language. Select **Properties** and repeat step 4 and 5.  
+5. Click **OK**.
+
+6. To change the default language for an existing login account:
+    - Repeat steps 1 and 2.
+    - From the **Logins** folder, select and double-click the account for which you want to change the default language. 
+    - Select **Properties** and repeat step 4 and 5.  
 
     ![change current language](./media/deploy-sm/change-existing-language.png)
 
