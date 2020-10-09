@@ -7,7 +7,7 @@ author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 10/09/2020
 ms.technology: service-manager
 ms.assetid: 556f240e-d032-406a-ba10-2404fb591d04
 ---
@@ -191,6 +191,14 @@ If the account that is used for the SQL Server Reporting Services account change
 3.  In the **Connect using** area, click **Credentials stored securely in the report server**, type the current credentials in the **User name** and **Password** boxes, and then click **Apply**.
 4.  In the browser tool bar, click the **Back** button to return to the **Service Manager** page.
 5.  Repeat steps 2 and 3 for the remaining Service Manager data sources.
+
+## Change the default language for the SQL login accounts
+
+We recommend English as the default language for the SQL users' login accounts.
+
+As date format is based on the language, if the language of SQL user login accounts is not English, then, few data warehouse jobs, especially the jobs that use SQL *SET_DateFormat* function, fail. These jobs do not push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse..
+
+You can set the default language as English for a new SQL login account or change the default language for an existing account. [Learn more](deploy-sm.md#manage-default-language-for-sql-login-accounts).
 
 ## Next steps
 
