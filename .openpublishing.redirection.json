@@ -870,10 +870,6 @@
      "redirect_url" : "/system-center/scom/system-requirements"
 },
 {
-     "source_path" : "SystemCenterDocs/scom/upgrade-sqlserver-2019-opsmgr.md",
-     "redirect_url" : "/system-center/scom/system-requirements"
-},
-{
      "source_path" : "SystemCenterDocs/scom/plan-supported-crossplat-os-1807.md",
      "redirect_url" : "/system-center/scom/plan-supported-crossplat-os"
 },
