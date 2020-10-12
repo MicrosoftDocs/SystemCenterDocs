@@ -7,7 +7,7 @@ author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center
 keywords:  
-ms.date: 09/24/2020
+ms.date: 10/12/2020
 ms.technology:  service-manager
 ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ---
@@ -18,6 +18,14 @@ See the following sections for information about the new features/features updat
 ## Support to SQL Server 2017
 SM 2019 supports new installation of SQL Server 2017.
 [Learn more](../scsm/system-requirements.md).
+
+### Support for SQL Server 2019 CU8 and later
+
+Service Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+
+>[!NOTE]
+> - Service Manager 2019 supports SQL 2019 with CU8 or later. However, it does not support SQL 2019 RTM.
+> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 
 ##	Improvement in Active Directory Connector
@@ -50,3 +58,17 @@ You can upgrade SQL server 2016 to SQL 2017.
 SM supports an enhanced experience for evaluating Service Manager and activating the product for retail use.  
 
 The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. With Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your SM. [Learn more](../scsm/sm-license.md).
+
+## New features in Service Manager UR2
+
+The following new feature is supported with Service Manager Update Rollup 2.
+
+### Support for SQL 2019 CU8 or later
+
+Service  Manager UR2 supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+
+This support is applicable for Service Manager 2019.
+
+>[!NOTE]
+> - Service Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU8 or later.
+> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.

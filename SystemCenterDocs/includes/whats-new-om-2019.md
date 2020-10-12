@@ -5,7 +5,7 @@ description: This include file describes the new features in Operations Manager 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 09/24/2020
+ms.date: 10/12/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -129,6 +129,15 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 - SQL Server 2016 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20)
 
 For information about SQL Server design considerations, see [related documentation](https://docs.microsoft.com/system-center/scom/plan-sqlserver-design?view=sc-om-2019).
+
+### Support for SQL Server 2019 CU8 and later
+
+Operations Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+
+
+>[!NOTE]
+> - Operations Manager 2019 supports SQL 2019 with CU7 or later. However, it does not support SQL 2019 RTM.
+> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 
 ### In-place upgrade
