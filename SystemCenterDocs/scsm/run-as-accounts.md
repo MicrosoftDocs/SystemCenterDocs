@@ -196,7 +196,7 @@ If the account that is used for the SQL Server Reporting Services account change
 
 We recommend English as the default language for the SQL users' login accounts.
 
-As date format is based on the language, if the language of SQL user login accounts is not English, then, few data warehouse jobs, especially the jobs that use SQL *SET_DateFormat* function, fail. These jobs do not push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse..
+As date format is based on the language, if the language of SQL user login accounts is not English, then, a few data warehouse jobs, especially the jobs that use SQL *SET_DateFormat* function, fail. These jobs do not push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse..
 
 You can set the default language as English for a new SQL login account or change the default language for an existing account. [Learn more](deploy-sm.md#manage-default-language-for-sql-login-accounts).
 

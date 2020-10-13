@@ -30,7 +30,7 @@ The following sections describe considerations you should read before you deploy
 ## Manage default language for SQL login accounts
 We recommend English as the default language for the SQL users login accounts.
 
-As date format is based on the language, if the language of SQL user login accounts is not English, then, few data Warehouse jobs, specially the jobs that use SQL *SET_DateFormat* function, fail. These jobs do  not push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse.
+As date format is based on the language, if the language of SQL user login accounts is not English, then, a few data Warehouse jobs, specially the jobs that use SQL *SET_DateFormat* function, fail. These jobs do  not push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse.
 
 You can set the default language for a new SQL login account or change the default language for an existing account. See the following sections for the steps to use.
 
@@ -49,9 +49,9 @@ You can set the default language for a new SQL login account or change the defau
 5. Click **OK**.
 
 6. To change the default language for an existing login account:
-    - Repeat steps 1 and 2.
-    - From the **Logins** folder, select and double-click the account for which you want to change the default language.
-    - Select **Properties** and repeat step 4 and 5.  
+    1. Repeat steps 1 and 2.
+    2. From the **Logins** folder, select and double-click the account for which you want to change the default language.
+    3. Select **Properties** and repeat step 4 and 5.  
 
     ![change current language](./media/deploy-sm/change-existing-language.png)
 
