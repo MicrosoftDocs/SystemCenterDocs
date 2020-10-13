@@ -136,7 +136,7 @@ Operations Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or la
 
 
 >[!NOTE]
-> - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, does not support SQL 2019 RTM.
+> - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 
