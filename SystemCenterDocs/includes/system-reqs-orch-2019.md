@@ -4,7 +4,7 @@ title: include file
 description: include file to provide system requirements for Orchestrator 2019, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: v-jysur
 manager: vvithal
-ms.date: 03/14/2019
+ms.date: 10/13/2020
 ms.custom: na
 author: JYOTHIRMAISURI
 ms.prod: system center
@@ -65,17 +65,18 @@ The following software is required for a full installation of Orchestrator on a 
 ## SQL Server
 
 > [!NOTE]
-> - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
+> - For the supported versions of SQL, use the service packs/cumulative updates that are currently in support by Microsoft.
 > -	SQL *Always ON*  is supported,  except in the cases, where configuration is done on multi subnets.
 
 **SQL version** | **Supported**
 --- | ---
+**SQL Server 2019** | Y
 **SQL Server 2017** | Y
 **SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | Y
 
-## .Net requirements
+## .NET requirements
 
-All Orchestrator server roles require .Net 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .Net 4.5 with WCF Activation.
+All Orchestrator server roles require .NET 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .Net 4.5 with WCF Activation.
 
 You can download .Net 3.5 SP1 [from the download center](https://www.microsoft.com/en-in/download/details.aspx?id=22).  
 
