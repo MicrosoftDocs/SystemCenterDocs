@@ -5,7 +5,7 @@ manager: carmonm
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 01/23/2018
+ms.date: 10/13/2020
 ms.technology: service-manager
 ms.topic: article
 ---
@@ -26,6 +26,35 @@ The sections in this article help you deploy System Center - Service Manager in 
 The sections in this article also describe how to find and read the Setup log if you encounter issues when you deploy Service Manager. And, finally, information about backing up Service Manager management server encryption keys is included. After you run Setup, the Encryption Key Backup and Restore Wizard start automatically.  
 
 The following sections describe considerations you should read before you deploy Service Manager.
+
+## Manage default language for SQL login accounts
+We recommend English as the default language for the SQL users login accounts.
+
+As date format is based on the language, if the language of SQL user login accounts is not English, then, a few data Warehouse jobs, specially the jobs that use SQL *SET_DateFormat* function, fail. These jobs do  not push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse.
+
+You can set the default language for a new SQL login account or change the default language for an existing account. See the following sections for the steps to use.
+
+**Use these steps**:
+
+1. Open *SQL Management Studio* with elevated privileges and connect to SQL server, where you want to create Service Manager or Data Warehouse databases.
+2. Go to **Security** folder.
+3. Right-click **Logins** folder, and then select **New Login** as shown below:
+
+    ![New login account](./media/deploy-sm/new-login.png)
+
+4. On the properties page, from the  **Default language** drop-down list, select **English**.
+
+    ![Default language for new login account](./media/deploy-sm/properties.png)
+
+5. Click **OK**.
+
+6. To change the default language for an existing login account:
+    1. Repeat steps 1 and 2.
+    2. From the **Logins** folder, select and double-click the account for which you want to change the default language.
+    3. Select **Properties** and repeat step 4 and 5.  
+
+    ![change current language](./media/deploy-sm/change-existing-language.png)
+
 
 ## Avoid using Turkish language collations with Service Manager
 
