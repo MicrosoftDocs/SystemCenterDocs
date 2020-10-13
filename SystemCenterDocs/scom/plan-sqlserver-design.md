@@ -53,7 +53,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker range="sc-om-2019"
 
-Before upgrading SQL Server, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md), and [upgrade information for 2019](upgrade-sqlserver-2019-opsmgr.md).
+Before upgrading SQL Server, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md), and [upgrade information for 2019](upgrade-sqlserver-2019-operations-manager.md).
 
 ::: moniker-end
 
