@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 10/13/2020
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -27,7 +27,15 @@ System Center - Service Manager provides for many deployment scenarios. However,
 
  You will also specify the server that hosts SQL&nbsp;Server Reporting Services \(SSRS\). Do not attempt to use the same SSRS instance for both Operations Manager and Service Manager.  
 
- This deployment guide describes the following three deployment scenarios: installing Service Manager on one computer, installing Service Manager on two computers, and installing Service Manager on four computers.  
+ >[!NOTE]
+ > We recommend English as the default language for the SQL users' login accounts.
+ >
+ > As date format is based on the language, if the language of SQL user login accounts is not English, then, a few data warehouse jobs, especially the jobs that use SQL *SET_DateFormat* function, fail. These jobs do not push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse.
+>
+>You can set the default language as English for a new SQL login account or change the default language for an existing account. [Learn more](deploy-sm.md#manage-default-language-for-sql-login-accounts).
+
+
+ The deployment guide describes the following three deployment scenarios: [installing Service Manager on one computer](install-one-computer.md), [installing Service Manager on two computers](install-two-computers.md), and [installing Service Manager on four computers](install-four-computers.md).  
 
 > [!NOTE]  
 >  The collation settings for Microsoft SQL&nbsp;Server must be the same for the computers that host the Service Manager database, the computers that host the data warehouse databases, and the computers that host the Reporting Services database. If you intend to import data from Operations Manager, then the database collations must match between Service Manager and Operations Manager.  
@@ -37,6 +45,8 @@ System Center - Service Manager provides for many deployment scenarios. However,
  Performing an upgrade from technical preview versions of Service Manager is not supported. Furthermore, for this release, Service Manager setup installs files in predefined folders that might already exist if you have a previous version of Service Manager installed.  
 
  The user installing Service Manager has access to the Service Connection Point \(SCP\) object of Service Manager in the Active Directory. This SCP stores the information about the service. Client applications, such as Service Manager, can connect to services using the SCP. For more information about service connection points, see [Publishing Services in Active Directory](https://technet.microsoft.com/library/cc961733.aspx).  
+
+
 
 ## Next steps
 
