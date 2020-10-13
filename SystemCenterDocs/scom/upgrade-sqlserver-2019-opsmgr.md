@@ -15,7 +15,7 @@ ms.topic: conceptual
 
 # How to upgrade Operations Manager databases to SQL Server 2019
 
-Operations Manager 2019 supports SQL 2019 with CU8 or later. However, does not support SQL 2019 RTM.
+Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
 
 Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager to SQL Server 2019 (with CU8 or later).  Before proceeding, you should back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
 
