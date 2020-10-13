@@ -53,7 +53,7 @@ For detailed information about the requirements for Service Manager components, 
 
 
 >[!NOTE]
-> - Service Manager 2019 supports SQL 2019 with CU8 or later. However, does not support SQL 2019 RTM.
+> - Service Manager 2019 supports SQL 2019 with CU8 or later; however, does not support SQL 2019 RTM.
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
