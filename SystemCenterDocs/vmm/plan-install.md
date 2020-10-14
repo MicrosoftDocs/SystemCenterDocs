@@ -136,12 +136,12 @@ Ensure the following before you prepare an account:
 - The computer on which you install the VMM management server must be a member of an Active Directory domain. In your environment you might have user accounts in one forest and your VMM servers and host in another. In this environment, you must establish a two-way trust between the two cross-forest domains. One-way trusts between cross-forest domains are not supported in VMM.
 
     >[!NOTE]
-> After the agent’s installation, local computer accounts get automatically added to the local Administration group. This is not a mandatory requirement; If  needed, you can manually remove the local accounts from the Administration group.
+    > After the agent’s installation, local computer accounts get automatically added to the local Administration group. This is not a mandatory requirement; If  needed, you can manually remove the local accounts from the Administration group.
 
 - To create and use gMSA, review the article on gMSA and create the gMSA as per the guidance available.  Make sure that the servers on which the VMM Management service would be installed have permissions to retrieve the password of gMSA account.  
 
     > [!NOTE]
-> You do not need to specify the ‘Service Principle Name (SPN)’ when creating  gMSA. VMM service sets the appropriate SPN for gMSA.
+    > You do not need to specify the ‘Service Principle Name (SPN)’ when creating  gMSA. VMM service sets the appropriate SPN for gMSA.
 
 
 ## Distributed key management
