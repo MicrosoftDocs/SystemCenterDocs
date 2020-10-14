@@ -7,6 +7,7 @@
 ## [Service Manager components](sm-parts.md)
 ## [Supported configurations](supported-configs.md)
 ## [System requirements - Service Manager ](system-requirements.md)
+## [SQL Server requirements - Service Manager](sm-sql-reqs.md)
 ## [Release notes - Service Manager ](release-notes-sm.md)
 ## [Enable service log on](enable-service-log-on-sm.md)
 ## [Manage telemetry settings](manage-telemetry.md)

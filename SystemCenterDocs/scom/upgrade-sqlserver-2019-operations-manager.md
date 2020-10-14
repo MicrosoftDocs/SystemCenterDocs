@@ -27,7 +27,7 @@ Use the steps in this article to perform an in-place upgrade of the databases su
 
 Before performing these upgrade steps, review the [SQL Server 2019 upgrade information](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-ver15).
 
-## Stop the Operations Manager services.
+## Stop the Operations Manager services
 On all the management servers in the management group, stop the Operations Manager services:
 
 * System Center Data Access
