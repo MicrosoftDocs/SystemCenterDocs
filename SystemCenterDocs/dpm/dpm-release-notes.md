@@ -306,7 +306,7 @@ The following issues exist in the 1801 release.
 
 **Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup user interface.
 
-## Remove-DPMDiskStorage cmdlet may delete volumes with active or inactive backups
+### Remove-DPMDiskStorage cmdlet may delete volumes with active or inactive backups
 
 **Description**: If the volume's datasources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the datasources can be removed too.
 
