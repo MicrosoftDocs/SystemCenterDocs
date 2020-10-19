@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 08/04/2020
+ms.date: 10/20/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -153,9 +153,26 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 
 **Workaround**: Use *Get-DPMProtectionGroup* PowerShell command to view the Protection Group details.
 
+::: moniker-end
+
+
+::: moniker range="sc-dpm-2019"
+
 ### Latest report files are not automatically updated
 
 **Description**: With DPM 2019 UR2, issue with DPM report formatting and volume to volume migration reporting is fixed. However, the existing  report files are not automatically replaced with the updated files.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2016"
+
+### Latest report files are not automatically updated
+
+**Description**: With DPM 2016 UR10, issue with DPM report formatting and volume to volume migration reporting is fixed. However, the existing  report files are not automatically replaced with the updated files.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2016"||sc-dpm-2019"
 
 **Workaround**:
 Follow these steps to replace the existing report files:
