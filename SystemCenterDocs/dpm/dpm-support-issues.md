@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 08/25/2020
+ms.date: 10/19/2020
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -157,7 +157,7 @@ Both of these scenarios are unsupported. You can only select one of the followin
 **Workaround**: None. This isn't supported due to a limitation with Windows dynamic disks.
 
 ### Data on CSVs
-**Issue**: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protecting other workloads hosted on CSVs isn't supported.
+**Issue**: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protecting other workloads hosted on CSVs isn't supported. Protection of SQL server database stored on CSV is supported with [DPM 2019 UR2](what-s-new-in-dpm.md) and later.
 
 **Workaround**: None.
 
