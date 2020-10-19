@@ -409,6 +409,8 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 ## System Center DPM 2016 Release Notes
 
+The following sections summarize the release notes for DPM 2016 and include the applicable known issues and workarounds.
+
 ### Silent Installation of System Center DPM with SQL Server 2008
 
 **Description**: DPM 2016 RTM won't silently install on SQL Server 2008.
