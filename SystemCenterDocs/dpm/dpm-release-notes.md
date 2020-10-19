@@ -162,17 +162,53 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 
 **Description**: With DPM 2019 UR2, issue with DPM report formatting and volume to volume migration reporting is fixed. However, the existing  report files are not automatically replaced with the updated files.
 
+**Workaround**:
+Follow these steps to replace the existing report files:
+
+#### Replace the ReportSRV10.dll
+1. Stop the SQL Server Reporting service
+2.	Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL  files in the following folders:
+    - For SQL Server 2017 and later -  C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin
+    - For SQL Server 2016 -  C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin
+3.	Start the SQL Server Reporting service.
+
+#### Replace the RDL files
+
+1.	On DPM, open the SQL Reporting Services portal URL.
+2.	On the portal, the DPMReports folder is present in the format  **DPMReports_\<GUID>**.
+
+    ![Reports folder](media/release-notes/reports-folder.png)
+
+     >[!NOTE]
+     > You can see only one folder with this naming convention. If DPM is upgraded from a previous version, the previous folder might still exist, but you can’t open it.
+
+3.	Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
+
+    ![List of individual report files](media/release-notes/individual-report-files.png)
+
+4.	Select the report files that don't end with *Report*, right-click   **Option**, and then select **Manage**.
+
+    ![Manage report files](media/release-notes/manage-report-files.png)
+
+5.	In the new page, select **Replace** to replace with the latest report files.
+
+    ![Replace report files](media/release-notes/replace-report-files.png)
+
+    The latest report files are available in the DPM installation path:
+
+    For example: C:\Program Files\Microsoft System Center\DPM\DPM\bin\DpmReports
+
+6.	After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
+7.	Restart DPM and use the report files.
+
 ::: moniker-end
+
 
 ::: moniker range="sc-dpm-2016"
 
 ### Latest report files are not automatically updated
 
 **Description**: With DPM 2016 UR10, issue with DPM report formatting and volume to volume migration reporting is fixed. However, the existing  report files are not automatically replaced with the updated files.
-
-::: moniker-end
-
-::: moniker range="sc-dpm-2016"||sc-dpm-2019"
 
 **Workaround**:
 Follow these steps to replace the existing report files:
