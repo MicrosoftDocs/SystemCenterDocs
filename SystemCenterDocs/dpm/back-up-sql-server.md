@@ -30,6 +30,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
    > [!NOTE]
    > DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV).
+   >
    > Protection of [SQL server failover cluster instance with Storage Spaces Direct on Azure](https://docs.microsoft.com/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-storage-spaces-direct-manually-configure?tabs=windows2012), and [SQL server failover cluster instance with Azure shared disks](https://docs.microsoft.com/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?tabs=windows2012) is supported with this feature. The DPM server must be deployed in the Azure virtual machine to protect the SQL FCI instance, deployed on the Azure VMs.
 
 ::: moniker-end

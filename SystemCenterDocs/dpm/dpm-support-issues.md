@@ -157,7 +157,9 @@ Both of these scenarios are unsupported. You can only select one of the followin
 **Workaround**: None. This isn't supported due to a limitation with Windows dynamic disks.
 
 ### Data on CSVs
-**Issue**: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protecting other workloads hosted on CSVs isn't supported. Protection of SQL server database stored on CSV is supported with [DPM 2019 UR2](what-s-new-in-dpm.md) and later.
+**Issue**: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protecting other workloads hosted on CSVs isn't supported.
+
+Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2](what-s-new-in-dpm.md) and later.
 
 **Workaround**: None.
 
