@@ -54,12 +54,13 @@ The following table lists the build versions for Data Protection Manager 2016.
 | 5.0.158.0 | n/a  | System Center 2016 Data Protection Manager RTM  |
 | 5.0.247.0  | [3190600](https://support.microsoft.com/kb/3190600) | Update Rollup 1 for System Center 2016 Data Protection Manager |
 | 5.0.322.0 | [3209593](https://support.microsoft.com/help/3209593) | Update Rollup 2 for System Center 2016 Data Protection Manager  |
-|  5.0.342.0 | [4043316](https://support.microsoft.com/help/4043316)[ ](https://support.microsoft.com/help/4043316) | Update Rollup 4 for System Center 2016 Data Protection Manager |
+|  5.0.342.0 | [4043316](https://support.microsoft.com/help/4043316) | Update Rollup 4 for System Center 2016 Data Protection Manager |
 | 5.0.361.0 | [4090835](https://support.microsoft.com/help/4090835/update-rollup-5-for-system-center-2016-data-protection-manager) | Update Rollup 5 for System Center 2016 Data Protection Manager  |
 | 5.0.375.0   | [4456327](https://support.microsoft.com/help/4456327/update-rollup-6-for-system-center-2016-data-protection-manager) | Update Rollup 6 for System Center 2016 Data Protection Manager  |
 | 5.0.409.0   | [4494084](https://support.microsoft.com/en-us/help/4494084/update-rollup-7-for-system-center-2016-data-protection-manager) | Update Rollup 7 for System Center 2016 Data Protection Manager  |
 | 5.0.457.0   | [4511102](https://support.microsoft.com/en-us/help/4511102/update-rollup-8-for-system-center-2016-data-protection-manager) | Update Rollup 8 for System Center 2016 Data Protection Manager  |
 | 5.0.525.0   | [4534063](https://support.microsoft.com/en-us/help/4534063/update-rollup-9-for-system-center-2016-data-protection-manager) | Update Rollup 9 for System Center 2016 Data Protection Manager  |
+| 5.0.622.0   | [4578608](https://support.microsoft.com/help/4578608/update-rollup-10-for-system-center-2016-data-protection-manager) | Update Rollup 10 for System Center 2016 Data Protection Manager  |
 
 ::: moniker-end
 
