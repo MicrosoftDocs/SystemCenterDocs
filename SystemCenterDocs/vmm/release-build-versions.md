@@ -56,7 +56,7 @@ The following table lists the build versions for Virtual Machine Manager 2016.
 | 4.0.2548.0	  | [4496920](https://support.microsoft.com/help/4496920) | Update Rollup 7 for System Center 2016 Virtual Machine Manager  |
 | 4.0.2589.0  | [4518885](https://support.microsoft.com/help/4518885) | Update Rollup 8 for System Center 2016 Virtual Machine Manager  |
 | 4.0.2711.0  | [4549434](https://support.microsoft.com/help/4549434) | Update Rollup 9 for System Center 2016 Virtual Machine Manager  |
-
+| 4.0.2775.0  | [4581601](https://support.microsoft.com/help/4581601) | Update Rollup 10 for System Center 2016 Virtual Machine Manager  |
 ::: moniker-end
 
 ::: moniker range="sc-vmm-1801"
