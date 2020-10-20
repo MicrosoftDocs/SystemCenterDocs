@@ -525,10 +525,11 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 Follow these steps to replace the existing report files:
 
 #### Replace the ReportSRV10.dll
-1. Stop the SQL Server Reporting service
-2.	Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL  files in the following folders:
-    - For SQL Server 2017 and later -  C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin
-    - For SQL Server 2016 -  C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin
+1.  Stop the SQL Server Reporting service
+2.  Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL files in the following folder:
+
+*C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin*
+
 3.	Start the SQL Server Reporting service.
 
 #### Replace the RDL files
