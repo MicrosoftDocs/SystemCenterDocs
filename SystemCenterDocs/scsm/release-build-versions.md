@@ -53,6 +53,7 @@ The following table lists the build versions for Service Manager 2016.
 | 7.5.7487.161 | [4492399](https://support.microsoft.com/help/4492399) | Update Rollup 7 for System Center 2016 Service Manager  |
 | 7.5.7487.176 | [4492399](https://support.microsoft.com/help/4516987) | Update Rollup 8 for System Center 2016 Service Manager  |
 | 7.5.7487.210 | [4546987](https://support.microsoft.com/help/4546987) | Update Rollup 9 for System Center 2016 Service Manager  |
+| 7.5.7487.231 | [4580255](https://support.microsoft.com/help/4580255) | Update Rollup 10 for System Center 2016 Service Manager  |
 
 ::: moniker-end
 
