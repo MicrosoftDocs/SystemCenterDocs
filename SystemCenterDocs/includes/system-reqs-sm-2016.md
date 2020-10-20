@@ -5,7 +5,7 @@ description: include file to describe the system requirements for Service Manage
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/05/2020
+ms.date: 10/20/2020
 ms.technology: service-manager
 ms.topic: include
 ms.assetid: ff4c7819-632e-486f-a329-041b7fa6a478
