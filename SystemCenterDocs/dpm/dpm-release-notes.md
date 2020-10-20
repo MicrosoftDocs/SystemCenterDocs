@@ -528,7 +528,7 @@ Follow these steps to replace the existing report files:
 1.  Stop the SQL Server Reporting service
 2.  Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL files in the following folder:
 
-*C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin*
+    *C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin*
 
 3.	Start the SQL Server Reporting service.
 
