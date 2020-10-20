@@ -5,17 +5,21 @@ description: This article provides information about how to manage the telemetry
 author:  v-anesh
 ms.author: v-anesh
 manager:  vvithal
-ms.date:  08/04/2020
+ms.date:  10/20/2020
 ms.topic:  article
 ms.prod:  system-center
 ms.technology: data-protection-manager
-MonikerRange: 'sc-dpm-2019'
+MonikerRange: sc-dpm-2019||sc-dpm-2016
 ---
 
 # Manage telemetry settings
 
+::: moniker range="sc-dpm-2019"
+
 > [!NOTE]
 > This feature is applicable for DPM 2019 UR2 and later.
+
+::: moniker-end
 
 This article provides information about how to manage the telemetry (Diagnostics and utility data) settings in System Center – Data Protection Manager (DPM).
 
