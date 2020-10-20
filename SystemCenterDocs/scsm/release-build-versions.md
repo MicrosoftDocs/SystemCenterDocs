@@ -5,7 +5,7 @@ description: This article describes about version numbers.
 author: v-anesh
 ms.author: v-anesh
 manager: vvithal
-ms.date: 08/04/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
