@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 08/04/2020
+ms.date: 10/20/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -152,6 +152,11 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 ![console with no details for Protection Group](media/release-notes/admin-console.png)
 
 **Workaround**: Use *Get-DPMProtectionGroup* PowerShell command to view the Protection Group details.
+
+::: moniker-end
+
+
+::: moniker range="sc-dpm-2019"
 
 ### Latest report files are not automatically updated
 
@@ -301,7 +306,7 @@ The following issues exist in the 1801 release.
 
 **Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup user interface.
 
-## Remove-DPMDiskStorage cmdlet may delete volumes with active or inactive backups
+### Remove-DPMDiskStorage cmdlet might delete volumes with active or inactive backups
 
 **Description**: If the volume's datasources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the datasources can be removed too.
 
@@ -404,13 +409,15 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 ## System Center DPM 2016 Release Notes
 
+The following sections summarize the release notes for DPM 2016 and include the applicable known issues and workarounds.
+
 ### Silent Installation of System Center DPM with SQL Server 2008
 
 **Description**: DPM 2016 RTM won't silently install on SQL Server 2008.
 
 **Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup user interface.
 
-## Remove-DPMDiskStorage cmdlet may delete volumes with active or inactive backups
+### Remove-DPMDiskStorage cmdlet might delete volumes with active or inactive backups
 
 **Description**: If the volume's datasources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the datasources can be removed too.
 
@@ -509,9 +516,52 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 **Description**: While installing the Data Protection Manager, when you enter an SQL instance in the **Data Protection Manager Setup** > **Prerequisites check**> **Instance of SQL server** text box, error 4387 might appear.
 
 **Workaround**: Perform the required actions as detailed in this [KB article](https://support.microsoft.com/en-in/help/956013/error-message-when-you-open-sql-server-configuration-manager-in-sql-se) and try the  DPM setup again.
+
+### Latest report files are not automatically updated
+
+**Description**: With DPM 2016 UR10, issue with DPM report formatting and volume to volume migration reporting is fixed. However, the existing  report files are not automatically replaced with the updated files.
+
+**Workaround**:
+Follow these steps to replace the existing report files:
+
+#### Replace the ReportSRV10.dll
+1.  Stop the SQL Server Reporting service
+2.  Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL files in the following folder:
+
+    *C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin*
+
+3.	Start the SQL Server Reporting service.
+
+#### Replace the RDL files
+
+1.	On DPM, open the SQL Reporting Services portal URL.
+2.	On the portal, the DPMReports folder is present in the format  **DPMReports_\<GUID>**.
+
+    ![Reports folder](media/release-notes/reports-folder.png)
+
+     >[!NOTE]
+     > You can see only one folder with this naming convention. If DPM is upgraded from a previous version, the previous folder might still exist, but you can’t open it.
+
+3.	Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
+
+    ![List of individual report files](media/release-notes/individual-report-files.png)
+
+4.	Select the report files that don't end with *Report*, right-click   **Option**, and then select **Manage**.
+
+    ![Manage report files](media/release-notes/manage-report-files.png)
+
+5.	In the new page, select **Replace** to replace with the latest report files.
+
+    ![Replace report files](media/release-notes/replace-report-files.png)
+
+    The latest report files are available in the DPM installation path:
+
+    For example: C:\Program Files\Microsoft System Center\DPM\DPM\bin\DpmReports
+
+6.	After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
+7.	Restart DPM and use the report files.
+
 ::: moniker-end
-
-
 
 ## Next steps
 - To install DPM, see the article, [Install DPM](install-dpm.md).

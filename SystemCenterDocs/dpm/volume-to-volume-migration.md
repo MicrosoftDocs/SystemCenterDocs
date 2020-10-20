@@ -6,14 +6,21 @@ ms.topic: article
 author: v-anesh
 ms.prod: system-center
 keywords:
-ms.date: 08/04/2020
+ms.date: 10/20/2020
 ms.technology: data-protection-manager
 ms.assetid: 6595b781-554d-4807-b035-d0eccd35deb3
 ms.author: v-anesh
-monikerRange: '>=sc-dpm-2019'
+monikerRange: sc-dpm-2019||sc-dpm-2016
 ---
 
 # Migrate datasources to new volumes
+
+::: moniker range="sc-dpm-2016"
+
+> [!NOTE]
+> This feature is applicable for DPM 2016 UR10 and later.
+
+::: moniker-end
 
 This article provides information on how to migrate datasources from one volume to another.
 
@@ -25,8 +32,12 @@ DPM supports the following two options to migrate data to a new volume:
 
 - **Optimized migration** - allows you to move data sources to the new volume much faster. The enhanced migration process migrates only the active backup copy (active replica) to the new volume. All the new recovery points are created on the new volume, while existing recovery points are maintained on the existing volume, and are purged as per the retention policy.
 
+::: moniker range="sc-dpm-2019"
+
    > [!NOTE]
    > This option is applicable from DPM 2019 UR2 and later.
+
+   ::: moniker-end
 
 
   To use this option, first, add the registry key as per the details below:
