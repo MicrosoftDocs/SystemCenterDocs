@@ -20,6 +20,13 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
+::: moniker range="sc-vmm-2019-UR3"
+
+>[!NOTE]
+> testing moniker
+
+::: moniker-end
+
 This article describes how to create VMs in the System Center - Virtual Machine Manager (VMM) fabric from a VMM virtual machine (VM) template. You can use a VM template to create standalone VMs, or to create VMs in tiers in a [service template](library-service-templates.md).
 
 
