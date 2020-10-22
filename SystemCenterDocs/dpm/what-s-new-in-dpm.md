@@ -52,14 +52,6 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 
 ::: moniker range="sc-dpm-2019"
 
-
-
-::: moniker range="sc-dpm-2019-UR3"
-
->[!NOTE]
->Testing the moniker
-
-::: moniker-end
 ### Windows Server 2019 support
 DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
 
