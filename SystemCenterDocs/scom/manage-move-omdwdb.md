@@ -5,7 +5,7 @@ description: This article describes how to move the Operations Manager Reporting
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 07/17/2018
+ms.date: 10/22/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -47,6 +47,9 @@ On all the management servers in the management group, stop the Operations Manag
     For more information, see [How to: Back Up a Database (SQL Server Management Studio)](https://technet.microsoft.com/library/ms187510.aspx).
 
 2. Copy the backup file to a local drive of the new SQL Server instance.
+
+### Update the GlobalSettings table
+In the OperationsManager DB, manually update the **GlobalSettings** table to reflect the host\Instance, where the data warehouse has been moved to.  
 
 ### Restore the Reporting data warehouse database on the new SQL Server instance
 
