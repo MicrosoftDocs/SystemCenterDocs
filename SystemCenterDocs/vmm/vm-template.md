@@ -22,7 +22,6 @@ ms.technology: virtual-machine-manager
 
 This article describes how to create VMs in the System Center - Virtual Machine Manager (VMM) fabric from a VMM virtual machine (VM) template. You can use a VM template to create standalone VMs, or to create VMs in tiers in a [service template](library-service-templates.md).
 
-
 ## Before you start
 
 - Some settings, including server roles and features, application installation, and SQL Server settings, apply only when a VM template is used for service deployments. For standalone virtual machine creation, these settings are not used and won't appear when you create a standalone VM.
