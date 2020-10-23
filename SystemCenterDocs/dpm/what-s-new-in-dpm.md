@@ -61,7 +61,7 @@ DPM 2019 support SQL 2017 as its database.
 You can install SQL Server on a remote server, or on the DPM server. The database must be installed and running before you install DPM.
 
 ### Support for newer workloads backups
-With DPM 2019, you can back up newer versions of workloads, listed below:
+With DPM 2019, you can back up newer versions of workloads, as listed below:
 -	Hyper-V VMs 2019
 -	Windows Server 2019
 -	Exchange 2019
