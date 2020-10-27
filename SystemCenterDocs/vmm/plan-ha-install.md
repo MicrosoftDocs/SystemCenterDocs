@@ -46,7 +46,18 @@ You shouldn't install SQL Server on the VMM cluster.
 - Only one instance of VMM can be deployed to a failover cluster of up to 16 nodes.
 - The user who creates the cluster has **Create Computers objects** permission to the OU or the contain where the servers that will form the cluster reside. If this isn't possible ask a domain admin to pre-stage a cluster computer object for the cluster.
 - Requirements for computers running as VMM management nodes:
+::: moniker range="sc-vmm-2016"
+
+	- All cluster nodes that will act as VMM servers must be running Windows Server 2016.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
 	- All cluster nodes that will act as VMM servers must be running either Windows Server 2016 or Windows Sever 2019.
+
+::: moniker-end
+
 	- Each cluster node must be joined to a domain and must have a computer name that does not exceed 15 characters.
 	- The VMM service network name must not exceed 15 characters.
 	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](https://go.microsoft.com/fwlink/p/?LinkId=614942). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
