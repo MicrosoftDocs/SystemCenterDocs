@@ -30,7 +30,6 @@ For resilience and scalability you can deploy VMM in high availability mode, as 
 
 ## Plan a highly available SQL Server deployment
 
-
 - You should set up SQL Server before you deploy the VMM management servers.
 - We recommend you use a highly available SQL Server installation on a failover cluster and configure SQL Server Always On availability groups.
 You shouldn't install SQL Server on the VMM cluster.
@@ -39,6 +38,7 @@ You shouldn't install SQL Server on the VMM cluster.
 - The database server must be in the same domain as the VMM server, or in a domain with a two-way trust.
 - Using a clustered database with VMM requires Kerberos authentication. To support this, the SQL Server instance must associate a Service Principal Name (SPN) with the account that SQL Server will be running on.
 
+::: moniker range="sc-vmm-2016"
 
 ## Plan a highly available VMM management server
 - Don't install on a Hyper-V host parent partition. You can install VMM on a VM.
@@ -46,22 +46,28 @@ You shouldn't install SQL Server on the VMM cluster.
 - Only one instance of VMM can be deployed to a failover cluster of up to 16 nodes.
 - The user who creates the cluster has **Create Computers objects** permission to the OU or the contain where the servers that will form the cluster reside. If this isn't possible ask a domain admin to pre-stage a cluster computer object for the cluster.
 - Requirements for computers running as VMM management nodes:
-::: moniker range="sc-vmm-2016"
-
 	- All cluster nodes that will act as VMM servers must be running Windows Server 2016.
-
-::: moniker-end
-
-::: moniker range="sc-vmm-2019"
-
-	- All cluster nodes that will act as VMM servers must be running either Windows Server 2016 or Windows Sever 2019.
-
-::: moniker-end
-
 	- Each cluster node must be joined to a domain and must have a computer name that does not exceed 15 characters.
 	- The VMM service network name must not exceed 15 characters.
 	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](https://go.microsoft.com/fwlink/p/?LinkId=614942). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
 	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](https://go.microsoft.com/fwlink/p/?LinkId=253555) or [SQL Server 2014 feature pack](https://go.microsoft.com/fwlink/?LinkID=529794) or [SQL Server 2016 feature pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676).
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
+## Plan a highly available VMM management server
+	- Don't install on a Hyper-V host parent partition. You can install VMM on a VM.
+	- Before you start you'll need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md)
+	- Only one instance of VMM can be deployed to a failover cluster of up to 16 nodes.
+	- The user who creates the cluster has **Create Computers objects** permission to the OU or the contain where the servers that will form the cluster reside. If this isn't possible ask a domain admin to pre-stage a cluster computer object for the cluster.
+	- Requirements for computers running as VMM management nodes:
+		- All cluster nodes that will act as VMM servers must be running either Windows Server 2016 or Windows Server 2019.
+		- Each cluster node must be joined to a domain and must have a computer name that does not exceed 15 characters.
+		- The VMM service network name must not exceed 15 characters.
+		- Windows ADK needs to be installed on each computer. Install from setup or the [download center](https://go.microsoft.com/fwlink/p/?LinkId=614942). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
+		- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](https://go.microsoft.com/fwlink/p/?LinkId=253555) or [SQL Server 2014 feature pack](https://go.microsoft.com/fwlink/?LinkID=529794) or [SQL Server 2016 feature pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676).
+
+::: moniker-end
 
 
 ## Plan a highly available VMM library
