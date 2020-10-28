@@ -352,6 +352,11 @@ Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 
 ## Create tiered storage volume
 
+You can configure tiered storage volume in the following methods:
+
+-	[Simple Volume](#create-simple-tiered-volume) – recommended when you are using storage from the NAS device or using a virtual machine. The resiliency should be provided by the underlying storage.
+- [Resilient volume](#create-resilient-tiered-volume) – supported when you are using only locally attached storage (JBOD). Ensure that resiliency is not configured at the storage level.
+
 Before creating the tiered storage, you need to plan the column size.
 
 - The column size determines how the data is written across the physical disks in the storage pool, and also decides the number of physical disks that need to be added to the storage pool before a virtual disk can be expanded, later.
@@ -453,8 +458,7 @@ To create resilient tiered volume, use the following steps:
     New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName SSDMirrorTier -MediaType SSD -ResiliencySettingName Mirror -NumberOfColumns 1 -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
     ```
 
-    **Example**
-
+    **Example**:
     ![Resiliency Type Mirror](./media/add-storage/ps-resiliency-type-mirror.png)
 
 2. Create an HDD Tier with resiliency type as **Parity**, by running the following cmdlet:
@@ -462,7 +466,7 @@ To create resilient tiered volume, use the following steps:
     ```PowerShell
       New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName HDDParityTier -MediaType HDD -ResiliencySettingName Parity -NumberOfColumns 3 -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
     ```
-    **Example**
+    **Example**:
     ![Resiliency Type Parity](./media/add-storage/ps-resiliency-type-parity.png)
 
 3. Create a new volume using the resilient SSD tier and HDD tier.
