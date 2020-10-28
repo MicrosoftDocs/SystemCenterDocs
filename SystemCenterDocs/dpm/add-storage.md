@@ -440,12 +440,12 @@ To create simple tiered volume (no resiliency), follow the steps below.
 
 In the following example, the SSD tier is configured with Mirror resiliency and HDD tier is configured with Parity resiliency. In this configuration, a single SSD and /or a single HDD can fail, without experiencing data loss.
 
-Ensure that the [minimum disk requirement](#resiliency) is met for the required resiliency type, for the respective tier.
+Ensure that the [minimum disk requirement](#resiliency) is met for the required resiliency type, and the respective tier.
 
 > [!NOTE]
 > Configuration of resilient volume is only supported when you are using locally attached disks (JBOD). Review the [Pre-requisites](#prerequisites) section for more details.
 
-Use the following procedure to create resilient volumes:
+To create resilient tiered volume, use the following steps:
 
 1. Create an SSD tier with resiliency type as **Mirror**, by running the following cmdlet:
 
@@ -470,7 +470,7 @@ Use the following procedure to create resilient volumes:
       > [!NOTE]
       > Use the storage tier size slightly lower than the actual size as it might exceed the physical capacity of the pool. You can resize (extend) the tier later, by reviewing the details in [extend tiered volume](extend-tiered-volume.md).
 
-    Run the following cmdlet:
+    Run the following cmdlet to create a new volume:
 
     ```PowerShell
         New-Volume -StoragePoolFriendlyName DPMPool -FriendlyName DPMVOL -FileSystem ReFS -StorageTierFriendlyNames SSDMirrorTier, HDDParityTier -StorageTierSizes 745GB, 8TB
@@ -488,10 +488,9 @@ Use the following procedure to create resilient volumes:
 
     ![Get StorageTier](./media/add-storage/ps-get-storage-tier.png)
 
+    The following image displays the end result as seen in Server Manager. The volume is ready to get added to the DPM storage pool. You can view the volume in *Windows disk management* as well.
 
-The following image displays the end result as seen in Server Manager. The volume is ready to get added to the DPM storage pool. You can view the volume in *Windows disk management* as well.
-
-  ![Storage Pools](./media/add-storage/storage-pools.png)
+    ![Storage Pools](./media/add-storage/storage-pools.png)
 
 
 ## Add volumes to DPM storage
