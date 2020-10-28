@@ -440,7 +440,7 @@ To create simple tiered volume (no resiliency), follow the steps below.
 
 In the following example, the SSD tier is configured with Mirror resiliency and HDD tier is configured with Parity resiliency. In this configuration, a single SSD and /or a single HDD can fail, without experiencing data loss.
 
-Ensure that the [minimum disk requirement](#resiliency) is met for the required resiliency type, for respective tier.
+Ensure that the [minimum disk requirement](#resiliency) is met for the required resiliency type, for the respective tier.
 
 > [!NOTE]
 > Configuration of resilient volume is only supported when you are using locally attached disks (JBOD). Review the [Pre-requisites](#prerequisites) section for more details.
@@ -449,26 +449,24 @@ Use the following procedure to create resilient volumes:
 
 1. Create an SSD tier with resiliency type as **Mirror** by running the following cmdlet:
 
-  ```PowerShell
-  New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName SSDMirrorTier
-  -MediaType SSD -ResiliencySettingName Mirror -NumberOfColumns 1
-  -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
-  ```
-
-  **Example**
-
-  ![Resiliency Type Mirror](./media/add-storage/ps-resiliency-type-mirror.png)
-
-2. Create an HDD Tier with resiliency type as **Parity** by running the following cmdlet:
-
-  ```PowerShell
-    New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName HDDParityTier
-    -MediaType HDD -ResiliencySettingName Parity -NumberOfColumns 3
+    ```PowerShell
+    New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName SSDMirrorTier
+    -MediaType SSD -ResiliencySettingName Mirror -NumberOfColumns 1
     -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
-  ```
+    ```
 
     **Example**
 
+    ![Resiliency Type Mirror](./media/add-storage/ps-resiliency-type-mirror.png)
+
+2. Create an HDD Tier with resiliency type as **Parity** by running the following cmdlet:
+
+    ```PowerShell
+      New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName HDDParityTier
+      -MediaType HDD -ResiliencySettingName Parity -NumberOfColumns 3
+      -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
+    ```
+    **Example**
     ![Resiliency Type Parity](./media/add-storage/ps-resiliency-type-parity.png)
 
 3. Create a new volume using the resilient SSD tier and HDD tier.
@@ -476,16 +474,14 @@ Use the following procedure to create resilient volumes:
       > [!NOTE]
       > Use the storage tier size slightly lower than the actual size as it might exceed the physical capacity of the pool. You can resize (extend) the tier later, by reviewing the details in [extend tiered volume](extend-tiered-volume.md).
 
-      Run the following cmdlet:
+    Run the following cmdlet:
 
-      ```PowerShell
+  ```PowerShell
         New-Volume -StoragePoolFriendlyName DPMPool -FriendlyName DPMVOL -FileSystem
         ReFS -StorageTierFriendlyNames SSDMirrorTier, HDDParityTier -StorageTierSizes
         745GB, 8TB
-      ```  
-
+  ```  
       **Example:**
-
       ![Create New Volume](./media/add-storage/ps-create-new-volume.png)
 
 4. Run the following cmdlet to verify the performance tier and capacity tier, used for the newly created volume:
