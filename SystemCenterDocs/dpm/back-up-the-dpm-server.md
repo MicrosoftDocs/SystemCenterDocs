@@ -141,13 +141,13 @@ Set up chaining as follows:
      Then configure secondary protection on DPM2 for servers that DPM1 protects, and configure secondary protection on DPM1 for servers that DPM2 protects.
 
 ### Recover the server
-If a primary server fails, you can switch protection to the secondary server. After you've switched protection, you can perform recovery functions from the secondary server.
+If a primary server fails, you can switch protection to the secondary server. After switching, you can perform recovery functions from the secondary server.
 
 **Switch protection to the secondary server**
 
 Use the following steps:
 
-1.	On the secondary DPM server, in the **Protection** area of the DPM Administrator console , Go to the **Protection** work area, right-click the *data source* for which, you want to switch protection.
+1.	On the secondary DPM server, in the **Protection** area of the DPM Administrator console, go to the **Protection** work area, right-click the *data source* for which, you want to switch protection.
 2.	Select **Switch Disaster Protection** from the context menu.
 3.	Run a consistency check.
 
@@ -169,10 +169,10 @@ When you recover a primary DPM server, you’ll need to re-establish the protect
 - You can’t restore recovery points for data sources protected by the primary DPM server.
 - When you recover the database files, ensure that the restore location on the primary DPM server is secure.
 
-**Reestablish protection with primary DPM server**
+**Re-establish protection with primary DPM server**
 
-1.	On the protected computer, from the command promt, run the command *Setdpmserver.exe <primary DPM server name>*.
-2.	Open **Computer Management** and do the following steps:
+1.	On the protected computer, from the command prompt, run the command *Setdpmserver.exe \<primary DPM server name>*.
+2.	Open **Computer Management** and do the following:
 
     -  Select **Local Users and Groups**. Verify that the primary server, in the format of Domain/Name, is a member of the following groups:
         - Distribute COM Users
