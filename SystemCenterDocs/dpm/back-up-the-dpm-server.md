@@ -174,19 +174,19 @@ When you recover a primary DPM server, you’ll need to re-establish the protect
 1.	On the protected computer, from the command promt, run the command *Setdpmserver.exe <primary DPM server name>*.
 2.	Open **Computer Management** and do the following steps:
 
-  -  Select **Local Users and Groups**. Verify that the primary server, in the format of Domain/Name, is a member of the following groups:
+    -  Select **Local Users and Groups**. Verify that the primary server, in the format of Domain/Name, is a member of the following groups:
         - Distribute COM Users
         - DPMRADCOMTrustedMachines
         - DPMRADmTrustedMachines
-  - If the primary server isn’t not listed in any of the groups, manually add the server in the format of Domain/Name.
+    - If the primary server isn’t not listed in any of the groups, manually add the server in the format of Domain/Name.
 
 If protection fails after completing the above steps, do the following:
 
-1.	In **Administrative Tools**, open **Component Services**. Expand **Computers**, expand **My Computer**, and then click **DCOM Config**
+1.	In **Administrative Tools**, open **Component Services**. Expand **Computers**, expand **My Computer**, and then click **DCOM Config**.
 2.	In the results pane, right-click **DPM RA Service**. Click **Properties** > **Security**.
 3.	In the **Launch and Activation Permissions** area, click **Edit**.
-  -	If the primary server is listed, the Access Control List (ACL) entry might be incorrect. Remove the entry, and then add the primary server with full permissions.
-  -	If the primary server is not listed, add the primary server with full permissions.
+    -	If the primary server is listed, the Access Control List (ACL) entry might be incorrect. Remove the entry, and then add the primary server with full permissions.
+    -	If the primary server is not listed, add the primary server with full permissions.
 
 ## Back up the DPM database
 As part of your DPM backup strategy, you'll have to back up the DPM database. The DPM database is named DPMDB. This database contains the DPM configuration together with data about DPM's backups. In case of disaster, you can rebuild most of the functionality of a DPM server by using a recent backup of the database. Assuming you can restore the database, tape\- based backups are accessible, and they maintain all protection group settings and backup schedules. If the DPM storage pool disks were not affected by the outage, disk\-based backups are also usable after a rebuild. You can back up the database by using several different methods.
