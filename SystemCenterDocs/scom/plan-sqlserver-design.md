@@ -215,6 +215,8 @@ To set up an availability group you'll need to deploy a Windows Server Failover 
 
 ::: moniker range="sc-om-2019"
 
+## SQL Server Always On
+
 SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica.
 
 With System Center 2016 and later - Operations Manager, SQL Always On is preferred over failover clustering to provide high availability for databases. All databases except the native mode Reporting Services installation, which uses two databases to separate persistent data storage from temporary storage requirements, can be hosted in an AlwaysOn Availability Group.  
