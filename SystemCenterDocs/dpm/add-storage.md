@@ -447,24 +447,20 @@ Ensure that the [minimum disk requirement](#resiliency) is met for the required 
 
 Use the following procedure to create resilient volumes:
 
-1. Create an SSD tier with resiliency type as **Mirror** by running the following cmdlet:
+1. Create an SSD tier with resiliency type as **Mirror**, by running the following cmdlet:
 
     ```PowerShell
-    New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName SSDMirrorTier
-    -MediaType SSD -ResiliencySettingName Mirror -NumberOfColumns 1
-    -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
+    New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName SSDMirrorTier -MediaType SSD -ResiliencySettingName Mirror -NumberOfColumns 1 -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
     ```
 
     **Example**
 
     ![Resiliency Type Mirror](./media/add-storage/ps-resiliency-type-mirror.png)
 
-2. Create an HDD Tier with resiliency type as **Parity** by running the following cmdlet:
+2. Create an HDD Tier with resiliency type as **Parity**, by running the following cmdlet:
 
     ```PowerShell
-      New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName HDDParityTier
-      -MediaType HDD -ResiliencySettingName Parity -NumberOfColumns 3
-      -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
+      New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName HDDParityTier -MediaType HDD -ResiliencySettingName Parity -NumberOfColumns 3 -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
     ```
     **Example**
     ![Resiliency Type Parity](./media/add-storage/ps-resiliency-type-parity.png)
@@ -476,13 +472,11 @@ Use the following procedure to create resilient volumes:
 
     Run the following cmdlet:
 
-  ```PowerShell
-        New-Volume -StoragePoolFriendlyName DPMPool -FriendlyName DPMVOL -FileSystem
-        ReFS -StorageTierFriendlyNames SSDMirrorTier, HDDParityTier -StorageTierSizes
-        745GB, 8TB
-  ```  
-      **Example:**
-      ![Create New Volume](./media/add-storage/ps-create-new-volume.png)
+    ```PowerShell
+        New-Volume -StoragePoolFriendlyName DPMPool -FriendlyName DPMVOL -FileSystem ReFS -StorageTierFriendlyNames SSDMirrorTier, HDDParityTier -StorageTierSizes 745GB, 8TB
+    ```  
+    **Example:**
+    ![Create New Volume](./media/add-storage/ps-create-new-volume.png)
 
 4. Run the following cmdlet to verify the performance tier and capacity tier, used for the newly created volume:
 
