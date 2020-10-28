@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 09/23/2020
+ms.date: 10/28/2020
 title: Add Modern Backup Storage to DPM
 ms.technology: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
@@ -77,6 +77,7 @@ Setting up MBS consists of the following procedures. Note that  you cannot attac
     ![Create volume](./media/add-storage/dpm2016-add-storage-5.png)
 
     ![Select volume server and disk](./media/add-storage/dpm2016-add-storage-6.png)
+
 
 
 ## Add volumes to DPM storage
@@ -434,6 +435,74 @@ To create simple tiered volume (no resiliency), follow the steps below.
     The following image displays the end result as seen in Server Manager. You can view the volume in Windows disk management; this is ready to get added to the DPM storage pool.
 
     ![Windows Disk Volume](./media/add-storage/window-disk-volume-1.png)
+
+### Create Resilient tiered volume
+
+In the following example, the SSD tier is configured with Mirror resiliency and HDD tier is configured with Parity resiliency. In this configuration, a single SSD and /or a single HDD can fail, without experiencing data loss.
+
+Ensure that the [minimum disk requirement](#resiliency) is met for the required resiliency type, for respective tier.
+
+> [!NOTE]
+> Configuration of resilient volume is only supported when you are using locally attached disks (JBOD). Review the [Pre-requisites](#prerequisites) section for more details.
+
+Use the following procedure to create resilient volumes:
+
+1. Create an SSD tier with resiliency type as **Mirror** by running the following cmdlet:
+
+  ```PowerShell
+  New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName SSDMirrorTier
+  -MediaType SSD -ResiliencySettingName Mirror -NumberOfColumns 1
+  -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
+  ```
+
+  **Example**
+
+  ![Resiliency Type Mirror](./media/add-storage/ps-resiliency-type-mirror.png)
+
+2. Create an HDD Tier with resiliency type as **Parity** by running the following cmdlet:
+
+  ```PowerShell
+    New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName HDDParityTier
+    -MediaType HDD -ResiliencySettingName Parity -NumberOfColumns 3
+    -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
+  ```
+
+    **Example**
+
+    ![Resiliency Type Parity](./media/add-storage/ps-resiliency-type-parity.png)
+
+3. Create a new volume using the resilient SSD tier and HDD tier.
+
+      > [!NOTE]
+      > Use the storage tier size slightly lower than the actual size as it might exceed the physical capacity of the pool. You can resize (extend) the tier later, by reviewing the details in [extend tiered volume](extend-tiered-volume.md).
+
+      Run the following cmdlet:
+
+      ```PowerShell
+        New-Volume -StoragePoolFriendlyName DPMPool -FriendlyName DPMVOL -FileSystem
+        ReFS -StorageTierFriendlyNames SSDMirrorTier, HDDParityTier -StorageTierSizes
+        745GB, 8TB
+      ```  
+
+      **Example:**
+
+      ![Create New Volume](./media/add-storage/ps-create-new-volume.png)
+
+4. Run the following cmdlet to verify the performance tier and capacity tier, used for the newly created volume:
+
+      ```PowerShell
+       Get-StorageTier
+      ```
+
+    **Example:**
+
+    ![Get StorageTier](./media/add-storage/ps-get-storage-tier.png)
+
+
+The following image displays the end result as seen in Server Manager. The volume is ready to get added to the DPM storage pool. You can view the volume in *Windows disk management* as well.
+
+  ![Storage Pools](./media/add-storage/storage-pools.png)
+
 
 ## Add volumes to DPM storage
 
