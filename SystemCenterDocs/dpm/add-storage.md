@@ -354,7 +354,7 @@ Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 
 You can configure tiered storage volume in the following methods:
 
--	[Simple Volume](#create-simple-tiered-volume) – recommended when you are using storage from the NAS device or using a virtual machine. The resiliency should be provided by the underlying storage.
+-	[Simple volume](##create-simple-tiered-volume-no-resiliency) – recommended when you are using storage from the NAS device or using a virtual machine. The resiliency should be provided by the underlying storage.
 - [Resilient volume](#create-resilient-tiered-volume) – supported when you are using only locally attached storage (JBOD). Ensure that resiliency is not configured at the storage level.
 
 Before creating the tiered storage, you need to plan the column size.

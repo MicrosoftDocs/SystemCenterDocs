@@ -147,20 +147,19 @@ If a primary server fails, you can switch protection to the secondary server. Af
 
 Use the following steps:
 
-1.	On the secondary DPM server, in the **Protection** area of the DPM Administrator console , Go to the Protection work area, right-click the *data source* for which, you want to switch protection.
+1.	On the secondary DPM server, in the **Protection** area of the DPM Administrator console , Go to the **Protection** work area, right-click the *data source* for which, you want to switch protection.
 2.	Select **Switch Disaster Protection** from the context menu.
 3.	Run a consistency check.
 
 After switching protection, the replica appears as inconsistent, until the check runs.
 
 **Example:**
-
 ![Switch protection](./media/back-up-the-dpm-server/secondary-protection.png)
-
 
 >[!NOTE]
 >
 > - To switch the protection back to the primary server, do the same steps as above.
+>
 > -You can also switch protection to the secondary DPM server by using the  [Start –DPMSwitchProtection](https://docs.microsoft.com/powershell/module/dataprotectionmanager/start-dpmswitchprotection?view=systemcenter-ps-2019
 ) PowerShell cmdlet.
 
@@ -188,7 +187,6 @@ If protection fails after completing the above steps, do the following:
 1.	In **Administrative Tools**, open **Component Services**. Expand **Computers**, expand **My Computer**, and then click **DCOM Config**
 2.	In the results pane, right-click **DPM RA Service**. Click **Properties** > **Security**.
 3.	In the **Launch and Activation Permissions** area, click **Edit**.
-
   -	If the primary server is listed, the Access Control List (ACL) entry might be incorrect. Remove the entry, and then add the primary server with full permissions.
   -	If the primary server is not listed, add the primary server with full permissions.
 
