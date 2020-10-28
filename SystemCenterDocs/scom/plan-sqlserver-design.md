@@ -213,7 +213,7 @@ To set up an availability group you'll need to deploy a Windows Server Failover 
 
 ::: moniker-end
 
-::: moniker range="=sc-om-2019"
+::: moniker range="sc-om-2019"
 
 SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica.
 
