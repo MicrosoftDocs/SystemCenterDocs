@@ -159,8 +159,7 @@ After switching protection, the replica appears as inconsistent, until the check
 >[!NOTE]
 >
 > - To switch the protection back to the primary server, do the same steps as above.
->
-> -You can also switch protection to the secondary DPM server by using the  [Start –DPMSwitchProtection](https://docs.microsoft.com/powershell/module/dataprotectionmanager/start-dpmswitchprotection?view=systemcenter-ps-2019
+> - You can also switch protection to the secondary DPM server by using the  [Start –DPMSwitchProtection](https://docs.microsoft.com/powershell/module/dataprotectionmanager/start-dpmswitchprotection?view=systemcenter-ps-2019
 ) PowerShell cmdlet.
 
 **Recover a primary DPM server**
@@ -175,12 +174,11 @@ When you recover a primary DPM server, you’ll need to re-establish the protect
 1.	On the protected computer, from the command promt, run the command *Setdpmserver.exe <primary DPM server name>*.
 2.	Open **Computer Management** and do the following steps:
 
-  a.  Select **Local Users and Groups**. Verify that the primary server, in the format of Domain/Name, is a member of the following groups:
-      - Distribute COM Users
-      - DPMRADCOMTrustedMachines
-      - DPMRADmTrustedMachines
-
-  b.	If the primary server isn’t not listed in any of the groups, manually add the server in the format of Domain/Name.
+  -  Select **Local Users and Groups**. Verify that the primary server, in the format of Domain/Name, is a member of the following groups:
+        - Distribute COM Users
+        - DPMRADCOMTrustedMachines
+        - DPMRADmTrustedMachines
+  - If the primary server isn’t not listed in any of the groups, manually add the server in the format of Domain/Name.
 
 If protection fails after completing the above steps, do the following:
 
