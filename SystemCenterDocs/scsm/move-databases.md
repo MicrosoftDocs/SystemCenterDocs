@@ -57,7 +57,7 @@ You must use the following high\-level steps to move the Service Manager databas
 
 > [!NOTE]  
 > - These steps link to content in the Service Manager Upgrade Guide.
-> - After deploying Service Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017), run the [SQL script](system-reqs-sm-2019.md#enable-clr-strict-security) on each Service Manager database.
+> - After deploying Service Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017), run the [SQL script](system-requirements.md#enable-clr-strict-security) on each Service Manager database.
 
 ::: moniker-end
 
