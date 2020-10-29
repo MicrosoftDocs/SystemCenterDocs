@@ -50,6 +50,13 @@ On all the management servers in the management group, stop the Operations Manag
 
 ### Restore the Operational database on the new SQL Server instance
 
+::: moniker range="sc-om-2019"
+
+> [!NOTE]
+> After deploying Operations Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017), run the [SQL script](upgrade-sqlserver-2019-operations-manager.md#optional---enable-clr-strict-security) on each Operations Manager database.
+
+::: moniker-end
+
 1. Use Microsoft SQL Server Management Studio to restore the operational database. (In the previous step, you moved the database backup file to a local drive of the new SQL Server instance.) In this step, you can change the name of the database and choose the file location.
 
     For more information, see [How to: Restore a Database Backup (SQL Server Management Studio)](https://technet.microsoft.com/library/ms177429.aspx).
