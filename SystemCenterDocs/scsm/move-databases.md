@@ -46,20 +46,10 @@ If you want the move the data warehouse database, and if you have installed Serv
 
 You must use the following high\-level steps to move the Service Manager database.  
 
-::: moniker range="<=sc-sm-1807"
-
 > [!NOTE]  
->  These steps link to content in the Service Manager Upgrade Guide.  
-
-::: moniker-end
-
-::: moniker range="sc-sm-2019"
-
-> [!NOTE]  
-> - These steps link to content in the Service Manager Upgrade Guide.
+> - These steps link to content in the Service Manager Upgrade Guide.  
 > - After deploying Service Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017), run the [SQL script](system-requirements.md#enable-clr-strict-security) on each Service Manager database.
 
-::: moniker-end
 
 1.  Open the inbound SQL Port on new Service Manager database server. The default port is 1433.  
 

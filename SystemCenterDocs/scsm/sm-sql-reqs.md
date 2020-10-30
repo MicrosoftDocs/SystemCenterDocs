@@ -83,6 +83,7 @@ SQL Server AlwaysOn Availability Groups functionality is supported by System Cen
 
 For more information about installing Service Manager with AlwaysOn availability groups, [refer here](sql-always-on.md).
 
+
 ## Next steps
 
 - Review [Service Manager editions](sm-editions.md) to learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions.

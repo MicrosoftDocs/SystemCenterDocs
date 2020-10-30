@@ -27,12 +27,10 @@ However, this information is not intended to provide detailed instructions on ho
 >[!IMPORTANT]
 > Service Manager does not support a topology where the reporting and analysis server database is configured as part of the AlwaysOn Availability Group.
 
-::: moniker range="sc-sm-2019"
 
 > [!NOTE]
 > After deploying Service Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017), run the [SQL script](system-requirements.md#enable-clr-strict-security) on each Service Manager database.
 
-::: moniker-end
 
 ## SQL Server AlwaysOn supported Service Manager databases
 
