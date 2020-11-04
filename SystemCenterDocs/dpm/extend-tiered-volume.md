@@ -73,14 +73,13 @@ You can add more capacity to the tiered volume by adding new disks. Based on the
 
     ![Select new disk](./media/extend-tiered-volume/select-disk.png)
 
-    Server Manager displays the updated capacity. Now, you can extend the volume size.
+    Server Manager displays the updated capacity. Now, you can [extend the volume size](#extend-tiered-volume).
 
     ![Updated capacity](./media/extend-tiered-volume/updated-capacity.png)
 
   >[!NOTE]
   > In some cases, **MediaType* for the newly added disk might be displayed as *unassigned*. You can run the following PowerShell command to set the **MediaType**:
 
-    ```PowerShell
-    Set-PhysicalDisk -UniqueId <Uniue ID of the Disk> -MediaType <HDD/SSD>
-
-    ```
+  ```PowerShell
+  Set-PhysicalDisk -UniqueId <Uniue ID of the Disk> -MediaType <HDD/SSD>
+  ```
