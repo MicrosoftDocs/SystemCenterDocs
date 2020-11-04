@@ -16,7 +16,7 @@ ms.assetid: 1209cc47-686a-496a-8d9d-23d1c12e87b7
 
 This article provides you the information about how to extend tiered volume in Data Protection Manager (DPM).
 
-Before you resize a volume, make sure you have enough capacity in the storage pool to accommodate its new, larger footprint. For example, when resizing a three-way mirror volume from 1 TB to 2 TB, its footprint would grow from 3 TB to 6 TB. For the resize to succeed, you would need at least (6 - 3) = 3 TB of available capacity in the storage pool. For additional capacity, you can add new disk using the steps in the [Add disk to storage pool](#add-disk-to-storage-pool) section.
+Before you resize a volume, make sure you have enough capacity in the storage pool to accommodate its new, larger footprint. For example, when resizing a three-way mirror volume from 1 TB to 2 TB, its footprint would grow from 3 TB to 6 TB. For the resize to succeed, you would need at least (6 - 3) = 3 TB of available capacity in the storage pool. For additional capacity, you can add new disk using the steps in the [add disk to storage pool](#add-disk-to-storage-pool) section.
 
 For the virtual disk that uses storage tiers, you can resize each tier separately using the **Resize-StorageTier** cmdlet.
 
