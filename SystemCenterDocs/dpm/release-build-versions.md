@@ -85,4 +85,4 @@ The following table lists the build versions for Data Protection Manager 1807.
 ::: moniker-end
 
 ## Next steps
-[What's New in DPM](what-s-new-in-dpm.md)
+[See what's New in DPM](what-s-new-in-dpm.md)
