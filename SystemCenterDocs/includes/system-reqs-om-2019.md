@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 10/08/2020
+ms.date: 11/05/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -103,7 +103,7 @@ The following versions of Windows Server operating system are supported for the 
 - [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).
 
 > [!NOTE]
-> Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=42295). The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.
+> Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=53164). The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.
 
 - .NET Framework 4 or .NET Framework 4.5 is required.
 
