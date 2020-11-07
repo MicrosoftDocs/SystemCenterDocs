@@ -115,17 +115,17 @@ Windows Server 2016 (with desktop experience) | Y | Y | Y | Y
 Windows Server 2019 (Data Center) | Y | Y | Y | Y
 Windows Server 2019 (Server Core) | Y | Y | N | N
 
-## VMWare servers in the VMM fabric
+## VMware servers in the VMM fabric
 
 **VMware** | **Supported**
 --- | ---
 ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5 , 6.7 (supported from 2019 UR2 and later)
 vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7 (supported from 2019 UR2 and later)
-Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
+Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 
 ## VMs in the VMM fabric
 
 **Guest operating system** | **Supported**
 --- | ---
 Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2019](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows) and [earlier versions](https://technet.microsoft.com/library/mt126277.aspx).
-VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software)
+VMware VM | Any VM running on supported VMware servers. [Learn more](http://www.VMware.com/resources/compatibility/search.php?deviceCategory=software)

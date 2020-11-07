@@ -31,7 +31,7 @@ One of your first decisions is how to deploy DPM. You can deploy DPM:
 
 - **As a Hyper-V virtual machine**—You can run DPM as a virtual machine (hosted on an on-premises Hyper-V host server), to back up on-premises data. For a list of considerations in this environment see Install DPM as a virtual machine on an on-premises Hyper-V server.
 
-- **As a Windows virtual machine in VMWare**—You can deploy DPM to provide protection for Microsoft workloads running on Windows virtual machines in VMWare. In this scenario DPM can be deployed as a physical standalone server, as a Hyper-V virtual machine, or as a Windows virtual machine in VMWare.
+- **As a Windows virtual machine in VMware**—You can deploy DPM to provide protection for Microsoft workloads running on Windows virtual machines in VMware. In this scenario DPM can be deployed as a physical standalone server, as a Hyper-V virtual machine, or as a Windows virtual machine in VMware.
 
 - **As an Azure virtual machine**—DPM can run as a virtual machine in Azure to back up cloud workloads running as Azure virtual machines. For information about this deployment see Install DPM as an Azure virtual machine.
 
