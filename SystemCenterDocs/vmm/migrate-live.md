@@ -25,7 +25,9 @@ This article describes how to run a live migration of virtual machines (VMs) or 
 
 
 >[!NOTE]
-> When you run live migration on VMs from an older cluster version to newer version, if the [*Msvm_CompatibilityVector*](https://docs.microsoft.com/windows/win32/hyperv_v2/msvm-compatibilityvector) value is not updated, migration within the new cluster will be blocked. Restart the VM to fix this issue. Restart updates the *Msvm_CompatibilityVector* values according to the new cluster version.
+> When you run live migration on VMs from an older cluster version to newer version, if the [*Msvm_CompatibilityVector*](https://docs.microsoft.com/windows/win32/hyperv_v2/msvm-compatibilityvector) value is not updated, migration within the new cluster will be blocked.
+
+>Restart the VM to fix this issue. Restart updates the *Msvm_CompatibilityVector* values according to the new cluster version.
 
 ## Migrate a VM between two standalone hosts
 
