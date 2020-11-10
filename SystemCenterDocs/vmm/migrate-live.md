@@ -54,7 +54,7 @@ When you migrate a VM between clusters, note that the VM temporarily loses its h
 
 
 >[!NOTE]
-> When you run live migration on VMs from an older cluster version to newer version, if the [*Msvm_CompatibilityVector*](https://docs.microsoft.com/windows/win32/hyperv_v2/msvm-compatibilityvector) value is not updated, migration within the new cluster will be blocked.
+> When you run live migration on VMs from an older cluster version to a newer version, if the [*Msvm_CompatibilityVector*](https://docs.microsoft.com/windows/win32/hyperv_v2/msvm-compatibilityvector) value is not updated, migration within the new cluster will be blocked.
 >
 >To fix this issue, restart the VM. VM restart updates the *Msvm_CompatibilityVector* values according to the new cluster version.
 
