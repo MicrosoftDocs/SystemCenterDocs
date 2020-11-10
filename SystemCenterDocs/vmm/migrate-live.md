@@ -23,12 +23,6 @@ ms.technology: virtual-machine-manager
 
 This article describes how to run a live migration of virtual machines (VMs) or VM storage, in the System Center - Virtual Machine Manager (VMM) fabric. VMM provides live migration support between standalone Hyper-V hosts, or between cluster hosts that have live migration enabled. [Learn more](migrate.md#live-migration).
 
-
->[!NOTE]
-> When you run live migration on VMs from an older cluster version to newer version, if the [*Msvm_CompatibilityVector*](https://docs.microsoft.com/windows/win32/hyperv_v2/msvm-compatibilityvector) value is not updated, migration within the new cluster will be blocked.
->
->To fix this issue, restart the VM. Restarting updates the *Msvm_CompatibilityVector* values according to the new cluster version.
-
 ## Migrate a VM between two standalone hosts
 
 Migrate a virtual machine from one stand-alone Hyper-V host to another stand-alone Hyper-V host. The VM configuration files and virtual hard disk must be located on an SMB 3.0 file share.
@@ -56,6 +50,13 @@ When you migrate a VM between clusters, note that the VM temporarily loses its h
 5.  Click a node on a different cluster, and then click **Next**.
 6.  In **Summary**, click **Move**. To track the job status, open the **Jobs** workspace.
 7. To verify that the virtual machine was migrated, check the **VMs** list on the destination node to make sure the VM is running.
+
+
+
+>[!NOTE]
+> When you run live migration on VMs from an older cluster version to newer version, if the [*Msvm_CompatibilityVector*](https://docs.microsoft.com/windows/win32/hyperv_v2/msvm-compatibilityvector) value is not updated, migration within the new cluster will be blocked.
+>
+>To fix this issue, restart the VM. VM restart updates the *Msvm_CompatibilityVector* values according to the new cluster version.
 
 ### Live migration with no shared infrastructure
 
