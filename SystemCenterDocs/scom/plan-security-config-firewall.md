@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmomm
-ms.date: 11/28/2018
+ms.date: 11/18/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -21,6 +21,8 @@ ms.topic: article
 ::: moniker-end
 
 This section describes how to configure your firewall to allow communication between the different Operations Manager features on your network.  
+
+Operations Manager uses port 389 for LDAP queries for multiple actions such as agent discovery, active directory integration, etc.
 
 ## Port assignments
 The following table shows Operations Manager feature interaction across a firewall, including information about the ports used for communication between the features, which direction to open the inbound port, and whether the port number can be changed.
