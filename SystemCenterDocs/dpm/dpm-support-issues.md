@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -377,6 +377,13 @@ These workloads can be running on a single server or in a cluster configuration.
 **Issue**: DPM can't protect SQL Server databases hosted on Windows Server 2012 SOFS.
 
 **Workaround**: Move the SQL Server databases off the SOFS.
+
+### DPM can't protect SQL server DAG or AG, where the role name on failover cluster is different than the named AG on SQL.
+
+**Issue**: DPM can't protect SQL server Distributed Availability Group (DAG) or Availability Group (AG), where the role name on failover cluster is different than the named AG on SQL.
+
+**Workaround**: The role name for SQL server DAG or AG on failover cluster must be the same as the SQL server  availability group or distributed availability group name on SQL and vice versa.
+
 
 ## <a name="BKMK_VM"></a>Hyper-V and virtual machine protection issues
 
