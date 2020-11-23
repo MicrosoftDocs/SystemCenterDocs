@@ -187,10 +187,6 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 
 ::: moniker-end
 
-**Issue**: If you upgrade the protected server operating system from Windows Server 2016 to Windows Server 2019, then backup of NTFS deduped volume gets affected due to change in dedupe logic.  
-
-**Workaround**: Fix will be available in the future update rollup of DPM 2019. Reach out to DPM support in case you need this fix for DPM 2019 UR2.
-
 ::: moniker range="sc-dpm-2019"
 
 | Operating system of protected server | Operating system of DPM server | DPM version | Dedupe support  |
@@ -223,6 +219,11 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 >DPM 2019 UR1 and later continues to support protection and recovery of normal ReFS volumes.
 
 ::: moniker-end
+
+
+**Issue**: If you upgrade the protected server operating system from Windows Server 2016 to Windows Server 2019, then backup of NTFS deduped volume gets affected due to change in dedupe logic.  
+
+**Workaround**: Fix will be available in the future update rollup of DPM 2019. Reach out to DPM support in case you need this fix for DPM 2019 UR2.
 
 ### Windows deduplication isn't always supported on volumes hosting .VHD or .VHDX files
 **Issue**: Dedupe support
