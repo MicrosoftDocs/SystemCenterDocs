@@ -207,9 +207,9 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 | Windows Server 2012                      | Windows Server 2012 R2             | DPM 2016        | Y                  |
 
 
-- * When protecting a WS 2016 NTFS Deduped Volume with DPM 2019 running on WS 2019, the recoveries may be affected. We have a fix for doing recoveries in an non-deduped way which will be part of later versions of DPM 2019. Reach out to DPM support if you need this fix on DPM 2019 UR2.
+- *When protecting a WS 2016 NTFS Deduped Volume with DPM 2019 running on WS 2019, the recoveries may be affected. We have a fix for doing recoveries in an non-deduped way which will be part of later versions of DPM 2019. Reach out to DPM support if you need this fix on DPM 2019 UR2.
 
-- ** When protecting a WS 2019 NTFS deduped volume with DPM 2019 on WS 2016 OR a WS 2016 NTFS deduped volume with DPM 2016 on WS 2012 R2, the backups and restores will be non-deduped. This means that the backups will consume more space on the DPM server than the original NTFS deduped volume.
+- **When protecting a WS 2019 NTFS deduped volume with DPM 2019 on WS 2016 OR a WS 2016 NTFS deduped volume with DPM 2016 on WS 2012 R2, the backups and restores will be non-deduped. This means that the backups will consume more space on the DPM server than the original NTFS deduped volume.
 
 **For ReFS Volumes:**
 
