@@ -184,7 +184,6 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 | Windows Server 2012 R2                   | Windows Server 2016                | DPM 2016        | Y                 |
 | Windows Server 2012                     | Windows Server 2016                | DPM 2016        | Y                 |
 | Windows Server 2016                      | Windows Server 2012 R2                | DPM 2016        | Y\*\*              |
-                  |
 | Windows Server 2012 R2                   | Windows Server 2012 R2                | DPM 2016        | Y                  |
 | Windows Server 2012                      | Windows Server 2012 R2               | DPM 2016        | Y                  |
 
