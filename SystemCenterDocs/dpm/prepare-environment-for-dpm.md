@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 08/13/2020
+ms.date: 11/24/2020
 title: Preparing your environment for System Center Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -55,7 +55,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 **DPM version** | **SQL version**
 --- | ---
-DPM 2016 | SQL Server 2014 SP2;  SQL Server 2012 SP4.
+DPM 2016 | SQL Server 2014 SP2 or later;  SQL Server 2012 SP4 or later.
 DPM 2016 UR2 and later| SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
 DPM 1801 |  SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
 DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) <br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017)
