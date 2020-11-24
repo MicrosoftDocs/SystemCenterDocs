@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmomm
-ms.date: 11/18/2020
+ms.date: 11/24/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -22,7 +22,8 @@ ms.topic: article
 
 This section describes how to configure your firewall to allow communication between the different Operations Manager features on your network.  
 
-Operations Manager uses port 389 for LDAP queries for multiple actions such as agent discovery, active directory integration, etc.
+>[!NOTE]
+> Operations Manager uses port 389 for LDAP queries for multiple actions such as agent discovery, active directory integration, etc. Operations Manager does not support LDAPs.
 
 ## Port assignments
 The following table shows Operations Manager feature interaction across a firewall, including information about the ports used for communication between the features, which direction to open the inbound port, and whether the port number can be changed.
@@ -57,17 +58,17 @@ The following table shows Operations Manager feature interaction across a firewa
 |Reporting server|1433/TCP ---><br>  1434/UDP --->|Reporting data warehouse|Yes <sup>2</sup>||
 |Management server (Audit Collection Services collector)|1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes <sup>2</sup>||
 
-<sup>1</sup> Additionally, the following URL must be allowed by your firewall - https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx.
+- Additionally, the following URL must be allowed by your firewall - https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx.
 
-<sup>2</sup> If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following:
+- If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following:
 
-1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for <instance name>, and then double-click **TCP/IP**.
-2. In the **TCP/IP Properties** dialog box, on the **IP Addresses** tab, note the port value for **IPAall**.  
+  1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for <instance name>, and then double-click **TCP/IP**.
+  2. In the **TCP/IP Properties** dialog box, on the **IP Addresses** tab, note the port value for **IPAall**.  
 
-If you plan on deploying the Operations Manager databases on a SQL Server configured with an Always On Availability Group or migrate after installation, do the following to identify the port:
+- If you plan on deploying the Operations Manager databases on a SQL Server configured with an Always On Availability Group or migrate after installation, do the following to identify the port:
 
-1. In Object Explorer, connect to a server instance that hosts any availability replica of the availability group whose listener you want to view. Click the server name to expand the server tree.
-2. Expand the **Always On High Availability** node and the **Availability Groups** node.
-3. Expand the node of the availability group, and expand the **Availability Groups Listeners** node.
-4. Right-click the listener that you want to view, and select the **Properties** command.
-This opens the **Availability Group Listener Properties** dialog box.
+  1. In Object Explorer, connect to a server instance that hosts any availability replica of the availability group whose listener you want to view. Click the server name to expand the server tree.
+  2. Expand the **Always On High Availability** node and the **Availability Groups** node.
+  3. Expand the node of the availability group, and expand the **Availability Groups Listeners** node.
+  4. Right-click the listener that you want to view, and select the **Properties** command.
+  This opens the **Availability Group Listener Properties** dialog box.
