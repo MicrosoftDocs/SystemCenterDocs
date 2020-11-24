@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmomm
-ms.date: 11/23/2020
+ms.date: 11/24/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -73,4 +73,4 @@ The following table shows Operations Manager feature interaction across a firewa
   This opens the **Availability Group Listener Properties** dialog box.
 
 >[!NOTE]
-> Operations Manager, by default uses LDAP and not LDAPs.
+> Operations Manager uses port 389 for LDAP queries for multiple actions such as agent discovery, active directory integration, etc. Operations Manager does not support LDAPs.
