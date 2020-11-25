@@ -48,7 +48,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
 ::: moniker range="sc-om-2016"
 
->!NOTE]
+>[!NOTE]
 > In addition to the data collected as detailed in  the below table, Operations Manager 2016 UR10 and later also collects the data related to **the platform the setup is hosted on** as part of the data collected under **Setup**.
 
 ::: moniker-end
