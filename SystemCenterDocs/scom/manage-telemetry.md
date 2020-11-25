@@ -46,10 +46,12 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
 ## Telemetry data collected
 
+The following table details the telemetry data that is collected by Operations Manager.  
+
 ::: moniker range="sc-om-2016"
 
 >[!NOTE]
-> In addition to the data collected as detailed in  the below table, Operations Manager 2016 UR10 and later also collects the data related to **the platform the setup is hosted on** as part of the data collected under **Setup**.
+> In addition to the data in the below table, Operations Manager 2016 UR10 and later also collects information about **the platform the setup is hosted on** as part of the data collected under **Setup**.
 
 ::: moniker-end
 
