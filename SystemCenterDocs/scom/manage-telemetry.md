@@ -48,12 +48,6 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
 The following table details the telemetry data that is collected by Operations Manager:  
 
-::: moniker range="sc-om-2016"
-
->[!NOTE]
-> In addition to the data in the below table, Operations Manager 2016 UR10 also collects the information about **the platform the setup is hosted on** as part of the data collected under **Setup**.
-
-::: moniker-end
 
 | Data related To | Data collected |
 | --- | --- |
@@ -65,6 +59,11 @@ The following table details the telemetry data that is collected by Operations M
 | **Database** | 	Whether the management server installation is fresh or upgrade<br /><br /> 	Whether the database (DB) installation is fresh or upgrade<br /><br /> 	Whether the data warehouse (DW) installation is fresh or upgrade <br /><br /> 	Default DB Name <br /><br /> 	DB Size in MB<br /><br /> 	DB Port <br /><br />	Is DB Local <br /><br /> 	DW Port <br /><br /> 	Is DW local <br /><br /> 	Is the SDK service using the local system account <br /><br /> 	Is the agent using the local system account <br /><br />
 | **Console Settings** |	Web console default website<br /><br /> 	Web console authorization mode<br /><br /> 	Web console SSL enabled<br /><br /> 	Count of maintenance schedules <br /><br /> 	Count of active alerts<br /><br /> 	User role <br /><br /> 	Console version <br /><br /> 	If users are enabling daily health report <br /><br /> 	If users are enabling computer discovery <br /><br /> 	If users are discovering entire domain, or the selected one<br /><br /> 	If users are enabling Auto-Select for updates <br /><br />	Telemetry on/off notifications<br /><br /> 	Click count on Tune Management Pack View <br /><br />	Click count, total days, minimum alert count, and total result set <br /><br /> 	Click count, MP name, alert name, and alert count <br /><br /> 	Click count of View or edit the settings of this monitor <br /><br /> 	Click count of View or override sources <br /><br /> 	Click count, source MP name and override MP name <br /><br />  Nano servers count (not applicable for SCOM 1801) <br /><br /> 	Alert view click count <br /><br /> 	Health explorer click count on alert view action menu <br /><br /> 	Open command window click count on alert view action menu <br /><br /> 	Start maintenance mode click count on alert view action menu <br /><br /> 	End maintenance mode click count on alert view action menu <br /><br /> 	Edit maintenance mode click count on alert view action menu <br /><br /> 	Time spent on alert view <br /><br /> 	Total number of items displayed on alert view <br /><br /> 	Performance view click count <br /><br /> 	Time spent on performance view<br /><br />	State view click count <br /><br /> 	Time spent on state view <br /><br /> 	Total number of items displayed on state view
 
+::: moniker range="sc-om-2016"
+
+ In addition to the data in the above table, Operations Manager 2016 UR10 also collects the information about **the platform the setup is hosted on** as part of the data collected under **Setup**.
+
+::: moniker-end
 
 ### Data collected through UTC
 
@@ -97,7 +96,7 @@ The following table details the telemetry data that is collected by Operations M
 - Instances of  *Add to MyWorkspace* action
 - Count of alerts per widget
 - Count of performance legends per widget
-- Count of rows per state widget
+- Count of rows per state widget  
 - Count of icons in topology widget
 - Widget count in a dashboard
 
