@@ -115,7 +115,7 @@ If after installing System Center Operations Manager, you move the Operations Ma
 
     e. In the results pane, scroll to the right of the column titled `column.ManagedTypePropertyId`.
 
-    f. Find the row with a GUID that corresponds to one of those GUIDs returned by the query above (normally row number 8), enter `computer\\<instance\>` followed by a comma, and then the SQL Server port number (`computer\\instance,portNumber`). If you are hosting the database on a SQL Server cluster, replace computer with the virtual network name of the cluster. If the database is part of a SQL Always On Availability Group, replace `computer\\instance` with the availability group listener name in the format of `\<AvalabilityGroupListnerName,portNumber\>`.
+    f. Find the row with a GUID that corresponds to one of those GUIDs returned by the query above (normally row number 8), enter `computer\<instance>` followed by a comma, and then the SQL Server port number (`computer\instance,portNumber`). If you are hosting the database on a SQL Server cluster, replace computer with the virtual network name of the cluster. If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.
 
 
 ### Update Reporting server
