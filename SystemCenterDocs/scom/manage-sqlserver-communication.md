@@ -105,7 +105,7 @@ If after installing System Center Operations Manager, you move the Operations Ma
     b. In the Object Explorer pane, expand **Databases**, and select the operational database (for example, OperationsManager).
 
     c. Click **New Query** on the menu, run the following query to find the GUIDs corresponding to the property name called **MainDatabaseServerName** and take note of the results (it should return 2 records):
-      ```
+      ```SQL
       select * from [dbo].[ManagedTypeProperty]
 
       where [ManagedTypePropertyName] like 'MainDatabaseServerName'
