@@ -51,7 +51,7 @@ The following table details the telemetry data that is collected by Operations M
 ::: moniker range="sc-om-2016"
 
 >[!NOTE]
-> In addition to the data in the below table, Operations Manager 2016 UR10 and later also collects information about **the platform the setup is hosted on** as part of the data collected under **Setup**.
+> In addition to the data in the below table, Operations Manager 2016 UR10 and later, also collects the information about **the platform the setup is hosted on** as part of the data collected under **Setup**.
 
 ::: moniker-end
 
