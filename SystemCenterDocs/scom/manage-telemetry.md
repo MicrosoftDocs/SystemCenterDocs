@@ -46,7 +46,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
 ## Telemetry data collected
 
-The following table details the telemetry data that is collected by Operations Manager.  
+The following table details the telemetry data that is collected by Operations Manager:  
 
 ::: moniker range="sc-om-2016"
 
