@@ -100,22 +100,22 @@ If after installing System Center Operations Manager, you move the Operations Ma
 
 24. On the SQL Server instance hosting the operational database, configure the following:
 
-  a. Open SQL Server Management Studio.
+    a. Open SQL Server Management Studio.
 
-  b. In the Object Explorer pane, expand **Databases**, and select the operational database (for example, OperationsManager).
+    b. In the Object Explorer pane, expand **Databases**, and select the operational database (for example, OperationsManager).
 
-  c. Click **New Query** on the menu, run the following query to find the GUIDs corresponding to the property name called **MainDatabaseServerName** and take note of the results (it should return 2 records):
-   ```
-   select * from [dbo].[ManagedTypeProperty]
+    c. Click **New Query** on the menu, run the following query to find the GUIDs corresponding to the property name called **MainDatabaseServerName** and take note of the results (it should return 2 records):
+      ```
+      select * from [dbo].[ManagedTypeProperty]
 
-   where [ManagedTypePropertyName] like 'MainDatabaseServerName'
-   ```
+      where [ManagedTypePropertyName] like 'MainDatabaseServerName'
+      ```
 
-  d. Expand the operational database (for example, OperationsManager), expand **Tables**, right-click `dbo.GlobalConfig` and then click **Edit Top 200 Rows**.
+    d. Expand the operational database (for example, OperationsManager), expand **Tables**, right-click `dbo.GlobalConfig` and then click **Edit Top 200 Rows**.
 
-  e. In the results pane, scroll to the right to the column titled `column.ManagedTypePropertyId`.
+    e. In the results pane, scroll to the right to the column titled `column.ManagedTypePropertyId`.
 
-  f. Find the row with a GUID that correspond to one of those returned by the query above (normally row number 8), enter `computer\\<instance\>` followed by a comma, and then the SQL Server port number (`computer\\instance,portNumber`). If you are hosting the database on a SQL Server cluster, replace computer with the virtual network name of the cluster. If the database is part of a SQL Always On Availability Group, replace `computer\\instance` with the availability group listener name in the format of `\<AvalabilityGroupListnerName,portNumber\>`.
+    f. Find the row with a GUID that correspond to one of those returned by the query above (normally row number 8), enter `computer\\<instance\>` followed by a comma, and then the SQL Server port number (`computer\\instance,portNumber`). If you are hosting the database on a SQL Server cluster, replace computer with the virtual network name of the cluster. If the database is part of a SQL Always On Availability Group, replace `computer\\instance` with the availability group listener name in the format of `\<AvalabilityGroupListnerName,portNumber\>`.
 
 
 ### Update Reporting server
