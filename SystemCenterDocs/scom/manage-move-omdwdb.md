@@ -49,7 +49,9 @@ On all the management servers in the management group, stop the Operations Manag
 2. Copy the backup file to a local drive of the new SQL Server instance.
 
 ### Update the GlobalSettings table
-In the OperationsManager DB, manually update the **GlobalSettings** table to reflect the host\Instance, where the data warehouse has been moved to. For more information, see [How to configure the Operations Manager Reporting data warehouse database](manage-sqlserver-communication.md#how-to-configure-the-operations-manager-reporting-data-warehouse-database).
+In the OperationsManager DB, manually update the **GlobalSettings** table to reflect the host\Instance, where the data warehouse has been moved to.
+
+For more information, see [How to configure the Operations Manager Reporting data warehouse database](manage-sqlserver-communication.md#how-to-configure-the-operations-manager-reporting-data-warehouse-database).
 
 ### Restore the Reporting data warehouse database on the new SQL Server instance
 
