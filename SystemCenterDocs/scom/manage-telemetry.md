@@ -5,7 +5,7 @@ description: This article provides information about how to manage the telemetry
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  05/22/2018
+ms.date:  11/25/2020
 ms.topic:  article
 ms.prod:  system-center
 ms.technology: operations-manager
@@ -46,9 +46,12 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
 ## Telemetry data collected
 
+The following table details the telemetry data that is collected by Operations Manager:  
+
+
 | Data related To | Data collected |
 | --- | --- |
-| **Setup** | Version of installed SCOM <br /><br /> Version of the  installed SCOM update rollup on different SCOM core components<br /><br /> SCOM management group identifier (To weed out duplicates)<br /><br />  Unique machine identifier <br /><br />  Operating system on which different SCOM core components are launched <br /><br /> Language of the SCOM installation <br /><br /> CPU and memory values of different SCOM servers <br /><br /> Number of SCOM web servers installed <br /><br />  Is reporting server installed <br /><br />  Is ACS installed <br /><br />  Number of gateways in the SCOM environment <br /><br />  Number of management servers in the SCOM environment<br /><br />  Is Operational Insights account setup  |
+| **Setup** | Version of installed SCOM <br /><br /> Version of the  installed SCOM update rollup on different SCOM core components<br /><br /> SCOM management group identifier (To weed out duplicates)<br /><br />  Unique machine identifier <br /><br />  Operating system on which different SCOM core components are launched <br /><br /> Language of the SCOM installation <br /><br /> CPU and memory values of different SCOM servers <br /><br /> Number of SCOM web servers installed <br /><br />  Is reporting server installed <br /><br />  Is ACS installed <br /><br />  Number of gateways in the SCOM environment <br /><br />  Number of management servers in the SCOM environment<br /><br />  Is Operational Insights account setup  
 | **Device monitoring** |  Number of Unix/Linux computers monitored<br /><br /> Number of Windows computers monitored<br /><br /> Number of network devices monitored<br /><br /> Unix/Linux favors monitored<br /><br /> Network devices being monitored - their type, model number, and certification status <br /><br /> Number of applications for which APM is active <br /><br /> Type of workloads for which APM is enabled<br /><br /> Number of distributed applications<br /><br /> Number of computers on which ACS is implemented<br /><br /> Maximum number of concurrent Web console sessions<br /><br /> Number of new SSRS reports present<br /><br /> Number of uncanned SSRS reports present<br /><br /> Frequency of canned reports use<br /><br /> Frequency of each PowerShell command use <br /><br />  Features used in the administration console <br /><br />  Complete Heatmap |
 | **Management packs** |	Number of management packs in the SCOM environment <br /><br /> Number of non-Microsoft signed packs <br /><br /> 	Management packs installed/version/manufacturer (Microsoft and NonMicrosoft) <br /><br /> 	Table names and row counts in the operational database <br /><br /> 	Table names and row counts in the data warehouse database <br /><br /> 	Details of partner products installed <br /><br />	Details of the Microsoft MP import failures and error involved
 | **SCOM Console** |  Time taken for the windows console to launch <br /><br /> 	Time taken for each of the monitoring screens to launch <br /><br /> 	Time taken for each of the administration screens to launch <br /><br /> 	Number of times network vicinity dashboard is launched <br /><br /> 	Number of times the data warehouse jobs are failing <br /><br /> 	Number of times the web console is being launched <br /><br /> 	Number of times the Maintenance mode task and SMM SDK calls are made for create and edit to determine adoption of new feature
@@ -56,6 +59,11 @@ Administrators can turn off this feature at any point of time. Learn more about 
 | **Database** | 	Whether the management server installation is fresh or upgrade<br /><br /> 	Whether the database (DB) installation is fresh or upgrade<br /><br /> 	Whether the data warehouse (DW) installation is fresh or upgrade <br /><br /> 	Default DB Name <br /><br /> 	DB Size in MB<br /><br /> 	DB Port <br /><br />	Is DB Local <br /><br /> 	DW Port <br /><br /> 	Is DW local <br /><br /> 	Is the SDK service using the local system account <br /><br /> 	Is the agent using the local system account <br /><br />
 | **Console Settings** |	Web console default website<br /><br /> 	Web console authorization mode<br /><br /> 	Web console SSL enabled<br /><br /> 	Count of maintenance schedules <br /><br /> 	Count of active alerts<br /><br /> 	User role <br /><br /> 	Console version <br /><br /> 	If users are enabling daily health report <br /><br /> 	If users are enabling computer discovery <br /><br /> 	If users are discovering entire domain, or the selected one<br /><br /> 	If users are enabling Auto-Select for updates <br /><br />	Telemetry on/off notifications<br /><br /> 	Click count on Tune Management Pack View <br /><br />	Click count, total days, minimum alert count, and total result set <br /><br /> 	Click count, MP name, alert name, and alert count <br /><br /> 	Click count of View or edit the settings of this monitor <br /><br /> 	Click count of View or override sources <br /><br /> 	Click count, source MP name and override MP name <br /><br />  Nano servers count (not applicable for SCOM 1801) <br /><br /> 	Alert view click count <br /><br /> 	Health explorer click count on alert view action menu <br /><br /> 	Open command window click count on alert view action menu <br /><br /> 	Start maintenance mode click count on alert view action menu <br /><br /> 	End maintenance mode click count on alert view action menu <br /><br /> 	Edit maintenance mode click count on alert view action menu <br /><br /> 	Time spent on alert view <br /><br /> 	Total number of items displayed on alert view <br /><br /> 	Performance view click count <br /><br /> 	Time spent on performance view<br /><br />	State view click count <br /><br /> 	Time spent on state view <br /><br /> 	Total number of items displayed on state view
 
+::: moniker range="sc-om-2016"
+
+ In addition to the data in the above table, Operations Manager 2016 UR10 also collects the information about **the platform the setup is hosted on** as part of the data collected under **Setup**.
+
+::: moniker-end
 
 ### Data collected through UTC
 
@@ -88,7 +96,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - Instances of  *Add to MyWorkspace* action
 - Count of alerts per widget
 - Count of performance legends per widget
-- Count of rows per state widget
+- Count of rows per state widget  
 - Count of icons in topology widget
 - Widget count in a dashboard
 
