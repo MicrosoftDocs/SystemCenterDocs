@@ -32,7 +32,7 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
     - Online conversions aren't supported. You need to power off the VMware VMs.
     - Anti-virus apps must be supported.
     - VMware tools must be uninstalled from the guest operating system of the VM.
-- [Microsoft Virtual Machine Converter](https://technet.microsoft.com/library/dn873998.aspx): This standalone tool converts VMware VMs to Hyper-V hosts or Azure VMs. It also converts physical machines and disks to Hyper-V hosts. IMPORTANT: This tool is in the process of retirement. It won't be available after June 3, 2017. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/).
+- [Microsoft Virtual Machine Converter](https://techcommunity.microsoft.com/t5/system-center-blog/microsoft-virtual-machine-converter-3-0-is-now-available-for/ba-p/349874): This standalone tool converts VMware VMs to Hyper-V hosts or Azure VMs. It also converts physical machines and disks to Hyper-V hosts. IMPORTANT: This tool is in the process of retirement. It won't be available after June 3, 2017. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/).
 
 ::: moniker range="sc-vmm-2016"
 
