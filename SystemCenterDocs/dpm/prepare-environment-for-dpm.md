@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 08/13/2020
+ms.date: 11/25/2020
 title: Preparing your environment for System Center Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -31,7 +31,7 @@ One of your first decisions is how to deploy DPM. You can deploy DPM:
 
 - **As a Hyper-V virtual machine**—You can run DPM as a virtual machine (hosted on an on-premises Hyper-V host server), to back up on-premises data. For a list of considerations in this environment see Install DPM as a virtual machine on an on-premises Hyper-V server.
 
-- **As a Windows virtual machine in VMWare**—You can deploy DPM to provide protection for Microsoft workloads running on Windows virtual machines in VMWare. In this scenario DPM can be deployed as a physical standalone server, as a Hyper-V virtual machine, or as a Windows virtual machine in VMWare.
+- **As a Windows virtual machine in VMware**—You can deploy DPM to provide protection for Microsoft workloads running on Windows virtual machines in VMware. In this scenario DPM can be deployed as a physical standalone server, as a Hyper-V virtual machine, or as a Windows virtual machine in VMware.
 
 - **As an Azure virtual machine**—DPM can run as a virtual machine in Azure to back up cloud workloads running as Azure virtual machines. For information about this deployment see Install DPM as an Azure virtual machine.
 
@@ -55,8 +55,8 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 **DPM version** | **SQL version**
 --- | ---
-DPM 2016 | SQL Server 2014 SP2;  SQL Server 2012 SP4.
-DPM 2016 UR2 and later| SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+DPM 2016 | SQL Server 2014 SP2 or later <br/><br/>  SQL Server 2012 SP4 or later.
+DPM 2016 UR2 and later| SQL Server 2014 SP2 or later <br/><br/> SQL Server 2012 SP4 or later <br/><br/> SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
 DPM 1801 |  SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
 DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) <br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017)
 
@@ -142,7 +142,7 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/li
 |-----------|-------|
 |Protected workload size limits|DPM 2016 and later with Modern Backup Storage do not have LDM limits. <br/><br/> With DPM 2016 and later, you can protect more data per DPM server. Up to 120 TB of storage limit per DPM server has been tested. However, 120 TB is only a soft limit. Validation is underway to test a higher limit. This guidance will be updated post completion of the validation.|
 |.NET framework|All protected computers need at least .NET Framework 4.0 installed before you install the DPM protection agent.|
-|Windows Management Framework (WMF) <br/><br/> (Not applicable of DPM 2019)| If you are protecting a server released prior to Windows Server 2012, you must install the appropriate version of WMF **before** installing the DPM agent:<br/><br/> - [WMF 3.0](https://www.microsoft.com/download/details.aspx?id=34595) for Windows Server 2008 SP 2<br/> - [WMF 4.0](https://www.microsoft.com/download/details.aspx?id=40855) for Windows 7, Windows Embedded Standard 7, Windows Server 2008 R2<br/><br/> Windows Server 2012 and later do not require a separate installation of WMF.
+|Windows Management Framework (WMF) <br/><br/> (Not applicable of DPM 2019)| If you are protecting a server released prior to Windows Server 2012, you must install the appropriate version of WMF **before** installing the DPM agent:<br/><br/> - [WMF 3.0](https://www.microsoft.com/download/details.aspx?id=34595) for Windows Server 2008 SP 2<br/> - [Windows Management Frame 5.1](https://www.microsoft.com/download/details.aspx?id=54616) for Windows 7, Windows Embedded Standard 7, Windows Server 2008 R2<br/><br/> Windows Server 2012 and later do not require a separate installation of WMF.
 |Protected workloads|Review the DPM protection support matrix for an up-to-date list of protected workloads.|
 |Prerequisites|DPM protection agent must be installed on protected computer. For more information, see Set up the protection agent.<br/><br/> Protected volumes must be at least 1 GB in size with NTFS formatting.<br/><br/> Server operating systems protected by DPM must be 64-bit.|
 

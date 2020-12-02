@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 10/19/2020
+ms.date: 11/23/2020
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -172,18 +172,48 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 ## <a name="BKMK_Dedup"></a>Deduplication issues
 
 ### Deduplicated volumes support
-**Issue**: Deduplication support for DPM depends on operating system support.
+**Note**: Deduplication support for DPM depends on operating system support.
 
 **For NTFS Volumes:**
 
-|Operating system of protected server|Operating system of DPM server|DPM version|Dedup support|
-|----------------------------------------|----------------------------------|---------------|-----------------|
-|Windows 2012|Windows Server 2012|DPM 2012 with SP1, DPM 2012 R2|Y|
-|Windows 2012|Windows Server 2012 R2|DPM 2012 R2|Y|
-|Windows Server 2012 R2|Windows Server 2012 R2|DPM 2012 R2|Y|
-|Windows Server 2012 R2|Windows Server 2012|DPM 2012 with SP1, DPM 2012 R2|N|
+::: moniker range="sc-dpm-2016"
+
+| Operating system of protected server | Operating system of DPM server | DPM version | Dedupe support  |
+|------------------------------------------|------------------------------------|-----------------|--------------------|
+| Windows Server 2016                      | Windows Server 2016                | DPM 2016        | Y               |
+| Windows Server 2012 R2                   | Windows Server 2016                | DPM 2016        | Y                 |
+| Windows Server 2012                     | Windows Server 2016                | DPM 2016        | Y                 |
+| Windows Server 2016                      | Windows Server 2012 R2                | DPM 2016        | Y\*\*              |
+| Windows Server 2012 R2                   | Windows Server 2012 R2                | DPM 2016        | Y                  |
+| Windows Server 2012                      | Windows Server 2012 R2               | DPM 2016        | Y                  |
+
+- **When protecting a WS 2019 NTFS deduped volume with DPM 2019 on WS 2016 OR a WS 2016 NTFS deduped volume with DPM 2016 on WS 2012 R2, the backups and restores will be non-deduped. This means that the backups will consume more space on the DPM server than the original NTFS deduped volume.
+
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
+
+| Operating system of protected server | Operating system of DPM server | DPM version | Dedupe support  |
+|------------------------------------------|------------------------------------|-----------------|--------------------|
+| Windows Server 2019                      | Windows Server 2019                | DPM 2019        | Y                  |
+| Windows Server 2016                      | Windows Server 2019                | DPM 2019        | Y\*                |
+| Windows Server 2012 R2                   | Windows Server 2019                | DPM 2019        | N                  |
+| Windows Server 2012                      | Windows Server 2019                | DPM 2019        | N                  |
+| Windows Server 2019                      | Windows Server 2016                | DPM 2019        | Y\*\*              |
+| Windows Server 2016                      | Windows Server 2016                | DPM 2019        | Y                  |
+| Windows Server 2012 R2                   | Windows Server 2016                | DPM 2019        | Y                  |
+| Windows Server 2012                      | Windows Server 2016                | DPM 2019        | Y                  |
+
+
+- *When protecting a WS 2016 NTFS Deduped Volume with DPM 2019 running on WS 2019, the recoveries may be affected. We have a fix for doing recoveries in an non-deduped way which will be part of later versions of DPM 2019. Reach out to DPM support if you need this fix on DPM 2019 UR2.
+
+- **When protecting a WS 2019 NTFS deduped volume with DPM 2019 on WS 2016 OR a WS 2016 NTFS deduped volume with DPM 2016 on WS 2012 R2, the backups and restores will be non-deduped. This means that the backups will consume more space on the DPM server than the original NTFS deduped volume.
+
+
+**Issue**: If you upgrade the protected server operating system from Windows Server 2016 to Windows Server 2019, then backup of NTFS deduped volume gets affected due to change in dedupe logic.  
+
+**Workaround**: Fix will be available in the future update rollup of DPM 2019. Reach out to DPM support in case you need this fix for DPM 2019 UR2.
 
 **For ReFS Volumes:**
 
@@ -377,6 +407,13 @@ These workloads can be running on a single server or in a cluster configuration.
 **Issue**: DPM can't protect SQL Server databases hosted on Windows Server 2012 SOFS.
 
 **Workaround**: Move the SQL Server databases off the SOFS.
+
+### DPM can't protect SQL server DAG or AG, where the role name on failover cluster is different than the named AG on SQL.
+
+**Issue**: DPM can't protect SQL server Distributed Availability Group (DAG) or Availability Group (AG), where the role name on failover cluster is different than the named AG on SQL.
+
+**Workaround**: The role name for SQL server DAG or AG on failover cluster must be the same as the SQL server  availability group or distributed availability group name on SQL and vice versa.
+
 
 ## <a name="BKMK_VM"></a>Hyper-V and virtual machine protection issues
 
