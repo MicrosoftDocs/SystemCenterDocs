@@ -212,7 +212,7 @@ Use the following procedures to prepare computers for deployment of Service Mana
 ::: moniker range=">=sc-sm-1807"
 
 > [!IMPORTANT]
-> When you install System Center 2019 Service Manager with SQL Server Reporting Services (SSRS) 2017, Service Manager reports don't deploy, an event 33410 occurs and displays the details for the deployment failure. See the following information for the cause and resolution for this issue.  
+> When you install System Center 2019 Service Manager with SQL Server Reporting Services (SSRS) 2017 or later, Service Manager reports don't deploy, an event 33410 occurs and displays the details for the deployment failure. See the following information for the cause and resolution for this issue.  
 
 SSRS 2017 version 14.0.600.1274 and later includes a new advanced setting *AllowedResourceExtensionsForUpload*. This setting restricts the set of extensions of resource files that can be uploaded to the reporting server. This issue occurs because Service Manager reporting uses extensions that aren't included in the default set in *AllowedResourceExtensionsForUpload*.
 
