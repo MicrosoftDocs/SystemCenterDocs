@@ -75,14 +75,15 @@ You need the following permissions when you are installing SSRS:
 
 -   Permissions to place a binary file into the \\Program Files\\Microsoft SQL Server\\*Instance Name*\Reporting Services\\ReportServer\\Bin folder on the computer hosting the data warehouse management server .
 
-::: moniker range>="sc-sm-1807"
+::: moniker range">=sc-sm-1807"
 
 **Important**
-When you install System Center 2019 Service Manager with the latest version of SQL Server Reporting Services (SSRS) 2017, Operations Manager reports don't deploy, an event with ID 33410 appears including the details of the deployment failure.
+
+When you install System Center 2019 Service Manager with the latest version of SQL Server Reporting Services (SSRS) 2017, Operations Manager reports don't deploy, an event with ID 33410 appears including the details for deployment failure.
 
 SSRS 2017 version 14.0.600.1274 and later includes a new advanced setting *AllowedResourceExtensionsForUpload*. This setting restricts the set of extensions of resource files that can be uploaded to the reporting server. This issue occurs because Service Manager reporting uses extensions that aren't included in the default set in *AllowedResourceExtensionsForUpload*.
 
-To resolve this issue, add \*.\* to the list of extensions. Follow these steps to add:
+To resolve this issue, add **\*.\*** to the list of extensions. Follow these steps:
 
 1. Start SQL Server Management Studio, and then connect to a report server instance that Service Manager uses.
 2. Right-click the report server name, select **Properties**, and then select **Advanced**.
