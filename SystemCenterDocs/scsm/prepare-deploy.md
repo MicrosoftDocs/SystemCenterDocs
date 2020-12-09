@@ -75,7 +75,7 @@ You need the following permissions when you are installing SSRS:
 
 -   Permissions to place a binary file into the \\Program Files\\Microsoft SQL Server\\*Instance Name*\Reporting Services\\ReportServer\\Bin folder on the computer hosting the data warehouse management server .
 
-::: moniker range">=sc-sm-1807"
+::: moniker range=">=sc-sm-1807"
 
 **Important**
 
