@@ -209,7 +209,7 @@ Use the following procedures to prepare computers for deployment of Service Mana
 
 9. In the **Current Report Server** area, click **Stop**, and then click **Start**.
 
-::: moniker range=">=sc-sm-1807"
+::: moniker range=">=sc-sm-2019"
 
 > [!IMPORTANT]
 > When you install System Center Service Manager with SQL Server Reporting Services (SSRS) 2017 or later, Service Manager reports don't deploy, an event 33410 occurs and displays the details for the deployment failure. See the following information for the cause and resolution for this issue.  
