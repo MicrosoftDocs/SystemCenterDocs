@@ -5,7 +5,7 @@ description: This article provides information on how to create users, assign ro
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 09/02/2020
+ms.date: 12/11/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
