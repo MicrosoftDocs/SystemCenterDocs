@@ -135,7 +135,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Workaround**: Upgrade your DPM server to version 2019.
 
-### Protection of deduped NTFS volumes on Windows Server 2012 R2 and 2012 is not supported with DPM on Windows Server 2019
+### Deduped NTFS volumes on Windows Server 2012 R2 and 2012 are not protected with DPM on Windows Server 2019
 
 **Description**: DPM 2019, running on Windows Server 2019, does not support the protection of deduped NTFS volumes on Windows Server 2012 R2 and Windows Server 2012. For more information, see the [support matrix](dpm-protection-matrix.md).
 
