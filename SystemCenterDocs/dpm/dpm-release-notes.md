@@ -18,6 +18,11 @@ ms.topic: article
 
 This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
 
+We recommend you to see the following articles for detailed information about what DPM supports and can back up: 
+
+- [What can DPM backup](dpm-protection-matrix.md)
+- [What DPM supports](dpm-support-issues.md)
+
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1807"
@@ -134,13 +139,6 @@ The following sections summarize the release notes for DPM 2019 and include the 
 **Description**: With DPM 2019 central console you cannot manage any DPM 1801 or DPM 1807 servers.
 
 **Workaround**: Upgrade your DPM server to version 2019.
-
-### Deduped NTFS volumes on Windows Server 2012 R2 and 2012 are not protected with DPM on Windows Server 2019
-
-**Description**: DPM 2019, running on Windows Server 2019, does not support the protection of deduped NTFS volumes on Windows Server 2012 R2 and Windows Server 2012. For more information, see the [support matrix](dpm-protection-matrix.md).
-
-**Workaround**: None
-
 
 ## DPM 2019 UR1 release notes
 No known issues for DPM 2019 UR1.
