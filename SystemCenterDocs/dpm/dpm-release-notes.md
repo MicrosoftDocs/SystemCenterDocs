@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 10/20/2020
+ms.date: 12/11/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -17,6 +17,11 @@ ms.topic: article
 ::: moniker range="sc-dpm-2019"
 
 This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
+
+We recommend you to see the following articles for detailed information about what DPM supports and can back up: 
+
+- [What can DPM backup](dpm-protection-matrix.md)
+- [What DPM supports](dpm-support-issues.md)
 
 ::: moniker-end
 
