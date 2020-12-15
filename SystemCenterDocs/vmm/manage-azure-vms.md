@@ -4,7 +4,7 @@ title: Manage Azure VMs
 description: This article provides information about the basic actions you can do on Azure instances, without leaving the VMM console.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 03/14/2019
+ms.date: 12/15/2020
 ms.topic: article
 manager: vvithal
 ms.prod: system-center
@@ -49,3 +49,4 @@ With this feature, You cannot:
 - Manage Azure Networks
 - See the Dashboard Summary view
 - See the Performance Monitoring Summary
+- Manage more than 50 Azure VMs using Azure profile
