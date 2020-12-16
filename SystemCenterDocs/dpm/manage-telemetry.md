@@ -29,8 +29,8 @@ Administrators can turn off this feature at any point of time. For detailed info
 
 ## Turn on/off telemetry from console
 
-1. In the Data Protection Manager console, go to **Management**, and click **Options** in the top pane.
-2. In the **Options** dialog box, select **Diagnostic and Usage Data Settings.**
+1. In the Data Protection Manager console, go to **Management**, and then click **Options** in the top pane.
+2. In the **Options** dialog box, select **Diagnostic and Usage Data Settings**.
 
     ![console telemetry options](./media/telemetry/telemetry-options.png)
 
