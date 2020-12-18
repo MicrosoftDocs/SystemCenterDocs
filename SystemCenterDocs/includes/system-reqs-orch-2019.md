@@ -79,9 +79,9 @@ The following software is required for a full installation of Orchestrator on a 
 
 ## .NET requirements
 
-All Orchestrator server roles require .NET 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .Net 4.5 with WCF Activation.
+All Orchestrator server roles require .NET 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .NET 4.5 with WCF Activation.
 
-You can download .Net 3.5 SP1 [from the download center](https://www.microsoft.com/en-in/download/details.aspx?id=22).  
+You can download .NET 3.5 SP1 [from the download center](https://www.microsoft.com/en-in/download/details.aspx?id=22).  
 
 ### To turn on WCF activation
 

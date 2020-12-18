@@ -78,11 +78,11 @@ We recommend the following software for a full installation of Orchestrator on a
 >[!NOTE]
 > When you deploy Orchestrator in an **Always ON** scenario, the Database Availability wizard prompts for the database encryption key password. For information on how to retrieve the password, see [database migration](../orchestrator/migrate-orchestrator-between-environments.md).
 
-## .Net requirements
+## .NET requirements
 
-All Orchestrator server roles require .Net 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .Net 4.5 with WCF Activation.
+All Orchestrator server roles require .NET 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .NET 4.5 with WCF Activation.
 
-You can download .Net 3.5 SP1 at:  
+You can download .NET 3.5 SP1 at:  
 
 ### To turn on WCF activation
 
