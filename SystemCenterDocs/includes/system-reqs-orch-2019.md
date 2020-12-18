@@ -4,7 +4,7 @@ title: include file
 description: include file to provide system requirements for Orchestrator 2019, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: v-jysur
 manager: vvithal
-ms.date: 10/13/2020
+ms.date: 12/18/2020
 ms.custom: na
 author: JYOTHIRMAISURI
 ms.prod: system center
@@ -73,6 +73,9 @@ The following software is required for a full installation of Orchestrator on a 
 **SQL Server 2019** | Y
 **SQL Server 2017** | Y
 **SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | Y
+
+>[!NOTE]
+> When you deploy Orchestrator in an **Always ON** scenario, the Database Availability wizard prompts for the database encryption key password. For information on how to retrieve the password, see [database migration](../orchestrator/migrate-orchestrator-between-environments.md).
 
 ## .NET requirements
 

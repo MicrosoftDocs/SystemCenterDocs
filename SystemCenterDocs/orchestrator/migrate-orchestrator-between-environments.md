@@ -6,7 +6,7 @@ ms.technology: orchestrator
 ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
-ms.date: 01/17/2018
+ms.date: 12/18/2020
 manager: carmonm
 ---
 
@@ -75,6 +75,9 @@ Deploy SQL Server to environment B.
 Restore the Microsoft SQL Server service master key.  This will enable decryption of Orchestrator data on the new SQL server.  
 
 Create a batch script with the following command:  
+
+>[!NOTE]
+> If you intend to use\migrate the Orchestrator database In a **SQL Always ON** instance, you will be prompted for the database encryption key password.
 
 ```  
 Sqlcmd -Q "RESTORE SERVICE MASTER KEY FROM FILE = 'C:\BACKUP\MASTER_KEY.BAK' DECRYPTION BY PASSWORD = 'password';"  

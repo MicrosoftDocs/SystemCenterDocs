@@ -4,7 +4,7 @@ title: include file
 description: include file to provide the system requirements for System Center 2016 - Orchestrator, and includes the  general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 author: rayne-wiselman
 manager: carmon
-ms.date: 05/17/2018
+ms.date: 12/18/2020
 ms.prod: system-center-threshold
 ms.technology: Orchestrator
 ms.topic: include
@@ -74,6 +74,9 @@ We recommend the following software for a full installation of Orchestrator on a
 | **SQL Server 2012 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)** |       Y       |
 | **SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)** |       Y       |
 | **SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** |       Y       |
+
+>[!NOTE]
+> When you deploy Orchestrator in an **Always ON** scenario, the Database Availability wizard prompts for the database encryption key password. For information on how to retrieve the password, see [database migration](../orchestrator/migrate-orchestrator-between-environments.md).
 
 ## .Net requirements
 
