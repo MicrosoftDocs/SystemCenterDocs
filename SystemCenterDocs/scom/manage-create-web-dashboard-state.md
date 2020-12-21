@@ -92,6 +92,9 @@ To perform these actions, hover your mouse over the widget and click on the elli
 
 ## Additional view options in web console widgets
 
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
+
 Currently, in Operations Manager web console, when a user creates an Alert widget and chooses the columns to display, there is no option to set the display with **Sort by** option. As the option to sort is missing, the widget displays alerts in random order, which is of no significance. Alert monitoring teams usually prefer to have a sort order (descending or ascending) on specific columns such as "free disk space", "health of a computer" etc., which can help in prioritizing their action plans.
 
 In earlier releases, this feature is not available for State widget, Alert widget, and on all H5 dashboard personalization but is available on all views of operations console of Operations Manager 2019.
