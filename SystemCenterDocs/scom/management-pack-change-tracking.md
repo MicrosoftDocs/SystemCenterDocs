@@ -16,9 +16,12 @@ MonikerRange: 'sc-om-2019'
 
 In System Center - Operations Manager, user roles are defined to potentially change monitoring settings for applications and services through management packs. There can be multiple users associated with a single user role. In earlier versions of Operations Manager, there was no tracking of these changes to identify the user who has done the changes and when.
 
-The track changes includes the following;
+The track changes includes the following:
 
 - [Change tracking for Management pack history](#change-tracking-for-management-pack-history)
+- [Change tracking for Management pack objects](#change-tracking-for-management-pack-objects)
+- [Change tracking for Overrides tracking](#change-tracking-for-overrides-tracking)
+- [Change tracking for Data grooming settings](#change-tracking-for-data-grooming-settings)
 - [Change tracking for agent and monitor health reset](#change-tracking-for-agent-and-monitor-health-reset)
 
 ## Change tracking for Management pack history
