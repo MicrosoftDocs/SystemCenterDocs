@@ -114,10 +114,11 @@ Operations Manager 2019 UR3 introduces further enhancements to the change tracki
 
 1. **Agent tracking**: Reports all install/uninstall/repair/upgrade actions on Windows/Linux agent.
 2. **Monitor health reset tracking**: Reports on monitor health reset status.
-   For this feature to function, execute the script `DataWarehouseJobStatusSynchSproc.sql` in SQL Server Management Studio (SSMS) on operations manager database, before applying 2019 UR3 patches.
 
-   > [!NOTE]
-   > `DataWarehouseJobStatusSynchSproc.sql` script is available with the UR3 patches.
+For this feature to function, execute the script `DataWarehouseJobStatusSynchSproc.sql` in SQL Server Management Studio (SSMS) on operations manager database, before applying 2019 UR3 patches.
+
+> [!NOTE]
+> `DataWarehouseJobStatusSynchSproc.sql` script is available with the UR3 patches.
 
 ### View changes on agent
 
