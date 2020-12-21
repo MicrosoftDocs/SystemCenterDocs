@@ -119,7 +119,7 @@ The **Sort by** option is available under **Edit** > **Personalize**.
 
 1. Select a column under **Group by**.
 2. Select **Expand All** to view the columns grouped.
-3. Select the columns for sorting under **Sort by** , and select the **Order** (Ascending or Descending).
+3. Select the columns for sorting under **Sort by**, and select the **Order** (Ascending or Descending).
 4. Click **Save the settings**.
 
 Here is a sample view:
