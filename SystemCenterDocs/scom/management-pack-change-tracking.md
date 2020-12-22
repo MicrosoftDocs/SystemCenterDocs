@@ -24,7 +24,7 @@ Change tracking feature is available for the following: :
 
 - [Change tracking for Management pack history](#change-tracking-for-management-pack-history)
 - [Change tracking for Management pack objects](#change-tracking-for-management-pack-objects)
-- [Change tracking for Overrides tracking](#change-tracking-for-overrides-tracking)
+- [Change tracking for Overrides](#change-tracking-for-overrides) 
 - [Change tracking for Data grooming settings](#change-tracking-for-data-grooming-settings)
 - [Change tracking for agent](#change-tracking-for-agent)
 - [Change tracking for monitor health reset](#change-tracking-for-monitor-health-reset)
