@@ -5,7 +5,7 @@ description: Include file to summarize the supported storage arrays for VMM 2019
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 12/21/2020
+ms.date: 12/22/2020
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
