@@ -16,15 +16,13 @@ MonikerRange: 'sc-om-2019'
 
 In System Center - Operations Manager, user roles are defined to potentially change monitoring settings for applications and services through management packs. There can be multiple users associated with a single user role. In earlier versions of Operations Manager, there was no tracking of these changes to identify the user who has done the changes and when.
 
-As Operations Manager is a monitoring platform, multiple users interact with Operation Manager to monitor the data that is relevant to their role. A profile is defined for a group of users that imposes role-based security, and limit privileges that users have for various aspects of Operations Manager. When multiple users access and change the same object, it gets difficult to identify the user who has done the changes and when.
-
-With Operations Manager UR2, change tracking feature was introduced.
+With Operations Manager UR2, change tracking feature was introduced. As Operations Manager is a monitoring platform, multiple users interact with Operation Manager to monitor the data that is relevant to their role. A profile is defined for a group of users that imposes role-based security, and limit privileges that users have for various aspects of Operations Manager. When multiple users access and change the same object, it gets difficult to identify the user who has done the changes and when.
 
 Change tracking feature is available for the following: :
 
 - [Change tracking for Management pack history](#change-tracking-for-management-pack-history)
 - [Change tracking for Management pack objects](#change-tracking-for-management-pack-objects)
-- [Change tracking for Overrides](#change-tracking-for-overrides) 
+- [Change tracking for Overrides](#change-tracking-for-overrides)
 - [Change tracking for Data grooming settings](#change-tracking-for-data-grooming-settings)
 - [Change tracking for agent](#change-tracking-for-agent)
 - [Change tracking for monitor health reset](#change-tracking-for-monitor-health-reset)
