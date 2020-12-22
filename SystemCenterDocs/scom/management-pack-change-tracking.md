@@ -16,7 +16,11 @@ MonikerRange: 'sc-om-2019'
 
 In System Center - Operations Manager, user roles are defined to potentially change monitoring settings for applications and services through management packs. There can be multiple users associated with a single user role. In earlier versions of Operations Manager, there was no tracking of these changes to identify the user who has done the changes and when.
 
-The track changes includes the following:
+As Operations Manager is a monitoring platform, multiple users interact with Operation Manager to monitor the data that is relevant to their role. A profile is defined for a group of users that imposes role-based security, and limit privileges that users have for various aspects of Operations Manager. When multiple users access and change the same object, it gets difficult to identify the user who has done the changes and when.
+
+With Operations Manager UR2, change tracking feature was introduced.
+
+Change tracking feature is available for the following: :
 
 - [Change tracking for Management pack history](#change-tracking-for-management-pack-history)
 - [Change tracking for Management pack objects](#change-tracking-for-management-pack-objects)
@@ -29,7 +33,7 @@ The track changes includes the following:
 > [!NOTE]
 > This feature is applicable for 2019 UR2 and later.
 
-Operations Manager 2019 supports change tracking in management packs. Change tracking is enabled by default in 2019 UR2 to track and report the changes on the management packs and management pack objects.
+Operations Manager 2019 supports change tracking in management packs. Change tracking is enabled by default in 2019 UR2 and later to track and report the changes on the management packs and management pack objects.
 
 Three new reports **Management Pack History**, **Management Pack Objects** and **Overrides tracking** are now available to display the changes. These reports are available under **Reporting** > **Microsoft Generic Report library**.
 
@@ -91,7 +95,7 @@ The management pack object report contains the following fields and values:
 
 ![Test management pack](./media/change-tracking/test-management-pack.png)
 
-### Change tracking for Overrides tracking
+### Change tracking for Overrides
 
 Overrides are created to tune monitoring. Multiple user roles can create these overrides in Operations Manager. When different users create overrides, it becomes crucial to track and capture the user who made these changes and when. With **Overrides tracking report,** all the overrides either created through console, PowerShell, or SDK APIs are captured.
 
@@ -103,22 +107,15 @@ This report has relevant fields/information to track overrides in detail such as
 
 Grooming settings are tied with management pack grooming settings for data warehouse. This means, by default, three versions of management packs and 400 days old data will be shown in the reports. For example: whenever you make a change in *MyCustomMP* and save your changes in a new version as v1, v2, v3, v4 over Seven days. Then by default, v1 will be groomed and you will only see changes for v2, v3 and v4. Besides this, any change which is 400 days old will be groomed.
 
-## Change tracking for agent and monitor health reset
+## Change tracking for agent
 
 > [!NOTE]
 > This feature is applicable for 2019 UR3 and later.
 
-In System Center Operations Manager, user roles (profiles) are defined to access and perform actions on the monitored objects. As Operations Manager is a monitoring platform, multiple users interact with Operation Manager to monitor the data that is relevant to their role. A profile is defined for a group of users that imposes role-based security, and limit privileges that users have for various aspects of Operations Manager. When multiple users access and change the same object, it gets difficult to identify the user who has done the changes and when.
-
-Operations Manager 2019 UR3 introduces further enhancements to the change tracking feature and supports change tracking for agent and monitor health reset. The following two reports are added to Microsoft generic report library:
+Operations Manager 2019 UR3 introduces further enhancements to the change tracking feature and supports change tracking for agent. The following report is added to Microsoft generic report library:
 
 1. **Agent tracking**: Reports all install/uninstall/repair/upgrade actions on Windows/Linux agent.
-2. **Monitor health reset tracking**: Reports on monitor health reset status.
 
-For this feature to function, execute the script `DataWarehouseJobStatusSynchSproc.sql` in SQL Server Management Studio (SSMS) on operations manager database, before applying 2019 UR3 patches.
-
-> [!NOTE]
-> `DataWarehouseJobStatusSynchSproc.sql` script is available with the UR3 patches.
 
 ### View changes on agent
 
@@ -129,6 +126,22 @@ You can have a consolidated view of all the changes made to an agent under **Rep
 ![Agent tracking report](./media/change-tracking/agent-tracking-report.png)
 
 ![Agent name](./media/change-tracking/agent-name.png)
+
+## Change tracking for monitor health reset
+
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
+
+
+Operations Manager 2019 UR3 introduces further enhancements to the change tracking feature and supports change tracking for monitor health reset. The following report is added to Microsoft generic report library:
+
+1. **Monitor health reset tracking**: Reports on monitor health reset status.
+
+For this feature to function, execute the script `DataWarehouseJobStatusSynchSproc.sql` in SQL Server Management Studio (SSMS) on operations manager database, before applying 2019 UR3 patches.
+
+> [!NOTE]
+> `DataWarehouseJobStatusSynchSproc.sql` script is available with the UR3 patches.
+
 
 ### View monitor health reset actions
 
