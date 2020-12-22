@@ -5,7 +5,7 @@ description: This article summarizes supported storage arrays for VMM.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 12/21/2020
+ms.date: 12/22/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -34,7 +34,7 @@ ms.technology: virtual-machine-manager
 | NEC / NEC Storage M-Series <br/><br/> M310, M510, M710, M310F, M710F, M320, M320F  | iSCSI/FC | Min Controller Firmware: 010A(Storage Control Software Revision 0941 or later) | SMI-S v1.6.1 | [Details](https://www.nec.com/en/global/prod/storage/product/san/index.html) |
 |Fujitsu/ETERNUS<br/><br/>DX60 S3, DX60 S4, DX100 S3, DX100 S4, DX200 S3, DX200 S4<br/>DX500 S3, DX500 S4, DX600 S3,  DX600 S4, DX8700 S3, <br/>DX8900 S3, DX8900 S4, DX200F, AF250, AF250 S2, AF650, AF650 S2|iSCSI/FC|V10L60 or later | EMBEDDED SMI-S v1.6.0 | [Storage System ETERNUS](http://www.fujitsu.com/global/products/computing/storage/) |
 |DELL-EMC <br/><br/> XtremIO All Flash Array	| iSCSI/FC	| XtremIO XMS Server Versions: 4.2.0 and 4.2.1 | Embedded SMI-S V1.6.1 | [Link](http://www.emc.com/en-us/storage/xtremio/benefits.htm) |
-|DELL <br/><br/> SC Series	| iSCSI/FC	| SCOS: 7.2 or later <br/> DSM: 2016 R3 or later <br/><br/> SCOS 7.3.5 or later, DSM 2018 R1.20 or later <br/><br/> SCOS 7.4x, DSM 2020 R1 (20.1.1) or later | SMI-S <br/>version 1.6 | [Link](http://www.dell.com/us/business/p/dell-compellent?dgc=IR&cid=emcstorcat&lid=1) |
+|DELL <br/><br/> SC Series	| iSCSI/FC	| SCOS: 7.2 or later <br/> DSM: 2016 R3 or later <br/><br/> SCOS 7.3.5 or later, DSM 2018 R1.20 or later <br/><br/> SCOS 7.4.x, DSM 2020 R1 (20.1.1) or later | SMI-S <br/>version 1.6 | [Link](http://www.dell.com/us/business/p/dell-compellent?dgc=IR&cid=emcstorcat&lid=1) |
 |NetApp <br/><br/> FAS	| iSCSI/FC/SMB	| 8.2 and later | Proxy NetApp SMIS Provider 5.2.4 or later | [Link](https://now.netapp.com) |
 |Huawei <br/><br/> OceanStor V3 Series	| iSCSI/FC	| V300R006  and later|Huawei SMI-S <br/>version 2.1.01 or later | [Link](https://e.huawei.com/in/products/cloud-computing-dc/storage/massive-storage/mid-range) |
 |Huawei <br/><br/> OceanStor Dorado V3 Series	| iSCSI/FC	| V300R001 and later|Huawei SMI-S <br/>version 2.1.01 or later | [Link](http://e.huawei.com/en/products/cloud-computing-dc/storage/unified-storage/dorado-v3) |
