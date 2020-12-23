@@ -56,7 +56,7 @@ Secure the connection between Runbook worker and SQL server to avoid clear text 
 
 2. Add the following under the (root) `configuration` key:
 
-    ```xml
+  ```xml
     <configuration>
     ...
       <connectionStrings>  
@@ -66,8 +66,8 @@ Secure the connection between Runbook worker and SQL server to avoid clear text 
       </connectionStrings>
     ...
     </configuration>
-  ```
-  
+```
+
 3. The `connectionString` depends on your authentication settings:
    - If using Integrated Windows Authentication (without an SQL user/pass):
 
