@@ -31,7 +31,7 @@ You can take advantage of the following HTML5 dashboard capabilities:
 2. Visualize monitoring data in HTML 5 dashboards with:
 
    > [!NOTE]
-   > Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+   > Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option). 
 
     - [Alert widget](manage-create-web-dashboard-alerts.md)
 
