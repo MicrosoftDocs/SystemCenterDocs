@@ -96,9 +96,9 @@ To perform these actions, hover your mouse over the widget and click on the elli
 
 Alert widget now supports sort by option.
 
-In earlier releases, this feature is not available for State widget, Alert widget, and on all H5 dashboard personalization but is available on all views of operations console of Operations Manager 2019.
+In earlier releases, this feature is not available for Alert widget, and on all H5 dashboard personalization but is available on all views of operations console of Operations Manager 2019.
 
-With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and State widget, also group the columns.
+With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and also group the columns.
 
 
 ### Support for sort by option
