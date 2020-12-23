@@ -56,16 +56,16 @@ Secure the connection between Runbook worker and SQL server to avoid clear text 
 
 2. Add the following under the (root) `configuration` key:
 
-  ```xml
-  <configuration>
-  ...
-    <connectionStrings>  
-      <add name="OrchestratorStoreConnectionString"
-           providerName="System.Data.SqlClient"
-           connectionString="<explained-below>" />
-    </connectionStrings>
-  ...
-  </configuration>
+    ```xml
+    <configuration>
+    ...
+      <connectionStrings>  
+        <add name="OrchestratorStoreConnectionString"
+             providerName="System.Data.SqlClient"
+             connectionString="<explained-below>" />
+      </connectionStrings>
+    ...
+    </configuration>
   ```
 3. The `connectionString` depends on your authentication settings:
    - If using Integrated Windows Authentication (without an SQL user/pass):
