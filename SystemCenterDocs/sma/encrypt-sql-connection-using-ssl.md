@@ -49,12 +49,13 @@ Use the following procedure:
 
 ## Encrypt the network traffic from runbooks
 
-Secure the connection between Runbook Worker and SQL Server to avoid clear text display of network traffic from runbook server.
------
+Secure the connection between Runbook worker and SQL server to avoid clear text display of network traffic from runbook server.
+
 
 1. Navigate to the installation path of SMA and locate the `Orchestrator.Settings.config` file.
 
-2. Add the following under the (root) `configuration` key
+2. Add the following under the (root) `configuration` key:
+
   ```xml
   <configuration>
   ...
@@ -67,14 +68,17 @@ Secure the connection between Runbook Worker and SQL Server to avoid clear text 
   </configuration>
   ```
 3. The `connectionString` depends on your authentication settings:
-   - If using Integrated Windows Authentication (without an SQL user/pass)
+   - If using Integrated Windows Authentication (without an SQL user/pass):
+
      `Data Source=<database-server-hostname>;Database=<SMA-database-name>;Integrated Security=True;MultipleActiveResultSets=False;Encrypt=True;`
-   - If using SQL user/pass
+
+   - If using SQL user/pass:
+
      `Data Source=<database-server-hostname>;Database=<SMA-database-name>;User ID=<username>;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;`
 
      For more information, see [SqlClient Connection Strings](https://docs.microsoft.com/dotnet/framework/data/adonet/connection-string-syntax#sqlclient-connection-strings).
 
-4. Append `TrustServerCertificate=true;` to `connectionString` in case the SSL certificate is not installed on the Worker computer.
+4. Append `TrustServerCertificate=true;` to `connectionString` in case the SSL certificate is not installed on the worker computer.
 
 
 ### Next steps
