@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/19/2018
+ms.date: 12/23/2020
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-2016'
@@ -87,7 +87,48 @@ To perform these actions, hover your mouse over the widget and click on the elli
 
    * Select **Set resolution state** and select one or multiple alerts by clicking on the checkbox in the first column on the left, for each alert resolution state you are going to change. Select the resolution state from the drop-down list and click **Save**.  
    * Select **Export to Excel** to export the alert data to an Excel file.  
-   * Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Click **Save personalization** when you have completed making your changes.   
+   * Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Click **Save personalization** when you have completed making your changes.  
+
+## Additional view options in Alert widget
+
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
+
+Alert widget now supports sort by option.
+
+In earlier releases, this feature is not available for State widget, Alert widget, and on all H5 dashboard personalization but is available on all views of operations console of Operations Manager 2019.
+
+With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and State widget, also group the columns.
+
+
+### Support for sort by option
+
+In Operations Manager 2019 UR3 web console, the **Sort by** option is now available in **Add widget** wizard.
+
+To include this feature, while creating a new widget using the **Add widget** wizard in the web console, click **Display** and then select the column option available under **Sort by** drop-down menu. Save the settings for the new widget once done.
+
+![Add widget](./media/create-web-dashboard-alerts/add-widget.png)
+
+
+### View columns using sort by feature
+
+The **Sort by** option is available under **Edit** > **Personalize**.
+
+![Edit and personalize](./media/create-web-dashboard-alerts/edit-personalize.png)
+
+1. Select a column under **Group by**.
+2. Select **Expand All** to view the columns grouped.
+3. Select the columns for sorting under **Sort by**, and select the **Order** (Ascending or Descending).
+4. Click **Save the settings**.
+
+Here is a sample view:
+
+![Personalize alert](./media/create-web-dashboard-alerts/personalize-alert.png)
+
+The following image shows sample results for Alert widget after grouping by **Name** and sorting by **Age**, in **descending** order.
+
+![Alert widget](./media/create-web-dashboard-alerts/alert-widget-name-age.png)
+
 
 ## Next steps
 

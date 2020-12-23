@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 12/21/2018
+ms.date: 12/23/2020
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-2016'
@@ -90,45 +90,18 @@ To perform these actions, hover your mouse over the widget and click on the elli
    * Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Click **Save personalization** when you have completed making your changes.  
 
 
-## Additional view options in web console widgets
+## Additional view options in State widget
 
 > [!NOTE]
 > This feature is applicable for 2019 UR3 and later.
 
-Currently, in Operations Manager web console, when a user creates an Alert widget and chooses the columns to display, there is no option to set the display with **Sort by** option. As the option to sort is missing, the widget displays alerts in random order, which is of no significance. Alert monitoring teams usually prefer to have a sort order (descending or ascending) on specific columns such as "free disk space", "health of a computer" etc., which can help in prioritizing their action plans.
+
+State widget now supports sort by option.
 
 In earlier releases, this feature is not available for State widget, Alert widget, and on all H5 dashboard personalization but is available on all views of operations console of Operations Manager 2019.
 
-With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and State widget, also group the columns.
+With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and State widget, also group the columns. For more information, see [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option)
 
-
-### Support for sort by option
-
-In Operations Manager 2019 UR3 web console, the **Sort by** option is now available in **Add widget** wizard.
-
-To include this feature, while creating a new widget using the **Add widget** wizard in the web console, click **Display** and then select the column option available under **Sort by** drop-down menu. Save the settings for the new widget once done.
-
-![Add widget](./media/create-web-dashboard-state/add-widget.png)
-
-
-### View columns using sort by feature
-
-The **Sort by** option is available under **Edit** > **Personalize**.
-
-![Edit and personalize](./media/create-web-dashboard-state/edit-personalize.png)
-
-1. Select a column under **Group by**.
-2. Select **Expand All** to view the columns grouped.
-3. Select the columns for sorting under **Sort by**, and select the **Order** (Ascending or Descending).
-4. Click **Save the settings**.
-
-Here is a sample view:
-
-![Personalize alert](./media/create-web-dashboard-state/personalize-alert.png)
-
-The following image shows sample results for Alert widget after grouping by **Name** and sorting by **Age**, in **descending** order.
-
-![Alert widget](./media/create-web-dashboard-state/alert-widget-name-age.png)
 
 ## Next steps
 
