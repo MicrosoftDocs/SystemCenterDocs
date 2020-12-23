@@ -108,7 +108,8 @@ Use the following steps to create a batch script to run on the new SQL Server co
     >
     >
     >**Use Orchestrator
-    >ALTERMASTERKEY REGENERATE WITHENCRYPTIONBYPASSWORD='password';
+    >REGENERATE WITH ENCRYPTION BY PASSWORD = 'password';
+    >
     >GO**
 
 
