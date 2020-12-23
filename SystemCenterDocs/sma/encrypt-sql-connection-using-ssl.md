@@ -67,6 +67,7 @@ Secure the connection between Runbook worker and SQL server to avoid clear text 
     ...
     </configuration>
   ```
+  
 3. The `connectionString` depends on your authentication settings:
    - If using Integrated Windows Authentication (without an SQL user/pass):
 
