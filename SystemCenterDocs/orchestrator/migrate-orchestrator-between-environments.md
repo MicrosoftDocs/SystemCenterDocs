@@ -6,7 +6,7 @@ ms.technology: orchestrator
 ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
-ms.date: 12/18/2020
+ms.date: 12/23/2020
 manager: carmonm
 ---
 
@@ -102,6 +102,15 @@ Use the following steps to create a batch script to run on the new SQL Server co
     Sqlcmd -Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\OrchestratorDB.bak'WITH  FILE = 1,  NOUNLOAD,  STATS = 10"  
 
     ```  
+
+    >[!NOTE]
+    > Orchestrator database is encrypted, you need the encryption key password to add the database to an  SQL *Always ON* setup. Use the following T-SQL query to change the password and use the new password in the SQL **Always ON Availability** wizard, while adding the database to *Always ON* setup:
+    >
+    >
+    >**Use Orchestrator
+    >ALTERMASTERKEY REGENERATE WITHENCRYPTIONBYPASSWORD='password';
+    >GO**
+
 
 ## Deploy Orchestrator components in environment B  
 
