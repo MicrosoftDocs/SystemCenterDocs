@@ -21,7 +21,7 @@ ms.technology: service-management-automation-(sma)
 
 This article provides information about how to encrypt SMA Web Service to SQL connection by using Secure Socket Layer (SSL) and encrypt the network traffic between runbook worker and SQL database.
 
-## Encrypt SMA web service connection using SSL
+## Encrypt SMA web service connection
 
 Use the following procedure to securely connect SMA web service with the SQL server:
 
@@ -49,7 +49,7 @@ Use the following procedure to securely connect SMA web service with the SQL ser
 
 ## Encrypt SMA Runbook worker connection
 
-Use the following steps to secure the connection between Runbook worker and SQL server.
+Use the following steps to secure the connection between Runbook worker and the SQL server.
 
 >[!NOTE]
 > To encrypt the connection, you must run these steps on each of the Runbook worker computer.
