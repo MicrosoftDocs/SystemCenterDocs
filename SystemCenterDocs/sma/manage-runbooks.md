@@ -1,6 +1,6 @@
 ---
 title: Manage runbooks
-description: Describes how to schedule, track, and configure runbooks for System Center Service MAnagement Automation.
+description: Describes how to schedule, track, and configure runbooks for System Center Service Management Automation.
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
@@ -30,7 +30,7 @@ By default, when you start a runbook job in SMA, it is picked by a random runboo
 
 ### Designate a runbook worker with the PowerShell ISE Add-on.
 
-1. In the SMA ISE Add-on > **Configuration**, sign in with your SMA account. After sign in, you can see your runbooks in the **Runbooks** tab.
+1. In the SMA ISE Add-on > **Configuration**, sign in with your SMA account. After sign-in, you can see your runbooks in the **Runbooks** tab.
 2. In the **Runbooks** tab, select one or more runbooks to run against a particular runbook worker.
 3. Click on **configure**, and in **Configure Runbook properties**, select a runbook worker from the drop-down menu.
 4. Click **Make changes**.
@@ -256,7 +256,7 @@ Set-SmaRunbookConfiguration "WebServiceEndpoint $webServer "Port $port "Name $ru
 
 ```
 ## Encrypt Runbook worker and SQL server connection
-[Secure the connection between the Runbook Worker](encrypt-sql-connection-using-ssl.md#encrypt-sma-runbook-worker) processes and SQL server using SSL.
+[Secure the connection between the Runbook worker](encrypt-sql-connection-using-ssl.md#encrypt-sma-runbook-worker-connection) processes and SQL server using SSL.
 
 ## Next steps
 
