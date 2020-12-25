@@ -6,7 +6,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-ms.date: 05/08/2018
+ms.date: 12/25/2020
 ms.technology: service-management-automation
 ---
 
@@ -255,6 +255,8 @@ $runbookName = "Sample-TestRunbook"
 Set-SmaRunbookConfiguration "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Description "Sample runbook" "LogVerbose $true
 
 ```
+## Encrypt Runbook worker and SQL server connection
+[Secure the connection between the Runbook Worker](encrypt-sql-connection-using-ssl.md#encrypt-sma-runbook-worker) processes and SQL server using SSL.
 
 ## Next steps
 
