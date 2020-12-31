@@ -88,7 +88,7 @@ If you ordered one or more Azure Data Box disks (up to 8 TB each), follow the st
 
 ## Setup Azure Data Box
 
-If you ordered an Azure Data Box (up to 100 TB), follow the steps mentioned [here](https://docs.microsoft.com/azure/databox/data-box-deploy-set-up) to setup your Data Box.
+If you ordered an Azure Data Box (up to 100 TB), follow the steps mentioned [here](https://docs.microsoft.com/azure/databox/data-box-deploy-set-up) to set up your Data Box.
 
 ### Mount your Azure Data Box as local system
 
@@ -179,7 +179,7 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
 
     With this, the initial replication of the data occurs to DPM disk. When it finishes the protection, group status will show protection status as **OK** on the **Protection** page.
 
-17. To initiate the offline-backup copy to you Azure Data Box device, right-click the **Protection Group** , and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
+17. To initiate the offline-backup copy to your Azure Data Box device, right-click the **Protection Group** , and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
 
     ![Create recovery point](./media/databox/create-recovery-point.png)
 
