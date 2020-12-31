@@ -21,7 +21,7 @@ monikerRange: 'sc-dpm-2019'
 
 This article explains how you can use Azure Data Box to seed initial Backup data offline from DPM to an Azure Recovery Services vault.
 
-You can use [Azure Data Box](https://docs.microsoft.com/azure/databox/data-box-overview) to seed your large initial DPM backups offline (without using network) to a Recovery Services vault. This process saves time and network bandwidth that would otherwise be consumed moving large amounts of backup data online over a high-latency network. This feature is currently in preview.
+You can use [Azure Data Box](https://docs.microsoft.com/azure/databox/data-box-overview) to seed your large initial DPM backups offline (without using the network) to a Recovery Services vault. This process saves time and network bandwidth that would otherwise be consumed moving large amounts of backup data online over a high-latency network. This feature is currently in preview.
 
 Offline backup based on Azure Data Box provides two distinct advantages over [offline backup based on the Azure Import/Export service](offline-backup-workflow.md):
 
