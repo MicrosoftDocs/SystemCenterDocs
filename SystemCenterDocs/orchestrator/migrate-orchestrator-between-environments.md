@@ -6,7 +6,7 @@ ms.technology: orchestrator
 ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
-ms.date: 01/17/2018
+ms.date: 12/23/2020
 manager: carmonm
 ---
 
@@ -76,6 +76,9 @@ Restore the Microsoft SQL Server service master key.  This will enable decryptio
 
 Create a batch script with the following command:  
 
+>[!NOTE]
+> If you intend to use\migrate the Orchestrator database In a **SQL Always ON** instance, you will be prompted for the database encryption key password.
+
 ```  
 Sqlcmd -Q "RESTORE SERVICE MASTER KEY FROM FILE = 'C:\BACKUP\MASTER_KEY.BAK' DECRYPTION BY PASSWORD = 'password';"  
 
@@ -99,6 +102,17 @@ Use the following steps to create a batch script to run on the new SQL Server co
     Sqlcmd -Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\OrchestratorDB.bak'WITH  FILE = 1,  NOUNLOAD,  STATS = 10"  
 
     ```  
+
+    >[!NOTE]
+    > Orchestrator database is encrypted, you need the encryption key password to add the database to an  SQL *Always ON* setup. Use the following T-SQL query to change the password and use the new password in the SQL **Always ON Availability** wizard, while adding the database to *Always ON* setup:
+    >
+    >
+    >**Use Orchestrator ALTER MASTER KEY**
+    >
+    >**REGENERATE WITH ENCRYPTION BY PASSWORD = 'password';**
+    >
+    >**GO**
+
 
 ## Deploy Orchestrator components in environment B  
 

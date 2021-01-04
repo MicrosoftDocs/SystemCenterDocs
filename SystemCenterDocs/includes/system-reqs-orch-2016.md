@@ -4,7 +4,7 @@ title: include file
 description: include file to provide the system requirements for System Center 2016 - Orchestrator, and includes the  general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 author: rayne-wiselman
 manager: carmon
-ms.date: 05/17/2018
+ms.date: 12/18/2020
 ms.prod: system-center-threshold
 ms.technology: Orchestrator
 ms.topic: include
@@ -14,7 +14,7 @@ ms-author: raynew
 
 ## System requirements for System Center 2016 - Orchestrator
 
-The following sections describe general performance and scalability guidance for System Center 2016 - Orchestrator, and recommends hardware configurations for a variety of workloads. As System Center 2016 is built to be flexible and scalable, the actual hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections describe general performance and scalability guidance for System Center 2016 - Orchestrator, and recommend hardware configurations for a variety of workloads. As System Center 2016 is built to be flexible and scalable, the actual hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 
@@ -66,7 +66,7 @@ We recommend the following software for a full installation of Orchestrator on a
 
 > [!NOTE]
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
-> - SQL *Always ON*  is supported,  except in the cases, where configuration is done on multi subnets.
+> - SQL *Always ON*  is supported, except in the cases, where configuration is done on multi subnets.
 
 |                                                                 **SQL version**                                                                 | **Supported** |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
@@ -75,11 +75,14 @@ We recommend the following software for a full installation of Orchestrator on a
 | **SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)** |       Y       |
 | **SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** |       Y       |
 
-## .Net requirements
+>[!NOTE]
+> When you deploy Orchestrator in an **Always ON** scenario, the Database Availability wizard prompts for the database encryption key password. For information on how to retrieve the password, see [database migration](../orchestrator/migrate-orchestrator-between-environments.md).
 
-All Orchestrator server roles require .Net 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .Net 4.5 with WCF Activation.
+## .NET requirements
 
-You can download .Net 3.5 SP1 at:  
+All Orchestrator server roles require .NET 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .NET 4.5 with WCF Activation.
+
+You can download .NET 3.5 SP1 at:  
 
 ### To turn on WCF activation
 
@@ -87,9 +90,9 @@ You can download .Net 3.5 SP1 at:
 2.	On the **Manage** menu in the Server Manager console, click **Add Roles and Features**.
 3.	Go through the wizard until you reach the **Features** page.
 4.	Expand **.NET Framework 4.5 Features**.
-5.	Select **.NET Framework 4.5** if it isn’t already selected.
+5.	Select **.NET Framework 4.5**, if it isn’t already selected.
 6.	Expand **WCF Services**.
-7.	Select **HTTP Activation** if it isn’t already selected.
+7.	Select **HTTP Activation**, if it isn’t already selected.
 8.	Click **Next** and follow the prompts to finish the installation. If you have problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](https://technet.microsoft.com/library/hh546549.aspx).
 
 

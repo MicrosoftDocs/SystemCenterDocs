@@ -4,7 +4,7 @@ title: include file
 description: include file to provide system requirements for Orchestrator 2019, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: v-jysur
 manager: vvithal
-ms.date: 10/13/2020
+ms.date: 12/18/2020
 ms.custom: na
 author: JYOTHIRMAISURI
 ms.prod: system center
@@ -14,7 +14,7 @@ ms.topic: include
 
 ## System requirements for System Center 2019 - Orchestrator
 
-The following sections provide general performance and scalability guidance for System Center 2019- Orchestrator, and recommends the hardware configurations for a variety of workloads. As System Center 2019 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections provide general performance and scalability guidance for System Center 2019- Orchestrator, and recommend the hardware configurations for a variety of workloads. As System Center 2019 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 
@@ -66,7 +66,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 > [!NOTE]
 > - For the supported versions of SQL, use the service packs/cumulative updates that are currently in support by Microsoft.
-> -	SQL *Always ON*  is supported,  except in the cases, where configuration is done on multi subnets.
+> -	SQL *Always ON*  is supported, except in the cases, where configuration is done on multi subnets.
 
 **SQL version** | **Supported**
 --- | ---
@@ -74,11 +74,14 @@ The following software is required for a full installation of Orchestrator on a 
 **SQL Server 2017** | Y
 **SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | Y
 
+>[!NOTE]
+> When you deploy Orchestrator in an **Always ON** scenario, the Database Availability wizard prompts for the database encryption key password. For information on how to retrieve the password, see [database migration](../orchestrator/migrate-orchestrator-between-environments.md).
+
 ## .NET requirements
 
-All Orchestrator server roles require .NET 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .Net 4.5 with WCF Activation.
+All Orchestrator server roles require .NET 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .NET 4.5 with WCF Activation.
 
-You can download .Net 3.5 SP1 [from the download center](https://www.microsoft.com/en-in/download/details.aspx?id=22).  
+You can download .NET 3.5 SP1 [from the download center](https://www.microsoft.com/en-in/download/details.aspx?id=22).  
 
 ### To turn on WCF activation
 
@@ -86,9 +89,9 @@ You can download .Net 3.5 SP1 [from the download center](https://www.microsoft.c
 2.	On the **Manage** menu in the Server Manager console, click **Add Roles and Features**.
 3.	Go through the wizard until you reach the **Features** page.
 4.	Expand **.NET Framework 4.5 Features**.
-5.	Select **.NET Framework 4.5** if it isn’t already selected.
+5.	Select **.NET Framework 4.5**, if it isn’t already selected.
 6.	Expand **WCF Services**.
-7.	Select **HTTP Activation** if it isn’t already selected.
+7.	Select **HTTP Activation**, if it isn’t already selected.
 8.	Click **Next** and follow the prompts to finish the installation. If you have problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](https://technet.microsoft.com/library/hh546549.aspx).
 
 

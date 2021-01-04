@@ -5,7 +5,7 @@ manager: carmonm
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/15/2019
+ms.date: 12/09/2020
 ms.technology: service-manager
 ms.topic: article
 ---
@@ -73,7 +73,7 @@ You need the following permissions when you are installing the data warehouse ma
 
 You need the following permissions when you are installing SSRS:  
 
--   Permissions to place a binary file into the \\Program Files\\Microsoft SQL Server\\*Instance Name*\Reporting Services\\ReportServer\\Bin folder on the computer hosting the data warehouse management server  
+Permissions to place a binary file into the \\Program Files\\Microsoft SQL Server\\*Instance Name*\Reporting Services\\ReportServer\\Bin folder on the computer hosting the data warehouse management server .
 
 #### Registering Service Manager with the data warehouse  
 
@@ -132,9 +132,6 @@ You will have to provide credentials for the accounts in the following table dur
 **Optional**:
  - Deny log on as a batch job
  - Deny log on through Remote Desktop Services.
-
-
-
 
 #### Operations Manager Alert connector  
 
@@ -211,6 +208,22 @@ Use the following procedures to prepare computers for deployment of Service Mana
 8.  In the **Connect** pane, click the top entry (`<server>\\<instance>`).  
 
 9. In the **Current Report Server** area, click **Stop**, and then click **Start**.
+
+::: moniker range=">=sc-sm-1807"
+
+> [!IMPORTANT]
+> When you install System Center Service Manager with SQL Server Reporting Services (SSRS) 2017 or later, Service Manager reports don't deploy, an event 33410 occurs and displays the details for the deployment failure. See the following information for the cause and resolution for this issue.  
+
+SSRS 2017 version 14.0.600.1274 and later includes a new advanced setting *AllowedResourceExtensionsForUpload*. This setting restricts the set of extensions of resource files that can be uploaded to the reporting server. This issue occurs because Service Manager reporting uses extensions that aren't included in the default set in *AllowedResourceExtensionsForUpload*.
+
+To resolve this issue, add \*.\* to the list of extensions. Follow these steps:
+
+1. Start SQL Server Management Studio, and then connect to a report server instance that Service Manager uses.
+2. Right-click the report server name, select **Properties**, and then select **Advanced**.
+3. Locate the **AllowedResourceExtensionsForUpload** setting, add \*.\* to the list of extensions, and then select **OK**.
+4. Restart SSRS.
+
+::: moniker-end
 
 ## Next steps
 

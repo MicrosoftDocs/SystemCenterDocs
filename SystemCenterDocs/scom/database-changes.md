@@ -5,7 +5,7 @@ description: This article provides information on how to create users, assign ro
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 09/02/2020
+ms.date: 12/11/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -58,7 +58,7 @@ Follow steps 1 to 5 from the previous procedure. Assign the roles by using the i
 | Operations Manager DB|db\_datareader, db\_datawriter, db\_ddladmin, dbmodule\_users|
 |   **Data Access Service account**       |         |
 |   Systems Database: msdb for OperationsManager DB |SQLAgentOperatorRole, SQLAgentReaderRole, SQLAgentUserRole, db_owner |
-|Operations Manager DB |  configsvc\_users, db\_accessadmin, db\_datareader,  db\_datawriter, db\_ddladmin, db\_securityadmin, sdk\_users, sql\_dependency\_subscriber|
+|Operations Manager DB |  ConfigService, db\_accessadmin, db\_datareader,  db\_datawriter, db\_ddladmin, db\_securityadmin, sdk\_users, sql\_dependency\_subscriber|
 | OperationsManager DW|apm\_datareader, db\_datareader, OpsMgrReader |
 |  **Data Writer account** |         |
 |   Operations Manager DB| apm\_datareader, apm\_datawriter,  db\_datareader, dwsynch\_users|
