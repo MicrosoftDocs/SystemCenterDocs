@@ -12,4 +12,4 @@ ms.technology: service-management-automation
 ---
 > [!IMPORTANT]
 >
-> This version of Service Management Automation (SMA) has reached the end of support, we recommend you to [upgrade to SMA 2019](https://docs.microsoft.com/system-center/sma/?view=sc-sma-2019).
+> This version of Service Management Automation (SMA) has reached the end of support, we recommend you to [upgrade to SMA 2019](https://docs.microsoft.com/system-center/sma/).

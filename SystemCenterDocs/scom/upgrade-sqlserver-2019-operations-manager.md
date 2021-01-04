@@ -25,7 +25,7 @@ Use the steps in this article to perform an in-place upgrade of the databases su
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 > - Upgrading to SQL Server 2019 uninstalls SQL Reporting Services, as this is now a separately-installed feature.
 
-Before performing these upgrade steps, review the [SQL Server 2019 upgrade information](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-ver15).
+Before performing these upgrade steps, review the [SQL Server 2019 upgrade information](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server).
 
 ## Stop the Operations Manager services
 On all the management servers in the management group, stop the Operations Manager services:
@@ -55,7 +55,7 @@ On all the management servers in the management group, stop the Operations Manag
 
     d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes.
 
-2. Perform the upgrade to SQL Server 2019 following the steps described in [SQL 2019 documentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-ver15).
+2. Perform the upgrade to SQL Server 2019 following the steps described in [SQL 2019 documentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server).
 
 ## Install SQL Server 2019 Reporting services
 

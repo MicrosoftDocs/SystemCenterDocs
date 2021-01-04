@@ -122,7 +122,7 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 1. In **Associated VLANs and IP subnets**, select **Insert Row** to specify the settings that you want to assign to the network site. If you select **PVLAN**, you need to add a **Secondary VLAN** for each VLAN. Ensure that the VLANs and subnets are available in your physical network. If you leave the **VLAN** field empty, VMM assigns a value of 0 to indicate that VLANs aren't used. In trunk mode, 0 indicates a native VLAN.
 1. If you created network sites and associated one or more IP subnets with them (when you're not using DHCP), you can create static IP address pools from those subnets. Then VMM can automatically allocate IP addresses to VMs in the network site. IP pools can be created within the **Create Logical Network Wizard**.
 
-To set up an IP address pool on a logical network, [follow these steps](https://docs.microsoft.com/system-center/vmm/network-pool?view=sc-vmm-2019#create-a-static-address-pool-for-a-logical-network).
+To set up an IP address pool on a logical network, [follow these steps](https://docs.microsoft.com/system-center/vmm/network-pool#create-a-static-address-pool-for-a-logical-network).
 
 
 ## Next steps

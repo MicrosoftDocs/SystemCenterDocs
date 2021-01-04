@@ -12,4 +12,4 @@ ms.technology:  virtual-machine-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Virtual Machine Manager (VMM) has reached the end of support, we recommend you to [upgrade to VMM 2019](https://docs.microsoft.com/system-center/vmm/?view=sc-vmm-2019).
+> This version of Virtual Machine Manager (VMM) has reached the end of support, we recommend you to [upgrade to VMM 2019](https://docs.microsoft.com/system-center/vmm/).

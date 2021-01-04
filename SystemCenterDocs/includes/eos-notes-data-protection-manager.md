@@ -12,4 +12,4 @@ ms.technology: data-protection-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Data Protection Manager (DPM) has reached the end of support, we recommend you to [upgrade to DPM 2019](https://docs.microsoft.com/system-center/dpm/?view=sc-dpm-2019).
+> This version of Data Protection Manager (DPM) has reached the end of support, we recommend you to [upgrade to DPM 2019](https://docs.microsoft.com/system-center/dpm/).

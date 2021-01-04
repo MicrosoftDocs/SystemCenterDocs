@@ -12,4 +12,4 @@ ms.technology: operations-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Operations Manager has reached the end of support, we recommend you to [upgrade to Operations Manager 2019](https://docs.microsoft.com/system-center/scom/?view=sc-om-2019).
+> This version of Operations Manager has reached the end of support, we recommend you to [upgrade to Operations Manager 2019](https://docs.microsoft.com/system-center/scom/).
