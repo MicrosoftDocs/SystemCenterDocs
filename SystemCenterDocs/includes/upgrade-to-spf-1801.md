@@ -59,9 +59,9 @@ Here's the recommended upgrade order for the above scenario:
 1. Create a new server running Windows Server 2016, on which to install SPF 1801. You can use a VM. In our example, we'll create a machine call **SERVER-SPF-UPGRADE**.
 2. Install the prerequisites on the new VM, as follows:
     - Install [SQL ODBC Drivers](https://www.microsoft.com/download/details.aspx?id=36434).
-    - Install [SQL Native Client](https://www.microsoft.com/download/details.aspx?id=43339)
-    - Install SQL Server [command line utilities](https://www.microsoft.com/download/details.aspx?id=43339).
-    - Install SQL Server [CLR types](https://www.microsoft.com/download/details.aspx?id=43339).
+    - Install [SQL Native Client](https://www.microsoft.com/download/details.aspx?id=50402)
+    - Install SQL Server [command line utilities](https://www.microsoft.com/download/details.aspx?id=53591).
+    - Install SQL Server [CLR types](https://www.microsoft.com/download/details.aspx?id=42295).
     - Install IIS with the following features: PowerShell: Install-WindowsFeature Web-Server, Web-WebServer, Web-Common-Http, Web-Default-Doc, Web-Dir-Browsing, Web-Http-Errors, Web-Static-Content, Web-Health, Web-Http-Logging, Web-Request-Monitor, Web-Http-Tracing, Web-Performance, Web-Stat-Compression, Web-Security, Web-Filtering, Web-Basic-Auth, Web-Windows-Auth, Web-App-Dev, Web-Net-Ext45, Web-Asp-Net45, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Mgmt-Tools, Web-Mgmt-Console, Web-Scripting-Tools, NET-Framework-45-ASPNET, NET-WCF-HTTP-Activation45, ManagementOdata, WAS, WAS-Process-Model, WAS-Config-APIs.
     - Install [WCF Data Services 5.0 for OData V3](https://www.microsoft.com/download/details.aspx?id=29306).
     - Install [ASP.NET MVC 4](https://www.microsoft.com/download/details.aspx?id=30683).
