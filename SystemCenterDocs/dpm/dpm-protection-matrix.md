@@ -20,6 +20,13 @@ ms.author: raynew
 
 ::: moniker-end
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+> [!NOTE]
+> This version of Data Protection Manager (DPM) has reached the end of support, we recommend you to [upgrade to DPM 2019](https://docs.microsoft.com/system-center/dpm/).
+
+::: moniker-end
+
 This article details the workloads that DPM can back up.
 
 ::: moniker range="<sc-dpm-2019"
