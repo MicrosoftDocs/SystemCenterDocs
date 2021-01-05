@@ -14,9 +14,11 @@ ms.author: raynew
 
 # What can DPM back up?
 
+
 ::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
 
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+> [!NOTE]
+> This version of Data Protection Manager (DPM) has reached the end of support, we recommend you to [upgrade to DPM 2019](https://docs.microsoft.com/system-center/dpm/).
 
 ::: moniker-end
 
