@@ -14,11 +14,6 @@ ms.author: raynew
 
 # What can DPM back up?
 
-::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
-
-[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
-
-::: moniker-end
 
 ::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
 
