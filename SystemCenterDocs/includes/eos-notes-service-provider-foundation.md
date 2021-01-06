@@ -12,4 +12,4 @@ ms.technology: service-provider-foundation
 ---
 > [!IMPORTANT]
 >
-> This version of Service Provider Foundation (SPF) has reached the end of support, we recommend you to [upgrade to SPF 2019](https://docs.microsoft.com/system-center/spf/?view=sc-spf-2019).
+> This version of Service Provider Foundation (SPF) has reached the end of support, we recommend you to [upgrade to SPF 2019](https://docs.microsoft.com/system-center/spf/).

@@ -12,4 +12,4 @@ ms.technology: service-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Service Manager has reached the end of support, we recommend you to [upgrade to Service Manager 2019](https://docs.microsoft.com/system-center/scsm/?view=sc-sm-2019).
+> This version of Service Manager has reached the end of support, we recommend you to [upgrade to Service Manager 2019](https://docs.microsoft.com/system-center/scsm/).
