@@ -32,6 +32,7 @@ To help simplify upgrades, you can use the following Service Manager 2016 connec
     - UR5 supports 1802
     - UR9 supports 1806, 1810, 1902, 1906, 1910, and 2002 releases. However, there is a limitation that the size of the devices supported by SCCM should be less than 2 PB.
     - UR10 supports 2006
+    - 2010 (supported with Service Manager 2016 UR10)
 
 ## Hardware
 
