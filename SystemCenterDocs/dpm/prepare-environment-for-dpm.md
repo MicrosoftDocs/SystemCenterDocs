@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 11/25/2020
+ms.date: 01/12/2021
 title: Preparing your environment for System Center Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -56,9 +56,9 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 **DPM version** | **SQL version**
 --- | ---
 DPM 2016 | SQL Server 2014 SP2 or later <br/><br/>  SQL Server 2012 SP4 or later.
-DPM 2016 UR2 and later| SQL Server 2014 SP2 or later <br/><br/> SQL Server 2012 SP4 or later <br/><br/> SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
-DPM 1801 |  SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
-DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) <br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017)
+DPM 2016 UR2 and later| SQL Server 2014 SP2 or later <br/><br/> SQL Server 2012 SP4 or later <br/><br/> SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
+DPM 1801 |  SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
+DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016) <br/><br/> - SQL Server 2017 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202017)
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://support.microsof
 
 **DPM version** | **SQL version**
 --- | ---
-DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202019%20on%20Windows%20(all%20editions))<br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+DPM 2019 | - SQL Server 2019 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202019)<br/><br/> - SQL Server 2017 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/li
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
 |Installation|Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM.|
-|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](~/dpm/back-up-sql-server.md).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
+|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](https://docs.microsoft.com/system-center/dpm/install-dpm?view=sc-dpm-2019#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
 
 ::: moniker range="<sc-dpm-2019"
@@ -126,14 +126,14 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/li
 |DPM installation|DPM installation location: 3 GB<br/> Database files drive: 900 MB<br/> System drive: 1 GB<br/> The system drive disk space is required if SQL Server is installed on the DPM server. If SQL Server is remote, you'll need considerably less disk space for the system drive.|Each protected volume requires a minimum of 300 MB of free space for the change journal. Additionally, you'll need space for DPM to copy the file catalog to a temporary DPM installation location, when archiving. 2-3 GB of free space is recommended for the DPM installation volume.|
 |Disk for storage pool|1.5 times the size of the protected data|2-3 times the size of the protected data|
 |Logical unit number (LUN)<br/><br/> *Applies only to DPM 2016/2019 servers upgraded from DPM 2012 R2, that use legacy storage pool.* | |Maximum of 17 TB for GUID partition table (GPT) dynamic disks<br/> 2 TB for master boot record (MBR) disks<br/> Requirements are based on the maximum size of the hard disk that appears in the operating system.|
-|Limitations<br/><br/> *Applies only to DPM 2016/DPM 2019 servers upgraded from DPM 2012 R2 that used legacy storage pool.* |- DPM storage pools must be dynamic.<br/> - You can't install DPM on the disk used for the storage pool.<br/> - You can attach or associate custom volumes with protected data sources. Custom volumes can be on basic or dynamic disks but you can't manage the space on these volumes in the DPM Administrator console.<br/> - You can back up to tape with iSCSI attached tape libraries. We recommend a separate adapter for that connection. For additional information, see [Compatible tape libraries](identify-compatible-tape-libraries.md).<br/>| |
+|Limitations<br/><br/> *Applies only to DPM 2016/DPM 2019 servers upgraded from DPM 2012 R2 that used legacy storage pool.* |- DPM storage pools must be dynamic.<br/> - You can't install DPM on the disk used for the storage pool.<br/> - You can attach or associate custom volumes with protected data sources. Custom volumes can be on basic or dynamic disks but you can't manage the space on these volumes in the DPM Administrator console.<br/> - You can back up to tape with iSCSI attached tape libraries. We recommend a separate adapter for that connection. For more information, see [Compatible tape libraries](identify-compatible-tape-libraries.md).<br/>| |
 |Virtualized DPM|- DPM running on a virtual machine can use the following storage types:<br/> - .VHD disk that meets the configuration requirements listed in installing DPM in a virtual environment.<br/> - Passthrough disk with host direct attached storage (DAS)<br/> - Passthrough iSCSI LUN attached to a host. <br/> - Passthrough Fibre Channel LUN attached to a host.<br/> - iSCSI target LUN connected directly to the DPM virtual machine.<br/> - Fibre Channel LUN connected to the DPM virtual machine using a Windows Server 2012 Virtual Fiber Channel (VFC) controller.| <br/> |
 |Modern Backup Storage| Uses basic volumes, cannot be on a dynamic disk. <br/> A single DPM server has a soft limit of 120 TB storage.| <br/> |
 
 ## Storage recommendations for DPM
 
-- Sector Size should always be consistent across underlying storage (i.e. WS storage) to DPM native storage.
-- When storage spaces is used to carve out DPM storage, storage spaces is supported on iSCSI and FC controllers as  long as the virtual disks created on top of them are non-resilient (Simple with any number of columns)
+- Sector Size should always be consistent across underlying storage (that is WS storage) to DPM native storage.
+- When storage spaces are used to carve out DPM storage, storage spaces are supported on iSCSI and FC controllers as  long as the virtual disks created on top of them are non-resilient (Simple with any number of columns)
 - Write- Back cache should always be se to zero while using Storage Spaces for DPM storage.
 
 ## Protected workloads
@@ -160,5 +160,5 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/li
 |Requirement|Details|
 |-----------|-------|
 |Central Console|Use the Central Console to administer multiple DPM servers from a single location.<br/><br/> Install it on a server running System Center 2016/2019 Operations Manager. You'll also need to install the Operations Management agent on the DPM server. See [Install Central Console](use-central-console-to-manage-multiple-dpm-servers.md#set-up-central-console).|
-|DPM Management Shell|Install the DPM Management Shell on a client computer to directly manage one or more DPM servers using Windows PowerShell. Install it from the DPM Setup.<br/><br/> The DPM Management Shell can be installed on computers running:<br/><br/> DPM 2019 : Windows Server 2019, Windows Server 2016, Windows 8.1, and Windows 10 <br/><br/>DPM 2016 : Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8, Windows 8.1<br/><br/>**Note**: DPM 2019 supports x64 bit computers only.|
+|DPM Management Shell|Install the DPM Management Shell on a client computer to directly manage one or more DPM servers using Windows PowerShell. Install it from the DPM Setup.<br/><br/> The DPM Management Shell can be installed on computers running:<br/><br/> DPM 2019: Windows Server 2019, Windows Server 2016, Windows 8.1, and Windows 10 <br/><br/>DPM 2016: Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8, Windows 8.1<br/><br/>**Note**: DPM 2019 supports x64 bit computers only.|
 |Remote Administration Console|Set up a Remote Administration Console to manage a single DPM server.<br/><br/> The DPM Management Shell can be installed on computers running Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8, Windows 8.1, and Windows 10. The computer must be running at least .NET Framework 4.0.<br/><br/>**Note**: DPM 2019 supports X64 bit computers only.|
