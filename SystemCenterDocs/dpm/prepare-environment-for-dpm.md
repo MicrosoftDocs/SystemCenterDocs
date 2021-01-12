@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 11/25/2020
+ms.date: 01/11/2021
 title: Preparing your environment for System Center Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -56,9 +56,9 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 **DPM version** | **SQL version**
 --- | ---
 DPM 2016 | SQL Server 2014 SP2 or later <br/><br/>  SQL Server 2012 SP4 or later.
-DPM 2016 UR2 and later| SQL Server 2014 SP2 or later <br/><br/> SQL Server 2012 SP4 or later <br/><br/> SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
-DPM 1801 |  SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
-DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) <br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017)
+DPM 2016 UR2 and later| SQL Server 2014 SP2 or later <br/><br/> SQL Server 2012 SP4 or later <br/><br/> SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
+DPM 1801 |  SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
+DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016) <br/><br/> - SQL Server 2017 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202017)
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://support.microsof
 
 **DPM version** | **SQL version**
 --- | ---
-DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202019%20on%20Windows%20(all%20editions))<br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+DPM 2019 | - SQL Server 2019 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202019)<br/><br/> - SQL Server 2017 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
 
 ::: moniker-end
 
@@ -82,8 +82,20 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/li
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
 |Installation|Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM.|
-|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](~/dpm/back-up-sql-server.md).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
+|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](install-dpm.md#set-up-a-sql-server-database).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
+
+>[!NOTE]
+>If you are using a remote SQL 2019 server for DPMDB, then you need to manually install SSMS along with SQLCMD, Windows installer 4.5, and Microsoft ODBC 17 for SQL on the DPM server separately, before installing DPM.
+>
+>Use the following download links:
+>- [SQL Server Management Studio (SSMS](
+https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
+>- [SQLCMD Utility](https://docs.microsoft.com/sql/tools/sqlcmd-utility?)
+>- [Windows Installer 4.5 Redistributable](https://www.microsoft.com/download/details.aspx?id=8483)
+>- [Microsoft ODBC Driver 17 for SQL Server](
+https://www.microsoft.com/download/details.aspx?id=56567)
+
 
 ::: moniker range="<sc-dpm-2019"
 
