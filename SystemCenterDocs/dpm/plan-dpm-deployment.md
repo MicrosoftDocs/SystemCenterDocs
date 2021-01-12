@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 01/12/2020
+ms.date: 09/09/2020
 title: Get ready to deploy DPM servers
 ms.technology: data-protection-manager
 ms.assetid: 517ce276-b811-4a06-ade3-ff71303ccf5b
