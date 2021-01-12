@@ -82,20 +82,8 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://docs.microsoft.com/lifec
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
 |Installation|Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM.|
-|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](install-dpm.md#set-up-a-sql-server-database).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
+|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](https://docs.microsoft.com/system-center/dpm/install-dpm?view=sc-dpm-2019#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
-
->[!NOTE]
->If you are using a remote SQL 2019 server for DPMDB, then you need to manually install SSMS along with SQLCMD, Windows installer 4.5, and Microsoft ODBC 17 for SQL on the DPM server separately, before installing DPM.
->
->Use the following download links:
->- [SQL Server Management Studio (SSMS](
-https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
->- [SQLCMD Utility](https://docs.microsoft.com/sql/tools/sqlcmd-utility?)
->- [Windows Installer 4.5 Redistributable](https://www.microsoft.com/download/details.aspx?id=8483)
->- [Microsoft ODBC Driver 17 for SQL Server](
-https://www.microsoft.com/download/details.aspx?id=56567)
-
 
 ::: moniker range="<sc-dpm-2019"
 
