@@ -38,7 +38,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
     > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 - SQL Server 2017 and Cumulative Updates as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
-- SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+- SQL Server 2016 and Service Packs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
 * SQL Server 2017 and Cumulative Updates as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
-* SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+* SQL Server 2016 and Service Packs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
 
 ::: moniker-end
 
@@ -67,16 +67,16 @@ Before upgrading to SQL Server 2017, see [upgrade information for 2017](upgrade-
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center Operations Manager version 1801 to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-* SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+* SQL Server 2016 and Service Packs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center 2016 - Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-* SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
-* SQL Server 2014 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)
-* SQL Server 2012 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)
+* SQL Server 2016 and Service Packs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
+* SQL Server 2014 and Service Packs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202014)
+* SQL Server 2012 and Service Packs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202012)
 
 ::: moniker-end
 
