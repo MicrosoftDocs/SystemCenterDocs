@@ -82,7 +82,7 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 > [!NOTE]
 > For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 
-**Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)**  | **SQL Server 2016 and [SPs](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)**
+**Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202014)**  | **SQL Server 2016 and [SPs](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)**
 --- | --- | --- | ---
 **Service Manager/Data Warehouse database** | | &#8226;| &#8226;
 

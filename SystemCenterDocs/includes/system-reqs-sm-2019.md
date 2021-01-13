@@ -91,7 +91,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 > - With SQL 2019 (CU8 or later), use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 
-|**Service Manager** |  **SQL Server 2016 and [SPs](https://docs.microsoft.com/lifecycle/products/sql-server-2016)** | **SQL Server [2017](https://docs.microsoft.com/lifecycle/products/sql-server-2017)**| **SQL Server [2019 with Cumulative Update 8](https://docs.microsoft.com/lifecycle/products/sql-server-2019)**
+|**Service Manager** |  **SQL Server 2016 and [SPs](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)** | **SQL Server [2017](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202017)**| **SQL Server [2019 with Cumulative Update 8](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202019)**
 | --- | --- | --- |--- |
 |**Service Manager/Data Warehouse database** |  &#8226;| &#8226; |&#8226; |
 

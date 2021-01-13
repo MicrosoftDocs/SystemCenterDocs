@@ -71,9 +71,9 @@ We recommend the following software for a full installation of Orchestrator on a
 |                                                                 **SQL version**                                                                 | **Supported** |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 |                                                               **SQL Server 2008**                                                               |       N       |
-| **SQL Server 2012 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)** |       Y       |
-| **SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)** |       Y       |
-| **SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** |       Y       |
+| **SQL Server 2012 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202012)** |       Y       |
+| **SQL Server 2014 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202014)** |       Y       |
+| **SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)** |       Y       |
 
 >[!NOTE]
 > When you deploy Orchestrator in an **Always ON** scenario, the Database Availability wizard prompts for the database encryption key password. For information on how to retrieve the password, see [database migration](../orchestrator/migrate-orchestrator-between-environments.md).
