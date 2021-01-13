@@ -72,7 +72,7 @@ The following software is required for a full installation of Orchestrator on a 
 --- | ---
 **SQL Server 2019** | Y
 **SQL Server 2017** | Y
-**SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | Y
+**SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)** | Y
 
 >[!NOTE]
 > When you deploy Orchestrator in an **Always ON** scenario, the Database Availability wizard prompts for the database encryption key password. For information on how to retrieve the password, see [database migration](../orchestrator/migrate-orchestrator-between-environments.md).
