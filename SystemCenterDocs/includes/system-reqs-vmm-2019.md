@@ -77,9 +77,9 @@ Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
 
 **SQL version** | **Supported**
 --- | ---
-SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) | Y
-SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017) | Y
-SQL Server 2019 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202019) | Y
+SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016) | Y
+SQL Server 2017 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202017) | Y
+SQL Server 2019 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202019) | Y
 SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack. <br/><br/> Not required for VMM installation..
 
 ## Virtualization
