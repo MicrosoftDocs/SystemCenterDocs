@@ -73,10 +73,10 @@ Window Server 2016 Standard, Datacenter | Y
 **SQL version** | **Supported**
 --- | ---
 SQL Server 2008 | N
-SQL Server 2012 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)| Y
-SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack) | Y
-SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) | Y
-SQL Server 2017 as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017) | Y
+SQL Server 2012 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202012)| Y
+SQL Server 2014 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202014) | Y
+SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016) | Y
+SQL Server 2017 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202017) | Y
 SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](https://www.microsoft.com/en-us/download/details.aspx?id=56041) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](https://go.microsoft.com/fwlink/?LinkID=529794)  <br/> or <br/> Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/en-us/download/details.aspx?id=56833)<br/><br/> Not required for VMM installation.
 
 ## Virtualization
@@ -102,7 +102,7 @@ PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 
 ## Servers in the VMM fabric
 >[!NOTE]
-> Hyper-V server 2016 and 2019 are not supported. 
+> Hyper-V server 2016 and 2019 are not supported.
 
 **Operating system** | **Hyper-V host** | **SOFS** | **Update server** | **PXE server**
 --- | --- | --- | --- | ---
