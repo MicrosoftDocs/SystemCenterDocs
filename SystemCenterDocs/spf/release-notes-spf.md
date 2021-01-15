@@ -5,10 +5,11 @@ description: This article details the known issues and issues fixed in Service P
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 03/14/2019
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
+monikerRange: '>sc-spf-2016'
 ---
 
 # Release notes for System Center Service Provider Foundation
