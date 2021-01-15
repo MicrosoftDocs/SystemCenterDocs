@@ -7,9 +7,10 @@ author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
 keywords:
-ms.date: 03/14/2019
+ms.date: 01/15/2021
 ms.technology: service-provider-foundation
 ms.assetid: 49342436-7e22-4c6b-9602-2adddf8f58c9
+monikerRange: '>sc-spf-2016'
 ---
 
 # What's new in System Center - Service Provider Foundation
