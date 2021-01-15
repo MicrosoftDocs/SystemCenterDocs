@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 10/14/2020
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -122,7 +122,13 @@ When you install VMM with this user account SPN will be registered.
 
 ## Account and domain requirements
 
-When you install VMM you need to configure the VMM service to use either the Local System account or a domain account or a Group Managed Service Account (gMSA).
+::: moniker range="sc-vmm-2019"
+When you install VMM, you need to configure the VMM service to use either the Local System account or a domain account or a Group Managed Service Account (gMSA).
+::: moniker-end
+
+::: moniker range="<sc-vmm-2019"
+When you install VMM, you need to configure the VMM service to use either the Local System account or a domain account.
+::: moniker-end
 
 Ensure the following before you prepare an account:
 
