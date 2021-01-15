@@ -132,7 +132,9 @@ When you install VMM, you need to configure the VMM service to use either the Lo
 
 Ensure the following before you prepare an account:
 
+::: moniker range="sc-vmm-2019"
 - VMM service account should have *Allow log on locally* and *Allow log on through Remote Desktop Services* permissions on the VMM server.
+::: moniker-end
 - You cannot change the identity of the Virtual Machine Manager service account after installation. This includes changing from the local system account to a domain account, from a domain account to the local system account, or changing the domain account to another domain account. To change the Virtual Machine Manager service account after installation, you must uninstall VMM (selecting the Retain data option if you want to keep the SQL Server database), and then reinstall VMM by using the new service account.
 - If you specify a domain account, the account must be a member of the local Administrators group on the computer.
 - If you specify a domain account, it is strongly recommended that you create an account that is specifically designated to be used for this purpose. When a host is removed from the VMM management server, the account that the System Center Virtual Machine Manager service is running under is removed from the local Administrators group of the host. If the same account is used for other purposes on the host, this can cause unexpected results.
