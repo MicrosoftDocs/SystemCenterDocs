@@ -14,7 +14,7 @@ monikerRange: 'sc-orch-2016 || sc-orch-2019'
 ---
 # TCP port requirements in Orchestrator
 
-Communication between Orchestrator features on different computers occurs over TCP/IP. If you have firewalls in your environment between these features, you must enable the ports indicated in the following table:
+Communication between Orchestrator features on different computers, occurs over TCP/IP. If you have firewalls in your environment between these features, you must enable the ports indicated in the following table:
 
 | Source  | Targeted computer| Default port | Configurable | Notes |
 |-------|--------|-------|----|------|
