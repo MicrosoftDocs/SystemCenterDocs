@@ -1,7 +1,7 @@
 ---
 title:  TCP port requirements in System Center Orchestrator
 description: This article describes the port requirements for System Center Orchestrator.
-manager: riyazp
+manager: evansma
 ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: 'sc-orch-2016 || sc-orch-2019'
 ---
-# TCP port requirements in Orchestrator
+# TCP port requirements
 
 Communication between Orchestrator features on different computers, occurs over TCP/IP. If you have firewalls in your environment between these features, you must enable the ports indicated in the following table:
 
