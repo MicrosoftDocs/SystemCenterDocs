@@ -1,6 +1,6 @@
 ---
-title: What's new in System Center Orchestrator
-description: This article describes the new features and other changes in System Center Orchestrator.
+title:  TCP port requirements in System Center Orchestrator
+description: This article describes the port requirements for System Center Orchestrator.
 manager: riyazp
 ms.topic: article
 author: JYOTHIRMAISURI
@@ -12,7 +12,9 @@ ms.technology: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: 'sc-orch-2016 || sc-orch-2019'
 ---
-Communication between Orchestrator features on different computers occurs over TCP/IP. If you have firewalls in your environment between these features, you must enable the ports indicated in the following table.
+# TCP port requirements in Orchestrator
+
+Communication between Orchestrator features on different computers occurs over TCP/IP. If you have firewalls in your environment between these features, you must enable the ports indicated in the following table:
 
 | Source  | Targeted computer| Default port | Configurable | Notes |
 |-------|--------|-------|----|------|
@@ -21,3 +23,8 @@ Communication between Orchestrator features on different computers occurs over T
 | Client browser | Orchestrator REST-based web service  | 81  | Yes   | Specified during Orchestrator installation. Both Port 81 and Port 82 must be accessible for the Orchestration console.      |
 | Client browser     | Orchestration console   | 82  | Yes   | Specified during Orchestrator installation. Both Port 81 and Port 82 must be accessible for the Orchestration console.          |
 | Activities   | Various targeted computers depending on activity | |   | For information about individual integration packs, see [Integration Packs for System Center - Orchestrator](list-of-orchestrator-integration-packs.md).    |
+
+
+## Next steps
+- [See system requirements](system-requirements-orch.md)
+- [Install Orchestrator](install.md)

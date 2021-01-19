@@ -13,6 +13,7 @@
 ### [Database sizing and performance](database-sizing-and-performance.md)
 ### [Feature performance considerations](feature-performance-considerations.md)
 ### [System requirements - Orchestrator](system-requirements-orch.md)
+### [Port requirements](port-requirements.md)
 ### [Design a runbook](designing-a-runbook.md)
 ## Deploy
 ### [Upgrade Orchestrator](upgrade-orch.md)
