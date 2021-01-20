@@ -73,8 +73,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
     > [!NOTE]
     > - Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
     > - For DPM 2019 and later, the backup report continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.
-    >  
-    > Also, for datasources for which the online protection is stopped but data is retained, billing for the online recovery points continue until the data is completely deleted.
+    > - Also, for datasources for which the online protection is stopped but data is retained, billing for the online recovery points continue until the data is completely deleted.
 
 
     Here is a sample backup report:
