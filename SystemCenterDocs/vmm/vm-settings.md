@@ -249,3 +249,35 @@ Set up virtual NUMA for VMs as follows:
 3.  In **Maximum memory per virtual NUMA node (MB)**, specify the maximum amount of memory (MB) that can be allocated to a single virtual NUMA node. The minimum limit is 8 MB and the maximum is 256 GB.
 4.  In **Maximum virtual NUMA nodes per socket**, specify the maximum number of virtual NUMA nodes that are allowed on a single socket. The minimum number is 1 and the maximum is 64.
 5. To enable spanning, click **Allow virtual machine to span hardware NUMA nodes**.
+
+::: moniker range="sc-vmm-2019"
+
+## Trunk mode support for VM vNICs
+
+Currently VMM supports only access mode for VM vNICs.
+
+With VMM 2019 UR3, we are introducing trunk mode support for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs.
+
+> [!NOTE]
+> Trunk mode is supported only in VLAN based independent networks.
+
+### Steps to configure trunk mode
+
+To configure trunk mode in VMM, follow the steps:
+
+1. Under VM **Properties**, navigate to Configure **Hardware Settings** > **Network Adapter**, and then select **Trunk mode** checkbox to enable trunk mode for VM vNICs.
+
+   ![Trunk mode](./media/vm-settings/configure-trunk-mode.png)
+
+2. Select the VM networks (multiple vLANs) through which you want to direct the VM network traffic.
+3. The VM Network that is selected as part of *Connected to a VM Network* workflow should also be made the native VLAN. You cannot change the native VLAN later, as this is based on the VM network that was selected as part of *Connected to a VM Network* workflow.
+
+### PowerShell support
+
+Configure trunk mode to virtual network adapter of a virtual machine using [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/en-us/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019) and [New-SCVirtualNetworkAdapter](https://docs.microsoft.com/en-us/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019) cmdlets.
+
+Use the following PowerShell parameters to enable trunk mode.
+1. **[–AllowedVLanList]**
+2. **[–NativeVLanId]**
+
+::: moniker-end
