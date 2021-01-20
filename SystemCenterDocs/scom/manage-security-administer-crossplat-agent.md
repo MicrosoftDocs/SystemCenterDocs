@@ -146,7 +146,7 @@ If required, the SSL cipher list used by the UNIX/Linux agent can be customized.
 ::: moniker range="sc-om-2019"
 
 > [!NOTE]
-> With Operations Manager 2019 UR3, SSL renegotiations have been disabled. OMI uses opensource OpenSSL for SSL purposes. [Learn more](manage-security-crossplat-config-sslcipher.md#disabled-ssl-renegotiation-in-OMI).
+> With Operations Manager 2019 UR3, SSL renegotiations have been disabled. OMI uses opensource OpenSSL for SSL purposes. [Learn more](manage-security-crossplat-config-sslcipher.md#disabled-ssl-renegotiation-in-omi).
 
 ::: moniker-end
 

@@ -195,7 +195,7 @@ This topic describes how to enable logging and debug tools for troubleshooting i
 ::: moniker range="sc-om-2019"
 
 > [!NOTE]
-> With Operations Manager 2019 UR3, log-level settings can be changed without the need for restarting the agent. [Learn more](manage-security-administer-crossplat-agent.md)(#dynamic-changes-in-log-level-settings-without-agent-restart).
+> With Operations Manager 2019 UR3, log-level settings can be changed without the need for restarting the agent. [Learn more](manage-security-administer-crossplat-agent.md#dynamic-changes-in-log-level-settings-without-agent-restart).
 
 ::: moniker-end
 
