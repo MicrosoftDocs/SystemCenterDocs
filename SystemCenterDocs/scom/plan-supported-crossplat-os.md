@@ -148,6 +148,13 @@ CentOS 8 is supported from 2019 UR2 and later in XPlat agent under Universal Lin
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
 
+## Support for RHEL 6 in XPlat agent
+
+Operations Manager 2019 UR3 supports RHEL6 via RHEL6 management pack.
+
+> [!NOTE]
+> Universal Linux management pack will not discover/monitor RHEL6 from 2019 UR3 and later. 
+
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"

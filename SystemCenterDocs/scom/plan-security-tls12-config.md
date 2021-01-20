@@ -22,6 +22,13 @@ ms.topic: article
 
 This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management groups.  
 
+::: moniker range="sc-om-2019"
+
+> [!NOTE]
+> TLS 1.2 for Solaris 10 is supported with Operations Manager 2019 UR3 and later.
+
+::: moniker-end
+
 Perform the following steps to enable TLS protocol version 1.2:
 
 ::: moniker range="sc-om-2016"
