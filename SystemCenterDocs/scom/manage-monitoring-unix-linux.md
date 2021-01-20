@@ -190,7 +190,14 @@ The following examples show how to use the *ExecuteCommand* and *ExecuteShellCom
     `<p:ExecuteShellCommand_INPUT xmlns:p="https://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> uptime |&nbsp; awk '{print $10}' |awk -F"," '{print $1}' </p:Command> <p:timeout>10</p:timeout> </p:ExecuteShellCommand_INPUT>`  
 
 ## Logging and Debugging
-This topic describes how to enable logging and debug tools for troubleshooting issues with monitoring UNIX and Linux computers.  
+This topic describes how to enable logging and debug tools for troubleshooting issues with monitoring UNIX and Linux computers.
+
+::: moniker range="sc-om-2019"
+
+> [!NOTE]
+> With Operations Manager 2019 UR3, log-level settings can be changed without the need for restarting the agent. [Learn more](manage-security-administer-crossplat-agent.md)(#dynamic-changes-in-log-level-settings-without-agent-restart).
+
+::: moniker-end
 
 ### Enable Operations Manager Module Logging  
 The Operations Manager Agents for UNIX and Linux maintain several log files that can be useful when troubleshooting client issues. These log files are located on the managed UNIX or Linux computer. The logging level for the agent log files can be configured as needed. More verbose logging can be useful in diagnosing an issue. For normal operation, log levels should not be set to a value more verbose than the default configurations (Intermediate) in order to prevent excessive log file growth  

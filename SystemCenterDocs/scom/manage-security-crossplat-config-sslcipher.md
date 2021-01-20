@@ -72,6 +72,22 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 Modify omiserver.conf, set the **NoSSLv3** line to be:
 `NoSSLv3=false`
 
+::: moniker range="sc-om-2019"
+
+## Disabled SSL renegotiation in OMI
+
+>[!NOTE]
+> This update is applicable for Operations Manager 2019 UR3 and later.
+
+There were multiple reports from customer on their scanner tool detecting vulnerability **CVE-2011-1473**. This security vulnerability is of SCOM-Linux agent that responds to a renegotiation request, which might make it easier for the remote attackers to cause a denial of service (CPU consumption) by performing many renegotiations within a single connection.
+
+With Operations Manager 2019 UR3, SSL renegotiations have been disabled. OMI uses opensource OpenSSL for SSL purposes.
+
+> [!NOTE]
+> - **OpenSSL <= 1.0.2 and OpenSSL >= 1.1.0h**: SSL renegotiations is supported.
+> - **OpenSSL 1.1.0 - 1.1.0g**: There is no way from OpenSSL to disable renegotiation. Customer should not use these versions to disable renegotiations.
+
+::: moniker-end
 
 ## Next steps
 
