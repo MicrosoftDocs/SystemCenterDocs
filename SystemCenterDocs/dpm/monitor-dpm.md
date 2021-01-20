@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 03/14/2019
+ms.date: 01/20/2021
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -31,7 +31,7 @@ To monitor DPM in the console, you should be logged on to the DPM server with a 
 
 -   In the **Protection** task area, you can check the status of volumes and shares in protection group, and check configuration settings such as recovery settings, disk allocation, and backup schedule.
 
--   In the **Management** task area you can view the **Disks,Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
+-   In the **Management** task area you can view the **Disks, Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
 
 ## Monitor DPM in the Central Console
 Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple DPM servers from a single location. In the Central Console you can monitor and track the status of multiple DPM servers,  jobs, protection groups, tapes, storage, and disk space.
@@ -59,7 +59,7 @@ From the dashboard you can download the Backup agent for installation on a serve
 All DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup. You can monitor both on premise and cloud backups, using Log Analytics with Central Monitoring. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts, and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration.
 
 > [!NOTE]
-> You must have a valid Azure subscription to be able to centrally monitor.
+> - You must have a valid Azure subscription to be able to centrally monitor.
 
 **Enable central monitoring**
 
@@ -71,7 +71,11 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport* and click **Save**.
 
     > [!NOTE]
-    > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
+    > - Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
+    > - For DPM 2019 and later, the backup report continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
+    >
+    >Also, datasources for which the online protection is stopped but data is retained, billing for the online recovery points continue until the data is completely deleted.
+
 
     Here is a sample backup report:
 
@@ -93,6 +97,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 3. You can also monitor active alerts, current data sources being backed up and cloud storage as shown below:
 
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image3.png)
+
 4. You can also specify the desired time range for monitoring the backup parameters.
 
     ![Timeframe for monitoring](./media/monitor-dpm/specify-timeframe.png)
