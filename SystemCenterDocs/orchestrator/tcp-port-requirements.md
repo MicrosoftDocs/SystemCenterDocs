@@ -25,6 +25,6 @@ Communication between Orchestrator features on different computers, occurs over 
 | Activities   | Various targeted computers depending on activity | |   | For information about individual integration packs, see [Integration Packs for System Center - Orchestrator](list-of-orchestrator-integration-packs.md).    |
 
 
-## Next steps
+### Next steps
 - [See system requirements](system-requirements-orch.md)
 - [Install Orchestrator](install.md)
