@@ -66,9 +66,9 @@ The properties pages for alerts, rules, and monitors offer useful information an
 In Operations Manager 2019 RTM, UR1 and UR2, active alerts are not getting closed after non-Persistent health state in certain scenarios, detailed below:
 
 1. Failover:
-  - The failover that might get triggered when the management server goes offline.
-  - Due to addition of new management servers to the resource pool, leading to load-balancing.  
-  - When an agentless computer fails over and is to be monitored by another management server, hence the new health status.
+   - The failover that might get triggered when the management server goes offline.
+   - Due to addition of new management servers to the resource pool, leading to load-balancing.  
+   - When an agentless computer fails over and is to be monitored by another management server, hence the new health status.
 
 2. Agent disconnected and connected again after some time, in which the health status change is not aware of the previous state.
 
