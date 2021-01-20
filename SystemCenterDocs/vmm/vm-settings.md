@@ -274,7 +274,7 @@ To configure trunk mode in VMM, follow the steps:
 
 ### PowerShell support
 
-Configure trunk mode to virtual network adapter of a virtual machine using [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/en-us/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019) and [New-SCVirtualNetworkAdapter](https://docs.microsoft.com/en-us/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019) cmdlets.
+Configure trunk mode to virtual network adapter of a virtual machine using [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019) and [New-SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019) cmdlets.
 
 Use the following PowerShell parameters to enable trunk mode.
 1. **[–AllowedVLanList]**
