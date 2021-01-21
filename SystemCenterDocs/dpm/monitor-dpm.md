@@ -59,7 +59,7 @@ From the dashboard you can download the Backup agent for installation on a serve
 All DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup. You can monitor both on premise and cloud backups, using Log Analytics with Central Monitoring. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts, and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration.
 
 > [!NOTE]
-> - You must have a valid Azure subscription to be able to centrally monitor.
+> You must have a valid Azure subscription to be able to centrally monitor.
 
 **Enable central monitoring**
 
@@ -71,7 +71,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport* and click **Save**.
 
     > [!NOTE]
-    > - Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
+    > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
 
 
     Here is a sample backup report:
