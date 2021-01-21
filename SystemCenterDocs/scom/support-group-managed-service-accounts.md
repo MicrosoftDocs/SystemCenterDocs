@@ -1,7 +1,7 @@
 ---
 ms.assetid: a13cf51e-e6f0-4446-b00c-bf7516426d4f  
 title: Support for group managed service accounts in System Center Operations Manager
-description: This article details the group managed service accounts feature, supported in System Center Operations Manager 2019  UR1 and later..
+description: This article details the group managed service accounts feature, supported in System Center Operations Manager 2019  UR1 and later.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
@@ -34,7 +34,7 @@ Currently, the Operations Manager uses the following accounts and services :
   - Agent Installation account
       - MSAA by default, needs admin rights on the target computers.
 
-To leverage gMSA, administrators must to do the following:
+To leverage gMSA, administrators must do the following:
 
 **Verify if managed service accounts can be used on the computer**
 
