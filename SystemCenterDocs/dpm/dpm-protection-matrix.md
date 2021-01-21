@@ -174,13 +174,15 @@ DPM can protect data in the following clustered applications:
 
 -   SQL Server
 
-  ::: moniker range="<sc-dpm-2019"
-  > [!NOTE]
-  > DPM doesn't support the protection of SQL Server databases, hosted on cluster-shared volumes (CSVs).
+    ::: moniker range="<sc-dpm-2019"
+    
+    > [!NOTE]
+    > DPM doesn't support the protection of SQL Server databases, hosted on cluster-shared volumes (CSVs).
 
-  ::: moniker-end
+    ::: moniker-end
 
-  ::: moniker range=">sc-dpm-1807"
+    ::: moniker range=">sc-dpm-1807"
+
     > [!NOTE]
     > DPM 2019 UR2 and later supports the protection of SQL Server databases, hosted on cluster-shared volumes (CSVs).
 
