@@ -1,5 +1,5 @@
 ---
-description: A complete matrix of all workloads, data types, and installations that DPM protects. Applies to DPM 2016, 1801, and 1807.
+description: A complete matrix of all workloads, data types, and installations that DPM protects. Applies to DPM 2016, 1801, 1807 and 2019.
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
@@ -175,14 +175,16 @@ DPM can protect data in the following clustered applications:
 -   SQL Server
 
 ::: moniker range="<sc-dpm-2019"
-    > [!NOTE]
+
+  > [!NOTE]
     > DPM doesn't support the protection of SQL Server databases, hosted on cluster-shared volumes (CSVs).
 
 ::: moniker-end
 
-::: moniker range=">sc-dpm-1807"
-    > [!NOTE]
-    > DPM 2019 UR2 and later supports the protection of SQL Server databases, hosted on cluster-shared volumes (CSVs).
+::: moniker range=">sc-dpm-1807
+
+  > [!NOTE]
+  > DPM 2019 UR2 and later supports the protection of SQL Server databases, hosted on cluster-shared volumes (CSVs).
 
 ::: moniker-end
 
