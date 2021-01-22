@@ -238,11 +238,13 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
 #### Operations Manager converter: filter_scom_converter
 Sends an event to Operations Manager for all records it receives. Sends the specified event ID and description as part of the event.
 
+  ```
     <filter tag>
         type filter_scom_converter
         event_id <event ID>
         event_desc <event description>
     </filter>
+  ```
 
 
 ## Copy configuration file to agent
