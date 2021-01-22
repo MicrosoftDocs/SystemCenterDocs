@@ -33,7 +33,7 @@ The following example scenario provides information on how you can start a servi
 
     The **Run Script Command** page appears:
 
-    ![Host](media/run-script-command/run-script-window.png)
+    ![Run Script Command](media/run-script-command/run-script-window.png)
 
 2. As an example, type the following details against the options displayed:
 

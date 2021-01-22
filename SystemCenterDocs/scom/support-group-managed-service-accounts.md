@@ -1,7 +1,7 @@
 ---
 ms.assetid: a13cf51e-e6f0-4446-b00c-bf7516426d4f  
 title: Support for group managed service accounts in System Center Operations Manager
-description: This article details the group managed service accounts feature, supported in System Center Operations Manager 2019  UR1 and later..
+description: This article details the group managed service accounts feature, supported in System Center Operations Manager 2019  UR1 and later.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
@@ -21,20 +21,20 @@ Operations Manager 2019 UR1 and later supports group managed service accounts (g
 >The article provides information on how to use gMSA in operations manager, does not include information on how to create these. For information on how to create gMSA accounts, see [gMSA accounts](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
 
 ## Accounts used for gMSA
-Currently, Operations Manager uses the following accounts and services :
+Currently, the Operations Manager uses the following accounts and services :
 
   - Action Accounts
       - Default Action account-management server Action account
       - Agent Action account
       - GW Server Action account
       - Run as accounts
-  - System Center Configuration Service and System Center Data Access Service (needs to be a part of local administrators group)
+  - System Center Configuration Service and System Center Data Access Service (needs to be a part of local administrators group).
   - Data Reader account (for SSRS), must be a member of Operations Manager Report Security Administrators group.
   - Data Warehouse Write account (for DW), must be a member of Operations Manager Report Security Administrators group.
   - Agent Installation account
       - MSAA by default, needs admin rights on the target computers.
 
-To leverage gMSA, administrators need to do the following:
+To leverage gMSA, administrators must do the following:
 
 **Verify if managed service accounts can be used on the computer**
 

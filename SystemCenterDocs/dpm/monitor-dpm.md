@@ -31,7 +31,7 @@ To monitor DPM in the console, you should be logged on to the DPM server with a 
 
 -   In the **Protection** task area, you can check the status of volumes and shares in protection group, and check configuration settings such as recovery settings, disk allocation, and backup schedule.
 
--   In the **Management** task area you can view the **Disks,Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
+-   In the **Management** task area you can view the **Disks, Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
 
 ## Monitor DPM in the Central Console
 Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple DPM servers from a single location. In the Central Console you can monitor and track the status of multiple DPM servers,  jobs, protection groups, tapes, storage, and disk space.
@@ -73,6 +73,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
     > [!NOTE]
     > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
 
+
     Here is a sample backup report:
 
     ![backup report](./media/monitor-dpm/azure-backup-report.png)
@@ -93,6 +94,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 3. You can also monitor active alerts, current data sources being backed up and cloud storage as shown below:
 
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image3.png)
+
 4. You can also specify the desired time range for monitoring the backup parameters.
 
     ![Timeframe for monitoring](./media/monitor-dpm/specify-timeframe.png)

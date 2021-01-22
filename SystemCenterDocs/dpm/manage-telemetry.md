@@ -25,11 +25,11 @@ This article provides information about how to manage the telemetry (Diagnostics
 
 By default, Data Protection Manager sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security, and integrity of Microsoft products and services.
 
-Administrators can turn off this feature at any point of time. For detailed information about the data collected, see the [following section](#telemetry-data-collected).
+Administrators can turn off this feature at any point of time. For more information on the data collected, see the [following section](#telemetry-data-collected).
 
 ## Turn on/off telemetry from console
 
-1. In the Data Protection Manager console, go to **Management**, and then click **Options** in the top pane.
+1. In the Data Protection Manager console, go to **Management** and click **Options** in the top pane.
 2. In the **Options** dialog box, select **Diagnostic and Usage Data Settings**.
 
     ![console telemetry options](./media/telemetry/telemetry-options.png)
