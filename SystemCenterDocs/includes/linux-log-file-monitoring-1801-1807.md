@@ -185,16 +185,19 @@ Takes up to 20 input patterns.  Sends an event to Operations Manager whenever an
 #### Exclusive match: filter_scom_excl_match
 Takes two input patterns. Sends an event to Operations Manager when a single record matches pattern 1 but does not match pattern 2.
 
+  ```
     <filter tag>
         type filter_scom_excl_match
         regexp1 <key> <pattern1>
         regexp2 <key> <pattern2>
         event_id <event ID>
     </filter>
+  ```
 
 #### Repeated correlation: filter_scom_repeated_cor
 Takes three inputs: a patterns, a time interval, and a number of occurrences. When a match is found for the first pattern, a timer starts.  An event is sent to Operations Manager if the pattern is matched the specified number of times before the timer ends.
 
+  ```
     <filter tag>
         type filter_scom_repeated_cor
         regexp <key> <pattern>
@@ -202,11 +205,13 @@ Takes three inputs: a patterns, a time interval, and a number of occurrences. Wh
         time_interval <interval in seconds>
         num_occurences <number of occurrences>
     </filter>
+  ```
 
 
 #### Correlated match: filter_scom_cor_match
 Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts.  An event is sent to Operations Manager if there is a match for the second pattern before the timer ends.
 
+  ```
     <filter tag>
         type filter_scom_cor_match
         regexp1 <key> <pattern1>
@@ -214,11 +219,13 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
         event_id <event ID>
         time_interval <interval in seconds>
     </filter>
+  ```
 
 
 #### Exclusive correlation: filter_scom_excl_correlation
 Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts.  An event is sent to Operations Manager if there is no match for the second pattern before the timer ends.
 
+  ```
     <filter tag>
         type filter_scom_excl_correlation
         regexp1 <key> <pattern1>
@@ -226,6 +233,7 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
         event_id <event ID>
         time_interval <interval in seconds>
     </filter>
+  ```
 
 #### Operations Manager converter: filter_scom_converter
 Sends an event to Operations Manager for all records it receives. Sends the specified event ID and description as part of the event.
