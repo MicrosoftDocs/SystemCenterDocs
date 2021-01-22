@@ -57,10 +57,10 @@ Use the following procedures to configure the VIPs to load balance the workload 
 
 2. In the **Name** page, provide the name and optional description. Specify the **Virtual IP Port** that will be used as front end port for the network traffic. In the **Backend port**, specify the port on which the backend workloads are hosted. Click **Next**.
 
-    ![VIP template name](media/sdn-load-balance-network-traffic/lb-template-type-image2.png)
+    ![VIP template type](media/sdn-load-balance-network-traffic/lb-template-type-image2.png)
 3. In **Specify a Template type**, select Specific. In **Manufacturer**, select Microsoft.  In **Model**, select Microsoft Network Controller.  Click **Next**.
 
-    ![VIP template name](media/sdn-load-balance-network-traffic/lb-protocol-options-image3.png)
+    ![VIP protocol options](media/sdn-load-balance-network-traffic/lb-protocol-options-image3.png)
 4. In **Specify Protocol options**, select the Custom option and type TCP/UDP in Protocol name. Click **Next**.
 
     > [!NOTE]
@@ -68,7 +68,7 @@ Use the following procedures to configure the VIPs to load balance the workload 
 
 5. For **Persistence** and **Load Balancing**, use the defaults. Click **Next**.
 
-    ![VIP template name](media/sdn-load-balance-network-traffic/lb-health-monitor-image4.png)
+    ![Health Monitor](media/sdn-load-balance-network-traffic/lb-health-monitor-image4.png)
     > [!NOTE]
     > SLB doesn’t support persistence and different Load balancing methods. By default, SLB uses Round Robin algorithm for load balancing.
 
