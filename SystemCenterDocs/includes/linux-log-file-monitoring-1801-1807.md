@@ -55,13 +55,17 @@ The master Fluentd configuration file **omsagent.conf** is located in **/etc/opt
 
 For example, if you created **logmonitoring.conf** in  **/etc/opt/microsoft/omsagent/scom/conf/omsagent.d**, you would add one of the following lines to **fluent.conf**:
 
+  ```
     #Include all configuration files
     @include omsagent.d/*.conf
+  ```
 
 or
 
+  ```
     #include single configuration file
     @include omsagent.d/logmonitoring.conf
+  ```
 
 
 You can get details on Fluentd configuration files at [Fluentd Configuration file syntax](https://docs.fluentd.org).  The following sections describe settings in different directives of the configuration file unique to log file monitoring.  Each includes sample settings that you can paste into a configuration file and modify for your requirements.
@@ -74,6 +78,7 @@ The **Source** directive defines the source of the data you're collecting.  This
 
 This example shows syslog records collected and tagged for processing by Operations Manager.
 
+  ```
     <source>
 
         # Specifies input plugin. Tail is a fluentd input plugin - http://docs.fluentd.org/v0.12/articles/in_tail
@@ -91,12 +96,14 @@ This example shows syslog records collected and tagged for processing by Operati
         format /(?<message>.*)/
 
     </source>
+  ```
 
 #### Match
 The **match** directive defines how to process events collected from the source with matching tags.  Only events with a **tag** matching the pattern will be sent to the output destination.  When multiple patterns are listed inside one **match** tag, events can match any of the listed patterns.  The **type** parameter that specifies which plugin to use for these events.  
 
 This example processes events with tags matching **scom.log.**\*\* and  **scom.alert** (\*\* matches zero or more tag parts). It specifies the **out_scom** plugin which allows the events to be collected by the Operations Manager management pack.
 
+  ```
     <match scom.log.** scom.event>
 
         # Output plugin to use
@@ -132,6 +139,7 @@ This example processes events with tags matching **scom.log.**\*\* and  **scom.a
         max_retry_wait 9m
 
     </match>
+  ```
 
 
 
@@ -139,12 +147,14 @@ This example processes events with tags matching **scom.log.**\*\* and  **scom.a
 > To disable Server Auth on the Linux machines that are using Fluentd communication, add a parameter **enable_server_auth false** to the SCOM out plugin for Fluentd, such as the following:
 
 
+  ```
     <match scom.log.** scom.event>
     type out_scom
 
     max_retry_wait 9m
     enable_server_auth false
     </match>
+  ```
 
 
 ### Filter
@@ -156,6 +166,7 @@ There are six filter plugins for log file monitoring described here.  Use one or
 
 Takes up to 20 input patterns.  Sends an event to Operations Manager whenever any pattern is matched.
 
+  ```
     <filter tag>
         type filter_scom_simple_match
         regexp1 <key> <pattern>
@@ -168,21 +179,25 @@ Takes up to 20 input patterns.  Sends an event to Operations Manager whenever an
         regexp20 <key> <pattern>
         event_id20 <event ID>
     </filter>
+  ```
 
 
 #### Exclusive match: filter_scom_excl_match
 Takes two input patterns. Sends an event to Operations Manager when a single record matches pattern 1 but does not match pattern 2.
 
+  ```
     <filter tag>
         type filter_scom_excl_match
         regexp1 <key> <pattern1>
         regexp2 <key> <pattern2>
         event_id <event ID>
     </filter>
+  ```
 
 #### Repeated correlation: filter_scom_repeated_cor
 Takes three inputs: a patterns, a time interval, and a number of occurrences. When a match is found for the first pattern, a timer starts.  An event is sent to Operations Manager if the pattern is matched the specified number of times before the timer ends.
 
+  ```
     <filter tag>
         type filter_scom_repeated_cor
         regexp <key> <pattern>
@@ -190,11 +205,13 @@ Takes three inputs: a patterns, a time interval, and a number of occurrences. Wh
         time_interval <interval in seconds>
         num_occurences <number of occurrences>
     </filter>
+  ```
 
 
 #### Correlated match: filter_scom_cor_match
 Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts.  An event is sent to Operations Manager if there is a match for the second pattern before the timer ends.
 
+  ```
     <filter tag>
         type filter_scom_cor_match
         regexp1 <key> <pattern1>
@@ -202,11 +219,13 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
         event_id <event ID>
         time_interval <interval in seconds>
     </filter>
+  ```
 
 
 #### Exclusive correlation: filter_scom_excl_correlation
 Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts.  An event is sent to Operations Manager if there is no match for the second pattern before the timer ends.
 
+  ```
     <filter tag>
         type filter_scom_excl_correlation
         regexp1 <key> <pattern1>
@@ -214,15 +233,18 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
         event_id <event ID>
         time_interval <interval in seconds>
     </filter>
+  ```
 
 #### Operations Manager converter: filter_scom_converter
 Sends an event to Operations Manager for all records it receives. Sends the specified event ID and description as part of the event.
 
+  ```
     <filter tag>
         type filter_scom_converter
         event_id <event ID>
         event_desc <event description>
     </filter>
+  ```
 
 
 ## Copy configuration file to agent
