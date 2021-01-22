@@ -1,8 +1,8 @@
 ---
 title: Exchange Admin Integration Pack for Orchestrator in System Center
-description: Integration packs are add-ons for System Center - Orchestrator, a component of System Center.
+description: This article provides information about exchange Integration packs and how to deploy and use it.
 ms.custom: na
-ms.date: 04/04/2019
+ms.date: 01/22/2021
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
