@@ -1,6 +1,6 @@
 ---
 title: Exchange Admin Integration Pack for Orchestrator in System Center
-description: This article provides information about exchange Integration packs and how to deploy and use it.
+description: This article provides information about exchange Integration packs and how to deploy it.
 ms.custom: na
 ms.date: 04/04/2019
 ms.prod: system-center
