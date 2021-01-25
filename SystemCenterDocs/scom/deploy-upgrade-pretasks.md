@@ -56,6 +56,7 @@ As part of upgrade to System Center Operations Manager installation (setup) incl
 
 To cleanup the ETL table, run the following script on the SQL Server hosting the Operations Manager database:
 
+  ```
     -- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         --
     -- Proprietary and confidential to Microsoft Corporation                      --       
     -- File:      CatchupETLGrooming.sql                                          --
@@ -79,7 +80,8 @@ To cleanup the ETL table, run the following script on the SQL Server hosting the
       WHERE RECL.EntityTransactionLogId = ETL.EntityTransactionLogId)
       AND ETL.EntityTransactionLogId < @SubscriptionWatermark;        
       SELECT @LastErr = @@ERROR, @RowCount = @@ROWCOUNT;            
-    END    
+    END
+  ```   
 
 > [!NOTE]
 > Cleanup of ETL can require several hours to complete.
