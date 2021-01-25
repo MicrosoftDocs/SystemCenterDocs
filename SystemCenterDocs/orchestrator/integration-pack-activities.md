@@ -1,6 +1,6 @@
 ---
 title: FTP Integration Pack Activities
-description: The following configuration instructions apply to all activities in this integration pack.
+description: The following configuration instructions apply to all activities in this integration pack. It also lists Activity properties.
 ms.custom: na
 ms.date: 4/25/2017
 ms.prod: system-center

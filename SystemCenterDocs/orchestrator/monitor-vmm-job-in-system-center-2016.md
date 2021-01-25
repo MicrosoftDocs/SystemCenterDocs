@@ -1,6 +1,6 @@
 ---
 title: Monitor VMM Job in System Center 2016
-description: The Monitor VMM Job activity is used in a runbook to monitor a VMM job.
+description: The Monitor VMM Job activity is used in a runbook to monitor a VMM job and lists the required and optional properties.
 ms.custom: na
 ms.date: 12/02/2016
 ms.prod: system-center
