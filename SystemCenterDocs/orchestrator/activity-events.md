@@ -79,9 +79,8 @@ After you have configured an SNMP trap destination for Orchestrator event notifi
 
 The variable bindings are listed in the following table.  
 
-|||  
-|---|---|  
 |Trap Enterprise ID|1.3.6.1.4.1.4217.100.100|  
+|---|---|    
 |Generic ID|\(6\)|  
 |Specific ID|\(1\)|  
 |Orchestrator Event Information IDs|Orchestrator Event Type - 1<br /><br />Orchestrator Event Summary - 2<br /><br />Orchestrator Event Details - 3|  
