@@ -32,7 +32,7 @@ Legend:
 
 *  No - Cannot use the feature unless the user also belongs to a group that grants access to this functionality.  
 
-||Administrator|Author|Advanced Operator|Application Monitoring Operator|Operator|Read-Only Operator|Report Operator|Report Security Administrator|  
+|Tasks|Administrator|Author|Advanced Operator|Application Monitoring Operator|Operator|Read-Only Operator|Report Operator|Report Security Administrator|  
 |-|-----------------|----------|---------------------|-----------------------------------|------------|-----------------------|-------------------|---------------------------------|  
 |Run APM Wizard or change APM settings|Yes|No|No|No|No|No|No|No|  
 |Access Application Diagnostics|Yes|No|No|Yes|No|No|No|No|  
