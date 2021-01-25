@@ -135,7 +135,7 @@ The following table provides examples of dynamic and static L3 connections.
 Run the following script to set up L3 forwarding. Refer to the table above to check what each script parameter identifies.
 
 
-    ```powershell
+  ```powershell
     param (
         [Parameter(Mandatory=$true)]
         # Name of the L3 VPN connection
@@ -257,7 +257,7 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
     {
         Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection -VMNetworkGateway $VmNetworkGateway
     }
-    ```
+  ```
 
 ::: moniker-end
 

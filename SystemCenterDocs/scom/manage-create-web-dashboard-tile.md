@@ -1,7 +1,7 @@
 ---
 ms.assetid:
 title: How to create a dashboard with the Tile widget in the Web console
-description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Tile widget.
+description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Tile widget.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
@@ -55,11 +55,11 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 
     For either option selected, you can search by keyword in the list.  As you begin typing, the list filters based on your input.  You can select an individual group or class or multiple from the returned results.
 
-10. Complete the configuration by providing a **Name**, **Description** and **Widget reefresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
+10. Complete the configuration by providing a **Name**, **Description** and **Widget refresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
 
 After the widget has been created, it displays a summary tile showing the health and number of alerts for the object that match a criteria defined. The tile represents health information into the following categories - *A* for availability, *P* for performance, *C* for configuration, and *S* for security.  The color for each category represents the overall health of all the monitors under that category for the specified object.
 
-    ![Completed example of Tile widget in dashboard](./media/create-web-dashboard-tile/web-console-new-dashboard-tile-01.png)
+  ![Completed example of Tile widget in dashboard](./media/create-web-dashboard-tile/web-console-new-dashboard-tile-01.png)
 
 Click on the object name in the Tile widget to launch Health Explorer for the specific object.
 
