@@ -26,6 +26,7 @@ This is a sample management pack to create an alert from a log file in Linux wit
 This management pack will create an alert for every collected event.  There is another rule in the comments of the management pack that will only create an alert for events with a specific event number.  To use this rule, remove the comments and replace the event number with one that you require.
 
 
+  ```
     <ManagementPack>
         <Manifest>
             <Identity>
@@ -138,7 +139,7 @@ This management pack will create an alert for every collected event.  There is a
             </LanguagePack>
         </LanguagePacks>
     </ManagementPack>
-
+  ```
 
 ## Next steps
 
