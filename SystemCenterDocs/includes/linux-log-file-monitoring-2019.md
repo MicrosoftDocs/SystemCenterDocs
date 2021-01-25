@@ -50,31 +50,31 @@ To configure Linux log file monitoring, do the following:
 
  4. Create the folders in the following paths:
 
-         - /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
+      - /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
 
-         - /etc/opt/microsoft/omsagent/scom/certs
+      - /etc/opt/microsoft/omsagent/scom/certs
 
-         - /var/opt/microsoft/omsagent/scom/log
+      - /var/opt/microsoft/omsagent/scom/log
 
-         - /var/opt/microsoft/omsagent/scom/run
+      - /var/opt/microsoft/omsagent/scom/run
 
-         - /var/opt/microsoft/omsagent/scom/state
+      - /var/opt/microsoft/omsagent/scom/state
 
-         - /var/opt/microsoft/omsagent/scom/tmp
+      - /var/opt/microsoft/omsagent/scom/tmp
 
-         - /home/omsagent/fluent-logging (used for log file position file)
+      - /home/omsagent/fluent-logging (used for log file position file)
 
  5. Set ownership of each of the above to omsagent:omiusers
 
-        - chown omsagent:omiusers state
+      - chown omsagent:omiusers state
 
-        - chown omsagent:omiusers run
+      - chown omsagent:omiusers run
 
-        - chown omsagent:omiusers log
+      - chown omsagent:omiusers log
 
-        - chown omsagent:omiusers tmp
+      - chown omsagent:omiusers tmp
 
-        - chown omsagent:omiusers /home/omsagent/fluent-logging
+      - chown omsagent:omiusers /home/omsagent/fluent-logging
 
          ![log file monitoring](../scom/media/log-file-monitoring/log-file-monitoring.png)
 
