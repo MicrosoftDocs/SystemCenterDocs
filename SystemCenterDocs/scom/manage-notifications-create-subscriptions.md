@@ -69,7 +69,7 @@ The following are the examples of the criteria builder showcasing single express
 
 **Example - groups of expressions**
 
-![criteria builder single expression](./media/manage-notifications-create-subscriptions/criteria-builder-groups-expressions.png)
+![criteria builder groups expression](./media/manage-notifications-create-subscriptions/criteria-builder-groups-expressions.png)
 
 ::: moniker-end
 
