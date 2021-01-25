@@ -1,6 +1,6 @@
 ---
 title: REST activities
-description: The following configuration instructions apply to all activities in this integration pack.
+description: The following configuration instructions apply to all activities in this integration pack. It lists event notifications.
 ms.custom: na
 ms.date: 12/02/2016
 ms.prod: system-center
