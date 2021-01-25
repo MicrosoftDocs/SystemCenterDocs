@@ -75,28 +75,36 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 1. Before you start retrieve the name of the PowerShell objects you want to use.
 2. Get the name of the primary storage array and assign to variable.
 
-        $PriArray = Get-SCStorageArray - Name $PriArrayName
+      ```PowerShell
+          $PriArray = Get-SCStorageArray - Name $PriArrayName
+      ```
 
 3. Get the name of the secondary storage array and assign to variable.
 
-        RecArray = Get-SCStorageArray - Name $RecArrayName
+      ```PowerShell
+          RecArray = Get-SCStorageArray - Name $RecArrayName
+      ```
 
 4. Get the name of the primary storage pool and assign to variable.
 
-        $ $ PriPoolName $RecPool = Get-SCStoragePool -Name $
-
-
+      ```PowerShell
+          $ $ PriPoolName $RecPool = Get-SCStoragePool -Name $
+      ```
 
 5. Get the name of the secondary storage pool and assign to variable.
 
-        $ $PriPoolName $RecPool = Get-SCStoragePool -Name $
+      ```PowerShell
+          $ $PriPoolName $RecPool = Get-SCStoragePool -Name $
+      ```
 
 
 ## Pair the storage arrays
 
 Pair the primary and secondary storage arrays using the variables for the storage array names. Note that the array name should be the same as the cluster name.
 
+  ```PowerShell
         Set-SCStorageArray -StorageArray $PriArray -PeerStorageArrayName $RecArray.name
+  ```
 
 If you created the cluster outside VMM and you do need to rename the array name to match the cluster name use:
     ```PowerShell
