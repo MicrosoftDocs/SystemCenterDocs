@@ -107,7 +107,7 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://docs.microsoft.com/lifec
 |Limitations|You can install DPM on the operation system volume or on a different volume.<br/> DPM is designed to run on a dedicated, single-purpose server. Don't install DPM on:<br/> - a server running Application Server role<br/> - An Operations Manager Management server<br/> - A server running Exchange<br/> - A server running on a cluster node<br/> DPM isn't supported on the Turkish language version of any of the supported Windows Server versions.|
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|3 GB minimum, 3 GB recommended|
-|Processor|1.4 GHZ 4 core minimum, 3.3 GHZ 4 core recommended|
+|Processor|1.4 GHz 4 core minimum, 3.3 GHz 4 core recommended|
 
 ::: moniker-end
 
