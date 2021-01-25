@@ -58,7 +58,7 @@ Use the following steps:
 6. Click **Save**.
    The dashboard is stored inside the selected folder, and can be seen in the left navigation pane.
 
-   ![New dashboard](./media/support-for-folders/new-dashboard-folder-in-client.png)
+   ![Save dashboard](./media/support-for-folders/new-dashboard-folder-in-client.png)
 
    > [!NOTE]
    >  You can create a dashboard at the root monitoring level as before, by not selecting any folder and clicking the monitoring root.
