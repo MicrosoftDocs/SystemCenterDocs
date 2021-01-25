@@ -50,7 +50,7 @@ All columns in the table support sorting and text entries will sort in alphabeti
 
 If a rule or monitor has an override applied, which is reflected by the workflow showing a value of **True** in the Overridden column, you can view the override values applied by clicking on the on the expand icon in the first column, and the row will expand to show the default settings and modified values for the rule or monitor.   
 
-![Example of the effective configuration of a Windows computer object](./media/view-effective-configuration/effective-configuration-overrides-01.png)
+![Example to Override effective configuration of a Windows computer object](./media/view-effective-configuration/effective-configuration-overrides-01.png)
 
 ## Next steps
 
