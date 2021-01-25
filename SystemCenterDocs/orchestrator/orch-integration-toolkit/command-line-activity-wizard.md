@@ -43,9 +43,8 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 5.  Click the **Assembly information** button. You can enter information here that will become the properties of the assembly file, visible in Windows Explorer via file properties. The property values are defined in the table below. This information is optional and not required to build an assembly.  
 
-    |||  
-    |-|-|  
     |Property|Description|  
+    |-|-|   
     |Title|Specifies a title for the assembly, which appears as the “File description” property in Windows Explorer properties|  
     |Description|Specifies an optional description for the assembly, which does not appear in Windows Explorer properties|  
     |Product|Specifies a product name for the assembly, which appears as the “Product name” property in Windows Explorer properties|  
@@ -101,7 +100,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 9. From the **Display style** drop-down list, select the style that you will use to display the parameter. The display style determines how the user will interact with the input when it is presented to them. The choices are described below:  
 
-    |||  
+    |Display style|Description|  
     |-|-|  
     |Text|The user will be presented with a free-form text box for entering a value|  
     |Encrypted Text|The user will be presented with a masked text box. The data in this field will be encrypted within the database and will not be shown in any logs|  
@@ -128,7 +127,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 17. If you selected the **Run Command**, **Run Program**, or **Run SSH Command** option from the **Mode** drop-down list on the **General** tab of the **Add/Edit Command** dialog, the following items appear on the **Add/Edit Published Data** dialog:  
 
-    |||  
+    |Items|Description|  
     |-|-|  
     |Name|The display name of the Published Data item that you are creating|  
     |Source|The source of the Published Data item. You can choose from **Standard Output Stream** or **Standard Error Stream** from the command line|  
@@ -138,7 +137,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 18. If you selected the **Run Windows PowerShell** option from the **Mode** drop-down list on the **General** tab of the **Add/Edit Command** dialog, the following items appear on the **Add/Edit Published Data** dialog:  
 
-    |||  
+    |Items|Description|  
     |-|-|  
     |Name|The display name of the Published Data item that you are creating|  
     |Property|The name of the Windows PowerShell property that will be saved to the Published Data item. This property must be contained in an object output to the PowerShell pipeline during the script and must not be an object (should be able to be converted to a string).|  
@@ -206,9 +205,8 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 ## Orchestrator Resources  
  In addition to this online reference provided for System Center 2012 Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.  
 
-|||  
-|-|-|  
 |Resource|Location|  
+|-|-|   
 |System Center Home|[https://www.microsoft.com/en-us/cloud-platform/system-center](https://www.microsoft.com/en-us/cloud-platform/system-center)|  
 |System Center documentation|[https://docs.microsoft.com/system-center/](https://docs.microsoft.com/system-center/)|  
 |Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  

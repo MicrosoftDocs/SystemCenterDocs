@@ -64,7 +64,7 @@ Ensure the following prerequisites are met:
 
    - In **Health Monitors**, you can optionally specify that a verification should run against the load balancer at regular intervals. To add a health monitor, specify the protocol and the request. For example, entering the command GET makes an HTTP GET request for the home page of the load balancer and checks for a header response. You can also modify the response type, and monitoring interval, timeout, and retries. Note that the timeout should be less than the interval.
 
-     ![load balancing method](media/slb-vip/health-monitor.png)
+     ![add health monitor](media/slb-vip/health-monitor.png)
 
    - In **Summary**, confirm the Settings and click **Finish** to create the VIP template.
 

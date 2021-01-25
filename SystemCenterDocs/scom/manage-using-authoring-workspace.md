@@ -27,7 +27,7 @@ Authoring is described in detail in the [Operations Manager Authoring Guide](htt
 ## Management Pack Templates  
 *Management Pack Templates* allow you to create complete monitoring scenarios with minimal input. Once you complete a wizard, the management pack template creates monitors, rules, and even classes to implement the particular scenario. There is no requirement for you to understand the management pack elements that are created since you can continue to use the template to perform configuration. It will make any necessary modifications to the underlying elements.  
 
-|||  
+|Elements|Description|  
 |-|-|  
 |.NET Application Performance Monitoring|Monitor your Windows ASP.NET and WCF Applications hosted on IIS 7.0, 8.0 and 10.0, including Windows Services that use .NET Framework.|  
 |OLE DB Data Source|Monitor the availability and performance of a database. Sample queries can be executed from one or more watcher nodes.|  
@@ -49,7 +49,7 @@ Authoring is described in detail in the [Operations Manager Authoring Guide](htt
 ## Management Pack Objects  
 The Management Pack Objects section provides access to the different elements that are available. Depending on the kind of object, you may be able to create new objects, edit existing objects, or view existing objects.  
 
-|||  
+|Elements|Description|  
 |-|-|  
 |Attributes|An *attribute* is a property of a class in a management pack. You can add additional attributes to collect additional information about managed objects. These attributes can be used to support group membership or accessed by monitors or rules.|  
 |Monitors|*Monitors* are workflows that run on an agent and determine the current health of an object. Each monitor uses a particular data source as the event log, performance data, or a script to collect its information.<br><br>You can create new monitors and edit existing monitors in the Operations console for specific monitoring scenarios which will address the requirements of most users. More complex monitors must be created and modified using the Authoring console.|  
