@@ -105,11 +105,11 @@ You configure workload-aware storage using Windows PowerShell cmdlets.
     Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-DatasourceType] <VolumeTag[]> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
     ```
 
-    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-8.png)
+    ![Disk Storage volume properties](./media/add-storage/dpm2016-add-storage-8.png)
 
 3. The changes made using the PowerShell cmdlet are reflected in the DPM Management console.
 
-    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
+    ![View Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
 
 ## Volume exclusion
 
@@ -506,7 +506,7 @@ Follow these steps:
    After the volumes are added, you can give them a friendly name.
 3. Click **OK** to format the volumes to ReFS, so DPM can use them as MBS.
 
-    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
+    ![Add volume to Disk Storage](./media/add-storage/dpm2016-add-storage-7.png)
 
 ## Disable Write Auto Tiering at file system level
 
@@ -563,11 +563,11 @@ You can configure workload-aware storage using Windows PowerShell cmdlets.
     Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-DatasourceType] <VolumeTag[]> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
     ```
 
-    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-8.png)
+    ![Update Disk Storage](./media/add-storage/dpm2016-add-storage-8.png)
 
     Changes made using the PowerShell cmdlet are reflected in the DPM Management console.
 
-    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
+    ![View Disk Storage Volume Properties](./media/add-storage/dpm2016-add-storage-9.png)
 
 ## Volume exclusion
 
