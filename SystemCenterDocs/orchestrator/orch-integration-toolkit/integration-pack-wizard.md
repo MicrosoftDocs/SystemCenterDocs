@@ -46,9 +46,8 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 3. On the **Product Details** page, enter or modify the information as needed to customize the information about your Integration Pack. The table below describes the fields and their descriptions:  
 
 
-   |                |                                                                                                                                                                                                                                                                                                                                                                                                        |
-   |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |   Field Name   |                                                                                                                                                                                              Description                                                                                                                                                                                               |
+   |    Field Name            |     Description                                                                                                                                                                                                                                                                                                                                                                                                   |
+   |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|                                        
    |  Product name  |                                                                                                                                                                         The name of the IP that displays in Deployment Manager                                                                                                                                                                         |
    | Category name  |                                                                                                                                                   The text that displays as the category title for the IP in the Activities pane of Runbook Designer                                                                                                                                                   |
    |    Company     |                                                                                                                                                    The name of your company. This information is displayed in Add/Remove Programs under “Publisher”                                                                                                                                                    |
@@ -155,9 +154,8 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 ## Orchestrator Resources  
  In addition to this online reference provided for System Center 2012 Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.  
 
-|||  
-|-|-|  
 |Resource|Location|  
+|-|-|   
 |System Center Home|[https://www.microsoft.com/en-us/cloud-platform/system-center](https://www.microsoft.com/en-us/cloud-platform/system-center)|  
 |System Center documentation|[https://docs.microsoft.com/system-center/](https://docs.microsoft.com/system-center/)|  
 |Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
