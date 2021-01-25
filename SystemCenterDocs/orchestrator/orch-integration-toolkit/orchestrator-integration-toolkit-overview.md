@@ -27,9 +27,8 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 ## Toolkit Components  
  The installation of the Orchestrator Integration Toolkit consists of the following:  
 
-|||  
-|-|-|  
 |Component|Description|  
+|-|-|    
 |Command-Line Activity Wizard|A utility that allows users to define activities that contain commands that run via Windows command shell, PowerShell, or SSH, and package them into an assembly (.DLL) that can be used with the .NET IP or packaged into a new Integration Pack.|  
 |Integration Pack Wizard|A utility designed to package Orchestrator-compatible activity assemblies and dependent files into a deployable Integration Pack file.|  
 |Integration Toolkit .NET IP|An Integration Pack for running .NET-based Orchestrator-compatible activity assemblies directly. Contains the Invoke .NET and Monitor .NET activities.|  
