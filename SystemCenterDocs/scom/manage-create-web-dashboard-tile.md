@@ -59,7 +59,7 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 
 After the widget has been created, it displays a summary tile showing the health and number of alerts for the object that match a criteria defined. The tile represents health information into the following categories - *A* for availability, *P* for performance, *C* for configuration, and *S* for security.  The color for each category represents the overall health of all the monitors under that category for the specified object.
 
-    ![Completed example of Tile widget in dashboard](./media/create-web-dashboard-tile/web-console-new-dashboard-tile-01.png)
+  ![Completed example of Tile widget in dashboard](./media/create-web-dashboard-tile/web-console-new-dashboard-tile-01.png)
 
 Click on the object name in the Tile widget to launch Health Explorer for the specific object.
 
