@@ -436,7 +436,7 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 >When you create VM network, to enable IPv6 support, select IPv6 from the **IP address protocol for the VM network** drop-down menu.
 >
 
-![HNV network](media/sdn-controller/enable-ipv6.png)
+![isolate using HNV network](media/sdn-controller/enable-ipv6.png)
 
 ::: moniker-end
 
