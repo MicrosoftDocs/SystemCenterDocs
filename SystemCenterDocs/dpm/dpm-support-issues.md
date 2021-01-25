@@ -440,7 +440,7 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 ### Backup on Hyper-V Replica servers
 **Issue**: Support for backup up of primary and replica (secondary) virtual machines depends on the DPM version as summarized in this table.
 
-||**Windows Server 2012** - **Host operating system <br/> on replica (secondary/tertiary) server**|**Windows Server 2012 R2** - **Host operating system <br/> on replica (secondary/tertiary) server**|**Windows Server 2012** <br/> **Host operating system on primary server**|**Windows Server 2012 R2** <br/> **Host operating system on primary server**|
+|DPM versions|**Windows Server 2012** - **Host operating system <br/> on replica (secondary/tertiary) server**|**Windows Server 2012 R2** - **Host operating system <br/> on replica (secondary/tertiary) server**|**Windows Server 2012** <br/> **Host operating system on primary server**|**Windows Server 2012 R2** <br/> **Host operating system on primary server**|
 |-|-------------------------------------------------|---------------------------------------|-------------------------------------------------------------|--------------------------|
 |DPM 2012, 2012 with SP1|Not supported|Not supported|Supported|Not supported|
 |DPM 2012 R2|Not supported|Supported|Supported|Supported|

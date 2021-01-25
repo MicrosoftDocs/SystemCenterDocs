@@ -76,9 +76,8 @@ This article provides the system requirements and steps to install the Orchestra
 ## Orchestrator Resources  
  In addition to this online reference provided for System Center Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.  
 
-|||  
-|-|-|  
 |Resource|Location|  
+|-|-|    
 |System Center Home|[https://www.microsoft.com/cloud-platform/system-center](https://www.microsoft.com/cloud-platform/system-center)|  
 |System Center documentation|[https://docs.microsoft.com/system-center/](https://docs.microsoft.com/system-center/)|  
 |Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
