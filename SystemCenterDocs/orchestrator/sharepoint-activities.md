@@ -1,6 +1,6 @@
 ---
 title: SharePoint Activities
-description: The following configuration instructions apply to all activities in this integration pack.
+description: The following configuration instructions apply to all activities in this integration pack. It also lists the properties tabs.
 ms.custom: na
 ms.date: 12/02/2016
 ms.prod: system-center

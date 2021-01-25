@@ -91,7 +91,7 @@ Operations Manager stores the credentials for the Data Warehouse Report Deployme
 
 Change the credentials of this Action account to gMSA that you intend to use as a Data Warehouse Report Deployment account, which is a Windows account.  
 
-![Data Warehouse Monitoring host](media/gmsa/change-data-warehouse-report-deployment-account.png)
+![Data Warehouse Report Deployment](media/gmsa/change-data-warehouse-report-deployment-account.png)
 
 Validate that the *MonitoringHost.exe* uses the gMSA credentials for the Data Warehouse Write account.
 

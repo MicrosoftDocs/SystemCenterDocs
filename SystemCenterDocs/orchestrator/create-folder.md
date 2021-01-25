@@ -55,4 +55,4 @@ The following tables list the required properties and published data for this ac
 
 #### Other Resources
 
-[Using Runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)
+[Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

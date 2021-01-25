@@ -60,7 +60,7 @@ The Microsoft 365 management pack creates two Run As Profiles:
 
 - Microsoft 365 Subscription Password secure reference
 
-      Microsoft 365 Subscription Password secure reference Run As Profile is used to store subscription credentials and shouldn’t be edited manually
+    Microsoft 365 Subscription Password secure reference Run As Profile is used to store subscription credentials and shouldn’t be edited manually
 
 - Microsoft 365 Subscription Proxy secure reference
 

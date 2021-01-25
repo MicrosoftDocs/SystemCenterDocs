@@ -64,7 +64,7 @@ To enable IPv6 for site-to-site VPN connection, routing subnet must be both IPv4
 8.  In **Routes**, type all the remote subnets that you want to connect to. If you have selected **Enable Border Gateway Protocol (BGP)** in the **Connectivity** page, routes are not required.
 9.  On the **Advanced** tab, accept the default settings.
 10. If you have selected **Enable Border Gateway Protocol (BGP)** in the Connectivity page, then you can fill out your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol** wizard page as shown below:
-![site to site VPN](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
+![enable bgp](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM network.
 
 ## Configure GRE tunneling
@@ -135,7 +135,7 @@ The following table provides examples of dynamic and static L3 connections.
 Run the following script to set up L3 forwarding. Refer to the table above to check what each script parameter identifies.
 
 
-    ```powershell
+  ```powershell
     param (
         [Parameter(Mandatory=$true)]
         # Name of the L3 VPN connection
@@ -257,7 +257,7 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
     {
         Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection -VMNetworkGateway $VmNetworkGateway
     }
-    ```
+  ```
 
 ::: moniker-end
 
@@ -302,7 +302,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 4. Select the network controller service for the gateway device.
 5. In the **VPN Connections** page, click **Add**> **Add Layer 3 tunnel**.
 
-    ![L3 configuration from ui](./media/sdn-route-network-traffic/layer3-ui.png)
+    ![add layer3 tunnel](./media/sdn-route-network-traffic/layer3-ui.png)
 
 6. Provide a subnet in the CIDR notation format for **Routing Subnet**. This subnet is used to route packets out of the VM network. You do not need to pre-configure this subnet in your datacenter.
 
@@ -332,7 +332,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
     1. Add BGP peer for the L3 connection. Enter your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol**  page.
 
-       ![remote subnets](./media/sdn-route-network-traffic/l3-ui-bgp-wizard.png)
+       ![add bgp](./media/sdn-route-network-traffic/l3-ui-bgp-wizard.png)
 
     2. Determine the SDN gateway internal address as detailed in [the following section](#determine-the-sdn-gateway-internal-address).
 

@@ -112,7 +112,7 @@ The information in this section helps you complete the offline-backup workflow s
 
 The *AzureOfflineBackupDiskPrep* utility prepares the SATA drives that are sent to the nearest Azure datacenter. This utility is available in the Azure Backup agent installation directory (in the following path):
 
-    *\Microsoft Azure Recovery Services Agent\Utils\\*
+  *\Microsoft Azure Recovery Services Agent\Utils\\*
 
 1. Go to the directory and copy the **AzureOfflineBackupDiskPrep** directory to another computer where the SATA drives are connected. On the computer with the connected SATA drives, ensure:
 

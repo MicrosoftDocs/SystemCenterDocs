@@ -29,9 +29,8 @@ The following published data elements are specific to Upload Attachment. Additio
 
 ## Upload Attachment Published Data
 
-|   |   |
+| Element  |Description   |
 |---------------------------|---------------------------------------------------------------------|
-| Element   | Description   |
 | System Center Object GUID | The unique identifier (GUID) of the single attachment to be updated |
 | Number of Objects   | The number of files successfully uploaded by Upload Attachment   |
 

@@ -75,32 +75,41 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 1. Before you start retrieve the name of the PowerShell objects you want to use.
 2. Get the name of the primary storage array and assign to variable.
 
-        $PriArray = Get-SCStorageArray - Name $PriArrayName
+      ```PowerShell
+          $PriArray = Get-SCStorageArray - Name $PriArrayName
+      ```
 
 3. Get the name of the secondary storage array and assign to variable.
 
-        RecArray = Get-SCStorageArray - Name $RecArrayName
+      ```PowerShell
+          RecArray = Get-SCStorageArray - Name $RecArrayName
+      ```
 
 4. Get the name of the primary storage pool and assign to variable.
 
-        $ $ PriPoolName $RecPool = Get-SCStoragePool -Name $
-
-
+      ```PowerShell
+          $ $ PriPoolName $RecPool = Get-SCStoragePool -Name $
+      ```
 
 5. Get the name of the secondary storage pool and assign to variable.
 
-        $ $PriPoolName $RecPool = Get-SCStoragePool -Name $
+      ```PowerShell
+          $ $PriPoolName $RecPool = Get-SCStoragePool -Name $
+      ```
 
 
 ## Pair the storage arrays
 
 Pair the primary and secondary storage arrays using the variables for the storage array names. Note that the array name should be the same as the cluster name.
 
+  ```PowerShell
         Set-SCStorageArray -StorageArray $PriArray -PeerStorageArrayName $RecArray.name
+  ```
 
 If you created the cluster outside VMM and you do need to rename the array name to match the cluster name use:
-
+    ```PowerShell
         Get-SCStorageArray -Name "existing-name" | Set-SCStorageArray -Name "new-name"
+    ```
 
 
 ## Provision LUNs and create the storage groups
@@ -109,6 +118,7 @@ Provision a LUN from the storage pool for data and for the log. Then create repl
 
 1. Provision and create on the source.
 
+    ```PowerShell
         Set-SCStorageArray -StorageArray $PriArray -PeerStorageArrayName $RecArray.name
 
         $PrimaryVol = New-SCStorageVolume -StorageArray $PriArray -StoragePool $PriPool -Name PrimaryVol -SizeInBytes $VolSize -RunAsynchronously -PhysicalDiskRedundancy "1" -FileSystem "CSVFS_NTFS" -DedupMode "Disabled"
@@ -116,20 +126,25 @@ Provision a LUN from the storage pool for data and for the log. Then create repl
         $PrimaryLogVol = New-SCStorageVolume -StorageArray $PriArray -StoragePool $PriPool -Name PrimaryLogVol -SizeInBytes $LogVolSize -GuidPartitionTable -RunAsynchronously -FileSystem "NTFS"
 
         $PriRG = New-SCReplicationGroup -Name PriRG -StorageVolume $PrimaryVol -LogStorageVolume $PrimaryLogVol
+    ```
 
 2. Provision and create on the destination.
 
+    ```PowerShell
         $RecoveryVol = New-SCStorageVolume -StorageArray $RecArray -StoragePool $RecPool -Name RecoveryVol -SizeInBytes $VolSize -RunAsynchronously -PhysicalDiskRedundancy "1" -FileSystem "CSVFS_NTFS" -DedupMode "Disabled"
 
         $RecoveryLogVol = New-SCStorageVolume -StorageArray $RecArray -StoragePool $RecPool -Name RecoveryLogVol -SizeInBytes $LogVolSize -GuidPartitionTable -RunAsynchronously -FileSystem "NTFS"
 
         $RecRG = New-SCReplicationGroup -Name RecRG -CreateOnArray -ProtectionMode Synchronous -StorageVolume $RecoveryVol -LogStorageVolume $RecoveryLogVol
+    ```
 
 ## Enable replication
 
 Now enable synchronous replication between the source and destination replication groups.
 
-    Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation EnableProtection -TargetReplicationGroup $RecRG -EnableProtectionMode Synchronous
+  ```PowerShell
+      Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation EnableProtection -TargetReplicationGroup $RecRG -EnableProtectionMode Synchronous
+  ```
 
 ## Refresh the storage providers
 
@@ -140,21 +155,27 @@ Now enable synchronous replication between the source and destination replicatio
 
 Retrieve the replication status for the source replication group to make sure that replication is working as expected.
 
-    Get replication status Get-SCReplicationGroup | where {($_.Name.EndsWith("PriRG")) -or ($_.Name.EndsWith("RecRG"))}  | fl Name, IsPrimary, ReplicationState, ReplicationHealth
+  ```PowerShell
+      Get replication status Get-SCReplicationGroup | where {($_.Name.EndsWith("PriRG")) -or ($_.Name.EndsWith("RecRG"))}  | fl Name, IsPrimary, ReplicationState, ReplicationHealth
+  ```
 
 ## Create a VM
 
 Create a VM using a LUN in the source replication group. Alternatively you can create a VM in the VMM console.
 
-    New-SCVirtualMachine -Name "DemoVM" -VMHost <HostName> -Path $PrimaryVol -VMTemplate <VMTemplate>
+  ```PowerShell
+      New-SCVirtualMachine -Name "DemoVM" -VMHost <HostName> -Path $PrimaryVol -VMTemplate <VMTemplate>
+  ```
 
 
 ## Run a failover
 Run failover.
 
-    Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation PrepareForFailover
+  ```PowerShell
+      Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation PrepareForFailover
 
-    Set-SCReplicationGroup -ReplicationGroup SRecRG -Operation Failover
+      Set-SCReplicationGroup -ReplicationGroup SRecRG -Operation Failover
+  ```
 
 ## Run failback
 
@@ -162,7 +183,9 @@ Before you fail back, in the VMM console, remove the source VMs if they"re still
 
 Now run failback:
 
-    Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation ReverseRoles -EnableProtectionMode Synchronous -TargetReplicationGroup $RecRG
+  ```PowerShell
+      Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation ReverseRoles -EnableProtectionMode Synchronous -TargetReplicationGroup $RecRG
+  ```
 
 After running failback you can create VMs at the source site using the failed back VHD/configuration files.
 
@@ -170,7 +193,9 @@ After running failback you can create VMs at the source site using the failed ba
 
 If you want to stop replication you'll need to run this cmdlet at the source and destination.
 
-    Set-SCReplicationGroup -ReplicationGroup $RecRG -Operation TearDown  Tear down need to be done on both RGs
+  ```PowerShell
+      Set-SCReplicationGroup -ReplicationGroup $RecRG -Operation TearDown  Tear down need to be done on both RGs
+  ```
 
 
 

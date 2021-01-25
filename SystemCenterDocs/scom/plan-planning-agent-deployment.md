@@ -24,10 +24,10 @@ In System Center Operations Manager, an agent is a service that is installed on 
 
 ## Windows agent
 
-On a monitored Windows computer, the Operations Manager agent is listed as the Microsoft Monitoring Agent service. The Microsoft Monitoring Agent service collects event and performance data, executes tasks, and other workflows defined in a management pack. Even when the service is unable to communicate with the management server it reports to, the service continues to run and queues the collected data and events on the disk of the monitored computer. When the connection is restored, the Microsoft Monitoring Agent service sends collected data and events to the management server.
+On a monitored Windows computer, the Operations Manager agent is listed as the Microsoft Monitoring Agent (MMA) service. The Microsoft Monitoring Agent service collects event and performance data, executes tasks, and other workflows defined in a management pack. Even when the service is unable to communicate with the management server it reports to, the service continues to run and queues the collected data and events on the disk of the monitored computer. When the connection is restored, the Microsoft Monitoring Agent service sends collected data and events to the management server.
 
 > [!NOTE]
-> The Microsoft Monitoring Agent service is sometimes referred to as the health service.
+> - The Microsoft Monitoring Agent service is sometimes referred to as the health service.
 
 The Microsoft Monitoring Agent service also runs on management servers. On a management server, the service runs monitoring workflows and manages credentials. To run workflows, the service initiates MonitoringHost.exe processes using specified credentials. These processes monitor and collect event log data, performance counter data, Windows Management Instrumentation (WMI) data, and run actions such as scripts.
 

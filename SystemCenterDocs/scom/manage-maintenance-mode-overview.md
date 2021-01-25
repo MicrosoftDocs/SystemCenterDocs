@@ -161,7 +161,9 @@ A rule that targets the agent, reads the event entry on the agent and stores thi
 
 **Start-SCOMAgentMaintenanceMode** has the following syntax:
 
-    `Start-SCOMAgentMaintenanceMode -Duration <Double (in minutes)> [-Reason <string>] [-Comments <string>]`
+  ```PowerShell
+      `Start-SCOMAgentMaintenanceMode -Duration <Double (in minutes)> [-Reason <string>] [-Comments <string>]`
+  ```
 
 > [!NOTE]
 > The minimum duration value accepted is five (5) minutes.
