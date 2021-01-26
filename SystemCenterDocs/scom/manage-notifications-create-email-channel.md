@@ -116,7 +116,7 @@ To create an email in HTML format, perform the following steps:
 
 The following example is created from a critical severity alert:
 
-![HTML alert sample](./media/email-notifications/email-notifications-html-sample.png)
+![HTML critical alert sample](./media/email-notifications/email-notifications-html-sample.png)
 
 The following example is created from a warning severity alert:
 

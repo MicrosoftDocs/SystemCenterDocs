@@ -85,11 +85,11 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
     Sample 1:
 
-    ![Azure backup report](./media/monitor-dpm/monitor-backup-image1.png)
+    ![Backup report dashboard](./media/monitor-dpm/monitor-backup-image1.png)
 
     Sample 2:
 
-    ![Azure backup report](./media/monitor-dpm/monitor-backup-image2.png)
+    ![Backup jobs report](./media/monitor-dpm/monitor-backup-image2.png)
 
 3. You can also monitor active alerts, current data sources being backed up and cloud storage as shown below:
 
