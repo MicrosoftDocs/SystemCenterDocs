@@ -81,11 +81,11 @@ The information in this section helps you complete the offline-backup workflow s
 
 2. The Azure login page will open. Login using your Azure user account, which has *owner* role permission on the Azure Subscription.
 
-    ![Backup now](./media/backup-server/choose-initial-online-replication.png)
+    ![Azure sign in screen](./media/backup-server/choose-initial-online-replication.png)
 
 3. Provide the inputs on the **Use your Own Disk** page.
 
-   ![Backup now](./media/backup-server/use-your-own-disk.png)
+   ![Transfer initial backup Information](./media/backup-server/use-your-own-disk.png)
 
    The description of the inputs is as follows:
 
@@ -99,11 +99,11 @@ The information in this section helps you complete the offline-backup workflow s
 
 4. Complete the workflow to create the or update the protection. And to initiate the offline-backup copy, right-click the **Protection Group**, and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
 
-   ![Backup now](./media/backup-server/create-recovery-point.png)
+   ![Offline Backup copy](./media/backup-server/create-recovery-point.png)
 
 5. Monitor the Online Replica Creation job in the monitoring pane. The job should complete successfully with the warning *Waiting for Azure Import job to finish*.
 
-   ![Backup now](./media/backup-server/complete-recovery-point.png)
+   ![View Backup Information](./media/backup-server/complete-recovery-point.png)
 
 6. After the operation finishes, the staging location is ready to be used for disk preparation.
 
@@ -144,7 +144,7 @@ The *AzureOfflineBackupDiskPrep* utility prepares the SATA drives that are sent 
 4. Provide confirmation for the formatting of the drive when prompted.
 5. You are prompted to sign into your Azure subscription. Provide your credentials.
 
-    ![Azure Disk Preparation tool input](./media/backup-server/signindiskprep.png) <br/>
+    ![Input Azure subscription Credentials](./media/backup-server/signindiskprep.png) <br/>
 
     The tool then begins to prepare the disk and copying the backup data. You may need to attach additional disks when prompted by the tool in case the provided disk does not have sufficient space for the backup data. <br/>
 
@@ -181,7 +181,7 @@ The following procedure updates the Azure Import job shipping details. This info
 
    4. On the Settings menu for the Import job, click **Manage Shipping Info** and enter the return shipping details.
 
-       ![Storing Shipping Information](./media/backup-server/shipping-info.png)<br/>
+       ![Enter Return Shipping Information](./media/backup-server/shipping-info.png)<br/>
 
    5. When you have the tracking number from your shipping carrier, click the banner in the Azure Import job overview page and enter the following details:
 
@@ -190,7 +190,7 @@ The following procedure updates the Azure Import job shipping details. This info
 
       ![Storing Shipping Information](./media/backup-server/joboverview.png)<br/>
 
-      ![Storing Shipping Information](./media/backup-server/tracking-info.png)
+      ![Saving Shipping Information](./media/backup-server/tracking-info.png)
 
 
 ### Time to process the drives
