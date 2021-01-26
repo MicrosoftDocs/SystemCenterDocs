@@ -170,7 +170,7 @@ To create a Protection Group:
 
 7. On the **Specify Short-Term Goals** screen specify the details for **Retention Range** and **Synchronization Frequency**, and click **Next**. If desired, click **Modify** to change the schedule when recovery points are taken.
 
-   ![Select data protection method](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen5.png)
+   ![Specify short term goals](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen5.png)
 
 8. The **Review Disk Storage Allocation** screen provides details about the selected data sources, their size, the **Space to be Provisioned**, and **Target Storage Volume**.
 
