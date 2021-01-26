@@ -79,7 +79,7 @@ Ensure the following prerequisites:
 
     If you want to continue using certificate based authentication, then instead of selecting Azure AD authentication, choose management certificate based authentication and provide the management certificate from “Current User\Personal” certificate store and then click **Finish**.
 
-    ![select authentication](media/azure-arm-based/management-using-certificate.png)
+    ![select management certificate](media/azure-arm-based/management-using-certificate.png)
 
 6. Verify the Azure subscription and the VMs hosted on Azure.
 ![verify subscription authentication](media/azure-arm-based/verify-azure-subscription.png)
