@@ -1,6 +1,6 @@
 ---
 title: Using the Operations Manager consoles
-description: This article highlights the section titles contained within this section of the Operations Manager documentation.
+description: This article describes using the Operations Manager consoles.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm

@@ -50,7 +50,7 @@ To view the log on type for management servers, go to
 To view the log on type for agents, go to
 **Administration** > **Operations Manager Products**> **Agents**.
 
-![Log on type for management servers](./media/enable-service-logon/logon-type-agents.png)
+![Log on type for agents](./media/enable-service-logon/logon-type-agents.png)
 
 > [!NOTE]
 > Agent/gateway that is not yet upgraded, display Log on type as  *Service* in console . Once the agent/gateway is upgraded, the current log on type will be displayed.
