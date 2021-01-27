@@ -26,7 +26,7 @@ This article provides the new features supported by System Center 2019 - Service
 
 [!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
 
-SMA includes the features that are introduced in SMA 1801, there are no additional features included.  [Learn about the features introduced in 1801](https://docs.microsoft.com/system-center/sma/whats-new-in-sma?view=sc-sma-1801).
+SMA includes the features that are introduced in SMA 1801, there are no additional features included.  [Learn about the features introduced in 1801](https://docs.microsoft.com/system-center/sma/whats-new-in-sma?view=sc-sma-1801&preserve-view=true).
 
 ::: moniker-end
 
