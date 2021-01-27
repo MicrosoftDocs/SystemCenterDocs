@@ -97,14 +97,14 @@ Additional hardware and software considerations apply in your design planning:
 
 ::: moniker range="=sc-om-2016"
 
-For more information, see Hardware and Software Requirements for Installing SQL Server [2014](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2014) or [2016](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2016)
+For more information, see Hardware and Software Requirements for Installing SQL Server [2014](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2014&preserve-view=true) or [2016](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2016&preserve-view=true).
 
 ::: moniker-end
 
 ::: moniker range=">=sc-om-1801"
 
 
-For more information, see [Hardware and Software Requirements for Installing SQL Server](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2016).
+For more information, see [Hardware and Software Requirements for Installing SQL Server](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2016&preserve-view=true).
 
 ::: moniker-end
 
@@ -228,7 +228,7 @@ To set up an availability group you'll need to deploy a Windows Server Failover 
 - Learn more about [setting up an availability group](https://msdn.microsoft.com/library/ff878265.aspx)
 
 > [!NOTE]
-> After deploying Operations Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017), run the [SQL script](upgrade-sqlserver-2019-operations-manager.md#optional---enable-clr-strict-security) on each Operations Manager database.
+> After deploying Operations Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017&preserve-view=true), run the [SQL script](upgrade-sqlserver-2019-operations-manager.md#optional---enable-clr-strict-security) on each Operations Manager database.
 
 ::: moniker-end
 
@@ -245,22 +245,26 @@ These settings allow, when fail over to a node in a different subnet, for quicke
 
 Run the following PowerShell query on any one of the SQL nodes to modify its settings.
 
+  ```PowerShell
     Import-Module FailoverClusters
     Get-ClusterResource "Cluster Name"|Set-ClusterParameter RegisterAllProvidersIP 0
     Get-ClusterResource "Cluster Name"|Set-ClusterParameter HostRecordTTL 300
     Stop-ClusterResource "Cluster Name"
     Start-ClusterResource "Cluster Name"
+  ```
 
 
 If you are using Always On with a listener name, you should also make these configurations changes on the listener.
 
 Run the following PowerShell query on the SQL node currently hosting the listener to modify its settings.
 
+  ```PowerShell
     Import-Module FailoverClusters
     Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter RegisterAllProvidersIP 0
     Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter HostRecordTTL 300
     Stop-ClusterResource <Listener Cluster Resource name>
     Start-ClusterResource <Listener Cluster Resource name>
+  ```
 
 When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur.  For information on how to configure this, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc).
 
@@ -315,18 +319,18 @@ Once you have your baseline for the environment, make a change to the sp_configu
 ::: moniker range="=sc-om-2016"
 
 
- Learn more [about server memory configuration](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2014).
+ Learn more [about server memory configuration](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2014&preserve-view=true).
 
 ::: moniker-end
 ::: moniker range=">=sc-om-1801"
 
-Learn more [about server memory configuration](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2016).
+Learn more [about server memory configuration](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2016&preserve-view=true).
 
 ::: moniker-end
 
 ### Optimize TempDB
 
-The size and physical placement of the tempdb database can affect the performance of Operations Manager.  For example, if the size that is defined for tempdb is too small, part of the system-processing load may be taken up with autogrowing tempdb to the size required to support the workload every time you restart the instance of SQL Server.
+The size and physical placement of the tempdb database can affect the performance of Operations Manager. For example, if the size that is defined for tempdb is too small, part of the system-processing load may be taken up with autogrowing tempdb to the size required to support the workload every time you restart the instance of SQL Server.
 To achieve optimal tempdb performance, we recommend the following configuration for tempdb in a production environment:
 
 -  Set the recovery model of tempdb to SIMPLE. This model automatically reclaims log space to keep space requirements small.
@@ -338,6 +342,7 @@ To achieve optimal tempdb performance, we recommend the following configuration 
 
 To configure tempdb, you can run the following query or modify its properties in Management Studio.
 
+  ```SQL
     USE [tempdb]
     GO
     DBCC SHRINKFILE (N'tempdev' , 8)
@@ -348,6 +353,7 @@ To configure tempdb, you can run the following query or modify its properties in
     GO
     ALTER DATABASE [tempdb] ADD FILE ( NAME = N'tempdb2', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\tempdb2.mdf' , SIZE = 2097152KB , FILEGROWTH = 512MB )
     GO
+  ```
 
 Run the T-SQL query SELECT * from sys.sysprocesses to detect page allocation contention for the tempdb database.  In the system table output, the wait resource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources, and have similar values as highlighted earlier when you execute the sys.sysprocesses query.  
 
