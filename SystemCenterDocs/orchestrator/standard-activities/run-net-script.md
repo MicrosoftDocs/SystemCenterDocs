@@ -111,4 +111,4 @@ $PSVersion = $Result[1]
 )
 ```
 
-![View .Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script-ps-version.png)
+![.Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script-ps-version.png)
