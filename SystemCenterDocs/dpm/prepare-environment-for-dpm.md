@@ -82,7 +82,7 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://docs.microsoft.com/lifec
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
 |Installation|Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM.|
-|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](#install-dpm.md#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
+|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](https://docs.microsoft.com/system-center/dpm/install-dpm#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
 
 ::: moniker range="<sc-dpm-2019"
