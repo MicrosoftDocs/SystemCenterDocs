@@ -33,7 +33,7 @@ The following images show the default **Action** account.
 
 Change the credentials of the default **Action** account to **gMSA**.
 
-![Default Action account](media/gmsa/act-gmsa.png)
+![Provide Default Action account credentials](media/gmsa/act-gmsa.png)
 
 ![Default Action change credentials](media/gmsa/default-action-change-credentials.png)
 

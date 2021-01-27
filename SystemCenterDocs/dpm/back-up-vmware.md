@@ -106,14 +106,14 @@ Once you have matching credentials in DPM, update the VMware server credentials 
 2. In the list of assets to manage, click **Production Servers**.
 3. In the list of computers, select the VMware server whose credentials need to be updated.
    In the example image, *demovcenter1.Contoso.com* is the VMware server with broken credentials.
-   ![open Add Credentials dialog](./media/back-up-vmware/broken-credentials.png)
+   ![Example vmware server with broken credentials](./media/back-up-vmware/broken-credentials.png)
 4. On the Administrator console tool ribbon, click **Change Settings**.
     The Change Settings dialog opens. It displays all credentials on the DPM server. In the example image, *demovcenter_002* is the DPM credential to pair with demovcenter1.Contoso.com.
 
-    ![open Add Credentials dialog](./media/back-up-vmware/change-settings-dialog.png)
+    ![Example View Credentials of DPM server](./media/back-up-vmware/change-settings-dialog.png)
 5. From the list, select the credential on the DPM server to match the VMware credential and click **Update**.
     In the image, notice demovcenter_002 authenticates a production server, and demovcenter1.Contoso.com is now protected.
-   ![open Add Credentials dialog](./media/back-up-vmware/update-server-credential.png)
+   ![select Credentials dialog](./media/back-up-vmware/update-server-credential.png)
 
 #### Delete VMware server credentials
 
@@ -131,11 +131,11 @@ DPM communicates with the VMware server securely over an HTTPS channel. To creat
 
 To verify there is a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you are using Chrome, and you do not have a valid certificate you see the strikethrough in the URL, like this example:
 
-![no secure communication channel ](./media/back-up-vmware/secure-communication-chrome.png)
+![no secure communication channel on Chrome ](./media/back-up-vmware/secure-communication-chrome.png)
 
 If you are using Internet Explorer, and you don't have a valid certificate, you see this message when you access the URL:
 
-![no secure communication channel ](./media/back-up-vmware/no-secure-communication-ie.png)
+![no secure communication channel on IE ](./media/back-up-vmware/no-secure-communication-ie.png)
 
 To fix the error, install a valid certificate on the DPM server and the VMware server. In the previous images, the DPM server has a valid certificate, but the certificate is not in the trusted root certification authority store. To fix this situation, add the certificate to the VMware server.
 
@@ -145,7 +145,7 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 
 2. In the new Certificate dialog, click the **Details** tab, and then click **Copy to File** to open the Certificate Export Wizard.
 
-   ![open View Certificate dialog ](./media/back-up-vmware/add-new-certificate.png)
+   ![open Certificate export wizard ](./media/back-up-vmware/add-new-certificate.png)
 
 3. In the **Certificate Export Wizard**, click **Next**, and on the **Export File Format** screen, select **DER encoded binary X.509 (.CER)**, then click **Next**.
 4. On the **File to Export** screen, type a name for your certificate and click **Next**.
@@ -156,10 +156,10 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 7. In the **Certificate Import wizard**, click **Local Machine** and then click **Next**.
 8. To find the location where you want to place the certificateOn the **Certificate Store** screen, click **Place all certificates in the following store** and click **Browse**.
 9. In the **Select Certificate Store** dialog, select **Trusted Root Authority Certificate** and click **OK**.
-  ![click install Certificate ](./media/back-up-vmware/trusted-authority-store.png)
+  ![select Certificate store ](./media/back-up-vmware/trusted-authority-store.png)
 10. Click **Next** and then click **Finish** to import the certificate successfully.
 11. Once you have added the certificate, sign into your vCenter server to verify the connection is secure.
-  ![click install Certificate ](./media/back-up-vmware/secure-communication-established.png)
+  ![verify connection ](./media/back-up-vmware/secure-communication-established.png)
 
 ### Add a new user account in VMware server
 
@@ -400,7 +400,7 @@ This section explains how to use DPM to restore VMware VM [recovery points](http
 7. On the **Select Recovery Type** screen, choose whether to recover to the original instance, or to a new location, and click **Next**.
    - If you choose **Recover to original instance**, you don't need to make any more choices in the wizard. The data for the original instance is used.
    - If you choose **Recover as virtual machine on any host**, then on the **Specify Destination** screen, provide the information for **ESXi Host**, **Resource Pool**, **Folder**, and **Path**.
-     ![open Recovery wizard ](./media/back-up-vmware/select-recovery-type.png)
+     ![Select Recovery Type in wizard ](./media/back-up-vmware/select-recovery-type.png)
 8. On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
    The **Recovery status** screen shows the progression of the recovery operation.
 
