@@ -25,7 +25,7 @@ This article details the system requirements for System Center 2019 - Service Ma
 
 [!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
 
-SMA 1801 system requirements are also applicable for SMA 1807, there are no changes. [Learn](/system-center/sma/system-requirements-sma?view=sc-sma-1801) about the system requirements.
+SMA 1801 system requirements are also applicable for SMA 1807, there are no changes. [Learn](/system-center/sma/system-requirements-sma?view=sc-sma-1801&preserve-view=true) about the system requirements.
 
 ::: moniker-end
 

@@ -62,7 +62,7 @@ Follow these steps:
 5.	In the **Select Users** or **Groups** dialogue, find the user you wish to add and click **OK**.
 6.	Click **OK** in the **Log on as a service Properties** to save the changes.
 
-    ![identify accounts that need service log on permission](./media/enable-service-logon-sm/enable-service-logon.png)
+    ![enable service log on permission](./media/enable-service-logon-sm/enable-service-logon.png)
 
 
 ##  Change logon type from a default value
@@ -79,4 +79,4 @@ You can change the default log on type by using the following steps:
 5.	Right click **Monitoring Action Account Logon Type**, click **Edit**, select **Enabled**.
 7.	Choose **Logon Type** from the drop-down menu.
 
-    ![identify accounts that need service log on permission](./media/enable-service-logon-sm/change-logon-type.png)
+    ![change service log on permission](./media/enable-service-logon-sm/change-logon-type.png)

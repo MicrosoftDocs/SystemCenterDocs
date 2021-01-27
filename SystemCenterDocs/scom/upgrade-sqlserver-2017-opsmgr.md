@@ -26,7 +26,7 @@ Use the steps in this article to perform an in-place upgrade of the databases su
 >[!NOTE]
 >Upgrading to SQL Server 2017 uninstalls SQL Reporting Services, as this is now a separately-installed feature.
 
-Before performing these upgrade steps, review the [SQL Server 2017 upgrade information](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-2017).
+Before performing these upgrade steps, review the [SQL Server 2017 upgrade information](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-2017&preserve-view=true).
 
 ## Stop the Operations Manager services.
 On all the management servers in the management group, stop the Operations Manager services:
@@ -56,7 +56,7 @@ On all the management servers in the management group, stop the Operations Manag
 
     d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes.
 
-2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 documentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017).
+2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 documentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017&preserve-view=true).
 
 ## Install SQL Server 2017 Reporting services
 
@@ -98,7 +98,7 @@ After the upgrade is complete, perform the following steps to [install Operation
 
 ## Optional - Enable CLR strict security
 
-To enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017) on the Operations Manager databases,  run the following SQL script on each Operations Manager database (by default, CLR strict security will be OFF after upgrading to SQL Server 2017).  
+To enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017&preserve-view=true) on the Operations Manager databases,  run the following SQL script on each Operations Manager database (by default, CLR strict security will be OFF after upgrading to SQL Server 2017).  
 
 ```
 -- Do this only for SQL server version 2017 and more
