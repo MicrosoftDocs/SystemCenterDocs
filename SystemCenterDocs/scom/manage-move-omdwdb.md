@@ -103,7 +103,7 @@ On the reporting server, you will need to change the connection string to refere
    - System Center Management Configuration
 
 ### Update Service Principal Name for Kerberos Connections
-To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](https://docs.microsoft.com/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?view=sql-server-2017#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
+To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](https://docs.microsoft.com/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
 
 ## To verify a successful move of the data warehouse database
 
