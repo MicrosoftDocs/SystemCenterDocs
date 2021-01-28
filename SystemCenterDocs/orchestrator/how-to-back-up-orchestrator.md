@@ -44,7 +44,7 @@ Orchestrator management server, Runbook servers, and web servers do not persist 
 
 ## Orchestrator database
 
-The Orchestrator database is a standard SQL Server database that is supported by DPM. You should make sure to backup the service master key and store it in a secure off\-site location. For more information see [BACKUP SERVICE MASTER KEY \(Transact\-SQL\)](https://go.microsoft.com/fwlink/?LinkID=243093).  
+The Orchestrator database is a standard SQL Server database that is supported by DPM. You should make sure to backup the service master key and store it in a secure off\-site location. For more information see [BACKUP SERVICE MASTER KEY \(Transact\-SQL\)](/sql/t-sql/statements/backup-service-master-key-transact-sql).  
 
 ## Next steps
 

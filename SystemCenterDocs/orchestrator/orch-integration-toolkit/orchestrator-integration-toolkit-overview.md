@@ -16,7 +16,7 @@ ms.author: raynew
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 #### Orchestrator SDK  
 
--   There have been significant changes to the SDK namespace, interfaces, and attributes as part of rebranding to Microsoft. For details about these changes, please see the [Orchestrator SDK](https://msdn.microsoft.com/library/hh855054.aspx).  
+-   There have been significant changes to the SDK namespace, interfaces, and attributes as part of rebranding to Microsoft. For details about these changes, please see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).  
 
 -   The full SDK documentation and code examples are no longer included in the installation of the Orchestrator Integration Toolkit. The SDK Documentation is located on MSDN, and the code samples are located on CodePlex at [http://orchestrator.codeplex.com](http://orchestrator.codeplex.com).  
 
@@ -131,4 +131,4 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 ## See Also  
  [Orchestrator documentation](../learn-about-orchestrator.md)   
  [Orchestrator Integration Packs](../list-of-orchestrator-integration-packs.md)      
- [Orchestrator SDK](https://msdn.microsoft.com/library/hh855054.aspx)
+ [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))
