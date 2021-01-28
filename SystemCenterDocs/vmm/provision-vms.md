@@ -131,7 +131,7 @@ If you're using differencing disks you should optimize management by making sure
 
 During virtual machine deployment, VMM needs to move and copy large files such as VHDs between two locations.
 
-Fast file copy improves the performance of file transfers, mostly by leveraging [Windows Offloaded Data Transfers (ODX)](https://technet.microsoft.com/library/hh831628.aspx). In VMM, background intelligent transfer (BITS) is still used as a mechanism for file transfers, but VMM leverages ODX when possible (for example when copying files to SANs that support ODX). This greatly improves the time performance of virtual machine deployments.
+Fast file copy improves the performance of file transfers, mostly by leveraging [Windows Offloaded Data Transfers (ODX)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)). In VMM, background intelligent transfer (BITS) is still used as a mechanism for file transfers, but VMM leverages ODX when possible (for example when copying files to SANs that support ODX). This greatly improves the time performance of virtual machine deployments.
 
 
 

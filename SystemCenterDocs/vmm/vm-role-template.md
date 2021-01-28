@@ -25,7 +25,7 @@ As a hosting provider, you can use System Center - Virtual Machine Manager (VMM)
 
 ## Before you begin
 
-- Learn about [Windows Azure Pack](https://technet.microsoft.com/library/dn296435.aspx)
+- Learn about [Windows Azure Pack](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10))
 - Learn about how VMM manages resources in the [VMM library](manage-library-server.md)
 
 ## Download Azure Pack Gallery resources
