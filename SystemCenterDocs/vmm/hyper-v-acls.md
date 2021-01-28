@@ -72,7 +72,7 @@ Use the VMM PowerShell interface to do the following:
 ## Create port ACLs
 
 1. Open PowerShell in VMM.
-2. Create a port ACL with the [New-SCPortACL](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scportacl) cmdlet.
+2. Create a port ACL with the [New-SCPortACL](/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scportacl) cmdlet.
 
     ```
     New-SCPortACL [-Name] <String> [-Description <String>] [-JobVariable <String>] [-ManagedByNC] [-OnBehalfOfUser <String>] [-OnBehalfOfUserRole <UserRole>] [-Owner <String>] [-PROTipID <Guid>] [-RunAsynchronously] [-UserRole <UserRole>] [-VMMServer <ServerConnection>] [<CommonParameters>]
@@ -92,7 +92,7 @@ ProTipID | ID of ProTip that triggered action
 RunAsychronously | Indicates whether job runs asynchronously
 UserRole | Specifies user role
 VMMServer | Specifies VMM server
-CommonParameters | [Learn more](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_CommonParameters)
+CommonParameters | [Learn more](/powershell/module/microsoft.powershell.core/about/about_commonparameters)
 
 
 
@@ -114,7 +114,7 @@ PS: C:\> New-SCPortACL -Name "DemoPortACL" -Description "Port ACL Example Non Ma
 ## Define port ACL rules for a port ACL
 
 1. Open PowerShell in VMM.
-2. Create one or more rules with the [New-SCPortACLRule](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scportaclrule) cmdlet.
+2. Create one or more rules with the [New-SCPortACLRule](/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scportaclrule) cmdlet.
 
     ```
     New-SCPortACLrule -PortACL <PortACL> -Name <string> [-Description <string>] -Type <Inbound | Outbound> -Action <Allow | Deny> -Priority <uint16> -Protocol <Tcp | Udp | Any> [-LocalAddressPrefix <string: IPAddress | IPSubnet>] [-LocalPortRange <string:X|X-Y|Any>] [-RemoteAddressPrefix <string: IPAddress | IPSubnet>] [-RemotePortRange <string:X|X-Y|Any>]
@@ -176,7 +176,7 @@ The first command retrieves rule "AllowRDPAccess". The second changes the protoc
 A port ACL can be attached to global settings, VM networks, VM subnets, and virtual network adapters. A port ACL attached to global settings applies by default to all VM virtual network adapters.
 
 1. Open PowerShell in VMM.
-2. Attach a portal ACL using the [Set-SCVMMServer](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/set-scvmmserver) cmdlet.
+2. Attach a portal ACL using the [Set-SCVMMServer](/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/set-scvmmserver) cmdlet.
 
     ```
     Set-SCVMMServer –VMMServer <VMMServer> [-PortACL <NetworkAccessControlList> | -RemovePortACL ]
@@ -249,13 +249,13 @@ Set-SCVMSubnet [–PortACL <NetworkAccessControlList> | -RemovePortACL] [rest of
 ## Retrieve and view port ACLs and rules
 
 1. Open PowerShell in VMM.
-2. Run the [Get-SCPortACL](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/get-scportacl) cmdlet, to retrieve and view a port ACL:
+2. Run the [Get-SCPortACL](/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/get-scportacl) cmdlet, to retrieve and view a port ACL:
 
     ```
     Get-SCPortACL [[-Name] <String> ] [-ID <Guid> ] [-OnBehalfOfUser <String> ] [-OnBehalfOfUserRole <UserRole> ] [-VMMServer <ServerConnection> ] [ <CommonParameters>]
     ```
 
-3. Run the [Get-SCPortACLRule](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/get-scportaclrule) to retrieve and view a rule:
+3. Run the [Get-SCPortACLRule](/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/get-scportaclrule) to retrieve and view a rule:
 
     ```
     Get-SCPortACLRule [-Name <String> ] [-ID <Guid> ] [-OnBehalfOfUser <String> ] [-OnBehalfOfUserRole <UserRole> ] [-PortACL <PortACL> ] [-VMMServer <ServerConnection> ] [ <CommonParameters>]
@@ -269,7 +269,7 @@ No parameters | Retrieves all ACLs
 Name/ID | Retrieve by name or GUID
 OnBehalfOfUser/OnBehalfOfUserRole | Run with user name or role
 VMMServer | Retrieve ACLs on specific VMM server
-CommonParameters | [Learn more](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_CommonParameters)
+CommonParameters | [Learn more](/powershell/module/microsoft.powershell.core/about/about_commonparameters)
 
 ### Examples
 
@@ -294,13 +294,13 @@ Get all rules for ACL:
 ## Modify port ACLs and rules
 
 1. Open PowerShell in VMM.
-2. Run the [Set-SCPortACL](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/VirtualMachineManager/vlatest/Set-SCPortACL) cmdlet, to modify a port ACL:
+2. Run the [Set-SCPortACL](/powershell/systemcenter/systemcenter2016/VirtualMachineManager/vlatest/Set-SCPortACL) cmdlet, to modify a port ACL:
 
     ```
     Set-SCPortACL [-PortACL] <PortACL> [[-Description] <String>] [-JobVariable <String>] [-Name <String>] [-OnBehalfOfUser <String>] [-OnBehalfOfUserRole <UserRole>] [-PROTipID <Guid>] [-RunAsynchronously] [-VMMServer <ServerConnection>] [<CommonParameters>]
     ```
 
-3. Run the [Remove-SCPortACL](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/remove-scportacl) to remove an ACL:
+3. Run the [Remove-SCPortACL](/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/remove-scportacl) to remove an ACL:
 
     ```
     Remove-SCPortACL [-PortACL] <PortACL> [-Confirm] [-JobVariable <String>] [-OnBehalfOfUser <String>] [-OnBehalfOfUserRole <UserRole>] [-PROTipID <Guid>] [-RunAsynchronously] [-VMMServer <ServerConnection>] [-WhatIf] [<CommonParameters>]

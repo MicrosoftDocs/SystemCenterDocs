@@ -785,7 +785,7 @@ ManagementPack xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://ww
 ```  
 
 ### Import a management pack by using a cmdlet  
- You can use the Windows&nbsp;PowerShell [Import\-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225396) cmdlet to import a Service Manager management pack, for example:  
+ You can use the Windows&nbsp;PowerShell [Import\-SCSMManagementPack](/previous-versions/system-center/powershell/system-center-2012-r2/hh316284(v=sc.20)) cmdlet to import a Service Manager management pack, for example:  
 
 ```  
 Import-SCSMManagementPack MyServiceManager.ManagementPack.xml  

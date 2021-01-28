@@ -80,7 +80,7 @@ Use the following steps to secure the connection between Runbook worker and the 
 
      `Data Source=<database-server-hostname>;Database=<SMA-database-name>;User ID=<username>;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;`
 
-     For more information, see [SqlClient Connection Strings](https://docs.microsoft.com/dotnet/framework/data/adonet/connection-string-syntax#sqlclient-connection-strings).
+     For more information, see [SqlClient Connection Strings](/dotnet/framework/data/adonet/connection-string-syntax#sqlclient-connection-strings).
 
 4. Append `TrustServerCertificate=true;` to `connectionString` in case the SSL certificate is not installed on the worker computer.
 

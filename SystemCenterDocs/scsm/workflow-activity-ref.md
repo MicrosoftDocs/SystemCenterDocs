@@ -130,7 +130,7 @@ This activity introduces a delay between activities in a workflow in Service Man
  None.  
 
 #### Remarks  
- For more information about this activity, see [DelayActivity Class](https://go.microsoft.com/fwlink/p/?LinkID=186252) in the .NET&nbsp;Framework Class Library.  
+ For more information about this activity, see [DelayActivity Class](/dotnet/api/system.workflow.activities.delayactivity) in the .NET&nbsp;Framework Class Library.  
 
 #### Example  
  None.  
@@ -189,7 +189,7 @@ Two types of activities do not get the **Current Item** and **Property to Bind**
 
 This activity controls the sequence of activities within a workflow based on a Boolean (True/False) condition. You can use the outcome of a previous activity, such as a script activity, for the condition.  
 
- The **IfElse** activity is a Visual Studio activity that uses rules and conditions. For more information about using rules and conditions in Windows Workflow Foundation (WF), see [Tutorial: Use Rules and Conditions in WF](https://go.microsoft.com/fwlink/p/?LinkID=186257) in the MSDN Library.  
+ The **IfElse** activity is a Visual Studio activity that uses rules and conditions. For more information about using rules and conditions in Windows Workflow Foundation (WF), see [Tutorial: Use Rules and Conditions in WF](/previous-versions/dotnet/netframework-3.5/ms734552(v=vs.90)) in the MSDN Library.  
 
 #### Design time prerequisites  
  None.  
@@ -204,14 +204,14 @@ This activity controls the sequence of activities within a workflow based on a B
  None.  
 
 #### Remarks  
- For more information about the **IfElse** activity, see [IfElseActivity Class](https://go.microsoft.com/fwlink/p/?LinkID=164775) in the .NET&nbsp;Framework&nbsp;4 Class Library.  
+ For more information about the **IfElse** activity, see [IfElseActivity Class](/dotnet/api/system.workflow.activities.ifelseactivity) in the .NET&nbsp;Framework&nbsp;4 Class Library.  
 
 #### Example  
  None.  
 
 ### Parallel activity
 
-This activity forks the sequence of activities into two simultaneous sequences of activities. The **Parallel** activity is a Visual Studio activity. For more information about the **ParallelActivity** class, see [ParallelActivity Class](https://go.microsoft.com/fwlink/p/?LinkID=186258) in the .NET&nbsp;Framework Class Library.  
+This activity forks the sequence of activities into two simultaneous sequences of activities. The **Parallel** activity is a Visual Studio activity. For more information about the **ParallelActivity** class, see [ParallelActivity Class](/dotnet/api/system.workflow.activities.parallelactivity) in the .NET&nbsp;Framework Class Library.  
 
 #### Design time prerequisites  
  None.  
@@ -726,4 +726,4 @@ This activity updates the status of an automated activity in Service Manager.
  When you are using this activity in a workflow that is triggered by a Service Manager automated activity, enter **$Data/BaseManagedEntityId$** as the value of this property. This value applies to the **Set Activity Status to Completed** activity at the automated activity that triggered the workflow to run.  
 
 #### Example  
- None.  
+ None.
