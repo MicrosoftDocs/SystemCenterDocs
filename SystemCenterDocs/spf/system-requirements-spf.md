@@ -25,7 +25,7 @@ This article details the system requirements for System Center 2019 - Service Pr
 
 [!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
 
-System requirements for SPF 1801 are also applicable for SPF 1807, there are no changes. [Learn ](https://docs.microsoft.com/system-center/spf/system-requirements-spf?view=sc-spf-1801) about the system requirements.
+System requirements for SPF 1801 are also applicable for SPF 1807, there are no changes. [Learn ](https://docs.microsoft.com/system-center/spf/system-requirements-spf?view=sc-spf-1801&preserve-view=true) about the system requirements.
 
 ::: moniker-end
 
