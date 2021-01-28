@@ -41,7 +41,7 @@ It is assumed in this guide that you are performing an upgrade from System Cente
    > 4. Operations Manager
    > 5. Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines and virtual machine hosts.
 
-Before you upgrade to System Center Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center Operations Manager](plan-system-requirements.md).
+Before you upgrade to System Center Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center Operations Manager](./system-requirements.md).
 
 There are several options for upgrade:
 
@@ -137,7 +137,7 @@ It is assumed in this guide that you are performing an upgrade to System Center 
    > 4. Operations Manager
    > 5. Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines and virtual machine hosts.
 
-Before you upgrade to System Center Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center Operations Manager](plan-system-requirements.md).
+Before you upgrade to System Center Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center Operations Manager](./system-requirements.md).
 
 There are several options for upgrade:
 

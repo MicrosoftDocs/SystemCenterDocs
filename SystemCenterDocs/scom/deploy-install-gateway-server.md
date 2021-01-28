@@ -24,7 +24,7 @@ Gateway servers are used to enable agent-management of computers that are outsid
 
 Because the gateway server resides in a domain that is not trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of Operations Manager for mutual authentication.
 
-You must ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+You must ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 ::: moniker range="sc-om-2016"
 
@@ -59,7 +59,7 @@ You must ensure that your server meets the minimum system requirements for Syste
 
 ### Obtaining computer certificates from Microsoft Certificate Services
 
-For more information, see [Active Directory Certificate Services](https://technet.microsoft.com/library/hh831740.aspx)
+For more information, see [Active Directory Certificate Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831740(v=ws.11))
 
 ### Distributing the Microsoft.EnterpriseManagement.GatewayApprovalTool
 
@@ -196,4 +196,4 @@ It is sometimes necessary to chain multiple gateways together in order to monito
 
 ## Next steps
 
-- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.   
+- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.
