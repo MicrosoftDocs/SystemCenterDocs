@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Using the Administration workspace in Operations Manager
+# Configure a management group using the Administration workspace
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
