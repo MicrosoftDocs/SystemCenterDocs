@@ -21,10 +21,10 @@ ms.author: v-anesh
 
 System Center Data Protection manager integrate with Azure Backup and utilizes several built-in efficiencies that save network and storage costs during the initial full backups of data to Azure. Initial full backups typically transfer large amounts of data and require more network bandwidth when compared to subsequent backups that transfer only the deltas/incrementals. Azure Backup compresses the initial backups. Through the process of offline seeding, Azure Backup can use disks to upload the compressed initial backup data offline to Azure.
 
-The offline-seeding process of Azure Backup is tightly integrated with the [Azure Import/Export service](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) that enables you to transfer data to Azure by using disks. If you have terabytes (TBs) of initial backup data that needs to be transferred over a high-latency and low-bandwidth network, you can use the offline-seeding workflow to ship the initial backup copy on one or more hard drives to an Azure datacenter. This article provides an overview and further details steps that complete this workflow for System Center DPM.
+The offline-seeding process of Azure Backup is tightly integrated with the [Azure Import/Export service](/azure/storage/common/storage-import-export-service) that enables you to transfer data to Azure by using disks. If you have terabytes (TBs) of initial backup data that needs to be transferred over a high-latency and low-bandwidth network, you can use the offline-seeding workflow to ship the initial backup copy on one or more hard drives to an Azure datacenter. This article provides an overview and further details steps that complete this workflow for System Center DPM.
 
 > [!NOTE]
-> The process of Offline backup for the Microsoft Azure Recovery Services (MARS) agent is distinct from System Center DPM. For information on using Offline backup with MARS agent, see [this article](https://docs.microsoft.com/azure/backup/backup-azure-backup-import-export). Offline Backup is not supported for System State backups done using the Azure Backup agent.
+> The process of Offline backup for the Microsoft Azure Recovery Services (MARS) agent is distinct from System Center DPM. For information on using Offline backup with MARS agent, see [this article](/azure/backup/backup-azure-backup-import-export). Offline Backup is not supported for System State backups done using the Azure Backup agent.
 
 
 ## Overview
@@ -43,7 +43,7 @@ With the offline-seeding capability of Azure Backup and Azure Import/Export, it 
 
 Ensure that the following prerequisites are met before initiating the Offline Backup workflow.
 
-* A [Recovery Services vault](https://docs.microsoft.com/azure/backup/backup-azure-recovery-services-vault-overview) has been created. To create one, refer to the steps in [this article](https://docs.microsoft.com/azure/backup/tutorial-backup-windows-server-to-azure#create-a-recovery-services-vault).
+* A [Recovery Services vault](/azure/backup/backup-azure-recovery-services-vault-overview) has been created. To create one, refer to the steps in [this article](/azure/backup/tutorial-backup-windows-server-to-azure#create-a-recovery-services-vault).
 * Ensure that only the [latest version of Microsoft Azure Recovery Services agent](https://aka.ms/azurebackup_agent) is installed on the SC DPM and registered to Recovery Services Vault.
 * Update Rollup 1 is installed on SC DPM 2019.
 
@@ -52,7 +52,7 @@ Ensure that the following prerequisites are met before initiating the Offline Ba
 
 * On the computer running Azure Backup agent, make sure Microsoft Edge or Internet Explorer 11 is installed, and JavaScript is enabled.
 * Create an Azure Storage account in the same subscription as the Recovery Services vault.
-* Make sure you have the [necessary permissions](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal) to create the Azure Active Directory application. The Offline Backup workflow creates an Azure Active Directory application in the subscription associated with the Azure Storage account. The goal of the application is to provide Azure Backup with secure and scoped access to the Azure Import Service, required for the Offline Backup workflow.
+* Make sure you have the [necessary permissions](/azure/active-directory/develop/howto-create-service-principal-portal) to create the Azure Active Directory application. The Offline Backup workflow creates an Azure Active Directory application in the subscription associated with the Azure Storage account. The goal of the application is to provide Azure Backup with secure and scoped access to the Azure Import Service, required for the Offline Backup workflow.
 * Register the Microsoft.ImportExport resource provider with the subscription containing the Azure Storage account. To register the resource provider:
     1. In the main menu, Click **Subscriptions**.
     2. If you are subscribed to multiple subscriptions, select the subscription you're using for the offline backup. If you use only one subscription, then your subscription appears.
@@ -62,12 +62,12 @@ Ensure that the following prerequisites are met before initiating the Offline Ba
        ![registering the resource provider](./media/backup-server/registerimportexport.png)
 
 * A staging location, which might be a network share or any additional drive on the computer, internal or external, with enough disk space to hold your initial copy, is created. For example, if you are trying to back up a 500-GB file server, ensure that the staging area is at least 500 GB. (A smaller amount is used due to compression.)
-* With regards to disks that will be sent to Azure, ensure that only 2.5 inch SSD, or 2.5-inch or 3.5-inch SATA II/III internal hard drives are used. You can use hard drives up to 10 TB. Check the [Azure Import/Export service documentation](https://docs.microsoft.com/azure/storage/common/storage-import-export-requirements#supported-hardware) for the latest set of drives that the service supports.
+* With regards to disks that will be sent to Azure, ensure that only 2.5 inch SSD, or 2.5-inch or 3.5-inch SATA II/III internal hard drives are used. You can use hard drives up to 10 TB. Check the [Azure Import/Export service documentation](/azure/storage/common/storage-import-export-requirements#supported-hardware) for the latest set of drives that the service supports.
 * The SATA drives have to be connected to a computer (referred to as a *copy computer*) from where the copy of backup data from the *staging location* to the SATA drives is done. Ensure that BitLocker is enabled on the *copy computer*
 
 ## Workflow
 
-The information in this section helps you complete the offline-backup workflow so that your data can be delivered to an Azure datacenter and uploaded to Azure Storage. If you have questions about the Import service or any aspect of the process, see the [Import service overview](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) documentation referenced earlier.
+The information in this section helps you complete the offline-backup workflow so that your data can be delivered to an Azure datacenter and uploaded to Azure Storage. If you have questions about the Import service or any aspect of the process, see the [Import service overview](/azure/storage/common/storage-import-export-service) documentation referenced earlier.
 
 ## Initiate offline backup
 
@@ -199,7 +199,7 @@ The amount of time it takes to process an Azure import job varies depending on d
 
 ### Monitoring Azure Import job status
 
-You can monitor the status of your Import job from the Azure portal by navigating to the **Import/Export jobs** page and selecting your job. For more information on the status of the Import jobs, see the [Storage Import Export service](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) article.
+You can monitor the status of your Import job from the Azure portal by navigating to the **Import/Export jobs** page and selecting your job. For more information on the status of the Import jobs, see the [Storage Import Export service](/azure/storage/common/storage-import-export-service) article.
 
 
 ### Complete the workflow
@@ -210,4 +210,4 @@ At the time of the next scheduled online replica creation job, Data Protection M
 
 ## Next steps
 
-* For any questions on the Azure Import/Export workflow, refer to [Use the Microsoft Azure Import/Export service to transfer data to Blob storage](https://docs.microsoft.com/azure/storage/common/storage-import-export-service).
+* For any questions on the Azure Import/Export workflow, refer to [Use the Microsoft Azure Import/Export service to transfer data to Blob storage](/azure/storage/common/storage-import-export-service).

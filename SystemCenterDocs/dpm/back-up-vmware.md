@@ -303,7 +303,7 @@ If your organization does not want to use secure communication protocol (HTTPS),
 
 ## Configure Backup
 
-Once you've added the VMware server(s) to DPM, you're almost ready to start protection in DPM. However, before you begin protection, you need to allocate disk storage that DPM can use for short-term storage. For guidance on adding storage, see [Adding Storage to DPM](https://technet.microsoft.com/library/hh758075(v=sc.12).aspx). Once you have added storage, you are ready to use the **Create New Protection Group** wizard to create a protection group for the VMware VMs.
+Once you've added the VMware server(s) to DPM, you're almost ready to start protection in DPM. However, before you begin protection, you need to allocate disk storage that DPM can use for short-term storage. For guidance on adding storage, see [Adding Storage to DPM](/previous-versions/system-center/system-center-2012-R2/hh758075(v=sc.12)). Once you have added storage, you are ready to use the **Create New Protection Group** wizard to create a protection group for the VMware VMs.
 
 ### Folder-level protection
 
@@ -321,7 +321,7 @@ In large VMware deployments, a single vCenter server can manage thousands of VMs
 
 DPM can back up VMware VMs to disk, tape and to the Azure cloud. You specify the protection method while creating the new Protection Group.
 
-For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](https://docs.microsoft.com/system-center/dpm/identify-compatible-tape-libraries?view=sc-dpm-1807&preserve-view=true) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
+For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](./identify-compatible-tape-libraries.md?preserve-view=true&view=sc-dpm-1807) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
 
 DPM provides application-consistent backups of Windows VMs and file-consistent backups of Linux VMs (provided you install VMware tools on the guest).
 
@@ -372,15 +372,15 @@ On the **Select Tape and Library Details** page, specify the tape/library to use
 10. On the **Consistency Check Options** screen, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check. To run a manual check, right-click the protection group in the Protection area of the DPM console, and select **Perform Consistency Check**.
 11. On the **Specify Online Protection Data** screen, select the data source(s) that you want to protect.
 12. On the **Specify Online Backup Schedule** screen, specify how often you want to take a backup from the disk backup to Azure. A recovery point is created each time a backup is taken.
-13. On the **Specify Online Retention Policy** screen, specify how long you want to retain your data in Azure. Read more about backing up DPM to Azure in the article, [Backup DPM workloads with Azure Backup](https://docs.microsoft.com/azure/backup/backup-azure-dpm-introduction).
+13. On the **Specify Online Retention Policy** screen, specify how long you want to retain your data in Azure. Read more about backing up DPM to Azure in the article, [Backup DPM workloads with Azure Backup](/azure/backup/backup-azure-dpm-introduction).
 14. On the Choose Online Replication screen, choose your method for creating your initial backup copy. The default choice is to send the initial backup copy of your data over the network. However, if you have a large amount of data, it may be more timely to use the Offline Backup feature. See the Offline Backup article in Azure for more information, including a step-by-step walkthrough.
-15. On the Summary screen, review the settings. If you are interested in optimizing performance of the protection group, see the article, [Optimizing DPM operations](https://technet.microsoft.com/library/jj628105(v=sc.12).aspx) that affect performance. Once you are satisfied with all settings for the protection group, click **Create Group** to create the protection group and trigger the initial backup copy.
+15. On the Summary screen, review the settings. If you are interested in optimizing performance of the protection group, see the article, [Optimizing DPM operations](/previous-versions/system-center/system-center-2012-R2/jj628105(v=sc.12)) that affect performance. Once you are satisfied with all settings for the protection group, click **Create Group** to create the protection group and trigger the initial backup copy.
 
 The Status screen appears and gives you an update on the creation of your protection group, and the state of your initial backup.
 
 ## Restore VMware virtual machines
 
-This section explains how to use DPM to restore VMware VM [recovery points](https://technet.microsoft.com/library/jj627975(v=sc.12).aspx). For an overview on using DPM to recover data, see [Recover protected data](https://technet.microsoft.com/library/jj628056(v=sc.12).aspx). In the DPM Administrator Console, there are two ways to find recoverable data - search or browse. When recovering data, you may, or may not want to restore data or a VM to the same location. For this reason DPM supports three recovery options for VMware VM backups.
+This section explains how to use DPM to restore VMware VM [recovery points](/previous-versions/system-center/system-center-2012-R2/jj627975(v=sc.12)). For an overview on using DPM to recover data, see [Recover protected data](/previous-versions/system-center/system-center-2012-R2/jj628056(v=sc.12)). In the DPM Administrator Console, there are two ways to find recoverable data - search or browse. When recovering data, you may, or may not want to restore data or a VM to the same location. For this reason DPM supports three recovery options for VMware VM backups.
 
 - **Original location recovery (OLR)** - Use OLR to restore a protected VM to its original location. You can restore a VM to its original location only if no disks have been added or deleted, since the back up occurred. If disks have been added or deleted, you must use alternate location recovery.
 - **Alternate location recovery (ALR)** - When the original VM is missing, or you don't want to disturb the original VM, recover the VM to an alternate location. To recover a VM to an alternate location, you must provide the location of an ESXi host, resource pool, folder, and the storage datastore and path. To help differentiate the restored VM from the original VM, DPM appends "-Recovered" to the name of the VM.

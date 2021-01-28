@@ -18,7 +18,7 @@ ms.author: raynew
 ::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
 
 > [!NOTE]
-> This version of Data Protection Manager (DPM) has reached the end of support, we recommend you to [upgrade to DPM 2019](https://docs.microsoft.com/system-center/dpm/).
+> This version of Data Protection Manager (DPM) has reached the end of support, we recommend you to [upgrade to DPM 2019](./index.yml).
 
 ::: moniker-end
 
@@ -83,7 +83,7 @@ The following sections details the protection support matrix for DPM:
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
-|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2012 R2/2012) <br /><br /> Linux virtual machines running on the versions 5.5, 6.0, 6.5 or 6.7 of VMware vCenter and vSphere Hypervisor (ESXi).|Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 or Windows Server 2012. <br /><br />Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).|
+|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2012 R2/2012) <br /><br /> Linux virtual machines running on the versions 5.5, 6.0, 6.5 or 6.7 of VMware vCenter and vSphere Hypervisor (ESXi).|Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 or Windows Server 2012. <br /><br />Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
 
 
 ::: moniker-end
@@ -152,7 +152,7 @@ The following sections details the protection support matrix for DPM:
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM|Windows Server 2012 - Datacenter and Standard|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Protect: Hyper-V computers, Hyper-V VMs hosted on (cluster shared volumes) CSVs<br /><br />Recover: Virtual machine, Item-level recovery of files and folder, volumes, virtual hard drives|
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM|Windows Server 2008 R2 SP1 - Enterprise and Standard|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Protect: Hyper-V computers, Hyper-V VMs hosted on (cluster shared volumes) CSVs<br /><br />Recover: Virtual machine, Item-level recovery of files and folder, volumes, virtual hard drives|
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM|Windows Server 2008 SP2|Physical server<br /><br />On-premises Hyper-V virtual machine|N|N|Protect: Hyper-V computers, Hyper-V VMs hosted on (cluster shared volumes) CSVs<br /><br />Recover: Virtual machine, Item-level recovery of files and folder, volumes, virtual hard drives|
-|Linux|Linux running as Hyper-V guest|On-premises Hyper-V virtual machine|Y|Y|Hyper-V must be running on Windows Server 2012 R2 or Windows Server 2016. Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).|
+|Linux|Linux running as Hyper-V guest|On-premises Hyper-V virtual machine|Y|Y|Hyper-V must be running on Windows Server 2012 R2 or Windows Server 2016. Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
 |VMware VMs | VMware server 5.5, 6.0, or 6.5 | On-premises Hyper-V virtual machine | Y | N | VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
 |VMware VMs | [VMware vSphere 6.7](back-up-VMware.md)| On-premises Hyper-V virtual machine | Y (Applicable for DPM 1807 and later) | N | VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
 

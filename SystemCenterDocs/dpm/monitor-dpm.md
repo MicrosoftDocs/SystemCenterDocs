@@ -64,11 +64,11 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 **Enable central monitoring**
 
 1.	Logon to Azure portal.
-2.	[Create a Recovery Service vault](https://docs.microsoft.com/azure/backup/backup-azure-vms-first-look-arm#back-up-from-azure-vm-settings), or if you already have one, select the same.
+2.	[Create a Recovery Service vault](/azure/backup/backup-azure-vms-first-look-arm#back-up-from-azure-vm-settings), or if you already have one, select the same.
 3.	Select **Diagnostic Settings** under **Monitoring** section.
     ![Diagnostics settings](./media/monitor-dpm/diagnostic-settings.png)
 4. Click **Turn on Diagnostic Settings**.
-5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport* and click **Save**.
+5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport* and click **Save**.
 
     > [!NOTE]
     > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
@@ -105,7 +105,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 3.	Select **Take me to Azure Alerts**.
 4.	In Log Analytics workspace, click **New Alert Rule**.
 5.	Define the **alert condition**, **alert details** and **action group**.
-6.	[Learn more](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-response#create-alerts) about how to configure new alerts.
+6.	[Learn more](/azure/azure-monitor/learn/tutorial-response#create-alerts) about how to configure new alerts.
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
 
 #### Install the agent and obtain the Management Packs
 
-1.  For agent installation options read [Operations Manager Installation Methods](https://docs.microsoft.com/system-center/scom/deploy-overview?view=sc-om-1807&preserve-view=true).
+1.  For agent installation options read [Operations Manager Installation Methods](../scom/deploy-overview.md?preserve-view=true&view=sc-om-1807).
     If you need to obtain the latest version of the agent see [Microsoft Monitoring Agent](https://www.microsoft.com/download/details.aspx?id=40316) in the Download Center.
 
 2.  Download the packs from the [Download Center](https://www.microsoft.com/download/details.aspx?id=9296).
@@ -160,7 +160,7 @@ Remember to remove any previous versions of the Library or Discover Management P
 1.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
      Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**
 
-2.  Follow the instructions in the Import Management Packs wizard. You can get more information about running this wizard in [How to Import an Operations Manager Management Pack](https://technet.microsoft.com/library/hh212691.aspx).
+2.  Follow the instructions in the Import Management Packs wizard. You can get more information about running this wizard in [How to Import an Operations Manager Management Pack](/previous-versions/system-center/system-center-2012-R2/hh212691(v=sc.12)).
 
 #### Set up Central Console
 You'll need to install the DPM Central Console on the Operations Manager server. This console is used to manage multiple DPM servers in Operations Manager.
@@ -185,4 +185,4 @@ You'll need to install the DPM Central Console on the Operations Manager server.
 
 #### Tweaking Management Pack settings
 
-After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](https://technet.microsoft.com/library/hh212818.aspx).
+After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](/previous-versions/system-center/system-center-2012-R2/hh212818(v=sc.12)).

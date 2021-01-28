@@ -56,9 +56,9 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 **DPM version** | **SQL version**
 --- | ---
 DPM 2016 | SQL Server 2014 SP2 or later <br/><br/>  SQL Server 2012 SP4 or later.
-DPM 2016 UR2 and later| SQL Server 2014 SP2 or later <br/><br/> SQL Server 2012 SP4 or later <br/><br/> SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
-DPM 1801 |  SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
-DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016) <br/><br/> - SQL Server 2017 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202017)
+DPM 2016 UR2 and later| SQL Server 2014 SP2 or later <br/><br/> SQL Server 2012 SP4 or later <br/><br/> SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
+DPM 1801 |  SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
+DPM 1807 | - SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016) <br/><br/> - SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017)
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.c
 
 **DPM version** | **SQL version**
 --- | ---
-DPM 2019 | - SQL Server 2019 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202019)<br/><br/> - SQL Server 2017 as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)
+DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019)<br/><br/> - SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://docs.microsoft.com/lifec
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
 |Installation|Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM.|
-|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](https://docs.microsoft.com/system-center/dpm/install-dpm#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
+|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](./install-dpm.md#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
 
 ::: moniker range="<sc-dpm-2019"

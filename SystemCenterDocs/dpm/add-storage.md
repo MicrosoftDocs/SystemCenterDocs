@@ -183,7 +183,7 @@ Once you configure tiered storage, the ReFS file system has the intelligence to 
 
 ## Prerequisites
 
-The tiered storage is configured using [Windows Storage Spaces](https://docs.microsoft.com/windows-server/storage/storage-spaces/overview). Following are the prerequisites for Windows Storage Spaces.
+The tiered storage is configured using [Windows Storage Spaces](/windows-server/storage/storage-spaces/overview). Following are the prerequisites for Windows Storage Spaces.
 
 |Area | Requirement | Notes |
 |---- |--------------|----|
@@ -193,7 +193,7 @@ The tiered storage is configured using [Windows Storage Spaces](https://docs.mic
 > [!NOTE]
 > To configure tiered storage, Windows Storage Spaces requires minimum SSD size of 32 GB.
 
-For more information on prerequisites for using Storage Spaces on a stand-alone server, see [Prerequisites to use Storage Spaces on a stand-alone server](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
+For more information on prerequisites for using Storage Spaces on a stand-alone server, see [Prerequisites to use Storage Spaces on a stand-alone server](/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
 ## Supported topology
 
@@ -225,7 +225,7 @@ The below chart highlights some pros and cons of the three types of resiliency, 
 | Mirror | - Increased reliability.<br><br> - Greater data throughput and lower access latency than parity. <br><br> - Stripes the data across multiple physical drives. Can be configured for 2 or 3 copies of data. | - Reduced capacity (50%). <br><br> - Not supported on Iscsi or FC connected SAN. | 2 or 5 |
 | Parity | - Stripes data and parity information across physical disks. <br><br> - Increased reliability. <br><br> - Increases resiliency through journaling. | - Reduced capacity, but not as much as mirroring. <br><br> - Not supported on Iscsi or FC connected SAN.<br><br> -  Slightly reduced performance. | 3 |
 
-For more information to help plan for the number of physical disks and the desired resiliency type for a stand-alone server deployment, use the guidelines documented [here](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
+For more information to help plan for the number of physical disks and the desired resiliency type for a stand-alone server deployment, use the guidelines documented [here](/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
 ## Configure DPM storage
 
