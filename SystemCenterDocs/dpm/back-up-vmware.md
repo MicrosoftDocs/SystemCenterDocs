@@ -321,7 +321,7 @@ In large VMware deployments, a single vCenter server can manage thousands of VMs
 
 DPM can back up VMware VMs to disk, tape and to the Azure cloud. You specify the protection method while creating the new Protection Group.
 
-For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](https://docs.microsoft.com/system-center/dpm/identify-compatible-tape-libraries?view=sc-dpm-1807) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
+For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](https://docs.microsoft.com/system-center/dpm/identify-compatible-tape-libraries?view=sc-dpm-1807&preserve-view=true) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
 
 DPM provides application-consistent backups of Windows VMs and file-consistent backups of Linux VMs (provided you install VMware tools on the guest).
 
