@@ -1,6 +1,6 @@
 ---
 title: Using the Visio Add-in and SharePoint Visio Services Data Provider
-description: This article highlights the section titles contained within this section of the Operations Manager documentation.
+description: This article highlights the Visio add-in and SharePoint Visio services data provider.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
