@@ -65,15 +65,15 @@ You can use the following procedures to configure notification channels and vali
 
 ![PowerShell symbol](./media/notifications/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
 
--   For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](https://go.microsoft.com/fwlink/p/?LinkId=225375).
--   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in Service Manager, see [Get-SCSMChannel](https://go.microsoft.com/fwlink/p/?LinkId=225319).
+-   For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](/previous-versions/system-center/powershell/system-center-2012-r2/hh316236(v=sc.20)).
+-   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in Service Manager, see [Get-SCSMChannel](/previous-versions/system-center/powershell/system-center-2012-r2/hh316246(v=sc.20)).
 
 ## Create notification templates
 
 You can use the following procedures to create notification templates for many types of information records or work items that Service Manager records or keeps track of, such as incidents, change requests, activities, release records, and configuration items. After you create the notification templates, you can use a notification subscription to send email messages based on the templates. The notification template determines the type and format of the messages to send.
 
 > [!NOTE]
-> Manually copying and pasting substitution strings from other notification templates will not generally work. Therefore, you should avoid copying them to prevent errors. Instead, you can easily browse for and insert available substitution strings into any notification template that you are creating or updating. For more information about using substitution strings in notification templates, see [About Substitution Strings in Notification Templates](sub-strings.md).
+> Manually copying and pasting substitution strings from other notification templates will not generally work. Therefore, you should avoid copying them to prevent errors. Instead, you can easily browse for and insert available substitution strings into any notification template that you are creating or updating. For more information about using substitution strings in notification templates, see [About Substitution Strings in Notification Templates]().
 
 The following two templates are prerequisites for other procedures:
 
@@ -137,11 +137,11 @@ The following two templates are prerequisites for other procedures:
 
 ![PowerShell symbol](./media/notifications/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new Email template in Service Manager, see [New-SCSMEmailTemplate](https://go.microsoft.com/fwlink/p/?LinkID=225355).
--   For information about how to use Windows PowerShell to retrieve Email templates that are defined in Service Manager, see [Get-SCSMEmailTemplate](https://go.microsoft.com/fwlink/p/?LinkID=225323).
--   For information about how to use Windows PowerShell to retrieve the content of a Service Manager Email template, see [Get-SCSMEmailTemplateContent](https://go.microsoft.com/fwlink/p/?LinkID=225324).
--   For information about how to use Windows PowerShell to update properties of an Email template, see [Update-SCSMEmailtemplate](https://go.microsoft.com/fwlink/p/?LinkID=225384).
--   For information about how to use Windows PowerShell to remove an Email template from Service Manager, see [Remove-SCSMEmailTemplate](https://go.microsoft.com/fwlink/p/?LinkId=246064).
+-   For information about how to use Windows PowerShell to create a new Email template in Service Manager, see [New-SCSMEmailTemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316229(v=sc.20)).
+-   For information about how to use Windows PowerShell to retrieve Email templates that are defined in Service Manager, see [Get-SCSMEmailTemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316234(v=sc.20)).
+-   For information about how to use Windows PowerShell to retrieve the content of a Service Manager Email template, see [Get-SCSMEmailTemplateContent](/previous-versions/system-center/powershell/system-center-2012-r2/hh316219(v=sc.20)).
+-   For information about how to use Windows PowerShell to update properties of an Email template, see [Update-SCSMEmailtemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316235(v=sc.20)).
+-   For information about how to use Windows PowerShell to remove an Email template from Service Manager, see [Remove-SCSMEmailTemplate](/previous-versions/system-center/powershell/system-center-2012-r2/hh316216(v=sc.20)).
 
 ## Subscribe to notifications
 
@@ -214,10 +214,10 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 ![PowerShell symbol](./media/notifications/pssymbol.png)You can use a Windows PowerShell command to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new subscription in Service Manager, see [New-SCSMSubscription](https://go.microsoft.com/fwlink/p/?LinkID=225359).
--   For information about how to use Windows PowerShell to retrieve subscriptions that are configured in Service Manager, see [Get-SCSMSubscription](https://go.microsoft.com/fwlink/p/?LinkID=225333).
--   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update-SCSMSubscription](https://go.microsoft.com/fwlink/p/?LinkID=225388).
--   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove-SCSMSubscription](https://go.microsoft.com/fwlink/p/?LinkID=225370).
+-   For information about how to use Windows PowerShell to create a new subscription in Service Manager, see [New-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316196(v=sc.20)).
+-   For information about how to use Windows PowerShell to retrieve subscriptions that are configured in Service Manager, see [Get-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316211(v=sc.20)).
+-   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316242(v=sc.20)).
+-   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove-SCSMSubscription](/previous-versions/system-center/powershell/system-center-2012-r2/hh316257(v=sc.20)).
 
 ## Verify a notification configuration
 

@@ -20,7 +20,7 @@ ms.technology: service-manager
 
 This article provides an example that shows how to inventory all computers that might require an upgrade to Microsoft Exchange Server 2016. To do this, first define the appropriate configuration baseline in Configuration Manager.
 
-In Service Manager, you must create a Configuration Manager connector to import the baseline and configure incident management to automatically generate incidents based on desired configuration management. For information about how to create a Configuration Manager connector, see [About Importing Data from System Center Configuration Manager](admin-about-importing-data-from-system-center-configuration-manager.md).
+In Service Manager, you must create a Configuration Manager connector to import the baseline and configure incident management to automatically generate incidents based on desired configuration management. For information about how to create a Configuration Manager connector, see [About Importing Data from System Center Configuration Manager](./import-data-cm.md).
 
 You can use desired configuration management in Configuration Manager to monitor software to ensure that it is compliant with defined values. For example, you can monitor software versions, security settings, and software updates. The configurations that you want to monitor are added as Configuration Manager configuration items to configuration baselines so that they can be evaluated for compliance as a group.
 
@@ -79,13 +79,13 @@ You can use the following procedures to configure incident management to automat
 
 ![PowerShell symbol](./media/dcm-incidents/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a desired configuration management workflow in Service Manager, see [New-SCSMDCMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225354).
+-   For information about how to use Windows PowerShell to create a desired configuration management workflow in Service Manager, see [New-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316251(v=sc.20)).
 
--   For information about how to use Windows PowerShell to retrieve the list of all DCM workflows that are defined in Service Manager, see [Get-SCSMDCMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225321).
+-   For information about how to use Windows PowerShell to retrieve the list of all DCM workflows that are defined in Service Manager, see [Get-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316212(v=sc.20)).
 
--   For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update-SCSMDCMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225383).
+-   For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316258(v=sc.20)).
 
--   For information about how to use Windows PowerShell to remove a desired configuration management workflow from Service Manager, see [Remove-SCSMDCMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225365).
+-   For information about how to use Windows PowerShell to remove a desired configuration management workflow from Service Manager, see [Remove-SCSMDCMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316252(v=sc.20)).
 
 ## Next steps
 
