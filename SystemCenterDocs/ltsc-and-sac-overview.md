@@ -1,5 +1,5 @@
 ---
-description: An overview of the Long-Term Servicing Channel (LTSC) and Semi-Annual Channel (SAC) releases for System Center.
+description: This article provides an overview of the Long-Term Servicing Channel (LTSC) and Semi-Annual Channel (SAC) releases for System Center.
 manager: carmonm
 ms.topic: article
 author: JYOTHIRMAISURI
