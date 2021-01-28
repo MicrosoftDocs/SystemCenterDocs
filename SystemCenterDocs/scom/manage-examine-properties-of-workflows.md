@@ -1,6 +1,6 @@
 ---
 title: Examining Properties of Alerts, Rules, and Monitors
-description: This article describes how to install the Operations Manager Operations console.
+description: This article describes how to examine properties of alerts, rules and monitors.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm

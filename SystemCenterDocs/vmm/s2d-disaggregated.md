@@ -45,7 +45,7 @@ You can provision an SOFS cluster from servers in the VMM fabric, or add an exis
 1.	Click **Fabric Resources** > **Create** > **File Server Cluster**.
 2.	In **General Configuration**, specify a cluster name, select a host group, and select **Storage attached directly to each cluster node (Storage Spaces Direct)**.
 
-    ![SOFS](./media/s2d/sofs.png)
+    ![SOFS Wizard](./media/s2d/sofs.png)
 
 3. In **Resource Type**, specify the RunAs account with local admin permissions on the servers you want to add to the cluster, and specify whether to add existing Windows servers or bare-metal machines.
 4. In **Cluster Nodes**, define a list of computers to add to the cluster.

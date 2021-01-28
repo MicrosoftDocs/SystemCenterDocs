@@ -18,7 +18,7 @@ author: "bwren"
 ms.author: "bwren"
 manager: "cfreeman"
 ---
-# Create Folder
+# Create folder activity 
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 

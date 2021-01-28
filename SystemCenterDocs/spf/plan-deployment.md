@@ -1,6 +1,6 @@
 ---
-title: Plan SPF deployment
-description: This topic provides an overview of how to plan for a Service Provider Foundation installation.
+title: Plan deployment for SPF
+description: This topic provides an overview of how to plan for a Service Provider Foundation installation and its prerequisites.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
@@ -10,7 +10,7 @@ ms.prod: system-center
 ms.technology: service-provider-foundation
 ---
 
-# Plan SPF deployment
+# Plan deployment
 
 ::: moniker range=">= sc-spf-1801 <= sc-spf-1807"
 

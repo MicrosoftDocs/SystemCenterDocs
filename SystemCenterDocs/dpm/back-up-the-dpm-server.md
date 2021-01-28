@@ -159,8 +159,7 @@ After switching protection, the replica appears as inconsistent, until the check
 >[!NOTE]
 >
 > - To switch the protection back to the primary server, do the same steps as above.
-> - You can also switch protection to the secondary DPM server by using the  [Start –DPMSwitchProtection](https://docs.microsoft.com/powershell/module/dataprotectionmanager/start-dpmswitchprotection?view=systemcenter-ps-2019
-) PowerShell cmdlet.
+> - You can also switch protection to the secondary DPM server by using the  [Start –DPMSwitchProtection](https://docs.microsoft.com/powershell/module/dataprotectionmanager/start-dpmswitchprotection) PowerShell cmdlet.
 
 **Recover a primary DPM server**
 
