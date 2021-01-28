@@ -53,7 +53,7 @@ On all the management servers in the management group, stop the Operations Manag
 ::: moniker range="sc-om-2019"
 
 > [!NOTE]
-> After deploying Operations Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017), run the [SQL script](upgrade-sqlserver-2019-operations-manager.md#optional---enable-clr-strict-security) on each Operations Manager database.
+> After deploying Operations Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017&preserve-view=true), run the [SQL script](upgrade-sqlserver-2019-operations-manager.md#optional---enable-clr-strict-security) on each Operations Manager database.
 
 ::: moniker-end
 
@@ -125,7 +125,7 @@ After moving the Operations Manager operational database to a different SQL Serv
 
 
 ### Update Service Principal Name for Kerberos Connections
-To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](https://docs.microsoft.com/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?view=sql-server-2017#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
+To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](https://docs.microsoft.com/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?view=sql-server-2017&preserve-view=true#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
 
 ## Next steps
 

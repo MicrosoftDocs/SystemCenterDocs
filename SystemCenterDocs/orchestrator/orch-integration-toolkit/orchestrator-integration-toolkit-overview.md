@@ -1,6 +1,6 @@
 ---
 title: Orchestrator Integration Toolkit Overview
-description: The Orchestrator Integration Toolkit is used to create new integrations for Orchestrator.
+description: This article describes the enhanced features of the Orchestrator Integration Toolkit that is used to create new integrations for Orchestrator.
 author: rayne-wiselman
 manager: carmonm
 ms.date: 02/02/2018
