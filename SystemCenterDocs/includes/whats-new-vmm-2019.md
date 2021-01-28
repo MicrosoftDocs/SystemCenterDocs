@@ -151,7 +151,7 @@ As part of this release, the **Convert Virtual Machine** wizard enables the VM m
 * BIOS-based VMs are migrated to Hyper-V VM generation 1.
 * EFI-based VMs are migrated to Hyper-V VM generation 2.
 
-We've also made improvements in the VMWare VM conversion process that makes the conversion up to 50% faster.
+We've also made improvements in the VMware VM conversion process that makes the conversion up to 50% faster.
 
 #### Performance improvement in host refresher
 
