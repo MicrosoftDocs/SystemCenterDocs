@@ -10,7 +10,7 @@ ms.author: raynew
 manager: carmonm
 ---
 
-# Get Service Configuration activity
+# Using Get Service Configuration activity
 
 The Get Service Configuration activity is used in a runbook to return all service configurations on the VMM management server that meet the filtering criteria.
 

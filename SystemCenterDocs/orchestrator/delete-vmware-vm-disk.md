@@ -9,7 +9,7 @@ author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
-# Delete VM Disk activity
+# Delete a virtual disk from a VM
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 

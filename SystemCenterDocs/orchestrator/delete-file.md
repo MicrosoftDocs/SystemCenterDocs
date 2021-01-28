@@ -15,7 +15,7 @@ ms.author: raynew
 manager: carmonm
 robots: noindex
 ---
-# Delete File
+# Delete file on an FTP server
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-The Delete File activity is used in a runbook to delete a file on a FTP server.
+The Delete File activity is used in a runbook to delete a file on an FTP server.
 
 This activity publishes all of the data from the required properties into published data.
 

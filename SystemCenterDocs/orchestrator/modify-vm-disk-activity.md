@@ -10,7 +10,7 @@ ms.author: raynew
 manager: carmonm
 ---
 
-# Modify VM Disk activity
+# Modify virtual disk 
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
