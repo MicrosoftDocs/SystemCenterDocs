@@ -44,9 +44,9 @@ The following sections describe the hardware and software requirements for Syste
 |                                                                 **SQL version**                                                                 | **Supported** |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 |                                                               **SQL Server 2008**                                                               |       N       |
-| **SQL Server 2012 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202012)** |       Y       |
-| **SQL Server 2014 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202014)** |       Y       |
-| **SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)** |       Y       |
+| **SQL Server 2012 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2012)** |       Y       |
+| **SQL Server 2014 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2014)** |       Y       |
+| **SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)** |       Y       |
 
 ## Installation components
 

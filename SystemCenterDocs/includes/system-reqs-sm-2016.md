@@ -119,7 +119,7 @@ The following table summarizes the support for SQL Server 64-bit Enterprise and 
 > For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 
 
-**Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202014)**  | **SQL Server 2016 and [SPs](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)**
+**Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs](/lifecycle/products/?terms=SQL+Server+2014)**  | **SQL Server 2016 and [SPs](/lifecycle/products/?terms=SQL+Server+2016)**
 --- | --- | --- | ---
 **Service Manager/Data Warehouse database** | | &#8226;| &#8226;
 
