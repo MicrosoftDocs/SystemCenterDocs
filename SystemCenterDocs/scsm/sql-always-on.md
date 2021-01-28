@@ -29,7 +29,7 @@ However, this information is not intended to provide detailed instructions on ho
 
 
 > [!NOTE]
-> After deploying Service Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017), run the [SQL script](system-requirements.md#enable-clr-strict-security) on each Service Manager database.
+> After deploying Service Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security), run the [SQL script](system-requirements.md#enable-clr-strict-security) on each Service Manager database.
 
 
 ## SQL Server AlwaysOn supported Service Manager databases
