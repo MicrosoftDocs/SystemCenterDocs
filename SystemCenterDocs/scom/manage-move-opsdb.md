@@ -22,7 +22,7 @@ ms.topic: article
 
 After the initial deployment of System Center Operations Manager, you might need to move the operational database from one Microsoft SQL Server-based computer to another.
 
-During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry and configuration file on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](https://msdn.microsoft.com/library/mt590198%28v=sql.1%29.aspx).
+During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry and configuration file on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](/sql/sql-server/).
 
 > [!NOTE]
 > This procedure can result in data loss if it is not performed correctly and within a reasonable length of time of the failure. Ensure that you follow all steps precisely, without unnecessary delays between the steps.
@@ -44,7 +44,7 @@ On all the management servers in the management group, stop the Operations Manag
 
 1. On the original SQL Server instance hosting the operational database, use Microsoft SQL Server Management Studio to create a full backup of the database. The default name is OperationsManager.
 
-    For more information, see [How to: Back Up a Database (SQL Server Management Studio)](https://technet.microsoft.com/library/ms187510.aspx).
+    For more information, see [How to: Back Up a Database (SQL Server Management Studio)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
 
 2. Copy the backup file to a local drive of the new SQL Server instance.
 
@@ -53,13 +53,13 @@ On all the management servers in the management group, stop the Operations Manag
 ::: moniker range="sc-om-2019"
 
 > [!NOTE]
-> After deploying Operations Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017&preserve-view=true), run the [SQL script](upgrade-sqlserver-2019-operations-manager.md#optional---enable-clr-strict-security) on each Operations Manager database.
+> After deploying Operations Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017), run the [SQL script](upgrade-sqlserver-2019-operations-manager.md#optional---enable-clr-strict-security) on each Operations Manager database.
 
 ::: moniker-end
 
 1. Use Microsoft SQL Server Management Studio to restore the operational database. (In the previous step, you moved the database backup file to a local drive of the new SQL Server instance.) In this step, you can change the name of the database and choose the file location.
 
-    For more information, see [How to: Restore a Database Backup (SQL Server Management Studio)](https://technet.microsoft.com/library/ms177429.aspx).
+    For more information, see [How to: Restore a Database Backup (SQL Server Management Studio)](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
 
 2. In SQL Server Management Studio, verify that the database is online.
 
@@ -71,7 +71,7 @@ After moving the Operations Manager operational database to a different SQL Serv
 
 1. On the new SQL Server instance hosting the operational database, open SQL Management Studio.  
 2. Expand **Security**, then expand **Logins**, and add the data writer account name.
-3. Under **Logins**, add the data writer account. For more information, see [How to Create a SQL Server Login](https://technet.microsoft.com/library/aa337562.aspx).
+3. Under **Logins**, add the data writer account. For more information, see [How to Create a SQL Server Login](/sql/relational-databases/security/authentication-access/create-a-login).
 4. Under **Logins**, add the management server action account.  
 5. Under **Logins**, add the Data Access Service (DAS) user account, using the format "domain\user".
 6. For the DAS user account, add the following user mappings:
@@ -125,7 +125,7 @@ After moving the Operations Manager operational database to a different SQL Serv
 
 
 ### Update Service Principal Name for Kerberos Connections
-To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](https://docs.microsoft.com/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?view=sql-server-2017&preserve-view=true#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
+To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?preserve-view=true&view=sql-server-2017#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
 
 ## Next steps
 

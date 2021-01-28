@@ -84,7 +84,7 @@ Some communication between the management server and the agent may include crede
 
 Authentication and data encryption between the management server and the Operations console, Web console server, or Reporting server is accomplished by using Windows Communication Foundation (WCF) technology. The initial attempt at authentication is made by using the user's credentials. The Kerberos protocol is attempted first. If the Kerberos protocol does not work, another attempt is made using NTLM. If authentication still fails, the user is prompted to provide credentials. After authentication has taken place, the data stream is encrypted as a function of either the Kerberos protocol or SSL, if NTLM is used.
 
-In the case of a Reporting server and a management server, after authentication has occurred, a data connection is established between the management server and SQL Server Reporting Server. This is accomplished by strictly using the Kerberos protocol; therefore, the management server and Reporting Server must reside in trusted domains. For more information about WCF, see the MSDN article [What Is Windows Communication Foundation](https://msdn.microsoft.com/library/ms731082%28v=vs.110%29.aspx).
+In the case of a Reporting server and a management server, after authentication has occurred, a data connection is established between the management server and SQL Server Reporting Server. This is accomplished by strictly using the Kerberos protocol; therefore, the management server and Reporting Server must reside in trusted domains. For more information about WCF, see the MSDN article [What Is Windows Communication Foundation](/dotnet/framework/wcf/whats-wcf).
 
 ## Management server and Reporting data warehouse
 
