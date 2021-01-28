@@ -40,7 +40,7 @@ Ensure the following prerequisites are met:
    - In the VMM console, click **Fabric** > **Network Service** > **Network Controller** > **Properties** > **Logical Network Affinity** page.
    - Specify the Front-end and Back-end networks available for load balancing and click **OK**.
 
-     ![affinity](media/slb-vip/affinity.png)
+     ![Specify affinity to logical networks](media/slb-vip/affinity.png)
 
 2. Create a VIP template.
    - In the VMM console click **Fabric** > **Create VIP Template**.

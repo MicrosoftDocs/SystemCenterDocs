@@ -263,7 +263,7 @@ From the DPM server you are trying to configure offline backup, do the following
 6. Right-click the string added in the step above and select **Modify**. In the value, provide the thumbprint of the certificate you exported in **point 2** and click **OK**.
 7. To get the value of thumbprint, double-click on the certificate, then select **Details**  and scroll-down until you see the thumbprint field. Click on **Thumbprint** and copy the value.
 
-   ![Certificate](./media/databox/certificate.png)
+   ![Get value of thumbprint](./media/databox/certificate.png)
 
 
 ## Next steps
