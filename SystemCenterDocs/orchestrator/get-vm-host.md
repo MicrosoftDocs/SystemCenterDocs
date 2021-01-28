@@ -1,6 +1,6 @@
 ---
 title: Get VM Host activity in System Center - Orchestra
-description: Returns data on all the host within the VMM server
+description: This article describes the Get VM Host activity to return all virtualization hosts on the VMM management server.
 ms.date: 01/22/2018
 ms.prod: system-center
 ms.technology: orchestrator

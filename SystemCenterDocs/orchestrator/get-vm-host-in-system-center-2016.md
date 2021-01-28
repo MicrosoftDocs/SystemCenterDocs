@@ -1,6 +1,6 @@
 ---
 title: Get VM Host in System Center 2016
-description: Returns data on all the host within the VMM server
+description: This article describes how the data is returned in all virtualization hosts within the VMM server.
 ms.custom: na
 ms.date: 4/25/2017
 ms.prod: system-center
@@ -37,4 +37,3 @@ VM Host Name
 ## Get VM Host Published Data
 
 There is no published data for this activity.
-
