@@ -71,7 +71,7 @@ The execution policy in Windows PowerShell determines which scripts must be digi
 
 3.  When prompted, type **Y** and press Enter.
 
-Learn more about [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6).
+Learn more about [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6&preserve-view=true).
 
 ## Configure remote connection settings
 
@@ -83,13 +83,13 @@ Run the following command once on each computer that will receive commands. You 
 1.  Open a Windows PowerShell (x86) console as an administrator.
 2.  Type _System Drive_**:\\PS&gt;enable-psremoting** and press Enter.
 
-[Learn more](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Enable-PSRemoting?view=powershell-3.0) about Enable PSRemoting.
+[Learn more](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Enable-PSRemoting?view=powershell-3.0&preserve-view=true) about Enable PSRemoting.
 
 You can use WS-Management quotas in Windows PowerShell remoting to protect the Orchestrator and DPM computers from excessive resource use, both accidental and malicious. The MaxConcurrentOperationsPerUser quota setting in the WSMan:\\*ComputerName*\\Service node provides this protection by imposing a limit on the number of remote connections that can run concurrently.
 
 By default, MaxConcurrentOperationsPerUser is set to 15 in Windows Server 2008 R2. This means that you can run a maximum of 15 DPM activities (shells) concurrently across all DPM runbooks.
 
-WM-Management also provides a setting for MaxConnections (regardless of users), which is set to 25 by default in Windows Server 2008 R2. If these default settings do not meet the needs of your organization, see [About\_Remote\_Troubleshooting](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1) for information about how to configure remote operations in Windows PowerShell.
+WM-Management also provides a setting for MaxConnections (regardless of users), which is set to 25 by default in Windows Server 2008 R2. If these default settings do not meet the needs of your organization, see [About\_Remote\_Troubleshooting](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1&preserve-view=true) for information about how to configure remote operations in Windows PowerShell.
 
 ## Configure connections
 
