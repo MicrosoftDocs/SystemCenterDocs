@@ -1,6 +1,6 @@
 ---
 title: Orchestrator Integration Toolkit Integration Pack Wizard
-description: This article provides details about the Orchestrator Integration Toolkit Command Line Activity Wizard.
+description: This article provides details about the Orchestrator Integration Pack Wizard.
 author: rayne-wiselman
 manager: carmonm
 ms.date: 02/02/2018
