@@ -15,7 +15,7 @@ ms.author: raynew
 manager: carmonm
 robots: noindex
 ---
-# Upload Attachment
+# Upload attachment to SharePoint
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
