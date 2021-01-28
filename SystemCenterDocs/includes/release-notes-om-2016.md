@@ -119,11 +119,6 @@ System Center Operations Manager management server is not affected.
 
 **Workaround:** None
 
-## Namespace values for performance tracking will be ignored
-**Description:** Setting the Namespace value for performance tracking when tracking a custom namespace in .NET Applications Performance Monitoring (APM) will be ignored.
-
-**Workaround:** Set both the exception tracking and performance tracking settings to include the same custom namespaces.
-
 ## Operations Manager web console is not compatible with Microsoft Edge web browser
 **Description:** When you open the Operations Manager web console from the Windows 10 Start Menu the console will open in the Microsoft Edge web browser. This will result in an error.
 
