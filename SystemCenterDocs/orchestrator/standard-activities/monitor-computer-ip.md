@@ -1,5 +1,6 @@
 ---
-title: "Monitor Computer-IP | Microsoft Docs"
+title: Monitor Computer-IP
+description: This article describes the functionality of Monitor Computer/IP activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

@@ -1,5 +1,6 @@
 ---
-title: "Send Event Log Message | Microsoft Docs"
+title: Send Event Log Message
+description: This article describes the functionality of Send Event Log Message activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
