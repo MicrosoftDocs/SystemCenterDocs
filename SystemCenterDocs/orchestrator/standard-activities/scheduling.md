@@ -1,5 +1,5 @@
 ---
-title: "Scheduling - Microsoft Docs"
+title: "Scheduling "
 description: This article describes the tasks you can accomplish when using each Scheduling activity.
 ms.custom: ""
 ms.date: "05/13/2016"
