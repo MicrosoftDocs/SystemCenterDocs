@@ -1,5 +1,5 @@
 ---
-title: "Compress File "
+title: Compress File 
 description: This article describes the Compress File activity that compresses files into zip archives.
 ms.custom: ""
 ms.date: "05/13/2016"

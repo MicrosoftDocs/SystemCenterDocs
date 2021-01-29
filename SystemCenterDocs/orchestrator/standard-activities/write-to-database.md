@@ -1,5 +1,5 @@
 ---
-title: "Write to Database "
+title: Write to Database 
 description: This article describes the Write to Database activity that writes a row into a database table.
 ms.custom: ""
 ms.date: "05/13/2016"
