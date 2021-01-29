@@ -1,6 +1,6 @@
 ---
 title: Start-Stop Service
-description: This article  provides information about the Start/Stop Service activity.
+description: This article provides detailed information about the start-stop service activity and how to configure it.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

@@ -1,5 +1,5 @@
 ---
-description: This article describes the upgrade to System Center 2016
+description: This article provides information about how to upgrade to System Center 2016
 manager: cfreeman
 ms.topic: article
 author: rayne-wiselman

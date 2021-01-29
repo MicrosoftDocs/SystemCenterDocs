@@ -1,6 +1,7 @@
 ---
 title: Audit Trail
-description: This article provides information about Audi trail.
+
+description: This article provides information about how to activate and deactivate audit trails. 
 ms.custom: na
 ms.prod: system-center
 ms.reviewer: na

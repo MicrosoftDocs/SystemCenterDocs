@@ -1,6 +1,6 @@
 ---
 title: Text File Management
-description: This article describes the functionality of Text File Management activity.
+description: This article provides information about the tasks that you can do using text file management activities.  
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
