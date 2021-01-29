@@ -1,5 +1,6 @@
 ---
-title: "Modify Counter | Microsoft Docs"
+title: Modify Counter
+description: This article describes the functionality of Modify Counter activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

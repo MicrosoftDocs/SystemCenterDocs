@@ -1,5 +1,6 @@
 ---
-title: "Get Counter Value | Microsoft Docs"
+title: Get Counter Value
+description: This article describes the functionality of Get Counter Value activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
