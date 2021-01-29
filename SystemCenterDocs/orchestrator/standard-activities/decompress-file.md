@@ -1,6 +1,5 @@
 ---
 title: Decompress File
-description: This article describes the functionality of Decompress File activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
