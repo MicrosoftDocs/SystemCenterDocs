@@ -1,5 +1,6 @@
 ---
 title: "Compress File | Microsoft Docs"
+description: This article describes the Compress File activity that compresses files into zip archives.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
