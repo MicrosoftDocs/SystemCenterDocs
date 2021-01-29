@@ -1,5 +1,6 @@
 ---
-title: "Copy File | Microsoft Docs"
+title: Copy File
+description: This article describes the functionality of Copy File activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
