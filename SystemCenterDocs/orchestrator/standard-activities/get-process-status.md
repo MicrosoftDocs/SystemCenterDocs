@@ -1,5 +1,6 @@
 ---
-title: "Get Process Status | Microsoft Docs"
+title: Get Process Status
+description: This article describes the functionality of Get Process Status activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

@@ -1,5 +1,6 @@
 ---
-title: "Get Internet Application Status | Microsoft Docs"
+title: Get Internet Application Status
+description: This article describes the functionality of Get Internet Application Status activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
