@@ -1,5 +1,6 @@
 ---
-title: "File Management | Microsoft Docs"
+title: File Management
+description: This article provides information on the various File Management activities.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

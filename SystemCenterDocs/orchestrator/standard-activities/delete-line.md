@@ -1,5 +1,6 @@
 ---
-title: "Delete Line | Microsoft Docs"
+title: Delete Line
+description: This article describes the Delete Line activity and how to configure it.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
