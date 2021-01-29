@@ -1,5 +1,6 @@
 ---
-title: "Connect-Disconnect Dial-up | Microsoft Docs"
+title: Connect-Disconnect Dial-up
+description: This article describes about the Connect/Disconnect Dial-up activity and how to configure it.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
