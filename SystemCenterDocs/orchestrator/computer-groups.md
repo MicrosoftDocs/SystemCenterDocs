@@ -1,5 +1,6 @@
 ---
-title: Computer groups in System Center - Orchestra
+title: Computer groups in System Center - orchestrator
+description: This article provides information on how to configure the activities in runbook to use a computer group.
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article

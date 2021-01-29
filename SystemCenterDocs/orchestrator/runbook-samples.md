@@ -1,5 +1,6 @@
 ---
 title: Runbook Samples
+description: This article describes the instructions for the build and test sample runbooks using the standard activities.
 ms.custom: na
 ms.prod: system-center
 ms.reviewer: na
