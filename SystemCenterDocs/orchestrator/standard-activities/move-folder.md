@@ -1,5 +1,6 @@
 ---
-title: "Move Folder | Microsoft Docs"
+title: Move Folder
+description: This article describes the functionality of Move Folder activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
