@@ -36,7 +36,7 @@ The following is a list of the available integration packs and the information f
 
  [FTP](ftp-integration-pack.md)  
 
- [Hewlett Packard Integrated Lights-Out activites](hp-ilo-and-oa-integration-pack.md)  
+ [Hewlett Packard Integrated Lights-Out activities](hp-ilo-and-oa-integration-pack.md)  
 
  [Hewlett Packard Operations Manager](hp-operations-manager-integration-pack.md)  
 
