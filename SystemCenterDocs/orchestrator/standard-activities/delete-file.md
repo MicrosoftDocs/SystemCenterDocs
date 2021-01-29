@@ -1,5 +1,5 @@
 ---
-title: Delete File
+title: Delete File activity
 description: This article describes the delete file activity.
 ms.custom: ""
 ms.date: "05/13/2016"
