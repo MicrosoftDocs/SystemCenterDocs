@@ -1,5 +1,6 @@
 ---
-title: "Notification | Microsoft Docs"
+title: "Notification - Microsoft Docs"
+description: This article describes the tasks that you can accomplish when using each Notification activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

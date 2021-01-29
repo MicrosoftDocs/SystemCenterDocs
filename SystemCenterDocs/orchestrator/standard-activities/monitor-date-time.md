@@ -1,5 +1,6 @@
 ---
-title: "Monitor Date-Time | Microsoft Docs"
+title: Monitor Date-Time 
+description: This article describes the Monitor Date/Time activity to invoke your runbooks at a specific time once a day, week, or month.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

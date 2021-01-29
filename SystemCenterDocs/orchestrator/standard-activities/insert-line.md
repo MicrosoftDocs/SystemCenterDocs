@@ -1,5 +1,6 @@
 ---
-title: "Insert Line | Microsoft Docs"
+title: Insert Line 
+description: This article describes inserts lines into a text file on a line number that you specify.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

@@ -1,5 +1,6 @@
 ---
-title: "Ports and Protocols of Standard Activities | Microsoft Docs"
+title: "Ports and Protocols of Standard Activities - Microsoft Docs"
+description: This article describes Ports and Protocols of Standard Activities.
 ms.custom: na
 ms.date: 1/2/2018
 ms.prod: system-center
