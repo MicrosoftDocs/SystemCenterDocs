@@ -1,5 +1,6 @@
 ---
 title: Common Activity Properties
+description: This article describes the common activity properties including the run behavior, published data behavior, event notifications and security credentials.
 ms.custom: na
 ms.prod: system-center
 ms.reviewer: na
