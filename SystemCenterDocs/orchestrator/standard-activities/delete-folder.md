@@ -1,5 +1,5 @@
 ---
-title: Delete Folder
+title: Delete Folder activity
 description: This article describes the Delete Folder activity.
 ms.custom: ""
 ms.date: "05/13/2016"
