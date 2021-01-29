@@ -1,5 +1,6 @@
 ---
-title: "Monitoring | Microsoft Docs"
+title: Monitoring 
+description: This article provides a brief description of tasks you can accomplish when using each Monitoring activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

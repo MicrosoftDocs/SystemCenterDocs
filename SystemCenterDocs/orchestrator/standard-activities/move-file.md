@@ -1,5 +1,6 @@
 ---
-title: "Move File | Microsoft Docs"
+title: Move File
+description: This article provides the details about Move File activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

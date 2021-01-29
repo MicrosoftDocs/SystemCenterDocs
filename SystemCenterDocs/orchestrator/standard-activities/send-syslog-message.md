@@ -1,5 +1,6 @@
 ---
-title: "Send Syslog Message | Microsoft Docs"
+title: Send Syslog Message 
+description: This article provides information about the Send Syslog Message activity
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
