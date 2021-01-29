@@ -1,5 +1,6 @@
 ---
-title: "Initialize Data | Microsoft Docs"
+title: Initialize Data
+description: This article describes the functionality of Initialize Data activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

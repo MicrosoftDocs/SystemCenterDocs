@@ -1,5 +1,6 @@
 ---
-title: "Monitor Process | Microsoft Docs"
+title: Monitor Process
+description: This article describes the functionality of Monitor Process activity. 
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
