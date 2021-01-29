@@ -1,5 +1,6 @@
 ---
-title: "System | Microsoft Docs"
+title: System
+description: This article describes the functionality of System activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
