@@ -1,5 +1,6 @@
 ---
-title: "Monitor SNMP Trap | Microsoft Docs"
+title: Monitor SNMP Trap
+description: This article describes the Monitor SNMP Trap activity that waits for an event to occur.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
