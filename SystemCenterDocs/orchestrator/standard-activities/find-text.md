@@ -1,5 +1,6 @@
 ---
-title: "Find Text | Microsoft Docs"
+title: Find Text 
+description: This article  provides information about the Find Text activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
