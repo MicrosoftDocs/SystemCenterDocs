@@ -1,5 +1,5 @@
 ---
-title: Create Folder
+title: Create Folder activity
 description: This article describes the Create Folder activity that creates a new folder on the local file system
 ms.custom: ""
 ms.date: "05/13/2016"
