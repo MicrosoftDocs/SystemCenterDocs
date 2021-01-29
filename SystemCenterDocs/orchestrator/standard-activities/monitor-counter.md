@@ -1,5 +1,6 @@
 ---
-title: "Monitor Counter | Microsoft Docs"
+title: Monitor Counter
+description: This article describes the Monitor Counter activity that invokes a runbook when a counter has reached a value that you specify.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

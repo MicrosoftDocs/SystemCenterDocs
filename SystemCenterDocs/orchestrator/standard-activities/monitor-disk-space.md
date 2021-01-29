@@ -1,5 +1,6 @@
 ---
-title: "Monitor Disk Space | Microsoft Docs"
+title: Monitor Disk Space
+description: This article describes the Monitor Disk Space activity that will invoke a runbook when the disk space on a computer passes a critical threshold.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

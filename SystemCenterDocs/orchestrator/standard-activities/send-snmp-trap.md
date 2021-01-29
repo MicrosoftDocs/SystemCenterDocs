@@ -1,5 +1,6 @@
 ---
-title: "Send SNMP Trap | Microsoft Docs"
+title: Send SNMP Trap activity
+description: This article describes about how to configure the Send SNMP Trap activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

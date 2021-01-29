@@ -1,5 +1,6 @@
 ---
-title: "End Process | Microsoft Docs"
+title: End Process
+description: This article describes the End Process activity that ends processes that are running on the runbook server or on a remote computer.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

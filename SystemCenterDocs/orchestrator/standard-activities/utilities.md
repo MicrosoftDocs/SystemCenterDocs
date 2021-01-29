@@ -1,5 +1,6 @@
 ---
-title: "Utilities | Microsoft Docs"
+title: Utilities
+description: This articles describes the tasks that can be accomplished  using the Utilities Activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

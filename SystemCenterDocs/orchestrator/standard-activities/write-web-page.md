@@ -1,5 +1,6 @@
 ---
-title: "Write Web Page | Microsoft Docs"
+title: Write Web Page 
+description: This article describes the Write Web Page activity that will create or add information to an HTML file.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

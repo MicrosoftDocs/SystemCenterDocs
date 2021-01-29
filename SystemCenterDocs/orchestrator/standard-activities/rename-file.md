@@ -1,5 +1,6 @@
 ---
-title: "Rename File | Microsoft Docs"
+title: Rename File
+description: This articles describes the functionality of Rename File activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

@@ -1,5 +1,6 @@
 ---
-title: "Get Disk Space Status | Microsoft Docs"
+title: Get Disk Space Status
+description: This article describes the Get Disk Space Status activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

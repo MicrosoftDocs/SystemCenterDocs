@@ -1,5 +1,6 @@
 ---
-title: "Query WMI | Microsoft Docs"
+title: Query WMI
+description: This article describes the Query WMI activity that will send a WMI query to a system that you specify and return the results.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

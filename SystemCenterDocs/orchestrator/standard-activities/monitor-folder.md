@@ -1,5 +1,6 @@
 ---
-title: "Monitor Folder | Microsoft Docs"
+title: Monitor Folder
+description: This article describes how to configure the Monitor Folder Activity
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

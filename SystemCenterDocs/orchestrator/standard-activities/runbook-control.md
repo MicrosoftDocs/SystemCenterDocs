@@ -1,5 +1,6 @@
 ---
-title: "Runbook Control | Microsoft Docs"
+title: Runbook Control
+description: This article describes the tasks that can be accomplished using the initialize data, return data, junction and invoke runbook activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
