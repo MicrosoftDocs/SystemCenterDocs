@@ -1,5 +1,6 @@
 ---
-title: "Monitor Service | Microsoft Docs"
+title: Monitor Service
+description: This article describes the Monitor Service activity invokes runbooks when a service has been started or stopped.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
