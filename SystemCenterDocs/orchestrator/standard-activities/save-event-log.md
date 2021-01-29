@@ -1,5 +1,6 @@
 ---
-title: "Save Event Log | Microsoft Docs"
+title: Save Event Log
+description: This article describes the Save Event Log activity that is used to save entries from an event log.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
