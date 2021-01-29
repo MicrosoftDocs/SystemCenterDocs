@@ -1,5 +1,6 @@
 ---
 title: "Send Email | Microsoft Docs"
+description: This article describes about Send Email activity that sends an email message using the standard SMTP protocol or an Exchange server.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
