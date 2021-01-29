@@ -1,5 +1,6 @@
 ---
 title: "Read Text Log | Microsoft Docs"
+description: This article describes the Read Text Log activity that will read lines in a structured text log file.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
