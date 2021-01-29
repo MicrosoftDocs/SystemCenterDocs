@@ -1,5 +1,6 @@
 ---
-title: "Monitor WMI | Microsoft Docs"
+title: Monitor WMI
+description: This article describes the functionality of Monitor WMI activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

@@ -1,5 +1,6 @@
 ---
-title: "Generate Random Text | Microsoft Docs"
+title: Generate Random Text
+description: This article describes the functionality of Generate Random Text activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
