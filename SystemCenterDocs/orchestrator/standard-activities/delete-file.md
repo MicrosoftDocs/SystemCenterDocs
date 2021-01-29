@@ -1,5 +1,6 @@
 ---
-title: "Delete File | Microsoft Docs"
+title: Delete File
+description: This article describes the delete file activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

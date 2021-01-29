@@ -1,5 +1,6 @@
 ---
-title: "Read Line | Microsoft Docs"
+title: Read Line 
+description: This article describes the Read Line activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
