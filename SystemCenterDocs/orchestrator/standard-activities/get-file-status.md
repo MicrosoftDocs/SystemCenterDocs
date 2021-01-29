@@ -1,5 +1,6 @@
 ---
-title: "Get File Status | Microsoft Docs"
+title: Get File Status
+description: This article describes the functionality of Get File Status activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
