@@ -5,7 +5,7 @@ description: This article provides design guidance for agent deployment on Windo
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/25/2018
+ms.date: 01/29/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -98,6 +98,11 @@ This requires you to request certificates for each agent that will report to a g
 ## Agent deployment
 
 System Center Operations Manager Agents may be installed by using one of the following three methods.  Most installations use a combination of these methods to install different sets of computers, as appropriate.
+
+>[!NOTE]
+> - You cannot install MMA on a computer, where Operations Manager management server, gateway server, operations console, operational database, web console, System Center Essentials or System Center Service Manager is installed - as they have their built-in version of MMA already installed.
+> -	You can only use either MMA or log analytics agent (VM Extension version).
+
 
 - The discovery and installation of one or more agents from the Operations console. This is the most common form of installation.  A management server must be able to connect the computer with RPC, and either the management server Action Account or other provided credentials must have administrative access to the target computer.
 - Inclusion in the installation image. This is a manual installation to a base image that is used for the preparation of other computers.  In this case, Active Directory integration may be used to automatically assign the computer to a management server upon the initial startup.
