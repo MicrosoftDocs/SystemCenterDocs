@@ -1,5 +1,6 @@
 ---
-title: "Map Published Data | Microsoft Docs"
+title: Map Published Data
+description: This article describes the functionality of Map Published Data activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

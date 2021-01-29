@@ -1,5 +1,6 @@
 ---
-title: "Check Schedule | Microsoft Docs"
+title: Check Schedule
+description: This article describes the check schedule activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

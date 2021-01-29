@@ -1,5 +1,6 @@
 ---
-title: "Restart System | Microsoft Docs"
+title: Restart System
+description: This article describes the functionality of Restart System activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

@@ -1,5 +1,6 @@
 ---
-title: "Append Line | Microsoft Docs"
+title: Append Line
+description: This articles describes the functionality of Append Line Activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

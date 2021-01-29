@@ -1,5 +1,6 @@
 ---
-title: "Monitor Internet Application | Microsoft Docs"
+title: Monitor Internet Application
+description: This article provides the details about Monitor Internet Application activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

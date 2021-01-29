@@ -1,5 +1,6 @@
 ---
-title: "Get Dial-up Status | Microsoft Docs"
+title: Get Dial-up Status
+description: This article describes the functionality of Get Dial-up Status activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

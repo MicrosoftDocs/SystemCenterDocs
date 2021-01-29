@@ -1,5 +1,6 @@
 ---
-title: "Monitor File | Microsoft Docs"
+title: Monitor File
+description: This articles describes the functionality of Monitor File activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

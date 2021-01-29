@@ -1,5 +1,6 @@
 ---
-title: "Run SSH Command | Microsoft Docs"
+title: Run SSH Command
+description: This articles describes the functionality of Run SSH Command activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

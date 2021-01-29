@@ -1,5 +1,6 @@
 ---
-title: "Compare Values | Microsoft Docs"
+title: Compare Values
+description: This article compares two text values or two numerical values and then determines whether or not they are equal.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

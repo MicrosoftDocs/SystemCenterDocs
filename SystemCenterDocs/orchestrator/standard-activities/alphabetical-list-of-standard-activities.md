@@ -1,5 +1,6 @@
 ---
-title: "Alphabetical List of Standard Activities | Microsoft Docs"
+title: Alphabetical List of Standard Activities
+description: This article lists Standard Activities
 ms.custom: ""
 ms.date: 2/1/2018
 ms.prod: system-center

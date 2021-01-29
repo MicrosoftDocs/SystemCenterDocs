@@ -1,5 +1,6 @@
 ---
-title: "Get Lines | Microsoft Docs"
+title: Get Lines
+description: This article describes the Get Lines activity that gets multiple lines from a text file according to criteria that you specify.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

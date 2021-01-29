@@ -1,5 +1,6 @@
 ---
-title: "Send Platform Event | Microsoft Docs"
+title: Send Platform Event
+description: This article describes the Send Platform Event activity that creates an activity event with text that you specify.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

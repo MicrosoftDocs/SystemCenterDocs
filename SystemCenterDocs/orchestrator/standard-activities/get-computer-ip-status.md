@@ -1,5 +1,6 @@
 ---
-title: "Get Computer-IP Status | Microsoft Docs"
+title: Get Computer-IP Status
+description: This article describes the Get Computer/IP Status activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
