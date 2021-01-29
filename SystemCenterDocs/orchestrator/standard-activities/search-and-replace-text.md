@@ -1,5 +1,6 @@
 ---
-title: "Search and Replace Text | Microsoft Docs"
+title: Search and Replace Text
+description: This article describes the functionality of Search and Replace Text Activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

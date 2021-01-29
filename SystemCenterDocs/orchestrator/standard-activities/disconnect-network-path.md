@@ -1,5 +1,6 @@
 ---
-title: "Disconnect Network Path | Microsoft Docs"
+title: Disconnect Network Path
+description: This article describes the Disconnect Network Path activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

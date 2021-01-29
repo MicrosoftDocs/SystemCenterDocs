@@ -1,5 +1,6 @@
 ---
-title: "Format Date-Time | Microsoft Docs"
+title: Format Date-Time
+description: This article describes the functionality of Format Date/Time activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

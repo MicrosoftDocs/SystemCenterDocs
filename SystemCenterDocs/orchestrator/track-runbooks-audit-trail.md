@@ -1,5 +1,6 @@
 ---
 title: Audit Trail
+
 description: This article provides information about how to activate and deactivate audit trails. 
 ms.custom: na
 ms.prod: system-center
@@ -33,7 +34,7 @@ By default, the Audit Trail is not activated when you install Orchestrator. You 
 
 1.  Open a command prompt with administrative credentials.  
 
-2.  Navigate to *System Drive*:\\Program Files \(x86\)\\Microsoft System Center \<version\>\\Orchestrator\\Management Server.  
+2.  Navigate to *System Drive*: \\Program Files \(x86\)\\Microsoft System Center \<version\>\\Orchestrator\\Management Server.  
 
 3.  To activate the Audit Trail, type **atlc \/enable**, and to deactivate the Audit Trail, type **atlc \/disable**.  
 
@@ -54,8 +55,8 @@ Audit Trail files are stored in comma\-separated value file \(.csv\) format. The
 
 |Computer|Location|  
 |------------|------------|  
-|Management Server|*System Drive*:\\ProgramData\\Microsoft System Center 2012\\Orchestrator\\Audit\\ManagementService|  
-|Runbook Server|*System Drive*:\\ProgramData\\Microsoft System Center 2012 \\Orchestrator\\Audit\\RunbookService|  
+|Management Server|*System Drive*: \\ProgramData\\Microsoft System Center 2012\\Orchestrator\\Audit\\ManagementService|  
+|Runbook Server|*System Drive*: \\ProgramData\\Microsoft System Center 2012 \\Orchestrator\\Audit\\RunbookService|  
 
 **Log Type:**  Activity Runtime Information  
 
@@ -73,7 +74,7 @@ Audit Trail files are stored in comma\-separated value file \(.csv\) format. The
 
 |Computer|Location|  
 |------------|------------|  
-|Runbook Server|*System Drive*:\\ProgramData\\Microsoft System Center 2012 \\Orchestrator\\Audit\\PolicyModule|  
+|Runbook Server|*System Drive*: \\ProgramData\\Microsoft System Center 2012 \\Orchestrator\\Audit\\PolicyModule|  
 
 When a file reaches 200 megabytes \(MB\) in size, a new file is created. The time stamp is included in the file name to ensure that each file name is unique. Passwords and other encrypted text fields are represented by five asterisks \(\*\*\*\*\*\) in the Audit Trail files.  
 
