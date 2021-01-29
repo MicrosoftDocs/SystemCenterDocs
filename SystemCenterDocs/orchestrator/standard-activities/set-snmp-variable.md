@@ -1,6 +1,5 @@
 ---
-title: Set SNMP Variable
-description: This article describes the Set SNMP Variable activity that will modify a variable, specified by its MIB, on a network device.
+title: "Set SNMP Variable | Microsoft Docs"
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
