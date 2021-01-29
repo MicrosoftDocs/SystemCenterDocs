@@ -1,5 +1,6 @@
 ---
-title: "Print File | Microsoft Docs"
+title: Print File
+description: This article describes the functionality of Print File Activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
