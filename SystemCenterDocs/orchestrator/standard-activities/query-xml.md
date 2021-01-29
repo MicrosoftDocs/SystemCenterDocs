@@ -1,5 +1,6 @@
 ---
-title: "Query XML | Microsoft Docs"
+title: "Query XML - Microsoft Docs"
+description: This article describes the Query XML activity that is used to perform an XPath query on an XML file.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
