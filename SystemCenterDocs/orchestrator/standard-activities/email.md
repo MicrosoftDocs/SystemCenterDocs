@@ -1,5 +1,5 @@
 ---
-title: "Email - Microsoft Docs"
+title: Email 
 description: This article provides a brief description of tasks you can accomplish when using an Email activity.  
 ms.custom: ""
 ms.date: "05/13/2016"
