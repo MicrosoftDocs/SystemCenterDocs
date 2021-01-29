@@ -1,5 +1,6 @@
 ---
 title: Audit Trail
+description: This article describes the collection of text log files.
 ms.custom: na
 ms.prod: system-center
 ms.reviewer: na

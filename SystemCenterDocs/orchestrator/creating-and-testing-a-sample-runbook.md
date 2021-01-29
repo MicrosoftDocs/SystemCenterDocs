@@ -1,5 +1,6 @@
 ---
 title: Creating and Testing a Sample Runbook
+description: This article describes how to create and test a simple runbook. 
 ms.custom: na
 ms.prod: system-center
 ms.reviewer: na

@@ -1,5 +1,6 @@
 ---
-title: "Get SNMP Variable | Microsoft Docs"
+title: Get SNMP Variable
+description: This article describes the Get SNMP Variable activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
