@@ -1,5 +1,6 @@
 ---
-title: "List of Orchestrator Integration Packs | Microsoft Docs"
+title: Orchestrator Integration Packs
+description: This article provides the list of integration packs for Orchestrator.
 ms.custom: ""
 ms.date: 2/1/2018
 ms.prod: system-center
@@ -35,7 +36,7 @@ The following is a list of the available integration packs and the information f
 
  [FTP](ftp-integration-pack.md)  
 
- [Hewlett Packard Integrated Lights-Out activites](hp-ilo-and-oa-integration-pack.md)  
+ [Hewlett Packard Integrated Lights-Out activities](hp-ilo-and-oa-integration-pack.md)  
 
  [Hewlett Packard Operations Manager](hp-operations-manager-integration-pack.md)  
 
