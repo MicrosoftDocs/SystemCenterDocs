@@ -1,6 +1,5 @@
 ---
 title: Decompress File
-description: This article describes the decompress File activity that decompresses the files contained in a zip archive file.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center

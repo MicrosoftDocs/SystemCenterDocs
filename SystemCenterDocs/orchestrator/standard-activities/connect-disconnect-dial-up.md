@@ -1,6 +1,5 @@
 ---
 title: Connect-Disconnect Dial-up
-description: This article describes the Connect/Disconnect Dial-up activity 
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
