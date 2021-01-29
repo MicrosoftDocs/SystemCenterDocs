@@ -1,5 +1,5 @@
 ---
-title: "Monitor Event Log - Microsoft Docs"
+title: "Monitor Event Log "
 description: This article describes the Monitor Event Log activity that invokes runbooks when new events that match a filter that you specify appear in the Windows Event Log.
 ms.custom: ""
 ms.date: "05/13/2016"
