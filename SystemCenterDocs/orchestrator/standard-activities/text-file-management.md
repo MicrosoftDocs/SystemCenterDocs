@@ -1,5 +1,6 @@
 ---
-title: "Text File Management | Microsoft Docs"
+title: Text File Management
+description: This article describes the functionality of Text File Management activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
