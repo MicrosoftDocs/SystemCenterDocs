@@ -1,5 +1,6 @@
 ---
-title: "Query Database | Microsoft Docs"
+title: Query Database 
+description: This article describes the Query Database activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
