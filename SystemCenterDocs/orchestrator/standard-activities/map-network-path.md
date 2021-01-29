@@ -1,5 +1,6 @@
 ---
-title: "Map Network Path | Microsoft Docs"
+title: Map Network Path
+description: This articles describes the functionality of Map Network Path activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
