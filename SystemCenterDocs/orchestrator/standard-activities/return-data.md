@@ -1,5 +1,5 @@
 ---
-title: "Return Data | Microsoft Docs"
+title: "Return Data - Microsoft Docs"
 description: This article describes the Return Data activity that allows you to return data from the current runbook to a runbook that invoked the runbook.
 ms.custom: ""
 ms.date: "05/13/2016"
