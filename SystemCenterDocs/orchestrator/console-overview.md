@@ -1,6 +1,6 @@
 ---
 title: Overview of Orchestration Console
-desc: Provides a summary of the administrative console for Orchestrator and basic functionality procedures.
+description: This article provides a summary of the administrative console for Orchestrator and basic functionality procedures.
 ms.custom: na
 ms.prod: system-center
 ms.reviewer: na
