@@ -67,4 +67,4 @@ For additional information on System Center support or system requirements, see 
 - System Center [support lifecycle](https://support.microsoft.com/lifecycle/search?alpha=System%20Center%202016) and overview of [Microsoft support lifecycle policy](https://support.microsoft.com/help/14085/microsoft-business-developer-and-desktop-operating-systems-policy)
 - Support for System Center [Semi-Annual Channel releases](sac-support-lifecycle.md)
 - System Center [system requirements](https://www.microsoft.com/cloud-platform/system-center-resources)
-- Provide suggestions and vote on options at [System Center UserVoice channels](./index.yml?panel=more-all#pivot=more)
+- Provide suggestions and vote on options at [System Center UserVoice channels](./index.yml)
