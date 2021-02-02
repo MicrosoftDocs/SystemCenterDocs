@@ -173,7 +173,7 @@ The following are the default limits for NC managed gateway:
 >[!NOTE]
 > For an SDNv2 virtualized network, an internal routing subnet is created for every VM network. The **MaxVMSubnetsSupported** limit includes the internal subnets created for VM networks.
 >
->You can [override the default limits](#Override-the-gateway-limits) set for the network controller managed gateway. However, overriding the limit to a higher number could impact the performance of the network controller. 
+>You can [override the default limits](#override-the-gateway-limits) set for the network controller managed gateway. However, overriding the limit to a higher number could impact the performance of the network controller.
 
 ### Override the gateway limits
 To override the default limits, append the override string to the network controller service connection string and update in VMM.
