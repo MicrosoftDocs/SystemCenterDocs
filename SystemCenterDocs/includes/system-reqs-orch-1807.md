@@ -71,9 +71,9 @@ We recommend the following software for a full installation of Orchestrator on a
 |                                                                 **SQL version**                                                                 | **Supported** |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 |                                                               **SQL Server 2008**                                                               |       N       |
-| **SQL Server 2012 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202012)** |       Y       |
-| **SQL Server 2014 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202014)** |       Y       |
-| **SQL Server 2016 and SPs as detailed [here](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)** |       Y       |
+| **SQL Server 2012 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2012)** |       Y       |
+| **SQL Server 2014 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2014)** |       Y       |
+| **SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)** |       Y       |
 
 ## .Net requirements
 
@@ -90,7 +90,7 @@ You can download .Net 3.5 SP1 at:
 5.	Select **.NET Framework 4.5** if it isn’t already selected.
 6.	Expand **WCF Services**.
 7.	Select **HTTP Activation** if it isn’t already selected.
-8.	Click **Next** and follow the prompts to finish the installation. If you have problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](https://technet.microsoft.com/library/hh546549.aspx).
+8.	Click **Next** and follow the prompts to finish the installation. If you have problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](/previous-versions/system-center/system-center-2012-R2/hh546549(v=sc.12)).
 
 
 ## Virtualization
