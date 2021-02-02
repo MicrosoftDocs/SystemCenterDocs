@@ -155,6 +155,9 @@ You can view health reset actions on the monitors as a consolidated view under *
 
 ## Synchronization of change tracking data in Data Warehouse
 
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
+
 The rule, responsible for the synchronization of the change tracking data from Operations Manager DB to DW is called **Data Warehouse Job Status Information synchronization** rule.
 
 You can override the default values of the parameters including the following:
@@ -165,6 +168,9 @@ You can override the default values of the parameters including the following:
    ![Synchronization](./media/change-tracking/synchronization-change-tracking.png)
 
 ## Groom change tracking data in Data Warehouse
+
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
 
 The parameters of the workflow can be customized through **Data Warehouse Job Status Information Grooming** rule.
 
@@ -177,6 +183,9 @@ You can override the default values of the parameters including the following:
    ![Groom data warehouse ](./media/change-tracking/groom-change-tracking.png)
 
 ## View alerts in console
+
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
 
 If any of the grooming or the synchronization workflows fail to work, corresponding alerts are generated as shown in the following example.
 
