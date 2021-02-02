@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 08/04/2020
+ms.date: 02/02/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -169,6 +169,11 @@ The following are the default limits for NC managed gateway:
 - **MaxVPNConnectionsPerVMNetwork**= 10
 - **MaxVMSubnetsSupported**= 550
 - **MaxVPNConnectionsSupported**= 250
+
+>[!NOTE]
+> For an SDNv2 virtualized network, an internal routing subnet is created for every VM network. The **MaxVMSubnetsSupported** limit includes the internal subnets created for VM networks.
+>
+>You can [override the default limits](#Override-the-gateway-limits) set for the network controller managed gateway. However, overriding the limit to a higher number could impact the performance of the network controller. 
 
 ### Override the gateway limits
 To override the default limits, append the override string to the network controller service connection string and update in VMM.
