@@ -184,10 +184,7 @@ You can override the default values of the parameters including the following:
 
    ![Groom data warehouse ](./media/change-tracking/groom-change-tracking.png)
 
-## View alerts in console
-
-> [!NOTE]
-> This feature is applicable for 2019 UR3 and later.
+### View alerts in console
 
 If any of the grooming or the synchronization workflows fail to work, corresponding alerts are generated as shown in the following example.
 
