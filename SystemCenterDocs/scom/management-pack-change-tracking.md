@@ -153,7 +153,7 @@ You can view health reset actions on the monitors as a consolidated view under *
 ![Reset health](./media/change-tracking/reset-health.png)
 
 
-### Synchronization of change tracking data in Data Warehouse
+## Synchronization of change tracking data in Data Warehouse
 
 The rule, responsible for the synchronization of the change tracking data from Operations Manager DB to DW is called **Data Warehouse Job Status Information synchronization** rule.
 
@@ -161,8 +161,9 @@ You can override the default values of the parameters including the following:
 
 - **BatchGenerationFrequencySeconds** (Time after while the rule runs to sync data) – 30 seconds.
 - **BatchSize** (Size of batches in which data is synced) – 100.
+   ![Synchronization](./media/change-tracking/synchronization-change-tracking.png)
 
-### Groom change tracking data in Data Warehouse
+## Groom change tracking data in Data Warehouse
 
 The parameters of the workflow can be customized through **Data Warehouse Job Status Information Grooming** rule.
 
@@ -171,11 +172,13 @@ You can override the default values of the parameters including the following:
 - **ChangeTrackingGroomingFrequencyMinutes** (Time after which the grooming workflow runs for DW tables) - 480 minutes.
 - **ChangeTrackingAgentAgeDays** (Maximum instance age for agent data in DW) - 400 days.
 - **ChangeTrackingResetMonitorAgeDays** (Maximum instance age for reset monitor data in DW) - 400 days.
+   ![Groom data warehouse ](./media/change-tracking/groom-change-tracking.png)
 
-### View alerts in console
+## View alerts in console
 
 If any of the grooming or the synchronization workflows fail to work, corresponding alerts are generated as shown in the following example.
 
+![Alert details](./media/change-tracking/view-alerts-in-console.png)
 
 
 ## Known issues
