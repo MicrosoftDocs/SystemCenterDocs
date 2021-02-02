@@ -151,7 +151,7 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 1.  Run the Group Policy Object Editor (gpedit.msc) for the domain or local computer.
 
        > [!NOTE]
-       > For information about Group Policy, see [https://go.microsoft.com/fwlink/?LinkId=156845](https://go.microsoft.com/fwlink/?LinkId=156845).
+       > For information about Group Policy, see [https://go.microsoft.com/fwlink/?LinkId=156845](/windows/deployment/deploy-whats-new).
 
 2.  If needed, disable the **Turn off Windows Error Reporting** policy. This policy can be found in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings.
 
@@ -178,7 +178,7 @@ You can help decrease the time it takes to diagnose and resolve operating system
 7.  In the **Diagnostic Data Collection Configuration** dialog box, specify the **Files**, **WMI Queries**, and **Registry Keys** you want to collect from the computers experiencing the error, and then click **OK**. A computer will send the specified data in an error report to the management server on the next occurrence of an error in the error group.  
 
     > [!NOTE]  
-    > You can use variables, such as **%ProgramFiles%**, for file paths. For information about WMI, see [WMI Documentation](https://msdn.microsoft.com/library/aa394582%28v=vs.85%29.aspx).  
+    > You can use variables, such as **%ProgramFiles%**, for file paths. For information about WMI, see [WMI Documentation](/windows/win32/wmisdk/wmi-start-page).  
 
 8.  In the **Error Group Responses** dialog box, select **Custom error information**, type the URL for the custom error information, such as **http://server/errors/100.htm**, click **Test Link**, and then click **OK**.  
 
@@ -222,4 +222,4 @@ When you enable Client Monitoring for a management group, you can configure it t
 
       5.  Specify the **Default solution link when no Microsoft solution is available**. This could be an internal Web page for technical support, for example.  
 
-2.  Click **OK**.  
+2.  Click **OK**.

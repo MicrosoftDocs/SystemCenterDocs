@@ -25,7 +25,7 @@ In this procedure, the Reporting server is installed on a stand-alone server tha
 > [!WARNING]
 > Although SQL Server Reporting Services is installed on the stand-alone server, Operations Manager reports are not accessed on this server; instead, they are accessed in the **Reporting** workspace in the Operations console.
 
-You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md).
+You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](./system-requirements.md).
 
 ::: moniker range="sc-om-2019"
 
@@ -46,7 +46,7 @@ You must ensure that your server meets the minimum system requirement for Operat
 
 SQL Server Reporting Services installed on this instance of SQL Server can be used only by Operations Manager. If any reports exist on this SSRS instance, the System Center Operations Manager Reporting Services installer overrides all of the data/reports on it.
 
-Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation](https://go.microsoft.com/fwlink/p/?LinkId=146943).
+Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation](/sql/database-engine/install-windows/install-sql-server).
 
 > [!NOTE]
 > Before you continue with this procedure, ensure that the account you plan to use for the Data Warehouse Write account has SQL Server logon rights and is an Administrator on the computers hosting both the operational database and the Reporting data warehouse database. Otherwise, Setup fails, and all changes are rolled back, which might leave SQL Server Reporting Services in an inoperable state.
@@ -150,4 +150,4 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 ## Next steps
 
-- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.

@@ -22,7 +22,7 @@ ms.topic: article
 
 After you install System Center - Operations Manager, you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer.
 
-You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md)
+You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center - Operations Manager](./system-requirements.md)
 
 ## To install the Operations console
 
@@ -68,4 +68,4 @@ You must ensure that the computer that will host the Operations console meets th
 
 ## Next steps
 
-- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.

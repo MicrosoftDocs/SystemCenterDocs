@@ -22,7 +22,7 @@ ms.topic: article
 
 ## Configure SSL encryption
 
-The following steps are necessary to configure Secure Sockets Layer (SSL) encryption after the Operations Manager Web console server has been installed on an Internet Information Services (IIS) 7.0 and higher web server.  Before performing these steps, you should first review  [Configuring Secure Sockets Layer in IIS 7](https://technet.microsoft.com/library/cc771438%28v=ws.10%29.aspx) and configure IIS to enable SSL for the web server hosting the Web console.  
+The following steps are necessary to configure Secure Sockets Layer (SSL) encryption after the Operations Manager Web console server has been installed on an Internet Information Services (IIS) 7.0 and higher web server.  Before performing these steps, you should first review  [Configuring Secure Sockets Layer in IIS 7](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771438(v=ws.10)) and configure IIS to enable SSL for the web server hosting the Web console.  
 
 >[!NOTE]
 >When creating the certificate, you must provide the fully qualified domain name (FQDN) of the host and domain name in the **Common name** field to match the address users would enter in their web browser to access the Web console.  
@@ -38,7 +38,7 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 3. After completing the above steps, reset the Web site hosting the Operations Manager Web console.
 
 >[!NOTE]
-> Enable SSL check box in the installer only works if you are using a https binding for the web console. For more information, see [How to set up SSL on IIS 7](https://docs.microsoft.com/iis/manage/configuring-security/how-to-set-up-ssl-on-iis).
+> Enable SSL check box in the installer only works if you are using a https binding for the web console. For more information, see [How to set up SSL on IIS 7](/iis/manage/configuring-security/how-to-set-up-ssl-on-iis).
 
 
 ::: moniker-end

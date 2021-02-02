@@ -15,7 +15,7 @@ ms.topic: article
 
 # How to upgrade a Web console
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations for System Center Operations Manager.  This process is not applicable for version 1801. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations for System Center Operations Manager.  This process is not applicable for version 1801. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 > [!NOTE]
 > When you upgrade the web console, any customizations that were made to the web.config file after the web console was installed will be reset.  Make a backup copy before proceeding.  
@@ -89,4 +89,4 @@ If you made changes after you set up your web console to either enable or disabl
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
 
-- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.

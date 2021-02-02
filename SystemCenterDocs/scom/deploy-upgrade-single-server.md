@@ -20,7 +20,7 @@ ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 
 ::: moniker-end
 
-When you upgrade a single-server management group, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+When you upgrade a single-server management group, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 ### To upgrade a single-server management group
 

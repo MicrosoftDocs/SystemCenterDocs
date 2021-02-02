@@ -125,7 +125,7 @@ The following image is a simplified illustration of how objects are discovered a
 8.  As changes occur to discovered objects, such as applications being added or uninstalled, the agent sends the updated information to the management server, which then sends updated monitoring logic.
 
 > [!NOTE]
-> Operations Manager can also discover and monitor network devices, computers running UNIX and Linux operating systems, and provide agentless monitoring. For more information, see [Operations Manager Monitoring Scenarios](https://go.microsoft.com/fwlink/p/?LinkID=218372) in the Operations Guide.
+> Operations Manager can also discover and monitor network devices, computers running UNIX and Linux operating systems, and provide agentless monitoring. For more information, see [Operations Manager Monitoring Scenarios](/previous-versions/system-center/system-center-2012-R2/hh212763(v=sc.12)) in the Operations Guide.
 
 ### Communication between agents and management servers
 
