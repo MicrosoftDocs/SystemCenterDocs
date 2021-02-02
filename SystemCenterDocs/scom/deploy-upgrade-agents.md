@@ -23,7 +23,7 @@ ms.topic: article
 
 ::: moniker range="sc-om-2019"
 
-Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2019. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2019. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 > [!NOTE]
 > If before the upgrade an agent was installed using the push install method, after upgrade the agent-managed computer is put into a pending update state and can be upgraded through the Operations console. Otherwise the agent needs to be upgraded manually.
@@ -116,7 +116,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 -   In the Operations console, in the **Administration** pane, run the **UNIX/Linux Upgrade Wizard**.
 
-    Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in Operations Manager, see [Accessing UNIX and Linux Computers in Operations Manager](https://go.microsoft.com/fwlink/p/?LinkID=223881).
+    Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in Operations Manager, see [Accessing UNIX and Linux Computers in Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212886(v=sc.12)).
 
 #### To manually upgrade UNIX and Linux agents
 
@@ -149,7 +149,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 ::: moniker range="sc-om-1801"
 
-Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 1801. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 1801. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 > [!NOTE]
 > If before the upgrade an agent was installed using the push install method, after upgrade the agent-managed computer is put into a pending update state and can be upgraded through the Operations console. Otherwise the agent needs to be upgraded manually.
@@ -242,7 +242,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 -   In the Operations console, in the **Administration** pane, run the **UNIX/Linux Upgrade Wizard**.
 
-    Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in Operations Manager, see [Accessing UNIX and Linux Computers in Operations Manager](https://go.microsoft.com/fwlink/p/?LinkID=223881).
+    Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in Operations Manager, see [Accessing UNIX and Linux Computers in Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212886(v=sc.12)).
 
 #### To manually upgrade UNIX and Linux agents
 
