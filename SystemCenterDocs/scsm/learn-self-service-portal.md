@@ -98,7 +98,7 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  Using SSL with network delays between the Portal and the SDK Service, makes this topology slower compared to a single\-server deployment. However, this configuration can help deployment scenarios where a double\-hop can't be avoided.  
 
 ###  Deploying a web farm
- One of the key benefits of the new Self-Service Portal is that the Web app does not have any local data storage, apart from the it's caching. It reads and writes directly to the Service Manager database. This makes it easier to deploy multiple instances of the Web server, in parallel.  For large deployments, greater than 1,000 users accessing portal in parallel, you can deploy the new Self-Service Portal as a [Web Farm](https://technet.microsoft.com/library/jj129543.aspx) similar to the following configuration.  
+ One of the key benefits of the new Self-Service Portal is that the Web app does not have any local data storage, apart from the it's caching. It reads and writes directly to the Service Manager database. This makes it easier to deploy multiple instances of the Web server, in parallel.  For large deployments, greater than 1,000 users accessing portal in parallel, you can deploy the new Self-Service Portal as a [Web Farm](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj129543(v=ws.11)) similar to the following configuration.  
 
  ![sm&#45;ssp&#45;scenario&#45;04](./media/learn-self-service-portal/deploy-sm-ssp-scenario-04.png)  
 

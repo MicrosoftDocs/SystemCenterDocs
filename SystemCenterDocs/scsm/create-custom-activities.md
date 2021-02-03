@@ -33,7 +33,7 @@ Understanding what is going on behind the scenes of the Authoring Tool can benef
 
 ## Workflow activities and the WorkflowActivityBase class
 
-Service Manager workflows use WF activities. To work smoothly with the Authoring Tool, these activities derive from the base class **WorkflowActivityBase**, which belongs to the **Microsoft.EnterpriseManagement.Workflow.Common** namespace. The **WorkflowActivityBase** base class introduces properties and methods that are not available in the generic **Activity** base class for WF activities. For more information about how to define WF activities by using the generic **Activity** base class, see [Activity Class](https://go.microsoft.com/fwlink/p/?LinkID=193539).
+Service Manager workflows use WF activities. To work smoothly with the Authoring Tool, these activities derive from the base class **WorkflowActivityBase**, which belongs to the **Microsoft.EnterpriseManagement.Workflow.Common** namespace. The **WorkflowActivityBase** base class introduces properties and methods that are not available in the generic **Activity** base class for WF activities. For more information about how to define WF activities by using the generic **Activity** base class, see [Activity Class](/dotnet/api/system.activities.activity).
 
 ### Benefits of using the WorkflowActivityBase class
 

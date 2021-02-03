@@ -136,7 +136,7 @@ There are two workaround procedures that you can use to try to resolve the issue
     >  Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
 
     > [!NOTE]  
-    >  You may have to increase this value further if the service still fails to start. The value in this example is in milliseconds. For additional details about the registry key, see [article 922918](https://go.microsoft.com/fwlink/p/?LinkId=207191) in the Microsoft Knowledge Base.  
+    >  You may have to increase this value further if the service still fails to start. The value in this example is in milliseconds. For additional details about the registry key, see [article 922918](/troubleshoot/windows-server/system-management-components/service-not-start-events-7000-7011-time-out-error) in the Microsoft Knowledge Base.  
 
 2.  Start the computer again.  
 
