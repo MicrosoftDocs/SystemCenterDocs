@@ -21,7 +21,7 @@ SM 2019 supports new installation of SQL Server 2017.
 
 ### Support for SQL Server 2019 CU8 and later
 
-Service Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+Service Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server).
 
 >[!NOTE]
 > - Service Manager 2019 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
@@ -65,7 +65,7 @@ The following new feature is supported with Service Manager Update Rollup 2.
 
 ### Support for SQL 2019 CU8 or later
 
-Service  Manager UR2 supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+Service  Manager UR2 supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server).
 
 This support is applicable for Service Manager 2019.
 

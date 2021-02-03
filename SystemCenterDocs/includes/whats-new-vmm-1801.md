@@ -91,7 +91,7 @@ The control of encryption is at the subnet level and encryption can be enabled/d
 ### Support to Linux shielded VM
 Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based VMs. Shielded VMs provide protection against malicious administrator actions both when VM’s data is at rest or an untrusted software is running on Hyper-V hosts.
 
-With Windows Server 1709, Hyper-V introduces support for provisioning Linux shielded VMs and the same has been extended to VMM 1801. [Learn more](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-create-a-linux-shielded-vm-template).
+With Windows Server 1709, Hyper-V introduces support for provisioning Linux shielded VMs and the same has been extended to VMM 1801. [Learn more](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-create-a-linux-shielded-vm-template).
 
 ### Configuration of fallback HGS
 Being at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, the host guardian service (HGS) should operate even in situations of disaster. Windows Server 1709 added support for fallback HGS.

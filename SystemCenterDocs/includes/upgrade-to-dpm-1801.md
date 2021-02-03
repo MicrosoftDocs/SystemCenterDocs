@@ -228,7 +228,7 @@ If you want to use legacy storage with DPM 2016, it may become necessary to add 
 
 ## New PowerShell cmdlets
 
-For DPM 2016, two new cmdlets: [Mount-DPMRecoveryPoint](https://technet.microsoft.com/library/mt787159.aspx) and [Dismount-DPMRecoveryPoint](https://technet.microsoft.com/library/mt787158.aspx) are available. Click the cmdlet name to see its reference documentation.
+For DPM 2016, two new cmdlets: [Mount-DPMRecoveryPoint](/powershell/module/dataprotectionmanager/mount-dpmrecoverypoint) and [Dismount-DPMRecoveryPoint](/powershell/module/dataprotectionmanager/dismount-dpmrecoverypoint) are available. Click the cmdlet name to see its reference documentation.
 
 
 ## Enable Cloud Protection
@@ -239,4 +239,4 @@ You can back up a DPM server to Azure. The high level steps are:
 - download vault credentials and the Azure Backup Agent,
 - configure the server's vault credentials and backup policy,
 
-For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM](https://azure.microsoft.com/documentation/articles/backup-azure-dpm-introduction).
+For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM](/azure/backup/backup-azure-dpm-introduction).
