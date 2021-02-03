@@ -26,11 +26,11 @@ Read the [planning information](plan-ha-install.md) for a highly available VMM d
 
 ## Set up availability groups
 
-[SQL Server Always On availability groups](https://msdn.microsoft.com/library/ff877884.aspx) support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica. To set up an availability group you must deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the VMM SQL Server database as an availability database.
+[SQL Server Always On availability groups](/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server) support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica. To set up an availability group you must deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the VMM SQL Server database as an availability database.
 
-- [Learn more](https://msdn.microsoft.com/library/ff878487.aspx) about Always On prerequisites
-- [Learn more](https://msdn.microsoft.com/library/ff929171.aspx) about setting up a WSFC for Always On availability groups
-- [Learn more](https://msdn.microsoft.com/library/ff878265.aspx) about setting up an availability group
+- [Learn more](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability) about Always On prerequisites
+- [Learn more](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server) about setting up a WSFC for Always On availability groups
+- [Learn more](/sql/database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server) about setting up an availability group
 
 ## Configure the VMM database with Always On Availability Groups
 

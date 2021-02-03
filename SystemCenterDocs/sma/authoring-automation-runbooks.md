@@ -61,7 +61,7 @@ You can add a runbook to Service Management Automation by either creating it in 
 5.  Your new runbook will appear on the **Runbooks** tab for the Automation Account.
 
 ## Import a runbook from a script file with Windows PowerShell
-You can use the [Import-SmaRunbook](https://aka.ms/runbookauthor/cmdlet/importsmarunbook) cmdlet to create a new runbook from a script file containing a workflow.
+You can use the [Import-SmaRunbook](/previous-versions/system-center/powershell/system-center-2012-r2/dn502574(v=sc.20)) cmdlet to create a new runbook from a script file containing a workflow.
 
 The following sample commands show how to import a script file into an existing runbook and then publish it.
 
@@ -151,7 +151,7 @@ The Management Portal includes an editor that you can use to view and edit runbo
 ### Edit an Automation runbook with
 PowerShell
 
-To edit a runbook with Windows PowerShell, you edit the workflow using the editor of your choice and save it to a .ps1 file. You can use the [Get-SMARunbookDefinition](https://aka.ms/runbookauthor/cmdlet/getsmarunbookdefinition) cmdlet to retrieve the contents of the runbook and then [Edit-SMARunbook](https://aka.ms/runbookauthor/cmdlet/editsmarunbook) cmdlet to replace the existing draft workflow with the modified one.
+To edit a runbook with Windows PowerShell, you edit the workflow using the editor of your choice and save it to a .ps1 file. You can use the [Get-SMARunbookDefinition](/previous-versions/system-center/powershell/system-center-2012-r2/dn502588(v=sc.20)) cmdlet to retrieve the contents of the runbook and then [Edit-SMARunbook](/previous-versions/system-center/powershell/system-center-2012-r2/dn502565(v=sc.20)) cmdlet to replace the existing draft workflow with the modified one.
 
 ### <a name="RetrieveContentsPowerShell"></a>To retrieve the contents of a runbook using Windows PowerShell
 The following sample commands show how to retrieve the script for a runbook and save it to a script file. In this example, the Draft version is retrieved. It is also possible to retrieve the Published version of the runbook although this version cannot be changed.
@@ -301,5 +301,5 @@ The following runbooks ship with Service Management Automation as sample runbook
 
 ## Next steps
 
-- [Read about](service-management-automation.md) how to call one runbook from another runbook.
+- [Read about](./overview-of-service-management-automation.md) how to call one runbook from another runbook.
 - [Read about](manage-integration-modules.md)

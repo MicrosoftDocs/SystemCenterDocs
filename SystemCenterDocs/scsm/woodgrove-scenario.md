@@ -117,7 +117,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
 - **What does the workflow need to do?** The workflow needs to add a computer to a group in Active Directory Domain Services \(AD&nbsp;DS\), and then change the status of the automated activity to "Complete."  
 - **What information does the workflow need?** The change request provides information about the specific computer and group to use. Properties of the workflow activities can retrieve the change request information from the Service Manager activity that is associated with the change request.  
 
-  To create and implement his new workflow, Ken follows the steps in the rest of this section. He uses the **Woodgrove.AutomatedActivity.AddComputerToGroupMP** management pack, as described in [Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack](step1-open-mp.md). These procedures assume that this management pack is still open in the Service Manager Authoring Tool.  
+  To create and implement his new workflow, Ken follows the steps in the rest of this section. He uses the **Woodgrove.AutomatedActivity.AddComputerToGroupMP** management pack, as described in [Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack](). These procedures assume that this management pack is still open in the Service Manager Authoring Tool.  
 
 ### Create a New Workflow  
  Ken uses this procedure to create a workflow named **AddComputerToADGroupWF** in the **Woodgrove.AutomatedActivity.AddComputerToADGroupMP** management pack.  
@@ -185,7 +185,7 @@ In this of the Woodgrove Bank customization scenario, Ken needs to bundle the ma
 
 1.  Ensure that the Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml file and its associated resource files, such as the Woodgrovebank.jpg image file and the AddComputerToGroupFormAssembly.dll file, are in the same folder. For example, put all the files in the AuthoringSample folder.  
 2.  Copy the folder that contains the files to the Service Manager management server.  
-3.  Bundle the files using the Windows&nbsp;PowerShell cmdlet [New\-SCSMManagementPackBundle](https://go.microsoft.com/fwlink/p/?LinkID=225397). For example:  
+3.  Bundle the files using the Windows&nbsp;PowerShell cmdlet [New\-SCSMManagementPackBundle](/previous-versions/system-center/powershell/system-center-2012-r2/hh316263(v=sc.20)). For example:  
 
     ```  
     New-SCSMManagementPackBundle -Name AddComputerToGroup.mpb -ManagementPack Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml   
@@ -247,7 +247,7 @@ To continue with the customizations in the Woodgrove Bank scenario, in this step
 
 In this step of the Woodgrove Bank customization scenario, Ken creates a template for the new compliance change request type; the template is named **Apply AppLocker Software Policy to Computer**. The new template helps ensure consistency among all the change requests of this type, and it helps ensure the correct workflow behavior.  
 
- The following procedure provides only the high\-level steps for creating a new template in the Service Manager console. For the complete procedure for creating a new template, see [How to Create Change Request Templates](create-change-req-template.md).  
+ The following procedure provides only the high\-level steps for creating a new template in the Service Manager console. For the complete procedure for creating a new template, see [How to Create Change Request Templates](./change-activity-mgt.md).  
 
 ### To create a new template  
 
@@ -265,7 +265,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates a templat
 
 If System Center - Service Manager is configured with a Simple Mail Transfer Protocol \(SMTP\) server, as part of the Woodgrove Bank customization scenario, Ken can configure an email notification that will be sent to him when a new computer is added to the compliance group. This is an optional step.  
 
-The following procedure provides only the high\-level steps for creating the **Computer Added to AppLocker Policy Notification Template** email notification template and subscription in the Service Manager console. For the complete procedure for creating a notification template, see [How to Create Notification Templates](create-notification-templates.md).  
+The following procedure provides only the high\-level steps for creating the **Computer Added to AppLocker Policy Notification Template** email notification template and subscription in the Service Manager console. For the complete procedure for creating a notification template, see [How to Create Notification Templates](./notifications.md).  
 
 ### To create an email notification template and subscription  
 
