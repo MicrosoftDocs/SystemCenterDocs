@@ -50,7 +50,7 @@ You can install the web service on any machine that can communicate with Windows
     | **Authentication Credentials** |Select the type of authentication that you want to use. You can use Windows authentication or SQL Server authentication.<br /><br />If you choose SQL Server authentication, enter the user name and password for the computer running SQL Server.|
 
     > [!NOTE]
-    > If you are [upgrading from a previous installation](upgrade.md), please use the database details from the previous installation.
+    > If you are [upgrading from a previous installation](./upgrade-sma.md), please use the database details from the previous installation.
 
 8.  Provide the following information to configure the Internet Information Settings (IIS) for the web service, and then click **Next**.
 
@@ -206,4 +206,4 @@ Any of the SMA components can be removed in the **Control Panel** by selecting t
 
 ## Next steps
 
-- Learn more about Windows Azure Pack for Windows Server [Windows Azure Pack for Windows Server](https://technet.microsoft.com/library/dn296435.aspx).
+- Learn more about Windows Azure Pack for Windows Server [Windows Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).

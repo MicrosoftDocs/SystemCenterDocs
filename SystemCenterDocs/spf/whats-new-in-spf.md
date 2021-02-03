@@ -73,4 +73,4 @@ This build should be used for validating the SPF integration scenarios with othe
 ::: moniker-end
 
 ## Next steps
-- [Know the fixed issues](release-notes-1801.md)
+- [Know the fixed issues](./release-notes-spf.md)

@@ -19,7 +19,7 @@ As a System Center customer, stay on the Long-Term Servicing Channel (LTSC) or m
 
 > [!NOTE]
 > The Semi-Annual Channel (SAC) for System Center has been discontinued. System Center 2019 will support upgrades from two prior SAC releases so customers running System Center 1801 or System Center 1807 will be able to upgrade to System Center 2019.
-> Configuration Manager is not impacted by the 2019 release change and will continue current branch release cadence of three times per year as detailed in [Support for Configuration Manager current branch versions](https://docs.microsoft.com/configmgr/core/servers/manage/current-branch-versions-supported).
+> Configuration Manager is not impacted by the 2019 release change and will continue current branch release cadence of three times per year as detailed in [Support for Configuration Manager current branch versions](/configmgr/core/servers/manage/current-branch-versions-supported).
 
 ## Semi-Annual Channel
 
@@ -67,4 +67,4 @@ For additional information on System Center support or system requirements, see 
 - System Center [support lifecycle](https://support.microsoft.com/lifecycle/search?alpha=System%20Center%202016) and overview of [Microsoft support lifecycle policy](https://support.microsoft.com/help/14085/microsoft-business-developer-and-desktop-operating-systems-policy)
 - Support for System Center [Semi-Annual Channel releases](sac-support-lifecycle.md)
 - System Center [system requirements](https://www.microsoft.com/cloud-platform/system-center-resources)
-- Provide suggestions and vote on options at [System Center UserVoice channels](https://docs.microsoft.com/system-center/index#pivot=more&panel=more-all)
+- Provide suggestions and vote on options at [System Center UserVoice channels](./index.yml)

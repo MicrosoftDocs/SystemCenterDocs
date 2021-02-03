@@ -35,7 +35,7 @@ The Web console has been redesigned and is now a fully HTML-based console and no
 * Simplified widget and dashboard authoring
 * Accessible from multiple browsers
 * Enhanced troubleshooting experience with drill-down pages
-* Extensibility with a custom widget using a new [REST API](https://docs.microsoft.com/rest/operationsmanager)
+* Extensibility with a custom widget using a new [REST API](/rest/operationsmanager)
 * Export and share dashboards
 
 Network authentication is enabled with the new web console.  
@@ -54,4 +54,4 @@ In System Center 2016, we released the MP Updates and Recommendations feature, w
 Operations Manager can now support Kerberos authentication wherever the WS-Management protocol is used by the management server to communicate with UNIX and Linux computers, providing greater security by no longer needing to enable basic authentication for Windows Remote Management (WinRM).
 
 ## Service Map integration
-Service Map automatically discovers application components on Windows and Linux systems and maps the communication between services. It automatically builds a common reference map of dependencies across your servers, processes, and third-party services. Integration between Service Map and System Center Operations Manager allows you to automatically create distributed application diagrams in Operations Manager that are based on the dynamic dependency maps in Service Map.  For more information on planning and configuring  integration, see [Service Map integration with System Center Operations Manager](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map-scom).  
+Service Map automatically discovers application components on Windows and Linux systems and maps the communication between services. It automatically builds a common reference map of dependencies across your servers, processes, and third-party services. Integration between Service Map and System Center Operations Manager allows you to automatically create distributed application diagrams in Operations Manager that are based on the dynamic dependency maps in Service Map.  For more information on planning and configuring  integration, see [Service Map integration with System Center Operations Manager](/azure/operations-management-suite/operations-management-suite-service-map-scom).

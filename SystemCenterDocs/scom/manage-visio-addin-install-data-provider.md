@@ -28,10 +28,10 @@ The Visio Services Data Provider for Operations Manager has the following prereq
 
 -   SharePoint 2010, 2013, or 2016 Enterprise  
 
--   Microsoft .NET Framework 3.5 SP1.  For Windows 2012 and 2012 R2 see [Enable .NET Framework 3.5 by using the Add Roles and Features Wizard](https://technet.microsoft.com/library/dn482071.aspx).    
+-   Microsoft .NET Framework 3.5 SP1.  For Windows 2012 and 2012 R2 see [Enable .NET Framework 3.5 by using the Add Roles and Features Wizard](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10)).    
 
 > [!NOTE]  
-> You must install SharePoint Server 2010, 2013, or 2016 in a farm environment versus standalone (on a single server with a built-in database by using the default settings) so that Visio Services can be configured to run as a domain account with Operations Manager  access. For more information about installing SharePoint Server on a single server farm, see [Install SharePoint Server 2013 on a single server with SQL Server)](https://technet.microsoft.com/library/cc262243.aspx). For more information about installing SharePoint Server 2013 on a multiple server farm, see [Install SharePoint 2013 across multiple servers for a three-tier farm](https://go.microsoft.com/fwlink/?LinkID=244297) and for SharePoint 2016 see [Install SharePoint 2016 across multiple servers](https://docs.microsoft.com/SharePoint/install/install-sharepoint-server-2016-across-multiple-servers).  
+> You must install SharePoint Server 2010, 2013, or 2016 in a farm environment versus standalone (on a single server with a built-in database by using the default settings) so that Visio Services can be configured to run as a domain account with Operations Manager  access. For more information about installing SharePoint Server on a single server farm, see [Install SharePoint Server 2013 on a single server with SQL Server)](/SharePoint/install/install-sharepoint-server-2016-on-one-server). For more information about installing SharePoint Server 2013 on a multiple server farm, see [Install SharePoint 2013 across multiple servers for a three-tier farm](/SharePoint/install/install-sharepoint-server-2016-across-multiple-servers) and for SharePoint 2016 see [Install SharePoint 2016 across multiple servers](/SharePoint/install/install-sharepoint-server-2016-across-multiple-servers).  
 
 ## Install the Visio Services data provider  
 
@@ -91,4 +91,4 @@ If you need to determine the account that is configured for Visio Services, use 
 
 5.  On the **Select User or Groups** page, enter the account that is configured for Service Application Pool, and then click **OK**.  
 
-6.  Click **Apply**, and then click **OK** to close the **Operations Manager Read-Only Operators - User Role Properties** dialog box.  
+6.  Click **Apply**, and then click **OK** to close the **Operations Manager Read-Only Operators - User Role Properties** dialog box.

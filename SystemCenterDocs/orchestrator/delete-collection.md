@@ -33,7 +33,7 @@ rules).
 
 For the procedure to configure this object, see: [*Configuring the
 Delete Collection
-Activity*](https://technet.microsoft.com/library/hh967528.aspx#BKMK_ProcDelCol).
+Activity*](/previous-versions/system-center/packs/hh967528(v=technet.10)#BKMK_ProcDelCol).
 
 ## Properties and published data
 

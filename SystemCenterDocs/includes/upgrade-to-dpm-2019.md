@@ -205,4 +205,4 @@ You can back up a DPM server to Azure. The high level steps are:
 - Download vault credentials and the Azure Backup Agent,
 - Configure the server's vault credentials and backup policy,
 
-For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM](https://azure.microsoft.com/documentation/articles/backup-azure-dpm-introduction).
+For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM](/azure/backup/backup-azure-dpm-introduction).

@@ -66,4 +66,4 @@ This article lists Microsoft System Center 2016 - Operations Manager build versi
 ## Next steps
 - See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.
 
-- [What's New in Operations Manager](what-is-new.md)
+- [What's New in Operations Manager](./whats-new-in-om.md)

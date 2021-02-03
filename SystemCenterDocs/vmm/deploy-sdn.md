@@ -38,7 +38,7 @@ SDN combines a number of technologies, among them:
 - **RAS Gateway for SDN**: RAS Gateway is a software-based, multitenant, BGP capable router in Windows Server 2016 that is designed for CSPs and Enterprises that host multiple tenant virtual networks using HNV.
 - **Software Load Balancing (SLB) for SDN**: (SDN) in Windows Server 2016 can use Software Load Balancing (SLB) to evenly distribute tenant and tenant customer network traffic among virtual network resources. The Windows Server SLB enables multiple servers to host the same workload, providing high availability and scalability.
 
-[Read more about](https://technet.microsoft.com/library/mt590952.aspx) technologies in the SDN stack.
+[Read more about](/windows-server/networking/sdn/technologies/software-defined-networking-technologies) technologies in the SDN stack.
 
 
 ## Next steps

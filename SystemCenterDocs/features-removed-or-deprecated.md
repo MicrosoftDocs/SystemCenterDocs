@@ -23,7 +23,7 @@ The features and capabilities  listed below  are not included in the System Cent
 ## App Controller
 **Status in System Center 2016:** Removed.
 
-**Replacement:** For on-premises deployments, provision IaaS and PaaS solutions using [Windows Azure Pack](https://technet.microsoft.com/library/dn296435.aspx). Additionally, virtual machine and PaaS self-service solutions are available in Windows Azure Pack and Azure.
+**Replacement:** For on-premises deployments, provision IaaS and PaaS solutions using [Windows Azure Pack](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)). Additionally, virtual machine and PaaS self-service solutions are available in Windows Azure Pack and Azure.
 
 
 ## Citrix XenServer and VMware vCenter 4.1/5.1 support in Virtual Machine Manager
@@ -65,10 +65,10 @@ See [Upgrade to System Center 2016](upgrade-to-system-center-2016.md).
 Go to the [System Center documentation center](index.yml), to see all technologies in System Center 2016.
 See the introductory information or important concepts about each of the technologies in System Center 2016.
 
-* [Data Protection Manager](/system-center/dpm/dpm-overview)
-* [Operations Manager](/system-center/scom/key-concepts)
-* [Orchestrator](/system-center/orchestrator/learn-about-orchestrator)
-* [Service Manager](/system-center/scsm/service-manager)
-* [Service Management Automation](/system-center/sma/overview-of-service-management-automation)
-* [Virtual Machine Manager](/system-center/vmm/overview)
-* [Service Provider Foundation](/system-center/spf/overview)
+* [Data Protection Manager](./dpm/dpm-overview.md)
+* [Operations Manager](./scom/key-concepts.md)
+* [Orchestrator](./orchestrator/learn-about-orchestrator.md)
+* [Service Manager](./scsm/service-manager.md)
+* [Service Management Automation](./sma/overview-of-service-management-automation.md)
+* [Virtual Machine Manager](./vmm/overview.md)
+* [Service Provider Foundation](./spf/overview.md)

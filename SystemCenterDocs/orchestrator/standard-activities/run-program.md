@@ -25,7 +25,7 @@ manager: "cfreeman"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Use the following information to configure the Run .NET Script activity.
 |UNC program output file|The name of the file where the program output was saved in UNC format.|  
 
 ### Security  
- The Run Program activity is based on PsExec.  PsExec lets you execute processes on other systems, complete with full interactivity for console applications. For more information on PsExec, go to [PsExec](https://go.microsoft.com/fwlink/p/?LinkId=215263).  
+ The Run Program activity is based on PsExec.  PsExec lets you execute processes on other systems, complete with full interactivity for console applications. For more information on PsExec, go to [PsExec](/sysinternals/downloads/psexec).  
 
  The Run Program activity inherits certain security concerns from PsExec.  Specifically, PsExec uses named pipes. This can be a security concern, as credentials can be sent through this tool.  
 

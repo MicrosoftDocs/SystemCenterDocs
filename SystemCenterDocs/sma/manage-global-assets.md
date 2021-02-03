@@ -30,12 +30,12 @@ You can use the cmdlets in the following table to create and manage credentials 
 
 |Cmdlets|Description|
 |-----------|---------------|
-|[Get-SmaCertificate](https://go.microsoft.com/fwlink/?LinkID=306447)|Retrieves an Automation certificate.|
-|[Get-SmaCredential](https://go.microsoft.com/fwlink/?LinkID=306451)|Retrieves an Automation PowerShell credential.|
-|[Remove-SmaCertificate](https://go.microsoft.com/fwlink/?LinkID=306464)|Removes an Automation certificate.|
-|[Remove-SmaCredential](https://go.microsoft.com/fwlink/?LinkID=306466)|Removes an Automation PowerShell credental.|
-|[Set-SmaCertificate](https://go.microsoft.com/fwlink/?LinkID=306473)|Creates a new certificate or sets the properties for an existing certificate including uploading the certificate file and setting the password for a .pfx.|
-|[Set-SmaCredential](https://go.microsoft.com/fwlink/?LinkID=306475)|Creates a new Automation PowerShell credential or sets the properties for an existing credential.|
+|[Get-SmaCertificate](/previous-versions/system-center/powershell/system-center-2012-r2/dn502568(v=sc.20))|Retrieves an Automation certificate.|
+|[Get-SmaCredential](/previous-versions/system-center/powershell/system-center-2012-r2/dn502576(v=sc.20))|Retrieves an Automation PowerShell credential.|
+|[Remove-SmaCertificate](/previous-versions/system-center/powershell/system-center-2012-r2/dn502583(v=sc.20))|Removes an Automation certificate.|
+|[Remove-SmaCredential](/previous-versions/system-center/powershell/system-center-2012-r2/dn502593(v=sc.20))|Removes an Automation PowerShell credental.|
+|[Set-SmaCertificate](/previous-versions/system-center/powershell/system-center-2012-r2/dn502572(v=sc.20))|Creates a new certificate or sets the properties for an existing certificate including uploading the certificate file and setting the password for a .pfx.|
+|[Set-SmaCredential](/previous-versions/system-center/powershell/system-center-2012-r2/dn502575(v=sc.20))|Creates a new Automation PowerShell credential or sets the properties for an existing credential.|
 
 ###  PowerShell for working with credentials
 You can use the activities in the following table to access credentials in a runbook.
@@ -140,12 +140,12 @@ You can create and manage credentials with the Windows PowerShell cmdlets in the
 
 |Cmdlets|Description|
 |-----------|---------------|
-|[Get-SmaConnection](https://go.microsoft.com/fwlink/?LinkID=306448)|Retrieves the values for each field in a particular connection.|
-|[Get-SmaConnectionField](https://go.microsoft.com/fwlink/?LinkID=306449)|Retrieves the field definitions for a particular connection type.|
-|[Get-SmaConnectionType](https://go.microsoft.com/fwlink/?LinkID=306450)|Retrieves the available connection types.|
-|[New-SmaConnection](https://go.microsoft.com/fwlink/?LinkID=306461)|Creates a new connection.|
-|[Remove-SmaConnection](https://go.microsoft.com/fwlink/?LinkID=306465)|Remove an existing connection.|
-|[Set-SmaConnectionFieldValue](https://go.microsoft.com/fwlink/?LinkID=306474)|Sets the value of a particular field for an existing connection.|
+|[Get-SmaConnection](/previous-versions/system-center/powershell/system-center-2012-r2/dn502599(v=sc.20))|Retrieves the values for each field in a particular connection.|
+|[Get-SmaConnectionField](/previous-versions/system-center/powershell/system-center-2012-r2/dn502590(v=sc.20))|Retrieves the field definitions for a particular connection type.|
+|[Get-SmaConnectionType](/previous-versions/system-center/powershell/system-center-2012-r2/dn502586(v=sc.20))|Retrieves the available connection types.|
+|[New-SmaConnection](/previous-versions/system-center/powershell/system-center-2012-r2/dn502592(v=sc.20))|Creates a new connection.|
+|[Remove-SmaConnection](/previous-versions/system-center/powershell/system-center-2012-r2/dn502581(v=sc.20))|Remove an existing connection.|
+|[Set-SmaConnectionFieldValue](/previous-versions/system-center/powershell/system-center-2012-r2/dn502584(v=sc.20))|Sets the value of a particular field for an existing connection.|
 
 ### Runbook activities
 You can access connections in a runbook with the activities in the following table.
@@ -178,7 +178,7 @@ You can access connections in a runbook with the activities in the following tab
 
 The following sample commands create a new Virtual Machine Manager connection with the name MyVMMConnection.  Note that we use a hashtable to define the properties of the connection. This is because different types of connections require different sets of properties. A connection of another type would use a different set of field values.
 
-For more information about hash tables, see [about_Hash_Tables](https://go.microsoft.com/fwlink/?LinkID=324844).
+For more information about hash tables, see [about_Hash_Tables](/powershell/module/microsoft.powershell.core/about/about_hash_tables).
 
 ```powershell
 $webServer = 'https://MyWebServer'
@@ -225,7 +225,7 @@ New-SmaConnection "WebServiceEndpoint $webServer "port $port "Name $connectionNa
 
 Use the **Get-AutomationConnection** activity to use a connection in a runbook.  This activity retrieves the values of the different fields in the connection and returns them as a hashtable which can then be used with the appropriate commands in the runbook.
 
-For more information about hash tables, see [about_Hash_Tables](https://go.microsoft.com/fwlink/?LinkID=324844).
+For more information about hash tables, see [about_Hash_Tables](/powershell/module/microsoft.powershell.core/about/about_hash_tables).
 
 The following sample code shows how to use a connection to provide the computer name and credentials for an [InlineScript](overview-powershell-workflows.md#inlinescript) block that runs commands on another computer.
 
@@ -267,8 +267,8 @@ You can create and manage variables with the Windows PowerShell cmdlets in the f
 
 |Cmdlets|Description|
 |-----------|---------------|
-|[Get-SmaVariable](https://go.microsoft.com/fwlink/?LinkID=306458)|Retrieves the value of an existing variable.|
-|[Set-SmaVariable](https://go.microsoft.com/fwlink/?LinkID=306477)|Creates a new variable or sets the value for an existing variable.|
+|[Get-SmaVariable](/previous-versions/system-center/powershell/system-center-2012-r2/dn502600(v=sc.20))|Retrieves the value of an existing variable.|
+|[Set-SmaVariable](/previous-versions/system-center/powershell/system-center-2012-r2/dn502569(v=sc.20))|Creates a new variable or sets the value for an existing variable.|
 
 ### Runbook activities
 You can access variables in a runbook with the activities in the following table.
@@ -304,7 +304,7 @@ You can access variables in a runbook with the activities in the following table
 
 ### To create a new variable with Windows PowerShell
 
-The [Set-SmaVariable](https://aka.ms/runbookauthor/cmdlet/setsmavariable) cmdlet both creates a new variable and sets the value for an existing variable.  The following sample commands show how to create a variable of type string.
+The [Set-SmaVariable](/previous-versions/system-center/powershell/system-center-2012-r2/dn502569(v=sc.20)) cmdlet both creates a new variable and sets the value for an existing variable.  The following sample commands show how to create a variable of type string.
 
 ```powershell
 $web = 'https://MySMAServer'

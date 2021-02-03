@@ -66,7 +66,7 @@ PS C:\> $key = [Convert]::ToBase64String($cert.RawData)``
 
 Service Provider Foundation does not create user roles or define their scope (such as clouds), resources, or actions. Instead, the New-SCSPFTenantUserRole cmdlet creates an association for a tenant with a user role name. When that association is created, it also generates an ID that can be used for the corresponding ID for creating the role in System Center 2016 - Virtual Machine Manager.
 
-You can also create user roles by using the Admin OData protocol service using the [Developer's guide](https://msdn.microsoft.com/library/jj643273.aspx).
+You can also create user roles by using the Admin OData protocol service using the [Developer's guide](/previous-versions/system-center/developer/jj643273(v=msdn.10)).
 
 1.  Run the SPF command shell as an Administrator.  
 2.  Type following command to create the tenant. This command assumes that the `$key` variable contains the public key.  

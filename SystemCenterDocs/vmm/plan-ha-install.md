@@ -33,7 +33,7 @@ For resilience and scalability you can deploy VMM in high availability mode, as 
 - You should set up SQL Server before you deploy the VMM management servers.
 - We recommend you use a highly available SQL Server installation on a failover cluster and configure SQL Server Always On availability groups.
 You shouldn't install SQL Server on the VMM cluster.
-- Review the [best practices](https://msdn.microsoft.com/library/ms189910.aspx) for failover cluster node prerequisites.
+- Review the [best practices](/sql/sql-server/failover-clusters/install/before-installing-failover-clustering) for failover cluster node prerequisites.
 - Always On availability groups are supported in VMM. Use **synchronous commit** for higher protection with more overhead. If you use **asynchronous-commit** mode the secondary database can lag behind the primary database making some data loss possible.
 - The database server must be in the same domain as the VMM server, or in a domain with a two-way trust.
 - Using a clustered database with VMM requires Kerberos authentication. To support this, the SQL Server instance must associate a Service Principal Name (SPN) with the account that SQL Server will be running on.
@@ -49,7 +49,7 @@ You shouldn't install SQL Server on the VMM cluster.
 	- All cluster nodes that will act as VMM servers must be running Windows Server 2016.
 	- Each cluster node must be joined to a domain and must have a computer name that does not exceed 15 characters.
 	- The VMM service network name must not exceed 15 characters.
-	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](https://go.microsoft.com/fwlink/p/?LinkId=614942). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
+	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](/windows-hardware/get-started/adk-install). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
 	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server.
 
 ::: moniker-end
@@ -65,7 +65,7 @@ You shouldn't install SQL Server on the VMM cluster.
 	- All cluster nodes that will act as VMM servers must be running either Windows Server 2016 or Windows Server 2019.
 	- Each cluster node must be joined to a domain and must have a computer name that does not exceed 15 characters.
 	- The VMM service network name must not exceed 15 characters.
-	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](https://go.microsoft.com/fwlink/p/?LinkId=614942). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
+	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](/windows-hardware/get-started/adk-install). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
 	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](https://www.microsoft.com/download/details.aspx?id=56041) or [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=57474) or [SQL Server 2016 feature pack](https://www.microsoft.com/download/details.aspx?id=56833).
 
 ::: moniker-end

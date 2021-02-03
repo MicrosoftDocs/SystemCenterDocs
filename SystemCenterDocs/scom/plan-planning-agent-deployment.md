@@ -110,7 +110,7 @@ System Center Operations Manager Agents may be installed by using one of the fol
 
 Agents that are installed by using the Discovery Wizard can be managed from the Operations console, such as updating agent versions, applying patches, and configuring the management server that the agent reports to.
 
-When you install the agent using a manual method, updates to the agent must also be performed manually. You will be able to use Active Directory integration to assign agents to management groups. For more information, see [Integrating Active Directory and Operations Manager](https://technet.microsoft.com/library/hh212829.aspx).
+When you install the agent using a manual method, updates to the agent must also be performed manually. You will be able to use Active Directory integration to assign agents to management groups. For more information, see [Integrating Active Directory and Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212829(v=sc.12)).
 
 ### Agent deployment to Windows system
 
@@ -167,4 +167,4 @@ Configuration of agent assignment is managed by an Operations Manager administra
 
 * To understand how to install the Linux and UNIX from the Operations console, see [Install agent on UNIX and Linux using the Discovery Wizard](manage-deploy-crossplat-agent-console.md).   
 
-* Review [How to configure and use Active Directory Integration for agent assignment](manage-ad-integration-agent-assignment.md) to learn how to create the container in Active Directory, configure agent failover assignment, and manage the configuration.   
+* Review [How to configure and use Active Directory Integration for agent assignment](manage-ad-integration-agent-assignment.md) to learn how to create the container in Active Directory, configure agent failover assignment, and manage the configuration.

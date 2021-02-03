@@ -48,7 +48,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
 
-2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuring the HP Service Manager Connections](https://technet.microsoft.com/library/4b9fedf9-e89a-4298-bf57-79c5d4ccdd6b#ConfiguringConnections).
+2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuring the HP Service Manager Connections](/previous-versions/system-center/packs/hh771464(v=technet.10)#ConfiguringConnections).
 
 ## Filter Behavior
 
@@ -100,7 +100,7 @@ Some activities are expected to take a limited amount of time to complete. If th
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
-For more information about Orchestrator events, see [Activity Events](https://technet.microsoft.com/library/hh489611.aspx).
+For more information about Orchestrator events, see [Activity Events](/previous-versions/system-center/system-center-2012-R2/hh489611(v=sc.12)).
 
 ## Published Data
 
@@ -114,7 +114,7 @@ An activity can only subscribe to data from the activities that are linked befor
 2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
 3.  Click the published data element that you want to use, and then click **OK**.
 
-For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
+For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
 
 ## Activities
 
@@ -124,4 +124,4 @@ This integration pack adds the HP Service Manager category to the **Activity** p
 [Create Entry](create-entry.md)  
 [Get Entry](get-entry.md)  
 [Monitor Entry](monitor-entry.md)  
-[Update Entry](update-entry.md)  
+[Update Entry](update-entry.md)

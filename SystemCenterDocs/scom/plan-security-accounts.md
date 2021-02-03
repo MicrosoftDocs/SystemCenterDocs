@@ -64,7 +64,7 @@ The domain account that is specified for the action account is granted with Log 
 * Values (for Operations Manager 2016 to 1807): Four (4) -  Log on as batch, Two (2) -  Allow log on locally and Five (5) - Log on as Service.  Default value is 2.   
 * Values for Operations Manger 2019 and later: Four (4) - Log on as Batch, Two (2) -  Allow log on locally, and Five (5) - Log on as Service.  Default value is 5.  
 
-You can centrally manage the setting using Group Policy by copying the ADMX file  `healthservice.admx` from a management server or agent-managed system located in the folder `C:\Windows\PolicyDefinitions` and configuring the setting **Monitoring Action Account Logon Type** under the folder `Computer Configuration\Administrative Templates\System Center - Operations Manager`.  For more information working with Group Policy ADMX files, see [Managing Group Policy ADMX files](https://technet.microsoft.com/library/cc709647%28v=ws.10%29.aspx).
+You can centrally manage the setting using Group Policy by copying the ADMX file  `healthservice.admx` from a management server or agent-managed system located in the folder `C:\Windows\PolicyDefinitions` and configuring the setting **Monitoring Action Account Logon Type** under the folder `Computer Configuration\Administrative Templates\System Center - Operations Manager`.  For more information working with Group Policy ADMX files, see [Managing Group Policy ADMX files](/previous-versions/windows/it-pro/windows-vista/cc709647(v=ws.10)).
 
 ## System Center Configuration Service and System Center Data Access Service account
 
@@ -80,7 +80,7 @@ The account should be either a Domain User or LocalSystem.  The account used for
 > [!NOTE]
 > If the Operations Manager database is installed on a computer separate from the management server and LocalSystem is selected for the Data Access and Configuration service account, the computer account for the management server computer is assigned the sdk_user role on the Operations Manager database computer.  
 
-For more information, see [about LocalSystem](https://docs.microsoft.com/windows/desktop/services/localsystem-account)
+For more information, see [about LocalSystem](/windows/desktop/services/localsystem-account)
 
 ## Data Warehouse Write account
 

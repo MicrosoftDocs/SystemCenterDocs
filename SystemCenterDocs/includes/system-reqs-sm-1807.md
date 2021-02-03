@@ -83,7 +83,7 @@ To help simplify upgrades, you can use Service Manager 1807 connectors with the 
 > For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 
 
-**Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202014)**  | **SQL Server 2016 and [SPs](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202016)** | **SQL Server [2017](https://docs.microsoft.com/lifecycle/products/?terms=SQL%20Server%202017)**
+**Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs](/lifecycle/products/?terms=SQL+Server+2014)**  | **SQL Server 2016 and [SPs](/lifecycle/products/?terms=SQL+Server+2016)** | **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)**
 --- | --- | --- | --- | ---
 **Service Manager/Data Warehouse database** | | &#8226;| &#8226; | &#8226;
 
@@ -130,7 +130,7 @@ The following steps provide information about upgrading to SQL 2017.
 1. Upgrade to SQL 2017.
 2. Install SQL 2017 reporting services (SSRS), and launch the reporting services configuration manager to use the existing reporting DB, restore encryption keys.  Configure the Web service URL and Web portal URL   .
 3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2017.      
-4. Configure the SSRS as per the details shared [here](https://docs.microsoft.com/system-center/scsm/prepare-remote-ssrs).
+4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
 
 5. [**Optional**] To enable CLR strict security, run the following script on each of the service manager databases.
 

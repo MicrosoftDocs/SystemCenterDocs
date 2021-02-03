@@ -21,7 +21,7 @@ The following sections provide information about how to upgrade to System Center
 
 - Make sure your environment has the latest supported versions described in [system requirements](../orchestrator/system-requirements-orch.md).
 - To upgrade a server running Orchestra 2012 R2 to 2016, the server must be running System Center 2012 R2 rollup 8 or later.
-- [Learn more](/system-center/upgrade-to-system-center-2016) about upgrading System Center components.
+- [Learn more](../upgrade-to-system-center-2016.md) about upgrading System Center components.
 
 ## Upgrade steps
 

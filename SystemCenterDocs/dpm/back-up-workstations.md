@@ -129,7 +129,7 @@ Before you deploy DPM to protect client computer data verify the deployment prer
 
 12. In **Specify online retention policy** you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
-13. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/documentation/articles/backup-azure-backup-import-export/).
+13. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](/azure/backup/backup-azure-backup-import-export).
 
 14. On the  **Summary** page review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
@@ -141,7 +141,7 @@ End-user recovery enables users to independently recover file data by retrieving
 
 -   Users can only recover data stored on disk.
 
--   You'll need to modify the Active Directory schema to enable end-user recovery. DPM extends the schema, creates a container (MS-ShareMapConfiguration), grants the DPM server permissions to change the container contents, and adds mappings between source and replica shares. [View](https://technet.microsoft.com/library/hh758112.aspx) a detailed list of classes and attributes added to AD by DPM.
+-   You'll need to modify the Active Directory schema to enable end-user recovery. DPM extends the schema, creates a container (MS-ShareMapConfiguration), grants the DPM server permissions to change the container contents, and adds mappings between source and replica shares. [View](/previous-versions/system-center/system-center-2012-R2/hh758112(v=sc.12)) a detailed list of classes and attributes added to AD by DPM.
 
 -   If you enable end-user recovery you can't specify on which file servers end-user recovery is enabled.
 
