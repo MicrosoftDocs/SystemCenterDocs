@@ -27,7 +27,7 @@ The Visio Add-in for System Center Operations Manager has the following prerequi
 
 -   Microsoft Office Visio 2010 or 2013 Professional or Premium.  
 
--   Microsoft .NET Framework 3.5 SP1.  For Windows 8, 8.1 and 10 see [Installing the .NET Framework 3.5 on Windows 8, Windows 8.1 and Windows 10](https://msdn.microsoft.com/library/hh506443%28v=vs.110%29.aspx).
+-   Microsoft .NET Framework 3.5 SP1.  For Windows 8, 8.1 and 10 see [Installing the .NET Framework 3.5 on Windows 8, Windows 8.1 and Windows 10](/dotnet/framework/install/dotnet-35-windows-10).
 
 ## To install the Visio Add-in
 
@@ -45,4 +45,4 @@ When you run the Setup program for the Visio Add-in, your system is checked agai
 
 6.  Click **Close** when the installation is complete.  
 
-The next time you start Visio, you are asked if you want to install the Visio Add-in. Click **Install**. When the installation is complete, the Operations Manager command is available in the Visio ribbon.  
+The next time you start Visio, you are asked if you want to install the Visio Add-in. Click **Install**. When the installation is complete, the Operations Manager command is available in the Visio ribbon.

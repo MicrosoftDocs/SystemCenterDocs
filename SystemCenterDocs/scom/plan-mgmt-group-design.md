@@ -38,7 +38,7 @@ The following diagram presents one possible option for the distributed managemen
 > [!NOTE]
 > There is no direct communication between the Operations console and the databases. All communication is directed to a specific management server over port TCP 5724, and then to the database servers using OLE DB on TCP 1433 or a user-defined port specified by the SQL administrator during setup of the SQL Server database engine instance. However, there is direct communication between an Application Diagnostics console (co-located with the Web console) and the SQL Server hosting the operational and data warehouse databases.
 
-A management group that you have deployed in your environment can integrate with [Microsoft Operations Management Suite (OMS)](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview), and by utilizing Log Analytics, you can further correlate, visualize, and act on performance, events, and alerts.  This provides you with increased visibility by being able to perform custom searches across the entire dataset in order to correlate data between systems and applications, hosted on-premise or in the cloud.    
+A management group that you have deployed in your environment can integrate with [Microsoft Operations Management Suite (OMS)](/azure/azure-monitor/overview), and by utilizing Log Analytics, you can further correlate, visualize, and act on performance, events, and alerts.  This provides you with increased visibility by being able to perform custom searches across the entire dataset in order to correlate data between systems and applications, hosted on-premise or in the cloud.    
 
 ![OM Integration with Microsoft OMS](./media/plan-mgmt-group-design/om2016-integration-oms.png)
 

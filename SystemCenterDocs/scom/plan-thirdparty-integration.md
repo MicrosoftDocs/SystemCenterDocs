@@ -25,12 +25,12 @@ Many customers have one or more monitoring platforms, where one provides consoli
 Interoperability between Operations Manager and other products is accomplished from many different methods depending on the technical and business requirements. The following are common methods to interface with Operations Manager:
 
 - System Center - Orchestrator with integration packs available from Microsoft, third parties, and the community.  Integration packs for Orchestrator contain additional activities that extend the functionality of Orchestrator to communicate and exchange data with other third-party systems.
-- Connectors built on the Operations Manager Connector Framework (OMCF). Connectors built on the OMCF, which are developed from the [Operations Manager SDK](https://msdn.microsoft.com/library/hh329086.aspx), provides methods and types that you can use to initialize and manage a connector and to get or send operations data.  Some examples of connectors used to integrate with Operations Manager are other System Center products like Service Manager and Virtual Machine Manager (VMM), and third-party products such as Nagios or IBM Netcool.  Connections to external systems are commonly performed using a web service.  
+- Connectors built on the Operations Manager Connector Framework (OMCF). Connectors built on the OMCF, which are developed from the [Operations Manager SDK](/previous-versions/system-center/developer/hh329086(v=msdn.10)), provides methods and types that you can use to initialize and manage a connector and to get or send operations data.  Some examples of connectors used to integrate with Operations Manager are other System Center products like Service Manager and Virtual Machine Manager (VMM), and third-party products such as Nagios or IBM Netcool.  Connections to external systems are commonly performed using a web service.  
 - Querying the SQL operational or data warehouse databases to extract certain datasets for custom reports or dashboards.
 
 Other custom connectors are developed and implemented to support advanced scenarios such as alert enrichment, including additional information before the alert is forwarded to the incident management system, perform alert correlation, or provide advanced notification functionality with Operations Manager.
 
-Operations Manager also integrates with [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/om-agents/) to forward collected events, alerts, and performance data for further analysis and provides greater visibility for the enterprise.
+Operations Manager also integrates with [Azure Monitor](/azure/azure-monitor/platform/om-agents/) to forward collected events, alerts, and performance data for further analysis and provides greater visibility for the enterprise.
 
 ## When separated by a firewall
 

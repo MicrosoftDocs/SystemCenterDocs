@@ -109,7 +109,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
 
 ## Credentials for Run As accounts  
 
-The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** (**Monitoring Account** or **Agent Maintenance Account**), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](https://docs.microsoft.com/system-center/scom/manage-security-config-crossplat-runas-profile).  
+The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** (**Monitoring Account** or **Agent Maintenance Account**), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](./manage-security-config-crossplat-runas-profile.md).  
 
 ### To set a privileged credential for a monitoring account  
 
@@ -309,4 +309,4 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, o
 
 - To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](~/scom/manage-security-create-crossplat-sudo-sshkeys.md)  
 
-- Review the [Configuring SSL Ciphers](~/scom/manage-security-crossplat-config-sslcipher.md) if you need to reconfigure Operations Manager to use a different cipher.   
+- Review the [Configuring SSL Ciphers](~/scom/manage-security-crossplat-config-sslcipher.md) if you need to reconfigure Operations Manager to use a different cipher.
