@@ -63,4 +63,4 @@ The following new parameters are added:
 
 
 ## Next steps
-  [Manage QoS](https://docs.microsoft.com/system-center/vmm/manage-sofs-qos )
+  [Manage QoS](./manage-sofs-qos.md)

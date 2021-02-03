@@ -19,7 +19,7 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-Cluster rolling upgrade was introduced in Windows Server 2016. This feature enables you to upgrade the operating system of cluster nodes without stopping Hyper-V workloads running on the nodes. [Read more](https://docs.microsoft.com/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
+Cluster rolling upgrade was introduced in Windows Server 2016. This feature enables you to upgrade the operating system of cluster nodes without stopping Hyper-V workloads running on the nodes. [Read more](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
 
 >[!NOTE]
 > System Center 2019 - Virtual Machine Manager (VMM) supports rolling upgrade of a Hyper-V host cluster from Windows Server 2016 to Windows Server 2019. Versions earlier to VMM 2019 supports rolling upgrade to 2016 from 2012 R2.  Use the following procedures as applicable for the version of VMM you are using and the upgrade version it supports.
@@ -44,7 +44,7 @@ System Center - Virtual Machine Manager (VMM) supports using the rolling upgrade
 
 ## Before you start
 
-Review the platform [restrictions and limitations](https://docs.microsoft.com/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#restrictions--limitations) before you start Cluster rolling upgrade.
+Review the platform [restrictions and limitations](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#restrictions--limitations) before you start Cluster rolling upgrade.
 
 - The cluster must be managed by VMM.
 - The cluster must be running Windows Server 2012 R2 (in case of releases prior to 2019) or Windows Server 2016 (in case of VMM 2019).

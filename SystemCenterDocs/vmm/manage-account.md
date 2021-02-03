@@ -50,7 +50,7 @@ There are different types of Run As accounts:
 
 Note that:
 
-- VMM uses the Windows Data Protection API (DPAPI) to provide operating system level data protection services during storage and retrieval of the Run As account credentials. DPAPI is a password-based data protection service that uses cryptographic routines (the strong Triple-DES algorithm, with strong keys) to offset the risk posed by password-based data protection. [Learn more](https://msdn.microsoft.com/library/ms995355).
+- VMM uses the Windows Data Protection API (DPAPI) to provide operating system level data protection services during storage and retrieval of the Run As account credentials. DPAPI is a password-based data protection service that uses cryptographic routines (the strong Triple-DES algorithm, with strong keys) to offset the risk posed by password-based data protection. [Learn more](/previous-versions/ms995355(v=msdn.10)).
 - When you install VMM, you can configure VMM to use Distributed Key Management to store encryption keys in Active Directory.
 - You can set up Run As accounts before you start managing VMM, or you can set up Run As accounts if you need them for specific actions.
 

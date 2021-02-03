@@ -158,4 +158,4 @@ To enable nested virtualization,  from  **Single Tier Properties**, select  **Ge
 ::: moniker-end
 
 ## Next steps
-[Run Hyper-V in a nested VM](https://docs.microsoft.com/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
+[Run Hyper-V in a nested VM](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
