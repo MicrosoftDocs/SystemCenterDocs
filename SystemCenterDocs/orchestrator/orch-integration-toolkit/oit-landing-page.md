@@ -16,7 +16,7 @@ ms.author: raynew
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -34,4 +34,4 @@ The System Center Orchestrator Integration Toolkit is a set of tools to help you
 
 [Integration Pack Wizard](integration-pack-wizard.md)
 
-[Orchestrator SDK](https://msdn.microsoft.com/library/hh855054.aspx)
+[Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))

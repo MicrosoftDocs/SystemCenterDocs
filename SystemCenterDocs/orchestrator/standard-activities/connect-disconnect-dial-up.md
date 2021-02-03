@@ -25,11 +25,11 @@ manager: "cfreeman"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
-The Connect/Disconnect Dial-up activity connects or disconnects a dial-up connection or VPN. The connection must be configured on the Runbook server before the activity can use it. For more information on creating a network connection in Windows Server 2008, see [Establish Network Connections](https://go.microsoft.com/fwlink/?LinkID=229330)  
+The Connect/Disconnect Dial-up activity connects or disconnects a dial-up connection or VPN. The connection must be configured on the Runbook server before the activity can use it. For more information on creating a network connection in Windows Server 2008, see [Establish Network Connections](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252606(v=ws.10))  
 
 ## Configuring the Connect/Disconnect Dial-up Activity  
  Use the following information to configure the Connect/Disconnect Dial-up activity.  

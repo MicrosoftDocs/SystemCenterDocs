@@ -59,7 +59,7 @@ This topic provides detailed installation instructions for the various Orchestra
 ::: moniker range="sc-orch-1801"
 
    > [!NOTE]
-   > SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see [Installing SQL Server Native Client](https://docs.microsoft.com/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
+   > SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
 ::: moniker-end
 
@@ -123,7 +123,7 @@ This topic provides detailed installation instructions for the various Orchestra
    ::: moniker range="sc-orch-1801"
 
    > [!NOTE]
-   >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Runbook server role. For more information, see [Installing SQL Server Native Client](https://docs.microsoft.com/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
+   >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Runbook server role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
    ::: moniker-end
 
@@ -242,7 +242,7 @@ This topic provides detailed installation instructions for the various Orchestra
 ::: moniker range="sc-orch-1801"
 
    > [!NOTE]
-   >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Runbook designer role. For more information, see [Installing SQL Server Native Client](https://docs.microsoft.com/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
+   >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Runbook designer role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
 ::: moniker-end
 
@@ -375,7 +375,7 @@ Enable the following firewall rules on your computer:
 |64\-bit|%ProgramFiles \(x86\)%\\Microsoft System Center <version>\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
 |32\-bit|%ProgramFiles\\Microsoft System Center <version>\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
 
-For more information about adding firewall rules, see [Add or Edit a Firewall Rule](https://go.microsoft.com/fwlink/p/?LinkID=201019).  
+For more information about adding firewall rules, see [Add or Edit a Firewall Rule](/previous-versions/orphan-topics/ws.11/cc753558(v=ws.11)).  
 
 ### <a name="BKMK_RunbookServicefailstostart"></a>RunbookService fails to start after computer reboot  
 When you reboot your runbook server, the RunbookService attempts to connect to the orchestration database. If the database is not available, the RunbookService fails. The event log message is **This computer was unable to communicate with the computer providing the server.**. Typically, this can occur when the SQL server and the runbook server are installed on the same computer.  
@@ -389,5 +389,5 @@ To solve this problem, an administrator can add the user back to OrchestratorSys
 
 ## Next steps
 
-- To learn more about building runbooks see [Design and build runbooks](build-test-runbooks.md).
+- To learn more about building runbooks see [Design and build runbooks](./design-and-build-runbooks.md).
 - To learn more about deploying runbooks see [Deploy runbooks](deploy-runbooks.md)

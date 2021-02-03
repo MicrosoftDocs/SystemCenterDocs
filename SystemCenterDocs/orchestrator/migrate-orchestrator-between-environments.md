@@ -37,7 +37,7 @@ The following steps are required to enable an automatic migration of Orchestrato
 6.  Deploy Orchestrator components in environment B  
 
 > [!NOTE]  
-> See [https://go.microsoft.com/fwlink/?LinkId=246817](https://go.microsoft.com/fwlink/?LinkId=246817) for information on using the Sqlcmd utility.  
+> See [https://go.microsoft.com/fwlink/?LinkId=246817](/sql/tools/sqlcmd-utility) for information on using the Sqlcmd utility.  
 
 ## Back up SQL Server service master key in environment A  
 Back up the SQL Server service master key. This is a one-time operation.  
@@ -156,4 +156,4 @@ Sqlcmd -Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\Orchestrator
 ```  
 %systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  
 
-```  
+```

@@ -16,7 +16,7 @@ ms.author: raynew
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -164,7 +164,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 6.  Click the ellipsis button to the right of the **Class** field to view a list of the individual commands in the assembly. Select a command class, and click **OK**. Parameters for this class appear on the **Properties** tab of the dialog.  
 
-7.  The **Setup** field is used only by custom-developed classes using the Orchestrator SDK with the OrchestratorData attribute. For more information about the SDK, see [System Center Orchestrator Integration Toolkit SDK](https://msdn.microsoft.com/library/hh855054.aspx).  
+7.  The **Setup** field is used only by custom-developed classes using the Orchestrator SDK with the OrchestratorData attribute. For more information about the SDK, see [System Center Orchestrator Integration Toolkit SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).  
 
 8.  Click the **Properties** tab.  
 
@@ -208,7 +208,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 |Resource|Location|  
 |-|-|   
 |System Center Home|[https://www.microsoft.com/en-us/cloud-platform/system-center](https://www.microsoft.com/en-us/cloud-platform/system-center)|  
-|System Center documentation|[https://docs.microsoft.com/system-center/](https://docs.microsoft.com/system-center/)|  
+|System Center documentation|[https://docs.microsoft.com/system-center/](../index.yml)|  
 |Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
 |Orchestrator Community Releases on CodePlex|[https://archive.codeplex.com/?p=orchestrator](https://archive.codeplex.com/?p=orchestrator)|  
 |Orchestrator Community Forums on TechNet|[https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
