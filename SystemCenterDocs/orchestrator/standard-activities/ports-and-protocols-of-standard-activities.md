@@ -19,7 +19,7 @@ manager: cfreeman
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -45,4 +45,4 @@ Orchestrator standard activities can communicate between the runbook servers whe
 
 -   [Orchestrator overview](../learn-about-orchestrator.md)  
 
--   [Alphabetical List of Standard Activities](alphabetical-list-of-standard-activities.md)  
+-   [Alphabetical List of Standard Activities](alphabetical-list-of-standard-activities.md)
