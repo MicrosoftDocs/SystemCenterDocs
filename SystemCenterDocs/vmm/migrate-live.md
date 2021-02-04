@@ -54,13 +54,13 @@ When you migrate a VM between clusters, note that the VM temporarily loses its h
 
 
 >[!NOTE]
-> When you run live migration on VMs from an older cluster version to a newer version, if the [*Msvm_CompatibilityVector*](https://docs.microsoft.com/windows/win32/hyperv_v2/msvm-compatibilityvector) value is not updated, migration within the new cluster will be blocked.
+> When you run live migration on VMs from an older cluster version to a newer version, if the [*Msvm_CompatibilityVector*](/windows/win32/hyperv_v2/msvm-compatibilityvector) value is not updated, migration within the new cluster will be blocked.
 >
 >To fix this issue, restart the VM. VM restart updates the *Msvm_CompatibilityVector* values according to the new cluster version.
 
 ### Live migration with no shared infrastructure
 
-When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. For live migration with no shared infrastructure, you must use two different SMB 3.0 shares. First, synchronize the source and destination virtual hard disks completely, then initiate the live migration for the virtual machine. [Read more](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831435(v=ws.11)) about virtual machine storage migration.
+When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. For live migration with no shared infrastructure, you must use two different SMB 3.0 shares. First, synchronize the source and destination virtual hard disks completely, then initiate the live migration for the virtual machine. [Read more](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831435(v=ws.11)) about virtual machine storage migration.
 
 Follow these steps:
 

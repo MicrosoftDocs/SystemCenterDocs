@@ -29,7 +29,7 @@ However, this information is not intended to provide detailed instructions on ho
 
 
 > [!NOTE]
-> After deploying Service Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security), run the [SQL script](system-requirements.md#enable-clr-strict-security) on each Service Manager database.
+> After deploying Service Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security), run the [SQL script](system-requirements.md#enable-clr-strict-security) on each Service Manager database.
 
 
 ## SQL Server AlwaysOn supported Service Manager databases
@@ -53,7 +53,7 @@ Use the following tasks when you install a new management group with a SQL Alway
 
 1. Ensure that the recovery model of the database is full. Open **SQL Server Management Studio** and connect to the instance where the database(s) are installed. Right-click the targeted database, and select its  **properties**  and then select  **Options**. If the recovery model is not listed as **Full** , then select  **Full**  from the drop-down list.
 2. Create a full back up the databases.
-3. Use SQL Server Management Studio to add the databases to the availability databases. When adding the databases to the availability databases under  **Select Data Synchronization**, three choices are possible:  **Full** ,  **Join only**  and  **Skip initial data synchronization**. Choose the option that is most appropriate for you. We recommend selecting  **Full**  and allowing the  **Add Database wizard**  to create a full backup and restore of the databases on the secondary replicas. More steps might or might not be needed depending on which choice you made. See  [Manually Prepare a Secondary Database for an Availability Group (SQL Server)](https://msdn.microsoft.com/library/ff878349.aspx) for more information.
+3. Use SQL Server Management Studio to add the databases to the availability databases. When adding the databases to the availability databases under  **Select Data Synchronization**, three choices are possible:  **Full** ,  **Join only**  and  **Skip initial data synchronization**. Choose the option that is most appropriate for you. We recommend selecting  **Full**  and allowing the  **Add Database wizard**  to create a full backup and restore of the databases on the secondary replicas. More steps might or might not be needed depending on which choice you made. See  [Manually Prepare a Secondary Database for an Availability Group (SQL Server)](/sql/database-engine/availability-groups/windows/manually-prepare-a-secondary-database-for-an-availability-group-sql-server) for more information.
 
 ## Use an existing management group
 

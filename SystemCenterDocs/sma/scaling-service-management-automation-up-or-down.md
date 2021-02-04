@@ -44,4 +44,4 @@ SQL Server recommendations include:
 Scale out recommendations:
 
 - If runbook jobs are running slowly, you can increase the number of runbook workers that are sharing workloads. New runbook worker/web service instances must be installed on their own VMs.
-Before installing or uninstalling a runbook worker, stop the Runbook Worker service (rbsvc) on the computer on which the runbook worker is installed. [Learn about](https://go.microsoft.com/fwlink/?LinkId=301478) runbook worker deployments.
+Before installing or uninstalling a runbook worker, stop the Runbook Worker service (rbsvc) on the computer on which the runbook worker is installed. [Learn about](/previous-versions/system-center/dn530618(v=sc.20)) runbook worker deployments.

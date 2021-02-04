@@ -30,12 +30,12 @@ To open the Operations Manager Shell, from the Windows start screen, type **Oper
 Import-Module -Name OperationsManager  
 ```  
 
-You can access cmdlet help in the Operations Manager Shell by typing Get-Help *cmdlet name* or view the help online at [Cmdlets in System Center Operations Manager](https://technet.microsoft.com/library/hh918542%28v=sc.30%29.aspx).  
+You can access cmdlet help in the Operations Manager Shell by typing Get-Help *cmdlet name* or view the help online at [Cmdlets in System Center Operations Manager](/powershell/module/operationsmanager/).  
 
-To learn more about Windows PowerShell, see [Windows PowerShell Getting Started Guide](https://go.microsoft.com/fwlink/p/?LinkId=235162).  
+To learn more about Windows PowerShell, see [Windows PowerShell Getting Started Guide](/previous-versions//aa973757(v=vs.85)).  
 
 ## Next steps
 
 - To stop monitoring of a computer, group of computers or monitored object temporarily during planned maintenance using a schedule, or to stop monitoring while troubleshooting an issue, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](manage-maintenance-mode-overview.md).
 
-- To learn how to launch common tools or commands from the Operations Manager console to help reduce your time investigating and diagnosing issues, see [Running Tasks in Operations Manager](manage-running-tasks.md).    
+- To learn how to launch common tools or commands from the Operations Manager console to help reduce your time investigating and diagnosing issues, see [Running Tasks in Operations Manager](manage-running-tasks.md).

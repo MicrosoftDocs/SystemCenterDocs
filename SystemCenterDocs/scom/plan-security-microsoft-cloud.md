@@ -24,7 +24,7 @@ ms.topic: article
 
 The Azure monitoring pack runs on a specified agent and uses various Windows Azure APIs to remotely discover and collect instrumentation information about a specified Windows Azure application.  Secure communication and authentication with Azure is performed by certificate authentication, which is required in order to successfully monitor workloads hosted in Azure with Operations Manager.  
 
-If you don’t have a management certificate already, begin here by reviewing [Certificates overview for Azure Cloud Services](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx).
+If you don’t have a management certificate already, begin here by reviewing [Certificates overview for Azure Cloud Services](/previous-versions/azure/gg551722(v=azure.100)).
 
 For more information, see [Introducing the Windows Azure Service Management API](https://azure.microsoft.com/blog/introducing-the-windows-azure-service-management-api/) on the Windows Azure team blog.
 

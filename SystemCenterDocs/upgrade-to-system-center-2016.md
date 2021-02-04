@@ -50,7 +50,7 @@ The following sections provide detailed considerations for each component.
 
 ## DPM Upgrade
 
-You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, read the [Installation prerequisites](/system-center/dpm/install-dpm).
+You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, read the [Installation prerequisites](./dpm/install-dpm.md).
 
 
 ### Upgrade path for DPM 2016
@@ -63,7 +63,7 @@ If you're going to upgrade from a previous version of DPM to DPM 2016, make sure
 - Upgrade DPM Remote Administrator on all production servers.
 - Backups will continue without rebooting your production server.
 
-For complete instructions, see the article, [Upgrade to DPM 2016](/system-center/dpm/upgrade-to-dpm-2016).
+For complete instructions, see the article, [Upgrade to DPM 2016](./dpm/upgrade-dpm.md).
 
 ## Operations Manager Upgrade
 [!NOTE]
@@ -126,7 +126,7 @@ Upgrading:
 
 1. Stop all Orchestrator runbooks.
 2. Uninstall the Orchestrator management server, any runbook servers, the Web Service, and the Runbook Designer.
-3. Install the Orchestrator management server in System Center 2016, as described [here](/system-center/orchestrator/install).
+3. Install the Orchestrator management server in System Center 2016, as described [here](./orchestrator/install.md).
 4. Install any Orchestrator runbook servers in System Center 2016.
 5. Install the Orchestrator Runbook Designer in System Center 2016.
 6. If needed, install the Orchestrator Web Service in System Center 2016.
@@ -136,13 +136,13 @@ Upgrading:
 
 Before you upgrade:
 
-1. Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can standard tools and processes for [backing up SQL Server](https://go.microsoft.com/fwlink/p/?LinkId=216936).
+1. Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can standard tools and processes for [backing up SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 2. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Service Management Automation in System Center 2016.
 
 Upgrade:
 
 1. If SMA servers are being monitored by Operations Manager, put them in maintenance mode to prevent false alerts.
-2. Uninstall the SMA web service and SMA runbook workers using the instructions at <a href="https://technet.microsoft.com/library/dn469636(v=sc.12).aspx">How to uninstall Service Management Automation</a> for details.
+2. Uninstall the SMA web service and SMA runbook workers using the instructions at <a href="/previous-versions/system-center/system-center-2012-R2/dn469636(v=sc.12)">How to uninstall Service Management Automation</a> for details.
 3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](/system-center/sma/deploy#set-up-the-sma-runbook-worker).
 4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](/system-center/sma/deploy#install-the-service-automation-web-service).
 5. Remove SMA servers from maintenance mode.
@@ -167,7 +167,7 @@ Use the following steps to upgrade your Self Service portal and Service Manager 
 
 On the Service Manager 2012 R2 Silverlight Self Service Portal:
 1. Uninstall the Silverlight-based Self Service portal. Support for Silverlight was removed with Service Manager 2016.
-2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](/system-center/scsm/deploy-self-service-portal)
+2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](./scsm/deploy-self-service-portal.md)
 
 #### Upgrading the Self Service Portal from a standalone installation of the Service Manager 2012 R2 HTML5-based Self Service portal
 Use the following step to upgrade your Self Service portal and Service Manager management servers when they're **installed on different computers**.
@@ -219,7 +219,7 @@ You will follow  the same general steps for upgrading to System Center 2016 from
 3. Install any other software required by the component (see list below).
 4. Install the new version of the component with the "Upgrade database" option if appropriate.
 
-- For all upgrades to VMM 2016, you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](/system-center/vmm/system-reqs#sql-server) for the list of supported versions of SQL Server.
+- For all upgrades to VMM 2016, you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](./vmm/system-requirements.md#sql-server) for the list of supported versions of SQL Server.
 - You can upgrade both host and guest VMM agents from the VMM console.
 
 #### Upgrading a highly available VMM environment.
@@ -242,10 +242,10 @@ Note: If the VMMM database is hosted on a SQL Server running in the "Always on" 
 
 See the introductory information or important concepts about each of the technologies in System Center 2016. To view all of the service landing pages, see the [System Center documentation page](index.yml).
 
-* [Data Protection Manager](/system-center/dpm/dpm-overview)
-* [Operations Manager](/system-center/scom/key-concepts)
-* [Orchestrator](/system-center/orchestrator/learn-about-orchestrator)
-* [Service Manager](/system-center/scsm/service-manager)
-* [Service Management Automation](/system-center/sma/overview-of-service-management-automation)
-* [Virtual Machine Manager](/system-center/vmm/overview)
-* [Service Provider Foundation](/system-center/spf/overview)
+* [Data Protection Manager](./dpm/dpm-overview.md)
+* [Operations Manager](./scom/key-concepts.md)
+* [Orchestrator](./orchestrator/learn-about-orchestrator.md)
+* [Service Manager](./scsm/service-manager.md)
+* [Service Management Automation](./sma/overview-of-service-management-automation.md)
+* [Virtual Machine Manager](./vmm/overview.md)
+* [Service Provider Foundation](./spf/overview.md)

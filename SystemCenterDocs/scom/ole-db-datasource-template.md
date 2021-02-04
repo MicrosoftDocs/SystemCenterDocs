@@ -70,7 +70,7 @@ The following options are available on the  **Connection String**  page of the w
 
 | Option | Description |
 | --- | --- |
-| Connection string | The connection string to connect to the database. A connection string contains the properties required to locate and connect to the database. It contains such information as the server that is hosting the database, the database name, and the type of authentication to perform. You can type a connection string or build a connection string in a dialog box by clicking  **Build**.For more detailed information about connection strings, see [Connection String Syntax](https://go.microsoft.com/fwlink/?linkid=70748). |
+| Connection string | The connection string to connect to the database. A connection string contains the properties required to locate and connect to the database. It contains such information as the server that is hosting the database, the database name, and the type of authentication to perform. You can type a connection string or build a connection string in a dialog box by clicking  **Build**.For more detailed information about connection strings, see [Connection String Syntax](/previous-versions/windows/desktop/ms722656(v=vs.85)). |
 | Query to execute | Optional query after the connection to the database has been made. If no query is provided, the monitor only attempts to connect to the database. |
 | Query time-out | If a query is provided, this option specifies the maximum number of seconds that the query can take before it times out. You must set the  **Query Time-out**  value. |
 
@@ -90,7 +90,7 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 
 | Option | Description |
 | --- | --- |
-| Select one or more agent-managed computers | Specify one or more agent-managed computers to run the monitor. For more information, see [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29). |
+| Select one or more agent-managed computers | Specify one or more agent-managed computers to run the monitor. For more information, see [Watcher Nodes](/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29). |
 | Run this query every | The frequency to attempt the connection to the database and run the query, if specified. |
 
 ## Security considerations
@@ -128,10 +128,10 @@ Simple authentication lets you connect to the database by using a simple name an
 
 12. Click  **Next**  when you have validated your connection string and query.
 13. Select the measurements that you want to monitor and set an error and warning threshold for each. Click  **Next**.
-14. Select one or more [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29) to run the monitor.
+14. Select one or more [Watcher Nodes](/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29) to run the monitor.
 15. Specify the frequency to run the monitor in the  **Run this query**  box. Click  **Next**.
 16. Review the summary of the monitor, and then click  **Create**.
-17. If a Run As account with credentials that have access to the database does not exist, create an appropriate Run As account in the  **Administration**  workspace. For more information, see [How to Create a Run As Account](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh321655%28v%3dsc.12%29).
+17. If a Run As account with credentials that have access to the database does not exist, create an appropriate Run As account in the  **Administration**  workspace. For more information, see [How to Create a Run As Account](/previous-versions/system-center/system-center-2012-R2/hh321655%28v%3dsc.12%29).
 
      > [!NOTE]
      > To create and modify a Run As account, you must have administrative credentials for the management group.
@@ -172,4 +172,4 @@ Simple authentication lets you connect to the database by using a simple name an
 ## See also
 
 - [Creating Management Pack Templates](create-management-pack-templates.md)
-- [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
+- [Watcher Nodes](/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)

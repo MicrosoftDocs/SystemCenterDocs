@@ -30,9 +30,9 @@ Storage Spaces Direct (S2D) was introduced in Windows Server 2016. It groups phy
 
 ## How does it work?
 
-S2D creates pools of storage from storage that's attached to specific nodes in a Windows Server cluster. The storage can be internal on the node, or disk devices that are directly attached to a single node. Supported storage drives include NVMe, SSD connected via SATA or SAS, and HDD. [Learn more](https://technet.microsoft.com/windows-server-docs/storage/storage-spaces/choosing-drives-and-resiliency-types).
+S2D creates pools of storage from storage that's attached to specific nodes in a Windows Server cluster. The storage can be internal on the node, or disk devices that are directly attached to a single node. Supported storage drives include NVMe, SSD connected via SATA or SAS, and HDD. [Learn more](/windows-server/storage/storage-spaces/choosing-drives).
 -	When you enable S2D on a Windows Server cluster, S2D automatically discovers eligible storage, and adds it to a storage pool for the cluster.
--	S2D also creates a built-in server-side storage cache to maximize performance. The fastest drives are used for caching, and the remaining drives for capacity. [Learn more](https://technet.microsoft.com/windows-server-docs/storage/storage-spaces/understand-the-cache#cache-drives-are-selected-automatically) about the cache.
+-	S2D also creates a built-in server-side storage cache to maximize performance. The fastest drives are used for caching, and the remaining drives for capacity. [Learn more](/windows-server/storage/storage-spaces/understand-the-cache#cache-drives-are-selected-automatically) about the cache.
 -	You create volumes from a storage pool. Creating a volume creates the virtual disk (storage space), partitions and formats it, adds it to the cluster, and converts it to a clustered shared volumes (CSV).
 -	You configure different levels of fault tolerance for a volume, to specify how virtual disks are spread across physical disks in the pool, using SMB 3.0. You can configure a volume with no resiliency, or with mirror or parity resilience. [Learn more](https://blogs.technet.microsoft.com/filecab/2016/09/06/volume-resiliency-and-efficiency-in-storage-spaces-direct/).
 

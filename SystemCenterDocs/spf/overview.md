@@ -133,7 +133,7 @@ This graphic shows how SPF interacts with VMM
 
 ## VMM, SPF and Windows Azure Pack
 
-Windows Azure Pack provides an Azure-like experience and frontend for organizational clouds. Azure Pack provides a [number of components](https://technet.microsoft.com/library/dn469332.aspx), and among them, the VM cloud service. The VM cloud service with integrates with VMM to provide:
+Windows Azure Pack provides an Azure-like experience and frontend for organizational clouds. Azure Pack provides a [number of components](/previous-versions/azure/windows-server-azure-pack/dn469332(v=technet.10)), and among them, the VM cloud service. The VM cloud service with integrates with VMM to provide:
 
 -	A management portal for administrator to enable hosting or service provides to set up a VM provisioning infrastructure
 -	A tenant portal where tenants can sign up for the VM Clouds service, and provision VMs.

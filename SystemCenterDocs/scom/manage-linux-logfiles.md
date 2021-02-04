@@ -56,6 +56,6 @@ The basic operation of log file monitoring in Linux includes the following steps
 
 ## Next steps
 
-* To create a custom view to review the monitoring data from your custom log file management pack, review [Using views in Operations Manager](https://technet.microsoft.com/library/hh212694.aspx).  
+* To create a custom view to review the monitoring data from your custom log file management pack, review [Using views in Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212694(v=sc.12)).  
 
-* Review [Viewing active alerts and details](manage-alert-view-alerts-details.md) to learn how to investigate issues identified by your custom log file management pack.  
+* Review [Viewing active alerts and details](manage-alert-view-alerts-details.md) to learn how to investigate issues identified by your custom log file management pack.

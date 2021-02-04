@@ -41,4 +41,4 @@ This article lists the release notes for System Center 1801 - Service Provider F
 ::: moniker-end
 
 ## Next steps
-[What's new in Service Provider Foundation](whats-new-1801.md)
+[What's new in Service Provider Foundation](./whats-new-in-spf.md)

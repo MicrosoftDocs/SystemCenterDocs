@@ -31,4 +31,4 @@ This article shows a diagram that illustrates System Center Service Management A
   The management portal in Windows Azure Pack is where you author, debug, start, and stop runbooks.
 
 ## Next steps
-Learn [what's new](whats-new-1801.md) in the latest version of SMA.
+Learn [what's new](./whats-new-in-sma.md) in the latest version of SMA.

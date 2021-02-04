@@ -67,7 +67,7 @@ The following options are available on the  **Log File Details**  page of the wi
 
    - If you want to monitor the log file on all UNIX and Linux computers in the management group, you do not have to create a group. You can use the existing group **UNIX/Linux Computer Group**.
 
-   - If you only want the log file to be monitored on a certain group of computers, either ensure that an appropriate group exists or create a new computer group by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
+   - If you only want the log file to be monitored on a certain group of computers, either ensure that an appropriate group exists or create a new computer group by using the procedure in [How to Create Groups in Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
 
 2. Start the  **Add Monitoring**  wizard.
 3. On the  **Select Monitoring Type**  page, select  **UNIX/Linux Log File Monitoring** , and then click  **Next**.
@@ -102,5 +102,5 @@ There is no monitor or collected data for the  **UNIX/Linux Log File Monitoring*
 
 ## See also
 
-- [Creating Management Pack Templates](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh563869%28v%3dsc.12%29)
-- [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
+- [Creating Management Pack Templates](/previous-versions/system-center/system-center-2012-R2/hh563869%28v%3dsc.12%29)
+- [Watcher Nodes](/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)

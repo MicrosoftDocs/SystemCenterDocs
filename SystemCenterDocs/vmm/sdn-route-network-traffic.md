@@ -21,7 +21,7 @@ ms.technology: virtual-machine-manager
 
 This article describes how to route traffic across networks in a software-defined network (SDN) infrastructure set up in the System Center Virtual Machine Manager (VMM) fabric.
 
-An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site virtual private network (VPN) using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
+An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site virtual private network (VPN) using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
 ::: moniker range="sc-vmm-2019"
 
@@ -100,7 +100,7 @@ L3 forwarding enables connectivity between the physical infrastructure in the da
 
 Using L3 forwarding, tenant network virtual machines can connect to a physical network through the Windows Server 2016 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
 
-To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
+To learn more, check these articles: [Windows server gateway as a forwarding gateway](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn313101(v=ws.11)#bkmk_private) and [RAS gateway high availability](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
 **Ensure the following before you attempt to configure L3**:
 
@@ -269,7 +269,7 @@ L3 forwarding enables connectivity between the physical infrastructure in the da
 
 Using L3 forwarding connection, tenant network virtual machines can connect to a physical network through the Windows Server 2016/2019 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
 
-To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
+To learn more, check these articles: [Windows server gateway as a forwarding gateway](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn313101(v=ws.11)#bkmk_private) and [RAS gateway high availability](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
 
 **Ensure the following before you attempt to configure L3 connection**:

@@ -32,7 +32,7 @@ This walkthrough guides you through an installation of System Center - Operation
 
 ## Prerequisites
 
-You must ensure that your server meets the minimum supported configurations for System Center Operations Manager. For more information, see [System Requirements for System Center  Operations Manager](plan-system-requirements.md).
+You must ensure that your server meets the minimum supported configurations for System Center Operations Manager. For more information, see [System Requirements for System Center  Operations Manager](./system-requirements.md).
 
 **Required SQL Server Components**
 
