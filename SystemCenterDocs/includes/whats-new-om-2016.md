@@ -15,7 +15,7 @@ ms.topic: include
 
 ## New features in Operations Manager 2016
 
-The content in the following sections describe the new features in System Center 2016 - Operations Manager.
+The content in the following sections describe the new features and feature updates in System Center 2016 - Operations Manager.
 
 ## Improve desktop console performance
 
