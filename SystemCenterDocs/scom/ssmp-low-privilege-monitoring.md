@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Low-Privilege Monitoring
 
-All workflows (discoveries, rules, monitors and actions) in this management pack are bound to [Run As profiles](ssmp-run-as-profiles).
+All workflows (discoveries, rules, monitors and actions) in this management pack are bound to [Run As profiles](ssmp-run-as-profiles.md).
 
 To enable low-privilege monitoring, appropriate permissions should be granted to Run As accounts and these accounts should be bound to respective Run As profiles.
 
@@ -149,7 +149,7 @@ To configure low-privilege environments for agent monitoring, perform the follow
 
   You should execute the following provisioning steps on the agent machine or the database only if you want to allow the System Center Operations Manager console operator to take remedial actions on that target.
 
-  - If the task is related to starting or stopping an NT service (such as DB Engine Service, SQL Server Agent service, SQL Full Text Search Service, ntegration Services), on the agent machine, grant the **SQLTaskAction** user the permission to start or stop an NT service This involves setting a service security descriptor. For more information, see [Sc sdset](http://go.microsoft.com/fwlink/?LinkId=193876).
+  - If the task is related to starting or stopping an NT service (such as DB Engine Service, SQL Server Agent service, SQL Full Text Search Service, integration Services), on the agent machine, grant the **SQLTaskAction** user the permission to start or stop an NT service This involves setting a service security descriptor. For more information, see [Sc sdset](http://go.microsoft.com/fwlink/?LinkId=193876).
 
     Read the existing privileges for a given service (using **sc sdshow**) and grant additional privileges to the **SQLTaskAction** user.
 
@@ -338,7 +338,7 @@ If you want to create a new Run As account, do the following:
 
 ## Low-Privilege Mixed Monitoring
 
-To configure low-privilege environments for [Mixed monitoring](ssmp-monitoring-modes#configuring-mixed-monitoring-mode), perform the steps described in the [Low-Privilege Agent Monitoring](#low-privilege-agent-monitoring) section and then do the following:
+To configure low-privilege environments for [Mixed monitoring](ssmp-monitoring-modes.md#configuring-mixed-monitoring-mode), perform the steps described in the [Low-Privilege Agent Monitoring](#low-privilege-agent-monitoring) section and then do the following:
 
 - [Configure remote access to WMI](#managing-remote-access-to-wmi)
 

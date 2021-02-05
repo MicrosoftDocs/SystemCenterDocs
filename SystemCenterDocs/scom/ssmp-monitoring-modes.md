@@ -29,7 +29,7 @@ Management Pack for SQL Server provides the following monitoring modes:
 
     This monitoring mode does not provide automatic discovery of SQL Server instances. To discover SQL Server instances, add them to the monitoring list manually, as described in [Configuring Agentless Monitoring Mode](#configuring-agentless-monitoring-mode).
 
-    To make monitoring more efficient, configure a dedicated pool of Management Servers, as described in [Configuring SQL Server Monitoring Pool](./ssmp-configuring-sql-server-monitoring-pool.md).
+    To make monitoring more efficient, configure a dedicated pool of Management Servers, as described in [Configuring SQL Server Monitoring Pool](ssmp-sql-server-monitoring-pool.md).
 
 - **Mixed monitoring mode**
 

@@ -269,7 +269,7 @@
 ### [Management Pack Delivery](ssmp-management-pack-delivery.md)
 ### [Monitoring Configuration](ssmp-monitoring-configuration.md)
 #### [Monitoring Modes](ssmp-monitoring-modes.md)
-#### [How Health Rolls Up](how-health-roll-up.md)
+#### [How Health Rolls Up](ssmp-how-health-roll-up.md)
 #### [SQL Server Monitoring Pool](ssmp-sql-server-monitoring-pool.md)
 #### [Disabling Monitoring of SQL Servers and Databases](ssmp-disabling-monitoring.md)
 ### Security Configuration
@@ -277,4 +277,4 @@
 #### [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md)
 ### [Views and Dashboards](ssmp-views-and-dashboards.md)
 ### [SQL Server Reporting](ssmp-sql-server-reporting.md)
-### [Known Issues and Troubleshooting](known-issues-and-troubleshooting.md)
+### [Known Issues and Troubleshooting](ssmp-known-issues-and-troubleshooting.md)

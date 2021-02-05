@@ -35,12 +35,12 @@ Management Pack for SQL Server provides the following SQL Server agent alerting 
 
 - MSSQL on Windows: Unable to re-open the local eventlog
 
-By default, these rules are enabled in [Agent Monitoring](./ssmp-monitoring-modes.md) mode, but disabled in [Mixed Monitoring](./ssmp-monitoring-modes.md#configuring-mixed-monitoring-mod) mode because Operations Manager does not allow to collect events from event logs on remote computers. To change this, you can override each of these rules by enabling the **AllowProxying** option.
+By default, these rules are enabled in [Agent Monitoring](ssmp-monitoring-modes.md) mode, but disabled in [Mixed Monitoring](ssmp-monitoring-modes.md#configuring-mixed-monitoring-mod) mode because Operations Manager does not allow to collect events from event logs on remote computers. To change this, you can override each of these rules by enabling the **AllowProxying** option.
 
 >[!NOTE]
 >Enabling the **AllowProxying** option may cause remote code execution. Do not enable this option unless you are sure that your computer is secured.
 
-None of these rules work in [Agentless Monitoring](./ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode and are unavailable for SQL on Linux.
+None of these rules work in [Agentless Monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode and are unavailable for SQL on Linux.
 
 ## Always On Alert Rules
 

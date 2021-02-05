@@ -17,15 +17,15 @@ You can download Management Pack for SQL Server from the [Microsoft portal](http
 
 The package includes the following files:
 
-- **SQLServerMP.Windows.msi** — a set of .MP and .MPB files for monitoring SQL on Windows.
+- **SQLServerMP.Windows.msi**—a set of MP and MPB files for monitoring SQL on Windows.
 
-- **SQLServerMP.Linux.msi** — a set of .MP and .MPB files for monitoring SQL on Linux.
+- **SQLServerMP.Linux.msi**—a set of MP and MPB files for monitoring SQL on Linux.
 
-- **SQLServerMPGuide.pdf** — the operations guide.
+- **SQLServerMPGuide.pdf**—the operations guide.
 
-- **SQLServerDashboardsGuide.pdf** — the operations guide for SQL MP Dashboards.
+- **SQLServerDashboardsGuide.pdf**—the operations guide for SQL MP Dashboards.
 
-- **SQLServerMPWorkflowList.pdf** — a complete list of SQL Server MP workflows.
+- **SQLServerMPWorkflowList.pdf**—a complete list of SQL Server MP workflows.
 
 Management Pack for SQL Server consists of the following files:  
 
@@ -53,12 +53,12 @@ Management Pack for SQL Server consists of the following files:
 
 - Microsoft.SQLServer.Windows.Monitoring.mpb
 
-[!NOTE]
+>[!NOTE]
 >Do not import **Microsoft.SQLServer.Core.WebDashboards.mp** if the version of System Center Operations Manager that you use is lower than 2019. This file contains SQL Server MP Dashboards for the new Operations Manager Web Console introduced in System Center Operations Manager 2019.
 
 ## Prerequisites
 
-The following is a list of prerequisites that should be considered before you start using Management Pack for SQL Server:
+The environment that you use must meet the following prerequisites before you start using Management Pack for SQL Server:
 
 - Install **.NET Framework 4.5** or higher.
 
@@ -66,11 +66,11 @@ The following is a list of prerequisites that should be considered before you st
 
 - Remove overrides for the **SQL on Windows: Discover Installation Source (seed)** discovery when upgrading Management Pack for SQL Server 2017+ to the current one
 
-- Enable the **Allow log on locally** security policy for the domain monitoring account used as an action account.
+- Enable the **Allow log on locally** security policy for the domain account that is used as an action account.
 
-- Enable the **Agent Proxy** option on each agent that may use this management pack for SQL Server monitoring. This would allow agents to forward data to the Management Server on behalf of another entity.
+- Enable the **Agent Proxy** option on each agent that may use this management pack for monitoring to allow agents to forward data to the Management Server on behalf of another entity.
   
-  This option should be enabled if the agent workflow scenarios discover any non-hosted objects craeted by the management pack for each SQL Server instance.
+  This option should be enabled if the agent workflow scenarios discover any non-hosted objects created by the management pack for each SQL Server instance.
 
 - Enable and run SQL Server Browser for [Agentless Monitoring](./ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode.
   
@@ -86,11 +86,11 @@ The following is a list of prerequisites that should be considered before you st
 
 - Grant the **Author set of privileges** on SCOM SDK
 
-  This management pack requires the author set of privileges on SCOM SDK to be able to create a management pack for storing overrides. If these privileges have not been granted to the default action account on SCOM, create a new account with these privileges and map it to the Microsoft SQL Server SCOM SDK Run As Profile.
+  This management pack requires an author set of privileges to create a management pack for storing overrides. If the default action account does not have these privileges, create a new account and map this account to the Microsoft SQL Server Run As Profile.
 
 ## Importing Management Pack
 
-Management Pack for SQL Server is version-agnostic and supports discovery and monitoring of SQL Server 2012 through 2019 and higher, including SQL on Linux with SQL Server 2017 and higher.
+Management Pack for SQL Server is version-agnostic. It supports discovery and monitoring of SQL Server 2012 through 2019 and higher, including SQL on Linux with SQL Server 2017 and higher.
 
 For more information on how to import management packs, see [How to Import a Management Pack](http://go.microsoft.com/fwlink/?LinkId=142351).
 
