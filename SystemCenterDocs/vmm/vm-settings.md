@@ -5,7 +5,7 @@ description: This article describes how to configure settings for VMs in the VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 30/03/2021
+ms.date: 02/05/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
