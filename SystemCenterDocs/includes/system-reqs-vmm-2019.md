@@ -55,6 +55,7 @@ Windows Server 2016 Server Core| Y | N | If supported by SQL Server version
 Windows Server 2016 with desktop experience | Y | Y | If supported by SQL Server version
 Windows Server 2019 with desktop experience| Y | Y | If supported by SQL Server version
 Windows Server 2019 Server Core| Y | Y | If supported by SQL Server version
+Azure Stack Hyper Converged Infrastructure ((supported from 2019 UR3 and later))| Y | Y | If supported by SQL Server version
 
 > [!NOTE]
 > Ensure that VMM server operating system  is same as the managed host operating system in case of deployment of  Hyper Converged Infrastructure.

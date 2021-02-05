@@ -79,6 +79,9 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.15.53|
 |Release|Oracle Solaris 10 1/13|s10s_u11wos_24a SPARC|
 
+> [!NOTE]
+> TLS 1.2 for Solaris 10 is supported with Operations Manager 2019 UR3 and later.
+
 ## Solaris 11 SPARC
 
 |Required package|Description|Minimum version|
@@ -153,7 +156,7 @@ CentOS 8 is supported from 2019 UR2 and later in XPlat agent under Universal Lin
 Operations Manager 2019 UR3 supports RHEL6 via RHEL6 management pack.
 
 > [!NOTE]
-> Universal Linux management pack will not discover/monitor RHEL6 from 2019 UR3 and later. 
+> Universal Linux management pack will not discover/monitor RHEL6 from 2019 UR3 and later.
 
 ::: moniker-end
 
