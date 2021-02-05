@@ -57,7 +57,7 @@ The properties pages for alerts, rules, and monitors offer useful information an
 |Overrides|Administrators can apply overrides to the monitor on the overrides tab. Click **View summary** to view all overrides applied to the monitor.|  
 
 >[!NOTE]
-> Orphan alerts are closed based on the type of monitor.  
+> Orphan alerts are closed based on the type of monitor. [Learn more](manage-alert-created-by-monitor.md#closure-of-orphan-alerts)
 
 
 ## Next steps
