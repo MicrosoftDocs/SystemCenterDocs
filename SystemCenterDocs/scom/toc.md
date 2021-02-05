@@ -263,3 +263,18 @@
 #### [How to move the Reporting data warehouse database](manage-move-omdwdb.md)
 #### [How to configure grooming settings for the Operations Manager database](manage-omdb-grooming-settings.md)
 #### [How to configure grooming settings for the Reporting data warehouse database](manage-omdwdb-grooming-settings.md)
+# Management Packs
+## Management Pack for SQL Server
+### [Management Pack Scope and Supported Configuration](ssmp-supported-configuration.md)
+### [Management Pack Delivery](ssmp-management-pack-delivery.md)
+### [Monitoring Configuration](ssmp-monitoring-configuration.md)
+#### [Monitoring Modes](ssmp-monitoring-modes.md)
+#### [How Health Rolls Up](how-health-roll-up.md)
+#### [SQL Server Monitoring Pool](ssmp-sql-server-monitoring-pool.md)
+#### [Disabling Monitoring of SQL Servers and Databases](ssmp-disabling-monitoring.md)
+### Security Configuration
+#### [Run As Profiles](ssmp-run-as-profiles.md)
+#### [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md)
+### [Views and Dashboards](ssmp-views-and-dashboards.md)
+### [SQL Server Reporting](ssmp-sql-server-reporting.md)
+### [Known Issues and Troubleshooting](known-issues-and-troubleshooting.md)
