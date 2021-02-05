@@ -33,12 +33,12 @@ You can add and remove virtual network adapters (vNICs) from VMs that are runnin
 - This feature is only available for Generation 2 VMs.
 - By default added virtual network adapters aren't connected to a virtual network. You can configure VMs assigned with the hardware profile to use one or more of the virtual network adapters, after they're deployed on a host.
 
-### support-for-trunk-mode
+### Support for trunk mode
 VMM 2019 UR3 and later supports *trunk* mode for VM vNICs. Trunk mode is used by NFV/VNF
 applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over
 multiple vLANs. You can enable trunk mode through console and PowerShell.
 
-see the following section for enabling Trunk mode through console, see [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019) and New-[SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019) for enabling through PowerShell commandlets.
+See the following section for enabling Trunk mode through console, see [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019) and New-[SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019) for enabling through PowerShell commandlets.
 
 
 >[!NOTE]
