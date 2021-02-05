@@ -233,6 +233,43 @@ Follow these steps:
 
 6.  Refresh the alerts view. If the alert is still listed, click the alert and then click **Close Alert** in the Actions pane.
 
+::: moniker range="sc-om-2019"
+
+## Closure of orphan alerts
+
+>[!NOTE]
+> This update is applicable for Operations Manager 2019 UR3 and later.
+
+In Operations Manager 2019 RTM, UR1 and UR2, active alerts are not getting closed after non-Persistent health state in certain scenarios, as detailed below:
+
+1. Failover:
+   - The failover that might get triggered when the management server goes offline.
+   - Due to addition of new management servers to the resource pool, leading to load-balancing.  
+   - When an agentless computer fails over and is to be monitored by another management server, hence the new health status.
+
+2. Agent disconnected and connected again after some time, in which the health status change is not aware of the previous state.
+
+3. Management server disconnected and connected again.
+
+4. Health service cache cleared.  
+
+Overall, health service doesn’t hold the last state of the monitor; alerts are not closed while resetting the monitor to healthy.
+
+With Operations Manager 2019 UR3, all of the orphan alerts are closed, eventually, depending on the type of monitor, as detailed below:
+
+- **Service monitor**: close immediately.
+- **All monitors with immediate on demand module**: close immediately.
+- **All monitors without on demand modules**: close on the second run, depending on the frequency.
+- **Event-based monitor**: close with a healthy event that occurs after initialization.
+
+Health state transition shows a minor change when monitor is initializing, sample below:
+
+![Health state](./media/enhanced-alert-closure-experience/health-state-transition.png)
+
+As shown in the figure above, during initialization, monitor first turns healthy. Then it again calculates and turns healthy. You will see two state change transitions from *hollow state to healthy*.
+
+::: moniker-end
+
 ## Next steps
 
 - When an alert is generated, you can [View Active Alerts and Details](manage-alert-view-alerts-details.md) in the Operations and Web console to identify possible issues and help identify next steps towards resolving them.        
