@@ -375,11 +375,11 @@ Operating system that runs on on-premises clusters with virtualized workloads.
 
 **Supported scenarios to manage Azure Stack HCI clusters**:
 
-- Addition, creation, and management of Azure stack HCI clusters. [See detailed steps](#provision-vms) to create and manage HCI clusters
+- Addition, creation, and management of Azure stack HCI clusters. [See detailed steps](../vmm/provision-vms.md) to create and manage HCI clusters
 - Ability to provision & deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs
-can be provisioned using VHD files, templates or from an existing VM. [Learn more](#provision-vms.md).
-- [Set up VLAN based network on Azure Stack HCI clusters](#manage-networks).
-- [Deployment and management of SDN network controller on Azure Stack HCI clusters](#sdn-controller.md).
+can be provisioned using VHD files, templates or from an existing VM. [Learn more](../vmm/provision-vms.md).
+- [Set up VLAN based network on Azure Stack HCI clusters](../vmm/manage-networks.md).
+- [Deployment and management of SDN network controller on Azure Stack HCI clusters](../vmm/sdn-controller.md).
 - [Management of storage pool settings, creation of virtual disks, creation of cluster shared volumes (CSVs) and
 application of QOS settings].
 
