@@ -345,9 +345,9 @@ The following sections introduce the new features or feature updates supported i
 
 For the problems fixed in UR3, and the installation instructions for UR3, see the KB article.
 
-### Updates to change tracking for management packs
+### Updates to change tracking feature
 
-Operations Manager 2019 UR3 includes updates to the change tracking feature. This feature now supports change tracking for agent and monitor health reset.
+Operations Manager 2019 UR3 includes updates to the change tracking feature for management packs. This feature now supports change tracking for agent and monitor health reset.
 
 ### Additional view options in web console widgets
 
@@ -359,7 +359,7 @@ With Operations Manager 2019 UR3, SSL renegotiations have been disabled. OMI use
 
 ### Dynamic changes in log-level settings without agent restart
 
-With Operations Manager 2019 UR3, log-level settings can be changed without the need for restarting the agent.
+With Operations Manager 2019 UR3, you can change the log-level settings without restarting the agent.
 
 ### Resolved issues with orphan alerts
 
@@ -367,7 +367,7 @@ In earlier releases, active alerts are not getting closed after non-persistent h
 
 With Operations Manager 2019 UR3, all of the orphan alerts are closed, eventually, depending on the type of monitor.
 
-### Support for RHEL 6 in XPlat agent
+### Support for RHEL 6 in XPLAT agent
 
 Operations Manager 2019 UR3 supports RHEL6 via RHEL6 management pack. With Operations Manager 2019 UR3, Universal Linux management pack will not discover/monitor RHEL6.
 
