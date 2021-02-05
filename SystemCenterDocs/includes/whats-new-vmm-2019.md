@@ -360,11 +360,11 @@ For problems fixed in VMM 2019 UR3, and installation instructions for UR3, see t
 
 ### Trunk mode support for VM vNICs
 
-VMM 2019 UR3 includes trunk mode support for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs. [Learn more](../vmm/vm-settings.md#trunk-mode-support-for-vm-vnics).
+VMM 2019 UR3 includes trunk mode support for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs.
 
 ### Manage Azure stack HCI clusters
 
-VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters in VMM. Most of the operations to manage Azure stack clusters in VMM are similar to that of managing Windows Server clusters. [Learn more about Azure stack HCI ](//azure-stack/hci/).
+VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters in VMM. Most of the operations to manage Azure stack clusters in VMM are similar to that of managing Windows Server clusters.
 
 In addition to the current SKU of server operating system, VMM expands its support to Azure Stack HCI.
 Azure Stack HCI, currently in public preview is the newly introduced hyper-converged infrastructure (HCI)
