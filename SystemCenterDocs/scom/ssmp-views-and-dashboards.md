@@ -1,7 +1,7 @@
 ---
 ms.assetid: 876c7d8c-0b45-4cb2-b3c0-d8748603875a
 title: Views and Dashboards
-description: This article explains Views and Dashboards
+description: This article explains views and dashboards
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
@@ -23,7 +23,7 @@ The following views and dashboards are version-independent and show information 
 
 The **Computers** node view displays computers on which the agents are installed and the management pack discovery is running. This view does not display computers configured for agentless monitoring.
 
-The **SQL Server Roles** dashboard provides information about all instances of SQL Server Database Engine, SQL Server Reporting Services, SQL Server Analysis Services and SQL Server Integration Services.
+The **SQL Server Roles** dashboard provides information about all instances of SQL Server Database Engine, SQL Server Reporting Services, SQL Server Analysis Services, and SQL Server Integration Services.
 
 ![SQL server roles](./media/ssmp/sql-server-roles.png)
 
@@ -33,7 +33,7 @@ Management Pack for SQL Server introduces a comprehensive set of state, performa
 
 ![State sets](./media/ssmp/state-sets.png)
 
-Some views may contain a very long list of objects and metrics. To find a specific object or group of objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding Data and Objects in the Operations Manager Consoles](https://go.microsoft.com/fwlink/?LinkId=717834).
+Some views may contain a long list of objects and metrics. To find a specific object or group of objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding Data and Objects in the Operations Manager Consoles](https://go.microsoft.com/fwlink/?LinkId=717834).
 
 ## SQL Server Dashboards
 
@@ -49,11 +49,11 @@ This dashboard consists of six aggregated group tiles. Each tile shows summary i
 
 You can double-click an aggregated group tile to drill down the hierarchy until you reach the objects you are most interested in.
 
-![Tiles](./media/ssmp/tiles.png)
+![Viewing tiles](./media/ssmp/tiles.png)
 
-As per example above, if you double-click the **SQL Server Instances** aggregated group tile, you will see information about existing instances, active alerts and the **Monitoring** section that encompasses entity-specific tiles.
+As per example above, if you double-click the **SQL Server Instances** aggregated group tile, you will see information about existing instances, active alerts, and the **Monitoring** section that encompasses entity-specific tiles.
 
-![Tiles hierarchy](./media/ssmp/tiles-hierarchy.png)
+![Viewing tiles hierarchy](./media/ssmp/tiles-hierarchy.png)
 
 There are two types of entity-specific tiles:
 
@@ -61,8 +61,8 @@ There are two types of entity-specific tiles:
 
 - Monitor tiles
 
-You can double-click any of these tiles to see the associated performance monitor or health explorer. For example, if you double click the *DB Engine Health Status* tile, the **Health Explorer** window appears, showing you the health state of the DB engine.
+You can double-click any of these tiles to see the associated performance monitor or health explorer. For example, if you double-click the *DB Engine Health Status* tile, the **Health Explorer** window appears, showing you the health state of the DB engine.
 
 ![Health-explorer](./media/ssmp/health-explorer.png)
 
-You can scroll to the right to see all available performance and monitor tiles. You can also move any tile if you want to re-arrange the default order of tiles. To move a tile, right-click it and then move it to the desired position.
+You can scroll to the right to see all available performance and monitor tiles. You can also move any tile if you want to rearrange the default order of tiles. To move a tile, right-click it and then move it to the desired position.

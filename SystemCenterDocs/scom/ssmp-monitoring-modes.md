@@ -21,6 +21,14 @@ Management Pack for SQL Server provides the following monitoring modes:
 
     In this monitoring mode, the management pack automatically discovers stand-alone and clustered instances of SQL Server across all managed systems that run the System Center Operations Manager agent service.
 
+    The following protocols are supported by this mode: 
+    
+    - TCP/IP
+    
+    - Named Pipes
+    
+    - Shared Memory
+
 - **Agentess monitoring mode**
 
     This monitoring mode supports both SQL on Linux and SQL on Windows.
@@ -31,6 +39,12 @@ Management Pack for SQL Server provides the following monitoring modes:
 
     To make monitoring more efficient, configure a dedicated pool of Management Servers, as described in [Configuring SQL Server Monitoring Pool](ssmp-sql-server-monitoring-pool.md).
 
+    The following protocols are supported by this mode: 
+    
+    - TCP/IP
+    
+    - Named Pipes
+
 - **Mixed monitoring mode**
 
     This monitoring mode supports SQL on Windows only.
@@ -38,6 +52,10 @@ Management Pack for SQL Server provides the following monitoring modes:
     In this monitoring mode, the management pack places its seed on each computer that has the System Center Operations Manager agent. This seed is then used to automatically discover all SQL Server on Windows instances. The entire monitoring is performed from Management Servers and Gateway Servers that are members of the SQL Server Monitoring Pool.
 
     For more information on how to configure this mode, see [Configuring Mixed Monitoring Mode](#configuring-mixed-monitoring-mode).
+
+    The following protocols are supported by this mode: 
+    
+    - TCP/IP
 
 Each of these modes supports both the SQL Server and the Windows authentication.
 
@@ -143,6 +161,6 @@ To configure mixed monitoring, perform the following steps:
 
 4. In the **Override Value** field, specify instances that you want to switch to agentless monitoring.
   
-    Use commas to separate instance names. If you want to add all instances, including instances that have the same name but are located on different servers, enter an asterisk character (\*).
+    Use commas to separate instance names. To add all instances, including instances with the same name and instances that are located on different servers, use asterisk (\'*').
 
     ![Override properties](./media/ssmp/override-properties.png)

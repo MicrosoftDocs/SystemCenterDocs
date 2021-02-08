@@ -1,7 +1,7 @@
 ---
 ms.assetid: 2c4831ae-0b67-40c0-a91f-247a3ee3e01f
 title: Run As Profiles
-description: This article explains Run As Profiles
+description: This article explains run as profiles
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
@@ -39,7 +39,7 @@ Management Pack for SQL Server provides the following Run As profiles:
 
 Do not bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes, as only a basic action account can be bound to this profile. Also, do not use a Windows account or non-basic account with this profile.
 
-When using agent or mixed monitoring mode, all discoveries, monitors, and tasks use accounts from the *Default Action Account* Run As profile.
+When using agent or mixed monitoring mode, all discoveries, monitors, and tasks use accounts from the **Default Action Account** Run As profile.
 
 If the default action account for a given system does not have necessary permissions to discover and monitor instances of SQL Server, such systems can be bound to more specific credentials defined in **Microsoft SQL Server** Run As profiles.
 
@@ -105,11 +105,11 @@ Follow these steps to configure the security configuration using SID:
 
 ### Low-Privilege Monitoring
 
-If you need to grant minimum required rights to the SQL MP workflows, follow the instructions provided in [Configuring Low-Privilege Monitoring](ssmp-low-privilege-monitoring).
+If you need to grant minimum required rights to the SQL MP workflows, follow the instructions provided in [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md).
 
 ## Configuring Run As Profiles for Agentless Monitoring Mode
 
-To configure Run As Profiles in [Agentless Monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode, create an account in SQL Server grant this account SA rights or a set of low privilege permissions. You can use SQL Server authentication or Windows authentication. Once created, you can use this account in the [Add Monitoring Wizard](ssmp-low-privilege-monitoring.md) to add a SQL Server instance.
+To configure Run As Profiles in [Agentless Monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode, create an account on SQL Server and grant this account SA rights or a set of low privilege permissions. You can use SQL Server authentication or Windows authentication. Once created, you can use this account in the [Add Monitoring Wizard](ssmp-low-privilege-monitoring.md#using-add-monitoring-wizard) to add SQL Server instances.
 
 For more information on how to configure low privilege monitoring in agentless monitoring mode, see the [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md).
 
@@ -117,17 +117,19 @@ For more information on how to configure low privilege monitoring in agentless m
 
 Below are the steps to configure monitoring using Service SIDs for SQL Server on a Windows Server instance. These steps were first published by Kevin Holman in [his blog](https://kevinholman.com/2016/08/25/sql-mp-run-as-accounts-no-longer-required/). The SQL scripts to configure lowest-privilege access were developed by Brandon Adams.
 
-To configure monitoring with Service Security Identifier, perform the following steps:
+To configure monitoring using Service Security Identifier, perform the following steps:
 
 1. Open the command prompt as administrator and run the **sc sidtype HealthService unrestricted** command.
 
 2. Restart the Health Service.
 
-3. Run the **sc showsid HealthService** command. The **STATUS** parameter should be active.
+3. Run the **sc showsid HealthService** command. 
+
+    The **STATUS** parameter should be active.
 
     ![Running HealthService](./media/ssmp/health-service-command.png)
 
-4. Open **Registry Editor** and check that the *ServiceSidType* key is set to 1 at *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService*.
+4. Open **Registry Editor** and check that the **ServiceSidType** key is set to 1 at *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService*.
 
 5. Create the NT SERVICE\HealthService account for the HealthService SID on every SQL Server Instance and grant it SA rights. 
 
@@ -136,7 +138,7 @@ To configure monitoring with Service Security Identifier, perform the following 
     ```sql
     USE [master]
     SET NOCOUNT ON
-    /*User account which System Center Operations Manager will use for access
+    /*User account that System Center Operations Manager will use to access
         Default is the Service SID for the HealthService*/
     DECLARE @accountname sysname = 'NT SERVICE\HealthService'
     -- Create the server role and grant permissions
@@ -205,7 +207,7 @@ To configure monitoring with Service Security Identifier, perform the following 
       , @membername='SCOM_HealthService';
     ```
 
-6. In order to run SQL Server MP tasks, such as *Set database Offline*, *Set database Online*, and *Set database to Emergency state*, grant HealthService SID account the **ALTER ANY DATABASE** permission.
+6. To run SQL Server MP tasks, such as **Set database Offline**, **Set database Online**, and **Set database to Emergency state**, grant HealthService SID account the **ALTER ANY DATABASE** permission.
 
     ```sql
     USE [master]
@@ -226,11 +228,11 @@ To configure HealthService Service SID for monitoring of SQL Server failover clu
 
 2. Expand **Component Services**, right-click **My Computer**, select **Properties**, and open the **Security** tab.
 
-3. Click **Edit Limits** in the *Launch and Activation Permissions* section.
+3. In the **Launch and Activation Permissions** section, click **Edit Limits**.
 
     ![Editing limits](./media/ssmp/editing-limits.png)
 
-4. In the **Launch and Activation Permission** window, Enable the following permissions for the NT SERVICE\\HealthService account:
+4. In the **Launch and Activation Permission** window, enable the following permissions for the NT SERVICE\\HealthService account:
 
     - Remote Launch
     
@@ -286,7 +288,7 @@ The local system account of each node that might act as the Primary one must hav
 
 Below are the steps to configure security for configurations with the local system account. The provided instruction suggests that the *SQLAON-020* computer hosts the primary replica. These steps should be taken on each replica that participates in the target Availability Group.
 
-To configure permissions for Always On workflows when server names exceeds 15 characters, perform the following steps:
+To configure permissions for Always On workflows when server names exceed 15 characters, perform the following steps:
 
 1. Launch **mmc.exe** and add the following snap-ins:
 
@@ -298,7 +300,7 @@ To configure permissions for Always On workflows when server names exceeds 15 ch
 
 3. Open the **COM Security** tab.
 
-4. Click **Edit Limits** in the **Launch and Activation Permissions** section.
+4. In the **Launch and Activation Permissions** section, click **Edit Limits**.
 
     ![Editing limits for always on](./media/ssmp/editing-limits.png)
 
@@ -320,10 +322,12 @@ To configure permissions for Always On workflows when server names exceeds 15 ch
 
     ![Enabling target machine permissions](./media/ssmp/target-computer-permissions.png)
 
-8. Click **Advanced**, select a target account and click **Edit**.
+8. Click **Advanced**, select a target account, and click **Edit**.
 
-9. Make sure that the **Applies to** parameter is set to **This namespace only** and enable the following permissions:
+9. From the **Applies to** drop-down list, select **This namespace only**.
 
+10. In the **Permissions** section, enable the following checkboxes:
+    
     - Enable Account
     
     - Remote Enable

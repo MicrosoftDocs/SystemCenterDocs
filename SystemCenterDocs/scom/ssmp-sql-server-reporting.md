@@ -1,7 +1,7 @@
 ---
 ms.assetid: b4dbae9a-cf0d-4598-96d8-421e10681e45
 title: SQL Server Reporting
-description: This article explains SQL Server Reporting
+description: This article explains SQL Server reporting
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # SQL Server Reporting
 
-Management Pack for SQL Server introduces the **Database Files Space Usage Forecast** report that provides the following information:
+Management Pack for SQL Server introduces the **Database Files Space Usage Forecast** report that provides the following information about Windows objects:
 
 - Initially consumed file space (GB)
 
@@ -24,8 +24,6 @@ Management Pack for SQL Server introduces the **Database Files Space Usage Forec
 - Final average free file space (%)
 
 - File space consumption forecast (GB)
-
-Note that this report works with Windows objects only.
 
 To open the report, perform the following steps:
 

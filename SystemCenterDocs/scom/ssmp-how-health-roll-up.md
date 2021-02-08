@@ -1,7 +1,7 @@
 ---
 ms.assetid: ec50ea24-d1e0-4230-a3fc-717bd6556cb5
 title: How Health Rolls Up
-description: This article explains How Health Rolls Up
+description: This article explains how health rolls up
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal

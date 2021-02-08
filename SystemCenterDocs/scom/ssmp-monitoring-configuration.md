@@ -64,7 +64,7 @@ sp_altermessage 19406, 'with_log', 'true'
 
 Management Pack for SQL Server collects health for all available Always On objects on the target SQL Server instance by reading the PBM (Policy-Based Management) policies state for each of the objects.
 
-Besides system policies, this management pack provides the ability to monitor Custom User Policies defined for these facets:
+Besides system policies, this management pack provides the ability to monitor custom user policies defined for:
 
 - Availability Group
 
@@ -92,9 +92,9 @@ This feature supports the following types of media:
 
 - Azure BLOBs
 
-By default, space monitoring is enabled for all levels. Alerts will be registered only when all files in the file group are unhealthy.
+By default, space monitoring is enabled for all levels. Alerts will only be registered if all files in the file group are unhealthy.
 
-If your environment is sensitive for any extra load, disable monitoring at the File group and File levels.
+If your environment is sensitive for any extra load, disable monitoring at the file group and file levels.
 
 ## Many Databases on the Same Drive
 
@@ -194,3 +194,49 @@ The following is a complete list of securables checked by the monitor targeted t
   - sys.tables
   - sys.filegroups
   - sys.syscolumns
+
+## Disabled Space Monitoring Workflows for SQL on Linux
+
+Because SQL Server on Linux does not provide required data, the following rules and monitors are disabled by default:
+
+- Rules:
+
+  - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (MB)
+  
+  - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (%)
+  
+  - MSSQL on Linux: DB FILESTREAM Filegroup Free Space Total (%)
+  
+  - MSSQL on Linux: DB FILESTREAM Filegroup Free Space Total (MB)
+  
+  - MSSQL on Linux: DB Filegroup Free Space Total (%)
+  
+  - MSSQL on Linux: DB Filegroup Free Space Total (MB)
+  
+  - MSSQL on Linux: DB Filegroup Allocated Free Space (%)
+  
+  - MSSQL on Linux: DB Filegroup Allocated Free Space (MB)
+  
+  - MSSQL on Linux: DB Free Outer Space (MB)
+  
+  - MSSQL on Linux: DB Allocated Free Space (MB)
+  
+  - MSSQL on Linux: DB Transaction Log Free Space Total (%)
+  
+  - MSSQL on Linux: DB Allocated Space Used (MB)
+  
+  - MSSQL on Linux: DB Free Space Total (%)
+  
+  - MSSQL on Linux: DB Free Space Total (MB)
+  
+  - MSSQL on Linux: DB Allocated Space (MB)
+
+- Monitors:
+  
+  - DB Free Space Left
+  
+  - DB Space Percentage Change
+  
+  - Transaction Log Free Space (%)
+  
+  - DB FILESTREAM Filegroup Free Space

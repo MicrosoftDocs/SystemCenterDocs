@@ -265,6 +265,7 @@
 #### [How to configure grooming settings for the Reporting data warehouse database](manage-omdwdb-grooming-settings.md)
 # Management Packs
 ## Management Pack for SQL Server
+### [Changes History](ssmp-changes-history.md)
 ### [Management Pack Scope and Supported Configuration](ssmp-supported-configuration.md)
 ### [Management Pack Delivery](ssmp-management-pack-delivery.md)
 ### [Monitoring Configuration](ssmp-monitoring-configuration.md)

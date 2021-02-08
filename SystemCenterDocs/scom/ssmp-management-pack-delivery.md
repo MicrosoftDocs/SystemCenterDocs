@@ -13,19 +13,13 @@ ms.technology: operations-manager
 
 # Management Pack Delivery
 
-You can download Management Pack for SQL Server from the [Microsoft portal](https://www.microsoft.com/) and System Center Operations Manager Online Catalog.
+You can download Management Pack for SQL Server from the [Microsoft portal](https://www.microsoft.com/en-us/download/details.aspx?id=56203) and System Center Operations Manager Online Catalog.
 
 The package includes the following files:
 
 - **SQLServerMP.Windows.msi**—a set of MP and MPB files for monitoring SQL on Windows.
 
 - **SQLServerMP.Linux.msi**—a set of MP and MPB files for monitoring SQL on Linux.
-
-- **SQLServerMPGuide.pdf**—the operations guide.
-
-- **SQLServerDashboardsGuide.pdf**—the operations guide for SQL MP Dashboards.
-
-- **SQLServerMPWorkflowList.pdf**—a complete list of SQL Server MP workflows.
 
 Management Pack for SQL Server consists of the following files:  
 
@@ -54,7 +48,27 @@ Management Pack for SQL Server consists of the following files:
 - Microsoft.SQLServer.Windows.Monitoring.mpb
 
 >[!NOTE]
->Do not import **Microsoft.SQLServer.Core.WebDashboards.mp** if the version of System Center Operations Manager that you use is lower than 2019. This file contains SQL Server MP Dashboards for the new Operations Manager Web Console introduced in System Center Operations Manager 2019.
+>Do not import **Microsoft.SQLServer.Core.WebDashboards.mp** if the version of System Center Operations Manager that you use is lower than 2019. **Microsoft.SQLServer.Core.WebDashboards.mp** contains SQL Server MP Dashboards for the new Operations Manager Web Console introduced in System Center Operations Manager 2019.
+
+### Notes to Release
+
+- **Previous generation of management packs for SQL Server 2012, 2014, and 2016 reached the end of support**
+
+  This management pack is virtually a new version of the version-agnostic management pack for SQL Server 2017 and higher (last version - 7.0.7.0 as of July 2018). 
+  
+  All upcoming versions of the management pack, including the current one are intended for monitoring of SQL Server 2012, 2014, 2016, 2017 and higher. 
+  
+  Previous generations of management packs for SQL Server 2008—2016 has reached the end of support with the first public release of the management pack for SQL Server 2012 and higher (April, 2019).
+
+- **Upgradability issues of path SQL Server 2017+ MP v.7.0.7.0 → any version of the current management pack**
+  
+  When upgrading SQL Server 2017+ Management Pack, all instances of SQL Server 2017 will be automatically rediscovered. Such behavior affects reporting because historical data collected for these instances becomes unavailable.
+  
+  Management pack for SQL Server 2017+ Integration Services cannot be upgraded and has to be removed before importing this update. To remove Management pack for SQL Server 2017+ Integration Services, remove the following management pack: **Microsoft SQL Server 2017+ Integration Services on Windows**.
+
+- **Localization for SQL Server 2017+ MP cannot be imported over the current version of SQL Server MP**
+
+  This management pack cannot be localized with localization packs made for SQL Server 2017+ MP. If you already have a localized version of SQL Server 2017+ MP (7.0.0.0 or 7.0.7.0), you do not need to remove the localization pack before importing this management pack.
 
 ## Prerequisites
 
@@ -68,17 +82,11 @@ The environment that you use must meet the following prerequisites before you st
 
 - Enable the **Allow log on locally** security policy for the domain account that is used as an action account.
 
-- Enable the **Agent Proxy** option on each agent that may use this management pack for monitoring to allow agents to forward data to the Management Server on behalf of another entity.
+- Enable the **Agent Proxy** option on each agent to allow agents to forward data to the Management Server.
   
-  This option should be enabled if the agent workflow scenarios discover any non-hosted objects created by the management pack for each SQL Server instance.
+  This option should be enabled in cases when the agent workflow scenarios discover any non-hosted objects created by the management pack for each SQL Server instance.
 
 - Enable and run SQL Server Browser for [Agentless Monitoring](./ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode.
-  
-  *Agent Monitoring* mode supports TCP/IP, "Named Pipes" and "Shared Memory" protocols and does not require SQL Server Browser.
-
-  *Agentless Monitoring* mode supports TCP/IP and "Named Pipes" protocols and required SQL Server Browser.
-
-  *Mixed Monitoring* mode supports only TCP/IP protocol and does not require SQL Server Browser.
   
 - Remove the Microsoft SQL Server 2017+ Integration Services on Window management pack before importing this management pack.
 
@@ -105,49 +113,3 @@ If you remove the **Microsoft SQLServer overrides** management pack while still 
 To make the version-agnostic management pack the primary source of monitoring, remove version-specific management packs and then remove (or modify) the **Microsoft SQLServer overrides** management pack.
 
 When you import version-specific management packs after importing the version-agnostic management pack, monitoring provided by the version-agnostic management pack will not be disabled.
-
-## Disabled Space Monitoring Workflows for SQL on Linux
-
-Because SQL Server on Linux does not provide required data, the following rules and monitors are disabled by default:
-
-- Rules:
-
-  - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (MB)
-  
-  - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (%)
-  
-  - MSSQL on Linux: DB FILESTREAM Filegroup Free Space Total (%)
-  
-  - MSSQL on Linux: DB FILESTREAM Filegroup Free Space Total (MB)
-  
-  - MSSQL on Linux: DB Filegroup Free Space Total (%)
-  
-  - MSSQL on Linux: DB Filegroup Free Space Total (MB)
-  
-  - MSSQL on Linux: DB Filegroup Allocated Free Space (%)
-  
-  - MSSQL on Linux: DB Filegroup Allocated Free Space (MB)
-  
-  - MSSQL on Linux: DB Free Outer Space (MB)
-  
-  - MSSQL on Linux: DB Allocated Free Space (MB)
-  
-  - MSSQL on Linux: DB Transaction Log Free Space Total (%)
-  
-  - MSSQL on Linux: DB Allocated Space Used (MB)
-  
-  - MSSQL on Linux: DB Free Space Total (%)
-  
-  - MSSQL on Linux: DB Free Space Total (MB)
-  
-  - MSSQL on Linux: DB Allocated Space (MB)
-
-- Monitors:
-  
-  - DB Free Space Left
-  
-  - DB Space Percentage Change
-  
-  - Transaction Log Free Space (%)
-  
-  - DB FILESTREAM Filegroup Free Space

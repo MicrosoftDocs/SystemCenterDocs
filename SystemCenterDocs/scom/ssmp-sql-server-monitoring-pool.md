@@ -1,7 +1,7 @@
 ---
 ms.assetid: d69cf961-ec43-4dd8-9b53-14fddaf078fa
 title: SQL Server Monitoring Pool
-description: This article explains SQL Server Monitoring Pool
+description: This article explains SQL Server monitoring pool
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
