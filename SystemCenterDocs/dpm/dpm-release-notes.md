@@ -313,7 +313,7 @@ The following issues exist in the 1801 release.
 
 ### Remove-DPMDiskStorage cmdlet might delete volumes with active or inactive backups
 
-**Description**: If the volume's datasources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the datasources can be removed too.
+**Description**: If the volume's datasources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the datasources can be removed too.
 
 **Workaround**: Before using the cmdlet to remove the volumes, make sure the volume's datasources aren't in use (actively or inactively).
 
@@ -424,7 +424,7 @@ The following sections summarize the release notes for DPM 2016 and include the 
 
 ### Remove-DPMDiskStorage cmdlet might delete volumes with active or inactive backups
 
-**Description**: If the volume's datasources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the datasources can be removed too.
+**Description**: If the volume's datasources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the datasources can be removed too.
 
 **Workaround**: Before using the cmdlet to remove the volumes, make sure the volume's datasources aren't in use (actively or inactively).
 

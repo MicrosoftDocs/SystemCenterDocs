@@ -21,7 +21,7 @@ ms.technology: virtual-machine-manager
 
 This article describes how to route traffic across networks in a software-defined network (SDN) infrastructure set up in the System Center Virtual Machine Manager (VMM) fabric.
 
-An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site virtual private network (VPN) using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
+An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site virtual private network (VPN) using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
 ::: moniker range="sc-vmm-2019"
 
@@ -64,7 +64,7 @@ To enable IPv6 for site-to-site VPN connection, routing subnet must be both IPv4
 8.  In **Routes**, type all the remote subnets that you want to connect to. If you have selected **Enable Border Gateway Protocol (BGP)** in the **Connectivity** page, routes are not required.
 9.  On the **Advanced** tab, accept the default settings.
 10. If you have selected **Enable Border Gateway Protocol (BGP)** in the Connectivity page, then you can fill out your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol** wizard page as shown below:
-![site to site VPN](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
+![enable bgp](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM network.
 
 ## Configure GRE tunneling
@@ -100,7 +100,7 @@ L3 forwarding enables connectivity between the physical infrastructure in the da
 
 Using L3 forwarding, tenant network virtual machines can connect to a physical network through the Windows Server 2016 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
 
-To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
+To learn more, check these articles: [Windows server gateway as a forwarding gateway](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn313101(v=ws.11)#bkmk_private) and [RAS gateway high availability](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
 **Ensure the following before you attempt to configure L3**:
 
@@ -135,7 +135,7 @@ The following table provides examples of dynamic and static L3 connections.
 Run the following script to set up L3 forwarding. Refer to the table above to check what each script parameter identifies.
 
 
-    ```powershell
+  ```powershell
     param (
         [Parameter(Mandatory=$true)]
         # Name of the L3 VPN connection
@@ -257,7 +257,7 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
     {
         Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection -VMNetworkGateway $VmNetworkGateway
     }
-    ```
+  ```
 
 ::: moniker-end
 
@@ -269,7 +269,7 @@ L3 forwarding enables connectivity between the physical infrastructure in the da
 
 Using L3 forwarding connection, tenant network virtual machines can connect to a physical network through the Windows Server 2016/2019 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
 
-To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
+To learn more, check these articles: [Windows server gateway as a forwarding gateway](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn313101(v=ws.11)#bkmk_private) and [RAS gateway high availability](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
 
 **Ensure the following before you attempt to configure L3 connection**:
@@ -302,7 +302,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 4. Select the network controller service for the gateway device.
 5. In the **VPN Connections** page, click **Add**> **Add Layer 3 tunnel**.
 
-    ![L3 configuration from ui](./media/sdn-route-network-traffic/layer3-ui.png)
+    ![add layer3 tunnel](./media/sdn-route-network-traffic/layer3-ui.png)
 
 6. Provide a subnet in the CIDR notation format for **Routing Subnet**. This subnet is used to route packets out of the VM network. You do not need to pre-configure this subnet in your datacenter.
 
@@ -332,7 +332,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
     1. Add BGP peer for the L3 connection. Enter your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol**  page.
 
-       ![remote subnets](./media/sdn-route-network-traffic/l3-ui-bgp-wizard.png)
+       ![add bgp](./media/sdn-route-network-traffic/l3-ui-bgp-wizard.png)
 
     2. Determine the SDN gateway internal address as detailed in [the following section](#determine-the-sdn-gateway-internal-address).
 

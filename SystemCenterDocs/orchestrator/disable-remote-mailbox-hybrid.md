@@ -58,4 +58,4 @@ The following tables list the required properties, optional properties, and publ
 
 #### Other Resources
 
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx)
+[Using Runbooks in System Center 2016 - Orchestrator](/previous-versions/system-center/system-center-2012-R2/hh403791(v=sc.12))

@@ -12,34 +12,9 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-::: moniker range="sc-om-2016"
-
-## System requirements for System Center 2016 - Operations Manager
-
-This article describes general performance and scalability guidance for System Center 2016 - Operations Manager. It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-## System requirements for System Center 1801 - Operations Manager
-
-This article describes general performance and scalability guidance for System Center 1801 - Operations Manager. It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
-
-::: moniker-end
-
-::: moniker range="sc-om-1807"
-
-## System requirements for System Center 1807 - Operations Manager
-
-This article describes general performance and scalability guidance for System Center 1807 - Operations Manager. It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
-
-::: moniker-end
-
-
 ## Capacity limits for Operations Manager
 
-This information helps you understand the performance and scalability characteristics of the various Operations Manager components supporting a management group.  
+The following information helps you understand the performance and scalability characteristics of the various Operations Manager components supporting a management group.  
 
 | Monitored Item | Recommended Limit |
 |:--- |:---|
@@ -165,7 +140,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
 
     >[!NOTE]
-    >The Web console does not support running IE in Compatibility View, otherwise you will receive a blank page when attempting to access the console. To turn off Compatibility View feature, please see [How to use Compatibility View in Internet Explorer](https://support.microsoft.com/help/2536204/how-to-use-compatibility-view-in-internet-explorer-9).  
+    >The Web console does not support running IE in Compatibility View, otherwise you will receive a blank page when attempting to access the console. To turn off Compatibility View feature, please see [How to use Compatibility View in Internet Explorer](https://mskb.pkisolutions.com/kb/2536204).  
     >
 - Client web browser for HTML5 web console:  
 
@@ -216,7 +191,7 @@ Microsoft supports running all System Center 2016 – Operations Manager and hig
 
 System Center 2016 - Operations Manager and higher runs on virtual machines in Microsoft Azure just as it does on physical computer systems.  We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises.  You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.  
 
-- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](https://aka.ms/asr-scom). The virtualized environment referred here, can be either on on-premises or Azure, and it would failover to this environment on account of any disaster.  
+- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](/en-in/azure/site-recovery/site-recovery-workload). The virtualized environment referred here, can be either on on-premises or Azure, and it would failover to this environment on account of any disaster.  
 - If the Operations Manager databases are to be hosted on virtualized SQL Server(s), for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.  
 
 

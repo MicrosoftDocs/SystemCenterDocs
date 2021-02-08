@@ -34,13 +34,13 @@ For information about connecting management groups, see [Connecting Management G
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
--   [Release Notes for System Center 1807 - Operations Manager](https://docs.microsoft.com/system-center/scom/release-notes-om?view=sc-om-1807)
+-   [Release Notes for System Center 1807 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-1807)
 
--   [Release Notes for System Center 1801 - Operations Manager](https://docs.microsoft.com/system-center/scom/release-notes-om?view=sc-om-1801)
+-   [Release Notes for System Center 1801 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-1801)
 
--   [Release Notes for System Center 2016 - Operations Manager](https://docs.microsoft.com/system-center/scom/release-notes-om?view=sc-om-2016)
+-   [Release Notes for System Center 2016 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2016)
 
--   [System Requirements for System Center Operations Manager](plan-system-requirements.md)
+-   [System Requirements for System Center Operations Manager](./system-requirements.md)
 
 ### Operations Manager Administrators role assignment
 
@@ -82,7 +82,7 @@ You can accept the default values for or set:
 > [!IMPORTANT]
 > If TCP/IP is disabled on a remote server that is hosting the SQL Server database, Setup will not be able to connect to the SQL Server database. To resolve this issue, enable TCP/IP on the remote server.
 
-Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation (SQL Server 2014)](https://msdn.microsoft.com/library/ms143711%28v=sql.120%29.aspx).  For more information about how to install and configure SQL Server 2016 Reporting Services, see [SQL Server Installation (SQL Server 2016)](https://msdn.microsoft.com/library/ms143711%28v=sql.130%29.aspx).
+Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation (SQL Server 2014)](/sql/reporting-services/install-windows/install-reporting-services-native-mode-report-server?viewFallbackFrom=sql-server-2014).  For more information about how to install and configure SQL Server 2016 Reporting Services, see [SQL Server Installation (SQL Server 2016)](/sql/reporting-services/install-windows/install-reporting-services-native-mode-report-server).
 
 For additional information to help you properly plan your SQL Server configuration in support of Operations Manager, see [SQL Server Design Considerations](plan-sqlserver-design.md).  
 

@@ -92,7 +92,7 @@ Some activities are expected to take a specific amount of time to complete. If t
 
 2.  Select **Report if activity fails to run**, to generate run failure notifications.
 
-For more information about Orchestrator events, see [Activity Events](https://technet.microsoft.com/library/hh489611.aspx).
+For more information about Orchestrator events, see [Activity Events](/previous-versions/system-center/system-center-2012-R2/hh489611(v=sc.12)).
 
 ## Published data
 
@@ -108,7 +108,7 @@ An activity can subscribe to data only from the activities that are linked befor
 
 3.  Click the published data element that you want to use, and then click **OK**.
 
-For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
+For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
 
 ## Activities
 

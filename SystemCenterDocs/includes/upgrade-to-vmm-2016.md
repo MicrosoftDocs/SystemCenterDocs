@@ -144,7 +144,7 @@ You don't need additional VMM servers, but has increased risk for downtime in so
 6.	Failover the active VMM node to the newly upgraded VMM server.
 7.	Repeat the procedure on other VMM nodes.
 8.  Update the cluster functional level by using the
-**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+**Update-ClusterFunctionalLevel** [command](/powershell/module/failoverclusters/update-clusterfunctionallevel).
 9.	[Optional] Install the appropriate SQL Command line utilities.
 
 ### Mixed mode upgrade with additional VMM servers
@@ -158,7 +158,7 @@ You need additional servers. However, there's almost no downtime in all the scen
 5. Repeat the installation steps for all the other newly added servers.
 6. Failover the active VMM node to one of the newly added servers.
 7. Uninstall VMM from the 2012 R2 nodes, and remove these nodes from the cluster after failover.
-8. Update the cluster functional level by using the [Update-ClusterFunctionalLevelcommand](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+8. Update the cluster functional level by using the [Update-ClusterFunctionalLevelcommand](/powershell/module/failoverclusters/update-clusterfunctionallevel).
 9. Optionally install the appropriate SQL Command line utilities.
 10. After the upgrade, [upgrade the host agent manually](#update-vmm-agents).
 
@@ -227,7 +227,7 @@ After you have reassociated the host, you will most likely have to update the VM
 
 ## Redeploy Azure Site Recovery
 
-If Azure Site Recovery was integrated into your VMM 2012 R2 deployment, you need to redeploy it with VMM 2016, for [replication to Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-vmm).
+If Azure Site Recovery was integrated into your VMM 2012 R2 deployment, you need to redeploy it with VMM 2016, for [replication to Azure](/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](/azure/site-recovery/site-recovery-vmm-to-vmm).
 
 Read this [blog entry](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for details of Hyper-V host support when running VMM 2016.
 

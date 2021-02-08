@@ -1,6 +1,6 @@
 ---
 title: Apply pending service update in System Center - Orchestra
-description: The Apply Pending Service Update activity is used in a runbook to apply the pending service update to a specified service.
+description: The Apply Pending Service Update activity is used in a runbook to apply the pending service update to a specified service. The activity publishes all of the data from the required and optional properties into published data.
 ms.date: 01/22/2018
 ms.prod: system-center
 ms.technology: orchestrator

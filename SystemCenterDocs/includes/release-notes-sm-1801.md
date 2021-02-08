@@ -19,7 +19,7 @@ The following sections detail the release notes for SM 1801 and include the know
 ## SQL Server 2014 cardinality estimation might affect the performance of SM
 **Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version, you may experience slow performance.
 
-**Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. For more information on changing the Cardinality Estimator, see [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](https://blogs.msdn.microsoft.com/saponsqlserver/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation/).
+**Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. For more information on changing the Cardinality Estimator, see [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](/archive/blogs/saponsqlserver/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation).
 
 ## Prerequisite for installing SM Authoring Tool
 **Description:** Microsoft Visual C++ 2012 redistributable should be installed before deploying Service Manager 1801 Authoring Tool.

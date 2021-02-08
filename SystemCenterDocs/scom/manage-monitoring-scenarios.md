@@ -50,4 +50,4 @@ System Center Operations Manager supports a variety of methods to actively monit
 
 -   [Integrating with Active Directory](manage-ad-integration-agent-assignment.md)  
 
--   [Integration with Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-om-agents)  
+-   [Integration with Azure Log Analytics](/azure/log-analytics/log-analytics-om-agents)

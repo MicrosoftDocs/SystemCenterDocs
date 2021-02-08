@@ -1,6 +1,6 @@
 ---
 title: Orchestrator Integration Toolkit Integration Pack Wizard
-description: This article provides details about the Orchestrator Integration Toolkit Command Line Activity Wizard.
+description: This article provides details about the Orchestrator Integration Pack Wizard.
 author: rayne-wiselman
 manager: carmonm
 ms.date: 02/02/2018
@@ -16,7 +16,7 @@ ms.author: raynew
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -46,9 +46,8 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 3. On the **Product Details** page, enter or modify the information as needed to customize the information about your Integration Pack. The table below describes the fields and their descriptions:  
 
 
-   |                |                                                                                                                                                                                                                                                                                                                                                                                                        |
-   |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |   Field Name   |                                                                                                                                                                                              Description                                                                                                                                                                                               |
+   |    Field Name            |     Description                                                                                                                                                                                                                                                                                                                                                                                                   |
+   |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|                                        
    |  Product name  |                                                                                                                                                                         The name of the IP that displays in Deployment Manager                                                                                                                                                                         |
    | Category name  |                                                                                                                                                   The text that displays as the category title for the IP in the Activities pane of Runbook Designer                                                                                                                                                   |
    |    Company     |                                                                                                                                                    The name of your company. This information is displayed in Add/Remove Programs under “Publisher”                                                                                                                                                    |
@@ -155,11 +154,10 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 ## Orchestrator Resources  
  In addition to this online reference provided for System Center 2012 Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.  
 
-|||  
-|-|-|  
 |Resource|Location|  
+|-|-|   
 |System Center Home|[https://www.microsoft.com/en-us/cloud-platform/system-center](https://www.microsoft.com/en-us/cloud-platform/system-center)|  
-|System Center documentation|[https://docs.microsoft.com/system-center/](https://docs.microsoft.com/system-center/)|  
+|System Center documentation|[https://docs.microsoft.com/system-center/](../index.yml)|  
 |Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
 |Orchestrator Community Releases on CodePlex|[https://archive.codeplex.com/?p=orchestrator](https://archive.codeplex.com/?p=orchestrator)|  
 |Orchestrator Community Forums on TechNet|[https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
@@ -167,4 +165,4 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 ## See Also  
  [Orchestrator Integration Packs](https://www.microsoft.com/en-us/search/result.aspx?q=Orchestrator+Integration+Toolkit)   
  [Integration Toolkit Documentation](orchestrator-integration-toolkit-overview.md)   
- [Orchestrator SDK](https://msdn.microsoft.com/library/hh855054.aspx)
+ [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))

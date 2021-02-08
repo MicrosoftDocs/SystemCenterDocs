@@ -26,11 +26,11 @@ Use the **General** tab to specify the general details of the request. The diffe
 | HTTP Method | The method to use for the request. Most requests use a GET method. The POST method is typically used when selecting an option to submit information to a website, such as clicking a button to submit a name and password. |
 | HTTP Version | The version of HTTP that the request specifies to the receiving website. |
 | Request Body | Only enabled when the **HTTP method** is POST. This is the body of the request that the post submits. |
-| Insert Parameter | There is an **Insert parameter** button for both the **Request URL**  and the **Request Body**. Use these options to replace part of the text with a variable that is populated from a previous request. For more information, see [How to Replace Parameters in a URL Request](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29). |
+| Insert Parameter | There is an **Insert parameter** button for both the **Request URL**  and the **Request Body**. Use these options to replace part of the text with a variable that is populated from a previous request. For more information, see [How to Replace Parameters in a URL Request](/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29). |
 
 ## HTTP headers tab
 
-The **HTTP Headers** tab is used to define the different fields that will be included in the header of the request. If the request is from a recorded session, it includes the headers that your browser used. If you manually created the request, it includes a default set of headers and values. You can use the  **Edit**  button to modify an existing header field or the **Add** button to add a new field. The **Insert parameter** options are used to replace part of the text with a variable that is populated from a previous request. For more information, see [How to Replace Parameters in a URL Request](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29).
+The **HTTP Headers** tab is used to define the different fields that will be included in the header of the request. If the request is from a recorded session, it includes the headers that your browser used. If you manually created the request, it includes a default set of headers and values. You can use the  **Edit**  button to modify an existing header field or the **Add** button to add a new field. The **Insert parameter** options are used to replace part of the text with a variable that is populated from a previous request. For more information, see [How to Replace Parameters in a URL Request](/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29).
 
 ## Performance counter tab
 
@@ -63,7 +63,7 @@ The **Custom Warning** tab lets you specify error criteria for the request by us
 
 ## Extraction rules
 
-The **Extraction Rules** tab lets you extract a string of text from the body of the response of the request to use in one or more subsequent requests. For more information, see [How to Replace Parameters in a URL Request](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29).
+The **Extraction Rules** tab lets you extract a string of text from the body of the response of the request to use in one or more subsequent requests. For more information, see [How to Replace Parameters in a URL Request](/previous-versions/system-center/system-center-2012-R2/hh457573%28v%3dsc.12%29).
 
 ## Next steps
 

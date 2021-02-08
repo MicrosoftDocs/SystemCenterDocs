@@ -43,8 +43,8 @@ The following sections describe the hardware and software requirements for Syste
 
 **SQL version** | **Supported**
 --- | ---
-**SQL Server 2017** | Y
-**SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | Y
+**[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
+**SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)** | Y
 
 ## Installation components
 

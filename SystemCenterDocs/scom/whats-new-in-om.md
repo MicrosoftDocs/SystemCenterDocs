@@ -59,4 +59,4 @@ This article details the new features supported in System Center 2016 - Operatio
 ::: moniker-end
 
 ## Next steps
-[Know the system requirements for Operations Manager](plan-system-requirements.md)
+[Know the system requirements for Operations Manager](./system-requirements.md)

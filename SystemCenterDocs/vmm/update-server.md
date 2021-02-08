@@ -22,7 +22,7 @@ ms.technology: virtual-machine-manager
 
 Learn about deploying update servers in the System Center - Virtual Machine Manager (VMM) fabric.
 
-You deploy update servers in the VMM fabric to manage compliance and remediation for virtualization hosts, library servers, the VMM management server, PXE servers, the WSUS server itself, and any infrastructure servers. [Learn more](system-reqs.md).
+You deploy update servers in the VMM fabric to manage compliance and remediation for virtualization hosts, library servers, the VMM management server, PXE servers, the WSUS server itself, and any infrastructure servers. [Learn more](./system-requirements.md).
 
 This article explains the prerequisites, information about how to add a WSUS server to the fabric, set up update baselines, run a scan, and create update exemptions.
 

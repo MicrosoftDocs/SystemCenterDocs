@@ -1,6 +1,6 @@
 ---
 title: Orchestrator Integration Toolkit Overview
-description: The Orchestrator Integration Toolkit is used to create new integrations for Orchestrator.
+description: This article describes the enhanced features of the Orchestrator Integration Toolkit that is used to create new integrations for Orchestrator.
 author: rayne-wiselman
 manager: carmonm
 ms.date: 02/02/2018
@@ -16,7 +16,7 @@ ms.author: raynew
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -27,9 +27,8 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 ## Toolkit Components  
  The installation of the Orchestrator Integration Toolkit consists of the following:  
 
-|||  
-|-|-|  
 |Component|Description|  
+|-|-|    
 |Command-Line Activity Wizard|A utility that allows users to define activities that contain commands that run via Windows command shell, PowerShell, or SSH, and package them into an assembly (.DLL) that can be used with the .NET IP or packaged into a new Integration Pack.|  
 |Integration Pack Wizard|A utility designed to package Orchestrator-compatible activity assemblies and dependent files into a deployable Integration Pack file.|  
 |Integration Toolkit .NET IP|An Integration Pack for running .NET-based Orchestrator-compatible activity assemblies directly. Contains the Invoke .NET and Monitor .NET activities.|  
@@ -46,7 +45,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 #### Orchestrator SDK  
 
--   There have been significant changes to the SDK namespace, interfaces, and attributes as part of rebranding to Microsoft. For details about these changes, please see the [Orchestrator SDK](https://msdn.microsoft.com/library/hh855054.aspx).  
+-   There have been significant changes to the SDK namespace, interfaces, and attributes as part of rebranding to Microsoft. For details about these changes, please see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).  
 
 -   The full SDK documentation and code examples are no longer included in the installation of the Orchestrator Integration Toolkit. The SDK Documentation is located on MSDN, and the code samples are located on CodePlex at [http://orchestrator.codeplex.com](http://orchestrator.codeplex.com).  
 
@@ -132,4 +131,4 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 ## See Also  
  [Orchestrator documentation](../learn-about-orchestrator.md)   
  [Orchestrator Integration Packs](../list-of-orchestrator-integration-packs.md)      
- [Orchestrator SDK](https://msdn.microsoft.com/library/hh855054.aspx)
+ [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))

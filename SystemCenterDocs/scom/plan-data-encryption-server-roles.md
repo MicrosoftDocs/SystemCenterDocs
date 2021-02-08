@@ -41,9 +41,9 @@ These algorithms may not be sufficient to meet compliance standards. For instanc
 
 SQL Server Reporting Services Native mode uses the HTTP SSL (Secure Sockets Layer) service to establish encrypted connections to a report server. If you have certificate (.cer) file installed in a local certificate store on the report server computer, you can bind the certificate to a Reporting Services URL reservation to support report server connections through an encrypted channel.  
 
-Because Internet Information Services (IIS) also uses HTTP SSL, there are significant interoperability issues that you must account for if you plan to run IIS and SQL Reporting Services on the same computer in support of Operations Manager Reporting server. Be sure to review the Interoperability Issues with IIS section in the [Configure SSL Connections on a Native Mode Report Server](https://msdn.microsoft.com/library/ms345223%28v=sql.120%29.aspx#interoperability-issues-with-iis) for guidance on how to address these issues.
+Because Internet Information Services (IIS) also uses HTTP SSL, there are significant interoperability issues that you must account for if you plan to run IIS and SQL Reporting Services on the same computer in support of Operations Manager Reporting server. Be sure to review the Interoperability Issues with IIS section in the [Configure SSL Connections on a Native Mode Report Server](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server?viewFallbackFrom=sql-server-2014#interoperability-issues-with-iis) for guidance on how to address these issues.
 
-To configure SQL Server Reporting Services Native mode for SSL encryption before configuring Operations Manager Reporting server to use SSL, please see [Configure SSL Connections on a Native Mode Report Server](https://msdn.microsoft.com/library/ms345223%28v=sql.120%29.aspx).
+To configure SQL Server Reporting Services Native mode for SSL encryption before configuring Operations Manager Reporting server to use SSL, please see [Configure SSL Connections on a Native Mode Report Server](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server?viewFallbackFrom=sql-server-2014).
 
 ## FIPS Compliance
 
@@ -58,7 +58,7 @@ The following is a summarized list of steps required to configure FIPS for your 
 -	Edit the **WebHost\web.config** file.
 -	Edit the **MonitoringView\web.config** file.
 
-You will need the Global Assembly Cache Tool, gacutil.exe. This utility is part of the Windows .NET Framework SDK, which is a installation component included in the Windows Software Development Kit.  For more information, see [Gacutil.exe (Global Assembly Cache Tool)](https://msdn.microsoft.com/library/ex0ss12c.aspx).
+You will need the Global Assembly Cache Tool, gacutil.exe. This utility is part of the Windows .NET Framework SDK, which is a installation component included in the Windows Software Development Kit.  For more information, see [Gacutil.exe (Global Assembly Cache Tool)](/dotnet/framework/tools/gacutil-exe-gac-tool).
 
 The following is a summarized list of steps required to configure FIPS for your Reporting server:
 

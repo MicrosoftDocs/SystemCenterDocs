@@ -54,9 +54,8 @@ The following tables list the properties and published data for this activity. T
 
 ## Update Alert Published Data
 
-|   |   |
+| Element  |Description   |
 |-----------------------------------|-----------------------------------------------------------------------------------|
-| Element   | Description   |
 | Category   | The category name of the Management Pack   |
 | Connection   | The connection string to the Operations Manager server for this activity   |
 | ConnectorId   | The ID of the connector that generated the connection string   |

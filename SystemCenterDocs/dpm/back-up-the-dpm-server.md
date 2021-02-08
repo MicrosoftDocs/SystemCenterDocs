@@ -159,8 +159,7 @@ After switching protection, the replica appears as inconsistent, until the check
 >[!NOTE]
 >
 > - To switch the protection back to the primary server, do the same steps as above.
-> - You can also switch protection to the secondary DPM server by using the  [Start –DPMSwitchProtection](https://docs.microsoft.com/powershell/module/dataprotectionmanager/start-dpmswitchprotection?view=systemcenter-ps-2019
-) PowerShell cmdlet.
+> - You can also switch protection to the secondary DPM server by using the  [Start –DPMSwitchProtection](/powershell/module/dataprotectionmanager/start-dpmswitchprotection) PowerShell cmdlet.
 
 **Recover a primary DPM server**
 
@@ -256,7 +255,7 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
     Make sure you have the passcode that was specified when the Azure Recovery Services Agent was installed and the DPM server was registered in the Azure Backup vault. You'll need this passcode to restore the backup.
 
-2.  Create an Azure Backup vault, download the Azure Backup Agent installation file and vault credentials. Run the installation file to install the agent on the DPM server and use the vault credentials to register the DPM server in the vault. [Learn more](https://azure.microsoft.com/documentation/articles/backup-azure-dpm-introduction/).
+2.  Create an Azure Backup vault, download the Azure Backup Agent installation file and vault credentials. Run the installation file to install the agent on the DPM server and use the vault credentials to register the DPM server in the vault. [Learn more](/azure/backup/backup-azure-dpm-introduction).
 
 3.  After the vault is configured set up a DPM protection group that contains the DPM database, and select to back it up to disk and to Azure.
 
@@ -434,9 +433,9 @@ To recover:
 ## Back up with native SQL Server backup to a local disk
 You can simply back up the DPM database to a local disk with native SQL Server backup, independent of DPM.
 
-1.  Get an [overview](https://technet.microsoft.com/library/ms187048(v=sql.110).aspx) of SQL Server backup.
+1.  Get an [overview](/previous-versions/sql/sql-server-2012/ms187048(v=sql.110)) of SQL Server backup.
 
-2.  [Learn more](https://technet.microsoft.com/library/jj919148(v=sql.110).aspx) about backing up SQL Server to the cloud.
+2.  [Learn more](/previous-versions/sql/sql-server-2012/jj919148(v=sql.110)) about backing up SQL Server to the cloud.
 
 ## Back up with native SQL Server backup to a share protected by DPM
 This backup option leverages native SQL to back up the DPM database to a share, protects the share with DPM, and uses Windows VSS previous versions to facilitate the restore.
@@ -494,9 +493,9 @@ This backup option leverages native SQL to back up the DPM database to a share, 
 
 You can back up the DPM database as you would any other SQL Server database using SQL Server native backup.
 
--   Get an [overview](https://technet.microsoft.com/library/ms187048(v=sql.110).aspx) of SQL Server backup.
+-   Get an [overview](/previous-versions/sql/sql-server-2012/ms187048(v=sql.110)) of SQL Server backup.
 
--   [Learn more](https://technet.microsoft.com/library/jj919148(v=sql.110).aspx) about backing up SQL Server to the cloud.
+-   [Learn more](/previous-versions/sql/sql-server-2012/jj919148(v=sql.110)) about backing up SQL Server to the cloud.
 
 **Recover the database**
 

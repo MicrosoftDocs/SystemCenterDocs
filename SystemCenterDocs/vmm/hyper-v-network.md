@@ -93,8 +93,8 @@ For a host, affinity between vNIC and pNIC can be set at virtual switch level. Y
     > [!NOTE]
     >- We recommend you not to remove any of the physical adapter post teaming, as it could break the assigned affinity mappings.
     >- If the option **This virtual adapter inherits the properties from the physical management adapter** is checked, affinity cannot be defined for vNICs that handles management traffic.
-    
-    ![Affinity NIC](./media/set-affinity-vnic-pnic/option-vnic.png)
+
+    ![Traffic NIC](./media/set-affinity-vnic-pnic/option-vnic.png)
 
 ### Frequently asked questions
 

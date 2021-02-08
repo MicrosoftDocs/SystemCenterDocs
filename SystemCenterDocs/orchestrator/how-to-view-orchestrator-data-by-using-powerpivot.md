@@ -24,7 +24,7 @@ You can use Microsoft PowerPivot for Microsoft Excel to create reports for Syste
 
 ## Install PowerPivot  
 
-You must install PowerPivot for Excel to enable the product.  [Learn more](https://go.microsoft.com/fwlink/p/?LinkID=184678).  
+You must install PowerPivot for Excel to enable the product.  [Learn more](/previous-versions/sql/sql-server-2012/gg413462(v=sql.110)).  
 
 
 ## Create a connection to an Orchestrator feed  
@@ -98,4 +98,4 @@ The following procedure describes the steps to create a pivot table containing a
 You can now modify the default labels and format your table for presentation.  
 
 - [Learn more ](learn-about-orchestrator.md) about the runbook workflows and jobs.
-- [Learn more ](https://go.microsoft.com/fwlink/p/?LinkID=187006) about PowerPivot for Excel.
+- [Learn more ](/previous-versions//ee835651(v=technet.10)) about PowerPivot for Excel.

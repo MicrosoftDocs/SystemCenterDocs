@@ -61,7 +61,7 @@ Use the following procedure:
 1. Log in as administrator into the IIS server, which is hosting the SM self-service portal.
 2. Open the *Web.config* file in the directory where SM self-service portal is installed.
 
-   ![console telemetry selection](./media/telemetry/sm-telemetry-web-configfile.png)
+   ![telemetry settings from self service portal](./media/telemetry/sm-telemetry-web-configfile.png)
 
 3. In *Web.config* file, find the key  *EnableTelemetry* under the XML tag *appSettings*.
 

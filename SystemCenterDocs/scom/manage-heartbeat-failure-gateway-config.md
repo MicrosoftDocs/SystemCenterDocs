@@ -51,7 +51,7 @@ Perform the following steps to configure the Run As account.
 2. Add the Run As account to the **Automatic Agent Management Account Profile** and then chose the option **All targeted objects**.
 
     >[!NOTE]
-    >While the gateway server pings the agent, initiation occurs from management server using a WMI query that runs against agents reporting to the gateway server.  For this reason,  the **Automatic Agent Management Account** Run As account needs to have the necessary privileges on both the management and gateway server to execute this WMI query from both roles.  For more information on how to properly configure privileges to remotely connect to a computer using WMI, see [Securing a Remote WMI Connection](https://msdn.microsoft.com/library/aa393266%28v=vs.85%29.aspx).
+    >While the gateway server pings the agent, initiation occurs from management server using a WMI query that runs against agents reporting to the gateway server.  For this reason,  the **Automatic Agent Management Account** Run As account needs to have the necessary privileges on both the management and gateway server to execute this WMI query from both roles.  For more information on how to properly configure privileges to remotely connect to a computer using WMI, see [Securing a Remote WMI Connection](/windows/win32/wmisdk/securing-a-remote-wmi-connection).
 >
 
 ## Next steps

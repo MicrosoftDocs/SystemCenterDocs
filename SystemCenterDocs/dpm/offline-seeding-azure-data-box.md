@@ -19,9 +19,9 @@ monikerRange: 'sc-dpm-2019'
 > [!NOTE]
 > This feature is applicable for Data Protection Manager (DPM) 2019 UR2 and later.
 
-This article explains how you can use Azure Data Box to seed initial Backup data offline from DPM to an Azure Recovery Services vault.
+This article explains about how you can use Azure Data Box to seed initial Backup data offline from DPM to an Azure Recovery Services vault.
 
-You can use [Azure Data Box](https://docs.microsoft.com/azure/databox/data-box-overview) to seed your large initial DPM backups offline (without using network) to a Recovery Services vault. This process saves time and network bandwidth that would otherwise be consumed moving large amounts of backup data online over a high-latency network. This feature is currently in preview.
+You can use [Azure Data Box](/azure/databox/data-box-overview) to seed your large initial DPM backups offline (without using the network) to a Recovery Services vault. This process saves time and network bandwidth that would otherwise be consumed moving large amounts of backup data online over a high-latency network. This feature is currently in preview.
 
 Offline backup based on Azure Data Box provides two distinct advantages over [offline backup based on the Azure Import/Export service](offline-backup-workflow.md):
 
@@ -42,8 +42,8 @@ The following Data Box SKUs are supported:
 
 | Backup Data Size (post compression by MARS)\* per server | Supported Azure Data Box SKU |
 | --- | --- |
-| \<= 7.2 TB | [Azure Data Box Disk](https://docs.microsoft.com/azure/databox/data-box-disk-overview) |
-| > 7.2 TB and <= 80 TB\*\* | [Azure Data Box (100 TB)](https://docs.microsoft.com/azure/databox/data-box-overview) |
+| \<= 7.2 TB | [Azure Data Box Disk](/azure/databox/data-box-disk-overview) |
+| > 7.2 TB and <= 80 TB\*\* | [Azure Data Box (100 TB)](/azure/databox/data-box-overview) |
 
 \*Typical compression rates vary between 10-20% <br>
 \*\*Reach out to [SystemCenterFeedback@microsoft.com](mailto:SystemCenterFeedback@microsoft.com) if you expect to have more than 80 TB of initial backup data for a single data source.
@@ -67,7 +67,7 @@ Ensure the following:
 
 ### Order and receive the Data Box device
 
-Ensure that the required Data Box devices are in *Delivered* state before triggering Offline backup. See [Backup Data Size and supported Data Box SKUs](#backup-data-size-and-supported-data-box-skus) to order the most suitable SKU for your requirement. Follow the steps in [this article](https://docs.microsoft.com/azure/databox/data-box-disk-deploy-ordered) to order and receive your Data Box devices.
+Ensure that the required Data Box devices are in *Delivered* state before triggering Offline backup. See [Backup Data Size and supported Data Box SKUs](#backup-data-size-and-supported-data-box-skus) to order the most suitable SKU for your requirement. Follow the steps in [this article](/azure/databox/data-box-disk-deploy-ordered) to order and receive your Data Box devices.
 
 > [!IMPORTANT]
 > Do not select *BlobStorage* for **the Account kind**. The DPM server requires an account that supports Page Blobs which is not supported when *BlobStorage* is selected. Select  **Storage V2 (general purpose v2**) as the **Account kind** when creating the target storage account for your Azure Data Box job.
@@ -80,7 +80,7 @@ Once you receive the Azure Data Box device, depending on the Azure Data Box SKU 
 
 ### Setup Azure Data Box disk
 
-If you ordered one or more Azure Data Box disks (up to 8 TB each), follow the steps mentioned [here](https://docs.microsoft.com/azure/databox/data-box-disk-deploy-set-up) to unpack, connect, and unlock your Data Box disk.
+If you ordered one or more Azure Data Box disks (up to 8 TB each), follow the steps mentioned [here](/azure/databox/data-box-disk-deploy-set-up) to unpack, connect, and unlock your Data Box disk.
 
 
 > [!NOTE]
@@ -88,7 +88,7 @@ If you ordered one or more Azure Data Box disks (up to 8 TB each), follow the st
 
 ## Setup Azure Data Box
 
-If you ordered an Azure Data Box (up to 100 TB), follow the steps mentioned [here](https://docs.microsoft.com/azure/databox/data-box-deploy-set-up) to setup your Data Box.
+If you ordered an Azure Data Box (up to 100 TB), follow the steps mentioned [here](/azure/databox/data-box-deploy-set-up) to set up your Data Box.
 
 ### Mount your Azure Data Box as local system
 
@@ -103,7 +103,7 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
    psexec.exe  -s  -i  cmd.exe
    ```
 4. The command window that opens as a result of the command above is in Local System context. Use this command window to execute steps to mount the Azure Page Blob Share as a network drive on your Windows Server.
-5. Follow the steps [here](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs#connect-to-data-box) to connect your DPM Server to the Data Box device via NFS and execute the following command on the Local System command prompt to mount the Azure Page Blobs share:
+5. Follow the steps [here](/azure/databox/data-box-deploy-copy-data-via-nfs#connect-to-data-box) to connect your DPM Server to the Data Box device via NFS and execute the following command on the Local System command prompt to mount the Azure Page Blobs share:
 
     ```cmd
     mount -o nolock \\<DeviceIPAddres>\<StorageAccountName_PageBlob X:
@@ -164,7 +164,7 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
     > ![USB drive](./media/databox/usb-drive.png)
     >
     > For example, if the path of the disk is `\\mydomain\myserver\disk1\` and *disk1* contains a directory called *PageBlob*, the path to be provided on the DPM Server wizard is `\\mydomain\myserver\disk1\`.
-    > If you [setup an Azure Data Box 100 TB device](https://docs.microsoft.com/azure/backup/offline-backup-azure-data-box#setup-azure-data-box), provide the following as the network path to the device `\\<DeviceIPAddress>\<StorageAccountName>_PageBlob`.
+    > If you [setup an Azure Data Box 100 TB device](/azure/backup/offline-backup-azure-data-box#setup-azure-data-box), provide the following as the network path to the device `\\<DeviceIPAddress>\<StorageAccountName>_PageBlob`.
 
 
 15. Click **Next**. On the **Summary** page, review your settings and click **Create Group**.
@@ -179,7 +179,7 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
 
     With this, the initial replication of the data occurs to DPM disk. When it finishes the protection, group status will show protection status as **OK** on the **Protection** page.
 
-17. To initiate the offline-backup copy to you Azure Data Box device, right-click the **Protection Group** , and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
+17. To initiate the offline-backup copy to your Azure Data Box device, right-click the **Protection Group** , and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
 
     ![Create recovery point](./media/databox/create-recovery-point.png)
 
@@ -195,8 +195,8 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
 
 Follow these steps once the data backup to the Azure Data Box Disk is successful.
 
-- Follow the steps in [this article](https://docs.microsoft.com/azure/databox/data-box-disk-deploy-picked-up) to ship the Azure Data Box disk to Azure. If you used an Azure Data Box 100-TB device, follow [these steps](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up) to ship the Azure Data Box to Azure.
-- [Monitor the Data Box job](https://docs.microsoft.com/azure/databox/data-box-disk-deploy-upload-verify) in the Azure portal. Once the Azure Data Box job is *Complete*, the DPM server automatically moves the data from the Storage Account to the Recovery Services Vault at the time of the next scheduled backup. It will then mark the backup job as *Job Completed* if a recovery point is successfully created.
+- Follow the steps in [this article](/azure/databox/data-box-disk-deploy-picked-up) to ship the Azure Data Box disk to Azure. If you used an Azure Data Box 100-TB device, follow [these steps](/azure/databox/data-box-deploy-picked-up) to ship the Azure Data Box to Azure.
+- [Monitor the Data Box job](/azure/databox/data-box-disk-deploy-upload-verify) in the Azure portal. Once the Azure Data Box job is *Complete*, the DPM server automatically moves the data from the Storage Account to the Recovery Services Vault at the time of the next scheduled backup. It will then mark the backup job as *Job Completed* if a recovery point is successfully created.
 
   > [!NOTE]
   > The DPM server triggers the backups at the times scheduled during protection group creation. However, these jobs will flag *Waiting for Azure Data Box job to be completed* until the time the job is complete.
@@ -263,7 +263,7 @@ From the DPM server you are trying to configure offline backup, do the following
 6. Right-click the string added in the step above and select **Modify**. In the value, provide the thumbprint of the certificate you exported in **point 2** and click **OK**.
 7. To get the value of thumbprint, double-click on the certificate, then select **Details**  and scroll-down until you see the thumbprint field. Click on **Thumbprint** and copy the value.
 
-   ![Certificate](./media/databox/certificate.png)
+   ![Get value of thumbprint](./media/databox/certificate.png)
 
 
 ## Next steps

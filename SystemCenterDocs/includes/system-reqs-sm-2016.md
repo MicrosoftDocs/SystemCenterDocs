@@ -32,6 +32,7 @@ To help simplify upgrades, you can use the following Service Manager 2016 connec
     - UR5 supports 1802
     - UR9 supports 1806, 1810, 1902, 1906, 1910, and 2002 releases. However, there is a limitation that the size of the devices supported by SCCM should be less than 2 PB.
     - UR10 supports 2006
+    - 2010 (supported with Service Manager 2016 UR10)
 
 ## Hardware
 
@@ -118,7 +119,7 @@ The following table summarizes the support for SQL Server 64-bit Enterprise and 
 > For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 
 
-**Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)**  | **SQL Server 2016 and [SPs](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)**
+**Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs](/lifecycle/products/?terms=SQL+Server+2014)**  | **SQL Server 2016 and [SPs](/lifecycle/products/?terms=SQL+Server+2016)**
 --- | --- | --- | ---
 **Service Manager/Data Warehouse database** | | &#8226;| &#8226;
 

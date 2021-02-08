@@ -30,7 +30,7 @@ The redesigned web console is now a fully functional HTML-based console. It no l
 * Simplified widget and dashboard authoring.
 * Accessibility from multiple browsers.
 * Enhanced troubleshooting experience with drill-down pages.
-* Extensibility with a custom widget by using a new [REST API](https://docs.microsoft.com/rest/operationsmanager).
+* Extensibility with a custom widget by using a new [REST API](/rest/operationsmanager).
 * Capability to export and share dashboards.
 * A new **All** option to select all objects while creating or editing an alerts widget.
 
@@ -128,11 +128,11 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 - SQL Server 2017 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017%20)
 - SQL Server 2016 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20)
 
-For information about SQL Server design considerations, see [related documentation](https://docs.microsoft.com/system-center/scom/plan-sqlserver-design?view=sc-om-2019).
+For information about SQL Server design considerations, see [related documentation](../scom/plan-sqlserver-design.md).
 
 ### Support for SQL Server 2019 CU8 and later
 
-Operations Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
+Operations Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server).
 
 
 >[!NOTE]
@@ -231,7 +231,7 @@ Operations Manager can now support Kerberos authentication wherever the WS-Manag
 
 Service Map automatically discovers application components on Windows and Linux systems and maps the communication between services. It automatically builds a common reference map of dependencies across your servers, processes, and third-party services.
 
-Service Map and System Center Operations Manager are now more closely integrated. You can automatically create distributed application diagrams in Operations Manager based on the dynamic dependency maps in Service Map. For more information on how to plan and configure integration, see [Service Map integration with System Center Operations Manager](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map-scom).
+Service Map and System Center Operations Manager are now more closely integrated. You can automatically create distributed application diagrams in Operations Manager based on the dynamic dependency maps in Service Map. For more information on how to plan and configure integration, see [Service Map integration with System Center Operations Manager](/azure/operations-management-suite/operations-management-suite-service-map-scom).
 
 ### Support for product key registration from the Operations console
 
@@ -337,4 +337,4 @@ With Operations Manager 2019 UR2, you can run and view favorite reports under **
 In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-web-console.md).
 
 ### Support for CentOS 8
-Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](https://docs.microsoft.com/system-center/scom/manage-install-crossplat-agent-cmdline?view=sc-om-2019#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](../scom/manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).

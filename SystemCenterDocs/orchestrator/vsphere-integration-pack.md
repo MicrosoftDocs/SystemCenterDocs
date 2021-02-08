@@ -17,7 +17,7 @@ manager: carmonm
 
 ::: moniker-end
 
-The integration pack for VMware vSphere is an add-on for System Center - Orchestrator, It assists you in automating actions in VMware vSphere, enabling full management of your virtualized computing infrastructure.
+The integration pack for VMware vSphere is an add-on for System Center - Orchestrator. It assists you in automating actions in VMware vSphere, enabling full management of your virtualized computing infrastructure.
 
 [Learn more](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx) about privacy in Orchestrator.
 
@@ -52,14 +52,14 @@ You might see the following issues when using this VMware vSphere integration pa
 - If you inadvertently import the Opalis global configurations, you might see the following errors:
   -   When adding or editing configurations:
 
-          Failed to load the assembly containing the service class
+      Failed to load the assembly containing the service class
 
   -   When editing the properties of any vSphere activity:
 
-          Failed to load the assembly containing the service class
+      Failed to load the assembly containing the service class
 
-          Runtime Error! ...
-          This application has requested the Runtime to terminate it in an unusual way. Please contact the application's support tem for more information.
+      Runtime Error! ...
+      This application has requested the Runtime to terminate it in an unusual way. Please contact the application's support team for more information.
 
 - If you attempt to start a VM that is already powered on by using the Start VM activity, supplying a Timeout value of greater than 2,147,483 will cause the integration pack to report success even though the vSphere server indicates that the VM cannot be started.
 - Exporting workflows that contain vSphere activities from Opalis Integration Server 6.3 and importing them into Orchestrator corrupts vSphere configurations stored in Orchestrator. To address this issue, omit the global configurations from the import process, and then manually create the matching configurations in Orchestrator.

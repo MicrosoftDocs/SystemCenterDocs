@@ -52,7 +52,7 @@ The System Center - Orchestrator component enables you to automate business proc
 
 SMA enables you to automate business processes and IT operations via PowerShell. With the support for the latest PowerShell features, you can use SMA to automate the management of any software that provides PowerShell cmdlets including other System Center components (even Orchestrator). If you would like to automate via PowerShell, use Service Management Automation to manage your all your automation from a single place.
 
-SMA also has deep integration with Windows Azure Pack, however, you no longer need to use Windows Azure Pack portal for authoring SMA runbooks. Authoring can be done within PowerShell ISE through [PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit/). SMA now also supports native PowerShell script type runbooks. You can know more about the new features in SMA over [here](whats-new-in-service-management-automation.md)
+SMA also has deep integration with Windows Azure Pack, however, you no longer need to use Windows Azure Pack portal for authoring SMA runbooks. Authoring can be done within PowerShell ISE through [PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit/). SMA now also supports native PowerShell script type runbooks. You can know more about the new features in SMA over [here](./whats-new-in-sma.md)
 
 The following diagram illustrates each of the SMA features, and the communication with a Windows Azure Pack installation.
 
@@ -68,7 +68,7 @@ The following diagram illustrates each of the SMA features, and the communicatio
 -   The management portal in Windows Azure Pack is where you author, debug, and start and stop runbooks.
 
 > [!IMPORTANT]
-> The [SMA Developer's Guide](https://go.microsoft.com/fwlink/?LinkId=398741) is now available. This guide is a set of REST API reference documentation for the SMA web service.
+> The [SMA Developer's Guide](/previous-versions/system-center/developer/dn688344(v=msdn.10)) is now available. This guide is a set of REST API reference documentation for the SMA web service.
 
 ## Next steps
 

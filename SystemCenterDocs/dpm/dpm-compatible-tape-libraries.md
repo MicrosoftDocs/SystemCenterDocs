@@ -20,7 +20,7 @@ ms.author: v-anesh
 
 ::: moniker-end
 
-Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be deployed using tape-based backup for data protected by the DPM server. A tape library or stand-alone tape drive can be connected to DPM servers. For more information see [Planning the Tape Libraries Configuration](https://docs.microsoft.com/previous-versions/system-center/data-protection-manager-2010/ff399733(v=technet.10)). The following tables summarize tape libraries that are compatible with DPM in System Center 2012 R2, 2016 and 2019.
+Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be deployed using tape-based backup for data protected by the DPM server. A tape library or stand-alone tape drive can be connected to DPM servers. For more information see [Planning the Tape Libraries Configuration](/previous-versions/system-center/data-protection-manager-2010/ff399733(v=technet.10)). The following tables summarize tape libraries that are compatible with DPM in System Center 2012 R2, 2016 and 2019.
 
 > [!NOTE]
 > Tape libraries configured with a virtual Fibre Channel adapter are only supported when using certified tape library hardware on the following configurations:
@@ -31,7 +31,7 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 
 ## Support Matrix
 
-|| DPM 2012 R2 | DPM 2016 | DPM 2019 |
+|Windows Server versions| DPM 2012 R2 | DPM 2016 | DPM 2019 |
 | --- | --- | --- | --- |
 | Windows Server 2012 R2 |  Y |  Y |  N |
 | Windows Server 2016    |  Y |  Y |  Y |

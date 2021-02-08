@@ -58,7 +58,7 @@ Use the following steps:
 6. Click **Save**.
    The dashboard is stored inside the selected folder, and can be seen in the left navigation pane.
 
-   ![New dashboard](./media/support-for-folders/new-dashboard-folder-in-client.png)
+   ![Save dashboard](./media/support-for-folders/new-dashboard-folder-in-client.png)
 
    > [!NOTE]
    >  You can create a dashboard at the root monitoring level as before, by not selecting any folder and clicking the monitoring root.
@@ -122,6 +122,6 @@ You can use the following REST APIs to create folders in Web console and save da
 
 - [Scope the views in management packs](manage-console-scope-views.md)
 
-- [Data Retrieve Items In Monitoring Tree View](https://docs.microsoft.com/rest/api/operationsmanager/data/retrieve%20items%20in%20monitoring%20tree%20view)
+- [Data Retrieve Items In Monitoring Tree View](/rest/api/operationsmanager/data/retrieve%20items%20in%20monitoring%20tree%20view)
 
-- [Component - Add Dashboard](https://docs.microsoft.com/rest/api/operationsmanager/component/add%20dashboard)
+- [Component - Add Dashboard](/rest/api/operationsmanager/component/add%20dashboard)

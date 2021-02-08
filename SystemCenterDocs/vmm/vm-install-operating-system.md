@@ -21,7 +21,7 @@ ms.technology: virtual-machine-manager
 
 This article describes how to install an operating system on a VM in the System Center - Virtual Machine Manager (VMM) fabric.
 
-After you've deployed a VM is in the VMM fabric, you can install an operating system on it. Review the [supported operating systems](https://docs.microsoft.com/system-center/vmm/system-requirements?view=sc-vmm-1807#vms-in-the-vmm-fabric).
+After you've deployed a VM is in the VMM fabric, you can install an operating system on it. Review the [supported operating systems](./system-requirements.md#vms-in-the-vmm-fabric).
 
 You can install an operating system from a DVD, from an ISO image file in the VMM library, or from a network installation.
 
@@ -78,4 +78,4 @@ If the network adapter on the host computer supports network service boots, you 
 
 ## Next steps
 
-[Manage](https://docs.microsoft.com/system-center/vmm/vm-settings?view=sc-vmm-1801) VM settings.
+[Manage](./vm-settings.md) VM settings.

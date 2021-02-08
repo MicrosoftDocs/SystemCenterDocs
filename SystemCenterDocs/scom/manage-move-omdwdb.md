@@ -22,7 +22,7 @@ ms.topic: article
 
 After the initial deployment of System Center Operations Manager, you might need to move the Reporting data warehouse database from one Microsoft SQL Server-based computer to another.
 
-During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](https://msdn.microsoft.com/library/mt590198%28v=sql.1%29.aspx).
+During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](/sql/sql-server/).
 
 > [!NOTE]
 > This procedure can result in data loss if it is not performed correctly and within a reasonable length of time of the failure. Ensure that you follow all steps precisely, without unnecessary delays between the steps.
@@ -44,7 +44,7 @@ On all the management servers in the management group, stop the Operations Manag
 
 1. On the original SQL Server instance hosting the Reporting data warehouse database, use Microsoft SQL Server Management Studio to create a full backup of the database. The default name is OperationsManagerDW.
 
-    For more information, see [How to: Back Up a Database (SQL Server Management Studio)](https://technet.microsoft.com/library/ms187510.aspx).
+    For more information, see [How to: Back Up a Database (SQL Server Management Studio)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
 
 2. Copy the backup file to a local drive of the new SQL Server instance.
 
@@ -57,7 +57,7 @@ For more information, see [How to configure the Operations Manager Reporting dat
 
 1. Use Microsoft SQL Server Management Studio to restore the Reporting data warehouse database. (In the previous step, you moved the database backup file to a local drive of the new SQL Server instance.) In this step, you can change the name of the database and choose the file location.
 
-    For more information, see [How to: Restore a Database Backup (SQL Server Management Studio)](https://technet.microsoft.com/library/ms177429.aspx).
+    For more information, see [How to: Restore a Database Backup (SQL Server Management Studio)](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
 
 2. In SQL Server Management Studio, verify that the database is online.
 
@@ -73,7 +73,7 @@ On the reporting server, you will need to change the connection string to refere
 
 1. On the new SQL Server instance hosting the Reporting data warehouse database, open SQL Management Studio.  
 
-2. Expand **Security**, then expand **Logins**, and then add the data writer account. For more information, see [How to Create a SQL Server Login](https://technet.microsoft.com/library/aa337562.aspx).
+2. Expand **Security**, then expand **Logins**, and then add the data writer account. For more information, see [How to Create a SQL Server Login](/sql/relational-databases/security/authentication-access/create-a-login).
 
 3. Under **Logins**, add the data reader account.
 
@@ -103,7 +103,7 @@ On the reporting server, you will need to change the connection string to refere
    - System Center Management Configuration
 
 ### Update Service Principal Name for Kerberos Connections
-To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](https://docs.microsoft.com/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?view=sql-server-2017#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
+To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
 
 ## To verify a successful move of the data warehouse database
 
@@ -126,4 +126,4 @@ To update Kerberos authentication with SQL Server, you should review [Register a
 
 ## Next steps
 
-- See [How to move the Operational database](manage-move-opsdb.md) to understand the sequence and steps for moving the Operations Manager operational database to a new SQL Server instance.  
+- See [How to move the Operational database](manage-move-opsdb.md) to understand the sequence and steps for moving the Operations Manager operational database to a new SQL Server instance.

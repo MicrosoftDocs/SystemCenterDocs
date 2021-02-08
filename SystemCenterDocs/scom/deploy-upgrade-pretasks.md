@@ -56,6 +56,7 @@ As part of upgrade to System Center Operations Manager installation (setup) incl
 
 To cleanup the ETL table, run the following script on the SQL Server hosting the Operations Manager database:
 
+  ```
     -- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         --
     -- Proprietary and confidential to Microsoft Corporation                      --       
     -- File:      CatchupETLGrooming.sql                                          --
@@ -79,7 +80,8 @@ To cleanup the ETL table, run the following script on the SQL Server hosting the
       WHERE RECL.EntityTransactionLogId = ETL.EntityTransactionLogId)
       AND ETL.EntityTransactionLogId < @SubscriptionWatermark;        
       SELECT @LastErr = @@ERROR, @RowCount = @@ROWCOUNT;            
-    END    
+    END
+  ```   
 
 > [!NOTE]
 > Cleanup of ETL can require several hours to complete.
@@ -155,7 +157,7 @@ If the database does not have 50 percent free, perform the following steps to in
 
 ## Back up the Operations Manager databases
 
-Obtain verified recent backups of the operational database and of the data warehouse database before you upgrade the secondary management server. You should also create backups of databases for optional features, such as the Reporting and the Audit Collection Services database before you upgrade them. For more information, see [Create a Full Database Backup (SQL Server)](https://msdn.microsoft.com/library/ms187510%28v=sql.130%29.aspx).
+Obtain verified recent backups of the operational database and of the data warehouse database before you upgrade the secondary management server. You should also create backups of databases for optional features, such as the Reporting and the Audit Collection Services database before you upgrade them. For more information, see [Create a Full Database Backup (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
 
 ## Stop Operations Manager services on Management servers
 

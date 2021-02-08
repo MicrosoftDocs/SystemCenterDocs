@@ -70,7 +70,7 @@ With DPM 2019, you can back up newer versions of workloads, as listed below:
 -	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
 
 ### Faster backups with Tiered storage using SSDs
-DPM 2016 introduced [Modern Backup Storage](https://docs.microsoft.com/system-center/dpm/add-storage?view=sc-dpm-2016), improving storage utilization and performance. MBS uses ReFS as underlying file system and is designed to make use of hybrid storage such as tiered storage.
+DPM 2016 introduced [Modern Backup Storage](./add-storage.md?preserve-view=true&view=sc-dpm-2016), improving storage utilization and performance. MBS uses ReFS as underlying file system and is designed to make use of hybrid storage such as tiered storage.
 
 To achieve the scale and performance by MBS we recommend using a small percentage (4% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups. [Learn more](add-storage.md#set-up-mbs-with-tiered-storage).
 
@@ -235,7 +235,7 @@ Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have RC
 
 2. In Hyper-V Manager, select **Action** > **Upgrade Configuration Version**.
 
-   If this option isn't available for the virtual machine, then it's already at the highest configuration version supported by the Hyper-V host. For additional information about checking or upgrading the virtual machine configuration version, see the article, [upgrading virtual machine version to Windows Server 2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/deploy/upgrade-virtual-machine-version-in-hyper-v-on-windows-or-windows-server/).
+   If this option isn't available for the virtual machine, then it's already at the highest configuration version supported by the Hyper-V host. For additional information about checking or upgrading the virtual machine configuration version, see the article, [upgrading virtual machine version to Windows Server 2016](/windows-server/virtualization/hyper-v/deploy/Upgrade-virtual-machine-version-in-Hyper-V-on-Windows-or-Windows-Server).
 
    If you want to use Windows PowerShell to upgrade the virtual machine configuration, run the following command where vmname is the name of the virtual machine.
 
@@ -253,7 +253,7 @@ This backs up RCT-enabled VMs deployed in various configurations. The following 
 
 #### Meet backup SLA during cluster operating system rolling upgrade
 
-Cluster OS rolling upgrade is a feature of Windows Server 2016 used to upgrade the cluster nodes' operating system, from Windows Server 2012 R2 to Windows Server 2016, without stopping the Hyper-V or Scale-Out File Server (SOFS) workloads. Cluster OS rolling upgrade ensures protection is not interrupted during operating system upgrades. This sustained protection meets the backup SLA, reinforces continuity, and provides peace of mind for backup administrators. For detailed information on the cluster OS rolling upgrade process, see the article, [Cluster OS Rolling Upgrade Process](https://technet.microsoft.com/windows-server-docs/failover-clustering/cluster-operating-system-rolling-upgrade#cluster-os-rolling-upgrade-process).
+Cluster OS rolling upgrade is a feature of Windows Server 2016 used to upgrade the cluster nodes' operating system, from Windows Server 2012 R2 to Windows Server 2016, without stopping the Hyper-V or Scale-Out File Server (SOFS) workloads. Cluster OS rolling upgrade ensures protection is not interrupted during operating system upgrades. This sustained protection meets the backup SLA, reinforces continuity, and provides peace of mind for backup administrators. For detailed information on the cluster OS rolling upgrade process, see the article, [Cluster OS Rolling Upgrade Process](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#cluster-os-rolling-upgrade-process).
 
 To enable uninterrupted protection, run the following steps for each node:
 
@@ -283,9 +283,9 @@ DPM 2016 supports backup and recovery of Shielded VMs that have their VHDs/VHDXs
 
 Storage Spaces Direct leverages the Storage Spaces feature introduced in Windows Server 2012 R2 which allows you to deploy highly available (HA) storage systems using local storage. Storage Spaces Direct leverages the local disks on hosts to provide a shared pool of clustered storage that can be used as primary storage for Hyper-V virtual machine files, or for secondary storage for Hyper-V Replica virtual machines files.
 The primary use case for Storage Spaces Direct is private cloud storage, either on-premises for enterprises, or in hosted private clouds for service providers.
-For more information about Storage Spaces Direct, see the article on [Storage Spaces Direct in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/storage/storage-spaces/storage-spaces-direct-overview).
+For more information about Storage Spaces Direct, see the article on [Storage Spaces Direct in Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview).
 
-DPM protects Hyper-V VMs that use Storage Spaces Direct. Most configurations are supported, including the backup of VMs using the [Storage Spaces Direct hyper-converged scenario](https://technet.microsoft.com/windows-server-docs/storage/storage-spaces/hyper-converged-solution-using-storage-spaces-direct) with the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster. Note that backing up and restoring virtual machines running on a Windows Nano Server isn't supported.
+DPM protects Hyper-V VMs that use Storage Spaces Direct. Most configurations are supported, including the backup of VMs using the [Storage Spaces Direct hyper-converged scenario](/windows-server/storage/storage-spaces/deploy-storage-spaces-direct) with the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster. Note that backing up and restoring virtual machines running on a Windows Nano Server isn't supported.
 
 #### Protecting VMs stored on ReFS-based SOFS clusters
 

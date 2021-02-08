@@ -1,6 +1,6 @@
 ---
 title: Control runbook activities
-Description: Describes how to manipulate data and control the sequence of operations in an Orchestrator runbook.
+description: This article describes how to manipulate data and control the sequence of operations in an Orchestrator runbook.
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article

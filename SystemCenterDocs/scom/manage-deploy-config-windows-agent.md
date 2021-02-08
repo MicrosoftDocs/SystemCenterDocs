@@ -23,7 +23,7 @@ ms.topic: article
 In System Center – Operations Manager, when you install an agent on a computer, an Microsoft Monitoring Agent application is added to Control Panel. You can use the application to change the account that the agent will use when performing actions requested by the management server, to remove a management group from an agent configuration, and to configure the Active Directory integration setting for the agent. To perform these tasks, you must have local Administrator permissions on the computer.
 
 > [!NOTE]
-> If you want to automate the process of adding or removing management groups from an agent, you can use the [Operations Manager cmdlets](https://technet.microsoft.com/library/hh920227%28v=sc.20%29.aspx) or the Agent API from the [Operations Manager Agent Configuration Library](https://msdn.microsoft.com/library/hh329076.aspx), allowing you to write scripts that can automate the agent configuration process.
+> If you want to automate the process of adding or removing management groups from an agent, you can use the [Operations Manager cmdlets](/previous-versions/system-center/hh920227(v=sc.20)) or the Agent API from the [Operations Manager Agent Configuration Library](/previous-versions/system-center/developer/hh329076(v=msdn.10)), allowing you to write scripts that can automate the agent configuration process.
 
 > [!NOTE]
 > When you save changes in the Microsoft Monitoring Agent application, the Microsoft Monitoring Agent service will be stopped and restarted.

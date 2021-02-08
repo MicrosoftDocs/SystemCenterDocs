@@ -55,7 +55,7 @@ There are a couple of ways to deploy these components:
 Here's what you need to do to set up SDN components in VMM with PowerShell.
 
 
-1. **Configure hosts and physical network infrastructure**: You need access to your physical network devices to configure VLANs, routing etc. You also need Hyper-V hosts to host the SDN infrastructure and tenant VMs. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
+1. **Configure hosts and physical network infrastructure**: You need access to your physical network devices to configure VLANs, routing etc. You also need Hyper-V hosts to host the SDN infrastructure and tenant VMs. [Learn more](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
 2. [Prepared virtual hard disk](sdn-controller.md#prepare-a-virtual-hard-disk) for the service templates in VHD or VHDX format.
 3. Download the [network controller](sdn-controller.md#download-the-network-controller-service-template) service template, the [SLB service](sdn-slb.md#download-the-service-template) template, and the [RAS gateway](sdn-gateway.md#download-the-service-template) service template.
 4. Import the [network controller](sdn-controller.md#import-the-template), [SLB](sdn-slb.md#import-the-service-template), and [RAS gateway](sdn-gateway.md#import-the-service-template) templates into the VMM library.
@@ -71,4 +71,4 @@ Here's what you need to do to set up SDN components in VMM with PowerShell.
 
 ## Next steps
 
-[Configure hosts and physical network infrastructure for SDN ](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
+[Configure hosts and physical network infrastructure for SDN ](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure).

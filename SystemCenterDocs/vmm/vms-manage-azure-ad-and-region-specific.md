@@ -27,7 +27,7 @@ You can add Microsoft Azure subscriptions to System Center 2016 - Virtual Machin
 
 VMM 1801 and later supports management of Azure subscriptions through Azure active directory and region-specific Azure subscriptions. (namely, Germany, China, US Government Azure regions).
 
-Management of Azure subscriptions through certificate-based authentication and authorization requires Management certificate. [Learn More](https://docs.microsoft.com/azure/azure-api-management-certs).
+Management of Azure subscriptions through certificate-based authentication and authorization requires Management certificate. [Learn More](/azure/azure-api-management-certs).
 
 Management of  VMs using Azure AD-based authentication and authorization requires Azure AD application.
 
@@ -42,9 +42,9 @@ Ensure the following prerequisites:
     -   Azure Active Directory ID
     - 	Azure Active Directory - Application ID & Application Key
 
-  [Learn more](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal) on how to create an Azure AD App.  
+  [Learn more](/azure/azure-resource-manager/resource-group-create-service-principal-portal) on how to create an Azure AD App.  
 
-- **A management certificate** - with the configuration as described in [this article](https://technet.microsoft.com/system-center-docs/vmm/manage/manage-add-azure-subscription).
+- **A management certificate** - with the configuration as described in [this article](./azure-subscription.md).
 
   - The subscription must have a management certificate associated with it so that VMM can use the service management API in Azure.
   - Make note of the subscription ID and the certificate thumbprint.
@@ -79,7 +79,7 @@ Ensure the following prerequisites:
 
     If you want to continue using certificate based authentication, then instead of selecting Azure AD authentication, choose management certificate based authentication and provide the management certificate from “Current User\Personal” certificate store and then click **Finish**.
 
-    ![select authentication](media/azure-arm-based/management-using-certificate.png)
+    ![select management certificate](media/azure-arm-based/management-using-certificate.png)
 
 6. Verify the Azure subscription and the VMs hosted on Azure.
 ![verify subscription authentication](media/azure-arm-based/verify-azure-subscription.png)
@@ -87,5 +87,5 @@ Ensure the following prerequisites:
 
 ## Next steps
 
-- [Create Certificates](https://docs.microsoft.com/azure/cloud-services/cloud-services-certs-create#what-are-management-certificates)
-- [Create active directory](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+- [Create Certificates](/azure/cloud-services/cloud-services-certs-create#what-are-management-certificates)
+- [Create active directory](/azure/azure-resource-manager/resource-group-create-service-principal-portal)

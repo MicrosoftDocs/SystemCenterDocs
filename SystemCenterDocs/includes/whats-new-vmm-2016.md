@@ -61,7 +61,7 @@ VMM supports an enhanced console session that enables **Cut (Ctrl + X)**, **Copy
 
 ### Deploy and manage storage clusters with Storage Spaces Direct (S2D)
 
-[Storage Spaces Direct in Windows Server 2016](https://technet.microsoft.com/library/mt126109.aspx) enables you to build highly available storage systems on Windows Server. You can use VMM to create a Scale-Out File Server running Windows Server 2016, and configure it with Storage Spaces Direct. After it's configure you can create storage pools and file shares on it. [Learn more](../vmm/s2d.md).
+[Storage Spaces Direct in Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview) enables you to build highly available storage systems on Windows Server. You can use VMM to create a Scale-Out File Server running Windows Server 2016, and configure it with Storage Spaces Direct. After it's configure you can create storage pools and file shares on it. [Learn more](../vmm/s2d.md).
 
 
 ### Storage Replica

@@ -98,6 +98,10 @@
      "redirect_url" : "/system-center/dpm/what-s-new-in-dpm-2016"
 },
 {
+     "source_path" : "SystemCenterDocs/dpm/what-s-new-in-dpm-2016.md",
+     "redirect_url" : "/system-center/dpm/what-s-new-in-dpm"
+},
+{
      "source_path" : "SystemCenterDocs/dpm/get-started/What-s-supported-and-what-isn-t-for-DPM-.md",
      "redirect_url" : "/system-center/dpm/dpm-support-issues"
 },

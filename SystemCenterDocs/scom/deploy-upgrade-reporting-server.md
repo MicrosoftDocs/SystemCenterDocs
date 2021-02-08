@@ -24,7 +24,7 @@ ms.topic: article
 
 Use this procedure to upgrade a stand-alone Reporting server to System Center Operations Manager 2019. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 ## Before performing the upgrade
 
@@ -86,7 +86,7 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
 
 Use this procedure to upgrade a stand-alone Reporting server to System Center 2016 - Operations Manager or version 1801. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 ## Before performing the upgrade
 

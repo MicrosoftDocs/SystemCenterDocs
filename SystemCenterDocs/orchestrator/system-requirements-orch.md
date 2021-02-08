@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 10/13/2020
+ms.date: 12/18/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
@@ -24,8 +24,6 @@ This article details the system requirements for System Center 2019 - Orchestrat
 ::: moniker range="sc-orch-1807"
 
 [!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
-
-Orchestrator 1801 system requirements are also applicable for 1807 Orchestrator, there are no changes. [Learn about the system requirements](https://docs.microsoft.com/system-center/orchestrator/system-requirements-orch?view=sc-orch-1801).
 
 ::: moniker-end
 

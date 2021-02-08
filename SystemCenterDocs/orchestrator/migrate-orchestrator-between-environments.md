@@ -6,7 +6,7 @@ ms.technology: orchestrator
 ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
-ms.date: 12/18/2020
+ms.date: 12/23/2020
 manager: carmonm
 ---
 
@@ -37,7 +37,7 @@ The following steps are required to enable an automatic migration of Orchestrato
 6.  Deploy Orchestrator components in environment B  
 
 > [!NOTE]  
-> See [https://go.microsoft.com/fwlink/?LinkId=246817](https://go.microsoft.com/fwlink/?LinkId=246817) for information on using the Sqlcmd utility.  
+> See [https://go.microsoft.com/fwlink/?LinkId=246817](/sql/tools/sqlcmd-utility) for information on using the Sqlcmd utility.  
 
 ## Back up SQL Server service master key in environment A  
 Back up the SQL Server service master key. This is a one-time operation.  
@@ -103,6 +103,17 @@ Use the following steps to create a batch script to run on the new SQL Server co
 
     ```  
 
+    >[!NOTE]
+    > Orchestrator database is encrypted, you need the encryption key password to add the database to an  SQL *Always ON* setup. Use the following T-SQL query to change the password and use the new password in the SQL **Always ON Availability** wizard, while adding the database to *Always ON* setup:
+    >
+    >
+    >**Use Orchestrator ALTER MASTER KEY**
+    >
+    >**REGENERATE WITH ENCRYPTION BY PASSWORD = 'password';**
+    >
+    >**GO**
+
+
 ## Deploy Orchestrator components in environment B  
 
 Deploy Orchestrator components \(management server, Web features, runbook servers, and Runbook Designers\) using the silent install commands of Orchestrator setup. See [Install with the Orchestrator Command Line Install Tool](~/orchestrator/install.md) for more information on deploying Orchestrator through the command line.  
@@ -145,4 +156,4 @@ Sqlcmd -Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\Orchestrator
 ```  
 %systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  
 
-```  
+```

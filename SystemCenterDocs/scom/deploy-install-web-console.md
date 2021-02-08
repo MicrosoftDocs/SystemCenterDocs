@@ -29,7 +29,7 @@ You can install the web console when you install System Center - Operations Mana
 
 ::: moniker-end
 
- For information about the prerequisites, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+ For information about the prerequisites, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 > [!IMPORTANT]
 > If you install a stand-alone web console on a server, you will not be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
@@ -45,7 +45,7 @@ When you install the web console, the following three components are installed:
 > [!NOTE]
 > If Application Diagnostics console is not installed, when viewing APM alerts, you will not be able to use the link embedded in the alert description to launch the APM event details. To use this feature, install the web console within the management group.
 
-If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](https://go.microsoft.com/fwlink/p/?linkID=158320). For more information about sessions, see [Support for Sessions](https://go.microsoft.com/fwlink/p/?linkID=251693).
+If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770558(v=ws.11)). For more information about sessions, see [Support for Sessions](/previous-versions/windows/it-pro/windows-server-2003/cc738968(v=ws.10)).
 
 > [!NOTE]
 > A Network Load Balancer is not supported for the Operations Manager web console server.
@@ -206,4 +206,4 @@ All information and content at https://techcommunity.microsoft.com/t5/system-cen
 
 ## Next steps
 
-- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.

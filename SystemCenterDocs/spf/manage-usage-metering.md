@@ -37,8 +37,8 @@ Here's what you need:
 
 Before you set up metering, check these resources:
 
-- [Learn about the SPF cmdlets](https://docs.microsoft.com/powershell/module/spfadmin/set-scspftenant?view=systemcenter-ps-2016).
-- [Read a blog post](https://blogs.technet.com/b/privatecloud/archive/2013/10/01/configuring-spf-and-windows-azure-pack-for-iaas-usage-and-metering.aspx) about usage metering.
+- [Learn about the SPF cmdlets](/powershell/module/spfadmin/set-scspftenant).
+- [Read a blog post](/archive/blogs/privatecloud/configuring-spf-and-windows-azure-pack-for-iaas-usage-and-metering) about usage metering.
 
 Then set up metering as follows:
 

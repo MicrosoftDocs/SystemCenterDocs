@@ -26,7 +26,7 @@ Use the steps in this article to perform an in-place upgrade of the databases su
 >[!NOTE]
 >Upgrading to SQL Server 2017 uninstalls SQL Reporting Services, as this is now a separately-installed feature.
 
-Before performing these upgrade steps, review the [SQL Server 2017 upgrade information](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-2017).
+Before performing these upgrade steps, review the [SQL Server 2017 upgrade information](/sql/database-engine/install-windows/upgrade-sql-server?preserve-view=true&view=sql-server-2017).
 
 ## Stop the Operations Manager services.
 On all the management servers in the management group, stop the Operations Manager services:
@@ -36,9 +36,9 @@ On all the management servers in the management group, stop the Operations Manag
 * System Center Management Configuration
 
 ## Back up the Reporting server database
-1. On the SQL Server hosting the Reporting server databases, create a full backup of the **ReportServer** and **ReportServerTempDB** database. For more information, see [Create a Full Database Backup (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
+1. On the SQL Server hosting the Reporting server databases, create a full backup of the **ReportServer** and **ReportServerTempDB** database. For more information, see [Create a Full Database Backup (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
 
-2. On the current Operations Manager reporting server, back up the SSRS encryption key. For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+2. On the current Operations Manager reporting server, back up the SSRS encryption key. For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 3. Back up the report server configuration files. Files to back up include:
 
@@ -56,7 +56,7 @@ On all the management servers in the management group, stop the Operations Manag
 
     d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes.
 
-2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 documentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017).
+2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 documentation](/sql/database-engine/install-windows/upgrade-database-engine?preserve-view=true&view=sql-server-2017).
 
 ## Install SQL Server 2017 Reporting services
 
@@ -98,7 +98,7 @@ After the upgrade is complete, perform the following steps to [install Operation
 
 ## Optional - Enable CLR strict security
 
-To enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017) on the Operations Manager databases,  run the following SQL script on each Operations Manager database (by default, CLR strict security will be OFF after upgrading to SQL Server 2017).  
+To enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017) on the Operations Manager databases,  run the following SQL script on each Operations Manager database (by default, CLR strict security will be OFF after upgrading to SQL Server 2017).  
 
 ```
 -- Do this only for SQL server version 2017 and more

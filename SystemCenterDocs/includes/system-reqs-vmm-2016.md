@@ -79,9 +79,9 @@ Window Server 2016 Standard, Datacenter | Y
 **SQL version** | **Supported**
 --- | ---
 SQL Server 2008 | N
-SQL Server 2012 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)| Y
-SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack) | Y
-SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) | Y
+SQL Server 2012 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2012)| Y
+SQL Server 2014 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2014) | Y
+SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016) | Y
 SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56041) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> Not required for VMM installation.
 
 ## Virtualization
@@ -100,7 +100,7 @@ These components should be installed on the server, before you install VMM.
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
 Active Directory | The VMM management server must be a domain member.<br><br> The computer name should not  exceed 15 characters. | A computer with the VMM console installed should be a domain member.
-Windows ADK | [Download](https://docs.microsoft.com/windows-hardware/get-started/adk-install) Windows ADK for Windows 10 | Not applicable
+Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 10 | Not applicable
 PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 .NET | 4.6 | 4.5, 4.5.1, 4.5.2, 4.6
 
@@ -108,7 +108,7 @@ PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 ## Servers in the VMM fabric
 
 >[!NOTE]
-> Hyper-V server 2016 and 2019 are not supported. 
+> Hyper-V server 2016 and 2019 are not supported.
 
 **Operating system** | **Hyper-V host** | **SOFS** | **Update server** | **PXE server**
 --- | --- | --- | --- | ---
@@ -130,5 +130,5 @@ Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 
 **Guest operating system** | **Supported**
 --- | ---
-Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows) and [earlier versions](https://technet.microsoft.com/library/mt126277.aspx).
+Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows) and [earlier versions](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277(v=ws.11)).
 VMware VM | Any VM running on supported VMware servers. [Learn more](http://www.VMware.com/resources/compatibility/search.php?deviceCategory=software)

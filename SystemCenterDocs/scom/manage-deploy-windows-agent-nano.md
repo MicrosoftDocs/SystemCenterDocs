@@ -75,7 +75,7 @@ There are several limitations in this release of the Nano Server agent. The foll
 
 ## Manually install the Operations Manager agent on a Nano server
 
-1.  Follow the instructions for manually installing Nano Server on either a physical computer or a virtual machine. See [Getting Started with Nano Server](https://technet.microsoft.com/library/mt126167.aspx) for complete instructions.
+1.  Follow the instructions for manually installing Nano Server on either a physical computer or a virtual machine. See [Getting Started with Nano Server](/windows-server/get-started/getting-started-with-nano-server) for complete instructions.
 
     > [!NOTE]
     > The Nano Server must be in the same domain as the Operations Manager Management Server.

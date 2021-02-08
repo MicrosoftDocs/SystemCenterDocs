@@ -31,7 +31,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
    > [!NOTE]
    > DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV).
    >
-   > Protection of [SQL server failover cluster instance with Storage Spaces Direct on Azure](https://docs.microsoft.com/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-storage-spaces-direct-manually-configure?tabs=windows2012), and [SQL server failover cluster instance with Azure shared disks](https://docs.microsoft.com/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?tabs=windows2012) is supported with this feature. The DPM server must be deployed in the Azure virtual machine to protect the SQL FCI instance, deployed on the Azure VMs.
+   > Protection of [SQL server failover cluster instance with Storage Spaces Direct on Azure](/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-storage-spaces-direct-manually-configure?tabs=windows2012), and [SQL server failover cluster instance with Azure shared disks](/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-azure-shared-disks-manually-configure?tabs=windows2012) is supported with this feature. The DPM server must be deployed in the Azure virtual machine to protect the SQL FCI instance, deployed on the Azure VMs.
 
 ::: moniker-end
 
@@ -67,13 +67,13 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 -   DPM cannot protect databases that are stored on remote SMB shares.
 
--   Ensure that the [availability group replicas are configured as read-only](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/configure-read-only-access-on-an-availability-replica-sql-server?view=sql-server-ver15).
+-   Ensure that the [availability group replicas are configured as read-only](/sql/database-engine/availability-groups/windows/configure-read-only-access-on-an-availability-replica-sql-server).
 
 -   You must explicitly add the system account NTAuthority\System to the Sysadmin group on SQL Server.
 
--   When you perform an alternate location recovery for a partially contained database, you must ensure that the target SQL instance has the [Contained Databases](https://docs.microsoft.com/sql/relational-databases/databases/migrate-to-a-partially-contained-database?view=sql-server-ver15#enable) feature enabled.
+-   When you perform an alternate location recovery for a partially contained database, you must ensure that the target SQL instance has the [Contained Databases](/sql/relational-databases/databases/migrate-to-a-partially-contained-database#enable) feature enabled.
 
--   When you perform an alternate location recovery for a file stream database, you must ensure that the target SQL instance has the [file stream database](https://docs.microsoft.com/sql/relational-databases/blob/enable-and-configure-filestream?view=sql-server-ver15) feature enabled.
+-   When you perform an alternate location recovery for a file stream database, you must ensure that the target SQL instance has the [file stream database](/sql/relational-databases/blob/enable-and-configure-filestream) feature enabled.
 
 -   Protection for SQL Server AlwaysOn:
 
@@ -109,7 +109,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 -   SQL Server 2014 or above backup issues:
 
-    -   SQL server 2014 added a new feature to create a [database for on-premises SQL Server in Windows Azure Blob storage](https://docs.microsoft.com/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure?view=sql-server-ver15). DPM cannot be used to protect this configuration.
+    -   SQL server 2014 added a new feature to create a [database for on-premises SQL Server in Windows Azure Blob storage](/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure). DPM cannot be used to protect this configuration.
 
     -   There are some known issues with *Prefer secondary* backup preference for the SQL AlwaysOn option, DPM always takes a backup from secondary; if no secondary can be found then the backup fails.
 

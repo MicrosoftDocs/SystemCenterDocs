@@ -108,7 +108,7 @@ Some activities take a limited amount of time to complete. If the activity does 
 
 2.  Select **Report if activity fails to run** to generate a failure notification.
 
-For more information about events, see the [Activity Events](https://technet.microsoft.com/library/hh489611.aspx) topic in [Administering System Center - Orchestrator](https://technet.microsoft.com/library/hh674377.aspx).
+For more information about events, see the [Activity Events](/previous-versions/system-center/system-center-2012-R2/hh489611(v=sc.12)) topic in [Administering System Center - Orchestrator](/previous-versions/system-center/system-center-2012-R2/hh674377(v=sc.12)).
 
 ##### Published Data
 
@@ -124,4 +124,4 @@ Published data is the method that one activity shares information with other act
 
 4.  Click the published data element that you want to use, and then click **OK**.
 
-For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the Common Published Data items, see the [Common Published Data](https://technet.microsoft.com/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData) topic in [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md).
+For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the Common Published Data items, see the [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData) topic in [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md).

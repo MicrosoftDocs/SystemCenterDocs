@@ -32,7 +32,7 @@ Some monitors have diagnostic or recovery tasks that are disabled by default. Yo
 
 ![Recovery Task Disabled Example](./media/how-to-enable-recovery-and-diagnostic-tasks/om2016-recovery-tasks-example.png)  
 
-On this tab, you can also add tasks or edit tasks that you have added previously. For more information on how to add diagnostic and recovery tasks, see [Diagnostics and Recoveries](https://go.microsoft.com/fwlink/?LinkId=230462) in the Author's Guide. Tasks that are configured by a sealed management pack can only be modified by using overrides.
+On this tab, you can also add tasks or edit tasks that you have added previously. For more information on how to add diagnostic and recovery tasks, see [Diagnostics and Recoveries](/previous-versions/system-center/system-center-2012-R2/hh705258(v=sc.12)) in the Author's Guide. Tasks that are configured by a sealed management pack can only be modified by using overrides.
 
 ## To enable a diagnostic or recovery task  
 
@@ -56,4 +56,4 @@ On this tab, you can also add tasks or edit tasks that you have added previously
 
 - To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md)
 
-- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](~/scom/manage-mp-override-rule-monitor.md) to understand how to configure the change.    
+- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](~/scom/manage-mp-override-rule-monitor.md) to understand how to configure the change.

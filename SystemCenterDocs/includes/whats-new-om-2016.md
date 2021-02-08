@@ -15,7 +15,7 @@ ms.topic: include
 
 ## New features in Operations Manager 2016
 
-The content in the following sections describe the new features in System Center 2016 - Operations Manager.
+The content in the following sections describe the new features and feature updates in System Center 2016 - Operations Manager.
 
 ## Improve desktop console performance
 
@@ -117,7 +117,7 @@ With Microsoft Operations Management Suite you can extend your management capabi
 
 -   Capacity Planning
 
-For more information, review the Microsoft [Operations Management Suite](https://technet.microsoft.com/library/mt484091.aspx) documentation.
+For more information, review the Microsoft [Operations Management Suite](/azure/azure-monitor/overview) documentation.
 
 
 ## Partner Program in Administration pane

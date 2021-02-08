@@ -126,7 +126,7 @@ Controls that are used on a form can be:
 
 When you design a form, use public design guidelines to ensure that the form is user friendly and that it adheres to common user\-interaction paradigms.
 
- For more information about general Windows design, see [Windows User Experience Interaction Guidelines](https://go.microsoft.com/fwlink/p/?LinkID=134101).
+ For more information about general Windows design, see [Windows User Experience Interaction Guidelines](/windows/apps/desktop/).
 
  In addition:
 

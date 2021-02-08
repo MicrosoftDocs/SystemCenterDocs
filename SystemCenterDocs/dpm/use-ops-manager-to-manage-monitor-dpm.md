@@ -96,7 +96,7 @@ Note that:
 
 - DPM adds firewall exceptions for port 6075 to enable scoped Administrator console. Open ports for SQL Server.exe and SQL browser.exe.
 
-- If you need to uninstall Operations Manager, see [How to Uninstall Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=245527).
+- If you need to uninstall Operations Manager, see [How to Uninstall Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh456442(v=sc.12)).
 
 ### <a name="BKMK_ImportReporting"></a>Import the reporting management pack
 

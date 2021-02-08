@@ -25,7 +25,7 @@ To back up and restore an SDN, you must back up and restore the network controll
 
 ## Back up the network controller
 
-Back up the network controller database by using the network controller Rest API. [Learn more](https://docs.microsoft.com/windows-server/networking/sdn/manage/update-backup-restore#restore-the-sdn-infrastructure-from-a-backup).
+Back up the network controller database by using the network controller Rest API. [Learn more](/windows-server/networking/sdn/manage/update-backup-restore#restore-the-sdn-infrastructure-from-a-backup).
 
 ## Bring up the new network controller
 
@@ -40,7 +40,7 @@ Use the following procedures to bring up a new network controller:
 
 2. Ensure that the DNS record for the network controller is removed from the DNS.
 
-3. Deploy a new network controller service instance form the VMM by using the same service deployment settings that were  used for the original service instance deployment. [Learn more](https://docs.microsoft.com/system-center/vmm/sdn-controller).
+3. Deploy a new network controller service instance form the VMM by using the same service deployment settings that were  used for the original service instance deployment. [Learn more](./sdn-controller.md).
 
 3. Verify that the deployment job is successful.  
 
@@ -48,7 +48,7 @@ Use the following procedures to bring up a new network controller:
 
 ## Restore the network controller from a backup
 
-Restore the network controller from a network controller backup by using the network controller Rest API. [Learn more](https://docs.microsoft.com/windows-server/networking/sdn/manage/update-backup-restore#restore-the-sdn-infrastructure-from-a-backup).
+Restore the network controller from a network controller backup by using the network controller Rest API. [Learn more](/windows-server/networking/sdn/manage/update-backup-restore#restore-the-sdn-infrastructure-from-a-backup).
 
 ## Refresh the network controller and synchronize VMM and NC
 Depending on the SDN state captured in the network controller backup and the current VMM state, some of the resources in VMM and network controller might be out of sync.

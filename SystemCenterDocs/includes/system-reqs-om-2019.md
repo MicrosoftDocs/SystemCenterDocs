@@ -12,10 +12,6 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## System requirements for System Center 2019 - Operations Manager
-
-The following sections describe general performance and scalability guidance for System Center 2019 - Operations Manager.  These sections also provide recommendations for hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
-
 ## Capacity limits for Operations Manager
 
 This information helps you understand the performance and scalability characteristics of the various Operations Manager components supporting a management group.
@@ -183,7 +179,7 @@ Microsoft supports running all System Center 2019 – Operations Manager server 
 
 System Center 2016 - Operations Manager and higher runs on virtual machines in Microsoft Azure just as it does on physical computer systems.  We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises.  You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.
 
-- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](https://aka.ms/asr-scom). The virtualized environment referred here, can be either on on-premises or Azure, and it would failover to this environment on account of any disaster.
+- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](/en-in/azure/site-recovery/site-recovery-workload). The virtualized environment referred here, can be either on on-premises or Azure, and it would failover to this environment on account of any disaster.
 - If the Operations Manager databases are to be hosted on virtualized SQL Server(s), for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.
 
 

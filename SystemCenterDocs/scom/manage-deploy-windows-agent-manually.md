@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-You can use MOMAgent.msi to deploy System Center Operations Manager agents from the command line or by using the Setup Wizard. Deploying agents from the command line is also referred to as a manual install.  For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](plan-system-requirements.md).
+You can use MOMAgent.msi to deploy System Center Operations Manager agents from the command line or by using the Setup Wizard. Deploying agents from the command line is also referred to as a manual install.  For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](./system-requirements.md).
 
 Before you use either method to manually deploy the agent, ensure the following conditions are met:
 
@@ -176,7 +176,8 @@ msiexec /x path\Directory\MOMAgent.msi /qn /l*v %temp%\OMAgentUninstall.log
 The following example shows how you install the Windows agent from PowerShell with the Application Performance Monitoring (APM) component disabled.
 
 ```
-Install-SCOMAgent -DNSHostName "ComputerA.contoso.net" -PrimaryManagementServer <MSDNSName> -NoAPM
+$PrimaryMS = Get-SCOMManagementServer -Name <MSDNSName>
+Install-SCOMAgent -DNSHostName 'ComputerA.contoso.com' -PrimaryManagementServer $PrimaryMS -NoAPM
 
 ```
 
@@ -199,4 +200,4 @@ Get-SCOMAgent -DNSHostName "ComputerA.contoso.net" | Repair-SCOMAgent -NoAPM
 
 - To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](~/scom/manage-deploy-config-windows-agent.md).
 
-- Review [Uninstall Agent from Windows-based Computers](~/scom/manage-uninstall-windows-agent.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
+- Review [Uninstall Agent from Windows-based Computers](~/scom/manage-uninstall-windows-agent.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.

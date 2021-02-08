@@ -26,7 +26,7 @@ Service Manager automates help desk functions, such as ticketing and change requ
 
 Service Manager uses management pack files that contain object definitions for the various features of the product. You can customize the behavior of Service Manager and extend it by creating and modifying management packs. This authoring guide describes the use, authoring, and customization of management packs.  
 
-The Service Manager Software Development Kit \(SDK\) contains information that you might need when you are authoring with Service Manager. The SDK includes reference information for the class libraries and documents that the schema uses to create XML\-based management packs. To download the documentation for the System Center Service Manager SDK, see [System Center Service Manager Software Development Kit \(SDK\) Documentation](https://msdn.microsoft.com/library/hh965050.aspx).  
+The Service Manager Software Development Kit \(SDK\) contains information that you might need when you are authoring with Service Manager. The SDK includes reference information for the class libraries and documents that the schema uses to create XML\-based management packs. To download the documentation for the System Center Service Manager SDK, see [System Center Service Manager Software Development Kit \(SDK\) Documentation](/previous-versions/system-center/developer/hh965050(v=msdn.10)).  
 
 ### Overview of management packs
 

@@ -106,14 +106,14 @@ Once you have matching credentials in DPM, update the VMware server credentials 
 2. In the list of assets to manage, click **Production Servers**.
 3. In the list of computers, select the VMware server whose credentials need to be updated.
    In the example image, *demovcenter1.Contoso.com* is the VMware server with broken credentials.
-   ![open Add Credentials dialog](./media/back-up-vmware/broken-credentials.png)
+   ![Example vmware server with broken credentials](./media/back-up-vmware/broken-credentials.png)
 4. On the Administrator console tool ribbon, click **Change Settings**.
     The Change Settings dialog opens. It displays all credentials on the DPM server. In the example image, *demovcenter_002* is the DPM credential to pair with demovcenter1.Contoso.com.
 
-    ![open Add Credentials dialog](./media/back-up-vmware/change-settings-dialog.png)
+    ![Example View Credentials of DPM server](./media/back-up-vmware/change-settings-dialog.png)
 5. From the list, select the credential on the DPM server to match the VMware credential and click **Update**.
     In the image, notice demovcenter_002 authenticates a production server, and demovcenter1.Contoso.com is now protected.
-   ![open Add Credentials dialog](./media/back-up-vmware/update-server-credential.png)
+   ![select Credentials dialog](./media/back-up-vmware/update-server-credential.png)
 
 #### Delete VMware server credentials
 
@@ -131,11 +131,11 @@ DPM communicates with the VMware server securely over an HTTPS channel. To creat
 
 To verify there is a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you are using Chrome, and you do not have a valid certificate you see the strikethrough in the URL, like this example:
 
-![no secure communication channel ](./media/back-up-vmware/secure-communication-chrome.png)
+![no secure communication channel on Chrome ](./media/back-up-vmware/secure-communication-chrome.png)
 
 If you are using Internet Explorer, and you don't have a valid certificate, you see this message when you access the URL:
 
-![no secure communication channel ](./media/back-up-vmware/no-secure-communication-ie.png)
+![no secure communication channel on IE ](./media/back-up-vmware/no-secure-communication-ie.png)
 
 To fix the error, install a valid certificate on the DPM server and the VMware server. In the previous images, the DPM server has a valid certificate, but the certificate is not in the trusted root certification authority store. To fix this situation, add the certificate to the VMware server.
 
@@ -145,7 +145,7 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 
 2. In the new Certificate dialog, click the **Details** tab, and then click **Copy to File** to open the Certificate Export Wizard.
 
-   ![open View Certificate dialog ](./media/back-up-vmware/add-new-certificate.png)
+   ![open Certificate export wizard ](./media/back-up-vmware/add-new-certificate.png)
 
 3. In the **Certificate Export Wizard**, click **Next**, and on the **Export File Format** screen, select **DER encoded binary X.509 (.CER)**, then click **Next**.
 4. On the **File to Export** screen, type a name for your certificate and click **Next**.
@@ -156,10 +156,10 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 7. In the **Certificate Import wizard**, click **Local Machine** and then click **Next**.
 8. To find the location where you want to place the certificateOn the **Certificate Store** screen, click **Place all certificates in the following store** and click **Browse**.
 9. In the **Select Certificate Store** dialog, select **Trusted Root Authority Certificate** and click **OK**.
-  ![click install Certificate ](./media/back-up-vmware/trusted-authority-store.png)
+  ![select Certificate store ](./media/back-up-vmware/trusted-authority-store.png)
 10. Click **Next** and then click **Finish** to import the certificate successfully.
 11. Once you have added the certificate, sign into your vCenter server to verify the connection is secure.
-  ![click install Certificate ](./media/back-up-vmware/secure-communication-established.png)
+  ![verify connection ](./media/back-up-vmware/secure-communication-established.png)
 
 ### Add a new user account in VMware server
 
@@ -303,7 +303,7 @@ If your organization does not want to use secure communication protocol (HTTPS),
 
 ## Configure Backup
 
-Once you've added the VMware server(s) to DPM, you're almost ready to start protection in DPM. However, before you begin protection, you need to allocate disk storage that DPM can use for short-term storage. For guidance on adding storage, see [Adding Storage to DPM](https://technet.microsoft.com/library/hh758075(v=sc.12).aspx). Once you have added storage, you are ready to use the **Create New Protection Group** wizard to create a protection group for the VMware VMs.
+Once you've added the VMware server(s) to DPM, you're almost ready to start protection in DPM. However, before you begin protection, you need to allocate disk storage that DPM can use for short-term storage. For guidance on adding storage, see [Adding Storage to DPM](/previous-versions/system-center/system-center-2012-R2/hh758075(v=sc.12)). Once you have added storage, you are ready to use the **Create New Protection Group** wizard to create a protection group for the VMware VMs.
 
 ### Folder-level protection
 
@@ -321,7 +321,7 @@ In large VMware deployments, a single vCenter server can manage thousands of VMs
 
 DPM can back up VMware VMs to disk, tape and to the Azure cloud. You specify the protection method while creating the new Protection Group.
 
-For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](https://docs.microsoft.com/system-center/dpm/identify-compatible-tape-libraries?view=sc-dpm-1807) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
+For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](./identify-compatible-tape-libraries.md?preserve-view=true&view=sc-dpm-1807) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
 
 DPM provides application-consistent backups of Windows VMs and file-consistent backups of Linux VMs (provided you install VMware tools on the guest).
 
@@ -372,15 +372,15 @@ On the **Select Tape and Library Details** page, specify the tape/library to use
 10. On the **Consistency Check Options** screen, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check. To run a manual check, right-click the protection group in the Protection area of the DPM console, and select **Perform Consistency Check**.
 11. On the **Specify Online Protection Data** screen, select the data source(s) that you want to protect.
 12. On the **Specify Online Backup Schedule** screen, specify how often you want to take a backup from the disk backup to Azure. A recovery point is created each time a backup is taken.
-13. On the **Specify Online Retention Policy** screen, specify how long you want to retain your data in Azure. Read more about backing up DPM to Azure in the article, [Backup DPM workloads with Azure Backup](https://docs.microsoft.com/azure/backup/backup-azure-dpm-introduction).
+13. On the **Specify Online Retention Policy** screen, specify how long you want to retain your data in Azure. Read more about backing up DPM to Azure in the article, [Backup DPM workloads with Azure Backup](/azure/backup/backup-azure-dpm-introduction).
 14. On the Choose Online Replication screen, choose your method for creating your initial backup copy. The default choice is to send the initial backup copy of your data over the network. However, if you have a large amount of data, it may be more timely to use the Offline Backup feature. See the Offline Backup article in Azure for more information, including a step-by-step walkthrough.
-15. On the Summary screen, review the settings. If you are interested in optimizing performance of the protection group, see the article, [Optimizing DPM operations](https://technet.microsoft.com/library/jj628105(v=sc.12).aspx) that affect performance. Once you are satisfied with all settings for the protection group, click **Create Group** to create the protection group and trigger the initial backup copy.
+15. On the Summary screen, review the settings. If you are interested in optimizing performance of the protection group, see the article, [Optimizing DPM operations](/previous-versions/system-center/system-center-2012-R2/jj628105(v=sc.12)) that affect performance. Once you are satisfied with all settings for the protection group, click **Create Group** to create the protection group and trigger the initial backup copy.
 
 The Status screen appears and gives you an update on the creation of your protection group, and the state of your initial backup.
 
 ## Restore VMware virtual machines
 
-This section explains how to use DPM to restore VMware VM [recovery points](https://technet.microsoft.com/library/jj627975(v=sc.12).aspx). For an overview on using DPM to recover data, see [Recover protected data](https://technet.microsoft.com/library/jj628056(v=sc.12).aspx). In the DPM Administrator Console, there are two ways to find recoverable data - search or browse. When recovering data, you may, or may not want to restore data or a VM to the same location. For this reason DPM supports three recovery options for VMware VM backups.
+This section explains how to use DPM to restore VMware VM [recovery points](/previous-versions/system-center/system-center-2012-R2/jj627975(v=sc.12)). For an overview on using DPM to recover data, see [Recover protected data](/previous-versions/system-center/system-center-2012-R2/jj628056(v=sc.12)). In the DPM Administrator Console, there are two ways to find recoverable data - search or browse. When recovering data, you may, or may not want to restore data or a VM to the same location. For this reason DPM supports three recovery options for VMware VM backups.
 
 - **Original location recovery (OLR)** - Use OLR to restore a protected VM to its original location. You can restore a VM to its original location only if no disks have been added or deleted, since the back up occurred. If disks have been added or deleted, you must use alternate location recovery.
 - **Alternate location recovery (ALR)** - When the original VM is missing, or you don't want to disturb the original VM, recover the VM to an alternate location. To recover a VM to an alternate location, you must provide the location of an ESXi host, resource pool, folder, and the storage datastore and path. To help differentiate the restored VM from the original VM, DPM appends "-Recovered" to the name of the VM.
@@ -400,7 +400,7 @@ This section explains how to use DPM to restore VMware VM [recovery points](http
 7. On the **Select Recovery Type** screen, choose whether to recover to the original instance, or to a new location, and click **Next**.
    - If you choose **Recover to original instance**, you don't need to make any more choices in the wizard. The data for the original instance is used.
    - If you choose **Recover as virtual machine on any host**, then on the **Specify Destination** screen, provide the information for **ESXi Host**, **Resource Pool**, **Folder**, and **Path**.
-     ![open Recovery wizard ](./media/back-up-vmware/select-recovery-type.png)
+     ![Select Recovery Type in wizard ](./media/back-up-vmware/select-recovery-type.png)
 8. On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
    The **Recovery status** screen shows the progression of the recovery operation.
 
