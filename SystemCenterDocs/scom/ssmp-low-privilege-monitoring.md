@@ -149,7 +149,7 @@ To configure low-privilege environments for agent monitoring, perform the follow
 
   You should execute the following provisioning steps on the agent machine or the database only if you want to allow the System Center Operations Manager console operator to take remedial actions on that target.
 
-  - If the task is related to starting or stopping an NT service (such as DB Engine Service, SQL Server Agent service, SQL Full Text Search Service, integration Services), on the agent machine, grant the **SQLTaskAction** user the permission to start or stop an NT service This involves setting a service security descriptor. For more information, see [Sc sdset](http://go.microsoft.com/fwlink/?LinkId=193876).
+  - If the task is related to starting or stopping an NT service (such as DB Engine Service, SQL Server Agent service, SQL Full Text Search Service, integration Services), on the agent machine, grant the **SQLTaskAction** user the permission to start or stop an NT service This involves setting a service security descriptor. For more information, see [Sc sdset](https://go.microsoft.com/fwlink/?LinkId=193876).
 
     Read the existing privileges for a given service (using **sc sdshow**) and grant additional privileges to the **SQLTaskAction** user.
 
@@ -191,7 +191,7 @@ To configure low-privilege environments for agent monitoring, perform the follow
 
   1. Import the SQL Server Management Pack if it has not been imported.
 
-  2. Create *SQLTaskAction*, *SQLDiscovery* and *SQLMonitor* Run As accounts with the "Windows" account type. For more information, see [How to Create Run As Account in Operations Manager 2012](http://go.microsoft.com/fwlink/?LinkId=717832). For more information about various Run As Account types, see [Managing Run As Accounts and Profiles in Operations Manager 2012](http://go.microsoft.com/fwlink/?LinkId=717833).
+  2. Create *SQLTaskAction*, *SQLDiscovery* and *SQLMonitor* Run As accounts with the "Windows" account type. For more information, see [How to Create Run As Account in Operations Manager 2012](https://go.microsoft.com/fwlink/?LinkId=717832). For more information about various Run As Account types, see [Managing Run As Accounts and Profiles in Operations Manager 2012](https://go.microsoft.com/fwlink/?LinkId=717833).
 
   3. On the System Center Operations Manager console, configure Run As profiles as follows:
 
@@ -324,7 +324,7 @@ To configure low-privilege agentless monitoring using **Add Monitoring Wizard**,
      
      - 172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
 
-    ![Using Add Monitoring Wizard](./media/ssmp/authentication-type-sql.png)
+    ![Adding instances](./media/ssmp/authentication-type-sql.png)
 
 If you want to create a new Run As account, do the following:
 
@@ -334,7 +334,7 @@ If you want to create a new Run As account, do the following:
 
 3. Specify credentials to access the SQL Server that you want to monitor, click **OK** and wait until the connection is established.
 
-    ![Using Add Monitoring Wizard](./media/ssmp/new-run-as-account.png)
+    ![Specifying credentials](./media/ssmp/new-run-as-account.png)
 
 ## Low-Privilege Mixed Monitoring
 
@@ -358,13 +358,13 @@ To configure security for configurations with low-privilege accounts, perform th
 
 2. Expand **Component Services**, right-click **My Computer** and select **Properties**.
 
-   ![Managing Remote Access to WMI](./media/ssmp/component-service-properties.png)
+   ![Opening properties](./media/ssmp/component-service-properties.png)
 
 3. Open the **Security** tab.
 
 4. In the **Launch and Activation Permissions** section, click **Edit Limits**.
 
-   ![Managing Remote Access to WMI](./media/ssmp/editing-limits.png)
+   ![Editing limits](./media/ssmp/editing-limits.png)
 
 5. Set the following permissions for the remote machine account:
 
@@ -372,7 +372,7 @@ To configure security for configurations with low-privilege accounts, perform th
     
     - Remote Activation
 
-   ![Managing Remote Access to WMI](./media/ssmp/launch-activate-permissions.png)
+   ![Activating permissions](./media/ssmp/launch-activate-permissions.png)
 
 6. Go to the **WMI Control** snap-in and open its properties.
   
@@ -393,7 +393,7 @@ To configure security for configurations with low-privilege accounts, perform th
     
     - Remote Enable
 
-   ![Managing Remote Access to WMI](./media/ssmp/security-permissions.png)
+   ![Security permissions](./media/ssmp/security-permissions.png)
 
 10. Click **Advanced**.
 
@@ -424,7 +424,7 @@ To get information about services, grant required permissions according to the f
 
     Replace **domainName\userName** with the domain and user names for the **Spotlight User** account.
 
-    ![Granting Permissions](./media/ssmp/ps-spotlight-user.png)
+    ![Replacing spotlite user](./media/ssmp/ps-spotlight-user.png)
 
 3. From the Windows command prompt, run the **sc sdshow scmanager > file.txt** command to retrieve the current SDDL for the Services Control Manager.
 
@@ -454,7 +454,7 @@ To get information about services, grant required permissions according to the f
       - subinacl.exe /service sqlserveragent /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
       - subinacl.exe /service mssqlfdlauncher /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
 
-    ![Granting Permissions](./media/ssmp/subinacl-run.png)
+    ![Running subinacl](./media/ssmp/subinacl-run.png)
 
     The following rights have the following meaning:
     

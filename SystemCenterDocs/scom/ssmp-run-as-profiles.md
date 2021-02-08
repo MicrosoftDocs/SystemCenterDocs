@@ -109,7 +109,7 @@ If you need to grant minimum required rights to the SQL MP workflows, follow the
 
 ## Configuring Run As Profiles for Agentless Monitoring Mode
 
-To configure Run As Profiles in [Agentless Monitoring](ssmp-monitoring-modes) mode, create an account in SQL Server grant this account SA rights or a set of low privilege permissions. You can use SQL Server authentication or Windows authentication. Once created, you can use this account in the [Add Monitoring Wizard](ssmp-low-privilege-monitoring.md) to add a SQL Server instance.
+To configure Run As Profiles in [Agentless Monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode, create an account in SQL Server grant this account SA rights or a set of low privilege permissions. You can use SQL Server authentication or Windows authentication. Once created, you can use this account in the [Add Monitoring Wizard](ssmp-low-privilege-monitoring.md) to add a SQL Server instance.
 
 For more information on how to configure low privilege monitoring in agentless monitoring mode, see the [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md).
 
@@ -125,7 +125,7 @@ To configure monitoring with Service Security Identifier, perform the following 
 
 3. Run the **sc showsid HealthService** command. The **STATUS** parameter should be active.
 
-    ![Configuring Monitoring by Means of Service Security Identifier](./media/ssmp/health-service-command.png)
+    ![Running HealthService](./media/ssmp/health-service-command.png)
 
 4. Open **Registry Editor** and check that the *ServiceSidType* key is set to 1 at *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService*.
 
@@ -228,7 +228,7 @@ To configure HealthService Service SID for monitoring of SQL Server failover clu
 
 3. Click **Edit Limits** in the *Launch and Activation Permissions* section.
 
-    ![Configuring HealthService Service SID for SQL Server Cluster Instances](./media/ssmp/editing-limits.png)
+    ![Editing limits](./media/ssmp/editing-limits.png)
 
 4. In the **Launch and Activation Permission** window, Enable the following permissions for the NT SERVICE\\HealthService account:
 
@@ -236,7 +236,7 @@ To configure HealthService Service SID for monitoring of SQL Server failover clu
     
     - Remote Activation
 
-    ![Configuring HealthService Service SID for SQL Server Cluster Instances](./media/ssmp/allowing-permissions.png)
+    ![Allowing permissions](./media/ssmp/allowing-permissions.png)
 
 5. Go to the WMI Control snap-in and open its properties.
 
@@ -248,7 +248,7 @@ To configure HealthService Service SID for monitoring of SQL Server failover clu
     
     - Remote Enable
 
-    ![Configuring HealthService Service SID for SQL Server Cluster Instances](./media/ssmp/health-service-permissions.png)
+    ![HealthService permissions](./media/ssmp/health-service-permissions.png)
 
 8. Click **Advanced**.
 
@@ -260,7 +260,7 @@ To configure HealthService Service SID for monitoring of SQL Server failover clu
     
     - Remote Enable
 
-    ![Configuring HealthService Service SID for SQL Server Cluster Instances](./media/ssmp/permissions-cimv.png)
+    ![CIMV permissions](./media/ssmp/permissions-cimv.png)
 
 ## Configuring System Center Operations Manager SDK Run As Profile
 
@@ -300,7 +300,7 @@ To configure permissions for Always On workflows when server names exceeds 15 ch
 
 4. Click **Edit Limits** in the **Launch and Activation Permissions** section.
 
-    ![Configuring Permissions for Always On Workflows when Servers Have Machine Names Longer than 15 Characters](./media/ssmp/editing-limits.png)
+    ![Editing limits for always on](./media/ssmp/editing-limits.png)
 
 5. In the **Launch and Activation Permission** window, enable the following permissions for the remote machine account:
 
@@ -308,7 +308,7 @@ To configure permissions for Always On workflows when server names exceeds 15 ch
     
     - Remote Activation
 
-    ![Configuring Permissions for Always On Workflows when Servers Have Machine Names Longer than 15 Characters](./media/ssmp/remote-machine-account.png)
+    ![Enabling remote machine permissions](./media/ssmp/remote-machine-account.png)
 
 6. Open **WMI Control** snap-in properties, go to the **Security** tab, select the **Root\CIMV2** namespace, and click **Security**.
 
@@ -318,7 +318,7 @@ To configure permissions for Always On workflows when server names exceeds 15 ch
     
     - Remote Enable
 
-    ![Configuring Permissions for Always On Workflows when Servers Have Machine Names Longer than 15 Characters](./media/ssmp/target-computer-permissions.png)
+    ![Enabling target machine permissions](./media/ssmp/target-computer-permissions.png)
 
 8. Click **Advanced**, select a target account and click **Edit**.
 
@@ -328,4 +328,4 @@ To configure permissions for Always On workflows when server names exceeds 15 ch
     
     - Remote Enable
 
-    ![Configuring Permissions for Always On Workflows when Servers Have Machine Names Longer than 15 Characters](./media/ssmp/permissions-cimv.png)
+    ![Configuring CIMV permissions](./media/ssmp/permissions-cimv.png)

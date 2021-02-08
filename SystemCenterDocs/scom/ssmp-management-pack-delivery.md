@@ -92,7 +92,7 @@ The environment that you use must meet the following prerequisites before you st
 
 Management Pack for SQL Server is version-agnostic. It supports discovery and monitoring of SQL Server 2012 through 2019 and higher, including SQL on Linux with SQL Server 2017 and higher.
 
-For more information on how to import management packs, see [How to Import a Management Pack](http://go.microsoft.com/fwlink/?LinkId=142351).
+For more information on how to import management packs, see [How to Import a Management Pack](https://go.microsoft.com/fwlink/?LinkId=142351).
 
 If you already have any of the version-specific management packs, discovery and monitoring provided by this management pack will be disabled and will be performed solely by the existing version-specific management packs to avoid double monitoring.
 

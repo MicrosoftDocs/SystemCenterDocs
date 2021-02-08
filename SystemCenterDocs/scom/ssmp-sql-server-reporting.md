@@ -31,22 +31,22 @@ To open the report, perform the following steps:
 
 1. In the **Reporting** view, double-click **Database Files Space Usage Forecast**.
 
-    ![Database files Space Usage Forecast](./media/ssmp/database-files-space-usage-forecast.png)
+    ![Database usage forecast](./media/ssmp/database-files-space-usage-forecast.png)
 
 2. In the **Add Group** window, add an object or a group of objects.
 
-    ![Database files Space Usage Forecast](./media/ssmp/adding-objects-and-groups.png)
+    ![Adding objects and groups](./media/ssmp/adding-objects-and-groups.png)
 
 3. Select a period and the corresponding time zone for the report. Also, select the number of days for the file space consumption forecast.
 
-    ![Database files Space Usage Forecast](./media/ssmp/forecast-period.png)
+    ![Forecast period](./media/ssmp/forecast-period.png)
 
 4. Click **Run**.
 
 The report displays a separate chart for every selected object or a group of objects.
 
-![Database files Space Usage Forecast](./media/ssmp/forecast-chart.png)
+![Forecast chart](./media/ssmp/forecast-chart.png)
 
 A space usage forecast can be reviewed in a separate table.
 
-![Database files Space Usage Forecast](./media/ssmp/forecast-space-usage.png)
+![Forecast space usage](./media/ssmp/forecast-space-usage.png)

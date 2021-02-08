@@ -15,12 +15,12 @@ ms.technology: operations-manager
 
 The following diagrams show how the health states of objects roll up for the SQL Server on Windows management pack.
 
-![How Health Rolls Up](./media/ssmp/health-rolls-up-legend.png)
+![Legend](./media/ssmp/health-rolls-up-legend.png)
 
 ## Health Rollup Diagram 
 
-![How Health Rolls Up](./media/ssmp/health-rollup-diagram.png)
+![Health diagram](./media/ssmp/health-rollup-diagram.png)
 
 ## Database Health Rollup Diagram
 
-![How Health Rolls Up](./media/ssmp/database-health-rollup-diagram.png)
+![Database diagram](./media/ssmp/database-health-rollup-diagram.png)
