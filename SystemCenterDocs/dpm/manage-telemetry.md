@@ -47,7 +47,7 @@ Administrators can turn off this feature at any point of time. For more informat
 | --- | --- |
 | **Setup** | Version of DPM installed. <br /><br />Version of the DPM update rollup installed. <br /><br /> Unique machine identifier. <br /><br /> Operating system on which DPM is installed. <br /><br /> If DPM is connected to Microsoft Azure, unique cloud subscription identifier.<br /><br /> If DPM is connected to Microsoft Azure, MARS agent version.<br /><br /> Whether tiered storage is enabled. |
 | **Workload Protected** | Workload unique Identifier. <br /><br />Size of the workload being backed up. <br /><br />Workload type and its version number. <br /><br />If the workload is currently being protected by DPM. <br /><br />Unique Identifier of the Protection Group under which the workload is protected.<br /><br /> Location where the workload is getting backed up - to disk/tape or cloud.|
-| **Restore Jobs** | Status of the restore job- whether successful or failed. <br /><br />Size of the data restored. <br /><br />Failure message, in case of restore job fails.<br /><br />Time taken for the restore job.<br /><br />Details of the workload for which the the restore job was run. |
+| **Restore Jobs** | Status of the restore job- whether successful or failed. <br /><br />Size of the data restored. <br /><br />Failure message, in case of restore job fails.<br /><br />Time taken for the restore job.<br /><br />Details of the workload for which the restore job was run. |
 | **Telemetry change status** | The status change details for the telemetry settings, if enabled or disabled, and when. |
 | **DPM Console Crash Error** | The details of the error when a DPM console crashes.|
 
