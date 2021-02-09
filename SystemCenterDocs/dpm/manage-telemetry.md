@@ -34,7 +34,7 @@ Administrators can turn off this feature at any point of time. For more informat
 
     ![console telemetry options](./media/telemetry/telemetry-options.png)
 
-3. Select the diagnostic and usage data sharing preference from the options displayed, and then click **OK**.
+3. Select the diagnostic and usage data sharing preference from the options displayed and then click **OK**.
 
     > [!NOTE]
     > We recommend you to read the [Privacy Statement](https://privacy.microsoft.com/privacystatement) before you select the option.
