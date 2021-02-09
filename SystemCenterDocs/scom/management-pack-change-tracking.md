@@ -136,6 +136,11 @@ Operations Manager 2019 UR3 introduces further enhancements to the change tracki
 
 **Monitor health reset tracking** reports on monitor health reset status.
 
+For this feature to function, execute the script `DataWarehouseJobStatusSynchSproc.sql` in SQL Server Management Studio (SSMS) on operations manager database, before applying 2019 UR3 patches.
+
+> [!NOTE]
+> `DataWarehouseJobStatusSynchSproc.sql` script is available with the UR3 patches.
+
 
 ### View monitor health reset actions
 
