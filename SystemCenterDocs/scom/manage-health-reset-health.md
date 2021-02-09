@@ -24,7 +24,7 @@ Some monitors can set state to critical (red), warning (yellow), and healthy (gr
 
 > [!NOTE]  
 > - Only reset health for a monitor when you are sure that all issues have been resolved.  
-> - With Operations Manager 2019 UR3, you can view health reset actions on the monitors as a consolidated view under **Reports**. [Learn more](management-pack-change-tracking.md#change-tracking-for-monitor-health-reset).
+> - With Operations Manager 2019 UR3, you can view change tracking report on health reset actions on the monitors as a consolidated view under **Reports**. [Learn more](management-pack-change-tracking.md#change-tracking-for-monitor-health-reset).
 
 ## To reset the health for a monitor
 
