@@ -63,6 +63,6 @@ There are two types of entity-specific tiles:
 
 You can double-click any of these tiles to see the associated performance monitor or health explorer. For example, if you double-click the *DB Engine Health Status* tile, the **Health Explorer** window appears, showing you the health state of the DB engine.
 
-![Health-explorer](./media/ssmp/health-explorer.png)
+![Viewing Health-explorer](./media/ssmp/health-explorer.png)
 
 You can scroll to the right to see all available performance and monitor tiles. You can also move any tile if you want to rearrange the default order of tiles. To move a tile, right-click it and then move it to the desired position.

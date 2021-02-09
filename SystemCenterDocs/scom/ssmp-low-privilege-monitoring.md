@@ -334,16 +334,12 @@ To configure low-privilege agentless monitoring using **Add Monitoring Wizard**,
 2. In the **Add Instances** window, select a common Run As account with the appropriate SQL low-privilege login and specify data sources and/or connection strings. 
 
     For example:
-
-     ```
-     172.31.2.133;MachineName="W12BOX-839";InstanceName="MSSQLSERVER";Platform="Windows"
-     ```
-     ```
-     172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"
-     ```
-     ```
-     172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
-     ```
+     
+     - '172.31.2.133;MachineName="W12BOX-839";InstanceName="MSSQLSERVER";Platform="Windows"'
+    
+     - '172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"'
+     
+     - '172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"'
 
     ![Adding instances](./media/ssmp/authentication-type-sql.png)
 

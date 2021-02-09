@@ -21,7 +21,7 @@ Management Pack for SQL Server provides the following monitoring modes:
 
     In this monitoring mode, the management pack automatically discovers stand-alone and clustered instances of SQL Server across all managed systems that run the System Center Operations Manager agent service.
 
-    The following protocols are supported by this mode: 
+    The following protocols are supported in this mode: 
     
     - TCP/IP
     
@@ -39,7 +39,7 @@ Management Pack for SQL Server provides the following monitoring modes:
 
     To make monitoring more efficient, configure a dedicated pool of Management Servers, as described in [Configuring SQL Server Monitoring Pool](ssmp-sql-server-monitoring-pool.md).
 
-    The following protocols are supported by this mode: 
+    The following protocols are supported in this mode: 
     
     - TCP/IP
     
@@ -53,9 +53,7 @@ Management Pack for SQL Server provides the following monitoring modes:
 
     For more information on how to configure this mode, see [Configuring Mixed Monitoring Mode](#configuring-mixed-monitoring-mode).
 
-    The following protocols are supported by this mode: 
-    
-    - TCP/IP
+    Only the TCP/IP protocol is supported in this mode.
 
 Each of these modes supports both the SQL Server and the Windows authentication.
 
@@ -120,8 +118,8 @@ To configure agentless monitoring, perform the following steps:
         - 172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"
 
         - 172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
-
-     When you add a Linux-based instance, connection tests fail if an IP address is specified as a connection string, and the authentication type is **Windows AD credentials**. In this case, specify the machine name as the connection string.
+     
+     When you add a Linux-based instance, a connection test will fail if an IP address is specified as a connection string and the authentication type is **Windows AD credentials**. In this case, specify the machine name as the connection string.
 
     ![Authentication type](./media/ssmp/authentication-type.png)
 
@@ -131,7 +129,7 @@ To configure agentless monitoring, perform the following steps:
 
     To workaround this issue, decrease intervals for both the **MSSQL: Generic Monitoring Pool Watcher Discovery** discovery and the **Discover All Management Servers Pool Watcher** discovery to force them to run right away, then restore the previous value.
 
-    Once connection is established, you can view and edit properties of the instance. To view properties, select the instance and click **Edit Instance**.
+    Once connection is established, you can view and edit properties of the instance. To view properties, select an instance and click **Edit Instance**.
 
     ![Editing instance configuration](./media/ssmp/editing-instance-configuration.png)
 
