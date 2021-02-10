@@ -111,7 +111,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
 ::: moniker range=">= sc-dpm-1807"
 
-## Backup Items in Recovery Services vault
+## Backup items in Recovery Services vault
 
 You can monitor the backed up items using Recovery Services vault. From the Recovery Services vault, navigate to **Backup Items** to view the number of items backed up for each workload type, associated with the vault. Click the workload item to view the detailed list of all items backed up for the selected workload.
 
