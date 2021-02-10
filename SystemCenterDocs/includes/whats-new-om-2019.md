@@ -255,7 +255,7 @@ The following components now have a single installer each for all supported lang
 ### Simplified management server patching
 Operations Manager 2019 UR1 introduces a frictionless way of patching the Operations Manager server.
 
-The improvised user interface guides you through the installation steps, which patch the management server, update the databases, and update the management packs. For more information on how integrated patching is done, see [Simplified SCOM 2019 management server patching](https://support.microsoft.com/help/4538900/simplified-scom-2019-management-server-patching).
+The improvised user interface guides you through the installation steps, which patch the management server, update the databases, and update the management packs. For more information on how integrated patching is done, see [Simplified management server patching - Operations Manager 2019](https://support.microsoft.com/help/4538900/simplified-scom-2019-management-server-patching).
 
 ### Distro-agnostic management pack for Linux
 
@@ -375,6 +375,6 @@ Operations Manager 2019 UR3 supports RHEL6 via RHEL6 management pack. With Opera
 
 Operations Manager 2019 UR3 supports TLS 1.2 for Solaris 10.
 
-### Performance improvements in SCOM
+### Performance improvements in Operations Manager
 
 <inputs yet to receive>

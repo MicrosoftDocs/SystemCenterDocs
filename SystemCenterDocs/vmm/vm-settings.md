@@ -48,8 +48,8 @@ Use the following steps to add a virtual network adapter:
 
 1. In the virtual machine properties > **Hardware Configuration**, click **Network Adapters**, and select the network adapter you want to add.
 
->[!NOTE]
-> **Trunk mode** option is available from UR3.
+  >[!NOTE]
+  > **Trunk mode** option is available from UR3.
 
 2. You can configure a number of properties for the network adapter, including:
 

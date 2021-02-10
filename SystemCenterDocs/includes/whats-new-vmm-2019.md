@@ -1,7 +1,7 @@
 ---
 ms.assetid: b421d3b9-3ac5-4e02-b810-7dc8de8008c2
 title: include file
-description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1 and 2019 UR2.
+description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1, and 2019 UR2.
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
@@ -151,7 +151,7 @@ As part of this release, the **Convert Virtual Machine** wizard enables the VM m
 * BIOS-based VMs are migrated to Hyper-V VM generation 1.
 * EFI-based VMs are migrated to Hyper-V VM generation 2.
 
-We've also made improvements in the VMWare VM conversion process that makes the conversion up to 50% faster.
+We've also made improvements in the VMware VM conversion process that makes the conversion up to 50% faster.
 
 #### Performance improvement in host refresher
 
@@ -362,21 +362,21 @@ For problems fixed in VMM 2019 UR3, and installation instructions for UR3, see t
 
 VMM 2019 UR3 includes Trunk mode support for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs.
 
-#### Support for Azure stack HCI clusters
+#### Support for Azure Stack HCI clusters
 
 VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters in VMM. In addition to the current SKU of server operating system, VMM expands its support to Azure Stack HCI.
 
 Azure Stack HCI, currently in public preview is the newly introduced hyper-converged infrastructure (HCI)
 Operating system that runs on on-premises clusters with virtualized workloads.
 
-Most of the operations to manage Azure stack clusters in VMM are similar to that of managing Windows Server clusters.
+Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters.
 
 >[!NOTE]
 >Management of Azure Stack HCI *stretched* clusters is currently not supported in VMM.
 
 **Supported scenarios to manage Azure Stack HCI clusters**:
 
-- Addition, creation, and management of Azure stack HCI clusters. [See detailed steps](../vmm/provision-vms.md) to create and manage HCI clusters
+- Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](../vmm/provision-vms.md) to create and manage HCI clusters
 - Ability to provision & deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs
 can be provisioned using VHD files, templates or from an existing VM. [Learn more](../vmm/provision-vms.md).
 - [Set up VLAN based network on Azure Stack HCI clusters](../vmm/manage-networks.md).
