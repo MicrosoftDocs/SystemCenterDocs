@@ -1,11 +1,11 @@
 ---
 ms.assetid: b421d3b9-3ac5-4e02-b810-7dc8de8008c2
 title: include file
-description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1 and 2019 UR2.
+description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1, and 2019 UR2.
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  08/04/2020
+ms.date:  02/05/2021
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -18,7 +18,7 @@ The following sections introduce the new features in Virtual Machine Manager (VM
 
 ### Compute
 
-#### Cluster rolling upgrade for S2D clusters
+####   Cluster rolling upgrade for S2D clusters
 
 System Center 2019 Virtual Machine Manager supports a rolling upgrade of a Storage Spaces Direct (S2D) host cluster from Windows Server 2016 to Windows Server 2019. For more information, see [Perform a rolling upgrade](../vmm/hyper-v-rolling-upgrade.md).
 
@@ -96,7 +96,7 @@ With VMM, you can select cluster shared volumes (CSVs) for placing a new VHD.
 
 In earlier versions of VMM, by default a new VHD on a VM is placed on the same CSV where the earlier VHDs associated with the VM are placed. There was no option to choose a different CSV/ folder. In case of any problems related to the CSV, such as storage that's full or over commitment, users had to migrate the VHD, but only after they deployed the VHD.
 
-With VMM 1807, you can now choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. For more information, see [Add a virtual hard disk to a virtual machine](/previous-versions/system-center/virtual-machine-manager-2008-r2/cc956004(v=technet.10)).
+With VMM 1807, you can now choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. For more information, see [Add a virtual hard disk to a virtual machine](https://technet.microsoft.com/library/cc956004.aspx).
 
 ### Networking
 
@@ -208,7 +208,7 @@ The control of encryption is at the subnet level. Encryption can be enabled or d
 
 Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based VMs. Shielded VMs protect against malicious administrator actions. They provide protection when the VM's data is at rest or when untrusted software runs on Hyper-V hosts.
 
-With Windows Server 1709, Hyper-V introduces support for provisioning Linux shielded VMs. The same support is now extended to VMM. For more information, see [Create a Linux shielded VM template disk](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-create-a-linux-shielded-vm-template).
+With Windows Server 1709, Hyper-V introduces support for provisioning Linux shielded VMs. The same support is now extended to VMM. For more information, see [Create a Linux shielded VM template disk](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-create-a-linux-shielded-vm-template).
 
 #### Configuration of fallback HGS
 
@@ -284,7 +284,7 @@ VMM 2019 UR1 includes the following cmdlet updates for the respective features:
    - New parameter **[-EnableNestedVirtualization]** - enables the nested virtualization, and is included in **Set-SCComputerTierTemplate** cmdlet.
 
 
-For more information about these updates, see [VMM PowerShell articles](/powershell/module/virtualmachinemanager/).
+For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019).
 
 
 ## New features in VMM 2019 UR2
@@ -305,7 +305,7 @@ VMM 2019 UR2 supports VMware ESXi v6.7 servers in VMM fabric. This support gives
 
 ### Networking
 
-### User experience improvements in creating logical switches
+#### User experience improvements in creating logical switches
 With VMM 2019 UR2, the user experience is enhanced for the process of creating logical switches. 2019 UR2 includes smart defaults, provides clear text explanation for various options along with visual representations, and a topology diagram for logical switch. [Learn more](../vmm/network-switch.md).
 
 #### Support for IPv6
@@ -347,4 +347,58 @@ VMM 2019 UR2 includes the following cmdlet updates for the respective features:
       - IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
       - IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
 
-For more information about these updates, see [VMM PowerShell articles](/powershell/module/virtualmachinemanager/).
+For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019).
+
+
+## New features in VMM 2019 UR3
+
+The following sections introduce the new features and feature updates supported in VMM 2019 Update Rollup 3 (UR3).
+
+For problems fixed in VMM 2019 UR3, and installation instructions for UR3, see the KB article (link will be included once the KB number is available).
+
+### Compute
+
+#### Trunk mode support for VM vNICs
+
+VMM 2019 UR3 includes Trunk mode support for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs.
+
+#### Support for Azure Stack HCI clusters
+
+VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters in VMM. In addition to the current SKU of server operating system, VMM expands its support to Azure Stack HCI.
+
+Azure Stack HCI, currently in public preview is the newly introduced hyper-converged infrastructure (HCI)
+Operating system that runs on on-premises clusters with virtualized workloads.
+
+Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters.
+
+>[!NOTE]
+>Management of Azure Stack HCI *stretched* clusters is currently not supported in VMM.
+
+**Supported scenarios to manage Azure Stack HCI clusters**:
+
+- Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](../vmm/provision-vms.md) to create and manage HCI clusters
+- Ability to provision & deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs
+can be provisioned using VHD files, templates or from an existing VM. [Learn more](../vmm/provision-vms.md).
+- [Set up VLAN based network on Azure Stack HCI clusters](../vmm/manage-networks.md).
+- [Deployment and management of SDN network controller on Azure Stack HCI clusters](../vmm/sdn-controller.md).
+- [Management of storage pool settings, creation of virtual disks, creation of cluster shared volumes (CSVs) and
+application of QOS settings].
+
+>[!NOTE]
+>The cmdlets used to manage Windows Server clusters can be used to manage Azure Stack HCI clusters as well.
+
+**Unsupported scenarios while managing Azure Stack HCI clusters**:
+
+- Azure Stack HCI clusters should be used only as compute clusters. Azure Stack HCI clusters should not be
+used for other purposes like WSUS servers, WDS servers or library servers.
+-  Azure Stack HCI clusters should not be used as SOFS S2D clusters (disaggregate).
+- Live migration of VM is not supported between any version of Windows Server and Azure Stack HCI clusters.
+  Quick migration from Windows Server 2019 to Azure Stack HCI cluster should work, as well as migrating an
+  offline (shut down) VM. VMM would do export and import here.
+- Creation or management of non-S2D cluster with Azure Stack HCI nodes is not supported.
+
+### Updates to PowerShell cmdlets
+
+VMM 2019 UR3 includes the following cmdlet updates for Trunk mode support for VM vNICs:
+
+New parameters **[-AllowedVLanList]** and **[NativeVLanId]** are included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
