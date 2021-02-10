@@ -109,7 +109,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
 ::: moniker-end
 
-::: moniker range="=>sc-dpm-1807"
+::: moniker range=">= sc-dpm-1807"
 
 ## Backup Items in Recovery Services vault
 
