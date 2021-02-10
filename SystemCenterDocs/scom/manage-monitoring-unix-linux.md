@@ -361,4 +361,4 @@ endscript
 \#        endscript\#}  
 
 ## Next steps
-For additional guidance to help resolve common agent deployment issues, review the [SCOM 2012 Troubleshooting: UNIX/Linux Agent Discovery  Wiki](https://social.technet.microsoft.com/wiki/contents/articles/4966.scom-2012-troubleshooting-unixlinux-agent-discovery.aspx#WSMan_Errors).
+For additional guidance to help resolve common agent deployment issues, review the [Operations Manager 2012 Troubleshooting: UNIX/Linux Agent Discovery  Wiki](https://social.technet.microsoft.com/wiki/contents/articles/4966.scom-2012-troubleshooting-unixlinux-agent-discovery.aspx#WSMan_Errors).

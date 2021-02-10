@@ -262,11 +262,9 @@ With Operations Manager 2019 UR3, all of the orphan alerts are closed, eventuall
 - **All monitors without on demand modules**: close on the second run, depending on the frequency.
 - **Event-based monitor**: close with a healthy event that occurs after initialization.
 
-Health state transition shows a minor change when monitor is initializing, sample below:
+Health state transition shows a minor change when monitor is initializing.
 
-![Health state](./media/enhanced-alert-closure-experience/health-state-transition.png)
-
-As shown in the figure above, during initialization, monitor first turns healthy. Then it again calculates and turns healthy. You will see two state change transitions from *hollow state to healthy*.
+During initialization, monitor first turns healthy. Then it again calculates and turns healthy. You will see two state change transitions from *hollow state to healthy*.
 
 ::: moniker-end
 

@@ -216,7 +216,7 @@ Now, you will see data only for the disk ‘loop200’ in the performance view.
 
 In earlier releases of Operations Manager, changes to log-level settings of OMI processes required an agent restart.
 
-With SCOM 2019 UR3, log-level settings can be changed without the need for restarting the agent.
+With Operations Manager 2019 UR3, log-level settings can be changed without the need for restarting the agent.
 
 Use the following steps:
 
