@@ -113,16 +113,16 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
 ## Backup Items in Recovery Services vault
 
-You can monitor the backed up items using Recovery Services vault. From the vault, navigate to **Backup Items** to view the number of items backed up for each workload type, associated with the vault. Click the workload item to view the detailed list of all items backed up for the selected workload.
+You can monitor the backed up items using Recovery Services vault. From the Recovery Services vault, navigate to **Backup Items** to view the number of items backed up for each workload type, associated with the vault. Click the workload item to view the detailed list of all items backed up for the selected workload.
 
 Here is a sample view:
 
 ![Recovery vault backup items](./media/monitor-dpm/back-up-items-view.png)
 
 > [!NOTE]
-> The backup report continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
-
->Also, datasources for which the online protection is stopped but data is retained, billing continues for the online recovery points until the data is completely deleted.
+> - The backup report continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
+>
+> - Also, datasources for which the online protection is stopped but data is retained, billing continues for the online recovery points until the data is completely deleted.
 
 
 ::: moniker-end
