@@ -5,7 +5,7 @@ description: This article provides an overview of the new HTML5 Web console and 
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/24/2019
+ms.date: 02/05/2021
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-2016'
@@ -29,6 +29,9 @@ You can take advantage of the following HTML5 dashboard capabilities:
 1. Create HTML 5 dashboards from multiple browsers without a dependency on Silverlight.  
 
 2. Visualize monitoring data in HTML 5 dashboards with:
+
+   > [!NOTE]
+   > Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
 
     - [Alert widget](manage-create-web-dashboard-alerts.md)
 

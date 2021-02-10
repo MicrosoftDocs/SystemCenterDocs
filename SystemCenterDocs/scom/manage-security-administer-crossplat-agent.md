@@ -5,7 +5,7 @@ description: This article describes options to administer and configure the UNIX
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 08/25/2020
+ms.date: 02/05/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -143,6 +143,13 @@ cd /opt/microsoft/scx/bin/tools/
 
 If required, the SSL cipher list used by the UNIX/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) topic.  
 
+::: moniker range="sc-om-2019"
+
+> [!NOTE]
+> With Operations Manager 2019 UR3, SSL renegotiations have been disabled. OMI uses opensource OpenSSL for SSL purposes. [Learn more](manage-security-crossplat-config-sslcipher.md#disabled-ssl-renegotiation-in-omi).
+
+::: moniker-end
+
 ### Specifying an alternate temporary path for scripts
 
 If you create a UNIX/Linux Script rule or monitor in a custom management pack, the script contents will be written to a file in /tmp on the agent computer before being run. You may wish to specify an alternate directory for script execution. To specify an alternate directory, overwrite the symbolic link at: `/etc/opt/microsoft/scx/conf/tmpdir` to point to another directory. The destination of this symbolic link must be writeable by the user account defined in the UNIX/Linux Action Account and/or UNIX/Linux Privileged Account RunAs Profiles.
@@ -201,6 +208,23 @@ select * from SCX_DiskDrive where DeviceID=loop200
 Now, you will see data only for the disk ‘loop200’ in the performance view.
 
 ![override controlled parameters example](media/manage-security-administer-crossplat-agent/override-example-2.png)
+
+## Dynamic changes in log-level settings without agent restart   
+
+>[!NOTE]
+> This update is applicable for Operations Manager 2019 UR3 and later.
+
+In earlier releases of Operations Manager, changes to log-level settings of OMI processes required an agent restart.
+
+With Operations Manager 2019 UR3, log-level settings can be changed without the need for restarting the agent.
+
+Use the following steps:
+
+1. Modify the **omiserver.conf** file and update the new log-level.
+2. Apply this log-level while running the below command:
+   ```
+   $sudo /opt/omi/bin/omiconfigeditor –reconfig
+   ```
 
 ::: moniker-end
 
