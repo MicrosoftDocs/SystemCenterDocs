@@ -4,7 +4,7 @@ description: This article describes how to reset health for a monitor after corr
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 11/30/2016
+ms.date: 02/05/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
