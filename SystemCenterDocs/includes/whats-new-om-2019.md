@@ -1,7 +1,7 @@
 ---
 ms.assetid: 1b8afb6f-9caf-455a-ad51-546a17fd47a4
 title: include file
-description: This include file describes the new features in Operations Manager 2019, 2019 UR1 and 2019 UR2.
+description: This include file describes the new features in Operations Manager 2019, 2019 UR1, 2019 UR2 and 2019 UR3.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
