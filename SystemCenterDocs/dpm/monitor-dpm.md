@@ -25,13 +25,13 @@ You can monitor a single System Center Data Protection Manager (DPM) server from
 ## Monitor with the DPM console
 To monitor DPM in the console, you should be logged on to the DPM server with a local admin account. Here's what you can monitor:
 
--   On the **Alerts** tab you can monitor errors, warnings, and general information for a protection group, for a specific protected computer, or by message severity.  You can view active and inactive alerts and set up email notifications
+-   On the **Alerts** tab, you can monitor errors, warnings, and general information for a protection group, for a specific protected computer, or by message severity.  You can view active and inactive alerts and set up email notifications
 
--   On the **Jobs** tab you can view jobs initiated by DPM for a specific protected computer or protection group. You can  follow job progress or check resources consumed by jobs.
+-   On the **Jobs** tab, you can view jobs initiated by DPM for a specific protected computer or protection group. You can  follow job progress or check resources consumed by jobs.
 
 -   In the **Protection** task area, you can check the status of volumes and shares in protection group, and check configuration settings such as recovery settings, disk allocation, and backup schedule.
 
--   In the **Management** task area you can view the **Disks, Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
+-   In the **Management** task area, you can view the **Disks, Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
 
 ## Monitor DPM in the Central Console
 Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple DPM servers from a single location. In the Central Console you can monitor and track the status of multiple DPM servers,  jobs, protection groups, tapes, storage, and disk space.
@@ -68,7 +68,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 3.	Select **Diagnostic Settings** under **Monitoring** section.
     ![Diagnostics settings](./media/monitor-dpm/diagnostic-settings.png)
 4. Click **Turn on Diagnostic Settings**.
-5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport* and click **Save**.
+5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport*, and click **Save**.
 
     > [!NOTE]
     > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
@@ -91,7 +91,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
     ![Backup jobs report](./media/monitor-dpm/monitor-backup-image2.png)
 
-3. You can also monitor active alerts, current data sources being backed up and cloud storage as shown below:
+3. You can also monitor active alerts, current data sources being backed-up and cloud storage as shown below:
 
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image3.png)
 
@@ -113,14 +113,14 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
 ## Backup items in Recovery Services vault
 
-You can monitor the backed up items using Recovery Services vault. From the Recovery Services vault, navigate to **Backup Items** to view the number of items backed up for each workload type, associated with the vault. Click the workload item to view the detailed list of all items backed up for the selected workload.
+You can monitor the backed-up items using Recovery Services vault. From the Recovery Services vault, navigate to **Backup items** to view the number of items backed-up for each workload type, associated with the vault. Click the workload item to view the detailed list of all items backed-up for the selected workload.
 
 Here is a sample view:
 
 ![Recovery vault backup items](./media/monitor-dpm/back-up-items-view.png)
 
 > [!NOTE]
-> - The backup instance continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
+> - The *Backup items* continue to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
 >
 > - Also, datasources for which the online protection is stopped but data is retained, billing continues for the online recovery points until the data is completely deleted.
 
@@ -142,7 +142,7 @@ Using these packs you can:
 -   Centrally monitor the health and status of DPM servers, protected servers and computers, and backups.
 
 -   View the state of all roles on DPM servers and protected data sources.
-    Monitor, identify, action and troubleshoot alerts.
+    Monitor, identify, action, and troubleshoot alerts.
 
 -   Use Operations Manager alerts to monitor DPM server memory, CPU, and disk resources, and database.
 
@@ -203,4 +203,4 @@ You'll need to install the DPM Central Console on the Operations Manager server.
 
 #### Tweaking Management Pack settings
 
-After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](/previous-versions/system-center/system-center-2012-R2/hh212818(v=sc.12)).
+After you import the management packs, they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example, if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](/previous-versions/system-center/system-center-2012-R2/hh212818(v=sc.12)).
