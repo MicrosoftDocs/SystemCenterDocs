@@ -15,18 +15,18 @@ ms.technology: operations-manager
 
 The following diagrams show how the health states of objects roll up in Management Pack for SQL Server.
 
-## Lengend
+## Legend
 
 ![Legend](./media/ssmp/health-rolls-up-legend.png)
 
 ## Database Engine Health Rollup Diagram 
 
-The following diagram shows the inheritance model of the health state of Database Engine objects. The health state of child objects affect the health state of parent objects.
+The following diagram shows the inheritance model of the health state of Database Engine objects. The health state of child objects affects the health state of parent objects.
 
 ![Health diagram](./media/ssmp/health-rollup-diagram.png)
 
 ## Database Health Rollup Diagram
 
-The following diagram shows the inheritance model of the health state of database objects. The health state of child objects affect the health state of parent objects.
+The following diagram shows the inheritance model of the health state of database objects. The health state of child objects affects the health state of parent objects.
 
 ![Database diagram](./media/ssmp/database-health-rollup-diagram.png)
