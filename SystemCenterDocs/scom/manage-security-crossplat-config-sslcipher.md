@@ -90,7 +90,7 @@ The following versions are supported:
  - **OpenSSL <= 1.0.2 and OpenSSL >= 1.1.0h**
  - **OpenSSL 1.1.0 - 1.1.0g**
 
-For OpenSSL version 1.10 and 1.1.0g, you cannot disable renegotiation.
+For OpenSSL version 1.10 - 1.1.0g, you cannot disable renegotiation.
 
 ::: moniker-end
 
