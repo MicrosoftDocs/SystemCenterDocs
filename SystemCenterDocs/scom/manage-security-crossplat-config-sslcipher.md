@@ -5,7 +5,7 @@ description: This article describes how to configure SSL encrypted communication
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/05/2021
+ms.date: 02/11/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -79,18 +79,18 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 >[!NOTE]
 > This update is applicable for Operations Manager 2019 UR3 and later.
 
-With Operations Manager 2019 UR3, SSL renegotiations are disabled.
+With Operations Manager 2019 UR3, for the Linux agent, SSL renegotiations are disabled.
 
-SSL renegotiations might cause vulnerability in SCOM-Linux agent which might make it easier for the remote attackers to cause a denial of service (CPU consumption) by performing many renegotiations within a single connection.  
+SSL renegotiations might cause vulnerability in SCOM-Linux agent which might make it easier for the remote attackers to cause a denial of service by performing many renegotiations within a single connection.  
 
-OMI uses open source OpenSSL.
+Linux agent uses opensource OpenSSL for SSL purposes.
 
 The following versions are supported:
 
  - **OpenSSL <= 1.0.2 and OpenSSL >= 1.1.0h**
  - **OpenSSL 1.1.0 - 1.1.0g**
 
-SSL renegotiations is supported. You cannot disable renegotiation from OpenSSL.
+For OpenSSL version 1.10 and 1.1.0g, you cannot disable renegotiation.
 
 ::: moniker-end
 

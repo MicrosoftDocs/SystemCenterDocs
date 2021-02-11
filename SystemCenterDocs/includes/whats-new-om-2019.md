@@ -5,7 +5,7 @@ description: This include file describes the new features in Operations Manager 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 02/05/2021
+ms.date: 02/11/2021
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -351,29 +351,29 @@ Operations Manager 2019 UR3 includes updates to the change tracking feature for 
 
 ### Additional view options in web console widgets
 
-With Operations Manager 2019 UR3, you can sort the results columns in the Alert widget and State widget, also group the columns.
+With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and State widget, also group the columns.
 
-### Disabled SSL renegotiation in OMI
+### Disabled SSL renegotiation for Linux agent
 
-With Operations Manager 2019 UR3, SSL renegotiations have been disabled. OMI uses opensource OpenSSL for SSL purposes.
+With Operations Manager 2019 UR3 and later, SSL renegotiations have been disabled.
 
 ### Dynamic changes in log-level settings without agent restart
 
-With Operations Manager 2019 UR3, you can change the log-level settings without restarting the agent.
+With Operations Manager 2019 UR3 and later, you can change the log-level settings without restarting the agent.
 
 ### Resolved issues with orphan alerts
 
 In earlier releases, active alerts are not getting closed after non-persistent health state in certain scenarios. Overall, health service doesn’t hold the last state of the monitor; alerts are not closed while resetting the monitor to healthy.
 
-With Operations Manager 2019 UR3, all of the orphan alerts are closed, eventually, depending on the type of monitor.
+With Operations Manager 2019 UR3 and later, all of the orphan alerts are closed, eventually, depending on the type of monitor.
 
-### Support for RHEL 6 in XPLAT agent
+### Support for RHEL 6
 
-Operations Manager 2019 UR3 supports RHEL6 via RHEL6 management pack. With Operations Manager 2019 UR3, Universal Linux management pack will not discover/monitor RHEL6.
+Operations Manager 2019 UR3 and later supports RHEL6 via RHEL6 management pack.
 
-### TLS 1.2 support for Solaris 10
+### TLS 1.2 support for Solaris 10 SPARC
 
-Operations Manager 2019 UR3 supports TLS 1.2 for Solaris 10.
+Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC.
 
 ### Performance improvements in Operations Manager
 

@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/05/2021
+ms.date: 02/11/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -78,9 +78,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWopenssl-libraries|SUNopenssl-libraries (Usr)|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.15.53|
 |Release|Oracle Solaris 10 1/13|s10s_u11wos_24a SPARC|
-
-> [!NOTE]
-> TLS 1.2 for Solaris 10 is supported with Operations Manager 2019 UR3 and later.
 
 ## Solaris 11 SPARC
 
