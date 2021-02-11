@@ -5,7 +5,7 @@ description: This article describes options to administer and configure the UNIX
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/05/2021
+ms.date: 02/11/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -142,13 +142,6 @@ cd /opt/microsoft/scx/bin/tools/
 ### SSL ciphers
 
 If required, the SSL cipher list used by the UNIX/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) topic.  
-
-::: moniker range="sc-om-2019"
-
-> [!NOTE]
-> With Operations Manager 2019 UR3, SSL renegotiations have been disabled. OMI uses opensource OpenSSL for SSL purposes. [Learn more](manage-security-crossplat-config-sslcipher.md#disabled-ssl-renegotiation-in-omi).
-
-::: moniker-end
 
 ### Specifying an alternate temporary path for scripts
 
