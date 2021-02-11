@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 ## Version-Independent (Generic) Views and Dashboards
 
-Management Pack for SQL Server introduces a common folder structure that will be used by future releases of management packs for different components of SQL Server.
+Management Pack for SQL Server introduces a common folder structure that will be used in future releases of management packs for different components of SQL Server.
 
 The following views and dashboards are version-independent and show information about all versions of SQL Server.
 
