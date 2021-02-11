@@ -92,7 +92,7 @@ The environment that you use must meet the following prerequisites before you st
 
   Management pack for SQL Server 2017+ Integration Services cannot be upgraded and has to be removed before importing this management pack.
 
-- Grant the **Author set of privileges** on SCOM SDK.
+- Grant an author set of privileges on SCOM SDK.
 
   This management pack requires an author set of privileges to create a management pack for storing overrides. If the default action account does not have these privileges, create a new account and map this account to the Microsoft SQL Server Run As Profile.
 

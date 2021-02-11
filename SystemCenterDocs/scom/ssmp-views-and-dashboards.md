@@ -29,7 +29,7 @@ The **SQL Server Roles** dashboard provides information about all instances of S
 
 ## SQL Server Views
 
-Management Pack for SQL Server introduces a comprehensive set of state, performance and alert views that can be found in the associated folders.
+Management Pack for SQL Server introduces a comprehensive set of state, performance, and alert views that can be found in the associated folders.
 
 ![State sets](./media/ssmp/state-sets.png)
 

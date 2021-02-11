@@ -27,7 +27,7 @@ For example, an override "2014,2012" instructs the management pack to skip insta
 
 Management Pack for SQL Server allows you to exclude certain editions of SQL Server instances from monitoring.
 
-To exclude editions that you do not want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery with the editions that you want to exclude.
+To exclude editions that you do not want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery with the editions that you want to exclude. Use comma to specify multiple editions.
 
 The following table lists short names that you can use to override the **Editions of SQL Server to be excluded** parameter.
 
