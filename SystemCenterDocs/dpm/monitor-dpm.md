@@ -120,7 +120,7 @@ Here is a sample view:
 ![Recovery vault backup items](./media/monitor-dpm/back-up-items-view.png)
 
 > [!NOTE]
-> - The *Backup items* continue to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
+> - The *Backup items* view continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
 >
 > - Also, datasources for which the online protection is stopped but data is retained, billing continues for the online recovery points until the data is completely deleted.
 
