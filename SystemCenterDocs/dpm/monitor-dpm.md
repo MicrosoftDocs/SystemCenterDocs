@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 02/10/2021
+ms.date: 02/11/2021
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -120,7 +120,7 @@ Here is a sample view:
 ![Recovery vault backup items](./media/monitor-dpm/back-up-items-view.png)
 
 > [!NOTE]
-> - The backup report continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
+> - The backup instance continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
 >
 > - Also, datasources for which the online protection is stopped but data is retained, billing continues for the online recovery points until the data is completely deleted.
 
