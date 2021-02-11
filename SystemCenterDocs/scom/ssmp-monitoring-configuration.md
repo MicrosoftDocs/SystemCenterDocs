@@ -35,12 +35,12 @@ Management Pack for SQL Server provides the following SQL Server agent alerting 
 
 - MSSQL on Windows: Unable to re-open the local eventlog
 
-By default, these rules are enabled in [Agent Monitoring](ssmp-monitoring-modes.md) mode, but disabled in [Mixed Monitoring](ssmp-monitoring-modes.md#configuring-mixed-monitoring-mode) mode because Operations Manager does not allow to collect events from event logs on remote computers. To change this, you can override each of these rules by enabling the **AllowProxying** option.
+By default, these rules are enabled in [agent monitoring](ssmp-monitoring-modes.md) mode, but disabled in [mixed monitoring](ssmp-monitoring-modes.md#configuring-mixed-monitoring-mode) mode because Operations Manager does not allow to collect events from event logs on remote computers. To change this, you can override each of these rules by enabling the **AllowProxying** option.
 
 >[!NOTE]
 >Enabling the **AllowProxying** option may cause remote code execution. Do not enable this option unless you are sure that your computer is secured.
 
-None of these rules work in [Agentless Monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode and are unavailable for SQL on Linux.
+None of these rules work in [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode and are unavailable for SQL on Linux.
 
 ## Always On Alert Rules
 
@@ -72,11 +72,11 @@ Besides system policies, this management pack provides the ability to monitor cu
 
 - Database Replica
 
-For each facet, the management pack introduces two monitors for custom user policy:
+For each facet, the management pack introduces two monitors for the custom user policy:
 
-- Two-state monitor with a **Warning** state. This monitor reflects the state of Custom User Policy that has one of the predefined warning categories as **Policy Category**.
+- Two-state monitor with a **Warning** state. This monitor shows the state of the custom user policy that has one of the predefined warning categories as **Policy Category**.
 
-- Two-state monitor with an **Error** state. This monitor reflects the state of Custom User Policy that has one of the predefined error categories as **Policy Category**.
+- Two-state monitor with an **Error** state. This monitor shows the state of the custom user policy that has one of the predefined error categories as **Policy Category**.
 
 ## Data File and Transaction Log File Space Monitoring
 
@@ -94,13 +94,13 @@ This feature supports the following types of media:
 
 By default, space monitoring is enabled for all levels. Alerts will only be registered if all files in the file group are unhealthy.
 
-If your environment is sensitive for any extra load, disable monitoring at the file group and file levels.
+If your environment is sensitive to the extra load, disable monitoring at the file group and file levels.
 
 ## Many Databases on the Same Drive
 
 Space monitoring introduced in this management pack may be noisy in environments where many databases share the same media and have the **autogrowth** setting enabled. In such cases, an alert for each database is generated when the amount of free space on the hard drive reaches the threshold.
 
-To reduce the noise, turn off the space monitoring for data and transaction log files and use the Operating System Management Pack to monitor space on the hard drive.
+To reduce the noise, turn off space monitoring for data and transaction log files and use the Operating System Management Pack to monitor space on the hard drive.
 
 ## DB Storage Latency Monitoring
 
@@ -108,13 +108,13 @@ Management Pack for SQL Server collects **DB Disk Read Latency (ms)** and **DB D
 
 ## Blocked Sessions
 
-Blocking Sessions monitor designed to query each database for a session that is blocked during a significant period of time. If blocking is detected and it exceeds the given threshold, the state is changed and an alert is raised.
+Blocking Sessions monitor is designed to query each database for a session that is blocked during a significant period of time. If blocking is detected and it exceeds the given threshold, the state is changed and an alert is raised.
 
 You can apply an override to change the **WaitMinutes** parameter used to determine if the blocked session should be considered as long-running. The default value for this parameter is one minute.
 
 ## Securables Configuration Status Monitor
 
-This monitor checks if each of the required SQL Server securables is accessible under the configured run-as account.
+This monitor checks if each of the required SQL Server securables is accessible under the configured [Run As Account](ssmp-run-as-profiles.md).
 
 The following is a complete list of securables that are checked by the monitor targeted to the SQL Server DB Engine:
 
@@ -187,7 +187,7 @@ The following is a complete list of securables that are checked by the monitor t
   - sys.xp_instance_regread
   - msdb.dbo.sp_help_job
 
-The following is a complete list of securables checked by the monitor targeted to SQL Server databases:
+The following is a complete list of securables checked by the monitor targeted to SQL Server Databases:
 
 - SELECT permission on catalog views
   - sys.database_files

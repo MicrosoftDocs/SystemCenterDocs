@@ -17,9 +17,9 @@ You can download Management Pack for SQL Server from the [Microsoft portal](http
 
 The package includes the following files:
 
-- **SQLServerMP.Windows.msi**—a set of MP and MPB files for monitoring SQL on Windows.
+- **SQLServerMP.Windows.msi**—a set of MP and MPB files for monitoring of SQL on Windows.
 
-- **SQLServerMP.Linux.msi**—a set of MP and MPB files for monitoring SQL on Linux.
+- **SQLServerMP.Linux.msi**—a set of MP and MPB files for monitoring of SQL on Linux.
 
 Management Pack for SQL Server consists of the following files:  
 
@@ -56,15 +56,15 @@ Management Pack for SQL Server consists of the following files:
 
   This management pack is virtually a new version of the version-agnostic management pack for SQL Server 2017 and higher (last version - 7.0.7.0 as of July 2018). 
   
-  All upcoming versions of the management pack, including the current one are intended for monitoring of SQL Server 2012, 2014, 2016, 2017 and higher. 
+  All upcoming versions of the management pack, including the current one are intended for monitoring of SQL Server 2012, 2014, 2016, 2017, and higher. 
   
-  Previous generations of management packs for SQL Server 2008—2016 has reached the end of support with the first public release of the management pack for SQL Server 2012 and higher (April, 2019).
+  Previous generations of management packs for SQL Server 2008—2016 have reached the end of support with the first public release of the management pack for SQL Server 2012 and higher (April, 2019).
 
 - **Upgradability issues of path SQL Server 2017+ MP v.7.0.7.0 → any version of the current management pack**
   
   When upgrading SQL Server 2017+ Management Pack, all instances of SQL Server 2017 will be automatically rediscovered. Such behavior affects reporting because historical data collected for these instances becomes unavailable.
   
-  Management pack for SQL Server 2017+ Integration Services cannot be upgraded and has to be removed before importing this update. To remove Management pack for SQL Server 2017+ Integration Services, remove the following management pack: **Microsoft SQL Server 2017+ Integration Services on Windows**.
+  Management pack for SQL Server 2017+ Integration Services cannot be upgraded and has to be removed before importing this update.
 
 - **Localization for SQL Server 2017+ MP cannot be imported over the current version of SQL Server MP**
 
@@ -76,23 +76,23 @@ The environment that you use must meet the following prerequisites before you st
 
 - Install **.NET Framework 4.5** or higher.
 
-- Import both the **Management Pack for Windows Server Operating System** and the **Management Pack for UNIX and Linux Operating Systems**
+- Import both the **Management Pack for Windows Server Operating System** and the **Management Pack for UNIX and Linux Operating Systems**.
 
-- Remove overrides for the **SQL on Windows: Discover Installation Source (seed)** discovery when upgrading Management Pack for SQL Server 2017+ to the current one
+- Remove overrides for the **SQL on Windows: Discover Installation Source (seed)** discovery when upgrading Management Pack for SQL Server 2017+ to the current one.
 
 - Enable the **Allow log on locally** security policy for the domain account that is used as an action account.
 
-- Enable the **Agent Proxy** option on each agent to allow agents to forward data to the Management Server.
+- Enable the **Agent Proxy** option on each agent to allow agents to forward data to Management Servers.
   
   This option should be enabled in cases when the agent workflow scenarios discover any non-hosted objects created by the management pack for each SQL Server instance.
 
-- Enable and run SQL Server Browser for [Agentless Monitoring](./ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode.
+- Enable and run SQL Server Browser for [agentless monitoring](./ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode.
   
 - Remove the Microsoft SQL Server 2017+ Integration Services on Window management pack before importing this management pack.
 
   Management pack for SQL Server 2017+ Integration Services cannot be upgraded and has to be removed before importing this management pack.
 
-- Grant the **Author set of privileges** on SCOM SDK
+- Grant the **Author set of privileges** on SCOM SDK.
 
   This management pack requires an author set of privileges to create a management pack for storing overrides. If the default action account does not have these privileges, create a new account and map this account to the Microsoft SQL Server Run As Profile.
 
@@ -102,7 +102,7 @@ Management Pack for SQL Server is version-agnostic. It supports discovery and mo
 
 For more information on how to import management packs, see [How to Import a Management Pack](https://go.microsoft.com/fwlink/?LinkId=142351).
 
-If you already have any of the version-specific management packs, discovery and monitoring provided by this management pack will be disabled and will be performed solely by the existing version-specific management packs to avoid double monitoring.
+If you already have any of the version-specific management packs, discovery and monitoring provided by this management pack will be disabled and will be performed solely by the existing version-specific management packs.
 
 To disable monitoring of SQL Server 2012/2014/2016 instances that might already be monitored by any of the version-specific management packs, the **MSSQL on Windows: Automatic setup of DB Engine discovery filter** rule is used.
 
@@ -113,3 +113,8 @@ If you remove the **Microsoft SQLServer overrides** management pack while still 
 To make the version-agnostic management pack the primary source of monitoring, remove version-specific management packs and then remove (or modify) the **Microsoft SQLServer overrides** management pack.
 
 When you import version-specific management packs after importing the version-agnostic management pack, monitoring provided by the version-agnostic management pack will not be disabled.
+
+## See also
+
+- [Management Pack Templates](management-pack-templates.md)
+- [Monitors and Rules](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29)

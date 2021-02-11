@@ -124,3 +124,7 @@ For more information about these modes, see [Monitoring Modes](ssmp-monitoring-m
 ## Management Groups
 
 Management Pack for SQL Server does not require a dedicated Management Group and can work in virtual environments.
+
+## See also
+
+- [Monitoring Modes](ssmp-monitoring-modes.md)

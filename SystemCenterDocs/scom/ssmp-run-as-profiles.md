@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Run As Profiles
 
-## Management Pack for SQL Server Run As profiles
+## Management Pack for SQL Server Run As Profiles
 
 Management Pack for SQL Server provides the following Run As profiles:
 
@@ -35,19 +35,19 @@ Management Pack for SQL Server provides the following Run As profiles:
 
 - **Microsoft SQL Server SQL Credentials Run As Profile**
 
-  This profile is used for [Agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode only.
+  This profile is used for [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode only.
 
 Do not bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes, as only a basic action account can be bound to this profile. Also, do not use a Windows account or non-basic account with this profile.
 
 When using agent or mixed monitoring mode, all discoveries, monitors, and tasks use accounts from the **Default Action Account** Run As profile.
 
-If the default action account for a given system does not have necessary permissions to discover and monitor instances of SQL Server, such systems can be bound to more specific credentials defined in **Microsoft SQL Server** Run As profiles.
+If the default action account for a given system does not have necessary permissions to discover and monitor instances of SQL Server, such systems can be bound to more specific credentials defined in **Microsoft SQL Server** Run As Profiles.
 
 ## Enabling Allow Log On Locally Security Policy
 
 If the domain account is used as an action account for this management pack, enable the **Allow log on locally** policy for this account for both SQL Server on Windows and on Linux. For more information on how to configure this policy, see [Allow Log On Locally](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/allow-log-on-locally).
 
-## Configuring Run As Profiles for Agent and Mixed Monitoring Modes
+## Agent and Mixed Monitoring Modes
 
 To configure Run As profiles, use one of the following scenarios:
 
@@ -71,7 +71,7 @@ Follow these steps to ensure that all requirements are met:
 
 - If you store SQL Server databases on an SMB file share, the default action account must have the rights, as described in [Low-Privilege Agent Monitoring](ssmp-low-privilege-monitoring.md).
 
-- In cases when servers hosting Always On Availability Replicas (at least one of them) have a machine name consisting of more than 15 characters, make sure to perform the steps described in [Configuring Permissions for Always On Workflows with Long Server Names](#configuring-permissions-for-always-on-workflows-with-long-server-names).
+- In cases when servers hosting Always On Availability Replicas (at least one of them) have a machine name consisting of more than 15 characters, make sure to perform the steps described in [Always On Workflows with Long Server Names](#always-on-workflows-with-long-server-names).
 
 ### Action Account is Local Administrator w/o SA
 
@@ -83,7 +83,7 @@ If the security policy allows granting SA rights to the separate domain user acc
 
 2. Grant SA rights to this account on SQL Server.
 
-3. Create a new action account in System Center Operations Manager and map it to the domain user account created above.
+3. Create a new action account in System Center Operations Manager and map this account to the domain user account created above.
 
 4. Map the new action account to all SQL Server MP Run As Profiles.
 
@@ -99,21 +99,21 @@ You can grant SA or low privilege rights to System Center Operations Manager Hea
 
 Follow these steps to configure the security configuration using SID:
 
-- Configure a service SID for HealthService, as described in [Configuring Monitoring with Service Security Identifier](#configuring-monitoring-with-service-security-identifier).
+1. Configure a service SID for HealthService, as described in [Service Security Identifier](#service-security-identifier).
 
-- If you have SQL Server cluster instances, perform the steps provided in [Configuring HealthService Service SID for SQL Server Cluster Instances](#configuring-healthservice-service-sid-for-sql-server-cluster-instances).
+2. If you have SQL Server cluster instances, perform the steps provided in [HealthService SID for SQL Server Cluster Instances](#healthservice-sid-for-sql-server-cluster-instances).
 
 ### Low-Privilege Monitoring
 
 If you need to grant minimum required rights to the SQL MP workflows, follow the instructions provided in [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md).
 
-## Configuring Run As Profiles for Agentless Monitoring Mode
+## Agentless Monitoring Mode
 
-To configure Run As Profiles in [Agentless Monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode, create an account on SQL Server and grant this account SA rights or a set of low privilege permissions. You can use SQL Server authentication or Windows authentication. Once created, you can use this account in the [Add Monitoring Wizard](ssmp-low-privilege-monitoring.md#using-add-monitoring-wizard) to add SQL Server instances.
+To configure Run As Profiles in [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode, create an account on SQL Server and grant this account SA rights or a set of low privilege permissions. You can use SQL Server authentication or Windows authentication. Once created, you can use this account in the [Add Monitoring Wizard](ssmp-low-privilege-monitoring.md#using-add-monitoring-wizard) to add SQL Server instances.
 
 For more information on how to configure low privilege monitoring in agentless monitoring mode, see the [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md).
 
-## Configuring Monitoring with Service Security Identifier
+## Service Security Identifier
 
 Below are the steps to configure monitoring using Service SIDs for SQL Server on a Windows Server instance. These steps were first published by Kevin Holman in [his blog](https://kevinholman.com/2016/08/25/sql-mp-run-as-accounts-no-longer-required/). The SQL scripts to configure lowest-privilege access were developed by Brandon Adams.
 
@@ -216,7 +216,7 @@ To configure monitoring using Service Security Identifier, perform the following
 
 The NT AUTHORITY\SYSTEM account needs to be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.
 
-## Configuring HealthService Service SID for SQL Server Cluster Instances
+## HealthService SID for SQL Server Cluster Instances
 
 To configure HealthService Service SID for monitoring of SQL Server failover cluster, perform the following steps for each cluster node:
 
@@ -256,7 +256,9 @@ To configure HealthService Service SID for monitoring of SQL Server failover clu
 
 9. In the **Permissions Entry for CIMV2** window, select a HealthService account, and click **Edit**. 
 
-    Make sure that **Applies to** is set to *This namespace only* and enable the following permissions:
+10. From the **Applies to** drop-down list, select **This namespace only**.
+
+11. In the **Permissions** section, enable the following checkboxes:
 
     - Enable Account
     
@@ -264,13 +266,13 @@ To configure HealthService Service SID for monitoring of SQL Server failover clu
 
     ![CIMV permissions](./media/ssmp/permissions-cimv.png)
 
-## Configuring System Center Operations Manager SDK Run As Profile
+## SDK Run As Profile
 
 Management Pack for SQL Server needs an author set of privileges on the System Center Operations Manager SDK to create a management pack and store overrides in it.
 
 If the default action account on System Center Operations Manager does not have these permissions, create such an account and map it to the Microsoft SQL Server SDK Run As Profile.
 
-## Configuring Permissions for Always On Workflows with Long Server Names
+## Always On Workflows with Long Server Names
 
 Regardless of whether you use a local system account, domain user account, or rights assignment, permissions listed below are required for the account.
 

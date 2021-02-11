@@ -17,9 +17,9 @@ ms.technology: operations-manager
 
 Management Pack for SQL Server allows you to exclude certain versions of SQL Server instances from monitoring.
 
-To exclude unwanted versions, create an override for the **Versions of SQL Server to be excluded** parameter of the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery and specify versions using commas. 
+To exclude versions that you do not want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery with the versions that you want to exclude. Use comma to specify multiple versions.
 
-For example, an override "2014,2012" makes the management pack to remove all previously discovered instances of SQL Server 2012 and 2014, and disable any further discovery of such instances.
+For example, an override "2014,2012" instructs the management pack to skip instances of SQL Server 2012 and 2014.
 
 ![Disabling Monitoring of Specified SQL Server Versions](./media/ssmp/overriding-version-parameter.png)
 
@@ -27,9 +27,9 @@ For example, an override "2014,2012" makes the management pack to remove all pre
 
 Management Pack for SQL Server allows you to exclude certain editions of SQL Server instances from monitoring.
 
-To exclude unwanted editions, create an override for the **Editions of SQL Server to be excluded** parameter of the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery and specify editions using commas. 
+To exclude editions that you do not want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery with the editions that you want to exclude.
 
-The following table lists short names that you can specify in the **Editions of SQL Server to be excluded** parameter.
+The following table lists short names that you can use to override the **Editions of SQL Server to be excluded** parameter.
 
 |Short Name|Covered Editions|
 |-|-|
@@ -51,9 +51,7 @@ You can set this parameter in the following discoveries:
 
 - MSSQL on Linux: Discover SQL Server Databases for a Database Engine
 
-Use commas to separate database names and asterisks to replace one or more characters.
-
-For example, when setting the parameter to "dev*, \*test*, *stage, dbnotmon", the monitoring behavior would be as follows:
+Use commas to separate database names and asterisks to replace one or more characters. For example, when setting the parameter to "dev*, \*test*, *stage, dbnotmon", the monitoring behavior would be as follows:
 
 |DB Name|Monitored/Not monitored|
 |-|-|
@@ -70,5 +68,5 @@ For example, when setting the parameter to "dev*, \*test*, *stage, dbnotmon", th
 |dbnotmon_sales|Monitored|
 |sales_dbnotmon|Monitored|
 
-If you have "\*" in the list as a database name (for example, "\*temp*, *, *\dev*" or "\*temp,*"), it disables monitoring of any database.
+If you have "\*" in the list as a database name (for example, "\*temp*, "\*", \*dev*" or "\*temp,*"), it disables monitoring of any database.
 

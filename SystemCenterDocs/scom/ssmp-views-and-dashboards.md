@@ -21,7 +21,7 @@ The following views and dashboards are version-independent and show information 
 
 ![Generic views and dashboards](./media/ssmp/version-independent-views.png)
 
-The **Computers** node view displays computers on which the agents are installed and the management pack discovery is running. This view does not display computers configured for agentless monitoring.
+The **Computers** node view displays computers on which the agents are installed and the management pack discovery is running. This view does not display computers configured for [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode).
 
 The **SQL Server Roles** dashboard provides information about all instances of SQL Server Database Engine, SQL Server Reporting Services, SQL Server Analysis Services, and SQL Server Integration Services.
 

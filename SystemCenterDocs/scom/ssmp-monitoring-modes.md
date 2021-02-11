@@ -15,9 +15,9 @@ ms.technology: operations-manager
 
 Management Pack for SQL Server provides the following monitoring modes:
 
-- **Agent monitoring mode**
+- **Agent monitoring**
   
-    This monitoring mode supports SQL on Windows only and is performed by the System Center Operations Manager agent.
+    Agent monitoring is performed by the System Center Operations Manager agent and supports SQL on Windows only.
 
     In this monitoring mode, the management pack automatically discovers stand-alone and clustered instances of SQL Server across all managed systems that run the System Center Operations Manager agent service.
 
@@ -29,7 +29,7 @@ Management Pack for SQL Server provides the following monitoring modes:
     
     - Shared Memory
 
-- **Agentess monitoring mode**
+- **Agentess monitoring**
 
     This monitoring mode supports both SQL on Linux and SQL on Windows.
 
@@ -45,11 +45,11 @@ Management Pack for SQL Server provides the following monitoring modes:
     
     - Named Pipes
 
-- **Mixed monitoring mode**
+- **Mixed monitoring**
 
     This monitoring mode supports SQL on Windows only.
 
-    In this monitoring mode, the management pack places its seed on each computer that has the System Center Operations Manager agent. This seed is then used to automatically discover all SQL Server on Windows instances. The entire monitoring is performed from Management Servers and Gateway Servers that are members of the SQL Server Monitoring Pool.
+    In this monitoring mode, the management pack places its seed on each computer that has the System Center Operations Manager agent. This seed is then used to automatically discover all SQL Server on Windows instances. The entire monitoring is performed by Management Servers and Gateway Servers that are members of the SQL Server Monitoring Pool.
 
     For more information on how to configure this mode, see [Configuring Mixed Monitoring Mode](#configuring-mixed-monitoring-mode).
 
@@ -103,15 +103,15 @@ To configure agentless monitoring, perform the following steps:
 
     - Select a preferable authentication type, which can be either **SQL Credentials** or **Windows AD credentials**.
 
-      The **Windows AD credentials** method should be used when SQL Server instances run on Windows or Linux servers that are part of an Active Directory domain.
+      Use the **Windows AD credentials** method when SQL Server instances run on Windows or Linux-based servers that are part of an Active Directory domain.
 
     - Select a common Run As Account created in the Operations Manager with appropriate credentials or create a new one by clicking **New**.
 
-      When you create a new Run as Account, enter a name and credentials to connect to the SQL server that you want to monitor and click **OK**.
+      When you create a new Run As account, enter a name and credentials to connect to the SQL server that you want to monitor and click **OK**.
 
-    - Specify data sources and/or connection strings. Follow the instructions provided in this window to avoid errors and skip excessive connection testing.
+    - Specify data sources and/or connection strings.
 
-      The following are examples of the format that should be used when specifying connection strings:
+      Use the following format when specifying connection strings:
 
         - 172.31.2.133;MachineName="W12BOX-839";InstanceName="MSSQLSERVER";Platform="Windows"
   
@@ -123,7 +123,7 @@ To configure agentless monitoring, perform the following steps:
 
     ![Authentication type](./media/ssmp/authentication-type.png)
 
-7. Click **OK** and wait until connection is established.
+7. Click **OK** and wait until the connection is established.
 
     **Monitoring Template Wizard** may show the following error when establishing connection: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process".
 

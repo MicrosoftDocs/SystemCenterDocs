@@ -41,7 +41,7 @@ To open the report, perform the following steps:
 
 4. Click **Run**.
 
-The report displays a separate chart for every selected object or a group of objects.
+The report displays a separate chart for each selected object or a group of objects.
 
 ![Forecast chart](./media/ssmp/forecast-chart.png)
 
