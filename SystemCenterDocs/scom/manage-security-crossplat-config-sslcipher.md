@@ -74,7 +74,7 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 
 ::: moniker range="sc-om-2019"
 
-## Disabled SSL renegotiation in OMI
+## Disabled SSL renegotiations in Linux agent
 
 >[!NOTE]
 > This update is applicable for Operations Manager 2019 UR3 and later.
