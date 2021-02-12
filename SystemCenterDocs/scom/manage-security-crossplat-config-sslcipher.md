@@ -87,8 +87,9 @@ Linux agent uses opensource OpenSSL for SSL purposes.
 
 The following versions are supported:
 
- - **OpenSSL <= 1.0.2 and OpenSSL >= 1.1.0h**
- - **OpenSSL 1.1.0 - 1.1.0g**
+ - **OpenSSL <= 1.0.2**
+
+ - **OpenSSL >= 1.1.0h**
 
 For OpenSSL version 1.10 - 1.1.0g, you cannot disable renegotiation.
 
