@@ -74,7 +74,7 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 
 ::: moniker range="sc-om-2019"
 
-## Disabled SSL renegotiation in OMI
+## Disabled SSL renegotiations in Linux agent
 
 >[!NOTE]
 > This update is applicable for Operations Manager 2019 UR3 and later.
@@ -87,8 +87,8 @@ Linux agent uses opensource OpenSSL for SSL purposes.
 
 The following versions are supported:
 
- - **OpenSSL <= 1.0.2 and OpenSSL >= 1.1.0h**
- - **OpenSSL 1.1.0 - 1.1.0g**
+ - OpenSSL <= 1.0.2
+ - OpenSSL >= 1.1.0h
 
 For OpenSSL version 1.10 - 1.1.0g, you cannot disable renegotiation.
 
