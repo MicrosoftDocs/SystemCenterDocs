@@ -18,7 +18,7 @@ ms.topic: article
 
 This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
 
-We recommend you to see the following articles for detailed information about what DPM supports and can back up: 
+We recommend you to see the following articles for detailed information about what DPM supports and can back up:
 
 - [What can DPM backup](dpm-protection-matrix.md)
 - [What DPM supports](dpm-support-issues.md)
@@ -139,6 +139,36 @@ The following sections summarize the release notes for DPM 2019 and include the 
 **Description**: With DPM 2019 central console you cannot manage any DPM 1801 or DPM 1807 servers.
 
 **Workaround**: Upgrade your DPM server to version 2019.
+
+### Recovery Points not being pruned, leading to an accumulation of Recovery Points
+**Description:** DPM prunes recovery points older than the retention range. During the pruning process, DPM calculates the storage consumed by those recovery points to be pruned. Storage calculation delays pruning.
+
+**Workaround:** Configure DPM to skip calculating the size of recovery points to be pruned. As a result, the pruning script runs faster, and prunes all recovery points older than the retention range, relieving any storage pressures. The storage consumed per data source isn't updated until DPM finishes pruning. The storage consumption per volume continues to reflect the correct values.
+Use a PowerShell script to turn on size calculation. The following script runs complete size calculations.
+
+**Location:** Program Files\Microsoft System Center 2016\DPM\DPM\bin\Manage-DPMDSStorageSizeUpdate.ps1
+
+**Script:** ```Manage-DPMDSStorageSizeUpdate.ps1 -ManageStorageInfo [StopSizeAutoUpdate | StartSizeAutoUpdate | GetSizeAutoUpdateStatus | UpdateSizeInfo ] [-UpdateSizeForDS <FilePath>] [-UpdatedDSSizeReport <FilePath>] [-FailedDSSizeUpdateFile <FilePath>]```
+
+- **ManageStorageInfo:** - Specifies the kind of operation needed.
+
+    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell will not report sizes.
+
+    - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the datasources, until which sizes reported in PowerShell and UI may not be correct.
+
+    - ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
+
+    - ***UpdateSizeInfo:*** Triggers the size calculation and reports the size consumed by datasource. As this can be a long-running operation, use it only when needed, for scenarios such as billing. During this time, backups may fail with vhd mount errors.
+
+- **UpdateSizeForDS:** Path to a text file with a list of Datasource IDs for which size needs to be calculated, with a datasourceID on each line. When not passed, size calculation is triggered for all the datasources.
+    Use after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
+    To get the Datasource IDs of specific datasources, use ``` Get-DPMProtectionGroup | Get-DPMDatasource | Format-table -Property Computer,name,ObjectType,Id```.
+
+- **UpdatedDSSizeReport:** Path to a file that stores the updated datasource sizes. When not passed sizes.csv, a file is created in the execution directory.
+    Use after ```UpdateSizeInfo``` in ```ManageStorageInfo```.
+
+- ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the datasources for which the storage consumption couldn’t be calculated. This may happen due to reasons as ongoing backups. When not passed failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the datasources.
+    This should be used after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
 ## DPM 2019 UR1 release notes
 No known issues for DPM 2019 UR1.
