@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 12/11/2020
+ms.date: 02/16/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -146,7 +146,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 **Workaround:** Configure DPM to skip calculating the size of recovery points to be pruned. As a result, the pruning script runs faster, and prunes all recovery points older than the retention range, relieving any storage pressures. The storage consumed per data source isn't updated until DPM finishes pruning. The storage consumption per volume continues to reflect the correct values.
 Use a PowerShell script to turn on size calculation. The following script runs complete size calculations.
 
-**Location:** Program Files\Microsoft System Center 2019\DPM\DPM\bin\Manage-DPMDSStorageSizeUpdate.ps1
+**Location:** Program Files\Microsoft System Center\DPM\DPM\bin\Manage-DPMDSStorageSizeUpdate.ps1
 
 **Script:** ```Manage-DPMDSStorageSizeUpdate.ps1 -ManageStorageInfo [StopSizeAutoUpdate | StartSizeAutoUpdate | GetSizeAutoUpdateStatus | UpdateSizeInfo ] [-UpdateSizeForDS <FilePath>] [-UpdatedDSSizeReport <FilePath>] [-FailedDSSizeUpdateFile <FilePath>]```
 
