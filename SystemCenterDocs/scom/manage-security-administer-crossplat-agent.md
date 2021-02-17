@@ -215,11 +215,11 @@ Use the following steps:
 
 1. Modify the **omiserver.conf** file and update the new loglevel:
 
-  ```
-  COPY
-  loglevel = INFO
+   ```
+    COPY
+    loglevel = INFO
 
-  ```
+   ```
 
 2. Apply this log-level while running the below command:
    ```
