@@ -5,7 +5,7 @@ description: This article describes options to administer and configure the UNIX
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/11/2021
+ms.date: 02/17/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -213,7 +213,10 @@ With Operations Manager 2019 UR3, log-level settings can be changed without the 
 
 Use the following steps:
 
-1. Modify the **omiserver.conf** file and update the new log-level.
+1. Modify the **omiserver.conf** file and update the new loglevel:
+    COPY
+    loglevel = INFO
+
 2. Apply this log-level while running the below command:
    ```
    $sudo /opt/omi/bin/omiconfigeditor –reconfig

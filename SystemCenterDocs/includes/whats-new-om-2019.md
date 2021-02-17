@@ -363,7 +363,7 @@ With Operations Manager 2019 UR3 and later, you can change the log-level setting
 
 ### Resolved issues with orphan alerts
 
-In earlier releases, active alerts are not getting closed after non-persistent health state in certain scenarios. Overall, health service doesn’t hold the last state of the monitor; alerts are not closed while resetting the monitor to healthy.
+In earlier releases, active alerts are not getting closed after non-persistent health state in failover  scenarios. Overall, health service doesn’t hold the last state of the monitor; alerts are not closed while resetting the monitor to healthy.
 
 With Operations Manager 2019 UR3 and later, all of the orphan alerts are closed, eventually, depending on the type of monitor.
 
