@@ -216,7 +216,7 @@ Use the following steps:
 1. Modify the **omiserver.conf** file and update the new loglevel:
 
    ```
-    COPY
+  
     loglevel = INFO
 
    ```
