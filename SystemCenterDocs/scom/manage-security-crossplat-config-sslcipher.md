@@ -5,7 +5,7 @@ description: This article describes how to configure SSL encrypted communication
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/11/2021
+ms.date: 02/17/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -85,12 +85,12 @@ SSL renegotiations might cause vulnerability in SCOM-Linux agent which might mak
 
 Linux agent uses opensource OpenSSL for SSL purposes.
 
-The following versions are supported:
+The following versions are supported for renegotiation only:
 
  - OpenSSL <= 1.0.2
  - OpenSSL >= 1.1.0h
 
-For OpenSSL version 1.10 - 1.1.0g, you cannot disable renegotiation.
+For OpenSSL versions 1.10 - 1.1.0g, you cannot disable renegotiation because OpenSSL does not support renegotiation.
 
 ::: moniker-end
 

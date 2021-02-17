@@ -66,6 +66,17 @@ The following tables describe the required UNIX and Linux operating systems and 
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|
 |PAM|Pluggable Authentication Modules|1.1.8|
 
+
+## Red Hat Enterprise Linux Server 6  (applicable for 2019 UR3 and later)
+
+Operations Manager 2019 UR3 and later supports RHEL 6 through RHEL 6 management pack.
+
+|Required package|Description|Minimum version|  
+|--------------------|---------------|-------------------|  
+|glibc|C Standard Libraries|2.12-1.7|  
+|Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
+|PAM|Pluggable Authentication Modules|1.1.1-4|  
+
 ## Solaris 10 SPARC
 
 |Required package|Description|Minimum version|
@@ -75,7 +86,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.10, REV=2004.11.23|
 |SUNWcslr|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsl|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
-|SUNWopenssl-libraries|SUNopenssl-libraries (Usr)|11.10.0, REV=2005.01.21.15.53|
+|SUNWopenssl-libraries|SUNopenssl-libraries (Usr) <br /><br /> **Note**: To get OpenSSL 1.0.1p for Solaris 10 (SPARC), apply the following patch (applicable for 2019 UR3 and later): <br /><br />[151912-02 (or greater)](https://login.oracle.com/mysso/signon.jsp) OpenSSL 1.0.1 patch (this patch)|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.15.53|
 |Release|Oracle Solaris 10 1/13|s10s_u11wos_24a SPARC|
 
@@ -147,13 +158,6 @@ CentOS 8 is supported from 2019 UR2 and later in XPlat agent under Universal Lin
 |glibc|C Standard shared library|2.5-12|
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
-
-## Support for RHEL 6 in XPlat agent
-
-Operations Manager 2019 UR3 supports RHEL6 via RHEL6 management pack.
-
-> [!NOTE]
-> Universal Linux management pack will not discover/monitor RHEL6 from 2019 UR3 and later.
 
 ::: moniker-end
 
