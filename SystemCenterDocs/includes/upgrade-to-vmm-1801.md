@@ -5,7 +5,7 @@ description: include file to provide information about how to upgrade VMM server
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 04/30/2018
+ms.date: 02/19/2021
 ms.topic: include
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
