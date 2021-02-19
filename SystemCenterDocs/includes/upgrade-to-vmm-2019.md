@@ -15,6 +15,9 @@ ms.technology: virtual-machine-manager
 
 The following sections provide information about how to upgrade to VMM 2019. These include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
+> [!NOTE]
+> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
+
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2016 update rollup 6 or 1801 or 1807.

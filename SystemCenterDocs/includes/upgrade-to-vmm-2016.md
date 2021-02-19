@@ -16,6 +16,9 @@ ms.technology: virtual-machine-manager
 
 The following sections describe  how to upgrade to System Center Virtual Machine Manager (VMM) 2016. They include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
+> [!NOTE]
+> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
+
 ## Requirements and limitations
 
 - VMM should be running on System Center 2012 R2 with update rollup 9 or later.

@@ -27,6 +27,9 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 - Make sure you have at least local admin permissions on the computer before you run the setup.
 - The service account should be an administrator on the VMM server.
 
+> [!NOTE]
+> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
+
 ## Run setup
 
 > [!NOTE]

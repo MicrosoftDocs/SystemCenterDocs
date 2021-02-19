@@ -15,6 +15,9 @@ ms.technology: virtual-machine-manager
 
 The following sections provide information about how to upgrade to VMM 1801. Also includes upgrade steps, and tasks you should complete after the upgrade finishes.
 
+> [!NOTE]
+> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
+
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2012 R2 update rollup 14 or 2016 UR 4.
