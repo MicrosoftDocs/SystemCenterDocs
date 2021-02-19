@@ -208,7 +208,7 @@ Before you upgrade, collect information about the VMM database:
 1. Back up the existing VMM database, and copy the backup to a computer running a supported version of SQL Server.
 2. Use SQL Server tools to restore the database.
     - If you are upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
-    - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration** you specify the new SQl Server details. After reinstall apply the update rollups and check that the deployment is working as expected.
+    - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration** you specify the new SQL Server details. After reinstall apply the update rollups and check that the deployment is working as expected.
 
 ### Upgrade a highly available database
 
