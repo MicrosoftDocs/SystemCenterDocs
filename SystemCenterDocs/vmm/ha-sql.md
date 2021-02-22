@@ -42,7 +42,7 @@ Read the [planning information](plan-ha-install.md) for a highly available VMM d
 1. In **Select Data Synchronization**, leave the **Full** default.
 1. In **Connect to Replicas** > **Connect**, specify permissions for the availability group destination.
 1. Prerequisites are checked in **Validation**. In **Summary**, when you click **Next** Always On availability support is initiated for the VMM database. The VMM database is copied and from this point Always On keeps the VMM database synchronized between the SQL Server Always On cluster nodes.
-1. On VMM server, change VMM connection string in the path *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\ConnectionString* from *SQL_instance* to *SQLListenerName*. Also, update the following:
+1. Change VMM connection string in the path *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\ConnectionString* from *Server* to *SQLListenerName*. Also, update the following:
 
  - *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\MachineName* with *SQLListenerName*
  - *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\InstanceName* with *SQLListenerName*.
