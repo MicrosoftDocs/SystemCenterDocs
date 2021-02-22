@@ -143,8 +143,8 @@ Upgrade:
 
 1. If SMA servers are being monitored by Operations Manager, put them in maintenance mode to prevent false alerts.
 2. Uninstall the SMA web service and SMA runbook workers using the instructions at <a href="/previous-versions/system-center/system-center-2012-R2/dn469636(v=sc.12)">How to uninstall Service Management Automation</a> for details.
-3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](/system-center/sma/deploy#set-up-the-sma-runbook-worker).
-4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](/system-center/sma/deploy#install-the-service-automation-web-service).
+3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](./sma/deploy.md#set-up-the-sma-runbook-worker).
+4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](./sma/deploy.md#install-the-service-automation-web-service).
 5. Remove SMA servers from maintenance mode.
 
 ## SM Upgrade
