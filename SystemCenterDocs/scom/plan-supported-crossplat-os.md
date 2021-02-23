@@ -86,7 +86,7 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through RHEL 6 management 
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.10, REV=2004.11.23|
 |SUNWcslr|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsl|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
-|SUNWopenssl-libraries|SUNopenssl-libraries (Usr) <br /><br /> **Note**: To get OpenSSL 1.0.1p for Solaris 10 (SPARC), apply the following patch (applicable for 2019 UR3 and later): <br /><br />[151912-02 (or greater)](https://login.oracle.com/mysso/signon.jsp) OpenSSL 1.0.1 patch (this patch)|11.10.0, REV=2005.01.21.15.53|
+|SUNWopenssl-libraries|SUNopenssl-libraries (Usr) <br /><br /> **Note**: For TLS1.2, to get OpenSSL 1.0.1p, apply the following patch: 151912-02 (or greater) (This patch is applicable for 2019 UR3 and later)|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.15.53|
 |Release|Oracle Solaris 10 1/13|s10s_u11wos_24a SPARC|
 
