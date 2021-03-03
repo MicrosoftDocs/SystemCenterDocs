@@ -44,9 +44,9 @@ Read the [planning information](plan-ha-install.md) for a highly available VMM d
 1. Prerequisites are checked in **Validation**. In **Summary**, when you click **Next** Always On availability support is initiated for the VMM database. The VMM database is copied and from this point Always On keeps the VMM database synchronized between the SQL Server Always On cluster nodes.
 1. Change VMM connection string in the path *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\ConnectionString* from *Server* to *SQLListenerName*. Also, update the following:
 
- - *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\MachineName* with *SQLListenerName*
- - *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\InstanceName* with *SQLListenerName*.
- - *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager  Server\Settings\Sql\MachineFQDN* with *SQLListenerFQDN*.
+   - *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\MachineName* with *SQLListenerName*
+   - *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\InstanceName* with *SQLListenerName*.
+   - *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager  Server\Settings\Sql\MachineFQDN* with *SQLListenerFQDN*.
 
 1. Restart the VMM service or cluster role. The VMM server should be able to connect to the SQL Server.
 1. VMM credentials are only stored for the main SQL Server, so you need to create a new login on the secondary node of the SQL Server cluster, with the following characteristics:
