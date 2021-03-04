@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 12/06/2017
+ms.date: 03/04/2021
 title: Back up Hyper V virtual machines
 ms.technology: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -61,13 +61,58 @@ DPM works seamlessly with the Hyper-V Volume Shadow Copy Services (VSS) writer t
 
 -   There should be no dynamic disks on the virtual machine.
 
--   All volumes must be NTFS
+-   All volumes can be either NTFS or ReFS
 
 -   The VSS storage assignment for the volumes shouldn't be modified.
 
 -   The virtual machine must be running, and if the virtual machine is in a cluster the cluster resource group should be online. A Shadow Storage assignment of a volume inside the virtual machine mustn't be explicitly set to a different volume other than itself.
 
 If these conditions aren't met DPM will perform an offline backup where the virtual machine is paused and placed in a saved state while the snapshot is taken, and then the virtual machine is resumed. This means the virtual machine is unavailable during the backup, usually a short period of less than a minute for many environments.
+
+## Protect VMs on SOFS clusters
+DPM can back up VMs deployed on both NTFS and ReFS-based SOFS clusters.
+
+To protect VMs on SOFS clusters, do the following procedures:
+
+**Add the following machine accounts to the backup operator groups and share permissions**:
+
+  - If protecting a highly available (HA) VM, provide the machine account name of the host cluster and cluster nodes, and DPM server.
+  - If protecting a non-HA VM, provide the machine name of the Hyper-V host and the DPM server.
+
+To add the machine accounts to the backup operator groups, run the following steps for each node in the SOFS cluster:
+
+1. Open the command prompt, and type, **lusrmgr.msc** to open Local Users and Groups.
+2. In the Local Users and Groups dialog, click **Groups**.
+3. In the list of groups, right-click **Backup Operators** and select **Properties**.
+
+    The **Backup Operators Properties** dialog opens.
+4. In the **Backup Operators Properties** dialog, click **Add**.
+5. In the **Select Users, Computers, Services Accounts, or Groups** dialog, click **Object Types**.
+    The **Object Types** dialog opens.
+6. In the **Object Types** dialog, select **Computers** and click **OK**.
+    The **Object Types** dialog closes.
+7. In the **Select Users, Computers, Service Accounts, or Groups** dialog, enter the name of the server or cluster, and click **Check Names**.
+8. Once you have identified the computers, restart the node.
+
+
+To give permissions to the share, do the following:
+
+1. On a server where the SOFS/SMB share is hosted, open **Server Manager** > **File and Storage Services** > **Shares**.
+2. Right click the VM storage share, and then click **Properties**.
+4. In the **Properties** dialog, on the left navigation menu, click **Permissions**.
+5. Click **Customize permissions** to open the Advanced Security Settings dialog.
+6. On the **Permissions** tab, click **Add**.
+7. Click **Select a Principal**.
+8. In the **Select User, Computer, Services Account, or Group** dialog, click **Object Types**.
+9. In the **Object Types** dialog, select **Computers**, and click **OK**.
+10. In the **Select User, Computer, Service Account, or Group** dialog, enter the name of the Hyper-V node or cluster name you want to have permission.
+11. Click **Check Names** to resolve the name, and click **OK**.
+12. In the **Permission Entry for Share** dialog, select **Full Control**,  and click **OK**.
+13. In the **Advanced Security Settings for Share** dialog, click the **Share** tab and repeat steps 6-11 for the **Share** tab instead of the **Permissions** tab.
+14. When you are finished adding permissions for the servers, click **Apply**.
+
+    This prepares the VMs on SOFS shares for the backup process.
+
 
 ## How the Backup process works
 DPM performs backup with VSS as follows. The steps in this description are numbered to help with clarity.
