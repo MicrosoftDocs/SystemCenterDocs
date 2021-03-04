@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Management Pack Scope and Supported Configuration
 
-This section lists operating systems, platforms and SQL Server features supported by Management Pack for SQL Server.
+Management Pack for SQL Server is version-agnostic. It supports discovery and monitoring of SQL Server 2012 through 2019 and higher, including SQL on Linux with SQL Server 2017 and higher.
 
 ## Operating Systems and Platforms
 
@@ -41,7 +41,7 @@ Localized versions of Windows Server are also supported.
 
 ## SQL Server Features
 
-Management Pack for SQL Server supports the following features and configurations:
+Management Pack for SQL Server works with any Express or Enterprise edition of SQL Server and supports the following features and configurations:
 
 - SQL Server Database Engine
 

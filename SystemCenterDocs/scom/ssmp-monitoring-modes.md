@@ -65,11 +65,11 @@ The following monitoring configuration is validated for both agentless and mixed
 
 - System Center Operations Manager Server 1
 
-    Azure size: Standard DS12_v2, 4 vcpus, 28GB memory, 12800 IOPS, Windows Server 2012R2, System Center Operations Manager 2012R2
+    Azure tier: Standard DS12_v2, 4 vcpus, 28GB memory, 12800 IOPS, Windows Server 2012R2, System Center Operations Manager 2012R2
 
 - System Center Operations Manager Server 2 – a server dedicated to monitor SQL Server. The only member of the SQL Server Monitoring Pool.
 
-    Azure size: Standard DS12\_v2, 4 vcpus, 28GB memory, 12800 IOPS, Windows Server 2012R2, System Center Operations Manager 2012R2.
+    Azure tier: Standard DS12\_v2, 4 vcpus, 28GB memory, 12800 IOPS, Windows Server 2012R2, System Center Operations Manager 2012R2.
 
 - 12 VMs with SQL Server (2012, 2014, 2016, 2017) – 600 databases per instance, \~40000 SQL Server MP objects in total.
 
@@ -129,6 +129,8 @@ To configure agentless monitoring, perform the following steps:
 
     To workaround this issue, decrease intervals for both the **MSSQL: Generic Monitoring Pool Watcher Discovery** discovery and the **Discover All Management Servers Pool Watcher** discovery to force them to run right away, then restore the previous value.
 
+    ![Decrease intervals](./media/ssmp/decrease-intervals.png)
+
     Once connection is established, you can view and edit properties of the instance. To view properties, select an instance and click **Edit Instance**.
 
     ![Editing instance configuration](./media/ssmp/editing-instance-configuration.png)
@@ -162,3 +164,19 @@ To configure mixed monitoring, perform the following steps:
     Use commas to separate instance names. To add all instances, including instances with the same name and instances that are located on different servers, use asterisk (\'*').
 
     ![Override properties](./media/ssmp/override-properties.png)
+
+## Viewing Monitoring Type
+
+Management Pack for SQL Server allows you to customize views and configure auxiliary columns that show used monitoring types.
+
+To view currently used monitoring types, perform the following steps:
+
+1. Right-click the **Database Engines** view and select **Personalize View**.
+
+2. In the **Columns to display** list, select the **Monitoring Type** checkbox.
+
+    ![Monitoring type](./media/ssmp/monitoring-type-view.png)
+
+    After enabling the **Monitoring Type** checkbox, used monitoring types become available in the **Database Engines** table.
+
+    ![Monitoring types view](./media/ssmp/enabled-monitoring-types.png)

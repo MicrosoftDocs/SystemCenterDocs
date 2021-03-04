@@ -52,21 +52,21 @@ This section explains how to configure low-privilege agent monitoring.
 
 4. Grant **Execute Methods**, **Enable Account**, **Remote Enable**, and **Read Security** permissions to **SQLTaskAction** and **SQLMPLowPriv** for the following WMI namespaces:
 
-    - 'root'
+    - root
     
-    - 'root\cimv2'
+    - root\cimv2
     
-    - 'root\default'
+    - root\default
     
-    - 'root\Microsoft\SqlServer\ComputerManagement11' (if exists)
+    - root\Microsoft\SqlServer\ComputerManagement11 (if exists)
     
-    - 'root\Microsoft\SqlServer\ComputerManagement12' (if exists) 
+    - root\Microsoft\SqlServer\ComputerManagement12 (if exists) 
     
-    - 'root\Microsoft\SqlServer\ComputerManagement13' (if exists)
+    - root\Microsoft\SqlServer\ComputerManagement13 (if exists)
     
-    - 'root\Microsoft\SqlServer\ComputerManagement14' (if exists)
+    - root\Microsoft\SqlServer\ComputerManagement14 (if exists)
     
-    - 'root\Microsoft\SqlServer\ComputerManagement15' (if exists)
+    - root\Microsoft\SqlServer\ComputerManagement15 (if exists)
 
 5. On each monitored instance, grant the **SQLMPLowPriv** grop the **Read** permission at HKLM:\Software\Microsoft\Microsoft SQL Server\\[InstanceID]\MSSQLServer\Parameters.
 
@@ -168,7 +168,7 @@ Take the following steps on an agent machine or database only if you want to all
     *D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)*
     ```
 
-    In this case, the following command grants sufficient access to **SQLTaskAction** for starting and stopping the SQL Server service. Replace colored strings with the appropriate values and keep everything on a single line.
+    In this case, the following command grants sufficient access to **SQLTaskAction** for starting and stopping the SQL Server service. Replace 'SQLServerServiceName' and 'SID for SQLTaskAction' with the appropriate values and keep everything on a single line.
 
     ```
     *sc sdset SQLServerServiceName D:(A;;GRRPWP;;;SID for SQLTaskAction)(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)*
@@ -230,7 +230,7 @@ To prevent SQL Server monitoring issues, the **SQLTaskAction**, **SQLDiscovery**
 
 This section explains how to configure low-privilege agentless monitoring.
 
-### On SQL Instance
+### On SQL Server Instances
 
 1. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance.
 
@@ -331,9 +331,9 @@ Take the following steps only if you want to allow the System Center Operations 
     GO
     ```
 
-### Using Add Monitoring Wizard
+### Using Monitoring Wizard
 
-To configure low-privilege agentless monitoring using **Add Monitoring Wizard**, perform the steps provided in the [Configuring Agentless Monitoring Mode](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) section, but with the following changes:
+To configure low-privilege agentless monitoring using the monitoring wizard, perform the steps provided in the [Configuring Agentless Monitoring Mode](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) section, but with the following changes:
 
 1. In the **Add Monitoring Wizard** window, click **Add Instances**.
 
@@ -346,6 +346,14 @@ To configure low-privilege agentless monitoring using **Add Monitoring Wizard**,
      - '172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"'
      
      - '172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"'
+
+    You can also create a new Run As account. For that, in the **Add Instances** window, click **New**, enter a new name for the Run As account, and specify credentials to access the SQL Server that you want to monitor.
+
+    ![New Run As account](./media/ssmp/adding-run-as-account.png)
+
+    After connection is established, you can view and edit properties of the added instance.
+
+    ![Instance properties](./media/ssmp/modifying-instance-properties.png)
 
 ## Mixed Monitoring
 
@@ -427,7 +435,7 @@ To configure security for configurations with low-privilege accounts, perform th
 
     ![Configuring CIMV permissions](./media/ssmp/permissions-cimv.png)
 
-### Granting Permissions
+### Granting Service Permissions
 
 To get information about the services, grant required permissions according to the following steps:
 
@@ -448,7 +456,11 @@ To get information about the services, grant required permissions according to t
 
     ![Replacing spotlite user](./media/ssmp/ps-spotlight-user.png)
 
-3. From the Windows command prompt, run the **sc sdshow scmanager > file.txt** command to retrieve the current SDDL for the Services Control Manager.
+3. From the Windows command prompt, run the following command to retrieve the current SDDL for the Services Control Manager:
+
+    ```
+    sc sdshow scmanager > file.txt
+    ```
 
     The SDDL is saved to the **file.txt** file and looks similar to the following one:
     
@@ -480,12 +492,14 @@ To get information about the services, grant required permissions according to t
 
     Run the utility with the following options:
 
-      - 'subinacl.exe /service mssqlserver /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI'
-      
-      - 'subinacl.exe /service sqlserveragent /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI'
-      
-      - 'subinacl.exe /service mssqlfdlauncher /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI'
-
+    ```
+    subinacl.exe /service mssqlserver /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
+    
+    subinacl.exe /service sqlserveragent /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
+    
+    subinacl.exe /service mssqlfdlauncher /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
+    ```
+    
     ![Running subinacl](./media/ssmp/subinacl-run.png)
 
     The following rights can be read as:
@@ -504,7 +518,9 @@ To get information about the services, grant required permissions according to t
 
     Run the utility with the following options:
 
-      - 'subinacl.exe /service clussvc /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI'
+    ```
+    subinacl.exe /service clussvc /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
+    ```
 
 ### Managing Remote Access to the Registry
 

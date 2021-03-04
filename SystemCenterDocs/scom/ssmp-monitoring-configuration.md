@@ -122,7 +122,6 @@ The following is a complete list of securables that are checked by the monitor t
   - VIEW SERVER STATE
   - VIEW ANY DEFINITION
   - VIEW ANY DATABASE
-  - ALTER ANY DATABASE
 
 - SELECT permission on dynamic management views
   - master.sys.dm_hadr_availability_group_states

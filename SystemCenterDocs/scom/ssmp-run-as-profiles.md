@@ -25,7 +25,7 @@ Management Pack for SQL Server provides the following Run As profiles:
 
   This profile is associated with existing monitors and rules.
 
-- **Microsoft SQL Server Run As Profile**
+- **Microsoft SQL Server Task Run As Profile**
 
   This profile is associated with existing tasks.
 
@@ -33,11 +33,16 @@ Management Pack for SQL Server provides the following Run As profiles:
 
   This profile is for SQL Server MP workflows that need access to System Center Operations Manager SDK.
 
+  Management Pack for SQL Server needs an author set of privileges on the System Center Operations Manager SDK to create a management pack and store overrides in it.
+
+  If the default action account on System Center Operations Manager does not have these permissions, create such an account and map it to the Microsoft SQL Server SDK Run As Profile.
+
 - **Microsoft SQL Server SQL Credentials Run As Profile**
 
   This profile is used for [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode only.
 
-Do not bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes, as only a basic action account can be bound to this profile. Also, do not use a Windows account or non-basic account with this profile.
+>[!NOTE]
+>Do not bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes, as only a basic action account can be bound to this profile. Also, do not use a Windows account or non-basic account with this profile.
 
 When using agent or mixed monitoring mode, all discoveries, monitors, and tasks use accounts from the **Default Action Account** Run As profile.
 
@@ -56,8 +61,6 @@ To configure Run As profiles, use one of the following scenarios:
 - [Action Account is Local Administrator w/o SA](#action-account-is-local-administrator-wo-sa)
 
 - [Action Account is Local System w/o SA](#action-account-is-local-system-wo-sa)
-
-- [Low-Privilege Monitoring](#low-privilege-monitoring)
 
 ### Action Account is Local Administrator and SA
 
@@ -103,178 +106,15 @@ Follow these steps to configure the security configuration using SID:
 
 2. If you have SQL Server cluster instances, perform the steps provided in [HealthService SID for SQL Server Cluster Instances](#healthservice-sid-for-sql-server-cluster-instances).
 
-### Low-Privilege Monitoring
-
-If you need to grant minimum required rights to the SQL MP workflows, follow the instructions provided in [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md).
-
 ## Agentless Monitoring Mode
 
 To configure Run As Profiles in [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode, create an account on SQL Server and grant this account SA rights or a set of low privilege permissions. You can use SQL Server authentication or Windows authentication. Once created, you can use this account in the [Add Monitoring Wizard](ssmp-low-privilege-monitoring.md#using-add-monitoring-wizard) to add SQL Server instances.
 
 For more information on how to configure low privilege monitoring in agentless monitoring mode, see the [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md).
 
-## Service Security Identifier
+## Monitoring of AG on Windows Servers with Long Names
 
-Below are the steps to configure monitoring using Service SIDs for SQL Server on a Windows Server instance. These steps were first published by Kevin Holman in [his blog](https://kevinholman.com/2016/08/25/sql-mp-run-as-accounts-no-longer-required/). The SQL scripts to configure lowest-privilege access were developed by Brandon Adams.
-
-To configure monitoring using Service Security Identifier, perform the following steps:
-
-1. Open the command prompt as administrator and run the **sc sidtype HealthService unrestricted** command.
-
-2. Restart the Health Service.
-
-3. Run the **sc showsid HealthService** command. 
-
-    The **STATUS** parameter should be active.
-
-    ![Running HealthService](./media/ssmp/health-service-command.png)
-
-4. Open **Registry Editor** and check that the **ServiceSidType** key is set to 1 at *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService*.
-
-5. Create the NT SERVICE\HealthService account for the HealthService SID on every SQL Server Instance and grant it SA rights. 
-
-    If you cannot grant SA rights, use the following SQL scripts to set the lowest privilege configuration for the account.
-
-    ```sql
-    USE [master]
-    SET NOCOUNT ON
-    /*User account that System Center Operations Manager will use to access
-        Default is the Service SID for the HealthService*/
-    DECLARE @accountname sysname = 'NT SERVICE\HealthService'
-    -- Create the server role and grant permissions
-    CREATE SERVER ROLE [SCOM_HealthService]
-    GRANT VIEW ANY DATABASE TO [SCOM_HealthService];
-    GRANT ALTER ANY DATABASE TO [SCOM_HealthService];
-    GRANT VIEW ANY DEFINITION TO [SCOM_HealthService];
-    GRANT VIEW SERVER STATE TO [SCOM_HealthService]
-    DECLARE @createLoginCommand nvarchar(200)
-    SET @createLoginCommand = '
-      CREATE LOGIN '+ QUOTENAME(@accountname) +
-      ' FROM WINDOWS WITH DEFAULT_DATABASE=[master];'
-    EXEC(@createLoginCommand);
-    -- Add the login to the user-defined server role
-    EXEC sp_addsrvrolemember @loginame = @accountname
-      , @rolename = 'SCOM_HealthService'
-    DECLARE @createDatabaseUserAndRole nvarchar(max)
-    SET @createDatabaseUserAndRole = '';
-    SELECT @createDatabaseUserAndRole = @createDatabaseUserAndRole + '
-      USE ' + QUOTENAME(db.name) + ';
-      CREATE USER ' + QUOTENAME(@accountname) +
-      ' FOR LOGIN ' + QUOTENAME(@accountname) + ';
-      CREATE ROLE [SCOM_HealthService];
-      EXEC sp_addrolemember @rolename =
-      ''SCOM_HealthService'', @membername
-      = '+ QUOTENAME(@accountname) + ''
-    -- 'ALTER ROLE [SCOM_HealthService] ADD MEMBER '
-      -- '+ QUOTENAME(@accountname) + ';'
-    FROM sys.databases db
-    LEFT JOIN sys.dm_hadr_availability_replica_states hadrstate ON
-        db.replica_id = hadrstate.replica_id
-    WHERE db.database_id <> 2
-        AND db.user_access = 0
-        AND db.state = 0
-        AND db.is_read_only = 0
-        AND (hadrstate.role = 1 or hadrstate.role is null);
-    EXEC(@createDatabaseUserAndRole)
-    GO
-    USE [master];
-    GRANT EXECUTE ON sys.xp_readerrorlog
-      TO [SCOM_HealthService]
-    USE [msdb];
-    GRANT SELECT on [dbo].[sysjobschedules]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[sysschedules]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[sysjobs_view]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[log_shipping_primary_databases]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[log_shipping_secondary_databases]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[log_shipping_monitor_history_detail]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[log_shipping_monitor_secondary]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[log_shipping_monitor_primary]
-      TO [SCOM_HealthService];
-    GRANT EXECUTE on [dbo].[sp_help_job]
-      TO [SCOM_HealthService];
-    GRANT EXECUTE on [dbo].[sp_help_jobactivity]
-      TO [SCOM_HealthService];
-    EXEC sp_addrolemember @rolename='PolicyAdministratorRole'
-      , @membername='SCOM_HealthService';
-    EXEC sp_addrolemember @rolename='SQLAgentReaderRole'
-      , @membername='SCOM_HealthService';
-    ```
-
-6. To run SQL Server MP tasks, such as **Set database Offline**, **Set database Online**, and **Set database to Emergency state**, grant HealthService SID account the **ALTER ANY DATABASE** permission.
-
-    ```sql
-    USE [master]
-    GRANT ALTER ANY DATABASE TO [SCOM_HealthService];
-    ```
-
-The NT AUTHORITY\SYSTEM account needs to be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.
-
-## HealthService SID for SQL Server Cluster Instances
-
-To configure HealthService Service SID for monitoring of SQL Server failover cluster, perform the following steps for each cluster node:
-
-1. Launch **mmc.exe** and add the following snap-ins:
-
-    - Component Services
-    
-    - WMI Control (for the local computer)
-
-2. Expand **Component Services**, right-click **My Computer**, select **Properties**, and open the **Security** tab.
-
-3. In the **Launch and Activation Permissions** section, click **Edit Limits**.
-
-    ![Editing limits](./media/ssmp/editing-limits.png)
-
-4. In the **Launch and Activation Permission** window, enable the following permissions for the NT SERVICE\\HealthService account:
-
-    - Remote Launch
-    
-    - Remote Activation
-
-    ![Allowing permissions](./media/ssmp/allowing-permissions.png)
-
-5. Go to the WMI Control snap-in and open its properties.
-
-6. Open the **Security** tab, select the **Root\\CIMV2** namespace, and click **Security**.
-
-7. Enable the following permissions for the NT SERVICE\\HealthService account:
-
-    - Enable Account
-    
-    - Remote Enable
-
-    ![HealthService permissions](./media/ssmp/health-service-permissions.png)
-
-8. Click **Advanced**.
-
-9. In the **Permissions Entry for CIMV2** window, select a HealthService account, and click **Edit**. 
-
-10. From the **Applies to** drop-down list, select **This namespace only**.
-
-11. In the **Permissions** section, enable the following checkboxes:
-
-    - Enable Account
-    
-    - Remote Enable
-
-    ![CIMV permissions](./media/ssmp/permissions-cimv.png)
-
-## SDK Run As Profile
-
-Management Pack for SQL Server needs an author set of privileges on the System Center Operations Manager SDK to create a management pack and store overrides in it.
-
-If the default action account on System Center Operations Manager does not have these permissions, create such an account and map it to the Microsoft SQL Server SDK Run As Profile.
-
-## Always On Workflows with Long Server Names
-
-Regardless of whether you use a local system account, domain user account, or rights assignment, permissions listed below are required for the account.
+Regardless of whether you use a local system account, domain user account, or rights assignment, permissions listed below are required.
 
 **Example**: You have three replicas in your Availability Group that are hosted on the following computers:
 
@@ -284,11 +124,11 @@ Regardless of whether you use a local system account, domain user account, or ri
 
 - Computer_3
   
-*Computer_1* hosts the primary replica. In this case, you should configure security settings for *Computer_1* on *Computer_2* and *Computer_3*. If *Computer_2* is going to host the primary replica after failover, other computers should also have WMI security configured for this computer.
+**Computer_1** hosts the primary replica. In this case, you should configure security settings for **Computer_1** on **Computer_2** and **Computer_3**. If **Computer_2** is going to host the primary replica after failover, other computers should also have WMI security configured for this computer.
 
-The local system account of each node that might act as the Primary one must have WMI permissions for other nodes of the current Availability Group. The same is for domain action account used for monitoring.
+The local system account of each node that might act as the primary one must have WMI permissions for other nodes in the current Availability Group. The same is for the domain action account.
 
-Below are the steps to configure security for configurations with the local system account. The provided instruction suggests that the *SQLAON-020* computer hosts the primary replica. These steps should be taken on each replica that participates in the target Availability Group.
+Below are the steps to configure security for configurations with the local system account. The provided instruction suggests that the **SQLAON-020** computer hosts the primary replica. These steps should be taken on each replica that participates in the target Availability Group.
 
 To configure permissions for Always On workflows when server names exceed 15 characters, perform the following steps:
 

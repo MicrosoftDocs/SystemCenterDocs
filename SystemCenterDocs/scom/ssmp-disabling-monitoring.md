@@ -17,7 +17,7 @@ ms.technology: operations-manager
 
 Management Pack for SQL Server allows you to exclude certain versions of SQL Server instances from monitoring.
 
-To exclude versions that you do not want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery with the versions that you want to exclude. Use comma to specify multiple versions.
+To exclude versions that you do not want to monitor, override the **Versions of SQL Server to be excluded** parameter in the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery with the versions that you want to exclude. Use comma to specify multiple versions.
 
 For example, an override "2014,2012" instructs the management pack to skip instances of SQL Server 2012 and 2014.
 
@@ -43,15 +43,13 @@ The following table lists short names that you can use to override the **Edition
 
 ## Disabling Monitoring of Specified Databases by Name
 
-You can disable discovery and monitoring of databases by specifying their names in the **Exclude list** parameter.
-
-You can set this parameter in the following discoveries:
+You can disable discovery and monitoring of databases by specifying database names in the **Exclude list** parameter available in the following discoveries:
 
 - MSSQL on Windows: Discover SQL Server Databases for a Database Engine
 
 - MSSQL on Linux: Discover SQL Server Databases for a Database Engine
 
-Use commas to separate database names and asterisks to replace one or more characters. For example, when setting the parameter to "dev*, \*test*, *stage, dbnotmon", the monitoring behavior would be as follows:
+Use commas to separate database names and asterisks to replace one or more characters. For example, when setting the **Exclude list** parameter to dev*, \*test*, *stage, dbnotmon, the monitoring behavior would be as follows:
 
 |DB Name|Monitored/Not monitored|
 |-|-|
@@ -68,5 +66,5 @@ Use commas to separate database names and asterisks to replace one or more chara
 |dbnotmon_sales|Monitored|
 |sales_dbnotmon|Monitored|
 
-If you have "\*" in the list as a database name (for example, "\*temp*, "\*", \*dev*" or "\*temp,*"), it disables monitoring of any database.
+If you have \* (asterisk) in the list as a database name (for example, \*temp*, \*, \*dev* or \*temp,*), it disables monitoring of any database.
 

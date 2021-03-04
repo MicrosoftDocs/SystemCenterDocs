@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Management Pack Delivery
 
-You can download Management Pack for SQL Server from the [Microsoft portal](https://www.microsoft.com/en-us/download/details.aspx?id=56203) and System Center Operations Manager Online Catalog.
+You can download Management Pack for SQL Server from the [Microsoft portal](https://www.microsoft.com/en-us/download/details.aspx?id=56203) or System Center Operations Manager Online Catalog.
 
 The package includes the following files:
 
@@ -98,10 +98,6 @@ The environment that you use must meet the following prerequisites before you st
 
 ## Importing Management Pack
 
-Management Pack for SQL Server is version-agnostic. It supports discovery and monitoring of SQL Server 2012 through 2019 and higher, including SQL on Linux with SQL Server 2017 and higher.
-
-For more information on how to import management packs, see [How to Import a Management Pack](https://go.microsoft.com/fwlink/?LinkId=142351).
-
 If you already have any of the version-specific management packs, discovery and monitoring provided by this management pack will be disabled and will be performed solely by the existing version-specific management packs.
 
 To disable monitoring of SQL Server 2012/2014/2016 instances that might already be monitored by any of the version-specific management packs, the **MSSQL on Windows: Automatic setup of DB Engine discovery filter** rule is used.
@@ -113,6 +109,8 @@ If you remove the **Microsoft SQLServer overrides** management pack while still 
 To make the version-agnostic management pack the primary source of monitoring, remove version-specific management packs and then remove (or modify) the **Microsoft SQLServer overrides** management pack.
 
 When you import version-specific management packs after importing the version-agnostic management pack, monitoring provided by the version-agnostic management pack will not be disabled.
+
+For more information on how to import management packs, see [How to Import a Management Pack](https://go.microsoft.com/fwlink/?LinkId=142351).
 
 ## See also
 
