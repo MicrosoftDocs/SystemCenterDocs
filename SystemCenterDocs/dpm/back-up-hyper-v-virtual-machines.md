@@ -74,7 +74,7 @@ DPM can back up VMs deployed on both NTFS and ReFS-based SOFS clusters.
 
 To protect VMs on SOFS clusters, do the following procedures:
 
-**Add the following machine accounts to the backup operator groups and share permissions**:
+Add the following machine accounts to the backup operator groups and share permissions:
 
   - If protecting a highly available (HA) VM, provide the machine account name of the host cluster and cluster nodes, and DPM server.
   - If protecting a non-HA VM, provide the machine name of the Hyper-V host and the DPM server.
