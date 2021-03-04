@@ -148,7 +148,7 @@ If the FQDN is not in Reverse DNS, you can add an entry to the hosts file locate
 For example, to add an entry for the host named "newhostname.newdomain.name" with an IP address of 192.168.1.1, add the following to the end of the hosts file:  
 
 ```  
-192.168.1.1&nbsp;&nbsp;&nbsp;&nbsp; newhostname.newdomain.name  
+192.168.1.1      newhostname.newdomain.name  
 ```  
 
 ## Management pack issues
