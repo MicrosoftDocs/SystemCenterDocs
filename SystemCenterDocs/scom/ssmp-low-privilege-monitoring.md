@@ -361,7 +361,7 @@ To configure low-privilege [mixed monitoring](ssmp-monitoring-modes.md#configuri
 
 - [Configure remote access to WMI](#managing-remote-access-to-wmi)
 
-- [Grant permissions to get information about the services](#granting-permissions)
+- [Grant permissions to get information about the services](#granting-service-permissions)
 
 - [Use a registry key to manage the remote access to the registry](#managing-remote-access-to-the-registry)
 

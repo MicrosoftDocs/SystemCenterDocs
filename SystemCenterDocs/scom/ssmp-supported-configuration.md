@@ -1,6 +1,6 @@
 ---
 ms.assetid: 300c1177-469a-486e-8352-eea84cf8fdf8
-title: Management Pack Scope and Supported Configuration
+title: Scope and Supported Configuration in Management Pack for SQL Server
 description: This article explains the scope and supported configuration for Management Pack for SQL Server
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Management Pack Scope and Supported Configuration
+# Scope and Supported Configuration in Management Pack for SQL Server
 
 Management Pack for SQL Server is version-agnostic. It supports discovery and monitoring of SQL Server 2012 through 2019 and higher, including SQL on Linux with SQL Server 2017 and higher.
 

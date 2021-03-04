@@ -1,6 +1,6 @@
 ---
 ms.assetid: 8f864a9e-b04a-43e3-a624-574d5f08f823
-title: Management Pack Scope and Supported Configuration
+title: Low-Privilege Configuration
 description: This article explains how to configufe low-privilege configuration in Management Pack for Azure SQL Database
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -40,4 +40,4 @@ To configure low-privilege account, perform the following steps:
 Use the **MonitoringUser** value when [configuring Azure SQL Database Run As Accounts](asdmp-run-as-accounts.md).  
 
 >[!NOTE]
->For [custom query monitoring](asdmp-custom-query-monitoring.mp), grant required permissions to the account that you use.
+>For [custom query monitoring](asdmp-custom-query-monitoring.md), grant required permissions to the account that you use.

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 1a7d9146-5782-4cad-8bb5-c69511b578d1
-title: Management Pack Scope and Supported Configuration
+title: Azure SQL Database Run As Accounts
 description: This article explains how to configufe Azure SQL Database run as accounts in Management Pack for Azure SQL Database
 author: TDzakhov
 ms.author: v-tdzakhov

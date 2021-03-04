@@ -1,7 +1,7 @@
 ---
 ms.assetid: 9550f943-bcc2-45dc-a866-9eae7b3b8b0c
-title: Monitoring Configuration
-description: This article explains the monitoring configuration for Management Pack for SQL Server
+title: Monitoring Configuration in Management Pack for SQL Server
+description: This article explains the monitoring configuration in Management Pack for SQL Server
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Monitoring Configuration
+# Monitoring Configuration in Management Pack for SQL Server
 
 ## SQL Server Agent Alerting Rules: Specifics of Configuration
 

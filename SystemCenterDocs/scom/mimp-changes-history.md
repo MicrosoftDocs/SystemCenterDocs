@@ -1,6 +1,6 @@
 ---
 ms.assetid: 500910b3-e260-4673-b219-8dc24bc4f916
-title: Changes History
+title: What's New in Management Pack for Azure SQL Managed Instance
 description: This article explains the new functionality and bug fixes implemented in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Changes History
+# What's New in Management Pack for Azure SQL Managed Instance
 
 ## July 2020 - version 7.0.22.0 RTM
 

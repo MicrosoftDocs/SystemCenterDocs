@@ -1,6 +1,6 @@
 ---
 ms.assetid: e683af64-a4d0-4867-8941-3ac3419be3d9
-title: Changes History
+title: What's New in Management Pack for Azure SQL Database
 description: This article explains the new functionality and bug fixes implemented in Management Pack for Azure SQL Database
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Changes History
+# What's New in Management Pack for Azure SQL Database
 
 ## October 2020 - 7.0.26.0 RTM
 

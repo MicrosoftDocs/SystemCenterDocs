@@ -1,6 +1,6 @@
 ---
 ms.assetid: c253b065-5690-4230-88dd-0f794c1480f3
-title: Management Pack Delivery
+title: Management Pack for Azure SQL Database Delivery
 description: This article explains how to install Management Pack for Azure SQL Database
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Management Pack Delivery
+# Management Pack for Azure SQL Database Delivery
 
 You can download Management Pack for Azure SQL Database from the [Microsoft portal](https://www.microsoft.com/en-us/download/details.aspx?id=38829) or System Center Operations Manager Online Catalog.
 

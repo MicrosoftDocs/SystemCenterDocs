@@ -1,6 +1,6 @@
 ---
 ms.assetid: 2973edd7-293f-496e-b4db-405d6438bb04
-title: Changes History
+title: What's New in Management Pack for SQL Server
 description: This article explains changes history
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -11,11 +11,11 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Changes History
+# What's New in Management Pack for SQL Server
 
 ## August 2020 - 7.0.24.0 RTM
 
-### What's New
+### What's New in Management Pack for Azure SQL Managed Instance
 
   - Added a new "Securables Configuration Status" monitor targeted to SQL Server databases
   - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server

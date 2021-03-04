@@ -1,6 +1,6 @@
 ---
 ms.assetid: 96f00b98-1044-41d5-abce-41d9dd67e11c
-title: Monitoring Configuration
+title: Security Configuration
 description: This article explains a security configuration in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 ms.author: v-tdzakhov

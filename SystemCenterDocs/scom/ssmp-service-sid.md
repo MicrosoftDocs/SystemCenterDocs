@@ -1,7 +1,7 @@
 ---
 ms.assetid: 8f280433-6981-402e-b94d-ba2e9ae97b81
-title: Run As Profiles
-description: This article explains run as profiles
+title: Service SID
+description: This article explains how to configure monitoring with serivce SID
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal

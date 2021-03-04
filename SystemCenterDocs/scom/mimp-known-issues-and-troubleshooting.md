@@ -1,7 +1,7 @@
 ---
 ms.assetid: 08ad3749-84b9-4411-8a6c-559ce5e308e6
-title: Known Issues and Troubleshooting
-description: This article explains known issues and troubleshooting
+title: Known Issues and Troubleshooting in Management Pack for Azure SQL Managed Instance
+description: This article explains known issues and troubleshooting in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Known Issues and Troubleshooting
+# Known Issues and Troubleshooting in Management Pack for Azure SQL Managed Instance
 
 This article lists the known issues for Management Pack for Azure SQL Managed Instance.
 

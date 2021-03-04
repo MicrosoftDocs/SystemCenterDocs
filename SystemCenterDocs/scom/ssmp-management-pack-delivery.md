@@ -1,6 +1,6 @@
 ---
 ms.assetid: 9e13d0f4-84b2-42bf-836f-b23791616971
-title: Management Pack Delivery
+title: Management Pack for SQL Server Delivery
 description: This article explains how to install Management Pack for SQL Server
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Management Pack Delivery
+# Management Pack for SQL Server Delivery
 
 You can download Management Pack for SQL Server from the [Microsoft portal](https://www.microsoft.com/en-us/download/details.aspx?id=56203) or System Center Operations Manager Online Catalog.
 

@@ -1,7 +1,7 @@
 ---
 ms.assetid: 2c4831ae-0b67-40c0-a91f-247a3ee3e01f
 title: Run As Profiles
-description: This article explains run as profiles
+description: This article explains run as profiles in Management Pack for SQL Server
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
@@ -74,7 +74,7 @@ Follow these steps to ensure that all requirements are met:
 
 - If you store SQL Server databases on an SMB file share, the default action account must have the rights, as described in [Low-Privilege Agent Monitoring](ssmp-low-privilege-monitoring.md).
 
-- In cases when servers hosting Always On Availability Replicas (at least one of them) have a machine name consisting of more than 15 characters, make sure to perform the steps described in [Always On Workflows with Long Server Names](#always-on-workflows-with-long-server-names).
+- In cases when servers hosting Always On Availability Replicas (at least one of them) have a machine name consisting of more than 15 characters, make sure to perform the steps described in [Always On Workflows with Long Server Names](#Monitoring-of-ag-on-windows-servers-with-long-names).
 
 ### Action Account is Local Administrator w/o SA
 
@@ -102,13 +102,13 @@ You can grant SA or low privilege rights to System Center Operations Manager Hea
 
 Follow these steps to configure the security configuration using SID:
 
-1. Configure a service SID for HealthService, as described in [Service Security Identifier](#service-security-identifier).
+1. Configure a service SID for HealthService, as described in [Service SID](ssmp-service-sid.md).
 
-2. If you have SQL Server cluster instances, perform the steps provided in [HealthService SID for SQL Server Cluster Instances](#healthservice-sid-for-sql-server-cluster-instances).
+2. If you have SQL Server cluster instances, perform the steps provided in [HealthService SID for SQL Server Cluster Instances](ssmp-service-sid.md#service-sid-for-sql-server-cluster-and-always-on-instances).
 
 ## Agentless Monitoring Mode
 
-To configure Run As Profiles in [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode, create an account on SQL Server and grant this account SA rights or a set of low privilege permissions. You can use SQL Server authentication or Windows authentication. Once created, you can use this account in the [Add Monitoring Wizard](ssmp-low-privilege-monitoring.md#using-add-monitoring-wizard) to add SQL Server instances.
+To configure Run As Profiles in [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode, create an account on SQL Server and grant this account SA rights or a set of low privilege permissions. You can use SQL Server authentication or Windows authentication. Once created, you can use this account in the [Add Monitoring Wizard](ssmp-low-privilege-monitoring.md#using-monitoring-wizard) to add SQL Server instances.
 
 For more information on how to configure low privilege monitoring in agentless monitoring mode, see the [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md).
 

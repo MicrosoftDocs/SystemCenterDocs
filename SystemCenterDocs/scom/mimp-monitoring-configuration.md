@@ -1,6 +1,6 @@
 ---
 ms.assetid: 7e0ce57d-1b20-4412-a14e-941b4264f849
-title: Monitoring Configuration
+title: Monitoring Configuration in Management Pack for Azure SQL Managed Instance
 description: This article explains the monitoring configuration in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Monitoring Configuration
+# Monitoring Configuration in Management Pack for Azure SQL Managed Instance
 
 Management Pack for Azure SQL Managed Instance has two monitoring templates for monitoring of Azure SQL Managed Instance:
 

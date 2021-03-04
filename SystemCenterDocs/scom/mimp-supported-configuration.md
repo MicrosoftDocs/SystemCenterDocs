@@ -1,6 +1,6 @@
 ---
 ms.assetid: c31d2851-7333-4aa0-8f4f-890eb1fbaa64
-title: Management Pack Scope and Supported Configuration
+title: Scope and Supported Configuration in Management Pack for Azure SQL Managed Instance
 description: This article explains the scope and supported configuration in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Management Pack Scope and Supported Configuration
+# Scope and Supported Configuration in Management Pack for Azure SQL Managed Instance
 
 Management Pack for Azure SQL Managed Instance supports monitoring of [Azure SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview) and the corresponding entities using T-SQL queries.
 

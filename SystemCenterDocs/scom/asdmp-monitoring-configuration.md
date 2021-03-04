@@ -1,7 +1,7 @@
 ---
 ms.assetid: 3e21f741-fd1d-4a60-9864-209ed131df1a
-title: Monitoring Configuration
-description: This article explains the monitoring configuration for Management Pack for Azure SQL Database
+title: Monitoring Configuration in Management Pack for Azure SQL Database
+description: This article explains the monitoring configuration in Management Pack for Azure SQL Database
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Monitoring Configuration
+# Monitoring Configuration in Management Pack for Azure SQL Database
 
 Management Pack for Azure SQL Database provides the following key monitoring scenarios:
 
@@ -45,7 +45,8 @@ By default, this monitor goes into the **Warning** state when 120 or more databa
 
 In some situations, these default values are not appropriate. For example, an application may be designed to use all 150 databases for Azure SQL Database. When the default values create noise, the monitor should be disabled or the thresholds should be overridden, depending on the situation.
 
-Note that database performance monitors roll up to service performance monitoring, which can affect the service health state.
+>[!NOTE]
+>Database performance monitors roll up to service performance monitoring, which can affect the service health state.
 
 ## Service Performance Collection
 
@@ -57,7 +58,7 @@ The **State changes of the database** monitor tracks availability of the discove
 
 ## Database Performance Monitoring
 
-The management pack provides several monitors that detect situations when resource consumption has exceeded a predefined limit. Almost all of these monitors are disabled by default with the exception of the database free space monitor.
+The management pack provides several monitors that detect situations when resource consumption has exceeded a predefined limit. Almost all of these monitors are disabled by default except for the database free space monitor.
 
 To use disabled monitors, create an override that adjusts monitor thresholds for the database applications and enable the monitor.
 
@@ -85,7 +86,7 @@ There are several rules that collect the following performance information about
 
 The management pack can monitor databases that participate in failover groups.
 
-Active geo-replication is designed as a business continuity solution that allows the application to perform quick disaster recovery of individual databases in case of a regional disaster or large scale outage.
+Active geo-replication is designed as a business continuity solution that allows the application to perform quick disaster recovery of individual databases in cases of a regional disaster or large-scale outage.
 
 If geo-replication is enabled, the application can initiate failover to a secondary database in a different Azure region. For more information, see the [Creating and using active geo-replication - Azure SQL Database](https://docs.microsoft.com/azure/azure-sql/database/active-geo-replication-overview) article.
 

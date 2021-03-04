@@ -1,7 +1,7 @@
 ---
 ms.assetid: 6d774c55-b334-489e-977e-206b2c6bc2e9
-title: Management Pack Scope and Supported Configuration
-description: This article explains known issues and troubleshooting
+title: Known Issues and Troubleshooting
+description: This article explains known issues and troubleshooting in Management Pack for Azure SQL Database
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Known Issues and Troubleshooting
+# Known Issues and Troubleshooting in Management Pack for Azure SQL Database
 
 This article lists the known issues for Management Pack for Azure SQL Database.
 
