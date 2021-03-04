@@ -268,6 +268,7 @@ Health state transition shows a minor change when monitor is initializing, sampl
 
 As shown in the figure above, during initialization, monitor first turns healthy. Then it again calculates and turns healthy. You will see two state change transitions from *hollow state to healthy*.
 
+
 ::: moniker-end
 
 ## Next steps
