@@ -264,7 +264,7 @@ With Operations Manager 2019 UR3, all of the orphan alerts are closed, eventuall
 
 Health state transition shows a minor change when monitor is initializing, sample below:
 
-![Health state transition](./media/enhanced-alert-closure-experience/monitor-health-state.png)
+![Health state transition](./media/enhanced-alert-closure-experience/monitor-health-status.png)
 
 As shown in the figure above, during initialization, monitor first turns healthy. Then it again calculates and turns healthy. You will see two state change transitions from *hollow state to healthy*.
 
