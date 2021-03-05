@@ -145,8 +145,6 @@ You can view health reset actions on the monitors as a consolidated view under *
 
 ![Monitor health tracking](./media/change-tracking/monitor-health-tracking.png)
 
-![Reset health](./media/change-tracking/reset-health.png)
-
 
 ## Synchronization of change tracking data in Data Warehouse
 
