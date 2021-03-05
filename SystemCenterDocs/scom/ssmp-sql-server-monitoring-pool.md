@@ -13,9 +13,7 @@ ms.technology: operations-manager
 
 # SQL Server Monitoring Pool
 
-## Configuring SQL Server Monitoring Pool
-
-You can configure SQL Server Monitoring Pool manually by adding custom Gateways and Management Servers.
+You can configure SQL Server Monitoring Pool manually by adding custom gateways and management servers.
 
 To configure SQL Server Monitoring Pool, perform the following steps:
 

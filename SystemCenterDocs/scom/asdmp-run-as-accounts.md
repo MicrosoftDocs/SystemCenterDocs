@@ -1,7 +1,7 @@
 ---
 ms.assetid: 1a7d9146-5782-4cad-8bb5-c69511b578d1
 title: Azure SQL Database Run As Accounts
-description: This article explains how to configufe Azure SQL Database run as accounts in Management Pack for Azure SQL Database
+description: This article explains how to configure Azure SQL Database run as accounts in Management Pack for Azure SQL Database
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Azure SQL Database Run As Accounts
 
-To monitor Azure SQL Database servers, create one or more **Simple** or **Basic** Run As accounts.
+To monitor Azure SQL Database servers, create one or more **Simple** or **Basic** Run As accounts. For more information about Run As accounts, see [Managing Run As accounts and profiles](manage-security-maintain-runas-profiles.md).
 
 To create Run As accounts, perform the following steps:
 

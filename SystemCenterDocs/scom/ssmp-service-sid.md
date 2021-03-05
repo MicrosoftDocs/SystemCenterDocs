@@ -114,14 +114,13 @@ To configure monitoring using Service Security Identifier, perform the following
 
 The NT AUTHORITY\SYSTEM account needs to be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.
 
-## Service SID for SQL Server Cluster and Always On Instances
+## Service SID for SQL Server Cluster Instances and AG
 
 To configure HealthService Service SID for monitoring of SQL Server failover cluster, perform the following steps for each cluster node:
 
 1. Launch **mmc.exe** and add the following snap-ins:
 
     - Component Services
-    
     - WMI Control (for the local computer)
 
 2. Expand **Component Services**, right-click **My Computer**, select **Properties**, and open the **Security** tab.
@@ -133,7 +132,6 @@ To configure HealthService Service SID for monitoring of SQL Server failover clu
 4. In the **Launch and Activation Permission** window, enable the following permissions for the NT SERVICE\\HealthService account:
 
     - Remote Launch
-    
     - Remote Activation
 
     ![Allowing permissions](./media/ssmp/allowing-permissions.png)
@@ -145,7 +143,6 @@ To configure HealthService Service SID for monitoring of SQL Server failover clu
 7. Enable the following permissions for the NT SERVICE\\HealthService account:
 
     - Enable Account
-    
     - Remote Enable
 
     ![HealthService permissions](./media/ssmp/health-service-permissions.png)
@@ -159,7 +156,6 @@ To configure HealthService Service SID for monitoring of SQL Server failover clu
 11. In the **Permissions** section, enable the following checkboxes:
 
     - Enable Account
-    
     - Remote Enable
 
     ![CIMV permissions](./media/ssmp/permissions-cimv.png)

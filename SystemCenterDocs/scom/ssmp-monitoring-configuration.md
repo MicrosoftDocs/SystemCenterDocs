@@ -18,21 +18,13 @@ ms.technology: operations-manager
 Management Pack for SQL Server provides the following SQL Server agent alerting rules:
 
 - MSSQL on Windows: Alert engine stopped due to unrecoverable local eventlog errors
-
 - MSSQL on Windows: A SQL job failed to complete successfully
-
 - MSSQL on Windows: Job step cannot be run because the subsystem failed to load
-
 - MSSQL on Windows: The agent is suspect. No response within last minutes
-
 - MSSQL on Windows: SQL Server Agent could not be started
-
 - MSSQL on Windows: SQL Server Agent initiating self-termination
-
 - MSSQL on Windows: Step of a job caused an exception in the subsystem
-
 - MSSQL on Windows: SQL Server Agent is unable to connect to SQL Server
-
 - MSSQL on Windows: Unable to re-open the local eventlog
 
 By default, these rules are enabled in [agent monitoring](ssmp-monitoring-modes.md) mode, but disabled in [mixed monitoring](ssmp-monitoring-modes.md#configuring-mixed-monitoring-mode) mode because Operations Manager does not allow to collect events from event logs on remote computers. To change this, you can override each of these rules by enabling the **AllowProxying** option.
@@ -67,15 +59,12 @@ Management Pack for SQL Server collects health for all available Always On objec
 Besides system policies, this management pack provides the ability to monitor custom user policies defined for:
 
 - Availability Group
-
 - Availability Replica
-
 - Database Replica
 
 For each facet, the management pack introduces two monitors for the custom user policy:
 
 - Two-state monitor with a **Warning** state. This monitor shows the state of the custom user policy that has one of the predefined warning categories as **Policy Category**.
-
 - Two-state monitor with an **Error** state. This monitor shows the state of the custom user policy that has one of the predefined error categories as **Policy Category**.
 
 ## Data File and Transaction Log File Space Monitoring
@@ -85,11 +74,8 @@ Management Pack for SQL Server collects a set of metrics to enable space monitor
 This feature supports the following types of media:
 
 - Local storage (both drive letters and mount points)
-
 - Cluster Shared Volumes
-
 - SMB Shares
-
 - Azure BLOBs
 
 By default, space monitoring is enabled for all levels. Alerts will only be registered if all files in the file group are unhealthy.
@@ -199,43 +185,23 @@ The following is a complete list of securables checked by the monitor targeted t
 Because SQL Server on Linux does not provide required data, the following rules and monitors are disabled by default:
 
 - Rules:
-
   - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (MB)
-  
   - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (%)
-  
   - MSSQL on Linux: DB FILESTREAM Filegroup Free Space Total (%)
-  
   - MSSQL on Linux: DB FILESTREAM Filegroup Free Space Total (MB)
-  
   - MSSQL on Linux: DB Filegroup Free Space Total (%)
-  
   - MSSQL on Linux: DB Filegroup Free Space Total (MB)
-  
   - MSSQL on Linux: DB Filegroup Allocated Free Space (%)
-  
   - MSSQL on Linux: DB Filegroup Allocated Free Space (MB)
-  
   - MSSQL on Linux: DB Free Outer Space (MB)
-  
   - MSSQL on Linux: DB Allocated Free Space (MB)
-  
   - MSSQL on Linux: DB Transaction Log Free Space Total (%)
-  
   - MSSQL on Linux: DB Allocated Space Used (MB)
-  
   - MSSQL on Linux: DB Free Space Total (%)
-  
   - MSSQL on Linux: DB Free Space Total (MB)
-  
   - MSSQL on Linux: DB Allocated Space (MB)
-
 - Monitors:
-  
   - DB Free Space Left
-  
   - DB Space Percentage Change
-  
   - Transaction Log Free Space (%)
-  
   - DB FILESTREAM Filegroup Free Space

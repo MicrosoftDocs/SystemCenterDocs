@@ -16,21 +16,13 @@ ms.technology: operations-manager
 Management Pack for Azure SQL Database provides the following key monitoring scenarios:
 
 - [Service Availability Monitoring](#service-availability-monitoring)
-
 - [Service Performance Monitoring](#service-performance-monitoring)
-
 - [Service Performance Collection](#service-performance-collection)
-
 - [Database Availability Monitoring](#database-availability-monitoring)
-
 - [Database Performance Monitoring](#database-performance-monitoring)
-
 - [Database Performance Collection](#database-performance-collection)
-
 - [Active Geo-Replication Monitoring](#active-geo-replication-monitoring)
-
 - [Elastic Pools Monitoring](#elastic-pools-monitoring)
-
 - [Custom Query-Based Monitoring](asdmp-custom-query-monitoring.md)
 
 ## Service Availability Monitoring
@@ -65,9 +57,7 @@ To use disabled monitors, create an override that adjusts monitor thresholds for
 The database performance monitors detect:
 
 - Excessive storage space consumed by each database
-
 - Excessive resources consumed by database sessions
-
 - Excessive resources consumed by database transactions
 
 ## Database Performance Collection
@@ -75,11 +65,8 @@ The database performance monitors detect:
 There are several rules that collect the following performance information about discovered databases:
 
 - Network usage
-
 - Amount of resources consumed by database sessions
-
 - Amount of resources consumed by database transactions
-
 - Disk space consumed by each database
 
 ## Active Geo-Replication Monitoring
@@ -101,37 +88,22 @@ Elastic pools provide a simple resource allocation mechanism for managing and sc
 Most of the database performance monitors are disabled by default because the appropriate thresholds need to be determined based on the monitored database applications. If this functionality is required for proper database applications monitoring, do the following:
 
 1. Determine the correct threshold values based on the expected usage patterns or observed resource consumption.
-
 2. Override one or more of these monitors to adjust the thresholds and enable them.
 
 Disabled monitors are as follows:
 
 - Connections
-
   - Count of Failed Connection
-
   - Count of connections blocked by the Firewall
-
 - Sessions
-
   - Sessions Count
-
   - Sessions Average Memory
-
   - Sessions Rows Returned
-
   - Sessions Total CPU Time
-
   - Sessions Total I/O
-
   - Sessions Total Memory
-
 - Transactions
-
   - Transaction Locks Count
-
   - Transaction Log Space Used
-
   - Transaction Execution Time
-
 - Geo-Replication Link State

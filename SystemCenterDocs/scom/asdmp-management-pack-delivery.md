@@ -15,20 +15,12 @@ ms.technology: operations-manager
 
 You can download Management Pack for Azure SQL Database from the [Microsoft portal](https://www.microsoft.com/en-us/download/details.aspx?id=38829) or System Center Operations Manager Online Catalog.
 
-The package includes the following files:
-
-- **Microsoft.SqlServer.Azure.ManagementPack.msi**—a set of MP and MPB files for monitoring of Azure SQL Databases.
-
-Management Pack for Azure SQL Database consists of the following files:  
+After you download and unpack the **Microsoft.SqlServer.Azure.ManagementPack.msi** package—a set of MP and MPB files for monitoring of Azure SQL Database, the following files become available:
 
 - Microsoft.SqlServer.Azure.mpb
-
-- Microsoft.SqlServer.Azure.Presentation.mp
-
+- Microsoft.SqlServer.Azure.Presentation.</i>mp
 - Microsoft.SqlServer.UserMonitoring.mpb
-
 - Microsoft.SQLServer.Core.Library.mpb
-
 - Microsoft.SQLServer.Visualization.Library.mpb
 
 >[!NOTE]
@@ -36,9 +28,7 @@ Management Pack for Azure SQL Database consists of the following files:
 
 ## Prerequisites
 
-The environment that you use must meet the following prerequisites before you start using Management Pack for Azure SQL Database:
-
-- Install **.NET Framework 4.5.2** or higher.
+Make sure to install the **.NET Framework 4.5.2** or higher before importing Management Pack for Azure SQL Database.
 
 ## Importing Management Pack
 

@@ -274,7 +274,7 @@
 #### [SQL Server Monitoring Pool](ssmp-sql-server-monitoring-pool.md)
 #### [Disabling Monitoring of SQL Servers and Databases](ssmp-disabling-monitoring.md)
 ### Security Configuration
-#### [Run As Profiles](ssmp-run-as-profiles.md)
+#### [SQL Server Run As Profiles](ssmp-run-as-profiles.md)
 #### [Service SID](ssmp-service-sid.md)
 #### [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md)
 ### [Views and Dashboards](ssmp-views-and-dashboards.md)

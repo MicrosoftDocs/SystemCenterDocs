@@ -13,8 +13,6 @@ ms.technology: operations-manager
 
 # Managed Instance Monitoring Pool
 
-## Configuring Managed Instance Monitoring Pool
-
 To configure a monitoring pool using the Operations Manager console, perform the following steps:
 
 1. Navigate to **Administration | Resource Pools**, right-click **Azure SQL MI Monitoring Pool**, and select the **Manual Membership** option.

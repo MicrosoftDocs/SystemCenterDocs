@@ -15,20 +15,12 @@ ms.technology: operations-manager
 
 You can download Management Pack for Azure SQL Managed Instance from the [Microsoft portal](https://www.microsoft.com/en-us/download/details.aspx?id=101203) or System Center Operations Manager Online Catalog.
 
-The package includes the following files:
-
-- **Microsoft.Azure.ManagedInstance.ManagementPack.msi**—a set of MP and MPB files for monitoring of Azure SQL Managed Instance.
-
-Management Pack for Azure SQL Managed Instance consists of the following files:  
+After you download and unpack the **Microsoft.Azure.ManagedInstance.ManagementPack.msi** package—a set of MP and MPB files for monitoring of Azure SQL Managed Instance, the following files become available: 
 
 - Microsoft.Azure.ManagedInstance.Discovery.mpb
-
 - Microsoft.Azure.ManagedInstance.Monitoring.mpb
-
 - Microsoft.Azure.ManagedInstance.Views.</i>mp
-
 - Microsoft.SQLServer.Core.Library.mpb
-
 - Microsoft.SQLServer.Visualization.Library.mpb
 
 ## Prerequisites

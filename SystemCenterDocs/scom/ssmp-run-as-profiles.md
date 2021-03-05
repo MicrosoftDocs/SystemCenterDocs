@@ -1,6 +1,6 @@
 ---
 ms.assetid: 2c4831ae-0b67-40c0-a91f-247a3ee3e01f
-title: Run As Profiles
+title: SQL Server Run As Profiles
 description: This article explains run as profiles in Management Pack for SQL Server
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -11,9 +11,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Run As Profiles
-
-## Management Pack for SQL Server Run As Profiles
+# SQL Server Run As Profiles
 
 Management Pack for SQL Server provides the following Run As profiles:
 
@@ -42,11 +40,13 @@ Management Pack for SQL Server provides the following Run As profiles:
   This profile is used for [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode only.
 
 >[!NOTE]
->Do not bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes, as only a basic action account can be bound to this profile. Also, do not use a Windows account or non-basic account with this profile.
+>Do not bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes as only a basic action account can be bound to this profile. Also, do not use a Windows account or non-basic account with this profile.
 
 When using agent or mixed monitoring mode, all discoveries, monitors, and tasks use accounts from the **Default Action Account** Run As profile.
 
 If the default action account for a given system does not have necessary permissions to discover and monitor instances of SQL Server, such systems can be bound to more specific credentials defined in **Microsoft SQL Server** Run As Profiles.
+
+For more information about Run As accounts, see [Managing Run As accounts and profiles](manage-security-maintain-runas-profiles.md)
 
 ## Enabling Allow Log On Locally Security Policy
 
@@ -74,7 +74,7 @@ Follow these steps to ensure that all requirements are met:
 
 - If you store SQL Server databases on an SMB file share, the default action account must have the rights, as described in [Low-Privilege Agent Monitoring](ssmp-low-privilege-monitoring.md).
 
-- In cases when servers hosting Always On Availability Replicas (at least one of them) have a machine name consisting of more than 15 characters, make sure to perform the steps described in [Always On Workflows with Long Server Names](#Monitoring-of-ag-on-windows-servers-with-long-names).
+- In cases when servers hosting Always On Availability Replicas (at least one of them) have a machine name consisting of more than 15 characters, make sure to perform the steps described in [Monitoring of AG on Windows Servers with Long Names](#monitoring-of-ag-on-windows-servers-with-long-names).
 
 ### Action Account is Local Administrator w/o SA
 
@@ -104,7 +104,7 @@ Follow these steps to configure the security configuration using SID:
 
 1. Configure a service SID for HealthService, as described in [Service SID](ssmp-service-sid.md).
 
-2. If you have SQL Server cluster instances, perform the steps provided in [HealthService SID for SQL Server Cluster Instances](ssmp-service-sid.md#service-sid-for-sql-server-cluster-and-always-on-instances).
+2. If you have SQL Server cluster instances, perform the steps provided in [Service SID for SQL Server Cluster Instances and AG](ssmp-service-sid.md#service-sid-for-sql-server-cluster-instances-and-ag).
 
 ## Agentless Monitoring Mode
 
@@ -119,9 +119,7 @@ Regardless of whether you use a local system account, domain user account, or ri
 **Example**: You have three replicas in your Availability Group that are hosted on the following computers:
 
 - Computer_1
-
 - Computer_2
-
 - Computer_3
   
 **Computer_1** hosts the primary replica. In this case, you should configure security settings for **Computer_1** on **Computer_2** and **Computer_3**. If **Computer_2** is going to host the primary replica after failover, other computers should also have WMI security configured for this computer.
@@ -135,7 +133,6 @@ To configure permissions for Always On workflows when server names exceed 15 cha
 1. Launch **mmc.exe** and add the following snap-ins:
 
     - Component Services
-    
     - WMI Control (for local computer)
 
 2. Expand **Component Services**, right-click **My Computer**, and select **Properties**.
@@ -149,7 +146,6 @@ To configure permissions for Always On workflows when server names exceed 15 cha
 5. In the **Launch and Activation Permission** window, enable the following permissions for the remote machine account:
 
     - Remote Launch
-    
     - Remote Activation
 
     ![Enabling remote machine permissions](./media/ssmp/remote-machine-account.png)
@@ -159,7 +155,6 @@ To configure permissions for Always On workflows when server names exceed 15 cha
 7. Allow the following permissions for the target computer:
   
     - Enable Account
-    
     - Remote Enable
 
     ![Enabling target machine permissions](./media/ssmp/target-computer-permissions.png)
@@ -171,7 +166,6 @@ To configure permissions for Always On workflows when server names exceed 15 cha
 10. In the **Permissions** section, enable the following checkboxes:
     
     - Enable Account
-    
     - Remote Enable
 
     ![Configuring CIMV permissions](./media/ssmp/permissions-cimv.png)

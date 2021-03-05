@@ -1,7 +1,7 @@
 ---
 ms.assetid: 8f864a9e-b04a-43e3-a624-574d5f08f823
 title: Low-Privilege Configuration
-description: This article explains how to configufe low-privilege configuration in Management Pack for Azure SQL Database
+description: This article explains how to configure low-privilege configuration in Management Pack for Azure SQL Database
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Low-Privilege Configuration
 
-This section explains how to set up a low-privilege account to monitor the Azure SQL Database service.
+This section explains how to configure low-privilege accounts to monitor the Azure SQL Database service.
 
 To configure low-privilege account, perform the following steps:
 

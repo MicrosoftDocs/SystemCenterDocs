@@ -29,15 +29,12 @@ This section explains how to configure low-privilege agent monitoring.
 1. In Active Directory, create the following domain users for low-privilege access to the target SQL Server instances:
 
     - SQLTaskAction
-    
     - SQLDiscovery
-    
     - SQLMonitor
 
 2.  Create the **SQLMPLowPriv** domain group and add the following domain users to this group:
 
     - SQLDiscovery
-    
     - SQLMonitor
 
 3. Grant the **SQLMPLowPriv** group the **Read-only Domain Controllers** permission.
@@ -53,19 +50,12 @@ This section explains how to configure low-privilege agent monitoring.
 4. Grant **Execute Methods**, **Enable Account**, **Remote Enable**, and **Read Security** permissions to **SQLTaskAction** and **SQLMPLowPriv** for the following WMI namespaces:
 
     - root
-    
     - root\cimv2
-    
     - root\default
-    
     - root\Microsoft\SqlServer\ComputerManagement11 (if exists)
-    
     - root\Microsoft\SqlServer\ComputerManagement12 (if exists) 
-    
     - root\Microsoft\SqlServer\ComputerManagement13 (if exists)
-    
     - root\Microsoft\SqlServer\ComputerManagement14 (if exists)
-    
     - root\Microsoft\SqlServer\ComputerManagement15 (if exists)
 
 5. On each monitored instance, grant the **SQLMPLowPriv** grop the **Read** permission at HKLM:\Software\Microsoft\Microsoft SQL Server\\[InstanceID]\MSSQLServer\Parameters.
@@ -177,9 +167,7 @@ Take the following steps on an agent machine or database only if you want to all
 2. In SQL Server Management Studio, add **SQLTaskAction** to the **db_owner** database role for each database if the task is related to performing database checks:
 
     - Check Catalog (DBCC)
-    
     - Check Database (DBCC)
-    
     - Check Disk (DBCC)” (invokes DBCC CHECKALLOC)
 
     ```sql
@@ -191,9 +179,7 @@ Take the following steps on an agent machine or database only if you want to all
 3. Grant the ALTER ANY DATABASE privilege to the **SQLTaskAction** login to run the task if the task is related to changing the database state:
 
     - Set Database Offline
-    
     - Set Database Emergency State
-    
     - Set Database Online
 
     ```sql
@@ -209,17 +195,13 @@ Take the following steps on an agent machine or database only if you want to all
 2. Create the following Windows-based Run As accounts:
 
     - SQLTaskAction
-    
     - SQLDiscovery
-    
     - SQLMonitor
 
 3. In the System Center Operations Manager console, configure Run As Profiles as follows:
 
     - Set the **Microsoft SQL Server Task** Run As Profile to use the **SQLTaskAction** Run As account.
-    
     - Set the **Microsoft SQL Server Discovery** Run As Profile to use the **SQLDiscovery** Run As account.
-    
     - Set the **Microsoft SQL Server Monitoring** Run As profile to use the **SQLMonitor** Run As account.
 
 To prevent SQL Server monitoring issues, the **SQLTaskAction**, **SQLDiscovery**, and **SQLMonitor** Run As accounts should be used to manage the instances of **MSSQL on Windows: Local DB Engine**.
@@ -290,9 +272,7 @@ Take the following steps only if you want to allow the System Center Operations 
 1. In SQL Server Management Studio, add **SQLMPLowPriv** to the **db_owner** database role for each database if the task is related to performing database checks:
       
     - Check Catalog (DBCC)
-    
     - Check Database (DBCC)
-    
     - Check Disk (DBCC) (invokes DBCC CHECKALLOC)
 
     ```sql
@@ -305,9 +285,7 @@ Take the following steps only if you want to allow the System Center Operations 
 2. Grant the ALTER ANY DATABASE privilege to **SQLMPLowPriv** to perform the following database tasks:
       
     - Set Database Online
-    
     - Set Database Offline
-    
     - Set Database to Emergency State
 
     ```sql
@@ -341,11 +319,9 @@ To configure low-privilege agentless monitoring using the monitoring wizard, per
 
     For example:
      
-     - '172.31.2.133;MachineName="W12BOX-839";InstanceName="MSSQLSERVER";Platform="Windows"'
-    
-     - '172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"'
-     
-     - '172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"'
+     - 172.31.2.133;MachineName="W12BOX-839";InstanceName="MSSQLSERVER";Platform="Windows"
+     - 172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"
+     - 172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
 
     You can also create a new Run As account. For that, in the **Add Instances** window, click **New**, enter a new name for the Run As account, and specify credentials to access the SQL Server that you want to monitor.
 
@@ -372,7 +348,6 @@ To configure security for configurations with low-privilege accounts, perform th
 1. Launch the **mmc.exe** console and add the following snap-ins:
 
     - Component Services
-    
     - WMI Control (for a local computer)
 
 2. Expand **Component Services**, right-click **My Computer**, and select **Properties**.
@@ -388,7 +363,6 @@ To configure security for configurations with low-privilege accounts, perform th
 5. Grant the following permissions to the remote machine account:
 
     - Remote Launch
-    
     - Remote Activation
 
    ![Activating permissions](./media/ssmp/launch-activate-permissions.png)
@@ -398,17 +372,11 @@ To configure security for configurations with low-privilege accounts, perform th
 7. Open the **Security** tab and select the following namespaces:
 
     - Root\CIMV2
-    
     - Root\Microsoft\SqlServer
-    
     - Root\Microsoft\SqlServer\ComputerManagement11 (if exists)
-    
     - Root\Microsoft\SqlServer\ComputerManagement12 (if exists)
-    
     - Root\Microsoft\SqlServer\ComputerManagement13 (if exists)
-    
     - Root\Microsoft\SqlServer\ComputerManagement14 (if exists)
-    
     - Root\Microsoft\SqlServer\ComputerManagement15 (if exists)
 
 8. Click **Security**.
@@ -416,7 +384,6 @@ To configure security for configurations with low-privilege accounts, perform th
 9. Grant the following permissions to the target computer:
 
     - Enable Account
-    
     - Remote Enable
 
    ![Security permissions](./media/ssmp/security-permissions.png)
@@ -430,7 +397,6 @@ To configure security for configurations with low-privilege accounts, perform th
 13. In the **Permissions** section, enable the following checkboxes:
 
     - Enable Account
-    
     - Remote Enable
 
     ![Configuring CIMV permissions](./media/ssmp/permissions-cimv.png)
@@ -504,14 +470,10 @@ To get information about the services, grant required permissions according to t
 
     The following rights can be read as:
     
-      - L: Read control
-      
+      - L: Read contro
       - Q: Query Service Configuration
-      
       - S: Query Service Status
-      
       - E: Enumerate Dependent Services
-      
       - I: Interrogate Service
 
 7. Set the rights for the ClusSvc (Cluster Service) using the [Command-Line Tool SubInACL](https://www.microsoft.com/download/details.aspx?id=23510) utility for the **Spotlight User** SID.
@@ -533,7 +495,6 @@ To create a key, perform the following steps:
 2. In the **Edit** menu, click **Add Key** and enter the following values:
 
     - **Key Name:** SecurePipeServers
-   
     - **Class:** REG_SZ
 
 3. Locate the following key: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers'.
@@ -541,7 +502,6 @@ To create a key, perform the following steps:
 4. In the **Edit** menu, click **Add Key** and enter the following values:
 
     - **Key Name:** winreg
-    
     - **Class:** REG_SZ
 
 5. Locate the following key: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg'.
@@ -549,9 +509,7 @@ To create a key, perform the following steps:
 6. In the **Edit** menu, click **Add Key** and enter the following values:
 
     - **Value Name:** Description
-    
     - **Data Type:** REG_SZ
-    
     - **String:** Registry Server
 
 7. Locate the following key: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg'.

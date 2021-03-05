@@ -71,7 +71,7 @@ To configure monitoring using the manual discovery monitoring template, perform 
 
 6. At the **Summary** step, review monitoring settings and click **Create**.
 
-    ![Review summary](./media/mimp/manual-summary.png)
+    >[!NOTE]
+    >The monitoring template wizard may show the following error: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process" or the “Monitoring error” exception while checking connection. For more information, see [Known Issues and Troubleshooting](mimp-known-issues-and-troubleshooting.md)
 
->[!NOTE]
->The monitoring template wizard may show the following error: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process" or the “Monitoring error” exception while checking connection. For more information, see [Known Issues and Troubleshooting](mimp-known-issues-and-troubleshooting.md)
+    ![Review summary](./media/mimp/manual-summary.png)

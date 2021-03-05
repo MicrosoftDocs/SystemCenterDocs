@@ -16,13 +16,9 @@ ms.technology: operations-manager
 Management Pack for SQL Server introduces the **Database Files Space Usage Forecast** report that provides the following information about Windows objects:
 
 - Initially consumed file space (GB)
-
 - Finally consumed file space (GB)
-
 - Initial average free file space (%)
-
 - Final average free file space (%)
-
 - File space consumption forecast (GB)
 
 To open the report, perform the following steps:

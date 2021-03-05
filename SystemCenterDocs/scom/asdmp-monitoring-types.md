@@ -16,7 +16,6 @@ ms.technology: operations-manager
 Management Pack for Azure SQL Database allows you to configure the following monitoring types:
 
 - [Azure REST API Monitoring](#configuring-azure-rest-api-monitoring)
-
 - [T-SQL Monitoring](#configuring-t-sql-monitoring)
 
 ## Differences Between Azure REST API and T-SQL Monitoring
@@ -24,55 +23,30 @@ Management Pack for Azure SQL Database allows you to configure the following mon
 The main difference between [Azure REST API](https://docs.microsoft.com/rest/api/azure/) monitoring and T-SQL monitoring is that in T-SQL, the entire set of workflows is available, while in Azure REST API, the following workflows are disabled due to API limitations:
 
 - Rules
-
   - Azure SQL DB: DB Transactions Locks Count
-
   - Azure SQL DB: DB Sessions Count
-
   - Azure SQL DB: DB Sessions Average Memory Consumption (MB)
-
   - Azure SQL DB: DB Sessions Rows Returned
-
   - Azure SQL DB: DB Sessions Total CPU Time (ms)
-
   - Azure SQL DB: DB Sessions Total Read/Write Operations
-  
   - Azure SQL DB: DB Sessions Total Memory Consumption (MB)
-
   - Azure SQL DB: DB Transactions Max Log Usage (MB)
-
   - Azure SQL DB: DB Transactions Max Running Time (minutes)
-
   - Azure SQL DB: DB Blocked by Firewall Count
-
   - Azure SQL DB: DB Failed Connections Count
-
   - Azure SQL DB: DB Successful Connections Count
-
   - Azure SQL DB: DB Deadlocks Count
-
 - Monitors
-
   - Transaction Locks Count
-
   - Sessions Count
-
   - Sessions Average Memory
-
   - Sessions Rows Returned
-
   - Sessions Total CPU Time
-
   - Sessions Total I/O
-
   - Sessions Total Memory
-
   - Transaction Log Space Used
-
   - Transaction Execution Time
-
   - Count of Failed Connection
-
   - Count of connections blocked by the Firewall
 
 To enable these workflows in Azure REST API, select the **Use T-SQL monitoring** checkbox and run required T-SQL scripts provided in [Configuring Azure REST API Monitoring](#configuring-azure-rest-api-monitoring).
@@ -84,7 +58,6 @@ Azure REST API monitoring provides a wide range of monitoring targets.
 When using the Azure REST API, the Azure SQL Database Management Pack utilizes an Azure AD application (that is, Service Principal Name) for authentication in Azure AD, which gives access to the Azure Resource Management API. The account that you use must have either the **Owner** role (or higher), or any of the following roles:
 
 - **Active Directory Administrator**
-
 - **Service Administrator** or **Co-Administrator**
   
 For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).
@@ -109,12 +82,12 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
     ![Authentication mode](./media/asdmp/selecting-authentication-mode.png)
 
-5. At the **Azure Endpoints** step, select the **Enable checkbox if you want to change default Azure Endopints** checkbox and modify the default Azure endpoints if required.
+5. At the **Azure Endpoints** step, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox and modify the default Azure endpoints if required.
 
     The default endpoints for creating Azure Service Principal Name are as follows:
 
    - Authority URI: <https://login.windows.net>
-   
+
    - Management Service URI: <https://management.azure.com>
 
      This endpoint is also used for Azure REST API. In this case, the Firewall port 443 should be used. However, according to [Ports beyond 1433 for ADO.NET 4.5](https://docs.microsoft.com/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12), the Firewall port 1433 should be used.

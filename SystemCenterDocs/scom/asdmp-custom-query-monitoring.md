@@ -18,7 +18,6 @@ In addition to standard [health and performance monitoring](asdmp-monitoring-typ
 Management Pack for Azure SQL Database supports the following query-based monitors:
 
 - [Two-State Query Monitor](#two-state-query-monitor)
-
 - [Three-State Query Monitor](#three-state-query-monitor)
 
 >[!NOTE]
@@ -40,7 +39,7 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
     ![Select a monitor type](./media/asdmp/selecting-monitor-type.png)
 
-4. At the **General** step, enter a monitor name and optional description, select **Monitor target** and **Parent monitor**^ and click **Next**.
+4. At the **General** step, enter the monitor name and optional description, select **Monitor target** and **Parent monitor**, and click **Next**.
 
     If you select to save a new monitor to the management pack that contains one or more Azure SQL Database templates, you will be able to pick one of the Azure SQL Database services monitored by the templates. Otherwise, only the base **Microsoft Azure SQL Database** will be available as a target. Selecting **Microsoft Azure SQL Database Cloud Server** means that all cloud services will be using your query.
 
@@ -76,13 +75,11 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
     ![Specify scalar values](./media/asdmp/editing-test-conditions.png)
 
-    You can have more than one condition. It is useful to add the **Execution Time** condition to all tests to check the performance of the Azure SQL Database service.
+    You can have more than one condition. It is useful to add the **Execution Time** condition to all tests to check the performance of the Azure SQL Database service. After all required conditions are set, click **Next**.
 
     ![Specify execution time](./media/asdmp/test-conditions-execution-time.png)
 
-    After all required conditions are set, click **Next**.
-
-7. At the **Schedule** page, configure a schedule of query execution.
+7. At the **Schedule** page, configure a query execution schedule.
 
     ![Configure schedule](./media/asdmp/unit-monitor-schedule.png)
 
@@ -90,18 +87,16 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
     ![Configure health](./media/asdmp/configure-health.png)  
 
-9. At the **Configure Alerts** step, set up an alert name and description to be shown in cases if one or more test conditions fails.
+9. At the **Configure Alerts** step, set up an alert name and description to be shown in cases if one or more test conditions fail and click **Create**.
 
-    Use $Data/Context/Property[@Name=’Message’]$ placeholder to show the list of failed tests in the alert description.
+    Use the $Data/Context/Property[@Name=’Message’]$ placeholder to show the list of failed tests in the alert description.
 
     ![Configure alerts](./media/asdmp/configure-alerts.png)
-
-10. Click **Create**.
 
 ## Three-State Query Monitor
 
 Adding a three-state custom query-based monitor is similar to a two-state monitor. The main difference is that you must specify the **Warning** and **Critical** conditions.
 
-![Select a three-state monitor](./media/asdmp/three-state-monitor.png)
-
 Critical conditions are verified first. If one or more critical conditions fail, the monitor will switch to the critical state and warning conditions will not be verified.
+
+![Select a three-state monitor](./media/asdmp/three-state-monitor.png)

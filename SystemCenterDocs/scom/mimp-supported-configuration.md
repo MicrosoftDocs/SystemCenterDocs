@@ -20,26 +20,17 @@ Management Pack for Azure SQL Managed Instance supports monitoring of [Azure SQL
 Management Pack for Azure SQL Managed Instance supports the following tiers and managed instance features:
 
 - Tiers
-
     - General Purpose
-
     - Business Critical (monitoring of Read-Scale Replicas is not supported yet)
-
 - Features
-
     - Database Engine
-
     - Database
-
     - Agent and Jobs
-
     - Memory-Optimized Data (In-Memory OLTP)
-
     - Failover Groups, including secondary read-only replicas
-
     - Authentication Mode — both SQL Server Authentication and Azure AD Authentication are supported.
 
-### System Center Operations Manager
+## System Center Operations Manager
 
 Management Pack for Azure SQL Managed Instance supports agentless monitoring of Azure SQL Managed Instance only.
 
@@ -50,11 +41,7 @@ The management pack does not require to have a dedicated management group and ca
 The following is a list of supported versions of System Center Operations Manager:
 
 - System Center Operations Manager 2012 R2
-
 - System Center Operations Manager 2016
-
 - System Center Operations Manager 1801
-
 - System Center Operations Manager 1807
-
 - System Center Operations Manager 2019

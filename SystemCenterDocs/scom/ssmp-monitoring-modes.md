@@ -57,24 +57,6 @@ Management Pack for SQL Server provides the following monitoring modes:
 
 Each of these modes supports both the SQL Server and the Windows authentication.
 
-## Agentless and Mixed Modes Performance
-
-When you use either agentless or mixed monitoring mode, the management pack workflows are mapped to either **SQL Server Monitoring Pool** or **All Management Servers Pool**. In this case, Management Servers experience a higher load than in the agent monitoring mode.
-
-The following monitoring configuration is validated for both agentless and mixed monitoring modes:
-
-- System Center Operations Manager Server 1
-
-    Azure tier: Standard DS12_v2, 4 vcpus, 28GB memory, 12800 IOPS, Windows Server 2012R2, System Center Operations Manager 2012R2
-
-- System Center Operations Manager Server 2 – a server dedicated to monitor SQL Server. The only member of the SQL Server Monitoring Pool.
-
-    Azure tier: Standard DS12\_v2, 4 vcpus, 28GB memory, 12800 IOPS, Windows Server 2012R2, System Center Operations Manager 2012R2.
-
-- 12 VMs with SQL Server (2012, 2014, 2016, 2017) – 600 databases per instance, \~40000 SQL Server MP objects in total.
-
-More than half of its CPU and RAM resources were available on the System Center Operations Manager Server 2 during the performance testing session.
-
 ## Configuring Agentless Monitoring Mode
 
 To configure agentless monitoring, perform the following steps:
@@ -164,6 +146,24 @@ To configure mixed monitoring, perform the following steps:
     Use commas to separate instance names. To add all instances, including instances with the same name and instances that are located on different servers, use asterisk (\'*').
 
     ![Override properties](./media/ssmp/override-properties.png)
+
+## Agentless and Mixed Modes Performance
+
+When you use either agentless or mixed monitoring mode, the management pack workflows are mapped to either **SQL Server Monitoring Pool** or **All Management Servers Pool**. In this case, Management Servers experience a higher load than in the agent monitoring mode.
+
+The following monitoring configuration is validated for both agentless and mixed monitoring modes:
+
+- System Center Operations Manager Server 1
+
+    Azure tier: Standard DS12_v2, 4 vcpus, 28GB memory, 12800 IOPS, Windows Server 2012R2, System Center Operations Manager 2012R2
+
+- System Center Operations Manager Server 2 – a server dedicated to monitor SQL Server. The only member of the SQL Server Monitoring Pool.
+
+    Azure tier: Standard DS12\_v2, 4 vcpus, 28GB memory, 12800 IOPS, Windows Server 2012R2, System Center Operations Manager 2012R2.
+
+- 12 VMs with SQL Server (2012, 2014, 2016, 2017) – 600 databases per instance, \~40000 SQL Server MP objects in total.
+
+More than half of its CPU and RAM resources were available on the System Center Operations Manager Server 2 during the performance testing session.
 
 ## Viewing Monitoring Type
 

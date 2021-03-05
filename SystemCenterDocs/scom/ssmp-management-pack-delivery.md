@@ -18,33 +18,21 @@ You can download Management Pack for SQL Server from the [Microsoft portal](http
 The package includes the following files:
 
 - **SQLServerMP.Windows.msi**—a set of MP and MPB files for monitoring of SQL on Windows.
-
 - **SQLServerMP.Linux.msi**—a set of MP and MPB files for monitoring of SQL on Linux.
 
 Management Pack for SQL Server consists of the following files:  
 
 - Microsoft.SQLServer.Core.Library.mpb
-
 - Microsoft.SQLServer.Core.Views.</i>mp
-
 - Microsoft.SQLServer.Core.WebDashboards.</i>mp
-
 - Microsoft.SQLServer.IS.Windows.mpb
-
 - Microsoft.SQLServer.IS.Windows.Views.</i>mp
-
 - Microsoft.SQLServer.Visualization.Library.mpb
-
 - Microsoft.SQLServer.Linux.Views.</i>mp
-
 - Microsoft.SQLServer.Linux.Discovery.mpb
-
 - Microsoft.SQLServer.Linux.Monitoring.mpb
-
 - Microsoft.SQLServer.Windows.Views.mpb
-
 - Microsoft.SQLServer.Windows.Discovery.mpb
-
 - Microsoft.SQLServer.Windows.Monitoring.mpb
 
 >[!NOTE]
@@ -52,7 +40,7 @@ Management Pack for SQL Server consists of the following files:
 
 ### Notes to Release
 
-- **Previous generation of management packs for SQL Server 2012, 2014, and 2016 reached the end of support**
+- **Previous generations of management packs for SQL Server 2012, 2014, and 2016 reached the end of support**
 
   This management pack is virtually a new version of the version-agnostic management pack for SQL Server 2017 and higher (last version - 7.0.7.0 as of July 2018). 
   

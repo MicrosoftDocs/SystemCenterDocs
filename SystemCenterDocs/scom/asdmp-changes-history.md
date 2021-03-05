@@ -79,7 +79,7 @@ ms.technology: operations-manager
   - Fixed issue: "Collect Elastic Database Pool Number of Databases" rule does not collect performance data if REST monitoring is used
   - Fixed issue: "Operations Manager Expression Filter Module" error messages appear in the Operations Manager event log
 
-## December 2016 
+## December 2016 - 6.7.11.0 CTP1
 
 ### What's New
 
@@ -122,7 +122,3 @@ ms.technology: operations-manager
   - Deprecated Collect Azure SQL Database Internal/External Network Egress/Ingress performance rules
   - Deprecated SQL Azure Federation and Federation member workflows
   - Implemented rebranding: the management pack and some workflow names have been changed
-
-## May 2013 
-
-- The original release of this management pack

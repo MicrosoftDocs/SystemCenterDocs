@@ -20,69 +20,43 @@ Management Pack for SQL Server is version-agnostic. It supports discovery and mo
 Management Pack for SQL Server supports the following operating systems and platforms:
 
 - Windows Server 2012
-
 - Windows Server 2012 R2
-
 - Windows Server 2016
-
 - Windows Server 2019
-
 - Ubuntu 16.04 and 18.04
-
 - Red Hat Enterprise Linux 7.3 and 7.4
-
 - SUSE Linux Enterprise Server v12 SP2
-
 - Docker Engine 1.8+
-
 - Azure Kubernetes Service (AKS)
 
 Localized versions of Windows Server are also supported.
 
 ## SQL Server Features
 
-Management Pack for SQL Server works with any Express or Enterprise edition of SQL Server and supports the following features and configurations:
+Management Pack for SQL Server works with any edition of SQL Server from Express to Enterprise and supports the following features and configurations:
 
 - SQL Server Database Engine
-
 - SQL Server Database, including file groups, data files, transaction log files, FILESTREAM and Memory-Optimized Data containers.
-
 - Different storage options for databases are supported:
-  
   - Local storage (both drive letters and mount points)
-  
   - Cluster Shared Volumes
-  
   - SMB Shares
-  
-  - Azure BLOBs
-
+  - Azure BLOB
 - SQL Server Agent and Jobs
-
 - SQL Server Memory-Optimized Data (In-Memory OLTP)
-
 - SQL Server High Availability Features:
-  
   - Single-domain Availability Groups, including availability replicas and database replicas
-  
   - Distributed Availability Groups
-  
   - Failover Clustering
-  
   - Log Shipping
-  
   - [Not supported] Replication
-  
+
     Use dedicated management packs for SQL Server Replication to monitor this feature.
   
   - [Not supported] Mirroring
-  
   - [Not supported] Domain-independent Availability Groups
-  
   - [Not supported] Workgroup Cluster Availability Groups
-
 - Authentication Mode — both SQL Server Authentication and Windows Authentication are supported.
-
 - [Not supported] Localized versions of SQL Server
 
   Management Pack can only work with the English-language version of SQL Server.
@@ -94,13 +68,9 @@ Management Pack for SQL Server works with any Express or Enterprise edition of S
 Management Pack for SQL Server supports the following versions of System Center Operations Manager:
 
 - System Center Operations Manager 2012 R2
-
 - System Center Operations Manager 2016
-
 - System Center Operations Manager 1801
-
 - System Center Operations Manager 1807
-
 - System Center Operations Manager 2019
 
 ## Monitoring Modes
@@ -124,7 +94,3 @@ For more information about these modes, see [Monitoring Modes](ssmp-monitoring-m
 ## Management Groups
 
 Management Pack for SQL Server does not require a dedicated Management Group and can work in virtual environments.
-
-## See also
-
-- [Monitoring Modes](ssmp-monitoring-modes.md)
