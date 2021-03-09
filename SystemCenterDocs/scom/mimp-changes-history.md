@@ -41,7 +41,3 @@ ms.technology: operations-manager
   - Disabled “XTP Configuration Monitor”
   - Disabled “Database Backup Status Monitor”
   - Rebuild management pack and verify against the current version of Managed Instance Provided a few minor UI improvements to the Add Monitoring Wizard
-
-## February 2018 - 1.0.0.0 CTP
-
-- The original release of this management pack

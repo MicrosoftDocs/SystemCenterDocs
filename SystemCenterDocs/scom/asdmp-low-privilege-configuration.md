@@ -36,8 +36,4 @@ To configure low-privilege account, perform the following steps:
       GO
       GRANT VIEW DATABASE STATE TO [MonitoringUser]
       ```
-
-Use the **MonitoringUser** value when [configuring Azure SQL Database Run As Accounts](asdmp-run-as-accounts.md).  
-
->[!NOTE]
->For [custom query monitoring](asdmp-custom-query-monitoring.md), grant required permissions to the account that you use.
+      Use the **MonitoringUser** value when [configuring Azure SQL Database Run As Accounts](asdmp-run-as-accounts.md).

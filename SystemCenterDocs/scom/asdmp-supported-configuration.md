@@ -68,7 +68,8 @@ When using the vCore-based purchase model, the following rules do not collect da
 - Azure SQL DB: DB DTU Limit Count
 - Azure SQL DB: DB DTU Percentage
 
-When using the Hyperscale service tier, some of the space monitoring workflows may not collect data correctly. For more information see the related [Known Issue](asdmp-known-issues-and-troubleshooting.md).
+>[!NOTE]
+>When using the Hyperscale service tier, some of the space monitoring workflows may not collect data correctly. For more information see the related [Known Issue](asdmp-known-issues-and-troubleshooting.md).
 
 ## System Center Operations Manager
 

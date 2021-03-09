@@ -44,6 +44,3 @@ To create Run As accounts, perform the following steps:
 8. Open the **Distribution** tab and add a System Center Operations Manager agent that you want to use as a watcher node to monitor Azure SQL Database.
 
     ![Add agent](./media/asdmp/adding-agent.png)
-
-For more information about Run As accounts, see [Managing Run As Accounts and Profiles](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh212714(v=sc.12)?redirectedfrom=MSDN).
- 

@@ -21,22 +21,21 @@ Management Pack for Azure SQL Managed Instance has two monitoring templates for 
 
 - **Azure SQL MI – Manual**
 
-    This template allows you to add only selected instances to the monitoring list by specifying connection strings manually.
+    This template allows you to add the selected instances to the monitoring list by specifying connection strings manually.
 
 >[!NOTE]
 >Using both templates at the same time may cause manually added instances to be monitored by two sets of monitoring workflows. This leads to redundant use of resources and also may cause performance issues.
 
 ## Securables Configuration Status Monitor
 
-This monitor checks if each of the required SQL Server securables is accessible.
+This monitor checks if each of the required managed instance securables is accessible under the configured monitoring account. 
 
-The following is a complete list of securables that are checked by the monitor targeted to the SQL Server DB Engine:
+The following is a complete list of securables checked by the monitor:
 
 - Server-Level permissions
   - VIEW SERVER STATE
   - VIEW ANY DEFINITION
   - VIEW ANY DATABASE
-  - ALTER ANY DATABASE
 
 - SELECT permission on dynamic management views
   - sys.dm_os_performance_counters

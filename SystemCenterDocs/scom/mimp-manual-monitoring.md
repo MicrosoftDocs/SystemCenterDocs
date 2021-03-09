@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Manual Monitoring Template
 
-This template allows you to add only selected instances to the monitoring list by specifying connection strings manually.
+This template allows you to add the selected instances to the monitoring list by specifying connection strings manually.
 
 ## Configuring Manual Monitoring Template
 
@@ -43,7 +43,7 @@ To configure monitoring using the manual discovery monitoring template, perform 
 
     ![Add instances](./media/mimp/add-instance-credentials.png)
 
-    Use the Standard Security connection string format to specify connection settings:
+    Use the standard security connection string format to specify connection settings:
 
     ```
     Server=\<ServerAddress>;Database=\<DatabaseName>;
@@ -67,11 +67,11 @@ To configure monitoring using the manual discovery monitoring template, perform 
 
     After the connection test is complete, you can view and edit properties of the added instance. For that, select an instance and click **Edit Instance**.
 
+    >[!NOTE]
+    >The monitoring template wizard may show the following error: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process" or the “Monitoring error” exception while checking connection. For more information, see [Known Issues and Troubleshooting](mimp-known-issues-and-troubleshooting.md)
+
     ![Edit instasnce parameters](./media/mimp/editing-instance.png)
 
 6. At the **Summary** step, review monitoring settings and click **Create**.
-
-    >[!NOTE]
-    >The monitoring template wizard may show the following error: "An error occurred discovery: A connection was successfully established with the server, but then an error occurred during the login process" or the “Monitoring error” exception while checking connection. For more information, see [Known Issues and Troubleshooting](mimp-known-issues-and-troubleshooting.md)
 
     ![Review summary](./media/mimp/manual-summary.png)

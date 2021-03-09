@@ -25,9 +25,7 @@ Every managed instance should have a login for the monitoring account. This logi
 
 To configure least-privilege monitoring, use the following two scripts as an example.
 
-The first script should be run against every managed instance. When deploying new managed instances, make sure to run this script for each of these instances. You do not need to run the script for each new database that you have created after the initial execution. The script updates the 'model' database so that later created databases will have the required user, but you need to run this script for every database that was attached or restored after the initial execution of this script.
-
-The second script adds the monitoring account to the **db_owner** role which may not be allowed. The *d*b owner** permissions are required to enable the management pack tasks for running DBCC checks. If you do not need these tasks, do not give these permissions.
+The following script should be run against every managed instance. When deploying new managed instances, make sure to run this script for each of these instances. You do not need to run the script for each new database that you have created after the initial execution. The script updates the **model** database so that later created databases will have the required user, but you need to run this script for every database that was attached or restored after the initial execution of this script.
 
 ```SQL
 --First script that:
@@ -74,6 +72,8 @@ EXEC sp_addrolemember @rolename='db_datareader', @membername='MILowPriv_role';
 EXEC sp_addrolemember @rolename='db_owner', @membername='MILowPriv_role';
 EXEC sp_addrolemember @rolename='SQLAgentReaderRole', @membername='MILowPriv_role';
 ```
+
+This script adds the monitoring account to the **db_owner** role which may not be allowed. The **db owner** permissions are required to enable the management pack tasks to run DBCC checks. If you do not need these tasks, do not give these permissions.
 
 ```SQL
 --Second script that adds MILowPriv user to db_owner role for master, msdb, model, and all user databases.

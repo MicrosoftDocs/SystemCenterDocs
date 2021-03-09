@@ -281,5 +281,6 @@ To begin monitoring of Azure SQL Databases using T-SQL queries, perform the foll
 
 10. At the **Summary** step, review connection settings and click **Create**.
 
->[!NOTE]
->Since Management Pack for Azure SQL Database retrieves data directly from Azure, you will be charged for the amount of data transferred outside the Microsoft Azure environment. Keep monitoring and discovery intervals as high as possible to reduce both the load and the amount of transferred data. If you do not need certain metrics collected by this management pack, disable them.
+## See also
+
+- [Custom Query-Based Monitoring](asdmp-custom-query-monitoring.md)
