@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 02/16/2021
+ms.date: 03/10/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -599,8 +599,7 @@ Follow these steps to replace the existing report files:
 ::: moniker-end
 
 ## Next steps
+- To know the new features included, see [What's new](what-s-new-in-dpm.md).
 - To install DPM, see the article, [Install DPM](install-dpm.md).
-
 - If you would like to consult planning information for your environment, see [Preparing your environment for System Center Data Protection Manager](prepare-environment-for-dpm.md).
-
 - See these KBs for ReFS specific issues - [KB4016173](https://support.microsoft.com/en-us/help/4016173/fix-heavy-memory-usage-in-refs-on-windows-server-2016-and-windows-10), [KB4035951](https://support.microsoft.com/en-us/help/4035951/refs-volume-using-dpm-becomes-unresponsive-on-windows-server-2016).
