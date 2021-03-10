@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 03/04/2021
+ms.date: 03/10/2021
 title: Back up Hyper V virtual machines
 ms.technology: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -31,7 +31,7 @@ DPM can back up virtual machines running on Hyper-V host servers in the followin
 
 -   **Virtual machines with SMB storage** - Back up virtual machines hosted on a Hyper-V standalone server or cluster with SMB 3.0 file server storage. SMB shares are supported on a standalone file server or on a file server cluster. If you're using an external SMB 3.0 file server the DPM protection agent should be installed on it. If the storage server is clustered, the agent should be installed on each cluster node. You'll need full-share and folder-level permissions for the machine$ account of the application server on the SMB share.
 
--   **[Back up virtual machines configured for live migration](#BKMK_Live)** - Live migration allows you to move virtual machines from one location to while providing uniterrupted access. You can migrate virtual machines between two standalone servers, within a single cluster, or between standalone and cluster nodes. Multiple live migrations can run concurrently. You can also perform a live migration of virtual machine storage so that virtual machines can be moved to new storage locations while they continue to run.  DPM can back up virtual machines that are configured for live migration. Read more.
+-   **[Back up virtual machines configured for live migration](#BKMK_Live)** - Live migration allows you to move virtual machines from one location to while providing uninterrupted access. You can migrate virtual machines between two standalone servers, within a single cluster, or between standalone and cluster nodes. Multiple live migrations can run concurrently. You can also perform a live migration of virtual machine storage so that virtual machines can be moved to new storage locations while they continue to run.  DPM can back up virtual machines that are configured for live migration. Read more.
 
 -   **[Back up replica virtual machines](#BKMK_Replica)** - Back up replica virtual machines running on a secondary server (DPM 2012 R2 only)
 
@@ -70,9 +70,7 @@ DPM works seamlessly with the Hyper-V Volume Shadow Copy Services (VSS) writer t
 If these conditions aren't met DPM will perform an offline backup where the virtual machine is paused and placed in a saved state while the snapshot is taken, and then the virtual machine is resumed. This means the virtual machine is unavailable during the backup, usually a short period of less than a minute for many environments.
 
 ## Protect VMs on SOFS clusters
-DPM can back up VMs deployed on both NTFS and ReFS-based SOFS clusters.
-
-To protect VMs on SOFS clusters, do the following procedures:
+DPM can back up VMs deployed on both NTFS and ReFS-based SOFS clusters. To protect VMs on SOFS clusters, do the following procedures:
 
 Add the following machine accounts to the backup operator groups and share permissions:
 
@@ -285,7 +283,7 @@ A replica virtual machine is turned off until a failover is initiated, and VSS c
 
 - Initial replication between the primary and secondary site is in progress or pending for the virtual machine.
 
-- .hrl logs are being applied to the replica virtual machine, or a previous action to apply the .hrl logs on the virtual disk failed, or was cancelled or interrupted.
+- .hrl logs are being applied to the replica virtual machine, or a previous action to apply the .hrl logs on the virtual disk failed, or was canceled or interrupted.
 
 - Migration or failover of the replica virtual machine is in progress
 
