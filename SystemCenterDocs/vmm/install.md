@@ -5,7 +5,7 @@ description: This article provides installation instructions for VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 06/30/2020
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -26,6 +26,9 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 - Review the system requirements and [planning information](plan-install.md). Learn about [system requirements](system-requirements.md)
 - Make sure you have at least local admin permissions on the computer before you run the setup.
 - The service account should be an administrator on the VMM server.
+
+> [!NOTE]
+> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
 
 ## Run setup
 
