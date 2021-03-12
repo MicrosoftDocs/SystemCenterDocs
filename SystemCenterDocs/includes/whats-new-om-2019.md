@@ -390,7 +390,7 @@ With Operations Manager 2019 UR3, there is an improvement in performance in the 
   With Operations Manager 2019 UR3, the SQL queries that fetch the relevant data and helps change the settings of a user role are optimized. This optimization has led to significant improvements in the load time.
 
 - **Grooming of maintenance mode staging table**
-  in earlier releases, Operations Manager Data warehouse grooming (emptying) of maintenance mode staging table was not occurring. The table increased every day into millions of rows, which eventually filled up the database that could potentially lead to additional cost to spin up a new database. The increase in utilization of database is usually correlated with decrease in performance of Operation Manager's console.
+  In earlier releases, Operations Manager Data warehouse grooming (emptying) of maintenance mode staging table was not occurring. The table increased every day into millions of rows, which eventually filled up the database that could potentially lead to additional cost to spin up a new database. The increase in utilization of database is usually correlated with decrease in performance of Operation Manager's console.
 
   With Operations Manager 2019 UR3, an index is added to the maintenance mode staging table; grooming of the table occurs now.
 
