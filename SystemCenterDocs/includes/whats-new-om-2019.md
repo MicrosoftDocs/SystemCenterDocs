@@ -377,4 +377,29 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC.
 
 ### Performance improvements in Operations Manager
 
-<inputs yet to receive>
+With Operations Manager 2019 UR3, there is an improvement in performance in the following scenarios:
+
+- **Improvements in load time for Windows computer view**
+  Windows computer view in Operations Manager console was taking longer time to load.
+
+  With Operations Manager 2019 UR3, the load time is decreased by optimizing the SQL query relevant to the Windows computer view.
+
+- **Improvement in load time while changing user role privileges**  
+  Prior to 2019 UR3, any changes to a user's role privileges (for example, providing or revoking permissions on specific views or dashboards) was taking about 30 minutes.
+
+  With Operations Manager 2019 UR3, the SQL queries that fetch the relevant data and helps change the settings of a user role are optimized. This optimization has led to significant improvements in the load time.
+
+- **Grooming of maintenance mode staging table**
+  in earlier releases, Operations Manager Data warehouse grooming (emptying) of maintenance mode staging table was not occurring. The table increased every day into millions of rows, which eventually filled up the database that could potentially lead to additional cost to spin up a new database. The increase in utilization of database is usually correlated with decrease in performance of Operation Manager's console.
+
+  With Operations Manager 2019 UR3, an index is added to the maintenance mode staging table; grooming of the table occurs now.
+
+- **Improvement in SDK services**
+  Operations Manager console took a long time to load and complete basic tasks.
+
+  With Operations Manger 2019 UR3, we optimized relevant SQL queries and the performance has significantly improved now.
+
+- **Reliability and performance improvement in Xplat agent**
+  In Operations Manager 2019 UR3, heartbeat threads are isolated from performance data related threads, so any malfunctioning in performance providers would not affect heartbeat request, thereby improving reliability of Operations Manager.
+
+  Filters are also introduced in Xplat MPs to help you customize the discovery and monitoring scope of the entities of interest; further to improve performance and scale of Xplat agent.   
