@@ -400,6 +400,8 @@ With Operations Manager 2019 UR3, there is an improvement in performance in the 
   With Operations Manger 2019 UR3, we optimized relevant SQL queries and the performance has significantly improved now.
 
 - **Reliability and performance improvement in Xplat agent**
+
+
   In Operations Manager 2019 UR3, heartbeat threads are isolated from performance data related threads, so any malfunctioning in performance providers would not affect heartbeat request, thereby improving reliability of Operations Manager.
 
   Filters are also introduced in Xplat MPs to help you customize the discovery and monitoring scope of the entities of interest; further to improve performance and scale of Xplat agent.   
