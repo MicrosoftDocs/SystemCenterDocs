@@ -19,13 +19,13 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-## Before you start
-
-- Make sure you're running VMM 2019 UR3 or later.
-
 Read this article to set up a Azure Stack HCI cluster in System Center - Virtual Machine Manager (VMM). [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI OS here.
 
 You can deploy a Azure Stack HCI cluster by provisioning from bare-metal servers.
+
+## Before you start
+
+- Make sure you're running VMM 2019 UR3 or later.
 
 **What’s supported?**
 
