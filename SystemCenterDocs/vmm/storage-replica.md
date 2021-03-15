@@ -22,7 +22,7 @@ ms.technology: virtual-machine-manager
 
 Storage Replica was introduced in Windows Server 2016. It enables storage-agnostic, block-level, synchronous replication between clusters or servers for disaster preparedness and recovery, as well as stretching of a failover cluster across sites for high availability. Synchronous replication enables mirroring of data in physical sites with crash-consistent volumes, ensuring zero data loss at the file system level. Asynchronous replication allows site extension beyond metropolitan ranges with the possibility of data loss.
 
-[Learn more](https://aka.ms/storagereplica) and review the [FAQ](https://technet.microsoft.com/library/mt126107.aspx).
+[Learn more](/windows-server/storage/storage-replica/storage-replica-overview) and review the [FAQ](/windows-server/storage/storage-replica/storage-replica-frequently-asked-questions).
 
 The article provides explains how Storage Replica integrates with System Center - Virtual Machine Manager (VMM),  and describes how to set up Storage Replica using PowerShell to replicate storage in the VMM fabric.
 
@@ -55,7 +55,7 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 ## Deployment steps
 
 1.  **Identify storage**: Identify the source and destination storage you want to use.
-2.  **Discover and classify**: If your storage isn't currently in the VMM fabric, you need to discover it with VMM. Both the source and desintation storage must be managed by the same VMM server. After discovery you create a storage pool for it, and a storage classification for it. [Learn more](https://technet.microsoft.com/library/gg610600.aspx).
+2.  **Discover and classify**: If your storage isn't currently in the VMM fabric, you need to discover it with VMM. Both the source and desintation storage must be managed by the same VMM server. After discovery you create a storage pool for it, and a storage classification for it. [Learn more](/previous-versions/system-center/system-center-2012-R2/gg610600(v=sc.12)).
 3.  **Pair**: Pair the source and destination storage array.
 4.  **Provision**: After your storage is paired you'll need to provision identical data and log volumes from the source and destination storage pools created on the respective storage arrays. In addition to provisioning a volume for data that will be replicated, you also need to provision a volume for replication transaction logs. As data is updated on source storage, the transaction log is appended and delta changes are synchronized (using synchronous replication) with destination storage.
 5.  **Create replication groups**: After the volumes are in place you create replication groups. Replication groups are logical groups containing multiple volumes. The replication groups need to be identical, containing the data and log volumes for the source and destination sites respectively.
@@ -75,32 +75,41 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 1. Before you start retrieve the name of the PowerShell objects you want to use.
 2. Get the name of the primary storage array and assign to variable.
 
-        $PriArray = Get-SCStorageArray - Name $PriArrayName
+      ```PowerShell
+          $PriArray = Get-SCStorageArray - Name $PriArrayName
+      ```
 
 3. Get the name of the secondary storage array and assign to variable.
 
-        RecArray = Get-SCStorageArray - Name $RecArrayName
+      ```PowerShell
+          RecArray = Get-SCStorageArray - Name $RecArrayName
+      ```
 
 4. Get the name of the primary storage pool and assign to variable.
 
-        $ $ PriPoolName $RecPool = Get-SCStoragePool -Name $
-
-
+      ```PowerShell
+          $ $ PriPoolName $RecPool = Get-SCStoragePool -Name $
+      ```
 
 5. Get the name of the secondary storage pool and assign to variable.
 
-        $ $PriPoolName $RecPool = Get-SCStoragePool -Name $
+      ```PowerShell
+          $ $PriPoolName $RecPool = Get-SCStoragePool -Name $
+      ```
 
 
 ## Pair the storage arrays
 
 Pair the primary and secondary storage arrays using the variables for the storage array names. Note that the array name should be the same as the cluster name.
 
+  ```PowerShell
         Set-SCStorageArray -StorageArray $PriArray -PeerStorageArrayName $RecArray.name
+  ```
 
 If you created the cluster outside VMM and you do need to rename the array name to match the cluster name use:
-
+    ```PowerShell
         Get-SCStorageArray -Name "existing-name" | Set-SCStorageArray -Name "new-name"
+    ```
 
 
 ## Provision LUNs and create the storage groups
@@ -109,6 +118,7 @@ Provision a LUN from the storage pool for data and for the log. Then create repl
 
 1. Provision and create on the source.
 
+    ```PowerShell
         Set-SCStorageArray -StorageArray $PriArray -PeerStorageArrayName $RecArray.name
 
         $PrimaryVol = New-SCStorageVolume -StorageArray $PriArray -StoragePool $PriPool -Name PrimaryVol -SizeInBytes $VolSize -RunAsynchronously -PhysicalDiskRedundancy "1" -FileSystem "CSVFS_NTFS" -DedupMode "Disabled"
@@ -116,20 +126,25 @@ Provision a LUN from the storage pool for data and for the log. Then create repl
         $PrimaryLogVol = New-SCStorageVolume -StorageArray $PriArray -StoragePool $PriPool -Name PrimaryLogVol -SizeInBytes $LogVolSize -GuidPartitionTable -RunAsynchronously -FileSystem "NTFS"
 
         $PriRG = New-SCReplicationGroup -Name PriRG -StorageVolume $PrimaryVol -LogStorageVolume $PrimaryLogVol
+    ```
 
 2. Provision and create on the destination.
 
+    ```PowerShell
         $RecoveryVol = New-SCStorageVolume -StorageArray $RecArray -StoragePool $RecPool -Name RecoveryVol -SizeInBytes $VolSize -RunAsynchronously -PhysicalDiskRedundancy "1" -FileSystem "CSVFS_NTFS" -DedupMode "Disabled"
 
         $RecoveryLogVol = New-SCStorageVolume -StorageArray $RecArray -StoragePool $RecPool -Name RecoveryLogVol -SizeInBytes $LogVolSize -GuidPartitionTable -RunAsynchronously -FileSystem "NTFS"
 
         $RecRG = New-SCReplicationGroup -Name RecRG -CreateOnArray -ProtectionMode Synchronous -StorageVolume $RecoveryVol -LogStorageVolume $RecoveryLogVol
+    ```
 
 ## Enable replication
 
 Now enable synchronous replication between the source and destination replication groups.
 
-    Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation EnableProtection -TargetReplicationGroup $RecRG -EnableProtectionMode Synchronous
+  ```PowerShell
+      Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation EnableProtection -TargetReplicationGroup $RecRG -EnableProtectionMode Synchronous
+  ```
 
 ## Refresh the storage providers
 
@@ -140,21 +155,27 @@ Now enable synchronous replication between the source and destination replicatio
 
 Retrieve the replication status for the source replication group to make sure that replication is working as expected.
 
-    Get replication status Get-SCReplicationGroup | where {($_.Name.EndsWith("PriRG")) -or ($_.Name.EndsWith("RecRG"))}  | fl Name, IsPrimary, ReplicationState, ReplicationHealth
+  ```PowerShell
+      Get replication status Get-SCReplicationGroup | where {($_.Name.EndsWith("PriRG")) -or ($_.Name.EndsWith("RecRG"))}  | fl Name, IsPrimary, ReplicationState, ReplicationHealth
+  ```
 
 ## Create a VM
 
 Create a VM using a LUN in the source replication group. Alternatively you can create a VM in the VMM console.
 
-    New-SCVirtualMachine -Name "DemoVM" -VMHost <HostName> -Path $PrimaryVol -VMTemplate <VMTemplate>
+  ```PowerShell
+      New-SCVirtualMachine -Name "DemoVM" -VMHost <HostName> -Path $PrimaryVol -VMTemplate <VMTemplate>
+  ```
 
 
 ## Run a failover
 Run failover.
 
-    Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation PrepareForFailover
+  ```PowerShell
+      Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation PrepareForFailover
 
-    Set-SCReplicationGroup -ReplicationGroup SRecRG -Operation Failover
+      Set-SCReplicationGroup -ReplicationGroup SRecRG -Operation Failover
+  ```
 
 ## Run failback
 
@@ -162,7 +183,9 @@ Before you fail back, in the VMM console, remove the source VMs if they"re still
 
 Now run failback:
 
-    Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation ReverseRoles -EnableProtectionMode Synchronous -TargetReplicationGroup $RecRG
+  ```PowerShell
+      Set-SCReplicationGroup -ReplicationGroup $PriRG -Operation ReverseRoles -EnableProtectionMode Synchronous -TargetReplicationGroup $RecRG
+  ```
 
 After running failback you can create VMs at the source site using the failed back VHD/configuration files.
 
@@ -170,11 +193,13 @@ After running failback you can create VMs at the source site using the failed ba
 
 If you want to stop replication you'll need to run this cmdlet at the source and destination.
 
-    Set-SCReplicationGroup -ReplicationGroup $RecRG -Operation TearDown  Tear down need to be done on both RGs
+  ```PowerShell
+      Set-SCReplicationGroup -ReplicationGroup $RecRG -Operation TearDown  Tear down need to be done on both RGs
+  ```
 
 
 
 ## Learn more
 
-- Learn more about [Storage Replica](https://aka.ms/storagereplica)
+- Learn more about [Storage Replica](/windows-server/storage/storage-replica/storage-replica-overview)
 - Learn about [allocating storage](hyper-v-storage.md) to Hyper-V hosts and clusters.

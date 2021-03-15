@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 8cbaa369-8881-46f6-9615-e9cbab638d5c
 ---
 
-# Work with management packs in the Service Manager Authoring Tool
+# Management packs in the Service Manager 
 
 ::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 

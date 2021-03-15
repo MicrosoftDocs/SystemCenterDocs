@@ -307,7 +307,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|  
 
 ## Universal Linux (Debian package)
-Debian, Ubuntu Server  
+Debian 8 and Ubuntu 14.04, 16.04 are supported.
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -316,7 +316,7 @@ Debian, Ubuntu Server
 |PAM|Pluggable Authentication Modules|0.79-3|  
 
 ## Universal Linux (RPM package)
-CentOS, Oracle Linux  
+CentOS 6, 7 and Oracle Linux 6, 7 are supported.
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  

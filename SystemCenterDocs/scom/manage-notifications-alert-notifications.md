@@ -1,6 +1,6 @@
 ---
 title: Subscribing to Alert Notifications
-description: This article highlights the section titles contained within this section of the Operations Manager documentation.
+description: This article describes the alerts that you can generate and notify individuals through email, instant messaging, and text messages.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa

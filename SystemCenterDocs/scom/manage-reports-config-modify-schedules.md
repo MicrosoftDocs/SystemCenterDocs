@@ -68,7 +68,7 @@ For more information on how to run and save a report, see [How to Run, Save, and
 
 ## How to Email scheduled reports
 
-The report server e-mail delivery extension is not configured by default. You must use the Reporting Services Configuration Manager to minimally configure the extension.  For additional  information on how to configure SQL Server Reporting Services for e-mail delivery, see [Configure a Report Server for E-Mail Delivery (SSRS Configuration Manager)](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager).
+The report server e-mail delivery extension is not configured by default. You must use the Reporting Services Configuration Manager to minimally configure the extension.  For additional  information on how to configure SQL Server Reporting Services for e-mail delivery, see [Configure a Report Server for E-Mail Delivery (SSRS Configuration Manager)](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager).
 
 
 ### Configure email settings in the SQL Server Report Server  
@@ -157,7 +157,7 @@ Use the following procedure to cancel scheduled reports.
 
 ## Schedule the delivery of a report to the SQL Report Server Cache  
 
-You can create a schedule for sending reports to the cache in the SQL Server Report Server and thereby shorten the time required to retrieve a report if the report is large or accessed frequently. For more information about report caching, see [Caching Reports (SSR)](https://msdn.microsoft.com/library/ms155927.aspx).  
+You can create a schedule for sending reports to the cache in the SQL Server Report Server and thereby shorten the time required to retrieve a report if the report is large or accessed frequently. For more information about report caching, see [Caching Reports (SSR)](/sql/reporting-services/report-server/caching-reports-ssrs).  
 
 The example in this procedure uses an availability report that you have already created and saved as a favorite.
 

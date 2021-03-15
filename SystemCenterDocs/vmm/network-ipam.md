@@ -1,7 +1,7 @@
 ---
 ms.assetid: 04774952-44b7-48f5-847a-194febefcc5e
 title: Set up an IPAM server in the VMM fabric
-description: This article describes how to manage MAC address pools in the VMM fabric
+description: This article describes how to add an IP Address Management server to System Center.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
@@ -29,9 +29,9 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 
 ## Before you start
 
-- Make sure you have an IPAM server. [Learn more](https://technet.microsoft.com/library/hh831353.aspx?f=255&MSPPError=-2147217396). The IPAM server can be running these versions of [Windows Servers](system-requirements.md).
+- Make sure you have an IPAM server. [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831353(v=ws.11)?f=255&MSPPError=-2147217396). The IPAM server can be running these versions of [Windows Servers](system-requirements.md).
 - Create or identify a domain account and set it to never expire. On the IPAM server add the account to these groups:
-	- **IPAM ASM Administrators**: A local group that exists on all IPAM servers, and provides permissions for IP address space management (ASM). For more information, see [Assign Administrator Roles](https://technet.microsoft.com/library/jj878348.aspx).
+	- **IPAM ASM Administrators**: A local group that exists on all IPAM servers, and provides permissions for IP address space management (ASM). For more information, see [Assign Administrator Roles](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj878348(v=ws.11)).
 	- **Remote Management Users**: A built-in group that provides access to WMI resources through management protocols, such as WS-Management through the Windows Remote Management service.
 - Check that the time is synchronized on the IPAM and VMM servers. This depends on settings for the Windows Time Service. If you can't synchronize them you'll need to update permissions on the IPAM software so that VMM can query the current time setting on the server. To do this, on the IPAM server run **mimgmt.msc** to open the WMI Control (Local) snap-in. Right-click **WMI Control (Local)** > **Properties** > **Security**. Navigate to **Root\CIMV2**, click the Security button Security and select the account you configured. For **Remote Enable**, select **Allow**.
 - Verify the FQDN of the IPAM server to use as a connection string.

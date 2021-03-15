@@ -1,6 +1,6 @@
 ---
 title: Delete VM Disk activity in System Center - Orchestra
-description: The Delete VM Disk activity is used in a runbook to remove or delete a virtual disk from a virtual machine that is controlled by the VMware vSphere server.
+description: The Delete VM Disk activity is used in a runbook to remove or delete a virtual disk from a virtual machine that is controlled by the VMware vSphere server. It also lists the activity configuration.
 ms.date: 01/22/2018
 ms.prod: system-center
 ms.technology: orchestrator
@@ -9,7 +9,7 @@ author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
-# Delete VM Disk activity
+# Delete a virtual disk from a VM
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 

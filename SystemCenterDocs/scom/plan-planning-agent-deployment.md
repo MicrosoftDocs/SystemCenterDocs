@@ -5,7 +5,7 @@ description: This article provides design guidance for agent deployment on Windo
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/25/2018
+ms.date: 01/29/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -24,10 +24,10 @@ In System Center Operations Manager, an agent is a service that is installed on 
 
 ## Windows agent
 
-On a monitored Windows computer, the Operations Manager agent is listed as the Microsoft Monitoring Agent service. The Microsoft Monitoring Agent service collects event and performance data, executes tasks, and other workflows defined in a management pack. Even when the service is unable to communicate with the management server it reports to, the service continues to run and queues the collected data and events on the disk of the monitored computer. When the connection is restored, the Microsoft Monitoring Agent service sends collected data and events to the management server.
+On a monitored Windows computer, the Operations Manager agent is listed as the Microsoft Monitoring Agent (MMA) service. The Microsoft Monitoring Agent service collects event and performance data, executes tasks, and other workflows defined in a management pack. Even when the service is unable to communicate with the management server it reports to, the service continues to run and queues the collected data and events on the disk of the monitored computer. When the connection is restored, the Microsoft Monitoring Agent service sends collected data and events to the management server.
 
 > [!NOTE]
-> The Microsoft Monitoring Agent service is sometimes referred to as the health service.
+> - The Microsoft Monitoring Agent service is sometimes referred to as the health service.
 
 The Microsoft Monitoring Agent service also runs on management servers. On a management server, the service runs monitoring workflows and manages credentials. To run workflows, the service initiates MonitoringHost.exe processes using specified credentials. These processes monitor and collect event log data, performance counter data, Windows Management Instrumentation (WMI) data, and run actions such as scripts.
 
@@ -99,13 +99,18 @@ This requires you to request certificates for each agent that will report to a g
 
 System Center Operations Manager Agents may be installed by using one of the following three methods.  Most installations use a combination of these methods to install different sets of computers, as appropriate.
 
+>[!NOTE]
+> - You cannot install MMA on a computer, where Operations Manager management server, gateway server, operations console, operational database, web console, System Center Essentials or System Center Service Manager is installed - as they have their built-in version of MMA already installed.
+> -	You can only use either MMA or log analytics agent (VM Extension version).
+
+
 - The discovery and installation of one or more agents from the Operations console. This is the most common form of installation.  A management server must be able to connect the computer with RPC, and either the management server Action Account or other provided credentials must have administrative access to the target computer.
 - Inclusion in the installation image. This is a manual installation to a base image that is used for the preparation of other computers.  In this case, Active Directory integration may be used to automatically assign the computer to a management server upon the initial startup.
 - Manual installation. This method is used when the agent cannot be installed by one of the other methods—for example, when remote procedure call (RPC) is unavailable because of a firewall. The setup is manually run on the agent or deployed through an existing software distribution tool.
 
 Agents that are installed by using the Discovery Wizard can be managed from the Operations console, such as updating agent versions, applying patches, and configuring the management server that the agent reports to.
 
-When you install the agent using a manual method, updates to the agent must also be performed manually. You will be able to use Active Directory integration to assign agents to management groups. For more information, see [Integrating Active Directory and Operations Manager](https://technet.microsoft.com/library/hh212829.aspx).
+When you install the agent using a manual method, updates to the agent must also be performed manually. You will be able to use Active Directory integration to assign agents to management groups. For more information, see [Integrating Active Directory and Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212829(v=sc.12)).
 
 ### Agent deployment to Windows system
 
@@ -162,4 +167,4 @@ Configuration of agent assignment is managed by an Operations Manager administra
 
 * To understand how to install the Linux and UNIX from the Operations console, see [Install agent on UNIX and Linux using the Discovery Wizard](manage-deploy-crossplat-agent-console.md).   
 
-* Review [How to configure and use Active Directory Integration for agent assignment](manage-ad-integration-agent-assignment.md) to learn how to create the container in Active Directory, configure agent failover assignment, and manage the configuration.   
+* Review [How to configure and use Active Directory Integration for agent assignment](manage-ad-integration-agent-assignment.md) to learn how to create the container in Active Directory, configure agent failover assignment, and manage the configuration.

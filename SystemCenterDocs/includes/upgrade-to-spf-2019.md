@@ -47,7 +47,7 @@ Here's the recommended upgrade order for the above scenario:
 1. Make sure Windows Azure Pack, SPF, and VMM are all running the required updates.
 2. We recommend that you shut down VMM and Windows Azure Pack servers, removing all database activity.
 3. Verify SPF [system requirements](../spf/system-requirements-spf.md). Note that SPF must run on Windows Server 2016/2019 - Core or Desktop experience.
-4. Verify VMM [console requirements](https://docs.microsoft.com/system-center/vmm/system-requirements?view=sc-vmm-1801#vmm-console-operating-system).
+4. Verify VMM [console requirements](../vmm/system-requirements.md?preserve-view=true&view=sc-vmm-1801#vmm-console-operating-system).
 
 
 ## Run the SPF upgrade
@@ -80,8 +80,8 @@ Prepare the SPF 2019 computer on which you want to run the upgrade.
 
 1. Rename the VM  you set up. Use the original name of the SPF computer. So change the VM name from **SERVER-SPF-UPGRADE** to **SERVER-SPF-01**.
 2. Join the VM to the domain.
-3. Install the [VMM console](https://docs.microsoft.com/system-center/vmm/install-console?view=sc-vmm-1801).For a core installation you can install from the [command line](https://docs.microsoft.com/system-center/vmm/install-console?view=sc-vmm-2016#install-the-console-from-the-command-prompt), or set up from the user interface and change to Core later.
-4. Install [SPF 2019](https://docs.microsoft.com/system-center/spf/deploy-spf?view=sc-spf-1801), using the existing SQL Server database name during setup.
+3. Install the [VMM console](../vmm/install-console.md).For a core installation you can install from the [command line](../vmm/install-console.md#install-the-console-from-the-command-prompt), or set up from the user interface and change to Core later.
+4. Install [SPF 2019](../spf/deploy-spf.md), using the existing SQL Server database name during setup.
 
 
 ## Post-upgrade tasks

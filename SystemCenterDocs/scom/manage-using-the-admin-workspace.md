@@ -1,6 +1,6 @@
 ---
-title: Using the Administration workspace in Operations Manager
-description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
+title: Configure a management group using the Administration workspace
+description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console. In the System Center Operations Manager Operations console, the Administration workspace is the primary workspace for administrators.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Using the Administration workspace in Operations Manager
+# Configure a management group using the Administration workspace
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -40,7 +40,7 @@ You can use **Device Management** to perform configuration of specific managemen
 |--------|-------|------------------------|  
 |Agent Managed|To modify the configuration of agent-managed computers, such as:<br><br>-   Change the primary management server for agent-managed computers.<br>-   Repair the agent installation.<br>-   Uninstall an agent.<br>-   Override the management group agent heartbeat settings on a specific agent. A heartbeat is a periodic pulse from an agent to its management server.<br>-   Configure an agent-managed computer as a proxy for agentless-managed computers.|-   [Configure agent on Windows computers](manage-deploy-config-windows-agent.md)<br>-   [Upgrade and uninstall Windows agent](manage-uninstall-windows-agent.md)<br>-   [Upgrade and uninstall UNIX/Linux agent](manage-upgrade-uninstall-crossplat-agent.md)<br>-   [Agentless Monitoring in Operations Manager](manage-agentless-monitoring.md)|  
 |Agentless Managed|To change the proxy agent for an agentless-managed computer. The proxy agent can be any agent-managed computer in the management group configured to be a proxy.|[Agentless Monitoring in Operations Manager](manage-agentless-monitoring.md)|  
-|Management Servers|To modify the configuration of management servers, such as:<br><br>-   Override the management group heartbeat failure setting and configure the number of missed heartbeats a management server will allow for an agent before it changes the state of the respective computer to critical.<br>-   Override the Management Group Manual Agent Installs setting and configure a management server to reject or put in Pending Management agents installed with MOMAgent.msi.<br>-   Configure a management server as a proxy for agentless managed computers.<br>-   Configure the Internet proxy settings for a management server.|-   [How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md)<br>-   [Manage manual agent installs](manage-process-manual-agent-install.md)<br>-   [Agentless Monitoring in Operations Manager](manage-agentless-monitoring.md)<br>-   [How to Configure the Internet Proxy Settings for a Management server](https://go.microsoft.com/fwlink/?LinkId=207768) |  
+|Management Servers|To modify the configuration of management servers, such as:<br><br>-   Override the management group heartbeat failure setting and configure the number of missed heartbeats a management server will allow for an agent before it changes the state of the respective computer to critical.<br>-   Override the Management Group Manual Agent Installs setting and configure a management server to reject or put in Pending Management agents installed with MOMAgent.msi.<br>-   Configure a management server as a proxy for agentless managed computers.<br>-   Configure the Internet proxy settings for a management server.|-   [How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md)<br>-   [Manage manual agent installs](manage-process-manual-agent-install.md)<br>-   [Agentless Monitoring in Operations Manager](manage-agentless-monitoring.md)<br>-   [How to Configure the Internet Proxy Settings for a Management server](/previous-versions/system-center/system-center-2012-R2/hh456443(v=sc.12)) |  
 |Pending Management|To approve or reject an agent that was installed with MOMagent.msi if the management group for the agent is configured to **Review new manual agent installations in pending management view** but not **Auto-approve new manually installed agents**. Agents pending approval are displayed for this item.|[Process Manual Agent Installations](manage-process-manual-agent-install.md)|  
 |UNIX/Linux Servers|To modify the configuration of agent-managed UNIX and Linux servers.|-   [Agent deployment planning](plan-planning-agent-deployment.md)<br>-   [Discover and install agent on UNIX/Linux](manage-deploy-crossplat-agent-console.md)|  
 
@@ -102,4 +102,4 @@ The following table summarizes the settings you can manage in **Settings** in th
 |Reporting|Configure the path for the reporting server.|[Using the Reporting Workspace in Operations Manager](manage-reports-run-save-export.md)|  
 |Web Addresses|Designate web addresses for the Web console and online company knowledge.|[How to Connect to the Web Console](manage-consoles-how-to-connect.md#how-to-connect-to-the-web-console)|  
 |Server Heartbeat|Configure the number of missed heartbeats before the management server pings the agent-managed computer.|[How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md)|  
-|Server Security|Specify how the management server should handle manually-installed agents.|[Process Manual Agent Installations](manage-process-manual-agent-install.md)|  
+|Server Security|Specify how the management server should handle manually-installed agents.|[Process Manual Agent Installations](manage-process-manual-agent-install.md)|

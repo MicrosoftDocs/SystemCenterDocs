@@ -1,6 +1,6 @@
 ---
 title: SharePoint Activities
-description: The following configuration instructions apply to all activities in this integration pack.
+description: The following configuration instructions apply to all activities in this integration pack. It also lists the properties tabs.
 ms.custom: na
 ms.date: 12/02/2016
 ms.prod: system-center
@@ -108,7 +108,7 @@ An activity can subscribe only to data from the activities that are linked befor
 
 3.  Click the Published Data element that you want to use, and then click **OK**.
 
-For a list of the data elements that are published by each activity, see the **Published Data** table in the topic that describes that activity. For information about the common Published Data items, see [Common Published Data](https://technet.microsoft.com/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8).
+For a list of the data elements that are published by each activity, see the **Published Data** table in the topic that describes that activity. For information about the common Published Data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)).
 
 ## Activities
 

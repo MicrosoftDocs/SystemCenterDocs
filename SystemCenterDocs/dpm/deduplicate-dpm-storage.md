@@ -22,7 +22,7 @@ ms.author: raynew
 
 System Center Data Protection Manager (DPM) can use data deduplication.
 
-Data deduplication \(dedup\) finds and removes duplicated data in a volume  while ensuring data remains correct and complete.   Learn more about [deduplication planning](https://go.microsoft.com/fwlink/?LinkId=522614).
+Data deduplication \(dedup\) finds and removes duplicated data in a volume  while ensuring data remains correct and complete.   Learn more about [deduplication planning](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831700(v=ws.11)).
 
 -   Dedup reduces storage consumption and although the amount of redundancy for a set of data will depend on the workload and data type, typically backup data shows strong savings when dedup is used.
 
@@ -138,7 +138,7 @@ Let's consider how big volumes should be to support the deduplicated VHDX files 
 
         -   Set MinFileAgeDays parameter to 0: With PartialFileOptimization disabled, MinFileAgeDays change its behavior so that dedup only considers files that haven't changed in that many days. Since we want dedup to begin processing the backup data in all DPM VHDX files without any delay, we need to set MinFileAgeDays to 0.
 
-For more information on setting up deduplication see [Install and Configure Data Duplication](https://go.microsoft.com/fwlink/?LinkId=522576).
+For more information on setting up deduplication see [Install and Configure Data Duplication](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831434(v=ws.11)).
 
 ## Set up DPM storage
 To avoid fragmentation issues and maintain efficiency, DPM storage is allocated using VHDX files residing on the deduplicated volumes. 10 dynamic VHDX files of 1TB each are created on each volume and attached to DPM. Note that 3TB of overprovisioning of storage is done to take advantage of the storage savings produced by dedup. As dedup produces additional storage savings, new VHDX files can be created on these volumes to consume saved space. We tested the DPM server with up to 30 VHDX files attached to it.
@@ -160,7 +160,7 @@ To avoid fragmentation issues and maintain efficiency, DPM storage is allocated 
     Add-DPMDisk $dpmdisks
     ```
 
-    Note that this step configures a storage pool as the disk or disks on which DPM stores replicas and recovery points for protected data. This pool is part of the DPM configuration and is separate from the Storage Spaces pool used to create the data volumes described in the previous section. For more information on DPM storage pools see [Configure disk storage and storage pools](https://go.microsoft.com/fwlink/?LinkId=522577).
+    Note that this step configures a storage pool as the disk or disks on which DPM stores replicas and recovery points for protected data. This pool is part of the DPM configuration and is separate from the Storage Spaces pool used to create the data volumes described in the previous section. For more information on DPM storage pools see [Configure disk storage and storage pools](/previous-versions/system-center/system-center-2012-R2/hh758075(v=sc.12)).
 
 ## Set up the Windows File Server cluster
 Dedup requires a special set of configuration options to support virtualized DPM storage due to the scale of data and size of individual files. These options are global to the cluster or the cluster node. Dedup must be enabled and the cluster settings must be individually configured on each node of the cluster.
@@ -275,7 +275,7 @@ DPM and data deduplication can be monitored to ensure that:
 
 The success of deduplication depends on the overall system hardware capabilities \(including CPU processing speed, I\/O bandwidth, storage capacity\), correct system configuration, the average system load, and the daily amount of modified data.
 
-You can monitor DPM using the DPM Central Console. See [Install Central Console](https://go.microsoft.com/fwlink/?LinkId=522578).
+You can monitor DPM using the DPM Central Console. See [Install Central Console](/previous-versions/system-center/system-center-2012-R2/hh758189(v=sc.12)).
 
 You can monitor dedup to check the dedup status, saving rate and schedule status using the following PowerShell commands:
 
@@ -307,7 +307,7 @@ Monitoring the event log can help understand deduplication events and status.
 
 -   If the value **LastOptimizationResult \= 0x00000000** appears in the Get\-DedupStatus |fl Windows PowerShell results, the entire dataset was processed by the previous optimization job. If not then the system was unable to complete the deduplication processing and you might want to check your configuration settings, for example volume size.
 
-For more detailed cmdlet examples, see [Monitor and Report for Data Deduplication](https://go.microsoft.com/fwlink/?LinkId=522579).
+For more detailed cmdlet examples, see [Monitor and Report for Data Deduplication](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831505(v=ws.11)).
 
 ### Monitor backup storage
 In our configuration example the 7.2 TB volumes are filled with 10 TB of "logical" data \(the size of the data when it is not deduplicated\) stored in 10 x 1 TB dynamic VHDX files. As these files accumulate additional backup data, they'll slowly fill up the volume. If the savings percentage resulting from deduplication is high enough, all 10 files will be able to reach their maximum logical size but still fit in the 7.2 TB volume \(potentially there might even be additional space to allocate additional VHDX files for DPM servers to use\). But if the size savings from deduplication aren't sufficient, the space on the volume might run out before the VHDX files reach their full logical size, and the volume will be full. To prevent volumes becoming full we recommend the following:

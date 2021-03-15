@@ -117,7 +117,7 @@ Use the following procedures to add a user to the Service Manager Advanced Opera
 
 -   Log on to the Service Manager console as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user roles.
 
-![PowerShell symbol](./media/user-roles/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get-SCSMUser](https://go.microsoft.com/fwlink/p/?LinkId=225335).
+![PowerShell symbol](./media/user-roles/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get-SCSMUser](/previous-versions/system-center/powershell/system-center-2012-r2/hh316233(v=sc.20)).
 
 ## Create a user role
 
@@ -158,13 +158,13 @@ Use the following procedures to create a user role and assign users to that role
 
 ![PowerShell symbol](./media/user-roles/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new user role in Service Manager, see [New-SCSMUserRole](https://go.microsoft.com/fwlink/p/?LinkId=225360).
+-   For information about how to use Windows PowerShell to create a new user role in Service Manager, see [New-SCSMUserRole](/previous-versions/system-center/powershell/system-center-2012-r2/hh316208(v=sc.20)).
 
--   For information about how to use Windows PowerShell to retrieve user roles that are defined in Service Manager, see [Get-SCSMUserRole](https://go.microsoft.com/fwlink/p/?LinkId=225343).
+-   For information about how to use Windows PowerShell to retrieve user roles that are defined in Service Manager, see [Get-SCSMUserRole](/previous-versions/system-center/powershell/system-center-2012-r2/hh316218(v=sc.20)).
 
--   For information about how to use Windows PowerShell to set the UserRole property for a Service Manager user, see [Update-SCSMUserRole](https://go.microsoft.com/fwlink/p/?LinkId=225389).
+-   For information about how to use Windows PowerShell to set the UserRole property for a Service Manager user, see [Update-SCSMUserRole](/previous-versions/system-center/powershell/system-center-2012-r2/hh316203(v=sc.20)).
 
--   For information about how to use Windows PowerShell to remove a user role from Service Manager, see [Remove-SCSMUserRole](https://go.microsoft.com/fwlink/p/?LinkId=225371).
+-   For information about how to use Windows PowerShell to remove a user role from Service Manager, see [Remove-SCSMUserRole](/previous-versions/system-center/powershell/system-center-2012-r2/hh316197(v=sc.20)).
 
 
 ## Next steps

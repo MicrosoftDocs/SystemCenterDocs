@@ -54,7 +54,7 @@ Use the following procedures to create, insert, and organize variables.
 
 6.  If you want the variable to be encrypted \(for example, to store a password for use in other runbook activities\), select the **Encrypted Variable** check box.  
 
-    For more information about best practices for using encrypted variables, see [Orchestrator Data Encryption](https://technet.microsoft.com/library/hh912316.aspx).  
+    For more information about best practices for using encrypted variables, see [Orchestrator Data Encryption](/previous-versions/system-center/system-center-2012-R2/hh912316(v=sc.12)).  
 
 7.  Click **Finish**.  
 
@@ -113,5 +113,5 @@ The Orchestrator Integration Toolkit is a set of tools to help you create new in
 
 ## Next steps
 
-- [Get detailed information](https://go.microsoft.com/fwlink/?LinkId=261687) about the Integration Toolkit.
-- [Learn more](build-test-runbooks.md). about how to design and build runbooks.
+- [Get detailed information](/previous-versions/system-center/developer/hh855853(v=msdn.10)) about the Integration Toolkit.
+- [Learn more](./design-and-build-runbooks.md). about how to design and build runbooks.

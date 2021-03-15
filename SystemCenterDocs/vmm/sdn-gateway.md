@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 08/04/2020
+ms.date: 02/02/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -21,7 +21,7 @@ ms.technology: virtual-machine-manager
 
 This article describes how to set up a Software Defined Networking (SDN) RAS gateway in the System Center - Virtual Machine Manager (VMM) fabric.
 
-An SDN RAS gateway is a data path element in SDN that enables site-to-site connectivity between two autonomous systems. Specifically, a RAS gateway enables site-to-site connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
+An SDN RAS gateway is a data path element in SDN that enables site-to-site connectivity between two autonomous systems. Specifically, a RAS gateway enables site-to-site connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding. [Learn more](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
 ::: moniker range="sc-vmm-2019"
 >[!Note]
@@ -34,7 +34,7 @@ An SDN RAS gateway is a data path element in SDN that enables site-to-site conne
 
 Ensure the following before you start:
 
-- **Planning**: Read about planning a software defined network, and review the planning topology in [this](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
+- **Planning**: Read about planning a software defined network, and review the planning topology in [this](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You should deploy the network controller before you deploy the RAS gateway.
 - **SLB**: To ensure that dependencies are handled correctly, you should also deploy the SLB before setting up the gateway. If an SLB and a gateway are configured, you can use and validate an IPsec connection.
 - **Service template**: VMM uses a service template to automate GW deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
@@ -170,6 +170,11 @@ The following are the default limits for NC managed gateway:
 - **MaxVMSubnetsSupported**= 550
 - **MaxVPNConnectionsSupported**= 250
 
+>[!NOTE]
+> For an SDNv2 virtualized network, an internal routing subnet is created for every VM network. The **MaxVMSubnetsSupported** limit includes the internal subnets created for VM networks.
+>
+>You can [override the default limits](#override-the-gateway-limits) set for the network controller managed gateway. However, overriding the limit to a higher number could impact the performance of the network controller.
+
 ### Override the gateway limits
 To override the default limits, append the override string to the network controller service connection string and update in VMM.
 
@@ -253,7 +258,7 @@ For additional information, see the following contents:
 - [Create and validate site-to-site GRE connections](sdn-route-network-traffic.md#configure-gre-tunneling)
 - [Create and validate L3 connections](sdn-route-network-traffic.md)
 
-For more information on connection types, see [this](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn) article.
+For more information on connection types, see [this](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn) article.
 
 
 ## Set up the traffic selector from PowerShell

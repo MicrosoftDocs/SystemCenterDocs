@@ -5,7 +5,7 @@ description: include file to provide information about how to upgrade VMM server
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 04/30/2018
+ms.date: 02/19/2021
 ms.topic: include
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
@@ -14,6 +14,9 @@ ms.technology: virtual-machine-manager
 ## Upgrade to System Center 1801 - Virtual Machine Manager
 
 The following sections provide information about how to upgrade to VMM 1801. Also includes upgrade steps, and tasks you should complete after the upgrade finishes.
+
+> [!NOTE]
+> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
 
 ## Requirements and limitations
 
@@ -154,7 +157,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
 6. Failover the active VMM node to the newly upgraded VMM server.
 7. Repeat the procedure on other VMM nodes.
 8. Update the cluster functional level by using the
-   **Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+   **Update-ClusterFunctionalLevel** [command](/powershell/module/failoverclusters/update-clusterfunctionallevel).
 9. [Optional] Install the appropriate SQL Command line utilities.
 
 ### Mixed mode upgrade with additional VMM servers
@@ -175,7 +178,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 6.	Failover the active VMM node to one of the newly added servers.
 7. Remove 2012 R2/2016 nodes from the cluster after failover.
 8. Update the cluster functional level by using the
-**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+**Update-ClusterFunctionalLevel** [command](/powershell/module/failoverclusters/update-clusterfunctionallevel).
 9.	[Optional] Install the appropriate SQL Command line utilities.
 
 
@@ -205,7 +208,7 @@ Before you upgrade, collect information about the VMM database:
 1. Back up the existing VMM database, and copy the backup to a computer running a supported version of SQL Server.
 2. Use SQL Server tools to restore the database.
     - If you are upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
-    - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration** you specify the new SQl Server details. After reinstall apply the update rollups and check that the deployment is working as expected.
+    - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration** you specify the new SQL Server details. After reinstall apply the update rollups and check that the deployment is working as expected.
 
 ### Upgrade a highly available database
 
@@ -236,7 +239,7 @@ After the upgrade, you need to update the VMM agents on your Hyper-V hosts and i
 
 ## Redeploy Azure Site Recovery
 
-If Azure Site Recovery was integrated into your VMM 2012 R2/2016 deployment, you need to redeploy it with VMM 1801, for [replication to Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-vmm).
+If Azure Site Recovery was integrated into your VMM 2012 R2/2016 deployment, you need to redeploy it with VMM 1801, for [replication to Azure](/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](/azure/site-recovery/site-recovery-vmm-to-vmm).
 
 Read this [blog entry](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for details of Hyper-V host support when running VMM 1801.
 

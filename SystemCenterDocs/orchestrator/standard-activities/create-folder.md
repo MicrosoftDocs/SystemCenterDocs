@@ -1,5 +1,6 @@
 ---
-title: "Create Folder | Microsoft Docs"
+title: Create Folder activity
+description: This article describes the Create Folder activity that creates a new folder on the local file system
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
@@ -18,13 +19,13 @@ author: "bwren"
 ms.author: "bwren"
 manager: "cfreeman"
 ---
-# Create Folder
+# Create folder activity
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 

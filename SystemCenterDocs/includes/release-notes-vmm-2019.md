@@ -50,7 +50,7 @@ No known issues in VMM 2019 UR1 and UR2.
 **Description**: Latest accessibility fixes in Console might not be available when you use .NET 4.7 while installing the VMM console.
 
 **Workaround**: We recommend you to use .NET 4.8. For detailed information on .NET 4.8 migration, see [the article on .NET migration
- ](https://docs.microsoft.com/dotnet/framework/migration-guide/).    
+ ](/dotnet/framework/migration-guide/).    
 
 ## Backend adapter connectivity for SLB MUX doesn't work as expected
 

@@ -1,5 +1,5 @@
 ---
-title: Upload Attachment
+title: Upload attachment to SharePoint
 description: The Upload Attachment activity is used in a runbook to attach a file to a Microsoft SharePoint list item.
 ms.custom: na
 ms.date: 05/07/2019
@@ -15,7 +15,7 @@ ms.author: raynew
 manager: carmonm
 robots: noindex
 ---
-# Upload Attachment
+# Upload attachment to SharePoint
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 

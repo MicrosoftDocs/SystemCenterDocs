@@ -71,7 +71,7 @@ Create a new VM on a logical unit assigned to a Hyper-V host. On the library ser
     - In **Machine Resources**, click **Virtual Hard Disk**. In **Browse** > **Select Destination Folder**, click the drive you created from the assigned logical unit.
     - In **Select Network** and **Add Properties**, select the required settings. In **Summary**, review the settings and click **Create**. Verify that the VM is listed in **VMs and Services** > **All Hosts** > **VMs**.
 
-4.  On the new VM, install and customize the guest operating system and the applications that you want. Generalize the image by using Sysprep.exe with the **/generalize** and the **/oobe** options to generalize the associated virtual hard disk. [Learn more](https://technet.microsoft.com/library/hh825033.aspx). When you're finished, make sure there are no .iso image files attached to the virtual DVD drive.
+4.  On the new VM, install and customize the guest operating system and the applications that you want. Generalize the image by using Sysprep.exe with the **/generalize** and the **/oobe** options to generalize the associated virtual hard disk. [Learn more](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825033(v=win.10)). When you're finished, make sure there are no .iso image files attached to the virtual DVD drive.
 
 ## Create a SAN copy-capable template from an existing VM
 

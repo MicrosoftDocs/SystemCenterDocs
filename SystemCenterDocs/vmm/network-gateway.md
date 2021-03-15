@@ -25,7 +25,7 @@ By default, if you're using isolated VM networks in your VMM fabric, VMs associa
 
 ## Network virtualization
 
-You set up network virtualization so that multiple VM networks are overload on the VMM logical networks that model your physical network topology and thus decouple the VM networks from the physical network infrastructure. Network virtualization uses NVGRE (Network Virtualization using Generic Routing Encapsulation) to virtualize IP addresses. Review the following to learn more about [NVGRE](https://msdn.microsoft.com/library/windows/hardware/dn144775%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396).
+You set up network virtualization so that multiple VM networks are overload on the VMM logical networks that model your physical network topology and thus decouple the VM networks from the physical network infrastructure. Network virtualization uses NVGRE (Network Virtualization using Generic Routing Encapsulation) to virtualize IP addresses. Review the following to learn more about [NVGRE](/windows-hardware/drivers/network/network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload?f=255&MSPPError=-2147217396).
 
 To figure out whether you need a network virtualization gateway in your network consider:
 

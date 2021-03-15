@@ -19,9 +19,9 @@ ms.technology: service-management-automation
 ::: moniker-end
 
 
-One [type of runbook](manage/runbook-types-in-service-management-automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](https://go.microsoft.com/fwlink/?LinkID=324602).
+One [type of runbook](./authoring-automation-runbooks.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134242(v=ws.11)).
 
-The runbook structure is identical between runbooks for Service Management Automation and for [Microsoft Azure Automation](https://aka.ms/runbookauthor/azure) although the two will typically work with different resources.
+The runbook structure is identical between runbooks for Service Management Automation and for [Microsoft Azure Automation](/previous-versions/azure/dn643629(v=azure.100)) although the two will typically work with different resources.
 
 ## Windows PowerShell Workflows
 A workflow is a sequence of programmed, connected steps that perform long-running tasks or require the coordination of multiple steps across multiple devices or managed nodes. The benefits of a workflow over a normal script include the ability to simultaneously perform an action against multiple devices and the ability to automatically recover from failures. A Windows PowerShell Workflow is a Windows PowerShell script that leverages Windows Workflow Foundation. While the workflow is written with Windows PowerShell syntax and launched by Windows PowerShell, it is processed by Windows Workflow Foundation.
@@ -54,20 +54,20 @@ Workflow Test-Runbook
 ```
 
 ### Naming
-The name of the workflow should conform to the Verb-Noun format that is standard with Windows PowerShell. You can refer to [Approved Verbs for Windows PowerShell Commands](https://docs.microsoft.com/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands) for a list of approved verbs to use. The name of the workflow must match the name of the Automation runbook. If the runbook is being imported, then the filename must match the workflow name and must end in .ps1.
+The name of the workflow should conform to the Verb-Noun format that is standard with Windows PowerShell. You can refer to [Approved Verbs for Windows PowerShell Commands](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands) for a list of approved verbs to use. The name of the workflow must match the name of the Automation runbook. If the runbook is being imported, then the filename must match the workflow name and must end in .ps1.
 
 ### Limitations
-For a complete list of limitations and syntax differences between Windows PowerShell Workflows and Windows PowerShell, see [Syntactic Differences Between Script Workflows and Scripts](https://technet.microsoft.com/library/jj574140.aspx).
+For a complete list of limitations and syntax differences between Windows PowerShell Workflows and Windows PowerShell, see [Syntactic Differences Between Script Workflows and Scripts](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574140(v=ws.11)).
 
 ## Activities
-An activity is a specific task in a workflow. Just as a script is composed of one or more commands, a workflow is composed of one or more activities that are carried out in a sequence. Windows PowerShell Workflow automatically converts many of the Windows PowerShell cmdlets to activities when it runs a workflow. When you specify one of these cmdlets in your runbook, the corresponding activity is actually run by Windows Workflow Foundation. For those cmdlets without a corresponding activity, Windows PowerShell Workflow automatically runs the cmdlet within an [InlineScript](#inlinescript) activity. There is a set of cmdlets that are excluded and cannot be used in a workflow unless you explicitly include them in an [InlineScript](#inlinescript) block. For further details on these concepts, see [Using Activities in Script Workflows](https://go.microsoft.com/fwlink/?LinkID=324983).
+An activity is a specific task in a workflow. Just as a script is composed of one or more commands, a workflow is composed of one or more activities that are carried out in a sequence. Windows PowerShell Workflow automatically converts many of the Windows PowerShell cmdlets to activities when it runs a workflow. When you specify one of these cmdlets in your runbook, the corresponding activity is actually run by Windows Workflow Foundation. For those cmdlets without a corresponding activity, Windows PowerShell Workflow automatically runs the cmdlet within an [InlineScript](#inlinescript) activity. There is a set of cmdlets that are excluded and cannot be used in a workflow unless you explicitly include them in an [InlineScript](#inlinescript) block. For further details on these concepts, see [Using Activities in Script Workflows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574194(v=ws.11)).
 
-Workflow activities share a set of common parameters to configure their operation. For details about the workflow common parameters, see [about_WorkflowCommonParameters](https://go.microsoft.com/fwlink/?LinkID=324606).
+Workflow activities share a set of common parameters to configure their operation. For details about the workflow common parameters, see [about_WorkflowCommonParameters](/powershell/module/psworkflow/about/about_workflowcommonparameters).
 
 ## Integration Modules
-An *Integration Module* is a package that contains a [Windows PowerShell Module](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module) and can be imported into Automation. Windows PowerShell Modules contain cmdlets that can be used in Automation runbooks. Products and services such as Operations Manager and Azure have modules that include cmdlets specific to their operation.
+An *Integration Module* is a package that contains a [Windows PowerShell Module](/powershell/scripting/developer/module/understanding-a-windows-powershell-module) and can be imported into Automation. Windows PowerShell Modules contain cmdlets that can be used in Automation runbooks. Products and services such as Operations Manager and Azure have modules that include cmdlets specific to their operation.
 
-Integration Modules that are imported into Automation are automatically available to all runbooks. Since Automation is based on Windows PowerShell 4.0, it supports auto loading of modules meaning that cmdlets from installed modules can be used without importing them into the script with [Import-Module](https://go.microsoft.com/fwlink/?LinkID=324984).
+Integration Modules that are imported into Automation are automatically available to all runbooks. Since Automation is based on Windows PowerShell 4.0, it supports auto loading of modules meaning that cmdlets from installed modules can be used without importing them into the script with [Import-Module](/powershell/module/microsoft.powershell.core/import-module).
 
 Any Windows PowerShell module can be imported into Automation as long as all of its dependencies can be located in a single folder. If the module depends on registry settings or files not in the default path, then it can be imported, but it will most likely not work because Automation will not be able to locate its dependencies. Modules with external dependencies can be used in a runbook by installing them on another host using and then accessing them with an [InlineScript](overview-powershell-workflows.md#inlinescript) script block.
 
@@ -132,12 +132,12 @@ Checkpoint-Workflow
 
 You should set checkpoints in a runbook after activities that may be prone to error and should not be repeated if the runbook is resumed. For example, your runbook may create a virtual machine. You could set a checkpoint both before and after the commands to create the virtual machine. If the creation fails, then the commands are repeated when the runbook is resumed. If the creation succeeds but the runbook later fails, then the virtual machine will not be created again when the runbook is resumed.
 
-For more information about checkpoints, see [Adding Checkpoints to a Script Workflow](https://go.microsoft.com/fwlink/?LinkID=324993).
+For more information about checkpoints, see [Adding Checkpoints to a Script Workflow](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574114(v=ws.11)).
 
 ## Suspend a Runbook
 You can force a runbook to suspend itself with the **Suspend-Workflow** activity. This activity will set a checkpoint and cause the workflow to immediately suspend. Suspending a workflow is useful for runbooks that may require a manual step to be performed before another set of activities are run.
 
-For more information about suspending a workflow, see [Making a Workflow Suspend Itself](https://go.microsoft.com/fwlink/?LinkID=324997).
+For more information about suspending a workflow, see [Making a Workflow Suspend Itself](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574175(v=ws.11)).
 
 ## InlineScript
 The **InlineScript** activity runs a block of commands in a separate, non-workflow session and returns its output to the workflow. While commands in a workflow are sent to Windows Workflow Foundation for processing, commands in an InlineScript block are processed by Windows PowerShell. The activity uses the standard workflow common parameters including **PSComputerName** and **PSCredential** which allow you to specify that the code block be run on another computer or using alternate credentials.
@@ -193,7 +193,7 @@ Keep the following recommendations in mind if you do use an **InlineScript** in 
 
 -   Avoid defining workflows within **InlineScript** scope. Even though some workflows may appear to operate correctly, this is not a tested scenario. As a result, you may encounter confusing error messages or unexpected behavior.
 
-For further details on using **InlineScript**, see [Running Windows PowerShell Commands in a Workflow](https://go.microsoft.com/fwlink/?LinkID=324625) and [about_InlineScript](https://go.microsoft.com/fwlink/?LinkID=324624).
+For further details on using **InlineScript**, see [Running Windows PowerShell Commands in a Workflow](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574197(v=ws.11)) and [about_InlineScript](/powershell/module/psworkflow/about/about_inlinescript).
 
 ## Next steps
 

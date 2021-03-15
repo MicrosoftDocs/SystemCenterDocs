@@ -69,7 +69,7 @@ Ensure the following prerequisites are met:
 ### Conversion procedure
 1. To convert, follow the [above procedure](#convert-using-the-wizard), select **Generation 2** in step 4.
 
-    ![vm conversion to gen 2](media/vm-conversion/vm-conversion-select-gen2.png)
+    ![Configure vm conversion to gen 2](media/vm-conversion/vm-conversion-select-gen2.png)
 
 2. Once the VM is converted, you can see the Generation 2 VM as shown in the following image:
 

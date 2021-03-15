@@ -21,7 +21,7 @@ ms.technology: virtual-machine-manager
 
 This article describes how to set up a Software Defined Networking (SDN) network controller in the System Center - Virtual Machine Manager (VMM) fabric.
 
-The SDN network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-controller/network-controller).
+The SDN network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration. [Learn more](/windows-server/networking/sdn/technologies/network-controller/network-controller).
 
 For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Deploy-Network-Controller) (~ five minutes) that provides an overview of network controller deployment.
 
@@ -34,9 +34,9 @@ For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid
 ::: moniker-end
 
 ## Prerequisites
-• Plan for a Software Defined Network (SDN). [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
+• Plan for a Software Defined Network (SDN). [Learn more](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
 
-• Plan for an SDN Network Controller Installation and deployment. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/installation-and-preparation-requirements-for-deploying-network-controller).
+• Plan for an SDN Network Controller Installation and deployment. [Learn more](/windows-server/networking/sdn/plan/installation-and-preparation-requirements-for-deploying-network-controller).
 
 ## Before you start
 
@@ -50,14 +50,14 @@ To set up SDN in the VMM fabric you need the following:
 - **A logical switch**: To provide the management logical network with connectivity to the network controller VMs.
 - **An SSL certificate**: To authenticate communications between the VMM server and the network controller.
 - **An HNV provider logical network and tenant VM networks**: To validate the network controller deployment.
-- **Other prerequisites**: [Verify](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/installation-and-preparation-requirements-for-deploying-network-controller) other requirements.
+- **Other prerequisites**: [Verify](/windows-server/networking/sdn/plan/installation-and-preparation-requirements-for-deploying-network-controller) other requirements.
 
 
 ## Deployment steps
 
 Here's what you need to do to set up a SDN network controller
 
-1. **Configure hosts and physical network infrastructure**: You need access to your physical network devices to configure VLANs, routing etc. You also need Hyper-V hosts to host the SDN infrastructure and tenant VMs. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
+1. **Configure hosts and physical network infrastructure**: You need access to your physical network devices to configure VLANs, routing etc. You also need Hyper-V hosts to host the SDN infrastructure and tenant VMs. [Learn more](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
 2. **Prepare a virtual hard disk**:  You can prepare a  virtual hard disk for the network controller service template in VHD or VHDX format, as appropriate for the service template generation you choose.
 3. **Download the service templates**: Download the network controller service templates and import them to the VMM library.
 4. **Set up Active Directory security groups**: You'll need an Active Directory security group for network controller management, and another security group for network controller clients. Each group will need at least one user account in it.
@@ -245,7 +245,7 @@ When you are done, refresh these folders and ensure that you have these certific
 
 ### Use a CA
 
-1. Request a CA-signed certificate. For a Windows-based enterprise CA, [request certificates using the certificate request Wizard](https://technet.microsoft.com/library/cc754490.aspx).
+1. Request a CA-signed certificate. For a Windows-based enterprise CA, [request certificates using the certificate request Wizard](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754490(v=ws.11)).
 2. Make sure that the certificate includes the serverAuth EKU, specified by the OID 1.3.6.1.5.5.7.3.1. In addition, the certificate subject name must match the DNS name of the network controller.
 3. Copy the .PFX to the ServerCertificate.cr folder.
 4. Copy the .CER file to the NCCertificate.cr folder.
@@ -331,7 +331,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 ::: moniker range="sc-vmm-2019"
 
 > [!NOTE]
-> Windows 2019 onwards, the Network Controller machines must be provided permission to register and modify the SPN in the Active Directory. For more details, see [Kerberos with Service Principal Name](https://docs.microsoft.com/windows-server/networking/sdn/security/kerberos-with-spn).
+> Windows 2019 onwards, the Network Controller machines must be provided permission to register and modify the SPN in the Active Directory. For more details, see [Kerberos with Service Principal Name](/windows-server/networking/sdn/security/kerberos-with-spn).
 
 ::: moniker-end
 
@@ -436,7 +436,7 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 >When you create VM network, to enable IPv6 support, select IPv6 from the **IP address protocol for the VM network** drop-down menu.
 >
 
-![HNV network](media/sdn-controller/enable-ipv6.png)
+![isolate using HNV network](media/sdn-controller/enable-ipv6.png)
 
 ::: moniker-end
 

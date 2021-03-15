@@ -31,14 +31,14 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-- SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
+- SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
     >[!NOTE]
     > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
     > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
-- SQL Server 2017 and Cumulative Updates as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
-- SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+- SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
+- SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
 
 ::: moniker-end
 
@@ -46,8 +46,8 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-* SQL Server 2017 and Cumulative Updates as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
-* SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+* SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
+* SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
 
 ::: moniker-end
 
@@ -67,16 +67,16 @@ Before upgrading to SQL Server 2017, see [upgrade information for 2017](upgrade-
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center Operations Manager version 1801 to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-* SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+* SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center 2016 - Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-* SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
-* SQL Server 2014 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)
-* SQL Server 2012 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)
+* SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
+* SQL Server 2014 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2014)
+* SQL Server 2012 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2012)
 
 ::: moniker-end
 
@@ -97,14 +97,14 @@ Additional hardware and software considerations apply in your design planning:
 
 ::: moniker range="=sc-om-2016"
 
-For more information, see Hardware and Software Requirements for Installing SQL Server [2014](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2014) or [2016](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2016)
+For more information, see Hardware and Software Requirements for Installing SQL Server [2014](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?preserve-view=true&view=sql-server-2014) or [2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?preserve-view=true&view=sql-server-2016).
 
 ::: moniker-end
 
 ::: moniker range=">=sc-om-1801"
 
 
-For more information, see [Hardware and Software Requirements for Installing SQL Server](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2016).
+For more information, see [Hardware and Software Requirements for Installing SQL Server](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?preserve-view=true&view=sql-server-2016).
 
 ::: moniker-end
 
@@ -164,7 +164,7 @@ The following table helps you identify the firewall ports required by SQL Server
 
 \* While TCP 1433 is the standard port for the default instance of the Database Engine, when you create a named instance on a standalone SQL Server or have deployed a SQL Always On Availability Group, a custom port will be defined and should be documented for reference so that you properly configure your firewalls and enter this information during setup.      
 
-For a more detailed overview of the firewall requirements for SQL Server, see [Configure the Windows Firewall to Allow SQL Server Access](https://msdn.microsoft.com/library/cc646023.aspx).
+For a more detailed overview of the firewall requirements for SQL Server, see [Configure the Windows Firewall to Allow SQL Server Access](/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access).
 
 ## Capacity and storage considerations
 
@@ -207,9 +207,9 @@ With System Center 2016 and later - Operations Manager, SQL Always On is preferr
 
 To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
-- Learn more about [Always On prerequisites](https://msdn.microsoft.com/library/ff878487.aspx)
-- Learn more about [setting up a WSFC for Always On availability groups](https://msdn.microsoft.com/library/ff929171.aspx)
-- Learn more about [setting up an availability group](https://msdn.microsoft.com/library/ff878265.aspx)
+- Learn more about [Always On prerequisites](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability)
+- Learn more about [setting up a WSFC for Always On availability groups](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server)
+- Learn more about [setting up an availability group](/sql/database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server)
 
 ::: moniker-end
 
@@ -223,12 +223,12 @@ With System Center 2016 and later - Operations Manager, SQL Always On is preferr
 
 To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
-- Learn more about [Always On prerequisites](https://msdn.microsoft.com/library/ff878487.aspx)
-- Learn more about [setting up a WSFC for Always On availability groups](https://msdn.microsoft.com/library/ff929171.aspx)
-- Learn more about [setting up an availability group](https://msdn.microsoft.com/library/ff878265.aspx)
+- Learn more about [Always On prerequisites](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability)
+- Learn more about [setting up a WSFC for Always On availability groups](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server)
+- Learn more about [setting up an availability group](/sql/database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server)
 
 > [!NOTE]
-> After deploying Operations Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](https://docs.microsoft.com/sql/database-engine/configure-windows/clr-strict-security?view=sql-server-2017), run the [SQL script](upgrade-sqlserver-2019-operations-manager.md#optional---enable-clr-strict-security) on each Operations Manager database.
+> After deploying Operations Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017), run the [SQL script](upgrade-sqlserver-2019-operations-manager.md#optional---enable-clr-strict-security) on each Operations Manager database.
 
 ::: moniker-end
 
@@ -245,22 +245,26 @@ These settings allow, when fail over to a node in a different subnet, for quicke
 
 Run the following PowerShell query on any one of the SQL nodes to modify its settings.
 
+  ```PowerShell
     Import-Module FailoverClusters
     Get-ClusterResource "Cluster Name"|Set-ClusterParameter RegisterAllProvidersIP 0
     Get-ClusterResource "Cluster Name"|Set-ClusterParameter HostRecordTTL 300
     Stop-ClusterResource "Cluster Name"
     Start-ClusterResource "Cluster Name"
+  ```
 
 
 If you are using Always On with a listener name, you should also make these configurations changes on the listener.
 
 Run the following PowerShell query on the SQL node currently hosting the listener to modify its settings.
 
+  ```PowerShell
     Import-Module FailoverClusters
     Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter RegisterAllProvidersIP 0
     Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter HostRecordTTL 300
     Stop-ClusterResource <Listener Cluster Resource name>
     Start-ClusterResource <Listener Cluster Resource name>
+  ```
 
 When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur.  For information on how to configure this, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc).
 
@@ -276,7 +280,7 @@ In general, previous deployment experience with customers shows that performance
 
 Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager.  Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing.  The I/O behavior pattern of Operations Manager is typically 80% writes and 20% reads.  As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
 
-It is important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Make sure these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://gallery.technet.microsoft.com/DiskSpd-a-robust-storage-6cd2f223) to evaluate the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code, and [capturing the results using PerfMon](https://blogs.technet.com/b/josebda/archive/2013/03/28/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares.aspx).  You can also refer to the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  for initial guidance.
+It is important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Make sure these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://gallery.technet.microsoft.com/DiskSpd-a-robust-storage-6cd2f223) to evaluate the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code, and [capturing the results using PerfMon](/archive/blogs/josebda/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares).  You can also refer to the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  for initial guidance.
 
 ### NTFS allocation unit size
 
@@ -315,18 +319,18 @@ Once you have your baseline for the environment, make a change to the sp_configu
 ::: moniker range="=sc-om-2016"
 
 
- Learn more [about server memory configuration](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2014).
+ Learn more [about server memory configuration](/sql/database-engine/configure-windows/server-memory-server-configuration-options?preserve-view=true&view=sql-server-2014).
 
 ::: moniker-end
 ::: moniker range=">=sc-om-1801"
 
-Learn more [about server memory configuration](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2016).
+Learn more [about server memory configuration](/sql/database-engine/configure-windows/server-memory-server-configuration-options?preserve-view=true&view=sql-server-2016).
 
 ::: moniker-end
 
 ### Optimize TempDB
 
-The size and physical placement of the tempdb database can affect the performance of Operations Manager.  For example, if the size that is defined for tempdb is too small, part of the system-processing load may be taken up with autogrowing tempdb to the size required to support the workload every time you restart the instance of SQL Server.
+The size and physical placement of the tempdb database can affect the performance of Operations Manager. For example, if the size that is defined for tempdb is too small, part of the system-processing load may be taken up with autogrowing tempdb to the size required to support the workload every time you restart the instance of SQL Server.
 To achieve optimal tempdb performance, we recommend the following configuration for tempdb in a production environment:
 
 -  Set the recovery model of tempdb to SIMPLE. This model automatically reclaims log space to keep space requirements small.
@@ -338,6 +342,7 @@ To achieve optimal tempdb performance, we recommend the following configuration 
 
 To configure tempdb, you can run the following query or modify its properties in Management Studio.
 
+  ```SQL
     USE [tempdb]
     GO
     DBCC SHRINKFILE (N'tempdev' , 8)
@@ -348,6 +353,7 @@ To configure tempdb, you can run the following query or modify its properties in
     GO
     ALTER DATABASE [tempdb] ADD FILE ( NAME = N'tempdb2', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\tempdb2.mdf' , SIZE = 2097152KB , FILEGROWTH = 512MB )
     GO
+  ```
 
 Run the T-SQL query SELECT * from sys.sysprocesses to detect page allocation contention for the tempdb database.  In the system table output, the wait resource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources, and have similar values as highlighted earlier when you execute the sys.sysprocesses query.  
 

@@ -26,7 +26,7 @@ ms.assetid: 9140312b-4d0b-4f22-a466-85887485e066
 
 This article provides guidelines about how to customize and author forms with the Service Manager Authoring Tool and it describes how to accomplish common authoring tasks.
 
-Use the following guidelines when you are authoring forms in the Service Manager Authoring Tool. For more information about how Windows Presentation Foundation \(WPF\) forms work and WPF customization guidelines, see [Windows Presentation Foundation](https://go.microsoft.com/fwlink/p/?LinkID=194437) on MSDN.  
+Use the following guidelines when you are authoring forms in the Service Manager Authoring Tool. For more information about how Windows Presentation Foundation \(WPF\) forms work and WPF customization guidelines, see [Windows Presentation Foundation](/dotnet/desktop/wpf/) on MSDN.  
 
 -   When you are customizing existing default forms by adding new controls, first create a new **Tab** control, and then add the new controls to the new **Tab** control.  
 -   Store all customizations of a particular form in a single management pack.  
@@ -93,7 +93,7 @@ If you defined a new custom class to extend Service Manager, you might have to c
 -   Start from a base class.  
 -   Load a custom Windows Presentation Foundation \(WPF\) form that was initially developed by the Microsoft Visual&nbsp;Studio development system, and continue to customize that form in the Authoring Tool.  
 
-The Authoring Tool includes form controls, such as the **Check Box**, **Date Picker**, **Tab Control**, and **Tab Item**, that you can add to the form. You can access these controls from the **Form Customizations Toolbox**. Typically, you bind the form controls to specific properties of the form's base class. Therefore, using either method you must first select a base class for the form to be associated with. For more information about the controls that you can add to a form, see previous topics in this section, such as [How to Add a Check Box Control to a Form in the Authoring Tool](add-check-box-control.md), and [How to Add a Tab Control and Tab Item Controls to a Form in the Authoring Tool](add-tab-control.md).  
+The Authoring Tool includes form controls, such as the **Check Box**, **Date Picker**, **Tab Control**, and **Tab Item**, that you can add to the form. You can access these controls from the **Form Customizations Toolbox**. Typically, you bind the form controls to specific properties of the form's base class. Therefore, using either method you must first select a base class for the form to be associated with. For more information about the controls that you can add to a form, see previous topics in this section, such as [How to Add a Check Box Control to a Form in the Authoring Tool](), and [How to Add a Tab Control and Tab Item Controls to a Form in the Authoring Tool]().  
 
 The following sections describe how to create a new form in the Authoring Tool.  
 
@@ -195,7 +195,7 @@ The **List Picker** control in the Service Manager Authoring Tool is a custom co
 
 One of the characteristics of the control that you have to set is the list of items that will populate the **List Picker** control that you are creating. You can either choose an existing list, such as the **Activity Priority** list, or you can create a new list while you are creating the control.  
 
-To add list items to a newly created list, you must use the Service Manager console. You cannot use the Authoring Tool to add list items to a newly created list. For more information about using the Service Manager console to add list items, see [How to Add a List Item](https://go.microsoft.com/fwlink/p/?LinkId=231881).  
+To add list items to a newly created list, you must use the Service Manager console. You cannot use the Authoring Tool to add list items to a newly created list. For more information about using the Service Manager console to add list items, see [How to Add a List Item](/previous-versions/system-center/system-center-2012-R2/hh519655(v=sc.12)).  
 
 Use the following procedure to add a **List Picker** control to a form.  
 

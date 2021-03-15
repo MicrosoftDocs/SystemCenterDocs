@@ -15,7 +15,7 @@ ms.author: raynew
 manager: carmonm
 robots: noindex
 ---
-# Delete Folder
+# Delete folder on an FTP server
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
 
@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-The Delete Folder activity is used in a runbook to delete a folder on a FTP server.
+The Delete Folder activity is used in a runbook to delete a folder on an FTP server.
 
 This activity publishes all of the data from the required properties into published data.
 

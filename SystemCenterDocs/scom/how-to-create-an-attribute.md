@@ -1,6 +1,7 @@
 ---
 ms.assetid: d837d304-20ff-4d2a-8071-f1c5664d93dd
-title: How to Create an Attribute
+title: Create an Attribute
+description: This article provides information on how to use Create Attribute wizard.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
@@ -19,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-Use the Create Attribute Wizard to create a new attribute for a management pack. For more information, see [Attributes](https://technet.microsoft.com/library/hh457609.aspx) in the Authoring Guide.
+Use the Create Attribute Wizard to create a new attribute for a management pack. For more information, see [Attributes](/previous-versions/system-center/system-center-2012-R2/hh457609(v=sc.12)) in the Authoring Guide.
 
 > [!WARNING]
 > For every new attribute that you create, you are actually creating a new class based on the existing class, with the new class inheriting the parent class attributes as well as the new attribute. Because of this, creating new attributes can result in an increased workload in distributing configurations to agents. Create new attributes judicially and sparingly.
@@ -28,4 +29,4 @@ Use the Create Attribute Wizard to create a new attribute for a management pack.
 
 - To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](manage-mp-overview-override-targets.md).  
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](~/scom/manage-mp-create-unsealed-mp.md).  
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](~/scom/manage-mp-create-unsealed-mp.md).

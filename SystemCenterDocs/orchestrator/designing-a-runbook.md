@@ -46,4 +46,4 @@ Consider the following points as you design your runbook:
 5.  Runbook logs \- By default, logging options are disabled for runbooks. When you enable&nbsp;logging, the data significantly increases the size of your database. As an alternative, you can log to an external system or file.  
 
 ## Next steps
-[Build and test a runbook](build-test-runbooks.md)  
+[Build and test a runbook](./design-and-build-runbooks.md)

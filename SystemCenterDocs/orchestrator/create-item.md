@@ -179,4 +179,4 @@ The integration pack provides the ability to create recurring appointments and t
 
 ## See Also
 
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/library/)
+[Using Runbooks in System Center 2016 - Orchestrator](/documentation/)

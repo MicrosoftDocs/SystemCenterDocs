@@ -1,6 +1,6 @@
 ---
 title: Exchange Admin Integration Pack for Orchestrator in System Center
-description: Integration packs are add-ons for System Center - Orchestrator, a component of System Center.
+description: This article provides information about exchange Integration packs and how to deploy it.
 ms.custom: na
 ms.date: 04/04/2019
 ms.prod: system-center
@@ -83,11 +83,15 @@ On the computer where Orchestrator runbooks are executed, make sure that 32-bit 
 1.  Start **Windows PowerShell (x86)** command line.
 2.  To determine whether PowerShell 32-bit scripts can be executed, run the following command:
 
-            Get-ExecutionPolicy
+    ```PowerShell
+        Get-ExecutionPolicy
+    ```
 
 3.  If **Execution Policy** is **Restricted**, you must change it to **RemoteSigned**. Run the following command:
 
-            Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+    ```PowerShell
+        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+    ```
 
 ### To configure remote PowerShell rights for the Exchange user
 
@@ -96,11 +100,15 @@ The configured user must be granted remote PowerShell rights on the Exchange ser
 1.  On the Exchange server, start the **Exchange Management Shell**.
 2.  To determine whether the user has remote PowerShell rights, run the following command and check the value in the **RemotePowerShellEnabled** field:
 
-            Get-User <UserName>
+  ```PowerShell
+        Get-User <UserName>
+  ```
 
 3.  To grant the user remote PowerShell rights, run the following command:
 
-            Set-User <UserName> -RemotePowerShellEnabled $true
+  ```PowerShell
+        Set-User <UserName> -RemotePowerShellEnabled $true
+  ```
 
 ### To configure Windows PowerShell to allow Basic Authentication on the Exchange server
 

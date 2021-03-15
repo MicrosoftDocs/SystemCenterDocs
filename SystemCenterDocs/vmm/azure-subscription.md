@@ -42,7 +42,7 @@ Here's what you need to add an Azure subscription in VMM:
 |**Azure subscription** | You need at least one Azure subscription to add it to the VMM console.|
 |**Internet connectivity** | The computer on which you install the feature must be able to connect to the Azure subscription.|
 |**Service administrator** | You need to be at least a service administrator for the subscription. You need this for access to the management certificate information that's required.|
-|**Management certificate** | The subscription must have a management certificate associated with it if you are managing Classic VMs only. So that VMM can use the service management API in Azure. [Learn more](https://azure.microsoft.com/documentation/articles/cloud-services-certs-create/) about service certificates. Make note of the subscription ID and the certificate thumbprint.<br/><br/> Certificates must be x509 v3 compliant.<br/><br/> The management certificate must be located in the local certificate store on the computer on which you add the Azure subscription feature.<br/><br/> The certificate should also be located in the **Current User \ Personal** store of the computer running the VMM console.|
+|**Management certificate** | The subscription must have a management certificate associated with it if you are managing Classic VMs only. So that VMM can use the service management API in Azure. [Learn more](/azure/cloud-services/cloud-services-certs-create) about service certificates. Make note of the subscription ID and the certificate thumbprint.<br/><br/> Certificates must be x509 v3 compliant.<br/><br/> The management certificate must be located in the local certificate store on the computer on which you add the Azure subscription feature.<br/><br/> The certificate should also be located in the **Current User \ Personal** store of the computer running the VMM console.|
 
 ::: moniker-end
 
@@ -119,7 +119,7 @@ Here's what you need to create an Azure profile for Azure Update Management:
 
 |**Requirement**| **Details**|
 |--- | ---|
-|**Azure subscription** | You need Azure Automation Subscription with **Update Management** solution enabled. <br/><br/> [Create Automation Account](https://docs.microsoft.com/azure/automation/automation-create-standalone-account) and [Enable Update Management Solution](https://docs.microsoft.com/azure/automation/automation-create-standalone-account).|
+|**Azure subscription** | You need Azure Automation Subscription with **Update Management** solution enabled. <br/><br/> [Create Automation Account](/azure/automation/automation-create-standalone-account) and [Enable Update Management Solution](/azure/automation/automation-create-standalone-account).|
 |**Internet connectivity** | The computer on which you install the feature must be able to connect to the Azure subscription.|
 
 ## Create Azure Profile

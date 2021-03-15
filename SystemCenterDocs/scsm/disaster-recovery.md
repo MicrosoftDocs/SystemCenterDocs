@@ -24,9 +24,9 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 - Did you know that Microsoft Azure provides similar functionality in the cloud? Learn more about [Microsoft Azure storage solutions](https://aka.ms/y03tdi).
 - Create a hybrid storage solution in Microsoft Azure:
-    - [Configure Azure backup for DPM data](https://aka.ms/ao028b)
-    - [Configure Azure Backup to prepare for back up of Windows Server](https://aka.ms/smvyw8)
-    - [Learn about Azure backup and how it integrates with your on\-premises DPM environment](https://aka.ms/cw2v0g)   
+    - [Configure Azure backup for DPM data](/previous-versions/system-center/system-center-2012-R2/jj728752(v=sc.12))
+    - [Configure Azure Backup to prepare for back up of Windows Server](/azure/backup/backup-windows-with-mars-agent)
+    - [Learn about Azure backup and how it integrates with your on\-premises DPM environment](/azure/backup/backup-overview)   
 
 
 > [!NOTE]  
@@ -39,7 +39,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
  Promoting an additional management server involves the following procedures:  
 
-1. Promote an additional Service Manager management server. For more information, see [How to Promote a Service Manager Management Server](ms-disaster-recovery.md) in this guide.  
+1. Promote an additional Service Manager management server. For more information, see [How to Promote a Service Manager Management Server](./implement-disaster-recovery.md) in this guide.  
 
 2. When a replacement server is available, install an additional Service Manager management server. For more information, see [How to Install an Additional Management Server](deploy-additional-ms.md).  
 
@@ -47,7 +47,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 3. Start with a new computer that has the same computer name as the computer that failed.  
 
-4. Restore the encryption key that you saved from the original Service Manager management server. For more information, see [How to Restore the Service Manager Encryption Key](ms-disaster-recovery.md) in this guide.  
+4. Restore the encryption key that you saved from the original Service Manager management server. For more information, see [How to Restore the Service Manager Encryption Key](./implement-disaster-recovery.md) in this guide.  
 
 5. Install a Service Manager management server. For more information, see [Service Manager Deployment Scenarios](deploy-scenarios.md).  
 
@@ -56,7 +56,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 1.  Start with a new computer that has the same computer name as the computer that failed.  
 
-2.  Restore the encryption key that you saved from the original data warehouse management server. For more information, see [How to Restore the Service Manager Encryption Key](ms-disaster-recovery.md) in this guide.  
+2.  Restore the encryption key that you saved from the original data warehouse management server. For more information, see [How to Restore the Service Manager Encryption Key](./implement-disaster-recovery.md) in this guide.  
 
 3.  Install a data warehouse management server. For more information, see [Service Manager Deployment Scenarios](deploy-scenarios.md).  
 
@@ -65,7 +65,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 1.  Start with a new computer with the same computer name and with the same SQL&nbsp;Server instance as the computer that failed.  
 
-2.  Restore the SQL&nbsp;Server database or databases using the same instance name as the original. For more information, see [Database Recovery in Service Manager](database-recovery.md) in this guide.
+2.  Restore the SQL&nbsp;Server database or databases using the same instance name as the original. For more information, see [Database Recovery in Service Manager](./implement-disaster-recovery.md) in this guide.
 
 ## Next steps
 

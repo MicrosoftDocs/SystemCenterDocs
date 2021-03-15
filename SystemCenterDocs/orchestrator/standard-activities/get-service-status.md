@@ -1,5 +1,6 @@
 ---
-title: "Get Service Status | Microsoft Docs"
+title: Get Service Status
+description: This article describes about the Get Service Status activity and its use to check the status of a service on any computer.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
@@ -24,7 +25,7 @@ manager: "cfreeman"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 

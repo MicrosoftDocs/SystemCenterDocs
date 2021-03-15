@@ -28,7 +28,7 @@ The Operations Guide is a comprehensive resource that can be used to understand 
 
 If you are new to Operations Manager, you should read [Key Concepts](key-concepts.md) to understand what a management group is and how Operations Manager works.  
 
-Read [What's New in Operations Manager](what-is-new.md) to review the differences between Operations Manager 2016 and later versions.
+Read [What's New in Operations Manager](./whats-new-in-om.md) to review the differences between Operations Manager 2016 and later versions.
 
 ## In the Operations Guide  
 
@@ -72,4 +72,4 @@ Read [What's New in Operations Manager](what-is-new.md) to review the difference
 
     This section explains how to manage grooming configuration for the databases, moving the database, configuring communication with SQL Server, understand how to monitor the health of your management group, and other maintenance tasks to help manage the health and performance of the roles supporting your management group.   
 
-Other topics in this guide include guidance and recommendations for configuring monitoring of network devices, web-based applications, integration with SharePoint Server or create custom Visio dashboards to visualize monitoring data, and much more to help you make the most effective use of Operations Manager in support of your IT operations.  
+Other topics in this guide include guidance and recommendations for configuring monitoring of network devices, web-based applications, integration with SharePoint Server or create custom Visio dashboards to visualize monitoring data, and much more to help you make the most effective use of Operations Manager in support of your IT operations.

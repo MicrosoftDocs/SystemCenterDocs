@@ -32,8 +32,8 @@ When you add fiber channel or iSCSI storage to a Hyper-V host managed in the VMM
 
 When Hyper-V hosts and clusters are added to the VMM fabric, VMM deploys an agent to connectivity between the host and the VMM server. Additionally, VMM collects configuration information about the host or cluster and adds it to VMM. In the case of MPIO, VMM adds two registry keys containing MPIO information.
 
-    - HKEY LOCAL MACHINE\SYSTEM\CurrentControlSet\Control\MPDEV\MPIOSupportedDeviceList
-    - HKEY LOCAL MACHINE\SYSTEM\CurrentControlSet\Services\msdsm\Parameters\DsmSupportedDeviceList
+  - HKEY LOCAL MACHINE\SYSTEM\CurrentControlSet\Control\MPDEV\MPIOSupportedDeviceList
+  - HKEY LOCAL MACHINE\SYSTEM\CurrentControlSet\Services\msdsm\Parameters\DsmSupportedDeviceList
 
 After supported storage devices are added to the device list, VMM makes a "claim" on them, and a restart is required on the host. If you've added the host to VMM before deploying workloads on it, then this probably isn't an issue, but if workloads are already running on the host, this could cause interruptions. In an attempt to avoid potential outages, you can run a PowerShell script to prepopulate the MPIO registry keys on a host, before adding it to the VMM fabric. [Learn more](https://blogs.technet.microsoft.com/scvmm/2015/04/30/support-tip-virtual-machine-connections-to-storage-lost-when-adding-host-cluster-in-vmm-2012-r2/) about this script.
 

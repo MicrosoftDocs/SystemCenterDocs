@@ -1,5 +1,6 @@
 ---
-title: "Set SNMP Variable | Microsoft Docs"
+title: Set SNMP Variable
+description: This article describes the Set SNMP Variable activity that will modify a variable, specified by its MIB, on a network device.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
@@ -24,7 +25,7 @@ manager: "cfreeman"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 

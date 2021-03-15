@@ -1,6 +1,6 @@
 ---
 title: Scale Tier In activity in System Center - Orchestra
-description: The Scale Tier In activity is used in a runbook to remove one virtual machine instance from a specified service tier.
+description: This article describes how the Scale Tier In activity is used in a runbook to remove one virtual machine instance from a specified service tier and publish the data.
 ms.date: 01/22/2018
 ms.prod: system-center
 ms.technology: orchestrator

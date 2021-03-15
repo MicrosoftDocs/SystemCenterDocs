@@ -37,15 +37,15 @@ The upgrade instructions in this article assume the following scenario:
 
 Here's the recommended upgrade order for the above scenario
 
-1. Update the VMM console to 2016. We're presuming you've already updated the VMM server to 2016. Read [this article](https://docs.microsoft.com/system-center/vmm/upgrade-vmm?view=sc-vmm-2016) if you haven't.
+1. Update the VMM console to 2016. We're presuming you've already updated the VMM server to 2016. Read [this article](../vmm/upgrade-vmm.md?preserve-view=true&view=sc-vmm-2016) if you haven't.
 2. Update SPF to 2016.
 
 ## Before you start
 
 1. Make sure Windows Azure Pack, SPF, and VMM are all running the required updates.
 2. We recommend that you shut down VMM and Windows Azure Pack servers, removing all database activity.
-3. Verify SPF [system requirements](https://docs.microsoft.com/system-center/spf/system-reqs?view=sc-spf-2016). Note that SPF must run on Windows Server 2016 - Core or Desktop experience.
-4. Verify VMM [console requirements](https://docs.microsoft.com/system-center/vmm/system-requirements?view=sc-vmm-2016#vmm-console-operating-system).
+3. Verify SPF [system requirements](../spf/system-requirements-spf.md?preserve-view=true&view=sc-spf-2016). Note that SPF must run on Windows Server 2016 - Core or Desktop experience.
+4. Verify VMM [console requirements](../vmm/system-requirements.md?preserve-view=true&view=sc-vmm-2016#vmm-console-operating-system).
 
 
 ## Run the SPF upgrade
@@ -75,8 +75,8 @@ Here's the recommended upgrade order for the above scenario
 
 1. Rename the VM you set up to the original name of the SPF 2012 R2 machine, so from **SERVER-SPF-UPGRADE** to **SERVER-SPF-01**.
 2. Join the VM to the domain.
-3. Install the [VMM console](https://docs.microsoft.com/system-center/vmm/install-console?view=sc-vmm-2016).For a core installation you can install from the [command line](https://docs.microsoft.com/system-center/vmm/install-console?view=sc-vmm-2016#install-the-console-from-the-command-prompt), or set up from the user interface and change to Core later.
-4. Install [SPF 2016](https://docs.microsoft.com/system-center/spf/deploy-spf?view=sc-spf-2016), using the existing SQL Server database name during setup.
+3. Install the [VMM console](../vmm/install-console.md?preserve-view=true&view=sc-vmm-2016).For a core installation you can install from the [command line](../vmm/install-console.md?preserve-view=true&view=sc-vmm-2016#install-the-console-from-the-command-prompt), or set up from the user interface and change to Core later.
+4. Install [SPF 2016](../spf/deploy-spf.md?preserve-view=true&view=sc-spf-2016), using the existing SQL Server database name during setup.
 
 
 ## Post-upgrade tasks

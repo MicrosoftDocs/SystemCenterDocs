@@ -28,7 +28,7 @@ The success or failure of a workflow is retained by Service Manager, and it is a
 
 ## Configure incident workflows
 
-You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](admin-how-to-set-incident-priority.md) and To create a new printer-related incident template in [How to Create Incident Templates](admin-how-to-create-incident-templates.md).
+You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](./incident-mgt.md) and To create a new printer-related incident template in [How to Create Incident Templates](./incident-mgt.md).
 
 ### To configure an incident workflow
 
@@ -57,10 +57,10 @@ You can use the following procedure to create and configure a workflow rule that
 
 ![PowerShell symbol](./media/workflows/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New-SCSMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225361).
--   For information about how to use Windows PowerShell to retrieve configuration and status information for  Service Manager workflows, see [Get-SCSMWorkflowStatus](https://go.microsoft.com/fwlink/p/?LinkID=225347).
--   For information about how to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](https://go.microsoft.com/fwlink/p/?LinkID=225392).
--   For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225372).
+-   For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New-SCSMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316243(v=sc.20)).
+-   For information about how to use Windows PowerShell to retrieve configuration and status information for  Service Manager workflows, see [Get-SCSMWorkflowStatus](/previous-versions/system-center/powershell/system-center-2012-r2/hh316207(v=sc.20)).
+-   For information about how to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](/previous-versions/system-center/powershell/system-center-2012-r2/hh316204(v=sc.20)).
+-   For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](/previous-versions/system-center/powershell/system-center-2012-r2/hh316221(v=sc.20)).
 
 ## View workflow success or failure in Service Manager
 
@@ -76,7 +76,7 @@ Use the following procedure to view the success or failure instances of the work
     2.  Click **View related object** to view the form that was used when the workflow ran.
     The status of each workflow is displayed in the **Status** column.
 
-![PowerShell symbol](./media/workflows/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in Service Manager, see [Get-SCSMWorkflowStatus](https://go.microsoft.com/fwlink/p/?LinkID=225347).
+![PowerShell symbol](./media/workflows/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in Service Manager, see [Get-SCSMWorkflowStatus](/previous-versions/system-center/powershell/system-center-2012-r2/hh316207(v=sc.20)).
 
 
 ## Next steps

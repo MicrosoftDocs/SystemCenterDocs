@@ -1,5 +1,6 @@
 ---
 title: Common Activity Properties
+description: This article describes the common activity properties including the run behavior, published data behavior, event notifications and security credentials.
 ms.custom: na
 ms.prod: system-center
 ms.reviewer: na
@@ -65,8 +66,8 @@ The settings on the Security Credentials tab let you specify the account that ru
 
 |Option|Behavior|  
 |----------|------------|  
-|Use the security of the account assigned to the service|Select this option to run the activity with the account used by the runbook server. For more information, see [Orchestrator Security Planning](https://technet.microsoft.com/library/hh420367.aspx).|  
+|Use the security of the account assigned to the service|Select this option to run the activity with the account used by the runbook server. For more information, see [Orchestrator Security Planning](/previous-versions/system-center/system-center-2012-R2/hh420367(v=sc.12)).|  
 |This account|Select this option to run this activity with another account. Specify the account user name and password to run this activity. Verify that the account has the credentials to perform this action. If the credentials you provided fail validation, the account assigned to the runbook server account is used.|  
 
 ## See Also  
-[Orchestrator Security Planning](https://technet.microsoft.com/library/hh420367.aspx)  
+[Orchestrator Security Planning](/previous-versions/system-center/system-center-2012-R2/hh420367(v=sc.12))

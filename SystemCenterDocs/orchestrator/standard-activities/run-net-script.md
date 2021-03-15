@@ -1,5 +1,6 @@
 ---
-title: "Run .Net Script | Microsoft Docs"
+title: Run .Net Script 
+description: This article describes Run .Net Script activity that runs scripts written in VB.NET, JScript, C#, and Windows PowerShell.
 ms.custom: ""
 ms.date: "07/25/2019"
 ms.prod: system-center
@@ -20,7 +21,7 @@ manager: "cfreeman"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -55,7 +56,7 @@ The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Wi
 |**References**|Add each of the Assembly (DLL) references that contain the libraries that you want to use. Add the **System.dll** located in the **Windows\Microsoft.NET\Framework\\<.NET Version>** directory.|  
 
 ###  <a name="BKMK_PublishedData"></a> Published Data  
- Add the published data items that you want this activity to publish. Every published data item that you add will be available on the Data bus. It is important to determine if a published data item will be multi-valued. The Run .Net Script activity automatically correlates multi-valued data from different items by aligning them. For example, if you choose to publish two items labeled “Name” and “Email” as Collections, the Run .Net script will try to line up each item in the Name collection with each item in the Email collection. If the collections are not equally sized, then the Run .Net Script activity will create blank values for the collection that has fewer items. For a list of data items and the corresponding description published by this activity, see the following Published Data table.  
+ Add the published data items that you want this activity to publish. Every published data item that you add will be available on the Data bus. It is important to determine if a published data item will be multi-valued. The Run .Net Script activity automatically correlates multi-valued data from different items by aligning them. For example, if you choose to publish two items labeled “Name” and “Email” as Collections, the Run .Net script will try to line up each item in the Name collection with each item in the Email collection. If the collections are not equally sized, then the Run .Net Script activity will create blank values for the collection that has fewer items. The following Published Data table lists the data items and the corresponding description published by this activity.  
 
 ### Published Data Tab  
 
@@ -63,8 +64,8 @@ The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Wi
 |--------------|--------------------------------|  
 |**Name**|Enter the **Name** of the published data. This will be the name that appears when other activities subscribe to the data published by the Run .Net Script activity.|  
 |**Type**|You can select **Date/Time**, **Integer**, or **String**. If the type you want is not available, select **String**. Use the **ToString** method of the activity to assign a value to this published data.|  
-|**Collection**|If your data is multi-valued data, select **Collection**. When using a collection you must use the **Add** method to add items to the collection. If you are not using the collection you can use the assignment operator **(=)** to assign the value.|  
-|**Variable name**|Use unique naming to make sure that your variable name does not collide with existing variables within your script or with classes and keywords available in .NET. We recommend prefixing variables with “OPD_”. For example, if you want to name your variable “myString”, you would name it “OPD_myString”.<br /><br /> The Run .Net Script activity will automatically create a .NET Property for this item. If this variable is a collection it will be created using a List\<T>, where T is the **Type** that you selected. If it is not a collection the property will be created using a **String**, **Integer**, or **Date/Time** based on the **Type** that you selected.|  
+|**Collection**|If your data is multi-valued data, select **Collection**. When using a collection, you must use the **Add** method to add items to the collection. If you are not using the collection, you can use the assignment operator **(=)** to assign the value.|  
+|**Variable name**|Use unique naming to make sure that your variable name does not collide with existing variables within your script or with classes and keywords available in .NET. We recommend prefixing variables with “OPD_”. For example, if you want to name your variable “myString”, you would name it “OPD_myString”.<br /><br /> The Run .Net Script activity will automatically create a .NET Property for this item. If this variable is a collection it will be created using a List\<T>, where T is the **Type** that you selected. However, if it is not a collection, the property will be created using a **String**, **Integer**, or **Date/Time** based on the **Type** that you selected.|  
 
 ### Published Data  
 
@@ -111,4 +112,4 @@ $PSVersion = $Result[1]
 )
 ```
 
-![.Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script-ps-version.png)
+![View .Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script-ps-version.png)

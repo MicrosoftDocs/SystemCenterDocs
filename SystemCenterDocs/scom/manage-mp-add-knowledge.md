@@ -33,7 +33,7 @@ To add or edit company knowledge, the computer must meet the following software 
 
 -   The Operations console is installed on the computer.
 -   Microsoft Word 2010 or higher.
--   [Microsoft Visual Studio 2010 Tools for Office Runtime](https://docs.microsoft.com/visualstudio/vsto/visual-studio-tools-for-office-runtime-installation-scenarios).   
+-   [Microsoft Visual Studio 2010 Tools for Office Runtime](/visualstudio/vsto/visual-studio-tools-for-office-runtime-installation-scenarios).   
 
 To add or edit company knowledge, you must have the Author or Administrator user role.  
 
@@ -70,4 +70,4 @@ To add or edit company knowledge, you must have the Author or Administrator user
 
 - To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md)
 
-- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](manage-mp-override-rule-monitor.md) to understand how to configure the change.    
+- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](manage-mp-override-rule-monitor.md) to understand how to configure the change.

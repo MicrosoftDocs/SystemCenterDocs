@@ -170,7 +170,7 @@ To create a Protection Group:
 
 7. On the **Specify Short-Term Goals** screen specify the details for **Retention Range** and **Synchronization Frequency**, and click **Next**. If desired, click **Modify** to change the schedule when recovery points are taken.
 
-   ![Select data protection method](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen5.png)
+   ![Specify short term goals](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen5.png)
 
 8. The **Review Disk Storage Allocation** screen provides details about the selected data sources, their size, the **Space to be Provisioned**, and **Target Storage Volume**.
 
@@ -224,7 +224,7 @@ If you want to use legacy storage with DPM 2016, it may become necessary to add 
 
 ## New PowerShell cmdlets
 
-For DPM 2016, two new cmdlets: [Mount-DPMRecoveryPoint](https://technet.microsoft.com/library/mt787159.aspx) and [Dismount-DPMRecoveryPoint](https://technet.microsoft.com/library/mt787158.aspx) are available. Click the cmdlet name to see its reference documentation.
+For DPM 2016, two new cmdlets: [Mount-DPMRecoveryPoint](/powershell/module/dataprotectionmanager/mount-dpmrecoverypoint) and [Dismount-DPMRecoveryPoint](/powershell/module/dataprotectionmanager/dismount-dpmrecoverypoint) are available. Click the cmdlet name to see its reference documentation.
 
 
 ## Enable Cloud Protection
@@ -235,4 +235,4 @@ You can back up a DPM server to Azure. The high level steps are:
 - download vault credentials and the Azure Backup Agent,
 - configure the server's vault credentials and backup policy,
 
-For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM](https://azure.microsoft.com/documentation/articles/backup-azure-dpm-introduction).
+For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM](/azure/backup/backup-azure-dpm-introduction).

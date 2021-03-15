@@ -89,7 +89,7 @@ After the wizard completes, the management pack is saved to Operations Manager a
 
 ## How to export a Report
 
-After a report has been run, you can export the report into one of several formats supported by SQL Server Reporting Services.  To learn about what formats are supported by SQL Server Reporting Services, please review [Export Reports](https://msdn.microsoft.com/library/dd239307.aspx)
+After a report has been run, you can export the report into one of several formats supported by SQL Server Reporting Services.  To learn about what formats are supported by SQL Server Reporting Services, please review [Export Reports](/sql/reporting-services/report-builder/export-reports-report-builder-and-ssrs)
 
 > [!NOTE]  
 > Operations Manager Reporting must be installed before you can run a report.  

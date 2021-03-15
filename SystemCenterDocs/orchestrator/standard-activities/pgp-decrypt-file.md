@@ -1,5 +1,6 @@
 ---
-title: "PGP Decrypt File | Microsoft Docs"
+title: PGP Decrypt File
+description: This article describes the functionality of PGP Decrypt File activity.
 ms.custom: ""
 ms.date: 05/07/2019
 ms.prod: system-center
@@ -20,7 +21,7 @@ manager: "cfreeman"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 

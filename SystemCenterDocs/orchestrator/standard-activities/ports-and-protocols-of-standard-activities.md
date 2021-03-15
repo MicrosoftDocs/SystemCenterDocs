@@ -1,5 +1,6 @@
 ---
-title: "Ports and Protocols of Standard Activities | Microsoft Docs"
+title: Ports and Protocols of Standard Activities 
+description: This article describes Ports and Protocols of Standard Activities.
 ms.custom: na
 ms.date: 1/2/2018
 ms.prod: system-center
@@ -18,7 +19,7 @@ manager: cfreeman
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -44,4 +45,4 @@ Orchestrator standard activities can communicate between the runbook servers whe
 
 -   [Orchestrator overview](../learn-about-orchestrator.md)  
 
--   [Alphabetical List of Standard Activities](alphabetical-list-of-standard-activities.md)  
+-   [Alphabetical List of Standard Activities](alphabetical-list-of-standard-activities.md)

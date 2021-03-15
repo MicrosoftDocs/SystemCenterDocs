@@ -23,7 +23,7 @@ ms.assetid: 7904413b-ace2-4e65-b609-d0804d99c764
 
 ::: moniker-end
 
-Service Manager helps your organization manage incidents and problems by implementing and automating help desk ticketing processes so that these processes comply with the best practices that are described in the Microsoft Operations Framework \(MOF\) and in the Information Technology Infrastructure Library \(ITIL\). For more information about MOF&nbsp;4.0, see [Microsoft Operations Framework](https://go.microsoft.com/fwlink/p/?LinkID=116391).  
+Service Manager helps your organization manage incidents and problems by implementing and automating help desk ticketing processes so that these processes comply with the best practices that are described in the Microsoft Operations Framework \(MOF\) and in the Information Technology Infrastructure Library \(ITIL\). For more information about MOF&nbsp;4.0, see [Microsoft Operations Framework](/previous-versions/tn-archive/cc936627(v=technet.10)).  
 
 If you need to add or extend the functionality of Service Manager to implement custom processes for handling incidents and problems, you can use standard Microsoft development tools and the Service Manager SDK.  
 

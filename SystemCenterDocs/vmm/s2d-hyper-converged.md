@@ -174,7 +174,7 @@ You can now modify the storage pool settings, and create virtual disks and CSVs.
 
 6. Click **Configure advanced storage and tiering settings** to set up these options.
 
-    ![Volume settings](./media/s2d/storage-spaces-tiering.png)
+    ![Configure Storage settings](./media/s2d/storage-spaces-tiering.png)
 
 
 5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
@@ -199,11 +199,11 @@ You can now modify the storage pool settings, and create virtual disks and CSVs.
 4. In the Create Volume Wizard > **Storage Type**, specify the volume name, and select the storage pool.
 5. In **Capacity**, you can specify the volume size, file system, and resiliency settings.
 
-    ![Volume settings](./media/s2d/storage-spaces-volume-settings.png)
+    ![Volume Capacity settings](./media/s2d/storage-spaces-volume-settings.png)
 
 6. Click **Configure advanced storage and tiering settings** to set up these options.
 
-    ![Volume settings](./media/s2d/storage-spaces-tiering.png)
+    ![Storage settings](./media/s2d/storage-spaces-tiering.png)
 
 
 5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.

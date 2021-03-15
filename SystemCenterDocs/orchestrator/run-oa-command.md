@@ -36,9 +36,9 @@ The activity publishes all of the data from the required and optional properties
 
 ## Run OA Command optional properties
 
-| **Element** | **Description**   | **Valid Values** |   |
-|:---|:---|:---|:---|
-| Fields   | Optional fields can be added to the Fields list by clicking Select fields. | String   |   |
+| **Element** | **Description**   | **Valid Values** |   
+|:---|:---|:---|
+| Fields   | Optional fields can be added to the Fields list by clicking Select fields. | String   |   
 
 ## Run OA Command published data
 

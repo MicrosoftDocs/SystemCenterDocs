@@ -1,5 +1,6 @@
 ---
-title: "Monitor Disk Space | Microsoft Docs"
+title: Monitor Disk Space
+description: This article describes the Monitor Disk Space activity that will invoke a runbook when the disk space on a computer passes a critical threshold.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
@@ -24,7 +25,7 @@ manager: "cfreeman"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 

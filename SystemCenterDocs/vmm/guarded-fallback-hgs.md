@@ -33,7 +33,7 @@ The primary HGS URLs will always be used in favor of the secondary.  If the prim
 ## Before you start
 
 Ensure you have deployed and configured the Host Guardian Service before proceeding.
-Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
+Learn more about [configuring HGS](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
 
 
 ## Configure fallback HGS
@@ -94,6 +94,6 @@ Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-
 
 ## Next steps
 
-- [Deploy the Host Guardian Service (HGS)](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs)
-- [Manage HGS ](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-manage-hgs)
-- [Set up a fallback HGS for a branch office](https://blogs.technet.microsoft.com/datacentersecurity/2017/11/15/improved-branch-office-support-for-shielded-vms-in-windows-server-version-1709)
+- [Deploy the Host Guardian Service (HGS)](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs)
+- [Manage HGS ](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-manage-hgs)
+- [Set up a fallback HGS for a branch office](/archive/blogs/datacentersecurity/improved-branch-office-support-for-shielded-vms-in-windows-server-version-1709)

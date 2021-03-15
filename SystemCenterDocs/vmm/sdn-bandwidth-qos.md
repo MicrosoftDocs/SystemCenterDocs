@@ -26,7 +26,7 @@ Through this configuration, you can limit the bandwidth of the traffic flowing i
 - Service providers can prevent a high-traffic VM from blocking other VMs.
 - Tenants can get the minimum reserved bandwidth regardless of the network traffic.
 
-For detailed information about the SDN QoS settings available in Network Controller, see [Configure Quality of Service (QoS) for a Tenant VM Network Adapter](https://technet.microsoft.com/windows-server-docs/networking/sdn/manage/configure-qos-for-tenant-vm-network-adapter).
+For detailed information about the SDN QoS settings available in Network Controller, see [Configure Quality of Service (QoS) for a Tenant VM Network Adapter](/windows-server/networking/sdn/manage/configure-qos-for-tenant-vm-network-adapter).
 
 QoS settings are managed in VMM through virtual network adapter port profiles associated with a port classification. Port profile settings enable uniformity and ease of application across multiple adapters.
 

@@ -30,13 +30,13 @@ You can deploy shielded VMs in VMM in a couple of ways:
 
 [Watch](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Creating-a-Shielded-VM-using-System-Center-2016-Virtual-Machine-Manager-VMM) a video that provides a quick, two-minute overview of provisioning shielded VMs in VMM. Then, make sure you've done the following:
 
-1. **Prepare an HGS server**: You should have an HGS server deployed. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
+1. **Prepare an HGS server**: You should have an HGS server deployed. [Learn more](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
 2. **Set up VMM**: You need to configure global HGS settings in VMM, and set up at least one guarded host. If guarded hosts belong to a cloud, the cloud should be enabled to support shielded VMs. [Learn more](guarded-deploy-host.md).
 3. **Prepare a shielded VHDX and VM template**: You deploy shielded VMs from a shielded virtual hard disk (VHDX), optionally using a VM template. [Learn more](guarded-deploy-template.md) about preparing these.
    > [!NOTE]
    > You cannot use a  service template to create a shielded VM. Use a script instead.
 
-4. **Prepare shielding data files**: To use the signed template disks in the VMM library, tenants must prepare one or more shielding data files. This file contains all the secrets that a tenant needs to deploy a VM, including the unattend file used to specialize the VM, certificates, administrator account passwords. The file also specifies which guarded fabric a tenant trusts to host their VM and information about the signed template disks. The file is encrypted and can only be read by a host in a guarded fabric trusted by the tenant. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data).
+4. **Prepare shielding data files**: To use the signed template disks in the VMM library, tenants must prepare one or more shielding data files. This file contains all the secrets that a tenant needs to deploy a VM, including the unattend file used to specialize the VM, certificates, administrator account passwords. The file also specifies which guarded fabric a tenant trusts to host their VM and information about the signed template disks. The file is encrypted and can only be read by a host in a guarded fabric trusted by the tenant. [Learn more](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data).
 5. **Set up host group**: For easy management, we recommend that guarded hosts be placed in a dedicated VMM host group.
 6. **Verify existing VM requirements**: If you want to convert an existing VM to shielded, note the following:
     - The VM must be generation 2 and have the Microsoft Windows Secure Boot template enabled
@@ -52,7 +52,7 @@ Before you can convert an existing VM to a shielded VM or provision a new shield
 
 If you do not already have a shielding data file imported, complete the following steps:
 
-1. [Create a shielding data file](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data) if you don't already have one. Make sure the shielding data file authorizes the hosting fabric VMM manages to run your shielded VMs.
+1. [Create a shielding data file](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data) if you don't already have one. Make sure the shielding data file authorizes the hosting fabric VMM manages to run your shielded VMs.
 2. In the VMM console, click **Library** > **Import Shielding Data** > **Browse** and select your shielding data file.
 3. Specify a friendly name for the shielding data file in **Name** and optionally add a description. It is recommended that you indicate whether the shielding data file is intended for use with existing or new VMs in its name to make it easier to find again.
 4. Click **Import** to save the shielding data in VMM.

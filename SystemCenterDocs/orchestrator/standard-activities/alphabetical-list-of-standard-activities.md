@@ -1,5 +1,6 @@
 ---
-title: "Alphabetical List of Standard Activities | Microsoft Docs"
+title: Alphabetical List of Standard Activities
+description: This article lists Standard Activities
 ms.custom: ""
 ms.date: 2/1/2018
 ms.prod: system-center
@@ -20,7 +21,7 @@ manager: cfreeman
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](https://docs.microsoft.com/system-center/orchestrator/?view=sc-orch-2019).
+> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 

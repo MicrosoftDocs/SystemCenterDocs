@@ -50,7 +50,7 @@ By default, Operations Manager monitors the following operating system objects:
 - Logical disk
 - Network Adapters
 
-You can provide additional monitoring and interaction capabilities with your managed UNIX and Linux computers by using the UNIX and Linux monitoring pack templates. For more information, see [UNIX or Linux Log File](https://technet.microsoft.com/library/hh457589.aspx) and [UNIX or Linux Process](https://technet.microsoft.com/library/hh457572.aspx) in the Authoring Guide.
+You can provide additional monitoring and interaction capabilities with your managed UNIX and Linux computers by using the UNIX and Linux monitoring pack templates. For more information, see [UNIX or Linux Log File](/previous-versions/system-center/system-center-2012-R2/hh457589(v=sc.12)) and [UNIX or Linux Process](/previous-versions/system-center/system-center-2012-R2/hh457572(v=sc.12)) in the Authoring Guide.
 
 ## Troubleshooting UNIX and Linux monitoring
 The following section provides information about issues that might occur with monitoring UNIX and Linux computers in Operations Manager.     
@@ -148,7 +148,7 @@ If the FQDN is not in Reverse DNS, you can add an entry to the hosts file locate
 For example, to add an entry for the host named "newhostname.newdomain.name" with an IP address of 192.168.1.1, add the following to the end of the hosts file:  
 
 ```  
-192.168.1.1&nbsp;&nbsp;&nbsp;&nbsp; newhostname.newdomain.name  
+192.168.1.1      newhostname.newdomain.name  
 ```  
 
 ## Management pack issues
@@ -226,7 +226,7 @@ The following table lists the possible parameter values:
 ### Use DebugView to Troubleshoot Discovery Issues  
 DebugView is an alternative method to EnableOpsmgrModuleLogging for troubleshooting discovery issues.  
 
-1.  Download DebugView from: [https://go.microsoft.comfwlink/?Linkid=129486](https://go.microsoft.com/fwlink/?Linkid=129486).  
+1.  Download DebugView from: [https://go.microsoft.comfwlink/?Linkid=129486](/sysinternals/downloads/debugview).  
 
 2.  Launch DebugView on the Management Server performing the discovery.  
 

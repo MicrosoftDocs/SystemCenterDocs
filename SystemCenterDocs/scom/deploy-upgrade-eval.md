@@ -69,10 +69,10 @@ Before proceeding, you need to be a member of the Operations Manager administrat
 6. To check whether the changes were made, run the following command:
 `Get-SCOMManagementGroup | ft skuforlicense, version, timeofexpiration –a`
 
-For more information about [Set-SCOMLicense](https://docs.microsoft.com/powershell/module/operationsmanager/set-scomlicense?view=systemcenter-ps-2016), type the following in the Operations Manager Command Shell:
+For more information about [Set-SCOMLicense](/powershell/module/operationsmanager/set-scomlicense), type the following in the Operations Manager Command Shell:
 
 `get-help Set-SCOMLicense`
 
-For current information about your license, you can use the [Get-SCOMLicense](https://docs.microsoft.com/powershell/module/operationsmanager/get-scomlicense?view=systemcenter-ps-2016) cmdlet. For more information, type the following in the Operations Manager Command Shell:
+For current information about your license, you can use the [Get-SCOMLicense](/powershell/module/operationsmanager/get-scomlicense) cmdlet. For more information, type the following in the Operations Manager Command Shell:
 
 `get-help Get-SCOMLicense`

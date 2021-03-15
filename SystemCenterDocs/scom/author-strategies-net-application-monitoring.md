@@ -24,11 +24,11 @@ Here are some scenarios and settings to change during authoring that can help yo
 
 ## Monitoring a new application
 
-Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports. For more information, see [How to Start Monitoring a New Application](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29) and [Application Monitoring Using the Default Settings](application-monitor-use-default-settings.md)
+Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports. For more information, see [How to Start Monitoring a New Application](/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29) and [Application Monitoring Using the Default Settings](application-monitor-use-default-settings.md)
 
 ## Limit monitoring to a specific set of servers
 
-Defining a targeted group allows you to limit monitoring to a specific set of servers. In the .NET Application Performance Monitoring wizard, targeted group for server-side monitoring is on the  **What to Monitor**  page. Targeted group for client-side monitoring is on the  **Enable Client-Side Monitoring**  page. If you are using a targeted group for client-side monitoring and use a load balancer, see [Client-Side Monitoring with Targeted Groups and Load Balancers](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh544003%28v%3dsc.12%29)
+Defining a targeted group allows you to limit monitoring to a specific set of servers. In the .NET Application Performance Monitoring wizard, targeted group for server-side monitoring is on the  **What to Monitor**  page. Targeted group for client-side monitoring is on the  **Enable Client-Side Monitoring**  page. If you are using a targeted group for client-side monitoring and use a load balancer, see [Client-Side Monitoring with Targeted Groups and Load Balancers](/previous-versions/system-center/system-center-2012-R2/hh544003%28v%3dsc.12%29)
 
 For large application deployments, you typically do not need to monitor all instances of the application. A representative sample is enough to get the data you need. Using only a representative sample will keep the amount of data collected and stored lower.
 
@@ -111,4 +111,4 @@ You might also want to adjust the sampling rate to control the performance impac
 
 ## See also
 
-- [How to Start Monitoring a New Application](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29)
+- [How to Start Monitoring a New Application](/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29)
