@@ -38,7 +38,7 @@ VMM 2019 UR3 and later supports *trunk* mode for VM vNICs. Trunk mode is used by
 applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over
 multiple vLANs. You can enable trunk mode through console and PowerShell.
 
-See the following section for enabling Trunk mode through console, see [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019) and New-[SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019) for enabling through PowerShell commandlets.
+See the following section for enabling Trunk mode through console, see [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019&preserve-view=true) and New-[SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019&preserve-view=true) for enabling through PowerShell commandlets.
 
 
 >[!NOTE]
