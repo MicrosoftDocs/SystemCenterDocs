@@ -5,7 +5,7 @@ description: This include file describes the new features in Virtual Machine Man
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  02/05/2021
+ms.date:  03/15/2021
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -360,7 +360,7 @@ For problems fixed in VMM 2019 UR3, and installation instructions for UR3, see t
 
 #### Trunk mode support for VM vNICs
 
-VMM 2019 UR3 includes Trunk mode support for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs.
+VMM 2019 UR3 includes Trunk mode support for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs. [Learn more](../vmm/vm-settings.md#support-for-trunk-mode).
 
 #### Support for Azure Stack HCI clusters
 
@@ -369,7 +369,7 @@ VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters
 Azure Stack HCI, currently in public preview is the newly introduced hyper-converged infrastructure (HCI)
 Operating system that runs on on-premises clusters with virtualized workloads.
 
-Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters.
+Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters. [Learn more](../vmm/deploy-manage-azure-stack-hci.md).
 
 >[!NOTE]
 >Management of Azure Stack HCI *stretched* clusters is currently not supported in VMM.
