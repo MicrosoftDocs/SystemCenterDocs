@@ -30,7 +30,7 @@ Make sure you're running VMM 2019 UR3 or later.
 
 **What’s supported?**
 
-- Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](provision-vms.md) to create and manage HCI clusters
+- Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](provision-vms.md) to create and manage HCI clusters.
 
 - Ability to provision & deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD files, templates or from an existing VM. [Learn more](provision-vms.md).
 
@@ -58,7 +58,7 @@ Make sure you're running VMM 2019 UR3 or later.
 
 > [!NOTE]
 > You must enable S2D when creating a Azure Stack HCI cluster.
-To enable S2D, in the cluster creation wizard, go to **General Configuration**, under **Specify the cluster name and host group**, select **Enable Storage Spaces Direct**, as shown below:
+> To enable S2D, in the cluster creation wizard, go to **General Configuration**, under **Specify the cluster name and host group**, select **Enable Storage Spaces Direct**, as shown below:
 
 ![S2D enabled](./media/s2d/s2d-enable.png)
 
@@ -198,7 +198,7 @@ If you use PowerShell, the pool and the storage tier is automatically created wi
 
 ## Step 7: Deploy VMs on the cluster
 
-In a hyper-converged topology VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
+In a hyper-converged topology VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would create any other VM.
 
 > [!Important]
 > If the Azure Stack HCI cluster is not registered with Azure or not connected to Azure for more than 30 days post registration, High availability Virtual machine (HAVM) creation will be blocked on the cluster. Refer to step 4 & 5 for cluster registration.
