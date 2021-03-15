@@ -77,15 +77,17 @@ Follow these steps:
 
 ## Step 1: Provision the cluster
 
+You can provision a cluster by Hyper-V hosts and bare-metal machines:
+
 ### Provision a cluster from Hyper-V hosts
 
-1. If you need to add the Azure Stack HCI  hosts to the VMM fabric, [follow these steps](hyper-v-existing.md). If they’re already in the VMM fabric, skip to the next step.
+If you need to add the Azure Stack HCI  hosts to the VMM fabric, [follow these steps](hyper-v-existing.md). If they’re already in the VMM fabric, skip to the next step.
 
-  > [!NOTE]
-  > - When you set up the cluster, select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the **Create Hyper-V Cluster** wizard.
-  > - In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
-  > - All the selected hosts should have Azure Stack HCI OS installed
-  > - Since S2D is enabled, the cluster must be validated.
+> [!NOTE]
+> - When you set up the cluster, select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the **Create Hyper-V Cluster** wizard.
+> - In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
+> - All the selected hosts should have Azure Stack HCI OS installed.
+> - Since S2D is enabled, the cluster must be validated.
 
 ### Provision a cluster from bare metal machines
 
