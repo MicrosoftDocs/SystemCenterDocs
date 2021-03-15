@@ -62,7 +62,7 @@ Use the following steps to add a virtual network adapter:
     - **Static**. Select this option if you want to specify a static MAC address for a virtual machine. Type a static MAC address in the field provided.
     - **Trunk Mode**: Select to enable Trunk mode. (applicable from 2019 UR3)
 
-### Steps to configure trunk mode
+### Configure trunk mode
 
 To configure trunk mode in VMM, follow the steps:
 
