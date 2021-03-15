@@ -58,6 +58,7 @@ Make sure you're running VMM 2019 UR3 or later.
 
 > [!NOTE]
 > You must enable S2D when creating a Azure Stack HCI cluster.
+
 > To enable S2D, in the cluster creation wizard, go to **General Configuration**, under **Specify the cluster name and host group**, select **Enable Storage Spaces Direct**, as shown below:
 
 ![S2D enabled](./media/s2d/s2d-enable.png)
