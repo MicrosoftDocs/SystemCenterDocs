@@ -63,10 +63,10 @@ Make sure you're running VMM 2019 UR3 or later.
 ![S2D enabled](./media/s2d/s2d-enable.png)
 
 After you enable a cluster with S2D, VMM does the following:
-1. The File Server role and the Failover Clustering feature are enabled.
-2. Storage replica and data deduplication is enabled.
-3. The cluster is optionally validated and created.
-4. S2D is enabled, and a storage array is created with the same name as you provided in the wizard.
+- The File Server role and the Failover Clustering feature are enabled.
+- Storage replica and data deduplication is enabled.
+- The cluster is optionally validated and created.
+- S2D is enabled, and a storage array is created with the same name as you provided in the wizard.
 
 If you use PowerShell to create a hyper-converged cluster, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 

@@ -181,7 +181,7 @@ You can now modify the storage pool settings, and create virtual disks and CSVs.
 
 5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
-If you use Powershell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
+If you use PowerShell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 
 ## Step 5: Deploy VMs on the cluster
 
@@ -210,7 +210,7 @@ You can now modify the storage pool settings, and create virtual disks and CSVs.
 
 5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
-If you use Powershell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
+If you use PowerShell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 
 ## Step 4: Deploy VMs on the cluster
 
