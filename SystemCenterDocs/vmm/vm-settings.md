@@ -38,7 +38,7 @@ VMM 2019 UR3 and later supports *trunk* mode for VM vNICs. Trunk mode is used by
 applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over
 multiple vLANs. You can enable trunk mode through console and PowerShell.
 
-See the following section for enabling Trunk mode through console, see [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019) and New-[SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019) for enabling through PowerShell commandlets.
+See the following section for enabling Trunk mode through console, see [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019&preserve-view=true) and New-[SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019&preserve-view=true) for enabling through PowerShell commandlets.
 
 
 >[!NOTE]
@@ -61,6 +61,14 @@ Use the following steps to add a virtual network adapter:
     - **Dynamic**. Select this option if you want to enable a dynamic MAC address for a virtual machine.
     - **Static**. Select this option if you want to specify a static MAC address for a virtual machine. Type a static MAC address in the field provided.
     - **Trunk Mode**: Select to enable Trunk mode. (applicable from 2019 UR3)
+
+### Configure trunk mode
+
+To configure trunk mode in VMM, follow the steps:
+
+1. Under VM **Properties**, navigate to **Configure Hardware Settings** > **Network Adapter**, and then select **Trunk mode** to enable trunk mode for VM vNICs.
+2. Select the VM networks (multiple vLANs) through which you want to direct the VM network traffic.
+3. The VM Network that is selected as part of *Connected to a VM Network* workflow should also be made the native VLAN. You cannot change the native VLAN later, as this is based on the VM network that was selected as part of *Connected to a VM Network* workflow.
 
 ### Add a virtual adapter with PowerShell
 

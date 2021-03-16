@@ -35,6 +35,7 @@
 ### [Manage SDN resources in the VMM fabric](network-sdn.md)
 ## [Deploy and manage Storage Spaces Direct](s2d.md)
 ### [Set up a hyper-converged Storage Spaces Direct cluster](s2d-hyper-converged.md)
+### [Deploy and manage Azure Stack HCI clusters in VMM](deploy-manage-azure-stack-hci.md)
 ### [Set up a disaggregated Storage Spaces Direct cluster](s2d-disaggregated.md)
 ### [Manage Storage Spaces Direct clusters](s2d-manage.md)
 ### [Assign storage QoS policies for Clusters](qos-storage-clusters.md)

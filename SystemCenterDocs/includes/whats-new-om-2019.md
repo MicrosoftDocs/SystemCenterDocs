@@ -347,33 +347,33 @@ For the problems fixed in UR3, and the installation instructions for UR3, see th
 
 ### Updates to change tracking feature
 
-Operations Manager 2019 UR3 includes updates to the change tracking feature for management packs. This feature now supports change tracking for agent and monitor health reset.
+Operations Manager 2019 UR3 includes updates to the change tracking feature for management packs. This feature now supports change tracking for agent and monitor health reset. [Learn more](../scom/management-pack-change-tracking.md#change-tracking-for-agent).
 
 ### Additional view options in web console widgets
 
-With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and State widget, also group the columns.
+With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and State widget, also group the columns. [Learn more](../scom/manage-create-web-dashboard-alerts.md#additional-view-options-in-alert-widget).
 
 ### Disabled SSL renegotiation for Linux agent
 
-With Operations Manager 2019 UR3 and later, SSL renegotiations have been disabled.
+With Operations Manager 2019 UR3 and later, SSL renegotiations have been disabled. [Learn more](../scom/manage-security-crossplat-config-sslcipher.md#disabled-ssl-renegotiations-in-linux-agent).
 
 ### Dynamic changes in log-level settings without agent restart
 
-With Operations Manager 2019 UR3 and later, you can change the log-level settings without restarting the agent.
+With Operations Manager 2019 UR3 and later, you can change the log-level settings without restarting the agent. [Learn more](../scom/manage-security-administer-crossplat-agent.md#dynamic-changes-in-log-level-settings-without-agent-restart).
 
 ### Resolved issues with orphan alerts
 
 In earlier releases, active alerts are not getting closed after non-persistent health state in failover  scenarios. Overall, health service doesn’t hold the last state of the monitor; alerts are not closed while resetting the monitor to healthy.
 
-With Operations Manager 2019 UR3 and later, all of the orphan alerts are closed, eventually, depending on the type of monitor.
+With Operations Manager 2019 UR3 and later, all of the orphan alerts are closed, eventually, depending on the type of monitor. [Learn more](../scom/manage-alert-created-by-monitor.md#closure-of-orphan-alerts).
 
 ### Support for RHEL 6
 
-Operations Manager 2019 UR3 and later supports RHEL6 via RHEL6 management pack.
+Operations Manager 2019 UR3 and later supports RHEL6 via RHEL6 management pack. [Learn more](../scom/plan-supported-crossplat-os.md#red-hat-enterprise-linux-server-6--applicable-for-2019-ur3-and-later).
 
 ### TLS 1.2 support for Solaris 10 SPARC
 
-Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC.
+Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Learn more](../scom/plan-supported-crossplat-os.md#solaris-10-sparc).
 
 ### Performance improvements in Operations Manager
 
