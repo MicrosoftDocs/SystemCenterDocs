@@ -355,7 +355,7 @@ With Operations Manager 2019 UR3 and later, you can sort the results columns in 
 
 ### Disabled SSL renegotiation for Linux agent
 
-With Operations Manager 2019 UR3 and later, SSL renegotiations have been disabled. [Learn more](../scom/manage-security-crossplat-config-sslcipher.md#disabled-ssl-renegotiation-in-omi).
+With Operations Manager 2019 UR3 and later, SSL renegotiations have been disabled. [Learn more](../scom/manage-security-crossplat-config-sslcipher.md#disabled-ssl-renegotiations-in-linux-agent).
 
 ### Dynamic changes in log-level settings without agent restart
 
