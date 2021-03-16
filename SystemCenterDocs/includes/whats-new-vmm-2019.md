@@ -314,7 +314,7 @@ VMM 2019 UR2 supports IPv6 SDN deployment. [Learn more](../vmm/sdn-controller.md
 
 #### Provision to set affinity between virtual network adapters and physical adapters
 
-VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual network adapters and physical adapters brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic. 
+VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual network adapters and physical adapters brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic. [Learn more](../vmm/hyper-v-network.md#set-affinity-between-vnics-and-pnics).
 
 ### Others
 
@@ -369,7 +369,7 @@ VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters
 Azure Stack HCI, currently in public preview is the newly introduced hyper-converged infrastructure (HCI)
 Operating system that runs on on-premises clusters with virtualized workloads.
 
-Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters. [Learn more](../vmm/deploy-manage-azure-stack-hci.md).
+Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters. 
 
 >[!NOTE]
 >Management of Azure Stack HCI *stretched* clusters is currently not supported in VMM.
