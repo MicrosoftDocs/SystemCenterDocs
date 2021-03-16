@@ -28,7 +28,7 @@ To provide *log on as a service* right to gMSA accounts, follow these steps:
 1.	Open the *Local Security Policy* MMC snap-in.
 2.	Go to **Local Policies**>**User Rights Assignment**
 3.	Double-click **Log on as a service** job under **Policy**.
-4.	Add the gMSAs to the list of accounts that are allowed to generate security audits.
+4.	Add the gMSAs to the list of accounts that are allowed to log on as a service.
 
     Here are the account details:
 
@@ -49,7 +49,7 @@ To grant *log on as a batch right* to Data Writer and Data Reader gMSAs, follow 
 
 1.	Follow step 1 and 2 from above procedure.
 2.	Select **Log on as a batch** under **Policy**.  
-3.  Add the gMSAs to the list of accounts that are allowed to generate security audits.
+3.  Add the gMSAs to the list of accounts that are allowed to log on as a batch.
 
     ![log on as a batch](media/gmsa/batch-job-properties.png)
 
