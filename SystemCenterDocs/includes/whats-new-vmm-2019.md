@@ -354,7 +354,7 @@ For more information about these updates, see [VMM PowerShell articles](https://
 
 The following sections introduce the new features and feature updates supported in VMM 2019 Update Rollup 3 (UR3).
 
-For problems fixed in VMM 2019 UR3, and installation instructions for UR3, see the KB article (link will be included once the KB number is available).
+For problems fixed in VMM 2019 UR3, and installation instructions for UR3, see the KB article.
 
 ### Compute
 
