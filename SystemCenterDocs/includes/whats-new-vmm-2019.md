@@ -369,7 +369,7 @@ VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters
 Azure Stack HCI, currently in public preview is the newly introduced hyper-converged infrastructure (HCI)
 Operating system that runs on on-premises clusters with virtualized workloads.
 
-Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters. 
+Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters. [Learn more](../vmm/deploy-manage-azure-stack-hci.md).
 
 >[!NOTE]
 >Management of Azure Stack HCI *stretched* clusters is currently not supported in VMM.
@@ -379,3 +379,5 @@ Most of the operations to manage Azure Stack clusters in VMM are similar to that
 VMM 2019 UR3 includes the following cmdlet updates for Trunk mode support for VM vNICs:
 
 New parameters **[-AllowedVLanList]** and **[NativeVLanId]** are included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
+
+For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019).
