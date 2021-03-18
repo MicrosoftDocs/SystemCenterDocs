@@ -5,7 +5,7 @@ description: This article explains known issues and troubleshooting in Managemen
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 2/5/2021
+ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -32,7 +32,7 @@ This article lists the known issues for Management Pack for Azure SQL Database.
 
 ## Azure SQL Databases Exceptions
 
-The following is a list of exceptions that might occur if the number of databases is over 2000 databases:
+The following is a list of exceptions that might occur if the number of databases exceeds 2000:
 
 - A connection was successfully established with the server, but then an error occurred during the pre-login handshake.
 
@@ -45,15 +45,9 @@ The following is a list of exceptions that might occur if the number of database
 The following workflows may not collect data correctly for the Hyperscale service tier databases:
 
 - Rules
-  
   - Free Space (MB)
-
   - Free Space Percentage
-
   - Used Space Percentage
-
   - Total Space Quota (MB)
-
 - Unit monitors
-
   - Database Free Space

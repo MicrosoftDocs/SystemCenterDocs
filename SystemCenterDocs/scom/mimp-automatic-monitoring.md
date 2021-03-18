@@ -5,7 +5,7 @@ description: This article explains how to configure automatic monitoring templat
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 2/5/2021
+ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -17,7 +17,7 @@ This template allows you to configure monitoring by discovering all managed inst
 
 ## Configuring Automatic Monitoring Template
 
-To configure monitoring using the automatic discovery monitoring template, perform the following steps:
+To configure monitoring using the automatic monitoring template, perform the following steps:
 
 1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL MI - Automatic**, and select **Add Monitoring Wizard…**.
 

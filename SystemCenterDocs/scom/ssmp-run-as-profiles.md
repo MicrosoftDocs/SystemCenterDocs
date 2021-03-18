@@ -5,7 +5,7 @@ description: This article explains run as profiles in Management Pack for SQL Se
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 2/5/2021
+ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -50,7 +50,7 @@ For more information about Run As accounts, see [Managing Run As accounts and pr
 
 ## Enabling Allow Log On Locally Security Policy
 
-If the domain account is used as an action account for this management pack, enable the **Allow log on locally** policy for this account for both SQL Server on Windows and on Linux. For more information on how to configure this policy, see [Allow Log On Locally](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/allow-log-on-locally).
+If the domain account is used as an action account, enable the **Allow log on locally** policy on both SQL Server on Windows and SQL Server on Linux. For more information on how to configure the **Allow log on locally** policy, see [Allow Log On Locally](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/allow-log-on-locally).
 
 ## Agent and Mixed Monitoring Modes
 

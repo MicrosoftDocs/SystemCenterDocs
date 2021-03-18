@@ -5,7 +5,7 @@ description: This article explains how to configure low-privilege configuration 
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 2/5/2021
+ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -31,9 +31,10 @@ To configure low-privilege account, perform the following steps:
 
 3. In every user database (excluding the **master** members), map server-level credentials to the database user and grant it the **VIEW DATABASE STATE** permission by executing the following query:
 
+      Use the **MonitoringUser** value when [configuring Azure SQL Database Run As Accounts](asdmp-run-as-accounts.md).
+
       ```SQL
       CREATE USER [MonitoringUser] FOR LOGIN [MonitoringUser] WITH DEFAULT_SCHEMA = sys
       GO
       GRANT VIEW DATABASE STATE TO [MonitoringUser]
       ```
-      Use the **MonitoringUser** value when [configuring Azure SQL Database Run As Accounts](asdmp-run-as-accounts.md).

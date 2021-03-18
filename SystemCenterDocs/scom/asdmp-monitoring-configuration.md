@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 2/5/2021
+ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -71,7 +71,7 @@ There are several rules that collect the following performance information about
 
 ## Active Geo-Replication Monitoring
 
-The management pack can monitor databases that participate in failover groups.
+The management pack can monitor failover group databases.
 
 Active geo-replication is designed as a business continuity solution that allows the application to perform quick disaster recovery of individual databases in cases of a regional disaster or large-scale outage.
 
@@ -79,7 +79,7 @@ If geo-replication is enabled, the application can initiate failover to a second
 
 ## Elastic Pools Monitoring
 
-The management pack can monitor databases that are part of SQL elastic pools.
+The management pack can monitor SQL elastic pool databases.
 
 Elastic pools provide a simple resource allocation mechanism for managing and scaling multiple databases that have varying and unpredictable usage demands. For more information, see the [Elastic pools help you manage and scale multiple databases in Azure SQL Database](https://docs.microsoft.com/azure/azure-sql/database/elastic-pool-overview) article.
 
