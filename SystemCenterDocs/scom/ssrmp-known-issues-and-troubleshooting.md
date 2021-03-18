@@ -14,7 +14,7 @@ ms.technology: operations-manager
 # Known Issues and Troubleshooting in Management Pack for SQL Server Replication
 
 This article lists the known issues for Management Pack for SQL Server Replication.
-a
+
 |Issue title|Behavior / Symptom|Known workaround|
 |-|-|-|
 |SQL Server Replication Database Health virtual group is empty|A SQL Server Replication Database Health virtual group may be empty in the **Summary** dashboards view even if configured SQL replications are discovered.|Create a regular group that contains MSSQL: Generic Replication Database Health class objects and restart the Operations Manager console.|

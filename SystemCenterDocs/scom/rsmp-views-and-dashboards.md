@@ -29,7 +29,7 @@ The **SQL Server Roles** dashboard provides information about all instances of S
 
 Management Pack for SQL Server Reporting Services introduces a comprehensive set of state, performance and alert view that can be found in the dedicated folder.
 
-Some views may contain a very long list of objects and metrics. To find a specific object or group of objects, you can use **Scope** , **Search** , and **Find** buttons on the Operations Manager toolbar. For more information, see the "[Finding Data and Objects in the Operations Manager Consoles](http://go.microsoft.com/fwlink/?LinkId=717834)" article in the Operations Manager Help.
+Some views may contain a very long list of objects and metrics. To find a specific object or group of objects, you can use **Scope** , **Search** , and **Find** buttons on the Operations Manager toolbar. For more information, see the "[Finding Data and Objects in the Operations Manager Consoles](https://go.microsoft.com/fwlink/?LinkId=717834)" article in the Operations Manager Help.
 
 This management pack includes a set of rich dashboards, which provide detailed information about SQL Server Reporting Services Instances and Deployments. The structure of the management pack views and folders is as follows:
 

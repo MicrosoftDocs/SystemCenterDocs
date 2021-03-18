@@ -27,7 +27,7 @@ Creating a custom management pack for storing overrides has the following advant
 
 For more information about sealed and unsealed management packs, see [Management Pack Formats](https://docs.microsoft.com/previous-versions//bb381260(v=technet.10)?redirectedfrom=MSDN).
 
-For more information about management pack customizations and default management packs, see [About Management Packs in Operations Manager](https://docs.microsoft.com/en-us/previous-versions//bb309721(v=technet.10)?redirectedfrom=MSDN).
+For more information about management pack customizations and default management packs, see [About Management Packs in Operations Manager](https://docs.microsoft.com/previous-versions//bb309721(v=technet.10)?redirectedfrom=MSDN).
 
 ## Creating New Management Pack for Customizations
 

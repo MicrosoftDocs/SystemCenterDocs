@@ -39,11 +39,11 @@ The following table lists replication executable names and file names.
 
 |Agent Executable|File Name|
 |-|-|
-|[Replication Snapshot Agent](http://msdn.microsoft.com/library/ms146939.aspx)|snapshot.exe||
-|[Replication Distribution Agent](http://msdn.microsoft.com/library/ms147328.aspx)|distrib.exe|
-|[Replication Log Reader Agent](http://msdn.microsoft.com/library/ms146878.aspx)|logread.exe|
-|[Replication Queue Reader Agent](http://msdn.microsoft.com/library/ms147378.aspx)|qrdrsvc.exe|
-|[Replication Merge Agent](http://msdn.microsoft.com/library/ms147839.aspx)|replmerg.exe|
+|[Replication Snapshot Agent](https://msdn.microsoft.com/library/ms146939.aspx)|snapshot.exe||
+|[Replication Distribution Agent](https://msdn.microsoft.com/library/ms147328.aspx)|distrib.exe|
+|[Replication Log Reader Agent](https://msdn.microsoft.com/library/ms146878.aspx)|logread.exe|
+|[Replication Queue Reader Agent](https://msdn.microsoft.com/library/ms147378.aspx)|qrdrsvc.exe|
+|[Replication Merge Agent](https://msdn.microsoft.com/library/ms147839.aspx)|replmerg.exe|
 
 In addition to replication agents, replication has a number of jobs that perform scheduled and on-demand maintenance operations.
 

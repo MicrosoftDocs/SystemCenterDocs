@@ -86,7 +86,7 @@ To configure System Center Operations Manager, perform the following steps:
 
 1. Import SQL Server Management Pack if it has not been imported.
 
-2. Create **SSRSMonitoring**, **SSRSDiscovery** and **SSRSSDK**  Run As accounts with the **Windows** account type. For more information about how to create a Run As account, see [How to Create Run As Account in Operations Manager 2012](http://go.microsoft.com/fwlink/?LinkId=717832). For more information about various Run As Account types, see [Managing Run As Accounts and Profiles in Operations Manager 2012](http://go.microsoft.com/fwlink/?LinkId=717833).
+2. Create **SSRSMonitoring**, **SSRSDiscovery** and **SSRSSDK**  Run As accounts with the **Windows** account type. For more information about how to create a Run As account, see [How to Create Run As Account in Operations Manager 2012](https://go.microsoft.com/fwlink/?LinkId=717832). For more information about various Run As Account types, see [Managing Run As Accounts and Profiles in Operations Manager 2012](https://go.microsoft.com/fwlink/?LinkId=717833).
 
 3. On System Center Operations Manager console, configure the Run As profiles as follows:
   

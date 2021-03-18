@@ -45,11 +45,11 @@ The following terms and definitions are mentioned throughout this guide:
 
 - **Push subscription**
   
-  Push subscription is represented by a subscription created and administered at the Publisher. The distribution agent or merge agent for this subscription runs at the Distributor. For more information about subscriptions, see [Subscribe to Publications](http://msdn.microsoft.com/library/ms151170.aspx).
+  Push subscription is represented by a subscription created and administered at the Publisher. The distribution agent or merge agent for this subscription runs at the Distributor. For more information about subscriptions, see [Subscribe to Publications](https://msdn.microsoft.com/library/ms151170.aspx).
 
 - **Pull Subscription**
   
-  Pull subscription is represented by a subscription configured and maintained at each recipient. The subscribers administer the synchronization schedules and can pull changes whether they consider it necessary. For more information about subscriptions, see [Subscribe to Publications](http://msdn.microsoft.com/library/ms151170.aspx).
+  Pull subscription is represented by a subscription configured and maintained at each recipient. The subscribers administer the synchronization schedules and can pull changes whether they consider it necessary. For more information about subscriptions, see [Subscribe to Publications](https://msdn.microsoft.com/library/ms151170.aspx).
 
 - **Virtual Distributor**
   

@@ -17,7 +17,7 @@ Management Pack for SQL Server Reporting Services automatically discovers instan
 
 - Reading the registry to detect if SSRS and PBIRS are installed on the server. If installed, the management pack creates a seed object.
 
-- If the seed object is discovered, the management pack reads such data sources as the registry, WMI, SSRS configuration file, and so on to discover instance properties and the **Deployment Seed** object.
+- If the seed object is discovered, the management pack reads such data sources as the registry, WMI, SSRS configuration file, and so on, to discover instance properties and the **Deployment Seed** object.
   
   The **Deployment Seed** object is an unhosted object managed by System Center Operations Manager Management Server. Appropriate permissions are required to access necessary data sources. For more information, see [Reporting Services Run As Profiles](rsmp-run-as-profiles.md).
 
@@ -52,14 +52,14 @@ To find a SQL Server instance that hosts SSRS Database, the management pack uses
 - MachineName
 - MachineName\InstanceName
 - IPAddress
-- IPAddress,PortNumber
+- IPAddress\PortNumber
 - (local)
 
 Deployment discovery runs on a SCOM Management Server and queries SCOM API to get a list of SSRS Instances and databases discovered on different SQL Servers.
 
-Not only deployment discovery creates a new **Deployment** object, but it also create a new **Deployment Watcher** object, both of which are unhosted.
+Not only deployment discovery creates a new **Deployment** object, but it also creates a new **Deployment Watcher** object, both of which are unhosted.
 
-SSRS Scale-out Deployment is a distributed application. Therefore, the deployment object is managed by the management server. The main purpose of the dployment object is to combine the health state of various SSRS components and group respective SCOM objects.
+SSRS Scale-out Deployment is a distributed application. Therefore, the deployment object is managed by the management server. The main purpose of the deployment object is to combine the health state of various SSRS components and group respective SCOM objects.
 
 Deployment watcher is an auxiliary object managed either by an agent installed on the server that hosts SSRS Database, or an agent that hosts one of SSRS Instances from the given deployment. This object is used to collect information about SQL Server Reporting Services deployments.
 

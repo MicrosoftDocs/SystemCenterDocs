@@ -44,7 +44,7 @@ Replication uses maintenance jobs that are monitored by **MSSQL Replication: The
 - Distribution clean up: distribution
 - Expired subscription clean up
 
-For more information, see [Run Replication Maintenance Jobs (SQL Server Management Studio)](https://docs.microsoft.com/sql/relational-databases/replication/administration/run-replication-maintenance-jobs-sql-server-management-studio?redirectedfrom=MSDN&view=sql-server-ver15)
+For more information, see [Run Replication Maintenance Jobs (SQL Server Management Studio)](https://docs.microsoft.com/sql/relational-databases/replication/administration/run-replication-maintenance-jobs-sql-server-management-studio?redirectedfrom=MSDN&view=sql-server-ver15&preserve-view=true)
 
 ## Job Failure
 
