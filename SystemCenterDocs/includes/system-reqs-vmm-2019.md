@@ -115,7 +115,7 @@ Windows Server 2016 | Y | Y | N | N
 Windows Server 2016 (with desktop experience) | Y | Y | Y | Y
 Windows Server 2019 (Data Center) | Y | Y | Y | Y
 Windows Server 2019 (Server Core) | Y | Y | N | N
-[Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](../vmm/deploy-manage-azure-stack-hci.md) (supported from 2019 UR3 and later)| Y | Y | If supported by SQL Server version 
+[Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](../vmm/deploy-manage-azure-stack-hci.md) (supported from 2019 UR3 and later)| Y | N | N | N  
 
 ## VMware servers in the VMM fabric
 
