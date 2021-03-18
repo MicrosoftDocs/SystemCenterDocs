@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 08/04/2020
+ms.date: 03/18/2021
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -146,6 +146,10 @@ DPM 2019 UR2 supports Offline backup using Azure Data Box. With [Microsoft Azure
 ### SQL Server 2019 support as DPM database
 
 DPM 2019 supports SQL server 2019 as DPM database. You can install SQL Server on a remote server, or on the DPM server. The database must be installed and running before you install DPM. [Learn more](prepare-environment-for-dpm.md#sql-server-database).
+
+## New features in DPM 2019 UR3
+
+DPM 2019 UR3 has only bug fixes. See the KB article for details about the issues fixed.
 
 ::: moniker-end
 
