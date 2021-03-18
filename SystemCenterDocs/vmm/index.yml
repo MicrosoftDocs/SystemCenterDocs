@@ -57,12 +57,12 @@ landingContent:
             url: deploy-sdn.md
 
   # Card
-    - title: Deploy and manage Azure Stack HCI
-      linkLists:
-        - linkListType: deploy
-          links:
-            - text: Deploy and manage Azure Stack HCI clusters in VMM
-              url: deploy-manage-azure-stack-hci.md
+  - title: Deploy and manage Azure Stack HCI
+    linkLists:
+      - linkListType: deploy
+        links:
+         - text: Deploy and manage Azure Stack HCI clusters in VMM
+           url: deploy-manage-azure-stack-hci.md
 
   # Card
   - title: Manage the Networking & Storage fabric

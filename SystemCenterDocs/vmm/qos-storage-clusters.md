@@ -30,7 +30,7 @@ Windows server 2016 and later allows the deployments to use the storage QoS feat
 VMM 1801 and later supports QoS on all managed clusters and also SOFS, running on Windows Server 2016 and beyond.
 
 > [!NOTE]
-> VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI)](deploy-manage-azure-stack-hci.md).
+> VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](deploy-manage-azure-stack-hci.md).
 
 **Use these steps**:
 

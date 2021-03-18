@@ -30,7 +30,7 @@ For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid
 >[!NOTE]
 > - From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
 > - VMM 2019 UR2 and later supports IPv6.
-> - VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI)](deploy-manage-azure-stack-hci.md).
+> - VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](deploy-manage-azure-stack-hci.md).
 
 ::: moniker-end
 
