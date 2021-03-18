@@ -55,7 +55,7 @@ landingContent:
             url: deploy-guarded-host-fabric.md
           - text: Deploy and manage a software defined network (SDN) infrastructure
             url: deploy-sdn.md
-        
+
   # Card
   - title: Manage the Networking & Storage fabric
     linkLists:
