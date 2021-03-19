@@ -187,8 +187,10 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 
 **Workaround**: Use *Get-DPMProtectionGroup* PowerShell command to view the Protection Group details.
 
-::: moniker-end
+>[!NOTE]
+> This issue is fixed in DOM 2019 UR3.
 
+::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
 
@@ -234,18 +236,6 @@ Follow these steps to replace the existing report files:
 
 6.	After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
 7.	Restart DPM and use the report files.
-
-
-## DPM 2019 UR3 release notes
-The following sections details the known issues and workarounds for DPM 2019 UR3.
-
-### Protection group details are not displayed in DPM console
-
-**Description**: In earlier releases of DPM 2019, after installation, DPM console might not display Protection Group details in the **Details** pane.
-
-This issue is fixed in DPM 2019 UR3.
-
-For the other issues fixed in UR3, see the KB article.
 
 ::: moniker-end
 
