@@ -188,7 +188,7 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 **Workaround**: Use *Get-DPMProtectionGroup* PowerShell command to view the Protection Group details.
 
 >[!NOTE]
-> This issue is fixed in DOM 2019 UR3. For more information about the issues fixed in UR3, See the KB article.  
+> This issue is fixed in DPM 2019 UR3. For more information about the issues fixed in UR3, See the KB article.  
 
 ::: moniker-end
 
