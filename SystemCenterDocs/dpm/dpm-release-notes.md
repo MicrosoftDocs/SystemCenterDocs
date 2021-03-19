@@ -13,7 +13,7 @@ ms.topic: article
 ---
 
 # System Center DPM Release Notes
-3::: moniker range="sc-dpm-2019"
+::: moniker range="sc-dpm-2019"
 
 This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
 
@@ -188,7 +188,7 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 **Workaround**: Use *Get-DPMProtectionGroup* PowerShell command to view the Protection Group details.
 
 >[!NOTE]
-> This issue is fixed in DOM 2019 UR3. For more information about the issues fixes in UR3, See the KB article.  
+> This issue is fixed in DOM 2019 UR3. For more information about the issues fixed in UR3, See the KB article.  
 
 ::: moniker-end
 
