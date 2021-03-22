@@ -366,8 +366,7 @@ VMM 2019 UR3 includes Trunk mode support for VM vNICs. Trunk mode is used by NFV
 
 VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters in VMM. In addition to the current SKU of server operating system, VMM expands its support to Azure Stack HCI.
 
-Azure Stack HCI, currently in public preview is the newly introduced hyper-converged infrastructure (HCI)
-Operating system that runs on on-premises clusters with virtualized workloads.
+Azure Stack HCI, version 20H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
 
 Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters. [Learn more](../vmm/deploy-manage-azure-stack-hci.md).
 
