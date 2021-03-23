@@ -278,7 +278,7 @@
 #### [SQL Server Run As Profiles](ssmp-run-as-profiles.md)
 #### [Service SID](ssmp-service-sid.md)
 #### [Low-Privilege Monitoring](ssmp-low-privilege-monitoring.md)
-### [Views and Dashboards](ssmp-views-and-dashboards.md)
+### [Views and Dashboards in Management Pack for SQL Server](ssmp-views-and-dashboards.md)
 ### [SQL Server Reporting](ssmp-sql-server-reporting.md)
 ### [Known Issues and Troubleshooting in Management Pack for SQL Server](ssmp-known-issues-and-troubleshooting.md)
 ## Management Pack for Azure SQL Database

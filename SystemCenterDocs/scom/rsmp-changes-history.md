@@ -54,7 +54,6 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## January 2019 - 7.0.12.0 RTM
 
-- MP was prepared for GA release
 - Added support for Power BI Report Server
 
 ## October 2018 - 7.0.10.0 RTM

@@ -130,15 +130,3 @@ This scenario provides  monitoring for health aspects of SSAS Multidimensional D
 The following diagram shows the roll up of the object health states.
 
 ![Health Rolls Up](./media/asmp/health-rolls-up.png)
-
-## Enabling Agent Proxy Option
-
-To enable the **Agent Proxy** option, perform the following steps:
-
-1. Open the System Center Operations Manager console.
-
-2. In the **Administration** view, select **Agent Managed**.
-
-3. Double-click an agent.
-
-4. On the **Security** tab, select the **Allow this agent to act as a proxy and discover managed objects on other computers** checkbox, and click **OK**.

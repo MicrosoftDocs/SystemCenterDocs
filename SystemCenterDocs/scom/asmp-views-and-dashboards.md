@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 Management Pack for SQL Server Analysis Services introduces a common folder structure that will be used in future releases of management packs for different components of SQL Server.
 
-For more information about the common folder structure, see [Views and Dashboards](ssmp-views-and-dashboards.md).
+For more information about the common folder structure, see [Views and Dashboards in Management Pack for SQL Server](ssmp-views-and-dashboards.md).
 
 ## Analysis Services Views and Dashboards
 

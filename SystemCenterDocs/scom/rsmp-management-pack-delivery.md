@@ -19,7 +19,7 @@ After you download and unpack the **Microsoft.SQLServer.ReportingServices.Manage
 
 - **Microsoft.SQLServer.ReportingServices.Discovery.mpb**
 
-    This Management Pack discovers Microsoft SQL Server Reporting Services and related objects. The management pack contains the discovery logic only and requires a separate monitoring management pack to be imported to monitor discovered objects.
+    This Management Pack discovers Microsoft SQL Server Reporting Services (Native Mode) and related objects. The management pack contains the discovery logic only and requires a separate monitoring management pack to be imported to monitor discovered objects.
 
 - **Microsoft.SQLServer.ReportingServices.Monitoring.mpb**
 
