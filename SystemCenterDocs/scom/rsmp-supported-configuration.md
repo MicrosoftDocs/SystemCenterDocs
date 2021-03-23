@@ -35,8 +35,6 @@ The following is a list of features and configurations supported in Management P
 
   The management pack treats PBIRS as a special kind of SSRS and provides the same monitoring for PBIRS instances as it does for SSRS instances. In this guide, we will use SSRS or Reporting Services, but each term is intended for both SQL Server Reporting Services and Power BI Report Server.
 
-- [Not supported by SSRS] Clustered installation of SSRS
-
 ## System Center Operations Manager
 
 Management Pack for SQL Server Analysis Services supports the following versions of System Center Operations Manager:

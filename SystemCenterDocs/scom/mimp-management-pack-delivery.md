@@ -35,5 +35,5 @@ The environment that you use must meet the following prerequisites before you st
     
 ## Importing Management Pack
 
-For more information on how to import management packs, see [How to Import a Management Pack](https://go.microsoft.com/fwlink/?LinkId=142351).
+For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).
 

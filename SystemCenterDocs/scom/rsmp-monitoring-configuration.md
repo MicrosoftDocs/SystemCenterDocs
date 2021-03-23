@@ -127,16 +127,4 @@ Creating a new management pack for storing overrides has the following advantage
 
 - Creating a new management pack for storing customizations of each sealed management pack makes it easier to export the customizations from a test environment to a production environment. It also makes it easier to delete a management pack, because you must delete any dependencies before you can delete a management pack. If customizations for all management packs are saved in the Default Management Pack and you need to delete a single management pack, you must delete the default management pack first, which also deletes customizations for other management packs.
 
-For more information about management pack customizations and the default management pack, see [Using Management Packs](https://technet.microsoft.com/library/hh212709(v=sc.12).aspx).
-
-## Enabling Agent Proxy Option
-
-To enable the **Agent Proxy** option, perform the following steps:
-
-1. Open the System Center Operations Manager console.
-
-2. In the **Administration** view, select **Agent Managed**.
-
-3. Double-click an agent.
-
-4. On the **Security** tab, select the **Allow this agent to act as a proxy and discover managed objects on other computers** checkbox, and click **OK**.
+For more information about management pack customizations and the default management pack, see [What is in an Operations Manager management pack?](manage-overview-management-pack.md).

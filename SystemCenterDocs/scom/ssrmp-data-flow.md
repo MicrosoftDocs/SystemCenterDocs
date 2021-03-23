@@ -23,31 +23,27 @@ ms.technology: operations-manager
 
 ## Replication Database Health
 
-Replication Database Health is built for databases participating in the replication process as the published database.
-
-### Top-Level Structure
-
 ![Top-level structure diagram](./media/ssrmp/top-level-structure-diagram.png)
 
 ### Virtual Distributor Level Structure
 
 ![Virtual distributor level structure diagram](./media/ssrmp/virtual-distributor-diagram.png)
 
-Replication agent files are located in the '\Program Files\Microsoft SQL Server\100\COM' directory.
+### Replication Agents
 
-The following table lists replication executable names and file names.
+The following table lists replication agent files located in the **\Program Files\Microsoft SQL Server\100\COM** directory.
 
 |Agent Executable|File Name|
 |-|-|
-|[Replication Snapshot Agent](https://msdn.microsoft.com/library/ms146939.aspx)|snapshot.exe||
+|[Replication Snapshot Agent](https://msdn.microsoft.com/library/ms146939.aspx)|snapshot.exe|
 |[Replication Distribution Agent](https://msdn.microsoft.com/library/ms147328.aspx)|distrib.exe|
 |[Replication Log Reader Agent](https://msdn.microsoft.com/library/ms146878.aspx)|logread.exe|
 |[Replication Queue Reader Agent](https://msdn.microsoft.com/library/ms147378.aspx)|qrdrsvc.exe|
 |[Replication Merge Agent](https://msdn.microsoft.com/library/ms147839.aspx)|replmerg.exe|
 
-In addition to replication agents, replication has a number of jobs that perform scheduled and on-demand maintenance operations.
-
 ### Replication Maintenance Jobs
+
+In addition to replication agents, replication has a number of jobs that perform scheduled and on-demand maintenance operations.
 
 |Clean up job|Description|Default schedule|
 |-|-|-|

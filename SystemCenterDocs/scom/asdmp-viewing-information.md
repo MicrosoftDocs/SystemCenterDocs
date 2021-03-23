@@ -1,6 +1,6 @@
 ---
 ms.assetid: a34d3a18-0e6f-466a-b233-e6a78980962d
-title: Viewing Information in the Operations Console
+title: Views and Dashboards in Management Pack for Azure SQL Database
 description: This article explains how to view database and server views in Management Pack for Azure SQL Database
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -11,30 +11,16 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# Viewing Information in the Operations Console
+# Views and Dashboards in Management Pack for Azure SQL Database
 
-Management Pack for Azure SQL Database provides the following views.
+Management Pack for Azure SQL Database introduces a common folder structure that will be used in future releases of management packs for different components of SQL Server.
+
+For more information about the common folder structure, see [Views and Dashboards](ssmp-views-and-dashboards.md).
+
+## Azure SQL Database Views and Dashboards
+
+The following figure shows an example of views that are available in Management Pack for Azure SQL Database.
 
 ![Viewing Information in the Operations Console](./media/asdmp/views.png)
 
-To find specific objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding Data and Objects in the Operations Manager Consoles](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh212890(v=sc.12)?redirectedfrom=MSDN).
-
-## Database Views
-
-The following table describes views that show a databases health state.
-
-|**View Path**|**Description**|
-|-|-|
-|Databases\Database State|Displays a list of monitored databases and their current states. Double-click the health state icon for a database to launch a Health Explorer window for that databases to locate monitors that affect the health state of the server and investigate any issue. The **Detail View** pane displays properties of the database selected above.|
-|Performance\Database Sessions|The **Legend** pane displays a list of database sessions related counters for every monitored database. The chart illustrates information selected in the **Legend** pane.|
-|Performance\Database Space|The **Legend** pane displays a list of disk space related counters for every monitored database. The chart illustrates information selected in the **Legend** pane.|
-|Performance\Database Transactions|The **Legend** pane displays a list of database transactions related counters for every monitored database. The chart illustrates information selected in the **Legend** pane.|
-
-## Server Views
-
-The following table describes views that show a cloud services health state.
-
-|**View Path**|**Description**|
-|-|-|
-|Servers\Server State|Displays a list of monitored cloud services and their current states. Double-click the health state icon for a database to launch a Health Explorer window for that databases to locate monitors that affect the health state of the server and investigate any issue. The **Detail View** pane displays properties of the database selected above.|
-|Servers\Servers Diagrams|Displays a structured picture of all monitored cloud services with hosted databases. Expand the required cloud service node to drill down into hosted objects.|
+Some of these views may consist of a very long list of objects and metrics. To find specific objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding data and objects in the Operations Manager consoles](manage-console-finding-data.md).

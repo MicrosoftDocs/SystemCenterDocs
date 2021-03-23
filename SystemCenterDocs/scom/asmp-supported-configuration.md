@@ -51,6 +51,3 @@ Management Pack for SQL Server Analysis Services supports the following versions
 - System Center Operations Manager 2019
 
 A dedicated Operations Manager management group is not required for this management pack.
-
->[!NOTE]
->This management pack does not support least-privilege monitoring configurations and requires an action account to be a local administrator on SSAS servers.

@@ -19,7 +19,7 @@ The following views and dashboards are version-independent and show information 
 
 ![Generic views and dashboards](./media/ssmp/version-independent-views.png)
 
-The **Computers** node view displays computers on which the agents are installed and the management pack discovery is running. This view does not display computers configured for [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode).
+The **Computers** view displays computers on which agents are installed and management pack discovery is running. Note that this view does not display computers configured for [agentless monitoring](ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode).
 
 The **SQL Server Roles** dashboard provides information about all instances of SQL Server Database Engine, SQL Server Reporting Services, SQL Server Analysis Services, and SQL Server Integration Services.
 
@@ -31,7 +31,7 @@ Management Pack for SQL Server introduces a comprehensive set of state, performa
 
 ![State sets](./media/ssmp/state-sets.png)
 
-Some views may contain a long list of objects and metrics. To find a specific object or group of objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding Data and Objects in the Operations Manager Consoles](https://go.microsoft.com/fwlink/?LinkId=717834).
+Some of these views may consist of a very long list of objects and metrics. To find specific objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding data and objects in the Operations Manager consoles](manage-console-finding-data.md).
 
 ## SQL Server Dashboards
 

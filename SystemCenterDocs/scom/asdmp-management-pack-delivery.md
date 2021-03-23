@@ -34,7 +34,7 @@ Make sure to install the **.NET Framework 4.5.2** or higher before importing Man
 
 Management Pack for Azure SQL Database provides monitoring of [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) using [Azure REST API](https://docs.microsoft.com/rest/api/azure/) and T-SQL queries.
 
-For more information on how to import management packs, see [How to Import a Management Pack](https://go.microsoft.com/fwlink/?LinkId=142351).
+For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).
 
 The management pack supports monitoring of 2000 databases in a single Management Group.
 

@@ -31,6 +31,8 @@ Management Pack for Microsoft SQL Server Replication introduces the comprehensiv
 
 ![Replication Views](./media/ssrmp/sql-server-replication-views.png)
 
+Some of these views may consist of a very long list of objects and metrics. To find specific objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding data and objects in the Operations Manager consoles](manage-console-finding-data.md).
+
 ## Dashboards
 
 Management Pack for Microsoft SQL Server Replication includes a set of dashboards that provide detailed information about SQL Server Replication.
@@ -48,8 +50,6 @@ Replication dashboards have the following personalization settings:
 Use the menu button or a group in order to add a group or tile. To delete or edit a tile, right-click a tile and select the required action.
 
 The background color, time interval and refresh rate settings are applied to the **Datacenter Dashboard** and all **Instance Dashboards**, and can be set from the **Datacenter Dashboard** menu.
-
-For more information, see the Microsoft SQL Server dashboards guide.
 
 ### Replication Components Datacenter Dashboard
 

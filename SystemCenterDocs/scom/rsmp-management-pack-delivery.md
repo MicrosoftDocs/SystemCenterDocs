@@ -19,19 +19,19 @@ After you download and unpack the **Microsoft.SQLServer.ReportingServices.Manage
 
 - **Microsoft.SQLServer.ReportingServices.Discovery.mpb**
 
-    This Management Pack discovers Microsoft SQL Server Reporting Services (Native Mode) and related objects. The management pack contains the discovery logic only and requires a separate monitoring management pack to be imported to monitor discovered objects.
+    This Management Pack discovers Microsoft SQL Server Reporting Services and related objects. The management pack contains the discovery logic only and requires a separate monitoring management pack to be imported to monitor discovered objects.
 
 - **Microsoft.SQLServer.ReportingServices.Monitoring.mpb**
 
-    This management pack enables monitoring of Microsoft SQL Server Reporting Services (Monitoring, Native Mode).
+    This management pack enables monitoring of Microsoft SQL Server Reporting Services.
 
 - **Microsoft.SQLServer.ReportingServices.Core.Library.mpb**
 
-    This library contains basic components required for monitoring of Microsoft SQL Server Reporting Services (Monitoring, Native Mode).
+    This library contains basic components required for monitoring of Microsoft SQL Server Reporting Services.
 
 - **Microsoft.SQLServer.ReportingServices.Core.Views.mp**
 
-    This management pack defines views for Microsoft SQL Server Reporting Services (Native Mode).
+    This management pack defines views for Microsoft SQL Server Reporting Services.
 
 - **Microsoft.SQLServer.Visualization.Library.mpb**
 
@@ -39,7 +39,7 @@ After you download and unpack the **Microsoft.SQLServer.ReportingServices.Manage
 
 - **Microsoft.SQLServer.Core.Library.mpb**
 
-    This management pack is the core library for all versions of SQL Server. It defines all SQL Server base classes and relationships.
+    This management pack is a core SQL Server library. It defines all SQL Server base classes and relationships.
 
 ## Prerequisites
 
@@ -49,9 +49,7 @@ The environment that you use must meet the following prerequisites before you st
 
 - Import **Management Pack for Windows Server Operating System**.
 
-- Enable the **Agent Proxy** option on all agents installed on servers that host either SQL Server Reporting Services instance or SQL Server instance with respective SSRS Catalog Database. For more information, see [Enabling Agent Proxy Option](rsmp-monitoring-configuration.md#enabling-agent-proxy-option).
-  
-  This option should be enabled in cases when the agent workflow scenarios discover any non-hosted objects created by the management pack for each SQL Server instance.
+- Enable the **Agent Proxy** option on each agent to allow agents to forward data to management servers. For more information, see [Enabling Agent Proxy Option](ssmp-enabling-agent-proxy.md).
 
 - Enable the TCP/IP protocol for SQL Server instances that host the reporting server database.
 
@@ -73,4 +71,4 @@ The environment that you use must meet the following prerequisites before you st
 
 ## Importing Management Pack
 
-For more information on how to import management packs, see [How to Import a Management Pack](https://go.microsoft.com/fwlink/?LinkId=142351).
+For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).

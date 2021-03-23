@@ -25,7 +25,7 @@ This scenario provides health monitoring of SSAS instances:
 
     This monitor alerts if there is a SQL Server relational database engine process running on the server and the **TotalMemoryLimit** configuration for a SSAS instance is higher than the specified threshold.
 
-- **TotalMemoryLimit Configuration**
+- **Total Memory Limit Configuration**
 
     This monitor alerts when configured **TotalMemoryLimit** for SSAS instance exceeds the specified threshold, risking allocation of physical memory required for the operating system to perform the necessary basic functions (at least 2 GB).
 

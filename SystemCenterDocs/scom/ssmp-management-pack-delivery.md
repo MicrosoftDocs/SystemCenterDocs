@@ -70,9 +70,7 @@ The environment that you use must meet the following prerequisites before you st
 
 - Enable the **Allow log on locally** security policy for the domain account that is used as an action account.
 
-- Enable the **Agent Proxy** option on each agent to allow agents to forward data to Management Servers.
-  
-  This option should be enabled in cases when the agent workflow scenarios discover any non-hosted objects created by the management pack for each SQL Server instance.
+- Enable the **Agent Proxy** option on each agent to allow agents to forward data to management servers. For more information, see [Enabling Agent Proxy Option](ssmp-enabling-agent-proxy.md).
 
 - Enable and run SQL Server Browser for [agentless monitoring](./ssmp-monitoring-modes.md#configuring-agentless-monitoring-mode) mode.
   
@@ -98,7 +96,7 @@ To make the version-agnostic management pack the primary source of monitoring, r
 
 When you import version-specific management packs after importing the version-agnostic management pack, monitoring provided by the version-agnostic management pack will not be disabled.
 
-For more information on how to import management packs, see [How to Import a Management Pack](https://go.microsoft.com/fwlink/?LinkId=142351).
+For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).
 
 ## See also
 

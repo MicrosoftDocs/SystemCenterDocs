@@ -273,6 +273,7 @@
 #### [How Health Rolls Up](ssmp-how-health-roll-up.md)
 #### [SQL Server Monitoring Pool](ssmp-sql-server-monitoring-pool.md)
 #### [Disabling Monitoring of SQL Servers and Databases](ssmp-disabling-monitoring.md)
+#### [Enabling Agent Proxy Option](ssmp-enabling-agent-proxy.md)
 ### Security Configuration
 #### [SQL Server Run As Profiles](ssmp-run-as-profiles.md)
 #### [Service SID](ssmp-service-sid.md)
@@ -290,7 +291,7 @@
 ### Security Configuration
 #### [Azure SQL Database Run As Accounts](asdmp-run-as-accounts.md)
 #### [Low-Privilege Configuration](asdmp-low-privilege-configuration.md)
-### [Viewing Information in the Operations Console](asdmp-viewing-information.md)
+### [Views and Dashboards in Management Pack for Azure SQL Database](asdmp-viewing-information.md)
 ### [Known Issues and Troubleshooting in Management Pack for Azure SQL Database](asdmp-known-issues-and-troubleshooting.md)
 ## Management Pack for Azure SQL Managed Instance
 ### [What's New in Management Pack for Azure SQL Managed Instance](mimp-changes-history.md)
@@ -301,6 +302,7 @@
 #### [Manual Monitoring Template](mimp-manual-monitoring.md)
 #### [Managed Instance Monitoring Pool](mimp-monitoring-pool.md)
 ### [Security Configuration](mimp-security-configuration.md)
+### [Views and Dashboards in Management Pack for Azure SQL Managed Instance](mimp-views-and-dashboards.md)
 ### [Known Issues and Troubleshooting in Management Pack for Azure SQL Managed Instance](mimp-known-issues-and-troubleshooting.md)
 ## Management Pack for SQL Server Replication
 ### [What's New in Management Pack for SQL Server Replication](ssrmp-changes-history.md)
@@ -330,3 +332,4 @@
 #### [Reporting Services Run As Profiles](rsmp-run-as-profiles.md)
 #### [Least-Privilege Monitoring](rsmp-least-privilege-monitoring.md)
 ### [Views and Dashboards in Management Pack for SQL Server Reporting Services](rsmp-views-and-dashboards.md)
+### [Known Issues and Troubleshooting in Management Pack for SQL Server Reporting Services](rsmp-known-issues-and-troubleshooting.md)

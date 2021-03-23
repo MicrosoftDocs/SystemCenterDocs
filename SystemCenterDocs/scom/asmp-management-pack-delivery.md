@@ -42,7 +42,7 @@ After you download and unpack the **Microsoft.SQLServer.AnalysisServices.Managem
 
 - **Microsoft.SQLServer.Core.Library.mpb**
 
-    This management pack is the core library for all versions of SQL Server. It defines all SQL Server base classes and relationships.
+    This management pack is a core SQL Server library. It defines all SQL Server base classes and relationships.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ The environment that you use must meet the following prerequisites before you st
 
 - Import **Management Pack for Windows Server Operating System**.
 
-- Enable the **Agent Proxy** option on each agent that is installed on the clustered servers. For more information, see [Enabling Agent Proxy Option](asmp-monitoring-configuration.md#enabling-agent-proxy-option). Enabling this option for standalone servers is not required. 
+- Enable the **Agent Proxy** option on each agent that is installed on the clustered servers. For more information, see [Enabling Agent Proxy Option](ssmp-enabling-agent-proxy.md). Enabling this option for standalone servers is not required. 
 
 - Enable the **SQL Server Browser** service. This service is required for Analysis Services discovery and monitoring and must be installed and running on computers with Analysis Services.
 
@@ -60,4 +60,4 @@ The environment that you use must meet the following prerequisites before you st
 
 ## Importing Management Pack
 
-For more information on how to import management packs, see [How to Import a Management Pack](https://go.microsoft.com/fwlink/?LinkId=142351).
+For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).

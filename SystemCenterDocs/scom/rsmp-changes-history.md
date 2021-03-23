@@ -17,7 +17,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## December 2020 - 7.0.29.0 RTM
 
-- Updated and improved SCOM 2019 HTML Dashboards to display SSRS health and alerts
+- Updated and improved System Center Operations Manager 2019 HTML Dashboards to display SSRS health and alerts
 - Updated alert description for Report Manager Accessible & Web Service Accessible monitors
 
 ## June 2020 - 7.0.22.0 RTM
@@ -55,9 +55,6 @@ This section covers new functionality and improvements in Management Pack for SQ
 ## January 2019 - 7.0.12.0 RTM
 
 - MP was prepared for GA release
-
-## November 2018 - 7.0.11.0 CTP
-
 - Added support for Power BI Report Server
 
 ## October 2018 - 7.0.10.0 RTM

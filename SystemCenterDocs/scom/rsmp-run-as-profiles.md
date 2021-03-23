@@ -25,7 +25,7 @@ After importing Management Pack for SQL Server Reporting Services, the following
 
     - Workflow Type: **Discovery**
         - MSSQL Reporting Services: Native Mode Deployment Discovery
-    - Workflow Type: *Monitor*
+    - Workflow Type: **Monitor**
         - All deployment instances are discovered
 
 - **Microsoft SQL Server Monitoring Run As Profile** 
@@ -45,24 +45,24 @@ After importing Management Pack for SQL Server Reporting Services, the following
         - Windows service state
   
     - Workflow Type: **Rule**
-        - MSSQL Reporting Services: CPU utilization (%)
-        - MSSQL Reporting Services: Failed report executions per minute
-        - MSSQL Reporting Services: Failed report executions per minute (Deployment)
-        - MSSQL Reporting Services: Memory consumed by other processes (%)
-        - MSSQL Reporting Services: Memory consumed by SSRS (GB)
-        - MSSQL Reporting Services: Number of reports
-        - MSSQL Reporting Services: Number of shared data sources
-        - MSSQL Reporting Services: Number of subscriptions
-        - MSSQL Reporting Services: On-demand execution failures per minute
-        - MSSQL Reporting Services: On-demand executions per minute
-        - MSSQL Reporting Services: Report executions per minute
-        - MSSQL Reporting Services: Report executions per minute (Deployment)
-        - MSSQL Reporting Services: Scheduled execution failures per minute
-        - MSSQL Reporting Services: Scheduled executions per minute
-        - MSSQL Reporting Services: Total memory consumed on the server (GB)
-        - MSSQL Reporting Services: Total memory on the Server (GB)
-        - MSSQL Reporting Services: WorkingSetMaximum (GB)
-        - MSSQL Reporting Services: WorkingSetMinimum (GB)
+        - CPU utilization (%)
+        - Failed report executions per minute
+        - Failed report executions per minute (Deployment)
+        - Memory consumed by other processes (%)
+        - Memory consumed by SSRS (GB)
+        - Number of reports
+        - Number of shared data sources
+        - Number of subscriptions
+        - On-demand execution failures per minute
+        - On-demand executions per minute
+        - Report executions per minute
+        - Report executions per minute (Deployment)
+        - Scheduled execution failures per minute
+        - Scheduled executions per minute
+        - Total memory consumed on the server (GB)
+        - Total memory on the Server (GB)
+        - WorkingSetMaximum (GB)
+        - WorkingSetMinimum (GB)
 
 By default, all discoveries, monitors, and rules defined in the management pack use accounts defined in the **Default Action Account** Run As profile.
 

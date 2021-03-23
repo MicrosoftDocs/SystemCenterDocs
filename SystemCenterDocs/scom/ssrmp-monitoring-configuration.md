@@ -39,7 +39,7 @@ Replication uses maintenance jobs that are monitored by **MSSQL Replication: The
 
 - Reinitialize subscriptions having data validation failures
 - Agent history clean up: distribution
-- Replication monitoring refresher for distribution.
+- Replication monitoring refresher for distribution
 - Replication agents checkup
 - Distribution clean up: distribution
 - Expired subscription clean up

@@ -19,7 +19,7 @@ This section explains how to configure least-privilege monitoring in Management 
 
 To configure permissions in Active Directory, perform the following steps:
 
-1. In Active Directory, create the following domain users for low-privilege access to all target SSRS instances and SQL Server DBE instances hosting reporting database:
+1. In Active Directory, create the following domain users for low-privilege access to all target SSRS instances and SQL Server instances hosting reporting database:
 
     - SSRSMonitoring
     - SSRSDiscovery
@@ -32,13 +32,13 @@ To configure permissions in Active Directory, perform the following steps:
 
 ## Agent Machines
 
-To configure permissions on agent machines, grant permissions to access the **SSRSMPLowPriv** group to local administrator.
+To configure permissions on the agent machines, grant local administrator permissions to the **SSRSMPLowPriv** group.
 
 ## SQL Server Reporting Services Instance
 
 To configure permissions on an instance of SQL Server Reporting Services, perform the following steps:
 
-1. Open Internet Explorer and connect to SSRS Report Manager.
+1. Open a web browser and connect to SSRS Report Manager.
 
 2. Click **Site Settings** in the upper-right corner of the page to navigate to the **Site Settings** page.
 
@@ -46,7 +46,7 @@ To configure permissions on an instance of SQL Server Reporting Services, perfor
 
 4. Click **New Role Assignment**.
 
-5. On **New Role Assignment** enter the group name (**<Your Domain\>\\SSRSMPLowPriv** ) and select the **System Administrator** checkbox.
+5. On **New Role Assignment** enter the group name (**<Your Domain\>\\SSRSMPLowPriv**) and select the **System Administrator** checkbox.
 
 6. Click **OK**.
 
@@ -60,33 +60,13 @@ To configure permissions on SQL Server Reporting Services Catalog Database, perf
 
 3. Assign the **db\_datareader** role to **SSRSMPLowPriv** on both SSRS Catalog and Temporary databases.
 
-## Center Operations Manager Management Server
-
-To configure permissions on System Center Operations Manager Management Server, grant Local Administrator permissions to the **SSRSSDK** account.
-
-## Permissions on System Center Operations Manager
-
-To configure permissions on System Center Operations Manager, perform the following steps:
-
-1. Open the System Center Operations Manager console and navigate to the **Administration** pane.
-
-2. Open the **User Roles** view (located under the **Security** folder).
-
-3. Right-click the **Operations Manager Operators** role and select **Properties**.
-
-4. On the **General Properties** tab, click **Add**.
-
-5. Find the **SSRSSDK** user and click **OK**.
-
-6. Click **OK**.
-
 ## Configure System Center Operations Manager
 
 To configure System Center Operations Manager, perform the following steps:
 
-1. Import SQL Server Management Pack if it has not been imported.
+1. Import [Management Pack for SQL Server](ssmp-management-pack-delivery.md) if it has not been imported.
 
-2. Create **SSRSMonitoring**, **SSRSDiscovery** and **SSRSSDK**  Run As accounts with the **Windows** account type. For more information about how to create a Run As account, see [How to Create Run As Account in Operations Manager 2012](https://go.microsoft.com/fwlink/?LinkId=717832). For more information about various Run As Account types, see [Managing Run As Accounts and Profiles in Operations Manager 2012](https://go.microsoft.com/fwlink/?LinkId=717833).
+2. Create **SSRSMonitoring**, **SSRSDiscovery** and **SSRSSDK**  Run As accounts with the **Windows** account type. For more information about how to create a Run As account, see [How to create a Run As account and associate with a Run As profile](manage-security-create-runas-link-profile.md). For more information about various Run As Account types, see [Managing Run As accounts and profiles](manage-security-maintain-runas-profiles.md).
 
 3. On System Center Operations Manager console, configure the Run As profiles as follows:
   
@@ -98,3 +78,21 @@ To configure System Center Operations Manager, perform the following steps:
 
 >[!NOTE]
 >**Microsoft SQL Server on Windows (Discovery)** uses the same Run As Profiles; make sure to adjust the low-privilege configuration for this pack as well.
+
+### Permissions on System Center Operations Manager
+
+To configure permissions on System Center Operations Manager Management Server, perform the following steps:
+
+1. Grant Local Administrator permissions to the **SSRSSDK** account.
+
+2. Open the System Center Operations Manager console and navigate to the **Administration** pane.
+
+3. Open the **User Roles** view (located under the **Security** folder).
+
+4. Right-click the **Operations Manager Operators** role and select **Properties**.
+
+5. On the **General Properties** tab, click **Add**.
+
+6. Find the **SSRSSDK** user and click **OK**.
+
+7. Click **OK**.
