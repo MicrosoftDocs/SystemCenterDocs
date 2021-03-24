@@ -21,6 +21,6 @@ For more information about the common folder structure, see [Views and Dashboard
 
 The following figure shows an example of views that are available in Management Pack for Azure SQL Database.
 
-![Viewing Information in the Operations Console](./media/asdmp/views.png)
+![Azure SQL Database views](./media/asdmp/views.png)
 
 Some of these views may consist of a very long list of objects and metrics. To find specific objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding data and objects in the Operations Manager consoles](manage-console-finding-data.md).
