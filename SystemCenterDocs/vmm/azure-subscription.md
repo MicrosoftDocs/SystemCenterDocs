@@ -84,7 +84,7 @@ If you are already managing your on-premises virtual machines in VMM, you can us
 
 
 ### What you can't do with this feature
-This feature is not intended to provide feature parity with the Microsoft Azure Management Portal. The functionality of this feature is a minor subset of the features at https://manage.windowsazure.com, but you can view your instances and do other basic actions, to simplify everyday tasks and help make management easier.
+This feature is not intended to provide feature parity with the Microsoft Azure Management Portal. The functionality of this feature is a minor subset of the features at https://portal.azure.com, but you can view your instances and do other basic actions, to simplify everyday tasks and help make management easier.
 
 You cannot:
 -	Manage your Azure subscription
