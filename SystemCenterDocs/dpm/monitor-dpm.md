@@ -165,7 +165,7 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
 #### Install the agent and obtain the Management Packs
 
 1.  For agent installation options read [Operations Manager Installation Methods](../scom/deploy-overview.md?preserve-view=true&view=sc-om-1807).
-    If you need to obtain the latest version of the agent see [Microsoft Monitoring Agent](https://www.microsoft.com/download/details.aspx?id=40316) in the Download Center.
+    If you need to obtain the latest version of the agent see [Microsoft Monitoring Agent](/services-hub/health/mma-setup) in the Download Center.
 
 2.  Download the packs from the [Download Center](https://www.microsoft.com/download/details.aspx?id=9296).
     The download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The reporting management pack is placed in a separate folder inside that folder.
