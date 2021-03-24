@@ -110,7 +110,7 @@ The following versions of Windows Server operating system are supported for the 
 
     >[!NOTE]
     > Operations Manager 2019 only includes the 64-bit version of the Operations console.
-    >The Web console does not support running IE in Compatibility View, otherwise you will receive a blank page when attempting to access the console. To turn off Compatibility View feature, please see [How to use Compatibility View in Internet Explorer](https://support.microsoft.com/help/2536204/how-to-use-compatibility-view-in-internet-explorer-9).
+    >The Web console does not support running IE in Compatibility View, otherwise you will receive a blank page when attempting to access the console.
 
 - Client web browser for HTML5 web console:
 
