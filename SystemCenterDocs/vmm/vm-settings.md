@@ -65,6 +65,7 @@ To configure trunk mode in VMM, follow the steps:
 
 1. Under VM **Properties**, navigate to **Configure Hardware Settings** > **Network Adapter**, and then select **Trunk mode** to enable trunk mode for VM vNICs.
 2. Select the VM networks (multiple vLANs) through which you want to direct the VM network traffic.
+   ![Trunk mode](media/vm-settings/configure-trunk-mode.png)
 3. The VM Network that is selected as part of *Connected to a VM Network* workflow should also be made the native VLAN. You cannot change the native VLAN later, as this is based on the VM network that was selected as part of *Connected to a VM Network* workflow.
 
 ### Add a virtual adapter with PowerShell
