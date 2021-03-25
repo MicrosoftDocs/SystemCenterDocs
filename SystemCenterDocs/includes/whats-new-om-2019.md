@@ -381,9 +381,9 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Le
 
 - **Improvements in load time for Windows computer view**
 
-  Windows computer view in Operations Manager console was taking unreasonable time to load.
+  Windows computer view in Operations Manager console was taking longer time to load.
 
-  With Operations Manager 2019 UR3, to decrease the load time for this view, we optimized the SQL query relevant to this view.
+  With Operations Manager 2019 UR3, to decrease the load time for this view, we optimized the relevant SQL query.
 
 - **Improvement in load time while changing user role privileges**  
 
