@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 02/16/2021
+ms.date: 03/19/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -13,7 +13,6 @@ ms.topic: article
 ---
 
 # System Center DPM Release Notes
-
 ::: moniker range="sc-dpm-2019"
 
 This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
@@ -188,8 +187,10 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 
 **Workaround**: Use *Get-DPMProtectionGroup* PowerShell command to view the Protection Group details.
 
-::: moniker-end
+>[!NOTE]
+> This issue is fixed in DPM 2019 UR3. For more information about the issues fixed in UR3, See the KB article.  
 
+::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
 

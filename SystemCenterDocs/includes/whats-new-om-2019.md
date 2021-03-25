@@ -363,7 +363,7 @@ With Operations Manager 2019 UR3 and later, you can change the log-level setting
 
 ### Resolved issues with orphan alerts
 
-In earlier releases, active alerts are not getting closed after non-persistent health state in failover  scenarios. Overall, health service doesn’t hold the last state of the monitor; alerts are not closed while resetting the monitor to healthy.
+In earlier releases, active alerts are not getting closed after non-persistent health state in failover scenarios. Overall, health service doesn’t hold the last state of the monitor; alerts are not closed while resetting the monitor to healthy.
 
 With Operations Manager 2019 UR3 and later, all of the orphan alerts are closed, eventually, depending on the type of monitor. [Learn more](../scom/manage-alert-created-by-monitor.md#closure-of-orphan-alerts).
 
@@ -383,7 +383,7 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Le
 
   Windows computer view in Operations Manager console was taking longer time to load.
 
-  With Operations Manager 2019 UR3, the load time is decreased by optimizing the SQL query relevant to the Windows computer view.
+  With Operations Manager 2019 UR3, to decrease the load time for this view, we optimized the relevant SQL query.
 
 - **Improvement in load time while changing user role privileges**  
 
@@ -399,7 +399,7 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Le
 
 - **Improvement in SDK services**
 
-  Operations Manager console was taking longer time to load and complete basic tasks.
+  Operations Manager console was taking unreasonable time to load and complete basic tasks.
 
   With Operations Manager 2019 UR3, we optimized relevant SQL queries and the performance has significantly improved now.
 
