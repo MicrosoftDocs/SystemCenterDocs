@@ -284,7 +284,7 @@ VMM 2019 UR1 includes the following cmdlet updates for the respective features:
    - New parameter **[-EnableNestedVirtualization]** - enables the nested virtualization, and is included in **Set-SCComputerTierTemplate** cmdlet.
 
 
-For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019).
+For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019&preserve-view=true).
 
 
 ## New features in VMM 2019 UR2
@@ -347,14 +347,14 @@ VMM 2019 UR2 includes the following cmdlet updates for the respective features:
       - IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
       - IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
 
-For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019).
+For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019&preserve-view=true).
 
 
 ## New features in VMM 2019 UR3
 
 The following sections introduce the new features and feature updates supported in VMM 2019 Update Rollup 3 (UR3).
 
-For problems fixed in VMM 2019 UR3, and installation instructions for UR3, see the KB article (link will be included once the KB number is available).
+For problems fixed in VMM 2019 UR3, and installation instructions for UR3, see the KB article.
 
 ### Compute
 
@@ -366,10 +366,9 @@ VMM 2019 UR3 includes Trunk mode support for VM vNICs. Trunk mode is used by NFV
 
 VMM 2019 UR3 includes support to add, deploy and manage Azure Stack HCI clusters in VMM. In addition to the current SKU of server operating system, VMM expands its support to Azure Stack HCI.
 
-Azure Stack HCI, currently in public preview is the newly introduced hyper-converged infrastructure (HCI)
-Operating system that runs on on-premises clusters with virtualized workloads.
+Azure Stack HCI, version 20H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
 
-Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters. 
+Most of the operations to manage Azure Stack clusters in VMM are similar to that of managing Windows Server clusters. [Learn more](../vmm/deploy-manage-azure-stack-hci.md).
 
 >[!NOTE]
 >Management of Azure Stack HCI *stretched* clusters is currently not supported in VMM.
@@ -379,3 +378,5 @@ Most of the operations to manage Azure Stack clusters in VMM are similar to that
 VMM 2019 UR3 includes the following cmdlet updates for Trunk mode support for VM vNICs:
 
 New parameters **[-AllowedVLanList]** and **[NativeVLanId]** are included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
+
+For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019&preserve-view=true).

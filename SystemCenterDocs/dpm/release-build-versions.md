@@ -37,6 +37,7 @@ The following table lists the build versions for Data Protection Manager 2019.
 | 10.19.58.0  | n/a | System Center 2019 Data Protection Manager RTM     |
 | 10.19.260.0 | [4533416](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager) | Update Rollup 1 for System Center 2019 Data Protection Manager    |
 | 10.19.379.0 | [4563392](https://support.microsoft.com/help/4563392/update-rollup-2-for-system-center-2019-data-protection-manager) | Update Rollup 2 for System Center 2019 Data Protection Manager    |
+| 10.19.458.0 | [5001202](https://support.microsoft.com/help/5001202/update-rollup-3-for-system-center-2019-data-protection-manager) | Update Rollup 3 for System Center 2019 Data Protection Manager    |
 
 ::: moniker-end
 
