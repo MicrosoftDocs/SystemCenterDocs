@@ -5,7 +5,7 @@ description: This article explains how to provision Hyper-V hosts or clusters fr
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/13/2017
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

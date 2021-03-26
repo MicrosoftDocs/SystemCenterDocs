@@ -5,7 +5,7 @@ description: This article describes how to set storage QoS policies for clusters
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 02/05/2018
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
