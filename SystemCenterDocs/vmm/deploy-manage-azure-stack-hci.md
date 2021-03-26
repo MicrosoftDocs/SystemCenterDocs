@@ -46,15 +46,12 @@ Make sure you're running VMM 2019 UR3 or later.
 
 - Management of *Azure Stack HCI stretched clusters* is currently not supported in VMM.
 
-- Azure Stack HCI clusters should be used only as compute clusters. Azure Stack HCI clusters should not be used for other purposes like WSUS servers, WDS servers or library servers.
-
-- Azure Stack HCI clusters should not be used as SOFS S2D clusters (disaggregate).
+- Azure Stack HCI is intended as a virtualization host where you run all your workloads in virtual machines, the Azure Stack HCI terms allow you to run only what's necessary for hosting virtual machines. Azure Stack HCI clusters should not be used for other purposes like WSUS servers, WDS servers or library servers. Refer to [Use cases for Azure Stack HCI](https://docs.microsoft.com/azure-stack/hci/overview#use-cases-for-azure-stack-hci), [When to use Azure Stack HCI](https://docs.microsoft.com/azure-stack/hci/concepts/compare-windows-server#when-to-use-azure-stack-hci) and [Roles you can run without virtualizing](https://docs.microsoft.com/azure-stack/hci/overview#roles-you-can-run-without-virtualizing).
 
 - Live migration of VM is not supported between any version of Windows Server and Azure Stack HCI clusters.
 
-- Quick migration from Windows Server 2019 to Azure Stack HCI cluster will work, as well as migrating an offline (shut down) VM. VMM performs export and import operation here.
+- Network migration from Windows Server 2019 to Azure Stack HCI cluster will work, as well as migrating an offline (shut down) VM. VMM performs export and import operation here.
 
-- Creation or management of non-S2D cluster with Azure Stack HCI nodes is not supported.
 
 > [!NOTE]
 > You must enable S2D when creating a Azure Stack HCI cluster.
