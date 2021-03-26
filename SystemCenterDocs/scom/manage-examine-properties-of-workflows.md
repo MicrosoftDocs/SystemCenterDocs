@@ -4,7 +4,7 @@ description: This article describes how to examine properties of alerts, rules a
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/05/2021
+ms.date: 03/30/2021
 ms.assetid: 51b60a9a-0bfb-4bea-b89f-9f1797fc5a09
 ms.custom: na
 ms.prod: system-center

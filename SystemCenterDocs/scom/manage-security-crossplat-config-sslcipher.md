@@ -5,7 +5,7 @@ description: This article describes how to configure SSL encrypted communication
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/17/2021
+ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager

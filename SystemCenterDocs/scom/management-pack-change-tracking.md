@@ -5,7 +5,7 @@ description: This article details the management pack change tracking in Operati
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 02/05/2021
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
