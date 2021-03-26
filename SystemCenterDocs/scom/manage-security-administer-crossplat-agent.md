@@ -5,7 +5,7 @@ description: This article describes options to administer and configure the UNIX
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/17/2021
+ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -216,7 +216,7 @@ Use the following steps:
 1. Modify the **omiserver.conf** file and update the new loglevel:
 
    ```
-  
+
     loglevel = INFO
 
    ```
