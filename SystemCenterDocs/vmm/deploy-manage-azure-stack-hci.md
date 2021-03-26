@@ -60,7 +60,7 @@ Make sure you're running VMM 2019 UR3 or later.
 ![S2D enabled](./media/s2d/s2d-enable.png)
 
 After you enable a cluster with S2D, VMM does the following:
-- The Failover Clustering feature are enabled.
+- The Failover Clustering feature is enabled.
 - Storage replica and data deduplication is enabled.
 - The cluster is optionally validated and created.
 - S2D is enabled, and a storage array is created with the same name as you provided in the wizard.
@@ -175,7 +175,7 @@ The registration status will reflect in VMM after a successful cluster refresh.
 
 1. In VMM console, you can view the registration status and last connected date of Azure Stack HCI clusters.
 2. Click **Fabric** and right-click the **Azure Stack HCI** cluster and select **Properties**.
-3. Get -SCVMM host has new properties to check registration status. 
+3. Get -SCVMM host has new properties to check registration status.
 
 ## Step 6: Manage the pool and create CSVs
 
