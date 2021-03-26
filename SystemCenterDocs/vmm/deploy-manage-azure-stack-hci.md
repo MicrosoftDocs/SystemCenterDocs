@@ -175,6 +175,9 @@ The registration status will reflect in VMM after a successful cluster refresh.
 
 1. In VMM console, you can view the registration status and last connected date of Azure Stack HCI clusters.
 2. Click **Fabric** and right-click the **Azure Stack HCI** cluster and select **Properties**.
+
+   ![Registration status](./media/s2d/registration-status.png)
+
 3. Get -SCVMM host has new properties to check registration status.
 
 ## Step 6: Manage the pool and create CSVs
