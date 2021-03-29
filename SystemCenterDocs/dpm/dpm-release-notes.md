@@ -246,7 +246,7 @@ The following section details the known issue in DPM 2019 UR3 and the work aroun
 
 **Description**: After upgrading DPM Remote Administration Console to Update Rollup 3,  it might fail to  connect to DPM server with an error “The DPM Administrator Console version is incompatible with the DPM server version”
 
-**Workaround**: 
+**Workaround**:
 
 1.	On the server running DPM Remote Administration console, run the following PowerShell command (enter the DPM server name as applicable), this command copies the required DLL files from the DPM server:
 
@@ -257,11 +257,13 @@ Copy-Item -Path \\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Cen
 
 2.	If you are using a language different than English, copy the respective language folder from the DPM server. Update the DPM server name and language folder in the following command, and then run the command.
 
->[!NOTE] This command uses the default installation path for DPM. If you have changed the installation path, update the path accordingly.
 
 ```
 Copy-Item -Path \\<FQDN of the DPM_Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\<Language folder>\*.dll -Destination C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin\<Language folder>  
 ```
+
+>[!NOTE]
+> This command uses the default installation path for DPM. If you have changed the installation path, update the path accordingly.
 
 ::: moniker-end
 
