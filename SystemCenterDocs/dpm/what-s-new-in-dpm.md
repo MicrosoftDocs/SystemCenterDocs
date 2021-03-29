@@ -291,11 +291,11 @@ For more information about Storage Spaces Direct, see the article on [Storage Sp
 
 DPM protects Hyper-V VMs that use Storage Spaces Direct. Most configurations are supported, including the backup of VMs using the [Storage Spaces Direct hyper-converged scenario](/windows-server/storage/storage-spaces/deploy-storage-spaces-direct) with the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster. Note that backing up and restoring virtual machines running on a Windows Nano Server isn't supported.
 
-#### Protecting VMs stored on ReFS-based SOFS clusters
+#### Protecting VMs stored on NTFS and ReFS-based SOFS clusters
 
-DPM 2016 can back up VMs deployed on ReFS-based SOFS clusters.
+DPM 2016 can back up VMs deployed on both NTFS and ReFS-based SOFS clusters.
 
-To protect VMs on SOFS clusters, add the following machine accounts to the backup operator groups and share permissions.
+To protect VMs on SOFS clusters, add the following machine accounts to the backup operator groups and share permissions:
 
   - If protecting a highly available (HA) VM, provide the machine account name of the host cluster and cluster nodes, and DPM server.
   - If protecting a non-HA VM, provide the machine name of the Hyper-V host and the DPM server.

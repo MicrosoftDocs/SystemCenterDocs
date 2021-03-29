@@ -1,5 +1,5 @@
 ---
-description: This article provides information on how to add and configure storage.
+description: This article provides information on how to add and configure storage in DPM.
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman

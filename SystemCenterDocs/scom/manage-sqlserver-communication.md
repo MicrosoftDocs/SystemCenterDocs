@@ -111,7 +111,7 @@ If after installing System Center Operations Manager, you move the Operations Ma
       where [ManagedTypePropertyName] like 'MainDatabaseServerName'
       ```
 
-    d. Expand the operational database (for example, OperationsManager), expand **Tables**, right-click `dbo.GlobalConfig` and then click **Edit Top 200 Rows**.
+    d. Expand the operational database (for example, OperationsManager), expand **Tables**, right-click `dbo.GlobalSettings` and then click **Edit Top 200 Rows**.
 
     e. In the results pane, scroll to the right of the column titled `column.ManagedTypePropertyId`.
 
