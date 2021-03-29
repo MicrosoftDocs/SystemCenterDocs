@@ -66,7 +66,7 @@ With DPM 2019, you can back up newer versions of workloads, as listed below:
 -	Windows Server 2019
 -	Exchange 2019
 -	SharePoint 2019
--	VMWare [vSphere 6.7](back-up-vmware.md#vmware-vsphere-67)
+-	VMware [vSphere 6.7](back-up-vmware.md#vmware-vsphere-67)
 -	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
 
 ### Faster backups with Tiered storage using SSDs
@@ -84,10 +84,10 @@ For long term retention on VMware backup data on-premises, you can now enable VM
 
 DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location Recovery (ALR)) for restoring the protected VM. [Learn more](back-up-vmware.md).
 
-### VMWare parallel backups
-With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to 25% faster VM backups.
+### VMware parallel backups
+With DPM 2019, all your VMware VMs backup within a single protection group would be parallel, leading to 25% faster VM backups.
 
-With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMware delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
 
 ## New features in DPM 2019 UR1
 
