@@ -42,7 +42,7 @@ Here's what you need to add an Azure subscription in VMM:
 |**Azure subscription** | You need at least one Azure subscription to add it to the VMM console.|
 |**Internet connectivity** | The computer on which you install the feature must be able to connect to the Azure subscription.|
 |**Service administrator** | You need to be at least a service administrator for the subscription. You need this for access to the management certificate information that's required.|
-|**Management certificate** | The subscription must have a management certificate associated with it if you are managing Classic VMs only. So that VMM can use the service management API in Azure. [Learn more](/azure/cloud-services/cloud-services-certs-create) about service certificates. Make note of the subscription ID and the certificate thumbprint.<br/><br/> Certificates must be x509 v3 compliant.<br/><br/> The management certificate must be located in the local certificate store on the computer on which you add the Azure subscription feature.<br/><br/> The certificate should also be located in the **Current User \ Personal** store of the computer running the VMM console.|
+|**Management certificate** | The subscription must have a management certificate associated with it if you are managing Classic VMs only. So that VMM can use the classic deployment model in Azure. [Learn more](/azure/cloud-services/cloud-services-certs-create) about service certificates. Make note of the subscription ID and the certificate thumbprint.<br/><br/> Certificates must be x509 v3 compliant.<br/><br/> The management certificate must be located in the local certificate store on the computer on which you add the Azure subscription feature.<br/><br/> The certificate should also be located in the **Current User \ Personal** store of the computer running the VMM console.|
 
 ::: moniker-end
 
@@ -84,7 +84,7 @@ If you are already managing your on-premises virtual machines in VMM, you can us
 
 
 ### What you can't do with this feature
-This feature is not intended to provide feature parity with the Microsoft Azure Management Portal. The functionality of this feature is a minor subset of the features at https://manage.windowsazure.com, but you can view your instances and do other basic actions, to simplify everyday tasks and help make management easier.
+This feature is not intended to provide feature parity with the Microsoft Azure Management Portal. The functionality of this feature is a minor subset of the features at https://portal.azure.com, but you can view your instances and do other basic actions, to simplify everyday tasks and help make management easier.
 
 You cannot:
 -	Manage your Azure subscription

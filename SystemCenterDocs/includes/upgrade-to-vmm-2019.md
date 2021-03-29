@@ -5,7 +5,7 @@ description: include file to provide information about how to upgrade VMM server
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 03/14/2019
+ms.date: 02/19/2021
 ms.topic: include
 ms.prod:  system-center
 ms.technology: virtual-machine-manager
@@ -14,6 +14,9 @@ ms.technology: virtual-machine-manager
 ## Upgrade to System Center 2019 - Virtual Machine Manager
 
 The following sections provide information about how to upgrade to VMM 2019. These include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
+
+> [!NOTE]
+> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
 
 ## Requirements and limitations
 
@@ -224,7 +227,7 @@ Before you upgrade, collect information about the VMM database:
 1. Back up the existing VMM database, and copy the backup to a computer running a supported version of SQL Server.
 2. Use SQL Server tools to restore the database.
     - If you are upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
-    - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration** you specify the new SQl Server details. After reinstall apply the update rollups and check that the deployment is working as expected.
+    - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration** you specify the new SQL Server details. After reinstall apply the update rollups and check that the deployment is working as expected.
 
 ### Upgrade a highly available database
 
