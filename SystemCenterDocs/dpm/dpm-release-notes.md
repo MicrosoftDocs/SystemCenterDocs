@@ -271,6 +271,14 @@ The following section details the known issue in DPM 2019 UR3 and the work aroun
    Write-Host -MessageData "All required DLL files for DPM Remote UI UR3 has been copied"
    ```
 
+   > [!NOTE]
+   > If you are using DPM Remote UI on a SCOM machine then copy for below files might fail, this can be ignored.
+   > - *SCOMHelperLibrary.dll*
+   > - *ScopingCommonHelper.dll*
+   > - *ViewAlertsAndAffectedItemsHelper.dll*
+   > - *Wpfhelpers.dll*
+
+
 2. If you are using a language different than English, copy the respective language folder from the DPM server. Update the DPM server name and language folder in the following command, and then run the command.
 
    ```PowerShell
