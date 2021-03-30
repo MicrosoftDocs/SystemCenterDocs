@@ -5,7 +5,7 @@ description: This article describes options to administer and configure the UNIX
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 08/25/2020
+ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -201,6 +201,30 @@ select * from SCX_DiskDrive where DeviceID=loop200
 Now, you will see data only for the disk ‘loop200’ in the performance view.
 
 ![override controlled parameters example](media/manage-security-administer-crossplat-agent/override-example-2.png)
+
+## Dynamic changes in log-level settings without agent restart   
+
+>[!NOTE]
+> This update is applicable for Operations Manager 2019 UR3 and later.
+
+In earlier releases of Operations Manager, changes to log-level settings of OMI processes required an agent restart.
+
+With Operations Manager 2019 UR3, log-level settings can be changed without the need for restarting the agent.
+
+Use the following steps:
+
+1. Modify the **omiserver.conf** file and update the new loglevel:
+
+   ```
+
+    loglevel = INFO
+
+   ```
+
+2. Apply this log-level while running the below command:
+   ```
+   $sudo /opt/omi/bin/omiconfigeditor –reconfig
+   ```
 
 ::: moniker-end
 

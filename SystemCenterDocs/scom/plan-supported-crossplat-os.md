@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 10/29/2020
+ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -66,6 +66,17 @@ The following tables describe the required UNIX and Linux operating systems and 
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|
 |PAM|Pluggable Authentication Modules|1.1.8|
 
+
+## Red Hat Enterprise Linux Server 6  (applicable for 2019 UR3 and later)
+
+Operations Manager 2019 UR3 and later supports RHEL 6 through RHEL 6 management pack.
+
+|Required package|Description|Minimum version|  
+|--------------------|---------------|-------------------|  
+|glibc|C Standard Libraries|2.12-1.7|  
+|Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
+|PAM|Pluggable Authentication Modules|1.1.1-4|  
+
 ## Solaris 10 SPARC
 
 |Required package|Description|Minimum version|
@@ -75,7 +86,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.10, REV=2004.11.23|
 |SUNWcslr|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsl|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
-|SUNWopenssl-libraries|SUNopenssl-libraries (Usr)|11.10.0, REV=2005.01.21.15.53|
+|SUNWopenssl-libraries|SUNopenssl-libraries (Usr) <br /><br /> **Note**: For TLS1.2, to get OpenSSL 1.0.1p, apply the following patch: 151912-02 (or greater) (This patch is applicable for 2019 UR3 and later).|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.15.53|
 |Release|Oracle Solaris 10 1/13|s10s_u11wos_24a SPARC|
 

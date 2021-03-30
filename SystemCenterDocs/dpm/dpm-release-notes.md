@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 03/10/2021
+ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -13,7 +13,6 @@ ms.topic: article
 ---
 
 # System Center DPM Release Notes
-
 ::: moniker range="sc-dpm-2019"
 
 This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
@@ -188,8 +187,10 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 
 **Workaround**: Use *Get-DPMProtectionGroup* PowerShell command to view the Protection Group details.
 
-::: moniker-end
+>[!NOTE]
+> This issue is fixed in DPM 2019 UR3. For more information about the issues fixed in UR3, See the KB article.  
 
+::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
 
@@ -235,6 +236,34 @@ Follow these steps to replace the existing report files:
 
 6.	After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
 7.	Restart DPM and use the report files.
+
+
+## DPM 2019 UR3 release notes
+
+The following section details the known issue in DPM 2019 UR3 and the work around.
+
+### DPM Remote console might fail to connect to DPM server, after upgrading to Update Rollup 3
+
+**Description**: After upgrading DPM Remote Administration Console to Update Rollup 3,  it might fail to  connect to DPM server with an error “The DPM Administrator Console version is incompatible with the DPM server version”
+
+**Workaround**:
+
+1.	On the server running DPM Remote Administration console, run the following PowerShell command (enter the DPM server name as applicable), this command copies the required DLL files from the DPM server:
+
+```
+Copy-Item -Path \\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\*.dll -Destination C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin
+
+```
+
+2.	If you are using a language different than English, copy the respective language folder from the DPM server. Update the DPM server name and language folder in the following command, and then run the command.
+
+
+```
+Copy-Item -Path \\<FQDN of the DPM_Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\<Language folder>\*.dll -Destination C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin\<Language folder>  
+```
+
+>[!NOTE]
+> This command uses the default installation path for DPM. If you have changed the installation path, update the path accordingly.
 
 ::: moniker-end
 
