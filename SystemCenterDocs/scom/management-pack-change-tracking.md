@@ -171,7 +171,7 @@ Operations Manager 2019 UR3 introduces further enhancements to the change tracki
 
 You can override the default values of the parameters including the following:
 
-- **ChangeTrackingGroomingFrequencyMinutes** (Time after which the grooming workflow runs for DW tables) - 480 minutes.
+- **ChangeTrackingGroomingFrequencyMinutes** (Time after which the grooming workflow runs for DW tables) - 1440 minutes.
 - **ChangeTrackingAgentAgeDays** (Maximum instance age for agent data in DW) - 400 days.
 - **ChangeTrackingResetMonitorAgeDays** (Maximum instance age for reset monitor data in DW) - 400 days.
 

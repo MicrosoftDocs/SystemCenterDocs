@@ -188,7 +188,7 @@ For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft
 **Workaround**: Use *Get-DPMProtectionGroup* PowerShell command to view the Protection Group details.
 
 >[!NOTE]
-> This issue is fixed in DPM 2019 UR3. For more information about the issues fixed in UR3, See the KB article.  
+> This issue is fixed in DPM 2019 UR3. For more information about the issues fixed in UR3, see the [KB article](https://support.microsoft.com/topic/fa5eb310-1886-43fb-be5d-c7829bfaf63d).  
 
 ::: moniker-end
 
@@ -248,22 +248,45 @@ The following section details the known issue in DPM 2019 UR3 and the work aroun
 
 **Workaround**:
 
-1.	On the server running DPM Remote Administration console, run the following PowerShell command (enter the DPM server name as applicable), this command copies the required DLL files from the DPM server:
+1. On the server running DPM Remote Administration console, run the following PowerShell command (enter the DPM server name as applicable), this command copies the required DLL files from the DPM server:
 
-```
-Copy-Item -Path \\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\*.dll -Destination C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin
+   ```PowerShell
+   $RemoteUIPath = "C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin"
+   $RemoteUidlls = Get-Item "$RemoteUIPath\*" | ? {$_.name -match ".dll"}
+   Write-Host -MessageData "Copying required $($RemoteUidlls.count) DLL's for Remote UI"
+   foreach ($dll in $RemoteUidlls) {
+   Copy-Item -Path \\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\$($dll.name) -Destination $RemoteUIPath
+   }
+   $RemoteUIUR3Dlls = "Microsoft.ApplicationInsights.dll",
+   "Microsoft.Diagnostics.Tracing.EventSource.dll",
+   "Microsoft.SystemCenter.DPM.Instrumentation.dll",
+   "Microsoft.SystemCenter.DPM.InstrumentationScheduler.dll",
+   "Microsoft.SystemCenter.Instrumentation.dll",
+   "Microsoft.WindowsAzure.Storage.dll",
+   "Newtonsoft.Json.dll"
+   foreach ($dll in $RemoteUIUR3Dlls) {
+   $SourceDllPath = \\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\ + $dll
+   Copy-Item -Path $SourceDllPath -Destination $RemoteUIPath
+   }
+   Write-Host -MessageData "All required DLL files for DPM Remote UI UR3 has been copied"
+   ```
 
-```
+   > [!NOTE]
+   > If you are using DPM Remote UI on a SCOM machine then copy for below files might fail, this can be ignored.
+   > - *SCOMHelperLibrary.dll*
+   > - *ScopingCommonHelper.dll*
+   > - *ViewAlertsAndAffectedItemsHelper.dll*
+   > - *Wpfhelpers.dll*
 
-2.	If you are using a language different than English, copy the respective language folder from the DPM server. Update the DPM server name and language folder in the following command, and then run the command.
 
+2. If you are using a language different than English, copy the respective language folder from the DPM server. Update the DPM server name and language folder in the following command, and then run the command.
 
-```
-Copy-Item -Path \\<FQDN of the DPM_Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\<Language folder>\*.dll -Destination C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin\<Language folder>  
-```
+   ```PowerShell
+   Copy-Item -Path \\<FQDN of the DPM_Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\<Language folder>\*.dll -Destination C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin\<Language folder>  
+   ```
 
->[!NOTE]
-> This command uses the default installation path for DPM. If you have changed the installation path, update the path accordingly.
+   >[!NOTE]
+   > This command uses the default installation path for DPM. If you have changed the installation path, update the path accordingly.
 
 ::: moniker-end
 
