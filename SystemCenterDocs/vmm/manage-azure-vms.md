@@ -21,7 +21,7 @@ ms.technology: virtual-machine-manager
 
 This article provides information about the *Manage Azure Virtual Machines (VMs)* feature in System Center 2019 - Virtual Machine Manager (VMM).
 
-This feature allows you to perform basic actions on azure instances attached to an azure profile, created for Azure VM management.
+This feature allows you to perform basic actions on Azure instances attached to an Azure profile, created for Azure VM management.
 
 >[!NOTE]
 > To perform these actions, you must create [Azure profile](azure-subscription.md) with **Profile Usage** selected as **Azure VM Management**. Once an Azure profile  for Azure VM Management is created, the VMs deployed on Azure will be accessible on the **VMs and Services** page of VMM console, and will be listed under *Azure Subscriptions*.

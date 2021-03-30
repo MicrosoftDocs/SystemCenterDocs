@@ -1,11 +1,11 @@
 ---
 ms.assetid: 1b8afb6f-9caf-455a-ad51-546a17fd47a4
 title: include file
-description: This include file describes the new features in Operations Manager 2019, 2019 UR1 and 2019 UR2.
+description: This include file describes the new features in Operations Manager 2019, 2019 UR1, 2019 UR2 and 2019 UR3.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 10/12/2020
+ms.date: 03/30/2021
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -30,7 +30,7 @@ The redesigned web console is now a fully functional HTML-based console. It no l
 * Simplified widget and dashboard authoring.
 * Accessibility from multiple browsers.
 * Enhanced troubleshooting experience with drill-down pages.
-* Extensibility with a custom widget by using a new [REST API](/rest/operationsmanager).
+* Extensibility with a custom widget by using a new [REST API](https://docs.microsoft.com/rest/operationsmanager).
 * Capability to export and share dashboards.
 * A new **All** option to select all objects while creating or editing an alerts widget.
 
@@ -128,11 +128,11 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 - SQL Server 2017 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017%20)
 - SQL Server 2016 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20)
 
-For information about SQL Server design considerations, see [related documentation](../scom/plan-sqlserver-design.md).
+For information about SQL Server design considerations, see [related documentation](https://docs.microsoft.com/system-center/scom/plan-sqlserver-design?view=sc-om-2019).
 
 ### Support for SQL Server 2019 CU8 and later
 
-Operations Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server).
+Operations Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/).
 
 
 >[!NOTE]
@@ -231,7 +231,7 @@ Operations Manager can now support Kerberos authentication wherever the WS-Manag
 
 Service Map automatically discovers application components on Windows and Linux systems and maps the communication between services. It automatically builds a common reference map of dependencies across your servers, processes, and third-party services.
 
-Service Map and System Center Operations Manager are now more closely integrated. You can automatically create distributed application diagrams in Operations Manager based on the dynamic dependency maps in Service Map. For more information on how to plan and configure integration, see [Service Map integration with System Center Operations Manager](/azure/operations-management-suite/operations-management-suite-service-map-scom).
+Service Map and System Center Operations Manager are now more closely integrated. You can automatically create distributed application diagrams in Operations Manager based on the dynamic dependency maps in Service Map. For more information on how to plan and configure integration, see [Service Map integration with System Center Operations Manager](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map-scom).
 
 ### Support for product key registration from the Operations console
 
@@ -255,7 +255,7 @@ The following components now have a single installer each for all supported lang
 ### Simplified management server patching
 Operations Manager 2019 UR1 introduces a frictionless way of patching the Operations Manager server.
 
-The improvised user interface guides you through the installation steps, which patch the management server, update the databases, and update the management packs. For more information on how integrated patching is done, see [Simplified SCOM 2019 management server patching](https://support.microsoft.com/help/4538900/simplified-scom-2019-management-server-patching).
+The improvised user interface guides you through the installation steps, which patch the management server, update the databases, and update the management packs. For more information on how integrated patching is done, see [Simplified management server patching - Operations Manager 2019](https://support.microsoft.com/help/4538900/simplified-scom-2019-management-server-patching).
 
 ### Distro-agnostic management pack for Linux
 
@@ -337,4 +337,74 @@ With Operations Manager 2019 UR2, you can run and view favorite reports under **
 In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-web-console.md).
 
 ### Support for CentOS 8
-Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](../scom/manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](https://docs.microsoft.com/system-center/scom/manage-install-crossplat-agent-cmdline?view=sc-om-2019#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+
+## New features in Operations Manager 2019 UR3
+
+The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 3 (UR3).
+
+For the problems fixed in UR3, and the installation instructions for UR3, see the KB article.
+
+### Updates to change tracking feature
+
+Operations Manager 2019 UR3 includes updates to the change tracking feature for management packs. This feature now supports change tracking for agent and monitor health reset. [Learn more](../scom/management-pack-change-tracking.md#change-tracking-for-agent).
+
+### Additional view options in web console widgets
+
+With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and State widget, also group the columns. [Learn more](../scom/manage-create-web-dashboard-alerts.md#additional-view-options-in-alert-widget).
+
+### Disabled SSL renegotiation for Linux agent
+
+With Operations Manager 2019 UR3 and later, SSL renegotiations have been disabled. [Learn more](../scom/manage-security-crossplat-config-sslcipher.md#disabled-ssl-renegotiations-in-linux-agent).
+
+### Dynamic changes in log-level settings without agent restart
+
+With Operations Manager 2019 UR3 and later, you can change the log-level settings without restarting the agent. [Learn more](../scom/manage-security-administer-crossplat-agent.md#dynamic-changes-in-log-level-settings-without-agent-restart).
+
+### Resolved issues with orphan alerts
+
+In earlier releases, active alerts are not getting closed after non-persistent health state in failover scenarios. Overall, health service doesn’t hold the last state of the monitor; alerts are not closed while resetting the monitor to healthy.
+
+With Operations Manager 2019 UR3 and later, all of the orphan alerts are closed, eventually, depending on the type of monitor. [Learn more](../scom/manage-alert-created-by-monitor.md#closure-of-orphan-alerts).
+
+### Support for RHEL 6
+
+Operations Manager 2019 UR3 and later supports RHEL6 via RHEL6 management pack. [Learn more](../scom/plan-supported-crossplat-os.md#red-hat-enterprise-linux-server-6--applicable-for-2019-ur3-and-later).
+
+### TLS 1.2 support for Solaris 10 SPARC
+
+Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Learn more](../scom/plan-supported-crossplat-os.md#solaris-10-sparc).
+
+### Performance improvements in Operations Manager
+
+ Operations Manager 2019 UR3 provides performance improvement in the following scenarios:
+
+- **Improvements in load time for Windows computer view**
+
+  Windows computer view in Operations Manager console was taking unreasonable time to load.
+
+  With Operations Manager 2019 UR3, to decrease the load time for this view, we optimized the relevant SQL query.
+
+- **Improvement in load time while changing user role privileges**  
+
+  Prior to 2019 UR3, any changes to a user's role privileges (for example, providing or revoking permissions on specific views or dashboards) was taking about 30 minutes.
+
+  With Operations Manager 2019 UR3, the SQL queries that fetch the relevant data and helps change the settings of a user role are optimized. This optimization has led to significant improvements in the load time.
+
+- **Grooming of maintenance mode staging table**
+
+  In earlier releases, Operations Manager Data warehouse grooming (emptying) of maintenance mode staging table was not occurring. The table increased every day into millions of rows, which eventually filled up the database that could potentially lead to additional cost to spin up a new database. The increase in utilization of database is usually correlated with decrease in performance of Operation Manager's console.
+
+  With Operations Manager 2019 UR3, an index is added to the maintenance mode staging table; grooming of the table occurs now.
+
+- **Improvement in SDK services**
+
+  Operations Manager console was taking longer time to load and complete basic tasks.
+
+  With Operations Manager 2019 UR3, we optimized relevant SQL queries and the performance has significantly improved now.
+
+- **Reliability and performance improvement in Xplat agent**
+
+  In Operations Manager 2019 UR3, heartbeat threads are isolated from performance data related threads, so any malfunctioning in performance providers would not affect heartbeat request, thereby improving reliability of Operations Manager.
+
+  Filters are also introduced in Xplat management packs to help you customize the discovery and monitoring scope of the entities of interest; further to improve performance and scale of Xplat agent.   

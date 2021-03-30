@@ -5,7 +5,7 @@ description: This article describes how to set up a Software Defined Network (SD
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 08/04/2020
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -30,6 +30,7 @@ For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid
 >[!NOTE]
 > - From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
 > - VMM 2019 UR2 and later supports IPv6.
+> - VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](deploy-manage-azure-stack-hci.md).
 
 ::: moniker-end
 

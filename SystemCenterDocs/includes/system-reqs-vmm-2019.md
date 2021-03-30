@@ -5,7 +5,7 @@ description: include article to detail the system requirements for VMM 2019
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  08/04/2020
+ms.date:  03/30/2021
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -55,6 +55,7 @@ Windows Server 2016 Server Core| Y | N | If supported by SQL Server version
 Windows Server 2016 with desktop experience | Y | Y | If supported by SQL Server version
 Windows Server 2019 with desktop experience| Y | Y | If supported by SQL Server version
 Windows Server 2019 Server Core| Y | Y | If supported by SQL Server version
+
 
 > [!NOTE]
 > Ensure that VMM server operating system  is same as the managed host operating system in case of deployment of  Hyper Converged Infrastructure.
@@ -114,6 +115,7 @@ Windows Server 2016 | Y | Y | N | N
 Windows Server 2016 (with desktop experience) | Y | Y | Y | Y
 Windows Server 2019 (Data Center) | Y | Y | Y | Y
 Windows Server 2019 (Server Core) | Y | Y | N | N
+[Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](../vmm/deploy-manage-azure-stack-hci.md) (supported from 2019 UR3 and later)| Y | N | N | N  
 
 ## VMware servers in the VMM fabric
 

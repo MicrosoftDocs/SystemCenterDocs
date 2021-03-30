@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/19/2018
+ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-2016'
@@ -88,6 +88,20 @@ To perform these actions, hover your mouse over the widget and click on the elli
 
    * Select **Export to Excel** to export the alert data to an Excel file.
    * Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Click **Save personalization** when you have completed making your changes.  
+
+
+## Additional view options in State widget
+
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
+
+
+State widget now supports sort by option.
+
+In earlier releases, this feature is not available for State widget, and on all H5 dashboard personalization but is available on all views of operations console of Operations Manager 2019.
+
+With Operations Manager 2019 UR3 and later, you can sort the results columns in the State widget, also group the columns. For more information, see [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+
 
 ## Next steps
 

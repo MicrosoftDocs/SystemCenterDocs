@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 02/04/2020
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -50,6 +50,8 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 
 - Make sure you're running VMM 2016 or later.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 or later with the Hyper-V Role installed, and be configured to host VMs.
+  > [!NOTE]
+  > VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](deploy-manage-azure-stack-hci.md).
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster, or export the storage to other resources using SOFS.
 
@@ -179,7 +181,7 @@ You can now modify the storage pool settings, and create virtual disks and CSVs.
 
 5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
-If you use Powershell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
+If you use PowerShell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 
 ## Step 5: Deploy VMs on the cluster
 
@@ -208,7 +210,7 @@ You can now modify the storage pool settings, and create virtual disks and CSVs.
 
 5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
-If you use Powershell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
+If you use PowerShell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 
 ## Step 4: Deploy VMs on the cluster
 
