@@ -250,17 +250,23 @@ The following section details the known issue in DPM 2019 UR3 and the work aroun
 
 1.	On the server running DPM Remote Administration console, run the following PowerShell command (enter the DPM server name as applicable), this command copies the required DLL files from the DPM server:
 
-```
-Copy-Item -Path \\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\*.dll -Destination C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin
+   ```PowerShell
+   $RemoteUIPath = "C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin"
+   $RemoteUidlls = Get-Item "$RemoteUIPath\*" | ? {$_.name -match ".dll"}
+   Write-Host -MessageData "Copying required $($RemoteUidlls.count) DLL's for Remote UI"
+   foreach ($dll in $RemoteUidlls) {
+   Copy-Item -Path \\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\$($dll.name) -Destination $RemoteUIPath
+   }
 
-```
+
+   ```
 
 2.	If you are using a language different than English, copy the respective language folder from the DPM server. Update the DPM server name and language folder in the following command, and then run the command.
 
 
-```
-Copy-Item -Path \\<FQDN of the DPM_Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\<Language folder>\*.dll -Destination C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin\<Language folder>  
-```
+   ```PowerShell
+   Copy-Item -Path \\<FQDN of the DPM_Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\<Language folder>\*.dll -Destination C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin\<Language folder>  
+   ```
 
 >[!NOTE]
 > This command uses the default installation path for DPM. If you have changed the installation path, update the path accordingly.
