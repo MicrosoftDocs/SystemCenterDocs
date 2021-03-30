@@ -343,7 +343,7 @@ Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package
 
 The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 3 (UR3).
 
-For the problems fixed in UR3, and the installation instructions for UR3, see the KB article.
+For the problems fixed in UR3, and the installation instructions for UR3, [see the KB article](https://support.microsoft.com/topic/a7b9aa06-7d72-dc5a-e303-1899fafe9931).
 
 ### Updates to change tracking feature
 
