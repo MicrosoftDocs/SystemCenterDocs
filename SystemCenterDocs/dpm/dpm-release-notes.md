@@ -264,8 +264,11 @@ The following section details the known issue in DPM 2019 UR3 and the work aroun
    "Microsoft.SystemCenter.Instrumentation.dll",
    "Microsoft.WindowsAzure.Storage.dll",
    "Newtonsoft.Json.dll"
-
-
+   foreach ($dll in $RemoteUIUR3Dlls) {
+   $SourceDllPath = \\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\ + $dll
+   Copy-Item -Path $SourceDllPath -Destination $RemoteUIPath
+   }
+   Write-Host -MessageData "All required DLL files for DPM Remote UI UR3 has been copied"
    ```
 
 2. If you are using a language different than English, copy the respective language folder from the DPM server. Update the DPM server name and language folder in the following command, and then run the command.
@@ -274,8 +277,8 @@ The following section details the known issue in DPM 2019 UR3 and the work aroun
    Copy-Item -Path \\<FQDN of the DPM_Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\<Language folder>\*.dll -Destination C:\Program Files\Microsoft Data Protection Manager\DPM2019\bin\<Language folder>  
    ```
 
->[!NOTE]
-> This command uses the default installation path for DPM. If you have changed the installation path, update the path accordingly.
+   >[!NOTE]
+   > This command uses the default installation path for DPM. If you have changed the installation path, update the path accordingly.
 
 ::: moniker-end
 
