@@ -149,7 +149,7 @@ DPM 2019 supports SQL server 2019 as DPM database. You can install SQL Server on
 
 ## New features in DPM 2019 UR3
 
-DPM 2019 UR3 has only bug fixes. See the KB article for details about the issues fixed.
+DPM 2019 UR3 has only bug fixes. See [the KB article](https://support.microsoft.com/topic/fa5eb310-1886-43fb-be5d-c7829bfaf63d) for details about the issues fixed.
 
 ::: moniker-end
 
