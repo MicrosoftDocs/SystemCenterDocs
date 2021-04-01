@@ -255,7 +255,7 @@ The following section details the known issue in DPM 2019 UR3 and the work aroun
    $RemoteUidlls = Get-Item "$RemoteUIPath\*" | ? {$_.name -match ".dll"}
    Write-Host -MessageData "Copying required $($RemoteUidlls.count) DLL's for Remote UI"
    foreach ($dll in $RemoteUidlls) {
-   Copy-Item -Path \\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\$($dll.name) -Destination $RemoteUIPath
+   Copy-Item -Path "\\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\$($dll.name)" -Destination $RemoteUIPath
    }
    $RemoteUIUR3Dlls = "Microsoft.ApplicationInsights.dll",
    "Microsoft.Diagnostics.Tracing.EventSource.dll",
@@ -265,7 +265,7 @@ The following section details the known issue in DPM 2019 UR3 and the work aroun
    "Microsoft.WindowsAzure.Storage.dll",
    "Newtonsoft.Json.dll"
    foreach ($dll in $RemoteUIUR3Dlls) {
-   $SourceDllPath = \\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\ + $dll
+   $SourceDllPath = "\\<FQDN of the DPM Server>\c$\Program Files\Microsoft System Center\DPM\DPM\bin\" + $dll
    Copy-Item -Path $SourceDllPath -Destination $RemoteUIPath
    }
    Write-Host -MessageData "All required DLL files for DPM Remote UI UR3 has been copied"
