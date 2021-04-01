@@ -5,7 +5,7 @@ description: This article describes how to configure settings for VMs in the VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -33,7 +33,11 @@ You can add and remove virtual network adapters (vNICs) from VMs that are runnin
 - This feature is only available for Generation 2 VMs.
 - By default added virtual network adapters aren't connected to a virtual network. You can configure VMs assigned with the hardware profile to use one or more of the virtual network adapters, after they're deployed on a host.
 
+
+
 1. In the virtual machine properties > **Hardware Configuration**, click **Network Adapters**, and select the network adapter you want to add.
+
+
 2. You can configure a number of properties for the network adapter, including:
 
     - **Connected to**: Select what the adapter is connected to.
@@ -43,6 +47,26 @@ You can add and remove virtual network adapters (vNICs) from VMs that are runnin
     - **Ethernet (MAC) address**: computers, a virtual MAC address on virtual machines uniquely identifies each computer on the same subnet. Select one of the following options:
     - **Dynamic**. Select this option if you want to enable a dynamic MAC address for a virtual machine.
     - **Static**. Select this option if you want to specify a static MAC address for a virtual machine. Type a static MAC address in the field provided.
+    - **Trunk Mode**: Select to enable Trunk mode. (applicable from 2019 UR3)
+
+## Support for trunk mode
+
+> [!NOTE]
+> - **Trunk mode**  is supported  from UR3.
+> - **Trunk mode** is supported only in VLAN based independent networks.
+
+VMM 2019 UR3 and later supports *trunk* mode for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs. You can enable trunk mode through console and PowerShell.
+
+See the following section for enabling Trunk mode through console, see [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019&preserve-view=true) and New-[SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019&preserve-view=true) for enabling through PowerShell commandlets.
+
+## Configure trunk mode
+
+To configure trunk mode in VMM, follow the steps:
+
+1. Under VM **Properties**, navigate to **Configure Hardware Settings** > **Network Adapter**, and then select **Trunk mode** to enable trunk mode for VM vNICs.
+2. Select the VM networks (multiple vLANs) through which you want to direct the VM network traffic.
+   ![Trunk mode](media/vm-settings/configure-trunk-mode.png)
+3. The VM Network that is selected as part of *Connected to a VM Network* workflow should also be made the native VLAN. You cannot change the native VLAN later, as this is based on the VM network that was selected as part of *Connected to a VM Network* workflow.
 
 ### Add a virtual adapter with PowerShell
 
@@ -185,7 +209,7 @@ You can configure availability sets for standalone VMs in a cluster, or in avail
 5.  Click the name of an availability set, and use the controls to add or remove the set. Repeat this action until all of the intended availability sets appear in the **Assigned properties** list. To create a new availability set, click the **Create** button, provide a name for the set, and then click **OK**.
 6.  To verify the setting for a deployed virtual machine, in the listing for the virtual machine, view the name under **Availability Set Name**.
 
-For virtual machines that have been deployed on a host cluster, another way to configure this setting is to use Windows PowerShell commands for failover clustering. In this context, the setting appears in the [Get-ClusterGroup](/powershell/module/failoverclusters/get-clustergroup) as **AntiAffinityClassNames**.
+For virtual machines that have been deployed on a host cluster, another way to configure this setting is to use Windows PowerShell commands for failover clustering. In this context, the setting appears in the [Get-ClusterGroup](https://docs.microsoft.com/powershell/module/failoverclusters/get-clustergroup) as **AntiAffinityClassNames**.
 
 ## Configure resource throttling
 

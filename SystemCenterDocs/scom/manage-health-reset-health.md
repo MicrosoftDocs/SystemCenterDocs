@@ -4,7 +4,7 @@ description: This article describes how to reset health for a monitor after corr
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 11/30/2016
+ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -23,7 +23,8 @@ ms.assetid: 87da70aa-607a-47ec-bab5-39345ea53258
 Some monitors can set state to critical (red), warning (yellow), and healthy (green). Other monitors are only able to change state to critical or warning and cannot detect that state has returned to healthy. In that situation, the monitor must be reset manually. Administrators or authors can check whether a monitor is type **Manual Reset** in the **Authoring** workspace.  
 
 > [!NOTE]  
-> Only reset health for a monitor when you are sure that all issues have been resolved.  
+> - Only reset health for a monitor when you are sure that all issues have been resolved.  
+> - With Operations Manager 2019 UR3, you can view change tracking report on health reset actions on the monitors as a consolidated view under **Reports**. [Learn more](management-pack-change-tracking.md#change-tracking-for-monitor-health-reset).
 
 ## To reset the health for a monitor
 

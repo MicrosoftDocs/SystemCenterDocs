@@ -5,26 +5,40 @@ description: This article details the management pack change tracking in Operati
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 08/04/2020
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
 MonikerRange: 'sc-om-2019'
 ---
 
-# Track changes in management pack
+# Track changes in Operations Manager
 
 In System Center - Operations Manager, user roles are defined to potentially change monitoring settings for applications and services through management packs. There can be multiple users associated with a single user role. In earlier versions of Operations Manager, there was no tracking of these changes to identify the user who has done the changes and when.
 
-Operations Manager 2019 UR2 supports change tracking in management packs. Change tracking is enabled by default in 2019 UR2 to track and report the changes on the management packs and management pack objects.
+As Operations Manager is a monitoring platform, multiple users interact with Operation Manager to monitor the data that is relevant to their role. A profile is defined for a group of users that imposes role-based security, and limit privileges that users have for various aspects of Operations Manager. When multiple users access and change the same object, it gets difficult to identify the user who has done the changes and when.
+
+With Operations Manager UR2, change tracking feature was introduced. Change tracking is enabled by default in 2019 UR2 to track and report the changes on the management packs and management pack objects. 2019 UR3 supports change tracking for agent and monitor health reset status.
+
+Change tracking feature is detailed in the following sections:
+
+- [Change tracking for management packs](#change-tracking-for-management-packs)
+- [Change tracking for agent](#change-tracking-for-agent)
+- [Change tracking for monitor health reset](#change-tracking-for-monitor-health-reset)
+
+## Change tracking for management packs
 
 Three new reports **Management Pack History**, **Management Pack Objects** and **Overrides tracking** are now available to display the changes. These reports are available under **Reporting** > **Microsoft Generic Report library**.
 
 You can use the filters available in the reports to set the criteria and get the reports per your requirement.
 
-This article details the reports used for change tracking and how to use them.
+The following sections details the reports used for change tracking in Management packs and how to use them.
 
-## Management pack history
+### Change tracking for management pack history
+
+> [!NOTE]
+> This feature is applicable for 2019 UR2 and later.
+
 
 The management pack history report generates the list of all the management packs, which are either imported or deleted on any management server in your management group. You can filter the report by date, action, and username.
 
@@ -51,7 +65,7 @@ The report displays the following fields and values:
 > - Any update on management pack will be captured in two entries in the report. First entry for deletion of older management pack version and second entry for the installation of new version.
 
 
-## Management pack objects
+### Management pack objects
 
 The management pack objects report tracks and generates the list of all management pack objects, which are newly created or deleted from the management server. This report also tracks edits on management pack objects like renaming a group/monitor/rule or adding/deleting a member in the group etc.
 
@@ -80,7 +94,7 @@ The management pack object report contains the following fields and values:
 
 ![Test management pack](./media/change-tracking/test-management-pack.png)
 
-## Overrides tracking
+### Overrides tracking
 
 Overrides are created to tune monitoring. Multiple user roles can create these overrides in Operations Manager. When different users create overrides, it becomes crucial to track and capture the user who made these changes and when. With **Overrides tracking report,** all the overrides either created through console, PowerShell, or SDK APIs are captured.
 
@@ -88,9 +102,87 @@ This report has relevant fields/information to track overrides in detail such as
 
 **Filtering**: You can filter the report by username, type of object, management pack name and date, which makes it simple to track the changes you are interested in.
 
-## Data grooming settings
+## Data grooming settings in Management pack
 
 Grooming settings are tied with management pack grooming settings for data warehouse. This means, by default, three versions of management packs and 400 days old data will be shown in the reports. For example: whenever you make a change in *MyCustomMP* and save your changes in a new version as v1, v2, v3, v4 over Seven days. Then by default, v1 will be groomed and you will only see changes for v2, v3 and v4. Besides this, any change which is 400 days old will be groomed.
+
+## Change tracking for agent
+
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
+
+Operations Manager 2019 UR3 introduces further enhancements to the change tracking feature and supports change tracking for agent. A new report **Agent tracking** is added to Microsoft generic report library:
+
+**Agent tracking** reports all install/uninstall/repair/upgrade actions on Windows/Linux agent.
+
+
+### View changes on agent
+
+You can have a consolidated view of all the changes made to an agent under **Reports**. You can export the list to an Excel, PDF, Notepad and edit the exported content. You can filter the report by date, type of action (Install/Repair/ Upgrade/Uninstall/) and agent name.
+
+**Example**: The following report shows the line items that are sorted by date/time with the latest item displayed in the top row. Click **+** to view the changed values.
+
+![Agent tracking report](./media/change-tracking/agent-tracking-report.png)
+
+![Agent name](./media/change-tracking/agent-name.png)
+
+## Change tracking for monitor health reset
+
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
+
+
+Operations Manager 2019 UR3 introduces further enhancements to the change tracking feature and supports change tracking for monitor health reset. A new report **Monitor health reset tracking** is added to Microsoft generic report library:
+
+**Monitor health reset tracking** reports on monitor health reset status.
+
+
+### View monitor health reset actions
+
+You can view health reset actions on the monitors as a consolidated view under **Reports**. You can export the list to an Excel, PDF, Notepad and edit the exported content. You can filter the report by date/time, username, and monitor name.
+
+**Example**: The following report has the monitor name as **Operating System Performance Rollup** and Entity is **SCSCOMBEVM40085.smx.net**.
+
+![Monitor health tracking](./media/change-tracking/monitor-health-tracking.png)
+
+
+## Synchronization of change tracking data in Data Warehouse
+
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
+
+Operations Manager 2019 UR3 introduces further enhancements to the change tracking feature and supports synchronization of change tracking data in Data Warehouse.
+
+ The rule, responsible for the synchronization of the change tracking data from Operations Manager DB to DW is called **Data Warehouse Job Status Information synchronization** rule.
+
+You can override the default values of the parameters including the following:
+
+- **BatchGenerationFrequencySeconds** (Time after while the rule runs to sync data) – 30 seconds.
+- **BatchSize** (Size of batches in which data is synced) – 100.
+
+    ![Groom data warehouse ](./media/change-tracking/groom-change-tracking.png)
+
+## Groom change tracking data in Data Warehouse
+
+> [!NOTE]
+> This feature is applicable for 2019 UR3 and later.
+
+Operations Manager 2019 UR3 introduces further enhancements to the change tracking feature and supports groom change tracking data in Data Warehouse. The parameters of the workflow can be customized through **Data Warehouse Job Status Information Grooming** rule.
+
+You can override the default values of the parameters including the following:
+
+- **ChangeTrackingGroomingFrequencyMinutes** (Time after which the grooming workflow runs for DW tables) - 1440 minutes.
+- **ChangeTrackingAgentAgeDays** (Maximum instance age for agent data in DW) - 400 days.
+- **ChangeTrackingResetMonitorAgeDays** (Maximum instance age for reset monitor data in DW) - 400 days.
+
+
+   ![Synchronization](./media/change-tracking/sync-change-tracking.png)
+
+### View alerts in console
+
+If any of the grooming or the synchronization workflows fail to work, corresponding alerts are generated as shown in the following example.
+
+![Alert details](./media/change-tracking/view-alerts-in-console.png)
 
 
 ## Known issues
@@ -102,4 +194,3 @@ Grooming settings are tied with management pack grooming settings for data wareh
 ## Next steps
 - [Create, import or export a management pack](manage-mp-import-remove-delete.md)
 - [Override a rule or monitor](manage-mp-override-rule-monitor.md)
- <SMEs to review and confirm>
