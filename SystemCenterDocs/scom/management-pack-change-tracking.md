@@ -176,8 +176,7 @@ You can override the default values of the parameters including the following:
 - **ChangeTrackingResetMonitorAgeDays** (Maximum instance age for reset monitor data in DW) - 400 days.
 
 
-
-   ![Synchronization](./media/change-tracking/synchronization-change-tracking.png)
+   ![Synchronization](./media/change-tracking/sync-change-tracking.png)
 
 ### View alerts in console
 
