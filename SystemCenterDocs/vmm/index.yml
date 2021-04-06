@@ -65,3 +65,10 @@ landingContent:
             url: manage-networks.md
           - text: Set up the VMM storage fabric
             url: manage-storage.md
+  # Card
+  - title: Deploy and manage Azure Stack HCI
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Deploy and manage Azure Stack HCI clusters in VMM
+            url: deploy-manage-azure-stack-hci.md
