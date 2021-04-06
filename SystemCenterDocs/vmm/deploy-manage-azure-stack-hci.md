@@ -9,7 +9,7 @@ ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-monikerRange: '>sc-vmm-1807'
+monikerRange: '>=sc-vmm-2019'
 ---
 
 # Deploy and manage Azure Stack HCI clusters in VMM
