@@ -66,6 +66,7 @@ landingContent:
           - text: Set up the VMM storage fabric
             url: manage-storage.md
 
+::: moniker range="sc-vmm-2019"
   # Card
   - title: Deploy and manage Azure Stack HCI
     linkLists:
@@ -73,3 +74,4 @@ landingContent:
         links:
           - text: Deploy and manage Azure Stack HCI clusters in VMM
             url: deploy-manage-azure-stack-hci.md
+::: moniker-end
