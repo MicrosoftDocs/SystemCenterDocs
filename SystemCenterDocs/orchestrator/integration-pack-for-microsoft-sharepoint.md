@@ -27,7 +27,7 @@ This article provides information about System Center integration pack for Micro
 The System Center Integration Pack for Microsoft SharePoint enables the automation of common tasks in SharePoint. For example, to create list items, to upload and download documents, and to monitor a list for changes.
 
 
-## System Requirements
+## System requirements
 
 The integration pack for SharePoint requires the following software to be installed and configured before you implement the integration.
 
@@ -47,8 +47,8 @@ After you download the integration pack file, you must register it with the Orch
 
 The SharePoint Integration Pack performs actions on behalf of a user who can access your SharePoint domain. The IP authenticates with SharePoint as this user in two modes:
 
-1. Basic Auth (default, supports both SharePoint Online and SharePoint OnPrem).
-2. Modern Auth (aka. OAuth) using AAD (applicable only for SharePoint Online).
+- Basic Auth (default, supports both SharePoint Online and SharePoint OnPrem).
+- Modern Auth (also known as OAuth) using Azure AD (applicable only for SharePoint Online).
 
 
 
