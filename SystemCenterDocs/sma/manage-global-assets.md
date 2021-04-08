@@ -188,40 +188,7 @@ $fieldValues = @{"Username"="MyUser";"Password"="password";"ComputerName"="MyCom
 New-SmaConnection "WebServiceEndpoint $webServer "port $port "Name $connectionName "ConnectionTypeName "VirtualMachineManager" "ConnectionFieldValues $fieldValues
 ```
 
-### Use
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- a connection in a runbook
+### Use a connection in a runbook
 
 Use the **Get-AutomationConnection** activity to use a connection in a runbook.  This activity retrieves the values of the different fields in the connection and returns them as a hashtable which can then be used with the appropriate commands in the runbook.
 
