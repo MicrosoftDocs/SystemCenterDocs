@@ -9,14 +9,13 @@ ms.date:  04/08/2021
 ms.topic:  article
 ms.prod:  system-center
 ms.technology: data-protection-manager
-MonikerRange: sc-dpm-2019||sc-dpm-2016
 ---
 
-# Manage mirrored SQL servers
+# Back up mirrored SQL servers with DPM
 
 System Center – Data Protection Manager (DPM) protects SQL Server databases and clusters that use SQL Server mirroring technology. This support does not translate into any major changes in the procedure to protect or recover SQL Server databases in DPM.
 
- following sections will call out any changes in procedure.
+Following sections call out any changes in the procedure:
 
 ## Before you begin
 
@@ -48,14 +47,14 @@ DPM protects the following configurations:
 
 ### A protected SQL Server database gets mirrored
 
-At the time of backup, DPM detects that the database was mirrored, and raises an alert. You need to remove protection (with retain data) for the database, and then re protect it.
+At the time of backup, DPM detects that the database was mirrored, and raises an alert. You need to remove protection (with retaining backup data) for the database, and then re protect it.
 
 > [!NOTE]
 > DPM maintains a single replica for the mirror.
 
 ### A mirror is broken
 
-When the mirror is broken for a mirrored SQL Server database that is currently protected by DPM, backups fail with alerts. Remove protection (with retain data) for the SQL Server database and re protect it.
+When the mirror is broken for a mirrored SQL Server database that is currently protected by DPM, backups fail with alerts. Remove protection (with retaining backup data) for the SQL Server database and re protect it.
 
 ### Principal partner in a mirror fails over and fails back before the next backup
 
@@ -84,5 +83,3 @@ DPM does not support the following scenarios for mirrored SQL Server databases:
 
 - If the database is mirrored on the same server.
 - If the SQL Server mirroring session uses an explicitly configured IP address.
-
-## Next steps
