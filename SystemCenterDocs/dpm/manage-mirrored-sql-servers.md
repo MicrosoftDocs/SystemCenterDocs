@@ -27,7 +27,7 @@ Before you protect a mirrored SQL Server database, make sure that you meet the f
 
 ## Protect a mirrored SQL server database
 
-The procedure to protect a mirrored database is the same as to [protect a SQL Server database](#back-up-sql-server.md).
+The procedure to protect a mirrored database is the same as to [protect a SQL Server database](back-up-sql-server.md).
 
 When you select a mirrored database to add to the protection group in the  **Create New Protection Group**  wizard, DPM automatically detects that the database is mirrored and displays the mirror details on the  **Select Group Members**  page.
 
