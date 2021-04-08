@@ -116,7 +116,7 @@ $certName = 'MyCertificate'
 $path = 'c:\certs\MyCertificate.pfx'
 $certPwd = ConvertTo-SecureString -String 'P@$$w0rd' -AsPlainText -Force
 
-Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName "Path $certPath "Password $certPwd
+Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName -Path $certPath -Password $certPwd
 ```
 
 ## Use a PowerShell credential in a runbook
