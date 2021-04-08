@@ -37,6 +37,7 @@
 ### [Back up Exchange with DPM](back-up-exchange.md)
 ### [Back up SharePoint with DPM](back-up-sharepoint.md)
 ### [Back up SQL Server with DPM](back-up-sql-server.md)
+### [Back up mirrored SQL Server databases with DPM](#manage-mirrored-sql-servers)
 ### [Back up client computers with DPM](back-up-workstations.md)
 ### [Back up file data with DPM](back-up-file-data.md)
 ### [Back up system state and bare metal](back-up-system-state-and-bare-metal.md)
