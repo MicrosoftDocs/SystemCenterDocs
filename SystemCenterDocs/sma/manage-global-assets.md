@@ -33,7 +33,7 @@ You can use the cmdlets in the following table to create and manage credentials 
 |[Get-SmaCertificate](/previous-versions/system-center/powershell/system-center-2012-r2/dn502568(v=sc.20))|Retrieves an Automation certificate.|
 |[Get-SmaCredential](/previous-versions/system-center/powershell/system-center-2012-r2/dn502576(v=sc.20))|Retrieves an Automation PowerShell credential.|
 |[Remove-SmaCertificate](/previous-versions/system-center/powershell/system-center-2012-r2/dn502583(v=sc.20))|Removes an Automation certificate.|
-|[Remove-SmaCredential](/previous-versions/system-center/powershell/system-center-2012-r2/dn502593(v=sc.20))|Removes an Automation PowerShell credental.|
+|[Remove-SmaCredential](/previous-versions/system-center/powershell/system-center-2012-r2/dn502593(v=sc.20))|Removes an Automation PowerShell credential.|
 |[Set-SmaCertificate](/previous-versions/system-center/powershell/system-center-2012-r2/dn502572(v=sc.20))|Creates a new certificate or sets the properties for an existing certificate including uploading the certificate file and setting the password for a .pfx.|
 |[Set-SmaCredential](/previous-versions/system-center/powershell/system-center-2012-r2/dn502575(v=sc.20))|Creates a new Automation PowerShell credential or sets the properties for an existing credential.|
 
@@ -116,7 +116,7 @@ $certName = 'MyCertificate'
 $path = 'c:\certs\MyCertificate.pfx'
 $certPwd = ConvertTo-SecureString -String 'P@$$w0rd' -AsPlainText -Force
 
-Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName "Path $certPath "Password $certPwd
+Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName -Path $certPath -Password $certPwd
 ```
 
 ## Use a PowerShell credential in a runbook
@@ -133,7 +133,7 @@ You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCre
 
 ## Manage SMA connections
 
-An Automation Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription Id.  The properties for a connection are stored securely in the Automation database and can be accessed in the runbook with the **Get-AutomationConnection** activity.
+An Automation Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription ID.  The properties for a connection are stored securely in the Automation database and can be accessed in the runbook with the **Get-AutomationConnection** activity.
 
 ### Windows PowerShell Cmdlets
 You can create and manage credentials with the Windows PowerShell cmdlets in the following table.
@@ -188,40 +188,7 @@ $fieldValues = @{"Username"="MyUser";"Password"="password";"ComputerName"="MyCom
 New-SmaConnection "WebServiceEndpoint $webServer "port $port "Name $connectionName "ConnectionTypeName "VirtualMachineManager" "ConnectionFieldValues $fieldValues
 ```
 
-### Use
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- a connection in a runbook
+### Use a connection in a runbook
 
 Use the **Get-AutomationConnection** activity to use a connection in a runbook.  This activity retrieves the values of the different fields in the connection and returns them as a hashtable which can then be used with the appropriate commands in the runbook.
 
