@@ -192,7 +192,7 @@ To enable SQL Server Service Broker, follow these steps:
    SELECT is_broker_enabled FROM sys.databases WHERE name='OperationsManager'
    ```
 
-2. Skip this step if the value that is displayed in the `is_broker_enabled` field is **1**(one). Otherwise, run the following SQL queries:
+2. Skip this step if the value that is displayed in the `is_broker_enabled` field is **1** (one). Otherwise, run the following SQL queries:
 
    ```SQL
    ALTER DATABASE OperationsManager SET SINGLE_USER WITH ROLLBACK IMMEDIATE
