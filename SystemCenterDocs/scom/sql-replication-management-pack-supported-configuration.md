@@ -38,7 +38,7 @@ A dedicated management group is not required.
 
 ## Agentless Monitoring
 
-Management Pack for SQL Server Replication supports [agentless mode](ssmp-monitoring-modes.md) for monitoring of SQL on Windows.
+Management Pack for SQL Server Replication supports [agentless mode](sql-server-management-pack-monitoring-modes.md) for monitoring of SQL on Windows.
 
 ## SQL Server Features
 

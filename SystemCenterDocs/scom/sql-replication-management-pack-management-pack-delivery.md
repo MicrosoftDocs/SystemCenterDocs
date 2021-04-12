@@ -49,7 +49,7 @@ The environment that you use must meet the following prerequisites before you st
 
 - Import both the **Management Pack for Windows Server Operating System** and the **Management Pack for SQL Server**
 
-- Enable the **Agent Proxy** option on each agent to allow agents to forward data to management servers. For more information, see [Enabling Agent Proxy Option](ssmp-enabling-agent-proxy.md).
+- Enable the **Agent Proxy** option on each agent to allow agents to forward data to management servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md).
 
 ## Importing Management Pack
 

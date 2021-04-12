@@ -17,14 +17,14 @@ This section explains how to configure security for Management Pack for Microsof
 
 ## Run As Profiles
 
-Management Pack for Microsoft SQL Server Replication uses the same Run As profiles as Management Pack for SQL Server. For more information, see [SQL Server Run As Profiles](ssmp-run-as-profiles.md).
+Management Pack for Microsoft SQL Server Replication uses the same Run As profiles as Management Pack for SQL Server. For more information, see [SQL Server Run As Profiles](sql-server-management-pack-run-as-profiles.md).
 
 >[!NOTE]
 >Using Service Security Identifier (SID) or Local System account as the Run As account is not supported in this management pack.
 
 ## Low-Privilege Agent Monitoring
 
-To configure low-privilege monitoring, in addition to the steps described in [Low-Privilege Agent Monitoring](ssmp-low-privilege-monitoring.md#agent-monitoring), perform the following steps on an agent machine:
+To configure low-privilege monitoring, in addition to the steps described in [Low-Privilege Agent Monitoring](sql-server-management-pack-low-privilege-monitoring.md), perform the following steps on an agent machine:
 
 1. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance that participates in Replication.
 
