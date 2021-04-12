@@ -104,7 +104,7 @@ Follow these steps to configure the security configuration using SID:
 
 1. Configure a service SID for HealthService, as described in [Service SID](sql-server-management-pack-service-sid.md).
 
-2. If you have SQL Server cluster instances, perform the steps provided in [Service SID for SQL Server Cluster Instances and AG](sql-server-management-pack-service-sid.md#service-sid-for-sql-server-cluster-instances-and-ag).
+2. If you have SQL Server cluster instances, perform the steps provided in [Service SID for SQL Server Cluster Instances and AG](sql-server-management-pack-service-sid.md).
 
 ## Agentless Monitoring Mode
 
