@@ -1,6 +1,6 @@
 ---
 ms.assetid: 2ad571c2-f460-4b52-bccd-737e0936c5ff
-title: Managing Tiles in Management Pack for SQL Server Dashboards
+title: Managing tiles in Management Pack for SQL Server Dashboards
 description: This article explains how to manage tiles
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -21,9 +21,7 @@ Datacenter dashboards allow the following methods of tile moving:
 - Moving aggregated tiles within the expanded group in Datacenter View.
 - Moving tiles in Instance View.
 
-To open Performance View and Health Explorer, it is necessary to double-click the corresponding tile (performance tile and monitor tile, respectively).
-
-## Adding Tiles in Bulk
+To open **Performance View** and Health Explorer, it is necessary to double-click the corresponding tile (performance tile and monitor tile, respectively).
 
 The user can use the **Bulk add Tiles** menu to quickly add monitors and performance tiles to the instance view (all object rules and monitors are displayed in the **Chose tiles to be added to the view** list).
 
@@ -43,4 +41,4 @@ Performance and monitor have different icons.
 
 The same performance and monitor tiles can be added many times by means of the **Bulk add Tiles** menu. The date and time parameters will be added to **DISPLAY NAME** for each subsequent adding of repeated performance\monitor tiles.
 
-![Repeated performance\monitor tiles](./media/sql-server-dashboards-management-pack/date_time.png)
+![Repeated performance\monitor tiles](./media/sql-server-dashboards-management-pack/date-time.png)

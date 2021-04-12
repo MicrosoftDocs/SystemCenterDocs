@@ -1,6 +1,6 @@
 ---
 ms.assetid: 2ad571c2-f460-4b52-bccd-737e0936c5ff
-title: Instance View in Management Pack for SQL Server Dashboards
+title: Instance view in Management Pack for SQL Server Dashboards
 description: This article explains Instance View
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -19,8 +19,6 @@ The following is an example of an instance view that is displayed after drilling
 
 >[!NOTE]
 >Double-click the name of an object in the object widget to drill down to the instance dashboard of related objects (double-click the **Related Objects** tile does the same). The **Back** button is available in the upper-left corner of the navigation pane for navigating back to the previous instance view.
-
-## Instance View Tiles
 
 Instance view tiles display information about the current state of the monitors as well as the latest performance data.
 

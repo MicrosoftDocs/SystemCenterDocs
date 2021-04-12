@@ -1,6 +1,6 @@
 ---
 ms.assetid: 8229529e-f43d-4ab2-bbea-14edc1ba34ec
-title: Terms and Definitions in Management Pack for SQL Server Replication
+title: Terms and definitions in Management Pack for SQL Server Replication
 description: This article explains Terms and Definitions
 author: TDzakhov
 ms.author: v-tdzakhov

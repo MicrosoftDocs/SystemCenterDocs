@@ -1,6 +1,6 @@
 ---
 ms.assetid: 1c12cdd4-2601-4abd-aab4-e4e85905291d
-title: Instance Dashboard Navigation in Management Pack for SQL Server Dashboards
+title: Instance dashboard navigation in Management Pack for SQL Server Dashboards
 description: This article explains how to navigate through the dashboards structure 
 author: TDzakhov
 ms.author: v-tdzakhov

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 29b787f9-5c1f-4d08-a9a0-9c0a9b9075e1
-title: Manual Monitoring Template Management Pack for Azure SQL Managed Instance
+title: Manual monitoring template in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure manual monitoring template in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 ms.author: v-tdzakhov

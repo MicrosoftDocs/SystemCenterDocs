@@ -1,6 +1,6 @@
 ---
 ms.assetid: 2c4831ae-0b67-40c0-a91f-247a3ee3e01f
-title: SQL Server Run As Profiles in Management Pack for SQL Server
+title: SQL Server Run As profiles in Management Pack for SQL Server
 description: This article explains run as profiles in Management Pack for SQL Server
 author: TDzakhov
 ms.author: v-tdzakhov

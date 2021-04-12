@@ -1,6 +1,6 @@
 ---
 ms.assetid: 600eb684-a98b-42a6-957b-d43641415b76
-title: Datacenter View in Management Pack for SQL Server Dashboards
+title: Datacenter view in Management Pack for SQL Server Dashboards
 description: This article explains datacenter view
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -21,11 +21,7 @@ You can return to the home page from any **Instance** view by clicking **Home** 
 
 ![Datacenter view](./media/sql-server-dashboards-management-pack/datacenter-view.png)
 
-## Datacenter View Tiles
-
-All group tiles on the datacenter view are collapsed by default.
-
-A tile consists of two parts:
+All group tiles on the datacenter view are collapsed by default. A tile consists of two parts:
 
 - The left part displays the number of objects within a group in the worst state and the total number of objects.
 

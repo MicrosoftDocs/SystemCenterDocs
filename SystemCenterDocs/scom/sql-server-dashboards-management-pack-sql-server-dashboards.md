@@ -1,6 +1,6 @@
 ---
 ms.assetid: e972e309-dfc8-4613-a181-e2be233e8053
-title: SQL Server Web Dashboards in Management Pack for SQL Server Dashboards
+title: SQL Server web dashboards in Management Pack for SQL Server Dashboards
 description: This article explains SQL Server web dashboards
 author: TDzakhov
 ms.author: v-tdzakhov

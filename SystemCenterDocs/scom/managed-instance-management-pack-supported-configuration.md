@@ -1,6 +1,6 @@
 ---
 ms.assetid: c31d2851-7333-4aa0-8f4f-890eb1fbaa64
-title: Scope and Supported Configuration in Management Pack for Azure SQL Managed Instance
+title: Scope and supported configuration in Management Pack for Azure SQL Managed Instance
 description: This article explains the scope and supported configuration in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 ms.author: v-tdzakhov

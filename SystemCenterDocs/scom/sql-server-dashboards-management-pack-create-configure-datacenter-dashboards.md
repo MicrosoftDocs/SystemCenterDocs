@@ -1,6 +1,6 @@
 ---
 ms.assetid: bcce1331-7f00-413c-ba3d-25f03cc63741
-title: Configuring Datacenter Dashboard in Management Pack for SQL Server Dashboards
+title: Configuring datacenter dashboard in Management Pack for SQL Server Dashboards
 description: This article explains how to create and configure datacenter dashboards
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -13,7 +13,9 @@ ms.technology: operations-manager
 
 # Configuring Datacenter Dashboard
 
-It is recommended to store datacenter dashboards in a separate management pack to allow easy exporting and re-using the configured views.
+It is recommended to store datacenter dashboards in a separate management pack to allow easy exporting and re-using configured views.
+
+## Creating Management Pack
 
 To create a new management pack, perform the following steps:
 

@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Service SID
 
-Below are the steps to configure monitoring using Service SIDs for SQL Server on a Windows Server instance. These steps were first published by Kevin Holman in [his blog](https://kevinholman.com/2016/08/25/sql-mp-run-as-accounts-no-longer-required/). The SQL scripts to configure lowest-privilege access were developed by Brandon Adams.
+This section explains how to configure monitoring using Service SIDs for SQL Server on a Windows Server instance. These steps were first published by Kevin Holman in [his blog](https://kevinholman.com/2016/08/25/sql-mp-run-as-accounts-no-longer-required/). The SQL scripts to configure lowest-privilege access were developed by Brandon Adams.
 
 To configure monitoring using Service Security Identifier, perform the following steps:
 
@@ -113,8 +113,6 @@ To configure monitoring using Service Security Identifier, perform the following
     ```
 
 The NT AUTHORITY\SYSTEM account needs to be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.
-
-## Service SID for SQL Server Cluster Instances and AG
 
 To configure HealthService Service SID for monitoring of SQL Server failover cluster, perform the following steps for each cluster node:
 

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 02424d39-72a5-4b7f-93ad-637f3e6e7da1
-title: Views and Dashboards in Management Pack for Azure SQL Managed Instance
+title: Views and dashboards in Management Pack for Azure SQL Managed Instance
 description: This article explains how to view database and server views in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -14,8 +14,6 @@ ms.technology: operations-manager
 # Views and Dashboards in Management Pack for Azure SQL Managed Instance
 
 Management Pack for Azure SQL Managed Instance introduces a common folder structure described in [Views and Dashboards in Management Pack for SQL Server](sql-server-management-pack-views-and-dashboards.md).
-
-## Azure SQL Managed Instance Views and Dashboards
 
 The following figure shows an example of views that are available in Management Pack for Azure SQL Managed Instance.
 

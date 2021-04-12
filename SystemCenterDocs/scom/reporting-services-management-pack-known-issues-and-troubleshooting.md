@@ -1,6 +1,6 @@
 ---
 ms.assetid: 238bf100-2a47-4334-a4e6-a8c67d8aefdd
-title: Known Issues and Troubleshooting in Management Pack for SQL Server Reporting Services
+title: Known issues and troubleshooting in Management Pack for SQL Server Reporting Services
 description: This article explains Known Issues and Troubleshooting in Management Pack for SQL Server Reporting Services
 author: TDzakhov
 ms.author: v-tdzakhov

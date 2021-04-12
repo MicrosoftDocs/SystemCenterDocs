@@ -1,6 +1,6 @@
 ---
 ms.assetid: c253b065-5690-4230-88dd-0f794c1480f3
-title: Management Pack for Azure SQL Database Delivery
+title: Management Pack for Azure SQL Database delivery
 description: This article explains how to install Management Pack for Azure SQL Database
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -32,7 +32,7 @@ Make sure to install the **.NET Framework 4.5.2** or higher before importing Man
 
 ## Importing Management Pack
 
-Management Pack for Azure SQL Database provides monitoring of [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) using [Azure REST API](https://docs.microsoft.com/rest/api/azure/) and T-SQL queries.
+Management Pack for Azure SQL Database provides monitoring of [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) using [Azure REST API](https://docs.microsoft.com/rest/api/azure/) and T-SQL queries.
 
 For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).
 

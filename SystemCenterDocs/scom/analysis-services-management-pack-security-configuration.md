@@ -1,6 +1,6 @@
 ---
 ms.assetid: 30b25bc3-54f4-484c-bf94-b397f44185f9
-title: Security Configuration in Management Pack for SQL Server Analysis Services
+title: Security configuration in Management Pack for SQL Server Analysis Services
 description: This article explains the security configuration in Management Pack for SQL Server Analysis Services
 author: TDzakhov
 ms.author: v-tdzakhov

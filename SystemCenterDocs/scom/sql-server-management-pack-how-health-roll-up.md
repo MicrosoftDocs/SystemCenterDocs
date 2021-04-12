@@ -1,6 +1,6 @@
 ---
 ms.assetid: ec50ea24-d1e0-4230-a3fc-717bd6556cb5
-title: How Health Rolls Up in Management Pack for SQL Server
+title: How health rolls up in Management Pack for SQL Server
 description: This article explains how health rolls up
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -13,9 +13,11 @@ ms.technology: operations-manager
 
 # How Health Rolls Up
 
-The following diagrams show how the health states of objects roll up in Management Pack for SQL Server.
+This section explains diagrams that show how the health state of objects roll up in Management Pack for SQL Server.
 
 ## Legend
+
+The following figure explains how to read the diagram.
 
 ![Legend](./media/sql-server-management-pack/health-rolls-up-legend.png)
 

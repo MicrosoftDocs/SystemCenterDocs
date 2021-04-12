@@ -1,6 +1,6 @@
 ---
 ms.assetid: 1d7cbdf6-687f-4d47-8d7e-cc9e07072e58
-title: Management Pack for SQL Server Replication Delivery
+title: Management Pack for SQL Server Replication delivery
 description: This article explains how to install Management Pack for SQL Server Replication
 author: TDzakhov
 ms.author: v-tdzakhov

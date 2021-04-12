@@ -338,7 +338,7 @@
 ### [Introduction to Management Pack for SQL Server Dashboards](sql-server-dashboards-management-pack-introduction.md)
 ### [Datacenter View](sql-server-dashboards-management-pack-datacenter-view.md)
 ### [Instance View](sql-server-dashboards-management-pack-instance-view.md)
-### [Configuring Datacenter Dashboard](sql-server-dashboards-management-pack-creating-configuring-datacenter-dashboards.md)
+### [Configuring Datacenter Dashboard](sql-server-dashboards-management-pack-create-configure-datacenter-dashboards.md)
 ### [Adjusting Datacenter Dashboard](sql-server-dashboards-management-pack-adjusting-datacenter-dashboard.md)
 ### [Adjusting Instance Dashboard](sql-server-dashboards-management-pack-adjusting-instance-dashboard.md)
 ### [Managing Tiles](sql-server-dashboards-management-pack-managing-tiles.md)

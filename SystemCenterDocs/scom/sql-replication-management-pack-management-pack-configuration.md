@@ -1,6 +1,6 @@
 ---
 ms.assetid: 613e32b0-3f29-45f2-b7ca-897789564f5c
-title: Configuration in Management Pack for SQL Server Replication
+title: Management Pack for SQL Server Replication configuration
 description: This article explains management pack configuration
 author: TDzakhov
 ms.author: v-tdzakhov
@@ -24,8 +24,6 @@ Creating a custom management pack for storing overrides has the following advant
 - You do not have to remove dependencies when removing the management pack with overrides.
 
 - If customizations for all management packs are saved to the default management pack and you want to remove a single pack, you must first remove the default management pack, which also removes customizations for other management packs.
-
-## Creating New Management Pack for Customizations
 
 To create a new management pack, perform the following steps:
 
