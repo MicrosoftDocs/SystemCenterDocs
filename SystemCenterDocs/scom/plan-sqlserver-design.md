@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 10/12/2020
+ms.date: 04/09/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -180,6 +180,27 @@ Factors that influence the load on the Operations Manager database include:
 
 The Operations Manager database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.
 
+### Enable SQL Broker on Operations Manager database
+
+System Center Operations Manager depends on SQL Server Service Broker to implement all task operations. If SQL Server Service Broker is disabled, all task operations will be affected. The resulting behavior may vary according to the task that is initiated. Therefore, it is important to check the state of SQL Server Service Broker whenever unexpected behavior is observed around a task in System Center Operations Manager.
+
+To enable SQL Server Service Broker, follow these steps:
+
+1. Run the following SQL query:
+
+   ```SQL
+   SELECT is_broker_enabled FROM sys.databases WHERE name='OperationsManager'
+   ```
+
+2. Skip this step if the value that is displayed in the `is_broker_enabled` field is **1** (one). Otherwise, run the following SQL queries:
+
+   ```SQL
+   ALTER DATABASE OperationsManager SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+   ALTER DATABASE OperationsManager SET ENABLE_BROKER
+   ALTER DATABASE OperationsManager SET MULTI_USER
+   ```
+
+
 ### Operations Manager data warehouse database
 
 System Center – Operations Manager inserts data into the Reporting data warehouse in near-real time, it is important to have sufficient capacity on this server that supports writing all of the data that is being collected to the Reporting data warehouse.  As with the Operations Manager database, the most critical resource on the Reporting data warehouse is the storage I/O subsystem.  On most systems, loads on the Reporting data warehouse are similar to the Operations Manager database, but they can vary.  In addition, the workload put on the Reporting data warehouse by reporting is different than the load put on the Operations Manager database by Operations console usage.
@@ -196,6 +217,8 @@ Based on these factors, there are several recommended practices to consider when
 - Consider placing the Reporting data warehouse on a separate server from the Operations Manager database.  Although smaller-scale deployments can often consolidate the Operations Manager database and Reporting data warehouse on the same server, it is advantageous to separate them as you scale up the number of agents and the volume of incoming operational data.  When the Reporting data warehouse and Reporting Server are on a separate server from the Operations Manager database, you experience better reporting performance.
 
 The Operations Manager data warehouse database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.  
+
+
 
 ::: moniker range="<=sc-om-1807"
 
