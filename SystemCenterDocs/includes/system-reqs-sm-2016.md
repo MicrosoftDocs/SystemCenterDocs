@@ -5,7 +5,7 @@ description: include file to describe the system requirements for Service Manage
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 04/17/2021
+ms.date: 04/18/2021
 ms.technology: service-manager
 ms.topic: include
 ms.assetid: ff4c7819-632e-486f-a329-041b7fa6a478
@@ -31,7 +31,7 @@ To help simplify upgrades, you can use the following Service Manager 2016 connec
 - System Center Configuration Manager (SCCM) CB releases - 1511, 1602, 1606 and 1710.
     - UR5 supports 1802
     - UR9 and UR10 supports from 1806 to 2103. However, there is a limitation that the size of the devices supported by SCCM should be less than 2 PB.
-    - UR10 supports 2006, 2010 and 2103 releases.
+  
 
 ## Hardware
 

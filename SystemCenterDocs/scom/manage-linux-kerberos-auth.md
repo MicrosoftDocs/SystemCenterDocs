@@ -5,7 +5,7 @@ description: This article describes how to enable Kerberos Authentication with U
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/16/2021
+ms.date: 04/05/2020
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-1801'
@@ -24,9 +24,6 @@ ms.topic: article
 System Center Operations Manager version 1801 and later communicates with UNIX and Linux computers using the Secure Shell (SSH) protocol and Web Services for Management (WS-Management). Agent actions such as agent install, uninstall, and update occur over SSH and require a privileged account. Agent discovery and Monitoring utilize WS-Management and only require a low privileged account.
 
 Operations Manager can now support Kerberos authentication wherever the WS-Management protocol is used by the Management Server to communicate with UNIX and Linux computers. Adding Kerberos support for UNIX and Linux computers provides greater security by allowing the Management Server to no longer need to enable basic authentication for Windows Remote Management (WinRM).
-
->[!NOTE]
-> Do not disable basic authentication for WinRM, if you are not using Windows Kerberos authentication. 
 
 ## Operations Manager Unix and Linux Kerberos Support by Activity
 

@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 04/15/2021
+ms.date: 04/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -33,7 +33,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 - System Center 2016 Configuration Manager (only during migration scenario).
 - System Center Configuration Manager CB releases
    - 1511, 1602, 1606, 1710, and 1802 (supported with Service Manager 2019 RTM)
-   - 1806 to 2013 (supported with Service Manager 2019 UR2 and later)
+   - 1806 to 2103 (supported with Service Manager 2019 UR2 and later)
 
 ## Hardware
 
