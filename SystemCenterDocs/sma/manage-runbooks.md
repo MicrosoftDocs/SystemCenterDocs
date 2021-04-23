@@ -89,7 +89,7 @@ $scheduleName = 'My Daily Schedule'
 $startTime = (Get-Date).Date.AddHours(12)
 $expiryTime = $startTime.AddYears(1)
 
-Set-SmaSchedule "WebServiceEndpoint $webServer "Port $port "Name $scheduleName "ScheduleType OneTimeSchedule "StartTime $startTime "ExpiryTime $expiryTime "DayInterval 1
+Set-SmaSchedule -WebServiceEndpoint $webServer -Port $port -Name $scheduleName -ScheduleType OneTimeSchedule -StartTime $startTime -ExpiryTime $expiryTime -DayInterval 1
 ```
 
 ## Link a schedule to a runbook
@@ -114,7 +114,7 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scheduleName = "Sample-DailySchedule"
 
-Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "ScheduleName $scheduleName "Parameters $params
+Start-SmaRunbook -WebServiceEndpoint $webServer -Port $port -Name $runbookName -ScheduleName $scheduleName -Parameters $params
 
 ```
 
@@ -208,10 +208,10 @@ $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Test-Runbook"
 
-$job = (Get-SmaJob "WebServiceEndpoint $webServer "Port $port "RunbookName $runbookName | sort LastModifiedDate "desc)[0]
+$job = (Get-SmaJob -WebServiceEndpoint $webServer -Port $port -RunbookName $runbookName | sort LastModifiedDate "desc)[0]
 $job.Status
 $job.JobParameters
-Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream Output
+Get-SmaJobOutput -WebServiceEndpoint $webServer -Port $port -Id $job.Id -Stream Output
 ```
 
 ## Configure runbook settings
@@ -252,7 +252,7 @@ $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Sample-TestRunbook"
 
-Set-SmaRunbookConfiguration "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Description "Sample runbook" "LogVerbose $true
+Set-SmaRunbookConfiguration -WebServiceEndpoint $webServer -Port $port -Name $runbookName -Description "Sample runbook" "LogVerbose $true
 
 ```
 ## Encrypt Runbook worker and SQL server connection
