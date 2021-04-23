@@ -164,7 +164,7 @@ $cred = New-Object -TypeName System.Management.Automation.PSCredential -Argument
 InlineScript
 {
   <Commands>
-} "PSComputer $con.ComputerName "PSCredential $cred
+} -PSComputer $con.ComputerName -PSCredential $cred
 ```
 
 While **InlineScript** activities may be critical in certain runbooks, they should only be used when necessary for the following reasons:
