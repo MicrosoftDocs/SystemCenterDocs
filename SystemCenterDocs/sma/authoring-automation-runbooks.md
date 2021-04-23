@@ -178,7 +178,7 @@ $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
 Edit-SmaRunbook -WebServiceEndpoint $webServer -Port $port -Name $runbookName -Path $scriptPath -Overwrite
-Publish-SmaRunbook -WebServiceEndpoint $webServer -Port $port "Name $runbookName "Path $scriptPath
+Publish-SmaRunbook -WebServiceEndpoint $webServer -Port $port "Name $runbookName -Path $scriptPath
 ```
 
 ## Edit an Automation runbook with PowerShell ISE
