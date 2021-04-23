@@ -170,16 +170,16 @@ The following example starts a sample runbook and then waits for it to complete.
 $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Test-Runbook"
-$job = Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
+$job = Start-SmaRunbook -WebServiceEndpoint $webServer -Port $port -Name $runbookName
 
 $doLoop = $true
 While ($doLoop) {
-   $job = Get-SmaJob "WebServiceEndpoint $webServer "Port $port -Id $job.Id
+   $job = Get-SmaJob -WebServiceEndpoint $webServer -Port $port -Id $job.Id
    $status = $job.Status
    $doLoop = (($status -ne "Completed") -and ($status -ne "Failed") -and ($status -ne "Suspended") -and ($status -ne "Stopped")
 }
 
-Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream Output
+Get-SmaJobOutput -WebServiceEndpoint $webServer -Port $port -Id $job.Id -Stream Output
 ```
 
 ## Next steps

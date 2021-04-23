@@ -5,7 +5,7 @@ description: This article describes how to configure sudo and SSH keys for an un
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 04/23/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -21,6 +21,9 @@ ms.topic: article
 ::: moniker-end
 
 With System Center - Operations Manager, you can provide credentials for an unprivileged account to be elevated on a UNIX or Linux computer by using the sudo program, which allows users to run programs that have the security privileges of another user account. You can also use Secure Shell (SSH) keys instead of a password for secure communication between Operations Manager and the targeted computer.  
+
+>[!NOTE]
+> Operations Manager supports SSH Key-based authentication with key file data in the PuTTY Private Key (PPK) format. Currently supports SSH v.1 RSA keys and SSH v.2 RSA and DSA keys.
 
 This topic provides examples for creating an account for a low-privileged user, implementing sudo, and creating an SSH key on a computer that is running Red Hat Enterprise Linux Server 6. These are examples only, and might not reflect your environment. The following examples provide a user with access to a full set of privileges.  
 

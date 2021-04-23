@@ -66,16 +66,16 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $params = @{"VMName"="MyVM";"RepeatCount"=2;"Restart"=$true}
 
-$job = Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Parameters $params
+$job = Start-SmaRunbook -WebServiceEndpoint $webServer -Port $port -Name $runbookName -Parameters $params
 
 $doLoop = $true
 While ($doLoop) {
-   $job = Get-SmaJob "WebServiceEndpoint $webServer "Port $port -Id $job.Id
+   $job = Get-SmaJob -WebServiceEndpoint $webServer -Port $port -Id $job.Id
    $status = $job.Status
    $doLoop = (($status -ne "Completed") -and ($status -ne "Failed") -and ($status -ne "Suspended") -and ($status -ne "Stopped")
 }
 
-Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream Output
+Get-SmaJobOutput -WebServiceEndpoint $webServer -Port $port -Id $job.Id -Stream Output
 ```
 
 ## Compare methods for calling a child runbook
