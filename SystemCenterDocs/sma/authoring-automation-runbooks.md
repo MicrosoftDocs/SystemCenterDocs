@@ -71,8 +71,8 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
-Import-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Path $scriptPath
-Publish-SMARunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
+Import-SmaRunbook -WebServiceEndpoint $webServer -Port $port -Path $scriptPath
+Publish-SMARunbook -WebServiceEndpoint $webServer -Port $port -Name $runbookName
 
 ```
 ## Edit a runbook
@@ -162,7 +162,7 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
-$runbookDefinition = Get-SMARunbookDefinition "WebServiceEndpoint $webServer "Port $port -Name $runbookName -Type Draft
+$runbookDefinition = Get-SMARunbookDefinition -WebServiceEndpoint $webServer -Port $port -Name $runbookName -Type Draft
 $runbookContent = $runbookDefinition.Content
 
 Out-File -InputObject $runbookContent -FilePath $scriptPath
@@ -177,8 +177,8 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
-Edit-SmaRunbook "WebServiceEndpoint $webServer "Port $port -Name $runbookName -Path $scriptPath -Overwrite
-Publish-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Path $scriptPath
+Edit-SmaRunbook -WebServiceEndpoint $webServer -Port $port -Name $runbookName -Path $scriptPath -Overwrite
+Publish-SmaRunbook -WebServiceEndpoint $webServer -Port $port "Name $runbookName -Path $scriptPath
 ```
 
 ## Edit an Automation runbook with PowerShell ISE
@@ -231,7 +231,7 @@ $port = 9090
 $runbookPath = 'c:\runbooks\Sample-TestRunbook.ps1'
 $runbookName = 'Test-Runbook'
 
-Publish-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
+Publish-SmaRunbook -WebServiceEndpoint $webServer -Port $port -Name $runbookName
 ```
 
 ### Publish a runbook using PowerShell ISE
