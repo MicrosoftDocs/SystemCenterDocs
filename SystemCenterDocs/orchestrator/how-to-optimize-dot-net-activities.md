@@ -30,7 +30,7 @@ In order to remove the delay you can either deactivate **generatePublisherEviden
 
     ```
     <runtime>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<generatePublisherEvidence enabled="false"/>
+    <generatePublisherEvidence enabled="false"/>
     </runtime>
     ```
 
