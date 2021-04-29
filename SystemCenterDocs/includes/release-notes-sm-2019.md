@@ -7,7 +7,7 @@ ms.author: v-jysur
 ms.prod:  system-center
 ms.technology: service-manager
 keywords:
-ms.date: 08/04/2020
+ms.date: 04/29/2021
 title: include file
 ms.assetid: df2f12b4-ccbe-459e-815c-c70ad97fd0e1
 ---
@@ -156,3 +156,13 @@ To resolve this issue, follow the steps:
 1.	Repeat steps 1–2 for columns that are named **LastModified**.
 2.	Re-import the modified management pack.
 3.	Restart the console.
+
+
+### Data Warehouse Setup might  fail, if SSRS is installed locally on the Data Warehouse Management server
+
+**Description**: If SSRS 2017 or later is installed locally on the Data Warehouse Management server, Data Warehouse setup might fail at *Install services* phase, with the following  error:
+*An error occurred while executing a custom action:_CreateSrsFolder_SC*.
+
+This issue is observed in Service Manager 2019 with Windows 2019.
+
+**Workaround**: After initiating the Data Warehouse setup, check if the SSRS service stops during the setup. If it stops, start the SSRS service prior to *Install services* phase.
