@@ -25,7 +25,7 @@ You can monitor a single System Center Data Protection Manager (DPM) server from
 ## Monitor with the DPM console
 To monitor DPM in the console, you should be logged on to the DPM server with a local admin account. Here's what you can monitor:
 
--   On the **Alerts** tab, you can monitor errors, warnings, and general information for a protection group, for a specific protected computer, or by message severity.  You can view active and inactive alerts and set up email notifications
+-   On the **Alerts** tab, you can monitor errors, warnings, and general information for a protection group, for a specific protected computer, or by message severity.  You can view active and inactive alerts and set up email notifications.
 
 -   On the **Jobs** tab, you can view jobs initiated by DPM for a specific protected computer or protection group. You can  follow job progress or check resources consumed by jobs.
 
