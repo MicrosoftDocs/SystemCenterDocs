@@ -23,6 +23,9 @@ This scenario provides health monitoring of SSAS instances:
 
     This monitor alerts when the Windows service for SSAS instance is not in the running state for a period longer than the specified threshold.
 
+    >[!NOTE]
+    > This monitor does not work on a clustered SSAS node.
+
 - **Memory Configuration Conflict with SQL Server**
 
     This monitor alerts if there is a SQL Server relational database engine process running on the server and the **TotalMemoryLimit** configuration for a SSAS instance is higher than the specified threshold.

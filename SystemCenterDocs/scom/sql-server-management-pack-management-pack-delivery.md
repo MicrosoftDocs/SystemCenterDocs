@@ -62,6 +62,9 @@ The environment that you use must meet the following prerequisites before you st
 
   This management pack requires an author set of privileges to create a management pack for storing overrides. If the default action account does not have these privileges, create a new account and map this account to the Microsoft SQL Server Run As Profile.
 
+>[!NOTE]
+>Management Pack for SQL Server does not support object names with non-printable characters.
+
 ## Importing Management Pack
 
 If you already have any of the version-specific management packs, discovery and monitoring provided by this management pack will be disabled and will be performed solely by the existing version-specific management packs.

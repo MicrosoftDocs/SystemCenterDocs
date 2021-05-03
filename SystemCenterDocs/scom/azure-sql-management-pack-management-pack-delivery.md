@@ -30,6 +30,9 @@ After you download and unpack the **Microsoft.SqlServer.Azure.ManagementPack.msi
 
 Make sure to install the **.NET Framework 4.5.2** or higher before importing Management Pack for Azure SQL Database.
 
+>[!NOTE]
+>Management Pack for Azure SQL Database does not support object names with non-printable characters.
+
 ## Importing Management Pack
 
 Management Pack for Azure SQL Database provides monitoring of [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) using [Azure REST API](https://docs.microsoft.com/rest/api/azure/) and T-SQL queries.

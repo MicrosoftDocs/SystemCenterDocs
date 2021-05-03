@@ -32,6 +32,9 @@ The environment that you use must meet the following prerequisites before you st
 - Provide access to managed instances from management servers.
 
     Managed instances are usually deployed to an isolated private network. This means that there should be a permanent VPN connection configured on servers from which the managed instances should be accessed. 
+
+>[!NOTE]
+>Management Pack for Azure SQL Managed Instance does not support object names with non-printable characters.
     
 ## Importing Management Pack
 

@@ -51,6 +51,9 @@ The environment that you use must meet the following prerequisites before you st
 
 - Enable the **Agent Proxy** option on each agent to allow agents to forward data to management servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md).
 
+>[!NOTE]
+>Management Pack for SQL Server Replication does not support object names with non-printable characters.
+
 ## Importing Management Pack
 
 For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).

@@ -58,6 +58,9 @@ The environment that you use must meet the following prerequisites before you st
 
 - Associate Microsoft SQL Server Run As profiles with the account that has administrative privileges for both the Windows Server and the SQL Server Analysis Services instance.
 
+>[!NOTE]
+>Management Pack for SQL Server Analysis Services does not support object names with non-printable characters.
+
 ## Importing Management Pack
 
 For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).
