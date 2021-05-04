@@ -5,7 +5,7 @@ description: This article describes how to enable Kerberos Authentication with U
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/23/2021
+ms.date: 05/04/2021
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-1801'
@@ -60,14 +60,21 @@ The following subset of those operating systems now support WS-Management commun
 
 - Enabling Kerberos authentication assumes all UNIX and Linux agents communicating with the management server support Kerberos. Mixed mode authentication where some agents use basic authentication and others leverage Kerberos is not supported.
 
-## Steps to enable Kerberos Authentication on a management server
+## Enable or disable Kerberos Authentication on a management or a gateway server
+
+Use the following procedure to enable/disable Kerberos authentication on a management server or a gateway server.
+
 1. Open the Operations console with an account that is a member of the Operations Manager Administrators role.
 
-2. Select **Monitoring** > **Data Warehouse** > **Collection Servers** > **Management Server         Name**.
+2. Select *Management Server State* or *Gateway Server State*, as below:
+    - For Management Servers, select **Monitoring** > **Operations Manager** > **Management Server**  > **Management Server State** > **Management Server State**.
+    - For Gateway Management Servers, Select **Monitoring** > **Operations Manager** > **Management Server**  > **Management Server State** > **Gateway Management Server State**.
 
-3. In the right-hand task pane, select **Enable Linux Authentication Type**
+     ![Enable or disable Kerberos authentication ](./media/manage-linux-kerberos-auth/manage-kerberos-authentication.png)
 
-   This task will enable/disable Kerberos authentication for Linux monitoring on the management server.
+3. In the right-hand task pane, select **Enable Linux Authentication Type**.
+
+   This task will enable/disable Kerberos authentication for Linux monitoring on the management server or gateway server.
 
 4. Click **Run**.
 
