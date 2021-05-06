@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 05/20/2019
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -22,7 +22,23 @@ ms.technology: virtual-machine-manager
 
 This article describes how to convert VMware VMs in the System Center - Virtual Machine Manager (VMM) fabric, to Hyper-V.
 
+::: moniker range="sc-vmm-2019"
 
+You can convert the VMs using the *Convert Virtual Machine* wizard.
+
+VMM 2019 UR3 supports conversion of VMWare VMs to Hyper-V and azure Stack HCI 20H2. [Learn more about support to Azure Stack HCI 20H2](deploy-manage-azure-stack-hci.md).
+
+**Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
+  - See [system requirements](system-requirements.md) for supported versions of vSphere (ESXi).
+  - You can't convert VMware workstations
+  - You can't convert VMs with virtual hard disks connected to an IDE bus
+  - Online conversions aren't supported. You need to power off the VMware VMs.
+  - Anti-virus apps must be supported.
+  - VMware tools must be uninstalled from the guest operating system of the VM.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2016"
 There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 - **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
@@ -33,8 +49,6 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
     - Anti-virus apps must be supported.
     - VMware tools must be uninstalled from the guest operating system of the VM.
 - [Microsoft Virtual Machine Converter](https://techcommunity.microsoft.com/t5/system-center-blog/microsoft-virtual-machine-converter-3-0-is-now-available-for/ba-p/349874): This standalone tool converts VMware VMs to Hyper-V hosts or Azure VMs. It also converts physical machines and disks to Hyper-V hosts. IMPORTANT: This tool is in the process of retirement. It won't be available after June 3, 2017. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/).
-
-::: moniker range="sc-vmm-2016"
 
 >[!NOTE]
 >Azure Site Recovery currently doesn't have the ability for a direct VMware to Hyper-V conversion. [Read more](https://feedback.azure.com/forums/256299-site-recovery/suggestions/10050060-asr-to-support-vmware-to-hyper-v-protection-migrat) about up-voting this solution.
@@ -47,7 +61,7 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 2. In **Convert Virtual Machine Wizard** > **Select Source** click **Browse** and inS**Select Virtual Machine Source** select the VMware VMs you want to convert.
 3. In **Specify Virtual Machine Identity** modify the machine name and description as required.
 4. In **Virtual Machine Configuration** specify the number of processor and memory settings.
-5. In **Select Host** select a Hyper-V host for placement. In **Select Path** configure the storage location on the host for the VM files. The default VM paths are listed.
+5. In **Select Host** select a Hyper-V host/azure Stack HCI (applicable from VMM 2019 UR3 and later) for placement. In **Select Path** configure the storage location on the host for the VM files. The default VM paths are listed.
 6. In **Select Networks** select the logical network, virtual network, and the VLAN as applicable. The list matches whatever is configured on the physical adapters of the host.
 7. In **Add Properties** configure settings. In **Summary** review the settings and select **Start the virtual machine after deploying it** if required. Then click **Create** to start the conversion. Verify the VM was converted in **VMs and Services** > **Home** > **Show** > **VMs**.
 
