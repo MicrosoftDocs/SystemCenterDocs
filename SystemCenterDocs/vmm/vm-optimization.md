@@ -5,7 +5,7 @@ description: This article describes how to configure dynamic optimization and po
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 03/14/2019
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -87,6 +87,11 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 over WS-Man
 3. In the host group properties, click **Dynamic Optimization**.
 4. In  **Specify dynamic optimization settings**, clear the **Use Dynamic Optimization settings from the parent host group** check box.
 5. In **Aggressiveness**, select **High**, **Medium**, or **Low**.
+
+   >[!NOTE]
+   > In VMM 2019 and later, VM aggressiveness values are replaced from low/medium/high scale to integer scale 1 to 5.
+   >
+   > 1 is the lowest degree of aggressiveness. 5 is the highest.  	
 
    VM aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
 
