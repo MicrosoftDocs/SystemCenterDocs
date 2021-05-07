@@ -126,7 +126,7 @@ Here is a sample view:
   >[!NOTE]
   > The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
 
-- To view more details of the backup item such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
+- Click the 'backup item' to view more details such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
 
   ![Backup item details](./media/monitor-dpm/back-up-items-details.png)
 
