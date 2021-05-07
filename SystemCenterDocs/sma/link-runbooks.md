@@ -40,14 +40,14 @@ When you call a PowerShell Workflow child runbook using inline execution, you ju
 The following example invokes a test child runbook that accepts three parameters, a complex object, an integer, and a boolean. The output of the child runbook is assigned to a variable.  In this case, the child runbook is a PowerShell Workflow runbook
 
 ```powershell
-$vm = Get-VM "Name "MyVM" "ComputerName "MyServer"
-$output = Test-ChildRunbook "VM $vm "RepeatCount 2 "Restart $true
+$vm = Get-VM -Name "MyVM" -ComputerName "MyServer"
+$output = Test-ChildRunbook -VM $vm -RepeatCount 2 -Restart $true
 ```
 
 Following is the same example using a PowerShell script runbook as the child.
 ```powershell
-$vm = Get-VM "Name "MyVM" "ComputerName "MyServer"
-$output = .\Test-ChildRunbook.ps1 "VM $vm "RepeatCount 2 "Restart $true
+$vm = Get-VM -Name "MyVM" -ComputerName "MyServer"
+$output = .\Test-ChildRunbook.ps1 -VM $vm -RepeatCount 2 -Restart $true
 ```
 
 ## Start a child runbook using cmdlets
