@@ -124,7 +124,7 @@ You can monitor the backed-up items using Recovery Services vault. From the Reco
 
 - To view more details of the backup item such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
 
-  ![Backup items list](./media/monitor-dpm/back-up-items-details.png)
+  ![Backup item details](./media/monitor-dpm/back-up-items-details.png)
 
 > [!NOTE]
 > - The *Backup items* view continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
