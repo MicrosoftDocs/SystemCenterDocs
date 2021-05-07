@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 02/11/2021
+ms.date: 05/07/2021
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -118,6 +118,17 @@ You can monitor the backed-up items using Recovery Services vault. From the Reco
 Here is a sample view:
 
 ![Recovery vault backup items](./media/monitor-dpm/back-up-items-view.png)
+
+- To view the list of backup items, select *DPM* or *Azure Backup Server* under **Backup Management Type**.   
+
+  ![Backup items list](./media/monitor-dpm/back-up-items-list.png)
+
+  >[!NOTE]
+  > The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
+
+- Click the *backup item* to view more details such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
+
+  ![Backup item details](./media/monitor-dpm/back-up-items-details.png)
 
 > [!NOTE]
 > - The *Backup items* view continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
