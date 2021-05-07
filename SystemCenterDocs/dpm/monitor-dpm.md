@@ -115,12 +115,16 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
 You can monitor the backed-up items using Recovery Services vault. From the Recovery Services vault, navigate to **Backup items** to view the number of items backed-up for each workload type, associated with the vault. Click the workload item to view the detailed list of all items backed-up for the selected workload.
 
->[!NOTE]
-> The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
+Here is a sample view:
+
+![Recovery vault backup items](./media/monitor-dpm/back-up-items-view.png)
 
 - To view the list of backup items, select *DPM* or *Azure Backup Server* under **Backup Management Type**.   
 
   ![Backup items list](./media/monitor-dpm/back-up-items-list.png)
+
+  >[!NOTE]
+  > The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
 
 - To view more details of the backup item such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
 
