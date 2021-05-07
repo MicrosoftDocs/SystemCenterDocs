@@ -72,7 +72,7 @@ The following sample commands retrieve all modules installed in Automation.
 ```powershell
 $webServer = 'https://MyWebServer'
 $port = 9090
-Get-SmaModule "WebServiceEndpoint $webServer "Port $port
+Get-SmaModule -WebServiceEndpoint $webServer -Port $port
 ```
 
 ## Import a module
