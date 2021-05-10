@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/10/2021
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -23,7 +23,7 @@ ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
 
 ::: moniker-end
 
-The following analytical reports - which are presented as Microsoft Online Analytical Processing \(OLAP\) data cubes - are available in Service Manager. The data cubes that are included in Service Manager contain measures and dimensions.  
+The following analytical reports - which are presented as [Microsoft Online Analytical Processing \(OLAP\) data cubes](olap-cubes-overview.md) - are available in Service Manager. The data cubes that are included in Service Manager contain measures and dimensions.  
 
 ## Dimensions  
  The following dimensions are contained in various data cubes. However - not all data cubes contain each dimension.  
