@@ -5,7 +5,7 @@ description: This topic describes how to deploy the Operations Manager agent on 
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/13/2018
+ms.date: 05/10/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -137,6 +137,8 @@ Use the following procedure to discover computers running Windows and deploy the
 ## Next steps
 
 - If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](~/scom/manage-deploy-windows-agent-manually.md).
+
+- To deploy the agent with APM disabled using PowerShell, see [Deploy the agent with APM disabled using PowerShell](manage-deploy-windows-agent-manually.md#deploy-the-agent-with-apm-disabled-using-powershell)
 
 - To learn how to upgrade the agent on Windows computers from a previous version, see [How to upgrade an agent to System Center Operations Manager](deploy-upgrade-agents.md).    
 
