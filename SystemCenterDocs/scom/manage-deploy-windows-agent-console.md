@@ -138,7 +138,7 @@ Use the following procedure to discover computers running Windows and deploy the
 
 - If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](~/scom/manage-deploy-windows-agent-manually.md).
 
-- To deploy the agent with APM disabled using PowerShell, see [Deploy the agent with APM disabled using PowerShell](manage-deploy-windows-agent-manually.md#deploy-the-agent-with-apm-disabled-using-powershell)
+- To deploy the agent with APM disabled using PowerShell, see [Deploy the agent with APM disabled using PowerShell](manage-deploy-windows-agent-manually.md#deploy-the-agent-with-apm-disabled-using-powershell).
 
 - To learn how to upgrade the agent on Windows computers from a previous version, see [How to upgrade an agent to System Center Operations Manager](deploy-upgrade-agents.md).    
 
