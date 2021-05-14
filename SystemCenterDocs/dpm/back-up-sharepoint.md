@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 05/12/2021
+ms.date: 05/14/2021
 title: Back up SharePoint with DPM
 ms.technology: data-protection-manager
 ms.assetid: 3769bebe-3e5a-4b51-9c01-d07e94fc8c43
@@ -101,7 +101,7 @@ To back up SharePoint farm you configure protection for SharePoint by using Conf
 
 5.  In **Select data protection method**  specify how you want to handle short and long\-term backup. Short\-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup \(for short or long\-term\). As an alternative to long\-term backup to the cloud you can also configure long\-term back up to a standalone tape device or tape library connected to the DPM server.
 
-6.  In **Select short-term goals** > **Retention range**, specify how long you want to keep the data on the disk. Under **Application recovery points**, select the express full backup schedule. DPM will run an express full backup just before each recovery point is scheduled. For SharePoint databases that are in full recovery mode, the logs will automatically be truncated after each successful express full backup.
+6.  In **Select short-term goals** > **Retention range**, specify how long you want to keep the data on the disk. Under **Application recovery points**, select the Express Full Backup schedule. DPM will run an Express Full Backup just before each recovery point is scheduled. For SharePoint databases that are in full recovery mode, the logs will automatically be truncated after each successful Express Full Backup.
 
 7.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
