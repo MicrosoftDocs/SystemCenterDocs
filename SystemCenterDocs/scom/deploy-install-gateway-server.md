@@ -187,7 +187,8 @@ Use the Set-SCOMParentManagementServer command in the Operations Manager shell, 
 It is sometimes necessary to chain multiple gateways together in order to monitor across multiple untrusted boundaries. This topic describes how to chain multiple gateways together.
 
 > [!NOTE]
-> You should install one gateway at a time and verify that each newly installed gateway is configured correctly before adding another gateway in the chain.
+> - You should install one gateway at a time and verify that each newly installed gateway is configured correctly before adding another gateway in the chain.
+> - When you add the gateways end of chain to the same resource pool, do not configure failover to the other chain by using the **Set-SCOMParentManagementServer** command. In such scenario, the pool does not work as expected. For failover configuration and the resource pool to function together, the gateway end of the chain should have the same parent.
 
 1. On the management server that was targeted during the gateway server installation, run the Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool to initiate communication between the management server and the gateway.
 2. Open a command prompt, and navigate to the Operations Manager installation directory or, and then run the following: ```Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create```
