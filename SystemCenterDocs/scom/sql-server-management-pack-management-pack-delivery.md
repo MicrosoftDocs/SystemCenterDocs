@@ -80,8 +80,3 @@ To make the version-agnostic management pack the primary source of monitoring, r
 When you import version-specific management packs after importing the version-agnostic management pack, monitoring provided by the version-agnostic management pack will not be disabled.
 
 For more information on how to import management packs, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).
-
-## See also
-
-- [Management Pack Templates](management-pack-templates.md)
-- [Monitors and Rules](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29)

@@ -105,7 +105,7 @@ After importing the management pack, the following default Run As profiles are c
         - Total Memory on the Server (GB)
         - Used Space on Drive (GB)
 
-## SQL Server and SQL Server Reporting Services Run As Profiles
+## SQL Server and SQL Server Analysis Services Run As Profiles
 
 To use separate accounts for monitoring of DB Engine, SSRS, and SSAS, create 3 different Windows accounts, and configure each account in each Run As profile according to the following table.
 
