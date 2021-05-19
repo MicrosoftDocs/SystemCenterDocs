@@ -70,7 +70,7 @@ The environment that you use must meet the following prerequisites before you st
     You can use the Local System account or HealthService SSID as an action account.
 
 >[!NOTE]
->Management Pack for SQL Server Reporting Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD]| [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
+>Management Pack for SQL Server Reporting Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 

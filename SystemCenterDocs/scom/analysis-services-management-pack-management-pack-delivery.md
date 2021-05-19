@@ -59,7 +59,7 @@ The environment that you use must meet the following prerequisites before you st
 - Associate Microsoft SQL Server Run As profiles with the account that has administrative privileges for both the Windows Server and the SQL Server Analysis Services instance.
 
 >[!NOTE]
->Management Pack for SQL Server Analysis Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD]| [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
+>Management Pack for SQL Server Analysis Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 
