@@ -63,6 +63,9 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 
 - Express and Enterprise editions of SQL Server
 
+>[!NOTE]
+>Since Management Pack for SQL Server is unhosted, fully qualified domain names (FQDNs) are no longer displayed in System Center Operations Manager object names and alert properties.
+
 ## System Center Operations Manager
 
 Management Pack for SQL Server supports the following versions of System Center Operations Manager:

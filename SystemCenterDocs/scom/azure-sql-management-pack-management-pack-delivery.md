@@ -31,7 +31,7 @@ After you download and unpack the **Microsoft.SqlServer.Azure.ManagementPack.msi
 Make sure to install the **.NET Framework 4.5.2** or higher before importing Management Pack for Azure SQL Database.
 
 >[!NOTE]
->Management Pack for Azure SQL Database does not support object names with non-printable characters.
+>Management Pack for Azure SQL Database does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD]| [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 
