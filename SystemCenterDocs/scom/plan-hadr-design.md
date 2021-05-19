@@ -5,7 +5,7 @@ description: This article provides high availability and disaster recovery desig
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 05/18/2021
+ms.date: 05/19/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -64,7 +64,7 @@ In this example, you would be required to deploy one or more Windows Servers wit
 
 ```powershell
 
-Setup.exe /silent /AcceptEndUserLicenseAgreement /recover /InstallPath:"D:\Program Files\Microsoft System Center 2016\Operations Manager" /ManagementGroupName:MGNAME /SqlServerInstance:SQLServerName.domain.com /DatabaseName:OperationsManager /DWSqlServerInstance:SQLServerName.domain.com /DWDatabaseName:OperationsManagerDW /ActionAccountUser:DOMAIN\omaa /ActionAccountPassword:password /DASAccountUser:DOMAIN\omdas /DASAccountPassword:password /DatareaderUser:DOMAIN\omdr /DatareaderPassword:password /DataWriterUser:DOMAIN\omdw /DataWriterPassword:password /EnableErrorReporting:Never /SendCEIPReports:0 /UseMicrosoftUpdate:0
+Setup.exe /silent /AcceptEndUserLicenseAgreement /recover /InstallPath:<Install Directory> /ManagementGroupName:MGNAME /SqlServerInstance:SQLServerName.domain.com /DatabaseName:OperationsManager /DWSqlServerInstance:SQLServerName.domain.com /DWDatabaseName:OperationsManagerDW /ActionAccountUser:DOMAIN\omaa /ActionAccountPassword:password /DASAccountUser:DOMAIN\omdas /DASAccountPassword:password /DatareaderUser:DOMAIN\omdr /DatareaderPassword:password /DataWriterUser:DOMAIN\omdw /DataWriterPassword:password /EnableErrorReporting:Always /SendCEIPReports:1 /UseMicrosoftUpdate:1
 
 ```
 
