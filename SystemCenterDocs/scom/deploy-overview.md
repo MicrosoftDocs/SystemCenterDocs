@@ -34,6 +34,8 @@ For information about connecting management groups, see [Connecting Management G
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
+-   [Release Notes for System Center 2019 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2019)
+
 -   [Release Notes for System Center 1807 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-1807)
 
 -   [Release Notes for System Center 1801 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-1801)
