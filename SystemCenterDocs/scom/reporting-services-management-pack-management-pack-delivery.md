@@ -5,7 +5,7 @@ description: This article explains how to install Management Pack for SQL Server
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -68,6 +68,9 @@ The environment that you use must meet the following prerequisites before you st
     Monitoring with a domain account is highly recommended. For more information, see [Least-Privilege Monitoring Configuration](reporting-services-management-pack-least-privilege-monitoring.md).
 
     You can use the Local System account or HealthService SSID as an action account.
+
+>[!NOTE]
+>Management Pack for SQL Server Reporting Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 

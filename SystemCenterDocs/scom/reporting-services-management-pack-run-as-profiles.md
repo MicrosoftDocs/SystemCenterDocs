@@ -5,7 +5,7 @@ description: This article explains Reporting Services Run As Profiles
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -71,6 +71,8 @@ If the default action account for the given system does not have necessary permi
 >[!NOTE]
 >It is not recommended to use the Local System account or HealthService SSID because its special case to monitor SSRS. Some workflows run on the server hosting an SSRS instance and try to reach the SSRS Database usually installed on another server. You will need to provide computer accounts of all servers hosting SSRS instances with the required permissions to access the SSRS Database. A domain account is a more preferable option.
 
+## Configuring Run As Profiles
+
 To configure Run As profiles, perfrom the following steps:
 
 1. Identify the names of the target computers where the default action account has insufficient rights to monitor SQL Server Reporting Services.
@@ -81,4 +83,16 @@ To configure Run As profiles, perfrom the following steps:
 
 4. Configure mapping between targets and Run As accounts on the **Run As Accounts** tab of each of the Run As profiles.
 
-Refer to the [Reporting Services Run As Profiles](reporting-services-management-pack-run-as-profiles.md) section for the detailed explanation of what Run As profiles are defined in the management pack.
+## SQL Server and SQL Server Reporting Services Run As Profiles
+
+To use separate accounts for monitoring of DB Engine, SSRS, and SSAS, create 3 different Windows accounts, and configure each account in each Run As profile according to the following table.
+
+|Monitoring Account|[Association] Used for|
+|-|-|
+|SQL Server DB Monitoring Opt. # 1|**[Class]** SQL Server Components <br/> **[Class]** SQL Server DB Engine|
+|SQL Server DB Monitoring Opt. # 2|**[Group]** SQL Server Components|
+|SQL Server AS Monitoring|**[Class]** SSAS Seed <br/> **[Class]** SSAS Instance|
+|SQL Server RS Monitoring|**[Class]** SSRS Deployment Seed <br/> **[Class]** Microsoft SQL Server Reporting Services Instance Seed <br/> **[Class]** Microsoft SQL Server Reporting Services (Native Mode) <br/> **[Class]** SSRS Deployment|
+
+>[!NOTE]
+>For the SQL Server DB account, use either **SQL Server DB Monitoring Opt. # 1** or **SQL Server DB Monitoring Opt. # 2**.

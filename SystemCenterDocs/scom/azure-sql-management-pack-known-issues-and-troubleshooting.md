@@ -5,7 +5,7 @@ description: This article explains known issues and troubleshooting in Managemen
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -28,7 +28,6 @@ This article lists the known issues for Management Pack for Azure SQL Database.
 |The Azure portal may stop retrieving results in responses to Azure REST API requests from some performance rules|In cases of a high number of databases (about 1000 databases), the Azure portal may stop retrieving results in responses to Azure REST API requests from some performance rules.|No resolution.|
 |SQL connection to the Azure SQL Databases may fail if the number of databases is too high|If the number of databases is over 2000 databases, the SQL connection to Azure SQL Databases may fail with the exceptions described in [Azure SQL Databases Exceptions](#azure-sql-databases-exceptions). As a result, the **Database Connection Availability** monitor changes its state from **Healthy** to **Warning**. It may also affect workflows with T-SQL query datasources due to connection loss.|No resolution.|
 |Space monitoring limitations in Hyperscale service tier|[Monitoring workflows](#hyperscale-service-tier-limitations) may not collect data correctly for Hyperscale service tier databases.|As a temporary solution, turn off the performance rules and monitors. This issue will be fixed in one of the next updates of the management pack.|
-|Non-printable characters (or formatting marks) are not supported|Management Pack for Azure SQL Database does not support object names consisting of non-printable characters.|No resolution.|
 
 ## Azure SQL Databases Exceptions
 

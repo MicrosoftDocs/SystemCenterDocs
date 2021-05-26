@@ -5,7 +5,7 @@ description: This article explains how to install Management Pack for SQL Server
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -50,6 +50,9 @@ The environment that you use must meet the following prerequisites before you st
 - Import both the **Management Pack for Windows Server Operating System** and the **Management Pack for SQL Server**
 
 - Enable the **Agent Proxy** option on each agent to allow agents to forward data to management servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md).
+
+>[!NOTE]
+>Management Pack for SQL Server Replication does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 
