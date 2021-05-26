@@ -5,7 +5,7 @@ description: This article describes how to configure dynamic optimization and po
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 03/14/2019
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -88,6 +88,11 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 over WS-Man
 4. In  **Specify dynamic optimization settings**, clear the **Use Dynamic Optimization settings from the parent host group** check box.
 5. In **Aggressiveness**, select **High**, **Medium**, or **Low**.
 
+   >[!NOTE]
+   > In VMM 2019 and later, VM aggressiveness values are replaced from low/medium/high scale to integer scale 1 to 5.
+   >
+   > 1 is the lowest degree of aggressiveness. 5 is the highest.  	
+
    VM aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
 
    ::: moniker range="sc-vmm-2019"
@@ -139,7 +144,7 @@ You can run dynamic optimization on demand on a host cluster. To do this dynamic
 > [!NOTE]
 > If VHDs are migrated between one storage type to another (Example: from a CSV to NAS file share), the storage migration will be slow. If the storage optimization does not return a list of VHDs to migrate even when the threshold and aggressiveness criteria are met:
 >     - Check the HostVolumeID using Get-SCStorageVolume Cmdlet. If the HostVolumeID returns Null for the volume, refresh the VM and perform Storage Dynamic Optimization again.
->     - Check the DiskSpacePlacementLevel of the host group using the Get-SCHostResever cmdlet. Set the DiskSpacePlacementLevel value equal to the value of Disk Space set in Host Reserve settings in the Dynamic Optimization wizard.
+>     - Check the DiskSpacePlacementLevel of the host group using the Get-SCHostReserve cmdlet. Set the DiskSpacePlacementLevel value equal to the value of Disk Space set in Host Reserve settings in the Dynamic Optimization wizard.
 
 ::: moniker-end
 

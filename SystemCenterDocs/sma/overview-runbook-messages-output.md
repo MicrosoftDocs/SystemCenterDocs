@@ -40,7 +40,7 @@ You can write data to the output stream using [Write-Output](/powershell/module/
 
 ```powershell
 #The following lines both write an object to the output stream.
-Write-Object "InputObject $object
+Write-Object -InputObject $object
 $object
 ```
 
@@ -106,12 +106,12 @@ The Warning and Error streams are intended to log problems that occur in a runbo
 
 Create a warning or error message using the [Write-Warning](/powershell/module/microsoft.powershell.utility/write-warning) or [Write-Error](/powershell/module/microsoft.powershell.utility/write-error) cmdlet. Activities may also write to these streams.
 
-```wmimof
+```powershell
 #The following lines create a warning message and then an error message that will suspend the runbook.
 
 $ErrorActionPreference = "Stop"
-Write-Warning "Message "This is a warning message."
-Write-Error "Message "This is an error message that will stop the runbook because of the preference variable."
+Write-Warning -Message "This is a warning message."
+Write-Error -Message "This is an error message that will stop the runbook because of the preference variable."
 ```
 
 ### Verbose stream
@@ -123,10 +123,10 @@ When [testing a runbook](./authoring-automation-runbooks.md), verbose messages a
 
 Create a verbose message using the [Write-Verbose](/powershell/module/microsoft.powershell.utility/write-verbose) cmdlet.
 
-```
+```powershell
 #The following line creates a verbose message.
 
-Write-Verbose "Message "This is a verbose message."
+Write-Verbose -Message "This is a verbose message."
 ```
 
 ### Debug stream
