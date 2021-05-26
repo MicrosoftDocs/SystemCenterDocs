@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,12 @@ ms.technology: operations-manager
 # Features and Enhancements in Management Pack for SQL Server Analysis Services
 
 This section covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
+
+## May 2021 - version 7.0.31.0 CTP
+
+### What's New
+
+- Improved performance of Discovery and Monitoring workflows
 
 ## December 2020 - version 7.0.29.0 RTM
 
