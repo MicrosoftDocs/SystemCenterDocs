@@ -5,7 +5,7 @@ description: This article explains low-privilege monitoring
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -18,7 +18,7 @@ All workflows (discoveries, rules, monitors, and actions) in this management pac
 To enable low-privilege monitoring, grant appropriate permissions to Run As accounts and map these accounts to respective Run As Profiles.
 
 >[!NOTE]
-> The **Virtual Log File Count** monitor (VLF) does not work in low-privilege monitoring due to insufficient permissions.
+>The **Virtual Log File Count** monitor (VLF) does not support low-privilege monitoring on SQL Servers 2012 and 2014.
 
 ## Agent Monitoring
 

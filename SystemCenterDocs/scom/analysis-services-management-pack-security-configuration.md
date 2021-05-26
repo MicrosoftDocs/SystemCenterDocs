@@ -5,7 +5,7 @@ description: This article explains the security configuration in Management Pack
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -19,6 +19,8 @@ If the default action account for the given system does not have necessary permi
 
 >[!NOTE]
 >This management pack does not support least-privilege monitoring configurations and requires an action account to be a local administrator on SSAS servers.
+
+## Default Run As Profiles
 
 After importing the management pack, the following default Run As profiles are created:
 
@@ -102,3 +104,17 @@ After importing the management pack, the following default Run As profiles are c
         - Total Memory Limit (GB)
         - Total Memory on the Server (GB)
         - Used Space on Drive (GB)
+
+## SQL Server and SQL Server Analysis Services Run As Profiles
+
+To use separate accounts for monitoring of DB Engine, SSRS, and SSAS, create 3 different Windows accounts, and configure each account in each Run As profile according to the following table.
+
+|Monitoring Account|[Association] Used for|
+|-|-|
+|SQL Server DB Monitoring Opt. # 1|**[Class]** SQL Server Components <br/> **[Class]** SQL Server DB Engine|
+|SQL Server DB Monitoring Opt. # 2|**[Group]** SQL Server Components|
+|SQL Server AS Monitoring|**[Class]** SSAS Seed <br/> **[Class]** SSAS Instance|
+|SQL Server RS Monitoring|**[Class]** SSRS Deployment Seed <br/> **[Class]** Microsoft SQL Server Reporting Services Instance Seed <br/> **[Class]** Microsoft SQL Server Reporting Services (Native Mode) <br/> **[Class]** SSRS Deployment|
+
+>[!NOTE]
+>For the SQL Server DB account, use either **SQL Server DB Monitoring Opt. # 1** or **SQL Server DB Monitoring Opt. # 2**.

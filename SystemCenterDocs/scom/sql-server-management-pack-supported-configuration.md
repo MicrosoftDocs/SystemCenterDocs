@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration for Man
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -62,6 +62,9 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
   Management Pack can only work with the English-language version of SQL Server.
 
 - Express and Enterprise editions of SQL Server
+
+>[!NOTE]
+>Since Management Pack for SQL Server is unhosted, fully qualified domain names (FQDNs) are no longer displayed in System Center Operations Manager object names and alert properties.
 
 ## System Center Operations Manager
 

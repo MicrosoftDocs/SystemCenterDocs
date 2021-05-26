@@ -5,7 +5,7 @@ description: This article explains how to install Management Pack for Azure SQL 
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -32,6 +32,9 @@ The environment that you use must meet the following prerequisites before you st
 - Provide access to managed instances from management servers.
 
     Managed instances are usually deployed to an isolated private network. This means that there should be a permanent VPN connection configured on servers from which the managed instances should be accessed. 
+
+>[!NOTE]
+>Management Pack for Azure SQL Managed Instance does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
     
 ## Importing Management Pack
 

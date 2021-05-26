@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,30 @@ ms.technology: operations-manager
 # Features and Enhancements in Management Pack for SQL Server
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
+
+## May 2021 - 7.0.31.0 CTP 
+
+### What's New
+
+- Updated override for the “Service Principal Name Configuration Status” monitor. The ‘Interval’ value is now set to 3600 (1 hour) to avoid an alert storm in multiple domain controller environments
+- Updated the “Product Version Compliance” monitor with the most recent version of public updates for SQL Server 
+- Updated the “Virtual Log File Count” monitor. Now it uses the ‘sys.dm_db_log_info’ view instead of DBCC on SQL Server 2016 and higher 
+- Updated the “Database Status” monitor. Added a new override ‘Disable if Availability Group is offline’ to avoid false positives in high-availability environments 
+- Updated “Database Backup Status Monitor”. Added a new override ‘Track Availability Group Backup Preferences' to instruct the monitor to track the backup location configured in the Availability Group backup preferences 
+- Added a new exclude list option for the "SQL Server Agent Job" discovery
+- Updated the “Product Version Compliance” monitor with the most recent version of public updates for SQL Server
+- Updated overrides for the “WMI Health State” monitor. The ‘Interval’ value is now set to 3600 (1 hour) and the ‘Samples count’ value is set to 2
+- Renamed some Dashboard tiles
+- Updated display strings 
+
+### Bug Fixes
+
+- Fixed an issue with continuous login attempts from passive SQL Server cluster node after the failover 
+- Fixed an issue with the failing “SQL Server Agent Jobs” discovery in cases of unsupported ASCII characters in the job name 
+- Fixed performance data collection for SQL Server DB Engines with Latin1_General_CP850_BIN collations
+- Fixed an issue with the incorrect alert name for the “LOG Free Space Left” monitor
+- Fixed an issue with the “Blocking Sessions” monitor that was enabled by default
+- Fixed an issue with the lost ‘Timeout’ override for the “WMI Health State” monitor
 
 ## August 2020 - 7.0.24.0 RTM
 
