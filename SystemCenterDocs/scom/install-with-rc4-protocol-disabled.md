@@ -62,5 +62,4 @@ If the environment has RC4 disabled, ensure that the following are achieved:
    ![AES encryption type](./media/protocol-disabled/aes-encryption-type.png)
 
 > [!NOTE]
-
 > If the Agent and Management Server are in different domains from the same forest (Child/Parent domain). Follow Method 3: Configure the trust to support AES128 and AES 256 encryption instead of RC4 encryption from the [article](https://docs.microsoft.com/troubleshoot/windows-server/windows-security/unsupported-etype-error-accessing-trusted-domain).
