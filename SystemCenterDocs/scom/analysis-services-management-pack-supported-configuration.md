@@ -39,7 +39,7 @@ The following is a list of features and configurations supported in Management P
 - Clustered installation of SSAS
 
 >[!NOTE]
->This management pack supports at least 3 SSAS instances with 100 databases on a single agent that uses default settings. If your environment contains more than 100 databases and 3 SSAS instances, some of the workflows may fail during monitoring and discovery. For more information on how to change the default agent settings, see [Management servers and their managed devices are dimmed in the Operations Manager console].
+>This management pack supports at least 3 SSAS instances with 100 databases on a single agent that uses default settings. If your environment contains more than 100 databases and 3 SSAS instances, some of the workflows may fail during monitoring and discovery. For more information on how to change the default agent settings, see [Management servers and their managed devices are dimmed in the Operations Manager console](https://docs.microsoft.com/troubleshoot/system-center/scom/management-servers-devices-dimmed).
 
 ## System Center Operations Manager
 
