@@ -24,7 +24,7 @@ The Integration Module package is a compressed file with the same name as the mo
 
 If the module should contain a [Connection](~/sma/manage-global-assets.md) type, it must also contain a file with the name <ModuleName\>-Automation.json that specifies the connection type properties. This is a json file with the following format.
 
-```powershell
+```JSON
 {
    "ConnectionFields": [
    {
