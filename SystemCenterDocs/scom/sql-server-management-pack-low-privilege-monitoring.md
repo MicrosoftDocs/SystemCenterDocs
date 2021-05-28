@@ -148,7 +148,7 @@ Some optional System Center Operations Manager tasks require a higher privilege 
 
 Take the following steps on an agent machine or database only if you want to allow the System Center Operations Manager console operator to take remedial actions:
 
-1. If the task is related to starting or stopping an NT service (such as DB Engine Service, SQL Server Agent service, SQL Full Text Search Service, Integration Services), on the agent machine, grant the **SQLTaskAction** user the permission to start or stop an NT service. This involves setting a service security descriptor. For more information, see [Sc sdset](https://go.microsoft.com/fwlink/?LinkId=193876).
+1. If the task is related to starting or stopping an NT service (such as DB Engine Service, SQL Server Agent service, SQL Full Text Search Service, Integration Services), on the agent machine, grant the **SQLTaskAction** user the permission to start or stop an NT service. This involves setting a service security descriptor. For more information, see [Sc sdset](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc742037(v=ws.10)).
 
     Read existing privileges for the given service using **sc sdshow** and grant extra privileges to the **SQLTaskAction** user.
 

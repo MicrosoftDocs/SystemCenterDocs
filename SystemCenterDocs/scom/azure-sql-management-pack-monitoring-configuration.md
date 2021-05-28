@@ -65,13 +65,13 @@ The management pack can monitor failover group databases.
 
 Active geo-replication is designed as a business continuity solution that allows the application to perform quick disaster recovery of individual databases in cases of a regional disaster or large-scale outage.
 
-If geo-replication is enabled, the application can initiate failover to a secondary database in a different Azure region. For more information, see the [Creating and using active geo-replication - Azure SQL Database](https://docs.microsoft.com/azure/azure-sql/database/active-geo-replication-overview) article.
+If geo-replication is enabled, the application can initiate failover to a secondary database in a different Azure region. For more information, see the [Creating and using active geo-replication - Azure SQL Database](/azure/azure-sql/database/active-geo-replication-overview) article.
 
 ## Elastic Pools Monitoring
 
 The management pack can monitor SQL elastic pool databases.
 
-Elastic pools provide a simple resource allocation mechanism for managing and scaling multiple databases that have varying and unpredictable usage demands. For more information, see the [Elastic pools help you manage and scale multiple databases in Azure SQL Database](https://docs.microsoft.com/azure/azure-sql/database/elastic-pool-overview) article.
+Elastic pools provide a simple resource allocation mechanism for managing and scaling multiple databases that have varying and unpredictable usage demands. For more information, see the [Elastic pools help you manage and scale multiple databases in Azure SQL Database](/azure/azure-sql/database/elastic-pool-overview) article.
 
 ## Disabled Monitors
 

@@ -50,7 +50,7 @@ To configure monitoring using the automatic monitoring template, perform the fol
        
        - **Service Administrator** or C**o-Administrator**
 
-       For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).
+       For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
 
    - **Use Existing Run As Profile**
 
