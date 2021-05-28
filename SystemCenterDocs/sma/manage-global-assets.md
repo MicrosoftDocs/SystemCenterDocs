@@ -185,7 +185,7 @@ $webServer = 'https://MyWebServer'
 $port = 9090
 $connectionName = 'MyConnection'
 $fieldValues = @{"Username"="MyUser";"Password"="password";"ComputerName"="MyComputer"}
-New-SmaConnection -WebServiceEndpoint $webServer -port $port -Name $connectionName -ConnectionTypeName -VirtualMachineManager" -ConnectionFieldValues $fieldValues
+New-SmaConnection -WebServiceEndpoint $webServer -port $port -Name $connectionName -ConnectionTypeName "VirtualMachineManager" -ConnectionFieldValues $fieldValues
 ```
 
 ### Use a connection in a runbook
@@ -292,7 +292,7 @@ Set-SMAVariable -WebServiceEndpoint $web -Port $port -Name 'MyVariable' -Value '
     for ($i = 1; $i -le $NumberOfIterations; $i++) {
        Write-Output "$i`: $SampleMessage"
     }
-    Set-AutomationVariable -Name NumberOfRunnings -Value (NumberOfRunngs += 1)
+    Set-AutomationVariable -Name NumberOfRunnings -Value (NumberOfRunnings += 1)
     ```
 
 ## Next steps
