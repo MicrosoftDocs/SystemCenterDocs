@@ -18,7 +18,7 @@ You can install DPM 2016 on Windows Server 2012 R2, or on Windows Server 2016. I
 
 
 >[!NOTE]
-> If you use DPM 2012 R2 to protect VMware VMs, you can't upgrade to DPM 2016 even after you stop the protection. To fix this issue, follow the upgrade procedure [here](https://docs.microsoft.com/troubleshoot/system-center/dpm/upgrade-dpm-vmware-vm-protection).
+> If you use DPM 2012 R2 to protect VMware VMs, you can't upgrade to DPM 2016 even after you stop the protection. To fix this issue, follow the upgrade procedure [here](/troubleshoot/system-center/dpm/upgrade-dpm-vmware-vm-protection).
 
 ## Upgrade path for DPM 2016
 If you are going to upgrade from a previous version of DPM to DPM 2016, make sure your installation has the necessary updates:
