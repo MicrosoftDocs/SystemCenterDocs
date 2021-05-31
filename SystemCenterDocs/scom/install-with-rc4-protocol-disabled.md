@@ -5,7 +5,7 @@ description: This article describes Operations Manager installation with RC4 pro
 author: v-anesh
 manager: evansma
 ms.author: v-anesh
-ms.date: 05/27/2021
+ms.date: 05/31/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -71,7 +71,7 @@ To disable RC4 in an Operations Manager Management Server, follow these steps:
 
 2. Run a `gpupdate /force` command in an elevated command prompt to ensure that the changes are done.
 
-## Install Operation manager
+## Install Operations manager
 
 Install operations manager using the following information:
 
