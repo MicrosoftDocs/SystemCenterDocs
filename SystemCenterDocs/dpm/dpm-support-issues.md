@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 11/23/2020
+ms.date: 05/31/2020
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -245,6 +245,10 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ### Support parameters for protecting computers running client operating systems with DPM
 **Issue**: The following protection scenarios are supported:
+
+-  Windows 10 clients can be protected with DPM 2019.
+   >[!NOTE]
+   > Windows 10 on ARM client is not supported for protection using DPM.
 
 -   Windows 8.1 clients can be protected with DPM 2012 R2, DPM 2016.
 
