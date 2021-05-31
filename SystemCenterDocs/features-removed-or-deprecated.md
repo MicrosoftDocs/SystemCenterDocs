@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 05/29/2021
+ms.date: 05/31/2021
 title: Features Removed or Deprecated from System Center 2016
 ms.assetid: b6f468e0-fa52-41f3-8b2d-9e07ede377c9
 ---
