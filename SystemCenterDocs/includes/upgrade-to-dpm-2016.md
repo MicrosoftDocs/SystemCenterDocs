@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  11/01/2017
+ms.date:  05/31/2021
 title:  Upgrade to DPM-2016
 ms.technology:  system-center-2016
 ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
@@ -16,6 +16,9 @@ ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
 
 You can install DPM 2016 on Windows Server 2012 R2, or on Windows Server 2016. If you are installing DPM 2016 on Windows Server 2012 R2, you must upgrade an existing DPM installation from DPM 2012 R2 with Update Rollup 10 or greater. Before you upgrade or install DPM 2016, please read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
+
+>[!NOTE]
+> If you use DPM 2012 R2 to protect VMware VMs, you can't upgrade to DPM 2016 even after you stop the protection. Upgrade fails with an error *34517 - DPM 2016 does not support VMware Backup yet*. To fix this issue, follow the upgrade procedure [here](/troubleshoot/system-center/dpm/upgrade-dpm-vmware-vm-protection).
 
 ## Upgrade path for DPM 2016
 If you are going to upgrade from a previous version of DPM to DPM 2016, make sure your installation has the necessary updates:
