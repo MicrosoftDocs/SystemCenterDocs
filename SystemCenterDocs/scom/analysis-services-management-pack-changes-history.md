@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
 
-## May 2021 - version 7.0.31.0 CTP
+## June 2021 - version 7.0.31.0 CTP
 
 ### What's New
 
