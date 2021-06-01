@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 05/31/2021
 title: Features Removed or Deprecated from System Center 2016
 ms.assetid: b6f468e0-fa52-41f3-8b2d-9e07ede377c9
 ---
@@ -23,7 +23,9 @@ The features and capabilities  listed below  are not included in the System Cent
 ## App Controller
 **Status in System Center 2016:** Removed.
 
-**Replacement:** For on-premises deployments, provision IaaS and PaaS solutions using [Windows Azure Pack](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)). Additionally, virtual machine and PaaS self-service solutions are available in Windows Azure Pack and Azure.
+**Replacement:** For on-premises deployments, consider provisioning IaaS and PaaS using one of the [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) solutions. Additionally, virtual machine and PaaS self-service solutions are available in Azure.
+
+Note that there are no plans for future releases of Windows Azure Pack.
 
 
 ## Citrix XenServer and VMware vCenter 4.1/5.1 support in Virtual Machine Manager

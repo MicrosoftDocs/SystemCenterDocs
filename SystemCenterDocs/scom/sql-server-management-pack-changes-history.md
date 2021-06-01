@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
-## May 2021 - 7.0.31.0 CTP 
+## June 2021 - 7.0.31.0 CTP 
 
 ### What's New
 
@@ -23,7 +23,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the “Product Version Compliance” monitor with the most recent version of public updates for SQL Server 
 - Updated the “Virtual Log File Count” monitor. Now it uses the ‘sys.dm_db_log_info’ view instead of DBCC on SQL Server 2016 and higher 
 - Updated the “Database Status” monitor. Added a new override ‘Disable if Availability Group is offline’ to avoid false positives in high-availability environments 
-- Updated “Database Backup Status Monitor”. Added a new override ‘Track Availability Group Backup Preferences' to instruct the monitor to track the backup location configured in the Availability Group backup preferences 
+- Updated the “Database Backup Status" monitor. Added a new override ‘Track Availability Group Backup Preferences' to instruct the monitor to track the backup location configured in the Availability Group backup preferences 
 - Added a new exclude list option for the "SQL Server Agent Job" discovery
 - Updated the “Product Version Compliance” monitor with the most recent version of public updates for SQL Server
 - Updated overrides for the “WMI Health State” monitor. The ‘Interval’ value is now set to 3600 (1 hour) and the ‘Samples count’ value is set to 2
