@@ -28,7 +28,7 @@ When you install Operations Manager in a security hardened environment, the set 
 
 In a disabled RC4 environment, when you try to install Operations Manager 2016 or 2019, you cannot pass the Account Validation stage if the steps in the [Before you Begin](#before-you-begin) section are not implemented, and you will see the following error in the Operations Manager set up:
 
-![Error in operations manager set up](./media/protocol-disabled/operations-manager-setup.png)
+![Error in operations manager set up](./media/protocol-disabled/error-operations-manager-setup.png)
 
 
 Operations Manager internally uses a Windows Security API as part of its credential validation process and the requested encryption type is not supported by the KDC. The client and service should support same type of encryption for communication.
@@ -49,12 +49,12 @@ In an environment which has RC4 disabled, ensure the following steps are impleme
 
 1. The user account used to install Operations Manager has **AES Attributes** enabled on the **Domain Controller**.
 
-   ![AES Attributes enabled on the Domain Controller](./media/protocol-disabled/domain-controller.png)
+   ![AES Attributes enabled on the Domain Controller](./media/protocol-disabled/attributes-domain-controller.png)
 
 
 2. AES Encryption type is allowed for Kerberos on the computer where Management Server needs to be installed.
 
-   ![AES encryption type](./media/protocol-disabled/aes-encryption-type.png)
+   ![AES encryption type](./media/protocol-disabled/aes-encryption.png)
 
 
 > [!NOTE]
@@ -67,13 +67,13 @@ To disable RC4 in an Operations Manager Management Server, follow these steps:
 
 1. On the Management Server, go to **Local Group Policy Editor** > **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** > **Network security: Configure encryption types allowed for Kerberos** > **Disable RC4**.
 
-   ![Disable RC4](./media/protocol-disabled/disable-rc4.png)
+   ![Disable RC4](./media/protocol-disabled/kerberos-disable-rc4.png)
 
 2. Run a `gpupdate /force` command in an elevated command prompt to ensure that the changes are done.
 
 ## Install Operations manager
 
-Install operations manager using the following information:
+Install Operations Manager using the following information:
 
 - [Install Operations Manager on a Single Server](quickstart-install-single-server.md)
 
