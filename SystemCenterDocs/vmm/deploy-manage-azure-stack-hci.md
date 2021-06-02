@@ -16,8 +16,8 @@ monikerRange: '>=sc-vmm-2019'
 
 This article provides information about how to set up a Azure Stack HCI, version 20H2 cluster in System Center - Virtual Machine Manager (VMM) 2019 UR3 and later. You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers.
 
->[!WARNING]
->Azure Stack HCI clusters that are managed by Virtual Machine Manager shouldn’t join the preview channel yet. System Center 2019 (including Virtual Machine Manager, Operations Manager, and other components) doesn’t support this preview yet. See the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog) for the latest updates. 
+>[!IMPORTANT]
+>Azure Stack HCI clusters that are managed by Virtual Machine Manager shouldn’t join the preview channel yet. System Center 2019 (including Virtual Machine Manager, Operations Manager, and other components) doesn’t support this preview yet. See the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog) for the latest updates.
 
 [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI OS.
 
