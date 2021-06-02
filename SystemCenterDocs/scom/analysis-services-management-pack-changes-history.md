@@ -15,27 +15,27 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
 
-## June 2021 - version 7.0.31.0 CTP
+## June 2021 - 7.0.31.0 CTP
 
 ### What's New
 
 - Improved performance of Discovery and Monitoring workflows
 
-## December 2020 - version 7.0.29.0 RTM
+## December 2020 - 7.0.29.0 RTM
 
 ### What's New
 
 - Improved performance of partition discovery for multidimensional databases
 - Updated and improved System Center Operations Manager 2019 HTML Dashboards to display SSAS health and alerts
 
-## June 2020 - version 7.0.22.0 RTM
+## June 2020 - 7.0.22.0 RTM
 
 ### Bug Fixes
 
 - Added tasks Start/Stop Analysis Services Windows Service
 - Updated display strings
 
-## December 2019 - version 7.0.19.0 CTP
+## December 2019 - 7.0.19.0 CTP
 
 ### What's New
 
@@ -43,7 +43,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Implemented Database Status monitor
 - Updated display strings
 
-## October 2018  - version 7.0.10.0 RTM
+## October 2018 - 7.0.10.0 RTM
 
 ### What's New
 
