@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for Azure SQL Managed Instance.
 
-## July 2020 - version 7.0.22.0 RTM
+## July 2020 - 7.0.22.0 RTM
 
 ### What's New
 
@@ -30,13 +30,13 @@ This section covers new functionality and improvements in Management Pack for Az
 
 - Fixed: Self-diagnostic alerting rules fire alerts for SQL Server MP log events
 
-## April 2020 - version 7.0.21.0 CTP
+## April 2020 - 7.0.21.0 CTP
 
 ### What's New
 
 - Management pack was completely redone being based on up-to-date SQL Server MP codebase
 
-## September 2019 - version 1.0.1.0 CTP
+## September 2019 - 1.0.1.0 CTP
 
 ### What's New
 
