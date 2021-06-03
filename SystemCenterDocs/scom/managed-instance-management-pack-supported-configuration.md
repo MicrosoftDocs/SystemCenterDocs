@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Scope and Supported Configuration in Management Pack for Azure SQL Managed Instance
 
-Management Pack for Azure SQL Managed Instance supports monitoring of [Azure SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview) and the corresponding entities using T-SQL queries.
+Management Pack for Azure SQL Managed Instance supports monitoring of [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview) and the corresponding entities using T-SQL queries.
 
 ## Supported Tiers and Features
 

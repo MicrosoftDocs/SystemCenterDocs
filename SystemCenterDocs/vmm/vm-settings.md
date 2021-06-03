@@ -57,7 +57,7 @@ You can add and remove virtual network adapters (vNICs) from VMs that are runnin
 
 VMM 2019 UR3 and later supports *trunk* mode for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs. You can enable trunk mode through console and PowerShell.
 
-See the following section for enabling Trunk mode through console, see [Set-SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?view=systemcenter-ps-2019&preserve-view=true) and New-[SCVirtualNetworkAdapter](https://docs.microsoft.com/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?view=systemcenter-ps-2019&preserve-view=true) for enabling through PowerShell commandlets.
+See the following section for enabling Trunk mode through console, see [Set-SCVirtualNetworkAdapter](/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?preserve-view=true&view=systemcenter-ps-2019) and New-[SCVirtualNetworkAdapter](/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?preserve-view=true&view=systemcenter-ps-2019) for enabling through PowerShell commandlets.
 
 ## Configure trunk mode
 
@@ -209,7 +209,7 @@ You can configure availability sets for standalone VMs in a cluster, or in avail
 5.  Click the name of an availability set, and use the controls to add or remove the set. Repeat this action until all of the intended availability sets appear in the **Assigned properties** list. To create a new availability set, click the **Create** button, provide a name for the set, and then click **OK**.
 6.  To verify the setting for a deployed virtual machine, in the listing for the virtual machine, view the name under **Availability Set Name**.
 
-For virtual machines that have been deployed on a host cluster, another way to configure this setting is to use Windows PowerShell commands for failover clustering. In this context, the setting appears in the [Get-ClusterGroup](https://docs.microsoft.com/powershell/module/failoverclusters/get-clustergroup) as **AntiAffinityClassNames**.
+For virtual machines that have been deployed on a host cluster, another way to configure this setting is to use Windows PowerShell commands for failover clustering. In this context, the setting appears in the [Get-ClusterGroup](/powershell/module/failoverclusters/get-clustergroup) as **AntiAffinityClassNames**.
 
 ## Configure resource throttling
 

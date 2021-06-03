@@ -58,7 +58,7 @@ Install the agent as follows:
 
 1.  Install the agent on each DPM server you want to monitor.
 
-2.  [Get](/system-center/scom/manage-deploy-windows-agent-manually) the latest agent version.
+2.  [Get](../scom/manage-deploy-windows-agent-manually.md) the latest agent version.
 
 ### <a name="BKMK_Import"></a>Import the DPM discovery and library management packs
 DPM provides the following management packs:
