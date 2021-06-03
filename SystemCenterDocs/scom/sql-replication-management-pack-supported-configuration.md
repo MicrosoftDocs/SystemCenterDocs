@@ -44,7 +44,7 @@ Management Pack for SQL Server Replication supports [agentless mode](sql-server-
 
 Management Pack for SQL Server Replication works with any Express or Enterprise edition of SQL Server 2012 up to SQL Server 2019 and higher.
 
-All SQL Server Express editions support Replication as Subscriber with Push subscriptions only. For more informarion, see [Editions and supported features of SQL Server](https://docs.microsoft.com/sql/sql-server/editions-and-components-of-sql-server-version-15).
+All SQL Server Express editions support Replication as Subscriber with Push subscriptions only. For more informarion, see [Editions and supported features of SQL Server](/sql/sql-server/editions-and-components-of-sql-server-version-15).
 
 The following features and configurations of 64-bit SQL Server Database Engine are supported:
 

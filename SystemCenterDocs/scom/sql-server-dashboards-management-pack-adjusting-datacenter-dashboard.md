@@ -65,7 +65,7 @@ Note that the **Add** button changes its state when it is disabled.
 When the Data Center dashboard is loaded for the first time or refreshed by the refresh option from the Dashboard menu, a special blink animation is displayed.
 
 >[!NOTE]
->It is possible to create a custom group and populate it with a desired set of objects. Refer to [TechNet](https://technet.microsoft.com/library/hh298605.aspx) for guidance.
+>It is possible to create a custom group and populate it with a desired set of objects. Refer to [TechNet](/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)) for guidance.
 
 The added group is displayed in the collapsed (minimized) state by default. To expand the panel, click the arrow symbol on the right from the group name.
 

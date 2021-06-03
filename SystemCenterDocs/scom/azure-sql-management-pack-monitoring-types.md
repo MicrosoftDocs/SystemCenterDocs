@@ -17,7 +17,7 @@ This section explains monitoring types that are available in Management Pack for
 
 ## Differences Between Azure REST API and T-SQL Monitoring
 
-The main difference between [Azure REST API](https://docs.microsoft.com/rest/api/azure/) monitoring and T-SQL monitoring is that in T-SQL, the entire set of workflows is available, while in Azure REST API, the following workflows are disabled due to API limitations:
+The main difference between [Azure REST API](/rest/api/azure/) monitoring and T-SQL monitoring is that in T-SQL, the entire set of workflows is available, while in Azure REST API, the following workflows are disabled due to API limitations:
 
 - Rules
   - Azure SQL DB: DB Transactions Locks Count
@@ -57,7 +57,7 @@ When using the Azure REST API, the Azure SQL Database Management Pack utilizes a
 - **Active Directory Administrator**
 - **Service Administrator** or **Co-Administrator**
   
-For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).
+For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
 
 To begin monitoring of Azure SQL Databases using the Azure REST API, perform the following steps:
 
@@ -87,7 +87,7 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
    - Management Service URI: <https://management.azure.com>
 
-     This endpoint is also used for Azure REST API. In this case, the Firewall port 443 should be used. However, according to [Ports beyond 1433 for ADO.NET 4.5](https://docs.microsoft.com/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12), the Firewall port 1433 should be used.
+     This endpoint is also used for Azure REST API. In this case, the Firewall port 443 should be used. However, according to [Ports beyond 1433 for ADO.NET 4.5](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12), the Firewall port 1433 should be used.
 
    - Database Resource URI: <https://database.windows.net>
    
@@ -159,7 +159,7 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
     ![Enter SPN manually](./media/azure-sql-management-pack/entering-spn-manually.png)
 
-    If necessary, you can create and configure a new Azure Active Directory application and Azure Service Principal Name by using [Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-2.8.0&preserve-view=true). For more information, see [How to: Use Azure PowerShell to create a service principal with a certificate](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+    If necessary, you can create and configure a new Azure Active Directory application and Azure Service Principal Name by using [Azure PowerShell](/powershell/azure/?preserve-view=true&view=azps-2.8.0). For more information, see [How to: Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 
     Once a new Run As Account is created, at the **Enter SPN Manually Status** step, review the status and click **Next**.
 
@@ -211,7 +211,7 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 T-SQL is intended for monitoring of specific Azure SQL Database Servers. When choosing this mode, the monitoring workflows, such as discoveries, rules, and monitors use T-SQL queries in datasources.
 
 >[!NOTE]
->Each workflow datasource creates a new SQL connection for every pair of SQL Server credentials (login\password). SQL connections are counted for database transaction units and affect the bill. For more information, see [Resource limits for Azure SQL Database and Azure Synapse Analytics servers](https://docs.microsoft.com/azure/sql-database/sql-database-resource-limits-database-server).
+>Each workflow datasource creates a new SQL connection for every pair of SQL Server credentials (login\password). SQL connections are counted for database transaction units and affect the bill. For more information, see [Resource limits for Azure SQL Database and Azure Synapse Analytics servers](/azure/sql-database/sql-database-resource-limits-database-server).
 
 To begin monitoring of Azure SQL Databases using T-SQL queries, perform the following steps:
 
@@ -243,7 +243,7 @@ To begin monitoring of Azure SQL Databases using T-SQL queries, perform the foll
 
     If you want to create a new Run As Account, click **New** and enter a new Run As Account name and credentials for the SQL server that you want to monitor.
 
-    For more information on how to create a new SQL Server authentication login, see [Authorize database access to SQL Database, SQL Managed Instance, and Azure Synapse Analytics](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins).
+    For more information on how to create a new SQL Server authentication login, see [Authorize database access to SQL Database, SQL Managed Instance, and Azure Synapse Analytics](/azure/sql-database/sql-database-manage-logins).
 
 7. Click **Next**.
 

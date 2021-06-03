@@ -96,7 +96,7 @@ With VMM, you can select cluster shared volumes (CSVs) for placing a new VHD.
 
 In earlier versions of VMM, by default a new VHD on a VM is placed on the same CSV where the earlier VHDs associated with the VM are placed. There was no option to choose a different CSV/ folder. In case of any problems related to the CSV, such as storage that's full or over commitment, users had to migrate the VHD, but only after they deployed the VHD.
 
-With VMM 1807, you can now choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. For more information, see [Add a virtual hard disk to a virtual machine](https://technet.microsoft.com/library/cc956004.aspx).
+With VMM 1807, you can now choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. For more information, see [Add a virtual hard disk to a virtual machine](/previous-versions/system-center/virtual-machine-manager-2008-r2/cc956004(v=technet.10)).
 
 ### Networking
 
@@ -208,7 +208,7 @@ The control of encryption is at the subnet level. Encryption can be enabled or d
 
 Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based VMs. Shielded VMs protect against malicious administrator actions. They provide protection when the VM's data is at rest or when untrusted software runs on Hyper-V hosts.
 
-With Windows Server 1709, Hyper-V introduces support for provisioning Linux shielded VMs. The same support is now extended to VMM. For more information, see [Create a Linux shielded VM template disk](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-create-a-linux-shielded-vm-template).
+With Windows Server 1709, Hyper-V introduces support for provisioning Linux shielded VMs. The same support is now extended to VMM. For more information, see [Create a Linux shielded VM template disk](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-create-a-linux-shielded-vm-template).
 
 #### Configuration of fallback HGS
 
@@ -284,7 +284,7 @@ VMM 2019 UR1 includes the following cmdlet updates for the respective features:
    - New parameter **[-EnableNestedVirtualization]** - enables the nested virtualization, and is included in **Set-SCComputerTierTemplate** cmdlet.
 
 
-For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019&preserve-view=true).
+For more information about these updates, see [VMM PowerShell articles](/powershell/module/virtualmachinemanager/?preserve-view=true&view=systemcenter-ps-2019).
 
 
 ## New features in VMM 2019 UR2
@@ -347,7 +347,7 @@ VMM 2019 UR2 includes the following cmdlet updates for the respective features:
       - IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
       - IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
 
-For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019&preserve-view=true).
+For more information about these updates, see [VMM PowerShell articles](/powershell/module/virtualmachinemanager/?preserve-view=true&view=systemcenter-ps-2019).
 
 
 ## New features in VMM 2019 UR3
@@ -379,4 +379,4 @@ VMM 2019 UR3 includes the following cmdlet updates for Trunk mode support for VM
 
 New parameters **[-AllowedVLanList]** and **[NativeVLanId]** are included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
 
-For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019&preserve-view=true).
+For more information about these updates, see [VMM PowerShell articles](/powershell/module/virtualmachinemanager/?preserve-view=true&view=systemcenter-ps-2019).
