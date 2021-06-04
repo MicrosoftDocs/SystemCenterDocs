@@ -37,11 +37,11 @@ The following table lists replication agent files located in the **\Program File
 
 |Agent Executable|File Name|
 |-|-|
-|[Replication Snapshot Agent](https://msdn.microsoft.com/library/ms146939.aspx)|snapshot.exe|
-|[Replication Distribution Agent](https://msdn.microsoft.com/library/ms147328.aspx)|distrib.exe|
-|[Replication Log Reader Agent](https://msdn.microsoft.com/library/ms146878.aspx)|logread.exe|
-|[Replication Queue Reader Agent](https://msdn.microsoft.com/library/ms147378.aspx)|qrdrsvc.exe|
-|[Replication Merge Agent](https://msdn.microsoft.com/library/ms147839.aspx)|replmerg.exe|
+|[Replication Snapshot Agent](/sql/relational-databases/replication/agents/replication-snapshot-agent)|snapshot.exe|
+|[Replication Distribution Agent](/sql/relational-databases/replication/agents/replication-distribution-agent)|distrib.exe|
+|[Replication Log Reader Agent](/sql/relational-databases/replication/agents/replication-log-reader-agent)|logread.exe|
+|[Replication Queue Reader Agent](/sql/relational-databases/replication/agents/replication-queue-reader-agent)|qrdrsvc.exe|
+|[Replication Merge Agent](/sql/relational-databases/replication/agents/replication-merge-agent)|replmerg.exe|
 
 ### Replication Maintenance Jobs
 
