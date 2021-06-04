@@ -5,7 +5,7 @@ description: This include file describes the new features in Operations Manager 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 03/30/2021
+ms.date: 06/04/2021
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -367,9 +367,9 @@ In earlier releases, active alerts are not getting closed after non-persistent h
 
 With Operations Manager 2019 UR3 and later, all of the orphan alerts are closed, eventually, depending on the type of monitor. [Learn more](../scom/manage-alert-created-by-monitor.md#closure-of-orphan-alerts).
 
-### Support for RHEL 6
+### Support for RHEL 6, Ubuntu 20, Debian 10 and Oracle 8
 
-Operations Manager 2019 UR3 and later supports RHEL6 via RHEL6 management pack. [Learn more](../scom/plan-supported-crossplat-os.md#red-hat-enterprise-linux-server-6--applicable-for-2019-ur3-and-later).
+Operations Manager 2019 UR3 and later supports RHEL6 via RHEL6 management pack. Also, support for Ubuntu 20.04, Debian 10 and Oracle Linux 8 are added via the Universal MPs. [Learn more](../scom/plan-supported-crossplat-os.md#red-hat-enterprise-linux-server-6--applicable-for-2019-ur3-and-later).
 
 ### TLS 1.2 support for Solaris 10 SPARC
 
@@ -402,9 +402,3 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Le
   Operations Manager console was taking longer time to load and complete basic tasks.
 
   With Operations Manager 2019 UR3, we optimized relevant SQL queries and the performance has significantly improved now.
-
-- **Reliability and performance improvement in Xplat agent**
-
-  In Operations Manager 2019 UR3, heartbeat threads are isolated from performance data related threads, so any malfunctioning in performance providers would not affect heartbeat request, thereby improving reliability of Operations Manager.
-
-  Filters are also introduced in Xplat management packs to help you customize the discovery and monitoring scope of the entities of interest; further to improve performance and scale of Xplat agent.
