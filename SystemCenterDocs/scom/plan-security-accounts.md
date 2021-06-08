@@ -5,7 +5,7 @@ description: This article provides an overview of the security accounts required
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/14/2019
+ms.date: 06/08/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -21,6 +21,9 @@ ms.topic: article
 ::: moniker-end
 
 During the setup and daily operation of Operations Manager, you will be asked to provide credentials for several accounts. This article provides information about each of these accounts, including the SDK and Config Service, Agent Installation, Data Warehouse Write, and Data Reader accounts.
+
+>[!NOTE]
+> Operations Manager installation provisions all necessary SQL permissions. 
 
 If you use domain accounts and your domain Group Policy object (GPO) has the default password expiration policy set as required, you will either have to change the passwords on the service accounts according to the schedule, use system accounts, or configure the accounts so that the passwords never expire.
 
