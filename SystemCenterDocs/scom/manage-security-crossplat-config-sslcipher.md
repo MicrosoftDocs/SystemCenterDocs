@@ -60,7 +60,7 @@ scxadmin -restart
 For System Center – Operations Manager, omiserver.conf is located at:
 `/etc/opt/omi/conf/omiserver.conf`
 
-The following flags need to be set in order to enable/disable the TLS protocol versions. For more infomration, see [Configuring OMI Server](https://github.com/microsoft/omi#configuring-omi-server).
+The following flags need to be set in order to enable/disable the TLS protocol versions. For more information, see [Configuring OMI Server](https://github.com/microsoft/omi#configuring-omi-server).
 
 |Property|Purpose|
 |-----|-----|
