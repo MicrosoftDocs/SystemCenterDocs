@@ -55,6 +55,19 @@ After setting the **sslCipherSuite** configuration option, you must restart the 
 scxadmin -restart  
 ```  
 
+### Enabling or Disabling the TLS Protocol Versions
+
+For System Center – Operations Manager, omiserver.conf is located at:
+`/etc/opt/omi/conf/omiserver.conf`
+
+The following flags need to be set in order to enable/disable the TLS protocol versions. For more infomration, see [Configuring OMI Server](https://github.com/microsoft/omi#configuring-omi-server).
+
+|Property|Purpose|
+|-----|-----|
+| NoTLSv1_0   | When true, the TLSv1.0 protocol is disabled.    | 
+|NoTLSv1_1   |When true, and if available on the platform, the TLSv1.1 protocol is disabled.|
+|NoTLSv1_2	  |When true, and if available on the platform, the TLSv1.2 protocol is disabled.|
+
 ### Enabling or Disabling the SSLv3 Protocol
 
 Operations Manager communicates with UNIX and Linux agents over HTTPS, using either TLS or SSL encryption. The SSL handshaking process negotiates the strongest encryption that is mutually available on the agent and the management server. You may wish to prohibit SSLv3 so that an agent that cannot negotiate TLS encryption does not fall back to SSLv3.
