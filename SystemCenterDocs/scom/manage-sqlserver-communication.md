@@ -47,6 +47,7 @@ For all of the steps below where a SQL instance network name is referenced, use 
     a. Open SQL Server Management Studio.  
     b. In the Object Explorer pane, expand **Databases**, expand the operational database (for example, OperationsManager), expand **Tables**, right-click `dbo.MT_Microsoft$SystemCenter$ManagementGroup` and then click **Edit Top 200 Rows**. In the results pane, scroll to the right to the column titled  `column.SQLServerName_<GUID>`.  
     c. In the first row, enter your operational database SQL instance network name.
+
     d. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDB$AppMonitoring ` and then click **Edit Top 200 Rows**. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
     e. In the first row, enter your operational database SQL instance network name.   
 
@@ -64,47 +65,45 @@ For all of the steps below where a SQL instance network name is referenced, use 
 
 4. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.
 
-5. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
+5. In the first row, enter your data warehouse database SQL instance network name.
 
-6. In the first row, enter your data warehouse database SQL instance network name.
+6. Right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring`, and then click **Edit Top 200 Rows**.
 
-7. Right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring`, and then click **Edit Top 200 Rows**.
+7. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.
 
-8. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.
+8. In the first row, enter your data warehouse database SQL instance network name.  
 
-9. In the first row, enter your data warehouse database SQL instance network name.  
+9. Right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring_Log`, and then click **Edit Top 200 Rows**.
 
-10. Right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring_Log`, and then click **Edit Top 200 Rows**.
+10. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.
 
-11. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.
+11. In the first row, enter your data warehouse database SQL instance network name.
 
-12. In the first row, enter your data warehouse database SQL instance network name.
+12. Right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse_Log`, and then click **Edit Top 200 Rows**.  
 
-13. Right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse_Log`, and then click **Edit Top 200 Rows**.  
+13. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.  
 
-14. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.  
+14. In the first row, enter your data warehouse database SQL instance network name.
 
-15. In the first row, enter your data warehouse database SQL instance network name.
+15. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDWWatcher`, and then click **Edit Top 200 Rows**.  
 
-16. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDWWatcher`, and then click **Edit Top 200 Rows**.  
+16. In the results pane, scroll to the right to the column titled  `DatabaseServerName_<GUID>`.  
 
-17. In the results pane, scroll to the right to the column titled  `DatabaseServerName_<GUID>`.  
+17. In the first row, enter your data warehouse database SQL instance network name.
 
-18. In the first row, enter your data warehouse database SQL instance network name.
+18. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDWWatcher_Log`, and then click **Edit Top 200 Rows**.
 
-19. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDWWatcher_Log`, and then click **Edit Top 200 Rows**.
+19. In the results pane, scroll to the right to the column titled `Post_DatabaseServerName_<GUID>`.
 
-20. In the results pane, scroll to the right to the column titled `Post_DatabaseServerName_<GUID>`.
+20. In the first row, enter your data warehouse database SQL instance network name.
 
-21. In the first row, enter your data warehouse database SQL instance network name.
+21. In the Object Explorer pane, expand **Databases**, expand the data warehouse database (for example, OperationsManagerDW), expand **Tables**, right-click `dbo.MemberDatabase`, and then click **Edit Top 200 Rows**.  
 
-22. In the Object Explorer pane, expand **Databases**, expand the data warehouse database (for example, OperationsManagerDW), expand **Tables**, right-click `dbo.MemberDatabase`, and then click **Edit Top 200 Rows**.  
+22. In the results pane, scroll to the right to the column titled `column.ServerName`.  
 
-23. In the results pane, scroll to the right to the column titled `column.ServerName`.  
+23. In the first row, enter your data warehouse database SQL instance network name.
 
-24. In the first row, enter your data warehouse database SQL instance network name.
-
-25. On the SQL Server instance hosting the operational database, configure the following:
+24. On the SQL Server instance hosting the operational database, configure the following:
 
     a. Open SQL Server Management Studio.
 
@@ -140,7 +139,7 @@ Perform the following steps to modify the configuration of Operations Manager re
 
 5. Click **Show Details** and then click **Data Warehouse Main**. Locate **Connection string** and the line that reads `source=<computer>\<instance>;initial`.
 
-6. Change the **Connection string** to contain your data warehouse database SQL instance network name. For example
+6. Change the **Connection string** to contain your data warehouse database SQL instance network name. For example:
 
     - `data source=YourSQLServer.contoso.com;initial catalog=OperationsManagerDW;Integrated Security=SSPI`
     - `data source=SQL1.contoso.com\SQLINST1,1234;initial catalog=OperationsManagerDW;Integrated Security=SSPI`
