@@ -45,10 +45,13 @@ For all of the steps below where a SQL instance network name is referenced, use 
 3. On the SQL Server instance hosting the operational database, configure the following:
 
     a. Open SQL Server Management Studio.  
+
     b. In the Object Explorer pane, expand **Databases**, expand the operational database (for example, OperationsManager), expand **Tables**, right-click `dbo.MT_Microsoft$SystemCenter$ManagementGroup` and then click **Edit Top 200 Rows**. In the results pane, scroll to the right to the column titled  `column.SQLServerName_<GUID>`.  
+
     c. In the first row, enter your operational database SQL instance network name.
 
     d. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDB$AppMonitoring ` and then click **Edit Top 200 Rows**. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
+    
     e. In the first row, enter your operational database SQL instance network name.   
 
 
