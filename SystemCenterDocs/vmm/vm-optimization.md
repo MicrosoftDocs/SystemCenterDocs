@@ -5,7 +5,7 @@ description: This article describes how to configure dynamic optimization and po
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 05/06/2021
+ms.date: 06/16/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -21,8 +21,11 @@ ms.technology: virtual-machine-manager
 
 Read this article to learn about enabling dynamic optimization (DO) and power optimization  for virtual machines (VMs) in the System Center - Virtual Machine Manager (VMM). The article includes features overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
 
-> [!NOTE]
-> VMM 2019 and later supports dynamic optimization for Compute and Storage. Versions prior to VMM 2019 support DO for compute only, use the following procedures as applicable for the version of VMM you are using.
+>[!NOTE]
+>
+> - vmm doesn’t support site aware clusters or stretched clusters. VMM doesn’t consider Hyper-V defined *site-specific fault domains* for dynamic optimization calculation.
+>
+>- VMM 2019 and later supports dynamic optimization for Compute and Storage. Versions prior to VMM 2019 support DO for compute only, use the following procedures as applicable for the version of VMM you are using.
 
 
 - **Dynamic optimization**:  Using dynamic optimization, VMM performs live migration of VMs and VHDs within a host cluster. The migration is based on the settings you specify, to improve load balancing among hosts and cluster shared storage (Cluster shared volumes (CSV), file shares), and to correct the placement issues for VMs.
