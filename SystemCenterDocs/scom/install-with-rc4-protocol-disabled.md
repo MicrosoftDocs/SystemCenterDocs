@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This article describes Operations Manager installation with disabled RC4 protocol and is in line with Microsoft's Security Advisory to disable RC4. For more information on the security advisory, see [MSRC Blog](https://msrc-blog.microsoft.com/2013/11/12/security-advisory-2868725-recommendation-to-disable-rc4/).
+This article describes how to disable RC4 while installing Operations Manager.
 
 When you install Operations Manager in a security hardened environment, the set up tends to fail at the account configuration step if the appropriate permissions are not configured properly.
 
@@ -36,6 +36,8 @@ Operations Manager internally uses a Windows Security API as part of its credent
 When a service ticket is requested, the domain controller selects the ticket encryption type based on the **msDS-SupportedEncryptionTypes** attribute of the account associated with the requested SPN.
 
 By default, user accounts do not have a value set, unless you have manually enabled AES on them, tickets for service accounts are encrypted with RC4. For more information, see [Decrypting the Selection of Supported Kerberos Encryption Types - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797).
+
+For more information on registry entries about Kerberos version 5 authentication protocol, see [Kerberos protocol registry entries and KDC configuration keys in Windows](https://docs.microsoft.com/troubleshoot/windows-server/windows-security/kerberos-protocol-registry-kdc-configuration-keys).
 
 ## Before you begin
 
