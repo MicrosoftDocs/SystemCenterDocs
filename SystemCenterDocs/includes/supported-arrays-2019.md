@@ -23,6 +23,7 @@ ms.technology: virtual-machine-manager
 |NEC / NEC Storage M-Series M320, M320F, M520, M720, M720F|iSCSI/FC |010A <br/><br/>M320/M320F Storage Control Software revision 1028 or later <br/><br/>M520/M720/M720F Storage Control Software revision 1224 or later |SMI-S 1.6.1|[Link](https://www.nec.com/en/global/prod/storage/product/san/index.html)
 |DELL <br/><br/> SC Series	| iSCSI/FC	| SCOS: 7.4.2 or later <br/><br/> DSM: 2019 R1 or later <br/><br/> DSM 2020 R1 (20.1.1) or later <br/><br/> | SMI-S <br/>version 1.6 | [Link](https://www.dell.com/en-us/work/shop/cty/sf/disk-arrays?dgc=IR&cid=emcstorcat&lid=1) |
 |HPE <br/><br/> Primera	| SMI-S	| 4.0.0| 4.0.0 | [Link](https://www.hpe.com/us/en/storage/hpe-primera.html) |
+|Pure Storage <br/><br/> FlashArray - X, C, M	| iSCSI/FC	| Purity 5.3.0+ 6.0.0+ and 6.1.0+ |version 1.6.1 | [Link](https://www.purestorage.com/products/nvme/flasharray-x.html) |
 
 >[!NOTE]
 >
