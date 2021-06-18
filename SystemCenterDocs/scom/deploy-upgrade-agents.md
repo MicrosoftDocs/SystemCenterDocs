@@ -5,7 +5,7 @@ description: This article describes how to upgrade an Operations Manager agent t
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/04/2019
+ms.date: 06/18/2021
 ms.custom: na
 ms.prod: system-center
 monikerRange: ' sc-om-1801 || sc-om-2019'
@@ -26,7 +26,8 @@ ms.topic: article
 Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2019. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 > [!NOTE]
-> If before the upgrade an agent was installed using the push install method, after upgrade the agent-managed computer is put into a pending update state and can be upgraded through the Operations console. Otherwise the agent needs to be upgraded manually.
+> - To upgrade an earlier version of Operations Manager agent to 2019 agent by using console, ensure that the Run As Account in use for upgrade is granted with the *Log on as a Service* right on all Management Servers and Gateways.
+> - If before the upgrade an agent was installed using the push install method, after upgrade the agent-managed computer is put into a pending update state and can be upgraded through the Operations console. Otherwise the agent needs to be upgraded manually.
 
 When you upgrade an agent, the Operations Manager installer service runs and is not removed until after the completion of the upgrade. If the agent upgrade fails, you might have to re-install the agent because the installer service was not properly removed. If you attempt to upgrade the agent again and it fails, you should re-install the agent after you have completed upgrading all features of Operations Manager.
 
