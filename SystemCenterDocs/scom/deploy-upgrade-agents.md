@@ -27,7 +27,7 @@ Use the following procedures to upgrade an agent running on Windows or Linux to 
 
 > [!NOTE]
 > - To upgrade an Operations Manager agent through console, ensure that the Run As Account used for upgrade is granted with the *Log on as a Service* right on all Management Servers and Gateways.
-For information, on how to grant the right, see [enable service log on](enable-service-logon.md).
+For more information, see [enable service log on](enable-service-logon.md).
 
 > - If before the upgrade an agent was installed using the push install method, after upgrade the agent-managed computer is put into a pending update state and can be upgraded through the Operations console. Otherwise the agent needs to be upgraded manually.
 
