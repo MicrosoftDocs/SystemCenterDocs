@@ -1,11 +1,11 @@
 ---
 ms.assetid: 0497e546-7da7-4342-a427-4a9488ae6c7a
-title: Install Operations Manager with RC4 protocol disabled
-description: This article describes Operations Manager installation with RC4 protocol disabled
+title: Install Operations Manager with RC4 disabled
+description: This article describes Operations Manager installation with RC4 disabled
 author: v-anesh
 manager: evansma
 ms.author: v-anesh
-ms.date: 05/31/2021
+ms.date: 06/18/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
