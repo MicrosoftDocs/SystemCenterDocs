@@ -318,6 +318,10 @@
      "redirect_url" : "/system-center/scom/release-notes-om"
 },
 {
+     "source_path" : "SystemCenterDocs/scom/install-with-rc4-protocol-disabled.md",
+     "redirect_url" : "/system-center/scom/install-with-rc4-disabled"
+},
+{
      "source_path" : "SystemCenterDocs/scom/get-started-release-notes.md",
      "redirect_url" : "/system-center/scom/release-notes-om"
 },
