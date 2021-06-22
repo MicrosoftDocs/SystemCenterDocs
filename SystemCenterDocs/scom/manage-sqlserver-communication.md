@@ -51,7 +51,7 @@ For all of the steps below where a SQL instance network name is referenced, use 
     c. In the first row, enter your operational database SQL instance network name.
 
     d. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDB$AppMonitoring ` and then click **Edit Top 200 Rows**. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
-    
+
     e. In the first row, enter your operational database SQL instance network name.   
 
 
@@ -142,10 +142,12 @@ Perform the following steps to modify the configuration of Operations Manager re
 
 5. Click **Show Details** and then click **Data Warehouse Main**. Locate **Connection string** and the line that reads `source=<computer>\<instance>;initial`.
 
-6. Change the **Connection string** to contain your data warehouse database SQL instance network name. For example:
+6. Change the **Connection string** to contain your data warehouse database SQL instance network name. 
 
-    - `data source=YourSQLServer.contoso.com;initial catalog=OperationsManagerDW;Integrated Security=SSPI`
-    - `data source=SQL1.contoso.com\SQLINST1,1234;initial catalog=OperationsManagerDW;Integrated Security=SSPI`
+    - Example Connection string
+      `data source=YourSQLServer.contoso.com;initial catalog=OperationsManagerDW;Integrated Security=SSPI`
+    - Example Connection string
+      `data source=SQL1.contoso.com\SQLINST1,1234;initial catalog=OperationsManagerDW;Integrated Security=SSPI`
 
 7. Click **Apply**.
 
