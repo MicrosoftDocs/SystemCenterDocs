@@ -142,11 +142,11 @@ Perform the following steps to modify the configuration of Operations Manager re
 
 5. Click **Show Details** and then click **Data Warehouse Main**. Locate **Connection string** and the line that reads `source=<computer>\<instance>;initial`.
 
-6. Change the **Connection string** to contain your data warehouse database SQL instance network name. 
+6. Change the **Connection string** to contain your data warehouse database SQL instance network name.
 
-    - Example Connection string
+    - Example Connection string:<br>
       `data source=YourSQLServer.contoso.com;initial catalog=OperationsManagerDW;Integrated Security=SSPI`
-    - Example Connection string
+    - Example Connection string:<br>
       `data source=SQL1.contoso.com\SQLINST1,1234;initial catalog=OperationsManagerDW;Integrated Security=SSPI`
 
 7. Click **Apply**.
