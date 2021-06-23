@@ -182,6 +182,46 @@ The following is a complete list of securables checked by the monitor targeted t
   - sys.filegroups
   - sys.syscolumns
 
+## Space Monitoring for Windows and Linux
+
+After you import Management Pack for SQL Server, you may find that some of the space monitoring workflows are enabled by default while others are disabled. Disabling rarely used workflows allows reducing the load on the environment, making it operate more efficiently.
+
+The following is a list that explains the default state of each of the space monitoring workflows:
+
+-	Discoveries (Windows and Linux)
+    -	Enabled discoveries
+        -	SQL Server Database Engines
+        - SQL Server Databases for a Database Engine
+    -	Disabled discoveries
+        -	SQL Server DB Filegroups
+        -	SQL Server DB Files
+        -	SQL Server Transaction Log File
+        -	Filestream Filegroups
+        -	Memory-Optimized Data Filegroup
+        -	Memory-Optimized Data Filegroup Containers
+-	Monitors (Windows)
+    -	Enabled monitors (targeted to the Database)
+        -	ROWS Data Free Space Left
+        -	LOG Free Space Left
+    -	Disabled monitors (targeted to the Database)
+        -	ROWS Data Space Percentage Change
+        -	In-Memory OLTP Data Free Space Left
+        -	Filestream Data Free Space Left
+    - Disabled monitors (targeted to the Filegroup)
+      -	DB File Free Space Left
+    -	Disabled monitors (targeted to the Log file)
+        -	DB Log File Free Space Left
+    -	Disabled monitors (targeted to the In-Memory OLTP Data container)
+        -	Memory-Optimized Data Filegroup Container Free Space
+    -	Disabled monitors (targeted to the Filestream filegroup)
+        -	DB Filestream Filegroup Free Space
+-	Monitors (Linux)
+    -	Enabled monitors (targeted to the Filegroup)
+        -	DB File Free Space Left
+    -	Enabled monitors (targeted to the Log file)
+        -	DB Log File Free Space Left
+    -	Disabled monitors. For more information, see [Disabled Space Monitoring Workflows for SQL on Linux](#disabled-space-monitoring-workflows-for-sql-on-linux).
+
 ## Disabled Space Monitoring Workflows for SQL on Linux
 
 Because SQL Server on Linux does not provide required data, the following rules and monitors are disabled by default:
