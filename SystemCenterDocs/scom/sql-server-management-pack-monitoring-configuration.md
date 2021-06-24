@@ -69,20 +69,66 @@ For each facet, the management pack introduces two monitors for the custom user 
 - Two-state monitor with a **Warning** state. This monitor shows the state of the custom user policy that has one of the predefined warning categories as **Policy Category**.
 - Two-state monitor with an **Error** state. This monitor shows the state of the custom user policy that has one of the predefined error categories as **Policy Category**.
 
-## Data File and Transaction Log File Space Monitoring
+## Space Monitoring
 
-Management Pack for SQL Server collects a set of metrics to enable space monitoring at the file, file group and database levels. You can use reports to view this information for multiple databases and for long time intervals.
+Management Pack for SQL Server is capable of performing space monitoring by collecting a set of metrics at the following levels:
 
-This feature supports the following types of media:
+- Database
+- Filegroup
+- File
+- Log file 
 
-- Local storage (both drive letters and mount points)
+You can use unit monitors, as well as performance metrics to view this information for multiple databases and for long time intervals.
+
+Space monitoring supports the following types of media:
+
+- Local storage and mount points
 - Cluster Shared Volumes
 - SMB Shares
 - Azure BLOBs
 
-By default, space monitoring is enabled for all levels. Alerts will only be registered if all files in the file group are unhealthy.
+After you import Management Pack for SQL Server, you may find that some of the space monitoring workflows are enabled by default while others are disabled. For the purposes of reducing the load on the environment, space monitoring is enabled only for the database level and disabled for the filegroup, log file, In-Memory OLTP container, and FILESTREAM filegroup levels. If your environment is sensitive to extra load, enabling rarely used workflows is not recommended.
 
-If your environment is sensitive to the extra load, disable monitoring at the file group and file levels.
+>[!NOTE]
+>When monitoring filegroups, an alert is only thrown if all files in the filegroup are unhealthy altogether. If there is at least one file in the filegroup that is healthy, then no alerts will be registered. 
+
+The following is a list that explains the default state of each of the space monitoring workflows:
+
+- Enabled Discoveries for Windows and Linux
+	- Database Engines
+	- Databases for a Database Engine
+- Disabled Discoveries for Windows and Linux
+  - DB Filegroups
+  - DB Files
+  - Transaction Log File
+  - FILESTREAM Filegroups
+  - Memory-Optimized Data Filegroup
+  - Memory-Optimized Data Filegroup Containers
+- Enabled Monitors for Windows
+	- Targeted to the Database
+		- ROWS Data Free Space Left
+		- LOG Free Space Left
+- Disabled monitors for Windows
+	- Targeted to the Database
+		- ROWS Data Space Percentage Change
+		- In-Memory OLTP Data Free Space Left
+		- FILESTREAM Data Free Space Left
+- Targeted to the Filegroup
+	- DB File Free Space Left
+- Targeted to the Log file
+	- DB Log File Free Space Left
+- Targeted to the In-Memory OLTP Data container
+	- Memory-Optimized Data Filegroup Container 
+  - Free Space
+- Targeted to the FILESTREAM filegroup
+	- DB FILESTREAM Filegroup Free Space
+- Enabled Monitors for Linux
+	- Targeted to the Filegroup
+		- DB File Free Space Left
+	- Targeted to the Log file
+		- DB Log File Free Space Left	
+	- Targeted to the In-Memory OLTP Data container
+		- Memory-Optimized Data Filegroup Container Free Space
 
 ## Many Databases on the Same Drive
 
@@ -181,69 +227,3 @@ The following is a complete list of securables checked by the monitor targeted t
   - sys.tables
   - sys.filegroups
   - sys.syscolumns
-
-## Space Monitoring for Windows and Linux
-
-After you import Management Pack for SQL Server, you may find that some of the space monitoring workflows are enabled by default while others are disabled. Disabling rarely used workflows allows reducing the load on the environment, making it operate more efficiently.
-
-The following is a list that explains the default state of each of the space monitoring workflows:
-
--	Discoveries (Windows and Linux)
-    -	Enabled discoveries
-        -	SQL Server Database Engines
-        - SQL Server Databases for a Database Engine
-    -	Disabled discoveries
-        -	SQL Server DB Filegroups
-        -	SQL Server DB Files
-        -	SQL Server Transaction Log File
-        -	Filestream Filegroups
-        -	Memory-Optimized Data Filegroup
-        -	Memory-Optimized Data Filegroup Containers
--	Monitors (Windows)
-    -	Enabled monitors (targeted to the Database)
-        -	ROWS Data Free Space Left
-        -	LOG Free Space Left
-    -	Disabled monitors (targeted to the Database)
-        -	ROWS Data Space Percentage Change
-        -	In-Memory OLTP Data Free Space Left
-        -	Filestream Data Free Space Left
-    - Disabled monitors (targeted to the Filegroup)
-      -	DB File Free Space Left
-    -	Disabled monitors (targeted to the Log file)
-        -	DB Log File Free Space Left
-    -	Disabled monitors (targeted to the In-Memory OLTP Data container)
-        -	Memory-Optimized Data Filegroup Container Free Space
-    -	Disabled monitors (targeted to the Filestream filegroup)
-        -	DB Filestream Filegroup Free Space
--	Monitors (Linux)
-    -	Enabled monitors (targeted to the Filegroup)
-        -	DB File Free Space Left
-    -	Enabled monitors (targeted to the Log file)
-        -	DB Log File Free Space Left
-    -	Disabled monitors. For more information, see [Disabled Space Monitoring Workflows for SQL on Linux](#disabled-space-monitoring-workflows-for-sql-on-linux).
-
-## Disabled Space Monitoring Workflows for SQL on Linux
-
-Because SQL Server on Linux does not provide required data, the following rules and monitors are disabled by default:
-
-- Rules:
-  - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (MB)
-  - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (%)
-  - MSSQL on Linux: DB FILESTREAM Filegroup Free Space Total (%)
-  - MSSQL on Linux: DB FILESTREAM Filegroup Free Space Total (MB)
-  - MSSQL on Linux: DB Filegroup Free Space Total (%)
-  - MSSQL on Linux: DB Filegroup Free Space Total (MB)
-  - MSSQL on Linux: DB Filegroup Allocated Free Space (%)
-  - MSSQL on Linux: DB Filegroup Allocated Free Space (MB)
-  - MSSQL on Linux: DB Free Outer Space (MB)
-  - MSSQL on Linux: DB Allocated Free Space (MB)
-  - MSSQL on Linux: DB Transaction Log Free Space Total (%)
-  - MSSQL on Linux: DB Allocated Space Used (MB)
-  - MSSQL on Linux: DB Free Space Total (%)
-  - MSSQL on Linux: DB Free Space Total (MB)
-  - MSSQL on Linux: DB Allocated Space (MB)
-- Monitors:
-  - DB Free Space Left
-  - DB Space Percentage Change
-  - Transaction Log Free Space (%)
-  - DB FILESTREAM Filegroup Free Space
