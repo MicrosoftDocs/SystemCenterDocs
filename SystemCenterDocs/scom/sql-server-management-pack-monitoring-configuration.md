@@ -113,15 +113,15 @@ The following is a list that explains the default state of each of the space mon
 		- ROWS Data Space Percentage Change
 		- In-Memory OLTP Data Free Space Left
 		- FILESTREAM Data Free Space Left
-- Targeted to the Filegroup
-	- DB File Free Space Left
-- Targeted to the Log file
-	- DB Log File Free Space Left
-- Targeted to the In-Memory OLTP Data container
-	- Memory-Optimized Data Filegroup Container 
-  - Free Space
-- Targeted to the FILESTREAM filegroup
-	- DB FILESTREAM Filegroup Free Space
+  - Targeted to the Filegroup
+    - DB File Free Space Left
+  - Targeted to the Log file
+    - DB Log File Free Space Left
+  - Targeted to the In-Memory OLTP Data container
+    - Memory-Optimized Data Filegroup Container 
+    - Free Space
+  - Targeted to the FILESTREAM filegroup
+    - DB FILESTREAM Filegroup Free Space
 - Enabled Monitors for Linux
 	- Targeted to the Filegroup
 		- DB File Free Space Left
