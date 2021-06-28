@@ -28,7 +28,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Renamed some Dashboard tiles
 - Added new rules targeted to the SQL Server Agent Job: "SQL Server Agent Job Duration Alert Rule" and "SQL Server Agent Job Duration" performance rule 
 - Updated the following space related discoveries: "DB Filegroups", "DB Files", "Transaction Log File", "FILESTREAM Filegroups", "Memory-Optimized Data Filegroup", and "Memory-Optimized Data Filegroup Containers". Now they are disabled by default to reduce the load on the environment
-- Updated the "Summary Dashboard" views. Now they also contain tiles for the SQL Server Integration Services. 
+- Updated the "Summary Dashboard" views. Now they also contain tiles for the SQL Server Integration Services
 - Updated the "Product Version Compliance" monitor with the most recent version of the public updates for SQL Server 
 - Updated display strings
 
