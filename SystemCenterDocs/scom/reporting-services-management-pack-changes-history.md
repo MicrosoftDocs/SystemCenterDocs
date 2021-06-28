@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
 
-## June 2021 - 7.0.31.0 CTP
+## June 2021 - 7.0.32.0 RTM
 
 ### What's New
 
@@ -65,8 +65,8 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## October 2018 - 7.0.10.0 RTM
 
-- Replaced the Core Library in the delivery with the version 7.0.7.0, that version which is delivered with the most recent RTM version of the management pack for SQL Server 2017+.
-- Updated the monitoring of Memory Consumption and CPU Usage in order to collect performance data for all subprocesses in addition to the main SSRS service process.
-- Updated Summary dashboards.
-- Fixed minor issues found in the CTP version.
-- Updated display strings.
+- Replaced the Core Library in the delivery with the version 7.0.7.0, that version which is delivered with the most recent RTM version of the management pack for SQL Server 2017+
+- Updated the monitoring of Memory Consumption and CPU Usage in order to collect performance data for all subprocesses in addition to the main SSRS service process
+- Updated Summary dashboards
+- Fixed minor issues found in the CTP version
+- Updated display strings
