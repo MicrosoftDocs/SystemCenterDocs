@@ -19,7 +19,8 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Added tiles for the SQL Server Integration Services MP
+- Added tiles for SQL Server Integration Services Management Pack
+- Renamed some Dashboard tiles
 
 ### Bug Fixes
 
