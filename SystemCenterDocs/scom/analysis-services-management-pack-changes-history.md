@@ -15,11 +15,15 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
 
-## June 2021 - 7.0.31.0 CTP
+## June 2021 - 7.0.32.0 RTM
 
 ### What's New
 
 - Improved performance of Discovery and Monitoring workflows
+
+### Bug Fixes
+
+- Fixed an issue with failing space monitoring workflows for the Analysis Services database with a custom storage location  
 
 ## December 2020 - 7.0.29.0 RTM
 
