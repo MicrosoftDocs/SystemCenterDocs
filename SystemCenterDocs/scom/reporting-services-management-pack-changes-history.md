@@ -24,6 +24,8 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## December 2020 - 7.0.29.0 RTM
 
+### What's New
+
 - Updated and improved System Center Operations Manager 2019 HTML Dashboards to display SSRS health and alerts
 - Updated alert description for Report Manager Accessible & Web Service Accessible monitors
 
@@ -57,16 +59,25 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ## April 2019 - 7.0.15.0 RTM
 
+### What's New
+
 - Supported last changes in version-agnostic management pack for SQL Server
 
 ## January 2019 - 7.0.12.0 RTM
+
+### What's New
 
 - Added support for Power BI Report Server
 
 ## October 2018 - 7.0.10.0 RTM
 
+### What's New
+
 - Replaced the Core Library in the delivery with the version 7.0.7.0, that version which is delivered with the most recent RTM version of the management pack for SQL Server 2017+
 - Updated the monitoring of Memory Consumption and CPU Usage in order to collect performance data for all subprocesses in addition to the main SSRS service process
 - Updated Summary dashboards
-- Fixed minor issues found in the CTP version
 - Updated display strings
+
+### Bug Fixes
+
+- Fixed minor issues found in the CTP version
