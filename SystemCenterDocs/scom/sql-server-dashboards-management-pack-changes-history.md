@@ -26,7 +26,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 - Fixed an issue with the wrong alert parameter reference in the Summary Dashboard view tiles
 
-## September 2020 - 7.0.25.0 CTP
+## October 2020 - 7.0.26.0 RTM
 
 ### What's New
 
