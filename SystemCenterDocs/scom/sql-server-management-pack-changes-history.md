@@ -35,7 +35,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### Bug Fixes
 
 - Fixed an issue with continuous login attempts from passive SQL Server cluster node after the failover 
-- Fixed an issue with the failing "SQL Server Agent Jobs" discovery in cases of unsupported ASCII characters in the job name 
+- Fixed an issue with the failing "SQL Server Agent Jobs" discovery in cases of unsupported ASCII characters in job names&mdash;added proper error handling
 - Fixed performance data collection for SQL Server DB Engines with Latin1_General_CP850_BIN collations
 - Fixed an issue with the incorrect alert name for the "LOG Free Space Left" monitor
 - Fixed an issue with the "Blocking Sessions" monitor that was enabled by default
