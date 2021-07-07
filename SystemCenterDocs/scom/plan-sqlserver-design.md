@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/09/2021
+ms.date: 07/07/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -312,42 +312,41 @@ When formatting the partition that will be used for SQL Server data files, it is
 
 ### Reserve memory
 
-Identifying the right amount of physical memory and processors to allocate to the Windows server for SQL Server in support of System Center - Operations Manager is not an easy question to answer (not even for other workloads outside of this product for that matter).  While the sizing calculator provided by the product group, which is based off of testing performed in a lab environment that may or may not align with the typical workload and configuration in the real-world, provides guidance based on workload scale (that is, 500 systems, 1000 systems, etc.) the integrity of what's stated is often brought into question.  It serves as an initial recommendation to start with, however it's not and cannot be considered the final configuration.   
+> [!NOTE]
+> Much of the information in this section comes from Jonathan Kehayias’s blog: [How much memory does my SQL Server actually need? (sqlskills.com)](https://www.sqlskills.com/blogs/jonathan/how-much-memory-does-my-sql-server-actually-need/).
 
-By default, SQL Server can change its memory requirements dynamically based on available system resources. The default setting for min server memory is 0, and the default setting for max server memory is 2147483647. The minimum amount of memory you can specify for max server memory is 16 megabytes (MB).  A number of performance and memory-related problems are because customer’s don’t set a value for Max. Server Memory and they don’t do that because they don’t know what to set.  A number of other factors influence the maximum amount of memory you allocate to SQL to ensure the operating system has enough memory to support the other processes running on that system, such as HBA card, management agents, anti-virus real-time scanning, etc. Otherwise, the OS and SQL will page to disk and then disk I/O increases, further decreasing performance and creating a "ripple" effect where it is noticeable in Operations Manager.  
+It's not always easy to identify the right amount of physical memory and processors to allocate for SQL Server in support of System Center Operations Manager (or for other workloads outside of this product).  The sizing calculator provided by the product group provides guidance based on workload scale, but its recommendations are based on testing performed in a lab environment that may or may not align with your actual workload and configuration.
 
-SQL Server allows you to configure the minimum and maximum amount of memory that should be reserved and used by its process. Specify at least 4 GB of RAM as minimum amount. This should be done for every SQL node hosting one of the Operations Manager databases (Operational, Data warehouse, ACS).
+SQL Server allows you to [configure the minimum and maximum amount of memory](/sql/database-engine/configure-windows/server-memory-server-configuration-option) that will be reserved and used by its process. By default, SQL Server can change its memory requirements dynamically based on available system resources. The default setting for **min server memory** is 0, and the default setting for **max server memory** is 2,147,483,647 MB.
 
-First start by reserving 1 GB of RAM for the OS, 1 GB for each 4 GB of RAM installed from 4–16 GB, and then 1 GB for every 8 GB RAM installed above 16 GB RAM.  Then monitor the Memory\Available MBytes performance counter in Windows to determine if you can increase the memory available to SQL Server above the starting value.
+Performance and memory-related problems can arise if you don't set an appropriate value for **max server memory**. Many factors influence the maximum amount of memory you allocate to SQL to ensure the operating system has enough memory to support the other processes running on that system, such as the HBA card, management agents, and anti-virus real-time scanning. If sufficient memory isn't set, the OS and SQL will page to disk. This can cause disk I/O to increase, further decreasing performance and creating a ripple effect where it becomes noticeable in Operations Manager.  
 
->[!NOTE]
->This counter should remain above the 150-300 MB at a bare minimum.  Windows signals the LowMemoryResourceNotification at 96 MB so you want a buffer, but you should consider starting above 1 GB on larger servers with 256 GB or higher RAM.
->
+We recommend specifying at least 4 GB of RAM for **min server memory**. This should be done for every SQL node hosting one of the Operations Manager databases (operational, data warehouse, ACS).
 
-This approach has typically worked out well for servers that are dedicated to SQL Server.  You can also get much more technical with determining where to set 'max server memory' by working out the specific memory requirements for the OS, other applications, the SQL Server thread stack, and other multipage allocators.  Typically this would be  ((Total system memory) – (memory for thread stack) – (OS memory requirements ~ 2-4 GB) – (memory for other applications) – (memory for multipage allocations; SQLCLR, linked servers, etc.)), where the memory for thread stack = ((max worker threads) (stack size)) and the stack size is 512 KB for x86 systems, 2 MB for x64 systems and 4 MB for IA64 systems.  The value for 'max worker threads' can be found in the max_worker_count column of sys.dm_os_sys_info.  However, the assumption with either of these methods is that you want SQL Server to use everything that is available on the machine, unless you've made reservations in the calculations for other applications.
+For **max server memory**, we recommend reserving a total of:
 
-As more customers move towards virtualizing SQL Server in their environment, this question is more relevant in determining what is the minimum amount of memory that a SQL Server will need to run in a virtual machine.  Unfortunately there is no way to calculate what the ideal amount of memory for a given instance of SQL Server might actually be since SQL Server is designed to cache data in the buffer pool, and it will typically use as much memory as you can give it.  One of the things to keep in mind when you are looking at reducing the memory allocated to a SQL Server instance, is that you will eventually get to a point where the lower memory gets traded off for higher disk I/O access.
+- 1 GB of RAM for the OS
+- 1 GB of RAM per every 4 GB of RAM installed (up to 16 GB RAM)
+- 1 GB of RAM per every 8 GB RAM installed (above 16 GB RAM)
 
-If you need to figure out the ideal configuration for SQL Server memory in an environment that has been over provisioned, the best way to try to go about doing it is to start with a baseline of the environment and the current performance metrics.  Counters to initially monitor include:
+After you've set these values, monitor the **Memory\Available MBytes** counter in Windows to determine if you can increase the memory available to SQL Server. Windows signals that the available physical memory is running low at 96 MB, so ideally the counter shouldn't run lower than around 200-300 MB, to make sure you have a buffer. For servers with 256 GB RAM or higher, you'll probably want to make sure it doesn't run lower than 1 GB.
 
--  SQL Server:Buffer Manager\Page Life Expectancy
--  SQL Server:Buffer Manager\Page reads/sec
--  Physical Disk\Disk Reads/sec
+Keep in mind that these calculations assume you want SQL Server to be able to use all available memory, unless you modify them to account for other applications. Consider the specific memory requirements for your OS, other applications, the SQL Server thread stack, and other multipage allocators. A typical formula would be ((total system memory) – (memory for thread stack) – (OS memory requirements) – (memory for other applications) – (memory for multipage allocators)), where the memory for thread stack = ((max worker threads) (stack size)). The stack size is 512 KB for x86 systems, 2 MB for x64 systems, and 4 MB for IA64 systems, and you can find the value for max worker threads in the max_worker_count column of sys.dm_os_sys_info.
 
-Typically if the environment has excess memory for the buffer pool, the Page Life Expectancy value will continue to increase by a value of one every second and it won't drop off under the workload because all of the data pages end up being cached.  At the same time, the number of SQL Server:Buffer Manager\Page reads/sec will be low after the cache ramp up occurs, which will also correspond to a low value for Physical Disk\Disk Reads/sec.  
+These considerations also apply to the memory requirements for SQL Server to run in a virtual machine. Since SQL Server is designed to cache data in the buffer pool, and it will typically use as much memory as possible, it can be difficult to determine the ideal amount of RAM needed. When reducing the memory allocated to a SQL Server instance, you'll eventually reach a point where lower memory allotment gets traded for higher disk I/O access.
 
-Once you have your baseline for the environment, make a change to the sp_configure 'max server memory' option to reduce the size of the buffer pool by 1GB and then monitor the impact to the performance counters after things stabilize from the initial cache flushing that may typically occur when RECONFIGURE is run in the environment.  If the level of Page Life Expectancy remains acceptable for your environment (keeping in mind that a fixed target of >= 300 is ridiculous for servers with large amounts of RAM installed), and the number of SQL Server:Buffer Manager\Page reads/sec is within what the disk I/O subsystem can support without performance degradation, repeat the process of reducing the sp_configure value for 'max server memory' by 1GB and continuing to monitor the impact to the environment.
+To configure SQL Server memory in an environment that has been over-provisioned, start by monitoring the environment and the current performance metrics, including the SQL Server Buffer Manager **page life expectancy** and **page reads/sec** and the Physical Disk **disk reads/sec** values. If the environment has excess memory, **page life expectancy** will increase by a value of one each second without any decrease under the workload, due to caching; the SQL Server Buffer Manager **page reads/sec** value will be low after the cache ramps up; and the Physical Disk **disk Reads/sec** will also remain low.  
 
+Once you understand the environment baseline, you can reduce the **max server memory** by 1 GB, then see how that impacts your performance counters (after any initial cache flushing subsides). If the metrics remain acceptable, reduce by another 1 GB, then monitor again, repeating as desired until you determine an ideal configuration.
 
 ::: moniker range="=sc-om-2016"
 
-
- Learn more [about server memory configuration](/sql/database-engine/configure-windows/server-memory-server-configuration-options?preserve-view=true&view=sql-server-2014).
+For more information, see [Server memory configuration options](/sql/database-engine/configure-windows/server-memory-server-configuration-options?preserve-view=true&view=sql-server-2014).
 
 ::: moniker-end
 ::: moniker range=">=sc-om-1801"
 
-Learn more [about server memory configuration](/sql/database-engine/configure-windows/server-memory-server-configuration-options?preserve-view=true&view=sql-server-2016).
+For more information, see [Server memory configuration options](/sql/database-engine/configure-windows/server-memory-server-configuration-options?preserve-view=true&view=sql-server-2016).
 
 ::: moniker-end
 
