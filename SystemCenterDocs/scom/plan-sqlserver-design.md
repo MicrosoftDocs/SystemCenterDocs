@@ -313,17 +313,17 @@ When formatting the partition that will be used for SQL Server data files, it is
 ### Reserve memory
 
 > [!NOTE]
-> Much of the information in this section comes from Jonathan Kehayias’s blog: [How much memory does my SQL Server actually need? (sqlskills.com)](https://www.sqlskills.com/blogs/jonathan/how-much-memory-does-my-sql-server-actually-need/).
+> Much of the information in this section comes from Jonathan Kehayias in his blog post [How much memory does my SQL Server actually need? (sqlskills.com)](https://www.sqlskills.com/blogs/jonathan/how-much-memory-does-my-sql-server-actually-need/).
 
 It's not always easy to identify the right amount of physical memory and processors to allocate for SQL Server in support of System Center Operations Manager (or for other workloads outside of this product).  The sizing calculator provided by the product group provides guidance based on workload scale, but its recommendations are based on testing performed in a lab environment that may or may not align with your actual workload and configuration.
 
-SQL Server allows you to [configure the minimum and maximum amount of memory](/sql/database-engine/configure-windows/server-memory-server-configuration-option) that will be reserved and used by its process. By default, SQL Server can change its memory requirements dynamically based on available system resources. The default setting for **min server memory** is 0, and the default setting for **max server memory** is 2,147,483,647 MB.
+SQL Server allows you to [configure the minimum and maximum amount of memory](/sql/database-engine/configure-windows/server-memory-server-configuration-options) that will be reserved and used by its process. By default, SQL Server can change its memory requirements dynamically based on available system resources. The default setting for **min server memory** is 0, and the default setting for **max server memory** is 2,147,483,647 MB.
 
-Performance and memory-related problems can arise if you don't set an appropriate value for **max server memory**. Many factors influence the maximum amount of memory you allocate to SQL to ensure the operating system has enough memory to support the other processes running on that system, such as the HBA card, management agents, and anti-virus real-time scanning. If sufficient memory isn't set, the OS and SQL will page to disk. This can cause disk I/O to increase, further decreasing performance and creating a ripple effect where it becomes noticeable in Operations Manager.  
+Performance and memory-related problems can arise if you don't set an appropriate value for **max server memory**. Many factors influence how much memory you need to allocate to SQL Server in order to ensure that the operating system can support other processes running on that system, such as the HBA card, management agents, and anti-virus real-time scanning. If sufficient memory isn't set, the OS and SQL will page to disk. This can cause disk I/O to increase, further decreasing performance and creating a ripple effect where it becomes noticeable in Operations Manager.  
 
 We recommend specifying at least 4 GB of RAM for **min server memory**. This should be done for every SQL node hosting one of the Operations Manager databases (operational, data warehouse, ACS).
 
-For **max server memory**, we recommend reserving a total of:
+For **max server memory**, we recommend that you initially reserve a total of:
 
 - 1 GB of RAM for the OS
 - 1 GB of RAM per every 4 GB of RAM installed (up to 16 GB RAM)
@@ -331,7 +331,7 @@ For **max server memory**, we recommend reserving a total of:
 
 After you've set these values, monitor the **Memory\Available MBytes** counter in Windows to determine if you can increase the memory available to SQL Server. Windows signals that the available physical memory is running low at 96 MB, so ideally the counter shouldn't run lower than around 200-300 MB, to make sure you have a buffer. For servers with 256 GB RAM or higher, you'll probably want to make sure it doesn't run lower than 1 GB.
 
-Keep in mind that these calculations assume you want SQL Server to be able to use all available memory, unless you modify them to account for other applications. Consider the specific memory requirements for your OS, other applications, the SQL Server thread stack, and other multipage allocators. A typical formula would be ((total system memory) – (memory for thread stack) – (OS memory requirements) – (memory for other applications) – (memory for multipage allocators)), where the memory for thread stack = ((max worker threads) (stack size)). The stack size is 512 KB for x86 systems, 2 MB for x64 systems, and 4 MB for IA64 systems, and you can find the value for max worker threads in the max_worker_count column of sys.dm_os_sys_info.
+Keep in mind that these calculations assume you want SQL Server to be able to use all available memory, unless you modify them to account for other applications. Consider the specific memory requirements for your OS, other applications, the SQL Server thread stack, and other multipage allocators. A typical formula would be `((total system memory) – (memory for thread stack) – (OS memory requirements) – (memory for other applications) – (memory for multipage allocators))`, where the memory for thread stack = `((max worker threads) (stack size))`. The stack size is 512 KB for x86 systems, 2 MB for x64 systems, and 4 MB for IA64 systems, and you can find the value for max worker threads in the max_worker_count column of sys.dm_os_sys_info.
 
 These considerations also apply to the memory requirements for SQL Server to run in a virtual machine. Since SQL Server is designed to cache data in the buffer pool, and it will typically use as much memory as possible, it can be difficult to determine the ideal amount of RAM needed. When reducing the memory allocated to a SQL Server instance, you'll eventually reach a point where lower memory allotment gets traded for higher disk I/O access.
 
