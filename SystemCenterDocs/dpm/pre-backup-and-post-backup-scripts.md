@@ -12,8 +12,13 @@ ms.assetid: 4d64ee84-fc7d-45a8-b337-fbef001b75a3
 ms.author: v-jysur
 ---
 
-
 # Pre-Backup and Post-Backup scripts for DPM
+
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
 
 This article details the pre and post backup scripts that you can use for DPM and how to use.
 
