@@ -33,6 +33,7 @@
 #### [Offline seeding using Azure Data Box](offline-seeding-azure-data-box.md)
 #### [Offline seeding using own disk](offline-backup-workflow.md)
 ## Protect Workloads
+### [Pre-backup and post-backup scripts](pre-backup-and-post-backup-scripts.md)
 ### [Back up Hyper-V virtual machines](back-up-hyper-v-virtual-machines.md)
 ### [Back up Exchange with DPM](back-up-exchange.md)
 ### [Back up SharePoint with DPM](back-up-sharepoint.md)
