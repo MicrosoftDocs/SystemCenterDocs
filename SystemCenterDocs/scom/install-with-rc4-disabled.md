@@ -1,11 +1,11 @@
 ---
 ms.assetid: 0497e546-7da7-4342-a427-4a9488ae6c7a
-title: Install Operations Manager with RC4 protocol disabled
-description: This article describes Operations Manager installation with RC4 protocol disabled
+title: Install Operations Manager with RC4 disabled
+description: This article describes Operations Manager installation with RC4 disabled
 author: v-anesh
 manager: evansma
 ms.author: v-anesh
-ms.date: 05/31/2021
+ms.date: 06/18/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -37,7 +37,7 @@ When a service ticket is requested, the domain controller selects the ticket enc
 
 By default, user accounts do not have a value set, unless you have manually enabled AES on them, tickets for service accounts are encrypted with RC4. For more information, see [Decrypting the Selection of Supported Kerberos Encryption Types - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797).
 
-For more information on registry entries about Kerberos version 5 authentication protocol, see [Kerberos protocol registry entries and KDC configuration keys in Windows](https://docs.microsoft.com/troubleshoot/windows-server/windows-security/kerberos-protocol-registry-kdc-configuration-keys).
+For more information on registry entries about Kerberos version 5 authentication protocol, see [Kerberos protocol registry entries and KDC configuration keys in Windows](/troubleshoot/windows-server/windows-security/kerberos-protocol-registry-kdc-configuration-keys).
 
 ## Before you begin
 
@@ -45,7 +45,7 @@ Before you begin, implement the steps in the section below:
 
 ### Configure the encryption types allowed for Kerberos
 
-For information about how to configure the encryption types allowed for Kerberos, see [Network security Configure encryption types allowed for Kerberos - Windows security | Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos).
+For information about how to configure the encryption types allowed for Kerberos, see [Network security Configure encryption types allowed for Kerberos - Windows security | Microsoft Docs](/windows/security/threat-protection/security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos).
 
 In an environment which has RC4 disabled, ensure the following steps are implemented:
 
@@ -60,7 +60,7 @@ In an environment which has RC4 disabled, ensure the following steps are impleme
 
 
 > [!NOTE]
-> If the Agent and Management Server are in different domains from the same forest (Child/Parent domain), follow [Method 3: Configure the trust to support AES128 and AES 256 encryption instead of RC4 encryption](https://docs.microsoft.com/troubleshoot/windows-server/windows-security/unsupported-etype-error-accessing-trusted-domain).
+> If the Agent and Management Server are in different domains from the same forest (Child/Parent domain), follow [Method 3: Configure the trust to support AES128 and AES 256 encryption instead of RC4 encryption](/troubleshoot/windows-server/windows-security/unsupported-etype-error-accessing-trusted-domain).
 
 
 ## Disable RC4 in Operations Manager
