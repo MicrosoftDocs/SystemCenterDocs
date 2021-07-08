@@ -119,9 +119,9 @@ After moving the Operations Manager operational database to a different SQL Serv
 ###  Start the Operations Manager services
 
 1. On all the management servers in the management group, start the Operations Manager services:
-   - System Center Data Access
-   - Microsoft Monitoring Agent
-   - System Center Management Configuration
+   - System Center Data Access.
+   - Microsoft Monitoring Agent.
+   - System Center Management Configuration.
 
 
 ### Update Service Principal Name for Kerberos Connections
