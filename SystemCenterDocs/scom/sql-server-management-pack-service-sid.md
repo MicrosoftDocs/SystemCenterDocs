@@ -76,33 +76,22 @@ To configure monitoring using Service Security Identifier, perform the following
     EXEC(@createDatabaseUserAndRole)
     GO
     USE [master];
-    GRANT EXECUTE ON sys.xp_readerrorlog
-      TO [SCOM_HealthService]
+    GRANT EXECUTE ON sys.xp_readerrorlog TO [SCOM_HealthService]
     USE [msdb];
-    GRANT SELECT on [dbo].[sysjobschedules]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[sysschedules]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[sysjobs_view]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[log_shipping_primary_databases]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[log_shipping_secondary_databases]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[log_shipping_monitor_history_detail]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[log_shipping_monitor_secondary]
-      TO [SCOM_HealthService];
-    GRANT SELECT on [dbo].[log_shipping_monitor_primary]
-      TO [SCOM_HealthService];
-    GRANT EXECUTE on [dbo].[sp_help_job]
-      TO [SCOM_HealthService];
-    GRANT EXECUTE on [dbo].[sp_help_jobactivity]
-      TO [SCOM_HealthService];
-    EXEC sp_addrolemember @rolename='PolicyAdministratorRole'
-      , @membername='SCOM_HealthService';
-    EXEC sp_addrolemember @rolename='SQLAgentReaderRole'
-      , @membername='SCOM_HealthService';
+    GRANT SELECT ON [dbo].[sysjobschedules] TO [SCOM_HealthService];
+    GRANT SELECT ON [dbo].[sysschedules] TO [SCOM_HealthService];
+    GRANT SELECT ON [dbo].[sysjobs_view] TO [SCOM_HealthService];
+    GRANT SELECT ON [dbo].[syscategories] TO [SCOM_HealthService];
+    GRANT SELECT ON [dbo].[log_shipping_primary_databases] TO [SCOM_HealthService];
+    GRANT SELECT ON [dbo].[log_shipping_secondary_databases] TO [SCOM_HealthService];
+    GRANT SELECT ON [dbo].[log_shipping_monitor_history_detail] TO [SCOM_HealthService];
+    GRANT SELECT ON [dbo].[log_shipping_monitor_secondary] TO [SCOM_HealthService];
+    GRANT SELECT ON [dbo].[log_shipping_monitor_primary] TO [SCOM_HealthService];
+    GRANT EXECUTE ON [dbo].[sp_help_job] TO [SCOM_HealthService];
+    GRANT EXECUTE ON [dbo].[sp_help_jobactivity] TO [SCOM_HealthService];
+    GRANT EXECUTE ON [dbo].[SQLAGENT_SUSER_SNAME] TO [SCOM_HealthService];
+    EXEC sp_addrolemember @rolename='PolicyAdministratorRole', @membername='SCOM_HealthService';
+    EXEC sp_addrolemember @rolename='SQLAgentReaderRole', @membername='SCOM_HealthService';
     ```
 
 6. To run SQL Server MP tasks, such as **Set database Offline**, **Set database Online**, and **Set database to Emergency state**, grant HealthService SID account the **ALTER ANY DATABASE** permission.

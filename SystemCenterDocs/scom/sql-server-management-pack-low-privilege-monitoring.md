@@ -108,19 +108,16 @@ This section explains how to configure low-privilege agent monitoring.
       GO
       GRANT EXECUTE ON msdb.dbo.sp_help_job TO [SQLMPLowPriv]
       GRANT EXECUTE ON msdb.dbo.sp_help_jobactivity TO [SQLMPLowPriv]
+      GRANT EXECUTE ON msdb.dbo.SQLAGENT_SUSER_SNAME TO [SQLMPLowPriv]
       GRANT SELECT ON sysjobs_view TO [SQLMPLowPriv]
       GRANT SELECT ON sysschedules TO [SQLMPLowPriv]
       GRANT SELECT ON sysjobschedules TO [SQLMPLowPriv]
-      GRANT SELECT ON log_shipping_monitor_history_detail
-        TO [SQLMPLowPriv]
-      GRANT SELECT ON log_shipping_monitor_secondary
-        TO [SQLMPLowPriv]
-      GRANT SELECT ON log_shipping_secondary_databases
-        TO [SQLMPLowPriv]
-      GRANT SELECT ON log_shipping_monitor_primary
-        TO [SQLMPLowPriv]
-      GRANT SELECT ON log_shipping_primary_databases
-        TO [SQLMPLowPriv]
+      GRANT SELECT ON syscategories TO [SQLMPLowPriv]
+      GRANT SELECT ON log_shipping_monitor_history_detail TO [SQLMPLowPriv]
+      GRANT SELECT ON log_shipping_monitor_secondary TO [SQLMPLowPriv]
+      GRANT SELECT ON log_shipping_secondary_databases TO [SQLMPLowPriv]
+      GRANT SELECT ON log_shipping_monitor_primary TO [SQLMPLowPriv]
+      GRANT SELECT ON log_shipping_primary_databases TO [SQLMPLowPriv]
       ```
 
 6. For the **msdb** database, assign the **SQLMPLowPriv** user both the **SQLAgentReaderRole** role and the **PolicyAdministratorRole** role:
@@ -214,27 +211,17 @@ This section explains how to configure low-privilege agentless monitoring.
 
 ### On SQL Server Instances
 
+# On SQL Server Instances
+
 1. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance.
 
-2. In SQL Server Management Studio, for each instance of SQL Server Database Engine, create a SQL login for monitoring and grant the following permissions:
+2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, create a SQL login **SQLMPLowPriv** for monitoring.
 
-    ```sql
-    USE [msdb]
-    GO
-    GRANT VIEW SERVER STATE TO [SQLMPLowPriv]
-    GRANT VIEW ANY DEFINITION TO [SQLMPLowPriv]
-    GRANT VIEW ANY DATABASE TO [SQLMPLowPriv]
-    GO
-    ALTER ROLE [db_datareader] ADD MEMBER [SQLMPLowPriv]
-    GRANT EXECUTE ON xp_readerrorlog TO [SQLMPLowPriv]
-    GO
-    ```
+3. Create **SQLMPLowPriv** user in each user database, **master**, **msdb**, and **model** databases.
 
-3. Create a user in each user database, **master**, **msdb**, and **model** databases. 
+4. Link **SQLMPLowPriv** users to the SQLMPLowPriv login:
 
-4. Link created users to the **SQLMPLowPriv** login.
-
-    ```sql
+    ``` sql
     --  This script is an example of how to create new users
     --  in the msdb database. Execute this script
     --  for every database on each SQL instance.
@@ -243,26 +230,40 @@ This section explains how to configure low-privilege agentless monitoring.
     CREATE USER [SQLMPLowPriv] FOR LOGIN [SQLMPLowPriv]
     ```
 
-5. For the **msdb** database, grant the user the following permissions:
+5. Grant **SQLMPLowPriv** the following permissions:
 
-    ```sql
+    ``` sql
+    USE [master]
+    GO
+    GRANT VIEW SERVER STATE TO [SQLMPLowPriv]
+    GRANT VIEW ANY DEFINITION TO [SQLMPLowPriv]
+    GRANT VIEW ANY DATABASE TO [SQLMPLowPriv]
+    ALTER ROLE [db_datareader] ADD MEMBER [SQLMPLowPriv]
+    GRANT EXECUTE ON xp_readerrorlog TO [SQLMPLowPriv]
+
     USE [msdb]
     GO
     GRANT EXECUTE ON msdb.dbo.sp_help_job TO [SQLMPLowPriv]
     GRANT EXECUTE ON msdb.dbo.sp_help_jobactivity TO [SQLMPLowPriv]
+    GRANT EXECUTE ON msdb.dbo.SQLAGENT_SUSER_SNAME TO [SQLMPLowPriv]
     GRANT SELECT ON sysjobs_view TO [SQLMPLowPriv]
+    GRANT SELECT ON syscategories TO [SQLMPLowPriv]
     GRANT SELECT ON sysschedules TO [SQLMPLowPriv]
     GRANT SELECT ON sysjobschedules TO [SQLMPLowPriv]
-    GRANT SELECT ON log_shipping_monitor_history_detail
-      TO [SQLMPLowPriv]
-    GRANT SELECT ON log_shipping_monitor_secondary
-      TO [SQLMPLowPriv]
-    GRANT SELECT ON log_shipping_secondary_databases
-      TO [SQLMPLowPriv]
-    GRANT SELECT ON log_shipping_monitor_primary
-      TO [SQLMPLowPriv]
-    GRANT SELECT ON log_shipping_primary_databases
-      TO [SQLMPLowPriv]
+    GRANT SELECT ON log_shipping_monitor_history_detail TO [SQLMPLowPriv]
+    GRANT SELECT ON log_shipping_monitor_secondary TO [SQLMPLowPriv]
+    GRANT SELECT ON log_shipping_secondary_databases TO [SQLMPLowPriv]
+    GRANT SELECT ON log_shipping_monitor_primary TO [SQLMPLowPriv]
+    GRANT SELECT ON log_shipping_primary_databases TO [SQLMPLowPriv]
+    ```
+
+6. For the msdb database, assign the SQLMPLowPriv user both the SQLAgentReaderRole role and the PolicyAdministratorRole role:
+
+    ``` sql
+    USE [msdb]
+    GO
+    ALTER ROLE [SQLAgentReaderRole] ADD MEMBER [SQLMPLowPriv]
+    ALTER ROLE [PolicyAdministratorRole] ADD MEMBER [SQLMPLowPriv]
     ```
 
 Some optional System Center Operations Manager tasks require a higher privilege on an agent machine and/or database to allow task execution.
@@ -292,21 +293,6 @@ Take the following steps only if you want to allow the System Center Operations 
     USE [master]
     GO
     GRANT ALTER ANY DATABASE TO [SQLMPLowPriv]
-    ```
-
-3. For the **msdb** database, add the **SQLMPLowPriv** user to the **SQLAgentReaderRole** and **PolicyAdministratorRole** database roles:
-
-    ```sql
-    USE [msdb]
-    GO
-    ALTER ROLE [PolicyAdministratorRole]
-      ADD MEMBER [SQLMPLowPriv]
-    GO
-    USE [msdb]
-    GO
-    ALTER ROLE [SQLAgentReaderRole]
-      ADD MEMBER [SQLMPLowPriv]
-    GO
     ```
 
 ### Using Monitoring Wizard
