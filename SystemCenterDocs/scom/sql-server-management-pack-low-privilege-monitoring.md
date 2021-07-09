@@ -211,8 +211,6 @@ This section explains how to configure low-privilege agentless monitoring.
 
 ### On SQL Server Instances
 
-# On SQL Server Instances
-
 1. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance.
 
 2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, create a SQL login **SQLMPLowPriv** for monitoring.
