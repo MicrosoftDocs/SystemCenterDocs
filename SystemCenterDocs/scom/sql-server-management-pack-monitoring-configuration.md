@@ -161,10 +161,7 @@ The following is a complete list of securables that are checked by the monitor t
   - master.sys.dm_hadr_availability_group_states
   - master.sys.dm_hadr_availability_replica_states
   - master.sys.dm_hadr_database_replica_cluster_states
-  - master.sys.dm_hadr_database_replica_states
   - sys.dm_os_performance_counters
-  - sys.dm_tran_active_transactions
-  - sys.dm_tran_session_transactions
   - sys.dm_tran_active_transactions
   - sys.dm_tran_session_transactions
   - sys.dm_exec_sessions
@@ -173,7 +170,6 @@ The following is a complete list of securables that are checked by the monitor t
   - sys.dm_os_sys_info
   - sys.dm_os_ring_buffers
   - sys.dm_os_volume_stats
-  - sys.dm_hadr_database_replica_states
   - sys.dm_server_services
   - sys.dm_db_xtp_checkpoint_files
   - sys.dm_db_xtp_table_memory_stats
@@ -204,14 +200,13 @@ The following is a complete list of securables that are checked by the monitor t
   - sys.availability_replicas
   - sys.database_mirroring
   - sys.configurations
-  - msdb.dbo.syspolicy_policies
-  - msdb.dbo.syspolicy_conditions
-  - msdb.dbo.syspolicy_policy_execution_history
   - msdb.dbo.syspolicy_policy_execution_history_details
   - msdb.dbo.sysjobschedules
   - msdb.dbo.log_shipping_primary_databases
   - msdb.dbo.log_shipping_secondary_databases
   - msdb.dbo.backupset
+  - msdb.dbo.syscategories
+  - msdb.dbo.sysjobs_view
 
 - EXECUTE permission on stored procedures
   - sys.sp_enumerrorlogs
@@ -219,6 +214,7 @@ The following is a complete list of securables that are checked by the monitor t
   - msdb.dbo.sp_help_jobactivity
   - sys.xp_instance_regread
   - msdb.dbo.sp_help_job
+  - msdb.dbo.SQLAGENT_SUSER_SNAME
 
 The following is a complete list of securables checked by the monitor targeted to SQL Server Databases:
 
