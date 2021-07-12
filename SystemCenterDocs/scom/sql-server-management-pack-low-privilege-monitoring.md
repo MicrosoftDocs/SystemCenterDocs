@@ -106,9 +106,6 @@ This section explains how to configure low-privilege agent monitoring.
 
       USE [msdb]
       GO
-      GRANT EXECUTE ON msdb.dbo.sp_help_job TO [SQLMPLowPriv]
-      GRANT EXECUTE ON msdb.dbo.sp_help_jobactivity TO [SQLMPLowPriv]
-      GRANT EXECUTE ON msdb.dbo.SQLAGENT_SUSER_SNAME TO [SQLMPLowPriv]
       GRANT SELECT ON sysjobs_view TO [SQLMPLowPriv]
       GRANT SELECT ON sysschedules TO [SQLMPLowPriv]
       GRANT SELECT ON sysjobschedules TO [SQLMPLowPriv]
@@ -118,6 +115,9 @@ This section explains how to configure low-privilege agent monitoring.
       GRANT SELECT ON log_shipping_secondary_databases TO [SQLMPLowPriv]
       GRANT SELECT ON log_shipping_monitor_primary TO [SQLMPLowPriv]
       GRANT SELECT ON log_shipping_primary_databases TO [SQLMPLowPriv]
+      GRANT EXECUTE ON sp_help_job TO [SQLMPLowPriv]
+      GRANT EXECUTE ON p_help_jobactivity TO [SQLMPLowPriv]
+      GRANT EXECUTE ON SQLAGENT_SUSER_SNAME TO [SQLMPLowPriv]
       ```
 
 6. For the **msdb** database, assign the **SQLMPLowPriv** user both the **SQLAgentReaderRole** role and the **PolicyAdministratorRole** role:
@@ -241,9 +241,6 @@ This section explains how to configure low-privilege agentless monitoring.
 
     USE [msdb]
     GO
-    GRANT EXECUTE ON msdb.dbo.sp_help_job TO [SQLMPLowPriv]
-    GRANT EXECUTE ON msdb.dbo.sp_help_jobactivity TO [SQLMPLowPriv]
-    GRANT EXECUTE ON msdb.dbo.SQLAGENT_SUSER_SNAME TO [SQLMPLowPriv]
     GRANT SELECT ON sysjobs_view TO [SQLMPLowPriv]
     GRANT SELECT ON syscategories TO [SQLMPLowPriv]
     GRANT SELECT ON sysschedules TO [SQLMPLowPriv]
@@ -253,6 +250,9 @@ This section explains how to configure low-privilege agentless monitoring.
     GRANT SELECT ON log_shipping_secondary_databases TO [SQLMPLowPriv]
     GRANT SELECT ON log_shipping_monitor_primary TO [SQLMPLowPriv]
     GRANT SELECT ON log_shipping_primary_databases TO [SQLMPLowPriv]
+    GRANT EXECUTE ON sp_help_job TO [SQLMPLowPriv]
+    GRANT EXECUTE ON sp_help_jobactivity TO [SQLMPLowPriv]
+    GRANT EXECUTE ON SQLAGENT_SUSER_SNAME TO [SQLMPLowPriv]
     ```
 
 6. For the **msdb** database, assign the **SQLMPLowPriv** user both the **SQLAgentReaderRole** role and the **PolicyAdministratorRole** role:
