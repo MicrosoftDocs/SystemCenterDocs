@@ -161,58 +161,57 @@ The following is a complete list of securables that are checked by the monitor t
   - master.sys.dm_hadr_availability_group_states
   - master.sys.dm_hadr_availability_replica_states
   - master.sys.dm_hadr_database_replica_cluster_states
-  - sys.dm_os_performance_counters
-  - sys.dm_tran_active_transactions
-  - sys.dm_tran_session_transactions
-  - sys.dm_exec_sessions
-  - sys.dm_exec_requests
-  - sys.dm_exec_connections
-  - sys.dm_os_sys_info
-  - sys.dm_os_ring_buffers
-  - sys.dm_os_volume_stats
-  - sys.dm_server_services
-  - sys.dm_db_xtp_checkpoint_files
-  - sys.dm_db_xtp_table_memory_stats
-  - sys.dm_resource_governor_resource_pools
-  - sys.dm_db_xtp_hash_index_stats
-  - sys.dm_os_threads
+  - master.sys.dm_os_performance_counters
+  - master.sys.dm_tran_active_transactions
+  - master.sys.dm_tran_session_transactions
+  - master.sys.dm_exec_sessions
+  - master.sys.dm_exec_requests
+  - master.sys.dm_exec_connections
+  - master.sys.dm_os_sys_info
+  - master.sys.dm_os_ring_buffers
+  - master.sys.dm_os_volume_stats
+  - master.sys.dm_os_threads
+  - master.sys.dm_server_services
+  - master.sys.dm_db_xtp_checkpoint_files
+  - master.sys.dm_db_xtp_table_memory_stats
+  - master.sys.dm_db_xtp_hash_index_stats
+  - master.sys.dm_resource_governor_resource_pools
 
 - SELECT permission on catalog views
-  - msdb.dbo.syspolicy_object_sets
-  - msdb.dbo.syspolicy_policy_categories
-  - msdb.dbo.syspolicy_target_sets
-  - msdb.dbo.syspolicy_target_set_levels
-  - sys.dm_os_host_info
+
+  - master.sys.dm_os_host_info
+  - master.sys.availability_groups
+  - master.sys.databases
+  - master.sys.database_files
+  - master.sys.tables
+  - master.sys.filegroups
+  - master.sys.syscolumns
+  - master.sys.sysprocesses
+  - master.sys.availability_replicas
+  - master.sys.database_mirroring
+  - master.sys.configurations
   - msdb.dbo.syspolicy_policies
   - msdb.dbo.syspolicy_conditions
   - msdb.dbo.syspolicy_policy_execution_history
   - msdb.dbo.syspolicy_configuration
   - msdb.dbo.syspolicy_system_health_state
-  - sys.database_files
-  - sys.availability_groups
-  - sys.availability_replicas
-  - sys.databases
-  - sys.database_files
-  - sys.tables
-  - sys.filegroups
-  - sys.syscolumns
-  - sys.sysprocesses
-  - sys.availability_replicas
-  - sys.database_mirroring
-  - sys.configurations
+  - msdb.dbo.syspolicy_object_sets
+  - msdb.dbo.syspolicy_policy_categories
+  - msdb.dbo.syspolicy_target_sets
+  - msdb.dbo.syspolicy_target_set_levels
   - msdb.dbo.syspolicy_policy_execution_history_details
   - msdb.dbo.sysjobschedules
+  - msdb.dbo.syscategories
+  - msdb.dbo.sysjobs_view
   - msdb.dbo.log_shipping_primary_databases
   - msdb.dbo.log_shipping_secondary_databases
   - msdb.dbo.backupset
-  - msdb.dbo.syscategories
-  - msdb.dbo.sysjobs_view
 
 - EXECUTE permission on stored procedures
-  - sys.sp_enumerrorlogs
-  - sys.xp_readerrorlog
+  - master.sys.sp_enumerrorlogs
+  - master.sys.xp_readerrorlog
+  - master.sys.xp_instance_regread
   - msdb.dbo.sp_help_jobactivity
-  - sys.xp_instance_regread
   - msdb.dbo.sp_help_job
   - msdb.dbo.SQLAGENT_SUSER_SNAME
 
