@@ -217,7 +217,7 @@ This section explains how to configure low-privilege agentless monitoring.
 
 3. Create **SQLMPLowPriv** user in each user database, **master**, **msdb**, and **model** databases.
 
-4. Link **SQLMPLowPriv** users to the SQLMPLowPriv login:
+4. Link **SQLMPLowPriv** users to the **SQLMPLowPriv** login:
 
     ``` sql
     --  This script is an example of how to create new users
@@ -255,7 +255,7 @@ This section explains how to configure low-privilege agentless monitoring.
     GRANT SELECT ON log_shipping_primary_databases TO [SQLMPLowPriv]
     ```
 
-6. For the msdb database, assign the SQLMPLowPriv user both the SQLAgentReaderRole role and the PolicyAdministratorRole role:
+6. For the **msdb** database, assign the **SQLMPLowPriv** user both the **SQLAgentReaderRole** role and the **PolicyAdministratorRole** role:
 
     ``` sql
     USE [msdb]

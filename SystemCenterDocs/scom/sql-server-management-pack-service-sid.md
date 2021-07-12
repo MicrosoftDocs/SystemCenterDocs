@@ -94,14 +94,14 @@ To configure monitoring using Service Security Identifier, perform the following
     EXEC sp_addrolemember @rolename='SQLAgentReaderRole', @membername='SCOM_HealthService';
     ```
 
-6. To run SQL Server MP tasks, such as **Set database Offline**, **Set database Online**, and **Set database to Emergency state**, grant HealthService SID account the **ALTER ANY DATABASE** permission.
+6. To run SQL Server MP tasks, such as **Set database Offline**, **Set database Online**, and **Set database to Emergency state**, grant the HealthService SID account the **ALTER ANY DATABASE** permission.
 
     ```sql
     USE [master]
     GRANT ALTER ANY DATABASE TO [SCOM_HealthService];
     ```
 
-The NT AUTHORITY\SYSTEM account needs to be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.
+The NT AUTHORITY\SYSTEM account should be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.
 
 To configure HealthService Service SID for monitoring of SQL Server failover cluster, perform the following steps for each cluster node:
 
