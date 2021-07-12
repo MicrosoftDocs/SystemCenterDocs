@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 10/28/2020
+ms.date: 07/12/2021
 title: Add Modern Backup Storage to DPM
 ms.technology: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
@@ -354,7 +354,7 @@ Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 
 You can configure tiered storage volume in the following methods:
 
--	[Simple volume](#create-simple-tiered-volume-no-resiliency) – recommended when you are using storage from the NAS device or using a virtual machine. The resiliency should be provided by the underlying storage.
+-	[Simple volume](#create-simple-tiered-volume-no-resiliency) – recommended when you are using storage from the SAN device or using a virtual machine. The resiliency should be provided by the underlying storage.
 - [Resilient volume](#create-resilient-tiered-volume) – supported when you are using only locally attached storage (JBOD). Ensure that resiliency is not configured at the storage level.
 
 Before creating the tiered storage, you need to plan the column size.
