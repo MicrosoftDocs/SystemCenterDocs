@@ -58,7 +58,7 @@ This section explains how to configure low-privilege agent monitoring.
     - root\Microsoft\SqlServer\ComputerManagement14 (if exists)
     - root\Microsoft\SqlServer\ComputerManagement15 (if exists)
 
-5. On each monitored instance, grant the **SQLMPLowPriv** grop the **Read** permission at HKLM:\Software\Microsoft\Microsoft SQL Server\\[InstanceID]\MSSQLServer\Parameters.
+5. On each monitored instance, grant the **SQLMPLowPriv** group the **Read** permission at HKLM:\Software\Microsoft\Microsoft SQL Server\\[InstanceID]\MSSQLServer\Parameters.
 
 ### Extra Steps for Cluster SQL Server Instances
 
