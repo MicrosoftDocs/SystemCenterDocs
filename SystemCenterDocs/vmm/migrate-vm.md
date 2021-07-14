@@ -5,7 +5,7 @@ description: This article describes how to migrate a VM in VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
