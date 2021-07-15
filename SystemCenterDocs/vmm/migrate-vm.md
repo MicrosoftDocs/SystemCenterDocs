@@ -69,3 +69,8 @@ Note the following before you begin the migration:
     - If you dragged the virtual machine to a host group, the system rates each host in the host group and attempts to migrate the virtual machine to the most suitable of those hosts. For the migration to succeed, a virtual machine path must be configured on the host for the recommended volume.
 
 If you encounter difficulties using drag-and-drop, log out of VMM, and then log back in and try again. You can also try restarting the virtual machine, and then try again.
+
+## Next steps
+
+- [Migrate storage](migrate-storage.md)
+- [Run a live migration](migrate-live.md)
