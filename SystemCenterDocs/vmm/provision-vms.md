@@ -51,8 +51,8 @@ When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placem
 - Placement options can be selected as follows:
 
 	- **Create a new VM**: The placement process offers a suggestion for the host. If a self-service user creates a VM, the host is automatically assigned by VMM, based on the highest rating.
-	**[Migrate a VM](migrate-vm.md)**: During migration VMM provides host ratings to help you select a host.
-	**Convert a VM to Hyper-V**: The conversion wizard provides rating for hosts so that you can select the best one.
+	- **[Migrate a VM](migrate-vm.md)**: During migration VMM provides host ratings to help you select a host.
+	- **Convert a VM to Hyper-V**: The conversion wizard provides rating for hosts so that you can select the best one.
 
 ### Host ratings
 
