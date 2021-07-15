@@ -45,3 +45,7 @@ Storage migration enables you to move VM files from one storage location to anot
         2.  Select **Allow VHDs to be placed individually** to move one or more of the virtual machine files to a different location than the location of the configuration files. If you select this setting, in the **Disks** area, type the new path in the **Location** box for each virtual hard disk, or click **Browse** to browse to the location where you want to store the file. Note that if the virtual machine is running, and you change the path for any of the virtual hard drives, you also must specify a new path for the configuration files of the virtual machine, or the migration operation fails. You must enter the new path even if you want to leave the configuration files in their current location. In that case, you can create a new subfolder within the current location of the configuration files, and then select that new location in the **Storage location for VM configuration** box.
 
 4.  On the **Summary** page, click **Move** to begin moving the virtual machine files. Review progress in **Jobs**.
+
+## Next steps
+
+[Run a live migration](migrate-live.md)
