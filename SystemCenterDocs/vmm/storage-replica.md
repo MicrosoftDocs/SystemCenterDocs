@@ -203,3 +203,4 @@ If you want to stop replication you'll need to run this cmdlet at the source and
 
 - Learn more about [Storage Replica](/windows-server/storage/storage-replica/storage-replica-overview)
 - Learn about [allocating storage](hyper-v-storage.md) to Hyper-V hosts and clusters.
+- Learn more about [Migrate storage](migrate-storage.md)
