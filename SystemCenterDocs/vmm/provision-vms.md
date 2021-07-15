@@ -43,7 +43,7 @@ You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-
 
 ## VM placement
 
-When you deploy or migrate a VM, VMM uses intelligent VM placement to evaluate available hosts.
+When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placement to evaluate available hosts.
 
 - The placement algorithm analyzes performance data for the workload and the host, and then rates hosts on a scale of one to five stars to indicate the best placement choice.
 - Placement includes a preferred and possible owners feature that allows to specify which hosts are preferred and possible if failover of VMs occurs.
@@ -51,7 +51,7 @@ When you deploy or migrate a VM, VMM uses intelligent VM placement to evaluate a
 - Placement options can be selected as follows:
 
 	- **Create a new VM**: The placement process offers a suggestion for the host. If a self-service user creates a VM, the host is automatically assigned by VMM, based on the highest rating.
-	**Migrate a VM**: During migration VMM provides host ratings to help you select a host.
+	**[Migrate a VM](migrate-vm.md)**: During migration VMM provides host ratings to help you select a host.
 	**Convert a VM to Hyper-V**: The conversion wizard provides rating for hosts so that you can select the best one.
 
 ### Host ratings
