@@ -70,7 +70,7 @@ Before you deploy DPM to protect client computer data verify the deployment prer
 3.  **Set up the DPM protection agent** - The agent needs to be installed on client computers you want to protect.  Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 
-## Well Known Folders to backup on Client computers
+## Well known folders to backup on Client computers
 
 If you are looking to backup certain common folders in your client machines, you can select these folders from the *Well Known Folder* list in DPM and DPM will take backup of these folders on your client computers in subsequent backup cycles. Below is the list of the well known folders that you can backup with DPM:
 
