@@ -69,6 +69,50 @@ Before you deploy DPM to protect client computer data verify the deployment prer
 
 3.  **Set up the DPM protection agent** - The agent needs to be installed on client computers you want to protect.  Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
+
+## Well Known Folders to backup on Client computers
+
+If you are looking to backup certain common folders in your client machines, you can select these folders from the *Well Known Folder* list in DPM and DPM will take backup of these folders on your client computers in subsequent backup cycles. Below is the list of the well known folders that you can backup with DPM:
+
+| **Well Known Folder**    | **Location to all or every user on the client machine**                                  |
+|--------------------------|------------------------------------------------------------------------------------------|
+| AppData                  | c:\Users\USERNAME\AppData\Roaming                                                    |
+| User Profiles            | C:\Users\USERNAME OR %SystemDrive%\Users                                              |
+| Slide Shows              | C:\Users\USERNAME\Pictures                                                            |
+| Quick Launch             | C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch        |
+| Startup                  | C:\Users\USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup |
+| Start Menu               | C:\ProgramData\Microsoft\Windows\Start Menu                                          |
+| My Video                 | C:\Users\USERNAME\Videos                                                              |
+| My Pictures              | C:\Users\USERNAME\Pictures                                                            |
+| My Music                 | C:\Users\USERNAME\Music                                                               |
+| My Documents             | C:\Users\USERNAME\Documents                                                           |
+| Links                    | C:\Users\USERNAME\Links                                                               |
+| Favorites                | C:\Users\USERNAME\Favorites                                                           |
+| Downloads                | C:\Users\USERNAME\Downloads                                                           |
+| Desktop                  | C:\Users\USERNAME\Desktop                                                             |
+| Temporary Internet Files | C:\Users\USERNAME\AppData\Local\Microsoft\Windows\Inetcache                       |
+| Program Files            | C:\Program Files                                                                        |
+| System Drive             | C:\                                                                                     |
+
+> [!NOTE]
+> To backup *Links*, *Downloads*, *Slides Shows* and *Quick Launch* you need to add to the registry location
+"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" for every user.
+
+Details of the registry entry are below. Please modify the value USERNAME according to your username of the client computer.
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Links /t REG_SZ /d C:\Users\USERNAME\Links
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Downloads /t REG_SZ /d C:\Users\USERNAME\Downloads
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Slides Shows” /t REG_SZ /d C:\Users\USERNAME\Pictures
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Quick Launch” /t REG_SZ /d
+“C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\QuickLaunch”
+
+> [!NOTE]
+> While creating a protection group of your client or workstation machine note that DPM honors the folder hierarchy during backup. As an example if you select backup of *User Profiles* which represents the parent of *Desktop* folder, the *Desktop* folder will be included in backup. 
+
+
 ## Back up client computers
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
