@@ -100,13 +100,13 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folde
 
 Details of the registry entry are below. Please modify the value USERNAME according to your username of the client computer.
 
-reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Links /t REG_SZ /d C:\Users\USERNAME\Links
+- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Links /t REG_SZ /d C:\Users\USERNAME\Links
 
-reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Downloads /t REG_SZ /d C:\Users\USERNAME\Downloads
+- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Downloads /t REG_SZ /d C:\Users\USERNAME\Downloads
 
-reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Slides Shows” /t REG_SZ /d C:\Users\USERNAME\Pictures
+- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Slides Shows” /t REG_SZ /d C:\Users\USERNAME\Pictures
 
-reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Quick Launch” /t REG_SZ /d
+- reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v “Quick Launch” /t REG_SZ /d
 “C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\QuickLaunch”
 
 > [!NOTE]
