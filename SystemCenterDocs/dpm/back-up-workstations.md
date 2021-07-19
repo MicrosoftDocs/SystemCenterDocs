@@ -96,7 +96,7 @@ If you are looking to backup certain common folders in your client machines, you
 
 > [!NOTE]
 > To backup *Links*, *Downloads*, *Slides Shows* and *Quick Launch* you need to add to the registry location
-"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" for every user.
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders for every user.
 
 Details of the registry entry are below. Please modify the value USERNAME according to your username of the client computer.
 
