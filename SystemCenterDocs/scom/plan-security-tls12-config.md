@@ -178,6 +178,8 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
     * For ODBC 11.0, create the following ODBC 11.0.reg file:
 
          ```
+         Windows Registry Editor Version 5.00
+         
         [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
         "OpsMgrAC"="ODBC Driver 11 for SQL Server"
 
@@ -190,6 +192,8 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
     * For ODBC 13.0, create the following ODBC 13.0.reg file:
 
         ```
+        Windows Registry Editor Version 5.00
+        
         [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
         "OpsMgrAC"="ODBC Driver 13 for SQL Server"
 
