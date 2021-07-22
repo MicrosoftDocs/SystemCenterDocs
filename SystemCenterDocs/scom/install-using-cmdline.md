@@ -64,6 +64,7 @@ The following table lists the command-line parameters for installing features of
 |/SRSInstance|The reporting server and instance (<server\instance>).<br><br>Used for Reporting Server installations.|
 |/SendODRReports:|0: Do not opt in to sending operational data reports.<br><br>1: opt in to sending operational data reports.<br><br>Used for Reporting Server Installations.|
 |/uninstall|Uninstalls Operations Manager. Use **/components** to indicate specific features to uninstall. If **/components** is not specified, it will uninstall all features of Operations Manager on the server.|
+|/recover|Recover the Operations Manager Management Server. This will check if any other Management Servers in the Management Group are still online. If another Management Server is found online, the Setup will attempt to contact them and copy the registry entries needed to deal with RunAs Account Decryption. <br><br> If there are not any Management Servers detected, the Setup will re-generate a new decryption key. You will need to re-enter your existing RunAs Account passwords after the recovery completes.|
 
 ## Next steps
 
