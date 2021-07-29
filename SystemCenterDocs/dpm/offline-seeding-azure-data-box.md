@@ -219,9 +219,16 @@ To ensure that the failure is due to the [Issue](#issue) above, perform one of t
 
 #### Step 1
 
-Check if you see the following error message in the DPM console at the time of configuring offline backup:
+Check if you see one of the following error messages in the DPM/MABS console at the time of configuring offline backup:
 
-![Azure recovery services agent](./media/databox/azure-recovery-services-agent.png)
+**Unable to create Offline Backup policy for the current Azure account as this server’s authentication information could not be uploaded to Azure. (ID: 100242)**
+
+:::image type="content" source="./media/databox/azure-recovery-services-agent.png" alt-text="Azure recovery services agent.":::
+
+
+**Unable to make service calls to Azure that are required for querying Import Job status and moving backup data into the recovery Services Vault. (ID:100230)**
+
+:::image type="content" source="./media/databox/azure-recovery-services-agent-error-screen.png" alt-text="Screenshot of error screen for Azure recovery services agent.":::
 
 #### Step 2
 
