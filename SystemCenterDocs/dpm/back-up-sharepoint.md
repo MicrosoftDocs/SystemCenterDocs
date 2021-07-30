@@ -84,12 +84,11 @@ To back up SharePoint farm you configure protection for SharePoint by using Conf
 
     -   Enter the farm administrator credentials. This account should be a member of the local Administrator group on the WFE server. If the farm administrator isn't a local admin grant the following permissions on the WFE server:
 
-        -   Grant the WSS\_Admin\_WPG group full control to the DPM folder \(%Program Files%\\Microsoft Data Protection Manager\\DPM\).
-            -A
+        - Grant the WSS\_Admin\_WPG group full control to the DPM folder \(%Program Files%\\Microsoft Data Protection Manager\\DPM\).
 
-        -   Grant the WSS\_Admin\_WPG group read access to the DPM Registry key \(HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft Data Protection Manager\).
+        - Grant the WSS\_Admin\_WPG group read access to the DPM Registry key \(HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft Data Protection Manager\).
 
-        Ater running ConfigureSharePoint.exe  you'll need to rerun it if there's a change in the SharePoint farm administrator credentials.
+        After running ConfigureSharePoint.exe  you'll need to rerun it if there's a change in the SharePoint farm administrator credentials.
 
 2.  To create a protection group, click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
