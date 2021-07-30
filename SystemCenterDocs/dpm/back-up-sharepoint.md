@@ -302,7 +302,7 @@ The following procedure uses the example of a server farm with two front-end Web
 
 10. If you performed step 6, you can now remove the volume from the protection group.
 
-::: moniker range="<= sc-dpm-2019"
+::: moniker range="= sc-dpm-2019"
 
 ## Remove a database from a SharePoint farm
 
