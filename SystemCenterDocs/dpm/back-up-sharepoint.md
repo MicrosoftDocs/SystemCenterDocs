@@ -38,7 +38,7 @@ For information about troubleshooting, see [Troubleshooting SharePoint and DPM](
 
 -   You can't protect SharePoint databases as a SQL Server data source. You can recover individual databases from a farm backup.
 
--   Remember that for DPM runs as Local System and to backup SQL Server databases it needs sysadmin privileges on that account for the SQL server. On the SQL Server you want to back up set  NT AUTHORITY\\SYSTEM to sysadmin.
+-   Remember that for DPM runs as Local System and to back up SQL Server databases it needs sysadmin privileges on that account for the SQL server. On the SQL Server you want to back up set  NT AUTHORITY\\SYSTEM to sysadmin.
 
 -   For every 10 million items in the farm, there must be at least 2 GB of space on the volume where the DPM folder is located. This space is required for catalog generation. To enable you to use DPM to perform a specific recovery of items \(site collections, sites, lists, document libraries, folders, individual documents, and list items\), catalog generation creates a list of the URLs contained within each content database. You can view the list of URLs in the recoverable item pane in the Recovery task area of DPM Administrator Console.
 
@@ -94,7 +94,7 @@ To back up SharePoint farm you configure protection for SharePoint by using Conf
 
 3.  In **Select Protection Group Type** select **Servers**.
 
-4.  In **Select Group Members** expand the server that holds the WFE role. If there's more than one WFE server select the one on which you installed ConfigureSharePoint.exe. Learn more in [Deploy protection groups](create-dpm-protection-groups.md).
+4.  In **Select Group Members** expand the server that holds the WFE role. If there's more than one WFE server, select the one on which you installed ConfigureSharePoint.exe. Learn more in [Deploy protection groups](create-dpm-protection-groups.md).
 
     When you expand the SharePoint server  DPM queries VSS to see what data DPM can protect.  If the SharePoint database is remote DPM connects to it.        If SharePoint data sources don't appear, check that the VSS writer is running on the SharePoint server and any remote SQL Server, and ensure that the DPM agent is installed on both the SharePoint server and remote SQL Server. In addition ensure that SharePoint databases aren't being protected elsewhere as SQL Server databases.
 
@@ -124,7 +124,7 @@ To back up SharePoint farm you configure protection for SharePoint by using Conf
 
 11. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
-12. In **Specify online backup schedule** specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+12. In **Specify online backup schedule** specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
 
 13. In **Specify online retention policy** you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
@@ -301,3 +301,26 @@ The following procedure uses the example of a server farm with two front-end Web
    A consistency check will start.
 
 10. If you performed step 6, you can now remove the volume from the protection group.
+
+::: moniker range="= sc-dpm-2019"
+
+## Remove a database from a SharePoint farm
+
+When a database is removed from a SharePoint farm, DPM will skip the backup of that database, continue to back up other databases in the SharePoint farm, and alert the backup administrator.
+
+### DPM Alert - Farm Configuration Changed
+
+This is a warning alert that is generated in Data Protection Manager (DPM) when automatic protection of a SharePoint database fails. See the alert **Details** pane for more information about the cause of this alert.
+
+To resolve this alert, follow these steps:
+
+1. Verify with the SharePoint administrator if the database has actually been removed from the farm. If the database has been removed from the farm, then it must be removed from active protection in DPM.
+1. To remove the database from active protection:
+   1. In **MABS Administrator Console**, click **Protection** on the navigation bar.
+   1. In the **Display** pane, right-click the protection group for the SharePoint farm, and then click **Stop Protection of member**.
+   1. In the **Stop Protection** dialog box, click **Retain Protected Data**.
+   1. Click **Stop Protection**.
+
+You can add the SharePoint farm back for protection by using the **Modify Protection Group** wizard. During re-protection, select the SharePoint front-end server and click **Refresh** to update the SharePoint database cache, then select the SharePoint farm and proceed.
+
+::: moniker-end
