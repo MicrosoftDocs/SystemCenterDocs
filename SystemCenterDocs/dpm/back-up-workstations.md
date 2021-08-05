@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 06/09/2021
+ms.date: 07/19/2021
 title: Back up client computers with DPM
 ms.technology: data-protection-manager
 ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
@@ -110,7 +110,7 @@ Details of the registry entry are below. Please modify the value USERNAME accord
 “C:\Users\USERNAME\AppData\Roaming\Microsoft\Internet Explorer\QuickLaunch”
 
 > [!NOTE]
-> While creating a protection group of your client or workstation machine note that DPM honors the folder hierarchy during backup. As an example if you select backup of *User Profiles* which represents the parent of *Desktop* folder, the *Desktop* folder will be included in backup. 
+> While creating a protection group of your client or workstation machine note that DPM honors the folder hierarchy during backup. As an example if you select backup of *User Profiles* which represents the parent of *Desktop* folder, the *Desktop* folder will be included in backup.
 
 
 ## Back up client computers
