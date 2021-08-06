@@ -130,6 +130,32 @@ The following is a list that explains the default state of each of the space mon
 	- Targeted to the In-Memory OLTP Data container
 		- Memory-Optimized Data Filegroup Container Free Space
 
+## Disabled Space Monitoring Workflows for SQL on Linux
+
+The following workflows are disabled by default as they are not provided with the necessary data by the SQL Server on Linux:
+
+- Rules
+  - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (MB)
+  - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (%)
+  - MSSQL on Linux: DB FILESTREAM Filegroup Free Space Total (%)
+  - MSSQL on Linux: DB FILESTREAM Filegroup Free Space Total (MB)
+  - MSSQL on Linux: DB Filegroup Free Space Total (%)
+  - MSSQL on Linux: DB Filegroup Free Space Total (MB)
+  - MSSQL on Linux: DB Filegroup Allocated Free Space (%)
+  - MSSQL on Linux: DB Filegroup Allocated Free Space (MB)
+  - MSSQL on Linux: DB Free Outer Space (MB)
+  - MSSQL on Linux: DB Allocated Free Space (MB)
+  - MSSQL on Linux: DB Transaction Log Free Space Total (%)
+  - MSSQL on Linux: DB Allocated Space Used (MB)
+  - MSSQL on Linux: DB Free Space Total (%)
+  - MSSQL on Linux: DB Free Space Total (MB)
+  - MSSQL on Linux: DB Allocated Space (MB)
+- Monitors
+  - DB Free Space Left
+  - DB Space Percentage Change
+  - Transaction Log Free Space (%)
+  - DB FILESTREAM Filegroup Free Space
+
 ## Many Databases on the Same Drive
 
 Space monitoring introduced in this management pack may be noisy in environments where many databases share the same media and have the **autogrowth** setting enabled. In such cases, an alert for each database is generated when the amount of free space on the hard drive reaches the threshold.
