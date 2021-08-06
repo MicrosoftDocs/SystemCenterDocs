@@ -47,6 +47,9 @@ After you have your DPM infrastructure set up you can enable protection machines
 
 3.  In **Select Group Members** you'll add the machines for which you want to back up file data to the protection group. On those machines you select the locations, shares, and folders you want to protect.  [Deploy protection groups](create-dpm-protection-groups.md). You can select different types of folders (such as Desktop) or different file  or the entire volume. You can also exclude specific locations from protection.
 
+>![NOTE]
+>Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to backup the volume with deduplication enabled.
+
 4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
 5.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.  In **Retention range** you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
