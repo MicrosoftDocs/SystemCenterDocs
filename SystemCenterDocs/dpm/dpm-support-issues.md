@@ -172,8 +172,8 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 ## <a name="BKMK_Dedup"></a>Deduplication issues
 
 ### Deduplicated volumes support
->![NOTE]
->Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to backup the volume with deduplication enabled.
+  >![NOTE]
+  >Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to backup the volume with deduplication enabled.
 
 **For NTFS Volumes:**
 
