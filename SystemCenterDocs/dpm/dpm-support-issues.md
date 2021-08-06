@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 05/31/2020
+ms.date: 08/05/2021
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -172,7 +172,7 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 ## <a name="BKMK_Dedup"></a>Deduplication issues
 
 ### Deduplicated volumes support
-**Note**: Deduplication support for DPM depends on operating system support.
+**Note**: Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable.md) server role must be installed on the DPM server to backup the volume with deduplication enabled. 
 
 **For NTFS Volumes:**
 
