@@ -84,7 +84,7 @@ select processid from infra.process where processname = 'DWMaintenance'
 select * from infra.ProcessModule where ProcessId = {ProcessId from previous query} (Note the ProcessModuleId where the VertexName is ManageCubePartitions/ManageCubeTranslaions)  
 Select * from infra.batch where ProcessId = {ProcessId from previous query} (Note the BatchId from the largest batch)  
 select * from infra.WorkItem where BatchId = {BatchId from previous query}  
-update infra.workitem set statusid = 3 where workitemId = {workitemId for the step that is hung with the corresponding processmoduleid for ManageCubePartitions/ManageCubeTranslations)  
+update infra.workitem set statusid = 3 where workitemId = {workitemId for the step that is not responding with the corresponding processmoduleid for ManageCubePartitions/ManageCubeTranslations)  
 
 ```  
 
