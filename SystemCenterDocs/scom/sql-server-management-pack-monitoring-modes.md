@@ -29,7 +29,7 @@ Management Pack for SQL Server provides the following monitoring modes:
     
     - Shared Memory
 
-- **Agentess monitoring**
+- **Agentless monitoring**
 
     This monitoring mode supports both SQL on Linux and SQL on Windows.
 
