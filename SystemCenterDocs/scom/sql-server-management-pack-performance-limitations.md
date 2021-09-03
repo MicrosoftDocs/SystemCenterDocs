@@ -16,7 +16,7 @@ ms.technology: operations-manager
 Management Pack for SQL Server occupies certain amount of memory and CPU capacity in order to monitor your SQL environment. The following table provides statistics on memory and CPU consumption per SKU type, depending on the number of databases being monitored.
 
 >[!NOTE]
->Metrics below are applicable to Management Pack for SQL Server only; capacities that are consumed by other management packs and resources are not considered in this table. Also, Management Pack for SQL Server is capable of monitoring 2300 databases per instance and no more than 50 instances per SQL server.
+>Metrics below are applicable to Management Pack for SQL Server only; capacities that are consumed by other management packs and resources are not considered in this table. Also, Management Pack for SQL Server supports monitoring of no more than 2300 databases on a single instance and no more than 50 SQL Server instances on a single machine.
 
 |SKU type|Total v-cores|RAM (GB)|SQL Server edition|Number of monitored databases per DB Engine|Database supports In-Memory OLTP|Total CPU utilization|Total memory reserved|
 |-|-|-|-|-|-|-|-|
@@ -35,8 +35,8 @@ Management Pack for SQL Server occupies certain amount of memory and CPU capacit
 |Standard D8s_v3|8|32|2016 SP1 Enterprise|1000|Yes|9%|63%|
 |Standard D8s_v3|8|32|2017 Enterprise|1000|Yes|9%|72%|
 |Standard D8s_v3|8|32|2019 Enterprise|1000|Yes|8%|78%|
-|Standard D16as_v4|16|64|2012 SP4 Enterprise|2000|No|||
-|Standard D16as_v4|16|64|2014 SP3 Enterprise|2000|Yes|||
-|Standard D16as_v4|16|64|2016 SP1 Enterprise|2000|Yes|||
-|Standard D16as_v4|16|64|2017 Enterprise|2000|Yes|||
-|Standard D16as_v4|16|64|2019 Enterprise|2000|Yes|||
+|Standard D16as_v4|16|64|2012 SP4 Enterprise|2000|No|5%|19%|
+|Standard D16as_v4|16|64|2014 SP3 Enterprise|2000|Yes|60%|25%|
+|Standard D16as_v4|16|64|2016 SP1 Enterprise|2000|Yes|11%|70%|
+|Standard D16as_v4|16|64|2017 Enterprise|2000|Yes|26%|78%|
+|Standard D16as_v4|16|64|2019 Enterprise|2000|Yes|10%|55%|
