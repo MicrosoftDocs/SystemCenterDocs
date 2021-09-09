@@ -5,7 +5,7 @@ description: This article describes how to provision Windows server as Hyper-V h
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 10/14/2020
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -47,7 +47,11 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 2. Click **Add group** > **Add Resources** > **Hyper-V hosts and Clusters**.
 3. In the **Add Resource Wizard** > **Resource location**, select where the server you want to add is located.
 	- If you're adding a host in a perimeter network select **Windows Server computer in a perimeter network**.
-4. In **Credentials**, specify credentials for a domain account that has administrative permissions on all hosts that you want to add. (For computers in an untrusted domain, you must use a RunAs account.)
+4. In **Credentials**, specify credentials for a domain account that has administrative permissions on all hosts that you want to add. (For computers in an untrusted domain, you must use a Run As account.)
+	 >[!NOTE]
+	 > The above provided credentials or Run As account should be a local administrator on the host machines. If a Run As account is provided, then it will be used while adding the host as well as for providing future access to the host during its lifetime. If credentials are entered manually, then they will only be used while adding the host. Once the host has been successfully added, the VMM service account will be added as local administrator on the host and used to provide any future access to it.
+
+
 5. In **Discovery scope** specify:
 
 	- **Same domain or domains with two-way trust**:
