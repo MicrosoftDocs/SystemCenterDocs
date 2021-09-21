@@ -8,6 +8,7 @@ ms.date: 10/03/2018
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: intro-installation
 ---
 
 

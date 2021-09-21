@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-2016'
+ms.custom: intro-deployment
 ---
 
 # Deploy and manage Nano server-based Hyper-V hosts or VMs in VMM

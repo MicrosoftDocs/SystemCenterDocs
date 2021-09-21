@@ -8,6 +8,7 @@ ms.topic: reference
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
+ms.custom: intro-deployment
 ---
 
 # Deploy the IBM Tivoli Netcool OMNIbus integration pack for System Center - Orchestrator

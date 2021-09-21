@@ -8,6 +8,7 @@ ms.date: 04/15/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
+ms.custom: intro-overview
 ---
 
 # What is Service Provider Foundation?

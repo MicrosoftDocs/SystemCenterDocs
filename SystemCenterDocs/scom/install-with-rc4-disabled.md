@@ -6,7 +6,7 @@ author: v-anesh
 manager: evansma
 ms.author: v-anesh
 ms.date: 06/18/2021
-ms.custom: na
+ms.custom: na, intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

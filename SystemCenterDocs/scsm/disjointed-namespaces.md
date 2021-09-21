@@ -2,7 +2,7 @@
 title: Deployment considerations with a disjointed namespace
 description: This article helps you avoid Service Manager Setup problems with disjointed namespaces.
 manager: carmonm
-ms.custom: na
+ms.custom: na, intro-deployment
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur

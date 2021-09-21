@@ -8,6 +8,7 @@ ms.author: v-jysur
 ms.date: 04/27/2020
 ms.technology: service-manager
 ms.topic: article
+ms.custom: intro-deployment
 ---
 
 # Deploy the Self-Service portal for Service Manager

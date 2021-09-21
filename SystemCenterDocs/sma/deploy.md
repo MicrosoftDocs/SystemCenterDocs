@@ -5,10 +5,10 @@ ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords:
 ms.date: 01/22/2018
 title: Deploy Service Management Automation
 ms.technology: service-management-automation
+ms.custom: intro-deployment
 ---
 
 # Deploy Service Management Automation
