@@ -8,6 +8,7 @@ ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 ms.author: raynew
+ms.custom: intro-installation
 ---
 
 # Installation

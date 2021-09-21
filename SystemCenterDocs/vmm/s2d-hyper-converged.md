@@ -9,6 +9,7 @@ ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: intro-deployment
 ---
 
 # Deploy a Storage Spaces Direct hyper-converged cluster in VMM

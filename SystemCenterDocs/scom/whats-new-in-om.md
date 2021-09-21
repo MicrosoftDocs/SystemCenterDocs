@@ -6,7 +6,7 @@ author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
 ms.date: 06/04/2021
-ms.custom: na
+ms.custom: na, intro-whats-new
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
