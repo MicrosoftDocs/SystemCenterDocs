@@ -8,6 +8,7 @@ ms.author: v-jysur
 ms.date: 10/13/2020
 ms.technology: service-manager
 ms.topic: article
+ms.custom: intro-deployment
 ---
 
 # Deploy System Center - Service Manager

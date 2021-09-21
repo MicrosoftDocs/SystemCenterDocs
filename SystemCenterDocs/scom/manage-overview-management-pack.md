@@ -6,7 +6,7 @@ author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 04/29/2019
-ms.custom: na
+ms.custom: na, intro-overview
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

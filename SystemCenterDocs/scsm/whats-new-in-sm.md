@@ -9,6 +9,7 @@ ms.date: 05/10/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
+ms.custom: intro-whats-new
 ---
 
 

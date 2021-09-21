@@ -2,7 +2,7 @@
 title: Deploy additional Service Manager management servers
 description: Deploy additional Service Manager management servers to load-balance additional Service Manager consoles or to support your disaster recovery strategy.
 manager: carmonm
-ms.custom: na
+ms.custom: na, intro-deployment
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur

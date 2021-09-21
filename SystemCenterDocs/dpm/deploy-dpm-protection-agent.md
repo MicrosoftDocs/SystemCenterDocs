@@ -5,11 +5,11 @@ ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords:
 ms.date: 08/24/2021
 title: Deploy the DPM protection agent
 ms.technology: data-protection-manager
 ms.assetid: 502fff45-79b5-477b-af4f-3b8a39bdde1a
+ms.custom: intro-deployment
 ---
 
 # Deploy the DPM protection agent
