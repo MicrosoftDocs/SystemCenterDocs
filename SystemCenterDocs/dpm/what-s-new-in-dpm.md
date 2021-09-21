@@ -4,12 +4,12 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords:
 ms.date: 03/30/2021
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ms.author: raynew
+ms.custom: intro-whats-new
 ---
 
 # What's new in System Center Data Protection Manager

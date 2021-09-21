@@ -4,12 +4,12 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords:
 ms.date: 3/5/2018
 title: Deploy protection groups
 ms.technology: data-protection-manager
 ms.assetid: 2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
 ms.author: raynew
+ms.custom: intro-deployment
 ---
 
 # Deploy protection groups

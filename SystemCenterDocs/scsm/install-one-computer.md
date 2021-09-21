@@ -9,6 +9,7 @@ ms.date: 01/23/2018
 ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
+ms.custom: intro-installation
 ---
 
 # Install Service Manager on a single computer (minimum configuration)

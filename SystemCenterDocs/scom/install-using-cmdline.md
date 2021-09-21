@@ -6,7 +6,7 @@ author: JYOTHIRMAISURI
 manager: vvithal
 ms.author: v-jysur
 ms.date: 01/24/2018
-ms.custom: na
+ms.custom: na, intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

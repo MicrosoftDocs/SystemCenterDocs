@@ -1,7 +1,7 @@
 ---
 title: Deploy Program activity
 description: Describes the configurable properties for the Deploy Program activity for Configuration Manager Integration Pack.
-ms.custom: na
+ms.custom: na, intro-deployment
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -13,7 +13,7 @@ ms.assetid: 62285d61-2831-46bb-8a6b-b0de2b69476d
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
+ROBOTS: noindex
 ---
 
 # Deploy Program activity for Configuration Manager Integration Pack
