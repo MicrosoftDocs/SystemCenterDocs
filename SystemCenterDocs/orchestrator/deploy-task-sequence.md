@@ -1,7 +1,7 @@
 ---
 title: Deploy Task Sequence activity
 description: Describes the configurable properties for the Deploy Task Sequence activity for Configuration Manager Integration Pack.
-ms.custom: na
+ms.custom: na, intro-deployment
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -13,7 +13,7 @@ ms.assetid: d79a77be-37ae-4831-b7f9-42f2528c589f
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
+ROBOTS: noindex
 ---
 
 # Deploy Task Sequence activity for Configuration Manager Integration Pack
