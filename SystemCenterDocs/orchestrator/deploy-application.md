@@ -1,7 +1,7 @@
 ---
 title: Deploy application activity
 description: Describes the configurable properties for the Deploy Application activity for Configuration Manager Integration Pack.
-ms.custom: na
+ms.custom: na, intro-deployment
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -13,7 +13,7 @@ ms.assetid: b1197648-35b2-4366-886e-1c93dca4f1cf
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
+ROBOTS: noindex
 ---
 
 # Deploy application activity
