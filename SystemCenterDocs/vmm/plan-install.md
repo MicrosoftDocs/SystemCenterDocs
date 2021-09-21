@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 09/09/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
