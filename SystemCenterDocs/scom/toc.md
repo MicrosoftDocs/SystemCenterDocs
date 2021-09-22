@@ -271,6 +271,7 @@
 ### [Management Pack for SQL Server Delivery](sql-server-management-pack-management-pack-delivery.md)
 ### [Monitoring Configuration in Management Pack for SQL Server](sql-server-management-pack-monitoring-configuration.md)
 #### [Monitoring Modes](sql-server-management-pack-monitoring-modes.md)
+#### [Monitoring Performance and Limitations](sql-server-management-pack-performance-limitations.md)
 #### [How Health Rolls Up](sql-server-management-pack-how-health-roll-up.md)
 #### [SQL Server Monitoring Pool](sql-server-management-pack-sql-server-monitoring-pool.md)
 #### [Disabling Monitoring of SQL Servers and Databases](sql-server-management-pack-disabling-monitoring.md)
