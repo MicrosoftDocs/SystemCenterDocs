@@ -116,7 +116,7 @@ This section explains how to configure low-privilege agent monitoring.
       GRANT SELECT ON log_shipping_monitor_primary TO [SQLMPLowPriv]
       GRANT SELECT ON log_shipping_primary_databases TO [SQLMPLowPriv]
       GRANT EXECUTE ON sp_help_job TO [SQLMPLowPriv]
-      GRANT EXECUTE ON p_help_jobactivity TO [SQLMPLowPriv]
+      GRANT EXECUTE ON sp_help_jobactivity TO [SQLMPLowPriv]
       GRANT EXECUTE ON SQLAGENT_SUSER_SNAME TO [SQLMPLowPriv]
       ```
 
