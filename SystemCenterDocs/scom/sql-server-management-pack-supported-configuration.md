@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration for Man
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 5/31/2021
+ms.date: 9/24/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -59,7 +59,11 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 - Authentication Mode — both SQL Server Authentication and Windows Authentication are supported.
 - [Not supported] Localized versions of SQL Server
 
-  Management Pack can only work with the English-language version of SQL Server.
+  Management Pack for SQL Server supports English-language version of SQL Server only.
+
+- The **Upgrade from a previous version of SQL Server** feature
+
+  You can upgrade your SQL Server to a newer version. After the upgrade, make sure to restart either the HealthService agent on the target machine or the machine itself.
 
 >[!NOTE]
 >Since Management Pack for SQL Server is unhosted, fully qualified domain names (FQDNs) are no longer displayed in System Center Operations Manager object names and alert properties.
