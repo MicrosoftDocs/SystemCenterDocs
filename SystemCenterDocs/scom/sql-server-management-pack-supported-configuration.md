@@ -61,7 +61,7 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 
   Management Pack for SQL Server supports English-language version of SQL Server only.
 
-- The **Upgrade from a previous version of SQL Server** feature
+- Upgrade from a previous version of SQL Server
 
   You can upgrade your SQL Server to a newer version. After the upgrade, make sure to restart either the HealthService agent on the target machine or the machine itself.
 
