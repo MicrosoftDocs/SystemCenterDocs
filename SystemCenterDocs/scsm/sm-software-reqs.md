@@ -40,8 +40,7 @@ This article describes the software requirements for Service Manager in System C
 |Computers accessing the Self-Service Portal|The Self Service portal needs a screen resolution above 1024 X 768. It is supported on the following browsers. <br> - Microsoft Edge <br> - Microsoft Internet Explorer 10 and 11 <br> - Mozilla Firefox 42 and later <br> -Google Chrome 46 and later|  
 |SQL Server Reporting Services|In a deployment topology where the computer hosting SSRS is not on the same computer that hosts the data warehouse management server, you have to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. For more information, see [Manual Steps to Configure the Remote SQL Server Reporting Services](config-remote-ssrs.md).|  
 
- \* For more information about the ADO.NET Data Service Update, see [ADO.NET Data Services Update for .NET Framework 3.5](https://www.microsoft.com/download/details.aspx?displaylang=en&id=2343).  
-
+ \* For more information about the ADO.NET Data Service Update, see [ADO.NET Data Services Update for .NET Framework 3.5](https://support.microsoft.com/topic/description-of-the-ado-net-data-services-update-for-net-framework-3-5-sp1-for-windows-server-2003-windows-xp-windows-vista-and-windows-server-2008-may-7-2010-e525c2b3-249c-7d66-3cb2-c029c786c745).  
 
 ### Operations Manager
 
