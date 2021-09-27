@@ -413,7 +413,7 @@ The hardware configuration of this server was an HP Blade G6 with 24 core proces
 
 ### Initial database sizing
 
-Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment is not a simple exercise. While the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it does not take into account several factors, which can influence growth in the near term versus long term.  
+Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment is not a simple exercise. While the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075)  is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it does not take into account several factors, which can influence growth in the near term versus long term.  
 
 The initial database size, as suggested by the Sizing Helper, should be allocated to a predicted size, to reduce fragmentation and corresponding overhead, which can be specified at setup time for the Operational and Data Warehouse databases. If during setup not enough storage space is available, the databases can be expanded later by using SQL Management Studio and then reindexed thereafter to defragment and optimize accordingly. This recommendation applies also to the ACS database.
 
@@ -443,7 +443,7 @@ It is important to understand that there is no right answer here, and the optimi
 
 ### Virtualizing SQL Server
 
-In virtual environments, for performance reasons, it is recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. Always use the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  to estimate required IOPS, and stress test your data disks to verify. You can leverage the SQLIO tool for this task.  See also [Operations Manager virtualization support](system-requirements.md) for additional guidance on virtualized Operations Manager environment.  
+In virtual environments, for performance reasons, it is recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. Always use the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075)  to estimate required IOPS, and stress test your data disks to verify. You can leverage the SQLIO tool for this task.  See also [Operations Manager virtualization support](system-requirements.md) for additional guidance on virtualized Operations Manager environment.  
 
 ### Always On and recovery model
 
