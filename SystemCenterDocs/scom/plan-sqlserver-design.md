@@ -26,7 +26,7 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 In a medium to enterprise-scale distributed deployment, the SQL Server instance should be located on a dedicated standalone server or in a SQL Server high-availability configuration. In either case, SQL Server must already exist and is accessible before you start the installation of the first management server or ACS collector.
 
-We do not recommend utilization of Operations Manager databases from SQL Instance that has other application databases. This is to avoid any potential issues with I/O and other hardware resource restrictions.
+We do not recommend utilization of Operations Manager databases from an SQL Instance that has other application databases. This is to avoid any potential issues with I/O and other hardware resource restrictions.
 
 
 ## SQL Server requirements
@@ -307,7 +307,7 @@ In general, previous deployment experience with customers shows that performance
 
 Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager.  Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing.  The I/O behavior pattern of Operations Manager is typically 80% writes and 20% reads.  As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
 
-It is important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Make sure these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://gallery.technet.microsoft.com/DiskSpd-a-robust-storage-6cd2f223) to evaluate the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code, and [capturing the results using PerfMon](/archive/blogs/josebda/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares).  You can also refer to the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  for initial guidance.
+It is important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Make sure these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://github.com/Microsoft/diskspd) to evaluate the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code, and [capturing the results using PerfMon](/archive/blogs/josebda/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares).  You can also refer to the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075)  for initial guidance.
 
 ### NTFS allocation unit size
 
@@ -413,7 +413,7 @@ The hardware configuration of this server was an HP Blade G6 with 24 core proces
 
 ### Initial database sizing
 
-Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment is not a simple exercise. While the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it does not take into account several factors, which can influence growth in the near term versus long term.  
+Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment is not a simple exercise. While the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075)  is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it does not take into account several factors, which can influence growth in the near term versus long term.  
 
 The initial database size, as suggested by the Sizing Helper, should be allocated to a predicted size, to reduce fragmentation and corresponding overhead, which can be specified at setup time for the Operational and Data Warehouse databases. If during setup not enough storage space is available, the databases can be expanded later by using SQL Management Studio and then reindexed thereafter to defragment and optimize accordingly. This recommendation applies also to the ACS database.
 
@@ -443,7 +443,7 @@ It is important to understand that there is no right answer here, and the optimi
 
 ### Virtualizing SQL Server
 
-In virtual environments, for performance reasons, it is recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. Always use the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  to estimate required IOPS, and stress test your data disks to verify. You can leverage the SQLIO tool for this task.  See also [Operations Manager virtualization support](system-requirements.md) for additional guidance on virtualized Operations Manager environment.  
+In virtual environments, for performance reasons, it is recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. Always use the [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075)  to estimate required IOPS, and stress test your data disks to verify. You can leverage the SQLIO tool for this task.  See also [Operations Manager virtualization support](/system-center/scom/system-requirements#virtualization) for additional guidance on virtualized Operations Manager environment.  
 
 ### Always On and recovery model
 
