@@ -26,7 +26,7 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 In a medium to enterprise-scale distributed deployment, the SQL Server instance should be located on a dedicated standalone server or in a SQL Server high-availability configuration. In either case, SQL Server must already exist and is accessible before you start the installation of the first management server or ACS collector.
 
-We do not recommend utilization of Operations Manager databases from SQL Instance that has other application databases. This is to avoid any potential issues with I/O and other hardware resource restrictions.
+We do not recommend utilization of Operations Manager databases from an SQL Instance that has other application databases. This is to avoid any potential issues with I/O and other hardware resource restrictions.
 
 
 ## SQL Server requirements
