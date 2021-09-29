@@ -5,7 +5,7 @@ description: This article explains how to configure monitoring with service SID
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 9/29/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -102,47 +102,3 @@ To configure monitoring using Service Security Identifier, perform the following
     ```
 
 The NT AUTHORITY\SYSTEM account should be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.
-
-To configure HealthService Service SID for monitoring of SQL Server failover cluster, perform the following steps for each cluster node:
-
-1. Launch **mmc.exe** and add the following snap-ins:
-
-    - Component Services
-    - WMI Control (for the local computer)
-
-2. Expand **Component Services**, right-click **My Computer**, select **Properties**, and open the **Security** tab.
-
-3. In the **Launch and Activation Permissions** section, click **Edit Limits**.
-
-    ![Editing limits](./media/sql-server-management-pack/editing-limits.png)
-
-4. In the **Launch and Activation Permission** window, enable the following permissions for the NT SERVICE\\HealthService account:
-
-    - Remote Launch
-    - Remote Activation
-
-    ![Allowing permissions](./media/sql-server-management-pack/allowing-permissions.png)
-
-5. Go to the WMI Control snap-in and open its properties.
-
-6. Open the **Security** tab, select the **Root\\CIMV2** namespace, and click **Security**.
-
-7. Enable the following permissions for the NT SERVICE\\HealthService account:
-
-    - Enable Account
-    - Remote Enable
-
-    ![HealthService permissions](./media/sql-server-management-pack/health-service-permissions.png)
-
-8. Click **Advanced**.
-
-9. In the **Permissions Entry for CIMV2** window, select a HealthService account, and click **Edit**. 
-
-10. From the **Applies to** drop-down list, select **This namespace only**.
-
-11. In the **Permissions** section, enable the following checkboxes:
-
-    - Enable Account
-    - Remote Enable
-
-    ![CIMV permissions](./media/sql-server-management-pack/permissions-cimv.png)
