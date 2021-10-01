@@ -25,7 +25,7 @@ ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
 Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage.
 
 - MBS is enabled automatically when you're running at least DPM 2016 on Windows Server 2016. If DPM is running on a version of Windows Server older than Windows Server 2016, it doesn't use MBS.
-- MBS provides intelligent storage for short-term backup to disk.  MBS provides faster disk backup, consuming less disk space. Without MBS, each data source needs two volumes, one for the initial backup and the other for delta changes.
+- MBS provides intelligent storage for short-term backup to disk.  MBS provides faster disk backup and consumes less disk space. Without MBS, each data source needs two volumes, one for the initial backup and the other for delta changes.
 - MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology, [Learn more](https://techcommunity.microsoft.com/t5/system-center-blog/introducing-dpm-2016-modern-backup-storage/ba-p/351650).
 
 > [!NOTE]
