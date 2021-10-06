@@ -136,9 +136,7 @@ You can also change the hostname and domain name on the certificate by using the
 Restart the agent by running the following command:  
 
 ```  
-
 /opt/microsoft/scx/bin/tools/scxadmin -restart  
-
 ```  
 
 **To add an entry to the hosts file:**  
@@ -248,19 +246,19 @@ This verbose tracing method is used to see the Windows Remote Management (WinRM)
 
 2.  Type the following commands at the command prompt:  
 
-    1.  cd C:\Program Files\Microsoft System Center 2016\Operations Manager\Tools  
+    1.  `cd C:\Program Files\Microsoft System Center 2016\Operations Manager\Tools`
 
-    2.  StopTracing.cmd  
+    2.  `StopTracing.cmd` 
 
-    3.  StartTracing.cmd VER  
+    3.  `StartTracing.cmd VER`
 
 3.  Reproduce the failing issue in Operations Manager.  
 
 4.  Type the following commands at the command prompt:  
 
-    1.  StopTracing.cmd  
+    1.  `StopTracing.cmd`
 
-    2.  FormatTracing.cmd  
+    2.  `FormatTracing.cmd`
 
 5.  Search for WS-Man in the TracingGuidsNative.log file.  
 
@@ -268,7 +266,7 @@ This verbose tracing method is used to see the Windows Remote Management (WinRM)
 > WinRM is also known as WS-Management (WS-Man).  
 
 > [!NOTE]  
-> The FormatTracing command opens a Windows Explorer window displaying the c:\Windows\temp\OpsMgrTrace directory. The TracingGuidsNative.log file is in that directory.
+> The FormatTracing command opens a Windows Explorer window displaying the `C:\Windows\Temp\OpsMgrTrace` directory. The TracingGuidsNative.log file is in that directory.
 
 ## Manage UNIX and Linux Log Files
 The Operations Manager Agents for UNIX and Linux do not limit the size of the agent log files.  In order to control the maximum size of the log files, implement a process to manage the log files.  For example, the standard utility logrotate is available on many UNIX and Linux operating systems. The logrotate utility can be configured to control the log files used by the Operations Manager Agents for UNIX or Linux. After rotating or modifying the log files of the agent, the agent must be signaled that logs have rotated in order to resume logging.  The scxadmin command can be used with the -log\-rotate parameter with the following syntax:  
@@ -276,89 +274,59 @@ The Operations Manager Agents for UNIX and Linux do not limit the size of the ag
 `scxadmin -log-rotate all`  
 
 ### Example Logrotate configuration file  
-The following example demonstrates a configuration file to rotate the scx.log files as well as omiserver.log with the logrotate utility of Linux. Typically, logrotate will run as a scheduled job (with crond) and act on configuration files found in /etc/logrotate.d.  To test and use this configuration file, modify the configuration to be appropriate for your environment, and link or save the file in /etc/logrotate.d.  
+The following example demonstrates a configuration file to rotate the scx.log files as well as omiserver.log with the [logrotate](https://linux.die.net/man/8/logrotate) utility of Linux. Typically, logrotate will run as a scheduled job (with crond) and act on configuration files found in `/etc/logrotate.d`.  To test and use this configuration file, modify the configuration to be appropriate for your environment, and link or save the file in `/etc/logrotate.d`.  
+```
+#opsmgr.lr  
 
-\#opsmgr.lr  
+#Rotate scx.log  
+#Weekly rotation, retain four weeks of compressed logs  
+#Invoke scxadmin -log-rotate to resume logging after rotation  
 
-\#Rotate scx.log  
-
-\#Weekly rotation, retain four weeks of compressed logs  
-
-\#Invoke scxadmin \-log\-rotate to resume logging after rotation  
-
-\/var\/opt\/microsoft\/scx\/log\/scx.log {  
-
+/var/opt/microsoft/scx/log/scx.log {  
 rotate 4  
-
 weekly  
-
 compress  
-
 missingok  
-
 notifempty  
-
 postrotate  
 
-\/usr\/sbin\/scxadmin \-log\-rotate all  
-
+/usr/sbin/scxadmin -log-rotate all  
 endscript  
+}
 
-}\#Rotate scx.log for the monitoring user account named: monuser  
+#Rotate scx.log for the monitoring user account named: monuser  
+#Weekly rotation, retain four weeks of compressed logs  
+#Invoke scxadmin -log-rotate to resume logging after rotation  
 
-\#Weekly rotation, retain four weeks of compressed logs  
-
-\#Invoke scxadmin \-log\-rotate to resume logging after rotation  
-
-\/var\/opt\/microsoft\/scx\/log\/monuser\/scx.log {  
-
+/var/opt/microsoft/scx/log/monuser/scx.log {  
 rotate 4  
-
 weekly  
-
 compress  
-
 missingok  
-
 notifempty  
-
 postrotate  
 
-\/usr\/sbin\/scxadmin \-log\-rotate all  
-
+/usr/sbin/scxadmin -log-rotate all
 endscript  
-
 }  
 
-\#Optionally, rotate omiserver.log. This requires that OMI be stopped and started to prevent  
+#Optionally, rotate omiserver.log. This requires that OMI be stopped and started to prevent  
+#impact to logging. Monthly rotation, retain two weeks of compressed logs  
+#Uncomment these lines if rotation of omiserver.log is needed  
 
-\#impact to logging. Monthly rotation, retain two weeks of compressed logs  
-
-\#Uncomment these lines if rotation of omiserver.log is needed  
-
-\#\/var\/opt\/microsoft\/scx\/log\/omiserver.log{  
-
-\#        rotate 2  
-
-\#        monthly  
-
-\#        compress  
-
-\#        missingok  
-
-\#        notifempty  
-
-\#        prerotate  
-
-\#        \/usr\/sbin\/scxadmin \-stop  
-
-\#        endscript  
-
-\#        postrotate  
-
-\#        \/usr\/sbin\/scxadmin \-start  
-
-\#        endscript\#}  
-
+#/var/opt/microsoft/scx/log/omiserver.log{  
+#        rotate 2  
+#        monthly  
+#        compress  
+#        missingok  
+#        notifempty  
+#        prerotate  
+#        /usr/sbin/scxadmin -stop  
+#        endscript  
+#        postrotate  
+#        /usr/sbin/scxadmin -start  
+#        endscript\
+#}  
+```
 ## Next steps
-For additional guidance to help resolve common agent deployment issues, review the [Operations Manager 2012 Troubleshooting: UNIX/Linux Agent Discovery  Wiki](https://social.technet.microsoft.com/wiki/contents/articles/4966.scom-2012-troubleshooting-unixlinux-agent-discovery.aspx#WSMan_Errors).
+For additional guidance to help resolve common agent deployment issues, review the [Operations Manager 2012 Troubleshooting: UNIX/Linux Agent Discovery Wiki](https://social.technet.microsoft.com/wiki/contents/articles/4966.scom-2012-troubleshooting-unixlinux-agent-discovery.aspx#WSMan_Errors).
