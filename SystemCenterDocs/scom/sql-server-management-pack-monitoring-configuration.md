@@ -155,6 +155,24 @@ The following workflows are disabled by default as they are not provided with th
   - Transaction Log Free Space (%)
   - DB FILESTREAM Filegroup Free Space
 
+## Database Status Monitoring
+
+Database status monitoring is intended to check the database status as reported by Microsoft SQL Server. Status check is done by running a query against the master database of the SQL Server instance that returns the database state. If you receive an alert from this monitor, an action is required in order to bring the database back to an operational state.
+
+All database states except the ONLINE one will result in an unhealthy monitor state. The following table defines the database states.  
+  
+|State|Definition|  
+|-----------|----------------|  
+|ONLINE|Database is available for access. The primary filegroup is online, although the undo phase of recovery may not have been completed.|  
+|OFFLINE|Database is unavailable. A database becomes offline by explicit user action and remains offline until additional user action is taken. For example, the database may be taken offline in order to move a file to a new disk. The database is then brought back online after the move has been completed.|  
+|RESTORING|One or more files of the primary filegroup are being restored, or one or more secondary files are being restored offline. The database is unavailable.|  
+|RECOVERING|Database is being recovered. The recovering process is a transient state; the database will automatically become online if the recovery succeeds. If the recovery fails, the database will become suspect. The database is unavailable.|  
+|RECOVERY PENDING|SQL Server has encountered a resource-related error during recovery. The database is not damaged, but files may be missing or system resource limitations may be preventing it from starting. The database is unavailable. Additional action by the user is required to resolve the error and let the recovery process be completed.|  
+|SUSPECT|At least the primary filegroup is suspect and may be damaged. The database cannot be recovered during startup of SQL Server. The database is unavailable. Additional action by the user is required to resolve the problem.|  
+|EMERGENCY|User has changed the database and set the status to EMERGENCY. The database is in single-user mode and may be repaired or restored. The database is marked READ_ONLY, logging is disabled, and access is limited to members of the **sysadmin** fixed server role. EMERGENCY is primarily used for troubleshooting purposes. For example, a database marked as suspect can be set to the EMERGENCY state. This could permit the system administrator read-only access to the database. Only members of the **sysadmin** fixed server role can set a database to the EMERGENCY state.|  
+
+The monitor also supports the "Disable if Availability Group is offline" override for Windows-based environments. When this override is set to true and the Availability Group that hosts the database is unavailable, the monitor stops tracking the state of such a database. This override is useful when working with SQL Server 2012 as it helps you avoid alert storming.
+
 ## Many Databases on the Same Drive
 
 Space monitoring introduced in this management pack may be noisy in environments where many databases share the same media and have the **autogrowth** setting enabled. In such cases, an alert for each database is generated when the amount of free space on the hard drive reaches the threshold.
