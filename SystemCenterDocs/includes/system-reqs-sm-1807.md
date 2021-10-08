@@ -49,7 +49,7 @@ To help simplify upgrades, you can use Service Manager 1807 connectors with the 
 
 |Component| Requirement|  
 |---|---|  
-|**Service Manager management server**|The management server needs: [ADO.NET Data Services Update for .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkID=224398) SP1 for Windows Server; SQL Server Native client; Microsoft Report Viewer Redistributable, which is available with the Service Manager media.<br/><br/> The management server must be installed on a 64\-bit edition of Windows. |  
+|**Service Manager management server**|The management server needs: [ADO.NET Data Services Update for .NET Framework 3.5 SP1](https://www.microsoft.com/download/details.aspx?id=22) for Windows Server; SQL Server Native client; Microsoft Report Viewer Redistributable, which is available with the Service Manager media.<br/><br/> The management server must be installed on a 64\-bit edition of Windows. |  
 |**Data warehouse management server**|The warehouse management server requires: SQL Server Native client<br/><br/> The data warehouse management server must be installed on a 64\-bit edition of Windows.|  
 |**Service Manager/data warehouse databases**|The Service Manager or data warehouse databases require:  SQL Server Reporting Services \(SSRS\); SQL Server Analysis Management Objects.<br/><br/> The SQL Server and Analysis Services collation settings must be the same for the computers hosting the Service Manager database, data warehouse database, analysis services database, and Reporting Services database.|  
 |**Service Manager console**|The console requires: Microsoft Report Viewer Redistributable (available on System Center media): Microsoft Excel in order to view OLAP data cubes on the console computer;  ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server; SQL Server Analysis Management Objects.<br/><br/> The console can be installed on both 32\-bit and 64\-bit editions of Windows.|  
@@ -176,9 +176,9 @@ The following versions of Windows client operating system are supported for the 
 |**Service Manager** Console|&#8226;|&#8226;|&#8226;|||&#8226;|&#8226;|&#8226;|
 
 
-## .Net Versions supported
+## .NET Versions supported
 
-The following versions of .Net are supported for Service Manager.
+The following versions of .NET are supported for Service Manager.
 
 |System Center 1807 component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|
 |-----------------------------------|----------------|----------|------------|--------------|--------------|------------|
