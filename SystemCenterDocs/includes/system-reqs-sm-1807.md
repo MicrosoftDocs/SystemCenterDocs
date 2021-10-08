@@ -176,9 +176,9 @@ The following versions of Windows client operating system are supported for the 
 |**Service Manager** Console|&#8226;|&#8226;|&#8226;|||&#8226;|&#8226;|&#8226;|
 
 
-## .Net Versions supported
+## .NET Versions supported
 
-The following versions of .Net are supported for Service Manager.
+The following versions of .NET are supported for Service Manager.
 
 |System Center 1807 component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|
 |-----------------------------------|----------------|----------|------------|--------------|--------------|------------|
