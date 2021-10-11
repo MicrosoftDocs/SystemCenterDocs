@@ -158,6 +158,7 @@ Windows 10 client operating system is supported for the Operations Manager 2019 
 >[!NOTE]
 > Operations Manager 2019 only includes the 64-bit version of the agent.
 
+- Windows Server 2022 - Standard, Datacenter, Server Core
 - Windows Server 2019 - Standard, Datacenter, Server Core
 - Windows Server 2016 - Standard, Datacenter, Server Core
 - Windows Server 2012 R2 - Standard, Datacenter, Server Core
