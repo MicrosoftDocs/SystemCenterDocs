@@ -49,14 +49,14 @@ This section explains how to configure low-privilege agent monitoring.
 
 4. Grant **Execute Methods**, **Enable Account**, **Remote Enable**, and **Read Security** permissions to **SQLTaskAction** and **SQLMPLowPriv** for the following WMI namespaces:
 
-    - root
-    - root\cimv2
-    - root\default
-    - root\Microsoft\SqlServer\ComputerManagement11 (if exists)
-    - root\Microsoft\SqlServer\ComputerManagement12 (if exists) 
-    - root\Microsoft\SqlServer\ComputerManagement13 (if exists)
-    - root\Microsoft\SqlServer\ComputerManagement14 (if exists)
-    - root\Microsoft\SqlServer\ComputerManagement15 (if exists)
+    - ROOT
+    - ROOT\CIMV2
+    - ROOT\DEFAULT
+    - ROOT\Microsoft\SqlServer\ComputerManagement11 (if exists)
+    - ROOT\Microsoft\SqlServer\ComputerManagement12 (if exists)
+    - ROOT\Microsoft\SqlServer\ComputerManagement13 (if exists)
+    - ROOT\Microsoft\SqlServer\ComputerManagement14 (if exists)
+    - ROOT\Microsoft\SqlServer\ComputerManagement15 (if exists)
 
 5. On each monitored instance, grant the **SQLMPLowPriv** group the **Read** permission at HKLM:\Software\Microsoft\Microsoft SQL Server\\[InstanceID]\MSSQLServer\Parameters.
 
@@ -355,13 +355,13 @@ To configure security for configurations with low-privilege accounts, perform th
   
 7. Open the **Security** tab and select the following namespaces:
 
-    - Root\CIMV2
-    - Root\Microsoft\SqlServer
-    - Root\Microsoft\SqlServer\ComputerManagement11 (if exists)
-    - Root\Microsoft\SqlServer\ComputerManagement12 (if exists)
-    - Root\Microsoft\SqlServer\ComputerManagement13 (if exists)
-    - Root\Microsoft\SqlServer\ComputerManagement14 (if exists)
-    - Root\Microsoft\SqlServer\ComputerManagement15 (if exists)
+    - ROOT\CIMV2
+    - ROOT\Microsoft\SqlServer
+    - ROOT\Microsoft\SqlServer\ComputerManagement11 (if exists)
+    - ROOT\Microsoft\SqlServer\ComputerManagement12 (if exists)
+    - ROOT\Microsoft\SqlServer\ComputerManagement13 (if exists)
+    - ROOT\Microsoft\SqlServer\ComputerManagement14 (if exists)
+    - ROOT\Microsoft\SqlServer\ComputerManagement15 (if exists)
 
 8. Click **Security**.
 
