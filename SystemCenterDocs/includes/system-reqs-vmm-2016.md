@@ -114,8 +114,8 @@ PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 --- | --- | --- | --- | ---
 Windows Server 2012 Standard/Datacenter | N | N | N | N
 Windows Server 2012 R2 Standard/Datacenter | Y | Y | Y | Y
-Windows Server 2016 | Y | Y | N | N
-Windows Server 2016 (with desktop experience) | Y | Y | Y | Y
+Windows Server 2016 Standard (Core/Desktop) | Y | Y | N | N
+Windows Server 2016 Data Center (Core/Desktop) | Y | Y | Y | Y
 Windows Server 2016 Nano | Y | Y | N | N
 
 ## VMware servers in the VMM fabric
