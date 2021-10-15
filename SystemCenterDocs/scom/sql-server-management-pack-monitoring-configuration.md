@@ -5,7 +5,7 @@ description: This section explains monitoring configurations in Management Pack 
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 7/14/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -265,3 +265,17 @@ The following is a complete list of securables checked by the monitor targeted t
   - sys.tables
   - sys.filegroups
   - sys.syscolumns
+
+## WMI Health State Monitor
+
+This monitor checks whether the configured [Run As Account](sql-server-management-pack-run-as-profiles.md) has access to the following namespaces located on the target SQL Server:
+
+- ROOT\CIMV2
+- ROOT\Microsoft\SqlServer
+- ROOT\Microsoft\SqlServer\ComputerManagement11
+- ROOT\Microsoft\SqlServer\ComputerManagement12
+- ROOT\Microsoft\SqlServer\ComputerManagement13
+- ROOT\Microsoft\SqlServer\ComputerManagement14
+- ROOT\Microsoft\SqlServer\ComputerManagement15
+
+The monitor produces an alert in cases when there is no access to any of the above namespaces.
