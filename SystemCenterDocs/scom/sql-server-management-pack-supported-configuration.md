@@ -63,8 +63,6 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 
 - Upgrade from a previous version of SQL Server
 
-  You can upgrade your SQL Server to a newer version. After the upgrade, make sure to restart either the HealthService agent on the target machine or the machine itself.
-
 >[!NOTE]
 >Since Management Pack for SQL Server is unhosted, fully qualified domain names (FQDNs) are no longer displayed in System Center Operations Manager object names and alert properties.
 
