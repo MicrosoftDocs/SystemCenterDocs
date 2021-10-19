@@ -40,7 +40,7 @@ To remove a SDN from the System Center Virtual Machine Manager (VMM) fabric, you
 ## Remove the logical networks
 
 > [!NOTE]
-> Ensure that no port profiles are associated with the logical networks that you want to remove.
+> Ensure that no port profiles are associated with the logical networks that you want to remove. You can only remove HNV logical network. Do not remove transient network.
 >
 
 1. Click **Fabric** > **Logical networks**, select the logical network to remove.
