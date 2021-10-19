@@ -54,17 +54,18 @@ sp_altermessage 1480, 'with_log', 'true'
 sp_altermessage 19406, 'with_log', 'true'
 ```
 
-## Always On Policies Monitoring
+## Policies Monitoring
 
-Management Pack for SQL Server collects health for all available Always On objects on the target SQL Server instance by reading the PBM (Policy-Based Management) policies state for each of the objects.
+Management Pack for SQL Server collects health metrics for databases and Always On objects located on the target SQL Server instance by reading the PBM (Policy-Based Management) policies state for each of the objects.
 
-Besides system policies, this management pack provides the ability to monitor custom user policies defined for:
+In addition to system policies, the management pack allows monitoring custom user policies for the following objects:
 
+- Database
 - Availability Group
 - Availability Replica
 - Database Replica
 
-For each facet, the management pack introduces two monitors for the custom user policy:
+For each of these objects, the management pack has the following monitors:
 
 - Two-state monitor with a **Warning** state. This monitor shows the state of the custom user policy that has one of the predefined warning categories as **Policy Category**.
 - Two-state monitor with an **Error** state. This monitor shows the state of the custom user policy that has one of the predefined error categories as **Policy Category**.
