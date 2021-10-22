@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: v-anesh
 ms.author: v-anesh
 manager: vvithal
-ms.date: 03/30/2021
+ms.date: 10/22/2021
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
@@ -23,5 +23,7 @@ The following table lists the release history for Operations Manager 2019.
 |-------------|---|-------------|------------|
 |10.19.10050.0||March 2019 |General Availability release|
 |10.19.10311.0|[4533415](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019) |February 2020 |Update Rollup 1 |
+|10.19.10311.0|[4551468](https://support.microsoft.com/topic/system-center-operations-manager-2019-hotfix-for-alert-management-951c3816-b9de-21a7-5a3f-55525de3aca2) |April 2020 |Update Rollup 1 - Hotfix for Alert Management |
 |10.19.10407.0|[4558752](https://support.microsoft.com/help/4558752/update-rollup-2-for-system-center-operations-manager-2019) |August 2020 |Update Rollup 2 |
 |10.19.10505.0|[4594078](https://support.microsoft.com/topic/a7b9aa06-7d72-dc5a-e303-1899fafe9931) |March 2021 |Update Rollup 3 |
+|10.19.10552.0|[5005527](https://support.microsoft.com/topic/system-center-operations-manager-2019-hotfix-oct-2021-f5aa7ec5-85c2-4886-b13b-288fd9900737) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
