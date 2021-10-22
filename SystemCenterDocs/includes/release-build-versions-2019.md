@@ -26,4 +26,5 @@ The following table lists the release history for Operations Manager 2019.
 |10.19.10349.0|[4551468](https://support.microsoft.com/topic/system-center-operations-manager-2019-hotfix-for-alert-management-951c3816-b9de-21a7-5a3f-55525de3aca2) |April 2020 |Update Rollup 1 - Hotfix for Alert Management |
 |10.19.10407.0|[4558752](https://support.microsoft.com/help/4558752/update-rollup-2-for-system-center-operations-manager-2019) |August 2020 |Update Rollup 2 |
 |10.19.10505.0|[4594078](https://support.microsoft.com/topic/a7b9aa06-7d72-dc5a-e303-1899fafe9931) |March 2021 |Update Rollup 3 |
+|10.19.10550.0|[5006871](https://support.microsoft.com/topic/update-for-idor-vulnerability-in-system-center-operations-manager-kb5006871-0e3a513a-ad80-4830-8984-2fc5a40ee7f7) |October 2021 |Update Rollup 3 - Hotfix for Web Console |
 |10.19.10552.0|[5005527](https://support.microsoft.com/topic/system-center-operations-manager-2019-hotfix-oct-2021-f5aa7ec5-85c2-4886-b13b-288fd9900737) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
