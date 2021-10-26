@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: v-anesh
 ms.author: v-anesh
 manager: vvithal
-ms.date: 03/30/2021
+ms.date: 10/22/2021
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.topic: include
 ## Operations Manager 2019 build versions
 
 >[!NOTE]
->All System Center Operations Manager update rollups are cumulative. This means you do not need to apply them in order, you can always apply the latest update. If you have deployed System Center 2019 - Operations Manager and never applied an update rollup, you can go proceed to install the latest one available.
+>All System Center Operations Manager update rollups are cumulative. This means you do not need to apply them in order, you can always apply the latest update. If you have deployed System Center 2019 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
 >
 
 The following table lists the release history for Operations Manager 2019.
@@ -22,6 +22,10 @@ The following table lists the release history for Operations Manager 2019.
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.19.10050.0||March 2019 |General Availability release|
-|10.19.10311.0|[4533415](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019) |February 2020 |Update Rollup 1 |
-|10.19.10407.0|[4558752](https://support.microsoft.com/help/4558752/update-rollup-2-for-system-center-operations-manager-2019) |August 2020 |Update Rollup 2 |
+|10.19.10311.0|[4533415](https://support.microsoft.com/topic/4533415-e5ce3191-2403-684f-1980-43aa61b50cb6) |February 2020 |Update Rollup 1 |
+|10.19.10349.0|[4551468](https://support.microsoft.com/topic/951c3816-b9de-21a7-5a3f-55525de3aca2) |April 2020 |Update Rollup 1 - Hotfix for Alert Management |
+|10.19.10407.0|[4558752](https://support.microsoft.com/topic/4558752-a45a936d-204b-b92b-da36-2f321f93f08e) |August 2020 |Update Rollup 2 |
+|10.19.10475.0|[4601269](https://support.microsoft.com/topic/4601269-19bfccbe-dbda-1371-9871-f2a32157028a) |February 2021 |Update Rollup 2 - Hotfix for Event Log Channel |
 |10.19.10505.0|[4594078](https://support.microsoft.com/topic/a7b9aa06-7d72-dc5a-e303-1899fafe9931) |March 2021 |Update Rollup 3 |
+|10.19.10550.0|[5006871](https://support.microsoft.com/topic/5006871-0e3a513a-ad80-4830-8984-2fc5a40ee7f7) |October 2021 |Update Rollup 3 - Hotfix for Web Console |
+|10.19.10552.0|[5005527](https://support.microsoft.com/topic/f5aa7ec5-85c2-4886-b13b-288fd9900737) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
