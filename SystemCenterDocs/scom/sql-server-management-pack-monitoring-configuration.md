@@ -78,7 +78,7 @@ The backup preferences of the selected availability group can be as follows:
 
   Specifies that you prefer that backup jobs ignore the role of the availability replicas when choosing the replica to perform backups. Note backup jobs might evaluate other factors such as backup priority of each availability replica in combination with its operational state and connected state.
 
-For more information, see [Backup Preferences](sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page).
+For more information, see [Backup Preferences](/sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page).
 
 ## Policies Monitoring
 
