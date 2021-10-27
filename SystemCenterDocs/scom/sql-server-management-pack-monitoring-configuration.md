@@ -54,6 +54,32 @@ sp_altermessage 1480, 'with_log', 'true'
 sp_altermessage 19406, 'with_log', 'true'
 ```
 
+## Availability Database Backup Monitoring
+
+Management Pack for SQL Server provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup. 
+
+By default the monitor do not track the 'Availability Group Backup Preferences'. If this overdrive is enabled, the monitor will track the backup location configured in the Availability Group backup preferences and verifies whether the backup on the selected replica is in compliance with the backup frequency setting. 
+
+The backup preferences of the selected availability group can be as follows:
+
+- **Prefer Secondary**
+
+  Specifies that backups should occur on a secondary replica except when the primary replica is the only replica online. In that case, the backup should occur on the primary replica. This is the default option.
+
+- **Secondary only**
+
+  Specifies that backups should never be performed on the primary replica. If the primary replica is the only replica online, the backup should not occur.
+
+- **Primary**
+
+  Specifies that the backups should always occur on the primary replica. This option is useful if you need backup features, such as creating differential backups, that are not supported when backup is run on a secondary replica.
+
+- **Any Replica**
+
+  Specifies that you prefer that backup jobs ignore the role of the availability replicas when choosing the replica to perform backups. Note backup jobs might evaluate other factors such as backup priority of each availability replica in combination with its operational state and connected state.
+
+For more information, see [Backup Preferences](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page).
+
 ## Policies Monitoring
 
 Management Pack for SQL Server collects health metrics for databases and Always On objects located on the target SQL Server instance by reading the PBM (Policy-Based Management) policies state for each of the objects.
