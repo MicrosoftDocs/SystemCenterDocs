@@ -58,7 +58,7 @@ sp_altermessage 19406, 'with_log', 'true'
 
 Management Pack for SQL Server provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup. 
 
-By default the monitor do not track the 'Availability Group Backup Preferences'. If this overdrive is enabled, the monitor will track the backup location configured in the Availability Group backup preferences and verifies whether the backup on the selected replica is in compliance with the backup frequency setting. 
+By default the monitor does not track the 'Availability Group Backup Preferences'. If this overdrive is enabled, the monitor will track the backup location configured in the backup preferences of the availability group and will verify whether the backup on the selected replica is in compliance with the backup frequency setting. 
 
 The backup preferences of the selected availability group can be as follows:
 
@@ -78,7 +78,7 @@ The backup preferences of the selected availability group can be as follows:
 
   Specifies that you prefer that backup jobs ignore the role of the availability replicas when choosing the replica to perform backups. Note backup jobs might evaluate other factors such as backup priority of each availability replica in combination with its operational state and connected state.
 
-For more information, see [Backup Preferences](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page).
+For more information, see [Backup Preferences](sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page).
 
 ## Policies Monitoring
 
