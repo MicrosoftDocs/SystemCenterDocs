@@ -54,6 +54,32 @@ sp_altermessage 1480, 'with_log', 'true'
 sp_altermessage 19406, 'with_log', 'true'
 ```
 
+## Availability Database Backup Monitoring
+
+Management Pack for SQL Server provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup. 
+
+By default the monitor does not track the 'Availability Group Backup Preferences'. If this overdrive is enabled, the monitor will track the backup location configured in the backup preferences of the availability group and will verify whether the backup on the selected replica is in compliance with the backup frequency setting. 
+
+The backup preferences of the selected availability group can be as follows:
+
+- **Prefer Secondary**
+
+  Specifies that backups should occur on a secondary replica except when the primary replica is the only replica online. In that case, the backup should occur on the primary replica. This is the default option.
+
+- **Secondary only**
+
+  Specifies that backups should never be performed on the primary replica. If the primary replica is the only replica online, the backup should not occur.
+
+- **Primary**
+
+  Specifies that the backups should always occur on the primary replica. This option is useful if you need backup features, such as creating differential backups, that are not supported when backup is run on a secondary replica.
+
+- **Any Replica**
+
+  Specifies that you prefer that backup jobs ignore the role of the availability replicas when choosing the replica to perform backups. Note backup jobs might evaluate other factors such as backup priority of each availability replica in combination with its operational state and connected state.
+
+For more information, see [Backup Preferences](/sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page).
+
 ## Policies Monitoring
 
 Management Pack for SQL Server collects health metrics for databases and Always On objects located on the target SQL Server instance by reading the PBM (Policy-Based Management) policies state for each of the objects.
@@ -172,7 +198,7 @@ All database states except the ONLINE one will result in an unhealthy monitor st
 |SUSPECT|At least the primary filegroup is suspect and may be damaged. The database cannot be recovered during startup of SQL Server. The database is unavailable. Additional action by the user is required to resolve the problem.|  
 |EMERGENCY|User has changed the database and set the status to EMERGENCY. The database is in single-user mode and may be repaired or restored. The database is marked READ_ONLY, logging is disabled, and access is limited to members of the **sysadmin** fixed server role. EMERGENCY is primarily used for troubleshooting purposes. For example, a database marked as suspect can be set to the EMERGENCY state. This could permit the system administrator read-only access to the database. Only members of the **sysadmin** fixed server role can set a database to the EMERGENCY state.|  
 
-The monitor also supports the "Disable if Availability Group is offline" override for Windows-based environments. When this override is set to true and the Availability Group that hosts the database is unavailable, the monitor stops tracking the state of such a database. This override is useful when working with SQL Server 2012 as it helps you avoid alert storming.
+The monitor also supports the "Disable if Availability Group is offline" override for Windows-based environments. When this override is set to true and the Availability Group that hosts the database is unavailable, the monitor stops tracking the state of such a database. This override is useful as it helps you prevent alert storming that may happen when working with SQL Server 2012 due to the specifics of its architecture. For higher versions of SQL Server, this override is not required.
 
 ## Many Databases on the Same Drive
 
