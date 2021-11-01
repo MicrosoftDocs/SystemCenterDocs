@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 11/1/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -82,7 +82,7 @@ The following is a complete list of securables checked by the monitor:
 
 ## Database Status Monitoring
 
-Database status monitoring is intended to check the database status as reported by the SQL managed instance. Status check is done by running a query against the master database of the managed instance that returns the database state. If you receive an alert from this monitor, an action is required in order to bring the database back to an operational state.
+Database status monitoring is intended to check the database status as reported by the SQL Managed Instance. Status check is done by running a query against the master database of the Managed Instance that returns the database state. If you receive an alert from this monitor, an action is required in order to bring the database back to an operational state.
 
 All database states except the ONLINE one will result in an unhealthy monitor state. The following table defines the database states. 
   
@@ -96,20 +96,20 @@ All database states except the ONLINE one will result in an unhealthy monitor st
 |SUSPECT|At least the primary filegroup is suspect and may be damaged. The database cannot be recovered during startup of SQL Server. The database is unavailable. Additional action by the user is required to resolve the problem.|  
 |EMERGENCY|User has changed the database and set the status to EMERGENCY. The database is in single-user mode and may be repaired or restored. The database is marked READ_ONLY, logging is disabled, and access is limited to members of the **sysadmin** fixed server role. EMERGENCY is primarily used for troubleshooting purposes. For example, a database marked as suspect can be set to the EMERGENCY state. This could permit the system administrator read-only access to the database. Only members of the **sysadmin** fixed server role can set a database to the EMERGENCY state.|  
 
+For more information, see [Database States](/sql/relational-databases/databases/database-states).
+
 ## Geo-Replication Database Monitoring
 
 Management Pack for Azure SQL Managed Instance utilizes a monitor that checks the replication status of the primary and secondary databases located in an auto-failover group.
 
-The monitor produces an unhealthy state, which indicates that the secondary database is not transactionally consistent and is not being constantly synchronized with the primary database. 
+The monitor reports an unhealthy state, which indicates that the secondary database is not transactionally consistent and is not being constantly synchronized with the primary database. 
 
-The following table explains the possible geo-replication states.
+To verify the replication status, the management pack uses the 'sys.dm_hadr_fabric_continuous_copy_status' DVM. Based on the DVM replication states, the monitor changes its health state accordingly.
 
 |Replication State|Description|Health State|
 |-|-|-|
 |CATCH_UP|The secondary database is in a transactionally consistent state and is being constantly synchronized with the primary database.|Healthy|
 |SEEDING|The geo-replication target is being seeded but the two databases are not yet synchronized. Until seeding completes, you cannot connect to the secondary database. Removing secondary database from the primary will cancel the seeding operation.|Critical|
 |PENDING|This is not an active continuous-copy relationship. This state usually indicates that the bandwidth available for the interlink is insufficient for the level of transaction activity on the primary database. However, the continuous-copy relationship is still intact.|Critical|
-
-Each of these states is produced by the 'sys.dm_hadr_fabric_continuous_copy_status' DVM, which is executed on the master database located on the managed instance.
 
 For more information on geo-failover of multiple databases, see [Use auto-failover groups to enable transparent and coordinated geo-failover of multiple databases](/azure/sql-database/sql-database-auto-failover-group#best-practices-of-using-failover-groups-with-managed-instances).

@@ -5,7 +5,7 @@ description: This section explains monitoring configurations in Management Pack 
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 10/15/2021
+ms.date: 11/1/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -197,6 +197,8 @@ All database states except the ONLINE one will result in an unhealthy monitor st
 |RECOVERY PENDING|SQL Server has encountered a resource-related error during recovery. The database is not damaged, but files may be missing or system resource limitations may be preventing it from starting. The database is unavailable. Additional action by the user is required to resolve the error and let the recovery process be completed.|  
 |SUSPECT|At least the primary filegroup is suspect and may be damaged. The database cannot be recovered during startup of SQL Server. The database is unavailable. Additional action by the user is required to resolve the problem.|  
 |EMERGENCY|User has changed the database and set the status to EMERGENCY. The database is in single-user mode and may be repaired or restored. The database is marked READ_ONLY, logging is disabled, and access is limited to members of the **sysadmin** fixed server role. EMERGENCY is primarily used for troubleshooting purposes. For example, a database marked as suspect can be set to the EMERGENCY state. This could permit the system administrator read-only access to the database. Only members of the **sysadmin** fixed server role can set a database to the EMERGENCY state.|  
+
+For more information, see [Database States](/sql/relational-databases/databases/database-states).
 
 The monitor also supports the "Disable if Availability Group is offline" override for Windows-based environments. When this override is set to true and the Availability Group that hosts the database is unavailable, the monitor stops tracking the state of such a database. This override is useful as it helps you prevent alert storming that may happen when working with SQL Server 2012 due to the specifics of its architecture. For higher versions of SQL Server, this override is not required.
 
