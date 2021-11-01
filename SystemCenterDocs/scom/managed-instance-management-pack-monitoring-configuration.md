@@ -100,9 +100,9 @@ All database states except the ONLINE one will result in an unhealthy monitor st
 
 Management Pack for Azure SQL Managed Instance utilizes a monitor that checks the replication status of the primary and secondary databases located in an auto-failover group.
 
-The monitor produces an unhealthy state which indicates that the secondary database is not transactionally consistent and is not being constantly synchronized with the primary database. 
+The monitor produces an unhealthy state, which indicates that the secondary database is not transactionally consistent and is not being constantly synchronized with the primary database. 
 
-There are three geo-replication states described in the following table.
+The following table explains the possible geo-replication states.
 
 |Replication State|Description|Health State|
 |-|-|-|
