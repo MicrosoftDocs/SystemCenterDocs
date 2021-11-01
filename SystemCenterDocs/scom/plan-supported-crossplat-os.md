@@ -139,7 +139,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ## Universal Linux (Debian package)
 
-Debian 8, 9, 10 and Ubuntu 16.04, 18.04, 20.04 are supported.
+Debian 8, 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 >[!NOTE]
 > Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
