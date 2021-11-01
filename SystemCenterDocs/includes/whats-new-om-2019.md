@@ -367,7 +367,7 @@ In earlier releases, active alerts are not getting closed after non-persistent h
 
 With Operations Manager 2019 UR3 and later, all of the orphan alerts are closed, eventually, depending on the type of monitor. [Learn more](../scom/manage-alert-created-by-monitor.md#closure-of-orphan-alerts).
 
-### Support for RHEL 6, Ubuntu 20, Debian 10 and Oracle 8
+### Support for RHEL 6, Ubuntu 20, Debian 10, 11 and Oracle 8
 
 Operations Manager 2019 UR3 and later supports RHEL6 via RHEL6 management pack. Also, support for Ubuntu 20.04, Debian 10 and Oracle Linux 8 are added via the Universal MPs. [Learn more](../scom/plan-supported-crossplat-os.md#red-hat-enterprise-linux-server-6--applicable-for-2019-ur3-and-later).
 

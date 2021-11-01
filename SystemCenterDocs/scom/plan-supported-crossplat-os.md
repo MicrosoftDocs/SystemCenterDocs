@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/30/2021
+ms.date: 11/01/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -142,7 +142,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 Debian 8, 9, 10 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 >[!NOTE]
-> Debian 10 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
+> Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
