@@ -41,13 +41,13 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 #### Installation  
 
--   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset. The WiX Toolset can be downloaded from [http://wix.codeplex.com](http://wix.codeplex.com).  
+-   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset. The WiX Toolset can be downloaded from [https://wixtoolset.org/releases](https://wixtoolset.org/releases).  
 
 #### Orchestrator SDK  
 
 -   There have been significant changes to the SDK namespace, interfaces, and attributes as part of rebranding to Microsoft. For details about these changes, please see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).  
 
--   The full SDK documentation and code examples are no longer included in the installation of the Orchestrator Integration Toolkit. The SDK Documentation is located on MSDN, and the code samples are located on CodePlex at [http://orchestrator.codeplex.com](http://orchestrator.codeplex.com).  
+-   The full SDK documentation and code examples are no longer included in the installation of the Orchestrator Integration Toolkit.
 
 ### New and Enhanced Features  
 
@@ -59,7 +59,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 -   If installing on a computer where Orchestrator is already installed, it will detect the Orchestrator installation path and install there. Otherwise, it installs to a default path of **%ProgramFiles(x86)%\Microsoft System Center <version>\Orchestrator\Integration Toolkit**. On 32-bit Windows 7, the base directory is **%ProgramFiles%**.  
 
--   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset. The WiX Toolset can be downloaded from [http://wix.codeplex.com](http://wix.codeplex.com). Installation of the Integration Toolkit is prevented until WiX is installed.  
+-   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset. The WiX Toolset can be downloaded from [https://wixtoolset.org/releases](https://wixtoolset.org/releases). Installation of the Integration Toolkit is prevented until WiX is installed.  
 
 -   A license key is longer required to install the product.  
 
@@ -89,7 +89,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 -   The **License Key** feature of Integration Packs has been removed.  
 
--   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used by the IP Wizard for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation, required prior to installing the Toolkit. However, if WiX is subsequently uninstalled, the Integration Pack wizard will fail with an error message directing you to download and install WiX. The Integration Toolkit supports version 3.5 of the WiX Toolset. The WiX Toolset can be downloaded from [http://wix.codeplex.com](http://wix.codeplex.com).  
+-   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used by the IP Wizard for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation, required prior to installing the Toolkit. However, if WiX is subsequently uninstalled, the Integration Pack wizard will fail with an error message directing you to download and install WiX. The Integration Toolkit supports version 3.5 of the WiX Toolset. The WiX Toolset can be downloaded from [https://wixtoolset.org/releases](https://wixtoolset.org/releases).  
 
 #### Toolkit Integration Packs  
 
