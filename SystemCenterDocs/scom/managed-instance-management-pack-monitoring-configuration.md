@@ -32,9 +32,6 @@ Management Pack for Azure SQL Managed Instance is capable of performing space mo
 
 - Instance
 - Database
-- Filegroup
-- File
-- Log file
 
 For instance space monitoring, the management pack checks storage utilization at the Managed Instance level. For database space monitoring, the management pack checks storage utilization at the database level, which can be measured for the following types:
 
@@ -55,7 +52,7 @@ For instance space monitoring, the management pack checks storage utilization at
 Management Pack for Azure SQL Managed Instance provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup.
 
 >[!NOTE]
->The monitor tracks `COPY_ONLY` backups. Differential, log, and file snapshot backups are not considered. For more information, see [BACKUP (Transact-SQL)](/sql/t-sql/statements/backup-transact-sql?view=azuresqldb-mi-current).
+>The monitor tracks `COPY_ONLY` backups. Differential, log, and file snapshot backups are not considered. For more information, see [BACKUP (Transact-SQL)](/sql/t-sql/statements/backup-transact-sql).
 
 ## Securables Configuration Status Monitor
 
