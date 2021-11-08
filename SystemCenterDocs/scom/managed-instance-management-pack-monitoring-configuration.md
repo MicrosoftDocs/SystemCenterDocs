@@ -26,6 +26,34 @@ Management Pack for Azure SQL Managed Instance has two monitoring templates for 
 >[!NOTE]
 >Using both templates at the same time may cause manually added instances to be monitored by two sets of monitoring workflows. This leads to redundant use of resources and also may cause performance issues.
 
+## Space Monitoring
+
+Management Pack for Azure SQL Managed Instance is capable of performing space monitoring by collecting a set of metrics at the following levels:
+
+- Instance
+- Database
+
+For instance space monitoring, the management pack checks storage utilization at the Managed Instance level. For database space monitoring, the management pack checks storage utilization at the database level, which can be measured for the following types:
+
+- **ROWS Data Free Space Left**
+
+  Monitors available database space and space available on the media that hosts the database in percentage terms. This monitor does not count free space for FILESTREAM and In-Memory OLTP Data filegroups.
+
+- **LOG Free Space Left**
+
+  Monitors available database transactional log space in percentage terms.
+
+- **In-Memory OLTP Data Free Space Left**
+
+  Monitors available database space and space available on the media that hosts the database in percentage terms. This monitor does not count free space for In-Memory OLTP and In-Memory OLTP Data filegroups.
+
+## Database Backup Monitoring
+
+Management Pack for Azure SQL Managed Instance provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup.
+
+>[!NOTE]
+>The monitor tracks `COPY_ONLY` backups. Differential, log, and file snapshot backups are not considered. For more information, see [BACKUP (Transact-SQL)](/sql/t-sql/statements/backup-transact-sql).
+
 ## Securables Configuration Status Monitor
 
 **Securables Configuration Status Monitor** checks if each of the required managed instance securables is accessible under the configured monitoring account.
