@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: JYOTHIRMAISURI
   ms.author: apexprodleads
-  ms.date: 06/30/2020
+  ms.date: 11/03/2021
   ms.prod: system-center
   ms.custom: intro-landing-hub
 conceptualContent:
@@ -178,6 +178,6 @@ additionalContent:
         - title: UserVoice
           links:
             - text: Operations Manager
-              url: https://systemcenterom.uservoice.com/forums/293064-general-operations-manager-feedback
+              url: https://feedback.azure.com/d365community/forum/2a49c9ee-4436-ec11-b6e6-00224824730c
             - text: Virtual Machine Manager
               url: https://support.microsoft.com/en-us/office/uservoice-pages-430e1a78-e016-472a-a10f-dc2a3df3450a
