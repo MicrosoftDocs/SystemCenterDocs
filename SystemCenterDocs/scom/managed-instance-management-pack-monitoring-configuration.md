@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 11/1/2021
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,11 +15,11 @@ ms.technology: operations-manager
 
 Management Pack for Azure SQL Managed Instance has two monitoring templates for monitoring of Azure SQL Managed Instance:
 
-- **Azure SQL MI – Automatic** 
+- [Azure SQL MI – Automatic](managed-instance-management-pack-automatic-monitoring.md)
 
     This template allows you to configure monitoring by discovering all managed instances in the specified Azure subscription automatically.
 
-- **Azure SQL MI – Manual**
+- [Azure SQL MI – Manual](managed-instance-management-pack-manual-monitoring.md)
 
     This template allows you to add the selected instances to the monitoring list by specifying connection strings manually.
 
@@ -56,11 +56,9 @@ Management Pack for Azure SQL Managed Instance provides a monitor that checks th
 
 ## Securables Configuration Status Monitor
 
-**Securables Configuration Status Monitor** checks if each of the required managed instance securables is accessible under the configured monitoring account.
+This monitor checks if each of the required SQL Server securables is accessible under the configured [monitoring account](managed-instance-management-pack-security-configuration.md).
 
-## Securables List
-
-The following is a complete list of securables checked by the monitor:
+The following is a complete list of securables that are checked by the monitor targeted to the Azure SQL Managed Instance:
 
 - Server-Level permissions
   - VIEW SERVER STATE
