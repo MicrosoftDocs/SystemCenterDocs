@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 11/1/2021
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,24 +15,50 @@ ms.technology: operations-manager
 
 Management Pack for Azure SQL Managed Instance has two monitoring templates for monitoring of Azure SQL Managed Instance:
 
-- **Azure SQL MI – Automatic** 
+- [Azure SQL MI – Automatic](managed-instance-management-pack-automatic-monitoring.md)
 
     This template allows you to configure monitoring by discovering all managed instances in the specified Azure subscription automatically.
 
-- **Azure SQL MI – Manual**
+- [Azure SQL MI – Manual](managed-instance-management-pack-manual-monitoring.md)
 
     This template allows you to add the selected instances to the monitoring list by specifying connection strings manually.
 
 >[!NOTE]
 >Using both templates at the same time may cause manually added instances to be monitored by two sets of monitoring workflows. This leads to redundant use of resources and also may cause performance issues.
 
+## Space Monitoring
+
+Management Pack for Azure SQL Managed Instance is capable of performing space monitoring by collecting a set of metrics at the following levels:
+
+- Instance
+- Database
+
+For instance space monitoring, the management pack checks storage utilization at the Managed Instance level. For database space monitoring, the management pack checks storage utilization at the database level, which can be measured for the following types:
+
+- **ROWS Data Free Space Left**
+
+  Monitors available database space and space available on the media that hosts the database in percentage terms. This monitor does not count free space for FILESTREAM and In-Memory OLTP Data filegroups.
+
+- **LOG Free Space Left**
+
+  Monitors available database transactional log space in percentage terms.
+
+- **In-Memory OLTP Data Free Space Left**
+
+  Monitors available database space and space available on the media that hosts the database in percentage terms. This monitor does not count free space for In-Memory OLTP and In-Memory OLTP Data filegroups.
+
+## Database Backup Monitoring
+
+Management Pack for Azure SQL Managed Instance provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup.
+
+>[!NOTE]
+>The monitor tracks `COPY_ONLY` backups. Differential, log, and file snapshot backups are not considered. For more information, see [BACKUP (Transact-SQL)](/sql/t-sql/statements/backup-transact-sql).
+
 ## Securables Configuration Status Monitor
 
-**Securables Configuration Status Monitor** checks if each of the required managed instance securables is accessible under the configured monitoring account.
+This monitor checks if each of the required SQL Server securables is accessible under the configured [monitoring account](managed-instance-management-pack-security-configuration.md).
 
-## Securables List
-
-The following is a complete list of securables checked by the monitor:
+The following is a complete list of securables that are checked by the monitor targeted to the Azure SQL Managed Instance:
 
 - Server-Level permissions
   - VIEW SERVER STATE

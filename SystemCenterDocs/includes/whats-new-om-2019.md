@@ -217,7 +217,7 @@ You can now use a Linux agent with Fluentd support for log file monitoring on pa
 
 ### System Center Visual Studio Authoring Extension support for Visual Studio 2017
 
-The Visual Studio Authoring Extension add-in is now compatible with Visual Studio 2017. Management pack developers can continue using it with the latest version of Visual Studio to create custom management packs. They can use one of the management pack templates provided or edit an existing management pack.
+The [Visual Studio Authoring Extension add-in](https://www.microsoft.com/download/details.aspx?id=30169) is now compatible with Visual Studio 2017. Management pack developers can continue using it with the latest version of Visual Studio to create custom management packs. They can use one of the management pack templates provided or edit an existing management pack.
 
 ### Enhanced SDK client performance
 

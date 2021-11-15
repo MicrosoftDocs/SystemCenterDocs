@@ -7,8 +7,8 @@ ms.author: v-jysur
 manager:  vvithal
 ms.date:  12/25/2020
 ms.topic:  article
-ms.prod:  system-center-threshold
-ms.technology: service-management-automation-(sma)
+ms.prod:  system-center
+ms.technology: service-management-automation
 ---
 
 # Encrypt SMA network traffic
