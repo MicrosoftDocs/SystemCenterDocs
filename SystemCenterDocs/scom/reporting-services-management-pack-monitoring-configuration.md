@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 11/16/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -65,25 +65,26 @@ Deployment watcher is an auxiliary object managed either by an agent installed o
 
 ## Availability of SQL Server Reporting Services Components
 
-This management pack introduces a set of monitors for monitoring of SSRS Deployments and SSRS Instances. These monitors verify availability of these components from the following perspectives:
+This management pack introduces a set of monitors for SSRS Deployments and SSRS Instances. These monitors verify availability from the following perspectives:
 
 - SSRS Scale-out Deployment:
-  - SSRS catalog database is accessible;
-  - SSRS temporary database is accessible;
-  - There are no broken references to shared data sources;
-  - Number of failed report executions (expressed as a percentage of total report executions) is below the threshold;
-  - All instances within deployment are discovered.
+  - SSRS catalog database is accessible
+  - SSRS temporary database is accessible
+  - There are no broken references to shared data sources
+  - Number of failed report executions (expressed as a percentage of total report executions) is below the threshold
+  - All instances within the deployment are discovered
+  - Number of failed subscriptions
 - SSRS Instance:
-  - SSRS catalog database is accessible;
-  - SSRS temporary database is accessible;
-  - SSRS windows service is started;
-  - SSRS web service is accessible;
-  - SSRS report manager is accessible;
-  - SSRS Instance is not using too much CPU resources;
-  - SSRS Instance is not using too much memory resources;
-  - There is no memory configuration conflict between SSRS Instance and SQL Server Database Engine (if both components are running on the same server);
-  - Other processes allow enough memory resources for the SSRS Instance;
-  - A number of failed report executions per minute is below the threshold for the given SSRS Instance.
+  - SSRS catalog database is accessible
+  - SSRS temporary database is accessible
+  - SSRS windows service is started
+  - SSRS web service is accessible
+  - SSRS report manager is accessible
+  - SSRS Instance is not using too much CPU resources
+  - SSRS Instance is not using too much memory resources
+  - There is no memory configuration conflict between SSRS Instance and SQL Server Database Engine (if both components are running on the same server)
+  - Other processes allow enough memory resources for the SSRS Instance
+  - Number of failed report executions per minute is below the threshold for the given SSRS Instance
 
 ## Performance of SQL Server Reporting Services Installation
 
