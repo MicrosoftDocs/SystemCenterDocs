@@ -72,8 +72,8 @@ This management pack introduces a set of monitors for SSRS Deployments and SSRS 
   - SSRS temporary database is accessible
   - There are no broken references to shared data sources
   - Number of failed report executions (expressed as a percentage of total report executions) is below the threshold
-  - All instances within deployment are discovered
-  - Failed Subscriptions
+  - All instances within the deployment are discovered
+  - Number of failed subscriptions
 - SSRS Instance:
   - SSRS catalog database is accessible
   - SSRS temporary database is accessible
@@ -84,7 +84,7 @@ This management pack introduces a set of monitors for SSRS Deployments and SSRS 
   - SSRS Instance is not using too much memory resources
   - There is no memory configuration conflict between SSRS Instance and SQL Server Database Engine (if both components are running on the same server)
   - Other processes allow enough memory resources for the SSRS Instance
-  - A number of failed report executions per minute is below the threshold for the given SSRS Instance
+  - Number of failed report executions per minute is below the threshold for the given SSRS Instance
 
 ## Performance of SQL Server Reporting Services Installation
 
