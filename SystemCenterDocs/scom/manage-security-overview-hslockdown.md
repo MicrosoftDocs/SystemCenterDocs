@@ -57,7 +57,7 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 
 5.  Type `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
 
-6.  Type `HSLockdown.exe \[Management Group Name\] /D \[account or group\]` to deny the group or account, and then press **ENTER**.  
+6.  Type `HSLockdown.exe [Management Group Name] /D [account or group]` to deny the group or account, and then press **ENTER**.  
 
 7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
 
@@ -73,7 +73,7 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 
 5.  Type `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
 
-6.  Type `HSLockdown.exe \[Management Group Name\] /A \<Action Account\>` and then press **ENTER**.  
+6.  Type `HSLockdown.exe [Management Group Name] /A <Action Account>` and then press **ENTER**.  
 
 7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
 
@@ -89,7 +89,7 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 
 5.  Type `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
 
-6.  Type `HSLockdown.exe \[Management Group Name\] /A “NT AUTHORITY\SYSTEM”` and then press **ENTER**.
+6.  Type `HSLockdown.exe [Management Group Name] /A “NT AUTHORITY\SYSTEM”` and then press **ENTER**.
 
 7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
 
