@@ -1,8 +1,8 @@
 ---
 title: Orchestrator Integration Toolkit Installation
 description: This article explains how to install the Orchestrator Integration Toolkit.
-author: rayne-wiselman
-manager: carmonm
+author: JYOTHIRMAISURI
+manager: evansma
 ms.date: 02/02/2018
 ms.prod: system-center
 ms.technology: orchestrator
