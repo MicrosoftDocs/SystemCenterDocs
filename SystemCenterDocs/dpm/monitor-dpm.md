@@ -124,7 +124,8 @@ Here is a sample view:
   ![Backup items list](./media/monitor-dpm/back-up-items-list.png)
 
   >[!NOTE]
-  > The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
+  > - The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
+  > - Some datasource may not show in the list of Backup items (DPM) view. Check the workarounds to fix this [known issue](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#dpm-datasources-not-being-reflected-on-recovery-services-vault).
 
 - Click the *backup item* to view more details such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
 
