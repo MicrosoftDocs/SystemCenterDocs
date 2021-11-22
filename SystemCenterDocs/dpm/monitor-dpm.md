@@ -125,7 +125,7 @@ Here is a sample view:
 
   >[!NOTE]
   > - The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
-  > - Some datasource may not show in the list of Backup items (DPM) view. Check the workarounds to fix this [known issue](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#dpm-datasources-not-being-reflected-on-recovery-services-vault).
+  > - Some datasources in the Backup items (DPM) view from recovery service vault in Azure portal, are not getting refreshed/updated. Check the workarounds to fix this [known issue](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#dpm-datasources-not-being-reflected-on-recovery-services-vault).
 
 - Click the *backup item* to view more details such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
 
