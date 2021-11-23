@@ -24,6 +24,9 @@ ms.topic: article
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2019 - Operations Manager.
 
+>[!IMPORTANT]
+> Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
+
 ## IBM AIX 7.1
 
 |Required package|Description|Minimum version|  
@@ -171,7 +174,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-2016"
+::: moniker range="<=sc-om-1807"
 
 >[!IMPORTANT]
 > Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
