@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/01/2021
+ms.date: 23/01/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -139,7 +139,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ## Universal Linux (Debian package)
 
-Debian 8, 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
+Debian 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 >[!NOTE]
 > Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
@@ -152,9 +152,9 @@ Debian 8, 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 ## Universal Linux (RPM package)
 
-CentOS 6, 7 and Oracle Linux 6, 7, 8 are supported.
+CentOS 7 and Oracle Linux 6, 7, 8 are supported.
 
-CentOS 8 is supported from 2019 UR2 and later and Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -168,6 +168,10 @@ CentOS 8 is supported from 2019 UR2 and later and Oracle Linux 8 is supported fr
 ::: moniker range="sc-om-2016"
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager.
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2016"
 
 >[!IMPORTANT]
 > Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
