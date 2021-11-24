@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-ms.date: 3/5/2018
+ms.date: 11/24/2021
 title: Deploy protection groups
 ms.technology: data-protection-manager
 ms.assetid: 2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
@@ -120,6 +120,8 @@ Some things to note when creating protection groups:
 Protection groups are created with the Create New Protection Group wizard with the following settings:
 
 -   **Select Group Members**: Specify the machines and sources you want to back up.
+
+-   Some of the data sources may not be listed while adding them to the protection group, as the list is displayed from the cache. Click **Refresh** to update the data sources list.
 
 -   **Select data protection method** : Specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
