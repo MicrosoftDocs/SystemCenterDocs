@@ -85,7 +85,7 @@ scxadmin {-log-reset|-log-remove} provider [{FILE:<path>|STDOUT}]
 
 ```  
 cd /opt/microsoft/scx/bin/tools/
-./scxadmin –log-set all intermediate
+./scxadmin -restart
 ```  
 
 **Increase all logging to the Intermediate level:**  
