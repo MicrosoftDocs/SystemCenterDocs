@@ -121,6 +121,9 @@ Protection groups are created with the Create New Protection Group wizard with t
 
 -   **Select Group Members**: Specify the machines and sources you want to back up.
 
+>[!NOTE]
+> Some of the data sources may not be listed while adding them to the protection group, as the list is displayed from the cache. Click **Refresh** to update the data sources list.
+
 -   **Select data protection method** : Specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
 -   **Select short-term goals**: Specify how you want to back up to short-term storage on disk.   In **Retention range** you specify how long you want to keep the data on disk. In Synchronization frequency you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
@@ -149,8 +152,6 @@ Protection groups are created with the Create New Protection Group wizard with t
 
 -   **Choose online replication**: If you're backing up to Azure specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](/azure/backup/backup-azure-backup-import-export).
 
->[!NOTE]
-> Some of the data sources may not be listed while adding them to the protection group, as the list is displayed from the cache. Click **Refresh** to update the data sources list.
 
 ## Initial replication options
 When you create a protection group, you must choose a method for creating the initial replica, which copies all the data selected for protection to the DPM server and then runs synchronization with consistency check for each of the replicas.
