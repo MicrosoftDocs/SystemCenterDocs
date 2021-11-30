@@ -24,7 +24,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### Bug Fixes
 
-- Fixed an issue with not working Operations Manager console tasks in clustered environments. Now tasks 'Start Analysis Service' and 'Stop Analysis Service' work properly
+- Fixed an issue with not working Operations Manager console tasks in clustered environments. Now tasks "Start Analysis Service" and "Stop Analysis Service" work properly
 
 ## June 2021 - 7.0.32.0 RTM
 

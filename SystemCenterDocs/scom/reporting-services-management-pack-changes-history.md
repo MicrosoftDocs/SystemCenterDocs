@@ -19,7 +19,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Added a new "Failed Subscriptions" monitor that produces alerts if there are any failed Report Subscriptions
+- Added a new "Failed Subscriptions" monitor that produces alerts if there are any failed Report Subscriptions or Scheduled Refresh Plans
 - Improved alert generation by adding the machine name to the 'Source' path in the alerts view
 - Updated the "Summary Dashboard" view. Now the 'SQL Server Reporting Services' tiles are combined as Instances and Deployments
 - Updated display strings
