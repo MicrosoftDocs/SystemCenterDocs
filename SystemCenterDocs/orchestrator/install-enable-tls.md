@@ -4,7 +4,7 @@ title: Set up TLS for Orchestrator
 description: This article provides instructions for setting up TLS with Orchestrator
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-manager: carmonm
+manager: evansma
 ms.date: 07/05/2019
 ms.topic: article
 ms.prod: system-center
