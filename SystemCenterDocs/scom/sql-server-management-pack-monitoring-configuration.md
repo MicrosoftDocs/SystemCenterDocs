@@ -156,7 +156,7 @@ The following is a list that explains the default state of each of the space mon
 	- Targeted to the In-Memory OLTP Data container
 		- Memory-Optimized Data Filegroup Container Free Space
 
-The following monitors support the **Health Calculation** Mode override:
+The following monitors support the **Health Calculation Mode** override:
 
 - FILESTREAM Data Free Space Left
 - In-Memory OLTP Data Free Space Left
