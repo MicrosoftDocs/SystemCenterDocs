@@ -59,7 +59,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### What's New
 
 - Added support for monitoring SQL Server Reporting Services 2012, 2014, and 2016 in addition to 2017 and up
-- Updated Event Log Collection Target Management Server Discovery to make it use default SCOM action profile instead of SQL MP Discovery run as profile
+- Updated Event Log Collection Target Management Server Discovery to make it use default System Center Operations Manager action profile instead of SQL MP Discovery run as profile
 - Updated display strings
 
 ### Bug Fixes

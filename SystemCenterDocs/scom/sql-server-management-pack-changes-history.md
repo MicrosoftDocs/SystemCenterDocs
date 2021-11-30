@@ -76,7 +76,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the "SQL Server Database Engines" discovery; the "Netbios Computer Name" property is now uppercased.
 - Added reports from version-specific management packs for SQL Server
 - Updated monitor "Job Duration" to add current job run's duration to its alert description
-- Updated Web Console version of SQL MP Dashboards to support SCOM 2019 UR1
+- Updated Web Console version of SQL MP Dashboards to support System Center Operations Manager 2019 UR1
 - Updated monitor "Product Version Compliance" with versions of most recent public updates to SQL Server
 - Updated data source of alerting rules to avoid alert storm after exiting maintenance mode
 - Updated alert description of monitor "Securables Configuration Status"
@@ -111,7 +111,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Redesigned DB Space monitoring: Disabled by default all workflows targeting Filegroups, Files, Logfiles
 - Redesigned XTP performance counters to make them completely version-agnostic
 - Added attribute "TCP Port" to "SQL DB Engine Class" and updated "DB Engine Discovery" to populate the new property
-- Added summary dashboard for SCOM 2019 Web Console (HTML5)
+- Added summary dashboard for System Center Operations Manager 2019 Web Console (HTML5)
 - Added support for cluster nodes with disjoined namespaces
 - Added sampling to algorithm of monitor "WMI Health State" in order to eliminate false alerting on cluster SQL Server instances
 - Updated alert descriptions of monitors "Availability Database," "Availability Replica," and "Availability Group" (generating alerts still disabled by default)
