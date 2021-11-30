@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 5/31/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,29 @@ ms.technology: operations-manager
 # Features and Enhancements in Management Pack for SQL Server
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
+
+## November 2021 - 7.0.33.0 CTP 
+
+### What's New
+
+- Added a new 'Health Calculation Mode' override for space monitoring workflows targeted to databases. This override allows you to define how you want to monitor free space in your environment. You can now track the health state based on the 'Threshold' parameter expressed as a percentage term (%) or as a capacity metric (MB). The override is added to the following monitors: "LOG Free Space Left", "ROWS Data Free Space Left", "FILESTREAM Data Free Space Left", "In-Memory OLTP Data Free Space Left"
+- Added a new 'Timeout for query execution' override to the following performance rules: "Memory Used By Indexes (MB)" and "Memory Used By Tables (MB)". These rules are now disabled by default to avoid the extra load in environments with a large number of memory-optimized databases
+- Added 'MachineName' and 'InstanceName' alert parameters to all workflows targeted to DB Engine
+- Added an alert for the "Automatic setup of DB Engine discovery filter" rule
+- Added a new 'Available space in MB terms' property to the "LOG Free Space Left" monitor
+- Updated the "Summary Dashboard" view. Now the "SQL Server Reporting Services" tiles are combined as Instances and Deployments
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
+- Optimized performance metric collection
+- Updated display strings
+
+### Bug Fixes
+
+- Fixed an issue with failing discovery modules after upgrading SQL Server
+- Fixed an issue with free space calculations in cases when 'Autogrowth' is enabled for the database
+- Fixed an issue with failing discovery modules in cases when Availability Group has a replica with the 'Allow read/write connections' setting
+- Fixed an issue with duplicates in the list of securables for the "Securables Configuration Status" monitor targeted to the database
+- Fixed an issue with not working Operations Manager console tasks (run "SQL Management Studio", run "SQL Profiler") with the latest versions of SQL Server Management Studio
+- Fixed an issue with not working Operations Manager console tasks in clustered environments. Now tasks "Start Analysis Service" and "Stop Analysis Service" work properly
 
 ## June 2021 - 7.0.32.0 RTM 
 
@@ -53,7 +76,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated the "SQL Server Database Engines" discovery; the "Netbios Computer Name" property is now uppercased.
 - Added reports from version-specific management packs for SQL Server
 - Updated monitor "Job Duration" to add current job run's duration to its alert description
-- Updated Web Console version of SQL MP Dashboards to support SCOM 2019 UR1
+- Updated Web Console version of SQL MP Dashboards to support System Center Operations Manager 2019 UR1
 - Updated monitor "Product Version Compliance" with versions of most recent public updates to SQL Server
 - Updated data source of alerting rules to avoid alert storm after exiting maintenance mode
 - Updated alert description of monitor "Securables Configuration Status"
@@ -88,7 +111,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Redesigned DB Space monitoring: Disabled by default all workflows targeting Filegroups, Files, Logfiles
 - Redesigned XTP performance counters to make them completely version-agnostic
 - Added attribute "TCP Port" to "SQL DB Engine Class" and updated "DB Engine Discovery" to populate the new property
-- Added summary dashboard for SCOM 2019 Web Console (HTML5)
+- Added summary dashboard for System Center Operations Manager 2019 Web Console (HTML5)
 - Added support for cluster nodes with disjoined namespaces
 - Added sampling to algorithm of monitor "WMI Health State" in order to eliminate false alerting on cluster SQL Server instances
 - Updated alert descriptions of monitors "Availability Database," "Availability Replica," and "Availability Group" (generating alerts still disabled by default)
