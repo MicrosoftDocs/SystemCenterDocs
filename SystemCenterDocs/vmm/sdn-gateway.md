@@ -2,7 +2,7 @@
 ms.assetid: 77d0924b-4be1-4e41-93f5-6097aed8fcea
 title: Set up an SDN RAS gateway in the VMM fabric
 description: This article describes how to Set up an SDN RAS gateway in the VMM fabric
-author: v-jysur
+author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: evansma
 ms.date: 11/29/2021
@@ -52,7 +52,7 @@ To set up a RAS gateway, do the following:
 1. **Download the service template**: Download the service template that you need to deploy the GW.
 2. **Create the VIP logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to define VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
 > [!NOTE]
->To enable dual stack support, while creating GRE VIP logical network, add IPv6 subnet to the network site and create IPv6 address pool. (applicable for 2022 and later) 
+>To enable dual stack support, while creating GRE VIP logical network, add IPv6 subnet to the network site and create IPv6 address pool. (applicable for 2022 and later)
 3. **Import the service template**: Import the RAS gateway service template.
 4. **Deploy the gateway**: Deploy a gateway service instance, and configure its properties.
 5. **Validate the deployment**: Configure site-to-site GRE, IPSec, or L3, and validate the deployment.
@@ -105,14 +105,14 @@ Both the templates have a default count of three virtual machines which can be c
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
-4. To use IPv4, add IPv4 subnet to the network site and create IPv4 address pool. 
-   Here are the sample values: 
+4. To use IPv4, add IPv4 subnet to the network site and create IPv4 address pool.
+   Here are the sample values:
 
-    - Network name: GRE VIP 
-    - Subnet: 
-    - Mask: 
-    - VLAN ID on trunk: NA 
-    - Gateway: 
+    - Network name: GRE VIP
+    - Subnet:
+    - Mask:
+    - VLAN ID on trunk: NA
+    - Gateway:
 5. To use IPv6, add both IPv4 and IPV6 subnets to the network site and create IPv6 address pool.
    Here are the sample values:
 
@@ -167,7 +167,7 @@ Both the templates have a default count of three virtual machines which can be c
 
 ::: moniker range="sc-vmm-2022"
 
-To enable IPv6, while onboarding Gateway service, select **Enable IPv6** checkbox and select the IPv6 GRE VIP subnet that you have created previously. Also, select public IPv6 pool and provide the public IPv6 address. 
+To enable IPv6, while onboarding Gateway service, select **Enable IPv6** checkbox and select the IPv6 GRE VIP subnet that you have created previously. Also, select public IPv6 pool and provide the public IPv6 address.
 
  ::: moniker-end
 

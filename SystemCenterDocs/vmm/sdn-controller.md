@@ -2,7 +2,7 @@
 ms.assetid: 8bd626d5-27c0-46c5-9031-905a69e44219
 title: Set up an SDN network controller in the VMM fabric
 description: This article describes how to set up a Software Defined Network (SDN) infrastructure in the System Center VMM fabric.
-author: v-jysur
+author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: evansma
 ms.date: 11/29/2021
@@ -414,10 +414,11 @@ The configure HNV logical network needs an IP address pool, even if DHCP is avai
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
-   >[!NOTE]
-    > - To enable IPv4 support, add an IPv4 subnet and create IPv4 address pool. 
-    > - To use IPv6 address space, add both IPv4 and IPv6 subnets to the network site. 
-    > - To enable dual stack support, create IP pools with both IPv4 and IPv6 address space. 
+
+  >[!NOTE]
+  > - To enable IPv4 support, add an IPv4 subnet and create IPv4 address pool.
+  > - To use IPv6 address space, add both IPv4 and IPv6 subnets to the network site.
+  > - To enable dual stack support, create IP pools with both IPv4 and IPv6 address space.
 
 ::: moniker-end
 
@@ -454,7 +455,7 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 
 ![isolate using HNV network](media/sdn-controller/enable-ipv6.png)
 
-> When you create VM network, to enable dual stack support, select IPv4 and IPv6 from the **IP address protocol for the VM network** drop-down menu. (applicable for 2022 and later) 
+> When you create VM network, to enable dual stack support, select IPv4 and IPv6 from the **IP address protocol for the VM network** drop-down menu. (applicable for 2022 and later)
 >
 
 ![isolate using Hyper-V network virtualization](media/sdn-controller/enable-dual-stack.png)
@@ -496,6 +497,8 @@ Create a new VM and deploy the dual stack VM network to assign both IPv4 and IPv
 ## Remove the network controller from the SDN fabric
 
 Use [these steps](sdn-remove.md#remove-the-network-controller) to remove the network controller from the SDN fabric.
+
+::: moniker-end
 
 ## Next steps
 [Create a software load balancer](sdn-slb.md)

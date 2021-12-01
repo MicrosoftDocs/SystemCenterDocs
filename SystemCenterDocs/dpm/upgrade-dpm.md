@@ -2,7 +2,7 @@
 description: This article explains how to upgrade your DPM installation.
 manager: evansma
 ms.topic: article
-author: v-jysur
+author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
 keywords:
@@ -16,7 +16,7 @@ ms.assetid:
 
 ::: moniker range="sc-dpm-2022"
 
-This article provides the upgrade information for System Center 2019 2022 - Data Protection Manager (DPM). 
+This article provides the upgrade information for System Center 2022 - Data Protection Manager (DPM).
 
 [!INCLUDE [upgrade-to-dpm-2022.md](../includes/upgrade-to-dpm-2022.md)]
 

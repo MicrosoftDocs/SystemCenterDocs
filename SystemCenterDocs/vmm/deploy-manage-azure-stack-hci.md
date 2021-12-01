@@ -2,7 +2,7 @@
 ms.assetid: 40d9b3b7-3e5a-463c-bbc0-161450e59714
 title: Deploy and manage Azure Stack HCI clusters in VMM
 description: This article describes how to set up a Azure Stack HCI cluster in VMM.
-author: v-jysur
+author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: evansma
 ms.date: 11/29/2021
@@ -19,7 +19,7 @@ This article provides information about how to set up a Azure Stack HCI, version
 
 ::: moniker range="sc-vmm-2022"
 
-VMM 2019 UR3 supports Azure Stack HCI version 20H2. VMM 2022 support 20H2 and 21H2. 
+VMM 2019 UR3 supports Azure Stack HCI version 20H2. VMM 2022 support 20H2 and 21H2.
 
 ::: moniker-end
 
@@ -51,19 +51,19 @@ Make sure you're running VMM 2019 UR3 or later.
 
 **Register and unregister Azure Stack HCI clusters**
 
-With VMM 2022, we are introducing VMM PowerShell cmdlets to register and unregister Azure Stack HCI clusters. 
+With VMM 2022, we are introducing VMM PowerShell cmdlets to register and unregister Azure Stack HCI clusters.
 
-Use the following cmdlets to register a HCI cluster: 
+Use the following cmdlets to register a HCI cluster:
 
-*Register-SCAzStackHCI -VMHostCluster <HostCluster> -SubscriptionID <string>*
+*Register-SCAzStackHCI -VMHostCluster </HostCluster>/ -SubscriptionID <string>*
 
-For detailed information about the supported parameter, see <link> 
+For detailed information about the supported parameter, see <link>
 
-Use the following command to unregister a cluster: 
+Use the following command to unregister a cluster:
 
 *Unregister-SCAzStackHCI -VMHostCluster <HostCluster> -SubscriptionID <string>*
 
-For detailed information about the supported parameter, see <link> 
+For detailed information about the supported parameter, see <link>
 
 ::: moniker-end
 

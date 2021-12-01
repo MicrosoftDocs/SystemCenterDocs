@@ -2,7 +2,7 @@
 ms.assetid: e950d0c6-23d3-4f93-9210-c57f9068e5bc
 title: Set up an SDN software load balancer in the VMM fabric
 description: This article describes how to set up a SDN software load balancer in the VMM fabric
-author: v-jysur
+author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: evansma
 ms.date: 11/29/2021
@@ -167,10 +167,10 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
-4. In IP Address range configure the starting and ending IP address. Add IPv6 subnet to network site and create IPv6 address pools if you are using IPv6 address space. 
+4. In IP Address range configure the starting and ending IP address. Add IPv6 subnet to network site and create IPv6 address pools if you are using IPv6 address space.
     >[!NOTE]
-    > - Add IPv6 address pools when you onboard a SLB. 
-      - Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater. To specify the VIP range, don’t use the shortened form of IPv6 address; Use 2001:db8:0:200:0:0:0:7 format instead of 2001:db8:0:200::7. 
+    > - Add IPv6 address pools when you onboard a SLB.
+      - Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater. To specify the VIP range, don’t use the shortened form of IPv6 address; Use 2001:db8:0:200:0:0:0:7 format instead of 2001:db8:0:200::7.
     >
     >The maximum number of addresses allowed in a single VIP range is 1024.
 
