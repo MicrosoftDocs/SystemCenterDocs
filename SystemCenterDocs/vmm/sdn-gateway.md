@@ -126,12 +126,10 @@ Both the templates have a default count of three virtual machines which can be c
 
 ### Create an IP address pool for GRE VIP addresses
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 > From VMM 2019 UR1 and later, you can create IP address pool using **Create Logical Network** wizard.
-
-::: moniker-end
 
 1. Right-click the GRE VIP logical network > **Create IP Pool**.
 2. Type a **Name** and optional description for the pool, and check that the VIP network is selected. Click **Next**.
@@ -148,6 +146,7 @@ Both the templates have a default count of three virtual machines which can be c
 6. In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
 7. You don't need to provide gateway, DNS or WINS information as this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens.
 8. In **Summary**, review the settings and finish the wizard.
+
 ::: moniker-end
 
 ## Import the service template
