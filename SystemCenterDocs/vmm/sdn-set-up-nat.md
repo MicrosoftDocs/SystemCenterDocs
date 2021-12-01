@@ -4,8 +4,8 @@ title: Set up NAT for traffic forwarding in SDN infrastructure by using VMM.
 description: This article describes how to configure NAT connection and NAT rules for traffic forwarding in the SDN infrastructure.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-manager: riyazp
-ms.date: 08/04/2020
+manager: evansma
+ms.date: 11/29/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -64,6 +64,7 @@ A NAT connection will be created for this VM network.
 > [!NOTE]
 > - Along with the NAT connection, this procedure also creates  a default Outbound NAT rule that enables the outbound connectivity for the VM network.
 > - To enable inbound connectivity and forward an external traffic to a specific VM, you must add NAT rules to the NAT connection.
+> - Currently, dual stack is not support for NAT.
 
 
 ## Add rules to a NAT connection

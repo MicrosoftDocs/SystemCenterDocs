@@ -4,14 +4,22 @@ title: Upgrade information for Virtual Machine Manager
 description: This article details the upgrade information and procedures for Virtual Machine Manager.
 author: JYOTHIRMAISURI
 ms.author: V-jysur
-manager: vvithal
-ms.date: 03/14/2019
+manager: evansma
+ms.date: 11/29/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
 # Upgrade System Center Virtual Machine Manager
+
+::: moniker range="sc-vmm-2022"
+
+This article provides the upgrade information for System Center 2022 - Virtual Machine Manager (VMM). y
+
+[!INCLUDE [upgrade-to-vmm-2022.md](../includes/upgrade-to-vmm-2019.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-2019"
 

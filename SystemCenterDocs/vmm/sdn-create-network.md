@@ -4,8 +4,8 @@ title: Set up a virtual network in SDN in the VMM 2016 fabric
 description: This article describes the procedure on how to create a VM network in SDN, using a VMM.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-manager: riyazp
-ms.date: 11/07/2017
+manager: evansma
+ms.date: 11/29/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -24,17 +24,22 @@ This article provides information about how to create VM networks in an SDN, usi
 
 VM networks are abstract objects that act as an interface to logical networks. In a virtualized network environment, by using the VM networks, you can abstract virtual machines from the underlying logical network.
 
+::: moniker range="sc-vmm-2022"
+
+VMM 2022 provides dual stack support for VM networks.
+
+::: moniker-end
+
 A logical network can have one or more VM networks associated with it based on its isolation settings.
 
 The following two types of isolation settings are supported in SDN fabric:
 
-- **Network virtualization** : If a logical network is isolated using network virtualization, you can create multiple VM networks for this logical network. Within a VM network, tenants can use any IP addresses regardless of the IP addresses used on other VM networks. As a service provider, you can host workloads from multiple tenants on a single logical network. Tenants can also configure network connections on these VM networks.
+- **Network virtualization**: If a logical network is isolated using network virtualization, you can create multiple VM networks for this logical network. Within a VM network, tenants can use any IP addresses regardless of the IP addresses used on other VM networks. As a service provider, you can host workloads from multiple tenants on a single logical network. Tenants can also configure network connections on these VM networks.
 
-- **No Isolation** :  If a logical network has no isolation, then, only a single VM network can be associated with it. As a service provider, you can host infrastructure workloads using this type of isolation settings.
+- **No Isolation**:  If a logical network has no isolation, then, only a single VM network can be associated with it. As a service provider, you can host infrastructure workloads using this type of isolation settings.
 
 >[!NOTE]
 > VLAN isolation is not supported in SDN fabric.
-
 
 ## Before you start
 
@@ -57,10 +62,25 @@ The following two types of isolation settings are supported in SDN fabric:
 2. In **Create VM Network Wizard** > **Name**, type a name, optional description and select a logical network that was created with network virtualization isolation settings.
 3. In **Isolation** , select **Isolate using Hyper-V network virtualization** , and select IPv4 for IP address protocols. Click **Next**.
 
+::: moniker range="sc-vmm-2022"
+
+3. In Isolation, select Isolate using Hyper-V network virtualization, and select IPv4 for IP address protocols for the VM network. Click Next. 
+
+4. To enable dual stack support In Isolation, select Isolate using Hyper-V network virtualization, and select IPv4  and IPv6 for IP address protocols for the VM network. Click Next. 
+
+::: moniker-end
+
    ![VM network in sdn](media/sdn-create-network/vm-network.png)
 4. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
    >[!NOTE]  
    > You can add multiple subnets.
+::: moniker range="sc-vmm-2022"
+   >[!Note]
+   >- You can add multiple subnets. 
+   >- To enable dual stack support, provide both IPv4 subnet and IPv6 subnet separated by a semi-colon (‘;’). 
+   >- For VM network, create two static IP pools with both IPv4 and IPv6 address space using the drop-down menu.
+
+::: moniker-end
 
 5. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
 
@@ -83,11 +103,11 @@ Once the job is successfully completed, you can view the newly created VM networ
 ## Create a VM network (no isolation)
 
 > [!NOTE]
-> While creating the logical network, If you have chosen the option **Create VM network with same name to allow virtual machines to access this logical network directly** , then you can skip the following steps.
+> While creating the logical network, if you have chosen the option **Create VM network with same name to allow virtual machines to access this logical network directly**, then you can skip the following steps.
 
 1. Click **VMs and Services** > **VM Networks** . **Create VM Network**.
 2. In **Create VM Network Wizard** > **Name**,  enter a name, optional description. Select a One connected logical network for this VM network. Click **Next**.
-3. In **Summary** , verify the settings and click **Finish**.
+3. In **Summary**, verify the settings and click **Finish**.
 
 Once the job is successfully completed, you can view the newly created VM network under **VMs and Services** > **VM Networks**.
 
