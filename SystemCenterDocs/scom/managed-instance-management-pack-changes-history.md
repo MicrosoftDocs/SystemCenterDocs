@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,18 @@ ms.technology: operations-manager
 # Features and Enhancements in Management Pack for Azure SQL Managed Instance
 
 This section covers new functionality and improvements in Management Pack for Azure SQL Managed Instance.
+
+## November 2021 - 7.0.33.0 CTP
+
+### What's New
+
+- Improved the "CPU Utilization" monitor and the associated performance rule. Now they show the same data as on the Azure portal
+- Updated the SPN creation process related to the [latest changes in Azure API](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains)
+- Updated display strings
+
+### Bug Fixes
+
+- Fixed an issue with creating SPN with unnecessary API permissions for the Azure AD application
 
 ## July 2020 - 7.0.22.0 RTM
 
