@@ -126,7 +126,7 @@ Both the templates have a default count of three virtual machines which can be c
 
 ### Create an IP address pool for GRE VIP addresses
 
-::: moniker range="=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 
 >[!NOTE]
 > From VMM 2019 UR1 and later, you can create IP address pool using **Create Logical Network** wizard.

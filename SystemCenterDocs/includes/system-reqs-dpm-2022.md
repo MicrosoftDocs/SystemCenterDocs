@@ -12,8 +12,6 @@ ms.technology: data-protection-manager
 ms.assetid:
 ---
 
-Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
-
 ## DPM deployment considerations
 
 One of your first decisions is how to deploy DPM. You can deploy DPM:

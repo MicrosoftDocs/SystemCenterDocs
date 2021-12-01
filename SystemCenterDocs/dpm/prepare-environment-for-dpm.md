@@ -2,7 +2,7 @@
 description: This article is a primer for the necessary components to deploy DPM in your environment.
 manager: evansma
 ms.topic: article
-  author: JYOTHIRMAISURI
+author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
 keywords:
@@ -26,7 +26,10 @@ ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 
 ::: moniker-end
 
+
 Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
+
+::: moniker range="<sc-dpm-2022"
 
 ## DPM deployment considerations
 
@@ -54,6 +57,8 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
 > - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
 
+::: moniker-end
+
 **SQL Server - supported versions**
 
 ::: moniker range="<sc-dpm-2019"
@@ -75,6 +80,8 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 
 ::: moniker-end
 
+::: moniker range="<sc-dpm-2022"
+
 **SQL Server requirements**
 
 |Requirement| Details  |
@@ -88,6 +95,8 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 |Installation|Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM.|
 |Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](./install-dpm.md#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
+
+::: moniker-end
 
 ::: moniker range="<sc-dpm-2019"
 
@@ -125,6 +134,8 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 |Installation prerequisites|Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> SQL management tools <br/><br/> Setup automatically installs the prerequisites if they aren't already installed.|
 
 ::: moniker-end
+
+::: moniker range="<sc-dpm-2022"
 ## Disks and storage
 
 |Requirement|Minimum|Recommended|
@@ -169,3 +180,5 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 |Central Console|Use the Central Console to administer multiple DPM servers from a single location.<br/><br/> Install it on a server running System Center 2016/2019 Operations Manager. You'll also need to install the Operations Management agent on the DPM server. See [Install Central Console](use-central-console-to-manage-multiple-dpm-servers.md#set-up-central-console).|
 |DPM Management Shell|Install the DPM Management Shell on a client computer to directly manage one or more DPM servers using Windows PowerShell. Install it from the DPM Setup.<br/><br/> The DPM Management Shell can be installed on computers running:<br/><br/> DPM 2019: Windows Server 2019, Windows Server 2016, Windows 8.1, and Windows 10 <br/><br/>DPM 2016: Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8, Windows 8.1<br/><br/>**Note**: DPM 2019 supports x64 bit computers only.|
 |Remote Administration Console|Set up a Remote Administration Console to manage a single DPM server.<br/><br/> The DPM Management Shell can be installed on computers running Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8, Windows 8.1, and Windows 10. The computer must be running at least .NET Framework 4.0.<br/><br/>**Note**: DPM 2019 supports X64 bit computers only.|
+
+::: moniker-end

@@ -55,15 +55,15 @@ With VMM 2022, we are introducing VMM PowerShell cmdlets to register and unregis
 
 Use the following cmdlets to register a HCI cluster:
 
-*Register-SCAzStackHCI -VMHostCluster </HostCluster>/ -SubscriptionID <string>*
+*Register-SCAzStackHCI -VMHostCluster \<HostCluster\> -SubscriptionID /<string/>*
 
-For detailed information about the supported parameter, see <link>
+For detailed information about the supported parameter, see PowerShell documentation.
 
 Use the following command to unregister a cluster:
 
-*Unregister-SCAzStackHCI -VMHostCluster <HostCluster> -SubscriptionID <string>*
+*Unregister-SCAzStackHCI -VMHostCluster \<HostCluster\> -SubscriptionID \<string\>*
 
-For detailed information about the supported parameter, see <link>
+For detailed information about the supported parameter, see PowerShell documentation.
 
 ::: moniker-end
 
