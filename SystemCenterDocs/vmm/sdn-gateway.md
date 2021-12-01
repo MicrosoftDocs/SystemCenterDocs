@@ -123,6 +123,7 @@ Both the templates have a default count of three virtual machines which can be c
     - Gateway: FD4A:293D:184F:382C::1
 6. In **Summary**, review the settings and finish the wizard.
 
+::: moniker-end
 
 ### Create an IP address pool for GRE VIP addresses
 
