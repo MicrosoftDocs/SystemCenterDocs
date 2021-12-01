@@ -32,7 +32,7 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 ## Creating a new integration pack  
  The Integration Pack Wizard allows you to create Integration Packs from existing Orchestrator-compatible assemblies and dependent files. If you have not yet created an Orchestrator-compatible assembly, see the [Command Line Activity Wizard](command-line-activity-wizard.md#creating-a-new-activity-assembly).  
 
- Note: The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used by the IP Wizard for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation, required prior to installing the Toolkit. However, if WiX is subsequently uninstalled, the Integration Pack wizard will display an error message directing you to download and install WiX. The Integration Toolkit supports version 3.5 of the WiX Toolset. The WiX Toolset can be downloaded from https://wixtoolset.org/releases.  
+ Note: The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used by the IP Wizard for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation, required prior to installing the Toolkit. However, if WiX is subsequently uninstalled, the Integration Pack wizard will display an error message directing you to download and install WiX. The Integration Toolkit supports version 3.5 of the WiX Toolset.
 
 #### To create a new integration pack  
 
