@@ -3,9 +3,9 @@ ms.assetid: 18a1048f-b83c-4961-ba46-a931d48b0cf3
 title: Implementing User Roles
 description: This article provides an overview of how access to the operational data in the Operations Manager consoles works and how to configure a user role to assign permission.
 author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
-ms.date: 04/29/2019
+ms.author: v-jysur
+manager: evansma
+ms.date: 11/29/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -45,6 +45,8 @@ In Operations Manager, operations-such as resolving alerts, running tasks, overr
 |Profile|Job Functions and Scope|  
 |-----------|---------------------------|  
 |Administrator|Includes full privileges available in Operations Manager. **Note:** You can only add Active Directory security groups to the Administrator role.|  
+|Read-only Administrator|Includes all the read privileges in Operations Manager along with reporting. (applicable for Operations Manager 2022)|
+|Delegated Administrator|Includes all the read privileges in Operations Manager except reporting. Grants member the ability to create a custom user role with Delegated Administrator as base profile. (applicable for Operations Manager 2022)|
 |Advanced Operator|Includes a set of privileges designed for users who need access to limited adjustment of monitoring configurations in addition to the Operator privileges. Grants members the ability to override the configuration of rules and monitors for specific targets or groups of targets within the configured scope. Advanced Operator also inherits Operator privileges.|  
 |Application Monitoring Operator|Includes a set of privileges designed for users that need access to **Application Diagnostics**. A user role based on the Application Monitoring Operator profile grants members the ability to see the Application Monitoring events in **Application Diagnostics** web console. **Note:** Access to the **Application Advisor** feature requires the Report Operator or Administrator profile.|  
 |Author|Includes a set of privileges designed for authoring of monitoring configurations. Grants members the ability to create, edit, and delete monitoring configuration (for example, tasks, rules, monitors, and views) for specific targets or groups of targets within the configured scope.|  

@@ -3,9 +3,9 @@ ms.assetid:
 title: How to create a dashboard with the Alert widget in the Web console
 description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Alert widget.
 author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
-ms.date: 03/30/2021
+ms.author: v-jysur
+manager: evansma
+ms.date: 11/29/2021
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-2016'
@@ -23,6 +23,12 @@ ms.topic: article
 
 In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Alert widget.
 
+::: moniker range="sc-om-2022"
+
+Operations Manager 2022 supports **Alert source** in the **Add** widget.
+
+::: moniker-end
+
 ## Add widget to dashboard
 
 1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
@@ -32,6 +38,8 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
     ![Select New Dashboard in Web console](./media/create-web-dashboard-alerts/web-console-new-dashboard-01.png)
 
 3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
+
+    ![Specify name and description](./media/create-web-dashboard-alerts/web-console-new-dashboard-08.png)
 
     ![Specify name and description for new dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
 
@@ -59,7 +67,8 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
     * Severity
     * Priority
     * Resolution state
-    * Alert age  
+    * Alert age
+    * Alert source (applicable for Operations Manager 2022)
 
     Data matching the defined criteria will only be displayed in the widget.
 
