@@ -168,7 +168,7 @@ Agents can be upgraded before the new Operations Manager management group is dep
 
 ::: moniker-end
 
-::: moniker-range=">=sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 1. Retain the original System Center Operations Manager environment.
 

@@ -13,6 +13,14 @@ ms.technology: operations-manager
 
 # System requirements for System Center Operations Manager
 
+::: moniker range="sc-om-2022"
+
+The following sections describe general performance and scalability guidance for System Center 2022 - Operations Manager.  These sections also provide recommendations for hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
+
+[!INCLUDE [system-reqs-om-2022.md](../includes/system-reqs-om-2022.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 The following sections describe general performance and scalability guidance for System Center 2019 - Operations Manager.  These sections also provide recommendations for hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
