@@ -134,7 +134,6 @@ Both the templates have a default count of three virtual machines which can be c
 1. Right-click the GRE VIP logical network > **Create IP Pool**.
 2. Type a **Name** and optional description for the pool, and check that the VIP network is selected. Click **Next**.
 3. Accept the default network site and click **Next**.
-
 ::: moniker-end
 
 ::: moniker range="<sc-vmm-2019"
