@@ -34,7 +34,7 @@ In all deployments you’ll need:
 
 DPM uses SQL Server as a database to store backup information for workloads, servers, and computers it protects. All SQL Server versions should be Standard or Enterprise 64-bit.
 
->[Note!]
+>[!NOTE]
 - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
 
@@ -60,7 +60,7 @@ DPM 2022 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 |Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](../dpm/install-dpm.md#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
 
->[NOTE!]
+>[!NOTE]
 > If you are upgrading SQL Database to SQL 2017 or later, ensure you install SQL SSRS post SQL upgrade.
 
 ## DPM Server

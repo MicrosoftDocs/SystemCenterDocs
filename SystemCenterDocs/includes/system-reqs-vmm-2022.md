@@ -5,7 +5,7 @@ description: include article to detail the system requirements for VMM 2022
 author:  v-jysur
 ms.author: v-jysur
 manager: evansma
-ms.date: 11/29/2021
+ms.date: 12/02/2021
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -49,15 +49,10 @@ Library Objects (templates, profiles)| 100
 
 **Operating system** | **VMM server** | **Remote VMM library** | **Remote VMM database**
 --- | --- | --- | ---
-Windows Server 2012 R2 Server Core (supported from 2019 UR2 and later)| Y | Y |If supported by SQL Server version
-Windows Server 2012 R2 with Desktop experience (supported from 2019 UR2 and later)| Y | Y |If supported by SQL Server version
-Windows Server 2016 Server Core| Y | N | If supported by SQL Server version
-Windows Server 2016 with desktop experience | Y | Y | If supported by SQL Server version
-Windows Server 2019 with desktop experience| Y | Y | If supported by SQL Server version
-Windows Server 2019 Server Core| Y | Y | If supported by SQL Server version
-Windows Server 2022| Y | Y | If supported by SQL Server version
+Windows Server 2022 Desktop experience| Y | Y | If supported by SQL Server version
+Windows Server 2022 Server Core| Y | Y | If supported by SQL Server version
 
->[NOTE!]
+>[!NOTE]
 > Ensure that VMM server operating system is same as the managed host operating system in case of deployment of Hyper Converged Infrastructure.
 
 ## VMM console operating system
@@ -65,6 +60,7 @@ Windows Server 2022| Y | Y | If supported by SQL Server version
 **Operating system** | **Supported**
 --- | ---
 Windows 10 Enterprise | Y
+Windows 11 Enterprise | Y
 Window Server 2016 Standard, Datacenter | Y
 Windows Server 2019 (with desktop experience) | Y
 Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
@@ -72,7 +68,7 @@ Windows Server 2022 | Y
 
 ## SQL Server
 
->[NOTE!]
+>[!NOTE]
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft. 
 > - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability. 
 
@@ -81,13 +77,13 @@ Windows Server 2022 | Y
 SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016) | Y
 SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017) | Y
 SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019) | Y
-SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack. <br/><br/> Not required for VMM installation..
+SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack.<br/> or <br/> Install the SQL Server 2019 Command-Line Utilities from the Microsoft® SQL Server® 2019 Feature Pack. <br/><br/>Not required for VMM installation..
 
 ## Virtualization
 
 **VM** | **Supported**
 --- | ---
-VMM management server | The VMM management server can be installed on a VM.<br/><br/> If you use dynamic memory, set the start RAM of the VM to at least 2048 MB.<br/><br/> Don't install on a server running Hyper-V.<br/><br/> You can deploy the VMM management server (physical or VM) in a highly available cluster.
+VMM management server | The VMM management server can be installed on a VM.<br/><br/> If you use dynamic memory, set the start RAM of the VM to at least 4096 MB.<br/><br/> Don't install on a server running Hyper-V.<br/><br/> You can deploy the VMM management server (physical or VM) in a highly available cluster.
 VMM console | You can install the VMM console on a VM.
 4
 ## Installation components
@@ -105,7 +101,6 @@ PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 
 **Operating system** | **Hyper-V host** | **SOFS** | **Update server** | **PXE server**
 --- | --- | --- | --- | ---
-Windows Server 2012 R2 (supported from 2019 UR2 and later)| Y | Y | N | N
 Windows Server 2016 Standard and Datacenter (Core) | Y | Y | N | N
 Windows Server 2016 Standard and Datacenter (With Desktop experience) | Y | Y | Y | Y
 Hyper-V Server 2016 | N | N | N | N
@@ -120,13 +115,13 @@ Windows Server 2022 | N | N | N | N
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5 , 6.7 (supported from 2019 UR2 and later)
-vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7 (supported from 2019 UR2 and later)
+ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5 , 6.7 
+vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7 
 Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 
 ## VMs in the VMM fabric
 
 **Guest operating system** | **Supported**
 --- | ---
-Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2019](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows) and [earlier versions](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277(v=ws.11)).
+Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2022](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows) and [earlier versions](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277(v=ws.11)).
 VMware VM | Any VM running on supported VMware servers. [Learn more](http://www.VMware.com/resources/compatibility/search.php?deviceCategory=software)

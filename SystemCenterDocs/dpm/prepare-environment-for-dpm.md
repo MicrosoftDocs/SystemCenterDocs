@@ -16,6 +16,8 @@ ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 
 ::: moniker range="sc-dpm-2022"
 
+Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
+
 [!INCLUDE [system-reqs-dpm-2022.md](../includes/system-reqs-dpm-2022.md)]
 
 ::: moniker-end
@@ -27,7 +29,12 @@ ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 ::: moniker-end
 
 
+::: moniker range="<sc-dpm-2022"
+
+
 Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
+
+::: moniker-end
 
 ::: moniker range="<sc-dpm-2022"
 

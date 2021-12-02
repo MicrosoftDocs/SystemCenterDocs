@@ -541,7 +541,7 @@ To backup vSphere 6.7 and 7.0 (supported from DPM 2022) do the following:
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2019"
+::: moniker range=">=sc-dpm-2019"
 
 ## Exclude disk from VMware VM backup
 
