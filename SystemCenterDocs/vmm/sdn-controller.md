@@ -31,7 +31,7 @@ VMM 2022 provides dual stack support for SDN network controller.
 
 For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Deploy-Network-Controller) (~ five minutes) that provides an overview of network controller deployment.
 
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 > - From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
@@ -153,7 +153,7 @@ You create a management logical network in VMM, to mirror your physical manageme
 ::: moniker range="<sc-vmm-2019"
 3.  In **Settings** select **One Connected Network**. All management networks need to have routing and connectivity between all hosts in that network. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly** to automatically create a VM network for your management network.
 ::: moniker-end
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 3.  In **Settings** select **One Connected Network**. All management networks need to have routing and connectivity between all hosts in that network. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly** to automatically create a VM network for your management network.
 
     >[!NOTE]
@@ -376,7 +376,7 @@ You can optionally validate the network controller deployment. To do this:
 ::: moniker range="<sc-vmm-2019"
 2. In **Settings**, verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition, check **Managed by the network controller**.
 ::: moniker-end
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 2. In **Settings**, verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition, check **Managed by the network controller**.
 
     ![HNV network](media/sdn-controller/set-up-provider-network.png)
@@ -446,11 +446,10 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 
 2. [Create an IP address pool](network-pool.md) for each VM network.
 
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
->
->When you create VM network, to enable IPv6 support, select IPv6 from the **IP address protocol for the VM network** drop-down menu.
+> When you create VM network, to enable IPv6 support, select IPv6 from the **IP address protocol for the VM network** drop-down menu.
 >
 
 ![isolate using HNV network](media/sdn-controller/enable-ipv6.png)

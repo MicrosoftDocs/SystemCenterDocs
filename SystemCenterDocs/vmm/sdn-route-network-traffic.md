@@ -23,7 +23,7 @@ This article describes how to route traffic across networks in a software-define
 
 An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site virtual private network (VPN) using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 > - From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
@@ -55,7 +55,7 @@ To enable IPv6 for site-to-site VPN connection, routing subnet must be both IPv4
 ::: moniker range="sc-vmm-2022"
 VMM 2022 supports dual stack (Ipv4 + Ipv6) for SDN components.
 
-For specifying VIP range, don’t use the shortened form of IPv6 address; use *‘2001:db8:0:200:0:0:0:7’ format instead of ‘2001:db8:0:200::7’*. 
+For specifying VIP range, don’t use the shortened form of IPv6 address; use *‘2001:db8:0:200:0:0:0:7’ format instead of ‘2001:db8:0:200::7’*.
 
 ![Enable IPv6](media/sdn-route-network-traffic/configure-site-to-site-virtual-private-network.png)
 
@@ -271,7 +271,7 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 ## Configure L3 forwarding
 

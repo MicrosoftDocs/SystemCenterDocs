@@ -23,7 +23,7 @@ You can upgrade to DPM 2022 from the following versions:
   Before you upgrade to or install DPM 2022, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
 
-## Upgrade path for DPM 2019
+## Upgrade path for DPM 2022
 If you upgrade from DPM 2019 to DPM 2022, make sure your installation has the following necessary updates:
 
 - Upgrade the DPM server to DPM 2022.

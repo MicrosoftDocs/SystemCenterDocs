@@ -66,7 +66,11 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 ::: moniker-end
 
+::: moniker range="<sc-dpm-2019"
+
 **SQL Server - supported versions**
+
+::: moniker-end
 
 ::: moniker range="<sc-dpm-2019"
 

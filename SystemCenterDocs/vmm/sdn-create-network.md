@@ -59,30 +59,34 @@ The following two types of isolation settings are supported in SDN fabric:
 ## Create a VM network (network virtualization)
 
 1. In the VMM fabric, click **VMs and Services** > **VM Networks** > **Create VM Network**.
-2. In **Create VM Network Wizard** > **Name**, type a name, optional description and select a logical network that was created with network virtualization isolation settings.
-3. In **Isolation** , select **Isolate using Hyper-V network virtualization** , and select IPv4 for IP address protocols. Click **Next**.
+1. In **Create VM Network Wizard** > **Name**, type a name, optional description and select a logical network that was created with network virtualization isolation settings.
+1. In **Isolation** , select **Isolate using Hyper-V network virtualization** , and select IPv4 for IP address protocols. Click **Next**.
 
 ::: moniker range="sc-vmm-2022"
 
-3. In Isolation, select Isolate using Hyper-V network virtualization, and select IPv4 for IP address protocols for the VM network. Click Next. 
-
-4. To enable dual stack support In Isolation, select Isolate using Hyper-V network virtualization, and select IPv4  and IPv6 for IP address protocols for the VM network. Click Next. 
+1. To enable dual stack support In Isolation, select **Isolate** using Hyper-V network virtualization, and select IPv4 and IPv6 for IP address protocols for the VM network. Click Next.
 
 ::: moniker-end
 
    ![VM network in sdn](media/sdn-create-network/vm-network.png)
-4. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
+1. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
+
+::: moniker range="<=sc-vmm-2019"
    >[!NOTE]  
    > You can add multiple subnets.
+
+::: moniker-end
+
 ::: moniker range="sc-vmm-2022"
-   >[!Note]
-   >- You can add multiple subnets. 
-   >- To enable dual stack support, provide both IPv4 subnet and IPv6 subnet separated by a semi-colon (‘;’). 
+
+   >[!NOTE]
+   >- You can add multiple subnets.
+   >- To enable dual stack support, provide both IPv4 subnet and IPv6 subnet separated by a semi-colon (‘;’).
    >- For VM network, create two static IP pools with both IPv4 and IPv6 address space using the drop-down menu.
 
 ::: moniker-end
 
-5. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
+1. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
 
    >[!NOTE]
    > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
@@ -93,7 +97,7 @@ The following two types of isolation settings are supported in SDN fabric:
 
    - **Connect directly to an additional logical network**: Select this option if you want the virtual machines on this VM network to connect directly to an additional logical network. To enable access to internet resources, select **Network Address Translation (NAT)** or select **Direct Routing** to bridge a virtualized IP address space with a physical IP address space.
 
-6. In **Summary**,  verify the settings and click **Finish**.
+1. In **Summary**,  verify the settings and click **Finish**.
 
 Once the job is successfully completed, you can view the newly created VM network under **VMs and Services** > **VM Networks**.
 

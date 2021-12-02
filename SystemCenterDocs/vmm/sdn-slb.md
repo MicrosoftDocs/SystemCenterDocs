@@ -30,7 +30,7 @@ You can use VMM to deploy a network controller and a software load balancer. Aft
 VMM 2022 provides dual stack support for SLB.
 ::: moniker-end
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 >[!Note]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
 >- VMM 2019 UR2 and later supports IPv6.
@@ -121,7 +121,7 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
 
 ::: moniker-end
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
     For UR1 and later, in **Settings**, select **connected Network** and select **Managed by the network controller**.
     ![Private VIP](media/sdn-slb/create-private.png)

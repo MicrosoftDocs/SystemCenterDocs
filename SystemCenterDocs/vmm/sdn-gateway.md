@@ -29,11 +29,11 @@ VMM 2022 provides dual stack support for RAS gateway.
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2019"
->[!Note]
+::: moniker range=">=sc-vmm-2019"
+
+>[!NOTE]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**.
 >- VMM 2019 UR2 and later supports IPv6.
-
 ::: moniker-end
 
 ## Before you start
@@ -51,8 +51,10 @@ To set up a RAS gateway, do the following:
 
 1. **Download the service template**: Download the service template that you need to deploy the GW.
 2. **Create the VIP logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to define VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
+
 > [!NOTE]
 >To enable dual stack support, while creating GRE VIP logical network, add IPv6 subnet to the network site and create IPv6 address pool. (applicable for 2022 and later)
+
 3. **Import the service template**: Import the RAS gateway service template.
 4. **Deploy the gateway**: Deploy a gateway service instance, and configure its properties.
 5. **Validate the deployment**: Configure site-to-site GRE, IPSec, or L3, and validate the deployment.
@@ -241,7 +243,7 @@ Now that the gateway service is deployed, you can configure the properties, and 
 ::: moniker range="<sc-vmm-2019"
 6. In **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
 ::: moniker-end
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 6. To enable IPv4 support, in **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
 7. To enable IPv6 support, from **Network Controller Properties** > **Services**, select **Enable IPv6** checkbox, select the IPv6 GRE VIP subnet that you have created previously, and input the public IPv6 pool and public IPv6 address respectively. Also, select IPv6 frontend subnet that will be assigned to Gateway VMs.
 
