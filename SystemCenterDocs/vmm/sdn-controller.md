@@ -405,11 +405,15 @@ The configure HNV logical network needs an IP address pool, even if DHCP is avai
 ::: moniker range="<sc-vmm-2019"
 3.  In **Network Site**, you need to select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology) then you can just click **Next**.
 ::: moniker-end
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 3. In **Network Site**, you need to select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology) then you can just click **Next**.
 
-    >[!NOTE]
-    >To enable IPv6 support, add an IPv6 subnet and create IPv6 address pool.
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
+>[!NOTE]
+>To enable IPv6 support, add an IPv6 subnet and create IPv6 address pool.
 
 ::: moniker-end
 

@@ -15,7 +15,7 @@ ms.technology: virtual-machine-manager
 
 ::: moniker range="sc-vmm-2022"
 
-This article provides the upgrade information for System Center 2022 - Virtual Machine Manager (VMM). y
+This article provides the upgrade information for System Center 2022 - Virtual Machine Manager (VMM).
 
 [!INCLUDE [upgrade-to-vmm-2022.md](../includes/upgrade-to-vmm-2022.md)]
 

@@ -90,13 +90,13 @@ We recommend to use simplified SDN topology (2 physical network) for SLB deploym
 This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed).
 ::: moniker-end
 
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed). From VMM 2019 UR1 and later, you can create IP address pool using **Create Logical Network** wizard.
 ::: moniker-end
 
-**Note**:
-- Ensure you use the IP address range that corresponds to your transit network IP address space. Don't include the first IP address of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .2.
-- After you create the Transit logical network, ensure you associate this logical network with the Management switch uplink port profile you created during the network controller deployment.
+>[!NOTE]
+>- Ensure you use the IP address range that corresponds to your transit network IP address space. Don't include the first IP address of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .2.
+>- After you create the Transit logical network, ensure you associate this logical network with the Management switch uplink port profile you created during the network controller deployment.
 
 **Create the IP address pool**:
 

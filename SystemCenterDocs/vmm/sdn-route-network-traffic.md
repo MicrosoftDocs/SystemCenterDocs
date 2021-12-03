@@ -45,7 +45,7 @@ A site-to-site VPN connection allows you to securely connect two networks at dif
 
 For Cloud Service Providers (CSPs) that host many tenants in their datacenter, SDN RAS gateway provides a multi-tenant gateway solution that allows your tenants to access and manage their resources over Site-to-Site VPN connections from remote sites, which in turn allows network traffic between virtual resources in your datacenter and their physical network.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 To enable IPv6 for site-to-site VPN connection, routing subnet must be both IPv4 and IPv6. For gateway to work in IPv6, provide IPv4 and IPv6 addresses separated by semicolon (**;**) and provide IPv6 address in the remote endpoint. For example, *192.0.2.1/23;2001:0db8:85a3:0000:0000:8a2e:0370::/64*.
 
 ![Enable IPv6](media/sdn-route-network-traffic/configure-site-to-site-virtual-private-network.png)

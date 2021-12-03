@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: include file
 description: include article to detail the system requirements for VMM 2022
 author:  v-jysur
@@ -17,7 +17,7 @@ The following sections describe the scalability information, hardware, software,
 
 ## Capacity limits
 
-The following table provides the scale limits that were tested for System Center Virtual Machine Manager 2022. There are various factors that impact the scale limits, such as hardware configuration, network, topology, and others. 
+The following table provides the scale limits that were tested for System Center Virtual Machine Manager 2022. There are various factors that impact the scale limits, such as hardware configuration, network, topology, and others.
 
 The [planning guide](../vmm/plan-install.md) provides the details about how these factors can be adapted to specific requirements.
 
@@ -66,18 +66,19 @@ Windows Server 2019 (with desktop experience) | Y
 Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
 Windows Server 2022 | Y
 
+
 ## SQL Server
 
 >[!NOTE]
-> - For the supported versions of SQL, use the service packs that are currently in support by Microsoft. 
-> - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability. 
+> - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
+> - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
 
 **SQL version** | **Supported**
 --- | ---
 SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016) | Y
 SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017) | Y
 SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019) | Y
-SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack.<br/> or <br/> Install the SQL Server 2019 Command-Line Utilities from the Microsoft® SQL Server® 2019 Feature Pack. <br/><br/>Not required for VMM installation..
+SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack.<br/> or <br/> Install the SQL Server 2019 Command-Line Utilities from the Microsoft® SQL Server® 2019 Feature Pack. <br/><br/>Not required for VMM installation.
 
 ## Virtualization
 
@@ -85,7 +86,8 @@ SQL Server command line utilities | Install the SQL Server 2016 Command-Line Uti
 --- | ---
 VMM management server | The VMM management server can be installed on a VM.<br/><br/> If you use dynamic memory, set the start RAM of the VM to at least 4096 MB.<br/><br/> Don't install on a server running Hyper-V.<br/><br/> You can deploy the VMM management server (physical or VM) in a highly available cluster.
 VMM console | You can install the VMM console on a VM.
-4
+
+
 ## Installation components
 
 These components should be installed on the server, before you install VMM.
@@ -115,8 +117,8 @@ Windows Server 2022 | N | N | N | N
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5 , 6.7 
-vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7 
+ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5 , 6.7
+vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7
 Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 
 ## VMs in the VMM fabric
