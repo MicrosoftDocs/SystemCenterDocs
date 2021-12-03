@@ -420,6 +420,7 @@ The configure HNV logical network needs an IP address pool, even if DHCP is avai
 ::: moniker range="sc-vmm-2022"
 
   >[!NOTE]
+  > - To enable IPv6 support, add an IPv6 subnet and create IPv6 address pool.
   > - To enable IPv4 support, add an IPv4 subnet and create IPv4 address pool.
   > - To use IPv6 address space, add both IPv4 and IPv6 subnets to the network site.
   > - To enable dual stack support, create IP pools with both IPv4 and IPv6 address space.
