@@ -5,7 +5,7 @@ description: This section explains monitoring configurations in Management Pack 
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 11/1/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -156,6 +156,15 @@ The following is a list that explains the default state of each of the space mon
 	- Targeted to the In-Memory OLTP Data container
 		- Memory-Optimized Data Filegroup Container Free Space
 
+The following monitors support the **Health Calculation Mode** override:
+
+- FILESTREAM Data Free Space Left
+- In-Memory OLTP Data Free Space Left
+- DB Log File Free Space Left
+- ROWS Data Free Space Left
+
+This override allows you to define how you want to monitor free space in your environment. You can instruct any of the monitors above to track the health state based on the 'Threshold' parameter expressed as a percentage term (%) or as a capacity metric (MB). To make monitoring even more efficient, you can use both the percentage term (%) and the capacity metric (MB) thresholds simultaneously, in which case, the metric with the worst state is going to be used to report the overall health status.
+
 ## Disabled Space Monitoring Workflows for SQL on Linux
 
 The following workflows are disabled by default as they are not provided with the necessary data by the SQL Server on Linux:
@@ -294,6 +303,9 @@ The following is a complete list of securables checked by the monitor targeted t
   - sys.tables
   - sys.filegroups
   - sys.syscolumns
+
+>[!NOTE]
+>Mind that some monitors may have properties with double underscore in their names. Such properties are used for internal management pack purposes; make sure not to use them.
 
 ## WMI Health State Monitor
 
