@@ -36,7 +36,7 @@ Once you have installed the first management server and created the management g
 ::: moniker range="sc-om-2022"
 
 >[!NOTE]
->You can setup and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
+>You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
 
 ::: moniker-end
 
