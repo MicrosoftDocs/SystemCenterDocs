@@ -40,7 +40,7 @@ Operations Manager 2022 supports **Alert source** in the **Add** widget.
 3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
 
 ::: moniker range="sc-om-2022"
-![Specify name and description](./media/create-web-dashboard-alerts/web-console-new-dashboard-08.png)
+[![Specify name and description](./media/create-web-dashboard-alerts/web-console-new-dashboard-08-inline.png)](./media/create-web-dashboard-alerts/web-console-new-dashboard-08-expanded.png#lighbox)
 
 ::: moniker-end
 ![Specify name and description for new dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
