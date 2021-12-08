@@ -14,7 +14,7 @@ ms.technology:  operations-manager
 ## Install Operations Manager 2022 agent on UNIX and Linux computers
 The following procedures show how to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager version 2022.
 
-## To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
+## Install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
 
 1.  Transfer the Red Hat Enterprise agent to the Linux server:
 
@@ -40,7 +40,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
     `scxadmin -status`
 
-## To install the agent on RPM based Universal Linux Servers (Oracle)
+## Install the agent on RPM based Universal Linux Servers (Oracle)
 
 1.  Transfer the agent (`scx-<version>.universalr.<version>.<arch>.sh`) to the Linux server. This should be done via SCP or FTP in binary mode.
 
@@ -56,7 +56,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
     `scxadmin -status`
 
-## To install the agent on DPKG-based Universal Linux Servers (Debian and Ubuntu)
+## Install the agent on DPKG-based Universal Linux Servers (Debian and Ubuntu)
 
 1.  Transfer the agent (`scx-<version>.universald.<version>.<arch>.sh`) to the Linux server. This should be done via SCP or FTP in binary mode.
 
@@ -72,7 +72,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
     `scxadmin -status`
 
-## Signing agent certificates
+## Sign agent certificates
 
 When you manually deploy an agent, you perform the first two steps that are typically handled by the Discovery Wizard, deployment and certificate signing. The certificate gets encrypted with SHA256. Then, you use the Discovery Wizard to add the computer to the management group. 
 
@@ -80,7 +80,7 @@ If there are existing certificates on the system, they are reused during agent i
 
 You must have already manually installed an agent before you start this procedure. You will need a root or elevated account to perform the procedure. 
 
-## To install certificates for UNIX and Linux support
+## Install certificates for UNIX and Linux support
 
 1.  On the computer that is running the UNIX or Linux operating system, locate the file `/etc/opt/microsoft/scx/ssl/scx-host-<hostname>.pem` and securely copy or transfer it to any location on the computer that is hosting Operations Manager.
 
@@ -99,6 +99,6 @@ You must have already manually installed an agent before you start this procedur
 
 7.  Restart the agent by typing `scxadmin –restart`.
 
-## Discovering computers after manual deployment
+## Discover computers after manual deployment
 
 After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the **Discovery type**, select **Discover only computers with the UNIX/Linux agent installed**. For more information see [Install Agent on UNIX and Linux Using the Discovery Wizard](~/scom/manage-deploy-crossplat-agent-console.md).
