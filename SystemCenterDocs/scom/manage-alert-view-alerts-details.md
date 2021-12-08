@@ -55,7 +55,7 @@ You can also sort and group the alerts by Monitor/Rule.
 
 ![Alert source](./media/manage-alert-view-alerts-details/alert-source.png)
 
-![Active alert source](./media/manage-alert-view-alerts-details/active-alerts01.png)
+![Active alert source](./media/manage-alert-view-alerts-details/active-alerts-01.png)
 
 ::: moniker-end
 
@@ -102,8 +102,6 @@ To view the details for an alert, in the **Monitoring** workspace, click **Activ
 With Operations Manager 2022, you can view source (FQDN) for the alerts when you try to tune a management pack. 
 
 ![View source for the alerts](./media/manage-alert-view-alerts-details/fqdn.png)
-
-![View source](./media/manage-alert-view-alerts-details/view-source.png)
 
 ::: moniker-end
 
