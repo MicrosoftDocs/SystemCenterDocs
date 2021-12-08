@@ -6,7 +6,7 @@ author: v-jysur
 ms.author: v-jysur
 manager: evansma
 ms.date: 11/29/2021
-ms.topic: article
+ms.topic: include
 ms.prod: system-center
 ms.technology: operations-manager
 ---
@@ -101,12 +101,12 @@ The following versions of Windows Server operating system are supported for the 
 > [!NOTE]
 > Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=53164). The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.
 
-- .NET Framework 4 or .NET Framework 4.5 or .NET Framework 4.8 is required.
+- .NET Framework 4, .NET Framework 4.5, or .NET Framework 4.8 is required.
 
 ### Web console
 
 - Operating System: See [Server Operating System requirements](#server-operating-system).
-- Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
+- Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 are required.
 
     >[!NOTE]
     > Operations Manager 2019 and later only includes the 64-bit version of the Operations console. 
@@ -132,7 +132,7 @@ The following versions of Windows Server operating system are supported for the 
     - Windows Authentication
  <br>
 - Selected website for web console: Requires a configured http or https binding.
-- .NET Framework 4 or .NET Framework 4.5 or .NET Framework 4.8 is required.
+- .NET Framework 4, .NET Framework 4.5, or .NET Framework 4.8 is required.
 
 > [!NOTE]
 > Installation of the web console requires that **ISAPI and CGI Restrictions** in IIS are enabled for ASP.NET 4.8. To enable this, select the web server in **IIS Manager**, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.8**, and then click **Allow**.
@@ -147,7 +147,7 @@ The following versions of Windows Server operating system are supported for the 
     > [!NOTE]
     > System Center 2016 – Operations Manager and later supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.
 
-- .NET Framework 4 or .NET Framework 4.5 or .NET Framework 4.8 is required.
+- .NET Framework 4, .NET Framework 4.5, or .NET Framework 4.8 is required.
 
 ## Client operating system
 
