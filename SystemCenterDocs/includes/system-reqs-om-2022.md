@@ -72,13 +72,13 @@ The following versions of Windows Server operating system are supported for the 
 
 | Component                                                           | Windows Server 2016 Standard, Datacenter | Windows 2016 Server Core | Windows Server 2019 Standard, Datacenter | Windows Server 2019 Server Core | Windows Server 2022 Standard, Datacenter | Windows Server 2022 Server Core |
 |:--------------------------------------------------------------------|:-----------------------------------------|:-------------------------|:-----------------------------------------|:--------------------------------| :-----------------------------------------|:--------------------------------|
-| **Operations Manager** Management Server                            | yes                                      | yes                      | yes                                      | yes    | yes      | yes          |
-| **Operations Manager** Gateway Server                               | yes                                      | yes                      | yes                                      | yes    | yes      | yes          |
-| **Operations Manager** Web Console                                  | yes                                      |                          | yes                                      |        | yes      |              |
-| **Operations Manager** ACS Collector                                | yes                                      |                          | yes                                      |        | yes      |              |
-| **Operations Manager** Operations console                           | yes                                      |                          | yes                                      |        | yes      |              |
-| **Operations Manager** Operational, Data Warehouse,<br>ACS database | yes                                      | yes                      | yes                                      | yes    | yes      | yes          |
-| **Operations Manager** Reporting server                             | yes                                      |                          | yes                                      |        |yes       |              |
+| **Operations Manager** Management Server                            | Yes                                      | Yes                      | Yes                                      | Yes    | Yes      | Yes          |
+| **Operations Manager** Gateway Server                               | Yes                                      | Yes                      | Yes                                      | Yes    | Yes      | Yes          |
+| **Operations Manager** Web Console                                  | Yes                                      |                          | Yes                                      |        | Yes      |              |
+| **Operations Manager** ACS Collector                                | Yes                                      |                          | Yes                                      |        | Yes      |              |
+| **Operations Manager** Operations console                           | Yes                                      |                          | Yes                                      |        | Yes      |              |
+| **Operations Manager** Operational, Data Warehouse,<br>ACS database | Yes                                      | Yes                      | Yes                                      | Yes    | Yes      | Yes          |
+| **Operations Manager** Reporting server                             | Yes                                      |                          | Yes                                      |        |Yes       |              |
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
