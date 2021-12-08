@@ -24,7 +24,7 @@ This topic provides a list of the operations in System Center Operations Manager
 
 ::: moniker range="sc-om-2022"
 
-You can setup and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
+You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
 
 In addition to the existing operations, Operations Manager 2022 supports *Read-only Administrator* and *Delegated Administrator* roles. The operations for these roles are detailed in the sections below.
 
