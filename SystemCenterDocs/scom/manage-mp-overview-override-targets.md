@@ -62,7 +62,6 @@ You have seen that classes are used to target workflows such as rules and monito
 Operations Manager 2022 provides support for sort option by column, in **Overrides Summary**. 
 
 ![Overrides Summary](./media/manage-mp-overview-override-targets/overrides-summary.png)
-![Overrides](./media/manage-mp-overview-override-targets/overrides-summary-01.png)
 
 ::: moniker-end
 
