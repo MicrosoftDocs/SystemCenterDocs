@@ -9,7 +9,7 @@ ms.date: 11/29/2021
 ms.custom: intro-whats-new
 ms.prod: system-center
 ms.technology: operations-manager
-ms.topic: article
+ms.topic: include
 ---
 
 ## New features in Operations Manager 2022
@@ -20,8 +20,8 @@ The following sections introduce new and updated features in System Center Opera
 
 With Operations Manager 2022, new build-in roles are created for enhanced user experience.  
 
-1. A new built-in role **Read-only Administrator** is supported. This role provides all the read permissions in Operations Manager including reporting. 
-1. A new **Delegated Administrator** profile has been introduced, which is Read-Only Administrator except reporting. You can create a custom user role with **Delegated Administrator** as the base profile and add one or more permissions to it from the available categories. 
+- A new built-in role **Read-only Administrator** is supported. This role provides all the read permissions in Operations Manager including reporting. 
+- A new **Delegated Administrator** profile has been introduced, which is Read-Only Administrator except reporting. You can create a custom user role with **Delegated Administrator** as the base profile and add one or more permissions to it from the available categories. 
 
 ### Support for Reporting Services on NTLM hardened enterprises
 
