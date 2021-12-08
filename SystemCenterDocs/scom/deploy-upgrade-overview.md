@@ -3,14 +3,14 @@ ms.assetid: 9d47d9ef-9a95-4b05-817f-75b3039f6e2c
 title: Upgrading System Center Operations Manager
 description: This guide provides information on how to upgrade to Operations Manager.
 author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
-ms.date: 03/14/2019
+ms.author: v-jysur
+manager: evansma
+ms.date: 11/29/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-monikerRange: '>=sc-om-2016 <sc-om-1807 || sc-om-2019'
+monikerRange: '>=sc-om-2016 <sc-om-1807 || sc-om-2019 || sc-om-2022'
 ---
 
 # Upgrading System Center Operations Manager
@@ -21,11 +21,25 @@ monikerRange: '>=sc-om-2016 <sc-om-1807 || sc-om-2019'
 
 ::: moniker-end
 
+::: moniker range="sc-om-2022"
+
+This section of the Deployment Guide provides information about how to upgrade to System Center 2022 from an older supported version. You can upgrade to Operations Manager 2022 from Operations Manager versions 2019 and 2016. 
+
+It is assumed in this guide that you are performing an upgrade from System Center 2019/2019 UR2 or 2016. Do not upgrade from 2019 UR1.
+
+For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see Deploying System Center Operations Manager. 
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 This section of the Deployment Guide provides information about how to upgrade to System Center 2019 from an older supported version. You can upgrade to Operations Manager 2019 from Operations Manager versions 2016, 1801 or 1807.
 
 It is assumed in this guide that you are performing an upgrade from System Center 2016, 1801, or 1807. For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see [Deploying System Center Operations Manager](deploy-overview.md).
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
 > [!NOTE]
 > If your Operations Manager management group is integrated with Microsoft Azure Log Analytics (Formerly referred to as Microsoft Operations Management Suite (OMS)), its configuration will be retained and continue to function normally after the upgrade is complete.  
@@ -43,13 +57,31 @@ It is assumed in this guide that you are performing an upgrade from System Cente
 
 Before you upgrade to System Center Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center Operations Manager](./system-requirements.md).
 
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
+
 There are several options for upgrade:
 
 1. If you run upgrade on a single-server management group, you only need to run the upgrade one time since all features are installed on a single server. The Operations Manager Upgrade wizard performs system prerequisite checks and provides resolution steps for any issues. Installation will not continue until you resolve all issues.
 
 2. If you are upgrading a distributed management group, you must upgrade certain features before others. For example, you upgrade the management servers first, followed by the gateways, operations consoles, and then agents. Next, you can upgrade any remaining features, such as the web console, reporting and Audit Collection Services (ACS). You must also perform a number of pre-upgrade and post-upgrade tasks.
 
+::: moniker-end
+
+::: moniker range="sc-om-2019"
+
 3. If you want to maintain your earlier version of Operations Manager (2016, 1801, 1807) Operations Manager environment, you can install version 2019 in parallel, upgrade your agents and multi-home them between both management groups.  
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+3. If you want to maintain your earlier version of Operations Manager (2019, 2016) Operations Manager environment, you can install version 2022 in parallel, upgrade your agents and multi-home them between both management groups. 
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
 
 ## Supported coexistence
 
@@ -67,6 +99,30 @@ System Center 2019 - Operations Manager supports an in-place upgrade from the fo
 - System Center 2016
 - System Center 1801
 - System Center 1807
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+## Supported coexistence 
+
+The following table lists the scenarios in which coexistence between Operations Manager 2022 and earlier versions of Operations Manager is supported. 
+
+| Version | Management Group Coexistence |
+|:--- |:---|
+|  Operations Manager 2016 RTM to the latest update rollup| Yes|
+|  Operations Manager 2019 RTM to the latest update| Yes|
+
+## In-place upgrade 
+
+System Center 2022 - Operations Manager supports an in-place upgrade from the following versions: 
+
+- System Center 2019
+- System Center 2016 
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
 ## High level overview of upgrade steps for a distributed management group
 
@@ -92,12 +148,29 @@ The following steps outline the process for upgrading a distributed management g
 
 \*Steps 4 through 8 can be performed in parallel after all management servers have been upgraded.
 
+::: moniker-end
+
+::: moniker range="sc-om-2019"
 
 ## High level overview of upgrading agents and running two environments
 
 The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center supported version environment is left intact. Agents that have been upgraded to System Center 2019 Operations Manager on your upgrade path, are fully capable of working with native Operations Manager 2016, 1801 and 1807 functionality.  
 
 Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group.  For further information, see [How to Upgrade Agents in a Parallel Deployment](deploy-upgrade-agents-parallel.md).  
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+## High level overview of upgrading agents and running two environments 
+
+The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center supported version environment is left intact. Agents that have been upgraded to System Center 2022 Operations Manager on your upgrade path, are fully capable of working with native Operations Manager 2019 and 2016 functionality. 
+
+Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group. For further information, see How to Upgrade Agents in a Parallel Deployment. 
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
 1. Retain the original System Center Operations Manager environment.
 
@@ -109,7 +182,7 @@ Agents can be upgraded before the new Operations Manager management group is dep
 
     b. Manual / Command-line option
 
-## Next steps
+## Next Steps
 
 - To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-pretasks.md).
 
@@ -217,7 +290,7 @@ Agents can be upgraded before the new Operations Manager management group is dep
 
     b. Manual / Command-line option
 
-## Next steps
+## Next Steps
 
 - To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-pretasks.md).
 

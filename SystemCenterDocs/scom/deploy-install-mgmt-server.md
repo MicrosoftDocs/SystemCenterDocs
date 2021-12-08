@@ -3,9 +3,9 @@ ms.assetid: dbd26196-14f8-4593-9e4b-5c54ac4edb45
 title: How to Install an Operations Manager Management Server
 description: This article describes how to install an Operations Manager management server.
 author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
-ms.date: 03/06/2018
+ms.author: v-jysur
+manager: evansma
+ms.date: 11/29/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -32,6 +32,13 @@ Once you have installed the first management server and created the management g
 > If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
 
  ::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+>[!NOTE]
+>You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
+
+::: moniker-end
 
 ### To install the first management server in the management group
 
