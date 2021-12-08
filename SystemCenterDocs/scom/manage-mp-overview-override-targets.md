@@ -63,6 +63,7 @@ Operations Manager 2022 provides support for sort option by column, in **Overrid
 
 ![Overrides Summary](./media/manage-mp-overview-override-targets/overrides-summary.png)
 ![Overrides](./media/manage-mp-overview-override-targets/overrides-summary-01.png)
+
 ::: moniker-end
 
 Overrides that apply to a class are applied first, then overrides that apply to a group, and finally overrides that apply to a specific object. For more information, see [Using the Enforced Attribute in Overrides](#using-the-enforced-attribute-in-overrides) below.  
