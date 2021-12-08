@@ -2,7 +2,7 @@
 ms.assetid: b60c4398-37f7-4015-afe7-229d7c62ea01
 title: Plan a highly available VMM deployment
 description: This article provides planning information for deploying VMM and its components in high availability mode
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 10/29/2020
@@ -54,7 +54,7 @@ You shouldn't install SQL Server on the VMM cluster.
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 ## Plan a highly available VMM management server
 - Don't install on a Hyper-V host parent partition. You can install VMM on a VM.

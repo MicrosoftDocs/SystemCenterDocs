@@ -59,7 +59,7 @@ Ensure the following prerequisites:
 
  ::: moniker-end
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
   5. Once you see the VM console, look for **Enhanced Session** option at the top right of the page. Click it to launch the enhanced Session window.
 
@@ -78,7 +78,7 @@ Ensure the following prerequisites:
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 6. To switch back to basic session, click **Basic Session** at the top right.
 

@@ -2,7 +2,7 @@
 ms.assetid: 00698994-021a-413e-94fb-54b07ebe3e4a
 title: Deploy VMM for high availability
 description: This article describes how to deploy the VMM server in high availability mode.
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 11/07/2017

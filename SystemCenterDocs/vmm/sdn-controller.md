@@ -2,7 +2,7 @@
 ms.assetid: 8bd626d5-27c0-46c5-9031-905a69e44219
 title: Set up an SDN network controller in the VMM fabric
 description: This article describes how to set up a Software Defined Network (SDN) infrastructure in the System Center VMM fabric.
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 03/30/2021
@@ -25,7 +25,7 @@ The SDN network controller is a scalable and highly available server role that e
 
 For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Deploy-Network-Controller) (~ five minutes) that provides an overview of network controller deployment.
 
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 > - From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
@@ -146,7 +146,7 @@ You create a management logical network in VMM, to mirror your physical manageme
 ::: moniker range="<sc-vmm-2019"
 3.  In **Settings** select **One Connected Network**. All management networks need to have routing and connectivity between all hosts in that network. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly** to automatically create a VM network for your management network.
 ::: moniker-end
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 3.  In **Settings** select **One Connected Network**. All management networks need to have routing and connectivity between all hosts in that network. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly** to automatically create a VM network for your management network.
 
     >[!NOTE]
@@ -159,7 +159,7 @@ You create a management logical network in VMM, to mirror your physical manageme
 
 
 ###  Create an IP address pool
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 > From VMM 2019 UR1, you can create IP address pool using **Create Logical Network** wizard.
@@ -329,7 +329,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 **RestEndPoint** | Required| Enter the RESTName you used when preparing the certificates.  This parameter isn't used for standalone templates. <br><br> If the nodes are in the same subnet, you must provide the REST IP address. If the nodes are in different subnets, provide the REST DNS name.   
 **ServerCertificatePassword** | Required | Password to import the certificate into the machine store.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 > [!NOTE]
 > Windows 2019 onwards, the Network Controller machines must be provided permission to register and modify the SPN in the Active Directory. For more details, see [Kerberos with Service Principal Name](/windows-server/networking/sdn/security/kerberos-with-spn).
@@ -369,7 +369,7 @@ You can optionally validate the network controller deployment. To do this:
 ::: moniker range="<sc-vmm-2019"
 2. In **Settings**, verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition, check **Managed by the network controller**.
 ::: moniker-end
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 2. In **Settings**, verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition, check **Managed by the network controller**.
 
     ![HNV network](media/sdn-controller/set-up-provider-network.png)
@@ -384,7 +384,7 @@ You can optionally validate the network controller deployment. To do this:
 
 ### Create the IP address pool
 
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 > From VMM 2019 UR1, you can create IP address pool using **Create Logical Network** wizard.
@@ -398,7 +398,7 @@ The configure hnv logical network needs an IP address pool, even if DHCP is avai
 ::: moniker range="<sc-vmm-2019"
 3.  In **Network Site**, you need to select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology) then you can just click **Next**.
 ::: moniker-end
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 3. In **Network Site**, you need to select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology) then you can just click **Next**.
 
     >[!NOTE]
@@ -430,7 +430,7 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 
 2. [Create an IP address pool](network-pool.md) for each VM network.
 
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 >
@@ -448,7 +448,7 @@ Now, you can create tenant virtual machines connected to the tenant virtual netw
 - Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
 - To allow IPv4 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**.
 ::: moniker-end
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 - Ensure that your tenant virtual machines allow IPv4/IPv6 ICMP through their firewall. By default, Windows Server blocks this.
     - To allow IPv4 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**.
     - To allow IPv6 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv6-In” –Protocol ICMPv6** (applicable for 2019 UR2 and later).

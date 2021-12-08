@@ -2,7 +2,7 @@
 ms.assetid: 979fc81c-b946-47ab-8ddb-50e53478d3f4
 title: Set up networking for Hyper-V hosts and clusters in the VMM fabric
 description: This article describes how to set up networking for Hyper-V hosts and clusters in the VMM fabric
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 08/04/2020
@@ -54,7 +54,7 @@ Regardless of any port profiles and logical switches you are using in your netwo
     - In **Logical Switch Information for Hosts** verify the settings. **Fully compliant** indicates that the host settings are compliant with the logical switch. **Partially compliant** indicates some issues. Check the reasons in **Compliance errors**. **Non compliant** indicates that none of the IP subnets and VLANs defined for the logical network are assigned to the physical adapter. Click the switch > **Remediate** to fix this.
     - If you have a cluster, check each node.
 
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 ## Set affinity between vNICs and pNICs
 

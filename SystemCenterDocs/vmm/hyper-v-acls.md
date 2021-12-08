@@ -2,7 +2,7 @@
 ms.assetid: 2684494b-1779-4df8-9f11-db46a0d96542
 title: Manage port ACLs in VMM 2016
 description: Describes how to manage Hyper-V port access control lists (ACLs)
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 11/07/2017

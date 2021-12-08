@@ -2,7 +2,7 @@
 ms.assetid: 628d7b3e-9933-4b65-b3b1-a54e1cbbaa37
 title: Identify VMM ports and protocols
 description: This article provides information about the ports and protocols used in a VMM 2016 deployment
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 05/17/2019

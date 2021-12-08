@@ -2,7 +2,7 @@
 ms.assetid: b66ee78f-a74b-4950-83fc-cb8f35375c1d
 title: Deploy a Storage Spaces Direct hyper-converged cluster in VMM
 description: This article describes how to deploy a Storage Spaces Direct hyper-converged cluster in the VMM fabric
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 03/30/2021
@@ -91,7 +91,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 2.	You need to [set up a logical switch](network-switch.md) with Switch Embedded Teaming (SET) enabled, so that the switch is aware of virtualization. This switch is connected to the management logical network, and has all of the host virtual adapters that are required to provide access to the management network, or configure storage networking. S2D relies on a network to communicate between hosts. RDMA-capable adapters are recommended.
 3.	[Create VM networks](network-virtual.md).
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 ## Step 3: Configure DCB settings on the S2D cluster
 

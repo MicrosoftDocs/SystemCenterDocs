@@ -2,8 +2,8 @@
 ms.assetid: ba5add9b-c6c8-4e70-b916-94d9c548757f
 title: Virtual Machine Manager build versions
 description: This article describes about version numbers.
-author: v-anesh
-ms.author: v-anesh
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 manager: vvithal
 ms.date: 03/30/2021
 ms.topic: article
@@ -27,7 +27,7 @@ This article describes how to determine your current Microsoft System Center –
 
 ## Build versions
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 The following table lists the build versions for Virtual Machine Manager 2019.
 

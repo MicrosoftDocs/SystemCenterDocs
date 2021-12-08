@@ -2,7 +2,7 @@
 ms.assetid: 8fea0c85-7091-48f7-8f50-0ad2dd56da64
 title: Set up user roles in VMM
 description: This article describes how to set up VMM roles and permissions
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 03/14/2019

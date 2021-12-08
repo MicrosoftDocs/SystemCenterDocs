@@ -2,7 +2,7 @@
 ms.assetid: 1ec9b2c2-5045-4605-8331-711ed30163d0
 title: Add file-based resources to the VMM library
 description: This article provides guidance for adding files to the library in the VMM compute fabric
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 07/02/2018

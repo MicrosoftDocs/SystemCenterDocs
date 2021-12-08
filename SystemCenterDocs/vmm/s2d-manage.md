@@ -2,7 +2,7 @@
 ms.assetid: d0f49f22-f145-4147-b66d-3bf384e2ac08
 title: Manage Storage Spaces Direct clusters in VMM
 description: This article describes how to set up and manage Storage Spaces Direct in the VMM fabric.
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 02/04/2020
@@ -43,7 +43,7 @@ Quality of Service in [Windows Server](/windows-server/storage/storage-qos/stora
 [Set up QoS policies](sofs-settings.md#set-a-storage-qos-for-an-sofs) for a file server or for specific virtual disks on the server.
 
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 ## Configure DCB settings on S2D clusters
 

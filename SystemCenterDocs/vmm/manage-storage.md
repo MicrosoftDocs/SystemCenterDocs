@@ -2,7 +2,7 @@
 ms.assetid: c563887d-4182-4d58-b6d4-5fc980b2d2e2
 title: Set up the VMM storage fabric
 description: This article describes how to set up the VMM storage fabric
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 03/14/2019
@@ -78,7 +78,7 @@ Storage classifications provide a layer of abstraction over specific storage dev
 
 After you've created classifications you assign them to storage pools that include block or file-based storage. You can tweak classification settings for file shares within pools as required.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 ## Monitor storage health
 
