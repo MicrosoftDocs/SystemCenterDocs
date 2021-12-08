@@ -182,7 +182,7 @@ Agents can be upgraded before the new Operations Manager management group is dep
 
     b. Manual / Command-line option
 
-## Next steps
+## Next Steps
 
 - To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-pretasks.md).
 
