@@ -55,8 +55,6 @@ You can also sort and group the alerts by Monitor/Rule.
 
 ![Alert source](./media/manage-alert-view-alerts-details/alert-source.png)
 
-![Active alert source](./media/manage-alert-view-alerts-details/active-alerts-01.png)
-
 ::: moniker-end
 
 The following folders in the Monitoring workspace include a standard Active Alerts view scoped to the objects for that folder.  
