@@ -51,10 +51,6 @@ With Operations Manager 2022, you can view the source of the alert if you had se
 
 You can also sort and group the alerts by Monitor/Rule.
 
-![Active alerts](./media/manage-alert-view-alerts-details/active-alerts.png)
-
-![Alert source](./media/manage-alert-view-alerts-details/alert-source.png)
-
 ::: moniker-end
 
 The following folders in the Monitoring workspace include a standard Active Alerts view scoped to the objects for that folder.  
