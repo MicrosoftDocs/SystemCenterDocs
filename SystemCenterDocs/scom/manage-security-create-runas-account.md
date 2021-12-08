@@ -26,7 +26,7 @@ This topic provides a list of the operations in System Center Operations Manager
 
 You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
 
-In addition to the existing operations, Operations Manager 2022 supports *Read-only Administrator* and *Delegated Administrator* roles. The operations for these roles are detailed in the sections below.
+In addition to the existing operations, Operations Manager 2022 supports *Read-only Administrator* and *Delegated administrator* roles. The operations for these roles are detailed in the sections below.
 
 ::: moniker-end
 
@@ -377,9 +377,9 @@ The Report Security Administrator profile includes a set of privileges designed 
 
 The Read-only Administrator profile includes all the read privileges in Operations Manager along with reporting. 
 
-## Delegated Administrator 
+## Delegated administrator 
 
-The Delegated Administrator profile includes all the read privileges in Operations Manager except reporting. Create a custom role with Delegated Administrator as the base profile, and one or more permissions from the following categories: 
+The Delegated administrator profile includes all the read privileges in Operations Manager except reporting. Create a custom role with Delegated administrator as the base profile, and one or more permissions from the following categories: 
 
 -   Agent management 
 
