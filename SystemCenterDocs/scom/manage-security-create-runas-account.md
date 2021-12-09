@@ -3,9 +3,9 @@ ms.assetid: 50e3914b-4047-4dce-97f1-0bca1619f4a1
 title: Operations Associated with User Role Profiles
 description: This article describe the user roles in Operations Manager and they what actions they can perform in the management group.
 author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: cfreemanwa
-ms.date: 11/15/2016
+ms.author: v-jysur
+manager: evansma
+ms.date: 11/29/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -21,6 +21,14 @@ ms.topic: article
 ::: moniker-end
 
 This topic provides a list of the operations in System Center Operations Manager that are associated with each profile.  
+
+::: moniker range="sc-om-2022"
+
+You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
+
+In addition to the existing operations, Operations Manager 2022 supports *Read-only Administrator* and *Delegated administrator* roles. The operations for these roles are detailed in the sections below.
+
+::: moniker-end
 
 ## Report Operator  
 
@@ -362,6 +370,34 @@ The Report Security Administrator profile includes a set of privileges designed 
 -   Enumerate rules  
 
 -   Access Application Advisor  
+
+::: moniker range="sc-om-2022"
+
+## Read-only Administrator 
+
+The Read-only Administrator profile includes all the read privileges in Operations Manager along with reporting. 
+
+## Delegated administrator 
+
+The Delegated administrator profile includes all the read privileges in Operations Manager except reporting. Create a custom role with Delegated administrator as the base profile, and one or more permissions from the following categories: 
+
+-   Agent management 
+
+-   Account management 
+
+-   Connector management 
+
+-   Global settings 
+
+-   Management pack authoring 
+
+-   Notification management 
+
+-   Operations permissions 
+
+-   Reporting permissions 
+
+::: moniker-end
 
 ## Next steps
 

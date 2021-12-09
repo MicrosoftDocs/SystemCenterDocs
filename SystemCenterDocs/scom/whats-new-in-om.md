@@ -14,6 +14,17 @@ ms.topic: article
 
 # What's New in Operations Manager
 
+
+
+::: moniker range="sc-om-2022"
+
+This article details the new features supported in System Center 2022 - Operations Manager. 
+
+[!INCLUDE [whats-new-om-2022.md](../includes/whats-new-om-2022.md)]
+
+::: moniker-end
+
+
 ::: moniker range="sc-om-2019"
 
 This article details the new features supported in System Center 2019 - Operations Manager. Also includes the new features in Operations Manager 2019 UR1, 2019 UR2 and 2019 UR3.

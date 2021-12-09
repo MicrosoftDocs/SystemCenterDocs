@@ -3,9 +3,9 @@ ms.assetid: 332a9aa5-3176-4f39-b854-5a9817997eb5
 title: Managing Certificates for UNIX and Linux Computers
 description: This article describes how to manage certificates required for authentication with UNIX and Linux computers with Operations Manager.
 author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
-ms.date: 11/15/2016
+ms.author: v-jysur
+manager: evanma
+ms.date: 11/29/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -21,6 +21,14 @@ ms.topic: article
 ::: moniker-end
 
 With System Center Operations Manager, you can deploy agents to UNIX or Linux computers. Kerberos authentication is not possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the certificates are self-signed by the management server. (Although it is possible to use third-party certificates, they are not needed.)
+
+::: moniker range="sc-om-2022"
+
+Prior to Operations Manager 2016, the Linux Agent used to generate certificates and encrypt it with SHA1. From 2016, the Linux Agent generates a SHA1 certificate and then, as part of the discovery process, the certificate gets encrypted with SHA256. 
+
+With Operations Manager 2022, the certificate gets encrypted with SHA256.
+
+::: moniker-end
 
 There are two methods you can use to deploy agents. You can use the Discovery Wizard or you can manually install an agent. Of these two methods, manually installing an agent is the more secure option. When you use the Discovery Wizard to push agents to UNIX or Linux computers, you trust that the computer that you are deploying to is really the computer that you think it is. When you use the Discovery Wizard to deploy agents, it involves greater risk than when you deploy to computers on the public network or in a perimeter network.
 
