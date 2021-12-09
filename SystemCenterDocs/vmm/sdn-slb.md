@@ -2,10 +2,10 @@
 ms.assetid: e950d0c6-23d3-4f93-9210-c57f9068e5bc
 title: Set up an SDN software load balancer in the VMM fabric
 description: This article describes how to set up a SDN software load balancer in the VMM fabric
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
-ms.date: 08/04/2020
+author: JYOTHIRMAISURI
+ms.author: v-jysur
+manager: evansma
+ms.date: 11/29/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -26,7 +26,11 @@ The SLB enables even distribution of tenant and tenant customer network traffic 
 
 You can use VMM to deploy a network controller and a software load balancer. After you set up the SLB, you can leverage the multiplexing and NAT capabilities in your SDN infrastructure.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range="sc-vmm-2022"
+VMM 2022 provides dual stack support for SLB.
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2019"
 >[!Note]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
 >- VMM 2019 UR2 and later supports IPv6.
@@ -86,13 +90,13 @@ We recommend to use simplified SDN topology (2 physical network) for SLB deploym
 This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed).
 ::: moniker-end
 
-::: moniker range="=sc-vmm-2019"
-This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed). From VMM 2019 UR1, you can create IP address pool using **Create Logical Network** wizard.
+::: moniker range=">=sc-vmm-2019"
+This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed). From VMM 2019 UR1 and later, you can create IP address pool using **Create Logical Network** wizard.
 ::: moniker-end
 
-**Note**:
-- Ensure you use the IP address range that corresponds to your transit network IP address space. Don't include the first IP address of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .2.
-- After you create the Transit logical network, ensure you associate this logical network with the Management switch uplink port profile you created during the network controller deployment.
+>[!NOTE]
+>- Ensure you use the IP address range that corresponds to your transit network IP address space. Don't include the first IP address of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .2.
+>- After you create the Transit logical network, ensure you associate this logical network with the Management switch uplink port profile you created during the network controller deployment.
 
 **Create the IP address pool**:
 
@@ -100,7 +104,7 @@ This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machi
 2. Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
 3. In **Network Site**, select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology) then you can just click **Next**.
 4. In **IP Address range** configure the starting and ending IP address. Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
-5. Next, configure the default gateway address. Click **Insert** next to the **Default gateways** box, type the address and use the default metric. Optionally configure DNS and WINS.
+5. Next, configure the default gateway address. Click **Insert** next to the **Default gateways** box, type the address, and use the default metric. Optionally configure DNS and WINS.
 6. Review the summary information and click **Finish** to complete the wizard.
 
     **Note**: Ensure you associate the logical network with the management switch uplink port profile.
@@ -117,7 +121,7 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
 
 ::: moniker-end
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
     For UR1 and later, in **Settings**, select **connected Network** and select **Managed by the network controller**.
     ![Private VIP](media/sdn-slb/create-private.png)
@@ -131,7 +135,7 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 ::: moniker range="<sc-vmm-2019"
 2. In **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller** and **Public IP Address Network**.
 ::: moniker-end
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
 
     For UR1 and later, in **Settings**, select **connected Network** and select both **Managed by the network controller** and **Public IP address network**.
@@ -160,6 +164,16 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
     > Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater. To specify the VIP range, don’t use the shortened form of IPv6 address; Use *2001:db8:0:200:0:0:0:7* format instead of *2001:db8:0:200::7*.
     >
     >The maximum number of addresses allowed in a single VIP range is 1024.
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+4. In **IP Address range**, configure the starting and ending IP address. Add IPv6 subnet to network site and create IPv6 address pools if you are using IPv6 address space.
+    >[!NOTE]
+    > - Add IPv6 address pools when you onboard a SLB.
+      - Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater. To specify the VIP range, don’t use the shortened form of IPv6 address; Use 2001:db8:0:200:0:0:0:7 format instead of 2001:db8:0:200::7.
+    >
+    >The maximum number of addresses allowed in a single VIP range is 1024.
+
 ::: moniker-end
 
 5. In **IP addresses reserved for load balancer VIPs**, type the IP address range in the subnet. It should match the start and end addresses you specified.
