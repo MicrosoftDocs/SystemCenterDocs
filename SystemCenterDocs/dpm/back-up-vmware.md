@@ -22,7 +22,7 @@ monikerRange: '>sc-dpm-2016'
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
-This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 5.5, 6.0, 6.5 or 6.7 versions of VMware vCenter and vSphere Hypervisor (ESXi).
+This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 5.5, 6.0, 6.5 or 6.7 versions of add a new user account vCenter and vSphere Hypervisor (ESXi).
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
@@ -341,7 +341,7 @@ For long term retention on VMware backup data on-premises, you can now enable VM
 **Use the following procedure**:
 
 1.	In the DPM Administrator console, click **Protection** > **Create protection group** to open the Create New Protection Group wizard.
-2.	On the **Select Group Members** page, select the VMWare VMs you want to protect.
+2.	On the **Select Group Members** page, select the VMware VMs you want to protect.
 3.	On the **Select Data Protection Method** page, select **I want long-term protection using tape**.
 4.	In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency that you want.
 5.	On the **Select Tape and Library Details** page, specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
@@ -473,7 +473,7 @@ DWORD – TurnOffFileCatalogUpload. Value - 0
 
 ## VMware parallel backups
 
-With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMWare delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019 and later, all your VMware VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMware delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
 
 You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
@@ -500,7 +500,7 @@ Key Path: HKLM\ Software\Microsoft\Microsoft Data Protection Manager\Configurati
 ```
 
 **Value type:** DWORD (32-bit)
-**Value name:** VMWare
+**Value name:** VMware
 **Value data:** 8
 
 The value should be the number (decimal) of virtual machines that you select for parallel recovery.
@@ -509,7 +509,7 @@ The value should be the number (decimal) of virtual machines that you select for
 
 ::: moniker range=">=sc-dpm-1807"
 
-## VMWare vSphere 6.7 and 7.0
+## VMware vSphere 6.7 and 7.0
 
 To backup vSphere 6.7 and 7.0 (supported from DPM 2022) do the following:
 

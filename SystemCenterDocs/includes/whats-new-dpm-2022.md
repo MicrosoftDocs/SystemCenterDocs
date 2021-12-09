@@ -20,7 +20,7 @@ See the following sections for detailed information about the new features/featu
 
 DPM 2022 supports installation of DPM 2022 on Windows Server 2022 and protection of Windows Server 2022 workloads. For more information on supported versions for Windows Servers, see system requirements.
 
-### Removed File Catalog dependency for online backup of file/folder worklodas
+### Removed File Catalog dependency for online backup of file/folder workloads
 
 DPM 2022 removes the dependency on File Catalog which was needed to restore individual files and folders from the Online recovery points. DPM now uses iSCSI mount method to provide individual file restore. This also improves the backups time as upload of file catalog metadata is not needed anymore
 

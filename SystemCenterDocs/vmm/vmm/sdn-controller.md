@@ -357,7 +357,7 @@ After the network controller service is successfully deployed, the next step is 
     - In multi-node deployment, **ServerURL** should use the REST endpoint, and **servicename** should be the name of the  network controller instance.
     - In single node deployment, **ServerURL** should be the network controller FQDN and, **servicename** must be the network controller service instance name. Example: ``serverurl=https://NCCluster.contoso.com;servicename=NC_VMM_RTM``
 
-6. In **Review Certificates**, a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure you select **These certificates have been reviewed and can be imported to the trusted certificate store box**.
+6. In **Review Certificates**, a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure you select **These certificates have been reviewed and can be imported to the trusted certificate storebox**.
 7. On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you’re using the right connect string to connect to it. Examine the results, and check that isNetworkController = true. When it completes successfully click **Next**.
 8. Configure the host group that your network controller will manage.
 9. Click **Finish** to complete the wizard. When the service has been added to VMM, it will appear in the **Network Services** list in the VMM console. If the network service isn't added, check **Jobs** in the VMM console to troubleshoot.
@@ -457,11 +457,17 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 > When you create VM network, to enable IPv6 support, select IPv6 from the **IP address protocol for the VM network** drop-down menu.
 >
 
+![isolate using HNV network](media/sdn-controller/enable-ipv6.png)
+
 > When you create VM network, to enable dual stack support, select IPv4 and IPv6 from the **IP address protocol for the VM network** drop-down menu. (applicable for 2022 and later)
 >
 
+![isolate using Hyper-V network virtualization](media/sdn-controller/enable-dual-stack.png)
+
 When you create VM Subnets, to enable dual stack support, provide both IPv4 subnet and IPv6 subnet, separated by a semi-colon (‘;’). (applicable to 2022 and later)
 >
+
+![Create a VM Subnets](media/sdn-controller/VM-Subnets.png)
 
 ::: moniker-end
 
@@ -487,6 +493,8 @@ Now, you can create tenant virtual machines connected to the tenant virtual netw
 >[!NOTE]
 >To enable dual stack support, for the VM networks, create two IP pools by selecting the two IP subnets from the drop-down menu.
 >
+
+![Create static IP](media/sdn-controller/Create-static-IP.png)
 
 Create a new VM and deploy the dual stack VM network to assign both IPv4 and IPv6 address to the virtual machine.
 
