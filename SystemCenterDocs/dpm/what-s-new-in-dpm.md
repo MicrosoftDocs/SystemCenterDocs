@@ -14,6 +14,14 @@ ms.custom: intro-whats-new
 
 # What's new in System Center Data Protection Manager
 
+::: moniker range="sc-dpm-2022"
+
+This article details the new features supported in System Center - Data Protection Manager (DPM) 2022.
+
+[!INCLUDE [whats-new-dpm-2022.md](../includes/whats-new-dpm-2022.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-dpm-2019"
 
 This article details the new features supported in System Center - Data Protection Manager (DPM), includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1) and [2019 UR2](#new-features-in-dpm-2019-ur2).
@@ -66,7 +74,7 @@ With DPM 2019, you can back up newer versions of workloads, as listed below:
 -	Windows Server 2019
 -	Exchange 2019
 -	SharePoint 2019
--	VMware [vSphere 6.7](back-up-vmware.md#vmware-vsphere-67)
+-	VMware [vSphere 6.7 and 7.0](back-up-vmware.md#vmware-vsphere-67-and-70)
 -	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
 
 ### Faster backups with Tiered storage using SSDs

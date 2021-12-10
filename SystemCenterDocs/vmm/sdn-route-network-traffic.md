@@ -4,8 +4,8 @@ title: Route traffic across networks in SDN infrastructure
 description: This article describes about how to route the network traffic between physical and virtual networks in an SDN infrastructure.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-manager: riyazp
-ms.date: 08/04/2020
+manager: evansma
+ms.date: 11/29/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -28,13 +28,14 @@ An SDN RAS gateway enables you to route network traffic between physical and vir
 >[!NOTE]
 > - From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
 > - VMM 2019 UR2 and later supports IPv6.
+> - IPv6 is supported for IPSec tunnel, GRE tunnel and L3 layer tunnel.
 
 ::: moniker-end
 ## Before you start
 
 Ensure the following:
 
--   SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md).and [SDN RAS gateway](sdn-gateway.md) are deployed.
+-   SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md) and [SDN RAS gateway](sdn-gateway.md) are deployed.
 
 -   An SDN VM network with network virtualization is created.
 
@@ -46,6 +47,15 @@ For Cloud Service Providers (CSPs) that host many tenants in their datacenter, S
 
 ::: moniker range=">=sc-vmm-2019"
 To enable IPv6 for site-to-site VPN connection, routing subnet must be both IPv4 and IPv6. For gateway to work in IPv6, provide IPv4 and IPv6 addresses separated by semicolon (**;**) and provide IPv6 address in the remote endpoint. For example, *192.0.2.1/23;2001:0db8:85a3:0000:0000:8a2e:0370::/64*.
+
+![Enable IPv6](media/sdn-route-network-traffic/configure-site-to-site-virtual-private-network.png)
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+VMM 2022 supports dual stack (Ipv4 + Ipv6) for SDN components.
+
+For specifying VIP range, don’t use the shortened form of IPv6 address; use *‘2001:db8:0:200:0:0:0:7’ format instead of ‘2001:db8:0:200::7’*.
 
 ![Enable IPv6](media/sdn-route-network-traffic/configure-site-to-site-virtual-private-network.png)
 
@@ -313,7 +323,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 |**Parameter** | **Details** |
     | --- | --- |
     | Name |  User-defined name for the L3 forwarding network connection.
-    | VMNetwork (NextHop) |  User-defined name for the next hop VM network, which was created as a prerequisite. This represents the physical network that wants to communicate with the tenant VM network.  When you click *Browse*, only the *One Connected VM Networks* managed by Network service will be available for selection.
+    | VM Network (NextHop) |  User-defined name for the next hop VM network, which was created as a prerequisite. This represents the physical network that wants to communicate with the tenant VM network.  When you click *Browse*, only the *One Connected VM Networks* managed by Network service will be available for selection.
     |Peer IP Address | IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network that you created as the prerequisite. This IP will serve as the next hop, once the traffic destined to the physical network from the tenant VM network reaches the SDN gateway. This must be an IPv4 address. There can be multiple peer IP addresses, must be separated by comma.  
     | Local IP Addresses |  IP addresses to be configured on the SDN gateway L3 network interface. These  IP addresses must belong to the next hop logical network that you created as prerequisite. You must also provide the subnet mask. Example: 10.127.134.55/25. This must be an IPv4 address and should be in CIDR notation format. Peer IP address and Local IP addresses should be from the same Pool. These IP addresses should belong to the subnet defined in Logical Network Definition of VM Network.
 
@@ -330,13 +340,13 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
     **For BGP to work, you must do the following steps**:
 
-    1. Add BGP peer for the L3 connection. Enter your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol**  page.
+    1. Add BGP peer for the L3 connection. Enter your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol** page.
 
        ![add bgp](./media/sdn-route-network-traffic/l3-ui-bgp-wizard.png)
 
     2. Determine the SDN gateway internal address as detailed in [the following section](#determine-the-sdn-gateway-internal-address).
 
-    3. Create BGP peer on the remote end (physical network gateway). While creating the BGP peer, use the SDN gateway internal address (as determined in the previous step ) as the peer IP address.
+    3. Create BGP peer on the remote end (physical network gateway). While creating the BGP peer, use the SDN gateway internal address (as determined in the previous step) as the peer IP address.
 
     4. Configure a route on the physical network with the destination as the SDN gateway internal address and the next hop as the L3 interface IP address (Local IP address value used when creating L3 connection).
 

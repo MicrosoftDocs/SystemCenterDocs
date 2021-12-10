@@ -5,7 +5,7 @@ description: This article describes how to set up a Azure Stack HCI cluster in V
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: evansma
-ms.date: 03/30/2021
+ms.date: 11/29/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -16,6 +16,12 @@ ms.custom: intro-deployment
 # Deploy and manage Azure Stack HCI clusters in VMM
 
 This article provides information about how to set up a Azure Stack HCI, version 20H2 cluster in System Center - Virtual Machine Manager (VMM) 2019 UR3 and later. You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers.
+
+::: moniker range="sc-vmm-2022"
+
+VMM 2019 UR3 supports Azure Stack HCI version 20H2. VMM 2022 support 20H2 and 21H2.
+
+::: moniker-end
 
 >[!IMPORTANT]
 >Azure Stack HCI clusters that are managed by Virtual Machine Manager shouldn’t join the preview channel yet. System Center 2019 (including Virtual Machine Manager, Operations Manager, and other components) doesn’t support this preview yet. See the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog) for the latest updates.
@@ -41,6 +47,26 @@ Make sure you're running VMM 2019 UR3 or later.
 
 - The PowerShell cmdlets used to manage Windows Server clusters can be used to manage Azure Stack HCI clusters as well.
 
+::: moniker range="sc-vmm-2022"
+
+**Register and unregister Azure Stack HCI clusters**
+
+With VMM 2022, we are introducing VMM PowerShell cmdlets to register and unregister Azure Stack HCI clusters.
+
+Use the following cmdlets to register a HCI cluster:
+
+*Register-SCAzStackHCI -VMHostCluster \<HostCluster\> -SubscriptionID \<string\>*
+
+For detailed information about the supported parameter, see PowerShell documentation.
+
+Use the following command to unregister a cluster:
+
+*Unregister-SCAzStackHCI -VMHostCluster \<HostCluster\> -SubscriptionID \<string\>*
+
+For detailed information about the supported parameter, see PowerShell documentation.
+
+::: moniker-end
+
 **What’s not supported?**
 
 - Management of *Azure Stack HCI stretched clusters* is currently not supported in VMM.
@@ -50,7 +76,7 @@ Make sure you're running VMM 2019 UR3 or later.
 - Live migration of VM is not supported between any version of Windows Server and Azure Stack HCI clusters.
 
 - Network migration from Windows Server 2019 to Azure Stack HCI cluster will work, as well as migrating an offline (shut down) VM. VMM performs export and import operation here.
-
+- Creation or management of non-S2D cluster with Azure Stack HCI nodes is not supported.(applicable for VMM 2022)
 
 > [!NOTE]
 > You must enable S2D when creating a Azure Stack HCI cluster.
