@@ -103,7 +103,8 @@ This section explains how to configure low-privilege agent monitoring.
       GRANT VIEW ANY DEFINITION TO [SQLMPLowPriv]
       GRANT VIEW ANY DATABASE TO [SQLMPLowPriv]
       GRANT EXECUTE ON xp_readerrorlog TO [SQLMPLowPriv]
-
+      GRANT EXECUTE ON xp_instance_regread TO [SQLMPLowPriv]
+      
       USE [msdb]
       GO
       GRANT SELECT ON sysjobs_view TO [SQLMPLowPriv]
@@ -238,6 +239,7 @@ This section explains how to configure low-privilege agentless monitoring.
     GRANT VIEW ANY DATABASE TO [SQLMPLowPriv]
     ALTER ROLE [db_datareader] ADD MEMBER [SQLMPLowPriv]
     GRANT EXECUTE ON xp_readerrorlog TO [SQLMPLowPriv]
+    GRANT EXECUTE ON xp_instance_regread TO [SQLMPLowPriv]
 
     USE [msdb]
     GO
