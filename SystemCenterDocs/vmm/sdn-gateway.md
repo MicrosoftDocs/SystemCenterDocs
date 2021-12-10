@@ -25,6 +25,7 @@ An SDN RAS gateway is a data path element in SDN that enables site-to-site conne
 
 ::: moniker range="sc-vmm-2022"
 
+>[!Note]
 VMM 2022 provides dual stack support for RAS gateway.
 
 ::: moniker-end
@@ -77,7 +78,7 @@ Both the templates have a default count of three virtual machines which can be c
 1. In the VMM console, run the Create Logical Network Wizard. Type a **Name**, optionally provide a description, and  click **Next**.
 2. In **Settings**, select **One Connected Network**. Optionally you can select **Create a VM network with the same name**. This setting allows VMs to access this logical network directly. Select **Managed by the Network Controller**, and click **Next**.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 - For VMM 2019 UR1 and later, in **Settings**, select **Connected Network**, and select **Managed by the Network Controller**, and click **Next**.
 ::: moniker-end
 
@@ -94,7 +95,7 @@ Both the templates have a default count of three virtual machines which can be c
 4. In **Summary**, review the settings and finish the wizard.
 ::: moniker-end
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 4. To use IPv6, add both IPv4 and IPV6 subnet to the network site.
     Here are the sample values:
 

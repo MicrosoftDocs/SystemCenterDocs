@@ -33,7 +33,7 @@ System Center Virtual Machine Manager (VMM) supports the following two scenarios
 
 This article provides information about how to configure the load balancing of workload VMs by using PowerShell.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 >[!Note]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
 >- VMM 2019 UR2 and later supports IPv6.
@@ -92,7 +92,7 @@ Create a VIP by using the following example scripts. Select the script based on 
 ### Script for creating VIP to load balance external network traffic
 
 The following example script creates the VIP from a public IP network to load balance the workload VMs WGB-001 & WGB-002 on port 80.
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 This script can be used to create load balancing VIP by passing IPv6 VIP address as well.
 ::: moniker-end
 
@@ -180,7 +180,7 @@ Write-Output "VIP created successfully " $vip;
 
 For the following example script, we created a new VIP template by name ILB-VIP-Template for load balancing the port 443 using the procedure detailed in the [previous section](#create-a-vip-template). The script creates a VIP from tenant VM network to load balance the VMs ILB-001 & ILB-002, which are part of the same tenant VM network.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 This script can be used to create load balancing VIP by passing IPv6 VIP address as well.
 ::: moniker-end
 

@@ -2,7 +2,7 @@
 ms.assetid: e7d1bf48-453f-49a4-bb4f-e85bbf3fc302
 title: Perform a rolling upgrade of a Hyper-V host cluster to Windows Server 2016 in VMM
 description: This article provides guidance on upgrading Hyper-V host clusters
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 03/14/2019
@@ -35,7 +35,7 @@ System Center - Virtual Machine Manager (VMM) supports using the rolling upgrade
 - **Returns the node to VMM**: Brings the node back under VMM management and installs the VMM agent.
 - **Returns the node to the cluster**: Adds the node back into the cluster, brings it out of maintenance mode, and returns virtual machine workloads to it.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 >  Ensure to install the latest updates on the VHD that you want to use as a physical computer profile.

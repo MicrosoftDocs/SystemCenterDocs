@@ -2,7 +2,7 @@
 ms.assetid: 2ebb4cfd-fd5e-4add-b75c-dcb932dbaa64
 title: Back up and restore VMM
 description: This article describes how to back up and restore the VMM database, and hosts and virtual machines in the VMM fabric
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 11/07/2017

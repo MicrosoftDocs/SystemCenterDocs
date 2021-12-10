@@ -2,7 +2,7 @@
 ms.assetid: 857ab713-df3e-4744-aac9-e057efc0fce7
 title: Set up TLS for VMM
 description: This article provides instructions for setting up TLS with VMM
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 05/14/2018

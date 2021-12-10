@@ -2,7 +2,7 @@
 ms.assetid: 8054768a-964c-40fc-ad80-00b2b08fc20d
 title: Set up logical networks in the VMM fabric
 description: This article describes how to set up logical networks in the VMM fabric
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 11/07/2017
@@ -22,7 +22,7 @@ ms.technology: virtual-machine-manager
 
 Read this article to learn how to create logical networks in System Center - Virtual Machine Manager (VMM)
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 > For information about logical networks in VMM 2019 UR1, [see this article](network-logical-ur1.md).

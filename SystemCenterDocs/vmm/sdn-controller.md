@@ -166,7 +166,7 @@ You create a management logical network in VMM, to mirror your physical manageme
 
 
 ###  Create an IP address pool
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 > From VMM 2019 UR1, you can create IP address pool using **Create Logical Network** wizard.
@@ -336,7 +336,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 **RestEndPoint** | Required| Enter the RESTName you used when preparing the certificates.  This parameter isn't used for standalone templates. <br><br> If the nodes are in the same subnet, you must provide the REST IP address. If the nodes are in different subnets, provide the REST DNS name.   
 **ServerCertificatePassword** | Required | Password to import the certificate into the machine store.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 > [!NOTE]
 > Windows 2019 onwards, the Network Controller machines must be provided permission to register and modify the SPN in the Active Directory. For more details, see [Kerberos with Service Principal Name](/windows-server/networking/sdn/security/kerberos-with-spn).
@@ -391,7 +391,7 @@ You can optionally validate the network controller deployment. To do this:
 
 ### Create the IP address pool
 
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 > From VMM 2019 UR1, you can create IP address pool using **Create Logical Network** wizard.
@@ -472,7 +472,7 @@ Now, you can create tenant virtual machines connected to the tenant virtual netw
 - Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
 - To allow IPv4 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**.
 ::: moniker-end
-::: moniker range="=sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 - Ensure that your tenant virtual machines allow IPv4/IPv6 ICMP through their firewall. By default, Windows Server blocks this.
     - To allow IPv4 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**.
     - To allow IPv6 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv6-In” –Protocol ICMPv6** (applicable for 2019 UR2 and later).

@@ -2,7 +2,7 @@
 ms.assetid: 45c58fcc-8a94-42f2-8e73-11e490213d31
 title: Set QoS for storage resources
 description: This article describes how to set QoS policies for SOFS storage
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 11/07/2017

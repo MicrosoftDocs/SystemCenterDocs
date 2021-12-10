@@ -2,7 +2,7 @@
 ms.assetid: ce968ce3-58d3-4eae-9b70-54eaac78a664
 title: Manage the VMM library
 description: This article describes management tasks for the VMM library
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 08/25/2020
@@ -78,7 +78,7 @@ To remove orphaned resources, modify the templates that reference the orphaned r
 1. Add a new resource that's valid.
 1. When you've completed these steps for all templates, closed the **Properties** dialog. To verify there aren't any dependencies right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 ## Manage replicated library shares
 

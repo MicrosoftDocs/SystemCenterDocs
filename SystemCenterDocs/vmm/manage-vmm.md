@@ -2,7 +2,7 @@
 ms.assetid: 7a397d58-f691-45ae-945e-c0e5d5cdfce1
 title: Manage VMM
 description: This section describes how to configure and manage VMM after it's installed
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 11/07/2017

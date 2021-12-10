@@ -2,7 +2,7 @@
 ms.assetid: 90bd75e0-de7a-4ca4-ae7e-681a9eb21aba
 title: Integrate VMM with Operations Manager for monitoring and reporting
 description: This article describes how to integrate VMM with Operations Manager for monitoring and reporting
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ms.date: 09/23/2020
@@ -52,7 +52,7 @@ You set up Operations Manager with VMM as follows:
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 >[!NOTE]
 > Make sure you're using a supported version of Operations Manager (running on Systems Center 2019 or a later version).
