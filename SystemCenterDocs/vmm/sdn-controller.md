@@ -459,9 +459,11 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 
 > When you create VM network, to enable dual stack support, select IPv4 and IPv6 from the **IP address protocol for the VM network** drop-down menu. (applicable for 2022 and later)
 >
+[ ![Enable dual stack](./media/sdn-controller/enable-dual-stack-inline.png) ](./media/sdn-controller/enable-dual-stack-expanded.png#lightbox)
 
 When you create VM Subnets, to enable dual stack support, provide both IPv4 subnet and IPv6 subnet, separated by a semi-colon (‘;’). (applicable to 2022 and later)
 >
+[ ![VM Subnets](./media/sdn-controller/vm-subnets-inline.png) ](./media/sdn-controller/vm-subnets-expanded.png#lightbox)
 
 ::: moniker-end
 
@@ -487,6 +489,7 @@ Now, you can create tenant virtual machines connected to the tenant virtual netw
 >[!NOTE]
 >To enable dual stack support, for the VM networks, create two IP pools by selecting the two IP subnets from the drop-down menu.
 >
+[ ![Create Static IP](./media/sdn-controller/create-static-ip-inline.png) ](./media/sdn-controller/create-static-ip-expanded.png#lightbox)
 
 Create a new VM and deploy the dual stack VM network to assign both IPv4 and IPv6 address to the virtual machine.
 
