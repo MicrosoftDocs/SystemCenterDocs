@@ -242,7 +242,13 @@
     "globalMetadata": {
       "breadcrumb_path": "/system-center/breadcrumb/toc.json"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "author": {
+        "SystemCenterDocs/scom/*.md": "JYOTHIRMAISURI"
+    },
+    "ms.author": {
+      "SystemCenterDocs/scom/*.md": "v-jysur"
+    },
     "template": [
       
     ],
