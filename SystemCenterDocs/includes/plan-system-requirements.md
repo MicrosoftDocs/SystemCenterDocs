@@ -105,16 +105,27 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
+::: moniker range=">sc-om-2016"
+
 - Microsoft .NET Framework 3.5 or later
+
+::: moniker-end
+::: moniker range="sc-om-2016"
+
+- Microsoft .NET Framework 4.8 is unsupported.
+
+::: moniker-end
 
 > [!NOTE]
 > Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
+::: moniker range=">sc-om-2016"
+
 > Microsoft .NET Framework 3.5 or later is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
 
+::: moniker-end
 ::: moniker range="sc-om-2016"
 
-> [!NOTE]
-> Microsoft .NET Framework 4.8 is unsupported.
+> Microsoft .NET Framework 3.5 is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
 
 ::: moniker-end
 
@@ -129,6 +140,11 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
 - NET Framework 4 or .NET Framework 4.5 is required.
+::: moniker range="sc-om-2016"
+
+- Microsoft .NET Framework 4.8 is unsupported.
+
+::: moniker-end
 
 ### Operations Manager console
 
@@ -140,6 +156,11 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
     > Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=42295).  The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.
 
 - NET Framework 4 or .NET Framework 4.5 is required.
+::: moniker range="sc-om-2016"
+
+- Microsoft .NET Framework 4.8 is unsupported.
+
+::: moniker-end
 
 ### Web console
 
@@ -147,8 +168,8 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
 
     >[!NOTE]
-    >The Web console does not support running IE in Compatibility View. Ensure to turn off the compatibility view, otherwise you will receive a blank page when you attempt to access the console.  
-    >
+    >The Web console does not support running IE in Compatibility View. Ensure to turn off the compatibility view, otherwise you will receive a blank page when you attempt to access the console.
+
 - Client web browser for HTML5 web console:  
 
     - Internet Explorer version 11
@@ -170,10 +191,15 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
     - IIS 6 Metabase Compatibility
     - ASP.NET (both the 3.5 and 4.5 or higher versions of ASP.NET are required.)
     - Windows Authentication
- <br>
+
 - Selected website for web console: Requires a configured http or https binding.
 - The System Center 2012 R2 Operations Manager SharePoint Dashboard Viewer Web Part is supported on SharePoint 2010 and SharePoint 2013. However, it is not supported on SharePoint in Microsoft 365.
 - NET Framework 4 or .NET Framework 4.5 is required.
+::: moniker range="sc-om-2016"
+
+- Microsoft .NET Framework 4.8 is unsupported.
+
+::: moniker-end
 
 > [!NOTE]
 > Installation of the web console requires that **ISAPI and CGI Restrictions** in IIS are enabled for ASP.NET 4. To enable this, select the web server in **IIS Manager**, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
@@ -189,6 +215,11 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
     > System Center 2016 – Operations Manager and higher supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.  
 
 - NET Framework 4 or .NET Framework 4.5 is required.
+::: moniker range="sc-om-2016"
+
+- Microsoft .NET Framework 4.8 is unsupported.
+
+::: moniker-end
 
 ## Virtualization
 
