@@ -111,6 +111,13 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 > Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
 > Microsoft .NET Framework 3.5 or later is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
 
+::: moniker range="sc-om-2016"
+
+> [!NOTE]
+> Microsoft .NET Framework 4.8 is unsupported.
+
+::: moniker-end
+
 ### Operations Manager operational, data warehouse, and ACS audit database
 
 - Operating System: See [Server Operating System requirements](#server-operating-system).   
