@@ -206,7 +206,15 @@ The Operations Manager Agents for UNIX and Linux maintain several log files that
 > [!NOTE]  
 > The logging level for the omiserver.log log file cannot be changed from the default in this version of the Operations Manager Agents for UNIX and Linux.  
 
-1. Create a blank file named **EnableOpsmgrModuleLogging** in the Temp directory for the user account calling these modules by typing at a command-line prompt **COPY /Y NUL %windir%\TEMP\EnableOpsMgrModuleLogging**.  
+1. Create a blank file named **EnableOpsmgrModuleLogging** in the Temp directory for the user account calling these modules by typing at a command-line / powershell prompt: \
+    **CMD:**
+    ```batchfile
+    COPY /Y NUL %windir%\TEMP\EnableOpsMgrModuleLogging
+    ```
+    **Powershell:**
+    ```powershell
+    New-Item "$env:windir\TEMP\EnableOpsMgrModuleLogging"
+    ```
 
     > [!NOTE]  
     > Generally, it is the SYSTEM account making the calls, and C:\Windows\Temp is the default SYSTEM temp folder.  
