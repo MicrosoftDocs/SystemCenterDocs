@@ -8,7 +8,7 @@ manager: vvithal
 ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
-monikerRange: 'sc-om-2019'
+monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
 ms.topic: article
 ---

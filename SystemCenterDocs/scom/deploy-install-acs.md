@@ -22,7 +22,7 @@ ms.topic: article
 
 Use the following procedures to install an Audit Collection Services (ACS) collector and database and to start the service for the ACS collector computer. Both procedures are performed on the computer that is designated as your ACS collector.
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 >[!NOTE]
 > Operations Manager 2019 UR1 and later supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.

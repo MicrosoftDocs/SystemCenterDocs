@@ -72,7 +72,7 @@ Before you begin, gather the following information:
 9. Click **Finish**, and then click **Close**.  
 
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ## Create an email notification in HTML format
 

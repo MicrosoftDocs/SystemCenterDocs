@@ -40,7 +40,7 @@ You can schedule configured reports to run on a one-time or recurring basis.
 
 After you run a report, click **File**, and then click **Schedule** to configure the report subscription. For more information, see [Scheduling Reports](manage-reports-config-modify-schedules.md).
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ## Favorite reports in Web console
 

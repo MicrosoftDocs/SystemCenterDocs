@@ -46,7 +46,7 @@ When you create a notification subscription from an alert that has been generate
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ## Subscription filter options
 

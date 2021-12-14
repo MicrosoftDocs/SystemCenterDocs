@@ -29,7 +29,7 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 >
 > If you are experiencing issues with authentication prompts when attempting to access the Web console, check that the fully qualified domain name (FQDN) URL is included in **Local Intranet Sites** in Internet Explorer.
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 1. Ensure that the SSL certificates are installed and configured on the management server.
 
@@ -152,7 +152,7 @@ Repeat the preceding step on the following files:
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ## Configure login session
 

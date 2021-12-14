@@ -22,7 +22,7 @@ ms.technology: virtual-machine-manager
 
 This article describes how to convert VMware VMs in the System Center - Virtual Machine Manager (VMM) fabric, to Hyper-V.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 You can convert the VMs using the *Convert Virtual Machine* wizard.
 

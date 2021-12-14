@@ -85,7 +85,7 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 Modify omiserver.conf, set the **NoSSLv3** line to be:
 `NoSSLv3=false`
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ## Disabled SSL renegotiations in Linux agent
 

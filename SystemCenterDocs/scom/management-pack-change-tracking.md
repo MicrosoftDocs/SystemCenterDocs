@@ -9,7 +9,7 @@ ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
-MonikerRange: 'sc-om-2019'
+MonikerRange: '>=sc-om-2019'
 ---
 
 # Track changes in Operations Manager

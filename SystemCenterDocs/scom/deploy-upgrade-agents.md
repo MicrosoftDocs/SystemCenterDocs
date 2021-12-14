@@ -8,7 +8,7 @@ manager: carmonm
 ms.date: 06/18/2021
 ms.custom: na
 ms.prod: system-center
-monikerRange: ' sc-om-1801 || sc-om-2019'
+monikerRange: ' sc-om-1801 || sc-om-2019 || sc-om-2022'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -21,7 +21,7 @@ ms.topic: article
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2019. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
