@@ -57,6 +57,7 @@ ProgramFiles | Specify the location in which to store program files.
 IndigoTCpPort | Specify the port number used to communicate with the VMM server.
 MUOptIn | 0: Don't opt in to Microsoft Update. 1: Opt in.
 VmmServerForOpsMgrConfig | Specify the name of the System Center Operations Manager server.
+IACCEPTSCUELA | 
 
 Install the console as follows:
 

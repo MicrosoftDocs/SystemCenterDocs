@@ -76,7 +76,8 @@ To configure monitoring using Service Security Identifier, perform the following
     EXEC(@createDatabaseUserAndRole)
     GO
     USE [master];
-    GRANT EXECUTE ON sys.xp_readerrorlog TO [SCOM_HealthService]
+    GRANT EXECUTE ON sys.xp_readerrorlog TO [SCOM_HealthService];
+    GRANT EXECUTE ON sys.xp_instance_regread TO [SCOM_HealthService];
     USE [msdb];
     GRANT SELECT ON [dbo].[sysjobschedules] TO [SCOM_HealthService];
     GRANT SELECT ON [dbo].[sysschedules] TO [SCOM_HealthService];
