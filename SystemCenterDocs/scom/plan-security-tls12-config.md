@@ -37,7 +37,6 @@ Perform the following steps to enable TLS protocol version 1.2:
 6. Configure Windows to only use TLS 1.2.  
 7. Configure Operations Manager to only use TLS 1.2.  
 ::: moniker-end
-
 ::: moniker range=">sc-om-2016"
 1. Install [MSOLEDBSQL 18.2](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver15#1821&preserve-view=true) or later on all management servers and the Web console server.  
 2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.   
