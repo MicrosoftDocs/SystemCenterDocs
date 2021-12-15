@@ -41,5 +41,13 @@ The following table lists the release history for Operations Manager 2019.
 |10.19.10177.0|[4594078](https://support.microsoft.com/topic/a7b9aa06-7d72-dc5a-e303-1899fafe9931) |March 2021 |Update Rollup 3 |
 |10.19.10185.0|[5005527](https://support.microsoft.com/topic/f5aa7ec5-85c2-4886-b13b-288fd9900737) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
 
+### SCX Agents
+|Build Number |KB |Release Date |Agent Version |Description |
+|-------------|---|-------------|--------------|------------|
+|10.19.1008.0||March 2019 |1.6.3-793	|General Availability release |
+|10.19.1082.0|[4533415](https://support.microsoft.com/topic/4533415-e5ce3191-2403-684f-1980-43aa61b50cb6) |February 2020 |1.6.4-7	|Update Rollup 1 |
+|10.19.1123.0|[4558752](https://support.microsoft.com/topic/4558752-a45a936d-204b-b92b-da36-2f321f93f08e) |August 2020 |1.6.6-0	|Update Rollup 2 |
+|10.19.1138.0|[4594078](https://support.microsoft.com/topic/a7b9aa06-7d72-dc5a-e303-1899fafe9931) |March 2021 |1.6.8-0	|Update Rollup 3 |
+|10.19.1147.0|[5005527](https://support.microsoft.com/topic/f5aa7ec5-85c2-4886-b13b-288fd9900737) |October 2021 |1.6.8-1	|Update Rollup 3 - OMI Vulnerability Fix |
 
  \* The other components include: Databases, Gateway Servers, Operations Consoles, Reporting, and Web Consoles.
