@@ -128,7 +128,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 - SQL Server 2017 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017%20)
 - SQL Server 2016 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20)
 
-For information about SQL Server design considerations, see [related documentation](../scom/plan-sqlserver-design.md?view=sc-om-2019).
+For information about SQL Server design considerations, see [related documentation](../scom/plan-sqlserver-design.md?view=sc-om-2019&preserve-view=true).
 
 ### Support for SQL Server 2019 CU8 and later
 
@@ -337,7 +337,7 @@ With Operations Manager 2019 UR2, you can run and view favorite reports under **
 In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-web-console.md).
 
 ### Support for CentOS 8
-Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](../scom/manage-install-crossplat-agent-cmdline.md?view=sc-om-2019#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](../scom/manage-install-crossplat-agent-cmdline.md?view=sc-om-2019&preserve-view=true#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 ## New features in Operations Manager 2019 UR3
 
