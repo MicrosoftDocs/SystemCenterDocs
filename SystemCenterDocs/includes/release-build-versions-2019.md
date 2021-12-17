@@ -19,7 +19,7 @@ ms.topic: include
 
 The following table lists the release history for Operations Manager 2019.
 
-### Management Servers (and other components[^1])
+### Management Servers (and other components*)
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.19.10050.0||March 2019 |General Availability release |
@@ -50,4 +50,4 @@ The following table lists the release history for Operations Manager 2019.
 |10.19.1138.0|[4594078](https://support.microsoft.com/topic/a7b9aa06-7d72-dc5a-e303-1899fafe9931) |March 2021 |1.6.8-0	|Update Rollup 3 |
 |10.19.1147.0|[5005527](https://support.microsoft.com/topic/f5aa7ec5-85c2-4886-b13b-288fd9900737) |October 2021 |1.6.8-1	|Update Rollup 3 - OMI Vulnerability Fix |
 
- [^1]: Other components include: Databases, Gateway Servers, Operations Consoles, Reporting, and Web Consoles.*
+ \* *The other components include: Databases, Gateway Servers, Operations Consoles, Reporting, and Web Consoles.*
