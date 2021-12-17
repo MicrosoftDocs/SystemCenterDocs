@@ -242,7 +242,28 @@
     "globalMetadata": {
       "breadcrumb_path": "/system-center/breadcrumb/toc.json"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "author": {
+        "SystemCenterDocs/scom/*.md": "JYOTHIRMAISURI",
+        "SystemCenterDocs/includes/*.md": "JYOTHIRMAISURI",
+        "SystemCenterDocs/orchestrator/*.md": "JYOTHIRMAISURI",
+        "SystemCenterDocs/dpm/*.md": "JYOTHIRMAISURI",
+        "SystemCenterDocs/scsm/*.md": "JYOTHIRMAISURI",
+        "SystemCenterDocs/sma/*.md": "JYOTHIRMAISURI",
+        "SystemCenterDocs/spf/*.md": "JYOTHIRMAISURI",
+        "SystemCenterDocs/vmm/*.md": "JYOTHIRMAISURI"
+    },
+    "ms.author": {
+      "SystemCenterDocs/scom/*.md": "v-jysur",
+      "SystemCenterDocs/includes/*.md": "v-jysur",
+      "SystemCenterDocs/orchestrator/*.md": "v-jysur",
+      "SystemCenterDocs/dpm/*.md": "v-jysur",
+      "SystemCenterDocs/scsm/*.md": "v-jysur",
+      "SystemCenterDocs/sma/*.md": "v-jysur",
+      "SystemCenterDocs/spf/*.md": "v-jysur",
+      "SystemCenterDocs/vmm/*.md": "v-jysur"
+     }
+    },
     "template": [
       
     ],
