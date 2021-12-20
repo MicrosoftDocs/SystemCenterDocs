@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 11/30/2021
+ms.date: 12/20/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
 
-## November 2021 - 7.0.33.0 CTP
+## December 2021 - 7.0.34.0 RTM
 
 ### What's New
 
