@@ -102,4 +102,6 @@ To configure monitoring using Service Security Identifier, perform the following
     GRANT ALTER ANY DATABASE TO [SCOM_HealthService];
     ```
 
+7. Make sure that Health Service on the target SQL Server on a Windows Server instance is running under the 'Local System' account.
+
 The NT AUTHORITY\SYSTEM account should be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.
