@@ -27,7 +27,7 @@ The Self-Service portal provides web-based access to the features of System Cent
  - Windows Server 2012 R2
 ::: moniker-end
 
-::: moniker range="sc-sm-2019"
+::: moniker range=">=sc-sm-2019"
  - Windows Server 2016
  - Windows Server 2012 R2
  - Windows Server 2019

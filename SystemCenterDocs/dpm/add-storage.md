@@ -2,8 +2,8 @@
 description: This article provides information on how to add and configure storage in DPM.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.prod: system-center
 keywords:
 ms.date: 07/12/2021
@@ -145,7 +145,7 @@ DPM 2016 consumes storage thinly, as needed. Once DPM is configured for protecti
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2019"
+::: moniker range=">=sc-dpm-2019"
 
 Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage. DPM 2019 introduces further performance improvements with MBS resulting in 50-70% faster backup with Windows Server 2019.
 

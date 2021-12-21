@@ -8,9 +8,9 @@ ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.author: raynew
+ms.author: v-jysur
 ms.date: 10/12/2016
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 manager: carmonm
 ---
 # Overview of the Orchestration console

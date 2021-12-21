@@ -2,14 +2,14 @@
 description: This article helps you create a strategy for backing up the DPM server.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.prod: system-center
 keywords:
 ms.date: 10/28/2020
 title: Back up the DPM server
 ms.technology: data-protection-manager
 ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f
-ms.author: raynew
+ms.author: v-jysur
 ---
 
 # Back up the DPM server
@@ -190,7 +190,7 @@ If protection fails after completing the above steps, do the following:
 ## Back up the DPM database
 As part of your DPM backup strategy, you'll have to back up the DPM database. The DPM database is named DPMDB. This database contains the DPM configuration together with data about DPM's backups. In case of disaster, you can rebuild most of the functionality of a DPM server by using a recent backup of the database. Assuming you can restore the database, tape\- based backups are accessible, and they maintain all protection group settings and backup schedules. If the DPM storage pool disks were not affected by the outage, disk\-based backups are also usable after a rebuild. You can back up the database by using different methods.
 
-::: moniker range="sc-dpm-2019"
+::: moniker range=">=sc-dpm-2019"
 
 |Database backup method|Advantages|Disadvantages|
 |--------------------------|--------------|-----------------|
@@ -389,7 +389,7 @@ If the DPM server is still operational and the storage pool is intact \(problems
 3.  Select the date for the recovery point you want to recover. Recover the database to the original location.
     After recovering the database run the DPMSync tool.
 
-::: moniker range="sc-dpm-2019"
+::: moniker range=">=sc-dpm-2019"
 
 ## Back up the database to tape
 You'll need to know the barcode or tape labels of the tapes that contain a copy of the DPM database. The best way to do this is to schedule a Status Report to be mailed on the same day that the DPM database is backed up. The report will include the last backup date/time, the tape label and the barcode so that you can locate it for recovery. Alternatively you can use this SQL script to extract the information from the current database so you can to store it separately in case of disaster.
@@ -534,7 +534,7 @@ You can back up the DPM database as you would any other SQL Server database usin
 
     4.  Right-click the dpmdb.bak file to view the Properties. On the **Previous Versions** tab are all the backups that you can select and copy.
 
-::: moniker range="sc-dpm-2019"
+::: moniker range=">=sc-dpm-2019"
 
 ## DPM disaster recovery management: Backup DPM DB
 
@@ -585,15 +585,15 @@ Use the following steps:
 2.	Decide from where you want to recover the database:
 
 **To copy the database from the last backup**
-1.	Navigate to replica VHD path i.e. <ReFSVolume>\<DPMServer FQDN>\<PhysicalReplicaId>\<PhysicalReplicaId>
+1.	Navigate to replica VHD path i.e. \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\<PhysicalReplicaId>
 2.	Mount the disk0.vhdx present in it using mount-vhd disk0.vhdx
 3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output.
 For example: mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
 
 **To copy the database from a previous recovery point**
 
-1.	Navigate to DPMDB container directory i.e. \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\, you will see multiple directories with some unique GUID identifiers under it corresponding recovery points taken for DPM DB. Directories other than <PhysicalReplicaId> represents a PIT/recovery point
-2.	Navigate to any PIT vhd path i.e. \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\<PITId> and mount the disk0.vhdx present in it using mount-vhd disk0.vhdx.
+1.	Navigate to DPMDB container directory i.e. \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\, you will see multiple directories with some unique GUID identifiers under it corresponding recovery points taken for DPM DB. Directories other than \<PhysicalReplicaId\> represents a PIT/recovery point
+2.	Navigate to any PIT vhd path i.e. \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\<PITId\> and mount the disk0.vhdx present in it using mount-vhd disk0.vhdx.
 3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output. For example: mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
 
     All of the following  text with angular braces in the above steps are place holders, replace them with appropriate values.

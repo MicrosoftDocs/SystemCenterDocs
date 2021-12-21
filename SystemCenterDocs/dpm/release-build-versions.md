@@ -3,13 +3,13 @@ title:  System Center - Data Protection Manager release build versions
 description: This article provides the list of release builds for System Center - Data Protection Manager.
 manager: vvithal
 ms.topic: article
-author: v-anesh
+author: JYOTHIRMAISURI
 ms.prod: system-center
 keywords:
 ms.date: 03/30/2021
 ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
-ms.author: v-anesh
+ms.author: v-jysur
 monikerRange: '>=sc-dpm-2016'
 ---
 

@@ -39,7 +39,7 @@ When you import a large number of users from AD DS) or from Configuration Manage
 
 You can use the following procedures in Service Manager to create,  validate, and confirm the status of an Active Directory connector to import objects from Active Directory Domain Services (AD DS).
 
-::: moniker range="sc-sm-2019"
+::: moniker range=">=sc-sm-2019"
 
 >[!NOTE]
 > The Active Directory (AD) connector has been improvised to synchronize with a specific domain controller. You may specify the Domain Controller in the LDAP query of the Active Directory connector.

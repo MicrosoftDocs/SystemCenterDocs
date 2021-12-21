@@ -2,8 +2,8 @@
 description: Back up Exchange mailbox databases with DPM.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.prod: system-center
 keywords:
 ms.date: 06/18/2019
@@ -304,7 +304,7 @@ After the protection group's been created the initial replication occurs and DPM
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2019"
+::: moniker range=">=sc-dpm-2019"
 
 System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2016 and Exchange 2019. To ensure your entire Exchange deployment is protected, configure protection for volumes, system state, or full bare metal recovery. This article provides the steps for configuring DPM so you can protect your Exchange deployment. If you have a large Exchange deployment, use a database availability group (DAG) to scale protection for Exchange mailbox databases. In addition to backing up mail databases, to fully protect your Exchange deployment you should back up Exchange Server roles such as the Client Access Server, or the transport service on mailbox servers.
 
