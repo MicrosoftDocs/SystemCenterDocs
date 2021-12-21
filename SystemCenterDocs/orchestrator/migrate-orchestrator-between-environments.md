@@ -40,6 +40,31 @@ The following steps are required to enable an automatic migration of Orchestrato
 > [!NOTE]  
 > See [https://go.microsoft.com/fwlink/?LinkId=246817](/sql/tools/sqlcmd-utility) for information on using the Sqlcmd utility.  
 
+> [!NOTE]  
+> It is recommended to enable SQL Broker on the Orchestrator Database in order for internal maintenance tasks to execute automatically.  
+
+## How to enable SQL Broker
+Check if you need to enable SQL Broker by running the following query against the Orchestrator SQL Instance: 
+```sql
+Select Name, is_broker_enabled, Compatibility_Level from sys.databases Where name = 'Orchestrator'
+```
+
+If you notice your Orchestrator database broker is disabled (0) you will need to enable SQL Broker with the following steps:
+1.  Stop all the runbook services on all runbook servers:\
+    Orchestrator Management Service (omanagement)\
+    Orchestrator Remoting Service (oremoting)\
+    Orchestrator Runbook Server Monitor (omonitor)\
+    Orchestrator Runbook Service (orunbook)
+2.  Run the following query against the Orchestrator SQL Instance:
+    ```sql
+    ALTER DATABASE Orchestrator SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+    GO
+    ALTER DATABASE Orchestrator SET ENABLE_BROKER
+    GO
+    ALTER DATABASE Orchestrator SET MULTI_USER
+    GO
+    ```
+
 ## Back up SQL Server service master key in environment A  
 Back up the SQL Server service master key. This is a one-time operation.  
 
