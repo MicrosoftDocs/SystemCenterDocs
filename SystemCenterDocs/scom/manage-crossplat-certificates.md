@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-With System Center Operations Manager, you can deploy agents to UNIX or Linux computers. Kerberos authentication is not possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the certificates are self-signed by the management server. (Although it is possible to use third-party certificates, they are not needed.)
+With System Center Operations Manager, you can deploy agents to UNIX or Linux computers. Kerberos authentication is not possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the management server acts as a standalone certificate authority. (Although it is possible to use third-party certificates, they are not needed.)
 
 ::: moniker range="sc-om-2022"
 
