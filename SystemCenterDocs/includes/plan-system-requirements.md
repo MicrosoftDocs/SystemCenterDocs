@@ -112,7 +112,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 ::: moniker-end
 ::: moniker range="sc-om-2016"
 
-- Microsoft .NET Framework 4.8 is unsupported.
+- Microsoft .NET Framework 4.8 is not supported.
 
 ::: moniker-end
 
@@ -142,7 +142,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - NET Framework 4 or .NET Framework 4.5 is required.
 ::: moniker range="sc-om-2016"
 
-- Microsoft .NET Framework 4.8 is unsupported.
+- Microsoft .NET Framework 4.8 is not supported.
 
 ::: moniker-end
 
@@ -158,7 +158,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - NET Framework 4 or .NET Framework 4.5 is required.
 ::: moniker range="sc-om-2016"
 
-- Microsoft .NET Framework 4.8 is unsupported.
+- Microsoft .NET Framework 4.8 is not supported.
 
 ::: moniker-end
 
@@ -197,7 +197,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - NET Framework 4 or .NET Framework 4.5 is required.
 ::: moniker range="sc-om-2016"
 
-- Microsoft .NET Framework 4.8 is unsupported.
+- Microsoft .NET Framework 4.8 is not supported.
 
 ::: moniker-end
 
@@ -217,7 +217,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - NET Framework 4 or .NET Framework 4.5 is required.
 ::: moniker range="sc-om-2016"
 
-- Microsoft .NET Framework 4.8 is unsupported.
+- Microsoft .NET Framework 4.8 is not supported.
 
 ::: moniker-end
 
