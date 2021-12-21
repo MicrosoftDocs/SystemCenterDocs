@@ -18,3 +18,4 @@ This article lists the known issues for Management Pack for SQL Server.
 |Issue title|Behavior / Symptom|Known workaround|
 |-|-|-|
 |The **DeploymentSeedDiscovery** module fails if the instance is stopped or paused|When an instance is stopped or paused, the **DeploymentSeedDiscovery** module fails with the following error: "An error occurred during discovery."|Start or resume the instance to eliminate the issue.|
+|Errors may occur if Power BI Report Server is installed|When Power BI Report Server is installed in your environment, the following errors may occur: **Exception Type: System.Collections.Generic.KeyNotFoundException**, **Message: The given key was not present in the dictionary.**|No resolution.|
