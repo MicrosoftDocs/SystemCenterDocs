@@ -255,7 +255,7 @@ DPM provides a number of predefined views that you can use to search more simply
 |ProtectionGroup|varchar(max)|Name of protection group|
 |DataSourceID|uniqueidentifie|Date source ID for which the job ran|
 |DataSourceName|varchar(max)|Data source name|
-|StartedDateTime|datetime|Time job startedd|
+|StartedDateTime|datetime|Time job started|
 |StoppedDateTime|datetime|Time job stopped|
 |ExecutionState|int|2 = Succeeded; 3 = Failed|
 |ErrorCode|int|Error code for job failure. Error code can be ignored if job succeeded|
