@@ -167,7 +167,7 @@ The following variables can be specified at a command prompt to override default
 |SQL Server database|SQLSERVER|In the format "Server name, port number" (The default values are "localhost, 1433." Supply a port number of 0 to specify a dynamic port.)|
 |SQL Server database|SQLINSTANCE|String (optional server instance name)|
 |SQL Server database|SQLDATABASE|String (the default database name value is SMA)|
-|File installation location|INSTALLFOLDER|String (the default value is C:\Program Files\Microsoft System Center <version>\Service Management Automation)|
+|File installation location|INSTALLFOLDER|String (the default value is C:\Program Files\Microsoft System Center \<version\>\Service Management Automation)|
 |Event tracing (ETW)|ETWMANIFEST|"Yes" or "No" (the default value is "Yes")|
 |**Usage and Diagnostics Data sent to Microsoft**|SENDTELEMETRYREPORTS|"Yes" or "No" (the default value is "Yes")|
 |Automatic Microsoft Update|MSUPDATE|"Yes" (opt-in) or "No" (no change; this is the default value)|

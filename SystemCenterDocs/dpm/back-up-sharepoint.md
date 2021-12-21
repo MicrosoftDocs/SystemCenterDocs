@@ -72,7 +72,7 @@ To back up SharePoint farm you configure protection for SharePoint by using Conf
 1.  **Run ConfigureSharePoint.exe** - This tool configures the SharePoint VSS Writer service \(WSS\) and provides the protection agent with credentials for the SharePoint farm.
     After you've deployed the protection agent the ConfigureSharePoint.exe file can be found in the \<DPM Installation Path\>\\bin folder on the front\-end Web server.  If you have multiple WFE servers you only need to install it on one of them. Run as follows:
 
-    -   On the WFE server at a command prompt navigate to \<DPM installation location\>\\bin\\ and run **ConfigureSharePoint \[\-EnableSharePointProtection\] \[\-EnableSPSearchProtection\] \[\-ResolveAllSQLAliases\] \[\-SetTempPath <path>\]**, where:
+    -   On the WFE server at a command prompt navigate to \<DPM installation location\>\\bin\\ and run **ConfigureSharePoint \[\-EnableSharePointProtection\] \[\-EnableSPSearchProtection\] \[\-ResolveAllSQLAliases\] \[\-SetTempPath \<path\>\]**, where:
 
         -   **EnableSharePointProtection** enables protection of the SharePoint farm, enables the VSS writer, and registers the identify of the DCOM application WssCmdletsWrapper to run as a user whose credentials are entered with this option. This account should be a farm admin and also local admin on the front\-end Web Server.
 

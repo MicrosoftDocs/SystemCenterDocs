@@ -119,7 +119,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
    - For a 64-bit computer type: **DpmAgentInstaller_x64.exe _&lt;DPMServerName&gt;_**
      where *&lt;DPMServerName&gt;* is the fully qualified domain name (FQDN) of the DPM server.For example: **DPMAgentInstaller_x64.exe DPMserver1.contoso.com**
 
-   - For a 32-bit computer type: **DpmAgentInstaller_x86.exe *<DPMServerName>***
+   - For a 32-bit computer type: **DpmAgentInstaller_x86.exe *\<DPMServerName\>***
      where *&lt;DPMServerName&gt;* is the fully qualified domain name of the DPM server.
 
    Note:

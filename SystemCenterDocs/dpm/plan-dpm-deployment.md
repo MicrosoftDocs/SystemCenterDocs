@@ -60,9 +60,9 @@ Firewall settings for DPM deployment are required on the DPM server, on machines
 
 |Location|Rule|Details|Protocol|Port|
 |------------|--------|-----------|------------|--------|
-|DPM server|System Center <version> Data Protection Manager DCOM Setting|Used for DCOM communication between DPM server and protected machines|DCOM|135/TCP Dynamic|
-|DPM server|System Center <version> Data Protection Manager|Exception for Msdpm.exe (the DPM service). Runs on the DPM server|All protocols|All ports|
-|DPM server<br /><br />Protected machines|System Center <version> Data Protection Management Replication Agent|Exception for Dpmra.exe (protection agent service used to back up and restore data). Runs on the DPM server and on protected machines.|All protocols|All ports|
+|DPM server|System Center \<version\> Data Protection Manager DCOM Setting|Used for DCOM communication between DPM server and protected machines|DCOM|135/TCP Dynamic|
+|DPM server|System Center \<version\> Data Protection Manager|Exception for Msdpm.exe (the DPM service). Runs on the DPM server|All protocols|All ports|
+|DPM server<br /><br />Protected machines|System Center \<version\> Data Protection Management Replication Agent|Exception for Dpmra.exe (protection agent service used to back up and restore data). Runs on the DPM server and on protected machines.|All protocols|All ports|
 |Protected machines||Configure incoming exception for sqserv.exe|||
 |Protected machines||DPM issues commands to the protection agent with DCOM calls to the agent.   You'll need to open the upper ports (1024-65535) for DPM to communicate|DCOM|135/TCP Dynamic|
 |Protected machines||The DPM data channel is TCP. Both the DPM server and the protected machines initiate connections. DPM communicates with the agent coordinator on port 5718 and with the protection agent on port 5719|TCP|5718/TCP<br /><br />5719/TCP|
