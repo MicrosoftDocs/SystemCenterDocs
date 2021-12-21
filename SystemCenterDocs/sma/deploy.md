@@ -2,8 +2,8 @@
 description: Provides step by step instructions for setting up Service Management Automation
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.prod: system-center
 ms.date: 01/22/2018
 title: Deploy Service Management Automation

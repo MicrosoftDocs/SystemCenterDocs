@@ -2,8 +2,8 @@
 ms.assetid:
 title: Release Notes for System Center DPM
 description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
-author: rayne-wiselman
-ms.author: raynew
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 manager: carmonm
 ms.date: 03/30/2021
 ms.custom: na

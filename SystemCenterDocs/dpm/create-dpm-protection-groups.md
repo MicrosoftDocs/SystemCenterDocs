@@ -2,13 +2,13 @@
 description: This article describes what DPM protection groups consist of and why you should use them.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.prod: system-center
 ms.date: 11/25/2021
 title: Deploy protection groups
 ms.technology: data-protection-manager
 ms.assetid: 2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
-ms.author: raynew
+ms.author: v-jysur
 ms.custom: intro-deployment
 ---
 

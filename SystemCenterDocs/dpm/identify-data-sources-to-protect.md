@@ -2,14 +2,14 @@
 description: This article helps you identify data sources you want to protect with DPM.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
+author: JYOTHIRMAISURI
 ms.prod: system-center
 keywords:
 ms.date: 11/01/2016
 title: Identify data sources you want to protect
 ms.technology: data-protection-manager
 ms.assetid: 4774dd1a-f50a-4a75-8783-abb5d134298a
-ms.author: raynew
+ms.author: v-jysur
 ---
 
 # Identify data sources you want to protect
