@@ -122,7 +122,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 #### To manually upgrade UNIX and Linux agents
 
-1.  Log on to Linux/Unix machines and copy the agent (scx-\<version\>.universalr.\<version\>.<arch>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
+1.  Log on to Linux/Unix machines and copy the agent (scx-\<version\>.universalr.\<version\>.\<arch\>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
 
 2.  Install the package with the following command.
 
@@ -248,7 +248,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 #### To manually upgrade UNIX and Linux agents
 
-1.  Log on to Linux/Unix machines and copy the agent (omsagent-\<version\>.universalr.\<version\>.<arch>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
+1.  Log on to Linux/Unix machines and copy the agent (omsagent-\<version\>.universalr.\<version\>.\<arch\>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
 
 2.  Install the package with the following command.
 

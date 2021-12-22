@@ -342,7 +342,7 @@ In earlier releases of Operations Manager, maintenance schedules that targeted i
 - Any failures in the above operation are captured in the following database table:
   [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
 - Schedules which fail to get converted to the new design, should be converted manually by executing the following scripts against the Operations Manager database.
-    EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] <ScheduleIDOftheMMSchedule>
+    EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] \<ScheduleIDOftheMMSchedule\>
   Example:
     EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '1A6917C6-999C-E811-837B-02155DC77B3F'
 - To convert all the schedules to the new design, use the following command:

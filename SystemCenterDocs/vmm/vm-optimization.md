@@ -44,9 +44,7 @@ Note the following information before you start using the DO.
 - Dynamic optimization can be configured on a host group, to migrate virtual machines and virtual hard disks (VHDs)    within host clusters with a specified frequency and aggressiveness. VM aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
 
 ::: moniker range=">=sc-vmm-2019"
-
 - Disk space aggressiveness determines the amount of free storage space below disk space threshold that is required to migrate VHDs to other cluster shared storage during dynamic optimization.
-
 ::: moniker-end
 
 - By default, virtual machines are migrated every 10 minutes with medium aggressiveness, if automatic migration is enabled. When configuring frequency and aggressiveness  for dynamic optimization, an administrator should factor in the resource cost of additional migrations against the advantages of balancing load among hosts/shared storage in a host cluster. By default, a host group inherits Dynamic Optimization settings from its parent host group.
