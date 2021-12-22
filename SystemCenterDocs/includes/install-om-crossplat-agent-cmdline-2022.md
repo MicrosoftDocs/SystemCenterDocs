@@ -40,7 +40,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
     `scxadmin -status`
 
-## Install the agent on RPM based Universal Linux Servers (Oracle)
+## Install the agent on RPM based Universal Linux Servers (Oracle and CentOS)
 
 1.  Transfer the agent (`scx-<version>.universalr.<version>.<arch>.sh`) to the Linux server. This should be done via SCP or FTP in binary mode.
 

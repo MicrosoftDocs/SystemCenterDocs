@@ -20,6 +20,8 @@ As Operations Manager is a monitoring platform, multiple users interact with Ope
 
 With Operations Manager UR2, change tracking feature was introduced. Change tracking is enabled by default in 2019 UR2 to track and report the changes on the management packs and management pack objects. 2019 UR3 supports change tracking for agent and monitor health reset status.
 
+With Operations Manager 2022, all change tracking reports are available in one single folder by name Change Tracking. 
+
 Change tracking feature is detailed in the following sections:
 
 - [Change tracking for management packs](#change-tracking-for-management-packs)

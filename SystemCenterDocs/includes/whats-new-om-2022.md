@@ -21,6 +21,7 @@ The following sections introduce new and updated features in System Center Opera
 With Operations Manager 2022, new build-in roles are created for enhanced user experience.  
 
 - A new built-in role **Read-only Administrator** is supported. This role provides all the read permissions in Operations Manager including reporting. 
+- You can create custom user roles with specific permissions. The **Agent Management** now supports two new subcategories - **Deploy Agents** and **Repair Agents**, that implicitly provide permission to **Agent Pending Actions**. 
 - A new **Delegated Administrator** profile has been introduced, which is Read-Only Administrator except reporting. You can create a custom user role with **Delegated Administrator** as the base profile and add one or more permissions to it from the available categories. 
 
 ### Support for Reporting Services on NTLM hardened enterprises
@@ -84,6 +85,10 @@ Operations Manager 2022 provides the following changes:
 
 - LocalSystem is no longer used internally instead of the Default Action Account. This was used earlier for APM configuration, Privileged Monitoring Account, RunAs Profile fallback. There was an association created for the Validate Subscription Account RunAs Profile.  
 - LocalSystem account is still being added to Operations Manager Administrators Group by Setup, but it is now visible in the console and can be removed and added later as required.  
+
+### Folderisation of Change Tracking Reports
+
+With Operations Manager 2022, all change tracking reports are available in one single folder by name **Change Tracking**. 
 
 ### Other updates
 
