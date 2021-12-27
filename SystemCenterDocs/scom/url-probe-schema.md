@@ -72,19 +72,19 @@ Finally, some raw values are returned, which you can either collect for analysis
       <xsd:element name="TransactionResponseTimeErrorCriteria" type="RequestEvaluationNumericCriteriaType" minOccurs="0" maxOccurs="1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
       <xsd:element name="PerformanceCollectionFrequencyInCycles" type="xsd:unsignedInt" minOccurs="0" maxOccurs="1" default="1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
    </Configuration>
-   <OverrideableParameters>
-      <OverrideableParameter ID="Proxy" Selector="$Config/Proxy$" ParameterType="string" />
-      <OverrideableParameter ID="ProxyUserName" Selector="$Config/ProxyUserName$" ParameterType="string" />
-      <OverrideableParameter ID="ProxyPassword" Selector="$Config/ProxyPassword$" ParameterType="string" />
-      <OverrideableParameter ID="ProxyAuthenticationScheme" Selector="$Config/ProxyAuthenticationScheme$" ParameterType="string" />
-      <OverrideableParameter ID="CredentialUserName" Selector="$Config/CredentialUserName$" ParameterType="string" />
-      <OverrideableParameter ID="CredentialPassword" Selector="$Config/CredentialPassword$" ParameterType="string" />
-      <OverrideableParameter ID="AuthenticationScheme" Selector="$Config/AuthenticationScheme$" ParameterType="string" />
-      <OverrideableParameter ID="IgnoreServerCertError" Selector="$Config/IgnoreServerCertError$"  ParameterType="bool"/>
-      <OverrideableParameter ID="FollowRedirects" Selector="$Config/FollowRedirects$" ParameterType="bool" />
-      <OverrideableParameter ID="RetryCount" Selector="$Config/RetryCount$" ParameterType="int" />
-      <OverrideableParameter ID="RequestTimeout" Selector="$Config/RequestTimeout$" ParameterType="int" />
-   </OverrideableParameters>
+   <OverridableParameters>
+      <OverridableParameter ID="Proxy" Selector="$Config/Proxy$" ParameterType="string" />
+      <OverridableParameter ID="ProxyUserName" Selector="$Config/ProxyUserName$" ParameterType="string" />
+      <OverridableParameter ID="ProxyPassword" Selector="$Config/ProxyPassword$" ParameterType="string" />
+      <OverridableParameter ID="ProxyAuthenticationScheme" Selector="$Config/ProxyAuthenticationScheme$" ParameterType="string" />
+      <OverridableParameter ID="CredentialUserName" Selector="$Config/CredentialUserName$" ParameterType="string" />
+      <OverridableParameter ID="CredentialPassword" Selector="$Config/CredentialPassword$" ParameterType="string" />
+      <OverridableParameter ID="AuthenticationScheme" Selector="$Config/AuthenticationScheme$" ParameterType="string" />
+      <OverridableParameter ID="IgnoreServerCertError" Selector="$Config/IgnoreServerCertError$"  ParameterType="bool"/>
+      <OverridableParameter ID="FollowRedirects" Selector="$Config/FollowRedirects$" ParameterType="bool" />
+      <OverridableParameter ID="RetryCount" Selector="$Config/RetryCount$" ParameterType="int" />
+      <OverridableParameter ID="RequestTimeout" Selector="$Config/RequestTimeout$" ParameterType="int" />
+   </OverridableParameters>
    <ModuleImplementation Isolation="Any">
       <Native>
          <ClassID>92C599FD-6639-4A9F-90DA-E1350162A318</ClassID>
@@ -99,7 +99,7 @@ Finally, some raw values are returned, which you can either collect for analysis
 
 The **Microsoft.SystemCenter.WebApplication.UrlProbe** module supports the configuration parameters described in the following table.
 
-| **Parameter** | **Type** | **Overrideable** | **Description** |
+| **Parameter** | **Type** | **Overridable** | **Description** |
 | --- | --- | --- | --- |
 | _Proxy_ | **String** | True | Required parameter, but can be empty. Specifies the name of the proxy server if the agent requires one to access the URL. |
 | _ProxyUserName_ | **String** | True | Required parameter, but can be empty. Specifies the username to be used with the proxy server if the specified proxy server requires authentication. |
