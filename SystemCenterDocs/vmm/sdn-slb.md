@@ -79,7 +79,7 @@ We recommend to use simplified SDN topology (2 physical network) for SLB deploym
 
 1. Open the **Create logical network Wizard**, and type a **Name** and optional description.
 2. In **Settings**, select **One Connected Network**. Select **Create a VM network with the same name** box to allow virtual machines to access this logical network directly, and **Managed by the network controller**.
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 - For VMM 2019 UR1 and later, in **Settings**, select **Connected Network**, and select **Managed by the Network Controller**.
 ::: moniker-end
 3. In **Network Site**, add the network site information for your subnet.

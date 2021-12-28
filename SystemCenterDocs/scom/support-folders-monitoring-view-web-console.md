@@ -9,7 +9,7 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
-MonikerRange: 'sc-om-2019'
+MonikerRange: '>=sc-om-2019'
 ---
 
 

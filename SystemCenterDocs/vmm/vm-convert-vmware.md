@@ -22,11 +22,11 @@ ms.technology: virtual-machine-manager
 
 This article describes how to convert VMware VMs in the System Center - Virtual Machine Manager (VMM) fabric, to Hyper-V.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 You can convert the VMs using the *Convert Virtual Machine* wizard.
 
-VMM 2019 UR3 supports conversion of VMWare VMs to Hyper-V and azure Stack HCI 20H2. [Learn more about support to Azure Stack HCI 20H2](deploy-manage-azure-stack-hci.md).
+VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20H2. [Learn more about support to Azure Stack HCI 20H2](deploy-manage-azure-stack-hci.md).
 
 **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
   - See [system requirements](system-requirements.md) for supported versions of vSphere (ESXi).
@@ -39,7 +39,7 @@ VMM 2019 UR3 supports conversion of VMWare VMs to Hyper-V and azure Stack HCI 20
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
-There are currently a couple of methods for converting VMWare VMs to Hyper-V:
+There are currently a couple of methods for converting VMware VMs to Hyper-V:
 
 - **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
     - See [system requirements](system-requirements.md) for supported versions of vSphere (ESXi).

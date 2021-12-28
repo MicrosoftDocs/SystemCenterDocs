@@ -174,7 +174,7 @@ The values of the **OSName**, **OSVersion**, and **OSFullName** properties can b
 > [!NOTE]  
 > The OSAlias property should not be edited. All properties in this file (except for OSManufacturer) are mandatory and should not be null.  
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ##	Performance and reliability improvements in the Linux agent  
 

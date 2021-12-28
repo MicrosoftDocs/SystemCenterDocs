@@ -9,14 +9,14 @@ ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
-monikerRange: 'sc-om-2019'
+monikerRange: '>=sc-om-2019'
 ---
 
 # Web Application Properties
 
  The following sections describe the settings available for a **Web Application Transaction Monitoring** template in Operations Manager. You can set the properties of these requests by using the procedure in [How to Edit Settings or Requests in a Web Application](edit-web-application-settings.md).
 
- ::: moniker range="sc-om-2019"
+ ::: moniker range=">=sc-om-2019"
 
  ## Ignore server certificate errors
 

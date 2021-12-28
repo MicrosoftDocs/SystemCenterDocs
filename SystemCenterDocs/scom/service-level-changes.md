@@ -7,7 +7,7 @@ ms.author: v-jysur
 manager: vvithal
 ms.date: 08/24/2020
 ms.prod: system-center
-monikerRange: 'sc-om-2019'
+monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
 ms.topic: article
 ---

@@ -8,7 +8,7 @@ manager: vvithal
 ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
-monikerRange: 'sc-om-2019'
+monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -68,7 +68,7 @@ Use the following procedure to run favorite reports in Web console:
 
 Use the following procedure to configure Windows authentication (Kerberos) between Operations Manager Report Server and Management Server:
 
-1. On the Operations Manager Report Server, open *rsreportserver.config* file of SSRS, located at <PATH>: \Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer, in a note pad.
+1. On the Operations Manager Report Server, open *rsreportserver.config* file of SSRS, located at \<PATH\>: \Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer, in a note pad.
 
 2. Change the authentication type to *\<RSWindowsNegotiate />* from *\<RSWindowsNTLM />*, and recycle the SQL reporting service.
 

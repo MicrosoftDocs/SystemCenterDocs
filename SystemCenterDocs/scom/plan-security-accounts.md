@@ -56,7 +56,7 @@ You can use a least-privileged account for the agent’s action account. On comp
 The domain account that is specified for the action account can be granted either Log on as a Service (SeServiceLogonRight) or Log on as Batch (SeBatchLogonRight) permission if your security policy does not allow a service account to be granted an interactive log on session, such as when smart card authentication is required.  Modify the registry value HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 The domain account that is specified for the action account is granted with Log on as a Service (SeServiceLogonRight) permission. To change the logon type for health service, modify the registry value *HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:*
 
