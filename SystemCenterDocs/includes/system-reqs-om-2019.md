@@ -90,7 +90,7 @@ The following versions of Windows Server operating system are supported for the 
 - Operating System: See [Server Operating System requirements](#server-operating-system).
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
-- .NET Framework 4 or .NET Framework 4.5 is required.
+- .NET Framework 4 or .NET Framework 4.5 is required, .NET Framework 4.7 or 4.8 is also supported. 
 
 ### Operations Manager console
 
