@@ -2,8 +2,8 @@
 description: include file to detail the release notes for Service Manager 2022
 manager:  evansma
 ms.topic: include
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
+author:  v-pgaddala
+ms.author: v-pgaddala
 ms.prod:  system-center
 ms.technology: service-manager
 keywords:
