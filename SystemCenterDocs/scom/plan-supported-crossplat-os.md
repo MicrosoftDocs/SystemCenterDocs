@@ -61,15 +61,22 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ## Red Hat Enterprise Linux Server 7
+
+>[!NOTE] 
+>Red Hat Enterprise Linux Server 7 (Power) is not supported in Operations Manager 2022.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc|C Standard Libraries|2.17|
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|
 |PAM|Pluggable Authentication Modules|1.1.8-1|
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
 
 ## Red Hat Enterprise Linux Server 7 (Power)
 
@@ -118,13 +125,24 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through RHEL 6 management 
 ## Solaris UTF\-8 Support
 The Operations Manager agent requires Solaris UTF-8 code set conversion support under some circumstances. Consult the Solaris documentation for details on installing UTF-8 code set conversion support. The Operations Manager agent functions without UTF-8 support on Solaris, but unrecognized characters are translated to question mark (?) characters.
 
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
+
 ## SUSE Linux Enterprise Server 12
+
+>[!NOTE] 
+>SUSE Linux Enterprise Server 12 (Power) is not supported in Operations Manager 2022.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
 
 ## SUSE Linux Enterprise Server 12 (Power)
 
@@ -189,7 +207,7 @@ CentOS 8 is supported from 2019 UR2 and later and Oracle Linux 8 is supported fr
 
 ## Universal Linux (Debian package)
 
-Debian 9, 10, 11 and Ubuntu 18.04, 20.04 are supported.
+Debian 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 >[!NOTE]
 > Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
@@ -202,7 +220,7 @@ Debian 9, 10, 11 and Ubuntu 18.04, 20.04 are supported.
 
 ## Universal Linux (RPM package)
 
-Oracle Linux 6, 7, 8 are supported.
+CentOS 7 and Oracle Linux 7, 8 are supported.
 
 Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
