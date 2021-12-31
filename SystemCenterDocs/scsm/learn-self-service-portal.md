@@ -153,6 +153,10 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  ![sm&#45;ssp&#45;scenario&#45;12](./media/learn-self-service-portal/deploy-sm-ssp-scenario-12.png)  
 
+ Install the new Self-Service portal and the secondary Service Manager server on different servers and you will require a double-hop to create a connection to the SDK Service from the web app. Configure Basic authentication to the portal as the Windows authentication won’t work. Use SSL to avoid deployment security issues.
+
+![configure the self service portal](./media/learn-self-service-portal/configure-self-service.png)
+
 ### Enable tracing  
  Use the following steps to enable tracing.  
 
