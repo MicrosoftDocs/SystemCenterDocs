@@ -5,7 +5,7 @@ description: This article describes how to put a monitored object into maintenan
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 08/04/2020
+ms.date: 01/04/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -154,7 +154,7 @@ The comment field contains user information, specifically who has invoked mainte
 
 Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs this PowerShell cmdlet on the computer, the command logs an event, which stores arguments for the maintenance mode, such as duration, reason, comment, and information like time of invocation of cmdlet.
 
-A rule that targets the agent, reads the event entry on the agent and stores this in Operations Manager database. There is another rule *Microsoft.SystemCenter.Agent.MaintenanceMode.Trigger.Rule*, which runs every 4 minutes by default, and reads this event from the Operations Manager database. It then sets maintenance mode on the agent, based on the record read from the event. You can override the frequency rule to a custom value.
+A rule that targets the agent, reads the event entry on the agent and stores this in Operations Manager database. There is another rule *Microsoft.SystemCenter.Agent.MaintenanceMode.Trigger.Rule*, which runs every 4 minutes by default, and reads this event from the Operations Manager database. It then sets maintenance mode on the agent, based on the record read from the event.
 
 ::: moniker-end
 
@@ -222,7 +222,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 ::: moniker range="sc-om-2019"
 
 > [!NOTE]
-> To confirm that maintenance mode request is successful, look in the Operations Manager event log for event ID 2222 followed by an event with event ID 2223. In case event ID 2223 is not available, submit the maintenance mode request again.
+> To confirm that maintenance mode request is successful, look in the Operations Manager system log for event ID 19999. In case event ID 19999 is not available, submit the maintenance mode request again.
 
 ::: moniker-end
 
@@ -342,7 +342,7 @@ In earlier releases of Operations Manager, maintenance schedules that targeted i
 - Any failures in the above operation are captured in the following database table:
   [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
 - Schedules which fail to get converted to the new design, should be converted manually by executing the following scripts against the Operations Manager database.
-    EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '<ScheduleIDOftheMMSchedule>'
+    EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] \<ScheduleIDOftheMMSchedule\>
   Example:
     EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '1A6917C6-999C-E811-837B-02155DC77B3F'
 - To convert all the schedules to the new design, use the following command:
