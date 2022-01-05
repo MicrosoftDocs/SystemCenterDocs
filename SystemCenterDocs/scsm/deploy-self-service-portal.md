@@ -5,7 +5,7 @@ manager: carmonm
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 04/27/2020
+ms.date: 01/05/2022
 ms.technology: service-manager
 ms.topic: article
 ms.custom: intro-deployment
@@ -100,6 +100,8 @@ Use the following steps to install the Self-Service Portal WebApp using Setup.
     -   **WebSite Name** :   The name of the website to display in the IIS Management console.
 
     -   **SM Server name**:  You can provide a fully-qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal.
+
+    :::image type="content" source="media/deploy-self-service-portal/sm-server-name.png" alt-text="Screenshot of SM Server Name.":::
 
     -   **Portal Port**: The port number that the  website will use.
 
