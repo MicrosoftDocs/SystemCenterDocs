@@ -101,8 +101,6 @@ Use the following steps to install the Self-Service Portal WebApp using Setup.
 
     -   **SM Server name**:  You can provide a fully-qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal. See [Deployment topologies](/system-center/scsm/learn-self-service-portal?#deployment-topologies) for more details.
 
-    :::image type="content" source="media/deploy-self-service-portal/sm-server-name.png" alt-text="Screenshot of SM Server Name.":::
-
     -   **Portal Port**: The port number that the  website will use.
 
     -   **SSL Certificate:** (Optional) The SSL certificate to configure the website in secure mode (https://). This is the recommended setting if you are using Basic Authentication. The default is Windows  Authentication.
