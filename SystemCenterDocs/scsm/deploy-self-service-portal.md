@@ -99,7 +99,7 @@ Use the following steps to install the Self-Service Portal WebApp using Setup.
 
     -   **WebSite Name** :   The name of the website to display in the IIS Management console.
 
-    -   **SM Server name**:  You can provide a fully-qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal. See [Deployment topologies](https://docs.microsoft.com/system-center/scsm/learn-self-service-portal?#deployment-topologies) for more details.
+    -   **SM Server name**:  You can provide a fully-qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal. See [Deployment topologies](/system-center/scsm/learn-self-service-portal?#deployment-topologies) for more details.
 
     :::image type="content" source="media/deploy-self-service-portal/sm-server-name.png" alt-text="Screenshot of SM Server Name.":::
 
