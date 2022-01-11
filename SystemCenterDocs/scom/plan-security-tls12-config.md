@@ -20,7 +20,16 @@ ms.topic: article
 
 ::: moniker-end
 
-This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management groups.  
+This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management group.  
+
+>[!NOTE]
+> Operations Manager will use the protocol configured at the Operating System Level. For example, if TLS 1.0, TLS 1.1, and TLS 1.2 are enabled at the Operating System Level, then Operations Manager will select one of the three protocols in the following order of preference:
+> 1.	TLS version 1.2
+> 2.	TLS version 1.1
+> 3.	TLS version 1.0
+> 
+> The [Schannel SSP](https://docs.microsoft.com/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
+
 
 Perform the following steps to enable TLS protocol version 1.2:
 
