@@ -71,7 +71,7 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 > [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, back up the registry for restoration in case problems occur.
 >
-> Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend that you enable the TLS 1.2 protocol for incoming communications; and enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications.
+> Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend that you enable the TLS 1.2 protocol for all incoming communications and outgoing communications.
 >
 > [!NOTE]
 > Making these registry changes does not affect the use of Kerberos or NTLM protocols.
