@@ -24,6 +24,9 @@ ms.topic: article
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2022 - Operations Manager. 
 
+>[!IMPORTANT]
+>Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support. 
+
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
@@ -189,7 +192,7 @@ CentOS 8 is supported from 2019 UR2 and later and Oracle Linux 8 is supported fr
 
 ## Universal Linux (Debian package)
 
-Debian 9, 10, 11 and Ubuntu 18.04, 20.04 are supported.
+Debian 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 >[!NOTE]
 > Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
@@ -202,7 +205,7 @@ Debian 9, 10, 11 and Ubuntu 18.04, 20.04 are supported.
 
 ## Universal Linux (RPM package)
 
-Oracle Linux 6, 7, 8 are supported.
+Oracle Linux 7, 8 are supported.
 
 Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
