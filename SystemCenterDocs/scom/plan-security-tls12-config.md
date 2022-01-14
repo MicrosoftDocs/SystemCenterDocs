@@ -20,7 +20,16 @@ ms.topic: article
 
 ::: moniker-end
 
-This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management groups.  
+This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management group.  
+
+>[!NOTE]
+> Operations Manager will use the protocol configured at the Operating System Level. For example, if TLS 1.0, TLS 1.1, and TLS 1.2 are enabled at the Operating System Level, then Operations Manager will select one of the three protocols in the following order of preference:
+> 1.	TLS version 1.2
+> 2.	TLS version 1.1
+> 3.	TLS version 1.0
+> 
+> The [Schannel SSP](https://docs.microsoft.com/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
+
 
 Perform the following steps to enable TLS protocol version 1.2:
 
@@ -55,14 +64,14 @@ Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is re
 >
 
 ::: moniker-end
-## Configure Windows to only use TLS 1.2 protocol
+## Configure Windows Operating System to only use TLS 1.2 protocol
 Use one of the following methods to configure Windows to use only the TLS 1.2 protocol.
 
 ### Method 1: Manually modify the registry
 > [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, back up the registry for restoration in case problems occur.
 >
-> Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend that you enable the TLS 1.2 protocol for incoming communications; and enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications.
+> Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend that you enable the TLS 1.2 protocol for all incoming communications and outgoing communications.
 >
 > [!NOTE]
 > Making these registry changes does not affect the use of Kerberos or NTLM protocols.
@@ -83,43 +92,41 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 8. Close the Registry Editor.
 
 ### Method 2: Automatically modify the registry
-Run the following Windows PowerShell script in Administrator mode to automatically configure Windows to use only the TLS 1.2 Protocol.
+Run the following Windows PowerShell script as Administrator to automatically configure your Windows Operating System to use only the TLS 1.2 Protocol.
 
 ```   
-$ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2")  
-$ProtocolSubKeyList = @("Client", "Server")  
-$DisabledByDefault = "DisabledByDefault"  
-$Enabled = "Enabled"  
-$registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"  
+$ProtocolList       = @("SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.1", "TLS 1.2")
+$ProtocolSubKeyList = @("Client", "Server")
+$DisabledByDefault  = "DisabledByDefault"
+$registryPath       = "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
 
-foreach($Protocol in $ProtocolList)  
-{  
-    Write-Host " In 1st For loop"  
-    foreach($key in $ProtocolSubKeyList)  
-    {  
-        $currentRegPath = $registryPath + $Protocol + "\" + $key  
-        Write-Host " Current Registry Path $currentRegPath"  
-
-        if(!(Test-Path $currentRegPath))  
-        {  
-            Write-Host "creating the registry"  
-            New-Item -Path $currentRegPath -Force | out-Null        
-        }  
-        if($Protocol -eq "TLS 1.2")  
-        {  
-            Write-Host "Working for TLS 1.2"  
-            New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null  
-            New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null  
-
-        }  
-        else  
-        {  
-            Write-Host "Working for other protocol"  
-            New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null  
-            New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "0" -PropertyType DWORD -Force | Out-Null   
-        }   
-    }  
-}  
+foreach ($Protocol in $ProtocolList)
+{
+	foreach ($key in $ProtocolSubKeyList)
+	{
+		$currentRegPath = $registryPath + $Protocol + "\" + $key
+		Write-Output "Current Registry Path: `"$currentRegPath`""
+		
+		if (!(Test-Path $currentRegPath))
+		{
+			Write-Output " `'$key`' not found: Creating new Registry Key"
+			New-Item -Path $currentRegPath -Force | out-Null
+		}
+		if ($Protocol -eq "TLS 1.2")
+		{
+			Write-Output " Enabling - TLS 1.2"
+			New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
+			New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "1" -PropertyType DWORD -Force | Out-Null
+		}
+		else
+		{
+			Write-Output " Disabling - $Protocol"
+			New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null
+			New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "0" -PropertyType DWORD -Force | Out-Null
+		}
+		Write-Output " "
+	}
+}
 
 Exit 0
 ```
