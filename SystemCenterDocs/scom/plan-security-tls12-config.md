@@ -28,7 +28,7 @@ This topic describes how to enable Transport Layer Security (TLS) protocol versi
 > 2.	TLS version 1.1
 > 3.	TLS version 1.0
 > 
-> The [Schannel SSP](https://docs.microsoft.com/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
+> The [Schannel SSP](/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
 
 
 Perform the following steps to enable TLS protocol version 1.2:
