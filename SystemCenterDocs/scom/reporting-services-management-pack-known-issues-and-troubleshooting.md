@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Known Issues and Troubleshooting in Management Pack for SQL Server Reporting Services
 
-This article lists the known issues for Management Pack for SQL Server.
+This article lists the known issues for Management Pack for SQL Server Reporting Services.
 
 |Issue title|Behavior / Symptom|Known workaround|
 |-|-|-|
