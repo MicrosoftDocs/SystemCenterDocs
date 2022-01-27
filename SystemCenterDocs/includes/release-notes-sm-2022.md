@@ -31,3 +31,12 @@ Follow these steps to manually activate the Data Warehouse server:
 
    > [!NOTE]
    > DW server is the management server input to this command.
+
+
+### Installation of SM 2022 on TLS 1.2 machine fails
+
+**Description**: 
+Fresh Installation of System Center Service Manager 2022 or an upgrade from a previous version to SM 2022 fails if the computer is TLS 1.2 hardened.
+
+**Workaround**: 
+Disable TLS 1.2 before the installation/upgrade and re-enable it after the upgrade is complete.
