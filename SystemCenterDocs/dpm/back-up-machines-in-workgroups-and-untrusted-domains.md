@@ -298,7 +298,11 @@ Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate "-Outp
 ## Switch between NTLM and Certificate authentication
 
 >[!NOTE]
->If the DPM agent is currently configured to use NTLM on a cluster or was originally configured to use NTLM but later switched to Certificate authentication without first removing the DPM agent, then, enumeration of the cluster will not show any resources to protect.
+>- The following clustered workloads only support Certificate authentication when deployed in untrusted domain.
+  - Clustered File server
+  - Clustered SQL server
+  - Hyper-V cluster
+- If the DPM agent is currently configured to use NTLM on a cluster or was originally configured to use NTLM but later switched to Certificate authentication without first removing the DPM agent, then, enumeration of the cluster will not show any resources to protect.
 
 To switch from NTLM authentication to certificate authentication, use the following steps to reconfigure the DPM agent:
 
@@ -308,10 +312,3 @@ To switch from NTLM authentication to certificate authentication, use the follow
 4. Once the agents are deployed and configured for certificate authentication, verify that the agent refresh works and it correctly shows (untrusted - Certificates) for each of the nodes.
 5. Refresh the nodes/cluster to get a list of data sources to protect, re-try protecting the clustered resource(s).
 6. Add the workload to protect and finish the Protection group Wizard.
-
->[!NOTE]
-> The following clustered workloads only support Certificate authentication when deployed in untrusted domain.
->
->- Clustered File server
->- Clustered SQL server
->- Hyper-V cluster
