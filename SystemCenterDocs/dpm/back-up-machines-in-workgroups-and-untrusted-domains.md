@@ -301,9 +301,9 @@ Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate "-Outp
 >- The following clustered workloads only support
 >  Certificate authentication when deployed in
 > untrusted domain.
->  - Clustered File server
->  - Clustered SQL server
->  - Hyper-V cluster
+  >  - Clustered File server
+  >  - Clustered SQL server
+  >  - Hyper-V cluster
 >- If the DPM agent is currently configured to use  NTLM on a cluster or was originally configured to use NTLM but later switched to Certificate authentication without first removing the DPM agent, then, enumeration of the cluster will not show any resources to protect.
 
 To switch from NTLM authentication to certificate authentication, use the following steps to reconfigure the DPM agent:
