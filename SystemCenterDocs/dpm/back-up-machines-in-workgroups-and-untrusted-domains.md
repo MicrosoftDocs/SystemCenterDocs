@@ -295,7 +295,7 @@ Regenerates a lost configuration file in the folder c:\CertMetaData\
 Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate "-OutputFilePath c:\CertMetaData\ -Action Regenerate
 ```
 
-## Switch between NTLM authentication and Certificate authentication
+## Switch between NTLM and Certificate authentication
 
 >[!NOTE]
 >If the DPM agent is currently configured to use NTLM on a cluster or was originally configured to use NTLM but later switched to Certificate authentication without first removing the DPM agent, then, enumeration of the cluster will not show any resources to protect.
@@ -305,7 +305,7 @@ To switch from NTLM authentication to certificate authentication, use the follow
 1. On the DPM server, remove all of the nodes of the cluster using the *Remove-ProductionServer.ps1* PowerShell script.
 2. Uninstall the DPM agent on all the nodes, and delete the agent folder from **C:\Program Files\Microsoft Data Protection Manager**.
 3. Follow the steps in [back up using certificate authentication](#back-up-using-certificate-authentication).
-4. Once the agents are deployed and configured for certificate authentication, verify that the agent refresh works and it properly shows (untrusted - Certificates) for each of the nodes.
+4. Once the agents are deployed and configured for certificate authentication, verify that the agent refresh works and it correctly shows (untrusted - Certificates) for each of the nodes.
 5. Refresh the nodes/cluster to get a list of data sources to protect, re-try protecting the clustered resource(s).
 6. Add the workload to protect and finish the Protection group Wizard.
 
