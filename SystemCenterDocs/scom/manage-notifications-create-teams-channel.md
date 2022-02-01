@@ -97,7 +97,7 @@ The following table highlights the variables to use for various properties of th
 
 ## To configure a Notification subscriber
 
-1. Log on to the computer that will host the System Center-Operations Manager. On the **Subscribers** wizard, click  **Notification Subscriber Wizard** opens. Under **Description**, enter **Subscriber Name** and click **Next**.
+1. Log on to the computer that will host the System Center-Operations Manager. On the **Subscribers** wizard,  select **Microsoft Teams**. **Notification Subscriber Wizard** opens. Under **Description**, enter **Subscriber Name** and click **Next**.
  
 2. Under **Schedule**, select any of the following option based on your requirement and click **Next**.
    - **Always send notifications**
