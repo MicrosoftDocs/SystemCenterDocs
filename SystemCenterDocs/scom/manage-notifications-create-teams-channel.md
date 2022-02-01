@@ -38,7 +38,7 @@ Before you begin, gather the following information:
 - Create an App lication in Azure or M365 Portal by following instructions on [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
 - For the newly created App, give the following Graph API permission: **ChannelMessage.Send**.
 
-:::image type="graph api permission" source="media/teams-notifications/graph-api-permissions.png" alt-text="screenshot showing graph api permissions.":::
+  :::image type="graph api permission" source="media/teams-notifications/graph-api-permissions.png" alt-text="screenshot showing graph api permissions.":::
 
 ## Operations Manager
 
@@ -62,11 +62,11 @@ For more information about notification channels, see [Subscribing to alert noti
 
 2. On the **Channels** wizard, select **New channel** > **Microsoft Teams…** . **Microsoft Teams Notification Channel** wizard opens. 
 
-:::image type="microsoft teams channel" source="media/teams-notifications/channels-wizard.png" alt-text="screenshot showing microsoft teams channel.":::
+   :::image type="microsoft teams channel" source="media/teams-notifications/channels-wizard.png" alt-text="screenshot showing microsoft teams channel.":::
 
 3. Under **Description**, enter the **Channel name**, **Description** and click **Next**. 
 
-:::image type="microsoft teams channel notification" source="media/teams-notifications/microsoft-teams-notification-channel.png" alt-text="screenshot showing microsoft teams notification channel wizard.":::
+   :::image type="microsoft teams channel notification" source="media/teams-notifications/microsoft-teams-notification-channel.png" alt-text="screenshot showing microsoft teams notification channel wizard.":::
  
 4. Under **Authentication**, enter **Tenant Id**, **Client Id** of your AAD App and click **Next**. 
 
@@ -109,7 +109,7 @@ The following table highlights the variables to use for various properties of th
  
 5. Under **Channel**, enter **Channel Type** as Teams. Obtain the Address by clicking the options pertaining to a Teams Channel and getting the URL.
 
-:::image type="subscriber address" source="media/teams-notifications/subscriber-address.png" alt-text="screenshot showing subscriber address.":::
+   :::image type="subscriber address" source="media/teams-notifications/subscriber-address.png" alt-text="screenshot showing subscriber address.":::
 
 6. Under **Schedule**, specify **Date range**, **Weekly recurrence**, **On the selected days of the week**, **Time zone** as required and click **Finish**.
  
@@ -119,17 +119,17 @@ The following table highlights the variables to use for various properties of th
 
 2. On the **Subscriptions** wizard, click **New subscription...** . Create **Notification Subscription** wizard opens.
 
-:::image type="subscription wizard" source="media/teams-notifications/subscription-wizard.png" alt-text="screenshot showing subscription wizard.":::
+   :::image type="subscription wizard" source="media/teams-notifications/subscription-wizard.png" alt-text="screenshot showing subscription wizard.":::
 
 3. Under **Description**, enter **Subscription Name** and click **Next**.
  
 4. Under **Subscribers**, Click **Search**, select the subscriber and click **Next**.
 
-:::image type="subscriber search" source="media/teams-notifications/subscriber-search.png" alt-text="screenshot showing subscriber search.":::
+   :::image type="subscriber search" source="media/teams-notifications/subscriber-search.png" alt-text="screenshot showing subscriber search.":::
  
 5. Under **Channels**, Click **Search**, select the Channel and click **Next**.
 
-:::image type="channel search" source="media/teams-notifications/channel-search.png" alt-text="screenshot showing channel search.":::
+   :::image type="channel search" source="media/teams-notifications/channel-search.png" alt-text="screenshot showing channel search.":::
 
 6. Under **Summary**, review the summary and click **Finish**.
 
