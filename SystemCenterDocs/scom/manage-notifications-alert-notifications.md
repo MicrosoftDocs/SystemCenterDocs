@@ -40,6 +40,8 @@ An Operations Manager administrator must define the notification channels and if
 
 -   [How to enable an email notification channel](manage-notifications-create-email-channel.md)  
 
+-   [How to enable Microsoft Teams notification channel](manage-notifications-create-teams-channel.md)
+
 -   [How to enable an instant message notification channel](manage-notifications-create-im-channel.md)  
 
 -   [How to enable a text message (SMS) notification channel](manage-notifications-create-txt-channel.md)  
