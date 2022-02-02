@@ -34,8 +34,8 @@ Before you begin, gather the following information:
 
 - Teams tenant
 - Teams
-- Channel created. For more information, see [Overview of teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
-- Create an App lication in Azure or M365 Portal by following instructions on [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
+- Channel created. For more information, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
+- Create an application in Azure or M365 Portal by following instructions on [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
 - For the newly created App, give the following Graph API permission: **ChannelMessage.Send**.
 
   :::image type="graph api permission" source="media/teams-notifications/graph-api-permissions.png" alt-text="screenshot showing graph api permissions.":::
@@ -62,11 +62,11 @@ For more information about notification channels, see [Subscribing to alert noti
 
 2. On the **Channels** wizard, select **New channel** > **Microsoft Teams…** . **Microsoft Teams Notification Channel** wizard opens. 
 
-   :::image type="microsoft teams channel" source="media/teams-notifications/channels-wizard.png" alt-text="screenshot showing microsoft teams channel.":::
+   :::image type="Microsoft Teams channel" source="media/teams-notifications/channels-wizard.png" alt-text="screenshot showing Microsoft Teams channel.":::
 
 3. Under **Description**, enter the **Channel name**, **Description** and click **Next**. 
 
-   :::image type="microsoft teams channel notification" source="media/teams-notifications/microsoft-teams-notification-channel.png" alt-text="screenshot showing microsoft teams notification channel wizard.":::
+   :::image type="Microsoft Teams channel notification" source="media/teams-notifications/microsoft-teams-notification-channel.png" alt-text="screenshot showing Microsoft Teams notification channel wizard.":::
  
 4. Under **Authentication**, enter **Tenant Id**, **Client Id** of your AAD App and click **Next**. 
 
