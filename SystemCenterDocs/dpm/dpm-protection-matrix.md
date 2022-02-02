@@ -9,7 +9,7 @@ ms.date: 02/02/2022
 title: What can System Center Data Protection Manager back up?
 ms.technology: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
-ms.author: v-jysur
+ms.author: jsuri
 ---
 
 # What can DPM back up?

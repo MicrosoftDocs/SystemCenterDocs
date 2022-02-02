@@ -9,7 +9,7 @@ ms.date: 08/11/2021
 title: Back up Hyper V virtual machines
 ms.technology: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
-ms.author: v-jysur
+ms.author: jsuri
 ---
 
 # Back up Hyper-V virtual machines
@@ -328,7 +328,7 @@ When you can recover a backed up virtual machine, you use the Recovery wizard to
 >
 >32 Bit DWord: **HyperV**
 >
->Data: <number>
+>Data: \<number\>
 
 ## Restore an individual file from a Hyper-V VM
 
