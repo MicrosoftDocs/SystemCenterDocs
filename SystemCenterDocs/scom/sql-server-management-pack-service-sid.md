@@ -17,11 +17,11 @@ This section explains how to configure monitoring using Service SIDs for SQL Ser
 
 To configure monitoring using Service Security Identifier, perform the following steps:
 
-1. Open the command prompt as administrator and run the **sc sidtype HealthService unrestricted** command.
+1. Open the command prompt as administrator and run the `sc sidtype HealthService unrestricted` command.
 
 2. Restart the Health Service.
 
-3. Run the **sc showsid HealthService** command. 
+3. Run the `sc showsid HealthService` command. 
 
     The **STATUS** parameter should be active.
 
