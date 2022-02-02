@@ -322,13 +322,10 @@ When you can recover a backed up virtual machine, you use the Recovery wizard to
 7. The **Recovery Status** screen provides information about the recovery job.
 
 > [!NOTE]
-> By default, 8 parallel recoveries are supported. You can increase the number of parallel restore jobs by adding below registry key
->
-> Key Path: HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\ **MaxParallelRecoveryJobs**
->
->32 Bit DWord: **HyperV**
->
->Data: \<number\>
+> By default, 8 parallel recoveries are supported. You can increase the number of parallel restore jobs by adding the below registry key:
+> - **Key Path**: HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs
+>- **32 Bit DWORD**: HyperV
+>- **Data**: \<number\>
 
 ## Restore an individual file from a Hyper-V VM
 
