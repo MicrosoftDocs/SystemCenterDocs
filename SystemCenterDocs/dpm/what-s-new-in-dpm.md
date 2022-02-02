@@ -1,10 +1,10 @@
 ---
 description: Descriptions of the new features in System Center DPM
-manager: carmonm
+manager: evansma
 ms.topic: article
-author: rayne-wiselman
+author: jyothirmaisuri
 ms.prod: system-center
-ms.date: 03/30/2021
+ms.date: 02/02/2022
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8

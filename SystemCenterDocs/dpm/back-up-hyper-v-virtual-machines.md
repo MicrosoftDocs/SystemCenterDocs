@@ -9,7 +9,7 @@ ms.date: 08/11/2021
 title: Back up Hyper V virtual machines
 ms.technology: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
-ms.author: v-jysur
+ms.author: jsuri
 ---
 
 # Back up Hyper-V virtual machines
@@ -320,6 +320,12 @@ When you can recover a backed up virtual machine, you use the Recovery wizard to
 6. In the Summary screen, make sure all details are correct. If the details aren't correct, or you want to make a change, click **Back**. If you are satisfied with the settings, click **Recover** to start the recovery process.
 
 7. The **Recovery Status** screen provides information about the recovery job.
+
+> [!NOTE]
+> By default, 8 parallel recoveries are supported. You can increase the number of parallel restore jobs by adding the below registry key:
+> - **Key Path**: HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs
+>- **32 Bit DWORD**: HyperV
+>- **Data**: \<number\>
 
 ## Restore an individual file from a Hyper-V VM
 
