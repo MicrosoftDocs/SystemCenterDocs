@@ -159,6 +159,7 @@
 ### [Subscribing to alert notifications](manage-notifications-alert-notifications.md)
 #### [How to create and configure the notification action account](manage-notifications-create-configure.md)
 #### [How to enable an email notification channel](manage-notifications-create-email-channel.md)
+#### [How to enable Microsoft Teams notification channel](manage-notifications-create-teams-channel.md)
 #### [How to enable an instant message notification channel](manage-notifications-create-im-channel.md)
 #### [How to enable text message(SMS) notification channel](manage-notifications-create-txt-channel.md)
 #### [How to enable a command notification channel](manage-notifications-create-command-channel.md)
