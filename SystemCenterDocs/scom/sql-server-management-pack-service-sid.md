@@ -19,13 +19,17 @@ To configure monitoring using Service Security Identifier, perform the following
 
 1. Open the command prompt as administrator and run the following command:
 
-    ```cmd
+    ```CMD
     sc sidtype HealthService unrestricted
     ```
 
 2. Restart the Health Service.
 
-3. Run the `sc showsid HealthService` command. 
+3. Run command:
+
+    ```CMD
+    sc showsid HealthService
+    ```
 
     The **STATUS** parameter should be active.
 
