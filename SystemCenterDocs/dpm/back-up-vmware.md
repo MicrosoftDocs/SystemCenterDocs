@@ -437,38 +437,6 @@ You can restore individual files from a protected VM recovery point. This featur
 10.	On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
 
-
-::: moniker range="sc-dpm-2022"
-
-## Removed File Catalog dependency for ILR
-
-Restore an individual file or folder from the online recovery points without using File Catalog (FC). By default, DPM uses iSCSI ILR.
-
->[!Note]
->Ensure that MARS agent version 2.0.9232.0 is installed and configured before trying this feature.
-
-Following scenarios helps you to observe improvements in backup and restore time:
-
-1. Test backup and restore without File Catalog metadata upload (default state) and with File Catalog metadata upload enabled (using the registry key mentioned below).  
-
-You will notice reduction in time for backup and restore with the default method (without File Catalog upload).
-
-To enable File Catalog metadata upload, set the following registry once MARS agent is installed:
-```
-HKLM\Software\Microsoft\Windows Azure Backup\Config\CloudBackupProvider
-DWORD – TurnOffFileCatalogUpload. Value - 0
-```
-
-2. Test whether recoveries are successful from online recovery points, which are created without FC metadata upload.
-
-3. While online backups are in progress for other datasources, the recovery still functions properly using iSCSI mount.
-
->[!Note]
->- Browsing through Online Shares is not supported.
->- ILR for RPs of SharePoint for which File Catalog Upload didn’t happen, might fail.
-
-::: moniker-end
-
 ::: moniker range=">=sc-dpm-2019"
 
 ## VMware parallel backups
@@ -495,13 +463,9 @@ DPM 2022 supports restore of more than one VMware VMs protected from same vCente
 >[!Note]
 >Before you attempt to increase the number of parallel recoveries, you need to consider VMware performance. Considering the number of resources in use and additional usage required on VMware vSphere Server you need to determine the number of recoveries to run in parallel.
 
-```
-Key Path: HKLM\ Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs
-```
-
-**Value type:** DWORD (32-bit)
-**Value name:** VMware
-**Value data:** 8
+Key Path: HKLM\ Software\Microsoft\Microsoft Data Protection Manager\Configuration\ **MaxParallelRecoveryJobs**
+32 Bit DWord: **VMware**
+Data: <number>
 
 The value should be the number (decimal) of virtual machines that you select for parallel recovery.
 
