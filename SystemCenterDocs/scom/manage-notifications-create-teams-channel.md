@@ -20,7 +20,9 @@ In line with the lifecycle, we now support Operations Manager alerts on Teams.  
 
 With System Center 2022, Microsoft Teams has been added to the existing basic Notification channel of Operations Manager. You can specify conditions to allow only certain types of alerts.
 
-To configure alert notifications for Operations Manager, you must enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using Teams.
+To configure alert notifications for Operations Manager, you must enable a notification channel. This topic describes how to configure a  notification channel that will send alert notifications to subscribers by using Microsoft Teams.
+
+For detailed information about notification channels, see [Subscribing to alert notifications](/scom/manage-notifications-alert-notifications).
 
 You can configure Operations Manager with Teams to send alerts through Operations console UI by providing the following details:
 - Teams tenant information
@@ -34,7 +36,7 @@ Before you begin, gather the following information:
 
 - Teams tenant
 - Teams
-- Channel created. For more information, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
+- Teams channel created. For more information, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
 - Create an application in Azure or M365 Portal by following instructions on [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
 - For the newly created App, give the following Graph API permission: **ChannelMessage.Send**.
 
@@ -42,7 +44,7 @@ Before you begin, gather the following information:
 
 ## Operations Manager
 
-See [Subscribing to Alert Notifications](/scom/manage-notifications-alert-notifications) to know more about Channel, Subscriber and Subscription wizards from Teams.
+For detailed information about Channel, Subscriber and Subscription in Teams, see [Subscribing to Alert Notifications](/scom/manage-notifications-alert-notifications).
 
 | Parameters | Microsoft Teams |
 |---|---|
@@ -54,17 +56,17 @@ See [Subscribing to Alert Notifications](/scom/manage-notifications-alert-notifi
 
 To integrate Operations Manager with Teams, configure a Teams channel, add a subscriber, and a subscription.
 
-## To enable the Microsoft Teams Notification Channel
+## To create and enable the Microsoft Teams notification channel
 
-For more information about notification channels, see [Subscribing to alert notifications](/scom/manage-notifications-alert-notifications).
+Follow these steps to enable Teams notification channel
 
 1. Log on to the computer that will host the System Center-Operations Manager.
 
-2. On the **Channels** wizard, select **New channel** > **Microsoft Teams…** . **Microsoft Teams Notification Channel** wizard opens. 
+2. On the console, under **Notifications**, right-click **Channels**, select **New channel** > **Microsoft Teams…** . **Microsoft Teams Notification Channel** wizard opens. 
 
    :::image type="Microsoft Teams channel" source="media/teams-notifications/channels-wizard.png" alt-text="screenshot showing Microsoft Teams channel.":::
 
-3. Under **Description**, enter the **Channel name**, **Description** and click **Next**. 
+3. Under **Description**, enter the **Channel name**, **Description (optional)** and click **Next**. 
 
    :::image type="Microsoft Teams channel notification" source="media/teams-notifications/microsoft-teams-notification-channel.png" alt-text="screenshot showing Microsoft Teams notification channel wizard.":::
  
@@ -95,9 +97,9 @@ The following table highlights the variables to use for various properties of th
    | WebConsole Alert Link | $Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/alert/$UrlEncodeData/Context/DataItem/AlertId$ |
    | WebConsole Alert Source Link | $Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/object/$UrlEncodeData/Context/DataItem/ManagedEntity$ |
 
-## To configure a Notification subscriber
+## To add subscriber to the notification channel
 
-1. Log on to the computer that will host the System Center-Operations Manager. On the **Subscribers** wizard,  select **Microsoft Teams**. **Notification Subscriber Wizard** opens. Under **Description**, enter **Subscriber Name** and click **Next**.
+1. Log on to the computer that will host the System Center-Operations Manager. On the console, under **Notifications**, right-click **Subscribers**,  select **Microsoft Teams**. **Notification Subscriber Wizard** opens. Under **Description**, enter **Subscriber Name** and click **Next**.
  
 2. Under **Schedule**, select any of the following option based on your requirement and click **Next**.
    - **Always send notifications**
@@ -105,7 +107,7 @@ The following table highlights the variables to use for various properties of th
  
 3. Under **Addresses**, click **Add**. **Subscribers Address** wizard opens. 
  
-4. Under **General**, enter **Address Name** to identify the subscriber.
+4. Under **General**, enter **Address name** to identify the subscriber.
  
 5. Under **Channel**, enter **Channel Type** as Teams. Obtain the Address by clicking the options pertaining to a Teams Channel and getting the URL.
 
@@ -117,11 +119,11 @@ The following table highlights the variables to use for various properties of th
 
 1. Log on to the computer that will host the System Center-Operations Manager.
 
-2. On the **Subscriptions** wizard, click **New subscription...** . Create **Notification Subscription** wizard opens.
+2. On the console, under **Notifications**, right-click **Subscriptions**, click **New subscription...** . Create **Notification Subscription** wizard opens.
 
    :::image type="subscription wizard" source="media/teams-notifications/subscription-wizard.png" alt-text="screenshot showing subscription wizard.":::
 
-3. Under **Description**, enter **Subscription Name** and click **Next**.
+3. Under **Description**, enter **Subscription name** and click **Next**.
  
 4. Under **Subscribers**, Click **Search**, select the subscriber and click **Next**.
 
@@ -133,7 +135,7 @@ The following table highlights the variables to use for various properties of th
 
 6. Under **Summary**, review the summary and click **Finish**.
 
-## Error Scenarios
+## Error scenarios
 
    - Teams tenant is down
    - Incorrect Teams tenant ID used during channel configuration
