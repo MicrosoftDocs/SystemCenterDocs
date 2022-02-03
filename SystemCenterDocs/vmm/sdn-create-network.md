@@ -60,11 +60,11 @@ The following two types of isolation settings are supported in SDN fabric:
 
 1. In the VMM fabric, click **VMs and Services** > **VM Networks** > **Create VM Network**.
 1. In **Create VM Network Wizard** > **Name**, type a name, optional description, and select a logical network that was created with network virtualization isolation settings.
-1. In **Isolation** , select **Isolate using Hyper-V network virtualization** , and select IPv4 for IP address protocols. Click **Next**.
+1. In **Isolation**, select **Isolate using Hyper-V network virtualization**, and select IPv4 for IP address protocols for the VM network. Click **Next**.
 
 ::: moniker range="sc-vmm-2022"
 
-1. To enable dual stack support In Isolation, select **Isolate** using Hyper-V network virtualization, and select IPv4 and IPv6 for IP address protocols for the VM network. Click **Next**.
+1. To enable dual stack support in Isolation, select **Isolate using Hyper-V network virtualization**, and select **IPv4 and IPv6** for **IP address protocols for the VM network**. Click **Next**.
 
  ![VM network in sdn](media/sdn-create-network/vm-network.png)
 

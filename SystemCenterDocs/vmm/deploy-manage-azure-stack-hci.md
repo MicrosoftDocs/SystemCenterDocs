@@ -76,7 +76,7 @@ For detailed information about the supported parameter, see PowerShell documenta
 - Live migration of VM is not supported between any version of Windows Server and Azure Stack HCI clusters.
 
 - Network migration from Windows Server 2019 to Azure Stack HCI cluster will work, as well as migrating an offline (shut down) VM. VMM performs export and import operation here.
-- Creation or management of non-S2D cluster with Azure Stack HCI nodes is not supported.(applicable for VMM 2022)
+- Creation or management of non-S2D cluster with Azure Stack HCI nodes is not supported (applicable for VMM 2022).
 
 > [!NOTE]
 > You must enable S2D when creating a Azure Stack HCI cluster.

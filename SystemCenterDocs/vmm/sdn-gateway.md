@@ -25,8 +25,8 @@ An SDN RAS gateway is a data path element in SDN that enables site-to-site conne
 
 ::: moniker range="sc-vmm-2022"
 
->[!Note]
-VMM 2022 provides dual stack support for RAS gateway.
+> [!Note]
+> VMM 2022 provides dual stack support for RAS gateway.
 
 ::: moniker-end
 
@@ -95,7 +95,7 @@ Both the templates have a default count of three virtual machines which can be c
 4. In **Summary**, review the settings and finish the wizard.
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2019"
+::: moniker range="=sc-vmm-2019"
 4. To use IPv6, add both IPv4 and IPV6 subnet to the network site.
     Here are the sample values:
 
@@ -168,7 +168,8 @@ Both the templates have a default count of three virtual machines which can be c
 
 4. On the **Summary** page, review the details and click **Import**.
 
-    **Note**: You can customize the service template. [Learn more](sdn-controller.md#customize-the-template).
+    > [!NOTE]
+    > You can customize the service template. [Learn more](sdn-controller.md#customize-the-template).
 
 ## Deploy the gateway service
 
@@ -184,7 +185,8 @@ This example uses the generation 2 template.
 2. Type a **Name** and choose a destination for the service instance. The destination must map to a host group that contains the hosts configured previously for gateway deployment.
 3. In **Network Settings**, map the management network to the management VM network.
 
-    **Note**: The **Deploy Service** dialog appears after mapping is complete. It's normal for the VM instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the VM.
+    > [!NOTE]
+    > The **Deploy Service** dialog appears after mapping is complete. It's normal for the VM instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the VM.
 
 4. On the left of the **Configure Deployment** window, configure the following settings:
 
@@ -195,13 +197,13 @@ This example uses the generation 2 template.
 
 5. Click **Deploy Service** to begin the service deployment job.
 
-    **Note**:
-
-    - Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. If gateway deployment fails, delete the failed service instance in **All Hosts** > **Services** before you retry the deployment.
-
-    - If you aren't using a volume licensed VHDX (or the product key isn't supplied using an answer file), then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
-
-    - If you want to scale-in or scale-out a deployed SLB instance, read this [blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
+    > [[!NOTE]
+    > 
+    > - Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. If gateway deployment fails, delete the failed service instance in **All Hosts** > **Services** before you retry the deployment.
+    >
+    > - If you aren't using a volume licensed VHDX (or the product key isn't supplied using an answer file), then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
+    >
+    > - If you want to scale-in or scale-out a deployed SLB instance, read this [blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
 
 ## Gateway limits
 The following are the default limits for NC managed gateway:
@@ -238,7 +240,8 @@ Now that the gateway service is deployed, you can configure the properties, and 
 3. Find the **Associated Service** field under **Service information**, and click **Browse**. Select the gateway service instance you created earlier, and click **OK**.
 4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines.
 
-    **Note**: The Run as account must have Administrator privileges on the gateway VMs.
+   > [!NOTE] 
+   > The Run as account must have Administrator privileges on the gateway VMs.
 
 5. In **GRE VIP subnet**, select the VIP subnet that you created previously.
 ::: moniker range="<sc-vmm-2019"
@@ -264,7 +267,8 @@ Now that the gateway service is deployed, you can configure the properties, and 
 9. Configure the number of reserved nodes for back-up in **Nodes for reserved for failures field**.
 10. To configure individual gateway VMs, click each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
 
-**Note**: You must configure the gateway BGP peers, if you plan to use GRE connections.
+   > [!NOTE] 
+   > You must configure the gateway BGP peers, if you plan to use GRE connections.
 
 The service instance you deployed is now associated with the gateway Manager role. You should see the gateway VM instance listed under it.
 ::: moniker-end
@@ -285,7 +289,8 @@ The service instance you deployed is now associated with the gateway Manager rol
 
 ::: moniker-end
 
-**Note**: You must configure the gateway BGP peers, if you plan to use GRE connections.
+   > [!NOTE]
+   > You must configure the gateway BGP peers, if you plan to use GRE connections.
 
 The service instance you deployed is now associated with the gateway Manager role. You should see the gateway VM instance listed under it.
 
@@ -306,7 +311,8 @@ Here is the procedure to setup the traffic selector by using the VMM PowerShell.
 
 1. Create the traffic selector by using the following parameters.
 
-    **Note**: Values used are examples only.
+    > [!NOTE]
+    > Values used are examples only.
 
     ```powershell
     $t= new-object Microsoft.VirtualManager.Remoting.TrafficSelector
