@@ -103,7 +103,7 @@ The following table highlights the variables to use for various properties of th
    
    :::image type="subscriber description" source="media/teams-notifications/subscriber-description.png" alt-text="screenshot showing subscriber description.":::
 
-2. Under **Schedule**, select any of the following option based on your requirement and click **Next**.
+2. Under **Schedule**, select any of the following options based on your requirement and click **Next**.
    - **Always send notifications**
    - **Notify only during the specified times**
 
