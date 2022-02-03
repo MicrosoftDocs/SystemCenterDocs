@@ -20,7 +20,16 @@ ms.topic: article
 
 ::: moniker-end
 
-This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management groups.  
+This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management group.  
+
+>[!NOTE]
+> Operations Manager will use the protocol configured at the Operating System Level. For example, if TLS 1.0, TLS 1.1, and TLS 1.2 are enabled at the Operating System Level, then Operations Manager will select one of the three protocols in the following order of preference:
+> 1.	TLS version 1.2
+> 2.	TLS version 1.1
+> 3.	TLS version 1.0
+> 
+> The [Schannel SSP](/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
+
 
 Perform the following steps to enable TLS protocol version 1.2:
 
@@ -30,17 +39,22 @@ Perform the following steps to enable TLS protocol version 1.2:
 > Microsoft OLE DB Driver 18 for SQL Server (recommended) is supported with Operations Manager 2016 UR9 and later.
 
 1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) or [Microsoft OLE DB Driver 18 for SQL Server](https://www.microsoft.com/download/details.aspx?id=56730) on all management servers and the Web console server.  
-::: moniker-end
-
-::: moniker range=">sc-om-2016"
-1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) on all management servers and the Web console server.  
-::: moniker-end
 2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.   
 3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
-4. Install [ODBC 11.0](https://www.microsoft.com/download/details.aspx?id=36434) or [ODBC 13.0](https://www.microsoft.com/download/details.aspx?id=50420) on all management servers.  
+4. Install [ODBC 11.0](https://www.microsoft.com/download/details.aspx?id=36434) or [ODBC 13.0](https://www.microsoft.com/download/details.aspx?id=50420) on all management servers.
 5. For System Center 2016 - Operations Manager, install Update Rollup 4 or later.  
 6. Configure Windows to only use TLS 1.2.  
 7. Configure Operations Manager to only use TLS 1.2.  
+::: moniker-end
+
+::: moniker range=">sc-om-2016"
+1. Install [MSOLEDBSQL 18.2](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver15#1821&preserve-view=true) or later on all management servers and the Web console server.  
+2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.   
+3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
+4. Install [ODBC 17.3](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#173&preserve-view=true) or later on all management servers.
+5. Configure Windows to only use TLS 1.2.  
+6. Configure Operations Manager to only use TLS 1.2.  
+::: moniker-end
 
 Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is required to enable TLS 1.2.  If CA-signed certificates are used, make sure that the certificates are either SHA1 or SHA2.
 
@@ -50,14 +64,14 @@ Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is re
 >
 
 ::: moniker-end
-## Configure Windows to only use TLS 1.2 protocol
+## Configure Windows Operating System to only use TLS 1.2 protocol
 Use one of the following methods to configure Windows to use only the TLS 1.2 protocol.
 
 ### Method 1: Manually modify the registry
 > [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, back up the registry for restoration in case problems occur.
 >
-> Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend that you enable the TLS 1.2 protocol for incoming communications; and enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications.
+> Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend that you enable the TLS 1.2 protocol for all incoming communications and outgoing communications.
 >
 > [!NOTE]
 > Making these registry changes does not affect the use of Kerberos or NTLM protocols.
@@ -78,43 +92,41 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 8. Close the Registry Editor.
 
 ### Method 2: Automatically modify the registry
-Run the following Windows PowerShell script in Administrator mode to automatically configure Windows to use only the TLS 1.2 Protocol.
+Run the following Windows PowerShell script as Administrator to automatically configure your Windows Operating System to use only the TLS 1.2 Protocol.
 
 ```   
-$ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2")  
-$ProtocolSubKeyList = @("Client", "Server")  
-$DisabledByDefault = "DisabledByDefault"  
-$Enabled = "Enabled"  
-$registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"  
+$ProtocolList       = @("SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.1", "TLS 1.2")
+$ProtocolSubKeyList = @("Client", "Server")
+$DisabledByDefault  = "DisabledByDefault"
+$registryPath       = "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
 
-foreach($Protocol in $ProtocolList)  
-{  
-    Write-Host " In 1st For loop"  
-    foreach($key in $ProtocolSubKeyList)  
-    {  
-        $currentRegPath = $registryPath + $Protocol + "\" + $key  
-        Write-Host " Current Registry Path $currentRegPath"  
-
-        if(!(Test-Path $currentRegPath))  
-        {  
-            Write-Host "creating the registry"  
-            New-Item -Path $currentRegPath -Force | out-Null        
-        }  
-        if($Protocol -eq "TLS 1.2")  
-        {  
-            Write-Host "Working for TLS 1.2"  
-            New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null  
-            New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null  
-
-        }  
-        else  
-        {  
-            Write-Host "Working for other protocol"  
-            New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null  
-            New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "0" -PropertyType DWORD -Force | Out-Null   
-        }   
-    }  
-}  
+foreach ($Protocol in $ProtocolList)
+{
+	foreach ($key in $ProtocolSubKeyList)
+	{
+		$currentRegPath = $registryPath + $Protocol + "\" + $key
+		Write-Output "Current Registry Path: `"$currentRegPath`""
+		
+		if (!(Test-Path $currentRegPath))
+		{
+			Write-Output " `'$key`' not found: Creating new Registry Key"
+			New-Item -Path $currentRegPath -Force | out-Null
+		}
+		if ($Protocol -eq "TLS 1.2")
+		{
+			Write-Output " Enabling - TLS 1.2"
+			New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
+			New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "1" -PropertyType DWORD -Force | Out-Null
+		}
+		else
+		{
+			Write-Output " Disabling - $Protocol"
+			New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null
+			New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "0" -PropertyType DWORD -Force | Out-Null
+		}
+		Write-Output " "
+	}
+}
 
 Exit 0
 ```

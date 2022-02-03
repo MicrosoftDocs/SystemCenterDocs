@@ -54,6 +54,10 @@ For all of the steps below where a SQL instance network name is referenced, use 
 
     e. In the first row, enter your operational database SQL instance network name.   
 
+    f. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDB$AppMonitoring_Log` and then click **Edit Top 200 Rows**. In the results pane, scroll to the right to the column titled `Post_MainDatabaseServerName_<GUID>`.
+    
+    g. In the first row, enter your operational database SQL instance network name.
+
 
 ## How to configure settings for the data warehouse database
 
