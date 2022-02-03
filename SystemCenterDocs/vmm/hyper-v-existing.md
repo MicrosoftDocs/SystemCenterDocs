@@ -2,10 +2,10 @@
 ms.assetid: e72332a9-7f1b-477d-8d2c-34ea4ba137fa
 title: Add Windows servers as Hyper-V hosts or clusters in the VMM fabric
 description: This article describes how to provision Windows server as Hyper-V hosts and cluster in the VMM fabric
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
-ms.date: 09/21/2021
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -38,7 +38,8 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 **Perimeter network or workgroup** | You'll need to install the VMM agent locally on the target host. To do this run VMM setup as an administrator and click **Optional Installations** > **Local Agent**. In **Security File Folder** select **This host in on a perimeter network** and enter an encryption key. In **Host network name** specify how the VMM server will contact the host server and note the computer name or IP address. Finish the wizard.<br/><br/> Check that a file SecurityFile.txt is located on the VMM server. By default it's located in C:\Program Files\Microsoft System Center version\Virtual Machine Manager.
 
 >[!NOTE]
->After VMM agent installation on the host, local computer account gets automatically added to the local Administrators group. This is not a mandatory requirement for VMM agent; If needed, you can manually remove the local computer account from the Administrators group on the host.
+>- After VMM agent installation on the host, local computer account gets automatically added to the local Administrators group. This is not a mandatory requirement for VMM agent; If needed, you can manually remove the local computer account from the Administrators group on the host.
+>- Adding a cluster under a perimeter network is not supported.
 
 
 ## Add servers
