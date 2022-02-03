@@ -72,17 +72,11 @@ Follow these steps to enable Teams notification channel
  
 4. Under **Authentication**, enter **Tenant Id**, **Client Id** of your AAD App and click **Next**. 
 
-   :::image type="Authentication" source="media/teams-notifications/authentication.png" alt-text="screenshot showing Tenant Id and Client Id.":::
-
 5. Under **Endpoints**, **Authorization URL** and **Graph API URL for your Cloud** are set by default (if you are not a public cloud user, refer [National cloud deployments](/graph/deployments) for correct endpoints).
- 
-   :::image type="Endpoints" source="media/teams-notifications/endpoints.png" alt-text="screenshot showing endpoints.":::
-  
+
 6. Click **Next**.
 
 7. Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards.
-
-   :::image type="Format" source="media/teams-notifications/format.png" alt-text="screenshot showing format.":::
 
 The following table highlights the variables to use for various properties of the alert or links to the HTML content.
 
@@ -117,12 +111,8 @@ The following table highlights the variables to use for various properties of th
  
 3. Under **Addresses**, click **Add**. **Subscribers Address** wizard opens. 
 
-   :::image type="subscriber addresses" source="media/teams-notifications/subscriber-addresses.png" alt-text="screenshot showing subscriber addresses.":::
- 
 4. Under **General**, enter **Address name** to identify the subscriber.
 
-   :::image type="subscriber address name" source="media/teams-notifications/subscriber-address-name.png" alt-text="screenshot showing subscriber address name.":::
- 
 5. Under **Channel**, enter **Channel Type** as Teams. Obtain the Address by clicking the options pertaining to a Teams Channel and getting the URL.
 
    :::image type="subscriber address" source="media/teams-notifications/subscriber-address.png" alt-text="screenshot showing subscriber address.":::
