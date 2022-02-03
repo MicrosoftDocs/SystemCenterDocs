@@ -41,7 +41,7 @@ Library Objects (templates, profiles)| 100
   **Processor (recommended)** | 16-core, 2.66 GHz CPU | 16 core 2.6 GHz CPU | 4 core 2.8 GHz CPU | 2 core 2 GHz CPU
   **RAM (minimum)** | 4 GB | 8 GB | 2 GB | 4 GB
   **RAM (recommended)** | 16 GB | 16 GB | 4 GB | 4 GB
-  **Hard drive (minimum)** | 4 GB | 50 GB | Based on size/amount of stored files | 10 GB
+  **Hard drive (minimum)** | 4 GB | 50 GB | Based on size/amount of stored files | 4 GB
   **Hard drive (recommended)** | 10 GB | 200 GB | Based on size/amount of stored files | 10 GB
 
 
@@ -64,7 +64,7 @@ Windows 11 Enterprise | Y
 Window Server 2016 Standard, Datacenter | Y
 Windows Server 2019 (with desktop experience) | Y
 Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
-Windows Server 2022 | Y
+Windows Server 2022 Standard, Datacenter | Y
 
 
 ## SQL Server
@@ -95,8 +95,8 @@ These components should be installed on the server, before you install VMM.
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
 Active Directory | The VMM management server must be a domain member.<br><br> The computer name should not exceed 15 characters. | A computer with the VMM console installed should be a domain member.
-Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 10 and download windows PE Add on for ADK| Not applicable
-PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
+Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 11 and Windows Server 2022 and download windows PE Add on for ADK| Not applicable
+PowerShell | PowerShell 5.1 | PowerShell 5.0, 5.1
 .NET (minimum) | 4.6 |  4.5
 
 ## Servers in the VMM fabric
@@ -109,16 +109,16 @@ Hyper-V Server 2016 | N | N | N | N
 Windows Server 2019 Standard and Datacenter (With Desktop experience) | Y | Y | Y | Y
 Windows Server 2019 Standard and Datacenter (Core) | Y | Y | N | N
 Hyper-V Server 2019 | N | N | N | N                                           
-[Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](../vmm/deploy-manage-azure-stack-hci.md) (supported from 2019 UR3 and later)| Y | N | N | N  
+[Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](../vmm/deploy-manage-azure-stack-hci.md) | Y | N | N | N  
 [Azure Stack Hyper Converged Infrastructure (HCI, version 21H2)](../vmm/deploy-manage-azure-stack-hci.md) (supported from 2022)| Y | N | N | N
-Windows Server 2022 | N | N | N | N
+Windows Server 2022 | Y | Y | Y | Y
 
 ## VMware servers in the VMM fabric
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5 , 6.7
-vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7
+ESX | ESX/ESXi 6.5 , 6.7
+vCenter | 6.5, 6.7
 Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 
 ## VMs in the VMM fabric
