@@ -5,7 +5,7 @@ description: This article describes how to provision Windows server as Hyper-V h
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 09/21/2021
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -39,6 +39,7 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 
 >[!NOTE]
 >After VMM agent installation on the host, local computer account gets automatically added to the local Administrators group. This is not a mandatory requirement for VMM agent; If needed, you can manually remove the local computer account from the Administrators group on the host.
+>Adding a cluster under a perimeter network is not supported.
 
 
 ## Add servers
