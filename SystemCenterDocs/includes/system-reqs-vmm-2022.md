@@ -117,7 +117,7 @@ Windows Server 2022 | Y | Y | Y | Y
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 6.5 , 6.7
+ESX | ESX/ESXi 6.5, 6.7
 vCenter | 6.5, 6.7
 Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 

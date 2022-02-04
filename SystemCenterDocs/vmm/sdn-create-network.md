@@ -59,19 +59,19 @@ The following two types of isolation settings are supported in SDN fabric:
 ## Create a VM network (network virtualization)
 
 1. In the VMM fabric, click **VMs and Services** > **VM Networks** > **Create VM Network**.
-1. In **Create VM Network Wizard** > **Name**, type a name, optional description, and select a logical network that was created with network virtualization isolation settings.
-1. In **Isolation**, select **Isolate using Hyper-V network virtualization**, and select IPv4 for IP address protocols for the VM network. Click **Next**.
+2. In **Create VM Network Wizard** > **Name**, type a name, optional description, and select a logical network that was created with network virtualization isolation settings.
+3. In **Isolation**, select **Isolate using Hyper-V network virtualization**, and select IPv4 for IP address protocols for the VM network. Click **Next**.
 
 ::: moniker range="sc-vmm-2022"
 
-1. To enable dual stack support in Isolation, select **Isolate using Hyper-V network virtualization**, and select **IPv4 and IPv6** for **IP address protocols for the VM network**. Click **Next**.
+4. To enable dual stack support in Isolation, select **Isolate using Hyper-V network virtualization**, and select **IPv4 and IPv6** for **IP address protocols for the VM network**. Click **Next**.
 
  ![VM network in sdn](media/sdn-create-network/vm-network.png)
 
 ::: moniker-end
 
    ![VM network in sdn](media/sdn-create-network/vm-network.png)
-1. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
+5. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
 
 ::: moniker range="<=sc-vmm-2019"
    >[!NOTE]  
@@ -88,7 +88,7 @@ The following two types of isolation settings are supported in SDN fabric:
 
 ::: moniker-end
 
-1. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
+6. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
 
    >[!NOTE]
    > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
@@ -99,7 +99,7 @@ The following two types of isolation settings are supported in SDN fabric:
 
    - **Connect directly to an additional logical network**: Select this option if you want the virtual machines on this VM network to connect directly to an additional logical network. To enable access to internet resources, select **Network Address Translation (NAT)** or select **Direct Routing** to bridge a virtualized IP address space with a physical IP address space.
 
-1. In **Summary**,  verify the settings and click **Finish**.
+7. In **Summary**,  verify the settings and click **Finish**.
 
 Once the job is successfully completed, you can view the newly created VM network under **VMs and Services** > **VM Networks**.
 
