@@ -154,3 +154,4 @@ The following table highlights the variables to use for various properties of th
    :::image type="channel search" source="media/teams-notifications/channel-search.png" alt-text="screenshot showing channel search.":::
 
 6. Under **Summary**, review the summary and click **Finish**.
+
