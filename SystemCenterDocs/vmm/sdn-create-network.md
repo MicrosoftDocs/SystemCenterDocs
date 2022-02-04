@@ -66,12 +66,10 @@ The following two types of isolation settings are supported in SDN fabric:
 
 4. To enable dual stack support in Isolation, select **Isolate using Hyper-V network virtualization**, and select **IPv4 and IPv6** for **IP address protocols for the VM network**. Click **Next**.
 
- ![VM network in sdn](media/sdn-create-network/vm-network.png)
-
 ::: moniker-end
 
    ![VM network in sdn](media/sdn-create-network/vm-network.png)
-5. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
+1. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
 
 ::: moniker range="<=sc-vmm-2019"
    >[!NOTE]  
@@ -88,7 +86,7 @@ The following two types of isolation settings are supported in SDN fabric:
 
 ::: moniker-end
 
-6. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
+1. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
 
    >[!NOTE]
    > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
