@@ -44,7 +44,7 @@ Ensure the following:
 - **Network controller**: You should have an [SDN network controller](sdn-controller.md) deployed in the VMM fabric, so that you have the compute and network infrastructure running before you set up the load balancing.
 - **SSL certificate**: To import the SLB service template you'll need to prepare an SSL certificate. You made the certificate available during network controller deployment. To use the certificate you prepared in network controller deployment for SLB, right-click the certificate and export it without a password in .CER format. Place it in the library, in the NCCertificate.CR folder you created when you set up the network controller.
 - **Service template**: VMM uses a service template to automate SLB deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
-- **SLB VMs**: All the SLB virtual machines must be running Windows Server 2016 with the latest patches installed.
+- **SLB VMs**: All the SLB virtual machines must be running Windows Server 2016 or later with the latest patches installed.
 - **HNV Network**: Ensure that you created the Provider HNV network as part of NC validation. [Learn more](./sdn-controller.md).
 
 ## Deployment steps
@@ -170,9 +170,8 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 4. In **IP Address range**, configure the starting and ending IP address. Add IPv6 subnet to network site and create IPv6 address pools if you are using IPv6 address space.
     >[!NOTE]
     > - Add IPv6 address pools when you onboard a SLB.
-      - Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater. To specify the VIP range, don’t use the shortened form of IPv6 address; Use 2001:db8:0:200:0:0:0:7 format instead of 2001:db8:0:200::7.
-    >
-    >The maximum number of addresses allowed in a single VIP range is 1024.
+    > - Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater. To specify the VIP range, don’t use the shortened form of IPv6 address; Use 2001:db8:0:200:0:0:0:7 format instead of 2001:db8:0:200::7.
+    > - The maximum number of addresses allowed in a single VIP range is 1024.
 
 ::: moniker-end
 

@@ -37,7 +37,7 @@ Before you begin, gather the following information:
 - Teams tenant
 - Teams
 - Teams channel created. For more information, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
-- Create an application in Azure or M365 Portal by following instructions on [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
+- Create an application in Azure or Microsoft 365 Portal by following instructions on [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
 - For the newly created App, give the following Graph API permission: **ChannelMessage.Send**.
 
   :::image type="graph api permission" source="media/teams-notifications/graph-api-permissions.png" alt-text="screenshot showing graph api permissions.":::
@@ -48,7 +48,7 @@ For detailed information about Channel, Subscriber and Subscription in Teams, se
 
 | Parameters | Microsoft Teams |
 |---|---|
-| Notifications Channel | Provide Azure Endpoints, Azure / M365 Authentication details such as Application ID and Tenant ID, format of notifications that will be sent to Microsoft Teams. |
+| Notifications Channel | Provide Azure Endpoints, Azure / Microsoft 365 Authentication details such as Application ID and Tenant ID, format of notifications that will be sent to Microsoft Teams. |
 | Notifications Subscriber | Provide notification schedule and Microsoft Teams Channel details to which notifications will be sent. |
 | Notifications Subscription | Set criteria & scope on alerts that will be sent as notifications to Microsoft Teams. Subscription defines the criteria for sending a notification, the channel to be used, and the subscribers to receive the notification. |
 
@@ -70,7 +70,7 @@ Follow these steps to enable Teams notification channel
 
    :::image type="Microsoft Teams channel notification" source="media/teams-notifications/microsoft-teams-notification-channel.png" alt-text="screenshot showing Microsoft Teams notification channel wizard.":::
  
-4. Under **Authentication**, enter **Tenant Id**, **Client Id** of your AAD App and click **Next**. 
+4. Under **Authentication**, enter **Tenant Id**, **Client Id** of your Azure Active Directory (Azure AD) App and click **Next**. 
 
 5. Under **Endpoints**, **Authorization URL** and **Graph API URL for your Cloud** are set by default (if you are not a public cloud user, refer [National cloud deployments](/graph/deployments) for correct endpoints).
 

@@ -12,6 +12,14 @@ ms.technology: service-manager
 ---
 
 # Release notes for System Center Service Manager
+::: moniker range="sc-sm-2022"
+
+This article provides the release notes for System Center Service Manager 2022.
+
+[!INCLUDE [release-notes-sm-2022.md](../includes/release-notes-sm-2022.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-sm-2019"
 
 This article provides the release notes for System Center Service Manager 2019.

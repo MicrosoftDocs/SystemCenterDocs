@@ -128,7 +128,7 @@ The following versions of Windows Server operating system are supported for the 
     - Static Content Compression
     - Web Server (IIS) Support
     - IIS 6 Metabase Compatibility
-    - ASP.NET (both the 3.5 and 4.5 or higher versions of ASP.NET are required.)
+    - ASP.NET (both the 3.5 and 4.7.2 or higher versions of ASP.NET are required.)
     - Windows Authentication
  <br>
 - Selected website for web console: Requires a configured http or https binding.
@@ -165,7 +165,7 @@ Windows 10 client operating system is supported for the Operations Manager 2022 
 - Windows 11 - Enterprise
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version 3.0.
-- Microsoft .NET Framework 3.5 or later.
+- Microsoft .NET Framework (both the 3.5 and 4.7.2 or higher versions of Microsoft .NET are required.)
 
     > [!NOTE]
     > Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
