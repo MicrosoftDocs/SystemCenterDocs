@@ -119,7 +119,7 @@ The following table highlights the variables to use for various properties of th
 
 5. Under **Channel**, enter **Channel Type** as Teams. Obtain the Address by clicking the options pertaining to a Teams Channel and getting the URL.
 
-   :::image type="subscriber address" source="media/teams-notifications/subscriber-address.png" alt-text="screenshot showing subscriber address.":::
+   :::image type="channel type" source="media/teams-notifications/channel-type.png" alt-text="screenshot showing channel type.":::
 
    :::image type="channel link" source="media/teams-notifications/channel-link.png" alt-text="screenshot showing channel link address.":::
 
