@@ -42,7 +42,7 @@ Before you begin, gather the following information:
 
   :::image type="graph api permission" source="media/teams-notifications/graph-api-permissions.png" alt-text="screenshot showing graph api permissions.":::
 
-## Notifications channel key parameters and descriptions
+## Operations Manager notification channel - key descriptions
 
 For detailed information about Channel, Subscriber and Subscription in Teams, see [Subscribing to Alert Notifications](/scom/manage-notifications-alert-notifications).
 
