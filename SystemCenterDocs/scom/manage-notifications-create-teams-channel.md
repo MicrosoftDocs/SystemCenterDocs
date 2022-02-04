@@ -111,13 +111,21 @@ The following table highlights the variables to use for various properties of th
  
 3. Under **Addresses**, click **Add**. **Subscribers Address** wizard opens. 
 
+   :::image type="subcriber address" source="media/teams-notifications/subcriber-address.png" alt-text="screenshot showing subscriber address.":::
+
 4. Under **General**, enter **Address name** to identify the subscriber.
+
+   :::image type="subscriber address name" source="media/teams-notifications/subscriber-address-name.png" alt-text="screenshot showing subscriber address name.":::
 
 5. Under **Channel**, enter **Channel Type** as Teams. Obtain the Address by clicking the options pertaining to a Teams Channel and getting the URL.
 
    :::image type="subscriber address" source="media/teams-notifications/subscriber-address.png" alt-text="screenshot showing subscriber address.":::
 
+   :::image type="channel link" source="media/teams-notifications/channel-link.png" alt-text="screenshot showing channel link address.":::
+
 6. Under **Schedule**, specify **Date range**, **Weekly recurrence**, **On the selected days of the week**, **Time zone** as required and click **Finish**.
+
+   :::image type="schedule" source="media/teams-notifications/schedule.png" alt-text="screenshot showing schedule.":::  
  
 ## To configure a Notification subscription
 
@@ -128,8 +136,16 @@ The following table highlights the variables to use for various properties of th
    :::image type="subscription wizard" source="media/teams-notifications/subscription-wizard.png" alt-text="screenshot showing subscription wizard.":::
 
 3. Under **Description**, enter **Subscription name** and click **Next**.
+
+   :::image type="create notification subscription" source="media/teams-notifications/create-notification-subscription.png" alt-text="screenshot showing create notification subscription.":::
  
-4. Under **Subscribers**, Click **Search**, select the subscriber and click **Next**.
+4. Set the Scope and Criteria to Define what Kind of Alerts you want notifications for. 
+
+   :::image type="scope" source="media/teams-notifications/scope.png" alt-text="screenshot showing scope.":::
+
+   :::image type="criteria" source="media/teams-notifications/criteria.png" alt-text="screenshot showing criteria.":::
+
+5. Under **Subscribers**, Click **Search**, select the subscriber and click **Next**.
 
    :::image type="subscriber search" source="media/teams-notifications/subscriber-search.png" alt-text="screenshot showing subscriber search.":::
  
@@ -138,10 +154,3 @@ The following table highlights the variables to use for various properties of th
    :::image type="channel search" source="media/teams-notifications/channel-search.png" alt-text="screenshot showing channel search.":::
 
 6. Under **Summary**, review the summary and click **Finish**.
-
-## Error scenarios
-
-   - Teams tenant is down
-   - Incorrect Teams tenant ID used during channel configuration
-   - Incorrect Teams channel ID used during subscriber configuration
-   - Operations Manager channel used to connect to Teams tenant is down
