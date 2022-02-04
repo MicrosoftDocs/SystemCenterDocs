@@ -54,7 +54,7 @@ The following two types of isolation settings are supported in SDN fabric:
 
 - By default, VMs connected to a VM network with network virtualization isolation setting, cannot connect to other networks. If you want your VM network to connect to other networks, you need to first deploy [SDN SLB ](sdn-slb.md) and [SDN gateway](sdn-gateway.md).
 
-
+::: moniker range="<=sc-vmm-2019"
 
 ## Create a VM network (network virtualization)
 
@@ -62,32 +62,14 @@ The following two types of isolation settings are supported in SDN fabric:
 2. In **Create VM Network Wizard** > **Name**, type a name, optional description, and select a logical network that was created with network virtualization isolation settings.
 3. In **Isolation**, select **Isolate using Hyper-V network virtualization**, and select IPv4 for IP address protocols for the VM network. Click **Next**.
 
-::: moniker range="sc-vmm-2022"
-
-1. To enable dual stack support in Isolation, select **Isolate using Hyper-V network virtualization**, and select **IPv4 and IPv6** for **IP address protocols for the VM network**. Click **Next**.
-
-::: moniker-end
-
    ![VM network in sdn](media/sdn-create-network/vm-network.png)
 
-1. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
+4. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
 
-::: moniker range="<=sc-vmm-2019"
    >[!NOTE]  
    > You can add multiple subnets.
 
-::: moniker-end
-
-::: moniker range="sc-vmm-2022"
-
-   >[!NOTE]
-   >- You can add multiple subnets.
-   >- To enable dual stack support, provide both IPv4 subnet and IPv6 subnet separated by a semi-colon (‘;’).
-   >- For VM network, create two static IP pools with both IPv4 and IPv6 address space using the drop-down menu.
-
-::: moniker-end
-
-1. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
+5. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
 
    >[!NOTE]
    > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
@@ -98,12 +80,53 @@ The following two types of isolation settings are supported in SDN fabric:
 
    - **Connect directly to an additional logical network**: Select this option if you want the virtual machines on this VM network to connect directly to an additional logical network. To enable access to internet resources, select **Network Address Translation (NAT)** or select **Direct Routing** to bridge a virtualized IP address space with a physical IP address space.
 
-1. In **Summary**,  verify the settings and click **Finish**.
+6. In **Summary**,  verify the settings and click **Finish**.
 
 Once the job is successfully completed, you can view the newly created VM network under **VMs and Services** > **VM Networks**.
 
 > [!NOTE]
 > After you create a VM network with network virtualization, ensure you [create an IP Pool](network-pool.md#set-up-an-ip-address-pool-on-a-vm-network) for this VM network.
+
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+## Create a VM network (network virtualization)
+
+1. In the VMM fabric, click **VMs and Services** > **VM Networks** > **Create VM Network**.
+2. In **Create VM Network Wizard** > **Name**, type a name, optional description, and select a logical network that was created with network virtualization isolation settings.
+3. In **Isolation**, select **Isolate using Hyper-V network virtualization**, and select IPv4 for IP address protocols for the VM network. Click **Next**.
+4. To enable dual stack support in Isolation, select **Isolate using Hyper-V network virtualization**, and select **IPv4 and IPv6** for **IP address protocols for the VM network**. Click **Next**.
+
+   ![VM network in sdn](media/sdn-create-network/vm-network.png)
+
+5. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
+
+   >[!NOTE]
+   >- You can add multiple subnets.
+   >- To enable dual stack support, provide both IPv4 subnet and IPv6 subnet separated by a semi-colon (‘;’).
+   >- For VM network, create two static IP pools with both IPv4 and IPv6 address space using the drop-down menu.
+
+6. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
+
+   >[!NOTE]
+   > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
+
+   - **Connect to another network through a VPN tunnel**: Select this option if you want the virtual machines on this VM network to communicate with other networks, over a VPN. To automatically learn routes between the sites connected through the VPN tunnel, select the **Enable the border gateway protocol** option.  Select the **VPN gateway device** that you want to use and confirm the settings.
+
+     Based on your selection, the **VPN Connections** and **Border Gateway Protocol** pages appear, complete the settings based on the information provided by the VPN admin.
+
+   - **Connect directly to an additional logical network**: Select this option if you want the virtual machines on this VM network to connect directly to an additional logical network. To enable access to internet resources, select **Network Address Translation (NAT)** or select **Direct Routing** to bridge a virtualized IP address space with a physical IP address space.
+
+7. In **Summary**,  verify the settings and click **Finish**.
+
+Once the job is successfully completed, you can view the newly created VM network under **VMs and Services** > **VM Networks**.
+
+> [!NOTE]
+> After you create a VM network with network virtualization, ensure you [create an IP Pool](network-pool.md#set-up-an-ip-address-pool-on-a-vm-network) for this VM network.
+
+::: moniker-end
 
 ## Create a VM network (no isolation)
 
