@@ -59,15 +59,6 @@ For specifying VIP range, don’t use the shortened form of IPv6 address; use �
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2022"
-VMM 2022 supports dual stack (Ipv4 + Ipv6) for SDN components.
-
-For specifying VIP range, don’t use the shortened form of IPv6 address; use *‘2001:db8:0:200:0:0:0:7’ format instead of ‘2001:db8:0:200::7’*.
-
-![Enable IPv6](media/sdn-route-network-traffic/configure-site-to-site-virtual-private-network.png)
-
-::: moniker-end
-
 ## Configure IPSec connection
 **Use the following procedure**:
 1.  Select the VM Network that you want to configure a Site-to-Site IPSec connection, and click **Connectivity**.
