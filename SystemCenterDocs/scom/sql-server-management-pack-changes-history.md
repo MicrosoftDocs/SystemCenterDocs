@@ -23,8 +23,8 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### Bug Fixes
 
-- Fixed an issue with failing 'MultiValueSpaceHealthCalculator' module on localized operating systems with SQL Server
-- Fixed an issue with failing 'LocalDBEngineDiscovery' module in environments, in which both x64 and x86 versions of SQL Server are installed
+- Fixed an issue with the failing 'MultiValueSpaceHealthCalculator' module on localized operating systems with SQL Server
+- Fixed an issue with the failing 'LocalDBEngineDiscovery' module in environments, in which both x64 and x86 versions of SQL Server are installed
 
 ## December 2021 - 7.0.34.0 RTM
 
@@ -42,9 +42,9 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### Bug Fixes
 
-- Fixed an issue with failing discovery modules after upgrading SQL Server
+- Fixed an issue with the failing discovery modules after upgrading SQL Server
 - Fixed an issue with free space calculations in cases when 'Autogrowth' is enabled for the database
-- Fixed an issue with failing discovery modules in cases when Availability Group has a replica with the 'Allow read/write connections' setting
+- Fixed an issue with the failing discovery modules in cases when Availability Group has a replica with the 'Allow read/write connections' setting
 - Fixed an issue with duplicates in the list of securables for the "Securables Configuration Status" monitor targeted to the database
 - Fixed an issue with not working Operations Manager console tasks (run "SQL Management Studio", run "SQL Profiler") with the latest versions of SQL Server Management Studio
 - Fixed an issue with not working Operations Manager console tasks in clustered environments. Now tasks "Start Analysis Service" and "Stop Analysis Service" work properly
