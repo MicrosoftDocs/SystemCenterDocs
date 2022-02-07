@@ -72,11 +72,18 @@ Follow these steps to enable Teams notification channel
  
 4. Under **Authentication**, enter **Tenant Id**, **Client Id** of your Azure Active Directory (Azure AD) App and click **Next**. 
 
+   :::image type="authentication" source="media/teams-notifications/authentication.png" alt-text="screenshot showing authentication.":::
+
 5. Under **Endpoints**, **Authorization URL** and **Graph API URL for your Cloud** are set by default (if you are not a public cloud user, refer [National cloud deployments](/graph/deployments) for correct endpoints).
+
+   :::image type="endpoints" source="media/teams-notifications/endpoints.png" alt-text="screenshot showing endpoints.":::
+
 
 6. Click **Next**.
 
 7. Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards.
+
+   :::image type="format" source="media/teams-notifications/format.png" alt-text="screenshot showing format.":::
 
 The following table highlights the variables to use for various properties of the alert or links to the HTML content.
 
@@ -155,3 +162,10 @@ The following table highlights the variables to use for various properties of th
 
 6. Under **Summary**, review the summary and click **Finish**.
 
+## Next steps
+
+* To create an email notification channel, see [How to enable an email notification channel](manage-notifications-create-email-channel.md).
+
+* To create a command channel notification, see [How to enable a command notification channel](manage-notifications-create-command-channel.md).
+
+* To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](manage-notifications-create-txt-channel.md).
