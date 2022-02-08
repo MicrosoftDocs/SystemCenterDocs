@@ -12,44 +12,46 @@ ms.topic: article
 ms.assetid: 
 ---
 
-# How to enable Microsoft Teams notification channel
+# How to enable Microsoft Teams notification channel in Operations Manager
 
-Earlier, System Center - Operations Manager supported integration with *Skype for Business* that allowed the users to receive alerts from Operations Manager. All *Skype for Business* customers were encouraged to start using Microsoft Teams as their communications and collaboration service - Skype for Business was retired on July 31, 2021.
+Earlier, System Center - Operations Manager supported integration with *Skype for Business* that allowed the users to receive alerts from Operations Manager. All *Skype for Business* customers were encouraged to start using Microsoft Teams as their communications and collaboration service as Skype for Business was retired on July 31, 2021.
 
-In line with the lifecycle, we now support Operations Manager alerts on Teams.  Integration of Teams with Operations Manager enhances productivity as you can receive the Operations Manager alerts to Teams directly where you collaborate the most.
+In line with the lifecycle, we now support Operations Manager alerts on Microsoft Teams (Teams).  Integration of Teams with Operations Manager enhances productivity as you can receive the Operations Manager alerts to Teams directly where you collaborate the most.
 
-With System Center 2022, Microsoft Teams has been added to the existing basic Notification channel of Operations Manager. You can specify conditions to allow only certain types of alerts.
+With System Center 2022, Microsoft Teams has been added to the existing basic Notification channels of Operations Manager. You can specify conditions for the channel to allow only certain types of alerts.
 
-To configure alert notifications for Operations Manager, you must enable a notification channel. This topic describes how to configure a  notification channel that will send alert notifications to subscribers by using Microsoft Teams.
+To configure alert notifications for Operations Manager, you must enable a notification channel. 
 
 For detailed information about notification channels, see [Subscribing to alert notifications](/scom/manage-notifications-alert-notifications).
 
-You can configure Operations Manager with Teams to send alerts through Operations console UI by providing the following details:
+This topic describes how to configure a  notification channel that will send alert notifications to subscribers by using Microsoft Teams.
+
+You can configure Operations Manager with Teams through Operations console UI by providing the following details:
 - Teams tenant information
 - Azure SPN details
-- Teams channel where you want to receive the alerts
+- Teams channel URL where you want to receive the alerts
 
 > [!NOTE] 
 > Integration of Operations Manager with Teams is supported for customers who use GCC, GCC High and DoD Clouds.
 
-Before you begin, gather the following information:
+Before you begin, get the following information:
 
 - Teams tenant
 - Teams
-- Teams channel created. For more information, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
-- Create an application in Azure or Microsoft 365 Portal by following instructions on [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
+- Teams channel created. For more information about Teams channels, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
+- Create an application in Azure or Microsoft 365 Portal by following the instructions on [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
 - For the newly created App, give the following Graph API permission: **ChannelMessage.Send**.
 
   :::image type="graph api permission" source="media/teams-notifications/graph-api-permissions.png" alt-text="screenshot showing graph api permissions.":::
 
 ## Operations Manager notification channel - key descriptions
 
-For detailed information about Channel, Subscriber and Subscription in Teams, see [Subscribing to Alert Notifications](/scom/manage-notifications-alert-notifications).
+For detailed information about Channel, Subscriber and Subscription, see [Subscribing to Alert Notifications](/scom/manage-notifications-alert-notifications).
 
 | Parameters | Microsoft Teams |
 |---|---|
-| Notifications Channel | Provide Azure Endpoints, Azure / Microsoft 365 Authentication details such as Application ID and Tenant ID, format of notifications that will be sent to Microsoft Teams. |
-| Notifications Subscriber | Provide notification schedule and Microsoft Teams Channel details to which notifications will be sent. |
+| Notifications Channel | Provide Azure endpoints, Azure / Microsoft 365 authentication details such as application ID and tenant ID, format of notifications that will be sent to Microsoft Teams. |
+| Notifications Subscriber | Provide notification schedule and Microsoft Teams channel details to which notifications will be sent. |
 | Notifications Subscription | Set criteria & scope on alerts that will be sent as notifications to Microsoft Teams. Subscription defines the criteria for sending a notification, the channel to be used, and the subscribers to receive the notification. |
 
 ## Integrate Operations Manager with Microsoft Teams
@@ -58,13 +60,11 @@ To integrate Operations Manager with Teams, configure a Teams channel, add a sub
 
 ## To create and enable the Microsoft Teams notification channel
 
-Follow these steps to enable Teams notification channel
+Follow these steps:
 
 1. Log on to the computer that will host the System Center-Operations Manager.
 
 2. On the console, under **Notifications**, right-click **Channels**, select **New channel** > **Microsoft Teams…** . **Microsoft Teams Notification Channel** wizard opens. 
-
-   :::image type="Microsoft Teams channel" source="media/teams-notifications/channels-wizard.png" alt-text="screenshot showing Microsoft Teams channel.":::
 
 3. Under **Description**, enter the **Channel name**, **Description (optional)** and click **Next**. 
 
@@ -81,9 +81,11 @@ Follow these steps to enable Teams notification channel
 
 6. Click **Next**.
 
-7. Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards.
+   Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. 
 
    :::image type="format" source="media/teams-notifications/format.png" alt-text="screenshot showing format.":::
+
+7. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards. 
 
 The following table highlights the variables to use for various properties of the alert or links to the HTML content.
 
@@ -106,35 +108,44 @@ The following table highlights the variables to use for various properties of th
 
 ## To add subscriber to the notification channel
 
-1. Log on to the computer that will host the System Center-Operations Manager. On the console, under **Notifications**, right-click **Subscribers**,  select **Microsoft Teams**. **Notification Subscriber Wizard** opens. Under **Description**, enter **Subscriber Name** and click **Next**.
+Follow these steps:
+
+1. Log on to the computer that will host the System Center-Operations Manager. On the console, under **Notifications**, right-click **Subscribers**,  select **Microsoft Teams**. **Notification Subscriber Wizard** opens. 
+
+2. Under **Description**, enter **Subscriber Name** and click **Next**.
    
    :::image type="subscriber description" source="media/teams-notifications/subscriber-description.png" alt-text="screenshot showing subscriber description.":::
 
-2. Under **Schedule**, select any of the following options based on your requirement and click **Next**.
-   - **Always send notifications**
-   - **Notify only during the specified times**
+3. Under **Schedule**, select any of the following options based on your requirement and click **Next**.
+   - **Always send notifications** - Allows you to send the notifications always.
 
    :::image type="subscriber schedule" source="media/teams-notifications/subscriber-schedule.png" alt-text="screenshot showing subscriber schedule.":::
+
+   - **Notify only during the specified times** - Allows you to send the notification only on specified times.
+
+   :::image type="notification schedule" source="media/teams-notifications/notification-schedule.png" alt-text="screenshot showing notification schedule.":::
  
-3. Under **Addresses**, click **Add**. **Subscribers Address** wizard opens. 
+4. Under **Addresses**, click **Add**. **Subscribers Address** wizard opens. 
 
-   :::image type="subcriber address" source="media/teams-notifications/subcriber-address.png" alt-text="screenshot showing subscriber address.":::
+   :::image type="subcriber address" source="media/teams-notifications/subscriber-address.png" alt-text="screenshot showing subscriber address.":::
 
-4. Under **General**, enter **Address name** to identify the subscriber.
+5. Under **General**, enter **Address name** to identify the subscriber.
 
    :::image type="subscriber address name" source="media/teams-notifications/subscriber-address-name.png" alt-text="screenshot showing subscriber address name.":::
 
-5. Under **Channel**, enter **Channel Type** as Teams. Obtain the Address by clicking the options pertaining to a Teams Channel and getting the URL.
+6. Under **Channel**, enter **Channel Type** as Microsoft Teams. Obtain the Address by clicking the options pertaining to a Teams Channel and getting the URL.
 
    :::image type="channel type" source="media/teams-notifications/channel-type.png" alt-text="screenshot showing channel type.":::
 
    :::image type="channel link" source="media/teams-notifications/channel-link.png" alt-text="screenshot showing channel link address.":::
 
-6. Under **Schedule**, specify **Date range**, **Weekly recurrence**, **On the selected days of the week**, **Time zone** as required and click **Finish**.
+7. Under **Schedule**, specify **Date range**, **Weekly recurrence**, **On the selected days of the week**, **Time zone** as required and click **Finish**.
 
    :::image type="schedule" source="media/teams-notifications/schedule.png" alt-text="screenshot showing schedule.":::  
  
 ## To configure a Notification subscription
+
+Follow these steps:
 
 1. Log on to the computer that will host the System Center-Operations Manager.
 
@@ -146,7 +157,7 @@ The following table highlights the variables to use for various properties of th
 
    :::image type="create notification subscription" source="media/teams-notifications/create-notification-subscription.png" alt-text="screenshot showing create notification subscription.":::
  
-4. Set the Scope and Criteria to Define what Kind of Alerts you want notifications for. 
+4. Set the **Scope** and **Criteria** to define the type of alerts you want notifications for. 
 
    :::image type="scope" source="media/teams-notifications/scope.png" alt-text="screenshot showing scope.":::
 
