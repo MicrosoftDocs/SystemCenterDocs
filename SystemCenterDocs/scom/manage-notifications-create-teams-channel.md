@@ -83,9 +83,9 @@ Follow these steps:
 
    Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. 
 
-7. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards.
-
    :::image type="format" source="media/teams-notifications/format.png" alt-text="screenshot showing format.":::
+
+7. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards. 
 
 The following table highlights the variables to use for various properties of the alert or links to the HTML content.
 
