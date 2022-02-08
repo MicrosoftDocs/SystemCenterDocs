@@ -81,7 +81,7 @@ Follow these steps:
 
 6. Click **Next**.
 
-Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. 
+   Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. 
 
 7. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards.
 
@@ -110,11 +110,13 @@ The following table highlights the variables to use for various properties of th
 
 Follow these steps:
 
-1. Log on to the computer that will host the System Center-Operations Manager. On the console, under **Notifications**, right-click **Subscribers**,  select **Microsoft Teams**. **Notification Subscriber Wizard** opens. Under **Description**, enter **Subscriber Name** and click **Next**.
+1. Log on to the computer that will host the System Center-Operations Manager. On the console, under **Notifications**, right-click **Subscribers**,  select **Microsoft Teams**. **Notification Subscriber Wizard** opens. 
+
+2. Under **Description**, enter **Subscriber Name** and click **Next**.
    
    :::image type="subscriber description" source="media/teams-notifications/subscriber-description.png" alt-text="screenshot showing subscriber description.":::
 
-2. Under **Schedule**, select any of the following options based on your requirement and click **Next**.
+3. Under **Schedule**, select any of the following options based on your requirement and click **Next**.
    - **Always send notifications** - Allows you to send the notifications always.
 
    :::image type="subscriber schedule" source="media/teams-notifications/subscriber-schedule.png" alt-text="screenshot showing subscriber schedule.":::
@@ -123,21 +125,21 @@ Follow these steps:
 
    :::image type="notification schedule" source="media/teams-notifications/notification-schedule.png" alt-text="screenshot showing notification schedule.":::
  
-3. Under **Addresses**, click **Add**. **Subscribers Address** wizard opens. 
+4. Under **Addresses**, click **Add**. **Subscribers Address** wizard opens. 
 
    :::image type="subcriber address" source="media/teams-notifications/subscriber-address.png" alt-text="screenshot showing subscriber address.":::
 
-4. Under **General**, enter **Address name** to identify the subscriber.
+5. Under **General**, enter **Address name** to identify the subscriber.
 
    :::image type="subscriber address name" source="media/teams-notifications/subscriber-address-name.png" alt-text="screenshot showing subscriber address name.":::
 
-5. Under **Channel**, enter **Channel Type** as Teams. Obtain the Address by clicking the options pertaining to a Teams Channel and getting the URL.
+6. Under **Channel**, enter **Channel Type** as Microsoft Teams. Obtain the Address by clicking the options pertaining to a Teams Channel and getting the URL.
 
    :::image type="channel type" source="media/teams-notifications/channel-type.png" alt-text="screenshot showing channel type.":::
 
    :::image type="channel link" source="media/teams-notifications/channel-link.png" alt-text="screenshot showing channel link address.":::
 
-6. Under **Schedule**, specify **Date range**, **Weekly recurrence**, **On the selected days of the week**, **Time zone** as required and click **Finish**.
+7. Under **Schedule**, specify **Date range**, **Weekly recurrence**, **On the selected days of the week**, **Time zone** as required and click **Finish**.
 
    :::image type="schedule" source="media/teams-notifications/schedule.png" alt-text="screenshot showing schedule.":::  
  
