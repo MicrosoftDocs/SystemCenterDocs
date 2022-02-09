@@ -10,6 +10,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 
+MonikerRange: '=sc-om-2022'
 ---
 
 # How to enable Microsoft Teams notification channel in Operations Manager
