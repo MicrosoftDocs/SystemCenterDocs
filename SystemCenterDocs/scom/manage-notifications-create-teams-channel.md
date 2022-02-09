@@ -32,7 +32,7 @@ For detailed information about notification channels, see [Subscribing to alert 
 
 Before you begin, get the following information:
 
-- Teams tenant
+- Teams tenant information
 - Link to the Teams channel created. For more information about Teams channels, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
 - Details of the newly created application in Azure. Instructions to register an application available at [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
 - For the newly created App, give the following Graph API permission: **ChannelMessage.Send**.
@@ -69,17 +69,15 @@ Follow these steps:
 
    :::image type="authentication" source="media/teams-notifications/authentication.png" alt-text="screenshot showing authentication.":::
 
-5. Under **Endpoints**, **Authorization URL** and **Graph API URL for your Cloud** are set by default (See [National cloud deployments](/graph/deployments) for correct endpoints, if you are not a public cloud user).
+5. Under **Endpoints**, **Authorization URL** and **Graph API URL for your Cloud** are set by default. Click **Next**. (See [National cloud deployments](/graph/deployments) for correct endpoints, if you are not a public cloud user).
 
    :::image type="endpoints" source="media/teams-notifications/endpoints.png" alt-text="screenshot showing endpoints.":::
 
-6. Click **Next**. 
-
-7. Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. 
+6. Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. 
 
    :::image type="format" source="media/teams-notifications/format.png" alt-text="screenshot showing format.":::
 
-8. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards. 
+7. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards. 
 
 The following table highlights the variables to use for various properties of the alert or links to the HTML content.
 
