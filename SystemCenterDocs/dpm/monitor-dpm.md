@@ -2,14 +2,14 @@
 description: This article describes the way that you can monitor DPM.
 manager: carmonm
 ms.topic: article
-author: JYOTHIRMAISURI
+author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 05/07/2021
+ms.date: 02/09/2022
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
-ms.author: v-jysur
+ms.author: jsuri
 ---
 
 # Monitor DPM
@@ -125,7 +125,7 @@ Here is a sample view:
 
   >[!NOTE]
   > - The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
-  > - Some datasources in the Backup items (DPM) view from recovery service vault in Azure portal, are not getting refreshed/updated. Check the workarounds to fix this [known issue](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-datasources-not-being-reflected-on-recovery-services-vault).
+  > - Some datasources in the Backup items (DPM) view from recovery service vault in Azure portal, are not getting refreshed/updated. Check the workarounds to fix this [known issue](./dpm-release-notes.md?view=sc-dpm-2019#dpm-datasources-not-being-reflected-on-recovery-services-vault).
 
 - Click the *backup item* to view more details such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
 
