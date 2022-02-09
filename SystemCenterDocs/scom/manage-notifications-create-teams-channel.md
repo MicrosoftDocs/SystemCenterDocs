@@ -10,7 +10,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 
-MonikerRange: '=sc-om-2022'
+MonikerRange: 'sc-om-2022'
 ---
 
 # How to enable Microsoft Teams notification channel in Operations Manager
@@ -32,6 +32,7 @@ For detailed information about notification channels, see [Subscribing to alert 
 
 Before you begin, get the following information:
 
+- Teams tenant
 - Link to the Teams channel created. For more information about Teams channels, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
 - Details of the newly created application in Azure. Instructions to register an application available at [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
 - For the newly created App, give the following Graph API permission: **ChannelMessage.Send**.
@@ -115,7 +116,7 @@ Follow these steps:
 
    :::image type="subscriber schedule" source="media/teams-notifications/subscriber-schedule.png" alt-text="screenshot showing subscriber schedule.":::
 
-4. If you select **Notify only during the specified times** option, **Specify Schedule** wizard opens. Select the **Date range**, **Weekly recurrence**, **On the selected days of the week** and **Time zone** based on your requirement.   
+4. If you select **Notify only during the specified times** option, **Specify Schedule** page opens. Select the **Date range**, **Weekly recurrence**, **On the selected days of the week** and **Time zone** based on your requirement.   
 
    :::image type="notification schedule" source="media/teams-notifications/notification-schedule.png" alt-text="screenshot showing notification schedule.":::
  
