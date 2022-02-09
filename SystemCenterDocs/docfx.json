@@ -244,24 +244,24 @@
     },
     "fileMetadata": {
       "author": {
-        "SystemCenterDocs/scom/*.md": "JYOTHIRMAISURI",
-        "SystemCenterDocs/includes/*.md": "JYOTHIRMAISURI",
-        "SystemCenterDocs/orchestrator/*.md": "JYOTHIRMAISURI",
-        "SystemCenterDocs/dpm/*.md": "JYOTHIRMAISURI",
-        "SystemCenterDocs/scsm/*.md": "JYOTHIRMAISURI",
-        "SystemCenterDocs/sma/*.md": "JYOTHIRMAISURI",
-        "SystemCenterDocs/spf/*.md": "JYOTHIRMAISURI",
-        "SystemCenterDocs/vmm/*.md": "JYOTHIRMAISURI"
+        "SystemCenterDocs/scom/*.md": "jyothisuri",
+        "SystemCenterDocs/includes/*.md": "jyothisuri",
+        "SystemCenterDocs/orchestrator/*.md": "jyothisuri",
+        "SystemCenterDocs/dpm/*.md": "jyothisuri",
+        "SystemCenterDocs/scsm/*.md": "jyothisuri",
+        "SystemCenterDocs/sma/*.md": "jyothisuri",
+        "SystemCenterDocs/spf/*.md": "jyothisuri",
+        "SystemCenterDocs/vmm/*.md": "jyothisuri"
     },
     "ms.author": {
-      "SystemCenterDocs/scom/*.md": "v-jysur",
-      "SystemCenterDocs/includes/*.md": "v-jysur",
-      "SystemCenterDocs/orchestrator/*.md": "v-jysur",
-      "SystemCenterDocs/dpm/*.md": "v-jysur",
-      "SystemCenterDocs/scsm/*.md": "v-jysur",
-      "SystemCenterDocs/sma/*.md": "v-jysur",
-      "SystemCenterDocs/spf/*.md": "v-jysur",
-      "SystemCenterDocs/vmm/*.md": "v-jysur"
+      "SystemCenterDocs/scom/*.md": "jsuri",
+      "SystemCenterDocs/includes/*.md": "jsuri",
+      "SystemCenterDocs/orchestrator/*.md": "jsuri",
+      "SystemCenterDocs/dpm/*.md": "jsuri",
+      "SystemCenterDocs/scsm/*.md": "jsuri",
+      "SystemCenterDocs/sma/*.md": "jsuri",
+      "SystemCenterDocs/spf/*.md": "jsuri",
+      "SystemCenterDocs/vmm/*.md": "jsuri"
      }
     },
     "template": [
