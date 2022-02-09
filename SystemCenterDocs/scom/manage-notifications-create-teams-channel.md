@@ -14,6 +14,8 @@ ms.assetid:
 
 # How to enable Microsoft Teams notification channel in Operations Manager
 
+This topic describes how to configure a  notification channel that will send alert notifications to subscribers by using Microsoft Teams.
+
 Earlier, System Center - Operations Manager supported integration with *Skype for Business* that allowed the users to receive alerts from Operations Manager. All *Skype for Business* customers were encouraged to start using Microsoft Teams as their communications and collaboration service as Skype for Business was retired on July 31, 2021.
 
 In line with the lifecycle, we now support Operations Manager alerts on Microsoft Teams (Teams).  Integration of Teams with Operations Manager enhances productivity as you can receive the Operations Manager alerts to Teams directly where you collaborate the most.
@@ -24,22 +26,13 @@ To configure alert notifications for Operations Manager, you must enable a notif
 
 For detailed information about notification channels, see [Subscribing to alert notifications](/scom/manage-notifications-alert-notifications).
 
-This topic describes how to configure a  notification channel that will send alert notifications to subscribers by using Microsoft Teams.
-
-You can configure Operations Manager with Teams through Operations console UI by providing the following details:
-- Teams tenant information
-- Azure SPN details
-- Teams channel URL where you want to receive the alerts
-
 > [!NOTE] 
 > Integration of Operations Manager with Teams is supported for customers who use GCC, GCC High and DoD Clouds.
 
 Before you begin, get the following information:
 
-- Teams tenant
-- Teams
-- Teams channel created. For more information about Teams channels, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
-- Create an application in Azure or Microsoft 365 Portal by following the instructions on [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
+- Link to the Teams channel created. For more information about Teams channels, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
+- Details of the newly created application in Azure. Instructions to register an application available at [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2). 
 - For the newly created App, give the following Graph API permission: **ChannelMessage.Send**.
 
   :::image type="graph api permission" source="media/teams-notifications/graph-api-permissions.png" alt-text="screenshot showing graph api permissions.":::
@@ -74,18 +67,17 @@ Follow these steps:
 
    :::image type="authentication" source="media/teams-notifications/authentication.png" alt-text="screenshot showing authentication.":::
 
-5. Under **Endpoints**, **Authorization URL** and **Graph API URL for your Cloud** are set by default (if you are not a public cloud user, refer [National cloud deployments](/graph/deployments) for correct endpoints).
+5. Under **Endpoints**, **Authorization URL** and **Graph API URL for your Cloud** are set by default (See [National cloud deployments](/graph/deployments) for correct endpoints, if you are not a public cloud user).
 
    :::image type="endpoints" source="media/teams-notifications/endpoints.png" alt-text="screenshot showing endpoints.":::
 
+6. Click **Next**. 
 
-6. Click **Next**.
-
-   Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. 
+7. Under **Format**, **Teams Message**, you have a default alert format using Adaptive Cards to deliver rich alerts. 
 
    :::image type="format" source="media/teams-notifications/format.png" alt-text="screenshot showing format.":::
 
-7. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards. 
+8. See [Adaptive Cards Overview](/adaptive-cards/) to customize the Teams message as required. Also see [Adaptive Cards](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card) to know additional information about Adaptive cards. 
 
 The following table highlights the variables to use for various properties of the alert or links to the HTML content.
 
@@ -117,11 +109,12 @@ Follow these steps:
    :::image type="subscriber description" source="media/teams-notifications/subscriber-description.png" alt-text="screenshot showing subscriber description.":::
 
 3. Under **Schedule**, select any of the following options based on your requirement and click **Next**.
-   - **Always send notifications** - Allows you to send the notifications always.
+   - **Always send notifications** - Allows you to send the notifications all the time.
+   - **Notify only during the specified times** - Allows you to send the notification only on specified times.
 
    :::image type="subscriber schedule" source="media/teams-notifications/subscriber-schedule.png" alt-text="screenshot showing subscriber schedule.":::
 
-   - **Notify only during the specified times** - Allows you to send the notification only on specified times.
+4. If you select **Notify only during the specified times** option, **Specify Schedule** wizard opens. Select the **Date range**, **Weekly recurrence**, **On the selected days of the week** and **Time zone** based on your requirement.   
 
    :::image type="notification schedule" source="media/teams-notifications/notification-schedule.png" alt-text="screenshot showing notification schedule.":::
  
@@ -133,13 +126,15 @@ Follow these steps:
 
    :::image type="subscriber address name" source="media/teams-notifications/subscriber-address-name.png" alt-text="screenshot showing subscriber address name.":::
 
-6. Under **Channel**, enter **Channel Type** as Microsoft Teams. Obtain the Address by clicking the options pertaining to a Teams Channel and getting the URL.
+6. Under **Channel**, enter **Channel Type** as Microsoft Teams.
 
    :::image type="channel type" source="media/teams-notifications/channel-type.png" alt-text="screenshot showing channel type.":::
 
+7. On the Microsoft Teams, right click the channel where you want to send the notifications, click **Get link to channel** and copy the URL.
+
    :::image type="channel link" source="media/teams-notifications/channel-link.png" alt-text="screenshot showing channel link address.":::
 
-7. Under **Schedule**, specify **Date range**, **Weekly recurrence**, **On the selected days of the week**, **Time zone** as required and click **Finish**.
+8. Under **Schedule**, specify **Date range**, **Weekly recurrence**, **On the selected days of the week**, **Time zone** as required and click **Finish**.
 
    :::image type="schedule" source="media/teams-notifications/schedule.png" alt-text="screenshot showing schedule.":::  
  
@@ -167,7 +162,7 @@ Follow these steps:
 
    :::image type="subscriber search" source="media/teams-notifications/subscriber-search.png" alt-text="screenshot showing subscriber search.":::
  
-5. Under **Channels**, Click **Search**, select the Channel and click **Next**.
+5. Under **Channels**, Click **Search**, select the desired notification channel and click **Next**.
 
    :::image type="channel search" source="media/teams-notifications/channel-search.png" alt-text="screenshot showing channel search.":::
 
