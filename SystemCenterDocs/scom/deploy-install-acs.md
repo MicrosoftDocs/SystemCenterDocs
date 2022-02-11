@@ -77,7 +77,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
 1. Log on to the computer that has Performance monitor installed. 
 
-2. Enter **perform.msc** on the Run page and click **OK**. 
+2. Enter **perform.msc** on the **Run** page and click **OK**. 
 
 3. Under **Performance** > **Monitoring Tools**, right-click **Performance Monitor** > **Properties**. **Performance Monitor Properties** page opens. 
 
