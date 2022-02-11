@@ -73,7 +73,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
 ## Verify ACS collector performance
 
-### Monitor performance data of ACS with Performance Monitor 
+### Monitor performance data of ACS with Performance monitor 
 
 1. Log on to the computer that has Performance monitor installed. 
 
@@ -103,7 +103,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
    :::image type="acs collector data report" source="media/deploy-install-acs/acs-collector-data-report.png" alt-text="Screenshot showing the acs collector data report.":::
 
-### Monitor Performance data of ACS with PowerShell 
+### Monitor performance data of ACS with PowerShell 
 
 Use the below PowerShell commands to view the ACS collector performance data:
 
