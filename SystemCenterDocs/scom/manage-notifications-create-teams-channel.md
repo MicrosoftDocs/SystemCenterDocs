@@ -37,7 +37,7 @@ Before you begin, ensure you have the following:
 
   :::image type="graph api permission" source="media/teams-notifications/graph-api-permissions.png" alt-text="screenshot showing graph api permissions.":::
 
-- On the **Azure Active Directory admin center** > **Advance settings**, ensure **Allow public client flows** is set to **Yes**.
+- On the **Azure Active Directory admin center** > **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
 
   :::image type="advance settings" source="media/teams-notifications/advance-settings.png" alt-text="screenshot showing advance settings.":::
 
