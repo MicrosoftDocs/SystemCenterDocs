@@ -91,7 +91,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
    :::image type="add" source="media/deploy-install-acs/add.png" alt-text="Screenshot showing add.":::
 
-6. **Add Counters** page opens. Locate **ACS Collector** counter and click **Add >** and then click **OK** to confirm the properties. 
+6. **Add Counters** page opens. Locate **ACS Collector** counter and click **Add >>** and then click **OK** to confirm the properties. 
    
    :::image type="add counters" source="media/deploy-install-acs/add-counters.png" alt-text="Screenshot showing the add counters.":::
 
@@ -99,7 +99,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
    :::image type="report view" source="media/deploy-install-acs/report-view.png" alt-text="Screenshot showing the report view.":::
 
-8. Performance data of ACS is displayed as below: 
+8. ACS performance data is displayed as follows: 
 
    :::image type="acs collector data report" source="media/deploy-install-acs/acs-collector-data-report.png" alt-text="Screenshot showing the acs collector data report.":::
 
