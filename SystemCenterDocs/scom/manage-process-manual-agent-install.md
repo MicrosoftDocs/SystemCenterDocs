@@ -2,10 +2,10 @@
 ms.assetid: 017e8bb1-e523-4cc0-bf0c-2d1d4697db11
 title: Process Manual Agent Installations
 description: This article describes how to process Operations Manager agents deployed manually.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
-ms.date: 11/15/2016
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
+ms.date: 02/14/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -21,6 +21,13 @@ ms.topic: article
 ::: moniker-end
 
 Manual installation of an agent refers to the process of running MOMAgent.msi locally on a computer that is to host a System Center Operations Manager agent. When it is installed, the agent attempts to join the specified management group by contacting a specified management server. You can use security settings at both the management group and the management server level to configure how requests from manually installed agents are processed.
+
+::: moniker range="sc-om-2022"
+
+>[!NOTE]
+> You will need to restart the computer after installing the Operations Manager 2022 agent.
+
+::: moniker-end
 
 The following three options are available to process manually installed agents.
 
