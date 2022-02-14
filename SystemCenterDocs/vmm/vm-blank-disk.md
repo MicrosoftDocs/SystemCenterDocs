@@ -2,10 +2,10 @@
 ms.assetid: f55897a2-0a79-4fb4-8d39-de6462e29f5b
 title: Deploy VMs in the VMM fabric from a blank virtual hard disk
 description: This article describes how to create and deploy VMs in the VMM fabric from a blank virtual hard disk
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
-ms.date: 11/07/2017
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -66,6 +66,14 @@ This article describes how to create and deploy virtual machines in the System C
 5.  In **Summary**, confirm the settings, and click **Create**. Confirm that the VM was created in **VMs and Services** > **Clouds**, and select the cloud. The virtual machine appears in the **VMs** pane.
 
 ## Deploy the VM on a host
+
+::: moniker range="= sc-vmm-2022"
+
+>[!NOTE]
+> Apply [this patch](https://support.microsoft.com/kb/2919355) for deploying VMM guest agent on the following OS, else the deployment fails:
+ WS 2008, WS 2008 R2, WS 2012, WS 2012 R2, Windows 8, Windows 8.1, Windows Vista and Windows 7.
+
+::: moniker-end
 
 1. In **Select Host**, view the ratings, click the host on which you want to deploy the VM, and click **Next**. The host suggestions are based on a 0-5 star rating. [Learn more](provision-vms.md#vm-placement). Verify the settings and modify if required:
 
