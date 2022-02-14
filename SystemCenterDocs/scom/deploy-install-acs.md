@@ -73,11 +73,11 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
 ## Verify ACS collector performance
 
-### Monitor performance data of ACS with Performance monitor 
+### Monitor ACS collector performance data with Performance monitor 
 
 1. Log on to the computer that has Performance monitor installed. 
 
-2. Enter **perform.msc** on the **Run** page and click **OK**. 
+2. Enter **perfmon.msc** on the **Run** page and click **OK**. 
 
 3. Under **Performance** > **Monitoring Tools**, right-click **Performance Monitor** > **Properties**. **Performance Monitor Properties** page opens. 
 
@@ -91,7 +91,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
    :::image type="add" source="media/deploy-install-acs/add.png" alt-text="Screenshot showing add.":::
 
-6. **Add Counters** page opens. Locate **ACS Collector** counter and click **Add >>** and then click **OK** to confirm the properties. 
+6. **Add Counters** page opens. Locate the **ACS Collector** counter and click **Add >>** and then click **OK** to confirm the properties. 
    
    :::image type="add counters" source="media/deploy-install-acs/add-counters.png" alt-text="Screenshot showing the add counters.":::
 
@@ -103,21 +103,23 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
    :::image type="acs collector data report" source="media/deploy-install-acs/acs-collector-data-report.png" alt-text="Screenshot showing the acs collector data report.":::
 
-### Monitor performance data of ACS with PowerShell 
+### Monitor ACS collector performance data with PowerShell 
 
 Use the below PowerShell commands to view the ACS collector performance data:
 
-**Snapshot of Counters**
+#### Example 1: Get a single sample of ACS collector performance counters
 
-Monitors all the current ACS collector performance counter values. 
+Get a single sample of ACS collector performance counter values using the below example 
 
 ```powershell
 Get-Counter -ListSet 'ACS Collector' | Get-Counter 
 ```
 
-**Continuous Snapshot of Counters**
+#### Example 2: Get continuous samples of ACS collector performance counters
 
-Monitors all the current ACS collector performance counter values continuously. Click ctrl+c to stop monitoring continuously. 
+Get continuous samples of ACS Collector performance counter values using the below example. To stop the command, press \<CTRL+C>\.
+
+To specify a longer interval (in seconds) between samples, use the **SampleInterval** parameter.
 
 ```powershell
 Get-Counter -ListSet 'ACS Collector' | Get-Counter -Continuous 
@@ -125,7 +127,7 @@ Get-Counter -ListSet 'ACS Collector' | Get-Counter -Continuous
  
 **Example Output**
 
-:::image type="example" source="media/deploy-install-acs/example.png" alt-text="Screenshot showing the example.":::
+:::image type="example" source="media/deploy-install-acs/example.png" alt-text="Screenshot showing the PowerShell example for gathering ACS collector performance data.":::
 
 ## To deploy ACS reporting
 
