@@ -109,7 +109,7 @@ Use the below PowerShell commands to view the ACS collector performance data:
 
 #### Example 1: Get a single sample of ACS collector performance counters
 
-Get a single sample of ACS collector performance counter values using the below example 
+Get a single sample of ACS collector performance counter values using the below command.
 
 ```powershell
 Get-Counter -ListSet 'ACS Collector' | Get-Counter 
@@ -117,7 +117,7 @@ Get-Counter -ListSet 'ACS Collector' | Get-Counter
 
 #### Example 2: Get continuous samples of ACS collector performance counters
 
-Get continuous samples of ACS collector performance counter values using the below example. 
+Get continuous samples of ACS collector performance counter values using the below command. 
 
 To stop the command, press \<CTRL+C>\.
 
