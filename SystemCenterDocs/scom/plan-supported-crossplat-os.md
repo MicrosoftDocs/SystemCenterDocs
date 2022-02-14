@@ -157,7 +157,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-2019"
+::: moniker range="sc-om-2019"
 
 ## SUSE Linux Enterprise Server 15
 
@@ -174,10 +174,6 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
-
-::: moniker-end
-
-::: moniker range="sc-om-2019"
 
 ## Universal Linux (Debian package)
 
@@ -223,7 +219,7 @@ Debian 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 ## Universal Linux (RPM package)
 
-Oracle Linux 7, 8 are supported.
+CentOS 7, Oracle Linux 7, 8, SLES 15 and openSUSE Leap 15 are supported.
 
 Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
