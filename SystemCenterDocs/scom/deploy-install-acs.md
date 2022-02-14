@@ -117,7 +117,9 @@ Get-Counter -ListSet 'ACS Collector' | Get-Counter
 
 #### Example 2: Get continuous samples of ACS collector performance counters
 
-Get continuous samples of ACS Collector performance counter values using the below example. To stop the command, press \<CTRL+C>\.
+Get continuous samples of ACS collector performance counter values using the below example. 
+
+To stop the command, press \<CTRL+C>\.
 
 To specify a longer interval (in seconds) between samples, use the **SampleInterval** parameter.
 
