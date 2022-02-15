@@ -119,11 +119,11 @@ Get-Counter -ListSet 'ACS Collector' | Get-Counter
 
 #### Example 2: Get continuous samples of ACS collector performance counters
 
-This example shows how to get continuous samples of ACS collector performance counter values.
+This example shows how to get continuous samples of ACS collector performance counter values via Powershell.
 
-To stop the command, press \<CTRL+C>\.
+To stop the command, press <kbd>CTRL</kbd>+<kbd>C</kbd>.
 
-To specify a longer interval (in seconds) between samples, use the **SampleInterval** parameter.
+To specify a longer interval (in seconds) between samples, use the `-SampleInterval` parameter.
 
 ```powershell
 Get-Counter -ListSet 'ACS Collector' | Get-Counter -Continuous 
