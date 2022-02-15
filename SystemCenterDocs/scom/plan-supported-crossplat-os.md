@@ -206,7 +206,10 @@ CentOS 8 is supported from 2019 UR2 and later and Oracle Linux 8 is supported fr
 
 ## Universal Linux (Debian package)
 
-Debian 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
+Supported versions:
+
+- Debian 9, 10 and 11 
+- Ubuntu 16.04, 18.04 and 20.04
 
 >[!NOTE]
 > Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
@@ -219,7 +222,12 @@ Debian 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 ## Universal Linux (RPM package)
 
-CentOS 7, Oracle Linux 7, 8, SLES 15 and openSUSE Leap 15 are supported.
+Supported versions:
+
+- CentOS 7
+- Oracle Linux 7 and 8 
+- SLES 15
+- openSUSE Leap 15
 
 Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
