@@ -106,7 +106,7 @@ Once the job is successfully completed, you can view the newly created VM networ
    >[!NOTE]
    >- You can add multiple subnets.
    >- To enable dual stack support, provide both IPv4 subnet and IPv6 subnet separated by a semi-colon (‘;’).
-   >- For VM network, create two static IP pools with both IPv4 and IPv6 address space using the drop-down menu.
+   >- For VM network with dual stack support, create two static IP pools with both IPv4 and IPv6 address space using the drop-down menu.
 
 6. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
 

@@ -20,7 +20,7 @@ The following sections provide information about how to upgrade to VMM 2022. The
 
 ## Requirements and limitations
 
-- You should be running VMM on System Center 2019 or 2016.
+- You should be running VMM on System Center 2019.
 - Ensure that the server meets all requirements for VMM 2022, and that prerequisites are in place [Learn more](../vmm/install.md)
 - Make sure you're running a [supported version of SQL Server](../vmm/system-requirements.md).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
@@ -59,20 +59,20 @@ If you're running more than one System Center component, they should be upgraded
 ## Upgrade a standalone VMM server
 
 >[!NOTE]
->When you are upgrading a standalone VMM server, we recommend that you install VMM 2019 on the same server that had VMM 2016, 1801 or 1807.  
+>When you are upgrading a standalone VMM server, we recommend that you install VMM 2022 on the same server that had VMM 2019.
 
-If you are using Distributed Key Management, you may choose to install VMM 2019 on a different server but make sure that the new server has the same name as that of the old VMM server.
+If you are using Distributed Key Management, you may choose to install VMM 2022 on a different server.
 
 Use the following procedures:
 
 - [Back up and upgrade the OS](#back-up-and-upgrade-os)
-- [Install VMM 2019](#install-vmm-2019)
+- [Install VMM 2022](#install-vmm-2022)
 
 ### Back up and upgrade OS
 1.	Back up and retain the VMM database.
 2.	[Uninstall the VMM](#uninstall-the-vmm). Ensure to remove both the management server and console.
 3.	Upgrade the management OS to Windows Server 2022.
-4.	Install Windows 10 version of ADK.
+4.	Install Windows 11 or Windows Server 2022 version of ADK.
 
 #### Uninstall the VMM
 1. Go to **Control Panel** > **Programs** > **Program and Features**, select **Virtual Machine Manager** and click **Uninstall**.
@@ -126,7 +126,7 @@ During the setup, VMM enables the following firewall rules. These rules remain i
 
 ## Upgrade a highly available VMM server
 
-You can upgrade a highly available (HA) VMM server 2019 or 2016 to 2022.
+You can upgrade a highly available (HA) VMM server 2019 to 2022.
 
 The following two modes of upgrade are supported:
 
@@ -141,10 +141,10 @@ This procedure requires no additional VMM servers, but has increased risk for do
 
 **Follow these steps**:  
 
-1.	Backup and retain the VMM database.
-2.	[Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
-3.	On the passive VMM node, upgrade the management OS to Windows server 2019/2016. 		
-4. Upgrade to the Windows 10 version of the ADK.
+1. Backup and retain the VMM database.
+2. [Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
+3. On the passive VMM node, upgrade the management OS to Windows server 2019. 		
+4. Upgrade to the Windows 11 or Windows Server 2022 version of the ADK.
 5. Install VMM 2022 on the passive node by using the following steps:
 	-	In the main setup page, click **Install**.
     -   In **Select features to install**, select  **VMM management server** and then click **Next**. The VMM console will be automatically installed.
@@ -163,12 +163,12 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 **Follow these steps**:
 
 1. Backup and retain the VMM database.
-2.	Add the same number of additional servers (with Windows Server 2019/2016 Management OS) that equals to the server  number present in the HA cluster.
-3. Install Windows 10 version of the ADK on the newly added 2019 servers.
+2.	Add the same number of additional servers (with Windows Server 2022 Management OS) that equals to the server  number present in the HA cluster.
+3. Install Windows 11/Windows Server 2022 version of the ADK on the newly added 2022 servers.
 4. Install VMM 2022 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode-upgrade-with-no-additional-vmm-servers).    
 5. Repeat the installation steps for all the other newly added servers.
 6. Failover the active VMM node to one of the newly added servers.
-7. Uninstall VMM from the 2019/2016 nodes, and remove these nodes from the cluster after failover.
+7. Uninstall VMM from the 2019 nodes, and remove these nodes from the cluster after failover.
 8. Update the cluster functional level by using the
 **Update-ClusterFunctionalLevel** [command](/powershell/module/failoverclusters/update-clusterfunctionallevel).
 9.	[Optional] Install the appropriate SQL Command line utilities.
@@ -207,7 +207,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 
 There are a couple of reasons you might want to upgrade the VMM SQL Server database:
 
-- You're upgrading VMM to System Center 2019, and the current SQL Server database version isn't supported.
+- You're upgrading VMM to System Center 2022, and the current SQL Server database version isn't supported.
 - You want to upgrade a VMM standalone server to a high availability server, and SQL Server is installed locally.
 - You want to move the SQL Server database to a different computer.
 
@@ -246,7 +246,7 @@ When uninstalling VMM server from last node, you may get a message about unsucce
 
 ## Redeploy Azure Site Recovery
 
-If Azure Site Recovery was integrated into your VMM 2019/2016 deployment, you need to redeploy it with VMM 2022, for [replication to Azure](/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](/azure/site-recovery/site-recovery-vmm-to-vmm).
+If Azure Site Recovery was integrated into your VMM 2019 deployment, you need to redeploy it with VMM 2022, for [replication to Azure](/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](/azure/site-recovery/site-recovery-vmm-to-vmm).
 
 
 ## Connect to Operations Manager
