@@ -20,25 +20,11 @@ See the following sections for new features and feature updates supported in VMM
 
 ### Windows Server 2022 support
 
-VMM 2022 can be installed on Windows Server 2022.
-
-### Supported scenarios to manage Windows Server 2022
-
-The following are the supported scenarios:
-
-1. Addition, creation, and management of Windows Server 2022 virtualization servers.  
-
-1. Ability to provision and deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD files, templates or from an existing VM.  
-
-1. Setting up LAN based network.  
-
-1. Management of storage pool settings, creation of virtual disks, creation of cluster shared volumes (CSVs) and application of QOS settings.
-
-1. Create, deploy, and manage VMM private cloud.
+VMM 2022 can be used to manage on Windows Server 2022 hosts.
 
 ### Support for Azure Stack HCI clusters 21H2
 
-With VMM 2022 you can manage Azure Stack HCI clusters in VMM. In addition to the current SKU of the server operating system, VMM expands its support to Azure Stack HCI, version 21H2.
+With VMM 2022 you can manage Azure Stack HCI, 21H2 clusters.
 
 Azure Stack HCI, version 21H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
 
