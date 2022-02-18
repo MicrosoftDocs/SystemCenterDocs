@@ -56,7 +56,7 @@ If you notice your Orchestrator database broker is disabled (0) you will need to
     Orchestrator Runbook Server Monitor (omonitor)\
     Orchestrator Runbook Service (orunbook)
     ```powershell
-    (Get-Service).Where{$_.Name -match "omanagement|oremoting|omonitor|orunbook"} | Stop-Service -Confirm:$false
+    (Get-Service).Where{$_.Name -match "^omanagement|^oremoting|^omonitor|^orunbook"} | Stop-Service -Confirm:$false
     ```
 2.  Run the following query against the Orchestrator SQL Instance:
     ```sql
@@ -69,7 +69,7 @@ If you notice your Orchestrator database broker is disabled (0) you will need to
     ```
 3.  Start all Orchestrator related services on all Management Servers / Runbook Servers:
     ```powershell
-    (Get-Service).Where{$_.Name -match "omanagement|oremoting|omonitor|orunbook"} | Start-Service
+    (Get-Service).Where{$_.Name -match "^omanagement|^oremoting|^omonitor|^orunbook"} | Start-Service
     ```
 
 ## Back up SQL Server service master key in environment A  
