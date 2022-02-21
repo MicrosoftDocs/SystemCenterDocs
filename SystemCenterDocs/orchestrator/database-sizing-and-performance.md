@@ -1,13 +1,13 @@
 ---
 title: Database sizing and performance
 description: Provides guidance for sizing the System Center - Orchestrator database
-author: rayne-wiselman
+author: jyothisuri
 manager: carmonm
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-ms.author: raynew
+ms.author: jsuri
 ---
 
 
