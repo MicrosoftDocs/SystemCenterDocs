@@ -10,8 +10,8 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: d77c39e2-e0bb-4259-8072-803361ad4211
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 robots: noindex
 ---
