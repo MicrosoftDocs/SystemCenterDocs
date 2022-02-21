@@ -2,8 +2,8 @@
 ms.assetid: a6c11181-2042-425e-9bc2-101bb08b47bc
 title: Edit settings or requests for your web application.
 description: This article provides information about how to edit settings or requests for your web application.  
-author: JYOTHIRMAISURI
-ms.author: V-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: vvithal
 ms.date: 03/14/2019
 ms.custom: na
