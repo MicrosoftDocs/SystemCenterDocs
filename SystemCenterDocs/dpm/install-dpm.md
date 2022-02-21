@@ -2,10 +2,10 @@
 description: This article contains prerequisites and set up instructions for DPM 2016 and it includes attended and unattended instructions
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
+author: jyothisuri
 ms.date: 10/04/2020
 title: Installing DPM
-ms.author: raynew
+ms.author: jsuri
 ms.prod: system-center
 ms.technology: data-protection-manager
 ms.custom: intro-installation
