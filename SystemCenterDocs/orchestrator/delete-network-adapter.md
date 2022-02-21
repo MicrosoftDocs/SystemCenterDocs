@@ -5,8 +5,8 @@ ms.date: 01/22/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ---
 # Delete Network Adapter activity
