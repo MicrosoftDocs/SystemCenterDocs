@@ -2,8 +2,8 @@
 ms.assetid: 8e379e26-a604-4976-88ff-d291c48b8700
 title: Features and enhancements in Management Pack for SQL Server Analysis Services
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Analysis Services
-author: TDzakhov
-ms.author: v-tdzakhov
+author: jyothisuri
+ms.author: jsuri
 manager: vvithal
 ms.date: 12/20/2021
 ms.topic: article
