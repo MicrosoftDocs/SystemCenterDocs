@@ -2,8 +2,8 @@
 ms.assetid: 2d498902-bbce-4620-917d-0e1d039f8a29
 title: System requirements for Service Provider Foundation
 description: This article describes the software and hardware system requirements for System Center Service Provider Foundation
-author: JYOTHIRMAISURI
-ms.author: V-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: vvithal
 ms.date: 03/14/2019
 ms.topic: article
