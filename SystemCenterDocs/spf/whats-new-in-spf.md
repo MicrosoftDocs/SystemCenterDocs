@@ -3,8 +3,8 @@ title: What's new in System Center Service Provider Foundation 1801
 description: This article describes the new features and other changes in System Center Service Provider Foundation 1801.
 manager: riyazp
 ms.topic: article
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.prod: system-center
 ms.date: 01/15/2021
 ms.technology: service-provider-foundation
