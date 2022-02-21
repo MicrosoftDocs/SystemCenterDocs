@@ -2,9 +2,9 @@
 description: Provides an overview of how you can scale out a machine tier
 manager: vvithal
 ms.topic: article
-author: JYOTHIRMAISURI
+author: jyothisuri
 ms.prod: system-center
-ms.author: v-jysur
+ms.author: jsuri
 keywords:
 ms.date: 01/22/2018
 title: Scaling Service Management Automation
