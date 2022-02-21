@@ -2,8 +2,8 @@
 description: This article provides information on how to add and configure storage in DPM.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 07/12/2021
