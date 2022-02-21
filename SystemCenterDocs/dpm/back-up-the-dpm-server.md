@@ -2,14 +2,14 @@
 description: This article helps you create a strategy for backing up the DPM server.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
+author: jyothisuri
 ms.prod: system-center
 keywords:
 ms.date: 10/28/2020
 title: Back up the DPM server
 ms.technology: data-protection-manager
 ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f
-ms.author: raynew
+ms.author: jsuri
 ---
 
 # Back up the DPM server
