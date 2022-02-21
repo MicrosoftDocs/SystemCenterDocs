@@ -1,8 +1,8 @@
 ---
 title: Features removed or deprecated in System Center
 description: This topic lists the features and functionality that have been removed or replaced in System Center Operations Manager 1801.
-author: JYOTHIRMAISURI
-ms.author: magoedte
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 01/31/2018
 ms.custom: na
