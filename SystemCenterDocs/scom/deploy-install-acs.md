@@ -2,8 +2,8 @@
 ms.assetid: ed1c51df-2507-4f34-b051-04540896ac17
 title: How to Install an Audit Collection Services ACS Collector and Database
 description: This article describes how to install the Operations Manager Audit Collector and ACS database.
-author: JYOTHIRMAISURI
-ms.author: magoedte
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 02/11/2022
 ms.custom: na
