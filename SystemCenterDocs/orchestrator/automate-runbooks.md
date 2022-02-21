@@ -1,13 +1,13 @@
 ---
 title: Automate IT Operations with Runbooks
 description: Provides an overview of runbook concepts and operations in System Center Orchestrator
-author: rayne-wiselman
+author: jyothisuri
 manager: carmonm
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-ms.author: raynew
+ms.author: jsuri
 ---
 
 
