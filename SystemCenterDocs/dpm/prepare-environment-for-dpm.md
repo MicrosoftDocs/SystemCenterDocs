@@ -2,8 +2,8 @@
 description: This article is a primer for the necessary components to deploy DPM in your environment.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 01/12/2021
