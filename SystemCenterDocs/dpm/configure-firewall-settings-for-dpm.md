@@ -1,9 +1,9 @@
 ---
 title: Configure firewall settings for DPM
 description: This article explains how to configure firewall settings for various DPM installations.
-author: JYOTHIRMAISURI
+author: jyothisuri
 manager: vvithal
-ms.author: v-jysur
+ms.author: jsuri
 ms.date: 11/01/2017
 ms.custom: na
 ms.prod: system-center
