@@ -2,8 +2,8 @@
 description: Provides details on how you can automate operations in your Windows Azure Pack environment with Service Management Automation
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 ms.prod: system-center
 ms.date: 05/08/2018
 title: Automate Windows Azure Pack operations with runbooks
