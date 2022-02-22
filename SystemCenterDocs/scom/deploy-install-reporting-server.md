@@ -2,17 +2,10 @@
 ms.assetid: bc3c9818-6019-4af3-bcaa-990229650c0c
 title: How to Install the Operations Manager Reporting Server
 description: This article describes how to install the Operations Manager Reporting server role.
-<<<<<<< HEAD
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-manager: evansma
-ms.date: 11/29/2021
-=======
 author: jyothisuri
 ms.author: jsuri
 manager: carmonm
 ms.date: 08/25/2020
->>>>>>> 73a7e82ddcf68c0a533d66b4273e8c40205fb9d1
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -45,7 +38,7 @@ You must ensure that your server meets the minimum system requirement for Operat
 
 >[!NOTE]
 >- Operations Manager 2019 UR1 and later supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
->- Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server. 
+>- Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server.
 
 ::: moniker-end
 
@@ -70,16 +63,16 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 ## Install  Reporting Services on NTLM hardened enterprises  
 
-In Operations Manager 2016 and later, if NTLM is disabled as an organization policy, Operation Manager’s reporting services were impacted. For organizations with NTLM disabled, you can select the Reporting Manager **Authentication Type**, as **Windows Negotiate** while installing. NTLM is the default option. 
+In Operations Manager 2016 and later, if NTLM is disabled as an organization policy, Operation Manager’s reporting services were impacted. For organizations with NTLM disabled, you can select the Reporting Manager **Authentication Type**, as **Windows Negotiate** while installing. NTLM is the default option.
 
 >[!Note]
 >*Authentication Type* options are available only when you install the reporting manager on a remote server.  
 
-### Prerequisites to disable NTLM 
+### Prerequisites to disable NTLM
 
-- If SSRS and SQL both installed on remote servers, ensure SDK, SSRS and SQL SPNs are set. 
-- If SSRS is installed on remote server and SQL and Management Server are installed on the same server, SDK and SSRS SPNs are required. 
-- If SQL installed on remote server and SSRS and Management Server are installed on the same server – ensure SQL, SSRS and SDK SPNs are set. 
+- If SSRS and SQL both installed on remote servers, ensure SDK, SSRS and SQL SPNs are set.
+- If SSRS is installed on remote server and SQL and Management Server are installed on the same server, SDK and SSRS SPNs are required.
+- If SQL installed on remote server and SSRS and Management Server are installed on the same server – ensure SQL, SSRS and SDK SPNs are set.
 
 ::: moniker-end
 

@@ -1,13 +1,8 @@
 ---
 title: Import gallery items in SPF
 description: Provides information about importing gallery items into SPF
-<<<<<<< HEAD
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-=======
 author: jyothisuri
 ms.author: jsuri
->>>>>>> 73a7e82ddcf68c0a533d66b4273e8c40205fb9d1
 manager: carmonm
 ms.date: 01/22/2018
 ms.topic: article

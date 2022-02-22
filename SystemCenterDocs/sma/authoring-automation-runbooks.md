@@ -2,13 +2,8 @@
 description: Provides guidance and instructions for creating Service Management Automation runbooks
 manager: carmonm
 ms.topic: reference
-<<<<<<< HEAD
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-=======
 author: jyothisuri
 ms.author: jsuri
->>>>>>> 73a7e82ddcf68c0a533d66b4273e8c40205fb9d1
 ms.prod: system-center
 keywords:
 ms.date: 01/22/2018
