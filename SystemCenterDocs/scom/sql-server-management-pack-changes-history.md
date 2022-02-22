@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: TDzakhov
 ms.author: v-tdzakhov
 manager: vvithal
-ms.date: 2/4/2021
+ms.date: 2/21/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
-## February 2022 - 7.0.35.0 CTP
+## February 2022 - 7.0.36.0 RTM
 
 ### What's New
 
@@ -23,7 +23,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### Bug Fixes
 
-- Fixed an issue with the failing 'MultiValueSpaceHealthCalculator' module on localized operating systems with SQL Server
+- Fixed an issue with the failing 'MultiValueSpaceHealthCalculator' module on localized operating systems where SQL Server is installed
 - Fixed an issue with the failing 'LocalDBEngineDiscovery' module in environments, in which both x64 and x86 versions of SQL Server are installed
 
 ## December 2021 - 7.0.34.0 RTM
