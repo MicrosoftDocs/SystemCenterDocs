@@ -5,8 +5,8 @@ ms.date: 01/22/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ---
 # Apply Pending Service Update activity

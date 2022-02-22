@@ -2,8 +2,8 @@
 ms.assetid: 212a5f25-9711-46b8-a466-775ef846dfc5
 title: Install a Gateway Server
 description: This article describes how to install the Operations Manager Gateway server.
-author: JYOTHIRMAISURI
-ms.author: magoedte
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 03/06/2018
 ms.custom: na, intro-installation

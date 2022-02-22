@@ -2,7 +2,7 @@
 description: This article contains the procedures for backing up and recovery of virtual machines.
 manager: carmonm
 ms.topic: article
-author: JYOTHIRMAISURI
+author: jyothisuri
 ms.prod: system-center
 keywords:
 ms.date: 08/11/2021

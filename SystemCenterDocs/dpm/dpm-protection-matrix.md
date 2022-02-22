@@ -2,7 +2,7 @@
 description: A complete matrix of all workloads, data types, and installations that DPM protects. Applies to DPM 2016, 1801, 1807, 2019 and 2022.
 manager: evansma
 ms.topic: article
-author: JYOTHIRMAISURI
+author: jyothisuri
 ms.prod: system-center
 keywords:
 ms.date: 02/02/2022

@@ -2,8 +2,8 @@
 description: This article explains how to extend the tiered volume in System Center - Data Protection Manager.
 manager:  vvithal
 ms.topic:  article
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
+author:  jyothisuri
+ms.author: jsuri
 ms.prod:  system-center
 keywords:
 ms.date:  11/04/2020

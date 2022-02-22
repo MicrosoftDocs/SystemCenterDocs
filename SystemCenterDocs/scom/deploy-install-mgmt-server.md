@@ -2,10 +2,10 @@
 ms.assetid: dbd26196-14f8-4593-9e4b-5c54ac4edb45
 title: How to Install an Operations Manager Management Server
 description: This article describes how to install an Operations Manager management server.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-manager: evansma
-ms.date: 11/29/2021
+author: jyothisuri
+ms.author: jsuri
+manager: carmonm
+ms.date: 03/06/2018
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -36,7 +36,7 @@ Once you have installed the first management server and created the management g
 ::: moniker range="sc-om-2022"
 
 >[!NOTE]
->You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
+>You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
 
 ::: moniker-end
 

@@ -10,8 +10,8 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 4d2feb46-3f4c-4ed6-adbf-50097f94ea61
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 robots: noindex
 ---

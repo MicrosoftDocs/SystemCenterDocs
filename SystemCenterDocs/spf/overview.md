@@ -1,8 +1,8 @@
 ---
 title: What is Service Provider Foundation?
 description: This article provides a broad overview of Service Provider Foundation
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 04/15/2020
 ms.topic: article

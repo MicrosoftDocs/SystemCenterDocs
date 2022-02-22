@@ -1,8 +1,8 @@
 ---
 title: Automate and invoke runbooks from SPF
 description: Provides information about integrating System Center SPF and SMA.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 01/22/2018
 ms.topic: article

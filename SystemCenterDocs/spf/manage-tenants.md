@@ -1,8 +1,8 @@
 ---
 title: Manage tenants and user roles in SPF
 description: Provides information setting up SPF tenants, and creating self-service tenant roles in VMM
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 01/22/2018
 ms.topic: article

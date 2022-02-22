@@ -1,8 +1,8 @@
 ---
 title: Manage usage metering in SPF
 description: Provides information about setting up usage metering in SPF
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 01/22/2018
 ms.topic: article

@@ -2,8 +2,8 @@
 ms.assetid: 3b14cd1e-ad34-43e0-8139-50cc9bd10789
 title: Upgrade information for System Center Service Management Automation
 description: This article details the upgrade information and procedures for Service Management Automation
-author: JYOTHIRMAISURI
-ms.author: V-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: vvithal
 ms.date: 03/14/2019
 ms.topic: article

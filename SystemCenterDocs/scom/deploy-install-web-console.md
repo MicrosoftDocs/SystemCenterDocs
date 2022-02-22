@@ -2,10 +2,10 @@
 ms.assetid: 8e15d2ef-be27-483d-ad4a-09df62ed6618
 title: How to Install the Operations Manager Web console
 description: This article describes how to install the Web console for System Center Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-manager: evansma
-ms.date: 11/29/2021
+author: jyothisuri
+ms.author: jsuri
+manager: carmonm
+ms.date: 08/25/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -24,7 +24,7 @@ You can install the web console when you install System Center - Operations Mana
 
 ::: moniker range="sc-om-2022"
 
-Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server. 
+Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server.
 
 ::: moniker-end
 

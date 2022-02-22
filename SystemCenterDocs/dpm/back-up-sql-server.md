@@ -2,14 +2,14 @@
 description: You can use DPM to back up and recover SQL Server databases.
 manager: carmonm
 ms.topic: article
-author: JYOTHIRMAISURI
+author: jyothisuri
 ms.prod: system-center
 keywords:
 ms.date: 10/19/2020
 title: Back up SQL Server with DPM
 ms.technology: data-protection-manager
 ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
-ms.author: v-jysur
+ms.author: jsuri
 ---
 
 # Back up SQL Server with DPM
