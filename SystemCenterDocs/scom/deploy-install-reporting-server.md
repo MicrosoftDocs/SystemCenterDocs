@@ -2,10 +2,17 @@
 ms.assetid: bc3c9818-6019-4af3-bcaa-990229650c0c
 title: How to Install the Operations Manager Reporting Server
 description: This article describes how to install the Operations Manager Reporting server role.
+<<<<<<< HEAD
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: evansma
 ms.date: 11/29/2021
+=======
+author: jyothisuri
+ms.author: jsuri
+manager: carmonm
+ms.date: 08/25/2020
+>>>>>>> 73a7e82ddcf68c0a533d66b4273e8c40205fb9d1
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager

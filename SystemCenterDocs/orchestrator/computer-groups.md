@@ -4,8 +4,8 @@ description: This article provides information on how to configure the activitie
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 01/17/2018
 manager: carmonm
 ---

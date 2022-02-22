@@ -2,8 +2,13 @@
 description: Provides an overview of how you can work with integration modules.
 manager: carmonm
 ms.topic: article
+<<<<<<< HEAD
 author: JYOTHIRMAISURI
 ms.author: v-jysur
+=======
+author: jyothisuri
+ms.author: jsuri
+>>>>>>> 73a7e82ddcf68c0a533d66b4273e8c40205fb9d1
 ms.prod: system-center
 ms.date: 05/08/2018
 title: Work with Integration Modules

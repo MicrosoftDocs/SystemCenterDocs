@@ -3,13 +3,13 @@ title: System Center - Data Protection Manager volume to volume migration
 description: This article describes volume to volume migration.
 manager: vvithal
 ms.topic: article
-author: JYOTHIRMAISURI
+author: jyothisuri
 ms.prod: system-center
 ms.date: 10/20/2020
 ms.technology: data-protection-manager
 ms.assetid: 6595b781-554d-4807-b035-d0eccd35deb3
-ms.author: v-jysur
-monikerRange: sc-dpm-2019||sc-dpm-2016||sc-dpm-2022
+ms.author: jsuri
+monikerRange: sc-dpm-2019||sc-dpm-2016
 ms.custom: intro-migration
 ---
 

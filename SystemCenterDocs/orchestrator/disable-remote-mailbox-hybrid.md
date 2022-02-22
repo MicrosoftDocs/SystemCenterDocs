@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: d21a4d11-f5ef-4948-a7bf-e4f58cc87b7f
-author: cfreemanwa
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 # Disable Remote Mailbox (Hybrid)
 

@@ -2,10 +2,17 @@
 ms.assetid: dbd26196-14f8-4593-9e4b-5c54ac4edb45
 title: How to Install an Operations Manager Management Server
 description: This article describes how to install an Operations Manager management server.
+<<<<<<< HEAD
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: evansma
 ms.date: 11/29/2021
+=======
+author: jyothisuri
+ms.author: jsuri
+manager: carmonm
+ms.date: 03/06/2018
+>>>>>>> 73a7e82ddcf68c0a533d66b4273e8c40205fb9d1
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager

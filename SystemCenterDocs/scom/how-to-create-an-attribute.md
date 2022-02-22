@@ -2,8 +2,8 @@
 ms.assetid: d837d304-20ff-4d2a-8071-f1c5664d93dd
 title: Create an Attribute
 description: This article provides information on how to use Create Attribute wizard.
-author: JYOTHIRMAISURI
-ms.author: magoedte
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 11/07/2016
 ms.custom: na

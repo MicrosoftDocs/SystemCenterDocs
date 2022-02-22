@@ -2,8 +2,8 @@
 ms.assetid: ac2e1b48-2f24-44c1-8d06-9405b2db9c26
 title: How to Upgrade a Web Console
 description: This article describes how to upgrade a Web console to the latest release of System Center Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: magoedte
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 01/15/2018
 ms.custom: na

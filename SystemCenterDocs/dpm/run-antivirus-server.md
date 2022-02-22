@@ -3,13 +3,13 @@ title:  Run antivirus software on the DPM server
 description: This article provides the details about running antivirus software on the DPM server.
 manager: vvithal
 ms.topic: article
-author: JYOTHIRMAISURI
+author: jyothisuri
 ms.prod: system-center
 keywords:
 ms.date: 07/09/2020
 ms.technology: data-protection-manager
 ms.assetid: c0f4201b-53f7-45c8-af16-5522d0f10c6e
-ms.author: v-jysur
+ms.author: jsuri
 ---
 
 # Run antivirus software on the DPM server
