@@ -1,13 +1,13 @@
 ---
 title: Feature performance considerations
 description: Provides performance guidance for System Center - Orchestra
-author: rayne-wiselman
-manager: carmonm
+author: jyothisuri
+manager: evansma
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-ms.author: raynew
+ms.author: jsuri
 ---
 
 
