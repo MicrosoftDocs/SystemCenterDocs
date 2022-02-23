@@ -2,9 +2,9 @@
 ms.assetid: 4d983ab4-17dc-4a05-b334-9c2fba69ae82
 title: Work with VMM as a self-service user
 description: This article describes how to work with VMM as a self-service user
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

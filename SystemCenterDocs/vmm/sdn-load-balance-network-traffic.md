@@ -2,9 +2,9 @@
 ms.assetid: 6f0852f2-ba7a-4d99-9c57-f096460b4347
 title: Load balance network traffic in an SDN fabric using VMM
 description: This article describes how to configure load balancing for the internal and external network traffic through a VIP.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-manager: riyazp
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
