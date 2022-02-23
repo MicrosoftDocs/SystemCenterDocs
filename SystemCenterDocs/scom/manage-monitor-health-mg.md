@@ -1,9 +1,9 @@
 ---
 title: Monitoring the Health of the Management Group
 description: This topic provides a high level overview of the supported monitoring scenarios with System Center Operations Manager. Operations Manager introduces a new dashboard view that provides a comprehensive picture of the health of your management group.
-author: JYOTHIRMAISURI
-manager: vvithal
-ms.author: v-jysur
+author: jyothisuri
+manager: evansma
+ms.author: jsuri
 ms.date: 01/08/2018
 ms.custom: na
 ms.prod: system-center

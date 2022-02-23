@@ -2,9 +2,9 @@
 ms.assetid: bcce1331-7f00-413c-ba3d-25f03cc63741
 title: Configuring datacenter dashboard in Management Pack for SQL Server Dashboards
 description: This article explains how to create and configure datacenter dashboards
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

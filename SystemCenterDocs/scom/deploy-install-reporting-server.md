@@ -4,7 +4,7 @@ title: How to Install the Operations Manager Reporting Server
 description: This article describes how to install the Operations Manager Reporting server role.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 08/25/2020
 ms.custom: na
 ms.prod: system-center

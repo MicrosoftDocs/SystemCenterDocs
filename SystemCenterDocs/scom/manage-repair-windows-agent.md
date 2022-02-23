@@ -2,9 +2,9 @@
 ms.assetid:
 title: How to Repair the Windows Agent
 description: This article describes how to repair the installation of the Operations Manager agent on Windows computers.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 07/20/2018
 ms.custom: na
 ms.prod: system-center

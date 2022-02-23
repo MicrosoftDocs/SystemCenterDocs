@@ -4,7 +4,7 @@ title: The Fabric Monitoring Diagram View displaying health states of cloud envi
 description: This article provides an overview of the Fabric Monitoring diagram view
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: evansma
 ms.date: 06/27/2019
 ms.custom: na
 ms.prod: system-center

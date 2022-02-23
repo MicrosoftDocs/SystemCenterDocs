@@ -4,7 +4,7 @@ title: Enable Service Log on
 description: This article provides information about how to enable service log for Run As accounts in System Center 2019 - Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: evansma
 ms.date: 03/14/2019
 ms.custom: na
 ms.prod: system-center

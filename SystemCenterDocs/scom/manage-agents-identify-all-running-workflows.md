@@ -1,9 +1,9 @@
 ---
 title: How to View All Rules and Monitors Running on an Agent-Managed Computer
 description: This article describes how to view what workflows are running on an agent-managed computer in Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center

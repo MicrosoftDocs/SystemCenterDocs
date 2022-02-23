@@ -4,7 +4,7 @@ title: Install a Gateway Server
 description: This article describes how to install the Operations Manager Gateway server.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 03/06/2018
 ms.custom: na, intro-installation
 ms.prod: system-center

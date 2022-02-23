@@ -2,9 +2,9 @@
 ms.assetid: 81cb4616-6574-471f-a939-d05198d0d65c
 title: Control Access by Using the Health Service Lockdown Tool in Operations Manager
 description: This article describes how to configure the Operations Manager agent Health Service with restricted privileges.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 10/23/2018
 ms.custom: na
 ms.prod: system-center

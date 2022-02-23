@@ -4,7 +4,7 @@ title: How to Upgrade a Gateway Server
 description: This article describes how to upgrade a Gateway server to the latest release of System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 04/09/2020
 ms.custom: na
 ms.prod: system-center
