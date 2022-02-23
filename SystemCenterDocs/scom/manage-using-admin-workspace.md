@@ -1,9 +1,9 @@
 ---
 title: Using the Administration workspace in Operations Manager
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/03/2017
 ms.custom: na
 ms.prod: system-center

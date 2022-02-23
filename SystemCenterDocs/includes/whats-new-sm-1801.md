@@ -1,10 +1,10 @@
 ---
 title:  include file
 description: include file to describes the new features and other changes in System Center 1801 - Service Manager.
-manager:  riyazp
+manager: ievansma
 ms.topic:  include
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 05/08/2018

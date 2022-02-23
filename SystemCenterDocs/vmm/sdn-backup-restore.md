@@ -2,9 +2,9 @@
 ms.assetid: 1a71c7fa-faa3-4d0a-a8ef-d022c803f298
 title: Back up and restore a software defined network infrastructure by using VMM 2016
 description: This article describes the procedure to back up and restore the software defined infrastructure.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-manager: riyazp
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 12/21/2017
 ms.topic: article
 ms.prod: system-center

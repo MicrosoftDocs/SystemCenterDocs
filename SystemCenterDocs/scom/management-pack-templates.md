@@ -2,9 +2,9 @@
 ms.assetid: 61149e13-9249-493b-adb0-6997dc8dd6b1
 title: Management pack templates in Operations Manager management pack
 description: This article provides an overview of management pack templates
-author: v-anesh
-ms.author: v-anesh
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center

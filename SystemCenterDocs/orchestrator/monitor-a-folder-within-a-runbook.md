@@ -9,10 +9,10 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9be981fc-6708-4d00-a42a-2a15f0addbf0
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 ms.date: 5/10/2017
-manager: carmonm
+manager: evansma
 ---
 
 # Example Runbook: Monitor a folder with a runbook

@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: a2d782b3-10c2-453c-bb23-47ff4f7b0047
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 
 # Get Computer

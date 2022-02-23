@@ -15,9 +15,9 @@ applies_to:
   - "System Center 2012 R2 Orchestrator"
 ms.assetid: bc59b069-7bf0-4417-8f8b-d6fac34c8691
 caps.latest.revision: 15
-author: "bwren"
-ms.author: "bwren"
-manager: "cfreeman"
+author: "jyothisuri"
+ms.author: "jsuri"
+manager: "evansma"
 ---
 # Restart System
 

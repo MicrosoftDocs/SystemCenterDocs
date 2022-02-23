@@ -1,9 +1,9 @@
 ---
 title: Impact of Closing an Alert
 description: This article describes the different behavior between closing an alert from a monitor from an alert rule in the Operations Manager console.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-ms.manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+ms.manager: evansma
 ms.date: 05/26/2020
 ms.custom: na
 ms.prod: system-center

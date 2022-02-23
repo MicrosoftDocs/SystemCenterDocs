@@ -2,9 +2,9 @@
 ms.assetid: 4be928cd-4a38-4f73-9d5f-87d438db2d4b
 title: Authentication and Data Encryption in Operations Manager
 description: This article provides design guidance explaining how secure authentication occurs with Operations Manager and options available.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: cfreemanwa
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center

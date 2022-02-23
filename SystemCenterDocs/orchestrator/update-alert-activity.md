@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ba537978-bae7-4188-8c49-c380c7fc4adc
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 robots: noindex
 ---
 # Update Alert Activity

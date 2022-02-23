@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 8fe4ab70-2443-4fc6-a076-9405fd3ea2cf
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 robots: noindex
 ---
 # Monitor Entry

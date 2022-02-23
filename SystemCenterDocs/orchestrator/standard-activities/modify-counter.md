@@ -15,9 +15,9 @@ applies_to:
   - "System Center 2012 R2 Orchestrator"
 ms.assetid: a2c706ca-506b-4d9d-96e6-f17ac48e8fc1
 caps.latest.revision: 11
-author: "bwren"
-ms.author: "bwren"
-manager: "cfreeman"
+author: "jyothisuri"
+ms.author: "jsuri"
+manager: "evansma"
 ---
 # Modify Counter
 

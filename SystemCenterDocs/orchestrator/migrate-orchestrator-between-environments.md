@@ -4,10 +4,10 @@ description: Describes how you can automatically move Orchestrator between envir
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 ms.date: 12/23/2020
-manager: carmonm
+manager: evansma
 ms.custom: intro-migration
 ---
 

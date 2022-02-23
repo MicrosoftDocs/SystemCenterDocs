@@ -2,10 +2,10 @@
 ms.assetid: 2973edd7-293f-496e-b4db-405d6438bb04
 title: Features and enhancements in Management Pack for SQL Server
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
-ms.date: 2/21/2021
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
+ms.date: 2/4/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager

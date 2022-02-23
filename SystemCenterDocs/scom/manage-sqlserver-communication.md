@@ -2,9 +2,9 @@
 ms.assetid: 61bb5a83-479f-4cc1-b67a-9cd02fc91d2f
 title: How to Configure Operations Manager to Communicate with SQL Server
 description: This article describes how to reconfigure Operations Manager if you change the SQL Server configuration or SQL Server instance hosting its databases.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/25/2020
 ms.custom: na
 ms.prod: system-center

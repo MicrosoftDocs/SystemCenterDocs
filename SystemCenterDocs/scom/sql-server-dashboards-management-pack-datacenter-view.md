@@ -2,9 +2,9 @@
 ms.assetid: 600eb684-a98b-42a6-957b-d43641415b76
 title: Datacenter view in Management Pack for SQL Server Dashboards
 description: This article explains datacenter view
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

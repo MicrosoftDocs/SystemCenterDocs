@@ -4,7 +4,7 @@ title: How to Install the Operations Manager Web console
 description: This article describes how to install the Web console for System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 08/25/2020
 ms.custom: na
 ms.prod: system-center

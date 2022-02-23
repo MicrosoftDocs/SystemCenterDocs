@@ -15,9 +15,9 @@ applies_to:
   - "System Center 2012 R2 Orchestrator"
 ms.assetid: e9baa069-6d81-43bc-8781-bdcc6d7ca5d3
 caps.latest.revision: 18
-author: "bwren"
-ms.author: "bwren"
-manager: "cfreeman"
+author: "jyothisuri"
+ms.author: "jsuri"
+manager: "evansma"
 ---
 # Monitor Date/Time
 

@@ -15,9 +15,9 @@ applies_to:
   - "System Center 2012 R2 Orchestrator"
 ms.assetid: 83c535d6-c827-4107-9b39-87d5716c6663
 caps.latest.revision: 13
-author: "bwren"
-ms.author: "bwren"
-manager: "cfreeman"
+author: "jyothisuri"
+ms.author: "jsuri"
+manager: "evansma"
 ---
 # Move File
 

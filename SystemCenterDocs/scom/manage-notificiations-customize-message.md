@@ -1,9 +1,9 @@
 ---
 title: How to Customize Message Content for Notifications
 description: This article describes how to customize the notification messages delivered by Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center

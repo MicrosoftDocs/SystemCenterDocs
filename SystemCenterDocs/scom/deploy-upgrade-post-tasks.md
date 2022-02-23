@@ -4,7 +4,7 @@ title: Post-Upgrade Tasks When Upgrading to System Center Operations Manager
 description: This guide provides the post-upgrade tasks you must perform after upgrading to Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 03/23/2020
 ms.custom: na
 ms.prod: system-center

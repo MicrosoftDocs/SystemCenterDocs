@@ -15,9 +15,9 @@ applies_to:
   - "System Center 2012 R2 Orchestrator"
 ms.assetid: 8fdf738a-6dc7-4173-a940-406d9cb81729
 caps.latest.revision: 12
-author: "bwren"
-ms.author: "bwren"
-manager: "cfreeman"
+author: "jyothisuri"
+ms.author: "jsuri"
+manager: "evansma"
 ---
 # Create folder activity
 

@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: e7f27148-70cc-498d-b134-8b7e8c4a4ca9
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 
 # Get VM

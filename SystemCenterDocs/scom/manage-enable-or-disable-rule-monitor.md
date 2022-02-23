@@ -2,9 +2,9 @@
 ms.assetid: 954164df-4d78-45a7-868e-a7639747b761
 title: How to Enable or Disable a Rule or Monitor
 description: This topic provides specific instructions on how to enable or enable Management Pack monitoring rules and monitors.
-author: JYOTHIRMAISURI
-manager: vvithal
-ms.author: v-jysur
+author: jyothisuri
+manager: evansma
+ms.author: jsuri
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center

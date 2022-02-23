@@ -15,9 +15,9 @@ applies_to:
   - "System Center 2012 R2 Orchestrator"
 ms.assetid: d1841bbc-7c36-4f3c-983f-db7c74a56cd5
 caps.latest.revision: 5
-author: "bwren"
-ms.author: "bwren"
-manager: "cfreeman"
+author: "jyothisuri"
+ms.author: "jsuri"
+manager: "evansma"
 ---
 # Connect/Disconnect Dial-up
 

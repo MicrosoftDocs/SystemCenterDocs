@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: db5fcc47-994c-4e79-b3b2-78c85919ae9d
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 
 # Get Storage Account Properties

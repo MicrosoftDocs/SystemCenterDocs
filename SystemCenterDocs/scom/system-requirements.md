@@ -2,9 +2,9 @@
 ms.assetid: 845da422-72bc-4d0f-914b-c08d9e786636
 title: System requirements for System Center Operations Manager
 description: This article describes the software and hardware system requirements for System Center Operations Manager
-author: JYOTHIRMAISURI
-ms.author: V-jysur
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 12/16/2020
 ms.topic: article
 ms.prod: system-center

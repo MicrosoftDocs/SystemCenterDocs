@@ -2,9 +2,9 @@
 ms.assetid: 6361dd76-0c8a-4575-9b6a-43916408f448
 title: include file
 description: include file with notes on end of support information for 1801 and 1807, notes for use in all articles under 1801 and 1807 monikers
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
-manager:  vvithal
+author:  jyothisuri
+ms.author: jsuri
+manager:  evansma
 ms.date:  08/18/2020
 ms.topic:  include
 ms.prod:  system-center

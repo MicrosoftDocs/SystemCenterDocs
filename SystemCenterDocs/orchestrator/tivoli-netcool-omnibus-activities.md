@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9438aacb-3900-4aaf-8cd4-4b73f771c15a
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 robots: noindex
 ---
 # IBM Tivoli Netcool OMNIbus Activities

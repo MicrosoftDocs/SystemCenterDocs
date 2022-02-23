@@ -1,9 +1,9 @@
 ---
 ms.assetid: c5700b3d-d4a2-494c-9c37-de5bed7a0b5e
 title:  include file  
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
-manager:  vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date:  03/14/2019
 ms.topic:  include
 ms.prod:  system center

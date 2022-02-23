@@ -2,9 +2,9 @@
 ms.assetid: ac25266c-9def-404d-95dc-6d037fb710e4
 title: include file
 description: include file to summarize the release notes for VMM 2019.
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
-manager:  vvithal
+author:  jyothisuri
+ms.author: jsuri
+manager:  evansma
 ms.date:  08/04/2019
 ms.topic:  include
 ms.prod:  system-center

@@ -16,9 +16,9 @@ applies_to:
   - "System Center 2012 R2 Orchestrator"
 ms.assetid: 441c0d81-a1d5-4218-bbe8-54184f1deb62
 caps.latest.revision: 6
-author: "bwren"
-ms.author: "bwren"
-manager: "cfreeman"
+author: "jyothisuri"
+ms.author: "jsuri"
+manager: "evansma"
 ---
 # System
 

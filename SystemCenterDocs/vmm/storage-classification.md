@@ -2,9 +2,9 @@
 ms.assetid: 03be2a03-3c30-418f-8c5c-169744ac864f
 title: Set up storage classifications in the VMM 2016 fabric
 description: This article describes how to set up storage classifications in the VMM fabric
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

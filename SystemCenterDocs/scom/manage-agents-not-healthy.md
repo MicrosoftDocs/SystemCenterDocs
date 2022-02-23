@@ -1,9 +1,9 @@
 ---
 title: Not Monitored and Gray Agents
 description: This article describes how Operations Manager detects and reports when an agent isn't communicating and reporting monitoring data as expected.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center

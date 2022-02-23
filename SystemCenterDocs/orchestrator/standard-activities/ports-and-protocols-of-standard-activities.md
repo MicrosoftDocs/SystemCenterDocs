@@ -9,9 +9,9 @@ ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: reference
-author: bwren
-ms.author: bwren
-manager: cfreeman
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 # Ports and Protocols of Standard Activities
 

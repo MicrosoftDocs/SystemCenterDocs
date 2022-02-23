@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ad8a97f1-9c63-4824-890d-02af0021115b
 caps.latest.revision: 29
-author: "bwren"
-ms.author: "bwren"
-manager: "cfreeman"
+author: "jyothisuri"
+ms.author: "jsuri"
+manager: "evansma"
 ---
 # Run .Net Script
 

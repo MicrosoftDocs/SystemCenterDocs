@@ -2,9 +2,9 @@
 ms.assetid: 5354d214-c317-47e9-b1dc-6108885ea832
 title: Add profiles to the VMM library
 description: This article provides guidance for adding profiles to the library in the VMM compute fabric
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

@@ -1,13 +1,13 @@
 ---
 title: Orchestrator Integration Toolkit Command Line Activity Wizard
 description: This article provides details about the Orchestrator Integration Toolkit Command Line Activity Wizard.
-author: rayne-wiselman
-manager: carmonm
+author: jyothisuri
+manager: evansma
 ms.date: 02/02/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
-ms.author: raynew
+ms.author: jsuri
 ---
 
 # Command Line Activity Wizard

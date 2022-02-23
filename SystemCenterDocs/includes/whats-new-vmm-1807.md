@@ -2,9 +2,9 @@
 ms.assetid: fc72f285-46d9-4a8f-b5e9-187bb6baf781
 title: include file
 description: include file to detail the new features in virtual machine manager 1807.
-author:  JYOTHIRMAISURI
-ms.author: V-jysur
-manager:  vvithal
+author:  jyothisuri
+ms.author: jsuri
+manager:  evansma
 ms.date:  07/24/2018
 ms.topic:  include
 ms.prod:  system-center-2016

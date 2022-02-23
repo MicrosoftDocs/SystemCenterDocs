@@ -2,9 +2,9 @@
 ms.assetid: ab2991fd-8228-4afc-89c3-a380129d4a84
 title:  Notification Action Account
 description: This article provides information on how to create and configure the notification action account.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 04/30/2019
 ms.custom: na
 ms.prod: system-center

@@ -2,9 +2,9 @@
 ms.assetid: a20cc9dc-04d8-436a-a798-4073c30fefe6
 title: include file
 description: include article to detail the system requirements for VMM 2019
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
-manager:  vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date:  03/30/2021
 ms.topic:  include
 ms.prod:  system-center
