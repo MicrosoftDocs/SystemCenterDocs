@@ -4,7 +4,7 @@ title: Favorite reports in Web console in System Center Operation Manager
 description: This article describes about Favorite reports in Web console
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: evansma
 ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center

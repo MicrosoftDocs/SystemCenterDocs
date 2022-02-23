@@ -4,7 +4,7 @@ title: How to Upgrade a Management Server - Upgrading a Distributed Management G
 description: This article describes how to upgrade a management server in a distributed deployment of Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 01/11/2018
 ms.custom: na
 ms.prod: system-center

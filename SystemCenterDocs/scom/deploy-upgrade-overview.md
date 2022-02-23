@@ -4,7 +4,7 @@ title: Upgrading System Center Operations Manager
 description: This guide provides information on how to upgrade to Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 03/14/2019
 ms.custom: na
 ms.prod: system-center

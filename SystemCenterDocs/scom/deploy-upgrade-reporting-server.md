@@ -4,7 +4,7 @@ title: How to Upgrade a Reporting Server
 description: This article describes how to upgrade the Reporting server to the latest version of System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 03/14/2018
 ms.custom: na
 ms.prod: system-center

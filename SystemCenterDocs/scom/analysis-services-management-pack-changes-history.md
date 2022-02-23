@@ -4,7 +4,7 @@ title: Features and enhancements in Management Pack for SQL Server Analysis Serv
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Analysis Services
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: evansma
 ms.date: 12/20/2021
 ms.topic: article
 ms.prod: system-center

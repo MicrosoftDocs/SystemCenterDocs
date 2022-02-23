@@ -4,7 +4,7 @@ title: Fabric Monitoring in System Center Operation Manager
 description: This article provides an overview of fabric monitoring
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: evansma
 ms.date: 04/30/2020
 ms.custom: na
 ms.prod: system-center

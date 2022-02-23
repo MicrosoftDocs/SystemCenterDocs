@@ -1,9 +1,9 @@
 ---
 title: Standard Views in Operations Manager
 description: This article describes the standard views that are included in a default installation of Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-ms.manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+ms.manager: evansma
 ms.date: 03/28/2018
 ms.custom: na
 ms.prod: system-center

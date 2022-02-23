@@ -4,7 +4,7 @@ title: How to Upgrade Agents in a Parallel Deployment
 description: This article provides guidance with upgrading agents when planning a side-by-side migration to Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 01/11/2018
 ms.custom: na
 ms.prod: system-center
