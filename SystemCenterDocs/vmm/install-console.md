@@ -2,9 +2,9 @@
 ms.assetid: 857ab713-df3e-4744-aac9-e057efc0fce7
 title: Install the VMM console
 description: This article provides installation instructions for the VMM console
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 05/06/2018
 ms.topic: article
 ms.prod: system-center

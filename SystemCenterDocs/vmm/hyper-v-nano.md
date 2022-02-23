@@ -2,9 +2,9 @@
 ms.assetid: e76baa8d-7756-44e7-b887-e622e85d8006
 title: Managing Nano server as a Hyper-V host or a VM in VMM
 description: This article describes how to deploy and manage Nano server-based hosts & VMs in VMM
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: system-center
