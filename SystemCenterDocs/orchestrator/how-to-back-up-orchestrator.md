@@ -5,9 +5,9 @@ ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 
 # Back up Orchestrator

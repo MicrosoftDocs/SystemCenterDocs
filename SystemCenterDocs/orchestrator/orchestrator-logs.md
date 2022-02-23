@@ -9,10 +9,10 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 4c06b17d-fd0d-4a98-8013-f5e5954606ed
-ms.author: raynew
+ms.author: jsuri
 ms.date: 10/12/2016
-author: JYOTHIRMAISURI
-manager: carmonm
+author: jyothisuri
+manager: evansma
 ---
 # Orchestrator logs
 
