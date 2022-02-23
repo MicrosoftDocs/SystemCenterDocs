@@ -1,9 +1,9 @@
 ---
 description: include file to detail the release notes for Service Manager 1807
-manager:  vvithal
+manager: evansma
 ms.topic: include
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.prod:  system-center-threshold
 ms.technology: service-manager
 keywords:

@@ -2,9 +2,9 @@
 ms.assetid: b329876f-68f3-4087-beb3-076c1ad84f49
 title: include file
 description: include file to describe the new features in virtual machine manager 2016
-author:  rayne-wiselman
-ms.author: raynew
-manager:  carmonm
+author: jyothisuri
+ms.author: jsuri
+manager:  evansma
 ms.date:  04/24/2020
 ms.topic:  include
 ms.prod:  system-center-2016

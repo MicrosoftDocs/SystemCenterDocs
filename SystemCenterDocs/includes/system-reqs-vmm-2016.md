@@ -2,9 +2,9 @@
 ms.assetid: 2a758506-7d92-4bb7-9b74-61e206ed6203
 title: include file
 description: include file to provide information about system requirements for VMM 2016
-author:  rayne-wiselman
-ms.author: raynew
-manager:  carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date:  07/27/2018
 ms.topic: include
 ms.prod:  system-center-threshold

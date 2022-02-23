@@ -2,9 +2,9 @@
 ms.assetid: d15240cb-f087-4641-a65d-b0b48469f208
 title: include file
 description: include file to describe the new features in operations manager 1801
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 12/21/2018
 ms.prod: system-center
 monikerRange: 'sc-om-1801'

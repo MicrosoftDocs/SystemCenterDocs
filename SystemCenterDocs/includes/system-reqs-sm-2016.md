@@ -1,10 +1,10 @@
 ---
 title: include file
-manager: carmonm
+manager: evansma
 description: include file to describe the system requirements for Service Manager 2016.
 ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/08/2021
 ms.technology: service-manager
 ms.topic: include
