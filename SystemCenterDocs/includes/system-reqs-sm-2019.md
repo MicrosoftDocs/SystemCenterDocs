@@ -1,11 +1,11 @@
 ---
 title: include file
-manager: vvithal
+manager: evansma
 description: include file to describe the hardware, software and other system requirements  Service Manager 2019.
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na

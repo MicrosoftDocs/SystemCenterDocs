@@ -1,9 +1,9 @@
 ---
 title: System Center 2019 - Operations Manager Release Build Versions
 description: Include file that shows the list of release builds for System Center 2019 - Operations Manager.
-author: v-anesh
-ms.author: v-anesh
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 12/13/2021
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26

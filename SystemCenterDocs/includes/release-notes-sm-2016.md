@@ -1,9 +1,9 @@
 ---
 description: include file to detail the release notes for System Center 2016 - Service Manager
-manager:  carmonm
+manager: evansma
 ms.topic: include
-author:  bandersmsft
-ms.author: banders
+author: jyothisuri
+ms.author: jsuri
 ms.prod:  system-center-threshold
 ms.technology: service-manager
 keywords:

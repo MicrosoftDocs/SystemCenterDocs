@@ -1,9 +1,9 @@
 ---
 title: include file
 description: include file to provide information about how to upgrade to System Center Service Provider Foundation (SPF) 1801 from a previous version.
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
-manager:  vvithal
+author: jyothisuri
+ms.author: jsuri
+manager:  evansma
 ms.date:  06/14/2018
 ms.topic: include
 ms.prod:  system-center-threshold

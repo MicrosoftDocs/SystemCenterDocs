@@ -1,8 +1,8 @@
 ---
 description: include file to describe the process to upgrade Service Management Automation in System Center 2016.
-manager:  cfreemanwa
+manager: evansma
 ms.topic:  include
-author:  bwren
+author: jyothisuri
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 05/31/2018
