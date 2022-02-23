@@ -10,9 +10,9 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0b0304df-364d-4f75-b9d5-6b3ddfea6bef
 ms.date: 10/12/2016
-author: rayne-wiselman
-manager: carmonm
-ms.author: raynew
+author: jyothisuri
+manager: jsuri
+ms.author: evansma
 ---
 # Runbook permissions
 

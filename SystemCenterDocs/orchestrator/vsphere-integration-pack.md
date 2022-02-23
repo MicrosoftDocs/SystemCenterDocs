@@ -5,9 +5,9 @@ ms.date: 04/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 # VMware vSphere integration pack
 

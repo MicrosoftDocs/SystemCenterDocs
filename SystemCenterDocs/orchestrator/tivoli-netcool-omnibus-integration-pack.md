@@ -10,9 +10,9 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dcdd6577-1783-4f61-9aae-dd4c590bb2e3
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 robots: noindex
 ---
 # IBM Tivoli Netcool OMNIbus Integration Pack for System Center  - Orchestrator
