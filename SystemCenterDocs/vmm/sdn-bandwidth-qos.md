@@ -2,9 +2,9 @@
 ms.assetid: f993ce68-4b19-4d10-9ebd-dc1e6261cc4e
 title: Control SDN virtual network bandwidth with QoS
 description: This article provides information about how to configure SDN QoS by using VMM.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-manager: riyazp
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

@@ -2,9 +2,9 @@
 ms.assetid: f0f2b1aa-d9a3-4044-b419-be868da35ec9
 title: Manage VMM Telemetry settings
 description: This article provides information about how to turn off/on telemetry in system center VMM.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 04/13/2018
 ms.topic: article
 ms.prod: system-center

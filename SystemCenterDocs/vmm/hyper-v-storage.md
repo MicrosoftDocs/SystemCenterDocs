@@ -2,9 +2,9 @@
 ms.assetid: 0cb44190-98ff-47d8-a53e-b199895bc410
 title: Add storage to Hyper-V hosts and clusters
 description: This article provides information to add and allocate storage to Hyper-V hosts, clusters and configure storage for a Hyper-V cluster.
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
