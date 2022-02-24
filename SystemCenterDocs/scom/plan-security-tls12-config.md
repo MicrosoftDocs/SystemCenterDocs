@@ -2,9 +2,9 @@
 ms.assetid:
 title: Implement TLS 1.2 for Operations Manager
 description: This article describes how to configure Transport Layer Security (TLS) 1.2 for System Center Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 02/17/2021
 ms.custom: na
 ms.prod: system-center
@@ -27,7 +27,7 @@ This topic describes how to enable Transport Layer Security (TLS) protocol versi
 > 1.	TLS version 1.2
 > 2.	TLS version 1.1
 > 3.	TLS version 1.0
-> 
+>
 > The [Schannel SSP](/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
 
 
@@ -106,7 +106,7 @@ foreach ($Protocol in $ProtocolList)
 	{
 		$currentRegPath = $registryPath + $Protocol + "\" + $key
 		Write-Output "Current Registry Path: `"$currentRegPath`""
-		
+
 		if (!(Test-Path $currentRegPath))
 		{
 			Write-Output " `'$key`' not found: Creating new Registry Key"
@@ -191,7 +191,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 
          ```
          Windows Registry Editor Version 5.00
-         
+
         [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
         "OpsMgrAC"="ODBC Driver 11 for SQL Server"
 
@@ -205,7 +205,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 
         ```
         Windows Registry Editor Version 5.00
-        
+
         [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
         "OpsMgrAC"="ODBC Driver 13 for SQL Server"
 

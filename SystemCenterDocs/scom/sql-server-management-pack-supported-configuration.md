@@ -2,9 +2,9 @@
 ms.assetid: 300c1177-469a-486e-8352-eea84cf8fdf8
 title: Scope and supported configuration in Management Pack for SQL Server
 description: This article explains the scope and supported configuration for Management Pack for SQL Server
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 9/24/2021
 ms.topic: article
 ms.prod: system-center
@@ -52,7 +52,7 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
   - [Not supported] Replication
 
     Use dedicated management packs for SQL Server Replication to monitor this feature.
-  
+
   - [Not supported] Mirroring
   - [Not supported] Domain-independent Availability Groups
   - [Not supported] Workgroup Cluster Availability Groups
@@ -83,7 +83,7 @@ Management Pack for SQL Server supports the following versions of System Center 
 Management Pack for SQL Server supports the following monitoring modes:
 
 - **Agent monitoring mode**
-  
+
   Supported for SQL Server deployments on Windows.
 
 - **Agentless monitoring mode**
@@ -93,7 +93,7 @@ Management Pack for SQL Server supports the following monitoring modes:
 - **Mixed monitoring mode**
 
   Supported for SQL Server deployments on Windows.
-  
+
 For more information about these modes, see [Monitoring Modes](sql-server-management-pack-monitoring-modes.md).
 
 ## Management Groups

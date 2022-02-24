@@ -2,9 +2,9 @@
 ms.assetid: 7e0ce57d-1b20-4412-a14e-941b4264f849
 title: Monitoring configuration in Management Pack for Azure SQL Managed Instance
 description: This article explains the monitoring configuration in Management Pack for Azure SQL Managed Instance
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/10/2021
 ms.topic: article
 ms.prod: system-center
@@ -110,8 +110,8 @@ The following is a complete list of securables that are checked by the monitor t
 
 Database status monitoring is intended to check the database status as reported by the SQL Managed Instance. Status check is done by running a query against the master database of the Managed Instance that returns the database state. If you receive an alert from this monitor, an action is required in order to bring the database back to an operational state.
 
-All database states except the ONLINE one will result in an unhealthy monitor state. The following table defines the database states. 
-  
+All database states except the ONLINE one will result in an unhealthy monitor state. The following table defines the database states.
+
 |State|Definition|  
 |-----------|----------------|  
 |ONLINE|Database is available for access. The primary filegroup is online, although the undo phase of recovery may not have been completed.|  
@@ -128,7 +128,7 @@ For more information, see [Database States](/sql/relational-databases/databases/
 
 Management Pack for Azure SQL Managed Instance utilizes a monitor that checks the replication status of the primary and secondary databases located in an auto-failover group.
 
-The monitor reports an unhealthy state, which indicates that the secondary database is not transactionally consistent and is not being constantly synchronized with the primary database. 
+The monitor reports an unhealthy state, which indicates that the secondary database is not transactionally consistent and is not being constantly synchronized with the primary database.
 
 To verify the replication status, the management pack uses the 'sys.dm_hadr_fabric_continuous_copy_status' DVM. Based on the DVM replication states, the monitor changes its health state accordingly.
 

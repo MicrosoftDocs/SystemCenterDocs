@@ -2,9 +2,9 @@
 ms.assetid: 8054768a-964c-40fc-ad80-00b2b08fc20d
 title: Set up logical networks in the VMM fabric
 description: This article describes how to set up logical networks in the VMM fabric
-author: JYOTHIRMAISURI
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

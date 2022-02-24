@@ -2,9 +2,9 @@
 ms.assetid:
 title: Log file monitoring in System Center Operations Manager
 description: This article provides an overview of the Linux log file monitoring in System Center Operations Manager
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 04/02/2020
 ms.custom: na
 ms.prod: system-center

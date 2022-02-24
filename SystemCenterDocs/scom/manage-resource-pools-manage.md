@@ -2,9 +2,9 @@
 ms.assetid: e598989d-0aa8-4eb4-b5f7-db27d2beb8a0
 title: How to Manage Resource Pools
 description: This article describes how to manage and configure resource pools in Operations Manager 2016.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: cfreemanwa
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center

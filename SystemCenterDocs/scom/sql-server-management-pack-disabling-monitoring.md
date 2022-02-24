@@ -2,9 +2,9 @@
 ms.assetid: cddb1bfe-0eff-4417-ab61-e0b2da55c5ed
 title: Disabling monitoring of specified SQL Servers and databases in Management Pack for SQL Server
 description: This section explains how to disable monitoring of SQL Servers and Databases
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
@@ -69,4 +69,3 @@ Use commas to separate database names and asterisks to replace one or more chara
 |sales_dbnotmon|Monitored|
 
 If you have \* (asterisk) in the list as a database name (for example, \*temp*, \*, \*dev* or \*temp,*), it disables monitoring of any database.
-

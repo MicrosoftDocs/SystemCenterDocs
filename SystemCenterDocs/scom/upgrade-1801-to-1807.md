@@ -2,9 +2,9 @@
 ms.assetid:
 title: How to upgrade to Operations Manager version 1807
 description: This article describes how to perform an upgrade from System Center Operations Manager version 1801 to 1807.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 08/12/2019
 ms.custom: na
 ms.prod: system-center

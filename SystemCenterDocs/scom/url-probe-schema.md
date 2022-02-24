@@ -2,9 +2,9 @@
 ms.assetid: 9332f5fb-b26f-4d05-9cc6-c13727cd5967
 title:  Microsoft.SystemCenter.WebApplication.UrlProbe
 description: This article details the schema for the System Center Operations Manager URL probe module.
-author: JYOTHIRMAISURI
-ms.author: V-jysur
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center

@@ -2,9 +2,9 @@
 ms.assetid: e2581377-1e74-49c1-b02f-1fd245ccd478
 title: Create VM templates using VMM 2016 and Windows Azure Pack
 description: This article describes how to create VM role templates that can be used by tenants
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

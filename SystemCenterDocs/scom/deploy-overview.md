@@ -4,7 +4,7 @@ title: Deploying System Center Operations Manager
 description: This article provides a high-level overview of what preparations you should make before deploying Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 07/27/2018
 ms.custom: na, intro-deployment
 ms.prod: system-center

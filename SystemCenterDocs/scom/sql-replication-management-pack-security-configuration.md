@@ -2,9 +2,9 @@
 ms.assetid: f79efcef-1dae-4a9a-a079-f6e8378070f9
 title: Security configuration in Management Pack for SQL Server Replication
 description: This article explains security configuration in Management Pack for SQL Server Replication
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
@@ -31,14 +31,14 @@ To configure low-privilege monitoring, in addition to the steps described in [Lo
 2. Create the **SQLMPLowPriv** user in each user database and **master**, **msdb** and **model** databases.
 
 3. Grant the **SQLMPLowPriv** user the following permissions on both the **Distributor** and the **Publisher** SQL Server Replication roles:
-  
+
     ```SQL
     USE [msdb]
     GO
     GRANT SELECT ON [dbo].[MSdistpublishers] TO [SQLMPLowPriv]
     GRANT EXECUTE ON [dbo].[agent_datetime] TO [SQLMPLowPriv]
     ```
-  
+
 4. Grant the **SQLMPLowPriv** user the following permissions on the **Subscriber** SQL Server Replication role:
 
     ```SQL

@@ -1,9 +1,9 @@
 ---
 title: Subscribing to Alert Notifications
 description: This article describes the alerts that you can generate and notify individuals through email, instant messaging, and text messages.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: cfreemanwa
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center

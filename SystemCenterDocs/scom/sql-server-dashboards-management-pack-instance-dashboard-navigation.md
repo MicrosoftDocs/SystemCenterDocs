@@ -1,10 +1,10 @@
 ---
 ms.assetid: 1c12cdd4-2601-4abd-aab4-e4e85905291d
 title: Instance dashboard navigation in Management Pack for SQL Server Dashboards
-description: This article explains how to navigate through the dashboards structure 
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+description: This article explains how to navigate through the dashboards structure
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
@@ -72,5 +72,3 @@ A tooltip with the object name appears only when the user hovers over the dashbo
 The **Filter** field is cleared every time the user changes the dashboard level.
 
 A user can use the filter field even if the dashboard group has objects with the empty path line and objects with a path at the path line simultaneously.
-
-

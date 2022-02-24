@@ -2,9 +2,9 @@
 ms.assetid: ba5add9b-c6c8-4e70-b916-94d9c548757f
 title: Virtual Machine Manager build versions
 description: This article describes about version numbers.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center

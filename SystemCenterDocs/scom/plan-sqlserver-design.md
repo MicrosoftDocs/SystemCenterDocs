@@ -2,10 +2,10 @@
 ms.assetid: 5a3a8b98-1113-45bf-9484-2c807ec3d013
 title: SQL Server Design Considerations
 description: This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: evansma
-ms.date: 11/29/2021
+ms.date: 09/21/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -97,7 +97,7 @@ Additional hardware and software considerations apply in your design planning:
 -  We recommend that you run SQL Server on computers with the NTFS file format.
 -  There must be at least 1024 MB of free disk space for the operational and data warehouse database. It is enforced at the time of database creation, and it will likely grow significantly after setup.  
 -  .NET Framework 4 is required.
--  .NET Framework 4.8 is supported from Operations Manager 2022. 
+-  .NET Framework 4.8 is supported from Operations Manager 2022.
 -  Reporting Server is not supported on Windows Server Core.
 
 ::: moniker range="=sc-om-2016"
@@ -187,7 +187,7 @@ The Operations Manager database is a single source of failure for the management
 
 ::: moniker range="sc-om-2022"
 
-You can setup and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
+You can setup and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
 
 ::: moniker-end
 
@@ -259,7 +259,7 @@ With System Center 2016 and later - Operations Manager, SQL Always On is preferr
 
 ::: moniker range="sc-om-2022"
 
-With Operations Manager 2022, you can setup and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
+With Operations Manager 2022, you can setup and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
 
 ::: moniker-end
 

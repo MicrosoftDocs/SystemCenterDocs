@@ -2,9 +2,9 @@
 ms.assetid: cc915e2b-67b5-4e54-ae26-8eab534f3759
 title: Create Run As accounts in VMM
 description: This article describes how to manage Run As accounts in VMM
-author: JYOTHIRMAISURI
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

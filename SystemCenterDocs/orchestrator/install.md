@@ -1,13 +1,13 @@
 ---
 title: Install Orchestra
 description: Provides instructions for installing System Center - Orchestrator
-author: JYOTHIRMAISURI
+author: jyothisuri
 manager: evansma
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
-ms.author: raynew
+ms.author: jsuri
 ms.custom: intro-installation
 ---
 

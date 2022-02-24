@@ -2,9 +2,9 @@
 ms.assetid: 8b01d791-e5b9-475a-b789-6162e6120397
 title: Configuring SSL Ciphers
 description: This article describes how to configure SSL encrypted communication for UNIX and Linux computers and Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: cfreemanwa
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
@@ -64,7 +64,7 @@ The following flags need to be set in order to enable/disable the TLS protocol v
 
 |Property|Purpose|
 |-----|-----|
-| NoTLSv1_0   | When true, the TLSv1.0 protocol is disabled.    | 
+| NoTLSv1_0   | When true, the TLSv1.0 protocol is disabled.    |
 |NoTLSv1_1   |When true, and if available on the platform, the TLSv1.1 protocol is disabled.|
 |NoTLSv1_2	  |When true, and if available on the platform, the TLSv1.2 protocol is disabled.|
 

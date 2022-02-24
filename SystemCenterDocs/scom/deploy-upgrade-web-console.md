@@ -4,7 +4,7 @@ title: How to Upgrade a Web Console
 description: This article describes how to upgrade a Web console to the latest release of System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 01/15/2018
 ms.custom: na
 ms.prod: system-center

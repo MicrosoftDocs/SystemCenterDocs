@@ -2,9 +2,9 @@
 ms.assetid:
 title: Kerberos Authentication Support for UNIX and Linux
 description: This article describes how to enable Kerberos Authentication with Unix and Linux Computers in System Center Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 05/04/2021
 ms.custom: na
 ms.prod: system-center

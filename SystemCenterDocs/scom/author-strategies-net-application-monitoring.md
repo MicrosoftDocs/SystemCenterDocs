@@ -4,7 +4,7 @@ title: Authoring strategies for .NET application monitoring in Operations Manage
 description: This article provides an overview about authoring strategies for .NET application monitoring
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: evansma
 ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center

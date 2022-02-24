@@ -4,7 +4,7 @@ title: How to Upgrade an Agent to System Center Operations Manager
 description: This article describes how to upgrade an Operations Manager agent to System Center.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 06/18/2021
 ms.custom: na
 ms.prod: system-center

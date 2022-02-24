@@ -4,7 +4,7 @@ title: Create management pack templates in Operations Manager management pack
 description: This article provides an overview of creating management pack templates
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: evansma
 ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center

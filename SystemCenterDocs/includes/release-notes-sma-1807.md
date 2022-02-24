@@ -1,10 +1,10 @@
 ---
 ms.assetid:
 description: include file to detail the Release Notes for System Center 1807-Service Management Automation
-manager:  vvithal
+manager:  evansma
 ms.topic:  include file
-author:  JYOTHIRMAISURI
-ms.author: V-JYSUR
+author: jyothisuri
+ms.author: jsuri
 ms.prod:  system-center-threshold
 ms.technology: service-management-automation
 keywords:

@@ -2,9 +2,9 @@
 ms.assetid: 28d531e2-24bf-4d7f-9949-5e07f7ff9461
 title: Monitoring configuration in Management Pack for SQL Server Reporting Services
 description: This article explains the monitoring configuration in Management Pack for SQL Server Reporting Services
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/16/2021
 ms.topic: article
 ms.prod: system-center
@@ -18,7 +18,7 @@ Management Pack for SQL Server Reporting Services automatically discovers instan
 - Reading the registry to detect if SSRS and PBIRS are installed on the server. If installed, the management pack creates a seed object.
 
 - If the seed object is discovered, the management pack reads such data sources as the registry, WMI, SSRS configuration file, and so on, to discover instance properties and the **Deployment Seed** object.
-  
+
   The **Deployment Seed** object is an unhosted object managed by System Center Operations Manager Management Server. Appropriate permissions are required to access necessary data sources. For more information, see [Reporting Services Run As Profiles](reporting-services-management-pack-run-as-profiles.md).
 
 ## Discovery of SQL Server Reporting Services Deployment
@@ -27,7 +27,7 @@ SSRS Deployment includes the following components:
 
 - One or more instances of SQL Server Reporting Services
 - SSRS Database and SQL Server that hosts SSRS Database
-  
+
 SSRS Database is a term that describes two databases used by SSRS:
 
 - SSRS Catalog Database

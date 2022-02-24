@@ -1,10 +1,10 @@
 ---
 title: Walkthrough Installing Operations Manager on a Single Server
 description: This article describes how to install all Operations Manager roles in a simple single-server deployment.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: evansma
-ms.date: 11/29/2021
+ms.date: 02/02/2018
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -181,11 +181,11 @@ You must ensure that your server meets the minimum supported configurations for 
 
 ::: moniker range="sc-om-2022"
 
-## Removed dependency on LocalSystem account 
+## Removed dependency on LocalSystem account
 
 Operations Manager 2022 provides the following changes:   
 
-- LocalSystem is no longer used internally instead of the Default Action Account. 
+- LocalSystem is no longer used internally instead of the Default Action Account.
 This was used earlier for APM configuration, Privileged Monitoring Account, RunAs Profile fallback. There was an association created for the Validate Subscription Account RunAs Profile.  
 - LocalSystem account is still being added to Operations Manager Administrators Group by Setup, but it is now visible in the console and can be removed and added later as required.  
 

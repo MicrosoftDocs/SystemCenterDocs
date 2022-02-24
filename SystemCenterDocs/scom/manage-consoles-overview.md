@@ -1,9 +1,9 @@
 ---
 title: Using the Operations Manager consoles
 description: This article describes using the Operations Manager consoles.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-ms.manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+ms.manager: evansma
 ms.date: 11/10/2017
 ms.custom: na
 ms.prod: system-center

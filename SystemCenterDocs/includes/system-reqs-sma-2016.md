@@ -1,8 +1,8 @@
 ---
 description: include file to describe the minimum hardware and software configurations that are required for a full installation of Service Management Automation 2016.
-manager:  cfreemanwa
+manager: evansma
 ms.topic:  include
-author:  bwren
+author: jyothisuri
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 01/22/2018

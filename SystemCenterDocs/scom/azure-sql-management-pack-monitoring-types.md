@@ -2,9 +2,9 @@
 ms.assetid: 3711a302-ab02-4bf9-a3ad-c0dbbdf669fb
 title: Monitoring types in Management Pack for Azure SQL Database
 description: This article explains how to configure Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
@@ -56,7 +56,7 @@ When using the Azure REST API, the Azure SQL Database Management Pack utilizes a
 
 - **Active Directory Administrator**
 - **Service Administrator** or **Co-Administrator**
-  
+
 For more information, see [How to - Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
 
 To begin monitoring of Azure SQL Databases using the Azure REST API, perform the following steps:
@@ -90,7 +90,7 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
      This endpoint is also used for Azure REST API. In this case, the Firewall port 443 should be used. However, according to [Ports beyond 1433 for ADO.NET 4.5](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12), the Firewall port 1433 should be used.
 
    - Database Resource URI: <https://database.windows.net>
-   
+
    - Graph API Resource URI: <https://graph.windows.net>
 
     ![Azure endpoints](./media/azure-sql-management-pack/selecting-azure-endpoints.png)

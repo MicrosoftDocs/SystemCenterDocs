@@ -2,9 +2,9 @@
 ms.assetid: c31d2851-7333-4aa0-8f4f-890eb1fbaa64
 title: Scope and supported configuration in Management Pack for Azure SQL Managed Instance
 description: This article explains the scope and supported configuration in Management Pack for Azure SQL Managed Instance
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
@@ -34,7 +34,7 @@ Management Pack for Azure SQL Managed Instance supports the following tiers and 
 
 Management Pack for Azure SQL Managed Instance supports agentless monitoring of Azure SQL Managed Instance only.
 
-All workflows in the management pack are executed by the management servers that are members of the Management Server Pool. 
+All workflows in the management pack are executed by the management servers that are members of the Management Server Pool.
 
 The management pack does not require to have a dedicated management group and can work in virtual environments.
 
