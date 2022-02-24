@@ -2,8 +2,8 @@
 ms.assetid: 3e7cc6b6-1d9e-4299-90c9-5427d6a9e56b
 title: Scope and supported configuration in Management Pack for SQL Server Reporting Services
 description: This article explains the scope and supported configuration for Management Pack for SQL Server Reporting Services
-author: jyothisuri
-ms.author: jsuri
+author: TDzakhov
+ms.author: v-tdzakhov
 manager: evansma
 ms.date: 11/16/2021
 ms.topic: article

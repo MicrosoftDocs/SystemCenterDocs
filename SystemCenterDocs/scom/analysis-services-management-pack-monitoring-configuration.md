@@ -2,8 +2,8 @@
 ms.assetid: 1c4927e5-5053-47e1-bf35-9aca5b4793a2
 title: Monitoring configuration in Management Pack for SQL Server Analysis Services
 description: This section explains monitoring configurations in Management Pack for SQL Server Analysis Services
-author: jyothisuri
-ms.author: jsuri
+author: TDzakhov
+ms.author: v-tdzakhov
 manager: evansma
 ms.date: 5/31/2021
 ms.topic: article
