@@ -25,12 +25,16 @@ ms.topic: article
 
 Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2019. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
+::: moniker-end
+
 ::: moniker range="sc-om-2022"
 
 
-Use the following procedures to upgrade an agent running on Windows or Linux. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
+Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2022. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 ::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
 > [!NOTE]
 > - To upgrade an Operations Manager agent through console, ensure that the Run As Account used for upgrade is granted with the *Log on as a Service* right on all Management Servers and Gateways.
