@@ -2,8 +2,8 @@
 ms.assetid: 603255c8-723e-46ce-b1fc-7d127b37ebd6
 title: Known issues and troubleshooting in Management Pack for SQL Server Dashboards
 description: This article explains known issues and troubleshooting in Management Pack for SQL Server Dashboards
-author: jyothisuri
-ms.author: jsuri
+author: TDzakhov
+ms.author: v-tdzakhov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
