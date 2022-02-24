@@ -2,9 +2,9 @@
 ms.assetid: 2ad571c2-f460-4b52-bccd-737e0936c5ff
 title: Managing tiles in Management Pack for SQL Server Dashboards
 description: This article explains how to manage tiles
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Managing Tiles
 
-The tiles can be moved by means of drag-n-drop. 
+The tiles can be moved by means of drag-n-drop.
 
 Datacenter dashboards allow the following methods of tile moving:
 

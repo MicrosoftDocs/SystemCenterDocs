@@ -2,10 +2,10 @@
 ms.assetid:
 title: How to create a dashboard with the Alert widget in the Web console
 description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Alert widget.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: evansma
-ms.date: 11/29/2021
+ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-2016'

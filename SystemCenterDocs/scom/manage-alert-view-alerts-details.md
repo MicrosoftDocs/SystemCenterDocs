@@ -2,10 +2,10 @@
 ms.assetid: bc60e137-7ca2-45db-a30b-26dd83fe8bfb
 title: View Active Alerts and Details
 description: This article describes how to review the active alerts reported by monitored objects and their details to understand the impact of your affected IT services.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.manager: evansma
-ms.date: 11/29/2021
+ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -47,7 +47,7 @@ The list of alerts in the Results pane includes the severity, source, maintenanc
 
 The list of alerts in the Results pane includes the severity, source, maintenance mode status, name, resolution state, Alert source, and when the alert was created:
 
-With Operations Manager 2022, you can view the source of the alert if you had selected the view source option while creating the alert 
+With Operations Manager 2022, you can view the source of the alert if you had selected the view source option while creating the alert
 
 You can also sort and group the alerts by Monitor/Rule.
 
@@ -87,13 +87,13 @@ To view the details for an alert, in the **Monitoring** workspace, click **Activ
 
 -   Read all text in the alert properties. (Right-click the alert, and select **Properties**.) In particular, carefully review the **Alert Description** field on the **General** tab and the **Description** field on the **Alert Context** tab.  
 
--   Right-click the alert, and open the **Event** view. Sort the events by the **Level** column, and then locate the events with the **Error** and **Warning** event levels. Events may correlate with the alert you are investigating and provide insight to its resolution. 
+-   Right-click the alert, and open the **Event** view. Sort the events by the **Level** column, and then locate the events with the **Error** and **Warning** event levels. Events may correlate with the alert you are investigating and provide insight to its resolution.
 
 ::: moniker range="sc-om-2022"
 
 ## View source FQDN for alerts  
 
-With Operations Manager 2022, you can view source (FQDN) for the alerts when you try to tune a management pack. 
+With Operations Manager 2022, you can view source (FQDN) for the alerts when you try to tune a management pack.
 
 ![View source for the alerts](./media/manage-alert-view-alerts-details/fqdn.png)
 

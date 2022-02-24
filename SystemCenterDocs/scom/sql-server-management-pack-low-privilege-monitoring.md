@@ -2,9 +2,9 @@
 ms.assetid: e357ab3b-45b3-417e-8a41-84c4cc66b4a0
 title: Low-privilege monitoring in Management Pack for SQL Server
 description: This article explains low-privilege monitoring
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 7/14/2021
 ms.topic: article
 ms.prod: system-center
@@ -76,12 +76,12 @@ This section explains how to configure low-privilege agent monitoring.
 
 1. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance.
 
-2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, create a login for **SQLMPLowPriv** and **SQLTaskAction**. 
-  
+2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, create a login for **SQLMPLowPriv** and **SQLTaskAction**.
+
    To add **SQLMPLowPriv**, in the **Object Types** window, select the **Groups** checkbox.
 
-3. Create **SQLMPLowPriv** and **SQLTaskAction** users in each user database, **master**, **msdb**, and **model** databases. 
-  
+3. Create **SQLMPLowPriv** and **SQLTaskAction** users in each user database, **master**, **msdb**, and **model** databases.
+
 4. Link **SQLMPLowPriv** users to the **SQLMPLowPriv** login and **SQLTaskAction** users to the **SQLTaskAction** login:
 
       ```SQL
@@ -104,7 +104,7 @@ This section explains how to configure low-privilege agent monitoring.
       GRANT VIEW ANY DATABASE TO [SQLMPLowPriv]
       GRANT EXECUTE ON xp_readerrorlog TO [SQLMPLowPriv]
       GRANT EXECUTE ON xp_instance_regread TO [SQLMPLowPriv]
-      
+
       USE [msdb]
       GO
       GRANT SELECT ON sysjobs_view TO [SQLMPLowPriv]
@@ -133,11 +133,11 @@ This section explains how to configure low-privilege agent monitoring.
 ### On SMB Shares
 
 1. Grant share permissions by opening the share properties dialog for the share that hosts SQL Server data files or SQL Server transaction log files.
-  
+
 2. Grant the **Read** permission to **SQLMPLowPriv**.
-  
+
 3. Grant NTFS permissions by opening the properties dialog for the shared folder and navigating to the **Security** tab.
-  
+
 4. Grant the **Read** permission to **SQLMPLowPriv**.
 
 ### Optional Steps for Tasks on Agents
@@ -271,7 +271,7 @@ Some optional System Center Operations Manager tasks require a higher privilege 
 Take the following steps only if you want to allow the System Center Operations Manager console operator to take remedial actions on that target:
 
 1. In SQL Server Management Studio, add **SQLMPLowPriv** to the **db_owner** database role for each database if the task is related to performing database checks:
-      
+
     - Check Catalog (DBCC)
     - Check Database (DBCC)
     - Check Disk (DBCC) (invokes DBCC CHECKALLOC)
@@ -284,7 +284,7 @@ Take the following steps only if you want to allow the System Center Operations 
     ```
 
 2. Grant the ALTER ANY DATABASE privilege to **SQLMPLowPriv** to perform the following database tasks:
-      
+
     - Set Database Online
     - Set Database Offline
     - Set Database to Emergency State
@@ -301,10 +301,10 @@ To configure low-privilege agentless monitoring using the monitoring wizard, per
 
 1. In the **Add Monitoring Wizard** window, click **Add Instances**.
 
-2. In the **Add Instances** window, select a common Run As account with the appropriate SQL low-privilege login and specify data sources and/or connection strings. 
+2. In the **Add Instances** window, select a common Run As account with the appropriate SQL low-privilege login and specify data sources and/or connection strings.
 
     For example:
-     
+
      - 172.31.2.133;MachineName="W12BOX-839";InstanceName="MSSQLSERVER";Platform="Windows"
      - 172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"
      - 172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
@@ -354,7 +354,7 @@ To configure security for configurations with low-privilege accounts, perform th
    ![Activating permissions](./media/sql-server-management-pack/launch-activate-permissions.png)
 
 6. Go to the **WMI Control** snap-in and open its properties.
-  
+
 7. Open the **Security** tab and select the following namespaces:
 
     - ROOT\CIMV2
@@ -415,9 +415,9 @@ To get information about the services, grant required permissions according to t
     ```
 
     The SDDL is saved to the **file.txt** file and looks similar to the following one:
-    
+
     ```
-    D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA)S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD). 
+    D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA)S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD).
     ```
 
 4. Modify the SDDL string by copying the SDDL section that ends in **IU** (Interactive Users).
@@ -426,8 +426,8 @@ To get information about the services, grant required permissions according to t
 
     In the following text, replace the IU string with the **Spotlight User** SID.
 
-    The new SDDL looks similar to the following one: 
-    
+    The new SDDL looks similar to the following one:
+
     ```
     D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU) (A;;CCLCRPRC;;;S-1-5-21-214A909598-1293495619-13Z157935-75714)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA) S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)
     ```
@@ -444,16 +444,16 @@ To get information about the services, grant required permissions according to t
 
     ```
     subinacl.exe /service mssqlserver /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
-    
+
     subinacl.exe /service sqlserveragent /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
-    
+
     subinacl.exe /service mssqlfdlauncher /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
     ```
-    
+
     ![Running subinacl](./media/sql-server-management-pack/subinacl-run.png)
 
     The following rights can be read as:
-    
+
       - L: Read contro
       - Q: Query Service Configuration
       - S: Query Service Status

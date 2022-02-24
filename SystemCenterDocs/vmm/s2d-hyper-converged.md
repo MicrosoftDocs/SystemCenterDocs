@@ -2,9 +2,9 @@
 ms.assetid: b66ee78f-a74b-4950-83fc-cb8f35375c1d
 title: Deploy a Storage Spaces Direct hyper-converged cluster in VMM
 description: This article describes how to deploy a Storage Spaces Direct hyper-converged cluster in the VMM fabric
-author: JYOTHIRMAISURI
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center

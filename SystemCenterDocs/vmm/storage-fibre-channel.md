@@ -2,9 +2,9 @@
 ms.assetid: 832b1205-0ab2-4a35-9c08-6489bed33aad
 title: Set up Hyper-V virtual fibre channel in the VMM 2016 storage fabric
 description: This article describes how to set up Hyper-V virtual fibre channel in the VMM storage fabric
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

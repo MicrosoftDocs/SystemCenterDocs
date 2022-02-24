@@ -2,9 +2,9 @@
 ms.assetid: 5be59923-32d6-4758-b078-a26bf85ae28b
 title: Monitoring modes in Management Pack for SQL Server
 description: This article explains monitoring modes in Management Pack for SQL Server
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
@@ -16,17 +16,17 @@ ms.technology: operations-manager
 Management Pack for SQL Server provides the following monitoring modes:
 
 - **Agent monitoring**
-  
+
     Agent monitoring is performed by the System Center Operations Manager agent and supports SQL on Windows only.
 
     In this monitoring mode, the management pack automatically discovers stand-alone and clustered instances of SQL Server across all managed systems that run the System Center Operations Manager agent service.
 
-    The following protocols are supported in this mode: 
-    
+    The following protocols are supported in this mode:
+
     - TCP/IP
-    
+
     - Named Pipes
-    
+
     - Shared Memory
 
 - **Agentless monitoring**
@@ -39,10 +39,10 @@ Management Pack for SQL Server provides the following monitoring modes:
 
     To make monitoring more efficient, configure a dedicated pool of Management Servers, as described in [Configuring SQL Server Monitoring Pool](sql-server-management-pack-sql-server-monitoring-pool.md).
 
-    The following protocols are supported in this mode: 
-    
+    The following protocols are supported in this mode:
+
     - TCP/IP
-    
+
     - Named Pipes
 
 - **Mixed monitoring**
@@ -96,11 +96,11 @@ To configure agentless monitoring, perform the following steps:
       Use the following format when specifying connection strings:
 
         - 172.31.2.133;MachineName="W12BOX-839";InstanceName="MSSQLSERVER";Platform="Windows"
-  
+
         - 172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"
 
         - 172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
-     
+
      When you add a Linux-based instance, a connection test will fail if an IP address is specified as a connection string and the authentication type is **Windows AD credentials**. In this case, specify the machine name as the connection string.
 
     ![Authentication type](./media/sql-server-management-pack/authentication-type.png)
@@ -142,7 +142,7 @@ To configure mixed monitoring, perform the following steps:
 3. In the **Override Properties** window, enable the **Mixed Monitoring** override.
 
 4. In the **Override Value** field, specify instances that you want to switch to agentless monitoring.
-  
+
     Use commas to separate instance names. To add all instances, including instances with the same name and instances that are located on different servers, use asterisk (\'*').
 
     ![Override properties](./media/sql-server-management-pack/override-properties.png)

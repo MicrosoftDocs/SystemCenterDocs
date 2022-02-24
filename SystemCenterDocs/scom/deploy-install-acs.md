@@ -4,7 +4,7 @@ title: How to Install an Audit Collection Services ACS Collector and Database
 description: This article describes how to install the Operations Manager Audit Collector and ACS database.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 02/11/2022
 ms.custom: na
 ms.prod: system-center
@@ -75,17 +75,17 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
 You can verify the ACS collector performance using Performance monitor and PowerShell. See the following sections for detailed information.
 
-### Monitor ACS collector performance data with Performance monitor 
+### Monitor ACS collector performance data with Performance monitor
 
-1. Log on to the computer that has Performance monitor installed. 
+1. Log on to the computer that has Performance monitor installed.
 
-2. Enter **perfmon.msc** on the **Run** page and click **OK**. 
+2. Enter **perfmon.msc** on the **Run** page and click **OK**.
 
-3. Under **Performance** > **Monitoring Tools**, right-click **Performance Monitor** > **Properties**. **Performance Monitor Properties** page opens. 
+3. Under **Performance** > **Monitoring Tools**, right-click **Performance Monitor** > **Properties**. **Performance Monitor Properties** page opens.
 
    :::image type="performance monitor" source="media/deploy-install-acs/performance-monitor.png" alt-text="Screenshot showing performance monitor.":::
 
-4. Under **Data**, select the available counters and click **Remove**. 
+4. Under **Data**, select the available counters and click **Remove**.
 
    :::image type="data-remove" source="media/deploy-install-acs/data-remove.png" alt-text="Screenshot showing how to remove data.":::
 
@@ -93,19 +93,19 @@ You can verify the ACS collector performance using Performance monitor and Power
 
    :::image type="add" source="media/deploy-install-acs/add.png" alt-text="Screenshot showing add.":::
 
-6. **Add Counters** page opens. Locate the **ACS Collector** counter and click **Add >>** and then click **OK** to confirm the properties. 
-   
+6. **Add Counters** page opens. Locate the **ACS Collector** counter and click **Add >>** and then click **OK** to confirm the properties.
+
    :::image type="add counters" source="media/deploy-install-acs/add-counters.png" alt-text="Screenshot showing the add counters.":::
 
 7. On the **Performance Monitor** wizard, click the drop-down and select **Report** to change the view of the report.
 
    :::image type="report view" source="media/deploy-install-acs/report-view.png" alt-text="Screenshot showing the report view.":::
 
-8. ACS performance data is displayed as follows: 
+8. ACS performance data is displayed as follows:
 
    :::image type="acs collector data report" source="media/deploy-install-acs/acs-collector-data-report.png" alt-text="Screenshot showing the acs collector data report.":::
 
-### Monitor ACS collector performance data with PowerShell 
+### Monitor ACS collector performance data with PowerShell
 
 Use the below PowerShell commands to view the ACS collector performance data:
 
@@ -114,7 +114,7 @@ Use the below PowerShell commands to view the ACS collector performance data:
 This example shows how to get a single sample of ACS collector performance counter values.
 
 ```powershell
-Get-Counter -ListSet 'ACS Collector' | Get-Counter 
+Get-Counter -ListSet 'ACS Collector' | Get-Counter
 ```
 
 #### Example 2: Get continuous samples of ACS collector performance counters
@@ -126,9 +126,9 @@ To stop the command, press <kbd>CTRL</kbd>+<kbd>C</kbd>.
 To specify a longer interval (in seconds) between samples, use the `-SampleInterval` parameter.
 
 ```powershell
-Get-Counter -ListSet 'ACS Collector' | Get-Counter -Continuous 
+Get-Counter -ListSet 'ACS Collector' | Get-Counter -Continuous
 ```
- 
+
 **Example Output**
 
 :::image type="example" source="media/deploy-install-acs/example.png" alt-text="Screenshot showing the PowerShell example for gathering ACS collector performance data.":::

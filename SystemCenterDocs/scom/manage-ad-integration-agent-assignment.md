@@ -1,9 +1,9 @@
 ---
 title: How to configure and use Active Directory Integration for agent assignment in Operations Manager
 description: This article describes how to configure and use Active Directory integration for agent assignment and failover with your Operations Manager management group.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 10/07/2020
 ms.custom: na
 ms.prod: system-center
@@ -198,7 +198,7 @@ Make sure that the domain name is provided with FQDN, not NetBIOS name (For Ex: 
 8. Create the Active Directory integration rules in Operations Manager.
 
 >[!NOTE]
-> After the integration with untrusted domain, each management server displays the warning message *Security database on the server does not have a computer account for this workstation trust relationship* indicating that the validation of the run as account used by the AD assignment failed. Event ID 7000 or 1105 are generated in the Operations Manager Event log. However, this alert does not have any impact on the AD assignment in untrusted domain. 
+> After the integration with untrusted domain, each management server displays the warning message *Security database on the server does not have a computer account for this workstation trust relationship* indicating that the validation of the run as account used by the AD assignment failed. Event ID 7000 or 1105 are generated in the Operations Manager Event log. However, this alert does not have any impact on the AD assignment in untrusted domain.
 
 ## Next steps
 

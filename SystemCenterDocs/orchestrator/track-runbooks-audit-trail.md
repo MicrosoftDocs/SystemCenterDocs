@@ -10,10 +10,10 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b93dbbb6-3c0d-4256-8140-c47b67a50a4a
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 ms.date: 05/08/2019
-manager: cfreeman
+manager: evansma
 ---
 # Audit Trail
 

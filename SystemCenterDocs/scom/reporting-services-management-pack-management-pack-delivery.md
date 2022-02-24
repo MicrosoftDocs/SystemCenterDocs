@@ -2,9 +2,9 @@
 ms.assetid: 170dc7fd-11a3-411c-a164-e8fce974deee
 title: Management Pack for SQL Server Reporting Services delivery
 description: This article explains how to install Management Pack for SQL Server Reporting Services
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
@@ -60,7 +60,7 @@ The environment that you use must meet the following prerequisites before you st
 - Import the **Microsoft SQL Server on Windows (Discovery)** management pack.
 
     This management pack does not discover database objects for SSRS Catalog Database or SSRS Temporary Database.
-  
+
     Import Management Pack for SQL Server to enable discovery, monitoring, and health rollup for SSRS databases and deployment performance collection. For more information, see [Discovery of SQL Server Reporting Services Deployment](reporting-services-management-pack-monitoring-configuration.md#discovery-of-sql-server-reporting-services-deployment).
 
 - Use a domain account for monitoring.

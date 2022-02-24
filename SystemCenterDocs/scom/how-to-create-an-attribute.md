@@ -4,7 +4,7 @@ title: Create an Attribute
 description: This article provides information on how to use Create Attribute wizard.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 11/07/2016
 ms.custom: na
 ms.prod: system-center

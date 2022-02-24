@@ -2,9 +2,9 @@
 ms.assetid: b1883bce-1329-4c2a-bca9-1c5b1ccecaca
 title: What's New in Operations Manager
 description: This article describes the new features supported in Operations Manager
-author: JYOTHIRMAISURI
-ms.author: V-jysur
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 06/04/2021
 ms.custom: na, intro-whats-new
 ms.prod: system-center
@@ -18,7 +18,7 @@ ms.topic: article
 
 ::: moniker range="sc-om-2022"
 
-This article details the new features supported in System Center 2022 - Operations Manager. 
+This article details the new features supported in System Center 2022 - Operations Manager.
 
 [!INCLUDE [whats-new-om-2022.md](../includes/whats-new-om-2022.md)]
 

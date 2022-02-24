@@ -2,9 +2,9 @@
 ms.assetid: 3ab37fed-9dcf-411f-983f-4fc9ea78c4c9
 title: Provision and manage virtual machines in the VMM fabric
 description: This article describes how to manage VMs in the VMM compute fabric
-author: JYOTHIRMAISURI
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
@@ -141,7 +141,7 @@ Fast file copy improves the performance of file transfers, mostly by leveraging 
 After you've set up a vCenter server and ESX/ESXi hosts, you can provision VMware VMs like any other VM. Note the following:
 
 - You can organize and store VMware VMs in the VMM library.
-- You can organize and store VMware virtual machines, .vmdk (VMDK) files, and VMware templates in the VMM library. 
+- You can organize and store VMware virtual machines, .vmdk (VMDK) files, and VMware templates in the VMM library.
 - You can create VMs from VMware templates stored in the library. You can also import templates stored on vSphere hosts (only template metadata is imported to VMM).VMM doesn't support older VMDK disk types. These disk types are supported:
     - Regular VMDK files (VMFS and moniolithic flat)
     - VMDK files that are used to access physical disks (vmfsPassthroughRawDeviceMap)

@@ -1,9 +1,9 @@
 ---
 title: Upgrade Operations Manager databases to SQL Server 2017
 description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2017.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 10/29/2020
 ms.custom: na
 ms.prod: system-center

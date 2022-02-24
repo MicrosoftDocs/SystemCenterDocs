@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: reference
 ms.assetid:
 caps.latest.revision: 12
-author: bwren
-ms.author: bwren
-manager: cfreeman
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 # List of Integration Packs for Orchestrator
 

@@ -2,9 +2,9 @@
 ms.assetid: 2c4831ae-0b67-40c0-a91f-247a3ee3e01f
 title: SQL Server Run As profiles in Management Pack for SQL Server
 description: This article explains run as profiles in Management Pack for SQL Server
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
@@ -16,7 +16,7 @@ ms.technology: operations-manager
 Management Pack for SQL Server provides the following Run As profiles:
 
 - **Microsoft SQL Server Discovery Run As Profile**
-  
+
   This profile is associated with existing discoveries.
 
 - **Microsoft SQL Server Monitoring Run As Profile**
@@ -121,7 +121,7 @@ Regardless of whether you use a local system account, domain user account, or ri
 - Computer_1
 - Computer_2
 - Computer_3
-  
+
 **Computer_1** hosts the primary replica. In this case, you should configure security settings for **Computer_1** on **Computer_2** and **Computer_3**. If **Computer_2** is going to host the primary replica after failover, other computers should also have WMI security configured for this computer.
 
 The local system account of each node that might act as the primary one must have WMI permissions for other nodes in the current Availability Group. The same is for the domain action account.
@@ -153,7 +153,7 @@ To configure permissions for Always On workflows when server names exceed 15 cha
 6. Open **WMI Control** snap-in properties, go to the **Security** tab, select the **Root\CIMV2** namespace, and click **Security**.
 
 7. Allow the following permissions for the target computer:
-  
+
     - Enable Account
     - Remote Enable
 
@@ -164,7 +164,7 @@ To configure permissions for Always On workflows when server names exceed 15 cha
 9. From the **Applies to** drop-down list, select **This namespace only**.
 
 10. In the **Permissions** section, enable the following checkboxes:
-    
+
     - Enable Account
     - Remote Enable
 

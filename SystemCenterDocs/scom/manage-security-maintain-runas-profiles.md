@@ -2,9 +2,9 @@
 ms.assetid: 16b7460b-f80e-476f-9048-9b13230f633b
 title: Managing Run As Accounts and Profiles
 description: This article provides an overview of Run As accounts and profiles in Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center
@@ -33,6 +33,29 @@ Run As profiles are defined in management packs by the management pack author. A
 In some cases, the Run As profile is imported into Operations Manager when the management pack that contains it is imported. In other cases, you may need to create it manually. In all cases, Run As profiles must be manually associated with a Run As account.  
 
 A Run As account contains a single set of credentials which are stored in the Operations Manager operational database. Each Run As account has a security classification (more secure or less secure) that controls how the credentials are distributed for use. If you elect more secure credential distribution, you must configure the mapping of which computers the credentials are distributed to.  
+
+::: moniker range="sc-om-2022"
+
+## Disable run as accounts
+
+With Operations Manager 2022, admins can manage the users credentials that are required to perform the tasks in the Operations Manager console.
+
+In earlier releases, by default, users with limited permissions have **Use the predefined Run As Account** option enabled. Admins can now disable this option. When disabled, all non-admin users will need to provide the credentials to execute the tasks using the PowerShell cmd *Start-SCOMTask*.
+
+To disable the option, admins are required to go to **Settings** > **Miscellaneous** > **Tasks Execution** and then select **Disabled**.
+
+![Disable Run As profile from tasks execution](./media/manage-security-maintain-runas-profiles/tasks-execution.png)
+
+You can have multiple management groups connected to each other and view alerts from different management groups in a single operations console.
+
+Users can also run tasks on machines in the other management groups. The settings will be effective from the management group where the operations console/ PowerShell session is running from.
+
+For example, if management group 1 (MG1) has the option as *Enabled* and management group 2 (MG2) has this option as *Disabled*, the users can run the task from a console in MG1 without credentials, irrespective of whether the target object is in MG1 or MG2.
+
+Similarly, if a user is running a task from PowerShell in MG2, they will need credentials for the task if the target is in MG1.
+
+
+::: moniker-end
 
 ## Next steps
 

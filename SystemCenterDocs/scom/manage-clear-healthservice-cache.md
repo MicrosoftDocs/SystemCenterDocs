@@ -1,9 +1,9 @@
 ---
 title: How and When to Clear the Cache
 description: This article provides guidance on how to manage the cache for the HealthService on management servers and agents in System Center Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmomm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 01/04/2018
 ms.custom: na
 ms.prod: system-center

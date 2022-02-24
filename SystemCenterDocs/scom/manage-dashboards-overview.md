@@ -1,9 +1,9 @@
 ---
 title: Dashboards in Operations Manager
 description: This article provides an overview of dashboards in Operations Manager to visualize operational data from monitored services and their components.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-ms.manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+ms.manager: evansma
 ms.date: 10/08/2020
 ms.custom: na
 ms.prod: system-center

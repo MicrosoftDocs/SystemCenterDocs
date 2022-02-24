@@ -2,10 +2,10 @@
 ms.assetid: 50e3914b-4047-4dce-97f1-0bca1619f4a1
 title: Operations Associated with User Role Profiles
 description: This article describe the user roles in Operations Manager and they what actions they can perform in the management group.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: evansma
-ms.date: 11/29/2021
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -24,7 +24,7 @@ This topic provides a list of the operations in System Center Operations Manager
 
 ::: moniker range="sc-om-2022"
 
-You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes. 
+You can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
 
 In addition to the existing operations, Operations Manager 2022 supports *Read-only Administrator* and *Delegated administrator* roles. The operations for these roles are detailed in the sections below.
 
@@ -373,36 +373,36 @@ The Report Security Administrator profile includes a set of privileges designed 
 
 ::: moniker range="sc-om-2022"
 
-## Read-only Administrator 
+## Read-only Administrator
 
-The Read-only Administrator profile includes all the read privileges in Operations Manager along with reporting. 
+The Read-only Administrator profile includes all the read privileges in Operations Manager along with reporting.
 
-You can create custom user roles with specific permissions. The **Agent Management** now supports two new subcategories - **Deploy Agents** and **Repair Agents**, that implicitly provide permission to **Agent Pending Actions**. 
+You can create custom user roles with specific permissions. The **Agent Management** now supports two new subcategories - **Deploy Agents** and **Repair Agents**, that implicitly provide permission to **Agent Pending Actions**.
 
-**Deploy Agents** and **Repair Agents** has dependency on **Agent Pending Actions**. 
+**Deploy Agents** and **Repair Agents** has dependency on **Agent Pending Actions**.
 
->[!NOTE] 
->Uninstallation of agents works independently. 
+>[!NOTE]
+>Uninstallation of agents works independently.
 
-## Delegated administrator 
+## Delegated administrator
 
-The Delegated administrator profile includes all the read privileges in Operations Manager except reporting. Create a custom role with Delegated administrator as the base profile, and one or more permissions from the following categories: 
+The Delegated administrator profile includes all the read privileges in Operations Manager except reporting. Create a custom role with Delegated administrator as the base profile, and one or more permissions from the following categories:
 
--   Agent management 
+-   Agent management
 
--   Account management 
+-   Account management
 
--   Connector management 
+-   Connector management
 
--   Global settings 
+-   Global settings
 
--   Management pack authoring 
+-   Management pack authoring
 
--   Notification management 
+-   Notification management
 
--   Operations permissions 
+-   Operations permissions
 
--   Reporting permissions 
+-   Reporting permissions
 
 ::: moniker-end
 

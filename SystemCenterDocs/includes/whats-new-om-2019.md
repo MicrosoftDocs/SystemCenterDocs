@@ -2,9 +2,9 @@
 ms.assetid: 1b8afb6f-9caf-455a-ad51-546a17fd47a4
 title: include file
 description: This include file describes the new features in Operations Manager 2019, 2019 UR1, 2019 UR2 and 2019 UR3.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 06/04/2021
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
@@ -335,9 +335,6 @@ With Operations Manager 2019 UR2, you can run and view favorite reports under **
 
 ### Support for folders in monitoring view of web console
 In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-web-console.md).
-
-### Support for CentOS 8
-Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](../scom/manage-install-crossplat-agent-cmdline.md?view=sc-om-2019&preserve-view=true#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 ## New features in Operations Manager 2019 UR3
 

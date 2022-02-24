@@ -2,10 +2,10 @@
 ms.assetid: 22fdfe80-9d2a-4b46-b544-06a5b2b0e6c2
 title: Using Classes and Groups for Overrides
 description: This article describes how to apply overrides to classes and groups in Operations Manager 2016.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: evansma
-ms.date: 11/29/2021
+ms.date: 05/03/2017
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -59,7 +59,7 @@ You have seen that classes are used to target workflows such as rules and monito
 
 ::: moniker range="sc-om-2022"
 
-Operations Manager 2022 provides support for sort option by column, in **Overrides Summary**. 
+Operations Manager 2022 provides support for sort option by column, in **Overrides Summary**.
 
 ![Overrides Summary](./media/manage-mp-overview-override-targets/overrides-summary.png)
 

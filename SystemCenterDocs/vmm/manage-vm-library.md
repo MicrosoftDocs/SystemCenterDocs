@@ -2,9 +2,9 @@
 ms.assetid: e756446f-f0bb-428f-a054-a33087fad435
 title: Deploy a virtual machine from the VMM library
 description: This article describes how to create VMs in the VMM fabric from the VMM library
-author: JYOTHIRMAISURI
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

@@ -2,10 +2,10 @@
 ms.assetid: 50504e6d-945f-43e6-8faf-33fe870c623d
 title: Supported UNIX and Linux operating system versions
 description: This article lists the supported versions of Linux and UNIX operating system for System Center Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: evansma
-ms.date: 11/29/2021
+ms.date: 11/23/2021
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -22,10 +22,10 @@ ms.topic: article
 
 ::: moniker range="sc-om-2022"
 
-The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2022 - Operations Manager. 
+The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2022 - Operations Manager.
 
 >[!IMPORTANT]
->Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support. 
+>Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Red Hat Enterprise Linux Server 7
 
->[!NOTE] 
+>[!NOTE]
 >Red Hat Enterprise Linux Server 7 (Power) is not supported in Operations Manager 2022.
 
 |Required package|Description|Minimum version|
@@ -134,7 +134,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ## SUSE Linux Enterprise Server 12
 
->[!NOTE] 
+>[!NOTE]
 >SUSE Linux Enterprise Server 12 (Power) is not supported in Operations Manager 2022.
 
 |Required package|Description|Minimum version|
@@ -208,7 +208,7 @@ CentOS 8 is supported from 2019 UR2 and later and Oracle Linux 8 is supported fr
 
 Supported versions:
 
-- Debian 9, 10 and 11 
+- Debian 9, 10 and 11
 - Ubuntu 16.04, 18.04 and 20.04
 
 >[!NOTE]
@@ -225,7 +225,7 @@ Supported versions:
 Supported versions:
 
 - CentOS 7
-- Oracle Linux 7 and 8 
+- Oracle Linux 7 and 8
 - SLES 15
 - openSUSE Leap 15
 

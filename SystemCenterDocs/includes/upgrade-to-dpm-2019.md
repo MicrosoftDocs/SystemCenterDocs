@@ -1,9 +1,9 @@
 ---
 description: This article explains how to upgrade your DPM installation to version 2019.
-manager:  vvithal
+manager: evansma
 ms.topic:  include
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.prod:  system-center
 keywords:
 ms.date:  03/14/2019

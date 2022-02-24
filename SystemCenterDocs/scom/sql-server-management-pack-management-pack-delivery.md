@@ -2,9 +2,9 @@
 ms.assetid: 9e13d0f4-84b2-42bf-836f-b23791616971
 title: Management Pack for SQL Server delivery
 description: This article explains how to install Management Pack for SQL Server
-author: TDzakhov
-ms.author: v-tdzakhov
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center
@@ -53,7 +53,7 @@ The environment that you use must meet the following prerequisites before you st
 - Enable the **Agent Proxy** option on each agent to allow agents to forward data to management servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md).
 
 - Enable and run SQL Server Browser for [agentless monitoring](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode) mode.
-  
+
 - Remove the Microsoft SQL Server 2017+ Integration Services on Window management pack before importing this management pack.
 
   Management pack for SQL Server 2017+ Integration Services cannot be upgraded and has to be removed before importing this management pack.

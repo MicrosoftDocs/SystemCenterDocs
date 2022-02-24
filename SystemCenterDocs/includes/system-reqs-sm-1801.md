@@ -1,11 +1,11 @@
 ---
 title: include file
-manager: vvithal
+manager: evansma
 description: include file to describe the hardware, software and other system requirements  Service Manager 1801.
 ms.custom: na
 ms.prod: system-center-2016
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 05/14/2019
 ms.reviewer: na
 ms.suite: na

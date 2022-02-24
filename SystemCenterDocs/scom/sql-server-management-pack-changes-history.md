@@ -49,26 +49,26 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Fixed an issue with not working Operations Manager console tasks (run "SQL Management Studio", run "SQL Profiler") with the latest versions of SQL Server Management Studio
 - Fixed an issue with not working Operations Manager console tasks in clustered environments. Now tasks "Start Analysis Service" and "Stop Analysis Service" work properly
 
-## June 2021 - 7.0.32.0 RTM 
+## June 2021 - 7.0.32.0 RTM
 
 ### What's New
 
 - Updated override for the "Service Principal Name Configuration Status" monitor. The ‘Interval’ value is now set to 3600 (1 hour) to avoid an alert storm in multiple domain controller environments
-- Updated the "Virtual Log File Count" monitor. Now it uses the ‘sys.dm_db_log_info’ view instead of DBCC on SQL Server 2016 and higher 
-- Updated the "Database Status" monitor. Added a new override ‘Disable if Availability Group is offline’ to avoid false positives in high-availability environments 
-- Updated the "Database Backup Status" monitor. Added a new override ‘Track Availability Group Backup Preferences' to instruct the monitor to track the backup location configured in the Availability Group backup preferences 
+- Updated the "Virtual Log File Count" monitor. Now it uses the ‘sys.dm_db_log_info’ view instead of DBCC on SQL Server 2016 and higher
+- Updated the "Database Status" monitor. Added a new override ‘Disable if Availability Group is offline’ to avoid false positives in high-availability environments
+- Updated the "Database Backup Status" monitor. Added a new override ‘Track Availability Group Backup Preferences' to instruct the monitor to track the backup location configured in the Availability Group backup preferences
 - Added a new exclude list option for the "SQL Server Agent Job" discovery
 - Updated overrides for the "WMI Health State" monitor. The ‘Interval’ value is now set to 3600 (1 hour) and the ‘Samples count’ value is set to 2
 - Renamed some Dashboard tiles
-- Added new rules targeted to the SQL Server Agent Job: "SQL Server Agent Job Duration Alert Rule" and "SQL Server Agent Job Duration" performance rule 
+- Added new rules targeted to the SQL Server Agent Job: "SQL Server Agent Job Duration Alert Rule" and "SQL Server Agent Job Duration" performance rule
 - Updated the following space related discoveries: "DB Filegroups", "DB Files", "Transaction Log File", "FILESTREAM Filegroups", "Memory-Optimized Data Filegroup", and "Memory-Optimized Data Filegroup Containers". Now they are disabled by default to reduce the load on the environment
 - Updated the "Summary Dashboard" views. Now they also contain tiles for the SQL Server Integration Services
-- Updated the "Product Version Compliance" monitor with the most recent version of the public updates for SQL Server 
+- Updated the "Product Version Compliance" monitor with the most recent version of the public updates for SQL Server
 - Updated display strings
 
 ### Bug Fixes
 
-- Fixed an issue with continuous login attempts from passive SQL Server cluster node after the failover 
+- Fixed an issue with continuous login attempts from passive SQL Server cluster node after the failover
 - Fixed an issue with the failing "SQL Server Agent Jobs" discovery in cases of unsupported ASCII characters in job names&mdash;added proper error handling
 - Fixed performance data collection for SQL Server DB Engines with Latin1_General_CP850_BIN collations
 - Fixed an issue with the incorrect alert name for the "LOG Free Space Left" monitor

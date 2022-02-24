@@ -1,9 +1,9 @@
 ---
 title: How to Set Alert Resolution States
 description: This article describes how to set custom resolution states for alerts generated in Operations Manager to support your incident management process.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-ms.manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+ms.manager: evansma
 ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center

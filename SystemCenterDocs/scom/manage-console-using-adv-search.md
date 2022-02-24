@@ -1,9 +1,9 @@
 ---
 title: Using Advanced Search
 description: This article describes how to search in My Workspace in the Operations Manager Operations console to see data based on your specific criteria.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-ms.manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+ms.manager: evansma
 ms.date: 02/13/2018
 ms.custom: na
 ms.prod: system-center

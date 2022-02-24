@@ -4,7 +4,7 @@ title: How to Install the Operations Console
 description: This article describes how to install the Operations Manager Operations console on other servers and computers.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: evansma
 ms.date: 11/08/2017
 ms.custom: na
 ms.prod: system-center

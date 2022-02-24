@@ -2,10 +2,10 @@
 ms.assetid: 77d0924b-4be1-4e41-93f5-6097aed8fcea
 title: Set up an SDN RAS gateway in the VMM fabric
 description: This article describes how to Set up an SDN RAS gateway in the VMM fabric
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: evansma
-ms.date: 11/29/2021
+ms.date: 02/02/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -198,7 +198,7 @@ This example uses the generation 2 template.
 5. Click **Deploy Service** to begin the service deployment job.
 
     > [[!NOTE]
-    > 
+    >
     > - Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. If gateway deployment fails, delete the failed service instance in **All Hosts** > **Services** before you retry the deployment.
     >
     > - If you aren't using a volume licensed VHDX (or the product key isn't supplied using an answer file), then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
@@ -240,7 +240,7 @@ Now that the gateway service is deployed, you can configure the properties, and 
 3. Find the **Associated Service** field under **Service information**, and click **Browse**. Select the gateway service instance you created earlier, and click **OK**.
 4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines.
 
-   > [!NOTE] 
+   > [!NOTE]
    > The Run as account must have Administrator privileges on the gateway VMs.
 
 5. In **GRE VIP subnet**, select the VIP subnet that you created previously.
@@ -267,7 +267,7 @@ Now that the gateway service is deployed, you can configure the properties, and 
 9. Configure the number of reserved nodes for back-up in **Nodes for reserved for failures field**.
 10. To configure individual gateway VMs, click each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
 
-   > [!NOTE] 
+   > [!NOTE]
    > You must configure the gateway BGP peers, if you plan to use GRE connections.
 
 The service instance you deployed is now associated with the gateway Manager role. You should see the gateway VM instance listed under it.

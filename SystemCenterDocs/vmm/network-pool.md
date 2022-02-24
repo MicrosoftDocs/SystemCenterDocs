@@ -2,9 +2,9 @@
 ms.assetid: a0d8b08f-b44f-476e-a530-493378c2e4da
 title: Set up static IP address pools in the VMM fabric
 description: This article describes how to set up IP address pools in the VMM fabric
-author: JYOTHIRMAISURI
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 01/29/2021
 ms.topic: article
 ms.prod: system-center
@@ -22,7 +22,7 @@ ms.technology: virtual-machine-manager
 This article describes how to set up static IP address pools for logical and VM networks in the System Center - Virtual Machine Manager (VMM) networking fabric.
 
 >[!NOTE]
-> While creating a static IP address pool in VMM, do not use the IP address range (that is managed by the pool) outside of VMM, in the same environment. 
+> While creating a static IP address pool in VMM, do not use the IP address range (that is managed by the pool) outside of VMM, in the same environment.
 
 When you set up the logical network you'll need to configure a static IP address pool if you're not using DHCP. In some circumstances you'll need to create IP address pools on the logical network only, and in others you'll need to create the pool on both the logical and VM networks:
 

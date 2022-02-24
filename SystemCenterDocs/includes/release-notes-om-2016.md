@@ -1,10 +1,10 @@
 ---
 title:  include file
 description: include file to summarize the release notes for OM 2016.
-manager:  cfcarmonm
+manager: evansma
 ms.topic:  include
-author:  mgoedtel
-ms.author: magoedte
+author: jyothisuri
+ms.author: jsuri
 ms.prod:  system-center
 ms.technology: operations-manager
 ms.date: 05/23/2017
