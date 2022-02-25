@@ -2,8 +2,8 @@
 ms.assetid: e5aebf63-661d-451d-a227-35a38c4865aa
 title: Views and dashboards in Management Pack for SQL Server Reporting Services
 description: This article explains views and dashboards in Management Pack for SQL Server Reporting Services
-author: jyothisuri
-ms.author: jsuri
+author: TDzakhov
+ms.author: v-tdzakhov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
