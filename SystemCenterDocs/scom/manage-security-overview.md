@@ -45,8 +45,6 @@ In Operations Manager, operations-such as resolving alerts, running tasks, overr
 |Profile|Job Functions and Scope|  
 |-----------|---------------------------|  
 |Administrator|Includes full privileges available in Operations Manager. **Note:** You can only add Active Directory security groups to the Administrator role.|  
-|Read-only Administrator|Includes all the read privileges in Operations Manager along with reporting. (applicable for Operations Manager 2022)|
-|Delegated administrator|Includes all the read privileges in Operations Manager except reporting. Grants member the ability to create a custom user role with Delegated administrator as base profile. (applicable for Operations Manager 2022)|
 |Advanced Operator|Includes a set of privileges designed for users who need access to limited adjustment of monitoring configurations in addition to the Operator privileges. Grants members the ability to override the configuration of rules and monitors for specific targets or groups of targets within the configured scope. Advanced Operator also inherits Operator privileges.|  
 |Application Monitoring Operator|Includes a set of privileges designed for users that need access to **Application Diagnostics**. A user role based on the Application Monitoring Operator profile grants members the ability to see the Application Monitoring events in **Application Diagnostics** web console. **Note:** Access to the **Application Advisor** feature requires the Report Operator or Administrator profile.|  
 |Author|Includes a set of privileges designed for authoring of monitoring configurations. Grants members the ability to create, edit, and delete monitoring configuration (for example, tasks, rules, monitors, and views) for specific targets or groups of targets within the configured scope.|  
@@ -55,6 +53,17 @@ In Operations Manager, operations-such as resolving alerts, running tasks, overr
 |Report Operator|Includes a set of privileges designed for users who need access to Reports. Grants members the ability to view reports according to their configured scope. **Caution:** Users assigned to this role have access to all report data in the Reporting Data Warehouse and are not limited by scope.|  
 |Report Security Administrator|Enables the integration of SQL Server Reporting Services security with Operations Manager user roles. This gives Operations Manager Administrators the ability to control access to reports. This role can have only one member account and cannot be scoped.|  
 
+
+::: moniker range="sc-om-2022"
+
+In addition to the existing Job profiles listed above, Operations Manager 2022 supports the following new Job profiles:
+
+|Profile|Job Functions and Scope|  
+|-----------|---------------------------|   
+|Read-only Administrator|Includes all the read privileges in Operations Manager along with reporting.|
+|Delegated administrator|Includes all the read privileges in Operations Manager except reporting. Grants member the ability to create a custom user role with Delegated administrator as base profile.|
+
+::: moniker-end
 ## Define a scope using Operations Manager groups
 
 The scope of a user role determines which objects that user role can view and perform actions on in System Center – Operations Manager. A scope is comprised of one or more Operations Manager groups and is defined when creating a user role as part of the Create User Role Wizard. The **Group Scope** page of the **Create User Role Wizard** provides a list of all existing Operations Manager groups. You can choose all or some of these groups as the scope of the user role you are creating.
