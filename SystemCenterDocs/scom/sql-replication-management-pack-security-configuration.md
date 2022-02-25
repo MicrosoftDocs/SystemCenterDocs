@@ -2,8 +2,8 @@
 ms.assetid: f79efcef-1dae-4a9a-a079-f6e8378070f9
 title: Security configuration in Management Pack for SQL Server Replication
 description: This article explains security configuration in Management Pack for SQL Server Replication
-author: jyothisuri
-ms.author: jsuri
+author: TDzakhov
+ms.author: v-tdzakhov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
