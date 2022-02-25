@@ -23,9 +23,9 @@ monikerRange: '>=sc-om-2016 <sc-om-1807 || sc-om-2019 || sc-om-2022'
 
 ::: moniker range="sc-om-2022"
 
-This section of the Deployment Guide provides information about how to upgrade to System Center 2022 from an older supported version. You can upgrade to Operations Manager 2022 from Operations Manager versions 2019 and 2016.
+This section of the Deployment Guide provides information about how to upgrade to System Center 2022 from an older supported version. You can upgrade to Operations Manager 2022 from Operations Manager versions 2019.
 
-It is assumed in this guide that you are performing an upgrade from System Center 2019/2019 UR2 or 2016. Do not upgrade from 2019 UR1.
+It is assumed in this guide that you are performing an upgrade from System Center 2019.
 
 For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see Deploying System Center Operations Manager.
 
