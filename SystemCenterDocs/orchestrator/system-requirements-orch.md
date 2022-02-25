@@ -13,11 +13,11 @@ ms.technology: orchestrator
 
 # System requirements for System Center Orchestrator
 
-::: moniker range="sc-orch-2019"
+::: moniker range="sc-orch-2022"
 
-This article details the system requirements for System Center 2019 - Orchestrator.
+This article details the system requirements for System Center 2022 - Orchestrator.
 
-[!INCLUDE [system-reqs-orch-2019.md](../includes/system-reqs-orch-2019.md)]
+[!INCLUDE [system-reqs-orch-2022.md](../includes/system-reqs-orch-2022.md)]
 
 ::: moniker-end
 
