@@ -21,6 +21,14 @@ This article details the system requirements for System Center 2022 - Orchestrat
 
 ::: moniker-end
 
+::: moniker range="sc-orch-2019"
+
+This article details the system requirements for System Center 2019 - Orchestrator.
+
+[!INCLUDE [system-reqs-orch-2019.md](../includes/system-reqs-orch-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-orch-1807"
 
 [!INCLUDE [eos-notes-orchestrator.md](../includes/eos-notes-orchestrator.md)]
