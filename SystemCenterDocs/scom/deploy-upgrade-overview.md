@@ -77,7 +77,7 @@ There are several options for upgrade:
 
 ::: moniker range="sc-om-2022"
 
-3. If you want to maintain your earlier version of Operations Manager (2019, 2016) Operations Manager environment, you can install version 2022 in parallel, upgrade your agents and multi-home them between both management groups.
+3. If you want to maintain your earlier version of Operations Manager (2019) Operations Manager environment, you can install version 2022 in parallel, upgrade your agents and multi-home them between both management groups.
 
 ::: moniker-end
 
@@ -110,7 +110,6 @@ The following table lists the scenarios in which coexistence between Operations 
 
 | Version | Management Group Coexistence |
 |:--- |:---|
-|  Operations Manager 2016 RTM to the latest update rollup| Yes|
 |  Operations Manager 2019 RTM to the latest update| Yes|
 
 ## In-place upgrade
@@ -118,7 +117,6 @@ The following table lists the scenarios in which coexistence between Operations 
 System Center 2022 - Operations Manager supports an in-place upgrade from the following versions:
 
 - System Center 2019
-- System Center 2016
 
 ::: moniker-end
 
@@ -164,7 +162,7 @@ Agents can be upgraded before the new Operations Manager management group is dep
 
 ## High level overview of upgrading agents and running two environments
 
-The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center supported version environment is left intact. Agents that have been upgraded to System Center 2022 Operations Manager on your upgrade path, are fully capable of working with native Operations Manager 2019 and 2016 functionality.
+The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center supported version environment is left intact. Agents that have been upgraded to System Center 2022 Operations Manager on your upgrade path, are fully capable of working with native Operations Manager 2019 functionality.
 
 Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group. For further information, see How to Upgrade Agents in a Parallel Deployment.
 
