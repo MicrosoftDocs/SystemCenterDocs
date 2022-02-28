@@ -86,7 +86,7 @@ For more information about how to set up, configure and run your environment to 
 
 ::: moniker range="sc-orch-2022"
 
-## Brand new web console and web API
+## New web console and web API
 
 A new web console and web API is introducted in System Center Orchestrator 2022. For more information see 
 
