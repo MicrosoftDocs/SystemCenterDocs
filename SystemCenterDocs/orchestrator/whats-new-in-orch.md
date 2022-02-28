@@ -88,11 +88,11 @@ For more information about how to set up, configure and run your environment to 
 
 ## Brand new web console and web API
 
-Introducing a brand new web console and web API in System Center Orchestrator 2022. For more information see 
+A new web console and web API is introducted in System Center Orchestrator 2022. For more information see 
 
 ## Support for 64 bit
 
-This release of System Center Orchestrator supports 64 bit.
+System Center Orchestrator 2022 supports 64 bit.
 
 ::: moniker-end
 

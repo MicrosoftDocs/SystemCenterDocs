@@ -43,7 +43,7 @@ The following versions of Windows client operating system are supported for the 
 
 The following software is required for a full installation of Orchestrator on a single computer:
 
-- Microsoft SQL Server 2016, 2017 or 2019 – Orchestrator requires only the basic SQL Server features found in the Database Engine Service. No additional features are required. Orchestrator supports SQL_Latin1_General_CP1_CI_AS for collation. The installation wizard uses SQL_Latin1_General_CP1_CI_AS as the default collation to create the orchestration database. For more information, see the section on [SQL Server](#sql-server).
+- Microsoft SQL Server 2019 or 2022 – Orchestrator requires only the basic SQL Server features found in the Database Engine Service. No additional features are required. Orchestrator supports SQL_Latin1_General_CP1_CI_AS for collation. The installation wizard uses SQL_Latin1_General_CP1_CI_AS as the default collation to create the orchestration database. For more information, see the section on [SQL Server](#sql-server).
 
     > [!NOTE]
     > Management servers and runbook servers installed on the same computer must use the same database. The management server must run as a 32-bit application.
@@ -71,8 +71,8 @@ The following software is required for a full installation of Orchestrator on a 
 **SQL version** | **Supported**
 --- | ---
 **[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
-**[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
-**SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)** | Y
+**[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Yl
+**SQL Server 2019 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2019)** | Y
 
 >[!NOTE]
 > When you deploy Orchestrator in an **Always ON** scenario, the Database Availability wizard prompts for the database encryption key password. For information on how to retrieve the password, see [database migration](../orchestrator/migrate-orchestrator-between-environments.md).
