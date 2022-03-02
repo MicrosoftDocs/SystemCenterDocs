@@ -2,8 +2,8 @@
 ms.assetid: 
 title: System requirements for System Center Operations Manager
 description: This article describes the software and hardware system requirements for System Center Operations Manager
-author: v-jysur
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: evansma
 ms.date: 03/02/2021
 ms.topic: include
@@ -70,15 +70,15 @@ Use this information to evaluate if your hardware environment is ready to suppor
 The following versions of Windows Server operating system are supported for the following Operations Manager components.
 
 
-| Component                                                           | Windows Server 2016 Standard, Datacenter | Windows 2016 Server Core | Windows Server 2019 Standard, Datacenter | Windows Server 2019 Server Core | Windows Server 2022 Standard, Datacenter | Windows Server 2022 Server Core |
+| Component                                                          | Windows Server 2019 Standard, Datacenter | Windows Server 2019 Server Core | Windows Server 2022 Standard, Datacenter | Windows Server 2022 Server Core |
 |:--------------------------------------------------------------------|:-----------------------------------------|:-------------------------|:-----------------------------------------|:--------------------------------| :-----------------------------------------|:--------------------------------|
-| **Operations Manager** Management Server                            | Yes                                      | Yes                      | Yes                                      | Yes    | Yes      | Yes          |
-| **Operations Manager** Gateway Server                               | Yes                                      | Yes                      | Yes                                      | Yes    | Yes      | Yes          |
-| **Operations Manager** Web Console                                  | Yes                                      |                          | Yes                                      |        | Yes      |              |
-| **Operations Manager** ACS Collector                                | Yes                                      |                          | Yes                                      |        | Yes      |              |
-| **Operations Manager** Operations console                           | Yes                                      |                          | Yes                                      |        | Yes      |              |
-| **Operations Manager** Operational, Data Warehouse,<br>ACS database | Yes                                      | Yes                      | Yes                                      | Yes    | Yes      | Yes          |
-| **Operations Manager** Reporting server                             | Yes                                      |                          | Yes                                      |        |Yes       |              |
+| **Operations Manager** Management Server                            | Yes                                      | Yes    | Yes      | Yes          |
+| **Operations Manager** Gateway Server                               | Yes                                      | Yes    | Yes      | Yes          |
+| **Operations Manager** Web Console                                  | Yes                                      |        | Yes      |              |
+| **Operations Manager** ACS Collector                                | Yes                                      |        | Yes      |              |
+| **Operations Manager** Operations console                           | Yes                                      |        | Yes      |              |
+| **Operations Manager** Operational, Data Warehouse,<br>ACS database | Yes                                      | Yes    | Yes      | Yes          |
+| **Operations Manager** Reporting server                             | Yes                                      |        |Yes       |              |
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
@@ -90,18 +90,13 @@ The following versions of Windows Server operating system are supported for the 
 - Operating System: See [Server Operating System requirements](#server-operating-system).
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
-- .NET Framework 4, .NET Framework 4.5 or .NET Framework 4.8 is required. 
+- .NET Framework 4.7.2 or .NET Framework 4.8 is required. 
 
 ### Operations Manager console
 
 - Operating System: See [Server Operating System requirements](#server-operating-system).
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
-- [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).
-
-> [!NOTE]
-> Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=53164). The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.
-
-- .NET Framework 4, .NET Framework 4.5, or .NET Framework 4.8 is required.
+- .NET Framework 4.7.2 or .NET Framework 4.8 is required. 
 
 ### Web console
 
@@ -132,7 +127,7 @@ The following versions of Windows Server operating system are supported for the 
     - Windows Authentication
  <br>
 - Selected website for web console: Requires a configured http or https binding.
-- .NET Framework 4, .NET Framework 4.5, or .NET Framework 4.8 is required.
+- .NET Framework 4.7.2 or .NET Framework 4.8 is required. 
 
 > [!NOTE]
 > Installation of the web console requires that **ISAPI and CGI Restrictions** in IIS are enabled for ASP.NET 4.8. To enable this, select the web server in **IIS Manager**, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.8**, and then click **Allow**.
@@ -147,11 +142,11 @@ The following versions of Windows Server operating system are supported for the 
     > [!NOTE]
     > System Center 2016 – Operations Manager and later supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.
 
-- .NET Framework 4, .NET Framework 4.5, or .NET Framework 4.8 is required.
+- .NET Framework 4.7.2 or .NET Framework 4.8 is required. 
 
 ## Client operating system
 
-Windows 10 client operating system is supported for the Operations Manager 2022 Operations console.
+Windows 10 and Windows 11 client operating system are supported for the Operations Manager 2022 Operations console.
 
 ## Microsoft Monitoring Agent operating system
 
@@ -161,8 +156,10 @@ Windows 10 client operating system is supported for the Operations Manager 2022 
 - Windows Server 2022 - Standard, Datacenter, Server Core
 - Windows Server 2019 - Standard, Datacenter, Server Core
 - Windows Server 2016 - Standard, Datacenter, Server Core
+- Windows Server 2012 R2 - Standard, Datacenter, Server Core
+- Windows Server 2012 - Standard, Datacenter, Server Core
 - Windows 10 - Enterprise, Pro
-- Windows 11 - Enterprise
+- Windows 11 - Enterprise, Pro
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version 3.0.
 - Microsoft .NET Framework (both the 3.5 and 4.7.2 or higher versions of Microsoft .NET are required.)
