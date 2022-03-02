@@ -40,7 +40,19 @@ See the following sections for detailed information on Change tracking feature:
 
 ## Change tracking for management packs
 
-Three reports **Management Pack History**, **Management Pack Objects** and **Overrides tracking** are available to display the changes. These reports are available under **Reporting** > **Microsoft Generic Report library**.
+Three reports **Management Pack History**, **Management Pack Objects** and **Overrides tracking** are available to display the changes.
+
+::: moniker range="sc-om-2019"
+
+These reports are available under **Reporting** > **Microsoft Generic Report library**.
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+These reports are available under **Reporting** > **Microsoft Change Tracking Report Library**
+
+::: moniker-end
 
 You can use the filters available in the reports to set the criteria and get the reports per your requirement.
 
@@ -75,17 +87,30 @@ This report displays the following fields and values:
 
 ![Management pack versions](./media/change-tracking/management-pack-versions.png)
 
+::: moniker range="sc-om-2019"
+
 > [!NOTE]
 > - Any management packs, which were imported/deleted/updated prior to UR2 upgrade will be captured in the report, but user context will not be captured for these.
 > - Any update on management pack will be captured in two entries in the report. First entry for deletion of older management pack version and second entry for the installation of new version.
 
+::: moniker-end
 
+::: moniker range="sc-om-2022"
+
+> [!NOTE]
+> Any update on management pack will be captured in two entries in the report. First entry for deletion of older management pack version and second entry for the installation of new version.
+
+::: moniker-end
 ### Management pack objects
 
 The management pack objects report tracks and generates the list of all management pack objects, which are newly created or deleted from the management server. This report also tracks edits on management pack objects like renaming a group/monitor/rule or adding/deleting a member in the group etc.
 
+::: moniker range="sc-om-2019"
+
 - This report displays the history of those management pack objects, which are changed after the upgrade of Operations Manager management server to UR2.
 - Any management pack objects, which were created/deleted/edited prior to UR2 upgrade will also be shown in the report, but user context will not be captured for these objects.
+
+::: moniker-end
 
 You can filter the reports by date, username, management pack, action criteria (new, delete or edit) and type of objects.
 
