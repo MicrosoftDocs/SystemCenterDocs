@@ -50,7 +50,7 @@ These reports are available under **Reporting** > **Microsoft Generic Report lib
 
 ::: moniker range="sc-om-2022"
 
-These reports are available under **Reporting** > **Microsoft Change Tracking Report Library**
+These reports are available under **Reporting** > **Microsoft Change Tracking Report Library**.
 
 ::: moniker-end
 
