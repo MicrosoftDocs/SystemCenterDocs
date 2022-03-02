@@ -2,8 +2,8 @@
 ms.assetid: dc45fd44-50ff-47af-bfdd-5407695c6cae
 title: Custom query-based monitoring in Management Pack for Azure SQL Database
 description: This article explains how to configure custom query monitoring in Management Pack for Azure SQL Database
-author: jyothisuri
-ms.author: jsuri
+author: TDzakhov
+ms.author: v-tdzakhov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
