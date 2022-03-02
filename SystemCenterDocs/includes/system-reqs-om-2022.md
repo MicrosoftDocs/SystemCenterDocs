@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: v-jysur
 ms.author: v-jysur
 manager: evansma
-ms.date: 11/29/2021
+ms.date: 03/02/2021
 ms.topic: include
 ms.prod: system-center
 ms.technology: operations-manager
@@ -197,7 +197,6 @@ The following table lists the scenarios in which coexistence between Operations 
 System Center 2022 - Operations Manager supports an in-place upgrade from the following versions:
 
 - System Center 2019
-- System Center 2016
 
 ## Active Directory and DNS
 
