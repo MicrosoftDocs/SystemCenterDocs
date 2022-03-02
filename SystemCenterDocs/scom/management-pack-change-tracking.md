@@ -217,9 +217,9 @@ If any of the grooming or the synchronization workflows fail to work, correspond
 
 ## Known issues
 
-- When you upgrade Operations Manager server, you might see event ID 33333 and 31552 in event logs. These events might generate some alerts in the Operations Manager. Once the upgrade is complete, alerts and events will be resolved automatically.
+- When you update Operations Manager server, you might see event ID 33333 and 31552 in event logs. These events might generate some alerts in the Operations Manager. Once the update is complete, alerts and events will be resolved automatically.
 - For Microsoft.SystemCenter.DBUpdateHelper management pack user context will not be captured.
-- During the upgrade of management servers, some management packs that are imported, do not capture the user context. Once the upgrade is complete, then the user context will be captured. To make sure change tracking feature captures all transactions, upgrade all management servers.
+- During the update of management servers, some management packs that are imported, do not capture the user context. Once the update is complete, then the user context will be captured. To make sure change tracking feature captures all transactions, update all management servers.
 
 ## Next steps
 - [Create, import or export a management pack](manage-mp-import-remove-delete.md)
