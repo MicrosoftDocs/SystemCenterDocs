@@ -39,7 +39,7 @@ This information helps you understand the performance and scalability characteri
 
 ## Upgrade sequence
 
-If you are upgrading an installation of System Center 2019/2016 - Operations Manager that is integrated with one or more System Center components, it is important that you upgrade in the following order. 
+If you are upgrading an installation of System Center 2019 - Operations Manager that is integrated with one or more System Center components, it is important that you upgrade in the following order. 
 
 1. Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group. 
 1. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager. 
@@ -187,13 +187,12 @@ The following table lists the scenarios in which coexistence between Operations 
 | Version | Management Group Coexistence |
 |:--- |:---|
 |  Operations Manager 2019 to the latest update rollup| Yes|
-|  Operations Manager 2016 RTM to the latest update rollup| Yes|
 
 ## In-place upgrade
 
 System Center 2022 - Operations Manager supports an in-place upgrade from the following versions:
 
-- System Center 2019
+System Center 2019
 
 ## Active Directory and DNS
 
