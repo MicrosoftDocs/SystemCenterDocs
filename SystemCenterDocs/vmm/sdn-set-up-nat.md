@@ -32,7 +32,7 @@ This article provides information about how to configure a NAT connection for SD
 
 ::: moniker range="sc-vmm-2022"
 
-VMM 2022 supports dual stack. However, currently, dual stack is not supported for NAT.
+VMM 2022 supports dual stack. NAT rules to Dual stack VM networks is not supported at VMM console. NAT rules can be specified using PowerShell cmdlets.  
 
 ::: moniker-end
 
