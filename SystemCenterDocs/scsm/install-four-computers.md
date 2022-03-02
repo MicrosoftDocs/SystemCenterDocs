@@ -157,8 +157,9 @@ The data warehouse databases include the following three databases: DWStagingAnd
 
     1.  In the **Report server** box, enter the name of the computer that will host the reporting server. In this example, this will be the computer that hosts the data warehouse database, enter **Computer 4**, and then press the TAB key.  
 
-        > [!NOTE]  
-        >  The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented cannot be resolved in your environment, you will need to configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information see the TechNet article [Configure a URL](/sql/reporting-services/install-windows/configure-a-url-ssrs-configuration-manager).  
+        > [!NOTE] 
+        > - Manually configure the SQL Server Reporting Services even when SSRS and data warehouse management server MS are on the same machine. For detailed information, see [Manual steps to configure remote SQL Server Reporting Services](/system-center/scsm/config-remote-ssrs?view=sc-sm-2019). 
+        > - The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented cannot be resolved in your environment, you will need to configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information see the TechNet article [Configure a URL](/sql/reporting-services/install-windows/configure-a-url-ssrs-configuration-manager).  
 
     2.  Verify that **Default** is displayed in the **Report server instance** box.  
 
