@@ -14,11 +14,11 @@ MonikerRange: '>=sc-om-2019'
 
 # Track changes in Operations Manager
 
+::: moniker range="sc-om-2019"
+
 In System Center - Operations Manager, user roles are defined to potentially change monitoring settings for applications and services through management packs. There can be multiple users associated with a single user role. In earlier versions of Operations Manager, there was no tracking of these changes to identify the user who has done the changes and when.
 
 As Operations Manager is a monitoring platform, multiple users interact with Operation Manager to monitor the data that is relevant to their role. A profile is defined for a group of users that imposes role-based security, and limit privileges that users have for various aspects of Operations Manager. When multiple users access and change the same object, it gets difficult to identify the user who has done the changes and when.
-
-::: moniker range="sc-om-2019"
 
 With Operations Manager 2019 UR2, change tracking feature was introduced. Change tracking is enabled by default in 2019 UR2 to track and report the changes on the management packs and management pack objects. 2019 UR3 supports change tracking for agent and monitor health reset status.
 
@@ -26,9 +26,9 @@ With Operations Manager 2019 UR2, change tracking feature was introduced. Change
 
 ::: moniker range="sc-om-2022"
 
-Change tracking feature (introduced with 2019 UR2) is enabled by default to track and report the changes on the management packs and management pack objects. Change tracking feature supports tracking for agent and monitor's health reset status.
+Change tracking feature in Operations Manager tracks and reports the changes on the management packs and management pack objects. Also, supports tracking for agent and monitor's health reset status.
 
-With Operations Manager 2022, all change tracking reports are available in one single folder by name **Change Tracking**.
+Change tracking feature is enabled by default. With Operations Manager 2022, all change tracking reports are available in one single folder by name **Change Tracking**.
 
 ::: moniker-end
 
