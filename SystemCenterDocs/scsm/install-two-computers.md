@@ -42,7 +42,7 @@ As the first step in the two-computer installation process, install the Service 
 - Service Manager services account  
 - Service Manager workflow account  
 
-  For more information about the permissions that these accounts require, see [Account required during Setup](prepare-deploy.md).  
+For more information about the permissions that these accounts require, see [Account required during Setup](prepare-deploy.md).  
 
 ### To install the Service Manager management server, Service Manager database, and console  
 
@@ -94,7 +94,7 @@ As the second step in the two\-computer installation process for System Center -
 - Service Manager services account  
 - Reporting account  
 
-  For more information about the permissions that these accounts require, see [Accounts Required During Setup](prepare-deploy.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
+For more information about the permissions that these accounts require, see [Accounts Required During Setup](prepare-deploy.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
 
 ### To install a data warehouse management server and data warehouse databases  
 
