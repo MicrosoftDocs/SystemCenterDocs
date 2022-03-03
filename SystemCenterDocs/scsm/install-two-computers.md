@@ -42,7 +42,7 @@ As the first step in the two-computer installation process, install the Service 
 - Service Manager services account  
 - Service Manager workflow account  
 
-  For more information about the permissions that these accounts require, see [Account required during Setup](prepare-deploy.md).  
+For more information about the permissions that these accounts require, see [Account required during Setup](prepare-deploy.md).  
 
 ### To install the Service Manager management server, Service Manager database, and console  
 
@@ -94,7 +94,7 @@ As the second step in the two\-computer installation process for System Center -
 - Service Manager services account  
 - Reporting account  
 
-  For more information about the permissions that these accounts require, see [Accounts Required During Setup](prepare-deploy.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
+For more information about the permissions that these accounts require, see [Accounts Required During Setup](prepare-deploy.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
 
 ### To install a data warehouse management server and data warehouse databases  
 
@@ -129,7 +129,8 @@ As the second step in the two\-computer installation process for System Center -
 10. On the **Configure the reporting server for the data warehouse** page, Service Manager will use the existing computer if SQL Server Reporting Services is present. Accept the defaults, and then click **Next**.  
 
     > [!NOTE]  
-    > The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented cannot be resolved in your environment, configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information see [How to: Configure a URL \(Reporting Services Configuration\)](/sql/reporting-services/install-windows/configure-a-url-ssrs-configuration-manager).  
+    > - Manually configure the SQL Server Reporting Services even when SSRS and data warehouse management server MS are on the same machine. For detailed information, see [Manual steps to configure remote SQL Server Reporting Services](/system-center/scsm/config-remote-ssrs).
+    > - The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented cannot be resolved in your environment, configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information see [How to: Configure a URL \(Reporting Services Configuration\)](/sql/reporting-services/install-windows/configure-a-url-ssrs-configuration-manager).  
 
 11. On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
 
