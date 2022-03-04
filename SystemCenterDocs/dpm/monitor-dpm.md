@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 05/07/2021
+ms.date: 03/04/2022
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -45,6 +45,10 @@ Central Console is a System Center Operations Manager console that you can deplo
 -   In **State View**, you can get information about the state of  DPM objects.
 
 ## Monitor DPM in the Azure console
+
+>[!NOTE]
+> For the backed up items to be visible in the Azure portal, the DPM version must be 1807 (5.1.378.0) or 2019 (version 10.19.58.0 or later) .
+
 You use the Dashboard to get a quick overview of the state of your System Center - Data Protection Manager (DPM) backups in Windows Azure Backup. The Dashboard provides a centralized gateway to view servers protected by backup vaults, as follows:
 
 -   **Usage Overview** shows how you are using the backup vault. You can select a vault and see how much storage is being consumed by the vault, versus the amount of storage provided by your subscription. You can also see the number of servers registered to the vault.
@@ -126,6 +130,7 @@ Here is a sample view:
   >[!NOTE]
   > - The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
   > - Some datasources in the Backup items (DPM) view from recovery service vault in Azure portal, are not getting refreshed/updated. Check the workarounds to fix this [known issue](./dpm-release-notes.md?view=sc-dpm-2019#dpm-datasources-not-being-reflected-on-recovery-services-vault).
+  > - For the items backed-up to Azure using DPM, the list will show all the data sources protected (both disk and online) using the DPM server. If the protection is stopped for the datasource with backup data retained, the datasource will be still listed in the portal. You can go to the details of the data source to see if the recovery points are present in the disk, online or both. Also, datasources for which the online protection is stopped but data is retained, billing for the online recovery points continue, until the data is completely deleted.
 
 - Click the *backup item* to view more details such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
 
