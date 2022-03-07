@@ -4,7 +4,7 @@ description: This article describes how to customize the notification messages d
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 04/29/2019
+ms.date: 03/04/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -30,6 +30,7 @@ In System Center - Operations Manager, you can customize the format that will be
 |Email|**Subject**: Alert: *alert name* Resolution state: *new or closed*<br><br>Alert:<br><br>Source:<br><br>Path:<br><br>Last modified by:<br><br>Last modified time:<br><br>Alert description:<br><br>Alert view link:<br><br>Notification subscription ID generating this message:|  
 |Instant message (IM)|Alert: *alert name* Path: *path to managed entity* Resolution state: *new or closed* Last modified by: *last modified by*|  
 |SMS (text message)|Alert: *alert name* Resolution state: *new or closed*|  
+|Microsoft Teams|Alert:<br><br>Source:<br><br>Path:<br><br>Last modified by:<br><br>Last modified time:<br><br>Alert description:<br><br>Alert view link:<br><br>Source view link:<br><br>Notification subscription ID generating this message:|
 
 You can change the format on the **Format** page of the channel type wizard when you create the channel or after the channel is created. The procedure is the same for all three channel types.  
 
