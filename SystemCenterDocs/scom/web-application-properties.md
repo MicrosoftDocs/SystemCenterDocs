@@ -16,24 +16,25 @@ monikerRange: '>=sc-om-2019'
 
  The following sections describe the settings available for a **Web Application Transaction Monitoring** template in Operations Manager. You can set the properties of these requests by using the procedure in [How to Edit Settings or Requests in a Web Application](edit-web-application-settings.md).
 
- ::: moniker range=">=sc-om-2019"
-
  ## Ignore server certificate errors
 
  Web application URL monitoring, web application availability and transaction monitoring are used to test a URL/website/web-based application, by sending WinHttp requests, validating their response, and measuring their performance.
 
- The Website that is being monitored can be an internal or an external URL. The monitoring is done from a watcher node computer, on which you need to install the Operations Manager agent. You need to configure the web-based URL that you want to test (this configuration is written to a custom MP). The monitoring module establishes and connects to a HTTP/HTTPS session depending on URL, and then sends a WinHttp request. In releases prior to Operations Manager 2019, if this send request fails due to a security error, it sets the flags to ignore the server certificate CN, expiry date, untrusted CA, and incorrect usage, and then retries the send request. This retry ignores the server certificate errors.
+ The Website that is being monitored can be an internal or an external URL. The monitoring is done from a watcher node computer, on which you need to install the Operations Manager agent. You need to configure the web-based URL that you want to test (this configuration is written to a custom MP). The monitoring module establishes and connects to a HTTP/HTTPS session depending on URL, and then sends a WinHttp request.
 
- With Operations Manager 2019, web application URL monitoring capability has been improved to not ignore server certificate errors by default. Send requests will not be retried for the URLs with certificate errors.
+ ::: moniker range="sc-om-2019"
+
+ In releases prior to Operations Manager 2019, if this send request fails due to a security error, it sets the flags to ignore the server certificate CN, expiry date, untrusted CA, and incorrect usage, and then retries the send request. This retry ignores the server certificate errors.
+
+ ::: moniker-end
+
+Operations Manager web application URL monitoring capability has been improved to not ignore server certificate errors by default. Send requests will not be retried for the URLs with certificate errors.
 
  However, you can ignore the server certificate errors if you wish to, while monitoring a website. To support this feature, we have added the option **Ignore Server Certificate Errors** in the Web Application Editor.  To monitor a website for which there is no valid SSL certificate, select this option.      
 
  ![server certification errors](./media/url-monitoring/ignore-server-certificate-errors.png)
 
  For existing websites that are being monitored, you can either select this new option on the Web Application Properties **General** tab or edit in the management pack. To support this enhancement, schema changes were made to the URLProbe module. [Learn more](url-probe-schema.md).
-
- ::: moniker-end
-
 
 ## General Tab
 

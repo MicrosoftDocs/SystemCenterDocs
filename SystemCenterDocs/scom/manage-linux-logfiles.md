@@ -48,7 +48,7 @@ The basic operation of log file monitoring in Linux includes the following steps
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 [!INCLUDE [log-file-monitoring-2019.md](../includes/linux-log-file-monitoring-2019.md)]
 

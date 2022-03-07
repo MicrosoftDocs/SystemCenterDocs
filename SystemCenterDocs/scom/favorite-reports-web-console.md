@@ -15,6 +15,8 @@ ms.topic: article
 
 # Favorite reports in Web console
 
+::: moniker range="sc-om-2019"
+
 This article provides information about how to create and view favorite reports in Operations Manager 2019 UR2 and later.
 
 > [!Note]
@@ -22,7 +24,17 @@ This article provides information about how to create and view favorite reports 
 
 In Operations Manager 2019 UR2 and later, you can run and view favorite reports from **Web Console** > **My Workspace**. This feature is available in Operations Manager 2012 web console, which is now supported in 2019 UR2.
 
-You can create a report in operations console and view them as favorite reports in the HTML5 web console.
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+This article provides information about how to create and view favorite reports in Operations Manager.
+
+You can run and view favorite reports from **Web Console** > **My Workspace**.
+
+::: moniker-end
+
+You can create a report in operations console and view them as *Favorite reports* in the HTML5 web console.
 
 ## Before you begin
 
