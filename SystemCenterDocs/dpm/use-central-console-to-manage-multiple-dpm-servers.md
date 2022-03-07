@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 11/01/2016
+ms.date: 03/07/2022
 title: Manage multiple DPM servers with Central Console
 ms.technology: data-protection-manager
 ms.assetid: 6e08e911-36e0-48d6-b71e-df4741811a0a
@@ -40,9 +40,15 @@ Central Console is a System Center Operations Manager console that you can deplo
 
 -   Scoped console - This is based on the DPM Administrator Console with a few minor differences.
 
+::: moniker range="sc-om-2019"
 
 ## Set up Central Console
 You can install Central Console on a server computer running Windows Server 2008 R2 or later, or a client computer running Windows 7 or later.  It can't be installed on the DPM server. Set it up by installing the relevant Operations Manager agent on each DPM server you want to manage, and then installing Central Console on the Operations Manager server by importing the DPM management pack and then installing the console.
+
+::: moniker-end
+
+>[!NOTE]
+>To upgrade the central console to a latest version, uninstall the older version and then install the latest version. In place upgrade is not supported.  
 
 1.  Deploy an Operations Manager agent to your DPM server.  [Read more](./use-ops-manager-to-manage-monitor-dpm.md?preserve-view=true&view=sc-dpm-1807#BKMK_OM).
 
