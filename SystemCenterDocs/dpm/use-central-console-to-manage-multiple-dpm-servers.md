@@ -40,9 +40,11 @@ Central Console is a System Center Operations Manager console that you can deplo
 
 -   Scoped console - This is based on the DPM Administrator Console with a few minor differences.
 
-::: moniker range="sc-om-2019"
 
 ## Set up Central Console
+
+::: moniker range="sc-dpm-2019"
+
 You can install Central Console on a server computer running Windows Server 2008 R2 or later, or a client computer running Windows 7 or later.  It can't be installed on the DPM server. Set it up by installing the relevant Operations Manager agent on each DPM server you want to manage, and then installing Central Console on the Operations Manager server by importing the DPM management pack and then installing the console.
 
 ::: moniker-end
