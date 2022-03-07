@@ -30,29 +30,29 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 2. Visualize monitoring data in HTML 5 dashboards with:
 
-  - [Alert widget](manage-create-web-dashboard-alerts.md)
+    - [Alert widget](manage-create-web-dashboard-alerts.md)
 
-  - [State widget](manage-create-web-dashboard-state.md)
+    - [State widget](manage-create-web-dashboard-state.md)
 
-  - [Performance widget (also works like the Object by performance widget)](manage-create-web-dashboard-perf.md)  
+    - [Performance widget (also works like the Object by performance widget)](manage-create-web-dashboard-perf.md)  
 
-  - [Topology widget](manage-create-web-dashboard-topology.md)
+    - [Topology widget](manage-create-web-dashboard-topology.md)
 
-  - [Tile widget](manage-create-web-dashboard-tile.md)
+    - [Tile widget](manage-create-web-dashboard-tile.md)
 
-  - [Custom widget](manage-create-web-dashboard-custom.md)
+    - [Custom widget](manage-create-web-dashboard-custom.md)
 
-  - [PowerShell widget](manage-create-web-dashboard-posh.md)
+    - [PowerShell widget](manage-create-web-dashboard-posh.md)
 
   ::: moniker range="sc-om-2019"
-     > [!NOTE]
-     > Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+
+     Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
 
   ::: moniker-end
 
   ::: moniker range="sc-om-2022"
-     > [!NOTE]
-     > Additional view options are available in Alert and State widget.  For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+
+     Additional view options are available in Alert and State widget. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
 
   ::: moniker-end
 
