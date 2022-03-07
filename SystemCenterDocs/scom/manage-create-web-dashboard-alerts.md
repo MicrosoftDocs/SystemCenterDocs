@@ -98,19 +98,28 @@ To perform these actions, hover your mouse over the widget and click on the elli
 
 ## Additional view options in Alert widget
 
+:: moniker range="sc-om-2022"
+
+Alert widget now supports *sort by* option.
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
+
 > [!NOTE]
 > This feature is applicable for 2019 UR3 and later.
 
-Alert widget now supports sort by option.
+Alert widget now supports *sort by* option.
 
 In earlier releases, this feature is not available for Alert widget, and on all H5 dashboard personalization but is available on all views of operations console of Operations Manager 2019.
 
-With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and also group the columns.
+With Operations Manager 2019 UR3 and later, you can sort the results columns in the **Alert** widget and also group the columns.
 
+::: moniker-end
 
 ### Support for sort by option
 
-In Operations Manager 2019 UR3 web console, the **Sort by** option is now available in **Add widget** wizard.
+The **Sort by** option is now available in **Add widget** wizard.
 
 To include this feature, while creating a new widget using the **Add widget** wizard in the web console, click **Display** and then select the column option available under **Sort by** drop-down menu. Save the settings for the new widget once done.
 
