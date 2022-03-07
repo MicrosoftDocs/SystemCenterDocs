@@ -33,10 +33,10 @@ Before you begin, ensure you have the following:
 - Teams tenant information.
 - Run As account. Delegated API type is used in Teams integration and the Rus As account credentials will be used to authenticate.
   Run As account should be
-   - A valid AAD account (sample: user@domain)
+   - A valid Azure Active Directory (AAD) account (sample: user@domain)
    - Licensed to use Microsoft Teams
    - A member of target Microsoft Teams channel
-   - No multi factor authentication (MFA) enabled
+   - No multifactor authentication (MFA) enabled
   For more information see [How to create and configure the Notification action account](/system-center/scom/manage-notifications-create-configure).
 - Link to the Teams channel created. For more information about Teams channels, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
 - Details of the newly created application in Azure. Instructions to register an application available at [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2).
