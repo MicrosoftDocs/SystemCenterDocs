@@ -26,6 +26,18 @@ System Center Operations Manager now delivers HTML5 based dashboards, which enha
 ## Supported scenarios
 You can take advantage of the following HTML5 dashboard capabilities:
 
+::: moniker range="sc-om-2019"
+
+   Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+ Additional view options are available in Alert and State widget. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+
+::: moniker-end
+
 1. Create HTML 5 dashboards from multiple browsers without a dependency on Silverlight.  
 
 2. Visualize monitoring data in HTML 5 dashboards with:
@@ -44,17 +56,6 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
     - [PowerShell widget](manage-create-web-dashboard-posh.md)
 
-  ::: moniker range="sc-om-2019"
-
-     Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
-
-  ::: moniker-end
-
-  ::: moniker range="sc-om-2022"
-
-     Additional view options are available in Alert and State widget. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
-
-  ::: moniker-end
 
 3. Perform create, edit and delete operations on the widgets.  
 
