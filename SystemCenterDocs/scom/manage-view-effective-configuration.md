@@ -21,7 +21,7 @@ ms.topic: article
 
 ::: moniker-end
 
- In System Center Operations Manager version 1807 and later, the Web console has been enhanced to allow an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.     
+ In System Center Operations Manager, the Web console allows an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.     
 
 From the results, you are able to see the following details:
 
