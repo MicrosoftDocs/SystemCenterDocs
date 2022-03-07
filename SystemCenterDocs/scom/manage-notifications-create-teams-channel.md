@@ -33,7 +33,7 @@ Before you begin, ensure you have the following:
 - Teams tenant information.
 - Run As account. Delegated API type is used in Teams integration and the Rus As account credentials will be used to authenticate.
   Run As account should be
-   - A valid Azure Active Directory (AAD) account (sample: user@domain)
+   - A valid Azure Active Directory (Azure AD) account (sample: user@domain)
    - Licensed to use Microsoft Teams
    - A member of target Microsoft Teams channel
    - No multifactor authentication (MFA) enabled
