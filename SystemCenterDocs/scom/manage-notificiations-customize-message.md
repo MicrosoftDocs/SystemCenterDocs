@@ -25,7 +25,7 @@ In System Center - Operations Manager, you can customize the format that will be
 > [!NOTE]  
 > The command channel type is not mentioned because it generates a command rather than a notification message. 
 
-::: moniker range=">=sc-om-2019"
+::: moniker range="sc-om-2019"
 
 |Channel type|Default notification format|  
 |------------|---------------------------|  
