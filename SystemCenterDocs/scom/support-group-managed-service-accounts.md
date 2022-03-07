@@ -30,7 +30,7 @@ Operations Manager 2019 UR1 and later supports group managed service accounts (g
 Operations Manager supports group managed service accounts (gMSA). This article details the accounts used for gMSA, and the procedures involved with gMSA support.
 
 >[!NOTE]
-The article provides information on how to use gMSA in operations manager, does not include information on how to create these. For information on how to create gMSA accounts, see [gMSA accounts](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
+>The article provides information on how to use gMSA in operations manager, does not include information on how to create these. For information on how to create gMSA accounts, see [gMSA accounts](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
 
 ::: moniker-end
 

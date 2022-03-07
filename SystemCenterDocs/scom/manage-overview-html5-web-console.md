@@ -30,12 +30,6 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 2. Visualize monitoring data in HTML 5 dashboards with:
 
-::: moniker range="sc-om-2019"
-   > [!NOTE]
-   > Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
-
-::: moniker-end
-
   - [Alert widget](manage-create-web-dashboard-alerts.md)
 
   - [State widget](manage-create-web-dashboard-state.md)
@@ -49,6 +43,18 @@ You can take advantage of the following HTML5 dashboard capabilities:
   - [Custom widget](manage-create-web-dashboard-custom.md)
 
   - [PowerShell widget](manage-create-web-dashboard-posh.md)
+
+  ::: moniker range="sc-om-2019"
+     > [!NOTE]
+     > Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+
+  ::: moniker-end
+
+  ::: moniker range="sc-om-2022"
+     > [!NOTE]
+     > Additional view options are available in Alert and State widget.  For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+
+  ::: moniker-end
 
 3. Perform create, edit and delete operations on the widgets.  
 
