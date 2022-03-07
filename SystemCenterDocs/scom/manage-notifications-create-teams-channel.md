@@ -36,7 +36,7 @@ Before you begin, ensure you have the following:
    - A valid Azure Active Directory (Azure AD) account (sample: user@domain)
    - Licensed to use Microsoft Teams
    - A member of target Microsoft Teams channel
-   - No multifactor authentication (MFA) enabled
+   - Not enabled for multifactor authentication (MFA).
    
   For more information see [How to create and configure the Notification action account](/system-center/scom/manage-notifications-create-configure).
 - Link to the Teams channel created. For more information about Teams channels, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
