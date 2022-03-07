@@ -4,7 +4,7 @@ description: This article describes how to enable Microsoft Teams notification c
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: evansma
-ms.date: 02/10/2022
+ms.date: 03/04/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -31,9 +31,16 @@ To configure alert notifications for Operations Manager, you must enable a notif
 Before you begin, ensure you have the following:
 
 - Teams tenant information.
+- Run As account. Delegated API type is used in Teams integration and the Rus As account credentials will be used to authenticate.
+  Run As account should be
+   - A valid Azure Active Directory (Azure AD) account (sample: user@domain)
+   - Licensed to use Microsoft Teams
+   - A member of target Microsoft Teams channel
+   - No multifactor authentication (MFA) enabled
+  For more information see [How to create and configure the Notification action account](/system-center/scom/manage-notifications-create-configure).
 - Link to the Teams channel created. For more information about Teams channels, see [Overview of Teams and channels in Microsoft Teams](/microsoftteams/teams-channels-overview).
 - Details of the newly created application in Azure. Instructions to register an application available at [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2).
-- For the newly created App, ensure the Graph API permission is given as **ChannelMessage.Send**.
+- For the newly created App, ensure the Graph API permission is given as **ChannelMessage.Send** and **Grant admin consent for Contoso** is selected.
 
   :::image type="graph api permission" source="media/teams-notifications/graph-api-permissions.png" alt-text="screenshot showing graph api permissions.":::
 

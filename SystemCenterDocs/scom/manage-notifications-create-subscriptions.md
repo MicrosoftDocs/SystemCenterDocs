@@ -4,7 +4,7 @@ description: This article describes how to create a notification subscription wh
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/14/2019
+ms.date: 03/04/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -20,7 +20,7 @@ ms.assetid: 8361d0b2-8b6d-462c-aee0-800eda31dd21
 
 ::: moniker-end
 
-In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.  
+In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), text message (SMS) or Microsoft Teams (applicable for 2022). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.  
 
 These procedures will explain how to specify the criteria or conditions that determine the alerts that will generate a notification, use of classes and groups, and criteria or conditions in your subscriptions to filter and align notifications with your organizational escalation path.  A subscription also defines the channel to be used for the notification and the subscribers to receive the notification.  You can use the combination of subscriber and subscription to tailor which alerts are sent to individuals or teams.      
 

@@ -4,7 +4,7 @@ description: This article describes how to customize the notification messages d
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 04/29/2019
+ms.date: 03/04/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -23,13 +23,28 @@ ms.assetid: 0f6934ea-1998-4bd5-987a-41cf4e24d408
 In System Center - Operations Manager, you can customize the format that will be used for messages that notify you of alerts. The format of an alert notification is determined by the channel by which the notification is sent. Each channel type has a default format, as shown in the following examples.  
 
 > [!NOTE]  
-> The command channel type is not mentioned because it generates a command rather than a notification message.  
+> The command channel type is not mentioned because it generates a command rather than a notification message. 
+
+::: moniker range=">=sc-om-2019"
 
 |Channel type|Default notification format|  
 |------------|---------------------------|  
 |Email|**Subject**: Alert: *alert name* Resolution state: *new or closed*<br><br>Alert:<br><br>Source:<br><br>Path:<br><br>Last modified by:<br><br>Last modified time:<br><br>Alert description:<br><br>Alert view link:<br><br>Notification subscription ID generating this message:|  
 |Instant message (IM)|Alert: *alert name* Path: *path to managed entity* Resolution state: *new or closed* Last modified by: *last modified by*|  
 |SMS (text message)|Alert: *alert name* Resolution state: *new or closed*|  
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+|Channel type|Default notification format|  
+|------------|---------------------------|  
+|Email|**Subject**: Alert: *alert name* Resolution state: *new or closed*<br><br>Alert:<br><br>Source:<br><br>Path:<br><br>Last modified by:<br><br>Last modified time:<br><br>Alert description:<br><br>Alert view link:<br><br>Notification subscription ID generating this message:|  
+|Instant message (IM)|Alert: *alert name* Path: *path to managed entity* Resolution state: *new or closed* Last modified by: *last modified by*|  
+|SMS (text message)|Alert: *alert name* Resolution state: *new or closed*|  
+|Microsoft Teams|Alert:<br><br>Source:<br><br>Path:<br><br>Last modified by:<br><br>Last modified time:<br><br>Alert description:<br><br>Alert view link:<br><br>Source view link:<br><br>Notification subscription ID generating this message:|
+
+::: moniker-end
 
 You can change the format on the **Format** page of the channel type wizard when you create the channel or after the channel is created. The procedure is the same for all three channel types.  
 
