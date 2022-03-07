@@ -50,7 +50,7 @@ You can install Central Console on a server computer running Windows Server 2008
 ::: moniker-end
 
 >[!NOTE]
->To upgrade the central console to a latest version, uninstall the older version and then install the latest version. In place upgrade is not supported.  
+>To upgrade the DPM central console to a latest version, uninstall the older version and then install the latest version. In place upgrade is not supported.  
 
 1.  Deploy an Operations Manager agent to your DPM server.  [Read more](./use-ops-manager-to-manage-monitor-dpm.md?preserve-view=true&view=sc-dpm-1807#BKMK_OM).
 
