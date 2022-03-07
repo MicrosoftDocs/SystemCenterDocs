@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), text message (SMS), or Microsoft Teams. The Notification Account Run As profile is used to send notifications. For notifications to work correctly, you must create a Run As account that provides the credentials for sending notifications and associate the Run As account to the Notification Account profile.  
+In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), text message (SMS), or Microsoft Teams (applicable for 2022). The Notification Account Run As profile is used to send notifications. For notifications to work correctly, you must create a Run As account that provides the credentials for sending notifications and associate the Run As account to the Notification Account profile.  
 
 ## To create and configure the Notification action account  
 

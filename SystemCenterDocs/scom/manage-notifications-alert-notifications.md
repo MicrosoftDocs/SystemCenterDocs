@@ -20,7 +20,7 @@ ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8
 
 ::: moniker-end
 
-In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), text message (SMS) or Microsoft Teams. Notifications can also run commands automatically when an alert is raised on a monitored system.  
+In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), text message (SMS) or Microsoft Teams (applicable for 2022). Notifications can also run commands automatically when an alert is raised on a monitored system.  
 
 A notification requires the following elements:  
 
