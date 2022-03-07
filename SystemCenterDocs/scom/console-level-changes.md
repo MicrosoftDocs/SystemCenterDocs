@@ -16,7 +16,7 @@ ms.topic: article
 # Console-level changes
 This article describes the console-level changes that are required to use group Managed Service Accounts (gMSAs).
 
-::: moniker range="sc-om-2019
+::: moniker range="sc-om-2019"
 
 >[!NOTE]
 >This article applies to Operations Manager 2019 Update Rollup 1 (UR1) and later.

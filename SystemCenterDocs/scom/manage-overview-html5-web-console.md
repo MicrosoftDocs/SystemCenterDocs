@@ -36,19 +36,19 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 ::: moniker-end
 
-    - [Alert widget](manage-create-web-dashboard-alerts.md)
+  - [Alert widget](manage-create-web-dashboard-alerts.md)
 
-    - [State widget](manage-create-web-dashboard-state.md)
+  - [State widget](manage-create-web-dashboard-state.md)
 
-    - [Performance widget (also works like the Object by performance widget)](manage-create-web-dashboard-perf.md)  
+  - [Performance widget (also works like the Object by performance widget)](manage-create-web-dashboard-perf.md)  
 
-    - [Topology widget](manage-create-web-dashboard-topology.md)
+  - [Topology widget](manage-create-web-dashboard-topology.md)
 
-    - [Tile widget](manage-create-web-dashboard-tile.md)
+  - [Tile widget](manage-create-web-dashboard-tile.md)
 
-    - [Custom widget](manage-create-web-dashboard-custom.md)
+  - [Custom widget](manage-create-web-dashboard-custom.md)
 
-    - [PowerShell widget](manage-create-web-dashboard-posh.md)
+  - [PowerShell widget](manage-create-web-dashboard-posh.md)
 
 3. Perform create, edit and delete operations on the widgets.  
 
