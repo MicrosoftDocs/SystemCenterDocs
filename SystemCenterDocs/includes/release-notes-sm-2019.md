@@ -166,3 +166,11 @@ To resolve this issue, follow the steps:
 This issue is observed in Service Manager 2019 with Windows 2019.
 
 **Workaround**: After initiating the Data Warehouse setup, check if the SSRS service stops during the setup. If it stops, start the SSRS service prior to *Install services* phase.
+
+### Report MP deployments might fail
+
+**Description**: After a successful DW installation, deployments of Report Management Packs might fail if SQL Server Reporting Services (SSRS) is running locally on the DW Management Server and SSRS has version 2017 or higher. 
+
+This issue is observed in Service Manager 2016 and later.
+
+**Workaround**: Perform the steps [detailed here](/system-center/scsm/config-remote-ssrs).

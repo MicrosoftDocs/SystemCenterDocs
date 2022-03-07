@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 03/02/2022
+ms.date: 03/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -100,6 +100,15 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
     ```
 
 5. Save the changes and close the XML editor.
+
+## To verify if your SQL Server Reporting Services installation is configured correctly for Service Manager Data Warehouse
+
+There is a known issue with the SCSM Data Warehouse (DW) Setup version 2016 and higher, but only if SQL Server Reporting Services (SSRS) is running locally on the DW Management Server and SSRS has version 2017 or higher. In this case, the DW Setup completes successfully, but actually it does not configure the specified local SSRS instance properly. 
+
+The attached script "Verify_SSRS_for_SCSM.ps1" can be used to verify if the **LOCAL** SSRS installation is configured properly in order to be used with the SCSM Data Warehouse.
+
+>[!NOTE]
+>This PowerShell script can be executed before or after a SCSM Data Warehouse installation. It can be executed several times. The script won't make any changes. 
 
 ## Next steps
 
