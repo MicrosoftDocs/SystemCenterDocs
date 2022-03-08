@@ -16,8 +16,8 @@ ms.technology: virtual-machine-manager
 The following sections provide information about how to upgrade to VMM 2022. These include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
 > [!NOTE]
-> You can upgrade to VMM 2022 from VMM 2019, upgrade from 2016 is not supported.
-> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
+> - You can upgrade to VMM 2022 from VMM 2019, upgrade from 2016 is not supported.
+> - During VMM Installation, ensure that SQL Database is not part of any Availability Group.
 
 ## Requirements and limitations
 
