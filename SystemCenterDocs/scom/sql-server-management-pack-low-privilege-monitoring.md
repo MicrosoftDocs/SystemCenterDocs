@@ -202,7 +202,7 @@ Take the following steps on an agent machine or database only if you want to all
     - Set the **Microsoft SQL Server Discovery** Run As Profile to use the **SQLDiscovery** Run As account.
     - Set the **Microsoft SQL Server Monitoring** Run As profile to use the **SQLMonitor** Run As account.
 
-To prevent SQL Server monitoring issues, the **SQLTaskAction**, **SQLDiscovery**, and **SQLMonitor** Run As accounts should be used to manage the instances of **MSSQL on Windows: Local DB Engine**.
+To prevent SQL Server monitoring issues, the **SQLTaskAction**, **SQLDiscovery**, and **SQLMonitor** Run As accounts should be used to manage the target as the **Windows Computer** object.
 
 ## Agentless Monitoring
 
