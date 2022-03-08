@@ -22,6 +22,10 @@ See the following sections for new features and feature updates supported in VMM
 
 VMM 2022 can be used to manage on Windows Server 2022 hosts.
 
+### Windows 11 and Windows Server 2022 Guest OS support
+
+VMM 2022 supports Windows 11 and Windows Server 2022 Guest OS.
+
 ### Support for Azure Stack HCI clusters 21H2
 
 With VMM 2022 you can manage Azure Stack HCI, 21H2 clusters.
@@ -44,3 +48,5 @@ VMM 2022 supports dual stack SDN deployment.
 In VMM 2019 UR2, we introduced support for Ipv6 based SDN deployment. VMM 2022 supports dual stack (Ipv4 + Ipv6) for SDN components.  
 
 To enable Ipv6 for SDN deployment, do the required changes in the network controller, gateway, and SLB set up.   
+
+For more information about these updates, see Network controller, Gateway, SLB, and Route traffic.

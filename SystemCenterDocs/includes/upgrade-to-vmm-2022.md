@@ -16,6 +16,7 @@ ms.technology: virtual-machine-manager
 The following sections provide information about how to upgrade to VMM 2022. These include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
 > [!NOTE]
+> You can upgrade to VMM 2022 from VMM 2019, upgrade from 2016 is not supported.
 > During VMM Installation, ensure that SQL Database is not part of any Availability Group.
 
 ## Requirements and limitations
@@ -143,7 +144,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
 
 1. Backup and retain the VMM database.
 2. [Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
-3. On the passive VMM node, upgrade the management OS to Windows server 2019. 		
+3. On the passive VMM node, upgrade the management OS to Windows server 2022. 		
 4. Upgrade to the Windows 11 or Windows Server 2022 version of the ADK.
 5. Install VMM 2022 on the passive node by using the following steps:
 	-	In the main setup page, click **Install**.
