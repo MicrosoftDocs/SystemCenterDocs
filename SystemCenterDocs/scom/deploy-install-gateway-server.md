@@ -135,7 +135,7 @@ This procedure installs the gateway server. The server that is to be the gateway
 
 2.  Open the Command Prompt window by using the **Run as Administrator** option.
 
-3.  Run the following command, where *path\Directory* is the location of the Momgateway.msi, and *path\Logs* is the location where you want to save the log file. Momgateway.msi can be found in the Operations Manager installation media.
+3.  Run the following command, where *path\Directory* is the location of the MOMGateway.msi, and *path\Logs* is the location where you want to save the log file. MOMGateway.msi can be found in the Operations Manager installation media.
 
     ```
     %WinDir%\System32\msiexec.exe /i path\Directory\MOMGateway.msi /qn /l*v C:\Logs\GatewayInstall.log
@@ -160,7 +160,7 @@ Perform this operation on each gateway server, management server, and computer t
 
 1.  Copy the MOMCertImport.exe tool from the installation media \SupportTools\ (amd64 or x86) directory to the root of the target server or to the Operations Manager installation directory if the target server is a management server.
 
-2.  As an administrator, open a Command Prompt window and change the directory to the directory where MOMCertImport.exe is, and then run `momcertimport.exe /SubjectName <certificate subject name>`. This makes the certificate usable by Operations Manager.
+2.  As an administrator, open a Command Prompt window and change the directory to the directory where MOMCertImport.exe is, and then run `momcertimport.exe /SubjectName <certificate subject name>`. This makes the certificate usable by Operations Manager. You may also run `momcertimport.exe` without any arguments to allow you to select from a GUI (Graphical User Interface) a list of Certificates in your Local Machine Personal Store.
 
 ### Configuring gateway servers for failover between management servers
 
@@ -175,12 +175,11 @@ Use the Set-SCOMParentManagementServer command in the Operations Manager shell, 
 2.  On the Windows desktop, click **Start**, point to **Programs**, point to **System Center Operations Manager**, and then click **Command Shell**.
 
 3.  In Command Shell, run the following commands:
-
+    ```powershell
     $GatewayServer = Get-SCOMGatewayManagementServer -Name "ComputerName.Contoso.com"
     $FailoverServer = Get-SCOMManagementServer -Name "ManagementServer.Contoso.com","ManagementServer2.Contoso.com"
-    Set-SCOMParentManagementServer -GatewayServer $GatewayServer
-    -FailoverServer $FailoverServer
-
+    Set-SCOMParentManagementServer -GatewayServer $GatewayServer -FailoverServer $FailoverServer
+    ```
 
 ## To chain multiple gateway servers
 
