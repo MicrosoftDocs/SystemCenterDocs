@@ -21,7 +21,8 @@ ms.topic: article
 
 ::: moniker-end
 
-In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Alert widget.
+
+In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Alert widget.
 
 ::: moniker range="sc-om-2022"
 
@@ -79,7 +80,9 @@ After the widget has been created, it displays alerts based on the scope and cri
 
 ![Completed example of Alert widget in dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-07.png)
 
-You can view alert details consistent with the experience with the alerts view in the Operations console by clicking on an alert and drilling into it's details.  In version 1807 you can modify the alert resolution state and drill down to the monitoring object details page by clicking on the alert source.
+You can view alert details consistent with the experience with the alerts view in the Operations console by clicking on an alert and drilling into it's details.  
+
+You can modify the alert resolution state and drill down to the monitoring object details page by clicking the alert source.
 
 ![Viewing alert details](./media/create-web-dashboard-alerts/view-alert-details-01.png)
 
@@ -98,7 +101,7 @@ To perform these actions, hover your mouse over the widget and click on the elli
 
 ## Additional view options in Alert widget
 
-:: moniker range="sc-om-2022"
+::: moniker range="sc-om-2022"
 
 Alert widget now supports *sort by* option.
 

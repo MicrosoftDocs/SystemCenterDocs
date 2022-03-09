@@ -28,7 +28,7 @@ Installation of Reporting and Web Console will be successful irrespective of the
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-2019"
+::: moniker range="=sc-om-2019"
 
 >[!NOTE]
 > Operations Manager 2019 UR1 and later supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.

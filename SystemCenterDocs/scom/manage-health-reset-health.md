@@ -33,7 +33,7 @@ Some monitors can set state to critical (red), warning (yellow), and healthy (gr
 
 > [!NOTE]  
 > Only reset health for a monitor when you are sure that all issues have been resolved.  
->  you can view change tracking report on health reset actions on the monitors as a consolidated view under **Reports**. [Learn more](management-pack-change-tracking.md#change-tracking-for-monitor-health-reset).
+> You can view change tracking report on health reset actions on the monitors as a consolidated view under *Reports*. [Learn more](management-pack-change-tracking.md#change-tracking-for-monitor-health-reset).
 
 ::: moniker-end
 

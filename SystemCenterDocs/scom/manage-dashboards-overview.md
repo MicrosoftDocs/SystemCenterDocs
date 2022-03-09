@@ -37,8 +37,6 @@ Operations Manager supports folders' creation in web console, inside which, you 
 > [!NOTE]
 > Folders and views created from operations console can be viewed in the web console but the dashboards created from the web console will not be visible in the operations console.
 
-::: moniker-end
-
 Dashboards in Operations Manager deliver the following benefits:
 
 * A dashboard is defined and shared in a management pack.
