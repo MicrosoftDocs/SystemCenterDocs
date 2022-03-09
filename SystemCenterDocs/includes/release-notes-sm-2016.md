@@ -220,3 +220,11 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 ## SM authoring tool console crashes while creating workflows
 This issue is fixed.
+
+## Report MP deployments might fail
+
+**Description**: After a successful DW installation, deployments of Report Management Packs might fail if SQL Server Reporting Services (SSRS) is running locally on the DW Management Server and SSRS has version 2017 or higher. 
+
+This issue is observed in Service Manager 2016 and later.
+
+**Workaround**: Perform the steps [detailed here](/system-center/scsm/config-remote-ssrs).
