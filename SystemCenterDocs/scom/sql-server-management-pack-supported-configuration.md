@@ -4,7 +4,7 @@ title: Scope and supported configuration in Management Pack for SQL Server
 description: This article explains the scope and supported configuration for Management Pack for SQL Server
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 9/24/2021
 ms.topic: article
 ms.prod: system-center
@@ -57,11 +57,13 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
   - [Not supported] Domain-independent Availability Groups
   - [Not supported] Workgroup Cluster Availability Groups
 - Authentication Mode — both SQL Server Authentication and Windows Authentication are supported.
+- Upgrade from a previous version of SQL Server
 - [Not supported] Localized versions of SQL Server
 
   Management Pack for SQL Server supports English-language version of SQL Server only.
 
-- Upgrade from a previous version of SQL Server
+- [Not supported] 32-bit versions of SQL Server
+
 
 >[!NOTE]
 >Since Management Pack for SQL Server is unhosted, fully qualified domain names (FQDNs) are no longer displayed in System Center Operations Manager object names and alert properties.

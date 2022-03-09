@@ -2,8 +2,8 @@
 ms.assetid:
 title: Release Notes for System Center DPM
 description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 03/30/2021
 ms.custom: na
@@ -169,6 +169,27 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 - ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the datasources for which the storage consumption couldn’t be calculated. This may happen due to reasons as ongoing backups. When not passed failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the datasources.
     This should be used after using ```UpdateSizeInfo``` in ```ManageStorageInfo```.
 
+### DPM Datasources not being reflected on Recovery Services Vault
+
+**Description**: Some datasources in the *Backup items (DPM)* view from recovery service vault in Azure portal, are not getting refreshed/updated.
+
+**Cause**: You may have decommissioned a protected server and stopped protection of the datasources but chose to maintain the online recovery points, then you un-installed the DPM/MABS agent from the console.
+   
+You can verify if this is the cause by opening the GatewayProvider0Curr.errlog file in *C:\ProgramFiles\Microsoft Azure Backup Server\DPM\MARS\Temp* folder in notepad and search for the word **Mis-Match**. 
+   
+If you find an entry as the following, it will detail the protected server that is mis-matched. 
+   
+In the below example, the agent for the server called *mjlc-dc.Contoso.com* was un-installed and missing from the DPM/MABS server. 
+   
+```
+GetData of Provider failed. |Backup Service Exception: FMException: [ErrorCode:GPPowershellScriptHrError, DetailedCode:-2146233079, Source:   at System.Management.Automation.MshCommandRuntime.ThrowTerminatingError(ErrorRecord errorRecord), Message:Production Server **mis-match** DSId :9adaec12-5b5a-455e-86b9-1fac2d605fe1 DSName : S:\ DSType : Volume PSName :**mjlc-dc.Contoso.com** PSId: a494f940-b480-41d2-9ef5-4194ad737c7b]
+```
+
+**Workaround**
+
+1. If the original protected server is still available, re-install the DPM agent even if you plan on taking that server offline in the future.  You can disable the agent in DPM/MABS, don’t remove it until you delete the online recovery points.
+1. If the online recovery points for the decommissioned server are no longer needed, then you can delete the data sources on the DPM/MABS server that are in stopped protection.
+
 ## DPM 2019 UR1 release notes
 No known issues for DPM 2019 UR1.
 
@@ -287,7 +308,7 @@ The following section details the known issue in DPM 2019 UR3 and the work aroun
 
    >[!NOTE]
    > This command uses the default installation path for DPM. If you have changed the installation path, update the path accordingly.
-
+   
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1807"

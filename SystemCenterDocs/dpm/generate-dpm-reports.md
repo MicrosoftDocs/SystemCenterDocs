@@ -2,14 +2,14 @@
 description: This article describes how to create DPM reports using SQL Server Reporting Services.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
+author: jyothisuri
 ms.prod: system-center
 keywords:
 ms.date: 11/01/2017
 title: Generate DPM reports
 ms.technology: data-protection-manager
 ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8
-ms.author: raynew
+ms.author: jsuri
 ---
 
 # Generate DPM reports
@@ -169,7 +169,7 @@ Reports aren't scheduled by default in DPM. To start creating and saving histori
 
 1.  In DPM Administrator Console, go to the **Reporting** view. On the display pane, select the report and click **Schedule**.
 
-2.  Select **Run the <name of report> according to the schedule options**.
+2.  Select **Run the \<name of report\> according to the schedule options**.
 
 3.  On the **Schedule** tab, select schedule options, including frequency, how to group, the time of the day to generate, and the granularity. Granularity is limited by frequency. So, if the frequency is weekly, then so is the granularity, the time period to be included in the report data, and the number of copies to retain in history.
 

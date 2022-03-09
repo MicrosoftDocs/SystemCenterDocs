@@ -4,7 +4,7 @@ title: Views and dashboards in Management Pack for Azure SQL Managed Instance
 description: This article explains how to view database and server views in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

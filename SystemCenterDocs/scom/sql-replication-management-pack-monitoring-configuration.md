@@ -4,7 +4,7 @@ title: Monitoring configuration in Management Pack for SQL Server Replication
 description: This article explains the monitoring configuration in Management Pack for SQL Server Replication
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

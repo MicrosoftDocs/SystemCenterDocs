@@ -2,9 +2,9 @@
 ms.assetid: 2a758506-7d92-4bb7-9b74-61e206ed6203
 title: include file
 description: include file to provide information about system requirements for VMM 2016
-author:  rayne-wiselman
-ms.author: raynew
-manager:  carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date:  07/27/2018
 ms.topic: include
 ms.prod:  system-center-threshold
@@ -107,16 +107,14 @@ PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 
 ## Servers in the VMM fabric
 
->[!NOTE]
-> Hyper-V server 2016 and 2019 are not supported.
-
 **Operating system** | **Hyper-V host** | **SOFS** | **Update server** | **PXE server**
 --- | --- | --- | --- | ---
 Windows Server 2012 Standard/Datacenter | N | N | N | N
 Windows Server 2012 R2 Standard/Datacenter | Y | Y | Y | Y
-Windows Server 2016 | Y | Y | N | N
-Windows Server 2016 (with desktop experience) | Y | Y | Y | Y
-Windows Server 2016 Nano | Y | Y | N | N
+Windows Server 2016 Standard and Datacenter (Core) | Y | Y | N | Y
+Windows Server 2016 Standard and Datacenter (With Desktop experience) | Y | Y | Y | Y
+Windows Server 2016 Nano | Y | Y | N | Y
+Hyper-V Server 2016 | N | N | N | N                                              
 
 ## VMware servers in the VMM fabric
 

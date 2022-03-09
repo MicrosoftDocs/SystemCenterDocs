@@ -1,9 +1,9 @@
 ---
 title: Troubleshooting UNIX and Linux Agent Monitoring
 description: This article provides basic troubleshooting guidance for discovery and monitoring of the UNIX/Linux OS.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
@@ -206,7 +206,13 @@ The Operations Manager Agents for UNIX and Linux maintain several log files that
 > [!NOTE]  
 > The logging level for the omiserver.log log file cannot be changed from the default in this version of the Operations Manager Agents for UNIX and Linux.  
 
-1. Create a blank file named **EnableOpsmgrModuleLogging** in the Temp directory for the user account calling these modules by typing at a command-line prompt **COPY /Y NUL %windir%\TEMP\EnableOpsMgrModuleLogging**.  
+1. Create a blank file named **EnableOpsmgrModuleLogging** in the Temp directory for the user account calling these modules by typing at a command-line or powershell prompt:
+    ```
+    COPY /Y NUL %windir%\TEMP\EnableOpsMgrModuleLogging
+    ```
+    ```powershell
+    New-Item "$env:windir\TEMP\EnableOpsMgrModuleLogging"
+    ```
 
     > [!NOTE]  
     > Generally, it is the SYSTEM account making the calls, and C:\Windows\Temp is the default SYSTEM temp folder.  

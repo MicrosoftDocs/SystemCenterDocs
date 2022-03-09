@@ -4,7 +4,7 @@ title: Low-privilege monitoring in Management Pack for SQL Server
 description: This article explains low-privilege monitoring
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 7/14/2021
 ms.topic: article
 ms.prod: system-center
@@ -103,7 +103,8 @@ This section explains how to configure low-privilege agent monitoring.
       GRANT VIEW ANY DEFINITION TO [SQLMPLowPriv]
       GRANT VIEW ANY DATABASE TO [SQLMPLowPriv]
       GRANT EXECUTE ON xp_readerrorlog TO [SQLMPLowPriv]
-
+      GRANT EXECUTE ON xp_instance_regread TO [SQLMPLowPriv]
+      
       USE [msdb]
       GO
       GRANT SELECT ON sysjobs_view TO [SQLMPLowPriv]
@@ -201,7 +202,7 @@ Take the following steps on an agent machine or database only if you want to all
     - Set the **Microsoft SQL Server Discovery** Run As Profile to use the **SQLDiscovery** Run As account.
     - Set the **Microsoft SQL Server Monitoring** Run As profile to use the **SQLMonitor** Run As account.
 
-To prevent SQL Server monitoring issues, the **SQLTaskAction**, **SQLDiscovery**, and **SQLMonitor** Run As accounts should be used to manage the instances of **MSSQL on Windows: Local DB Engine**.
+To prevent SQL Server monitoring issues, the **SQLTaskAction**, **SQLDiscovery**, and **SQLMonitor** Run As accounts should be used to manage the target as the **Windows Computer** object.
 
 ## Agentless Monitoring
 
@@ -238,6 +239,7 @@ This section explains how to configure low-privilege agentless monitoring.
     GRANT VIEW ANY DATABASE TO [SQLMPLowPriv]
     ALTER ROLE [db_datareader] ADD MEMBER [SQLMPLowPriv]
     GRANT EXECUTE ON xp_readerrorlog TO [SQLMPLowPriv]
+    GRANT EXECUTE ON xp_instance_regread TO [SQLMPLowPriv]
 
     USE [msdb]
     GO

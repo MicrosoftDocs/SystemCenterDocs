@@ -2,9 +2,9 @@
 ms.assetid: 4be928cd-4a38-4f73-9d5f-87d438db2d4b
 title: Authentication and Data Encryption in Operations Manager
 description: This article provides design guidance explaining how secure authentication occurs with Operations Manager and options available.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: cfreemanwa
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center
@@ -77,7 +77,7 @@ During the setup of a certificate, you run the MOMCertImport tool. When the MOMC
 ## Authentication and data encryption between management server, Gateway server, and agents
 
 Communication among these Operations Manager features begins with mutual authentication. If certificates are present on both ends of the communications channel, then certificates will be used for mutual authentication; otherwise, the Kerberos version 5 protocol is used. If any two features are separated across an untrusted domain, mutual authentication must be performed using certificates.
-Normal communications, such as events, alerts, and deployment of a management pack, occur over this channel. The previous illustration shows an example of an alert being generated on one of the agents that is routed to the management server. From the agent to the gateway server, the Kerberos security package is used to encrypt the data, because the gateway server and the agent are in the same domain. The alert is decrypted by the gateway server and re-encrypted using certificates for the management server. After the management server receives the alert, the management server decrypts the message, re-encrypts it using the Kerberos protocol, and sends it to the management server where the management server decrypts the alert.
+Normal communications, such as events, alerts, and deployment of a management pack, occur over this channel. The previous illustration shows an example of an alert being generated on one of the agents that is routed to the management server. From the agent to the gateway server, the Kerberos security package is used to encrypt the data, because the gateway server and the agent are in the same domain. The alert is decrypted by the gateway server and re-encrypted using certificates for the management server. The gateway server sends the encrypted message to the management server where the management server decrypts the alert.
 Some communication between the management server and the agent may include credential information; for example, configuration data and tasks. The data channel between the agent and the management server adds another layer of encryption in addition to the normal channel encryption. No user intervention is required.
 
 ## Management server and Operations console, Web console server, and Reporting server

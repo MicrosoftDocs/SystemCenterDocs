@@ -4,7 +4,7 @@ title: Disabling monitoring of specified SQL Servers and databases in Management
 description: This section explains how to disable monitoring of SQL Servers and Databases
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

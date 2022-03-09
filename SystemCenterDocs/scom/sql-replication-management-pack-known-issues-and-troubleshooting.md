@@ -4,7 +4,7 @@ title: Known issues and troubleshooting in Management Pack for SQL Server Replic
 description: This article explains Known Issues and Troubleshooting in Management Pack for SQL Server Replication
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center

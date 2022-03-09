@@ -4,7 +4,7 @@ title: Adjusting datacenter dashboard in Management Pack for SQL Server Dashboar
 description: This article explains how to adjust datacenter dashboard
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

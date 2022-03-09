@@ -2,9 +2,9 @@
 ms.assetid: d8bfec1d-83c8-44aa-a672-2dfc4f50074c
 title: Troubleshooting VMM 2016
 description: This article summarizes troubleshooting resources available for VMM
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

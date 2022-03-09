@@ -2,9 +2,9 @@
 ms.assetid: 5a64b832-1af6-4a01-981b-13e1bcb7a17c
 title: Administering and Configuring the UNIX - Linux Agent
 description: This article describes options to administer and configure the UNIX and Linux agent Operations Manager 2016.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: cfreemanwa
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
@@ -85,7 +85,7 @@ scxadmin {-log-reset|-log-remove} provider [{FILE:<path>|STDOUT}]
 
 ```  
 cd /opt/microsoft/scx/bin/tools/
-./scxadmin –log-set all intermediate
+./scxadmin -restart
 ```  
 
 **Increase all logging to the Intermediate level:**  

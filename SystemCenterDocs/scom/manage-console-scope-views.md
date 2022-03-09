@@ -1,9 +1,9 @@
 ---
 title: How to Create and Scope Views in Operations Manager
 description: This article describes how to create views in the Operations Manager console to visualize operational data collected.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-ms.manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+ms.manager: evansma
 ms.date: 03/28/2018
 ms.custom: na
 ms.prod: system-center

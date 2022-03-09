@@ -4,7 +4,7 @@ title: Enabling agent proxy option in Management Pack for SQL Server
 description: This article explains how to enable the aget proxy option
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

@@ -4,8 +4,8 @@ title: Monitoring configuration in Management Pack for SQL Server
 description: This section explains monitoring configurations in Management Pack for SQL Server
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
-ms.date: 10/15/2021
+manager: evansma
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -53,6 +53,32 @@ sp_altermessage 1480, 'with_log', 'true'
 ```sql
 sp_altermessage 19406, 'with_log', 'true'
 ```
+
+## Availability Database Backup Monitoring
+
+Management Pack for SQL Server provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup. 
+
+By default the monitor does not track the 'Availability Group Backup Preferences'. If this overdrive is enabled, the monitor will track the backup location configured in the backup preferences of the availability group and will verify whether the backup on the selected replica is in compliance with the backup frequency setting. 
+
+The backup preferences of the selected availability group can be as follows:
+
+- **Prefer Secondary**
+
+  Specifies that backups should occur on a secondary replica except when the primary replica is the only replica online. In that case, the backup should occur on the primary replica. This is the default option.
+
+- **Secondary only**
+
+  Specifies that backups should never be performed on the primary replica. If the primary replica is the only replica online, the backup should not occur.
+
+- **Primary**
+
+  Specifies that the backups should always occur on the primary replica. This option is useful if you need backup features, such as creating differential backups, that are not supported when backup is run on a secondary replica.
+
+- **Any Replica**
+
+  Specifies that you prefer that backup jobs ignore the role of the availability replicas when choosing the replica to perform backups. Note backup jobs might evaluate other factors such as backup priority of each availability replica in combination with its operational state and connected state.
+
+For more information, see [Backup Preferences](/sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page).
 
 ## Policies Monitoring
 
@@ -130,6 +156,15 @@ The following is a list that explains the default state of each of the space mon
 	- Targeted to the In-Memory OLTP Data container
 		- Memory-Optimized Data Filegroup Container Free Space
 
+The following monitors support the **Health Calculation Mode** override:
+
+- FILESTREAM Data Free Space Left
+- In-Memory OLTP Data Free Space Left
+- DB Log File Free Space Left
+- ROWS Data Free Space Left
+
+This override allows you to define how you want to monitor free space in your environment. You can instruct any of the monitors above to track the health state based on the 'Threshold' parameter expressed as a percentage term (%) or as a capacity metric (MB). To make monitoring even more efficient, you can use both the percentage term (%) and the capacity metric (MB) thresholds simultaneously, in which case, the metric with the worst state is going to be used to report the overall health status.
+
 ## Disabled Space Monitoring Workflows for SQL on Linux
 
 The following workflows are disabled by default as they are not provided with the necessary data by the SQL Server on Linux:
@@ -172,7 +207,9 @@ All database states except the ONLINE one will result in an unhealthy monitor st
 |SUSPECT|At least the primary filegroup is suspect and may be damaged. The database cannot be recovered during startup of SQL Server. The database is unavailable. Additional action by the user is required to resolve the problem.|  
 |EMERGENCY|User has changed the database and set the status to EMERGENCY. The database is in single-user mode and may be repaired or restored. The database is marked READ_ONLY, logging is disabled, and access is limited to members of the **sysadmin** fixed server role. EMERGENCY is primarily used for troubleshooting purposes. For example, a database marked as suspect can be set to the EMERGENCY state. This could permit the system administrator read-only access to the database. Only members of the **sysadmin** fixed server role can set a database to the EMERGENCY state.|  
 
-The monitor also supports the "Disable if Availability Group is offline" override for Windows-based environments. When this override is set to true and the Availability Group that hosts the database is unavailable, the monitor stops tracking the state of such a database. This override is useful when working with SQL Server 2012 as it helps you avoid alert storming.
+For more information, see [Database States](/sql/relational-databases/databases/database-states).
+
+The monitor also supports the "Disable if Availability Group is offline" override for Windows-based environments. When this override is set to true and the Availability Group that hosts the database is unavailable, the monitor stops tracking the state of such a database. This override is useful as it helps you prevent alert storming that may happen when working with SQL Server 2012 due to the specifics of its architecture. For higher versions of SQL Server, this override is not required.
 
 ## Many Databases on the Same Drive
 
@@ -266,6 +303,9 @@ The following is a complete list of securables checked by the monitor targeted t
   - sys.tables
   - sys.filegroups
   - sys.syscolumns
+
+>[!NOTE]
+>Mind that some monitors may have properties with double underscore in their names. Such properties are used for internal management pack purposes; make sure not to use them.
 
 ## WMI Health State Monitor
 

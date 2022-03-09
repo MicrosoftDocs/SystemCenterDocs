@@ -2,9 +2,9 @@
 ms.assetid:
 title: Configure Computer Not Reachable Recovery Task for Gateway Servers
 description: This article describes how to configure the diagnostic task to ping computer on heartbeat failure for agents reporting to an Operations Manager gateway server.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 03/22/2018
 ms.custom: na
 ms.prod: system-center

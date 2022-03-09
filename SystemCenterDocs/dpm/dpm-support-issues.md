@@ -2,8 +2,8 @@
 description: This article explains the supported deployment options for DPM.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 08/05/2021
@@ -266,7 +266,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 -   Windows Server 2008 R2 with SP1, Windows Server 2008 R2 can be protected with DPM 2012 R2 and DPM 2016.
 
--   Windows Server 2008 and Storage Server 2008 can be protected with DPM 2012 R2 running [Update Rollup 2](https://blogs.technet.com/b/dpm/archive/2014/06/11/details-on-protecting-windows-server-2003-computers-using-data-protection-manager-2012-r2.aspx) and DPM 2016.
+-   Windows Server 2008 and Storage Server 2008 can be protected with DPM 2012 R2 running [Update Rollup 2](/archive/blogs/) and DPM 2016.
 
 **Workaround**: Ensure you're running the right version of DPM.
 

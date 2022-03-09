@@ -4,7 +4,7 @@ title: Scope and supported configuration in Management Pack for SQL Server Repli
 description: This article explains the scope and supported configuration for Management Pack for SQL Server Replication
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

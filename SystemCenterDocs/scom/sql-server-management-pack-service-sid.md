@@ -4,7 +4,7 @@ title: Service SID in Management Pack for SQL Server
 description: This article explains how to configure monitoring with service SID
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 9/29/2021
 ms.topic: article
 ms.prod: system-center
@@ -17,11 +17,19 @@ This section explains how to configure monitoring using Service SIDs for SQL Ser
 
 To configure monitoring using Service Security Identifier, perform the following steps:
 
-1. Open the command prompt as administrator and run the **sc sidtype HealthService unrestricted** command.
+1. Open the command prompt as an administrator and run the following command:
 
-2. Restart the Health Service.
+    ```CMD
+    sc sidtype HealthService unrestricted
+    ```
 
-3. Run the **sc showsid HealthService** command. 
+2. Restart Health Service.
+
+3. Run command:
+
+    ```CMD
+    sc showsid HealthService
+    ```
 
     The **STATUS** parameter should be active.
 
@@ -76,7 +84,8 @@ To configure monitoring using Service Security Identifier, perform the following
     EXEC(@createDatabaseUserAndRole)
     GO
     USE [master];
-    GRANT EXECUTE ON sys.xp_readerrorlog TO [SCOM_HealthService]
+    GRANT EXECUTE ON sys.xp_readerrorlog TO [SCOM_HealthService];
+    GRANT EXECUTE ON sys.xp_instance_regread TO [SCOM_HealthService];
     USE [msdb];
     GRANT SELECT ON [dbo].[sysjobschedules] TO [SCOM_HealthService];
     GRANT SELECT ON [dbo].[sysschedules] TO [SCOM_HealthService];
@@ -100,5 +109,6 @@ To configure monitoring using Service Security Identifier, perform the following
     USE [master]
     GRANT ALTER ANY DATABASE TO [SCOM_HealthService];
     ```
+7. Use the 'Local System' account to run the Health Service on the target SQL Server hosted on a Windows Server instance.
 
 The NT AUTHORITY\SYSTEM account should be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.

@@ -5,9 +5,9 @@ ms.date: 04/06/2021
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 
 # Integration pack for SharePoint

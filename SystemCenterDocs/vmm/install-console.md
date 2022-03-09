@@ -2,9 +2,9 @@
 ms.assetid: 857ab713-df3e-4744-aac9-e057efc0fce7
 title: Install the VMM console
 description: This article provides installation instructions for the VMM console
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 05/06/2018
 ms.topic: article
 ms.prod: system-center
@@ -57,6 +57,7 @@ ProgramFiles | Specify the location in which to store program files.
 IndigoTCpPort | Specify the port number used to communicate with the VMM server.
 MUOptIn | 0: Don't opt in to Microsoft Update. 1: Opt in.
 VmmServerForOpsMgrConfig | Specify the name of the System Center Operations Manager server.
+IACCEPTSCUELA | Specifies that you have read, understood and accepts the terms of use.
 
 Install the console as follows:
 

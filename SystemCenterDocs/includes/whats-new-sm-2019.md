@@ -1,10 +1,10 @@
 ---
 title:  include file
 description: include file to describes the new features and other changes in System Center 2019 - Service Manager.
-manager:  vvithal
+manager: evansma
 ms.topic:  include
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.prod:  system-center
 keywords:  
 ms.date: 05/10/2021

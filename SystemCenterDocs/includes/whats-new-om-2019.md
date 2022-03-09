@@ -2,9 +2,9 @@
 ms.assetid: 1b8afb6f-9caf-455a-ad51-546a17fd47a4
 title: include file
 description: This include file describes the new features in Operations Manager 2019, 2019 UR1, 2019 UR2 and 2019 UR3.
-author: JYOTHIRMAISURI
-ms.author: v-jysur
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 06/04/2021
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
@@ -128,7 +128,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 - SQL Server 2017 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017%20)
 - SQL Server 2016 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20)
 
-For information about SQL Server design considerations, see [related documentation](../scom/plan-sqlserver-design.md?view=sc-om-2019).
+For information about SQL Server design considerations, see [related documentation](../scom/plan-sqlserver-design.md?view=sc-om-2019&preserve-view=true).
 
 ### Support for SQL Server 2019 CU8 and later
 
@@ -137,7 +137,7 @@ Operations Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or la
 
 >[!NOTE]
 > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
-> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+> - Operations Manager 2019 supports ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 
 ### In-place upgrade
@@ -217,7 +217,7 @@ You can now use a Linux agent with Fluentd support for log file monitoring on pa
 
 ### System Center Visual Studio Authoring Extension support for Visual Studio 2017
 
-The Visual Studio Authoring Extension add-in is now compatible with Visual Studio 2017. Management pack developers can continue using it with the latest version of Visual Studio to create custom management packs. They can use one of the management pack templates provided or edit an existing management pack.
+The [Visual Studio Authoring Extension add-in](https://www.microsoft.com/download/details.aspx?id=30169) is now compatible with Visual Studio 2017. Management pack developers can continue using it with the latest version of Visual Studio to create custom management packs. They can use one of the management pack templates provided or edit an existing management pack.
 
 ### Enhanced SDK client performance
 
@@ -336,9 +336,6 @@ With Operations Manager 2019 UR2, you can run and view favorite reports under **
 ### Support for folders in monitoring view of web console
 In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-web-console.md).
 
-### Support for CentOS 8
-Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](../scom/manage-install-crossplat-agent-cmdline.md?view=sc-om-2019#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
-
 ## New features in Operations Manager 2019 UR3
 
 The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 3 (UR3).
@@ -367,7 +364,7 @@ In earlier releases, active alerts are not getting closed after non-persistent h
 
 With Operations Manager 2019 UR3 and later, all of the orphan alerts are closed, eventually, depending on the type of monitor. [Learn more](../scom/manage-alert-created-by-monitor.md#closure-of-orphan-alerts).
 
-### Support for RHEL 6, Ubuntu 20, Debian 10 and Oracle 8
+### Support for RHEL 6, Ubuntu 20, Debian 10, 11 and Oracle 8
 
 Operations Manager 2019 UR3 and later supports RHEL6 via RHEL6 management pack. Also, support for Ubuntu 20.04, Debian 10 and Oracle Linux 8 are added via the Universal MPs. [Learn more](../scom/plan-supported-crossplat-os.md#red-hat-enterprise-linux-server-6--applicable-for-2019-ur3-and-later).
 

@@ -4,7 +4,7 @@ title: Scope and supported configuration in Management Pack for SQL Server Analy
 description: This article explains the scope and supported configuration for Management Pack for SQL Server Analysis Services
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
@@ -20,8 +20,11 @@ This section lists operating systems and features supported by Management Pack f
 Management Pack for SQL Server Analysis Services supports the following operating systems and platforms:
 
 - Windows Server 2012
+- Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server 2019
+
+Localized versions of Windows Server are also supported.
 
 ## SQL Server Analysis Services Features
 
@@ -37,6 +40,12 @@ The following is a list of features and configurations supported in Management P
 - SQL Server Analysis Services Database Partitions
 
 - Clustered installation of SSAS
+
+- [Not supported] Localized versions of SQL Server Analysis Services
+
+  Management Pack for SQL Server Analysis Services supports English-language version of SQL Server Analysis Services only.
+
+- [Not supported] 32-bit versions of SQL Server Analysis Services
 
 >[!NOTE]
 >This management pack supports at least 3 SSAS instances with 100 databases on a single agent that uses default settings. If your environment contains more than 100 databases and 3 SSAS instances, some of the workflows may fail during monitoring and discovery. For more information on how to change the default agent settings, see [Management servers and their managed devices are dimmed in the Operations Manager console](/troubleshoot/system-center/scom/management-servers-devices-dimmed).

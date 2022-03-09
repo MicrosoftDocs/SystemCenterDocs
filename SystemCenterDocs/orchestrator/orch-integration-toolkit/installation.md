@@ -1,13 +1,13 @@
 ---
 title: Orchestrator Integration Toolkit Installation
 description: This article explains how to install the Orchestrator Integration Toolkit.
-author: rayne-wiselman
-manager: carmonm
+author: jyothisuri
+manager: evansma
 ms.date: 02/02/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
-ms.author: raynew
+ms.author: jsuri
 ms.custom: intro-installation
 ---
 
@@ -82,5 +82,4 @@ This article provides the system requirements and steps to install the Orchestra
 |System Center Home|[https://www.microsoft.com/cloud-platform/system-center](https://www.microsoft.com/cloud-platform/system-center)|  
 |System Center documentation|[https://docs.microsoft.com/system-center/](../index.yml)|  
 |Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
-|Orchestrator Community Releases on CodePlex|[https://archive.codeplex.com/?p=orchestrator](https://archive.codeplex.com/?p=orchestrator)|  
 |Orchestrator Community Forums on TechNet|[https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|

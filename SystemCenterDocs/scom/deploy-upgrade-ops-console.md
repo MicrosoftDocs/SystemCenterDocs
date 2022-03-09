@@ -2,9 +2,9 @@
 ms.assetid: 89b1617f-73d3-4a5d-9a82-3ef4ab1a9fc3
 title: How to Upgrade an Operations Console
 description: This article describes how to upgrade an Operations console to the latest version of System Center Operations Manager.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 01/15/2018
 ms.custom: na
 ms.prod: system-center

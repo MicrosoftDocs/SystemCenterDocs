@@ -4,7 +4,7 @@ title: Terms and definitions in Management Pack for SQL Server Replication
 description: This article explains Terms and Definitions
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

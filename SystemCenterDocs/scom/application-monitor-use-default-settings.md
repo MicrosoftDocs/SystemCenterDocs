@@ -2,9 +2,9 @@
 ms.assetid: ddb56d8e-703c-4145-b301-99ab3e8f8fbd
 title: Application monitoring using the default settings in Operations Manager management pack
 description: This article provides an overview about application monitoring using the default settings
-author: v-anesh
-ms.author: v-anesh
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center

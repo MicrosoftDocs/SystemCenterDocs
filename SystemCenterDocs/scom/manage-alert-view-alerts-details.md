@@ -2,9 +2,9 @@
 ms.assetid: bc60e137-7ca2-45db-a30b-26dd83fe8bfb
 title: View Active Alerts and Details
 description: This article describes how to review the active alerts reported by monitored objects and their details to understand the impact of your affected IT services.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-ms.manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+ms.manager: evansma
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center

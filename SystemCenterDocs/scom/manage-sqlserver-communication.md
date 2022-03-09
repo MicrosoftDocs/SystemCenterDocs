@@ -2,9 +2,9 @@
 ms.assetid: 61bb5a83-479f-4cc1-b67a-9cd02fc91d2f
 title: How to Configure Operations Manager to Communicate with SQL Server
 description: This article describes how to reconfigure Operations Manager if you change the SQL Server configuration or SQL Server instance hosting its databases.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/25/2020
 ms.custom: na
 ms.prod: system-center
@@ -53,6 +53,10 @@ For all of the steps below where a SQL instance network name is referenced, use 
     d. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDB$AppMonitoring ` and then click **Edit Top 200 Rows**. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
 
     e. In the first row, enter your operational database SQL instance network name.   
+
+    f. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDB$AppMonitoring_Log` and then click **Edit Top 200 Rows**. In the results pane, scroll to the right to the column titled `Post_MainDatabaseServerName_<GUID>`.
+    
+    g. In the first row, enter your operational database SQL instance network name.
 
 
 ## How to configure settings for the data warehouse database

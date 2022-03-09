@@ -1,10 +1,10 @@
 ---
 title: include file
-manager: carmonm
+manager: evansma
 description: include file to describe the system requirements for Service Manager 2016.
 ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/08/2021
 ms.technology: service-manager
 ms.topic: include
@@ -94,7 +94,7 @@ The following versions of PowerShell are supported for Service Manager.
 
 |                  Component                   |                                                                                                                                                                                     Requirement                                                                                                                                                                                      |
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    **Service Manager management server**     |        The management server needs: [ADO.NET Data Services Update for .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkID=224398) SP1 for Windows Server; SQL Server Native client; Microsoft Report Viewer Redistributable, which is available with the Service Manager media.<br/><br/> The management server must be installed on a 64\-bit edition of Windows.         |
+|    **Service Manager management server**     |        The management server needs: [ADO.NET Data Services Update for .NET Framework 3.5](https://www.microsoft.com/download/details.aspx?id=25150) SP1 for Windows Server; SQL Server Native client; Microsoft Report Viewer Redistributable, which is available with the Service Manager media.<br/><br/> The management server must be installed on a 64\-bit edition of Windows.         |
 |     **Data warehouse management server**     |                                                                                                         The warehouse management server requires: SQL Server Native client<br/><br/> The data warehouse management server must be installed on a 64\-bit edition of Windows.                                                                                                         |
 | **Service Manager/data warehouse databases** |      The Service Manager or data warehouse databases require:  SQL Server Reporting Services \(SSRS\); SQL Server Analysis Management Objects.<br/><br/> The SQL Server and Analysis Services collation settings must be the same for the computers hosting the Service Manager database, data warehouse database, analysis services database, and Reporting Services database.      |
 |         **Service Manager console**          | The console requires: Microsoft Report Viewer Redistributable (available on System Center media): Microsoft Excel in order view OLAP data cubes on the console computer;  ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server; SQL Server Analysis Management Objects<br/><br/> The console can be installed on both 32\-bit and 64\-bit editions of Windows. |

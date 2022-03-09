@@ -242,7 +242,28 @@
     "globalMetadata": {
       "breadcrumb_path": "/system-center/breadcrumb/toc.json"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "author": {
+        "SystemCenterDocs/scom/*.md": "jyothisuri",
+        "SystemCenterDocs/includes/*.md": "jyothisuri",
+        "SystemCenterDocs/orchestrator/*.md": "jyothisuri",
+        "SystemCenterDocs/dpm/*.md": "jyothisuri",
+        "SystemCenterDocs/scsm/*.md": "jyothisuri",
+        "SystemCenterDocs/sma/*.md": "jyothisuri",
+        "SystemCenterDocs/spf/*.md": "jyothisuri",
+        "SystemCenterDocs/vmm/*.md": "jyothisuri"
+    },
+    "ms.author": {
+      "SystemCenterDocs/scom/*.md": "jsuri",
+      "SystemCenterDocs/includes/*.md": "jsuri",
+      "SystemCenterDocs/orchestrator/*.md": "jsuri",
+      "SystemCenterDocs/dpm/*.md": "jsuri",
+      "SystemCenterDocs/scsm/*.md": "jsuri",
+      "SystemCenterDocs/sma/*.md": "jsuri",
+      "SystemCenterDocs/spf/*.md": "jsuri",
+      "SystemCenterDocs/vmm/*.md": "jsuri"
+     }
+    },
     "template": [
       
     ],

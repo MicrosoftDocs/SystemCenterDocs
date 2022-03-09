@@ -4,7 +4,7 @@ title: Managed instance monitoring pool in Management Pack for Azure SQL Managed
 description: This article explains how to configure monitoring pool in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

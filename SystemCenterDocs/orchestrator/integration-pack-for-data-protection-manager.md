@@ -5,9 +5,9 @@ ms.date: 03/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 
 # Integration pack for System Center - DPM

@@ -2,9 +2,9 @@
 ms.assetid: 6cd25f33-e832-4898-83dd-bed12f06aed8
 title: Set up VMware servers in the VMM compute fabric
 description: This article provides guidance about managing VMware servers in the VMM fabric
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

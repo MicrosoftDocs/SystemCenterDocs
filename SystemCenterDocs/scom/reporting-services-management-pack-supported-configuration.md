@@ -4,8 +4,8 @@ title: Scope and supported configuration in Management Pack for SQL Server Repor
 description: This article explains the scope and supported configuration for Management Pack for SQL Server Reporting Services
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
-ms.date: 3/17/2021
+manager: evansma
+ms.date: 11/16/2021
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -31,7 +31,7 @@ The following is a list of features and configurations supported in Management P
 
 - SQL Server Reporting Services Scale-out deployment
 
-- Power BI Report Server - Verified with build 15.0.1104.239
+- Power BI Report Server - Verified with build 15.0.1107.165
 
   The management pack treats PBIRS as a special kind of SSRS and provides the same monitoring for PBIRS instances as it does for SSRS instances. In this guide, we will use SSRS or Reporting Services, but each term is intended for both SQL Server Reporting Services and Power BI Report Server.
 

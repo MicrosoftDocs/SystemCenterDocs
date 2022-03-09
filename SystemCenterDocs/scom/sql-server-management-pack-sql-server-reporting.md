@@ -4,7 +4,7 @@ title: SQL Server reporting in Management Pack for SQL Server
 description: This article explains SQL Server reporting
 author: TDzakhov
 ms.author: v-tdzakhov
-manager: vvithal
+manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

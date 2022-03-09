@@ -2,9 +2,9 @@
 ms.assetid: 81cb4616-6574-471f-a939-d05198d0d65c
 title: Control Access by Using the Health Service Lockdown Tool in Operations Manager
 description: This article describes how to configure the Operations Manager agent Health Service with restricted privileges.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 10/23/2018
 ms.custom: na
 ms.prod: system-center
@@ -45,7 +45,7 @@ If you used the add or deny options when running the Health Service Lockdown too
 
 When evaluating allowed and denied listings, know that denies takes priority over allows. If a user is listed as allowed, and the same user is a member of a group that is listed as denied, the user will be denied.  
 
-## To use the health service lockdown tool  
+## To deny an account with the health service lockdown tool  
 
 1.  Log on to the computer with an account that is a member of the Administrators group.  
 
@@ -53,11 +53,13 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 
 3.  In the **Run** dialog box, type **cmd** and then click **OK**.  
 
-4.  At the command prompt, type ```<drive_letter>:``` (where ```<drive_letter>``` is the drive where the Operations Manager agent is installed) and then press ENTER.  
+4.  At the command prompt, type ```<drive_letter>:``` (where ```<drive_letter>``` is the drive where the Operations Manager agent is installed) and then press **ENTER**.  
 
-5.  Type **cd\Program Files\Microsoft Monitoring Agent\Agent** and then press ENTER.  
+5.  Type `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
 
-6.  Type **HSLockdown \[Management Group Name\] /D \[account or group\]** to deny the group or account, and then press ENTER.  
+6.  Type `HSLockdown.exe [Management Group Name] /D [account or group]` to deny the group or account, and then press **ENTER**.  
+
+7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
 
 ## To unlock the Action account  
 
@@ -69,9 +71,27 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 
 4.  At the command prompt, type ```<drive_letter>:``` (where ```<drive_letter>``` is the drive where the Operations Manager agent is installed) and then press **ENTER**.  
 
-5.  Type **cd\Program Files\Microsoft Monitoring Agent\Agent** and then press ENTER.  
+5.  Type `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
 
-6.  Type **HSLockdown \[Management Group Name\] /A \<Action Account\>** and then press ENTER.  
+6.  Type `HSLockdown.exe [Management Group Name] /A <Action Account>` and then press **ENTER**.  
+
+7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
+
+## To add the Local System account
+
+1.  Log on to the computer with an account that is a member of the Administrators group.  
+
+2.  On the Windows desktop, click **Start**, and then click **Run**.  
+
+3.  In the **Run** dialog box, type **cmd** and then click **OK**.  
+
+4.  At the command prompt, type ```<drive_letter>:``` (where ```<drive_letter>``` is the drive where the Operations Manager agent is installed) and then press **ENTER**.  
+
+5.  Type `cd \Program Files\Microsoft Monitoring Agent\Agent` and then press **ENTER**.  
+
+6.  Type `HSLockdown.exe [Management Group Name] /A “NT AUTHORITY\SYSTEM”` and then press **ENTER**.
+
+7.  Restart the Microsoft Monitoring Agent (HealthService) service to apply changes.
 
 ## Next steps
 

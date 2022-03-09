@@ -2,11 +2,11 @@
 description: Information to help you identify your storage needs and to prepare the storage to support a DPM 2016 deployment.
 manager: carmonm
 ms.topic: article
-author: rayne-wiselman
-ms.author: raynew
+author: jyothisuri
+ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 11/18/2020
+ms.date: 03/04/2022
 title: Prepare data storage
 ms.technology: data-protection-manager
 ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
@@ -60,7 +60,7 @@ When you set up a protection group in DPM, you select disk for short-term storag
 DPM backs up data to disk for short-term storage by saving data to the DPM storage pool. The storage pool is the set of disks and volumes on which the DPM  server stores the recovery points for the protected data. Before you can store data on disk, you'll need at least one disk or volume in a storage pool. You can use any of the following for the storage pool:
 
 > [!NOTE]
-> Network-attached storage (NAS) is not supported for use in the DPM storage pool.
+> Network-attached storage (NAS)  and thin provisioned virtual disks are not supported for use in the DPM storage pool.
 
 -   Direct attached storage (DAS)
 

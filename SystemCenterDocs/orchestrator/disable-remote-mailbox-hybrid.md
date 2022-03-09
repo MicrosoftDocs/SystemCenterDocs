@@ -3,16 +3,16 @@ title: Disable Remote Mailbox (Hybrid)
 description: You can use the Disable Remote Mailbox (Hybrid) activity to remove a mailbox from the cloud-based service (hybrid environment).
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: d21a4d11-f5ef-4948-a7bf-e4f58cc87b7f
-author: cfreemanwa
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ---
 # Disable Remote Mailbox (Hybrid)
 

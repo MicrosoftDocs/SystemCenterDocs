@@ -2,9 +2,9 @@
 ms.assetid: fb56f8b6-660d-430c-90e4-9bd5e5926228
 title: Add an existing SOFS to the VMM fabric
 description: This article provides about managing your Hyper-V environment in the VMM fabric
-author: rayne-wiselman
-ms.author: raynew
-manager: carmonm
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
