@@ -143,6 +143,10 @@ You can now copy the private SSH key to the Windows\-based computer, as describe
 
 You can use the `opsuser` account by using the SSH key and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts.  
 
+> ### Note
+> Verify that you are saving the PuTTYgen Private Key as version 2 instead of version 3. You may change the PPK file version by going to the menu and selecting, **Key** > **Parameters for saving key files...** \
+> PPK file version 2 is currently supported for System Center Operations Manager.
+
 ## Next steps
 
 - To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md)  
