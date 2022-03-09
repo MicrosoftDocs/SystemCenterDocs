@@ -33,7 +33,9 @@ During deployment of the Service Manager data warehouse management server, you c
 
 If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll (which is located in the Prerequisites folder on your Service Manager installation media) to the folder \Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer\Bin on the computer that is hosting SSRS. If you did not use the default instance of SQL Server, the path of the required folder is \Program Files\Microsoft SQL Server\MSRS13.\<INSTANCE\_NAME\>\Reporting Services\ReportServer\Bin. In the following procedure, the default instance name is used.
 
-## To copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file
+## Copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file
+
+Use the following steps:
 
 1. On the computer that will host the remote SSRS, open an instance of Windows Explorer.
 
@@ -43,7 +45,9 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 4. In the Prerequisites folder, click **Microsoft.EnterpriseManagement.Reporting.Code.dll**, and drag it to the folder that you located in either step 2.
 
-## To add a code segment to the rssrvpolicy.config file
+## Add a code segment to the rssrvpolicy.config file
+
+Use the following steps:
 
 1. On the computer that will be hosting SSRS, locate the file rssrvpolicy.config in the \Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer folder for SQL server 2016.
 
@@ -84,7 +88,9 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 5. Save the changes and close the XML editor.
 
-## To add an Extension tag to the Data segment in the rsreportserver.conf file
+## Add an Extension tag to the Data segment in the rsreportserver.conf file
+
+Use the following steps:
 
 1. On the computer hosting SSRS, locate the file rsreportserver.config in the \Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\ReportServer folder for SQL server 2016.
 
@@ -101,14 +107,16 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 5. Save the changes and close the XML editor.
 
-## To verify if your SQL Server Reporting Services installation is configured correctly for Service Manager Data Warehouse
+## Verify SSRS installation
 
-This is a known issue with the SCSM Data Warehouse (DW) Setup version 2016 and higher, but only if SQL Server Reporting Services (SSRS) is running locally on the DW Management Server and SSRS has version 2017 or higher. In this case, the DW Setup completes successfully, but does not configure the specified local SSRS instance properly. 
+In the Service Manager Data Warehouse (DW) version 2016 and later the following known issue is observed:
 
-Use the below script to verify if the **LOCAL** SSRS installation is configured properly in order to be used with the SCSM Data Warehouse.
+If SQL Server Reporting Services (SSRS) is running locally on the Data Warehouse Management Server, and SSRS is 2017 or later, the Data Warehouse Setup completes successfully, but might not configure the specified local SSRS instance properly.
+
+Use the below script to verify if the **LOCAL** SSRS installation is configured correctly and can be used with the Service Manager Data Warehouse.
 
 >[!NOTE]
->This PowerShell script can be executed before or after a SCSM Data Warehouse installation. It can be executed several times. The script won't make any changes. 
+>This PowerShell script can be executed after a Service Manager Data Warehouse installation. The script won't make any changes to the configuration but verifies it. You can run the script as many times as required.
 
 ```PowerShell
 #region function definitions
