@@ -36,7 +36,7 @@ For all of the steps below where a SQL instance network name is referenced, use 
    -  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`
    Change **DatabaseServerName** with your operational database SQL instance network name.  
 
-2. On each management server, edit the following file: `%ProgramFiles%\System Center 2016\Operations Manager\Server\ConfigService.config` for System Center 2016 - Operations Manager, or for all later releases (1801, 1807 and 2019), `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\ConfigService.config`:
+2. On each management server, edit the following file: `%ProgramFiles%\System Center 2016\Operations Manager\Server\ConfigService.config` for System Center 2016 - Operations Manager, or for all later releases (1801, 1807, 2019 and 2022), `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\ConfigService.config`:
 
    -  Under the tag `<Category Name=”Cmdb”>`, change the value for *ServerName* to your operational database SQL instance network name and change the value for *PortNumber* to the SQL Server port number.
 

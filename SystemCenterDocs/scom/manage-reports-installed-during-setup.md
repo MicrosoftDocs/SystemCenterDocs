@@ -27,6 +27,14 @@ System Center Operations Manager provides the reports described in the following
 
 ## Microsoft Generic Report Library  
 
+::: moniker range="=sc-om-2019"
+
+>[!NOTE]
+> Reports **Management pack history**, **Management pack objects** and **Overrides tracking** are available from 2019 UR2 and later.
+
+::: moniker-end
+
+
 |Report|Description|  
 |----------|---------------|  
 |Alert Logging Latency|This report helps to isolate issues in monitoring with Operations Manager by showing the logging latency of an alert for selected objects over time.|  
@@ -43,9 +51,9 @@ System Center Operations Manager provides the reports described in the following
 |Performance|This report shows selected objects and performance counter values graphically over time.|  
 |Performance Detail|This report shows selected objects and performance counter values graphically over time.|  
 |Performance Top Instances|This report shows the top or bottom "N" instances for selected objects and a specific performance counter rule.|  
-|Management pack history (available from 2019 UR2)|This report generates the list of all the management packs, which are either imported or deleted on any management server in your management group. You can filter the report by date, action and username.|  
-| Management pack objects (available from 2019 UR2)|This report tracks and generates the list of all management pack objects, which are newly created or deleted from the management server. This report also tracks edits on management pack objects such as renaming a group/monitor/rule or adding/deleting a member in the group etc.|  
-|Overrides tracking (available from 2019 UR2)|This report tracks the overrides in detail, and supports fields such as Management pack name, Object name, Object type, Affected Property, Old value, New value, Target of the object type and Date.|  
+|Management pack history |This report generates the list of all the management packs, which are either imported or deleted on any management server in your management group. You can filter the report by date, action and username.|  
+| Management pack objects |This report tracks and generates the list of all management pack objects, which are newly created or deleted from the management server. This report also tracks edits on management pack objects such as renaming a group/monitor/rule or adding/deleting a member in the group etc.|  
+|Overrides tracking |This report tracks the overrides in detail, and supports fields such as Management pack name, Object name, Object type, Affected Property, Old value, New value, Target of the object type and Date.|  
 
 ## Client Monitoring Views Library  
 

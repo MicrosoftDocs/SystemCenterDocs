@@ -20,15 +20,28 @@ ms.topic: article
 
 ::: moniker-end
 
-Operations Manager 2019 includes support for [Linux and Unix](plan-supported-crossplat-os.md) workloads and operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operations Manager 2019 also supports a new capability called **Machine Details**, which provides the computer details (name and operating system) on which a selected workload is running.
+::: moniker range="<=sc-om-2016 <sc-om-2019"
 
-If there are management packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for management packs that are installed in your management group.
+Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
+
+If there are Management Packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for Management Packs that are installed in your management group.
+
+::: moniker-end
+
+
+::: moniker range=">=sc-om-2019"
+
+Operations Manager includes support for [Linux and Unix](plan-supported-crossplat-os.md) workloads and operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operations Manager 2019 also supports a new capability called **Machine Details**, which provides the computer details (name and operating system) on which a selected workload is running.
+
+If there are management packs in the catalog that are designed to monitor those workloads, they will be displayed on the *Updates and Recommendations* screen. You will also find a list of any updates that are available for management packs that are installed in your management group.
+
+::: moniker-end
 
 When a new workload is deployed in your IT infrastructure that was never monitored by Operations Manager, it will be detected and highlighted under the Updates and Recommendations node.  The management packs required to monitor that workload will be presented with a status of **Not Installed**.  If the necessary management pack files for a particular workload are not installed, for example the library management pack file is installed but not the corresponding discovery and monitoring management pack files, the Updates and Recommendations feature will list that workload with a status of **Partially Installed**.  
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
-Operations Manager 2019, Updates and Recommendation feature  includes support for application servers running on Linux and Unix operating systems.
+Operations Manager *Updates and Recommendation* feature  includes support for application servers running on Linux and Unix operating systems.
 
 ::: moniker-end
 
