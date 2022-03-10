@@ -22,7 +22,7 @@ ms.technology: virtual-machine-manager
 Read this article to learn about enabling dynamic optimization (DO) and power optimization  for virtual machines (VMs) in the System Center - Virtual Machine Manager (VMM). The article includes features overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
 
 >[!NOTE]
-> - VMM 2019 and later supports dynamic optimization for Compute and Storage. Versions prior to VMM 2019 support DO for compute only, use the following procedures as applicable for the version of VMM you are using.
+> - VMM supports dynamic optimization for Compute and Storage. Versions prior to VMM 2019 support DO for compute only, use the following procedures as applicable for the version of VMM you are using.
 > - VMM doesn’t support site aware clusters or stretched clusters. VMM doesn’t consider Hyper-V defined *site-specific fault domains* for dynamic optimization calculation.
 
 - **Dynamic optimization**:  Using dynamic optimization, VMM performs live migration of VMs and VHDs within a host cluster. The migration is based on the settings you specify, to improve load balancing among hosts and cluster shared storage (Cluster shared volumes (CSV), file shares), and to correct the placement issues for VMs.
@@ -108,7 +108,7 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 over WS-Man
    1.  Select the **Automatically migrate virtual machines to balance load** check box to balance free storage space across shared storage.
    2. In **Frequency**, specify how often to run dynamic Optimization. You can enter any value between 10 minutes and 1440 minutes \(24 hours\).
 
-8. Set thresholds for each of the compute and storage ( applicable for VMM 2019) resources listed. To change the units of the resources go to  **Host group**> **Properties**  > **Host Reserves** and choose the unit from the drop-down menu.
+8. Set thresholds for each of the compute and storage ( applicable for VMM 2019 and later) resources listed. To change the units of the resources go to  **Host group**> **Properties**  > **Host Reserves** and choose the unit from the drop-down menu.
 
 9. To turn on power optimization on the host group, select the **Enable power optimization** checkbox.  Click **OK** again to save your changes.
 

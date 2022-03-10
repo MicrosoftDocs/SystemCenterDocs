@@ -78,14 +78,17 @@ To remove orphaned resources, modify the templates that reference the orphaned r
 1. Add a new resource that's valid.
 1. When you've completed these steps for all templates, closed the **Properties** dialog. To verify there aren't any dependencies right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.
 
+
+::: moniker range="sc-vmm-2019"
+>[!NOTE]
+>The following feature is applicable for VMM 2019 UR1 and later.
+::: moniker-end
+
 ::: moniker range=">=sc-vmm-2019"
 
 ## Manage replicated library shares
 
->[!NOTE]
->This feature is applicable for VMM 2019 UR1 and later.
-
-VMM now supports the management of library servers, which are replicated. You can use any replication technologies such as DFSR to replicate shares and manage the shares through VMM.
+VMM supports the management of library servers, which are replicated. You can use any replication technologies such as DFSR to replicate shares and manage the shares through VMM.
 
 For effective management of replicated shares using VMM, disable the usage of *alternate data stream* for both the source and destination library shares.  You can do this while adding new library shares or by editing properties of existing library shares. *Alternate data stream* is enabled by default. Disable this option only when using replication across library shares.
 

@@ -52,10 +52,17 @@ You set up Operations Manager with VMM as follows:
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 
 >[!NOTE]
 > Make sure you're using a supported version of Operations Manager (running on Systems Center 2019 or a later version).
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+>[!NOTE]
+> Make sure you're using a supported version of Operations Manager (running on Systems Center 2022).
 
 ::: moniker-end
 

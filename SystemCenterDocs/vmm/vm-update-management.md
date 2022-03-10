@@ -5,7 +5,7 @@ description: This article provides information about how to manage Azure updates
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/01/2019
+ms.date: 03/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -13,7 +13,7 @@ monikerRange: '>=sc-vmm-2019'
 ---
 
 # Azure update management
-This article provides information about Azure update management feature in System Center 2019 - Virtual Machine Manager (VMM).
+This article provides information about Azure update management feature in System Center - Virtual Machine Manager (VMM).
 
 Using Azure update Management feature, you can manage updates for Virtual Machines (VMs) and Workloads running in a VMM.
 
