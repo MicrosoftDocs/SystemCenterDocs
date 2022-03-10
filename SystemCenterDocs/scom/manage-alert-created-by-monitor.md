@@ -233,12 +233,17 @@ Follow these steps:
 
 6.  Refresh the alerts view. If the alert is still listed, click the alert and then click **Close Alert** in the Actions pane.
 
+
+::: moniker range="=sc-om-2019"
+
+>[!NOTE]
+> The following update (Closure of orphan alerts) is applicable for Operations Manager 2019 UR3 and later.
+
+::: moniker-end
+
 ::: moniker range=">=sc-om-2019"
 
 ## Closure of orphan alerts
-
->[!NOTE]
-> This update is applicable for Operations Manager 2019 UR3 and later.
 
 In Operations Manager 2019 RTM, UR1 and UR2, active alerts are not getting closed after non-Persistent health state in certain scenarios, as detailed below:
 
