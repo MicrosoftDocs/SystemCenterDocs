@@ -60,7 +60,7 @@ optional properties into published data.
 You can specify the following rule properties:
 
 - Collection: The display name or ID of an existing collection.
-- Collection Value Type: Indicates whether the value in the Collection property is a name of a collection ID.
+- Collection Value Type: Indicates whether the value in the Collection property is a name or a collection ID.
 - Rule Name: The name for the rule that will be shown in the Configuration Manager console for the collection’s membership rules.
 - Rule Type: The type of membership rule to be added. Options are:
   * Direct Rule - a single user or computer

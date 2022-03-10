@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: JYOTHIRMAISURI
 ms.prod: system-center
-ms.author: V-jysur
+ms.author: carmonm
 keywords:
 ms.date: 03/14/2019
 title: Overview of System Center LTSC and SAC releases
@@ -20,12 +20,11 @@ As a System Center customer, stay on the Long-Term Servicing Channel (LTSC) or m
 > [!NOTE]
 > The Semi-Annual Channel (SAC) for System Center has been discontinued. System Center 2019 will support upgrades from two prior SAC releases so customers running System Center 1801 or System Center 1807 will be able to upgrade to System Center 2019.
 > Configuration Manager is not impacted by the 2019 release change and will continue current branch release cadence of three times per year as detailed in [Support for Configuration Manager current branch versions](/configmgr/core/servers/manage/current-branch-versions-supported).
-
 ## Semi-Annual Channel
 
 The Semi-Annual Channel is for customers who innovate quickly. With approximately two releases a year, you get new enhancements, features, and fixes almost as soon as Engineering signs off.
 
-The first Semi-Annual Channel release was System Center, version 1801. Versions are identified by the year and month of release so version 1801 was released in January 2018.  
+The first Semi-Annual Channel release was System Center, version 1801. Versions are identified by the year and month of release so version 1801 was released in January 2018.
 
 Semi-Annual Channel releases have 18 months of support from the date of public availability. And public availability is the same month, or month following the release date. System Center, version 1801, was released in January 2018. Public availability was February 8, 2018. [Support for version 1801 is available until August 8](sac-support-lifecycle.md), 2019.
 
@@ -43,7 +42,7 @@ Most features introduced in the Semi-Annual Channel will be rolled into the next
 
 ## Should you use LTSC or Semi-Annual Channel?
 
-The key differences to consider:  
+The key differences to consider:
 
 - Need to innovate rapidly? Do you need early access to the newest System Center features? If so, consider joining the **Semi-Annual Channel** by installing System Center, version 1801. As previously described, you receive new versions approximately two times a year, with 18 months of production support per release.
 - Need a longer cycle and predictability? If so, consider staying on the **Long-Term Servicing Channel**. The current LTSC release is System Center 2016 and the next release will be System Center 2019. As previously noted, you'll have access to new versions approximately every two to three years. Each release comes with five years of mainstream support followed by five more years of extended support. LTSC releases are available to everyone, regardless of their licensing model.
