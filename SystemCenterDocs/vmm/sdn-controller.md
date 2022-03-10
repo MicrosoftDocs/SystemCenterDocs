@@ -40,7 +40,7 @@ For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2022
+::: moniker range="sc-vmm-2022"
 
 >[!NOTE]
 > - **One Connected** network type is changed as **Connected Network**.
