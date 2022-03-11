@@ -115,7 +115,7 @@ This example prepares a remote SQL Server cluster to use in a migration.
 
 4. Continue with the wizard options and complete the setup.
 
-5. After the setup is complete, the corresponding database name on the instance specified will now be *DPMPB_DPMServerName*. Because this may be shared with other DPM servers, the naming convention for the DPM database will now be: *DPM2016$DPMDB_DPMServerName*
+5. After the setup is complete, the corresponding database name on the instance specified will now be *DPMPB_DPMServerName*. Because this may be shared with other DPM servers, the naming convention for the DPM database will now be: *DPM2022$DPMDB_DPMServerName*
 
 ## Add storage for Modern Backup Storage
 
@@ -153,46 +153,6 @@ Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-Datasour
 ```
 
 The changes made through PowerShell are reflected in the UI.
-
-## Migrate legacy storage to Modern Backup Storage
-After upgrading to DPM 2019 and the operating system to Windows Server 2016/2019, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups are not changed, and continue to function as they were configured in earlier version of your DPM. You can optionally update protection groups to use Modern Backup Storage, is optional. To update the protection group, stop protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
-
-Use the following steps:
-
-1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, right-click the member, and select **Stop protection of member...**.
-
-   ![Stop protection](../dpm/media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
-
-   The **Remove from Group** dialog opens.
-
-2. In the **Remove from Group** dialog, review the used disk space and the available free space in the storage pool. The default is to leave the recovery points on the disk and allow them to expire per their associated retention policy. Click **OK**.
-
-    If you want to immediately return the used disk space to the free storage pool, select **Delete replica on disk**. This will delete the backup data (and recovery points) associated with that member.
-
-    ![Retain data](../dpm/media/upgrade-to-dpm-2016/dpm-2016-retain-data.png)
-
-3. Create a new protection group that uses Modern Backup Storage, and include the unprotected data sources.
-
-
-## Add Disks to increase legacy storage
-
-If you want to use legacy storage with DPM 2022, it may be required to add disks to increase legacy storage. To add disk storage:
-
-1. On the Administrator Console, click **Management**.
-
-2. Select **Disk Storage**.
-
-3. On the tool ribbon click **Add**.
-
-    The **Add Disk Storage** dialog opens.
-
-    ![Add disks](../dpm/media/upgrade-to-dpm-2016/dpm-2016-add-disk-storage.png)
-
-4. In the **Add Disk Storage** dialog, click **Add disks**.
-
-    DPM provides a list of available disks.
-
-5. Select the disks, click **Add** to add the disks, and click **OK**.
 
 ## Enable Cloud Protection
 
