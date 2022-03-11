@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Scope and Supported Configuration in Management Pack for SQL Server
 
-Management Pack for SQL Server is version-agnostic. It supports discovery and monitoring of SQL Server 2012 through 2019 and higher, including SQL on Linux with SQL Server 2017 and higher.
+Management Pack for SQL Server is version-agnostic. It supports discovery and monitoring of SQL Server 2012 through 2022, including SQL on Linux with SQL Server 2017 and higher.
 
 ## Operating Systems and Platforms
 
@@ -77,6 +77,7 @@ Management Pack for SQL Server supports the following versions of System Center 
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807
 - System Center Operations Manager 2019
+- System Center Operations Manager 2022
 
 ## Monitoring Modes
 
