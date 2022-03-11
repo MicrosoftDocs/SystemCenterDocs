@@ -29,7 +29,7 @@ moniker-end
 
 moniker range="sc-om-2022"
 
-## Operating Systems and Platforms
+## Supported Operating Systems and Platforms
 
 Management Pack for SQL Server Reporting Services supports the following operating systems and platforms:
 
