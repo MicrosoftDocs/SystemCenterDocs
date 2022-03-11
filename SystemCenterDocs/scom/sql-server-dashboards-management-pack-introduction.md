@@ -30,6 +30,7 @@ This management pack is designed for the following versions of System Center Ope
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807
 - System Center Operations Manager 2019
+- System Center Operations Manager 2022
 
 A dedicated Operations Manager management group is not required for this management pack.
 
