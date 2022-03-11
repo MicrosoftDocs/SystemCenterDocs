@@ -45,3 +45,4 @@ The following is a list of supported versions of System Center Operations Manage
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807
 - System Center Operations Manager 2019
+- System Center Operations Manager 2022

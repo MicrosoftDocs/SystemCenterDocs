@@ -46,7 +46,7 @@ You can use a least-privileged account for the agent’s action account. On comp
 
 - Member of the local Users group
 - Member of the local Performance Monitor Users group
-- Allow log on locally (SetInteractiveLogonRight) permission (not applicable for Operations Manager 2019).
+- Allow log on locally (SetInteractiveLogonRight) permission (not applicable for Operations Manager 2019 and later).
 
 
 > [!NOTE]
