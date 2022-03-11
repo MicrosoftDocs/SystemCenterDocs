@@ -5,7 +5,7 @@ manager: carmonm
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 01/05/2022
+ms.date: 03/10/2022
 ms.technology: service-manager
 ms.topic: article
 ms.custom: intro-deployment
@@ -27,11 +27,19 @@ The Self-Service portal provides web-based access to the features of System Cent
  - Windows Server 2012 R2
 ::: moniker-end
 
-::: moniker range=">=sc-sm-2019"
+::: moniker range="sc-sm-2019"
+ - Windows Server 2019
  - Windows Server 2016
  - Windows Server 2012 R2
+ ::: moniker-end
+
+::: moniker range="sc-sm-2022"
+ - Windows Server 2022
  - Windows Server 2019
-::: moniker-end
+ - Windows Server 2016
+ - Windows Server 2012 R2
+ ::: moniker-end
+
 
 For more information, see [system requirements](system-requirements.md)
 ## Supported web browsers

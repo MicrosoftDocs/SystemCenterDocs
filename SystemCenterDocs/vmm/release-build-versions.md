@@ -27,7 +27,7 @@ This article describes how to determine your current Microsoft System Center –
 
 ## Build versions
 
-::: moniker range=">=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 
 The following table lists the build versions for Virtual Machine Manager 2019.
 

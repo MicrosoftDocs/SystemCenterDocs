@@ -173,7 +173,7 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V (V2
 
 In earlier releases, VMM allowed the users to set a static MAC address on the VMs deployed on the hosts, and did not have an option to set static MAC address for the VMs deployed on the cloud.
 
-VMM 2019 allows you to set a set a static MAC address for the VMs deployed on VMM Cloud.
+VMM allows you to set a set a static MAC address for the VMs deployed on VMM Cloud.
 
 Use the following steps:
 

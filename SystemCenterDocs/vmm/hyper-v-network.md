@@ -54,12 +54,14 @@ Regardless of any port profiles and logical switches you are using in your netwo
     - In **Logical Switch Information for Hosts** verify the settings. **Fully compliant** indicates that the host settings are compliant with the logical switch. **Partially compliant** indicates some issues. Check the reasons in **Compliance errors**. **Non compliant** indicates that none of the IP subnets and VLANs defined for the logical network are assigned to the physical adapter. Click the switch > **Remediate** to fix this.
     - If you have a cluster, check each node.
 
+::: moniker range="sc-vmm-2019"
+>[!NOTE]
+> The following feature is applicable for 2019 UR2 and later.
+::: moniker-end
+
 ::: moniker range=">=sc-vmm-2019"
 
 ## Set affinity between vNICs and pNICs
-
->[!NOTE]
-> This feature is applicable for 2019 UR2 and later.
 
 This section provides the information on how to set affinity between virtual network adapters (vNICs) and physical network adapters (pNICs). Affinity between pNICs and vNICs  brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a  higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic.
 

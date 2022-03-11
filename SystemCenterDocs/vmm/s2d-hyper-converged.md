@@ -51,8 +51,16 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 
 - Make sure you're running VMM 2016 or later.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 or later with the Hyper-V Role installed, and be configured to host VMs.
+::: moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
   > [!NOTE]
   > VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](deploy-manage-azure-stack-hci.md).
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+  > [!NOTE]
+  > VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
+::: moniker-end
+
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster, or export the storage to other resources using SOFS.
 
@@ -91,12 +99,17 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 2.	You need to [set up a logical switch](network-switch.md) with Switch Embedded Teaming (SET) enabled, so that the switch is aware of virtualization. This switch is connected to the management logical network, and has all of the host virtual adapters that are required to provide access to the management network, or configure storage networking. S2D relies on a network to communicate between hosts. RDMA-capable adapters are recommended.
 3.	[Create VM networks](network-virtual.md).
 
+::: moniker range="sc-vmm-2019"
+>[!NOTE]
+>The following feature is applicable for VMM 2019 UR1.
+::: moniker-end
+
 ::: moniker range=">=sc-vmm-2019"
 
 ## Step 3: Configure DCB settings on the S2D cluster
 
 >[!NOTE]
->This feature is applicable for VMM 2019 UR1. Configuration of DCB settings is an optional step to achieve high performance during S2D cluster creation workflow. Skip to step 4, if you do not wish to configure DCB settings.
+>Configuration of DCB settings is an optional step to achieve high performance during S2D cluster creation workflow. Skip to step 4, if you do not wish to configure DCB settings.
 
 ### Recommendations
 - If you have vNICs deployed, for optimal performance, we recommend to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually set affinity between vNIC and pNIC by following the steps listed [here](hyper-v-network.md#set-affinity-between-vnics-and-pnics).

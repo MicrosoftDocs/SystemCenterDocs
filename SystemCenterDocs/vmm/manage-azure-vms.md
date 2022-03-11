@@ -19,7 +19,7 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-This article provides information about the *Manage Azure Virtual Machines (VMs)* feature in System Center 2019 - Virtual Machine Manager (VMM).
+This article provides information about the *Manage Azure Virtual Machines (VMs)* feature in System Center - Virtual Machine Manager (VMM).
 
 This feature allows you to perform basic actions on Azure instances attached to an Azure profile, created for Azure VM management.
 

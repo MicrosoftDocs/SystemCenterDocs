@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 03/14/2019
+ms.date: 03/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -20,17 +20,17 @@ monikerRange: '>=sc-sm-2019'
 
 Security best practice is to disable interactive and remote interactive sessions for service accounts. Security teams, across organizations have strict controls to enforce this best practice to prevent credential theft, and associated attacks.
 
-System Center 2019 - Service Manager (SM) supports hardening of service accounts, and don't require granting the *Allow log on locally* user right for several accounts, required in support of SM.
+System Center - Service Manager (SM) supports hardening of service accounts, and don't require granting the *Allow log on locally* user right for several accounts, required in support of SM.
 
 You must provide service log on permission to the following accounts that are used by SM management server and data warehouse management server.
 
 **Service Manager Services Account**:
 This account is used for System Center Data Access Service and System Center Management Configuration service.
 
-With SM 2019, this account requires service logon permission.  
+This account requires service logon permission.  
 
 **Service Manager Workflow account**
-This account is used to run the *MonitoringHost.exe* process (runs all the Workflows). With SM 2019, this account requires service logon permission.
+This account is used to run the *MonitoringHost.exe* process (runs all the Workflows). This account requires service logon permission.
 
 >[!NOTE]
 >We recommend that you provide service logon permission to the accounts used by various SM connectors (AD, OM, SCO, CM, VMM, exchange connectors).
@@ -67,8 +67,8 @@ Follow these steps:
 
 ##  Change logon type from a default value
 
-With SM 2019, default logon type is *Service log on*.
-After new installation of  SM 2019 or an upgrade, logon type will be Service log on, by default.
+Default logon type is *Service log on*.
+After new installation of  SM or an upgrade, logon type will be Service log on, by default.
 
 You can change the default log on type by using the following steps:
 

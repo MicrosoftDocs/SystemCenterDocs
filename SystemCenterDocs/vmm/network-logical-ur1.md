@@ -9,7 +9,7 @@ ms.date: 02/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-monikerRange: '>=sc-vmm-2019'
+monikerRange: 'sc-vmm-2019'
 ---
 
 # Set up logical networks in the VMM 2019 UR1 fabric
