@@ -30,6 +30,12 @@ Management packs can be sealed or unsealed. A sealed management pack cannot be m
 
 ::: moniker-end
 
+::: moniker range="sc-om-2022"
+>[!NOTE]
+> You can track the changes done in management packs. [Learn more](management-pack-change-tracking.md).
+
+::: moniker-end
+
 The following illustration shows the unsealed management packs that are installed with Operations Manager.  
 
 ![Dropdown menu for selecting management pack](./media/manage-mp-create-unsealed-mp/om2016-save-override-to-mp.png)  

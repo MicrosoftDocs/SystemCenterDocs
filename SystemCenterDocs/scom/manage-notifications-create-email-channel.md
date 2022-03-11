@@ -76,7 +76,7 @@ Before you begin, gather the following information:
 
 ## Create an email notification in HTML format
 
-Operations Manager 2019 introduces the ability to create and send email notifications in HTML format.
+Operations Manager has the ability to create and send email notifications in HTML format.
 
 With this feature, an administrator would be able to configure an email in HTML format for sending notifications to subscribers. The administrators can use the existing default HTML email template, edit it, or create a new HTML message. With HTML email format, subscribers  get easy access to relevant information about the alert, alert source and the rule/monitor that generated the alert. They can view these details through the drill-down links available at the end of the email.
 
