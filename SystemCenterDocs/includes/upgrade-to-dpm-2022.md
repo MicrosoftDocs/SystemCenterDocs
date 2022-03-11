@@ -6,7 +6,7 @@ author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center
 keywords:
-ms.date:  11/29/2021
+ms.date:  03/11/2022
 title:  include file
 ms.technology:  data-protection-manager
 ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
@@ -15,18 +15,16 @@ ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
 ## Upgrade to DPM 2022
 
 You can install System Center - 2022 Data Protection Manager (DPM) on Windows Server 2019.
-You can upgrade to DPM 2022 from the following versions:
+You can upgrade to DPM 2022 from DPM 2019.
 
-- DPM 2019
-- DPM 2016
-
-  Before you upgrade to or install DPM 2022, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
+Before you upgrade to or install DPM 2022, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
 
 ## Upgrade path for DPM 2022
-If you upgrade from DPM 2019 to DPM 2022, make sure your installation has the following necessary updates:
+To upgrade from DPM 2019 to DPM 2022, make sure your installation has the following necessary updates:
 
 - Upgrade the DPM server to DPM 2022.
+- Upgrade the MARS agent to latest version (applicable if DPM server is connected to Azure), must be 2.0.9236.0 or later.
 - Update the agents on the protected servers.
 - Upgrade the DPM Remote Administrator on all production servers.
 - Backups continue without rebooting your production server.
@@ -50,7 +48,7 @@ DPM 2022 setup allows you to migrate the DPM database to different SQL Servers d
 
 ### Possible database migration scenarios
 
-The following scenarios exist when you are upgrading DPM 2019/2016 to DPM 2022 using a:
+The following scenarios exist when you are upgrading DPM 2019 to DPM 2022 using a:
 
 1. Local instance and migrating to a remote instance of SQL Server during setup.
 2. Remote instance and migrating to a local instance of SQL Server during setup.
@@ -69,7 +67,7 @@ If you want to use a new SQL server to migrate the DPM database, before you upgr
 
 Once you have the new instance of SQL Server installed and prepared for DPM use, you must make a backup of the current DPM database and restore it on the new SQL Server.
 
-### Pre-upgrade steps: Backup and restore DPM 2019/2016 database to a new SQL instance
+### Pre-upgrade steps: Backup and restore DPM 2019 database to a new SQL instance
 
 This example prepares a remote SQL Server cluster to use in a migration.
 
