@@ -43,7 +43,6 @@ For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid
 ::: moniker range="sc-vmm-2022"
 
 >[!NOTE]
-> - **One Connected** network type is changed as **Connected Network**.
 > - VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
 > - VMM 2022 supports dual stack (Ipv4 + Ipv6) for SDN components.
 
@@ -164,15 +163,12 @@ You create a management logical network in VMM, to mirror your physical manageme
 ::: moniker range=">=sc-vmm-2019"
 3.  In **Settings** select **One Connected Network**. All management networks need to have routing and connectivity between all hosts in that network. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly** to automatically create a VM network for your management network.
 ::: moniker-end
+
 ::: moniker range="sc-vmm-2019"
    >[!NOTE]
    > From VMM 2019 UR1,**One Connected Network** type is changed to **Connected Network**.
+::: moniker-end
 
-::: moniker-end
-::: moniker range="sc-vmm-2022"
-   >[!NOTE]
-   >**One Connected Network** type is changed to **Connected Network**.
-::: moniker-end
 4.  Click **Network Site** > **Add**. Select the host group for the hosts that will be managed by the network controller. Insert your management network IP subnet details. This network should already exist and be configured in your physical switch.
 5.  Review the **Summary** information and click **Finish** to complete.
 
