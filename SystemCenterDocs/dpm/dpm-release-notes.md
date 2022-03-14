@@ -23,7 +23,7 @@ We recommend you to see the following articles for detailed information about wh
 - [What DPM supports](dpm-support-issues.md)
 
 >[!NOTE]
-> DPM 2022 will be generally available on May 1st, 2022.
+> DPM 2022 is currently unavailable.
 
 ::: moniker-end
 
