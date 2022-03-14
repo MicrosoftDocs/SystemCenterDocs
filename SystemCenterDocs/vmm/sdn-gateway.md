@@ -31,15 +31,9 @@ An SDN RAS gateway is a data path element in SDN that enables site-to-site conne
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2019"
-
 >[!NOTE]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**.
 >- VMM 2019 UR2 and later supports IPv6.
-::: moniker-end
-
-::: moniker range="sc-vmm-2022"
->[!NOTE]
->- **One Connected** network type is changed to **Connected Network**.
 ::: moniker-end
 
 ## Before you start
