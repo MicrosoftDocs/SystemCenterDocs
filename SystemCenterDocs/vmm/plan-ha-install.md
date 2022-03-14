@@ -64,13 +64,24 @@ You shouldn't install SQL Server on the VMM cluster.
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
+
 - Requirements for computers running as VMM management nodes:
 	- All cluster nodes that will act as VMM servers must be running either Windows Server 2016 or Windows Server 2019.
 	- Each cluster node must be joined to a domain and must have a computer name that does not exceed 15 characters.
 	- The VMM service network name must not exceed 15 characters.
 	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](/windows-hardware/get-started/adk-install). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
 	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](https://www.microsoft.com/download/details.aspx?id=56041) or [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=57474) or [SQL Server 2016 feature pack](https://www.microsoft.com/download/details.aspx?id=56833).
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+- Requirements for computers running as VMM management nodes:
+	- All cluster nodes that will act as VMM servers must be running either Windows Server 2019 or Windows Server 2022.
+	- Each cluster node must be joined to a domain and must have a computer name that does not exceed 15 characters.
+	- The VMM service network name must not exceed 15 characters.
+	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](/windows-hardware/get-started/adk-install). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
+	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](https://www.microsoft.com/download/details.aspx?id=56041) or [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=57474) or [SQL Server 2016 feature pack](https://www.microsoft.com/download/details.aspx?id=56833) or [SQL Server 2017 feature pack](https://www.microsoft.com/download/details.aspx?id=55992).
 
 ::: moniker-end
 
