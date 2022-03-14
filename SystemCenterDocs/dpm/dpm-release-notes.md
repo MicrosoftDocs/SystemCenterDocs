@@ -22,6 +22,9 @@ We recommend you to see the following articles for detailed information about wh
 - [What can DPM backup](dpm-protection-matrix.md)
 - [What DPM supports](dpm-support-issues.md)
 
+>[!NOTE]
+> DPM 2022 is currently unavailable.
+
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1807"

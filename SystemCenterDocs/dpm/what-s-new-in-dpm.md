@@ -26,6 +26,9 @@ This article details the new features supported in System Center - Data Protecti
 
 This article details the new features supported in System Center - Data Protection Manager (DPM), includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1) and [2019 UR2](#new-features-in-dpm-2019-ur2).
 
+>[!NOTE]
+> DPM 2022 is currently unavailable.
+
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1807"
