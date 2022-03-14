@@ -57,7 +57,7 @@ You use the Dashboard to get a quick overview of the state of your System Center
 
 From the dashboard you can download the Backup agent for installation on a server, modify settings for certificates uploaded to the vault, and delete a vault if necessary.
 
-::: moniker range=">=sc-dpm-2019"
+::: moniker range="sc-dpm-2019"
 
 ##	Central Monitoring
 All DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup. You can monitor both on premise and cloud backups, using Log Analytics with Central Monitoring. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts, and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration.

@@ -25,10 +25,6 @@ monikerRange: '>sc-dpm-2016'
 This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 5.5, 6.0, 6.5 or 6.7 versions of add a new user account vCenter and vSphere Hypervisor (ESXi).
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
-This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7, 7.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
-::: moniker-end
-
 ## Supported VMware features
 
 DPM provides the following features when backing up VMware virtual machines:
@@ -334,7 +330,7 @@ DPM provides application-consistent backups of Windows VMs and file-consistent b
 ### Back up virtual machine to Tape
 
 > [!NOTE]
-> Applicable to DPM 2019 and later
+> Applicable to DPM 2019.
 
 For long term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 and later supports both OLR (Original Location Recovery) & ALR (Alternate Location Recovery) for restoring the protected VM.
 
@@ -437,11 +433,11 @@ You can restore individual files from a protected VM recovery point. This featur
 10.	On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
 
-::: moniker range=">=sc-dpm-2019"
+::: moniker range="sc-dpm-2019"
 
 ## VMware parallel backups
 
-With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019 and later, all your VMware VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMware delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, all your VMware VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMware delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
 
 You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
@@ -455,30 +451,11 @@ Key Type : DWORD (32-bit) value.
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-2022"
-
-## VMware parallel restore in DPM 2022
-
-DPM 2022 supports restore of more than one VMware VMs protected from same vCenter in parallel. By default, 8 parallel recoveries are supported. You can increase the number of parallel restore jobs by adding below registry key
-
->[!Note]
->Before you attempt to increase the number of parallel recoveries, you need to consider VMware performance. Considering the number of resources in use and additional usage required on VMware vSphere Server you need to determine the number of recoveries to run in parallel.
-
-**Key Path**: HKLM\ Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs
-
-**32 Bit DWORD**: VMware
-
-**Data**: \<number\>
-
-The value should be the number (decimal) of virtual machines that you select for parallel recovery.
-
-::: moniker-end
-
 ::: moniker range=">=sc-dpm-1807"
 
-## VMware vSphere 6.7 and 7.0
+## VMware vSphere 6.7
 
-To backup vSphere 6.7 and 7.0 (supported from DPM 2022) do the following:
+To backup vSphere 6.7 do the following:
 
 - Enable TLS 1.2 on DPM Server
   >[!Note]
@@ -508,12 +485,12 @@ To backup vSphere 6.7 and 7.0 (supported from DPM 2022) do the following:
 
 ::: moniker-end
 
-::: moniker range=">=sc-dpm-2019"
+::: moniker range="sc-dpm-2019"
 
 ## Exclude disk from VMware VM backup
 
 > [!NOTE]
-> This feature is applicable for DPM 2019 UR1 and later.
+> This feature is applicable for DPM 2019 UR1.
 
 With DPM 2019 UR1, you can exclude the specific disk from VMware VM backup. The configuration script **ExcludeDisk.ps1** is located at C:\Program Files\Microsoft System Center\DPM\DPM\bin folder.
 
