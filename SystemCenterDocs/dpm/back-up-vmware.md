@@ -22,12 +22,12 @@ monikerRange: '>sc-dpm-2016'
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
-This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 5.5, 6.0, 6.5 or 6.7 versions of add a new user account vCenter and vSphere Hypervisor (ESXi).
+This article explains how to use Data Protection Manager (DPM) version 1801 and later, to back up virtual machines running on the 5.5, 6.0, 6.5 or 6.7 versions of VMware vCenter and vSphere Hypervisor (ESXi).
 ::: moniker-end
 
 ## Supported VMware features
 
-DPM provides the following features when backing up VMware virtual machines:
+DPM 1801 and later provides the following features when backing up VMware virtual machines:
 
 >[!NOTE]
 > Backup to tape is supported from DPM 2019.
@@ -169,7 +169,7 @@ DPM uses your user name and password as credentials for communicating and authen
 
 The following table captures the privileges that you need to assign to the user account that you create:
 
-| Privileges for vCenter 6.5 user account                          | Privileges for vCenter 6.7 and later user account                            |
+| Privileges for vCenter 6.5 user account                          | Privileges for vCenter 6.7 user account                            |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | Datastore cluster.Configure a datastore cluster                           | Datastore cluster.Configure a datastore cluster                           |
 | Datastore.AllocateSpace                                                    | Datastore.AllocateSpace                                                    |
@@ -490,7 +490,7 @@ To backup vSphere 6.7 do the following:
 ## Exclude disk from VMware VM backup
 
 > [!NOTE]
-> This feature is applicable for DPM 2019 UR1.
+> This feature is applicable for DPM 2019 UR1 and later.
 
 With DPM 2019 UR1, you can exclude the specific disk from VMware VM backup. The configuration script **ExcludeDisk.ps1** is located at C:\Program Files\Microsoft System Center\DPM\DPM\bin folder.
 
