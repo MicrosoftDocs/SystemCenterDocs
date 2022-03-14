@@ -9,7 +9,7 @@ ms.date:  03/30/2021
 ms.topic:  article
 ms.prod:  system-center
 ms.technology: data-protection-manager
-MonikerRange: sc-dpm-2019||sc-dpm-2016||
+MonikerRange: sc-dpm-2019||sc-dpm-2016
 ---
 
 # Manage telemetry settings

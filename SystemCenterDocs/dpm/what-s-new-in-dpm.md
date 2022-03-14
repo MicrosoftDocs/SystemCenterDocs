@@ -66,7 +66,7 @@ With DPM 2019, you can back up newer versions of workloads, as listed below:
 -	Windows Server 2019
 -	Exchange 2019
 -	SharePoint 2019
--	VMware [vSphere 6.7 and 7.0](back-up-vmware.md#vmware-vsphere-67-and-70)
+-	VMware [vSphere 6.7](back-up-vmware.md#vmware-vsphere-67)
 -	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
 
 ### Faster backups with Tiered storage using SSDs
