@@ -14,14 +14,6 @@ ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 
 # Preparing your environment for System Center Data Protection Manager
 
-::: moniker range="sc-dpm-2022"
-
-Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
-
-[!INCLUDE [system-reqs-dpm-2022.md](../includes/system-reqs-dpm-2022.md)]
-
-::: moniker-end
-
 ::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
 
 [!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
@@ -29,14 +21,14 @@ Use the following information to play the deployment for System Center - Data Pr
 ::: moniker-end
 
 
-::: moniker range="<sc-dpm-2022"
+::: moniker range="<=sc-dpm-2019"
 
 
 Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
 
 ::: moniker-end
 
-::: moniker range="<sc-dpm-2022"
+::: moniker range="<=sc-dpm-2019"
 
 ## DPM deployment considerations
 
@@ -66,7 +58,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 ::: moniker-end
 
-::: moniker range="<sc-dpm-2019"
+::: moniker range="<=sc-dpm-2019"
 
 **SQL Server - supported versions**
 
@@ -91,7 +83,7 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 
 ::: moniker-end
 
-::: moniker range="<sc-dpm-2022"
+::: moniker range="<=sc-dpm-2019"
 
 **SQL Server requirements**
 
@@ -146,7 +138,7 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 
 ::: moniker-end
 
-::: moniker range="<sc-dpm-2022"
+::: moniker range="<=sc-dpm-2019"
 ## Disks and storage
 
 |Requirement|Minimum|Recommended|

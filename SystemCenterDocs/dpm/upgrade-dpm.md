@@ -14,14 +14,6 @@ ms.assetid:
 
 # Upgrade your DPM installation
 
-::: moniker range="sc-dpm-2022"
-
-This article provides the upgrade information for System Center 2022 - Data Protection Manager (DPM).
-
-[!INCLUDE [upgrade-to-dpm-2022.md](../includes/upgrade-to-dpm-2022.md)]
-
-::: moniker-end
-
 ::: moniker range="sc-dpm-2019"
 
 This article provides the upgrade information for System Center 2019 - Data Protection Manager (DPM).
