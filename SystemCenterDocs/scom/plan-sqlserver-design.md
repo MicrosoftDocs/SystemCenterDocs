@@ -50,7 +50,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range=">sc-om-2022"
+::: moniker range="sc-om-2022"
 
 - SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
