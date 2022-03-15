@@ -98,8 +98,9 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 1. Select **Settings** > **General**. Double-click **Network Settings**.
 1. Clear **Create logical networks automatically**.
 
-
 ## Create logical networks manually
+
+::: moniker range="sc-vmm-2019"
 
 1. In VMM console, go to **Fabric** > **Home** > **Show** > **Fabric Resources**. In **Fabric**, expand **Networking** > **Logical Networks** > **Home** > **Create** > **Create Logical Network**.
 1.  In the **Create Logical Network Wizard**, select **Name**, and specify a name and description.
@@ -108,17 +109,7 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
     ![Create logical networks manually](media/network-logical/create-logical-networks-manually.png)
 
-    ::: moniker range="sc-vmm-2019"
-
     To simplify logical network creation, descriptions and illustrations of the logical network types are added in VMM 2019 UR1. 
-
-    ::: moniker-end
-
-    ::: moniker range="sc-vmm-2022"
-
-    To simplify logical network creation, descriptions and illustrations of the logical network types are available in VMM. 
-
-    ::: moniker-end
     
     Each type of logical network has an in-product description and an illustration that describes the use case.
 
@@ -127,8 +118,6 @@ If you don't want VMM to create logical and VM networks automatically, you can d
         - If the logical network provides public IP addresses, choose **IP address network**.
     - To create multiple VM networks that are independent of each other, choose **Independent Network**. Each VM network will have access to a specific VLAN subnet pair or a PVLAN subnet pair.
     - To create a multiple virtualized VM network that has its own virtualized address space, choose **Virtualized network**.
-
-::: moniker range="sc-vmm-2019"
 
 1. In **Network Site**, add network sites to the logical network. If you don't need to create network sites, select **Next**.
 
@@ -147,6 +136,23 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
+
+1. In VMM console, go to **Fabric** > **Home** > **Show** > **Fabric Resources**. In **Fabric**, expand **Networking** > **Logical Networks** > **Home** > **Create** > **Create Logical Network**.
+1.  In the **Create Logical Network Wizard**, select **Name**, and specify a name and description.
+
+1.  Specify how you want to isolate VM networks associated with this logical network.
+
+    ![Create logical networks manually](media/network-logical/create-logical-networks-manually.png)
+
+    To simplify logical network creation, descriptions and illustrations of the logical network types are available in VMM. 
+    
+    Each type of logical network has an in-product description and an illustration that describes the use case.
+
+    - If you want to create a single VM network that has access to all the underlying VLAN-subnet pairs, choose **Connected network**. Here, the VLAN and IP subnet pairs of the underlying physical network are logically equivalent.
+        - To allow Microsoft Network Controller to manage the logical network, choose **Managed by Microsoft Network controller**.
+        - If the logical network provides public IP addresses, choose **IP address network**.
+    - To create multiple VM networks that are independent of each other, choose **Independent Network**. Each VM network will have access to a specific VLAN subnet pair or a PVLAN subnet pair.
+    - To create a multiple virtualized VM network that has its own virtualized address space, choose **Virtualized network**.
 
 1. In **Network Site**, add network sites to the logical network. If you don't need to create network sites, select **Next**.
 
