@@ -27,7 +27,7 @@ The following sections detail the release notes for Service Manager 2019 and inc
 
 **Workaround**:
 Follow these steps to manually activate the Data Warehouse server:  
-1. Open Windows Powershell.
+1. Open Windows PowerShell.
 2. Change directory to Installation folder/Powershell.
 3. Run the following command to import PowerShell module;
    `– Import-Module .\System.Center.Service.Manager.psm1`
