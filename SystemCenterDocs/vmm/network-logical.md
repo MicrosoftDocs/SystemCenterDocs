@@ -20,14 +20,11 @@ monikerRange: '<=sc-vmm-2019'
 
 ::: moniker-end
 
-
 Read this article to learn how to create logical networks in System Center - Virtual Machine Manager (VMM)
 
 ::: moniker range="sc-vmm-2019"
-
 >[!NOTE]
 > For information about logical networks in VMM 2019 UR1, [see this article](network-logical-ur1.md).
-
 ::: moniker-end
 
 You have different types of networks in your organization, including corporate networks, management networks, and others. In VMM each of these networks is defined as a logical network. Logical networks are logical objects that mirror your physicals networks.
