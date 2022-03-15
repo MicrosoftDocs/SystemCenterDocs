@@ -5,10 +5,11 @@ description: This article describes how to set up logical networks in the VMM fa
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 03/15/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+monikerRange: '<=sc-vmm-2019'
 ---
 
 # Set up logical networks in the VMM fabric

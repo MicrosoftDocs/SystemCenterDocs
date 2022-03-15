@@ -5,19 +5,29 @@ description: This article describes how to set up logical networks in the VMM 20
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 02/04/2020
+ms.date: 03/15/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-monikerRange: 'sc-vmm-2019'
+monikerRange: '>=sc-vmm-2019'
 ---
 
-# Set up logical networks in the VMM 2019 UR1 fabric
+# Set up logical networks in the VMM
+
+::: moniker range="sc-vmm-2019"
 
 This article describes how to create logical networks in System Center 2019 Update Rollup 1 (UR1) and later Virtual Machine Manager (VMM). VMM 2019 UR1 offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases.
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+This article describes how to create logical networks in System Center. System Center offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases. 
+
+::: moniker-end
+
 >[!NOTE]
->For information on how to create logical networks in VMM 2019, see [Logical networks in VMM 2019 and later](network-logical.md).
+>For information on how to create logical networks in VMM earlier to 2019 UR1, see [Logical networks in VMM](network-logical.md).
 
 You have different types of networks in your organization, such as corporate networks and management networks. In VMM, each of these networks is defined as a logical network. Logical networks are logical objects that mirror your physical networks.
 
@@ -100,7 +110,19 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
     ![Create logical networks manually](media/network-logical/create-logical-networks-manually.png)
 
-    To simplify logical network creation, descriptions and illustrations of the logical network types are added in VMM 2019 UR1. Each type of logical network has an in-product description and an illustration that describes the use case.
+    ::: moniker range="sc-vmm-2019"
+
+    To simplify logical network creation, descriptions and illustrations of the logical network types are added in VMM 2019 UR1. 
+
+    ::: moniker-end
+
+    ::: moniker range="sc-vmm-2022"
+
+    To simplify logical network creation, descriptions and illustrations of the logical network types are available in VMM. 
+
+    ::: moniker-end
+    
+    Each type of logical network has an in-product description and an illustration that describes the use case.
 
     - If you want to create a single VM network that has access to all the underlying VLAN-subnet pairs, choose **Connected network**. Here, the VLAN and IP subnet pairs of the underlying physical network are logically equivalent.
         - To allow Microsoft Network Controller to manage the logical network, choose **Managed by Microsoft Network controller**.
@@ -110,7 +132,13 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
 1. In **Network Site**, add network sites to the logical network. If you don't need to create network sites, select **Next**.
 
+::: moniker range="sc-vmm-2019"
     In VMM 2019 UR1, IP pools can be created when you add network sites in the **Create Logical Network Wizard**.
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+    You can create IP pools when you add network sites in the **Create Logical Network Wizard**.
+::: moniker-end
 
     - **DHCP no VLAN**: If you use DHCP to allocate IP addresses and you don't have VLANs, you don't need a network site. Note that VMM automatically suggests a site name. A network name is limited to a length of 64 characters.
     - **Static IP**: If you use static IP addresses, create at least one network site and associate at least one IP subnet with it.
