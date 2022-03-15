@@ -304,8 +304,8 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
 ::: moniker range="sc-vmm-2019"
 
-    >[!NOTE]
-    > From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
+   >[!NOTE]
+   > From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
 
 ::: moniker-end
 
