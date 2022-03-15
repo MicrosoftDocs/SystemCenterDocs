@@ -21,9 +21,7 @@ This article describes how to create logical networks in System Center 2019 Upda
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
-
 This article describes how to create logical networks in System Center. System Center offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases. 
-
 ::: moniker-end
 
 >[!NOTE]
