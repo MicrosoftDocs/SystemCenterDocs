@@ -27,7 +27,7 @@ The following sections detail the release notes for Service Manager 2019 and inc
 
 **Workaround**:
 Follow these steps to manually activate the Data Warehouse server:  
-1. Open Windows Powershell.
+1. Open Windows PowerShell.
 2. Change directory to Installation folder/Powershell.
 3. Run the following command to import PowerShell module;
    `– Import-Module .\System.Center.Service.Manager.psm1`
@@ -166,3 +166,11 @@ To resolve this issue, follow the steps:
 This issue is observed in Service Manager 2019 with Windows 2019.
 
 **Workaround**: After initiating the Data Warehouse setup, check if the SSRS service stops during the setup. If it stops, start the SSRS service prior to *Install services* phase.
+
+### Report management pack deployments might fail
+
+**Description**: After a successful Data Warehouse installation, deployments of Report management packs might fail if SQL Server Reporting Services (SSRS) is running locally on the Data Warehouse management Server and SSRS is 2017 or later. 
+
+This issue is observed in Service Manager 2016 and later.
+
+**Workaround**: Perform the steps [detailed here](/system-center/scsm/config-remote-ssrs).
