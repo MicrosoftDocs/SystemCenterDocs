@@ -23,7 +23,7 @@ This article describes how to route traffic across networks in a software-define
 
 An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site virtual private network (VPN) using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
-::: moniker range=">=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 
 >[!NOTE]
 > - From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
@@ -31,6 +31,14 @@ An SDN RAS gateway enables you to route network traffic between physical and vir
 > - IPv6 is supported for IPSec tunnel, GRE tunnel and L3 layer tunnel.
 
 ::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+>[!NOTE]
+> - IPv6 is supported for IPSec tunnel, GRE tunnel and L3 layer tunnel.
+
+::: moniker-end
+
 ## Before you start
 
 Ensure the following:
@@ -292,9 +300,16 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
     ![one connected network](./media/sdn-route-network-traffic/one-connected-network.png)
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
     >[!NOTE]
     > From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
 
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2019"
 
 3. Create an IP Pool for this new logical network. IP address from this pool is required for setting up L3 forwarding.
 
