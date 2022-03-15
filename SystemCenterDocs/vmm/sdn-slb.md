@@ -30,7 +30,7 @@ You can use VMM to deploy a network controller and a software load balancer. Aft
 VMM 2022 provides dual stack support for SLB.
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 >[!Note]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
 >- VMM 2019 UR2 and later supports IPv6.

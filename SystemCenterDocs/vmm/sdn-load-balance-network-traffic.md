@@ -33,7 +33,7 @@ System Center Virtual Machine Manager (VMM) supports the following two scenarios
 
 This article provides information about how to configure the load balancing of workload VMs by using PowerShell.
 
-::: moniker range=">=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 >[!Note]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
 >- VMM 2019 UR2 and later supports IPv6.

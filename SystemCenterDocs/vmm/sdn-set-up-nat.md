@@ -36,7 +36,7 @@ VMM 2022 supports dual stack. NAT rules to Dual stack VM networks is not support
 
 ::: moniker-end
 
-::: moniker range=">=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 
 >[!NOTE]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
