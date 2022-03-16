@@ -37,9 +37,15 @@ The integration pack for SharePoint requires the following software to be instal
 
 ## Download the pack
 
+::: moniker range="sc-orch-2022"
+- Download the pack for 2022
+::: moniker-end
+
+::: moniker range="<=sc-orch-2019"
 - [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
 - [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
 - [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
+::: moniker-end
 
 ## Register and deploy the integration pack
 

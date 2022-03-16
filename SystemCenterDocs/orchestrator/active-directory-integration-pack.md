@@ -31,15 +31,32 @@ Microsoft is committed to protecting your privacy, while delivering software tha
 
 Before you can install the Integration Pack for Active Directory, you must first install and configure the following listed software. For more information about how to install and configure Orchestrator and Active Directory, refer to the respective product documentation.
 
--   System Center 2016 integration packs require System Center 2016 - Orchestrator
+::: moniker range="sc-orch-2022"
+-   System Center 2022 integration packs require System Center 2022 - Orchestrator
+-   Windows Server 2022 Active Directory, Windows Server 2019 Active Directory.
+::: moniker-end
+
+::: moniker range="<=sc-orch-2019"
 -   System Center 2019 integration packs require System Center 2019 - Orchestrator
+-   System Center 2016 integration packs require System Center 2016 - Orchestrator
 -   Windows Server 2016 Active Directory, Windows Server 2012 R2 Active Directory, Windows Server 2012 Active Directory, Windows Server 2008 R2 Active Directory, Windows Server 2008 Active Directory, Windows Server 2003 R2 Active Directory, or Windows Server 2003 Active Directory.
+::: moniker-end
 
 ## Downloading the Integration Pack
+
+::: moniker range="<=sc-orch-2019"
 
 - To download the Orchestrator 2016  integration pack, see [Active Directory Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54098).
 
 - To download the Orchestrator 2019 integration pack, see [Active Directory Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58111)
+
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+- To download the Orchestrator 2022 integration pack, see Active Directory Integration Pack for System Center 2022 - Orchestrator.
+
+::: moniker-end
 
 ## Registering and Deploying the Integration Pack
 
