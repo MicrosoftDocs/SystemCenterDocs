@@ -12,4 +12,4 @@ ms.technology: service-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Service Manager has reached the end of support, we recommend you to [upgrade to Service Manager 2019](../scsm/index.yml).
+> This version of Service Manager has reached the end of support, we recommend you to [upgrade to Service Manager 2022](../scsm/index.yml).
