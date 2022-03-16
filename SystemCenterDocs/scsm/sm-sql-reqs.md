@@ -17,7 +17,7 @@ monikerRange:  sc-sm-2016 || sc-sm-2019 || sc-sm-2022
 
 Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center - Service Manager reporting.
 
-Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center . Use this information whether you are deploying one or multiple components of System Center.
+Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center. Use this information whether you are deploying one or multiple components of System Center.
 
 ## SQL Server version support
 
