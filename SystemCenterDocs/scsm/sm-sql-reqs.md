@@ -38,7 +38,7 @@ For detailed information about the requirements for Service Manager components, 
 
 ::: moniker-end
 
-::: moniker range=">=sc-sm-2019"
+::: moniker range="sc-sm-2019"
 
 ## SQL Server version support
 
@@ -57,6 +57,22 @@ For detailed information about the requirements for Service Manager components, 
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
+::: moniker-end
+
+::: moniker-range="sc-sm-2022"
+
+## SQL Server version support
+
+| **System Center 2022 component**                      | **Service Manager** Database or Data Warehouse Database | **Service Management Automation** Web Service |
+|-------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------|
+| **SQL Server 2017 and Cumulative Updates**    | Yes                                                       |Yes                                           |
+| **SQL Server 2019 with Cumulative Update 8 (CU8) or later**    | Yes                                                       |Yes                                          |
+
+>[!NOTE]
+> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+
+For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
+
 ::: moniker-end
 
 ## Allow updates
