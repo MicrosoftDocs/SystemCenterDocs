@@ -1,31 +1,23 @@
 ---
 ms.assetid: 049a010e-78e8-4c93-b8ca-4543ae0c55d7
 title: Set up logical networks in VMM 2019 UR1 and later fabric
-description: This article describes how to set up logical networks in the VMM 2019 UR1 fabric.
+description: This article describes how to set up logical networks in the VMM 2019 UR1 and later fabric.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/15/2022
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-monikerRange: '>=sc-vmm-2019'
+monikerRange: 'sc-vmm-2019'
 ---
 
-# Set up logical networks in the VMM
+# Set up logical networks in the VMM 2019 UR1 and later fabric
 
-::: moniker range="sc-vmm-2019"
-
-This article describes how to create logical networks in System Center 2019 Update Rollup 1 (UR1) and later Virtual Machine Manager (VMM). VMM 2019 UR1 offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases.
-
-::: moniker-end
-
-::: moniker range="sc-vmm-2022"
-This article describes how to create logical networks in System Center. System Center offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases. 
-::: moniker-end
+This article describes how to create logical networks in System Center 2019 Update Rollup 1 (UR1) and later Virtual Machine Manager (VMM). VMM 2019 UR1 and later offers a simplified flow of logical network creation. It supports network types and illustrations in the product based on use cases.
 
 >[!NOTE]
->For information on how to create logical networks in VMM earlier to 2019 UR1, see [Logical networks in VMM](network-logical.md).
+>For information on how to create logical networks in VMM 2019, see [Logical networks in VMM 2019 and later](network-logical.md).
 
 You have different types of networks in your organization, such as corporate networks and management networks. In VMM, each of these networks is defined as a logical network. Logical networks are logical objects that mirror your physical networks.
 
@@ -98,10 +90,9 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 1. Select **Settings** > **General**. Double-click **Network Settings**.
 1. Clear **Create logical networks automatically**.
 
+
 ## Create logical networks manually
 
-::: moniker range="sc-vmm-2019"
-
 1. In VMM console, go to **Fabric** > **Home** > **Show** > **Fabric Resources**. In **Fabric**, expand **Networking** > **Logical Networks** > **Home** > **Create** > **Create Logical Network**.
 1.  In the **Create Logical Network Wizard**, select **Name**, and specify a name and description.
 
@@ -109,9 +100,7 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
     ![Create logical networks manually](media/network-logical/create-logical-networks-manually.png)
 
-    To simplify logical network creation, descriptions and illustrations of the logical network types are added in VMM 2019 UR1. 
-    
-    Each type of logical network has an in-product description and an illustration that describes the use case.
+    To simplify logical network creation, descriptions and illustrations of the logical network types are added in VMM 2019 UR1 and later. Each type of logical network has an in-product description and an illustration that describes the use case.
 
     - If you want to create a single VM network that has access to all the underlying VLAN-subnet pairs, choose **Connected network**. Here, the VLAN and IP subnet pairs of the underlying physical network are logically equivalent.
         - To allow Microsoft Network Controller to manage the logical network, choose **Managed by Microsoft Network controller**.
@@ -121,55 +110,17 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
 1. In **Network Site**, add network sites to the logical network. If you don't need to create network sites, select **Next**.
 
-   In VMM 2019 UR1, IP pools can be created when you add network sites in the **Create Logical Network Wizard**.
+    In VMM 2019 UR1 and later, IP pools can be created when you add network sites in the **Create Logical Network Wizard**.
 
-   - **DHCP no VLAN**: If you use DHCP to allocate IP addresses and you don't have VLANs, you don't need a network site. Note that VMM automatically suggests a site name. A network name is limited to a length of 64 characters.
-   - **Static IP**: If you use static IP addresses, create at least one network site and associate at least one IP subnet with it.
-   - **VLAN**: If you use VLANs with static IP addressing, create corresponding network sites for the VLAN and subnet pairs. If you use DHCP, create corresponding network sites for VLAN information only.
-   - **Network virtualization**: If you use network virtualization, create at least one network site with an associated IP subnet so that the logical network has an IP address pool.
-   - **Load balancer**: If the logical network will contain a load balancer, create at least one network site with an associated IP subnet.
+    - **DHCP no VLAN**: If you use DHCP to allocate IP addresses and you don't have VLANs, you don't need a network site. Note that VMM automatically suggests a site name. A network name is limited to a length of 64 characters.
+    - **Static IP**: If you use static IP addresses, create at least one network site and associate at least one IP subnet with it.
+    - **VLAN**: If you use VLANs with static IP addressing, create corresponding network sites for the VLAN and subnet pairs. If you use DHCP, create corresponding network sites for VLAN information only.
+    - **Network virtualization**: If you use network virtualization, create at least one network site with an associated IP subnet so that the logical network has an IP address pool.
+    - **Load balancer**: If the logical network will contain a load balancer, create at least one network site with an associated IP subnet.
 1. If you use an external network managed by a vendor network management console or virtual switch extension manager outside VMM, you can configure settings in the vendor console and import them into VMM.
 1. In **Host groups that can use this network site**, select each host group to which you want to make the logical network available.
 1. In **Associated VLANs and IP subnets**, select **Insert Row** to specify the settings that you want to assign to the network site. If you select **PVLAN**, you need to add a **Secondary VLAN** for each VLAN. Ensure that the VLANs and subnets are available in your physical network. If you leave the **VLAN** field empty, VMM assigns a value of 0 to indicate that VLANs aren't used. In trunk mode, 0 indicates a native VLAN.
 1. If you created network sites and associated one or more IP subnets with them (when you're not using DHCP), you can create static IP address pools from those subnets. Then VMM can automatically allocate IP addresses to VMs in the network site. IP pools can be created within the **Create Logical Network Wizard**.
-
-::: moniker-end
-
-::: moniker range="sc-vmm-2022"
-
-1. In VMM console, go to **Fabric** > **Home** > **Show** > **Fabric Resources**. In **Fabric**, expand **Networking** > **Logical Networks** > **Home** > **Create** > **Create Logical Network**.
-1.  In the **Create Logical Network Wizard**, select **Name**, and specify a name and description.
-
-1.  Specify how you want to isolate VM networks associated with this logical network.
-
-    ![Create logical networks manually](media/network-logical/create-logical-networks-manually.png)
-
-    To simplify logical network creation, descriptions and illustrations of the logical network types are available in VMM. 
-    
-    Each type of logical network has an in-product description and an illustration that describes the use case.
-
-    - If you want to create a single VM network that has access to all the underlying VLAN-subnet pairs, choose **Connected network**. Here, the VLAN and IP subnet pairs of the underlying physical network are logically equivalent.
-        - To allow Microsoft Network Controller to manage the logical network, choose **Managed by Microsoft Network controller**.
-        - If the logical network provides public IP addresses, choose **IP address network**.
-    - To create multiple VM networks that are independent of each other, choose **Independent Network**. Each VM network will have access to a specific VLAN subnet pair or a PVLAN subnet pair.
-    - To create a multiple virtualized VM network that has its own virtualized address space, choose **Virtualized network**.
-
-1. In **Network Site**, add network sites to the logical network. If you don't need to create network sites, select **Next**.
-
-   You can create IP pools when you add network sites in the **Create Logical Network Wizard**.
-
-   - **DHCP no VLAN**: If you use DHCP to allocate IP addresses and you don't have VLANs, you don't need a network site. Note that VMM automatically suggests a site name. A network name is limited to a length of 64 characters.
-   - **Static IP**: If you use static IP addresses, create at least one network site and associate at least one IP subnet with it.
-   - **VLAN**: If you use VLANs with static IP addressing, create corresponding network sites for the VLAN and subnet pairs. If you use DHCP, create corresponding network sites for VLAN information only.
-   - **Network virtualization**: If you use network virtualization, create at least one network site with an associated IP subnet so that the logical network has an IP address pool.
-   - **Load balancer**: If the logical network will contain a load balancer, create at least one network site with an associated IP subnet.
-1. If you use an external network managed by a vendor network management console or virtual switch extension manager outside VMM, you can configure settings in the vendor console and import them into VMM.
-1. In **Host groups that can use this network site**, select each host group to which you want to make the logical network available.
-1. In **Associated VLANs and IP subnets**, select **Insert Row** to specify the settings that you want to assign to the network site. If you select **PVLAN**, you need to add a **Secondary VLAN** for each VLAN. Ensure that the VLANs and subnets are available in your physical network. If you leave the **VLAN** field empty, VMM assigns a value of 0 to indicate that VLANs aren't used. In trunk mode, 0 indicates a native VLAN.
-1. If you created network sites and associated one or more IP subnets with them (when you're not using DHCP), you can create static IP address pools from those subnets. Then VMM can automatically allocate IP addresses to VMs in the network site. IP pools can be created within the **Create Logical Network Wizard**.
-
-::: moniker-end
-
 
 To set up an IP address pool on a logical network, [follow these steps](./network-pool.md#create-a-static-address-pool-for-a-logical-network).
 
