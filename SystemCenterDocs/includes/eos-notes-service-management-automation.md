@@ -12,4 +12,4 @@ ms.technology: service-management-automation
 ---
 > [!IMPORTANT]
 >
-> This version of Service Management Automation (SMA) has reached the end of support, we recommend you to [upgrade to SMA 2019](../sma/index.yml).
+> This version of Service Management Automation (SMA) has reached the end of support, we recommend you to [upgrade to SMA 2022](../sma/index.yml).

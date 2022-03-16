@@ -7,9 +7,9 @@ ms.author: v-pgaddala
 ms.prod:  system-center
 ms.technology: service-manager
 keywords:
-ms.date: 12/29/2021
+ms.date: 03/15/2022
 title: include file
-ms.assetid: 
+ms.assetid:
 ---
 
 ## Release Notes for System Center 2022 - Service Manager
@@ -35,8 +35,17 @@ Follow these steps to manually activate the Data Warehouse server:
 
 ### Installation of SM 2022 on TLS 1.2 machine fails
 
-**Description**: 
+**Description**:
 Fresh Installation of System Center Service Manager 2022 or an upgrade from a previous version to SM 2022 fails if the computer is TLS 1.2 hardened.
 
-**Workaround**: 
+**Workaround**:
 Disable TLS 1.2 before the installation/upgrade and re-enable it after the upgrade is complete.
+
+
+### Connector for Orchestrator 2022 fails
+
+**Description**:
+Connector for Orchestrator 2022 might not work due to changes in Orchestrator Web service.
+
+**Workaround**:
+Continue using System Center 2019 Web API till we fix this. System Center 2022 supports running 2019 Web console/API side-by-side.
