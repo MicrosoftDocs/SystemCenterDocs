@@ -19,10 +19,9 @@ Microsoft SQL Server hosts the databases that System Center - Service Manager cr
 
 Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center . Use this information whether you are deploying one or multiple components of System Center.
 
-::: moniker range="<sc-sm-2019"
-
 ## SQL Server version support
 
+::: moniker range="<sc-sm-2019"
 
 |**System Center 2016** component |SQL Server 2008 R2 SP1 Standard, Datacenter|SQL Server 2008 R2 SP2 Standard, Datacenter|SQL Server 2012 Enterprise, Standard (64-bit)|SQL Server 2012 SP1 Enterprise, Standard (64-bit)|SQL Server 2012 SP2 Enterprise, Standard (64 bit)|SQL Server 2014 Enterprise, Standard (64-bit)|SQL Server 2014 SP1 Enterprise, Standard (64-bit)|SQL Server 2014 SP2 Enterprise, Standard (64-bit)|SQL Server 2016, Enterprise, Standard  (64-bit)|
 |-------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------|------------------------------------------------|-------------------------------------|
@@ -39,8 +38,6 @@ For detailed information about the requirements for Service Manager components, 
 ::: moniker-end
 
 ::: moniker range="sc-sm-2019"
-
-## SQL Server version support
 
 | **System Center 2019 component**                      | **Service Manager** Database or Data Warehouse Database | **Service Management Automation** Web Service |
 |-------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------|
@@ -60,8 +57,6 @@ For detailed information about the requirements for Service Manager components, 
 ::: moniker-end
 
 ::: moniker-range="sc-sm-2022"
-
-## SQL Server version support
 
 | **System Center 2022 component**                      | **Service Manager** Database or Data Warehouse Database | **Service Management Automation** Web Service |
 |-------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------|
