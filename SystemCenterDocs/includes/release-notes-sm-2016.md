@@ -220,3 +220,11 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 ## SM authoring tool console crashes while creating workflows
 This issue is fixed.
+
+### Report management pack deployments might fail
+
+**Description**: After a successful Data Warehouse installation, deployments of Report management packs might fail if SQL Server Reporting Services (SSRS) is running locally on the Data Warehouse management Server and SSRS is 2017 or later. 
+
+This issue is observed in Service Manager 2016 and later.
+
+**Workaround**: Perform the steps [detailed here](/system-center/scsm/config-remote-ssrs).
