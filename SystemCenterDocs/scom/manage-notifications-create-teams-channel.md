@@ -67,7 +67,7 @@ To integrate Operations Manager with Teams, configure a Teams channel, add a sub
 
 Follow these steps:
 
-1. Log on to the computer that will host the Operations Manager.
+1. Log on to the computer where the Operations Manager Console is installed.
 
 2. On the console, under **Notifications**, right-click **Channels**, select **New channel** > **Microsoft Teams…** . **Microsoft Teams Notification Channel** wizard opens.
 
@@ -112,7 +112,7 @@ The following table highlights the variables to use for various properties of th
 
 Follow these steps:
 
-1. Log on to the computer that will host the Operations Manager. On the console, under **Notifications**, right-click **Subscribers**,  select **Microsoft Teams**. **Notification Subscriber Wizard** opens.
+1. Log on to the computer where the Operations Manager Console is installed. On the console, under **Notifications**, right-click **Subscribers**,  select **Microsoft Teams**. **Notification Subscriber Wizard** opens.
 
 2. Under **Description**, enter **Subscriber Name** and click **Next**.
 
@@ -140,7 +140,7 @@ Follow these steps:
 
    :::image type="channel type" source="media/teams-notifications/channel-type.png" alt-text="screenshot showing channel type.":::
 
-7. On the Microsoft Teams, right-click the channel where you want to send the notifications, click **Get link to channel** and copy the URL.
+7. In the Microsoft Teams, right-click the channel where you want to send the notifications, click **Get link to channel** and copy the URL and enter the URL in the **Delivery address for the selected channel:** field.
 
    :::image type="channel link" source="media/teams-notifications/channel-link.png" alt-text="screenshot showing channel link address.":::
 
@@ -152,7 +152,7 @@ Follow these steps:
 
 Follow these steps:
 
-1. Log on to the computer that will host the Operations Manager.
+1. Log on to the computer where the Operations Manager Console is installed.
 
 2. On the console, under **Notifications**, right-click **Subscriptions**, click **New subscription...** . Create **Notification Subscription** wizard opens.
 
