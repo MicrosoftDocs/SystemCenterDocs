@@ -23,9 +23,15 @@ The integration pack for VMware vSphere is an add-on for System Center - Orchest
 
 ## Download the pack
 
+::: moniker range="<=sc-orch-2019"
 - Download the pack for Orchestrator 2016 from [here, on the download center](https://www.microsoft.com//download/details.aspx?id=54099).
 
-- Download the pack for Orchestrator 2019 from the [here, on the download center](https://www.microsoft.com/download/details.aspx?id=58112&WT.mc_id=rss_alldownloads_all).
+- Download the pack for Orchestrator 2019 from [here, on the download center](https://www.microsoft.com/download/details.aspx?id=58112&WT.mc_id=rss_alldownloads_all).
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+- Download the pack for Orchestrator 2022 from here, on the download center.
+::: moniker-end
 
 ## Register and deploy the pack
 
