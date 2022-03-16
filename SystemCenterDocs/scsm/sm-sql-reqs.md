@@ -56,7 +56,7 @@ For detailed information about the requirements for Service Manager components, 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
 ::: moniker-end
 
-::: moniker-range="sc-sm-2022"
+::: moniker range="sc-sm-2022"
 
 | **System Center 2022 component**                      | **Service Manager** Database or Data Warehouse Database | **Service Management Automation** Web Service |
 |-------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------|
