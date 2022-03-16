@@ -27,6 +27,16 @@ This article provides information about how to determine your current Microsoft 
 
 ## Build versions
 
+::: moniker range="sc-sm-2022"
+
+The following table lists the build versions for Service Manager 2022.
+
+| Build Number | KB | Description |
+| --- | --- |--- |
+| 10.22.1068.0 | n/a | System Center 2022 Service Manager     |
+
+::: moniker-end
+
 ::: moniker range="sc-sm-2019"
 
 The following table lists the build versions for Service Manager 2019.
