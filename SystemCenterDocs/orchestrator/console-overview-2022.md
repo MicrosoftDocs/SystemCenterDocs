@@ -40,11 +40,11 @@ You can click and expand each of the job rows and view the instances of the job.
 
 ## Runbooks
 
-When you select a runbook on the navigation tree or click a runbook link, the app navigates to the Runbook screen. The top panel lists out runbook metadata (editing status, timestamps, etc). The **Run** button available on the screen allows you to queue the runbook for execution on the desired subset of runbook servers. The **Run** button is disabled for runbooks that are not in **Published** state.
+When you select a runbook on the navigation tree or click a runbook link, the app navigates to the Runbook screen. The top panel lists out runbook metadata (editing status, timestamps, etc.,). The **Run** button available on the screen allows you to queue the runbook for execution on the desired subset of runbook servers. The **Run** button is disabled for runbooks that are not in **Published** state.
 
 Below this panel is a tabbed view:
 
-- View, for the Runbook graphical image (see above).
+- View, for the Runbook graphical image.
 - Jobs, for listing the active and completed jobs of the runbook (see below).
 - Instances, for listing active and completed instances of the runbook across all its Jobs (see below).
 
@@ -71,7 +71,7 @@ The status of the job is shown visually with the icons:
 
 - **Three dots**: Job is queued
 - **Hourglass**: Job is running
-- **Circle with slash**: Job was cancelled
+- **Circle with slash**: Job was canceled
 - **Tick**: Job completed successfully
 - **Red exclamation**: Job completed but failed
 - **Warning**: Job completed with warning(s)
@@ -132,7 +132,7 @@ The **Stop** button is shown on the Dashboard and the Job screen. disappearing p
 
 2. If there are no CORS errors, look at the **Event Viewer** logs (Application) on the Web API computer.
 
-To fix CORS errors, you must ensure that the API’s *web.config* file must have a suitable CORS configuration. The browser error shows the origin value it is expecting in the *web.config*. [See this document](/iis/extensions/cors-module/cors-module-configuration-reference) for details about how to configure CORS in *web.config* .
+To fix CORS errors, you must ensure that the API’s *web.config* file must have a suitable CORS configuration. The browser error shows the origin value it is expecting in the *web.config*. [See this document](/iis/extensions/cors-module/cors-module-configuration-reference) for details about how to configure CORS in *web.config*.
 
 ## Next steps
 
