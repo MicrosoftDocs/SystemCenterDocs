@@ -15,6 +15,12 @@ ms.custom: intro-whats-new
 
 # What's New in System Center Service Manager
 
+::: moniker range="sc-sm-2022"
+
+Ther are no new features introduced in Service Manager 2022. For issues fixed in SM 2022, see [release notes](release-notes-sm.md)  
+
+::: moniker-end
+
 ::: moniker range="sc-sm-2019"
 
 This article details the new features supported in System Center 2019 - Service Manager.  
