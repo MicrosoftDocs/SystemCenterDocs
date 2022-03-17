@@ -4,6 +4,7 @@
 ## [Automate with runbooks](automate-runbooks.md)
 # Get started
 ## [Install Orchestrator](install.md)
+## [Install Orchestrator 2022](install-2022.md)
 ## [Work with runbooks in the Orchestrator console](console-overview.md)
 ## [Example runbook: Creating a runbook to monitor a folder](monitor-a-folder-within-a-runbook.md)
 ## [Release notes - Orchestrator](release-notes-orch.md)
