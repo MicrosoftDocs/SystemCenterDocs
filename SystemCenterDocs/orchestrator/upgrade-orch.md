@@ -13,7 +13,7 @@ ms.technology: orchestrator
 
 # Upgrade System Center Orchestrator
 
-::: moniker range="sc-orch-2019"
+::: moniker range=">=sc-orch-2019"
 
 This article provides the upgrade information for System Center 2019 - Orchestrator.
 
