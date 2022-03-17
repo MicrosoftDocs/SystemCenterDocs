@@ -367,7 +367,7 @@ Enable the following firewall rules on your computer:
 
 |Operating system|Firewall rules|  
 |--------------------|------------------|  
-|Windows Server | - File and Printer Sharing<br>- Windows Management Instrumentation \(WMI\)</br><br>- Program rule for OrchestratorRemotingService to accept remote connections. This rule must be enabled through the Advanced Firewall mode for path %ProgramFiles%\Microsoft System Center \Orchestrator\Management Server\Deployment Manager\OrchestratorRemotingService.exe|
+|Windows Server | - File and Printer Sharing<br>- Windows Management Instrumentation \(WMI\)<br>- Program rule for OrchestratorRemotingService to accept remote connections. This rule must be enabled through the Advanced Firewall mode for path %ProgramFiles%\Microsoft System Center \Orchestrator\Management Server\Deployment Manager\OrchestratorRemotingService.exe|
 
 #### Firewall rules between the runbook server and the computer that uses PolicyModule.exe  
 
