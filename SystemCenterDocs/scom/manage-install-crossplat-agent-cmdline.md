@@ -4,7 +4,7 @@ description: Article to detail how to install the System Center Operations Manag
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/14/2019
+ms.date: 03/21/2022
 ms.custom: na, intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
