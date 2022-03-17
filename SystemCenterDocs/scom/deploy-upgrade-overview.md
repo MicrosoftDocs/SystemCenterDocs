@@ -27,6 +27,9 @@ This section of the Deployment Guide provides information about how to upgrade t
 
 It is assumed in this guide that you are performing an upgrade from System Center 2019.
 
+>[NOTE]
+>System Center Data Protection Manager (DPM) 2022 is not yet released. Rest of the components can be upgraded to version 2022 and DPM can be upgraded once it is released. 
+
 For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see Deploying System Center Operations Manager.
 
 ::: moniker-end
