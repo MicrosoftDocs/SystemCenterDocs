@@ -5,7 +5,7 @@ description: This article describes how to set up logical networks in the VMM 20
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/16/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
