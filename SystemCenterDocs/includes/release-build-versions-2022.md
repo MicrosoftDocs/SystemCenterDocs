@@ -29,8 +29,8 @@ The following table lists the release history for Operations Manager 2022.
 
 
 ### SCX Agents
-|Build Number |KB |Release Date |Agent Version |Description |
-|-------------|---|-------------|--------------|------------|
+|Build Number |Release Date |Agent Version |Description |
+|-------------|-------------|--------------|------------|
 |1.6.9-0|March 2022 |	|General Availability |
 
  \* *The other components include: Databases, Gateway Servers, Operations Consoles, Reporting, and Web Consoles.*
