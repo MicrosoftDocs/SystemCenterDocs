@@ -13,7 +13,7 @@ ms.technology: service-management-automation
 
 # Upgrade Service Management Automation
 
-::: moniker range="sc-sma-2019"
+::: moniker range=">=sc-sma-2019"
 
 This article provides the upgrade information for System Center 2019 - Service Management Automation (SMA).
 
