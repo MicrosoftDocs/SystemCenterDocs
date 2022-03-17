@@ -101,7 +101,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
 5. Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
-  If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
    1. Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
@@ -242,9 +242,9 @@ The **Installing features** page appears and displays the installation progress.
 
 4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then click **Next**.
 
-5. On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
+   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
 
-6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, proceed to the next step.
+5. Your computer is checked for required hardware and software. If your computer meets all of the requirements, proceed to the next step.
 
    If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
@@ -254,17 +254,17 @@ The **Installing features** page appears and displays the installation progress.
 
    3.  Click **Next** to continue.
 
-4. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click
+6. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click
 
-5. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
+7. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
-6. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
+8. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
 
-7. Review the **Installation summary** page, and then click **Install**.
+9. Review the **Installation summary** page, and then click **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-8. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
+10. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 
 
 ## To connect a Runbook Designer to a management server
