@@ -15,8 +15,6 @@ MonikerRange: 'sc-orch-2022'
 
 The Orchestrator console is a Single Page App that helps you monitor and execute your Orchestrator deployment. This article details the supported features in the Orchestrator 2022 console.
 
-:::image type="console" source="media/console-overview-2022/console.png" alt-text="Screenshot showing Orchestrator console.":::
-
 ## Navigation pane
 
 The Navigation pane on the left shows the **Runbook** and **Folders** tree, like the one shown on the **Runbook Designer**. Unlike the console in earlier versions, you cannot click the *Folders*, but can click the *Runbooks* and view their jobs and execute them.
@@ -33,8 +31,6 @@ To the right of the navigation pane, you can see the chosen screen. The Dashboar
 
 The Dashboard shows **Active jobs** on the top followed by a table of all **Completed jobs (history)**. The **Completed jobs (history)** pane is collapsed by default, allowing focus on the active jobs.
 
-:::image type="active and completed jobs" source="media/console-overview-2022/active-and-completed-jobs.png" alt-text="Screenshot showing active and completed jobs.":::
-
 Each row in both the panels corresponds to a unique job. A job may have one or more runbook instances. Each row shows:
 - **Job ID**: Link to the Runbook
 - **Timestamps**: The number of successful and failed instances is shown in one of the columns for all rows.
@@ -46,17 +42,11 @@ You can click and expand each of the job rows and view the instances of the job.
 
 When you select a runbook on the navigation tree or click a runbook link, the app navigates to the Runbook screen. The top panel lists out runbook metadata (editing status, timestamps, etc). The **Run** button available on the screen allows you to queue the runbook for execution on the desired subset of runbook servers. The **Run** button is disabled for runbooks that are not in **Published** state.
 
-:::image type="run" source="media/console-overview-2022/run.png" alt-text="Screenshot showing run button.":::
-
 Below this panel is a tabbed view:
 
 - View, for the Runbook graphical image (see above).
 - Jobs, for listing the active and completed jobs of the runbook (see below).
 - Instances, for listing active and completed instances of the runbook across all its Jobs (see below).
-
-:::image type="run screen" source="media/console-overview-2022/run-1.png" alt-text="Screenshot showing run screen.":::
-
-:::image type="status check screen" source="media/console-overview-2022/run-2.png" alt-text="Screenshot showing status check screen.":::
 
 You can click the rows in the Jobs view just like the ones on the Dashboard screen. Jobs that are running can be stopped using the buttons on the right of the running row.
 
@@ -90,8 +80,6 @@ The status of the job is shown visually with the icons:
 
 When you select an Instance (using the (i) button), the app navigates to this screen. The top panel shows the Instance’s metadata (Job ID, timestamps, parameters, server which executes this instance).
 
-:::image type="instance-screen" source="media/console-overview-2022/instance-screen.png" alt-text="Screenshot showing instance screen.":::
-
 The top panel also has three navigation buttons:
 
 - **Previous**: View Instance that ran before this one.
@@ -108,8 +96,6 @@ Below the panel, you see the runbook diagram. You can click each runbook activit
 
 Since an activity may be executed more than once within an instance (because of looping), each execution of the Activity has a unique **Sequence number**. The overlay lets you choose the **Sequence #** using the dropdown on the top.
 
-:::image type="activity output overlay" source="media/console-overview-2022/activity-output-overlay.png" alt-text="Screenshot showing activity output overlay.":::
-
 >[!NOTE]
 >To ensure fast load time, only the first 10 activity outputs are loaded for the activity. The **Load more** button shows how many times this activity was executed, and you can click it to load more outputs.
 
@@ -122,8 +108,6 @@ Navigate to the Runbook screen of the desired Runbook and click **Run** . An ove
 - Choose the set of Runbook servers on which this Job can be scheduled.
 
 Only one of these servers will actually execute this Job. To execute a Runbook on many servers you will have to run those many number of Jobs and explicitly set the servers one-by-one.
-
-:::image type="create job" source="media/console-overview-2022/create-job.png" alt-text="Screenshot showing create job.":::
 
 >[!NOTE]
 > Enter the parameters in the form, else the form will not be considered.
