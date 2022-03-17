@@ -22,6 +22,14 @@ This article lists the release notes for System Center 2019 - Operations Manager
 
 ::: moniker-end
 
+::: moniker range="sc-om-2022"
+
+Operations Manager 2022 does not have any known issues.
+
+For new features supported in Operations Manager 2022, see [What's new](#whats-new-in-om.md)
+
+::: moniker-end
+
 ::: moniker range="sc-om-1807"
 
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
