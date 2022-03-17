@@ -19,6 +19,15 @@ ms.technology: operations-manager
 
 ::: moniker-end
 
+::: moniker range="sc-om-2022"
+
+This article lists Microsoft System Center 2022 - Operations Manager build versions.
+
+[!INCLUDE [release-build-versions-2022.md](../includes/release-build-versions-2022.md)]
+
+::: moniker-end
+
+
 ::: moniker range="sc-om-2019"
 
 This article lists Microsoft System Center 2019 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
