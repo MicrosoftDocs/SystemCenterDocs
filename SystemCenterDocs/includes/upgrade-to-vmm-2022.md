@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 2019.
 author: JYOTHIRMAISURI
@@ -47,6 +47,9 @@ Ensure the following:
 
 ## Upgrade sequence for System Center components
 If you're running more than one System Center component, they should be upgraded in a specific order as shown below:
+
+>[!NOTE]
+>System Center Data Protection Manager (DPM) 2022 is not yet released. Rest of the components can be upgraded to version 2022 and DPM can be upgraded once it is released.
 
 1. Service Management Automation
 2. Orchestrator
