@@ -14,6 +14,12 @@ monikerRange: '>sc-spf-2016'
 
 # Release notes for System Center Service Provider Foundation
 
+::: moniker range="sc-spf-2022"
+
+There are no known issues in Service Provider Foundation 2022.
+
+::: moniker-end
+
 ::: moniker range="sc-spf-2019"
 
 This article lists the release notes for System Center 2019 - Service Provider Foundation (SPF).
