@@ -193,8 +193,8 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 3.	On the **Product registration** page, provide the name and company for the product registration, and click **Next**.
 
->[!NOTE]
->For this evaluation release, a product key is not required.
+   >[!NOTE]
+   >For this evaluation release, a product key is not required.
 
 4.	On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and click **Next**.
 
@@ -210,8 +210,8 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 8.	On the **Configure the ports for the Web Console** page, verify the port numbers for the Orchestration Console service and the URL of the Web API service, and click **Next**.
 
->[!NOTE]
->The Web API URL should not have a trailing forward slash `/`.
+   >[!NOTE]
+   >The Web API URL should not have a trailing forward slash `/`.
 
 9.	On the **Select the installation location** page, verify the installation location for Orchestrator, and click **Next**.
 
@@ -361,8 +361,7 @@ Enable the following firewall rules on your computer:
 
 |Operating system|Firewall rule|  
 |--------------------|-----------------|  
-|64\-bit|%ProgramFiles \(x86\)%\\Microsoft System Center <version>\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|  
-|32\-bit|%ProgramFiles%Microsoft System Center <version>\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|  
+|64\-bit|%ProgramFiles \(x86\)%\\Microsoft System Center <version>\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|   
 
 #### Firewall rules between remote computers  
 
