@@ -198,28 +198,28 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 4.	On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and click **Next**.
 
-5. On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and click **Next**.
+   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and click **Next**.
 
-6.	Your computer is checked for required hardware and software. If your computer meets all of the requirements, **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
+5.	Your computer is checked for required hardware and software. If your computer meets all of the requirements, **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
     Orchestration Console requires IIS URL Rewrite module, download from here.
 
-7.	On the **Configure the service account** page, enter the user name and password for the Orchestrator service account. The Console will run under an IIS App Pool with this identity. Click **Test to verify the account credentials**. If the credentials are accepted, click **Next**.
+6.	On the **Configure the service account** page, enter the user name and password for the Orchestrator service account. The Console will run under an IIS App Pool with this identity. Click **Test to verify the account credentials**. If the credentials are accepted, click **Next**.
 
-8.	On the **Configure the ports for the Web Console** page, verify the port numbers for the Orchestration Console service and the URL of the Web API service, and click **Next**.
+7.	On the **Configure the ports for the Web Console** page, verify the port numbers for the Orchestration Console service and the URL of the Web API service, and click **Next**.
 
     >[!NOTE]
     >The Web API URL should not have a trailing forward slash `/`.
 
-9.	On the **Select the installation location** page, verify the installation location for Orchestrator, and click **Next**.
+8.	On the **Select the installation location** page, verify the installation location for Orchestrator, and click **Next**.
 
-10. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and click **Next**.
+9. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and click **Next**.
 
-11. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in Error Reporting, and then click **Next**.
+10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in Error Reporting, and then click **Next**.
 
-12. Review the **Installation summary** page, and click **Install**.
+11. Review the **Installation summary** page, and click **Install**.
 
 The **Installing features** page appears and displays the installation progress.
 
