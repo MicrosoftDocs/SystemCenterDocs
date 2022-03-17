@@ -13,7 +13,7 @@ ms.technology: service-provider-foundation
 
 # Upgrade System Center Service Provider Foundation
 
-::: moniker range="sc-spf-2019"
+::: moniker range=">=sc-spf-2019"
 
 You must have System Center - Service Provider Foundation 1801 installed to apply the 2019 update.
 
