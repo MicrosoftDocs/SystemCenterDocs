@@ -11,20 +11,20 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## Operations Manager 20229 build versions
+## Operations Manager 2022 build versions
 
 The following table lists the release history for Operations Manager 2022.
 
 ### Management Servers (and other components*)
-|Build Number |KB |Release Date |Description |
-|-------------|---|-------------|------------|
-|10.22.10118.0||March 2022 |General Availability |
+|Build Number |Release Date |Description |
+|-------------|----------------|------------|
+|10.22.10118.0|March 2022 |General Availability |
 
 
 
 ### Agents
-|Build Number |KB |Release Date |Description |
-|-------------|---|-------------|------------|
+|Build Number |Release Date |Description |
+|-------------|-------------|------------|
 |10.22.10056.0||March 2022 |General Availability |
 
 
