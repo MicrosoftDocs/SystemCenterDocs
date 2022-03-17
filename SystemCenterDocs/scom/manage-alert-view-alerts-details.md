@@ -5,7 +5,7 @@ description: This article describes how to review the active alerts reported by 
 author: jyothisuri
 ms.author: jsuri
 ms.manager: evansma
-ms.date: 04/29/2019
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
