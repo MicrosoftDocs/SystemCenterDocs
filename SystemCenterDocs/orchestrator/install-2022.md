@@ -79,7 +79,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
 12. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and then click **Close** to complete the installation.
 
-## To install an Orchestrator runbook server
+## Install an Orchestrator runbook server
 
 1. On the server where you want to install an Orchestrator runbook server, start the Orchestrator Setup Wizard.
 
@@ -130,7 +130,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
 13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 
-## To install the Orchestrator Web API service
+## Install the Orchestrator Web API service
 
 Since Orchestrator 2022, the Web API service and Orchestration Console can be installed separately, on different machines.
 
@@ -183,7 +183,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
     The **Installing features** page appears and displays the installation progress.
 
-## To install Orchestration Console on a single computer
+## Install Orchestration Console on a single computer
 
 Since Orchestrator 2022, the Web API service and Orchestration Console can be installed separately, on different machines.
 
@@ -193,8 +193,8 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 3.	On the **Product registration** page, provide the name and company for the product registration, and click **Next**.
 
-   >[!NOTE]
-   >For this evaluation release, a product key is not required.
+    >[!NOTE]
+    >For this evaluation release, a product key is not required.
 
 4.	On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and click **Next**.
 
@@ -210,8 +210,8 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 8.	On the **Configure the ports for the Web Console** page, verify the port numbers for the Orchestration Console service and the URL of the Web API service, and click **Next**.
 
-   >[!NOTE]
-   >The Web API URL should not have a trailing forward slash `/`.
+    >[!NOTE]
+    >The Web API URL should not have a trailing forward slash `/`.
 
 9.	On the **Select the installation location** page, verify the installation location for Orchestrator, and click **Next**.
 
@@ -223,7 +223,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 The **Installing features** page appears and displays the installation progress.
 
-## To install the Orchestrator Runbook Designer on a single computer
+## Install the Orchestrator Runbook Designer on a single computer
 
 1.  On the server where you want to install the Orchestrator Runbook Designer, start the Orchestrator Setup Wizard.
 
@@ -267,7 +267,7 @@ The **Installing features** page appears and displays the installation progress.
 10. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 
 
-## To connect a Runbook Designer to a management server
+## Connect a Runbook Designer to a management server
 
 1.  In the Runbook Designer, select the **Connect to a server** icon in the navigation pane under the **Connections** pane.
 
@@ -276,7 +276,7 @@ The **Installing features** page appears and displays the installation progress.
 
 2.  In **System Center Orchestrator Connection**, enter the name of the server that hosts your Orchestrator management server, and then click **OK**.
 
-## To enable network discovery
+## Enable network discovery
 
 1.  On the desktop of your computer running Windows server, click **Start**, click **Control Panel**, click **Network and Internet**, click **Network and Sharing Center**, click **Choose Home group and Sharing Options**, and then click **Change advanced sharing settings**.
 
@@ -286,7 +286,7 @@ The **Installing features** page appears and displays the installation progress.
 
     If you are prompted for an administrator password or confirmation, type the password or provide confirmation.
 
-## To install from the command prompt
+## Install from the command prompt
 
 
 To install Orchestrator at a command prompt, use Setup.exe with the command-line options in the following table.
@@ -320,7 +320,7 @@ For example, you could use the following command to install all of the Orchestra
 ```
 .\Setup.exe /Silent /ServiceUserName:<UserName> /ServicePassword:<password> /Components:All /DbServer:<DBServerName> /DbNameNew:Orchestrator /WebServicePort:81 /WebConsolePublicUrl:”http://localhost:82” /WebConsolePort:82 /WebServicePublicUrl:”http://localhost:81”   /UseMicrosoftUpdate:1 /SendTelemetryReports:1 /EnableErrorReporting:always
 ```
-## To view runbook server properties
+## View runbook server properties
 
 The properties for a runbook server include an optional description and the account information to use for the Runbook Service. You can modify the description but can only view the service credentials.    
 
