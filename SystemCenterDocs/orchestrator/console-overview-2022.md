@@ -11,7 +11,7 @@ manager: carmonm
 MonikerRange: 'sc-orch-2022'
 ---
 
-# Overview of Orchestration console 2022
+# Overview of Orchestrator console 2022
 
 The Orchestrator console is a single page App that helps you monitor and execute your Orchestrator deployment. This article details the supported features in the Orchestrator 2022 console.
 
