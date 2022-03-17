@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 02/02/2021
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
