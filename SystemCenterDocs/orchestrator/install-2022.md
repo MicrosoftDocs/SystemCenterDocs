@@ -20,7 +20,7 @@ For a detailed description of the Orchestrator architecture, see [Learn about Or
 
 This topic provides detailed installation instructions for the various Orchestrator roles.
 
-## To install an Orchestrator management server
+## Install an Orchestrator management server
 
 1.  On the server where you want to install Orchestrator, start the Orchestra Setup Wizard.
 
@@ -202,9 +202,9 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 6.	Your computer is checked for required hardware and software. If your computer meets all of the requirements, **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
-   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+    If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-   1.	Orchestration Console requires IIS URL Rewrite module, download from here.
+    Orchestration Console requires IIS URL Rewrite module, download from here.
 
 7.	On the **Configure the service account** page, enter the user name and password for the Orchestrator service account. The Console will run under an IIS App Pool with this identity. Click **Test to verify the account credentials**. If the credentials are accepted, click **Next**.
 
