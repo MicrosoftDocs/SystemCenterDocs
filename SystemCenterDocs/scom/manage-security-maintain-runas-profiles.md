@@ -5,7 +5,7 @@ description: This article provides an overview of Run As accounts and profiles i
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/03/2022
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
