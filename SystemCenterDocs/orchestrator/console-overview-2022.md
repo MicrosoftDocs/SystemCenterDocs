@@ -13,13 +13,13 @@ MonikerRange: 'sc-orch-2022'
 
 # Overview of Orchestrator console 2022
 
-The Orchestrator console is a single page App that helps you monitor and execute your Orchestrator deployment. This article details the supported features in the Orchestrator 2022 console.
+The Orchestrator console is a Single Page App that helps you monitor and execute your Orchestrator deployment. This article details the supported features in the Orchestrator 2022 console.
 
 :::image type="console" source="media/console-overview-2022/console.png" alt-text="Screenshot showing Orchestrator console.":::
 
 ## Navigation pane
 
-The Navigation pane on the left shows the **Runbook** and **Folders** tree, similar to the one shown on the **Runbook Designer**. Unlike the console in earlier versions, you cannot click the *Folders*, but can click the *Runbooks* and view specific data and use specific options.
+The Navigation pane on the left shows the **Runbook** and **Folders** tree, like the one shown on the **Runbook Designer**. Unlike the console in earlier versions, you cannot click the *Folders*, but can click the *Runbooks* and view their jobs and execute them.
 
 The Navigation pane is always visible on all screens to allow quick navigation to other runbooks and folders, while remaining on the same screen.
 
@@ -44,7 +44,7 @@ You can click and expand each of the job rows and view the instances of the job.
 
 ## Runbooks
 
-When you select a runbook on the navigation tree or click a runbook link, the app navigates to the the Runbook details screen. The top panel lists out runbook metadata (editing status, timestamps, etc). The **Run** button available on the screen allows you to queue the runbook for execution on the desired subset of runbook servers. The **Run** button is disabled for runbooks that are not in **Published** state.
+When you select a runbook on the navigation tree or click a runbook link, the app navigates to the Runbook screen. The top panel lists out runbook metadata (editing status, timestamps, etc). The **Run** button available on the screen allows you to queue the runbook for execution on the desired subset of runbook servers. The **Run** button is disabled for runbooks that are not in **Published** state.
 
 :::image type="run" source="media/console-overview-2022/run.png" alt-text="Screenshot showing run button.":::
 
@@ -102,18 +102,16 @@ The top panel also has three navigation buttons:
 
 :::image type="runbook details" source="media/console-overview-2022/runbook-instance-details-1.png" alt-text="Screenshot showing runbook details.":::
 
->[!NOTE]
->- Note that the job ID is same, and since the second instance is still running, the job is also still running.
->- The navigation buttons will cross Job boundaries! Pay attention to the Job ID shown in the top panel.
+Note that the job ID is same, and since the second instance is still running, the job is also still running.
 
-Below the panel, you see the runbook diagram. You can click each runbook activity  to view activity outputs. A separate icon denotes the status for each activity. When you click any activity, an overlay is shown on the right that lists the activity’s outputs.
+Below the panel, you see the runbook diagram. You can click each runbook activity  to view activity outputs. An icon dedicated for each activity denotes the status of that activity. When you click any activity, an overlay is shown on the right that lists the activity’s outputs.
 
 Since an activity may be executed more than once within an instance (because of looping), each execution of the Activity has a unique **Sequence number**. The overlay lets you choose the **Sequence #** using the dropdown on the top.
 
 :::image type="activity output overlay" source="media/console-overview-2022/activity-output-overlay.png" alt-text="Screenshot showing activity output overlay.":::
 
 >[!NOTE]
->To ensure fast load time, only first 10 activity outputs are loaded for the activity. The **Load more** button shows how many times this activity was executed, and you can click it to load more outputs.
+>To ensure fast load time, only the first 10 activity outputs are loaded for the activity. The **Load more** button shows how many times this activity was executed, and you can click it to load more outputs.
 
 The **Instance** and **Activity status** follow the same format as **Job Status**.
 
