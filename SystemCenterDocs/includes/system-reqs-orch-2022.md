@@ -4,7 +4,7 @@ title: include file
 description: include file to provide system requirements for Orchestrator 2022, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: jsuri
 manager: evansma
-ms.date: 02/25/2022
+ms.date: 03/21/2022
 ms.custom: na
 author: jyothisuri
 ms.prod: system center
@@ -35,22 +35,24 @@ The following versions of Windows Server operating system are supported.
 
 The following versions of Windows client operating system are supported for the Orchestrator.
 
-|Component| Windows Server 2019 Standard, Datacenter with Desktop Experience| Windows Server 2022 Standard, Datacenter with Desktop Experience | Windows 10 | Windows 11 |
-|:--- |:---|:--- |:--- |:---|
-|Runbook Designer|supported|Supported|Supported|Supported|
+|Component| Windows Server 2019 Standard, Datacenter with Desktop Experience| Windows Server 2022 Standard, Datacenter with Desktop Experience |
+|:--- |:---|:--- |
+|Runbook Designer|supported|Supported|
 
 ## Software
 
 The following software is required for a full installation of Orchestrator on a single computer:
 
-- Microsoft SQL Server 2019 or 2022 – Orchestrator requires only the basic SQL Server features found in the Database Engine Service. No additional features are required. Orchestrator supports SQL_Latin1_General_CP1_CI_AS for collation. The installation wizard uses SQL_Latin1_General_CP1_CI_AS as the default collation to create the orchestration database. For more information, see the section on [SQL Server](#sql-server).
+- Microsoft SQL Server 2019 – Orchestrator requires only the basic SQL Server features found in the Database Engine Service. No additional features are required. Orchestrator supports SQL_Latin1_General_CP1_CI_AS for collation. The installation wizard uses SQL_Latin1_General_CP1_CI_AS as the default collation to create the orchestration database. For more information, see the section on [SQL Server](#sql-server).
 
     > [!NOTE]
     > Management servers and runbook servers installed on the same computer must use the same database.
 
 - Microsoft Internet Information Services (IIS) – Orchestrator Setup enables IIS if it is not enabled.
 
-- Microsoft .NET Framework 4 or later.
+- Microsoft .NET Framework 4.5 or later.
+
+- Ensure that Microsoft OLE DB Driver for SQL Server is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.Management Server, Runbook Service, Runbook Designer or the Web API Service. 
 
   We recommend the following software for a full installation of Orchestrator on a single computer:
 
