@@ -90,9 +90,14 @@ For more information about how to set up, configure and run your environment to 
 
 A new web console and web API are introduced in System Center Orchestrator 2022.
 
-## Support for 64 bit
+The new web API is JSON based and makes it easier to use than the older XML-based counterpart. Particularly, the job creation with parameters API has been greatly simplified.
 
-System Center Orchestrator 2022 supports 64 bit.
+>[!NOTE]
+>The new Web console is a complete redesign and works only on modern browsers like Microsoft Edge without Silverlight.
+
+## Orchestrator is now a 64 bit application
+
+Support for 64 bit enables the use of 64 bit assemblies, Integration Packs and PowerShell cmdlets.
 
 ::: moniker-end
 
