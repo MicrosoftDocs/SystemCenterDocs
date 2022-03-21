@@ -321,6 +321,12 @@ When you can recover a backed up virtual machine, you use the Recovery wizard to
 
 7. The **Recovery Status** screen provides information about the recovery job.
 
+> [!NOTE]
+> By default, 8 parallel recoveries are supported. You can increase the number of parallel restore jobs by adding the below registry key:
+> - **Key Path**: HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelRecoveryJobs
+>- **32 Bit DWORD**: HyperV
+>- **Data**: \<number\>
+
 ## Restore an individual file from a Hyper-V VM
 
 You can restore individual files from a protected Hyper-V VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want, before starting the recovery process. To recover an individual file or select files from a Windows Server VM:

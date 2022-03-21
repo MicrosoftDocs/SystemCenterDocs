@@ -13,6 +13,14 @@ ms.technology: virtual-machine-manager
 
 # Release notes for System Center Virtual Machine Manager
 
+::: moniker range="sc-vmm-2022"
+
+Virtual Machine Manager (VMM) 2022 does not have any known issues.
+
+For new features in VMM  2022, see [What's new](whats-new-in-vmm.md)
+
+::: moniker-end
+
 ::: moniker range="sc-vmm-2019"
 
 This article lists the release notes for System Center 2019 - Virtual Machine Manager (VMM).

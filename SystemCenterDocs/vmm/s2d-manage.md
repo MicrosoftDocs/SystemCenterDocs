@@ -45,10 +45,14 @@ Quality of Service in [Windows Server](/windows-server/storage/storage-qos/stora
 
 ::: moniker range="sc-vmm-2019"
 
-## Configure DCB settings on S2D clusters
-
 >[!NOTE]
->This feature is applicable from VMM 2019 UR1.
+>The following feature is applicable from VMM 2019 UR1.
+
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2019"
+
+## Configure DCB settings on S2D clusters
 
 With the advent of converged networking, organizations are using Ethernet as a converged network for their management and storage traffic. It's important for Ethernet networks to support a similar level for performance and losslessness compared to that of dedicated fiber channel networks. This similar level of support becomes more important when the use of S2D clusters is considered.
 

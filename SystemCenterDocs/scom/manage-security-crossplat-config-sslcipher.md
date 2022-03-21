@@ -24,7 +24,7 @@ System Center - Operations Manager correctly manages UNIX and Linux computers wi
 
 ## Using the SSL cipher configuration  
 
-The Operations Manager UNIX and Linux agent communicates with the Operations Manager management server by accepting requests on port 1270 and supplying information in response to those requests. Requests are made by using the WS-Management protocol that is running on an SSL connection.  
+The Operations Manager UNIX and Linux agent communicate with the Operations Manager management server by accepting requests on port 1270 and supplying information in response to those requests. Requests are made by using the WS-Management protocol that is running on an SSL connection.  
 
 When the SSL connection is first established for each request, the standard SSL protocol negotiates the encryption algorithm, known as a cipher for the connection to use. For Operations Manager, the management server always negotiates to use a high strength cipher so that strong encryption is used on the network connection between the management server and the UNIX or Linux computer.  
 
@@ -32,7 +32,7 @@ The default SSL cipher configuration on UNIX or Linux computer is governed by th
 
 If the default SSL cipher configuration meets your organization's security policy, no action is needed.  
 
-If the default SSL cipher configuration contradicts your organization's security policy, the Operations Manager UNIX and Linux agent provides a configuration option to specify the ciphers that SSL can accept on port 1270. This option can be used to control the ciphers and bring the SSL configuration into conformance with your policies. After the Operations Manager UNIX and Linux agent is installed on each managed computer, the configuration option must be set by using the procedures described in the next section. Operations Manager does not provide any automatic or built-in way to apply these configurations; each organization must perform the configuration by using an external mechanism that works best for it.  
+If the default SSL cipher configuration contradicts your organization's security policy, the Operations Manager UNIX and Linux agent provide a configuration option to specify the ciphers that SSL can accept on port 1270. This option can be used to control the ciphers and bring the SSL configuration into conformance with your policies. After the Operations Manager UNIX and Linux agent are installed on each managed computer, the configuration option must be set by using the procedures described in the next section. Operations Manager does not provide any automatic or built-in way to apply these configurations; each organization must perform the configuration by using an external mechanism that works best for it.  
 
 ### Setting the sslCipherSuite configuration option
 
@@ -44,7 +44,7 @@ The format for the sslciphersuite option in this file is:
 sslciphersuite=<cipher spec>  
 ```  
 
-where \<cipher spec\> specifies the ciphers that are allowed, disallowed, and the order in which allowed ciphers are chosen.  
+Where \<cipher spec\> specifies the ciphers that are allowed, disallowed, and the order in which allowed ciphers are chosen.  
 
 The format for \<cipher spec\> is the same as the format for the **sslCipherSuite** option in the Apache HTTP Server version 2.0. For detailed information, see [SSLCipherSuite Directive](https://go.microsoft.com/fwlink/?LinkId=318052) in the Apache documentation. All information on this site is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.  
 
@@ -64,7 +64,7 @@ The following flags need to be set in order to enable/disable the TLS protocol v
 
 |Property|Purpose|
 |-----|-----|
-| NoTLSv1_0   | When true, the TLSv1.0 protocol is disabled.    | 
+| NoTLSv1_0   | When true, the TLSv1.0 protocol is disabled.    |
 |NoTLSv1_1   |When true, and if available on the platform, the TLSv1.1 protocol is disabled.|
 |NoTLSv1_2	  |When true, and if available on the platform, the TLSv1.2 protocol is disabled.|
 
@@ -85,14 +85,17 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 Modify omiserver.conf, set the **NoSSLv3** line to be:
 `NoSSLv3=false`
 
-::: moniker range="sc-om-2019"
+::: moniker range="=sc-om-2019"
+>[!NOTE]
+> The following update is applicable for Operations Manager 2019 UR3 and later.
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
 ## Disabled SSL renegotiations in Linux agent
 
->[!NOTE]
-> This update is applicable for Operations Manager 2019 UR3 and later.
-
-With Operations Manager 2019 UR3, for the Linux agent, SSL renegotiations are disabled.
+For the Linux agent, SSL renegotiations are disabled.
 
 SSL renegotiations might cause vulnerability in SCOM-Linux agent which might make it easier for the remote attackers to cause a denial of service by performing many renegotiations within a single connection.  
 

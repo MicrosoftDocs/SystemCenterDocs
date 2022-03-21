@@ -5,7 +5,7 @@ description: This article describes how to install the Web console for System Ce
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 08/25/2020
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -22,10 +22,23 @@ ms.topic: article
 
 You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
 
-::: moniker range="sc-om-2019"
+::: moniker range="sc-om-2022"
+
+Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server.
+
+::: moniker-end
+
+::: moniker range="=sc-om-2019"
 
 >[!NOTE]
 > Operations Manager 2019 UR1 and later supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
+
+::: moniker-end
+
+::: moniker range="=sc-om-2022"
+
+>[!NOTE]
+> Operations Manager supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
 
 ::: moniker-end
 
@@ -92,7 +105,8 @@ The local and remote parameters are as follows:
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
 
     > [!NOTE]
-    > Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
+    >-  Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
+    >- Select **ASP.NET v4.8**, and then click **Allow** (applicable for Operations Manager 2022).
 
 6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
 
@@ -131,7 +145,8 @@ The local and remote parameters are as follows:
 5.  On the **Prerequisites** page, review and address any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
     > [!NOTE]
-    > Installation of the System Center - Operations Manager web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
+    >- Installation of the System Center - Operations Manager web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
+    >- Select **ASP.NET v4.8**, and then click **Allow** (applicable for Operations Manager 2022).
 
 6.  If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
 
@@ -194,7 +209,7 @@ The following steps are for configuring permission inheritance for the System Ce
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 4.  In **Permission entries**, click **Administrators**, and then click **Remove**. Repeat for the **SYSTEM** entry, and then click **OK**.
 

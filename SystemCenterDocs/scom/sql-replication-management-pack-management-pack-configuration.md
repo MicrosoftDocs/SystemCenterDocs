@@ -18,9 +18,9 @@ Management Pack for Microsoft SQL Server Replication is sealed; you cannot chang
 To change original settings, you can create a custom management pack to keep overrides and new monitoring objects.
 
 Creating a custom management pack for storing overrides has the following advantages:
-  
+
 - Quick export of customized settings from the test environment to production environment.
-  
+
 - You do not have to remove dependencies when removing the management pack with overrides.
 
 - If customizations for all management packs are saved to the default management pack and you want to remove a single pack, you must first remove the default management pack, which also removes customizations for other management packs.

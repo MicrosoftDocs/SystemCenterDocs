@@ -4,7 +4,7 @@ description: This article describes how to install all Operations Manager roles 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 02/02/2018
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -52,7 +52,6 @@ You must ensure that your server meets the minimum supported configurations for 
 
    > [!NOTE]
    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (1801, 1807 and 2019), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-   >
 
 5. On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -179,6 +178,18 @@ You must ensure that your server meets the minimum supported configurations for 
     /SendCEIPReports: [0|1]
     /UseMicrosoftUpdate: [0|1]
     ```
+
+::: moniker range="sc-om-2022"
+
+## Removed dependency on LocalSystem account
+
+Operations Manager 2022 provides the following changes:   
+
+- LocalSystem is no longer used internally instead of the Default Action Account.
+This was used earlier for APM configuration, Privileged Monitoring Account, RunAs Profile fallback. There was an association created for the Validate Subscription Account RunAs Profile.  
+- LocalSystem account is still being added to Operations Manager Administrators Group by Setup, but it is now visible in the console and can be removed and added later as required.  
+
+::: moniker-end
 
 ## Verifying the installation
 

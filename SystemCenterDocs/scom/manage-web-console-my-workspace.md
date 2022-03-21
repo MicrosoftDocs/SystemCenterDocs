@@ -21,7 +21,7 @@ ms.assetid:
 
 ::: moniker-end
 
-With System Center Operations Manager version 1801 and higher, in the new HTML5 Web console you can customize how you view monitoring data for your specific needs differently than previous versions of Operations Manager.  
+Using System Center Operations Manager HTML5 Web console, you can customize how you view monitoring data for your specific needs differently than previous versions of Operations Manager.  
 
 Using My Workspace allows you to create folders to organize dashboards, add existing views and dashboards from the Monitoring workspace, and create custom dashboards only visible to you in the Web console.    
 
@@ -39,7 +39,7 @@ When you go to My Workspace, you will see the view or dashboard that you added l
 
 ## Create dashboards  
 
-Dashboards that you create in My Workspace are unique, they are not shortcuts to existing dashboards. As an operator, you can create dashboards in Operations Manager version 1807 or later Web console, in My Workspace.    
+Dashboards that you create in My Workspace are unique, they are not shortcuts to existing dashboards. As an operator, you can create dashboards in Operations Manager Web console, in **My Workspace**.    
 
 >[!NOTE]
 >The steps to create a dashboard and add a web part are similar to how you create one in the Monitoring workspace, with one difference - you are not prompted to specify a management pack to save it to. Instead you are prompted to specify an existing folder or create a new one in your workspace.     
@@ -52,12 +52,23 @@ For detailed steps, review the following articles:
 * Create dashboard with [Topology widget](manage-create-web-dashboard-topology.md)
 * Create dashboard with [Tile widget](manage-create-web-dashboard-tile.md)
 * Create dashboard with [Custom widget](manage-create-web-dashboard-custom.md)
-* Create dashboard with the [PowerShell widget](manage-create-web-dashboard-posh.md), available only with version 1807
+* Create dashboard with the [PowerShell widget](manage-create-web-dashboard-posh.md)
 
+
+::: moniker range="sc-om-1801"
+Creating dashboard with PowerShell widget is not supported in 1801.
+
+::: moniker-end
 
 ::: moniker range="sc-om-2019"
 >[!NOTE]
 >Operations Manager 2019 UR2 supports folders' creation in web console, inside which, you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md)
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+>[!NOTE]
+>Operations Manager supports folders' creation in web console, inside which, you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md)
 
 ::: moniker-end
 

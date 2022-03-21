@@ -37,7 +37,7 @@ To configure monitoring using Service Security Identifier, perform the following
 
 4. Open **Registry Editor** and check that the **ServiceSidType** key is set to 1 at *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService*.
 
-5. Create the NT SERVICE\HealthService login for the HealthService SID on every SQL Server Instance and grant it SA rights. 
+5. Create the NT SERVICE\HealthService login for the HealthService SID on every SQL Server Instance and grant it SA rights.
 
     If you cannot grant SA rights, use the following SQL scripts to set the lowest privilege configuration for the account.
 

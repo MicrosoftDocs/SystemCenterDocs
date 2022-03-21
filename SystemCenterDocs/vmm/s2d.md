@@ -29,8 +29,15 @@ Storage Spaces Direct (S2D) was introduced in Windows Server 2016. It groups phy
 - Gather different types of storage into a single virtual storage pool
 - Easily provision storage, and expand virtualized storage on demand by adding new drives.
 
+::: moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
 > [!NOTE]
 > VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](deploy-manage-azure-stack-hci.md).
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+> [!NOTE]
+> VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
+::: moniker-end
 
 ## How does it work?
 

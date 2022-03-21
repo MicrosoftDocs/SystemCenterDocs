@@ -33,6 +33,7 @@ Microsoft is committed to protecting your privacy while delivering software that
 
 Before you implement the Integration Pack for Exchange Admin, the following listed software must be installed. For more information about installing and configuring Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
 
+::: moniker range="<=sc-orch-2019"
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
 -   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   Microsoft .NET Framework 3.5 Service Pack 1
@@ -40,12 +41,28 @@ Before you implement the Integration Pack for Exchange Admin, the following list
 -   Microsoft Exchange Management Shell
 -   Microsoft PowerShell 2.0
 -   Microsoft WinRM 2.0
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+-   System Center 2022 integration packs require System Center 2022 - Orchestrator
+-   Microsoft .NET Framework 3.5 Service Pack 1
+-   Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Microsoft 365
+-   Microsoft Exchange Management Shell
+-   Microsoft PowerShell 2.0
+-   Microsoft WinRM 2.0
+::: moniker-end
 
 ## Downloading the Integration Pack
 
+::: moniker range="<=sc-orch-2019"
 - To download the Exchange Admin Integration Pack for Orchestrator 2016, see the [Microsoft Download Center for 2016](https://www.microsoft.com/download/details.aspx?id=54098).
 
 - To download the Exchange Admin Integration Pack for Orchestrator 2019, see the [Microsoft Download Center for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all).
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+- To download the Exchange Admin Integration Pack for Orchestrator 2022, see the Microsoft Download Center for 2022.
+::: moniker-end
 
 ## Register and Deploy the Integration Pack
 

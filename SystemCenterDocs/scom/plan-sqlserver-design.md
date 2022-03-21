@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 09/21/2021
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -41,8 +41,18 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
     > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
     > - Use ODBC 17.3 to 17.9, and MSOLEDBSQL 18.2 to 18.6.3.
 
+::: moniker-end
+
+::: moniker range=">sc-om-1807 <=sc-om-2019"
+
 - SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 - SQL Server 2016 and Service Packs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+- SQL Server 2017 and Cumulative Updates as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
 ::: moniker-end
 
@@ -55,9 +65,9 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
-Before upgrading SQL Server, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md), and [upgrade information for 2019](upgrade-sqlserver-2019-operations-manager.md).
+Before upgrading SQL Server, see [upgrade information for 2017](upgrade-sqlserver-2017-opsmgr.md), and [upgrade information for SQL 2019](upgrade-sqlserver-2019-operations-manager.md).
 
 ::: moniker-end
 
@@ -97,6 +107,7 @@ Additional hardware and software considerations apply in your design planning:
 -  We recommend that you run SQL Server on computers with the NTFS file format.
 -  There must be at least 1024 MB of free disk space for the operational and data warehouse database. It is enforced at the time of database creation, and it will likely grow significantly after setup.  
 -  .NET Framework 4 is required.
+-  .NET Framework 4.8 is supported from Operations Manager 2022.
 -  Reporting Server is not supported on Windows Server Core.
 
 ::: moniker range="=sc-om-2016"
@@ -184,6 +195,12 @@ Factors that influence the load on the Operations Manager database include:
 
 The Operations Manager database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.
 
+::: moniker range="sc-om-2022"
+
+You can setup and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
+
+::: moniker-end
+
 ### Enable SQL Broker on Operations Manager database
 
 System Center Operations Manager depends on SQL Server Service Broker to implement all task operations. If SQL Server Service Broker is disabled, all task operations will be affected. The resulting behavior may vary according to the task that is initiated. Therefore, it is important to check the state of SQL Server Service Broker whenever unexpected behavior is observed around a task in System Center Operations Manager.
@@ -230,7 +247,7 @@ The Operations Manager data warehouse database is a single source of failure for
 
 SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica.
 
-With System Center 2016 and later - Operations Manager, SQL Always On is preferred over failover clustering to provide high availability for databases. All databases except the native mode Reporting Services installation, which uses two databases to separate persistent data storage from temporary storage requirements, can be hosted in an AlwaysOn Availability Group.  
+With System Center 2016 and later - Operations Manager, SQL Always On is preferred over failover clustering to provide high availability for databases. All databases except the native mode Reporting Services installation, which uses two databases to separate persistent data storage from temporary storage requirements, can be hosted in an AlwaysOn Availability Group.
 
 To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
@@ -240,13 +257,23 @@ To set up an availability group you'll need to deploy a Windows Server Failover 
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ## SQL Server Always On
 
 SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica.
 
 With System Center 2016 and later - Operations Manager, SQL Always On is preferred over failover clustering to provide high availability for databases. All databases except the native mode Reporting Services installation, which uses two databases to separate persistent data storage from temporary storage requirements, can be hosted in an AlwaysOn Availability Group.  
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+With Operations Manager 2022, you can setup and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
 To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 

@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # SQL Server Web Dashboards
 
-With System Center Operations Manager 2019, you can access SQL Server dashboards using a web browser.
+With System Center Operations Manager 2019 and later, you can access SQL Server dashboards using a web browser.
 
 To open web dashboards, perform the following steps:
 

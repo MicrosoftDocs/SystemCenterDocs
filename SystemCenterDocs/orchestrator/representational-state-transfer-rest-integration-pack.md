@@ -1,5 +1,5 @@
 ---
-title: Representational State Transfer (REST) integraton pack for System Center - Orchestrator
+title: Representational State Transfer (REST) integration pack for System Center - Orchestrator
 description: This article describes the REST integration pack for System Center - Orchestrator.
 ms.date: 04/04/2019
 ms.prod: system-center
@@ -25,8 +25,14 @@ The integration pack for Representational State Transfer (REST) is an add-on for
 
 ## Download the integration pack
 
+::: moniker range="<=sc-orch-2019"
 - To download this integration pack for Orchestrator 2016, see [System Center 2016  Integration Packs](https://www.microsoft.com/download/details.aspx?id=54098).
 - To download this integration pack Orchestrator 2019, see [System Center 2019 Integration Packs](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all).
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+- To download this integration pack Orchestrator 2022, see System Center 2022 Integration Packs.
+::: moniker-end
 
 ## Register and deploy the integration pack
 

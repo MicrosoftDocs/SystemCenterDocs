@@ -31,14 +31,14 @@ To configure low-privilege monitoring, in addition to the steps described in [Lo
 2. Create the **SQLMPLowPriv** user in each user database and **master**, **msdb** and **model** databases.
 
 3. Grant the **SQLMPLowPriv** user the following permissions on both the **Distributor** and the **Publisher** SQL Server Replication roles:
-  
+
     ```SQL
     USE [msdb]
     GO
     GRANT SELECT ON [dbo].[MSdistpublishers] TO [SQLMPLowPriv]
     GRANT EXECUTE ON [dbo].[agent_datetime] TO [SQLMPLowPriv]
     ```
-  
+
 4. Grant the **SQLMPLowPriv** user the following permissions on the **Subscriber** SQL Server Replication role:
 
     ```SQL

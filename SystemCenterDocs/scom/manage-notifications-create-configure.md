@@ -5,7 +5,7 @@ description: This article provides information on how to create and configure th
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 04/30/2019
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). The Notification Account Run As profile is used to send notifications. For notifications to work correctly, you must create a Run As account that provides the credentials for sending notifications and associate the Run As account to the Notification Account profile.  
+In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), text message (SMS), or Microsoft Teams (applicable for 2022). The Notification Account Run As profile is used to send notifications. For notifications to work correctly, you must create a Run As account that provides the credentials for sending notifications and associate the Run As account to the Notification Account profile.  
 
 ## To create and configure the Notification action account  
 
@@ -32,7 +32,7 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 
 4.  On the **Introduction** page, click **Next**.  
 
-5.  On the **General Properties** page, select **Windows** in the **Run As Account type** list for setting up authentication with an email server in the same organization or domain or select **Simple Authentication** for setting up authentication with an external mail server, and then in **Display name**, type **Notification action account**. Click **Next**.  
+5.  On the **General Properties** page, select **Windows** in the **Run As Account type** list for setting up authentication with an email server in the same organization or domain or select **Simple Authentication** for setting up authentication with Microsoft Teams/external mail server, and then in **Display name**, type **Notification action account**. Click **Next**.  
 
 6.  On the **Credentials** page, type the information for the user name, password, and domain (if required) of the user account that to be used for notifications. Click **Next**.  
 

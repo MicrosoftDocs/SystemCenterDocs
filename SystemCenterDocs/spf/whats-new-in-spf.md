@@ -15,6 +15,13 @@ ms.custom: intro-whats-new
 
 # What's new in System Center - Service Provider Foundation
 
+
+::: moniker range="sc-spf-2022"
+
+There are no new features introduced in Service Provider Foundation 2022.
+
+::: moniker-end
+
 ::: moniker range="sc-spf-2019"
 
 This article details the new features supported in System Center 2019 - Service Provider Foundation (SPF).

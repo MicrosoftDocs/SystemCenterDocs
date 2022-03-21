@@ -22,14 +22,20 @@ ms.topic: article
 A dashboard has a particular layout, which specifies the arrangement of the cells that actually host content.  Each cell in a dashboard can contain a single widget.  A widget accesses a particular set of data or performs a particular function and presents its information in the dashboard.  Each widget provides a specific set of customizations that you can modify according to your particular requirements.  Depending on the Dashboard Layout that you select, the dashboard may have a fixed set of widgets or may allow you to define a number of configuration of cells that can each contain a widget of your choice.
 
 
-::: moniker range="sc-om-2019"
+::: moniker range="=sc-om-2019"
 
 Operations Manager 2019 UR2 and later supports folders' creation in web console, inside which, you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md)
 
-> [!NOTE]
-> Folders and views created from operations console can be viewed in the web console but the dashboards created from the web console will not be visible in the operations console.
+::: moniker-end
+
+::: moniker range="=sc-om-2022"
+
+Operations Manager supports folders' creation in web console, inside which, you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md)
 
 ::: moniker-end
+
+> [!NOTE]
+> Folders and views created from operations console can be viewed in the web console but the dashboards created from the web console will not be visible in the operations console.
 
 Dashboards in Operations Manager deliver the following benefits:
 

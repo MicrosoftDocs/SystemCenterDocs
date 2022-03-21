@@ -1,0 +1,52 @@
+---
+ms.assetid:
+title: What's new in System Center Virtual Machine Manager
+description: This article describes the new features supported in VMM
+author: v-jysur
+ms.author: v-jysur
+manager: evansma
+ms.date: 11/29/2021
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
+ms.custom: intro-whats-new
+---
+
+## New features in VMM 2022
+
+See the following sections for new features and feature updates supported in VMM 2022.
+
+## Compute
+
+### Windows Server 2022 and Windows Server 2022 Guest OS support
+
+VMM 2022 can be used to manage on Windows Server 2022 and Windows Server 2022 Guest OS hosts.
+
+### Windows 11 support
+
+VMM 2022 supports Windows 11.
+
+### Support for Azure Stack HCI clusters 21H2
+
+With VMM 2022 you can manage Azure Stack HCI, 21H2 clusters.
+
+Azure Stack HCI, version 21H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
+
+Most of the operations to manage Azure Stack clusters in VMM are similar to managing Windows Server clusters. 
+
+>[!NOTE]
+> Management of Azure Stack HCI stretched clusters is currently not supported in VMM.
+
+### Register and unregister Azure Stack HCI cluster using PowerShell cmdlets
+
+VMM 2022 supports **register** and **unregister** PowerShell cmdlets for Azure Stack HCI cluster. Learn more.
+
+### Support for dual stack SDN deployment
+
+VMM 2022 supports dual stack SDN deployment.  
+
+In VMM 2019 UR2, we introduced support for Ipv6 based SDN deployment. VMM 2022 supports dual stack (Ipv4 + Ipv6) for SDN components.  
+
+To enable Ipv6 for SDN deployment, do the required changes in the network controller, gateway, and SLB set up.   
+
+For more information about these updates, see Network controller, Gateway, SLB, and Route traffic.

@@ -29,6 +29,12 @@ There are numerous management packs available for System Center Operations Manag
 
 ::: moniker-end
 
+::: moniker range="sc-om-2022"
+>[!NOTE]
+> You can track the changes done in management packs. [Learn more](management-pack-change-tracking.md).
+
+::: moniker-end
+
 ## Importing a management pack
 
 You have several options for importing management packs:

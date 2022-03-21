@@ -22,7 +22,7 @@ ms.technology: virtual-machine-manager
 Read this article to learn about enabling dynamic optimization (DO) and power optimization  for virtual machines (VMs) in the System Center - Virtual Machine Manager (VMM). The article includes features overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
 
 >[!NOTE]
-> - VMM 2019 and later supports dynamic optimization for Compute and Storage. Versions prior to VMM 2019 support DO for compute only, use the following procedures as applicable for the version of VMM you are using.
+> - VMM supports dynamic optimization for Compute and Storage. Versions prior to VMM 2019 support DO for compute only, use the following procedures as applicable for the version of VMM you are using.
 > - VMM doesn’t support site aware clusters or stretched clusters. VMM doesn’t consider Hyper-V defined *site-specific fault domains* for dynamic optimization calculation.
 
 - **Dynamic optimization**:  Using dynamic optimization, VMM performs live migration of VMs and VHDs within a host cluster. The migration is based on the settings you specify, to improve load balancing among hosts and cluster shared storage (Cluster shared volumes (CSV), file shares), and to correct the placement issues for VMs.
@@ -43,10 +43,8 @@ Note the following information before you start using the DO.
 - Dynamic optimization and power optimization can be configured on host clusters that support live migration.
 - Dynamic optimization can be configured on a host group, to migrate virtual machines and virtual hard disks (VHDs)    within host clusters with a specified frequency and aggressiveness. VM aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
 
-::: moniker range="sc-vmm-2019"
-
+::: moniker range=">=sc-vmm-2019"
 - Disk space aggressiveness determines the amount of free storage space below disk space threshold that is required to migrate VHDs to other cluster shared storage during dynamic optimization.
-
 ::: moniker-end
 
 - By default, virtual machines are migrated every 10 minutes with medium aggressiveness, if automatic migration is enabled. When configuring frequency and aggressiveness  for dynamic optimization, an administrator should factor in the resource cost of additional migrations against the advantages of balancing load among hosts/shared storage in a host cluster. By default, a host group inherits Dynamic Optimization settings from its parent host group.
@@ -95,7 +93,7 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 over WS-Man
 
    VM aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
 
-   ::: moniker range="sc-vmm-2019"
+   ::: moniker range=">=sc-vmm-2019"
 
    Disk space aggressiveness determines the amount of free storage space below disk space threshold that is required to migrate VHDs to other cluster shared storage during dynamic optimization.
 
@@ -110,7 +108,7 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 over WS-Man
    1.  Select the **Automatically migrate virtual machines to balance load** check box to balance free storage space across shared storage.
    2. In **Frequency**, specify how often to run dynamic Optimization. You can enter any value between 10 minutes and 1440 minutes \(24 hours\).
 
-8. Set thresholds for each of the compute and storage ( applicable for VMM 2019) resources listed. To change the units of the resources go to  **Host group**> **Properties**  > **Host Reserves** and choose the unit from the drop-down menu.
+8. Set thresholds for each of the compute and storage ( applicable for VMM 2019 and later) resources listed. To change the units of the resources go to  **Host group**> **Properties**  > **Host Reserves** and choose the unit from the drop-down menu.
 
 9. To turn on power optimization on the host group, select the **Enable power optimization** checkbox.  Click **OK** again to save your changes.
 
@@ -139,7 +137,7 @@ You can run dynamic optimization on demand on a host cluster. To do this dynamic
 
 3. Click **Migrate**.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 > [!NOTE]
 > If VHDs are migrated between one storage type to another (Example: from a CSV to NAS file share), the storage migration will be slow. If the storage optimization does not return a list of VHDs to migrate even when the threshold and aggressiveness criteria are met:

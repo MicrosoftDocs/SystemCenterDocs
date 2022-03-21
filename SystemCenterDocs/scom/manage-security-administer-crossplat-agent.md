@@ -176,14 +176,32 @@ The values of the **OSName**, **OSVersion**, and **OSFullName** properties can b
 
 ::: moniker range="sc-om-2019"
 
+>[!NOTE]
+> The following update is applicable for Operations Manager 2019 UR1 and later.
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
+
 ##	Performance and reliability improvements in the Linux agent  
 
->[!NOTE]
-> This update is applicable for Operations Manager 2019 UR1 and later
+::: moniker-end
+
+::: moniker range="=sc-om-2019"
 
 With Operations Manager 2019 UR1 and later, to improve the reliability, a separate process is introduced to send the heartbeat. Earlier, the performance and heartbeat collection threads used to run under the same process context. Due to this, any delay in performance data collection was affecting the system availability.
 
 With this change, during heartbeat collection, you can now see an additional *omiagent* process running under *omi* user.
+
+::: moniker-end
+
+::: moniker range="=sc-om-2022"
+
+To improve the reliability, a separate process is used to send the heartbeat. During heartbeat collection, you can see an additional *omiagent* process running under *omi* user.
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
 To improve the performance, X-Plat Filter variable is introduced in override. You may override discovery/monitor behavior for X-Plat management pack by introducing WQL queries in *Filter* parameter. This helps in restricting the monitoring to entities of interest.
 
@@ -202,14 +220,21 @@ Now, you will see data only for the disk ‘loop200’ in the performance view.
 
 ![override controlled parameters example](media/manage-security-administer-crossplat-agent/override-example-2.png)
 
-## Dynamic changes in log-level settings without agent restart   
+::: moniker-end
 
+::: moniker range="sc-om-2019"
 >[!NOTE]
-> This update is applicable for Operations Manager 2019 UR3 and later.
-
-In earlier releases of Operations Manager, changes to log-level settings of OMI processes required an agent restart.
-
+> The following update is applicable for Operations Manager 2019 UR3 and later.
+> In earlier releases of Operations Manager, changes to log-level settings of OMI processes required an agent restart.
 With Operations Manager 2019 UR3, log-level settings can be changed without the need for restarting the agent.
+
+::: moniker-end
+
+
+::: moniker range=">=sc-om-2019"
+## Dynamic changes in log-level settings without agent restart
+
+You can change the log-level settings without the need for restarting the agent.
 
 Use the following steps:
 

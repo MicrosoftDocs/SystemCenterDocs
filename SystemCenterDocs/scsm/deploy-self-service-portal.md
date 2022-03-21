@@ -5,7 +5,7 @@ manager: carmonm
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 04/27/2020
+ms.date: 03/10/2022
 ms.technology: service-manager
 ms.topic: article
 ms.custom: intro-deployment
@@ -28,10 +28,18 @@ The Self-Service portal provides web-based access to the features of System Cent
 ::: moniker-end
 
 ::: moniker range="sc-sm-2019"
+ - Windows Server 2019
  - Windows Server 2016
  - Windows Server 2012 R2
+ ::: moniker-end
+
+::: moniker range="sc-sm-2022"
+ - Windows Server 2022
  - Windows Server 2019
-::: moniker-end
+ - Windows Server 2016
+ - Windows Server 2012 R2
+ ::: moniker-end
+
 
 For more information, see [system requirements](system-requirements.md)
 ## Supported web browsers
@@ -99,7 +107,7 @@ Use the following steps to install the Self-Service Portal WebApp using Setup.
 
     -   **WebSite Name** :   The name of the website to display in the IIS Management console.
 
-    -   **SM Server name**:  You can provide a fully-qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal.
+    -   **SM Server name**:  You can provide a fully-qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal. See [Deployment topologies](/system-center/scsm/learn-self-service-portal?#deployment-topologies) for more details.
 
     -   **Portal Port**: The port number that the  website will use.
 

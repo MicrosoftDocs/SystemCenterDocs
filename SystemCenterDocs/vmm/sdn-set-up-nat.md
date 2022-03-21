@@ -5,7 +5,7 @@ description: This article describes how to configure NAT connection and NAT rule
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 08/04/2020
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -30,8 +30,15 @@ The following two NAT types are supported by VMM.
 
 This article provides information about how to configure a NAT connection for SDN virtual networks using VMM.
 
+::: moniker range="sc-vmm-2022"
+
+VMM 2022 supports dual stack. NAT rules to Dual stack VM networks is not supported at VMM console. NAT rules can be specified using PowerShell cmdlets.  
+
+::: moniker-end
+
 ::: moniker range="sc-vmm-2019"
->[!Note]
+
+>[!NOTE]
 >- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
 >- VMM 2019 UR2 and later supports IPv6.
 
@@ -55,7 +62,7 @@ Use the following procedure:
     ![nat connection](media/sdn-nat/create-connection-directly.png)
 
 4. In the **IP address pool**, choose the IP pool from which the VIP should come from. In IP address, choose an IP address from the pool selected. Click **OK**.
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 5. To enable IPv6, select an IPv6 address pool and provide an IPv6 address.
 ::: moniker-end
 
@@ -64,7 +71,6 @@ A NAT connection will be created for this VM network.
 > [!NOTE]
 > - Along with the NAT connection, this procedure also creates  a default Outbound NAT rule that enables the outbound connectivity for the VM network.
 > - To enable inbound connectivity and forward an external traffic to a specific VM, you must add NAT rules to the NAT connection.
-
 
 ## Add rules to a NAT connection
 

@@ -28,7 +28,7 @@ After importing Management Pack for SQL Server Reporting Services, the following
     - Workflow Type: **Monitor**
         - All deployment instances are discovered
 
-- **Microsoft SQL Server Monitoring Run As Profile** 
+- **Microsoft SQL Server Monitoring Run As Profile**
 
     - Workflow Type: **Monitor**
         - Configuration conflict with SQL Server
@@ -43,7 +43,7 @@ After importing Management Pack for SQL Server Reporting Services, the following
         - Temporary database accessible
         - Web service accessible
         - Windows service state
-  
+
     - Workflow Type: **Rule**
         - CPU utilization (%)
         - Failed report executions per minute

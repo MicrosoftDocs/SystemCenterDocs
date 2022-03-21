@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 02/04/2022
+ms.date: 02/09/2022
 title: Set up DPM logging
 ms.technology: data-protection-manager
 ms.assetid: 710459cd-75ec-4052-9199-c45828cbc19b

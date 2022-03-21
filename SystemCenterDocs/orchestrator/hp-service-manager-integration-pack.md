@@ -29,9 +29,16 @@ The integration pack for HP Service Manager is an add-on for Orchestrator in Sys
 
 The integration pack for HP Service Manager requires the following software to be installed and configured to implementing the integration. For more information about installing and configuring Orchestrator and the HP Service Manager Web Service, refer to the respective product documentation.
 
+::: moniker range="<=sc-orch-2019"
 -  System Center 2016 integration packs require System Center 2016 - Orchestrator
 -  System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   HP Service Manager 7.11 or 9
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+-  System Center 2022 integration packs require System Center 2022 - Orchestrator
+-   HP Service Manager 7.11 or 9
+::: moniker-end
 
 The following software must be installed on each Runbook Server and Runbook Designer:
 
@@ -45,8 +52,14 @@ The following software must be installed on each Runbook Server and Runbook Desi
 
 ## Downloading the Integration Pack
 
+::: moniker range="<=sc-orch-2019"
 - To download this integration pack for Orchestrator 2016, see [HP Service Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54101).
 - To download this integration pack for Orchestrator 2019, see [HP Service Manager Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58109&WT.mc_id=rss_alldownloads_all).
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+- To download this integration pack for Orchestrator 2022, see HP Service Manager Integration Pack for System Center 2022 - Orchestrator.
+::: moniker-end
 
 ## Registering and Deploying the Integration Pack
 

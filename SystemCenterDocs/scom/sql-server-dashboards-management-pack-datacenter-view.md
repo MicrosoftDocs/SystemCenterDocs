@@ -47,4 +47,3 @@ The Aggregated performance tile shows five columns. Each column represents the n
 
 >[!NOTE]
 >Use the **Datacenter View** menu button or a group to add a new tile or group. It is possible to edit or remove the tile by selecting the corresponding menu item from the right-click context menu. The background color, time interval, and refresh rate settings that are applied to the **Datacenter** view and all **Instance** views can be set from the Datacenter view menu and Instance view menu.
-

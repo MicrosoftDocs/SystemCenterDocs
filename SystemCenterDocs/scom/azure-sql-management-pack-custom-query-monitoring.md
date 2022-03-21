@@ -26,7 +26,7 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
     ![Create a two-state unit monitor](./media/azure-sql-management-pack/creating-unit-monitor.png)
 
-2. At the **Monitor Type** step, select **Microsoft Azure SQL Database | User-defined SQL Query Two State Monitor**. 
+2. At the **Monitor Type** step, select **Microsoft Azure SQL Database | User-defined SQL Query Two State Monitor**.
 
 3. From the **Select destination management pack** drop-down list, select a management pack that you want to use and click **Next**.
 
@@ -49,7 +49,7 @@ To add a new two-state custom query-based monitor, perform the following steps:
     To add a new condition, click **Add** and select one of the available conditions:
 
     - **Empty Result Set**
-  
+
       Checks if the specified result set that was returned by the query is empty.
 
     - **Not Empty Result Set**

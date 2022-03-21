@@ -23,7 +23,7 @@ ms.topic: article
 During the setup and daily operation of Operations Manager, you will be asked to provide credentials for several accounts. This article provides information about each of these accounts, including the SDK and Config Service, Agent Installation, Data Warehouse Write, and Data Reader accounts.
 
 >[!NOTE]
-> Operations Manager installation provisions all necessary SQL permissions. 
+> Operations Manager installation provisions all necessary SQL permissions.
 
 If you use domain accounts and your domain Group Policy object (GPO) has the default password expiration policy set as required, you will either have to change the passwords on the service accounts according to the schedule, use system accounts, or configure the accounts so that the passwords never expire.
 
@@ -46,7 +46,7 @@ You can use a least-privileged account for the agent’s action account. On comp
 
 - Member of the local Users group
 - Member of the local Performance Monitor Users group
-- Allow log on locally (SetInteractiveLogonRight) permission (not applicable for Operations Manager 2019).
+- Allow log on locally (SetInteractiveLogonRight) permission (not applicable for Operations Manager 2019 and later).
 
 
 > [!NOTE]
@@ -56,7 +56,7 @@ You can use a least-privileged account for the agent’s action account. On comp
 The domain account that is specified for the action account can be granted either Log on as a Service (SeServiceLogonRight) or Log on as Batch (SeBatchLogonRight) permission if your security policy does not allow a service account to be granted an interactive log on session, such as when smart card authentication is required.  Modify the registry value HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 The domain account that is specified for the action account is granted with Log on as a Service (SeServiceLogonRight) permission. To change the logon type for health service, modify the registry value *HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:*
 

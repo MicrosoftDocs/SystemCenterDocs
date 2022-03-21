@@ -26,12 +26,21 @@ System Center Operations Manager now delivers HTML5 based dashboards, which enha
 ## Supported scenarios
 You can take advantage of the following HTML5 dashboard capabilities:
 
+::: moniker range="sc-om-2019"
+
+   Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+ Additional view options are available in Alert and State widget. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+
+::: moniker-end
+
 1. Create HTML 5 dashboards from multiple browsers without a dependency on Silverlight.  
 
 2. Visualize monitoring data in HTML 5 dashboards with:
-
-   > [!NOTE]
-   > Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
 
     - [Alert widget](manage-create-web-dashboard-alerts.md)
 
@@ -45,7 +54,8 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
     - [Custom widget](manage-create-web-dashboard-custom.md)
 
-    - [PowerShell widget](manage-create-web-dashboard-posh.md) (available from 1807)
+    - [PowerShell widget](manage-create-web-dashboard-posh.md)
+
 
 3. Perform create, edit and delete operations on the widgets.  
 
@@ -73,9 +83,9 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
     - Network Summary dashboard.
 
-    - From 1807 and later, you can view Network Node and Network Interface Dashboard for Network Node/interface from the **Monitored Objects** page.
+    - You can view Network Node and Network Interface Dashboard for Network Node/interface from the **Monitored Objects** page.
 
-11. From 1807 and later, you can visualize the effective configuration of rules and monitors for a monitored object from the **Monitored objects** drill down page.
+11. You can visualize the effective configuration of rules and monitors for a monitored object from the **Monitored objects** drill down page.
 
 12.	You can sign out from your current web console session.
 
@@ -119,14 +129,14 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
     - Export to Excel the legend data to Excel for further analysis.
 
-20.	Delete HTML5 dashboards from the Web console and in version 1807 and later, you can create dashboards or views to My workspace.  In version 1801, you add dashboards or views to My Workspace from the monitoring tree.
+20.	Delete HTML5 dashboards from the Web console, you can create dashboards or views to My workspace.  In version 1801, you add dashboards or views to My Workspace from the monitoring tree.
 
 21.	The IIS web server hosting the Web console role can be setup with network authentication mode and users can access the Web console using network authentication.
 
 22.	You can provide feedback on HTML5 dashboards from within the Web console.
 
 ## Supported browsers
-System Center Operations Manager version 1807 and later Web console supports Microsoft Edge, Google Chrome, Mozilla Firefox and Internet Explorer.  
+System Center Operations Manager Web console supports Microsoft Edge, Google Chrome, Mozilla Firefox and Internet Explorer.  
 
 >[!NOTE]
 >Internet Explorer compatibility mode is not supported.   

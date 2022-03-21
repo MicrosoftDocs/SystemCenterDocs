@@ -5,7 +5,7 @@ description: This article describes how to apply overrides to classes and groups
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 05/03/2017
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -56,6 +56,14 @@ You have seen that classes are used to target workflows such as rules and monito
 -   **For all objects of another class**  
 
     When you select this option for your override, the override settings apply only to objects of a class other than the targeted class. The rule or monitor without the override settings continues to apply to all objects in the targeted class.  
+
+::: moniker range="sc-om-2022"
+
+Operations Manager 2022 provides support for sort option by column, in **Overrides Summary**.
+
+![Overrides Summary](./media/manage-mp-overview-override-targets/overrides-summary.png)
+
+::: moniker-end
 
 Overrides that apply to a class are applied first, then overrides that apply to a group, and finally overrides that apply to a specific object. For more information, see [Using the Enforced Attribute in Overrides](#using-the-enforced-attribute-in-overrides) below.  
 

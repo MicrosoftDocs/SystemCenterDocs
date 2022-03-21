@@ -8,12 +8,14 @@ manager: evansma
 ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
-monikerRange: 'sc-om-2019'
+monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Favorite reports in Web console
+
+::: moniker range="sc-om-2019"
 
 This article provides information about how to create and view favorite reports in Operations Manager 2019 UR2 and later.
 
@@ -22,7 +24,17 @@ This article provides information about how to create and view favorite reports 
 
 In Operations Manager 2019 UR2 and later, you can run and view favorite reports from **Web Console** > **My Workspace**. This feature is available in Operations Manager 2012 web console, which is now supported in 2019 UR2.
 
-You can create a report in operations console and view them as favorite reports in the HTML5 web console.
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+This article provides information about how to create and view favorite reports in Operations Manager.
+
+You can run and view favorite reports from **Web Console** > **My Workspace**.
+
+::: moniker-end
+
+You can create a report in operations console and view them as *Favorite reports* in the HTML5 web console.
 
 ## Before you begin
 
@@ -68,7 +80,7 @@ Use the following procedure to run favorite reports in Web console:
 
 Use the following procedure to configure Windows authentication (Kerberos) between Operations Manager Report Server and Management Server:
 
-1. On the Operations Manager Report Server, open *rsreportserver.config* file of SSRS, located at <PATH>: \Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer, in a note pad.
+1. On the Operations Manager Report Server, open *rsreportserver.config* file of SSRS, located at \<PATH\>: \Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer, in a note pad.
 
 2. Change the authentication type to *\<RSWindowsNegotiate />* from *\<RSWindowsNTLM />*, and recycle the SQL reporting service.
 

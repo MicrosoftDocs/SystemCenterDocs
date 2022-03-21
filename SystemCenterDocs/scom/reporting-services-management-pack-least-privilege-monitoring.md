@@ -69,7 +69,7 @@ To configure System Center Operations Manager, perform the following steps:
 2. Create **SSRSMonitoring**, **SSRSDiscovery** and **SSRSSDK**  Run As accounts with the **Windows** account type. For more information about how to create a Run As account, see [How to create a Run As account and associate with a Run As profile](manage-security-create-runas-link-profile.md). For more information about various Run As Account types, see [Managing Run As accounts and profiles](manage-security-maintain-runas-profiles.md).
 
 3. On System Center Operations Manager console, configure the Run As profiles as follows:
-  
+
     - Instruct the **Microsoft SQL Server Discovery Run As Profile** Run As profile to use the **SSRSDiscovery** Run As account.  
 
     - Instruct the **Microsoft SQL Server Monitoring Run As Profile** Run As profile to use the **SSRSMonitoring** Run As account.  
