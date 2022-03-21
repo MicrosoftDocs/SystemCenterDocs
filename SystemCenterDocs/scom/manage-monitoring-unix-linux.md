@@ -197,6 +197,13 @@ This topic describes how to enable logging and debug tools for troubleshooting i
 
 ::: moniker-end
 
+::: moniker range="sc-om-2022"
+
+> [!NOTE]
+> You can change log-level settings without the agent restart. [Learn more](manage-security-administer-crossplat-agent.md#dynamic-changes-in-log-level-settings-without-agent-restart).
+
+::: moniker-end
+
 ### Enable Operations Manager Module Logging  
 The Operations Manager Agents for UNIX and Linux maintain several log files that can be useful when troubleshooting client issues. These log files are located on the managed UNIX or Linux computer. The logging level for the agent log files can be configured as needed. More verbose logging can be useful in diagnosing an issue. For normal operation, log levels should not be set to a value more verbose than the default configurations (Intermediate) in order to prevent excessive log file growth  
 
@@ -252,9 +259,9 @@ This verbose tracing method is used to see the Windows Remote Management (WinRM)
 
 2.  Type the following commands at the command prompt:  
 
-    1.  `cd C:\Program Files\Microsoft System Center 2016\Operations Manager\Tools`
+    1.  `cd C:\Program Files\Microsoft System Center\Operations Manager\Tools`
 
-    2.  `StopTracing.cmd` 
+    2.  `StopTracing.cmd`
 
     3.  `StartTracing.cmd VER`
 

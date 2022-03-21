@@ -10,19 +10,18 @@ keywords:
 ms.date: 10/12/2020
 ms.technology: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
-monikerRange:  sc-sm-2016 || sc-sm-2019
+monikerRange:  sc-sm-2016 || sc-sm-2019 || sc-sm-2022
 ---
 
 # SQL Server requirements for System Center - Service Manager
 
 Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center - Service Manager reporting.
 
-Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center . Use this information whether you are deploying one or multiple components of System Center.
-
-::: moniker range="<sc-sm-2019"
+Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center. Use this information whether you are deploying one or multiple components of System Center.
 
 ## SQL Server version support
 
+::: moniker range="<sc-sm-2019"
 
 |**System Center 2016** component |SQL Server 2008 R2 SP1 Standard, Datacenter|SQL Server 2008 R2 SP2 Standard, Datacenter|SQL Server 2012 Enterprise, Standard (64-bit)|SQL Server 2012 SP1 Enterprise, Standard (64-bit)|SQL Server 2012 SP2 Enterprise, Standard (64 bit)|SQL Server 2014 Enterprise, Standard (64-bit)|SQL Server 2014 SP1 Enterprise, Standard (64-bit)|SQL Server 2014 SP2 Enterprise, Standard (64-bit)|SQL Server 2016, Enterprise, Standard  (64-bit)|
 |-------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------|------------------------------------------------|-------------------------------------|
@@ -40,8 +39,6 @@ For detailed information about the requirements for Service Manager components, 
 
 ::: moniker range="sc-sm-2019"
 
-## SQL Server version support
-
 | **System Center 2019 component**                      | **Service Manager** Database or Data Warehouse Database | **Service Management Automation** Web Service |
 |-------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------|
 | **SQL Server 2014 Enterprise, Standard (64-bit)**     | Yes                                                       |Yes                                          |
@@ -57,6 +54,20 @@ For detailed information about the requirements for Service Manager components, 
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
+::: moniker-end
+
+::: moniker range="sc-sm-2022"
+
+| **System Center 2022 component**                      | **Service Manager** Database or Data Warehouse Database | **Service Management Automation** Web Service |
+|-------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------|
+| **SQL Server 2017 and Cumulative Updates**    | Yes                                                       |Yes                                           |
+| **SQL Server 2019 with Cumulative Update 8 (CU8) or later**    | Yes                                                       |Yes                                          |
+
+>[!NOTE]
+> - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
+
+For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
+
 ::: moniker-end
 
 ## Allow updates

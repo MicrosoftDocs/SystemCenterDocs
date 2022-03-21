@@ -5,7 +5,7 @@ description: This article describes about version numbers.
 author: v-anesh
 ms.author: v-anesh
 manager: vvithal
-ms.date: 10/20/2020
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
@@ -26,6 +26,16 @@ This article provides information about how to determine your current Microsoft 
 > All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2016 – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
 
 ## Build versions
+
+::: moniker range="sc-sm-2022"
+
+The following table lists the build versions for Service Manager 2022.
+
+| Build Number | KB | Description |
+| --- | --- |--- |
+| 10.22.1068.0 | n/a | System Center 2022 Service Manager     |
+
+::: moniker-end
 
 ::: moniker range="sc-sm-2019"
 

@@ -43,9 +43,9 @@ You'll need to run the Modify-RegisteredWriters command to add, remove or modify
 
 Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-List] [\<CommonParameters\>]
 
-Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-Remove] [-Writers] <String> [\<CommonParameters\>]
+Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-Remove] [-Writers] \<String\> [\<CommonParameters\>]
 
-Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-Add] [-Writers] <String> [\<CommonParameters\>]
+Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-Add] [-Writers] \<String\> [\<CommonParameters\>]
 
 |Parameter|Type|Description|
 |-------------|--------|---------------|

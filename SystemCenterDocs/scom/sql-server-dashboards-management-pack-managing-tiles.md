@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Managing Tiles
 
-The tiles can be moved by means of drag-n-drop. 
+The tiles can be moved by means of drag-n-drop.
 
 Datacenter dashboards allow the following methods of tile moving:
 

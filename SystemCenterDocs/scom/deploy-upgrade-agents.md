@@ -8,7 +8,7 @@ manager: evansma
 ms.date: 06/18/2021
 ms.custom: na
 ms.prod: system-center
-monikerRange: ' sc-om-1801 || sc-om-2019'
+monikerRange: ' sc-om-1801 || sc-om-2019 || sc-om-2022'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -24,6 +24,17 @@ ms.topic: article
 ::: moniker range="sc-om-2019"
 
 Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2019. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+
+Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2022. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
 > [!NOTE]
 > - To upgrade an Operations Manager agent through console, ensure that the Run As Account used for upgrade is granted with the *Log on as a Service* right on all Management Servers and Gateways.
@@ -122,7 +133,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 #### To manually upgrade UNIX and Linux agents
 
-1.  Log on to Linux/Unix machines and copy the agent (scx-\<version\>.universalr.\<version\>.<arch>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
+1.  Log on to Linux/Unix machines and copy the agent (scx-\<version\>.universalr.\<version\>.\<arch\>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
 
 2.  Install the package with the following command.
 
@@ -248,7 +259,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 #### To manually upgrade UNIX and Linux agents
 
-1.  Log on to Linux/Unix machines and copy the agent (omsagent-\<version\>.universalr.\<version\>.<arch>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
+1.  Log on to Linux/Unix machines and copy the agent (omsagent-\<version\>.universalr.\<version\>.\<arch\>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
 
 2.  Install the package with the following command.
 

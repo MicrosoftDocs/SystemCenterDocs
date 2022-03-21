@@ -20,12 +20,18 @@ ms.topic: article
 
 ::: moniker-end
 
+::: moniker range="sc-om-2022"
+
+The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2022 - Operations Manager.
+
+>[!IMPORTANT]
+>Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2019 - Operations Manager.
-
->[!IMPORTANT]
-> Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
 
 ## IBM AIX 7.1
 
@@ -44,6 +50,10 @@ The following tables describe the required UNIX and Linux operating systems and 
 |xlC.rte|XL C/C++ Runtime|13.1.3.1|
 |OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|1.0.2p|
 
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
+
 ## Red Hat Enterprise Linux Server 8 (applicable for 2019 UR1 and later)
 
 |Required package|Description|Minimum version|
@@ -52,13 +62,24 @@ The following tables describe the required UNIX and Linux operating systems and 
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.1.1c-fips|
 |PAM|Pluggable Authentication Modules|1.3.1-4|
 
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
+
 ## Red Hat Enterprise Linux Server 7
+
+>[!NOTE]
+>Red Hat Enterprise Linux Server 7 (Power) is not supported in Operations Manager 2022.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc|C Standard Libraries|2.17|
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|
 |PAM|Pluggable Authentication Modules|1.1.8-1|
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
 
 ## Red Hat Enterprise Linux Server 7 (Power)
 
@@ -107,13 +128,24 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through RHEL 6 management 
 ## Solaris UTF\-8 Support
 The Operations Manager agent requires Solaris UTF-8 code set conversion support under some circumstances. Consult the Solaris documentation for details on installing UTF-8 code set conversion support. The Operations Manager agent functions without UTF-8 support on Solaris, but unrecognized characters are translated to question mark (?) characters.
 
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
+
 ## SUSE Linux Enterprise Server 12
+
+>[!NOTE]
+>SUSE Linux Enterprise Server 12 (Power) is not supported in Operations Manager 2022.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
 
 ## SUSE Linux Enterprise Server 12 (Power)
 
@@ -122,6 +154,10 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
 
 ## SUSE Linux Enterprise Server 15
 
@@ -139,10 +175,9 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
 
-
 ## Universal Linux (Debian package)
 
-Debian 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
+Debian 8, 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 >[!NOTE]
 > Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
@@ -155,7 +190,44 @@ Debian 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 ## Universal Linux (RPM package)
 
-CentOS 7 and Oracle Linux 6, 7, 8 are supported.
+CentOS 6, 7 and Oracle Linux 6, 7, 8 are supported.
+
+CentOS 8 is supported from 2019 UR2 and later and Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|glibc|C Standard shared library|2.5-12|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
+|PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+## Universal Linux (Debian package)
+
+Supported versions:
+
+- Debian 9, 10 and 11
+- Ubuntu 16.04, 18.04 and 20.04
+
+>[!NOTE]
+> Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|libc6|C Standard shared library|2.24-11|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
+|PAM|Pluggable Authentication Modules|1.1.8-3.1|
+
+## Universal Linux (RPM package)
+
+Supported versions:
+
+- CentOS 7
+- Oracle Linux 7 and 8
+- SLES 15
+- openSUSE Leap 15
 
 Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
@@ -167,17 +239,9 @@ Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Univers
 
 ::: moniker-end
 
-
 ::: moniker range="sc-om-2016"
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager.
-
-::: moniker-end
-
-::: moniker range="<=sc-om-1807"
-
->[!IMPORTANT]
-> Operations Manager automatically stops supporting the operating systems and packages for which the vendor owner has stopped the support.
 
 ::: moniker-end
 
@@ -233,10 +297,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SysMgmtMin.openssl|OpenSSL Libraries; Secure Network Communications Protocol|A.00.09.08q.003|  
 |PAM|Pluggable Authentication Modules|On HP-UX, PAM is part of the core operating system components. There are no other dependencies.|  
 
-::: moniker-end
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
 ## Red Hat Enterprise Linux Server 5  
 
 |Required package|Description|Minimum version|  
@@ -244,10 +304,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 |glibc|C Standard Libraries|2.12-1.7|  
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
 |PAM|Pluggable Authentication Modules|1.1.1-4|  
-
-::: moniker-end
-
-::: moniker range="<=sc-om-1807"
 
 ## Red Hat Enterprise Linux Server 6  
 
@@ -339,10 +395,6 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|  
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|  
 
-::: moniker-end
-
-::: moniker range=">= sc-om-1801 <= sc-om-1807"
-
 ## Universal Linux (Debian package)
 Debian 8 and Ubuntu 14.04, 16.04 are supported.
 
@@ -359,31 +411,6 @@ CentOS 6, 7 and Oracle Linux 6, 7 are supported.
 |--------------------|---------------|-------------------|  
 |glibc|C Standard shared library|2.5-12|  
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
-|PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
-
-::: moniker-end
-
-::: moniker range="sc-om-2016"
-
-## Support for Universal Linux
-Ubuntu 14.04, 16.04 are supported.
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|libc6|C Standard shared library|2.3.6|  
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
-|PAM|Pluggable Authentication Modules|0.79-3|
-
-## Support for Universal Linux (RPM package)
-
-CentOS 7 and Oracle Linux 6, 7, 8 are supported.
-
-Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
-
-|Required package|Description|Minimum version|
-|--------------------|---------------|-------------------|
-|glibc|C Standard shared library|2.5-12|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
 
 

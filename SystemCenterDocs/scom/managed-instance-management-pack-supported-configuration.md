@@ -34,7 +34,7 @@ Management Pack for Azure SQL Managed Instance supports the following tiers and 
 
 Management Pack for Azure SQL Managed Instance supports agentless monitoring of Azure SQL Managed Instance only.
 
-All workflows in the management pack are executed by the management servers that are members of the Management Server Pool. 
+All workflows in the management pack are executed by the management servers that are members of the Management Server Pool.
 
 The management pack does not require to have a dedicated management group and can work in virtual environments.
 
@@ -45,3 +45,4 @@ The following is a list of supported versions of System Center Operations Manage
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807
 - System Center Operations Manager 2019
+- System Center Operations Manager 2022

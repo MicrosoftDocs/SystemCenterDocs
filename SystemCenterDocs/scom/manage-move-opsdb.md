@@ -50,7 +50,7 @@ On all the management servers in the management group, stop the Operations Manag
 
 ### Restore the Operational database on the new SQL Server instance
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 > [!NOTE]
 > After deploying Operations Manager on the SQL server nodes participating in SQL Always On, to enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017), run the [SQL script](upgrade-sqlserver-2019-operations-manager.md#optional---enable-clr-strict-security) on each Operations Manager database.

@@ -15,6 +15,12 @@ ms.custom: intro-whats-new
 
 # What's new in System Center Orchestrator
 
+::: moniker range="sc-orch-2022"
+
+This article details the new features supported in System Center 2022 - Orchestrator.
+
+::: moniker-end
+
 ::: moniker range="sc-orch-2019"
 
 This article details the new features supported in System Center 2019 - Orchestrator.
@@ -75,6 +81,23 @@ For more information about how to set up, configure and run your environment to 
 This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 4 of SCO 2016](https://support.microsoft.com/help/4047355/update-rollup-4-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
 
 For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+## New web console and web API
+
+A new web console and web API are introduced in System Center Orchestrator 2022.
+
+The new web API is JSON based and makes it easier to use than the older XML-based counterpart. Particularly, the job creation with parameters API has been greatly simplified.
+
+>[!NOTE]
+>The new Web console is a complete redesign and works only on modern browsers like Microsoft Edge without Silverlight.
+
+## Orchestrator is now a 64 bit application
+
+Support for 64 bit enables the use of 64 bit assemblies, Integration Packs and PowerShell cmdlets.
 
 ::: moniker-end
 

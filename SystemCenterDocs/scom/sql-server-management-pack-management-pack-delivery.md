@@ -53,7 +53,7 @@ The environment that you use must meet the following prerequisites before you st
 - Enable the **Agent Proxy** option on each agent to allow agents to forward data to management servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md).
 
 - Enable and run SQL Server Browser for [agentless monitoring](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode) mode.
-  
+
 - Remove the Microsoft SQL Server 2017+ Integration Services on Window management pack before importing this management pack.
 
   Management pack for SQL Server 2017+ Integration Services cannot be upgraded and has to be removed before importing this management pack.

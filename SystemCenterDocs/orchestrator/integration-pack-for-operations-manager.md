@@ -26,23 +26,50 @@ For more information about integration packs, see the [System Center integration
 
 Before you deploy the Operations Manager integration pack, install and configure the following software:
 
+::: moniker range="<=sc-orch-2019"
+
 - Orchestrator.
+
 - Operations Manager. The integration pack version should match the System Center version.
 
     >[!NOTE]
     >If you're using the Orchestrator 2016 or 1801 integration pack for Operations Manager 2016 UR4 or later, if you've configured Operations Manager to accept only TLS 1.1 or 1.2 connections, make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-or-later).
 
 - To allow server interaction with Operations Manager, install the Operations Manager console where an Orchestrator Runbook server or Runbook Designer is installed.
+
 - The Orchestrator integration library management pack is required by the Create Alert object.
 
     >[!NOTE]
     >The Create Alert object installs the management pack automatically in Operations Manager the first time it's run. To uninstall the integration pack, remove the Orchestrator integration library management pack from Operations Manager.
 
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+- Orchestrator.
+
+- Operations Manager. The integration pack version should match the System Center version.
+
+- To allow server interaction with Operations Manager, install the Operations Manager console where an Orchestrator Runbook server or Runbook Designer is installed.
+
+- The Orchestrator integration library management pack is required by the Create Alert object.
+
+    >[!NOTE]
+    >The Create Alert object installs the management pack automatically in Operations Manager the first time it's run. To uninstall the integration pack, remove the Orchestrator integration library management pack from Operations Manager.
+
+::: moniker-end
+
 ## Download the integration pack
 
+::: moniker range="sc-orch-2022"
+- Download the pack for 2022
+::: moniker-end
+
+::: moniker range="<=sc-orch-2019"
 - [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
 - [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
 - [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
+::: moniker-end
 
 ## Register and deploy the pack
 

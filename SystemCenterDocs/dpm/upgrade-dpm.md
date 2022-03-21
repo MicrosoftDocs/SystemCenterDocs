@@ -1,12 +1,12 @@
 ---
 description: This article explains how to upgrade your DPM installation.
-manager: carmonm
+manager: evansma
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 03/14/2019
+ms.date: 11/29/2021
 title: Upgrade your System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:

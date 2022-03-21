@@ -5,7 +5,7 @@ description: This article describes how to add an Azure subscription, so that yo
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/14/2019
+ms.date: 03/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -97,11 +97,11 @@ You cannot:
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
-You can add Microsoft Azure subscriptions to System Center 2019 - Virtual Machine Manager (VMM), by creating an Azure profile.
+You can add Microsoft Azure subscriptions to System Center - Virtual Machine Manager (VMM), by creating an Azure profile.
 
-With VMM 2019, using Azure profile, you can define the intended usage of the profile. Currently, Azure-VMM integration scenario supports the following:  
+Using Azure profile, you can define the intended usage of the profile. Currently, Azure-VMM integration scenario supports the following:  
 
 -	**Azure VM Management** – perform basic actions on Azure VM instances without leaving the VMM console.
 - 	**Azure Update Management** – install the update on the VMs managed by VMM.

@@ -5,7 +5,7 @@ description: This article describes how to review the active alerts reported by 
 author: jyothisuri
 ms.author: jsuri
 ms.manager: evansma
-ms.date: 04/29/2019
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -35,9 +35,23 @@ To view the actual alerts, click **Active Alerts** in the navigation pane.
 
 ![Filter alerts by severity](./media/manage-alert-view-alerts-details/om2016-web-console-alertview-filter.png)  
 
+::: moniker range=">=sc-om-2016 <=sc-om-2019"
+
 The list of alerts in the Results pane includes the severity, source, maintenance mode status, name, resolution state, and when the alert was created:  
 
 ![Active Alerts](./media/manage-alert-view-alerts-details/om2016-view-active-alerts.png)  
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+The list of alerts in the Results pane includes the severity, source, maintenance mode status, name, resolution state, Alert source, and when the alert was created:
+
+With Operations Manager 2022, you can view the source of the alert if you had selected the view source option while creating the alert
+
+You can also sort and group the alerts by Monitor/Rule.
+
+::: moniker-end
 
 The following folders in the Monitoring workspace include a standard Active Alerts view scoped to the objects for that folder.  
 
@@ -73,7 +87,17 @@ To view the details for an alert, in the **Monitoring** workspace, click **Activ
 
 -   Read all text in the alert properties. (Right-click the alert, and select **Properties**.) In particular, carefully review the **Alert Description** field on the **General** tab and the **Description** field on the **Alert Context** tab.  
 
--   Right-click the alert, and open the **Event** view. Sort the events by the **Level** column, and then locate the events with the **Error** and **Warning** event levels. Events may correlate with the alert you are investigating and provide insight to its resolution.  
+-   Right-click the alert, and open the **Event** view. Sort the events by the **Level** column, and then locate the events with the **Error** and **Warning** event levels. Events may correlate with the alert you are investigating and provide insight to its resolution.
+
+::: moniker range="sc-om-2022"
+
+## View source FQDN for alerts  
+
+With Operations Manager 2022, you can view source (FQDN) for the alerts when you try to tune a management pack.
+
+![View source for the alerts](./media/manage-alert-view-alerts-details/fqdn.png)
+
+::: moniker-end
 
 ## Next steps
 

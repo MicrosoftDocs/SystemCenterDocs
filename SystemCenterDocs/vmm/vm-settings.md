@@ -47,15 +47,20 @@ You can add and remove virtual network adapters (vNICs) from VMs that are runnin
     - **Ethernet (MAC) address**: computers, a virtual MAC address on virtual machines uniquely identifies each computer on the same subnet. Select one of the following options:
     - **Dynamic**. Select this option if you want to enable a dynamic MAC address for a virtual machine.
     - **Static**. Select this option if you want to specify a static MAC address for a virtual machine. Type a static MAC address in the field provided.
-    - **Trunk Mode**: Select to enable Trunk mode. (applicable from 2019 UR3)
+    - **Trunk Mode**: Select to enable Trunk mode. 
+
+::: moniker range="sc-vmm-2019"
+
+VMM 2019 UR3 and later supports *trunk* mode for VM vNICs.
+
+::: moniker-end
 
 ## Support for trunk mode
 
 > [!NOTE]
-> - **Trunk mode**  is supported  from UR3.
-> - **Trunk mode** is supported only in VLAN based independent networks.
+> **Trunk mode** is supported only in VLAN based independent networks.
 
-VMM 2019 UR3 and later supports *trunk* mode for VM vNICs. Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs. You can enable trunk mode through console and PowerShell.
+Trunk mode is used by NFV/VNF applications like virtual firewalls, software load balancers, and virtual gateways to send and receive traffic over multiple vLANs. You can enable trunk mode through console and PowerShell.
 
 See the following section for enabling Trunk mode through console, see [Set-SCVirtualNetworkAdapter](/powershell/module/virtualmachinemanager/set-scvirtualnetworkadapter?preserve-view=true&view=systemcenter-ps-2019) and New-[SCVirtualNetworkAdapter](/powershell/module/virtualmachinemanager/new-scvirtualnetworkadapter?preserve-view=true&view=systemcenter-ps-2019) for enabling through PowerShell commandlets.
 

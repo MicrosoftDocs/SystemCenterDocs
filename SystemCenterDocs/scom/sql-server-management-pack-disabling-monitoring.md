@@ -69,4 +69,3 @@ Use commas to separate database names and asterisks to replace one or more chara
 |sales_dbnotmon|Monitored|
 
 If you have \* (asterisk) in the list as a database name (for example, \*temp*, \*, \*dev* or \*temp,*), it disables monitoring of any database.
-

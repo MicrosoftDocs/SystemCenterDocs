@@ -9,7 +9,7 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
-MonikerRange: 'sc-om-2019'
+MonikerRange: '>=sc-om-2019'
 ---
 
 
@@ -17,7 +17,17 @@ MonikerRange: 'sc-om-2019'
 
 You can create folders using the web console and save the dashboard inside them.
 
+::: moniker range="sc-om-2019"
+
 In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside it using the Operations console. However, this feature is not available from the Web console. With 2019 UR2, using the web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs.
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+In Operations Manager, you can create a folder and place dashboards/views inside it using the Operations console and Web console. You can also create folders and place dashboards inside them. These folders can be saved in unsealed management packs.
+
+::: moniker-end
 
 > [!NOTE]
 > Folders and views created from operations console can be viewed in the web console but the dashboards created from the web console will not be visible in the operations console.

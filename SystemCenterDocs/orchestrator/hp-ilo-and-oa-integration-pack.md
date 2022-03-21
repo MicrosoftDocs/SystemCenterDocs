@@ -31,17 +31,37 @@ Microsoft is committed to protecting your privacy, while delivering software tha
 
 The Integration Pack for HP iLO and OA requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and HP iLO and OA, refer to the respective product documentation.
 
+::: moniker range="<=sc-orch-2019"
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
 -   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   HP iLO 2
 -   HP iLO 3
 -   HP OA firmware 3.31
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+-   System Center 2022 integration packs require System Center 2022 - Orchestrator
+-   HP iLO 2
+-   HP iLO 3
+-   HP OA firmware 3.31
+::: moniker-end
+
 
 ## Downloading the Integration Pack
+
+::: moniker range="<=sc-orch-2019"
 
 - To download this integration pack for Orchestrator 2016, see [HP iLO and OA Integration Pack for System Center 2016 - Orchestrator.](https://www.microsoft.com/download/details.aspx?id=54102).
 
 - To download this integration pack for Orchestrator 2019, see [HP iLO and OA Integration Pack for System Center 2019 - Orchestrator.](https://www.microsoft.com/download/details.aspx?id=58107&WT.mc_id=rss_alldownloads_all).
+
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+- To download this integration pack for Orchestrator 2022, see HP iLO and OA Integration Pack for System Center 2022 - Orchestrator.
+
+::: moniker-end
 
 ## Registering and Deploying the Integration Pack
 

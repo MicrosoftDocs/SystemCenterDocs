@@ -4,7 +4,7 @@ description: This article describes how to create a notification subscription wh
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/14/2019
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -46,7 +46,7 @@ When you create a notification subscription from an alert that has been generate
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ## Subscription filter options
 
@@ -83,8 +83,13 @@ You can use classes and groups to configure the subscription. Two of the conditi
 
 You can select multiple groups or classes when you set the value for either condition.  
 
+
+::: moniker range=">=sc-om-2019"
+
 > [!NOTE]  
-> Operations Manager 2019 does not support  "not equal to" or "not a member of" options in Scope tab.   
+> Operations Manager does not support  "not equal to" or "not a member of" options in *Scope* tab.   
+
+::: moniker-end
 
 #### Groups  
 

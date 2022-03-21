@@ -1,13 +1,13 @@
 ---
 ms.assetid: 9c962b3f-8695-4da7-ab16-e152eef1ab2d
 title: Change databases for gMSA in System Center Operations Manager
-description: This article provides information on how to create users, assign roles, and membership to the group Managed Service Accounts (gMSA), a new feature supported in Operations Manager 2019 UR1 and later.
+description: This article provides information on how to create users, assign roles, and membership to the group Managed Service Accounts (gMSA), a new feature supported in Operations Manager.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
 ms.date: 12/11/2020
 ms.prod: system-center
-monikerRange: 'sc-om-2019'
+monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -16,8 +16,12 @@ ms.topic: article
 
 This article provides information on how to create users, assign roles, and membership to group Managed Service Accounts (gMSAs).
 
+::: moniker range="sc-om-2019"
+
 >[!NOTE]
 >This article applies to Operations Manager 2019 Update Rollup 1 (UR1) and later.
+
+::: moniker-end
 
 These roles are similar to the roles created for non-gMSA accounts.
 
@@ -57,16 +61,16 @@ Follow steps 1 to 5 from the previous procedure. Assign the roles by using the i
 |    **Action account**     |         |
 | Operations Manager DB|db\_datareader, db\_datawriter, db\_ddladmin, dbmodule\_users|
 |   **Data Access Service account**       |         |
-|   Systems Database: msdb for OperationsManager DB |SQLAgentOperatorRole, SQLAgentReaderRole, SQLAgentUserRole, db_owner |
+|   Systems Database: msdb for Operations Manager DB |SQLAgentOperatorRole, SQLAgentReaderRole, SQLAgentUserRole, db_owner |
 |Operations Manager DB |  ConfigService, db\_accessadmin, db\_datareader,  db\_datawriter, db\_ddladmin, db\_securityadmin, sdk\_users, sql\_dependency\_subscriber|
-| OperationsManager DW|apm\_datareader, db\_datareader, OpsMgrReader |
+| Operations Manager DW|apm\_datareader, db\_datareader, OpsMgrReader |
 |  **Data Writer account** |         |
 |   Operations Manager DB| apm\_datareader, apm\_datawriter,  db\_datareader, dwsynch\_users|
-|OperationsManager DW|apm\_datareader, apm_datawriter, db\_owner, OpsMgrWriter|
+|Operations Manager DW|apm\_datareader, apm_datawriter, db\_owner, OpsMgrWriter|
 |   **Data Reader account** |         |
 |     System Databases: master DB|      RSExecRole   |
 | System Databases: msdb for Operations Manager DW| RSExecRole, SQLAgentOperatorRole,  SQLAgentReaderRole, SQLAgentUserRole|
-| OperationsManager DW |apm\_datareader, db\_datareader, OpsMgrReader|
+| Operations Manager DW |apm\_datareader, db\_datareader, OpsMgrReader|
 |  Report Server Database      | db\_owner,  RSExecRole      |
 |  Report Server Temp Database       | db\_owner, RSExecRole      |
 

@@ -5,7 +5,7 @@ description: This article provides an overview of how access to the operational 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 04/29/2019
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -53,6 +53,17 @@ In Operations Manager, operations-such as resolving alerts, running tasks, overr
 |Report Operator|Includes a set of privileges designed for users who need access to Reports. Grants members the ability to view reports according to their configured scope. **Caution:** Users assigned to this role have access to all report data in the Reporting Data Warehouse and are not limited by scope.|  
 |Report Security Administrator|Enables the integration of SQL Server Reporting Services security with Operations Manager user roles. This gives Operations Manager Administrators the ability to control access to reports. This role can have only one member account and cannot be scoped.|  
 
+
+::: moniker range="sc-om-2022"
+
+In addition to the existing Job profiles listed above, Operations Manager 2022 supports the following new Job profiles:
+
+|Profile|Job Functions and Scope|  
+|-----------|---------------------------|   
+|Read-only Administrator|Includes all the read privileges in Operations Manager along with reporting.|
+|Delegated administrator|Includes all the read privileges in Operations Manager except reporting. Grants member the ability to create a custom user role with Delegated administrator as base profile.|
+
+::: moniker-end
 ## Define a scope using Operations Manager groups
 
 The scope of a user role determines which objects that user role can view and perform actions on in System Center – Operations Manager. A scope is comprised of one or more Operations Manager groups and is defined when creating a user role as part of the Create User Role Wizard. The **Group Scope** page of the **Create User Role Wizard** provides a list of all existing Operations Manager groups. You can choose all or some of these groups as the scope of the user role you are creating.
@@ -61,7 +72,7 @@ Groups, like other Operations Manager objects, are defined in management packs. 
 
 ## Assign tasks, dashboards and views
 
-A task is a user-initiated action from the Operations console that is run on an Operations Manager agent or on the system the console is launched from.  Tasks that you grant to a user role you are creating can perform those specific commands or actions for the user role you are creating.  The default setting is that all users assigned that user role can run all tasks and open all dashboard and views as long as their profile and scope allows it. The alternative in the **Create User Role wizard Tasks** page is to list the specific tasks the user rule you are creating can access.  Similarly on the **Create User Role Dashbaords and Views** page is to specify dashboards and views, as well as what specific dashboards that are available for access from the Tasks pane, can be accessed.  
+A task is a user-initiated action from the Operations console that is run on an Operations Manager agent or on the system the console is launched from.  Tasks that you grant to a user role you are creating can perform those specific commands or actions for the user role you are creating.  The default setting is that all users assigned that user role can run all tasks and open all dashboard and views as long as their profile and scope allows it. The alternative in the **Create User Role wizard Tasks** page is to list the specific tasks the user rule you are creating can access.  Similarly on the **Create User Role Dashboards and Views** page is to specify dashboards and views, as well as what specific dashboards that are available for access from the Tasks pane, can be accessed.  
 
 ## How to assign members to built-in user roles
 

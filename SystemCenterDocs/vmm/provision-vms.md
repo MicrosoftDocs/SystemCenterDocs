@@ -141,7 +141,7 @@ Fast file copy improves the performance of file transfers, mostly by leveraging 
 After you've set up a vCenter server and ESX/ESXi hosts, you can provision VMware VMs like any other VM. Note the following:
 
 - You can organize and store VMware VMs in the VMM library.
-- You can organize and store VMware virtual machines, .vmdk (VMDK) files, and VMware templates in the VMM library. V
+- You can organize and store VMware virtual machines, .vmdk (VMDK) files, and VMware templates in the VMM library.
 - You can create VMs from VMware templates stored in the library. You can also import templates stored on vSphere hosts (only template metadata is imported to VMM).VMM doesn't support older VMDK disk types. These disk types are supported:
     - Regular VMDK files (VMFS and moniolithic flat)
     - VMDK files that are used to access physical disks (vmfsPassthroughRawDeviceMap)
@@ -167,13 +167,13 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V (V2
     - VMware tools must be uninstalled from the guest operating system of the VM.
 - [Microsoft Virtual Machine Converter](https://techcommunity.microsoft.com/t5/system-center-blog/microsoft-virtual-machine-converter-3-0-is-now-available-for/ba-p/349874): After June 3, 2017 this tool will no longer be available. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/)
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 ## Static MAC address for VMs deployed on a VMM cloud
 
 In earlier releases, VMM allowed the users to set a static MAC address on the VMs deployed on the hosts, and did not have an option to set static MAC address for the VMs deployed on the cloud.
 
-VMM 2019 allows you to set a set a static MAC address for the VMs deployed on VMM Cloud.
+VMM allows you to set a set a static MAC address for the VMs deployed on VMM Cloud.
 
 Use the following steps:
 

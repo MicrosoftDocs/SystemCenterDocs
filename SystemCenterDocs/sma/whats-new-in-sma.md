@@ -23,6 +23,12 @@ This article provides the new features supported by System Center 2019 - Service
 
 ::: moniker-end
 
+::: moniker range="sc-sma-2022"
+
+There are no new features introduced in Service Management Automation 2022.
+
+::: moniker-end
+
 ::: moniker range="sc-sma-1807"
 
 [!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]

@@ -34,19 +34,19 @@ This section covers new functionality and improvements in Management Pack for Az
 - Updated the token renewal algorithm to get rid of 401 responses
 - Updated Core Library MP and the “Summary” Dashboard
 - Updated display strings
-  
+
 ### Bug Fixes
 
 - Fixed an issue with an unnecessary slash symbol in some requests to Azure REST API
 - Fixed monitoring issues for databases that are replicated by failover groups and elastic pools
 
-## September 2019 - 7.0.5.0 private drop 
+## September 2019 - 7.0.5.0 private drop
 
 ### What's New
 
 - Fixed issue: datediff used for Long Running Transactions monitoring results in overflow in some environments
 
-## April 2018 - 7.0.4.0 RTM 
+## April 2018 - 7.0.4.0 RTM
 
 ### What's New
 
@@ -55,8 +55,8 @@ This section covers new functionality and improvements in Management Pack for Az
 ### Bug Fixes
 
 - Fixed issue: The management pack may stop working due to a conflict of the Azure REST API libraries with the ones coming from the Microsoft Azure Management Pack
-  
-## May 2017 - 6.7.28.0 RTM 
+
+## May 2017 - 6.7.28.0 RTM
 
 ### What's New
 
@@ -69,7 +69,7 @@ This section covers new functionality and improvements in Management Pack for Az
 - Fixed Server Exclude list filter: servername could not contain whitespaces
 - Fixed the display strings, implemented appropriate Azure portal naming style
 
-## March 2017 - 6.7.25.0 CTP2 
+## March 2017 - 6.7.25.0 CTP2
 
 ### What's New
 
@@ -103,7 +103,7 @@ This section covers new functionality and improvements in Management Pack for Az
 
 - Fixed issue: some rules work only if more than 1% of Azure SQL Database space is used  
 
-## June 2016 - 1.6.1.0 
+## June 2016 - 1.6.1.0
 
 ### What's New
 
@@ -120,7 +120,7 @@ This section covers new functionality and improvements in Management Pack for Az
   - Count of Deadlock
   - Count Throttling long transaction
   - Count Connection Failed
-  - XTP Storage (In-memory OLTP Storage, %)  
+  - XTP Storage (In-memory OLTP Storage, %) 
 - Deprecated Collect Azure SQL Database Internal/External Network Egress/Ingress performance rules
 - Deprecated SQL Azure Federation and Federation member workflows
 - Implemented rebranding: the management pack and some workflow names have been changed

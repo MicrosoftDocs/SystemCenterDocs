@@ -148,7 +148,7 @@ The comment field contains user information, specifically who has invoked mainte
 
 ::: moniker-end  
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ### Enable from Target System
 
@@ -219,7 +219,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 > [!NOTE]
 > To confirm that maintenance mode request is successful, look in the Operations Manager system log for event ID 19999. In case event ID 19999 is not available, submit the maintenance mode request again.
@@ -331,7 +331,7 @@ The new schedule will appear in the list of maintenance schedules and you can ed
 
 ::: moniker-end  
 
-::: moniker range="sc-om-2019"
+::: moniker range=">=sc-om-2019"
 
 ## Enable scheduled maintenance mode with SQL Always On
 

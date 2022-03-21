@@ -1,7 +1,7 @@
 ---
 ms.assetid:
 title: include file
-description: This include file details the Linux log file monitoring in Operations Manager 2019
+description: This include file details the Linux log file monitoring in Operations Manager
 author: jyothisuri
 ms.author: jsuri
 manager:  evansma
@@ -24,7 +24,7 @@ log file monitoring requires the following steps, detailed information for these
 
 ## Install the log monitoring management pack
 
-In Operations Manager 2019, install  **Microsoft.Linux.Log.Monitoring**  management pack to enable Linux log file monitoring.
+Install  **Microsoft.Linux.Log.Monitoring**  management pack to enable Linux log file monitoring.
 
 > [!NOTE]
 > If you have the OMS agent configured, and you try to uninstall UNIX and LINUX agent from the console, then OMS component will not be uninstalled from the agent.

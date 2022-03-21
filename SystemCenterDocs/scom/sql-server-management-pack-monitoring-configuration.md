@@ -56,9 +56,9 @@ sp_altermessage 19406, 'with_log', 'true'
 
 ## Availability Database Backup Monitoring
 
-Management Pack for SQL Server provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup. 
+Management Pack for SQL Server provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup.
 
-By default the monitor does not track the 'Availability Group Backup Preferences'. If this overdrive is enabled, the monitor will track the backup location configured in the backup preferences of the availability group and will verify whether the backup on the selected replica is in compliance with the backup frequency setting. 
+By default the monitor does not track the 'Availability Group Backup Preferences'. If this overdrive is enabled, the monitor will track the backup location configured in the backup preferences of the availability group and will verify whether the backup on the selected replica is in compliance with the backup frequency setting.
 
 The backup preferences of the selected availability group can be as follows:
 
@@ -103,7 +103,7 @@ Management Pack for SQL Server is capable of performing space monitoring by coll
 - Database
 - Filegroup
 - File
-- Log file 
+- Log file
 
 You can use unit monitors, as well as performance metrics to view this information for multiple databases and for long time intervals.
 
@@ -117,7 +117,7 @@ Space monitoring supports the following types of media:
 After you import Management Pack for SQL Server, you may find that some of the space monitoring workflows are enabled by default while others are disabled. For the purposes of reducing the load on the environment, space monitoring is enabled only for the database level and disabled for the filegroup, log file, In-Memory OLTP container, and FILESTREAM filegroup levels. If your environment is sensitive to extra load, enabling rarely used workflows is not recommended.
 
 >[!NOTE]
->When monitoring filegroups, an alert is only thrown if all files in the filegroup are unhealthy altogether. If there is at least one file in the filegroup that is healthy, then no alerts will be registered. 
+>When monitoring filegroups, an alert is only thrown if all files in the filegroup are unhealthy altogether. If there is at least one file in the filegroup that is healthy, then no alerts will be registered.
 
 The following is a list that explains the default state of each of the space monitoring workflows:
 
@@ -152,7 +152,7 @@ The following is a list that explains the default state of each of the space mon
 	- Targeted to the Filegroup
 		- DB File Free Space Left
 	- Targeted to the Log file
-		- DB Log File Free Space Left	
+		- DB Log File Free Space Left
 	- Targeted to the In-Memory OLTP Data container
 		- Memory-Optimized Data Filegroup Container Free Space
 
@@ -196,7 +196,7 @@ The following workflows are disabled by default as they are not provided with th
 Database status monitoring is intended to check the database status as reported by Microsoft SQL Server. Status check is done by running a query against the master database of the SQL Server instance that returns the database state. If you receive an alert from this monitor, an action is required in order to bring the database back to an operational state.
 
 All database states except the ONLINE one will result in an unhealthy monitor state. The following table defines the database states.  
-  
+
 |State|Definition|  
 |-----------|----------------|  
 |ONLINE|Database is available for access. The primary filegroup is online, although the undo phase of recovery may not have been completed.|  

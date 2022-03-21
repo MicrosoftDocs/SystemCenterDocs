@@ -5,7 +5,7 @@ description: This article describes how to provision Windows server as Hyper-V h
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 02/03/2022
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

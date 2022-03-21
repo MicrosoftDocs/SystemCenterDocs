@@ -4,7 +4,7 @@ description: This article describes the alerts that you can generate and notify 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 04/29/2019
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -20,7 +20,7 @@ ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8
 
 ::: moniker-end
 
-In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system.  
+In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), text message (SMS) or Microsoft Teams (applicable for 2022). Notifications can also run commands automatically when an alert is raised on a monitored system.  
 
 A notification requires the following elements:  
 
@@ -40,6 +40,8 @@ An Operations Manager administrator must define the notification channels and if
 
 -   [How to enable an email notification channel](manage-notifications-create-email-channel.md)  
 
+-   [How to enable Microsoft Teams notification channel](manage-notifications-create-teams-channel.md)
+
 -   [How to enable an instant message notification channel](manage-notifications-create-im-channel.md)  
 
 -   [How to enable a text message (SMS) notification channel](manage-notifications-create-txt-channel.md)  
@@ -53,3 +55,9 @@ An Operations Manager administrator must define the notification channels and if
 -   [How to customize message content for Notifications](manage-notificiations-customize-message.md)  
 
 -   [How to subscribe to notifications from an alert](manage-notifications-subscribe-from-alert.md)  
+
+## Next steps
+
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md)
+
+* Create a [notification subscription](manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  

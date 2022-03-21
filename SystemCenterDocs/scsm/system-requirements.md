@@ -13,6 +13,12 @@ ms.technology: service-manager
 
 # System requirements for System Center Service Manager
 
+::: moniker range="sc-sm-2022"
+
+There are no changes to system requirements from Service Manager 2019.   
+
+::: moniker-end
+
 ::: moniker range="sc-sm-2019"
 
 This article details the system requirements for System Center 2019 - Service Manager (SM).

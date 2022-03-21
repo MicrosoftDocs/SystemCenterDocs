@@ -59,6 +59,13 @@ You set up Operations Manager with VMM as follows:
 
 ::: moniker-end
 
+::: moniker range="sc-vmm-2022"
+
+>[!NOTE]
+> Make sure you're using a supported version of Operations Manager (running on Systems Center 2022).
+
+::: moniker-end
+
 - Operations Manager must use SQL Server 2012 SP2, SQL Server 2014, or SQL Server 2016 with reporting services enabled. To use the forecasting reports, SQL Server Analysis Services must be installed on the Operations Manager reporting server. The SSAS instance name should match the SQL Server Reporting Services (MSSQLSERVER).
 - The version of the Operations Manager operations console that is installed on the VMM management server must match the version of Operations Manager with which you intend to integrate. The Operations Manager agent version agent should be supported by the Operations Manager version.
 - Ensure that the version of Windows PowerShell that's on all Operations Manager management servers is the most recent version supported by that version of Operations Manager. To determine which version of Windows PowerShell is on a server, run **Get-Host | Select-Object Version**

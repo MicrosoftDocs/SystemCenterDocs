@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/30/2021
+ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-2016'
@@ -21,7 +21,14 @@ ms.topic: article
 
 ::: moniker-end
 
-In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Alert widget.
+
+In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Alert widget.
+
+::: moniker range="sc-om-2022"
+
+Operations Manager 2022 supports **Alert source** in the **Add** widget.
+
+::: moniker-end
 
 ## Add widget to dashboard
 
@@ -33,7 +40,7 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 
 3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
 
-    ![Specify name and description for new dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
+![Specify name and description for new dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
 
 4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** drop-down list or you can save the dashboard by creating a new management pack by clicking **New** next to the **Management Pack** drop-down list and provide a name, description and optionally a version number.
 
@@ -59,7 +66,8 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
     * Severity
     * Priority
     * Resolution state
-    * Alert age  
+    * Alert age
+    * Alert source (applicable for Operations Manager 2022)
 
     Data matching the defined criteria will only be displayed in the widget.
 
@@ -72,7 +80,9 @@ After the widget has been created, it displays alerts based on the scope and cri
 
 ![Completed example of Alert widget in dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-07.png)
 
-You can view alert details consistent with the experience with the alerts view in the Operations console by clicking on an alert and drilling into it's details.  In version 1807 you can modify the alert resolution state and drill down to the monitoring object details page by clicking on the alert source.
+You can view alert details consistent with the experience with the alerts view in the Operations console by clicking on an alert and drilling into it's details.  
+
+You can modify the alert resolution state and drill down to the monitoring object details page by clicking the alert source.
 
 ![Viewing alert details](./media/create-web-dashboard-alerts/view-alert-details-01.png)
 
@@ -91,19 +101,28 @@ To perform these actions, hover your mouse over the widget and click on the elli
 
 ## Additional view options in Alert widget
 
+::: moniker range="sc-om-2022"
+
+Alert widget now supports *sort by* option.
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
+
 > [!NOTE]
 > This feature is applicable for 2019 UR3 and later.
 
-Alert widget now supports sort by option.
+Alert widget now supports *sort by* option.
 
 In earlier releases, this feature is not available for Alert widget, and on all H5 dashboard personalization but is available on all views of operations console of Operations Manager 2019.
 
-With Operations Manager 2019 UR3 and later, you can sort the results columns in the Alert widget and also group the columns.
+With Operations Manager 2019 UR3 and later, you can sort the results columns in the **Alert** widget and also group the columns.
 
+::: moniker-end
 
 ### Support for sort by option
 
-In Operations Manager 2019 UR3 web console, the **Sort by** option is now available in **Add widget** wizard.
+The **Sort by** option is now available in **Add widget** wizard.
 
 To include this feature, while creating a new widget using the **Add widget** wizard in the web console, click **Display** and then select the column option available under **Sort by** drop-down menu. Save the settings for the new widget once done.
 

@@ -13,7 +13,9 @@ ms.technology: operations-manager
 
 # Scope and Supported Configuration in Management Pack for SQL Server Reporting Services
 
-Management Pack for SQL Server Reporting Services is version-agnostic and supports discovery and monitoring of SQL Server Reporting Services 2012 through 2019 and higher as well as Power BI Report Server.
+Management Pack for SQL Server Reporting Services is version-agnostic and supports discovery and monitoring of SQL Server Reporting Services 2012 through 2022 and higher as well as Power BI Report Server.
+
+moniker range="sc-om-2019"
 
 ## Operating Systems and Platforms
 
@@ -22,6 +24,19 @@ Management Pack for SQL Server Reporting Services supports the following operati
 - Windows Server 2012
 - Windows Server 2016
 - Windows Server 2019
+
+moniker-end
+
+moniker range="sc-om-2022"
+
+## Supported Operating Systems and Platforms
+
+Management Pack for SQL Server Reporting Services supports the following operating systems and platforms:
+
+- Windows Server 2019
+- Windows Server 2022
+
+moniker-end
 
 ## SQL Server Reporting Services Features
 
@@ -44,6 +59,7 @@ Management Pack for SQL Server Analysis Services supports the following versions
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807
 - System Center Operations Manager 2019
+- System Center Operations Manager 2022
+
 
 A dedicated Operations Manager management group is not required for this management pack.
-

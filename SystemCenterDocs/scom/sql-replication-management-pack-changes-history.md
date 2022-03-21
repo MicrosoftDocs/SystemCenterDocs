@@ -19,7 +19,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Updated MP to support SQL Server 2012 through 2019
+- Updated management pack to support SQL Server 2012 through 2022
 - Updated "Replication Agents failed on the Distributor" unit monitor to extend it for Log Reader and Queue Reader agents detection
 - Added new property 'DiskFreeSpace' for "Publication Snapshot Available Space" unit monitor
 - Removed "One or more of the Replication Agents are retrying on the Distributor" monitor as non-useful

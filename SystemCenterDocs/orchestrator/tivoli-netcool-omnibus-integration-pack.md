@@ -29,8 +29,14 @@ Microsoft is committed to protecting your privacy, while delivering software tha
 
 ## Downloading the Integration Pack
 
+::: moniker range="<=sc-orch-2019"
 - To download this integration pack for Orchestrator 2016, see [IBM Tivoli Netcool Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54103).
 - To download this integration pack for Orchestrator 2019, see [IBM Tivoli Netcool Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58110&WT.mc_id=rss_alldownloads_all).
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+- To download this integration pack for Orchestrator 2022, see IBM Tivoli Netcool Integration Pack for System Center 2022 - Orchestrator.
+::: moniker-end
 
 ## Registering and Deploying the Integration Pack
 

@@ -5,13 +5,22 @@ description: This article details the known issues and issues fixed in Orchestra
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 08/04/2020
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
 ---
 
 # Release notes for System Center Orchestrator
+
+::: moniker range="sc-orch-2022"
+
+This article provides the release notes for System Center 2022 - Orchestrator.
+
+[!INCLUDE [release-notes-orch-2022.md](../includes/release-notes-orch-2022.md)]
+
+::: moniker-end
+
 
 ::: moniker range="sc-orch-2019"
 

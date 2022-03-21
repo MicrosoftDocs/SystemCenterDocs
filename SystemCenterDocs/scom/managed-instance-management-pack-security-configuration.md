@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Security Configuration
 
-Monitoring accounts, SQL accounts, and AAD principals used by this management pack for monitoring should have enough permissions to access each managed instance specified in your monitoring templates. 
+Monitoring accounts, SQL accounts, and AAD principals used by this management pack for monitoring should have enough permissions to access each managed instance specified in your monitoring templates.
 
 Every managed instance should have a login for the monitoring account. This login should be granted either of the following permissions:
 

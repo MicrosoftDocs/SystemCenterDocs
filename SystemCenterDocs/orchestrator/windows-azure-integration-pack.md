@@ -31,16 +31,32 @@ Microsoft is committed to protecting your privacy, while delivering software tha
 
 Before you install the Integration Pack for Windows Azure, the following listed software must be installed and configured. For more information about installing and configuring Orchestrator and Windows Azure, refer to the respective product documentation.
 
+::: moniker range="<=sc-orch-2019"
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
 -   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   Windows Azure
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+-   System Center 2022 integration packs require System Center 2022 - Orchestrator
+-   Windows Azure
+::: moniker-end
 
 ## Download the Integration Pack
 
-- To download the Windows Azure integration pack, for Orchestrator 2016,  see the [Microsoft Download Center space for 2016](https://www.microsoft.com/download/details.aspx?id=54098).
+::: moniker range="<=sc-orch-2019"
 
-- To download the Windows Azure integration pack, for Orchestrator 2019,  see the [Microsoft Download Center space for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all).
+- To download the Windows Azure integration pack, for Orchestrator 2016, see the [Microsoft Download Center space for 2016](https://www.microsoft.com/download/details.aspx?id=54098).
 
+- To download the Windows Azure integration pack, for Orchestrator 2019, see the [Microsoft Download Center space for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all).
+
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+- To download the Windows Azure integration pack, for Orchestrator 2022, see the [Microsoft Download Center space for 2022.
+
+::: moniker-end
 
 ## Register and Deploy the Integration Pack
 

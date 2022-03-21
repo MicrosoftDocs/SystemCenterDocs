@@ -122,7 +122,7 @@ When you install VMM with this user account SPN will be registered.
 
 ## Account and domain requirements
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 When you install VMM, you need to configure the VMM service to use either the Local System account or a domain account or a Group Managed Service Account (gMSA).
 ::: moniker-end
 
@@ -132,7 +132,7 @@ When you install VMM, you need to configure the VMM service to use either the Lo
 
 Ensure the following before you prepare an account:
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 - VMM service account should have *log on as a service* permissions on the VMM server.
 ::: moniker-end
 - You cannot change the identity of the Virtual Machine Manager service account after installation. This includes changing from the local system account to a domain account, from a domain account to the local system account, or changing the domain account to another domain account. To change the Virtual Machine Manager service account after installation, you must uninstall VMM (selecting the Retain data option if you want to keep the SQL Server database), and then reinstall VMM by using the new service account.
@@ -143,7 +143,7 @@ Ensure the following before you prepare an account:
 - If you are installing a highly available VMM management server, you must use a domain account.
 - The computer on which you install the VMM management server must be a member of an Active Directory domain. In your environment you might have user accounts in one forest and your VMM servers and host in another. In this environment, you must establish a two-way trust between the two cross-forest domains. One-way trusts between cross-forest domains are not supported in VMM.
 
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 
 - To create and use gMSA, review the article on gMSA and create the gMSA as per the guidance available.  Make sure that the servers on which the VMM Management service would be installed have permissions to retrieve the password of gMSA account.  
 
