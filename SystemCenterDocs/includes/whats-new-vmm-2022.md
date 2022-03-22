@@ -37,9 +37,11 @@ Most of the operations to manage Azure Stack clusters in VMM are similar to mana
 >[!NOTE]
 > Management of Azure Stack HCI stretched clusters is currently not supported in VMM.
 
+See [Deploy and manage Azure Stack HCI clusters in VMM](/system-center/vmm/deploy-manage-azure-stack-hci?view=sc-vmm-2022).
+
 ### Register and unregister Azure Stack HCI cluster using PowerShell cmdlets
 
-VMM 2022 supports **register** and **unregister** PowerShell cmdlets for Azure Stack HCI cluster. Learn more.
+VMM 2022 supports **register** and **unregister** PowerShell cmdlets for Azure Stack HCI cluster. See [Register-SCAzStackHCI](/powershell/module/virtualmachinemanager/register-scazstackhci?view=systemcenter-ps-2022) and [Unregister-SCAzStackHCI](/powershell/module/virtualmachinemanager/unregister-scazstackhci?view=systemcenter-ps-2022).
 
 ### Support for dual stack SDN deployment
 
@@ -49,4 +51,4 @@ In VMM 2019 UR2, we introduced support for Ipv6 based SDN deployment. VMM 2022 s
 
 To enable Ipv6 for SDN deployment, do the required changes in the network controller, gateway, and SLB set up.   
 
-For more information about these updates, see Network controller, Gateway, SLB, and Route traffic.
+For more information about these updates, see [Network controller](/system-center/vmm/sdn-controller?view=sc-vmm-2022), [Gateway](/system-center/vmm/sdn-gateway?view=sc-vmm-2022), [SLB](/system-center/vmm/sdn-slb?view=sc-vmm-2022), and [Set up NAT](/system-center/vmm/sdn-set-up-nat?view=sc-vmm-2022).
