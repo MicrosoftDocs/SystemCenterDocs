@@ -108,10 +108,10 @@ Below the panel, you see the runbook diagram. You can click each runbook activit
 
 Since an activity may be executed more than once within an instance (because of looping), each execution of the Activity has a unique **Sequence number**. The overlay lets you choose the **Sequence #** using the dropdown on the top.
 
+:::image type="instance-detail" source="media/console-overview-2022/instance-detail.png" alt-text="Screenshot showing instance-detail.":::
+
 >[!NOTE]
 >To ensure fast load time, only the first 10 activity outputs are loaded for the activity. The **Load more** button shows how many times this activity was executed, and you can click it to load more outputs.
-
-:::image type="instance-detail" source="media/console-overview-2022/instance-detail.png" alt-text="Screenshot showing instance-detail.":::
 
 The **Instance** and **Activity status** follow the same format as **Job Status**.
 
@@ -149,6 +149,10 @@ The **Stop** button is shown on the Dashboard and the Job screen. disappearing p
 2. If there are no CORS errors, look at the **Event Viewer** logs (Application) on the Web API computer.
 
 To fix CORS errors, you must ensure that the API’s *web.config* file must have a suitable CORS configuration. The browser error shows the origin value it is expecting in the *web.config*. [See this document](/iis/extensions/cors-module/cors-module-configuration-reference) for details about how to configure CORS in *web.config*.
+
+### How do I update the Web API URL?
+
+The Console loads *{install_dir}\assets\configuration.json* to find the API URL. You can edit it using a plain text editor. Make sure that there is no trailing / at the end of the URL!
 
 ## Next steps
 
