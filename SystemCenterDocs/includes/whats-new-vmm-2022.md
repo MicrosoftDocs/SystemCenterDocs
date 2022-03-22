@@ -41,7 +41,7 @@ See [Deploy and manage Azure Stack HCI clusters in VMM](/system-center/vmm/deplo
 
 ### Register and unregister Azure Stack HCI cluster using PowerShell cmdlets
 
-VMM 2022 supports **register** and **unregister** PowerShell cmdlets for Azure Stack HCI cluster. See [Register-SCAzStackHCI](/powershell/module/virtualmachinemanager/register-scazstackhci) and [Unregister-SCAzStackHCI](/powershell/module/virtualmachinemanager/unregister-scazstackhci).
+VMM 2022 supports **register** and **unregister** PowerShell cmdlets for Azure Stack HCI cluster. See [Register-SCAzStackHCI](./powershell/module/virtualmachinemanager/register-scazstackhci) and [Unregister-SCAzStackHCI](./powershell/module/virtualmachinemanager/unregister-scazstackhci).
 
 ### Support for dual stack SDN deployment
 
