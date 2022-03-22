@@ -1,7 +1,7 @@
 ---
 title: Overview of Orchestration console 2022
 description: The Orchestration console is a Single Page App that helps you monitor and execute your Orchestrator deployment.
-ms.date: 03/21/2022
+ms.date: 03/22/2022
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
@@ -14,6 +14,8 @@ MonikerRange: 'sc-orch-2022'
 # Overview of Orchestrator console 2022
 
 The Orchestrator console is a Single Page App that helps you monitor and execute your Orchestrator deployment. This article details the supported features in the Orchestrator 2022 console.
+
+:::image type="dashboard" source="media/console-overview-2022/dashboard.png" alt-text="Screenshot showing dashboard.":::
 
 ## Navigation pane
 
@@ -31,6 +33,8 @@ To the right of the navigation pane, you can see the chosen screen. The Dashboar
 
 The Dashboard shows **Active jobs** on the top followed by a table of all **Completed jobs (history)**. The **Completed jobs (history)** pane is collapsed by default, allowing focus on the active jobs.
 
+:::image type="dashboard history" source="media/console-overview-2022/dashboard-history.png" alt-text="Screenshot showing dashboard history.":::
+
 Each row in both the panels corresponds to a unique job. A job may have one or more runbook instances. Each row shows:
 - **Job ID**: Link to the Runbook
 - **Timestamps**: The number of successful and failed instances is shown in one of the columns for all rows.
@@ -42,11 +46,17 @@ You can click and expand each of the job rows and view the instances of the job.
 
 When you select a runbook on the navigation tree or click a runbook link, the app navigates to the Runbook screen. The top panel lists out runbook metadata (editing status, timestamps, etc.,). The **Run** button available on the screen allows you to queue the runbook for execution on the desired subset of runbook servers. The **Run** button is disabled for runbooks that are not in **Published** state.
 
+:::image type="runbook view" source="media/console-overview-2022/runbook-view.png" alt-text="Screenshot showing runbook view.":::
+
 Below this panel is a tabbed view:
 
 - View, for the Runbook graphical image.
 - Jobs, for listing the active and completed jobs of the runbook (see below).
 - Instances, for listing active and completed instances of the runbook across all its Jobs (see below).
+
+:::image type="runbook jobs" source="media/console-overview-2022/runbook-jobs-2.png" alt-text="Screenshot showing runbook jobs.":::
+
+:::image type="runbook instances" source="media/console-overview-2022/runbook-instances.png" alt-text="Screenshot showing runbook instances.":::
 
 You can click the rows in the Jobs view just like the ones on the Dashboard screen. Jobs that are running can be stopped using the buttons on the right of the running row.
 
@@ -80,6 +90,8 @@ The status of the job is shown visually with the icons:
 
 When you select an Instance (using the (i) button), the app navigates to this screen. The top panel shows the Instance’s metadata (Job ID, timestamps, parameters, server which executes this instance).
 
+:::image type="instance" source="media/console-overview-2022/instance.png" alt-text="Screenshot showing instance.":::
+
 The top panel also has three navigation buttons:
 
 - **Previous**: View Instance that ran before this one.
@@ -99,6 +111,8 @@ Since an activity may be executed more than once within an instance (because of 
 >[!NOTE]
 >To ensure fast load time, only the first 10 activity outputs are loaded for the activity. The **Load more** button shows how many times this activity was executed, and you can click it to load more outputs.
 
+:::image type="instance-detail" source="media/console-overview-2022/instance-detail.png" alt-text="Screenshot showing instance-detail.":::
+
 The **Instance** and **Activity status** follow the same format as **Job Status**.
 
 ## Execute runbooks
@@ -106,6 +120,8 @@ The **Instance** and **Activity status** follow the same format as **Job Status*
 Navigate to the Runbook screen of the desired Runbook and click **Run** . An overlay form opens to the right where you are asked to:
 - Set values to all input parameters (required)
 - Choose the set of Runbook servers on which this Job can be scheduled.
+
+:::image type="parameterized run" source="media/console-overview-2022/parameterized-run.png" alt-text="Screenshot showing parameterized run.":::
 
 Only one of these servers will actually execute this Job. To execute a Runbook on many servers you will have to run those many number of Jobs and explicitly set the servers one-by-one.
 
@@ -128,7 +144,7 @@ The **Stop** button is shown on the Dashboard and the Job screen. disappearing p
 
 1. Check the [browser’s developer console](/microsoft-edge/devtools-guide-chromium/overview) (Console tab), look for CORS errors (*blocked by CORS policy*)
 
-   :::image type="console tab" source="media/console-overview-2022/console-tab.png" alt-text="Screenshot showing console tab.":::
+   :::image type="error console" source="media/console-overview-2022/error-console.png" alt-text="Screenshot showing error console.":::
 
 2. If there are no CORS errors, look at the **Event Viewer** logs (Application) on the Web API computer.
 
