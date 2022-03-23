@@ -1,6 +1,6 @@
 ---
 title: Install System Center Orchestrator 2022
-description: Provides instructions for installing System Center - Orchestrator
+description: Provides instructions for installing System Center 2022 - Orchestrator
 author: jyothisuri
 manager: evansma
 ms.date: 03/23/2022
@@ -30,7 +30,7 @@ For a detailed description of the Orchestrator architecture, see [Learn about Or
 This topic provides detailed installation instructions for the various Orchestrator roles.
 
 >[!NOTE]
->Install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) package before running the Setup executable (SetupOrchestrator.exe).
+>Install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package before running the Setup executable (SetupOrchestrator.exe).
 
 ## Install an Orchestrator management server
 
@@ -311,7 +311,7 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/ServiceUserName:[UserName]|Specifies the user account for the Orchestrator Management Service. This value is required if you are installing Management Server, Runbook Server, or web services.|
 |/ServicePassword:[Password]|Specifies the password for the user account for the Orchestrator Management Service. This value is required if you are installing Management Server, Runbook Server, or web services.|
 |/Components:[Feature 1, Feature 2,"]|Specifies the features to install (comma separated). Possible values are ManagementServer, RunbookServer, RunbookDesigner, WebAPI, WebConsole and All.|
-|/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files \Microsoft System Center <version>\Orchestrator is used.|
+|/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files \Microsoft System Center \<version\>\Orchestrator is used.|
 |/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you are installing Management Server, Runbook Server, or web services.|
 |/DbUser:[UserName]|Specifies the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, no value should be specified.|
 |/DbPassword:[Password]|Specifies the password for the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, then no value should be specified.|
@@ -348,7 +348,7 @@ The following information provides additional instructions and caveats that you 
 ### Orchestrator log files  
 If you experience problems during installation, installation log files are located in the folder **C:\\Users\\%USERNAME%\\AppData\\Local\\SCO\\LOGS**.  
 
-If you experience problems when you are running Orchestrator, the product log files are located in the folder **C:\\ProgramData\\Microsoft System Center <version>\\Orchestrator\\**.  
+If you experience problems when you are running Orchestrator, the product log files are located in the folder **C:\\ProgramData\\Microsoft System Center \<version\>\\Orchestrator\\**.  
 
 ### Windows Firewall  
 When you deploy additional Runbook Designer applications to your environment, you might see a failed installation message. To correctly install the Runbook Designer, enable the following firewall rules as they apply to your operating system and deployment configuration.  
@@ -373,7 +373,7 @@ Enable the following firewall rules on your computer:
 
 |Operating system|Firewall rule|  
 |--------------------|-----------------|  
-|64\-bit|%ProgramFiles%\\Microsoft System Center <version>\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|   
+|64\-bit|%ProgramFiles%\\Microsoft System Center \<version\>\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|   
 
 #### Firewall rules between remote computers  
 
@@ -385,8 +385,8 @@ Enable the following firewall rules on your computer:
 
 |Operating system|Firewall rule|  
 |--------------------|-----------------|  
-|64\-bit|%ProgramFiles%\\Microsoft System Center <version>\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
-|32\-bit|%ProgramFiles\\Microsoft System Center <version>\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
+|64\-bit|%ProgramFiles%\\Microsoft System Center \<version\>\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
+|32\-bit|%ProgramFiles\\Microsoft System Center \<version\>\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
 
 For more information about adding firewall rules, see [Add or Edit a Firewall Rule](/previous-versions/orphan-topics/ws.11/cc753558(v=ws.11)).  
 

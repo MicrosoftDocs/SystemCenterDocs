@@ -41,7 +41,7 @@ The following versions of Windows client operating system are supported for the 
 
 ## Running the Setup
 
-Install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) before running the Setup executable (SetupOrchestrator.exe).
+Install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) before running the Setup executable (SetupOrchestrator.exe).
 
 ## Software
 
@@ -56,7 +56,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 - Microsoft .NET Framework 4.5 or later (v4.7.2).
 
-- Ensure that [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver15) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.
+- Ensure that [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver15&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.
 
 - Join the computer to an Active Directory domain.
 
@@ -77,7 +77,7 @@ The following software is required for a full installation of Orchestrator on a 
 ## .NET requirements
 
 Orchestrator requires .NET Framework 4.5 or later to run, we recommend installing .NET Framework 4.7.2.
-The Orchestrator Web API requires [.NET Core 5 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0).
+The Orchestrator Web API requires [.NET Core 5 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true).
 
 ## Virtualization
 
