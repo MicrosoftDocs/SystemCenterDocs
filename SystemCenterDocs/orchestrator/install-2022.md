@@ -17,7 +17,7 @@ MonikerRange: 'sc-orch-2022'
 A complete Orchestrator installation includes
 
 - a management server, 
-- One or more runbook servers,
+- one or more runbook servers,
 - a SQL Server for hosting the Orchestrator database,
 - a web server for hosting the Orchestrator web API service, 
 - a server for hosting the Runbook Designer and Runbook Tester,
@@ -32,9 +32,9 @@ This topic provides detailed installation instructions for the various Orchestra
 >[!NOTE]
 >Install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package before running the Setup executable (SetupOrchestrator.exe).
 
-## Install an Orchestrator management server
+## Install Orchestrator management server
 
-1.  On the server where you want to install Orchestrator, start the Orchestra Setup Wizard.
+1.  On the server where you want to install Orchestrator, install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package and start the Orchestrator Setup Wizard.
 
     To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
@@ -91,9 +91,9 @@ This topic provides detailed installation instructions for the various Orchestra
 
 12. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and then click **Close** to complete the installation.
 
-## Install an Orchestrator runbook server
+## Install Orchestrator runbook server
 
-1. On the server where you want to install an Orchestrator runbook server, start the Orchestrator Setup Wizard.
+1. On the server where you want to install Orchestrator runbook server, install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package and start the Orchestrator Setup Wizard.
 
    To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
@@ -142,11 +142,11 @@ This topic provides detailed installation instructions for the various Orchestra
 
 13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 
-## Install the Orchestrator Web API service
+## Install Orchestrator Web API service
 
 Since Orchestrator 2022, the Web API service and Orchestration Console can be installed separately, on different machines.
 
-1. On the server where you want to install the Orchestrator web service, start the Orchestrator Setup Wizard.
+1. On the server where you want to install the Orchestrator web API, install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package and start the Orchestrator Setup Wizard.
 
    To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
@@ -195,11 +195,11 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
     The **Installing features** page appears and displays the installation progress.
 
-## Install Orchestration Console on a single computer
+## Install Orchestration Console
 
 Since Orchestrator 2022, the Web API service and Orchestration Console can be installed separately, on different machines.
 
-1.	On the server where you want to install the Orchestrator web service, start the Orchestrator Setup Wizard. To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
+1.	On the server where you want to install the Orchestration Console, install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package and start the Orchestrator Setup Wizard. To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
 2.	On the main **Setup** page, under **Standalone installations**, click **Orchestration Console**.
 
@@ -235,9 +235,9 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 The **Installing features** page appears and displays the installation progress.
 
-## Install the Orchestrator Runbook Designer on a single computer
+## Install Orchestrator Runbook Designer
 
-1.  On the server where you want to install the Orchestrator Runbook Designer, start the Orchestrator Setup Wizard.
+1.  On the server where you want to install the Orchestrator Runbook Designer, install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package and start the Orchestrator Setup Wizard.
 
     To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
@@ -386,7 +386,6 @@ Enable the following firewall rules on your computer:
 |Operating system|Firewall rule|  
 |--------------------|-----------------|  
 |64\-bit|%ProgramFiles%\\Microsoft System Center \<version\>\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
-|32\-bit|%ProgramFiles\\Microsoft System Center \<version\>\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
 
 For more information about adding firewall rules, see [Add or Edit a Firewall Rule](/previous-versions/orphan-topics/ws.11/cc753558(v=ws.11)).  
 
