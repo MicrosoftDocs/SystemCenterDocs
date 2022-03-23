@@ -4,7 +4,7 @@ title: include file
 description: include file to provide system requirements for Orchestrator 2022, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
+ms.date: 03/23/2022
 ms.custom: na
 author: jyothisuri
 ms.prod: system center
@@ -14,7 +14,7 @@ ms.topic: include
 
 ## System requirements for System Center 2022 - Orchestrator
 
-The following sections provide general performance and scalability guidance for System Center 2022- Orchestrator, and recommend the hardware configurations for a variety of workloads. As System Center 2022 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections provide general performance and scalability guidance for System Center 2022- Orchestrator, and state the recommended hardware configurations for a variety of workloads. As System Center 2022 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 
@@ -39,6 +39,10 @@ The following versions of Windows client operating system are supported for the 
 |:--- |:---|:--- |
 |Runbook Designer|supported|Supported|
 
+## Running the Setup
+
+Install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) before running the Setup executable (SetupOrchestrator.exe).
+
 ## Software
 
 The following software is required for a full installation of Orchestrator on a single computer:
@@ -50,13 +54,11 @@ The following software is required for a full installation of Orchestrator on a 
 
 - Microsoft Internet Information Services (IIS) – Orchestrator Setup enables IIS if it is not enabled.
 
-- Microsoft .NET Framework 4.5 or later.
+- Microsoft .NET Framework 4.5 or later (v4.7.2).
 
-- Ensure that Microsoft OLE DB Driver for SQL Server is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.Management Server, Runbook Service, Runbook Designer or the Web API Service. 
+- Ensure that [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver15) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.
 
-  We recommend the following software for a full installation of Orchestrator on a single computer:
-
-* Join the computer to an Active Directory domain.
+- Join the computer to an Active Directory domain.
 
 ## SQL Server
 
@@ -74,20 +76,8 @@ The following software is required for a full installation of Orchestrator on a 
 
 ## .NET requirements
 
-Orchestrator requires .NET Framework 4.5 or later to run, we recommend installing .NET Framework 4.7.2 or later.
-The Orchestrator Web API requires .NET Core 5 Hosting Bundle.
-
-### To turn on WCF activation
-
-1. On the Windows Start screen, click the **Server Manager** tile.
-2.	On the **Manage** menu in the Server Manager console, click **Add Roles and Features**.
-3.	Go through the wizard until you reach the **Features** page.
-4.	Expand **.NET Framework 4.5 Features**.
-5.	Select **.NET Framework 4.5**, if it isn’t already selected.
-6.	Expand **WCF Services**.
-7.	Select **HTTP Activation**, if it isn’t already selected.
-8.	Click **Next** and follow the prompts to finish the installation. If you have problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](/previous-versions/system-center/system-center-2012-R2/hh546549(v=sc.12)).
-
+Orchestrator requires .NET Framework 4.5 or later to run, we recommend installing .NET Framework 4.7.2.
+The Orchestrator Web API requires [.NET Core 5 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0).
 
 ## Virtualization
 
