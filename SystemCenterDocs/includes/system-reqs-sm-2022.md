@@ -17,7 +17,7 @@ ms.assetid:
 
 ## System requirements for System Center 2022 - Service Manager
 
-The following sections describe the general performance and scalability guidance for SM 2022, and recommend the  hardware configurations for a variety of workloads. Because System Center 2022 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
+The following sections describe the general performance and scalability guidance for SM 2022, and recommend the  hardware configurations for various workloads. Because System Center 2022 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
 
 ## Capacity limits for Service Manager
 
@@ -70,7 +70,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 
 - **SMTP server**- You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use the Notification feature and for incident creation through email.  
 
-- **Windows safe mode**- Service Manager doesn't operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
+- **Windows safe mode**- Service Manager doesn't operate and the services used by Service Manager don't start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
 
 ## SQL Server requirements
 
@@ -101,7 +101,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 
 ### Allow updates
 
- To either install or upgrade to System Center 2022 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates are not allowed, System Center 2022 - Service Manager Setup will not complete and the following error message will appear at the **Create database** stage of the installation:
+ To either install or upgrade to System Center 2022 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center 2022 - Service Manager Setup won't complete and the following error message will appear at the **Create database** stage of the installation:
 
  *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry the upgrade for this role.*
 
@@ -134,7 +134,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 **Use the following steps to upgrade from SQL 2016 to 2017**:
 
 1. Upgrade to SQL 2017.
-2. Install SQL 2017 reporting services (SSRS), and launch the reporting services configuration manager to use the existing reporting DB, restore encryption keys.  Configure the Web service URL and Web portal URL   .
+2. Install SQL 2017 reporting services (SSRS), and launch the reporting services configuration manager to use the existing reporting DB, restore encryption keys.  Configure the Web service URL and Web portal URL.
 3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2017.      
 4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
 5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2017.
@@ -151,7 +151,7 @@ The following steps provide information about upgrading to SQL 2019.
  **Use the following steps to upgrade from SQL 2017 to 2019**:
 
 1. Upgrade to SQL 2019.
-2. Install SQL 2019 reporting services (SSRS), and launch the reporting services configuration manager to use the existing reporting DB, restore encryption keys.  Configure the Web service URL and Web portal URL   .
+2. Install SQL 2019 reporting services (SSRS), and launch the reporting services configuration manager to use the existing reporting DB, restore encryption keys.  Configure the Web service URL and Web portal URL.
 3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2019.      
 4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
 5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2019.
