@@ -61,11 +61,13 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 18. On the **Installation summary** page, review your selections and then click **Install**. The **Installing features** page appears and displays the installation progress.
 19. On the **Setup completed successfully** page, click **Close** to finish the installation. To open the VMM console, you can ensure that **Open the VMM console when this wizard closes** is checked, or you can click the **Virtual Machine Manager Console** icon on the desktop.
 
+::: moniker range="sc-vmm-2022"
 >[!NOTE]
 >If VMM 2022 and SQL 2019 are installed on the same machine, the following error appears:
 >Reboot the machine for successful installation.
 
- :::image type="error" source="media/install/error.png" alt-text="Screenshot showing error.":::
+ :::image type="error" source="media/install/error.png" alt-text="Screenshot showing error.":::t
+::: moniker-end
 
 During Setup, VMM enables the following firewall rules. These rules remain in effect even if you later uninstall VMM.
 
