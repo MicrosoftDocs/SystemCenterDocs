@@ -15,7 +15,7 @@ ms.technology: service-manager
 
 ::: moniker range="sc-sm-2022"
 
-There are no changes to system requirements from Service Manager 2019.   
+ Unlike the earlier release, you do not need to manually install **Report Viewer tools** /**Microsoft CLR Types for SQL Server 2014** as a prerequisite.
 
 ::: moniker-end
 
