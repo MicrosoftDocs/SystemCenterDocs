@@ -15,7 +15,12 @@ ms.technology: service-manager
 
 ::: moniker range="sc-sm-2022"
 
- Unlike the earlier release, you do not need to manually install **Report Viewer tools** /**Microsoft CLR Types for SQL Server 2014** as a prerequisite.
+This article details the system requirements for System Center 2022 - Service Manager (SM).
+
+>[!NOTE]
+> Unlike the earlier releases, for SM 2022, you do not need to manually install **Report Viewer tools** /**Microsoft CLR Types for SQL Server 2014** as a prerequisite.
+
+ [!INCLUDE [system-reqs-sm-2022](../includes/system-reqs-sm-2022.md)]
 
 ::: moniker-end
 
