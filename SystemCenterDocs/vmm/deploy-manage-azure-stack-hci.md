@@ -63,7 +63,7 @@ Use the following command to unregister a cluster:
 
 *Unregister-SCAzStackHCI -VMHostCluster \<HostCluster\> -SubscriptionID \<string\>*
 
-For detailed information about the supported parameter, see PowerShell documentation.
+For detailed information about the supported parameter, see [Register-SCAzStackHCI](/powershell/module/virtualmachinemanager/register-scazstackhci?preserve-view=true&view=systemcenter-ps-2022) and [Unregister-SCAzStackHCI](/powershell/module/virtualmachinemanager/unregister-scazstackhci?preserve-view=true&view=systemcenter-ps-2022).
 
 ::: moniker-end
 
