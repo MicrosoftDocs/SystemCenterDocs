@@ -62,8 +62,8 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 19. On the **Setup completed successfully** page, click **Close** to finish the installation. To open the VMM console, you can ensure that **Open the VMM console when this wizard closes** is checked, or you can click the **Virtual Machine Manager Console** icon on the desktop.
 
 >[!NOTE]
-> - If VMM 2022 and SQL 2019 are installed on the same machine, the following error appears:
-> - Reboot the machine for successful installation.
+>If VMM 2022 and SQL 2019 are installed on the same machine, the following error appears:
+>Reboot the machine for successful installation.
 
  :::image type="error" source="media/install/error.png" alt-text="Screenshot showing error.":::
 
