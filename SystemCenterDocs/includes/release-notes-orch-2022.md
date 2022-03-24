@@ -47,7 +47,7 @@ The following are the known issues and workarounds in System Center 2022 - Orche
 
 ```cmd
 
-taskkill /f /pi {pid of the service}
+taskkill /f /pid {pid of the service}
 
 ```
 ### Service Manager connector does not work with new Web API
