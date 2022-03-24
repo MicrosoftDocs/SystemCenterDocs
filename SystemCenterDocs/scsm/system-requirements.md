@@ -3,9 +3,9 @@ ms.assetid: 39ea4ec4-9c42-4083-b0d4-9fdeff1f44f8
 title: System requirements for Service Manager
 description: This article describes the software and hardware system requirements for System Center Service Manager.
 author: JYOTHIRMAISURI
-ms.author: V-jysur
+ms.author: jsuri
 manager: vvithal
-ms.date: 04/15/2021
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
@@ -15,7 +15,12 @@ ms.technology: service-manager
 
 ::: moniker range="sc-sm-2022"
 
- Unlike the earlier release, you do not need to manually install **Report Viewer tools** /**Microsoft CLR Types for SQL Server 2014** as a prerequisite.
+This article details the system requirements for System Center 2022 - Service Manager (SM).
+
+>[!NOTE]
+> Unlike the earlier releases, for SM 2022, you do not need to manually install **Report Viewer tools** /**Microsoft CLR Types for SQL Server 2014** as a prerequisite.
+
+ [!INCLUDE [system-reqs-sm-2022](../includes/system-reqs-sm-2022.md)]
 
 ::: moniker-end
 
