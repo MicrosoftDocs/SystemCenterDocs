@@ -66,7 +66,7 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 >If VMM 2022 and SQL 2019 are installed on the same machine, the following error appears:
 >Reboot the machine for successful installation.
 
- :::image type="error" source="media/install/error.png" alt-text="Screenshot showing error.":::t
+ :::image type="error" source="media/install/error.png" alt-text="Screenshot showing error.":::
 ::: moniker-end
 
 During Setup, VMM enables the following firewall rules. These rules remain in effect even if you later uninstall VMM.
