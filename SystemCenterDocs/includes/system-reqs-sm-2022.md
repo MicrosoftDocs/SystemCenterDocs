@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 03/24/2022
+ms.date: 03/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -54,7 +54,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 |**Service Manager management server**|The management server needs: [ADO.NET Data Services Update for .NET Framework 3.5](https://support.microsoft.com/topic/description-of-the-ado-net-data-services-update-for-net-framework-3-5-sp1-for-windows-server-2003-windows-xp-windows-vista-and-windows-server-2008-may-7-2010-e525c2b3-249c-7d66-3cb2-c029c786c745) SP1 for Windows Server; SQL Server Native client <br/><br/> The management server must be installed on a 64\-bit edition of Windows. |  
 |**Data warehouse management server**|The warehouse management server requires: SQL Server Native client<br/><br/> The data warehouse management server must be installed on a 64\-bit edition of Windows.|  
 |**Service Manager/data warehouse databases**|The Service Manager or data warehouse databases require:  SQL Server Reporting Services \(SSRS\); SQL Server Analysis Management Objects.<br/><br/> The SQL Server and Analysis Services collation settings must be the same for the computers hosting the Service Manager database, data warehouse database, analysis services database, and Reporting Services database.|  
-|**Service Manager console**|The console requires: Microsoft Report Viewer Redistributable (available on System Center media): Microsoft Excel in order to view OLAP data cubes on the console computer;  ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server; SQL Server Analysis Management Objects.<br/><br/> The console can be installed on 64\-bit editions of Windows.|  
+|**Service Manager console**|The console requires: Microsoft Excel in order to view OLAP data cubes on the console computer;  ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server; SQL Server Analysis Management Objects.<br/><br/> The console can be installed on 64\-bit editions of Windows.|  
 |**Self-Service portal**|The Self-Service Portal server requires: Windows 2016 server or later; the IIS role and ASP.NET 4.5 enabled; SQL Server Analysis Management Objects.<br/><br/>  Join the server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server.
 |**Machines using self-service**|The Self Service portal needs a screen resolution above 1024 X 768.<br/><br/> Supported browsers: Microsoft Edge; Microsoft Internet Explorer 10 and 11; Mozilla Firefox 42 and later; Google Chrome 46 and later.|  
 |**SQL Server Reporting Services**|In a deployment topology where the computer hosting SSRS is not on the same computer that hosts the data warehouse management server, you have to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](../scsm/config-remote-ssrs.md) the manual steps.
@@ -74,7 +74,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 
 ## SQL Server requirements
 
- Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center  - Service Manager reporting.
+ Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center 2022 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2022 - Service Manager reporting.
 
  Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2022. Use this information whether you are deploying one or multiple components of System Center.
 
@@ -90,14 +90,14 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 > - With SQL 2019 (CU8 or later), use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 
-|**Service Manager** |  **SQL Server 2016 and [SPs](/lifecycle/products/?terms=SQL+Server+2016)** | **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)**| **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**
-| --- | --- | --- |--- |
-|**Service Manager/Data Warehouse database** |  &#8226;| &#8226; |&#8226; |
+|**Service Manager** |  **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)**| **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**
+| --- | --- |--- |
+|**Service Manager/Data Warehouse database** |  &#8226; |&#8226; |
 
 
 
   > [!NOTE]
-  > System Center 2022- Service Manager does not support the *MultiSubnetFailover* parameter. This parameter is not used in System Center 2022 - Service Manager connection strings.
+  > System Center 2022 - Service Manager does not support the *MultiSubnetFailover* parameter. This parameter is not used in System Center 2022 - Service Manager connection strings.
 
 ### Allow updates
 
@@ -203,7 +203,7 @@ The following steps provide information about upgrading to SQL 2019.
 
   The following versions of Windows Server operating system are supported.
 
- |System Center component|Windows Server 2016 Standard, Datacenter|Windows Server 2016 Server Core | Windows Server 2019 Standard, Datacenter|Windows Server 2019 Server Core|
+ |System Center component|Windows Server 2019 Standard, Datacenter|Windows Server 2019 Server Core | Windows Server 2022 Standard, Datacenter|Windows Server 2022 Server Core|
  |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|
  |**Service Manager** Management Server|&#8226;|&#8226;|&#8226;|&#8226;|
  |**Service Manager** Data Warehouse Management Server|&#8226;|&#8226;|&#8226;|&#8226;|
@@ -214,9 +214,10 @@ The following steps provide information about upgrading to SQL 2019.
 
  The following versions of Windows client operating system are supported for the Service Manager console.
 
- |System Center client-side components|Windows Server&reg; 2016 Standard, Datacenter Enterprise|Windows Server&reg; 2019 Standard, Datacenter|Windows 10 |
+ |System Center client-side components|Windows Server&reg; 2019 Standard, Datacenter Enterprise|Windows Server&reg; 2022 Standard, Datacenter|Windows 10 |Windows 11 |
  |-----------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------
- |**Service Manager** Console|&#8226;|&#8226;|&#8226;|
+ |----------------------------------------------------------------c
+ |**Service Manager** Console|&#8226;|&#8226;|&#8226;|&#8226;|
 
 ## .NET Versions supported
 
@@ -233,8 +234,8 @@ The following versions of .NET are supported for Service Manager.
 
 The following versions of PowerShell are supported for Service Manager.
 
-|System Center Component|Windows PowerShell 2.0|Windows PowerShell 3.0|Windows PowerShell 4.0|Windows PowerShell 5.0|
-|---------------------------|--------------------------|--------------------------|-----------------------------------------------|-----------------------------------------------|
-|**Service Manager** Console|||&#8226;|&#8226;|
-|**Service Manager** Management Server|||&#8226;|&#8226;|
-|**Service Manager** Data Warehouse Management Server|||&#8226;|&#8226;|
+|System Center Component|Windows PowerShell 4.0|Windows PowerShell 5.0|
+|---------------------------|-----------------------------------------------|-----------------------------------------------|
+|**Service Manager** Console|&#8226;|&#8226;|
+|**Service Manager** Management Server|&#8226;|&#8226;|
+|**Service Manager** Data Warehouse Management Server|&#8226;|&#8226;|
