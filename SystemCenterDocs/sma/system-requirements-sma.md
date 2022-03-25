@@ -13,13 +13,6 @@ ms.technology: service-management-automation
 
 # System requirements for System Center Service Management Automation
 
-::: moniker range="sc-sma-2022"
-
-There are no changes to system requirements in Service Management Automation 2022.
-
-::: moniker-end
-
-
 ::: moniker range="sc-sma-2019"
 
 This article details the system requirements for System Center 2019 - Service Management Automation (SMA).

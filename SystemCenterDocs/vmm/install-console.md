@@ -5,7 +5,7 @@ description: This article provides installation instructions for the VMM console
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 05/06/2018
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -30,6 +30,7 @@ This article describes how to install the System Center Virtual Machine Manager 
 - Make sure you have at least local administrator permissions on the computer on which you're installing the console.
 - The VMM version of the console must match the System Center version of the VMM server. For example, to connect to a VMM server running System Center 2016, the VMM console version must also be 2016.
 - You can only install one version of the console on a single machine.
+
 
 ## Run setup
 
