@@ -20,11 +20,11 @@ See the following sections for new features and feature updates supported in VMM
 
 ### Windows Server 2022 and Windows Server 2022 Guest OS support
 
-VMM 2022 can be used to manage on Windows Server 2022 and Windows Server 2022 Guest OS hosts.
+VMM 2022 can be used to manage on Windows Server 2022 hosts and Windows Server 2022 Guest OS hosts.
 
 ### Windows 11 support
 
-VMM 2022 supports Windows 11.
+VMM 2022 supports Windows 11 as guest operating system.
 
 ### Support for Azure Stack HCI clusters 21H2
 
