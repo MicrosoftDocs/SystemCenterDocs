@@ -450,7 +450,7 @@
 ##### [Get VM Subnet](get-vm-subnet.md)
 ##### [Get VM](get-vm.md)
 ##### [Manage Checkpoint](manage-checkpoint.md)
-##### [Monitor VMM Bob](monitor-vmm-job.md)
+##### [Monitor VMM Job](monitor-vmm-job.md)
 ##### [Move VM](move-vm.md)
 ##### [Remove User Role](remove-user-role.md)
 ##### [Remove VM](remove-vm.md)
