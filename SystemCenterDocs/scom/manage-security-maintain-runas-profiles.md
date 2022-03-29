@@ -5,7 +5,7 @@ description: This article provides an overview of Run As accounts and profiles i
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
+ms.date: 03/29/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -40,7 +40,7 @@ A Run As account contains a single set of credentials which are stored in the Op
 
 With Operations Manager 2022, admins can manage the users credentials that are required to perform the tasks in the Operations Manager console.
 
-In earlier releases, by default, users with limited permissions have **Use the predefined Run As Account** option enabled. Admins can now disable this option. When disabled, all non-admin users will need to provide the credentials to execute the tasks using console or the PowerShell cmd *Start-SCOMTask*.
+In earlier releases, by default, users with limited permissions have **Use the predefined Run As Account** option enabled. Admins can now disable this option. When disabled, all non-admin users will need to provide the credentials to execute the tasks using console or the PowerShell cmd [Start-SCOMTask](/powershell/module/operationsmanager/start-scomtask?preserve-view=true&view=systemcenter-ps-2022).
 
 To disable the option, admins are required to go to **Settings** > **Miscellaneous** > **Tasks Execution** and then select **Disabled**.
 
