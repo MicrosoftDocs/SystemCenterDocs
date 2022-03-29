@@ -8,7 +8,6 @@ ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-monikerRange: '>sc-orch-2016'
 ---
 
 # Get VM Network activity
