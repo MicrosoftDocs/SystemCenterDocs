@@ -13,6 +13,7 @@ ms.assetid: b1fe4adf-a477-4455-858f-0158685c23bb
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
+monikerRange: 'sc-orch-2016'
 ---
 
 # Get VM Host in System Center 2016

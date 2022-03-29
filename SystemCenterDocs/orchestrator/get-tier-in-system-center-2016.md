@@ -13,6 +13,7 @@ ms.assetid: be8840a6-8c1e-4512-8a55-cf9b8d896ee2
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
+monikerRange: 'sc-orch-2016'
 ---
 
 # Get Tier in System Center 2016
