@@ -10,7 +10,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: evansma
 robots: noindex
-MonikerRange: '>sc-orch-2016'
+monikerRange: '>sc-orch-2016'
 ---
 # Stop Service activity
 

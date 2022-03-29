@@ -8,7 +8,7 @@ ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-MonikerRange: '>sc-orch-2016'
+monikerRange: '>sc-orch-2016'
 ---
 
 # Get Service activity
