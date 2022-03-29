@@ -13,6 +13,7 @@ ms.assetid: 123a7e67-47af-4ec5-af94-22f3866d6d4a
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
+monikerRange: '=sc-orch-2016'
 ---
 
 # Get Service Template in System Center 2016
