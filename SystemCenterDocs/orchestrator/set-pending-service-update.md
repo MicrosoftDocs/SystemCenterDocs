@@ -8,6 +8,7 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
+MonikerRange: '>=sc-orch-2016'
 ---
 # Set Pending Service Update activity
 
