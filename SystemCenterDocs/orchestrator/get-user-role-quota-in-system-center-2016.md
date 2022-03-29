@@ -13,6 +13,7 @@ ms.assetid: 86944300-dc58-41e7-b47b-715775ef04ab
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
+monikerRange: '=sc-orch-2016'
 ---
 
 # Get User Role Quota in System Center 2016

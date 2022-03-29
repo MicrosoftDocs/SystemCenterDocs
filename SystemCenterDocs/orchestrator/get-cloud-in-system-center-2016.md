@@ -13,6 +13,7 @@ ms.assetid: da433077-6741-443f-89b5-dd431fe1b216
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
+monikerRange: '=sc-orch-2016'
 ---
 
 # Get Cloud in System Center 2016
