@@ -13,6 +13,7 @@ ms.assetid: 55eb47f3-a81a-4d72-898f-fa90c173d846
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
+monikerRange: '=sc-orch-2016'
 ---
 
 # Get VM Network in System Center 2016

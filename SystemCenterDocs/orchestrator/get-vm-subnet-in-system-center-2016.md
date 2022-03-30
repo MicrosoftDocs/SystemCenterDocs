@@ -13,6 +13,7 @@ ms.assetid: 21f877ab-f285-41e8-bba9-6e8ae3b3f338
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
+monikerRange: '=sc-orch-2016'
 ---
 
 # Get VM Subnet in System Center 2016
