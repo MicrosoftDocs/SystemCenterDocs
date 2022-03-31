@@ -5,8 +5,7 @@ description: This article provides installation instructions for the VMM console
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 02/24/2022
-ms.topic: article
+ms.date: 03/31/2022
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ms.custom: intro-installation
@@ -21,6 +20,11 @@ ms.custom: intro-installation
 ::: moniker-end
 
 This article describes how to install the System Center Virtual Machine Manager (VMM) console on a remote computer, and connect to the VMM server. When you install the VMM management server, the console is installed on it automatically.
+
+[!NOTE]
+>The default timeout value for a VMM client session is 330 seconds and it's specific to each client. To update the timeout value, create *IndigoSendTimeout* registry in all the client machines from where the timeout needs to be configured. The registry is located at **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Administrator Console\Settings**.
+>
+>The registry is of type DWORD (32-bit), minimum value is 330 seconds and maximum is 900 seconds (15 minutes).
 
 
 ## Before you start
