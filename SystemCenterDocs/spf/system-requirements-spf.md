@@ -5,13 +5,21 @@ description: This article describes the software and hardware system requirement
 author: jyothisuri
 ms.author: jsuri
 manager: vvithal
-ms.date: 03/14/2019
+ms.date: 04/04/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
 ---
 
 # System requirements for System Center Service Provider Foundation
+
+::: moniker range="sc-spf-2022"
+
+This article details the system requirements for System Center 2019 - Service Provider Foundation (SPF).
+
+[!INCLUDE [system-reqs-spf-2022.md](../includes/system-reqs-spf-2022.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-spf-2019"
 
