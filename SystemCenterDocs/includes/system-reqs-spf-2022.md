@@ -1,7 +1,7 @@
 ---
 ms.assetid: e41aa1d-89fa-477d-8746-258525e48e17
 title: include file
-description: include file to provide information about hardware and software system requirements for System Center  2019 - Service Provider Foundation
+description: include file to provide information about hardware and software system requirements for System Center  2022 - Service Provider Foundation
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
@@ -30,7 +30,7 @@ The following sections describe the hardware and software requirements for Syste
 
 **Operating system** | **Supported**
 --- | --- | --- | ---
-**Windows Server 2019r** |  Y
+**Windows Server 2019** |  Y
 **Windows Server 2019 (with desktop experience)** |  Y
 
 

@@ -15,7 +15,7 @@ ms.technology: service-provider-foundation
 
 ::: moniker range="sc-spf-2022"
 
-This article details the system requirements for System Center 2019 - Service Provider Foundation (SPF).
+This article details the system requirements for System Center 2022 - Service Provider Foundation (SPF).
 
 [!INCLUDE [system-reqs-spf-2022.md](../includes/system-reqs-spf-2022.md)]
 
