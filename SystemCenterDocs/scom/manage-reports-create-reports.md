@@ -145,7 +145,7 @@ An alerts report summarizes alerts that have occurred on a managed entity. The f
 
 2.  In the Operations console, click **Monitoring**.  
 
-3.  In the **Monitoring** workspace, expand **Monitoring**, and then click **Wndows Computers**.  
+3.  In the **Monitoring** workspace, expand **Monitoring**, and then click **Windows Computers**.  
 
 4.  In the **Windows Computers** pane, click a row with a Health Service instance.  
 
