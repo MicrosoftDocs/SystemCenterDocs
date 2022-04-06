@@ -89,7 +89,7 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
      This endpoint is also used for Azure REST API. In this case, the Firewall port 443 should be used. However, according to [Ports beyond 1433 for ADO.NET 4.5](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12), the Firewall port 1433 should be used.
 
-   - Database Resource URI: <https://database.windows.net>
+   - Database Resource URI: <`https://database.windows.net`>
 
    - Graph API Resource URI: <https://graph.windows.net>
 
