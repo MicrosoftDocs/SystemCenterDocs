@@ -33,7 +33,7 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
    - Authority URI: <https://login.windows.net>
    - Management Service URI: <https://management.azure.com>
-   - Database Resource URI: <https://database.windows.net>  
+   - Database Resource URI: <`https://database.windows.net`>  
    - Graph API Resource URI: <https://graph.windows.net>
 
    ![Configure Azure endpoints](./media/managed-instance-management-pack/configuring-azure-endpoints.png)
