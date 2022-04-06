@@ -31,4 +31,4 @@ ms.technology: virtual-machine-manager
 >**Workaround**: Delete LUN directly from the array.
 
 >[!NOTE]
->If you would like us to certify a new storage device, reach out to systemcenterfeedback@microsoft.com.
+>If you would like us to certify a new storage device, reach out to [systemcenterfeedback@microsoft.com](malito:systemcenterfeedback@microsoft.com).
