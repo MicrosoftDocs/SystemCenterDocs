@@ -5,7 +5,7 @@ description: include file to provide information about hardware and software sys
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date:  04/04/2022
+ms.date:  07/04/2022
 ms.topic:  include
 ms.prod:  system center
 ms.technology:  service-provider-foundation
@@ -30,8 +30,8 @@ The following sections describe the hardware and software requirements for Syste
 
 **Operating system** | **Supported**
 --- | --- | --- | ---
-**Windows Server 2019** |  Y
-**Windows Server 2019 (with desktop experience)** |  Y
+**Windows Server 2022** |  Y
+**Windows Server 2022 (with desktop experience)** |  Y
 
 
 
@@ -42,6 +42,7 @@ The following sections describe the hardware and software requirements for Syste
 
 **SQL version** | **Supported**
 --- | ---
+**[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
 **[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
 **SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)** | Y
 

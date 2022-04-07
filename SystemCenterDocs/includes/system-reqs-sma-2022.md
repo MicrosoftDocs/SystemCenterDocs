@@ -30,11 +30,16 @@ The following software must be installed for each role.
 
 |Role|Prerequisites|
 |--------|-----------------|
-|Runbook worker|Windows Server 2019 or later<br /><br />Windows PowerShell 4.0 or above|
-|Automation web service|Windows Server 2019 or above<br /><br />SQL Server   2012 SP4 (minimum) <br /><br /> **Note**: Supports SQL 2017 Expand 2016 service packs that are in support by Microsoft. Here are the [supported service packs for 2016](/lifecycle/products/?terms=SQL+Server+2016). <br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
+|Runbook worker|Windows Server 2022 <br /><br />Windows PowerShell 4.0 or above|
+|Automation web service|Windows Server 2022<br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
 |Windows PowerShell module|Windows PowerShell 4.0 or above|
 
-Before installing the web service, ensure you have installed the .NET Framework 4.5 and HTTP Activation on Windows Server 2019:
+**SQL version** | **Supported**
+--- | ---
+**[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
+**[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
+
+Before installing the web service, ensure you have installed the .NET Framework 4.5 and HTTP Activation on Windows Server 2022:
 
 #### To install .NET Framework 4.5 and HTTP Activation
 
