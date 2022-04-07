@@ -51,11 +51,11 @@ Before installing the web service, ensure you have installed the .NET Framework 
 
 4.  Expand **.NET Framework 4.5 Features**.
 
-5.  Select **.NET Framework 4.5** if it isn"t already selected.
+5.  Select **.NET Framework 4.5**, if it isn't already selected.
 
 6.  Expand **WCF Services**.
 
-7.  Select **HTTP Activation** if it isn"t already selected.
+7.  Select **HTTP Activation**, if it isn't already selected.
 
 8.  Click **Next**, and follow the prompts to finish the installation.
 
