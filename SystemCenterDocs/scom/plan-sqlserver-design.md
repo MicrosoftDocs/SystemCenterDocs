@@ -35,11 +35,11 @@ We do not recommend utilization of Operations Manager databases from an SQL Inst
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-- SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
-
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
+
+- SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
     >[!NOTE]
     > - Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
@@ -48,6 +48,8 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
+
+- SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
     >[!NOTE]
     > - Operations Manager 2022 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
