@@ -44,7 +44,7 @@ The following sections describe the hardware and software requirements for Syste
 --- | ---
 **[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
 **[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
-**SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)** | Y
+
 
 ## Installation components
 
