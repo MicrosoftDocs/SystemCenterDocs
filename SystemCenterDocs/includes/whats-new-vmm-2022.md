@@ -2,8 +2,8 @@
 ms.assetid:
 title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
-author: v-jysur
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: evansma
 ms.date: 11/29/2021
 ms.topic: article
