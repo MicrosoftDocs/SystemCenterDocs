@@ -1,17 +1,25 @@
 ---
-ms.assetid: b430e393-bc76-481a-b2d3-4e1521b5ac8b
+ms.assetid:
 title: System requirements for Service Management Automation.
 description: This article describes the software and hardware system requirements for System Center Service Management Automation.
 author: jyothisuri
 ms.author: jsuri
 manager: vvithal
-ms.date: 03/14/2019
+ms.date: 04/04/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-management-automation
 ---
 
 # System requirements for System Center Service Management Automation
+
+::: moniker range="sc-sma-2022"
+
+This article details the system requirements for System Center 2022 - Service Management Automation (SMA).
+
+[!INCLUDE [system-reqs-sma-2022.md](../includes/system-reqs-sma-2022.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-sma-2019"
 
