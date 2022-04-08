@@ -49,3 +49,11 @@ Connector for Orchestrator 2022 might not work due to changes in Orchestrator We
 
 **Workaround**:
 Continue using System Center 2019 Web API till we fix this. System Center 2022 supports running 2019 Web console/API side-by-side.
+
+### Report management pack deployments might fail
+
+**Description**: After a successful Data Warehouse installation, deployments of Report management packs might fail if SQL Server Reporting Services (SSRS) is running locally on the Data Warehouse management Server and SSRS is 2017 or later. 
+
+This issue is observed in Service Manager 2016 and later.
+
+**Workaround**: Perform the steps [detailed here](/system-center/scsm/config-remote-ssrs).
