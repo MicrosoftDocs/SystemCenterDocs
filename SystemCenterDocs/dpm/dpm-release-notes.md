@@ -62,7 +62,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 - No clean-up for job history and garbage collection jobs.
 
 **Workaround**:
-1. Backup the current DPM database.
+1. Back up the current DPM database.
 2. Open SQL management studio and connect to the SQL Instance hosting the DPMDB for this server.
 3. Run the following query, and check if you have two or more summary manager jobs scheduled, and see which the older schedule was:
    ```
@@ -120,7 +120,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 ### Hyper-V RCT - recover as files for D-T backup fails
 
-**Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups does not exhibit this issue.
+**Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups do not exhibit this issue.
 
 **Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
 
