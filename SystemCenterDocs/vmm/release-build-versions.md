@@ -5,7 +5,7 @@ description: This article describes about version numbers.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -38,6 +38,16 @@ The following table lists the build versions for Virtual Machine Manager 2019.
 |10.19.2445.0|[4569533](https://support.microsoft.com/help/4569533)|Update Rollup 2 for System Center 2019 Virtual Machine Manager  |
 |10.19.2591.0|[5001835](https://support.microsoft.com/topic/2eea517c-bd0f-dfe8-2c70-28fa4ac6b0c1)|Update Rollup 3 for System Center 2019 Virtual Machine Manager  |
 
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+The following table lists the build versions for Virtual Machine Manager 2022.
+
+| **Build Number** | **KB** |**Description** |
+| --- | --- |--- |
+| 10.22.1287.0 | n/a | System Center 2022 Virtual Machine Manager     |
 
 ::: moniker-end
 

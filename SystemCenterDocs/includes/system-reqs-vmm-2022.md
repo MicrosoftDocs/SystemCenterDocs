@@ -2,8 +2,8 @@
 ms.assetid:
 title: include file
 description: include article to detail the system requirements for VMM 2022
-author:  v-jysur
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 manager: evansma
 ms.date: 12/02/2021
 ms.topic: include
