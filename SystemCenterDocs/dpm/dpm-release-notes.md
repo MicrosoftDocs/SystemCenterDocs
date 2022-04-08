@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: jyothisuri
 ms.author: jsuri
 manager: carmonm
-ms.date: 03/30/2021
+ms.date: 04/08/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -15,7 +15,7 @@ ms.topic: article
 # System Center DPM Release Notes
 ::: moniker range="sc-dpm-2019"
 
-This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
+This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes), DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
 
 We recommend you to see the following articles for detailed information about what DPM supports and can back up:
 
@@ -191,7 +191,12 @@ GetData of Provider failed. |Backup Service Exception: FMException: [ErrorCode:G
 1. If the online recovery points for the decommissioned server are no longer needed, then you can delete the data sources on the DPM/MABS server that are in stopped protection.
 
 ## DPM 2019 UR1 release notes
-No known issues for DPM 2019 UR1.
+
+### VM restore with excluded disk (to alternate host) restores empty disk
+
+**Description**: Restoring the VM with excluded disk to alternate host will restore the excluded disk as empty disk. The excluded disk will not be attached to VM. The disk can be deleted to save the storage space.
+
+**Workaround**: None
 
 For issues fixed in DPM 2019 UR1, [see the KB article](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager).
 
