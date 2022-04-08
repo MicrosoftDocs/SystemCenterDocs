@@ -5,7 +5,7 @@ description: This article provides detailed design guidance for SQL Server to su
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
+ms.date: 04/07/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -35,6 +35,10 @@ We do not recommend utilization of Operations Manager databases from an SQL Inst
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
+::: moniker-end
+
+::: moniker range="sc-om-2019"
+
 - SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
     >[!NOTE]
@@ -42,6 +46,17 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
     > - Use ODBC 17.3 to 17.9, and MSOLEDBSQL 18.2 to 18.6.3.
 
 ::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+- SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
+
+    >[!NOTE]
+    > - Operations Manager 2022 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
+    > - Use ODBC 17.3 to 17.9, and MSOLEDBSQL 18.2 to 18.6.3.
+
+::: moniker-end
+
 
 ::: moniker range=">sc-om-1807 <=sc-om-2019"
 
