@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 11/29/2021
+ms.date: 04/08/2022
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -490,7 +490,8 @@ To backup vSphere 6.7 do the following:
 ## Exclude disk from VMware VM backup
 
 > [!NOTE]
-> This feature is applicable for DPM 2019 UR1 and later.
+> - This feature is applicable for DPM 2019 UR1 and later.
+> - VM restore with excluded disk to alternate host restores empty disk, the excluded disk will not be attached to VM. You can delete this disk to save the storage space.
 
 With DPM 2019 UR1, you can exclude the specific disk from VMware VM backup. The configuration script **ExcludeDisk.ps1** is located at C:\Program Files\Microsoft System Center\DPM\DPM\bin folder.
 
