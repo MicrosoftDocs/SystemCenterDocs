@@ -98,8 +98,8 @@ Operations Manager 2022 also includes the following updates:
 - PowerShell 3.0 version is the required minimum version. PowerShell 3.0 runs with higher .NET (.NET 4.8) version and higher CLR version. 
 - You must install MSOLEDBSQL before you install Operations Manager. 
 - Supports the following newer browsers Chrome and Edge: 
-    - Internet Explorer version 11 
-    - Microsoft Edge version 88 and later  
-    - Google Chrome version 88 and later 
+    - Internet Explorer version 11.
+    - Microsoft Edge version 88 and later. 
+    - Google Chrome version 88 and later.
     - Supports Ubuntu 20, Oracle Linux 8, Debian 10, and Debian 11. 
-    - Removed support   for AIX, Solaris, RHEL 5, RHEL 6, RHEL 7 (PPC), CentOS 6, Debian 8, SLES 11, SLES 12 PPC, Ubuntu 16
+    - Removed support   for AIX, Solaris, RHEL 5, RHEL 6, RHEL 7 (PPC), CentOS 6, Debian 8, SLES 11, SLES 12 PPC.
