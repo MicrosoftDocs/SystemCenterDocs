@@ -23,7 +23,7 @@ In line with the lifecycle, we now support Operations Manager alerts on Microsof
 
 With System Center 2022, Microsoft Teams has been added to the existing basic Notification channels of Operations Manager. You can specify conditions for the channel to allow only certain types of alerts.
 
-To configure alert notifications for Operations Manager, you must enable a notification channel. For detailed information about notification channels, see [Subscribing to alert notifications](/scom/manage-notifications-alert-notifications).
+To configure alert notifications for Operations Manager, you must enable a notification channel. For detailed information about notification channels, see [Subscribing to alert notifications](/system-center/scom/manage-notifications-alert-notifications).
 
 > [!NOTE]
 > Integration of Operations Manager with Teams is supported for customers who use GCC, GCC High and DoD Clouds.
@@ -51,7 +51,7 @@ Before you begin, ensure you have the following:
 
 ## Operations Manager notification channel - key descriptions
 
-For detailed information about Channel, Subscriber and Subscription, see [Subscribing to Alert Notifications](/scom/manage-notifications-alert-notifications).
+For detailed information about Channel, Subscriber and Subscription, see [Subscribing to Alert Notifications](/system-center/scom/manage-notifications-alert-notifications).
 
 | Parameters | Microsoft Teams |
 |---|---|
