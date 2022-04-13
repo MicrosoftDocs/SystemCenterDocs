@@ -6,7 +6,7 @@ manager: evansma
 ms.date: 04/13/2022
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: article
+ms.topic: include
 ms.author: jsuri
 ms.custom: intro-installation
 Moniker Range: 'sc-orch-2022'
