@@ -40,7 +40,7 @@ This account is used to run the *MonitoringHost.exe* process (runs all the Workf
 
 You can grant service log on permission through a domain policy or a local group policy.
 
-To enable using domain policy, contact your administrators. To use local group policy, see the section on [enable service through a local group policy](#enable-service-log-on-through-a-local-group policy)
+To enable using domain policy, contact your administrators. To use local group policy, see the section on [enable service through a local group policy](#enable-service-log-on-through-a-local-group-policy)
 
 ## Identify the accounts that need service Log on permission
 
