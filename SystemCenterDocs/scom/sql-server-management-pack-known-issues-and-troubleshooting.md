@@ -46,6 +46,7 @@ This article lists the known issues for Management Pack for SQL Server.
 |Web console summary dashboard fails when monitoring environments with a lot of objects|Monitoring of large-scale environments may cause the web console summary dashboard to occasionally fail due to a large number of objects that cannot be processed in due time.|No resolution.|
 |Management servers and their managed devices are dimmed in the Operations Manager console|In a Microsoft System Center Operations Manager environment, one or more management servers that host the following roles, together with those management servers' managed devices, may appear dimmed or grayed out in the Operations console: **Management server**, **Gateway server**, and **Agent**.|See [this Microsoft article](/troubleshoot/system-center/scom/management-servers-devices-dimmed) to learn more on how to solve this.|
 |Publication discovery does not work on SQL Server 2019 CU13 and higher|If SQL Server 2019 CU13 acts as a Publisher and has one or more publications, the publication discovery will not work.|No resolution.|
+|Free space monitoring may not work correctly when using symbolic links to files|On Windows, free space monitoring does not work correctly in cases when you provide a database file in the form of a symbolic link that points to a real file located on another volume.|On Windows, do not use symbolic links to files located on other volumes as database files.|
 
 To isolate a WMI provider, run the script below in an elevated PowerShell session:
 
