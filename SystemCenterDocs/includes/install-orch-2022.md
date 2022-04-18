@@ -3,16 +3,14 @@ title: Install System Center Orchestrator 2022
 description: Provides instructions for installing System Center 2022 - Orchestrator
 author: jyothisuri
 manager: evansma
-ms.date: 03/23/2022
+ms.date: 04/13/2022
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: article
+ms.topic: include
 ms.author: jsuri
 ms.custom: intro-installation
-MonikerRange: 'sc-orch-2022'
+Moniker Range: 'sc-orch-2022'
 ---
-
-# How to install System Center 2022 - Orchestrator
 
 A complete Orchestrator installation includes
 
@@ -25,7 +23,7 @@ A complete Orchestrator installation includes
 
 It is possible to install all these roles and components on a single computer, but it is more common to distribute the roles across several computers or virtual machines.
 
-For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](learn-about-orchestrator.md).
+For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](/system-center/orchestrator/learn-about-orchestrator).
 
 This topic provides detailed installation instructions for the various Orchestrator roles.
 
@@ -398,8 +396,3 @@ To solve this problem. you can manually start the RunbookService, or configure t
 If you attempt to uninstall Orchestrator while logged in with an account that is a member of OrchestratorSystemGroup but is not an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the service fails because the user account does not have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.  
 
 To solve this problem, an administrator can add the user back to OrchestratorSystemGroup.
-
-## Next steps
-
-- To learn more about building runbooks see [Design and build runbooks](./design-and-build-runbooks.md).
-- To learn more about deploying runbooks see [Deploy runbooks](deploy-runbooks.md)

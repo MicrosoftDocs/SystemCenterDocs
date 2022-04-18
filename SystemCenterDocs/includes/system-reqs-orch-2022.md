@@ -4,7 +4,7 @@ title: include file
 description: include file to provide system requirements for Orchestrator 2022, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: jsuri
 manager: evansma
-ms.date: 03/23/2022
+ms.date: 04/12/2022
 ms.custom: na
 author: jyothisuri
 ms.prod: system center
@@ -54,7 +54,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 - Microsoft Internet Information Services (IIS) – Orchestrator Setup enables IIS if it is not enabled.
 
-- Microsoft .NET Framework 4.5 or later (v4.7.2).
+- Microsoft .NET Framework 4.5 or later.
 
 - Ensure that [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver15&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.
 
