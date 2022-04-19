@@ -59,7 +59,10 @@ The Integration Pack for HP iLO and OA requires the following software to be ins
 
 ::: moniker range="sc-orch-2022"
 
-- To download this integration pack for Orchestrator 2022, see HP iLO and OA Integration Pack for System Center 2022 - Orchestrator.
+- Download the integration pack for Orchestrator 2022.
+
+>[!NOTE]
+>Integration packs and toolkit for Orchestrator 2022 are yet to be released, download links will be provided once they are available. 
 
 ::: moniker-end
 
