@@ -35,7 +35,6 @@ Microsoft is committed to protecting your privacy, while delivering software tha
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
-- Download the integration pack for Orchestrator 2022.
 
 >[!NOTE]
 >Integration packs and toolkit for Orchestrator 2022 are yet to be released, download links will be provided once they are available. 
