@@ -62,12 +62,12 @@ Values of few registries which are customized (commonly) are retained when an up
 
 | List of registries that are backed up and retained |
 | ---------------------------------------------------|
-| HKLM\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Initial Database Page Count |
-| HKLM\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Cache Maximum |
-| HKLM\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Maximum Sessions |
-| HKLM\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Version Store Maximum |
-| HKLM\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Page Hit Cache Size |
-| HKLM\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Checkpoint Depth Maximum |
+| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Initial Database Page Count |
+| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Cache Maximum |
+| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Maximum Sessions |
+| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Version Store Maximum |
+| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Page Hit Cache Size |
+| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Checkpoint Depth Maximum |
 
 - Value of custom install location of Monitoring Agent is retained when an update (UR/Hotfix) is installed or upgraded from Operations Manager 2019 to Operations Manager 2022. 
 - Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server. 
@@ -86,7 +86,7 @@ Operations Manager 2022 provides the following changes:
 - LocalSystem is no longer used internally instead of the Default Action Account. This was used earlier for APM configuration, Privileged Monitoring Account, RunAs Profile fallback. There was an association created for the Validate Subscription Account RunAs Profile.  
 - LocalSystem account is still being added to Operations Manager Administrators Group by Setup, but it is now visible in the console and can be removed and added later as required.  
 
-### Folderisation of Change Tracking Reports
+### Folderization of Change Tracking Reports
 
 With Operations Manager 2022, all change tracking reports are available in one single folder by name **Change Tracking**. 
 
@@ -94,12 +94,12 @@ With Operations Manager 2022, all change tracking reports are available in one s
 
 Operations Manager 2022 also includes the following updates: 
 
-- Supports .NET 4.8  
-- PowerShell 3.0 version is the required minimum version. PowerShell 3.0 runs with higher .NET (.NET 4.8) version and higher CLR version. 
-- You must install MSOLEDBSQL before you install Operations Manager. 
-- Supports the following newer browsers Chrome and Edge: 
+- Supports .NET 4.8
+- PowerShell 3.0 version is the required minimum version. PowerShell 3.0 runs with higher .NET (.NET 4.8) version and higher CLR version.
+- You must install MSOLEDBSQL before you install Operations Manager.
+- Supports the following newer browsers Chrome and Edge:
     - Internet Explorer version 11.
-    - Microsoft Edge version 88 and later. 
+    - Microsoft Edge version 88 and later.
     - Google Chrome version 88 and later.
-    - Supports Ubuntu 20, Oracle Linux 8, Debian 10, and Debian 11. 
-    - Removed support   for AIX, Solaris, RHEL 5, RHEL 6, RHEL 7 (PPC), CentOS 6, Debian 8, SLES 11, SLES 12 PPC.
+- Supports Ubuntu 20, Oracle Linux 8, Debian 10, and Debian 11.
+- Removed support for AIX, Solaris, RHEL 5, RHEL 6, RHEL 7 (PPC), CentOS 6, Debian 8, SLES 11, and SLES 12 PPC.
