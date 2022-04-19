@@ -54,9 +54,8 @@ To leverage gMSA, administrators must do the following:
 
 Run the following PowerShell command for each gMSA account. If it returns **True**, then gMSA is ready to be used on the management server you selected.
 
-```
-Test-ADServiceAccount \<gMSA\_name\>
-
+```powershell
+Test-ADServiceAccount <gMSA_name>
 ```
 
 ## Next steps
