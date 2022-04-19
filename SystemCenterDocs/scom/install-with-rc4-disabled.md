@@ -26,7 +26,7 @@ When you install Operations Manager in a security hardened environment, the set 
 
 ## Important information
 
-In a disabled RC4 environment, when you try to install Operations Manager 2016 or 2019, you cannot pass the Account Validation stage if the steps in the [Before you Begin](#before-you-begin) section are not implemented, and you will see the following error in the Operations Manager set up:
+In a disabled RC4 environment, when you try to install Operations Manager, you cannot pass the Account Validation stage if the steps in the [Before you Begin](#before-you-begin) section are not implemented, and you will see the following error in the Operations Manager set up:
 
 ![Error in operations manager set up](./media/protocol-disabled/error-operations-manager-setup.png)
 

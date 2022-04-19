@@ -136,12 +136,16 @@ After completing the configuration of all prerequisites for Operations Manager, 
 >[!IMPORTANT]
 >Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before making any modifications, back up the registry for restoration in case problems occur.
 
+::: moniker range="sc-om-2016"
+
 > [!NOTE]
 > SCOM 2012 R2 running in Windows OS 2012 needs additional changes to use TLS 1.2 over HTTP for UNIX/LINUX monitoring. In order to enable TLS 1.2 as default security protocols in WinHTTP in Windows, the following changes need to be made as per [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392).
 > 1. Install [KB3140245](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392) on the Management Servers/Gateways Servers in the UNIX/LINUX Resource Pool.
 > 2. Backup the registries that are modified as mentioned in the KB article.
 > 3. Download and run the [Easy Fix](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392#bkmk_easy) tool on the Management Servers/Gateways in the UNIX/LINUX Resource Pool.
 > 4. Reboot the servers.
+
+::: moniker-end
 
 ### Manually modify the registry
 1. Log on to the server by using an account that has local administrative credentials.  
@@ -166,7 +170,11 @@ New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -P
 
 ## Additional settings
 
+:: moniker range="sc-om-2016"
+
 If this is being implemented for System Center 2016 - Operations Manager, after applying Update Rollup 4, be sure to import the management packs that are included in this rollup located in the following directory: **\Program Files\Microsoft System Center 2016\Operations Manager\Server\Management Packs for Update Rollups**.  
+
+::: moniker-end
 
 If you are monitoring a supported version of Linux server with Operations Manager, follow the instructions on the appropriate website for your distro to configure TLS 1.2.  
 

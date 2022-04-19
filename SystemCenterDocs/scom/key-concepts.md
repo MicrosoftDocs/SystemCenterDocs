@@ -116,9 +116,9 @@ The following image is a simplified illustration of how objects are discovered a
 
 4.  The agent requests configuration data, and then the management server sends the agent configuration data from installed management packs that includes classes to be discovered. For example, if the Windows Server operating system management packs are installed, the management server will send the agent the operating system classes.
 
-5.  The agent compares the configuration data to the computer, identifies any objects that it discovers, and returns the information to the management server. For example, the agent will return to the management server that an instance of Windows Server 2016 operating system is on the computer.
+5.  The agent compares the configuration data to the computer, identifies any objects that it discovers, and returns the information to the management server. For example, the agent will return to the management server that an instance of Windows Server 2019 operating system is on the computer.
 
-6.  The management server sends the agent all monitoring logic from installed management packs that applies to the discovered objects. For example, the agent will receive all monitoring logic that applies to Windows Server 2016.
+6.  The management server sends the agent all monitoring logic from installed management packs that applies to the discovered objects. For example, the agent will receive all monitoring logic that applies to Windows Server 2019.
 
 7.  The agent applies the monitoring logic, such as rules and monitors, runs workflows, and returns data to the management server.
 
