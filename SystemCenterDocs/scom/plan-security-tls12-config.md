@@ -176,7 +176,7 @@ If this is being implemented for System Center 2016 - Operations Manager, after 
 
 ::: moniker-end
 
-If you are monitoring a supported version of Linux server with Operations Manager, follow the instructions on the appropriate website for your distro to configure TLS 1.2.  
+If you're monitoring a supported version of Linux server with Operations Manager, follow the instructions on the appropriate website for your distro to configure TLS 1.2.  
 
 ### Audit Collection Services
 For Audit Collection Services (ACS), you must make additional changes in the registry on ACS Collector server.  ACS uses the DSN to make connections to the database. You must update DSN settings to make them functional for TLS 1.2.

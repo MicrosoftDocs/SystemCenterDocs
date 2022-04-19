@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 ---
 
-# Walkthrough Installing Operations Manager on a Single Server
+# Installing Operations Manager on a Single Server
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 

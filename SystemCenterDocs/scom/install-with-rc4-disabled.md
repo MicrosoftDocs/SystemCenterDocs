@@ -22,13 +22,13 @@ ms.topic: article
 
 This article describes how to disable RC4 while installing Operations Manager.
 
-When you install Operations Manager in a security hardened environment, the set up tends to fail at the account configuration step if the appropriate permissions are not configured properly.
+When you install Operations Manager in a security hardened environment, the setup tends to fail at the account configuration step if the appropriate permissions are not configured properly.
 
 ## Important information
 
-In a disabled RC4 environment, when you try to install Operations Manager, you cannot pass the Account Validation stage if the steps in the [Before you Begin](#before-you-begin) section are not implemented, and you will see the following error in the Operations Manager set up:
+In a disabled RC4 environment, when you try to install Operations Manager, you cannot pass the Account Validation stage if the steps in the [Before you Begin](#before-you-begin) section are not implemented, and you will see the following error in the Operations Manager setup:
 
-![Error in operations manager set up](./media/protocol-disabled/error-operations-manager-setup.png)
+![Error in operations manager setup](./media/protocol-disabled/error-operations-manager-setup.png)
 
 
 Operations Manager internally uses a Windows Security API as part of its credential validation process and the requested encryption type is not supported by the KDC. The client and service should support same type of encryption for communication.
