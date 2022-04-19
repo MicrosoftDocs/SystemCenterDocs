@@ -30,7 +30,6 @@ The integration pack for VMware vSphere is an add-on for System Center - Orchest
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
-- Download the pack for Orchestrator 2022.
 
 >[!NOTE]
 >Integration packs and toolkit for Orchestrator 2022 are yet to be released, download links will be provided once they are available. 
