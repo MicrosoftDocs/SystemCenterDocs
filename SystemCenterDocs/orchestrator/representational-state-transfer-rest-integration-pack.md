@@ -31,7 +31,9 @@ The integration pack for Representational State Transfer (REST) is an add-on for
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
-- To download this integration pack Orchestrator 2022, see System Center 2022 Integration Packs.
+
+>[!NOTE]
+>Integration packs and toolkit for Orchestrator 2022 are yet to be released, download links will be provided once they are available. 
 ::: moniker-end
 
 ## Register and deploy the integration pack
