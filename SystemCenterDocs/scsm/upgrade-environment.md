@@ -4,8 +4,8 @@ description: Use this article to upgrade to System Center 2016 - Service Manager
 manager: carmonm
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 02/23/2016
 ms.reviewer: na
 ms.suite: na
@@ -25,7 +25,7 @@ You cannot start an upgrade to System Center 2016 - Service Manager if any data 
 ## Upgrade preparation
 
 - For Service Manager data warehouse database restoration, the Reporting database also needs to be restored after you install the data warehouse.
-- Refer to the upgrade sequencing of System Center components at [Upgrading System Center 2012 R2 - Service Manager to System Center 2016](./upgrade-sm.md).
+- Refer to the upgrade sequencing of System Center components at [Upgrading System Center 2012 R2 - Service Manager to System Center 2016](./upgrade-service-manager.md).
 - Do not mix Service Manager 2016 and Service Manager 2012 R2 with different Service Manager components - all should use the same version. For example, both the Self Service portal and the Service Manager management server  should use the same version.
 - When upgrading from Service Manager 2012 R2 to Service Manager 2016, you should not enable or disable the Active Directory group expansion for any of the Active Directory connectors.
 
