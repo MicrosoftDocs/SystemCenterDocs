@@ -47,7 +47,7 @@
 #### [Deploy from a command line](deploy-cmd-line.md)
 #### [Move databases](move-databases.md)
 ## Upgrade
-### [Upgrade Service Manager](upgrade-sm.md)
+### [Upgrade Service Manager](upgrade-service-manager.md)
 ### [Upgrade the self-service portal to Service Manager 2016](upgrade-configs-portal.md)
 ### [Upgrade SQL Server Reporting Services](prepare-remote-ssrs.md)
 ### [Set up a  lab environment for upgrade](set-up-lab-with-production-data.md)
