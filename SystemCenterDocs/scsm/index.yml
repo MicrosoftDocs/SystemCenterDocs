@@ -40,7 +40,7 @@ landingContent:
           - text: Deploy Service Manager
             url: deploy-sm.md
           - text: Upgrade Service Manager
-            url: upgrade-sm.md
+            url: upgrade-service-manager.md
           - text: Administer Service Manager
             url: management-packs.md
           - text: Author with Service Manager
