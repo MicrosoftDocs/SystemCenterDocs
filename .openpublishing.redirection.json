@@ -3618,7 +3618,10 @@
      "source_path" : "SystemCenterDocs/vmm/upgarde.md",
      "redirect_url" : "/system-center/vmm/upgrade-vmm"
 },
-
+{
+     "source_path" : "SystemCenterDocs/scsm/upgarde.sm.md",
+     "redirect_url" : "/system-center/scsm/upgrade-service-manager"
+},
 {
      "source_path" : "SystemCenterDocs/vmm/scenario/sdn-remove-an-sdn.md",
      "redirect_url" : "/system-center/vmm/sdn-remove"
