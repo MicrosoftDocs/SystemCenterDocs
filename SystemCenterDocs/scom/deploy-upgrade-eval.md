@@ -54,7 +54,7 @@ Before proceeding, you need to be a member of the Operations Manager administrat
 
 ::: moniker-end
 
-## To upgrade from the evaluation version of System Center 2016 - Operations Manager
+## To upgrade from the evaluation version of System Center - Operations Manager
 
 Before proceeding, you need to be a member of the Operations Manager administrators role, member of the computer's local Administrators group on the management server, and granted temporary membership of the sysadmin fixed server role on the SQL Server instance hosting the Operations Manager operational database to ensure this completes successfully.  
 
