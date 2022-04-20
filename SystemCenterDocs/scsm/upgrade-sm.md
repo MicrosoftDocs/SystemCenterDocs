@@ -15,6 +15,7 @@ ms.technology: service-manager
 
 ::: moniker range="=sc-sm-2022"
 
+>[!NOTE]
 >System Center Data Protection Manager (DPM) 2022 is not yet released. Rest of the components can be upgraded to version 2022 and DPM can be upgraded once it is released.
 
 ::: moniker-end
