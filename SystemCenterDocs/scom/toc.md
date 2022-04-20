@@ -314,7 +314,9 @@
 ### [Management Pack for SQL Server Replication Delivery](sql-replication-management-pack-management-pack-delivery.md)
 ### [Management Pack Configuration](sql-replication-management-pack-management-pack-configuration.md)
 ### [Monitoring Configuration in Management Pack for SQL Server Replication](sql-replication-management-pack-monitoring-configuration.md)
-### [Security Configuration in Management Pack for SQL Server Replication](sql-replication-management-pack-security-configuration.md)
+### Security Configuration in Management Pack for SQL Server Replication
+#### [Service SID](sql-replication-management-pack-service-sid.md)
+#### [Low-Privilege Monitoring](sql-replication-management-pack-low-privilege-monitoring.md)
 ### [Data Flow](sql-replication-management-pack-data-flow.md)
 ### [Views and Dashboards in Management Pack for SQL Server Replication](sql-replication-management-pack-views-and-dashboards.md)
 ### [Known Issues and Troubleshooting in Management Pack for SQL Server Replication](sql-replication-management-pack-known-issues-and-troubleshooting.md)

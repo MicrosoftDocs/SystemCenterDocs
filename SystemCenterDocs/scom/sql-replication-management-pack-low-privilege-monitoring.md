@@ -1,11 +1,11 @@
 ---
-ms.assetid: f79efcef-1dae-4a9a-a079-f6e8378070f9
+ms.assetid: c1f4a003-4fb1-4928-b440-5c8c85eeeccd
 title: Security configuration in Management Pack for SQL Server Replication
 description: This article explains security configuration in Management Pack for SQL Server Replication
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 4/20/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -18,9 +18,6 @@ This section explains how to configure security for Management Pack for Microsof
 ## Run As Profiles
 
 Management Pack for Microsoft SQL Server Replication uses the same Run As profiles as Management Pack for SQL Server. For more information, see [SQL Server Run As Profiles](sql-server-management-pack-run-as-profiles.md).
-
->[!NOTE]
->Using Service Security Identifier (SID) or Local System account as the Run As account is not supported in this management pack.
 
 ## Low-Privilege Agent Monitoring
 
