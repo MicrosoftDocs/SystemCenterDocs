@@ -18,14 +18,13 @@ Management Pack for SQL Server Replication supports monitoring using Service SID
 In addition to the steps described in the section above, make sure to provide the following grants:
 
 ```sql
-USE [msdb]
-GRANT SELECT ON [dbo].[sysjobs] TO [SCOM_HealthService]
-GRANT SELECT ON [dbo].[sysjobhistory] TO [SCOM_HealthService]
-GRANT SELECT ON [dbo].[sysjobservers] TO [SCOM_HealthService]
-GRANT SELECT ON [dbo].[MSdistpublishers] TO [SCOM_HealthService]
-GRANT EXECUTE ON [dbo].[sp_help_jobactivity] TO [SCOM_HealthService]
-GRANT EXECUTE ON [dbo].[agent_datetime] TO [SCOM_HealthService]
- 
-USE [master]
-GRANT EXECUTE ON xp_sqlagent_enum_jobs  TO [SCOM_HealthService]
+USE [msdb];
+GRANT SELECT ON [dbo].[sysjobs] TO [SCOM_HealthService];
+GRANT SELECT ON [dbo].[sysjobhistory] TO [SCOM_HealthService];
+GRANT SELECT ON [dbo].[sysjobservers] TO [SCOM_HealthService];
+GRANT SELECT ON [dbo].[MSdistpublishers] TO [SCOM_HealthService];
+GRANT EXECUTE ON [dbo].[sp_help_jobactivity] TO [SCOM_HealthService];
+GRANT EXECUTE ON [dbo].[agent_datetime] TO [SCOM_HealthService];
+USE [master];
+GRANT EXECUTE ON xp_sqlagent_enum_jobs TO [SCOM_HealthService];
 ```
