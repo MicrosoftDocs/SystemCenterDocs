@@ -30,11 +30,23 @@ The System Center Operations Manager Operations console can be installed on any 
 
 ![Dialog box to connect console to server](./media/manage-consoles-how-to-connect/om2016-operations-console-connect-to-server.png)  
 
+::: moniker range="= sc-om-2016"
 ### To connect an Operations console to a management server  
 
-1.  Click **Start**, for System Center 2016 - Operations Manager select **Microsoft System Center 2016\Operations Console**, or for version 1801 and later select **Microsoft System Center\Operations Console** to open the Operations console.  
+1.  To open the Operations console. click **Start**, select **Microsoft System Center 2016\Operations Console**.
 
 2.  In the **Connect To Server** dialog box, type in the server name or select a server from the list. (In the image above, the console has not yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.)  
+
+::: moniker-end
+
+::: moniker range=">= sc-om-1801"
+### To connect an Operations console to a management server  
+
+1.  To open the Operations console, click **Start**, select **Microsoft System Center\Operations Console**.
+
+2.  In the **Connect To Server** dialog box, type in the server name or select a server from the list. (In the image above, the console has not yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.)  
+
+::: moniker-end
 
 The Operations console opens with the focus on the Monitoring workspace.
 

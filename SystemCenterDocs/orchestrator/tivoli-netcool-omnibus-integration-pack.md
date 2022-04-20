@@ -35,7 +35,9 @@ Microsoft is committed to protecting your privacy, while delivering software tha
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
-- To download this integration pack for Orchestrator 2022, see IBM Tivoli Netcool Integration Pack for System Center 2022 - Orchestrator.
+
+>[!NOTE]
+>Integration packs and toolkit for Orchestrator 2022 are yet to be released, download links will be provided once they are available. 
 ::: moniker-end
 
 ## Registering and Deploying the Integration Pack
