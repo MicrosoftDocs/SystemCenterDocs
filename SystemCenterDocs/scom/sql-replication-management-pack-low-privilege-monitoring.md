@@ -5,7 +5,7 @@ description: This article explains security configuration in Management Pack for
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
-ms.date: 4/20/2021
+ms.date: 4/20/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
