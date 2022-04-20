@@ -3,9 +3,9 @@ ms.assetid: 3e61b849-49f1-4852-81cf-9cae2aff68f3
 title: Upgrade information for System Center Service Manager
 description: This article details the upgrade information and procedures for Service Manager
 author: JYOTHIRMAISURI
-ms.author: V-jysur
-manager: vvithal
-ms.date: 03/15/2019
+ms.author: jsuri
+manager: evansma
+ms.date: 04/20/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
@@ -15,6 +15,7 @@ ms.technology: service-manager
 
 ::: moniker range="=sc-sm-2022"
 
+>[!NOTE]
 >System Center Data Protection Manager (DPM) 2022 is not yet released. Rest of the components can be upgraded to version 2022 and DPM can be upgraded once it is released.
 
 ::: moniker-end
