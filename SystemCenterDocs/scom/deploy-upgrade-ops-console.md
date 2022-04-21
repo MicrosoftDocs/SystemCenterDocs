@@ -79,11 +79,11 @@ Before you begin the upgrade process, make sure that your server meets the minim
 3.  Browse to the **HKey_Local_Machine\Software\Microsoft\Microsoft Operations Manager\3.0\Setup** key. 
 
 ::: moniker range="sc-om-2016"
-     The value of the **UIVersion** entry is 7.2.11719.0.
+The value of the **UIVersion** entry is 7.2.11719.0.
 ::: moniker-end
 
 ::: moniker range="sc-om-1801"
-     The value of **UIVersion** is 8.0.13053.0. 
+The value of **UIVersion** is 8.0.13053.0. 
 ::: moniker-end 
 
 
