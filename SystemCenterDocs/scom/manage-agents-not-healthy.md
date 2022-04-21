@@ -4,7 +4,7 @@ description: This article describes how Operations Manager detects and reports w
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 04/29/2019
+ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -83,7 +83,7 @@ The **Show Gray Agent Connectivity Data** task will help you identify why an age
 
     -   The management server that the agent reports to.  
 
-For information on troubleshooting, see the Knowledge Base article [Troubleshooting gray agent state](https://support.microsoft.com/kb/2288515). Although the article was written for Operations Manager 2007 and 2012, the troubleshooting steps will also be helpful for Operations Manager 2016 and higher.  
+For information on troubleshooting, see the Knowledge Base article [Troubleshooting gray agent state](https://support.microsoft.com/kb/2288515). Although the article was written for Operations Manager 2007 and 2012, the troubleshooting steps will also be helpful for Operations Manager 2016 and later.  
 
 ## What to do for a not monitored state  
 When an object shows as not monitored, check whether the appropriate management pack for monitoring the object is imported. Ensure that the appropriate monitors are enabled.  

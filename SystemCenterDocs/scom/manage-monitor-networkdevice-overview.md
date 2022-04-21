@@ -1,6 +1,6 @@
 ---
 title: Monitoring Networks by Using Operations Manager
-description: This article provides an overview of how you can monitor network devices with Operations Manager 2016.
+description: This article provides an overview of how you can monitor network devices with Operations Manager.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
@@ -26,7 +26,15 @@ Operations Manager can show you how your network is connected to the computers y
 
 Operations Manager can discover and monitor network devices that use the Simple Network Management Protocol (SNMP v1, v2c, and v3. For a complete list of supported devices, see  [Network Devices with Extended Monitoring Capability spreadsheet](https://www.microsoft.com/download/details.aspx?id=51219). The devices worksheet includes processor and memory columns for each device to indicate whether Operations Manager can provide extended monitoring for either or both aspects for each device.  
 
-System Center 2016 - Operations Manager introduced a Network Monitoring Management Pack generation tool to help you create a custom management pack to add extended monitoring support for new network devices, without the need of Microsoft device certification.  Additionally, this tool enables you to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply. You can download the tool and user guide from the [Microsoft Download Center](https://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx).  This tool is also supported with newer releases of Operations Manager.
+::: moniker range="sc-om-2016"
+System Center 2016 - Operations Manager introduced a Network Monitoring Management Pack generation tool to help you create a custom management pack to add extended monitoring support for new network devices, without the need of Microsoft device certification.  
+::: moniker-end
+
+::: moniker range=">sc-om-2016"
+Network Monitoring Management Pack generation tool helps you create a custom management pack to add extended monitoring support for new network devices, without the need of Microsoft device certification.  
+::: moniker-end
+
+Additionally, this tool enables you to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply. You can download the tool and user guide from the [Microsoft Download Center](https://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx).  This tool is also supported with newer releases of Operations Manager.
 
 ## Network device monitoring capabilities and scope  
 
@@ -78,16 +86,7 @@ Network discovery and monitoring requires the following management packs, which 
 
 -   Microsoft.Windows.Client.NetworkDiscovery  
 
-There are additional management packs that are required to relate network devices to each other and to the agent computers they are connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs from the following list are installed for each of the operating systems in your environment.  
-
--   [Windows Server 2003, 2008, 2008 R2, 2012, and 2012 R2 Operating System](https://www.microsoft.com/download/details.aspx?id=9296)  
-
--   [Windows Client 2000/XP/Vista/Windows 7 Operating Systems](https://mpwiki.viacode.com/default.aspx?g=posts&t=174962)  
-
--   [Windows 8 and 8.1 Client Operating System](https://www.microsoft.com/software-download/windows8ISO)
-
--   [Windows 10 Client Operating System](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot%3aoverviewtab)  
-
+There are additional management packs that are required to relate network devices to each other and to the agent computers they are connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs are installed for each of the operating systems in your environment. See [System Requirements](/system-center/scom/system-requirements).
 
 ## How Network device discovery works  
 

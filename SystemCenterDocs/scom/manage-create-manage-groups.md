@@ -5,7 +5,7 @@ description: This article describes how to create and configure groups for scopi
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/15/2016
+ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -40,7 +40,9 @@ Some of the purposes for using groups are:
 
 Using the Operations console in the **Authoring** workspace, you can only create instance groups. To create a computer group, you must use the Authoring console or work directly in the XML of a management pack.  The following image shows the display of groups in the Operations console.
 
+::: moniker range="sc-om-2016"
 ![Example of Groups Available in Operations Manager](./media/manage-create-manage-groups/om2016-groups-list.png)  
+::: moniker-end
 
 Computer groups only contain computers. Instance groups can contain all object types, such as an instance of a health service or an instance of a SQL database. Both computer groups and instance groups can contain other computer and instance groups. Another way to view the difference between the group types is:  
 

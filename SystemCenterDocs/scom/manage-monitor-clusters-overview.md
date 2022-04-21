@@ -4,7 +4,7 @@ description: This article provides an overview on how to perform monitoring of a
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 01/04/2018
+ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -20,7 +20,13 @@ ms.assetid: 6842cddc-b875-4358-8f00-f4b8ab784739
 
 ::: moniker-end
 
+::: moniker range="sc-om-2016"
 The purpose of this article is to explain how to use System Center Operations Manager to monitor computers that are in clustered configurations. For information on monitoring failover clusters, see the guide for the management pack you are using, such as [Microsoft System Center Management Pack for Windows Server Cluster 2016 ](https://www.microsoft.com/download/details.aspx?id=54701&WT.mc_id=rss_alldownloads_all) or [System Center Management Pack for Windows Server Cluster 2008, 2012, and 2012 R2](https://www.microsoft.com/download/details.aspx?id=2268).  
+::: moniker-end
+
+::: moniker range=">sc-om-2016"
+The purpose of this article is to explain how to use System Center Operations Manager to monitor computers that are in clustered configurations. For information on monitoring failover clusters, see the guide for the management pack you are using.
+::: moniker-end
 
 To begin monitoring computers in a cluster, perform the following steps:  
 
