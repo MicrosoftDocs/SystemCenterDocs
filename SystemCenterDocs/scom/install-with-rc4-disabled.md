@@ -49,12 +49,14 @@ For information about how to configure the encryption types allowed for Kerberos
 
 In an environment which has RC4 disabled, ensure the following steps are implemented:
 
-1. The user account used to install Operations Manager has **AES Attributes** enabled on the **Domain Controller**.
+1. The user account used to install Operations Manager has **AES Attributes** enabled on the **Domain Controller**. Navigate to the user object in Active Directory and verify that the **Account options** have the following checked:
+   - [X] **This account support Kerberos AES 128 bit encryption.**
+   - [X] **This account support Kerberos AES 256 bit encryption.**
 
    ![AES Attributes enabled on the Domain Controller](./media/protocol-disabled/attributes-domain-controller.png)
 
 
-2. AES Encryption type is allowed for Kerberos on the computer where Management Server needs to be installed.
+2. AES Encryption type is allowed for Kerberos on the computer where Management Server needs to be installed. On the Management Server, go to **Local Group Policy Editor** > **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** > **Network security: Configure encryption types allowed for Kerberos** > **Enable AES Encryption**
 
    ![AES encryption type](./media/protocol-disabled/aes-encryption.png)
 
