@@ -5,7 +5,7 @@ description: This article describes how to connect multiple management groups fo
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 02/06/2018
+ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -34,8 +34,20 @@ Connecting management groups offers these additional services:
 
 -   Consolidated monitoring across trust boundaries  
 
+::: moniker range=">=sc-om-2016 <=sc-om-1807"
 > [!IMPORTANT]  
-> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2016 - Operations Manager.  
+> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2016 - Operations Manager. 
+::: moniker-end 
+
+::: moniker range="sc-om-2019"
+> [!IMPORTANT]  
+> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2019 - Operations Manager. 
+::: moniker-end 
+
+::: moniker range="sc-om-2022"
+> [!IMPORTANT]  
+> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2022 - Operations Manager. 
+::: moniker-end 
 
 In addition to all of the communications channels used in the multiple server, single management group configuration, connected management groups require communication between the management servers of the local group and the management servers of the connected group over TCP 5723 and 5724. For a complete list of ports used by Operations Manager, see [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md).  
 

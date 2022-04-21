@@ -4,7 +4,7 @@ description: This article describes how to open and configure the Operations Man
 author: jyothisuri
 ms.author: jsuri
 ms.manager: evansma
-ms.date: 04/29/2019
+ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -67,7 +67,7 @@ In System Center Operations Manager, the web console provides a monitoring inter
 
 ::: moniker-end
 
-By default, the web console session is limited to 30 minutes. You can change this limit by editing the web.config file (C:\Program Files\Microsoft System Center 2016\Operations Manager\\WebConsole\WebHost is the default path) and changing the *autoSignOutInterval* value from "30" to a shorter or longer interval, or disable the session limit by changing the value to "0", as shown in the following example.  
+By default, the web console session is limited to 30 minutes. You can change this limit by editing the web.config file (C:\Program Files\Microsoft System Center\Operations Manager\\WebConsole\WebHost is the default path) and changing the *autoSignOutInterval* value from "30" to a shorter or longer interval, or disable the session limit by changing the value to "0", as shown in the following example.  
 
 ```  
 <connection autoSignIn="true" autoSignOutInterval="0">  

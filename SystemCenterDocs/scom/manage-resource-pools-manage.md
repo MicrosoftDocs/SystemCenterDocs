@@ -5,7 +5,7 @@ description: This article describes how to manage and configure resource pools i
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/15/2016
+ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -96,7 +96,7 @@ To configure high availability, each management server in the resource pool must
 
 1.  Log on to a management server to start the process of exporting certificates.
 
-2.  At the command prompt, change the directory to %ProgramFiles%\System Center Operations Manager 2012\Server.
+2.  At the command prompt, change the directory to %ProgramFiles%\System Center Operations Manager\Server.
 
 3.  Run the following command, specifying a file name of your choosing such as **Server3.cert**:
 
@@ -108,7 +108,7 @@ To configure high availability, each management server in the resource pool must
 
 6.  Log on to a management server to start the process of importing certificates.
 
-7.  At the command prompt, change the directory to %ProgramFiles%\System Center Operations Manager 2012\Server.
+7.  At the command prompt, change the directory to %ProgramFiles%\System Center Operations Manager\Server.
 
 8.  Run the following command for each exported certificate file (except for the file that was exported by the current management server):
 
