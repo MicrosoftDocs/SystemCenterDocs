@@ -28,7 +28,7 @@ In Operations Manager, alerts occur when an issue requires action. An ITSM incid
 
 ## Orchestrator runbooks
 
-Orchestrator runbooks is the preferred method for synchronizing alert data between Operations Manager and other systems. Runbooks provide the following advantages over connectors:
+Orchestrator runbooks are the preferred method for synchronizing alert data between Operations Manager and other systems. Runbooks provide the following advantages over connectors:
 
 - More complex logic that potentially includes multiple systems.
 
