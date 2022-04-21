@@ -4,8 +4,8 @@ description: This article helps you move the Service Manager and data warehouse 
 manager: carmonm
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 05/6/2019
 ms.reviewer: na
 ms.suite: na
@@ -739,4 +739,4 @@ The following high\-level steps are required to move the data warehouse database
 
 ## Next steps
 
-- Review [Upgrade System Center 2012 R2 - Service Manager to System Center - Service Manager](./upgrade-sm.md) to learn about upgrading Service Manager.
+- Review [Upgrade System Center 2012 R2 - Service Manager to System Center - Service Manager](./upgrade-service-manager.md) to learn about upgrading Service Manager.
