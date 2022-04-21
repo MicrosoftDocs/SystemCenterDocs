@@ -61,7 +61,6 @@ Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is re
 ::: moniker range="sc-om-2016"
 >[!NOTE]
 >If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server, gateway server, Web console, and Reporting services role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install these roles is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
->
 
 ::: moniker-end
 ## Configure Windows Operating System to only use TLS 1.2 protocol
@@ -170,7 +169,7 @@ New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -P
 
 ## Additional settings
 
-:: moniker range="sc-om-2016"
+::: moniker range="sc-om-2016"
 
 If this is being implemented for System Center 2016 - Operations Manager, after applying Update Rollup 4, be sure to import the management packs that are included in this rollup located in the following directory: **\Program Files\Microsoft System Center 2016\Operations Manager\Server\Management Packs for Update Rollups**.  
 

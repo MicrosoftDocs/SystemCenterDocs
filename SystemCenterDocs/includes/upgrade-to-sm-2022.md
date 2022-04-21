@@ -126,7 +126,7 @@ FROM    FactPKListStr f
 
 ```  
 
-**Workaround 1:** If you've already upgraded and you do not have problems with transform or load job failures but do have a management pack deployment failure, then follow the steps in the Before Upgrade section. In addition, after the default primary keys have been restored, restart the failed management pack deployment in the Service Manager console by navigating to the Data Warehouse workspace and then select Management Pack.  
+**Workaround 1:** If you've already upgraded and you do not have problems with transform or load job failures but do have a management pack deployment failure, then follow the steps in the (Before Upgrade)[#back-up-service-manager-before-you-upgrade] section. In addition, after the default primary keys have been restored, restart the failed management pack deployment in the Service Manager console by navigating to the Data Warehouse workspace and then select Management Pack.  
 
 **Workaround 2:** If you've upgraded and you've problems with transform or load job failures, then determine if the SystemDerivedMp.Microsoft.SystemCenter.Datawarehouse.Base management pack exists in the DWStagingAndConfig database by running the following query.  
 
