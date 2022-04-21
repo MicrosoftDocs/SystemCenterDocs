@@ -68,14 +68,14 @@ Use the following procedure to create the AD DS container.
      `"C:\Program Files\Microsoft System Center 2016\Operations Manager\Server\MOMADAdmin.exe" "Message Ops" MessageDom\MessageOMAdmins MessageDom\MessageADIntAcct MessageDom**`
 
 ::: moniker range="sc-om-2016"
-     >[!NOTE]
-     > The default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  
-::: moniker end
+   >[!NOTE]
+   > The default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  
+::: moniker-end
 
 ::: moniker range=">sc-om-2016"
-     >[!NOTE]
-     > The default path is C:\Program Files\Microsoft System Center\Operations Manager.
-::: moniker end
+   >[!NOTE]
+   > The default path is C:\Program Files\Microsoft System Center\Operations Manager.
+::: moniker-end
 
 3.  The preceding command-line example will:  
 
