@@ -3619,7 +3619,7 @@
      "redirect_url" : "/system-center/vmm/upgrade-vmm"
 },
 {
-     "source_path" : "SystemCenterDocs/scsm/upgarde.sm.md",
+     "source_path" : "SystemCenterDocs/scsm/upgrade-sm.md",
      "redirect_url" : "/system-center/scsm/upgrade-service-manager"
 },
 {
