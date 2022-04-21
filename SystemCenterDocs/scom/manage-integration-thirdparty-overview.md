@@ -76,7 +76,7 @@ The Operations Manager agent cannot be installed on a Service Manager management
  
 ## Orchestrator
 
-The [System Center Integration Pack for System Center Operations Manager includes activities that allow you to create a runbook in System Center - Orchestrator that interacts with Operations Manager.  You can perform many of the functions that you can perform with Windows PowerShell cmdlets only within the context of an Orchestrator runbook. 
+The System Center Integration Pack for System Center Operations Manager includes activities that allow you to create a runbook in System Center - Orchestrator that interacts with Operations Manager.  You can perform many of the functions that you can perform with Windows PowerShell cmdlets only within the context of an Orchestrator runbook. 
 The activities included in the Operations Manager Integration Pack address the following scenarios:
 
 * Retrieve and modify alerts.  This includes the ability to monitor for an alert to be created or changed, a feature which directly supports the connector scenario with other management systems.  

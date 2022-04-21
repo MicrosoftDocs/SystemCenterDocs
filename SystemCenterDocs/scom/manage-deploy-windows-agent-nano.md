@@ -5,12 +5,12 @@ description: This article describes how to install the Operations Manager agent 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/01/2017
+ms.date: 04/21/2022
 ms.custom: na, intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-moniker range: 'sc-om-2016'
+monikerRange: 'sc-om-2016'
 ---
 
 # Install agent on Nano Server

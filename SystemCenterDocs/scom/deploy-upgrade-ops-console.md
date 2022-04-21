@@ -37,9 +37,15 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
 
-    > [!NOTE]
-    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-    >
+::: moniker range="sc-om-2016"
+   > [!NOTE]
+   > The default path is C:\Program Files\Microsoft System Center 2016\Operations Manager. 
+::: moniker-end
+    
+::: moniker range=">sc-om-2016"
+   > [!NOTE]
+   > The default path is C:\Program Files\Microsoft System Center\Operations Manager.
+::: moniker-end
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that are returned by the Prerequisites checker, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -73,11 +79,11 @@ Before you begin the upgrade process, make sure that your server meets the minim
 3.  Browse to the **HKey_Local_Machine\Software\Microsoft\Microsoft Operations Manager\3.0\Setup** key. 
 
 ::: moniker range="sc-om-2016"
-The value of the **UIVersion** entry is 7.2.11719.0.
+     The value of the **UIVersion** entry is 7.2.11719.0.
 ::: moniker-end
 
 ::: moniker range="sc-om-1801"
-The value of **UIVersion** is 8.0.13053.0. 
+     The value of **UIVersion** is 8.0.13053.0. 
 ::: moniker-end 
 
 

@@ -21,7 +21,11 @@ ms.assetid: 91b1dd4c-6ce2-442b-826f-21a265ed3ac7
 
 ::: moniker-end
 
-My Workspace provides you with a private area in the Operations and Web console that you can customize for your specific needs.  Using My Workspace in the Operations console, you can create folders to organize the workspace, add shortcuts to favorite views, save useful searches, and create views that are only visible to you. From 1807 and later, you can create dashboards as well as add an existing dashboard from the Monitoring workspace. See [Using My Workspace in Web console](manage-web-console-my-workspace.md) for additional information.
+My Workspace provides you with a private area in the Operations and Web console that you can customize for your specific needs. Using My Workspace in the Operations console, you can create folders to organize the workspace, add shortcuts to favorite views, save useful searches, and create views that are only visible to you. 
+
+::: moniker range=">=sc-om-1807"
+You can create dashboards as well as add an existing dashboard from the Monitoring workspace. See [Using My Workspace in Web console](manage-web-console-my-workspace.md) for additional information.
+::: moniker-end
 
 Your configuration of My Workspace will be available to you in any Operations or Web console that you log in to using the same Windows credentials.  
 

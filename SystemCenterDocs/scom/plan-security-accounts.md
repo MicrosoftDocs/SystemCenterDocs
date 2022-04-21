@@ -64,11 +64,9 @@ The domain account that is specified for the action account is granted with Log 
 
 * Name:  Worker Process Logon Type
 * Type: REG_DWORD
-
 ::: moniker range=">=sc-om-2016 <=sc-om-1807"
 * Values: Four (4) -  Log on as batch, Two (2) -  Allow log on locally and Five (5) - Log on as Service.  Default value is 2. 
 ::: moniker-end  
-
 ::: moniker range=">=sc-om-2019"
 * Values: Four (4) - Log on as Batch, Two (2) -  Allow log on locally, and Five (5) - Log on as Service.  Default value is 5. 
 ::: moniker-end 
