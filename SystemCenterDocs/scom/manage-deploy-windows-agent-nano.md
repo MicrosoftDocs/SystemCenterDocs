@@ -10,6 +10,7 @@ ms.custom: na, intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
+moniker range: 'sc-om-2016'
 ---
 
 # Install agent on Nano Server

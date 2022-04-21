@@ -5,7 +5,7 @@ description: This article describes how to upgrade an Operations console to the 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 01/15/2018
+ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -70,7 +70,15 @@ Before you begin the upgrade process, make sure that your server meets the minim
     > [!CAUTION]
     > Incorrectly editing the registry can severely damage your system. Before you make changes to the registry, you should back up any valued data that is on the computer.
 
-3.  Browse to the **HKey_Local_Machine\Software\Microsoft\Microsoft Operations Manager\3.0\Setup** key. For System Center 2016 - Operations Manager, the value of the **UIVersion** entry is 7.2.11719.0.  For version 1801, the value of **UIVersion** is 8.0.13053.0.  
+3.  Browse to the **HKey_Local_Machine\Software\Microsoft\Microsoft Operations Manager\3.0\Setup** key. 
+
+::: moniker range="sc-om-2016"
+The value of the **UIVersion** entry is 7.2.11719.0.
+::: moniker-end
+
+::: moniker range="sc-om-1801"
+The value of **UIVersion** is 8.0.13053.0. 
+::: moniker-end 
 
 
 ## Next steps

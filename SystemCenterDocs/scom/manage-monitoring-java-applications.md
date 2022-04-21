@@ -4,7 +4,7 @@ description: This article describes the concepts and recommendations for monitor
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 04/24/2019
+ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -24,7 +24,7 @@ Java Application Performance Monitoring (APM) in System Center - Operations Mana
 Java Application Performance Monitoring shares many concepts with .NET Application Performance Monitoring. However, there are some important differences, including: object hierarchy, the method for working with overrides and alerting (Java Application Performance Monitoring has no authoring and configuration template, so you change configurations with management pack overrides), and sever-level information is not handled in Java Application Performance Monitoring reports.  
 
 ## Supported configurations  
-The Management Pack for Java Application Performance Monitoring requires Windows Server 2012 R2 and Operations Manager.  
+The Management Pack for Java Application Performance Monitoring requires applicable Windows Server version and Operations Manager.  
 
 Supported configurations:  
 

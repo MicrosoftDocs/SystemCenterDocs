@@ -4,7 +4,7 @@ description: This article describes how to integrate Operations Manager with oth
 author: jyothisuri
 ms.author: jsuri
 ms.manager: evansma
-ms.date: 04/29/2019
+ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -28,7 +28,7 @@ In Operations Manager, alerts occur when an issue requires action. An ITSM incid
 
 ## Orchestrator runbooks
 
-Starting with System Center 2012, Orchestrator runbooks have replaced product connectors as the preferred method for synchronizing alert data between Operations Manager and other systems. Runbooks provide the following advantages over connectors:
+Orchestrator runbooks is the preferred method for synchronizing alert data between Operations Manager and other systems. Runbooks provide the following advantages over connectors:
 
 - More complex logic that potentially includes multiple systems.
 
@@ -44,7 +44,11 @@ Product connectors allow communication between Operations Manager and other mana
 
 The one challenge that Orchestrator runbooks have in comparison to connectors is  throughput.  System Center - Orchestrator is a scalable product with the ability to distribute runbooks across multiple servers.  Alert synchronization though typically requires relatively few runbooks (or even a single runbook depending on requirements and complexity) running every time an alert is created or modified. This can create a bottleneck when handling a high volume of alerts.
 
-The connector framework in Operations Manager was designed to be lightweight technology focused on a single function supporting a high volume of alerts. System Center 2016 and later has the same connector framework from Operations Manager 2012/2012 R2 and 2007 R2. New connectors can be created using the Operations Manager Connector Framework.  Verify from your vendor if the existing connector released for Operations Manager 2012/2012 R2 will work without modification for Operations Manager 2016 and later.
+The connector framework in Operations Manager was designed to be lightweight technology focused on a single function supporting a high volume of alerts. 
+
+::: moniker range="sc-om-2016"
+System Center 2016 and later has the same connector framework from Operations Manager 2012/2012 R2 and 2007 R2. New connectors can be created using the Operations Manager Connector Framework.  Verify from your vendor if the existing connector released for Operations Manager 2012/2012 R2 will work without modification for Operations Manager 2016 and later.
+::: moniker-end
 
 
 ## System Center Integration

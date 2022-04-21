@@ -5,7 +5,7 @@ description: This article provides an overview of using exception handlers to de
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 10/14/2019
+ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -37,22 +37,6 @@ The default list of exception handlers includes:
 - AppDomain.OnUnhandledExceptionEvent
 - Runtime.Remoting.Messaging.ReturnMessage..ctor
 - Windows.Forms.DataGridView.OnDataError
-
-For System Center 2012 SP1 these resources are included:
-
-- Office.Server.Data.SqlSession.LogException
-- Office.Excel.Server.CalculationServer.Proxy.ExcelServerProxy.ProcessSoapException
-- Office.Excel.Server.CalculationServer.Proxy.ExcelServerProxy.ProcessWebException
-- SharePoint.Portal.WebControls.BusinessDataWebPart.ConstructErrorMessage
-- SharePoint.Diagnostics.ULS.SendEventTag
-- SharePoint.ApplicationRuntime.SPRequestModule.IsWebPartOnExceptionStack
-- SharePoint.Utilities.SqlSession.LogException
-- Office.Web.Environment.Sharepoint.Diagnostics.ULS.SendExceptionTag
-- SharePoint.Diagnostics.ULS.SendExceptionTag
-- Office.Server.Diagnostics.ULS.SendExceptionTag
-- Workflow.Runtime.WorkflowExecutor.IsIrrecoverableException
-- ServiceModel.DiagnosticUtility.IsFatal
-- Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters
 
 ## Add an exception handler
 
