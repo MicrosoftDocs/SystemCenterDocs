@@ -1,7 +1,7 @@
 ---
 description: Descriptions of the new features in System Center DPM
 manager:
-ms.topic: article
+ms.topic: include
 author: jyothisuri
 ms.prod: system-center
 ms.date: 04/22/2022

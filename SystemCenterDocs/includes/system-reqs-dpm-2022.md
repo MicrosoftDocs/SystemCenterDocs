@@ -1,7 +1,7 @@
 ---
 description: This article is a primer for the necessary components to deploy DPM 2022 in your environment.
 manager: evansma
-ms.topic: article
+ms.topic: include
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
@@ -63,7 +63,7 @@ DPM 2022 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 >[!NOTE]
 > If you are upgrading SQL Database to SQL 2017 or later, ensure you install SQL SSRS post SQL upgrade.
 
-## DPM Server
+## DPM server
 
 |Requirement|Details|
 |-----------|-------|
