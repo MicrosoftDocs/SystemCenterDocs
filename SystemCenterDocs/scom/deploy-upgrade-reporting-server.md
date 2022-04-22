@@ -28,7 +28,7 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 ::: moniker range=">=sc-om-2016 <=sc-om-2019"
 
-## Before performing the upgrade
+## Before you perform the upgrade
 
 When you try to upgrade Reporting server to System Center Operations Manager 2019 Reporting server, the upgrade fails for the following configuration:
 
@@ -43,7 +43,7 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
 
 ::: moniker-end
 
-## To upgrade the Reporting server
+## Upgrade the Reporting server
 
 1.  Log on to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group and the SQL Server sysadmin fixed server role.
 
@@ -67,7 +67,7 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
 
 8.  When upgrade is finished, the **Upgrade complete** page appears. Click **Close**.
 
-## To upgrade the Reporting server from the Command Prompt
+## Upgrade the Reporting server from the Command Prompt
 
 1.  Log on to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
 
