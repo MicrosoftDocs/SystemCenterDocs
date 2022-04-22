@@ -5,7 +5,7 @@ description: This article provides a high-level overview of what preparations yo
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 07/27/2018
+ms.date: 04/22/2022
 ms.custom: na, intro-deployment
 ms.prod: system-center
 ms.technology: operations-manager
@@ -32,6 +32,8 @@ For information about connecting management groups, see [Connecting Management G
 
 ## Before you begin
 
+::: moniker range=">=sc-om-2016 <=sc-om-2019"
+
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
 -   [Release Notes for System Center 2019 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2019)
@@ -43,6 +45,17 @@ Before you begin your deployment, you should read the release notes, and ensure 
 -   [Release Notes for System Center 2016 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2016)
 
 -   [System Requirements for System Center Operations Manager](./system-requirements.md)
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
+
+-   [System Requirements for System Center Operations Manager](./system-requirements.md)
+
+::: moniker-end
+
 
 ### Operations Manager Administrators role assignment
 
