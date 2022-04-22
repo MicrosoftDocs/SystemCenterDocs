@@ -52,8 +52,6 @@ Before you begin your deployment, you should read the release notes, and ensure 
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
--   [Release Notes for System Center 2019 - Operations Manager](./release-notes-om.md?preserve-view=true&view=sc-om-2019)
-
 -   [System Requirements for System Center Operations Manager](./system-requirements.md)
 
 ::: moniker-end
