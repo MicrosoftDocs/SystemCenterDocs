@@ -5,7 +5,7 @@ description: This guide provides the post-upgrade tasks you must perform after u
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/23/2020
+ms.date: 04/22/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -89,7 +89,7 @@ Use the following steps to fix this issue:
 
 1.	After you upgrade to 2019, export the default management pack to a folder.
 2.	Open **Microsoft.SystemCenter.OperationsManager.DefaultUser.xml** from the exported folder.
-3.	Rename all the AD rules to use *<NetBIOS Domain Name of Management Server>* instead of *<FQDN of Management Server>*, example below.
+3.	Rename all the AD rules to use \<NetBIOS Domain Name of Management Server\> instead of \<FQDN of Management Server\>, example below.
 
     >[!NOTE]
     > Domain name is case-sensitive.

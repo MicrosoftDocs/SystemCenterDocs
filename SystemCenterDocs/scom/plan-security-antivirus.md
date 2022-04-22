@@ -5,7 +5,7 @@ description: This article provides design guidance for anti-virus exclusions as 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 07/06/2020
+ms.date: 04/22/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -48,14 +48,31 @@ The following directory-specific exclusions for Operations Manager include real-
 >[!NOTE]
 >When a directory that is to be excluded has a directory name greater than 8 characters long, add both the short and long directory names of the directory to the exclusion list. These names are required by some antivirus programs to traverse sub-directories.
 
+::: moniker range="sc-om-2016"
+
 |Component | Directory Exclusion |
 |----------|----------|
 |**SQL Server database server** | Exclude the directory containing the .ldf and .mdf files for all Operations Manager databases,<br>Report server databases, and the **master** and **tempdb** databases. |
-|**Management server** | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\Health Service State for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center\Operations Manager\Server\Health Service State for Operations Manager 1801 and higher. |
+|**Management server** | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\Health Service State |
 |**Gateway server** | %ProgramFiles%\System Center Operations Manager\Gateway\Health Service State |
 |**Windows agent** |%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State |
-|**Reporting server** | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Reporting for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center\Operations Manager\Reporting for Operations Manager 1801 and higher. |
-|**Web Console server** |%ProgramFiles%\Microsoft System Center 2016\Operations Manager\WebConsole for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center \Operations Manager\WebConsole for Operations Manager 1801 and higher. |
+|**Reporting server** | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Reporting  |
+|**Web Console server** |%ProgramFiles%\Microsoft System Center 2016\Operations Manager\WebConsole |
+
+::: moniker-end
+
+::: moniker range=">=sc-om-1801"
+
+|Component | Directory Exclusion |
+|----------|----------|
+|**SQL Server database server** | Exclude the directory containing the .ldf and .mdf files for all Operations Manager databases,<br>Report server databases, and the **master** and **tempdb** databases. |
+|**Management server** | %ProgramFiles%\Microsoft System Center\Operations Manager\Server\Health Service State |
+|**Gateway server** | %ProgramFiles%\System Center Operations Manager\Gateway\Health Service State |
+|**Windows agent** |%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State |
+|**Reporting server** | %ProgramFiles%\Microsoft System Center\Operations Manager\Reporting |
+|**Web Console server** | %ProgramFiles%\Microsoft System Center \Operations Manager\WebConsole |
+
+::: moniker-end
 
 ## Exclusion of file type by extension
 
