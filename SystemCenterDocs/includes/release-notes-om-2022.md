@@ -20,6 +20,8 @@ This article summarizes the release notes for Operations Manager 2022.
 **Description:** Operations console for Operations Manager 2022 fails to connect with Operations Manager 2019 management group.
 
 **Workaround:**
-- Use Operations Manager 2019 operations console to connect with Operations Manager 2022 management group
+- Use Operations Manager 2019 operations console to connect with Operations Manager 2022 management group.
+
   or
-- Use separate console machines for Operations Manager 2019 and Operations Manager 2022, and use them to connect to the respective Servers.
+
+- Use separate console machines for Operations Manager 2019 and Operations Manager 2022, and use them to connect to the respective servers.
