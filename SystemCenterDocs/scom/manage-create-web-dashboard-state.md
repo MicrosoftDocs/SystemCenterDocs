@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/30/2021
+ms.date: 04/22/2022
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-2016'
@@ -21,7 +21,14 @@ ms.topic: article
 
 ::: moniker-end
 
-In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Health State widget.
+
+::: moniker range="sc-om-1801"
+In System Center Operations Manager version 1801 and later, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Health State widget.
+::: moniker-end
+
+::: moniker range=">=sc-om-1807"
+System Center Operations Manager Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Health State widget.
+::: moniker-end
 
 ## Add widget to dashboard
 
@@ -89,6 +96,7 @@ To perform these actions, hover your mouse over the widget and click on the elli
    * Select **Export to Excel** to export the alert data to an Excel file.
    * Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Click **Save personalization** when you have completed making your changes.  
 
+:::moniker range="sc-om-2019"
 
 ## Additional view options in State widget
 
@@ -102,6 +110,17 @@ In earlier releases, this feature is not available for State widget, and on all 
 
 With Operations Manager 2019 UR3 and later, you can sort the results columns in the State widget, also group the columns. For more information, see [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
 
+::: moniker-end
+
+:::moniker range="sc-om-2022"
+
+## View options in State widget
+
+State widget supports sort by option.
+
+You can sort the results columns in the State widget, also group the columns. For more information, see [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+
+::: moniker-end
 
 ## Next steps
 
