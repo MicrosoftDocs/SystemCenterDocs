@@ -34,7 +34,7 @@ The following table lists the command-line parameters for installing features of
 |/ActionAccountUser:|The domain and user name of the Management server action account.<br><br>Used if you do not want to specify the Local System|
 |/ActionAccountPassword:|The password for the Management server action account.<br><br>Used if you do not want to specify the Local System.|
 |/AcceptEndUserLicenseAgreement:|0: Do not accept the End User License Agreement (EULA).<br><br>1: Accept the End User License Agreement (EULA).<br><br>When performing a clean installation of System Center Operations Manager, this switch is needed for all management servers. It is also needed for other scripted installations.|
-|/components|OMServer: install a management server.<br><br>OMConsole: install an Operations console.<br><br>OMWebConsole: install a web console.<br><br>OMReporting: install a Reporting server.|
+|/components:|OMServer: install a management server.<br><br>OMConsole: install an Operations console.<br><br>OMWebConsole: install a web console.<br><br>OMReporting: install a Reporting server.|
 |/DatabaseName:|The name of the Operational database.|
 |/DWSqlServerInstance:|The data warehouse server and instance `<server\instance>` or Always On availability group listener.|
 |/DWSqlInstancePort:| The SQL server instance port number.|
