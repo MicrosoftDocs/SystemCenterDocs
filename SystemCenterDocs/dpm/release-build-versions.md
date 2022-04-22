@@ -34,7 +34,7 @@ The following table lists the build versions for Data Protection Manager 2022.
 
 | Build Number | KB |Release Date | Description |
 | --- | --- |-------------| --- |
-| -  | n/a | - |System Center 2022 Data Protection Manager     |
+| 10.22.123.0 | n/a |May 2022 |System Center 2022 Data Protection Manager     |
 
 ::: moniker-end
 
