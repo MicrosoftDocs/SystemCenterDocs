@@ -5,7 +5,7 @@ description: This article describes the different command-line arguments you wou
 author: jyothisuri
 manager: evansma
 ms.author: jsuri
-ms.date: 01/24/2018
+ms.date: 04/22/2022
 ms.custom: na, intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
