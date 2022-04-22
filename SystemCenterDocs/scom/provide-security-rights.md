@@ -5,7 +5,7 @@ description: This article provides information on how to provide security rights
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 08/25/2020
+ms.date: 04/21/2022
 ms.prod: system-center
 monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
@@ -29,7 +29,7 @@ This article provides information on how to provide security rights to  group Ma
 To provide *log on as a service* right to gMSA accounts, follow these steps:
 
 
-1.	Open the *Local Security Policy* MMC snap-in.
+1.	Open the *Local Security Policy* MMC snap-in. Or you can open a run box and type: `secpol.msc`
 2.	Go to **Local Policies**>**User Rights Assignment**
 3.	Double-click **Log on as a service** job under **Policy**.
 4.	Add the gMSAs to the list of accounts that are allowed to log on as a service.
@@ -51,16 +51,17 @@ To provide *log on as a service* right to gMSA accounts, follow these steps:
 ## Provide *Log on as a batch* right
 To grant *log on as a batch right* to Data Writer and Data Reader gMSAs, follow these steps:
 
-1.	Follow step 1 and 2 from above procedure.
-2.	Select **Log on as a batch** under **Policy**.  
-3.  Add the gMSAs to the list of accounts that are allowed to log on as a batch.
+1.	Open the *Local Security Policy* MMC snap-in. Or you can open a run box and type: `secpol.msc`
+2.	Go to **Local Policies**>**User Rights Assignment**
+3.	Select **Log on as a batch** under **Policy**.  
+4.  Add the gMSAs to the list of accounts that are allowed to log on as a batch.
 
     ![log on as a batch](media/gmsa/batch-job-properties.png)
 
 ## Generate security audits
 Provide permissions to the gMSA SDK account if you wish to generate auditing events. Follow these steps:
 
-1.	Open the *Local Security Policy* MMC snap-in.
+1.	Open the *Local Security Policy* MMC snap-in. Or you can open a run box and type: `secpol.msc`
 2.	Go to **Local Policies**>**User Rights Assignment**
 3.	Double-click **Generate security audits** under **Policy**.
 4.	Add the gMSAs to the list of accounts that are allowed to generate security audits.
