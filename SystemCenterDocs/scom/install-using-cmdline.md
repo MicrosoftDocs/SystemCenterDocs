@@ -62,7 +62,7 @@ The following table lists the command-line parameters for installing features of
 |/UseLocalSystemDASAccount|Used to specify the Local System for the Data Access service account.|
 |/UseMicrosoftUpdate:|0: Do not opt in to Microsoft Update.<br><br>1: Opt in to Microsoft Update.|
 |/uninstall|Uninstalls Operations Manager. Use **/components** to indicate specific features to uninstall. If **/components** is not specified, it will uninstall all features of Operations Manager on the server.|
-|/WebSiteName:|The name of the website. For default web installation, specify "**Default Web Site**".<br <br>Used for web console installations.|
+|/WebSiteName:|The name of the website. For default web installation, specify "**Default Web Site**".<br><br>Used for web console installations.|
 |/WebConsoleUseSSL|Specify only if your website has Secure Sockets Layer (SSL) activated.<br><br>Used for web console installations.|
 |/WebConsoleAuthorizationMode:|Mixed: Used for intranet scenarios.<br><br>Network: Used for extranet scenarios.<br><br>Used for web console installations.|
 
