@@ -5,7 +5,7 @@ description: This article describes how to upgrade an Operations Manager agent t
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 06/18/2021
+ms.date: 04/22/2022
 ms.custom: na
 ms.prod: system-center
 monikerRange: ' sc-om-1801 || sc-om-2019 || sc-om-2022'
@@ -118,7 +118,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 2.  Under **Device Management**, click **Agent Managed**.
 
-3.  In the Agent Managed pane, verify that the value listed in the **Version** column is 10.19.10050.0.
+3.  In the Agent Managed pane, verify that the value listed in the **Version** column is 10.22.10118.0.
 
     > [!NOTE]
     > It can take up to one hour for the console to show the updated version of the agent.
