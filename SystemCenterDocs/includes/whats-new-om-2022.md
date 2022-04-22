@@ -60,14 +60,14 @@ Operations Manager 2022 provides improved installation experience as detailed be
 
 Values of few registries which are customized (commonly) are retained when an update (UR/Hotfix) is installed or upgraded from Operations Manager 2019 to Operations Manager 2022.  Here is the list of registries that are backed up & retained:
 
-| List of registries that are backed up and retained |
-| ---------------------------------------------------|
-| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Initial Database Page Count |
-| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Cache Maximum |
-| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Maximum Sessions |
-| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Version Store Maximum |
-| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Page Hit Cache Size |
-| HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence Checkpoint Depth Maximum |
+|     Registry Key Location                                                        |     Value                            |
+|----------------------------------------------------------------------------------|--------------------------------------|
+|     HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence |     Cache Maximum                    |
+|     HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence |     Checkpoint Depth Maximum         |
+|     HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence |     Initial Database Page   Count    |
+|     HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence |     Maximum Sessions                 |
+|     HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence |     Page Hit Cache Size              |
+|     HKLM:\System\CurrentControlSet\Services\HealthService\Parameters\Persistence |     Version Store Maximum            |
 
 - Value of custom install location of Monitoring Agent is retained when an update (UR/Hotfix) is installed or upgraded from Operations Manager 2019 to Operations Manager 2022. 
 - Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server. 
