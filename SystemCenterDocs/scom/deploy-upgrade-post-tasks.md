@@ -5,7 +5,7 @@ description: This guide provides the post-upgrade tasks you must perform after u
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/23/2020
+ms.date: 04/22/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
