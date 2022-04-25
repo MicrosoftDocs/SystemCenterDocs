@@ -46,6 +46,10 @@ When you upgrade an agent, the Operations Manager installer service runs and is 
 > [!NOTE]
 > If you have Audit Collection Services (ACS) enabled for an agent prior to this upgrade, it is disabled as part of the agent upgrade process. ACS must be re-enabled after upgrade completes.
 
+::: moniker-end
+
+::: moniker range="sc-om-2019"
+
 If you are upgrading agents that are deployed to a computer that has other System Center 2012 R2 or 2016 Operations Manager features installed, you must do the following:
 
 -   If the agent is installed on a computer that has System Center 2012 R2 or 2016 Operations Manager Operations console or Web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling System Center 2012 R2 or 2016 Operations Manager in Programs and Features. You can reinstall these consoles after upgrade is completed.
@@ -58,6 +62,8 @@ If you are upgrading agents that are deployed to a computer that has other Syste
 -   If the agent is installed on a computer that has System Center 2019 Operations Manager Operations console or Web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling System Center 2019 Operations Manager in Programs and Features. You can reinstall these consoles after upgrade is completed.
 
 ::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
 > [!NOTE]
 > If UAC is enabled, you must run the agent upgrade from an elevated command prompt.
@@ -127,6 +133,8 @@ Manually-installed agents are agents that were installed manually, either from t
 
 2.  Under **Device Management**, click **Agent Managed**.
 
+::: moniker-end
+
 ::: moniker range=">=sc-om-1807 <=sc-om-2019"
 
 3.  In the Agent Managed pane, verify that the value listed in the **Version** column is 10.19.10050.0.
@@ -139,6 +147,8 @@ Manually-installed agents are agents that were installed manually, either from t
 3.  In the Agent Managed pane, verify that the value listed in the **Version** column is 10.22.10118.0.
 
 ::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
    > [!NOTE]
    > It can take up to one hour for the console to show the updated version of the agent.
