@@ -5,7 +5,7 @@ description: This article describes how to upgrade the Reporting server to the l
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/14/2018
+ms.date: 04/22/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -26,7 +26,7 @@ Use this procedure to upgrade a stand-alone Reporting server to System Center Op
 
 Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
-## Before performing the upgrade
+## Before you perform the upgrade
 
 When you try to upgrade Reporting server to System Center Operations Manager 2019 Reporting server, the upgrade fails for the following configuration:
 
@@ -39,7 +39,10 @@ The prerequisites checker will report the following error:  **Management Server 
 
 To work around this issue, install the System Center 2016 or 1801 or 1807 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 2019.  Once the upgrade is successfully completed, you can re-run setup and uninstall the upgraded Operations console from the Reporting server.  
 
-## To upgrade the Reporting server
+::: moniker-end
+
+
+## Upgrade the Reporting server
 
 1.  Log on to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group and the SQL Server sysadmin fixed server role.
 
@@ -53,7 +56,7 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
 4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
 
     > [!NOTE]
-    > For System Center Operations Manager 2019, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    > The default path is C:\Program Files\Microsoft System Center\Operations Manager.
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -63,7 +66,7 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
 
 8.  When upgrade is finished, the **Upgrade complete** page appears. Click **Close**.
 
-## To upgrade the Reporting server from the Command Prompt
+## Upgrade the Reporting server from the Command Prompt
 
 1.  Log on to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
 
