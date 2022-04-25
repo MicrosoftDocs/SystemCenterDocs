@@ -34,9 +34,11 @@ VMM 1801 and later supports QoS on all managed clusters and also SOFS, running o
 > VMM 2019 UR3 and later supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](deploy-manage-azure-stack-hci.md).
 ::: moniker-end
 
-::: moniker range=sc-vmm-2022"
+::: moniker range="sc-vmm-2022"
+
 > [!NOTE]
 > VMM 2022 supports [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2 and 21H2)](deploy-manage-azure-stack-hci.md).
+
 ::: moniker-end
 
 **Use these steps**:
