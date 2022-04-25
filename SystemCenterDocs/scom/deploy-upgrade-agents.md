@@ -46,7 +46,6 @@ When you upgrade an agent, the Operations Manager installer service runs and is 
 > [!NOTE]
 > If you have Audit Collection Services (ACS) enabled for an agent prior to this upgrade, it is disabled as part of the agent upgrade process. ACS must be re-enabled after upgrade completes.
 
-::: moniker range=">=sc-om-2019"
 If you are upgrading agents that are deployed to a computer that has other System Center 2012 R2 or 2016 Operations Manager features installed, you must do the following:
 
 -   If the agent is installed on a computer that has System Center 2012 R2 or 2016 Operations Manager Operations console or Web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling System Center 2012 R2 or 2016 Operations Manager in Programs and Features. You can reinstall these consoles after upgrade is completed.
@@ -66,7 +65,7 @@ If you are upgrading agents that are deployed to a computer that has other Syste
 > [!NOTE]
 > Information about upgraded agents might not appear in the Operations console for up to 60 minutes after performing the upgrade.
 
-## Upgrading push-installed agents
+## Upgrade push-installed agents
 
 Push-installed agents are agents that were installed by using the **Computer and Device Management Wizard**. Use the following procedures to upgrade these agents.
 
@@ -90,7 +89,7 @@ Push-installed agents are agents that were installed by using the **Computer and
 
 6.  When the upgrade is completed, click **Close**.
 
-## Upgrading manually installed agents
+## Upgrade manually installed agents
 
 Manually-installed agents are agents that were installed manually, either from the Command Prompt, or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents.
 
@@ -120,7 +119,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
     ```
 
-## Verifying Windows agent upgrade
+## Verify Windows agent upgrade
 
 #### To verify the Windows agent upgrade
 
@@ -141,10 +140,10 @@ Manually-installed agents are agents that were installed manually, either from t
 
 ::: moniker-end
 
-    > [!NOTE]
-    > It can take up to one hour for the console to show the updated version of the agent.
+     > [!NOTE]
+     > It can take up to one hour for the console to show the updated version of the agent.
 
-## Upgrading UNIX and Linux agents
+## Upgrade UNIX and Linux agents
 
 #### To upgrade UNIX and Linux agents
 
