@@ -46,7 +46,7 @@ After the upgrade has finished, use the following procedure to re-enable subscri
 2. In the Operations console, in the navigation pane, click the **Administration** button.
 
     > [!NOTE]
-    > When you run the Operations console on a computer that is not a management server, the Connect To Server dialog box appears. In the Server name text box, type the name of the Operations Manager management server to which you want to connect.
+    > When you run the Operations console on a computer that is not a management server, the **Connect To Server** dialog box appears. In the **Server name** text box, type the name of the Operations Manager management server to which you want to connect.
 
 
 3. In the **Administration** pane, under **Notifications**, click **Subscriptions**.
@@ -87,7 +87,7 @@ Previous AD rules do not work after upgrading to Operations Manager 2019. After 
 
 Use the following steps to fix this issue:
 
-1.	After you upgrade to 2019, export the default management pack to a folder.
+1.	After you upgrade to 2022, export the default management pack to a folder.
 2.	Open **Microsoft.SystemCenter.OperationsManager.DefaultUser.xml** from the exported folder.
 3.	Rename all the AD rules to use \<NetBIOS Domain Name of Management Server\> instead of \<FQDN of Management Server\>, example below.
 
