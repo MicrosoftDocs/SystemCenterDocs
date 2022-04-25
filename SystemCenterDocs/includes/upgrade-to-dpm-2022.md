@@ -6,7 +6,7 @@ author:  jyothisuri
 ms.author: jsuri
 ms.prod:  system-center
 keywords:
-ms.date:  04/22/2022
+ms.date:  04/25/2022
 title:  include file
 ms.technology:  data-protection-manager
 ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
@@ -18,7 +18,6 @@ You can install System Center - 2022 Data Protection Manager (DPM) on Windows Se
 You can upgrade to DPM 2022 from the following versions:
 
 - DPM 2019
-- DPM 2016
 
   Before you upgrade to or install DPM 2022, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
@@ -50,7 +49,7 @@ DPM 2022 setup allows you to migrate the DPM database to different SQL Servers d
 
 ### Possible database migration scenarios
 
-The following scenarios exist when you are upgrading DPM 2019/2016 to DPM 2022 using a:
+The following scenarios exist when you are upgrading DPM 2019 to DPM 2022 using a:
 
 1. Local instance and migrating to a remote instance of SQL Server during setup.
 2. Remote instance and migrating to a local instance of SQL Server during setup.
@@ -69,7 +68,7 @@ If you want to use a new SQL server to migrate the DPM database, before you upgr
 
 Once you have the new instance of SQL Server installed and prepared for DPM use, you must make a backup of the current DPM database and restore it on the new SQL Server.
 
-### Pre-upgrade steps: Backup and restore DPM 2019/2016 database to a new SQL instance
+### Pre-upgrade steps: Backup and restore DPM 2019 database to a new SQL instance
 
 This example prepares a remote SQL Server cluster to use in a migration.
 
@@ -157,7 +156,7 @@ Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-Datasour
 The changes made through PowerShell are reflected in the UI.
 
 ## Migrate legacy storage to Modern Backup Storage
-After upgrading to DPM 2019 and the operating system to Windows Server 2016/2019, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups are not changed, and continue to function as they were configured in earlier version of your DPM. You can optionally update protection groups to use Modern Backup Storage, is optional. To update the protection group, stop protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
+After upgrading to DPM 2019 and the operating system to Windows Server 2019, you can update your existing protection groups to the new DPM 2019 features. By default, protection groups are not changed, and continue to function as they were configured in earlier version of your DPM. You can optionally update protection groups to use Modern Backup Storage, is optional. To update the protection group, stop protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
 
 Use the following steps:
 
