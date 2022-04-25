@@ -3,7 +3,7 @@ title: Orchestrator Integration Toolkit Installation
 description: This article explains how to install the Orchestrator Integration Toolkit.
 author: jyothisuri
 manager: evansma
-ms.date: 02/02/2018
+ms.date: 04/25/2022
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
@@ -26,6 +26,8 @@ This article provides the system requirements and steps to install the Orchestra
 ## System Requirements  
  The installation and use of the Orchestrator Integration Toolkit requires the following hardware and software when installed in a standalone environment.  
 
+::: moniker range="<=sc-orch-2019"
+
 |Component|Minimum Requirement|  
 |---------------|-------------------------|  
 |Processor|2.4 GHz Intel Pentium 4; 2.0 GHz Intel Core 2 Duo or equivalent|  
@@ -33,6 +35,20 @@ This article provides the system requirements and steps to install the Orchestra
 |Hard Disk|60MB|  
 |Operating System|Windows Server 2012 (64-bit)<br /><br /> Windows Server 2008 R2 (64-bit)<br /><br /> Windows 8 (32-bit or 64-bit)<br /><br /> Windows 7 (32-bit or 64-bit)|  
 |Additional Software|Windows Installer version 3.1<br /><br /> Microsoft .NET Framework 3.5, Service Pack 1<br /><br /> Windows Installer XML Toolset (WiX) version 3.5. For System Center 2012 SP1, OIT supports only version 3.5|  
+
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+|Component|Minimum Requirement|  
+|---------------|-------------------------|  
+|Processor|2.4 GHz Intel Pentium 4; 2.0 GHz Intel Core 2 Duo or equivalent|  
+|Memory|Minimum 1GB (recommended 2GB)|  
+|Hard Disk|200MB|  
+|Operating System|Windows Server 2012 or later|  
+|Additional Software|Windows Installer version 3.1<br /><br /> Microsoft .NET Framework 3.5, Service Pack 1<br /><br /> Windows Installer XML Toolset (WiX) version 3.5. For System Center 2012 SP1, OIT supports only version 3.5|  
+
+::: moniker-end
 
 > [!IMPORTANT]
 >  The install for the Orchestrator Integration Toolkit will not fail if Microsoft .NET Framework 3.5, Service Pack 1 is not installed, but different operations in the Command-Line Activity Wizard will fail if it is not present. Ensure that Microsoft .NET Framework 3.5, Service Pack 1 is installed before you install the OIT.  
@@ -53,7 +69,17 @@ This article provides the system requirements and steps to install the Orchestra
 
 #### To install the Orchestrator Integration Toolkit  
 
-1.  Download System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe from the [Microsoft download center](https://www.microsoft.com/download), and then run the installer. The welcome page displays.  
+::: moniker range="<=sc-orch-2019"
+
+1.  Download System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe from the [Microsoft download center](https://www.microsoft.com/download), and then run the installer. The welcome page appears.  
+
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+1. Download System_Center_Orchestrator_IntegrationToolKit-10.22.1.2.exe from [Microsoft Download center](https://www.microsoft.com/download/details.aspx?id=104133) and run the installer. The welcome page appears. 
+
+::: moniker-end
 
 2.  Click **Next**. The License Agreement page displays. To continue, you must select the checkbox next to **I accept the terms in the License Agreement**, then click **Next**.  
 
