@@ -140,8 +140,8 @@ Manually-installed agents are agents that were installed manually, either from t
 
 ::: moniker-end
 
-     > [!NOTE]
-     > It can take up to one hour for the console to show the updated version of the agent.
+   > [!NOTE]
+   > It can take up to one hour for the console to show the updated version of the agent.
 
 ## Upgrade UNIX and Linux agents
 
