@@ -65,6 +65,9 @@ Notification channels must be enabled before you create subscribers. After a sub
 
 9. On the **Schedule Notifications** page, click **Always send notifications**, or **Notify only during the specified times** and click **Add** to create a date range, and then click **Next**.  
 
+    > [!NOTE]
+    > If adding an **Excluding** time period to the **Schedules to send** section, you **must** also add an **Inclusion** period for the exclusion to work. For example, To have a schedule run all day **except** from 12:00pm to 01:00pm, you must add another item with a weekly recurrence of **All day**, or some other time period extending past the end of the exclusion period.
+
 10. Click **Add** to define another subscriber address. Otherwise, click **Finish**, and then click **Close**.  
 
 11. The new subscriber displays in the **Subscribers** pane.  
