@@ -34,7 +34,9 @@ In order to enable an SMS Notification Channel, you will first need the followin
 
 ### How to set COM Port Baud Rate
 1. Open Administrator Command Prompt
+
 2. List all modes: `Mode`
+
 3. Set the COM Port to use a Bits Per Second (Baud) rate of 9600: `Mode Com1: Baud=9600`
 
 ## To enable a text message notification channel  
