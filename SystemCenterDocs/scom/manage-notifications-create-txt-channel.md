@@ -25,7 +25,13 @@ To configure alert notifications for System Center - Operations Manager, your fi
 > [!NOTE]  
 > 1. You are required to have a modem for SMS messaging, which is typically attached directly to the Management Server.
 > 2. The modem used for SMS must support SMS Protocol Data Unit (PDU) mode.
-> 3. The SMS Message limitation is 160 characters.
+> 3. When connected, set the Baud Rate of the COM port the modem is using to **9600**. 
+> > ### Example
+> > 1. Open Administrator Command Prompt
+> > 2. List all modes: `Mode`
+> > 3. Set the COM Port to use a Bits Per Second (Baud) rate of 9600: `Mode Com1: Baud=9600`
+> 
+> 4. The SMS Message limitation is 160 characters.
 
 ## To enable a text message notification channel  
 
