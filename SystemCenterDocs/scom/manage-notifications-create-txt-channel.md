@@ -30,16 +30,14 @@ In order to enable an SMS Notification Channel, you will first need the followin
 
 3. The Baud Rate of the COM port must be set to: **9600**
 
-4. SMS has a character limitation for messages, which is: **160 character limit**
-
-### How to set COM Port Baud Rate
+### How to set COM Port Baud Rate from the Command Line
 1. Open Administrator Command Prompt
 
 2. List all modes: `Mode`
 
 3. Set the COM Port to use a Bits Per Second (Baud) rate of 9600: `Mode Com1: Baud=9600`
 
-## To enable a text message notification channel  
+## To enable a text message notification channel
 
 1.  Log on to the computer with a user account that is a member of the Operations Manager Administrators role.
 
@@ -54,6 +52,9 @@ In order to enable an SMS Notification Channel, you will first need the followin
 6.  In the **Encoding**  box, select the text format for the SMS messages.  
 
 7.  Click **Finish**, and then click **Close**.  
+
+> [!NOTE]
+> When customizing the text message, keep in mind that SMS has a **160 character limit**. Operations Manager cannot send messages using MMS (Multimedia Messaging Service), which includes longer form messages (those over 160 characters).
 
 ## Next steps
 
