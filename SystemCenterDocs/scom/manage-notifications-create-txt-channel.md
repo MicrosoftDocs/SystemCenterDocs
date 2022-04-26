@@ -23,11 +23,13 @@ ms.assetid: 93f9a932-d99d-41b2-ad0c-f5e179f1cccf
 To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using a Short Message Service (SMS) or text message.  
 
 > [!NOTE]  
-> The modem used for SMS must support SMS Protocol Data Unit (PDU) mode.  
+> 1. You are required to have a modem for SMS messaging, which is typically attached directly to the Management Server.
+> 2. The modem used for SMS must support SMS Protocol Data Unit (PDU) mode.
+> 3. The SMS Message limitation is 160 characters.
 
 ## To enable a text message notification channel  
 
-1.  Log on to the computer with a user account that is a member of the Operations Manager Administrators role.  
+1.  Log on to the computer with a user account that is a member of the Operations Manager Administrators role.
 
 2.  In the Operations console, click **Administration**.  
 
