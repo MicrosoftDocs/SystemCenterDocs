@@ -33,6 +33,9 @@ If you upgrade from DPM 2019 to DPM 2022, make sure your installation has the fo
 
 ### Upgrade steps for DPM
 
+>[!Note]
+>If the name of the existing DPM database is DPMDB or DPM server is using a remote SQL server instance shared by multiple DPM servers, the database name needs to be renamed before the upgrade. See the known issue and workaround here.
+
 1. To install DPM, double-click Setup.exe to open the System Center 2022 wizard.
 2. Under Install, click Data Protection Manager to start the setup wizard. Agree to the license terms and conditions and follow the setup wizard.
 
