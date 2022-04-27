@@ -24,6 +24,22 @@ We recommend you to see the following articles for detailed information about wh
 
 ::: moniker-end
 
+::: moniker range="sc-dpm-2022"
+
+This article lists the release notes for System Center 2022 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2022](#dpm-2022-release-notes).
+
+We recommend you to see the following articles for detailed information about what DPM supports and can back up:
+
+- [What can DPM backup](dpm-protection-matrix.md)
+- [What DPM supports](dpm-support-issues.md)
+
+## DPM 2022 release notes
+
+The following sections summarize the release notes for DPM 2022 and include the applicable known issues and workarounds.
+
+::: moniker-end
+
+
 ::: moniker range="sc-dpm-1807"
 
 [!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
@@ -51,6 +67,10 @@ This article lists the release notes for System Center 2016 - Data Protection Ma
 ## DPM 2019 release notes
 
 The following sections summarize the release notes for DPM 2019 and include the applicable known issues and workarounds.
+
+::: moniker-end
+
+::: moniker range=">=sc-dpm-2019"
 
 ### DPM console crashes due to MSDPM Service crash
 
@@ -262,6 +282,79 @@ Follow these steps to replace the existing report files:
 
 6.	After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
 7.	Restart DPM and use the report files.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB**.  
+
+**Description**: If the name of the existing DPM database is **DPMDB**, the upgrade will fail.  
+
+The DPM upgrade process will always rename the DPM database name to **DPMDB**. If the same SQL instance is used by multiple DPM servers, the subsequent upgrade of the other DPM server will fail as there is already a database with the name DPMDB. 
+
+**Workaround**: Rename the corresponding DPM database before you start the upgrade. 
+
+Use these steps to rename the database:
+
+1. Stop the DPM service on the DPM server.  
+2. Run the following SQL commands to rename the database, update the DPM server name in the query below. 
+
+```
+USE master 
+GO 
+ALTER DATABASE DPMDB  
+SET SINGLE_USER  
+WITH ROLLBACK IMMEDIATE 
+GO 
+EXEC master..sp_renamedb 'DPMDB','DPMDB_<DPMSERVERNAME>' 
+GO 
+ALTER DATABASE DPMDB_<DPMSERVERNAME> 
+SET MULTI_USER  
+GO 
+```
+
+3. Update the following registry keys to reflect the updated database name. 
+
+   *Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\DB\ConnectionString*
+
+   *Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\DB\DatabaseName*
+
+   *Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\DB\GlobalDatabaseName*
+
+   *Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\DB\GlobalDbConnectionString*
+
+   :::image type="registry editor" source="media/release-notes/registry-editor.png" alt-text="Screenshot showing registry editor.":::
+
+   :::image type="registry keys editor" source="media/release-notes/registry-editor-1.png" alt-text="Screenshot showing registry keys editor.":::
+
+4. Run DPMsync on the DPM server using DPM management shell.  
+
+   ```
+   DPMSync -Sync
+   ```
+
+### Online Recovery point creation of a datasource might fail with error ID 33505 or 100195 
+
+**Description**: In some scenarios the online recovery point creation of a datasource may fail intermittently with error ID 33505 or 100195.
+
+:::image type="error" source="media/release-notes/error.png" alt-text="Screenshot showing error.":::
+
+:::image type="error message" source="media/release-notes/error1.png" alt-text="Screenshot showing error message.":::
+
+**Workaround**:  
+
+1. Upgrade the [MARS agent](https://aka.ms/azurebackup_agent) to the latest version.  
+
+2. Retry the online backup for the failed datasource.  
+
+3. Create a new disk recovery point and then try the online recovery point again. 
+
+4. Run the consistency check and try the online backup again.  
+
+5. If the online backup is still failing, contact the support team. 
+
+::: moniker range="sc-dpm-2019"
 
 
 ## DPM 2019 UR3 release notes
