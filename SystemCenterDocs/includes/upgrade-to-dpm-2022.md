@@ -26,6 +26,7 @@ You can upgrade to DPM 2022 from the following versions:
 If you upgrade from DPM 2019 to DPM 2022, make sure your installation has the following necessary updates:
 
 - Upgrade the DPM server to DPM 2022.
+- Upgrade the [MARS agent](https://aka.ms/azurebackup_agent) to the latest version (if installed).
 - Update the agents on the protected servers.
 - Upgrade the DPM Remote Administrator on all production servers.
 - Backups continue without rebooting your production server.

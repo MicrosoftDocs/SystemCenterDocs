@@ -76,8 +76,6 @@ Use these steps to rename the database:
 
    :::image type="registry editor" source="media/release-notes/registry-editor.png" alt-text="Screenshot showing registry editor that reflects the database name.":::
 
-   :::image type="registry keys editor" source="media/release-notes/registry-editor-1.png" alt-text="Screenshot showing registry keys editor that reflects the updated database name.":::
-
 4. Run DPMsync on the DPM server using DPM management shell.  
 
    ```
