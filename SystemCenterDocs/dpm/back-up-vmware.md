@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 04/22/2022
+ms.date: 05/02/2022
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:

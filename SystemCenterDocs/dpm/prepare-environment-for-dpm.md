@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 04/22/2022
+ms.date: 05/02/2022
 title: Preparing your environment for System Center Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -16,7 +16,7 @@ ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 
 ::: moniker range="sc-dpm-2022"
 
-Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
+Use the following information to plan the deployment for System Center - Data Protection Manager (DPM).
 
 [!INCLUDE [system-reqs-dpm-2022.md](../includes/system-reqs-dpm-2022.md)]
 
@@ -32,7 +32,7 @@ Use the following information to play the deployment for System Center - Data Pr
 ::: moniker range="<sc-dpm-2022"
 
 
-Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
+Use the following information to plan the deployment for System Center - Data Protection Manager (DPM).
 
 ::: moniker-end
 
