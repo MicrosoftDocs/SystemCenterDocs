@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: jyothisuri
 ms.author: jsuri
 manager: carmonm
-ms.date: 04/08/2022
+ms.date: 05/02/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -37,34 +37,34 @@ We recommend you to see the following articles for detailed information about wh
 
 DPM 2022 has the known issues that are observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes), [UR1](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-ur1-release-notes) and [UR2](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-2019-ur2-release-notes). In addition, the following known issues are observed.
 
-### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB** 
+### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB**
 
 **Description**: If the name of the existing DPM database is **DPMDB**, the upgrade will fail.  
 
-The DPM upgrade process will always rename the DPM database name to **DPMDB**. If the same SQL instance is used by multiple DPM servers, the subsequent upgrade of the other DPM server will fail as there is already a database with the name DPMDB. 
+The DPM upgrade process will always rename the DPM database name to **DPMDB**. If the same SQL instance is used by multiple DPM servers, the subsequent upgrade of the other DPM server will fail as there is already a database with the name DPMDB.
 
-**Workaround**: Rename the corresponding DPM database before you start the upgrade. 
+**Workaround**: Rename the corresponding DPM database before you start the upgrade.
 
 Use these steps to rename the database:
 
 1. Stop the DPM service on the DPM server.  
-2. Run the following SQL commands to rename the database, update the DPM server name in the query below. 
+2. Run the following SQL commands to rename the database, update the DPM server name in the query below.
 
    ```
-   USE master 
-   GO 
+   USE master
+   GO
    ALTER DATABASE DPMDB  
    SET SINGLE_USER  
-   WITH ROLLBACK IMMEDIATE 
-   GO 
-   EXEC master..sp_renamedb 'DPMDB','DPMDB_<DPMSERVERNAME>' 
-   GO 
-   ALTER DATABASE DPMDB_<DPMSERVERNAME> 
+   WITH ROLLBACK IMMEDIATE
+   GO
+   EXEC master..sp_renamedb 'DPMDB','DPMDB_<DPMSERVERNAME>'
+   GO
+   ALTER DATABASE DPMDB_<DPMSERVERNAME>
    SET MULTI_USER  
-   GO 
+   GO
    ```
 
-3. Update the following registry keys to reflect the updated database name. 
+3. Update the following registry keys to reflect the updated database name.
 
    *Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\DB\ConnectionString*
 
@@ -82,7 +82,7 @@ Use these steps to rename the database:
    DPMSync -Sync
    ```
 
-### Online recovery point creation of a datasource might fail with error ID 33505 or 100195 
+### Online recovery point creation of a datasource might fail with error ID 33505 or 100195
 
 **Description**: In some scenarios the online recovery point creation of a datasource may fail intermittently with error ID 33505 or 100195.
 
@@ -96,7 +96,7 @@ Use these steps to rename the database:
 
 2. Retry the online backup for the failed datasource.  
 
-3. Create a new disk recovery point and then try the online recovery point again. 
+3. Create a new disk recovery point and then try the online recovery point again.
 
 4. Run the consistency check and try the online backup again.  
 
