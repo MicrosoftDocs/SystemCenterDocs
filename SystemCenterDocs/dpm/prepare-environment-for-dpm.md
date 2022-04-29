@@ -24,7 +24,7 @@ ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 ::: moniker range="<=sc-dpm-2019"
 
 
-Use the following information to play the deployment for System Center - Data Protection Manager (DPM).
+Use the following information to plan the deployment for System Center - Data Protection Manager (DPM).
 
 ::: moniker-end
 
