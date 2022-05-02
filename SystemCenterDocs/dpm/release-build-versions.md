@@ -6,7 +6,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 03/30/2021
+ms.date: 05/02/2022
 ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 ms.author: jsuri
@@ -27,6 +27,16 @@ This article describes how to determine your current Microsoft System Center –
 > All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2016 – Data Protection Manager and never applied an update rollup, you can  proceed to install the latest one available.
 
 ## Build versions
+
+::: moniker range="sc-dpm-2022"
+
+The following table lists the build versions for Data Protection Manager 2022.
+
+| Build Number | KB |Release Date | Description |
+| --- | --- |-------------| --- |
+| 10.22.123.0 | n/a |May 2022 |System Center 2022 Data Protection Manager     |
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
 
