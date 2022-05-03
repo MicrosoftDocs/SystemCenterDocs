@@ -32,8 +32,8 @@ With DPM 2022, you can use private endpoint to take online backup to Azure Backu
 
 ### Support for VMware vSphere 7.0
 
-DPM 2022 adds support for protecting virtual machines running on VMware 7.0.[Learn more](./back-up-vmware.md)
+DPM 2022 adds support for protecting virtual machines running on VMware 7.0.[Learn more](/system-center/dpm/back-up-vmware)
 
 ### Parallel restore for VMware and Hyper-V virtual machines
 
-DPM 2022 supports [parallel restore of VMware](./back-up-vmware.md#vmware-parallel-restore-in-dpm-2022) and [Hyper-V virtual machines](./back-up-hyper-v-virtual-machines.md#recover-backed-up-virtual-machines). With earlier versions of DPM, restore of VMware VM and Hyper-V virtual machine was restricted to only one restore job at a time. With DPM 2022, by default you can restore 8 VMs in parallel and this number can be increased using a registry key.
+DPM 2022 supports [parallel restore of VMware](/system-center/dpm/back-up-vmware#vmware-parallel-restore-in-dpm-2022) and [Hyper-V virtual machines](/system-center/dpm/back-up-hyper-v-virtual-machines#recover-backed-up-virtual-machines). With earlier versions of DPM, restore of VMware VM and Hyper-V virtual machine was restricted to only one restore job at a time. With DPM 2022, by default you can restore 8 VMs in parallel and this number can be increased using a registry key.

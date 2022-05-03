@@ -34,11 +34,11 @@ With Operations Manager 2022, admin can opt to close an alert of a health monito
 
 ### Create Operations Manager database on existing SQL Always On
 
-With Operations Manager 2022, you can setup and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
+With Operations Manager 2022, you can set up and upgrade Operations Manager databases with an existing SQL Always-On setup without any need for post configuration changes.
 
 ### SHA2 encryption for certificates
 
-Prior to Operations Manager 2016, the Linux Agent used to generate certificates and encrypt it with SHA1. From 2016, the Linux Agent generates a SHA1 certificate and then, as part of the discovery process, the certificate gets encrypted with SHA256.
+Prior to Operations Manager 2016, the Linux Agent used to generate certificates and encrypt it with SHA1. From 2016, the Linux Agent generates an SHA1 certificate and then, as part of the discovery process, the certificate gets encrypted with SHA256.
 
 With Operations Manager 2022, the certificate gets encrypted with SHA256.
 
@@ -71,7 +71,7 @@ Values of few registries which are customized (commonly) are retained when an up
 
 - Value of custom install location of Monitoring Agent is retained when an update (UR/Hotfix) is installed or upgraded from Operations Manager 2019 to Operations Manager 2022.
 - Installation of Reporting and Web Console will be successful irrespective of the updates installed on Operations Manager Management Server.
-- While upgrading non-primary Management Servers, Datawarehouse registry details are retained (which were previously deleted).
+- While upgrading non-primary Management Servers, Data warehouse registry details are retained (which were previously deleted).
 - Support for group managed service accounts in the Installer setup.
 - Operations Manager 2022 supports .NET 4.8.
 
