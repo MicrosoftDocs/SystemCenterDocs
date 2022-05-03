@@ -32,7 +32,7 @@ With DPM 2022, you can use private endpoint to take online backup to Azure Backu
 
 ### Support for VMware vSphere 7.0
 
-DPM 2022 adds support for protecting virtual machines running on VMware 7.0.[Learn more](/system-center/dpm/back-up-vmware)
+DPM 2022 adds support for protecting virtual machines running on VMware 7.0. [Learn more](/system-center/dpm/back-up-vmware)
 
 ### Parallel restore for VMware and Hyper-V virtual machines
 
