@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 08/11/2021
+ms.date: 04/22/2022
 title: Back up Hyper V virtual machines
 ms.technology: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -97,17 +97,17 @@ To give permissions to the share, do the following:
 
 1. On a server where the SOFS/SMB share is hosted, open **Server Manager** > **File and Storage Services** > **Shares**.
 2. Right click the VM storage share, and then click **Properties**.
-4. In the **Properties** dialog, on the left navigation menu, click **Permissions**.
-5. Click **Customize permissions** to open the Advanced Security Settings dialog.
-6. On the **Permissions** tab, click **Add**.
-7. Click **Select a Principal**.
-8. In the **Select User, Computer, Services Account, or Group** dialog, click **Object Types**.
-9. In the **Object Types** dialog, select **Computers**, and click **OK**.
-10. In the **Select User, Computer, Service Account, or Group** dialog, enter the name of the Hyper-V node or cluster name you want to have permission.
-11. Click **Check Names** to resolve the name, and click **OK**.
-12. In the **Permission Entry for Share** dialog, select **Full Control**,  and click **OK**.
-13. In the **Advanced Security Settings for Share** dialog, click the **Share** tab and repeat steps 6-11 for the **Share** tab instead of the **Permissions** tab.
-14. When you are finished adding permissions for the servers, click **Apply**.
+3. In the **Properties** dialog, on the left navigation menu, click **Permissions**.
+4. Click **Customize permissions** to open the Advanced Security Settings dialog.
+5. On the **Permissions** tab, click **Add**.
+6. Click **Select a Principal**.
+7. In the **Select User, Computer, Services Account, or Group** dialog, click **Object Types**.
+8. In the **Object Types** dialog, select **Computers**, and click **OK**.
+9. In the **Select User, Computer, Service Account, or Group** dialog, enter the name of the Hyper-V node or cluster name you want to have permission.
+10. Click **Check Names** to resolve the name, and click **OK**.
+11. In the **Permission Entry for Share** dialog, select **Full Control**,  and click **OK**.
+12. In the **Advanced Security Settings for Share** dialog, click the **Share** tab and repeat steps 6-11 for the **Share** tab instead of the **Permissions** tab.
+13. When you are finished adding permissions for the servers, click **Apply**.
 
     This prepares the VMs on SOFS shares for the backup process.
 
