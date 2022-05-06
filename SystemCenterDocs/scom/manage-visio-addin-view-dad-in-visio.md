@@ -1,8 +1,8 @@
 ---
 title: View an Operations Manager Distributed Application Diagram in Visio
 description: This article describes how to export a distributed application diagram in Visio format for modification and presentation in a custom Visio dashboard.
-author: JYOTHIRMAISURI
-ms.author: magoedte
+author: jyothisuri
+ms.author: jsuri
 manager: carmonm
 ms.date: 10/23/2018
 ms.custom: na
