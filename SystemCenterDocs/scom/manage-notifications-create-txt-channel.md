@@ -24,9 +24,9 @@ To configure alert notifications for System Center - Operations Manager, your fi
 
 ## Prerequisites
 To enable an SMS Notification Channel, ensure the following:
-1. A Modem for SMS that has support for SMS Protocol Data Unit (PDU) mode.
+1. Modem(s) for SMS with support for SMS Protocol Data Unit (PDU) mode is/are set.
 
-2. The Modem(s) are attached via the **COM Port** on **all** the management servers present in the **Notifications Resource Pool**.
+2. The Modem(s) is/are attached via the **COM Port** on **all** the management servers present in the **Notifications Resource Pool**.
 
 3. The Baud Rate of the COM port is set to: **9600**
 
@@ -54,7 +54,7 @@ To enable an SMS Notification Channel, ensure the following:
 7.  Click **Finish**, and then click **Close**.  
 
 > [!NOTE]
-> When customizing the text message, keep in mind that SMS has a **160 character limit**. Operations Manager cannot send messages using MMS (Multimedia Messaging Service), which includes longer form messages (those over 160 characters).
+> When customizing the text message, ensure that SMS has a **160 character limit**. Operations Manager cannot send longer messages (over 160 characters) using Multimedia Messaging Service (MMS). 
 
 ## Next steps
 
