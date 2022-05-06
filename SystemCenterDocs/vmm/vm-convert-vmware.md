@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 05/06/2021
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -26,7 +26,15 @@ This article describes how to convert VMware VMs in the System Center - Virtual 
 
 You can convert the VMs using the *Convert Virtual Machine* wizard.
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
 VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20H2. [Learn more about support to Azure Stack HCI 20H2](deploy-manage-azure-stack-hci.md).
+
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2019"
 
 **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
   - See [system requirements](system-requirements.md) for supported versions of vSphere (ESXi).
@@ -70,7 +78,21 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
 ## Convert  EFI based VM to Hyper-V generation 2 VM
 System Center VMM enables migration of EFI based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take the advantage of generation 2 features.
 
+::: moniker-end
+
+::: moniker range=">sc-vmm-2016 <=sc-vmm-2019"
+
 As part of VMM 1801 release, the **Convert Virtual Machine** wizard enabled this migration, based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+The **Convert Virtual Machine** wizard enabled this migration, based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
+
+::: moniker-end
+
+::: moniker range=">sc-vmm-2016"
 
 - BIOS-based VMs are migrated to Hyper-V VM Generation 1.
 - EFI-based VMs are migrated to Hyper-V VM Generation 2.

@@ -46,7 +46,7 @@ The general process for setting up block-based storage in the VMM fabric is as f
 
 ## File storage
 
-VMM can manage file storage that supports the SMB 3.0 protocol. SMB is supported by file shares on computers running Windows Server 2012 or higher, and by third-party vendors of network-attached storage (NAS) devices.
+VMM can manage file storage that supports the SMB 3.0 protocol. SMB is supported by file shares on computers running Windows Server 2012 or later, and by third-party vendors of network-attached storage (NAS) devices.
 
 - **Windows file server**:  You can add a remote file server as a storage device or you can scale file-based storage Scale-Out File Server (SOFS).
 - **Scaled-out file server (SOFS)**: SOFS provides a file server cluster in which storage is shared between the cluster nodes. Storage for SOFS could be a SAN (SAS, iSCSI, Fibre Channel) or could integrate with Storage Spaces Direct.
