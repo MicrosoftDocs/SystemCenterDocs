@@ -1,8 +1,8 @@
 ---
 title: Install and Configure the Visio Services Data Provider
 description: This article describes how to install and configure the Visio Services Data Provider in a SharePoint farm.
-author: JYOTHIRMAISURI
-ms.author: magoedte
+author: jyothisuri
+ms.author: jsuri
 manager: cfreemanwa
 ms.date: 04/29/2019
 ms.custom: na, intro-installation
