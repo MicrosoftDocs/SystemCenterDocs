@@ -1,10 +1,10 @@
 ---
 title: Import data from Active Directory Domain Services
 description: This article provides an overview of using a connector to import data from Active Directory Domain Services (AD DS) into Service Manager and it also describes how to create, synchronize, and enable or disable an Active Directory connector.
-manager: carmonm
+manager: evansma
 ms.topic: article
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 03/10/2022

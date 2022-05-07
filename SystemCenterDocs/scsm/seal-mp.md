@@ -1,11 +1,11 @@
 ---
 title: Seal a Service Manager management pack
 description: Describes how to seal a Service Manager management pack for use with Service Manager authoring.
-manager: carmonm
+manager: evansma
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

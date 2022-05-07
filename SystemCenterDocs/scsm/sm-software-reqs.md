@@ -1,11 +1,11 @@
 ---
 title: Software Requirements for Service Manager
-manager: carmonm
+manager: evansma
 description: The article describes System Center 2016 - Service Manager software requirements.
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 09/14/2020
 ms.reviewer: na
 ms.suite: na

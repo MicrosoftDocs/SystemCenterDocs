@@ -1,11 +1,11 @@
 ---
 title: Bundle management packs and resource files
 description: Learn about bundling management packs and resource files for Service Manager authoring.
-manager: carmonm
+manager: evansma
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

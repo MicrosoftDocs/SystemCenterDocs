@@ -3,6 +3,7 @@ description: include file to describe the new features in Service Management Aut
 manager: evansma
 ms.topic: include
 author: jyothisuri
+ms.author: jsuri
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 01/22/2018
