@@ -1,10 +1,10 @@
 ---
 title: About System Center - Service Manager
 description: This article provides an overview of System Center - Service Manager.
-manager: carmonm
+manager: evansma
 ms.topic: article
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.prod: system-center
 ms.date: 01/23/2018
 ms.technology: service-manager

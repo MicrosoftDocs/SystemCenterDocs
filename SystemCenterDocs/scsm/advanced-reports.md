@@ -1,11 +1,11 @@
 ---
 title: Advanced analytical reports in Service Manager
 description: Provides a reference of advanced analytical reports available in Service Manager.
-manager: carmonm
+manager: evansma
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 05/10/2021
 ms.reviewer: na
 ms.suite: na

@@ -1,11 +1,11 @@
 ---
 title: Customize the data warehouse
 description: Provides an overview about customizing the Service Manager data warehouse.
-manager: carmonm
+manager: evansma
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

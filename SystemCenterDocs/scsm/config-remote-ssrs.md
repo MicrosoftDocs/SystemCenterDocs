@@ -1,11 +1,11 @@
 ---
 title: Manual steps to configure SQL Server Reporting Services
 description: When you deploy the Service Manager data warehouse management server, you can choose the server where Microsoft SQL Server Reporting Services is deployed.
-manager: carmonm
+manager: evansma
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 03/07/2022
 ms.reviewer: na
 ms.suite: na

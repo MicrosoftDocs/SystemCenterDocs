@@ -1,11 +1,11 @@
 ---
 title: Search for information
 description: Describes how to search for information in Service Manager.
-manager: carmonm
+manager: evansma
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na
