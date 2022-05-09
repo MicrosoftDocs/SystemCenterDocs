@@ -1,10 +1,10 @@
 ---
 title: Configure your preference for sharing diagnostic and usage data
 description: Learn about how to configure your preference for sharing Service Manager diagnostic and usage data.
-manager: carmonm
+manager: evansma
 ms.topic: article
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.prod: system-center
 keywords:
 ms.date: 10/12/2016

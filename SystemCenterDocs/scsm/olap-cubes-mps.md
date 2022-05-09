@@ -1,11 +1,11 @@
 ---
 title: Modeling OLAP cubes in management packs overview
 description: Provides an overview of modeling Service Manager OLAP cubes in management packs.
-manager: carmonm
+manager: evansma
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

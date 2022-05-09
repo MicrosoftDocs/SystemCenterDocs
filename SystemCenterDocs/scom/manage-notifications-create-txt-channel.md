@@ -22,18 +22,22 @@ ms.assetid: 93f9a932-d99d-41b2-ad0c-f5e179f1cccf
 
 To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using a Short Message Service (SMS) or text message.  
 
-> [!NOTE]  
-> 1. You are required to have a modem for SMS messaging, which is typically attached directly to the Management Server.
-> 2. The modem used for SMS must support SMS Protocol Data Unit (PDU) mode.
-> 3. When connected, set the Baud Rate of the COM port the modem is using to **9600**. 
-> > ### Example
-> > 1. Open Administrator Command Prompt
-> > 2. List all modes: `Mode`
-> > 3. Set the COM Port to use a Bits Per Second (Baud) rate of 9600: `Mode Com1: Baud=9600`
-> 
-> 4. The SMS Message limitation is 160 characters.
+## Prerequisites
+To enable an SMS Notification Channel, ensure the following:
+1. Modem(s) for SMS with support for SMS Protocol Data Unit (PDU) mode is/are set.
 
-## To enable a text message notification channel  
+2. The Modem(s) is/are attached via the **COM Port** on **all** the management servers present in the **Notifications Resource Pool**.
+
+3. The Baud Rate of the COM port is set to: **9600**
+
+### How to set COM Port Baud Rate from the Command Line
+1. Open Administrator Command Prompt
+
+2. List all modes: `Mode`
+
+3. Set the COM Port to use a Bits Per Second (Baud) rate of 9600: `Mode Com1: Baud=9600`
+
+## To enable a text message notification channel
 
 1.  Log on to the computer with a user account that is a member of the Operations Manager Administrators role.
 
@@ -48,6 +52,9 @@ To configure alert notifications for System Center - Operations Manager, your fi
 6.  In the **Encoding**  box, select the text format for the SMS messages.  
 
 7.  Click **Finish**, and then click **Close**.  
+
+> [!NOTE]
+> When customizing the text message, ensure that SMS has a **160 character limit**. Operations Manager cannot send longer messages (over 160 characters) using Multimedia Messaging Service (MMS). 
 
 ## Next steps
 

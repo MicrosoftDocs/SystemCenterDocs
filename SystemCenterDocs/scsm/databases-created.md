@@ -1,10 +1,10 @@
 ---
 title: Databases creation by System Center
 description: This article describes the databases that are created by Service Manager during installation.
-manager: carmonm
+manager: evansma
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article
