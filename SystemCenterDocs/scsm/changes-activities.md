@@ -1,11 +1,11 @@
 ---
 title: Manage changes and activities
 description: Provides an example scenario and details about how to managing changes and activities in Service Manager.
-manager: carmonm
+manager: evansma
 ms.custom: na
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na

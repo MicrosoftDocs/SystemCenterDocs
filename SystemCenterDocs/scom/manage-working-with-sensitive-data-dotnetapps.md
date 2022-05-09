@@ -1,9 +1,9 @@
 ---
 title: Working with Sensitive Data for .NET Applications
 description: This article describes how to filter sensitive data collected by Application Performance Monitoring.
-author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: cfreemanwa
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
