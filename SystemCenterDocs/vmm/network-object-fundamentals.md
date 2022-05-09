@@ -49,9 +49,8 @@ The following VMM networking objects are used to build the basic networking infr
   >[!NOTE]
   > The terminology for logical networks has changed. For more information, see [Logical networks in UR1](network-logical-2022.md).
 
-   - [One connected logical network](network-logical-2022.md)
-
 ::: moniker-end
+   - [One connected logical network](network-logical-2022.md)
 
      A single VM network is created on top of this logical network, and this VM network provides access to all the underlying VLAN-subnet pairs.
 
