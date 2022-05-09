@@ -1,11 +1,11 @@
 ---
 title: Install Service Manager on virtual machines
 description: This article provides guidance that you should consider when you install Service Manager in a Hyper-V virtual environment.
-manager: carmonm
+manager: evansma
 ms.custom: na, intro-installation
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

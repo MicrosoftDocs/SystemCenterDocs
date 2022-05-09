@@ -1,10 +1,10 @@
 ---
 title: Deploy System Center - Service Manager
 description: This guide helps you deploy System Center - Service Manager in one of several different scenarios.
-manager: carmonm
+manager: evansma
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/13/2020
 ms.technology: service-manager
 ms.topic: article

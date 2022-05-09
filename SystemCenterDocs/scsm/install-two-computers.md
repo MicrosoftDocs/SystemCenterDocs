@@ -1,11 +1,11 @@
 ---
 title: Install Service Manager on two computers
 description: To evaluate Service Manager, you can install the Service Manager management server and data warehouse management server on two computers.
-manager: carmonm
+manager: evansma
 ms.custom: na, intro-installation
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

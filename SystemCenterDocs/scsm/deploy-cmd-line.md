@@ -1,11 +1,11 @@
 ---
 title: Deploy from a command line
 description: This article describes how to deploy Service Manager using command-line parameters.
-manager: carmonm
+manager: evansma
 ms.custom: na, intro-deployment
 ms.prod: system-center
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: jyothisuri
+ms.author: jsuri
 ms.date: 05/05/2019
 ms.reviewer: na
 ms.suite: na

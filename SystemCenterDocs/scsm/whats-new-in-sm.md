@@ -2,9 +2,9 @@
 ms.assetid: 6b2be03c-c114-4ae9-82ed-bfeeb3057559
 title: What's new in System Center Service Manager
 description: This article describes the new features supported in Service Manager
-author: JYOTHIRMAISURI
-ms.author: V-jysur
-manager: vvithal
+author: jyothisuri
+ms.author: jsuri
+manager: evansma
 ms.date: 05/10/2021
 ms.topic: article
 ms.prod: system-center
