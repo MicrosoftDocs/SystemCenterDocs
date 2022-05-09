@@ -5,7 +5,7 @@ description: Describes how to add and provision shielded VMs in the VMM fabric. 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -39,11 +39,33 @@ You can deploy shielded VMs in VMM in a couple of ways:
 4. **Prepare shielding data files**: To use the signed template disks in the VMM library, tenants must prepare one or more shielding data files. This file contains all the secrets that a tenant needs to deploy a VM, including the unattend file used to specialize the VM, certificates, administrator account passwords. The file also specifies which guarded fabric a tenant trusts to host their VM and information about the signed template disks. The file is encrypted and can only be read by a host in a guarded fabric trusted by the tenant. [Learn more](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data).
 5. **Set up host group**: For easy management, we recommend that guarded hosts be placed in a dedicated VMM host group.
 6. **Verify existing VM requirements**: If you want to convert an existing VM to shielded, note the following:
-    - The VM must be generation 2 and have the Microsoft Windows Secure Boot template enabled
-    - The operating system on the disk must be one of:
-    -   Windows Server 2016, Windows Server 2012 R2, Windows Server 2012
-    -   Windows 10, Windows 8.1, Windows 8
-    - The OS disk for the VM must use GUID Partition Table. This is required for generation 2 VMs to support UEFI.
+
+::: moniker range="sc-vmm-2016"
+   - The VM must be generation 2 and have the Microsoft Windows Secure Boot template enabled
+   - The operating system on the disk must be one of:
+   - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012
+   - Windows 10, Windows 8.1, Windows 8
+   - The OS disk for the VM must use GUID Partition Table. This is required for generation 2 VMs to support UEFI. 
+::: moniker-end
+
+
+::: moniker range="sc-vmm-2019"
+   - The VM must be generation 2 and have the Microsoft Windows Secure Boot template enabled
+   - The operating system on the disk must be one of:
+   - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012
+   - Windows 10
+   - The OS disk for the VM must use GUID Partition Table. This is required for generation 2 VMs to support UEFI. 
+::: moniker-end
+
+
+::: moniker range="sc-vmm-2022"
+   - The VM must be generation 2 and have the Microsoft Windows Secure Boot template enabled
+   - The operating system on the disk must be one of:
+   - Windows Server 2022, Windows Server 2019, Windows Server 2016
+   - Windows 11, Windows 10
+   - The OS disk for the VM must use GUID Partition Table. This is required for generation 2 VMs to support UEFI. 
+::: moniker-end
+
 7. **Set up helper VHD**: The hosting service provider will need to create a VM that acts as a helper VHD for converting existing machines. [Learn more](guarded-deploy-template.md#configure-the-shielding-helper-vhd).
 
 ## Adding shielding data files to VMM

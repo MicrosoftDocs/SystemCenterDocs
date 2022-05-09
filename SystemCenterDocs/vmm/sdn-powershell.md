@@ -5,7 +5,7 @@ description: This article describes how to use PowerShell to deploy SDN componen
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -61,7 +61,7 @@ Here's what you need to do to set up SDN components in VMM with PowerShell.
 4. Import the [network controller](sdn-controller.md#import-the-template), [SLB](sdn-slb.md#import-the-service-template), and [RAS gateway](sdn-gateway.md#import-the-service-template) templates into the VMM library.
 5. [Set up Active Directory security groups](sdn-controller.md#set-up-active-directory-groups). One for network controller management, and another for network controller clients. Each group will need at least one user account in it.
 6. [Set up a VMM library share](sdn-controller.md#create-a-library-share-for-logging).You can have an optional library file share for keeping diagnostic logs. This library share will be accessed by the network controller to store diagnostics information throughout its lifetime.
-7. [Set up a dedicated VMM host group](sdn-controller.md#set-up-host-groups) for all SDN Hyper-V hosts. Note that hosts must be running the latest version of Windows Server 2016, and have the Hyper-V role enabled.
+7. [Set up a dedicated VMM host group](sdn-controller.md#set-up-host-groups) for all SDN Hyper-V hosts. Note that hosts must be running the latest version of applicable Windows Server, and have the Hyper-V role enabled.
 8. [Set up a certificate](sdn-controller.md#set-up-the-security-certificates). You need an SSL certificate for HTTPS communications between VMM and the network controller.
 9. [Download](https://github.com/manishmsft/SDN/tree/master/VMM/VMM%20SDN%20Express) and run the SDN scripts. There are three scripts:
 
