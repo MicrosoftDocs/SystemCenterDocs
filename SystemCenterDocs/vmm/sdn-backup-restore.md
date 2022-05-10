@@ -1,11 +1,11 @@
 ---
 ms.assetid: 1a71c7fa-faa3-4d0a-a8ef-d022c803f298
-title: Back up and restore a software defined network infrastructure by using VMM 2016
+title: Back up and restore a software defined network infrastructure
 description: This article describes the procedure to back up and restore the software defined infrastructure.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 12/21/2017
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -55,10 +55,19 @@ Depending on the SDN state captured in the network controller backup and the cur
 
 Use the following refresh procedures to find any such differences between VMM and NC, and accordingly resolve them.
 
-
+::: moniker range="<=sc-vmm-2019"
 > [!NOTE]
 > - Refresh cmdlets for refreshing network controller objects are available from VMM 2016 UR3.
 > - If the network controller contains any objects which are not present in the VMM DB, then the  VMM will not refresh (even if those objects are created by using VMM earlier). Delete those objects from NC and recreate the objects from VMM to manage these objects from VMM again.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+> [!NOTE]
+> - Refresh cmdlets for refreshing network controller objects.
+> - If the network controller contains any objects which are not present in the VMM DB, then the  VMM will not refresh (even if those objects are created by using VMM earlier). Delete those objects from NC and recreate the objects from VMM to manage these objects from VMM again.
+
+::: moniker-end
 
 ### Refresh port ACLs
 1. Get all the NC-managed port ACLs from the VMM server by using the following cmdlet:
