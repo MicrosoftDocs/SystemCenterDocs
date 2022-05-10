@@ -27,7 +27,7 @@ VMM was supporting guest clustering.  However, with the advent of the network co
 
 With the introduction of the network controller, VMs, which are connected to the virtual network are only permitted to use the IP address that NC assigns for communication. NC does not support floating IP addresses which are essential for technologies such as Microsoft Failover Clustering to work.
 
-::: moniker range="sc-vmm=1801"
+::: moniker range="sc-vmm-1801"
 
 VMM 1801 and later, you can enable this feature by emulating the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
 
@@ -36,7 +36,7 @@ VMM 1801 and later supports guest clustering in SDN through an Internal Load Bal
 ::: moniker-end
 
 
-::: moniker range=">sc-vmm=1801"
+::: moniker range=">sc-vmm-1801"
 
 You can enable this feature by emulating the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
 
