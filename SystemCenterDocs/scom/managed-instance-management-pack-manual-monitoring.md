@@ -2,10 +2,10 @@
 ms.assetid: 29b787f9-5c1f-4d08-a9a0-9c0a9b9075e1
 title: Manual monitoring template in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure manual monitoring template in Management Pack for Azure SQL Managed Instance
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: vvithal
-ms.date: 3/17/2021
+ms.date: 5/11/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -44,7 +44,7 @@ To configure monitoring using the manual monitoring template, perform the follow
     Use the standard security connection string format to specify connection settings:
 
     ```
-    Server=\<ServerAddress>;Database=\<DatabaseName>;
+    Server=<ServerAddress>;Database=<DatabaseName>;
     ```
     
     You can get a connection string for a managed instance using the Azure portal.
@@ -52,7 +52,7 @@ To configure monitoring using the manual monitoring template, perform the follow
     To create a Run As account from the connection string, use the following format:  
 
     ```
-    Server=\<ServerAddress>;Database=\<DatabaseName>;User Id=\<UserName>;Password=\<Password>;
+    Server=<ServerAddress>;Database=<DatabaseName>;User Id=<UserName>;Password=<Password>;
     ```
     
     You can also create a new Run As account by clicking **New** and specifying an account name and connection credentials to access the managed instance.
