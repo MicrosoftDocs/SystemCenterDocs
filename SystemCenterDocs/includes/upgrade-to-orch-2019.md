@@ -8,7 +8,7 @@ ms.date:  05/11/2022
 ms.topic:  include
 ms.prod:  system center
 ms.technology: orchestrator
-description: include file to provides an overview of how to upgrade your System Center Orchestrator installation to release 2019.
+description: include file to provide an overview of how to upgrade your System Center Orchestrator installation to release 2019.
 keywords:
 ---
 
