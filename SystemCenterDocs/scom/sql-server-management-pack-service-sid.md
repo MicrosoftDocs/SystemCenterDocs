@@ -2,10 +2,10 @@
 ms.assetid: 8f280433-6981-402e-b94d-ba2e9ae97b81
 title: Service SID in Management Pack for SQL Server
 description: This article explains how to configure monitoring with service SID
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.date: 9/29/2021
+ms.date: 5/11/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -99,7 +99,6 @@ To configure monitoring using Service Security Identifier, perform the following
     GRANT EXECUTE ON [dbo].[sp_help_job] TO [SCOM_HealthService];
     GRANT EXECUTE ON [dbo].[sp_help_jobactivity] TO [SCOM_HealthService];
     GRANT EXECUTE ON [dbo].[SQLAGENT_SUSER_SNAME] TO [SCOM_HealthService];
-    EXEC sp_addrolemember @rolename='PolicyAdministratorRole', @membername='SCOM_HealthService';
     EXEC sp_addrolemember @rolename='SQLAgentReaderRole', @membername='SCOM_HealthService';
     ```
 
