@@ -54,10 +54,11 @@ not support network virtualization.
 	::: moniker range=">sc-vmm-2016"
 	- **Load balancing**: **Host Default** is the default setting and this will either distribute network traffic based on the Hyper-V switch port identifier of the source VM or use a **Dynamic** loading balancing algorithm, depending what the Hyper-V host supports. You can also select:
 	::: moniker-end
-		- Hyper-V port: Distributes network traffic according to the Hyper-V switch port identifier of the source VM.
-		- Transport ports: Uses the source and destination TCP ports and the IP addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
-		- IP addresses: Uses the source and destination IP addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
-		- MAC addresses: Uses the source and destination MAC addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
+		
+	   - Hyper-V port: Distributes network traffic according to the Hyper-V switch port identifier of the source VM.
+	   - Transport ports: Uses the source and destination TCP ports and the IP addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
+	   - IP addresses: Uses the source and destination IP addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
+	   - MAC addresses: Uses the source and destination MAC addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
 
 	- **Teaming**: **Switch Independent** is the default setting and this specifies that physical network switch configuration isn't needed for the NIC team. The network switch is not configured and so allow network adapters within the team to be connected to multiple (non-=trunked) physical switches. You can also select:
 		- **LACP**: Use the LACP protocol to dynamically identify links that are connected between the host and a given switch.
