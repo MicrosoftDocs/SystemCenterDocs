@@ -5,7 +5,7 @@ description: This article describes how to manage VMs in the VMM compute fabric
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 05/06/2022
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -103,7 +103,12 @@ A host might be assigned a zero rating if it does not meet conditions to receive
 In VMM you can create generation 1 and generation 2 VMs.
 
 - You can add VM templates specifying either generation 1 or generation 2 to a service template. Properties will appear for the generation you choose.
+::: moniker range="sc-vmm-2016"
 - Generation 2 VMs can only run on a host with a host operating system that supports them - Windows Server 2012 R2 onwards. For example, VMM won't place a generation 2 VM on a host running Windows Server 2012.
+::: moniker-end
+::: moniker range=">sc-vmm-2016"
+- Generation 2 VMs can only run on a host with a host operating system that supports them - Windows Server 2016 onwards. For example, VMM won't place a generation 2 VM on a host running Windows Server 2016.
+::: moniker-end
 - When you use a virtual hard disk in .vhd format for a VM or VM template, the VM is automatically generation 1 because .vhd doesn't support generation 2. If you use .vhdx you can select which option you want to use.
 - If you use an existing virtual machine or virtual machine template as the starting point for a new virtual machine or virtual machine template, the generation is determined by the existing virtual machine or virtual machine template.
 - If you create a hardware profile you can choose between generation 1 and 2. When you incorporate the profile into a VM or VM template you specify the generation you want to use.

@@ -5,7 +5,7 @@ description: This article describes how to configure dynamic optimization and po
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 06/16/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -52,9 +52,11 @@ Note the following information before you start using the DO.
 - Dynamic optimization can be set up for clusters with two or more nodes. Storage dynamic optimization will need two or more shared storage files/volumes to be present in the cluster. If a host group contains stand-alone hosts or host clusters that do not support live migration, dynamic optimization isn't performed on those hosts. Any hosts that are in maintenance mode also are excluded from dynamic optimization. In addition, VMM only migrates highly available virtual machines that use shared storage. If a host cluster contains virtual machines that are not highly available, those virtual machines are not migrated during Dynamic Optimization.
 - On-demand dynamic optimization is also available for individual host clusters by using the Optimize Hosts/ Optimize Disk space  action in the VMs and Services workspace. It can be performed without configuring dynamic optimization on host groups. After dynamic optimization is requested for a host cluster, VMM lists the virtual machines/VHDs that will be migrated, for the administrator's approval. Optimize Hosts performs VM load balancing across hosts in a cluster, while Optimize disk space migrates VHDs across Shared storage in a cluster.
 
+::: moniker range="sc-vmm-2016"
 ### Node fairness
 
 Node fairness is a new feature in Windows Server 2016. It identifies cluster nodes with light loads, and distributes VMs to those node to balance load. This is similar to VMM's dynamic optimization. To avoid potential performance issues, dynamic optimization and node fairness shouldn't work together. To ensure this doesn't happen VMM disables node fairness in all clusters in a host group for which dynamic optimization is set to automatic. If you enable node fairness outside the VMM console, VMM will turn it off the next time that dynamic optimization refreshes. If you do want to use node fairness, disable dynamic optimization, and then manually enable node fairness.
+::: moniker-end
 
 ## Power optimization
 

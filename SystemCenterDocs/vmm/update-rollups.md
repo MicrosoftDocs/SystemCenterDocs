@@ -5,7 +5,7 @@ description: This article provides information about how to deploy and manage th
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 05/10/2022
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -66,9 +66,17 @@ To manually install an update rollup package through an elevated command prompt,
 > In the **<package_name>** placeholder, enter the actual package name.
 >
 
+::: moniker range="sc-vmm-2016"
 For example, to install the Update Rollup 2 for System Center 2016 Virtual Machine Manager server (KB3209586), run the following command:
 
 **msiexec.exe/update kb3209586_VMMserver_amd64.msp**
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+For example, to install the Update Rollup 2 for System Center 2019 Virtual Machine Manager server (KB4569533), run the following command:
+
+**msiexec.exe/update kb4569533_VMMserver_amd64.msp**
+::: moniker-end
 
 >[!NOTE]
 > There may be additional installation steps specific to an update rollup release. Check update rollup KB guide to ensure you complete all the installation steps.

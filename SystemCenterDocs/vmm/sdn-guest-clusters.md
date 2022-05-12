@@ -5,7 +5,7 @@ description: This article explains about how to configure guest clusters in SDN 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 05/10/2022
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -23,7 +23,9 @@ monikerRange: '>sc-vmm-2016'
 
 This article explains about how to configure guest clusters in SDN using the System Center - Virtual machine Manager (VMM).
 
-VMM was supporting guest clustering.  However, with the advent of the network controller (NC), Windows Server 2016 and System Center 2016, the configuration of guest clusters has undergone some change.
+::: moniker range="sc-vmm-2016"
+VMM was supporting guest clustering. However, with the advent of the network controller (NC), Windows Server 2016 and System Center 2016, the configuration of guest clusters has undergone some change.
+::: moniker-end
 
 With the introduction of the network controller, VMs, which are connected to the virtual network are only permitted to use the IP address that NC assigns for communication. NC does not support floating IP addresses which are essential for technologies such as Microsoft Failover Clustering to work.
 

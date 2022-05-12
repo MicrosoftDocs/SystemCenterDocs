@@ -5,7 +5,7 @@ description: This article describes how to create port profiles in the VMM fabri
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -48,8 +48,12 @@ not support network virtualization.
 
 1. Click **Fabric** > **Home** > **Show** > **Fabric Resources**. Click **Fabric** tab > **Networking** > **Port Profiles** > **Hyper-V Port Profile**.
 2. In **Create Hyper-V Port Profile Wizard** > **General** type in a name, description and select **Uplink Port Profile**. Select the load balancing and teaming settings:
-
+    ::: moniker range="sc-vmm-2016"
 	- **Load balancing**: **Host Default** is the default setting and this will either distribute network traffic based on the Hyper-V switch port identifier of the source VM or use a **Dynamic** loading balancing algorithm, depending what the Hyper-V host supports. Dynamic is only available from Windows Server 2012 R2 onwards. You can also select:
+	::: moniker-end
+	::: moniker range=">sc-vmm-2016"
+	- **Load balancing**: **Host Default** is the default setting and this will either distribute network traffic based on the Hyper-V switch port identifier of the source VM or use a **Dynamic** loading balancing algorithm, depending what the Hyper-V host supports. You can also select:
+	::: moniker-end
 		- Hyper-V port: Distributes network traffic according to the Hyper-V switch port identifier of the source VM.
 		- Transport ports: Uses the source and destination TCP ports and the IP addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
 		- IP addresses: Uses the source and destination IP addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.

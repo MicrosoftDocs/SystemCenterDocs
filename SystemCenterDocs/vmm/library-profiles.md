@@ -5,7 +5,7 @@ description: This article provides guidance for adding profiles to the library i
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -94,7 +94,12 @@ VMM can are used to provision physical computers into Hyper-V hosts or into a sc
 
 1. In the VMM console click > **Library** > **Create** > **Physical Computer Profile**.
 2. In **New Physical Computer Profile** > **Profile Definition** type in a profile name and description.
+::: moniker range="sc-vmm-2016"
 3. In **OS Image** select a virtual hard disk from the library share. It should be running Windows Server 2012 R2 or later. To create the hard disk you can create a VM, install the guest operating system, and then use Sysprep with **/generalize** and **/oobe**. If the disk is dynamic VMM converts it to a fixed disk  during deployment. We recommend that you use a fixed disk type to help protect user data and increase performance.
+::: moniker-end
+::: moniker range=">sc-vmm-2016"
+3. In **OS Image** select a virtual hard disk from the library share. It should be running Windows Server 2016 or later. To create the hard disk you can create a VM, install the guest operating system, and then use Sysprep with **/generalize** and **/oobe**. If the disk is dynamic VMM converts it to a fixed disk  during deployment. We recommend that you use a fixed disk type to help protect user data and increase performance.
+::: moniker-end
 4. In **Hardware Configuration** set up network adapters, disks and partitions, and any drivers.
 5. In **Network Adapters** click **Connectivity Properties** to set up consistent device naming (CDN) for the adapter. Specify whether to allocate an IP address with DHCP or from a static pool. If it's a physical network adapter connected to a logical switch this option isn't available.
 6. In **Disk** specify the partitioning scheme for the first disk. Select Master Boot Record (MBR) for BIO. or GUID Partition Table (GPT) for EFI. Specify a volume label, what free disk space to use, and what to designate as the boot partition. VMM copies the .vhd or .vhdx file to the boot partition and automatically creates a system partition on the same disk.
