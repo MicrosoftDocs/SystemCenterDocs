@@ -88,7 +88,7 @@ This command will add the service user to the list of allowed users, who can acc
 
 1.	After you upgrade to 2019, export the default management pack to a folder.
 2.	Open **Microsoft.SystemCenter.OperationsManager.DefaultUser.xml** from the exported folder.
-3.	Rename all the AD rules to use *<NetBIOS Domain Name of Management Server>* instead of *<FQDN of Management Server>*, example below.
+3.	Rename all the AD rules to use *\<NetBIOS Domain Name of Management Server\>* instead of *\<FQDN of Management Server\>*, example below.
 
     >[!NOTE]
     > Domain name is case-sensitive.

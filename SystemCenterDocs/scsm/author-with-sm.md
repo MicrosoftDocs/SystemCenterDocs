@@ -151,7 +151,7 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 ##### To start the Authoring Tool  
 
 1.  On your desktop, click **Start**.  
-2.  Click **Programs**, click **Microsoft System Center**, and then click **Service Manager <version> Authoring**.  
+2.  Click **Programs**, click **Microsoft System Center**, and then click **Service Manager \<version\> Authoring**.  
 3.  Click **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
 4.  In the **Class Browser** pane, click **Refresh**. This populates the browser with all the classes that are defined in management packs from the \<Installation folder\>\/Library folder. When you opened the Authoring Tool for the first time, this pane was empty.  
 

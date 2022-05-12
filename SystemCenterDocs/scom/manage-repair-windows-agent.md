@@ -94,7 +94,7 @@ With Operation Manager 1807 and later, you can reconfigure the Application Perfo
 
 3. Type the following, for example, at the prompt:
 
-    **%WinDir%\System32\msiexec.exe /fomus <path>\MOMAgent.msi./qb**
+    **%WinDir%\System32\msiexec.exe /fomus \<path\>\MOMAgent.msi./qb**
 
 4. Check the Application Event Log to confirm it completed successfully or for errors if the repair failed by searching at events from source **MsiInstaller**.  
 

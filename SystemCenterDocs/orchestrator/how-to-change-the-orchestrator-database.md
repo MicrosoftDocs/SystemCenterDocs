@@ -25,7 +25,7 @@ You can use the Database Configuration utility to change the connection settings
 
 ### To change the database settings for the management server and runbook servers  
 
-1. On the management server, click **Start**, point to **All Programs**, click **Microsoft System Center <version>**, click **Orchestrator**, and then click **Data Store Configuration**.  
+1. On the management server, click **Start**, point to **All Programs**, click **Microsoft System Center \<version\>**, click **Orchestrator**, and then click **Data Store Configuration**.  
 2. In the **Server** box, enter the name of the server that is hosting the database by using the format **\<server\>\\<instance\>,\<port\>**. You can click the ellipsis **\(...\)** button to select the computer. You do not have to include the instance if the Orchestrator database is installed on the default instance. You do not have to include the port if SQL Server is usually installed on the default port 1433.  
 
    If the Orchestrator database is installed on an instance called MyInstance on a computer named MySQLServer that is configured on port 12345, enter **MySQLServer\\MyInstance,12345**.  
@@ -52,9 +52,9 @@ The web service supporting the Orchestration console does not use the **Settings
 2.  Open a Command Prompt window with administrator credentials.  
 3.  Run the following command to decrypt the Web.config file:  
 
-    **C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pdf "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center <version>\\Orchestrator\\Web Service\\Orchestrator<version>"**  
+    **C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pdf "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center \<version\>\\Orchestrator\\Web Service\\Orchestrator\<version\>"**  
 4.  To start the IIS Manager, click **Start**, point to **Administrative Tools**, and then click **Internet Information Services \(IIS\) Manager**.  
-5.  Expand the **Sites** node, and then click **Microsoft System Center <version> Orchestrator Web Service**.  
+5.  Expand the **Sites** node, and then click **Microsoft System Center \<version\> Orchestrator Web Service**.  
 6.  In the **Features View**, double\-click **Connection Strings**.  
 7.  In the **Connections String** pane, double\-click **OrchestratorContext**.  
 8.  In the **Custom** box, scroll down to the portion of the string that includes the server name \(Data Source\) and database name \(Initial Catalog\). Modify these values as required.  
@@ -62,7 +62,7 @@ The web service supporting the Orchestration console does not use the **Settings
 10. Close **IIS Manager**.  
 11. Run the following command to encrypt the Web.config file:  
 
-    **C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pef "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center <version>\\Orchestrator\\Web Service\\Orchestrator<version>"**  
+    **C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pef "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center \<version\>\\Orchestrator\\Web Service\\Orchestrator\<version\>"**  
 
 ## Next steps
 Read more about best practices for [database sizing and performance](database-sizing-and-performance.md).
