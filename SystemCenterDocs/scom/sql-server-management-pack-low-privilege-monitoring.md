@@ -2,10 +2,10 @@
 ms.assetid: e357ab3b-45b3-417e-8a41-84c4cc66b4a0
 title: Low-privilege monitoring in Management Pack for SQL Server
 description: This article explains low-privilege monitoring
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.date: 7/14/2021
+ms.date: 5/11/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -43,11 +43,13 @@ This section explains how to configure low-privilege agent monitoring.
 
 1. Grant the **SQLTaskAction** user and the **SQLMPLowPriv** group the **Read** permission at HKLM:\\Software\\Microsoft\\Microsoft SQL Server.
 
-2. Add the **SQLTaskAction** and **SQLMonitor** users to the **EventLogReaders** local group.
+2. On each monitored instance, grant the **SQLMPLowPriv** group the **Read** permission at HKLM:\Software\Microsoft\Microsoft SQL Server\\[InstanceID]\MSSQLServer\Parameters.
 
-3. Configure the **Allow log on locally** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to log on locally.
+3. Add the **SQLTaskAction** and **SQLMonitor** users to the **EventLogReaders** local group.
 
-4. Grant **Execute Methods**, **Enable Account**, **Remote Enable**, and **Read Security** permissions to **SQLTaskAction** and **SQLMPLowPriv** for the following WMI namespaces:
+4. Configure the **Allow log on locally** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to log on locally.
+
+5. Grant **Execute Methods**, **Enable Account**, **Remote Enable**, and **Read Security** permissions to **SQLTaskAction** and **SQLMPLowPriv** for the following WMI namespaces:
 
     - ROOT
     - ROOT\CIMV2
@@ -57,8 +59,6 @@ This section explains how to configure low-privilege agent monitoring.
     - ROOT\Microsoft\SqlServer\ComputerManagement13 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement14 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement15 (if exists)
-
-5. On each monitored instance, grant the **SQLMPLowPriv** group the **Read** permission at HKLM:\Software\Microsoft\Microsoft SQL Server\\[InstanceID]\MSSQLServer\Parameters.
 
 ### Extra Steps for Cluster SQL Server Instances
 
@@ -121,13 +121,12 @@ This section explains how to configure low-privilege agent monitoring.
       GRANT EXECUTE ON SQLAGENT_SUSER_SNAME TO [SQLMPLowPriv]
       ```
 
-6. For the **msdb** database, assign the **SQLMPLowPriv** user both the **SQLAgentReaderRole** role and the **PolicyAdministratorRole** role:
+6. For the **msdb** database, assign the **SQLMPLowPriv** user the **SQLAgentReaderRole** role:
 
       ```SQL
       USE [msdb]
       GO
       ALTER ROLE [SQLAgentReaderRole] ADD MEMBER [SQLMPLowPriv]
-      ALTER ROLE [PolicyAdministratorRole] ADD MEMBER [SQLMPLowPriv]
       ```
 
 ### On SMB Shares
