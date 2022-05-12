@@ -5,7 +5,7 @@ manager: evansma
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 05/16/2018
+ms.date: 05/12/2022
 ms.technology: service-manager
 ms.topic: article
 ---
@@ -97,10 +97,34 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 
 ##### Operating system requirements  
 
+::: moniker range="sc-sm-2016"
+
 -   Windows Vista \(any edition\) with the latest service pack  
 -   Windows 7  
 -   Windows Server 2008 with the latest service pack  
 -   Windows Server 2008 R2  
+
+::: moniker-end
+
+::: moniker range=">sc-sm-2016 <=sc-sm-2019"
+
+-   Windows Vista \(any edition\) with the latest service pack  
+-   Windows 10
+-   Windows Server 2019 with the latest service pack  
+-   Windows Server 2016 
+
+::: moniker-end
+
+
+::: moniker range="sc-sm-2022"
+
+-   Windows Vista \(any edition\) with the latest service pack  
+-   Windows 10
+-   Windows 11
+-   Windows Server 2022 with the latest service pack  
+-   Windows Server 2019 
+
+::: moniker-end
 
 ##### Additional requirements  
 
