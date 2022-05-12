@@ -3,7 +3,6 @@ ms.assetid: 28d531e2-24bf-4d7f-9949-5e07f7ff9461
 title: Monitoring configuration in Management Pack for SQL Server Reporting Services
 description: This article explains the monitoring configuration in Management Pack for SQL Server Reporting Services
 author: TDzakhov
-ms.author: v-tdzakhov
 manager: evansma
 ms.date: 11/16/2021
 ms.topic: article

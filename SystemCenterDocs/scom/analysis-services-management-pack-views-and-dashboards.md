@@ -3,7 +3,6 @@ ms.assetid: cfa872d2-bc66-4f83-a47c-b46ff2bd1557
 title: Views and dashboards in Management Pack for SQL Server Analysis Services
 description: This article explains views and dashboards in Management Pack for SQL Server Analysis Services
 author: TDzakhov
-ms.author: v-tdzakhov
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
