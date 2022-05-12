@@ -53,7 +53,8 @@ not support network virtualization.
 	::: moniker-end
 	::: moniker range=">sc-vmm-2016"
 	- **Load balancing**: **Host Default** is the default setting and this will either distribute network traffic based on the Hyper-V switch port identifier of the source VM or use a **Dynamic** loading balancing algorithm, depending what the Hyper-V host supports. You can also select:
-	::: moniker-end
+	
+	   ::: moniker-end
 		
 	   - Hyper-V port: Distributes network traffic according to the Hyper-V switch port identifier of the source VM.
 	   - Transport ports: Uses the source and destination TCP ports and the IP addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
