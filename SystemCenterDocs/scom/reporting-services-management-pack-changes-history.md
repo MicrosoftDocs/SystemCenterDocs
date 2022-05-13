@@ -4,6 +4,7 @@ title: Features and enhancements in Management Pack for SQL Server Reporting Ser
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Reporting Services
 author: TDzakhov
 manager: evansma
+ms.author: jsuri
 ms.date: 12/20/2021
 ms.topic: article
 ms.prod: system-center

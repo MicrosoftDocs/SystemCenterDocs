@@ -4,6 +4,7 @@ title: Management Pack for Azure SQL Managed Instance delivery
 description: This article explains how to install Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 manager: vvithal
+ms.author: jsuri
 ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center

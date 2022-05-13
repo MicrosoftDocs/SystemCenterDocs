@@ -4,6 +4,7 @@ title: Management Pack for SQL Server Analysis Services delivery
 description: This article explains how to install Management Pack for SQL Server Analysis Services
 author: TDzakhov
 manager: evansma
+ms.author: jsuri
 ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center

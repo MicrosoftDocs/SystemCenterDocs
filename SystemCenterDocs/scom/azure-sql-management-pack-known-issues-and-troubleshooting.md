@@ -4,6 +4,7 @@ title: Known issues and troubleshooting in Management Pack for Azure SQL Databas
 description: This article explains known issues and troubleshooting in Management Pack for Azure SQL Database
 author: TDzakhov
 manager: evansma
+ms.author: jsuri
 ms.date: 5/31/2021
 ms.topic: article
 ms.prod: system-center

@@ -4,6 +4,7 @@ title: Views and dashboards in Management Pack for SQL Server Analysis Services
 description: This article explains views and dashboards in Management Pack for SQL Server Analysis Services
 author: TDzakhov
 manager: evansma
+ms.author: jsuri
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center

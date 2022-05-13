@@ -4,6 +4,7 @@ title: Monitoring configuration in Management Pack for Azure SQL Managed Instanc
 description: This article explains the monitoring configuration in Management Pack for Azure SQL Managed Instance
 author: TDzakhov
 manager: evansma
+ms.author: jsuri
 ms.date: 11/10/2021
 ms.topic: article
 ms.prod: system-center

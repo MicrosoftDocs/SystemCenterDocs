@@ -4,6 +4,7 @@ title: Views and dashboards in Management Pack for Azure SQL Database
 description: This article explains how to view database and server views in Management Pack for Azure SQL Database
 author: TDzakhov
 manager: evansma
+ms.author: jsuri
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
