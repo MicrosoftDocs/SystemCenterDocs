@@ -39,13 +39,13 @@ If you want to customize objects that are defined in a management pack in Servic
 
 - All the other management packs that are located in the same folder as the management pack that you are opening  
 
-moniker range="sc-sm-2016"
+::: moniker range="sc-sm-2016"
 
 - All the management packs in the Library folder in the Service Manager installation folder, for example, in the \\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library folder  
 
 ::: moniker-end
 
-moniker range=">sc-sm-2016"
+::: moniker range=">sc-sm-2016"
 
 - All the management packs in the Library folder in the Service Manager installation folder, for example, in the \\Program Files \(x86\)\\Microsoft System Center\\Service Manager Authoring\\Library folder  
 
@@ -66,17 +66,17 @@ This is important because the definitions from all open management packs co\-exi
 
 4. In the **Open File** dialog box, select the management pack file that you want to open, and then click **Open**. The file that you select must have an .xml or .mp file name extension. For example, select **Management Packs** as the file type, and then select the following management pack file:
 
-::: moniker range="sc-sm-2016"
+     ::: moniker range="sc-sm-2016"
 
-   \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp 
+     \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp 
 
-::: moniker-end 
+     ::: moniker-end 
 
-::: moniker range=">sc-sm-2016"
+     ::: moniker range=">sc-sm-2016"
 
-   \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp 
+     \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp 
 
-::: moniker-end 
+     ::: moniker-end 
 
 5. Wait for the management pack to open, and then verify that it is displayed in the **Management Pack Explorer** pane.  
 

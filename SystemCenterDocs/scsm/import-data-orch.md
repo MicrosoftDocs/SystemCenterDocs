@@ -46,15 +46,15 @@ You can use the following procedures to create a connector for System Center - O
    2. On the **General** page, in the **Name** box, type a name for the new connector. Make sure that **Enable this connector** is selected, and then click **Next**.
 
    3. On the **Connection** page, in the **Server Information** area, type the URL of the Orchestrator Web service.
-   ::: moniker range="sc-sm-2016"
+      ::: moniker range="sc-sm-2016"
 
       1. Type the URL of the Orchestrator Web service in the form of http://computer:port/Orchestrator2012/Orchestrator.svc, where *computer* is the name of the computer hosting the web service and *port* is the port number where the web service is installed. (The default port number is 81.)
-    ::: moniker-end
+      ::: moniker-end
 
-    ::: moniker range=">=sc-sm-1801"
+      ::: moniker range=">=sc-sm-1801"
 
       1. Type the URL of the Orchestrator Web service in the form of http://computer:port/Orchestrator/Orchestrator.svc, where *computer* is the name of the computer hosting the web service and *port* is the port number where the web service is installed. (The default port number is 81.)
-    ::: moniker-end
+      ::: moniker-end
 
    4. On the **Connection** page, in the **Credentials** area, either select an existing account or click **New**, and then do the following:
 
