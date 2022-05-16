@@ -53,7 +53,7 @@ Ensure the following prerequisites:
 4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server 2016 or Windows Server 2012 R2 or later as the guest operating system.
 ::: moniker-end
 
-::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
+::: moniker range=">sc-vmm-2016 <=sc-vmm-2019"
 4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows Server 2016 or later as the guest operating system.
 ::: moniker-end
 
