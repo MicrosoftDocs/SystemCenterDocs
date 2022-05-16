@@ -53,7 +53,7 @@ To set up a RAS gateway, do the following:
 2. **Create the VIP logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to define VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
 
 > [!NOTE]
->To enable dual stack support, while creating GRE VIP logical network, add IPv6 subnet to the network site and create IPv6 address pool. (applicable for 2022)
+>To enable dual stack support, while creating GRE VIP logical network, add IPv6 subnet to the network site and create IPv6 address pool. (applicable for 2022 and later)
 
 3. **Import the service template**: Import the RAS gateway service template.
 4. **Deploy the gateway**: Deploy a gateway service instance, and configure its properties.

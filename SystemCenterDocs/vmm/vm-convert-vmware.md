@@ -82,13 +82,13 @@ System Center VMM enables migration of EFI based VMware VMs to Hyper-V. VMware V
 
 ::: moniker range=">sc-vmm-2016 <=sc-vmm-2019"
 
-As part of VMM 1801 release, the **Convert Virtual Machine** wizard enabled this migration, based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
+As part of VMM 1801 release, the **Convert Virtual Machine** wizard enables this migration, based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 
-The **Convert Virtual Machine** wizard enabled this migration, based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
+The **Convert Virtual Machine** wizard enables this migration, based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
 
 ::: moniker-end
 

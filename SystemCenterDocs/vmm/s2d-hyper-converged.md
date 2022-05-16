@@ -86,7 +86,7 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 
 1.	Read the [prerequisites](hyper-v-bare-metal.md#before-you-start) for bare-metal cluster deployment. Note that:
 
-    - The generalized VHD or VHDX in the VMM library should be running applicable Windows Server with the latest updates. The **Operating system** and **Virtualization platform** values for the hard disk should be set.
+    - The generalized VHD or VHDX in the VMM library should be running applicable Windows Server version with the latest updates. The **Operating system** and **Virtualization platform** values for the hard disk should be set.
     - For bare-metal deployment you need to add a pre-boot execution environment (PXE) server to the VMM fabric. The PXE server is provided through Windows Deployment Services. VMM uses it’s own WinPE image, and you need to make sure that it’s the latest. To do this, click **Fabric** > **Infrastructure** > **Update WinPE image**, and make sure that the job finishes.
 
 2.	Follow the instructions for [provisioning a cluster from bare-metal computers](hyper-v-bare-metal.md).

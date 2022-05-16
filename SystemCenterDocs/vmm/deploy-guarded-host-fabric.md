@@ -40,7 +40,7 @@ Once set up, you can optionally use System Center - Virtual Machine Manager to s
 
 ::: moniker range="sc-vmm-2022"
 
-The core guarded fabric infrastructure (consisting of one or more guarded Hyper-V hosts, the Host Guardian Service, and the artifacts needed to create shielded VMs) is included with applicable Windows Server, and must be configured according to the [guarded fabric documentation](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node).
+The core guarded fabric infrastructure (consisting of one or more guarded Hyper-V hosts, the Host Guardian Service, and the artifacts needed to create shielded VMs) is included with applicable Windows Server version, and must be configured according to the [guarded fabric documentation](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node).
 Once set up, you can optionally use System Center - Virtual Machine Manager to simplify management of the guarded fabric.
 
 ::: moniker-end

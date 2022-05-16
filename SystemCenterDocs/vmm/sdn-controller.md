@@ -59,7 +59,7 @@ To set up SDN in the VMM fabric you need the following:
 
 - **A service template**: VMM uses a service template to automate network controller deployment. Service templates for the network controller support multi-node deployment on generation 1 and generation 2 VMs.
 - **A virtual hard disk**: The service template needs a prepared virtual hard disk that's imported into the VMM library. This virtual hard disk is used for network controller VMs.
-    - The virtual hard disk must be running applicable Windows Server with latest patches installed.
+    - The virtual hard disk must be running applicable Windows Server version with latest patches installed.
     - It can be in VHD or VHDX format.
 - **A management logical network**: That models your physical management network’s connectivity for the VMM hosts, network controller hosts, and tenant VM hosts.
 - **A logical switch**: To provide the management logical network with connectivity to the network controller VMs.
@@ -399,12 +399,9 @@ You can optionally validate the network controller deployment. To do this:
 
 ::: moniker-end
 ::: moniker range="sc-vmm-2022"
-2. In **Settings**, verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition, check **Managed by the network controller**.
+2. In **Settings**, verify that **Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition, check **Managed by the network controller**.
 
     ![HNV network](media/sdn-controller/set-up-provider-network.png)
-
-    >[!NOTE]
-    >**One Connected Network** type is changed to **Connected Network**.
 
 ::: moniker-end
 
@@ -502,15 +499,17 @@ Now, you can create tenant virtual machines connected to the tenant virtual netw
 - Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
 - To allow IPv4 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**.
 ::: moniker-end
-::: moniker range="sc-vmm-2019"
+::: moniker range=">=sc-vmm-2019"
 - Ensure that your tenant virtual machines allow IPv4/IPv6 ICMP through their firewall. By default, Windows Server blocks this.
     - To allow IPv4 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**.
-    - To allow IPv6 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv6-In” –Protocol ICMPv6** (applicable for 2019 UR2 and later).
+    - To allow IPv6 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv6-In” –Protocol ICMPv6** 
 ::: moniker-end
-::: moniker range="sc-vmm-2022"
-- Ensure that your tenant virtual machines allow IPv4/IPv6 ICMP through their firewall. By default, Windows Server blocks this.
-    - To allow IPv4 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**.
-    - To allow IPv6 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv6-In” –Protocol ICMPv6**
+
+::: moniker range="sc-vmm-2019"
+
+>[!NOTE]
+>IPv6 ICMP is applicable for 2019 UR2 and later.
+
 ::: moniker-end
 
 1. If you want to create a VM from an existing hard disk, [follow these instructions](vm-existing-disk.md).

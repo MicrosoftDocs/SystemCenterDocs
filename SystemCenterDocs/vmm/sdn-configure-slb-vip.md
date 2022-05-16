@@ -20,7 +20,7 @@ monikerRange: '>sc-vmm-2016'
 ::: moniker-end
 
 ::: moniker range=">sc-vmm-2016"
-Software Defined Networking (SDN) can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants.
+Software Defined Networking (SDN) can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 only supports deploying SLB Virtual IPs (VIPs) using PowerShell.
 ::: moniker-end
 
 ::: moniker range="sc-vmm-1801"

@@ -55,14 +55,14 @@ Depending on the SDN state captured in the network controller backup and the cur
 
 Use the following refresh procedures to find any such differences between VMM and NC, and accordingly resolve them.
 
-::: moniker range="<=sc-vmm-2019"
+::: moniker range="sc-vmm-2016"
 > [!NOTE]
 > - Refresh cmdlets for refreshing network controller objects are available from VMM 2016 UR3.
 > - If the network controller contains any objects which are not present in the VMM DB, then the  VMM will not refresh (even if those objects are created by using VMM earlier). Delete those objects from NC and recreate the objects from VMM to manage these objects from VMM again.
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-2022"
+::: moniker range=">=sc-vmm-1801"
 > [!NOTE]
 > - Refresh cmdlets for refreshing network controller objects.
 > - If the network controller contains any objects which are not present in the VMM DB, then the  VMM will not refresh (even if those objects are created by using VMM earlier). Delete those objects from NC and recreate the objects from VMM to manage these objects from VMM again.
