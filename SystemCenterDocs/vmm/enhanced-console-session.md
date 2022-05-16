@@ -40,10 +40,26 @@ VMM supports enhanced console session. With console connected through enhanced s
 ## Before you start
 Ensure the following prerequisites:
 
-1.  The operating system of the host, on which the VM is running, should be Windows Server 2012 R2 later.
+::: moniker range="sc-vmm-2016"
+1.  The operating system of the host, on which the VM is running, should be Windows Server 2012 R2 and later.
+::: moniker-end
+
+::: moniker range=">sc-vmm-2016"
+1.  The operating system of the host, on which the VM is running, should be Windows Server 2016 and later.
+::: moniker-end
 2.	The Hyper-V host must have Enhanced session mode policy setting turned ON.
 3.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or later.
+::: moniker range="sc-vmm-2016"
 4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server 2016 or Windows Server 2012 R2 or later as the guest operating system.
+::: moniker-end
+
+::: moniker range=">sc-vmm-2016 <=sc-vmm-2022"
+4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows Server 2016 or later as the guest operating system.
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 11, Windows Server 2016 or later as the guest operating system.
+::: moniker-end
 
 ## Procedure - enable the enhanced console session
 

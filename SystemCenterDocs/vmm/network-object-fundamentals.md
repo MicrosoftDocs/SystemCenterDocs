@@ -34,7 +34,7 @@ The following VMM networking objects are used to build the basic networking infr
 
   Logical objects that mirror your physical networks.
 
-::: moniker release="<=sc-vmm-2019"
+::: moniker range="<=sc-vmm-2019"
 
   >[!NOTE]
   > The terminology for logical networks has changed from 2019 UR1. For more information, see [Logical networks in UR1](network-logical-ur1.md).
