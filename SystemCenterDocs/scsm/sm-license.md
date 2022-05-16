@@ -1,13 +1,13 @@
 ---
 title: System Center Service Manager Evaluation and Licensing
-description: This article provides information about the Evaluation and Licensing related updates in System Center - Service Manager 1801 and later
+description: This article provides information about the Evaluation and Licensing related updates in System Center - Service Manager
 manager: evansma
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 02/05/2018
+ms.date: 05/10/2022
 ms.technology: service-manager
 ms.assetid: 58180b0a-aef8-4448-a26a-0ab85e1977c8
 monikerRange: '>sc-sm-2016'
@@ -22,9 +22,17 @@ monikerRange: '>sc-sm-2016'
 
 ::: moniker-end
 
-System Center - Service Manager (SM) 1801 and later supports an enhanced experience for evaluating Service Manager and activating the product for retail use.  
+::: moniker range="sc-sm-1801"
+System Center - Service Manager (SM) 1801 and later supports an enhanced experience for evaluating Service Manager and activating the product for retail use. 
+::: moniker-end 
 
-The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. In Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your  SM.
+::: moniker range="sc-sm-1801"
+The evaluation version of Service Manager can be installed and used for 180 days. In SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. In Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your SM.
+::: moniker-end
+
+::: moniker range=">sc-sm-1801"
+The evaluation version of Service Manager can be installed and used for 180 days. You can view the information about the evaluation period, and accordingly activate your SM.
+::: moniker-end
 
 To view the evaluation period related information, from the Service Manager console, go to **Help** > **About**. The page displays the details as shown in the following example:
 
@@ -46,7 +54,13 @@ If you try to connect to Service Manager after the expiry of the evaluation peri
 
 ## Activate Service Manager
 
+::: moniker range="sc-sm-1801"
 You can active Service Manager 1801 and later using the product key from Console and PowerShell, by using the following steps.
+::: moniker-end
+
+::: moniker range=">sc-sm-1801"
+You can active Service Manager using the product key from Console and PowerShell, by using the following steps.
+::: moniker-end
 
 ## Activate Service Manager through console
 
