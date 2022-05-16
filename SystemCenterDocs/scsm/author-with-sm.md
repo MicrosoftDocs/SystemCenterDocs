@@ -107,8 +107,7 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 ::: moniker-end
 
 ::: moniker range=">sc-sm-2016 <=sc-sm-2019"
-
--   Windows Vista \(any edition\) with the latest service pack  
+ 
 -   Windows 10
 -   Windows Server 2019 with the latest service pack  
 -   Windows Server 2016 
@@ -118,7 +117,6 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 
 ::: moniker range="sc-sm-2022"
 
--   Windows Vista \(any edition\) with the latest service pack  
 -   Windows 10
 -   Windows 11
 -   Windows Server 2022 with the latest service pack  
