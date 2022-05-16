@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 10/12/2016
+ms.date: 05/11/2022
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -39,7 +39,17 @@ If you want to customize objects that are defined in a management pack in Servic
 
 - All the other management packs that are located in the same folder as the management pack that you are opening  
 
+::: moniker range="sc-sm-2016"
+
 - All the management packs in the Library folder in the Service Manager installation folder, for example, in the \\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library folder  
+
+::: moniker-end
+
+::: moniker range=">sc-sm-2016"
+
+- All the management packs in the Library folder in the Service Manager installation folder, for example, in the \\Program Files \(x86\)\\Microsoft System Center\\Service Manager Authoring\\Library folder  
+
+::: moniker-end
 
 This is important because the definitions from all open management packs co\-exist in the Authoring Tool; therefore, they cannot contradict each other.  
 
@@ -54,9 +64,19 @@ This is important because the definitions from all open management packs co\-exi
 
 3. In the Authoring Tool, on the menu bar, click **File**, and then click **Open**.  
 
-4. In the **Open File** dialog box, select the management pack file that you want to open, and then click **Open**. The file that you select must have an .xml or .mp file name extension. For example, select **Management Packs** as the file type, and then select the following management pack file:  
+4. In the **Open File** dialog box, select the management pack file that you want to open, and then click **Open**. The file that you select must have an .xml or .mp file name extension. For example, select **Management Packs** as the file type, and then select the following management pack file:
 
-    \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp  
+     ::: moniker range="sc-sm-2016"
+
+     \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp 
+
+     ::: moniker-end 
+
+     ::: moniker range=">sc-sm-2016"
+
+     \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp 
+
+     ::: moniker-end 
 
 5. Wait for the management pack to open, and then verify that it is displayed in the **Management Pack Explorer** pane.  
 

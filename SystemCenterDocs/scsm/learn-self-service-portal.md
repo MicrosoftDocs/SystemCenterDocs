@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 11/28/2016
+ms.date: 05/12/2022
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -54,12 +54,27 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  \*The requirements above provide access to 500 users in parallel within an acceptable response time, which includes average read operations with less than 3 seconds and write operations with less than 5 seconds, considering an 80:20 read\-to\-write ratio. For larger deployments, see the *Deploying a Web Farm* section below.  
 
 ### Supported operating systems
+
+::: moniker range="<=sc-sm-1807"
  - Windows Server 2016
 
  - Windows Server 2012 R2
+::: moniker-end
+
+::: moniker range="sc-sm-2019"
+ - Windows Server 2019
+
+ - Windows Server 2016
+::: moniker-end
+
+::: moniker range="sc-sm-2022"
+ - Windows Server 2022
+
+ - Windows Server 2019
+::: moniker-end
 
 ### Supported web browsers  
- The Self-Service portal needs a screen resolution above 1024 X 768.    It is supported on the following browsers.  
+ The Self-Service portal needs a screen resolution above 1024 X 768. It is supported on the following browsers.  
 
 -   Microsoft Edge  
 

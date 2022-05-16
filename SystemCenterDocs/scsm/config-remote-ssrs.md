@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 03/07/2022
+ms.date: 05/11/2022
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -109,7 +109,13 @@ Use the following steps:
 
 ## Verify SSRS installation
 
+::: moniker range="sc-sm-2016"
 In the Service Manager Data Warehouse (DW) version 2016 and later the following known issue is observed:
+::: moniker-end
+
+::: moniker range=">sc-sm-2016"
+In the Service Manager Data Warehouse (DW), the following known issue is observed:
+::: moniker-end
 
 If SQL Server Reporting Services (SSRS) is running locally on the Data Warehouse Management Server, and SSRS is 2017 or later, the Data Warehouse Setup completes successfully, but might not configure the specified local SSRS instance properly.
 
