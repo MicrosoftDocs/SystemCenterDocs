@@ -52,8 +52,8 @@ The web service supporting the Orchestration console does not use the **Settings
 2.  Open a Command Prompt window with administrator credentials.  
 3.  Run the following command to decrypt the Web.config file:  
 
-   ```cmd
-   C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet\_regiis.exe -pdf "connectionStrings" "C:\Program Files (x86)\Microsoft System Center \<version>\Orchestrator\\Web Service\Orchestrator\<version>"
+   ```
+   C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet\_regiis.exe -pdf "connectionStrings" "C:\Program Files (x86)\Microsoft System Center <version>\Orchestrator\Web Service\Orchestrator<version>"
    ```
 4.  To start the IIS Manager, click **Start**, point to **Administrative Tools**, and then click **Internet Information Services \(IIS\) Manager**.  
 5.  Expand the **Sites** node, and then click **Microsoft System Center <version> Orchestrator Web Service**.  
@@ -64,7 +64,7 @@ The web service supporting the Orchestration console does not use the **Settings
 10. Close **IIS Manager**.  
 11. Run the following command to encrypt the Web.config file:  
 
-   ```cmd
+   ```
    C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet\_regiis.exe -pef "connectionStrings" "C:\Program Files (x86)\Microsoft System Center <version>\Orchestrator\Web Service\Orchestrator<version>"
    ```
 
