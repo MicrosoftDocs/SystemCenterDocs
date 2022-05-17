@@ -6,7 +6,7 @@ ms.custom: na, intro-installation
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 10/12/2016
+ms.date: 05/11/2022
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -198,7 +198,17 @@ The procedures in this topic describe how to validate the four\-computer install
 
 #### To validate a Service Manager management server installation  
 
+::: moniker range="sc-sm-2016"
+
 1.  On the computer hosting the Service Manager management server, verify that a Program Files\\Microsoft System Center&nbsp;2016\\Service Manager folder exists.  
+
+::: moniker-end
+
+::: moniker range=">sc-sm-2016"
+
+1.  On the computer hosting the Service Manager management server, verify that a Program Files\\Microsoft System Center\\Service Manager folder exists.  
+
+::: moniker-end
 
 2.  Run **services.msc**, and then verify that the following services are installed, that they have the status of **Started**, and that the startup type is **Automatic**:  
 
