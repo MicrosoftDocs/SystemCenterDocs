@@ -5,7 +5,7 @@ description: This article describes how to do a rolling upgrade of an SOFS clust
 author: jyothisuri
 ms.author: jsuri
 manager: ievansma
-ms.date: 11/07/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -19,7 +19,13 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
+::: moniker range="sc-vmm-2016"
 Cluster rolling upgrade was introduced in Windows Server 2016. It enables you to upgrade the operating system of cluster nodes in a scale-out file server (SOFS) cluster, or Hyper-V cluster, without stopping workloads running on the nodes. [Read more](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
+::: moniker-end
+
+::: moniker range=">sc-vmm-2016"
+Cluster rolling upgrade enables you to upgrade the operating system of cluster nodes in a scale-out file server (SOFS) cluster, or Hyper-V cluster, without stopping workloads running on the nodes. [Read more](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements) about rolling upgrade requirements and architecture.
+::: moniker-end
 
 This article describes how to perform a cluster rolling upgrade of SOFS managed in the System Center - Virtual Machine Manager (VMM) fabric. Here's what the upgrade does:
 
@@ -33,7 +39,12 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 ## Before you start
 
 - The cluster must be managed by VMM.
-- The cluster must be running Windows Server 2012 R2.
+::: moniker range="sc-vmm-2016"
+- The cluster must be running Windows Server 2012 R2 or later.
+::: moniker-end
+::: moniker range=">sc-vmm-2016"
+- The cluster must be running Windows Server 2016 or later.
+::: moniker-end
 - The cluster must meet the [requirements](sofs-bare-metal.md#before-you-start) for bare metal deployment. The only exception is that the physical computer profile doesn't need to include network or disk configuration details. During the upgrade VMM records the node's network and disk configuration and uses that information instead of the computer profile.
 - You can upgrade nodes that weren't originally provisioned using bare metal as long as those nodes meet bare metal requirements such as BMC. You'll need to provide this information in the upgrade wizard.
 - The VMM library needs a virtual hard disk configured with Windows Server 2016.
@@ -46,6 +57,12 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 1. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all of the settings it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal BMC settings might not be complete. Fill in the missing information.
     - Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name, and you want to make sure the new name is not in use.
     - In the network adapter configuration you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter select a logical network and an IP subnet if applicable. If the subnet contains and address pool you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise type an IP address within the logical network.
-1. In **Summary**, click **Finish** to begin the upgrade. If the wizard finishes, the node upgrades successfully so that all of the SOFS nodes are running Windows Server 2016. The wizard upgrades the cluster functional level to Windows Server 2016.
+1. In **Summary**, click **Finish** to begin the upgrade. If the wizard finishes, the node upgrades successfully so that all of the SOFS nodes are running Windows Server 2016 or later. The wizard upgrades the cluster functional level to Windows Server 2016.
 
-If you need to update the functional level of a SOFS that was upgraded outside VMM, you can do that by right-clicking the **Files Servers** > SOFS name > **Update Version**. This might be necessary if you upgraded the SOFS nodes before adding it to the VMM fabric, but SOFS is still functioning as a Windows Server 2012 R2 cluster.
+::: moniker range="sc-vmm-2016"
+If you need to update the functional level of a SOFS that was upgraded outside VMM, you can do that by right-clicking the **Files Servers** > SOFS name > **Update Version**. This might be necessary if you upgraded the SOFS nodes before adding it to the VMM fabric, but SOFS is still functioning as a Windows Server 2012 R2 or later cluster.
+::: moniker-end
+
+::: moniker range=">sc-vmm-2016"
+If you need to update the functional level of a SOFS that was upgraded outside VMM, you can do that by right-clicking the **Files Servers** > SOFS name > **Update Version**. This might be necessary if you upgraded the SOFS nodes before adding it to the VMM fabric, but SOFS is still functioning as a Windows Server 2016 or later cluster.
+::: moniker-end

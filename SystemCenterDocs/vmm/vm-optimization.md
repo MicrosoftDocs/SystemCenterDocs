@@ -5,7 +5,7 @@ description: This article describes how to configure dynamic optimization and po
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 06/16/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -54,7 +54,13 @@ Note the following information before you start using the DO.
 
 ### Node fairness
 
-Node fairness is a new feature in Windows Server 2016. It identifies cluster nodes with light loads, and distributes VMs to those node to balance load. This is similar to VMM's dynamic optimization. To avoid potential performance issues, dynamic optimization and node fairness shouldn't work together. To ensure this doesn't happen VMM disables node fairness in all clusters in a host group for which dynamic optimization is set to automatic. If you enable node fairness outside the VMM console, VMM will turn it off the next time that dynamic optimization refreshes. If you do want to use node fairness, disable dynamic optimization, and then manually enable node fairness.
+::: moniker range="sc-vmm-2016"
+
+Node fairness is a new feature in Windows Server 2016. 
+
+::: moniker-end
+
+It identifies cluster nodes with light loads, and distributes VMs to those node to balance load. This is similar to VMM's dynamic optimization. To avoid potential performance issues, dynamic optimization and node fairness shouldn't work together. To ensure this doesn't happen VMM disables node fairness in all clusters in a host group for which dynamic optimization is set to automatic. If you enable node fairness outside the VMM console, VMM will turn it off the next time that dynamic optimization refreshes. If you do want to use node fairness, disable dynamic optimization, and then manually enable node fairness.
 
 ## Power optimization
 

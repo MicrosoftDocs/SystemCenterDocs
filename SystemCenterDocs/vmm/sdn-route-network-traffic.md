@@ -5,7 +5,7 @@ description: This article describes about how to route the network traffic betwe
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -283,7 +283,21 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
 
 L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud.
 
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
 Using L3 forwarding connection, tenant network virtual machines can connect to a physical network through the Windows Server 2016/2019 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+Using L3 forwarding connection, tenant network virtual machines can connect to a physical network through the Windows Server 2016/2019/2022 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
+
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2019"
 
 To learn more, check these articles: [Windows server gateway as a forwarding gateway](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn313101(v=ws.11)#bkmk_private) and [RAS gateway high availability](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 

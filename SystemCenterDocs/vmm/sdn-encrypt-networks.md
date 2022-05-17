@@ -5,7 +5,7 @@ description: This article explains about how to configure encrypted networks in 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 02/05/2018
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -25,7 +25,10 @@ This article explains about how to encrypt the VM networks in software defined n
 
 Today, network traffic can be encrypted by the guest OS or an application using technologies like IPSec and TLS. However, these technologies are difficult to implement because of their inherent complexity and challenges related to interoperability between systems because of the nature of implementation.
 
-Using the encrypted networks feature in VMM, end-to-end encryption can be easily configured on the VM networks by using the Network Controller (NC). This encryption prevents traffic between two VMs on the same VM network and same subnet, from being read and manipulated. VMM 1801 and later supports this feature.
+Using the encrypted networks feature in VMM, end-to-end encryption can be easily configured on the VM networks by using the Network Controller (NC). This encryption prevents traffic between two VMs on the same VM network and same subnet, from being read and manipulated.
+::: moniker range="sc-vmm-1801"
+ VMM 1801 and later supports this feature.
+::: moniker-end
 
 The control of encryption is at the subnet level and encryption can be enabled/disabled for each subnet of the VM network.
 

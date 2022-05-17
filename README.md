@@ -21,7 +21,7 @@ Thank you for your interest in System Center documentation!
 * [How to use markdown to format your topic](#how-to-use-markdown-to-format-your-topic)
 * [Index of all contributors' guide articles](./contributor-guide/contributor-guide-index.md) (opens new page)
 
-##Code of conduct
+## Code of conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 

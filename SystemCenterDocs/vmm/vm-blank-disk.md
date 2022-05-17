@@ -5,7 +5,7 @@ description: This article describes how to create and deploy VMs in the VMM fabr
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -67,7 +67,7 @@ This article describes how to create and deploy virtual machines in the System C
 
 ## Deploy the VM on a host
 
-::: moniker range="= sc-vmm-2022"
+::: moniker range="sc-vmm-2022"
 
 >[!NOTE]
 > Apply [this patch](https://support.microsoft.com/kb/2919355) for deploying VMM guest agent on the following OS, else the deployment fails:
