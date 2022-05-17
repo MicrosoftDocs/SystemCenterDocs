@@ -5,7 +5,7 @@ description: This article describes how to set storage QoS policies for clusters
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/30/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -27,7 +27,17 @@ This article describes about how to manage storage quality-of-service (QoS) poli
 ## Assign storage QoS policy for clusters
 Windows server 2016 and later allows the deployments to use the storage QoS feature with any VHDs residing on a Cluster Shared Volume (CSV). In VMM 2016, the management of SQoS is limited to VHDs residing on the S2D hyper converged type clusters and Scale-Out File Servers only (SOFS). Also, the scope of QoS policies is based on the storage arrays, which is not scalable to the scenarios like SAN, where VMM only manages the compute cluster.
 
-VMM 1801 and later supports QoS on all managed clusters and also SOFS, running on Windows Server 2016 and beyond.
+::: moniker range="sc-vmm-1801"
+
+VMM 1801 and later supports QoS on all managed clusters and also SOFS, running on Windows Server 2016 and later.
+
+::: moniker-end
+
+::: moniker range=">sc-vmm-1801"
+
+VMM supports QoS on all managed clusters and also SOFS, running on Windows Server 2016 and later.
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-2019"
 > [!NOTE]
@@ -70,8 +80,17 @@ The following new parameters are added:
 ## Assign  a storage QoS Policy from templates
    Templates usage is a common way for deploying VMs and Services on a cloud.
 
+::: moniker range="sc-vmm-1801"
+
    With VMM 1801 and later, you can select storage QoS policies from a template as well. For information on how to assign storage QoS policies from templates, see the related procedure in  [create a VM template](library-vm-templates.md) article.
 
+::: moniker-end
+
+::: moniker range=">sc-vmm-1801"
+
+   You can select storage QoS policies from a template as well. For information on how to assign storage QoS policies from templates, see the related procedure in  [create a VM template](library-vm-templates.md) article.
+
+::: moniker-end
 
 ## Next steps
   [Manage QoS](./manage-sofs-qos.md)

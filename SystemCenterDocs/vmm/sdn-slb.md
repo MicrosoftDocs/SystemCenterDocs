@@ -5,7 +5,7 @@ description: This article describes how to set up a SDN software load balancer i
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -78,10 +78,14 @@ We recommend to use simplified SDN topology (2 physical network) for SLB deploym
 ## Create the transit logical network
 
 1. Open the **Create logical network Wizard**, and type a **Name** and optional description.
+::: moniker range="sc-vmm-2019"
 2. In **Settings**, select **One Connected Network**. Select **Create a VM network with the same name** box to allow virtual machines to access this logical network directly, and **Managed by the network controller**.
-::: moniker range=">=sc-vmm-2019"
 - For VMM 2019 UR1 and later, in **Settings**, select **Connected Network**, and select **Managed by the Network Controller**.
 ::: moniker-end
+::: moniker range="sc-vmm-2022"
+2. In **Settings**, select **Connected Network**. and select **Managed by the network controller**.
+::: moniker-end
+
 3. In **Network Site**, add the network site information for your subnet.
 4. Review the **Summary** information and complete the logical network wizard.
 
@@ -91,7 +95,13 @@ This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machi
 ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2019"
-This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed). From VMM 2019 UR1 and later, you can create IP address pool using **Create Logical Network** wizard.
+This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed). 
+::: moniker-end
+::: moniker range="sc-vmm-2019"
+From VMM 2019 UR1 and later, you can create IP address pool using **Create Logical Network** wizard.
+::: moniker-end
+::: moniker range="sc-vmm-2022"
+You can create IP address pool using **Create Logical Network** wizard.
 ::: moniker-end
 
 >[!NOTE]

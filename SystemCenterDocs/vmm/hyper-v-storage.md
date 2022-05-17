@@ -5,7 +5,7 @@ description: This article provides information to add and allocate storage to Hy
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -98,8 +98,13 @@ Either assign an existing unit, or create a new one and assign it.
 1. Click **Fabric** **Servers** > **All Hosts**. Right-click the cluster you want to configure > **Properties**.
 In **Host Cluster Name** >  **Properties** click a tab:
 
-    - **Available Storage**: for adding available storage, converting available storage to shared storage (CSV), or removing available storage.
-    - **Shared Volumes**: for adding cluster shared volumes (CSVs), converting CSVs to available storage, or removing CSVs. The cluster must run at least Windows Server 2012 to support CSVs.
+   - **Available Storage**: for adding available storage, converting available storage to shared storage (CSV), or removing available storage.
+   ::: moniker range="sc-vmm-2016"
+   - **Shared Volumes**: for adding cluster shared volumes (CSVs), converting CSVs to available storage, or removing CSVs. The cluster must run at least Windows Server 2012 to support CSVs.
+   ::: moniker-end
+   ::: moniker range=">sc-vmm-2016"
+   - **Shared Volumes**: for adding cluster shared volumes (CSVs), converting CSVs to available storage, or removing CSVs. The cluster must run at least Windows Server 2016 to support CSVs.
+   ::: moniker-end
 
 2.  Configure storage for the host cluster. Note that:
     - If you add available storage for CSVs, use only alphanumeric characters for a LUN. Note that you can't change the partition style of a disk that has already been initialized.

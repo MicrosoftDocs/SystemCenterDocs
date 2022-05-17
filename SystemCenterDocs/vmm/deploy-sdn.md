@@ -5,7 +5,7 @@ description: This article provides an overview of setting up n SDN in the System
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/01/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -36,8 +36,15 @@ If you deploy SDN in the VMM fabric you can:
 SDN combines a number of technologies, among them:
 
 - **Network Controller**:The network controller allows you to automate configuration of your network infrastructure, instead of manually configuring network devices and services.
+::: moniker range="sc-vmm-2016"
 - **RAS Gateway for SDN**: RAS Gateway is a software-based, multitenant, BGP capable router in Windows Server 2016 that is designed for CSPs and Enterprises that host multiple tenant virtual networks using HNV.
-- **Software Load Balancing (SLB) for SDN**: (SDN) in Windows Server 2016 can use Software Load Balancing (SLB) to evenly distribute tenant and tenant customer network traffic among virtual network resources. The Windows Server SLB enables multiple servers to host the same workload, providing high availability and scalability.
+- **Software Load Balancing (SLB) for SDN**: SDN in Windows Server 2016 can use Software Load Balancing (SLB) to evenly distribute tenant and tenant customer network traffic among virtual network resources. The Windows Server SLB enables multiple servers to host the same workload, providing high availability and scalability.
+::: moniker-end
+
+::: moniker range=">sc-vmm-2016"
+- **RAS Gateway for SDN**: RAS Gateway is a software-based, multitenant, BGP capable router that is designed for CSPs and Enterprises that host multiple tenant virtual networks using HNV.
+- **Software Load Balancing (SLB) for SDN**: SDN can use Software Load Balancing (SLB) to evenly distribute tenant and tenant customer network traffic among virtual network resources. The Windows Server SLB enables multiple servers to host the same workload, providing high availability and scalability.
+::: moniker-end
 
 [Read more about](/windows-server/networking/sdn/technologies/software-defined-networking-technologies) technologies in the SDN stack.
 

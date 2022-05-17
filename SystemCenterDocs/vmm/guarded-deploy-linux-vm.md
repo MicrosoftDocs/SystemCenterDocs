@@ -4,7 +4,7 @@ description: Learn how to add and provision a Linux shielded VM in the Virtual M
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 02/08/2018
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -20,7 +20,7 @@ monikerRange: '>sc-vmm-1801'
 ::: moniker-end
 
 
-This article describes how to deploy Linux shielded virtual machines (VMs) in System Center 1801 - Virtual Machine Manager (VMM).
+This article describes how to deploy Linux shielded virtual machines (VMs) in System Center - Virtual Machine Manager (VMM).
 
 
 ## Procedure to shield a Linux VM
