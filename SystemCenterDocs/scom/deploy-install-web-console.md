@@ -100,12 +100,12 @@ The local and remote parameters are as follows:
 
   ::: moniker range="sc-om-2016"
    > [!NOTE]
-   > The default path is C:\Program Files\Microsoft System Center 2016\Operations Manager. 
+   > The default path is `C:\Program Files\Microsoft System Center 2016\Operations Manager`. 
 ::: moniker-end
     
 ::: moniker range=">sc-om-2016"
    > [!NOTE]
-   > The default path is C:\Program Files\Microsoft System Center\Operations Manager.
+   > The default path is `C:\Program Files\Microsoft System Center\Operations Manager`.
 ::: moniker-end
 
 
@@ -200,7 +200,7 @@ The local and remote parameters are as follows:
 
 The following steps are for configuring permission inheritance for the System Center - Operations Manager Web console.  
 
-1.  In Windows Explorer, navigate to the MonitoringView folder in the installation directory for the web console (by default, C:\Program Files\System Center \<version\>\Operations Manager\WebConsole\MonitoringView), right-click the TempImages folder, and click **Properties**.
+1.  In Windows Explorer, navigate to the MonitoringView folder in the installation directory for the web console (by default, `C:\Program Files\System Center \<version\>\Operations Manager\WebConsole\MonitoringView`), right-click the TempImages folder, and click **Properties**.
 
 2.  On the **Security** tab, click **Advanced**.
 
