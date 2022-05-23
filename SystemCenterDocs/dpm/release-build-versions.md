@@ -23,8 +23,33 @@ monikerRange: '>=sc-dpm-2016'
 
 This article describes how to determine your current Microsoft System Center – Data Protection Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
+::: moniker range="sc-dpm-2022"
+
 > [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2016 – Data Protection Manager and never applied an update rollup, you can  proceed to install the latest one available.
+> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2022 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2016"
+
+> [!NOTE]
+> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2016 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-1801"
+
+> [!NOTE]
+> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 1801 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-1807"
+
+> [!NOTE]
+> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 1807 – Data Protection Manager and never applied an update rollup, you can proceed to install the latest one available.
+
+::: moniker-end
 
 ## Build versions
 
