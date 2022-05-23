@@ -170,7 +170,7 @@ The local and remote parameters are as follows:
 12. On the **Setup is complete** page, click **Close**.
 
 > [!IMPORTANT]
-> The Default website must have an http or https binding configured. If you configure a specific IP address or host header in the bindings of the web console website, create additional bindings on the website for the same ports by using the loopback address or the localhost hostname, depending on the scenario. More details can be found here: [Host header or IP address binding causes web console login errors in Operations Manager](SupportArticles-docs/web-console-login-errors.md).
+> The Default website must have an http or https binding configured. If you configure a specific IP address or host header in the bindings of the web console website, create additional bindings on the website for the same ports by using the loopback address or the localhost hostname, depending on the scenario. More details can be found here: [Host header or IP address binding causes web console login errors in Operations Manager](https://docs.microsoft.com/troubleshoot/system-center/scom/web-console-login-errors).
 
 ### To install a Web console by using the Command Prompt window
 
