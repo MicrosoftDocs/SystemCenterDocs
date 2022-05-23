@@ -38,7 +38,7 @@ The following is a list of features and configurations supported in Management P
 
 - SQL Server Reporting Services Scale-out deployment
 
-- Power BI Report Server - Verified with build 15.0.1107.165
+- Power BI Report Server - Verified with build 15.0.1108.159
 
   The management pack treats PBIRS as a special kind of SSRS and provides the same monitoring for PBIRS instances as it does for SSRS instances. In this guide, we will use SSRS or Reporting Services, but each term is intended for both SQL Server Reporting Services and Power BI Report Server.
 
