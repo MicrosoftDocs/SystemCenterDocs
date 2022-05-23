@@ -194,6 +194,7 @@ The local and remote parameters are as follows:
     /WebSiteName: "<WebSiteName>" [/WebConsoleUseSSL]
     /WebConsoleAuthorizationMode: [Mixed|Network]
     /UseMicrosoftUpdate: [0|1]
+    /AcceptEndUserLicenseAgreement: [0|1]
     ```
 
 ## To configure permissions inheritance for the Web console
