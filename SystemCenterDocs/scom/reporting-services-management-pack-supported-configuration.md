@@ -15,18 +15,12 @@ ms.technology: operations-manager
 
 Management Pack for SQL Server Reporting Services is version-agnostic and supports discovery and monitoring of SQL Server Reporting Services 2012 through 2022 and higher as well as Power BI Report Server.
 
-## Operating Systems and Platforms
+## Supported Operating Systems and Platforms
 
 Management Pack for SQL Server Reporting Services supports the following operating systems and platforms:
 
 - Windows Server 2012
 - Windows Server 2016
-- Windows Server 2019
-
-## Supported Operating Systems and Platforms
-
-Management Pack for SQL Server Reporting Services supports the following operating systems and platforms:
-
 - Windows Server 2019
 - Windows Server 2022
 
