@@ -214,9 +214,9 @@ The following steps provide information about upgrading to SQL 2019.
 
  The following versions of Windows client operating system are supported for the Service Manager console.
 
- |System Center client-side components|Windows Server&reg; 2016 Standard, Datacenter Enterprise|Windows Server&reg; 2019 Standard, Datacenter|Windows 10 |
- |-----------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------
- |**Service Manager** Console|&#8226;|&#8226;|&#8226;|
+ |System Center client-side components|Windows Server&reg; 2016 Standard, Datacenter Enterprise|Windows Server&reg; 2019 Standard, Data Center|Windows 10| Windows 11 |
+ |-----------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|
+ **Service Manager** Console|&#8226;|&#8226;|&#8226;|&#8226;|
 
 ## .NET Versions supported
 
