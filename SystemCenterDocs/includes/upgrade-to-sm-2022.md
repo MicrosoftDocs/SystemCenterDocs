@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 04/20/2022
+ms.date: 05/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -23,7 +23,8 @@ The following sections provide information about how to upgrade to System Center
 >   
 > 1.  Orchestrator  
 > 2.  Service Manager  
-> 3.  Operations Manager  
+> 3.  Data Protection Manager
+> 4.  Operations Manager  
 > 5.  Configuration Manager  
 > 6.  Virtual Machine Manager  
 > 7.  App Controller  
