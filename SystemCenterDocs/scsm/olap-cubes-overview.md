@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 05/06/2019
+ms.date: 05/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -85,7 +85,7 @@ The following illustration shows an OLAP cube that contains the Date, Region, an
 
 ![Diagram of cube dimensions](./media/olap-cubes-overview/ops-dimensions.png)  
 
-For example, Microsoft team members might want a quick and simple summary of the sales of the Xbox&nbsp;One gaming console in 2016. They can further drill down to get sales figures for a more focused time frame. Business analysts may want to examine how the sales of Xbox&nbsp;One consoles were affected by the launch of the new console design and the Kinect for Xbox&nbsp;One. This helps them determine what sales trends are occurring and what potential revisions of business strategy are needed. By filtering on the date dimension, this information can be quickly delivered and consumed. This slicing and dicing of data is enabled only because the dimensions have been designed with attributes and data that can easily be filtered and grouped by the customer.  
+For example, Microsoft team members might want a quick and simple summary of the sales of the Xbox&nbsp;One gaming console in applicable version. They can further drill down to get sales figures for a more focused time frame. Business analysts may want to examine how the sales of Xbox&nbsp;One consoles were affected by the launch of the new console design and the Kinect for Xbox&nbsp;One. This helps them determine what sales trends are occurring and what potential revisions of business strategy are needed. By filtering on the date dimension, this information can be quickly delivered and consumed. This slicing and dicing of data is enabled only because the dimensions have been designed with attributes and data that can easily be filtered and grouped by the customer.  
 
 In Service Manager, all OLAP cubes share a common set of dimensions. All dimensions use the primary data warehouse data mart as their source, even in multiple data mart scenarios. In multiple data mart scenarios, this can possibly lead to dimension key errors during processing of the cube.  
 
@@ -235,7 +235,7 @@ After a dimension has been fully processed, incremental processing with *Process
 
 ### Partition processing  
 
-Partition processing must be carefully considered because reprocessing a large partition is very slow and it consumes many CPU resources on the server that hosts SSAS. Partition processing generally takes longer than dimension processing. Unlike dimension processing, processing a partition has no side effects on other objects. The only two types of processing that are performed on System Center 2016 - Service Manager OLAP cubes are ProcessFull and ProcessAdd.  
+Partition processing must be carefully considered because reprocessing a large partition is very slow and it consumes many CPU resources on the server that hosts SSAS. Partition processing generally takes longer than dimension processing. Unlike dimension processing, processing a partition has no side effects on other objects. The only two types of processing that are performed on System Center - Service Manager OLAP cubes are ProcessFull and ProcessAdd.  
 
 Similar to dimensions, creating new partitions in an OLAP cube requires a ProcessFull task for the partition to be in a state where it can be queried. Because a ProcessFull task is an expensive operation, you should perform a ProcessFull task only when necessary; for example, when you create a partition or when a row has been updated. In scenarios in which rows have been added and no rows have been updated, Service Manager can perform a ProcessAdd task. To do this, Service Manager uses watermarks and other metadata. Specifically, the etl.cubepartition table and the etl.tablepartition table are queried to determine what type of processing to perform.  
 
