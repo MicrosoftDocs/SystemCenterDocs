@@ -2,10 +2,10 @@
 ms.assetid: cddb1bfe-0eff-4417-ab61-e0b2da55c5ed
 title: Disabling monitoring of specified SQL Servers and databases in Management Pack for SQL Server
 description: This section explains how to disable monitoring of SQL Servers and Databases
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 5/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -35,11 +35,12 @@ The following table lists short names that you can use to override the **Edition
 
 |Short Name|Covered Editions|
 |-|-|
-|Enterprise|Enterprise Edition, Enterprise Edition: Core-based Licensing, Enterprise Evaluation Edition|
+|Enterprise|Enterprise Edition, Enterprise Edition: Core-based Licensing|
 |Standard|Standard Edition, Business Intelligence Edition|
 |Web|Web Edition|
 |Developer|Developer Edition|
 |Express|Express Edition, Express Edition with Advanced Services|
+|Evaluation|Enterprise Evaluation Edition|
 
 ![Disabling Monitoring of Specified SQL Server Editions](./media/sql-server-management-pack/overriding-edition-parameter.png)
 
