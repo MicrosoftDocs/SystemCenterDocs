@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Ser
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 04/21/2022
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
@@ -17,9 +17,6 @@ ms.technology: service-manager
 
 This article provides the upgrade information for System Center 2022 - Service Manager (SM)
 
->[!NOTE]
->System Center Data Protection Manager (DPM) 2022 is not yet released. Rest of the components can be upgraded to version 2022 and DPM can be upgraded once it is released.
-
 [!INCLUDE [upgrade-to-sm-2022.md](../includes/upgrade-to-sm-2022.md)]
 
 ::: moniker-end
@@ -27,9 +24,6 @@ This article provides the upgrade information for System Center 2022 - Service M
 ::: moniker range="=sc-sm-2019"
 
 This article provides the upgrade information for System Center 2019 - Service Manager (SM)
-
->[!NOTE]
->System Center Data Protection Manager (DPM) 2022 is not yet released. Rest of the components can be upgraded to version 2022 and DPM can be upgraded once it is released.
 
 ::: moniker-end
 
