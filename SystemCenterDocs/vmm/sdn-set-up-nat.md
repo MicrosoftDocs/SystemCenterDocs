@@ -5,7 +5,7 @@ description: This article describes how to configure NAT connection and NAT rule
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -32,7 +32,7 @@ This article provides information about how to configure a NAT connection for SD
 
 ::: moniker range="sc-vmm-2022"
 
-VMM 2022 supports dual stack. NAT rules to Dual stack VM networks is not supported at VMM console. NAT rules can be specified using PowerShell cmdlets.  
+VMM 2022 supports dual stack. NAT rules to Dual stack VM networks is not supported at VMM console. NAT rules can be specified using PowerShell cmdlets. For more information see [Add rules to a NAT connection](#add-rules-to-a-nat-connection)
 
 ::: moniker-end
 
@@ -74,7 +74,33 @@ A NAT connection will be created for this VM network.
 
 ## Add rules to a NAT connection
 
-Use the following procedure:
+VMM 2022 supports dual stack. NAT rules to Dual stack VM networks is not supported at VMM console. NAT rules can be specified using PowerShell cmdlets.
+
+```
+$vmNetwork = Get-SCVMNetwork -ID <VMNetwork ID>
+
+$vmSubnet = Get-SCVMSubnet -Name <VMSubnet Name> | where { $_.ID -eq <VMSubnet ID> }
+$gatewayDevice = Get-SCNetworkGateway -ID <Gateway Device ID>
+$VmNetworkGateway = Add-SCVMNetworkGateway -Name "TenantDS_Gateway" -EnableBGP $false -NetworkGateway $gatewayDevice -VMNetwork $vmNetwork
+```
+
+**For IPv6 NAT Conenction**
+
+```
+$externalIpPoolVar = Get-SCStaticIPAddressPool -ID <VIP Pool Id>
+$natConnectionIPv6 = Add-SCNATConnection -VMNetwork $vmNetwork -Name "TenantDS_NatConnection_IPv6" -ExternalIPPool $externalIpPoolVar -ExternalIPAddress <IP From IPv6 VIP Pool>
+Add-SCNATRule -Name "NATIPv6" -Protocol "TCP" -InternalIPAddress <IP From IPv6 subnet> -ExternalPort <External Port> -NATConnection $natConnectionIPv6 -InternalPort <Internal Port>
+```
+
+**For IPv4 NAT Connection**
+
+```
+$externalIpPoolVar1 = Get-SCStaticIPAddressPool -Name "PublicVIP_IPAddressPool_0"
+$natConnectionIPv4 = Add-SCNATConnection -VMNetwork $vmNetwork -Name "TenantDS_NatConnection_IPv4" -ExternalIPPool $externalIpPoolVar1 -ExternalIPAddress <IP From IPv4 VIP Pool>
+Add-SCNATRule -Name "NATIPv4" -Protocol "TCP" -InternalIPAddress <IP From IPv4 subnet>" -ExternalPort <External Port> -NATConnection $natConnectionIPv4 -InternalPort <Internal Port>
+```
+
+Use the following procedure to add rules to a NAT connection:
 
 1.	In VMM console, click **VMs and Services** > **VM Networks**. Right-click the selected VM network and select **Properties**.
 2.	Click **Network Address Translation** on the wizard.
