@@ -162,11 +162,11 @@ The order of your upgrades is important. Perform the upgrade steps in the follow
 After the installation, do the following:
 
 4. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the  following commands:
-```
-$DW ='DWMS Servername'
+    ```
+    $DW ='DWMS Servername'
 
-Get-scdwjob -Computername $DW | %{disable-scdwjobschedule -Computername $DW -jobname $_.Name}
-```
+    Get-scdwjob -Computername $DW | %{disable-scdwjobschedule -Computername $DW -jobname $_.Name}
+    ```
 
 5. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges:
     ```

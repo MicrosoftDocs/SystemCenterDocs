@@ -50,7 +50,7 @@ For more information about the permissions that these accounts require, see "Acc
 
 2. On the Service Manager installation media, double\-click the **Setup.exe** file.  
 
-3. On the **Microsoft System Center <version>** page, click **Service Manager management server**.  
+3. On the **Microsoft System Center \<version\>** page, click **Service Manager management server**.  
 
 4. On the **Product registration** page, type information in the boxes. In the **Product key** boxes, type the product key that you received with Service Manager, or alternatively, select **Install as an evaluation edition \(180 day trial\)**. Read the Microsoft Software License Terms, and, if applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.  
 
@@ -92,7 +92,7 @@ For more information about the permissions that these accounts require, see "Acc
 
 2. On the Service Manager installation media, double\-click the **Setup.exe** file.  
 
-3. On the **Microsoft System Center <version>** page, click **Service Manager data warehouse management server**.  
+3. On the **Microsoft System Center \<version\>** page, click **Service Manager data warehouse management server**.  
 
 4. On the **Product registration** page, type information in the boxes. In the **Product key** boxes, type the product key you received with Service Manager, or as an alternative, select **Install as an evaluation edition \(180 day trial**. Read the Microsoft Software License Terms, and, if applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.  
 
@@ -202,7 +202,7 @@ You can use the following procedures to validate the single\-computer installati
 
 ### To validate the Service Manager management server installation  
 
-1.  On the physical computer that hosts the Service Manager management server, verify that the Program Files\\Microsoft System Center <version>\\Service Manager\\ folder exists.  
+1.  On the physical computer that hosts the Service Manager management server, verify that the Program Files\\Microsoft System Center \<version\>\\Service Manager\\ folder exists.  
 
 2.  Run **services.msc**, and then verify that the following services are installed, that they have a status of **Started**, and that the startup type is **Automatic**:  
 
