@@ -84,7 +84,7 @@ $gatewayDevice = Get-SCNetworkGateway -ID <Gateway Device ID>
 $VmNetworkGateway = Add-SCVMNetworkGateway -Name "TenantDS_Gateway" -EnableBGP $false -NetworkGateway $gatewayDevice -VMNetwork $vmNetwork
 ```
 
-**For IPv6 NAT Conenction**
+**For IPv6 NAT Connection**
 
 ```
 $externalIpPoolVar = Get-SCStaticIPAddressPool -ID <VIP Pool Id>
