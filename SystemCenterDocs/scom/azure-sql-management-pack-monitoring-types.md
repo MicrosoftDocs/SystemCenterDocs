@@ -237,7 +237,7 @@ To begin monitoring of Azure SQL Databases using T-SQL queries, perform the foll
 
     ![Servers to monitor](./media/azure-sql-management-pack/adding-servers.png)
 
-6. In the **Server Name** field, enter a name of the Azure SQL Database server that you want to monitor, select a Run As Account associated with the SQL Server credentials, and click **OK**. The [sysadmin](https://docs.microsoft.com/en-us/sql/relational-databases/security/authentication-access/server-level-roles?view=sql-server-ver16#fixed-server-level-roles) role are required.
+6. In the **Server Name** field, enter a name of the Azure SQL Database server that you want to monitor, select a Run As Account associated with the SQL Server credentials, and click **OK**. The [sysadmin](/sql/relational-databases/security/authentication-access/server-level-roles#fixed-server-level-roles) role are required.
 
     ![Server name](./media/azure-sql-management-pack/entering-server-name.png)
 
