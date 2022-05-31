@@ -5,7 +5,7 @@ manager: evansma
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 01/23/2018
+ms.date: 05/26/2022
 ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -86,7 +86,7 @@ For more information about the permissions that these accounts require, see "Acc
 
 14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](encryption-key.md).  
 
-### To install the data warehouse  
+### Install the data warehouse  
 
 1. Log on to the virtual machine by using an account that has administrative credentials.  
 
@@ -140,6 +140,60 @@ For more information about the permissions that these accounts require, see "Acc
 17. On the **Installation summary** page, click **Install**.  
 
 18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](encryption-key.md).
+
+After the installation, do the following:
+
+19. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the  following commands:
+    ```
+    $DW ='DWMS Servername'
+
+    Get-scdwjob -Computername $DW | %{disable-scdwjobschedule -Computername $DW -jobname $_.Name}
+    ```
+
+20. Make the required changes in the following PowerShell script based on the data source views in your environment, and then run the script by using elevated privileges:
+    ```
+    $SSAS_ServerName = "ssas servername" # - to be replaced with Analysis Service instance Name
+
+    [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices")
+    $Server = New-Object Microsoft.AnalysisServices.Server
+    $Server.Connect($SSAS_ServerName)
+    $Databases = $Server.Databases
+    $DWASDB = $Databases["DWASDataBase"]
+
+    #update DWDatamart dsv. Comment the below 3 commands if DWdatamart dsv is not present 
+
+    $DWASDB.DataSourceViews["DwDataMart"].Schema.Tables["OperatingsystemDim"].Columns["PhysicalMemory"].DataType  =  [decimal] 
+
+    $DWASDB.DataSourceViews["DwDataMart"].Schema.Tables["LogicalDiskDim"].Columns["Size"].DataType  =  [decimal] 
+
+    $DWASDB.DataSourceViews["DwDataMart"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull) 
+
+    #update CMDatamart dsv.Comment the below 2 commands if cmdatamart dsv is not present 
+
+    $DWASDB.DataSourceViews["CMDataMart"].Schema.Tables["OperatingsystemDim"].Columns["PhysicalMemory"].DataType  =  [decimal] 
+
+    $DWASDB.DataSourceViews["CMDataMart"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull) 
+
+    #update OperatingsystemDim
+    $DWASDB.Dimensions["OperatingsystemDim"].Attributes["PhysicalMemory"].KeyColumns[0].DataType =  [System.Data.OleDb.OleDbType]::Double 
+
+    $DWASDB.Dimensions["OperatingsystemDim"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull + [Microsoft.AnalysisServices.UpdateOptions]::AlterDependents)
+    #update LogicalDiskDim 
+
+    $DWASDB.Dimensions["LogicalDiskDim"].Attributes["Size"].KeyColumns[0].DataType =  [System.Data.OleDb.OleDbType]::Double 
+
+    $DWASDB.Dimensions["LogicalDiskDim"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull + [Microsoft.AnalysisServices.UpdateOptions]::AlterDependents) 
+
+    ```
+
+21. Enable the job schedules by running the following commands:
+
+    ```
+    $DW ='DWMS Servername'
+
+    Get-scdwjob -Computername $DW | %{enable-scdwjobschedule -Computername $DW -jobname $_.Name}
+    ```
+22. Restart the Data Warehouse management server.
 
 
 ## Validate the single-computer installation

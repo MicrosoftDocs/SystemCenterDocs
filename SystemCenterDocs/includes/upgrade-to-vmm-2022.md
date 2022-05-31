@@ -48,9 +48,6 @@ Ensure the following:
 ## Upgrade sequence for System Center components
 If you're running more than one System Center component, they should be upgraded in a specific order as shown below:
 
->[!NOTE]
->System Center Data Protection Manager (DPM) 2022 is not yet released. Rest of the components can be upgraded to version 2022 and DPM can be upgraded once it is released.
-
 1. Service Management Automation
 2. Orchestrator
 3. Service Manager
@@ -76,7 +73,7 @@ Use the following procedures:
 1.	Back up and retain the VMM database.
 2.	[Uninstall the VMM](#uninstall-the-vmm). Ensure to remove both the management server and console.
 3.	Upgrade the management OS to Windows Server 2022.
-4.	Install Windows 11 or Windows Server 2022 version of ADK.
+4.	Install Windows 11 or Windows Server 2022 version of [ADK](/windows-hardware/get-started/adk-install).
 
 #### Uninstall the VMM
 1. Go to **Control Panel** > **Programs** > **Program and Features**, select **Virtual Machine Manager** and click **Uninstall**.
@@ -148,7 +145,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
 1. Backup and retain the VMM database.
 2. [Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
 3. On the passive VMM node, upgrade the management OS to Windows server 2022. 		
-4. Upgrade to the Windows 11 or Windows Server 2022 version of the ADK.
+4. Upgrade to the Windows 11 or Windows Server 2022 version of the [ADK](/windows-hardware/get-started/adk-install).
 5. Install VMM 2022 on the passive node by using the following steps:
 	-	In the main setup page, click **Install**.
     -   In **Select features to install**, select  **VMM management server** and then click **Next**. The VMM console will be automatically installed.
@@ -168,7 +165,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 
 1. Backup and retain the VMM database.
 2.	Add the same number of additional servers (with Windows Server 2022 Management OS) that equals to the server  number present in the HA cluster.
-3. Install Windows 11/Windows Server 2022 version of the ADK on the newly added 2022 servers.
+3. Install Windows 11/Windows Server 2022 version of the [ADK](/windows-hardware/get-started/adk-install) on the newly added 2022 servers.
 4. Install VMM 2022 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode-upgrade-with-no-additional-vmm-servers).    
 5. Repeat the installation steps for all the other newly added servers.
 6. Failover the active VMM node to one of the newly added servers.

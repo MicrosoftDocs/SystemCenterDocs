@@ -51,7 +51,7 @@ You must ensure that your server meets the minimum supported configurations for 
 4. On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
 
    > [!NOTE]
-   > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (1801, 1807 and 2019), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+   > For System Center 2016 - Operations Manager, the default path is `C:\Program Files\Microsoft System Center 2016\Operations Manager`.  For all later releases (1801, 1807 and 2019), the default path is `C:\Program Files\Microsoft System Center\Operations Manager`.
 
 5. On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -94,7 +94,7 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>*  placeholder with the location of SQL Server:
     >
-    > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
+    > `mofcomp.exe "<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof"`
 
     > [!NOTE]
     > The SQL Server model database size must not be greater than 100 MB. If it is, you might encounter an error in Setup regarding the inability to create a database on SQL due to user permissions. To resolve the issue, you must reduce the size of the model database.
@@ -108,7 +108,7 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>* placeholder with the location of SQL Server:
     >
-    > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”.**
+    > `mofcomp.exe "<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof"`
 
     > [!NOTE]
     > These paths do not change if you connect to a different instance of SQL Server.

@@ -5,7 +5,7 @@ description: This article provides guidance about creating a guest cluster from 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -27,7 +27,12 @@ You can use service templates to create a guest cluster . That cluster can then 
 
 ## Before you start
 
+::: moniker range="sc-vmm-2016"
 - VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2012 R2 or later. Otherwise deployment will fail.
+::: moniker-end
+::: moniker range=">sc-vmm-2016"
+- VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2016 or later. Otherwise deployment will fail.
+::: moniker-end
 - You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-V failover cluster. In this scenario, if  Hyper-V uses Cluster Shared Volumes (CSV) on block-level storage, then the shared vhdx files are stored on a CSV that's configured as shared storage.
 - Alternatively, Hyper-V can use SMB file-based storage deployed by Scale-Out File Server (SOFS), as the location of the shared .vhdx files.
 - No other shared storage types are supported for guest clusters. Third-party SMB storage isn't supported.
@@ -41,7 +46,7 @@ You can use service templates to create a guest cluster . That cluster can then 
 
 1. [Set up an application profile](library-profiles.md#create-an-application-profile).
 1. In **New Application Profile** > **General** > **Compatibility** leave the default **General** setting enabled.
-1. In **Application Configuration** > **OS Compatibility** select one or more editions of a server operating system (not earlier than Windows Server 2012).
+1. In **Application Configuration** > **OS Compatibility** select one or more editions of a server operating system.
 1. Add the scripts you need for creating the first node of the cluster and then adding other nodes. Provide the scripts as follows:
     - For a script that will run on the first node of the cluster when it is created (and not on other nodes), **for Script command type**, select **Creation: First VM**.
     - For a script that will run on later nodes of the cluster when they are created (and not on the first node), for **Script command type**, select **Creation: VMs After First**.

@@ -5,7 +5,7 @@ description: This guide provides information on how to upgrade to Operations Man
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
+ms.date: 05/25/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -26,9 +26,6 @@ monikerRange: '>=sc-om-2016 <sc-om-1807 || sc-om-2019 || sc-om-2022'
 This section of the Deployment Guide provides information about how to upgrade to System Center 2022 from an older supported version. You can upgrade to Operations Manager 2022 from Operations Manager versions 2019.
 
 It is assumed in this guide that you are performing an upgrade from System Center 2019.
-
->[!NOTE]
->System Center Data Protection Manager (DPM) 2022 is not yet released. Rest of the components can be upgraded to version 2022 and DPM can be upgraded once it is released.
 
 For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see Deploying System Center Operations Manager.
 
