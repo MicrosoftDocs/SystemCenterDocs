@@ -54,7 +54,7 @@ The environment that you use must meet the following prerequisites before you st
 
 - Enable the **Agent Proxy** option on each agent that is installed on the clustered servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md). Enabling this option for standalone servers is not required.
 
-- Enable the **SQL Server Browser** service. This service is required for Analysis Services discovery and monitoring and must be installed and running on computers with Analysis Services. In addition, SQL Server Analysis Services port configuration depends on the SQL Server Browser settings. For more information, see [SQL Server Browser Service (Database Engine and SSAS)](/sql/database-engine/configure-windows/sql-server-browser-service-database-engine-and-ssas).
+- Enable the **SQL Server Browser** service. This service is required for Analysis Services discovery and monitoring and must be installed and running on computers with Analysis Services. Note that SQL Server Analysis Services port configuration depends on the SQL Server Browser settings. For more information, see [SQL Server Browser Service (Database Engine and SSAS)](/sql/database-engine/configure-windows/sql-server-browser-service-database-engine-and-ssas).
 
 - Associate Microsoft SQL Server Run As profiles with the account that has administrative privileges for both the Windows Server and the SQL Server Analysis Services instance.
 
