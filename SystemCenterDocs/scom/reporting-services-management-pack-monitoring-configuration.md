@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
-ms.date: 5/18/2022
+ms.date: 5/26/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -122,6 +122,10 @@ This management pack collects the following performance metrics:
   - Total memory consumed on the server (GB)
   - Failed report executions per minute
   - Report executions per minute
+  - Working set memory consumed by Power BI Analysis Services process (GB)
+  - Private memory consumed by Power BI Analysis Services process (GB)
+  - Working set memory consumed by Power BI Mashup containers (GB)
+  - Private memory consumed by Power BI Mashup containers (GB)
 
 ## How Health Rolls Up
 
