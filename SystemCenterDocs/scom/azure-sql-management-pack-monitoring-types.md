@@ -5,7 +5,7 @@ description: This article explains how to configure Azure REST API and T-SQL mon
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
-ms.date: 5/30/2022
+ms.date: 6/2/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -237,7 +237,7 @@ To begin monitoring of Azure SQL Databases using T-SQL queries, perform the foll
 
     ![Servers to monitor](./media/azure-sql-management-pack/adding-servers.png)
 
-6. In the **Server Name** field, enter a name of the Azure SQL Database server that you want to monitor, select a Run As Account associated with the SQL Server credentials, and click **OK**. The [sysadmin](/sql/relational-databases/security/authentication-access/server-level-roles#fixed-server-level-roles) role is required.
+6. In the **Server Name** field, enter a name of the Azure SQL Database server that you want to monitor, select a Run As Account associated with the SQL Server credentials, and click **OK**. The [serveradmin](/sql/relational-databases/security/authentication-access/server-level-roles#fixed-server-level-roles) role is required.
 
     ![Server name](./media/azure-sql-management-pack/entering-server-name.png)
 
