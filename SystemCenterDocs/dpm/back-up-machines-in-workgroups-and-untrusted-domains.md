@@ -43,7 +43,7 @@ Before you start, check the supported protection scenarios and required network 
 |Hyper-V server|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />NTLM and certificate authentication|
 |Hyper-V cluster|Workgroup: Not supported<br /><br />Untrusted Domain: Supported (Certificate authentication only)|
 |Exchange Server|Workgroup: Not applicable<br /><br />Untrusted Domain: Supported for single server only. Cluster not supported. CCR, SCR, DAG not supported. LCR supported.<br /><br />NTLM authentication only|
-|Secondary DPM server (For backup of primary DPM server) <br /><br /> **Note:** Both Primary and Secondary DPM Servers must be in same or trusted domain. |Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />Certificate authentication only|
+|Secondary DPM server (For backup of primary DPM server) <br /><br /> **Note:** Both Primary and Secondary DPM Servers must be in same or two way forest transitive trusted domain. |Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />Certificate authentication only|
 |SharePoint|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
 |Client computers|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
 |Bare metal recovery (BMR)|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
