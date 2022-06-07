@@ -391,7 +391,7 @@ For problems fixed in UR4, and the installation instructions for UR4, see the KB
 
 #### Support for Windows Server 2022 and Windows 11
 
-VMM 2019 UR4 supports Windows Server 2012 2022 and Windows 11 guest virtual machines. For more information about supported hosts, see [System requirements](/system-center/vmm/system-requirements?view=sc-vmm-2019#servers-in-the-vmm-fabric).
+VMM 2019 UR4 supports Windows Server 2012 2022 and Windows 11 guest virtual machines. For more information about supported hosts, see [System requirements](/system-center/vmm/system-requirements?view=sc-vmm-2019&preserve-view=true#servers-in-the-vmm-fabric).
 
 #### Support for Smart card login
 
