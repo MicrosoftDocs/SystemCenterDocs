@@ -61,7 +61,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 8.  In the **Database server instance name** field, type the name of the server and the name of the SQL Server instance, if not the default instance, for the database server that will host the ACS database.  In the **Database** name field, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and type in a different name or leave the default name. Click **Next**.
 
     > [!NOTE]
-    > Be aware that the Database name cannot contain the `-` character.
+    > Database name cannot contain the `-` character.
 
 9. On the **Database Authentication** page, select one of the authentication methods. If the ACS collector and the ACS database are members of the same domain, you can select **Windows authentication**, otherwise select **SQL authentication**, and then click **Next**.
 
