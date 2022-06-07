@@ -164,7 +164,7 @@ Windows 10 and Windows 11 client operating systems are supported for the Operati
 - Windows Server 2012 R2 - Standard, Datacenter, Server Core
 - Windows Server 2012 – Standard, Datacenter, Server Core
 - Windows 10 - Enterprise, Pro
-- Windows 11
+- Windows 11 supported from UR4 and later
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Microsoft .NET Framework 3.5 or later.
