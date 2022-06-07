@@ -25,6 +25,9 @@ This article provides information on how to create users, assign roles, and memb
 
 These roles are similar to the roles created for non-gMSA accounts.
 
+>[!NOTE]
+>For all gMSA accounts used, you will also need to create the accounts under the **Security** –> **Logins** of the SQL instance directly, and not only under each individual DB. Without this, the other permissions will not take effect as the initial login is at the instance level.
+
 ## Action account
 
 **System databases: msdb**
