@@ -50,7 +50,7 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 	- If you're adding a host in a perimeter network select **Windows Server computer in a perimeter network**.
 4. In **Credentials**, specify credentials for a domain account that has administrative permissions on all hosts that you want to add. (For computers in an untrusted domain, you must use a Run As account.)
 	 >[!NOTE]
-	 > The above provided credentials or Run As account should be a local administrator on the host machines. If a Run As account is provided, then it will be used while adding the host as well as for providing future access to the host during its lifetime. If credentials are entered manually, then they will only be used while adding the host. Once the host has been successfully added, the VMM service account will be added as local administrator on the host and used to provide any future access to it. The VMM service account needs admin privilegeS on the host machines to create the shielded VM.
+	 > The above provided credentials or Run As account should be a local administrator on the host machines. If a Run As account is provided, then it will be used while adding the host as well as for providing future access to the host during its lifetime. If credentials are entered manually, then they will only be used while adding the host. Once the host has been successfully added, the VMM service account will be added as local administrator on the host and used to provide any future access to it. The VMM service account needs admin privileges on the host machines to create the shielded VM.
 
 
 5. In **Discovery scope** specify:
