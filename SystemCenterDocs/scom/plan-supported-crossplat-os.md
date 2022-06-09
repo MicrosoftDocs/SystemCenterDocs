@@ -68,8 +68,10 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Red Hat Enterprise Linux Server 7
 
+::: moniker range="sc-om-2022"
 >[!NOTE]
 >Red Hat Enterprise Linux Server 7 (Power) is not supported in Operations Manager 2022.
+::: moniker-end
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -134,8 +136,10 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ## SUSE Linux Enterprise Server 12
 
+::: moniker range="sc-om-2022"
 >[!NOTE]
 >SUSE Linux Enterprise Server 12 (Power) is not supported in Operations Manager 2022.
+::: moniker-end
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
