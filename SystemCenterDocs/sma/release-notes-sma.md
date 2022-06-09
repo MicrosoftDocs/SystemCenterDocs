@@ -16,7 +16,9 @@ monikerRange: '>sc-sma-2016'
 
 ::: moniker range="sc-sma-2022"
 
-There are no known issues in Service Management Automation 2022.
+This article provides the release notes for System Center 2022 - Service Management Automation (SMA).
+
+[!INCLUDE [release-notes-sma-2022.md](../includes/release-notes-sma-2022.md)]
 
 ::: moniker-end
 
