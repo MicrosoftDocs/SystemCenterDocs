@@ -420,4 +420,4 @@ The following are the UI improvements in Operations Console:
 
 - Added 3 new columns **Management Pack**, **Sealed** and **Members** in the **Authoring** pane > **Groups**.
 
-- Added new columns for **Class Display Name** and **Management Pack Display Name** in the **Authoring** pane > **Create Group wizard**.
+- Added new column for **Management Pack Display Name** in the **Authoring** pane > **Create Group wizard**.
