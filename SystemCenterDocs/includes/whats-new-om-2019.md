@@ -406,6 +406,6 @@ The following sections introduce the new features or feature updates supported i
 
 For the problems fixed in UR4, and the installation instructions for UR4, see the KB article.
 
-- **Added 3 new columns in Authoring > Groups**
+### Added 3 new columns in Authoring > Groups
 
 In Operations Manager console **Authoring** > **Groups**, 3 new columns **Management Pack**, **Sealed** and **Members** were added.
