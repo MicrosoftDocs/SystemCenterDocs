@@ -2,10 +2,10 @@
 ms.assetid: 1c4927e5-5053-47e1-bf35-9aca5b4793a2
 title: Monitoring configuration in Management Pack for SQL Server Analysis Services
 description: This section explains monitoring configurations in Management Pack for SQL Server Analysis Services
-author: TDzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.author: jsuri
-ms.date: 5/31/2021
+ms.date: 6/2/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -40,6 +40,7 @@ The following monitors are available for monitoring of SSAS databases.
 |Database Free Space|This monitor reports a Warning alert when the available disk space for the SSAS database storage folder drops below the **Warning Threshold** setting expressed as a percentage of the sum of the estimated database storage folder size and disk free space. The monitor reports a Critical alert when the available space drops below the **Critical Threshold** setting.|
 |Blocking Duration|This monitor report an alert if at least one session is blocked longer than the configured threshold.|
 |Blocking Session Count|This monitor alerts when the number of sessions that are blocked for a period longer than the **WaitMinutes** setting exceeds the threshold.|
+|Database VertiPaq Size|This monitor reports a warning when the amount of VertiPaq memory consumed by SSAS tabular databases exceeds the 'Warning Threshold' override (specified in GB). In cases when tabular databases consume more VertiPaq memory than it is allowed by the 'Critical Threshold' override, the monitor throws a critical alert.|
 
 ## Partition Monitoring
 
@@ -90,6 +91,7 @@ Performance collection rules collect the following metrics:
 - SSAS: Total Memory Limit (GB)
 - SSAS: Total Memory on the Server (GB)
 - SSAS: Used Space on Drive (GB)
+- SSAS: Database VertiPaq Memory Size (GB)
 
 ## How Health Rolls Up
 

@@ -5,7 +5,7 @@ description: This article describes how to create and deploy Linux VMs in the VM
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 01/23/2018
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -47,7 +47,15 @@ By default, LIS is included with some distributions of Linux. If LIS is not incl
 ## Install the VMM guest agent
 
 1. Open an elevated command prompt on the VMM server.
-2. Go to the **c:\Program Files\Microsoft System Center 2012\Virtual Machine Manager\agents\Linux** folder.
+
+::: moniker range="sc-vmm-2016"
+2. Go to the **c:\Program Files\Microsoft System Center 2016\Virtual Machine Manager\agents\Linux** folder.
+::: moniker-end
+
+::: moniker range=">sc-vmm-2016"
+2. Go to the **c:\Program Files\Microsoft System Center\Virtual Machine Manager\agents\Linux** folder.
+::: moniker-end
+
 3. Copy all the agent installation files from that folder to a new folder on the VM.
 4. Open the new folder on the VM, and run the following command: **chmod +x install**.
 5. Run either of these commands, depending on the operating system.

@@ -11,7 +11,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 10/12/2016
+ms.date: 05/12/2022
 ms.technology: service-manager
 ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 ---
@@ -178,7 +178,12 @@ Use the following procedure to enable the schedule for the ETL jobs as needed; y
 
 ### To enable a schedule for a data warehouse job by using a Windows PowerShell cmdlet
 
+::: moniker range="sc-sm-2016"
 1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and click **Service Manager Shell**.
+::: moniker-end
+::: moniker range=">sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager**, and click **Service Manager Shell**.
+::: moniker-end
 2.  At the Windows PowerShell prompt, type the following commands, and then press ENTER after each command:
 
     ```
@@ -206,7 +211,12 @@ You can use the following procedure to disable the schedule for the extract, tra
 
 ### To disable a schedule for a data warehouse job by using Windows PowerShell cmdlets
 
-1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and then click **Service Manager Shell**.
+::: moniker range="sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and click **Service Manager Shell**.
+::: moniker-end
+::: moniker range=">sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager**, and click **Service Manager Shell**.
+::: moniker-end
 2.  At the Windows PowerShell prompt, type the following commands, and press ENTER after each command:
 
     ```
@@ -244,7 +254,12 @@ You can stop and start data warehouse jobs that are running in Service Manager. 
 
 ### To stop all data warehouse jobs using Windows PowerShell cmdlets
 
-1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and then click **Service Manager Shell**.
+::: moniker range="sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and click **Service Manager Shell**.
+::: moniker-end
+::: moniker range=">sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager**, and click **Service Manager Shell**.
+::: moniker-end
 2.  At the Windows PowerShell prompt, type the following commands, and then press ENTER after each command:
 
     ```
@@ -267,7 +282,13 @@ You can stop and start data warehouse jobs that are running in Service Manager. 
 
 ### To start all data warehouse jobs using Windows PowerShell cmdlets
 
-1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and then click **Service Manager Shell**.
+::: moniker range="sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and click **Service Manager Shell**.
+::: moniker-end
+::: moniker range=">sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager**, and click **Service Manager Shell**.
+::: moniker-end
+
 2.  At the Windows PowerShell prompt, type the following commands, and then press ENTER after each command:
 
     ```
@@ -309,7 +330,13 @@ In the following procedure, you configure a schedule for the Transform job to ru
 
 ### To configure a schedule for data warehouse jobs
 
-1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and then click **Service Manager Shell**.
+::: moniker range="sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and click **Service Manager Shell**.
+::: moniker-end
+::: moniker range=">sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager**, and click **Service Manager Shell**.
+::: moniker-end
+
 2.  At the Windows PowerShell prompt, type the following command, and then press ENTER.
 
     ```
@@ -318,7 +345,13 @@ In the following procedure, you configure a schedule for the Transform job to ru
 
 ### To validate a data warehouse job schedule
 
-1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and then click **Service Manager Shell**.
+::: moniker range="sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and click **Service Manager Shell**.
+::: moniker-end
+::: moniker range=">sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager**, and click **Service Manager Shell**.
+::: moniker-end
+
 2.  Type the following command, and then press ENTER:
 
     ```
@@ -358,7 +391,13 @@ A history of data warehouse jobs is collected as they run in Service Manager. Yo
 
 ### To view the last five entries in the data warehouse job history
 
-1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and then click **Service Manager Shell**.
+::: moniker range="sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and click **Service Manager Shell**.
+::: moniker-end
+::: moniker range=">sc-sm-2016"
+1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager**, and click **Service Manager Shell**.
+::: moniker-end
+
 2.  Type the following command, and then press ENTER.
 
     ```
@@ -379,7 +418,13 @@ You can use the following procedures to view the status of a data warehouse job 
 
 ### To view the status of a data warehouse job by using a Windows PowerShell cmdlet
 
+::: moniker range="sc-sm-2016"
 1. On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and then click **Service Manager Shell**.
+::: moniker-end
+::: moniker range=">sc-sm-2016"
+1. On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager**, and then click **Service Manager Shell**.
+::: moniker-end
+
 2. Type the following command, and then press ENTER.
 
     ```powershell
@@ -420,7 +465,12 @@ The second procedure can be used to change the default transform job timeout per
 
 ### To override the default timeout period
 
+::: moniker range="sc-sm-2016"
 1.  Edit the registry on the data warehouse management server and ensure that the key name **SqlCommandTimeout** under **SOFTWARE\Microsoft\System Center\2016\Common\DAL** exists and is of type DWORD. If it does not exist create it.
+::: moniker-end
+::: moniker range=">sc-sm-2016"
+1.  Edit the registry on the data warehouse management server and ensure that the key name **SqlCommandTimeout** under **SOFTWARE\Microsoft\System Center\Common\DAL** exists and is of type DWORD. If it does not exist create it.
+::: moniker-end
 2.  Edit the value, which is in seconds, with a positive value.
 3.  Restart the Microsoft Monitoring Agent service.
 4.  You can resume the Transform.common job to see the change.

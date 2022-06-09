@@ -5,7 +5,7 @@ description: This article describes how to provision an SOFS in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -24,7 +24,12 @@ Use the instructions in this article if you want to use System Center - Virtual 
 
 1.  In the VMM console, click **Fabric** > **Create** > **File Server Cluster**.
 2.  In the **Create Clustered File Server** wizard > **General** specify a cluster name, a file server name, and IP addresses if required.
+::: moniker range="sc-vmm-2016"
 3. In **Resource Type**, select the option to provision computers on which Windows Server 2012 R2 or later is installed and fill in the details.
+::: moniker-end
+::: moniker range=">sc-vmm-2016"
+3. In **Resource Type**, select the option to provision computers on which Windows Server 2016 or later is installed and fill in the details.
+::: moniker-end
 4.  In **Cluster Nodes**, define a list of computers to add to the cluster.
 5.  On the **Summary** page, confirm the settings and then click **Finish**.
 

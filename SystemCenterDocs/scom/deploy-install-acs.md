@@ -60,12 +60,15 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
 8.  In the **Database server instance name** field, type the name of the server and the name of the SQL Server instance, if not the default instance, for the database server that will host the ACS database.  In the **Database** name field, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and type in a different name or leave the default name. Click **Next**.
 
+    > [!NOTE]
+    > Database name cannot contain the `-` character.
+
 9. On the **Database Authentication** page, select one of the authentication methods. If the ACS collector and the ACS database are members of the same domain, you can select **Windows authentication**, otherwise select **SQL authentication**, and then click **Next**.
 
     > [!NOTE]
     > If you select **SQL authentication** and click **Next**, the **Database Credentials** page displays. In the **SQL login name** box, enter the name of the user account that has access to the SQL Server and the password for that account in the **SQL password** box, and then click **Next**.
 
-10. On the **Database Creation Options** page, click **Use SQL Server's default data and log file directories** to use SQL Server's default folders. Otherwise, click **Specify directories** and enter the full path, including drive letter, to the location you want for the ACS database and log file, for example C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Data. Click **Next**.
+10. On the **Database Creation Options** page, click **Use SQL Server's default data and log file directories** to use SQL Server's default folders. Otherwise, click **Specify directories** and enter the full path, including drive letter, to the location you want for the ACS database and log file, for example `C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Data`. Click **Next**.
 
 11. On the **Event Retention Schedule** page, click **Local hour of day to perform daily database maintenance**. Choose a time when the number of expected security events is low. During the database maintenance period, database performance will be impacted. In the **Number of days to retain events** box type the number of days ACS should keep events in the ACS database before the events are removed during database grooming. The default value is 14 days. Click **Next**.
 

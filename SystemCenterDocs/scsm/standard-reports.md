@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
-ms.date: 10/12/2016
+ms.date: 05/12/2022
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -45,7 +45,13 @@ You can use the following procedure to view the catalog of reports that is avail
 
 ## Add permissions for standard reports
 
-By default, all System Center 2016 - Service Manager users have access to reports through the Reporting workspace. However, before users who do not have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\).  
+::: moniker range="sc-sm-2016"
+By default, all System Center 2016 - Service Manager users have access to reports through the Reporting workspace. However, before users who do not have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\). 
+::: moniker-end 
+
+::: moniker range=">sc-sm-2016"
+By default, all System Center - Service Manager users have access to reports through the Reporting workspace. However, before users who do not have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\). 
+::: moniker-end
 
  You can grant access at the root level, which enables a user to view the Reporting workspace and all the reports in Service Manager. You can also grant restricted access to specific report folders, such as the Incident report folder, or to individual reports.  
 

@@ -7,7 +7,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 05/06/2019
+ms.date: 05/11/2022
 ms.technology: service-manager
 ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
 ---
@@ -80,7 +80,12 @@ You can use the following procedures to create a connector to import data from C
     1.  In the **Name** box, type a name for the new connector. For example, type **Configuration Manager Connector to Seattle**.
     2.  In the **Description** box, type a description for the new connector. For example, type **A Configuration Manager connector to site Seattle**.
     3.  Make sure that the **Enabled** check box is selected, and then click **Next**.
+::: moniker range="sc-sm-2016"
 6.  On the **Select Management Pack** page, in the **Management Pack** list, select either **System Center Configuration Manager Connector Configuration** or **System Center Configuration Manager 2012 Connector Configuration**, and then click **Next**.
+::: moniker-end
+::: moniker range=">sc-sm-2016"
+6.  On the **Select Management Pack** page, in the **Management Pack** list, select either **System Center Configuration Manager Connector Configuration** and then click **Next**.
+::: moniker-end
 7.  On the **Connect to System Center Configuration Manager Database** page, do the following:
     1.  In the **Database Server Name** box, type the server name of the server that is hosting the Configuration Manager site database and the database named instance, if applicable. For example, at the hypothetical Woodgrove Bank, you might type **woodgrove\instance1** if the Configuration Manager database is on a named instance of Microsoft SQL Server, or type **woodgrove** if the database is on a default instance of SQL Server.
     2.  In the **Database Name** box, type the name of the Configuration Manager site database. For example, type **SMS_CM1**.

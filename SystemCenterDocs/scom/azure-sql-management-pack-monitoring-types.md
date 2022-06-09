@@ -2,10 +2,10 @@
 ms.assetid: 3711a302-ab02-4bf9-a3ad-c0dbbdf669fb
 title: Monitoring types in Management Pack for Azure SQL Database
 description: This article explains how to configure Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database
-author: TDzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.author: jsuri
-ms.date: 3/17/2021
+ms.date: 6/2/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -237,7 +237,7 @@ To begin monitoring of Azure SQL Databases using T-SQL queries, perform the foll
 
     ![Servers to monitor](./media/azure-sql-management-pack/adding-servers.png)
 
-6. In the **Server Name** field, enter a name of the Azure SQL Database server that you want to monitor, select a Run As Account associated with SQL Server credentials, and click **OK**. The **System Administrator** rights are required.
+6. In the **Server Name** field, enter a name of the Azure SQL Database server that you want to monitor, select a Run As Account associated with the SQL Server credentials, and click **OK**. The [serveradmin](/sql/relational-databases/security/authentication-access/server-level-roles#fixed-server-level-roles) role is required.
 
     ![Server name](./media/azure-sql-management-pack/entering-server-name.png)
 

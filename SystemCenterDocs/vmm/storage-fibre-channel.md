@@ -5,7 +5,7 @@ description: This article describes how to set up Hyper-V virtual fibre channel 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -36,7 +36,12 @@ Here's what you need:
 - Storage arrays, switches, and HBAs must have the latest firmware and drivers installed.
 - Make sure that storage arrays can present logical units (LUs).
 - Enable NPIV on fibre channel switches and HBAs.
+::: moniker range="sc-vmm-2016"
 - Hyper-V hosts must be running at least Windows Server 2012.
+::: moniker-end
+::: moniker range=">sc-vmm-2016"
+- Hyper-V hosts must be running at least Windows Server 2016.
+::: moniker-end
 - Ensure that an SMI-S provider is installed. VMM manages fibre channel fabrics and SAN devices using the SMI-S provider. Remember not to install the SMI-S provider on the VMM server, but on a server that the VMM server can connect to with an FQDN or IP address.
 
 ## Deploy virtual fibre channel
