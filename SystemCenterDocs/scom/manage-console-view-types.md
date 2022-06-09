@@ -48,7 +48,7 @@ The state view displays relationships between components, computers, and compute
 
 2019 UR4 and later includes new fields for **Class Technical Name** and **MonitoringObjectID (ID/GUID)** in the **State Views**. Also included these in the wizard for creating a new Alert, Event, Performance or State View.
 
-:::image type="performance view" source="media/manage-console-view-types/state-views.png" alt-text="A screenshot showing state view.":::
+[ ![A screenshot showing state view.](media/manage-console-view-types/state-views-inline.png) ](media/manage-console-view-types/state-views-expanded.png#lightbox)
 
 ::: moniker-end
 
