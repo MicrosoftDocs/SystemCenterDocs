@@ -42,13 +42,25 @@ The event view queries the event logs and displays events that are based on crit
 
 ## State view type  
 
-The state view displays relationships between components, computers, and computer groups. For information on creating a state view, see [How to Create a State View](manage-console-scope-views.md#how-to-create-a-state-view).  
+The state view displays relationships between components, computers, and computer groups. 
+
+Added new fields for **Class Technical Name** and **MonitoringObjectID (ID/GUID)** in the **State Views**. Added the same in the wizard for creating a new Alert, Event, Performance or State View.
+
+:::image type="performance view" source="media/manage-console-view-types/state-views.png" alt-text="A screenshot showing performance view.":::
+
+For information on creating a state view, see [How to Create a State View](manage-console-scope-views.md#how-to-create-a-state-view).  
 
 ![Example of a state view of distributed application](./media/manage-console-view-types/om2016-operations-console-stateview.png)  
 
 ## Performance view type  
 
-The performance view allows you to customize how you want to view performance data collected from performance objects and counters. This includes the ability to view historical and current operational data together. You must select **Show** in the Details pane to display data from a rule in the graph in the Results pane. For information on creating a performance view, see [How to Create a Performance View](manage-console-scope-views.md#how-to-create-a-performance-view).  
+The performance view allows you to customize how you want to view performance data collected from performance objects and counters. This includes the ability to view historical and current operational data together. You must select **Show** in the Details pane to display data from a rule in the graph in the Results pane. 
+
+Added **Target Class Display Name** and **Rule Display Name** to help identify the target of a rule while selecting rules during the creation of a new **Performance View**.
+
+:::image type="performance view" source="media/web-application-availability-monitoring-template/performance-view.png" alt-text="A screenshot showing performance view.":::
+
+For information on creating a performance view, see [How to Create a Performance View](manage-console-scope-views.md#how-to-create-a-performance-view).  
 
 ![Example of a performance view](./media/manage-console-view-types/om2016-operations-console-performanceview.png)  
 
