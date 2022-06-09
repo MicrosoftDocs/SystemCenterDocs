@@ -46,7 +46,7 @@ The state view displays relationships between components, computers, and compute
 
 Added new fields for **Class Technical Name** and **MonitoringObjectID (ID/GUID)** in the **State Views**. Added the same in the wizard for creating a new Alert, Event, Performance or State View.
 
-:::image type="performance view" source="media/manage-console-view-types/state-views.png" alt-text="A screenshot showing performance view.":::
+:::image type="performance view" source="media/manage-console-view-types/state-views.png" alt-text="A screenshot showing state view.":::
 
 For information on creating a state view, see [How to Create a State View](manage-console-scope-views.md#how-to-create-a-state-view).  
 
