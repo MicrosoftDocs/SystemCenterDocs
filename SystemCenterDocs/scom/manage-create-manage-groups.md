@@ -24,7 +24,7 @@ In System Center Operations Manager, groups are logical collections of objects, 
 
 ::: moniker range=">=sc-om-2019"
 
-2019 UR4 and later includes new columns for **Class Display Name** and **Management Pack Display Name** in the **Authoring** pane > **Create Group wizard**.
+2019 UR4 and later includes new column for **Management Pack Display Name** in the **Authoring** pane > **Create Group wizard**.
 
 :::image type="create group wizard" source="media/manage-create-manage-groups/create-group-wizard.png" alt-text="A screenshot showing create group wizard.":::
 
