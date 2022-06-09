@@ -183,6 +183,6 @@ For the problems fixed in UR4, and the installation instructions for UR4, see th
 
 ### Three columns in Authoring > Groups are not localized
 
-**Description**: In Operations Manger console Authoring > Groups new columns (Management Pack, Sealed and Members), appear in English, not displayed in the language as set in the computer accessing this view. 
+**Description**: In Operations Manager console **Authoring** > **Groups** new columns (**Management Pack**, **Sealed** and **Members**), appear in English, not displayed in the language as set in the computer accessing this view. 
 
 **Workaround**: None
