@@ -93,7 +93,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Red Hat Enterprise Linux Server 6  (applicable for 2019 UR3 and later)
 
-Operations Manager 2019 UR3 and later supports RHEL 6 through RHEL 6 management pack.
+Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 management pack.
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -180,7 +180,10 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ## Universal Linux (Debian package)
 
-Debian 8, 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
+Supported versions:
+
+- Debian 8, 9, 10, and 11
+- Ubuntu 16.04, 18.04, and 20.04
 
 >[!NOTE]
 > Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
@@ -193,7 +196,10 @@ Debian 8, 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 ## Universal Linux (RPM package)
 
-CentOS 7 and Oracle Linux 6, 7, 8 are supported.
+Supported versions:
+
+- CentOS 7
+- Oracle Linux 6, 7, and 8
 
 Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
@@ -213,9 +219,6 @@ Supported versions:
 
 - Debian 9, 10 and 11
 - Ubuntu 16.04, 18.04 and 20.04
-
->[!NOTE]
-> Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
