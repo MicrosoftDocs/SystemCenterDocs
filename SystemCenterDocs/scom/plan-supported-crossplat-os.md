@@ -201,7 +201,7 @@ Supported versions:
 - CentOS 7
 - Oracle Linux 6, 7, and 8
 
-Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+Oracle Linux 8 is supported from SCOM 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -235,7 +235,7 @@ Supported versions:
 - SLES 15
 - openSUSE Leap 15
 
-Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+Oracle Linux 8 is supported from SCOM 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
