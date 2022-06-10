@@ -171,6 +171,12 @@ See the following sections for information about the new features/feature update
 
 For issues fixed in UR4, and the installation instructions for UR4, see the KB article.
 
+
+### Private endpoint support 
+
+With DPM 2019 UR4, you can use private endpoint to take online backup to Azure Backup Recovery Services vault. For more information, see [Private Endpoints](/azure/backup/private-endpoints-overview).
+
+
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1807"
