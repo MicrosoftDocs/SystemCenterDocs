@@ -24,7 +24,7 @@ This article details the new features supported in System Center - Data Protecti
 
 ::: moniker range="sc-dpm-2019"
 
-This article details the new features supported in System Center - Data Protection Manager (DPM), includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1) and [2019 UR2](#new-features-in-dpm-2019-ur2).
+This article details the new features supported in System Center - Data Protection Manager (DPM), includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3) and [2019 UR4](#new-features-in-dpm-2019-ur4).
 
 ::: moniker-end
 
