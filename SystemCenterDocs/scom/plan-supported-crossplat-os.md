@@ -68,9 +68,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Red Hat Enterprise Linux Server 7
 
->[!NOTE]
->Red Hat Enterprise Linux Server 7 (Power) is not supported in Operations Manager 2022.
-
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc|C Standard Libraries|2.17|
@@ -79,8 +76,12 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range="sc-om-2019"
+::: moniker range="sc-om-2022"
+>[!NOTE]
+>Red Hat Enterprise Linux Server 7 (Power) is not supported in Operations Manager 2022.
+::: moniker-end
 
+::: moniker range="sc-om-2019"
 ## Red Hat Enterprise Linux Server 7 (Power)
 
 |Required package|Description|Minimum version|
@@ -92,7 +93,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Red Hat Enterprise Linux Server 6  (applicable for 2019 UR3 and later)
 
-Operations Manager 2019 UR3 and later supports RHEL 6 through RHEL 6 management pack.
+Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 management pack.
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
@@ -134,15 +135,17 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ## SUSE Linux Enterprise Server 12
 
->[!NOTE]
->SUSE Linux Enterprise Server 12 (Power) is not supported in Operations Manager 2022.
-
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
 
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+>[!NOTE]
+>SUSE Linux Enterprise Server 12 (Power) is not supported in Operations Manager 2022.
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
@@ -177,7 +180,10 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ## Universal Linux (Debian package)
 
-Debian 8, 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
+Supported versions:
+
+- Debian 8, 9, 10, and 11
+- Ubuntu 16.04, 18.04, and 20.04
 
 >[!NOTE]
 > Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
@@ -190,9 +196,12 @@ Debian 8, 9, 10, 11 and Ubuntu 16.04, 18.04, 20.04 are supported.
 
 ## Universal Linux (RPM package)
 
-CentOS 7 and Oracle Linux 6, 7, 8 are supported.
+Supported versions:
 
-Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+- CentOS 7
+- Oracle Linux 6, 7, and 8
+
+Oracle Linux 8 is supported from SCOM 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -211,9 +220,6 @@ Supported versions:
 - Debian 9, 10 and 11
 - Ubuntu 16.04, 18.04 and 20.04
 
->[!NOTE]
-> Debian 10, 11 and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
-
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |libc6|C Standard shared library|2.24-11|
@@ -228,8 +234,6 @@ Supported versions:
 - Oracle Linux 7 and 8
 - SLES 15
 - openSUSE Leap 15
-
-Oracle Linux 8 is supported from 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
