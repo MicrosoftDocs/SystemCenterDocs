@@ -29,7 +29,7 @@ Here's what you need to do to set up System Center Data Protection Manager (DPM)
 ::: moniker range="sc-dpm-2019"
 
 > [!NOTE] 
-> With DPM 2019 UR4, you may need to restart the protected server after a fresh installation of the Update Rollup agent.
+> With DPM 2019 UR4, a fresh installation of the Update Rollup agent might restart the protected server
 
 ::: moniker-end
 
