@@ -164,18 +164,14 @@ DPM 2019 UR3 has only bug fixes. See [the KB article](https://support.microsoft.
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR4.
 
-> [!NOTE] 
-> - Upgrade to the latest agent (version 2.0.9238.0 or a later version), if you are an exisiting  customer of Data Protection Manager to Microsoft Azure.
-> - Online backups might fail, and no Data Protection Manager to Microsoft Azure operation will work, if the latest agent is not installed. 
-> - You may need to restart the protected server after a fresh installation of the Update Rollup agent.
-
 For issues fixed in UR4, and the installation instructions for UR4, see the KB article.
 
+### Removed File Catalog dependency for online backup of file/folder workloads
+DPM 2019 UR4 removes the dependency on File Catalog which was needed to restore individual files and folders from the Online recovery points. DPM now uses iSCSI mount method to provide individual file restore. This also improves the backups time as upload of file catalog metadata is not needed anymore
 
 ### Private endpoint support 
 
-With DPM 2019 UR4, you can use private endpoint to take online backup to Azure Backup Recovery Services vault. For more information, see [Private Endpoints](/azure/backup/private-endpoints-overview).
-
+With DPM 2019 UR4, you can use private endpoint to take online backup to Azure Backup Recovery Services vault. [Learn more](/azure/backup/private-endpoints-overview).
 
 ::: moniker-end
 
