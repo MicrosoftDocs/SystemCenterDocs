@@ -46,7 +46,7 @@ The state view displays relationships between components, computers, and compute
 
 ::: moniker range=">=sc-om-2019"
 
-2019 UR4 and later includes new fields for **Class Technical Name** and **MonitoringObjectID (ID/GUID)** in the **State Views**. Also included these in the wizard for creating a new Alert, Event, Performance or State View.
+2019 UR4 and later includes new fields for **Class Technical Name** in the **State Views**. Also included these in the wizard for creating a new Alert, Event, Performance or State View.
 
 [ ![A screenshot showing state view.](media/manage-console-view-types/state-views-inline.png) ](media/manage-console-view-types/state-views-expanded.png#lightbox)
 
@@ -62,7 +62,7 @@ The performance view allows you to customize how you want to view performance da
 
 ::: moniker range=">=sc-om-2019"
 
-2019 UR4 and later includes **Target Class Display Name** and **Rule Display Name** to help identify the target of a rule while selecting rules during the creation of a new **Performance View**.
+2019 UR4 and later includes **Target Class Display Name** to help identify the target of a rule while selecting rules during the creation of a new **Performance View**.
 
 :::image type="performance view" source="media/web-application-availability-monitoring-template/performance-view.png" alt-text="A screenshot showing performance view.":::
 
