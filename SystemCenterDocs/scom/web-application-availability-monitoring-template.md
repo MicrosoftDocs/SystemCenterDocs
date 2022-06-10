@@ -302,7 +302,7 @@ After you configure monitoring for an application, these three views will help y
 
 ::: moniker range=">=sc-om-2019"
 
-2019 UR4 and later includes **Target Class Display Name** and **Rule Display Name** to help identify the target of a rule while selecting rules during the creation of a new **Performance View**.
+2019 UR4 and later includes **Target Class Display Name** to help identify the target of a rule while selecting rules during the creation of a new **Performance View**.
 
 :::image type="performance view" source="media/web-application-availability-monitoring-template/performance-view.png" alt-text="A screenshot showing performance view.":::
 
