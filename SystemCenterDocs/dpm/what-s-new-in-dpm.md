@@ -165,7 +165,6 @@ DPM 2019 UR3 has only bug fixes. See [the KB article](https://support.microsoft.
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR4.
 
 > [!NOTE] 
-
 > - Upgrade to the latest agent (version 2.0.9238.0 or a later version), if you are an exisiting  customer of Data Protection Manager to Microsoft Azure.
 > - Online backups might fail, and no Data Protection Manager to Microsoft Azure operation will work, if the latest agent is not installed. 
 > - You may need to restart the protected server after a fresh installation of the Update Rollup agent.
