@@ -25,8 +25,8 @@ You can upgrade to DPM 2019 from the following versions:
 
 > [!NOTE] 
 > - Ensure the following for 2019 UR4:
-      > - Existing Data Protection Manager to Microsoft Azure customers should upgrade to the latest agent (version 2.0.9238.0 or later). If the latest agent is not installed, online backups might fail, and no Data Protection Manager to Microsoft Azure operation will work.
-      > - If you are on UR3, ensure to uninstall it and then install UR4. Only UR4 remote UI can connect to DPM 2019 UR4.
+   - Existing Data Protection Manager to Microsoft Azure customers should upgrade to the latest agent (version 2.0.9238.0 or later). If the latest agent is not installed, online backups might fail, and no Data Protection Manager to Microsoft Azure operation will work.
+   - If you are on UR3, ensure to uninstall it and then install UR4. Only UR4 remote UI can connect to DPM 2019 UR4.
 > - Remote UI and Central Console must be installed on RTM, UR1, UR2.  
 
 ## Upgrade path for DPM 2019
