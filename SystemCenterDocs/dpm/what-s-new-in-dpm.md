@@ -173,6 +173,14 @@ DPM 2019 UR4 removes the dependency on File Catalog which was needed to restore 
 
 With DPM 2019 UR4, you can use private endpoint to take online backup to Azure Backup Recovery Services vault. [Learn more](/azure/backup/private-endpoints-overview).
 
+### Fix for Error Code 40002
+
+Improvements done for VHDX file mounting and unmounting. To mount or unmount VHDX files, we now use Win32 APIs by default. This is a change from our previous approach, which leveraged WMI. If you want to continue using the old (WMI) approach, see  this [documentation](/system-center/dpm/dpm-support-issues?view=sc-dpm-2019).
+
+### DPM Reliability while restoring to original location when DPM agent is uninstalled
+
+With DPM 2019 UR4, you can restore previously backed up data, even after DPM agent uninstallation. 
+
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1807"
