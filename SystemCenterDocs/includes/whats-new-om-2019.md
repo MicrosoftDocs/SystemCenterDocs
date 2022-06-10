@@ -414,9 +414,9 @@ The following are the UI improvements in Operations Console:
 
 - For Monitors, Rules, Task and Discoveries, **Management Pack** label text is selectable in the workflow **Properties** window.
 
-- Added new fields for **Class Technical Name** and **MonitoringObjectID (ID/GUID)** in the **State Views**. Also included these in the wizard for creating a new Alert, Event, Performance or State View.
+- Added new fields for **Class Technical Name** in the **State Views**. Added the same in the wizard for creating a new Alert, Event, Performance or State View.
 
-- Added **Target Class Display Name** and **Rule Display Name** to help identify the target of a rule while selecting rules during the creation of a new **Performance View**.
+- Added **Target Class Display Name** to help identify the target of a rule while selecting rules during the creation of a new **Performance View**.
 
 - Added 3 new columns **Management Pack**, **Sealed** and **Members** in the **Authoring** pane > **Groups**.
 
