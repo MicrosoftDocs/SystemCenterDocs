@@ -30,7 +30,7 @@ The following table lists the release history for Operations Manager 2019.
 |10.19.10505.0|[4594078](https://support.microsoft.com/topic/a7b9aa06-7d72-dc5a-e303-1899fafe9931) |March 2021 |Update Rollup 3 |
 |10.19.10550.0|[5006871](https://support.microsoft.com/topic/5006871-0e3a513a-ad80-4830-8984-2fc5a40ee7f7) |October 2021 |Update Rollup 3 - Hotfix for Web Console |
 |10.19.10552.0|[5005527](https://support.microsoft.com/topic/f5aa7ec5-85c2-4886-b13b-288fd9900737) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
-|10.19.10569.0|-|June 2022 |Update Rollup 4 |
+|10.19.10569.0|5013427|June 2022 |Update Rollup 4 |
 
 
 ### Agents
