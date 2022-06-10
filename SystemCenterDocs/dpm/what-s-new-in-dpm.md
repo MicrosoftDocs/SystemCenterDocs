@@ -159,6 +159,19 @@ DPM 2019 supports SQL server 2019 as DPM database. You can install SQL Server on
 
 DPM 2019 UR3 has only bug fixes. See [the KB article](https://support.microsoft.com/topic/fa5eb310-1886-43fb-be5d-c7829bfaf63d) for details about the issues fixed.
 
+
+## New features in DPM 2019 UR4
+
+See the following sections for information about the new features/feature updates supported in DPM 2019 UR4.
+
+> [!NOTE] 
+
+> - Upgrade to the latest agent (version 2.0.9238.0 or a later version), if you are an exisiting  customer of Data Protection Manager to Microsoft Azure.
+> - Online backups might fail, and no Data Protection Manager to Microsoft Azure operation will work, if the latest agent is not installed. 
+> - You may need to restart the protected server after a fresh installation of the Update Rollup agent.
+
+For issues fixed in UR4, and the installation instructions for UR4, see the KB article.
+
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1807"
