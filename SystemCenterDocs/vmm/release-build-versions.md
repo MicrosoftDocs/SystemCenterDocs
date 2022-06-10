@@ -37,7 +37,7 @@ The following table lists the build versions for Virtual Machine Manager 2019.
 | 10.19.2292.0 | [4533411](https://support.microsoft.com/help/4533411/update-rollup-1-for-system-center-virtual-machine-manager-2019) | Update Rollup 1 for System Center 2019 Virtual Machine Manager    |
 |10.19.2445.0|[4569533](https://support.microsoft.com/help/4569533)|Update Rollup 2 for System Center 2019 Virtual Machine Manager  |
 |10.19.2591.0|[5001835](https://support.microsoft.com/topic/2eea517c-bd0f-dfe8-2c70-28fa4ac6b0c1)|Update Rollup 3 for System Center 2019 Virtual Machine Manager  |
-|10.19.2648.0| - | Update Rollup 4 for System Center 2019 Virtual Machine Manager |
+|10.19.2648.0| 5014156 | Update Rollup 4 for System Center 2019 Virtual Machine Manager |
 
 
 ::: moniker-end
