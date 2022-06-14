@@ -22,6 +22,14 @@ ms.topic: article
 
 In System Center Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. You create a group by using the Create Group Wizard. You can explicitly assign membership to a group or you can create rules that will generate a dynamic group membership.  
 
+::: moniker range=">=sc-om-2019"
+
+2019 UR4 and later includes new column for **Management Pack Display Name** in the **Authoring** pane > **Create Group wizard**.
+
+:::image type="create group wizard" source="media/manage-create-manage-groups/create-group-wizard.png" alt-text="A screenshot showing create group wizard.":::
+
+::: moniker-end
+
 Some of the purposes for using groups are:  
 
 -   To scope overrides to a specific subset of computers.

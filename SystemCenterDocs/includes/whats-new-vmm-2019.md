@@ -1,11 +1,11 @@
 ---
 ms.assetid: b421d3b9-3ac5-4e02-b810-7dc8de8008c2
 title: include file
-description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1, and 2019 UR2.
+description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1, UR2, UR3 and UR4.
 author:  jyothisuri
 ms.author: jsuri
 manager:  evansma
-ms.date:  03/30/2021
+ms.date:  06/07/2022
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -380,3 +380,19 @@ VMM 2019 UR3 includes the following cmdlet updates for Trunk mode support for VM
 New parameters **[-AllowedVLanList]** and **[NativeVLanId]** are included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
 
 For more information about these updates, see [VMM PowerShell articles](/powershell/module/virtualmachinemanager/?preserve-view=true&view=systemcenter-ps-2019).
+
+## New features in VMM 2019 UR4
+
+The following sections introduce the new features or feature updates supported in VMM 2019 Update Rollup 4 (UR4).
+
+For problems fixed in UR4, and the installation instructions for UR4, see the KB article.
+
+### Compute
+
+#### Support for Windows Server 2022 and Windows 11
+
+VMM 2019 UR4 supports Windows Server 2012 2022 and Windows 11 guest virtual machines. For more information about supported hosts, see [System requirements](/system-center/vmm/system-requirements?view=sc-vmm-2019&preserve-view=true#servers-in-the-vmm-fabric).
+
+#### Support for Smart card login
+
+VMM 2019 UR4 supports smart card login to connect virtual machines in enhanced session mode.
