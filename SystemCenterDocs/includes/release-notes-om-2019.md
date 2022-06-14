@@ -179,7 +179,7 @@ For the problems fixed in UR2, and the installation instructions for UR2, [see t
 ## Operations Manager 2019 UR4 release notes
 The following sections summarize the release notes for Operations Manager 2019 UR4, and include the known issues and workarounds.
 
-For the problems fixed in UR4, and the installation instructions for UR4, see the KB article.
+For the problems fixed in UR4, and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-operations-manager-2019-07ad0ef3-a330-4373-92f6-2dda3821bee5).
 
 ### Three columns in Authoring > Groups are not localized
 

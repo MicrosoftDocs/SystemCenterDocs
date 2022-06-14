@@ -404,7 +404,7 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Le
 
 The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 4 (UR4).
 
-For the problems fixed in UR4, and the installation instructions for UR4, see the KB article.
+For the problems fixed in UR4, and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-operations-manager-2019-07ad0ef3-a330-4373-92f6-2dda3821bee5).
 
 ### UI improvements in Operations console
 

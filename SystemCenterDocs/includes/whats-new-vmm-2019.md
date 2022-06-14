@@ -385,7 +385,7 @@ For more information about these updates, see [VMM PowerShell articles](/powersh
 
 The following sections introduce the new features or feature updates supported in VMM 2019 Update Rollup 4 (UR4).
 
-For problems fixed in UR4, and the installation instructions for UR4, see the KB article.
+For problems fixed in UR4, and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-2019-virtual-machine-manager-045605ba-7de1-4569-bad2-9f7c6ccc42c4).
 
 ### Compute
 
