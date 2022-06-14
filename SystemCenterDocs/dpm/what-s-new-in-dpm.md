@@ -164,7 +164,7 @@ DPM 2019 UR3 has only bug fixes. See [the KB article](https://support.microsoft.
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR4.
 
-For issues fixed in UR4, and the installation instructions for UR4, see the KB article.
+For issues fixed in UR4, and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-2019-data-protection-manager-1f4a13ed-9750-49bb-b312-9def71bc31da).
 
 ### Removed File Catalog dependency for online backup of file/folder workloads
 DPM 2019 UR4 removes the dependency on File Catalog which was needed to restore individual files and folders from the Online recovery points. DPM now uses iSCSI mount method to provide individual file restore. This also improves the backups time as upload of file catalog metadata is not needed anymore
