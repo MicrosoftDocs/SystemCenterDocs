@@ -46,7 +46,7 @@ The following table lists the build versions for Service Manager 2019.
 | 10.19.1035.0 | n/a | System Center 2019 Service Manager RTM     |
 | 10.19.1035.73	 | [4532891](https://support.microsoft.com/help/4532891/update-rollup-1-for-system-center-service-manager-2019) | Update Rollup 1 for System Center 2019 Service Manager    |
 | 10.19.1035.101 | [4558753](https://support.microsoft.com/help/4558753/update-rollup-2-for-system-center-service-manager-2019) | Update Rollup 2 for System Center 2019 Service Manager    |
-| 10.19.1035.137 | 5013428 | Update Rollup 4 for System Center 2019 Service Manager |
+| 10.19.1035.137 | [5013428](https://support.microsoft.com/topic/update-rollup-4-for-system-center-service-manager-2019-40b7cdf9-2ba9-4ab0-85bf-796007cde88f) | Update Rollup 4 for System Center 2019 Service Manager |
 
 ::: moniker-end
 
