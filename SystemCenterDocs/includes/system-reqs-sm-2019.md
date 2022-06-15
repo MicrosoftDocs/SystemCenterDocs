@@ -220,9 +220,10 @@ The following steps provide information about upgrading to SQL 2019.
 
 ## .NET Versions supported
 
-System Center Service Manager 2019 UR4 and later supports .NET 4.8
-
 The following versions of .NET are supported for Service Manager.
+
+> [!NOTE]
+> System Center Service Manager 2019 UR4 and later supports .NET 4.8
 
 |System Center component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|.NET 4.6.1|.NET 4.7|.NET 4.8|
 |-----------------------------------|----------------|----------|------------|--------------|--------------|------------|------|----|
