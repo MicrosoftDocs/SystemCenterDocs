@@ -222,12 +222,15 @@ The following steps provide information about upgrading to SQL 2019.
 
 The following versions of .NET are supported for Service Manager.
 
-|System Center component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|.NET 4.6.1|.NET 4.7|
+> [!NOTE]
+> System Center Service Manager 2019 UR4 and later supports .NET 4.8
+
+|System Center component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|.NET 4.6.1|.NET 4.7|.NET 4.8|
 |-----------------------------------|----------------|----------|------------|--------------|--------------|------------|------|----|
-|**Service Manager** Management Server|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |
-|**Service Manager** Data Warehouse Management Server|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |
-|**Service Manager** console|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |
-|**Service Manager** Self\-Service Portal|&#8226;| | |&#8226;| | &#8226; |&#8226;|&#8226; |
+|**Service Manager** Management Server|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |&#8226; |
+|**Service Manager** Data Warehouse Management Server|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |&#8226; |
+|**Service Manager** console|&#8226;| | |&#8226;| |&#8226; |&#8226;|&#8226; |&#8226; |
+|**Service Manager** Self\-Service Portal|&#8226;| | |&#8226;| | &#8226; |&#8226;|&#8226; |&#8226; |
 
 ## PowerShell Versions supported
 
