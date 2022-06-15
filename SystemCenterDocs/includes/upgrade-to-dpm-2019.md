@@ -23,6 +23,8 @@ You can upgrade to DPM 2019 from the following versions:
 
   Before you upgrade to or install DPM 2019, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
+> [!NOTE] 
+> Existing Data Protection Manager to Microsoft Azure customers should upgrade to the latest agent (version 2.0.9238.0 or later). If the latest agent is not installed, online backups might fail, and no Data Protection Manager to Microsoft Azure operation will work (applicable for 2019 UR4).
 
 ## Upgrade path for DPM 2019
 If you upgrade from DPM 2016 to DPM 2019, make sure your installation has the following necessary updates:
