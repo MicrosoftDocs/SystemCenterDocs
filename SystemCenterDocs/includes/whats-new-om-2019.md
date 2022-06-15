@@ -1,7 +1,7 @@
 ---
 ms.assetid: 1b8afb6f-9caf-455a-ad51-546a17fd47a4
 title: include file
-description: This include file describes the new features in Operations Manager 2019, 2019 UR1, 2019 UR2 and 2019 UR3.
+description: This include file describes the new features in Operations Manager 2019, 2019 UR1, 2019 UR2, 2019 UR3 and 2019 UR4.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
@@ -399,3 +399,25 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Le
   Operations Manager console was taking longer time to load and complete basic tasks.
 
   With Operations Manager 2019 UR3, we optimized relevant SQL queries and the performance has significantly improved now.
+
+## New features in Operations Manager 2019 UR4
+
+The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 4 (UR4).
+
+For the problems fixed in UR4, and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-operations-manager-2019-07ad0ef3-a330-4373-92f6-2dda3821bee5).
+
+### UI improvements in Operations console
+
+The following are the UI improvements in Operations Console:
+
+- Support for sort option by column, in **Overrides Summary**.
+
+- For Monitors, Rules, Task and Discoveries, **Management Pack** label text is selectable in the workflow **Properties** window.
+
+- Added new fields for **Class Technical Name** in the **State Views**. Added the same in the wizard for creating a new Alert, Event, Performance or State View.
+
+- Added **Target Class Display Name** to help identify the target of a rule while selecting rules during the creation of a new **Performance View**.
+
+- Added 3 new columns **Management Pack**, **Sealed** and **Members** in the **Authoring** pane > **Groups**.
+
+- Added new column for **Management Pack Display Name** in the **Authoring** pane > **Create Group wizard**.
