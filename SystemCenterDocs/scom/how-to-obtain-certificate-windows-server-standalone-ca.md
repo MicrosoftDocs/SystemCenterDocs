@@ -17,7 +17,7 @@ ms.topic: article
 
 Use the procedures in this topic to obtain a certificate from a stand-alone Windows Server computer hosting Active Directory Certificate Services (AD-CS). You use the [certreq](/windows-server/administration/windows-commands/certreq_1) command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
 
-It is assumed that you have AD-CS installed, an HTTPS binding is being used, and its associated certificate has been installed. For more information about creating an HTTPS binding see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca?view=sc-om-2022).
+It is assumed that you have AD-CS installed, an HTTPS binding is being used, and its associated certificate has been installed. For more information about creating an HTTPS binding see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).
 
 >[!Important]
 >The content for this topic is based on the default settings for AD-CS; for example, setting the key length to 2048, selecting Microsoft Software Key Storage Provider as the CSP, and using Secure Hash Algorithm 1 (SHA1). Evaluate these selections against the requirements of your company's security policy.
@@ -146,7 +146,7 @@ To create a request file to use with a stand-alone CA, do the following:
 ## Submit a request to the CA using the request file
 
 >[!Note]
->HTTPS binding needs to be configured on the Certificate Services Web site of the CA, otherwise we may fail to connect to the website. For more information, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca?view=sc-om-2022).  
+>HTTPS binding needs to be configured on the Certificate Services Web site of the CA, otherwise we may fail to connect to the website. For more information, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).  
 
 To submit a request to a stand-alone CA, do the following:
 

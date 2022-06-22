@@ -22,7 +22,7 @@ Use the procedures in this topic to obtain a certificate from a Windows Server c
 - You must have AD-CS installed.
 - You mush have a HTTPS binding and its associated certificate has been installed.
 
-For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca?view=sc-om-2022).
+For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).
 
 >[!Important]
 >The content for this topic is based on the default settings for AD-CS; for example, setting the key length to 2048, selecting Microsoft Software Key Storage Provider as the CSP, and using Secure Hash Algorithm 1 (SHA1). Evaluate these selections against the requirements of your company's security policy.
@@ -185,7 +185,7 @@ For example, *RequestConfig.inf*.
 ## Submit a request to the CA using the request file
 
 >[!Note]
->HTTPS binding needs to be configured on the Certificate Services Web site of the CA, otherwise we may fail to connect to the website. For more information, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca?view=sc-om-2022).  
+>HTTPS binding needs to be configured on the Certificate Services Web site of the CA, otherwise we may fail to connect to the website. For more information, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).  
 
 To submit a request to an enterprise CA, do the following:
 
