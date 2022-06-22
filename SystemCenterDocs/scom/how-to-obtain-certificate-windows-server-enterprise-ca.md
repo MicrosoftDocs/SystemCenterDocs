@@ -54,7 +54,7 @@ To download the Trusted Root (CA) certificate, do the following:
 1. Log on to the computer where you want to install a certificate.
 For example, a Gateway Server or Management Server.
 
-2. Open a web brOwser and connect to the computer hosting Certificate Services.
+2. Open a web browser and connect to the computer hosting Certificate Services.
 For example, *https://\<servername\>/certsrv*.
 
 3. On the **Welcome** page, select **Download a CA Certificate**, **Certificate chain**, or **CRL**.
