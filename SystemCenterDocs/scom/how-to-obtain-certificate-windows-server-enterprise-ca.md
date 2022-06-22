@@ -11,18 +11,18 @@ ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# How to Obtain a Certificate Using Windows Server 2022 Enterprise CA
+# How to Obtain a Certificate Using Windows Server Enterprise CA
 
-Applies To: System Center Operations Manager
+**Applies To**: System Center Operations Manager
 
-Use the procedures in this topic to obtain a certificate from a Windows Server computer hosting Enterprise Root Active Directory Certificate Services (AD-CS). You use the certreq command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
+Use the procedures in this topic to obtain a certificate from a Windows Server computer hosting Enterprise Root Active Directory Certificate Services (AD-CS). You use the [certreq](/windows-server/administration/windows-commands/certreq_1) command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
 
 ## Prerequisites
 
 - You must have AD-CS installed.
 - You mush have a HTTPS binding and its associated certificate has been installed.
 
-For information about creating an HTTPS binding, see How to Configure an HTTPS Binding for a Windows Server CA.
+For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca?view=sc-om-2022).
 
 >[!Important]
 >The content for this topic is based on the default settings for AD-CS; for example, setting the key length to 2048, selecting Microsoft Software Key Storage Provider as the CSP, and using Secure Hash Algorithm 1 (SHA1). Evaluate these selections against the requirements of your company's security policy.
@@ -37,7 +37,7 @@ The high-level process to obtain a certificate from an Enterprise certification 
 
 4. Add the template to the Certificate Templates folder.
 
-5. Create a setup information file for use with the certreq command-line utility.
+5. Create a setup information file for use with the \<certreq\> command-line utility.
 
 6. Create a request file.
 
@@ -45,11 +45,11 @@ The high-level process to obtain a certificate from an Enterprise certification 
 
 8. Import the certificate into the certificate store.
 
-9. Import the certificate into Operations Manager using MOMCertImport.
+9. Import the certificate into Operations Manager using \<MOMCertImport\>.
 
 ## Download the Trusted Root (CA) certificate
 
-To download the Trusted Root (CA) certificate
+To download the Trusted Root (CA) certificate, do the following:
 
 1. Log on to the computer where you want to install a certificate.
 For example, a Gateway Server or Management Server.
@@ -71,7 +71,7 @@ For example, *Trustedca.p7b*.
 >[!Note]
 >To import a Trusted Root Certificate, you must have administrative privileges on the target machine. 
 
-To import the Trusted Root (CA) Certificate
+To import the Trusted Root (CA) Certificate, do the following:
 
 1. On the Windows desktop, select **Start** > **Run**.
 
@@ -103,7 +103,7 @@ For example, *TrustedCA.p7b*, and then select **Open**, and **Next**.
 
 ## Create a certificate template
 
-To create a certificate template
+To create a certificate template, do the following:
 
 1. On the computer that is hosting your enterprise CA, on the Windows desktop, select **Start** > **Programs** > **Administrative Tools**, and select **Certification Authority**.
 
@@ -185,9 +185,9 @@ For example, *RequestConfig.inf*.
 ## Submit a request to the CA using the request file
 
 >[!Note]
->HTTPS binding needs to be configured on the Certificate Services Web site of the CA, otherwise we may fail to connect to the website. For more information, see How to Configure an HTTPS Binding for a Windows Server CA.  
+>HTTPS binding needs to be configured on the Certificate Services Web site of the CA, otherwise we may fail to connect to the website. For more information, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca?view=sc-om-2022).  
 
-To submit a request to an enterprise CA
+To submit a request to an enterprise CA, do the following:
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate Services. 
 For example, *https://\<servername\>/certsrv*.
@@ -212,7 +212,7 @@ For example, save as *SCOM-MS01.cer*.
 
 ## Import the certificate into the certificate store
 
-To import the certificate into the certificate store
+To import the certificate into the certificate store, do the following:
 
 1. On the computer hosting the Operations Manager feature for which you are configuring the certificate, select **Start** > **Run**.
 
@@ -222,7 +222,7 @@ To import the certificate into the certificate store
 
 ## Import the certificate into Operations Manager using MOMCertImport 
 
-To import the certificate into Operations Manager using MOMCertImport
+To import the certificate into Operations Manager using MOMCertImport, do the following:
 
 1. Log on to the computer where you installed the certificate with an account that is a member of the Administrators group.
 

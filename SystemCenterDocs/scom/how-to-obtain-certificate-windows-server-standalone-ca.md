@@ -5,7 +5,7 @@ description: This article describes How to Obtain a Certificate Using Windows Se
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 06/21/2022
+ms.date: 06/22/2022
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -13,11 +13,11 @@ ms.topic: article
 
 # How to Obtain a Certificate Using Windows Server Stand-Alone CA
 
-Applies To: System Center Operations Manager
+**Applies To**: System Center Operations Manager
 
-Use the procedures in this topic to obtain a certificate from a stand-alone Windows Server computer hosting Active Directory Certificate Services (AD-CS). You use the command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
+Use the procedures in this topic to obtain a certificate from a stand-alone Windows Server computer hosting Active Directory Certificate Services (AD-CS). You use the [certreq](/windows-server/administration/windows-commands/certreq_1) command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
 
-It is assumed that you have AD-CS installed, an HTTPS binding is being used, and its associated certificate has been installed. For more information about creating an HTTPS binding see How to Configure an HTTPS Binding for a Windows Server CA.
+It is assumed that you have AD-CS installed, an HTTPS binding is being used, and its associated certificate has been installed. For more information about creating an HTTPS binding see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca?view=sc-om-2022).
 
 >[!Important]
 >The content for this topic is based on the default settings for AD-CS; for example, setting the key length to 2048, selecting Microsoft Software Key Storage Provider as the CSP, and using Secure Hash Algorithm 1 (SHA1). Evaluate these selections against the requirements of your company's security policy.
@@ -28,7 +28,7 @@ The high-level process to obtain a certificate from a stand-alone certification 
 
 2. Import the Trusted Root (CA) certificate
 
-3. Create a setup information file to use with the certreq command-line utility.
+3. Create a setup information file to use with the \<certreq\> command-line utility.
 
 4. Create a request file.
 
@@ -40,11 +40,11 @@ The high-level process to obtain a certificate from a stand-alone certification 
 
 8. Import the certificate into the certificate store.
 
-9. Import the certificate into Operations Manager using MOMCertImport.
+9. Import the certificate into Operations Manager using \<MOMCertImport\>.
 
 ## Download the Trusted Root (CA) certificate
 
-To download the Trusted Root (CA) certificate
+To download the Trusted Root (CA) certificate, do the following:
 
 1. Log on to the computer where you want to install a certificate. 
 For example, a Gateway Server or Management Server.
@@ -65,7 +65,7 @@ For example, *https://\<servername\>/certsrv*.
 >[!Note]
 >To import a Trusted Root Certificate, you must have administrative privileges on the target machine. 
 
-To import the Trusted Root (CA) Certificate
+To import the Trusted Root (CA) Certificate, do the following:
 
 1. On the Windows desktop, select **Start** > **Run**.
 
@@ -103,6 +103,8 @@ To create a setup information (.inf) file
 2. In the **Run** dialog, enter Notepad, and select **OK**.
 
 3. Create a text file containing the following content:
+
+   ```
    
    [NewRequest]
 
@@ -124,6 +126,8 @@ To create a setup information (.inf) file
 
    OID=1.3.6.1.5.5.7.3.2
 
+   ```
+
 4. Save the file with an .inf file name extension.
 For example, *RequestConfig.inf*.
 
@@ -131,7 +135,7 @@ For example, *RequestConfig.inf*.
 
 ## Create a request file
 
-To create a request file to use with a stand-alone CA
+To create a request file to use with a stand-alone CA, do the following:
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open an Administrator Command Prompt.
 
@@ -142,9 +146,9 @@ To create a request file to use with a stand-alone CA
 ## Submit a request to the CA using the request file
 
 >[!Note]
->HTTPS binding needs to be configured on the Certificate Services Web site of the CA, otherwise we may fail to connect to the website. For more information, see How to Configure an HTTPS Binding for a Windows Server CA.  
+>HTTPS binding needs to be configured on the Certificate Services Web site of the CA, otherwise we may fail to connect to the website. For more information, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca?view=sc-om-2022).  
 
-To submit a request to a stand-alone CA
+To submit a request to a stand-alone CA, do the following:
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate Services.
 For example, *https://\<servername\>/certsrv*. 
@@ -159,7 +163,7 @@ For example, *https://\<servername\>/certsrv*.
 
 ## Approve the pending certificate request
 
-To approve the pending certificate request
+To approve the pending certificate request, do the following:
 
 1. Log on to the CA server as a certification authority administrator.
 
@@ -176,7 +180,7 @@ To approve the pending certificate request
 
 ## Retrieve the certificate from the CA
 
-To retrieve the certificate
+To retrieve the certificate, do the following:
 
 1. Log on to the computer where you want to install a certificate. 
 For example, the gateway server or management server.
@@ -199,7 +203,7 @@ For example, as *NewCertificate.cer*.
 
 ## Import the certificate into the certificate store
 
-To import the certificate into the certificate store
+To import the certificate into the certificate store, do the following:
 
 1. On the computer hosting the Operations Manager feature for which you are configuring the certificate, select **Start** > **Run**.
 
@@ -209,7 +213,7 @@ To import the certificate into the certificate store
 
 ## Import the certificate into Operations Manager using MOMCertImport
 
-To import the certificate into Operations Manager using MOMCertImport
+To import the certificate into Operations Manager using MOMCertImport, do the following:
 
 1. Log on to the computer where you installed the certificate with an account that is a member of the Administrators group.
 
@@ -221,8 +225,8 @@ To import the certificate into Operations Manager using MOMCertImport
 
 5. Enter *cd\SupportTools\i386*, and select Enter.
 
->[!Note]
->On 64-bit computers, enter *cd\SupportTools\amd64*
+   >[!Note]
+   >On 64-bit computers, enter *cd\SupportTools\amd64*
 
 6. Enter the following:
 

@@ -20,6 +20,8 @@ If you are setting up a new certification authority (CA) for the first time for 
 
 ## Configure an HTTPS binding
 
+To configure an HTTPS binding, do the following:
+
 1. On the computer hosting your CA, on the Windows desktop, select **Start** > **Programs** > **Administrative Tools**, and  then select **Internet Information Services (IIS) Manager**.
 
 2. In the **Internet Information Services (IIS) Manager** dialog, **Connections** pane, expand your computer name, expand **Sites**, and then select **Default Web Site**.
@@ -38,9 +40,8 @@ If you are setting up a new certification authority (CA) for the first time for 
 
    If the **CertServ** page is missing under Default Web Site, verify these Active Directory Certificate Services features are installed and configured on the CA server: 
 
-   > - Certificate Enrollment Web Services 
-
-   > - Certificate Authority Web Enrollment 
+   - Certificate Enrollment Web Services 
+   - Certificate Authority Web Enrollment 
 
 9. On the **/CertSrv Home** page, select and hold **SSL Settings**, and then select **Open Feature**.
 
