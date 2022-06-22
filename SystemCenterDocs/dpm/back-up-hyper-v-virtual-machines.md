@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 04/22/2022
+ms.date: 06/21/2022
 title: Back up Hyper V virtual machines
 ms.technology: data-protection-manager
 ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -288,6 +288,16 @@ A replica virtual machine is turned off until a failover is initiated, and VSS c
 - Migration or failover of the replica virtual machine is in progress
 
 ## Recover backed up virtual machines
+
+>[!NOTE]
+>
+>If the .vhdx of a Hyper-V virtual machine is of fixed type, by design, DPM restores the .vhdx as dynamic type.  To convert the dynamic size disk back to a fixed size disk, use the following PowerShell cmdlet:
+
+  ```powershell
+
+  Convert-VHD –Path c:\VM\my-vhdx.vhdx –DestinationPath c:\New-VM\new-vhdx.vhdx –VHDType Dynamic
+
+  ```
 
 When you can recover a backed up virtual machine, you use the Recovery wizard to select the virtual machine and the specific recovery point. To open the Recovery Wizard and recover a virtual machine:
 
