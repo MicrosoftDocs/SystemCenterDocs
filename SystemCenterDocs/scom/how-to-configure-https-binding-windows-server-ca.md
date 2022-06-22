@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to Configure an HTTPS Binding for a Windows Server CA
 
-**Applies To**: System Center Operations Manager
-
 If you are setting up a new certification authority (CA) for the first time for use with System Center – Operations Manager, use the following procedure to configure an HTTPS binding for the CA.
 
 ## Configure an HTTPS binding

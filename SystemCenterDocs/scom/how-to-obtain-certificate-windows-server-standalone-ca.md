@@ -13,8 +13,6 @@ ms.topic: article
 
 # How to Obtain a Certificate Using Windows Server Stand-Alone CA
 
-**Applies To**: System Center Operations Manager
-
 Use the procedures in this topic to obtain a certificate from a stand-alone Windows Server computer hosting Active Directory Certificate Services (AD-CS). You use the [certreq](/windows-server/administration/windows-commands/certreq_1) command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
 
 It is assumed that you have AD-CS installed, an HTTPS binding is being used, and its associated certificate has been installed. For more information about creating an HTTPS binding see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).

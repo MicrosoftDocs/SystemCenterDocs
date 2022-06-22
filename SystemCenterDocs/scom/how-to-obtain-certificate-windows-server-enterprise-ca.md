@@ -13,8 +13,6 @@ ms.technology: operations-manager
 
 # How to Obtain a Certificate Using Windows Server Enterprise CA
 
-**Applies To**: System Center Operations Manager
-
 Use the procedures in this topic to obtain a certificate from a Windows Server computer hosting Enterprise Root Active Directory Certificate Services (AD-CS). You use the [certreq](/windows-server/administration/windows-commands/certreq_1) command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
 
 ## Prerequisites
