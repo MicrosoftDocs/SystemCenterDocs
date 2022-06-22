@@ -50,7 +50,7 @@ To download the Trusted Root (CA) certificate
 For example, a Gateway Server or Management Server.
 
 2. Open a web browser and connect to the computer hosting Certificate Services.
-For example, *https://<servername>/certsrv*.
+For example, *https://\<servername\>/certsrv*.
 
 3. On the **Welcome** page, select **Download a CA Certificate**, **Certificate chain**, or **CRL**.
 
@@ -147,7 +147,7 @@ To create a request file to use with a stand-alone CA
 To submit a request to a stand-alone CA
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate Services.
-For example, *https://<servername>/certsrv*. 
+For example, *https://\<servername\>/certsrv*. 
 
 2. On the **Microsoft Active Directory Certificate Services Welcome** screen, select **Request a certificate**.
 
@@ -182,7 +182,7 @@ To retrieve the certificate
 For example, the gateway server or management server.
 
 2. Start a web browser, and connect to the computer hosting Certificate Services.
-For example, *https://<servername>/certsrv*.
+For example, *https://\<servername\>/certsrv*.
 
 3. On the **Microsoft Active Directory Certificate Services Welcome** page, select **View the status of a pending certificate request**.
 

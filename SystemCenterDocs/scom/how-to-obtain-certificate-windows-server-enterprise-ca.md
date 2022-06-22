@@ -55,7 +55,7 @@ To download the Trusted Root (CA) certificate
 For example, a Gateway Server or Management Server.
 
 2. Open a web brOwser and connect to the computer hosting Certificate Services.
-For example, *https://<servername>/certsrv*.
+For example, *https://\<servername\>/certsrv*.
 
 3. On the **Welcome** page, select **Download a CA Certificate**, **Certificate chain**, or **CRL**.
 
@@ -189,7 +189,7 @@ For example, *RequestConfig.inf*.
 To submit a request to an enterprise CA
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate Services. 
-For example, *https://<servername>/certsrv*.
+For example, *https://\<servername\>/certsrv*.
 
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
 
@@ -238,7 +238,7 @@ To import the certificate into Operations Manager using MOMCertImport
 
 6. Enter the following:
 
-   **MOMCertImport /SubjectName <Certificate Subject Name>**
+   **MOMCertImport /SubjectName \<Certificate Subject Name\>**
 
 7. Select Enter.
 

@@ -5,7 +5,7 @@ description: This article describes How to Configure an HTTPS Binding for a Wind
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 23/05/2022
+ms.date: 06/22/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
