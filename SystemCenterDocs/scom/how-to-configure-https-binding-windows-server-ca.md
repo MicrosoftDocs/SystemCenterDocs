@@ -14,7 +14,7 @@ ms.topic: article
 
 # How to Configure an HTTPS Binding for a Windows Server CA
 
-Applies To: System Center Operations Manager
+**Applies To**: System Center Operations Manager
 
 If you are setting up a new certification authority (CA) for the first time for use with System Center – Operations Manager, use the following procedure to configure an HTTPS binding for the CA.
 
@@ -38,9 +38,9 @@ If you are setting up a new certification authority (CA) for the first time for 
 
    If the **CertServ** page is missing under Default Web Site, verify these Active Directory Certificate Services features are installed and configured on the CA server: 
 
-    > - Certificate Enrollment Web Services 
+   > - Certificate Enrollment Web Services 
 
-    > - Certificate Authority Web Enrollment 
+   > - Certificate Authority Web Enrollment 
 
 9. On the **/CertSrv Home** page, select and hold **SSL Settings**, and then select **Open Feature**.
 

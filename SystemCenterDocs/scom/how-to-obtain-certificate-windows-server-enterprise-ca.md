@@ -144,6 +144,7 @@ For example, select *OperationsManagerCert*, and then select **OK**.
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open Notepad.
 
 2. Create a text file containing the following content:
+
    ```
    [NewRequest]
 
@@ -199,7 +200,7 @@ For example, *https://\<servername\>/certsrv*.
 
 5. On the **Submit a Certificate Request or Renewal Request** page, in the **Saved Request** text box, paste the contents of the *CertRequest.req* file that you copied in step 4 in the previous procedure.
 
-6. In the **Certificate Template** select the certificate template that you created.
+6. In the **Certificate Template**, select the certificate template that you created.
 For example, *OperationsManagerCert*, and then select **Submit**.
 
 7. On the **Certificate Issued** page, select **Base 64 encoded** > **Download certificate**.
