@@ -59,23 +59,21 @@ Because *momActGMSA* is an example, use the name of the gMSA that you intend to 
 
 Follow steps 1 to 5 from the previous procedure. Assign the roles by using the information in this table.
 
-| Database|Roles|
-|---------|---------|
-|    **Action account**     |         |
-| Operations Manager DB|db\_datareader, db\_datawriter, db\_ddladmin, dbmodule\_users|
-|   **Data Access Service account**       |         |
-|   Systems Database: msdb for Operations Manager DB |SQLAgentOperatorRole, SQLAgentReaderRole, SQLAgentUserRole, db_owner |
-|Operations Manager DB |  ConfigService, db\_accessadmin, db\_datareader,  db\_datawriter, db\_ddladmin, db\_securityadmin, sdk\_users, sql\_dependency\_subscriber|
-| Operations Manager DW|apm\_datareader, db\_datareader, OpsMgrReader |
-|  **Data Writer account** |         |
-|   Operations Manager DB| apm\_datareader, apm\_datawriter,  db\_datareader, dwsynch\_users|
-|Operations Manager DW|apm\_datareader, apm_datawriter, db\_owner, OpsMgrWriter|
-|   **Data Reader account** |         |
-|     System Databases: master DB|      RSExecRole   |
-| System Databases: msdb for Operations Manager DW| RSExecRole, SQLAgentOperatorRole,  SQLAgentReaderRole, SQLAgentUserRole|
-| Operations Manager DW |apm\_datareader, db\_datareader, OpsMgrReader|
-|  Report Server Database      | db\_owner,  RSExecRole      |
-|  Report Server Temp Database       | db\_owner, RSExecRole      |
+| Database | Account Type | Roles |
+|---|---|---|
+| Operations Manager Database |  |  |
+|  | **Action account** | db\_datareader, db\_datawriter, db\_ddladmin, dbmodule\_users |
+|  | **Data Access Service account** | ConfigService, db\_accessadmin, db\_datareader,  db\_datawriter, db\_ddladmin, db\_securityadmin, sdk\_users, sql\_dependency\_subscriber |
+|  | **Data Writer account** | apm\_datareader, apm\_datawriter,  db\_datareader, dwsynch\_users |
+| Systems Database: msdb for Operations Manager DB | **Data Writer account** | SQLAgentOperatorRole, SQLAgentReaderRole, SQLAgentUserRole, db_owner |
+| Operations Manager Data Warehouse |  |  |
+|  | **Data Access Service account** | apm\_datareader, db\_datareader, OpsMgrReader |
+|  | **Data Writer account** | apm\_datareader, apm_datawriter, db\_owner, OpsMgrWriter |
+|  | **Data Reader account** | apm\_datareader, db\_datareader, OpsMgrReader |
+| System Databases: msdb for Operations Manager DW | **Data Reader account** | RSExecRole, SQLAgentOperatorRole, SQLAgentReaderRole, SQLAgentUserRole |
+| System Databases: master DB | **Data Reader account** | RSExecRole |
+| Report Server Database | **Data Reader account** | db\_owner, RSExecRole |
+| Report Server Temp Database | **Data Reader account** | db\_owner, RSExecRole |
 
 ## Next steps
   [Service-level changes](service-level-changes.md)
