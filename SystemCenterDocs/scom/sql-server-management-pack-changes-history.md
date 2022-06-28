@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: vvithal
-ms.date: 6/8/2022
+ms.date: 6/28/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
-## June 2022 - 7.0.37.0 CTP
+## June 2022 - 7.0.38.0 RTM
 
 ### What's New
 
@@ -36,6 +36,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Fixed an issue when the "Linux Availability Group" tiles might appear unavailable in the dashboard view
 - Fixed an issue with the failing event rule "The agent is suspect. No response within last minutes" on Windows
 - Fixed an issue with an invalid type of the 'Timeout' override in seconds for several workflows on Windows
+- Fixed an issue with the "Local DB Engine" discovery error handling in cases when the SQL Server instance was deleted, but some namespaces remained in the registry
 - Fixed an issue with the failing 'EventLogReader' module in localized OS
 
 ## February 2022 - 7.0.36.0 RTM

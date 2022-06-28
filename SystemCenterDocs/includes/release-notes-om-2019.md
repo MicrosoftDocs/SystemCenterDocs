@@ -88,7 +88,7 @@ This command will add the service user to the list of allowed users, who can acc
 
 1.	After you upgrade to 2019, export the default management pack to a folder.
 2.	Open **Microsoft.SystemCenter.OperationsManager.DefaultUser.xml** from the exported folder.
-3.	Rename all the AD rules to use *<NetBIOS Domain Name of Management Server>* instead of *<FQDN of Management Server>*, example below.
+3.	Rename all the AD rules to use *\<NetBIOS Domain Name of Management Server\>* instead of *\<FQDN of Management Server\>*, example below.
 
     >[!NOTE]
     > Domain name is case-sensitive.
@@ -174,3 +174,15 @@ This is specifically observed for SQL Server Reporting Services on SQL Server 20
 No known issues in Operations Manager 2019 UR2.
 
 For the problems fixed in UR2, and the installation instructions for UR2, [see the KB article](https://support.microsoft.com/help/4558752).
+
+
+## Operations Manager 2019 UR4 release notes
+The following sections summarize the release notes for Operations Manager 2019 UR4, and include the known issues and workarounds.
+
+For the problems fixed in UR4, and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-operations-manager-2019-07ad0ef3-a330-4373-92f6-2dda3821bee5).
+
+### Three columns in Authoring > Groups are not localized
+
+**Description**: In Operations Manager console **Authoring** > **Groups** new columns (**Management Pack**, **Sealed** and **Members**), appear in English, not displayed in the language as set in the computer accessing this view. 
+
+**Workaround**: None
