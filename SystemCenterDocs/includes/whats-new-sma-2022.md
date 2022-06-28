@@ -16,9 +16,9 @@ ms.assetid:
 
 The following sections provide information about the new feature(s)/enhancements updates supported in SMA 2022.
 
-### Improved Sandbox lifecycle management
-
 ### Improved reliability of SMA jobs
+
+With improvements made in Sandbox lifecycle management, we’ve improved the overall reliability of jobs run in SMA. See [release notes](/system-center/sma/release-notes-sma?view=sc-sma-2022&preserve-view=true) for the details of the improvements done.
 
 ### Support for PowerShell filters
 
