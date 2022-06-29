@@ -126,6 +126,7 @@ This management pack collects the following performance metrics:
   - Private memory consumed by Power BI Analysis Services process (GB)
   - Working set memory consumed by Power BI Mashup containers (GB)
   - Private memory consumed by Power BI Mashup containers (GB)
+  - Total memory usage by running Power BI reports on the Server (GB)
 
 ## How Health Rolls Up
 
@@ -145,3 +146,7 @@ Creating a new management pack for storing overrides has the following advantage
 - Creating a new management pack for storing customizations of each sealed management pack makes it easier to export the customizations from a test environment to a production environment. It also makes it easier to delete a management pack, because you must delete any dependencies before you can delete a management pack. If customizations for all management packs are saved in the Default Management Pack and you need to delete a single management pack, you must delete the default management pack first, which also deletes customizations for other management packs.
 
 For more information about management pack customizations and the default management pack, see [What is in an Operations Manager management pack?](manage-overview-management-pack.md).
+
+## Running Power BI reports monitoring
+
+Management Pack for Reporting Services is capable of tracking the amount of memory consumed by running Power BI reports. Once the threshold that you define in the 'Threshold' override is exceeded, the alert is thrown. You can re-define the override at any time based on your environment preferences.
