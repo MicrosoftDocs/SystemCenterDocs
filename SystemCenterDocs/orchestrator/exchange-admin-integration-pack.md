@@ -62,8 +62,8 @@ Before you implement the Integration Pack for Exchange Admin, the following list
 
 ::: moniker range="sc-orch-2022"
 
->[!NOTE]
->Integration packs and toolkit for Orchestrator 2022 are yet to be released, download links will be provided once they are available. 
+- To download the Exchange Admin Integration Pack for Orchestrator 2022, see the [Microsoft Download Center for 2022](https://www.microsoft.com/download/details.aspx?id=104335).
+
 ::: moniker-end
 
 ## Register and Deploy the Integration Pack

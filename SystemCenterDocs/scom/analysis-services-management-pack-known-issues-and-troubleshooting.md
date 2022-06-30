@@ -2,10 +2,10 @@
 ms.assetid: 23bf27ad-7914-4235-a254-95c94f9f5a85
 title: Known issues and troubleshooting in Management Pack for SQL Server Analysis Services
 description: This article explains known issues and troubleshooting in Management Pack for SQL Server Analysis Services
-author: TDzakhov
+author: VChernov
+ms.author: v-vchernov
 manager: evansma
-ms.author: jsuri
-ms.date: 5/31/2021
+ms.date: 6/30/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -23,6 +23,7 @@ This article lists the known issues for Management Pack for SQL Server Analysis 
 |Health Service may be restarted by itself during monitoring of a large number of databases due to exceeding default thresholds for private bytes and handle count monitors|Monitoring of over 50 databases per SSAS instance can result in exceeding the default thresholds for private bytes and handle count monitors. This makes Health Service to be repeatedly restarted on agents.|Set the private bytes monitor threshold to 943718400 (default is 300 MB) and the handle count monitor threshold to 30000 (the default is 6000).|
 |The **Service State** monitor does not work on a clustered SQL Server Analysis Services instance.|The **Service State** monitor does not work when the SQL Server Analysis Services server is used as a cluster instance.|No resolution.|
 |The console task output is not produced after the execution of tasks related to SQL Server objects.|System Center Operations Manager console shows no output in the **Task Status** dialog and the progress wheel keeps running continuously. Even though no output is produced and the task wizard appears to stop responding, the task being executed still can send commands to the target SQL Server instance object, forcing this object to execute the requested command. Task execution results are available in the **Task Status** view which can be found in the System Center Operations Manager console.|No resolution.|
+|The **Partition Discovery** may drops errors in the case the target SSAS instance is stopped|On the SSAS instance with discovered multidimensional database partitions and an instance service is stopped afterward, the module **MultidimensionalPartitionPropertyCD** may drop an error message in the Event log with ID 4221 and source **SQL Server Analysis Services Discovery MP** with the following message: **The service MSSQLServerOLAPService is not running**.|The fix of this issue will be provided in the next release of the SSAS Management Pack.|
 
 To correct the corresponding .DLL file name in the Windows registry, perform the following steps:
 

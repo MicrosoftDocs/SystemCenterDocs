@@ -2,10 +2,10 @@
 ms.assetid: d68fe81d-e14c-494f-b118-e9a421d551c1
 title: Features and enhancements in Management Pack for SQL Server Reporting Services
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Reporting Services
-author: TDzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.author: jsuri
-ms.date: 12/20/2021
+ms.date: 6/10/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,22 @@ ms.technology: operations-manager
 # Features and Enhancements in Management Pack for SQL Server Reporting Services
 
 This section covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
+
+## June 2022 - 7.0.38.0 RTM
+
+### What's New
+
+- Added a new feature group for the automated population of PBI report services
+- Extended monitoring for PBI report rendering by adding new performance rules – "Working set memory consumed by Power BI Mashup containers (GB)", "Private memory consumed by Power BI Mashup containers (GB)", "Working set memory consumed by Power BI Analysis Services process (GB)", "Private memory consumed by Power BI Analysis Services process (GB)"
+- Added a new 'URL position' override that indicates which URL to use to monitor the availability of the Web service in the "Report manager accessible" and "Web service accessible" monitors
+- Improved rounding of values in alerts from memory-related workflows: "Running SSRS processes consume too much memory" and "Non SSRS-related processes consume too much memory"
+- Updated display strings
+
+### Bug Fixes
+
+- Fixed an issue with collecting the wrong performance counter for the "Memory consumed by SSRS Instance" and "Memory consumed by other processes" monitors and for the "Memory consumed by SSRS (GB)" and "Memory consumed by other processes (%)" performance rules
+- Fixed an issue when the 'Install Path' property might not appear in the instance discovery details view
+- Fixed an issue with the failing 'RsProcessMetrics' module in some environments
 
 ## December 2021 - 7.0.34.0 RTM
 

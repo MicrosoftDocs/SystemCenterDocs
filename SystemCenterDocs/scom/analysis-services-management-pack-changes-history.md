@@ -2,10 +2,10 @@
 ms.assetid: 8e379e26-a604-4976-88ff-d291c48b8700
 title: Features and enhancements in Management Pack for SQL Server Analysis Services
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Analysis Services
-author: TDzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.author: jsuri
-ms.date: 12/20/2021
+ms.date: 6/10/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,16 @@ ms.technology: operations-manager
 # Features and Enhancements in Management Pack for SQL Server Analysis Services
 
 This section covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
+
+## June 2022 - 7.0.38.0 RTM
+
+### What's New
+
+- Extended monitoring for VertiPaq memory by adding a new "Tabular database consumes too much VertiPaq memory" monitor and the "Database VertiPaq Memory Size (GB)" performance rule
+- Extended monitoring for PBI report rendering by adding a new "Memory consumed by running reports" monitor and the "Total memory usage by running reports on Server (GB)" performance rule
+- Improved rounding of values in alerts from memory-related workflows: "Memory configuration conflict with SQL Server" and "Non SSAS-related processes consume too much memory"
+- Added support for the SQL Server 2022 public preview
+- Updated display strings
 
 ## December 2021 - 7.0.34.0 RTM
 
