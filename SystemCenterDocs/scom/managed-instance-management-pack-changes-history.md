@@ -2,9 +2,9 @@
 ms.assetid: 500910b3-e260-4673-b219-8dc24bc4f916
 title: Features and enhancements in Management Pack for Azure SQL Managed Instance
 description: This article explains the new functionality and bug fixes implemented in Management Pack for Azure SQL Managed Instance
-author: TDzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: vvithal
-ms.author: jsuri
 ms.date: 12/20/2021
 ms.topic: article
 ms.prod: system-center

@@ -2,9 +2,9 @@
 ms.assetid: e683af64-a4d0-4867-8941-3ac3419be3d9
 title: Features and enhancements in Management Pack for Azure SQL Database
 description: This article explains the new functionality and bug fixes implemented in Management Pack for Azure SQL Database
-author: TDzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.author: jsuri
 ms.date: 3/17/2021
 ms.topic: article
 ms.prod: system-center
