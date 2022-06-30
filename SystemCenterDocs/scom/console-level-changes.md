@@ -5,7 +5,7 @@ description: This article describes the console-level changes that are required 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 08/25/2020
+ms.date: 06/30/2022
 ms.prod: system-center
 monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
