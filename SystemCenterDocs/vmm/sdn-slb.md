@@ -1,7 +1,7 @@
 ---
 ms.assetid: e950d0c6-23d3-4f93-9210-c57f9068e5bc
 title: Set up an SDN software load balancer in the VMM fabric
-description: This article describes how to set up a SDN software load balancer in the VMM fabric
+description: Learn how to set up an SDN software load balancer in the VMM fabric.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
@@ -20,7 +20,7 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-This article describes how to deploy a Software Defined Networking (SDN) software load balancer (SLB) in the System Center - Virtual Machine Manager (VMM) fabric.
+This article provides information on how to deploy a software load balancer (SLB) in a Software Defined Network (SDN).
 
 The SLB enables even distribution of tenant and tenant customer network traffic among virtual network resources, so that multiple servers can host the same workload to provide high availability and scalability. [Learn more](/windows-server/networking/sdn/technologies/network-function-virtualization/software-load-balancing-for-sdn).
 

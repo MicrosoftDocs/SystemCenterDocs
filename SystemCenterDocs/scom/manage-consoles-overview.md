@@ -1,6 +1,6 @@
 ---
-title: Using the Operations Manager consoles
-description: This article describes using the Operations Manager consoles.
+title: Manage Operations console and Web console in Operations Manager
+description: Learn how to manage Operations Console and Web console in Operations Manager.
 author: jyothisuri
 ms.author: jsuri
 ms.manager: evansma
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 ---
 
-# Using the Operations Manager consoles
+# Manage Operations console and Web console in Operations Manager
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -20,7 +20,11 @@ ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 
 ::: moniker-end
 
-System Center – Operations Manager includes two consoles, the Operations console and Web console.  The [Comparing the Operations and Web console](manage-consoles-comparison.md) section provides information on the difference between them, how to configure them after installation, and how to use the consoles to view the operational data reported by the monitored services in the enterprise.  
+System Center – Operations Manager includes two consoles:
+- Operations console 
+- Web console
+
+To Know the difference between them, see [Comparing the Operations and Web console](manage-consoles-comparison.md). Also learn how to configure them after installation, and how to use the consoles to view the operational data reported by the monitored services in the enterprise.  
 
 - Learn [How to Connect to the Operations and Web Console](manage-consoles-how-to-connect.md) in order to access and interact with the operational data or perform administrative tasks.  
 

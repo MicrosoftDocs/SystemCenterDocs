@@ -1,6 +1,6 @@
 ---
-title: Subscribing to Alert Notifications
-description: This article describes the alerts that you can generate and notify individuals through email, instant messaging, and text messages.
+title: Subscribe to alert notifications in Operations Manager
+description: This article describes the alerts that Operations Manager can generate and notify individuals through email, instant message, text message, and Microsoft teams.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8
 ---
 
-# Subscribing to alert notifications
+# Subscribe to alert notifications in Operations Manager
 
 ::: moniker range=">= sc-om-1801 <= sc-om-1807"
 
@@ -20,7 +20,14 @@ ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8
 
 ::: moniker-end
 
-In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), text message (SMS) or Microsoft Teams (applicable for 2022). Notifications can also run commands automatically when an alert is raised on a monitored system.  
+
+In System Center - Operations Manager, when an alert is generated, Operations Manager can notify the designated individuals in the following modes
+- Email
+- Instant message (IM)
+- Text message (SMS) or 
+- Microsoft Teams (applicable for 2022)
+
+Notifications can also run commands automatically when an alert is raised on a monitored system.  
 
 A notification requires the following elements:  
 

@@ -39,8 +39,8 @@ The integration pack for SharePoint requires the following software to be instal
 
 ::: moniker range="sc-orch-2022"
 
->[!NOTE]
->Integration packs and toolkit for Orchestrator 2022 are yet to be released, download links will be provided once they are available. 
+- [Download the pack for 2022](https://www.microsoft.com/download/details.aspx?id=104332)
+
 ::: moniker-end
 
 ::: moniker range="<=sc-orch-2019"
