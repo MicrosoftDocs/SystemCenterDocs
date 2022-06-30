@@ -98,7 +98,7 @@ To determine whether you have such failed subscriptions or plans, the monitor sc
 
 Report subscriptions and scheduled refresh plans may fail due to various reasons. For more information on what caused the failure, refer to **My subscriptions** on the reporting portal and **Scheduled refresh** on the Power BI reporting portal.
 
-## Running Power BI reports monitoring
+### Running Power BI reports monitoring
 
 Management Pack for Reporting Services is capable of tracking the amount of memory consumed by running Power BI reports. Once the threshold that you define in the 'Threshold' override (specified in GB) is exceeded, the alert is thrown. By default, the monitor uses the top 10 memory-heavy reports that are counted in memory consumption. You can re-define both overrides at any time based on your environment preferences.
 
