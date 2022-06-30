@@ -5,7 +5,7 @@ description: This article describes how to manage VMs in the VMM compute fabric
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -68,7 +68,12 @@ When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placem
 
 - A host is rated only when a virtual machine needs to be placed.
 - The information gathered about a host is compared to the information about the resources required by the VM, and a rating is assigned to the host.
-- During automatic placement, VMM attempts to use the host assigned the highest rating. During manual placement the host rating is shown so that you can select the appropriate host. As of System Center 2012 SP1, you can select a host in VMM even if not all hosts have been rated. The selected host must have a positive number of stars.
+- During automatic placement, VMM attempts to use the host assigned the highest rating. During manual placement the host rating is shown so that you can select the appropriate host. 
+
+::: moniker range="<=sc-vmm-2019"
+- As of System Center 2012 SP1, you can select a host in VMM even if not all hosts have been rated. The selected host must have a positive number of stars.
+::: moniker-end
+
 - VMM measures CPU, memory, disk, and network usage approximately every 10 minutes to recalculate an average rating that is an average of all the measurements taken that the last action that reset the host rating. Host ratings are reset when the following happens:
     - A new virtual machine is created
     - A virtual machine is deployed, stored, migrated or deleted
@@ -98,7 +103,12 @@ A host might be assigned a zero rating if it does not meet conditions to receive
 In VMM you can create generation 1 and generation 2 VMs.
 
 - You can add VM templates specifying either generation 1 or generation 2 to a service template. Properties will appear for the generation you choose.
+::: moniker range="sc-vmm-2016"
 - Generation 2 VMs can only run on a host with a host operating system that supports them - Windows Server 2012 R2 onwards. For example, VMM won't place a generation 2 VM on a host running Windows Server 2012.
+::: moniker-end
+::: moniker range=">sc-vmm-2016"
+- Generation 2 VMs can only run on a host with a host operating system that supports them - Windows Server 2016 onwards. For example, VMM won't place a generation 2 VM on a host running Windows Server 2016.
+::: moniker-end
 - When you use a virtual hard disk in .vhd format for a VM or VM template, the VM is automatically generation 1 because .vhd doesn't support generation 2. If you use .vhdx you can select which option you want to use.
 - If you use an existing virtual machine or virtual machine template as the starting point for a new virtual machine or virtual machine template, the generation is determined by the existing virtual machine or virtual machine template.
 - If you create a hardware profile you can choose between generation 1 and 2. When you incorporate the profile into a VM or VM template you specify the generation you want to use.

@@ -2,10 +2,17 @@
 ms.assetid: 28d531e2-24bf-4d7f-9949-5e07f7ff9461
 title: Monitoring configuration in Management Pack for SQL Server Reporting Services
 description: This article explains the monitoring configuration in Management Pack for SQL Server Reporting Services
+<<<<<<< HEAD
 author: TDzakhov
 manager: evansma
 ms.author: jsuri
 ms.date: 11/16/2021
+=======
+author: Anastas1ya
+ms.author: v-asimanovic
+manager: evansma
+ms.date: 6/30/2022
+>>>>>>> b9a01db5f336d57615746b432a02f20e4a66efbd
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -86,6 +93,22 @@ This management pack introduces a set of monitors for SSRS Deployments and SSRS 
   - Other processes allow enough memory resources for the SSRS Instance
   - Number of failed report executions per minute is below the threshold for the given SSRS Instance
 
+### Report Manager and Web Server Accessible
+
+Management Pack for SQL Server Reporting Services supports monitoring of SSRS Web Service and SSRS Report Manager using multiple endpoint URLs to determine whether they are available. By default, the first URL in the sequence is used. If you want to use a different URL, you can explicitly set the **URL position** override by changing its default value to a value that corresponds to the desirable URL.
+
+### Failed Subscriptions Monitoring
+
+Management Pack for SQL Server Reporting Services supports monitoring of failed subscriptions and scheduled refresh plans and produces corresponding alerts when any of these are found.
+
+To determine whether you have such failed subscriptions or plans, the monitor scans the **LastStatus** column in the **Subscriptions** table. For more information about the statuses, see [this article](/sql/reporting-services/subscriptions/monitor-reporting-services-subscriptions).
+
+Report subscriptions and scheduled refresh plans may fail due to various reasons. For more information on what caused the failure, refer to **My subscriptions** on the reporting portal and **Scheduled refresh** on the Power BI reporting portal.
+
+### Running Power BI reports monitoring
+
+Management Pack for Reporting Services is capable of tracking the amount of memory consumed by running Power BI reports. Once the threshold that you define in the 'Threshold' override (specified in GB) is exceeded, the alert is thrown. By default, the monitor uses the top 10 memory-heavy reports that are counted in memory consumption. You can re-define both overrides at any time based on your environment preferences.
+
 ## Performance of SQL Server Reporting Services Installation
 
 This management pack collects the following performance metrics:
@@ -110,6 +133,11 @@ This management pack collects the following performance metrics:
   - Total memory consumed on the server (GB)
   - Failed report executions per minute
   - Report executions per minute
+  - Working set memory consumed by Power BI Analysis Services process (GB)
+  - Private memory consumed by Power BI Analysis Services process (GB)
+  - Working set memory consumed by Power BI Mashup containers (GB)
+  - Private memory consumed by Power BI Mashup containers (GB)
+  - Total memory usage by running Power BI reports on the Server (GB)
 
 ## How Health Rolls Up
 

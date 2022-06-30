@@ -1,11 +1,11 @@
 ---
 ms.assetid: 2684494b-1779-4df8-9f11-db46a0d96542
-title: Manage port ACLs in VMM 2016
+title: Manage port ACLs in VMM
 description: Describes how to manage Hyper-V port access control lists (ACLs)
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/07/2017
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -60,7 +60,13 @@ Here is a list of unsupported scenarios:
 Use the VMM PowerShell interface to do the following:
 
 1. Define port ACLs and rules.
+
+    ::: moniker range="sc-vmm-2016"
     - The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs" (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2012 R2 or later, because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
+    ::: moniker-end
+    ::: moniker range=">sc-vmm-2016"
+    - The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs" (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2016 or later, because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
+    ::: moniker-end
     - All port ACL rules defined in VMM are stateful for TCP. You can't create stateless TCP ACL rules.
 2. Attach a port ACL to global settings. This applies the ACL to all VM virtual network adapters.
 3. Attach the port ACLs to VM networks, VM subnets, or VM virtual network adapters.

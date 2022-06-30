@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -75,10 +75,13 @@ Both the templates have a default count of three virtual machines which can be c
 ## Create the GRE VIP logical network
 
 1. In the VMM console, run the Create Logical Network Wizard. Type a **Name**, optionally provide a description, and  click **Next**.
+::: moniker range="sc-vmm-2019"
 2. In **Settings**, select **One Connected Network**. Optionally you can select **Create a VM network with the same name**. This setting allows VMs to access this logical network directly. Select **Managed by the Network Controller**, and click **Next**.
-
-::: moniker range=">=sc-vmm-2019"
 - For VMM 2019 UR1 and later, in **Settings**, select **Connected Network**, and select **Managed by the Network Controller**, and click **Next**.
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+2. In **Settings**, select **Connected Network**. and select **Managed by the Network Controller**, and click **Next**.
 ::: moniker-end
 
 3. In **Network Site**, specify the settings:
@@ -129,10 +132,21 @@ Both the templates have a default count of three virtual machines which can be c
 
 ### Create an IP address pool for GRE VIP addresses
 
-::: moniker range=">=sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 
 >[!NOTE]
 > From VMM 2019 UR1 and later, you can create IP address pool using **Create Logical Network** wizard.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+>[!NOTE]
+> You can create IP address pool using **Create Logical Network** wizard.
+
+::: moniker-end
+
+::: moniker range=">=sc-vmm-2019"
 
 1. Right-click the GRE VIP logical network > **Create IP Pool**.
 2. Type a **Name** and optional description for the pool, and check that the VIP network is selected. Click **Next**.
@@ -196,7 +210,7 @@ This example uses the generation 2 template.
 
 5. Click **Deploy Service** to begin the service deployment job.
 
-    > [[!NOTE]
+    > [!NOTE]
     >
     > - Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. If gateway deployment fails, delete the failed service instance in **All Hosts** > **Services** before you retry the deployment.
     >

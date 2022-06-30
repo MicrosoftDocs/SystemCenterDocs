@@ -5,7 +5,7 @@ description: This article describes about network object fundamentals.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 04/22/2020
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -34,10 +34,16 @@ The following VMM networking objects are used to build the basic networking infr
 
   Logical objects that mirror your physical networks.
 
+::: moniker range="<=sc-vmm-2019"
+
   >[!NOTE]
   > The terminology for logical networks has changed from 2019 UR1. For more information, see [Logical networks in UR1](network-logical-ur1.md).
 
    - [One connected logical network](network-logical-ur1.md)
+
+::: moniker-end
+
+   - [One connected logical network](network-logical-2022.md)
 
      A single VM network is created on top of this logical network, and this VM network provides access to all the underlying VLAN-subnet pairs.
 

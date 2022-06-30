@@ -37,8 +37,18 @@ Before you can install the Integration Pack for Configuration Manager, you must 
 
 ## Downloading the Integration Pack
 
+::: moniker range="<=sc-orch-2019"
+
 - [Download the pack for 2016](https://www.microsoft.com/en-us/download/details.aspx?id=54098)
 - [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=56605)
+
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+- [Download the pack for 2022](https://www.microsoft.com/download/details.aspx?id=104338)
+
+::: moniker-end
 
 ## Registering and deploying the Integration Pack
 

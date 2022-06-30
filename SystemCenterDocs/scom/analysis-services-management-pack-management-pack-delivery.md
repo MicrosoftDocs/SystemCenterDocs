@@ -2,10 +2,17 @@
 ms.assetid: 90109309-a692-414d-8877-2853d44d3bb4
 title: Management Pack for SQL Server Analysis Services delivery
 description: This article explains how to install Management Pack for SQL Server Analysis Services
+<<<<<<< HEAD
 author: TDzakhov
 manager: evansma
 ms.author: jsuri
 ms.date: 5/31/2021
+=======
+author: Anastas1ya
+ms.author: v-asimanovic
+manager: evansma
+ms.date: 5/31/2022
+>>>>>>> b9a01db5f336d57615746b432a02f20e4a66efbd
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -54,12 +61,12 @@ The environment that you use must meet the following prerequisites before you st
 
 - Enable the **Agent Proxy** option on each agent that is installed on the clustered servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md). Enabling this option for standalone servers is not required.
 
-- Enable the **SQL Server Browser** service. This service is required for Analysis Services discovery and monitoring and must be installed and running on computers with Analysis Services.
+- Enable the **SQL Server Browser** service. This service is required for Analysis Services discovery and monitoring and must be installed and running on computers with Analysis Services. Note that SQL Server Analysis Services port configuration depends on the SQL Server Browser settings. For more information, see [SQL Server Browser Service (Database Engine and SSAS)](/sql/database-engine/configure-windows/sql-server-browser-service-database-engine-and-ssas).
 
 - Associate Microsoft SQL Server Run As profiles with the account that has administrative privileges for both the Windows Server and the SQL Server Analysis Services instance.
 
 >[!NOTE]
->Management Pack for SQL Server Analysis Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
+>Management Pack for SQL Server Analysis Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 
