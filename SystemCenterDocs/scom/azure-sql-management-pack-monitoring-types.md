@@ -2,17 +2,10 @@
 ms.assetid: 3711a302-ab02-4bf9-a3ad-c0dbbdf669fb
 title: Monitoring types in Management Pack for Azure SQL Database
 description: This article explains how to configure Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database
-<<<<<<< HEAD
-author: TDzakhov
-manager: evansma
-ms.author: jsuri
-ms.date: 3/17/2021
-=======
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
 ms.date: 6/2/2022
->>>>>>> b9a01db5f336d57615746b432a02f20e4a66efbd
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager

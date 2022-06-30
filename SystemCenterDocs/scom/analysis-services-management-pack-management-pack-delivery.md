@@ -2,17 +2,10 @@
 ms.assetid: 90109309-a692-414d-8877-2853d44d3bb4
 title: Management Pack for SQL Server Analysis Services delivery
 description: This article explains how to install Management Pack for SQL Server Analysis Services
-<<<<<<< HEAD
-author: TDzakhov
-manager: evansma
-ms.author: jsuri
-ms.date: 5/31/2021
-=======
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
 ms.date: 5/31/2022
->>>>>>> b9a01db5f336d57615746b432a02f20e4a66efbd
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager

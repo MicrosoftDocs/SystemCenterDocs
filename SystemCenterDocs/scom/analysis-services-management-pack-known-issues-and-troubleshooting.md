@@ -2,17 +2,10 @@
 ms.assetid: 23bf27ad-7914-4235-a254-95c94f9f5a85
 title: Known issues and troubleshooting in Management Pack for SQL Server Analysis Services
 description: This article explains known issues and troubleshooting in Management Pack for SQL Server Analysis Services
-<<<<<<< HEAD
-author: TDzakhov
-manager: evansma
-ms.author: jsuri
-ms.date: 5/31/2021
-=======
 author: VChernov
 ms.author: v-vchernov
 manager: evansma
 ms.date: 6/30/2022
->>>>>>> b9a01db5f336d57615746b432a02f20e4a66efbd
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager

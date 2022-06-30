@@ -4,12 +4,7 @@ title: Known issues and troubleshooting in Management Pack for SQL Server Report
 description: This article explains Known Issues and Troubleshooting in Management Pack for SQL Server Reporting Services
 author: Anastas1ya
 manager: evansma
-<<<<<<< HEAD
-ms.author: jsuri
-ms.date: 5/12/2022
-=======
 ms.date: 6/30/2022
->>>>>>> b9a01db5f336d57615746b432a02f20e4a66efbd
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
