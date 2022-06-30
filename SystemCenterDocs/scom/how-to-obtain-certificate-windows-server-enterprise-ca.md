@@ -18,6 +18,7 @@ Use the procedures in this topic to obtain a certificate from a Windows Server c
 ## Prerequisites
 
 - You must have AD-CS installed.
+
 - You must have a HTTPS binding and its associated certificate has been installed.
 
 For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).
