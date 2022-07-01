@@ -24,7 +24,7 @@ This article details the new features supported in System Center - Data Protecti
 
 ::: moniker range="sc-dpm-2019"
 
-This article details the new features supported in System Center - Data Protection Manager (DPM), includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1) and [2019 UR2](#new-features-in-dpm-2019-ur2).
+This article details the new features supported in System Center - Data Protection Manager (DPM), includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3) and [2019 UR4](#new-features-in-dpm-2019-ur4).
 
 ::: moniker-end
 
@@ -158,6 +158,28 @@ DPM 2019 supports SQL server 2019 as DPM database. You can install SQL Server on
 ## New features in DPM 2019 UR3
 
 DPM 2019 UR3 has only bug fixes. See [the KB article](https://support.microsoft.com/topic/fa5eb310-1886-43fb-be5d-c7829bfaf63d) for details about the issues fixed.
+
+
+## New features in DPM 2019 UR4
+
+See the following sections for information about the new features/feature updates supported in DPM 2019 UR4.
+
+For issues fixed in UR4, and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-2019-data-protection-manager-1f4a13ed-9750-49bb-b312-9def71bc31da).
+
+### Removed File Catalog dependency for online backup of file/folder workloads
+DPM 2019 UR4 removes the dependency on File Catalog which was needed to restore individual files and folders from the Online recovery points. DPM now uses iSCSI mount method to provide individual file restore. This also improves the backups time as upload of file catalog metadata is not needed anymore
+
+### Private endpoint support 
+
+With DPM 2019 UR4, you can use private endpoint to take online backup to Azure Backup Recovery Services vault. [Learn more](/azure/backup/private-endpoints-overview).
+
+### Improvements VHDX mounting and unmounting
+
+Improvements done for VHDX file mounting and unmounting. To mount or unmount VHDX files, we now use Win32 APIs by default. This is a change from our previous approach, which leveraged WMI. If you want to continue using the old (WMI) approach, see  this [documentation](/system-center/dpm/dpm-support-issues?view=sc-dpm-2019).
+
+### Improved DPM reliability after DPM agent uninstallation 
+
+With DPM 2019 UR4, you can restore previously backed up data, even after DPM agent uninstallation. 
 
 ::: moniker-end
 

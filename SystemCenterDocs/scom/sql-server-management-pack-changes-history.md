@@ -2,10 +2,10 @@
 ms.assetid: 2973edd7-293f-496e-b4db-405d6438bb04
 title: Features and enhancements in Management Pack for SQL Server
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: vvithal
-ms.date: 2/21/2021
+ms.date: 6/28/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,30 @@ ms.technology: operations-manager
 # Features and Enhancements in Management Pack for SQL Server
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
+
+## June 2022 - 7.0.38.0 RTM
+
+### What's New
+
+- Added a new 'Timeout for query execution (seconds)' override which can now be used in all workflows
+- Added a new 'Number of samples' override to the "Database Status" monitor to help avoid alert storming
+- Added support for the SQL Server 2022 public preview
+- Added support for enabling debug logging in Windows Event Log
+- Added support for enabling diagnostic tracing in the SCOM toolset
+- The SQL Server Evaluation edition can now be added to the exclude list of the "Local DB Engine" discovery
+- Monitoring workflows have been optimized for better performance
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
+- Updated display strings
+
+### Bug Fixes
+
+- Fixed an issue with the failing "ROWS Data Free Space Left" monitor and "Always On Custom User Policy" workflows in cases when a non-default RunAs account is used
+- Fixed an issue with the failing dashboard view in cases when the 'OperationsManagerDW' database is used by several management groups
+- Fixed an issue when the "Linux Availability Group" tiles might appear unavailable in the dashboard view
+- Fixed an issue with the failing event rule "The agent is suspect. No response within last minutes" on Windows
+- Fixed an issue with an invalid type of the 'Timeout' override in seconds for several workflows on Windows
+- Fixed an issue with the "Local DB Engine" discovery error handling in cases when the SQL Server instance was deleted, but some namespaces remained in the registry
+- Fixed an issue with the failing 'EventLogReader' module in localized OS
 
 ## February 2022 - 7.0.36.0 RTM
 
