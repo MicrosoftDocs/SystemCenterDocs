@@ -99,6 +99,22 @@ The new web API is JSON based and makes it easier to use than the older XML-base
 
 Support for 64 bit enables the use of 64 bit assemblies, Integration Packs and PowerShell cmdlets.
 
+## SCO 2022 Integration packs
+
+Following SCO 2022 Integration packs are available for download from Download Center:
+
+ - [System Center 2022 Configuration Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104338)
+ - [System Center 2022 Operations Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104339)
+ - [System Center 2022 Virtual Machine Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104340)
+ - [System Center 2022 Service Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104341)
+ - [System Center 2022 Data Protection Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104334)
+ - [Active Directory Integration Pack](https://www.microsoft.com/download/details.aspx?id=104333)
+ - [Exchange Admin Integration Pack](https://www.microsoft.com/download/details.aspx?id=104335)
+ - [Exchange User Integration Pack](https://www.microsoft.com/download/details.aspx?id=104336)
+ - [REST Integration Pack](https://www.microsoft.com/download/details.aspx?id=104337)
+ - [SharePoint Integration Pack](https://www.microsoft.com/download/details.aspx?id=104332)
+
+
 ::: moniker-end
 
 ## Next steps
