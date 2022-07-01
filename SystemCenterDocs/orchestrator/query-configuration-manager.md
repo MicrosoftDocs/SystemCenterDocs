@@ -82,11 +82,11 @@ and optional properties and published data for this activity.
 
 |Element|Description|Valid Values|
 |---|---|---|
-|Query|Performs a WMI query against ConfigMgr and returns the results||    
+|Query|Performs a WMI query against ConfigMgr and returns the results||
 |Query Value Type|The type of query|Query Name, Query ID, or Query String|
 
 ## Query ConfigMgr published data
 
 |Element|Description|
 |---|---|
-|Query results|The query results are returned as a collection of items|   
+|Query results|The query results are returned as a collection of items|
