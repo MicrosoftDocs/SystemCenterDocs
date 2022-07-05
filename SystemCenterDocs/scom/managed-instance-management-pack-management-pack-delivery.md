@@ -2,8 +2,8 @@
 ms.assetid: 117e9e45-633c-49b4-8e22-f26d397c061e
 title: Management Pack for Azure SQL Managed Instance delivery
 description: This article explains how to install Management Pack for Azure SQL Managed Instance
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: vvithal
 ms.date: 5/31/2021
 ms.topic: article
