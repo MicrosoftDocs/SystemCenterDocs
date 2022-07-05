@@ -69,7 +69,7 @@ A Custom Widget script has three major sections:
 3. Third-party visualization, which is open-source libraries hosted on cloudflare.com that are required to render the data, depending on the chart type selected.   
 
 ### Widget properties
-In order for the script to query and return data in the visualization, the **URL** parameter specifies the address of the Operations Manager Web console and the data type.  The URL syntax is *http://<servername>/operationsmanager/data/<dataitem>* and value for **dataitem** is one of the following:
+In order for the script to query and return data in the visualization, the **URL** parameter specifies the address of the Operations Manager Web console and the data type.  The URL syntax is *http://\<servername\>/operationsmanager/data/\<dataitem\>* and value for **dataitem** is one of the following:
 
 * *alert* represents a monitoring alert
 * *state* represents monitoring health state data

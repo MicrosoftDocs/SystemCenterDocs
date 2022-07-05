@@ -62,7 +62,7 @@ The following table shows Operations Manager feature interaction across a firewa
 
 - If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following:
 
-  1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for <instance name>, and then double-click **TCP/IP**.
+  1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for \<instance name\>, and then double-click **TCP/IP**.
   2. In the **TCP/IP Properties** dialog box, on the **IP Addresses** tab, note the port value for **IPAall**.  
 
 - If you plan on deploying the Operations Manager databases on a SQL Server configured with an Always On Availability Group or migrate after installation, do the following to identify the port:

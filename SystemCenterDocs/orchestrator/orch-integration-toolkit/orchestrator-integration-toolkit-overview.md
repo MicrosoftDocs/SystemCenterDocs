@@ -57,7 +57,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 #### Installation  
 
--   If installing on a computer where Orchestrator is already installed, it will detect the Orchestrator installation path and install there. Otherwise, it installs to a default path of **%ProgramFiles(x86)%\Microsoft System Center <version>\Orchestrator\Integration Toolkit**. On 32-bit Windows 7, the base directory is **%ProgramFiles%**.  
+-   If installing on a computer where Orchestrator is already installed, it will detect the Orchestrator installation path and install there. Otherwise, it installs to a default path of **%ProgramFiles(x86)%\Microsoft System Center \<version\>\Orchestrator\Integration Toolkit**. On 32-bit Windows 7, the base directory is **%ProgramFiles%**.  
 
 -   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset. Installation of the Integration Toolkit is prevented until WiX is installed.  
 

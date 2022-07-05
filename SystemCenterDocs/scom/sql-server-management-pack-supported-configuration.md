@@ -2,10 +2,10 @@
 ms.assetid: 300c1177-469a-486e-8352-eea84cf8fdf8
 title: Scope and supported configuration in Management Pack for SQL Server
 description: This article explains the scope and supported configuration for Management Pack for SQL Server
-author: Anastas1ya
-ms.author: v-asimanovic
+author: VChernov
+ms.author: v-vchernov
 manager: evansma
-ms.date: 9/24/2021
+ms.date: 7/5/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -23,6 +23,7 @@ Management Pack for SQL Server supports the following operating systems and plat
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server 2019
+- Windows Server 2022
 - Ubuntu 16.04 and 18.04
 - Red Hat Enterprise Linux 7.3 and 7.4
 - SUSE Linux Enterprise Server v12 SP2
