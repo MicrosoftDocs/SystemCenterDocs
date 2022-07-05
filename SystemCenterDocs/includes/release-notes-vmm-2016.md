@@ -127,7 +127,7 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Workaround**: Update the clusters outside VMM, using cluster-aware updating (CAU) in Windows.
 
 ### A cluster rolling upgrade of a Windows Server 2012 R2 host cluster to a Windows Server 2016 Nano Server host cluster will fail
-**Description**: When you try to upgrade the host nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server using cluster rolling upgrade functionality in VMM, the upgrade will fail with error 20406: "VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server <servername>. Failed with error MI RESULT 7 The requested operation is not supported.:
+**Description**: When you try to upgrade the host nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server using cluster rolling upgrade functionality in VMM, the upgrade will fail with error 20406: "VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server \<servername\>. Failed with error MI RESULT 7 The requested operation is not supported.:
 **Workaround**: Manually upgrade the Windows Server 2012 R2 host cluster to Nano outside of VMM. Note that rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Full Server works fine. This issue is specific to Nano.
 
 ### Adding a cluster in the VMM Admin console might cause an error
@@ -191,7 +191,7 @@ The following sections summarize the release notes for VMM 2016 and includes the
 
 ### Deploying a VM on SOFS using fast file copy issues a warning
 **Description**: If you deploy a VM on an SOFS using fast file copy, the action completes successfully with the following warning:
-"VMM could not transfer the file <source location> to <destination location> using fast file copy. The VMM agent on <host> returned an error
+"VMM could not transfer the file \<source location\> to \<destination location\> using fast file copy. The VMM agent on \<host\> returned an error
 **Workaround:** None
 
 ### Cluster validation always runs
@@ -229,7 +229,7 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 ``
 
 ### You can't create VM templates from a Nano Server-based VM.
-**Description**: When you try to create a VM template from a Nano Server-based VM, error 2903 is issued: "VMM could not locate the specified file/folder '' on the '<server name>' server. This file/folder might be required as part of another object."
+**Description**: When you try to create a VM template from a Nano Server-based VM, error 2903 is issued: "VMM could not locate the specified file/folder '' on the '\<server name\>' server. This file/folder might be required as part of another object."
 **Workaround:** Create a VM template from scratch, using a Nano Server VHD.
 
 ### Service deployments from service templates might fail on a Nano Server/Core-based guest OS.
@@ -246,7 +246,7 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 
 ### Error when starting a VM with Start Ordering
-**Description**: Windows Server 2016 includes the VM Start Ordering feature which defines the order in which dependent VMs are started. This functionality isn't available in VMM, but if you've configured the feature outside the VMM, VMM understands the order in which the VMs will start. However, VMM throws a false positive error (12711): "VMM cannot complete the WMI operation on the server <servername> because of an error: [MSCluster_ResourceGroup.Name=<name>] The group or resource is not in the correct state to perform the requested operation.
+**Description**: Windows Server 2016 includes the VM Start Ordering feature which defines the order in which dependent VMs are started. This functionality isn't available in VMM, but if you've configured the feature outside the VMM, VMM understands the order in which the VMs will start. However, VMM throws a false positive error (12711): "VMM cannot complete the WMI operation on the server \<servername\> because of an error: [MSCluster_ResourceGroup.Name=\<name\>] The group or resource is not in the correct state to perform the requested operation.
 **Workaround**: Ignore the error. The VMs will start in the correct order.
 
 
