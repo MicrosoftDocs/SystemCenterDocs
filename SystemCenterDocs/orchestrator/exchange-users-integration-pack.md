@@ -49,7 +49,7 @@ shown below:
 | Exchange Online           | OAuth               | OAuth      |
 | Office 365 Exchange       | OAuth               | OAuth      |
 
-[ews]: https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange
+[ews]: /exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange
 [basic-auth-announce]: https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the
@@ -59,8 +59,7 @@ privacy, see the [System Center Orchestrator Privacy Statement](https://www.micr
 ## System requirements
 
 Prior to implementing the Exchange Users Integration Pack, the following listed software must be
-installed and configured. For more information about installing and configuring Orchestrator and the
-Exchange Users Integration Pack, refer to the respective product documentation.
+installed and configured. For more information about installing and configuring Orchestrator and the Exchange Users Integration Pack, see the respective product documentation.
 
 ::: moniker range="<=sc-orch-2019"
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
@@ -75,7 +74,7 @@ Exchange Users Integration Pack, refer to the respective product documentation.
 -   System Center 2022 integration packs require System Center 2022 - Orchestrator
 -   Microsoft .NET Framework 4.7
 -   Exchange accounts on,
-    -   (On-prem Exchange Server) Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013
+    -   (On-premises Exchange Server) Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013
     -   Or (Exchange Online) Microsoft Exchange Online/Microsoft Office365 Exchange.
 
 ::: moniker-end
@@ -122,7 +121,7 @@ Here's how the connection will be established when the activity runs:
 > (credential or secret certificate) are used instead of a user's credentials. The IP does not
 > support these kind of Azure AD applications.
 
-[pca]: https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-client-applications
+[pca]: /azure/active-directory/develop/msal-client-applications
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
@@ -146,7 +145,7 @@ Here's how the connection will be established when the activity runs:
         least `https://login.microsoftonline.com/common/oauth2/nativeclient` as one of the Redirect
         URI.
         [ ![Screenshot showing authentication platform selection](./media/integration-pack-aad-client/auth-platform-confirm.png) ](./media/integration-pack-aad-client/auth-platform-confirm.png#lightbox)
-    3.  You may add additional platforms for this app:
+    3.  You may add other platforms for this app:
         1.  Choose the platform (like "Mobile and Desktop applications")
             [ ![Screenshot showing authentication platform form](./media/integration-pack-aad-client/auth-platform.png) ](./media/integration-pack-aad-client/auth-platform.png#lightbox)
         2.  Set the Redirect URI of your choice:
@@ -178,9 +177,9 @@ You can view and update the permissions granted to the app on the API permission
 In practice, "Admin consent" implies that any user in the tenant can configure the IP with their
 credentials and execute Exchange activities under their account.
 Once the Admin consent is granted, the Status column will show a green check mark:
-[ ![Screenshot showing app manifest json](./media/integration-pack-for-exchangeuser/ews-permissions.png) ](./media/integration-pack-for-exchangeuser/ews-permissions.png#lightbox)
+[ ![Screenshot showing API permissions with Admin consent grant](./media/integration-pack-for-exchangeuser/ews-permissions.png) ](./media/integration-pack-for-exchangeuser/ews-permissions.png#lightbox)
 
-[ews-reg]: https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth#register-your-application
+[ews-reg]: /exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth#register-your-application
 
 ::: moniker-end
 
@@ -231,7 +230,7 @@ operate on a single Exchange Item (an Appointment, Task, Email or Contact).
     1.  In **Azure AD application (client) ID**, specify the Azure AD client app ID created for this purpose.
     2.  In **Azure AD Tenant (directory) ID**, specify your Azure AD Tenant ID seen on the AD portal.
     3.  In **Azure AD Cloud Instance URL**, type the URL of your Active directory instance or use
-        the default value. Refer [AD docs][ad-authority] to confirm the authentication endpoint.
+        the default value. Refer [Azure AD Authority][ad-authority] to confirm the authentication endpoint.
     4.  Set **Log OAuth request/response** to `True` if you wish to inspect authentication failures
         in detail. The logs will be generated on the path
         `%windir%\Temp\sc-orchestrator\exchange_user\{date-time-stamp}.msal.txt`. One file will be
@@ -257,8 +256,8 @@ operate on a single Exchange Item (an Appointment, Task, Email or Contact).
 3.  Add any more connections if needed, and then select **Finish**.
 
 [soape]: https://github.com/David-Barrett-MS/SOAPe
-[ex-auto-discover]: https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/autodiscover-for-exchange
-[ad-authority]: https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-national-cloud#azure-ad-authentication-endpoints
+[ex-auto-discover]: /exchange/client-developer/exchange-web-services/autodiscover-for-exchange
+[ad-authority]: /azure/active-directory/develop/authentication-national-cloud#azure-ad-authentication-endpoints
 
 ::: moniker range<"sc-orch-2019"
 
