@@ -34,7 +34,7 @@ operation is carried over HTTP and the connection can be authenticated by the me
 Exchange Server. Consult with your tenant administrator about the available methods on your On-prem
 Exchange Server.
 
-::: moniker range>="sc-orch-2019"
+::: moniker range=">= sc-orch-2019"
 > Microsoft has [announced that deprecation of Basic Auth][basic-auth-announce] will begin in most
 > Exchange Online instances from **October 2022** in favour of more secure methods like OAuth.
 ::: moniker-end
@@ -101,7 +101,7 @@ Download the integration pack file and register it with the Orchestrator managem
 Deployment Manager. You may then deploy it to runbook servers and Runbook Designers. For the
 procedures on installing integration packs, see [How to Install an Integration Pack](how-to-add-an-integration-pack.md).
 
-::: moniker range>="sc-orch-2019"
+::: moniker range=">= sc-orch-2019"
 ## Configuring OAuth
 
 Microsoft Azure Active Directory (Azure AD) implements the OAuth protocol for secure authentication
@@ -155,7 +155,7 @@ Here's how the connection will be established when the activity runs:
 [aad-admin]: https://entra.microsoft.com/
 ::: moniker-end
 
-::: moniker range>="sc-orch-2019"
+::: moniker range=">= sc-orch-2019"
 
 ### Granting EWS permissions
 Generally, Public Client Apps that operate in _delegated authentication_ mode require explicit
@@ -259,7 +259,7 @@ operate on a single Exchange Item (an Appointment, Task, Email or Contact).
 [ex-auto-discover]: /exchange/client-developer/exchange-web-services/autodiscover-for-exchange
 [ad-authority]: /azure/active-directory/develop/authentication-national-cloud#azure-ad-authentication-endpoints
 
-::: moniker range<"sc-orch-2019"
+::: moniker range="< sc-orch-2019"
 
 ### To set up an Exchange Configuration (Item) connection
 
@@ -282,7 +282,7 @@ operate on a single Exchange Item (an Appointment, Task, Email or Contact).
 
 ::: moniker-end
 
-::: moniker range>="sc-orch-2019"
+::: moniker range=">= sc-orch-2019"
 ### To set up an Exchange Configuration (Item) connection
 
 1.  In the **Orchestrator Runbook Designer**, select **Options**, and then select **Exchange User**.
