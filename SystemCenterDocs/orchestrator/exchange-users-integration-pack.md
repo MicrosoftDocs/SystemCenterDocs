@@ -40,7 +40,9 @@ Exchange Server.
 ::: moniker-end
 
 This integration pack can be used to connect to both On-prem or Online Exchange servers using their
-respective [Exchange Web Services][ews] (EWS) endpoint. This integration pack operates in the method
+respective [Exchange Web Services][ews] (EWS) endpoint.
+::: moniker range=">= sc-orch-2019"
+This integration pack operates in the method
 shown below:
 
 | Server kind               | Supported auth mode | Default    |
@@ -48,6 +50,7 @@ shown below:
 | Exchange Server (On-prem) | Basic Auth          | Basic Auth |
 | Exchange Online           | OAuth               | OAuth      |
 | Office 365 Exchange       | OAuth               | OAuth      |
+::: moniker-end
 
 [ews]: /exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange
 [basic-auth-announce]: https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866
@@ -62,20 +65,22 @@ Prior to implementing the Exchange Users Integration Pack, the following listed 
 installed and configured. For more information about installing and configuring Orchestrator and the Exchange Users Integration Pack, see the respective product documentation.
 
 ::: moniker range="<=sc-orch-2019"
--   System Center 2016 integration packs require System Center 2016 - Orchestrator
--   System Center 2019 integration packs require System Center 2019 - Orchestrator
--   Microsoft .NET Framework 3.5
--   Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or Microsoft Exchange
+
+- System Center 2016 integration packs require System Center 2016 - Orchestrator
+- System Center 2019 integration packs require System Center 2019 - Orchestrator
+- Microsoft .NET Framework 3.5
+- Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or Microsoft Exchange
     Online/Microsoft 365
 
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
--   System Center 2022 integration packs require System Center 2022 - Orchestrator
--   Microsoft .NET Framework 4.7
--   Exchange accounts on,
-    -   (On-premises Exchange Server) Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013
-    -   Or (Exchange Online) Microsoft Exchange Online/Microsoft Office365 Exchange.
+
+- System Center 2022 integration packs require System Center 2022 - Orchestrator
+- Microsoft .NET Framework 4.7
+- Exchange accounts on,
+  - (On-premises Exchange Server) Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013
+  - Or (Exchange Online) Microsoft Exchange Online/Microsoft Office365 Exchange.
 
 ::: moniker-end
 
@@ -102,20 +107,23 @@ Deployment Manager. You may then deploy it to runbook servers and Runbook Design
 procedures on installing integration packs, see [How to Install an Integration Pack](how-to-add-an-integration-pack.md).
 
 ::: moniker range=">= sc-orch-2019"
+
 ## Configuring OAuth
 
 Microsoft Azure Active Directory (Azure AD) implements the OAuth protocol for secure authentication
 of its users and applications.
 
 ### What is an Azure AD client application?
+
 The integration pack requires a [Public Client Application][pca] on Azure AD that will operate in
 _delegated authentication_ mode (that is, impersonating the user).
 
 Here's how the connection will be established when the activity runs:
-1.  User credentials will be obtained from the IP configuration.
-2.  The credentials will be used to authenticate with Azure AD using OAuth.
-3.  Once authenticated, an OAuth token will be received from Azure AD.
-4.  Activity will perform operations on the EWS endpoint using the OAuth token.
+
+1. User credentials will be obtained from the IP configuration.
+2. The credentials will be used to authenticate with Azure AD using OAuth.
+3. Once authenticated, an OAuth token will be received from Azure AD.
+4. Activity will perform operations on the EWS endpoint using the OAuth token.
 
 > The alternative of _delegated permissions_ is _app-only authentication_ where app secrets
 > (credential or secret certificate) are used instead of a user's credentials. The IP does not
@@ -125,59 +133,53 @@ Here's how the connection will be established when the activity runs:
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
+
 ### Register an Azure AD client application in your tenant
-1.  Open a browser and navigate to the [Azure Active Directory admin center][aad-admin].
-2.  Select Azure Active Directory in the left-hand navigation, then select **App registrations** under
+
+1. Open a browser and navigate to the [Azure Active Directory admin center][aad-admin].
+2. Select Azure Active Directory in the left-hand navigation, then select **App registrations** under
     Manage.
-    [ ![Screenshot showing app registration page](./media/integration-pack-aad-client/app-registrations.png) ](./media/integration-pack-aad-client/app-registrations.png#lightbox)
-3.  Select **New registration**. On the Register an application page, set the values as follows.
-    [ ![Screenshot showing app registration form](./media/integration-pack-aad-client/registration.png) ](./media/integration-pack-aad-client/registration.png#lightbox)
-    -  Set Name to a friendly name for your app.
-    -  Set Supported account types to the choice that makes sense for your scenario.
-    -  For Redirect URI, change the dropdown to "Public client (mobile & desktop)" and set the URI
+    :::image type="content" alt-text="Screenshot of Azure AD App registrations page"  source="./media/integration-pack-aad-client/app-registrations.png" lightbox="./media/integration-pack-aad-client/app-registrations-expanded.png":::
+
+3. Select **New registration**. On the Register an application page, set the values as follows.
+    :::image type="content" alt-text="Screenshot of Azure AD App registrations form"  source="./media/integration-pack-aad-client/registration.png" lightbox="./media/integration-pack-aad-client/registration-expanded.png":::
+    - Set Name to a friendly name for your app.
+    - Set Supported account types to the choice that makes sense for your scenario.
+    - For Redirect URI, change the dropdown to "Public client (mobile & desktop)" and set the URI
        to `https://login.microsoftonline.com/common/oauth2/nativeclient`
-4.  Note down the Application ID and Tenant ID.
-    [ ![Screenshot showing app overview](./media/integration-pack-aad-client/app-overview.png) ](./media/integration-pack-aad-client/app-overview.png#lightbox)
-5.  Go to **Authentication** tab and,
-    1.  Under "Advanced settings" set **Allow public client flows** to yes.
-        [ ![Screenshot showing public client flow choice](./media/integration-pack-aad-client/public-client-flow.png) ](./media/integration-pack-aad-client/public-client-flow.png#lightbox)
-    2.  Confirm that the Platform configuration is set to "Mobile and Desktop applications" with at
+4. Note down the Application ID and Tenant ID.
+    :::image type="content" alt-text="Screenshot of Azure AD App overview pane"  source="./media/integration-pack-aad-client/app-overview.png" lightbox="./media/integration-pack-aad-client/app-overview-expanded.png":::
+5. Go to **Authentication** tab and,
+    :::image type="content" alt-text="Screenshot of Azure AD App authentication platform"  source="./media/integration-pack-aad-client/auth-platform.png" lightbox="./media/integration-pack-aad-client/auth-platform-expanded.png":::
+    1. Under "Advanced settings" set **Allow public client flows** to yes.
+    2. Confirm that the Platform configuration is set to "Mobile and Desktop applications" with at
         least `https://login.microsoftonline.com/common/oauth2/nativeclient` as one of the Redirect
         URI.
-        [ ![Screenshot showing authentication platform selection](./media/integration-pack-aad-client/auth-platform-confirm.png) ](./media/integration-pack-aad-client/auth-platform-confirm.png#lightbox)
-    3.  You may add other platforms for this app:
-        1.  Choose the platform (like "Mobile and Desktop applications")
-            [ ![Screenshot showing authentication platform form](./media/integration-pack-aad-client/auth-platform.png) ](./media/integration-pack-aad-client/auth-platform.png#lightbox)
-        2.  Set the Redirect URI of your choice:
 
-            [ ![Screenshot showing authentication redirect URI](./media/integration-pack-aad-client/redirect-uri.png) ](./media/integration-pack-aad-client/redirect-uri.png#lightbox)
-
-[aad-admin]: https://entra.microsoft.com/
+[aad-admin]: https://aad.portal.azure.com/
 ::: moniker-end
 
 ::: moniker range=">= sc-orch-2019"
 
 ### Granting EWS permissions
+
 Generally, Public Client Apps that operate in _delegated authentication_ mode require explicit
 consent from the user who wants to use the application. The explicit consent is granted
 interactively through an embedded browser window.
 
 However, the IP doesn't support the consent grant flow, instead the tenant admin must grant consent
 on behalf of all users in the tenant.
-You can view and update the permissions granted to the app on the API permissions tab on the portal.
-[ ![Screenshot showing API permission page](./media/integration-pack-aad-client/api-permissions.png) ](./media/integration-pack-aad-client/api-permissions.png#lightbox)
 
-1.  First we add the permissions to the app by editing the app **Manifest**.
-    1.  On the Azure AD portal, select the Azure AD application.
-    2.  Follow the [steps to grant EWS permissions][ews-reg] by editing the app **Manifest**.
-        [ ![Screenshot showing app manifest json](./media/integration-pack-for-exchangeuser/manifest.png) ](./media/integration-pack-for-exchangeuser/manifest.png#lightbox)
-2.  Request your tenant admin to grant "Admin consent" (on the API permissions tab) to this application for
+1. First we add the permissions to the app by editing the app **Manifest**.
+    1. On the Azure AD portal, select the Azure AD application.
+    2. Follow the [**steps to grant EWS permissions**][ews-reg] by editing the app **Manifest**.
+        :::image type="content" alt-text="Screenshot of Azure AD App manifest"  source="./media/integration-pack-for-exchangeuser/manifest.png" lightbox="./media/integration-pack-for-exchangeuser/manifest-expanded.png":::
+2. Request your tenant admin to grant "Admin consent" (on the API permissions tab) to this application for
     `EWS.AccessAsUser.All` permission.
+    :::image type="content" alt-text="Screenshot of Azure AD App API permissions"  source="./media/integration-pack-for-exchangeuser/api-permissions.png" lightbox="./media/integration-pack-for-exchangeuser/api-permissions-expanded.png":::
 
 In practice, "Admin consent" implies that any user in the tenant can configure the IP with their
 credentials and execute Exchange activities under their account.
-Once the Admin consent is granted, the Status column will show a green check mark:
-[ ![Screenshot showing API permissions with Admin consent grant](./media/integration-pack-for-exchangeuser/ews-permissions.png) ](./media/integration-pack-for-exchangeuser/ews-permissions.png#lightbox)
 
 [ews-reg]: /exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth#register-your-application
 
@@ -196,46 +198,46 @@ Configuration** connection and the **Exchange Configuration (Item)** configurati
 The basic **Exchange Configuration** contains connection information that is used by activities
 where the item type is either implicit or not required:
 
--  Create and Send E-Mail
--  Reply to E-Mail
--  Send E-Mail
--  Delete Item
--  Find Appointments
+- Create and Send E-Mail
+- Reply to E-Mail
+- Send E-Mail
+- Delete Item
+- Find Appointments
 
 The **Exchange Configuration (Item)** configuration is used for the remaining activities that
 operate on a single Exchange Item (an Appointment, Task, Email or Contact).
 
 ### To set up a basic Exchange Configuration connection
 
-1.  In the **Orchestrator Runbook Designer**, select **Options**, and then select **Exchange User**.
+1. In the **Orchestrator Runbook Designer**, select **Options**, and then select **Exchange User**.
     The **Exchange User** dialog box appears.
-2.  On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
-3.  In the **Name** box, enter a friendly display name for the connection.
-4.  In the **Type** box, select **Exchange Configuration**.
-5.  In the **Exchange Server Address** box, type the name or IP address of the Exchange server. If
+2. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
+3. In the **Name** box, enter a friendly display name for the connection.
+4. In the **Type** box, select **Exchange Configuration**.
+5. In the **Exchange Server Address** box, type the name or IP address of the Exchange server. If
     you're using the computer name, you can type the NetBIOS name or the fully qualified domain name
     (FQDN). You may leave the **Exchange Server Address** box empty if you enable the **Use
     [Autodiscover][ex-auto-discover]** option.
-    > Usually this is of the form `your-domain-name.com/EWS/Exchange.asmx`.
-6.  In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to
+    > Usually this is of the form `https://your-domain-name.com/EWS/Exchange.asmx`.
+6. In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to
     connect to the Exchange server.
-7.  In the **Domain** box, type the name of the (tenant) domain that will authorize access.
+7. In the **Domain** box, type the name of the (tenant) domain that will authorize access.
     > If your email account is of the form `johndoe@contoso.onmicrosoft.com`, then your domain is `contoso.onmicrosoft.com`
 
 ::: moniker range="sc-orch-2022"
 
-1.  Set **Server is Exchange Online or Office365** to `True` if you're connecting to a managed
+1. Set **Server is Exchange Online or Office365** to `True` if you're connecting to a managed
     Exchange Online or Office365 Exchange instance. If so, follow these further steps (ignore
     otherwise):
-    1.  In **Azure AD application (client) ID**, specify the Azure AD client app ID created for this purpose.
-    2.  In **Azure AD Tenant (directory) ID**, specify your Azure AD Tenant ID seen on the AD portal.
-    3.  In **Azure AD Cloud Instance URL**, type the URL of your Active directory instance or use
+    1. In **Azure AD application (client) ID**, specify the Azure AD client app ID created for this purpose.
+    2. In **Azure AD Tenant (directory) ID**, specify your Azure AD Tenant ID seen on the AD portal.
+    3. In **Azure AD Cloud Instance URL**, type the URL of your Active directory instance or use
         the default value. Refer [Azure AD Authority][ad-authority] to confirm the authentication endpoint.
-    4.  Set **Log OAuth request/response** to `True` if you wish to inspect authentication failures
+    4. Set **Log OAuth request/response** to `True` if you wish to inspect authentication failures
         in detail. The logs will be generated on the path
         `%windir%\Temp\sc-orchestrator\exchange_user\{date-time-stamp}.msal.txt`. One file will be
         generated for each execution of an Exchange User activity.
-2.  Set **Trace EWS request/response** to `True` if you wish to inspect EWS failures in
+2. Set **Trace EWS request/response** to `True` if you wish to inspect EWS failures in
     detail. The logs will be generated on the path
     `%windir%\Temp\sc-orchestrator\exchange_user\{date-time-stamp}.ews-trace.xml.log`. One file will be
     generated for each execution of an Exchange User activity. We recommend using [SOAPe][soape] to visually inspect the traces.
@@ -244,16 +246,16 @@ operate on a single Exchange Item (an Appointment, Task, Email or Contact).
 
 ::: moniker range="sc-orch-2019"
 
-1.  Set **ExchangeOnline** to `True` if you're connecting to a managed
+1. Set **ExchangeOnline** to `True` if you're connecting to a managed
     Exchange Online or Office365 Exchange instance. If so, follow these further steps (ignore
     otherwise):
-    1.  In **Application ID**, specify the Azure AD client app ID created for this purpose.
-    2.  In **Tenant ID**, specify your Azure AD Tenant ID seen on the AD portal.
+    1. In **Application ID**, specify the Azure AD client app ID created for this purpose.
+    2. In **Tenant ID**, specify your Azure AD Tenant ID seen on the AD portal.
 ::: moniker-end
 
-1.  In the **Timeout** box, enter a timeout value or leave the default.
-2.  Select **OK**.
-3.  Add any more connections if needed, and then select **Finish**.
+1. In the **Timeout** box, enter a timeout value or leave the default.
+2. Select **OK**.
+3. Add any more connections if needed, and then select **Finish**.
 
 [soape]: https://github.com/David-Barrett-MS/SOAPe
 [ex-auto-discover]: /exchange/client-developer/exchange-web-services/autodiscover-for-exchange
@@ -263,35 +265,36 @@ operate on a single Exchange Item (an Appointment, Task, Email or Contact).
 
 ### To set up an Exchange Configuration (Item) connection
 
-1.  In the **Orchestrator Runbook Designer**, select **Options**, and then select **Exchange User**.
+1. In the **Orchestrator Runbook Designer**, select **Options**, and then select **Exchange User**.
     The **Exchange User** dialog box appears.
-2.  On the **Configurations** tab, select **Add** to begin the connection setup. The **Add
+2. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add
     Configuration** dialog box appears.
-3.  In the **Name** box, enter a friendly display name for the connection.
-4.  In the Type box, select **Exchange Configuration (Item Activity)**.
-5.  In the **Exchange Server Address** box, type the name or IP address of the Exchange server. If
+3. In the **Name** box, enter a friendly display name for the connection.
+4. In the Type box, select **Exchange Configuration (Item Activity)**.
+5. In the **Exchange Server Address** box, type the name or IP address of the Exchange server. If
     you're using the computer name, you can type the NetBIOS name or the fully qualified domain name
     (FQDN). You may leave the **Exchange Server Address** box empty if you enable the **Use
     Autodiscover** option.
-6.  In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to
+6. In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to
     connect to the Exchange server.
-7.  In the **Domain** box, type the name of the domain that will authorize access.
-8.  In the **Timeout** box, enter a timeout value or leave the default.
-9.  In the **Item Type** box, enter a valid Exchange Item Type.
-10.  Add any more connections if applicable, and then select **Finish**.
+7. In the **Domain** box, type the name of the domain that will authorize access.
+8. In the **Timeout** box, enter a timeout value or leave the default.
+9. In the **Item Type** box, enter a valid Exchange Item Type.
+10. Add any more connections if applicable, and then select **Finish**.
 
 ::: moniker-end
 
 ::: moniker range=">= sc-orch-2019"
+
 ### To set up an Exchange Configuration (Item) connection
 
-1.  In the **Orchestrator Runbook Designer**, select **Options**, and then select **Exchange User**.
+1. In the **Orchestrator Runbook Designer**, select **Options**, and then select **Exchange User**.
     The **Exchange User** dialog box appears.
-2.  On the **Configurations** tab, select **Add** to begin the connection setup. The **Add
+2. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add
     Configuration** dialog box appears.
-3.  In the **Name** box, enter a friendly display name for the connection.
-4.  In the Type box, select **Exchange Configuration (Item Activity)**.
-5.  In the **Item Type** box, enter a valid Exchange Item Type.
-6.  For remaining parameters, follow the same guidance mentioned above for [basic Exchange Configuration](#to-set-up-a-basic-exchange-configuration-connection).
+3. In the **Name** box, enter a friendly display name for the connection.
+4. In the Type box, select **Exchange Configuration (Item Activity)**.
+5. In the **Item Type** box, enter a valid Exchange Item Type.
+6. For remaining parameters, follow the same guidance mentioned above for [basic Exchange Configuration](#to-set-up-a-basic-exchange-configuration-connection).
 
 ::: moniker-end
