@@ -131,6 +131,7 @@ Here is a sample view:
   > - The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
   > - Some datasources in the Backup items (DPM) view from recovery service vault in Azure portal, are not getting refreshed/updated. Check the workarounds to fix this [known issue](./dpm-release-notes.md?#dpm-datasources-not-being-reflected-on-recovery-services-vault).
   > - For the items backed-up to Azure using DPM, the list will show all the data sources protected (both disk and online) using the DPM server. If the protection is stopped for the datasource with backup data retained, the datasource will be still listed in the portal. You can go to the details of the data source to see if the recovery points are present in the disk, online or both. Also, datasources for which the online protection is stopped but data is retained, billing for the online recovery points continue, until the data is completely deleted.
+  > - Currently, datasources backed-up directly to tape don't appear in the Recovery Services vault. To make it appear, we recommend you to back up the data to disk for a short term, and then to Azure or tape as required.
 
 - Click the *backup item* to view more details such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
 
