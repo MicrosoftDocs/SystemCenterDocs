@@ -15,19 +15,16 @@ ms.custom: intro-deployment
 
 # Deploy and manage Azure Stack HCI clusters in VMM
 
-This article provides information about how to set up a Azure Stack HCI, version 20H2 cluster in System Center - Virtual Machine Manager (VMM) 2019 UR3 and later. You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers.
+This article provides information about how to set up a Azure Stack HCI cluster in System Center - Virtual Machine Manager (VMM) and later. You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers or by adding existing hosts. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI.
 
 ::: moniker range="sc-vmm-2022"
 
-VMM 2019 UR3 supports Azure Stack HCI version 20H2. VMM 2022 support 20H2 and 21H2.
+VMM 2019 UR3 supports Azure Stack HCI version 20H2. VMM 2022 support Azure Stack HCI, versions 20H2 and 21H2.
 
 ::: moniker-end
 
 >[!IMPORTANT]
->Azure Stack HCI clusters that are managed by Virtual Machine Manager shouldn’t join the preview channel yet. System Center 2019 (including Virtual Machine Manager, Operations Manager, and other components) doesn’t support this preview yet. See the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog) for the latest updates.
-
-[Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI OS.
-
+>Azure Stack HCI clusters that are managed by Virtual Machine Manager shouldn’t join [the preview channel](/azure-stack/hci/manage/preview-channel) yet. System Center (including Virtual Machine Manager, Operations Manager, and other components) does not currently support Azure Stack preview versions. See the [System Center blog](https://techcommunity.microsoft.com/t5/system-center-blog/bg-p/SystemCenterBlog) for the latest updates.
 
 ## Before you start
 
@@ -37,7 +34,7 @@ Make sure you're running VMM 2019 UR3 or later.
 
 - Addition, creation, and management of Azure Stack HCI clusters. [See detailed steps](provision-vms.md) to create and manage HCI clusters.
 
-- Ability to provision & deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD files, templates or from an existing VM. [Learn more](provision-vms.md).
+- Ability to provision & deploy VMs on the Azure Stack HCI clusters and perform VM life cycle operations. VMs can be provisioned using VHD(x) files, templates or from an existing VM. [Learn more](provision-vms.md).
 
 - [Set up VLAN based network on Azure Stack HCI clusters](manage-networks.md).
 
@@ -55,28 +52,29 @@ With VMM 2022, we are introducing VMM PowerShell cmdlets to register and unregis
 
 Use the following cmdlets to register a HCI cluster:
 
-*Register-SCAzStackHCI -VMHostCluster \<HostCluster\> -SubscriptionID \<string\>*
-
-For detailed information about the supported parameter, see PowerShell documentation.
+```
+Register-SCAzStackHCI -VMHostCluster <HostCluster> -SubscriptionID <string>
+```
 
 Use the following command to unregister a cluster:
 
-*Unregister-SCAzStackHCI -VMHostCluster \<HostCluster\> -SubscriptionID \<string\>*
+```
+Unregister-SCAzStackHCI -VMHostCluster <HostCluster> -SubscriptionID <string>
+```
 
-For detailed information about the supported parameter, see [Register-SCAzStackHCI](/powershell/module/virtualmachinemanager/register-scazstackhci?preserve-view=true&view=systemcenter-ps-2022) and [Unregister-SCAzStackHCI](/powershell/module/virtualmachinemanager/unregister-scazstackhci?preserve-view=true&view=systemcenter-ps-2022).
+For detailed information about the supported parameter, see [Register-SCAzStackHCI](/powershell/module/virtualmachinemanager/register-scazstackhci) and [Unregister-SCAzStackHCI](/powershell/module/virtualmachinemanager/unregister-scazstackhci).
 
 ::: moniker-end
 
 **What’s not supported?**
 
-- Management of *Azure Stack HCI stretched clusters* is currently not supported in VMM.
+- Management of Azure Stack HCI [stretched clusters](/azure-stack/hci/concepts/stretched-clusters) is currently not supported in VMM.
 
-- Azure Stack HCI is intended as a virtualization host where you run all your workloads in virtual machines, the Azure Stack HCI terms allow you to run only what's necessary for hosting virtual machines. Azure Stack HCI clusters should not be used for other purposes like WSUS servers, WDS servers or library servers. Refer to [Use cases for Azure Stack HCI](/azure-stack/hci/overview#use-cases-for-azure-stack-hci), [When to use Azure Stack HCI](/azure-stack/hci/concepts/compare-windows-server#when-to-use-azure-stack-hci) and [Roles you can run without virtualizing](/azure-stack/hci/overview#roles-you-can-run-without-virtualizing).
+- Azure Stack HCI is intended as a virtualization host where you run all your workloads in virtual machines. The Azure Stack HCI terms allow you to run only what's necessary for hosting virtual machines. Azure Stack HCI clusters should not be used for other purposes like WSUS servers, WDS servers or library servers. Refer to [Use cases for Azure Stack HCI](/azure-stack/hci/overview#use-cases-for-azure-stack-hci), [When to use Azure Stack HCI](/azure-stack/hci/concepts/compare-windows-server#when-to-use-azure-stack-hci) and [Roles you can run without virtualizing](/azure-stack/hci/overview#roles-you-can-run-without-virtualizing).
 
-- Live migration of VM is not supported between any version of Windows Server and Azure Stack HCI clusters.
+- Live migration between any version of Windows Server and Azure Stack HCI clusters is not supported. Instead, use Network migration when moving VMs from Windows Server to Azure Stack HCI and vice-versa. An offline migration, when the VM is shut down, also works. In this scenario, VMM does export and import under the hood, even though it is performed as a single operation. (Note that Live migration between Azure Stack HCI clusters works, as well as between Windows Server clusters.)
 
-- Network migration from Windows Server 2019 to Azure Stack HCI cluster will work, as well as migrating an offline (shut down) VM. VMM performs export and import operation here.
-- Creation or management of non-S2D cluster with Azure Stack HCI nodes is not supported (applicable for VMM 2022).
+- The only storage type available for Azure Stack HCI is Storage Spaces Direct (S2D.) Creation or management of non-S2D cluster with Azure Stack HCI nodes is not supported. If you need to use any other type of storage, e.g. SANs, use Windows Server as virtualization hosts.
 
 > [!NOTE]
 > You must enable S2D when creating a Azure Stack HCI cluster.
@@ -88,9 +86,9 @@ After you enable a cluster with S2D, VMM does the following:
 - The Failover Clustering feature is enabled.
 - Storage replica and data deduplication is enabled.
 - The cluster is optionally validated and created.
-- S2D is enabled, and a storage array is created with the same name as you provided in the wizard.
+- S2D is enabled, and a storage array object is created in VMM with the same name as you provided in the wizard.
 
-If you use PowerShell to create a hyper-converged cluster, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
+When you use VMM to create a hyper-converged cluster, the pool and the storage tiers are automatically created by running `Enable-ClusterStorageSpacesDirect -Autoconfig $True`.
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster.
 
@@ -103,12 +101,12 @@ You can provision a cluster by Hyper-V hosts and bare-metal machines:
 
 ### Provision a cluster from Hyper-V hosts
 
-If you need to add the Azure Stack HCI  hosts to the VMM fabric, [follow these steps](hyper-v-existing.md). If they’re already in the VMM fabric, skip to the next step.
+If you need to add the Azure Stack HCI hosts to the VMM fabric, [follow these steps](hyper-v-existing.md). If they’re already in the VMM fabric, skip to the next step.
 
 > [!NOTE]
 > - When you set up the cluster, select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the **Create Hyper-V Cluster** wizard.
 > - In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
-> - All the selected hosts should have Azure Stack HCI OS installed.
+> - All the selected hosts should have Azure Stack HCI installed.
 > - Since S2D is enabled, the cluster must be validated.
 
 ### Provision a cluster from bare metal machines
@@ -147,8 +145,8 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
     You can also set the IEEE Priority by using the following PowerShell commands:
 
     ```
-    PS> Set-VMNetworkAdapterVlan -VMNetworkAdapterName SMB2 -VlanId "101" -Access -ManagementOS
-    PS> Set-VMNetworkAdapter -ManagementOS -Name SMB2 -IeeePriorityTag on
+    Set-VMNetworkAdapterVlan -VMNetworkAdapterName SMB2 -VlanId "101" -Access -ManagementOS
+    Set-VMNetworkAdapter -ManagementOS -Name SMB2 -IeeePriorityTag on
     ```
 
 
@@ -192,7 +190,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 
 ## Step 4: Register Azure Stack HCI cluster with Azure
 
-After creating an Azure Stack HCI cluster, it must be registered with Azure within 30 days of installation per Azure Online Service terms. Follow the steps [here](/azure-stack/hci/deploy/register-with-azure) to register the Azure Stack HCI cluster with Azure.
+After creating an Azure Stack HCI cluster, it must be registered with Azure within 30 days of installation per Azure Online Service terms. If you are using System Center 2022, use `Register-SCAzStackHCI` cmdlet in VMM to register the Azure Stack HCI cluster with Azure. Alternatively, follow [these steps](/azure-stack/hci/deploy/register-with-azure) to register the Azure Stack HCI cluster with Azure.
 
 The registration status will reflect in VMM after a successful cluster refresh.
 
@@ -203,7 +201,7 @@ The registration status will reflect in VMM after a successful cluster refresh.
 
    ![Registration status](./media/s2d/registration-status.png)
 
-3. Get -SCVMM host has new properties to check registration status.
+3. Alternatively, run `Get-SCVMHost` and observe the properties of returned object to check registration status.
 
 ## Step 6: Manage the pool and create CSVs
 
@@ -221,10 +219,7 @@ You can now modify the storage pool settings, and create virtual disks and CSVs.
 
     ![Configure Storage settings](./media/s2d/storage-spaces-tiering.png)
 
-
 7. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
-
-If you use PowerShell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 
 ## Step 7: Deploy VMs on the cluster
 
