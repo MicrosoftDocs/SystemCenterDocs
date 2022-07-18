@@ -1,7 +1,7 @@
 ---
 ms.assetid: 40d9b3b7-3e5a-463c-bbc0-161450e59714
 title: Deploy and manage Azure Stack HCI clusters in VMM
-description: This article describes how to set up a Azure Stack HCI cluster in VMM.
+description: This article describes how to set up an Azure Stack HCI cluster in VMM.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
@@ -15,11 +15,11 @@ ms.custom: intro-deployment
 
 # Deploy and manage Azure Stack HCI clusters in VMM
 
-This article provides information about how to set up a Azure Stack HCI cluster in System Center - Virtual Machine Manager (VMM) and later. You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers or by adding existing hosts. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI.
+This article provides information about how to set up an Azure Stack HCI cluster in System Center - Virtual Machine Manager (VMM) and later. You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers or by adding existing hosts. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI.
 
 ::: moniker range="sc-vmm-2022"
 
-[VMM 2019 Update Rollup 3 (UR3)](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2019&branch=release-sc2019-ur3#new-features-in-vmm-2019-ur3) supports Azure Stack HCI, version 20H2. The current product is Azure Stack HCI, version 21H2. Starting with [System Center 2022](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2022&branch=release-sc2019-ur3#support-for-azure-stack-hci-clusters-21h2), VMM support both Azure Stack HCI, version 20H2 and Azure Stack HCI, version 21H2.
+[VMM 2019 Update Rollup 3 (UR3)](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2019#new-features-in-vmm-2019-ur3) supports Azure Stack HCI, version 20H2. The current product is Azure Stack HCI, version 21H2. Starting with [System Center 2022](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2022#support-for-azure-stack-hci-clusters-21h2), VMM support both Azure Stack HCI, version 20H2 and Azure Stack HCI, version 21H2.
 
 ::: moniker-end
 
@@ -50,7 +50,7 @@ Make sure you're running VMM 2019 UR3 or later.
 
 With VMM 2022, we are introducing VMM PowerShell cmdlets to register and unregister Azure Stack HCI clusters.
 
-Use the following cmdlets to register a HCI cluster:
+Use the following cmdlets to register an HCI cluster:
 
 ```
 Register-SCAzStackHCI -VMHostCluster <HostCluster> -SubscriptionID <string>
@@ -77,7 +77,7 @@ For detailed information about the supported parameter, see [Register-SCAzStackH
 - The only storage type available for Azure Stack HCI is Storage Spaces Direct (S2D.) Creation or management of non-S2D cluster with Azure Stack HCI nodes is not supported. If you need to use any other type of storage, e.g. SANs, use Windows Server as virtualization hosts.
 
 > [!NOTE]
-> You must enable S2D when creating a Azure Stack HCI cluster.
+> You must enable S2D when creating an Azure Stack HCI cluster.
 > To enable S2D, in the cluster creation wizard, go to **General Configuration**, under **Specify the cluster name and host group**, select **Enable Storage Spaces Direct**, as shown below:
 
 ![S2D enabled](./media/s2d/s2d-enable.png)
