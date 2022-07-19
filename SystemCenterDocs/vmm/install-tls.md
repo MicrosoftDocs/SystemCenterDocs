@@ -21,6 +21,13 @@ ms.technology: virtual-machine-manager
 
 This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Virtual Machine Manager (VMM) server.
 
+>[!NOTE]
+> Virtual Machine Manager will use the protocol configured at the Operating System Level. For example, if TLS 1.0, TLS 1.1, and TLS 1.2 are enabled at the Operating System Level, then Virtual Machine Manager will select one of the three protocols in the following order of preference:
+> 1.	TLS version 1.2
+> 2.	TLS version 1.1
+> 3.	TLS version 1.0
+>
+> The [Schannel SSP](/windows-server/security/tls/tls-ssl-schannel-ssp-overview) then selects the most preferred authentication protocol that the client and server can support.
 
 ## Before you start
 
@@ -63,39 +70,39 @@ Disable all SCHANNEL protocols except for TLS 1.2.
 Instead of modifying the registry values manually, you can use the following PowerShell script.
 
 ```
-$ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2")
+$ProtocolList       = @("SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.1", "TLS 1.2")
 $ProtocolSubKeyList = @("Client", "Server")
-$DisabledByDefault = "DisabledByDefault"
-$Enabled = "Enabled"
-$registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
+$DisabledByDefault  = "DisabledByDefault"
+$registryPath       = "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
 
-foreach($Protocol in $ProtocolList)
+foreach ($Protocol in $ProtocolList)
 {
-    Write-Host " In 1st For loop"
-        foreach($key in $ProtocolSubKeyList)
-        {         
-            $currentRegPath = $registryPath + $Protocol + "\" + $key
-            Write-Host " Current Registry Path $currentRegPath"
-            if(!(Test-Path $currentRegPath))
-            {
-                Write-Host "creating the registry"
-                    New-Item -Path $currentRegPath -Force | out-Null             
-            }
-            if($Protocol -eq "TLS 1.2")
-            {
-                Write-Host "Working for TLS 1.2"
-                    New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
-                    New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null
-            }
-            else
-            {
-                Write-Host "Working for other protocol"
-                    New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null
-                    New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "0" -PropertyType DWORD -Force | Out-Null
-            }     
-    }
+	foreach ($key in $ProtocolSubKeyList)
+	{
+		$currentRegPath = $registryPath + $Protocol + "\" + $key
+		Write-Output "Current Registry Path: `"$currentRegPath`""
+
+		if (!(Test-Path $currentRegPath))
+		{
+			Write-Output " `'$key`' not found: Creating new Registry Key"
+			New-Item -Path $currentRegPath -Force | out-Null
+		}
+		if ($Protocol -eq "TLS 1.2")
+		{
+			Write-Output " Enabling - TLS 1.2"
+			New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
+			New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "1" -PropertyType DWORD -Force | Out-Null
+		}
+		else
+		{
+			Write-Output " Disabling - $Protocol"
+			New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null
+			New-ItemProperty -Path $currentRegPath -Name 'Enabled' -Value "0" -PropertyType DWORD -Force | Out-Null
+		}
+		Write-Output " "
+	}
 }
- 
+
 Exit 0
 ```
 
