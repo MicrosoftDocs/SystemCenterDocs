@@ -46,15 +46,16 @@ Before you can install the Integration Pack for Active Directory, you must first
 
 ::: moniker range="<=sc-orch-2019"
 
-- To download the Orchestrator 2016  integration pack, see [Active Directory Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54098).
+- To download the Orchestrator 2016  integration pack, see [Active Directory Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54098)
 
 - To download the Orchestrator 2019 integration pack, see [Active Directory Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58111)
 
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
->[!NOTE]
->Integration packs and toolkit for Orchestrator 2022 are yet to be released, download links will be provided once they are available. 
+
+- To download the Orchestrator 2022 integration pack, see [Active Directory Integration Pack for System Center 2022 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=104333)
+
 ::: moniker-end
 
 ## Registering and Deploying the Integration Pack

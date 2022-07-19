@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration for Man
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
-ms.date: 5/23/2022
+ms.date: 7/5/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -20,6 +20,7 @@ Management Pack for SQL Server Reporting Services is version-agnostic and suppor
 Management Pack for SQL Server Reporting Services supports the following operating systems and platforms:
 
 - Windows Server 2012
+- Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server 2019
 - Windows Server 2022
@@ -46,6 +47,5 @@ Management Pack for SQL Server Analysis Services supports the following versions
 - System Center Operations Manager 1807
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
-
 
 A dedicated Operations Manager management group is not required for this management pack.

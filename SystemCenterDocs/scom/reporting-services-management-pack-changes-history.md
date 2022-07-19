@@ -15,13 +15,14 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
 
-## June 2022 - 7.0.37.0 CTP
+## June 2022 - 7.0.38.0 RTM
 
 ### What's New
 
 - Added a new feature group for the automated population of PBI report services
 - Extended monitoring for PBI report rendering by adding new performance rules – "Working set memory consumed by Power BI Mashup containers (GB)", "Private memory consumed by Power BI Mashup containers (GB)", "Working set memory consumed by Power BI Analysis Services process (GB)", "Private memory consumed by Power BI Analysis Services process (GB)"
 - Added a new 'URL position' override that indicates which URL to use to monitor the availability of the Web service in the "Report manager accessible" and "Web service accessible" monitors
+- Improved rounding of values in alerts from memory-related workflows: "Running SSRS processes consume too much memory" and "Non SSRS-related processes consume too much memory"
 - Updated display strings
 
 ### Bug Fixes

@@ -2,8 +2,8 @@
 ms.assetid: 3b973a20-df14-490f-8452-020a9e3ede96
 title: Scope and supported configuration in Management Pack for Azure SQL Database
 description: This article explains the scope and supported configuration in Management Pack for Azure SQL Database
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article

@@ -86,6 +86,21 @@ For more information about how to set up, configure and run your environment to 
 
 ::: moniker range="sc-orch-2022"
 
+## SCO 2022 Integration packs
+
+Following SCO 2022 Integration packs are available for download from Download Center:
+
+ - [System Center 2022 Configuration Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104338)
+ - [System Center 2022 Operations Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104339)
+ - [System Center 2022 Virtual Machine Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104340)
+ - [System Center 2022 Service Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104341)
+ - [System Center 2022 Data Protection Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104334)
+ - [Active Directory Integration Pack](https://www.microsoft.com/download/details.aspx?id=104333)
+ - [Exchange Admin Integration Pack](https://www.microsoft.com/download/details.aspx?id=104335)
+ - [Exchange User Integration Pack](https://www.microsoft.com/download/details.aspx?id=104336)
+ - [REST Integration Pack](https://www.microsoft.com/download/details.aspx?id=104337)
+ - [SharePoint Integration Pack](https://www.microsoft.com/download/details.aspx?id=104332)
+
 ## New web console and web API
 
 A new web console and web API are introduced in System Center Orchestrator 2022.
