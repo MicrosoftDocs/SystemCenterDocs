@@ -35,9 +35,11 @@ We recommend you to see the following articles for detailed information about wh
 
 ## DPM 2022 release notes
 
-DPM 2022 has the known issues that are observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes), [UR1](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-ur1-release-notes) and [UR2](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-2019-ur2-release-notes). 
+DPM 2022 has the known issues that are observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes), [UR1](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-ur1-release-notes) and [UR2](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-2019-ur2-release-notes).
 
-In addition to the following known issues mentioned below, the fixes done in [hotfix](#dpm-2022-hotfix-kb-5015376-release-notes) are included. See the KB article.
+This article also includes the [release notes for DPM 2022 Hotfix KB 5015376](#dpm-2022-hotfix-kb-5015376-release-notes).
+
+In addition, the following known issues are observed.
 
 ### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB**
 
@@ -106,9 +108,7 @@ Use these steps to rename the database:
 
 ## DPM 2022 Hotfix (KB 5015376) release notes
 
-Issues identified in DPM 2022 are documented in KB 5015376 and we recommend you to apply the hotfix from the KB.
-
-The following issues are fixed as a part of the hotfix:
+In addition to the issues listed in DPM 2022 release notes, the following additional issues are identified in DPM 2022 and are fixed in Hotfix (KB 5015376), we recommend you to apply the hotfix. For more details, see the [KB article](https://support.microsoft.com/topic/intermittent-online-backup-failures-and-other-issues-in-data-protection-manager-2022-30df8903-f779-41c5-9b66-13a4b8461d0e).
 
  - Intermittent online backup failures with error 100195.
  - Secondary protection consistency check failure with VSS non-transient error.
