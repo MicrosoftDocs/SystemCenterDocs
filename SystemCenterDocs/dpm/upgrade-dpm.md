@@ -59,6 +59,9 @@ This article provides the upgrade information for System Center 2016 - Data Prot
 ::: moniker-end
 
 ## Next steps
+
+- See [release notes](dpm-release-notes.md) for any update rollups or hotfixes.
+
 - Learn how to [add storage](add-storage.md).
 
 - Learn how to [install and manage update rollups](update-rollups.md) for DPM.

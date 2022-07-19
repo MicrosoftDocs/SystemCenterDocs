@@ -102,6 +102,20 @@ Use these steps to rename the database:
 
 5. If the online backup is still failing, contact the support team.
 
+## Hotfix for DPM 2022
+
+
+Issues identified in DPM 2022 are documented in KB 5015376 and we recommend you to apply the hotfix from the KB.
+
+Issues mitigated as a part of the hotfix:
+
+1. Intermittent online backup failures with error 100195.
+2. Secondary protection consistency check failure with VSS non-transient error.
+3. Remote admin console crashe right after opening the console.
+4. Backup failures due to DpmFilter.sys not loading on DPM agent.
+5. Obtrusive terminal pop-up for DPMClient.exe on protected desktops.
+6. DPM crashes when tape backup failure alerts are inactive.
+
 ::: moniker-end
 
 
