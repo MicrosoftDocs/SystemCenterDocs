@@ -37,7 +37,7 @@ We recommend you to see the following articles for detailed information about wh
 
 DPM 2022 has the known issues that are observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes), [UR1](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-ur1-release-notes) and [UR2](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-2019-ur2-release-notes). 
 
-In addition to the following known issues mentioned below, additional issues in DPM 2022 were identified and fixed as a part of [hotfix](#dpm-2022-hotfix-kb-5015376-release-notes). We recommend that you apply the hotfix above DPM 2022.
+In addition to the following known issues mentioned below, the fixes done in [hotfix](#dpm-2022-hotfix-kb-5015376-release-notes) are included. See the KB article.
 
 ### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB**
 
