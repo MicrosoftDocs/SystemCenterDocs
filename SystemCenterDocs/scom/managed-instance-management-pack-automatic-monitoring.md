@@ -2,8 +2,8 @@
 ms.assetid: f27d87a8-d387-4648-a0b9-848a74429538
 title: Automatic monitoring template in Management Pack for Azure SQL Managed Instance
 description: This article explains how to configure automatic monitoring template in Management Pack for Azure SQL Managed Instance
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: vvithal
 ms.date: 3/17/2021
 ms.topic: article

@@ -265,3 +265,7 @@ If you want to use SQL 2017 with DPM Semi Annual Channel 1801 or later, you must
 
 6. Change the Reporting Service virtual directory name to ReportServer_SSRS.
 7. Configure the Reporting Service, and restore the database and encryption keys.
+
+## Next steps
+
+- See [release notes](dpm-release-notes.md) for new hotfixes and URs that are applicable.

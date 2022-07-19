@@ -2,8 +2,8 @@
 ms.assetid: 5be59923-32d6-4758-b078-a26bf85ae28b
 title: Monitoring modes in Management Pack for SQL Server
 description: This article explains monitoring modes in Management Pack for SQL Server
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article

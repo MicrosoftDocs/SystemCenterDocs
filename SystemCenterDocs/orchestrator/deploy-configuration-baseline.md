@@ -34,7 +34,7 @@ and optional properties and published data for this activity.
 
 ## Deploy Configuration Baseline required properties
 
-|**Element**|**Description**|**Valid Values**
+|**Element**|**Description**|**Valid Values**|
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------|------------------|
 |Deployment Name|The desired name for the new deployment that will be shown in the Configuration Manager console||    
 |Baseline|Performs a WMI query against Configuration Manager and returns the baseline information ||           
@@ -73,6 +73,6 @@ and optional properties and published data for this activity.
 ## Deploy Configuration Baseline published data
 
 |Element|Description|
-|---------------|-------------------------------------------------|
-|Connection|Specifies the name of the connection to the Configuration Manager server|                                                                              
-|Collection ID|Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).|   
+|---------------|-----------|
+|Connection|Specifies the name of the connection to the Configuration Manager server|
+|Collection ID|Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).|

@@ -29,7 +29,7 @@ The integration pack for IBM Tivoli Netcool/OMNIbus requires the following softw
 -   32-bit Java Standard Edition 7 on each runbook server and Runbook Designer using the integration pack.
     You must manually add the location of the JVM.DLL file to the PATH environment variable.
 -   Sybase JConnect 6 JDBC drivers on each runbook server and Runbook Designer using the integration pack.
-    You must manually copy the Jconn3.jar file to C:\\Program Files (x86)\\Common Files\\Microsoft System Center <version>\\Orchestrator\\Extensions\\Support\\NetcoolOMNIbus.
+    You must manually copy the Jconn3.jar file to C:\\Program Files (x86)\\Common Files\\Microsoft System Center \<version\>\\Orchestrator\\Extensions\\Support\\NetcoolOMNIbus.
 
 
 ## Download the integration pack

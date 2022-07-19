@@ -56,8 +56,8 @@ Prior to implementing the Exchange Users Integration Pack, the following listed 
 
 ::: moniker range="sc-orch-2022"
 
->[!NOTE]
->Integration packs and toolkit for Orchestrator 2022 are yet to be released, download links will be provided once they are available. 
+- To download the Exchange Users Integration Pack for Orchestrator 2022, go to the [Download Center space for 2022](https://www.microsoft.com/download/details.aspx?id=104336).
+
 ::: moniker-end
 
 ## Registering and deploying the integration pack

@@ -15,11 +15,13 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
 
-## June 2022 - 7.0.37.0 CTP
+## June 2022 - 7.0.38.0 RTM
 
 ### What's New
 
 - Extended monitoring for VertiPaq memory by adding a new "Tabular database consumes too much VertiPaq memory" monitor and the "Database VertiPaq Memory Size (GB)" performance rule
+- Extended monitoring for PBI report rendering by adding a new "Memory consumed by running reports" monitor and the "Total memory usage by running reports on Server (GB)" performance rule
+- Improved rounding of values in alerts from memory-related workflows: "Memory configuration conflict with SQL Server" and "Non SSAS-related processes consume too much memory"
 - Added support for the SQL Server 2022 public preview
 - Updated display strings
 
