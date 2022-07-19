@@ -102,8 +102,7 @@ Use these steps to rename the database:
 
 5. If the online backup is still failing, contact the support team.
 
-## Hotfix for DPM 2022
-
+## DPM 2022 Hotfix
 
 Issues identified in DPM 2022 are documented in KB 5015376 and we recommend you to apply the hotfix from the KB.
 
