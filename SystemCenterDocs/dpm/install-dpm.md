@@ -268,4 +268,4 @@ If you want to use SQL 2017 with DPM Semi Annual Channel 1801 or later, you must
 
 ## Next steps
 
-- See [release notes](dpm-release-notes.md) for any update rollups or hotfixes.
+- See [release notes](dpm-release-notes.md) for issues fixed.

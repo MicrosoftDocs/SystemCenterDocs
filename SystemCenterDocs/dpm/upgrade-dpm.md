@@ -60,7 +60,7 @@ This article provides the upgrade information for System Center 2016 - Data Prot
 
 ## Next steps
 
-- See [release notes](dpm-release-notes.md) for any update rollups or hotfixes.
+- See [release notes](dpm-release-notes.md) for issues fixed.
 
 - Learn how to [add storage](add-storage.md).
 
