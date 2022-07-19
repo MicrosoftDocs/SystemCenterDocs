@@ -106,7 +106,7 @@ Use these steps to rename the database:
 
 Issues identified in DPM 2022 are documented in KB 5015376 and we recommend you to apply the hotfix from the KB.
 
-Issues mitigated as a part of the hotfix:
+The following issues are fixed as a part of the hotfix:
 
 1. Intermittent online backup failures with error 100195.
 2. Secondary protection consistency check failure with VSS non-transient error.
