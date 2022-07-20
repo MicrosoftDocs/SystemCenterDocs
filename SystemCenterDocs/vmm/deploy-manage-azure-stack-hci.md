@@ -15,11 +15,11 @@ ms.custom: intro-deployment
 
 # Deploy and manage Azure Stack HCI clusters in VMM
 
-This article provides information about how to set up an Azure Stack HCI cluster in System Center - Virtual Machine Manager (VMM) and later. You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers or by adding existing hosts. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI.
+This article provides information about how to set up an Azure Stack HCI cluster in System Center - Virtual Machine Manager (VMM). You can deploy an Azure Stack HCI cluster by provisioning from bare-metal servers or by adding existing hosts. [Learn more](https://aka.ms/AzureStackHCI) about the new Azure Stack HCI.
 
 ::: moniker range="sc-vmm-2022"
 
-[VMM 2019 Update Rollup 3 (UR3)](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2019#new-features-in-vmm-2019-ur3&preserve-view=true) supports Azure Stack HCI, version 20H2. The current product is Azure Stack HCI, version 21H2. Starting with [System Center 2022](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2022#support-for-azure-stack-hci-clusters-21h2&preserve-view=true), VMM support both Azure Stack HCI, version 20H2 and Azure Stack HCI, version 21H2.
+[VMM 2019 Update Rollup 3 (UR3)](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2019#new-features-in-vmm-2019-ur3&preserve-view=true) supports Azure Stack HCI, version 20H2. The current product is Azure Stack HCI, version 21H2. Starting with [System Center 2022](/system-center/vmm/whats-new-in-vmm?view=sc-vmm-2022#support-for-azure-stack-hci-clusters-21h2&preserve-view=true), VMM supports both Azure Stack HCI, version 20H2 and Azure Stack HCI, version 21H2.
 
 ::: moniker-end
 
@@ -41,6 +41,8 @@ Make sure you're running VMM 2019 UR3 or later.
 - [Deployment and management of SDN network controller on Azure Stack HCI clusters](sdn-controller.md).
 
 - Management of storage pool settings, creation of virtual disks, creation of cluster shared volumes (CSVs) and application of [QOS settings](qos-storage-clusters.md#assign-storage-qos-policy-for-clusters).
+
+- Moving VMs between Windows Server and Azure Stack HCI clusters works via Network Migration, as well as migrating an offline (shut down) VM. In this scenario, VMM does export and import under the hood, even though it is performed as a single operation. 
 
 - The PowerShell cmdlets used to manage Windows Server clusters can be used to manage Azure Stack HCI clusters as well.
 
@@ -72,7 +74,7 @@ For detailed information about the supported parameter, see [Register-SCAzStackH
 
 - Azure Stack HCI is intended as a virtualization host where you run all your workloads in virtual machines. The Azure Stack HCI terms allow you to run only what's necessary for hosting virtual machines. Azure Stack HCI clusters should not be used for other purposes like WSUS servers, WDS servers or library servers. Refer to [Use cases for Azure Stack HCI](/azure-stack/hci/overview#use-cases-for-azure-stack-hci), [When to use Azure Stack HCI](/azure-stack/hci/concepts/compare-windows-server#when-to-use-azure-stack-hci) and [Roles you can run without virtualizing](/azure-stack/hci/overview#roles-you-can-run-without-virtualizing).
 
-- Live migration between any version of Windows Server and Azure Stack HCI clusters is not supported. Instead, use Network migration when moving VMs from Windows Server to Azure Stack HCI and vice-versa. An offline migration, when the VM is shut down, also works. In this scenario, VMM does export and import under the hood, even though it is performed as a single operation. (Note that Live migration between Azure Stack HCI clusters works, as well as between Windows Server clusters.)
+- Live migration between any version of Windows Server and Azure Stack HCI clusters is not supported. (Note that Live migration between Azure Stack HCI clusters works, as well as between Windows Server clusters.)
 
 - The only storage type available for Azure Stack HCI is Storage Spaces Direct (S2D.) Creation or management of non-S2D cluster with Azure Stack HCI nodes is not supported. If you need to use any other type of storage, e.g. SANs, use Windows Server as virtualization hosts.
 
