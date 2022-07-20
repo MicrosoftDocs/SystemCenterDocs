@@ -117,15 +117,15 @@ The alternative of *delegated permissions* is *app-only authentication* where ap
 
 2. On the **Azure Active Directory admin center** dashboard, select **Azure Active Directory** blade, the Overview page opens.
 
-    :::image type="Azure Active directory page" source="media/integration-pack-aad-client/azure-active-directory-inline.png" alt-text="Screenshot of Azure Active directory page." lightbox="/media/integration-pack-aad-client/azure-active-directory-expanded.png":::
+    :::image type="Azure Active directory page" source="media/integration-pack-aad-client/azure-active-directory-inline.png" alt-text="Screenshot of Azure Active directory page." lightbox="/media/integration-pack-for-exchangeuser/azure-active-directory-expanded.png":::
 
 3.  Under **Manage**, select **App registrations**. The App registrations page opens.
 
-    :::image type="App registrations page" source="media/integration-pack-aad-client/app-registrations.png" alt-text="Screenshot of App registrations page.":::
+    :::image type="App registrations page" source="media/integration-pack-for-exchangeuser/app-registrations.png" alt-text="Screenshot of App registrations page.":::
 
 3. Select **+ New registration**, the Register an application page opens. 
 
-    :::image type="New registration" source="media/integration-pack-aad-client/new-registration.png" alt-text="Screenshot of new registration.":::
+    :::image type="New registration" source="media/integration-pack-for-exchangeuser/new-registration.png" alt-text="Screenshot of new registration.":::
 
 4. Set the values as below and select **Register**. Application overview page opens.
 
@@ -133,21 +133,21 @@ The alternative of *delegated permissions* is *app-only authentication* where ap
     - **Supported account types**: Select the Supported account types based on your scenario.
     - **Redirect URI (optional)**: From the **Select a platform** drop-down, select *Public client/native (mobile & desktop)*  and set the URI to `https://login.microsoftonline.com/common/oauth2/nativeclient`.
 
-    :::image type="Azure AD App registration form" source="media/integration-pack-aad-client/registration-form.png" alt-text="Screenshot of Azure AD App registration form.":::
+    :::image type="Azure AD App registration form" source="media/integration-pack-for-exchangeuser/registration-form.png" alt-text="Screenshot of Azure AD App registration form.":::
 
 4. Under **Overview** > **Essentials**, copy the **Application (client) ID** and **Directory (tenant) ID**.
 
-    :::image type="Azure AD App overview pane" source="media/integration-pack-aad-client/app-overview.png" alt-text="Screenshot of Azure AD App overview pane.":::
+    :::image type="Azure AD App overview pane" source="media/integration-pack-for-exchangeuser/app-overview.png" alt-text="Screenshot of Azure AD App overview pane.":::
 
 5. Select **Authentication** and do the following and select **Save**.
 
     1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with at least `https://login.microsoftonline.com/common/oauth2/nativeclient` as one of the Redirect URI.
 
-       :::image type="Azure AD App authentication platform"" source="media/integration-pack-aad-client/auth-platform.png" alt-text="Screenshot of Azure AD App authentication platform.":::
+       :::image type="Azure AD App authentication platform"" source="media/integration-pack-for-exchangeuser/auth-platform.png" alt-text="Screenshot of Azure AD App authentication platform.":::
 
     2. Under **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
 
-       :::image type="Azure AD App authentication advanced settings"" source="media/integration-pack-aad-client/auth-advanced-settings.png" alt-text="Screenshot of Azure AD App authentication advanced settings.":::
+       :::image type="Azure AD App authentication advanced settings"" source="media/integration-pack-for-exchangeuser/auth-advanced-settings.png" alt-text="Screenshot of Azure AD App authentication advanced settings.":::
 
 ::: moniker-end
 
@@ -284,6 +284,6 @@ The **Exchange Configuration (Item)** configuration is used for the remaining ac
 
 5. In the **Item Type** box, enter a valid Exchange Item Type.
 
-6. For remaining parameters, follow the same guidance mentioned above for [basic Exchange Configuration](#to-set-up-a-basic-exchange-configuration-connection).
+6. For remaining parameters, follow the same guidance mentioned above for [basic Exchange Configuration](#set-up-a-basic-exchange-configuration-connection).
 
 ::: moniker-end
