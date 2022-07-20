@@ -101,7 +101,7 @@ Here's how the connection will be established when the activity runs:
 
 1. User credentials will be obtained from the IP configuration.
 2. The credentials will be used to authenticate with Azure AD using OAuth.
-3. After authenticated, an OAuth token will be received from Azure AD.
+3. After authentication, an OAuth token will be received from Azure AD.
 4. Activity will perform operations on the EWS endpoint using the OAuth token.
 
 ```
