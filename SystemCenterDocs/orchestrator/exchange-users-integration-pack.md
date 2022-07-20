@@ -23,7 +23,7 @@ manager: evansma
 
 ::: moniker-end
 
-Integration packs are add-ons for Orchestrator, a component of System Center. Integration packs optimize IT operations across various environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third party products.
+Integration packs are add-ons for Orchestrator, a component of System Center. Integration packs optimize IT operations across various environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third-party products.
 
 The Integration Pack for Exchange Users facilitates the automation of user-centric tasks, such as actions to read and send email messages, create appointments, or update tasks and contacts. The operation is carried over HTTP and the connection can be authenticated by the methods enabled on the Exchange Server. Consult with your tenant administrator about the available methods on your On-prem Exchange Server.
 
@@ -31,7 +31,7 @@ This integration pack can be used to connect to both On-prem or Online Exchange 
 
 ::: moniker range=">= sc-orch-2019"
 
-This integration pack operates in the method shown below:
+This integration pack operates in the methods shown below:
 
 | Server kind               | Supported auth mode | Default    |
 | ------------------------- | ------------------- | ---------- |
@@ -41,11 +41,11 @@ This integration pack operates in the method shown below:
 
 ::: moniker-end
 
-Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protect your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System requirements
 
-Prior to implementing the Exchange Users Integration Pack, the following listed softwares must be installed and configured. For more information about installing and configuring Orchestrator and the Exchange Users Integration Pack, see the respective product documentation.
+Prior to implementing the Exchange Users Integration Pack, you must install and configure the following listed softwares. For more information on how to install and configure Orchestrator and the Exchange Users Integration Pack, see the respective product documentation.
 
 ::: moniker range="<=sc-orch-2019"
 
@@ -101,7 +101,7 @@ Here's how the connection will be established when the activity runs:
 
 1. User credentials will be obtained from the IP configuration.
 2. The credentials will be used to authenticate with Azure AD using OAuth.
-3. Once authenticated, an OAuth token will be received from Azure AD.
+3. After authenticated, an OAuth token will be received from Azure AD.
 4. Activity will perform operations on the EWS endpoint using the OAuth token.
 
 ```
@@ -139,7 +139,7 @@ The alternative of *delegated permissions* is *app-only authentication* where ap
 
     :::image type="Azure AD App overview pane" source="media/integration-pack-for-exchangeuser/app-overview.png" alt-text="Screenshot of Azure AD App overview pane.":::
 
-5. Select **Authentication** and do the following and select **Save**.
+5. Select **Authentication**, do the following and select **Save**.
 
     1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with at least `https://login.microsoftonline.com/common/oauth2/nativeclient` as one of the Redirect URI.
 
@@ -155,7 +155,7 @@ Generally, Public Client Apps that operate in *delegated authentication* mode re
 
 However, the IP doesn't support the consent grant flow, instead the tenant admin must grant consent on behalf of all users in the tenant.
 
-1. First we add the permissions to the app by editing the app **Manifest**.
+1. Add the permissions to the app by editing the app **Manifest**.
     1. On the Azure AD portal, select the Azure AD application.
     2. Follow the [steps to grant EWS permissions](/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth#register-your-application) by editing the app **Manifest**.
 
@@ -213,7 +213,7 @@ The **Exchange Configuration (Item)** configuration is used for the remaining ac
 
 ::: moniker range="sc-orch-2022"
 
-1. Set **Server is Exchange Online or Office365** to `True` if you're connecting to a managed Exchange Online or Office 365 Exchange instance. If so, follow these further steps (ignore otherwise):
+8. Set **Server is Exchange Online or Office365** to `True` if you're connecting to a managed Exchange Online or Office 365 Exchange instance. If so, follow these further steps (ignore otherwise):
 
     1. In **Azure AD application (client) ID**, specify the Azure AD client app ID created for this purpose.
 
@@ -223,22 +223,32 @@ The **Exchange Configuration (Item)** configuration is used for the remaining ac
 
     4. Set **Log OAuth request/response** to `True` if you wish to inspect authentication failures in detail. The logs will be generated on the path `%windir%\Temp\sc-orchestrator\exchange_user\{date-time-stamp}.msal.txt`. One file will be generated for each execution of an Exchange User activity.
 
-1. Set **Trace EWS request/response** to `True` if you wish to inspect EWS failures in detail. The logs will be generated on the path `%windir%\Temp\sc-orchestrator\exchange_user\{date-time-stamp}.ews-trace.xml.log`. One file will be generated for each execution of an Exchange User activity. We recommend using [SOAPe](https://github.com/David-Barrett-MS/SOAPe) to visually inspect the traces.
-
+9. Set **Trace EWS request/response** to `True` if you wish to inspect EWS failures in detail. The logs will be generated on the path `%windir%\Temp\sc-orchestrator\exchange_user\{date-time-stamp}.ews-trace.xml.log`. One file will be generated for each execution of an Exchange User activity. We recommend that you use [SOAPe](https://github.com/David-Barrett-MS/SOAPe) to visually inspect the traces.
+10. In the **Timeout** box, enter a timeout value or leave the default.
+11. Select **OK**.
+12. Add any more connections if needed, and then select **Finish**.
 ::: moniker-end
 
 ::: moniker range="sc-orch-2019"
 
-1. Set **ExchangeOnline** to `True` if you're connecting to a managed
+8. Set **ExchangeOnline** to `True` if you're connecting to a managed
     Exchange Online or Office365 Exchange instance. If so, follow these further steps (ignore
     otherwise):
     1. In **Application ID**, specify the Azure AD client app ID created for this purpose.
     2. In **Tenant ID**, specify your Azure AD Tenant ID seen on the AD portal.
+9. In the **Timeout** box, enter a timeout value or leave the default.
+10. Select **OK**.
+11. Add any more connections if needed, and then select **Finish**.
+
 ::: moniker-end
+
+::: moniker range="<sc-orch-2019"
 
 1. In the **Timeout** box, enter a timeout value or leave the default.
 1. Select **OK**.
 1. Add any more connections if needed, and then select **Finish**.
+
+::: moniker-end
 
 ::: moniker range="<sc-orch-2019"
 
@@ -270,15 +280,15 @@ The **Exchange Configuration (Item)** configuration is used for the remaining ac
 
 ### Set up an Exchange Configuration (Item) connection
 
-1. In the **Orchestrator Runbook Designer**, select **Options**, and then select **Exchange User**. The **Exchange User** dialog box appears.
+1. In the **Orchestrator Runbook Designer**, select **Options**, and then select **Exchange User**. The **Exchange User** dialog appears.
 
-2. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
+2. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog appears.
 
 3. In the **Name** box, enter a friendly display name for the connection.
 
 4. In the Type box, select **Exchange Configuration (Item Activity)**.
 
-5. In the **Item Type** box, enter a valid Exchange Item Type.
+5. In the **Item Type**, enter a valid Exchange Item Type.
 
 6. For remaining parameters, follow the same guidance mentioned above for [basic Exchange Configuration](#set-up-a-basic-exchange-configuration-connection).
 
