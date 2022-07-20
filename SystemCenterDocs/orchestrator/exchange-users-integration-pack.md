@@ -117,7 +117,7 @@ The alternative of *delegated permissions* is *app-only authentication* where ap
 
 2. On the **Azure Active Directory admin center** dashboard, select **Azure Active Directory** blade, the Overview page opens.
 
-    :::image type="Azure Active directory page" source="media/integration-pack-for-exchangeuser/azure-active-directory-inline.png" alt-text="Screenshot of Azure Active directory page." lightbox="/media/integration-pack-for-exchangeuser/azure-active-directory-expanded.png":::
+    :::image type="App registrations page" source="media/integration-pack-for-exchangeuser/app-registrations.png" alt-text="Screenshot of App registrations page.":::
 
 3.  Under **Manage**, select **App registrations**. The App registrations page opens.
 
@@ -143,11 +143,7 @@ The alternative of *delegated permissions* is *app-only authentication* where ap
 
     1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with at least `https://login.microsoftonline.com/common/oauth2/nativeclient` as one of the Redirect URI.
 
-    :::image type="Azure AD App authentication platform"" source="media/integration-pack-for-exchangeuser/auth-platform.png" alt-text="Screenshot of Azure AD App authentication platform.":::
-
     2. Under **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
-
-    :::image type="Azure AD App authentication advanced settings"" source="media/integration-pack-for-exchangeuser/auth-advanced-settings.png" alt-text="Screenshot of Azure AD App authentication advanced settings.":::
 
 ::: moniker-end
 
