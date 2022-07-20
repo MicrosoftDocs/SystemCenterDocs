@@ -62,10 +62,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.1.1c-fips|
 |PAM|Pluggable Authentication Modules|1.3.1-4|
 
-::: moniker-end
-
-::: moniker range=">=sc-om-2019"
-
 ## Red Hat Enterprise Linux Server 7
 
 |Required package|Description|Minimum version|
@@ -82,6 +78,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
+
 ## Red Hat Enterprise Linux Server 7 (Power)
 
 |Required package|Description|Minimum version|
@@ -158,10 +155,6 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
 
-::: moniker-end
-
-::: moniker range="sc-om-2019"
-
 ## SUSE Linux Enterprise Server 15
 
 |Required package|Description|Minimum version|
@@ -182,7 +175,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 Supported versions:
 
-- Debian 8, 9, 10, and 11
+- Debian 9, 10, and 11
 - Ubuntu 16.04, 18.04, and 20.04
 
 >[!NOTE]
@@ -199,7 +192,7 @@ Supported versions:
 Supported versions:
 
 - CentOS 7
-- Oracle Linux 6, 7, and 8
+- Oracle Linux 7, and 8
 
 Oracle Linux 8 is supported from SCOM 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
@@ -299,7 +292,11 @@ The following tables describe the required UNIX and Linux operating systems and 
 |OS-Core.MinimumRuntime.CORE-SHLIBS|Specific IA development libraries|B.11.31|  
 |SysMgmtMin|Minimum Software Deployment Tools|B.11.31.1109|  
 |SysMgmtMin.openssl|OpenSSL Libraries; Secure Network Communications Protocol|A.00.09.08q.003|  
-|PAM|Pluggable Authentication Modules|On HP-UX, PAM is part of the core operating system components. There are no other dependencies.|  
+|PAM|Pluggable Authentication Modules|On HP-UX, PAM is part of the core operating system components. There are no other dependencies.| 
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807 >sc-om-2016"
 
 ## Red Hat Enterprise Linux Server 5  
 
@@ -308,6 +305,10 @@ The following tables describe the required UNIX and Linux operating systems and 
 |glibc|C Standard Libraries|2.12-1.7|  
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
 |PAM|Pluggable Authentication Modules|1.1.1-4|  
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807"
 
 ## Red Hat Enterprise Linux Server 6  
 
@@ -385,6 +386,10 @@ The following tables describe the required UNIX and Linux operating systems and 
 ## Solaris UTF\-8 Support  
 The Operations Manager agent requires Solaris UTF-8 code set conversion support under some circumstances. Consult the Solaris documentation for details on installing UTF-8 code set conversion support. The Operations Manager agent functions without UTF-8 support on Solaris, but unrecognized characters are translated to question mark (?) characters.  
 
+::: moniker-end
+
+::: moniker range="<=sc-om-1807 >sc-om-2016"
+
 ## SUSE Linux Enterprise Server 11   
 
 |Required package|Description|Minimum version|  
@@ -392,12 +397,18 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |glibc-2.9-13.2|C Standard shared library|2.9-13.2|  
 |PAM|Pluggable Authentication Modules|pam-1.0.2-20.1|  
 
+::: moniker range="<=sc-om-1807"
+
 ## SUSE Linux Enterprise Server 12   
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|  
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|  
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807 >sc-om-2016"
 
 ## Universal Linux (Debian package)
 Debian 8 and Ubuntu 14.04, 16.04 are supported.
@@ -408,8 +419,40 @@ Debian 8 and Ubuntu 14.04, 16.04 are supported.
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
 |PAM|Pluggable Authentication Modules|0.79-3|  
 
+::: moniker-end
+
+::: moniker range="sc-om-2016"
+
+## Universal Linux
+
+Ubuntu 14.04, 16.04 are supported.
+
+|Required package|Description|Minimum version|  
+|--------------------|---------------|-------------------|  
+|libc6|C Standard shared library|2.3.6|  
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
+|PAM|Pluggable Authentication Modules|0.79-3|  
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807 >sc-om-2016"
+
 ## Universal Linux (RPM package)
 CentOS 7 and Oracle Linux 6, 7 are supported.
+
+|Required package|Description|Minimum version|  
+|--------------------|---------------|-------------------|  
+|glibc|C Standard shared library|2.5-12|  
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
+|PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
+
+
+::: moniker-end
+
+::: moniker range="sc-om-2016"
+
+## Universal Linux (RPM package)
+CentOS 7 and Oracle Linux 7 are supported.
 
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
