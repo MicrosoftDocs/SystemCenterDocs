@@ -2,10 +2,10 @@
 ms.assetid: 08ad3749-84b9-4411-8a6c-559ce5e308e6
 title: Known issues and troubleshooting in Management Pack for SQL Server
 description: This article explains known issues and troubleshooting in Management Pack for SQL Server
-author: Anastas1ya
-ms.author: v-asimanovic
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-ms.date: 4/22/2022
+ms.date: 7/11/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -45,6 +45,7 @@ This article lists the known issues for Management Pack for SQL Server.
 |Web console summary dashboard fails when monitoring environments with a lot of objects|Monitoring of large-scale environments may cause the web console summary dashboard to occasionally fail due to a large number of objects that cannot be processed in due time.|No resolution.|
 |Management servers and their managed devices are dimmed in the Operations Manager console|In a Microsoft System Center Operations Manager environment, one or more management servers that host the following roles, together with those management servers' managed devices, may appear dimmed or grayed out in the Operations console: **Management server**, **Gateway server**, and **Agent**.|See [this Microsoft article](/troubleshoot/system-center/scom/management-servers-devices-dimmed) to learn more on how to solve this.|
 |Free space monitoring may not work correctly when using symbolic links to files|On Windows, free space monitoring does not work correctly in cases when you provide a database file in the form of a symbolic link that points to a real file located on another volume.|On Windows, do not use symbolic links to files located on other volumes as database files.|
+|The **Database Status** monitor is dimmed in case of an Availability Group|If the database, hosted on the Primary Replica of an Availability Group, has an issue with its state, the **Database Status** monitor does not change its state for that database and becomes Healthy.|The fix of this issue will be provided in the next release of the SQL Server Management Pack.|
 
 To isolate a WMI provider, run the script below in an elevated PowerShell session:
 

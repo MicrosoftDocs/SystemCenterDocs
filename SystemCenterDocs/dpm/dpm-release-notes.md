@@ -35,7 +35,11 @@ We recommend you to see the following articles for detailed information about wh
 
 ## DPM 2022 release notes
 
-DPM 2022 has the known issues that are observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes), [UR1](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-ur1-release-notes) and [UR2](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-2019-ur2-release-notes). In addition, the following known issues are observed.
+DPM 2022 has the known issues that are observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes), [UR1](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-ur1-release-notes) and [UR2](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-2019-ur2-release-notes).
+
+This article also includes the [release notes for DPM 2022 Hotfix KB 5015376](#dpm-2022-hotfix-kb-5015376-release-notes).
+
+In addition, the following known issues are observed.
 
 ### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB**
 
@@ -101,6 +105,17 @@ Use these steps to rename the database:
 4. Run the consistency check and try the online backup again.  
 
 5. If the online backup is still failing, contact the support team.
+
+## DPM 2022 Hotfix (KB 5015376) release notes
+
+In addition to the issues listed in DPM 2022 release notes, the following additional issues are identified in DPM 2022 and are fixed in Hotfix (KB 5015376), we recommend you to apply the hotfix. For more details, see the [KB article](https://support.microsoft.com/topic/intermittent-online-backup-failures-and-other-issues-in-data-protection-manager-2022-30df8903-f779-41c5-9b66-13a4b8461d0e).
+
+ - Intermittent online backup failures with error 100195.
+ - Secondary protection consistency check failure with VSS non-transient error.
+ - Remote admin console crashe right after opening the console.
+ - Backup failures due to DpmFilter.sys not loading on DPM agent.
+ - Obtrusive terminal pop-up for DPMClient.exe on protected desktops.
+ - DPM crashes when tape backup failure alerts are inactive.
 
 ::: moniker-end
 
