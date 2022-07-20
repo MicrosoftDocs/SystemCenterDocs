@@ -54,13 +54,13 @@ With VMM 2022, we are introducing VMM PowerShell cmdlets to register and unregis
 
 Use the following cmdlets to register an HCI cluster:
 
-```
+```PowerShell
 Register-SCAzStackHCI -VMHostCluster <HostCluster> -SubscriptionID <string>
 ```
 
 Use the following command to unregister a cluster:
 
-```
+```PowerShell
 Unregister-SCAzStackHCI -VMHostCluster <HostCluster> -SubscriptionID <string>
 ```
 
@@ -146,7 +146,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 
     You can also set the IEEE Priority by using the following PowerShell commands:
 
-    ```
+    ```PowerShell
     Set-VMNetworkAdapterVlan -VMNetworkAdapterName SMB2 -VlanId "101" -Access -ManagementOS
     Set-VMNetworkAdapter -ManagementOS -Name SMB2 -IeeePriorityTag on
     ```
