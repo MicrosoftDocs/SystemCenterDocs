@@ -397,6 +397,8 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |glibc-2.9-13.2|C Standard shared library|2.9-13.2|  
 |PAM|Pluggable Authentication Modules|pam-1.0.2-20.1|  
 
+::: moniker-end
+
 ::: moniker range="<=sc-om-1807"
 
 ## SUSE Linux Enterprise Server 12   
