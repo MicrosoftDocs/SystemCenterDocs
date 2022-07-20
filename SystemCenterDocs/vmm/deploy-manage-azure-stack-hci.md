@@ -147,8 +147,8 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
     You can also set the IEEE Priority by using the following PowerShell commands:
 
     ```PowerShell
-    Set-VMNetworkAdapterVlan -VMNetworkAdapterName SMB2 -VlanId "101" -Access -ManagementOS
-    Set-VMNetworkAdapter -ManagementOS -Name SMB2 -IeeePriorityTag on
+    Set-VMNetworkAdapterVlan -VMNetworkAdapterName 'SMB2' -VlanId '101' -Access -ManagementOS
+    Set-VMNetworkAdapter -ManagementOS -Name 'SMB2' -IeeePriorityTag on
     ```
 
 
