@@ -199,17 +199,14 @@ The **Exchange Configuration (Item)** configuration is used for the remaining ac
 1. In the **Type** box, select **Exchange Configuration**.
 
 1. In the **Exchange Server Address** box, type the name or IP address of the Exchange server. If you're using the computer name, you can type the *NetBIOS* name or the fully qualified domain name *(FQDN)*. You may leave the **Exchange Server Address** box empty if you enable the **Use [Autodiscover]**(/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) option.
-   ```
-   Usually this is of the form `https://your-domain-name.com/EWS/Exchange.asmx`.
-   ```
+   
+> Usually this is of the form `https://your-domain-name.com/EWS/Exchange.asmx`.
 
 1. In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to connect to the Exchange server.
 
 1. In the **Domain** box, type the name of the (tenant) domain that will authorize access.
     
-    ``` 
-    If your email account is of the form `johndoe@contoso.onmicrosoft.com`, then your domain is *contoso.onmicrosoft.com*
-    ```
+> If your email account is of the form `johndoe@contoso.onmicrosoft.com`, then your domain is *contoso.onmicrosoft.com*
 
 ::: moniker range="sc-orch-2022"
 
@@ -244,9 +241,9 @@ The **Exchange Configuration (Item)** configuration is used for the remaining ac
 
 ::: moniker range="<sc-orch-2019"
 
-1. In the **Timeout** box, enter a timeout value or leave the default.
-1. Select **OK**.
-1. Add any more connections if needed, and then select **Finish**.
+8. In the **Timeout** box, enter a timeout value or leave the default.
+9. Select **OK**.
+10. Add any more connections if needed, and then select **Finish**.
 
 ::: moniker-end
 
