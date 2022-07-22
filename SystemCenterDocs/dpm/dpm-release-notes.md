@@ -112,9 +112,8 @@ In addition to the issues listed in DPM 2022 release notes, the following additi
 
  - Intermittent online backup failures with error 100195.
  - Secondary protection consistency check failure with VSS non-transient error.
- - Remote admin console crashe right after opening the console.
+ - Remote admin console crash right after opening the console.
  - Backup failures due to DpmFilter.sys not loading on DPM agent.
- - Obtrusive terminal pop-up for DPMClient.exe on protected desktops.
  - DPM crashes when tape backup failure alerts are inactive.
 
 ::: moniker-end
