@@ -104,9 +104,8 @@ Here's how the connection will be established when the activity runs:
 3. After authentication, an OAuth token will be received from Azure AD.
 4. Activity will perform operations on the EWS endpoint using the OAuth token.
 
-```
-The alternative of *delegated permissions* is *app-only authentication* where app secrets (credential or secret certificate) are used instead of a user's credentials. The IP does not support these kind of Azure AD applications.
-``` 
+> The alternative of *delegated permissions* is *app-only authentication* where app secrets (credential or secret certificate) are used instead of a user's credentials. The IP does not support these kind of Azure AD applications.
+
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
@@ -117,13 +116,11 @@ The alternative of *delegated permissions* is *app-only authentication* where ap
 
 2. On the **Azure Active Directory admin center** dashboard, select **Azure Active Directory** blade, the Overview page opens.
 
-    :::image type="App registrations page" source="media/integration-pack-for-exchangeuser/app-registrations.png" alt-text="Screenshot of App registrations page.":::
-
-3.  Under **Manage**, select **App registrations**. The App registrations page opens.
+3. Under **Manage**, select **App registrations**. The App registrations page opens.
 
     :::image type="App registrations page" source="media/integration-pack-for-exchangeuser/app-registrations.png" alt-text="Screenshot of App registrations page.":::
 
-3. Select **+ New registration**, the Register an application page opens. 
+3. Select **+ New registration**, the Register an application page opens.
 
     :::image type="New registration" source="media/integration-pack-for-exchangeuser/new-registration.png" alt-text="Screenshot of new registration.":::
 
@@ -175,7 +172,7 @@ A connection describes the recipe to make HTTP requests from Orchestrator to an 
 
 The integration pack supports two types of Exchange configurations:
 
-- Basic **Exchange Configuration** connection 
+- Basic **Exchange Configuration** connection
 - **Exchange Configuration (Item)** configuration
 
 The basic **Exchange Configuration** contains connection information that is used by activities where the item type is either implicit or not required:
@@ -199,13 +196,13 @@ The **Exchange Configuration (Item)** configuration is used for the remaining ac
 1. In the **Type** box, select **Exchange Configuration**.
 
 1. In the **Exchange Server Address** box, type the name or IP address of the Exchange server. If you're using the computer name, you can type the *NetBIOS* name or the fully qualified domain name *(FQDN)*. You may leave the **Exchange Server Address** box empty if you enable the **Use [Autodiscover]**(/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) option.
-   
+
    > Usually this is of the form `https://<your-domain-name.com>/EWS/Exchange.asmx`.
 
 1. In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to connect to the Exchange server.
 
 1. In the **Domain** box, type the name of the (tenant) domain that will authorize access.
-    
+
    > If your email account is of the form `johndoe@contoso.onmicrosoft.com`, then your domain is *contoso.onmicrosoft.com*
 
 ::: moniker range="sc-orch-2022"
