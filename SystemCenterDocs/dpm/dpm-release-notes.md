@@ -28,6 +28,8 @@ We recommend you to see the following articles for detailed information about wh
 
 This article lists the release notes for System Center 2022 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2022](#dpm-2022-release-notes).
 
+This article also includes the [release notes for DPM 2022 Hotfix KB 5015376](#dpm-2022-hotfix-kb-5015376-release-notes).
+
 We recommend you to see the following articles for detailed information about what DPM supports and can back up:
 
 - [What can DPM backup](dpm-protection-matrix.md)
@@ -36,8 +38,6 @@ We recommend you to see the following articles for detailed information about wh
 ## DPM 2022 release notes
 
 DPM 2022 has the known issues that are observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes), [UR1](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-ur1-release-notes) and [UR2](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-2019-ur2-release-notes).
-
-This article also includes the [release notes for DPM 2022 Hotfix KB 5015376](#dpm-2022-hotfix-kb-5015376-release-notes).
 
 In addition, the following known issues are observed.
 
@@ -112,9 +112,8 @@ In addition to the issues listed in DPM 2022 release notes, the following additi
 
  - Intermittent online backup failures with error 100195.
  - Secondary protection consistency check failure with VSS non-transient error.
- - Remote admin console crashe right after opening the console.
+ - Remote admin console crash right after opening the console.
  - Backup failures due to DpmFilter.sys not loading on DPM agent.
- - Obtrusive terminal pop-up for DPMClient.exe on protected desktops.
  - DPM crashes when tape backup failure alerts are inactive.
 
 ::: moniker-end
