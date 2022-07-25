@@ -45,6 +45,22 @@ UNIX and Linux Monitoring with Operations Manager is [supported on a number of o
 
 The following subset of those operating systems now support WS-Management communication over Kerberos: (Only the most recently released version of each distribution will be supported.)
 
+::: moniker range="<sc-om-2019"
+
+| Operating System | Version |
+|------------------|:---------|
+| Red Hat Enterprise Linux Server | 6 |
+| Red Hat Enterprise Linux Server | 7 |
+| Red Hat Enterprise Linux Server | 8 |
+| CentOS | 6 |
+| CentOS | 7 |
+| UBUNTU Server | 14 |
+| UBUNTU Server | 15 |
+
+::: moniker-end
+
+::: moniker range=">=sc-om-2019"
+
 | Operating System | Version |
 |------------------|:---------|
 | Red Hat Enterprise Linux Server | 6 |
@@ -54,6 +70,8 @@ The following subset of those operating systems now support WS-Management commun
 | UBUNTU Server | 16 |
 | UBUNTU Server | 18 |
 | UBUNTU Server | 20 |
+
+::: moniker-end
 
 - UNIX or Linux agent must be domain joined.
 
