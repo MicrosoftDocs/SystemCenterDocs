@@ -50,10 +50,10 @@ The following subset of those operating systems now support WS-Management commun
 | Red Hat Enterprise Linux Server | 6 |
 | Red Hat Enterprise Linux Server | 7 |
 | Red Hat Enterprise Linux Server | 8 |
-| CentOS | 6 |
 | CentOS | 7 |
-| UBUNTU Server | 14 |
-| UBUNTU Server | 15 |
+| UBUNTU Server | 16 |
+| UBUNTU Server | 18 |
+| UBUNTU Server | 20 |
 
 - UNIX or Linux agent must be domain joined.
 
