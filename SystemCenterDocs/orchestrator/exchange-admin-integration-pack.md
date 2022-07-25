@@ -99,27 +99,25 @@ A connection establishes a reusable link between the Orchestrator and an Exchang
 
 # [Exchange Online](#tab/exch-online)
 
-Configure IP with Exchange Online.
+**Configure IP with Exchange Online:**
 
 Exchange Admin 2022 supports only [App-only](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true) based modern authentication to Exchange Online. 
-To setup app-only authentication, follow the steps mentioned [here](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#set-up-app-only-authentication&preserve-view=true). 
+For more detailed information, see [setup app-only authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#set-up-app-only-authentication&preserve-view=true). 
 
 1. In the **Orchestrator Runbook Designer**, select **Options** > **Exchange Admin**. The **Exchange Admin** dialog appears.
 2. In the **Name** box, enter a name for the connection. This can be the name of the **Exchange** server or a descriptive name to differentiate the type of connection.
 3. Click the **(...)** button and select **Exchange Configuration**.
-4. Click the **(...)** button for **Exchange Environment** box and select **Online**. Below are the four parameters that are mandatory: 
-   - **CertificateFilePath**
-   - **CertificatePassword**
-   - **ApplicationId**
-   - **EXOOrganization**. 
-The other parameters can be kept blank. 
-5. For **CertificateFilePath**, provide the path to where *pfx* file is stored locally. The *pfx* file should be generated from the certificate file while setting up App-only authentication. 
-   >[!Note]
-   >Path provided should be case sensitive. 
-6. For **CertificatePassword**, provide the password with which the *pfx* file was generated. 
-7. For **ApplicationId**, provide your Azure App ID generated above. 
-8. For **EXOOrganization**, provide details in the format \<organization name\>**.onmicrosoft.com** 
+4. Click the **(...)** button for **Exchange Environment** box and select **Online**. Below are the four mandatory parameters: 
+   - **CertificateFilePath** - provide the path to where *pfx* file is stored locally. The *pfx* file should be generated from the certificate file while setting up App-only authentication.
+     >[!Note]
+     >**CertificateFilePath** must be case sensitive.
+   - **CertificatePassword** - provide the password with which the *pfx* file was generated.
+   - **ApplicationId** - provide your Azure App ID generated above.
+   - **EXOOrganization** - provide details in the format \<organization name\>**.onmicrosoft.com**
+
    :::image type="exchange admin" source="media/exchange-admin-integration-pack/exchange-admin.png" alt-text="Screenshot showing exchange admin prerequisite configuration screen.":::
+
+The other parameters can be kept blank. 
 
 ---
 
@@ -149,7 +147,7 @@ On the computer where Orchestrator runbooks are executed, ensure that 64-bit Pow
 The configured user must be granted remote PowerShell rights on the Exchange server.
 
 1.  On the Exchange server, start the **Exchange Management Shell**.
-2.  To determine whether the user has remote PowerShell rights, run the following command and check the value in the **RemotePowerShellEnabled** field:
+2.  To determine whether the user has remote PowerShell rights, run the following command, and check the value in the **RemotePowerShellEnabled** field:
 
   ```PowerShell
         Get-User <UserName>
@@ -163,11 +161,11 @@ The configured user must be granted remote PowerShell rights on the Exchange ser
 
 ### Configure Windows PowerShell to allow Basic Authentication on the Exchange server
 
-1.  On the Exchange server, make sure that PowerShell Basic Authentication is enabled:
-2.  Start **Internet Information Services (IIS) Manager**.
-3.  Navigate to the **PowerShell** site.
-4.  Open the **Authentication** settings.
-5.  Ensure **Basic Authentication** is enabled.
+On the Exchange server, ensure that PowerShell Basic Authentication is enabled:
+
+1.  Start **Internet Information Services (IIS) Manager**.
+2.  Navigate to the **PowerShell** site.
+3.  Open the **Authentication** settings and ensure **Basic Authentication** is enabled.
 
 ### Configure WinRM for HTTP unencrypted communication
 
@@ -182,8 +180,7 @@ On the Exchange server, ensure that PowerShell does not require SSL:
 
 1.  Start **Internet Information Services (IIS) Manager**.
 2.  Navigate to the **PowerShell** site.
-3.  Open **SSL Settings**.
-4.  Ensure that the **Require SSL** checkbox is not selected.
+3.  Open **SSL Settings** and ensure that the **Require SSL** checkbox is not selected.
 
 # [Exchange Online](#tab/ex-online)
 
