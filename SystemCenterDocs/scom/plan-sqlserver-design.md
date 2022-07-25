@@ -110,7 +110,9 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 ::: moniker-end
 
 > [!NOTE]
-> - Each of the following SQL Server components supporting a SCOM infrastructure are required to be at the same SQL Server major version: <br> - SQL Server database engine instances hosting any of the SCOM databases (i.e. **OperationManager**, **OperationManagerDW**, and SSRS databases **ReportServer** & **ReportServerTempDB**). <br> - SQL Server Reporting Services (SSRS) instance.
+> - Each of the following SQL Server components supporting a SCOM infrastructure are required to be at the same SQL Server major version: 
+>    - SQL Server database engine instances hosting any of the SCOM databases (i.e. **OperationManager**, **OperationManagerDW**, and SSRS databases **ReportServer** & **ReportServerTempDB**).
+>    - SQL Server Reporting Services (SSRS) instance.
 > - The SQL Server collation setting must be one of the supported types as described in the [**SQL Server collation setting**](#sql-server-collation-setting) section below.
 > - SQL Server Full Text Search is required for all SQL Server database engine instances hosting any of the SCOM databases.
 > - The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components are based on what installation options of Windows Server are supported by SQL Server.
