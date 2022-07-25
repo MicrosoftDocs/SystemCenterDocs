@@ -90,7 +90,7 @@ A connection establishes a reusable link between the Orchestrator and an Exchang
 9.  In the **Exchange User Name** and **Exchange User Password** boxes, enter the credentials that Orchestrator will use to log on to the Exchange environment. The configured user must have the appropriate Exchange permissions.
 10.  Configure the **Exchange Environment** as necessary for connecting to an On-Premise installation or to Office.
 11. Set the **Use SSL** property to **True** to have all communication between the runbook server and the Exchange server encrypted over HTTPS.
-12. If you use SSL, 
+12. If you use SSL:
     - The **Skip CA Check** property specifies whether the client does not validate that the server certificate is signed by a trusted certification authority (CA).
     - The **Skip CN Check** property specifies that the certificate common name (CN) of the server does not need to match the hostname of the server.
     - The **Skip Revocation Check** property specifies whether the revocation status of the server certificate will not be checked for validity.
@@ -101,8 +101,8 @@ A connection establishes a reusable link between the Orchestrator and an Exchang
 
 Configure IP with Exchange Online.
 
-Exchange Admin 2022 supports only [App-only](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps) based modern authentication to Exchange Online. 
-To setup app-only authentication, follow the steps mentioned [here](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#set-up-app-only-authentication). 
+Exchange Admin 2022 supports only [App-only](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true) based modern authentication to Exchange Online. 
+To setup app-only authentication, follow the steps mentioned [here](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#set-up-app-only-authentication&preserve-view=true). 
 
 1. In the **Orchestrator Runbook Designer**, select **Options** > **Exchange Admin**. The **Exchange Admin** dialog appears.
 2. In the **Name** box, enter a name for the connection. This can be the name of the **Exchange** server or a descriptive name to differentiate the type of connection.
@@ -118,7 +118,7 @@ The other parameters can be kept blank.
    >Path provided should be case sensitive. 
 6. For **CertificatePassword**, provide the password with which the *pfx* file was generated. 
 7. For **ApplicationId**, provide your Azure App ID generated above. 
-8. For **EXOOrganization**, provide details in the format <organization name>**.onmicrosoft.com** 
+8. For **EXOOrganization**, provide details in the format \<organization name\>**.onmicrosoft.com** 
    :::image type="exchange admin" source="media/exchange-admin-integration-pack/exchange-admin.png" alt-text="Screenshot showing exchange admin prerequisite configuration screen.":::
 
 ---
@@ -187,10 +187,9 @@ On the Exchange server, ensure that PowerShell does not require SSL:
 
 # [Exchange Online](#tab/ex-online)
 
-Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell	V2 Module (EXO V2)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) to connect to Exchange Server. For detailed information on EXO V2 Module, see
- - [Prerequisites](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#prerequisites-for-the-exo-v2-module)
- - [Installation instructions](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-the-exo-v2-module) and
- - [Troubleshooting installation issues](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#troubleshoot-installing-the-exo-v2-module)
+Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866&preserve-view=true) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell	V2 Module (EXO V2)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) to connect to Exchange Server. For detailed information on EXO V2 Module, see
+ - [Prerequisites](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#prerequisites-for-the-exo-v2-module&preserve-view=true)
+ - [Installation instructions](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-the-exo-v2-module&preserve-view=true) and
+ - [Troubleshooting installation issues](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#troubleshoot-installing-the-exo-v2-module&preserve-view=true)
 
 ---
-
