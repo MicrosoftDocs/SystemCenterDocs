@@ -2,7 +2,7 @@
 title: Exchange Admin Integration Pack for Orchestrator in System Center
 description: This article provides information about exchange Integration packs and how to deploy it.
 ms.custom: na
-ms.date: 07/25/2022
+ms.date: 07/26/2022
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -101,16 +101,16 @@ A connection establishes a reusable link between the Orchestrator and an Exchang
 
 **Configure IP with Exchange Online:**
 
-Exchange Admin 2022 supports only [App-only](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true) based modern authentication to Exchange Online. 
-For more detailed information, see [setup app-only authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#set-up-app-only-authentication&preserve-view=true). 
+Exchange Admin 2022 supports [App-only](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true) based modern authentication to Exchange Online. 
+For detailed information, see [setup app-only authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#set-up-app-only-authentication&preserve-view=true). 
 
 1. In the **Orchestrator Runbook Designer**, select **Options** > **Exchange Admin**. The **Exchange Admin** dialog appears.
 2. In the **Name** box, enter a name for the connection. This can be the name of the **Exchange** server or a descriptive name to differentiate the type of connection.
 3. Click the **(...)** button and select **Exchange Configuration**.
-4. Click the **(...)** button for **Exchange Environment** box and select **Online**. While the other parameters are kept blank, below are the four mandatory parameters: 
-   - **CertificateFilePath** - provide the path to where *pfx* file is stored locally. The *pfx* file should be generated from the certificate file while setting up App-only authentication.
+4. Click the **(...)** button for **Exchange Environment** box and select **Online**. While the other parameters are optional, below are the four mandatory parameters: 
+   - **CertificateFilePath** - provide the path to store the *pfx* file locally. The *pfx* file should be generated from the certificate file while setting up App-only authentication.
      >[!Note]
-     >**CertificateFilePath** must be case sensitive.
+     >**CertificateFilePath** is case sensitive.
    - **CertificatePassword** - provide the password with which the *pfx* file was generated.
    - **ApplicationId** - provide your Azure App ID generated above.
    - **EXOOrganization** - provide details in the format \<organization name\>**.onmicrosoft.com**
@@ -182,7 +182,7 @@ On the Exchange server, ensure that PowerShell does not require SSL:
 
 # [Exchange Online](#tab/ex-online)
 
-Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866&preserve-view=true) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell	V2 Module (EXO V2)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) to connect to Exchange Server. For detailed information on EXO V2 Module, see
+Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866&preserve-view=true) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell	V2 Module (EXO V2)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) to connect to Exchange Server. For detailed information on EXO V2 module, see
  - [Prerequisites](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#prerequisites-for-the-exo-v2-module&preserve-view=true)
  - [Installation instructions](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-the-exo-v2-module&preserve-view=true) and
  - [Troubleshooting installation issues](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#troubleshoot-installing-the-exo-v2-module&preserve-view=true)
