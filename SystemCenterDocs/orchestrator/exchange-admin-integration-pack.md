@@ -101,19 +101,19 @@ A connection establishes a reusable link between the Orchestrator and an Exchang
 
 **Configure IP with Exchange Online:**
 
-Exchange Admin 2022 supports [App-only](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true) based modern authentication to Exchange Online. 
-For detailed information, see [setup app-only authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#set-up-app-only-authentication&preserve-view=true). 
+Exchange Admin 2022 supports [App-only](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true) based modern (OAuth) authentication to Exchange Online. 
+For more information on setting up app-only authentication for Exchange Online to provision an Azure AD application in your tenant, see [setup app-only authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#set-up-app-only-authentication&preserve-view=true). 
 
 1. In the **Orchestrator Runbook Designer**, select **Options** > **Exchange Admin**. The **Exchange Admin** dialog appears.
 2. In the **Name** box, enter a name for the connection. This can be the name of the **Exchange** server or a descriptive name to differentiate the type of connection.
 3. Click the **(...)** button and select **Exchange Configuration**.
 4. Click the **(...)** button for **Exchange Environment** box and select **Online**. While the other parameters are optional, below are the four mandatory parameters: 
-   - **CertificateFilePath** - provide the path to store the *pfx* file locally. The *pfx* file should be generated from the certificate file while setting up App-only authentication.
+   - **CertificateFilePath** - provide the path to store the `pfx` file locally. The `pfx` file was generated while setting up App-only authentication.
      >[!Note]
      >**CertificateFilePath** is case sensitive.
-   - **CertificatePassword** - provide the password with which the *pfx* file was generated.
+   - **CertificatePassword** - provide the password with which the `pfx` file was generated.
    - **ApplicationId** - provide your Azure App ID generated above.
-   - **EXOOrganization** - provide details in the format \<organization name\>**.onmicrosoft.com**
+   - **EXOOrganization** - provide details in the format `<organization name>.onmicrosoft.com`
 
    :::image type="exchange admin" source="media/exchange-admin-integration-pack/exchange-admin.png" alt-text="Screenshot showing exchange admin prerequisite configuration screen.":::
 
