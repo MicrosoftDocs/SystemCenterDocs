@@ -140,7 +140,11 @@ Here's how the connection will be established when the activity runs:
 
     1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with at least `https://login.microsoftonline.com/common/oauth2/nativeclient` as one of the Redirect URI.
 
+       :::image type="Platform configurations" source="media/integration-pack-for-exchangeuser/auth-platform.png" alt-text="Screenshot of platform configurations.":::
+
     2. Under **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
+       
+       :::image type="Advanced settings" source="media/integration-pack-for-exchangeuser/auth-advanced-settings.png" alt-text="Screenshot of Advanced settings.":::
 
 ::: moniker-end
 
