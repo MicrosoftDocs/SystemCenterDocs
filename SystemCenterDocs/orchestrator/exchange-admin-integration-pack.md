@@ -53,7 +53,7 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 -   Exchange Online PowerShell V2 Module (EXO V2) for Exchange Online
 ::: moniker-end
 
-## Downloading the Integration Pack
+## Download the Integration Pack
 
 ::: moniker range="<=sc-orch-2019"
 - To download the Exchange Admin Integration Pack for Orchestrator 2016, see the [Microsoft Download Center for 2016](https://www.microsoft.com/download/details.aspx?id=54098).
