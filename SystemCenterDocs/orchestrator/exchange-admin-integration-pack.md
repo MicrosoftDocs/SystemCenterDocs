@@ -31,7 +31,7 @@ Microsoft is committed to protecting your privacy while delivering software that
 
 ## System requirements
 
-Before you implement the Integration Pack for Exchange Admin, the following listed software must be installed. For more information about installing and configuring Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
+Before you implement the Integration Pack for Exchange Admin, you must install the following softwares. For more information on how to install and configure Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
 
 ::: moniker range="<=sc-orch-2019"
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
@@ -107,7 +107,7 @@ For more detailed information, see [setup app-only authentication](/powershell/e
 1. In the **Orchestrator Runbook Designer**, select **Options** > **Exchange Admin**. The **Exchange Admin** dialog appears.
 2. In the **Name** box, enter a name for the connection. This can be the name of the **Exchange** server or a descriptive name to differentiate the type of connection.
 3. Click the **(...)** button and select **Exchange Configuration**.
-4. Click the **(...)** button for **Exchange Environment** box and select **Online**. Below are the four mandatory parameters: 
+4. Click the **(...)** button for **Exchange Environment** box and select **Online**. While the other parameters are kept blank, below are the four mandatory parameters: 
    - **CertificateFilePath** - provide the path to where *pfx* file is stored locally. The *pfx* file should be generated from the certificate file while setting up App-only authentication.
      >[!Note]
      >**CertificateFilePath** must be case sensitive.
@@ -116,8 +116,6 @@ For more detailed information, see [setup app-only authentication](/powershell/e
    - **EXOOrganization** - provide details in the format \<organization name\>**.onmicrosoft.com**
 
    :::image type="exchange admin" source="media/exchange-admin-integration-pack/exchange-admin.png" alt-text="Screenshot showing exchange admin prerequisite configuration screen.":::
-
-The other parameters can be kept blank. 
 
 ---
 
