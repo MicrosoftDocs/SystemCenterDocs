@@ -120,23 +120,23 @@ Here's how the connection will be established when the activity runs:
 
     :::image type="App registrations page" source="media/integration-pack-for-exchangeuser/app-registrations.png" alt-text="Screenshot of App registrations page.":::
 
-3. Select **+ New registration**, the Register an application page opens.
+4. Select **+ New registration**, the Register an application page opens.
 
     :::image type="New registration" source="media/integration-pack-for-exchangeuser/new-registration.png" alt-text="Screenshot of new registration.":::
 
-4. Set the values as below and select **Register**. Application overview page opens.
+5. Set the values as below and select **Register**.
 
     - **Name**: Enter a friendly name for your app.
     - **Supported account types**: Select the Supported account types based on your scenario.
     - **Redirect URI (optional)**: From the **Select a platform** drop-down, select *Public client/native (mobile & desktop)*  and set the URI to `https://login.microsoftonline.com/common/oauth2/nativeclient`.
 
-     :::image type="registration-form" source="media/integration-pack-for-exchangeuser/regirstration-form.png" alt-text="Screenshot of registration form.":::
+      :::image type="registration-form" source="media/integration-pack-for-exchangeuser/regirstration-form.png" alt-text="Screenshot of registration form.":::
 
-4. Under **Overview** > **Essentials**, copy the **Application (client) ID** and **Directory (tenant) ID**.
+6. In Application overview page, under **Overview** > **Essentials**, copy the **Application (client) ID** and **Directory (tenant) ID**.
 
     :::image type="Azure AD App overview pane" source="media/integration-pack-for-exchangeuser/app-overview.png" alt-text="Screenshot of Azure AD App overview pane.":::
 
-5. Select **Authentication**, do the following and select **Save**.
+7. Select **Authentication**, do the following and select **Save**.
 
     1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with at least `https://login.microsoftonline.com/common/oauth2/nativeclient` as one of the Redirect URI.
 
