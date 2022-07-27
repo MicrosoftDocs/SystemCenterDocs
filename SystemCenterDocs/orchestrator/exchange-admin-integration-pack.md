@@ -44,13 +44,28 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
--   System Center 2022 integration packs require System Center 2022 - Orchestrator
--   Microsoft .NET Framework 3.5 Service Pack 1
--   Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Microsoft 365
--   Microsoft Exchange Management Shell
--   Microsoft PowerShell 2.0
--   Microsoft WinRM 2.0
--   Exchange Online PowerShell V2 Module (EXO V2) for Exchange Online
+
+# [Exchange on-premises](#tab/exchan-on-prem)
+
+- System Center 2022 integration packs require System Center 2022 - Orchestrator
+- Microsoft .NET Framework 4.0 or higher (.NET 4.7.2 recommended)
+- Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Microsoft 365
+- Microsoft Exchange Management Shell
+- Microsoft PowerShell
+- Microsoft WinRM 2.0
+
+# [Exchange Online](#tab/exchan-on-prem)
+
+- System Center 2022 integration packs require System Center 2022 - Orchestrator
+- Microsoft .NET Framework 4.0 or higher (.NET 4.7.2 recommended)
+- Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/- Microsoft 365
+- Microsoft Exchange Management Shell
+- Microsoft PowerShell
+- Microsoft WinRM 2.0
+- Exchange Online PowerShell V2 Module (EXO V2)
+
+---
+
 ::: moniker-end
 
 ## Download the Integration Pack
@@ -115,7 +130,7 @@ For more information on setting up app-only authentication for Exchange Online t
    - **ApplicationId** - provide your Azure App ID generated above.
    - **EXOOrganization** - provide details in the format `<organization name>.onmicrosoft.com`
 
-   :::image type="exchange admin" source="media/exchange-admin-integration-pack/exchange-admin.png" alt-text="Screenshot showing exchange admin prerequisite configuration screen.":::
+   :::image type="exchange admin" source="media/exchange-admin-integration-pack/exchange-admin-inline.png" alt-text="Screenshot showing exchange admin prerequisite configuration screen." lightbox="media/exchange-admin-integration-pack/exchange-admin-expanded.png":::
 
 ---
 
@@ -123,12 +138,12 @@ For more information on setting up app-only authentication for Exchange Online t
 
 # [Exchange on-premises](#tab/exch-on-prem)
 
-### Configure 64-bit PowerShell to run scripts
+### Configure PowerShell to run scripts
 
-On the computer where Orchestrator runbooks are executed, ensure that 64-bit PowerShell scripts can be run:
+On the computer where Orchestrator runbooks are executed, ensure that PowerShell scripts can be run:
 
 1.  Start **Windows PowerShell** command line.
-2.  To determine whether PowerShell 64-bit scripts can be executed, run the following command:
+2.  To determine whether PowerShell scripts can be executed, run the following command:
 
     ```PowerShell
         Get-ExecutionPolicy
