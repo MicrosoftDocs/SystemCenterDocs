@@ -54,7 +54,7 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 - Microsoft PowerShell
 - Microsoft WinRM 2.0
 
-# [Exchange Online](#tab/exchan-on-prem)
+# [Exchange Online](#tab/exchan-online)
 
 - System Center 2022 integration packs require System Center 2022 - Orchestrator
 - Microsoft .NET Framework 4.0 or higher (.NET 4.7.2 recommended)
