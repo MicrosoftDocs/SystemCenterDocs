@@ -122,13 +122,11 @@ When you install VMM with this user account SPN will be registered.
 
 ## Account and domain requirements
 
-::: moniker range=">=sc-vmm-2019"
-When you install VMM, you need to configure the VMM service to use either the Local System account or a domain account or a Group Managed Service Account (gMSA).
-::: moniker-end
+When you install VMM, you must configure the VMM service to use any one of the following accounts:
 
-::: moniker range="<sc-vmm-2019"
-When you install VMM, you need to configure the VMM service to use either the Local System account or a domain account.
-::: moniker-end
+- The Local System account (cannot be used for a highly available VMM deployment) or
+- A domain user account or 
+- A Group Managed Service Account (gMSA).
 
 Ensure the following before you prepare an account:
 
