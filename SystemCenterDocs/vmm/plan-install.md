@@ -126,7 +126,7 @@ When you install VMM, you must configure the VMM service to use any one of the f
 
 - The Local System account (cannot be used for a highly available VMM deployment) or
 - A domain user account or 
-- A Group Managed Service Account (gMSA).
+- A Group Managed Service Account (gMSA)
 
 Ensure the following before you prepare an account:
 
