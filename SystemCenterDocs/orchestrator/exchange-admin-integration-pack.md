@@ -2,7 +2,7 @@
 title: Exchange Admin Integration Pack for Orchestrator in System Center
 description: This article provides information about exchange Integration packs and how to deploy it.
 ms.custom: na
-ms.date: 04/04/2019
+ms.date: 07/26/2022
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -23,7 +23,7 @@ manager: carmonm
 
 ::: moniker-end
 
-Integration packs are add-ons for System Center - Orchestrator, a component of System Center. Integration packs help to optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and other third party products.
+Integration packs are add-ons for System Center - Orchestrator, a component of System Center. Integration packs help to optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and other third-party products.
 
 The Integration Pack for Exchange Admin helps to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote, or cloud-based environments in Microsoft Exchange and Microsoft 365.
 
@@ -31,7 +31,7 @@ Microsoft is committed to protecting your privacy while delivering software that
 
 ## System requirements
 
-Before you implement the Integration Pack for Exchange Admin, the following listed software must be installed. For more information about installing and configuring Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
+Before you implement the Integration Pack for Exchange Admin, you must install the following softwares. For more information on how to install and configure Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
 
 ::: moniker range="<=sc-orch-2019"
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
@@ -44,15 +44,31 @@ Before you implement the Integration Pack for Exchange Admin, the following list
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
--   System Center 2022 integration packs require System Center 2022 - Orchestrator
--   Microsoft .NET Framework 3.5 Service Pack 1
--   Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Microsoft 365
--   Microsoft Exchange Management Shell
--   Microsoft PowerShell 2.0
--   Microsoft WinRM 2.0
+
+# [Exchange on-premises](#tab/exchan-on-prem)
+
+- System Center 2022 integration packs require System Center 2022 - Orchestrator
+- Microsoft .NET Framework 4.0 or higher (.NET 4.7.2 recommended)
+- Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Microsoft 365
+- Microsoft Exchange Management Shell
+- Microsoft PowerShell
+- Microsoft WinRM 2.0
+
+# [Exchange Online](#tab/exchan-online)
+
+- System Center 2022 integration packs require System Center 2022 - Orchestrator
+- Microsoft .NET Framework 4.0 or higher (.NET 4.7.2 recommended)
+- Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/- Microsoft 365
+- Microsoft Exchange Management Shell
+- Microsoft PowerShell
+- Microsoft WinRM 2.0
+- Exchange Online PowerShell V2 Module (EXO V2)
+
+---
+
 ::: moniker-end
 
-## Downloading the Integration Pack
+## Download the Integration Pack
 
 ::: moniker range="<=sc-orch-2019"
 - To download the Exchange Admin Integration Pack for Orchestrator 2016, see the [Microsoft Download Center for 2016](https://www.microsoft.com/download/details.aspx?id=54098).
@@ -72,35 +88,62 @@ After you download the integration pack file, you must register it with the Orch
 
 ## Configure the Exchange Admin Integration Pack connections
 
-A connection establishes a reusable link between and an Exchange server. You can specify as many connections as you require to create links to multiple servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
+A connection establishes a reusable link between the Orchestrator and an Exchange server. You can specify as many connections as you require to create links to multiple servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
-### To set up an Exchange Configuration connection
+# [Exchange on-premises](#tab/ex-on-prem)
 
-1.  In the **Orchestrator Runbook Designer**, click **Options**, and then click **Exchange Admin**. The **Exchange Admin** dialog box appears.
-2.  On the **Configurations** tab, click **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
-3.  In the **Name** box, enter a name for the connection. This can be the name of the **Exchange** server or a descriptive name to differentiate the type of connection.
-4.  Click the **(...)** button and select **Exchange Configuration**.
-5.  In the **Exchange Server Host** box, type the name or IP address of the Exchange server. To use a computer name, you can type the NetBIOS name or the fully qualified domain name (FQDN).
-6.  In the **Exchange Server Port** box, enter the port that is used to communicate with the Exchange server. If you use SSL, be sure to select the appropriate port.
-7.  In the **Exchange PowerShell Application** box, enter the application name segment of the connection URI.
-8.  In the **Exchange User Name** and **Exchange User Password** boxes, type the credentials that Orchestrator will use to log on to the Exchange environment. The configured user must have the appropriate Exchange permissions.
-9.  Configure the **Exchange Environment** as necessary for connecting to an On-Premise installation or to Office.
-10. Set the **Use SSL** property to **True** to have all communication between the runbook server and the Exchange server encrypted over HTTPS.
-11. If you use SSL, the **Skip CA Check** property specifies whether the client does not validate that the server certificate is signed by a trusted certification authority (CA).
-12. If you use SSL, the **Skip CN Check** property specifies that the certificate common name (CN) of the server does not need to match the hostname of the server.
-13. If you use SSL, the **Skip Revocation Check** property specifies whether the revocation status of the server certificate will not be checked for validity.
-14. Click **OK**.
-15. Add additional connections if applicable.
-16. Click **Finish**.
+### Set up an Exchange Configuration connection
+
+1. In the **Orchestrator Runbook Designer**, select **Options** > **Exchange Admin**. The **Exchange Admin** dialog appears.
+2. On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog appears.
+3. In the **Name** box, enter a name for the connection. This can be the name of the **Exchange** server or a descriptive name to differentiate the type of connection.
+4. Select the **(...)** button and select **Exchange Configuration**.
+5. Select the **(...)** button for **Exchange Environment** and select **On-Premise**. 
+6. In the **Exchange Server Host** box, enter the name or IP address of the Exchange server. To use a computer name, you can type the *NetBIOS* name or the *fully qualified domain name (FQDN)*.
+7. In the **Exchange Server Port** box, enter the port that is used to communicate with the Exchange server. If you use SSL, be sure to select the appropriate port.
+8. In the **Exchange PowerShell Application** box, enter the application name segment of the connection URI.
+9.  In the **Exchange User Name** and **Exchange User Password** boxes, enter the credentials that Orchestrator will use to log on to the Exchange environment. The configured user must have the appropriate Exchange permissions.
+10.  Configure the **Exchange Environment** as necessary for connecting to an On-Premise installation or to Office.
+11. Set the **Use SSL** property to **True** to have all communication between the runbook server and the Exchange server encrypted over HTTPS.
+12. If you use SSL:
+    - The **Skip CA Check** property specifies whether the client does not validate that the server certificate is signed by a trusted certification authority (CA).
+    - The **Skip CN Check** property specifies that the certificate common name (CN) of the server does not need to match the hostname of the server.
+    - The **Skip Revocation Check** property specifies whether the revocation status of the server certificate will not be checked for validity.
+13. Select **OK** and add additional connections if applicable.
+14. Select **Finish**.
+
+# [Exchange Online](#tab/exch-online)
+
+**Configure IP with Exchange Online:**
+
+Exchange Admin 2022 supports [App-only](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true) based modern (OAuth) authentication to Exchange Online. 
+For more information on setting up app-only authentication for Exchange Online to provision an Azure AD application in your tenant, see [setup app-only authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#set-up-app-only-authentication&preserve-view=true). 
+
+1. In the **Orchestrator Runbook Designer**, select **Options** > **Exchange Admin**. The **Exchange Admin** dialog appears.
+2. In the **Name** box, enter a name for the connection. This can be the name of the **Exchange** server or a descriptive name to differentiate the type of connection.
+3. Click the **(...)** button and select **Exchange Configuration**.
+4. Click the **(...)** button for **Exchange Environment** box and select **Online**. While the other parameters are optional, below are the four mandatory parameters: 
+   - **CertificateFilePath** - provide the path to store the `pfx` file locally. The `pfx` file was generated while setting up App-only authentication.
+     >[!Note]
+     >**CertificateFilePath** is case sensitive.
+   - **CertificatePassword** - provide the password with which the `pfx` file was generated.
+   - **ApplicationId** - provide your Azure App ID generated above.
+   - **EXOOrganization** - provide details in the format `<organization name>.onmicrosoft.com`
+
+   :::image type="exchange admin" source="media/exchange-admin-integration-pack/exchange-admin-inline.png" alt-text="Screenshot showing exchange admin prerequisite configuration screen." lightbox="media/exchange-admin-integration-pack/exchange-admin-expanded.png":::
+
+---
 
 ## Configure Windows PowerShell and WinRM for the Exchange Admin Integration Pack
 
-### To configure 32-bit PowerShell to run scripts
+# [Exchange on-premises](#tab/exch-on-prem)
 
-On the computer where Orchestrator runbooks are executed, make sure that 32-bit PowerShell scripts can be run:
+### Configure PowerShell to run scripts
 
-1.  Start **Windows PowerShell (x86)** command line.
-2.  To determine whether PowerShell 32-bit scripts can be executed, run the following command:
+On the computer where Orchestrator runbooks are executed, ensure that PowerShell scripts can be run:
+
+1.  Start **Windows PowerShell** command line.
+2.  To determine whether PowerShell scripts can be executed, run the following command:
 
     ```PowerShell
         Get-ExecutionPolicy
@@ -112,12 +155,12 @@ On the computer where Orchestrator runbooks are executed, make sure that 32-bit 
         Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
     ```
 
-### To configure remote PowerShell rights for the Exchange user
+### Configure remote PowerShell rights for the Exchange user
 
-The configured user must be granted remote PowerShell rights on the Exchange server:
+The configured user must be granted remote PowerShell rights on the Exchange server.
 
 1.  On the Exchange server, start the **Exchange Management Shell**.
-2.  To determine whether the user has remote PowerShell rights, run the following command and check the value in the **RemotePowerShellEnabled** field:
+2.  To determine whether the user has remote PowerShell rights, run the following command, and check the value in the **RemotePowerShellEnabled** field:
 
   ```PowerShell
         Get-User <UserName>
@@ -129,26 +172,34 @@ The configured user must be granted remote PowerShell rights on the Exchange ser
         Set-User <UserName> -RemotePowerShellEnabled $true
   ```
 
-### To configure Windows PowerShell to allow Basic Authentication on the Exchange server
+### Configure Windows PowerShell to allow Basic Authentication on the Exchange server
 
-1.  On the Exchange server, make sure that PowerShell Basic Authentication is enabled:
-2.  Start **Internet Information Services (IIS) Manager**.
-3.  Navigate to the **PowerShell** site.
-4.  Open the **Authentication** settings.
-5.  Make sure **Basic Authentication** is enabled.
+On the Exchange server, ensure that PowerShell Basic Authentication is enabled:
 
-### To configure WinRM for HTTP unencrypted communication
+1.  Start **Internet Information Services (IIS) Manager**.
+2.  Navigate to the **PowerShell** site.
+3.  Open the **Authentication** settings and ensure **Basic Authentication** is enabled.
+
+### Configure WinRM for HTTP unencrypted communication
 
 On the machine where Orchestrator runbooks are executed, configure WinRM trusted hosts and to allow unencrypted traffic:
 
 1.  Open the **Local Group Policy** user interface: Windows Start Button &gt; Run &gt; gpedit.msc.
 2.  Navigate to **Local Computer Policy** &gt; **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Remote Management (WinRM)** &gt; **WinRM Client**.
-3.  Make sure that **Allow unencrypted traffic** is Enabled.
+3.  Ensure that **Allow unencrypted traffic** is enabled.
 4.  Add the targeted computer that runs Exchange Server to the **Trusted Hosts** list.
 
-On the Exchange server, make sure that PowerShell does not require SSL:
+On the Exchange server, ensure that PowerShell does not require SSL:
 
 1.  Start **Internet Information Services (IIS) Manager**.
 2.  Navigate to the **PowerShell** site.
-3.  Open **SSL Settings**.
-4.  Make sure that the **Require SSL check box** is not selected.
+3.  Open **SSL Settings** and ensure that the **Require SSL** checkbox is not selected.
+
+# [Exchange Online](#tab/ex-online)
+
+Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866&preserve-view=true) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell	V2 Module (EXO V2)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) to connect to Exchange Server. For detailed information on EXO V2 module, see
+ - [Prerequisites](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#prerequisites-for-the-exo-v2-module&preserve-view=true)
+ - [Installation instructions](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-the-exo-v2-module&preserve-view=true) and
+ - [Troubleshooting installation issues](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#troubleshoot-installing-the-exo-v2-module&preserve-view=true)
+
+---
