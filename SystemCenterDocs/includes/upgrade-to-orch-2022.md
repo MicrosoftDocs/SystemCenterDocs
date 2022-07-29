@@ -16,12 +16,11 @@ keywords:
 
 The following sections provide information about how to upgrade to System Center 2022 - Orchestrator.
 
->[!NOTE]
->  To upgrade to Orchestrator 2019 UR1 and later, ensure that [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver15&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.
-
 You can upgrade your installation of System Center 2019 Orchestrator to System Center 2022 Orchestrator by using the information in the below sections:
 
-Before you attempt the upgrade, ensure that your environment is upgraded to the supported versions as described in [System Requirements for System Center 2022](../orchestrator/system-requirements-orch.md).
+>[!NOTE]
+> - To upgrade to Orchestrator 2022, ensure that [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver15&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.
+> - Before you attempt the upgrade, ensure that your environment is upgraded to the supported versions as described in [System Requirements for System Center 2022](../orchestrator/system-requirements-orch.md).
 
 ## Upgrade steps
 
