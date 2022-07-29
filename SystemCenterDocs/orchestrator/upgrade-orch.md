@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Orc
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/14/2019
+ms.date: 07/29/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
@@ -13,7 +13,16 @@ ms.technology: orchestrator
 
 # Upgrade System Center Orchestrator
 
-::: moniker range=">=sc-orch-2019"
+
+::: moniker range="sc-orch-2022"
+
+This article provides the upgrade information for System Center 2022 - Orchestrator.
+
+[!INCLUDE [upgrade-to-orch-2022.md](../includes/upgrade-to-orch-2022.md)]
+
+::: moniker-end
+
+::: moniker range="sc-orch-2019"
 
 This article provides the upgrade information for System Center 2019 - Orchestrator.
 
