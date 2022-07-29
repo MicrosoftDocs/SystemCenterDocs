@@ -13,7 +13,16 @@ ms.technology: orchestrator
 
 # Upgrade System Center Orchestrator
 
-::: moniker range=">=sc-orch-2019"
+
+::: moniker range="sc-orch-2022"
+
+This article provides the upgrade information for System Center 2022 - Orchestrator.
+
+[!INCLUDE [upgrade-to-orch-2022.md](../includes/upgrade-to-orch-2022.md)]
+
+::: moniker-end
+
+::: moniker range="sc-orch-2019"
 
 This article provides the upgrade information for System Center 2019 - Orchestrator.
 
