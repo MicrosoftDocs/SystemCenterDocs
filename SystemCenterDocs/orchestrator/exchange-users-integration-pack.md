@@ -131,7 +131,7 @@ Here's how the connection will be established when the activity runs:
     - **Supported account types**: Select the Supported account types based on your scenario.
     - **Redirect URI (optional)**: From the **Select a platform** drop-down, select *Public client/native (mobile & desktop)*  and set the URI to `https://login.microsoftonline.com/common/oauth2/nativeclient`.
 
-      :::image type="registration-form" source="media/exchange-users-integration-pack/regirstration-form.png" alt-text="Screenshot of registration form.":::
+      :::image type="registration-form" source="media/exchange-users-integration-pack/registration-form.png" alt-text="Screenshot of registration form.":::
 
 6. In Application overview page, under **Overview** > **Essentials**, copy the **Application (client) ID** and **Directory (tenant) ID**.
 
