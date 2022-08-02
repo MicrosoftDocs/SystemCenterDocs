@@ -25,9 +25,9 @@ manager: evansma
 
 Integration packs are add-ons for Orchestrator, a component of System Center. Integration packs optimize IT operations across various environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third-party products.
 
-The Integration Pack for Exchange Users facilitates the automation of user-centric tasks, such as actions to read and send email messages, create appointments, or update tasks and contacts. The operation is carried over HTTP and the connection can be authenticated by the methods enabled on the Exchange Server. Consult with your tenant administrator about the available methods on your On-prem Exchange Server.
+The Integration Pack for Exchange Users facilitates the automation of user-centric tasks, such as actions to read and send email messages, create appointments, or update tasks and contacts. The operation is carried over HTTP and the connection can be authenticated by the methods enabled on the Exchange Server. Consult with your tenant administrator about the available methods on your on-premises Exchange Server.
 
-This integration pack can be used to connect to both On-prem or Online Exchange servers using their respective [Exchange Web Services](/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange) (EWS) endpoint.
+This integration pack can be used to connect to both on-premises or Online Exchange servers using their respective [Exchange Web Services](/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange) (EWS) endpoint.
 
 ::: moniker range=">= sc-orch-2019"
 
@@ -35,7 +35,7 @@ This integration pack operates in the methods shown below:
 
 | Server kind               | Supported auth mode | Default    |
 | ------------------------- | ------------------- | ---------- |
-| Exchange Server (On-prem) | Basic Auth          | Basic Auth |
+| Exchange Server (on-premises) | Basic Auth          | Basic Auth |
 | Exchange Online           | OAuth               | OAuth      |
 | Office 365 Exchange       | OAuth               | OAuth      |
 
@@ -45,7 +45,7 @@ Microsoft is committed to protect your privacy while delivering software that br
 
 ## System requirements
 
-Prior to implementing the Exchange Users Integration Pack, you must install and configure the following listed softwares. For more information on how to install and configure Orchestrator and the Exchange Users Integration Pack, see the respective product documentation.
+Prior to implementing the Exchange Users Integration Pack, you must install and configure the following listed software. For more information on how to install and configure Orchestrator and the Exchange Users Integration Pack, see the respective product documentation.
 
 ::: moniker range="<=sc-orch-2019"
 
@@ -104,6 +104,7 @@ Here's how the connection will be established when the activity runs:
 3. After authentication, an OAuth token will be received from Azure AD.
 4. Activity will perform operations on the EWS endpoint using the OAuth token.
 
+>[!NOTE]
 > The alternative of *delegated permissions* is *app-only authentication* where app secrets (credential or secret certificate) are used instead of a user's credentials. The IP does not support these kind of Azure AD applications.
 
 ::: moniker-end
@@ -118,11 +119,11 @@ Here's how the connection will be established when the activity runs:
 
 3. Under **Manage**, select **App registrations**. The App registrations page opens.
 
-    :::image type="App registrations page" source="media/integration-pack-for-exchangeuser/app-registrations.png" alt-text="Screenshot of App registrations page.":::
+    :::image type="App registrations page" source="media/exchange-users-integration-pack/app-registrations.png" alt-text="Screenshot of App registrations page.":::
 
 4. Select **+ New registration**, the Register an application page opens.
 
-    :::image type="New registration" source="media/integration-pack-for-exchangeuser/new-registration.png" alt-text="Screenshot of new registration.":::
+    :::image type="New registration" source="media/exchange-users-integration-pack/new-registration.png" alt-text="Screenshot of new registration.":::
 
 5. Set the values as below and select **Register**.
 
@@ -130,21 +131,21 @@ Here's how the connection will be established when the activity runs:
     - **Supported account types**: Select the Supported account types based on your scenario.
     - **Redirect URI (optional)**: From the **Select a platform** drop-down, select *Public client/native (mobile & desktop)*  and set the URI to `https://login.microsoftonline.com/common/oauth2/nativeclient`.
 
-      :::image type="registration-form" source="media/integration-pack-for-exchangeuser/regirstration-form.png" alt-text="Screenshot of registration form.":::
+      :::image type="registration-form" source="media/exchange-users-integration-pack/regirstration-form.png" alt-text="Screenshot of registration form.":::
 
 6. In Application overview page, under **Overview** > **Essentials**, copy the **Application (client) ID** and **Directory (tenant) ID**.
 
-    :::image type="Azure AD App overview pane" source="media/integration-pack-for-exchangeuser/app-overview.png" alt-text="Screenshot of Azure AD App overview pane.":::
+    :::image type="Azure AD App overview pane" source="media/exchange-users-integration-pack/app-overview.png" alt-text="Screenshot of Azure AD App overview pane.":::
 
 7. Select **Authentication**, do the following and select **Save**.
 
     1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with at least `https://login.microsoftonline.com/common/oauth2/nativeclient` as one of the Redirect URI.
 
-       :::image type="Platform configurations" source="media/integration-pack-for-exchangeuser/auth-platform.png" alt-text="Screenshot of platform configurations.":::
+       :::image type="Platform configurations" source="media/exchange-users-integration-pack/auth-platform.png" alt-text="Screenshot of platform configurations.":::
 
     2. Under **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
        
-       :::image type="Advanced settings" source="media/integration-pack-for-exchangeuser/auth-advanced-settings.png" alt-text="Screenshot of Advanced settings.":::
+       :::image type="Advanced settings" source="media/exchange-users-integration-pack/auth-advanced-settings.png" alt-text="Screenshot of Advanced settings.":::
 
 ::: moniker-end
 
@@ -160,11 +161,11 @@ However, the IP doesn't support the consent grant flow, instead the tenant admin
     1. On the Azure AD portal, select the Azure AD application.
     2. Follow the [steps to grant EWS permissions](/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth#register-your-application) by editing the app **Manifest**.
 
-        :::image type="content" alt-text="Screenshot of Azure AD App manifest"  source="./media/integration-pack-for-exchangeuser/manifest.png" lightbox="./media/integration-pack-for-exchangeuser/manifest-expanded.png":::
+        :::image type="content" alt-text="Screenshot of Azure AD App manifest."  source="./media/exchange-users-integration-pack/manifest.png" lightbox="./media/exchange-users-integration-pack/manifest-expanded.png":::
 
 2. Request your tenant admin to grant "Admin consent" (on the API permissions tab) to this application for `EWS.AccessAsUser.All` permission.
 
-    :::image type="content" alt-text="Screenshot of Azure AD App API permissions"  source="./media/integration-pack-for-exchangeuser/api-permissions.png" lightbox="./media/integration-pack-for-exchangeuser/api-permissions-expanded.png":::
+    :::image type="content" alt-text="Screenshot of Azure AD App API permissions."  source="./media/exchange-users-integration-pack/api-permissions.png" lightbox="./media/exchange-users-integration-pack/api-permissions-expanded.png":::
 
 In practice, **Admin consent** implies that any user in the tenant can configure the IP with their credentials and execute Exchange activities under their account.
 
@@ -201,12 +202,14 @@ The **Exchange Configuration (Item)** configuration is used for the remaining ac
 
 1. In the **Exchange Server Address** box, type the name or IP address of the Exchange server. If you're using the computer name, you can type the *NetBIOS* name or the fully qualified domain name *(FQDN)*. You may leave the **Exchange Server Address** box empty if you enable the **Use [Autodiscover]**(/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) option.
 
+   >[!NOTE]
    > Usually this is of the form `https://<your-domain-name.com>/EWS/Exchange.asmx`.
 
 1. In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to connect to the Exchange server.
 
 1. In the **Domain** box, type the name of the (tenant) domain that will authorize access.
 
+   >[!NOTE]
    > If your email account is of the form `johndoe@contoso.onmicrosoft.com`, then your domain is *contoso.onmicrosoft.com*
 
 ::: moniker range="sc-orch-2022"
