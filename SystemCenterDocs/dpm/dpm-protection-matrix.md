@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 05/02/2022
+ms.date: 08/04/2022
 title: What can System Center Data Protection Manager back up?
 ms.technology: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
@@ -91,7 +91,7 @@ The following sections details the protection support matrix for DPM:
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2022, 2019, 2016, 2012 R2, 2012|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect: Hyper-V computers, [Hyper-V VMs](back-up-hyper-v-virtual-machines.md) hosted on (cluster shared volumes) CSVs<br /><br />Recover: Virtual machine, Item-level recovery of files and folder, volumes, virtual hard drives|
-|VMware VMs | VMware server 6.0, or 6.5, 6.7|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machine, Item-level recovery of files and folder available only for Windows, volumes, virtual hard drives.<br /><br />VMware vApps are not supported.|
+|VMware VMs | VMware server 5.5, 6.0, or 6.5, 6.7|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machine, Item-level recovery of files and folder available only for Windows, volumes, virtual hard drives.<br /><br />VMware vApps are not supported.|
 
 ### Linux
 
