@@ -17,7 +17,7 @@ keywords:
 The following sections provide information about how to upgrade to System Center 2019 - Orchestrator.
 
 >[!NOTE]
->  To upgrade to Orchestrator 2019 UR1 and later, ensure that [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver15&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.
+>  To upgrade to Orchestrator 2019 UR1 and later, ensure that [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-2017#1860) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service. 
 
 You can upgrade your installation of System Center 2016 Update Rollup (UR) 6, 1801 or 1807 Orchestrator to System Center 2019 Orchestrator by following the steps described below.
 
