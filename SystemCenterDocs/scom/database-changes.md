@@ -25,11 +25,14 @@ This article provides information on how to create users, assign roles, and memb
 
 These roles are similar to the roles created for non-gMSA accounts.
 
+>[!NOTE]
+>For all gMSA accounts used, you will also need to create the accounts under the **Security** > **Logins** of the SQL instance directly, and not only under each individual DB. Without this, the other permissions will not take effect as the initial login is at the instance level.
+
 ## Action account
 
 **System databases: msdb**
 
-1. In the SQL Server Management Studio, go to **Databases** \>**System Databases** \> **msdb** \> **Security** \> **Users**.
+1. In the SQL Server Management Studio, go to **Databases** \> **System Databases** \> **msdb** \> **Security** \> **Users**.
 
 1. Create a new user.
 
@@ -56,23 +59,23 @@ Because *momActGMSA* is an example, use the name of the gMSA that you intend to 
 
 Follow steps 1 to 5 from the previous procedure. Assign the roles by using the information in this table.
 
-| Database|Roles|
-|---------|---------|
-|    **Action account**     |         |
-| Operations Manager DB|db\_datareader, db\_datawriter, db\_ddladmin, dbmodule\_users|
-|   **Data Access Service account**       |         |
-|   Systems Database: msdb for Operations Manager DB |SQLAgentOperatorRole, SQLAgentReaderRole, SQLAgentUserRole, db_owner |
-|Operations Manager DB |  ConfigService, db\_accessadmin, db\_datareader,  db\_datawriter, db\_ddladmin, db\_securityadmin, sdk\_users, sql\_dependency\_subscriber|
-| Operations Manager DW|apm\_datareader, db\_datareader, OpsMgrReader |
-|  **Data Writer account** |         |
-|   Operations Manager DB| apm\_datareader, apm\_datawriter,  db\_datareader, dwsynch\_users|
-|Operations Manager DW|apm\_datareader, apm_datawriter, db\_owner, OpsMgrWriter|
-|   **Data Reader account** |         |
-|     System Databases: master DB|      RSExecRole   |
-| System Databases: msdb for Operations Manager DW| RSExecRole, SQLAgentOperatorRole,  SQLAgentReaderRole, SQLAgentUserRole|
-| Operations Manager DW |apm\_datareader, db\_datareader, OpsMgrReader|
-|  Report Server Database      | db\_owner,  RSExecRole      |
-|  Report Server Temp Database       | db\_owner, RSExecRole      |
+| Account Type | Database | Roles |
+|---|---|---|
+| **Action account** |  |  |
+|  | Operations Manager DB | db\_datareader, db\_datawriter, db\_ddladmin, dbmodule\_users |
+| **Data Access Service account** |  |  |
+|  | Systems Database: msdb for Operations Manager DB | SQLAgentOperatorRole, SQLAgentReaderRole, SQLAgentUserRole, db_owner |
+|  | Operations Manager DB | ConfigService, db\_accessadmin, db\_datareader,  db\_datawriter, db\_ddladmin, db\_securityadmin, sdk\_users, sql\_dependency\_subscriber |
+|  | Operations Manager DW | apm\_datareader, db\_datareader, OpsMgrReader |
+| **Data Writer account** |  |  |
+|  | Operations Manager DB | apm\_datareader, apm\_datawriter,  db\_datareader, dwsynch\_users |
+|  | Operations Manager DW | apm\_datareader, apm_datawriter, db\_owner, OpsMgrWriter |
+| **Data Reader account** |  |  |
+|  | System Databases: master DB | RSExecRole |
+|  | System Databases: msdb for Operations Manager DW | RSExecRole, SQLAgentOperatorRole,  SQLAgentReaderRole, SQLAgentUserRole |
+|  | Operations Manager DW | apm\_datareader, db\_datareader, OpsMgrReader |
+|  | Report Server Database | db\_owner,  RSExecRole |
+|  | Report Server Temp Database | db\_owner, RSExecRole |
 
 ## Next steps
   [Service-level changes](service-level-changes.md)

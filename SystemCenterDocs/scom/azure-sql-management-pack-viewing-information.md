@@ -2,8 +2,8 @@
 ms.assetid: a34d3a18-0e6f-466a-b233-e6a78980962d
 title: Views and dashboards in Management Pack for Azure SQL Database
 description: This article explains how to view database and server views in Management Pack for Azure SQL Database
-author: TDzakhov
-ms.author: v-tdzakhov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
 ms.date: 3/17/2021
 ms.topic: article
