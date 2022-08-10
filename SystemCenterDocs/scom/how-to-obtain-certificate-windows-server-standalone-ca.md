@@ -5,7 +5,7 @@ description: This article describes How to Obtain a Certificate Using Windows Se
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 06/22/2022
+ms.date: 08/09/2022
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -13,22 +13,63 @@ ms.topic: article
 
 # How to Obtain a Certificate Using Windows Server Stand-Alone CA
 
-Use the procedures in this topic to obtain a certificate from a stand-alone Windows Server computer hosting Active Directory Certificate Services (AD-CS). You use the [certreq](/windows-server/administration/windows-commands/certreq_1) command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
+*Applies to:* System Center Operations Manager, Windows Server and AD CS 2012 R2 or newer
 
-It is assumed that you have AD-CS installed, an HTTPS binding is being used, and its associated certificate has been installed. For more information about creating an HTTPS binding see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).
+Use the procedures in this topic to obtain a certificate to be used with Operations Manager Management Server, Gateway, or Agent using a stand-alone Windows Server computer hosting Active Directory Certificate Services (AD-CS). 
+
+You use the [certreq](/windows-server/administration/windows-commands/certreq_1) command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
+
+## Prerequisites
+
+You must have the following:
+
+- AD-CS installed and configured in the environment with web services.
+- a HTTPS binding and its associated certificate has been installed.
+- typical desktop experience and are not Core servers. 
+
+For more information about creating an HTTPS binding see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).
+
+>[!NOTE]
+>
+>If your organization is not using AD CS or does not use the accompanying web services, the steps below will not completely apply to your environment. If you are using an external certificate authority, these steps will not cover that scenario.
+>
+>If you are covered by one of these scenarios and wish to create a certificate using means outside these instructions, or just need the certificate specifications, please make sure the certificate meets these requirements for SCOM to use the certificate:
+>
+>- `Subject="CN=server.contoso.com" ; (this should be the FQDN or how the system shows in DNS)`
+>
+>- `[Key Usage]`
+>- `Key Exportable=TRUE`
+>- `HashAlgorithm = SHA256`
+>- `KeyLength=2048`
+>- `KeySpec=1`
+>- `KeyUsage=0xf0`
+>- `MachineKeySet=TRUE`
+>
+>- `[EnhancedKeyUsageExtension]`
+>- `OID=1.3.6.1.5.5.7.3.1 ; Server Authentication`
+>- `OID=1.3.6.1.5.5.7.3.2 ; Client Authentication`
+>
+>- `[Compatibility Settings]`
+>- `Compatible with Windows Server 2003 ; (or newer based on environment)`
+>
+>- `[Cryptography Settings]`
+>- `Provider Category: Legacy Cryptography Service Provider`
+>- `Algorithm name: RSA`
+>- `Minimum Key Size: 2048 ; (2048 or 4096 as per security requirement.)`
+>- `Providers: Microsoft RSA Schannel Cryptographic Provider`
 
 >[!Important]
->The content for this topic is based on the default settings for AD-CS; for example, setting the key length to 2048, selecting Microsoft Software Key Storage Provider as the CSP, and using Secure Hash Algorithm 1 (SHA1). Evaluate these selections against the requirements of your company's security policy.
+>The content for this topic is based on the default settings for AD-CS; for example, the standard key length is 2048, and select Microsoft Software Key Storage Provider as CSP and Secure Hash Algorithm 256 (SHA256). Evaluate these selections against the requirements of your company's security policy.
 
 The high-level process to obtain a certificate from a stand-alone certification authority (CA) is as follows:
 
-1. Download the Trusted Root (CA) certificate.
+1. Download the Root Certificate from a CA.
 
-2. Import the Trusted Root (CA) certificate
+2. Import the Root Certificate to a client server.
 
 3. Create a setup information file to use with the \<certreq\> command-line utility.
 
-4. Create a request file.
+4. Create a request file (or use the web portal).
 
 5. Submit a request to the CA using the request file.
 
