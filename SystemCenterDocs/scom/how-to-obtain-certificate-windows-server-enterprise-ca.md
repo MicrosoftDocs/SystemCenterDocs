@@ -1,17 +1,17 @@
 ---
 ms.assetid: 
-title: How to obtain a Certificate Using Windows Server Enterprise CA.
-description: This article explains how to obtain a Certificate Using Windows Server Enterprise CA.
+title: How to obtain a certificate for use with Windows Servers and System Center Operations Manager.
+description: This article explains How to obtain a certificate for use with Windows Servers and System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 08/09/2022
+ms.date: 08/10/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
 ---
 
-# How to Obtain a Certificate Using Windows Server Enterprise CA
+# How to obtain a certificate for use with Windows Servers and System Center Operations Manager
 
 *Applies to:* System Center Operations Manager, Windows Server and AD CS 2012 R2 or newer
 
@@ -73,7 +73,7 @@ The high-level process to obtain a certificate is:
 
 4. Add the template to the Certificate Templates folder.
 
-5. Create a setup information file for use with the \<certreq\> command-line utility.
+5. Create a setup information file for use with the `<certreq>` command-line utility.
 
 6. Create a request file (or use the web portal).
 
@@ -81,7 +81,7 @@ The high-level process to obtain a certificate is:
 
 8. Import the certificate into the certificate store.
 
-9. Import the certificate into Operations Manager using \<MOMCertImport\>.
+9. Import the certificate into Operations Manager using `<MOMCertImport>`.
 
 # [Stand-Alone CA](#tab/Standal)
 
@@ -89,7 +89,7 @@ The high-level process to obtain a certificate is:
 
 2. Import the Root Certificate to a client server.
 
-3. Create a setup information file to use with the \<certreq\> command-line utility.
+3. Create a setup information file to use with the `<certreq>` command-line utility.
 
 4. Create a request file (or use the web portal).
 
@@ -101,7 +101,7 @@ The high-level process to obtain a certificate is:
 
 8. Import the certificate into the certificate store.
 
-9. Import the certificate into Operations Manager using \<MOMCertImport\>.
+9. Import the certificate into Operations Manager using `<MOMCertImport>`.
 
 --- 
 
@@ -142,17 +142,17 @@ For example, a Gateway Server or Management Server.
 To import the Trusted Root Certificate, do the following:
 
 1. Copy the file generated in the previous step to the client.
-2. Open Certificate Manager
-   a. From the Start menu
-      i. Type *mmc* to find the Microsoft Management Console (mmc.exe).
-      ii. Run this utility.
-      iii. Go to **File** > **Add/Remove Snap in…**.
-      iv. On the Add or Remove Snap-ins window, select **Certificates** and then select **Add**.
-      v.	On the Certificate Snap-in window
+2. Open Certificate Manager.
+  1. From the Start menu
+    1. Type *mmc* to find the Microsoft Management Console (mmc.exe).
+      1. Run this utility.
+      1. Go to **File** > **Add/Remove Snap in…**.
+      1. On the Add or Remove Snap-ins window, select **Certificates** and then select **Add**.
+      1.	On the Certificate Snap-in window
          1.	Select **Computer Account** and select **Next**.
-         2.	Select **Local Computer** and select **Finish**.
-      vi. Select **OK**
-   b.	From the Command Line, PowerShell, or Run
+         1.	Select **Local Computer** and select **Finish**.
+      1. Select **OK**
+   1.	From the Command Line, PowerShell, or Run
       i.	Type **certlm.msc** and press **enter**.
       ii. The steps above also apply if *certlm.msc* cannot be found.
 3.	Under Console Root, expand **Certificates (Local Computer)**.
