@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 *Applies to:* System Center Operations Manager, Windows Server and AD CS 2012 R2 or newer
 
-Use the procedures in this topic to obtain a certificate to be used with Operations Manager Management Server, Gateway, or Agent using Enterprise Active Directory Certificate Services (AD CS) Certificate Authority (CA) server on the Windows platform. 
+Using the procedures below, you will be able to obtain a certificate to be used with Operations Manager Management Server, Gateway, or Agent using either a Stand-Alone or Enterprise Active Directory Certificate Services (AD CS) Certificate Authority (CA) server on the Windows platform.
 
 You use the [certreq](/windows-server/administration/windows-commands/certreq_1) command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
 
@@ -61,7 +61,9 @@ For information about creating an HTTPS binding, see [How to Configure an HTTPS 
 >[!Important]
 >The content for this topic is based on the default settings for AD-CS; for example, the standard key length is 2048, and select Microsoft Software Key Storage Provider as CSP and Secure Hash Algorithm 256 (SHA256). Evaluate these selections against the requirements of your company's security policy.
 
-The high-level process to obtain a certificate from an Enterprise certification authority (CA) is as follows:
+The high-level process to obtain a certificate is:
+
+# [Enterprise CA](#tab/Enterp)
 
 1. Download the Root Certificate from a CA.
 
@@ -80,6 +82,28 @@ The high-level process to obtain a certificate from an Enterprise certification 
 8. Import the certificate into the certificate store.
 
 9. Import the certificate into Operations Manager using \<MOMCertImport\>.
+
+# [Stand-Alone CA](#tab/Standal)
+
+1. Download the Root Certificate from a CA.
+
+2. Import the Root Certificate to a client server.
+
+3. Create a setup information file to use with the \<certreq\> command-line utility.
+
+4. Create a request file (or use the web portal).
+
+5. Submit a request to the CA using the request file.
+
+6. Approve the pending certificate request.
+
+7. Retrieve the certificate from the CA.
+
+8. Import the certificate into the certificate store.
+
+9. Import the certificate into Operations Manager using \<MOMCertImport\>.
+
+--- 
 
 ## Download and Import the Root Certificate from the CA
 
@@ -145,9 +169,11 @@ To import the Trusted Root Certificate, do the following:
    f.	Select **Finish**.
 6.	If successful, the Trusted Root Certificate from the CA should now be visible under **Trusted Root Certification Authorities** > **Certificates**.
 
-## Create a certificate template
+## Enterprise CAs: Create a certificate template
 
-Enterprise CAs are integrated with Active Directory Domain Services (AD DS). They publish certificates and certificate revocation lists (CRLs) to AD DS. Enterprise CAs use information that is stored in AD DS, including user accounts and security groups, to approve or deny certificate requests. Enterprise CAs use certificate templates. When a certificate is issued, the Enterprise CA uses information in the certificate template to generate a certificate with the appropriate attributes for that certificate type.
+**Enterprise CAs** are integrated with Active Directory Domain Services (AD DS). They publish certificates and certificate revocation lists (CRLs) to AD DS. Enterprise CAs use information that is stored in AD DS, including user accounts and security groups, to approve or deny certificate requests. Enterprise CAs use certificate templates. When a certificate is issued, the Enterprise CA uses information in the certificate template to generate a certificate with the appropriate attributes for that certificate type.
+
+**Stand-alone CAs** do not require AD DS, and they do not use certificate templates. If you use stand-alone CAs, all information about the requested certificate type must be included in the certificate request. 
 
 More information, see [certificate templates](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)).
 
@@ -254,7 +280,7 @@ This process encodes the information specified in our config file in Base64 and 
 
 ## Submit a new certificate request in the AD CS web portal using the request file
 
-To submit a request to an enterprise CA, do the following:
+# [Enterprise CA](#tab/Enter)
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address
 For example, *https://\<servername\>/certsrv*.
@@ -270,12 +296,217 @@ For example, *https://\<servername\>/certsrv*.
 6. On the **Certificate Template**, select the certificate template that you created (note that this may take some time to propagate across the environment).
 For example, *OperationsManagerCert*, and then select **Submit**.
 
-7. 9.	If successful, on the **Certificate Issued** page, select **Base 64 encoded** > **Download certificate**.
+7. If successful, on the **Certificate Issued** page, select **Base 64 encoded** > **Download certificate**.
 
 8. Save the certificate to an accessible location and give it a friendly name.
 For example, save as *SCOM-MS01.cer*.
 
 9. Close the web browser.
+
+
+# [Stand-Alone CA](#tab/StandAlo)
+
+1.	On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address
+For example, *https://\<servername\>/certsrv*.
+
+
+2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
+
+3. On the **Request a Certificate** page, select **advanced certificate request**.
+
+4. On the **Advanced Certificate Request** page, select **Submit a certificate request by using a base-64-encoded CMC or PKCS #10 file**, or **submit a renewal request by using a base-64-encoded PKCS #7 file**.
+
+5. On the **Submit a Certificate Request or Renewal Request** page, in the **Saved Request** text box, paste the contents of the *CertRequest.req* file that you copied in step 4 in the previous procedure.
+
+6. On the **Certificate Template**, select the certificate template that you created (note that this may take some time to propagate across the environment).
+For example, *OperationsManagerCert*, and then select **Submit**.
+
+7. A request will now be submitted to the CA for manual approval before we can download the certificate.
+
+### Approve the pending certificate request on a Stand-Alone CA
+
+1.	Log onto an Enterprise Certificate Authority in your environment.
+2.	Open the **Certification Authority** utility.
+   a.	This tool can be found in the Start menu under **Windows Administrative Tools** > **Certification Authority**.
+3.	On the left navigation pane, expand the CA and select  **Pending Requests**.
+4.	On the right navigation pane, find and select the pending request for the SCOM server
+5.	Select and hold the **Pending request** > **All Tasks** > **Issue**
+6.	On the left navigation, select **Issued Certificates**, verify the newly issued certificate is present.
+7.	Close the Certification Authority console.
+
+### Retrieve the certificate from a Stand-Alone CA
+
+Ideally this step will be completed on the target machine for ease of certificate installation. If that is not possible, that is ok as well, please make sure to export the certificate as indicated below:
+
+1.	On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address
+For example, *https://\<servername\>/certsrv*.
+2.	On the Welcome page, select **View the status of a pending certificate request**.
+3.	On the Certificates Issued page, select **Base 64 encoded**, then **Download Certificate**.
+4.	If successful, you will be presented with a **Certificate Issued** page with an **Install this certificate link**.
+5.	Select **Install this certificate**.
+6.	The certificate will be stored in the Personal certificate store on the server this was run from
+7.	Load the *MMC* or *CertMgr* consoles.
+   a.	Navigate to **Personal** > **Certificates**
+   b.	Locate the newly created certificate
+8.	If this task was completed on the target server, continue to the next main step.
+9.	If not on the intended target server, export the certificate:
+   a.	Select and hold the **new certificate** > **All Tasks** > **Export**
+   b.	In the **Certificate Export Wizard**, select **Next**
+   c.	Select **Yes, export the private key** and then select **Next**
+   d.	Select **Personal Information Exchange – PKCS #12 (.PFX)**
+   e.	Check **Include all certificates in the certification path if possible**
+   f.	Check **Export all extended properties**
+   g.	Select **Next**
+   h.	Provide a memorable password to encrypt the certificate file at rest, select **Next**
+   i.	Browse to an accessible path to save the exported file, give the file a friendly name 
+   j.	Select **Next**, and **Finish**
+   k.	Find the exported certificate file, inspect the icon for the file
+      i.	If the icon contains a Key, then we should have the private key attached
+      ii.	If the icon does not contain a key, export the certificate again with the private key as it will be needed later
+   l.	Copy the exported file to the target machine 
+10.	Close the web browser
+
+--- 
+
+## Request a certificate using the AD CS Web Portal
+
+Alternative to the request file, we can create a certificate request directly through the Certificate Services web portal. Ideally this step will be completed on the target machine for ease of certificate installation. If that is not possible, that is ok as well, make sure to export the certificate as indicated below:
+
+1.	On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address
+For example, *https://\<servername\>/certsrv*.
+2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
+3. On the **Request a Certificate** page, select **advanced certificate request**.
+4.	Select **Create and submit a request to this CA**.
+5.	An Advanced Certificate Request page will load, complete as so:
+   a.	Certificate Template: use the template created earlier, or one designated for SCOM
+   b.	Identifying Information for Offline Template:
+      i.	Name: this should be the FQDN of the server, or how it shows in DNS
+      ii. Provide other information as appropriate for your organization
+   c.	Key Options:
+      i.	Mark keys as exportable – check this box
+   d.	Additional Options:
+      i.	Friendly Name: this should be the FQDN of the server, or how it shows in DNS
+6.	Select **Submit**.
+7.	If successful, you will be presented with a **Certificate Issued** page with an **Install this certificate link**.
+8.	Select **Install this certificate**.
+9.	The certificate will be stored in the Personal certificate store on the server this was run from.
+10. Load the *MMC* or *CertMgr* consoles.
+   a.	Navigate to Personal > Certificates
+   b.	Locate the newly created certificate
+11. If this task was completed on the target server, continue to the next main step
+12. If not on the intended target server, export the certificate:
+   a.	Select and hold the new certificate > All Tasks > Export
+   b.	In the **Certificate Export Wizard**, select **Next**
+   c.	Select **Yes, export the private key**, select **Next**
+   d.	Select **Personal Information Exchange – PKCS #12 (.PFX)**
+   e.	Check **Include all certificates in the certification path if possible**
+   f.	Check **Export all extended properties**
+   g.	Select **Next**
+   h.	Provide a memorable password to encrypt the certificate file at rest, select **Next**
+   i.	Browse to an accessible path to save the exported file, give the file a memorable name in 
+   j.	Select **Next**, and **Finish**
+   k.	Find the exported certificate file, inspect the icon for the file
+      i.	If the icon contains a Key, then we should have the private key attached
+      ii.	If the icon does not contain a key, re-export the certificate with the private key as it will be needed later
+   l.	Copy the exported file to the target machine 
+13. Close the web browser
+
+## Request a certificate using Certificate Manager
+
+For Enterprise CAs with a defined certificate template, you may be able to request a new certificate from a domain joined client machine using Certificate Manager. As this uses templates, this method does not apply to Stand-Alone CAs.
+
+1.	Log onto the target machine with administrator rights (Management Server, Gateway, Agent, etc.)
+2.	Open Certificate Manager using an Administrator Command Prompt or PowerShell window
+   a.	*certlm.msc* – will open the Local Machine certificate store 
+   b.	*mmc.msc* –will open the Microsoft Management Console 
+      i.	We will then need to load the Certificate Manager snap-in
+      ii. Go to File > Add/Remove Snap-In
+      iii. Select Certificates
+      iv. Select **Add**
+      v.	When prompted, select *Computer Account* and select **Next**
+      vi. Ensure *Local Computer* is selected and select **Finish**
+      vii. Select **OK** to close the wizard
+3.	Start the certificate request:
+   a.	Expand the folders for Personal > Certificates
+   b.	Select and hold Certificates > All Tasks > Request New Certificate
+4.	In the Certificate Enrollment wizard:
+   a.	Select **Next** on the **Before You Begin** page
+   b.	Select the applicable Certificate Enrollment Policy (default may be the **Active Directory Enrollment Policy**), select **Next**
+   c.	Find and check the box beside the Enrollment Policy template needed to create the certificate
+      i.	If the template is not immediately available, check the **Show all templates** box below the list
+      ii. If the template needed is not unavailable or has a red X beside it, please consult with your Active Directory or Certificate team
+   d.	In most environments, there will be a warning message in a hyperlink under the certificate template, select this link to continue filling out the information for the certificate
+      i.	For example:
+   e.	In the Certificate Properties wizard:
+      i.	Under the Subject tab
+         1.	In Subject Name, select the **Common Name** or **Full DN**, provide the value that is the hostname or BIOS name of the target server, click Add
+            a.	SCOM will only recognize the first name in the list
+         2.	If there is an Alternative Name, provide that
+            a.	SCOM will only recognize the first name in the list
+      ii.	Under the General tab
+         1.	Provide a Friendly Name for easy recognition once the certificate is generated
+         2.	Provide a description of the purpose of this ticket if desired
+      iii.	Under the Extensions tab
+         1.	Under Key usage
+            a.	Ensure that the selected options are “Digital Signature” and “Key encipherment”
+            b.	Ensure the “Make these key usages critical” box is checked
+         2.	Under Extended Key Usage
+            a.	Ensure that the selected options are “Server Authentication” and “Client Authentication” 
+      iv.	Under the Private Key tab
+         1.	Under Key options
+            a.	Ensure that the Key Size is at least 1024 or 2048
+            b.	Ensure that the “Make private key exportable” box is checked 
+         2.	Under Key type
+            a.	Ensure that the Exchange radio button is marked
+      v.	Under the Certification Authority tab
+         1.	Ensure that a CA is checked and that there are no errors presented
+      vi.	Under the Signature tab
+         1.	If your organization requires a registration authority, please provide a signing certificate for this request
+         2.	Otherwise continue
+      vii. When completed, click OK to close this wizard
+   f.	Once the information has been provided in the Certificate Properties wizard, the warning hyperlink from earlier will clear
+   g.	Click Enroll to create the certificate
+      i.	If there is an error, please consult your AD or certificate team
+   h.	If successful, the status will read **Succeeded** and a new certificate will be placed in the Personal/Certificates store
+5.	If these actions were taken on the intended recipient of the certificate, proceed to the next steps
+6.	Otherwise, the new certificate will need to be exported from this machine, and copied to the next
+   a.	Open the Certificate Manager window and navigate to Personal > Certificates
+   b.	Select the certificate to be exported
+   c.	Right-click > All Tasks > Export
+   d.	In the Certificate Export Wizard
+      i.	Click Next on the Welcome page
+      ii. Ensure that “Yes, export the private key” is selected
+      iii. Select “Personal Information Exchange – PKCS #12 (.PFX)” from the format options
+         1.	Check the box for “Include all certificates in the certification path if possible”
+         2.	Check the box for “Export all extended properties”
+      iv. Click Next
+      v.	Provide a known password to encrypt the certificate file 
+      vi. Click Next
+      vii. Provide an accessible path and recognizable file name for the certificate
+   e.	Copy the newly created certificate file to the target machine
+
+## Install the certificate on the target machine
+
+To use the newly created certificate, it will need to be imported into the certificate store on the client machine.
+
+### Add the certificate to the Certificate Store
+
+1.	Log onto the computer that we created the certificate for (Management Server, Gateway, or Agent)
+2.	Copy the certificate created above to an accessible location on this machine
+3.	Open an Administrator Command Prompt or PowerShell window
+4.	Navigate to the folder where the certificate file is located
+5.	Run the below command, be sure to replace “NewCertificate.cer” with the correct name/path of the file:
+
+   `CertReq -Accept -Machine NewCertificate.cer`
+
+6.	This certificate should now be present in the Local Machine Personal store on this computer
+
+Alternatively, you may also be able to install the certificate by right-clicking on it, selecting Install, select Local Machine and choosing the destination of personal store.
+
+>[!NOTE]
+>If a certificate is added to the certificate store with the private key and is later deleted from the store, when the certificate is re-imported, it may no longer contain the private key. The private key is required for SCOM communications to take place as it is used to encrypt outgoing data. We can repair the certificate using [certutil](/windows-server/administration/windows-commands/certutil#-repairstore), we will need to provide the serial number of the cert. 
+>For example, to restore the private key, use the below command in an Administrator Command Prompt or PowerShell window:
+>`certutil -repairstore my [certificateSerialNumber]`
 
 ## Import the certificate into Operations Manager  
 
@@ -314,3 +545,29 @@ To import the certificate into Operations Manager using MOMCertImport, do the fo
 11. *MOMCertImport* updates this registry location to contain the value which will match the reverse of the serial number shown on the certificate:
    
    `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber`
+
+## How to Renew a Certificate
+
+Under most cases, Operations Manager itself should generate an alert when an imported certificate it is using is nearing expiration for Management Servers and Gateways. If such an alert is received, please make sure to renew or create a new certificate for the servers before the expiration date. This will only work if the certificate contains template information (from an Enterprise CA).
+
+1.	Log onto the server with the expiring certificate
+2.	Launch the certificate configuration manager (certlm.msc)
+3.	Locate the expiring SCOM certificate
+4.	If the certificate could not be found, it may’ve either been removed or imported via file and not the certificate store. A new certificate may need to be issued for this machine from the CA. Please refer to the instructions above to do so.
+5.	If the certificate was found, there may be a few options to renew the cert: 
+   a.	Request Certificate with New Key
+   b.	Renew Certificate with New Key
+   c.	Renew Certificate with Same Key
+6.	Select the option that best applies to what you want to do and follow the wizard 
+7.	Once completed, run the MOMCertImport.exe tool to ensure SCOM has the new serial number (reversed) of the certificate if it changed, see the above section for further details.
+
+If renewing a certificate via this method is not available, you may need to request a new certificate using the steps above, or with the organization’s certificate authority. Then install and import the new certificate for use by SCOM.
+
+### Optional: Configure certificate auto-enrollment and renewal
+
+If using an Enterprise CA and your organization allows it, there is a way to configure certificate auto-enrollment and automatic renewals when they expire, this will also distribute the Trusted Root certificate to all domain-joined systems. This option will not work with Stand-Alone, or third-party CAs. For systems in a Workgroup or separate domain, then certificate renewals and enrollments will still be a manual process.
+
+For more information, please refer to the [Windows Server guide](/windows-server/networking/core-network-guide/cncg/server-certs/configure-server-certificate-autoenrollment)
+
+>[!Note]
+>Enabling this setting does not configure SCOM to use certificates, nor does it guarantee that the certificate generated will conform to SCOM’s expected certificate settings for auto-enrollment. However, renewals will use the same template used to create the initial certificate.
