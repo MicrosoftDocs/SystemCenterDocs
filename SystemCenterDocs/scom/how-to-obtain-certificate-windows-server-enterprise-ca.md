@@ -38,25 +38,25 @@ For information about creating an HTTPS binding, see [How to Configure an HTTPS 
 >- `Subject="CN=server.contoso.com" ; (this should be the FQDN or how the system shows in DNS)`
 >
 >- `[Key Usage]`
->- `Key Exportable=TRUE`
->- `HashAlgorithm = SHA256`
->- `KeyLength=2048`
->- `KeySpec=1`
->- `KeyUsage=0xf0`
->- `MachineKeySet=TRUE`
+>     - `Key Exportable=TRUE`
+>     - `HashAlgorithm = SHA256`
+>     - `KeyLength=2048`
+>     - `KeySpec=1`
+>     - `KeyUsage=0xf0`
+>     - `MachineKeySet=TRUE`
 >
 >- `[EnhancedKeyUsageExtension]`
->- `OID=1.3.6.1.5.5.7.3.1 ; Server Authentication`
->- `OID=1.3.6.1.5.5.7.3.2 ; Client Authentication`
+>     - `OID=1.3.6.1.5.5.7.3.1 ; Server Authentication`
+>     - `OID=1.3.6.1.5.5.7.3.2 ; Client Authentication`
 >
 >- `[Compatibility Settings]`
->- `Compatible with Windows Server 2003 ; (or newer based on environment)`
+>     - `Compatible with Windows Server 2003 ; (or newer based on environment)`
 >
 >- `[Cryptography Settings]`
->- `Provider Category: Legacy Cryptography Service Provider`
->- `Algorithm name: RSA`
->- `Minimum Key Size: 2048 ; (2048 or 4096 as per security requirement.)`
->- `Providers: Microsoft RSA Schannel Cryptographic Provider`
+>     - `Provider Category: Legacy Cryptography Service Provider`
+>     - `Algorithm name: RSA`
+>     - `Minimum Key Size: 2048 ; (2048 or 4096 as per security requirement.)`
+>     - `Providers: Microsoft RSA Schannel Cryptographic Provider`
 
 >[!Important]
 >The content for this topic is based on the default settings for AD-CS; for example, the standard key length is 2048, and select Microsoft Software Key Storage Provider as CSP and Secure Hash Algorithm 256 (SHA256). Evaluate these selections against the requirements of your company's security policy.
@@ -198,57 +198,65 @@ More information, see [certificate templates](/previous-versions/windows/it-pro/
 
 ## Request a certificate using a request file
 
-**Create a setup information (.inf) file**
+### Create a setup information (.inf) file
 
-1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open Notepad.
+1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a new text file in a text editor.
 
 2. Create a text file containing the following content:
 
-   ```
-   [NewRequest]
+```
 
-   Subject="CN=<FQDN of computer you are creating the certificate, for example, the gateway server or management server.>"
+[NewRequest]
+Subject=”CN=server.contoso.com”
+Key Exportable = TRUE  ; Private key is exportable
+HashAlgorithm = SHA256
+KeyLength = 2048  ; (2048 or 4096 as per Organization security requirement.)
+KeySpec = 1  ; Key Exchange – Required for encryption
+KeyUsage = 0xf0  ; Digital Signature, Key Encipherment
+MachineKeySet = TRUE
+ProviderName = "Microsoft RSA SChannel Cryptographic Provider"
+ProviderType = 12
+KeyAlgorithm = RSA
 
-   Exportable=TRUE
+; Optionally include the Certificate Template for Enterprise CAs, remove the ; to uncomment
+; [RequestAttributes]
+; CertificateTemplate="SystemCenterOperationsManager"
 
-   KeyLength=2048
+[EnhancedKeyUsageExtension]
+OID = 1.3.6.1.5.5.7.3.1  ; Server Authentication
+OID = 1.3.6.1.5.5.7.3.2  ; Client Authentication
 
-   KeySpec=1
-
-   KeyUsage=0xf0
-
-   MachineKeySet=TRUE
-
-   [EnhancedKeyUsageExtension]
-
-   OID=1.3.6.1.5.5.7.3.1
-
-   OID=1.3.6.1.5.5.7.3.2
-
-   ```
+```
 
 3. Save the file with an .inf file name extension.
-For example, *RequestConfig.inf*.
+For example, *CertRequestConfig.inf*.
 
-4. Close Notepad.
+4. Close text editor.
 
 
-## Create a request file
+### Create a Certificate request file
+
+This process encodes the information specified in our config file in Base64 and outputs to a new file.
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open an Administrator command prompt.
 
-2. In the command window, enter **CertReq -New -f RequestConfig.inf CertRequest.req**, and select Enter.
+2. Navigate to the same directory where the .inf file is located.
 
-3. Open the file using Notepad, (for example, *CertRequest.req*), and copy the contents of this file into the clipboard.
+3.	Run the below command, modifying the *.inf* and *.req* file names as needed (leave the .req extension as-is):
 
-## Submit a request to the CA using the request file
+   ```
 
->[!Note]
->HTTPS binding needs to be configured on the Certificate Services Web site of the CA, otherwise we may fail to connect to the website. For more information, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).  
+   CertReq –New –f CertRequestConfig.inf CertRequest.req
+
+   ```
+
+4.	Open the newly created file and copy the contents.
+
+## Submit a new certificate request in the AD CS web portal using the request file
 
 To submit a request to an enterprise CA, do the following:
 
-1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate Services. 
+1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address
 For example, *https://\<servername\>/certsrv*.
 
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
@@ -259,46 +267,50 @@ For example, *https://\<servername\>/certsrv*.
 
 5. On the **Submit a Certificate Request or Renewal Request** page, in the **Saved Request** text box, paste the contents of the *CertRequest.req* file that you copied in step 4 in the previous procedure.
 
-6. In the **Certificate Template**, select the certificate template that you created.
+6. On the **Certificate Template**, select the certificate template that you created (note that this may take some time to propagate across the environment).
 For example, *OperationsManagerCert*, and then select **Submit**.
 
-7. On the **Certificate Issued** page, select **Base 64 encoded** > **Download certificate**.
+7. 9.	If successful, on the **Certificate Issued** page, select **Base 64 encoded** > **Download certificate**.
 
-8. Name and save the certificate to an accessible location.
+8. Save the certificate to an accessible location and give it a friendly name.
 For example, save as *SCOM-MS01.cer*.
 
 9. Close the web browser.
 
-## Import the certificate into the certificate store
+## Import the certificate into Operations Manager  
 
-To import the certificate into the certificate store, do the following:
+Simply having the certificate installed on the system is not enough, we also need to update Operations Manager to be aware of the certificate that we want it to use. The actions below will restart the Microsoft Monitoring Agent service.
 
-1. On the computer hosting the Operations Manager feature for which you are configuring the certificate, select **Start** > **Run**.
-
-2. In the **Run** dialog, enter **cmd**, and select **OK**.
-
-3. In the command window, enter **CertReq -Accept NewCertifiate.cer**, and select Enter.
-
-## Import the certificate into Operations Manager using MOMCertImport 
+This uses the *MOMCertImport.exe* utility included in the **SupportTools** folder in the Operations Manager installation media. Please copy this file to your server.
 
 To import the certificate into Operations Manager using MOMCertImport, do the following:
 
-1. Log on to the computer where you installed the certificate with an account that is a member of the Administrators group.
+1.	Log onto the computer that we created the certificate for
+2.	Open an Administrator Command Prompt or PowerShell window
+3.	Navigate to the folder where the *MOMCertImport.exe* utility is saved
+4.	Run the *MomCertImport.exe* utility
+   a.	In CMD:
+      i.	*MOMCertImport.exe*
+   b.	In PowerShell:
+      i.	*.\MOMCertImport.exe*
+5.	When ran, a GUI Window will pop up asking to **Select a Certificate**
+   a.	There will be a list of certificates, if you do not immediately see a list, select **More choices**.
+6.	From the list, select the new certificate for this machine
+   a.	Select **You can verify the certificate by selecting** to view the certificate properties.
+7.	Select **OK**
+8.	If successful, below message will display in the console:
 
-2. On the Windows desktop, select **Start** > **Run**.
+   `Successfully installed the certificate. Please check Operations Manager log in eventviewer to check channel connectivity.`
 
-3. In the **Run** dialog, enter **cmd**, and select **OK**.
+9.	To validate, go to **Event Viewer** > **Applications and Services Logs** > **Operations Manager for an Event ID 20053**. This indicates that the authentication certificate was loaded successfully
+10. If Event ID 20053 is not present on the system, look for one of these Event IDs for errors and correct accordingly:
+    - 20049 
+    - 20050 
+    - 20052 
+    - 20066 
+    - 20069 
+    - 20077
 
-4. At the command prompt, enter */<drive_letter/>*: (where */<drive_letter/>* is the drive where the Operations Manager installation media is located), and select Enter.
-
-5. Enter *cd\SupportTools\i386*, and select Enter.
-
-    >[!Note]
-    >On 64-bit computers, enter *cd\SupportTools\amd64*
-
-6. Enter the following:
-
-   **MOMCertImport /SubjectName \<Certificate Subject Name\>**
-
-7. Select Enter.
-
+11. *MOMCertImport* updates this registry location to contain the value which will match the reverse of the serial number shown on the certificate:
+   
+   `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber`
