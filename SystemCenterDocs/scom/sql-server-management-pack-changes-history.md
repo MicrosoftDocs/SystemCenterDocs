@@ -19,8 +19,8 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Added a new 'Timeout for query execution (seconds)' override which can now be used in all workflows
-- Added a new 'Number of samples' override to the "Database Status" monitor to help avoid alert storming
+- Added 'Timeout for query execution (seconds)' override which can now be used in all workflows
+- Added 'Number of samples' override to the "Database Status" monitor to help avoid alert storming
 - Added support for the SQL Server 2022 public preview
 - Added support for enabling debug logging in Windows Event Log
 - Added support for enabling diagnostic tracing in the SCOM toolset

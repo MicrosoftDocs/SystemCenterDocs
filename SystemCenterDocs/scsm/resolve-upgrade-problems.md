@@ -112,7 +112,7 @@ There are two workaround procedures that you can use to try to resolve the issue
 
 ### To disable signature verification  
 
-1.  On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center <version>\\Service Manager folder.  
+1.  On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center \<version\>\\Service Manager folder.  
 
 2.  In the `<runtime> </runtime>` section, add `<generatePublisherEvidence enabled="false">`.  
 

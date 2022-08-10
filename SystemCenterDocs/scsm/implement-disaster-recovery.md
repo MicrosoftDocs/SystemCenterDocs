@@ -127,7 +127,7 @@ When you first ran Setup for Service Manager, you installed the initial Service 
     -   Microsoft Monitoring Agent  
     -   System Center Management Configuration  
 5.  Leave the **Services** window open.  
-6.  Open Windows Explorer. Locate the folder \\Program Files\\Microsoft System Center <version>\\Service Manager.  
+6.  Open Windows Explorer. Locate the folder \\Program Files\\Microsoft System Center \<version\>\\Service Manager.  
 7.  In this folder, delete the Health Service State folder and all of its contents.  
 
 #### To define the computer name for the Service Manager database  
