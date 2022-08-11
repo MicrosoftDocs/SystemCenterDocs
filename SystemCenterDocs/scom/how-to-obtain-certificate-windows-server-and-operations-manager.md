@@ -467,7 +467,7 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
       1. Once the information has been provided in the Certificate Properties wizard, the warning hyperlink from earlier will clear
       1. Select **Enroll to create the certificate**
           1. If there is an error, please consult your AD or certificate team
-          1. If successful, the status will read **Succeeded** and a new certificate will be placed in the Personal/Certificates store
+      1. If successful, the status will read **Succeeded** and a new certificate will be placed in the Personal/Certificates store
 5. If these actions were taken on the intended recipient of the certificate, proceed to the next steps
 6. Otherwise, the new certificate will need to be exported from this machine, and copied to the next
       1. Open the Certificate Manager window and navigate to Personal > Certificates
@@ -544,7 +544,7 @@ To import the certificate into Operations Manager using MOMCertImport, do the fo
 
 11. *MOMCertImport* updates this registry location to contain the value which will match the reverse of the serial number shown on the certificate:
    
-   `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber`
+      `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber`
 
 ## How to Renew a Certificate
 
