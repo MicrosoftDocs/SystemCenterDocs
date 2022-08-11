@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/23/2021
+ms.date: 08/11/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -100,6 +100,9 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 managem
 |glibc|C Standard Libraries|2.12-1.7|  
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
 |PAM|Pluggable Authentication Modules|1.1.1-4|  
+
+>[!NOTE]
+>Solaris zone-level monitoring is not supported.
 
 ## Solaris 10 SPARC
 
@@ -196,6 +199,8 @@ Supported versions:
 
 - CentOS 7
 - Oracle Linux 7, and 8
+- Rocky 8 (supported from Operations Manager 2019 UR4 and later)
+- Alma 8 (supported from Operations Manager 2019 UR4 and later)
 
 Oracle Linux 8 is supported from SCOM 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
@@ -229,7 +234,9 @@ Supported versions:
 - CentOS 7
 - Oracle Linux 7 and 8
 - SLES 15
-- openSUSE Leap 15
+- openSUSE Leap 15t
+- Rocky 8 
+- Alma 8 
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -339,6 +346,17 @@ The following tables describe the required UNIX and Linux operating systems and 
 |glibc|C Standard Libraries|2.17|  
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|  
 |PAM|Pluggable Authentication Modules|1.1.8|  
+
+::: moniker -end
+
+::: moniker range="sc-om-2016"
+
+>[!NOTE]
+>Solaris zone-level monitoring is not supported.
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807"
 
 ## Solaris 10 SPARC  
 
