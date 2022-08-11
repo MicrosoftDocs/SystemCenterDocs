@@ -347,13 +347,11 @@ The following tables describe the required UNIX and Linux operating systems and 
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|  
 |PAM|Pluggable Authentication Modules|1.1.8|  
 
-::: moniker -end
+::: moniker-end
 
 ::: moniker range="sc-om-2016"
-
 >[!NOTE]
 >Solaris zone-level monitoring is not supported.
-
 ::: moniker-end
 
 ::: moniker range="<=sc-om-1807"
