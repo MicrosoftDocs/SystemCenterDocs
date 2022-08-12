@@ -15,7 +15,7 @@ ms.technology: service-provider-foundation
 
 ::: moniker range="=sc-spf-2022"
 
-You must have System Center - Service Provider Foundation 2019 installed to apply the 2022 update.
+You must have System Center - Service Provider Foundation 2019 installed to upgrade to SPF 2022.
 
 [!INCLUDE [upgrade-to-spf-2022.md](../includes/upgrade-to-spf-2022.md)]
 
