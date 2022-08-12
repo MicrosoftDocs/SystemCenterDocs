@@ -4,7 +4,7 @@ description: include file to provide information about how to upgrade to System 
 author: jyothisuri
 ms.author: jsuri
 manager:  evansma
-ms.date: 
+ms.date: 08/12/22
 ms.topic: include
 ms.prod:  system center
 ms.technology:  service-provider-foundation
@@ -38,7 +38,7 @@ The upgrade instructions in this article assume the following scenario:
 
 Here's the recommended upgrade order for the above scenario:
 
-1. Update the VMM console to 2022. If required, update the VMM server to 2022.
+1. Update the VMM console to 2022. If necessary, update the VMM server to 2022.
 2. Update SPF to 2022.
 
 
@@ -89,7 +89,7 @@ Prepare the SPF 2022 computer on which you want to run the upgrade.
 2. If you do use a self-signed certificate:
     - It should be used only for testing purposes.
     - The FQDN should be specified for the certification path instead of "localhost".
-    - It should be located in the personal or webhosting store.
+    - It should be located in the personal or web hosting store.
 
 ## Test Windows Azure Pack
 
