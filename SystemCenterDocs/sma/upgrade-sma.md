@@ -4,7 +4,7 @@ title: Upgrade information for System Center Service Management Automation
 description: This article details the upgrade information and procedures for Service Management Automation
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: mkluck
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
@@ -12,6 +12,14 @@ ms.technology: service-management-automation
 ---
 
 # Upgrade Service Management Automation
+
+::: moniker range=">=sc-sma-2022"
+
+This article provides the upgrade information for System Center 2022 - Service Management Automation (SMA).
+
+[!INCLUDE [upgrade-to-sma-2022.md](../includes/upgrade-to-sma-2022.md)]
+
+::: moniker-end
 
 ::: moniker range=">=sc-sma-2019"
 
