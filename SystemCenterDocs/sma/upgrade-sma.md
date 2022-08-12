@@ -13,7 +13,7 @@ ms.technology: service-management-automation
 
 # Upgrade Service Management Automation
 
-::: moniker range=">=sc-sma-2022"
+::: moniker range="=sc-sma-2022"
 
 This article provides the upgrade information for System Center 2022 - Service Management Automation (SMA).
 

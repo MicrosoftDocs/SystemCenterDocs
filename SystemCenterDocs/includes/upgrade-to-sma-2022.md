@@ -6,13 +6,13 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod:  system center
 keywords:  
-ms.date: 
+ms.date:
 title:  include file
 ms.technology:  service-management-automation
-ms.assetid: 
+ms.assetid:
 ---
 
-## Upgrade to System Center 2019 - Service Management Automation
+## Upgrade to System Center 2022 - Service Management Automation
 
 
 The following sections provide information about how to upgrade your existing Service Management Automation 2019 to Service Management Automation 2022.
