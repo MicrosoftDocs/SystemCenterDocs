@@ -20,12 +20,12 @@ The following sections provide information about how to upgrade your existing Se
 > [!NOTE]
 > To upgrade to System Center 2022 - SMA, you must have SMA 2019 installed.
 
-## Prerequisites
+## Prerequisites to upgrade
 
 - Review the [System Requirements for Service Management Automation](../sma/system-requirements-sma.md) to determine whether your current version of SMA supports upgrade to SMA 2022.
 - Perform a full backup of the SMA database as a precaution. It is a standard SQL Server database, and you can use standard tools and processes for [backing up SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
-## Upgrading
+## Upgrading to SMA 2022
 
 There is no in place upgrade for SMA servers, so you must uninstall the existing servers before installing the new ones.  You can keep the database intact, which contains the runbooks and configuration settings.  
 
