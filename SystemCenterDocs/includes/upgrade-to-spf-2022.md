@@ -28,7 +28,7 @@ The following sections describe the procedures required to upgrade from SPF 2019
 ## Assumptions
 The upgrade instructions in this article assume the following scenario:
 
-- SPF and VMM are running on System Center 2019,
+- SPF and VMM are running on System Center 2019.
 - We highly recommend that you reuse the current SPF server name to simplify the seamless integration into your existing Windows Azure Pack deployment.
 - The VMM console is installed on a separate computer.
 - The upgrade uses the existing SPF server name.
