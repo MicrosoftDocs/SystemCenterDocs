@@ -34,6 +34,13 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 |Integration Toolkit .NET IP|An Integration Pack for running .NET-based Orchestrator-compatible activity assemblies directly. Contains the Invoke .NET and Monitor .NET activities.|  
 |Integration Toolkit SDK Library|A set of files that are used by developers utilizing the Orchestrator SDK to write custom activities.|  
 
+::: moniker range="sc-orch-2022"
+
+> [!NOTE]
+> `CLIActivityWizard` is absent from v10.22.3.1 release. It is not deprecated and will be included in the next minor release.
+
+::: moniker-end
+
 ## What’s New in the Integration Toolkit  
  This section describes the changes in the product, including bug fixes, new and enhanced features, and new information about the Orchestrator Integration Toolkit.  
 
