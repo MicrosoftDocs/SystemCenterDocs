@@ -34,7 +34,7 @@ Ensure you have the following:
 - If you have any one of these scenarios and wish to create a certificate using means outside these instructions or need the certificate specifications, ensure the certificate meets the following requirements for Operations Manager to use the certificate:
 
 ```
-- `Subject="CN=server.contoso.com" ; (this should be the FQDN or how the system shows in DNS)`
+- Subject="CN=server.contoso.com" ; (this should be the FQDN or how the system shows in DNS)
 
 - [Key Usage]
      - Key Exportable=TRUE
@@ -381,7 +381,7 @@ For example, `https://<servername>/certsrv`.
       1. Provide a password to encrypt the certificate file at rest, select **Next**.
       1. Save the exported file and provide friendly name. 
       1. Select **Next**, and **Finish**.
-      1. j.	Locate the exported certificate file and inspect the icon for the file.
+      1. Locate the exported certificate file and inspect the icon for the file.
           1. If the icon contains a Key, then you must have the private key attached.
           1. If the icon does not contain a key, re-export the certificate with the private key as you need it for later use.
       1. Copy the exported file to the target machine.
@@ -436,7 +436,7 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
           1. Select **Next** on the Welcome page.
           1. Ensure to select **Yes, export the private key**.
           1. Select **Personal Information Exchange – PKCS #12 (.PFX)** from the format options.
-              1. Select**Include all certificates in the certification path if possible** and **Export all extended properties** checkboxes.
+              1. Select **Include all certificates in the certification path if possible** and **Export all extended properties** checkboxes.
           1. Select **Next**.
           1. Provide a known password to encrypt the certificate file.
           1. Select **Next**.
