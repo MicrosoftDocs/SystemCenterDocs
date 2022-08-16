@@ -528,3 +528,4 @@ For more information, see [Windows Server guide](/windows-server/networking/core
 >[!Note]
 >Auto-enrolment and renewal don’t configure Operations Manager to use certificates, nor does it guarantee that the certificate generated will confirm to SCOM’s Operations Manager’s expected certificate settings for auto-enrollment. However, renewals will use the same template used to create the initial certificate.
 
+
