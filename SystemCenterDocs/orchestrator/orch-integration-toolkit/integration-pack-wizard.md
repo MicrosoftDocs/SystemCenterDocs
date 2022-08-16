@@ -108,18 +108,18 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 
  Prior to converting an IP, the following steps must be completed:  
 
--   If the activities in your IP were created using the QIK CLI Wizard and you have not already converted them to be compatible with Orchestrator, you must follow the steps outlined in QIK CLI Activity Migration before continuing. If you do not have a separate copy of the assembly containing the activities, you will need to install the IP to an Opalis 6.3 server first and then locate the assembly in the following directory: “C:\Program Files (x86)\Common Files\Opalis Software\Opalis Integration Server\Extensions\Support\Quick Integration Kit 3”.  
+-   If the activities in your IP were created using the QIK CLI Wizard and you have not already converted them to be compatible with Orchestrator, you must follow the steps outlined in [QIK CLI Activity Migration][cli-migration] before continuing. If you do not have a separate copy of the assembly containing the activities, you will need to install the IP to an Opalis 6.3 server first and then locate the assembly in the following directory: `C:\Program Files (x86)\Common Files\Opalis Software\Opalis Integration Server\Extensions\Support\Quick Integration Kit 3`.  
 
--   If the activities in your IP were custom-developed using C# using the Opalis API and you have not already converted them to be compatible with Orchestrator, you must follow the steps outlined in Migrating QIK API Custom Activities before continuing.  
+-   If the activities in your IP were custom-developed using C# using the Opalis API and you have not already converted them to be compatible with Orchestrator, you must follow the steps outlined in [Migrating QIK API Custom Activities][opalis-migration] before continuing.  
 
     > [!NOTE]
     >  Java-based activities using the Opalis API for Java are no longer supported by the Integration Toolkit or by Orchestrator.  
 
--   If your IP contains dependent or other included files, those file must be available to repackage into the new IP. If you do not have a separate copy of these files, you will need to install the IP to an Opalis 6.3 server first and then locate the files in the following directory: “C:\Program Files (x86)\Common Files\Opalis Software\Opalis Integration Server\Extensions\Support\Bin”.  
+-   If your IP contains dependent or other included files, those file must be available to repackage into the new IP. If you do not have a separate copy of these files, you will need to install the IP to an Opalis 6.3 server first and then locate the files in the following directory: `C:\Program Files (x86)\Common Files\Opalis Software\Opalis Integration Server\Extensions\Support\Bin`.  
 
--   If your IP contains a custom resource file used for activity and category icons, that file must be available for the new IP. If you do not have a separate copy of this file, you will need to install the IP to an Opalis 6.3 server first and then locate the file in the following directory: “C:\Program Files (x86)\Common Files\Opalis Software\Opalis Integration Server\Extensions”.  
+-   If your IP contains a custom resource file used for activity and category icons, that file must be available for the new IP. If you do not have a separate copy of this file, you will need to install the IP to an Opalis 6.3 server first and then locate the file in the following directory: `C:\Program Files (x86)\Common Files\Opalis Software\Opalis Integration Server\Extensions`.  
 
--   If your IP used the standard icons provided by QIK for the category or activity icons and you wish to continue using those icons instead of using the new icons provided in Orchestrator, you will need to obtain the Opalis.QIK.Wizard.Images.dll file and use it as you would a custom resource file. If you do not have a separate copy of this file, you will need to install the IP to an Opalis 6.3 server first and then locate the file in the following directory: “C:\Program Files (x86)\Common Files\Opalis Software\Opalis Integration Server\Extensions”.  
+-   If your IP used the standard icons provided by QIK for the category or activity icons and you wish to continue using those icons instead of using the new icons provided in Orchestrator, you will need to obtain the `Opalis.QIK.Wizard.Images.dll` file and use it as you would a custom resource file. If you do not have a separate copy of this file, you will need to install the IP to an Opalis 6.3 server first and then locate the file in the following directory: `C:\Program Files (x86)\Common Files\Opalis Software\Opalis Integration Server\Extensions`.  
 
 > [!NOTE]
 >  For the easiest conversion process, you should place all of these files in the locations they were in when the IP was originally packaged before starting the IP Wizard. The IP Wizard references these files by their original paths. Selecting a new path is possible for all files, but selecting a new path for assemblies containing the activities will result in some of the details of the activity to be reset, requiring you to re-enter the information. By using the original paths for the files, the existing information is simply re-used without having to re-enter it.  
@@ -145,6 +145,9 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 9. Enter a path and filename for the new IP file. Do not use the same name as the previous IP so that you can ensure that you retain a copy of the previous IP. Click **Next** to build the IP.  
 
    You now have an IP that is compatible with Orchestrator and can be registered and deployed using Orchestrator Deployment Manager.  
+
+[cli-migration]: ./command-line-activity-wizard#qik-cli-activity-migration
+[opalis-migration]: /previous-versions/system-center/developer/hh855057(v=msdn.10)
 
 ## Integration Packs – Known Issues  
 

@@ -140,13 +140,17 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 -   When packaging an IP that contains commands created via the Command-Line Activity Wizard that utilize the SSH Command option, all of the SSH commands must be within a single CLI assembly. If the IP contains more than one assembly that uses SSH commands, only the first assembly’s commands will function.  
 
 ## Activity and IP Compatibility with Orchestrator  
- System Center Orchestrator Integration Toolkit has undergone some significant changes in the underlying framework since the previous release as the Opalis Quick Integration Kit. These changes make activities created using the CLI Wizard and activities developed using the Opalis API, as well as Integration Packs packed by the QIK Wizard incompatible with Orchestrator. In order to utilize these activities in Orchestrator, they must be converted to use the new framework. The manner in which these activities were created determines the process required to convert them:  
+ System Center Orchestrator Integration Toolkit has undergone some significant changes in the underlying framework since the original release under the name "Opalis Quick Integration Kit". These changes make activities created using the CLI Wizard and activities developed using the Opalis API, as well as Integration Packs packed by the QIK Wizard incompatible with Orchestrator. In order to utilize these activities in Orchestrator, they must be converted to use the new framework. The manner in which these activities were created determines the process required to convert them:  
 
--   Activities created using the QIK CLI Wizard and used in workflows via the **Invoke .NET** activity need simply to be loaded and regenerated using the new Command-Line Activity Wizard. The required process is defined in the section QIK CLI Activity Migration.  
+|       Created by        |      Packaged by      |                                                 Process                                                 |
+| ----------------------- | --------------------- | ------------------------------------------------------------------------------------------------------- |
+| QIK `CLIActivityWizard` | None                  | [QIK CLI Activity Migration][cli-migration] and use **Invoke .NET** activity                                |
+| QIK `CLIActivityWizard` | QIK `IPWizard`        | [QIK CLI Activity Migration][cli-migration] + [repackage using `IPWizard`][ipwiz-migration]                 |
+| Opalis API              | Opalis/QIK `IPWizard` | [Migrating QIK API Custom Activities][opalis-migration] + [repackage using `IPWizard`][ipwiz-migration] |
 
--   Activities created using the QIK CLI Wizard and then packaged into an Integration Pack using the QIK Wizard require a two-step process. This includes regenerating the assembly or assemblies for the activities using the process defined in QIK CLI Activity Migration, and then repackaging the IP using the new Integration Pack Wizard using the process defined in QIK IP Migration.  
-
--   Activities developed using the Opalis API and then packaged into an Integration Pack using the QIK Wizard also require a two-step process which involves modifying the source code using the process defined in QIK API Custom Activity Migration, and repackaging the IP using the new Integration Pack Wizard using the process defined in QIK IP Migration.  
+[cli-migration]: ./command-line-activity-wizard#qik-cli-activity-migration
+[opalis-migration]: /previous-versions/system-center/developer/hh855057(v=msdn.10)
+[ipwiz-migration]: ./integration-pack-wizard#qik-integration-pack-migration
 
 ## See Also  
  [Orchestrator documentation](../learn-about-orchestrator.md)   
