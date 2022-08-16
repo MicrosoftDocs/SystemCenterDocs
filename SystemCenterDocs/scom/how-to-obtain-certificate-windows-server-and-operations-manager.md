@@ -33,6 +33,7 @@ Ensure you have the following:
 
 - If you have any one of these scenarios and wish to create a certificate using means outside these instructions or need the certificate specifications, ensure the certificate meets the following requirements for Operations Manager to use the certificate:
 
+```
 - `Subject="CN=server.contoso.com" ; (this should be the FQDN or how the system shows in DNS)`
 
 - `[Key Usage]`
@@ -55,6 +56,7 @@ Ensure you have the following:
      - `Algorithm name: RSA`
      - `Minimum Key Size: 2048 ; (2048 or 4096 as per security requirement.)`
      - `Providers: Microsoft RSA Schannel Cryptographic Provider`
+```
 
 >[!Important]
 >For this topic, the default settings for AD-CS are as below: 
@@ -404,16 +406,17 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
       1. Expand the folders for Personal > Certificates.
       1. Select and hold Certificates > All Tasks > Request New Certificate.
 4. **Certificate Enrollment wizard**
-      1. a.	On the **Before You Begin** page, select **Next**.
+      1. On the **Before You Begin** page, select **Next**.
       1. Select the applicable Certificate Enrollment Policy (default may be the **Active Directory Enrollment Policy**), select **Next**
-      1. c.	Select the desired Enrollment Policy template to create the certificate
+      1. Select the desired Enrollment Policy template to create the certificate
           1. If the template is not immediately available, select **Show all templates** box below the list
           1. If the template needed is available with a red X beside it, please consult your Active Directory or Certificate team
       1. In most environments, you can find a warning message with a hyperlink under the certificate template, select the link and continue to fill the information for the certificate.
           
       1. **Certificate Properties wizard:**
+         
          |Tab|Description|
-         |----|----------------|
+         |----|---------------|
          |Subject| 1. In Subject Name, select the **Common Name** or **Full DN**, provide the value - hostname or BIOS name of the target server, Select **Add**.|
          |General| 1. 1.	Provide a Friendly Name to the generated certificate.</br> 2. Provide a description of the purpose of this ticket if desired.|
          |Extensions| 1. Under Key usage, ensure to select **Digital Signature** and **Key encipherment** option and select **Make these key usages critical** checkbox.<br></br> 2. Under Extended Key Usage, ensure to select **Server Authentication** and **Client Authentication** options.|
