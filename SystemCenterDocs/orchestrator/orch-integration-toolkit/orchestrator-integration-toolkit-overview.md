@@ -29,7 +29,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 |Component|Description|  
 |-|-|    
-|Command-Line Activity Wizard|A utility that allows users to define activities that contain commands that run via Windows command shell, PowerShell, or SSH, and package them into an assembly (.DLL) that can be used with the .NET IP or packaged into a new Integration Pack.|  
+|Command-Line Activity Wizard|A utility that allows users to define activities containing commands that run via Windows command shell, PowerShell, or SSH, and package them into an assembly (.DLL) that can be used with the .NET IP or packaged into a new Integration Pack.|  
 |Integration Pack Wizard|A utility designed to package Orchestrator-compatible activity assemblies and dependent files into a deployable Integration Pack file.|  
 |Integration Toolkit .NET IP|An Integration Pack for running .NET-based Orchestrator-compatible activity assemblies directly. Contains the Invoke .NET and Monitor .NET activities.|  
 |Integration Toolkit SDK Library|A set of files that are used by developers utilizing the Orchestrator SDK to write custom activities.|  
@@ -37,9 +37,20 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 ## What’s New in the Integration Toolkit  
  This section describes the changes in the product, including bug fixes, new and enhanced features, and new information about the Orchestrator Integration Toolkit.  
 
+
 ### Major Changes  
 
 #### Installation  
+
+::: moniker range="sc-orch-2022"
+
+-   The Integration Toolkit supports the latest (v3.11) of the WiX Toolset. Users must install latest WiX binaries manually from the [official webpage][wix-official].
+
+[wix-official]: https://wixtoolset.org/
+
+::: moniker end
+
+::: moniker range="<=sc-orch-2019"
 
 -   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset.
 
@@ -112,6 +123,8 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 #### Integration Pack Wizard  
 
 -   Fixed an issue where the files from an IP were not removed when the IP was uninstalled.  
+
+:: moniker end
 
 ### Known Issues  
 
