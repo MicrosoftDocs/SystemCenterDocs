@@ -148,9 +148,9 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 | QIK `CLIActivityWizard` | QIK `IPWizard`        | [QIK CLI Activity Migration][cli-migration] + [repackage using `IPWizard`][ipwiz-migration]                 |
 | Opalis API              | Opalis/QIK `IPWizard` | [Migrating QIK API Custom Activities][opalis-migration] + [repackage using `IPWizard`][ipwiz-migration] |
 
-[cli-migration]: ./command-line-activity-wizard#qik-cli-activity-migration
+[cli-migration]: command-line-activity-wizard.md#qik-cli-activity-migration
 [opalis-migration]: /previous-versions/system-center/developer/hh855057(v=msdn.10)
-[ipwiz-migration]: ./integration-pack-wizard#qik-integration-pack-migration
+[ipwiz-migration]: integration-pack-wizard.md#qik-integration-pack-migration
 
 ## See Also  
  [Orchestrator documentation](../learn-about-orchestrator.md)   

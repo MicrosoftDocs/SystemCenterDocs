@@ -146,7 +146,7 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 
    You now have an IP that is compatible with Orchestrator and can be registered and deployed using Orchestrator Deployment Manager.  
 
-[cli-migration]: ./command-line-activity-wizard#qik-cli-activity-migration
+[cli-migration]: command-line-activity-wizard.md#qik-cli-activity-migration
 [opalis-migration]: /previous-versions/system-center/developer/hh855057(v=msdn.10)
 
 ## Integration Packs – Known Issues  
