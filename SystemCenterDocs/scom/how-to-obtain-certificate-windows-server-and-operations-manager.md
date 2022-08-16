@@ -13,27 +13,23 @@ ms.technology: operations-manager
 
 # How to obtain a certificate for use with Windows Servers and System Center Operations Manager
 
-*Applies to:* System Center Operations Manager, Windows Server and AD CS 2012 R2 or newer
+This article provides information about how you can obtain a certificate to be used with Operations Manager Management Server, Gateway, or Agent using either a Stand-Alone or Enterprise Active Directory Certificate Services (AD CS) Certificate Authority (CA) server on the Windows platform.
 
-Using the procedures below, you will be able to obtain a certificate to be used with Operations Manager Management Server, Gateway, or Agent using either a Stand-Alone or Enterprise Active Directory Certificate Services (AD CS) Certificate Authority (CA) server on the Windows platform.
-
-You use the [certreq](/windows-server/administration/windows-commands/certreq_1) command-line utility to request and accept a certificate, and you use a Web interface to submit and retrieve your certificate.
+To request and accept a certificate, use the [certreq](/windows-server/administration/windows-commands/certreq_1) command-line utility. To submit and retrive a certificate, you can use a web-interface.
 
 ## Prerequisites
 
-You must have the following:
+Ensure the following:
 
 - AD-CS installed and configured in the environment with web services.
-- a HTTPS binding and its associated certificate has been installed.
-- typical desktop experience and are not Core servers. 
-
-For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).
+- A HTTPS binding and its associated certificate has been installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).
+- Typical desktop experience and are not Core servers. 
 
 >[!NOTE]
 >
 >If your organization is not using AD CS or does not use the accompanying web services, the steps below will not completely apply to your environment. If you are using an external certificate authority, these steps will not cover that scenario.
 >
->If you are covered by one of these scenarios and wish to create a certificate using means outside these instructions, or just need the certificate specifications, please make sure the certificate meets these requirements for SCOM to use the certificate:
+>If you are covered by one of these scenarios and wish to create a certificate using means outside these instructions, or just need the certificate specifications, please make sure the certificate meets these requirements for Operations Manager to use the certificate:
 >
 >- `Subject="CN=server.contoso.com" ; (this should be the FQDN or how the system shows in DNS)`
 >
