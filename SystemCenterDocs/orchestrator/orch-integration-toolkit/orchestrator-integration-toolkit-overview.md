@@ -55,7 +55,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 [wix-official]: https://wixtoolset.org/
 
-::: moniker end
+::: moniker-end
 
 ::: moniker range="<=sc-orch-2019"
 
@@ -131,7 +131,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 -   Fixed an issue where the files from an IP were not removed when the IP was uninstalled.  
 
-:: moniker end
+::: moniker-end
 
 ### Known Issues  
 

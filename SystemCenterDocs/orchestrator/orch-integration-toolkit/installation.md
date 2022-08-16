@@ -70,7 +70,7 @@ This article provides the system requirements and steps to install the Orchestra
 
 ::: moniker range="sc-orch-2022"
 
-1. Download `System_Center_Orchestrator_IntegrationToolKit-10.22.3.2.exe` from [Microsoft Download center](https://www.microsoft.com/download/details.aspx?id=104133) and run the installer. The welcome page appears. 
+1. Download `System_Center_Orchestrator_IntegrationToolKit-10.22.3.1.exe` from [Microsoft Download center](https://www.microsoft.com/download/details.aspx?id=104133) and run the installer. The welcome page appears. 
 
 ::: moniker-end
 
