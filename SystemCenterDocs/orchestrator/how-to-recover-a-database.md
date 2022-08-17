@@ -33,7 +33,7 @@ The database key is essentially paired with the service master key on the databa
 
 1.  [Back up the service master key for Microsoft SQL Server](/sql/t-sql/statements/backup-service-master-key-transact-sql). This is a one\-time operation. Note "password" is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key cannot be recovered from the file.  
 
-    ```  
+    ```sql
     BACKUP SERVICE MASTER KEY TO FILE = 'path_to_file'  
                 ENCRYPTION BY PASSWORD = 'password'  
     ```  
@@ -45,7 +45,7 @@ The database key is essentially paired with the service master key on the databa
 1.  If you are restoring to the same database server from which the backup was taken, and the service master key has not changed, simply restore the backup.  
 2.  If you are restoring to a different database server with a different service master key, or you are restoring to the same database from which the backup was taken but the service master key has changed, the service master key must be restored to match the one used during the database backup. Use the procedure for [restoring the service master key for Microsoft SQL Server](/sql/t-sql/statements/restore-service-master-key-transact-sql). 
 
-    ```  
+    ```sql
     BACKUP SERVICE MASTER KEY TO FILE = 'c:\temp_backups\keys\service_master_key'   
              ENCRYPTION BY PASSWORD = '3dH85Hhk003GHk2597jheij4'  
     ```  
@@ -57,7 +57,7 @@ The database key is essentially paired with the service master key on the databa
 4.  On the Orchestrator Management Server, run the Data Store Configuration utility from the Start menu.  
 5.  Provide the connection details to connect to the new database. Note: Do not use "localhost" or ".". Explicitly specify the database server name and database name.  
 6.  Restart the Management Service.  
-7.  Run the Data Store Configuration utility on each Runbook Server. This utility is not located in the Start menu on Runbook Servers. It can be found in \<OrchestratorInstallDir\>\\Microsoft System Center \<version\>\\Orchestrator\\Runbook Server. Note: For Runbook Servers installed on the same server as the Management Server one doesn't need to run the Data Store Configuration utility a second time. Running it once will update the configuration for both the Management Server and Runbook Server at the same time.  
+7.  Run the Data Store Configuration utility on each Runbook Server. This utility is not located in the Start menu on Runbook Servers. It can be found in `\<OrchestratorInstallDir\>\\Microsoft System Center \<version\>\\Orchestrator\\Runbook Server`. Note: For Runbook Servers installed on the same server as the Management Server one doesn't need to run the Data Store Configuration utility a second time. Running it once will update the configuration for both the Management Server and Runbook Server at the same time.  
 8.  Restart the Runbook Server\(s\).  
 9. Follow the Web Components Recovery Process to update the Web Components to connect to the new database.  
 

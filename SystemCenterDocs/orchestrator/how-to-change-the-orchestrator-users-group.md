@@ -29,7 +29,7 @@ Note that the PermissionsConfig tool does not send results to standard output. T
 
 You can get an explanation of the parameters for the PermissionsConfig tool by typing the following command:  
 
-```  
+```bat
 PermissionsConfig -help  
 ```  
 
@@ -43,7 +43,7 @@ The following table explains the parameters.
 
 For example, to change the Orchestrator users group to a group that is named Orchestrator Users in a domain that is named Contoso, use the following command:  
 
-```  
+```bat
 PermissionsConfig -OrchestratorUsersGroup "Contoso\Orchestrator Users" -remote  
 ```  
 

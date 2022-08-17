@@ -24,13 +24,19 @@ In order to remove the delay you can either deactivate **generatePublisherEviden
 
 ## To deactivate generatePublisherEvidence in policymodule.exe.config
 
-1.  On the runbook server where runbooks that contain an activity referencing the .NET libraries run, locate the file **C:\\Program Files \(x86\)\\Microsoft System Center <version>\\Orchestrator\\Runbook Server\\policymodule.exe.config**.
+::: moniker range="<=sc-orch-2019"
+1.  On the runbook server where runbooks that contain an activity referencing the .NET libraries run, locate the file `C:\\Program Files \(x86\)\\Microsoft System Center <version>\\Orchestrator\\Runbook Server\\policymodule.exe.config`.
+::: moniker-end
 
-2.  Add the following code to policymodule.exe.config:
+::: moniker range="sc-orch-2022"
+1.  On the runbook server where runbooks that contain an activity referencing the .NET libraries run, locate the file `C:\\Program Files\\Microsoft System Center <version>\\Orchestrator\\Runbook Server\\policymodule.exe.config`.
+::: moniker-end
 
-    ```
+2.  Add the following code to `policymodule.exe.config`:
+
+    ```xml
     <runtime>
-    <generatePublisherEvidence enabled="false"/>
+      <generatePublisherEvidence enabled="false"/>
     </runtime>
     ```
 

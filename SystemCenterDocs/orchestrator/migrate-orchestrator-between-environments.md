@@ -77,7 +77,7 @@ Back up the SQL Server service master key. This is a one-time operation.
 
 Create a batch script with the following command:  
 
-```  
+```bat
 Sqlcmd -Q "BACKUP SERVICE MASTER KEY TO FILE ='C:\BACKUP\MASTER_KEY.BAK' ENCRYPTION BY PASSWORD = 'password'"  
 
 ```  
@@ -97,7 +97,7 @@ Back up the entire Orchestrator database.  You can perform the backup when the s
 
 5.  Create a batch file with this script. Your batch file will be similar to the following:  
 
-    ```  
+    ```bat
     Sqlcmd -Q "BACKUP DATABASE Orchestrator TO DISK=N'C:\BACKUP\OrchestratorDB.bak'"  
     ```  
 
@@ -112,7 +112,7 @@ Create a batch script with the following command:
 >[!NOTE]
 > If you intend to use\migrate the Orchestrator database In a **SQL Always ON** instance, you will be prompted for the database encryption key password.
 
-```  
+```bat
 Sqlcmd -Q "RESTORE SERVICE MASTER KEY FROM FILE = 'C:\BACKUP\MASTER_KEY.BAK' DECRYPTION BY PASSWORD = 'password';"  
 
 ```  
@@ -131,7 +131,7 @@ Use the following steps to create a batch script to run on the new SQL Server co
 
 5.  Create a batch file with this script. Your batch file will be similar to the following:  
 
-    ```  
+    ```bat
     Sqlcmd -Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\OrchestratorDB.bak'WITH  FILE = 1,  NOUNLOAD,  STATS = 10"  
 
     ```  
@@ -151,42 +151,48 @@ Use the following steps to create a batch script to run on the new SQL Server co
 
 Deploy Orchestrator components \(management server, Web features, runbook servers, and Runbook Designers\) using the silent install commands of Orchestrator setup. See [Install with the Orchestrator Command Line Install Tool](~/orchestrator/install.md) for more information on deploying Orchestrator through the command line.  
 
+::: moniker range="<=sc-orch-2019"
 The following example installs all of Orchestrator on a computer running SQL Server 2008 R2 and .NET Framework&nbsp;4:  
+::: moniker-end
 
-```  
-%systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  
+::: moniker range="sc-orch-2022"
+The following example installs all of Orchestrator on a computer running SQL Server:  
+::: moniker-end
+
+```bat
+%systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /WebConsolePublicUrl:"http://localhost:82" /WebServicePublicUrl:"http://localhost:81" /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  
 
 ```  
 
 ## Sample migration scripts and commands  
 **Back up SQL Server master service key sample**  
 
-```  
+```bat
 Sqlcmd -Q "BACKUP SERVICE MASTER KEY TO FILE ='C:\BACKUP\MASTER_KEY.BAK' ENCRYPTION BY PASSWORD = 'password'"  
 
 ```  
 
 **Back up Orchestrator database sample**  
 
-```  
+```bat
 Sqlcmd -Q "BACKUP DATABASE Orchestrator TO DISK=N'C:\BACKUP\OrchestratorDB.bak'"  
 ```  
 
 **Restore SQL Server master service key sample**  
 
-```  
+```bat
 Sqlcmd -Q "RESTORE SERVICE MASTER KEY FROM FILE = 'c:\temp_backups\keys\service_master_key' DECRYPTION BY PASSWORD = 'password'"  
 ```  
 
 **Restore Orchestrator database sample**  
 
-```  
+```bat
 Sqlcmd -Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\OrchestratorDB.bak'WITH  FILE = 1,  NOUNLOAD,  STATS = 10"  
 ```  
 
 **Install Orchestrator from batch file sample**  
 
-```  
-%systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  
+```bat
+%systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /WebConsolePublicUrl:"http://localhost:82" /WebServicePublicUrl:"http://localhost:81" /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  
 
 ```

@@ -32,8 +32,10 @@ When building runbooks some settings are the same across activities. Variables l
 > [!IMPORTANT]  
 > The access permissions for variables can be modified, but the runbook server does not enforce these permissions.  
 
+::: moniker range="<=sc-orch-2019"
 > [!IMPORTANT]  
 > Be aware that in Orchestrator, variables that reference system variables, for example **%ProgramFiles%**, return values from a 32-bit runtime environment. This is because Orchestrator is a 32-bit application.  
+::: moniker-end
 
 > [!NOTE]  
 > Orchestrator does not support moving multiple variables with multiple-selection. To move more than one variable to another folder, you must move each variable individually.  
@@ -58,7 +60,7 @@ Use the following procedures to create, insert, and organize variables.
 
 7.  Click **Finish**.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > Orchestrator does not let you combine an encrypted variable with plain text as a parameter value in a runbook.  
 
 ### To insert a variable in an activity  
@@ -84,9 +86,9 @@ Use the following procedures to create, insert, and organize variables.
 ## Special Variables  
 You can specify special formats of variables to provide dynamic information to your runbooks. Specify the value of the variable to invoke this behavior.  
 
-**NOW\(\)**: When the variable is resolved, it is set to the current date and time. You can pass arguments to this function to return specific portions of the date or time. For example, NOW\(hour\) returns the current hour. The following are the valid arguments for the NOW\(\) function: day, dayofweek, dayofyear, month, year, hour, minute, second, millisecond.  
+`NOW\(\)`: When the variable is resolved, it is set to the current date and time. You can pass arguments to this function to return specific portions of the date or time. For example, `NOW\(hour\)` returns the current hour. The following are the valid arguments for the `NOW\(\)` function: day, dayofweek, dayofyear, month, year, hour, minute, second, millisecond.  
 
-**%ENVVAR%**: This variable returns the value of the environment variable between the percent \(%\) symbols. The environment variable is based on the runbook server computer where the runbook is running, and it is not case\-sensitive. All system variables can be resolved. Any user variables are resolved in the context of the service account on the runbook server. If the environment variable does not exist, the text specified within the variable is returned as\-is \(that is, if you type %ENVVAR% and no environment variable named ENVVAR exists, the text '%ENVVAR%' is returned\).  
+`%ENVVAR%`: This variable returns the value of the environment variable between the percent `\(%\)` symbols. The environment variable is based on the runbook server computer where the runbook is running, and it is not case\-sensitive. All system variables can be resolved. Any user variables are resolved in the context of the service account on the runbook server. If the environment variable does not exist, the text specified within the variable is returned as\-is \(that is, if you type `%ENVVAR%` and no environment variable named `ENVVAR` exists, the text `'%ENVVAR%'` is returned\).  
 
 ## Workflow Control
 When you build runbooks in Orchestrator, it is important to understand the underlying logic of the workflow engine. By using this logic, you can create workflows to automate resource\-based jobs and complex data processing tasks.  
