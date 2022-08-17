@@ -32,7 +32,7 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 ## Creating a new integration pack  
  The Integration Pack Wizard allows you to create Integration Packs from existing Orchestrator-compatible assemblies and dependent files. If you have not yet created an Orchestrator-compatible assembly, see the [Command Line Activity Wizard](command-line-activity-wizard.md#creating-a-new-activity-assembly).  
 
- Note: The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used by the IP Wizard for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation, required prior to installing the Toolkit. However, if WiX is subsequently uninstalled, the Integration Pack wizard will display an error message directing you to download and install WiX. The Integration Toolkit supports version 3.5 of the WiX Toolset.
+ Note: The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used by the IP Wizard for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation, required prior to installing the Toolkit. However, if WiX is subsequently uninstalled, the Integration Pack wizard will display an error message directing you to download and install WiX. The Integration Toolkit supports version 3.11 of the WiX Toolset.
 
 #### To create a new integration pack  
 
@@ -79,7 +79,7 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 
 13. When you are done adding files to the list, click **Next**. The Orchestrator Integration Pack File page displays.  
 
-14. In the textbox provided, enter the path and filename of the Integration Pack to be created. If you enter a filename that already exists, it will be overwritten. Ensure that you have sufficient access to write to the path specified or the process will fail. If no path is specified, the OIP file will be created in the Documents folder (C:\users\\<your username\>\Documents). Click **Next** to start building the IP.  
+14. In the textbox provided, enter the path and filename of the Integration Pack to be created. If you enter a filename that already exists, it will be overwritten. Ensure that you have sufficient access to write to the path specified or the process will fail. If no path is specified, the OIP file will be created in the Documents folder (`C:\users\<your username>\Documents`). Click **Next** to start building the IP.  
 
     > [!IMPORTANT]
     >  The characters in the filename must be valid for the language that is installed on your operating system.  
