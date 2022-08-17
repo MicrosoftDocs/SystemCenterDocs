@@ -77,7 +77,7 @@ Back up the SQL Server service master key. This is a one-time operation.
 
 Create a batch script with the following command:  
 
-```bat
+```powershell
 Sqlcmd -Q "BACKUP SERVICE MASTER KEY TO FILE ='C:\BACKUP\MASTER_KEY.BAK' ENCRYPTION BY PASSWORD = 'password'"  
 
 ```  
@@ -97,7 +97,7 @@ Back up the entire Orchestrator database.  You can perform the backup when the s
 
 5.  Create a batch file with this script. Your batch file will be similar to the following:  
 
-    ```bat
+    ```powershell
     Sqlcmd -Q "BACKUP DATABASE Orchestrator TO DISK=N'C:\BACKUP\OrchestratorDB.bak'"  
     ```  
 
@@ -112,7 +112,7 @@ Create a batch script with the following command:
 >[!NOTE]
 > If you intend to use\migrate the Orchestrator database In a **SQL Always ON** instance, you will be prompted for the database encryption key password.
 
-```bat
+```powershell
 Sqlcmd -Q "RESTORE SERVICE MASTER KEY FROM FILE = 'C:\BACKUP\MASTER_KEY.BAK' DECRYPTION BY PASSWORD = 'password';"  
 
 ```  
@@ -131,7 +131,7 @@ Use the following steps to create a batch script to run on the new SQL Server co
 
 5.  Create a batch file with this script. Your batch file will be similar to the following:  
 
-    ```bat
+    ```powershell
     Sqlcmd -Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\OrchestratorDB.bak'WITH  FILE = 1,  NOUNLOAD,  STATS = 10"  
 
     ```  
@@ -159,40 +159,54 @@ The following example installs all of Orchestrator on a computer running SQL Ser
 The following example installs all of Orchestrator on a computer running SQL Server:  
 ::: moniker-end
 
-```bat
-%systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /WebConsolePublicUrl:"http://localhost:82" /WebServicePublicUrl:"http://localhost:81" /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  
-
+```powershell
+%systemdrive%\sco\setup\setup.exe /Silent `
+    /ServiceUserName:%computername%\administrator `
+    /ServicePassword:password `
+    /Components:All `
+    /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep `
+    /WebConsolePort:82 /WebServicePublicUrl:"http://localhost:81" `
+    /WebServicePort:81 /WebConsolePublicUrl:"http://localhost:82" `
+    /OrchestratorRemote `
+    /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always
 ```  
 
 ## Sample migration scripts and commands  
 **Back up SQL Server master service key sample**  
 
-```bat
+```powershell
 Sqlcmd -Q "BACKUP SERVICE MASTER KEY TO FILE ='C:\BACKUP\MASTER_KEY.BAK' ENCRYPTION BY PASSWORD = 'password'"  
 
 ```  
 
 **Back up Orchestrator database sample**  
 
-```bat
+```powershell
 Sqlcmd -Q "BACKUP DATABASE Orchestrator TO DISK=N'C:\BACKUP\OrchestratorDB.bak'"  
 ```  
 
 **Restore SQL Server master service key sample**  
 
-```bat
+```powershell
 Sqlcmd -Q "RESTORE SERVICE MASTER KEY FROM FILE = 'c:\temp_backups\keys\service_master_key' DECRYPTION BY PASSWORD = 'password'"  
 ```  
 
 **Restore Orchestrator database sample**  
 
-```bat
+```powershell
 Sqlcmd -Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\OrchestratorDB.bak'WITH  FILE = 1,  NOUNLOAD,  STATS = 10"  
 ```  
 
 **Install Orchestrator from batch file sample**  
 
-```bat
-%systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /WebConsolePublicUrl:"http://localhost:82" /WebServicePublicUrl:"http://localhost:81" /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  
-
+```powershell
+%systemdrive%\sco\setup\setup.exe /Silent `
+    /ServiceUserName:%computername%\administrator `
+    /ServicePassword:password `
+    /Components:All `
+    /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep `
+    /WebConsolePort:82 /WebServicePublicUrl:"http://localhost:81" `
+    /WebServicePort:81 /WebConsolePublicUrl:"http://localhost:82" `
+    /OrchestratorRemote `
+    /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  
 ```

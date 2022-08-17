@@ -57,8 +57,8 @@ You can use **IIS Manager** to modify the file, but you must first decrypt it by
 2.  Open a Command Prompt window with administrator credentials.  
 3.  Run the following command to decrypt the Web.config file:  
 
-    ```bat
-    C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pdf "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center \<version\>\\Orchestrator\\Web Service\\Orchestrator\<version\>"
+    ```powershell
+    C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet\_regiis.exe -pdf "connectionStrings" "C:\Program Files (x86)\Microsoft System Center\Orchestrator\Web Service\Orchestrator"
     ```
 
 4.  To start the IIS Manager, click **Start**, point to **Administrative Tools**, and then click **Internet Information Services \(IIS\) Manager**.  
@@ -70,8 +70,8 @@ You can use **IIS Manager** to modify the file, but you must first decrypt it by
 10. Close **IIS Manager**.  
 11. Run the following command to encrypt the Web.config file:  
 
-    ```bat
-    C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pef "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center \<version\>\\Orchestrator\\Web Service\\Orchestrator\<version\>"
+    ```powershell
+    C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet\_regiis.exe -pef "connectionStrings" "C:\Program Files (x86)\Microsoft System Center\Orchestrator\Web Service\Orchestrator"
     ```
 ::: moniker-end
 
@@ -92,7 +92,7 @@ The full list of Database connection settings is available in [Connection String
 To set a value for a key called `"property"`, set an environment variable named `Database__<property>`.
 
 > [!NOTE]
-> You must use **two** underscores to separate the `Database` prefix!
+> You must use **two** underscores to separate the `Database` prefix.
 
 [db-conn-string]: /dotnet/api/system.data.sqlclient.sqlconnection.connectionstring#remarks
 ::: moniker-end

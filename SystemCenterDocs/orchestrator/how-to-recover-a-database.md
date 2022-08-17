@@ -54,10 +54,10 @@ The database key is essentially paired with the service master key on the databa
     > If there are multiple databases using this service master key for encryption on your Microsoft SQL Server, all of these databases could be affected by this change. Consulting with your DBA before performing this administrative task is strongly recommended.  
 
 3.  Restore the database from the backup.  
-4.  On the Orchestrator Management Server, run the Data Store Configuration utility from the Start menu.  
+4.  On the Orchestrator Management Server, run the Data Store Configuration utility (`DBSetup`) from the Start menu.  
 5.  Provide the connection details to connect to the new database. Note: Do not use "localhost" or ".". Explicitly specify the database server name and database name.  
 6.  Restart the Management Service.  
-7.  Run the Data Store Configuration utility on each Runbook Server. This utility is not located in the Start menu on Runbook Servers. It can be found in `\<OrchestratorInstallDir\>\\Microsoft System Center \<version\>\\Orchestrator\\Runbook Server`. Note: For Runbook Servers installed on the same server as the Management Server one doesn't need to run the Data Store Configuration utility a second time. Running it once will update the configuration for both the Management Server and Runbook Server at the same time.  
+7.  Run the Data Store Configuration utility on each Runbook Server. This utility is not located in the Start menu on Runbook Servers. It can be found in `<OrchestratorInstallDir>\Management Server`. Note: For Runbook Servers installed on the same server as the Management Server one doesn't need to run the Data Store Configuration utility a second time. Running it once will update the configuration for both the Management Server and Runbook Server at the same time.  
 8.  Restart the Runbook Server\(s\).  
 9. Follow the Web Components Recovery Process to update the Web Components to connect to the new database.  
 

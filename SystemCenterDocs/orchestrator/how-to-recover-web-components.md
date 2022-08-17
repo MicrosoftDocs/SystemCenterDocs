@@ -33,20 +33,20 @@ To do this, you will need to complete the following actions:
 1.  Open a Command Prompt using **Run as administrator**.  
 2.  Execute the following command \(assuming the default installation path\):  
 
-    ```bat
+    ```powershell
     C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis.exe -pdf "connectionStrings" "C:\Program Files (x86)\Microsoft System Center 2016\Orchestrator\Web Service\Orchestrator2016"  
     ```  
 3.  Open IIS Manager and navigate to the Orchestrator2016 virtual application.  
-4.  Open up Connection Strings and then modify OrchestratorContext. Locate the segment that starts with `provider\=System.Data.SqlClient;provider connection string` and then modify the Data Source and Initial Catalog attributes according to your new SQL Server and Database Catalog name respectively, then click OK.  
+4.  Open up Connection Strings and then modify OrchestratorContext. Locate the segment that starts with `provider=System.Data.SqlClient;provider connection string` and then modify the Data Source and Initial Catalog attributes according to your new SQL Server and Database Catalog name respectively, then click OK.  
 5.  If you want to re\-encrypt the connection strings, you can execute the following command at the command prompt:  
 
-    ```bat
+    ```powershell
     C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis.exe -pef "connectionStrings" "C:\Program Files (x86)\Microsoft System Center 2016\Orchestrator\Web Service\Orchestrator2016"  
     ```  
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
-1.  Open the installation location of the WebAPI, typically it is `\<OrchestratorInstallDir\>\WebApi`.
+1.  Open the installation location of the WebAPI, typically it is `<OrchestratorInstallDir>\WebApi`.
    - You can use IIS Manager to navigate to the WebAPI folder as well.
 2.  Edit the `environmentVariable` element in `system.webServer` \> `aspNetCore` \> `environmentVariables` in the `web.config` using a text editor. Particularly, you'd want to change the values of the `DATABASE__*` variables. 
 
@@ -61,7 +61,7 @@ The full list of Database connection settings is available in [Connection String
 </environmentVariables>
 ```
 
-To set a value for a key called `"property"`, set an environment variable named `Database__\<property\>`.
+To set a value for a key called `"property"`, set an environment variable named `Database__<property>`.
 
 > [!NOTE]
 > You must use two underscores to separate the `Database` prefix!
