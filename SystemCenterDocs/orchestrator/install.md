@@ -1,5 +1,5 @@
 ---
-title: Install Orchestra
+title: Install Orchestrator
 description: Provides instructions for installing System Center - Orchestrator
 author: jyothisuri
 manager: evansma
