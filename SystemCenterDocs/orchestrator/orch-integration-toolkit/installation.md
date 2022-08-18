@@ -70,7 +70,7 @@ This article provides the system requirements and steps to install the Orchestra
 
 ::: moniker range="sc-orch-2022"
 
-1. Download `System_Center_Orchestrator_IntegrationToolKit-10.22.3.1.exe` from [Microsoft Download center](https://www.microsoft.com/download/details.aspx?id=104133) and run the installer. The welcome page appears. 
+1. Download `System_Center_Orchestrator_IntegrationToolKit-10.22.*.*.exe` from [Microsoft Download center](https://www.microsoft.com/download/details.aspx?id=104133) and run the installer. The welcome page appears. 
 
 ::: moniker-end
 
@@ -89,23 +89,26 @@ This article provides the system requirements and steps to install the Orchestra
 
 ::: moniker range="<=sc-orch-2019"
 
-- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Lib`.For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
+- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Lib`. For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
 
-- Toolkit Integration Pack for Orchestrator – the System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`. For more information about the IP, see Integration Toolkit IP.  
+- Toolkit Integration Pack for Orchestrator – the System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`.
 
-  Integration Toolkit Utilities, Wizards and Binary files – all the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard and all their dependent files are by default installed to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see The Command-Line Activity Wizard and The Integration Pack Wizard.  
+  Integration Toolkit Utilities, Wizards and Binary files – all the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard and all their dependent files are by default installed to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see [The Command-Line Activity Wizard][cli-wizard] and [The Integration Pack Wizard][ip-wizard].  
 
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
 
-- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Lib`.For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
+- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Lib`. For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
 
-- Toolkit Integration Pack for Orchestrator – the System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`. For more information about the IP, see Integration Toolkit IP.  
+- Toolkit Integration Pack for Orchestrator – the System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`.
 
-  Integration Toolkit Utilities, Wizards and Binary files – all the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard and all their dependent files are by default installed to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see The Command-Line Activity Wizard and The Integration Pack Wizard.  
+  Integration Toolkit Utilities, Wizards and Binary files – all the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard and all their dependent files are by default installed to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see [The Command-Line Activity Wizard][cli-wizard] and [The Integration Pack Wizard][ip-wizard].
 
 ::: moniker-end
+
+[cli-wizard]: ./command-line-activity-wizard.md
+[ip-wizard]: ./integration-pack-wizard.md
 
 ## Orchestrator Resources  
  In addition to this online reference provided for System Center Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.  
