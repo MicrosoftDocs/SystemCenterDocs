@@ -89,7 +89,7 @@ The full list of Database connection settings is available in [Connection String
 </environmentVariables>
 ```
 
-To set a value for a key called `"property"`, set an environment variable named `Database__<property>`.
+To set a value for a key called `property`, set an environment variable named `Database__<property>`.
 
 > [!NOTE]
 > You must use **two** underscores to separate the `Database` prefix.
