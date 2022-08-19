@@ -94,7 +94,7 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 ::: moniker range="sc-om-2022"
 
 |Distro|Kernel|OpenSSL Version|Highest Supported Cipher Suite/Preferred Cipher Suite|Cipher Index|
-|------|------|-------------|----------------------------------|-----------------|
+|---------------------|-------------------------|---------------------------------|----------------------------------|-------------------------------|
 |Red Hat Enterprise Linux Server 7.5 (Maipo)|Linux 3.10.0-862.el7.x86_64|OpenSSL 1.0.2k-fips  26 Jan 2017| TLS_RSA_WITH_AES_256_GCM_SHA384|{ 0x00, 0x9D }|
 |Red Hat Enterprise Linux 8.3 (Ootpa)|Linux 4.18.0-240.el8.x86_64|OpenSSL 1.1.1g FIPS  21 Apr 2020|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384|{ 0xC0,0x30 }|
 |Oracle Linux Server release 6.10|Linux  4.1.12-124.16.4.el6uek.x86_64|OpenSSL 1.0.1e-fips 11 Feb 2013| TLS_RSA_WITH_AES_256_GCM_SHA384|{ 0x00, 0x9D }|
