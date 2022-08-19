@@ -37,7 +37,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 ::: moniker range="sc-orch-2022"
 
 > [!NOTE]
-> `CLIActivityWizard` is absent from v10.22.3.* releases. It is not deprecated and will be included in the next minor release.
+> `CLIActivityWizard` is temporarily absent from v10.22.3.* releases, it is not deprecated.
 
 ::: moniker-end
 
