@@ -91,8 +91,6 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-2019"
-
 ::: moniker range="sc-om-2022"
 
 |Distro|Kernel|OpenSSL Version|Highest Supported Cipher Suite/Preferred Cipher Suite|Cipher Index|
@@ -142,6 +140,8 @@ In System Center Operations Manager 2016 and later, the below ciphers, MAC algor
 - ecdh-sha2-nistp521 
 
 ::: moniker-end
+
+::: moniker range=">=sc-om-2019"
 
 ## Disabled SSL renegotiations in Linux agent
 
