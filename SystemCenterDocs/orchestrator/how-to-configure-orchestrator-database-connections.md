@@ -1,5 +1,5 @@
 ---
-title: Configure Orchestrator database donnections
+title: Configure Orchestrator database connections
 description: Describes how to configure database connections in System Center - Orchestrator.
 ms.date: 01/17/2018
 ms.prod: system-center

@@ -1,5 +1,5 @@
 ---
-title: Optimize performance of  .NET activities in System Center - Orchestra
+title: Optimize performance of .NET activities in System Center - Orchestrator
 description: Describes how to configure runbook servers in System Center - Orchestrator, to optimize performance of .NET activities.
 ms.date: 01/17/2018
 ms.prod: system-center
@@ -18,18 +18,22 @@ manager: evansma
 
 ::: moniker-end
 
-If a runbook contains an activity that references the .NET libraries, the first reference to the .NET libraries takes additional time to initialize. This delay can be as much as 30 seconds. All remaining activities that reference the .NET libraries run immediately. This delay can also occur when a runbook is started on a computer without Internet access, because Windows cannot verify the Microsoft Authenticode signature for the .NET libraries, and this causes a delay during the initialization of the activity.
+## Improve assembly load time
 
-In order to remove the delay you can either deactivate **generatePublisherEvidence** in **PolicyModule.exe** or you can create a profile for the service account.
+When a runbook containing an activity that references the .NET assemblies executes, the job process has to load the referenced assembly when such an activity is executed. Any subsequent execution of the same activity or other activities from the assembly will reuse the loaded assembly.
 
-## To deactivate `generatePublisherEvidence` in `policymodule.exe.config`
+Loading an assembly may cause a delay of up to 30 seconds. This delay can also occur when a runbook is started on a computer without Internet access, because Windows can't verify the Microsoft Authenticode signature for the .NET assemblies.
+
+To remove the delay you can either deactivate `generatePublisherEvidence` in `PolicyModule.exe`, or you can create a profile for the service account.
+
+### Deactivate `generatePublisherEvidence` in `policymodule.exe.config`
 
 ::: moniker range="<=sc-orch-2019"
-1.  On the runbook server where runbooks that contain an activity referencing the .NET libraries run, locate the file `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Runbook Server\policymodule.exe.config`.
+1. Locate the file `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Runbook Server\policymodule.exe.config` on the runbook server that executes runbooks containing an activity referencing a .NET assembly. 
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
-1.  On the runbook server where runbooks that contain an activity referencing the .NET libraries run, locate the file `C:\Program Files\Microsoft System Center\Orchestrator\Runbook Server\policymodule.exe.config`.
+1.  Locate the file `C:\Program Files\Microsoft System Center\Orchestrator\Runbook Server\policymodule.exe.config` on the runbook server that executes runbooks containing an activity referencing a .NET assembly.
 ::: moniker-end
 
 2.  Add the following code to `policymodule.exe.config`:
@@ -42,7 +46,7 @@ In order to remove the delay you can either deactivate **generatePublisherEviden
 
 ## To create a profile for the service account
 
-1. On the runbook server where runbooks run that contain an activity referencing the .NET libraries, log on to the computer using the service account credentials. A profile is created on first logon.
+1. On the runbook server where runbooks run that contain an activity referencing the .NET assemblies, sign in to the computer using the service account credentials. A profile is created on first sign-in.
 
 ## Next steps
 Learn more about [creating runbooks](design-and-build-runbooks.md).  

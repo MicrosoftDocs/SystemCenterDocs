@@ -421,7 +421,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
 ## To install an Orchestrator management server
 
-1.  On the server where you want to install Orchestrator, start the Orchestra Setup Wizard.
+1.  On the server where you want to install Orchestrator, start the Orchestrator Setup Wizard.
 
     To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 

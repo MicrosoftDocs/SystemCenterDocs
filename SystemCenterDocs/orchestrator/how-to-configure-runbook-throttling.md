@@ -28,11 +28,11 @@ You can adjust the number of runbooks that are run concurrently on a runbook ser
 ## To configure the maximum number of runbooks that a runbook server processes  
 
 ::: moniker range="<=sc-orch-2019"
-1.  Navigate to the folder where by default the Runbook Server Runbook Throttling tool is stored: `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Management Server`.  
+1.  Navigate to the folder whereby default the Runbook Server Runbook Throttling tool is stored: `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
-1.  Navigate to the folder where by default the Runbook Server Runbook Throttling tool is stored: `C:\Program Files\Microsoft System Center\Orchestrator\Management Server`.  
+1.  Navigate to the folder whereby default the Runbook Server Runbook Throttling tool is stored: `C:\Program Files\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
 2.  Type one of the following commands:  

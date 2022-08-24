@@ -1,5 +1,5 @@
 ---
-title: How to recover a ratabase
+title: How to recover a database
 description: Describes how to restore a database from backup in System Center - Orchestrator.
 ms.date: 01/17/2018
 ms.prod: system-center
