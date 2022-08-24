@@ -134,4 +134,4 @@ You can use the following REST APIs to create folders in Web console and save da
 
 - [Data Retrieve Items In Monitoring Tree View](/rest/api/operationsmanager/data/retrieve%20items%20in%20monitoring%20tree%20view)
 
-- [Component - Add Dashboard](/rest/api/operationsmanager/component/add%20dashboard)
+- [Component - Add Dashboard](/rest/api/operationsmanager/monitoring/add-dashboard)
