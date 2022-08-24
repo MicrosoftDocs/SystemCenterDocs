@@ -36,7 +36,7 @@ If you have a group of activities to test, or you’re further along in the deve
 The Integration Pack Wizard allows you to create Integration Packs from existing Orchestrator-compatible assemblies and dependent files. If you haven't yet created an Orchestrator-compatible assembly, see the [Command Line Activity Wizard](command-line-activity-wizard.md#creating-a-new-activity-assembly).  
 
 > [!NOTE]
-> The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, which is used by the IP Wizard for creating custom Integration Packs. Please install the latest version (v3.11) of the [WiX Toolset][wix-official] prior to installing the Toolkit.
+> The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, which is used by the IP Wizard for creating custom Integration Packs. Please install the latest version (v3.11) of the [WiX Toolset][wix-official] prior to using IP Wizard.
 
 [wix-official]: https://wixtoolset.org/
 
@@ -162,7 +162,7 @@ When including assemblies in your Integration Pack, they're automatically added 
 
 ## Orchestrator resources
 
-In addition to this online reference provided for System Center 2012 Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.
+In addition to this online reference provided for System Center Orchestrator, there are many resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.  
 
 - [System Center home](https://www.microsoft.com/cloud-platform/system-center)
 - [System Center documentation](../index.yml)
@@ -171,6 +171,5 @@ In addition to this online reference provided for System Center 2012 Orchestrato
 
 ## See also
 
-- [Orchestrator Integration Packs](https://www.microsoft.com/en-us/search/result.aspx?q=Orchestrator+Integration+Toolkit)
 - [Integration Toolkit Documentation](orchestrator-integration-toolkit-overview.md)
 - [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))
