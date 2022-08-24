@@ -29,17 +29,35 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 |Component|Description|  
 |-|-|    
-|Command-Line Activity Wizard|A utility that allows users to define activities that contain commands that run via Windows command shell, PowerShell, or SSH, and package them into an assembly (.DLL) that can be used with the .NET IP or packaged into a new Integration Pack.|  
+|Command-Line Activity Wizard|A utility that allows users to define activities containing commands that run via Windows command shell, PowerShell, or SSH, and package them into an assembly (.DLL) that can be used with the .NET IP or packaged into a new Integration Pack.|  
 |Integration Pack Wizard|A utility designed to package Orchestrator-compatible activity assemblies and dependent files into a deployable Integration Pack file.|  
 |Integration Toolkit .NET IP|An Integration Pack for running .NET-based Orchestrator-compatible activity assemblies directly. Contains the Invoke .NET and Monitor .NET activities.|  
 |Integration Toolkit SDK Library|A set of files that are used by developers utilizing the Orchestrator SDK to write custom activities.|  
 
+::: moniker range="sc-orch-2022"
+
+> [!NOTE]
+> `CLIActivityWizard` is temporarily absent from v10.22.3.* releases, it is not deprecated.
+
+::: moniker-end
+
 ## What’s New in the Integration Toolkit  
  This section describes the changes in the product, including bug fixes, new and enhanced features, and new information about the Orchestrator Integration Toolkit.  
+
 
 ### Major Changes  
 
 #### Installation  
+
+::: moniker range="sc-orch-2022"
+
+-   The Integration Toolkit supports the latest (v3.11) of the WiX Toolset. Users must install latest WiX binaries manually from the [official webpage][wix-official].
+
+[wix-official]: https://wixtoolset.org/
+
+::: moniker-end
+
+::: moniker range="<=sc-orch-2019"
 
 -   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset.
 
@@ -113,6 +131,8 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 -   Fixed an issue where the files from an IP were not removed when the IP was uninstalled.  
 
+::: moniker-end
+
 ### Known Issues  
 
 #### Integration Pack Wizard  
@@ -120,13 +140,17 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 -   When packaging an IP that contains commands created via the Command-Line Activity Wizard that utilize the SSH Command option, all of the SSH commands must be within a single CLI assembly. If the IP contains more than one assembly that uses SSH commands, only the first assembly’s commands will function.  
 
 ## Activity and IP Compatibility with Orchestrator  
- System Center Orchestrator Integration Toolkit has undergone some significant changes in the underlying framework since the previous release as the Opalis Quick Integration Kit. These changes make activities created using the CLI Wizard and activities developed using the Opalis API, as well as Integration Packs packed by the QIK Wizard incompatible with Orchestrator. In order to utilize these activities in Orchestrator, they must be converted to use the new framework. The manner in which these activities were created determines the process required to convert them:  
+ System Center Orchestrator Integration Toolkit has undergone some significant changes in the underlying framework since the original release under the name **Opalis Quick Integration Kit**. These changes make activities created using the CLI Wizard and activities developed using the Opalis API, as well as Integration Packs packed by the QIK Wizard incompatible with Orchestrator. In order to utilize these activities in Orchestrator, they must be converted to use the new framework. The manner in which these activities were created determines the process required to convert them:  
 
--   Activities created using the QIK CLI Wizard and used in workflows via the **Invoke .NET** activity need simply to be loaded and regenerated using the new Command-Line Activity Wizard. The required process is defined in the section QIK CLI Activity Migration.  
+|       Created by        |      Packaged by      |                                                 Process                                                 |
+| ----------------------- | --------------------- | ------------------------------------------------------------------------------------------------------- |
+| QIK `CLIActivityWizard` | None                  | [QIK CLI Activity Migration][cli-migration] and use **Invoke .NET** activity                                |
+| QIK `CLIActivityWizard` | QIK `IPWizard`        | [QIK CLI Activity Migration][cli-migration] + [repackage using `IPWizard`][ipwiz-migration]                 |
+| Opalis API              | Opalis/QIK `IPWizard` | [Migrating QIK API Custom Activities][opalis-migration] + [repackage using `IPWizard`][ipwiz-migration] |
 
--   Activities created using the QIK CLI Wizard and then packaged into an Integration Pack using the QIK Wizard require a two-step process. This includes regenerating the assembly or assemblies for the activities using the process defined in QIK CLI Activity Migration, and then repackaging the IP using the new Integration Pack Wizard using the process defined in QIK IP Migration.  
-
--   Activities developed using the Opalis API and then packaged into an Integration Pack using the QIK Wizard also require a two-step process which involves modifying the source code using the process defined in QIK API Custom Activity Migration, and repackaging the IP using the new Integration Pack Wizard using the process defined in QIK IP Migration.  
+[cli-migration]: command-line-activity-wizard.md#qik-cli-activity-migration
+[opalis-migration]: /previous-versions/system-center/developer/hh855057(v=msdn.10)
+[ipwiz-migration]: integration-pack-wizard.md#qik-integration-pack-migration
 
 ## See Also  
  [Orchestrator documentation](../learn-about-orchestrator.md)   
