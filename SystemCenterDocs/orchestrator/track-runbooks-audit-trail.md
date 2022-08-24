@@ -35,11 +35,11 @@ By default, the Audit Trail is not activated when you install Orchestrator. You 
 1.  Open a command prompt with administrative credentials.  
 
 ::: moniker range="<=sc-orch-2019"
-1.  Navigate to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Management Server`.  
+2.  Navigate to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
-1.  Navigate to `C:\Program Files\Microsoft System Center\Orchestrator\Management Server`.  
+2.  Navigate to `C:\Program Files\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
 3.  To activate the Audit Trail, type **atlc \/enable**, and to deactivate the Audit Trail, type **atlc \/disable**.  

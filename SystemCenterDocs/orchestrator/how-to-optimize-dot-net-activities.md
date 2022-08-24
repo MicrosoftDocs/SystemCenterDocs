@@ -44,7 +44,7 @@ To remove the delay you can either deactivate `generatePublisherEvidence` in `Po
     </runtime>
     ```
 
-## To create a profile for the service account
+### Create a profile for the service account
 
 1. On the runbook server where runbooks run that contain an activity referencing the .NET assemblies, sign in to the computer using the service account credentials. A profile is created on first sign-in.
 

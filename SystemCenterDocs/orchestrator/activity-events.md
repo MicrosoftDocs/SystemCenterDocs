@@ -43,7 +43,7 @@ Each activity in an Orchestrator runbook has the ability to send an event whenev
 In addition to viewing the events on the **Events** tab in the Runbook Designer, you can send them to an SNMP trap destination. This lets you monitor the health of the Orchestrator environment by using other tools designed to provide proactive alerting. The only requirement for such a tool is that it can receive SNMP traps. You can use the **Orchestrator Event Delivery Configuration Utility** to add and configure SNMP trap destinations for Runbook events.  
 
 ### Add an SNMP Trap Destination  
-To add an SNMP trap destination, run the **oedc** command one time for each destination that you want to add by using the following syntax:  
+To add an SNMP trap destination, run the `oedc` command one time for each destination that you want to add by using the following syntax:  
 
 ```bat
 oedc /snmp /add /ip <Targeted IP Address> /port <Targeted Port> /version <version> /community <community>  
@@ -63,12 +63,12 @@ For example, use the following procedure to send traps by using SNMP version 1 t
 2.  Navigate to `C:\Program Files\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
-3.  Type the following command: **oedc /snmp /add /ip 10.1.1.10 /port 162 /version SNMP1 /community public**  
+3.  Type the following command: `oedc /snmp /add /ip 10.1.1.10 /port 162 /version SNMP1 /community public`  
 
 4.  Restart the Orchestrator Runbook Service and the Orchestrator Runbook Server Monitor service.  
 
 ### Remove All SNMP Trap Destinations  
-You cannot remove individual SNMP trap destinations. Instead, you must remove all destinations, and then add back any that you want. To remove all SNMP trap destination, run the **oedc** command with the following syntax:  
+You cannot remove individual SNMP trap destinations. Instead, you must remove all destinations, and then add back any that you want. To remove all SNMP trap destination, run the `oedc` command with the following syntax:  
 
 **oedc /snmp /clear**  
 
@@ -77,7 +77,7 @@ You cannot remove individual SNMP trap destinations. Instead, you must remove al
 1.  Open a command prompt with administrative credentials.  
 
 ::: moniker range="<=sc-orch-2019"
-1.  Navigate to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Management Server`.  
+2.  Navigate to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Management Server`.  
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"

@@ -41,7 +41,7 @@ The following steps are required to enable an automatic migration of Orchestrato
 > See [https://go.microsoft.com/fwlink/?LinkId=246817](/sql/tools/sqlcmd-utility) for information on using the Sqlcmd utility.  
 
 > [!NOTE]  
-> it's recommended to enable SQL Broker on the Orchestrator Database in order for internal maintenance tasks to execute automatically.  
+> It's recommended to enable SQL Broker on the Orchestrator Database in order for internal maintenance tasks to execute automatically.  
 
 ## How to check / enable SQL Broker
 Check if you need to enable SQL Broker by running the following query against the Orchestrator SQL Instance: 

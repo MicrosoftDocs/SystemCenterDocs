@@ -47,7 +47,7 @@ To do this, you will need to complete the following actions:
 
 ::: moniker range="sc-orch-2022"
 1.  Open the installation location of the WebAPI, typically it is `<OrchestratorInstallDir>\WebApi`.
-   - You can use IIS Manager to navigate to the WebAPI folder as well.
+    - You can use IIS Manager to navigate to the WebAPI folder as well.
 2.  Edit the `environmentVariable` element in `system.webServer` \> `aspNetCore` \> `environmentVariables` in the `web.config` using a text editor. Particularly, you'd want to change the values of the `DATABASE__*` variables. 
 
 The full list of Database connection settings is available in [Connection String syntax][db-conn-string]. First determine the keys you need to specify for your scenario, for example the `Trusted_Connection` (or its alias `Integrated Security`) may require other keys like `User ID`.
