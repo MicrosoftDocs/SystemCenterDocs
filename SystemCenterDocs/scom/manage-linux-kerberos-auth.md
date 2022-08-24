@@ -59,7 +59,7 @@ The following subset of those operating systems now support WS-Management commun
 
 ::: moniker-end
 
-::: moniker range=">=sc-om-2019"
+::: moniker range="sc-om-2019"
 
 | Operating System | Version |
 |------------------|:---------|
@@ -67,13 +67,44 @@ The following subset of those operating systems now support WS-Management commun
 | Red Hat Enterprise Linux Server | 7 |
 | Red Hat Enterprise Linux Server | 8 |
 | CentOS | 7 |
-| UBUNTU Server | 16 |
-| UBUNTU Server | 18 |
-| UBUNTU Server | 20 |
-| SUSE | 12 |
-| SUSE | 15 |
+| CentOS | 8 |
+| Rocky Linux | 8 |
+| Alma Linux | 8 |
+| SLSE | 12 |
+| SLSE | 15 |
+| Debian | 9 |
+| Debian | 10 |
+| Debian | 11 |
+| Oracle Linux | 7 |
+| Oracle Linux | 8 |
+| Ubuntu Server | 16 |
+| Ubuntu Server | 18 |
+| Ubuntu Server | 20 |
 
 ::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+| Operating System | Version |
+|------------------|:---------|
+| Red Hat Enterprise Linux Server | 7 |
+| Red Hat Enterprise Linux Server | 8 |
+| CentOS | 7 |
+| CentOS | 8 |
+| Rocky Linux | 8 |
+| Alma Linux | 8 |
+| SLSE | 12 |
+| SLSE | 15 |
+| Debian | 9 |
+| Debian | 10 |
+| Debian | 11 |
+| Oracle Linux | 7 |
+| Oracle Linux | 8 |
+| Ubuntu Server | 16 |
+| Ubuntu Server | 18 |
+| Ubuntu Server | 20 |
+::: moniker-end
+
 
 - UNIX or Linux agent must be domain joined.
 
