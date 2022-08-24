@@ -70,8 +70,8 @@ The following subset of those operating systems now support WS-Management commun
 | CentOS | 8 |
 | Rocky Linux | 8 |
 | Alma Linux | 8 |
-| SLSE | 12 |
-| SLSE | 15 |
+| SLES | 12 |
+| SLES | 15 |
 | Debian | 9 |
 | Debian | 10 |
 | Debian | 11 |
@@ -93,8 +93,8 @@ The following subset of those operating systems now support WS-Management commun
 | CentOS | 8 |
 | Rocky Linux | 8 |
 | Alma Linux | 8 |
-| SLSE | 12 |
-| SLSE | 15 |
+| SLES | 12 |
+| SLES | 15 |
 | Debian | 9 |
 | Debian | 10 |
 | Debian | 11 |
