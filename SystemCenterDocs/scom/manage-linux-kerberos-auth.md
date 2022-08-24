@@ -70,6 +70,8 @@ The following subset of those operating systems now support WS-Management commun
 | UBUNTU Server | 16 |
 | UBUNTU Server | 18 |
 | UBUNTU Server | 20 |
+| SUSE | 12 |
+| SUSE | 15 |
 
 ::: moniker-end
 
