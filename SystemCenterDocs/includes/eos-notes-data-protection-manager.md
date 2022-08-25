@@ -12,4 +12,4 @@ ms.technology: data-protection-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Data Protection Manager (DPM) has reached the end of support, we recommend you to [upgrade to DPM 2019](../dpm/index.yml).
+> This version of Data Protection Manager (DPM) has reached the end of support, we recommend you to [upgrade to DPM 2022](/system-center/dpm/upgrade-dpm).
