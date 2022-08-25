@@ -44,16 +44,22 @@ You can use the Database Configuration utility to change the connection settings
 7. Click **Finish**.  
 
 ## Web Service  
-The web service supporting the Orchestration console does not use the **Settings.dat** file. To change the database settings for the web service, you must modify the Web.config file on the Internet Information Services \(IIS\) server. You can use **IIS Manager** to modify the file, but you must first decrypt it by running the aspnet\_regiis.exe executable file.  
+The web service supporting the Orchestration console does not use the **Settings.dat** file. To change the database settings for the web service, you must modify the `web.config` file on the Internet Information Services \(IIS\) server.
+
+::: moniker range="<=sc-orch-2019"
+You can use **IIS Manager** to modify the file, but you must first decrypt it by running the aspnet\_regiis.exe executable file.
+::: moniker-end  
 
 ### To change the database settings for the Orchestrator web service  
 
+::: moniker range="<=sc-orch-2019"
 1.  Log on with administrative credentials to the computer with the Orchestration console installed.  
 2.  Open a Command Prompt window with administrator credentials.  
 3.  Run the following command to decrypt the Web.config file:  
 
-
-    **C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pdf "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center \<version\>\\Orchestrator\\Web Service\\Orchestrator\<version\>"**  
+    ```powershell
+    C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet\_regiis.exe -pdf "connectionStrings" "C:\Program Files (x86)\Microsoft System Center\Orchestrator\Web Service\Orchestrator"
+    ```
 
 4.  To start the IIS Manager, click **Start**, point to **Administrative Tools**, and then click **Internet Information Services \(IIS\) Manager**.  
 5.  Expand the **Sites** node, and then click **Microsoft System Center \<version\> Orchestrator Web Service**.  
@@ -64,10 +70,32 @@ The web service supporting the Orchestration console does not use the **Settings
 10. Close **IIS Manager**.  
 11. Run the following command to encrypt the Web.config file:  
 
+    ```powershell
+    C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet\_regiis.exe -pef "connectionStrings" "C:\Program Files (x86)\Microsoft System Center\Orchestrator\Web Service\Orchestrator"
+    ```
+::: moniker-end
 
-    **C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pef "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center \<version\>\\Orchestrator\\Web Service\\Orchestrator\<version\>"**  
+::: moniker range="sc-orch-2022"
+Edit the `environmentVariable` element in `system.webServer` \> `aspNetCore` \> `environmentVariables` in the `web.config` using a text editor. Particularly, you'd want to change the values of the `DATABASE__*` variables.
 
+The full list of Database connection settings is available in [Connection String syntax][db-conn-string]. First determine the keys you need to specify for your scenario, for example the `Trusted_Connection` (or its alias `Integrated Security`) may require other keys like `User ID`.
 
+```xml
+<!-- system.webServer > aspNetCore -->
+<environmentVariables>
+  <environmentVariable name="Database__Database" value="Orchestrator" />
+  <environmentVariable name="Database__Trusted_Connection" value="true" />
+  <environmentVariable name="Database__Address" value="localhost\mssqlserver" />
+</environmentVariables>
+```
+
+To set a value for a key called `property`, set an environment variable named `Database__<property>`.
+
+> [!NOTE]
+> You must use **two** underscores to separate the `Database` prefix.
+
+[db-conn-string]: /dotnet/api/system.data.sqlclient.sqlconnection.connectionstring#remarks
+::: moniker-end
 
 ## Next steps
 Read more about best practices for [database sizing and performance](database-sizing-and-performance.md).
