@@ -12,4 +12,4 @@ ms.technology: operations-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Operations Manager has reached the end of support, we recommend you to [upgrade to Operations Manager 2022](../scom/index.yml).
+> This version of Operations Manager has reached the end of support, we recommend you to [upgrade to Operations Manager 2022](/system-center/scom/deploy-upgrade-overview).
