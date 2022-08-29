@@ -67,7 +67,6 @@ The following subset of those operating systems now support WS-Management commun
 | Red Hat Enterprise Linux Server | 7 |
 | Red Hat Enterprise Linux Server | 8 |
 | CentOS | 7 |
-| CentOS | 8 |
 | Rocky Linux | 8 |
 | Alma Linux | 8 |
 | SLES | 12 |
@@ -90,7 +89,6 @@ The following subset of those operating systems now support WS-Management commun
 | Red Hat Enterprise Linux Server | 7 |
 | Red Hat Enterprise Linux Server | 8 |
 | CentOS | 7 |
-| CentOS | 8 |
 | Rocky Linux | 8 |
 | Alma Linux | 8 |
 | SLES | 12 |
