@@ -5,7 +5,7 @@ description: This article explains How to obtain a certificate for use with Wind
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 08/11/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -27,7 +27,7 @@ Ensure you have the following:
 
 >[!NOTE]
 >
->If your organization does not using AD CS or the accompanying web services, the steps below will not apply to your environment. 
+>If your organization is not using AD CS or the accompanying web services, the steps below will not apply to your environment. 
 
 - If you are using an external certificate authority, these steps will not apply to the below scenario.
 
@@ -195,9 +195,9 @@ More information, see [certificate templates](/previous-versions/windows/it-pro/
    |Tab|Description|
    |----|---------------|  
    |Compatibility| 1. **Certification Authority**: Windows Server 2008 (or the lowest AD functional level in the environment).</br> 2. **Certificate Recipient**: Windows Server 2012 (or the lowest version OS in the environment).|
-   |General| 1. **Template display name**: Enter a friendly name, such as *Operations Manager*</br> 2. **Template name**: Enter the same name as display name.</br> 3. **Validity period**: Enter the validity period to match your organization’s requirements.</br> 4. Select **Publish certificate in Active Directory** and **do not automatically reenroll if a duplicate certificate exists in Active Directory** checkboxes.|
+   |General| 1. **Template display name**: Enter a friendly name, such as *Operations Manager*</br> 2. **Template name**: Enter the same name as display name.</br> 3. **Validity period**: Enter the validity period to match your organization’s requirements.</br> 4. Select **Publish certificate in Active Directory** and **Do not automatically reenroll if a duplicate certificate exists in Active Directory** checkboxes.|
    |Request Handling| 1. **Purpose**: Select **Signature and encryption** from the dropdown.</br> 2. Select **Allow private key to be exported** checkbox.|
-   |Cryptography| 1. **Provider Category**: Legacy Cryptography Service Provider</br> 2. **Algorithm name**: Select Determined by CSP from the dropdown.</br> 3. **Minimum Key size**: 2048 or 4096 as per Organization security requirement.</br> 4. **Providers**: Select **Microsoft RSA Schannel Cryptographic Provider** from the dropdown|
+   |Cryptography| 1. **Provider Category**: Legacy Cryptography Service Provider</br> 2. **Algorithm name**: Select Determined by CSP from the dropdown.</br> 3. **Minimum Key size**: 2048 or 4096 as per Organization security requirement.</br> 4. **Providers**: Select **Microsoft RSA channel Cryptographic Provider** and **Microsoft Enhanced Cryptographic Provider v1.0** from the dropdown|
    |Extensions| 1. Under **Extensions included in this template**, select **Application Policies** and then select **Edit**</br> 2. **Edit Application Policies Extension** dialog opens.</br> 3. Under **Application policies:**, select **IP security IKE intermediate** and then select **Remove**</br> 4. Select **Add** and then select the **Client Authentication** and **Server Authentication** under **Application policies**.</br> 5. Select **OK**.</br> 6. Select **Key Usage** and **Edit**.</br> 6. Select **Make this extension critical** checkbox and select **OK**|
    |Security| 1. Ensure that the **Authenticated Users** group has **Read** and **Enroll** permissions and select **Apply** to create the template.|
 
@@ -254,7 +254,7 @@ This process encodes the information specified in our config file in Base64 and 
 
 2. Navigate to the same directory where the *.inf* file is located.
 
-3. Run the below command, modifying the *.inf* and *.req* file names as needed (leave the .req extension as-is):
+3. Run the below command to modify the *.inf* file name to the ones created above and set the *.req* file to one that makes sense to you as a certificate request (leave the .req extension as-is):
 
       ```
 
@@ -321,7 +321,7 @@ For example, *OperationsManagerCert*, and then select **Submit**.
 
 ### Retrieve the certificate from a Stand-Alone CA
 
-A certificate from a Stand-Alone CA will be retrieved on the target machine for ease of certificate installation. If the certificate is not retrieved, ensure to export the certificate as indicated below:
+A certificate from a Stand-Alone CA will be retrieved on the target machine for ease of certificate installation. If the CA connot be reached from the target machine, ensure to export the certificate as indicated below:
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
 For example, *https://\<servername\>/certsrv*.
@@ -353,7 +353,7 @@ For example, *https://\<servername\>/certsrv*.
 
 Apart from the request file, you can create a certificate request through the Certificate services web portal. This step completes on the target machine for ease of certificate installation. If the certificate request using the AD-CS web portal is not possible, ensure to export the certificate as indicated below:
 
-1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address
+1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
 For example, `https://<servername>/certsrv`.
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
 3. On the **Request a Certificate** page, select **advanced certificate request**.
@@ -372,7 +372,7 @@ For example, `https://<servername>/certsrv`.
 8. Select **Install this certificate**.
 9. On the server, the *Personal certificate store* stores the certificate.
 10. Load the *MMC* or *CertMgr* consoles and go to **Personal** > **Certificates** and locate the newly created certificate.
-11. Upon successful completion of task on the target server, continue to the next main step else, export the certificate:
+11. If this task was not completed on the target server, export the certificate:
       1. Select and hold the new certificate > All Tasks > Export.
       1. In the **Certificate Export Wizard**, select **Next**.
       1. Select **Yes, export the private key**, select **Next**.
@@ -403,7 +403,7 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
           1. Ensure to select *Local Computer* and select **Finish**.
           1. Select **OK** to close the wizard.
 3. Start the certificate request:
-      1. Expand the folders for Personal > Certificates.
+      1. Expand the Personal folder.
       1. Select and hold Certificates > All Tasks > Request New Certificate.
 4. **Certificate Enrollment wizard**
       1. On the **Before You Begin** page, select **Next**.
@@ -418,11 +418,11 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
          |Tab|Description|
          |----|---------------|
          |Subject| 1. In Subject Name, select the **Common Name** or **Full DN**, provide the value - hostname or BIOS name of the target server, Select **Add**.|
-         |General| 1. 1.	Provide a Friendly Name to the generated certificate.</br> 2. Provide a description of the purpose of this ticket if desired.|
+         |General| 1. Provide a Friendly Name to the generated certificate.</br> 2. Provide a description of the purpose of this ticket if desired.|
          |Extensions| 1. Under Key usage, ensure to select **Digital Signature** and **Key encipherment** option and select **Make these key usages critical** checkbox.<br></br> 2. Under Extended Key Usage, ensure to select **Server Authentication** and **Client Authentication** options.|
-         |Private Key| 1. Under Key options, ensure that the Key Size is at least 1024 or 2048 and select the **Make private key exportable** checkbox.</br> 2. Under Key type, 1.	Ensure to select the **Exchange** option.|
+         |Private Key| 1. Under Key options, ensure that the Key Size is at least 1024 or 2048 and select the **Make private key exportable** checkbox.</br> 2. Under Key type, ensure to select the **Exchange** option.|
          |Certification Authority tab| Ensure to select the CA checkbox.|
-         |Signature| 1. If your organization requires a registration authority, provide a signing certificate for this request.</br> 2. Select **OK** to close this wizard.|
+         |Signature| If your organization requires a registration authority, provide a signing certificate for this request. |
 
       1. Once the information has been provided in the Certificate Properties wizard, the warning hyperlink from earlier disappears.
       1. Select **Enroll to create the certificate**. If there is an error, please consult your AD or certificate team.
@@ -445,7 +445,7 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
 
 ## Install the certificate on the target machine
 
-To use the newly created certificate, it into the certificate store on the client machine.
+To use the newly created certificate, import it into the certificate store on the client machine.
 
 ### Add the certificate to the Certificate Store
 
@@ -458,7 +458,7 @@ To use the newly created certificate, it into the certificate store on the clien
 
 5. This certificate should now be present in the Local Machine Personal store on this computer.
 
-Select and hold the certificate > Install > Local machine and choose the destination of the personal store to install the certificate.
+Alternatively, select and hold the certificate file > Install > Local machine and choose the destination of the personal store to install the certificate.
 
 >[!NOTE]
 >If you add a certificate to the certificate store with the private key and delete it from the store at a later point, the certificate will no longer contain the private key when re-imported. Operations Manager communications requires private key as the outgoing data needs to be encrypted. You can repair the certificate using [certutil](/windows-server/administration/windows-commands/certutil#-repairstore), you need to provide the serial number of the cert. For example, to restore the private key, use the below command in an Administrator Command Prompt or PowerShell window:
@@ -468,12 +468,12 @@ Select and hold the certificate > Install > Local machine and choose the destina
 
 Apart from installation of certificate on the system, you must update the Operations Manager to be aware of the certificate that you want to use. The actions below will restart the Microsoft Monitoring Agent service.
 
-Uses the MOMCertImport.exe utility included in the **SupportTools** folder in the Operations Manager installation media. Copy the file to your server.
+Use the MOMCertImport.exe utility included in the **SupportTools** folder in the Operations Manager installation media. Copy the file to your server.
 
 
 To import the certificate into Operations Manager using MOMCertImport, follow these steps:
 
-1. Log on to the computer where you created the certificate.
+1. Log on to the target computer.
 2. Open an Administrator Command Prompt or PowerShell window and navigate to the *MOMCertImport.exe* utility folder.
 3. Run the *MomCertImport.exe* utility
       1. In CMD: *MOMCertImport.exe*
@@ -514,7 +514,7 @@ The Operations Manager generates an alert when an imported certificate for Manag
 5. Select the option that best applies to what you want to do and follow the wizard.
 6. Once completed, run the *MOMCertImport.exe* tool to ensure Operations Manager has the new serial number (reversed) of the certificate if it changed, see the above section for further details.
 
-If certificate renewal via this method is not available, use the above steps to request a new certificate or with the organization’s certificate authority. Install and import the new certificate for use by the Operations Manager.
+If certificate renewal via this method is not available, use the prior steps to request a new certificate or with the organization’s certificate authority. Install and import the new certificate for use by the Operations Manager.
 
 ### Optional: Configure certificate auto-enrollment and renewal
 
@@ -526,6 +526,6 @@ Configuration of certificate auto-enrollment and renewal will not work with Stan
 For more information, see [Windows Server guide](/windows-server/networking/core-network-guide/cncg/server-certs/configure-server-certificate-autoenrollment)
 
 >[!Note]
->Auto-enrolment and renewal don’t configure Operations Manager to use certificates, nor does it guarantee that the certificate generated will confirm to SCOM’s Operations Manager’s expected certificate settings for auto-enrollment. However, renewals will use the same template used to create the initial certificate.
+>Auto-enrolment and renewal don’t configure Operations Manager to use certificates, nor does it guarantee that the certificate generated will conform to Operations Manager’s expected certificate settings for auto-enrollment. However, renewals will use the same template used to create the initial certificate.
 
 
