@@ -110,12 +110,11 @@ This article provides the system requirements and steps to install the Orchestra
 [cli-wizard]: ./command-line-activity-wizard.md
 [ip-wizard]: ./integration-pack-wizard.md
 
-## Orchestrator Resources  
- In addition to this online reference provided for System Center Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.  
+## Orchestrator Resources
 
-|Resource|Location|  
-|-|-|    
-|System Center Home|[https://www.microsoft.com/cloud-platform/system-center](https://www.microsoft.com/cloud-platform/system-center)|  
-|System Center documentation|[https://docs.microsoft.com/system-center/](../index.yml)|  
-|Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
-|Orchestrator Community Forums on TechNet|[https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
+In addition to this online reference provided for System Center Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.
+
+- [System Center home](https://www.microsoft.com/cloud-platform/system-center)
+- [System Center documentation](../index.yml)
+- [Orchestrator team blog](https://blogs.technet.microsoft.com/orchestrator/)
+- [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|

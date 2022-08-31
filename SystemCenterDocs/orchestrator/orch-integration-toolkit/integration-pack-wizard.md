@@ -156,17 +156,17 @@ The Integration Pack Wizard (IP Wizard) allows you to create a new Integration P
 ### Filename length limitation  
  When including assemblies in your Integration Pack, they are automatically added to the registry by the installer. Due to the limitation in the registry key name length, the combined path and filename of an assembly cannot exceed 234 characters. Given the default path where assemblies within an IP are placed, the maximum filename length of an included assembly file cannot exceed 80 characters. If an assembly with a filename exceeding 80 characters is included in the installation, the installation will fail.  
 
-## Orchestrator Resources  
- In addition to this online reference provided for System Center 2012 Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.  
+## Orchestrator resources
 
-|Resource|Location|  
-|-|-|   
-|System Center Home|[https://www.microsoft.com/en-us/cloud-platform/system-center](https://www.microsoft.com/en-us/cloud-platform/system-center)|  
-|System Center documentation|[https://docs.microsoft.com/system-center/](../index.yml)|  
-|Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
-|Orchestrator Community Forums on TechNet|[https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
+In addition to this online reference provided for System Center 2012 Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.
 
-## See Also  
- [Orchestrator Integration Packs](https://www.microsoft.com/en-us/search/result.aspx?q=Orchestrator+Integration+Toolkit)   
- [Integration Toolkit Documentation](orchestrator-integration-toolkit-overview.md)   
- [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))
+- [System Center home](https://www.microsoft.com/cloud-platform/system-center)
+- [System Center documentation](../index.yml)
+- [Orchestrator team blog](https://blogs.technet.microsoft.com/orchestrator/)
+- [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
+
+## See also
+
+[Orchestrator Integration Packs](https://www.microsoft.com/en-us/search/result.aspx?q=Orchestrator+Integration+Toolkit)
+- [Integration Toolkit Documentation](orchestrator-integration-toolkit-overview.md)
+- [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))
