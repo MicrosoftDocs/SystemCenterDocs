@@ -108,7 +108,7 @@ The following subset of those operating systems now support WS-Management commun
 
 - Run as accounts must be configured to use domain-based accounts that are associated with the appropriate [Unix/Linux Run As Profile.](./plan-security-crossplat-credentials.md)
 
-- Enabling Kerberos authentication assumes all UNIX and Linux agents communicating with the management server support Kerberos. Mixed mode authentication where some agents use basic authentication and others leverage Kerberos is not supported.
+- Enabling Kerberos authentication assumes all UNIX and Linux agents communicating with the management server support Kerberos. Mixed mode authentication where some agents use basic authentication and others leverage Kerberos is not supported. Instead use seperate Resource Pools and Management Servers to achieve this.
 
 ## Enable or disable Kerberos Authentication on a management or a gateway server
 
@@ -131,9 +131,9 @@ Use the following procedure to enable/disable Kerberos authentication on a manag
 > [!NOTE]
 > The task sets the registry entry **Authentication** at the following location:
 >
-> HKLM:\Software\Microsoft\Microsoft Operations Manager\3.0\Setup\Linux Auth to **Kerberos**.
+> `HKLM:\Software\Microsoft\Microsoft Operations Manager\3.0\Setup\Linux Auth` to **Kerberos**.
 >
-> **Repeat the above steps on all management servers that communicate with UNIX or Linux agents.**
+> **Repeat the above steps on all management servers in the UNIX and Linux resource pool for which you want kerberos authentication to occur on the SCX Agents.**
 
 ## Verify Kerberos Authentication via Console
 
