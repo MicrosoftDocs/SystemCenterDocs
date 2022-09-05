@@ -12,4 +12,4 @@ ms.technology:  virtual-machine-manager
 ---
 > [!IMPORTANT]
 >
-> This version of Virtual Machine Manager (VMM) has reached the end of support, we recommend you to [upgrade to VMM 2022](../vmm/index.yml).
+> This version of Virtual Machine Manager (VMM) has reached the end of support, we recommend you to [upgrade to VMM 2022](/system-center/vmm/upgrade-vmm).
