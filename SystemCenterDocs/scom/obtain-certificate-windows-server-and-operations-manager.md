@@ -27,7 +27,7 @@ Ensure you have the following:
 
 >[!NOTE]
 >
->If your organization is not using AD CS or the accompanying web services, the steps below will not apply to your environment. 
+>If your organization does not use AD CS or the accompanying web services, the steps below will not apply to your environment. 
 
 - If you are using an external certificate authority, these steps will not apply to the below scenario.
 
@@ -157,6 +157,7 @@ To import the Trusted Root Certificate, follow these steps:
       1. From the Command Line, PowerShell, or Run, type *certlm.msc* and press **enter**.
          >[!NOTE]
          >The steps above are applicable even if certlm.msc is not found.
+3. If successful, the Trusted Root Certificate from the CA will be visible under **Trusted Root Certification Authorities** > **Certificates**.
 
 ### Method 2:
 
@@ -203,8 +204,8 @@ More information, see [certificate templates](/previous-versions/windows/it-pro/
    |Compatibility| 1. **Certification Authority**: Windows Server 2008 (or the lowest AD functional level in the environment).</br> 2. **Certificate Recipient**: Windows Server 2012 (or the lowest version OS in the environment).|
    |General| 1. **Template display name**: Enter a friendly name, such as *Operations Manager*</br> 2. **Template name**: Enter the same name as display name.</br> 3. **Validity period**: Enter the validity period to match your organization’s requirements.</br> 4. Select **Publish certificate in Active Directory** and **Do not automatically reenroll if a duplicate certificate exists in Active Directory** checkboxes.|
    |Request Handling| 1. **Purpose**: Select **Signature and encryption** from the dropdown.</br> 2. Select **Allow private key to be exported** checkbox.|
-   |Cryptography| 1. **Provider Category**: Select Legacy Cryptography Service Provider</br> 2. **Algorithm name**: Select Determined by CSP from the dropdown.</br> 3. **Minimum Key size**: 2048 or 4096 as per Organization security requirement.</br> 4. **Providers**: Select **Microsoft RSA channel Cryptographic Provider** and **Microsoft Enhanced Cryptographic Provider v1.0** from the dropdown|
-   |Extensions| 1. Under **Extensions included in this template**, select **Application Policies** and then select **Edit**</br> 2. **Edit Application Policies Extension** dialog opens.</br> 3. Under **Application policies:**, select **IP security IKE intermediate** and then select **Remove**</br> 4. Select **Add** and then select the **Client Authentication** and **Server Authentication** under **Application policies**.</br> 5. Select **OK**.</br> 6. Select **Key Usage** and **Edit**.</br> 7. Ensure to select **Digital signature** and **Allow key exchange only with key encryption(key encipherment)**. </br>8. Select **Make this extension critical** checkbox and select **OK**|
+   |Cryptography| 1. **Provider Category**: Select Legacy Cryptography Service Provider</br> 2. **Algorithm name**: Select Determined by CSP from the dropdown.</br> 3. **Minimum Key size**: 2048 or 4096 as per Organization security requirement.</br> 4. **Providers**: Select **Microsoft RSA channel Cryptographic Provider** and **Microsoft Enhanced Cryptographic Provider v1.0** from the dropdown.|
+   |Extensions| 1. Under **Extensions included in this template**, select **Application Policies** and then select **Edit**</br> 2. **Edit Application Policies Extension** dialog opens.</br> 3. Under **Application policies:**, select **IP security IKE intermediate** and then select **Remove**</br> 4. Select **Add** and then select the **Client Authentication** and **Server Authentication** under **Application policies**.</br> 5. Select **OK**.</br> 6. Select **Key Usage** and **Edit**.</br> 7. Ensure **Digital signature** and **Allow key exchange only with key encryption(key encipherment)** are selected. </br>8. Select **Make this extension critical** checkbox and select **OK**.|
    |Security| 1. Ensure that the **Authenticated Users** group has **Read** and **Enroll** permissions and select **Apply** to create the template.|
 
 ### Add the template to the Certificate Templates folder
@@ -260,7 +261,8 @@ This process encodes the information specified in our config file in Base64 and 
 
 2. Navigate to the same directory where the *.inf* file is located.
 
-3. Run the below command to modify the *.inf* file name to the ones created above and set the *.req* file to one that makes sense to you as a certificate request (leave the .req extension as-is):
+3. Run the below command to modify the *.inf* file name and ensure it matches the file name created earlier:
+Leave the *.req* file name as-is.
 
       ```
 
@@ -320,7 +322,7 @@ For example, *OperationsManagerCert*, and then select **Submit**.
 1. Log onto an Enterprise Certificate Authority in your environment.
 2. Select **Start** > **Windows Administrative Tools** > **Certification Authority**.
 3. On the left navigation pane, expand the CA and select  **Pending Requests**.
-4. On the right navigation pane, find and select the pending request for the SCOM server.
+4. On the right navigation pane, find and select the pending request for the Operations Manager server.
 5. Select and hold the **Pending request** > **All Tasks** > **Issue**
 6. On the left navigation, select **Issued Certificates**, verify the presence of newly issued certificate.
 7. Close the Certification Authority console.
@@ -409,8 +411,8 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
           1. Ensure to select *Local Computer* and select **Finish**.
           1. Select **OK** to close the wizard.
 3. Start the certificate request:
-      1. Expand the Personal folder.
-      1. Select and hold Certificates > All Tasks > Request New Certificate.
+      1. Under Certificates, expand the Personal folder.
+      1. Select and hold **Certificates** > **All Tasks** > **Request New Certificate**.
 4. **Certificate Enrollment wizard**
       1. On the **Before You Begin** page, select **Next**.
       1. Select the applicable Certificate Enrollment Policy (default may be the **Active Directory Enrollment Policy**), select **Next**
@@ -425,7 +427,7 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
          |----|---------------|
          |Subject| 1. In Subject Name, select the **Common Name** or **Full DN**, provide the value - hostname or BIOS name of the target server, Select **Add**.|
          |General| 1. Provide a Friendly Name to the generated certificate.</br> 2. Provide a description of the purpose of this ticket if desired.|
-         |Extensions| 1. Under Key usage, ensure to select **Digital Signature** and **Key encipherment** option and select **Make these key usages critical** checkbox.<br></br> 2. Under Extended Key Usage, ensure to select **Server Authentication** and **Client Authentication** options.|
+         |Extensions| 1. Under Key usage, ensure to select **Digital Signature** and **Key encipherment** option and select **Make these key usages critical** checkbox.<br> 2. Under Extended Key Usage, ensure to select **Server Authentication** and **Client Authentication** options.|
          |Private Key| 1. Under Key options, ensure that the Key Size is at least 1024 or 2048 and select the **Make private key exportable** checkbox.</br> 2. Under Key type, ensure to select the **Exchange** option.|
          |Certification Authority tab| Ensure to select the CA checkbox.|
          |Signature| If your organization requires a registration authority, provide a signing certificate for this request. |
@@ -532,6 +534,6 @@ Configuration of certificate auto-enrollment and renewal will not work with Stan
 For more information, see [Windows Server guide](/windows-server/networking/core-network-guide/cncg/server-certs/configure-server-certificate-autoenrollment)
 
 >[!Note]
->Auto-enrollment and renewal does no4t configure Operations Manager to use certificates, nor does it guarantee that the certificate generated will conform to Operations Manager’s expected certificate settings for auto-enrollment. However, renewals will use the same template used to create the initial certificate.
+>Auto-enrollment and renewal does not configure Operations Manager to use certificates, nor does it guarantee that the certificate generated will conform to Operations Manager’s expected certificate settings for auto-enrollment. However, renewals will use the same template used to create the initial certificate.
 
 
