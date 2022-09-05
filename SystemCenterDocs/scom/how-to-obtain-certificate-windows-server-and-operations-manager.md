@@ -5,7 +5,7 @@ description: This article explains How to obtain a certificate for use with Wind
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 08/30/2022
+ms.date: 09/05/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -130,7 +130,7 @@ For example, *https://\<servername\>/certsrv*.
    
    a.	If prompted with a **Web Access Confirmation**, verify  the  server and URL, and select **Yes**.
 
-   b. If presented with multiple options under **CA Certificate**, confirm the selection, else select the default.
+   b. Verify the multiple options under **CA Certificate** and confirm the selection.
 
 4. Change the Encoding method to **Base 64** and then select **Download CA Certificate Chain**.
 
@@ -142,6 +142,8 @@ For example, *https://\<servername\>/certsrv*.
 >To import a Trusted Root Certificate, you must have administrative privileges on the target machine. 
 
 To import the Trusted Root Certificate, follow these steps:
+
+### Method 1:
 
 1. Copy the file generated in the previous step to the client.
 2. Open Certificate Manager.
@@ -155,16 +157,20 @@ To import the Trusted Root Certificate, follow these steps:
       1. From the Command Line, PowerShell, or Run, type *certlm.msc* and press **enter**.
          >[!NOTE]
          >The steps above are applicable even if certlm.msc is not found.
-3. Under Console Root, expand **Certificates (Local Computer)**, expand **Trusted Root Certification Authorities**, and then select and hold Certificates.
-4. Select **All Tasks**.
-5. In the Certificate Import Wizard, leave the first page as default and select **Next**
+
+### Method 2:
+
+1. Copy the file generated in the previous step to the client.
+2. Under Console Root, expand **Certificates (Local Computer)**, expand **Trusted Root Certification Authorities**, and then select and hold Certificates.
+3. Select **All Tasks**.
+4. In the Certificate Import Wizard, leave the first page as default and select **Next**
       1. a.	Browse to the location where you downloaded the CA certificate file and select the trusted root certificate file copied from the CA.
       1. Select **Next**.
-      1. In the Certificate Store location, leave as the default Trusted Root Certification Authorities.
+      1. In the Certificate Store location, leave the Trusted Root Certification Authorities as default.
       1. Select **Next** and **Finish**.
-6. If successful, the Trusted Root Certificate from the CA will be visible under **Trusted Root Certification Authorities** > **Certificates**.
+5. If successful, the Trusted Root Certificate from the CA will be visible under **Trusted Root Certification Authorities** > **Certificates**.
 
-## Create a certificate template
+## Create a certificate template: Enterprise CAs
 
 **Enterprise CAs:**
 
@@ -177,8 +183,8 @@ To issue a certificate, the Enterprise CA uses information in the certificate te
 
 **Stand-alone CAs:**
 
- - Don’t require AD-DS.
- - Don’t use certificate templates. 
+ - Do not require AD-DS.
+ - Do not use certificate templates. 
 
 If you use stand-alone CAs, include all the information about the requested certificate type in the certificate request.
 
@@ -197,8 +203,8 @@ More information, see [certificate templates](/previous-versions/windows/it-pro/
    |Compatibility| 1. **Certification Authority**: Windows Server 2008 (or the lowest AD functional level in the environment).</br> 2. **Certificate Recipient**: Windows Server 2012 (or the lowest version OS in the environment).|
    |General| 1. **Template display name**: Enter a friendly name, such as *Operations Manager*</br> 2. **Template name**: Enter the same name as display name.</br> 3. **Validity period**: Enter the validity period to match your organization’s requirements.</br> 4. Select **Publish certificate in Active Directory** and **Do not automatically reenroll if a duplicate certificate exists in Active Directory** checkboxes.|
    |Request Handling| 1. **Purpose**: Select **Signature and encryption** from the dropdown.</br> 2. Select **Allow private key to be exported** checkbox.|
-   |Cryptography| 1. **Provider Category**: Legacy Cryptography Service Provider</br> 2. **Algorithm name**: Select Determined by CSP from the dropdown.</br> 3. **Minimum Key size**: 2048 or 4096 as per Organization security requirement.</br> 4. **Providers**: Select **Microsoft RSA channel Cryptographic Provider** and **Microsoft Enhanced Cryptographic Provider v1.0** from the dropdown|
-   |Extensions| 1. Under **Extensions included in this template**, select **Application Policies** and then select **Edit**</br> 2. **Edit Application Policies Extension** dialog opens.</br> 3. Under **Application policies:**, select **IP security IKE intermediate** and then select **Remove**</br> 4. Select **Add** and then select the **Client Authentication** and **Server Authentication** under **Application policies**.</br> 5. Select **OK**.</br> 6. Select **Key Usage** and **Edit**.</br> 6. Select **Make this extension critical** checkbox and select **OK**|
+   |Cryptography| 1. **Provider Category**: Select Legacy Cryptography Service Provider</br> 2. **Algorithm name**: Select Determined by CSP from the dropdown.</br> 3. **Minimum Key size**: 2048 or 4096 as per Organization security requirement.</br> 4. **Providers**: Select **Microsoft RSA channel Cryptographic Provider** and **Microsoft Enhanced Cryptographic Provider v1.0** from the dropdown|
+   |Extensions| 1. Under **Extensions included in this template**, select **Application Policies** and then select **Edit**</br> 2. **Edit Application Policies Extension** dialog opens.</br> 3. Under **Application policies:**, select **IP security IKE intermediate** and then select **Remove**</br> 4. Select **Add** and then select the **Client Authentication** and **Server Authentication** under **Application policies**.</br> 5. Select **OK**.</br> 6. Select **Key Usage** and **Edit**.</br> 7. Ensure to select **Digital signature** and **Allow key exchange only with key encryption(key encipherment)**. </br>8. Select **Make this extension critical** checkbox and select **OK**|
    |Security| 1. Ensure that the **Authenticated Users** group has **Read** and **Enroll** permissions and select **Apply** to create the template.|
 
 ### Add the template to the Certificate Templates folder
@@ -321,7 +327,7 @@ For example, *OperationsManagerCert*, and then select **Submit**.
 
 ### Retrieve the certificate from a Stand-Alone CA
 
-A certificate from a Stand-Alone CA will be retrieved on the target machine for ease of certificate installation. If the CA connot be reached from the target machine, ensure to export the certificate as indicated below:
+A certificate from a Stand-Alone CA will be retrieved on the target machine for ease of certificate installation. If the CA is not reached from the target machine, ensure to export the certificate as indicated below:
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
 For example, *https://\<servername\>/certsrv*.
@@ -372,7 +378,7 @@ For example, `https://<servername>/certsrv`.
 8. Select **Install this certificate**.
 9. On the server, the *Personal certificate store* stores the certificate.
 10. Load the *MMC* or *CertMgr* consoles and go to **Personal** > **Certificates** and locate the newly created certificate.
-11. If this task was not completed on the target server, export the certificate:
+11. If this task is not completed on the target server, export the certificate:
       1. Select and hold the new certificate > All Tasks > Export.
       1. In the **Certificate Export Wizard**, select **Next**.
       1. Select **Yes, export the private key**, select **Next**.
@@ -526,6 +532,6 @@ Configuration of certificate auto-enrollment and renewal will not work with Stan
 For more information, see [Windows Server guide](/windows-server/networking/core-network-guide/cncg/server-certs/configure-server-certificate-autoenrollment)
 
 >[!Note]
->Auto-enrolment and renewal don’t configure Operations Manager to use certificates, nor does it guarantee that the certificate generated will conform to Operations Manager’s expected certificate settings for auto-enrollment. However, renewals will use the same template used to create the initial certificate.
+>Auto-enrollment and renewal does no4t configure Operations Manager to use certificates, nor does it guarantee that the certificate generated will conform to Operations Manager’s expected certificate settings for auto-enrollment. However, renewals will use the same template used to create the initial certificate.
 
 
