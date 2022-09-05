@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration for Man
 author: VChernov
 ms.author: v-vchernov
 manager: evansma
-ms.date: 7/5/2022
+ms.date: 9/5/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -24,7 +24,9 @@ Management Pack for SQL Server supports the following operating systems and plat
 - Windows Server 2016
 - Windows Server 2019
 - Windows Server 2022
-- Ubuntu 16.04 and 18.04
+- Ubuntu 16.04
+- Ubuntu 18.04
+- Ubuntu 20.04
 - Red Hat Enterprise Linux 7.3 and 7.4
 - SUSE Linux Enterprise Server v12 SP2
 - Docker Engine 1.8+
