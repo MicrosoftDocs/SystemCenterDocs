@@ -202,12 +202,11 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 8.  You can now use your new Orchestrator-compatible assembly in runbooks with the Invoke .NET activity, or you can build an Integration Pack from this assembly by clicking the **Build Integration Pack** button. If you do not wish to build an IP at this time, click **Close** to end the wizard.  
 
-## Orchestrator Resources  
- In addition to this online reference provided for System Center 2012 Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.  
+## Orchestrator resources
 
-|Resource|Location|  
-|-|-|   
-|System Center Home|[https://www.microsoft.com/en-us/cloud-platform/system-center](https://www.microsoft.com/en-us/cloud-platform/system-center)|  
-|System Center documentation|[https://docs.microsoft.com/system-center/](../index.yml)|  
-|Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
-|Orchestrator Community Forums on TechNet|[https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
+In addition to this online reference provided for System Center 2012 Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.
+
+- [System Center home](https://www.microsoft.com/cloud-platform/system-center)
+- [System Center documentation](../index.yml)
+- [Orchestrator team blog](https://blogs.technet.microsoft.com/orchestrator/)
+- [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
