@@ -91,6 +91,58 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 
 ::: moniker-end
 
+::: moniker range="sc-om-2022"
+
+## Cipher Suite Support Matrix
+
+| Distro                                      | Kernel                               | OpenSSL Version                  | Highest Supported Cipher Suite/Preferred Cipher Suite | Cipher Index   |
+|---------------------------------------------|--------------------------------------|----------------------------------|-------------------------------------------------------|----------------|
+| Red Hat Enterprise Linux Server 7.5 (Maipo) | Linux 3.10.0-862.el7.x86_64          | OpenSSL 1.0.2k-fips  26 Jan 2017 | TLS_RSA_WITH_AES_256_GCM_SHA384                       | { 0x00, 0x9D } |
+| Red Hat Enterprise Linux 8.3 (Ootpa)        | Linux 4.18.0-240.el8.x86_64          | OpenSSL 1.1.1g FIPS  21 Apr 2020 | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384                 | { 0xC0,0x30 }  |
+| Oracle Linux Server release 6.10            | Linux  4.1.12-124.16.4.el6uek.x86_64 | OpenSSL 1.0.1e-fips 11 Feb 2013  | TLS_RSA_WITH_AES_256_GCM_SHA384                       | { 0x00, 0x9D } |
+| Oracle Linux Server 7.9                     | Linux 5.4.17-2011.6.2.el7uek.x86_64  | OpenSSL 1.0.2k-fips  26 Jan 2017 | TLS_RSA_WITH_AES_256_GCM_SHA384                       | { 0x00, 0x9D } |
+| Oracle Linux Server 8.3                     | Linux 5.4.17-2011.7.4.el8uek.x86_64  | OpenSSL 1.1.1g FIPS  21 Apr 2020 | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384                 | { 0xC0,0x30 }  |
+| CentOS Linux 8 (Core)                       | Linux 4.18.0-193.el8.x86_64          | OpenSSL 1.1.1c FIPS  28 May 2019 | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384                 | { 0xC0,0x30 }  |
+| Ubuntu 16.04.5 LTS                          | Linux 4.4.0-131-generic              | OpenSSL 1.0.2g  1 Mar 2016       | TLS_RSA_WITH_AES_256_GCM_SHA384                       | { 0x00, 0x9D } |
+| Ubuntu 18.10                                | Linux 4.18.0-25-generic              | OpenSSL 1.1.1  11 Sep 2018       | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384                 | { 0xC0,0x30 }  |
+| Ubuntu 20.04 LTS                            | Linux 5.4.0-52-generic               | OpenSSL 1.1.1f  31 Mar 2020      | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384                 | { 0xC0,0x30 }  |
+| SUSE Linux Enterprise Server 12 SP5         | Linux 4.12.14-120-default            | OpenSSL 1.0.2p-fips  14 Aug 2018 | TLS_RSA_WITH_AES_256_GCM_SHA384                       | { 0x00, 0x9D } |
+| Debian GNU/Linux 10 (buster)                | Linux 4.19.0-13-amd64                | OpenSSL 1.1.1d  10 Sep 2019      | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384                 | { 0xC0,0x30 }  |
+
+### Ciphers, MAC algorithms, and key exchange algorithms 
+
+In System Center Operations Manager 2016 and later, the below ciphers, MAC algorithms, and key exchange algorithms are presented by the System Center Operations Manager SSH module.
+
+**Ciphers offered by SCOM SSH module:**
+
+- aes256-ctr 
+- aes256-cbc 
+- aes192-ctr 
+- aes192-cbc 
+- aes128-ctr 
+- aes128-cbc 
+- 3des-ctr 
+- 3des-cbc 
+ 
+**MAC algorithms offered by SCOM SSH module:**
+
+- hmac-sha10 
+- hmac-sha1-96 
+- hmac-sha2-256 
+ 
+**Key Exchange algorithms offered by SCOM SSH module:**
+
+- diffie-hellman-group-exchange-sha256  
+- diffie-hellman-group-exchange-sha1 
+- diffie-hellman-group14-sha1 
+- diffie-hellman-group14-sha256 
+- diffie-hellman-group1-sha1 
+- ecdh-sha2-nistp256 
+- ecdh-sha2-nistp384 
+- ecdh-sha2-nistp521 
+
+::: moniker-end
+
 ::: moniker range=">=sc-om-2019"
 
 ## Disabled SSL renegotiations in Linux agent

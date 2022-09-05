@@ -46,7 +46,7 @@ This article provides the system requirements and steps to install the Orchestra
 |Memory|Minimum 1GB (recommended 2GB)|  
 |Hard Disk|200MB|  
 |Operating System|Windows Server 2012 or later|  
-|Additional Software|Windows Installer version 3.1<br /><br /> Microsoft .NET Framework 3.5, Service Pack 1<br /><br /> Windows Installer XML Toolset (WiX) version 3.5. For System Center 2012 SP1, OIT supports only version 3.5|  
+|Additional Software|Windows Installer XML Toolset (WiX) version 3.11. For System Center 2012 SP1, OIT supports only version 3.5|  
 
 ::: moniker-end
 
@@ -55,15 +55,8 @@ This article provides the system requirements and steps to install the Orchestra
 
  The Orchestrator Integration Toolkit can also be installed with the Orchestrator server components. In that case, the system requirements for Orchestrator should be used.  
 
- When using Visual Studio to create activities using the Orchestrator SDK, note the following requirements:  
+ When using Visual Studio to create activities using the Orchestrator SDK, you must target .NET Framework 4.0 or higher (we recommend .NET Framework v4.7.2).
 
--   You must target .NET Framework 3.5  
-
--   You must be using one of the following Visual Studio versions:  
-
-    -   Visual Studio 2010  
-
-    -   Visual Studio 2008  
 
 ## Product Installation  
 
@@ -71,13 +64,13 @@ This article provides the system requirements and steps to install the Orchestra
 
 ::: moniker range="<=sc-orch-2019"
 
-1.  Download System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe from the [Microsoft download center](https://www.microsoft.com/download), and then run the installer. The welcome page appears.  
+1.  Download `System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe` from the [Microsoft download center](https://www.microsoft.com/download), and then run the installer. The welcome page appears.  
 
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
 
-1. Download System_Center_Orchestrator_IntegrationToolKit-10.22.1.2.exe from [Microsoft Download center](https://www.microsoft.com/download/details.aspx?id=104133) and run the installer. The welcome page appears. 
+1. Download `System_Center_Orchestrator_IntegrationToolKit-10.22.*.*.exe` from [Microsoft Download center](https://www.microsoft.com/download/details.aspx?id=104133) and run the installer. The welcome page appears. 
 
 ::: moniker-end
 
@@ -94,18 +87,34 @@ This article provides the system requirements and steps to install the Orchestra
 ## Results of Installing the Integration Toolkit  
  When you install the Orchestrator Integration Toolkit, there are files created on the computer that are used for creating and using Integration Packs.  
 
-- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to “C:\Program Files (x86)\Microsoft System Center \<version\>\Orchestrator\Integration Toolkit\Lib”.For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
+::: moniker range="<=sc-orch-2019"
 
-- Toolkit Integration Pack for Orchestrator – the System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to “C:\Program Files (x86)\Microsoft System Center \<version\>\Orchestrator\Integration Toolkit\Integration Packs”. For more information about the IP, see Integration Toolkit IP.  
+- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Lib`. For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
 
-  Integration Toolkit Utilities, Wizards and Binary files – all the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard and all their dependent files are by default installed to “C:\Program Files (x86)\Microsoft System Center \<version\>\Orchestrator\Integration Toolkit\Bin”. For more information about the wizards, see The Command-Line Activity Wizard and The Integration Pack Wizard.  
+- Toolkit Integration Pack for Orchestrator – the System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`.
 
-## Orchestrator Resources  
- In addition to this online reference provided for System Center Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.  
+  Integration Toolkit Utilities, Wizards and Binary files – all the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard and all their dependent files are by default installed to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see [The Command-Line Activity Wizard][cli-wizard] and [The Integration Pack Wizard][ip-wizard].  
 
-|Resource|Location|  
-|-|-|    
-|System Center Home|[https://www.microsoft.com/cloud-platform/system-center](https://www.microsoft.com/cloud-platform/system-center)|  
-|System Center documentation|[https://docs.microsoft.com/system-center/](../index.yml)|  
-|Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
-|Orchestrator Community Forums on TechNet|[https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Lib`. For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
+
+- Toolkit Integration Pack for Orchestrator – the System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`.
+
+  Integration Toolkit Utilities, Wizards and Binary files – all the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard and all their dependent files are by default installed to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see [The Command-Line Activity Wizard][cli-wizard] and [The Integration Pack Wizard][ip-wizard].
+
+::: moniker-end
+
+[cli-wizard]: ./command-line-activity-wizard.md
+[ip-wizard]: ./integration-pack-wizard.md
+
+## Orchestrator Resources
+
+In addition to this online reference provided for System Center Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.
+
+- [System Center home](https://www.microsoft.com/cloud-platform/system-center)
+- [System Center documentation](../index.yml)
+- [Orchestrator team blog](https://blogs.technet.microsoft.com/orchestrator/)
+- [Orchestrator community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
