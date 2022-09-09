@@ -31,7 +31,7 @@ The following table lists the release history for Operations Manager 2019.
 |10.19.10550.0|[5006871](https://support.microsoft.com/topic/5006871-0e3a513a-ad80-4830-8984-2fc5a40ee7f7) |October 2021 |Update Rollup 3 - Hotfix for Web Console |
 |10.19.10552.0|[5005527](https://support.microsoft.com/topic/f5aa7ec5-85c2-4886-b13b-288fd9900737) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
 |10.19.10569.0|[5013427](https://support.microsoft.com/topic/update-rollup-4-for-system-center-operations-manager-2019-07ad0ef3-a330-4373-92f6-2dda3821bee5) |June 2022 |Update Rollup 4 |
-
+|10.19.10576.0|[5016576](https://support.microsoft.com/topic/update-for-performance-issue-in-system-center-operations-manager-2019-update-rollup-4-kb-5016576-344b3fa8-e1e8-418b-bf82-5a5d8cfeb01a) |July 2022|Update Rollup 4 - Hotfix for Operations Console Performance issue |
 
 ### Agents
 |Build Number |KB |Release Date |Description |
@@ -52,5 +52,6 @@ The following table lists the release history for Operations Manager 2019.
 |10.19.1138.0|[4594078](https://support.microsoft.com/topic/a7b9aa06-7d72-dc5a-e303-1899fafe9931) |March 2021 |1.6.8-0	|Update Rollup 3 |
 |10.19.1147.0|[5005527](https://support.microsoft.com/topic/f5aa7ec5-85c2-4886-b13b-288fd9900737) |October 2021 |1.6.8-1	|Update Rollup 3 - OMI Vulnerability Fix |
 |10.19.1150.0|[5013427](https://support.microsoft.com/topic/update-rollup-4-for-system-center-operations-manager-2019-07ad0ef3-a330-4373-92f6-2dda3821bee5) |June 2022 |1.6.10-1 |Update Rollup 4 |
+|10.19.1158.0|[5013427](https://support.microsoft.com/topic/update-rollup-4-for-system-center-operations-manager-2019-07ad0ef3-a330-4373-92f6-2dda3821bee5) |August 2022 |1.6.10-2 |Update Rollup 4 - OMI Vulnerability Fix |
 
  \* *The other components include: Databases, Gateway Servers, Operations Consoles, Reporting, and Web Consoles.*
