@@ -109,11 +109,9 @@ Back up all files on library shares to a shared folder on a remote file server, 
 - .vmc
 - .vsv
 
-
-
 ## Back up VMM private clouds
 
-To orchestrate and automate the replication and failover of virtual machines located in VMM clouds, you can use [Azure Site Recovery Manager](https://azure.microsoft.com/documentation/services/site-recovery/). You can replicate in the following ways:
+To orchestrate and automate the replication and failover of virtual machines located in VMM clouds, you can use [Azure Site Recovery Manager](/azure/site-recovery/). You can replicate in the following ways:
 
 -   From one on-premises VMM site to another, using Hyper-V replication or SAN replication.
 
