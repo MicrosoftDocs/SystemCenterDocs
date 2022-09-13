@@ -120,9 +120,7 @@ Manually-installed agents are agents that were installed manually, either from t
 3.  Run the following command, where D:\ is the location for the upgrade log file.
 
     ```
-    msiexec /i MOMAgent.msi /qn /l*v D:\logs\AgentUpgrade.log
-     AcceptEndUserLicenseAgreement=1
-
+    msiexec /i MOMAgent.msi /qn /l*v D:\logs\AgentUpgrade.log AcceptEndUserLicenseAgreement=1
     ```
 
 ## Verify Windows agent upgrade
@@ -163,6 +161,8 @@ Manually-installed agents are agents that were installed manually, either from t
 
 #### To manually upgrade UNIX and Linux agents
 
+Navigate to the Operations Manager installation folder to locate the install files for the UNIX/Linux Agent: `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits`
+
 1.  Log on to Linux/Unix machines and copy the agent (scx-\<version\>.universalr.\<version\>.\<arch\>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
 
 2.  Install the package with the following command.
@@ -183,7 +183,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 2.  Under **Device Management**, click **UNIX/Linux Computers**.
 
-3.  Verify that the value listed in the Agent **Version** column is 1.6.34.1-911.
+3.  Verify that the value listed in the Agent **Version** column is 1.6.10-2.
 
     > [!NOTE]
     > It can take up to one hour for the console to show the updated version of the agent.
@@ -238,7 +238,7 @@ Push-installed agents are agents that were installed by using the **Computer and
 
 ## Upgrading manually installed agents
 
-Manually-installed agents are agents that were installed manually, either from the Command Prompt, or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents.
+Manually-installed agents are agents that were installed manually, either from the Command Prompt, or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents. Remember the installation files are located in your Operations Manager installation directory: `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\amd64`
 
 #### To upgrade a manually installed Windows agent by using the Setup Wizard
 
@@ -261,9 +261,7 @@ Manually-installed agents are agents that were installed manually, either from t
 3.  Run the following command, where D:\ is the location for the upgrade log file.
 
     ```
-    msiexec /i MOMAgent.msi /qn /l*v D:\logs\AgentUpgrade.log
-     AcceptEndUserLicenseAgreement=1
-
+    msiexec /i MOMAgent.msi /qn /l*v D:\logs\AgentUpgrade.log AcceptEndUserLicenseAgreement=1
     ```
 
 ## Verifying Windows agent upgrade
@@ -288,6 +286,8 @@ Manually-installed agents are agents that were installed manually, either from t
     Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in Operations Manager, see [Accessing UNIX and Linux Computers in Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212886(v=sc.12)).
 
 #### To manually upgrade UNIX and Linux agents
+
+Navigate to the Operations Manager installation folder to locate the install files for the UNIX/Linux Agent: `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits`
 
 1.  Log on to Linux/Unix machines and copy the agent (omsagent-\<version\>.universalr.\<version\>.\<arch\>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
 
