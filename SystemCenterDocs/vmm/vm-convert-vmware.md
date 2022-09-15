@@ -20,11 +20,11 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-This article describes how to convert VMware VMs in the System Center - Virtual Machine Manager (VMM) fabric, to Hyper-V.
+This article describes how to convert VMware VMs in the System Center - Virtual Machine Manager (VMM) fabric to Hyper-V.
 
 ::: moniker range=">=sc-vmm-2019"
 
-You can convert the VMs using the *Convert Virtual Machine* wizard.
+You can convert the VMs using the *Convert Virtual Machine* wizard.  You can use this wizard from the VMM console.
 
 ::: moniker-end
 
@@ -36,7 +36,6 @@ VMM 2019 UR3 supports conversion of VMware VMs to Hyper-V and Azure Stack HCI 20
 
 ::: moniker range=">=sc-vmm-2019"
 
-**Convert Virtual Machine Wizard**: You can use this wizard from the VMM console.
 
 >[!Important]
   >- See [system requirements](system-requirements.md) for supported versions of vSphere (ESXi).
@@ -75,7 +74,7 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
 3. In **Specify Virtual Machine Identity**, modify the machine name and description as required.
 4. In **Virtual Machine Configuration**, specify the number of processors and memory settings.
 5. In **Select Host**, select a Hyper-V host/Azure Stack HCI (applicable from VMM 2019 UR3 and later) for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM paths are listed.
-6. In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable. The list matches whatever is configured on the physical adapters of the host.
+6. In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable.
 7. In **Add Properties**, configure the required settings. In **Summary**, review the settings, and then select **Start the virtual machine after deploying it** if required.
 8. Select **Create** to start the conversion.
    Verify the VM's conversion in **VMs and Services** > **Home** > **Show** > **VMs**.
@@ -89,20 +88,20 @@ System Center VMM enables migration of EFI based VMware VMs to Hyper-V. VMware V
 
 ::: moniker range=">sc-vmm-2016 <=sc-vmm-2019"
 
-As part of VMM 1801 release, the **Convert Virtual Machine** wizard enables this migration. Based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
+As part of VMM 1801 release, the **Convert Virtual Machine** wizard enables this migration. Based on the firmware type (BIOS or EFI), the wizard selects and defaults the Hyper-V VM generation appropriately.
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 
-The **Convert Virtual Machine** wizard enables this migration. Based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
+The **Convert Virtual Machine** wizard enables this migration. Based on the firmware type (BIOS or EFI), the wizard selects and defaults the Hyper-V VM generation appropriately.
 
 ::: moniker-end
 
 ::: moniker range=">sc-vmm-2016"
 
 - BIOS-based VMs are migrated to Hyper-V VM Generation 1.
-- EFI-based VMs are migrated to Hyper-V VM Generation 2.
+- EFI-based VMs are migrated to Hyper-V VM Generation 2.s
 
 ### Before you start
 Ensure the following prerequisites are met:
@@ -115,13 +114,13 @@ Ensure the following prerequisites are met:
 
     ![Configure VM conversion to gen 2](media/vm-conversion/vm-conversion-select-gen2.png)
 
-2. Once the VM is converted, you can see the Generation 2 VM as shown in the following image:
+2. Once the VM is converted, you can see the Generation 2 VM as shown in the image below:
 
     ![vm conversion to gen 2](media/vm-conversion/vm-conversion-gen2-created.png)
 
 > [!NOTE]
-> - Disk conversion (from “vmdk” to “VHDX/VHD”) is enhanced to be ~50% faster than earlier.
-> - PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based upon the requirements.
+> - Disk conversion (from **vmdk** to **VHDX/VHD**) is enhanced to be ~50% faster than earlier.
+> - PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based on the requirements.
 
 ## Convert using PowerShell cmdlets
 
