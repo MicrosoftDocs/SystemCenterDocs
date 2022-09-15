@@ -19,9 +19,12 @@ To enable debugging, do the following:
 
 1. Open the Windows registry.
 
-2. Create the following key `\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server MP` and add a value that corresponds to the management group name for which you want to collect logs.
+2. Create the following key:
+`HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server MP`
 
-For example, if you want to enable debugging for the **TestMG01** management group, you need to add the **TestMG01** value to the registry key above. The value can be of any type and with any data. The same should be done for each agent where extended logging must be enabled. You do not need to restart any service; changes are applied automatically.
+3. Create a Multi-String with the name `<MG Name>` that corresponds to the management group name for which you want to collect logs. Leave **Value data** empty to enable Debug logging for all SQL MP modules in the Operations Manager Event Log.
+
+The same should be done for each agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
 
 >[!NOTE] 
 >Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
