@@ -52,13 +52,13 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
 
 - **Convert Virtual Machine Wizard**: You can use this wizard from the VMM console.
 
->[!Important]
-  >- See [system requirements](system-requirements.md) for supported versions of vSphere (ESXi).
-  >- You can't convert VMware workstations.
-  >- You can't convert VMs with virtual hard disks connected to an IDE bus.
-  >- Anti-virus apps must be supported.
-  >- Online conversions aren't supported. You need to power off the VMware VMs.
-  >- VMware tools must be uninstalled from the guest operating system of the VM.
+  >[!Important]
+    >- See [system requirements](system-requirements.md) for supported versions of vSphere (ESXi).
+    >- You can't convert VMware workstations.
+    >- You can't convert VMs with virtual hard disks connected to an IDE bus.
+    >- Anti-virus apps must be supported.
+    >- Online conversions aren't supported. You need to power off the VMware VMs.
+    >- VMware tools must be uninstalled from the guest operating system of the VM.
 
 - [**Microsoft Virtual Machine Converter**](https://techcommunity.microsoft.com/t5/system-center-blog/microsoft-virtual-machine-converter-3-0-is-now-available-for/ba-p/349874): This standalone tool converts VMware VMs to Hyper-V hosts or Azure VMs. It also converts physical machines and disks to Hyper-V hosts.
 
