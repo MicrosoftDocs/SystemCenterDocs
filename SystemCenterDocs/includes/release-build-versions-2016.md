@@ -27,7 +27,7 @@ The following table lists the release history for Operations Manager 2016.
 |7.2.11759.0 |[3190029](https://support.microsoft.com/kb/3190029) |October 2016 |Update Rollup 1 |  
 |7.2.11822.0 |[3209591](https://support.microsoft.com/kb/3209591) |February 2017 |Update Rollup 2 |  
 |7.2.11878.0 |[4016126](https://support.microsoft.com/kb/4016126) |May 2017 |Update Rollup 3|  
-|8.0.10977.0 |[4024941](https://support.microsoft.com/kb/4024941) |October 2017 | Update Rollup 4 <sup>1</sup> |
+|7.2.11938.0 |[4024941](https://support.microsoft.com/kb/4024941) |October 2017 | Update Rollup 4 <sup>1</sup> |
 |7.2.12016.0 |[4090987](https://support.microsoft.com/kb/4090987) |April 2018 |Update Rollup 5 |
 |7.2.12066.0 |[4459897](https://support.microsoft.com/kb/4459897) |October 2018 |Update Rollup 6|
 |7.2.12150.0 |[4492182](https://support.microsoft.com/kb/4492182) |April 2019 |Update Rollup 7 |
@@ -39,16 +39,16 @@ The following table lists the release history for Operations Manager 2016.
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |8.0.10918.0 ||September 2016 |General Availability release|  
-|7.2.11759.0 |[3190029](https://support.microsoft.com/kb/3190029) |October 2016 |Update Rollup 1 |  
-|7.2.11822.0 |[3209591](https://support.microsoft.com/kb/3209591) |February 2017 |Update Rollup 2 |  
-|7.2.11878.0 |[4016126](https://support.microsoft.com/kb/4016126) |May 2017 |Update Rollup 3|  
+|8.0.10931.0 |[3190029](https://support.microsoft.com/kb/3190029) |October 2016 |Update Rollup 1 |  
+|8.0.10949.0 |[3209591](https://support.microsoft.com/kb/3209591) |February 2017 |Update Rollup 2 |  
+|8.0.10970.0 |[4016126](https://support.microsoft.com/kb/4016126) |May 2017 |Update Rollup 3|  
 |8.0.10977.0 |[4024941](https://support.microsoft.com/kb/4024941) |October 2017 | Update Rollup 4 <sup>1</sup> |
-|7.2.12016.0 |[4090987](https://support.microsoft.com/kb/4090987) |April 2018 |Update Rollup 5 |
-|7.2.12066.0 |[4459897](https://support.microsoft.com/kb/4459897) |October 2018 |Update Rollup 6|
-|7.2.12150.0 |[4492182](https://support.microsoft.com/kb/4492182) |April 2019 |Update Rollup 7 |
-|7.2.12213.0 |[4514877](https://support.microsoft.com/kb/4514877) |September 2019 |Update Rollup 8 |
-|7.2.12265.0 |[4546986](https://support.microsoft.com/kb/4546986) |March 2020 |Update Rollup 9 |
-|7.2.12324.0 |[4580254](https://support.microsoft.com/kb/4580254) |October 2020 |Update Rollup 10 |
+|8.0.10990.0 |[4090987](https://support.microsoft.com/kb/4090987) |April 2018 |Update Rollup 5 |
+|8.0.11004.0 |[4459897](https://support.microsoft.com/kb/4459897) |October 2018 |Update Rollup 6|
+|8.0.11025.0 |[4492182](https://support.microsoft.com/kb/4492182) |April 2019 |Update Rollup 7 |
+|8.0.11037.0 |[4514877](https://support.microsoft.com/kb/4514877) |September 2019 |Update Rollup 8 |
+|8.0.11049.0 |[4546986](https://support.microsoft.com/kb/4546986) |March 2020 |Update Rollup 9 |
+|8.0.11057.0 |[4580254](https://support.microsoft.com/kb/4580254) |October 2020 |Update Rollup 10 |
 
 ### SCX Agents
 |Build Number |KB |Release Date |Agent Version |Description |
