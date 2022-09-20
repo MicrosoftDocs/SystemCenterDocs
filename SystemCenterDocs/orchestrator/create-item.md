@@ -176,7 +176,3 @@ The integration pack provides the ability to create recurring appointments and t
 | The same week each month | Specify a relative index followed by a day of the week. Valid indexes include First, Second, Third, Fourth, and Last. Days of the week include Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Weekday, and WeekendDay.<br>For example: First Monday.   |
 | The same day each year   | Not required. The day is determined by the start date.   |
 | The same week each year  | Specify a relative index followed by a day of the week. Valid indexes include First, Second, Third, Fourth, and Last. Days of the week include Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Weekday, and WeekendDay. The month is determined by the start date.<br>For example: First Monday |
-
-## See Also
-
-[Using Runbooks in System Center 2016 - Orchestrator](/documentation/)

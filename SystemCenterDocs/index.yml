@@ -169,7 +169,7 @@ additionalContent:
             - text: Watch System Center in Action
               url: https://channel9.msdn.com/Blogs/hybrid-it-management
             - text: Manage Windows 10 through co-management
-              url: /learn/modules/manage-windows-10-through-co-management-by-using-system-center-configuration-manager/
+              url: /training/modules/manage-windows-10-through-co-management-by-using-system-center-configuration-manager/
             - text: Blog
               url: https://techcommunity.microsoft.com/t5/System-Center-Blog/bg-p/SystemCenterBlog
             - text: Conversations
