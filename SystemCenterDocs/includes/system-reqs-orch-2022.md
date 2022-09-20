@@ -56,7 +56,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 - Microsoft .NET Framework 4.5 or later.
 
-- Ensure that [Microsoft OLE DB Driver for SQL Server](https://www.microsoft.com/download/details.aspx?id=56730&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.
+- Ensure that [Microsoft OLE DB Driver for SQL Server v18](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#previous-releases&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.
 
 - Join the computer to an Active Directory domain.
 
