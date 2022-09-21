@@ -37,7 +37,7 @@ Use the following procedures to upgrade an agent running on Windows or Linux to 
 ::: moniker range=">=sc-om-2019"
 
 > [!NOTE]
-> - To upgrade an Operations Manager agent through console, ensure that the Run As Account used for upgrade is granted with the *Log on as a Service* right on all Management Servers and Gateways.
+> - To upgrade an Operations Manager agent through the console, ensure that the Run As Account used for upgrade is granted with the *Log on as a Service* right on all Management Servers and Gateways.
 For more information, see [enable service log on](enable-service-logon.md).
 > - If before the upgrade an agent was installed using the push install method, after upgrade the agent-managed computer is put into a pending update state and can be upgraded through the Operations console. Otherwise the agent needs to be upgraded manually.
 
@@ -97,7 +97,7 @@ Push-installed agents are agents that were installed by using the **Computer and
 
 ## Upgrade manually installed agents
 
-Manually-installed agents are agents that were installed manually, either from the Command Prompt, or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents.
+Manually-installed agents are agents that were installed manually, either from the Command Prompt, or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents. Navigate to the Operations Manager installation folder to locate the Agent installation files for Windows: `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\amd64`
 
 #### To upgrade a manually installed Windows agent by using the Setup Wizard
 
@@ -161,7 +161,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 #### To manually upgrade UNIX and Linux agents
 
-Navigate to the Operations Manager installation folder to locate the install files for the UNIX/Linux Agent: `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits`
+Navigate to the Operations Manager installation folder to locate the Agent installation files for UNIX/Linux: `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits`
 
 1.  Log on to Linux/Unix machines and copy the agent (scx-\<version\>.universalr.\<version\>.\<arch\>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
 
