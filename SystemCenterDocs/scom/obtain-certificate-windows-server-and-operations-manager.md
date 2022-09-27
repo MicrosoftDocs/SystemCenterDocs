@@ -3,9 +3,9 @@ ms.assetid:
 title: Obtain a certificate for use with Windows Servers and System Center Operations Manager.
 description: This article explains How to obtain a certificate for use with Windows Servers and System Center Operations Manager.
 author: jyothisuri
-ms.author: jsuri
-manager: evansma
-ms.date: 09/05/2022
+ms.author: v-pgaddala
+manager: v-pgaddala
+ms.date: 09/27/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -26,11 +26,7 @@ Ensure you have the following:
 - A typical desktop experience and not Core servers. 
 
   >[!NOTE]
-  >If your organization does not use AD CS or the accompanying web services, the steps below will not apply to your environment. 
-
-- If you are using an external certificate authority, these steps will not apply to the below scenario.
-
-- If you have any one of these scenarios and wish to create a certificate using means outside these instructions or need the certificate specifications, ensure the certificate meets the following requirements for Operations Manager to use the certificate:
+  >If your organization does not use AD CS or uses an external certificate authority, use the instructions provided for that application to create a certificate and ensure it meets the following requirements for Operations Manager, then follow the Import and Installation steps provided:
 
 ```
 - Subject="CN=server.contoso.com" ; (this should be the FQDN or how the system shows in DNS)
@@ -532,6 +528,4 @@ Configuration of certificate auto-enrollment and renewal will not work with Stan
 For more information, see [Windows Server guide](/windows-server/networking/core-network-guide/cncg/server-certs/configure-server-certificate-autoenrollment).
 
 >[!Note]
->Auto-enrollment and renewal does not configure Operations Manager to use certificates, nor does it guarantee that the certificate generated will conform to Operations Manager’s expected certificate settings for auto-enrollment. However, renewals will use the same template used to create the initial certificate.
-
-
+>Auto-enrollment and renewal does not automatically configure Operations Manager to use the new certificate. If the certificate auto renews with the same key, the thumbprint may also stay the same and no action is required by an Administrator. If a new certificate is generated or the thumbprint changes, the updated certificate will need to be imported into Operations Manager using the MOMCertImport tool as outlined above. 
