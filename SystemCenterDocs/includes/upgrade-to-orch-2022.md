@@ -4,7 +4,7 @@ title:  include file
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date:  07/29/2022
+ms.date:  09/07/2022
 ms.topic:  include
 ms.prod:  system center
 ms.technology: orchestrator
@@ -26,7 +26,7 @@ You can upgrade your installation of System Center 2019 Orchestrator to System C
 
 **Prepare to upgrade:**
 
-1. Ensure you have the latest UR (UR4) installed on Orchestrator 2019.
+1. It is recommended to have the latest UR (UR3) installed on Orchestrator 2019.
 2. Ensure that there are no pending restarts on the computer.
 3. Perform a full backup of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](../orchestrator/migrate-orchestrator-between-environments.md).
 4. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Orchestrator in System Center 2022.
