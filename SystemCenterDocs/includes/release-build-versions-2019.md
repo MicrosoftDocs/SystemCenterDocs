@@ -17,7 +17,7 @@ ms.topic: include
 >All System Center Operations Manager update rollups are cumulative. This means you do not need to apply them in order, you can always apply the latest update. If you have deployed System Center 2019 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
 >
 
-The following table lists the release history for Operations Manager 2019.
+The following tables lists the release history for Operations Manager 2019.
 
 ### Management Servers (and other components*)
 |Build Number |KB |Release Date |Description |
