@@ -27,31 +27,30 @@ Ensure you have the following:
 
   >[!NOTE]
   >If your organization does not use AD CS or uses an external certificate authority, use the instructions provided for that application to create a certificate and ensure it meets the following requirements for Operations Manager, then follow the Import and Installation steps provided:
-
-```
-- Subject="CN=server.contoso.com" ; (this should be the FQDN or how the system shows in DNS)
-
-- [Key Usage]
-     - Key Exportable=TRUE
-     - HashAlgorithm = SHA256
-     - KeyLength=2048
-     - KeySpec=1
-     - KeyUsage=0xf0
-     - MachineKeySet=TRUE
-
-- [EnhancedKeyUsageExtension]
-     - OID=1.3.6.1.5.5.7.3.1 ; Server Authentication
-     - OID=1.3.6.1.5.5.7.3.2 ; Client Authentication
-
-- [Compatibility Settings]
-     - Compatible with Windows Server 2003 ; (or newer based on environment)
-
-- [Cryptography Settings]
-     - Provider Category: Legacy Cryptography Service Provider
-     - Algorithm name: RSA
-     - Minimum Key Size: 2048 ; (2048 or 4096 as per security requirement.)
-     - Providers: Microsoft RSA Schannel Cryptographic Provider
-```
+  >```
+  >- Subject="CN=server.contoso.com" ; (this should be the FQDN or how the system shows in DNS)
+  >
+  >- [Key Usage]
+  >     - Key Exportable=TRUE
+  >     - HashAlgorithm = SHA256
+  >     - KeyLength=2048
+  >     - KeySpec=1
+  >     - KeyUsage=0xf0
+  >     - MachineKeySet=TRUE
+  >
+  >- [EnhancedKeyUsageExtension]
+  >     - OID=1.3.6.1.5.5.7.3.1 ; Server Authentication
+  >     - OID=1.3.6.1.5.5.7.3.2 ; Client Authentication
+  >
+  >- [Compatibility Settings]
+  >     - Compatible with Windows Server 2003 ; (or newer based on environment)
+  >
+  >- [Cryptography Settings]
+  >     - Provider Category: Legacy Cryptography Service Provider
+  >     - Algorithm name: RSA
+  >     - Minimum Key Size: 2048 ; (2048 or 4096 as per security requirement.)
+  >     - Providers: Microsoft RSA Schannel Cryptographic Provider
+  >```
 
 >[!Important]
 >For this topic, the default settings for AD-CS are as below: 
