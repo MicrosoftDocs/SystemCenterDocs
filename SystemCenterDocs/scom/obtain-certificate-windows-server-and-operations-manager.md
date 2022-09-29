@@ -21,7 +21,7 @@ This article describes how to obtain a certificate and use with Operations Manag
 
 Ensure you have the following:
 
-- AD-CS installed and configured in the environment with web services.
+- AD-CS installed and configured in the environment with web services **or** a 3rd party Certificate Authority with certificates that match the required settings shown.
 - HTTPS binding and its associated certificate installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).
 - A typical desktop experience and not Core servers. 
 
@@ -137,33 +137,25 @@ For example, *https://\<servername\>/certsrv*.
 
 To import the Trusted Root Certificate, follow these steps:
 
-#### Method 1:
-
 1. Copy the file generated in the previous step to the client.
 2. Open Certificate Manager.
-      1. Select Start > Run and type *mmc* to find the Microsoft Management Console (mmc.exe).
+   1. From the Command Line, PowerShell, or Run, type *certlm.msc* and press **enter**. 
+   1. Select Start > Run and type *mmc* to find the Microsoft Management Console (mmc.exe).
       1. Go to **File** > **Add/Remove Snap in…**.
       1. On the Add or Remove Snap-ins dialog, select **Certificates** and then select **Add**.
       1. On the Certificate Snap-in dialog,
-            1. Select **Computer Account** and select **Next**. Select Computer dialog opens.
-            1. Select **Local Computer** and select **Finish**.
+         1. Select **Computer Account** and select **Next**. Select Computer dialog opens.
+         1. Select **Local Computer** and select **Finish**.
       1. Select **OK**.
-      1. From the Command Line, PowerShell, or Run, type *certlm.msc* and press **enter**.
-         >[!NOTE]
-         >The above steps are applicable even if certlm.msc is not found.
-3. If successful, the Trusted Root Certificate from the CA will be visible under **Trusted Root Certification Authorities** > **Certificates**.
-
-#### Method 2:
-
-1. Copy the file generated in the previous step to the client.
-2. Under Console Root, expand **Certificates (Local Computer)**, expand **Trusted Root Certification Authorities**, and then select and hold Certificates.
-3. Select **All Tasks**.
-4. In the Certificate Import Wizard, leave the first page as default and select **Next**
-      1. a.	Browse to the location where you downloaded the CA certificate file and select the trusted root certificate file copied from the CA.
+      1. Under Console Root, expand **Certificates (Local Computer)**
+3. Expand **Trusted Root Certification Authorities**, and then select Certificates.
+4. Select **All Tasks**.
+5. In the Certificate Import Wizard, leave the first page as default and select **Next**
+      1. Browse to the location where you downloaded the CA certificate file and select the trusted root certificate file copied from the CA.
       1. Select **Next**.
       1. In the Certificate Store location, leave the Trusted Root Certification Authorities as default.
       1. Select **Next** and **Finish**.
-5. If successful, the Trusted Root Certificate from the CA will be visible under **Trusted Root Certification Authorities** > **Certificates**.
+6. If successful, the Trusted Root Certificate from the CA will be visible under **Trusted Root Certification Authorities** > **Certificates**.
 
 ## Create a certificate template: Enterprise CAs
 
@@ -242,7 +234,7 @@ More information, see [certificate templates](/previous-versions/windows/it-pro/
       ```
 
 3. Save the file with an *.inf* file extension.
-For example, *CertRequestConfig.inf*.
+For example, `CertRequestConfig.inf`.
 
 4. Close the text editor.
 
@@ -270,7 +262,7 @@ This process encodes the information specified in our config file in Base64 and 
 # [Enterprise CA](#tab/Enter)
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
-For example, *https://\<servername\>/certsrv*.
+For example, `https://\<servername\>/certsrv`.
 
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
 
@@ -467,7 +459,7 @@ Alternatively, select and hold the certificate file > Install > Local machine an
 
 ## Import the certificate into Operations Manager  
 
-Apart from installation of certificate on the system, you must update the Operations Manager to be aware of the certificate that you want to use. The actions below will restart the Microsoft Monitoring Agent service.
+Apart from installation of certificate on the system, you must update Operations Manager to be aware of the certificate that you want to use. The actions below will restart the Microsoft Monitoring Agent service.
 
 Use the MOMCertImport.exe utility included in the **SupportTools** folder in the Operations Manager installation media. Copy the file to your server.
 
@@ -477,14 +469,14 @@ To import the certificate into Operations Manager using MOMCertImport, follow th
 1. Log on to the target computer.
 2. Open an Administrator Command Prompt or PowerShell window and navigate to the *MOMCertImport.exe* utility folder.
 3. Run the *MomCertImport.exe* utility
-      1. In CMD: *MOMCertImport.exe*
-      1. In PowerShell: *.\MOMCertImport.exe*
+      1. In CMD: `MOMCertImport.exe`
+      1. In PowerShell: `.\MOMCertImport.exe`
 4. A GUI Window appears to **Select a Certificate**
       1. You can see a list of certificates, if you do not immediately see a list, select **More choices**.
 5. From the list, select the new certificate for the machine
-      1. Select **You can verify the certificate by selecting** to view the certificate properties.
+      1. You can verify the certificate by selecting it. Once selected you can view the certificate properties.
 6. Select **OK**
-7. If successful, console displays the below message:
+7. If successful, a pop-up will display the following message:
 
       `Successfully installed the certificate. Please check Operations Manager log in eventviewer to check channel connectivity.`
 
@@ -515,7 +507,7 @@ The Operations Manager generates an alert when an imported certificate for Manag
 5. Select the option that best applies to what you want to do and follow the wizard.
 6. Once completed, run the *MOMCertImport.exe* tool to ensure Operations Manager has the new serial number (reversed) of the certificate if it changed, see the above section for further details.
 
-If certificate renewal via this method is not available, use the prior steps to request a new certificate or with the organization’s certificate authority. Install and import the new certificate for use by the Operations Manager.
+If certificate renewal via this method is not available, use the prior steps to request a new certificate or with the organization’s certificate authority. Install and import (MOMCertImport) the new certificate for use by Operations Manager.
 
 ### Optional: Configure certificate auto-enrollment and renewal
 
