@@ -118,7 +118,7 @@ To download the Trusted Root certificate, follow these steps:
 For example, *a Gateway Server or Management Server*.
 
 2. Open a web browser and connect to the certificate server web address.
-For example, *https://\<servername\>/certsrv*.
+For example, `https://\<servername\>/certsrv`.
 
 3. On the **Welcome** page, select **Download a CA Certificate**, **Certificate chain**, or **CRL**.
    
@@ -286,7 +286,7 @@ For example, save as *SCOM-MS01.cer*.
 # [Stand-Alone CA](#tab/StandAlo)
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
-For example, *https://\<servername\>/certsrv*.
+For example, `https://\<servername\>/certsrv`.
 
 
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
@@ -317,7 +317,7 @@ For example, *OperationsManagerCert*, and then select **Submit**.
 A certificate from a Stand-Alone CA will be retrieved on the target machine for ease of certificate installation. If the CA is not reached from the target machine, ensure to export the certificate as indicated below:
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
-For example, *https://\<servername\>/certsrv*.
+For example, `https://\<servername\>/certsrv`.
 2. On the Welcome page, select **View the status of a pending certificate request**.
 3. On the Certificates Issued page, select **Base 64 encoded**, then **Download Certificate**.
 4. If successful, **Certificate Issued** page opens with a link to **Install this certificate**.
@@ -347,7 +347,7 @@ For example, *https://\<servername\>/certsrv*.
 Apart from the request file, you can create a certificate request through the Certificate services web portal. This step completes on the target machine for ease of certificate installation. If the certificate request using the AD-CS web portal is not possible, ensure to export the certificate as indicated below:
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
-For example, `https://<servername>/certsrv`.
+For example, `https://\<servername\>/certsrv`.
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
 3. On the **Request a Certificate** page, select **advanced certificate request**.
 4. Select **Create and submit a request to this CA**.
