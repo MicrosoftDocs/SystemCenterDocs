@@ -136,33 +136,25 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
 } 
 ```
 
-With the roles created, go to the Azure portal, and search for 'subscriptions' in the search bar. You will be led to a screen that shows all the subscriptions you have created. Click on the subscription that you are going to create the Aquila instance in, and navigate to the blade that gives details of all the resources in that subscription along with the costs incurred so far (as shown in the screenshot below)
+With the roles created, go to the Azure portal, and search for 'subscriptions' in the search bar. You will be led to a screen that shows all the subscriptions you have created. Select the subscription that you are going to create the Aquila instance in, and navigate to the blade that gives details of all the resources in that subscription along with the costs incurred so far.
 
-
-
-Click on 'Access Control (IAM)'. Then click the '+Add' button on top and click on 'Add custom role'
-
-
+Select *Access Control (IAM)* > *+Add* on top and then select *Add custom role*.
 
 In the custom role editor, you will be asked details of the custom role you want to create
-
-
 
 For both the roles created above (aquilaContributor.json & aquilaReader.json), the process below needs to be followed:
 
 In the Basics tab, give the role a name (Aquila Contributor/Aquila Reader)
 Give a description of the roles
-In 'Baseline permissions', choose the option 'Start from JSON' and upload the json file (aquilaContributor.json & aquilaReader.json). Uploading the json file will auto-populate the rest of the fields
+In *Baseline permissions*, choose the option *Start from JSON* and upload the json file (aquilaContributor.json & aquilaReader.json). Uploading the json file will auto-populate the rest of the fields
 For the rest of the tabs, review the permissions, subscription, and other details
-In the final 'Review + Create' tab, click on 'Create' to create the role
-Clicking on 'Review + Create' will create the two custom roles. Now, you need to assign users to these roles. Go back to the 'Access Control (IAM)' page and click on '+Add' and then click on '+Add role assignment'.
+In the final *Review + Create* tab, select *Create* to create the role.
+Select *Review + Create* to create two custom roles. Now, you need to assign users to these roles. Go back to the *Access Control (IAM)* page and select *+Add* and then select *+Add role assignment*.
 
-
-
-In the 'Role' field, select the role that you want to add users to: Aquila Contributor (Similar to SCOM Administrator) or Aquila Reader (Similar to SCOM Operator)
-In the 'Assign access to', keep it as 'User, group, or service principal'
-In the 'User' field, search for the users by their name
-Save the role assignment and carry out the same steps for the second role
+In the *Role* field, select the role that you want to add users to: Aquila Contributor (Similar to SCOM Administrator) or Aquila Reader (Similar to SCOM Operator).
+In the *Assign access to*, keep it as *User, group, or service principal*.
+In the *User* field, search for the users by their name.
+Save the role assignment and carry out the same steps for the second role.
 
 ## Create and configure an SQL MI Instance
 
@@ -189,9 +181,7 @@ Public Endpoint: This can either be 'Enabled' or 'Disabled'. Enable it if you ar
 For the rest of the settings in the other tabs, you can leave them as default or change something according to your requirements
 
 Creation of a new SQL MI instance can take up to 6 hours.
-Once the SQL MI instance is created, you will need to provide the Aquila Resource Provider with permissions to access this SQL MI instance. To do that, open the details of this SQL MI instance, and click on 'Access Control (IAM)'. In the top menu bar, click on '+Add' and the click on 'Add role assignment'.
-
-
+Once the SQL MI instance is created, you will need to provide the Aquila Resource Provider with permissions to access this SQL MI instance. To do that, open the details of this SQL MI instance, and select *Access Control (IAM)*. In the top menu bar, select *+Add* and then select *Add role assignment*.
 
 There will be a pane that opens up on the right. The values to be input are:
 
@@ -205,16 +195,10 @@ Save the role assignment.
 As a final step, you will need to set the 'Active Directory Admin' value in the SQL MI Instance. More information about why this step is required can be found HERE. The directions to implement this step are given below.
 
 You will need to be the Global Admin/Privileged Role Admin of the subscription to carry out the process below
-Open the SQL MI Instance and from the ToC, click on 'Active Directory Admin'
+Open the SQL MI Instance and from the ToC, select *Active Directory Admin*.
 
-
-
-Select 'Set Admin' in the top bar and in the searchbar, type in the name of your MSI (the same MSI that you provided during the Aquila instance creation flow). Click on 'Select'
-
-
+Select *Set Admin* in the top bar and in the searchbar, type in the name of your MSI (the same MSI that you provided during the Aquila instance creation flow).
 
 You will see the Admin added to the SQL MI Instance
 
-
 In case you see the error below after adding your managed identity account, it means read permissions are not yet provided to your identity. Please ensure to provide the necessary permissions before creating your instance, otherwise your instance creation will fail!
-
