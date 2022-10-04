@@ -15,15 +15,14 @@ monikerRange: 'sc-om-2022'
 
 # Quick Start - Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance
 
-This article describes how to create a  Managed Service Identity (MSI), configure Aquila RBAC and create and configure an SQL MI Instance.
+This article describes how to create a Managed Service Identity (MSI), configure Aquila RBAC and create and configure an SQL MI Instance.
 
 ## Create a Managed Service Identity (MSI)
 
-
-The Managed Service Identity provide an identity for applications to use when connecting to resources that support Azure Active Directory (Azure AD) authentication. For Aquila, a Managed Identity will replace the traditional 4 SCOM service accounts and it will be used to access the SQL MI database.
+The Managed Service Identity provide an identity for applications to use when connecting to resources that support Azure Active Directory (Azure AD) authentication. For Aquila, a Managed Identity will replace the traditional four System Center Operations Manager service accounts and it will be used to access the SQL MI database.
 
 >[!Note]
->Ensure you are a contributor in the subscription you are creating the MSI.
+>Ensure you are a contributor in the subscription you create the MSI.
 
 ### Sign in to the  Azure portal
 
@@ -151,7 +150,7 @@ For the rest of the tabs, review the permissions, subscription, and other detail
 In the final *Review + Create* tab, select *Create* to create the role.
 Select *Review + Create* to create two custom roles. Now, you need to assign users to these roles. Go back to the *Access Control (IAM)* page and select *+Add* and then select *+Add role assignment*.
 
-In the *Role* field, select the role that you want to add users to: Aquila Contributor (Similar to SCOM Administrator) or Aquila Reader (Similar to SCOM Operator).
+In the *Role* field, select the role that you want to add users to: Aquila Contributor (Similar to System Center Operations Manager Administrator) or Aquila Reader (Similar to System Center Operations Manager Operator).
 In the *Assign access to*, keep it as *User, group, or service principal*.
 In the *User* field, search for the users by their name.
 Save the role assignment and carry out the same steps for the second role.
@@ -176,7 +175,7 @@ VNet: This SQL MI instance needs to have direct connectivity (line-of-sight) to 
 
 Connection Type: Connection Type will be Proxy (Default)
 
-Public Endpoint: This can either be 'Enabled' or 'Disabled'. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the SCOM Vnet/Subnet to port 3342. How to create an NSG can be found HERE. If you disable it, you will have to peer your SQL MI VNet with the one in which SCOM and Aquila are present
+Public Endpoint: This can either be 'Enabled' or 'Disabled'. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. How to create an NSG can be found HERE. If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and Aquila are present
 
 For the rest of the settings in the other tabs, you can leave them as default or change something according to your requirements
 
@@ -188,7 +187,7 @@ There will be a pane that opens up on the right. The values to be input are:
 Role = Reader
 Assign access to = User, group, or service principal
 Select = Microsoft.SCOM
-Image alt text
+
 
 Save the role assignment.
 
@@ -197,8 +196,8 @@ As a final step, you will need to set the 'Active Directory Admin' value in the 
 You will need to be the Global Admin/Privileged Role Admin of the subscription to carry out the process below
 Open the SQL MI Instance and from the ToC, select *Active Directory Admin*.
 
-Select *Set Admin* in the top bar and in the searchbar, type in the name of your MSI (the same MSI that you provided during the Aquila instance creation flow).
+Select **Set Admin**, search for your MSI (the same MSI that you provided during the Aquila instance creation flow).
 
-You will see the Admin added to the SQL MI Instance
+You will see the Admin added to the SQL MI Instance.
 
-In case you see the error below after adding your managed identity account, it means read permissions are not yet provided to your identity. Please ensure to provide the necessary permissions before creating your instance, otherwise your instance creation will fail!
+If you see the error after you add managed identity account, it idicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, otherwise your instance creation will fail.
