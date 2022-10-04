@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: 
-description: 
+title: About Aquila
+description: This article describes about Aquila.
 author: jyothisuri
 ms.author: jsuri
 manager: jsuri

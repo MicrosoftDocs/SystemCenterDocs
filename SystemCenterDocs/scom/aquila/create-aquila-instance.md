@@ -26,8 +26,8 @@ Monitor all your workloads, whether on-prem, in Azure, or in any other cloud ser
     - For agent, open the ports 5723/135/138/445.
 - Allow 1433 and 11000-11999 from the Aquila Instance.
 - If you enable public endpoint on SQL MI, allow 3342.
-- Ensure to establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network and configure 1 domain account in Active Directory. For more information, see <link>.
-- Ensure to create a Managed Service Identity (MSI), configure Aquila RBAC and create and configure an SQL MI Instance. For more information, see <link>.
+- Ensure to establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network and configure 1 domain account in Active Directory. For more information, see \<link\>.
+- Ensure to create a Managed Service Identity (MSI), configure Aquila RBAC and create and configure an SQL MI Instance. For more information, see \<link\>.
 
 >[!Note]
 >- Aquila instance can be created only in West Europe and West US regions. Ensure that the VNet is in one of these regions.

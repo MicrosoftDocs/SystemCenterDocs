@@ -76,7 +76,7 @@ Resource Provider of Aquila is successfully registered in your subscription. If 
 
 #### Aquila Contributor
 
-Copy and paste the below script in `.txt` file and name it as `aquilaContributor.json`. Change the <subscription1> value to the current subscription ID.
+Copy and paste the below script in `.txt` file and name it as `aquilaContributor.json`. Change the `subscription1` value to the current subscription ID.
 
 ```
 { 
@@ -111,7 +111,7 @@ Copy and paste the below script in `.txt` file and name it as `aquilaContributor
 
 #### Aquila Reader
 
-Copy and paste the below script in `.txt` file and name it as `aquilaReader.json`. Change the <subscription1> value to the current subscription ID.
+Copy and paste the below script in `.txt` file and name it as `aquilaReader.json`. Change the `subscription1` value to the current subscription ID.
 
 ```
 { 

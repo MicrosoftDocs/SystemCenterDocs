@@ -8,7 +8,7 @@
 - name: Concepts
   items:
   - name: General questions about Aquila (Public preview)
-    href: aquila-common-question
+    href: aquila-common-questions.md
 
 - name: Quickstarts
   items:
