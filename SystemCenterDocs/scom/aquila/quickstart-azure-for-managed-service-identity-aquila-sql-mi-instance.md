@@ -10,6 +10,7 @@ ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
+monikerRange: 'sc-om-2022'
 ---
 
 # Quick Start - Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance
