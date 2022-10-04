@@ -21,20 +21,20 @@ This article summarizes frequently asked questions about Aquila.
 
 ### What regions do the VPN need to be in?
 
-There is no strict requirement on the region of the VPN but the recommendation is to put the VPN in the same region as your other Azure resources so that latency is maintained.
+There is no strict requirement on the region of the VPN but the recommendation is to put the VPN in the same region as your other Azure resources to maintain latency.
 
 ### What Address Range does the VNet need?
 
-The minimum address space is /27 (which means /28 and above would not work).
+The minimum address space is /27 (which means /28 and above wouldn't work).
 
 ### How many subnets does the VPN need to have?
 
-- VPN needs 2 subnets. 
+- VPN needs two subnets. 
     - For Aquila instance
     - For SQL MI instance
 - The subnet for SQL MI instance will be a delegated (dedicated) subnet and won't be used by the Aquila instance. Name the subnets accordingly to avoid confusion in the future while you create the SQL MI/Aquila Instance.
 
-### What Address Range do the 2 subnets need?
+### What Address Range do the two subnets need?
 
 The minimum address space needs to be /27 for SQL MI subnet and /28 for the Aquila subnet.
 
@@ -46,9 +46,9 @@ No, both the options can be left blank.
 
 No, you can disable all of them or enable any of them based on your organizations preferences.
 
-### I have created seperate VNets in Azure. What steps do I need to take?
+### I created seperate VNets in Azure. What steps do I need to take?
 
-If you have multiple VNets created, you need to peer your VNets. If you are peering any 2 networks, ensure to peer from both networks to each other. Thus, if you peer three networks, you will need to do 6 peerings.
+If you have multiple VNets created, you need to peer your VNets. If your'e peering any two networks, ensure to peer from both networks to each other. Thus, if you peer three networks, you will need to do six peerings.
 
 ### What options do I select while peering?
 
@@ -88,13 +88,18 @@ Below is the high-level view of how the classic subscription administrator roles
 
 ### What is a Global Administrator Role?
 
-For a Global Administrator role, users with this role have access to all administrative features in Azure Active Directory, as well as services that use Azure Active Directory identities like the Microsoft 365 Defender portal, the Microsoft 365 compliance center, Exchange Online, SharePoint Online, and Skype for Business Online.
+For a Global Administrator role, users with this role have access to all administrative features in Azure Active Directory, and services that use Azure Active Directory identities such as
+   - Microsoft 365 Defender portal
+   - Microsoft 365 compliance center
+   - Exchange Online
+   - SharePoint Online
+   - Skype for Business Online.
 
 ## Other Queries
 
 ### What are the charges that will be incurred during preview? 
 
-The charges that incur while running Aquila will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, etc.). Apart from the infrastructure charges, there will be no other IP-related charge. For using System Center Operations Manager 2019, the evaluation version (available for 6 months) can be used to test Aquila.
+The charges that incur while running Aquila will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, etc.). Apart from the infrastructure charges, there will be no other IP-related charge. For using System Center Operations Manager 2019, the evaluation version (available for six months) can be used to test Aquila.
 
 ### What if there is an error during deployment? 
 
@@ -108,7 +113,7 @@ In the instance view, select *Delete* from the top menu and wait for the confirm
 
 The other way is to go to your resource group view (search for Resource Group in the Azure search bar, and in the list of results, open your resource group). If you created a separate resource group for Aquila, delete the resource group. Otherwise, in the resource group, search for your instance and select *Delete*. 
 
-Once the instance is deleted, you will also have to delete the 2 databases created in SQL MI. In the resource view, select the 2 databases (depending on what name you gave to your SQL MI instance) and select *Delete*. With the 2 databases deleted, you can recreate your Aquila Instance.
+Once the instance is deleted, you will also have to delete the two databases created in SQL MI. In the resource view, select the two databases (depending on what name you gave to your SQL MI instance) and select *Delete*. With the two databases deleted, you can recreate your Aquila Instance.
 
 ### If an Arc instance to connect to private cloud with some resources is there, will Aquila scale to those resources in the future? 
 
@@ -121,7 +126,7 @@ Aquila and System Center Operations Manager share the same feature set. If it ca
 ### How is Aquila different from running System Center Operations Manager in Azure VMs?
 
 - Aquila will be native to Azure while running System Center Operations Manager in Azure VMs is not a native solution. That means Aquila will integrate smoothly with Azure and all of Azure’s updates will be available to Aquila.
-- In terms of ease of deployment, Aquila will be very easy to deploy while running VMs in Azure takes possibly months of effort (and requires a lot of technical knowledge).
+- In terms of ease of deployment, Aquila will be easy to deploy while running VMs in Azure takes possibly months of effort (and requires technical knowledge).
 - Aquila uses SQL MI as the backend for database management by default.
 - Aquila will come with backup and disaster recovery built in.
 
@@ -131,4 +136,4 @@ Being in the same private network so that the IPs assigned to each component in 
 
 ### Can I view the Aquila resources and VMs in my subscription? 
 
-Since this preview requires you to create the Aquila instance in your subscription, all the Aquila resources (including the VMs) will be visible to you. However, it is strongly recommended that the VMs and other resources not be touched while you are operating Aquila in order to avoid unforeseen complexities.
+Since this preview requires you to create the Aquila instance in your subscription, all the Aquila resources (including the VMs) will be visible to you. However, we recommend not to touch the VMs and other resources while you are operating Aquila in order to avoid unforeseen complexities.
