@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: 
-description: 
+title: Quick Start: Set up an infrastructure
+description: This quickstart describes how to set up your existing infrastructure before deploying Aquila. 
 author: jyothisuri
 ms.author: jsuri
 manager: jsuri
