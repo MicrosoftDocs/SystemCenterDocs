@@ -56,7 +56,7 @@ If you have multiple VNets created, you need to peer your VNets. If your'e peeri
 - The first name is used to name the peer network from the current network to the other network. The second name is used to name the peer network from the other network to this network.
 - In the section *Virtual Network*, specify the name of the VNet that you are peering too. If you can't find the VNet, you can search for it using the Resource ID. The rest of the options can be left default.
 
-:::image type="Add peering" source="media/aquila-common-question/add-peering.png" alt-text="Screenshot of add peering.":::
+:::image type="Add peering" source="media/aquila-common-question/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/aquila-common-question/add-peering-expanded.png":::
 
 ## SQL-MI
 
@@ -64,11 +64,11 @@ If you have multiple VNets created, you need to peer your VNets. If your'e peeri
 
 In case you don't see the region that you want to choose (for this preview, West US or West Europe) in the list of regions, select **Not seeing a region**, and then select **Request quota increase for your subscription**.
 
-:::image type="Region error" source="media/aquila-common-question/region-error.png" alt-text="Screenshot of region error.":::
+:::image type="Region error" source="media/aquila-common-question/region-error.png" alt-text="Screenshot showing region error.":::
 
 Enter the required fields in **Basics** and go to **Details** to enter the **Problem details**.
 
-:::image type="New support request" source="media/aquila-common-question/new-support-request.png" alt-text="Screenshot of new support request.":::
+:::image type="New support request" source="media/aquila-common-question/new-support-request-inline.png" alt-text="Screenshot showing new support request." lightbox="media/aquila-common-question/new-support-request-expanded.png":::
 
 Select **Enter details**. **Quota details** page opens on the right pane. In *Region*, choose the desired region and change the limits as desired (10 subnets and 500 vCores should suffice for the preview). Select **Save and continue** and then select **Next: Review + create >>** to raise the ticket. It might take 24 hours for the ticket to get resolved. Wait for it to get resolved before proceeding to create the SQL MI instance.
 
@@ -86,16 +86,16 @@ Below is the high-level view of how the classic subscription administrator roles
 
 :::image type="Azure active directory roles" source="media/aquila-common-question/azure-active-directory-roles.png" alt-text="Screenshot of Azure active directory roles.":::
 
-### What is a Global Administrator Role?
+### What is a Global Administrator role?
 
 For a Global Administrator role, users with this role have access to all administrative features in Azure Active Directory, and services that use Azure Active Directory identities such as
    - Microsoft 365 Defender portal
-   - Microsoft 365 compliance center
+   - Compliance portal
    - Exchange Online
    - SharePoint Online
    - Skype for Business Online.
 
-## Other Queries
+## Other queries
 
 ### What are the charges that will be incurred during preview? 
 
@@ -105,7 +105,7 @@ The charges that incur while running Aquila will be the charges of owning a subs
 
 During the deployment phase, there can be several reasons why deploying an Aquila instance shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it is best to delete the instance and create one again.
 
-### What if the correct procedure to delete an Instance? 
+### What if the correct procedure to delete an instance? 
 
 In order to delete the instance, you can either delete it from the instance view itself or from the *Resource Group* view. 
 
@@ -137,3 +137,8 @@ Being in the same private network so that the IPs assigned to each component in 
 ### Can I view the Aquila resources and VMs in my subscription? 
 
 Since this preview requires you to create the Aquila instance in your subscription, all the Aquila resources (including the VMs) will be visible to you. However, we recommend not to touch the VMs and other resources while you are operating Aquila in order to avoid unforeseen complexities.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Aquila overview](aquila-overview.md)

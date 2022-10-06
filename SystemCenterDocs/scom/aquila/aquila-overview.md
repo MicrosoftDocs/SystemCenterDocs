@@ -31,7 +31,7 @@ During the public preview, you can:
 
 Below is the architecture for Aquila (Public preview):
 
-:::image type="Architecture" source="media/aquila-overview/architecture.png" alt-text="Screenshot of architecture.":::
+:::image type="Architecture" source="media/aquila-overview/architecture.png" alt-text="Screenshot of aquila public preview architecture.":::
 
 When you create an Aquila instance (which is equivalent to your System Center Operations Manager Management Group), you will get one Management Server and one Web Console, all of them running on the same VM that is located in your Azure subscription. On the SQL MI instance, you will get two databases (Ops DB & DW DB). The entire infrastructure will be located on Azure.
 
@@ -44,3 +44,8 @@ Meanwhile, connect your existing agents to your Azure-based Aquila instance by e
 3. Create a Managed Service Identity (MSI)
 4. Configure Aquila RBAC
 5. Create and configure an SQL MI Instance
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance](quickstart-azure-for-managed-service-identity-aquila-sql-mi-instance.md)

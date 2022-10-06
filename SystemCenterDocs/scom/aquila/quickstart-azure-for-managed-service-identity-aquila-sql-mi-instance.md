@@ -57,9 +57,9 @@ The Managed Service Identity provide an identity for applications to use when co
 >Ensure you are either a subscription owner or global administrator. For more information, see Azure RBAC.
 
 In order to create and operate an Aquila instance, create the below two custom RBAC roles in Azure:
- - **Aquila Contributor**: This role allows users to create, update, and delete an Aquila instance in Azure. It's scope of permissions doesn't extend beyond Aquila. The ideal user for this role would be someone who will be responsible for creating an Aquila instance, and deleting it when done.
+ - **Aquila Contributor**: This role allows users to create, update, and delete an Aquila instance in Azure. Its scope of permissions doesn't extend beyond Aquila. The ideal user for this role would be someone who will be responsible for creating an Aquila instance, and deleting it when done.
  
- - **Aquila Reader**: This role allows users to read an Aquila instance in Azure, without the ability to modify anything in the instance. It's scope of permissions doesn't extend beyond Aquila. The ideal user for this role would be someone who will be responsible for accessing the Aquila instance once it is created and reading the parameters. 
+ - **Aquila Reader**: This role allows users to read an Aquila instance in Azure, without the ability to modify anything in the instance. Its scope of permissions doesn't extend beyond Aquila. The ideal user for this role would be someone who will be responsible for accessing the Aquila instance once it is created and reading the parameters. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and select **Cloud Shell** in the top menu. A Shell opens at the bottom of the page.
 1. Enter the below commands to enable Aquila preview in your subscription:
@@ -155,7 +155,7 @@ In the *Assign access to*, keep it as *User, group, or service principal*.
 In the *User* field, search for the users by their name.
 Save the role assignment and carry out the same steps for the second role.
 
-## Create and configure an SQL MI Instance
+## Create and configure an SQL MI instance
 
 Before creating an Aquila instance, you will have to create an instance of SQL MI. A step-by-step guide detailing how to create an SQL MI instance can be found HERE
 
@@ -201,3 +201,8 @@ Select **Set Admin**, search for your MSI (the same MSI that you provided during
 You will see the Admin added to the SQL MI Instance.
 
 If you see the error after you add managed identity account, it indicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, otherwise your instance creation will fail.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Create an Aquila instance](create-aquila-instance.md)

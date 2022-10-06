@@ -15,7 +15,7 @@ monikerRange: 'sc-om-2022'
 
 # Create an Aquila instance on Azure
 
-Monitor all your workloads, whether on-premise, in Azure, or in any other cloud services. This article describes how to create an Aquila instance to monitor workloads using System Center Operations Manager functionality on Azure.
+Monitor all your workloads, whether on-premises, in Azure, or in any other cloud services. This article describes how to create an Aquila instance to monitor workloads using System Center Operations Manager functionality on Azure.
 
 ## Prerequisites
 
@@ -100,3 +100,8 @@ To create an Aquila instance, follow the below steps:
 
 1. After the deployment is completed, select **Go to resource**. Created instance page opens. You will find some of the essential details and instructions to view the post-deployment steps or raise bugs.
 1. On the left navigation pane, under **Manage**, select **SCOM infrastructure**. It displays all the essential properties of your instance.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Aquila overview](aquila-overview.md)
