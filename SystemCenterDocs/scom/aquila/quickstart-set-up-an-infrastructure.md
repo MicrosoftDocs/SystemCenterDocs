@@ -19,7 +19,7 @@ This quickstart describes how to set up your existing infrastructure before depl
 
 ## Establish direct connectivity (line-of-sight) between your DC and your Azure network
 
-- Ensure that there is direct network connectivity (line-of-sight) between the network which has your Domain Controller, Ops Console, Agents, and the network in which you will deploy an Aquila instance. This is required so that all your resources (Domain Controller, SCOM Components such as Ops Console, Aquila Components such as Management Servers) can talk to each other over the network.
+- Ensure that there is direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you will deploy an Aquila instance. This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, Aquila Components such as Management Servers) can talk to each other over the network.
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/)
 - If your Domain Controller and all other components are in Azure with no presence on-premises, a VPN network will work (ExpressRoute is not needed). If you are using one VPN to host all your components, you will already have a line-of-sight between all your components. If you have multiple VPNs, you will need to do VPN peering between all the VPNs that are in your network
 - Allow Port 5723/5724/443 to communicate while talking from Aquila to the VMs being monitored and vice versa.
