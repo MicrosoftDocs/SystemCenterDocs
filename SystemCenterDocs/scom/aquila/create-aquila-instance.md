@@ -104,4 +104,4 @@ To create an Aquila instance, follow the below steps:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Aquila overview](aquila-overview.md)
+> [Connect the Aquila instance to Ops console](connect-aquila-instance-to-ops-console.md)

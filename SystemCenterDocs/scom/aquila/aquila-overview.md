@@ -29,13 +29,9 @@ During the public preview, you can:
 
 ## Architecture
 
-Below is the architecture for Aquila (Public preview):
-
-:::image type="Architecture" source="media/aquila-overview/architecture.png" alt-text="Screenshot of aquila public preview architecture.":::
-
 When you create an Aquila instance (which is equivalent to your System Center Operations Manager Management Group), you will get one Management Server and one Web Console, all of them running on the same VM that is located in your Azure subscription. On the SQL MI instance, you will get two databases (Ops DB & DW DB). The entire infrastructure will be located on Azure.
 
-Meanwhile, connect your existing agents to your Azure-based Aquila instance by ensuring that there is a direct network connectivity (line-of-sight) between your existing network and your network in Azure. If your existing agents are in an untrusted domain, then connect a gateway server.
+Connect your existing agents to your Azure-based Aquila instance by ensuring that there is a direct network connectivity (line-of-sight) between your existing network and your network in Azure. If your existing agents are in an untrusted domain, then connect a gateway server.
 
 ## Pre-requisites
 
