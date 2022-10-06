@@ -20,4 +20,6 @@
   items:
   - name: Create an Aquila instance on Azure (Public preview)
     href: create-aquila-instance.md
+  - name: Connect the Aquila instance to Ops console
+    href: connect-aquila-instance-to-ops-console.md
 
