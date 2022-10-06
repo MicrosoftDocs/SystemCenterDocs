@@ -46,7 +46,7 @@ No, both the options can be left blank.
 
 No, you can disable all of them or enable any of them based on your organizations preferences.
 
-### I created seperate VNets in Azure. What steps do I need to take?
+### I created separate VNets in Azure. What steps do I need to take?
 
 If you have multiple VNets created, you need to peer your VNets. If your'e peering any two networks, ensure to peer from both networks to each other. Thus, if you peer three networks, you will need to do six peerings.
 
@@ -80,7 +80,7 @@ Azure RBAC is the role-based access control system that Azure follows while gran
 
 Azure RBAC is divided between Azure roles and Azure Active Directory roles. At a high level, Azure roles control permissions to manage Azure resources, while Azure Active Directory roles control permissions to manage Azure Active Directory resources. The following table compares some of the differences.
 
-:::image type="Comparision of azure roles and azure active directory roles" source="media/aquila-common-question/comparision-of-azure-roles-and-azure-active-directory-roles.png" alt-text="Screenshot of azure roles and azure active directory roles.":::
+:::image type="Comparision of Azure roles and Azure active directory roles" source="media/aquila-common-question/comparision-of-azure-roles-and-azure-active-directory-roles.png" alt-text="Screenshot of Azure roles and Azure active directory roles.":::
 
 Below is the high-level view of how the classic subscription administrator roles, Azure roles, and Azure AD roles are related.
 
@@ -117,7 +117,7 @@ Once the instance is deleted, you will also have to delete the two databases cre
 
 ### If an Arc instance to connect to private cloud with some resources is there, will Aquila scale to those resources in the future? 
 
-In the future, Yes. Customers will be able to deploy System Center Operations Manager anywhere, and that capability will come through Arc. Arc-enabled on-prem deployment will have incremental features as compared to current on-prem System Center Operations Manager. Today, independent of System Center Operations Manager, customers can install an Arc agent on a VM running on-prem and start seeing the resource in the Azure portal. Once they start seeing the resource in the Azure portal, they can use the Azure services for that resource (and incur the appropriate costs).
+In the future, Yes. Customers will be able to deploy System Center Operations Manager anywhere, and that capability will come through Arc. Arc-enabled on-premises deployment will have incremental features as compared to current on-premises System Center Operations Manager. Today, independent of System Center Operations Manager, customers can install an Arc agent on a VM running on-premises and start seeing the resource in the Azure portal. Once they start seeing the resource in the Azure portal, they can use the Azure services for that resource (and incur the appropriate costs).
 
 ### How will network monitoring be done on Aquila? 
 

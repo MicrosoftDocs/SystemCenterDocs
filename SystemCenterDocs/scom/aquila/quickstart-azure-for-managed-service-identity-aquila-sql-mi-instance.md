@@ -59,7 +59,7 @@ The Managed Service Identity provide an identity for applications to use when co
 In order to create and operate an Aquila instance, create the below two custom RBAC roles in Azure:
  - **Aquila Contributor**: This role allows users to create, update, and delete an Aquila instance in Azure. It's scope of permissions doesn't extend beyond Aquila. The ideal user for this role would be someone who will be responsible for creating an Aquila instance, and deleting it when done.
  
- - **Aquila Reader**: This role allows users to read an Aquila instance in Azure, without providing the ability to modify anything in the instance. It's scope of permissions doesn't extend beyond Aquila. The ideal user for this role would be someone who will be responsible for accessing the Aquila instance once it is created and reading the parameters. 
+ - **Aquila Reader**: This role allows users to read an Aquila instance in Azure, without the ability to modify anything in the instance. It's scope of permissions doesn't extend beyond Aquila. The ideal user for this role would be someone who will be responsible for accessing the Aquila instance once it is created and reading the parameters. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and select **Cloud Shell** in the top menu. A Shell opens at the bottom of the page.
 1. Enter the below commands to enable Aquila preview in your subscription:
@@ -161,17 +161,17 @@ Before creating an Aquila instance, you will have to create an instance of SQL M
 
 While you create an SQL MI instance, here are some pointers and recommendations:
 
-Resource Group: Create a new resource group for SQL MI because Azure best practises recommend creating a new Resource Group for large Azure resources.
+Resource Group: Create a new resource group for SQL MI because Azure best practices recommend creating a new Resource Group for large Azure resources.
 
 Managed Instance name: Choose a unique name here. This name will be used while creating an Aquila instance to refer to this SQL MI instance that you are creating
 
-Region: Choose the region which is closest to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes. In case you don't see the region that you want to choose in the list of regions, see the solution HERE
+Region: Choose the region that is closest to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes. If you don't see the desired region in the list of regions, see.
 
-Compute+Storage: The default number of cores is General Purpose (Gen5) 8 cores. This will suffice for the Aquila instance.
+Compute+Storage: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Aquila instance.
 
 Authentication Method: You can select 'SQL Authentication'. In the credentials section, you can put in the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
 
-VNet: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Aquila instance you will create in the future. Thus, choose a VNet that you will eventually use for your Aquila instance, or if choosing a different VNet, make sure it has connectivity to the Aquila instance VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more details, see more HERE.
+VNet: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Aquila instance you will create in the future. Thus, choose a VNet that you will eventually use for your Aquila instance, or if choosing a different VNet, make sure it has connectivity to the Aquila instance VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see.
 
 Connection Type: Connection Type will be Proxy (Default)
 
@@ -200,4 +200,4 @@ Select **Set Admin**, search for your MSI (the same MSI that you provided during
 
 You will see the Admin added to the SQL MI Instance.
 
-If you see the error after you add managed identity account, it idicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, otherwise your instance creation will fail.
+If you see the error after you add managed identity account, it indicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, otherwise your instance creation will fail.

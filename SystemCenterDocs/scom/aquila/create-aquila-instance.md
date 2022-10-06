@@ -15,24 +15,24 @@ monikerRange: 'sc-om-2022'
 
 # Create an Aquila instance on Azure
 
-Monitor all your workloads, whether on-prem, in Azure, or in any other cloud services. This article describes how to create an Aquila instance to monitor workloads using System Center Operations Manager functionality on Azure.
+Monitor all your workloads, whether on-premise, in Azure, or in any other cloud services. This article describes how to create an Aquila instance to monitor workloads using System Center Operations Manager functionality on Azure.
 
 ## Prerequisites
 
-- Requires at least 4 virtual cores (1 VM) of type Standard DSv2 in your subscription to deploy an instance.
-- Download System Center Operations Manager 2019 or later executable for the agent, Ops Console and the gateway server.
+- Requires at least four virtual cores (one VM) of type Standard DSv2 in your subscription to deploy an instance.
+- Download System Center Operations Manager 2019 or later executable for the agent, Ops Console, and the gateway server.
 - As all the components are on a single machine, open the below ports on the single VM:
     - On the management server, open the inbound ports 5723/5724.
     - On the web-console server, open the inbound ports 80/443.
     - For agent, open the ports 5723/135/138/445.
 - Allow 1433 and 11000-11999 from the Aquila Instance.
 - If you enable public endpoint on SQL MI, allow 3342.
-- Ensure to establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network and configure 1 domain account in Active Directory. For more information, see \<link\>.
+- Ensure to establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network and configure one domain account in Active Directory. For more information, see \<link\>.
 - Ensure to create a Managed Service Identity (MSI), configure Aquila RBAC and create and configure an SQL MI Instance. For more information, see \<link\>.
 
 >[!Note]
->- Aquila instance can be created only in West Europe and West US regions. Ensure that the VNet is in one of these regions.
->- Aquila will be deployed with 1 Management Server in Azure. We recommend monitoring a maximum of 500 servers during this preview in order to avoid latency issues.
+>- As Aquila instance can be created only in West Europe and West US regions, ensure that the VNet is in one of these regions.
+>- Aquila will be deployed with one Management Server in Azure. We recommend monitoring a maximum of 500 servers during this preview to avoid latency issues.
 >- You can multihome existing agents from your existing Management Groups to the Aquila Instance.
 
 ## Create an Aquila instance
@@ -53,14 +53,14 @@ To create an Aquila instance, follow the below steps:
 1. Under **Basics**, do the following:
     1. **Project details**:
         1. **Subscription**: Select the Azure subscription in which you want to place the Aquila instance.
-        1. **Resource group**: Select the resource group in which you want to place the Aquila instance. If you do not have a resource group in which you want to place the Aquila instance, select **Create New** to create a new resource group and then place the instance. We recommend you have a new resource group exclusively for Aquila.
+        1. **Resource group**: Select the resource group in which you want to place the Aquila instance. If you don't have a resource group in which you want to place the Aquila instance, select **Create New** to create a new resource group and then place the instance. We recommend you have a new resource group exclusively for Aquila.
     1. **Instance details**:
         1. **Aquila instance name**: Enter Aquila instance name as desired.
             >[!Note]
             >- Aquila instance name can have only alphanumaric characters and up to 10 characters long.
             >- Aquila instance is equivalent to System Center Operation Manager Management Group so choose a name accordingly.
         1. **Region**: Select the region that is near to you geographically so that latency between your agents and the Aquila instance is as low as possible.
-    1. **Azure Hybrid Benefit**: Select **Yes** if you are using a Windows Server licence for your existing servers. This licence is only applicable for the Windows Servers that will be used while creating VMs for the Aquila instance and it won't apply to existing Windows Servers.
+    1. **Azure Hybrid Benefit**: Select **Yes** if you are using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the Aquila instance and it won't apply to existing Windows Servers.
 1. Select **Next**.
 
 ### Networking
@@ -68,7 +68,7 @@ To create an Aquila instance, follow the below steps:
 1. Under **Networking**, do the following:
     1. **Configure virtual networks**:
         1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server. If you have not created a VNet earlier, select 'Create New' if you haven't already created a VNet before. For more information, see VNet creation process.
-        1. **Subnet**: Select a subnet that has at least 10 IP addresses to house all the Aquila instance components. The minimum address space is 28. The subnet can have existing resources in it however, do not choose the subnet that houses the SQL managed instance because it won't contain the sufficient number of IP addresses to house the instance.
+        1. **Subnet**: Select a subnet that has at least 10 IP addresses to house all the Aquila instance components. The minimum address space is 28. The subnet can have existing resources in it however, don't choose the subnet that houses the SQL managed instance because it won't contain the sufficient number of IP addresses to house the instance.
     1. **Domain details**:
         1. **Domain Name**: Enter the name of the domain that is being administered by the Domain Controller.
         1. **DNS Server IP**: Enter the IP address of the DNS Server that is providing the IP addresses to the resources in the domain mentioned above.
@@ -81,7 +81,7 @@ To create an Aquila instance, follow the below steps:
 
 1. Under **Database inputs**, do the following:
     1. **SQL managed instance**:
-        1. **Resource Name**: Select the SQL MI resource name for the instance that you would like to associate with this Aquila instance. Only the SQL MI instance which has given permissions to the Aquila instance should be used here. For more information, see SQL MI creation and permission.
+        1. **Resource Name**: Select the SQL MI resource name for the instance that you would like to associate with this Aquila instance. Only the SQL MI instance, which has given permissions to the Aquila instance should be used here. For more information, see SQL MI creation and permission.
     1. **User Managed Identity**:
         1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to in the SQL MI Instance. For more information, see MSI creation process.
 1. Select **Next**.
