@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Quick Start - Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance
+title: Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance
 description: This quickstart describes how to create a  Managed Service Identity (MSI), configure Aquila RBAC and create and configure an SQL MI Instance.
 author: jyothisuri
 ms.author: jsuri
