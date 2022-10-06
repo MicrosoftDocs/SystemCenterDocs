@@ -33,4 +33,4 @@ This quickstart describes how to set up your existing infrastructure before depl
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Quick Start: Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance](quickstart-azure-for-managed-service-identity-aquila-sql-mi-instance.md)
+> [Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance](quickstart-azure-for-managed-service-identity-aquila-sql-mi-instance.md)

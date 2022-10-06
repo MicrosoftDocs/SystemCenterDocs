@@ -44,4 +44,7 @@ Connect your existing agents to your Azure-based Aquila instance by ensuring tha
 ## Next steps
 
 > [!div class="nextstepaction"]
+> [Set up an infrastructure](quickstart-set-up-an-infrastructure.md)
+
+> [!div class="nextstepaction"]
 > [Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance](quickstart-azure-for-managed-service-identity-aquila-sql-mi-instance.md)
