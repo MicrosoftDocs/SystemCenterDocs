@@ -141,7 +141,7 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
     1. Under **Basics**:
         1. **Custom role name**: Enter the role name (Aquila Contributor/Aquila Reader).
         1. **Description**: Enter description of the role.
-        1. **Baseline permisions**: Select *Start from JSON* and upload the json file (aquilaContributor.json/aquilaReader.json). Ater you upload the json file, rest of the fields will auto-populate.
+        1. **Baseline permissions**: Select *Start from JSON* and upload the json file (aquilaContributor.json/aquilaReader.json). Ater you upload the json file, rest of the fields will auto-populate.
 1. Review the permissions, subscription, and other details in rest of the tabs. 
 1. Under **Review + Create**, select **Create** to create the role.
 1. Select **Review + Create** to create two custom roles. Now, assign users to these roles. 
