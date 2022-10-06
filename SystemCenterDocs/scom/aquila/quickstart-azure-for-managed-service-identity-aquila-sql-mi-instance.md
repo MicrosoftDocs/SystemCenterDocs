@@ -153,7 +153,7 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
 
 ## Create and configure an SQL MI instance
 
-Before you create an Aquila instance, you have to create an instance of SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql).
+Before you create an Aquila instance, you have to create an instance of SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
 
 Below are the recommendations while you create an SQL MI instance:
 
@@ -163,9 +163,9 @@ Below are the recommendations while you create an SQL MI instance:
 1. **Region**: Choose the region that is close to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes.
 1. **Compute+Storage**: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Aquila instance.
 1. **Authentication Method**: You can select **SQL Authentication**. In the credentials, enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
-1. **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Aquila instance you will create in the future. Thus, choose a VNet that you will eventually use for your Aquila instance, or if choosing a different VNet, make sure it has connectivity to the Aquila instance VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql).
+1. **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Aquila instance you will create in the future. Thus, choose a VNet that you will eventually use for your Aquila instance, or if choosing a different VNet, make sure it has connectivity to the Aquila instance VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql&preserve-view=true).
 1. **Connection Type**: By default, connection type is Proxy.
-1. **Public Endpoint**: This can either be *Enabled* or *Disabled*. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql). If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and Aquila are present.
+1. **Public Endpoint**: This can either be *Enabled* or *Disabled*. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true). If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and Aquila are present.
 
 For the rest of the settings in the other tabs, you can leave them as default or change something according to your requirements.
 
@@ -184,7 +184,7 @@ For the rest of the settings in the other tabs, you can leave them as default or
 
 To set the *Active Directory Admin* value in the SQL MI Instance follow the steps below:
 
-For more information, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql). 
+For more information, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true). 
 
 You need to be the Global Admin/Privileged Role Admin of the subscription to perform the below process 
 
