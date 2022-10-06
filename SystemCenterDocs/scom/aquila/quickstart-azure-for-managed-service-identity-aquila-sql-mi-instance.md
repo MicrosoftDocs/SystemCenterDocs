@@ -135,72 +135,64 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
 } 
 ```
 
-With the roles created, go to the Azure portal, and search for 'subscriptions' in the search bar. You will be led to a screen that shows all the subscriptions you have created. Select the subscription that you are going to create the Aquila instance in, and navigate to the blade that gives details of all the resources in that subscription along with the costs incurred so far.
-
-Select *Access Control (IAM)* > *+Add* on top and then select *Add custom role*.
-
-In the custom role editor, you will be asked details of the custom role you want to create
-
-For both the roles created above (aquilaContributor.json & aquilaReader.json), the process below needs to be followed:
-
-In the Basics tab, give the role a name (Aquila Contributor/Aquila Reader)
-Give a description of the roles
-In *Baseline permissions*, choose the option *Start from JSON* and upload the json file (aquilaContributor.json & aquilaReader.json). Uploading the json file will auto-populate the rest of the fields
-For the rest of the tabs, review the permissions, subscription, and other details
-In the final *Review + Create* tab, select *Create* to create the role.
-Select *Review + Create* to create two custom roles. Now, you need to assign users to these roles. Go back to the *Access Control (IAM)* page and select *+Add* and then select *+Add role assignment*.
-
-In the *Role* field, select the role that you want to add users to: Aquila Contributor (Similar to System Center Operations Manager Administrator) or Aquila Reader (Similar to System Center Operations Manager Operator).
-In the *Assign access to*, keep it as *User, group, or service principal*.
-In the *User* field, search for the users by their name.
-Save the role assignment and carry out the same steps for the second role.
+1. After you create the roles, go to Azure portal and search for *Subscriptions*. Select the subscription where you would create the Aquila instance in, and navigate to the blade that displays the details of all the resources in that subscription along with the costs incurred so far.
+1. Select *Access Control (IAM)* > *+Add* on top and then select **Add custom role**. **Create a custom role* page opens.
+1. For both the roles aquilaContributor.json and aquilaReader.json, do the following:
+    1. Under **Basics**:
+        1. **Custom role name**: Enter the role name (Aquila Contributor/Aquila Reader).
+        1. **Description**: Enter description of the role.
+        1. **Baseline permisions**: Select *Start from JSON* and upload the json file (aquilaContributor.json/aquilaReader.json). Ater you upload the json file, rest of the fields will auto-populate.
+1. Review the permissions, subscription, and other details in rest of the tabs. 
+1. Under **Review + Create**, select **Create** to create the role.
+1. Select **Review + Create** to create two custom roles. Now, assign users to these roles. 
+1. Navigate to **Access Control (IAM)** page, select **+Add** and then select **+Add role assignment**.
+1. In the **Role**, select the desired role to add users: Aquila Contributor (Similar to System Center Operations Manager Administrator) or Aquila Reader (Similar to System Center Operations Manager Operator).
+1. In the **Assign access to**, select **User, group, or service principal**.
+1. In the **User**, search for the users by their name.
+1. Save the role assignment and perform the same steps for the second role.
 
 ## Create and configure an SQL MI instance
 
-Before creating an Aquila instance, you will have to create an instance of SQL MI. A step-by-step guide detailing how to create an SQL MI instance can be found HERE
+Before you create an Aquila instance, you have to create an instance of SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql).
 
-While you create an SQL MI instance, here are some pointers and recommendations:
+Below are the recommendations while you create an SQL MI instance:
 
-Resource Group: Create a new resource group for SQL MI because Azure best practices recommend creating a new Resource Group for large Azure resources.
+1. **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommend creating a new Resource Group for large Azure resources.
 
-Managed Instance name: Choose a unique name here. This name will be used while creating an Aquila instance to refer to this SQL MI instance that you are creating
+1. **Managed Instance name**: Choose a unique name. This name will be used while creating an Aquila instance to refer to this SQL MI instance that you are creating.
+1. **Region**: Choose the region that is close to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes.
+1. **Compute+Storage**: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Aquila instance.
+1. **Authentication Method**: You can select **SQL Authentication**. In the credentials, enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
+1. **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Aquila instance you will create in the future. Thus, choose a VNet that you will eventually use for your Aquila instance, or if choosing a different VNet, make sure it has connectivity to the Aquila instance VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql).
+1. **Connection Type**: By default, connection type is Proxy.
+1. **Public Endpoint**: This can either be *Enabled* or *Disabled*. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql). If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and Aquila are present.
 
-Region: Choose the region that is closest to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes. If you don't see the desired region in the list of regions, see.
+For the rest of the settings in the other tabs, you can leave them as default or change something according to your requirements.
 
-Compute+Storage: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Aquila instance.
+>[!Note]
+>Creation of a new SQL MI instance can take up to 6 hours.
 
-Authentication Method: You can select 'SQL Authentication'. In the credentials section, you can put in the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
+1. Once the SQL MI instance is created, you need to provide the Aquila Resource Provider with permissions to access this SQL MI instance. To do that, open the details of this SQL MI instance, and select *Access Control (IAM)*. In the top menu, select *+Add* and then select *Add role assignment*.
 
-VNet: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Aquila instance you will create in the future. Thus, choose a VNet that you will eventually use for your Aquila instance, or if choosing a different VNet, make sure it has connectivity to the Aquila instance VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see.
+1. Enter the values as below and save the role assignment:
 
-Connection Type: Connection Type will be Proxy (Default)
+    Role = Reader
+    Assign access to = User, group, or service principal
+    Select = Microsoft.SCOM
 
-Public Endpoint: This can either be 'Enabled' or 'Disabled'. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. How to create an NSG can be found HERE. If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and Aquila are present
+### Set the Active Directory Admin value in the SQL MI Instance
 
-For the rest of the settings in the other tabs, you can leave them as default or change something according to your requirements
+To set the *Active Directory Admin* value in the SQL MI Instance follow the steps below:
 
-Creation of a new SQL MI instance can take up to 6 hours.
-Once the SQL MI instance is created, you will need to provide the Aquila Resource Provider with permissions to access this SQL MI instance. To do that, open the details of this SQL MI instance, and select *Access Control (IAM)*. In the top menu bar, select *+Add* and then select *Add role assignment*.
+For more information, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql). 
 
-There will be a pane that opens up on the right. The values to be input are:
+You need to be the Global Admin/Privileged Role Admin of the subscription to perform the below process 
 
-Role = Reader
-Assign access to = User, group, or service principal
-Select = Microsoft.SCOM
+1. Open the SQL MI Instance and select **Active Directory Admin**.
 
+1. Select **Set Admin**, search for your MSI (the same MSI that you provided during the Aquila instance creation flow). You will find the Admin added to the SQL MI Instance.
 
-Save the role assignment.
-
-As a final step, you will need to set the 'Active Directory Admin' value in the SQL MI Instance. More information about why this step is required can be found HERE. The directions to implement this step are given below.
-
-You will need to be the Global Admin/Privileged Role Admin of the subscription to carry out the process below
-Open the SQL MI Instance and from the ToC, select *Active Directory Admin*.
-
-Select **Set Admin**, search for your MSI (the same MSI that you provided during the Aquila instance creation flow).
-
-You will see the Admin added to the SQL MI Instance.
-
-If you see the error after you add managed identity account, it indicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, otherwise your instance creation will fail.
+1. If you find the error after you add managed identity account, it indicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, otherwise your instance creation will fail.
 
 ## Next steps
 
