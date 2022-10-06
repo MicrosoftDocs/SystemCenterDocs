@@ -12,6 +12,8 @@
 
 - name: Quickstarts
   items:
+  - name: Set up an infrastructure
+    href: quickstart-set-up-an-infrastructure.md
   - name: Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance (Public preview)
     href: quickstart-azure-for-managed-service-identity-aquila-sql-mi-instance.md
 
