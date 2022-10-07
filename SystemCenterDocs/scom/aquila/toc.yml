@@ -1,27 +1,19 @@
-- name: Microsoft Azure Monitor System Center Operations Manager managed instance (Public preview)
+- name: Aquila (preview)
   href: index.yml
 - name: Overview
   items:
-  - name: Microsoft Azure Monitor System Center Operations Manager managed instance (Public preview)
+  - name: What is Aquila (preview)?
     href: aquila-overview.md
 
 - name: Concepts
   items:
-  - name: General questions about Aquila (Public preview)
+  - name: General questions about Aquila (preview)
     href: aquila-common-questions.md
-
-- name: Quickstarts
-  items:
-  - name: Set up an infrastructure
-    href: quickstart-set-up-an-infrastructure.md
-  - name: Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance (Public preview)
-    href: quickstart-azure-for-managed-service-identity-aquila-sql-mi-instance.md
-
 
 - name: How-to guides
   items:
-  - name: Create an Aquila instance on Azure (Public preview)
+  - name: Create an Aquila (preview) instance on Azure
     href: create-aquila-instance.md
-  - name: Connect the Aquila instance to Ops console
+  - name: Connect the Aquila (preview) instance to Ops console
     href: connect-aquila-instance-to-ops-console.md
 

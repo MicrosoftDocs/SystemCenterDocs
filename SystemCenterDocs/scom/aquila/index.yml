@@ -1,35 +1,35 @@
 ### YamlMime:Landing
-title: Microsoft Azure Monitor System Center Operations Manager managed instance (Public preview)
-summary: Learn how to manage Hybrid environment with Microsoft Azure Monitor System Center Operations Manager managed instance
+title: Aquila (preview)
+summary: Learn how to manage Hybrid environment with Aquila (preview)
 
 metadata:
-  title: Microsoft Azure Monitor System Center Operations Manager managed instance
-  description: Learn about how to manage Hybrid environment with Microsoft Azure Monitor System Center Operations Manager managed instance
+  title: Aquila (preview)
+  description: Learn about how to manage Hybrid environment with Aquila (preview)
   author: jyothisuri
   ms.topic: landing-page
   ms.date: 10/04/2022
   ms.author: jsuri
 
 landingContent:
-  - title: About Microsoft Azure Monitor System Center Operations Manager managed instance (Public preview)
+  - title: About Aquila (Public preview)
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft Azure Monitor System Center Operations Manager managed instance?
+          - text: About Aquila (preview)
             url: aquila-overview.md
-      
-  - title: Get started
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance (Public preview)
-            url: quickstart-azure-for-managed-service-identity-aquila-sql-mi-instance.md
-          
-  - title: Create Aquila instance
+              
+  - title: Create an Aquila (preview) instance
     linkLists:
       - linkListType: how-to-guide
         links:  
-          - text: Create an Aquila instance on Azure
+          - text: Create an Aquila (preview) instance on Azure
             url: create-aquila-instance.md
+          
 
+  - title: Connect an Aquila (preview) instance to Ops console
+    linkLists:
+      - linkListType: how-to-guide
+        links:  
+          - text: Connect the Aquila (preview) instance to Ops console
+            url: connect-aquila-instance-to-ops-console.md
      
