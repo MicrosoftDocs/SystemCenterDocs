@@ -96,10 +96,10 @@ To create an Aquila instance, follow the below steps:
 1. Under **Review + Submit**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, and it takes up to an hour for the creation of an Aquila instance. 
 
     >[!Note]
-    >If your deployment fails, delete the instance and all associated resources, and recreate the instance again. For more information, see delete the instance and its resources.
+    >If the deployment fails, delete the instance and all associated resources, and recreate the instance again. For more information, see delete the instance and its resources.
 
-1. After the deployment is completed, select **Go to resource**. Created instance page opens. You will find some of the essential details and instructions to view the post-deployment steps or raise bugs.
-1. On the left navigation pane, under **Manage**, select **SCOM infrastructure**. It displays all the essential properties of your instance.
+1. After the deployment is completed, select **Go to resource**. On the created instance page, some of the essential details and instructions to view the post-deployment steps/raise bugs appear.
+1. On the left pane, under **Manage**, select **SCOM infrastructure**. All the essential properties of your instance appear.
 
 ## Next steps
 
