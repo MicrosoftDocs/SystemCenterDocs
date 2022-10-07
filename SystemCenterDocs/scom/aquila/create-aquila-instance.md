@@ -38,7 +38,7 @@ The following are the prerequisites before creating an Aquila (preview) instance
 
 ## Establish direct connectivity (line-of-sight) between your DC and your Azure network
 
-- Ensure that there is direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you will deploy an Aquila (preview)instance. This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, Aquila (preview) Components such as Management Servers) can talk to each other over the network.
+- Ensure that there is direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you will deploy an Aquila (preview) instance. This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, Aquila (preview) Components such as Management Servers) can talk to each other over the network.
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/)
 - If your Domain Controller and all other components are in Azure with no presence on-premises, a VPN network will work (ExpressRoute is not needed). If you are using one VPN to host all your components, you will already have a line-of-sight between all your components. If you have multiple VPNs, you will need to do VPN peering between all the VPNs that are in your network
 - Allow Port 5723/5724/443 to communicate while talking from Aquila (preview) to the VMs being monitored and vice versa.
@@ -159,7 +159,7 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
 ```
 
 1. After you create the roles, go to Azure portal and search for *Subscriptions*. Select the subscription where you would create the Aquila (preview) instance in, and navigate to the blade that displays the details of all the resources in that subscription along with the costs incurred so far.
-1. Select *Access Control (IAM)* > *+Add* on top and then select **Add custom role**. **Create a custom role* page opens.
+1. Select *Access Control (IAM)* > *+Add* on top and then select **Add custom role**. **Create a custom role** page opens.
 1. For both the roles aquilaContributor.json and aquilaReader.json, do the following:
     1. Under **Basics**:
         1. **Custom role name**: Enter the role name (Aquila Contributor/Aquila Reader).
@@ -180,15 +180,15 @@ Before you create an Aquila (preview) instance, you have to create an instance o
 
 Below are the recommendations while you create an SQL MI instance:
 
-1. **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommend creating a new Resource Group for large Azure resources.
+- **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommend creating a new Resource Group for large Azure resources.
 
-1. **Managed Instance name**: Choose a unique name. This name will be used while creating an Aquila (preview) instance to refer to this SQL MI instance that you are creating.
-1. **Region**: Choose the region that is close to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes.
-1. **Compute+Storage**: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Aquila (preview) instance.
-1. **Authentication Method**: You can select **SQL Authentication**. In the credentials, enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
-1. **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Aquila (preview) instance you will create in the future. Thus, choose a VNet that you will eventually use for your Aquila (preview) instance, or if choosing a different VNet, make sure it has connectivity to the Aquila (preview) instance VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql&preserve-view=true).
-1. **Connection Type**: By default, connection type is Proxy.
-1. **Public Endpoint**: This can either be *Enabled* or *Disabled*. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true). If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and Aquila (preview) are present.
+- **Managed Instance name**: Choose a unique name. This name will be used while creating an Aquila (preview) instance to refer to this SQL MI instance that you are creating.
+- **Region**: Choose the region that is close to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes.
+- **Compute+Storage**: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Aquila (preview) instance.
+- **Authentication Method**: You can select **SQL Authentication**. In the credentials, enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
+- **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Aquila (preview) instance you will create in the future. Thus, choose a VNet that you will eventually use for your Aquila (preview) instance, or if choosing a different VNet, make sure it has connectivity to the Aquila (preview) instance VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql&preserve-view=true).
+- **Connection Type**: By default, connection type is Proxy.
+- **Public Endpoint**: This can either be *Enabled* or *Disabled*. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true). If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and Aquila (preview) are present.
 
 For the rest of the settings in the other tabs, you can leave them as default or change something according to your requirements.
 

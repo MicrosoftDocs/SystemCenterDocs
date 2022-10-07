@@ -41,7 +41,7 @@ Follow the below steps to connect an Aquila (preview) instance to Ops Console:
 1. Configure the Gateway Server: When you install the Gateway Server, enter the following:
    - *Management Group Name*: The name of the Aquila (preview) Instance 
    - *Management Server Name*: The FQDN of the Management Server that you would link the gateway server to. 
-    You can set the second management server in Aquila (preview) as a failover server so that the gateway server can failover to it when the primary management server stops working. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). Setting up the failover management server is a command-line based setup and needs to run from where you have the System Center Operations Manager shell or the management server.
+    You can set the second management server in Aquila (preview) as a failover server so that the gateway server can fail over to it when the primary management server stops working. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). Setting up the failover management server is a command-line based setup and needs to run from where you have the System Center Operations Manager shell or the management server.
 
 1. Install Agents: Install your agents using the [instructions](/system-center/scom/manage-deploy-windows-agent-console?view=sc-om-2019&preserve-view=true).
 
