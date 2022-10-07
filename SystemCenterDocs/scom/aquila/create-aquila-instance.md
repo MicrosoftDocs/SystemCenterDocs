@@ -32,7 +32,7 @@ This article describes how to create an Aquila instance that helps you monitor a
 - Ensure to establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network and configure one domain account in Active Directory. For more information, see \<link\>.
 - Ensure to create a Managed Service Identity (MSI), configure Aquila role-based access control (RBAC) and create and configure an SQL MI Instance. For more information, see \<link\>.
 
-#### [Prerequisites in existing infrastructure](#tab/prereqs in infra)
+#### [Infrastructure](#tab/prereqs in infra)
 
 ## Establish direct connectivity (line-of-sight) between your DC and your Azure network
 
@@ -47,7 +47,7 @@ This article describes how to create an Aquila instance that helps you monitor a
 - Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain.
 - You can use an existing domain account if it has these [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain).
 
-#### [Prerequisites in Azure](#tab/prereqs in Azure)
+#### [Azure](#tab/prereqs in Azure)
 
 ## Create a Managed Service Identity (MSI)
 
