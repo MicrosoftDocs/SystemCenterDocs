@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Set up an infrastructure
+title: Set up an Azure infrastructure
 description: This quickstart describes how to set up your existing infrastructure before deploying Aquila. 
 author: jyothisuri
 ms.author: jsuri
@@ -26,7 +26,7 @@ This quickstart describes how to set up your existing infrastructure before depl
 
 ## Configure one domain account in Active Directory
 
-- Create one domain account in your Active Directory. The domain account is a typical Active Directory account (it can be a non-admin account). This account will be used to join the Management Servers (that will, in the future, be automatically created by Aquila) to your existing domain.
+- Create one domain account in your Active Directory. The domain account is a typical Active Directory account (it can be a non-admin account). This account will be used to join the Management Servers to your existing domain.
 - Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain.
 - You can use an existing domain account if it has these [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain).
 

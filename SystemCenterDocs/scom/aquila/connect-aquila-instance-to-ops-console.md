@@ -27,8 +27,8 @@ Identify a server where you want to install the Ops Console. Don't perform this 
 
 ## Prerequisites to install Ops Console
 
-- Complete the [prerequisites]((https://kevinholman.com/2019/03/14/scom-2019-quickstart-deployment-guide/) before you install the Ops Console. 
-- Download and install the *RepotingViewer.msi* and *SQLSysClrTypes.msi* before you install the Ops Console. 
+- Complete the [prerequisites](https://kevinholman.com/2019/03/14/scom-2019-quickstart-deployment-guide/) before you install the Ops Console. 
+- Download and install the *ReportingViewer.msi* and *SQLSysClrTypes.msi* before you install the Ops Console. 
 
 ## Install the Ops Console
 
