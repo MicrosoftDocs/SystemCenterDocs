@@ -15,24 +15,24 @@ monikerRange: 'sc-om-2022'
 
 # Create an Aquila instance on Azure
 
-Monitor all your workloads, whether on-premises, in Azure, or in any other cloud services. This article describes how to create an Aquila instance to monitor workloads using System Center Operations Manager functionality on Azure.
+This article describes how to create an Aquila instance that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services System Center Operations Manager functionality on Azure.
 
 ## Prerequisites
 
-- Requires at least four virtual cores (one VM) of type Standard DSv2 in your subscription to deploy an instance.
-- Download System Center Operations Manager 2019 or later executable for the agent, Ops Console, and the gateway server.
-- As all the components are on a single machine, open the below ports on the single VM:
+- Ensure that you've at least four virtual cores (one VM) of type Standard DSv2 in your Azure subscription to deploy an instance.
+- Ensure that you've downloaded System Center Operations Manager 2019 or later executable file for the agent, Ops Console, and the gateway server.
+- As all the components are on a single machine, ensure that you open the following ports on the single VM:
     - On the management server, open the inbound ports 5723/5724.
     - On the web-console server, open the inbound ports 80/443.
     - For agent, open the ports 5723/135/138/445.
-- Allow 1433 and 11000-11999 from the Aquila Instance.
-- If you enable public endpoint on SQL MI, allow 3342.
+- Ensure you allow ports 1433 and 11000-11999 from the Aquila Instance.
+- If you enable public endpoint on SQL MI, ensure that you allow 3342.
 - Ensure to establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network and configure one domain account in Active Directory. For more information, see \<link\>.
-- Ensure to create a Managed Service Identity (MSI), configure Aquila RBAC and create and configure an SQL MI Instance. For more information, see \<link\>.
+- Ensure to create a Managed Service Identity (MSI), configure Aquila role-based access control (RBAC) and create and configure an SQL MI Instance. For more information, see \<link\>.
 
 >[!Note]
 >- As Aquila instance can be created only in West Europe and West US regions, ensure that the VNet is in one of these regions.
->- Aquila will be deployed with one Management Server in Azure. We recommend monitoring a maximum of 500 servers during this preview to avoid latency issues.
+>- Aquila will be deployed with one Management Server in Azure. We recommend monitoring a maximum of 500 servers during this preview to avoid latency.
 >- You can multihome existing agents from your existing Management Groups to the Aquila Instance.
 
 ## Create an Aquila instance
@@ -42,11 +42,11 @@ To create an Aquila instance, follow the below steps:
 ### Sign in to the  Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Aquila**. Aquila Overview page opens.
-1. In the Overview page, you have three options
-    1. Pre-requisites: Allows you to view the prerequisites
-    1. Aquila Instance: Allows you to create an Aquila instance
-    1. Manage your Aquila Instance: Allows you to view the list of instances created.
-1. Select **Create Aquila Instance**. Create Aquila Instance page opens. 
+1. On the Overview page, you have three options
+    - Pre-requisites: Allows you to view the prerequisites
+    - Aquila Instance: Allows you to create an Aquila instance
+    - Manage your Aquila Instance: Allows you to view the list of instances created.
+1. Select **Create Aquila Instance**.
 
 ### Basics
 
