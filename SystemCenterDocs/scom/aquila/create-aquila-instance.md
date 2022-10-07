@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Create an Aquila instance
-description: This article describes how to create an Aquila instance to monitor workloads using System Center Operations Manager functionality on Azure.
+title: Create an Aquila (preview) instance
+description: This article describes how to create an Aquila (preview) instance to monitor workloads using System Center Operations Manager functionality on Azure.
 author: jyothisuri
 ms.author: jsuri
 manager: jsuri
@@ -13,13 +13,15 @@ ms.topic: article
 monikerRange: 'sc-om-2022'
 ---
 
-# Create an Aquila instance on Azure
+# Create an Aquila (preview) instance on Azure
 
-This article describes how to create an Aquila instance that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services System Center Operations Manager functionality on Azure.
+This article describes how to create an Aquila (preview) instance that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services System Center Operations Manager functionality on Azure.
 
 ## Prerequisites
 
-# [Prerequisites](#tab/Prereqs)
+The following are the prerequisites before creating an Aquila (preview) instance:
+
+# [General Prerequisites](#tab/prereqs-general)
 
 - Ensure that you've at least four virtual cores (one VM) of type Standard DSv2 in your Azure subscription to deploy an instance.
 - Ensure that you've downloaded System Center Operations Manager 2019 or later executable file for the agent, Ops Console, and the gateway server.
@@ -27,19 +29,19 @@ This article describes how to create an Aquila instance that helps you monitor a
     - On the management server, open the inbound ports 5723/5724.
     - On the web-console server, open the inbound ports 80/443.
     - For agent, open the ports 5723/135/138/445.
-- Ensure you allow ports 1433 and 11000-11999 from the Aquila Instance.
+- Ensure you allow ports 1433 and 11000-11999 from the Aquila (preview) Instance.
 - If you enable public endpoint on SQL MI, ensure that you allow 3342.
 - Ensure to establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network and configure one domain account in Active Directory. For more information, see \<link\>.
-- Ensure to create a Managed Service Identity (MSI), configure Aquila role-based access control (RBAC) and create and configure an SQL MI Instance. For more information, see \<link\>.
+- Ensure to create a Managed Service Identity (MSI), configure Aquila (preview) role-based access control (RBAC) and create and configure an SQL MI Instance. For more information, see \<link\>.
 
-# [Infrastructure](#tab/infra)
+# [In existing infrastructure](#tab/prereqs-infra)
 
 ## Establish direct connectivity (line-of-sight) between your DC and your Azure network
 
-- Ensure that there is direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you will deploy an Aquila instance. This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, Aquila Components such as Management Servers) can talk to each other over the network.
+- Ensure that there is direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you will deploy an Aquila (preview)instance. This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, Aquila (preview) Components such as Management Servers) can talk to each other over the network.
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/)
 - If your Domain Controller and all other components are in Azure with no presence on-premises, a VPN network will work (ExpressRoute is not needed). If you are using one VPN to host all your components, you will already have a line-of-sight between all your components. If you have multiple VPNs, you will need to do VPN peering between all the VPNs that are in your network
-- Allow Port 5723/5724/443 to communicate while talking from Aquila to the VMs being monitored and vice versa.
+- Allow Port 5723/5724/443 to communicate while talking from Aquila (preview) to the VMs being monitored and vice versa.
 
 ## Configure one domain account in Active Directory
 
@@ -47,11 +49,11 @@ This article describes how to create an Aquila instance that helps you monitor a
 - Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain.
 - You can use an existing domain account if it has these [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain).
 
-# [Azure](#tab/Azure)
+# [In Azure portal](#tab/prereqs-portal)
 
 ## Create a Managed Service Identity (MSI)
 
-The Managed Service Identity provide an identity for applications to use when connecting to resources that support Azure Active Directory (Azure AD) authentication. For Aquila, a Managed Identity will replace the traditional four System Center Operations Manager service accounts and it will be used to access the SQL MI database.
+The Managed Service Identity provide an identity for applications to use when connecting to resources that support Azure Active Directory (Azure AD) authentication. For Aquila (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and it will be used to access the SQL MI database.
 
 >[!Note]
 >Ensure you are a contributor in the subscription you create the MSI.
@@ -65,10 +67,10 @@ The Managed Service Identity provide an identity for applications to use when co
 
 1. Under **Basics**, do the following:
     1. **Project details**:
-        1. **Subscription**: Select the Azure subscription in which you want to create Aquila instance.
-        1. **Resource group**: Select the resource group in which you want to create Aquila instance.
+        1. **Subscription**: Select the Azure subscription in which you want to create Aquila (preview) instance.
+        1. **Resource group**: Select the resource group in which you want to create Aquila (preview) instance.
     1. **Instance details**:
-        1. **Region**: Select the region in which you want to create Aquila instance.
+        1. **Region**: Select the region in which you want to create Aquila (preview) instance.
         1. **Name**: Enter the desired name.
 1. Select **Next : Tags >**
 
@@ -81,20 +83,20 @@ The Managed Service Identity provide an identity for applications to use when co
 
 1. Under **Review + create**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, you can access the resource and view its details.
 
-## Configure Aquila RBAC
+## Configure Aquila (preview) role-based access control (RBAC)
 
 ### Register the RP
 
 >[!Note]
 >Ensure you are either a subscription owner or global administrator. For more information, see Azure RBAC.
 
-In order to create and operate an Aquila instance, create the below two custom RBAC roles in Azure:
- - **Aquila Contributor**: This role allows users to create, update, and delete an Aquila instance in Azure. Its scope of permissions doesn't extend beyond Aquila. The ideal user for this role would be someone who will be responsible for creating an Aquila instance, and deleting it when done.
+In order to create and operate an Aquila (preview) instance, create the below two custom RBAC roles in Azure:
+ - **Aquila Contributor**: This role allows users to create, update, and delete an Aquila (preview) instance in Azure. Its scope of permissions doesn't extend beyond Aquila (preview). The ideal user for this role would be someone who will be responsible for creating an Aquila (preview) instance, and deleting it when done.
  
- - **Aquila Reader**: This role allows users to read an Aquila instance in Azure, without the ability to modify anything in the instance. Its scope of permissions doesn't extend beyond Aquila. The ideal user for this role would be someone who will be responsible for accessing the Aquila instance once it is created and reading the parameters. 
+ - **Aquila Reader**: This role allows users to read an Aquila (preview) instance in Azure, without the ability to modify anything in the instance. Its scope of permissions doesn't extend beyond Aquila (preview). The ideal user for this role would be someone who will be responsible for accessing the Aquila (preview) instance once it is created and reading the parameters. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and select **Cloud Shell** in the top menu. A Shell opens at the bottom of the page.
-1. Enter the below commands to enable Aquila preview in your subscription:
+1. Enter the below commands to enable Aquila (preview) preview in your subscription:
 
     ```   
     az account set --subscription "<your subscription name>"
@@ -102,7 +104,7 @@ In order to create and operate an Aquila instance, create the below two custom R
     az provider register --namespace Microsoft.Scom
     ```
 
-Resource Provider of Aquila is successfully registered in your subscription. If you don't see the `Microsoft.SCOM` resource provider in the IAM or experience any problems in the steps above, check your permission level in Azure. You might need to change your permission level to complete all the steps above.
+Resource Provider of Aquila (preview) is successfully registered in your subscription. If you don't see the `Microsoft.SCOM` resource provider in the IAM or experience any problems in the steps above, check your permission level in Azure. You might need to change your permission level to complete all the steps above.
 
 ### Add custom roles
 
@@ -167,7 +169,7 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
 } 
 ```
 
-1. After you create the roles, go to Azure portal and search for *Subscriptions*. Select the subscription where you would create the Aquila instance in, and navigate to the blade that displays the details of all the resources in that subscription along with the costs incurred so far.
+1. After you create the roles, go to Azure portal and search for *Subscriptions*. Select the subscription where you would create the Aquila (preview) instance in, and navigate to the blade that displays the details of all the resources in that subscription along with the costs incurred so far.
 1. Select *Access Control (IAM)* > *+Add* on top and then select **Add custom role**. **Create a custom role* page opens.
 1. For both the roles aquilaContributor.json and aquilaReader.json, do the following:
     1. Under **Basics**:
@@ -185,26 +187,26 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
 
 ## Create and configure an SQL MI instance
 
-Before you create an Aquila instance, you have to create an instance of SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
+Before you create an Aquila (preview) instance, you have to create an instance of SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
 
 Below are the recommendations while you create an SQL MI instance:
 
 1. **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommend creating a new Resource Group for large Azure resources.
 
-1. **Managed Instance name**: Choose a unique name. This name will be used while creating an Aquila instance to refer to this SQL MI instance that you are creating.
+1. **Managed Instance name**: Choose a unique name. This name will be used while creating an Aquila (preview) instance to refer to this SQL MI instance that you are creating.
 1. **Region**: Choose the region that is close to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes.
-1. **Compute+Storage**: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Aquila instance.
+1. **Compute+Storage**: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Aquila (preview) instance.
 1. **Authentication Method**: You can select **SQL Authentication**. In the credentials, enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
-1. **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Aquila instance you will create in the future. Thus, choose a VNet that you will eventually use for your Aquila instance, or if choosing a different VNet, make sure it has connectivity to the Aquila instance VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql&preserve-view=true).
+1. **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Aquila (preview) instance you will create in the future. Thus, choose a VNet that you will eventually use for your Aquila (preview) instance, or if choosing a different VNet, make sure it has connectivity to the Aquila (preview) instance VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql&preserve-view=true).
 1. **Connection Type**: By default, connection type is Proxy.
-1. **Public Endpoint**: This can either be *Enabled* or *Disabled*. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true). If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and Aquila are present.
+1. **Public Endpoint**: This can either be *Enabled* or *Disabled*. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true). If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and Aquila (preview) are present.
 
 For the rest of the settings in the other tabs, you can leave them as default or change something according to your requirements.
 
 >[!Note]
 >Creation of a new SQL MI instance can take up to 6 hours.
 
-1. Once the SQL MI instance is created, you need to provide the Aquila Resource Provider with permissions to access this SQL MI instance. To do that, open the details of this SQL MI instance, and select *Access Control (IAM)*. In the top menu, select *+Add* and then select *Add role assignment*.
+1. Once the SQL MI instance is created, you need to provide the Aquila (preview) Resource Provider with permissions to access this SQL MI instance. To do that, open the details of this SQL MI instance, and select *Access Control (IAM)*. In the top menu, select *+Add* and then select *Add role assignment*.
 
 1. Enter the values as below and save the role assignment:
 
@@ -222,76 +224,59 @@ You need to be the Global Admin/Privileged Role Admin of the subscription to per
 
 1. Open the SQL MI Instance and select **Active Directory Admin**.
 
-1. Select **Set Admin**, search for your MSI (the same MSI that you provided during the Aquila instance creation flow). You will find the Admin added to the SQL MI Instance.
+1. Select **Set Admin**, search for your MSI (the same MSI that you provided during the Aquila (preview) instance creation flow). You will find the Admin added to the SQL MI Instance.
 
 1. If you find the error after you add managed identity account, it indicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, otherwise your instance creation will fail.
 
 ---
 
 >[!Note]
->- As Aquila instance can be created only in West Europe and West US regions, ensure that the VNet is in one of these regions.
->- Aquila will be deployed with one Management Server in Azure. We recommend monitoring a maximum of 500 servers during this preview to avoid latency.
->- You can multihome existing agents from your existing Management Groups to the Aquila Instance.
+>- As Aquila (preview) instance can be created only in West Europe and West US regions, ensure that the VNet is in one of these regions.
+>- Aquila (preview) will be deployed with one Management Server in Azure. We recommend monitoring a maximum of 500 servers during this preview to avoid latency.
+>- You can multihome existing agents from your existing Management Groups to the Aquila (preview) Instance.
 
-## Create an Aquila instance
+## Create an Aquila (preview) instance
 
-To create an Aquila instance, follow the below steps:
-
-### Sign in to the  Azure portal
+To create an Aquila (preview) instance, follow the below steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Aquila**. Aquila Overview page opens.
 1. On the Overview page, you have three options
     - Pre-requisites: Allows you to view the prerequisites
-    - Aquila Instance: Allows you to create an Aquila instance
+    - Aquila Instance: Allows you to create an Aquila (preview) instance
     - Manage your Aquila Instance: Allows you to view the list of instances created.
 1. Select **Create Aquila Instance**.
-
-### Basics
-
 1. Under **Basics**, do the following:
     1. **Project details**:
-        1. **Subscription**: Select the Azure subscription in which you want to place the Aquila instance.
-        1. **Resource group**: Select the resource group in which you want to place the Aquila instance. If you don't have a resource group in which you want to place the Aquila instance, select **Create New** to create a new resource group and then place the instance. We recommend you have a new resource group exclusively for Aquila.
+        1. **Subscription**: Select the Azure subscription in which you want to place the Aquila (preview) instance.
+        1. **Resource group**: Select the resource group in which you want to place the Aquila (preview) instance. If you don't have a resource group in which you want to place the Aquila (preview) instance, select **Create New** to create a new resource group and then place the instance. We recommend you have a new resource group exclusively for Aquila (preview).
     1. **Instance details**:
-        1. **Aquila instance name**: Enter Aquila instance name as desired.
+        1. **Aquila instance name**: Enter Aquila (preview) instance name as desired.
             >[!Note]
-            >- Aquila instance name can have only alphanumaric characters and up to 10 characters long.
-            >- Aquila instance is equivalent to System Center Operation Manager Management Group so choose a name accordingly.
-        1. **Region**: Select the region that is near to you geographically so that latency between your agents and the Aquila instance is as low as possible.
-    1. **Azure Hybrid Benefit**: Select **Yes** if you are using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the Aquila instance and it won't apply to existing Windows Servers.
+            >- Aquila (preview) instance name can have only alphanumaric characters and up to 10 characters long.
+            >- Aquila (preview) instance is equivalent to System Center Operation Manager Management Group so choose a name accordingly.
+        1. **Region**: Select the region that is near to you geographically so that latency between your agents and the Aquila (preview) instance is as low as possible.
+    1. **Azure Hybrid Benefit**: Select **Yes** if you are using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the Aquila (preview) instance and it won't apply to existing Windows Servers.
 1. Select **Next**.
-
-### Networking
-
 1. Under **Networking**, do the following:
     1. **Configure virtual networks**:
         1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server. If you have not created a VNet earlier, select 'Create New' if you haven't already created a VNet before. For more information, see VNet creation process.
-        1. **Subnet**: Select a subnet that has at least 10 IP addresses to house all the Aquila instance components. The minimum address space is 28. The subnet can have existing resources in it however, don't choose the subnet that houses the SQL managed instance because it won't contain the sufficient number of IP addresses to house the instance.
+        1. **Subnet**: Select a subnet that has at least 10 IP addresses to house all the Aquila (preview) instance components. The minimum address space is 28. The subnet can have existing resources in it however, don't choose the subnet that houses the SQL managed instance because it won't contain the sufficient number of IP addresses to house the instance.
     1. **Domain details**:
         1. **Domain Name**: Enter the name of the domain that is being administered by the Domain Controller.
         1. **DNS Server IP**: Enter the IP address of the DNS Server that is providing the IP addresses to the resources in the domain mentioned above.
     1. **Domain account**
-        1. **Username**: Enter the username of the account you created in your active directory as part of the pre-requisites. Same account will be used to join the management servers (created as part of the Aquila instance) and SQL MI servers to your domain. For more information, see Domain Account.
+        1. **Username**: Enter the username of the account you created in your active directory as part of the pre-requisites. Same account will be used to join the management servers (created as part of the Aquila (preview) instance) and SQL MI servers to your domain. For more information, see Domain Account.
         1. **Password**: Enter the password.
 1. Select **Next**.
-
-### Database inputs
-
 1. Under **Database inputs**, do the following:
     1. **SQL managed instance**:
-        1. **Resource Name**: Select the SQL MI resource name for the instance that you would like to associate with this Aquila instance. Only the SQL MI instance, which has given permissions to the Aquila instance should be used here. For more information, see SQL MI creation and permission.
+        1. **Resource Name**: Select the SQL MI resource name for the instance that you would like to associate with this Aquila (preview) instance. Only the SQL MI instance, which has given permissions to the Aquila (preview) instance should be used here. For more information, see SQL MI creation and permission.
     1. **User Managed Identity**:
         1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to in the SQL MI Instance. For more information, see MSI creation process.
 1. Select **Next**.
-
-### Tags
-
 1. Under **Tags**, enter the Name, value and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
 1. Select **Next**.
-
-### Review + Submit
-
-1. Under **Review + Submit**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, and it takes up to an hour for the creation of an Aquila instance. 
+1. Under **Review + Submit**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, and it takes up to an hour for the creation of an Aquila (preview) instance. 
 
     >[!Note]
     >If the deployment fails, delete the instance and all associated resources, and recreate the instance again. For more information, see delete the instance and its resources.
@@ -302,4 +287,4 @@ To create an Aquila instance, follow the below steps:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect the Aquila instance to Ops console](connect-aquila-instance-to-ops-console.md)
+> [Connect the Aquila (preview) instance to Ops console](connect-aquila-instance-to-ops-console.md)

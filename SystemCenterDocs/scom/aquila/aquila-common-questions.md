@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: General questions about Aquila
-description: This article summarizes frequently asked questions about Aquila.
+title: Aquila (preview) frequently asked questions
+description: This article summarizes frequently asked questions about Aquila (preview).
 author: jyothisuri
 ms.author: jsuri
 manager: jsuri
@@ -13,11 +13,11 @@ ms.topic: article
 monikerRange: 'sc-om-2022'
 ---
 
-# Common questions about Aquila
+# Aquila (preview) frequently asked questions
 
-This article summarizes frequently asked questions about Aquila.
+This article summarizes frequently asked questions about Aquila (preview).
 
-## VPN
+## Virtual private network
 
 ### What regions do the VPN need to be in?
 
@@ -30,13 +30,13 @@ The minimum address space is /27 (which means /28 and above wouldn't work).
 ### How many subnets does the VPN need to have?
 
 - VPN needs two subnets. 
-    - For Aquila instance
-    - For SQL MI instance
-- The subnet for SQL MI instance will be a delegated (dedicated) subnet and won't be used by the Aquila instance. Name the subnets accordingly to avoid confusion in the future while you create the SQL MI/Aquila Instance.
+    - For Aquila (preview) instance
+    - For SQL managed instance
+- The subnet for SQL MI instance will be a delegated (dedicated) subnet and won't be used by the Aquila (preview) instance. Name the subnets accordingly to avoid confusion in the future while you create the SQL MI/Aquila (preview) instance.
 
 ### What address range do the two subnets need?
 
-The minimum address space needs to be /27 for SQL MI subnet and /28 for the Aquila subnet.
+The minimum address space needs to be /27 for SQL MI subnet and /28 for the Aquila (preview) subnet.
 
 ### Do the subnets need to specify a NAT gateway or Service Endpoint?
 
@@ -58,7 +58,7 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 
 :::image type="Add peering" source="media/aquila-common-question/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/aquila-common-question/add-peering-expanded.png":::
 
-## SQL-MI
+## SQL-managed instance
 
 ### I don't see my region in SQL MI. How do I solve that?
 
@@ -72,7 +72,7 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 
 1. Select **Enter details**. **Quota details** page opens on the right pane. In *Region*, choose the desired region and change the limits as desired (10 subnets and 500 vCores should suffice for the preview). Select **Save and continue** and then select **Next: Review + create >>** to raise the ticket. It might take 24 hours for the ticket to get resolved. Wait for it to get resolved before proceeding to create the SQL MI instance.
 
-## Azure RBAC
+## Azure role-based access control (RBAC)
 
 ### What is Azure RBAC?
 
@@ -99,11 +99,11 @@ Users with the Global administrator role have access to all administrative featu
 
 ### What are the charges that will be incurred during preview? 
 
-The charges that incur while running Aquila will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, etc.). Apart from the infrastructure charges, there will be no other IP-related charge. For using System Center Operations Manager 2019, the evaluation version (available for six months) can be used to test Aquila.
+The charges that incur while running Aquila (preview) will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, etc.). Apart from the infrastructure charges, there will be no other IP-related charge. For using System Center Operations Manager 2019, the evaluation version (available for six months) can be used to test Aquila (preview).
 
 ### What if there is an error during deployment? 
 
-During the deployment phase, there can be several reasons why deploying an Aquila instance shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it is best to delete the instance and create one again.
+During the deployment phase, there can be several reasons why deploying an Aquila (preview) instance shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it is best to delete the instance and create one again.
 
 ### What if the correct procedure to delete an instance? 
 
@@ -111,34 +111,34 @@ You can either delete the instance from the instance view itself or from the *Re
 
 In the instance view, select *Delete* from the top menu and wait for the confirmation that the instance has been deleted. 
 
-Alternatively, go to your resource group view (search for Resource Group in the Azure search bar, and in the list of results, open your resource group). If you created a separate resource group for Aquila, delete the resource group. Otherwise, in the resource group, search for your instance and select *Delete*. 
+Alternatively, go to your resource group view (search for Resource Group in the Azure search bar, and in the list of results, open your resource group). If you created a separate resource group for Aquila (preview), delete the resource group. Otherwise, in the resource group, search for your instance and select *Delete*. 
 
-Once the instance is deleted, you will also have to delete the two databases created in SQL MI. In the resource view, select the two databases (depending on what name you gave to your SQL MI instance) and select **Delete**. With the two databases deleted, you can recreate your Aquila Instance.
+Once the instance is deleted, you will also have to delete the two databases created in SQL MI. In the resource view, select the two databases (depending on what name you gave to your SQL MI instance) and select **Delete**. With the two databases deleted, you can recreate your Aquila (preview) instance.
 
-### If an Arc instance to connect to private cloud with some resources is available, will Aquila scale to those resources in the future? 
+### If an Arc instance to connect to private cloud with some resources is available, will Aquila (preview) scale to those resources in the future? 
 
 In the future, yes. Customers will be able to deploy System Center Operations Manager anywhere, and that capability will come through Arc. Arc-enabled on-premises deployment will have incremental features as compared to current on-premises System Center Operations Manager. Today, independent of System Center Operations Manager, customers can install an Arc agent on a VM running on-premises and start seeing the resource in the Azure portal. Once they start seeing the resource in the Azure portal, they can use the Azure services for that resource (and incur the appropriate costs).
 
-### How will network monitoring be done on Aquila? 
+### How will network monitoring be done on Aquila (preview)? 
 
-Aquila and System Center Operations Manager share the same feature set. If it can be done in System Center Operations Manager today, it will be done in Aquila the next day.
+Aquila (preview) and System Center Operations Manager share the same feature set. If it can be done in System Center Operations Manager today, it will be done in Aquila (preview) the next day.
 
-### How is Aquila different from running System Center Operations Manager in Azure VMs?
+### How is Aquila (preview) different from running System Center Operations Manager in Azure VMs?
 
-- Aquila is native to Azure while running System Center Operations Manager in Azure VMs is not a native solution. That means Aquila will integrate smoothly with Azure and all of Azure’s updates will be available to Aquila.
-- In terms of ease of deployment, Aquila is easy to deploy while running VMs in Azure takes possibly months of effort (and requires technical knowledge).
-- Aquila uses SQL MI as the backend for database management by default.
-- Aquila will come with backup and disaster recovery built in.
+- Aquila (preview) is native to Azure while running System Center Operations Manager in Azure VMs is not a native solution. That means Aquila (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to Aquila (preview).
+- In terms of ease of deployment, Aquila (preview) is easy to deploy while running VMs in Azure takes possibly months of effort (and requires technical knowledge).
+- Aquila (preview) uses SQL MI as the backend for database management by default.
+- Aquila (preview) will come with backup and disaster recovery built in.
 
 ### What does line-of-sight mean? 
 
 Being in the same private network so that the IPs assigned to each component in the network can be a private IP.
 
-### Can I view the Aquila resources and VMs in my subscription? 
+### Can I view the Aquila (preview) resources and VMs in my subscription? 
 
-Since this preview requires you to create the Aquila instance in your subscription, all the Aquila resources (including the VMs) will be visible to you. However, we recommend not to touch the VMs and other resources while you are operating Aquila to avoid unforeseen complexities.
+Since this preview requires you to create the Aquila (preview) instance in your subscription, all the Aquila (preview) resources (including the VMs) will be visible to you. However, we recommend not to touch the VMs and other resources while you are operating Aquila (preview) to avoid unforeseen complexities.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Aquila overview](aquila-overview.md)
+> [Aquila (preview) overview](aquila-overview.md)
