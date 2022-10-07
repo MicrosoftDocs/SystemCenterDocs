@@ -1,0 +1,35 @@
+### YamlMime:Landing
+title: Microsoft Azure Monitor System Center Operations Manager managed instance (Public preview)
+summary: Learn how to manage Hybrid environment with Microsoft Azure Monitor System Center Operations Manager managed instance
+
+metadata:
+  title: Microsoft Azure Monitor System Center Operations Manager managed instance
+  description: Learn about how to manage Hybrid environment with Microsoft Azure Monitor System Center Operations Manager managed instance
+  author: jyothisuri
+  ms.topic: landing-page
+  ms.date: 10/04/2022
+  ms.author: jsuri
+
+landingContent:
+  - title: About Microsoft Azure Monitor System Center Operations Manager managed instance (Public preview)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Azure Monitor System Center Operations Manager managed instance?
+            url: aquila-overview.md
+      
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance (Public preview)
+            url: quickstart-azure-for-managed-service-identity-aquila-sql-mi-instance.md
+          
+  - title: Create Aquila instance
+    linkLists:
+      - linkListType: how-to-guide
+        links:  
+          - text: Create an Aquila instance on Azure
+            url: create-aquila-instance.md
+
+     
