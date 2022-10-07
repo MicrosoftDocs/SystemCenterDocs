@@ -17,17 +17,18 @@ monikerRange: 'sc-om-2022'
 
 Aquila is compatible with System Center Operations Manager 2019. [Download](https://www.microsoft.com/evalcenter/evaluate-system-center-2019) a trial version of System Center Operations Manager 2019 (available for 180 days), if you don't have the System Center Operations Manager 2019 executable files. Fill the personal details form and download SCOM_2019.exe
 
-After you create the Aquila Instance in Azure, connect the instance to Ops Console to configure the workloads that needs to be monitored.
+After you create the Aquila Instance in Azure, connect the instance to Ops Console to configure the workloads that need to be monitored.
 
-Follow the below steps to connect Aquila instance to Ops Console:
+Follow the below steps to connect an Aquila instance to Ops Console:
 
-## Identify Server where to install Ops Console 
+## Identify server to install Ops Console 
 
-Identify a server where you want to install the Ops Console. Don't perform this on Aquila VM, but rather a separate VM. The VM needs to be a Windows Server. This server can be on-premises or on Azure.
+Identify a server where you want to install the Ops Console. Don't perform this on an Aquila VM, but rather on a separate VM. The VM needs to be a Windows Server. This server can be on-premises or on Azure.
 
-## Fulfill prerequisites to install Ops Console
+## Prerequisites to install Ops Console
 
-Complete the prerequisites before you install the Ops Console. Download and install the *RepotingViewer.msi* and *SQLSysClrTypes.msi* before the installation of the Ops Console. For a complete list of prerequisites, see [System Center Operations Manager 2019 - QuickStart Deployment Guide](https://kevinholman.com/2019/03/14/scom-2019-quickstart-deployment-guide/).
+- Complete the [prerequisites]((https://kevinholman.com/2019/03/14/scom-2019-quickstart-deployment-guide/) before you install the Ops Console. 
+- Download and install the *RepotingViewer.msi* and *SQLSysClrTypes.msi* before you install the Ops Console. 
 
 ## Install the Ops Console
 
@@ -41,7 +42,7 @@ Log in to the Ops Console and select **Connect To Server**. Add the FQDN pointin
 
 For a detailed procedure to connect the Ops Console to a Management Group (in this case, Aquila instance), see [How to connect to the Operations and Web Console](/system-center/scom/manage-consoles-how-to-connect?view=sc-om-2019&preserve-view=true)
 
-## Requirements regarding Gateway Server
+## Gateway Server requirements
 
 If your agents are in a domain that is outside the trust boundary of the Aquila instance, you need to install a gateway server to use certificate-based authentication. 
 
@@ -52,9 +53,9 @@ If you only have a few agents outside the trust boundary, you can use certificat
 
 ## Configure the Gateway Server
 
-When you install the Gateway Server, do the following:
-    *Management Group Name*: Enter the name of the Aquila Instance 
-    *Management Server Name*: Enter the FQDN of the Management Server that you would link the gateway server to. 
+When you install the Gateway Server, enter the following:
+   - *Management Group Name*: The name of the Aquila Instance 
+   - *Management Server Name*: The FQDN of the Management Server that you would link the gateway server to. 
 You can set the second management server in Aquila as a failover server so that the gateway server can failover to it when the primary management server stops working. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). Setting up the failover management server is a command-line based setup and needs to run from where you have the System Center Operations Manager shell or the management server.
 
 ## Install Agents
