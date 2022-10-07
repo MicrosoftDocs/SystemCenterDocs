@@ -199,9 +199,9 @@ For the rest of the settings in the other tabs, you can leave them as default or
 
 1. Enter the values as below and save the role assignment:
 
-    Role = Reader
-    Assign access to = User, group, or service principal
-    Select = Microsoft.SCOM
+    - Role = Reader
+    - Assign access to = User, group, or service principal
+    - Select = Microsoft.SCOM
 
 ### Set the Active Directory Admin value in the SQL MI Instance
 
