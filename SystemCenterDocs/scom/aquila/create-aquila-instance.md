@@ -58,13 +58,8 @@ The Managed Service Identity provide an identity for applications to use when co
 >[!Note]
 >Ensure you are a contributor in the subscription you create the MSI.
 
-### Sign in to the  Azure portal
-
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Managed Identities**. Managed Identities page opens.
 1. Select **+ Create**. **Create User Assigned Managed Identity** page opens.
-
-### Basics
-
 1. Under **Basics**, do the following:
     1. **Project details**:
         1. **Subscription**: Select the Azure subscription in which you want to create Aquila (preview) instance.
@@ -72,15 +67,9 @@ The Managed Service Identity provide an identity for applications to use when co
     1. **Instance details**:
         1. **Region**: Select the region in which you want to create Aquila (preview) instance.
         1. **Name**: Enter the desired name.
-1. Select **Next : Tags >**
-
-### Tags
-
+1. Select **Next : Tags >**.
 1. Under **Tags**, enter the Name, value and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
 1. Select **Next : Review + Create >**.
-
-### Review + create
-
 1. Under **Review + create**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, you can access the resource and view its details.
 
 ## Configure Aquila (preview) role-based access control (RBAC)
