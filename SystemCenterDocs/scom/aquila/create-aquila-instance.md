@@ -19,7 +19,7 @@ This article describes how to create an Aquila instance that helps you monitor a
 
 ## Prerequisites
 
-#### [Prerequisites](#tab/Prereqs)
+# [Prerequisites](#tab/Prereqs)
 
 - Ensure that you've at least four virtual cores (one VM) of type Standard DSv2 in your Azure subscription to deploy an instance.
 - Ensure that you've downloaded System Center Operations Manager 2019 or later executable file for the agent, Ops Console, and the gateway server.
@@ -32,7 +32,7 @@ This article describes how to create an Aquila instance that helps you monitor a
 - Ensure to establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network and configure one domain account in Active Directory. For more information, see \<link\>.
 - Ensure to create a Managed Service Identity (MSI), configure Aquila role-based access control (RBAC) and create and configure an SQL MI Instance. For more information, see \<link\>.
 
-#### [Infrastructure](#tab/prereqs in infra)
+# [Infrastructure](#tab/infra)
 
 ## Establish direct connectivity (line-of-sight) between your DC and your Azure network
 
@@ -47,7 +47,7 @@ This article describes how to create an Aquila instance that helps you monitor a
 - Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain.
 - You can use an existing domain account if it has these [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain).
 
-#### [Azure](#tab/prereqs in Azure)
+# [Azure](#tab/Azure)
 
 ## Create a Managed Service Identity (MSI)
 
