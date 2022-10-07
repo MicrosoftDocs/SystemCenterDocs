@@ -18,13 +18,18 @@ landingContent:
           - text: About Aquila (preview)
             url: aquila-overview.md
               
-  - title: Create Aquila (preview) instance
+  - title: Create an Aquila (preview) instance
     linkLists:
       - linkListType: how-to-guide
         links:  
           - text: Create an Aquila (preview) instance on Azure
             url: create-aquila-instance.md
+          
+
+  - title: Connect an Aquila (preview) instance to Ops console
+    linkLists:
+      - linkListType: how-to-guide
+        links:  
           - text: Connect the Aquila (preview) instance to Ops console
             url: connect-aquila-instance-to-ops-console.md
-
      

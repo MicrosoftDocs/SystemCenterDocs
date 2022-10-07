@@ -30,18 +30,18 @@ Follow the below steps to connect an Aquila (preview) instance to Ops Console:
    >[!Note]
    >Any one of the two management servers can be used.
 
-For a detailed procedure to connect the Ops Console to a Management Group (in this case, Aquila (preview) instance), see [How to connect to the Operations and Web Console](/system-center/scom/manage-consoles-how-to-connect?view=sc-om-2019&preserve-view=true)
+    For a detailed procedure to connect the Ops Console to a Management Group (in this case, Aquila (preview) instance), see [How to connect to the Operations and Web Console](/system-center/scom/manage-consoles-how-to-connect?view=sc-om-2019&preserve-view=true)
 1. Gateway Server requirements: If your agents are in a domain that is outside the trust boundary of the Aquila (preview) instance, you need to install a gateway server to use certificate-based authentication. 
 
-If you only have a few agents outside the trust boundary, you can use certificates to directly connect them to the Aquila (preview) instance without a gateway server. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). If you need to install a gateway server, identify a desired server, install the gateway server from the System Center Operations Manager executable file and follow the steps in the installation wizard.
+    If you only have a few agents outside the trust boundary, you can use certificates to directly connect them to the Aquila (preview) instance without a gateway server. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). If you need to install a gateway server, identify a desired server, install the gateway server from the System Center Operations Manager executable file and follow the steps in the installation wizard.
 
->[!Note]
->When you install a gateway, run the `gatewayapprovaltool` before you install the gateway software on the gateway. This needs to be run from the management server side.
+    >[!Note]
+    >When you install a gateway, run the `gatewayapprovaltool` before you install the gateway software on the gateway. This needs to be run from the management server side.
 
 1. Configure the Gateway Server: When you install the Gateway Server, enter the following:
    - *Management Group Name*: The name of the Aquila (preview) Instance 
    - *Management Server Name*: The FQDN of the Management Server that you would link the gateway server to. 
-You can set the second management server in Aquila (preview) as a failover server so that the gateway server can failover to it when the primary management server stops working. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). Setting up the failover management server is a command-line based setup and needs to run from where you have the System Center Operations Manager shell or the management server.
+    You can set the second management server in Aquila (preview) as a failover server so that the gateway server can failover to it when the primary management server stops working. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). Setting up the failover management server is a command-line based setup and needs to run from where you have the System Center Operations Manager shell or the management server.
 
 1. Install Agents: Install your agents using the [instructions](/system-center/scom/manage-deploy-windows-agent-console?view=sc-om-2019&preserve-view=true).
 
