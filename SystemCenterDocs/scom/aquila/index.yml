@@ -17,14 +17,7 @@ landingContent:
         links:
           - text: What is Microsoft Azure Monitor System Center Operations Manager managed instance?
             url: aquila-overview.md
-      
-  - title: Get started
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Set up Microsoft Azure for Managed service identity, Aquila RBAC and SQL MI instance (Public preview)
-            url: quickstart-azure-for-managed-service-identity-aquila-sql-mi-instance.md
-          
+              
   - title: Create Aquila instance
     linkLists:
       - linkListType: how-to-guide
