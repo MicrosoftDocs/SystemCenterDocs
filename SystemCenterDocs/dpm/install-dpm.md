@@ -105,7 +105,7 @@ To set up a SQL Server database:
 > [!NOTE]
 > - With SQL 2017 and later, SSRS does not get installed as a part of SQL installation. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
 > - For remote clustered SQL instance, Database Engine must be on the cluster and SSRS must be on a separate computer (which can be the DPM server or any other computer).
-> - In both local or remote SQL server scenarios, following components must be installed on the DPM server.<br>
+> - In both local or remote SQL server scenarios, the following components must be installed on the DPM server.<br>
      - [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) is no longer installed with SQL Server; you must install an equivalent version of SSMS separately.<br>
      - For SQL Server 2019, along with SSMS you should also install [SQLCMD](/sql/tools/sqlcmd-utility), [Visual C++ 2017 Redistributable](/cpp/windows/latest-supported-vc-redist?preserve-view=true&view=msvc-170), and [Microsoft ODBC Driver 17 for SQL Server](/sql/connect/odbc/download-odbc-driver-for-sql-server#version-17) on the DPM server separately.
 
@@ -250,7 +250,7 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
 
 ## Upgrade SQL 2016 to SQL 2017
 
-If you want to use SQL 2017 with DPM Semi-    Annual Channel 1801 or later, you must upgrade SQL 2016 to SQL 2017. You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, to SQL 2017. The following procedure lists the steps to upgrade SQL 2016 to SQL 2017.
+If you want to use SQL 2017 with DPM Semi-Annual Channel 1801 or later, you must upgrade SQL 2016 to SQL 2017. You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, to SQL 2017. The following procedure lists the steps to upgrade SQL 2016 to SQL 2017.
 
 >[!NOTE]
 > SQL 2017 is supported as a database with DPM 1801 in upgrade scenarios. With DPM 2019, SQL 2017 is supported as a DPM database, in both new installation and upgrade scenarios of DPM.
