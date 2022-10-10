@@ -62,9 +62,9 @@ At regular intervals that you can configure, DPM creates a recovery point for th
 
 For application data, after the replica is created by DPM, changes to volume blocks that belong to application files are tracked by the volume filter.
 
-How changes are transferred to the DPM server depends on the application and the type of synchronization. The operation that is labeled synchronization in DPM Administrator Console is analogous to an incremental backup, and it creates an accurate reflection of the application data when combined with the replica.
+How changes are transferred to the DPM server depends on the application and the type of synchronization. The operation that is labelled synchronization in DPM Administrator Console is analogous to an incremental backup, and it creates an accurate reflection of the application data when combined with the replica.
 
-During the type of synchronization that is labeled express full backup in DPM Administrator Console, a full Volume Shadow Copy Service (VSS) snapshot is created but only changed blocks are transferred to the DPM server.
+During the type of synchronization that is labelled express full backup in DPM Administrator Console, a full Volume Shadow Copy Service (VSS) snapshot is created but only changed blocks are transferred to the DPM server.
 
 Each express full backup creates a recovery point for application data. If the application supports incremental backups, each synchronization also creates a recovery point. The synchronization type supported by each type of application data is summarized as follows:
 
@@ -132,11 +132,11 @@ DPM gives administrators the ability to enable their end users to perform their 
 
 DPM configures the protection policy, or schedule of jobs, for each protection group based on the recovery goals that you specify for that protection group. Examples of recovery goals are as follows:
 
-- "Lose no more than 1 hour of production data"
+- **Lose no more than 1 hour of production data**
 
-- "Provide me with a retention range of 30 days"
+- **Provide me with a retention range of 30 days**
 
-- "Make data available for recovery for 7 years"
+- **Make data available for recovery for 7 years**
 
 Your recovery goals quantify your organization's data protection requirements. In DPM, the recovery goals are defined by retention range, data loss tolerance, recovery point schedule, and, for database applications, the express full backup schedule.
 
