@@ -21,7 +21,7 @@ This article summarizes frequently asked questions about Microsoft Azure Monitor
 
 ### What regions do the VPN need to be in?
 
-There is no strict requirement on the region of the VPN, but the recommendation is to have the VPN in the same region as your other Azure resources to maintain latency.
+to maintain latency, we recommend you have the VPN in the same region as your other Azure resources4.
 
 ### What address range does the VNet need?
 
@@ -54,9 +54,9 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 
 - You need to specify a peering name (in the field **Peering link name**).
 - The first name is used to name the peer network from the current network to the other network. The second name is used to name the peer network from the other network to this network.
-- In the section *Virtual Network*, specify the name of the VNet that you are peering. If you can't find the VNet, you can search for it using the Resource ID. Retain the rest of the options as default.
+- In the section *Virtual Network*, specify the name of the VNet that you are peering. If you can't find the VNet, you can search for it using the *Resource ID*. Retain the rest of the options as default.
 
-:::image type="Add peering" source="media/aquila-common-question/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/aquila-common-question/add-peering-expanded.png":::
+:::image type="Add peering" source="media/operations-manager-managed-instance-common-questions/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/operations-manager-managed-instance-common-questions/add-peering-expanded.png":::
 
 ## SQL-managed instance
 
@@ -64,11 +64,11 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 
 1. If you don't see the region that you want to choose (for this preview, West US or West Europe) in the list of regions, select **Not seeing a region**, and then select **Request quota increase for your subscription**.
 
-    :::image type="Region error" source="media/aquila-common-question/region-error.png" alt-text="Screenshot showing region error.":::
+    :::image type="Region error" source="media/operations-manager-managed-instance-common-questions/region-error.png" alt-text="Screenshot showing region error.":::
 
 1. Enter the required fields in **Basics** and go to **Details** to enter the **Problem details**.
 
-    :::image type="New support request" source="media/aquila-common-question/new-support-request-inline.png" alt-text="Screenshot showing new support request." lightbox="media/aquila-common-question/new-support-request-expanded.png":::
+    :::image type="New support request" source="media/operations-manager-managed-instance-common-questions/new-support-request-inline.png" alt-text="Screenshot showing new support request." lightbox="media/operations-manager-managed-instance-common-questions/new-support-request-expanded.png":::
 
 1. Select **Enter details**. **Quota details** page opens on the right pane. In *Region*, choose the desired region and change the limits as desired (10 subnets and 500 vCores should suffice for the preview). Select **Save and continue** and then select **Next: Review + create >>** to raise the ticket. It might take 24 hours for the ticket to get resolved. Wait for it to get resolved before proceeding to create the SQL MI instance.
 
@@ -80,11 +80,11 @@ Azure RBAC is the role-based access control system that Azure follows while gran
 
 Azure RBAC is divided into Azure roles and Azure Active Directory roles. At a high level, Azure roles control permissions to manage Azure resources, while Azure Active Directory roles control permissions to manage Azure Active Directory resources. The following table compares some of the differences.
 
-:::image type="Comparision of Azure roles and Azure active directory roles" source="media/aquila-common-question/comparision-of-azure-roles-and-azure-active-directory-roles.png" alt-text="Screenshot of Azure roles and Azure active directory roles.":::
+:::image type="Comparision of Azure roles and Azure active directory roles" source="media/operations-manager-managed-instance-common-questions/comparision-of-azure-roles-and-azure-active-directory-roles.png" alt-text="Screenshot of Azure roles and Azure active directory roles.":::
 
 Below is the high-level view of how the classic subscription administrator roles, Azure roles, and Azure AD roles are related.
 
-:::image type="Azure active directory roles" source="media/aquila-common-question/azure-active-directory-roles.png" alt-text="Screenshot of Azure active directory roles.":::
+:::image type="Azure active directory roles" source="media/operations-manager-managed-instance-common-questions/azure-active-directory-roles.png" alt-text="Screenshot of Azure active directory roles.":::
 
 ### What is a Global Administrator role?
 
@@ -101,11 +101,11 @@ Users with the Global administrator role have access to all administrative featu
 
 The charges that incur while running Microsoft Azure Monitor SCOM managed instance (preview) will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, etc.). Apart from the infrastructure charges, there will be no other IP-related charge. For using System Center Operations Manager 2019, the evaluation version (available for six months) can be used to test Microsoft Azure Monitor SCOM managed instance (preview).
 
-### What if there is an error during deployment? 
+### What if there is an error during the deployment? 
 
 During the deployment phase, there can be several reasons why deploying an Microsoft Azure Monitor SCOM managed instance (preview) shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it is best to delete the instance and create one again.
 
-### What if the correct procedure to delete an instance? 
+### What is the procedure to delete an instance? 
 
 You can either delete the instance from the instance view itself or from the *Resource Group* view. 
 
@@ -115,20 +115,20 @@ Alternatively, go to your resource group view (search for Resource Group in the 
 
 Once the instance is deleted, you will also have to delete the two databases created in SQL MI. In the resource view, select the two databases (depending on what name you gave to your SQL MI instance) and select **Delete**. With the two databases deleted, you can recreate your Microsoft Azure Monitor SCOM managed instance (preview).
 
-### If an Arc instance to connect to private cloud with some resources is available, will Microsoft Azure Monitor SCOM managed instance (preview) scale to those resources in the future? 
+### If an Arc instance to connect to private cloud with some resources is available, will Microsoft Azure Monitor SCOM managed instance (preview) scale to those resources? 
 
-In the future, yes. Customers will be able to deploy System Center Operations Manager anywhere, and that capability will come through Arc. Arc-enabled on-premises deployment will have incremental features as compared to current on-premises System Center Operations Manager. Today, independent of System Center Operations Manager, customers can install an Arc agent on a VM running on-premises and start seeing the resource in the Azure portal. Once they start seeing the resource in the Azure portal, they can use the Azure services for that resource (and incur the appropriate costs).
+Currently this is not supported. Today, independent of System Center Operations Manager, customers can install an Arc agent on a VM running on-premises and start seeing the resource in the Azure portal. Once they start seeing the resource in the Azure portal, they can use the Azure services for that resource (and incur the appropriate costs).
 
 ### How will network monitoring be done on Microsoft Azure Monitor SCOM managed instance (preview)? 
 
-Microsoft Azure Monitor SCOM managed instance (preview) and System Center Operations Manager share the same feature set. If it can be done in System Center Operations Manager today, it will be done in Microsoft Azure Monitor SCOM managed instance (preview) the next day.
+Microsoft Azure Monitor SCOM managed instance (preview) and System Center Operations Manager share the same feature set.
 
 ### How is Microsoft Azure Monitor SCOM managed instance (preview) different from running System Center Operations Manager in Azure VMs?
 
-- Microsoft Azure Monitor SCOM managed instance (preview) is native to Azure while running System Center Operations Manager in Azure VMs is not a native solution. That means Microsoft Azure Monitor SCOM managed instance (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to Microsoft Azure Monitor SCOM managed instance (preview).
-- In terms of ease of deployment, Microsoft Azure Monitor SCOM managed instance (preview) is easy to deploy while running VMs in Azure takes possibly months of effort (and requires technical knowledge).
+- Microsoft Azure Monitor SCOM managed instance (preview) is native to Azure while running System Center Operations Manager in Azure VMs is not a native solution. This means, Microsoft Azure Monitor SCOM managed instance (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to Microsoft Azure Monitor SCOM managed instance (preview).
+- In terms of ease of deployment, Microsoft Azure Monitor SCOM managed instance (preview) is easy to deploy while running VMs in Azure takes possibly months of effort (and requires in depth technical knowledge).
 - Microsoft Azure Monitor SCOM managed instance (preview) uses SQL MI as the backend for database management by default.
-- Microsoft Azure Monitor SCOM managed instance (preview) will come with backup and disaster recovery built in.
+- Microsoft Azure Monitor SCOM managed instance (preview) comesk with backup and disaster recovery built in.
 
 ### What does line-of-sight mean? 
 
@@ -136,9 +136,9 @@ Being in the same private network so that the IPs assigned to each component in 
 
 ### Can I view the Microsoft Azure Monitor SCOM managed instance (preview) resources and VMs in my subscription? 
 
-Since this preview requires you to create the Microsoft Azure Monitor SCOM managed instance (preview) in your subscription, all the Microsoft Azure Monitor SCOM managed instance (preview) resources (including the VMs) will be visible to you. However, we recommend not to touch the VMs and other resources while you are operating Microsoft Azure Monitor SCOM managed instance (preview) to avoid unforeseen complexities.
+Since this preview requires you to create the Microsoft Azure Monitor SCOM managed instance (preview) in your subscription, all the Microsoft Azure Monitor SCOM managed instance (preview) resources (including the VMs) will be visible to you. However, we recommend not to do any actions on the VMs and other resources while you are operating Microsoft Azure Monitor SCOM managed instance (preview) to avoid unforeseen complexities.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Microsoft Azure Monitor SCOM managed instance (preview) overview](aquila-overview.md)
+> [Microsoft Azure Monitor SCOM managed instance (preview) overview](operations-manager-managed-instance-overview.mdmd)
