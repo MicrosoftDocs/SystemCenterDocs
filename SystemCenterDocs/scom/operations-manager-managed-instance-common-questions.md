@@ -141,4 +141,4 @@ Since this preview requires you to create the Microsoft Azure Monitor SCOM manag
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Microsoft Azure Monitor SCOM managed instance (preview) overview](operations-manager-managed-instance-overview.mdmd)
+> [Microsoft Azure Monitor SCOM managed instance (preview) overview](operations-manager-managed-instance-overview.md)
