@@ -36,6 +36,14 @@ This article lists Microsoft System Center 2019 - Operations Manager build versi
 
 ::: moniker-end
 
+::: moniker range="sc-om-2016"
+
+This article lists Microsoft System Center 2016 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
+
+[!INCLUDE [release-build-versions-2016.md](../includes/release-build-versions-2016.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-1807"
 
 This article lists Microsoft System Center 1807 - Operations Manager build versions.
@@ -61,14 +69,6 @@ The following is the build version for Operations Manager 1801.
 |Build Number |KB |Release Date |Description |  
 |-------------|---|-------------|------------|   
 |7.3.13142.0 | |February 2018 |Version 1801|
-
-::: moniker-end
-
-::: moniker range="sc-om-2016"
-
-This article lists Microsoft System Center 2016 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
-
-[!INCLUDE [release-build-versions-2016.md](../includes/release-build-versions-2016.md)]
 
 ::: moniker-end
 
