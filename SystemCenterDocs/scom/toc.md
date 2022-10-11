@@ -65,11 +65,11 @@
 #### [Post-upgrade tasks when upgrading Operations Manager](deploy-upgrade-post-tasks.md)
 ## Manage
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
-## Operations Manager - Managed Instance
-### [Overview](operations-manager-managed-instance-overview.md)
-### [FAQ](operations-manager-managed-instance-common-questions.md)
-### [Create managed instance](create-operations-manager-managed-instance.md)
-### [Connect managed instance to Ops console](connect-managed-instance-ops-console.md)
+### Operations Manager - Managed Instance
+#### [Overview](operations-manager-managed-instance-overview.md)
+#### [FAQ](operations-manager-managed-instance-common-questions.md)
+#### [Create managed instance](create-operations-manager-managed-instance.md)
+#### [Connect managed instance to Ops console](connect-managed-instance-ops-console.md)
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
 ### Managing discovery and agents
 #### [Discover and install agent on Windows](manage-deploy-windows-agent-console.md)
