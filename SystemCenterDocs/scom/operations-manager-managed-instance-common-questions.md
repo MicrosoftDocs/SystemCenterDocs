@@ -103,7 +103,7 @@ The charges that incur while running Microsoft Azure Monitor SCOM managed instan
 
 ### What if there is an error during the deployment? 
 
-During the deployment phase, there can be several reasons why deploying an Microsoft Azure Monitor SCOM managed instance (preview) shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it is best to delete the instance and create one again.
+During the deployment phase, there can be several reasons why deploying a Microsoft Azure Monitor SCOM managed instance (preview) shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it is best to delete the instance and create one again.
 
 ### What is the procedure to delete an instance? 
 
@@ -117,7 +117,7 @@ Once the instance is deleted, you will also have to delete the two databases cre
 
 ### If an Arc instance to connect to private cloud with some resources is available, will Microsoft Azure Monitor SCOM managed instance (preview) scale to those resources? 
 
-Currently this is not supported. Today, independent of System Center Operations Manager, customers can install an Arc agent on a VM running on-premises and start seeing the resource in the Azure portal. Once they start seeing the resource in the Azure portal, they can use the Azure services for that resource (and incur the appropriate costs).
+Currently not supported. Today, independent of System Center Operations Manager, customers can install an Arc agent on a VM running on-premises and start seeing the resource in the Azure portal. Once they start seeing the resource in the Azure portal, they can use the Azure services for that resource (and incur the appropriate costs).
 
 ### How will network monitoring be done on Microsoft Azure Monitor SCOM managed instance (preview)? 
 
@@ -128,7 +128,7 @@ Microsoft Azure Monitor SCOM managed instance (preview) and System Center Operat
 - Microsoft Azure Monitor SCOM managed instance (preview) is native to Azure while running System Center Operations Manager in Azure VMs is not a native solution. This means, Microsoft Azure Monitor SCOM managed instance (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to Microsoft Azure Monitor SCOM managed instance (preview).
 - In terms of ease of deployment, Microsoft Azure Monitor SCOM managed instance (preview) is easy to deploy while running VMs in Azure takes possibly months of effort (and requires in depth technical knowledge).
 - Microsoft Azure Monitor SCOM managed instance (preview) uses SQL MI as the backend for database management by default.
-- Microsoft Azure Monitor SCOM managed instance (preview) comesk with backup and disaster recovery built in.
+- Microsoft Azure Monitor SCOM managed instance (preview) comes with backup and disaster recovery built in.
 
 ### What does line-of-sight mean? 
 

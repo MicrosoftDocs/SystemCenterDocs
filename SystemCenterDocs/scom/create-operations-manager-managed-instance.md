@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Create an Microsoft Azure Monitor SCOM managed instance (preview)
-description: This article describes how to create an Microsoft Azure Monitor SCOM managed instance (preview) to monitor workloads using System Center Operations Manager functionality on Azure.
+title: Create a Microsoft Azure Monitor SCOM managed instance (preview)
+description: This article describes how to create a Microsoft Azure Monitor SCOM managed instance (preview) to monitor workloads using System Center Operations Manager functionality on Azure.
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
@@ -13,13 +13,13 @@ ms.topic: article
 monikerRange: 'sc-om-2022'
 ---
 
-# Create an Microsoft Azure Monitor SCOM managed instance (preview) on Azure
+# Create a Microsoft Azure Monitor SCOM managed instance (preview) on Azure
 
-This article describes how to create an Microsoft Azure Monitor SCOM managed instance (preview) that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services System Center Operations Manager functionality on Azure.
+This article describes how to create a managed instance (preview) that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services with System Center Operations Manager functionality on Azure.
 
 ## Prerequisites
 
-The following are the prerequisites before creating an Microsoft Azure Monitor SCOM managed instance (preview):
+The following are the prerequisites before you create a Microsoft Azure Monitor SCOM managed instance (preview):
 
 # [General Prerequisites](#tab/prereqs-general)
 
@@ -38,9 +38,9 @@ The following are the prerequisites before creating an Microsoft Azure Monitor S
 
 ## Establish direct connectivity (line-of-sight) between your DC and your Azure network
 
-- Ensure that there is direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you will deploy an Microsoft Azure Monitor SCOM managed instance (preview). This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, Microsoft Azure Monitor SCOM managed instance (preview) Components such as Management Servers) can talk to each other over the network.
+- Ensure that there's direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you'll deploy a Microsoft Azure Monitor SCOM managed instance (preview). This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, Microsoft Azure Monitor SCOM managed instance (preview) Components such as Management Servers) can talk to each other over the network.
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/)
-- If your Domain Controller and all other components are in Azure with no presence on-premises, a VPN network will work (ExpressRoute is not needed). If you are using one VPN to host all your components, you will already have a line-of-sight between all your components. If you have multiple VPNs, you will need to do VPN peering between all the VPNs that are in your network
+- If your Domain Controller and all other components are in Azure with no presence on-premises, a VPN network will work (ExpressRoute isn't needed). If you are using one VPN to host all your components, you will already have a line-of-sight between all your components. If you have multiple VPNs, you will need to do VPN peering between all the VPNs that are in your network
 - Allow Port 5723/5724/443 to communicate while talking from Microsoft Azure Monitor SCOM managed instance (preview) to the VMs being monitored and vice versa.
 
 ## Configure one domain account in Active Directory
@@ -79,10 +79,10 @@ The Managed Service Identity provide an identity for applications to use when co
 >[!Note]
 >Ensure you are either a subscription owner or global administrator. For more information, see Azure RBAC.
 
-In order to create and operate an Microsoft Azure Monitor SCOM managed instance (preview), create the below two custom RBAC roles in Azure:
- - **Microsoft Azure Monitor SCOM managed instance (preview) Contributor**: This role allows users to create, update, and delete an Microsoft Azure Monitor SCOM managed instance (preview) in Azure. Its scope of permissions doesn't extend beyond Microsoft Azure Monitor SCOM managed instance (preview). The ideal user for this role would be someone who will be responsible for creating an Microsoft Azure Monitor SCOM managed instance (preview), and deleting it when done.
+In order to create and operate a Microsoft Azure Monitor SCOM managed instance (preview), create the below two custom RBAC roles in Azure:
+ - **Aquila Contributor**: This role allows users to create, update, and delete a Microsoft Azure Monitor SCOM managed instance (preview) in Azure. Its scope of permissions doesn't extend beyond Microsoft Azure Monitor SCOM managed instance (preview). The ideal user for this role would be someone who will be responsible for creating a Microsoft Azure Monitor SCOM managed instance (preview), and deleting it when done.
  
- - **Microsoft Azure Monitor SCOM managed instance (preview) Reader**: This role allows users to read an Microsoft Azure Monitor SCOM managed instance (preview) in Azure, without the ability to modify anything in the instance. Its scope of permissions doesn't extend beyond Microsoft Azure Monitor SCOM managed instance (preview). The ideal user for this role would be someone who will be responsible for accessing the Microsoft Azure Monitor SCOM managed instance (preview) once it is created and reading the parameters. 
+ - **Aquila Reader**: This role allows users to read a Microsoft Azure Monitor SCOM managed instance (preview) in Azure, without the ability to modify anything in the instance. Its scope of permissions doesn't extend beyond Microsoft Azure Monitor SCOM managed instance (preview). The ideal user for this role would be someone who will be responsible for accessing the Microsoft Azure Monitor SCOM managed instance (preview) once it is created and reading the parameters. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and select **Cloud Shell** in the top menu. A Shell opens at the bottom of the page.
 1. Enter the below commands to enable Microsoft Azure Monitor SCOM managed instance (preview) in your subscription:
@@ -160,7 +160,7 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
 
 1. After you create the roles, go to Azure portal and search for *Subscriptions*. Select the subscription where you would create the Microsoft Azure Monitor SCOM managed instance (preview) in, and navigate to the blade that displays the details of all the resources in that subscription along with the costs incurred so far.
 1. Select *Access Control (IAM)* > *+Add* on top and then select **Add custom role**. **Create a custom role** page opens.
-1. For both the roles aquilaContributor.json and aquilaReader.json, do the following:
+1. For both the roles aquilaContributor.json and aquilaReader.json, follow the below steps:
     1. Under **Basics**:
         1. **Custom role name**: Enter the role name (Aquila Contributor/Aquila Reader).
         1. **Description**: Enter description of the role.
@@ -176,17 +176,16 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
 
 ## Create and configure an SQL MI instance
 
-Before you create an Microsoft Azure Monitor SCOM managed instance (preview), you have to create an instance of SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
+Before you create a Microsoft Azure Monitor SCOM managed instance (preview), you have to create an instance of SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
 
 Below are the recommendations while you create an SQL MI instance:
 
 - **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommend creating a new Resource Group for large Azure resources.
-
-- **Managed Instance name**: Choose a unique name. This name will be used while creating an Microsoft Azure Monitor SCOM managed instance (preview) to refer to this SQL MI instance that you are creating.
+- **Managed Instance name**: Choose a unique name. This name will be used while you create a Microsoft Azure Monitor SCOM managed instance (preview) to refer to this SQL MI instance that you are creating.
 - **Region**: Choose the region that is close to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes.
 - **Compute+Storage**: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Microsoft Azure Monitor SCOM managed instance (preview).
 - **Authentication Method**: You can select **SQL Authentication**. In the credentials, enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
-- **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Microsoft Azure Monitor SCOM managed instance (preview) you will create in the future. Thus, choose a VNet that you will eventually use for your Microsoft Azure Monitor SCOM managed instance (preview), or if choosing a different VNet, make sure it has connectivity to the Microsoft Azure Monitor SCOM managed instance (preview) VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql&preserve-view=true).
+- **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Microsoft Azure Monitor SCOM managed instance (preview) you will create in the future. Thus, choose a VNet that you will eventually use for your Microsoft Azure Monitor SCOM managed instance (preview), or if you choose a different VNet, make sure it has connectivity to the Microsoft Azure Monitor SCOM managed instance (preview) VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql&preserve-view=true).
 - **Connection Type**: By default, connection type is Proxy.
 - **Public Endpoint**: This can either be *Enabled* or *Disabled*. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true). If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and Microsoft Azure Monitor SCOM managed instance (preview) are present.
 
@@ -205,7 +204,7 @@ For the rest of the settings in the other tabs, you can leave them as default or
 
 ### Set the Active Directory Admin value in the SQL MI Instance
 
-To set the *Active Directory Admin* value in the SQL MI Instance follow the steps below:
+To set the *Active Directory Admin* value in the SQL MI Instance, follow the steps below:
 
 For more information, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true). 
 
@@ -224,14 +223,14 @@ You need to be the Global Admin/Privileged Role Admin of the subscription to per
 >- Microsoft Azure Monitor SCOM managed instance (preview) will be deployed with one Management Server in Azure. We recommend monitoring a maximum of 500 servers during this preview to avoid latency.
 >- You can multihome existing agents from your existing Management Groups to the Microsoft Azure Monitor SCOM managed instance (preview).
 
-## Create an Microsoft Azure Monitor SCOM managed instance (preview)
+## Create a Microsoft Azure Monitor SCOM managed instance (preview)
 
-To create an Microsoft Azure Monitor SCOM managed instance (preview), follow the below steps:
+To create a Microsoft Azure Monitor SCOM managed instance (preview), follow the below steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Aquila**. Aquila Overview page opens.
 1. On the Overview page, you have three options
     - Pre-requisites: Allows you to view the prerequisites
-    - Aquila Instance: Allows you to create an Microsoft Azure Monitor SCOM managed instance (preview)
+    - Aquila Instance: Allows you to create a Microsoft Azure Monitor SCOM managed instance (preview)
     - Manage your Aquila Instance: Allows you to view the list of instances created.
 1. Select **Create Aquila Instance**.
 1. Under **Basics**, do the following:
@@ -265,7 +264,7 @@ To create an Microsoft Azure Monitor SCOM managed instance (preview), follow the
 1. Select **Next**.
 1. Under **Tags**, enter the Name, value and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
 1. Select **Next**.
-1. Under **Review + Submit**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, and it takes up to an hour for the creation of an Microsoft Azure Monitor SCOM managed instance (preview). 
+1. Under **Review + Submit**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, and it takes up to an hour for the creation of a Microsoft Azure Monitor SCOM managed instance (preview). 
 
     >[!Note]
     >If the deployment fails, delete the instance and all associated resources, and recreate the instance again. For more information, see delete the instance and its resources.

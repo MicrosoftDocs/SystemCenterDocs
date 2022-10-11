@@ -24,16 +24,16 @@ You can now:
 - Configure an E2E System Center Operations Manager setup (Microsoft Azure Monitor SCOM managed instance (preview)) on Azure.
 - Manage (view, delete) your Microsoft Azure Monitor SCOM managed instance (preview) in Azure.
 - Connect to your Microsoft Azure Monitor SCOM managed instance (preview) using the System Center Operations Manager Ops Console.
-- Monitor workloads (wherever they are located) using the Ops and Web Console, and while using your existing management packs.
+- Monitor workloads (wherever they're located) using the Ops and Web Console, and while using your existing management packs.
 - Incur zero database maintenance (Ops database and Data warehouse database) because of the offloading of database management to SQL Managed Instance (SQL MI).
 
 ## Architecture
 
-When you create an Microsoft Azure Monitor SCOM managed instance (preview) (which is equivalent to your System Center Operations Manager Management Group), you'll get one Management Server and one Web Console, running on the same VM in your Azure subscription. On the SQL MI instance, you'll get two databases (Ops database & DW database). The entire infrastructure will be located on Azure.
+When you create a Microsoft Azure Monitor SCOM managed instance (preview) (which is equivalent to your System Center Operations Manager Management Group), you'll get one Management Server and one Web Console, running on the same VM in your Azure subscription. On the SQL MI instance, you'll get two databases (Ops database & DW database). The entire infrastructure will be located on Azure.
 
-When you connect your existing agents to your Azure-based Microsoft Azure Monitor SCOM managed instance (preview), ensure that there is a direct network connectivity (line-of-sight) between your existing network and your network in Azure. If your existing agents are in an untrusted domain, then connect a gateway server.
+When you connect your existing agents to your Azure-based Microsoft Azure Monitor SCOM managed instance (preview), ensure that there's a direct network connectivity (line-of-sight) between your existing network and your network in Azure. If your existing agents are in an untrusted domain, then connect a gateway server.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create an Microsoft Azure Monitor SCOM managed instance (preview) on Azure](create-operations-manager-managed-instance.md)
+> [Create a Microsoft Azure Monitor SCOM managed instance (preview) on Azure](create-operations-manager-managed-instance.md)

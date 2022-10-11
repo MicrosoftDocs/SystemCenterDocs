@@ -21,9 +21,9 @@ After you create the Microsoft Azure Monitor SCOM managed instance (preview) in 
 
 ## Procedure to connect Microsoft Azure Monitor SCOM managed instance (preview) to Ops console
 
-Follow the below steps to connect an Microsoft Azure Monitor SCOM managed instance (preview) to Ops Console:
+Follow the below steps to connect a Microsoft Azure Monitor SCOM managed instance (preview) to Ops Console:
 
-1. Identify server to install Ops Console: Identify a server where you want to install the Ops Console. Don't perform this on an Microsoft Azure Monitor SCOM managed instance (preview) VM, but rather on a separate VM. The VM needs to be a Windows Server. This server can be on-premises or on Azure.
+1. Identify server to install Ops Console: Identify a server where you want to install the Ops Console. Don't perform this on a Microsoft Azure Monitor SCOM managed instance (preview) VM, but rather on a separate VM. The VM needs to be a Windows Server. This server can be on-premises or on Azure.
 1. Prerequisites to install Ops Console: Complete the [prerequisites](https://kevinholman.com/2019/03/14/scom-2019-quickstart-deployment-guide/) before you install the Ops Console. Download and install the *ReportingViewer.msi* and *SQLSysClrTypes.msi* before you install the Ops Console. 
 1. Install the Ops Console: From the executable file, install the Operations Console and follow the installation wizard to successfully install the Ops Console.
 1. Connect Microsoft Azure Monitor SCOM managed instance (preview) to Ops Console: Log in to the Ops Console and select **Connect To Server**. Add the FQDN pointing to one of the two management servers. 
