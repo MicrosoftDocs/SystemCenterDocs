@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Connect the Operations Manager managed instance (preview) to Ops console
 
-Operations Manager managed instance (preview) is compatible with System Center Operations Manager 2019. [Download](https://www.microsoft.com/evalcenter/evaluate-system-center-2019) a trial version of System Center Operations Manager 2019 (available for 180 days), if you don't have the System Center Operations Manager 2019 executable files. Fill the personal details form and download SCOM_2019.exe
+Operations Manager managed instance (preview) is compatible with System Center Operations Manager 2019. [Download](https://www.microsoft.com/evalcenter/evaluate-system-center-2019) a trial version of System Center Operations Manager 2019 (available for 180 days) if you don't have the System Center Operations Manager 2019 executable files. Fill the personal details form and download SCOM_2019.exe
 
 After you create the Operations Manager managed instance (preview) in Azure, connect the instance to Ops Console to configure the workloads that need to be monitored.
 
