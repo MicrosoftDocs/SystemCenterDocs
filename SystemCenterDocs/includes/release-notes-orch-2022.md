@@ -33,7 +33,7 @@ The following are the known issues and workarounds in System Center 2022 - Orche
 
 **Workaround**: None
 
-### Runbooks that aren't inside any folder (root runbooks) arent shown on the navigation pane
+### Runbooks that aren't inside any folder (root runbooks) aren't shown on the navigation pane
 
 **Workaround**: Move root runbooks to a folder
 
