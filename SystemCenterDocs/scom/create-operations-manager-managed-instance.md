@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Create a Operations Manager managed instance (preview)
-description: This article describes how to create a Operations Manager managed instance (preview) to monitor workloads using System Center Operations Manager functionality on Azure.
+title: Create an Operations Manager managed instance (preview)
+description: This article describes how to create an Operations Manager managed instance (preview) to monitor workloads using System Center Operations Manager functionality on Azure.
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
@@ -13,13 +13,13 @@ ms.topic: article
 monikerRange: 'sc-om-2022'
 ---
 
-# Create a Operations Manager managed instance (preview) on Azure
+# Create an Operations Manager managed instance (preview) on Azure
 
 This article describes how to create a managed instance (preview) that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services with System Center Operations Manager functionality on Azure.
 
 ## Prerequisites
 
-The following are the prerequisites before you create a Operations Manager managed instance (preview):
+The following are the prerequisites before you create an Operations Manager managed instance (preview):
 
 # [General Prerequisites](#tab/prereqs-general)
 
@@ -38,7 +38,7 @@ The following are the prerequisites before you create a Operations Manager manag
 
 ## Establish direct connectivity (line-of-sight) between your DC and your Azure network
 
-- Ensure that there's direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you'll deploy a Operations Manager managed instance (preview). This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, Operations Manager managed instance (preview) Components such as Management Servers) can talk to each other over the network.
+- Ensure that there's direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you'll deploy an Operations Manager managed instance (preview). This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, Operations Manager managed instance (preview) Components such as Management Servers) can talk to each other over the network.
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/)
 - If your Domain Controller and all other components are in Azure with no presence on-premises, a VPN network will work (ExpressRoute isn't needed). If you are using one VPN to host all your components, you will already have a line-of-sight between all your components. If you have multiple VPNs, you will need to do VPN peering between all the VPNs that are in your network
 - Allow Port 5723/5724/443 to communicate while talking from Operations Manager managed instance (preview) to the VMs being monitored and vice versa.
@@ -79,10 +79,10 @@ The Managed Service Identity provide an identity for applications to use when co
 >[!Note]
 >Ensure you are either a subscription owner or global administrator. For more information, see Azure RBAC.
 
-In order to create and operate a Operations Manager managed instance (preview), create the below two custom RBAC roles in Azure:
- - **Aquila Contributor**: This role allows users to create, update, and delete a Operations Manager managed instance (preview) in Azure. Its scope of permissions doesn't extend beyond Operations Manager managed instance (preview). The ideal user for this role would be someone who will be responsible for creating a Operations Manager managed instance (preview), and deleting it when done.
+In order to create and operate an Operations Manager managed instance (preview), create the below two custom RBAC roles in Azure:
+ - **Aquila Contributor**: This role allows users to create, update, and delete an Operations Manager managed instance (preview) in Azure. Its scope of permissions doesn't extend beyond Operations Manager managed instance (preview). The ideal user for this role would be someone who will be responsible for creating an Operations Manager managed instance (preview), and deleting it when done.
  
- - **Aquila Reader**: This role allows users to read a Operations Manager managed instance (preview) in Azure, without the ability to modify anything in the instance. Its scope of permissions doesn't extend beyond Operations Manager managed instance (preview). The ideal user for this role would be someone who will be responsible for accessing the Operations Manager managed instance (preview) once it is created and reading the parameters. 
+ - **Aquila Reader**: This role allows users to read an Operations Manager managed instance (preview) in Azure, without the ability to modify anything in the instance. Its scope of permissions doesn't extend beyond Operations Manager managed instance (preview). The ideal user for this role would be someone who will be responsible for accessing the Operations Manager managed instance (preview) once it is created and reading the parameters. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and select **Cloud Shell** in the top menu. A Shell opens at the bottom of the page.
 1. Enter the below commands to enable Operations Manager managed instance (preview) in your subscription:
@@ -176,12 +176,12 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
 
 ## Create and configure an SQL MI instance
 
-Before you create a Operations Manager managed instance (preview), you have to create an instance of SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
+Before you create an Operations Manager managed instance (preview), you have to create an instance of SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
 
 Below are the recommendations while you create an SQL MI instance:
 
 - **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommend creating a new Resource Group for large Azure resources.
-- **Managed Instance name**: Choose a unique name. This name will be used while you create a Operations Manager managed instance (preview) to refer to this SQL MI instance that you are creating.
+- **Managed Instance name**: Choose a unique name. This name will be used while you create an Operations Manager managed instance (preview) to refer to this SQL MI instance that you are creating.
 - **Region**: Choose the region that is close to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes.
 - **Compute+Storage**: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Operations Manager managed instance (preview).
 - **Authentication Method**: You can select **SQL Authentication**. In the credentials, enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
@@ -223,14 +223,14 @@ You need to be the Global Admin/Privileged Role Admin of the subscription to per
 >- Operations Manager managed instance (preview) will be deployed with one Management Server in Azure. We recommend monitoring a maximum of 500 servers during this preview to avoid latency.
 >- You can multihome existing agents from your existing Management Groups to the Operations Manager managed instance (preview).
 
-## Create a Operations Manager managed instance (preview)
+## Create an Operations Manager managed instance (preview)
 
-To create a Operations Manager managed instance (preview), follow the below steps:
+To create an Operations Manager managed instance (preview), follow the below steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Aquila**. Aquila Overview page opens.
 1. On the Overview page, you have three options
     - Pre-requisites: Allows you to view the prerequisites
-    - Aquila Instance: Allows you to create a Operations Manager managed instance (preview)
+    - Aquila Instance: Allows you to create an Operations Manager managed instance (preview)
     - Manage your Aquila Instance: Allows you to view the list of instances created.
 1. Select **Create Aquila Instance**.
 1. Under **Basics**, do the following:
@@ -264,7 +264,7 @@ To create a Operations Manager managed instance (preview), follow the below step
 1. Select **Next**.
 1. Under **Tags**, enter the Name, value and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
 1. Select **Next**.
-1. Under **Review + Submit**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, and it takes up to an hour for the creation of a Operations Manager managed instance (preview). 
+1. Under **Review + Submit**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, and it takes up to an hour for the creation of an Operations Manager managed instance (preview). 
 
     >[!Note]
     >If the deployment fails, delete the instance and all associated resources, and recreate the instance again. For more information, see delete the instance and its resources.

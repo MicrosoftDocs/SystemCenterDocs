@@ -103,7 +103,7 @@ The charges that incur while running Operations Manager managed instance (previe
 
 ### What if there is an error during the deployment? 
 
-During the deployment phase, there can be several reasons why deploying a Operations Manager managed instance (preview) shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it is best to delete the instance and create one again.
+During the deployment phase, there can be several reasons why deploying an Operations Manager managed instance (preview) shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it is best to delete the instance and create one again.
 
 ### What is the procedure to delete an instance? 
 
