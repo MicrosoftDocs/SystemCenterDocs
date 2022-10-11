@@ -26,15 +26,15 @@ The following are the known issues and workarounds in System Center 2022 - Orche
 
 ## Known Issues and Workarounds
 
-### Orchestrator Web console does not work properly
+### Orchestrator Web console doesn't work properly
 
-**Description**: Web Console doesn't work properly if .NET Core 5 is not installed.
+**Description**: Web Console doesn't work properly if .NET Core 5 isn't installed.
 
 **Work around**: Install .NET Core 5.
 
 ### Orchestrator Web console is not compatible with Internet Explorer
 
-**Work around**: Open the Orchestrator web console with Microsoft Edge or other modern browsers. The new console does not depend on Silverlight.
+**Work around**: Open the Orchestrator web console with Microsoft Edge or other modern browsers. The new console doesn't depend on Silverlight.
 
 ### Orchestration Console navigation pane does not render properly when deeply nested
 
