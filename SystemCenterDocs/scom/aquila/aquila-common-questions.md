@@ -1,21 +1,21 @@
 ---
 ms.assetid: 
-title: Aquila (preview) frequently asked questions
-description: This article summarizes frequently asked questions about Aquila (preview).
-author: jyothisuri
-ms.author: jsuri
+title: Microsoft Azure Monitor SCOM managed instance (preview) frequently asked questions
+description: This article summarizes frequently asked questions about Microsoft Azure Monitor SCOM managed instance (preview).
+author: v-pgaddala
+ms.author: v-pgaddala
 manager: jsuri
-ms.date: 10/04/2022
+ms.date: 10/11/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-monikerRange: 'sc-om-2022'
+monikerRange: '>=sc-om-2019'
 ---
 
-# Aquila (preview) frequently asked questions
+# Microsoft Azure Monitor SCOM managed instance (preview) frequently asked questions
 
-This article summarizes frequently asked questions about Aquila (preview).
+This article summarizes frequently asked questions about Microsoft Azure Monitor SCOM managed instance (preview).
 
 ## Virtual private network
 
@@ -30,13 +30,13 @@ The minimum address space is /27 (which means /28 and above wouldn't work).
 ### How many subnets does the VPN need to have?
 
 - VPN needs two subnets. 
-    - For Aquila (preview) instance
+    - For Microsoft Azure Monitor SCOM managed instance (preview)
     - For SQL managed instance
-- The subnet for SQL MI instance will be a delegated (dedicated) subnet and won't be used by the Aquila (preview) instance. Name the subnets accordingly to avoid confusion in the future while you create the SQL MI/Aquila (preview) instance.
+- The subnet for SQL MI instance will be a delegated (dedicated) subnet and won't be used by the Microsoft Azure Monitor SCOM managed instance (preview). Name the subnets accordingly to avoid confusion in the future while you create the SQL MI/Microsoft Azure Monitor SCOM managed instance (preview).
 
 ### What address range do the two subnets need?
 
-The minimum address space needs to be /27 for SQL MI subnet and /28 for the Aquila (preview) subnet.
+The minimum address space needs to be /27 for SQL MI subnet and /28 for the Microsoft Azure Monitor SCOM managed instance (preview) subnet.
 
 ### Do the subnets need to specify a NAT gateway or Service Endpoint?
 
@@ -99,11 +99,11 @@ Users with the Global administrator role have access to all administrative featu
 
 ### What are the charges that will be incurred during preview? 
 
-The charges that incur while running Aquila (preview) will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, etc.). Apart from the infrastructure charges, there will be no other IP-related charge. For using System Center Operations Manager 2019, the evaluation version (available for six months) can be used to test Aquila (preview).
+The charges that incur while running Microsoft Azure Monitor SCOM managed instance (preview) will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, etc.). Apart from the infrastructure charges, there will be no other IP-related charge. For using System Center Operations Manager 2019, the evaluation version (available for six months) can be used to test Microsoft Azure Monitor SCOM managed instance (preview).
 
 ### What if there is an error during deployment? 
 
-During the deployment phase, there can be several reasons why deploying an Aquila (preview) instance shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it is best to delete the instance and create one again.
+During the deployment phase, there can be several reasons why deploying an Microsoft Azure Monitor SCOM managed instance (preview) shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it is best to delete the instance and create one again.
 
 ### What if the correct procedure to delete an instance? 
 
@@ -111,34 +111,34 @@ You can either delete the instance from the instance view itself or from the *Re
 
 In the instance view, select *Delete* from the top menu and wait for the confirmation that the instance has been deleted. 
 
-Alternatively, go to your resource group view (search for Resource Group in the Azure search bar, and in the list of results, open your resource group). If you created a separate resource group for Aquila (preview), delete the resource group. Otherwise, in the resource group, search for your instance and select *Delete*. 
+Alternatively, go to your resource group view (search for Resource Group in the Azure search bar, and in the list of results, open your resource group). If you created a separate resource group for Microsoft Azure Monitor SCOM managed instance (preview), delete the resource group. Otherwise, in the resource group, search for your instance and select *Delete*. 
 
-Once the instance is deleted, you will also have to delete the two databases created in SQL MI. In the resource view, select the two databases (depending on what name you gave to your SQL MI instance) and select **Delete**. With the two databases deleted, you can recreate your Aquila (preview) instance.
+Once the instance is deleted, you will also have to delete the two databases created in SQL MI. In the resource view, select the two databases (depending on what name you gave to your SQL MI instance) and select **Delete**. With the two databases deleted, you can recreate your Microsoft Azure Monitor SCOM managed instance (preview).
 
-### If an Arc instance to connect to private cloud with some resources is available, will Aquila (preview) scale to those resources in the future? 
+### If an Arc instance to connect to private cloud with some resources is available, will Microsoft Azure Monitor SCOM managed instance (preview) scale to those resources in the future? 
 
 In the future, yes. Customers will be able to deploy System Center Operations Manager anywhere, and that capability will come through Arc. Arc-enabled on-premises deployment will have incremental features as compared to current on-premises System Center Operations Manager. Today, independent of System Center Operations Manager, customers can install an Arc agent on a VM running on-premises and start seeing the resource in the Azure portal. Once they start seeing the resource in the Azure portal, they can use the Azure services for that resource (and incur the appropriate costs).
 
-### How will network monitoring be done on Aquila (preview)? 
+### How will network monitoring be done on Microsoft Azure Monitor SCOM managed instance (preview)? 
 
-Aquila (preview) and System Center Operations Manager share the same feature set. If it can be done in System Center Operations Manager today, it will be done in Aquila (preview) the next day.
+Microsoft Azure Monitor SCOM managed instance (preview) and System Center Operations Manager share the same feature set. If it can be done in System Center Operations Manager today, it will be done in Microsoft Azure Monitor SCOM managed instance (preview) the next day.
 
-### How is Aquila (preview) different from running System Center Operations Manager in Azure VMs?
+### How is Microsoft Azure Monitor SCOM managed instance (preview) different from running System Center Operations Manager in Azure VMs?
 
-- Aquila (preview) is native to Azure while running System Center Operations Manager in Azure VMs is not a native solution. That means Aquila (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to Aquila (preview).
-- In terms of ease of deployment, Aquila (preview) is easy to deploy while running VMs in Azure takes possibly months of effort (and requires technical knowledge).
-- Aquila (preview) uses SQL MI as the backend for database management by default.
-- Aquila (preview) will come with backup and disaster recovery built in.
+- Microsoft Azure Monitor SCOM managed instance (preview) is native to Azure while running System Center Operations Manager in Azure VMs is not a native solution. That means Microsoft Azure Monitor SCOM managed instance (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to Microsoft Azure Monitor SCOM managed instance (preview).
+- In terms of ease of deployment, Microsoft Azure Monitor SCOM managed instance (preview) is easy to deploy while running VMs in Azure takes possibly months of effort (and requires technical knowledge).
+- Microsoft Azure Monitor SCOM managed instance (preview) uses SQL MI as the backend for database management by default.
+- Microsoft Azure Monitor SCOM managed instance (preview) will come with backup and disaster recovery built in.
 
 ### What does line-of-sight mean? 
 
 Being in the same private network so that the IPs assigned to each component in the network can be a private IP.
 
-### Can I view the Aquila (preview) resources and VMs in my subscription? 
+### Can I view the Microsoft Azure Monitor SCOM managed instance (preview) resources and VMs in my subscription? 
 
-Since this preview requires you to create the Aquila (preview) instance in your subscription, all the Aquila (preview) resources (including the VMs) will be visible to you. However, we recommend not to touch the VMs and other resources while you are operating Aquila (preview) to avoid unforeseen complexities.
+Since this preview requires you to create the Microsoft Azure Monitor SCOM managed instance (preview) in your subscription, all the Microsoft Azure Monitor SCOM managed instance (preview) resources (including the VMs) will be visible to you. However, we recommend not to touch the VMs and other resources while you are operating Microsoft Azure Monitor SCOM managed instance (preview) to avoid unforeseen complexities.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Aquila (preview) overview](aquila-overview.md)
+> [Microsoft Azure Monitor SCOM managed instance (preview) overview](aquila-overview.md)
