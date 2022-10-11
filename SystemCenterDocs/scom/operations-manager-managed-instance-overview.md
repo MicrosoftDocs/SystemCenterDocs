@@ -29,7 +29,7 @@ You can now:
 
 ## Architecture
 
-When you create a Operations Manager managed instance (preview) (which is equivalent to your System Center Operations Manager Management Group), you'll get one Management Server and one Web Console, running on the same VM in your Azure subscription. On the SQL MI instance, you'll get two databases (Ops database & DW database). The entire infrastructure will be located on Azure.
+When you create an Operations Manager managed instance (preview) (which is equivalent to your System Center Operations Manager Management Group), you'll get one Management Server and one Web Console, running on the same VM in your Azure subscription. On the SQL MI instance, you'll get two databases (Ops database & DW database). The entire infrastructure will be located on Azure.
 
 When you connect your existing agents to your Azure-based Operations Manager managed instance (preview), ensure that there's a direct network connectivity (line-of-sight) between your existing network and your network in Azure. If your existing agents are in an untrusted domain, then connect a gateway server.
 
