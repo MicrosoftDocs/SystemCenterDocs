@@ -21,7 +21,7 @@ This article summarizes frequently asked questions about Microsoft Azure Monitor
 
 ### What regions do the VPN need to be in?
 
-to maintain latency, we recommend you have the VPN in the same region as your other Azure resources4.
+To maintain latency, we recommend you have the VPN in the same region as your other Azure resources4.
 
 ### What address range does the VNet need?
 
