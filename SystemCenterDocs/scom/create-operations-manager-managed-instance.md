@@ -68,7 +68,7 @@ The Managed Service Identity provide an identity for applications to use when co
         1. **Region**: Select the region in which you want to create Operations Manager managed instance (preview).
         1. **Name**: Enter the desired name.
 1. Select **Next : Tags >**.
-1. Under **Tags**, enter the Name, value and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
+1. Under **Tags**, enter the Name, value, and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
 1. Select **Next : Review + Create >**.
 1. Under **Review + create**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, you can access the resource and view its details.
 
@@ -158,13 +158,13 @@ Copy and paste the below script in `.txt` file and name it as `aquilaReader.json
 } 
 ```
 
-1. After you create the roles, go to Azure portal and search for *Subscriptions*. Select the subscription where you would create the Operations Manager managed instance (preview) in, and navigate to the blade that displays the details of all the resources in that subscription along with the costs incurred so far.
+1. After you create the roles, go to Azure portal and search for *Subscriptions*. Select the subscription where you would create the Operations Manager managed instance (preview) in and navigate to the blade that displays the details of all the resources in that subscription along with the costs incurred so far.
 1. Select *Access Control (IAM)* > *+Add* on top and then select **Add custom role**. **Create a custom role** page opens.
 1. For both the roles aquilaContributor.json and aquilaReader.json, follow the below steps:
     1. Under **Basics**:
         1. **Custom role name**: Enter the role name (Aquila Contributor/Aquila Reader).
         1. **Description**: Enter description of the role.
-        1. **Baseline permissions**: Select *Start from JSON* and upload the json file (aquilaContributor.json/aquilaReader.json). Ater you upload the json file, rest of the fields will auto-populate.
+        1. **Baseline permissions**: Select *Start from JSON* and upload the json file (aquilaContributor.json/aquilaReader.json). After you upload the json file, rest of the fields will auto-populate.
 1. Review the permissions, subscription, and other details in rest of the tabs. 
 1. Under **Review + Create**, select **Create** to create the role.
 1. Select **Review + Create** to create two custom roles. Now, assign users to these roles. 
@@ -182,7 +182,7 @@ Below are the recommendations while you create an SQL MI instance:
 
 - **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommend creating a new Resource Group for large Azure resources.
 - **Managed Instance name**: Choose a unique name. This name will be used while you create an Operations Manager managed instance (preview) to refer to this SQL MI instance that you are creating.
-- **Region**: Choose the region that is close to you. There is no strict requirement on Region for the instance but the closest region is recommended for latency purposes.
+- **Region**: Choose the region that is close to you. There is no strict requirement on region for the instance but the closest region is recommended for latency purposes.
 - **Compute+Storage**: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the Operations Manager managed instance (preview).
 - **Authentication Method**: You can select **SQL Authentication**. In the credentials, enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
 - **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the Operations Manager managed instance (preview) you will create in the future. Thus, choose a VNet that you will eventually use for your Operations Manager managed instance (preview), or if you choose a different VNet, make sure it has connectivity to the Operations Manager managed instance (preview) VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql&preserve-view=true).
@@ -212,7 +212,7 @@ You need to be the Global Admin/Privileged Role Admin of the subscription to per
 
 1. Open the SQL MI Instance and select **Active Directory Admin**.
 
-1. Select **Set Admin**, search for your MSI (the same MSI that you provided during the Operations Manager managed instance (preview) creation flow). You will find the Admin added to the SQL MI Instance.
+1. Select **Set Admin**, search for your MSI (the same MSI that you provided during the Operations Manager managed instance (preview) creation flow). You will find the admin added to the SQL MI Instance.
 
 1. If you find the error after you add managed identity account, it indicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, otherwise your instance creation will fail.
 
@@ -240,15 +240,15 @@ To create an Operations Manager managed instance (preview), follow the below ste
     1. **Instance details**:
         1. **Aquila instance name**: Enter Operations Manager managed instance (preview) name as desired.
             >[!Note]
-            >- Operations Manager managed instance (preview) name can have only alphanumaric characters and up to 10 characters long.
+            >- Operations Manager managed instance (preview) name can have only alphanumeric  characters and up to 10 characters long.
             >- Operations Manager managed instance (preview) is equivalent to System Center Operation Manager Management Group so choose a name accordingly.
         1. **Region**: Select the region that is near to you geographically so that latency between your agents and the Operations Manager managed instance (preview) is as low as possible.
     1. **Azure Hybrid Benefit**: Select **Yes** if you are using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the Operations Manager managed instance (preview) and it won't apply to existing Windows Servers.
 1. Select **Next**.
 1. Under **Networking**, do the following:
     1. **Configure virtual networks**:
-        1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server. If you have not created a VNet earlier, select 'Create New' if you haven't already created a VNet before. For more information, see VNet creation process.
-        1. **Subnet**: Select a subnet that has at least 10 IP addresses to house all the Operations Manager managed instance (preview) components. The minimum address space is 28. The subnet can have existing resources in it however, don't choose the subnet that houses the SQL managed instance because it won't contain the sufficient number of IP addresses to house the instance.
+        1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server. If you have not created a VNet earlier, select **Create New** if you haven't already created a VNet before. For more information, see VNet creation process.
+        1. **Subnet**: Select a subnet that has at least 10 IP addresses to house all the Operations Manager managed instance (preview) components. The minimum address space is 28. The subnet can have existing resources in it, however, don't choose the subnet that houses the SQL managed instance because it won't contain the sufficient number of IP addresses to house the instance.
     1. **Domain details**:
         1. **Domain Name**: Enter the name of the domain that is being administered by the Domain Controller.
         1. **DNS Server IP**: Enter the IP address of the DNS Server that is providing the IP addresses to the resources in the domain mentioned above.
@@ -262,7 +262,7 @@ To create an Operations Manager managed instance (preview), follow the below ste
     1. **User Managed Identity**:
         1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to in the SQL MI Instance. For more information, see MSI creation process.
 1. Select **Next**.
-1. Under **Tags**, enter the Name, value and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
+1. Under **Tags**, enter the Name, value, and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
 1. Select **Next**.
 1. Under **Review + Submit**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, and it takes up to an hour for the creation of an Operations Manager managed instance (preview). 
 
