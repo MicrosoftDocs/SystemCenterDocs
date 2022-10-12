@@ -19,7 +19,7 @@ ms.topic: include
 
 The following tables lists the release history for Operations Manager 2019.
 
-### Management Servers (and other components*)
+### Management Server (and other components*)
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.19.10050.0||March 2019 |General Availability release |
@@ -33,7 +33,7 @@ The following tables lists the release history for Operations Manager 2019.
 |10.19.10569.0|[5013427](https://support.microsoft.com/kb/5013427) |June 2022 |Update Rollup 4 |
 |10.19.10576.0|[5016576](https://support.microsoft.com/kb/5016576) |July 2022 |Update Rollup 4 - Hotfix for Operations Console Performance issue |
 
-### Agents
+### Agent and Gateway
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.19.10014.0||March 2019 |General Availability release |
@@ -43,7 +43,7 @@ The following tables lists the release history for Operations Manager 2019.
 |10.19.10185.0|[5005527](https://support.microsoft.com/kb/5005527) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
 |10.19.10200.0|[5013427](https://support.microsoft.com/kb/5013427) |June 2022 |Update Rollup 4 |
 
-### SCX Agents
+### SCX Agent
 |Build Number |KB |Release Date |Agent Version |Description |
 |-------------|---|-------------|--------------|------------|
 |10.19.1008.0||March 2019 |1.6.3-793 |General Availability release |
@@ -54,4 +54,4 @@ The following tables lists the release history for Operations Manager 2019.
 |10.19.1150.0|[5013427](https://support.microsoft.com/kb/5013427) |June 2022 |1.6.10-1 |Update Rollup 4 |
 |10.19.1158.0|[5013427](https://support.microsoft.com/kb/5013427) |August 2022 |1.6.10-2 |Update Rollup 4 - OMI Vulnerability Fix |
 
- \* *The other components include: Databases, Gateway Servers, Operations Consoles, Reporting, and Web Consoles.*
+ \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*

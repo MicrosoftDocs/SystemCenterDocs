@@ -20,7 +20,7 @@ ms.topic: include
 
 The following tables lists the release history for Operations Manager 2016.
 
-### Management Servers (and other components*)
+### Management Server (and other components*)
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |7.2.11719.0 ||September 2016 |General Availability release|  
@@ -34,8 +34,9 @@ The following tables lists the release history for Operations Manager 2016.
 |7.2.12213.0 |[4514877](https://support.microsoft.com/kb/4514877) |September 2019 |Update Rollup 8 |
 |7.2.12265.0 |[4546986](https://support.microsoft.com/kb/4546986) |March 2020 |Update Rollup 9 |
 |7.2.12324.0 |[4580254](https://support.microsoft.com/kb/4580254) |October 2020 |Update Rollup 10 |
+|7.2.12335.0 |[5006871](https://support.microsoft.com/kb/5006871) |October 2021 |Update Rollup 10 Hotfix |
 
-### Agents
+### Agent and Gateway
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |8.0.10918.0 ||September 2016 |General Availability release|  
@@ -50,7 +51,7 @@ The following tables lists the release history for Operations Manager 2016.
 |8.0.11049.0 |[4546986](https://support.microsoft.com/kb/4546986) |March 2020 |Update Rollup 9 |
 |8.0.11057.0 |[4580254](https://support.microsoft.com/kb/4580254) |October 2020 |Update Rollup 10 |
 
-### SCX Agents
+### SCX Agent
 |Build Number |KB |Release Date |Agent Version |Description |
 |-------------|---|-------------|--------------|------------|
 |7.6.1064.0 ||September 2016 |1.6.2-336 |General Availability release|  
@@ -67,6 +68,6 @@ The following tables lists the release history for Operations Manager 2016.
 |7.6.1108.0 |[4580254](https://support.microsoft.com/kb/4580254) |May 2022 |1.6.9-2 |Update Rollup 10 - OMI Vulnerability Fix |
 |7.6.1113.0 |[4580254](https://support.microsoft.com/kb/4580254) |August 2022 |1.6.10-2 |Update Rollup 10 - OMI Vulnerability Fix |
 
- \* *The other components include: Databases, Gateway Servers, Operations Consoles, Reporting, and Web Consoles.*
+ \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
 
  <sup>1</sup> *All System Center Operations Manager update rollups are cumulative.  This means you do not need to apply them in order, you can always apply the latest update. However, there is one exception to this upgrade behavior. If you want the ability to uninstall UR4, you should make sure you have previously applied UR2 or UR3, which fixed an uninstall issue. Update rollups subsequent to UR4 can be uninstalled without previous rollups being applied.*
