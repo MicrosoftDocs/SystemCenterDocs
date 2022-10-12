@@ -49,3 +49,15 @@ landingContent:
             url: manage-quick-reference.md
           - text: Learn about Management Packs
             url: manage-overview-management-pack.md
+
+  # Card
+  - title: About Operations Manager managed instance
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Operations Manager managed instance overview
+            url: operations-manager-managed-instance-overview.md
+      - linkListType: get-started
+        links:
+          - text: Create managed instance
+            url: create-operations-manager-managed-instance.md
