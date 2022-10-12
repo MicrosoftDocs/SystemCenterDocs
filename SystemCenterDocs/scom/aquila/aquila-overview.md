@@ -17,7 +17,7 @@ monikerRange: 'sc-om-2022'
 
 This article provides you a quick service overview of Aquila (preview) in System Center.
 
-With the integration of Aquila (preview), System Center Operations Manager functionality is now available on Azure that enables you to monitor all your workloads running in on-premises, in Azure, or in any other cloud service.
+With the integration of Aquila (preview), System Center Operations Manager functionality is now available on Azure. Operations Manager managed instance enables you to monitor all your workloads running on-premises, in Azure, or in any other cloud service.
 
 You can now:
 
