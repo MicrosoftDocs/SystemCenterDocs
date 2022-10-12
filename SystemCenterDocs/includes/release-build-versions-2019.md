@@ -28,7 +28,7 @@ The following tables lists the release history for Operations Manager 2019.
 |10.19.10407.0|[4558752](https://support.microsoft.com/kb/4558752) |August 2020 |Update Rollup 2 |
 |10.19.10475.0|[4601269](https://support.microsoft.com/kb/4601269) |February 2021 |Update Rollup 2 - Hotfix for Event Log Channel |
 |10.19.10505.0|[4594078](https://support.microsoft.com/kb/4594078) |March 2021 |Update Rollup 3 |
-|10.19.10550.0|[5006871](https://support.microsoft.com/kb/5006871) |October 2021 |Update Rollup 3 - Hotfix for Web Console |
+|10.19.10550.0|[5006871](https://support.microsoft.com/kb/5006871) |October 2021 |Update Rollup 3 - Web Console IDOR Vulnerability Fix |
 |10.19.10552.0|[5005527](https://support.microsoft.com/kb/5005527) |October 2021 |Update Rollup 3 - Hotfix Oct 2021 |
 |10.19.10569.0|[5013427](https://support.microsoft.com/kb/5013427) |June 2022 |Update Rollup 4 |
 |10.19.10576.0|[5016576](https://support.microsoft.com/kb/5016576) |July 2022 |Update Rollup 4 - Hotfix for Operations Console Performance issue |
