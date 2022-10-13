@@ -14,7 +14,7 @@ ms.custom: intro-whats-new
 
 ## New features in VMM 2022
 
-See the following sections for new features and feature updates supported in VMM 2022.
+See the following sections for new features and feature updates supported in VMM 2022. 
 
 ## Compute
 
