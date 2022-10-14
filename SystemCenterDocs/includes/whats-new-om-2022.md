@@ -113,4 +113,4 @@ For problems fixed in UR1 and the installation instructions for UR1, see the KB 
 
 ### Supports SQL Server 2022
 
-Operations Manager 2022 UR1 supports SQL Server 2022. [Learn more](system-reqs-om-2022.md).
+Operations Manager 2022 UR1 supports SQL Server 2022.
