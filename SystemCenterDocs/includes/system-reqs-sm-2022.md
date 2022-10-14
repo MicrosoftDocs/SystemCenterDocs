@@ -90,7 +90,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 > - With SQL 2019 (CU8 or later), use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 
-|**Service Manager** |  **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)**| **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**| **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**
+|**Service Manager** |  **SQL Server [2017](/lifecycle/products/?terms=SQL+Server+2017)**| **SQL Server [2019 with Cumulative Update 8](/lifecycle/products/?terms=SQL+Server+2019)**| **SQL Server [2022]**
 | --- | --- |--- |--- |
 |**Service Manager/Data Warehouse database** |  &#8226; |&#8226; |&#8226; |
 
