@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: evansma
 ms.date: 11/29/2021
-ms.topic: article
+ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ms.custom: intro-whats-new
