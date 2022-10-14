@@ -1,6 +1,6 @@
 ---
 title:  include file
-description: include file to describes the new features and other changes in System Center 2022 - Service Manager.
+description: Include file describes the new features and other changes in System Center 2022 - Service Manager.
 manager: jsuri
 ms.topic:  include
 author: v-pgaddala
