@@ -44,6 +44,16 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 --- | ---
 DPM 2022 | - SQL Server 2022 as detailed [here](/lifecycle/products/?terms=SQL+Server+2022) (supported from 2022 UR1)<br/><br/> - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019)<br/><br/> - SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017)
 
+To use SQL Server 2022 as DPM DB, follow the below steps:
+
+DPM 2022 and SQL 2022
+
+   - Install SQL 2022 GA Build
+   - [Install SQLNCLI on DPM machine](/download/details.aspx?id=50402)
+   - Install DPM 2022 RTM
+   - Install DPM 2022 UR1
+   - Uninstall SQLNCLI from DPM machine
+
 ### SQL Server requirements
 
 **SQL Server requirements**
