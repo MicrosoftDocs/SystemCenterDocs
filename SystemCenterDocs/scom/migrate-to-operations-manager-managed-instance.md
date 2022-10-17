@@ -61,7 +61,7 @@ Follow the below steps to migrate from On-premises to Operations Manager managed
 Four types of data visualization are available in Operations Manager. 
 Below is a quick summary of what can be migrated:
 
-| Types                                          | Can be migrated to Operations Manager manager instance | Documentation | Microsoft Recommendations |
+| Types                                          | Can be migrated to Operations Manager managed instance | Documentation | Microsoft Recommendations |
 |------------------------------------------------|----------------------------|---------------|---------------------------|--|
 | Dashboards/Views that are available in MP      | Yes                        | Not required  | Operations console        |
 | Dashboards/Views created on Operations console | Yes                        | Yes           | Operations Console        |
@@ -70,7 +70,7 @@ Below is a quick summary of what can be migrated:
 
 - For Dashboards/Views that are available in MP, as dashboards/views are built into Management Pack, they'll continue to display data as they did on Operations Manager on-premises.
 - For Dashboards/Views created on Operations console, you need to reconfigure custom dashboards and views in Operations Manager managed instance (preview). 
-- For Reports that are available in MP and on Operations console, Reporting Server doesn't exist in Operations Manager managed instance (preview). So, you need to reconfigure all reports on PowerBI. 
+- For Reports that are available in MP and on Operations console, Reporting Server doesn't exist in Operations Manager managed instance (preview). So, you need to reconfigure all reports on Power BI. 
 
 # [User roles and permissions](#tab/userrole-permission)
 
@@ -113,7 +113,7 @@ After you migrate the notification configuration to Operations Manager managed i
 
 # [Groups](#tab/groups)
 
-Groups are migrated as part of Management Packs. For more information, see  
+Groups are migrated as part of Management Packs. For more information, see step 5 in kManagement Packs and Overrides.
 
 # [1P Integrations](#tab/integrations)
 
