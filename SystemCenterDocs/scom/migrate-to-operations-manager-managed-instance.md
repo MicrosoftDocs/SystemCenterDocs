@@ -133,3 +133,8 @@ Below is the recommendation on Azure equivalent services
 To migrate from Agent to Operations Manager managed instance, see [High level overview of upgrading agents and running two environments](/scom/deploy-upgrade-overview#high-level-overview-of-upgrading-agents-and-running-two-environments-1)
 
 --- 
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Operations Manager managed instance (preview) overview](operations-manager-managed-instance-overview.md)
