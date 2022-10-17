@@ -10,6 +10,7 @@ ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
+monikerRange: '>=sc-om-2019'
 ---
 
 # Migrate from Operations Manager on-premesis to Operations Manager managed instance (preview)
@@ -39,11 +40,11 @@ Follow the below steps to migrate from On-premises to Operations Manager managed
 
 2. [Export unsealed MPs](/system-center/scom/manage-mp-import-remove-delete?#how-to-export-an-operations-manager-management-pack)
 
-3. [Import Sealed MPs in Operations Manager managed instance (preview)](https://learn.microsoft.com/en-us/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack)
+3. [Import Sealed MPs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack)
 
     - You must have a copy of any custom sealed Management Packs that you need to import. 
 
-4. [Import unsealed (exported) MPs in Operations Manager managed instance (preview)](https://learn.microsoft.com/en-us/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk)
+4. [Import unsealed (exported) MPs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk)
 
 5. Validation of post migration 
 
