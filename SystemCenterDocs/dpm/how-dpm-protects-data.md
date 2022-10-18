@@ -62,9 +62,9 @@ At regular intervals that you can configure, DPM creates a recovery point for th
 
 For application data, after the replica is created by DPM, changes to volume blocks that belong to application files are tracked by the volume filter.
 
-How changes are transferred to the DPM server depends on the application and the type of synchronization. The operation that is labelled synchronization in DPM Administrator Console is analogous to an incremental backup, and it creates an accurate reflection of the application data when combined with the replica.
+How changes are transferred to the DPM server depends on the application and the type of synchronization. The operation that is labeled synchronization in DPM Administrator Console is analogous to an incremental backup, and it creates an accurate reflection of the application data when combined with the replica.
 
-During the type of synchronization that is labelled express full backup in DPM Administrator Console, a full Volume Shadow Copy Service (VSS) snapshot is created but only changed blocks are transferred to the DPM server.
+During the type of synchronization that is labeled express full backup in DPM Administrator Console, a full Volume Shadow Copy Service (VSS) snapshot is created but only changed blocks are transferred to the DPM server.
 
 Each express full backup creates a recovery point for application data. If the application supports incremental backups, each synchronization also creates a recovery point. The synchronization type supported by each type of application data is summarized as follows:
 
@@ -80,7 +80,7 @@ To enable faster recovery time, DPM regularly performs an express full backup, a
 
 During the express full backup, DPM takes a snapshot of the replica before updating the replica with the changed blocks. To enable more frequent recovery point objectives, as well as to reduce the data loss window, DPM also performs incremental synchronizations in the time between two express full backups.
 
-As with the protection of file data, if a replica becomes inconsistent with its data source, DPM generates an alert that specifies which server and which data source are affected. To resolve the problem, the administrator repairs the replica by initiating a synchronization with consistency check on the replica. During a consistency check, DPM performs a block-by-block verification and repairs the replica to bring it back into consistency with the data sources.
+As with the protection of file data, if a replica becomes inconsistent with its data source, DPM generates an alert that specifies which server and which data sources are affected. To resolve the problem, the administrator repairs the replica by initiating a synchronization with consistency check on the replica. During a consistency check, DPM performs a block-by-block verification and repairs the replica to bring it back into consistency with the data sources.
 
 You can schedule a daily consistency check for protection groups or initiate a consistency check manually.
 

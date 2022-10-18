@@ -36,7 +36,7 @@ This topic summarizes some of the common support information you might need when
 
 -   As an Azure virtual machine - From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
--   As a Windows virtual machine in VMWare - From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMWare environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMWare.
+-   As a Windows virtual machine in VMware - From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
 
 
 ### Sharing a library between different DPM versions isn't supported
@@ -166,7 +166,7 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 ### BitLocker
 **Issue**: Is enabling BitLocker on DPM Storage Pool supported?
 
-**Workaround**: Do not enable BitLocker before adding the disk to the storage pool. You can enable the BitLocker once you add the disk to xthe storage pool.
+**Workaround**: Do not enable BitLocker before adding the disk to the storage pool. You can enable the BitLocker once you add the disk to the storage pool.
 
 
 ## <a name="BKMK_Dedup"></a>Deduplication issues
@@ -207,7 +207,7 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 | Windows Server 2012                      | Windows Server 2016                | DPM 2019        | Y                  |
 
 
-- *When protecting a WS 2016 NTFS Deduped Volume with DPM 2019 running on WS 2019, the recoveries may be affected. We have a fix for doing recoveries in an non-deduped way which will be part of later versions of DPM 2019. Reach out to DPM support if you need this fix on DPM 2019 UR2.
+- *When protecting a WS 2016 NTFS Deduped Volume with DPM 2019 running on WS 2019, the recoveries may be affected. We have a fix for doing recoveries in a non-deduped way which will be part of later versions of DPM 2019. Reach out to DPM support if you need this fix on DPM 2019 UR2.
 
 - **When protecting a WS 2019 NTFS deduped volume with DPM 2019 on WS 2016 OR a WS 2016 NTFS deduped volume with DPM 2016 on WS 2012 R2, the backups and restores will be non-deduped. This means that the backups will consume more space on the DPM server than the original NTFS deduped volume.
 
@@ -288,7 +288,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ## <a name="BKMK_Data"></a>Data protection issues
 
 ### DPM does not back up shared VHDX
-**Issue**: DPM cannot backup VMs using shared drives (which are potentially attached to other VMs) as the Hyper-V VSS writer cannot back up volumes that are backed up by shared VHDs.
+**Issue**: DPM can't back up VMs using shared drives (which are potentially attached to other VMs) as the Hyper-V VSS writer cannot back up volumes that are backed up by shared VHDs.
 
 **Workaround**: To avoid potential data loss, use another method to back up data on the shareable VHD.
 
