@@ -95,12 +95,12 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 
 |Distro|Kernel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|OpenSSL&nbsp;Version|Highest&nbsp;Supported&nbsp;Cipher&nbsp;Suite/Preferred&nbsp;Cipher&nbsp;Suite|Cipher&nbsp;Index|
 |---------------------------------------------|--------------------------------------|----------------------------------|-------------------------------------------------------|----------------|
-|Red&nbsp;Hat&nbsp;Enterprise&nbsp;Linux&nbsp;Server&nbsp;7.5&nbsp;(Maipo)|Linux&nbsp;3.10.0-862.el7.x86_64|OpenSSL&nbsp;1.0.2k-fips26&nbsp;Jan&nbsp;2017|TLS_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0x00,&nbsp;0x9D&nbsp;}|
+|Red&nbsp;Hat&nbsp;Enterprise&nbsp;Linux&nbsp;Server&nbsp;7.5&nbsp;(Maipo)|Linux&nbsp;3.10.0-862.el7.x86_64|OpenSSL&nbsp;1.0.2k-fips&nbsp;26&nbsp;Jan&nbsp;2017|TLS_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0x00,&nbsp;0x9D&nbsp;}|
 |Red&nbsp;Hat&nbsp;Enterprise&nbsp;Linux&nbsp;8.3&nbsp;(Ootpa)|Linux&nbsp;4.18.0-240.el8.x86_64|OpenSSL&nbsp;1.1.1g&nbsp;FIPS&nbsp;21&nbsp;Apr&nbsp;2020|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0xC0,&nbsp;0x30&nbsp;}|
 |Oracle&nbsp;Linux&nbsp;Server&nbsp;release&nbsp;6.10|Linux4.1.12-124.16.4.el6uek.x86_64|OpenSSL&nbsp;1.0.1e-fips&nbsp;11&nbsp;Feb&nbsp;2013|TLS_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0x00,&nbsp;0x9D&nbsp;}|
-|Oracle&nbsp;Linux&nbsp;Server&nbsp;7.9|Linux&nbsp;5.4.17-2011.6.2.el7uek.x86_64|OpenSSL&nbsp;1.0.2k-fips26&nbsp;Jan&nbsp;2017|TLS_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0x00,&nbsp;0x9D&nbsp;}|
-|Oracle&nbsp;Linux&nbsp;Server&nbsp;8.3|Linux&nbsp;5.4.17-2011.7.4.el8uek.x86_64|OpenSSL&nbsp;1.1.1g&nbsp;FIPS21&nbsp;Apr&nbsp;2020|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0xC0,&nbsp;0x30&nbsp;}|
-|CentOS&nbsp;Linux&nbsp;8&nbsp;(Core)|Linux&nbsp;4.18.0-193.el8.x86_64|OpenSSL&nbsp;1.1.1c&nbsp;FIPS28&nbsp;May&nbsp;2019|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0xC0,&nbsp;0x30&nbsp;}|
+|Oracle&nbsp;Linux&nbsp;Server&nbsp;7.9|Linux&nbsp;5.4.17-2011.6.2.el7uek.x86_64|OpenSSL&nbsp;1.0.2k-fips&nbsp;26&nbsp;Jan&nbsp;2017|TLS_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0x00,&nbsp;0x9D&nbsp;}|
+|Oracle&nbsp;Linux&nbsp;Server&nbsp;8.3|Linux&nbsp;5.4.17-2011.7.4.el8uek.x86_64|OpenSSL&nbsp;1.1.1g&nbsp;FIPS&nbsp;21&nbsp;Apr&nbsp;2020|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0xC0,&nbsp;0x30&nbsp;}|
+|CentOS&nbsp;Linux&nbsp;8&nbsp;(Core)|Linux&nbsp;4.18.0-193.el8.x86_64|OpenSSL&nbsp;1.1.1c&nbsp;FIPS&nbsp;28&nbsp;May&nbsp;2019|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0xC0,&nbsp;0x30&nbsp;}|
 |Ubuntu&nbsp;16.04.5&nbsp;LTS|Linux&nbsp;4.4.0-131-generic|OpenSSL&nbsp;1.0.2g&nbsp;1&nbsp;Mar&nbsp;2016|TLS_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0x00,&nbsp;0x9D&nbsp;}|
 |Ubuntu&nbsp;18.10|Linux&nbsp;4.18.0-25-generic|OpenSSL&nbsp;1.1.1&nbsp;11&nbsp;Sep&nbsp;2018|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0xC0,&nbsp;0x30&nbsp;}|
 |Ubuntu&nbsp;20.04&nbsp;LTS|Linux&nbsp;5.4.0-52-generic|OpenSSL&nbsp;1.1.1f&nbsp;31&nbsp;Mar&nbsp;2020|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0xC0,&nbsp;0x30&nbsp;}|
