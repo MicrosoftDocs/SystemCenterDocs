@@ -35,19 +35,19 @@ If you upgrade from DPM 2019 to DPM 2022, make sure your installation has the fo
 ### Upgrade steps for DPM
 
 >[!Note]
->If the name of the existing DPM database is DPMDB or DPM server is using a remote SQL server instance shared by multiple DPM servers, rename the database before you upgrade. See related known issue and workaround here.
+>If the name of the existing DPM database is DPMDB or DPM server is using a remote SQL server instance shared by multiple DPM servers, rename the database before you upgrade. See related known issues and workaround here.
 
-1. To install DPM, double-click Setup.exe to open the System Center 2022 wizard.
-2. Under Install, click Data Protection Manager to start the setup wizard. Agree to the license terms and conditions and follow the setup wizard.
+1. To install the DPM, select Setup.exe to open the System Center 2022 wizard.
+2. Under Install, select Data Protection Manager to start the setup wizard. Agree to the license terms and conditions and follow the setup wizard.
 
    For instructions on installing DPM, see [Installing DPM](../dpm/install-dpm.md).
 
-## Migrate the DPM database during upgrade
+## Migrate the DPM database during the upgrade
 
 You may want to move the DPM Database as part of an upgrade. For example:
 - You are merging instances of SQL Server.
 - You are moving to a remote more powerful SQL server.
-- You want to add fault tolerance by using a SQL Server cluster; or you want to move from a remote SQL server to a local SQL server or vice versa.
+- You want to add fault tolerance by using a SQL Server cluster, or you want to move from a remote SQL server to a local SQL server or vice versa.
 
 DPM 2022 setup allows you to migrate the DPM database to different SQL Servers during an upgrade.
 
@@ -64,7 +64,7 @@ The following scenarios exist when you are upgrading DPM 2019 to DPM 2022 using 
 
 ### Prepare for a database migration
 
-If you want to use a new SQL server to migrate the DPM database, before you upgrade DPM, be sure both SQL Servers have the same:
+If you want to use a new SQL server to migrate the DPM database before you upgrade DPM, be sure both SQL Servers have the same:
 - SQL Server requirements
 - Setup configuration
 - Firewall rules
@@ -74,10 +74,10 @@ Once you have the new instance of SQL Server installed and prepared for DPM use,
 
 ### Pre-upgrade steps: Backup and restore DPM 2019 database to a new SQL instance
 
-This example prepares a remote SQL Server cluster to use in a migration.
+This example prepares a remote SQL Server cluster to use in migration.
 
-1. On the System Center Data Protection Manager server or on the remote SQL Server hosting the DPM database, start **Microsoft SQL Management Studio** and connect to the SQL instance hosting the current DPM DPMDB.
-2. Right-click the DPM database, and under **Tasks**, select the **Back Up…** option.
+1. On the System Center Data Protection Manager server or the remote SQL Server hosting the DPM database, start **Microsoft SQL Management Studio** and connect to the SQL instance hosting the current DPM DPMDB.
+2. Select and hold the DPM database, and under **Tasks**, select the **Back Up…** option.
 
       ![Select Backup](../dpm/media/upgrade-to-dpm-2016/dpm-2016-select-backup.png)
 
@@ -87,11 +87,11 @@ This example prepares a remote SQL Server cluster to use in a migration.
 
 4. After the backup is complete, copy the output file to the remote SQL Server.  If this is a SQL Cluster, copy it to the active node hosting the SQL instance you want to use in the DPM upgrade.  Before you can restore the DPM database, you must copy it to the Shared Cluster disk.
 5. On the Remote SQL Server, start **Microsoft SQL Management Studio** and connect to the SQL instance you want to use in the DPM upgrade.  If this is a SQL Cluster, do this on the Active node that you copied the DPM backup file to.  The backup file should now be located on the shared cluster disk.
-6. Right-click the Databases icon, then select the **Restore Database…** option. This starts the restore wizard.
+6. Select and hold the Databases icon, then select the **Restore Database…** option. This starts the restore wizard.
 
       ![Select restore database](../dpm/media/upgrade-to-dpm-2016/dpm-2016-select-restore-database.png)        
 
-7. Select **Device** under **Source**, and then locate the database backup file that was copied in the previous step and select it. Verify the restore options and restore location, and then select **OK** to start the restore. Fix any issue that arise until the restore is successful.
+7. Select **Device** under **Source**, and then locate the database backup file that was copied in the previous step and select it. Verify the restore options and restore location, and then select **OK** to start the restore. Fix any issue that arises until the restore is successful.
 
       ![Restore database](../dpm/media/upgrade-to-dpm-2016/dpm-2016-restore-database.png)
 
@@ -106,15 +106,15 @@ This example prepares a remote SQL Server cluster to use in a migration.
 > [!NOTE]
 > If sharing a SQL instance, run the DPM installations (or upgrades) sequentially. Parallel installations may cause errors.
 
-1. After the pre-migration preparation steps are complete, start the DPM 2019 Installation process.  DPM Setup shows the information about current instance of SQL server pre-populated. This is where you can select a different instance of SQL server, or change to a Clustered SQL instance used in the migration.
+1. After the pre-migration preparation steps are complete, start the DPM 2019 Installation process.  DPM Setup shows the information about the current instance of the SQL server pre-populated. This is where you can select a different instance of SQL server or change to a Clustered SQL instance used in the migration.
 
       ![DPM setup](../dpm/media/upgrade-to-dpm-2016/dpm-2016-data-protection-manager-setup.png)
 
-2. Change the SQL Settings to use the instance of SQL server you restored the DPM Database to. If it’s a SQL cluster, you must also specify a separate instance of SQL Server  used for SQL reporting. It's presumed that firewall rules and SQLPrep are already ran. You have to enter correct credentials and then click the **Check and Install** button.
+2. Change the SQL Settings to use the instance of the SQL server you restored the DPM Database to. If it’s a SQL cluster, you must also specify a separate instance of SQL Server  used for SQL reporting. It's presumed that firewall rules and SQLPrep are already run. You have to enter the correct credentials and then select **Check and Install**.
 
       ![Install database](../dpm/media/upgrade-to-dpm-2016/dpm-2016-install-database.png)
 
-3. Prerequisite check should succeed, click **Next** to continue with the upgrade.
+3. The Prerequisite check should succeed, select **Next** to continue with the upgrade.
 
       ![Prerequisites check](../dpm/media/upgrade-to-dpm-2016/dpm-2016-prerequisites-check.png)
 
@@ -133,7 +133,7 @@ To add a volume in the administrator console:
 
 1. In the DPM Administrator console, select the **Management** feature > **Disk Storage** > **Add**.
 
-2. In the **Add Disk Storage** dialog, select an available volume > click **Add** > type a friendly name for the volume > click **OK**.
+2. In the **Add Disk Storage** dialog, select an available volume > **Add**, type a friendly name for the volume and then select **OK**.
 
       ![Add volume](../dpm/media/upgrade-to-dpm-2016/dpm-2016-add-volume.png)
 
@@ -160,17 +160,17 @@ Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-Datasour
 The changes made through PowerShell are reflected in the UI.
 
 ## Migrate legacy storage to Modern Backup Storage
-After upgrading to DPM 2019 and the operating system to Windows Server 2019, you can update your existing protection groups to the new DPM 2019 features. By default, protection groups are not changed, and continue to function as they were configured in earlier version of your DPM. You can optionally update protection groups to use Modern Backup Storage, is optional. To update the protection group, stop protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
+After upgrading to DPM 2019 and the operating system to Windows Server 2019, you can update your existing protection groups to the new DPM 2019 features. By default, protection groups are not changed and continue to function as they were configured in the earlier version of your DPM. You can optionally update protection groups to use Modern Backup Storage, which is optional. To update the protection group, stop the protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
 
 Use the following steps:
 
-1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, right-click the member, and select **Stop protection of member...**.
+1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, select and hold the member, and select **Stop protection of member...**.
 
    ![Stop protection](../dpm/media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
 
    The **Remove from Group** dialog opens.
 
-2. In the **Remove from Group** dialog, review the used disk space and the available free space in the storage pool. The default is to leave the recovery points on the disk and allow them to expire per their associated retention policy. Click **OK**.
+2. In the **Remove from Group** dialog, review the used disk space and the available free space in the storage pool. The default is to leave the recovery points on the disk and allow them to expire per their associated retention policy. Select **OK**.
 
     If you want to immediately return the used disk space to the free storage pool, select **Delete replica on disk**. This will delete the backup data (and recovery points) associated with that member.
 
@@ -183,21 +183,21 @@ Use the following steps:
 
 If you want to use legacy storage with DPM 2022, it may be required to add disks to increase legacy storage. To add disk storage:
 
-1. On the Administrator Console, click **Management**.
+1. On the Administrator Console, select **Management**.
 
 2. Select **Disk Storage**.
 
-3. On the tool ribbon click **Add**.
+3. On the tool ribbon, select **Add**.
 
     The **Add Disk Storage** dialog opens.
 
     ![Add disks](../dpm/media/upgrade-to-dpm-2016/dpm-2016-add-disk-storage.png)
 
-4. In the **Add Disk Storage** dialog, click **Add disks**.
+4. In the **Add Disk Storage** dialog, select **Add disks**.
 
     DPM provides a list of available disks.
 
-5. Select the disks, click **Add** to add the disks, and click **OK**.
+5. Select the disks, select **Add** to add the disks, and then select **OK**.
 
 ## Enable Cloud Protection
 

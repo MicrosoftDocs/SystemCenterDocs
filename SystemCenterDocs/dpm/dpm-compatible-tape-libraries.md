@@ -219,7 +219,7 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 | Total Storage 3572 (TS2900) |   |  6.2.6.6 |  0080 |  LTO8 |  6.2.6.6 |  HB83  |
 
 > [!Tip]
-> The following registry key needs to be added to enable support for TS 2900: DWORD “RSMCompatMode” under “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent” and set it to 29 (decimal).
+> The following registry key needs to be added to enable support for TS 2900: DWORD **RSMCompatMode** under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent` and set it to 29 (decimal).
 
 
 
