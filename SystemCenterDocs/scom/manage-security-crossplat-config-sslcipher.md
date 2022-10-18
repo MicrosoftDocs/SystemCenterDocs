@@ -93,7 +93,7 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 
 ## Cipher Suite Support Matrix
 
-|Distro|Kernel|OpenSSL&nbsp;Version|Highest&nbsp;Supported&nbsp;Cipher&nbsp;Suite/Preferred&nbsp;Cipher&nbsp;Suite|Cipher&nbsp;Index|
+|Distro|<div style="width:220px">Kernel</div>|OpenSSL&nbsp;Version|Highest&nbsp;Supported&nbsp;Cipher&nbsp;Suite/Preferred&nbsp;Cipher&nbsp;Suite|Cipher&nbsp;Index|
 |---------------------------------------------|--------------------------------------|----------------------------------|-------------------------------------------------------|----------------|
 |Red&nbsp;Hat&nbsp;Enterprise&nbsp;Linux&nbsp;Server&nbsp;7.5&nbsp;(Maipo)|Linux&nbsp;3.10.0-862.el7.x86_64|OpenSSL&nbsp;1.0.2k-fips26&nbsp;Jan&nbsp;2017|TLS_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0x00,&nbsp;0x9D&nbsp;}|
 |Red&nbsp;Hat&nbsp;Enterprise&nbsp;Linux&nbsp;8.3&nbsp;(Ootpa)|Linux&nbsp;4.18.0-240.el8.x86_64|OpenSSL&nbsp;1.1.1g&nbsp;FIPS21&nbsp;Apr&nbsp;2020|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384|{&nbsp;0xC0,&nbsp;0x30&nbsp;}|
