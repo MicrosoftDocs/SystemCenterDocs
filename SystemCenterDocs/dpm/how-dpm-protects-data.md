@@ -80,7 +80,7 @@ To enable faster recovery time, DPM regularly performs an express full backup, a
 
 During the express full backup, DPM takes a snapshot of the replica before updating the replica with the changed blocks. To enable more frequent recovery point objectives, as well as to reduce the data loss window, DPM also performs incremental synchronizations in the time between two express full backups.
 
-As with the protection of file data, if a replica becomes inconsistent with its data source, DPM generates an alert that specifies which server and which data source are affected. To resolve the problem, the administrator repairs the replica by initiating a synchronization with consistency check on the replica. During a consistency check, DPM performs a block-by-block verification and repairs the replica to bring it back into consistency with the data sources.
+As with the protection of file data, if a replica becomes inconsistent with its data source, DPM generates an alert that specifies which server and which data sources are affected. To resolve the problem, the administrator repairs the replica by initiating a synchronization with consistency check on the replica. During a consistency check, DPM performs a block-by-block verification and repairs the replica to bring it back into consistency with the data sources.
 
 You can schedule a daily consistency check for protection groups or initiate a consistency check manually.
 
@@ -132,11 +132,11 @@ DPM gives administrators the ability to enable their end users to perform their 
 
 DPM configures the protection policy, or schedule of jobs, for each protection group based on the recovery goals that you specify for that protection group. Examples of recovery goals are as follows:
 
-- "Lose no more than 1 hour of production data"
+- **Lose no more than 1 hour of production data**
 
-- "Provide me with a retention range of 30 days"
+- **Provide me with a retention range of 30 days**
 
-- "Make data available for recovery for 7 years"
+- **Make data available for recovery for 7 years**
 
 Your recovery goals quantify your organization's data protection requirements. In DPM, the recovery goals are defined by retention range, data loss tolerance, recovery point schedule, and, for database applications, the express full backup schedule.
 
