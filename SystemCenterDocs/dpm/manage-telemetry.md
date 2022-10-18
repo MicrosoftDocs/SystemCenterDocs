@@ -5,11 +5,11 @@ description: This article provides information about how to manage the telemetry
 author:  jyothisuri
 ms.author: jsuri
 manager:  vvithal
-ms.date:  03/30/2021
+ms.date:  10/13/2022
 ms.topic:  article
 ms.prod:  system-center
 ms.technology: data-protection-manager
-MonikerRange: sc-dpm-2019||sc-dpm-2016
+MonikerRange: sc-dpm-2019||sc-dpm-2016||sc-dpm-2022
 ---
 
 # Manage telemetry settings
