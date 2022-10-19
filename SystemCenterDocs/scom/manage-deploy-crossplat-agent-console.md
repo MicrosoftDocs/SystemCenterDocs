@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager agent 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/15/2016
+ms.date: 10/19/2022
 ms.custom: na, intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
