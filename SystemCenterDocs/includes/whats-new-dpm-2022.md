@@ -18,17 +18,17 @@ See the following sections for detailed information about the new features/featu
 
 ### Windows Server 2022 support
 
-DPM 2022 supports installation of DPM 2022 on Windows Server 2022 and protection of Windows Server 2022 workloads. For more information on supported versions for Windows Servers, see system requirements.
+DPM 2022 supports the installation of DPM 2022 on Windows Server 2022 and the protection of Windows Server 2022 workloads. For more information on supported versions for Windows Servers, see system requirements.
 
 ### Removed File Catalog dependency for online backup of file/folder workloads
 
-DPM 2022 removes the dependency on File Catalog which was needed to restore individual files and folders from the Online recovery points. DPM now uses iSCSI mount method to provide individual file restore. This also improves the backups time as upload of file catalog metadata is not needed anymore
+DPM 2022 removes the dependency on File Catalog, which was needed to restore individual files and folders from the Online recovery points. DPM now uses the iSCSI mount method to provide individual file restoration. This also improves backups time as upload of file catalog metadata is not needed anymore
 
 > [!NOTE]
 > The MARS agent version you are using must be 2.0.9236.0 or later.
 
 ### Private endpoint support
-With DPM 2022, you can use private endpoint to take online backup to Azure Backup Recovery Services vault. [Learn more](/azure/backup/private-endpoints-overview).
+With DPM 2022, you can use a private endpoint to take online backup to the Azure Backup Recovery Services vault. [Learn more](/azure/backup/private-endpoints-overview).
 
 ### Support for VMware vSphere 7.0
 
