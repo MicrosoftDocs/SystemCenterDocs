@@ -25,8 +25,8 @@ Below are the key benefits of Operations Manager managed instance (preview)
 
 - Get out of the stress of System Center Operations Manager infrastructure management. Operations Manager managed instance (preview) removes the burden of managing the management servers, web console, reporting server, and the databases.
 - You can preserve and reuse all the investments made in System Center Operations Manager over the years.
-- Monitor all your workloads running on-premesis, Azure, or in any other cloud service.
-- Have a consolidated administration and management experience for all your monitoring needs via the Azure Portal.
+- Monitor all your workloads running on-premises, Azure, or in any other cloud service.
+- Have a consolidated administration and management experience for all your monitoring needs via the Azure portal.
 
 ## Features
 
