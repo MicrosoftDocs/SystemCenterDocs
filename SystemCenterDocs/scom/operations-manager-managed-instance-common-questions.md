@@ -17,19 +17,19 @@ monikerRange: '>=sc-om-2019'
 
 This article summarizes frequently asked questions about Operations Manager managed instance (preview).
 
-## Virtual private network
+## Virtual Network (VNet)
 
-### What regions do the VPN need to be in?
+### What regions do the VNet need to be in?
 
-To maintain latency, we recommend you have the VPN in the same region as your other Azure resources4.
+To maintain latency, we recommend you have the VNet in the same region as your other Azure resources.
 
 ### What address range does the VNet need?
 
 The minimum address space is /27 (which means /28 and above wouldn't work).
 
-### How many subnets does the VPN need to have?
+### How many subnets does the VNet need to have?
 
-- VPN needs two subnets. 
+- VNet needs two subnets. 
     - For Operations Manager managed instance (preview)
     - For SQL managed instance
 - The subnet for SQL MI instance will be a delegated (dedicated) subnet and won't be used by the Operations Manager managed instance (preview). Name the subnets accordingly to avoid confusion in the future while you create the SQL MI/Operations Manager managed instance (preview).

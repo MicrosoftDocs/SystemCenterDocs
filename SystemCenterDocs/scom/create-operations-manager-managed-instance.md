@@ -23,29 +23,30 @@ The following are the prerequisites before you create an Operations Manager mana
 
 # [General Prerequisites](#tab/prereqs-general)
 
+- In this preview, you can create an instance only in West Europe and West US. 
 - Ensure that you've at least four virtual cores (one VM) of type Standard DSv2 in your Azure subscription to deploy an instance.
 - Ensure that you've downloaded System Center Operations Manager 2019 or later executable file for the agent, Ops Console, and the gateway server.
 - As all the components are on a single machine, ensure that you open the following ports on the single VM:
     - On the management server, open the inbound ports 5723/5724.
     - On the web-console server, open the inbound ports 80/443.
     - For agent, open the ports 5723/135/138/445.
-- Ensure you allow ports 1433 and 11000-11999 from the Operations Manager managed instance (preview).
+- Ensure you allow ports 1433 and 11000-11999 from the Operations Manager managed instance (preview) to the SQL MI instance.
 - If you enable public endpoint on SQL MI, ensure that you allow 3342.
 - Ensure to establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network and configure one domain account in Active Directory. For more information, see \<link\>.
 - Ensure to create a Managed Service Identity (MSI), configure Operations Manager managed instance (preview) role-based access control (RBAC) and create and configure an SQL MI Instance. For more information, see \<link\>.
 
 # [In existing infrastructure](#tab/prereqs-infra)
 
-## Establish direct connectivity (line-of-sight) between your DC and your Azure network
+## Establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network
 
 - Ensure that there's direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you'll deploy an Operations Manager managed instance (preview). This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, Operations Manager managed instance (preview) Components such as Management Servers) can talk to each other over the network.
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/)
-- If your Domain Controller and all other components are in Azure with no presence on-premises, a VPN network will work (ExpressRoute isn't needed). If you are using one VPN to host all your components, you will already have a line-of-sight between all your components. If you have multiple VPNs, you will need to do VPN peering between all the VPNs that are in your network
+- If your Domain Controller and all other components are in Azure with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't needed). If you are using one VNet to host all your components, you will already have a line-of-sight between all your components. If you have multiple VNets, you will need to do VNet peering between all the VNets that are in your network. For more information, see VNet peering in Azure.
 - Allow Port 5723/5724/443 to communicate while talking from Operations Manager managed instance (preview) to the VMs being monitored and vice versa.
 
 ## Configure one domain account in Active Directory
 
-- Create one domain account in your Active Directory. The domain account is a typical Active Directory account (it can be a non-admin account). This account will be used to join the Management Servers to your existing domain.
+- Create one domain account in your Active Directory. The domain account is a typical Active Directory account (it can be a non-admin account). This account will be used to join the Management Servers that the Operations Manager managed instance (preview) creates to your existing domain.
 - Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain.
 - You can use an existing domain account if it has these [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain).
 
