@@ -95,11 +95,9 @@ To set up a SQL Server database:
 
     SQLNCLI is a pre-requisite for DPM 2022 RTM installation but is not available in SQL Server 2022. Hence after SQL Server 2022 installation you would also need to install SQL Server Native Client Separately on the SQL Server machine.  After that, ensure that you install DPM 2022 RTM and update to UR1 or later which supports SQL Server 2022 as the DPM Database and uses OLEDB 18.0 instead of SQLNCLI. 
 
-::: moniker-end
+8.  On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
 
-1.  On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
-
-1.  If you're installing SQL Server on a remote computer do the following:
+9.  If you're installing SQL Server on a remote computer do the following:
 
     -   Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
 
@@ -118,7 +116,32 @@ To set up a SQL Server database:
 
         -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
 
+::: moniker-end
 
+::: moniker range="<= sc-dpm-2019"
+
+7.  On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
+
+8.  If you're installing SQL Server on a remote computer do the following:
+
+    -   Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
+
+    -   Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
+
+        -   Ensure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
+
+        -   To allow TCP on port 80, configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server.
+            The report server listens for HTTP requests on port 80.
+
+        -   Enable RPC on the remote SQL Server.
+
+        -   The default instance of the database engine listens on TCP port 1443. This setting can be modified. To use the SQL Server Browser service to connect to instances that don't listen on the default 1433 port, you'll need UDP port 1434.
+
+        -   Named instance of SQL Server uses Dynamic ports by default. This setting can be modified.
+
+        -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
+
+::: moniker-end
 
 > [!NOTE]
 > - With SQL 2017 and later, SSRS does not get installed as a part of SQL installation. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
