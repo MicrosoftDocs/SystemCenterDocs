@@ -70,7 +70,7 @@ Below is a quick summary of what can be migrated:
 | Reports that are available in Management Pack               | No                         | No            | Power BI reports           |
 | Reports that are created on Operations console | No                         | No            | Power BI reports           |
 
-- For Dashboards/Views that are available in Management Pack, they'll display the data as they are displayed on Operations Manager on-premises as dashboards/views are built into Management Pack.
+- For Dashboards/Views that are available in Management Pack, you can view the data similar to the one in Operations Manager on-premises(as they are built into Management Pack).
 - For Dashboards/Views created on the Operations console, you need to reconfigure custom dashboards and views in Operations Manager managed instance (preview). 
 - For reports that are available in MP and on the Operations console, you need to reconfigure all reports on Power BI as the Reporting Server doesn't exist in Operations Manager managed instance (preview).  
 
