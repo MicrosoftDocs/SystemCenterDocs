@@ -17,7 +17,7 @@ monikerRange: '>=sc-om-2019'
 
 This article provides detailed information about how you can migrate from Operations Manager on-premises to Operations Manager managed instance (preview). 
 
-You can migrate the following artifacts from Operations Manager on-premises to Operations Manager managed instance (preview):
+As an example of migration, provided the procedure for the following artifact:
 
 - Management Packs and Overrides 
 - Dashboard and Reports 
@@ -27,48 +27,49 @@ You can migrate the following artifacts from Operations Manager on-premises to O
 - 1P Integrations 
 - Agent mapping and configuration
 
->[!Note]
->[Other artifacts](#other-supported-artifacts-for-migration) are also supported in Operations Manager managed instance (preview) even though the migration steps are not provided. 
+[Here](#supported-artifacts-for-migration) is the complete list of supported artifacts.
 
-## Procedure to migrate from on-premises to Operations Manager managed instance (preview)
+## Migrate from on-premises to Operations Manager managed instance (preview)
 
-Follow these steps to migrate from on-premises to Operations Manager managed instance (preview):
+Select the required artifact to view the procedure to migrate from on-premises to Operations Manager managed instance (preview):
 
 # [Management Packs and Overrides](#tab/mp-overrides)
 
 1. Run the below script to create an inventory of all existing Management Packs deployed in Operations Manager: 
 
-\<Script to be provided by Operations Manager PG\>
+    \<Script to be provided by Operations Manager PG\>
 
-2. [Export unsealed Management Packs](/system-center/scom/manage-mp-import-remove-delete?#how-to-export-an-operations-manager-management-pack)
+2. [Export unsealed Management Packs](/system-center/scom/manage-mp-import-remove-delete?#how-to-export-an-operations-manager-management-pack).
 
-3. [Import Sealed Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack)
+3. [Import Sealed Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack).
 
     - You must have a copy of any custom sealed Management Packs that you need to import. 
 
-4. [Import unsealed (exported) Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk)
+4. [Import unsealed (exported) Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk).
 
-5. Post migration validation: Use these steps to validate the migration of Groups and Data collection.
+### Post migration validation
 
-    1. **Groups**: Go to **Authoring** workspace in the Operations Manager console and select **Groups**.  Review the membership of any groups created by the Management Packs and verify that they've been populated with the correct objects. 
+Use these steps to validate the migration of Groups and Data collection.
 
-    1. **Data collection**: To verify that the intended objects are discovered, go to **Monitoring** in the Operations Manager console and review the views for each Management Pack.
+1. **Groups**: Go to **Authoring** workspace in the Operations Manager console and select **Groups**.  Review the membership of any groups created by the Management Packs and verify that they've been populated with the correct objects. 
 
-        1. Verify that the state views are populated with the correct objects (Servers, Databases, Websites, and so on) and they're being monitored (Health State isn't **Unmonitored**).
+1. **Data collection**: To verify that the intended objects are discovered, go to **Monitoring** in the Operations Manager console and review the views for each Management Pack.
 
-        1. Check the performance views and verify that performance data has been collected.
+    1. Verify that the state views are populated with the correct objects (Servers, Databases, Websites, and so on) and they're being monitored (Health State isn't **Unmonitored**).
+
+    1. Check the performance views and verify that performance data has been collected.
 
 # [Dashboard and Reports](#tab/dashboard-reports)
 
-Four types of data visualization are available in Operations Manager. 
-Below is a quick summary of what can be migrated:
+Operations Manager supports the following four types of data visualizations. 
+Here is a quick summary of what can be migrated:
 
-| Types                                          | Can be migrated to Operations Manager managed instance | Documentation | Microsoft Recommendations |
-|------------------------------------------------|----------------------------|---------------|---------------------------|--|
-| Dashboards/Views that are available in Management Pack      | Yes                        | Not required  | Operations console        |
-| Dashboards/Views created on Operations console | Yes                        | Yes           | Operations Console        |
-| Reports that are available in Management Pack               | No                         | No            | Power BI reports           |
-| Reports that are created on Operations console | No                         | No            | Power BI reports           |
+| Types of data visualizations | Can be migrated to Operations Manager managed instance (preview) | Recommendations |
+|---|---|---|---|---|
+| Dashboards/Views that are available in Management Pack | Yes | Operations console |
+| Dashboards/Views created on Operations console | Yes | Operations Console |
+| Reports that are available in Management Pack | No | Power BI reports |
+| Reports that are created on Operations console | No | Power BI reports |
 
 - For Dashboards/Views that are available in Management Pack, you can view the data similar to the one in Operations Manager on-premises(as they are built into Management Pack).
 - For Dashboards/Views created on the Operations console, you need to reconfigure custom dashboards and views in Operations Manager managed instance (preview). 
@@ -76,7 +77,10 @@ Below is a quick summary of what can be migrated:
 
 # [User roles and permissions](#tab/userrole-permission)
 
-No 1:1 mapping is permitted between user roles in Operations Manager managed instance (preview) to Operations Manager on-premises. In preview, only two user roles are available whereas Operations Manager on-premises has 10 user profile roles. For more information, see [Operations associated with user role profiles](/system-center/scom/manage-security-create-runas-account). 
+>[!Note]
+>No 1:1 mapping is permitted between user roles in Operations Manager managed instance (preview) to Operations Manager on-premises. 
+
+In preview, only two user roles are available whereas Operations Manager on-premises has 10 user profile roles. For more information, see [Operations associated with user role profiles](/system-center/scom/manage-security-create-runas-account). 
 
 Use the following mapping chart to provide access on Operations Manager managed instance (preview) with appropriate permissions. 
 
@@ -97,13 +101,13 @@ Use the following mapping chart to provide access on Operations Manager managed 
 
 1. Export the list of user roles and users in each role. 
 
-\<Script to be provided by Operations Manager PG\>.
+    \<Script to be provided by Operations Manager PG\>.
 
 2. With the exported list and mapping recommendations, manually add the users to the respective Azure (Operations Manager managed instance (preview)) user roles. 
 
 # [Notification subscriptions](#tab/notification-subscriptions)
 
-The following are the supported notification channels in Operations Manager managed instance (preview)
+Operations Manager managed instance (preview) supports the following notification channels:
 
 - Emails 
 - Teams 
@@ -119,16 +123,13 @@ Groups are migrated as part of Management Packs. For more information, see **ste
 
 # [1P Integrations](#tab/integrations)
 
-Below are the supported integrations:
+The following integrations are supported:
 
 - Service Manager 
 - System Center Virtual Machine Manager
 - Azure Monitor 
 
-Below is the recommendation on Azure equivalent services: 
-
-- System Center Orchestrator to Azure Automation 
-
+System Center Orchestrator to Azure Automation is the recommendation on Azure equivalent services.
 
 # [Agent mapping and configuration](#tab/agent-mapping-config)
 
@@ -136,10 +137,15 @@ To migrate from Agent to Operations Manager managed instance, see [High level ov
 
 --- 
 
-### Other supported artifacts for migration
+### Supported artifacts for migration
 
-Below are the other supported artifacts for migration but migration steps are not documented:
-
+- Management Packs and Overrides 
+- Dashboard and Reports 
+- User roles and permissions 
+- Notification subscriptions 
+- Groups 
+- 1P Integrations 
+- Agent mapping and configuration
 - System Center Operations Manager Databases (Ops database & DW) 
 - Operations Console 
 - Web Console 
