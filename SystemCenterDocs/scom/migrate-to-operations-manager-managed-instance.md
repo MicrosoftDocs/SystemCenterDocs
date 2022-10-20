@@ -17,7 +17,7 @@ monikerRange: '>=sc-om-2019'
 
 This article provides detailed information about how you can migrate from Operations Manager on-premises to Operations Manager managed instance (preview). 
 
-As an example of migration, provided the procedure for the following artifact:
+As an example of migration, provided the procedure for the following artifacts:
 
 - Management Packs and Overrides 
 - Dashboard and Reports 
@@ -31,7 +31,7 @@ As an example of migration, provided the procedure for the following artifact:
 
 ## Migrate from on-premises to Operations Manager managed instance (preview)
 
-Select the required artifact to view the procedure to migrate from on-premises to Operations Manager managed instance (preview):
+Select the required artifact to view the migration procedure from on-premises to Operations Manager managed instance (preview):
 
 # [Management Packs and Overrides](#tab/mp-overrides)
 
@@ -146,13 +146,13 @@ To migrate from Agent to Operations Manager managed instance, see [High level ov
 - Groups 
 - 1P Integrations 
 - Agent mapping and configuration
-- System Center Operations Manager Databases (Ops database & DW) 
+- System Center Operations Manager Databases (Ops database and DW) 
 - Operations Console 
 - Web Console 
 - ACS 
 - Gateways 
 - Active Directory integration 
-- Custom & 3P Solutions 
+- Custom and 3P Solutions 
 - 3P Management Packs
 
 ## Next steps
