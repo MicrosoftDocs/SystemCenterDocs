@@ -5,7 +5,7 @@ description: This article describes how to migrate from Operations Manager on-pr
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 10/17/2022
+ms.date: 10/20/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,7 +15,9 @@ monikerRange: '>=sc-om-2019'
 
 # Migrate from Operations Manager on-premises to Operations Manager managed instance (preview)
 
-This article provides detailed migration steps to the following artefacts from Operations Manager on-premises to Operations Manager managed instance (preview):
+This article provides detailed information about how you can migrate from Operations Manager on-premises to Operations Manager managed instance (preview). 
+
+You can migrate the following artifacts from Operations Manager on-premises to Operations Manager managed instance (preview):
 
 - Management Packs and Overrides 
 - Dashboard and Reports 
@@ -23,10 +25,10 @@ This article provides detailed migration steps to the following artefacts from O
 - Notification subscriptions 
 - Groups 
 - 1P Integrations 
-- Agent mapping and configuration 
+- Agent mapping and configuration
 
 >[!Note]
->Other artefacts are also supported in Operations Manager managed instance (preview) even though the migration steps are not provided.
+>[Other artifacts](#other-supported-artifacts-for-migration) are also supported in Operations Manager managed instance (preview) even though the migration steps are not provided. 
 
 ## Procedure to migrate from on-premises to Operations Manager managed instance (preview)
 
@@ -46,7 +48,7 @@ Follow these steps to migrate from on-premises to Operations Manager managed ins
 
 4. [Import unsealed (exported) MPs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk)
 
-5. Validation of post migration: Follow the below steps to validate the migration of Gropus and Data collection.
+5. Post migration validation: Use these steps to validate the migration of Groups and Data collection.
 
     1. **Groups**: Go to **Authoring** workspace in the Operations Manager console and select **Groups**.  Review the membership of any groups created by the Management Packs and verify that they've been populated with the correct objects. 
 
@@ -63,12 +65,12 @@ Below is a quick summary of what can be migrated:
 
 | Types                                          | Can be migrated to Operations Manager managed instance | Documentation | Microsoft Recommendations |
 |------------------------------------------------|----------------------------|---------------|---------------------------|--|
-| Dashboards/Views that are available in MP      | Yes                        | Not required  | Operations console        |
+| Dashboards/Views that are available in Management Pack      | Yes                        | Not required  | Operations console        |
 | Dashboards/Views created on Operations console | Yes                        | Yes           | Operations Console        |
-| Reports that are available in MP               | No                         | No            | Power BI reports           |
+| Reports that are available in Management Pack               | No                         | No            | Power BI reports           |
 | Reports that are created on Operations console | No                         | No            | Power BI reports           |
 
-- For Dashboards/Views that are available in MP, they'll continue to display data as they did on Operations Manager on-premises as dashboards/views are built into Management Pack.
+- For Dashboards/Views that are available in Management Pack, they'll display the data as they are displayed on Operations Manager on-premises as dashboards/views are built into Management Pack.
 - For Dashboards/Views created on the Operations console, you need to reconfigure custom dashboards and views in Operations Manager managed instance (preview). 
 - For reports that are available in MP and on the Operations console, you need to reconfigure all reports on Power BI as the Reporting Server doesn't exist in Operations Manager managed instance (preview).  
 
@@ -133,6 +135,19 @@ Below is the recommendation on Azure equivalent services
 To migrate from Agent to Operations Manager managed instance, see [High level overview of upgrading agents and running two environments](/scom/deploy-upgrade-overview#high-level-overview-of-upgrading-agents-and-running-two-environments-1).
 
 --- 
+
+### Other supported artifacts for migration
+
+Below are the other supported artifacts for migration but migration steps are not documented
+
+- System Center Operations Manager Databases (Ops DB & DW) 
+- Operations Console 
+- Web Console 
+- ACS 
+- Gateways 
+- AD integration 
+- Custom & 3P Solutions 
+- 3P Management Packs
 
 ## Next steps
 
