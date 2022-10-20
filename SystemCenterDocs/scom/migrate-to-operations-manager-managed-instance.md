@@ -36,17 +36,17 @@ Follow these steps to migrate from on-premises to Operations Manager managed ins
 
 # [Management Packs and Overrides](#tab/mp-overrides)
 
-1. Run the below script to create an inventory of all existing MPs deployed in Operations Manager: 
+1. Run the below script to create an inventory of all existing Management Packs deployed in Operations Manager: 
 
 \<Script to be provided by Operations Manager PG\>
 
-2. [Export unsealed MPs](/system-center/scom/manage-mp-import-remove-delete?#how-to-export-an-operations-manager-management-pack)
+2. [Export unsealed Management Packs](/system-center/scom/manage-mp-import-remove-delete?#how-to-export-an-operations-manager-management-pack)
 
-3. [Import Sealed MPs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack)
+3. [Import Sealed Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack)
 
     - You must have a copy of any custom sealed Management Packs that you need to import. 
 
-4. [Import unsealed (exported) MPs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk)
+4. [Import unsealed (exported) Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk)
 
 5. Post migration validation: Use these steps to validate the migration of Groups and Data collection.
 
@@ -72,7 +72,7 @@ Below is a quick summary of what can be migrated:
 
 - For Dashboards/Views that are available in Management Pack, you can view the data similar to the one in Operations Manager on-premises(as they are built into Management Pack).
 - For Dashboards/Views created on the Operations console, you need to reconfigure custom dashboards and views in Operations Manager managed instance (preview). 
-- For reports that are available in MP and on the Operations console, you need to reconfigure all reports on Power BI as the Reporting Server doesn't exist in Operations Manager managed instance (preview).  
+- For reports that are available in Management Pack and on the Operations console, you need to reconfigure all reports on Power BI as the Reporting Server doesn't exist in Operations Manager managed instance (preview).  
 
 # [User roles and permissions](#tab/userrole-permission)
 
