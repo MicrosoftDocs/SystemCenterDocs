@@ -115,7 +115,7 @@ After you migrate the notification configuration to Operations Manager managed i
 
 # [Groups](#tab/groups)
 
-Groups are migrated as part of Management Packs. For more information, see step 5 in Management Packs and Overrides.
+Groups are migrated as part of Management Packs. For more information, see **step 5** in **Management Packs and Overrides** tab.
 
 # [1P Integrations](#tab/integrations)
 
@@ -125,7 +125,7 @@ Below are the supported integrations:
 - System Center Virtual Machine Manager
 - Azure Monitor 
 
-Below is the recommendation on Azure equivalent services 
+Below is the recommendation on Azure equivalent services: 
 
 - System Center Orchestrator to Azure Automation 
 
@@ -140,12 +140,12 @@ To migrate from Agent to Operations Manager managed instance, see [High level ov
 
 Below are the other supported artifacts for migration but migration steps are not documented:
 
-- System Center Operations Manager Databases (Ops DB & DW) 
+- System Center Operations Manager Databases (Ops database & DW) 
 - Operations Console 
 - Web Console 
 - ACS 
 - Gateways 
-- AD integration 
+- Active Directory integration 
 - Custom & 3P Solutions 
 - 3P Management Packs
 
