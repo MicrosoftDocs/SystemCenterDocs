@@ -138,7 +138,7 @@ To migrate from Agent to Operations Manager managed instance, see [High level ov
 
 ### Other supported artifacts for migration
 
-Below are the other supported artifacts for migration but migration steps are not documented
+Below are the other supported artifacts for migration but migration steps are not documented:
 
 - System Center Operations Manager Databases (Ops DB & DW) 
 - Operations Console 
