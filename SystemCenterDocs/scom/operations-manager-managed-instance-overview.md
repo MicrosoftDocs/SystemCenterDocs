@@ -23,8 +23,8 @@ This service helps you with the following:
 
 - Get out of the stress of System Center Operations Manager infrastructure management. Operations Manager managed instance (preview) removes the burden of managing the management servers, web console, reporting server, and the databases.
 - You can preserve and reuse all the investments made in System Center Operations Manager over the years.
-- Monitor all your workloads running on-premesis, Azure, or in any other cloud service.
-- Have a consolidated administration and management experience for all your monitoring needs via the Azure Portal.
+- Monitor all your workloads running on-premises, Azure, or in any other cloud service.
+- Have a consolidated administration and management experience for all your monitoring needs via the Azure portal.
 
 This functionality allows you to:
 
@@ -33,7 +33,7 @@ This functionality allows you to:
 - Connect to your Operations Manager managed instance (preview) using the System Center Operations Manager Ops Console.
 - Monitor workloads (wherever they're located) using the Ops and Web Console, and while using your existing management packs.
 - Incur zero database maintenance (Ops database and Data warehouse database) because of the offloading of database management to SQL Managed Instance (SQL MI).
-- Scale your instance without the resposibility of adding/deleting physical servers/VMs.
+- Scale your instance without the responsibility of adding/deleting physical servers/VMs.
 - View your reports in Power BI.
 - Patch your instance with the latest bugs and features. 
 
