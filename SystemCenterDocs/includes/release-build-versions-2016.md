@@ -56,13 +56,8 @@ The following tables lists the release history for Operations Manager 2016.
 |-------------|---|-------------|--------------|------------|
 |7.6.1064.0 ||September 2016 |1.6.2-336 |General Availability release|  
 |7.6.1067.0 |[3190029](https://support.microsoft.com/kb/3190029) |October 2016 |1.6.2-337 |Update Rollup 1 |  
-|7.6.1072.0	 |[3209591](https://support.microsoft.com/kb/3209591) |February 2017 |1.6.2-338 |Update Rollup 2 |  
-|7.6.1076.0	 |[4016126](https://support.microsoft.com/kb/4016126) |May 2017 |1.6.2-339 |Update Rollup 3|  
-| |[4024941](https://support.microsoft.com/kb/4024941) |October 2017 | |Update Rollup 4 <sup>1</sup> |
-| |[4090987](https://support.microsoft.com/kb/4090987) |April 2018 | |Update Rollup 5 |
-| |[4459897](https://support.microsoft.com/kb/4459897) |October 2018 | |Update Rollup 6|
-| |[4492182](https://support.microsoft.com/kb/4492182) |April 2019 | |Update Rollup 7 |
-| |[4514877](https://support.microsoft.com/kb/4514877) |September 2019 | |Update Rollup 8 |
+|7.6.1072.0	|[3209591](https://support.microsoft.com/kb/3209591) |February 2017 |1.6.2-338 |Update Rollup 2 |  
+|7.6.1076.0	|[4016126](https://support.microsoft.com/kb/4016126) |May 2017 |1.6.2-339 |Update Rollup 3|
 |7.6.1092.0 |[4546986](https://support.microsoft.com/kb/4546986) |March 2020 |1.6.2-343 |Update Rollup 9 |
 |7.6.1105.0 |[4580254](https://support.microsoft.com/kb/4580254) |September 2021 |1.6.8-1 |Update Rollup 10 |
 |7.6.1108.0 |[4580254](https://support.microsoft.com/kb/4580254) |May 2022 |1.6.9-2 |Update Rollup 10 - OMI Vulnerability Fix |
