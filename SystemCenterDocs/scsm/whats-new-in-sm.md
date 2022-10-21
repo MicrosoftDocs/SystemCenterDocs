@@ -5,7 +5,7 @@ description: This article describes the new features supported in Service Manage
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 05/10/2021
+ms.date: 10/14/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
@@ -17,7 +17,9 @@ ms.custom: intro-whats-new
 
 ::: moniker range="sc-sm-2022"
 
-Ther are no new features introduced in Service Manager 2022. For issues fixed in SM 2022, see [release notes](release-notes-sm.md)  
+There are no new features introduced in Service Manager 2022. This article details the new features in Service Manager 2022 UR1.
+
+[!INCLUDE [whats-new-sm-2022.md](../includes/whats-new-sm-2022.md)]
 
 ::: moniker-end
 

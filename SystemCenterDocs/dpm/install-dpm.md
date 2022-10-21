@@ -1,5 +1,5 @@
 ---
-description: This article contains prerequisites and set up instructions for DPM 2016 and it includes attended and unattended instructions
+description: This article contains prerequisites and setup instructions for DPM 2016 and it includes attended and unattended instructions
 manager: carmonm
 ms.topic: article
 author: jyothisuri
@@ -38,9 +38,9 @@ Here's what you need to do to set up System Center Data Protection Manager (DPM)
 |Environment |Details or specifics for the installation|
 |----------- |-----------------------------------------|
 |Basic DPM installation prerequisites|A number of components are needed on the DPM server. These are installed automatically during setup:<br /><br />-   .NET Framework 4.0 or 4.5 (DPM 2016/2019); .NET Framework 3.5 required for SQL installation (Before SQL 2016); .NET Framework 4.6 required for SQL installation (SQL 2016 onwards) . Install with Add Features in Server Manager if it doesn't install automatically.<br />-   Windows Installer 4.5 (or later). Installed as part of the operating system but can also be installed as an administrator from \<root directory\>DPM\setup\redist\WindowsInstaller\INSTMSI45.EXE.<br />-   Microsoft Visual C++ 2012 Redistributable; Microsoft Visual C++ 2010 Redistributable; Microsoft Visual C++ 2008 Redistributable. <br />-   PowerShell 3.0 (included with Windows Server 2012 R2 or 2012) <br />|
-|DPM database<br />|- [Verify supported SQL server versions](prepare-environment-for-dpm.md#sql-server-database) for the DPM database. <br /> - You can install SQL server on the DPM server or on a remote server.<br /> - Have SQL installed locally or remotely before you install DPM. <br /> - If you install the database remotely, the computer running the remote instance must be in the same domain and time zone as the DPM server. <br />- If you're running a remote database, make sure to run SQL Prep tool on the remote SQL computer before installing DPM. <br />- SQL server can be standalone or running in a cluster.<br />- If SQL server is clustered, Reporting server and SQL server should be on different computers. <br />- You can't run SQL server on a domain controller. <br />- You can't use a SQL server Always-On deployment.<br />- If you deploy DPM as an Azure virtual machine (VM), use an Azure VM running SQL server as a remote SQL server instance. You can't use an on-premises SQL server in this deployment, and Azure SQL database isn't currently supported.|
-|DPM installed as Hyper-V VM|If you're installing DPM as a Hyper-V virtual machine note that:<br /><br /><ul><li>Virtual DPM installation isn't for scaled up environments. Instead, use direct attach/SAN-based storage. Performance can suffer in scaled up (Hyper-V on CSV) environments using VHDX files compared to SAN. Therefore, for scaled up environments we don't recommend using VHDX.</li><li>There's no size limit for VHDX.<br />    Both fixed and dynamically expanding VHDX files are supported.</li><li>Both VHD and VHDX files are supported in the DPM storage pool.<br />     A virtual DPM installation is required to support adding virtual hard drives to the storage pool.</li><li>For dynamic and fixed virtual hard drives, VHD and VHDX files are supported on remote SMB shares.</li><li>From DPM 2012 R2 with Update 3 onwards you can run DPM as a Hyper-V virtual machine with support for tape drives using synthetic FC.</li><li>For high availability DPM storage, virtual hard drives should be placed on scaled-out file servers (SOFS).  SMB 3.0 is required for scaled-out file servers.</li><li>Virtual DPM installations don't support:<br /><br /><ul><li>Windows 2012 Storage Spaces or virtual hard drives built on top of storage spaces.<br /> Local or remote hosting of VHDX files on Windows 2012 storage space also isn't supported.</li><li>Enabling Disk Dedupe on volumes hosting virtual hard drives.</li><li>Windows 2012 iSCSI targets (which use virtual hard drives) as a DPM storage pool.</li><li>NTFS compression for volumes hosting VHD files used in the DPM storage pool.</li><li>BitLocker on volumes hosting VHD files used for the storage pool.</li><li>A native 4K sector size of physical disks for VHDX files in the DPM storage pool.</li><li>Virtual hard drives hosted on Windows 2008 servers.</li></ul></li></ul>|
-|DPM as an Azure virtual machine|<ul><li>DPM is supported on any Azure IaaS virtual machine of size A2 or higher.<br />     You can select a size for the DPM virtual machine using the [DPM Azure virtual machine size calculator](/samples/browse/?redirectedfrom=TechNet-Gallery).  When you set up the virtual machine create an instance in the Standard compute tier because the maximum IOPS per attached disk is higher in the Standard tier than in the Basic tier.</li><li>DPM can protect the workloads as detailed here in [protection matrix](~/dpm/dpm-protection-matrix.md).</li><li>DPM can protect workloads that run across multiple Azure cloud services that have the same Azure virtual network and Azure subscription.<br /> DPM running as an Azure virtual machine can't protect on-premises data.</li><li>Use a separate storage account for the DPM virtual machine, because there are size and IOPS limits on a storage account that might impact the performance of the DPM virtual machine if shared with other running virtual machines. The DPM virtual machine and the protected workloads should be part of the same Azure virtual network.</li><li>The number of disks that can be used for the target storage (DPM storage pool) is limited by the size of the virtual machine (maximum of 16).  The Azure Backup agent running on the DPM server needs temporary storage for its own use (a cache location), and for data restored from the cloud (local staging area). Note that each Azure virtual machine comes with some temporary disk storage. This is available to the user as the volume D:\\. The local staging area needed by Azure Backup can be configured to reside in D:\\, and the cache location can be placed on C:\\. In this way, no space needs to be carved out from the data disks attached to the DPM virtual machine.</li><li>You store data on Azure disks attached to the DPM virtual machine. Once attached to the virtual machine, the disks and the storage space are managed from within DPM. The amount of data you can back up depends on the number and size of disks attached to the DPM virtual machine. There is a maximum number of disks that can be attached to each Azure virtual machine (4 disks for A2V2, A4V2, A8V2), and maximum size of each disk (1 TB). This determines the total backup storage pool available. We recommend you retain data for one day on DPM-attached Azure disk, and store data older than one day in the Azure Backup service. This provides data store for a longer retention range, and allows you to protect a larger amount of data by offloading it to Azure Backup.</li><li>If you want to scale your deployment you have the following options:<br /><br /><ul><li>Option 1, Scale up: Increase the size of the DPM virtual machine from A2V2, A4V2, A8V2, and add more local storage.</li><li>Option 2, Offload data: Send older data to Azure Backup, and retain only the newest data on the storage attached to the DPM server.</li><li>Option 3, Scale out: Add more DPM servers to protect the workloads.</li></ul></li><li>The maximum number of protected workloads for each DPM virtual machine size is summarized in Table A below.</li></ul>|
+|DPM database<br />|- [Verify supported SQL server versions](prepare-environment-for-dpm.md#sql-server-database) for the DPM database. <br /> - You can install the SQL server on the DPM server or a remote server.<br /> - Have SQL installed locally or remotely before you install DPM. <br />- If you plan to use SQL server 2022 with DPM 2022, ensure to install [SQL server Native Client (SQLNCLI)](https://www.microsoft.com/download/details.aspx?id=50402) on the SQL server machine before you install DPM 2022 RTM as SQL 2022 doesn't ship with SQLNCLI.  <br />- If you install the database remotely, the computer running the remote instance must be in the same domain and time zone as the DPM server. <br />- If you're running a remote database, make sure to run the SQL Prep tool on the remote SQL computer before installing DPM. <br />- SQL server can be standalone or running in a cluster.<br />- If the SQL server is clustered, Reporting server and SQL server should be on different computers. <br />- You can't run an SQL server on a domain controller. <br />- You can't use a SQL server Always-On deployment.<br />- If you deploy DPM as an Azure virtual machine (VM), use an Azure VM running SQL server as a remote SQL server instance. You can't use an on-premises SQL server in this deployment, and the Azure SQL database isn't currently supported.|
+|DPM installed as Hyper-V VM|If you're installing DPM as a Hyper-V virtual machine note that:<br /><br /><ul><li>Virtual DPM installation isn't for scaled-up environments. Instead, use direct attach/SAN-based storage. Performance can suffer in scaled-up (Hyper-V on CSV) environments using VHDX files compared to SAN. Therefore, for scaled-up environments, we don't recommend using VHDX.</li><li>There's no size limit for VHDX.<br />    Both fixed and dynamically expanding VHDX files are supported.</li><li>Both VHD and VHDX files are supported in the DPM storage pool.<br />     A virtual DPM installation is required to support adding virtual hard drives to the storage pool.</li><li>For dynamic and fixed virtual hard drives, VHD and VHDX files are supported on remote SMB shares.</li><li>From DPM 2012 R2 with Update 3 onwards, you can run DPM as a Hyper-V virtual machine with support for tape drives using synthetic FC.</li><li>For high-availability DPM storage, virtual hard drives should be placed on scaled-out file servers (SOFS).  SMB 3.0 is required for scaled-out file servers.</li><li>Virtual DPM installations don't support:<br /><br /><ul><li>Windows 2012 Storage Spaces or virtual hard drives built on top of storage spaces.<br /> Local or remote hosting of VHDX files on Windows 2012 storage space also isn't supported.</li><li>Enabling Disk Dedupe on volumes hosting virtual hard drives.</li><li>Windows 2012 iSCSI targets (which use virtual hard drives) as a DPM storage pool.</li><li>NTFS compression for volumes hosting VHD files used in the DPM storage pool.</li><li>BitLocker on volumes hosting VHD files used for the storage pool.</li><li>A native 4K sector size of physical disks for VHDX files in the DPM storage pool.</li><li>Virtual hard drives hosted on Windows 2008 servers.</li></ul></li></ul>|
+|DPM as an Azure virtual machine|<ul><li>DPM is supported on any Azure IaaS virtual machine of size A2 or higher.<br />     You can select a size for the DPM virtual machine using the [DPM Azure virtual machine size calculator](/samples/browse/?redirectedfrom=TechNet-Gallery).  When you set up the virtual machine create an instance in the Standard compute tier because the maximum IOPS per attached disk are higher in the Standard tier than in the Basic tier.</li><li>DPM can protect the workloads as detailed here in the [protection matrix](~/dpm/dpm-protection-matrix.md).</li><li>DPM can protect workloads that run across multiple Azure cloud services that have the same Azure virtual network and Azure subscription.<br /> DPM running as an Azure virtual machine can't protect on-premises data.</li><li>Use a separate storage account for the DPM virtual machine, because there are size and IOPS limits on a storage account that might impact the performance of the DPM virtual machine if shared with other running virtual machines. The DPM virtual machine and the protected workloads should be part of the same Azure virtual network.</li><li>The number of disks that can be used for the target storage (DPM storage pool) is limited by the size of the virtual machine (maximum of 16).  The Azure Backup agent running on the DPM server needs temporary storage for its use (a cache location), and data restored from the cloud (local staging area). Note that each Azure virtual machine comes with some temporary disk storage. This is available to the user as the volume D:\\. The local staging area needed by Azure Backup can be configured to reside in D:\\, and the cache location can be placed on C:\\. In this way, no space needs to be carved out from the data disks attached to the DPM virtual machine.</li><li>You store data on Azure disks attached to the DPM virtual machine. Once attached to the virtual machine, the disks and the storage space are managed from within DPM. The amount of data you can back up depends on the number and size of disks attached to the DPM virtual machine. There is a maximum number of disks that can be attached to each Azure virtual machine (4 disks for A2V2, A4V2, and A8V2), and the maximum size of each disk (1 TB). This determines the total backup storage pool available. We recommend you retain data for one day on the DPM-attached Azure disk, and store data older than one day in the Azure Backup service. This provides data storage for a longer retention range and allows you to protect a larger amount of data by offloading it to Azure Backup.</li><li>If you want to scale your deployment you have the following options:<br /><br /><ul><li>Option 1, Scale up: Increase the size of the DPM virtual machine from A2V2, A4V2, A8V2, and add more local storage.</li><li>Option 2, Offload data: Send older data to Azure Backup, and retain only the newest data on the storage attached to the DPM server.</li><li>Option 3, Scale-out: Add more DPM servers to protect the workloads.</li></ul></li><li>The maximum number of protected workloads for each DPM virtual machine size is summarized in Table A below.</li></ul>|
 
 Table A
 
@@ -53,41 +53,57 @@ Table A
 ## <a name="BKMK_SQL"></a>Set up a SQL Server database
 You'll need to set up a SQL Server database if:
 
+::: moniker range="<= sc-dpm-2019"
+
 -   You're running DPM 2019, 2016
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+-   You're running DPM 2022, 2019, 2016
+
+::: moniker-end
 
 To set up a SQL Server database:
 
 1.  Run SQL Server setup on the local server on which you'll install DPM, or on a remote server.
 
-2.  On the **Installation** tab, click **New SQL Server stand-alone installation** or **add features to an existing installation**.
+1.  On the **Installation**, select **New SQL Server stand-alone installation** or **add features to an existing installation**.
 
-3.  On the **Product Key** tab enter a valid license key. On the **Setup Support Rules** tab, correct any failures before proceeding.
-     On the **Setup Role** tab select **SQL Server Feature Installation**
+1.  On the **Product Key**, enter a valid license key. On the **Setup Support Rules**, correct any failures before proceeding.
+     On the **Setup Role**, select **SQL Server Feature Installation**
 
-4.  On the **Feature Selection** tab select **Database Engine Services**. In **Instance Features**, select **Reporting Service - Native**.
-     On the  **Installation Rules** tab review the rules.
+1.  On the **Feature Selection**, select **Database Engine Services**. In **Instance Features**, select **Reporting Service - Native**.
+     On the **Installation Rules**, review the rules.
 
-5.  On the **Instance Configuration** tab specify the name of SQL Server instance you'll use for DPM.  Don't use an underscore or localized characters in the name. In **Disk Space Requirements** review the information.
+1.  On the **Instance Configuration**, specify the name of the SQL Server instance you'll use for DPM.  Don't use underscore or localized characters in the name. In **Disk Space Requirements** review the information.
 
-6.  In **Server Configuration** -> **Service Accounts** specify the domain accounts under which the SQL Server services should run:
+1.  In **Server Configuration** > **Service Accounts**, specify the domain accounts under which the SQL Server services should run:
 
     -   We recommend you use a single, dedicated domain user account to run SQL Server services, SQL Server agent, SQL Server Database Engine, and SQL Server Reporting services.
 
-    -   If you're installing DPM on an RODC then use the DPMSQLSvcsAcctaccount you created there.  Note that the user account  must be a member of the local Administrators group on the domain controller where the remote instance is installed. After setup is complete, you can remove the user account from the local Administrators group.  In addition for installation on an RODC you'll need to enter the password you selected when you set up RODC for DPM and crated the  DPMR$MACHINENAME account.
+    -   If you're installing DPM on an RODC then use the *DPMSQLSvcsAcctaccount* you created there.  Note that the user account  must be a member of the local Administrators group on the domain controller where the remote instance is installed. After setup is complete, you can remove the user account from the local Administrators group.  In addition for installation on an RODC, you'll need to enter the password you selected when you set up RODC for DPM and create the  *DPMR$MACHINENAME* account.
 
-    -   When you create a domain user account give it the lowest possible privileges, assign it a strong password that does not expire, and give it a name that's easily identifiable. You'll add this account to the local Administrators group and to the SQL Server Sysadmin fixed server role later in the wizard.
+    -   When you create a domain user account give it the lowest possible privileges, assign it a strong password that does not expire, and give it an easily identifiable name. You'll add this account to the local Administrators group and the SQL Server Sysadmin fixed server role later in the wizard.
 
     -   All services except the SQL Full-text Filter Daemon Launcher should be set to Automatic.
 
-7.  On the **Database Engine Configuration** tab, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and click **Ready to Install** -> **Install**.
+::: moniker range="sc-dpm-2022"
 
-8.  If you're installing SQL Server on a remote computer do the following:
+7. If you use SQL server 2022, you need to install [SQL Server Native Client (SQLNCLI)](https://www.microsoft.com/download/details.aspx?id=50402) on the SQL Server 2022 machine. 
 
-    -   Install the DPM support files (SQLPrep). To do this, on the SQL Server computer insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 redistributable. The DPM support files will be installed automatically.
+    SQLNCLI is a pre-requisite for DPM 2022 RTM installation but is not available in SQL Server 2022. Hence after SQL Server 2022 installation you would also need to install SQL Server Native Client Separately on the SQL Server machine.  After that, ensure that you install DPM 2022 RTM and update to UR1 or later which supports SQL Server 2022 as the DPM Database and uses OLEDB 18.0 instead of SQLNCLI. 
+
+8.  On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
+
+9.  If you're installing SQL Server on a remote computer do the following:
+
+    -   Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
 
     -   Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
 
-        -   Make sure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
+        -   Ensure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
 
         -   To allow TCP on port 80, configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server.
             The report server listens for HTTP requests on port 80.
@@ -100,14 +116,39 @@ To set up a SQL Server database:
 
         -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
 
+::: moniker-end
 
+::: moniker range="<= sc-dpm-2019"
+
+7.  On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
+
+8.  If you're installing SQL Server on a remote computer do the following:
+
+    -   Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
+
+    -   Set up firewall rules so that the DPM server can communicate with the SQL Server computer:
+
+        -   Ensure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
+
+        -   To allow TCP on port 80, configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server.
+            The report server listens for HTTP requests on port 80.
+
+        -   Enable RPC on the remote SQL Server.
+
+        -   The default instance of the database engine listens on TCP port 1443. This setting can be modified. To use the SQL Server Browser service to connect to instances that don't listen on the default 1433 port, you'll need UDP port 1434.
+
+        -   Named instance of SQL Server uses Dynamic ports by default. This setting can be modified.
+
+        -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
+
+::: moniker-end
 
 > [!NOTE]
-> - With SQL 2017 and later, SSRS does not get installed as a part of SQL install. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
+> - With SQL 2017 and later, SSRS does not get installed as a part of SQL installation. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
 > - For remote clustered SQL instance, Database Engine must be on the cluster and SSRS must be on a separate computer (which can be the DPM server or any other computer).
-> - In both local or remote SQL server scenario following components must be installed on the DPM server.<br>
-     - [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) is no longer installed with SQL Server; you must install equivalent version of SSMS separately.<br>
-     - For SQL Server 2019, along with SSMS you should also install [SQLCMD](/sql/tools/sqlcmd-utility), [Visual C++ 2017 Redistributable](/cpp/windows/latest-supported-vc-redist?preserve-view=true&view=msvc-170) and [Microsoft ODBC Driver 17 for SQL Server](/sql/connect/odbc/download-odbc-driver-for-sql-server#version-17) on the DPM server separately.
+> - In both local or remote SQL server scenarios, the following components must be installed on the DPM server.<br>
+     - [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) is no longer installed with SQL Server; you must install an equivalent version of SSMS separately.<br>
+     - For SQL Server 2019, along with SSMS you should also install [SQLCMD](/sql/tools/sqlcmd-utility), [Visual C++ 2017 Redistributable](/cpp/windows/latest-supported-vc-redist?preserve-view=true&view=msvc-170), and [Microsoft ODBC Driver 17 for SQL Server](/sql/connect/odbc/download-odbc-driver-for-sql-server#version-17) on the DPM server separately.
 
 
 
@@ -116,22 +157,22 @@ To set up a SQL Server database:
 >[!IMPORTANT]
 > When installing DPM, use NetBIOS names for the domain name and SQL machine name. Do not use fully qualified domain names (FQDN).
 
-1.  If required, extract the DPM 2016.exe (for DPM 2016)/DPM 2019.exe (for DPM 2019) file onto the machine on which you want to run DPM. To do this, run the exe file and on the **Welcome** screen, click **Next**. In  **Select Destination Location** specify where you want to extract the installation files to. In **Ready to Extract** click **Extract.**. After the extraction finishes go to the specified location and run **Setup.exe**.
+1.  If required, extract the DPM 2016.exe (for DPM 2016)/DPM 2019.exe (for DPM 2019) file onto the machine on which you want to run DPM. To do this, run the exe file, and on the **Welcome** screen, select **Next**. In **Select Destination Location**, specify where you want to extract the installation files to. In **Ready to Extract**, select **Extract**. After the extraction finishes go to the specified location and run **Setup.exe**.
 
-2.  On the **Welcome** page of DPM Setup click **Next**. On the **License Terms** page accept the agreement > **OK**.
+2.  On the **Welcome** page of DPM Setup, select **Next**. On the **License Terms** page accept the agreement > **OK**.
 
 3.  On the **Prerequisites Check** page, wait for the check and resolve any issues before proceeding.
 
-4.  On the **Product Registration** page click **Next**. On the **Microsoft Update Opt-In** page, choose whether you want to include DPM in your Microsoft Updates.
+4.  On the **Product Registration** page, select **Next**. On the **Microsoft Update Opt-In** page, choose whether you want to include DPM in your Microsoft Updates.
 
-5.  On **Summary of Settings** page check the settings and click **Install**. After install is complete click **Close**. It will automatically launch Windows update to check for changes.
+5.  On the **Summary of Settings** page, check the settings and select **Install**. After the installation is completed, select **Close**. It will automatically launch a Windows update to check for changes.
 
 ## <a name="BKMK_Unattend"></a>Run an unattended install
 Run an unattended install as follows:
 
-1. Make sure you have the prerequisites installed before you start.
+1. Ensure you have the prerequisites installed before you start.
 
-2. On the remote SQL Server, make sure .NET Framework 3.5 (for SQL 2016) 4.0 or 4.5 (SQL 2017) is installed on Windows server before installing SQL.
+2. On the remote SQL Server, make sure .NET Framework 3.5 (for SQL 2016) 4.0 or 4.5 (SQL 2017) is installed on the Windows server before installing SQL.
 3. Use the following code to make sure the firewall is opened:
 
    ```
@@ -141,12 +182,12 @@ Run an unattended install as follows:
 
 4. Install SQL Server on the local or remote server.
 
-5. Copy the following text into Notepad (or another text editor) and save the script on the DPM server as DPMSetup.ini. You use the same script whether the SQL Server instance is installed on the DPM server or on a remote server.
+5. Copy the following text into Notepad (or another text editor) and save the script on the DPM server as DPMSetup.ini. You use the same script whether the SQL Server instance is installed on the DPM server or a remote server.
 
    >[!IMPORTANT]
    > When installing DPM, use NetBIOS names for the domain name and SQL machine name. Do not use fully qualified domain names (FQDN).
 
-   When creating DPMSetup.ini, replace the text inside <> with values from your own environment. Lines beginning with the hash (#) are commented out, and DPM setup uses the default values. To specify your own values, type the values within the <> and delete the hash (#).
+   When creating DPMSetup.ini, replace the text inside <> with values from your environment. Lines beginning with the hash (#) are commented out, and the DPM setup uses the default values. To specify your values, type the values within the <> and delete the hash (#).
 
    ```
    [OPTIONS]
@@ -180,7 +221,7 @@ Run an unattended install as follows:
 ## <a name="BKMK_DC"></a>Install DPM on a domain controller
 If you want to set up DPM on an RODC you'll need to do a couple of steps before you set up SQL Server and install DPM.
 
-1.  Create the security groups and accounts needed for DPM. To do this click **Start** > **Administrative Tools** > **Active Directory Users and Computers** > **Domain/Builtin** and create these security groups. For each group use the default setting for Scope (Global) and Group type (Security):
+1.  Create the security groups and accounts needed for DPM. To do this, select **Start** > **Administrative Tools** > **Active Directory Users and Computers** > **Domain/Builtin** and create these security groups. For each group use the default setting for Scope (Global) and Group type (Security):
 
     - DPMDBReaders$<*Computer Name*>;
     - MSDPMTrustedMachines$<*Computer Name*>;
@@ -191,12 +232,12 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
     - DPMSCOM$<*Computer Name*>;
     - DPMRATrustedDPMRAs$<*Computer Name*>, where <*Computer Name*> is the name of the domain controller.
 
-2.  Add the local machine account for the domain controller (<*Computer Name*>) to the MSDPMTrustedMachines$<*Computer Name*> group. Then on the primary domain controller create a domain user account with the lowest possible credentials. Assign it a strong password  that doesn't expire and add it to the local administrators group.
+2.  Add the local machine account for the domain controller (<*Computer Name*>) to the `MSDPMTrustedMachines$<*Computer Name*>` group. Then on the primary domain controller, create a domain user account with the lowest possible credentials. Assign it a strong password that doesn't expire and add it to the local administrators' group.
 
     > [!NOTE]
-    > Make a note of this account because you need to configure the SQL Server services during the installation of SQL Server. You can name this user account anything that you want; however, for the purposes of easily identifying the account's purpose, you might want to give it a significant name, such as DPMSQLSvcsAcct. For the purposes of these procedures, this account is referred as the DPMSQLSvcsAcct account.
+    > Make a note of this account because you need to configure the SQL Server services during the installation of the SQL Server. You can name this user account anything that you want; however, to easily identify the account's purpose, you might want to give it a significant name, such as *DPMSQLSvcsAcct*. For these procedures, this account is referred to as the *DPMSQLSvcsAcct* account.
 
-3.  On the primary domain controller, create another domain user account with the lowest possible credentials and name the account DPMR$MACHINENAME, assign it a strong password that does not expire, and then add this account to the DPMDBReaders$<*Computer Name*> group.
+3.  On the primary domain controller, create another domain user account with the lowest possible credentials and name the account *DPMR$MACHINENAME*, assign it a strong password that does not expire, and then add this account to the `DPMDBReaders$<*Computer Name*>` group.
 
 4.  Then create the security groups and user accounts needed for the SQL Server database with scope: global and Group type: security. The group or account should be in this format <*grouporaccountnameComputerName*>.
 
@@ -220,19 +261,19 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
     SQLServerReportServerUser$<*ComputerName*>$MSRS10.<*InstanceID*>
     SQLServerMSASUser$<*ComputerName*>$<*InstanceID*>
 
-6.  After you've complete these steps you can install SQL Server:
+6.  After you've completed these steps, you can install SQL Server:
 
     -   Log onto the domain controller on which you want to install DPM using the domain user account that you created earlier. Let's refer to this account as DPMSQLSvcsAcct.
 
-    -   Start to install SQL Server. On the **Server Configuration - Service Accounts** page of Setup you specify the login account for the SQL Server services (SQL Server Agent, SQL Server Database Engine, SQL Server Reporting services) to run under the user account DPMSQLSvcsAcct.
+    -   Start to install SQL Server. On the **Server Configuration - Service Accounts** page of Setup, you specify the login account for the SQL Server services (SQL Server Agent, SQL Server Database Engine, SQL Server Reporting services) to run under the user account DPMSQLSvcsAcct.
 
-    -   After SQL Server is installed, open **SQL Server Configuration Manager** > **SQL Server Network Configuration** > **Protocols**, right-click **Named Pipes** > **Enable**. You'll need to stop and restart the SQL Server service.
+    -   After SQL Server is installed, open **SQL Server Configuration Manager** > **SQL Server Network Configuration** > **Protocols**, select and hold **Named Pipes** > **Enable**. You'll need to stop and restart the SQL Server service.
 
 7.  Then you can install DPM:
 
-    -   On the **SQL Server Settings** page  type the name of the instance of SQL Server that you installed in procedure as localhost\\&lt;Instance Name&gt;, and then type the credentials for the first domain user account you created (the DPMSQLSvcsAcct account).  This account must be a member of the local Administrators group on the domain controller where the remote instance is installed. After setup is complete, you can remove the user account from the local Administrators group.
+    -   On the **SQL Server Settings** page, type the name of the instance of SQL Server that you installed in the procedure as localhost\\&lt;Instance Name&gt;, and then type the credentials for the first domain user account you created (the DPMSQLSvcsAcct account).  This account must be a member of the local Administrators group on the domain controller where the remote instance is installed. After setup is complete, you can remove the user account from the local Administrators group.
 
-    -   On the **Security Settings** page you'll need to enter the same password that you used when you created the DPMR$MACHINENAME user account earlier.
+    -   On the **Security Settings** page, you'll need to enter the same password that you used when you created the DPMR$MACHINENAME user account earlier.
 
     -   Open SQL Server Management Studio and connect to the instance of SQL Server that DPM is configured to use. Click **New Query**, copy the text below to the right pane, and then press F5 to run the query.
 
@@ -250,10 +291,10 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
 
 ## Upgrade SQL 2016 to SQL 2017
 
-If you want to use SQL 2017 with DPM Semi Annual Channel 1801 or later, you must upgrade SQL 2016 to SQL 2017. You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, to SQL 2017. The following procedure lists the steps to upgrade SQL 2016 to SQL 2017.
+If you want to use SQL 2017 with DPM Semi-Annual Channel 1801 or later, you must upgrade SQL 2016 to SQL 2017. You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, to SQL 2017. The following procedure lists the steps to upgrade SQL 2016 to SQL 2017.
 
 >[!NOTE]
-> SQL 2017 is supported as a database with DPM 1801 in upgrade scenarios. With DPM 2019, SQL 2017 is supported as  a DPM database, in both new installation and upgrade scenarios of DPM.
+> SQL 2017 is supported as a database with DPM 1801 in upgrade scenarios. With DPM 2019, SQL 2017 is supported as a DPM database, in both new installation and upgrade scenarios of DPM.
 
 1. On the SQL Server, back up the Reporting database.
 2. Back up the Encryption Keys.

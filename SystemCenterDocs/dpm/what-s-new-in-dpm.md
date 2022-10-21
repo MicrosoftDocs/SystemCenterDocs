@@ -16,7 +16,7 @@ ms.custom: intro-whats-new
 
 ::: moniker range="sc-dpm-2022"
 
-This article details the new features supported in System Center - Data Protection Manager (DPM) 2022.
+This article details the new features supported in System Center - Data Protection Manager (DPM) 2022. Also details the new features in DPM 2022 UR1.
 
 [!INCLUDE [whats-new-dpm-2022.md](../includes/whats-new-dpm-2022.md)]
 
@@ -167,11 +167,11 @@ See the following sections for information about the new features/feature update
 For issues fixed in UR4, and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-2019-data-protection-manager-1f4a13ed-9750-49bb-b312-9def71bc31da).
 
 ### Removed File Catalog dependency for online backup of file/folder workloads
-DPM 2019 UR4 removes the dependency on File Catalog which was needed to restore individual files and folders from the Online recovery points. DPM now uses iSCSI mount method to provide individual file restore. This also improves the backups time as upload of file catalog metadata is not needed anymore
+DPM 2019 UR4 removes the dependency on File Catalog, which was needed to restore individual files and folders from the Online recovery points. DPM now uses the iSCSI mount method to provide individual file restore. This also improves backups time as upload of file catalog metadata is not needed anymore
 
 ### Private endpoint support 
 
-With DPM 2019 UR4, you can use private endpoint to take online backup to Azure Backup Recovery Services vault. [Learn more](/azure/backup/private-endpoints-overview).
+With DPM 2019 UR4, you can use a private endpoint to take online backup to Azure Backup Recovery Services vault. [Learn more](/azure/backup/private-endpoints-overview).
 
 ### Improvements VHDX mounting and unmounting
 
