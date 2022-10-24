@@ -37,9 +37,14 @@ Select the required artifact to view the migration procedure from on-premises to
 
 1. Run the below script to create an inventory of all existing Management Packs deployed in Operations Manager: 
 
-    \<Script to be provided by Operations Manager PG\>
+    ```powershell
+    Get-SCOMManagementPack | Select-Object DisplayName, Name, Sealed, Version, LastModified | Sort-Object DisplayName | Format-Table
+    ```
 
-2. [Export unsealed Management Packs](/system-center/scom/manage-mp-import-remove-delete?#how-to-export-an-operations-manager-management-pack).
+2. [Export unsealed Management Packs](/system-center/scom/manage-mp-import-remove-delete?#how-to-export-an-operations-manager-management-pack):
+   ```powershell
+   Get-SCOMManagementPack | Where{ $_.Sealed -eq $false } | Export-SCOMManagementPack -Path "C:\Temp\Unsealed Management Packs"
+   ```
 
 3. [Import Sealed Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack).
 
@@ -101,7 +106,32 @@ Use the following mapping chart to provide access on Operations Manager managed 
 
 1. Export the list of user roles and users in each role. 
 
-    \<Script to be provided by Operations Manager PG\>.
+    ```powershell
+    # This script will export the SCOM User Roles to CSV and Text File Format.
+    # -----------------------------------------------
+    # Outputs the file to the current users desktop
+    # -----------------------------------------------
+    $UserRoles = @()
+    $UserRoleList = Get-SCOMUserRole
+    Write-Output "Processing User Role:  "
+    foreach ($UserRole in $UserRoleList)
+    {
+      Write-Output "    $UserRole"
+      $UserRoles += New-Object -TypeName psobject -Property @{
+        Name = $UserRole.Name;
+        DisplayName = $UserRole.DisplayName;
+        Description = $UserRole.Description;
+        Users = ($UserRole.Users -join "; ");
+      }
+    }
+    $UserRolesOutput = $UserRoles | Select-Object Name, DisplayName, Description, Users
+    # Table Output
+    $UserRolesOutput | Format-Table -AutoSize
+    # CSV Output
+    $UserRolesOutput | Export-CSV -Path "$env:USERPROFILE`\Desktop\UserRoles.csv" -NoTypeInformation
+    # Text File Output
+    $UserRolesOutput | Out-File "$env:USERPROFILE`\Desktop\UserRoles.txt" -Width 4096
+    ```
 
 2. With the exported list and mapping recommendations, manually add the users to the respective Azure (Operations Manager managed instance (preview)) user roles. 
 
