@@ -68,6 +68,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 **SQL version** | **Supported**
 --- | ---
+**[SQL Server 2022](/lifecycle/products/?terms=SQL+Server+2022)** | Y
 **[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
 **[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
 
