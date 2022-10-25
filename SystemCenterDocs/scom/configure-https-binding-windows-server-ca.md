@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: How to Configure an HTTPS Binding for a Windows Server CA.
-description: This article describes How to Configure an HTTPS Binding for a Windows Server CA.
+title: How to configure an HTTPS binding for a Windows Server CA
+description: This article describes How to configure an HTTPS binding for a Windows Server CA.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Configure an HTTPS Binding for a Windows Server CA
+# How to configure an HTTPS binding for a Windows Server CA
 
 If you are setting up a new certification authority (CA) for the first time for use with System Center – Operations Manager, use the following procedure to configure an HTTPS binding for the CA.
 
@@ -46,3 +46,7 @@ To configure an HTTPS binding, do the following:
 10. On the **SSL Settings** pane, check the **Require SSL** box.
 
 11. On the **Actions** pane, select **Apply**, and close Internet Information Services (IIS) Manager.
+
+## Next steps
+
+[Obtain a certificate for use with Windows Servers and System Center Operations Manager](obtain-certificate-windows-server-and-operations-manager.md)
