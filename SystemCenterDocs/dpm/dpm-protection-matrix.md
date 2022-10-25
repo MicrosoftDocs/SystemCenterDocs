@@ -65,7 +65,7 @@ Use the following matrix for DPM 2019:
 
 ## Protection support matrix
 
-The following sections details the protection support matrix for DPM:
+The following sections detail the protection support matrix for DPM:
 
 -  [Applications Backup](#applications-backup)
 -  [VM backup](#vm-backup)
@@ -80,11 +80,11 @@ The following sections details the protection support matrix for DPM:
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
 |Client computers (64-bit)|Windows 11, Windows 10|Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS. FAT and FAT32 aren't supported.<br /><br />Volumes must be at least 1 GB. DPM uses Volume Shadow Copy Service (VSS) to take the data snapshot and the snapshot only works if the volume is at least 1 GB.|
-|Servers (64-bit)|Windows Server 2022, 2019, 2016, 2012 R2, 2012 |Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|Volume, share, folder, file, deduped volumes.<br /><br />[System state and bare metal](back-up-system-state-and-bare-metal.md) (not supported for Azure virtual machine).<br /><br />DPM 2019 UR1 and later supports the protection of ReFS volumes and ReFS deduped volume.  |
+|Servers (64-bit)|Windows Server 2022, 2019, 2016, 2012 R2, 2012 |Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|Volume, share, folder, file, deduped volumes.<br /><br />[System state and bare metal](back-up-system-state-and-bare-metal.md) (not supported for Azure virtual machine).<br /><br />DPM 2019 UR1 and later supports the protection of ReFS volumes and ReFS deduped volumes.  |
 |System Center VMM|VMM 2019, 2016|Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|All deployment scenarios: Database|
 |SQL Server|SQL Server 2019, SQL Server 2017, 2016 and [supported SPs](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202016), 2014 and supported [SPs](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202014) |Physical server <br /><br /> Hyper-V virtual machine <br /><br /> VMware virtual machine <br /> <br /> Azure virtual machine |All deployment scenarios: database<br /><br />DPM 2019 UR1 and later supports the backup of SQL over ReFS. <br /><br /> DPM 2019 UR2 and later supports the backup of SQL database, stored on the Cluster Shared Volume.|
-|Exchange|Exchange 2019, 2016|Physical server<br/><br/> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG<br/><br/> DPM 2019 does not support the backup of Exchange over ReFS<br /><br /> DPM 2019 UR1 and later supports the backup of Exchange over ReFS|
-|SharePoint|SharePoint 2019, 2016 with latest SPs|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine <br /><br />Azure virtual machine (when workload is running as Azure virtual machine)|Protect (all deployment scenarios):  Farm,  frontend web server content<br /><br />Recover (all deployment scenarios):  Farm, database, web application, file or list item, SharePoint search, frontend web server<br /><br />DPM 2019 UR1 and later supports the backup of SharePoint over ReFS|
+|Exchange|Exchange 2019, 2016|Physical server<br/><br/> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG<br/><br/> DPM 2019 does not support the backup of Exchange over ReFS<br /><br /> DPM 2019 UR1 and later supports the backup of Exchange over ReFS.|
+|SharePoint|SharePoint 2019, 2016 with latest SPs|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine <br /><br />Azure virtual machine (when workload is running as Azure virtual machine)|Protect (all deployment scenarios): Farm, frontend web server content<br /><br />Recover (all deployment scenarios):  Farm, database, web application, file or list item, SharePoint search, frontend web server<br /><br />DPM 2019 UR1 and later supports the backup of SharePoint over ReFS.|
 
 ### VM backup
 
@@ -105,27 +105,27 @@ The following sections details the protection support matrix for DPM:
 
 ### Applications backup
 
-|Workload|Version|DPM installation|Protection and recovery|
-|------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
-|Client computers (64-bit)|Windows 10<br /><br />Windows 11|Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS. FAT and FAT32 aren't supported.<br /><br />Volumes must be at least 1 GB. DPM uses Volume Shadow Copy Service (VSS) to take the data snapshot and the snapshot only works if the volume is at least 1 GB.|
-|Servers (64-bit)|Windows Server 2022, 2019, 2016 |Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|Volume, share, folder, file, deduped volumes.<br /><br />[System state and bare metal](back-up-system-state-and-bare-metal.md) (not supported for Azure virtual machine).<br /><br />DPM 2019 UR1 and later supports the protection of ReFS volumes and ReFS deduped volume.  |
-|System Center VMM|VMM 2022, 2019, 2016|Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|All deployment scenarios: Database|
-|SQL Server|SQL Server 2019, SQL Server 2017, 2016 and [supported SPs](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202016), 2014 and supported [SPs](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202014) |Physical server <br /><br /> Hyper-V virtual machine <br /><br /> VMware virtual machine <br /> <br /> Azure virtual machine |All deployment scenarios: database<br /><br />DPM 2019 UR1 and later supports the backup of SQL over ReFS. <br /><br /> DPM 2019 UR2 and later supports the backup of SQL database, stored on the Cluster Shared Volume.|
-|Exchange| 2019, 2016|Physical server<br/><br/> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG<br/><br/> DPM 2019 does not support the backup of Exchange over ReFS<br /><br /> DPM 2019 UR1 and later supports the backup of Exchange over ReFS|
-|SharePoint| 2019, 2016 with latest SPs|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine <br /><br />Azure virtual machine (when workload is running as Azure virtual machine)|Protect (all deployment scenarios):  Farm,  frontend web server content<br /><br />Recover (all deployment scenarios):  Farm, database, web application, file or list item, SharePoint search, frontend web server<br /><br />DPM 2019 UR1 and later supports the backup of SharePoint over ReFS|
+| Workload | Version | DPM installation | Protection and recovery |
+|---|---|---|---|---|---|
+| Client computers (64-bit) | Windows 10<br /><br />Windows 11 | Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine | Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS. FAT and FAT32 aren't supported.<br /><br />Volumes must be at least 1 GB. DPM uses Volume Shadow Copy Service (VSS) to take the data snapshot and the snapshot only works if the volume is at least 1 GB. |
+| Servers (64-bit) | Windows Server 2022, 2019, 2016 | Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine | Volume, share, folder, file, deduped volumes.<br /><br />[System state and bare metal](back-up-system-state-and-bare-metal.md) (not supported for Azure virtual machine).<br /><br />DPM 2019 UR1 and later supports the protection of ReFS volumes and ReFS deduped volume. |
+| System Center VMM | VMM 2022, 2019, 2016 | Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine | All deployment scenarios: Database |
+| SQL Server | SQL Server 2022 (supported from DPM 2022 UR1), SQL Server 2019, SQL Server 2017, 2016 and [supported SPs](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202016), 2014 and supported [SPs](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202014) | Physical server <br /><br /> Hyper-V virtual machine <br /><br /> VMware virtual machine <br /> <br /> Azure virtual machine | All deployment scenarios: database<br /><br />DPM 2019 UR1 and later supports the backup of SQL over ReFS. <br /><br /> DPM 2019 UR2 and later supports the backup of SQL database, stored on the Cluster Shared Volume. <br /><br />SQL Server 2022 is supported in UR1.|
+| Exchange | 2019, 2016 | Physical server<br/><br/> Hyper-V virtual machine <br /><br />VMware virtual machine | Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG<br/><br/> DPM 2019 does not support the backup of Exchange over ReFS<br /><br /> DPM 2019 UR1 and later supports the backup of Exchange over ReFS |
+| SharePoint | 2019, 2016 with latest SPs | Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine <br /><br />Azure virtual machine (when workload is running as Azure virtual machine) | Protect (all deployment scenarios):  Farm,  frontend web server content<br /><br />Recover (all deployment scenarios):  Farm, database, web application, file or list item, SharePoint search, frontend web server<br /><br />DPM 2019 UR1 and later supports the backup of SharePoint over ReFS |
 
 ### VM backup
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2022, 2019, 2016|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect: Hyper-V computers, [Hyper-V VMs](back-up-hyper-v-virtual-machines.md) hosted on (cluster shared volumes) CSVs<br /><br />Recover: Virtual machine, Item-level recovery of files and folder, volumes, virtual hard drives|
-|VMware VMs | VMware server 6.0, 6.5, 6.7 or 7.0|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machine, Item-level recovery of files and folder available only for Windows, volumes, virtual hard drives.<br /><br />VMware vApps are not supported.|
+|VMware VMs | VMware server 6.0, 6.5, 6.7 or 7.0|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine| Protect: VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machine, Item-level recovery of files and folder available only for Windows, volumes, virtual hard drives.<br /><br />VMware vApps are not supported.<br /><br />vSphere 6.0 is not supported in 2022 UR1 and later.|
 
 ### Linux
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
-|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2022) <br /><br /> Linux virtual machines running on the versions 6.0, 6.5, 6.7 or 7.0 of VMware vCenter and vSphere Hypervisor (ESXi).|Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2022, Windows Server 2019, Windows Server 2016. <br /><br />Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
+|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019/2022) <br /><br /> Linux virtual machines running on the versions 6.0, 6.5, 6.7 or 7.0 of VMware vCenter and vSphere Hypervisor (ESXi).|Hyper-V virtual machine <br /><br />VMware virtual machine|Hyper-V must be running on Windows Server 2022, Windows Server 2019, and Windows Server 2016. <br /><br />Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine<br /><br />Only file-consistent snapshots are supported. <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](/azure/virtual-machines/linux/endorsed-distros).|
 
 ::: moniker-end
 
@@ -211,7 +211,7 @@ DPM can protect data in the following clustered applications:
     > [!NOTE]
     > If you're protecting a Hyper-V cluster using scaled-out DPM protection, you can't add secondary protection for the protected Hyper-V workloads.
 
--   Exchange Server - DPM can protect non-shared disk clusters for supported Exchange Server versions (cluster continuous replication), and can also protect Exchange Server configured for local continuous replication.
+-   Exchange Server - DPM can protect non-shared disk clusters for supported Exchange Server versions (cluster continuous replication) and can also protect Exchange Server configured for local continuous replication.
 
 -   SQL Server
 
@@ -229,7 +229,7 @@ DPM can protect data in the following clustered applications:
 
     ::: moniker-end
 
-DPM can protect cluster workloads that are located in the same domain as the DPM server, and in a child or trusted domain. If you want to protect data source in untrusted domains or workgroups you'll need to use NTLM or certificate authentication for a single server, or certificate authentication only for a cluster.
+DPM can protect cluster workloads that are in the same domain as the DPM server, and in a child or trusted domain. If you want to protect data source in untrusted domains or workgroups, you'll need to use NTLM or certificate authentication for a single server, or certificate authentication only for a cluster.
 
 ## Next steps
 

@@ -23,7 +23,7 @@ ms.author: jsuri
 Use the TechNet wiki to find the latest list of [compatible tape libraries](https://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx) for System Center Data Protection Manager (DPM).
 
 ## Virtual tape library support
-Virtual tape libraries configured with a virtual fibre channel adapter are supported with certified hardware listed in the wiki. To check if your tape library is supported by the virtual fibre channel adapter, ask your tape hardware vendor to verify tape library compatibility.
+Virtual tape libraries configured with a virtual fiber channel adapter are supported with certified hardware listed in the wiki. To check if your tape library is supported by the virtual fiber channel adapter, ask your tape hardware vendor to verify tape library compatibility.
 
 ## Verify tape library compatibility
 If the tape is listed in the [Windows Server Catalog](https://www.windowsservercatalog.com/) in the Hardware, Storage section, and is shown as compatible with Windows 2008 64-bit, or Windows 2008 R2 64-bit - it will probably work with DPM. Note that any driver incompatibilities with Windows 2012 would need to be addressed by the vendor.
@@ -36,7 +36,7 @@ Before you run the tool, do the following:
 
 -   Insert a read/write data tape in slot 0. The contents of this tape will be overwritten.
 
--   Insert a cleaning tape in slot 1. The tapes must be in consecutive slots, and there should be no tapes in the slots between the tapes. The data tape's slot must precede the cleaning tape slot.
+-   Insert cleaning tape in slot 1. The tapes must be in consecutive slots, and there should be no tapes in the slots between the tapes. The data tape's slot must precede the cleaning tape slot.
 
 To acquire and run the compatibility tool:
 
@@ -52,7 +52,7 @@ To acquire and run the compatibility tool:
 
 4.  The tool runs the following tests:
 
-    -   **Test 1: Basic configuration** - Scans the system for attached devices, and identifies standalone tape drives and tape libraries. The tool provides a summary at the end of the test. For each device you'll see a Device Name, Serial Number, Vendor Name, Product Name, Firmware Revision, and SCSI properties. You should verify that the summary information is correct. If it isn't:
+    -   **Test 1: Basic configuration** - Scans the system for attached devices, and identifies standalone tape drives and tape libraries. The tool provides a summary at the end of the test. For each device, you'll see a Device Name, Serial Number, Vendor Name, Product Name, Firmware Revision, and SCSI properties. You should verify that the summary information is correct. If it isn't:
 
         -   Check all devices are listed in Device Manager.
 
@@ -68,19 +68,19 @@ To acquire and run the compatibility tool:
 
     -   **Test 5: I/O** - This test selects the first writable tape, writes a few buffers to it, and then attempts to read what's been written. This test only checks read/write capabilities. Any specific errors in the drive should be inspected using the advanced mode.
 
-5.  After the tool completes the test, log information will be provided in the LibraryTestTool-*Curr.errlog files which are located in the folder from which you ran the tool. If the tests successfully complete, then you can assume your tape library should work with DPM.
+5.  After the tool completes the test, log information will be provided in the LibraryTestTool-*Curr.errlog files which are located in the folder from which you ran the tool. If the tests are complete, then you can assume your tape library should work with DPM.
 
-## Run the compatibility tool for Hyper-V fiber channel
+## Run the compatibility tool for the Hyper-V fiber channel
 
 -   Prepare two Hyper-V hosts running DPM.
 
--   Enable live migration on both the servers. A clustered deployment isn't required.
+-   Enable live migration on both servers. A clustered deployment isn't required.
 
--   Run the compatibility tool on the first host server, as described in the section above, and verify that tests complete successfully.
+-   Run the compatibility tool on the first host server, as described in the section above, and verify that the tests complete successfully.
 
 -   Initiate live migration to the second host server and wait for it to complete.
 
--   After DPM is running virtually on the second host server, run the compatibility tool on that host server, as described above, and verify that tests complete successfully. If the tests pass you can assume that the tape library will work with DPM.
+-   After DPM is running virtually on the second host server, run the compatibility tool on that host server, as described above, and verify that the tests complete successfully. If the tests pass you can assume that the tape library will work with DPM.
 
 ## Examples
 The tool syntax is:
