@@ -181,8 +181,8 @@ More information, see [certificate templates](/previous-versions/windows/it-pro/
 
 1. Log on to a domain joined server with AD CS in your environment (your CA).
 2. On the Windows desktop, select **Start** > **Windows Administrative Tools** > **Certification Authority**.
-3. On the right navigation pane, expand the CA, select and hold **Certificate Templates** and select **Manage**.
-4. Select and hold **IPSec (Offline request)** and select **Duplicate Template**.
+3. On the right navigation pane, expand the CA, right-click **Certificate Templates** and select **Manage**.
+4. Right-click **IPSec (Offline request)** and select **Duplicate Template**.
 5. **Properties of New Template** dialog opens, make the selections as below:
      
    |Tab|Description|
@@ -198,7 +198,7 @@ More information, see [certificate templates](/previous-versions/windows/it-pro/
 
 1. Log on to a domain joined server with AD CS in your environment (your CA).
 2. On the Windows desktop, select **Start** > **Windows Administrative Tools** > **Certification Authority**.
-3. On the right navigation pane, expand the CA, select and hold **Certificate Templates** and select **New** > **Certificate Templates to Issue**.
+3. On the right navigation pane, expand the CA, right-click **Certificate Templates** and select **New** > **Certificate Templates to Issue**.
 4. Select the new template created in the above steps and select **OK**.
 
 ## Request a certificate using a request file
@@ -308,7 +308,7 @@ For example, *OperationsManagerCert*, and then select **Submit**.
 2. Select **Start** > **Windows Administrative Tools** > **Certification Authority**.
 3. On the left navigation pane, expand the CA and select  **Pending Requests**.
 4. On the right navigation pane, find and select the pending request for the Operations Manager server.
-5. Select and hold the **Pending request** > **All Tasks** > **Issue**
+5. Right-click the **Pending request** > **All Tasks** > **Issue**
 6. On the left navigation, select **Issued Certificates**, verify the presence of newly issued certificate.
 7. Close the Certification Authority console.
 
@@ -325,7 +325,7 @@ For example, `https://\<servername\>/certsrv`.
 6. On the server, *Personal certificate store* stores the certificate.
 7. Load the *MMC* or *CertMgr* consoles and navigate to **Personal** > **Certificates** and locate the newly created certificate.
 8. Upon successful completion of task on the target server, continue to the next main step. Else, export the certificate:
-      1. Select and hold the **new certificate** > **All Tasks** > **Export**.
+      1. Right-click the **new certificate** > **All Tasks** > **Export**.
       1. In the **Certificate Export Wizard**, select **Next**.
       1. Select **Yes, export the private key** and then select **Next**.
       1. Select **Personal Information Exchange – PKCS #12 (.PFX)**.
@@ -366,7 +366,7 @@ For example, `https://\<servername\>/certsrv`.
 9. On the server, the *Personal certificate store* stores the certificate.
 10. Load the *MMC* or *CertMgr* consoles and go to **Personal** > **Certificates** and locate the newly created certificate.
 11. If this task is not completed on the target server, export the certificate:
-      1. Select and hold the new certificate > All Tasks > Export.
+      1. Right-click the new certificate > All Tasks > Export.
       1. In the **Certificate Export Wizard**, select **Next**.
       1. Select **Yes, export the private key**, select **Next**.
       1. Select **Personal Information Exchange – PKCS #12 (.PFX)**.
@@ -397,7 +397,7 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
           1. Select **OK** to close the wizard.
 3. Start the certificate request:
       1. Under Certificates, expand the Personal folder.
-      1. Select and hold **Certificates** > **All Tasks** > **Request New Certificate**.
+      1. Right-click  **Certificates** > **All Tasks** > **Request New Certificate**.
 4. **Certificate Enrollment wizard**
       1. On the **Before You Begin** page, select **Next**.
       1. Select the applicable Certificate Enrollment Policy (default may be the **Active Directory Enrollment Policy**), select **Next**
@@ -424,7 +424,7 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
 6. Otherwise, export the new certificate from the machine and copy to the next.
       1. Open the Certificate Manager window and navigate to **Personal** > **Certificates**.
       1. Select the certificate to be exported.
-      1. Select and hold All **Tasks** > **Export**.
+      1. Right-click All **Tasks** > **Export**.
       1. In the Certificate Export Wizard.
           1. Select **Next** on the Welcome page.
           1. Ensure to select **Yes, export the private key**.
@@ -451,7 +451,7 @@ To use the newly created certificate, import it into the certificate store on th
 
 5. This certificate should now be present in the Local Machine Personal store on this computer.
 
-Alternatively, select and hold the certificate file > Install > Local machine and choose the destination of the personal store to install the certificate.
+Alternatively, right-click the certificate file > Install > Local machine and choose the destination of the personal store to install the certificate.
 
 >[!NOTE]
 >If you add a certificate to the certificate store with the private key and delete it from the store at a later point, the certificate will no longer contain the private key when re-imported. Operations Manager communications requires private key as the outgoing data needs to be encrypted. You can repair the certificate using [certutil](/windows-server/administration/windows-commands/certutil#-repairstore), you need to provide the serial number of the cert. For example, to restore the private key, use the below command in an Administrator Command Prompt or PowerShell window:
