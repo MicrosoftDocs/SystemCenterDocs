@@ -26,6 +26,9 @@ You can deploy shielded VMs in VMM in a couple of ways:
 - Convert an existing VM into a shielded VM.
 - Create a new shielded VM using a signed virtual machine hard disk (VHDX), and optionally a VM template.
 
+> [!NOTE]
+> You may experience issues deploying a shielded virtual machine over a network with a load balancer or WAN optimization device. It is required for the packet to not be modified during transit for Shielded VM's to successfully deploy.
+
 ## Before you start
 
 [Watch](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Creating-a-Shielded-VM-using-System-Center-2016-Virtual-Machine-Manager-VMM) a video that provides a quick, two-minute overview of provisioning shielded VMs in VMM. Then, make sure you've done the following:
