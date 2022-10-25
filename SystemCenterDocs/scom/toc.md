@@ -34,6 +34,8 @@
 ##### [Console level changes](console-level-changes.md)
 #### [Security credentials to access UNIX and Linux computers](plan-security-crossplat-credentials.md)
 #### [Authentication and data encryption in Operations Manager](plan-security-authentication-data-encryption.md)
+#### [Configure an HTTPS Binding for a Windows Server CA](configure-https-binding-windows-server-ca.md)
+#### [Obtain a certificate for use with Windows Servers and System Center Operations Manager](obtain-certificate-windows-server-and-operations-manager.md)
 #### [Data encryption for Web console and Reporting server connections](plan-data-encryption-server-roles.md)
 #### [Security considerations monitoring Microsoft Azure and Microsoft 365](plan-security-microsoft-cloud.md)
 ## [Deploy](deploy-overview.md)
