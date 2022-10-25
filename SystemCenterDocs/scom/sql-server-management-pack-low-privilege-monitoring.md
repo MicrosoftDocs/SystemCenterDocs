@@ -69,7 +69,7 @@ This section explains how to configure low-privilege agent monitoring.
 6. Configure the **Log on as a Service** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to log on as a service.
 
     >[!NOTE]
-    >If you are using the versions of Operations Manager 2019 and higher, follow the steps above to provide **Log on as a Service** permission to Run As accounts. [Learn more](/system-center/scom/enable-service-logon).
+    >If you are using the versions of Operations Manager 2019 and higher, follow the steps above to provide **Log on as a Service** permission to Run As accounts. [Learn more](./enable-service-logon.md).
 
 7. In the **Microsoft Monitoring Agent** properties for the selected management group set the **Local System** account to perform agent actions.
 

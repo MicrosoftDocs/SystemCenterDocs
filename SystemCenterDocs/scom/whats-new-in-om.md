@@ -5,7 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 04/21/2022
+ms.date: 10/14/2022
 ms.custom: na, intro-whats-new
 ms.prod: system-center
 ms.technology: operations-manager

@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: evansma
 ms.date: 11/29/2021
-ms.topic: article
+ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ms.custom: intro-whats-new
@@ -14,7 +14,7 @@ ms.custom: intro-whats-new
 
 ## New features in VMM 2022
 
-See the following sections for new features and feature updates supported in VMM 2022.
+See the following sections for new features and feature updates supported in VMM 2022. 
 
 ## Compute
 
@@ -52,3 +52,5 @@ In VMM 2019 UR2, we introduced support for Ipv6 based SDN deployment. VMM 2022 s
 To enable Ipv6 for SDN deployment, do the required changes in the network controller, gateway, and SLB setup.   
 
 For more information about these updates, see [Network controller](/system-center/vmm/sdn-controller), [Gateway](/system-center/vmm/sdn-gateway), [SLB](/system-center/vmm/sdn-slb), and [Set up NAT](/system-center/vmm/sdn-set-up-nat).
+
+
