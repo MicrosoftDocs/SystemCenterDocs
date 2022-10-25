@@ -15,9 +15,9 @@ monikerRange: '>=sc-om-2019'
 
 # Migrate from Operations Manager on-premises to Operations Manager managed instance (preview)
 
-This article provides detailed information about how you can migrate from Operations Manager on-premises to Operations Manager managed instance (preview). 
+This article provides detailed information on how you can migrate from Operations Manager on-premises to Operations Manager managed instance (preview). 
 
-As an example of migration, provided the procedure for the following artifacts:
+Provided the procedure for the following artifacts as an example:
 
 - Management Packs and Overrides 
 - Dashboard and Reports 
@@ -41,24 +41,24 @@ Select the required artifact to view the migration procedure from on-premises to
     Get-SCOMManagementPack | Select-Object DisplayName, Name, Sealed, Version, LastModified | Sort-Object DisplayName | Format-Table
     ```
 
-2. [Export unsealed Management Packs](/system-center/scom/manage-mp-import-remove-delete?#how-to-export-an-operations-manager-management-pack):
+2. Export [unsealed Management Packs](/system-center/scom/manage-mp-import-remove-delete?#how-to-export-an-operations-manager-management-pack):
    ```powershell
    Get-SCOMManagementPack | Where{ $_.Sealed -eq $false } | Export-SCOMManagementPack -Path "C:\Temp\Unsealed Management Packs"
    ```
 
-3. [Import Sealed Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack).
+3. Import [Sealed Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack).
 
     - You must have a copy of any custom sealed Management Packs that you need to import. 
 
-4. [Import unsealed (exported) Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk).
+4. Import [unsealed (exported) Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk).
 
 ### Post migration validation
 
-Use these steps to validate the migration of Groups and Data collection.
+Follow these steps to validate the migration of Groups and Data collection.
 
-1. **Groups**: Go to **Authoring** workspace in the Operations Manager console and select **Groups**.  Review the membership of any groups created by the Management Packs and verify that they've been populated with the correct objects. 
+1. **In Groups**: Go to **Authoring** workspace in the Operations Manager console and select **Groups**.  Review the membership of any groups created by the Management Packs and verify that they've been populated with the correct objects. 
 
-1. **Data collection**: To verify that the intended objects are discovered, go to **Monitoring** in the Operations Manager console and review the views for each Management Pack.
+1. **In Data collection**: To verify that the intended objects are discovered, go to **Monitoring** in the Operations Manager console and review the views for each Management Pack.
 
     1. Verify that the state views are populated with the correct objects (Servers, Databases, Websites, and so on) and they're being monitored (Health State isn't **Unmonitored**).
 
@@ -67,7 +67,7 @@ Use these steps to validate the migration of Groups and Data collection.
 # [Dashboard and Reports](#tab/dashboard-reports)
 
 Operations Manager supports the following four types of data visualizations. 
-Here is a quick summary of what can be migrated:
+Below is a quick summary of what can be migrated:
 
 | Types of data visualizations | Can be migrated to Operations Manager managed instance (preview) | Recommendations |
 |---|---|---|---|---|
