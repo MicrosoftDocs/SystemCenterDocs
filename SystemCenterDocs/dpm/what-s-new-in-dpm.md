@@ -16,7 +16,7 @@ ms.custom: intro-whats-new
 
 ::: moniker range="sc-dpm-2022"
 
-This article details the new features supported in System Center - Data Protection Manager (DPM) 2022. Also details the new features in DPM 2022 UR1.
+This article details the new features supported in System Center - Data Protection Manager (DPM) 2022.
 
 [!INCLUDE [whats-new-dpm-2022.md](../includes/whats-new-dpm-2022.md)]
 
