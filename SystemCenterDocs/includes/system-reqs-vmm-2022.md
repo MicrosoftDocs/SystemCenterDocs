@@ -78,8 +78,7 @@ Windows Server 2022 Standard, Datacenter | Y
 SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016) | Y
 SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017) | Y
 SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019) | Y
-SQL Server 2022 as detailed [here](/lifecycle/products/?terms=SQL+Server+2022) | Y
-SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack.<br/> or <br/> Install the SQL Server 2019 Command-Line Utilities from the Microsoft® SQL Server® 2019 Feature Pack. <br/> or <br/> Install the SQL Server 2022 Command-Line Utilities from the Microsoft® SQL Server® 2022 Feature Pack. <br/><br/>Not required for VMM installation
+SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack.<br/> or <br/> Install the SQL Server 2019 Command-Line Utilities from the Microsoft® SQL Server® 2019 Feature Pack. <br/><br/>Not required for VMM installation
 
 ## Virtualization
 
@@ -112,7 +111,6 @@ Windows Server 2019 Standard and Datacenter (Core) | Y | Y | N | N
 Hyper-V Server 2019 | N | N | N | N                                           
 [Azure Stack Hyper Converged Infrastructure (HCI, version 20H2)](../vmm/deploy-manage-azure-stack-hci.md) | Y | N | N | N  
 [Azure Stack Hyper Converged Infrastructure (HCI, version 21H2)](../vmm/deploy-manage-azure-stack-hci.md)| Y | N | N | N
-[Azure Stack Hyper Converged Infrastructure (HCI, version 22H2)](../vmm/deploy-manage-azure-stack-hci.md)| - | - | - | -
 Windows Server 2022 | Y | Y | Y | Y
 
 ## VMware servers in the VMM fabric
