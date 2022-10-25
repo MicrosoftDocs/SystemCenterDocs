@@ -113,16 +113,6 @@ The new web API is JSON based and makes it easier to use than the older XML-base
 
 Support for 64 bit enables the use of 64 bit assemblies, Integration Packs and PowerShell cmdlets.
 
-## New features in Orchestrator 2022 UR1
-
-The following sections introduce the new features and feature updates supported in Orchestrator 2022 Update Rollup 1 (UR1).
-
-For problems fixed in Orchestrator 2022 UR1, and installation instructions for UR1, see the KB article.
-
-### Support for SQL Server 2022
-
-Orchestrator 2022 UR1 supports SQL Server 2022.
-
 ::: moniker-end
 
 ## Next steps
