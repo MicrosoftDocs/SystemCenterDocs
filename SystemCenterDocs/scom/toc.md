@@ -20,6 +20,7 @@
 ### [Design integration with other enterprise management products](plan-thirdparty-integration.md)
 ### [Designing for high availability and disaster recovery](plan-hadr-design.md)
 ### [Agent deployment planning](plan-planning-agent-deployment.md)
+### [Migrate to Operations Manager managed instance (preview)](migrate-to-operations-manager-managed-instance.md)
 ### Security
 #### [Configuring a firewall for Operations Manager](plan-security-config-firewall.md)
 #### [Configure TLS 1.2 encryption](plan-security-tls12-config.md)
