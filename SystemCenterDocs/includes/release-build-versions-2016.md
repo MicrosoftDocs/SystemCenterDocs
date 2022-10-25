@@ -65,4 +65,4 @@ The following tables list the release history for Operations Manager 2016.
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
 
- <sup>1</sup> *All System Center Operations Manager update rollups are cumulative.  This means you do not need to apply them in order, you can always apply the latest update. However, there is one exception to this upgrade behavior. If you want the ability to uninstall UR4, you should make sure you have previously applied UR2 or UR3, which fixed an uninstall issue. Update rollups subsequent to UR4 can be uninstalled without previous rollups being applied.*
+ <sup>1</sup> *All System Center Operations Manager update rollups are cumulative.  This means you don't need to apply them in order, you can always apply the latest update. However, there's one exception to this upgrade behavior. If you want the ability to uninstall UR4, you should make sure you have previously applied UR2 or UR3, which fixed an uninstall issue. Update rollups subsequent to UR4 can be uninstalled without previous rollups being applied.*
