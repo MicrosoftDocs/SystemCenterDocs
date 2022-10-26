@@ -118,7 +118,7 @@ To download the Trusted Root certificate, follow these steps:
 For example, *a Gateway Server or Management Server*.
 
 2. Open a web browser and connect to the certificate server web address.
-For example, `https://\<servername\>/certsrv`.
+For example, `https://<servername>/certsrv`.
 
 3. On the **Welcome** page, select **Download a CA Certificate**, **Certificate chain**, or **CRL**.
    
@@ -289,9 +289,9 @@ For example, `https://\<servername\>/certsrv`.
 
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
 
-3. On the **Request a Certificate** page, select **advanced certificate request**.
+3. On the **Request a Certificate** page, select **Advanced certificate request**.
 
-4. On the **Advanced Certificate Request** page, select **Submit a certificate request by using a base-64-encoded CMC or PKCS #10 file**, or **submit a renewal request by using a base-64-encoded PKCS #7 file**.
+4. On the **Advanced Certificate Request** page, select **Submit a certificate request by using a base-64-encoded CMC or PKCS #10 file**, or **Submit a renewal request by using a base-64-encoded PKCS #7 file**.
 
 5. On the **Submit a Certificate Request or Renewal Request** page, in the **Saved Request** text box, paste the contents of the *CertRequest.req* file that you copied in step 4 in the previous procedure.
 
@@ -323,7 +323,7 @@ For example, `https://\<servername\>/certsrv`.
 6. On the server, *Personal certificate store* stores the certificate.
 7. Load the *MMC* or *CertMgr* consoles and navigate to **Personal** > **Certificates** and locate the newly created certificate.
 8. Upon successful completion of task on the target server, continue to the next main step. Else, export the certificate:
-      1. Right-click the **new certificate** > **All Tasks** > **Export**.
+      1. Right-click the new certificate > **All Tasks** > **Export**.
       1. In the **Certificate Export Wizard**, select **Next**.
       1. Select **Yes, export the private key** and then select **Next**.
       1. Select **Personal Information Exchange – PKCS #12 (.PFX)**.
@@ -506,7 +506,7 @@ The Operations Manager generates an alert when an imported certificate for Manag
       1. Renew Certificate with New Key
       1. Renew Certificate with Same Key
 5. Select the option that best applies to what you want to do and follow the wizard.
-6. Once completed, run the *MOMCertImport.exe* tool to ensure Operations Manager has the new serial number (reversed) of the certificate if it changed, see the above section for further details.
+6. Once completed, run the `MOMCertImport.exe` tool to ensure Operations Manager has the new serial number (reversed) of the certificate if it changed, see the above section for further details.
 
 If certificate renewal via this method is not available, use the prior steps to request a new certificate or with the organization’s certificate authority. Install and import (MOMCertImport) the new certificate for use by Operations Manager.
 
