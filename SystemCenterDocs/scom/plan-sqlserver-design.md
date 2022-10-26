@@ -49,7 +49,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker range="sc-om-2022"
 
-- SQL Server 2022, as detailed [here]
+- SQL Server 2022
 - SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
     >[!NOTE]
