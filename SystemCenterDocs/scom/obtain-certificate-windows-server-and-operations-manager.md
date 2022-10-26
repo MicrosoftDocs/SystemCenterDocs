@@ -22,7 +22,7 @@ This article describes how to obtain a certificate and use with Operations Manag
 Ensure you have the following:
 
 - AD-CS installed and configured in the environment with web services **or** a 3rd party Certificate Authority with certificates that match the required settings shown.
-- HTTPS binding and its associated certificate installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).
+- HTTPS binding and its associated certificate installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/configure-https-binding-windows-server-ca).
 - A typical desktop experience and not Core servers. 
 
   >[!NOTE]
@@ -250,9 +250,7 @@ This process encodes the information specified in our config file in Base64 and 
 3. Run the below command to modify the *.inf* file name to ensure it matches the file name created earlier. Leave the *.req* file name as-is:
 
       ```
-
       CertReq –New –f CertRequestConfig.inf CertRequest.req
-
       ```
 
 4. Open the newly created file and copy the contents.
@@ -455,7 +453,9 @@ Alternatively, right-click the certificate file > Install > Local machine and ch
 
 >[!NOTE]
 >If you add a certificate to the certificate store with the private key and delete it from the store at a later point, the certificate will no longer contain the private key when re-imported. Operations Manager communications requires private key as the outgoing data needs to be encrypted. You can repair the certificate using [certutil](/windows-server/administration/windows-commands/certutil#-repairstore), you need to provide the serial number of the cert. For example, to restore the private key, use the below command in an Administrator Command Prompt or PowerShell window:
->`certutil -repairstore my [certificateSerialNumber]`
+>```
+>certutil -repairstore my <certificateSerialNumber>
+>```
 
 ## Import the certificate into Operations Manager  
 
@@ -481,17 +481,18 @@ To import the certificate into Operations Manager using MOMCertImport, follow th
       `Successfully installed the certificate. Please check Operations Manager log in eventviewer to check channel connectivity.`
 
 8. To validate, go to **Event Viewer** > **Applications and Services Logs** > **Operations Manager for an Event ID 20053**. This indicates that the authentication certificate was loaded successfully
-9. If Event ID 20053 is not present on the system, look for one of these Event IDs for errors and correct accordingly:
-    - 20049 
-    - 20050 
-    - 20052 
-    - 20066 
-    - 20069 
-    - 20077
+9. If Event ID **20053** is not present on the system, look for one of these Event IDs for errors and correct accordingly:
+    - **20049** 
+    - **20050** 
+    - **20052**
+    - **20066**
+    - **20069**
+    - **20077**
 
 11. *MOMCertImport* updates this registry location to contain the value that matches the reverse of the serial number shown on the certificate:
-   
-      `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber`
+      ```
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber
+      ```
 
 ## Renew a Certificate
 
