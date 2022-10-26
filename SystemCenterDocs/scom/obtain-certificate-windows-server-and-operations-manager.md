@@ -22,7 +22,7 @@ This article describes how to obtain a certificate and use with Operations Manag
 Ensure you have the following:
 
 - AD-CS installed and configured in the environment with web services **or** a 3rd party Certificate Authority with certificates that match the required settings shown.
-- HTTPS binding and its associated certificate installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/how-to-configure-https-binding-windows-server-ca).
+- HTTPS binding and its associated certificate installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/configure-https-binding-windows-server-ca).
 - A typical desktop experience and not Core servers. 
 
   >[!NOTE]
@@ -118,7 +118,7 @@ To download the Trusted Root certificate, follow these steps:
 For example, *a Gateway Server or Management Server*.
 
 2. Open a web browser and connect to the certificate server web address.
-For example, `https://\<servername\>/certsrv`.
+For example, `https://<servername>/certsrv`.
 
 3. On the **Welcome** page, select **Download a CA Certificate**, **Certificate chain**, or **CRL**.
    
@@ -250,9 +250,7 @@ This process encodes the information specified in our config file in Base64 and 
 3. Run the below command to modify the *.inf* file name to ensure it matches the file name created earlier. Leave the *.req* file name as-is:
 
       ```
-
       CertReq –New –f CertRequestConfig.inf CertRequest.req
-
       ```
 
 4. Open the newly created file and copy the contents.
@@ -262,7 +260,7 @@ This process encodes the information specified in our config file in Base64 and 
 # [Enterprise CA](#tab/Enter)
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
-For example, `https://\<servername\>/certsrv`.
+For example, `https://<servername>/certsrv`.
 
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
 
@@ -286,14 +284,14 @@ For example, save as *SCOM-MS01.cer*.
 # [Stand-Alone CA](#tab/StandAlo)
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
-For example, `https://\<servername\>/certsrv`.
+For example, `https://<servername>/certsrv`.
 
 
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
 
-3. On the **Request a Certificate** page, select **advanced certificate request**.
+3. On the **Request a Certificate** page, select **Advanced certificate request**.
 
-4. On the **Advanced Certificate Request** page, select **Submit a certificate request by using a base-64-encoded CMC or PKCS #10 file**, or **submit a renewal request by using a base-64-encoded PKCS #7 file**.
+4. On the **Advanced Certificate Request** page, select **Submit a certificate request by using a base-64-encoded CMC or PKCS #10 file**, or **Submit a renewal request by using a base-64-encoded PKCS #7 file**.
 
 5. On the **Submit a Certificate Request or Renewal Request** page, in the **Saved Request** text box, paste the contents of the *CertRequest.req* file that you copied in step 4 in the previous procedure.
 
@@ -317,7 +315,7 @@ For example, *OperationsManagerCert*, and then select **Submit**.
 A certificate from a Stand-Alone CA will be retrieved on the target machine for ease of certificate installation. If the CA is not reached from the target machine, ensure to export the certificate as indicated below:
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
-For example, `https://\<servername\>/certsrv`.
+For example, `https://<servername>/certsrv`.
 2. On the Welcome page, select **View the status of a pending certificate request**.
 3. On the Certificates Issued page, select **Base 64 encoded**, then **Download Certificate**.
 4. If successful, **Certificate Issued** page opens with a link to **Install this certificate**.
@@ -325,7 +323,7 @@ For example, `https://\<servername\>/certsrv`.
 6. On the server, *Personal certificate store* stores the certificate.
 7. Load the *MMC* or *CertMgr* consoles and navigate to **Personal** > **Certificates** and locate the newly created certificate.
 8. Upon successful completion of task on the target server, continue to the next main step. Else, export the certificate:
-      1. Right-click the **new certificate** > **All Tasks** > **Export**.
+      1. Right-click the new certificate > **All Tasks** > **Export**.
       1. In the **Certificate Export Wizard**, select **Next**.
       1. Select **Yes, export the private key** and then select **Next**.
       1. Select **Personal Information Exchange – PKCS #12 (.PFX)**.
@@ -347,7 +345,7 @@ For example, `https://\<servername\>/certsrv`.
 Apart from the request file, you can create a certificate request through the Certificate services web portal. This step completes on the target machine for ease of certificate installation. If the certificate request using the AD-CS web portal is not possible, ensure to export the certificate as indicated below:
 
 1. On the computer hosting the Operations Manager feature for which you are requesting a certificate, open a web browser, and connect to the computer hosting Certificate server web address.
-For example, `https://\<servername\>/certsrv`.
+For example, `https://<servername>/certsrv`.
 2. On the **Microsoft Active Directory Certificate Services Welcome** page, select **Request a certificate**.
 3. On the **Request a Certificate** page, select **advanced certificate request**.
 4. Select **Create and submit a request to this CA**.
@@ -455,7 +453,9 @@ Alternatively, right-click the certificate file > Install > Local machine and ch
 
 >[!NOTE]
 >If you add a certificate to the certificate store with the private key and delete it from the store at a later point, the certificate will no longer contain the private key when re-imported. Operations Manager communications requires private key as the outgoing data needs to be encrypted. You can repair the certificate using [certutil](/windows-server/administration/windows-commands/certutil#-repairstore), you need to provide the serial number of the cert. For example, to restore the private key, use the below command in an Administrator Command Prompt or PowerShell window:
->`certutil -repairstore my [certificateSerialNumber]`
+>```
+>certutil -repairstore my <certificateSerialNumber>
+>```
 
 ## Import the certificate into Operations Manager  
 
@@ -481,17 +481,18 @@ To import the certificate into Operations Manager using MOMCertImport, follow th
       `Successfully installed the certificate. Please check Operations Manager log in eventviewer to check channel connectivity.`
 
 8. To validate, go to **Event Viewer** > **Applications and Services Logs** > **Operations Manager for an Event ID 20053**. This indicates that the authentication certificate was loaded successfully
-9. If Event ID 20053 is not present on the system, look for one of these Event IDs for errors and correct accordingly:
-    - 20049 
-    - 20050 
-    - 20052 
-    - 20066 
-    - 20069 
-    - 20077
+9. If Event ID **20053** is not present on the system, look for one of these Event IDs for errors and correct accordingly:
+    - **20049** 
+    - **20050** 
+    - **20052**
+    - **20066**
+    - **20069**
+    - **20077**
 
 11. *MOMCertImport* updates this registry location to contain the value that matches the reverse of the serial number shown on the certificate:
-   
-      `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber`
+      ```
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\MachineSettings\ChannelCertificateSerialNumber
+      ```
 
 ## Renew a Certificate
 
@@ -505,7 +506,7 @@ The Operations Manager generates an alert when an imported certificate for Manag
       1. Renew Certificate with New Key
       1. Renew Certificate with Same Key
 5. Select the option that best applies to what you want to do and follow the wizard.
-6. Once completed, run the *MOMCertImport.exe* tool to ensure Operations Manager has the new serial number (reversed) of the certificate if it changed, see the above section for further details.
+6. Once completed, run the `MOMCertImport.exe` tool to ensure Operations Manager has the new serial number (reversed) of the certificate if it changed, see the above section for further details.
 
 If certificate renewal via this method is not available, use the prior steps to request a new certificate or with the organization’s certificate authority. Install and import (MOMCertImport) the new certificate for use by Operations Manager.
 

@@ -28,9 +28,13 @@ The pack requires the following software to be installed and configured prior to
 -   VMware vSphere 4.1 or 5.0
 -   System Center - Orchestrator
 
+::: moniker range="<=sc-orch-2019"
+
 ## Download the pack
 
 You can download the integration pack from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54099).
+
+::: moniker-end
 
 ## Register and deploy the pack
 
