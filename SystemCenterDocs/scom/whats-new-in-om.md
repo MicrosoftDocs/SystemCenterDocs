@@ -18,7 +18,7 @@ ms.topic: article
 
 ::: moniker range="sc-om-2022"
 
-This article details the new features supported in System Center 2022 - Operations Manager.
+This article details the new features supported in System Center 2022 - Operations Manager. Also includes the new features in Operations Manager 2022 UR1.
 
 [!INCLUDE [whats-new-om-2022.md](../includes/whats-new-om-2022.md)]
 
