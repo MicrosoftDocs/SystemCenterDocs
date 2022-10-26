@@ -102,8 +102,6 @@ To set up a SQL Server database:
 
         -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' \<ipv4\> port_number].
 
-::: moniker-end
-
 > [!NOTE]
 > - With SQL 2017 and later, SSRS does not get installed as a part of SQL installation. You need to install SQL SSRS separately. For more information, see [Install SQL Server Reporting Services (2017 and later)](/sql/reporting-services/install-windows/install-reporting-services?preserve-view=true&view=sql-server-2017).
 > - For remote clustered SQL instance, Database Engine must be on the cluster and SSRS must be on a separate computer (which can be the DPM server or any other computer).
