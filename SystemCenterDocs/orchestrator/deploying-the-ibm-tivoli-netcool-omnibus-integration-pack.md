@@ -9,7 +9,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: evansma
 ms.custom: intro-deployment
-monikerRange: '<=sc-om-2019'
+monikerRange: '<=sc-orch-2019'
 ---
 
 # Deploy the IBM Tivoli Netcool OMNIbus integration pack for System Center - Orchestrator

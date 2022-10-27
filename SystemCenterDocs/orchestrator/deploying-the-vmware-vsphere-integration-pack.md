@@ -9,7 +9,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: evansma
 ms.custom: intro-deployment
-monikerRange: '<=sc-om-2019'
+monikerRange: '<=sc-orch-2019'
 ---
 
 # Deploy the VMware vSphere integration pack
