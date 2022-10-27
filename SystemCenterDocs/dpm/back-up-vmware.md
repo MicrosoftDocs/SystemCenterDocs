@@ -26,7 +26,7 @@ This article explains how to use Data Protection Manager (DPM) to back up virtua
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
-This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7 versions of VMware vCenter and vSphere Hypervisor (ESXi).
+This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7, 7.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
 ::: moniker-end
 
