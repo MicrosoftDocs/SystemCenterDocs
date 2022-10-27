@@ -70,7 +70,7 @@ If you want to use a new SQL server to migrate the DPM database before you upgra
 - Firewall rules
 - DPM Support files (sqlprep)
 
-Additionally, review the [SQL Server pre-requisites for DPM](/system-center/dpm/install-dpm#setup-prerequisites)
+Additionally, review the [SQL Server pre-requisites for DPM](/system-center/dpm/install-dpm#setup-prerequisites).
 
 Once you have the new instance of SQL Server installed and prepared for DPM use, you must make a backup of the current DPM database and restore it on the new SQL Server.
 
