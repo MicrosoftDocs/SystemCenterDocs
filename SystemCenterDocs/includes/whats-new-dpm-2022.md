@@ -37,3 +37,17 @@ DPM 2022 adds support for protecting virtual machines running on VMware 7.0. [Le
 ### Parallel restore for VMware and Hyper-V virtual machines
 
 DPM 2022 supports [parallel restore of VMware](/system-center/dpm/back-up-vmware#vmware-parallel-restore-in-dpm-2022) and [Hyper-V virtual machines](/system-center/dpm/back-up-hyper-v-virtual-machines#recover-backed-up-virtual-machines). With earlier versions of DPM, restore of VMware VM and Hyper-V virtual machine was restricted to only one restore job at a time. With DPM 2022, by default you can restore 8 VMs in parallel and this number can be increased using a registry key.
+
+## New features in DPM 2022 UR1
+
+See the following sections for information about the new features/feature updates supported in DPM 2022 UR1.
+
+For issues fixed and the installation instructions for UR1, see KB article for Update Rollup 1.
+
+### Support for SQL Server 2022
+
+DPM 2022 UR1 supports SQL Server 2022. [Learn more](/system-center/dpm/prepare-environment-for-dpm#sql-server-database).
+
+### Support for Virtual Disk Development kit 7.0
+
+DPM 2022 UR1 supports VDDK 7.0
