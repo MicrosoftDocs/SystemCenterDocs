@@ -127,7 +127,7 @@ For all of the steps below where a SQL instance network name is referenced, use 
 
     e. In the results pane, scroll to the right of the column titled `column.ManagedTypePropertyId`.
 
-    f. Find the row with a GUID that corresponds to one of those GUIDs returned by the query above (normally row number 8), enter your operational database SQL instance network name. 
+    f. Find the row with a GUID that corresponds to one of those GUIDs returned by the query above (normally row number 8), enter your data warehouse database SQL instance network name. 
 
 
 ### Update Reporting server
