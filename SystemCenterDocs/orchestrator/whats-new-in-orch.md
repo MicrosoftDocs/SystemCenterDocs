@@ -63,7 +63,7 @@ System Center Orchestrator 2019 supports SQL 2017 for fresh installation.
 
 ## Support for SQL Server 2022
 
-Orchestrator 2022 and Orchestrator 2019 support SQL Server 2022.
+Orchestrator 2019 support SQL Server 2022.
 
 ## Other Improvements
 -  Latest Putty - No workaround needed to SSH to the latest Linux/Unix machines.
@@ -130,7 +130,7 @@ For problems fixed in Orchestrator 2022 UR1, and installation instructions for U
 
 ### Support for SQL Server 2022
 
-Orchestrator 2022 and Orchestrator 2019 support SQL Server 2022.
+Orchestrator 2022 support SQL Server 2022.
 
 ::: moniker-end
 
