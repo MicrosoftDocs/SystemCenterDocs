@@ -63,7 +63,7 @@ System Center Orchestrator 2019 supports SQL 2017 for fresh installation.
 
 ## Support for SQL Server 2022
 
-Orchestrator 2022 and Orchestrator 2019 support SQL Server 2022.
+Orchestrator 2019 support SQL Server 2022.
 
 ## Other Improvements
 -  Latest Putty - No workaround needed to SSH to the latest Linux/Unix machines.
@@ -90,7 +90,11 @@ For more information about how to set up, configure and run your environment to 
 
 ::: moniker range="sc-orch-2022"
 
-## SCO 2022 Integration packs
+## New features in Orchestrator 2022
+
+See the following sections for detailed information about the new features/feature updates supported in Orchestrator 2022.
+
+### SCO 2022 Integration packs
 
 Following SCO 2022 Integration packs are available for download from Download Center:
 
@@ -105,7 +109,7 @@ Following SCO 2022 Integration packs are available for download from Download Ce
  - [REST Integration Pack](https://www.microsoft.com/download/details.aspx?id=104337)
  - [SharePoint Integration Pack](https://www.microsoft.com/download/details.aspx?id=104332)
 
-## New web console and web API
+### New web console and web API
 
 A new web console and web API are introduced in System Center Orchestrator 2022.
 
@@ -114,7 +118,7 @@ The new web API is JSON based and makes it easier to use than the older XML-base
 >[!NOTE]
 >The new Web console is a complete redesign and works only on modern browsers like Microsoft Edge without Silverlight.
 
-## Orchestrator is now a 64 bit application
+### Orchestrator is now a 64 bit application
 
 Support for 64 bit enables the use of 64 bit assemblies, Integration Packs and PowerShell cmdlets.
 
@@ -126,7 +130,7 @@ For problems fixed in Orchestrator 2022 UR1, and installation instructions for U
 
 ### Support for SQL Server 2022
 
-Orchestrator 2022 and Orchestrator 2019 support SQL Server 2022.
+Orchestrator 2022 support SQL Server 2022.
 
 ::: moniker-end
 
