@@ -44,6 +44,6 @@ Welcome to System Center - Operations Manager.  Operations Manager provides infr
 
     The Management Pack Authoring Guide for Operations Manager provides information on creating custom monitoring for your service or application.
     
--   [System Center Operations Manager troubleshooting](/troubleshoot/system-center/scom/welcome-scom)
+-   [System Center - Operations Manager troubleshooting](/troubleshoot/system-center/scom/welcome-scom)
 
     Read these articles to learn how to troubleshoot Operations Manager issues in your environment.
