@@ -24,7 +24,7 @@ If after installing System Center Operations Manager, you move the Operations Ma
 
 **SQL Instance Naming**
 
-For all of the steps below where a SQL instance network name is referenced, use the format `computername\instancename` followed by a comma, and then the SQL Server port number (`computername\instancename,portNumber`). If you are hosting the database on a SQL Server cluster, replace *computername* with the virtual network name of the SQL cluster resource group. If the database is part of a SQL Always On Availability Group, replace `computername\instancename` with the availability group listener name in the format of `AvalabilityGroupListnerName,portNumber`.
+For all of the steps below where a SQL instance network name is referenced, use the format `computername\instancename` followed by a comma, and then the SQL Server port number (`computername\instancename,portNumber`). If you are hosting the database on a SQL Server cluster, replace *computername* with the virtual network name of the SQL cluster resource group. If the database is part of a SQL Always On Availability Group, replace `computername\instancename` with the availability group listener name in the format of `AvalabilityGroupListenerName,portNumber`.
 
 ## How to configure settings for the operational database
 
@@ -127,7 +127,7 @@ For all of the steps below where a SQL instance network name is referenced, use 
 
     e. In the results pane, scroll to the right of the column titled `column.ManagedTypePropertyId`.
 
-    f. Find the row with a GUID that corresponds to one of those GUIDs returned by the query above (normally row number 8), enter your operational database SQL instance network name. 
+    f. Find the row with a GUID that corresponds to one of those GUIDs returned by the query above (normally row number 8), enter your data warehouse database SQL instance network name. 
 
 
 ### Update Reporting server
