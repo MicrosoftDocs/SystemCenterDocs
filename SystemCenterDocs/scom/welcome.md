@@ -30,7 +30,7 @@ Welcome to System Center - Operations Manager.  Operations Manager provides infr
 
 - [Planning for System Center - Operations Manager](plan-overview.md)
 
-    Review information to help you plan the deployment of Operations Manager into your organization
+    Review information to help you plan the deployment of Operations Manager into your organization.
 
 -   [Deploying System Center - Operations Manager](deploy-overview.md)
 
@@ -43,3 +43,7 @@ Welcome to System Center - Operations Manager.  Operations Manager provides infr
 -   [Management Pack Authoring Guide for Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh457564(v=sc.12))
 
     The Management Pack Authoring Guide for Operations Manager provides information on creating custom monitoring for your service or application.
+    
+-   [System Center - Operations Manager troubleshooting](/troubleshoot/system-center/scom/welcome-scom)
+
+    Read these articles to learn how to troubleshoot Operations Manager issues in your environment.
