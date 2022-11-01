@@ -17,7 +17,7 @@ ms.custom: intro-whats-new
 
 ::: moniker range="sc-orch-2022"
 
-This article details the new features supported in System Center 2022 - Orchestrator. Also details the new features in Orchestrator 2022 UR1.
+This article details the new features supported in System Center 2022 - Orchestrator.
 
 ::: moniker-end
 
@@ -60,10 +60,6 @@ Earlier versions of System Center Orchestrator supported PowerShell V2.0. PowerS
 
 ## Support for SQL 2017
 System Center Orchestrator 2019 supports SQL 2017 for fresh installation.
-
-## Support for SQL Server 2022
-
-Orchestrator 2019 support SQL Server 2022.
 
 ## Other Improvements
 -  Latest Putty - No workaround needed to SSH to the latest Linux/Unix machines.
@@ -122,17 +118,8 @@ The new web API is JSON based and makes it easier to use than the older XML-base
 
 Support for 64 bit enables the use of 64 bit assemblies, Integration Packs and PowerShell cmdlets.
 
-## New features in Orchestrator 2022 UR1
-
-The following sections introduce the new features and feature updates supported in Orchestrator 2022 Update Rollup 1 (UR1).
-
-For problems fixed in Orchestrator 2022 UR1, and installation instructions for UR1, see the KB article.
-
-### Support for SQL Server 2022
-
-Orchestrator 2022 support SQL Server 2022.
-
 ::: moniker-end
 
 ## Next steps
 [Know the fixed issues](release-notes-orch.md)
+
