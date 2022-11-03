@@ -56,7 +56,7 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 - The first name is used to name the peer network from the current network to the other network. The second name is used to name the peer network from the other network to this network.
 - In the section *Virtual Network*, specify the name of the VNet that you're peering. If you can't find the VNet, you can search for it using the *Resource ID*. Retain the rest of the options as default.
 
-:::image type="Add peering" source="media/monitor-scom-managed-instance-common-questions/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/monitor-scom-managed-instance-common-questions/add-peering-expanded.png":::
+:::image type="Add peering" source="media/operations-manager-managed-instance-common-questions/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/monitor-scom-managed-instance-common-questions/add-peering-expanded.png":::
 
 ## SQL-managed instance
 
@@ -64,11 +64,11 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 
 1. If you don't see the region that you want to choose (for this preview, West US or West Europe) in the list of regions, select **Not seeing a region**, and then select **Request quota increase for your subscription**.
 
-    :::image type="Region error" source="media/monitor-scom-managed-instance-common-questions/region-error.png" alt-text="Screenshot showing region error.":::
+    :::image type="Region error" source="media/operations-manager-managed-instance-common-questions/region-error.png" alt-text="Screenshot showing region error.":::
 
 1. Enter the required fields in **Basics** and go to **Details** to enter the **Problem details**.
 
-    :::image type="New support request" source="media/monitor-scom-managed-instance-common-questions/new-support-request-inline.png" alt-text="Screenshot showing new support request." lightbox="media/monitor-scom-managed-instance-common-questions/new-support-request-expanded.png":::
+    :::image type="New support request" source="media/operations-manager-managed-instance-common-questions/new-support-request-inline.png" alt-text="Screenshot showing new support request." lightbox="media/monitor-scom-managed-instance-common-questions/new-support-request-expanded.png":::
 
 1. Select **Enter details**. **Quota details** page opens on the right pane. In *Region*, choose the desired region and change the limits as desired (10 subnets and 500 vCores should suffice for the preview). Select **Save and continue** and then select **Next: Review + create >>** to raise the ticket. It might take 24 hours for the ticket to get resolved. Wait for it to get resolved before proceeding to create the SQL MI instance.
 
@@ -80,11 +80,11 @@ Azure RBAC is the role-based access control system that Azure follows while gran
 
 Azure RBAC is divided into Azure roles and Azure Active Directory roles. At a high level, Azure roles control permissions to manage Azure resources, while Azure Active Directory roles control permissions to manage Azure Active Directory resources. The following table compares some of the differences.
 
-:::image type="Comparision of Azure roles and Azure active directory roles" source="media/monitor-scom-managed-instance-common-questions/comparision-of-azure-roles-and-azure-active-directory-roles.png" alt-text="Screenshot of Azure roles and Azure active directory roles.":::
+:::image type="Comparision of Azure roles and Azure active directory roles" source="media/operations-manager-managed-instance-common-questions/comparision-of-azure-roles-and-azure-active-directory-roles.png" alt-text="Screenshot of Azure roles and Azure active directory roles.":::
 
 Below is the high-level view of how the classic subscription administrator roles, Azure roles, and Azure AD roles are related.
 
-:::image type="Azure active directory roles" source="media/monitor-scom-managed-instance-common-questions/azure-active-directory-roles.png" alt-text="Screenshot of Azure active directory roles.":::
+:::image type="Azure active directory roles" source="media/operations-manager-managed-instance-common-questions/azure-active-directory-roles.png" alt-text="Screenshot of Azure active directory roles.":::
 
 ### What is a Global Administrator role?
 
