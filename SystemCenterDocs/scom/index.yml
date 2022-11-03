@@ -61,7 +61,5 @@ landingContent:
         links:
           - text: Migrate to SCOM Managed Instance
             url: migrate-to-operations-manager-managed-instance.md
-      - linkListType: manage
-        links:
           - text: Create SCOM Managed Instance
             url: create-operations-manager-managed-instance.md
