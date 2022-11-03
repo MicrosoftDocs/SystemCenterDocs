@@ -81,13 +81,16 @@ This procedure registers the gateway server with the management group, and when 
 
 2.  Open a command prompt, and navigate to the Operations Manager installation directory or to the directory that you copied the Microsoft.EnterpriseManagement.gatewayApprovalTool.exe to.
 
-3.  At the command prompt, run `Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create`
+3.  At the command prompt, run:
+    ```
+    Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create
+    ```
 
     > [!NOTE]
     > To prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection=True* parameter on the command.
     > ### Example
     > ```
-    > PS C:\Program Files\Microsoft System Center\Operations Manager\Server>Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /ManagementServerInitiatesConnection=True /Action=Create
+    > C:\Program Files\Microsoft System Center\Operations Manager\Server\Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /ManagementServerInitiatesConnection=True /Action=Create
     > ```
 
 4.  If the approval is successful, you will see `The approval of server <GatewayFQDN> completed successfully.`
