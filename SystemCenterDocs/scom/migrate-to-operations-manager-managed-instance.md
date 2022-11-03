@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Migrate from Operations Manager on-premises to Operations Manager managed instance (preview)
-description: This article describes how to migrate from Operations Manager on-premises to Operations Manager managed instance (preview).
+title: Migrate from Operations Manager on-premises to Monitor SCOM managed instance (preview)
+description: This article describes how to migrate from Operations Manager on-premises to Monitor SCOM managed instance (preview).
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
@@ -13,9 +13,9 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Migrate from Operations Manager on-premises to Operations Manager managed instance (preview)
+# Migrate from Operations Manager on-premises to Monitor SCOM managed instance (preview)
 
-This article provides detailed information on how you can migrate from Operations Manager on-premises to Operations Manager managed instance (preview). 
+This article provides detailed information on how you can migrate from Operations Manager on-premises to Monitor SCOM managed instance (preview). 
 
 Provided the procedure for the following artifacts as an example:
 
@@ -29,9 +29,9 @@ Provided the procedure for the following artifacts as an example:
 
 [Here](#supported-artifacts-for-migration) is the complete list of supported artifacts.
 
-## Migrate from on-premises to Operations Manager managed instance (preview)
+## Migrate from on-premises to Monitor SCOM managed instance (preview)
 
-Select the required artifact to view the migration procedure from on-premises to Operations Manager managed instance (preview):
+Select the required artifact to view the migration procedure from on-premises to Monitor SCOM managed instance (preview):
 
 # [Management Packs and Overrides](#tab/mp-overrides)
 
@@ -46,11 +46,11 @@ Select the required artifact to view the migration procedure from on-premises to
    Get-SCOMManagementPack | Where{ $_.Sealed -eq $false } | Export-SCOMManagementPack -Path "C:\Temp\Unsealed Management Packs"
    ```
 
-3. Import [Sealed Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack).
+3. Import [Sealed Management Packs in Monitor SCOM managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#importing-a-management-pack).
 
     - You must have a copy of any custom sealed Management Packs that you need to import. 
 
-4. Import [unsealed (exported) Management Packs in Operations Manager managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk).
+4. Import [unsealed (exported) Management Packs in Monitor SCOM managed instance (preview)](/system-center/scom/manage-mp-import-remove-delete?#import-a-management-pack-from-disk).
 
 ### Post migration validation
 
@@ -69,7 +69,7 @@ Follow these steps to validate the migration of Groups and Data collection.
 Operations Manager supports the following four types of data visualizations. 
 Below is a quick summary of what can be migrated:
 
-| Types of data visualizations | Can be migrated to Operations Manager managed instance (preview) | Recommendations |
+| Types of data visualizations | Can be migrated to Monitor SCOM managed instance (preview) | Recommendations |
 |---|---|---|---|---|
 | Dashboards/Views that are available in Management Pack | Yes | Operations console |
 | Dashboards/Views created on Operations console | Yes | Operations Console |
@@ -77,21 +77,21 @@ Below is a quick summary of what can be migrated:
 | Reports that are created on Operations console | No | Power BI reports |
 
 - For Dashboards/Views that are available in Management Pack, you can view the data similar to the one in Operations Manager on-premises (as they are built into Management Pack).
-- For Dashboards/Views created on the Operations console, you need to reconfigure custom dashboards and views in Operations Manager managed instance (preview). 
-- For reports that are available in Management Pack and on the Operations console, you need to reconfigure all reports on Power BI as the Reporting Server doesn't exist in Operations Manager managed instance (preview).  
+- For Dashboards/Views created on the Operations console, you need to reconfigure custom dashboards and views in Monitor SCOM managed instance (preview). 
+- For reports that are available in Management Pack and on the Operations console, you need to reconfigure all reports on Power BI as the Reporting Server doesn't exist in Monitor SCOM managed instance (preview).  
 
 # [User roles and permissions](#tab/userrole-permission)
 
 >[!Note]
->No 1:1 mapping is permitted between user roles in Operations Manager managed instance (preview) to Operations Manager on-premises. 
+>No 1:1 mapping is permitted between user roles in Monitor SCOM managed instance (preview) to Operations Manager on-premises. 
 
 In preview, only two user roles are available whereas Operations Manager on-premises has 10 user profile roles. For more information, see [Operations associated with user role profiles](/system-center/scom/manage-security-create-runas-account). 
 
-Use the following mapping chart to provide access on Operations Manager managed instance (preview) with appropriate permissions. 
+Use the following mapping chart to provide access on Monitor SCOM managed instance (preview) with appropriate permissions. 
 
 ### Mapping chart 
 
-| Operations Manager on-premises  | Operations Manager managed instance (preview) |
+| Operations Manager on-premises  | Monitor SCOM managed instance (preview) |
 |---------------------------------|-----------------------------------------------|
 | Report Operator                 | Reader                                        |
 | Read-Only Operator              | Reader                                        |
@@ -133,19 +133,19 @@ Use the following mapping chart to provide access on Operations Manager managed 
     $UserRolesOutput | Out-File "$env:USERPROFILE`\Desktop\UserRoles.txt" -Width 4096
     ```
 
-2. With the exported list and mapping recommendations, manually add the users to the respective Azure (Operations Manager managed instance (preview)) user roles. 
+2. With the exported list and mapping recommendations, manually add the users to the respective Azure (Monitor SCOM managed instance (preview)) user roles. 
 
 # [Notification subscriptions](#tab/notification-subscriptions)
 
-Operations Manager managed instance (preview) supports the following notification channels:
+Monitor SCOM managed instance (preview) supports the following notification channels:
 
 - Emails 
 - Teams 
 - SMS/Text 
 
-Export the **Notifications Internal Library** Management pack from the Operations Manager Management Group to migrate all your notification settings and import them to Operations Manager managed instance (preview).
+Export the **Notifications Internal Library** Management pack from the Operations Manager Management Group to migrate all your notification settings and import them to Monitor SCOM managed instance (preview).
 
-After you migrate the notification configuration to Operations Manager managed instance (preview), copy the local files that are used in Command Channels to the same path on all Management Servers in the Notification Resource Pool. If you migrate from Operations Manager 2016, configuring Notification Channel requires additional steps.
+After you migrate the notification configuration to Monitor SCOM managed instance (preview), copy the local files that are used in Command Channels to the same path on all Management Servers in the Notification Resource Pool. If you migrate from Operations Manager 2016, configuring Notification Channel requires additional steps.
 
 # [Groups](#tab/groups)
 
@@ -188,4 +188,5 @@ To migrate from Agent to Operations Manager managed instance, see [High level ov
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Operations Manager managed instance (preview) overview](operations-manager-managed-instance-overview.md)
+> [SCOM managed instance (preview) overview](./azure-monitor-scom-managed-instance/operations-manager-managed-instance-overview.md)
+
