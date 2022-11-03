@@ -90,7 +90,7 @@ This procedure registers the gateway server with the management group, and when 
     > To prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection=True* parameter on the command.
     > ### Example
     > ```
-    > C:\Program Files\Microsoft System Center\Operations Manager\Server\Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /ManagementServerInitiatesConnection=True /Action=Create
+    > 'C:\Program Files\Microsoft System Center\Operations Manager\Server\Microsoft.EnterpriseManagement.gatewayApprovalTool.exe' /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /ManagementServerInitiatesConnection=True /Action=Create
     > ```
 
 4.  If the approval is successful, you will see `The approval of server <GatewayFQDN> completed successfully.`
