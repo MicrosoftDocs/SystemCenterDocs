@@ -55,7 +55,7 @@ You must ensure that your server meets the minimum system requirements for Syste
 2.  Reliable name resolution must exist between the agent-managed computers and the gateway server and between the gateway server and the management servers. This name resolution is typically done through DNS. However, if it is not possible to get proper name resolution through DNS, it might be necessary to manually create entries in each computer's hosts file.
 
     > [!NOTE]
-    > The hosts file is located in the \Windows\system32\drivers\ directory, and it contains directions for configuration.
+    > The hosts file is located in the `\Windows\system32\drivers\` directory, and it contains directions for configuration.
 
 ### Obtaining computer certificates from Microsoft Certificate Services
 
@@ -67,7 +67,7 @@ The Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool is needed only o
 
 ##### To copy Microsoft.EnterpriseManagement.GatewayApprovalTool.exe to management servers
 
-1.  From a target management server, open the Operations Manager installation media \SupportTools\ (amd64 or x86) directory.
+1.  From a target management server, open the Operations Manager installation media `\SupportTools\` (amd64 or x86) directory.
 
 2.  Copy the Microsoft.EnterpriseManagement.GatewayApprovalTool.exe from the installation media to the Operations Manager installation directory.
 
@@ -84,7 +84,11 @@ This procedure registers the gateway server with the management group, and when 
 3.  At the command prompt, run `Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create`
 
     > [!NOTE]
-    > To prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection* parameter on the command line.  
+    > To prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection=True* parameter on the command.
+    > ### Example
+    > ```
+    > PS C:\Program Files\Microsoft System Center\Operations Manager\Server>Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /ManagementServerInitiatesConnection=True /Action=Create
+    > ```
 
 4.  If the approval is successful, you will see `The approval of server <GatewayFQDN> completed successfully.`
 
