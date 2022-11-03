@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: Create a Azure Monitor SCOM managed instance (preview)
-description: This article describes how to create a Azure Monitor SCOM managed instance (preview) to monitor workloads using System Center Operations Manager functionality on Azure.
+title: Create an Azure Monitor SCOM Managed Instance (preview)
+description: This article describes how to create an Azure Monitor SCOM Managed Instance (preview) to monitor workloads using System Center Operations Manager functionality on Azure.
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
@@ -13,13 +13,13 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Create a Azure Monitor SCOM managed instance (preview) on Azure
+# Create an Azure Monitor SCOM Managed Instance (preview) on Azure
 
-This article describes how to create a Azure Monitor SCOM managed instance (preview) that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services with System Center Operations Manager functionality on Azure.
+This article describes how to create an Azure Monitor SCOM Ianaged Instance (preview) that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services with System Center Operations Manager functionality on Azure.
 
 ## Prerequisites
 
-The following are the prerequisites before you create a SCOMN managed instance (preview):
+The following are the prerequisites before you create a SCOM Managed Instance (preview):
 
 # [General Prerequisites](#tab/prereqs-general)
 
@@ -29,16 +29,16 @@ The following are the prerequisites before you create a SCOMN managed instance (
 - As all the components are on a single machine, ensure that you open the following ports on the single VM:
     - On the web-console server, open the inbound ports 80/443.
     - For agent, open the ports 5723/135/138/445.
-- Ensure you allow ports 1433 and 11000-11999 from the SCOM managed instance (preview) to the SQL MI instance.
+- Ensure you allow ports 1433 and 11000-11999 from the SCOM Managed Instance (preview) to the SQL MI instance.
 - If you enable public endpoint on SQL MI, ensure that you allow 3342.
 - Ensure to establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network and configure one domain account in Active Directory. For more information, see \<link\>.
-- Ensure to create a Managed Service Identity (MSI), configure SCOM managed instance (preview) role-based access control (RBAC) and create and configure an SQL MI Instance. For more information, see \<link\>.
+- Ensure to create a Managed Service Identity (MSI), configure SCOM Managed Instance (preview) role-based access control (RBAC) and create and configure an SQL MI Instance. For more information, see \<link\>.
 
 # [In existing infrastructure](#tab/prereqs-infra)
 
 ## Establish direct connectivity (line-of-sight) between your Domain Controller and your Azure network
 
-- Ensure that there's direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you'll deploy a SCOM managed instance (preview). This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, SCOM managed instance (preview) Components such as Management Servers) can talk to each other over the network.
+- Ensure that there's direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you'll deploy a SCOM managed instance (preview). This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, SCOM Managed Instance (preview) Components such as Management Servers) can talk to each other over the network.
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/)
 - If your Domain Controller and all other components are in Azure with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't needed). If you are using one VNet to host all your components, you will already have a line-of-sight between all your components. If you have multiple VNets, you will need to do VNet peering between all the VNets that are in your network. For more information, see VNet peering in Azure.
 - Allow Port 5723/5724/443 to communicate while talking from SCOM managed instance (preview) to the VMs being monitored and vice versa.
@@ -49,7 +49,7 @@ The following are the prerequisites before you create a SCOMN managed instance (
 - Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain.
 - You can use an existing domain account if it has these [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain).
 
-## Create and Configure a Computer Group 
+## Create and configure a computer group 
 
 - Create a computer group in your active directory. For more information, see [Create a group account in active directory](/windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory). All the management servers you create will be a part of this group.  
 - To manage this computer group, provide permissions to the domain account you created in the above step. Follow the below steps to provide permissions:
@@ -57,9 +57,9 @@ The following are the prerequisites before you create a SCOMN managed instance (
         1. **Name**: Enter the name of the domain account.
         1. Select the checkbox **Manager can update membership list**. For more information, see [Manager can update membership list with PowerShell](https://activedirectoryfaq.com/2021/03/manager-can-update-membership-list/)
 
-## Create a Static IP and configure the DNS 
+## Create a static IP and configure the DNS 
 
-- The instance creates a load-balancer at the backend that manages all the management server actions. To set up the load-balancer, specify a static IP that acts as the frontend address of the load-balancer. For more information, see \<link\>
+- The instance creates a load-balancer at the backend that manages all the management server actions. To set up the load-balancer, specify a static IP that acts as the frontend address of the load-balancer. For more information, see.
 - Ensure that the frontend IP is static in the subnet specified for SCOM managed instance during the VNet creation. There must be direct connectivity between the Active Directory and this VNet.
 - After the IP configuration, configure the DNS with a name (as per your organization policy) for the created static IP. It will be used for communication between other components and the SCOM managed instance (preview) interface on Azure (Web Console, Agents, SCOM Ops Console, and Gateway Server).
 
@@ -99,7 +99,7 @@ The Managed Service Identity provide an identity for applications to use when co
 1. Select **Next : Review + Create >**.
 1. Under **Review + create**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, you can access the resource and view its details.
 
-## Create a Key vault and add Credentials as a secret in the Key vault  
+## Create a key vault and add credentials as a secret in the Key vault  
 
 Store the domain account you create in Active Directory in a Key vault account for security. Azure Key Vault is a cloud service that provides a secure store for keys, secrets, and certificates. For more information, see [Azure Key Vault](/azure/key-vault/general/overview). 
 
