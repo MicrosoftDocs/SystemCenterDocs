@@ -188,5 +188,5 @@ To migrate from Agent to Operations Manager managed instance, see [High level ov
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [SCOM managed instance (preview) overview](./azure-monitor-scom-managed-instance/operations-manager-managed-instance-overview.md)
+> [SCOM managed instance (preview) overview](operations-manager-managed-instance-overview.md)
 
