@@ -31,11 +31,12 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 
 ## Support Matrix
 
-|Windows Server versions| DPM 2012 R2 | DPM 2016 | DPM 2019 |
-| --- | --- | --- | --- |
-| Windows Server 2012 R2 |  Y |  Y |  N |
-| Windows Server 2016    |  Y |  Y |  Y |
-| Windows Server 2019    |  N |  N |  Y |
+|Windows Server versions| DPM 2012 R2 | DPM 2016 | DPM 2019 | DPM 2022 |
+| --- | --- | --- | --- | --- |
+| Windows Server 2012 R2 |  Y |  Y |  N | N |
+| Windows Server 2016    |  Y |  Y |  Y | N |
+| Windows Server 2019    |  N |  N |  Y | Y |
+| Windows Server 2022    |  N |  N |  Y | Y |
 
 ## BDT
 
