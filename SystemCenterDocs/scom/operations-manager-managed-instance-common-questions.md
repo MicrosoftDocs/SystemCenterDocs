@@ -56,7 +56,7 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 - The first name is used to name the peer network from the current network to the other network. The second name is used to name the peer network from the other network to this network.
 - In the section *Virtual Network*, specify the name of the VNet that you're peering. If you can't find the VNet, you can search for it using the *Resource ID*. Retain the rest of the options as default.
 
-:::image type="Add peering" source="media/operations-manager-managed-instance-common-questions/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/monitor-scom-managed-instance-common-questions/add-peering-expanded.png":::
+:::image type="Add peering" source="media/operations-manager-managed-instance-common-questions/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/operations-manager-managed-instance-common-questions/add-peering-expanded.png":::
 
 ## SQL-managed instance
 
@@ -68,7 +68,7 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 
 1. Enter the required fields in **Basics** and go to **Details** to enter the **Problem details**.
 
-    :::image type="New support request" source="media/operations-manager-managed-instance-common-questions/new-support-request-inline.png" alt-text="Screenshot showing new support request." lightbox="media/monitor-scom-managed-instance-common-questions/new-support-request-expanded.png":::
+    :::image type="New support request" source="media/operations-manager-managed-instance-common-questions/new-support-request-inline.png" alt-text="Screenshot showing new support request." lightbox="media/operations-manager-managed-instance-common-questions/new-support-request-expanded.png":::
 
 1. Select **Enter details**. **Quota details** page opens on the right pane. In *Region*, choose the desired region and change the limits as desired (10 subnets and 500 vCores should suffice for the preview). Select **Save and continue** and then select **Next: Review + create >>** to raise the ticket. It might take 24 hours for the ticket to get resolved. Wait for it to get resolved before proceeding to create the SQL MI instance.
 

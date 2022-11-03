@@ -43,6 +43,8 @@ SCOM managed instance (preview) functionality allows you to:
 
 ## Architecture
 
+:::image type="SCOM MI architecture" source="media/operations-manager-managed-instance-overview/architecture.png" alt-text="Screenshot showing architecture.":::
+
 When you create a SCOM managed instance (preview) (which is equivalent to your System Center Operations Manager Management Group), you’ll get a load-balancer behind which your management servers functions. When you create a new instance, the load-balancer will have one management server; Number changes depending on how you decide to scale your instance. Additionally, you’ll also get a web console running on the same management server VM. On the SQL MI instance, you'll get two databases (Ops database & DW database). The entire infrastructure will be located on Azure.
 
 When you connect your existing agents to your Azure-based SCOM managed instance (preview), ensure that there's a direct network connectivity (line-of-sight) between your existing network and your network in Azure. If your existing agents are in an untrusted domain, then connect a gateway server.

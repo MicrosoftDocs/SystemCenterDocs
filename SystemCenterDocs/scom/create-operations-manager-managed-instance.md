@@ -310,4 +310,4 @@ To create a SCOM managed instance (preview), follow the below steps:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect SCOM managed instance (preview) to Ops console](connect-operations-manager-managed-instance-ops-console.md)
+> [Connect SCOM managed instance (preview) to Ops console](connect-managed-instance-ops-console.md)
