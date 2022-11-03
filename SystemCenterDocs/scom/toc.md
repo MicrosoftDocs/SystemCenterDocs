@@ -1,4 +1,4 @@
-# [Overview](welcome.md)
+# [About Operations Manager](welcome.md)
 ## [About Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md)
 ## [Operations Manager key concepts](key-concepts.md)
 # [Get Started](get-started.md)
