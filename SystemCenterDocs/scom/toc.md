@@ -1,4 +1,5 @@
-# [Overview](welcome.md)
+# [About Operations Manager](welcome.md)
+## [About Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md)
 ## [Operations Manager key concepts](key-concepts.md)
 # [Get Started](get-started.md)
 ## [Operations Manager build versions](release-build-versions.md)
@@ -7,6 +8,7 @@
 ## [What's new in Operations Manager](whats-new-in-om.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
+## [Migrate from On-premises to SCOM managed Instance](migrate-to-operations-manager-managed-instance.md)
 ## [How to disable RC4 while installing Operations Manager](install-with-rc4-disabled.md)
 ## [Enable service logon ](enable-service-logon.md)
 ## [Turn on/off telemetry settings](manage-telemetry.md)
@@ -68,12 +70,11 @@
 #### [Post-upgrade tasks when upgrading Operations Manager](deploy-upgrade-post-tasks.md)
 ## Manage
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
-### Operations Manager - Managed Instance
-#### [Overview](operations-manager-managed-instance-overview.md)
-#### [FAQ](operations-manager-managed-instance-common-questions.md)
-#### [Create managed instance](create-operations-manager-managed-instance.md)
-#### [Connect managed instance to Ops console](connect-managed-instance-ops-console.md)
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
+### Azure Monitor SCOM Managed Instance
+#### [Create a SCOM managed Instance](create-operations-manager-managed-instance.md)
+#### Post Deployment
+##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
 ### Managing discovery and agents
 #### [Discover and install agent on Windows](manage-deploy-windows-agent-console.md)
 #### [Discover and install agent on UNIX and Linux](manage-deploy-crossplat-agent-console.md)
