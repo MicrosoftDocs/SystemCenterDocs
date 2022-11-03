@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Create an Azure Monitor SCOM Managed Instance (preview) on Azure
 
-This article describes how to create an Azure Monitor SCOM Ianaged Instance (preview) that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services with System Center Operations Manager functionality on Azure.
+This article describes how to create an Azure Monitor SCOM Managed Instance (preview) that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services with System Center Operations Manager functionality on Azure.
 
 ## Prerequisites
 
@@ -59,7 +59,7 @@ The following are the prerequisites before you create a SCOM Managed Instance (p
 
 ## Create a static IP and configure the DNS 
 
-- The instance creates a load-balancer at the backend that manages all the management server actions. To set up the load-balancer, specify a static IP that acts as the frontend address of the load-balancer. For more information, see.
+- The instance creates a load-balancer at the backend that manages all the management server actions. To set up the load-balancer, specify a static IP that acts as the frontend address of the load-balancer. 
 - Ensure that the frontend IP is static in the subnet specified for SCOM managed instance during the VNet creation. There must be direct connectivity between the Active Directory and this VNet.
 - After the IP configuration, configure the DNS with a name (as per your organization policy) for the created static IP. It will be used for communication between other components and the SCOM managed instance (preview) interface on Azure (Web Console, Agents, SCOM Ops Console, and Gateway Server).
 
