@@ -28,10 +28,6 @@ Arc-enabled System Center VMM allows you to:
 
 - Discover and onboard existing SCVMM managed VMs to Azure. 
 
-## Discover Arc enabled SCVMM from SCVMM console
-
-[Contents to be added] 
-
 
 ## Next steps
 
