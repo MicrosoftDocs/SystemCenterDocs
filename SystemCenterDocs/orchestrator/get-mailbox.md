@@ -193,7 +193,7 @@ The filter values mentioned here only filters the returned results from the cmdl
 | Throttling Policy   | Identifier for the throttling policy applied to the mailbox.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with  |
 | UM DTMF Map   | UM DTMF Map.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with  |
 | UM Enabled   | Indicates whether Unified Messaging (UM) is enabled for this mailbox.   | Equals<br>Does not equal   |
-| Usage Location   | Country name.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with  |
+| Usage Location   | Country/region name.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with  |
 | Use Database Quota Defaults   | Indicates whether this mailbox uses the database defaults for quota properties   | Equals<br>Does not equal   |
 | Use Database Retention Defaults   | Indicates whether this mailbox uses the mailbox retention policy specified for the mailbox database that contains the mailbox.   | Equals<br>Does not equal   |
 | User Principal Name   | Principal name for the mailbox user.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with  |
@@ -418,7 +418,7 @@ If the value specified for any of these optional properties is empty or null, (n
 | Throttling Policy   | Identifier for the throttling policy applied to the mailbox.   | String   |
 | UM DTMF Map   | UM DTMF Map.   | String   |
 | UM Enabled   | Indicates whether Unified Messaging (UM) is enabled for this mailbox.   | String   |
-| Usage Location   | Country name.   | String   |
+| Usage Location   | Country/region name.   | String   |
 | Use Database Quota Defaults   | Indicates whether this mailbox uses the database defaults for quota properties.   | String   |
 | Use Database Retention Defaults   | Indicates whether this mailbox uses the mailbox retention policy specified for the mailbox database that contains the mailbox.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |
