@@ -4,7 +4,7 @@ manager:
 ms.topic: include
 author: jyothisuri
 ms.prod: system-center
-ms.date: 05/02/2022
+ms.date: 11/04/2022
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:
@@ -59,3 +59,7 @@ DPM’s SQL Self Service Recovery tool is available as a standalone downloadable
 ## Support for O365 SMTP
 
 DPM supports to send alert and report emails via O365 SMTP directly without a relay agent. Learn more.
+
+## Support for Immutability vault
+
+DPM 2022 UR1 supports Immutability vault with MARS agent version 2.0.9250.0 and later. Learn more.

@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 03/04/2022
+ms.date: 11/04/2022
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -25,13 +25,36 @@ You can monitor a single System Center Data Protection Manager (DPM) server from
 ## Monitor with the DPM console
 To monitor DPM in the console, you should be logged on to the DPM server with a local admin account. Here's what you can monitor:
 
--   On the **Alerts** tab, you can monitor errors, warnings, and general information for a protection group, for a specific protected computer, or by message severity.  You can view active and inactive alerts and set up email notifications.
+-   On the **Alerts** tab, you can monitor errors, warnings, and general information for a protection group, for a specific protected computer, or by message severity.  You can view active and inactive alerts and [set up email notifications](#configure-email-for-dpm).
 
 -   On the **Jobs** tab, you can view jobs initiated by DPM for a specific protected computer or protection group. You can  follow job progress or check resources consumed by jobs.
 
 -   In the **Protection** task area, you can check the status of volumes and shares in protection group, and check configuration settings such as recovery settings, disk allocation, and backup schedule.
 
 -   In the **Management** task area, you can view the **Disks, Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
+
+::: moniker range="sc-dpm-2022"
+
+### Configure Email for DPM
+
+**Use on-premises SMTP server**
+
+1. In the DPM console, select **Actions** > **Options** and then select the **SMTP Server** tab.
+1. In **SMTP Server**, do the following:
+    1. **SMTP server name**: Enter the fully qualified domain name of the SMTP server.
+    1. **SMTP server port**: Enter the fully qualified domain name of the server port. 
+    1. **"From" address**: Configure the **From** address to be a valid email address on the SMTP server. 
+    1. **Authenticated SMTP server**: Enter the domain user e.g., **domain\username** and password to authenticate to the SMTP server.  
+1. Select **Send Test E-mail** to verify if the setup is working.
+1. Select **OK** to save the details.
+
+:::image type="SMTP Server" source="media/monitor-dpm/smtp-server.png" alt-text="Screenshot of SMTP server tab.":::
+
+**Use O365 SMTP**
+
+DPM supports O365 without relay agent. Use *office365 smtp server: smtp.office365.com* on ports 25 and 587 to configure email for alerts and reports. If you use O365, ensure to use the username and password for O365 instead of the domain user.
+    
+::: moniker-end
 
 ## Monitor DPM in the Central Console
 Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple DPM servers from a single location. In the Central Console you can monitor and track the status of multiple DPM servers,  jobs, protection groups, tapes, storage, and disk space.

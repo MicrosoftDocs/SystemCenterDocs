@@ -4,7 +4,7 @@ manager: evansma
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
-ms.date: 05/02/2022
+ms.date: 11/04/2022
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
