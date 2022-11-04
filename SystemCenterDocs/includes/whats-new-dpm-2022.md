@@ -48,6 +48,14 @@ For issues fixed and the installation instructions for UR1, see KB article for U
 
 DPM 2022 UR1 supports SQL Server 2022. [Learn more](/system-center/dpm/prepare-environment-for-dpm#sql-server-database).
 
-### Support for Virtual Disk Development kit 7.0
+### Support for Virtual Disk Development kit 7.0.3.2
 
-DPM 2022 UR1 supports VDDK 7.0
+DPM 2022 UR1 uses VDDK 7.0.3.2 for VMware VM backups. DPM 2022 UR1 doesn't support backups for vSphere 6.0.
+
+## SQL Self Service Recovery Tool 
+
+DPM’s SQL Self Service Recovery tool is available as a standalone downloadable. Learn more.
+
+## Support for O365 SMTP
+
+DPM supports to send alert and report emails via O365 SMTP directly without a relay agent. Learn more.
