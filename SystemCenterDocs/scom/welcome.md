@@ -1,11 +1,11 @@
 ---
 ms.assetid: 935c8a61-f878-40d4-86ed-ac4eb71a3f75
 title: Operations Manager
-description: This article is the main landing page for all content related to System Center 2016 - Operations Manager.
+description: This article is the main landing page for all content related to System Center - Operations Manager.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/08/2017
+ms.date: 11/07/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
