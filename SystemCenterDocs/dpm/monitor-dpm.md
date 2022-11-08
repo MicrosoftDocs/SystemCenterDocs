@@ -37,22 +37,26 @@ To monitor DPM in the console, you should be logged on to the DPM server with a 
 
 ### Configure Email for DPM
 
-**Use on-premises SMTP server**
+**Use on-premises SMTP server to configure email for DPM**
 
-1. In the DPM console, select **Actions** > **Options** and then select the **SMTP Server** tab.
+Follow the below steps to configure email for DPM using on-premises SMTP server:
+
+1. In the DPM console, select **Actions** > **Options** and then select the **SMTP Server**.
 1. In **SMTP Server**, do the following:
     1. **SMTP server name**: Enter the fully qualified domain name of the SMTP server.
     1. **SMTP server port**: Enter the fully qualified domain name of the server port. 
-    1. **"From" address**: Configure the **From** address to be a valid email address on the SMTP server. 
+    1. **"From" address**: Configure the **From** address, should be a valid email address on the SMTP server. 
     1. **Authenticated SMTP server**: Enter the domain user e.g., **domain\username** and password to authenticate to the SMTP server.  
 1. Select **Send Test E-mail** to verify if the setup is working.
 1. Select **OK** to save the details.
 
     :::image type="SMTP Server" source="media/monitor-dpm/smtp-server.png" alt-text="Screenshot of SMTP server tab.":::
 
-**Use O365 SMTP**
+**Use O365 SMTP to configure email for DPM**
 
-DPM supports O365 without relay agent. Use *office365 smtp server: smtp.office365.com* on ports 25 and 587 to configure email for alerts and reports. If you use O365, ensure to use the username and password for O365 instead of the domain user.
+DPM supports O365 without a relay agent. 
+
+Use *office365 smtp server: smtp.office365.com* on ports 25 and 587 to configure email for alerts and reports. If you use O365, ensure to use the username and password for O365 instead of the domain user.
     
 ::: moniker-end
 
