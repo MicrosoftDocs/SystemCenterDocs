@@ -75,6 +75,7 @@
 #### [Create a SCOM managed Instance](create-operations-manager-managed-instance.md)
 #### Post Deployment
 ##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
+### [FAQs](operations-manager-managed-instance-common-questions.md)
 ### Managing discovery and agents
 #### [Discover and install agent on Windows](manage-deploy-windows-agent-console.md)
 #### [Discover and install agent on UNIX and Linux](manage-deploy-crossplat-agent-console.md)
