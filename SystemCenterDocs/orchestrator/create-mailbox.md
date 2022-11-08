@@ -275,7 +275,7 @@ The following tables list the required properties, optional properties, and publ
 | Throttling Policy   | Identifier for the throttling policy applied to the mailbox.   | String   |
 | UM DTMF Map   | UM DTMF Map.   | String   |
 | UM Enabled   | Indicates whether Unified Messaging (UM) is enabled for this mailbox.   | String   |
-| Usage Location   | Country name.   | String   |
+| Usage Location   | Country/region name.   | String   |
 | Use Database Quota Defaults   | Indicates whether this mailbox uses the database defaults for quota properties.   | String   |
 | Use Database Retention Defaults   | Indicates whether this mailbox uses the mailbox retention policy that is specified for the mailbox database that contains the mailbox.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |
