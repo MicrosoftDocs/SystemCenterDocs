@@ -72,11 +72,11 @@ See [Deploy and manage Azure Stack HCI clusters in VMM](/system-center/vmm/deplo
 
 ### Support for VMware Vsphere 7.0 and ESXI 7.0
 
-VMM 2022 UR1 supports VMware Vsphere 7.0 and ESXI 7.0
+VMM 2022 UR1 supports VMware Vsphere 7.0 and ESXI 7.0. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
 
 ### Support for SQL Server 2022
 
-VMM 2022 UR1 supports SQL Server 2022
+VMM 2022 UR1 supports SQL Server 2022. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
 
 ### Support for Smart card login in SCVMM Console
 
@@ -84,13 +84,15 @@ VMM 2022 UR1 supports Smart card login with enhanced session mode in SCVMM Conso
 
 ### SR-IOV support for Network Controller managed NICs
 
+With VMM 2022 UR1, SR-IOV supports Network Controller manaed NICs.
+
 ### Removed VMM dependencies on deprecated Operations Manager Management Pack
 
 With VMM 2022 UR1, removed VMM dependencies on deprecated SCOM Management Packs. If you have an active SCOM - VMM integration, follow the steps listed in KB article before you upgrade to VMM 2022 UR1. 
 
 ### Discover Arc-enabled SCVMM from VMM console
 
-VMM 2022 UR1 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal.
+VMM 2022 UR1 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal. [Learn more](/system-center/vmm/about-arc-enabled-system-center-virtual-machine-manager?view=sc-vmm-2022).
 
 ### Support for 64 virtual networks for Windows Server 2019 or later
 
