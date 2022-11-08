@@ -5,7 +5,7 @@ description: This article describes the new features supported in VMM
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/04/2022
+ms.date: 11/08/2022
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.custom: intro-whats-new
 
 See the following sections for new features and feature updates supported in VMM 2022. 
 
-## Compute
+### Compute
 
 ### Windows Server 2022 and Windows Server 2022 Guest OS support
 
