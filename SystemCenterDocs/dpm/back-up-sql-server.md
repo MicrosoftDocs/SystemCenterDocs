@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 10/19/2020
+ms.date: 11/08/2022
 title: Back up SQL Server with DPM
 ms.technology: data-protection-manager
 ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
@@ -206,9 +206,12 @@ After the protection group's been created the initial replication occurs and DPM
 
 2.  After you enable **Alert Publishing** all existing DPM alerts that might require a user action are published to the **DPM Alerts** event log. The Operations Manager agent that is installed on the DPM server then publishes these alerts to the Operations Manager and continues to update the console as new alerts are generated.
 
+::: moniker range="<=sc-dpm-2019"
+
 ## Allow SQL Server admins to restore data
+
 DPM provides a self-service recovery feature to allow SQL Server administrators access to data protected by DPM, so that they can restore a SQL Server database from backup to a network folder.
- You set up the  DPM Self-Service Recovery Configuration Tool to create and manage roles that specify which users can perform self-service recovery. Then users use the DPM Self-Service Recovery Wizard to recover SQL Server databases.
+You set up the  DPM Self-Service Recovery Configuration Tool to create and manage roles that specify which users can perform self-service recovery. Then users use the DPM Self-Service Recovery Wizard to recover SQL Server databases.
 
 Configure self-service SQL Server recovery as follows:
 
@@ -226,6 +229,7 @@ Configure self-service SQL Server recovery as follows:
 
 6.  In addition on the computer from which self-service recovery will run make sure that at least .NET framework 3.5 is installed, and that the DPM Self-Service Recovery Tool is installed. The tool is available in the DPM product installation location, in the **DpmSqlEURInstaller** folder.
 
+::: moniker-end
 ## Restore  SQL Server data
 You can recover SQL data as follows:
 
