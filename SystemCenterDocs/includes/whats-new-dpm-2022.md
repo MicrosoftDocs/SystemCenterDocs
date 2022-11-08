@@ -4,7 +4,7 @@ manager:
 ms.topic: include
 author: jyothisuri
 ms.prod: system-center
-ms.date: 11/04/2022
+ms.date: 11/08/2022
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:
@@ -46,7 +46,7 @@ For issues fixed and the installation instructions for UR1, see KB article for U
 
 ### Support for SQL Server 2022
 
-DPM 2022 UR1 supports SQL Server 2022. [Learn more](/system-center/dpm/prepare-environment-for-dpm#sql-server-database).
+DPM 2022 UR1 supports SQL Server 2022 both as a protected workload and DPM database. [Learn more](/system-center/dpm/prepare-environment-for-dpm#sql-server-database).
 
 ### Support for Virtual Disk Development kit 7.0.3.2
 
@@ -54,12 +54,9 @@ DPM 2022 UR1 uses VDDK 7.0.3.2 for VMware VM backups. DPM 2022 UR1 doesn't suppo
 
 ## SQL Self Service Recovery Tool 
 
-DPM’s SQL Self Service Recovery tool is available as a standalone downloadable. Learn more.
+DPM 2022 UR1 supports DPM SQL Self Service Recovery tool which is not available in DPM 2022 RTM. [Learn more](/system-center/dpm/back-up-sql-server?view=sc-dpm-2022#allow-sql-server-admins-to-restore-data).
 
 ## Support for O365 SMTP
 
-DPM supports to send alert and report emails via O365 SMTP directly without a relay agent. Learn more.
+DPM supports to send alert and report emails via O365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2022#configure-email-for-dpm).
 
-## Support for Immutability vault
-
-DPM 2022 UR1 supports Immutability vault with MARS agent version 2.0.9250.0 and later. Learn more.
