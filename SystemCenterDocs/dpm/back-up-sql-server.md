@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 11/04/2022
+ms.date: 11/08/2022
 title: Back up SQL Server with DPM
 ms.technology: data-protection-manager
 ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
@@ -284,7 +284,7 @@ Users with self-service recovery permissions should recover as follows:
 
 ::: moniker range="sc-dpm-2022"
 
-With DPM 2022 UR1, download the SQL Server Self Service Recovery tool separately to use it for Self-Service recoveries. 
+With DPM 2022 UR1, download the [SQL Server Self Service Recovery tool](https://go.microsoft.com/fwlink/?linkid=2215141) separately to use it for Self-Service recoveries. 
 
 ::: moniker-end
 

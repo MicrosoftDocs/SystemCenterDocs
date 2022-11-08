@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 11/04/2022
+ms.date: 11/08/2022
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -48,7 +48,7 @@ To monitor DPM in the console, you should be logged on to the DPM server with a 
 1. Select **Send Test E-mail** to verify if the setup is working.
 1. Select **OK** to save the details.
 
-:::image type="SMTP Server" source="media/monitor-dpm/smtp-server.png" alt-text="Screenshot of SMTP server tab.":::
+    :::image type="SMTP Server" source="media/monitor-dpm/smtp-server.png" alt-text="Screenshot of SMTP server tab.":::
 
 **Use O365 SMTP**
 
