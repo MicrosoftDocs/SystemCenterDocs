@@ -206,7 +206,6 @@ After the protection group's been created the initial replication occurs and DPM
 
 2.  After you enable **Alert Publishing** all existing DPM alerts that might require a user action are published to the **DPM Alerts** event log. The Operations Manager agent that is installed on the DPM server then publishes these alerts to the Operations Manager and continues to update the console as new alerts are generated.
 
-::: moniker range="<=sc-dpm-2019"
 
 ## Allow SQL Server admins to restore data
 
