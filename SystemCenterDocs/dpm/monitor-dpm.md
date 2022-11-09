@@ -50,13 +50,13 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 1. Select **Send Test E-mail** to verify if the setup is working.
 1. Select **OK** to save the details.
 
-    :::image type="SMTP Server" source="media/monitor-dpm/smtp-server.png" alt-text="Screenshot of SMTP server tab.":::
-
 **Use O365 SMTP to configure email for DPM**
 
 DPM supports O365 without a relay agent. 
 
 Use *office365 smtp server: smtp.office365.com* on ports 25 and 587 to configure email for alerts and reports. If you use O365, ensure to use the username and password for O365 instead of the domain user.
+
+:::image type="SMTP Server" source="media/monitor-dpm/smtp-server.png" alt-text="Screenshot of SMTP server tab.":::
     
 ::: moniker-end
 

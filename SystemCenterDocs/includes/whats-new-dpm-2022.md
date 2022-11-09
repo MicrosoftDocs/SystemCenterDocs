@@ -58,4 +58,4 @@ DPM 2022 UR1 supports DPM SQL Self Service Recovery tool which is not available 
 
 ## Support for O365 SMTP
 
-DPM supports sending alert and report emails using O365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2022#configure-email-for-dpm).
+DPM 2022 UR1 supports sending alert and report emails using O365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2022#configure-email-for-dpm).
