@@ -28,7 +28,7 @@ This article explains how to use Data Protection Manager (DPM) to back up virtua
 ::: moniker range="sc-dpm-2022"
 This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7, 7.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
-DPM 2022 UR1 doesn't support vSphere 6.0 as it uses VDDK 7.0.3.2. Ensure to upgrade to newer vSphere versions.
+DPM 2022 UR1 doesn't support vSphere 6.0 as it uses VDDK 7.0.3.2. Ensure to upgrade to newer vSphere versions as vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html).
 
 ::: moniker-end
 
