@@ -58,8 +58,4 @@ DPM 2022 UR1 supports DPM SQL Self Service Recovery tool which is not available 
 
 ## Support for O365 SMTP
 
-DPM supports to send alert and report emails via O365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2022#configure-email-for-dpm).
-
-## Support for Immutability vault
-
-DPM 2022 UR1 supports Immutability vault with MARS agent version 2.0.9250.0 and later. Learn more.
+DPM supports sending alert and report emails using O365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2022#configure-email-for-dpm).
