@@ -221,8 +221,6 @@ You set up the  DPM Self-Service Recovery Configuration Tool to create and manag
 DPM 2022 UR1 provides a self-service recovery feature to allow SQL Server administrators access to data protected by DPM, so that they can restore a SQL Server database from backup to a network folder.
 You set up the  DPM Self-Service Recovery Configuration Tool to create and manage roles that specify which users can perform self-service recovery. Then users use the DPM Self-Service Recovery Wizard to recover SQL Server databases. Download the [self-service recovery wizard tool](https://go.microsoft.com/fwlink/?linkid=2215141).
 
-::: moniker-end
-
 Configure self-service SQL Server recovery as follows:
 
 1.  In the DPM console > **Protection**  click **Configure self service recovery**.
@@ -240,6 +238,7 @@ Configure self-service SQL Server recovery as follows:
 6.  In addition on the computer from which self-service recovery will run make sure that at least .NET framework 3.5 is installed, and that the DPM Self-Service Recovery Tool is installed. The tool is available in the DPM product installation location, in the **DpmSqlEURInstaller** folder.
 
 ::: moniker-end
+
 ## Restore  SQL Server data
 You can recover SQL data as follows:
 

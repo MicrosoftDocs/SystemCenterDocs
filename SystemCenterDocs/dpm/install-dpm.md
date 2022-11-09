@@ -91,13 +91,13 @@ To set up a SQL Server database:
 
 ::: moniker range="sc-dpm-2022"
 
-7. If you use SQL server 2022, you need to install [SQL Server Native Client (SQLNCLI)](https://www.microsoft.com/download/details.aspx?id=50402) on the SQL Server 2022 machine. 
+7.  On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
+    
+    If you use SQL server 2022, you need to install [SQL Server Native Client (SQLNCLI)](https://www.microsoft.com/download/details.aspx?id=50402) on the SQL Server 2022 machine. 
 
     SQLNCLI is a pre-requisite for DPM 2022 RTM installation but is not available in SQL Server 2022. Hence after SQL Server 2022 installation you would also need to install SQL Server Native Client Separately on the SQL Server machine.  After that, ensure to install DPM 2022 RTM and update to UR1 or later which supports SQL Server 2022 as the DPM Database and uses OLEDB 18.0 instead of SQLNCLI. 
 
-8.  On the **Database Engine Configuration**, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and select **Ready to Install** > **Install**.
-
-9.  If you're installing SQL Server on a remote computer do the following:
+8.  If you're installing SQL Server on a remote computer do the following:
 
     -   Install the DPM support files (SQLPrep). To do this, on the SQL Server computer, insert the DPM DVD and start setup.exe. Follow the wizard to install the Microsoft Visual C++ 2012 Redistributable. The DPM support files will be installed automatically.
 
