@@ -50,7 +50,7 @@ DPM 2022 UR1 supports SQL Server 2022 both as a protected workload and DPM datab
 
 ### Support for Virtual Disk Development kit 7.0.3.2
 
-DPM 2022 UR1 uses VDDK 7.0.3.2 for VMware VM backups. DPM 2022 UR1 doesn't support backups for vSphere 6.0.
+DPM 2022 UR1 uses VDDK 7.0.3.2 for VMware VM backups. vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html) and DPM 2022 UR1 doesn't support backups for vSphere 6.0.
 
 ## SQL Self Service Recovery Tool 
 
