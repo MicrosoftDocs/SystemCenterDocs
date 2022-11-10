@@ -4,7 +4,7 @@ manager:
 ms.topic: include
 author: jyothisuri
 ms.prod: system-center
-ms.date: 11/08/2022
+ms.date: 11/10/2022
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:
@@ -48,10 +48,6 @@ For issues fixed and the installation instructions for UR1, see KB article for U
 
 DPM 2022 UR1 supports SQL Server 2022 both as a protected workload and DPM database. [Learn more](/system-center/dpm/prepare-environment-for-dpm#sql-server-database).
 
-### Support for Virtual Disk Development kit 7.0.3.2
-
-DPM 2022 UR1 uses VDDK 7.0.3.2 for VMware VM backups. vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html) and DPM 2022 UR1 doesn't support backups for vSphere 6.0.
-
 ### SQL Self Service Recovery Tool 
 
 DPM 2022 UR1 supports DPM SQL Self Service Recovery tool which is not available in DPM 2022 RTM. [Learn more](/system-center/dpm/back-up-sql-server?view=sc-dpm-2022#allow-sql-server-admins-to-restore-data).
@@ -59,3 +55,7 @@ DPM 2022 UR1 supports DPM SQL Self Service Recovery tool which is not available 
 ### Support for O365 SMTP
 
 DPM 2022 UR1 supports sending alert and report emails using O365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2022#configure-email-for-dpm).
+
+### End of Support for vSphere 6.0 
+
+vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html), DPM 2022 UR1 and later don't support backups for VMWare VMs on vSphere 6.0. Ensure to upgrade to newer vSphere versions.
