@@ -1,7 +1,6 @@
 # Overview
 ## [What is VMM?](overview.md)
 ## [VMM network object fundamentals](network-object-fundamentals.md)
-## [Arc-enabled SCVMM](about-arc-enabled-system-center-virtual-machine-manager.md)
 ## [What's new in VMM ](whats-new-in-vmm.md)
 # Get Started
 ## [VMM build versions](release-build-versions.md)
