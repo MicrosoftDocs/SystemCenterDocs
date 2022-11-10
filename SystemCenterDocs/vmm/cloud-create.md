@@ -4,7 +4,7 @@ title: Create a private VMM cloud
 description: This article provides instructions for creating a private cloud in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center

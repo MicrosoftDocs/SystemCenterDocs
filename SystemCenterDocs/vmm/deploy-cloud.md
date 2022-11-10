@@ -4,7 +4,7 @@ title: Deploy a private VMM cloud
 description: This article provides an overview of private cloud deployment in VMM
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: system-center

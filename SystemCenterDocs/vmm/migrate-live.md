@@ -4,7 +4,7 @@ title: Run a live migration in the VMM fabric
 description: This article describes how to run a live migration in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/10/2020
 ms.topic: article
 ms.prod: system-center

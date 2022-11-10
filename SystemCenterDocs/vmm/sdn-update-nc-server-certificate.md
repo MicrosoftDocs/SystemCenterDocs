@@ -4,7 +4,7 @@ title: Update the network controller server certificate
 description: This article describes the procedure on how to update the network controller's server certificate.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 06/15/2018
 ms.topic: article
 ms.prod: system-center

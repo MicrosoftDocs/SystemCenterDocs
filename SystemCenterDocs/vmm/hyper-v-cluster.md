@@ -4,7 +4,7 @@ title: Manage Hyper-V clusters in the VMM fabric
 description: This article describes how to manage Hyper-V clusters in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
