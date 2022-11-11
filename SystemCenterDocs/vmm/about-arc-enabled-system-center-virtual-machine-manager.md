@@ -38,7 +38,8 @@ You can discover and learn about Arc-enabled SCVMM from the *Azure Arc* blade fr
     - **Steps to deploy**: Provides steps to Arc enable SCVMM deployment.
     - **Deploy Arc Resource Bridge**: To deploy Arc resoure bridge.
     - **View onboarded SCVMM in Azure**: To navigate to your SCVMM inventory page on the Azure Arc portal from the default web browser. 
-    You need appropriate credentials on the Azure Portal with the necessary permissions to onboard or use Azure Arc-enabled SCVMM. 
+
+You need appropriate credentials on the Azure Portal with the necessary permissions to onboard or use Azure Arc-enabled SCVMM. 
 
     :::image type="Arc-enabled SCVMM blade" source="media/about-arc-enabled-system-center-virtual-machine-manager/arc-enabled-scvmm.png" alt-text="Screenshot showing Arc-enabled SCVMM blade.":::
 
