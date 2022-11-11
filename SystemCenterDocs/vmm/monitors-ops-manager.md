@@ -4,7 +4,7 @@ title: Integrate VMM with Operations Manager for monitoring and reporting
 description: This article describes how to integrate VMM with Operations Manager for monitoring and reporting
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/06/2022
 ms.topic: article
 ms.prod: system-center

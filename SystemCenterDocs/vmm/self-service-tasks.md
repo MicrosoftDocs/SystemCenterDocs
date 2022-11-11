@@ -4,7 +4,7 @@ title: Work with VMM as a self-service user
 description: This article describes how to work with VMM as a self-service user
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

@@ -4,7 +4,7 @@ title: Supported storage arrays in VMM
 description: This article summarizes supported storage arrays for VMM.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/06/2022
 ms.topic: article
 ms.prod: system-center

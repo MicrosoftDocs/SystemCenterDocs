@@ -4,7 +4,7 @@ title: Set up user roles in VMM
 description: This article describes how to set up VMM roles and permissions
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center

@@ -4,7 +4,7 @@ title: Set up self-service in VMM
 description: This article describes how to set up self-service in VMM
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2016
 ms.topic: article
 ms.prod: system-center

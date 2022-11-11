@@ -4,7 +4,7 @@ title: Service hosts and virtual machines in the VMM compute fabric
 description: This article describes how to service host and virtual machines in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 01/10/2017
 ms.topic: article
 ms.prod: system-center
