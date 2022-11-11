@@ -4,7 +4,7 @@ title: Perform a rolling upgrade of a Hyper-V host cluster to Windows Server 201
 description: This article provides guidance on upgrading Hyper-V host clusters
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center

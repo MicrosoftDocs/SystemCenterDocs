@@ -4,7 +4,7 @@ title: Deploy a Storage Spaces Direct disaggregated cluster in VMM
 description: This article describes how to deploy a Storage Spaces Direct disaggregated cluster in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

@@ -4,7 +4,7 @@ title: Back up and restore a software defined network infrastructure
 description: This article describes the procedure to back up and restore the software defined infrastructure.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/10/2022
 ms.topic: article
 ms.prod: system-center

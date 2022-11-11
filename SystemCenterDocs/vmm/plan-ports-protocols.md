@@ -4,7 +4,7 @@ title: Identify VMM ports and protocols
 description: This article provides information about the ports and protocols used in a VMM 2016 deployment
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/17/2019
 ms.topic: article
 ms.prod: system-center

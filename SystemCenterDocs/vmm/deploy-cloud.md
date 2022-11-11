@@ -4,7 +4,7 @@ title: Deploy a private VMM cloud
 description: This article provides an overview of private cloud deployment in VMM
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: system-center
@@ -33,7 +33,7 @@ You can use VMM to create and deploy private cloud components, and to manage acc
 - **Elasticity**—Administrators can add resources to a private cloud to increase the capacity.
 - **Optimization**—Usage of the underlying resources is continually optimized without affecting the overall private cloud user experience.
 
-You can create a private clouds from either:
+You can create a private cloud from either:
 
 - VMM host groups that contain resources from virtualization hosts.
 - A VMware resource pool

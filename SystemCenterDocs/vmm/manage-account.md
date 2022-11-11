@@ -4,7 +4,7 @@ title: Manage roles and permissions in VMM
 description: This article describes how to manage roles and permissions in VMM
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 09/21/2021
 ms.topic: article
 ms.prod: system-center
