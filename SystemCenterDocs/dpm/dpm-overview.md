@@ -26,11 +26,11 @@ You can deploy System Center Data Protection Manager (DPM) for:
 
 -   **Application-aware backup**: Application-aware back up of Microsoft workloads, including SQL Server, Exchange, and SharePoint.
 
--   **File backup**: Backup files, folders and volumes for computers running Windows server and Windows client operating systems.
+-   **File backup**: Back up files, folders and volumes for computers running Windows server and Windows client operating systems.
 
--   **System backup**: Backup system state or run full, bare-metal backups of physical computers running Windows server or Windows client operating systems.
+-   **System backup**: Back up system state or run full, bare-metal backups of physical computers running Windows server or Windows client operating systems.
 
--   **Hyper-V backup**: Backup Hyper-V virtual machines (VM) running Windows or Linux. You can back up an entire VM or run application-aware backups of Microsoft workloads on Hyper-V VMs running Windows.
+-   **Hyper-V backup**: Back up Hyper-V virtual machines (VM) running Windows or Linux. You can back up an entire VM or run application-aware backups of Microsoft workloads on Hyper-V VMs running Windows.
 
 -   Get a full list of [What can DPM back up?](~/dpm/dpm-protection-matrix.md)
 
