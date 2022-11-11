@@ -89,7 +89,7 @@ This feature is not intended to provide feature parity with the Microsoft Azure 
 You cannot:
 -	Manage your Azure subscription
 -	Deploy instances to Azure
--	Migrate on-premise virtual machines to Azure
+-	Migrate on-premises virtual machines to Azure
 -	Manage Azure Storage
 -	Manage Azure Networks
 -	See the Dashboard Summary view

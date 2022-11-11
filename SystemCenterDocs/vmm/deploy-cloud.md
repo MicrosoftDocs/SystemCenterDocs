@@ -33,7 +33,7 @@ You can use VMM to create and deploy private cloud components, and to manage acc
 - **Elasticity**—Administrators can add resources to a private cloud to increase the capacity.
 - **Optimization**—Usage of the underlying resources is continually optimized without affecting the overall private cloud user experience.
 
-You can create a private clouds from either:
+You can create a private cloud from either:
 
 - VMM host groups that contain resources from virtualization hosts.
 - A VMware resource pool

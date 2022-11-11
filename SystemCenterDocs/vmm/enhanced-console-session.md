@@ -117,4 +117,4 @@ Once Enhanced Session Mode policy is enabled on the host:
 
 
 ## Next steps
-[Use local resources on Hyper-V VM with VMconnect](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
+[Use local resources on Hyper-V VM with VMConnect](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
