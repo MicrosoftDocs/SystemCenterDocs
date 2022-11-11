@@ -4,7 +4,7 @@ title: Manage Storage Spaces Direct clusters in VMM
 description: This article describes how to set up and manage Storage Spaces Direct in the VMM fabric.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 02/04/2020
 ms.topic: article
 ms.prod: system-center

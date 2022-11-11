@@ -4,7 +4,7 @@ title: Add an Azure subscription in VMM
 description: This article describes how to add an Azure subscription, so that you can manage basic actions for Azure instances.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/09/2022
 ms.topic: article
 ms.prod: system-center
@@ -89,7 +89,7 @@ This feature is not intended to provide feature parity with the Microsoft Azure 
 You cannot:
 -	Manage your Azure subscription
 -	Deploy instances to Azure
--	Migrate on-premise virtual machines to Azure
+-	Migrate on-premises virtual machines to Azure
 -	Manage Azure Storage
 -	Manage Azure Networks
 -	See the Dashboard Summary view

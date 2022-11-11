@@ -4,7 +4,7 @@ title: Manage storage deployed with Storage Spaces Direct in the VMM 2016 fabric
 description: This article describes how to manage storage in Storage Spaces Direct in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

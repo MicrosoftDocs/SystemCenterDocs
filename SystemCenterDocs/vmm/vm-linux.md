@@ -4,7 +4,7 @@ title: Create and deploy Linux virtual machines in the VMM fabric
 description: This article describes how to create and deploy Linux VMs in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/06/2022
 ms.topic: article
 ms.prod: system-center

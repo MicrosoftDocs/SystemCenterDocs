@@ -4,7 +4,7 @@ title: Run a script on a remote VMM host by using the Run Script command.
 description: This article explains about how to use the Run Script command in System Center VMM to run scripts on a remote host.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/01/2018
 ms.topic: article
 ms.prod: system-center

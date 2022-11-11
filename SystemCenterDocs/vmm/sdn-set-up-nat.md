@@ -4,7 +4,7 @@ title: Set up NAT for traffic forwarding in SDN infrastructure by using VMM.
 description: This article describes how to configure NAT connection and NAT rules for traffic forwarding in the SDN infrastructure.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/26/2022
 ms.topic: article
 ms.prod: system-center
