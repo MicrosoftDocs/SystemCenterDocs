@@ -96,7 +96,7 @@ After you have at least one disk set up in accordance with the prerequisites, yo
 
 -   Select **Add** on the tool ribbon, and in **Add Disks to Storage Pool** select the disk you want to add from the **Available disks** list.
 
-After the storage pool is set up, when you create protection groups that include data sources you want to back up, you'll be able to configure the disk as short-term storage for that backed-up data.
+After the storage pool is set up, when you create protection groups that include data sources you want to back up, you'll be able to configure the disk as short-term storage for that backed up data.
 
 ## <a name="BKMK_Tape"></a>Prepare tape backup
 
