@@ -32,12 +32,12 @@ Arc-enabled System Center VMM allows you to:
 
 You can discover and learn about Arc-enabled SCVMM from the *Azure Arc* blade from within the SCVMM console.
 
-1. In **Arc-enabled SCVMM** > **Azure Arc**, you can do the following:
-    - **Overview**: For the overview of Arc-enabled SCVMM.
-    - **Pre-requisites**: Review the prerequisites of Are-enabled SCVMM.
-    - **Steps to deploy**: Provides steps to Arc enable SCVMM deployment.
-    - **Deploy Arc Resource Bridge**: To deploy Arc resource bridge.
-    - **View onboarded SCVMM in Azure**: To navigate to your SCVMM inventory page on the Azure Arc portal from the default web browser. 
+In **Arc-enabled SCVMM** > **Azure Arc**, you can do the following:
+   - **Overview**: Read the overview of Arc-enabled SCVMM.
+   - **Pre-requisites**: Review the prerequisites of Are-enabled SCVMM.
+   - **Steps to deploy**: View steps to Arc enable SCVMM deployment.
+   - **Deploy Arc Resource Bridge**: Deploy Arc resource bridge.
+   - **View onboarded SCVMM in Azure**: Navigate to your SCVMM inventory page on the Azure Arc portal from the default web browser. 
 
 You need appropriate credentials on the Azure Portal with the necessary permissions to onboard or use Azure Arc-enabled SCVMM. 
 
