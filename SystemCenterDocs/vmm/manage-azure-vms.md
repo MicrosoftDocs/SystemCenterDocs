@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.date: 12/15/2020
 ms.topic: article
-manager: evansma
+manager: mkluck
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---

@@ -4,7 +4,7 @@ title: Configure virtual machine settings in the VMM 2016 compute fabric
 description: This article describes how to configure settings for VMs in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/30/2021
 ms.topic: article
 ms.prod: system-center

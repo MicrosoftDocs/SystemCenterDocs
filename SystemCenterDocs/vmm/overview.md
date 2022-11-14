@@ -4,7 +4,7 @@ title: What is VMM?
 description: This article provides an overview of System Center VMM and a summary of what it can do for your business.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

@@ -4,7 +4,7 @@ title: Plan VMM installation
 description: This article provides planning information for setting up VMM
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 09/21/2021
 ms.topic: article
 ms.prod: system-center
