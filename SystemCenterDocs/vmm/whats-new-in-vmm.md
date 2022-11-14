@@ -4,8 +4,8 @@ title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 11/04/2022
+manager: mkluck
+ms.date: 11/14/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

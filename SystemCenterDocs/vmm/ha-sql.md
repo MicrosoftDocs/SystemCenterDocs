@@ -4,7 +4,7 @@ title: Deploy SQL Server for VMM high availability
 description: This article explains how to set up SQL Server as highly available in a VMM deployment
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: system-center

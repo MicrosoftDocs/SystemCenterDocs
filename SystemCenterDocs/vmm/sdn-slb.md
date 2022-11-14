@@ -4,7 +4,7 @@ title: Set up an SDN software load balancer in the VMM fabric
 description: Learn how to set up an SDN software load balancer in the VMM fabric.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center

@@ -4,7 +4,7 @@ title: Virtual Machine Manager build versions
 description: This article describes about version numbers.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/07/2022
 ms.topic: article
 ms.prod: system-center

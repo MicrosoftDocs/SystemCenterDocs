@@ -4,7 +4,7 @@ title: Deploy and manage Azure Stack HCI clusters in VMM
 description: This article describes how to set up an Azure Stack HCI cluster in VMM.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/21/2022
 ms.topic: article
 ms.prod: system-center

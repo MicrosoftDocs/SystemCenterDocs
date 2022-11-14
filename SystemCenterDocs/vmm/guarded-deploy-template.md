@@ -4,7 +4,7 @@ title: Set up a template disk, shielding helper disk, and VM template to deploy 
 description: Describes how to configure a shielded template disk and utility disk in VMM to provision new shielded VMs and convert existing VMs to shielded VMs
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center

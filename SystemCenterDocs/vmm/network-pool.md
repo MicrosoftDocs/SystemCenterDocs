@@ -4,7 +4,7 @@ title: Set up static IP address pools in the VMM fabric
 description: This article describes how to set up IP address pools in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 01/29/2021
 ms.topic: article
 ms.prod: system-center

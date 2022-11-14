@@ -4,7 +4,7 @@ title: Deploy VMs in the VMM fabric from a blank virtual hard disk
 description: This article describes how to create and deploy VMs in the VMM fabric from a blank virtual hard disk
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
