@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 11/09/2022
+ms.date: 11/15/2022
 title: Back up SQL Server with DPM
 ms.technology: data-protection-manager
 ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6

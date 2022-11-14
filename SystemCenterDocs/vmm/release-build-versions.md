@@ -5,7 +5,7 @@ description: This article describes about version numbers.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/07/2022
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
