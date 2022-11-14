@@ -14,7 +14,7 @@ ms.custom: intro-overview
 
 # About Arc-enabled System Center Virtual Machine Manager
 
-Azure Arc-enabled System Center Virtual Machine Manager (SCVMM) empowers System Center customers to connect their VMM environment to Azure and perform VM self-service operations from Azure portal. With Azure Arc-enabled SCVMM, you get consistent management experience across Azure. 
+Azure Arc-enabled System Center Virtual Machine Manager (SCVMM) empowers System Center customers to connect their VMM environment to Azure and perform VM self-service operations from Azure ortal. With Azure Arc-enabled SCVMM, you get consistent management experience across Azure. 
 
 Azure Arc-enabled System Center Virtual Machine Manager allows you to manage your Hybrid environment and perform self-service VM operations through Azure portal. For Microsoft Azure Pack customers, this solution is intended as an alternative to perform VM self-service operations. 
 
@@ -39,9 +39,9 @@ In **Arc-enabled SCVMM** > **Azure Arc**, you can do the following:
    - **Deploy Arc Resource Bridge**: Deploy Arc resource bridge.
    - **View onboarded SCVMM in Azure**: Navigate to your SCVMM inventory page on the Azure Arc portal from the default web browser. 
 
-You need appropriate credentials on the Azure Portal with the necessary permissions to onboard or use Azure Arc-enabled SCVMM. 
+You need appropriate credentials on the Azure portal with the necessary permissions to onboard or use Azure Arc-enabled SCVMM. 
 
-:::image type="Arc-enabled SCVMM blade" source="media/about-arc-enabled-system-center-virtual-machine-manager/arc-enabled-scvmm.png" alt-text="Screenshot showing Arc-enabled SCVMM blade.":::
+:::image type="Arc-enabled SCVMM blade" source="media/about-arc-enabled-system-center-virtual-machine-manager/arc-enabled-system-center-virtual-machine-manager.png" alt-text="Screenshot showing Arc-enabled SCVMM blade.":::
 
 ## Next steps
 
