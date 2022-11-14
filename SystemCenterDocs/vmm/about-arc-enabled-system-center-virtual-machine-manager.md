@@ -5,7 +5,7 @@ description: This article provides an overview of Azure Arc-enabled System Cente
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 11/11/2022
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -32,7 +32,7 @@ Arc-enabled System Center VMM allows you to:
 
 You can discover and learn about Arc-enabled SCVMM from the *Azure Arc* blade from within the SCVMM console.
 
-In **Arc-enabled SCVMM** > **Azure Arc**, you can do the following:
+Navigate to **Azure Arc** in **SCVMM Console** and you can do the following:
    - **Overview**: Read the overview of Arc-enabled SCVMM.
    - **Pre-requisites**: Review the prerequisites of Are-enabled SCVMM.
    - **Steps to deploy**: View steps to Arc enable SCVMM deployment.
