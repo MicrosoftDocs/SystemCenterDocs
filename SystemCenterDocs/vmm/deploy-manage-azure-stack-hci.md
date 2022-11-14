@@ -5,7 +5,7 @@ description: This article describes how to set up an Azure Stack HCI cluster in 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/21/2022
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
