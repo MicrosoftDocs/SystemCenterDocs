@@ -5,7 +5,7 @@ description: This article describes the new features supported in VMM
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 11/29/2021
+ms.date: 11/08/2022
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.custom: intro-whats-new
 
 See the following sections for new features and feature updates supported in VMM 2022. 
 
-## Compute
+### Compute
 
 ### Windows Server 2022 and Windows Server 2022 Guest OS support
 
@@ -28,7 +28,7 @@ VMM 2022 supports Windows 11 as guest operating system.
 
 ### Support for Azure Stack HCI clusters 21H2
 
-With VMM 2022 you can manage Azure Stack HCI, 21H2 clusters.
+With VMM 2022, you can manage Azure Stack HCI, 21H2 clusters.
 
 Azure Stack HCI, version 21H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
 
@@ -53,4 +53,48 @@ To enable Ipv6 for SDN deployment, do the required changes in the network contro
 
 For more information about these updates, see [Network controller](/system-center/vmm/sdn-controller), [Gateway](/system-center/vmm/sdn-gateway), [SLB](/system-center/vmm/sdn-slb), and [Set up NAT](/system-center/vmm/sdn-set-up-nat).
 
+
+## New features in VMM 2022 UR1
+
+The following sections introduce the new features and feature updates supported in VMM 2022 Update Rollup 1 (UR1).
+
+For problems fixed in VMM 2022 UR1, and installation instructions for UR1, see the KB article.
+
+### Support for Azure Stack HCI clusters 22H2
+
+With VMM 2022 UR1, you can manage Azure Stack HCI, 22H2 clusters.
+
+Azure Stack HCI, version 22H2 is the newly introduced hyper-converged infrastructure (HCI) Operating system that runs on on-premises clusters with virtualized workloads.
+
+Most of the operations to manage Azure Stack clusters in VMM are similar to managing Windows Server clusters. 
+
+See [Deploy and manage Azure Stack HCI clusters in VMM](/system-center/vmm/deploy-manage-azure-stack-hci).
+
+### Support for VMware Vsphere 7.0 and ESXI 7.0
+
+VMM 2022 UR1 supports VMware Vsphere 7.0 and ESXI 7.0. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
+
+### Support for SQL Server 2022
+
+VMM 2022 UR1 supports SQL Server 2022. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
+
+### Support for Smart card login in SCVMM Console
+
+VMM 2022 UR1 supports Smart card login with enhanced session mode in SCVMM Console. 
+
+### SR-IOV support for Network Controller managed NICs
+
+With VMM 2022 UR1, SR-IOV supports Network Controller managed NICs.
+
+### Removed VMM dependencies on deprecated Operations Manager Management Pack
+
+With VMM 2022 UR1, removed VMM dependencies on deprecated SCOM Management Packs. If you have an active SCOM - VMM integration, follow the steps listed in KB article before you upgrade to VMM 2022 UR1. 
+
+### Discover Arc-enabled SCVMM from VMM console
+
+VMM 2022 UR1 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal. [Learn more](/system-center/vmm/about-arc-enabled-system-center-virtual-machine-manager?view=sc-vmm-2022).
+
+### Support for 64 virtual networks for Windows Server 2019 or later
+
+VMM 2022 UR1 supports 64 virtual networks for Windows Server 2019 or later.  
 

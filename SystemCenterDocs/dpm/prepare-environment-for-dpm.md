@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 05/02/2022
+ms.date: 11/15/2022
 title: Preparing your environment for System Center Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
