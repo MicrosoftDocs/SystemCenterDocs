@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: jyothisuri
 ms.author: jsuri
 manager: carmonm
-ms.date: 11/08/2022
+ms.date: 11/15/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -43,7 +43,7 @@ In addition, the following known issues are observed.
 
 ### No DPM SQL Self-Service Recovery Tool in DPM 2022 RTM
 
-DPM SQL Self-Service Recovery is not available in DPM 2022 RTM.
+DPM SQL Self-Service Recovery is not available in DPM 2022 RTM. Support for SQL Self-Service Recovery is available from DPM 2022 UR1. [Learn More](/system-center/dpm/what-s-new-in-dpm?view=sc-dpm-2022#sql-self-service-recovery-tool). 
 
 ### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB**
 

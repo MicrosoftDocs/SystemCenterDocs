@@ -18,6 +18,7 @@ ms.custom: intro-whats-new
 ::: moniker range="sc-orch-2022"
 
 This article details the new features supported in System Center 2022 - Orchestrator.
+
 ::: moniker-end
 
 ::: moniker range="sc-orch-2019"
@@ -85,7 +86,11 @@ For more information about how to set up, configure and run your environment to 
 
 ::: moniker range="sc-orch-2022"
 
-## SCO 2022 Integration packs
+## New features in Orchestrator 2022
+
+See the following sections for detailed information about the new features/feature updates supported in Orchestrator 2022.
+
+### SCO 2022 Integration packs
 
 Following SCO 2022 Integration packs are available for download from Download Center:
 
@@ -100,7 +105,7 @@ Following SCO 2022 Integration packs are available for download from Download Ce
  - [REST Integration Pack](https://www.microsoft.com/download/details.aspx?id=104337)
  - [SharePoint Integration Pack](https://www.microsoft.com/download/details.aspx?id=104332)
 
-## New web console and web API
+### New web console and web API
 
 A new web console and web API are introduced in System Center Orchestrator 2022.
 
@@ -109,7 +114,7 @@ The new web API is JSON based and makes it easier to use than the older XML-base
 >[!NOTE]
 >The new Web console is a complete redesign and works only on modern browsers like Microsoft Edge without Silverlight.
 
-## Orchestrator is now a 64 bit application
+### Orchestrator is now a 64 bit application
 
 Support for 64 bit enables the use of 64 bit assemblies, Integration Packs and PowerShell cmdlets.
 
@@ -117,3 +122,4 @@ Support for 64 bit enables the use of 64 bit assemblies, Integration Packs and P
 
 ## Next steps
 [Know the fixed issues](release-notes-orch.md)
+

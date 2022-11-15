@@ -5,7 +5,7 @@ description: This article describes the new features supported in VMM
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/21/2022
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -17,7 +17,7 @@ ms.custom: intro-whats-new
 
 ::: moniker range="sc-vmm-2022"
 
-This article details the new features supported in System Center 2022 - Virtual Machine Manager (VMM).
+This article details the new features supported in System Center 2022 - Virtual Machine Manager (VMM). Also details the new features in VMM 2022 UR1.
 
 [!INCLUDE [whats-new-vmm-2022.md](../includes/whats-new-vmm-2022.md)]
 
