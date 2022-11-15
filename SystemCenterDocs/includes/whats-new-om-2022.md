@@ -103,5 +103,3 @@ Operations Manager 2022 also includes the following updates:
     - Google Chrome version 88 and later.
 - Supports Ubuntu 20, Oracle Linux 8, Debian 10, and Debian 11.
 - Removed support for AIX, Solaris, RHEL 5, RHEL 6, RHEL 7 (PPC), CentOS 6, Debian 8, SLES 11, and SLES 12 PPC.
-
-
