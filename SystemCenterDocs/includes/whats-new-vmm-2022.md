@@ -68,7 +68,7 @@ Azure Stack HCI, version 22H2 is the newly introduced hyper-converged infrastruc
 
 Most of the operations to manage Azure Stack clusters in VMM are similar to managing Windows Server clusters. 
 
-See [Deploy and manage Azure Stack HCI clusters in VMM](/SystemCenterDocs/vmm/deploy-manage-azure-stack-hci.md)
+See [Deploy and manage Azure Stack HCI clusters in VMM](/system-center/vmm/deploy-manage-azure-stack-hci).
 
 ### Support for VMware Vsphere 7.0 and ESXI 7.0
 
