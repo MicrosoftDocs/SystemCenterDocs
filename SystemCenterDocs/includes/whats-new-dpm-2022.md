@@ -42,7 +42,7 @@ DPM 2022 supports [parallel restore of VMware](/system-center/dpm/back-up-vmware
 
 See the following sections for information about the new features/feature updates supported in DPM 2022 UR1.
 
-For issues fixed and the installation instructions for UR1, see KB article for Update Rollup 1.
+For issues fixed and the installation instructions for UR1, see [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-data-protection-manager-81543e78-69c2-4b75-9780-0ac1b98debf1) for Update Rollup 1.
 
 ### Support for SQL Server 2022
 
