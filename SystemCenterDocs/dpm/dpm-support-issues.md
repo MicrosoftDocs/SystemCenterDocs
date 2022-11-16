@@ -27,6 +27,7 @@ This topic summarizes some of the common support information you might need when
 ## <a name="BKMK_Install"></a>Installation and deployment issues
 
 ### DPM deployment options
+
 **Issue**: DPM can be installed in physical and virtual environments.
 
 **More information**: DPM can be installed as follows:
@@ -37,9 +38,9 @@ This topic summarizes some of the common support information you might need when
 
 ::: moniker range="<=sc-dpm-2019"
 
--   As an Azure virtual machine - From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an Azure virtual machine - You can install DPM- 2019 as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
--   As a Windows virtual machine in VMware - From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
+-   As a Windows virtual machine in VMware - You can install DPM 2019 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
 
 ::: moniker-end
 
@@ -71,7 +72,8 @@ This topic summarizes some of the common support information you might need when
 
 **Workaround**: None
 
-### DPM 2010 and later versions can't run on a server running a 32-bit operating system
+### DPM can't run on a server running a 32-bit operating system
+
 **Issue**: Operating system limitation.
 
 **Workaround**: Install on 64-bit only. For a full list of system requirements, see [Preparing your environment for System Center Data Protection Manager](prepare-environment-for-dpm.md).
@@ -106,7 +108,7 @@ This topic summarizes some of the common support information you might need when
 
 **Workaround**: If you want to use a remote instance of SQL Server as your DPM database, ensure that the SQL Server instance isn't running on a domain controller.
 
-::: moniker range="<=sc-dpm-2019"
+::: moniker range="<=sc-dpm-2016"
 
 ### You cannot install DPM 2016 on SQL 2016 SP1 (or a later release)
 
@@ -169,7 +171,7 @@ Both scenarios are unsupported. You can only select one of the following options
 
 ### Virtual tape library support
 
-::: moniker range="<=sc-dpm-2019"
+::: moniker range="<=sc-dpm-2016"
 
 **Issue**: Are virtual tape libraries supported?
 
@@ -177,11 +179,19 @@ Both scenarios are unsupported. You can only select one of the following options
 
 ::: moniker-end
 
+::: moniker range="sc-dpm-2019"
+
+**Issue**: Are virtual tape libraries supported?
+
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2019 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries](/SystemCenterDocs/dpm/dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+
+::: moniker-end
+
 ::: moniker range="sc-dpm-2022"
 
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2022 with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries](https://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2022 with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries](/SystemCenterDocs/dpm/dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
 
 ::: moniker-end
 
@@ -306,13 +316,13 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ### Support parameters for protecting computers running client operating systems with DPM
 **Issue**: Support for backing up Windows clients with DPM. 
 
-**Workaround**: DPM 2022 can backup Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).Review the full list of supported workloads here
+**Workaround**: DPM 2022 can backup Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md). Review the full list of supported workloads here
 
 ::: moniker-end
 
 ### Support for protecting computers running server operating systems with DPM
 
-::: moniker range="<=sc-dpm-2019"
+::: moniker range="<=sc-dpm-2016"
 **Issue**: The following protection scenarios are supported:
 
 -   Windows Server 2012 R2 can be protected with DPM 2012 R2 and later.
@@ -324,6 +334,14 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 -   Windows Server 2008 and Storage Server 2008 can be protected with DPM 2012 R2 running [Update Rollup 2](/archive/blogs/) and DPM 2016.
 
 **Workaround**: Ensure you're running the right version of DPM.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+**Issue**: Support for backing up Windows Server with DPM.
+
+**Workaround**: DPM 2019 can backup Windows Server 2019 and 2016. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).
 
 ::: moniker-end
 
@@ -464,10 +482,19 @@ These workloads can be running on a single server or in a cluster configuration.
 
 ## <a name="BKMK_Sharepoint"></a>SharePoint protection issues
 
-::: moniker range="<=sc-dpm-2019"
+::: moniker range="<=sc-dpm-2016"
 
 ### AlwaysOn not supported
 **Issue**: From DPM 2012 R2 Update 5 onwards, DPM can protect SharePoint farm SQL Server databases that have AlwaysOn enabled.
+
+**Workaround**: None.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+### AlwaysOn not supported
+**Issue**: DPM 2019 protects SharePoint farm SQL Server databases that have AlwaysOn enabled.
 
 **Workaround**: None.
 
@@ -486,8 +513,8 @@ These workloads can be running on a single server or in a cluster configuration.
 
 ::: moniker range="<=sc-dpm-2019"
 
-### SQL Server 2014 support
-**Issue**: You can protect SQL Server 2014 with DPM 2012 R2 [Update rollup 4](https://go.microsoft.com/fwlink/?LinkId=518078).
+### SQL Server 2016 support
+**Issue**: You can protect SQL Server 2016 with DPM 2019 and later.
 
 **Workaround**: Run the correct DPM version.
 
@@ -550,7 +577,7 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 
 **Workaround**: None
 
-::: moniker range="<=sc-dpm-2019"
+::: moniker range="<=sc-dpm-2016"
 
 ### Backup on Hyper-V Replica servers
 **Issue**: Support for backup up of primary and replica (secondary) virtual machines depends on the DPM version as summarized in this table.
@@ -576,4 +603,4 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 
 -   DPM running as an Azure virtual machine can't protect on-premises workloads.
 
-**Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites).
+**Workaround**: For more information about this scenario, see [Install DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites).
