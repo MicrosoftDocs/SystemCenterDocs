@@ -106,7 +106,7 @@ This topic summarizes some of the common support information you might need when
 
 **Workaround**: If you want to use a remote instance of SQL Server as your DPM database, ensure that the SQL Server instance isn't running on a domain controller.
 
-::: moniker range="sc-dpm=2016"
+::: moniker range="<=sc-dpm-2019"
 
 ### You cannot install DPM 2016 on SQL 2016 SP1 (or a later release)
 
@@ -477,8 +477,6 @@ These workloads can be running on a single server or in a cluster configuration.
 **Issue**: DPM 2022 protects SharePoint farm SQL Server databases that have AlwaysOn enabled.
 
 **Workaround**: None.
-
-::: moniker-end
 
 ::: moniker-end
 
