@@ -49,7 +49,7 @@ The following table lists the build versions for Virtual Machine Manager 2022.
 | **Build Number** | **KB** |**Description** |
 | --- | --- |--- |
 | 10.22.1287.0 | n/a | System Center 2022 Virtual Machine Manager     |
-| 10.22.1508.0 | 5019202 | Update Rollup 1 for System Center 2022 Virtual Machine Manager    |
+| 10.22.1508.0 | [5019202](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-virtual-machine-manager-90163a7e-1515-4cba-8647-a22c441830b7) | Update Rollup 1 for System Center 2022 Virtual Machine Manager    |
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
