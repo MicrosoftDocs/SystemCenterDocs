@@ -294,7 +294,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ## <a name="BKMK_ClientServer"></a>Client and server protection issues
 
-::: moniker range="<=sc-dpm-2019"
+::: moniker range="<=sc-dpm-2016"
 
 ### Support parameters for protecting computers running client operating systems with DPM
 **Issue**: The following protection scenarios are supported:
@@ -310,6 +310,20 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 **Workaround**: Ensure you're running the right version of DPM.
 
 ::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+### Support parameters for protecting computers running client operating systems with DPM
+**Issue**: The following protection scenarios are supported:
+
+-  Windows 10 clients can be protected with DPM 2019.
+   >[!NOTE]
+   > Windows 10 on ARM client is not supported for protection using DPM.
+
+**Workaround**: Ensure you're running the right version of DPM.
+
+::: moniker-end
+
 
 ::: moniker range="sc-dpm-2022"
 
