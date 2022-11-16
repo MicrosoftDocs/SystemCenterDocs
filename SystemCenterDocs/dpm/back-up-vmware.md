@@ -1,11 +1,11 @@
 ---
 description: Use DPM to back up and restore VMware VMs.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 10/20/2022
+ms.date: 11/15/2022
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -27,6 +27,8 @@ This article explains how to use Data Protection Manager (DPM) to back up virtua
 
 ::: moniker range="sc-dpm-2022"
 This article explains how to use Data Protection Manager (DPM) to back up virtual machines running on the 6.0, 6.5, 6.7, 7.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
+
+DPM 2022 UR1 and later don't support vSphere 6.0. Ensure to upgrade to newer vSphere versions as vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html).
 
 ::: moniker-end
 
