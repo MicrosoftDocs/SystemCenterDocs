@@ -58,7 +58,7 @@ For more information about these updates, see [Network controller](/system-cente
 
 The following sections introduce the new features and feature updates supported in VMM 2022 Update Rollup 1 (UR1).
 
-For problems fixed in VMM 2022 UR1, and installation instructions for UR1, see the KB article.
+For problems fixed in VMM 2022 UR1, and installation instructions for UR1, see the [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-virtual-machine-manager-90163a7e-1515-4cba-8647-a22c441830b7).
 
 ### Support for Azure Stack HCI clusters 22H2
 
@@ -88,7 +88,7 @@ With VMM 2022 UR1, SR-IOV supports Network Controller managed NICs.
 
 ### Removed VMM dependencies on deprecated Operations Manager Management Pack
 
-With VMM 2022 UR1, removed VMM dependencies on deprecated SCOM Management Packs. If you have an active SCOM - VMM integration, follow the steps listed in KB article before you upgrade to VMM 2022 UR1. 
+With VMM 2022 UR1, removed VMM dependencies on deprecated SCOM Management Packs. If you have an active SCOM - VMM integration, follow the steps listed in [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-virtual-machine-manager-90163a7e-1515-4cba-8647-a22c441830b7) before you upgrade to VMM 2022 UR1. 
 
 ### Discover Arc-enabled SCVMM from VMM console
 
