@@ -471,6 +471,8 @@ These workloads can be running on a single server or in a cluster configuration.
 
 **Workaround**: None.
 
+::: moniker-end
+
 ::: moniker range="sc-dpm-2022"
 
 ### AlwaysOn support
