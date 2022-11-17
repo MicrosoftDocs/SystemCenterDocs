@@ -18,11 +18,11 @@ ms.technology: service-provider-foundation
 
 ::: moniker-end
 
-System Center - Service Provider Foundation (SPF) doesn't create user roles, or define their scope. To set up tenants you need a certificate public key that's used to validate claims made or on behalf of a tenant.
+System Center - Service Provider Foundation (SPF) doesn't create user roles or define their scope. To set up tenants, you need a certificate public key that's used to validate claims made or on behalf of a tenant.
 
 ## Create a certificate
 
-If you don't have an existing CA certificate to use, you can generate a self-signed certificate. You can export public and private keys from the certificate, and associate the public key with a tenant.
+If you don't have an existing CA certificate to use, you can generate a self-signed certificate. You can export public and private keys from the certificate and associate the public key with a tenant.
 
 ## Obtain a self-signed certificate
 
@@ -59,7 +59,7 @@ PS C:\> $key = [Convert]::ToBase64String($cert.RawData)``
 
 1. Right-click the certificate > **All Tasks** >  **Export**.  
 2. In **Export Private Key**, choose **Yes, export the private key** > **Next**. If this option isn't available and you generated a self-signed certificate, ensure it included the -pe option.
-3. In **Export File Format**, select **Personal Information Exchange - PKCS #12 (.PFX)**. Ensure  **Include all certificates in the certification path if possible** is selected, and select **Next**.  
+3. In **Export File Format**, select **Personal Information Exchange - PKCS #12 (.PFX)**. Ensure  **Include all certificates in the certification path if possible** is selected and select **Next**.  
 4. In **File to Export**, specify a path and filename for the certificate > **Next**.  
 5. In **Completing the Certificate Export Wizard**, select **Finish**.  
 
@@ -82,7 +82,7 @@ You can also create user roles by using the Admin OData protocol service using t
     PS C:\> Get-SCSPFTrustedIssuer  
     ```  
 
-    The next procedure uses the `$tenant` variable that you just created.  
+    The next procedure uses the `$tenant` variable that you created.  
 
 ### Create a tenant administrator role in VMM  
 
@@ -108,7 +108,7 @@ You can also create user roles by using the Admin OData protocol service using t
     > [!CAUTION]  
     > Note that if the user role was previously created by using the VMM Administration Console, its permissions would be overwritten by those specified by the `New\-SCSUserRole` cmdlet.  
 
-4.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the VMM Administration Console.  
+4.  Verify that the user role was created by verifying that it's listed in the **User Roles** in **Settings** workspace in the VMM Administration Console.  
 
 5.  Define the following for the role by selecting the role and clicking **Properties** on the toolbar:  
 
@@ -120,7 +120,7 @@ You can also create user roles by using the Admin OData protocol service using t
 
     Repeat this procedure for every server assigned to the tenant.  
 
-    The next procedure uses the `$TARole` variable that you just created.  
+    The next procedure uses the `$TARole` variable that you created.  
 
 ## Create a tenant self-service user role in VMM
 
@@ -137,6 +137,6 @@ You can also create user roles by using the Admin OData protocol service using t
 
     ```  
 
-3.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the VMM Administration Console. Notice that the parent of the role is the tenant administrator.  
+3.  Verify that the user role was created by verifying that it's listed in the **User Roles** in **Settings** workspace in the VMM Administration Console. Notice that the parent of the role is the tenant administrator.  
 
 Repeat this procedure as needed for each tenant.

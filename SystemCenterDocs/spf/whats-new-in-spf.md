@@ -56,7 +56,7 @@ This build should be used for validating the SPF integration scenarios with othe
 ::: moniker range="sc-spf-2019"
 
 ## Support for PowerShell 4.0+
-Earlier versions of SPF supported PowerShell V2.0. PowerShell V2.0 did not support some scripts and users had to apply workarounds. SPF 2019 supports PowerShell V4.0 to resolve this issue.
+Earlier versions of SPF supported PowerShell V2.0. PowerShell V2.0 didn't support some scripts and users had to apply workarounds. SPF 2019 supports PowerShell V4.0 to resolve this issue.
 
 ## Support for SQL 2017
 SPF 2019 supports SQL 2017 for fresh installation.

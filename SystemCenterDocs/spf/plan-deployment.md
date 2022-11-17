@@ -25,7 +25,7 @@ This article helps you to get the prerequisites and planning steps in place, bef
 Deployment requirements for SPF include:
 
 -	Ensure you have the minimum hardware and software requirements on the SPF server.
--	The SPF server needs SQL Server for its database. The SQL Server database can be local, or on a remote server and should have at least 5 GB of storage. When you install SPF you need to specify the server name and port number.
+-	The SPF server needs SQL Server for its database. The SQL Server database can be local, or on a remote server and should have at least 5 GB of storage. When you install SPF, you need to specify the server name and port number.
 -	The VMM console should be installed on the SPF server. SPF can also run on the same server as the VMM management server. VMM must be deployed in your infrastructure.
 -	If you want to use usage metering to manage tenant costs, you need a System Center Operations Manager server, and a Data Warehouse server, running Windows 2012 R2 or later.
 -	The following Server Manager features should be installed on the SPF server:
@@ -89,7 +89,7 @@ There are two database scenario configurations:
     - **Select with Grant, Update with Grant, Delete with Grant, Insert with Grant**: Grant permissions to application pool users
     - **Alter all logins**: Create SQL Server logins for application pool users.
 
-- Create a new database. In this scenario the database administrator must create the database (SCSPFDB) and then SPF administrator installs SPF, and has permissions to configure the database as needed. For example to add tables. SPF administrators must create SPF Application Pool in Internet Information Services (IIS) and create a database user for an Application Pool User with the following permissions:
+- Create a new database. In this scenario the database administrator must create the database (SCSPFDB) and then SPF administrator installs SPF, and has permissions to configure the database as needed. For example, to add tables, SPF administrators must create SPF Application Pool in Internet Information Services (IIS) and create a database user for an Application Pool User with the following permissions:
     - **Connect**: Connect to the SPF database
     - **Select, Update, Delete, Insert**: Perform basic operations
     - **Create the SQL Server logon for Application Pool User with default database set to SCSPFDB.**: To log on to SQL Server and access the database.

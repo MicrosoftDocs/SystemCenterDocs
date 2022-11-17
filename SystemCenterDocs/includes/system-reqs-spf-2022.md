@@ -4,7 +4,7 @@ title: include file
 description: include file to provide information about hardware and software system requirements for System Center  2022 - Service Provider Foundation
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date:  07/04/2022
 ms.topic:  include
 ms.prod:  system center
@@ -48,7 +48,7 @@ The following sections describe the hardware and software requirements for Syste
 
 ## Installation components
 
-These components should be installed on the server, before you install VMM.
+These components should be installed on the server before you install VMM.
 
 **Installation** | **Supported**
 --- | ---
