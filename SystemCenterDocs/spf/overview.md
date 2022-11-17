@@ -3,7 +3,7 @@ title: What is Service Provider Foundation?
 description: This article provides a broad overview of Service Provider Foundation
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: system-center
@@ -42,7 +42,7 @@ SPF provides a number of services:
 - You can access the Admin web service by using the URL **https://server:8090/SC2012R2/Admin/Microsoft.Management.Odata.svc**
     >[!NOTE]
     > The above URL is applicable for SPF 2016 and later.
-- The following credentials are required.
+- The following credentials are required:
 
 **Credential** | **Requirement**
 --- | ---
@@ -58,7 +58,7 @@ The VMM web service invokes VMM to perform requested operations, such as creatin
 - VMM shows changes that portal applications, other clients, and Service Provider Foundation made.
 - Service Provider Foundation reflects all changes that the participants made.
 
-You can use the T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer PowerShell cmdlet to register a VMM instance. You can access the VMM web service with the URL **https://server:8090/SC2012R2/VMM/Microsoft.Management.Odata.svc**
+You can use the `T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer` PowerShell cmdlet to register a VMM instance. You can access the VMM web service with the URL **https://server:8090/SC2012R2/VMM/Microsoft.Management.Odata.svc**
 
 >[!NOTE]
 > The above URL is applicable for SPF 2016 and later.
@@ -106,9 +106,6 @@ You can configure events in SPF that the Service Management Automation web servi
 --- | ---
 One or more SPF application pool identities, as required for automation | Must be a member of the Admin group on the server with Service Management Automation installed.
 
-
-
-
 ## Interaction with SPF
 
 Hosters and tenants interact with SPF as follows:
@@ -126,11 +123,9 @@ Hosters and tenants interact with SPF as follows:
 -	Tenant administrators can interact with the VMM fabric by configuring clouds, templates, user roles, and self-service users, among other things. A tenant administrator also has self-service user capabilities.
 -	Self-service users are provided with a subset of tenant resources to work with.  Resource usage is controlled by quota.  For example, when users deploy virtual machines or use other resources, they incur quota points up to the number of allocated available quota points. Self-service users can interact with services, templates, and VHDs to deploy and manage virtual machines.
 
-
 This graphic shows how SPF interacts with VMM
 
 ![SPF and VMM](./media/overview/spf-vmm.png)
-
 
 ## VMM, SPF and Windows Azure Pack
 

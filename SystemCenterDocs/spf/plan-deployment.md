@@ -3,7 +3,7 @@ title: Plan deployment for SPF
 description: This topic provides an overview of how to plan for a Service Provider Foundation installation and its prerequisites.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ms.date: 01/22/2018
 ms.topic: article
 ms.prod: system-center
@@ -24,7 +24,7 @@ This article helps you to get the prerequisites and planning steps in place, bef
 
 Deployment requirements for SPF include:
 
--	Make sure you have the minimum hardware and software requirements on the SPF server.
+-	Ensure you have the minimum hardware and software requirements on the SPF server.
 -	The SPF server needs SQL Server for its database. The SQL Server database can be local, or on a remote server and should have at least 5 GB of storage. When you install SPF you need to specify the server name and port number.
 -	The VMM console should be installed on the SPF server. SPF can also run on the same server as the VMM management server. VMM must be deployed in your infrastructure.
 -	If you want to use usage metering to manage tenant costs, you need a System Center Operations Manager server, and a Data Warehouse server, running Windows 2012 R2 or later.
@@ -44,16 +44,15 @@ Deployment requirements for SPF include:
 -	You need an SSL server certificate. You can generate a test certificate automatically during setup but we recommend you use that for testing purposes only, and obtain a certificate from a CA for your production environment.
 -	A side-by-side installation of different SPF versions on the same server isn’t supported.
 -	You can install on a VM.
--	Make sure that you have a domain user account with administrative privileges on the computers on which you want to install Service Provider Foundation.
+-	Ensure that you have a domain user account with administrative privileges on the computers on which you want to install Service Provider Foundation.
 
 ## Administrator roles
 
-Administrator roles
 Here’s what you need:
 
-- SQL Server administrator: A DBA role with full administrator rights on the SQL Server instance used by SPF. The administrator should be able to grant permissions to create databases, and to grant those permissions to the SPF administrator.
-- SPF administrator: The SPF administration account should be a local administrator on the server on which you install SPF.
-- Application pool user: This IIS role should have full administrator permissions in VMM, and permissions to create, read, update, and delete on the SPF database. For portal applications, these operations can be restricted to specific tables.
+- **SQL Server administrator**: A DBA role with full administrator rights on the SQL Server instance used by SPF. The administrator should be able to grant permissions to create databases, and to grant those permissions to the SPF administrator.
+- **SPF administrator**: The SPF administration account should be a local administrator on the server on which you install SPF.
+- **Application pool user**: This IIS role should have full administrator permissions in VMM, and permissions to create, read, update, and delete on the SPF database. For portal applications, these operations can be restricted to specific tables.
 
 ## Plan security
 
@@ -68,12 +67,11 @@ SPF implements Windows and IIS security features. Requirements include:
     - SPF_Provider: Provider
     - SPF_Usage: Usage
 
-
 ## Plan capacity
 
-- Database storage: 5 GB is sufficient even for large SPF databases.
-- Web service: By default, SPF supports up to 1000 concurrent requests for its web services. We recommend this be a lower number in a production environment. You can change this configuration by specifying the value for the MaxRequestsPerTimeSlot key in the C:\inetpub\SPF\web.config file.
-- Hardware recommendations: The following server scenarios each pertain to the recommendations listed in the following table.
+- **Database storage**: 5 GB is sufficient even for large SPF databases.
+- **Web service**: By default, SPF supports up to 1000 concurrent requests for its web services. We recommend this be a lower number in a production environment. You can change this configuration by specifying the value for the `MaxRequestsPerTimeSlot` key in the *C:\inetpub\SPF\web.config* file.
+- **Hardware recommendations**: The following server scenarios each pertain to the recommendations listed in the following table.
     - Virtual Machine Manager (VMM) with or without SQL Server
     - Service Provider Foundation with or without SQL Server
 
@@ -86,16 +84,15 @@ SPF implements Windows and IIS security features. Requirements include:
 There are two database scenario configurations:
 
 - Install SPF and connect to an existing database. In this scenario the SPF administrator must verify that the permissions for the database were granted by the database administrator as follows:
-    - Alter: Create tables
-    - Connect with Grant: Connect to existing database
-    - Select with Grant, Update with Grant, Delete with Grant, Insert with Grant: Grant permissions to application pool users
-    - Alter all logins: Create SQL Server logins for application pool users.
+    - **Alter**: Create tables
+    - **Connect with Grant**: Connect to existing database
+    - **Select with Grant, Update with Grant, Delete with Grant, Insert with Grant**: Grant permissions to application pool users
+    - **Alter all logins**: Create SQL Server logins for application pool users.
 
 - Create a new database. In this scenario the database administrator must create the database (SCSPFDB) and then SPF administrator installs SPF, and has permissions to configure the database as needed. For example to add tables. SPF administrators must create SPF Application Pool in Internet Information Services (IIS) and create a database user for an Application Pool User with the following permissions:
-    - Connect: Connect to the SPF database
-    - Select, Update, Delete, Insert: Perform basic operations
-    - Create the SQL Server logon for Application Pool User with default database set to SCSPFDB.: To log on to SQL Server and access the database.
-
+    - **Connect**: Connect to the SPF database
+    - **Select, Update, Delete, Insert**: Perform basic operations
+    - **Create the SQL Server logon for Application Pool User with default database set to SCSPFDB.**: To log on to SQL Server and access the database.
 
 ## Next steps
 
