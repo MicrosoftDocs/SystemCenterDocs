@@ -355,7 +355,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 **Issue**: Support for backing up Windows Server with DPM.
 
-**Workaround**: DPM 2019 can backup Windows Server 2019 and 2016. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).
+**Workaround**: DPM 2019 can backup Windows Server 2019 and 2016. For information about supported workloads, see [What can DPM back up](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
 
 ::: moniker-end
 
