@@ -23,15 +23,15 @@ SCOM Managed Instance (preview) is a cloud-based alternative for SCOM customers.
  
 ## Key benefits
 
-Key facts of the value proposition are as follows.    
+Key facts of the value proposition are as follows:   
 
 **Preserve investments in SCOM**: SCOM Managed Instance (preview) allows you to preserve your existing SCOM investments. SCOM Managed Instance (preview) is compatible with all existing SCOM MPs and provide a means to migrate MP configurations from the on-premises setup.  
 
 - **Simplify SCOM-infrastructure management**: SCOM Managed Instance (preview) is Microsoft-managed. All the cloud connected SCOM components are managed by Microsoft, removes the responsibility of hardware/software updates and security patches.  
 
-- **Monitor continuously through migration**: SCOM Managed Instance (preview) won't cause disruptions in monitoring while you migrate infrastructure or workloads from on-premises to the cloud. As you migrate from one UR to the next, you can migrate from yout existing SCOM setup.
+- **Monitor continuously through migration**: SCOM Managed Instance (preview) won't cause disruptions in monitoring while you migrate infrastructure or workloads from on-premises to the cloud. As you migrate from one UR to the next, you can migrate from your existing SCOM setup.
 
-- **Monitor workloads everywhere**:  SCOM Managed Instance (preview) is hosted in Azure with the capability of monitoring workloads running wherever they are i.e. in Azure or on-premises, without the need to modify.     
+- **Monitor workloads everywhere**:  SCOM Managed Instance (preview) is hosted in Azure with the capability of monitoring workloads running wherever they are (in Azure or on-premises) without the need to modification.     
 
 ## Features
 
