@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
-title: Azure Monitor SCOM managed instance (preview) frequently asked questions
-description: This article summarizes frequently asked questions about Azure Monitor SCOM managed instance (preview).
+title: Azure Monitor SCOM Managed Instance (preview) frequently asked questions
+description: This article summarizes frequently asked questions about Azure Monitor SCOM Managed Instance (preview).
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 10/26/2022
+ms.date: 11/17/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -13,9 +13,9 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Azure Monitor SCOM managed instance (preview) frequently asked questions
+# Azure Monitor SCOM Managed Instance (preview) frequently asked questions
 
-This article summarizes frequently asked questions about Azure Monitor SCOM managed instance (preview).
+This article summarizes frequently asked questions about Azure Monitor SCOM Managed Instance (preview).
 
 ## Virtual Network (VNet)
 
