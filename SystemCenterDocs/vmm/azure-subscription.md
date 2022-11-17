@@ -24,7 +24,7 @@ ms.technology: virtual-machine-manager
 You can add Microsoft Azure subscriptions to System Center - Virtual Machine Manager (VMM), and perform basic actions on Azure instances in the subscriptions.
 
 - For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
-- If you are already managing your on-premises virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances without leaving the VMM console. You can:
+- If you're already managing your on-premises virtual machines in VMM, you can use this feature to perform some basic actions on Azure instances without leaving the VMM console. You can:
     - Add and remove Azure subscriptions in the VMM console.
     - Get a list view of information about role instances in deployment subscriptions. Instances can be manually refreshed.
     - Perform basic actions on the instances, including start, stop, shutdown, and restart.
@@ -42,7 +42,7 @@ Here's what you need to add an Azure subscription in VMM:
 |**Azure subscription** | You need at least one Azure subscription to add it to the VMM console.|
 |**Internet connectivity** | The computer on which you install the feature must be able to connect to the Azure subscription.|
 |**Service administrator** | You need to be at least a service administrator for the subscription. You need this for access to the management certificate information that's required.|
-|**Management certificate** | The subscription must have a management certificate associated with it if you are managing Classic VMs only. So that VMM can use the classic deployment model in Azure. [Learn more](/azure/cloud-services/cloud-services-certs-create) about service certificates. Make note of the subscription ID and the certificate thumbprint.<br/><br/> Certificates must be x509 v3 compliant.<br/><br/> The management certificate must be located in the local certificate store on the computer on which you add the Azure subscription feature.<br/><br/> The certificate should also be located in the **Current User \ Personal** store of the computer running the VMM console.|
+|**Management certificate** | The subscription must have a management certificate associated with it if you're managing Classic VMs only. So that VMM can use the classic deployment model in Azure. [Learn more](/azure/cloud-services/cloud-services-certs-create) about service certificates. Make note of the subscription ID and the certificate thumbprint.<br/><br/> Certificates must be x509 v3 compliant.<br/><br/> The management certificate must be located in the local certificate store on the computer on which you add the Azure subscription feature.<br/><br/> The certificate should also be located in the **Current User \ Personal** store of the computer running the VMM console.|
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ Here's what you need to add an Azure subscription in VMM:
 
 ## Manage Azure VMs
 
-If you are already managing your on-premises virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances, without leaving the VMM console. You can:
+If you're already managing your on-premises virtual machines in VMM, you can use this feature to perform some basic actions on Azure instances, without leaving the VMM console. You can:
 -	Add and remove one or more Azure subscriptions by using the VMM console.
 -	See a list view with details and status of all role instances in all deployments in that subscription.
 -	Manually refresh the list of instances.
@@ -84,9 +84,9 @@ If you are already managing your on-premises virtual machines in VMM, you can us
 
 
 ### What you can't do with this feature
-This feature is not intended to provide feature parity with the Microsoft Azure Management Portal. The functionality of this feature is a minor subset of the features at https://portal.azure.com, but you can view your instances and do other basic actions, to simplify everyday tasks and help make management easier.
+This feature isn't intended to provide feature parity with the Microsoft Azure Management Portal. The functionality of this feature is a minor subset of the features at https://portal.azure.com, but you can view your instances and do other basic actions, to simplify everyday tasks and help make management easier.
 
-You cannot:
+You can't:
 -	Manage your Azure subscription
 -	Deploy instances to Azure
 -	Migrate on-premises virtual machines to Azure
