@@ -214,8 +214,8 @@ If the VMM database was configured by using SQL Server Always On Availability Gr
 
 ::: moniker range="<sc-vmm-2019"
 
-## Reinstall Windows Azure Pack
-If Windows Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you"ll have to reinstall it after you restore the VMM environment. For more information about Windows Azure Pack for Windows Server, see [Windows Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).
+## Reinstall Microsoft Azure Pack
+If Microsoft Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you"ll have to reinstall it after you restore the VMM environment. For more information about Microsoft Azure Pack for Windows Server, see [Microsoft Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).
 
 ::: moniker-end
 
@@ -232,9 +232,9 @@ All virtual machine templates that were restored must correctly specify the virt
 
 2.  In the **Templates** pane, right-click the virtual machine template that you want to update, select **Properties** > **Hardware Configuration** to update the settings.
 
-### Restore Windows Azure Hyper-V Recovery Manager
+### Restore Microsoft Azure Hyper-V Recovery Manager
 
-If Windows Azure Hyper-V Recovery Manager is implemented in the VMM environment, then you must perform a few steps to restore the Windows Azure Hyper-V Recovery Manager Provider.
+If Microsoft Azure Hyper-V Recovery Manager is implemented in the VMM environment, then you must perform a few steps to restore the Microsoft Azure Hyper-V Recovery Manager Provider.
 
 ### Review add-ins, driver packages, and certificates
 
