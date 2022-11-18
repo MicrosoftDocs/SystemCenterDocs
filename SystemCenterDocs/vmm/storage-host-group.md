@@ -4,7 +4,7 @@ title: Allocate storage to VMM 2016 host groups
 description: This article describes how to allocate block storage to VMM host groups
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

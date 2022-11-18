@@ -4,7 +4,7 @@ title: VMM collate mappings
 description: This article describes the VMM server collate mapping from VMM code.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/22/2017
 ms.topic: article
 ms.prod: system-center

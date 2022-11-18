@@ -55,7 +55,7 @@ You must ensure that your server meets the minimum system requirements for Syste
 2.  Reliable name resolution must exist between the agent-managed computers and the gateway server and between the gateway server and the management servers. This name resolution is typically done through DNS. However, if it is not possible to get proper name resolution through DNS, it might be necessary to manually create entries in each computer's hosts file.
 
     > [!NOTE]
-    > The hosts file is located in the \Windows\system32\drivers\ directory, and it contains directions for configuration.
+    > The hosts file is located in the `\Windows\system32\drivers\` directory, and it contains directions for configuration.
 
 ### Obtaining computer certificates from Microsoft Certificate Services
 
@@ -67,7 +67,7 @@ The Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool is needed only o
 
 ##### To copy Microsoft.EnterpriseManagement.GatewayApprovalTool.exe to management servers
 
-1.  From a target management server, open the Operations Manager installation media \SupportTools\ (amd64 or x86) directory.
+1.  From a target management server, open the Operations Manager installation media `\SupportTools\` (amd64 or x86) directory.
 
 2.  Copy the Microsoft.EnterpriseManagement.GatewayApprovalTool.exe from the installation media to the Operations Manager installation directory.
 
@@ -79,12 +79,19 @@ This procedure registers the gateway server with the management group, and when 
 
 1.  On the management server that was targeted during the gateway server installation, log on with the Operations Manager Administrator account.
 
-2.  Open a command prompt, and navigate to the Operations Manager installation directory or to the directory that you copied the Microsoft.EnterpriseManagement.gatewayApprovalTool.exe to.
+2.  Open a command prompt, and navigate to the Operations Manager installation directory or to the directory that you copied the Microsoft.EnterpriseManagement.GatewayApprovalTool.exe to.
 
-3.  At the command prompt, run `Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create`
+3.  At the command prompt, run:
+    ```
+    Microsoft.EnterpriseManagement.GatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create
+    ```
 
     > [!NOTE]
-    > To prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection* parameter on the command line.  
+    > To prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection=True* parameter on the command.
+    > ### Example
+    > ```
+    > "C:\Program Files\Microsoft System Center\Operations Manager\Server\Microsoft.EnterpriseManagement.GatewayApprovalTool.exe" /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /ManagementServerInitiatesConnection=True /Action=Create
+    > ```
 
 4.  If the approval is successful, you will see `The approval of server <GatewayFQDN> completed successfully.`
 
@@ -158,7 +165,7 @@ Perform this operation on each gateway server, management server, and computer t
 
 ##### To import computer certificates by using MOMCertImport.exe
 
-1.  Copy the MOMCertImport.exe tool from the installation media \SupportTools\ (amd64 or x86) directory to the root of the target server or to the Operations Manager installation directory if the target server is a management server.
+1.  Copy the MOMCertImport.exe tool from the installation media `\SupportTools\` (amd64 or x86) directory to the root of the target server or to the Operations Manager installation directory if the target server is a management server.
 
 2.  As an administrator, open a Command Prompt window and change the directory to the directory where MOMCertImport.exe is, and then run `momcertimport.exe /SubjectName <certificate subject name>`. This makes the certificate usable by Operations Manager. You may also run `momcertimport.exe` without any arguments to allow you to select from a GUI (Graphical User Interface) a list of Certificates in your Local Machine Personal Store.
 
@@ -189,8 +196,11 @@ It is sometimes necessary to chain multiple gateways together in order to monito
 > - You should install one gateway at a time and verify that each newly installed gateway is configured correctly before adding another gateway in the chain.
 > - When you add the gateways end of chain to the same resource pool, do not configure failover to the other chain by using the **Set-SCOMParentManagementServer** command. In such scenario, the pool does not work as expected. For failover configuration and the resource pool to function together, the gateway end of the chain should have the same parent.
 
-1. On the management server that was targeted during the gateway server installation, run the Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool to initiate communication between the management server and the gateway.
-2. Open a command prompt, and navigate to the Operations Manager installation directory or, and then run the following: ```Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create```
+1. On the management server that was targeted during the gateway server installation, run the **Microsoft.EnterpriseManagement.GatewayApprovalTool.exe** tool to initiate communication between the management server and the gateway.
+2. Open a command prompt, and navigate to the Operations Manager installation directory or, and then run the following: 
+   ```
+   Microsoft.EnterpriseManagement.GatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create
+   ```
 3. Install the gateway server on a new server.
 4. Configure the certificates between gateways in the same way that you would configure certificates between a gateway and a management server. The Health Service can only load and use a single certificate. Therefore, the same certificate is used by the parent and child of the gateway in the chain.
 

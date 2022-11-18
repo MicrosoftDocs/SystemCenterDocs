@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 11/01/2017
+ms.date: 11/15/2022
 title: Generate DPM reports
 ms.technology: data-protection-manager
 ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8
@@ -228,8 +228,7 @@ Note that if you experience any issues with reports on fitting on A4 paper try c
 6.  In **Sheet Options** clear **Print** if it's selected. Then print the report.
 
 ### Send reports
-You can send reports to subscribers via email. Reports are sent as file attachments. To subscribe to reports do the following:
-
+You can send reports to subscribers via [email](/system-center/dpm/monitor-dpm#configure-email-for-dpm). Reports are sent as file attachments. To subscribe to reports do the following:
 1.  Specify the SMTP server that DPM will use to send reports.
 
 2.  In the Reporting view, on the display pane right-click the report to which you want to subscribe and click **Schedule**.

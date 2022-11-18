@@ -4,7 +4,7 @@ title: Virtual Machine Manager network object fundamentals
 description: This article describes about network object fundamentals.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center

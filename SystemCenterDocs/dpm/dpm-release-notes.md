@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: jyothisuri
 ms.author: jsuri
 manager: carmonm
-ms.date: 05/02/2022
+ms.date: 11/15/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -37,9 +37,13 @@ We recommend you to see the following articles for detailed information about wh
 
 ## DPM 2022 release notes
 
-DPM 2022 has the known issues that were observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes), [UR1](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-ur1-release-notes), and [UR2](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-2019-ur2-release-notes).
+DPM 2022 has the known issues that are observed in DPM [2019 RTM](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-release-notes), [UR1](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019#&preserve-view=truedpm-2019-ur1-release-notes), and [UR2](/system-center/dpm/dpm-release-notes?view=sc-dpm-2019&preserve-view=true#dpm-2019-ur2-release-notes).
 
-In addition, the following known issues were observed.
+In addition, the following known issues are observed.
+
+### No DPM SQL Self-Service Recovery Tool in DPM 2022 RTM
+
+DPM SQL Self-Service Recovery is not available in DPM 2022 RTM. Support for SQL Self-Service Recovery is available from DPM 2022 UR1. [Learn More](/system-center/dpm/what-s-new-in-dpm?view=sc-dpm-2022#sql-self-service-recovery-tool). 
 
 ### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB**
 
@@ -108,7 +112,7 @@ Use these steps to rename the database:
 
 ## DPM 2022 Hotfix (KB 5015376) release notes
 
-In addition to the issues listed in DPM 2022 release notes, the following additional issues were identified in DPM 2022 and are fixed in Hotfix (KB 5015376); we recommend you apply the hotfix. For more details, see the [KB article](https://support.microsoft.com/topic/intermittent-online-backup-failures-and-other-issues-in-data-protection-manager-2022-30df8903-f779-41c5-9b66-13a4b8461d0e).
+In addition to the issues listed in DPM 2022 release notes, the following additional issues are identified in DPM 2022 and are fixed in Hotfix (KB 5015376); we recommend you apply the hotfix. For more details, see the [KB article](https://support.microsoft.com/topic/intermittent-online-backup-failures-and-other-issues-in-data-protection-manager-2022-30df8903-f779-41c5-9b66-13a4b8461d0e).
 
  - Intermittent online backup failures with error 100195.
  - Secondary protection consistency check failure with VSS non-transient error.

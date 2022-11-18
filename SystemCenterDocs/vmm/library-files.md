@@ -4,7 +4,7 @@ title: Add file-based resources to the VMM library
 description: This article provides guidance for adding files to the library in the VMM compute fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 07/02/2018
 ms.topic: article
 ms.prod: system-center

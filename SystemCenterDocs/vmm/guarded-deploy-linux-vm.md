@@ -3,7 +3,7 @@ title: Provision a shielded Linux virtual machine in System Center Virtual Machi
 description: Learn how to add and provision a Linux shielded VM in the Virtual Machine Manager (VMM) 1801 fabric.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center
