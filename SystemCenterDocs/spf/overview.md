@@ -4,7 +4,7 @@ description: This article provides a broad overview of Service Provider Foundati
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/15/2020
+ms.date: 11/18/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
@@ -34,7 +34,7 @@ The following graphic shows how SPF works.
 SPF provides a number of services:
 -	**Admin web service**:  Provides servers, tenants, and stamps for Service Provider Foundation.
 -	**VMM service**: Provides access to VMM capabilities
--	**Provider service**: Used by Windows Azure Pack
+-	**Provider service**: Used by Microsoft Azure Pack
 
 ### Admin web service
 
@@ -73,7 +73,7 @@ Admin user role in VMM | Must include the credential for the VMM application poo
 
 ### Usage web service
 
-- The Usage web service is only used by Windows Azure Pack, and third- party billing providers. The Usage web service endpoint shouldn't  be accessed for other purposes to prevent data loss due to unnecessary or erroneous queries.
+- The Usage web service is only used by Microsoft Azure Pack, and third- party billing providers. The Usage web service endpoint shouldn't  be accessed for other purposes to prevent data loss due to unnecessary or erroneous queries.
 - The Usage web service uses registrations of instances of Operations Manager data warehouses (that VMM hosts) for collecting metrics on tenant virtual machine usage and other fabric usage. Usage data is collected for processes such as billing chargeback features.
 - You can use Windows PowerShell cmdlets to register Operations Manager data warehouse connection settings in the SPF database. This registration enables SPF to aggregate usage data from the data warehouses.
 - The Usage web service returns utilization data that pertains to every subscription across services.
@@ -127,15 +127,15 @@ This graphic shows how SPF interacts with VMM
 
 ![SPF and VMM](./media/overview/spf-vmm.png)
 
-## VMM, SPF and Windows Azure Pack
+## VMM, SPF and Microsoft Azure Pack
 
-Windows Azure Pack provides an Azure-like experience and frontend for organizational clouds. Azure Pack provides a [number of components](/previous-versions/azure/windows-server-azure-pack/dn469332(v=technet.10)), and among them, the VM cloud service. The VM cloud service integrates with VMM to provide:
+Microsoft Azure Pack provides an Azure-like experience and frontend for organizational clouds. Azure Pack provides a [number of components](/previous-versions/azure/windows-server-azure-pack/dn469332(v=technet.10)), and among them, the VM cloud service. The VM cloud service integrates with VMM to provide:
 
 -	A management portal for administrator to enable hosting or service provides to set up a VM provisioning infrastructure
 -	A tenant portal where tenants can sign up for the VM Clouds service, and provision VMs.
-Windows Azure Pack uses SPF to integrate with VMM to provide the VM Clouds service, as illustrated in the following graphic.
+Microsoft Azure Pack uses SPF to integrate with VMM to provide the VM Clouds service, as illustrated in the following graphic.
 
-    ![SPF and Windows Azure Pack](./media/overview/spf-azurepack.png)
+    ![SPF and Microsoft Azure Pack](./media/overview/spf-azurepack.png)
 
 ## Next steps
 
