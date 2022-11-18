@@ -215,7 +215,7 @@ If the VMM database was configured by using SQL Server Always On Availability Gr
 ::: moniker range="<sc-vmm-2019"
 
 ## Reinstall Microsoft Azure Pack
-If Microsoft Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you"ll have to reinstall it after you restore the VMM environment. For more information about Microsoft Azure Pack for Windows Server, see [Microsoft Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).
+If Microsoft Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you'll have to reinstall it after you restore the VMM environment. For more information about Microsoft Azure Pack for Windows Server, see [Microsoft Azure Pack for Windows Server](/previous-versions/azure/windows-server-azure-pack/dn296435(v=technet.10)).
 
 ::: moniker-end
 
