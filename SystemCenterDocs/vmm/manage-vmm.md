@@ -4,7 +4,7 @@ title: Manage VMM
 description: This section describes how to configure and manage VMM after it's installed
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center

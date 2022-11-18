@@ -4,7 +4,7 @@ title: Manage the VMM library
 description: This article describes management tasks for the VMM library
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: system-center

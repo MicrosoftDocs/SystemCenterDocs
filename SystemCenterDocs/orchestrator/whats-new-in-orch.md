@@ -136,3 +136,4 @@ Orchestrator 2022 support SQL Server 2022.
 
 ## Next steps
 [Know the fixed issues](release-notes-orch.md)
+

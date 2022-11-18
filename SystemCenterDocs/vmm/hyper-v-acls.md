@@ -4,7 +4,7 @@ title: Manage port ACLs in VMM
 description: Describes how to manage Hyper-V port access control lists (ACLs)
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/12/2022
 ms.topic: article
 ms.prod: system-center
@@ -23,7 +23,7 @@ ms.technology: virtual-machine-manager
 In System Center - Virtual Machine Manager (VMM), you can centrally configure and manage Hyper-V port access control lists (ACLs). Port ACLs can be configured for both a Network Controller- managed fabric, and for networks that aren't managed by Network Controller.
 
 - A port ACL is a set of rules that filter traffic at the layer 2 port level. A port ACL in VMM filters access to a particular VMM  object. A network object can have no more than one port ACL attached.
-- An ACL contains rules, and can be attached to any number of network objects. You can create an ACL without rules, and then add rules at a later time. Each ACL rule corresponds to a only one port ACL
+- An ACL contains rules, and can be attached to any number of network objects. You can create an ACL without rules, and then add rules at a later time. Each ACL rule corresponds to an only one port ACL
 - If an ACL has multiple rules, they are applied based on priority. After a rule matches criteria and is applied, no other rules are processed.
 - A global settings port ACL is applied to all VM virtual network adapters in an infrastructure. There's no separate object type for global settings. Instead, the global settings port ACL is attached to the VMM management server.
 - Port ACL settings are exposed only through PowerShell cmdlets in VMM, and can't be configured in the VMM console.
@@ -138,7 +138,7 @@ LocalPortRange | Specifies the source port range that's used to identify traffic
 RemoteAddressPrefix | Specifies the destination IP address or subnet that's used to identify traffic for filtering.
 RemotePortRange | Specifies the destination port range that's used to  identify traffic.
 Protocol | Specifies the protocol for which the rule is applied.
-Priority | Specify the priority of the rule in in port ACL. Rules are applied according to order. Set a priority between 1 and 65535, where the lowest number has highest priority. Port ACLs  rules for objects managed by Network Controller should be set equal to or greater than 100. Network Controller doesn't support priority below 100.
+Priority | Specify the priority of the rule in port ACL. Rules are applied according to order. Set a priority between 1 and 65535, where the lowest number has highest priority. Port ACLs  rules for objects managed by Network Controller should be set equal to or greater than 100. Network Controller doesn't support priority below 100.
 
 ### Examples
 
