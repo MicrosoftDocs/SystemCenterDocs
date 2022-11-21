@@ -354,7 +354,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ### Support parameters for protecting computers running client operating systems with DPM
 **Issue**: Support for backing up Windows clients with DPM. 
 
-**Workaround**: DPM 2022 can backup Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md). Review the full list of supported workloads here
+**Workaround**: DPM 2022 can back up Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md). Review the full list of supported workloads here
 
 ::: moniker-end
 
@@ -379,14 +379,14 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 **Issue**: Support for backing up Windows Server with DPM.
 
-**Workaround**: DPM 2019 can backup Windows Server 2019 and 2016. For information about supported workloads, see [What can DPM back up](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+**Workaround**: DPM 2019 can back up Windows Server 2019 and 2016. For information about supported workloads, see [What can DPM back up](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
 
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
 **Issue**: Support for backing up Windows Server with DPM.
 
-**Workaround**: DPM 2022 can backup Windows Server 2022, 2019 and 2016. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).
+**Workaround**: DPM 2022 can back up Windows Server 2022, 2019 and 2016. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).
 
 ::: moniker-end
 
@@ -596,7 +596,7 @@ These workloads can be running on a single server or in a cluster configuration.
 ## <a name="BKMK_VM"></a>Hyper-V and virtual machine protection issues
 
 ### Linux virtual machines backed up with file-consistent snapshots only
-**Issue**: You can backup Linux virtual machines using DPM. Only file-consistent snapshots are supported.
+**Issue**: You can back up Linux virtual machines using DPM. Only file-consistent snapshots are supported.
 
 **Workaround**: None.
 
