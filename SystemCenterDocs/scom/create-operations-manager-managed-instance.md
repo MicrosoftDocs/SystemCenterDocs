@@ -53,7 +53,7 @@ The following are the prerequisites before you create a SCOM Managed Instance (p
 
 ## Create a static IP and configure the DNS name
 
-- For all the SCOM components, to communicate with the load-balancer that will be created by the SCOM Managed Instance (preview) service, you need a static IP and DNS name for the load-balancer front-end configuration. For more information, see <link>. 
+- For all the SCOM components, to communicate with the load-balancer that will be created by the SCOM Managed Instance (preview) service, you need a static IP and DNS name for the load-balancer front-end configuration. For more information, see \<link\>. 
 - Ensure that the static IP is in the subnet that was created during VNet creation and it will be used during the creation of an instance. 
 - Create a DNS name (as per your organization policy) for the static IP.
 
