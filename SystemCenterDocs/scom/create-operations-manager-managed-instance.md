@@ -5,7 +5,7 @@ description: This article describes how to create an Azure Monitor SCOM Managed 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 11/16/2022
+ms.date: 11/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -164,218 +164,80 @@ Store the domain account you create in Active Directory in a Key vault account f
         - Days to retain deleted vaults: Can be a value from 7 to 90. 
         - Purge protection: We recommend enabling this feature to have a mandatory retention period
 3. Select **Next**.
-In the ‘Access Policy’ tab, follow the guidelines below:
-o	Access configuration: Keep this as ‘Vault access policy’
-o	Resource access: Nothing needs to be selected here
-o	Access policies: You need to create a new access policy. Click on ‘Create’
-	A right-hand pane will open up with you click on ‘Create’. In that pane, select ‘Get’ & List’ in the secret permissions section
-	In the ‘Principal’ section, search for the MSI you created in the previous step and select that
-	Once the MSI is selected, move on to the ‘Review + Create’ section. Nothing needs to be selected in the ‘Application (optional)’ section
-	The access policy is now created. Select that and move to the ‘Networking’ tab
-5.	In the ‘Networking’ tab, leave all the options as they are shown in the image below
-6.	The ‘Tags’ section is optional. Move on to ‘Review+Create’ and create the Key vault
-7.	Once the Key vault is created, go to the ‘Secrets’ tab on the left-hand pane 
-8.	You need to create 2 secrets here: Username & Password. Click on ‘Generate/Import’
-9.	Ensure the following values:
-o	Upload Options: Manual
-o	Name: Name of the secret. For example, for the username secret, you can put name as ‘Username’ and for the password secret, you can put name as ‘Password’
-o	Secret value: This will be the credential values for the specific item. For username, it will be the the domain account username and for password, it will be the domain account password
-o	The rest of the values can be left to their default state
-10.	Click on ‘Create’ to create the secret. Remember to create 2 secrets: 1 for the username and 1 for the password
+4. In the **Access Policy**, do the following:
+    - **Access configuration**: Select **Vault access policy**.
+    - **Resource access**: Don't select any of the options.
+    - **Access policies**: Select **+ Create** to create a new access policy. **Create an access policy** page opens on the right pane. 
+        1. In **Permissions** > **Secret permissions**, select **Get** and **List**. 
+        1. Select **Next**.
+        1. In **Principal**, search for the MSI you created in the previous step and select.
+        1. In **Review + create**, review the selections and select **Create**. 
+5. Select the access policy created and then select **Next**.
+6. In **Networking**, do the following:
+    - Select **Enable public access**.
+    - **Public Access**
+        - **Allow access from**: Select **All networks**.
+7. Select **Next**.
+8. In **Tags**, select tags if required and select **Next**.
+9. In **Review + create**, review the selections and select **Create** to create the Key vault.
+10. On the left pane, under **Objects**, select **Secrets**. 
+    
+     >[!Note]
+     > You must create two secrets.
+     > - Username
+     > - Password. 
 
-
-- Create a [Key vault](/azure/key-vault/general/quick-create-portal).
-- Create a [*Secret* for the domain account](/azure/key-vault/secrets/quick-create-portal).
-- Assign a **Reader** role on this key vault to the Managed Service Identity (MSI). For more information, see [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy?tabs=azure-portal).
-
-## Configure SCOM Managed Instance (preview) role-based access control (RBAC)
-
-### Register the RP
-
->[!Note]
->Ensure you are either a subscription owner or global administrator. For more information, see Azure RBAC.
-
-In order to create and operate a SCOM Managed Instance (preview), create the below two custom RBAC roles in Azure:
- - **Aquila Contributor**: This role allows users to create, update, and delete a SCOM Managed Instance (preview) in Azure. Its scope of permissions doesn't extend beyond SCOM Managed Instance (preview). The ideal user for this role would be someone who will be responsible for creating a SCOM Managed Instance (preview), and deleting it when done.
- 
- - **Aquila Reader**: This role allows users to read a SCOM Managed Instance (preview) in Azure, without the ability to modify anything in the instance. Its scope of permissions doesn't extend beyond SCOM Managed Instance (preview). The ideal user for this role would be someone who will be responsible for accessing the SCOM Managed Instance (preview) once it is created and reading the parameters. 
-
-1. Sign in to the [Azure portal](https://portal.azure.com) and select **Cloud Shell** in the top menu. A Shell opens at the bottom of the page.
-1. Enter the below commands to enable SCOM Managed Instance (preview) in your subscription:
-
-    ```   
-    az account set --subscription "<your subscription name>"
-    az feature register --name AquilaPrivatePreview --namespace Microsoft.Scom
-    az provider register --namespace Microsoft.Scom
-    ```
-
-Resource Provider of SCOM Managed Instance (preview) is successfully registered in your subscription. If you don't see the `Microsoft.SCOM` resource provider in the IAM or experience any problems in the steps above, check your permission level in Azure. You might need to change your permission level to complete all the steps above.
-
-### Add custom roles
-
-#### Aquila Contributor
-
-Copy and paste the below script in `.txt` file and name it as `aquilaContributor.json`. Change the `subscription1` value to the current subscription ID.
-
-```
-{ 
-    "properties": { 
-        "roleName": "Aquila Contributor", 
-        "description": "Can onboard an Aquila Instance in Azure along with all the associated Azure resources.", 
-        "assignableScopes": [ 
-            "/subscriptions/<subscriptionID>" 
-        ], 
-        "permissions": [ 
-            { 
-                "actions": [ 
-                    "Microsoft.Scom/managedInstances/*", 
-                    "Microsoft.Scom/operations/read", 
-                    "Microsoft.Scom/locations/operationStatuses/write", 
-                    "Microsoft.Scom/locations/operationStatuses/read", 
-                    "Microsoft.Resources/deployments/*", 
-                    "Microsoft.Network/virtualNetworks/subnets/read", 
-                    "Microsoft.Network/virtualNetworks/read", 
-                    "Microsoft.Sql/managedInstances/read", 
-                    "Microsoft.Sql/managedInstances/databases/read", 
-                    "Microsoft.Resources/subscriptions/resourceGroups/read" 
-                ], 
-                "notActions": [], 
-                "dataActions": [], 
-                "notDataActions": [] 
-            } 
-        ] 
-    } 
-} 
-```
-
-#### Aquila Reader
-
-Copy and paste the below script in `.txt` file and name it as `aquilaReader.json`. Change the `subscription1` value to the current subscription ID.
-
-```
-{ 
-    "properties": { 
-        "roleName": "Aquila Reader", 
-        "description": "Can read aquila instances and deployments", 
-        "assignableScopes": [ 
-            "/subscriptions/<subscriptionID>" 
-        ], 
-        "permissions": [ 
-            { 
-                "actions": [ 
-                    "Microsoft.Scom/managedInstances/*/read" 
-                ], 
-                "notActions": [], 
-                "dataActions": [], 
-                "notDataActions": [] 
-            } 
-        ] 
-    } 
-} 
-```
-
-1. After you create the roles, go to Azure portal and search for *Subscriptions*. Select the subscription where you would create the SCOM Managed Instance (preview) in and navigate to the blade that displays the details of all the resources in that subscription along with the costs incurred so far.
-1. Select *Access Control (IAM)* > *+Add* on top and then select **Add custom role**. **Create a custom role** page opens.
-1. For both the roles aquilaContributor.json and aquilaReader.json, follow the below steps:
-    1. Under **Basics**:
-        1. **Custom role name**: Enter the role name (Aquila Contributor/Aquila Reader).
-        1. **Description**: Enter description of the role.
-        1. **Baseline permissions**: Select *Start from JSON* and upload the json file (aquilaContributor.json/aquilaReader.json). After you upload the json file, rest of the fields will auto-populate.
-1. Review the permissions, subscription, and other details in rest of the tabs. 
-1. Under **Review + Create**, select **Create** to create the role.
-1. Select **Review + Create** to create two custom roles. Now, assign users to these roles. 
-1. Navigate to **Access Control (IAM)** page, select **+Add** and then select **+Add role assignment**.
-1. In the **Role**, select the desired role to add users: SCOM Managed Instance (preview) Contributor (Similar to System Center Operations Manager Administrator) or SCOM Managed Instance (preview) Reader (Similar to System Center Operations Manager Operator).
-1. In the **Assign access to**, select **User, group, or service principal**.
-1. In the **User**, search for the users by their name.
-1. Save the role assignment and perform the same steps for the second role.
-
-## Create and configure an SQL MI instance
-
-Before you create a SCOM Managed Instance (preview), you have to create an instance of SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
-
-Below are the recommendations while you create an SQL MI instance:
-
-- **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommend creating a new Resource Group for large Azure resources.
-- **Managed Instance name**: Choose a unique name. This name will be used while you create a SCOM Managed Instance (preview) to refer to this SQL MI instance that you are creating.
-- **Region**: Choose the region that is close to you. There is no strict requirement on region for the instance but the closest region is recommended for latency purposes.
-- **Compute+Storage**: The default number of cores is General Purpose (Gen5) eight cores. This will suffice for the SCOM Managed Instance (preview).
-- **Authentication Method**: You can select **SQL Authentication**. In the credentials, enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
-- **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the SCOM Managed Instance (preview) you will create in the future. Thus, choose a VNet that you will eventually use for your SCOM Managed Instance (preview), or if you choose a different VNet, make sure it has connectivity to the SCOM Managed Instance (preview) VNet. In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?msclkid=354f1ab4cd3211eca3a5aa9416f0afa1&view=azuresql&preserve-view=true).
-- **Connection Type**: By default, connection type is Proxy.
-- **Public Endpoint**: This can either be *Enabled* or *Disabled*. Enable it if you are not using a peered VNet. If you enable it, you will have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true). If you disable it, you will have to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM Managed Instance (preview) are present.
-
-For the rest of the settings in the other tabs, you can leave them as default or change something according to your requirements.
-
->[!Note]
->Creation of a new SQL MI instance can take up to 6 hours.
-
-1. Once the SQL MI instance is created, you need to provide the SCOM Managed Instance (preview) Resource Provider with permissions to access this SQL MI instance. To do that, open the details of this SQL MI instance, and select *Access Control (IAM)*. In the top menu, select *+Add* and then select *Add role assignment*.
-
-1. Enter the values as below and save the role assignment:
-
-    - Role = Reader
-    - Assign access to = User, group, or service principal
-    - Select = Microsoft.SCOM
-
-### Set the Active Directory Admin value in the SQL MI Instance
-
-To set the *Active Directory Admin* value in the SQL MI Instance, follow the steps below:
-
-For more information, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true). 
-
-You need to be the Global Admin/Privileged Role Admin of the subscription to perform the below process 
-
-1. Open the SQL MI Instance and select **Active Directory Admin**.
-
-1. Select **Set Admin**, search for your MSI (the same MSI that you provided during the SCOM Managed Instance (preview) creation flow). You will find the admin added to the SQL MI Instance.
-
-1. If you find the error after you add managed identity account, it indicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, otherwise your instance creation will fail.
-
----
-
->[!Note]
->- As SCOM Managed Instance (preview) can be created only in West Europe and West US regions, ensure that the VNet is in one of these regions.
->- SCOM Managed Instance (preview) will be deployed with one Management Server in Azure. We recommend monitoring a maximum of 500 servers during this preview to avoid latency.
->- You can multihome existing agents from your existing Management Groups to the SCOM Managed Instance (preview).
+1. Select **+ Generate/Import**. Do the following in **Create a secret** page.
+    - **Upload options**: Select **Manual**.
+    - **Name**: Enter the name of secret. For example, you can use *Username* for username secret and *Password* for password secret.
+    - **Secret value**: Secret value will be the credential values for the specific item. For username, it will be the the domain account username and for password, it will be the domain account password.
+    - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**,**Enabled**, **Tags** as default and select **Create** to create the secret.
 
 ## Create a SCOM Managed Instance (preview)
 
 To create a SCOM Managed Instance (preview), follow the below steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Aquila**. Aquila Overview page opens.
-1. On the Overview page, you have three options
-    - Pre-requisites: Allows you to view the prerequisites
-    - Aquila Instance: Allows you to create a SCOM Managed Instance (preview)
-    - Manage your Aquila Instance: Allows you to view the list of instances created.
-1. Select **Create Aquila Instance**.
+1. Sign in to the [Azure portal](https://portal.azure.com) and search for **SCOM** or **SCOM Managed Instance**. The Overview page opens.
+1. On the Overview page, you have three options:
+    - **Pre-requisites**: Allows you to view the prerequisites
+    - **Create SCOM Managed Instance**: Allows you to create a SCOM Managed Instance (preview)
+    - **Manage your SCOM Managed Instance**: Allows you to view the list of instances created.
+1. Select **Create SCOM Managed Instance**.
 1. Under **Basics**, do the following:
     1. **Project details**:
         1. **Subscription**: Select the Azure subscription in which you want to place the SCOM Managed Instance (preview).
         1. **Resource group**: Select the resource group in which you want to place the SCOM Managed Instance (preview). If you don't have a resource group in which you want to place the SCOM Managed Instance (preview), select **Create New** to create a new resource group and then place the instance. We recommend you have a new resource group exclusively for SCOM Managed Instance (preview).
     1. **Instance details**:
-        1. **Aquila instance name**: Enter the desired SCOM Managed Instance (preview) name.
+        1. **SCOM Managed Instance name**: Enter the desired SCOM Managed Instance (preview) name.
             >[!Note]
             >- SCOM Managed Instance (preview) name can have only alphanumeric  characters and up to 10 characters long.
             >- SCOM Managed Instance (preview) is equivalent to System Center Operation Manager Management Group so choose a name accordingly.
         1. **Region**: Select the region that is near to you geographically so that latency between your agents and the SCOM Managed Instance (preview) is as low as possible.
+    1. **Active directory details**: 
+        1. **Domain name**: Enter the name of the domain that is being administered by the Domain Controller.
+        1. **DNS Server IP**: Enter the IP address of the DNS Server that is providing the IP addresses to the resources in the domain mentioned above.
+        1. **OU Path**: Enter the OU Path where you want to join the servers to. This is not a necessary field and if left blank, it will assume the default value.
+    1. **Domain account details**: 
+        1. **Key vault**: Select the key vault which you created that has the secret username and secret password of the domain account user credentials.
+        1. **Username secret**: Enter the username under the selected key vault.
+        1. **Password secret**: Enter the password under the selected key vault.
     1. **Azure Hybrid Benefit**: Select **Yes** if you are using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview) and it won't apply to existing Windows Servers.
 1. Select **Next**.
 1. Under **Networking**, do the following:
-    1. **Configure virtual networks**:
-        1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server. If you have not created a VNet earlier, select **Create New** if you haven't already created a VNet before. For more information, see VNet creation process.
+    1. **Virtual network**:
+        1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server. 
         1. **Subnet**: Select a subnet that has at least 10 IP addresses to house all the SCOM Managed Instance (preview) components. The minimum address space is 28. The subnet can have existing resources in it, however, don't choose the subnet that houses the SQL managed instance because it won't contain the sufficient number of IP addresses to house the instance.
-    1. **Domain details**:
-        1. **Domain Name**: Enter the name of the domain that is being administered by the Domain Controller.
-        1. **DNS Server IP**: Enter the IP address of the DNS Server that is providing the IP addresses to the resources in the domain mentioned above.
-    1. **Domain account**
-        1. **Username**: Enter the username of the account you created in your active directory as part of the pre-requisites. Same account will be used to join the management servers (created as part of the SCOM Managed Instance (preview)) and SQL MI servers to your domain. For more information, see Domain Account.
-        1. **Password**: Enter the password.
+    1. **SCOM managed instance interface**:
+        1. **Static IP**: Enter the Static IP that you specified for the load-balancer. 
+        1. **DNS name**: Enter the DNS name that you attached to the Static IP above.
+    1. **gMSA details**: 
+        1. **Computer group name**: Enter the name of the computer group that you created post creation of the gMSA account.
+        1. **gMSA account name**: Enter the gMSA account name.
 1. Select **Next**.
-1. Under **Database inputs**, do the following:
+1. Under **Database**, do the following:
     1. **SQL managed instance**:
         1. **Resource Name**: Select the SQL MI resource name for the instance that you would like to associate with this SCOM Managed Instance (preview). Only the SQL MI instance, which has given permissions to the SCOM Managed Instance (preview) should be used here. For more information, see SQL MI creation and permission.
-    1. **User Managed Identity**:
+    1. **User managed Identity**:
         1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to in the SQL MI Instance. For more information, see MSI creation process.
 1. Select **Next**.
 1. Under **Tags**, enter the Name, value, and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
@@ -386,7 +248,6 @@ To create a SCOM Managed Instance (preview), follow the below steps:
     >If the deployment fails, delete the instance and all associated resources, and recreate the instance again. For more information, see delete the instance and its resources.
 
 1. After the deployment is completed, select **Go to resource**. On the created instance page, some of the essential details and instructions to view the post-deployment steps/raise bugs appear.
-1. On the left pane, under **Manage**, select **SCOM infrastructure**. All the essential properties of your instance appear.
 
 ## Next steps
 

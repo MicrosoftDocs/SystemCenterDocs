@@ -5,7 +5,7 @@ description: This article describes about Azure Monitor SCOM Managed Instance (p
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 11/16/2022
+ms.date: 11/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -23,7 +23,7 @@ SCOM Managed Instance (preview) is a cloud-based alternative for SCOM customers.
  
 ## Key benefits
 
-Key facts of the value proposition are as follows:   
+The key benefits of the value proposition are as follows:   
 
 **Preserve investments in SCOM**: SCOM Managed Instance (preview) allows you to preserve your existing SCOM investments. SCOM Managed Instance (preview) is compatible with all existing SCOM MPs and provide a means to migrate MP configurations from the on-premises setup.  
 
@@ -57,6 +57,7 @@ A SCOM Managed Instance (preview) consists of two parts:
 ### A Microsoft-managed part
 
 A Microsoft-managed part consists of Management Servers and the SQL MI hosting an Ops database and Data Warehouse database. The Azure-hosted components can be managed directly from the Azure portal. At the back-end, the components interacts continuously with ARM and the RP to carry out Azure-based operations. 
+
 
 The databases hosted in the SQL MI allows formation and to view reports in Power BI. The Management Servers can be scaled up/down based on your requirements. When you create a new instance, you will get one management server. The number changes depending on how you decide to scale your instance. Furthermore, you can update your management servers at the click of a button.
 
