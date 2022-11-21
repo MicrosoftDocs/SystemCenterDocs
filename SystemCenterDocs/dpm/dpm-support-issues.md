@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 11/16/2022
+ms.date: 11/21/2022
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -272,6 +272,21 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2022](wh
 >We have identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these, and will update this section as soon as we have a fix available. Until then, we are removing the support for backup of deduplicated ReFS volumes from 2019 UR1.
 >
 >DPM 2019 UR1 and later continues to support protection and recovery of normal ReFS volumes.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+| Operating system of protected server | Operating system of DPM server | DPM version | Dedupe support |
+|---|---|---|---|
+| Windows Server 2022 | Windows Server 2022 | DPM 2022 | Y |
+| Windows Server 2019 | Windows Server 2022 | DPM 2022 | Y |
+| Windows Server 2016 | Windows Server 2022 | DPM 2022 | Y\* |
+| Windows Server 2022 | Windows Server 2019 | DPM 2022 | N |
+| Windows Server 2019 | Windows Server 2019 | DPM 2022 | Y |
+| Windows Server 2016 | Windows Server 2019 | DPM 2022 | Y\* |
+
+- **Deduped NTFS volumes in Windows Server 2016 Protected Servers are non-deduplicated during restore. 
 
 ::: moniker-end
 
