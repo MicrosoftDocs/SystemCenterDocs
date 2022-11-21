@@ -26,7 +26,7 @@ System Center - Service Manager provides an integrated platform for automating a
 - The planning section helps you understand the hardware and software requirements as well as software roles you need to prepare for Service Manager before deploying it for use in your organization.
 - The deploy section helps you deploy Service Manager in one of several different scenarios.
 - The upgrade section shows you how to upgrade from older versions of Service Manager.
-- The administrative tasks section provide concepts that are important to Service Manager administrators and it includes procedures that Service Manager administrators must perform to configure Service Manager.
+- The administrative tasks section provides concepts that are important to Service Manager administrators and it includes procedures that Service Manager administrators must perform to configure Service Manager.
 - The day-to-day tasks section provides information about using the Service Manager console for day-to-day tasks that you perform to manage service desk functions for your organization's computer infrastructure.
 - The author section provides an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool, and contains tasks to author and customize management packs, which enable customizations in Service Manager.  
 - The disaster recovery section helps you create a recovery plan for potential software and equipment failures in your Service Manager environment. It also helps you create a deployment strategy that separates the Service Manager and data warehouse management servers from the computers that host their respective databases.
