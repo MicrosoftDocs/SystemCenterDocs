@@ -3,7 +3,7 @@ title: Automate and invoke runbooks from SPF
 description: Provides information about integrating System Center SPF and SMA.
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ms.date: 01/22/2018
 ms.topic: article
 ms.prod: system-center
@@ -18,13 +18,11 @@ ms.technology: service-provider-foundation
 
 ::: moniker-end
 
-
-You can use System Center Service Provider Foundation (SPF) and Service Management Automation (SMA) together to provide automated solutions for your tenants. You can configure events in SPF that the SMA web service will use.
-
+You can use System Center Service Provider Foundation (SPF) and Service Management Automation (SMA) together to provide automated solutions for your tenants. You can configure events in SPF that the SMA web service uses.
 
 ## Automate runbooks
 
-You can automate runbooks using SMA, provided that you have configured SMA to use SPF,using the Set\-SCSPFEventRegisration and Get\-SCSPFEventRegistation cmdlets. This is shown in the following example:  
+You can automate runbooks using SMA, if you have configured SMA to use SPF, using the `Set\-SCSPFEventRegisration and Get\-SCSPFEventRegistation` cmdlets. This is shown in the following example:  
 
 ```powershell  
 PS C:\> # This command sets a runbook to be invoked when the Create event for a new virtual machine is raised.  
@@ -40,17 +38,17 @@ PS C:\> $event_backup = Get-SCSPFEventRegistration -Action "Backup"
 
 You can set a runbook in System Center - Orchestrator, to run whenever a new VM or service is created by remote calls to SPF with System Center Virtual Machine Manager (VMM).
 
-- You can set the runbook to be invoked using the Windows PowerShell T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler  cmdlet.
-- SPF raises internal events to invoke the runbook. The runbook is continuously invoked, as long as the extensible event handler is enabled.
+- You can set the runbook to be invoked using the Windows PowerShell `T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler` cmdlet.
+- SPF raises internal events to invoke the runbook. The runbook is continuously invoked, if the extensible event handler is enabled.
 - SPF won't invoke the runbook if the VM or service was created by other means. For example, using Windows PowerShell cmdlets, or by using the VMM console.
-- To support the infrastructure for invoking a runbook, SPF calls the **Start-SCOrchestratorRunbook** cmdlet internally. It doesn't need to be explicitly called by the user.
-- Ensure you have applied the following before you call the T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler cmdlet:
+- To support the infrastructure for invoking a runbook, SPF calls the `Start-SCOrchestratorRunbook` cmdlet internally. It doesn't need to be explicitly called by the user.
+- Ensure you've applied the following before you call the `T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler` cmdlet:
     - The URL of the Orchestrator web service.
     - The identity settings for the SPF application pools in **Internet Information Services \(IIS\) Manager** must be included in the Orchestrator Users Group.  
 
 Then, invoke a runbook as follows:
 
-1. Call the T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler with following parameters:  
+1. Call the `T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler` with following parameters:  
 
     |Parameter|Value|  
     |-------------|---------|  
@@ -65,8 +63,8 @@ Then, invoke a runbook as follows:
     PS C:\> Set-SCSPFExtensibleEventHandler -EventName "VirtualMachineCreated" -OrchestratorUri "http://east.contoso.com:82/Orchestrator2016/Orchestrator.svc" -RunbookPath "\SPF Runbooks\Extensibility\VM Created" -Enable  
     ```  
 
-2. To determine the setting for the extensible event handler, call the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler cmdlet.  
-3. To disable a runbook from being invoked, repeat the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler command, but without the **Enable** parameter. You can also specify empty strings for the **OrchestratorUrl** and **Runbookpath** parameters, as shown in the following example:  
+2. To determine the setting for the extensible event handler, call the `T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler` cmdlet.  
+3. To disable a runbook from being invoked, repeat the `T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler` command, but without the **Enable** parameter. You can also specify empty strings for the **OrchestratorUrl** and **Runbookpath** parameters, as shown in the following example:  
 
     ```  
     PS C:\> Set-SCSPFExtensibleEventHandler -EventName "VirtualMachineCreated" -OrchestratorUri "" -RunbookPath ""  
