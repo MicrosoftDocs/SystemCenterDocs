@@ -2,7 +2,7 @@
 title: Orchestrator Integration Packs
 description: This article provides the list of integration packs for Orchestrator.
 ms.custom: ""
-ms.date: 2/1/2018
+ms.date: 11/21/2022
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -13,7 +13,7 @@ ms.assetid:
 caps.latest.revision: 12
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 # List of Integration Packs for Orchestrator
 
@@ -23,6 +23,7 @@ manager: evansma
 
 ::: moniker-end
 
+::: moniker range="<=sc-orch-2019"
 
 The following is a list of the available integration packs and the information for each.  
 
@@ -59,3 +60,31 @@ The following is a list of the available integration packs and the information f
  [Service Manager](integration-pack-for-service-manager.md)  
 
  [Virtual Machine Manager](integration-pack-for-virtual-machine-manager.md)  
+
+::: moniker-end
+
+::: moniker range="sc-orch-2022"
+
+The following is a list of the available integration packs and the information for each.  
+
+ [Active Directory](active-directory-integration-pack.md)    
+
+ [Exchange Administrator](exchange-admin-integration-pack.md)  
+
+ [Exchange Users](exchange-users-integration-pack.md)   
+
+ [REST](representational-state-transfer-rest-integration-pack.md)  
+
+ [Share Point](integration-pack-for-microsoft-sharepoint.md)
+
+ [Data Protection Manager](integration-pack-for-data-protection-manager.md)  
+
+ [Configuration Manager](configuration-manager-integration-pack.md)  
+
+ [Operations Manager](integration-pack-for-operations-manager.md)  
+
+ [Service Manager](integration-pack-for-service-manager.md)  
+
+ [Virtual Machine Manager](integration-pack-for-virtual-machine-manager.md)  
+
+::: moniker-end
