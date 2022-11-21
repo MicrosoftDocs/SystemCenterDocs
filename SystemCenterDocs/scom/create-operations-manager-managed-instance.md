@@ -117,13 +117,13 @@ Below are the recommendations while you create a SQL MI instance:
 - **Authentication Method**: You can select **SQL Authentication**. In the credentials, enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
 - **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the SCOM Managed Instance (preview) that you create in future. Thus, choose a VNet that you will eventually use for your SCOM Managed Instance (preview), or if you choose a different VNet, ensure it has connectivity to the SCOM Managed Instance (preview) VNet. 
 
-In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see Determine required subnet size and range for Azure SQL Managed Instance.
+    In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see Determine required subnet size and range for Azure SQL Managed Instance.
 - **Connection Type**: By default, connection type is Proxy.
 - **Public Endpoint**: This can either be *Enabled* or *Disabled*. To leverage the Power BI reporting, you need to enable the Public Endpoint. 
 
-If the SQL MI VNet is different from the SCOM MI VNet, 
-   - If you enable it, you have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see Configure public endpoint in Azure SQL Managed Instance. 
-   - If you disable it, you have to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM managed instance (preview) are present.
+     If the SQL MI VNet is different from the SCOM MI VNet, 
+       - If you enable it, you have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager Vnet/Subnet to port 3342. For more information, see Configure public endpoint in Azure SQL Managed Instance. 
+       - If you disable it, you have to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM managed instance (preview) are present.
 	
 For the rest of the settings in the other tabs, you can leave them as default or change as per your requirements.
 
@@ -134,7 +134,7 @@ After the creation of SQL MI, you need to provide permission to the SCOM Managed
 
 1. Open SQL MI, and select **Access Control (IAM)**. In the top menu, select **+Add** > **Add role assignment** 
      :::image type="Access control" source="media/create-operations-manager-managed-instance/access-control.png" alt-text="Screenshot of access control.":::
-1. In **Add role assignment page, do the following:
+1. In **Add role assignment** page, do the following:
     - **Role**: Select **Reader** from the dropdown.
     - **Assign access to**: Select **User, group, or service principal** from the dropdown.
     - **Select**: Enter **Microsoft.SCOM**
@@ -171,7 +171,7 @@ Store the domain account you create in Active Directory in a Key vault account f
 2.	Select **+ Create**. 
      :::image type="Key vault" source="media/create-operations-manager-managed-instance/key-vaults.png" alt-text="Screenshot of Key vaults.":::
     
-    In the **Basics**, do the following:
+3. In the **Basics**, do the following:
     - Project details:
         - Subscription:
         - Resource group:
@@ -184,8 +184,8 @@ Store the domain account you create in Active Directory in a Key vault account f
         - Days to retain deleted vaults: Can be a value from 7 to 90. 
         - Purge protection: We recommend enabling this feature to have a mandatory retention period.
              :::image type="create a key vault" source="media/create-operations-manager-managed-instance/create-a-key-vault.png" alt-text="Screenshot of create a key vault.":::
-3. Select **Next**.
-4. In the **Access Policy**, do the following:
+4. Select **Next**.
+5. In the **Access Policy**, do the following:
     - **Access configuration**: Select **Vault access policy**.
     - **Resource access**: Don't select any of the options.
     - **Access policies**: Select **+ Create** to create a new access policy. **Create an access policy** page opens on the right pane. 
@@ -223,6 +223,8 @@ Store the domain account you create in Active Directory in a Key vault account f
     - **Secret value**: Secret value will be the credential values for the specific item. For username, it will be the the domain account username and for password, it will be the domain account password.
     - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**,**Enabled**, **Tags** as default and select **Create** to create the secret.
          :::image type="Create a secret" source="media/create-operations-manager-managed-instance/create-a-secret.png" alt-text="Screenshot of create a secret.":::
+
+--- 
 
 ## Create a SCOM Managed Instance (preview)
 
