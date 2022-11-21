@@ -4,7 +4,7 @@ description: include file to provide information about how to upgrade to System 
 author: jyothisuri
 ms.author: jsuri
 manager:  evansma
-ms.date: 08/12/22
+ms.date: 11/18/2022
 ms.topic: include
 ms.prod:  system center
 ms.technology:  service-provider-foundation
@@ -21,7 +21,7 @@ The following sections describe the procedures required to upgrade from SPF 2019
     - SPF 2019 installed.
 - VMM:
     - VMM 2019 installed
-- Windows Azure Pack - Install [update rollup 12](https://support.microsoft.com/help/4043909/update-rollup-12-for-windows-azure-pack), or later.
+- Microsoft Azure Pack - Install [update rollup 12](https://support.microsoft.com/help/4043909/update-rollup-12-for-windows-azure-pack), or later.
 - VMM management console - The machine running the VMM 2019 management console should have the latest VMM updates installed.
 
 
@@ -29,10 +29,10 @@ The following sections describe the procedures required to upgrade from SPF 2019
 The upgrade instructions in this article assume the following scenario:
 
 - SPF and VMM are running on System Center 2019.
-- We highly recommend that you reuse the current SPF server name to simplify the seamless integration into your existing Windows Azure Pack deployment.
+- We highly recommend that you reuse the current SPF server name to simplify the seamless integration into your existing Microsoft Azure Pack deployment.
 - The VMM console is installed on a separate computer.
 - The upgrade uses the existing SPF server name.
-- These upgrade instructions assume that the VMM 2022 upgrade has already been completed, and that the necessary backups of the current Windows Azure Pack environment have been performed.
+- These upgrade instructions assume that the VMM 2022 upgrade has already been completed, and that the necessary backups of the current Microsoft Azure Pack environment have been performed.
 
 ## Upgrade order
 
@@ -44,8 +44,8 @@ Here's the recommended upgrade order for the above scenario:
 
 ## Before you start
 
-1. Make sure Windows Azure Pack, SPF, and VMM are all running the required updates.
-2. We recommend that you shut down VMM and Windows Azure Pack servers, removing all database activity.
+1. Make sure Microsoft Azure Pack, SPF, and VMM are all running the required updates.
+2. We recommend that you shut down VMM and Microsoft Azure Pack servers, removing all database activity.
 3. Verify SPF [system requirements](../spf/system-requirements-spf.md). Note that SPF must run on Windows Server 2022 - Core or Desktop experience.
 4. Verify VMM [console requirements](../vmm/system-requirements.md?preserve-view=true&view=sc-vmm-1801#vmm-console-operating-system).
 
@@ -78,9 +78,9 @@ Prepare the SPF 2022 computer on which you want to run the upgrade.
 
 ### Set up the SPF 2022 computer
 
-1. Rename the VM  you set up. Use the original name of the SPF computer. So change the VM name from **SERVER-SPF-UPGRADE** to **SERVER-SPF-01**.
+1. Rename the VM  you set up. Use the original name of the SPF computer. So, change the VM name from **SERVER-SPF-UPGRADE** to **SERVER-SPF-01**.
 2. Join the VM to the domain.
-3. Install the [VMM console](../vmm/install-console.md).For a core installation you can install from the [command line](../vmm/install-console.md#install-the-console-from-the-command-prompt), or set up from the user interface and change to Core later.
+3. Install the [VMM console](../vmm/install-console.md). For a core installation you can install from the [command line](../vmm/install-console.md#install-the-console-from-the-command-prompt), or set up from the user interface and change to Core later.
 4. Install [SPF 2022](../spf/deploy-spf.md), using the existing SQL Server database name during setup.
 
 
@@ -89,12 +89,22 @@ Prepare the SPF 2022 computer on which you want to run the upgrade.
 2. If you do use a self-signed certificate:
     - It should be used only for testing purposes.
     - The FQDN should be specified for the certification path instead of "localhost".
-    - It should be located in the personal or web hosting store.
+    - It should be in the personal or web hosting store.
 
-## Test Windows Azure Pack
+## Test Microsoft Azure Pack
 
 Test everything's working as follows:
 
 1. Start VMM 2022.
-2. In the Windows Azure Pack  Admin portal, check in this order: 1) VMs; 2) Gallery items; 3) Templates; 4) SPF configuration settings. Make sure everything's working as expected.
-3. In the Windows Azure Pack Tenant portal, check in this order: 1) Deployment settings; 2) VMs; 3) Plans; 4) Deployment options. Make sure everything's working as expected.
+2. In the Microsoft Azure Pack  Admin portal, check in this order: 
+    1. VMs
+    1. Gallery items
+    1. Templates
+    1. SPF configuration settings. 
+   Ensure everything's working as expected.
+3. In the Microsoft Azure Pack Tenant portal, check in this order: 
+    1. Deployment settings
+    1. VMs 
+    1. Plans
+    1. Deployment options. 
+   Ensure everything's working as expected.

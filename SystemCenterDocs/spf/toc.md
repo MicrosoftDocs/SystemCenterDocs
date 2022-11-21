@@ -11,7 +11,7 @@
 ### [Upgrade Service Provider Foundation](upgrade-spf.md)
 ### [Deploy SPF](deploy-spf.md)
 ## Manage
-### [Register SPF in Windows Azure Pack](manage-register-spf.md)
+### [Register SPF in Microsoft Azure Pack](manage-register-spf.md)
 ### [Manage tenants and user roles](manage-tenants.md)
 ### [Manage usage metering](manage-usage-metering.md)
 ### [Manage gallery resources](manage-gallery.md)
