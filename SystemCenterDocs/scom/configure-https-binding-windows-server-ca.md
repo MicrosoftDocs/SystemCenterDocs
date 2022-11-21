@@ -5,7 +5,7 @@ description: This article describes How to configure an HTTPS binding for a Wind
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 06/22/2022
+ms.date: 11/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -20,32 +20,32 @@ If you are setting up a new certification authority (CA) for the first time for 
 
 To configure an HTTPS binding, do the following:
 
-1. On the computer hosting your CA, on the Windows desktop, select **Start** > **Programs** > **Administrative Tools**, and  then select **Internet Information Services (IIS) Manager**.
+1. On the computer hosting your CA, on the Windows desktop, click **Start** > **Programs** > **Administrative Tools**, and  then click **Internet Information Services (IIS) Manager**.
 
-2. In the **Internet Information Services (IIS) Manager** dialog, **Connections** pane, expand your computer name, expand **Sites**, and then select **Default Web Site**.
+2. In the **Internet Information Services (IIS) Manager** dialog, **Connections** pane, expand your computer name, expand **Sites**, and then click **Default Web Site**.
 
-3. On the **Actions** pane, select **Bindings**.
+3. On the **Actions** pane, click **Bindings**.
 
-4. In the **Site Bindings** dialog, select **Add**.
+4. In the **Site Bindings** dialog, click **Add**.
 
-5. In the **Add Site Binding** dialog, on the **Type** menu, select **https**.
+5. In the **Add Site Binding** dialog, on the **Type** menu, click **https**.
 
-6. In the **SSL Certificate** list, select the entry that matches the name of your computer, and then select **OK**.
+6. In the **SSL Certificate** list, click the entry that matches the name of your computer, and then click **OK**.
 
-7. In the **Site Bindings** dialog, select **Close**.
+7. In the **Site Bindings** dialog, click **Close**.
 
-8. On the **Connections** pane, under **Default Web Site**, select **CertSrv**.
+8. On the **Connections** pane, under **Default Web Site**, click **CertSrv**.
 
    If the **CertServ** page is missing under Default Web Site, verify these Active Directory Certificate Services features are installed and configured on the CA server: 
 
    - Certificate Enrollment Web Services 
    - Certificate Authority Web Enrollment 
 
-9. On the **/CertSrv Home** page, select and hold **SSL Settings**, and then select **Open Feature**.
+9. On the **/CertSrv Home** page, right click **SSL Settings**, and then click **Open Feature**.
 
 10. On the **SSL Settings** pane, check the **Require SSL** box.
 
-11. On the **Actions** pane, select **Apply**, and close Internet Information Services (IIS) Manager.
+11. On the **Actions** pane, click **Apply**, and close Internet Information Services (IIS) Manager.
 
 ## Next steps
 
