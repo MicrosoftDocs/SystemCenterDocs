@@ -4,7 +4,7 @@ title: Release notes for Service Provider Foundation
 description: This article details the known issues and issues fixed in Service Provider Foundation
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: mkluck
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: system-center
