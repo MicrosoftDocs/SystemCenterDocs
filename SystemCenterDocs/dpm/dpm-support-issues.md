@@ -222,8 +222,13 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2022](wh
 ## <a name="BKMK_Dedup"></a>Deduplication issues
 
 ### Deduplicated volumes support
+
+::: moniker range="<=sc-dpm-2019"
+
   >[!NOTE]
   >Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to backup the volume with deduplication enabled.
+
+::: moniker-end
 
 **For NTFS Volumes:**
 
@@ -276,6 +281,10 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2022](wh
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
+
+  >[!NOTE]
+  >- Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to backup the volume with deduplication enabled.
+  >- We have identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these, and will update this section as soon as we have a fix available.
 
 | Operating system of protected server | Operating system of DPM server | DPM version | Dedupe support |
 |---|---|---|---|
