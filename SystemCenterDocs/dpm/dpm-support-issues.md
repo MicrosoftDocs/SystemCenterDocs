@@ -286,7 +286,7 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2022](wh
 | Windows Server 2019 | Windows Server 2019 | DPM 2022 | Y |
 | Windows Server 2016 | Windows Server 2019 | DPM 2022 | Y\* |
 
-- **Deduped NTFS volumes in Windows Server 2016 Protected Servers are non-deduplicated during restore. 
+- *Deduped NTFS volumes in Windows Server 2016 Protected Servers are non-deduplicated during restore. 
 
 ::: moniker-end
 
