@@ -40,22 +40,26 @@ The following are the prerequisites before you create a SCOM Managed Instance (p
 ## Configure one domain account in Active Directory
 
 - Create one domain account in your Active Directory. The domain account is a typical Active Directory account (it can be a non-admin account). This account will be used to join the SCOM Management Servers to your existing domain.
+     :::image type="Active directory users" source="media/create-operations-manager-managed-instance/active-directory-users.png" alt-text="Screenshot of Active directory users.":::
 - Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain.
 - You can use an existing domain account if it has these [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain).
 
 ## Create and configure a computer group 
 
 - Create a computer group in your active directory. For more information, see [Create a group account in active directory](/windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory). All the management servers you create will be a part of this group so that all the members of the group can retrieve gMSA account credentials (created in future steps).  
+     :::image type="Active directory computers" source="media/create-operations-manager-managed-instance/active-directory-computers.png" alt-text="Screenshot of Active directory computers.":::
 - To manage this computer group, provide permissions to the domain account you created in the above step. Follow the below steps to provide permissions:
     1. Select the group properties and select **Managed By**.
         1. **Name**: Enter the name of the domain account.
         1. Select the checkbox **Manager can update membership list**. 
+            :::image type="Server group properties" source="media/create-operations-manager-managed-instance/server-group-properties.png" alt-text="Screenshot of Server group properties.":::
 
 ## Create a static IP and configure the DNS name
 
 - For all the SCOM components, to communicate with the load-balancer that will be created by the SCOM Managed Instance (preview) service, you need a static IP and DNS name for the load-balancer front-end configuration. For more information, see \<link\>. 
 - Ensure that the static IP is in the subnet that was created during VNet creation and it will be used during the creation of an instance. 
 - Create a DNS name (as per your organization policy) for the static IP.
+     :::image type="DNS manager" source="media/create-operations-manager-managed-instance/dns-manager.png" alt-text="Screenshot of DNS manager.":::
 
 ## Create and configure a gMSA account 
 
@@ -81,7 +85,9 @@ The Managed Service Identity provide an identity for applications to use when co
 >Ensure you are a contributor in the subscription you create the MSI.
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Managed Identities**. Managed Identities page opens.
+     :::image type="Managed Identity in Azure Portal" source="media/create-operations-manager-managed-instance/azure-portal-managed-identity.png" alt-text="Screenshot of Managed Identity in Azure portal.":::
 1. Select **+ Create**. **Create User Assigned Managed Identity** page opens.
+     :::image type="Managed Identity" source="media/create-operations-manager-managed-instance/managed-identities.png" alt-text="Screenshot of Managed Identity.":::
 1. Under **Basics**, do the following:
     1. **Project details**:
         1. **Subscription**: Select the Azure subscription in which you want to create SCOM Managed Instance (preview).
@@ -89,10 +95,14 @@ The Managed Service Identity provide an identity for applications to use when co
     1. **Instance details**:
         1. **Region**: Select the region in which you want to create SCOM Managed Instance (preview).
         1. **Name**: Enter the desired name.
+         :::image type="Create user assigned managed identity" source="media/create-operations-manager-managed-instance/create-user-assigned-managed-identity.png" alt-text="Screenshot of Create user assigned managed identity.":::
 1. Select **Next : Tags >**.
 1. Under **Tags**, enter the Name, value, and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
 1. Select **Next : Review + Create >**.
-1. Under **Review + create**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, you can access the resource and view its details.
+1. Under **Review + create**, review all the inputs given so far and select **Create**. 
+     :::image type="Managed identity review" source="media/create-operations-manager-managed-instance/managed-identity-review.png" alt-text="Screenshot of Managed identity review.":::
+Your deployment will now be created on Azure, you can access the resource and view its details.
+     :::image type="Managed identity overview" source="media/create-operations-manager-managed-instance/overview-managed-identity.png" alt-text="Screenshot of Managed identity overview.":::
 
 ## Create and configure an SQL MI instance
 
@@ -122,11 +132,14 @@ For the rest of the settings in the other tabs, you can leave them as default or
 
 After the creation of SQL MI, you need to provide permission to the SCOM Managed Instance (preview) Resource Provider to access this SQL MI instance. To provide the permissions, do the following:
 
-1. Open SQL MI, and select **Access Control (IAM)**. In the top menu, select **+Add** > **Add role assignment** and do the following:
+1. Open SQL MI, and select **Access Control (IAM)**. In the top menu, select **+Add** > **Add role assignment** 
+     :::image type="Access control" source="media/create-operations-manager-managed-instance/access-control.png" alt-text="Screenshot of access control.":::
+1. In **Add role assignment page, do the following:
     - **Role**: Select **Reader** from the dropdown.
     - **Assign access to**: Select **User, group, or service principal** from the dropdown.
     - **Select**: Enter **Microsoft.SCOM**
-2. Select **Save**.
+         :::image type="Add role assignment" source="media/create-operations-manager-managed-instance/add-role-assignment.png" alt-text="Screenshot of Add role assignment.":::
+1. Select **Save**.
 
 ### Set the Active Directory Admin value in the SQL MI Instance
 
@@ -137,10 +150,13 @@ For more information, see Directory Readers role in Azure Active Directory for A
 To perform the below steps, you need to be the Global Admin/Privileged Role Admin of the subscription:
 
 1.	Open the SQL MI, under **Settings**, select **Active Directory admin**.
+     :::image type="Active directory admin" source="media/create-operations-manager-managed-instance/active-directory-admin.png" alt-text="Screenshot of Active directory admin.":::
 
 2.	Select **Set admin**, search for your MSI (the same MSI that you provided during the SCOM Managed Instance (preview) creation flow). You will find the admin added to the SQL MI.
+     :::image type="Azure Active directory admin" source="media/create-operations-manager-managed-instance/azure-active-directory.png" alt-text="Screenshot of Azure Active directory admin.":::
 
 3.	If you get error after you add managed identity account, it indicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, else your instance creation will fails.
+     :::image type="SQL Active directory admin" source="media/create-operations-manager-managed-instance/sql-active-directory-admin.png" alt-text="Screenshot of SQL Active directory admin.":::
 
 ## Create a key vault and add credentials as a secret in the Key vault  
 
@@ -150,8 +166,12 @@ Store the domain account you create in Active Directory in a Key vault account f
 > Ensure you are a contributor in the subscription you create the MSI.
 
 1.	Open Azure portal and search for **Key vaults**. Key vaults page opens.
+     :::image type="Key vaults in portal" source="media/create-operations-manager-managed-instance/azure-portal-key-vaults.png" alt-text="Screenshot of Key vaults in portal.":::
 
-2.	Select **+ Create**. In the **Basics**, do the following:
+2.	Select **+ Create**. 
+     :::image type="Key vault" source="media/create-operations-manager-managed-instance/key-vaults.png" alt-text="Screenshot of Key vaults.":::
+    
+    In the **Basics**, do the following:
     - Project details:
         - Subscription:
         - Resource group:
@@ -162,36 +182,47 @@ Store the domain account you create in Active Directory in a Key vault account f
     - Recovery options:
         - Soft-delete:
         - Days to retain deleted vaults: Can be a value from 7 to 90. 
-        - Purge protection: We recommend enabling this feature to have a mandatory retention period
+        - Purge protection: We recommend enabling this feature to have a mandatory retention period.
+             :::image type="create a key vault" source="media/create-operations-manager-managed-instance/create-a-key-vault.png" alt-text="Screenshot of create a key vault.":::
 3. Select **Next**.
 4. In the **Access Policy**, do the following:
     - **Access configuration**: Select **Vault access policy**.
     - **Resource access**: Don't select any of the options.
     - **Access policies**: Select **+ Create** to create a new access policy. **Create an access policy** page opens on the right pane. 
+         :::image type="Access policies" source="media/create-operations-manager-managed-instance/access-policies.png" alt-text="Screenshot of Access policies.":::
         1. In **Permissions** > **Secret permissions**, select **Get** and **List**. 
+             :::image type="Create an Access policy" source="media/create-operations-manager-managed-instance/create-an-access-policy.png" alt-text="Screenshot of Create an Access policy.":::
         1. Select **Next**.
         1. In **Principal**, search for the MSI you created in the previous step and select.
+             :::image type="Access policies principal" source="media/create-operations-manager-managed-instance/principal.png" alt-text="Screenshot of Access policies principal.":::
         1. In **Review + create**, review the selections and select **Create**. 
-5. Select the access policy created and then select **Next**.
-6. In **Networking**, do the following:
+             :::image type="Access policy review" source="media/create-operations-manager-managed-instance/access-policy-review.png" alt-text="Screenshot of Access policy review.":::
+1. Select the access policy created and then select **Next**.
+     :::image type="Access policy" source="media/create-operations-manager-managed-instance/access-policy.png" alt-text="Screenshot of Access policy.":::
+1. In **Networking**, do the following:
     - Select **Enable public access**.
     - **Public Access**
         - **Allow access from**: Select **All networks**.
-7. Select **Next**.
-8. In **Tags**, select tags if required and select **Next**.
-9. In **Review + create**, review the selections and select **Create** to create the Key vault.
-10. On the left pane, under **Objects**, select **Secrets**. 
+             :::image type="Networking tab" source="media/create-operations-manager-managed-instance/Networking.png" alt-text="Screenshot of Networking tab.":::
+1. Select **Next**.
+1. In **Tags**, select tags if required and select **Next**.
+1. In **Review + create**, review the selections and select **Create** to create the Key vault.
+     :::image type="Review tab" source="media/create-operations-manager-managed-instance/review.png" alt-text="Screenshot of review tab.":::
+1. On the left pane, under **Objects**, select **Secrets**. 
     
      >[!Note]
      > You must create two secrets.
      > - Username
      > - Password. 
 
-1. Select **+ Generate/Import**. Do the following in **Create a secret** page.
+1. Select **+ Generate/Import**. 
+     :::image type="Secrets" source="media/create-operations-manager-managed-instance/secrets.png" alt-text="Screenshot of secrets.":::
+1. Do the following in **Create a secret** page.
     - **Upload options**: Select **Manual**.
     - **Name**: Enter the name of secret. For example, you can use *Username* for username secret and *Password* for password secret.
     - **Secret value**: Secret value will be the credential values for the specific item. For username, it will be the the domain account username and for password, it will be the domain account password.
     - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**,**Enabled**, **Tags** as default and select **Create** to create the secret.
+         :::image type="Create a secret" source="media/create-operations-manager-managed-instance/create-a-secret.png" alt-text="Screenshot of create a secret.":::
 
 ## Create a SCOM Managed Instance (preview)
 
