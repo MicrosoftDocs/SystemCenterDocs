@@ -19,17 +19,17 @@ This article provides you a quick service overview of Azure Monitor SCOM Managed
 
 With the integration of SCOM Managed Instance (preview), System Center Operations Manager functionality is now available on Azure. 
 
-SCOM Managed Instance (preview) is a cloud-based alternative for SCOM customers. SCOM Managed Instance (preview) provides you with continues monitoring of your workloads with minimal infrastructure management, through migrations or after you enable Azure connectivity for your On-premises environments. 
+SCOM Managed Instance (preview) is a cloud-based alternative for SCOM customers. SCOM Managed Instance (preview) provides you with continuous monitoring of your workloads with minimal infrastructure management, through migrations or after you enable Azure connectivity for your On-premises environments. 
  
 ## Key benefits
 
-The key benefits of the value proposition are as follows:   
+The key benefits of SCOM Managed Instance (preview) are:
 
-**Preserve investments in SCOM**: SCOM Managed Instance (preview) allows you to preserve your existing SCOM investments. SCOM Managed Instance (preview) is compatible with all existing SCOM MPs and provide a means to migrate MP configurations from the on-premises setup.  
+**Preserve investments in SCOM**: Allows you to preserve your existing SCOM investments. SCOM Managed Instance (preview) is compatible with all existing SCOM Management Packs and provide a means to migrate Management Pack configurations from the on-premises setup.  
 
-- **Simplify SCOM-infrastructure management**: SCOM Managed Instance (preview) is Microsoft-managed. All the cloud connected SCOM components are managed by Microsoft, removes the responsibility of hardware/software updates and security patches.  
+- **Simplify SCOM-infrastructure management**: All the cloud connected SCOM components are managed by Microsoft, removes the responsibility of hardware/software updates and security patches.  
 
-- **Monitor continuously through migration**: SCOM Managed Instance (preview) won't cause disruptions in monitoring while you migrate infrastructure or workloads from on-premises to the cloud. As you migrate from one UR to the next, you can migrate from your existing SCOM setup.
+- **Monitor continuously through migration**: Won't cause disruptions in monitoring while you migrate infrastructure or workloads from on-premises to the cloud. As you migrate from one UR to the next, you can migrate from your existing SCOM setup.
 
 - **Monitor workloads everywhere**:  SCOM Managed Instance (preview) is hosted in Azure with the capability of monitoring workloads running wherever they are (in Azure or on-premises) without the need to modification.     
 
@@ -43,7 +43,7 @@ SCOM Managed Instance (preview) functionality allows you to:
 - Monitor workloads (wherever they're located) using the Ops and Web Console, and while using your existing management packs.
 - Incur zero database maintenance (Ops database and Data warehouse database) because of the offloading of database management to SQL Managed Instance (SQL MI).
 - Scale your instance immediately without the need to add/delete physical servers/VMs.
-- View your reports in Power BI.
+- View your SCOM Managed Instance (preview) reports in Power BI.
 - Patch your instance in one-click with the latest bug fixes and features. 
 
 ## Architecture
