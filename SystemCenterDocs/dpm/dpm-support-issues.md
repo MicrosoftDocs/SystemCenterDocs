@@ -1,15 +1,16 @@
 ---
 description: This article explains the supported deployment options for DPM.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 08/05/2021
+ms.date: 11/21/2022
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
+ms.custom: engagement-fy23
 ---
 
 # What's supported and what isn't for DPM?
@@ -26,6 +27,7 @@ This topic summarizes some of the common support information you might need when
 ## <a name="BKMK_Install"></a>Installation and deployment issues
 
 ### DPM deployment options
+
 **Issue**: DPM can be installed in physical and virtual environments.
 
 **More information**: DPM can be installed as follows:
@@ -34,27 +36,44 @@ This topic summarizes some of the common support information you might need when
 
 -   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
--   As an Azure virtual machine - From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+::: moniker range="<=sc-dpm-2019"
 
--   As a Windows virtual machine in VMware - From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
+-   As an Azure virtual machine - You can install DPM- 2019 as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
+-   As a Windows virtual machine in VMware - You can install DPM 2019 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+-   As an Azure virtual machine - You can install DPM 2022 as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+
+-   As a Windows virtual machine in VMware - You can install DPM 2022 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
+
+::: moniker-end
 
 ### Sharing a library between different DPM versions isn't supported
-**Issue**: Different versions of DPM (for example, DPM 2012 R2 and DPM 2016) can't function as clients sharing the same library.
+
+**Issue**: Different versions of DPM (for example, DPM 2019 and DPM 2022) can't function as clients sharing the same library.
 
 **Workaround**: None. All DPM servers sharing a library must be running the same version of DPM.
+
+::: moniker range="<=sc-dpm-2016"
 
 ### Upgrading System Center 2010 directly to System Center 2016 isn't supported
 **Issue**: Upgrade isn't supported.
 
 **Workaround**: You'll need to upgrade to DPM 2012 R2 first.
 
-### DPM doesn't run on the Turkish language version of Windows 2012 operating systems
+::: moniker-end
+
+### DPM doesn't run on the Turkish language version of Windows Server operating systems
 **Issue**: No language support
 
 **Workaround**: None
 
-### DPM 2010 and later versions can't run on a server running a 32-bit operating system
+### DPM can't run on a server running a 32-bit operating system
+
 **Issue**: Operating system limitation.
 
 **Workaround**: Install on 64-bit only. For a full list of system requirements, see [Preparing your environment for System Center Data Protection Manager](prepare-environment-for-dpm.md).
@@ -89,11 +108,15 @@ This topic summarizes some of the common support information you might need when
 
 **Workaround**: If you want to use a remote instance of SQL Server as your DPM database, ensure that the SQL Server instance isn't running on a domain controller.
 
+::: moniker range="<=sc-dpm-2016"
+
 ### You cannot install DPM 2016 on SQL 2016 SP1 (or a later release)
+
 **Issue**: Installation on SQL 2016 SP1 (or a later release) is not supported.
 
 **Workaround**: None.
 
+::: moniker-end
 
 ### Moving protected servers with DPM secondary servers
 Moving protected servers between DPM servers that are under secondary protection isn't supported. To illustrate this, we have the following:
@@ -147,9 +170,30 @@ Both scenarios are unsupported. You can only select one of the following options
 **Workaround**: None
 
 ### Virtual tape library support
+
+::: moniker range="<=sc-dpm-2016"
+
 **Issue**: Are virtual tape libraries supported?
 
 **Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries for System Center DPM 2012 and later](https://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+**Issue**: Are virtual tape libraries supported?
+
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2019 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries](/SystemCenterDocs/dpm/dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+**Issue**: Are virtual tape libraries supported?
+
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2022 with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries](/SystemCenterDocs/dpm/dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+
+::: moniker-end
 
 ### USB or removable drives can't be used in the DPM storage pool
 **Issue**: USB and removable storage such as Firewire.
@@ -159,7 +203,13 @@ Both scenarios are unsupported. You can only select one of the following options
 ### Data on CSVs
 **Issue**: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protecting other workloads hosted on CSVs isn't supported.
 
-Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2](what-s-new-in-dpm.md) and later.
+::: moniker range="<=sc-dpm-2019"
+Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2](/SystemCenterDocs/dpm/what-s-new-in-dpm.md) and later.
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+Protection of SQL server database, stored on CSV is supported with [DPM 2022](what-s-new-in-dpm.md).
+::: moniker-end
 
 **Workaround**: None.
 
@@ -172,8 +222,13 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 ## <a name="BKMK_Dedup"></a>Deduplication issues
 
 ### Deduplicated volumes support
+
+::: moniker range="<=sc-dpm-2019"
+
   >[!NOTE]
   >Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to backup the volume with deduplication enabled.
+
+::: moniker-end
 
 **For NTFS Volumes:**
 
@@ -225,6 +280,25 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2
 
 ::: moniker-end
 
+::: moniker range="sc-dpm-2022"
+
+  >[!NOTE]
+  >- Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to backup the volume with deduplication enabled.
+  >- We have identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these, and will update this section as soon as we have a fix available.
+
+| Operating system of protected server | Operating system of DPM server | DPM version | Dedupe support |
+|---|---|---|---|
+| Windows Server 2022 | Windows Server 2022 | DPM 2022 | Y |
+| Windows Server 2019 | Windows Server 2022 | DPM 2022 | Y |
+| Windows Server 2016 | Windows Server 2022 | DPM 2022 | Y\* |
+| Windows Server 2022 | Windows Server 2019 | DPM 2022 | N |
+| Windows Server 2019 | Windows Server 2019 | DPM 2022 | Y |
+| Windows Server 2016 | Windows Server 2019 | DPM 2022 | Y\* |
+
+- *Deduped NTFS volumes in Windows Server 2016 Protected Servers are non-deduplicated during restore. 
+
+::: moniker-end
+
 ### Windows deduplication isn't always supported on volumes hosting .VHD or .VHDX files
 **Issue**: Dedupe support
 
@@ -240,9 +314,11 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ### Item-level recovery not supported
 **Issue**: If you're protecting virtual machines that contain deduped volumes, you can't perform Item level recovery (ILR) from those VHD/VHDX files.
 
-**Workaround**: Restore the .VHD/VHDX file that contains the deduped volume to a Windows 2012 R2 server that has the Data Deduplication role installed. Mount the .VHD file in disk management and copy out the desired files.
+**Workaround**: Restore the .VHD/VHDX file that contains the deduped volume to a Windows Server that has the Data Deduplication role installed. Mount the .VHD file in disk management and copy out the desired files.
 
 ## <a name="BKMK_ClientServer"></a>Client and server protection issues
+
+::: moniker range="<=sc-dpm-2016"
 
 ### Support parameters for protecting computers running client operating systems with DPM
 **Issue**: The following protection scenarios are supported:
@@ -257,7 +333,34 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 **Workaround**: Ensure you're running the right version of DPM.
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+### Support parameters for protecting computers running client operating systems with DPM
+**Issue**: The following protection scenarios are supported:
+
+-  Windows 10 clients can be protected with DPM 2019.
+   >[!NOTE]
+   > Windows 10 on ARM client is not supported for protection using DPM.
+
+**Workaround**: Ensure you're running the right version of DPM.
+
+::: moniker-end
+
+
+::: moniker range="sc-dpm-2022"
+
+### Support parameters for protecting computers running client operating systems with DPM
+**Issue**: Support for backing up Windows clients with DPM. 
+
+**Workaround**: DPM 2022 can back up Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md). Review the full list of supported workloads here
+
+::: moniker-end
+
 ### Support for protecting computers running server operating systems with DPM
+
+::: moniker range="<=sc-dpm-2016"
 **Issue**: The following protection scenarios are supported:
 
 -   Windows Server 2012 R2 can be protected with DPM 2012 R2 and later.
@@ -270,6 +373,23 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 **Workaround**: Ensure you're running the right version of DPM.
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+**Issue**: Support for backing up Windows Server with DPM.
+
+**Workaround**: DPM 2019 can back up Windows Server 2019 and 2016. For information about supported workloads, see [What can DPM back up](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+**Issue**: Support for backing up Windows Server with DPM.
+
+**Workaround**: DPM 2022 can back up Windows Server 2022, 2019 and 2016. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).
+
+::: moniker-end
+
 ### DPM can't protect SOFS shares
 **Issue**: DPM can't protect shares on SOFS.
 
@@ -278,11 +398,25 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ## File server issues
 
+::: moniker range="<=sc-dpm-2019"
+
 ### File Server end-user recovery (EUR) is not available when using Modern Backup Storage (MBS)
 
 **Description**: If you use Modern Backup Storage (MBS) with DPM 2016 or later, File Server end-user recovery is not available.
 
 **Workaround**: None. File Server EUR is not supported when using MBS.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+### File Server end-user recovery (EUR) is not available when using Modern Backup Storage (MBS)
+
+**Description**: File Server end-user recovery is not available with DPM 2022 since it uses Modern Backup Storage.
+
+**Workaround**: None. File Server EUR is not supported when using MBS.
+
+::: moniker-end
 
 
 ## <a name="BKMK_Data"></a>Data protection issues
@@ -386,20 +520,58 @@ These workloads can be running on a single server or in a cluster configuration.
 
 ## <a name="BKMK_Sharepoint"></a>SharePoint protection issues
 
+::: moniker range="<=sc-dpm-2016"
+
 ### AlwaysOn not supported
 **Issue**: From DPM 2012 R2 Update 5 onwards, DPM can protect SharePoint farm SQL Server databases that have AlwaysOn enabled.
 
 **Workaround**: None.
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+### AlwaysOn not supported
+**Issue**: DPM 2019 protects SharePoint farm SQL Server databases that have AlwaysOn enabled.
+
+**Workaround**: None.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+### AlwaysOn support
+**Issue**: DPM 2022 protects SharePoint farm SQL Server databases that have AlwaysOn enabled.
+
+**Workaround**: None.
+
+::: moniker-end
+
 ## <a name="BKMK_SQL"></a>SQL Server protection issues
 
-### SQL Server 2014 support
-**Issue**: You can protect SQL Server 2014 with DPM 2012 R2 [Update rollup 4](https://go.microsoft.com/fwlink/?LinkId=518078).
+::: moniker range="<=sc-dpm-2019"
+
+### SQL Server 2016 support
+**Issue**: You can protect SQL Server 2016 with DPM 2019 and later.
 
 **Workaround**: Run the correct DPM version.
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+### SQL Server 2022 support
+
+**Issue**: You can protect SQL Server 2022 with DPM 2022 UR1.
+
+**Workaround**: Run the correct DPM version.
+
+::: moniker-end
+
+
 ### AlwaysOn support
-**Issue**: AlwaysOn was introduced in SQL Server 2012. It's supported from DPM 2012 SP1 onwards in accordance with the [DPM protection support matrix](dpm-protection-matrix.md).
+
+**Issue**: AlwaysOn is supported in DPM.
 
 **Workaround**: None.
 
@@ -409,7 +581,8 @@ These workloads can be running on a single server or in a cluster configuration.
 **Workaround**: None.
 
 ### DPM can't protect SQL Server on scale-out file servers (SOFS)
-**Issue**: DPM can't protect SQL Server databases hosted on Windows Server 2012 SOFS.
+
+**Issue**: DPM can't protect SQL Server databases hosted on Windows Server SOFS.
 
 **Workaround**: Move the SQL Server databases off the SOFS.
 
@@ -423,7 +596,7 @@ These workloads can be running on a single server or in a cluster configuration.
 ## <a name="BKMK_VM"></a>Hyper-V and virtual machine protection issues
 
 ### Linux virtual machines backed up with file-consistent snapshots only
-**Issue**: You can backup Linux virtual machines using DPM 2012 R2 or later. Only file-consistent snapshots are supported.
+**Issue**: You can back up Linux virtual machines using DPM. Only file-consistent snapshots are supported.
 
 **Workaround**: None.
 
@@ -442,6 +615,8 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 
 **Workaround**: None
 
+::: moniker range="<=sc-dpm-2016"
+
 ### Backup on Hyper-V Replica servers
 **Issue**: Support for backup up of primary and replica (secondary) virtual machines depends on the DPM version as summarized in this table.
 
@@ -452,10 +627,13 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 
 **Workaround**: Run a supported version of DPM for your scenario.
 
+::: moniker-end
+
 ## DPM and Azure
 
 ### DPM as an Azure virtual machine
-**Issue**: DPM can run as an Azure virtual machine, from DPM 2012 R2 Update 3 onwards. Be aware of these limitations:
+
+**Issue**: DPM can run as an Azure virtual machine. Be aware of these limitations:
 
 -   On-premises DPM servers can't protect Azure-based workloads.
 
@@ -463,4 +641,4 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 
 -   DPM running as an Azure virtual machine can't protect on-premises workloads.
 
-**Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites).
+**Workaround**: For more information about this scenario, see [Install DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites).
