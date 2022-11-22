@@ -6,7 +6,7 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 01/15/2021
+ms.date: 11/22/2022
 ms.technology: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: '>sc-orch-2016'
@@ -130,7 +130,11 @@ For problems fixed in Orchestrator 2022 UR1, and installation instructions for U
 
 ### Support for SQL Server 2022
 
-Orchestrator 2022 support SQL Server 2022.
+Orchestrator 2022 support SQL Server 2022. [Learn more](/SystemCenterDocs/orchestrator/system-requirements-orch.md).
+
+### Support for .NET Core 6
+
+Orchestrator 2022 UR1 supports .NET Core 6. [Learn more](/SystemCenterDocs/orchestrator/system-requirements-orch.md).
 
 ::: moniker-end
 
