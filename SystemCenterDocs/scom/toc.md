@@ -1,5 +1,5 @@
 # [About Operations Manager](welcome.md)
-## [About Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md)
+## [About Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md)
 ## [Operations Manager key concepts](key-concepts.md)
 # [Get Started](get-started.md)
 ## [Operations Manager build versions](release-build-versions.md)
@@ -71,8 +71,8 @@
 ## Manage
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
-### Azure Monitor SCOM Managed Instance
-#### [Create a SCOM managed Instance](create-operations-manager-managed-instance.md)
+### Azure Monitor SCOM Managed Instance (preview)
+#### [Create a SCOM managed Instance (preview)](create-operations-manager-managed-instance.md)
 ##### Post Deployment
 ###### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
 #### Logs
