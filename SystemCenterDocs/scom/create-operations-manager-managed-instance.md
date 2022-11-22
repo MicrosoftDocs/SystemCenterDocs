@@ -123,8 +123,8 @@ Below are the recommendations while you create an SQL MI instance:
 
      If the SQL MI VNet is different from the SCOM MI VNet:
 
-       - If you enable it, you have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager VNet/Subnet to port 3342. For more information, see Configure public endpoint in Azure SQL Managed Instance. 
-       - If you disable it, you have to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM managed instance (preview) are present.
+    - If you enable it, you have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager VNet/Subnet to port 3342. For more information, see Configure public endpoint in Azure SQL Managed Instance. 
+    - If you disable it, you have to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM managed instance (preview) are present.
 	
 For the rest of the settings in the other tabs, you can leave them as default or change as per your requirements.
 
