@@ -23,7 +23,7 @@ How to find and run the task, see [Running tasks in Operations Manager](manage-r
 
 The task can be launched for one object of the class or  several at once. Tasks can be run both on Windows and Linux SQL Servers DB Engines.
 
-System Center Operations Manager tasks require higher privileges on the agent computer and/or database to allow the task to be executed for an instance monitored in low-privilege mode. For how to give the necessary permission, see [Optional Steps for Tasks on Agents](sql-server-management-pack-low-privilege-monitoring#optional-steps-for-tasks-on-agents.md).
+System Center Operations Manager tasks require higher privileges on the agent computer and/or database to allow the task to be executed for an instance monitored in low-privilege mode. For how to give the necessary permission, see [Optional Steps for Tasks on Agents](sql-server-management-pack-low-privilege-monitoring.md#optional-steps-for-tasks-on-agents).
 
 ## List of SQL Server Database Engine tasks
 
