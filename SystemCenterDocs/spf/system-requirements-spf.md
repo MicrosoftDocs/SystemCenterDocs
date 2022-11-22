@@ -4,7 +4,7 @@ title: System requirements for Service Provider Foundation
 description: This article describes the software and hardware system requirements for System Center Service Provider Foundation
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: mkluck
 ms.date: 04/04/2022
 ms.topic: article
 ms.prod: system-center
