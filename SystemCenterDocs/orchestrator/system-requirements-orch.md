@@ -5,7 +5,7 @@ description: This article describes the software and hardware system requirement
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 09/13/2022
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
