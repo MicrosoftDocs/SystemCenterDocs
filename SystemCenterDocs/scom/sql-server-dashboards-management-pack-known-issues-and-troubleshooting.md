@@ -2,10 +2,10 @@
 ms.assetid: 603255c8-723e-46ce-b1fc-7d127b37ebd6
 title: Known issues and troubleshooting in Management Pack for SQL Server Dashboards
 description: This article explains known issues and troubleshooting in Management Pack for SQL Server Dashboards
-author: Anastas1ya
-ms.author: v-asimanovic
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -38,3 +38,4 @@ This article lists the known issues for Management Pack for SQL Server Dashboard
 |Users with limited access may not see SQL instances on the SQL Server Roles dashboard|If a user is assigned to a limited access role (e.g. with access to SSAS Instance group, SSRS Instance Group, and SQL Server DB Engine Group only), no SQL instances are visible on SQL Server Roles dashboard.|As long as SQL Server Roles dashboard is based on Server Roles Group, the user should obtain access to Server Roles Group to make SQL instances visible on the dashboard.|
 |No animation on the datacenter view dashboard|When the datacenter view dashboard is refreshed using the refresh button from the drop-down menu, no animation is shown.|No resolution.|
 |Distributed applications added to the datacenter view show **No States**|When adding a distributed application to the main dashboards view, it appears as **No States**.|SQL Dashboards can work with objects that belong to groups, even when **Add Virtual Group** is used. A distributed application may not have any group. To solve the issue, create a new group and add distributed applications to this group.|
+|The discrepancy in the number of objects monitored of the selected class in the **System Center Operations Manager console** Summary Dashboards view|The **System Center Operations Manager console** Summary Dashboards view may show a different number of monitored objects, such as deleted objects as well, as compared with the **Web console** Dashboards due to the synchronization lag between the Operations Manager and the Data Warehouse databases.|Use the [Web console Dashboards](sql-server-dashboards-management-pack-sql-server-dashboards.md).|
