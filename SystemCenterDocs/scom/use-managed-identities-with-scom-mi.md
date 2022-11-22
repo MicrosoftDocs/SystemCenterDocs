@@ -17,7 +17,7 @@ monikerRange: '>=sc-om-2019'
 
 A common challenge when building cloud applications is how to securely manage the credentials in your code for authenticating various services without saving them locally on a developer workstation or in source control. 
 
-*Managed identities for Azure* solve this problem for all your resources in Azure Active Directory by providing them with automatically managed identities. You can use a service's identity to authenticate any service that supports Azure Active Directory authentication, including Key Vault, without any credentials stored in your code. 
+*Managed identities for Azure* solves this problem for all your resources in Azure Active Directory by providing them with automatically managed identities. You can use a service's identity to authenticate any service that supports Azure Active Directory authentication, including Key Vault, without any credentials stored in your code. 
 
 >[!Note]
 >- *Managed identities for Azure* are the new name for the service formerly known as Managed Service Identity (MSI).
@@ -31,7 +31,7 @@ Managed identities for Azure are based upon several key concepts:
 
 - **Principal ID** - The object ID of the service principal object for your managed identity that is used to grant role-based access to an Azure resource. 
 
-- **Service Principal** - An Azure Active Directory object, which represents the projection of an Azure Active Directory application in a given tenant. For more information, see [Service principal](/azure/active-directory/develop/developer-glossary#service-principal-object).
+- **Service Principal** - An Azure Active Directory object, which represents the projection of an Azure Active Directory application on a given tenant. For more information, see [Service principal](/azure/active-directory/develop/developer-glossary#service-principal-object).
 
 ## Managed identity types
 
@@ -45,19 +45,19 @@ For more information on Managed identity types, see [How do managed identities
 
 ## Supported scenarios for SCOM Managed Instance (preview)
 
-SCOM Managed Instance (preview) supports both System Assigned Managed Identity and User Assigned Managed Identity for the SCOM Managed Instances (preview) deployed in Azure. SCOM Managed Instance (preview) creates other dependency resources like Virtual Machine Scale Sets (VMSS) cluster to host management servers. SCOM Managed Instance (preview) onboarded the Managed identities with HOBO v2, so that the assigned Identity will be delegated to underneath infrastructure for authenticating with sink resources. These Identities are used to authenticate other Azure services in different scenarios. 
+SCOM Managed Instance (preview) supports both System Assigned Managed Identity and User Assigned Managed Identity for the SCOM Managed Instances (preview) deployed in Azure. SCOM Managed Instance (preview) creates other dependency resources like Virtual Machine Scale Sets (VMSS) cluster to host management servers. SCOM Managed Instance (preview) onboarded the Managed identities with HOBO v2, so that the assigned Identity will be delegated to the underlying infrastructure for authenticating with sink resources. These Identities are used to authenticate other Azure services in different scenarios. 
 
 - System Assigned Managed Identity
 
-     - SCOM Managed Instance (preview) will send different health or performance metrics to Geneva Cluster services, monitoring the instance behavior at run time. The system Assigned Identity, which is delegate to SCOM Managed Instance (preview) resource will be used to authenticate with Azure Geneva Cluster services. 
+     - SCOM Managed Instance (preview) will send different health or performance metrics to Geneva Cluster services, monitoring the instance behaviour at run time. The system Assigned Identity, which is delegated to SCOM Managed Instance (preview) resource will be used to authenticate with Azure Geneva Cluster services. 
 
 - User Assigned Managed Identity 
 
-     - For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and it will be used to access the SQL MI database. SCOM Managed Instance (preview) reads/writes customer workload monitoring data to SQL managed instance databases.  The user Assigned Identity Assigned to SCOM Managed Instance (preview) resource will be used for authenticating from SCOM servers to SQL Managed instance. 
+     - For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and it will be used to access the SQL MI database. SCOM Managed Instance (preview) reads/writes customer workload monitoring data to SQL managed instance databases.  The User Assigned Identity assigned to SCOM Managed Instance (preview) resource will be used for authenticating from SCOM servers to SQL Managed instance. 
 
-     - SCOM Managed Instance (preview) onboarding process takes the domain user credentials stored in Customer Key vault. The secrets in Customer Key vault are accessed using the managed identity assigned to SCOM MI instance. 
+     - SCOM Managed Instance (preview) onboarding process takes the domain user credentials stored in Customer Key vault. The secrets in the Customer Key vault are accessed using the managed identity assigned to SCOM MI instance. 
 
-     While SCOM Managed Instance onboarding, you must provide the User Managed Identity, which has access to Customer key vault and SQL managed instance.
+     During SCOM Managed Instance onboarding, you must provide the User Managed Identity, which has access to Customer key vault and SQL managed instance.
 
 ## Create a Managed Service Identity (MSI)
 
@@ -65,7 +65,7 @@ Create a [Managed Service identity](/system-center/scom/create-operations-manage
 
 ## Create a Key vault and add Credentials as a secret in the Key vault  
 
-Store the domain account you create in Active Directory in a Key vault account for security. Azure Key Vault is a cloud service that provides a secure store for keys, secrets, and certificates. For more information, see [Azure Key Vault](/azure/key-vault/general/overview).
+Store the domain account you create in the Active Directory in a Key vault account for security. Azure Key Vault is a cloud service that provides a secure store for keys, secrets, and certificates. For more information, see [Azure Key Vault](/azure/key-vault/general/overview).
 
 - Create a [Key vault](/azure/key-vault/general/quick-create-portal).
 - Create a [Secret for the domain account](/azure/key-vault/secrets/quick-create-portal).
