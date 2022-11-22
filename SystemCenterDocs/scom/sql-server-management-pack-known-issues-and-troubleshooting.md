@@ -5,7 +5,7 @@ description: This article explains known issues and troubleshooting in Managemen
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 7/11/2022
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -45,7 +45,7 @@ This article lists the known issues for Management Pack for SQL Server.
 |Web console summary dashboard fails when monitoring environments with a lot of objects|Monitoring of large-scale environments may cause the web console summary dashboard to occasionally fail due to a large number of objects that cannot be processed in due time.|No resolution.|
 |Management servers and their managed devices are dimmed in the Operations Manager console|In a Microsoft System Center Operations Manager environment, one or more management servers that host the following roles, together with those management servers' managed devices, may appear dimmed or grayed out in the Operations console: **Management server**, **Gateway server**, and **Agent**.|See [this Microsoft article](/troubleshoot/system-center/scom/management-servers-devices-dimmed) to learn more on how to solve this.|
 |Free space monitoring may not work correctly when using symbolic links to files|On Windows, free space monitoring does not work correctly in cases when you provide a database file in the form of a symbolic link that points to a real file located on another volume.|On Windows, do not use symbolic links to files located on other volumes as database files.|
-|The **Database Status** monitor is dimmed in case of an Availability Group|If the database, hosted on the Primary Replica of an Availability Group, has an issue with its state, the **Database Status** monitor does not change its state for that database and becomes Healthy.|The fix of this issue will be provided in the next release of the SQL Server Management Pack.|
+|The discrepancy in the number of objects monitored of the selected class in the **System Center Operations Manager console** Summary Dashboards view|The **System Center Operations Manager console** Summary Dashboards view may show a different number of monitored objects, such as deleted objects as well, as compared with the **Web console** Dashboards due to the synchronization lag between the Operations Manager and the Data Warehouse databases.|Use the [Web console Dashboards](sql-server-dashboards-management-pack-sql-server-dashboards.md).|
 
 To isolate a WMI provider, run the script below in an elevated PowerShell session:
 
