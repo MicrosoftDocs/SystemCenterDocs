@@ -15,21 +15,21 @@ ms.technology: operations-manager
 
 The SQL Server Management Pack provides tasks for some activities with the following targets:
 
-    - SQL Server Database Engine
-    - SQL Server Database
-    - SQL Server Agent
+- SQL Server Database Engine
+- SQL Server Database
+- SQL Server Agent
 
-How to find and run the task, see [Running tasks in Operations Manager](system-center/scom/manage-running-tasks).
+How to find and run the task, see [Running tasks in Operations Manager](manage-running-tasks.md).
 
 The task can be launched for one object of the class or  several at once. Tasks can be run both on Windows and Linux SQL Servers DB Engines.
 
-System Center Operations Manager tasks require higher privileges on the agent computer and/or database to allow the task to be executed for an instance monitored in low-privilege mode. For how to give the necessary permission, see [Optional Steps for Tasks on Agents](system-center/scom/sql-server-management-pack-low-privilege-monitoring#optional-steps-for-tasks-on-agents).
+System Center Operations Manager tasks require higher privileges on the agent computer and/or database to allow the task to be executed for an instance monitored in low-privilege mode. For how to give the necessary permission, see [Optional Steps for Tasks on Agents](sql-server-management-pack-low-privilege-monitoring#optional-steps-for-tasks-on-agents.md).
 
 ## List of SQL Server Database Engine tasks
 
 - **Global Configuration Settings**
 
-    Shows a list of global configuration settings from a specified SQL Server from [sys.configurations](sql/relational-databases/system-catalog-views/sys-configurations-transact-sql). The output will display a list of settings and their value.
+    Shows a list of global configuration settings from a specified SQL Server from [sys.configurations](/sql/relational-databases/system-catalog-views/sys-configurations-transact-sql). The output will display a list of settings and their value.
 
 - **Run On-Demand Database Discovery**
 
@@ -88,19 +88,19 @@ System Center Operations Manager tasks require higher privileges on the agent co
 
     Results options:
   - Error-none - means everything is consistency
-  - Printed error message - for more details see [DBCC CHECKCATALOG](sql/t-sql/database-console-commands/dbcc-checkcatalog-transact-sql).
+  - Printed error message - for more details see [DBCC CHECKCATALOG](/sql/t-sql/database-console-commands/dbcc-checkcatalog-transact-sql).
   
 - **Check Database (DBCC)**
 
     Checks the allocation, structural, and logical integrity of all the objects in the specified database by task from the System Center Operations Manager. The database must be online. The output will show a list of database objects and their state.
 
-    For more details see [DBCC CHECKDB](sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql).
+    For more details see [DBCC CHECKDB](/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql).
 
 - **Check Disk (DBCC)**
 
     Checks the consistency of disk space allocation structures for a specified database by task from the System Center Operations Manager. The database must be online. The output will show a list of objects and their state.
 
-    For more details see [DBCC CHECKDB](sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql).
+    For more details see [DBCC CHECKDB](/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql).
 
 - **Set Database Offline**
 
