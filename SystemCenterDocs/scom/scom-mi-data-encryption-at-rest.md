@@ -33,7 +33,7 @@ The storage location of the encryption keys and access control to those keys is 
 
 ### Azure Storage account 
 
-SCOM Managed Instance (preview) uses storage account to hold service configurations, scripts, and SCOM runtime bits. It is also used to exchange messages (actions on SCOM Managed Instace (preview)) between SCOM RP web service and worker role service. SCOM Managed Instance (preview) meta data is stored in Azure storage blob/Queue uses 256-bit AES encryption. 
+SCOM Managed Instance (preview) uses storage account to hold service configurations, scripts, and SCOM runtime bits. It is also used to exchange messages (actions on SCOM Managed Instance (preview)) between SCOM RP web service and worker role service. SCOM Managed Instance (preview) meta data is stored in Azure storage blob/Queue uses 256-bit AES encryption. 
 
 ## Cosmos database 
 
