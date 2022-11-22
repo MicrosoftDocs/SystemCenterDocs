@@ -79,7 +79,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 Orchestrator requires .NET Framework 4.5 or later to run, we recommend installing .NET Framework 4.7.2.
 
-The Orchestrator Web API requires .NET Core and windows hosting bundle. Refer the table below:
+The following versions of .NET Core and windows hosting bundle are supported for the Orchestrator Web API:
 
 |SCO version|.NET Core|
 |---|---|
