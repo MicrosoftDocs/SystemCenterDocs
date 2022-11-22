@@ -196,7 +196,7 @@ Store the domain account you create in Active Directory in a Key vault account f
         1. Select **Next**.
         1. In **Principal**, search for the MSI you created in the previous step and select.
              :::image type="Access policies principal" source="media/create-operations-manager-managed-instance/principal.png" alt-text="Screenshot of Access policies principal.":::
-        1. In **Review + create**, review the selections and select **Create**. 
+        1. In **Review + create**, review the selections, and select **Create**. 
              :::image type="Access policy review" source="media/create-operations-manager-managed-instance/access-policy-review.png" alt-text="Screenshot of Access policy review.":::
 1. Select the access policy created and then select **Next**.
      :::image type="Access policy" source="media/create-operations-manager-managed-instance/access-policy.png" alt-text="Screenshot of Access policy.":::
@@ -213,7 +213,7 @@ Store the domain account you create in Active Directory in a Key vault account f
      >[!Note]
      > You must create two secrets.
      > - Username
-     > - Password. 
+     > - Password
 
 1. Select **+ Generate/Import**. 
      :::image type="Secrets" source="media/create-operations-manager-managed-instance/secrets.png" alt-text="Screenshot of secrets.":::
