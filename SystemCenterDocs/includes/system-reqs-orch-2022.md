@@ -3,8 +3,8 @@ ms.assetid:
 title: include file
 description: include file to provide system requirements for Orchestrator 2022, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: jsuri
-manager: evansma
-ms.date: 09/13/2022
+manager: mkluck
+ms.date: 11/22/2022
 ms.custom: na
 author: jyothisuri
 ms.prod: system center
@@ -78,7 +78,13 @@ The following software is required for a full installation of Orchestrator on a 
 ## .NET requirements
 
 Orchestrator requires .NET Framework 4.5 or later to run, we recommend installing .NET Framework 4.7.2.
-The Orchestrator Web API requires [.NET Core 5 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true).
+
+The Orchestrator Web API requires .NET Core and windows hosting bundle. Refer the table below:
+
+|SCO version|.NET Core|
+|---|---|
+|2022 RTM|[.NET Core 5 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true)|
+|2022 UR1|[.NET Core 6 hosting bundle](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-6.0.11-windows-hosting-bundle-installer)|
 
 ## Virtualization
 
