@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Azure Monitor SCOM Managed Instance (preview) Data Encryption at rest
-description: This article describes how to use Managed identities for Azure with Azure Monitor SCOM Managed Instance (preview).
+description: This article provides an overview of SCOM Managed Instance (preview) Data Encryption at-rest.
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
