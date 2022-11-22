@@ -79,7 +79,8 @@
 ##### [Activity Log](scom-mi-activity-log.md)
 #### [FAQs](operations-manager-managed-instance-common-questions.md)
 #### Security
-##### [Managed Identity] (use-managed-identities-with-scom-mi.md)
+##### [Managed Identity](use-managed-identities-with-scom-mi.md)
+##### [Encryption at rest](scom-mi-data-encryption-at-rest.md)
 ### Managing discovery and agents
 #### [Discover and install agent on Windows](manage-deploy-windows-agent-console.md)
 #### [Discover and install agent on UNIX and Linux](manage-deploy-crossplat-agent-console.md)
