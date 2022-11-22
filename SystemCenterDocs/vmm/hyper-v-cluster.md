@@ -4,7 +4,7 @@ title: Manage Hyper-V clusters in the VMM fabric
 description: This article describes how to manage Hyper-V clusters in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
@@ -52,6 +52,6 @@ Use this article to manage Hyper-V host clusters in the System Center - Virtual 
 Remove a host cluster as follows:
 
 1. Click **Fabric** > **Servers** > **All Hosts**.
-2. Make sure the cluster isn't supporting any highly-available VMs or clustered services/apps.
+2. Make sure the cluster isn't supporting any highly available VMs or clustered services/apps.
 3. Right-click the host cluster > **Uncluster**. Click **Yes** to continue.
 4. During the job to remove the cluster any shared storage is unregistered from the cluster nodes. If you manage storage outside VMM, then you should unregister the storage.

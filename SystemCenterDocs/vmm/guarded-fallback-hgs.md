@@ -4,7 +4,7 @@ title: Configure fallback HGS in System Center Virtual Machine Manager
 description: This article explains about how to configure the fallback HGS in VMM
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 10/10/2018
 ms.topic: article
 ms.prod: system-center

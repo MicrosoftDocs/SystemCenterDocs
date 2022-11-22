@@ -4,7 +4,7 @@ title: Set up host groups in the VMM compute fabric
 description: This article describes how to set up host groups in the VMM fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2016
 ms.topic: article
 ms.prod: system-center

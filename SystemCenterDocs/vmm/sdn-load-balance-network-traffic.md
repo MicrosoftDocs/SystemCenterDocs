@@ -4,7 +4,7 @@ title: Load balance network traffic in an SDN fabric using VMM
 description: Learn how to configure Software load balancer (SLB) for the internal and external network traffic through a VIP in Software Define Networking (SDN).
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
