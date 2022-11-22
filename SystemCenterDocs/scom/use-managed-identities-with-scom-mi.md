@@ -17,7 +17,7 @@ monikerRange: '>=sc-om-2019'
 
 A common challenge when building cloud applications is how to securely manage the credentials in your code for authenticating various services without saving them locally on a developer workstation or in source control. 
 
-*Managed identities for Azure* solves this problem for all your resources in Azure Active Directory by providing them with automatically managed identities. You can use a service's identity to authenticate any service that supports Azure Active Directory authentication, including Key Vault, without any credentials stored in your code. 
+*Managed identities for Azure* solve this problem for all your resources in Azure Active Directory by providing them with automatically managed identities. You can use a service's identity to authenticate any service that supports Azure Active Directory authentication, including Key Vault, without any credentials stored in your code. 
 
 >[!Note]
 >- *Managed identities for Azure* are the new name for the service formerly known as Managed Service Identity (MSI).
