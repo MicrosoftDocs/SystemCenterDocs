@@ -293,6 +293,7 @@
 #### [Disabling Monitoring of SQL Servers and Databases](sql-server-management-pack-disabling-monitoring.md)
 #### [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md)
 #### [Enabling Debugging](sql-server-management-pack-enable-debugging.md)
+#### [Tasks](sql-server-management-pack-tasks.md)
 ### Security Configuration
 #### [SQL Server Run As Profiles](sql-server-management-pack-run-as-profiles.md)
 #### [Service SID](sql-server-management-pack-service-sid.md)
