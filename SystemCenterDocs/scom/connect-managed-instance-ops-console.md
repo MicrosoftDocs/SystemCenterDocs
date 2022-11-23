@@ -5,7 +5,7 @@ description: This article describes how to connect the Azure Monitor SCOM manage
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 10/11/2022
+ms.date: 10/21/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -43,7 +43,7 @@ Follow the below steps to connect a SCOM managed instance (preview) to Ops Conso
    - *Management Server Name*: The FQDN of the Management Server that you would link the gateway server to. 
     You can set the second management server in SCOM managed instance (preview) as a failover server so that the gateway server can fail over to it when the primary management server stops working. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). Setting up the failover management server is a command-line based setup and needs to run from where you have the System Center Operations Manager shell or the management server.
 
-1. Install Agents: Install your agents using the [instructions](/system-center/scom/manage-deploy-windows-agent-console?view=sc-om-2019&preserve-view=true).
+1. Install Agents: For Agents open the ports 5723/135/138/445 and [install your agents](/system-center/scom/manage-deploy-windows-agent-console?view=sc-om-2019&preserve-view=true).
 
 1. Connect SCOM managed instance (preview) to the Web Console: To connect to the Web Console, go to properties in the SCOM managed instance (preview) homepage, and copy the value in the *Operations Manager Web Console URL*. Paste that URL in any browser to open the web console.
 

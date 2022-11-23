@@ -1,5 +1,5 @@
 # [About Operations Manager](welcome.md)
-## [About Azure Monitor SCOM Managed Instance](operations-manager-managed-instance-overview.md)
+## [About Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md)
 ## [Operations Manager key concepts](key-concepts.md)
 # [Get Started](get-started.md)
 ## [Operations Manager build versions](release-build-versions.md)
@@ -71,11 +71,17 @@
 ## Manage
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
-### Azure Monitor SCOM Managed Instance
-#### [Create a SCOM managed Instance](create-operations-manager-managed-instance.md)
-#### Post Deployment
-##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
-### [FAQs](operations-manager-managed-instance-common-questions.md)
+### Azure Monitor SCOM Managed Instance (preview)
+#### [Create a SCOM managed Instance (preview)](create-operations-manager-managed-instance.md)
+#### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
+##### Post Deployment
+###### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
+#### Logs
+##### [Activity Log](scom-mi-activity-log.md)
+#### [FAQs](operations-manager-managed-instance-common-questions.md)
+#### Security
+##### [Managed Identity](use-managed-identities-with-scom-mi.md)
+##### [Encryption at rest](scom-mi-data-encryption-at-rest.md)
 ### Managing discovery and agents
 #### [Discover and install agent on Windows](manage-deploy-windows-agent-console.md)
 #### [Discover and install agent on UNIX and Linux](manage-deploy-crossplat-agent-console.md)
