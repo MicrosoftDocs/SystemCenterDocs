@@ -2,10 +2,10 @@
 ms.assetid: 1c4927e5-5053-47e1-bf35-9aca5b4793a2
 title: Monitoring configuration in Management Pack for SQL Server Analysis Services
 description: This section explains monitoring configurations in Management Pack for SQL Server Analysis Services
-author: Anastas1ya
-ms.author: v-asimanovic
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-ms.date: 6/2/2022
+ms.date: 11/23/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -29,7 +29,7 @@ SSAS Instance includes the following server modes:
 - Tabular mode
 - Power Pivot for SharePoint mode
 
-For comparing model features see [Determine the Server Mode of an Analysis Services Instance](analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance).
+For comparing model features see [Determine the Server Mode of an Analysis Services Instance](/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance).
 
 ## Discovery of SQL Server Analysis Services Database
 

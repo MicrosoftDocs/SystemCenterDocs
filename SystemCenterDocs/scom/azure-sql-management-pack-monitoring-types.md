@@ -169,11 +169,11 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
     **Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but cannot start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
-    ![Server exclude list](./media/azure-sql-management-pack/configuring-server-include-wildcard-list.png)
+    ![Server exclude list wildcard spn](./media/azure-sql-management-pack/configuring-server-include-wildcard-list.png)
 
     **Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-    ![Server exclude list](./media/azure-sql-management-pack/configuring-server-exclude-regexp-list.png)
+    ![Server exclude list regexp](./media/azure-sql-management-pack/configuring-server-exclude-regexp-list.png)
 
     If you want to remove an existing mask, select it and click **Delete**.  
 
@@ -181,7 +181,7 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
     **Wildcard** filtering mask type cannot end with '.' or ' ' characters, contain '<,>,%,&,:,\\,/,?' or control characters, and cannot have more than 128 characters.
 
-    ![Database exclude list](./media/azure-sql-management-pack/configuring-database-include-wildcard-list.png)
+    ![Database exclude list wildcard spn](./media/azure-sql-management-pack/configuring-database-include-wildcard-list.png)
 
     For example, if you select the **Exclude** option and set the *dev**, *\*test\**, **stageand*, *dbnotmon* masks, the monitoring behavior would be as follows:
 
@@ -202,7 +202,7 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
     **Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-    ![Database exclude list](./media/azure-sql-management-pack/configuring-database-exclude-regexp-list.png)
+    ![Database exclude list regexp sql](./media/azure-sql-management-pack/configuring-database-exclude-regexp-list.png)
 
     If you want to remove an existing mask, select it and click **Delete**.
 
@@ -259,7 +259,7 @@ To begin monitoring of Azure SQL Databases using T-SQL queries, perform the foll
 
     **Wildcard** filtering mask type cannot end with '.' or ' ' characters, contain '<,>,%,&,:,\\,/,?' or control characters, and cannot have more than 128 characters.
 
-    ![Database exclude list](./media/azure-sql-management-pack/configuring-database-include-wildcard-list-manual.png)
+    ![Database exclude list wildcard sql manual](./media/azure-sql-management-pack/configuring-database-include-wildcard-list-manual.png)
 
     For example, if you select the **Exclude** option and set the *dev**, *\*test\**, **stageand*, *dbnotmon* masks, the monitoring behavior would be as follows:
 
@@ -280,7 +280,7 @@ To begin monitoring of Azure SQL Databases using T-SQL queries, perform the foll
 
     **Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-    ![Database exclude list](./media/azure-sql-management-pack/configuring-database-exclude-regexp-list-manual.png)
+    ![Database exclude list regexp manual](./media/azure-sql-management-pack/configuring-database-exclude-regexp-list-manual.png)
 
     If you want to remove an existing mask, select it and click **Delete**.
 

@@ -2,10 +2,10 @@
 ms.assetid: 28d531e2-24bf-4d7f-9949-5e07f7ff9461
 title: Monitoring configuration in Management Pack for SQL Server Reporting Services
 description: This article explains the monitoring configuration in Management Pack for SQL Server Reporting Services
-author: Anastas1ya
-ms.author: v-asimanovic
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-ms.date: 6/30/2022
+ms.date: 11/23/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -163,7 +163,7 @@ This management pack collects the following performance metrics:
 
 ## Feature Groups
 
-In System Center Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. For more information about the groups, see [Creating and managing groups](system-center/scom/manage-create-manage-groups).
+In System Center Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. For more information about the groups, see [Creating and managing groups](/system-center/scom/manage-create-manage-groups).
 
 In Management Pack for SQL Server Reporting Services you can use two groups, which have the dynamic type of membership:
 
