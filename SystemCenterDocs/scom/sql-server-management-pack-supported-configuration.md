@@ -2,10 +2,10 @@
 ms.assetid: 300c1177-469a-486e-8352-eea84cf8fdf8
 title: Scope and supported configuration in Management Pack for SQL Server
 description: This article explains the scope and supported configuration for Management Pack for SQL Server
-author: VChernov
+author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 9/5/2022
+ms.date: 11/23/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -13,26 +13,17 @@ ms.technology: operations-manager
 
 # Scope and Supported Configuration in Management Pack for SQL Server
 
-Management Pack for SQL Server is version-agnostic. It supports discovery and monitoring of SQL Server 2012 through 2022, including SQL on Linux with SQL Server 2017 and higher.
+## SQL Server Versions
 
-## Operating Systems and Platforms
+Management Pack for SQL Server is version-agnostic. It supports the discovery and monitoring of SQL Server following versions:
 
-Management Pack for SQL Server supports the following operating systems and platforms:
-
-- Windows Server 2012
-- Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server 2019
-- Windows Server 2022
-- Ubuntu 16.04
-- Ubuntu 18.04
-- Ubuntu 20.04
-- Red Hat Enterprise Linux 7.3 and 7.4
-- SUSE Linux Enterprise Server v12 SP2
-- Docker Engine 1.8+
-- Azure Kubernetes Service (AKS)
-
-Localized versions of Windows Server are also supported.
+- SQL Server 2012
+  Due to the [Lifecycle Policy](/lifecycle/products/microsoft-sql-server-2012), this version is no longer being tested.
+- SQL Server 2014
+- SQL Server 2016
+- SQL Server 2017 (Windows and Linux platforms)
+- SQL Server 2019 (Windows and Linux platforms)
+- SQL Server 2022 (Windows and Linux platforms)
 
 ## SQL Server Features
 
@@ -53,8 +44,8 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
   - Failover Clustering
   - Log Shipping
   - [Not supported] Replication
-
-    Use dedicated management packs for SQL Server Replication to monitor this feature.
+  
+    Use [dedicated management packs for SQL Server Replication](sql-replication-management-pack-changes-history.md) to monitor this feature.
 
   - [Not supported] Mirroring
   - [Not supported] Domain-independent Availability Groups
@@ -67,7 +58,6 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 
 - [Not supported] 32-bit versions of SQL Server
 
-
 >[!NOTE]
 >Since Management Pack for SQL Server is unhosted, fully qualified domain names (FQDNs) are no longer displayed in System Center Operations Manager object names and alert properties.
 
@@ -76,11 +66,31 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 Management Pack for SQL Server supports the following versions of System Center Operations Manager:
 
 - System Center Operations Manager 2012 R2
+  Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
 - System Center Operations Manager 2016
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
+
+## Operating Systems and Platforms
+
+Management Pack for SQL Server supports the following operating systems and platforms:
+
+- Windows Server 2012
+- Windows Server 2012 R2
+- Windows Server 2016
+- Windows Server 2019
+- Windows Server 2022
+- Ubuntu 16.04
+- Ubuntu 18.04
+- Ubuntu 20.04
+- Red Hat Enterprise Linux 7.3 and 7.4
+- SUSE Linux Enterprise Server v12 SP2
+- Docker Engine 1.8+
+- Azure Kubernetes Service (AKS)
+
+Localized versions of Windows Server are also supported.
 
 ## Monitoring Modes
 

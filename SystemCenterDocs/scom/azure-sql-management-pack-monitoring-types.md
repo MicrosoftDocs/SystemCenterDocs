@@ -2,10 +2,10 @@
 ms.assetid: 3711a302-ab02-4bf9-a3ad-c0dbbdf669fb
 title: Monitoring types in Management Pack for Azure SQL Database
 description: This article explains how to configure Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database
-author: Anastas1ya
-ms.author: v-asimanovic
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-ms.date: 6/2/2022
+ms.date: 11/23/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -61,11 +61,11 @@ For more information, see [How to - Use the portal to create an Azure AD applica
 
 To begin monitoring of Azure SQL Databases using the Azure REST API, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL Databases Monitoring**, and select **Add Monitoring Wizard**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL Database Monitoring**, and select **Add Monitoring Wizard**.
 
-    ![REST API monitoring wizard](./media/azure-sql-management-pack/opening-monitoring-wizard.png)
+    ![REST API monitoring wizard](./media/azure-sql-management-pack/opening-monitoring-wizard.png)  
 
-2. At the **Monitoring Type** step, select **Azure SQL Databases Monitoring**, and click **Next**.
+2. At the **Monitoring Type** step, select **Azure SQL Database Monitoring**, and click **Next**.
 
     ![Monitoring target](./media/azure-sql-management-pack/selecting-monitoring-target.png)
 
@@ -83,15 +83,15 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
     The default endpoints for creating Azure Service Principal Name are as follows:
 
-   - Authority URI: <https://login.windows.net>
+   - Authority URI: `https://login.windows.net`
 
-   - Management Service URI: <https://management.azure.com>
+   - Management Service URI: `https://management.azure.com`
 
      This endpoint is also used for Azure REST API. In this case, the Firewall port 443 should be used. However, according to [Ports beyond 1433 for ADO.NET 4.5](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12), the Firewall port 1433 should be used.
 
    - Database Resource URI: `https://database.windows.net`
 
-   - Graph API Resource URI: <https://graph.windows.net>
+   - Graph API Resource URI: `https://graph.windows.net`
 
     ![Azure endpoints](./media/azure-sql-management-pack/selecting-azure-endpoints.png)
 
@@ -165,17 +165,23 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
     ![SPN status](./media/azure-sql-management-pack/reviewing-spn-status.png)
 
-7. [Optionally] At the **Server Filter List** step, select filtering mode, which can be either **Exclude** or **Include**, enter filtering masks that should match SQL Server names that you want to exclude from or include to the monitoring list, click **Add**, and click **Next**.
+7. [Optionally] At the **Server Filter List** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Server names that you want to exclude from or include to the monitoring list, click **Add**, and click **Next**.
 
-    A server name can contain only lowercase letters, numbers, and the '-' character, but cannot start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
+    **Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but cannot start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
-    If you want to remove an existing mask, select it and click **Delete**.
+    ![Server exclude list](./media/azure-sql-management-pack/configuring-server-include-wildcard-list.png)
 
-    ![Server exclude list](./media/azure-sql-management-pack/configuring-server-exclude-list.png)
+    **Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-8. [Optionally] At the **Database Filter List** step, select filtering mode, which can be either **Exclude** or **Include**, enter filtering masks that should match database names that you want to exclude from or include to the monitoring list, click **Add**, and click **Next**.
+    ![Server exclude list](./media/azure-sql-management-pack/configuring-server-exclude-regexp-list.png)
 
-    A database name cannot end with '.' or ' ' characters, contain '<,>,*,%,&,:,\\,/,?' or control characters, and cannot have more than 128 characters.
+    If you want to remove an existing mask, select it and click **Delete**.  
+
+8. [Optionally] At the **Database Filter List** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match database names that you want to exclude from or include to the monitoring list, click **Add**, and click **Next**.
+
+    **Wildcard** filtering mask type cannot end with '.' or ' ' characters, contain '<,>,%,&,:,\\,/,?' or control characters, and cannot have more than 128 characters.
+
+    ![Database exclude list](./media/azure-sql-management-pack/configuring-database-include-wildcard-list.png)
 
     For example, if you select the **Exclude** option and set the *dev**, *\*test\**, **stageand*, *dbnotmon* masks, the monitoring behavior would be as follows:
 
@@ -194,9 +200,11 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
     |dbnotmon_sales|Monitored|
     |sales_dbnotmon|Monitored|
 
-    If you want to remove an existing mask, select it and click **Delete**.
+    **Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-    ![Database exclude list](./media/azure-sql-management-pack/configuring-database-exclude-list.png)
+    ![Database exclude list](./media/azure-sql-management-pack/configuring-database-exclude-regexp-list.png)
+
+    If you want to remove an existing mask, select it and click **Delete**.
 
 9. At the **User Management Pool** step, select a pool with management servers and click **Next**.
 
@@ -215,11 +223,11 @@ T-SQL is intended for monitoring of specific Azure SQL Database Servers. When ch
 
 To begin monitoring of Azure SQL Databases using T-SQL queries, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL Databases Monitoring**, and select **Add Monitoring Wizard**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL Database Monitoring**, and select **Add Monitoring Wizard**.
 
     ![T-SQL monitoring](./media/azure-sql-management-pack/opening-monitoring-wizard.png)
 
-2. At the **Monitoring Type** step, select **Azure SQL Databases Monitoring**, and click **Next**.
+2. At the **Monitoring Type** step, select **Azure SQL Database Monitoring**, and click **Next**.
 
     ![Azure SQL monitoring type](./media/azure-sql-management-pack/selecting-monitoring-target.png)
 
@@ -247,9 +255,11 @@ To begin monitoring of Azure SQL Databases using T-SQL queries, perform the foll
 
 7. Click **Next**.
 
-8. [Optionally] At the **Database Filter List** step, select filtering mode, which can be either **Exclude** or **Include**, enter filtering masks that should match database names that you want to exclude from or include to the monitoring list, click **Add**, and click **Next**.
+8. [Optionally] At the **Database Filter List** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match database names that you want to exclude from or include to the monitoring list, click **Add**, and click **Next**.
 
-    A database name cannot end with '.' or ' ' characters, contain '<,>,*,%,&,:,'\\',/,?' or control characters, and cannot have more than 128 characters.
+    **Wildcard** filtering mask type cannot end with '.' or ' ' characters, contain '<,>,%,&,:,\\,/,?' or control characters, and cannot have more than 128 characters.
+
+    ![Database exclude list](./media/azure-sql-management-pack/configuring-database-include-wildcard-list-manual.png)
 
     For example, if you select the **Exclude** option and set the *dev**, *\*test\**, **stageand*, *dbnotmon* masks, the monitoring behavior would be as follows:
 
@@ -268,9 +278,11 @@ To begin monitoring of Azure SQL Databases using T-SQL queries, perform the foll
     |dbnotmon_sales|Monitored|
     |sales_dbnotmon|Monitored|
 
-    If you want to remove an existing mask, select it and click **Delete**.
+    **Regular Expression** filtering mask type supports .NET regular expression patterns.
 
-    ![Filter databases](./media/azure-sql-management-pack/filtering-databases.png)
+    ![Database exclude list](./media/azure-sql-management-pack/configuring-database-exclude-regexp-list-manual.png)
+
+    If you want to remove an existing mask, select it and click **Delete**.
 
 9. At the **User Management Pool** step, select a pool with management servers and click **Next**.
 
