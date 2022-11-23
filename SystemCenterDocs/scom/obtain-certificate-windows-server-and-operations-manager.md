@@ -5,7 +5,7 @@ description: This article explains How to obtain a certificate for use with Wind
 author: jyothisuri
 ms.author: v-pgaddala
 manager: v-pgaddala
-ms.date: 09/27/2022
+ms.date: 11/23/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
