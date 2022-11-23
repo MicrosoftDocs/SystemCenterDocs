@@ -40,6 +40,7 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/).
 - If your Domain Controller and all other components are in Azure (a conventional Domain Controller and not Azure Active Directory) with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't required). If you are using one VNet to host all your components, you will already have a line-of-sight between all your components. If you have multiple VNets, you will need to do VNet peering between all the VNets that are in your network. For more information, see VNet peering in Azure.
 - Allow ports 5723/5724/443 to communicate while talking from SCOM Managed Instance (preview) to the VMs being monitored and vice versa.
+- We recommend a NAT gateway for outbound internet access from subnets. Edit the subnet to add a NAT gateway. For more information, See [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
 
 ## Configure one domain account in Active Directory
 
@@ -115,7 +116,7 @@ Your deployment will now be created on Azure and you can access the resource and
 
 ## Create and configure an SQL MI instance
 
-Before you create a SCOM Managed Instance (preview), create an SQL MI instance. For more information, see Create an Azure SQL Managed Instance.
+Before you create a SCOM Managed Instance (preview), create an SQL MI instance. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql).
 
 We recommend the following for creating an SQL MI instance:
 
@@ -126,13 +127,13 @@ We recommend the following for creating an SQL MI instance:
 - **Authentication Method**: Select **SQL Authentication**. Enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
 - **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the SCOM Managed Instance (preview) that you create in the future. Thus, choose a VNet that you will eventually use for your SCOM Managed Instance (preview), or if you choose a different VNet, ensure it has connectivity to the SCOM Managed Instance (preview) VNet. 
 
-    In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see Determine required subnet size and range for Azure SQL Managed Instance.
+    In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?view=azuresql).
 - **Connection Type**: By default, connection type is Proxy.
 - **Public Endpoint**: This can either be *Enabled* or *Disabled*. To leverage the Power BI reporting, you need to enable the Public Endpoint. 
 
      If the SQL MI VNet is different from the SCOM MI VNet:
 
-    - If you enable it, you have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager VNet/Subnet to port 3342. For more information, see Configure public endpoint in Azure SQL Managed Instance. 
+    - If you enable it, you have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager VNet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql).
     - If you disable it, you have to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM managed instance (preview) are present.
 	
 For the rest of the settings in the other tabs, you can leave them as default or change as per your requirements.
@@ -157,7 +158,7 @@ To set the Active Directory Admin value in the SQL MI Instance, follow these ste
 
 To perform the below steps, you need to be the Global Admin/Privileged Role Admin of the subscription:
 
-For more information, see Directory Readers role in Azure Active Directory for Azure SQL.
+For more information, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql).
 
 1.	Open the SQL MI. Under **Settings**, select **Active Directory admin**.
      :::image type="Active directory admin" source="media/create-operations-manager-managed-instance/active-directory-admin.png" alt-text="Screenshot of Active directory admin.":::
