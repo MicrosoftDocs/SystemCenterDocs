@@ -31,7 +31,7 @@ Ensure you have the following:
   >- Subject="CN=server.contoso.com" ; (this should be the FQDN or how the system shows in DNS)
   >
   >- [Key Usage]
-  >     - Key Exportable=TRUE
+  >     - Key Exportable=TRUE ; This setting is required for Server Authentication 
   >     - HashAlgorithm = SHA256
   >     - KeyLength=2048
   >     - KeySpec=1
@@ -49,7 +49,7 @@ Ensure you have the following:
   >     - Provider Category: Legacy Cryptography Service Provider
   >     - Algorithm name: RSA
   >     - Minimum Key Size: 2048 ; (2048 or 4096 as per security requirement.)
-  >     - Providers: Microsoft RSA Schannel Cryptographic Provider
+  >     - Providers: "Microsoft RSA Schannel Cryptographic Provider and Microsoft Enhanced Cryptographic Provider v1.0"
   >```
 
 >[!Important]
@@ -219,7 +219,7 @@ More information, see [certificate templates](/previous-versions/windows/it-pro/
       KeySpec = 1  ; Key Exchange – Required for encryption
       KeyUsage = 0xf0  ; Digital Signature, Key Encipherment
       MachineKeySet = TRUE
-      ProviderName = "Microsoft RSA SChannel Cryptographic Provider"
+      ProviderName = "Microsoft RSA SChannel Cryptographic Provider and Microsoft Enhanced Cryptographic Provider v1.0"
       ProviderType = 12
       KeyAlgorithm = RSA
 
