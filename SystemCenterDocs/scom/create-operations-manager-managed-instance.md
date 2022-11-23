@@ -38,7 +38,7 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 
 - Ensure that there's direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you'll deploy a SCOM Managed Instance (preview). This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, SCOM Managed Instance (preview) Components such as Management Servers) can communicate with each other over the network.
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/).
-- If your Domain Controller and all other components are in Azure (a conventional Domain Controller and not Azure Active Directory) with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't required). If you are using one VNet to host all your components, you will already have a line-of-sight between all your components. If you have multiple VNets, you will need to do VNet peering between all the VNets that are in your network. For more information, see VNet peering in Azure.
+- If your Domain Controller and all other components are in Azure (a conventional Domain Controller and not Azure Active Directory) with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't required). If you're using one VNet to host all your components, you'll already have a line-of-sight between all your components. If you've multiple VNets, you'll need to do VNet peering between all the VNets that are in your network. For more information, see VNet peering in Azure.
 - Allow ports 5723/5724/443 to communicate while talking from SCOM Managed Instance (preview) to the VMs being monitored and vice versa.
 - We recommend a NAT gateway for outbound internet access from subnets. Edit the subnet to add a NAT gateway. For more information, See [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
 
@@ -79,7 +79,7 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
     - ContosoServerGroupcomputerGroup = Computer group in AD (specified previously)
     - MSOMHSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMHSvc/ VMSSLB	ContosoLB, MSOMSdkSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMSdkSvc/ ContosoLBVMSSLB = Service Principal names 
 
-- Use the below command, if the root key is not effective:
+- Use the below command, if the root key isn't effective:
  
     ```powershell
     Add-KdsRootKey -EffectiveTime ((get-date).addhours(-10)) 
@@ -92,7 +92,7 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 The Managed Service Identity provide an identity for applications to use when connecting to resources that support Azure Active Directory (Azure AD) authentication. For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and it will be used to access the SQL MI database. MSI can also be used to access the key vault.
 
 >[!Note]
->Ensure you are a contributor in the subscription you create the MSI.
+>Ensure you're a contributor in the subscription you create the MSI.
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Managed Identities**.
      :::image type="Managed Identity in Azure Portal" source="media/create-operations-manager-managed-instance/azure-portal-managed-identity.png" alt-text="Screenshot of Managed Identity in Azure portal.":::
@@ -112,7 +112,6 @@ The Managed Service Identity provide an identity for applications to use when co
 1. Under **Review + create**, review all the information that you provided and select **Create**. 
      :::image type="Managed identity review" source="media/create-operations-manager-managed-instance/managed-identity-review.png" alt-text="Screenshot of Managed identity review.":::
 Your deployment will now be created on Azure and you can access the resource and view its details.
-     :::image type="Managed identity overview" source="media/create-operations-manager-managed-instance/overview-managed-identity-inline.png" alt-text="Screenshot of Managed identity overview." lightbox="media/create-operations-manager-managed-instance/overview-managed-identity-expanded.png":::
 
 ## Create and configure an SQL MI instance
 
@@ -120,21 +119,21 @@ Before you create a SCOM Managed Instance (preview), create an SQL MI instance. 
 
 We recommend the following for creating an SQL MI instance:
 
-- **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommends you create a new Resource Group for large Azure resources.
-- **Managed Instance name**: Choose a unique name. This name will be used while you create a SCOM Managed Instance (preview) to refer to this SQL MI instance that you are creating.
-- **Region**: Choose the region close to you. There is no strict requirement on region for the instance, but the closest region is recommended for latency purposes.
+- **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommend you create a new Resource Group for large Azure resources.
+- **Managed Instance name**: Choose a unique name. This name will be used while you create a SCOM Managed Instance (preview) to refer to this SQL MI instance that you're creating.
+- **Region**: Choose the region close to you. There's no strict requirement on region for the instance, but the closest region is recommended for latency purposes.
 - **Compute+Storage**: General Purpose (Gen5) eight cores is the default number of cores. This will suffice for the SCOM managed instance (preview).
-- **Authentication Method**: Select **SQL Authentication**. Enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you have created so far.
-- **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the SCOM Managed Instance (preview) that you create in the future. Thus, choose a VNet that you will eventually use for your SCOM Managed Instance (preview), or if you choose a different VNet, ensure it has connectivity to the SCOM Managed Instance (preview) VNet. 
+- **Authentication Method**: Select **SQL Authentication**. Enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you've created so far.
+- **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the SCOM Managed Instance (preview) that you create in the future. Thus, choose a VNet that you'll eventually use for your SCOM Managed Instance (preview), or if you choose a different VNet, ensure it has connectivity to the SCOM Managed Instance (preview) VNet. 
 
     In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?view=azuresql).
 - **Connection Type**: By default, connection type is Proxy.
-- **Public Endpoint**: This can either be *Enabled* or *Disabled*. To leverage the Power BI reporting, you need to enable the Public Endpoint. 
+- **Public Endpoint**: This can either be *Enabled* or *Disabled*. To use the Power BI reporting, you need to enable the Public Endpoint. 
 
      If the SQL MI VNet is different from the SCOM MI VNet:
 
-    - If you enable it, you have to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager VNet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql).
-    - If you disable it, you have to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM managed instance (preview) are present.
+    - If you enable it, you've to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager VNet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql).
+    - If you disable it, you've to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM managed instance (preview) are present.
 	
 For the rest of the settings in the other tabs, you can leave them as default or change as per your requirements.
 
@@ -166,7 +165,7 @@ For more information, see [Directory Readers role in Azure Active Directory for 
 2.	Select **Set admin**, search for your MSI (the same MSI that you provided during the SCOM Managed Instance (preview) creation flow). You will find the admin added to the SQL MI.
      :::image type="Azure Active directory admin" source="media/create-operations-manager-managed-instance/azure-active-directory.png" alt-text="Screenshot of Azure Active directory admin.":::
 
-3.	If you get an error after you add a managed identity account, it indicates that read permissions are not yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, else your instance creation will fail.
+3.	If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, else your instance creation will fail.
      :::image type="SQL Active directory admin" source="media/create-operations-manager-managed-instance/sql-active-directory-admin.png" alt-text="Screenshot of SQL Active directory admin.":::
 
 ## Create a key vault and add credentials as a secret in the Key vault  
@@ -174,7 +173,7 @@ For more information, see [Directory Readers role in Azure Active Directory for 
 Store the domain account you create in Active Directory in a Key vault account for security. Azure Key Vault is a cloud service that provides a secure store for keys, secrets, and certificates. For more information, see [Azure Key Vault](/azure/key-vault/general/overview). 
 
 >[!Note]
-> Ensure you are a contributor in the subscription you create the MSI.
+> Ensure you're a contributor in the subscription you create the MSI.
 
 1.	Open Azure portal and search for **Key vaults**. The Key vaults page opens.
      :::image type="Key vaults in portal" source="media/create-operations-manager-managed-instance/azure-portal-key-vaults.png" alt-text="Screenshot of Key vaults in portal.":::
@@ -188,7 +187,7 @@ Store the domain account you create in Active Directory in a Key vault account f
         - **Resource group**: Select the desired resource group.
     - **Instance details**:
         -  **Key vault name**: The name of your key vault. No added restrictions except for those that apply to names in other Azure services
-        - **Region**: Choose the region that you are going to select for your other resources
+        - **Region**: Choose the region that you're going to select for your other resources
         - **Pricing tier**: Standard is good enough for our needs. Select premium if you need to
     - **Recovery options**:
         - **Soft-delete**:
@@ -205,9 +204,8 @@ Store the domain account you create in Active Directory in a Key vault account f
              :::image type="Create an Access policy" source="media/create-operations-manager-managed-instance/create-an-access-policy.png" alt-text="Screenshot of Create an Access policy.":::
         1. Select **Next**.
         1. In **Principal**, search for the MSI you created in the previous step and select.
-             :::image type="Access policies principal" source="media/create-operations-manager-managed-instance/principal-inline.png" alt-text="Screenshot of Access policies principal." lightbox="media/create-operations-manager-managed-instance/principal-expanded.png":::
+
         1. In **Review + create**, review the selections, and select **Create**. 
-             :::image type="Access policy review" source="media/create-operations-manager-managed-instance/access-policy-review-inline.png" alt-text="Screenshot of Access policy review." lightbox="media/create-operations-manager-managed-instance/access-policy-review-expanded.png":::
 1. Select the access policy created and then select **Next**.
      :::image type="Access policy" source="media/create-operations-manager-managed-instance/access-policy.png" alt-text="Screenshot of Access policy.":::
 1. In **Networking**, do the following:
@@ -241,30 +239,36 @@ Store the domain account you create in Active Directory in a Key vault account f
 To create a SCOM Managed Instance (preview), follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **SCOM** or **SCOM Managed Instance**.
-1. On the Overview page, you have three options:
+1. On the Overview page, you've three options:
     - **Pre-requisites**: Allows you to view the prerequisites.
-    - **Create SCOM Managed Instance**: Allows you to create a SCOM Managed Instance (preview).
-    - **Manage your SCOM Managed Instance**: Allows you to view the list of instances created.
+    - **Create SCOM managed instance**: Allows you to create a SCOM Managed Instance (preview).
+    - **Manage your SCOM managed instance**: Allows you to view the list of instances created.
+         :::image type="SCOM MI Overview" source="media/create-operations-manager-managed-instance/scom-mi-overview.png" alt-text="Screenshot showing SCOM MI Overview.":::
 1. Select **Create SCOM Managed Instance**.
 1. Under **Basics**, do the following:
     1. **Project details**:
         1. **Subscription**: Select the Azure subscription in which you want to place the SCOM Managed Instance (preview).
-        1. **Resource group**: Select the resource group in which you want to place the SCOM Managed Instance (preview). If you don't have a resource group, select **Create New** to create a new resource group and then place the instance. We recommend you have a new resource group exclusively for SCOM Managed Instance (preview).
+        1. **Resource group**: Select the resource group in which you want to place the SCOM Managed Instance (preview). If you don't have a resource group, select **Create New** to create a new resource group, and then place the instance. We recommend you've a new resource group exclusively for SCOM Managed Instance (preview).
+             :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details.png" alt-text="Screenshot showing project details.":::
     1. **Instance details**:
         1. **SCOM Managed Instance name**: Enter the desired SCOM Managed Instance (preview) name.
             >[!Note]
             >- SCOM Managed Instance (preview) name can have only alphanumeric characters and be up to 10 characters long.
             >- SCOM Managed Instance (preview) is equivalent to System Center Operation Manager Management Group so choose a name accordingly.
         1. **Region**: Select the region that is near to you geographically so that latency between your agents and the SCOM Managed Instance (preview) is as low as possible.
+             :::image type="Instance details" source="media/create-operations-manager-managed-instance/instance-details.png" alt-text="Screenshot showing instance details.":::
     1. **Active directory details**: 
         1. **Domain name**: Enter the name of the domain that is being administered by the Domain Controller.
         1. **DNS Server IP**: Enter the IP address of the DNS Server that is providing the IP addresses to the resources in the domain mentioned above.
-        1. **OU Path**: Enter the OU Path to where you want to join the servers. This is not a necessary field and if left blank, will assume the default value.
+        1. **OU Path**: Enter the OU Path to where you want to join the servers. This isn't a necessary field and if left blank, will assume the default value.
+             :::image type="Active directory details" source="media/create-operations-manager-managed-instance/active-directory-details.png" alt-text="Screenshot showing Active directory details.":::
     1. **Domain account details**: 
-        1. **Key vault**: Select the key vault which you created that has the secret username and secret password of the domain account user credentials.
+        1. **Key vault**: Select the key vault, which you created that has the secret username and secret password of the domain account user credentials.
         1. **Username secret**: Enter the username under the selected key vault.
         1. **Password secret**: Enter the password under the selected key vault.
-    1. **Azure Hybrid Benefit**: Select **Yes** if you are using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview) and it won't apply to existing Windows Servers.
+             :::image type="Domain account details" source="media/create-operations-manager-managed-instance/domain-account-details.png" alt-text="Screenshot showing Domain account details.":::
+    1. **Azure Hybrid Benefit**: Select **Yes** if you're using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview) and it won't apply to existing Windows Servers.
+         :::image type="Azure hybrid benefit" source="media/create-operations-manager-managed-instance/azure-hybrid-benefit.png" alt-text="Screenshot showing Azure hybrid benefit.":::
 1. Select **Next**.
 1. Under **Networking**, do the following:
     1. **Virtual network**:
