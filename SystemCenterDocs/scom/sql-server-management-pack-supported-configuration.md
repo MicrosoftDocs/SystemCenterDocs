@@ -18,7 +18,9 @@ ms.technology: operations-manager
 Management Pack for SQL Server is version-agnostic. It supports the discovery and monitoring of SQL Server following versions:
 
 - SQL Server 2012
+  
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-sql-server-2012), this version is no longer being tested.
+  
 - SQL Server 2014
 - SQL Server 2016
 - SQL Server 2017 (Windows and Linux platforms)
@@ -66,7 +68,9 @@ Management Pack for SQL Server works with any edition of SQL Server from Express
 Management Pack for SQL Server supports the following versions of System Center Operations Manager:
 
 - System Center Operations Manager 2012 R2
+  
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
+
 - System Center Operations Manager 2016
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807

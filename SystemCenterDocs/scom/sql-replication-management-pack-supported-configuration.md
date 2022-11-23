@@ -18,7 +18,9 @@ ms.technology: operations-manager
 Management Pack for SQL Server Replication is version-agnostic. It supports the discovery and monitoring of SQL Server following versions:
 
 - SQL Server 2012
+  
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-sql-server-2012), this version is no longer being tested.
+
 - SQL Server 2014
 - SQL Server 2016
 - SQL Server 2017
@@ -60,7 +62,9 @@ All SQL Server Express editions support Replication as Subscriber with Push subs
 Management Pack for SQL Server Replication supports the following operating systems and platforms:
 
 - System Center Operations Manager 2012 R2
+  
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
+
 - System Center Operations Manager 2016
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807
@@ -82,5 +86,3 @@ Management Pack for SQL Server Replication supports the following 64-bit operati
 ## Agentless Monitoring
 
 Management Pack for SQL Server Replication supports [agentless mode](sql-server-management-pack-monitoring-modes.md) for monitoring of SQL on Windows.
-
-

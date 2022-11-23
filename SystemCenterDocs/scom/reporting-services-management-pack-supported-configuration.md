@@ -42,7 +42,9 @@ The following is a list of features and configurations supported in Management P
 Management Pack for SQL Server Analysis Services supports the following versions of System Center Operations Manager:
 
 - System Center Operations Manager 2012 R2
+  
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
+  
 - System Center Operations Manager 2016
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807

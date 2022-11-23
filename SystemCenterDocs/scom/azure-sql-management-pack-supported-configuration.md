@@ -77,7 +77,9 @@ When using the vCore-based purchase model, the following rules do not collect da
 Management Pack for Azure SQL Database supports the following versions of System Center Operations Manager:
 
 - System Center Operations Manager 2012 R2
+  
   Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
+  
 - System Center Operations Manager 2016
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807
