@@ -15,15 +15,19 @@ monikerRange: '>=sc-om-2019'
 
 # Create an Azure Monitor SCOM Managed Instance (preview) on Azure
 
-This article describes how to create an Azure Monitor SCOM Managed Instance (preview) that helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services, with System Center Operations Manager functionality on Azure.
+Azure Monitor SCOM Managed Instance (preview) provides System Center Operations Manager functionality on Azure and helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services.
+
+This article describes how to create a SCOM Managed Instance (preview) with SCOM functionality on Azure. 
+
+>[!Note]
+>In this preview, you can create an instance only in West Europe and West US.
 
 ## Prerequisites
 
-The following are the prerequisites before you create a SCOM Managed Instance (preview):
+Before you create a SCOM Managed Instance (preview), ensure the following:
 
 # [General Pointers](#tab/pointers-general)
-
-- In this preview, you can create an instance only in West Europe and West US. 
+ 
 - Ensure that you've at least four virtual cores (one VM) of type Standard DSv2 in your Azure subscription to deploy an instance.
 - Ensure you allow port 1433 (private port) from the SCOM Managed Instance (preview) to the SQL MI.
 - If you enable public endpoint on SQL MI, ensure that you allow 3342.
@@ -102,13 +106,13 @@ The Managed Service Identity provide an identity for applications to use when co
 1. Under **Review + create**, review all the information that you provided and select **Create**. 
      :::image type="Managed identity review" source="media/create-operations-manager-managed-instance/managed-identity-review.png" alt-text="Screenshot of Managed identity review.":::
 Your deployment will now be created on Azure and you can access the resource and view its details.
-     :::image type="Managed identity overview" source="media/create-operations-manager-managed-instance/overview-managed-identity.png" alt-text="Screenshot of Managed identity overview.":::
+     :::image type="Managed identity overview" source="media/create-operations-manager-managed-instance/overview-managed-identity-inline.png" alt-text="Screenshot of Managed identity overview." lightbox="media/create-operations-manager-managed-instance/overview-managed-identity-expanded.png":::
 
 ## Create and configure an SQL MI instance
 
 Before you create a SCOM Managed Instance (preview), create an SQL MI instance. For more information, see Create an Azure SQL Managed Instance.
 
-Below are the recommendations while you create an SQL MI instance:
+We recommend the following for creating an SQL MI instance:
 
 - **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommends you create a new Resource Group for large Azure resources.
 - **Managed Instance name**: Choose a unique name. This name will be used while you create a SCOM Managed Instance (preview) to refer to this SQL MI instance that you are creating.
@@ -195,15 +199,15 @@ Store the domain account you create in Active Directory in a Key vault account f
              :::image type="Create an Access policy" source="media/create-operations-manager-managed-instance/create-an-access-policy.png" alt-text="Screenshot of Create an Access policy.":::
         1. Select **Next**.
         1. In **Principal**, search for the MSI you created in the previous step and select.
-             :::image type="Access policies principal" source="media/create-operations-manager-managed-instance/principal.png" alt-text="Screenshot of Access policies principal.":::
+             :::image type="Access policies principal" source="media/create-operations-manager-managed-instance/principal-inline.png" alt-text="Screenshot of Access policies principal." lightbox="media/create-operations-manager-managed-instance/principal-expanded.png":::
         1. In **Review + create**, review the selections, and select **Create**. 
-             :::image type="Access policy review" source="media/create-operations-manager-managed-instance/access-policy-review.png" alt-text="Screenshot of Access policy review.":::
+             :::image type="Access policy review" source="media/create-operations-manager-managed-instance/access-policy-review-inline.png" alt-text="Screenshot of Access policy review." lightbox="media/create-operations-manager-managed-instance/access-policy-review-expanded":::
 1. Select the access policy created and then select **Next**.
      :::image type="Access policy" source="media/create-operations-manager-managed-instance/access-policy.png" alt-text="Screenshot of Access policy.":::
 1. In **Networking**, do the following:
     - Select **Enable public access**.
     - In **Public Access**, select **All networks** for **Allow access from**.
-             :::image type="Networking tab" source="media/create-operations-manager-managed-instance/Networking.png" alt-text="Screenshot of Networking tab.":::
+             :::image type="Networking tab" source="media/create-operations-manager-managed-instance/networking-inline.png" alt-text="Screenshot of Networking tab." lightbox="media/create-operations-manager-managed-instance/networking-expanded":::
 1. Select **Next**.
 1. In **Tags**, select the tags if required and select **Next**.
 1. In **Review + create**, review the selections, and select **Create** to create the Key vault.
@@ -228,7 +232,7 @@ Store the domain account you create in Active Directory in a Key vault account f
 
 ## Create a SCOM Managed Instance (preview)
 
-To create a SCOM Managed Instance (preview), follow the below steps:
+To create a SCOM Managed Instance (preview), follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **SCOM** or **SCOM Managed Instance**.
 1. On the Overview page, you have three options:

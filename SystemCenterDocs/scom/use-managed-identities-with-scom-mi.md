@@ -17,7 +17,7 @@ monikerRange: '>=sc-om-2019'
 
 A common challenge when building cloud applications is how to securely manage the credentials in your code for authenticating various services without saving them locally on a developer workstation or in source control. 
 
-*Managed identities for Azure* solve this problem for all your resources in Azure Active Directory by providing them with automatically managed identities. You can use a service's identity to authenticate any service that supports Azure Active Directory authentication, including Key Vault, without any credentials stored in your code. 
+*Managed identities for Azure* solve this problem for all your resources in Azure Active Directory by providing them with automatically managed identities. You can use a service's identity to authenticate any service that supports Azure Active Directory authentication, including Key Vault, without  sorting any credentials in your code. 
 
 >[!Note]
 >- *Managed identities for Azure* are the new name for the service formerly known as Managed Service Identity (MSI).
@@ -37,9 +37,9 @@ Managed identities for Azure are based upon several key concepts:
 
 There are two types of managed identities: 
 
-- A **System-assigned managed identity** is enabled directly on an Azure service instance. The lifecycle of a system-assigned identity is unique to the Azure service instance that it's enabled on. 
+- **System-assigned managed identity**: Enabled directly on an Azure service instance. The lifecycle of a system-assigned identity is unique to the Azure service instance that it's enabled on. 
 
-- A **User-assigned managed identity** is created as a standalone Azure resource. The identity can be assigned to one or more Azure service instances and is managed separately from the lifecycles of those instances. 
+- **User-assigned managed identity** - Created as a standalone Azure resource. The identity can be assigned to one or more Azure service instances and is managed separately from the lifecycles of those instances. 
 
 For more information on Managed identity types, see [How do managed identities for Azure resources work?](/azure/active-directory/managed-identities-azure-resources/overview#managed-identity-types). 
 
@@ -49,11 +49,11 @@ SCOM Managed Instance (preview) supports both System Assigned Managed Identity a
 
 - System Assigned Managed Identity
 
-     - SCOM Managed Instance (preview) will send different health or performance metrics to Geneva Cluster services, monitoring the instance behaviour at run time. The system Assigned Identity, which is delegated to SCOM Managed Instance (preview) resource will be used to authenticate with Azure Geneva Cluster services. 
+     - SCOM Managed Instance (preview) will send different health or performance metrics to Geneva Cluster services, monitoring the instance behavior at run time. The system Assigned Identity, which is delegated to SCOM Managed Instance (preview) resource will be used to authenticate with Azure Geneva Cluster services. 
 
 - User Assigned Managed Identity 
 
-     - For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and it will be used to access the SQL MI database. SCOM Managed Instance (preview) reads/writes customer workload monitoring data to SQL managed instance databases.  The User Assigned Identity assigned to SCOM Managed Instance (preview) resource will be used for authenticating from SCOM servers to SQL Managed instance. 
+     - For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and will be used to access the SQL MI database. SCOM Managed Instance (preview) reads/writes customer workload monitoring data to SQL managed instance databases.  The User Assigned Identity assigned to SCOM Managed Instance (preview) resource will be used for authenticating from SCOM servers to SQL Managed instance. 
 
      - SCOM Managed Instance (preview) onboarding process takes the domain user credentials stored in Customer Key vault. The secrets in the Customer Key vault are accessed using the managed identity assigned to SCOM MI instance. 
 

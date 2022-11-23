@@ -19,7 +19,7 @@ The Azure Monitor SCOM Managed Instance (preview) activity log is a platform l
 
 >[!Note]
 >- Entries in the Activity Log are system generated and can't be changed or deleted. 
->- Entries in the Activity Log are representing control plane changes such as create, update, scale, patch or delete SCOM Managed Instance (preview).
+>- Entries in the Activity Log represents control plane changes such as create, update, scale, patch or delete SCOM Managed Instance (preview).
 
 ## Retention period 
 
@@ -31,7 +31,7 @@ You can access the activity log from the Azure portal. The menu that you open it
 
 For more information on activity log categories, see [Azure activity log event schema](/azure/azure-monitor/essentials/activity-log-schema#categories).
 
-:::image type="Activity log" source="media/scom-mi-activity-log/view-activity-log.png" alt-text="Screenshot showing activity log.":::
+:::image type="Activity log" source="media/scom-mi-activity-log/view-activity-log-inline.png" alt-text="Screenshot showing activity log." lightbox="media/scom-mi-activity-log/view-activity-log-expanded":::
 
 ## Download the activity log 
 
@@ -41,10 +41,10 @@ Select **Download as CSV** to download the events in the current view.
 
 ### View change history 
 
-You can view the change history of some event that shows what changes happened during the event time. Select an event from the activity log as desired and then select the **Change history** to view any associated changes with that event.
+You can view the change history of an event and get the details of changes occured during the event time. Select an event from the activity log and then select the **Change history** to view any associated changes with that event.
 
 :::image type="Change history" source="media/scom-mi-activity-log/view-change-history.png" alt-text="Screenshot showing change history.":::
 
-If any changes are associated with the event, you'll see a list of changes that you can select. If you select a change, **Change history** page opens. This page displays the changes to the resource. In the following example, you can see that the SCOM Managed Instance (preview) tags and provision state changes. 
+If any changes are associated with the event, you'll see a list of changes that you can select. To view details, select a change. **Change history** page opens and displays the changes to the resource. In the following example, you can see that the SCOM Managed Instance (preview) tags and provision state changes. 
 
 :::image type="SCOM MI tags" source="media/scom-mi-activity-log/scom-mi-tags.png" alt-text="Screenshot showing SCOM MI tags."::: 
