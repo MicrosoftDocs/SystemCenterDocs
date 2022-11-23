@@ -8,7 +8,6 @@ ms.date: 11/18/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
-ms.custom: intro-overview
 ms.custom: engagement-fy23
 ---
 
