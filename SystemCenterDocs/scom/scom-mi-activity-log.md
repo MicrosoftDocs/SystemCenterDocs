@@ -31,7 +31,7 @@ You can access the activity log from the Azure portal. The menu that you open it
 
 For more information on activity log categories, see [Azure activity log event schema](/azure/azure-monitor/essentials/activity-log-schema#categories).
 
-:::image type="Activity log" source="media/scom-mi-activity-log/view-activity-log-inline.png" alt-text="Screenshot showing activity log." lightbox="media/scom-mi-activity-log/view-activity-log-expanded":::
+:::image type="Activity log" source="media/scom-mi-activity-log/view-activity-log-inline.png" alt-text="Screenshot showing activity log." lightbox="media/scom-mi-activity-log/view-activity-log-expanded.png":::
 
 ## Download the activity log 
 

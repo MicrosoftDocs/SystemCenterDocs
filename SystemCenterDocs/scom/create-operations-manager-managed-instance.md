@@ -206,13 +206,13 @@ Store the domain account you create in Active Directory in a Key vault account f
         1. In **Principal**, search for the MSI you created in the previous step and select.
              :::image type="Access policies principal" source="media/create-operations-manager-managed-instance/principal-inline.png" alt-text="Screenshot of Access policies principal." lightbox="media/create-operations-manager-managed-instance/principal-expanded.png":::
         1. In **Review + create**, review the selections, and select **Create**. 
-             :::image type="Access policy review" source="media/create-operations-manager-managed-instance/access-policy-review-inline.png" alt-text="Screenshot of Access policy review." lightbox="media/create-operations-manager-managed-instance/access-policy-review-expanded":::
+             :::image type="Access policy review" source="media/create-operations-manager-managed-instance/access-policy-review-inline.png" alt-text="Screenshot of Access policy review." lightbox="media/create-operations-manager-managed-instance/access-policy-review-expanded.png":::
 1. Select the access policy created and then select **Next**.
      :::image type="Access policy" source="media/create-operations-manager-managed-instance/access-policy.png" alt-text="Screenshot of Access policy.":::
 1. In **Networking**, do the following:
     - Select **Enable public access**.
     - In **Public Access**, select **All networks** for **Allow access from**.
-             :::image type="Networking tab" source="media/create-operations-manager-managed-instance/networking-inline.png" alt-text="Screenshot of Networking tab." lightbox="media/create-operations-manager-managed-instance/networking-expanded":::
+             :::image type="Networking tab" source="media/create-operations-manager-managed-instance/networking-inline.png" alt-text="Screenshot of Networking tab." lightbox="media/create-operations-manager-managed-instance/networking-expanded.png":::
 1. Select **Next**.
 1. In **Tags**, select the tags if required and select **Next**.
 1. In **Review + create**, review the selections, and select **Create** to create the Key vault.
