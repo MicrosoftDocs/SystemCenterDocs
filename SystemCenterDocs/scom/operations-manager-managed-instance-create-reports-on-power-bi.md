@@ -32,18 +32,18 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
 ## Create reports through public endpoint of SQL MI
 
 1. Sign into the Azure portal and search for SCOM Managed Instance (preview). The SCOM Managed Instance (preview) Overview page opens.
-1. On the Overview page, under Reports, select **Power BI**. You have three options on the Power BI page.
+1. On the **Overview** page, under **Reports**, select **Power BI**. You have three options on the Power BI page.
     1. **Prerequisite**: Allows you to manage endpoints.
     1. **Configure and install Power BI**: Allows you to install and configure the SCOM Managed Instance (preview) dashboard in Power BI.
     1. **View Power BI dashboard**: Allows you to visualize the SCOM Managed Instance (preview) dashboard in Power BI after the configuration.
         1. The app prepopulates the data. You can add parameter values such as **Data-Warehouse DB host URL** which is the public endpoint and **Data-Warehouse Name** which is the database name. 
             >[!Note]
-            >If you want to update these parameters, go to **Settings** of the dataset, and edit the parameters. 
+            >You can update these parameters. To update, go to **Settings** of the dataset, and edit the parameters. 
         1. After you enter the parameters, select any one of the following authentication methods:
             - SQL username and password-based method
             - Azure Active Directory based method 
             
-         The dataset will get refreshed and reports will be refreshed from the dataset. 
+         The dataset gets refreshed also the reports from the dataset gets refreshed. 
 
 ## Next steps
 
