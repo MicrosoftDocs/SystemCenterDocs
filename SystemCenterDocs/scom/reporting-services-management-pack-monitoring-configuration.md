@@ -63,6 +63,35 @@ SSRS Scale-out Deployment is a distributed application. Therefore, the deploymen
 
 Deployment watcher is an auxiliary object managed either by an agent installed on the server that hosts SSRS Database, or an agent that hosts one of SSRS Instances from the given deployment. This object is used to collect information about SQL Server Reporting Services deployments.
 
+## Disabling Monitoring of Specified SQL Server Reporting Services Versions
+
+Management Pack for SQL Server Reporting Services allows you to exclude certain versions of SQL Server Reporting Services from monitoring.
+
+To exclude versions that you do not want to monitor, override the **Versions of SQL Server to be excluded** parameter in the **MSSQL Reporting Services: Instance Discovery (Native Mode)** discovery with the versions that you want to exclude. Use comma to specify multiple versions.
+
+For example, an override "2016,2017" instructs the management pack to skip instances of SQL Server Reporting Services 2016 and 2017.
+
+![Disabling Monitoring of Specified SQL Server Versions](./media/reporting-services-management-pack/overriding-version-parameter.png)
+
+## Disabling Monitoring of Specified SQL Server Reporting Services Editions
+
+Management Pack for SQL Server Reporting Services allows you to exclude certain editions of SQL Server Reporting Services instances from monitoring.
+
+To exclude editions that you do not want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **MSSQL Reporting Services: Instance Discovery (Native Mode)** discovery with the editions that you want to exclude. Use comma to specify multiple editions.
+
+The following table lists short names that you can use to override the **Editions of SQL Server to be excluded** parameter.
+
+|Short Name|Covered Editions|
+|-|-|
+|Enterprise|Enterprise Edition, Enterprise Edition: Core-based Licensing|
+|Standard|Standard Edition, Business Intelligence Edition|
+|Web|Web Edition|
+|Developer|Developer Edition|
+|Express|Express Edition, Express Edition with Advanced Services|
+|Evaluation|Enterprise Evaluation Edition|
+
+![Disabling Monitoring of Specified SQL Server Editions](./media/reporting-services-management-pack/overriding-edition-parameter.png)
+
 ## Availability of SQL Server Reporting Services Components
 
 This management pack introduces a set of monitors for SSRS Deployments and SSRS Instances. These monitors verify availability from the following perspectives:
@@ -132,6 +161,43 @@ This management pack collects the following performance metrics:
   - Private memory consumed by Power BI Mashup containers (GB)
   - Total memory usage by running Power BI reports on the Server (GB)
 
+## Feature Groups
+
+In System Center Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. For more information about the groups, see [Creating and managing groups](system-center/scom/manage-create-manage-groups).
+
+In Management Pack for SQL Server Reporting Services you can use two groups, which have the dynamic type of membership:
+
+- MSSQL Reporting Services: Deployment Group
+  This group is used to contain all Reporting Services Deployment objects.
+
+- MSSQL Reporting Services: Power BI Feature Group
+  This group is used to enable Power BI for particular Reporting Services instances, which support this feature, for example:
+
+  - Memory consumed by running Power BI reports monitor
+  - MSSQL Reporting Services: Working set memory consumed by Power BI Mashup containers (GB) performance rule
+  - MSSQL Reporting Services: Private memory consumed by Power BI Mashup containers (GB) performance rule
+  - MSSQL Reporting Services: Working set memory consumed by Power BI Analysis Services process (GB) performance rule
+  - MSSQL Reporting Services: Private memory consumed by Power BI Analysis Services process (GB) performance rule
+  - MSSQL Reporting Services: Total memory usage by running Power BI reports on Server (GB) performance rule
+
+## Enabling Debugging
+
+In Management Pack for SQL Server Reporting Services, you can enable debugging in the Windows Event log in cases when you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
+
+To enable debugging, do the following:
+
+1. Open the Windows registry.
+
+2. Create the following key:
+`HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server MP`
+
+3. Create a Multi-String with the name `<MG Name>` that corresponds to the management group name for which you want to collect logs. Leave **Value data** empty to enable Debug logging for all SQL MP modules in the Operations Manager Event Log.
+
+The same should be done for each agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
+
+>[!NOTE]
+>Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
+
 ## How Health Rolls Up
 
 The following diagram shows how health states of objects roll up for the SQL Server on Windows management pack.
@@ -149,4 +215,4 @@ Creating a new management pack for storing overrides has the following advantage
 
 - Creating a new management pack for storing customizations of each sealed management pack makes it easier to export the customizations from a test environment to a production environment. It also makes it easier to delete a management pack, because you must delete any dependencies before you can delete a management pack. If customizations for all management packs are saved in the Default Management Pack and you need to delete a single management pack, you must delete the default management pack first, which also deletes customizations for other management packs.
 
-For more information about management pack customizations and the default management pack, see [What is in an Operations Manager management pack?](manage-overview-management-pack.md).
+For more information about management pack customizations and the default management pack, see [What is in an Operations Manager management pack?](manage-overview-management-pack.md)
