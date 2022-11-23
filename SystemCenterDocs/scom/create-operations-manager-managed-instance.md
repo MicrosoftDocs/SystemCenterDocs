@@ -67,7 +67,7 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 
 ## Create and configure a gMSA account 
 
-- Create a gMSA (Group Managed Service Account) account to run the Management Server services and to authenticate the services. Use the following PowerShell command to create a gMSA account: 
+- Create a gMSA (Group Managed Service Account) account to run the Management Server services and to authenticate the services. Use the below command to create a gMSA account: 
 
     ```powershell
     New-ADServiceAccount VMSSLBContoso -DNSHostName "ContosoVMSSLB.aquiladomdns.comnet" -PrincipalsAllowedToRetrieveManagedPassword ‘ContosoServerGroupcomputerGroup’ -KerberosEncryptionType RC4, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMHSvc/ ContosoLBVMSSLB, MSOMSdkSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMSdkSvc/ VMSSLB ContosoLB 
@@ -78,6 +78,11 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
     - ContosoServerGroupcomputerGroup = Computer group in AD (specified previously)
     - MSOMHSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMHSvc/ VMSSLB	ContosoLB, MSOMSdkSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMSdkSvc/ ContosoLBVMSSLB = Service Principal names 
 
+- Use the below command, if the root key is not effective:
+ 
+    ```powershell
+    Add-KdsRootKey -EffectiveTime ((get-date).addhours(-10)) 
+    ```
 
 # [In Azure portal](#tab/prereqs-portal)
 
