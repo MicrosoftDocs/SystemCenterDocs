@@ -229,7 +229,7 @@ Store the domain account you create in Active Directory in a Key vault account f
 1. Do the following in **Create a secret** page.
     - **Upload options**: Select **Manual**.
     - **Name**: Enter the name of secret. For example, you can use *Username* for username secret and *Password* for password secret.
-    - **Secret value**: The credential values for the specific item. For username, it will be the domain account username and for password, it will be the domain account password.
+    - **Secret value**: The credential values for the specific item. For username (in the format, domain\username), it will be the domain account username and for password, it will be the domain account password.
     - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**, **Enabled**, **Tags** as default and select **Create** to create the secret.
          :::image type="Create a secret" source="media/create-operations-manager-managed-instance/create-a-secret.png" alt-text="Screenshot of create a secret.":::
 
