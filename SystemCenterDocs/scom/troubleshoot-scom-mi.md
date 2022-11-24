@@ -39,14 +39,14 @@ Occurs when the subnet has delegations.
 
 To resolve, provide a subnet without any delegation.
 
-### Issue: Error when SCOM Managed Instance (preview) is reaching SQL MI `%instance;`
+### Issue: Error when SCOM Managed Instance (preview) is reaching SQL Managed Instance `%instance;`
 
 **Cause**:	
 
 This error can be caused by multiple reasons: 
-   - SCOM Managed Instance might not have read permissions on the SQL MI or 
+   - SCOM Managed Instance might not have read permissions on the SQL Managed Instance or 
    - There might be an issue with your VNet/Region. 
-For more information, see [Create and configure an SQL MI](/system-center/scom/create-operations-manager-managed-instance?tabs=prereqs-portal#create-and-configure-an-sql-mi-instance).
+For more information, see [Create and configure an SQL Managed Instance](/system-center/scom/create-operations-manager-managed-instance?tabs=prereqs-portal#create-and-configure-an-sql-mi-instance).
 
 **Resolution**:	
 
@@ -95,13 +95,13 @@ Occurs due to the following reasons:
 
 Resolve the issue and try again.
 
-### Issue: Error when SCOM Server is reaching SQL MI endpoint `%endpoint;`
+### Issue: Error when SCOM Server is reaching SQL Managed Instance endpoint `%endpoint;`
 
 **Cause**
 
 Occurs due to the following reasons:
 1. Line-of-sight visibility from SCOM Managed Instance (preview) VNet to SQL Managed Instance (preview) endpoint or
-2. Missing the right level of NSG rules to allow traffic over SQL MI public endpoint.
+2. Missing the right level of NSG rules to allow traffic over SQL Managed Instance public endpoint.
 
 **Resolution**
 
@@ -139,25 +139,25 @@ To resolve, provide an available IP from the subnet range and retry the operatio
 
 ## Deploy Reports on Power BI 
 
-### Issue: SQLMI isn't reachable
+### Issue: SQL Managed Instance isn't reachable
 
 **Cause**
 
-Occurs if the public endpoint isn't enabled. Power BI won't be able to reach SQL MI.
+Occurs if the public endpoint isn't enabled. Power BI won't be able to reach SQL Managed Instance.
 
 **Resolution**
 
-To resolve, enable public endpoint on SQL MI.
+To resolve, enable public endpoint on SQL Managed Instance.
 
 ### Issue: Unable to refresh dataset credentials
 
 **Cause**
 
-Occurs if the user doesn't have appropriate permissions on the SQL MI.
+Occurs if the user doesn't have appropriate permissions on the SQL Managed Instance.
 
 **Resolution**
 
-To resolve, check the user permissions on SQL MI and provide the required permissions.
+To resolve, check the user permissions on SQL Managed Instance and provide the required permissions.
 
 ### Issue: Report unable to refresh
 
@@ -327,11 +327,11 @@ In case you've triggered a scaling operation, wait for the operation to complete
 
 **Cause**
 
-Occurs if SQL MI and SCOM Managed Instance (preview) are in different regions due to which the extension takes more time to update and eventually fails.
+Occurs if SQL Managed Instance and SCOM Managed Instance (preview) are in different regions due to which the extension takes more time to update and eventually fails.
 
 **Resolution**
 
-To resolve, have SQL MI and SCOM Managed Instance (preview) in same region.
+To resolve, have SQL Managed Instance and SCOM Managed Instance (preview) in same region.
 
 ### Issue: After patching, user data in the database is altered or not retained properly
 
