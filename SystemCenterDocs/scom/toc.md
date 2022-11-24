@@ -73,14 +73,14 @@
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
 ### Azure Monitor SCOM Managed Instance (preview)
 #### [Create a SCOM Managed Instance (preview)](create-operations-manager-managed-instance.md)
-#### [Patch SCOM Managed Instance (preview)](patch-scom-mi.md)
+#### [Patch SCOM Managed Instance (preview)](patch-scom-managed-instance.md)
 #### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
 #### Post Deployment
 ##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
 #### Logs
 ##### [Activity Log](scom-mi-activity-log.md)
 #### [FAQs](operations-manager-managed-instance-common-questions.md)
-#### [Troubleshoot](troubleshoot-scom-mi.md)
+#### [Troubleshoot](troubleshoot-scom-managed-instance.md)
 #### Security
 ##### [Managed Identity](use-managed-identities-with-scom-mi.md)
 ##### [Encryption at rest](scom-mi-data-encryption-at-rest.md)

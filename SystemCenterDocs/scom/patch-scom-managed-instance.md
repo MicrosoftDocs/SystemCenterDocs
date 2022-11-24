@@ -34,15 +34,15 @@ To patch SCOM Managed Instance (preview), follow these steps:
 1. On the **Overview** page, under **Configuration**, select **Patching**.
 1. On the **Patching** page, you'll see the status of the updates available for your instance.
 
-     :::image type="Patching" source="media/patch-scom-mi/scom-mi-patching.png" alt-text="Screenshot of Patching.":::
+     :::image type="Patching" source="media/patch-scom-managed-instance/scom-mi-patching.png" alt-text="Screenshot of Patching.":::
 
 1. Select **Update instance** to update your instance.
 
-     :::image type="Update Instance" source="media/patch-scom-mi/update-instance.png" alt-text="Screenshot of Update Instance.":::
+     :::image type="Update Instance" source="media/patch-scom-managed-instance/update-instance.png" alt-text="Screenshot of Update Instance.":::
  
 It takes 30 mins to 1 hour to successfully update the instance.
 
- :::image type="Instance updated" source="media/patch-scom-mi/instance-updated.png" alt-text="Screenshot of Instance updated.":::
+ :::image type="Instance updated" source="media/patch-scom-managed-instance/instance-updated.png" alt-text="Screenshot of Instance updated.":::
 
 ## Next steps
 
