@@ -79,6 +79,7 @@
 #### Logs
 ##### [Activity Log](scom-mi-activity-log.md)
 #### [FAQs](operations-manager-managed-instance-common-questions.md)
+#### [Troubleshoot](troubleshoot-scom-mi.md)
 #### Security
 ##### [Managed Identity](use-managed-identities-with-scom-mi.md)
 ##### [Encryption at rest](scom-mi-data-encryption-at-rest.md)
