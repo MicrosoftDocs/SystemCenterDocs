@@ -23,7 +23,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 
 **Cause**
 
-Occurs when *ManagedBy* property is set for this resource group.
+Occurs when the *ManagedBy* property is set for this resource group.
 
 **Resolution**
 
@@ -33,17 +33,17 @@ To resolve, provide another resource group with *ManagedBy* property as empty.
 
 **Cause**
 
-Occurs when subnet has delegations.
+Occurs when the subnet has delegations.
 
 **Resolution**
 
-To resolve, provide subnet without any delegation.
+To resolve, provide a subnet without any delegation.
 
 ### Issue: Error when SCOM Managed Instance (preview) is reaching SQL MI `%instance;`
 
 **Cause**:	
 
-This error can be because of multiple reasons: 
+This error can be caused by multiple reasons: 
    - SCOM Managed Instance might not have read permissions on the SQL MI or 
    - There might be an issue with your VNet/Region. 
 For more information, see [Create and configure an SQL MI](/system-center/scom/create-operations-manager-managed-instance?tabs=prereqs-portal#create-and-configure-an-sql-mi-instance).
@@ -56,7 +56,7 @@ To resolve, provide read permission to the SQL managed instance.
 
 **Cause**
 
-Occurs as there's no enough cores to create instance in the given region.
+Occurs as there's no enough cores to create an instance in the given region.
 
 **Resolution**
 
@@ -66,11 +66,11 @@ To resolve, allocate more cores in the region.
 
 **Cause**
 
-Occurs as the secret key with same name is already present in the Key vault.
+Occurs as the secret key with the same name is already present in the Key vault.
 
 **Resolution**
 
-To resolve, either change the name of instance or select different resource group.
+To resolve, either change the name of the instance or select a different resource group.
 
 ### Issue: Error when you install SCOM. `%ErrorMessage;`
 
@@ -87,7 +87,7 @@ Resolve issue and try again.
 **Cause**
 
 Occurs due to the following reasons:
-1. Line of sight visibility from SCOM Managed Instance (preview) Server to Domain Controller.
+1. Line-of-sight visibility from SCOM Managed Instance (preview) Server to Domain Controller.
 2. Domain User Credentials.
 3. OU Path for AD Domain.
 
@@ -100,8 +100,8 @@ Resolve the issue and try again.
 **Cause**
 
 Occurs due to the following reasons:
-1. Line of sight visibility from SCOM Managed Instance (preview) VNet to SQL Managed Instance (preview) endpoint or
-2. Missing right level of NSG rules to allow traffic over SQL MI public endpoint.
+1. Line-of-sight visibility from SCOM Managed Instance (preview) VNet to SQL Managed Instance (preview) endpoint or
+2. Missing the right level of NSG rules to allow traffic over SQL MI public endpoint.
 
 **Resolution**
 
@@ -125,7 +125,7 @@ Occurs due to invalid Managed identity.
 
 **Resolution**
 
-To resolve, provide One of the possible Identity types (`None`, `UserAssigned`, `SystemAssigned`, `SystemAssigned,UserAssigned`) and try again.
+To resolve, provide one of the possible Identity types (`None`, `UserAssigned`, `SystemAssigned`, `SystemAssigned,UserAssigned`) and try again.
 
 ### Issue: Private static IP address `%LbIpAddr;` doesn't belong to the range of subnet `%subnet;`
 
@@ -153,17 +153,17 @@ To resolve, enable public endpoint on SQL MI.
 
 **Cause**
 
-Occurs if user doesn't have appropriate permissions on the SQL MI.
+Occurs if the user doesn't have appropriate permissions on the SQL MI.
 
 **Resolution**
 
-To resolve, check the user permissions on SQL MI and provide required permissions.
+To resolve, check the user permissions on SQL MI and provide the required permissions.
 
 ### Issue: Report unable to refresh
 
 **Cause**
 
-Occurs due to large data size report might not refresh.
+Occurs due to large data size. The report might not refresh.
 
 **Resolution**
 
@@ -179,7 +179,7 @@ Occurs if there are no cores available for scaling.
 
 **Resolution**
 
-To resolve, increase the number of cores in subscription or delete existing VMs/VMSS.
+To resolve, increase the number of cores in the subscription or delete existing VMs/VMSS.
 
 ### Issue: Extension provisioning error
 
@@ -189,13 +189,13 @@ This error might happen during the provisioning of SCOM extension or SCOM instal
 
 **Resolution**
 
-To resolve, report to development team.
+To resolve, report to the development team.
 
 ### Issue: Conflict
 
 **Cause**
 
-Occurs if patching or scaling is already on going. Another operation can't be triggered.
+Occurs if patching or scaling is already on going. A new operation can't be triggered.
 
 **Resolution**
 
@@ -211,7 +211,7 @@ Development Issue.
 
 **Resolution**
 	
-To resolve, report to development team.
+To resolve, report to the development team.
 
 ### Issue: Notification is stuck at *Fetching updates* even though the update operation is complete
 
@@ -221,7 +221,7 @@ Network Issue/development Issue.
 
 **Resolution**
 
-To resolve, try refreshing for updates. If not resolved, report to development team.
+To resolve, try refreshing for updates. If not resolved, report to the development team.
 
 ### Issue: Update state isn't reflected correctly on the card
 
@@ -231,11 +231,11 @@ Network Issue/development Issue.
 
 **Resolution**
 
-To resolve, try refreshing for updates. If not resolved, report to development team.
+To resolve, try refreshing for updates. If not resolved, report to the development team.
 
 ### Inconsistency in the controls within the card
 
-For example, the update button is enabled even though the title of the card reads - **SCOM is up to date**.
+For example, the update button is enabled even though the title of the card reads **SCOM is up to date**.
 
 **Cause**
 
@@ -243,19 +243,19 @@ Development Issue.
 
 **Resolution**
 
-To resolve, report to development team.
+To resolve, report to the development team.
 
 ### Issue: Warning ribbon for updates pop up in scenarios
 
 **Cause**
 
 Occurs due to the following reasons:
-1. New update is available, and the user hasn't triggered update instance
-2. Last update failed and the user hasn't triggered update instance
+1. New update is available, and the user hasn't triggered the update instance
+2. Last update failed and the user hasn't triggered another update instance
 
 **Resolution**
 
-To resolve, trigger *update instance*.
+To resolve, trigger an *update instance*.
 
 ### Issue: Update fails on more than one retries
 
@@ -263,7 +263,7 @@ To resolve, trigger *update instance*.
 	
 **Resolution**
 
-To resolve, report to development team.
+To resolve, report to the development team.
 
 ### Issue: Update fails, and rollback fails leaving an inconsistent state where the number of VMs on the VMSS instance has been modified
 
@@ -271,7 +271,7 @@ To resolve, report to development team.
 
 **Resolution**
 
-To resolve, report to development team.
+To resolve, report to the development team.
 
 ### Update fails but database update is successful
 
@@ -281,7 +281,7 @@ Occurs due to failed update after the successful database update.
 
 **Resolution**
 
-To resolve, report to development team.
+To resolve, report to the development team.
 
 ### Issue:	After successful update, SCOM console isn't functioning properly on the instance
 
@@ -291,7 +291,7 @@ Occurs if SCOM isn't installed properly or some process might be stuck.
 
 **Resolution**
 
-To resolve, try to restart the instance. If issue persists, report to the development team.
+To resolve, try to restart the instance. If the issue persists, report to the development team.
 
 ### Issue: Update is taking more than 3 hours -> FAILS eventually
 
@@ -301,13 +301,13 @@ Occurs when the update takes more than 3 hours.
 
 **Resolution**
 
-To resolve, report to development team.
+To resolve, report to the development team.
 
 ### Issue: Some intermittent issue during update
 
 **Cause**
 
-Occurs if service fabric or RP crashes or restarts.
+Occurs if the service fabric or RP crashes or restarts.
 
 **Resolution**
 
@@ -321,13 +321,13 @@ Occurs if scaling and patching requests are sent and accepted at the same time.
 
 **Resolution**
 
-In case you've triggered a scaling operation, wait for the operation to complete before you try update operation.
+In case you've triggered a scaling operation, wait for the operation to complete before you try to update operation.
 
 ### Issue: Extension takes more time to update -> FAILING
 
 **Cause**
 
-Occurs if SQL MI and SCOM Managed Instance (preview) are in different regions. Due to which, extension takes more time to update and eventually fails.
+Occurs if SQL MI and SCOM Managed Instance (preview) are in different regions due to which the extension takes more time to update and eventually fails.
 
 **Resolution**
 
@@ -351,15 +351,15 @@ Occurs due to portal or ARM Issue.
 
 **Resolution**
 
-To resolve, wait for some time and retry. If issue exists even after fixing portal/ ARM issue, report to development team.
+To resolve, wait for some time and retry. If the issue exists even after fixing the portal/ ARM issue, report to the development team.
 
 
 ### Issue: Patching or scaling operation is already in progress, try again after some time.
 
 **Cause**
 
-Occurs if patching or scaling operation is already in progress.
+Occurs if a patching or scaling operation is already in progress.
 
 **Resolution**
 
-To resolve, wait for existing operation to complete and try after some time.
+To resolve, wait for the existing operation to complete and try after some time.

@@ -19,9 +19,9 @@ Azure Monitor SCOM Managed Instance (preview) offers a convenient patching exper
 
 Below are the key differences:
 
-- No concept of update rollup in SCOM Managed Instance (preview). A patch will be released as and when there are significant fixes and updates made to the product. They'll be released at a cadence of as often as two weeks or two months.
-- Patching is quick and convenient. Select the button and wait for the patch to complete.
-- All newer patches are backward compatible with older versions. 
+- No update rollup in SCOM Managed Instance (preview). A patch will be released as and when there are significant fixes and updates made to the product. They'll be released at a frequency of as often as two weeks or two months.
+- Patching is quick and convenient and happens at a click of a button.
+- All newer patches are backward compatible with the older versions. 
 
 This article provides information on how to patch your SCOM Managed Instance (preview).
 
@@ -31,7 +31,7 @@ To patch SCOM Managed Instance (preview), follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) and search for **SCOM** or **SCOM Managed Instance**.
 1. On the **Overview** page, under **Configuration**, select **Patching**.
-1. On the **Patching** page, you'll see the status of available updates for your instance.
+1. On the **Patching** page, you'll see the status of the updates available for your instance.
 
      :::image type="Patching" source="media/patch-scom-mi/scom-mi-patching.png" alt-text="Screenshot of Patching.":::
 
