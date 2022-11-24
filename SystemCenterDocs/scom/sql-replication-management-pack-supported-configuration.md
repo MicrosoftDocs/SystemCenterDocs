@@ -2,10 +2,10 @@
 ms.assetid: b849557b-8ed6-4bed-a374-a072a724dba6
 title: Scope and supported configuration in Management Pack for SQL Server Replication
 description: This article explains the scope and supported configuration for Management Pack for SQL Server Replication
-author: Anastas1ya
-ms.author: v-asimanovic
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 11/23/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -13,40 +13,23 @@ ms.technology: operations-manager
 
 # Scope and Supported Configuration in Management Pack for SQL Server Replication
 
-Management Pack for SQL Server Replication is version-agnostic and supports discovery and monitoring of SQL Server 2012 through 2019 and higher.
+## SQL Server Versions
 
-## Operating Systems and Platforms
+Management Pack for SQL Server Replication is version-agnostic. It supports the discovery and monitoring of SQL Server following versions:
 
-Management Pack for SQL Server Replication supports the following 64-bit operating systems and platforms:
+- SQL Server 2012
+  
+  Due to the [Lifecycle Policy](/lifecycle/products/microsoft-sql-server-2012), this version is no longer being tested.
 
-- Windows Server 2012
-- Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server 2019
-
-## System Center Operations Manager
-
-Management Pack for SQL Server Replication supports the following operating systems and platforms:
-
-- System Center Operations Manager 2012 R2
-- System Center Operations Manager 2016
-- System Center Operations Manager 1801
-- System Center Operations Manager 1807
-- System Center Operations Manager 2019
-
-A dedicated management group is not required.
-
-## Agentless Monitoring
-
-Management Pack for SQL Server Replication supports [agentless mode](sql-server-management-pack-monitoring-modes.md) for monitoring of SQL on Windows.
+- SQL Server 2014
+- SQL Server 2016
+- SQL Server 2017
+- SQL Server 2019
+- SQL Server 2022
 
 ## SQL Server Features
 
-Management Pack for SQL Server Replication works with any Express or Enterprise edition of SQL Server 2012 up to SQL Server 2019 and higher.
-
-All SQL Server Express editions support Replication as Subscriber with Push subscriptions only. For more informarion, see [Editions and supported features of SQL Server](/sql/sql-server/editions-and-components-of-sql-server-version-15).
-
-The following features and configurations of 64-bit SQL Server Database Engine are supported:
+Management Pack for SQL Server Replication works with any edition of SQL Server from Express to Enterprise and supports the following features and configurations:
 
 - Distributor
   - Log Reader Agent metrics
@@ -68,3 +51,38 @@ The following features and configurations of 64-bit SQL Server Database Engine a
   - Database Availability metrics
   - Database Configuration metrics
   - Database Performance metrics
+- [Not supported] Localized versions of SQL Server
+    Management Pack for SQL Server Replication supports English-language version of SQL Server only.
+- [Not supported] 32-bit versions of SQL Server
+
+All SQL Server Express editions support Replication as Subscriber with Push subscriptions only. For more information, see [Editions and supported features of SQL Server](/sql/sql-server/editions-and-components-of-sql-server-version-15).
+
+## System Center Operations Manager
+
+Management Pack for SQL Server Replication supports the following operating systems and platforms:
+
+- System Center Operations Manager 2012 R2
+  
+  Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
+
+- System Center Operations Manager 2016
+- System Center Operations Manager 1801
+- System Center Operations Manager 1807
+- System Center Operations Manager 2019
+- System Center Operations Manager 2022
+
+A dedicated management group is not required.
+
+## Operating Systems and Platforms
+
+Management Pack for SQL Server Replication supports the following 64-bit operating systems and platforms:
+
+- Windows Server 2012
+- Windows Server 2012 R2
+- Windows Server 2016
+- Windows Server 2019
+- Windows Server 2022
+
+## Agentless Monitoring
+
+Management Pack for SQL Server Replication supports [agentless mode](sql-server-management-pack-monitoring-modes.md) for monitoring of SQL on Windows.
