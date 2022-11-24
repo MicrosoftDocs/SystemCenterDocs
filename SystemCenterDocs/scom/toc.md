@@ -72,7 +72,8 @@
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
 ### Azure Monitor SCOM Managed Instance (preview)
-#### [Create a SCOM managed Instance (preview)](create-operations-manager-managed-instance.md)
+#### [Create a SCOM Managed Instance (preview)](create-operations-manager-managed-instance.md)
+#### [Patch SCOM Managed Instance (preview)](patch-scom-mi.md)
 #### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
 #### Post Deployment
 ##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
