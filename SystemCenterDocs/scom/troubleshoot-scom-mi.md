@@ -72,7 +72,7 @@ Occurs as the secret key with same name is already present in the Key vault.
 
 To resolve, either change the name of instance or select different resource group.
 
-### Issue: Error when you install SCOM. `%ErrorMessage;`.
+### Issue: Error when you install SCOM. `%ErrorMessage;`
 
 **Cause**
 
@@ -82,7 +82,7 @@ Check the error message and resolve the issue.
 
 Resolve issue and try again.
 
-### Issue: VM has reported a failure when processing extension `joindomain` to join to the domain  `%DomainName;`.
+### Issue: VM has reported a failure when processing extension `joindomain` to join to the domain  `%DomainName;`
 
 **Cause**
 
@@ -111,7 +111,7 @@ Resolve the issue and try again.
 
 **Cause**
 
-Occurs if static IP is used by other instance.
+Occurs if static IP is used by another instance.
 
 **Resolution**
 
@@ -189,7 +189,7 @@ This error might happen during the provisioning of SCOM extension or SCOM instal
 
 **Resolution**
 
-To resolve, report to Development Team.
+To resolve, report to development team.
 
 ### Issue: Conflict
 
@@ -199,9 +199,9 @@ Occurs if patching or scaling is already on going. Another operation can't be tr
 
 **Resolution**
 
-To resolve, Wait for the ongoing process to complete and try again.
+To resolve, wait for the ongoing process to complete and try again.
 
-## Patching UI
+## Patch UI
 
 ### Issue: One or more controls on the patching blade aren't visible
 
@@ -211,27 +211,27 @@ Development Issue.
 
 **Resolution**
 	
-To resolve, report to Development Team.
+To resolve, report to development team.
 
 ### Issue: Notification is stuck at *Fetching updates* even though the update operation is complete
 
 **Cause**
 
-Network Issue/ Development Issue.
+Network Issue/development Issue.
 
 **Resolution**
 
-To resolve, try refreshing for updates. If not resolved, report to Dev Team.
+To resolve, try refreshing for updates. If not resolved, report to development team.
 
 ### Issue: Update state isn't reflected correctly on the card
 
 **Cause**
 
-Network Issue/ Development Issue.
+Network Issue/development Issue.
 
 **Resolution**
 
-To resolve, try refreshing for updates. If not resolved, report to Dev Team.
+To resolve, try refreshing for updates. If not resolved, report to development team.
 
 ### Inconsistency in the controls within the card
 
@@ -243,7 +243,7 @@ Development Issue.
 
 **Resolution**
 
-To resolve, report to Development Team.
+To resolve, report to development team.
 
 ### Issue: Warning ribbon for updates pop up in scenarios
 
@@ -263,15 +263,15 @@ To resolve, trigger *update instance*.
 	
 **Resolution**
 
-To resolve, report to Development Team.
+To resolve, report to development team.
 
-### Issue: Update fails and rollback fails leaving an inconsistent state where the number of VMs on the VMSS instance has been modified
+### Issue: Update fails, and rollback fails leaving an inconsistent state where the number of VMs on the VMSS instance has been modified
 
 **Cause**
 
 **Resolution**
 
-To resolve, report to Development Team.
+To resolve, report to development team.
 
 ### Update fails but database update is successful
 
@@ -281,7 +281,7 @@ Occurs due to failed update after the successful database update.
 
 **Resolution**
 
-To resolve, report to Development Team.
+To resolve, report to development team.
 
 ### Issue:	After successful update, SCOM console isn't functioning properly on the instance
 
@@ -291,7 +291,7 @@ Occurs if SCOM isn't installed properly or some process might be stuck.
 
 **Resolution**
 
-To resolve, try to restart the instance. If issue persists report to the dev team.
+To resolve, try to restart the instance. If issue persists, report to the development team.
 
 ### Issue: Update is taking more than 3 hours -> FAILS eventually
 
@@ -301,7 +301,7 @@ Occurs when the update takes more than 3 hours.
 
 **Resolution**
 
-To resolve, report to Development Team.
+To resolve, report to development team.
 
 ### Issue: Some intermittent issue during update
 
@@ -351,10 +351,10 @@ Occurs due to portal or ARM Issue.
 
 **Resolution**
 
-To resolve, wait for some time and retry. If issue exists even after fixing portal/ ARM issue, report to Development Team.
+To resolve, wait for some time and retry. If issue exists even after fixing portal/ ARM issue, report to development team.
 
 
-### Issue: Patching or scaling operation is already in progress, try again after sometime.
+### Issue: Patching or scaling operation is already in progress, try again after some time.
 
 **Cause**
 
@@ -362,4 +362,4 @@ Occurs if patching or scaling operation is already in progress.
 
 **Resolution**
 
-To resolve, wait for existing operation to complete and try after sometime.
+To resolve, wait for existing operation to complete and try after some time.
