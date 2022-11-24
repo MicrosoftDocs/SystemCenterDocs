@@ -17,23 +17,23 @@ A server instance of Analysis Services is a copy of the msmdsrv.exe executable t
 
 Management Pack for SQL Server Analysis Services automatically discovers instances of SQL Server Analysis Services by implementing the following workflows:
 
-- Reading the registry to detect if SSAS is installed on the server. If installed, the management pack creates a seed object.
+- Reading the registry to detect if SQL Server Analysis Services is installed on the server. If installed, the management pack creates a seed object.
 
-- If the seed object is discovered, the management pack reads such data sources as the registry, WMI, SSAS configuration file, and so on, to discover instance properties and the **Seed** object.
+- If the seed object is discovered, the management pack reads such data sources as the registry, WMI, SQL Server Analysis Services configuration file, and so on, to discover instance properties and the **Seed** object.
 
 ## Discovery of SQL Server Analysis Services Instance
 
-SSAS Instance includes the following server modes:
+Analysis Services Instance includes the following server modes:
 
 - Multidimensional mode
 - Tabular mode
 - Power Pivot for SharePoint mode
 
-For comparing model features see [Determine the Server Mode of an Analysis Services Instance](/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance).
+For comparing model features see [Screenshot of determine the Server Mode of an Analysis Services Instance.](/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance).
 
 ## Discovery of SQL Server Analysis Services Database
 
-SSAS Databases includes the following server modes:
+Analysis Services Database includes the following server modes:
 
 - Multidimensional Database
   - Partition
@@ -47,7 +47,7 @@ To exclude versions that you do not want to monitor, override the **Versions of 
 
 For example, an override "2014,2016" instructs the management pack to skip instances of SQL Server Analysis Services 2014 and 2016.
 
-![Disabling Monitoring of Specified SQL Server Versions](./media/analysis-services-management-pack/overriding-version-parameter.png)
+![Screenshot of disabling Monitoring of Specified SQL Server Versions.](./media/analysis-services-management-pack/overriding-version-parameter.png)
 
 ## Disabling Monitoring of Specified SQL Server Analysis Services Editions
 
@@ -66,7 +66,7 @@ The following table lists short names that you can use to override the **Edition
 |Express|Express Edition, Express Edition with Advanced Services|
 |Evaluation|Enterprise Evaluation Edition|
 
-![Disabling Monitoring of Specified SQL Server Editions](./media/analysis-services-management-pack/overriding-edition-parameter.png)
+![Screenshot of disabling Monitoring of Specified SQL Server Editions.](./media/analysis-services-management-pack/overriding-edition-parameter.png)
 
 ## Disabling Monitoring of Specified Databases by Name
 
@@ -177,7 +177,7 @@ Performance collection rules collect the following metrics:
 
 The following diagram shows the roll up of the object health states.
 
-![Health Rolls Up](./media/analysis-services-management-pack/health-rolls-up.png)
+![Diagram of health Rolls Up.](./media/analysis-services-management-pack/health-rolls-up.png)
 
 ## Enabling Debugging
 
