@@ -50,7 +50,7 @@ For more information, see [Create and configure an SQL MI](/system-center/scom/c
 
 **Resolution**:	
 
-To resolve this, provide read permission to the SQL managed instance.
+To resolve, provide read permission to the SQL managed instance.
 
 ### Issue: No enough cores to create `%instance;` in the given region.
 
@@ -86,7 +86,7 @@ Resolve issue and try again.
 
 **Cause**
 
-Occurs due to the following:
+Occurs due to the following reasons:
 1. Line of sight visibility from SCOM Managed Instance (preview) Server to Domain Controller.
 2. Domain User Credentials.
 3. OU Path for AD Domain.
@@ -99,7 +99,7 @@ Resolve the issue and try again.
 
 **Cause**
 
-Occurs due to the following:
+Occurs due to the following reasons:
 1. Line of sight visibility from SCOM Managed Instance (preview) VNet to SQL Managed Instance (preview) endpoint or
 2. Missing right level of NSG rules to allow traffic over SQL MI public endpoint.
 
@@ -163,7 +163,7 @@ To resolve, check the user permissions on SQL MI and provide required permission
 
 **Cause**
 
-Occures due to large data size report might not refresh.
+Occurs due to large data size report might not refresh.
 
 **Resolution**
 
@@ -249,7 +249,7 @@ To resolve, report to Development Team.
 
 **Cause**
 
-Occures due to the following:
+Occurs due to the following reasons:
 1. New update is available, and the user hasn't triggered update instance
 2. Last update failed and the user hasn't triggered update instance
 
@@ -277,7 +277,7 @@ To resolve, report to Development Team.
 
 **Cause**
 
-This occurs due to failed update after the successful database update.
+Occurs due to failed update after the successful database update.
 
 **Resolution**
 
@@ -327,7 +327,7 @@ In case you've triggered a scaling operation, wait for the operation to complete
 
 **Cause**
 
-Occurs if SQL MI and SCOM Managed Instance (preview) are in different regions. Due to this, extension takes more time to update and eventually fails.
+Occurs if SQL MI and SCOM Managed Instance (preview) are in different regions. Due to which, extension takes more time to update and eventually fails.
 
 **Resolution**
 
@@ -354,7 +354,7 @@ Occurs due to portal or ARM Issue.
 To resolve, wait for some time and retry. If issue exists even after fixing portal/ ARM issue, report to Development Team.
 
 
-### Issue: Patching or scaling operation is already in progress, please try again after sometime.
+### Issue: Patching or scaling operation is already in progress, try again after sometime.
 
 **Cause**
 
