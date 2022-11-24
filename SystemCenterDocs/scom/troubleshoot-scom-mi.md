@@ -233,7 +233,7 @@ Network issue/development issue.
 
 To resolve, try refreshing for updates. If not resolved, report to the development team.
 
-### Inconsistency in the controls within the card
+### Issue: Inconsistency in the controls within the card
 
 For example, the update button is enabled even though the title of the card reads **SCOM is up to date**.
 
@@ -273,7 +273,7 @@ To resolve, report to the development team.
 
 To resolve, report to the development team.
 
-### Update fails but database update is successful
+### Issue: Update fails but database update is successful
 
 **Cause**
 
@@ -283,7 +283,7 @@ Occurs due to failed update after the successful database update.
 
 To resolve, report to the development team.
 
-### Issue:	After successful update, SCOM console isn't functioning properly on the instance
+### Issue: After successful update, SCOM console isn't functioning properly on the instance
 
 **Cause**
 
