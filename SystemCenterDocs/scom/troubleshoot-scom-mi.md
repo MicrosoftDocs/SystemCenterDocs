@@ -56,7 +56,7 @@ To resolve, provide read permission to the SQL managed instance.
 
 **Cause**
 
-Occurs as there's no enough cores to create an instance in the given region.
+Occurs when there's no enough cores to create an instance in the given region.
 
 **Resolution**
 
@@ -66,7 +66,7 @@ To resolve, allocate more cores in the region.
 
 **Cause**
 
-Occurs as the secret key with the same name is already present in the Key vault.
+Occurs when the secret key with the same name is already present in the Key vault.
 
 **Resolution**
 
@@ -185,7 +185,7 @@ To resolve, increase the number of cores in the subscription or delete existing 
 
 **Cause**
 
-This error might happen during the provisioning of SCOM extension or SCOM installation.
+This error might occur during the provisioning of SCOM extension or SCOM installation.
 
 **Resolution**
 
@@ -195,7 +195,7 @@ To resolve, report to the development team.
 
 **Cause**
 
-Occurs if patching or scaling is already on going. A new operation can't be triggered.
+Occurs if patching or scaling is in progress. A new operation can't be triggered.
 
 **Resolution**
 
@@ -217,7 +217,7 @@ To resolve, report to the development team.
 
 **Cause**
 
-Network Issue/development Issue.
+Network issue/development issue.
 
 **Resolution**
 
@@ -227,7 +227,7 @@ To resolve, try refreshing for updates. If not resolved, report to the developme
 
 **Cause**
 
-Network Issue/development Issue.
+Network issue/development issue.
 
 **Resolution**
 
@@ -239,13 +239,13 @@ For example, the update button is enabled even though the title of the card read
 
 **Cause**
 
-Development Issue.
+Development issue.
 
 **Resolution**
 
 To resolve, report to the development team.
 
-### Issue: Warning ribbon for updates pop up in scenarios
+### Issue: Warning message pops up for updates
 
 **Cause**
 
@@ -293,7 +293,7 @@ Occurs if SCOM isn't installed properly or some process might be stuck.
 
 To resolve, try to restart the instance. If the issue persists, report to the development team.
 
-### Issue: Update is taking more than 3 hours -> FAILS eventually
+### Issue: Update is taking more than 3 hours and fails eventually
 
 **Cause**
 
@@ -313,7 +313,7 @@ Occurs if the service fabric or RP crashes or restarts.
 
 To resolve, restart the update.
 
-### Issue: Scaling and Patching triggered simultaneously -> FAILS
+### Issue: Scaling and Patching triggered simultaneously and then fails
 
 **Cause**
 
@@ -323,7 +323,7 @@ Occurs if scaling and patching requests are sent and accepted at the same time.
 
 In case you've triggered a scaling operation, wait for the operation to complete before you try to update operation.
 
-### Issue: Extension takes more time to update -> FAILING
+### Issue: Extension takes more time to update and fails
 
 **Cause**
 
@@ -333,11 +333,11 @@ Occurs if SQL MI and SCOM Managed Instance (preview) are in different regions du
 
 To resolve, have SQL MI and SCOM Managed Instance (preview) in same region.
 
-### Issue: After patching, user data in database is altered or not retained properly
+### Issue: After patching, user data in the database is altered or not retained properly
 
 **Cause**
 
-Occurs if update didn't happen properly.
+Occurs if update was not done properly.
 
 **Resolution**
 
@@ -347,7 +347,7 @@ To resolve, restart the update.
 
 **Cause**
 
-Occurs due to portal or ARM Issue.
+Occurs due to portal or ARM issue.
 
 **Resolution**
 
