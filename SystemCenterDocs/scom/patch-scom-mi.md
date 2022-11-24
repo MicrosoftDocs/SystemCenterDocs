@@ -15,11 +15,11 @@ monikerRange: '>=sc-om-2019'
 
 # Patch Azure Monitor SCOM Managed Instance (preview)
 
-Azure Monitor SCOM Managed Instance (preview) offers a convenient patching experience compared to on-premesis SCOM. 
+Azure Monitor SCOM Managed Instance (preview) offers a convenient patching experience compared to on-premises SCOM. 
 
 Below are the key differences:
 
-- No concept of update roll up in SCOM Managed Instance (preview). A patch will be released as and when there are significant fixes and updates made to the product. They will be released at a cadence of as often as 2 weeks or 2 months.
+- No concept of update rollup in SCOM Managed Instance (preview). A patch will be released as and when there are significant fixes and updates made to the product. They'll be released at a cadence of as often as two weeks or two months.
 - Patching is quick and convenient. Select the button and wait for the patch to complete.
 - All newer patches are backward compatible with older versions. 
 
@@ -31,7 +31,7 @@ To patch SCOM Managed Instance (preview), follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) and search for **SCOM** or **SCOM Managed Instance**.
 1. On the **Overview** page, under **Configuration**, select **Patching**.
-1. On the **Patching** page, you will see the status of available updates for your instance.
+1. On the **Patching** page, you'll see the status of available updates for your instance.
 
      :::image type="Patching" source="media/patch-scom-mi/scom-mi-patching.png" alt-text="Screenshot of Patching.":::
 
@@ -41,7 +41,7 @@ To patch SCOM Managed Instance (preview), follow these steps:
  
 It takes 30 mins to 1 hour to successfully update the instance.
 
-     :::image type="Instance updated" source="media/patch-scom-mi/instance-updated.png" alt-text="Screenshot of Instance updated.":::
+ :::image type="Instance updated" source="media/patch-scom-mi/instance-updated.png" alt-text="Screenshot of Instance updated.":::
 
 ## Next steps
 
