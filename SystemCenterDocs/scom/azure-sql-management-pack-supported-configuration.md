@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration in Mana
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 11/23/2022
+ms.date: 11/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -16,16 +16,6 @@ ms.technology: operations-manager
 This section lists operating systems and features supported by Management Pack for Azure SQL Database.
 
 Azure SQL Database is a fully managed platform as a service (PaaS) database engine that handles most of the database management functions such as upgrading, patching, backups, and monitoring without user involvement.
-
-## Operating Systems
-
-Management Pack for Azure SQL Database supports the following operating systems:
-
-- Windows Server 2012
-- Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server 2019
-- Windows Server 2022
 
 ## Supported Azure SQL Database Features and Purchase Models
 
@@ -85,3 +75,13 @@ Management Pack for Azure SQL Database supports the following versions of System
 - System Center Operations Manager 1807
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
+
+## Operating Systems and Platforms
+
+Management Pack for Azure SQL Database supports the following 64-bit operating systems and platforms:
+
+- Windows Server 2012
+- Windows Server 2012 R2
+- Windows Server 2016
+- Windows Server 2019
+- Windows Server 2022

@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration for Man
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 11/23/2022
+ms.date: 11/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager

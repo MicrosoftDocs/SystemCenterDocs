@@ -5,7 +5,7 @@ description: This article explains low-privilege monitoring
 author: VChernov
 ms.author: v-vchernov
 manager: evansma
-ms.date: 9/5/2022
+ms.date: 11/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -37,19 +37,19 @@ This section explains how to configure low-privilege agent monitoring.
     - SQLDiscovery
     - SQLMonitor
 
-3. Add the **SQLMPLowPriv** group to the [Read-only Domain Controllers](/windows-server/identity/ad-ds/manage/understand-security-groups#read-only-domain-controllers) Active Directory security group.
+3. Grant the **SQLMPLowPriv** group the **Read-only Domain Controllers** permission.
 
 ### On Agents
 
-1. Grant the **SQLTaskAction** user and the **SQLMPLowPriv** group the **Read** permission in the registry key:
-    `HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft SQL Server`
+1. Grant the **SQLTaskAction** user and the **SQLMPLowPriv** group the **Read** permission at HKLM:\\Software\\Microsoft\\Microsoft SQL Server.
 
-2. On each monitored instance, grant the **SQLMPLowPriv** group the **Read** permission in the registry key:
-    `HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft SQL Server\[InstanceID]\MSSQLServer\Parameters`
+2. On each monitored instance, grant the **SQLMPLowPriv** group the **Read** permission at HKLM:\Software\Microsoft\Microsoft SQL Server\\[InstanceID]\MSSQLServer\Parameters.
 
-3. Add the **SQLTaskAction** and **SQLMonitor** users to the [Event Log Readers](/windows-server/identity/ad-ds/manage/understand-security-groups#event-log-readers) Active Directory security local group.
+3. Add the **SQLTaskAction** and **SQLMonitor** users to the **EventLogReaders** local group.
 
-4. Grant **Execute Methods**, **Enable Account**, **Remote Enable**, and **Read Security** permissions to **SQLTaskAction** and **SQLMPLowPriv** for the following WMI namespaces using the [WMI Control](/windows/win32/wmisdk/setting-namespace-security-with-the-wmi-control):
+4. Configure the **Allow log on locally** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to log on locally.
+
+5. Grant **Execute Methods**, **Enable Account**, **Remote Enable**, and **Read Security** permissions to **SQLTaskAction** and **SQLMPLowPriv** for the following WMI namespaces:
 
     - ROOT
     - ROOT\CIMV2
@@ -59,105 +59,78 @@ This section explains how to configure low-privilege agent monitoring.
     - ROOT\Microsoft\SqlServer\ComputerManagement13 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement14 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement15 (if exists)
-    - ROOT\Microsoft\SqlServer\ComputerManagement16 (if exists)
-
-5. Configure the **Allow log on locally** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to log on locally.
-
-    >[!NOTE]
-    >If you are using the versions of Operations Manager 2012 R2 or 2016, follow the steps above to provide **Allow log on locally** permission to Run As accounts. [Learn more](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally).
-
-6. Configure the **Log on as a Service** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to log on as a service.
-
-    >[!NOTE]
-    >If you are using the versions of Operations Manager 2019 and higher, follow the steps above to provide **Log on as a Service** permission to Run As accounts. [Learn more](./enable-service-logon.md).
-
-7. In the **Microsoft Monitoring Agent** properties for the selected management group set the **Local System** account to perform agent actions.
 
 ### Extra Steps for Cluster SQL Server Instances
 
 1. Take the steps above for each cluster node.
 
-2. Grant **SQLMPLowPriv** and **SQLTaskAction** the **Remote Launch** and **Remote Activation** DCOM permissions using [DCOMCNFG](/windows/win32/com/setting-machine-wide-security-using-dcomcnfg).
+2. Grant **SQLMPLowPriv** and **SQLTaskAction** the **Remote Launch** and **Remote Activation** DCOM permissions using DCOMCNFG.
 
-3. Allow **Windows Remote Management** through Windows Firewall.
+3. Allow Windows Remote Management through Windows Firewall.
 
 4. Grant the **SQLMPLowPriv** group **Full Control** to the cluster using Failover Cluster Manager.
 
-5. Grant **Execute Methods**, **Enable Account**, **Remote Enable**, and **Read Security** permissions to **SQLTaskAction** and **SQLMPLowPriv** for the **root\MSCluster** WMI namespace using the [WMI Control](/windows/win32/wmisdk/setting-namespace-security-with-the-wmi-control).
+5. Grant **Execute Methods**, **Enable Account**, **Remote Enable**, and **Read Security** permissions to **SQLTaskAction** and **SQLMPLowPriv** for the **root\MSCluster** WMI namespace.
 
 ### On SQL Server Instances
 
 1. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance.
 
-2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, use the following SQL script to create and set the lowest privilege configuration for the **SQLMPLowPriv** domain account:
+2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, create a login for **SQLMPLowPriv** and **SQLTaskAction**.
 
-    ```SQL
-    USE [master];
-    SET NOCOUNT ON;
-    /*The domain account that System Center Operations Manager will use
-    to access the SQL Server instance*/
-    DECLARE @accountname sysname = 'SQLMPLowPriv';
-    /*In some cases, administrators change the 'sa' account default name.
-    This will retrieve the name of the account associated to princicpal_id = 1*/
-    DECLARE @sa_name sysname = 'sa';
-    SELECT @sa_name = [Name] FROM sys.server_principals WHERE principal_id = 1
-    /*Create the server role with authorization to the account associated to principal id = 1.
-    Create the role only if it does not already exist*/
-    DECLARE @createSrvRoleCommand nvarchar(200);
-    SET @createSrvRoleCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-        WHERE [Name] = ''SCOM_SQLMPLowPriv'') BEGIN
-        CREATE SERVER ROLE [SCOM_SQLMPLowPriv] AUTHORIZATION [' + @sa_name + ']; END'
-    EXEC(@createSrvRoleCommand);
-    GRANT VIEW ANY DATABASE TO [SCOM_SQLMPLowPriv];
-    GRANT VIEW ANY DEFINITION TO [SCOM_SQLMPLowPriv];
-    GRANT VIEW SERVER STATE TO [SCOM_SQLMPLowPriv];
-    DECLARE @createLoginCommand nvarchar(200);
-    SET @createLoginCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-        WHERE [Name] = '''+ @accountname +''') BEGIN
-        CREATE LOGIN '+ QUOTENAME(@accountname) +' FROM WINDOWS WITH DEFAULT_DATABASE=[master]; END'
-    EXEC(@createLoginCommand);
-    -- Add the login to the user-defined server role
-    DECLARE @addServerMemberCommand nvarchar(200);
-    SET @addServerMemberCommand = 'ALTER SERVER ROLE [SCOM_HealthService] ADD MEMBER '
-    + QUOTENAME(@accountname) + ';'
-    EXEC(@addServerMemberCommand);
-    -- Add the login and database role to each database
-    DECLARE @createDatabaseUserAndRole nvarchar(max);
-    SET @createDatabaseUserAndRole = '';
-    SELECT @createDatabaseUserAndRole = @createDatabaseUserAndRole + ' USE ' + QUOTENAME(db.name) + ';
-        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = '''+ @accountname +''') BEGIN
-        CREATE USER ' + QUOTENAME(@accountname) + ' FOR LOGIN ' + QUOTENAME(@accountname) + '; END;
-        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = ''SCOM_SQLMPLowPriv'') BEGIN
-        CREATE ROLE [SCOM_SQLMPLowPriv] AUTHORIZATION [dbo]; END;
-        ALTER ROLE [SCOM_SQLMPLowPriv] ADD MEMBER ' + QUOTENAME(@accountname) + ';'
-    FROM sys.databases db
-        LEFT JOIN sys.dm_hadr_availability_replica_states hadrstate ON
-            db.replica_id = hadrstate.replica_id
-    WHERE db.database_id <> 2
-        AND db.user_access = 0
-        AND db.state = 0
-        AND db.is_read_only = 0
-        AND (hadrstate.role = 1 or hadrstate.role is null);
-    EXEC(@createDatabaseUserAndRole);
-    -- Add database specific permissions to database role
-    USE [master];
-    GRANT EXECUTE ON sys.xp_readerrorlog TO [SCOM_SQLMPLowPriv];
-    GRANT EXECUTE ON sys.xp_instance_regread TO [SCOM_SQLMPLowPriv];
-    USE [msdb];
-    GRANT SELECT ON [dbo].[sysjobschedules] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[sysschedules] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[sysjobs_view] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[syscategories] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[log_shipping_primary_databases] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[log_shipping_secondary_databases] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[log_shipping_monitor_history_detail] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[log_shipping_monitor_secondary] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[log_shipping_monitor_primary] TO [SCOM_SQLMPLowPriv];
-    GRANT EXECUTE ON [dbo].[sp_help_job] TO [SCOM_SQLMPLowPriv];
-    GRANT EXECUTE ON [dbo].[sp_help_jobactivity] TO [SCOM_SQLMPLowPriv];
-    GRANT EXECUTE ON [dbo].[SQLAGENT_SUSER_SNAME] TO [SCOM_SQLMPLowPriv];
-    ALTER ROLE [SQLAgentReaderRole] ADD MEMBER [SCOM_SQLMPLowPriv];
-    ```
+   To add **SQLMPLowPriv**, in the **Object Types** window, select the **Groups** checkbox.
+
+3. Create **SQLMPLowPriv** and **SQLTaskAction** users in each user database, **master**, **msdb**, and **model** databases.
+
+4. Link **SQLMPLowPriv** users to the **SQLMPLowPriv** login and **SQLTaskAction** users to the **SQLTaskAction** login:
+
+      ```SQL
+      --  This script is an example of how to create new users
+      --  in the msdb database. Execute this script
+      --  for every database on each SQL instance.
+      USE [msdb]
+      GO
+      CREATE USER [SQLMPLowPriv] FOR LOGIN [SQLMPLowPriv]
+      CREATE USER [SQLTaskAction] FOR LOGIN [SQLTaskAction]
+      ```
+
+5. Grant **SQLMPLowPriv** the following permissions:
+
+      ```SQL
+      USE [master]
+      GO
+      GRANT VIEW SERVER STATE TO [SQLMPLowPriv]
+      GRANT VIEW ANY DEFINITION TO [SQLMPLowPriv]
+      GRANT VIEW ANY DATABASE TO [SQLMPLowPriv]
+      GRANT EXECUTE ON xp_readerrorlog TO [SQLMPLowPriv]
+      GRANT EXECUTE ON xp_instance_regread TO [SQLMPLowPriv]
+
+      USE [msdb]
+      GO
+      GRANT SELECT ON sysjobschedules TO [SQLMPLowPriv]
+      GRANT SELECT ON sysschedules TO [SQLMPLowPriv]
+      GRANT SELECT ON syscategories TO [SQLMPLowPriv]
+      GRANT SELECT ON sysjobs_view TO [SQLMPLowPriv]
+      GRANT SELECT ON sysjobactivity TO [SQLMPLowPriv]
+      GRANT SELECT ON sysjobhistory TO [SQLMPLowPriv]
+      GRANT SELECT ON syssessions TO [SQLMPLowPriv]
+      GRANT SELECT ON log_shipping_monitor_history_detail TO [SQLMPLowPriv]
+      GRANT SELECT ON log_shipping_monitor_secondary TO [SQLMPLowPriv]
+      GRANT SELECT ON log_shipping_secondary_databases TO [SQLMPLowPriv]
+      GRANT SELECT ON log_shipping_monitor_primary TO [SQLMPLowPriv]
+      GRANT SELECT ON log_shipping_primary_databases TO [SQLMPLowPriv]
+      GRANT EXECUTE ON sp_help_job TO [SQLMPLowPriv]
+      GRANT EXECUTE ON agent_datetime TO [SQLMPLowPriv]
+      GRANT EXECUTE ON SQLAGENT_SUSER_SNAME TO [SQLMPLowPriv]
+      ```
+
+6. For the **msdb** database, assign the **SQLMPLowPriv** user the **SQLAgentReaderRole** role:
+
+      ```SQL
+      USE [msdb]
+      GO
+      ALTER ROLE [SQLAgentReaderRole] ADD MEMBER [SQLMPLowPriv]
+      ```
 
 ### On SMB Shares
 
@@ -181,48 +154,43 @@ Take the following steps on an agent machine or database only if you want to all
 
     For example, if the results of the **sdshow** command for SQL Server service are as follows:
 
-    ```CMD
+    ```
     *D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)*
     ```
 
     In this case, the following command grants sufficient access to **SQLTaskAction** for starting and stopping the SQL Server service. Replace 'SQLServerServiceName' and 'SID for SQLTaskAction' with the appropriate values and keep everything on a single line.
 
-    ```CMD
+    ```
     *sc sdset SQLServerServiceName D:(A;;GRRPWP;;;SID for SQLTaskAction)(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)*
     ```
 
-2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, create a login for **SQLTaskAction**:
-
-    ```sql
-    USE [msdb];
-    CREATE USER [SQLTaskAction] FOR LOGIN [SQLTaskAction];
-    ```
-
-3. Grant the **db_owner** database role for each database if the task is related to performing database checks:
+2. In SQL Server Management Studio, add **SQLTaskAction** to the **db_owner** database role for each database if the task is related to performing database checks:
 
     - Check Catalog (DBCC)
     - Check Database (DBCC)
-    - Check Disk (DBCC) (invokes DBCC CHECKALLOC)
+    - Check Disk (DBCC)” (invokes DBCC CHECKALLOC)
 
     ```sql
-    USE [yourdatabase];
-    ALTER ROLE [db_owner] ADD MEMBER [SQLTaskAction];
+    USE [msdb]
+    GO
+    ALTER ROLE [db_owner] ADD MEMBER [SQLTaskAction]
     ```
 
-4. Grant the **ALTER ANY DATABASE** privilege to the **SQLTaskAction** login to run the task if the task is related to changing the database state:
+3. Grant the ALTER ANY DATABASE privilege to the **SQLTaskAction** login to run the task if the task is related to changing the database state:
 
     - Set Database Offline
+    - Set Database Emergency State
     - Set Database Online
-    - Set Database to Emergency State
 
     ```sql
-    USE [master];
-    GRANT ALTER ANY DATABASE TO [SQLTaskAction];
+    USE [master]
+    GO
+    GRANT ALTER ANY DATABASE TO [SQLTaskAction]
     ```
 
 ### In System Center Operations Manager
 
-1. [Import SQL Server Management Pack](sql-server-management-pack-management-pack-delivery.md)
+1. [Import SQL Server Management Pack](sql-server-management-pack-management-pack-delivery.md).
 
 2. Create the following Windows-based Run As accounts:
 
@@ -248,109 +216,88 @@ This section explains how to configure low-privilege agentless monitoring.
 
 1. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance.
 
-2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, use the following SQL script to create and set the lowest privilege configuration for the **SQLMPLowPriv** account with SQL Server authentication:
+2. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, create a SQL login **SQLMPLowPriv** for monitoring.
 
-     ```SQL
-    USE [master];
-    SET NOCOUNT ON;
-    /*The user account with SQL Server authentication that System Center Operations Manager
-    will use to access the SQL Server instance*/
-    DECLARE @accountname sysname = 'SQLMPLowPriv';
-    /*In some cases, administrators change the 'sa' account default name.
-    This will retrieve the name of the account associated to princicpal_id = 1*/
-    DECLARE @sa_name sysname = 'sa';
-    SELECT @sa_name = [Name] FROM sys.server_principals WHERE principal_id = 1
-    /*Create the server role with authorization to the account associated to principal id = 1.
-    Create the role only if it does not already exist*/
-    DECLARE @createSrvRoleCommand nvarchar(200);
-    SET @createSrvRoleCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-        WHERE [Name] = ''SCOM_SQLMPLowPriv'') BEGIN
-        CREATE SERVER ROLE [SCOM_SQLMPLowPriv] AUTHORIZATION [' + @sa_name + ']; END'
-    EXEC(@createSrvRoleCommand);
-    GRANT VIEW ANY DATABASE TO [SCOM_SQLMPLowPriv];
-    GRANT VIEW ANY DEFINITION TO [SCOM_SQLMPLowPriv];
-    GRANT VIEW SERVER STATE TO [SCOM_SQLMPLowPriv];
-    DECLARE @createLoginCommand nvarchar(200);
-    /*Create the login with SQL Server authentication using the password,
-    and replace it with your value below*/
-    SET @createLoginCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-        WHERE [Name] = '''+ @accountname +''') BEGIN
-        CREATE LOGIN '+ QUOTENAME(@accountname) +' WITH PASSWORD=N'''', DEFAULT_DATABASE=[master]; END'
-    EXEC(@createLoginCommand);
-    -- Add the login to the user-defined server role
-    DECLARE @addServerMemberCommand nvarchar(200);
-    SET @addServerMemberCommand = 'ALTER SERVER ROLE [SCOM_HealthService] ADD MEMBER '
-    + QUOTENAME(@accountname) + ';'
-    EXEC(@addServerMemberCommand);
-    -- Add the login and database role to each database
-    DECLARE @createDatabaseUserAndRole nvarchar(max);
-    SET @createDatabaseUserAndRole = '';
-    SELECT @createDatabaseUserAndRole = @createDatabaseUserAndRole + ' USE ' + QUOTENAME(db.name) + ';
-        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = '''+ @accountname +''') BEGIN
-        CREATE USER ' + QUOTENAME(@accountname) + ' FOR LOGIN ' + QUOTENAME(@accountname) + '; END;
-        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = ''SCOM_SQLMPLowPriv'') BEGIN
-        CREATE ROLE [SCOM_SQLMPLowPriv] AUTHORIZATION [dbo]; END;
-        ALTER ROLE [SCOM_SQLMPLowPriv] ADD MEMBER ' + QUOTENAME(@accountname) + ';'
-    FROM sys.databases db
-        LEFT JOIN sys.dm_hadr_availability_replica_states hadrstate ON
-            db.replica_id = hadrstate.replica_id
-    WHERE db.database_id <> 2
-        AND db.user_access = 0
-        AND db.state = 0
-        AND db.is_read_only = 0
-        AND (hadrstate.role = 1 or hadrstate.role is null);
-    EXEC(@createDatabaseUserAndRole);
-    -- Add database specific permissions to database role
-    USE [master];
-    GRANT EXECUTE ON sys.xp_readerrorlog TO [SCOM_SQLMPLowPriv];
-    GRANT EXECUTE ON sys.xp_instance_regread TO [SCOM_SQLMPLowPriv];
-    USE [msdb];
-    GRANT SELECT ON [dbo].[sysjobschedules] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[sysschedules] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[sysjobs_view] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[syscategories] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[log_shipping_primary_databases] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[log_shipping_secondary_databases] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[log_shipping_monitor_history_detail] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[log_shipping_monitor_secondary] TO [SCOM_SQLMPLowPriv];
-    GRANT SELECT ON [dbo].[log_shipping_monitor_primary] TO [SCOM_SQLMPLowPriv];
-    GRANT EXECUTE ON [dbo].[sp_help_job] TO [SCOM_SQLMPLowPriv];
-    GRANT EXECUTE ON [dbo].[sp_help_jobactivity] TO [SCOM_SQLMPLowPriv];
-    GRANT EXECUTE ON [dbo].[SQLAGENT_SUSER_SNAME] TO [SCOM_SQLMPLowPriv];
-    ALTER ROLE [SQLAgentReaderRole] ADD MEMBER [SCOM_SQLMPLowPriv];
+3. Create **SQLMPLowPriv** user in each user database, **master**, **msdb**, and **model** databases.
+
+4. Link **SQLMPLowPriv** users to the **SQLMPLowPriv** login:
+
+    ``` sql
+    --  This script is an example of how to create new users
+    --  in the msdb database. Execute this script
+    --  for every database on each SQL instance.
+    USE [msdb]
+    GO
+    CREATE USER [SQLMPLowPriv] FOR LOGIN [SQLMPLowPriv]
+    ```
+
+5. Grant **SQLMPLowPriv** the following permissions:
+
+    ``` sql
+    USE [master]
+    GO
+    GRANT VIEW SERVER STATE TO [SQLMPLowPriv]
+    GRANT VIEW ANY DEFINITION TO [SQLMPLowPriv]
+    GRANT VIEW ANY DATABASE TO [SQLMPLowPriv]
+    ALTER ROLE [db_datareader] ADD MEMBER [SQLMPLowPriv]
+    GRANT EXECUTE ON xp_readerrorlog TO [SQLMPLowPriv]
+    GRANT EXECUTE ON xp_instance_regread TO [SQLMPLowPriv]
+
+    USE [msdb]
+    GO
+    GRANT SELECT ON sysjobschedules TO [SQLMPLowPriv]
+    GRANT SELECT ON sysschedules TO [SQLMPLowPriv]
+    GRANT SELECT ON syscategories TO [SQLMPLowPriv]
+    GRANT SELECT ON sysjobs_view TO [SQLMPLowPriv]
+    GRANT SELECT ON sysjobactivity TO [SQLMPLowPriv]
+    GRANT SELECT ON sysjobhistory TO [SQLMPLowPriv]
+    GRANT SELECT ON syssessions TO [SQLMPLowPriv]
+    GRANT SELECT ON log_shipping_monitor_history_detail TO [SQLMPLowPriv]
+    GRANT SELECT ON log_shipping_monitor_secondary TO [SQLMPLowPriv]
+    GRANT SELECT ON log_shipping_secondary_databases TO [SQLMPLowPriv]
+    GRANT SELECT ON log_shipping_monitor_primary TO [SQLMPLowPriv]
+    GRANT SELECT ON log_shipping_primary_databases TO [SQLMPLowPriv]
+    GRANT EXECUTE ON sp_help_job TO [SQLMPLowPriv]
+    GRANT EXECUTE ON agent_datetime TO [SQLMPLowPriv]
+    GRANT EXECUTE ON SQLAGENT_SUSER_SNAME TO [SQLMPLowPriv]
+    ```
+
+6. For the **msdb** database, assign the **SQLMPLowPriv** user both the **SQLAgentReaderRole** role and the **PolicyAdministratorRole** role:
+
+    ``` sql
+    USE [msdb]
+    GO
+    ALTER ROLE [SQLAgentReaderRole] ADD MEMBER [SQLMPLowPriv]
+    ALTER ROLE [PolicyAdministratorRole] ADD MEMBER [SQLMPLowPriv]
     ```
 
 Some optional System Center Operations Manager tasks require a higher privilege on an agent machine and/or database to allow task execution.
 
 Take the following steps only if you want to allow the System Center Operations Manager console operator to take remedial actions on that target:
 
-1. In SQL Server Management Studio, for each instance of SQL Server Database Engine running on a monitored server, create a login for **SQLTaskAction**:
-
-    ```sql
-    USE [msdb];
-    CREATE USER [SQLTaskAction] FOR LOGIN [SQLTaskAction];
-    ```
-
-2. Grant the **db_owner** database role for each database if the task is related to performing database checks:
+1. In SQL Server Management Studio, add **SQLMPLowPriv** to the **db_owner** database role for each database if the task is related to performing database checks:
 
     - Check Catalog (DBCC)
     - Check Database (DBCC)
     - Check Disk (DBCC) (invokes DBCC CHECKALLOC)
 
     ```sql
-    USE [yourdatabase];
-    ALTER ROLE [db_owner] ADD MEMBER [SQLTaskAction];
+    USE [yourdatabase]
+    GO
+    ALTER ROLE [db_owner] ADD MEMBER [SQLMPLowPriv]
+    GO
     ```
 
-3. Grant the **ALTER ANY DATABASE** privilege to the **SQLTaskAction** login to run the task if the task is related to changing the database state:
+2. Grant the ALTER ANY DATABASE privilege to **SQLMPLowPriv** to perform the following database tasks:
 
-    - Set Database Offline
     - Set Database Online
+    - Set Database Offline
     - Set Database to Emergency State
 
     ```sql
-    USE [master];
-    GRANT ALTER ANY DATABASE TO [SQLTaskAction];
+    USE [master]
+    GO
+    GRANT ALTER ANY DATABASE TO [SQLMPLowPriv]
     ```
 
 ### Using Monitoring Wizard
@@ -422,7 +369,6 @@ To configure security for configurations with low-privilege accounts, perform th
     - ROOT\Microsoft\SqlServer\ComputerManagement13 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement14 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement15 (if exists)
-    - ROOT\Microsoft\SqlServer\ComputerManagement16 (if exists)
 
 8. Click **Security**.
 
@@ -469,13 +415,13 @@ To get information about the services, grant required permissions according to t
 
 3. From the Windows command prompt, run the following command to retrieve the current SDDL for the Services Control Manager:
 
-    ```CMD
+    ```
     sc sdshow scmanager > file.txt
     ```
 
     The SDDL is saved to the **file.txt** file and looks similar to the following one:
 
-    ```CMD
+    ```
     D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA)S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD).
     ```
 
@@ -487,13 +433,13 @@ To get information about the services, grant required permissions according to t
 
     The new SDDL looks similar to the following one:
 
-    ```CMD
+    ```
     D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU) (A;;CCLCRPRC;;;S-1-5-21-214A909598-1293495619-13Z157935-75714)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA) S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)
     ```
 
 5. Set security credentials to access the Service Control Manager by using the **sdset** command.
 
-    ```CMD
+    ```
     sc sdset scmanager "D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA)(A;;CCLCRPRC;;;S-1-5-21-214A909598-1293495619-13Z157935-75714)S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)"
     ```
 
@@ -501,7 +447,7 @@ To get information about the services, grant required permissions according to t
 
     Run the utility with the following options:
 
-    ```CMD
+    ```
     subinacl.exe /service mssqlserver /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
 
     subinacl.exe /service sqlserveragent /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
@@ -523,7 +469,7 @@ To get information about the services, grant required permissions according to t
 
     Run the utility with the following options:
 
-    ```CMD
+    ```
     subinacl.exe /service clussvc /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
     ```
 
@@ -533,21 +479,21 @@ Create a registry key to manage remote access to the registry.
 
 To create a key, perform the following steps:
 
-1. Open **Registry Editor** (Regedt32.exe) and locate the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control` key.
+1. Open **Registry Editor** (Regedt32.exe) and locate the **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control** key.
 
 2. In the **Edit** menu, click **Add Key** and enter the following values:
 
     - **Key Name:** SecurePipeServers
     - **Class:** REG_SZ
 
-3. Locate the following key: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers`
+3. Locate the following key: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers'.
 
 4. In the **Edit** menu, click **Add Key** and enter the following values:
 
     - **Key Name:** winreg
     - **Class:** REG_SZ
 
-5. Locate the following key: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg`
+5. Locate the following key: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg'.
 
 6. In the **Edit** menu, click **Add Key** and enter the following values:
 
@@ -555,7 +501,7 @@ To create a key, perform the following steps:
     - **Data Type:** REG_SZ
     - **String:** Registry Server
 
-7. Locate the following key: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg`
+7. Locate the following key: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg'.
 
 8. Right-click **winreg**, click **Permissions**, and edit the current permissions, or add users or groups you want to grant access to.
 
