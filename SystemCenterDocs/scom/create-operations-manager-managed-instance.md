@@ -5,7 +5,7 @@ description: This article describes how to create an Azure Monitor SCOM Managed 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 11/21/2022
+ms.date: 11/25/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -31,6 +31,7 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 - Ensure that you've at least four virtual cores (one VM) of type Standard DSv2 in your Azure subscription to deploy an instance.
 - Ensure you allow port 1433 (private port) from the SCOM Managed Instance (preview) to the SQL MI.
 - If you enable public endpoint on SQL MI, ensure that you allow 3342.
+- To ensure reliability and support easy scaling, SCOM Managed Instance- (preview) creates a Standard Load Balancer and a Uniform Virtual Machine Scale Set. For more information, see [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) and [Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview). 
 
 # [In your Active directory domain](#tab/prereqs-active)
 
@@ -41,18 +42,26 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 - If your Domain Controller and all other components are in Azure (a conventional Domain Controller and not Azure Active Directory) with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't required). If you're using one VNet to host all your components, you'll already have a line-of-sight between all your components. If you've multiple VNets, you'll need to do VNet peering between all the VNets that are in your network. For more information, see VNet peering in Azure.
 - Allow ports 5723/5724/443 to communicate while talking from SCOM Managed Instance (preview) to the VMs being monitored and vice versa.
 - We recommend a NAT gateway for outbound internet access from subnets. Edit the subnet to add a NAT gateway. For more information, See [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
+    - In Azure, Add  NAT gateway to Subnet(VNET/Subnet) where SCOM Managed Instance (preview) is going to be created. A NAT gateway is needed for outbound internet access from subnets.For more information, see [Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview).
+        - To create a NAT gateway, follow these steps:
+            - Create NAT gateway in same region where the VNET is present.
+            - Create NAT gateway in same subscription used for SCOM Managed Instance (preview).
+            - Create public IP.
+                 :::image type="NAT gateway" source="media/create-operations-manager-managed-instance/nat-gateway.png" alt-text="Screenshot of NAT gateway.":::
+                 Select VNet and subnet for SCOM Managed Instance (preivew).
+
 
 ## Configure one domain account in Active Directory
 
 - Create one domain account in your Active Directory. The domain account is a typical Active Directory account (it can be a non-admin account). This account will be used to add the SCOM Management Servers to your existing domain.
-     :::image type="Active directory users" source="media/create-operations-manager-managed-instance/active-directory-users.png" alt-text="Screenshot of Active directory users.":::
+      :::image type="Active directory users" source="media/create-operations-manager-managed-instance/active-directory-users.png" alt-text="Screenshot of Active directory users.":::
 - Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain.
 - You can use an existing domain account if it has these [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain).
 
 ## Create and configure a computer group 
 
-- Create a computer group in your active directory. For more information, see [Create a group account in active directory](/windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory). All the management servers you create will be a part of this group so that all the members of the group can retrieve gMSA account credentials (created in subsequent steps).  
-     :::image type="Active directory computers" source="media/create-operations-manager-managed-instance/active-directory-computers.png" alt-text="Screenshot of Active directory computers.":::
+- Create a computer group in your active directory. For more information, see [Create a group account in active directory](/windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory). All the management servers you create will be a part of this group so that all the members of the group can retrieve gMSA account credentials (created in subsequent steps). This group can't contain spaces and must have alphabets only.
+      :::image type="Active directory computers" source="media/create-operations-manager-managed-instance/active-directory-computers.png" alt-text="Screenshot of Active directory computers.":::
 - To manage this computer group, provide permissions to the domain account that you created. Follow the steps below to provide permissions:
     1. Select the group properties and select **Managed By**.
         1. **Name**: Enter the name of the domain account.
@@ -95,7 +104,7 @@ The Managed Service Identity provide an identity for applications to use when co
 >Ensure you're a contributor in the subscription you create the MSI.
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Managed Identities**.
-     :::image type="Managed Identity in Azure Portal" source="media/create-operations-manager-managed-instance/azure-portal-managed-identity.png" alt-text="Screenshot of Managed Identity in Azure portal.":::
+     :::image type="Managed Identity in Azure portal" source="media/create-operations-manager-managed-instance/azure-portal-managed-identity.png" alt-text="Screenshot of Managed Identity in Azure portal.":::
 1. In the **Managed Identities** page, select **+ Create**. The **Create User Assigned Managed Identity** page opens.
      :::image type="Managed Identity" source="media/create-operations-manager-managed-instance/managed-identities.png" alt-text="Screenshot of Managed Identity.":::
 1. Under **Basics**, do the following:
@@ -228,7 +237,9 @@ Store the domain account you create in Active Directory in a Key vault account f
 1. Do the following in **Create a secret** page.
     - **Upload options**: Select **Manual**.
     - **Name**: Enter the name of secret. For example, you can use *Username* for username secret and *Password* for password secret.
-    - **Secret value**: The credential values for the specific item. For username (in the format, domain\username), it will be the domain account username and for password, it will be the domain account password.
+    - **Secret value**: For username value (in the format, domain\username), it will be the domain account username and for password, it will be the domain account password.
+       For example, if the domain is *contoso.com*, then the username would be in the format *contoso\username*.
+        
     - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**, **Enabled**, **Tags** as default and select **Create** to create the secret.
          :::image type="Create a secret" source="media/create-operations-manager-managed-instance/create-a-secret.png" alt-text="Screenshot of create a secret.":::
 
@@ -255,7 +266,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
             >[!Note]
             >- SCOM Managed Instance (preview) name can have only alphanumeric characters and be up to 10 characters long.
             >- SCOM Managed Instance (preview) is equivalent to System Center Operation Manager Management Group so choose a name accordingly.
-        1. **Region**: Select the region that is near to you geographically so that latency between your agents and the SCOM Managed Instance (preview) is as low as possible.
+        1. **Region**: Select the region that is near to you geographically so that latency between your agents and the SCOM Managed Instance (preview) is as low as possible. This region must also contain the VNet.
              :::image type="Instance details" source="media/create-operations-manager-managed-instance/instance-details.png" alt-text="Screenshot showing instance details.":::
     1. **Active directory details**: 
         1. **Domain name**: Enter the name of the domain that is being administered by the Domain Controller.
@@ -268,7 +279,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
         1. **Password secret**: Enter the password under the selected key vault.
              :::image type="Domain account details" source="media/create-operations-manager-managed-instance/domain-account-details.png" alt-text="Screenshot showing Domain account details.":::
     1. **Azure Hybrid Benefit**: Select **Yes** if you're using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview) and it won't apply to existing Windows Servers.
-         :::image type="Azure hybrid benefit" source="media/create-operations-manager-managed-instance/azure-hybrid-benefit.png" alt-text="Screenshot showing Azure hybrid benefit.":::
+           :::image type="Azure hybrid benefit" source="media/create-operations-manager-managed-instance/azure-hybrid-benefit.png" alt-text="Screenshot showing Azure hybrid benefit.":::
 1. Select **Next**.
 1. Under **Networking**, do the following:
     1. **Virtual network**:
@@ -279,7 +290,8 @@ To create a SCOM Managed Instance (preview), follow these steps:
         1. **DNS name**: Enter the DNS name that you attached to the Static IP above.
     1. **gMSA details**: 
         1. **Computer group name**: Enter the name of the computer group that you created post creation of the gMSA account.
-        1. **gMSA account name**: Enter the gMSA account name.
+        1. **gMSA account name**: Enter the gMSA account name. The gMSA account name must end with **$**.
+           :::image type="gMSA details" source="media/create-operations-manager-managed-instance/gmsa-details.png" alt-text="Screenshot showing gMSA details.":::
 1. Select **Next**.
 1. Under **Database**, do the following:
     1. **SQL managed instance**:

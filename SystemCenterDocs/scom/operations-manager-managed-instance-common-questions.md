@@ -103,7 +103,7 @@ The charges that incur while running SCOM Managed Instance (preview) will be the
 
 ### What if there's an error during the deployment? 
 
-During the deployment phase, there can be several reasons why deploying a SCOM Managed Instance (preview) shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it's best to delete the instance and create one again. For more information, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance (preview)](./troubleshoot-scom-managed-instance.md)
+During the deployment phase, there can be several reasons why deploying a SCOM Managed Instance (preview) shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it's best to delete the instance and create one again. For more information, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance (preview)](./troubleshoot-scom-managed-instance.md).
 
 ### What is the procedure to delete an instance? 
 
