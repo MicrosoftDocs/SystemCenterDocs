@@ -5,7 +5,7 @@ description: This article explains known issues and troubleshooting in Managemen
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 11/23/2022
+ms.date: 11/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -16,7 +16,7 @@ ms.technology: operations-manager
 This article lists the known issues for Management Pack for Azure SQL Database.
 
 > [!WARNING]
-> There is an issue in the **SQL Server 2019 CU8 and higher** which is used as the **OperationsManager** database-hosted SQL server. In the case of this configuration, the Azure SQL Database MP failed to import into the System Center Operations Manager with the following error: `MPInfra_p_ManagementPackInstall failed with exception: Conversion failed when converting from a character string to uniqueidentifier.`
+> There is an issue in the **SQL Server 2019 CU8 and higher** which is used as the **OperationsManager** database-hosted SQL server in the System Center Operations Manager. In the case of this configuration, the Azure SQL Database MP failed to import into the System Center Operations Manager with the following error: `MPInfra_p_ManagementPackInstall failed with exception: Conversion failed when converting from a character string to uniqueidentifier.`
 
 |Issue title|Behavior / Symptom|Known workaround|
 |-|-|-|
