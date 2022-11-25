@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Scale Azure Monitor SCOM Managed Instance (preview)
 
-Addition or deletion a management server to the existing SCOM Infrastructure, automatically links or delinks it to the existing Operational database, Data warehouse and endpoints in SCOM Managed Instance (preview).
+Addition or deletion of a management server to the existing SCOM Infrastructure automatically links or delinks it from the existing Operational database, Data warehouse, and endpoints in SCOM Managed Instance (preview).
 
 This article provides information on how to scale your SCOM Managed Instance (preview).
 
@@ -27,17 +27,17 @@ To scale In/Out the management servers, follow these steps:
 1. On the **Overview** page, under **Configuration**, select **Scaling**.
      :::image type="Scaling" source="media/scale-scom-managed-instance/scaling.png" alt-text="Screenshot of Scaling.":::
 1. On the **Scaling** page,
-    1. **Current**: Displays the existing number of management servers that are part of the SCOM Managed Instance (preview).
+    1. **Current**: Displays the existing number of management servers that are a part of the SCOM Managed Instance (preview).
     1. **Scale In/Out management servers**:
         1. **Total Endpoints to be monitored**: Enter the total number of endpoints you would like to monitor using a particular SCOM Managed Instance (preview).
-        1. Depending on the number of endpoints you enter, the ideal number of management servers to be provisioned will be recommended in the **Recommended Management servers** field. You can change the recommended value as desired.
+        1. **Recommended Management servers**: Depending on the number of endpoints you enter, the ideal number of management servers to be provisioned will be recommended. You can change the recommended value as desired.
 
            >[!Note]
-           >Management server can monitor upto 1000 endpoints. 
+           >A Management server can monitor upto 1000 endpoints. 
 
       :::image type="Scaling SCOM Managed Instance (preview)" source="media/scale-scom-managed-instance/scaling-scom-mi.png" alt-text="Screenshot of Scaling SCOM Managed Instance (preview).":::
  
-1. Select **Save** to trigger the Scale-In or Scale-out operation. 
+1. Select **Save** to trigger the Scale In or Scale Out operation. 
 
 ## Next steps
 
