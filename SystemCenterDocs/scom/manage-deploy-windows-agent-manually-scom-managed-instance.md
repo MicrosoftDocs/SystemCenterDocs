@@ -1,7 +1,8 @@
 ---
 ms.assetid: 
-title: Install Windows Agent Manually Using MOMAgent.msi
-description: This article describes how to manually install the Operations Manager agent manually on Windows computers.
+title: Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance 
+(preview)
+description: This article describes how to manually install the Azure Monitor SCOM Managed Instance (preview) agent on Windows computers.
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
@@ -12,10 +13,9 @@ ms.topic: article
 monikerRange: '>=sc-om-2019'
 ---
 
-# Install Windows Agent Manually Using MOMAgent.msi
+# Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance (preview)
 
-You can use MOMAgent.msi to deploy Azure Monitor SCOM Managed Instance 
-(preview) agents from the command line or by manual installation. For a list of the supported operating system versions, see [System requirements](./connect-managed-instance-ops-console.md).
+You can use MOMAgent.msi to deploy Azure Monitor SCOM Managed Instance (preview) agents from the command line or by manual installation. For a list of the supported operating system versions, see [System requirements](./connect-managed-instance-ops-console.md).
 
 Before you use either method to manually deploy the agent, ensure the following conditions are met:
 
