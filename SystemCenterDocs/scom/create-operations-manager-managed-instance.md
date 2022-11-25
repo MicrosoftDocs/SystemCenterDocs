@@ -31,7 +31,7 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 - Ensure that you've at least four virtual cores (one VM) of type Standard DSv2 in your Azure subscription to deploy an instance.
 - Ensure you allow port 1433 (private port) from the SCOM Managed Instance (preview) to the SQL MI.
 - If you enable public endpoint on SQL MI, ensure that you allow 3342.
-- To ensure reliability and support easy scaling, SCOM Managed Instance- (preview) creates a Standard Load Balancer and an Uniform Virtual Machine Scale Set. For more information, see [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) and [Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview). 
+- To ensure reliability and support easy scaling, SCOM Managed Instance- (preview) creates a Standard Load Balancer and a Uniform Virtual Machine Scale Set. For more information, see [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) and [Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview). 
 
 # [In your Active directory domain](#tab/prereqs-active)
 
@@ -54,14 +54,14 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 ## Configure one domain account in Active Directory
 
 - Create one domain account in your Active Directory. The domain account is a typical Active Directory account (it can be a non-admin account). This account will be used to add the SCOM Management Servers to your existing domain.
-     :::image type="Active directory users" source="media/create-operations-manager-managed-instance/active-directory-users.png" alt-text="Screenshot of Active directory users.":::
+      :::image type="Active directory users" source="media/create-operations-manager-managed-instance/active-directory-users.png" alt-text="Screenshot of Active directory users.":::
 - Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain.
 - You can use an existing domain account if it has these [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain).
 
 ## Create and configure a computer group 
 
 - Create a computer group in your active directory. For more information, see [Create a group account in active directory](/windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory). All the management servers you create will be a part of this group so that all the members of the group can retrieve gMSA account credentials (created in subsequent steps). This group can't contain spaces and must have alphabets only.
-     :::image type="Active directory computers" source="media/create-operations-manager-managed-instance/active-directory-computers.png" alt-text="Screenshot of Active directory computers.":::
+      :::image type="Active directory computers" source="media/create-operations-manager-managed-instance/active-directory-computers.png" alt-text="Screenshot of Active directory computers.":::
 - To manage this computer group, provide permissions to the domain account that you created. Follow the steps below to provide permissions:
     1. Select the group properties and select **Managed By**.
         1. **Name**: Enter the name of the domain account.
@@ -104,7 +104,7 @@ The Managed Service Identity provide an identity for applications to use when co
 >Ensure you're a contributor in the subscription you create the MSI.
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Managed Identities**.
-     :::image type="Managed Identity in Azure Portal" source="media/create-operations-manager-managed-instance/azure-portal-managed-identity.png" alt-text="Screenshot of Managed Identity in Azure portal.":::
+     :::image type="Managed Identity in Azure portal" source="media/create-operations-manager-managed-instance/azure-portal-managed-identity.png" alt-text="Screenshot of Managed Identity in Azure portal.":::
 1. In the **Managed Identities** page, select **+ Create**. The **Create User Assigned Managed Identity** page opens.
      :::image type="Managed Identity" source="media/create-operations-manager-managed-instance/managed-identities.png" alt-text="Screenshot of Managed Identity.":::
 1. Under **Basics**, do the following:
@@ -238,7 +238,7 @@ Store the domain account you create in Active Directory in a Key vault account f
     - **Upload options**: Select **Manual**.
     - **Name**: Enter the name of secret. For example, you can use *Username* for username secret and *Password* for password secret.
     - **Secret value**: For username value (in the format, domain\username), it will be the domain account username and for password, it will be the domain account password.
-       For example, if the domain is *contoso.com*, then the username would be in the format *contoso\username”* .
+       For example, if the domain is *contoso.com*, then the username would be in the format *contoso\username*.
         
     - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**, **Enabled**, **Tags** as default and select **Create** to create the secret.
          :::image type="Create a secret" source="media/create-operations-manager-managed-instance/create-a-secret.png" alt-text="Screenshot of create a secret.":::
@@ -279,7 +279,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
         1. **Password secret**: Enter the password under the selected key vault.
              :::image type="Domain account details" source="media/create-operations-manager-managed-instance/domain-account-details.png" alt-text="Screenshot showing Domain account details.":::
     1. **Azure Hybrid Benefit**: Select **Yes** if you're using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview) and it won't apply to existing Windows Servers.
-         :::image type="Azure hybrid benefit" source="media/create-operations-manager-managed-instance/azure-hybrid-benefit.png" alt-text="Screenshot showing Azure hybrid benefit.":::
+           :::image type="Azure hybrid benefit" source="media/create-operations-manager-managed-instance/azure-hybrid-benefit.png" alt-text="Screenshot showing Azure hybrid benefit.":::
 1. Select **Next**.
 1. Under **Networking**, do the following:
     1. **Virtual network**:

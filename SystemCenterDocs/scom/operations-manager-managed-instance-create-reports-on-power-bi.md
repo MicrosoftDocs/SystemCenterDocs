@@ -37,13 +37,13 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
     1. **Configure and install Power BI**: Allows you to install and configure the SCOM Managed Instance (preview) dashboard in Power BI.
     1. **View Power BI dashboard**: Allows you to visualize the SCOM Managed Instance (preview) dashboard in Power BI after the configuration.
 1. Review the **Prerequisites** to ensure Public endpoint of SQL MI is enabled. You will notice the Database Host URL and Database name are displayed.
-     :::image type="Public endpoints" source="media/operations-manager-managed-instance-create-reports-on-power-bi/public-endpoins.png" alt-text="Screenshot showing public endpoints.":::
+     :::image type="Public endpoints" source="media/operations-manager-managed-instance-create-reports-on-power-bi/public-endpoints.png" alt-text="Screenshot showing public endpoints.":::
 1. Select **Configure Dashboard**, **Powerbi.com** opens in a new browser. Select **Get it now** to install **Microsoft SCOM managed instance reports** Power BI app in your workspace. 
      :::image type="Power BI app" source="media/operations-manager-managed-instance-create-reports-on-power-bi/power-bi-app.png" alt-text="Screenshot showing Power BI app.":::
 1. The app displays sample data. You can edit the parameter values **Data-Warehouse DB host URL** and **Data-Warehouse Name**.
      >[!Note]
      >To update the parameters, go to **Settings** of the dataset, and edit the parameters or select **Connect your data** in the banner.
-     :::image type="Connect your data" source="media/operations-manager-managed-instance-create-reports-on-power-bi/connect-your-data.png" alt-text="Screenshot showing Connect your data option.":::
+         :::image type="Connect your data" source="media/operations-manager-managed-instance-create-reports-on-power-bi/connect-your-data.png" alt-text="Screenshot showing Connect your data option.":::
 1. After you enter the parameters, select any one of the following authentication methods: 
     - SQL username and password-based method 
     - Azure Active Directory based method 

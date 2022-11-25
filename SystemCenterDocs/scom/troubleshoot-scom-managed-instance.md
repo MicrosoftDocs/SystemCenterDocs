@@ -179,7 +179,7 @@ Occurs if there are no cores available for scaling.
 
 **Resolution**
 
-To resolve, increase the number of cores in the subscription or delete existing VMs/VMSS.
+To resolve, increase the number of cores in the subscription or delete existing VMs/Virtual Machine Scale Sets.
 
 ### Issue: Extension provisioning error
 
