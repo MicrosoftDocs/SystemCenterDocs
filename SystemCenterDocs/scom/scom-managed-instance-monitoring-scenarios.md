@@ -35,7 +35,7 @@ SCOM Managed Instance (preview) allows you to monitor the workloads that you've 
 
 ## Monitor workloads running on-premises and in Azure 
 
-If you have some workloads running on-premises and some in Azure, you can use SCOM Managed Instance (preview) to monitor all of them in one go. To monitor your workloads (both on-premises and in Azure), follow these steps:
+If you have some workloads running on-premises and some in Azure, you can use SCOM Managed Instance (preview) to monitor all of them simultaneously. To monitor your workloads (both on-premises and in Azure), follow these steps:
 
 1. Connect your instance to the Ops Console.
 2. Import the management pack of the workload that you plan to monitor.
@@ -43,4 +43,4 @@ If you have some workloads running on-premises and some in Azure, you can use SC
 
 ## Agentless monitoring 
 
-In SCOM Managed Instance (preview), Agents need to be installed manually. Discovery wizard isn't supported. 
+In SCOM Managed Instance (preview), Agents need to be installed manually. The Discovery wizard isn't supported. 

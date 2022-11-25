@@ -30,13 +30,13 @@ The minimum address space is /27 (which means /28 and above wouldn't work).
 ### How many subnets does the VNet need to have?
 
 - VNet needs two subnets. 
-    - For SCOM managed instance (preview)
-    - For SQL managed instance
-- The subnet for SQL MI instance will be a delegated (dedicated) subnet and won't be used by the SCOM managed instance (preview). Name the subnets accordingly to avoid confusion in the future while you create the SQL MI/SCOM managed instance (preview).
+    - For SCOM Managed Instance (preview)
+    - For SQL Managed Instance
+- The subnet for SQL MI instance will be a delegated (dedicated) subnet and won't be used by the SCOM Managed Instance (preview). Name the subnets accordingly to avoid confusion in the future while you create the SQL MI/SCOM Managed Instance (preview).
 
 ### What address range do the two subnets need?
 
-The minimum address space needs to be /27 for SQL MI subnet and /28 for the SCOM managed instance (preview) subnet.
+The minimum address space needs to be /27 for SQL MI subnet and /28 for the SCOM Managed Instance (preview) subnet.
 
 ### Do the subnets need to specify a NAT gateway or Service Endpoint?
 
@@ -48,7 +48,7 @@ No, you can disable all of them or enable any of them based on your organization
 
 ### I created separate VNets in Azure. What steps do I need to take?
 
-If you have multiple VNets created, you need to peer your VNets. If you're peering any two networks, ensure to peer from both networks to each other. Thus, if you peer three networks, you'll need to do six peerings.
+If you have multiple VNets created, you need to peer your VNets. If you're peering any two networks, ensure to peer from both networks to each other. Thus, if you peer three networks, you'll need to do six peerings. For more information on peering, see [Azure Virtual Network peering](/azure/virtual-network/virtual-network-peering-overview).
 
 ### What options do I select while peering?
 
@@ -58,7 +58,7 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 
 :::image type="Add peering" source="media/operations-manager-managed-instance-common-questions/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/operations-manager-managed-instance-common-questions/add-peering-expanded.png":::
 
-## SQL-managed instance
+## SQL managed instance
 
 ### I don't see my region in SQL MI. How do I solve that?
 
@@ -99,11 +99,11 @@ Users with the Global administrator role have access to all administrative featu
 
 ### What are the charges that will be incurred during preview? 
 
-The charges that incur while running SCOM managed instance (preview) will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, etc.). Apart from the infrastructure charges, there will be no other IP-related charge. For using System Center Operations Manager 2019, the evaluation version (available for six months) can be used to test SCOM managed instance (preview).
+The charges that incur while running SCOM Managed Instance (preview) will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, etc.). Apart from the infrastructure charges, there will be no other IP-related charge.
 
 ### What if there's an error during the deployment? 
 
-During the deployment phase, there can be several reasons why deploying a SCOM managed instance (preview) shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it's best to delete the instance and create one again.
+During the deployment phase, there can be several reasons why deploying a SCOM Managed Instance (preview) shows an error. It might be some backend error, or you might have given the wrong credentials for one of the accounts. In the scenario of an error during deployment, it's best to delete the instance and create one again. For more information, see [Troubleshoot issues with Azure Monitor SCOM Managed Instance (preview)](./troubleshoot-scom-managed-instance.md)
 
 ### What is the procedure to delete an instance? 
 
@@ -111,34 +111,36 @@ You can either delete the instance from the instance view itself or from the *Re
 
 In the instance view, select *Delete* from the top menu and wait for the confirmation that the instance has been deleted. 
 
-Alternatively, go to your resource group view (search for Resource Group in the Azure search bar, and in the list of results, open your resource group). If you created a separate resource group for SCOM managed instance (preview), delete the resource group. Otherwise, in the resource group, search for your instance and select *Delete*. 
+:::image type="Delete option" source="media/operations-manager-managed-instance-common-questions/delete.png" alt-text="Screenshot showing delete option.":::
 
-Once the instance is deleted, you'll also have to delete the two databases created in SQL MI. In the resource view, select the two databases (depending on what name you gave to your SQL MI instance) and select **Delete**. With the two databases deleted, you can recreate your SCOM managed instance (preview).
+Alternatively, go to your resource group view (search for Resource Group in the Azure search bar, and in the list of results, open your resource group). If you created a separate resource group for SCOM Managed Instance (preview), delete the resource group. Otherwise, in the resource group, search for your instance and select *Delete*. 
 
-### If an Arc instance to connect to private cloud with some resources is available, will SCOM managed instance (preview) scale to those resources? 
+Once the instance is deleted, you'll also have to delete the two databases created in SQL MI. In the resource view, select the two databases (depending on what name you gave to your SQL MI instance) and select **Delete**. With the two databases deleted, you can recreate your SCOM Managed Instance (preview).
+
+### If an Arc instance to connect to private cloud with some resources is available, will SCOM Managed Instance (preview) scale to those resources? 
 
 Currently not supported. Today, independent of System Center Operations Manager, customers can install an Arc agent on a VM running on-premises and start seeing the resource in the Azure portal. Once they start seeing the resource in the Azure portal, they can use the Azure services for that resource (and incur the appropriate costs).
 
-### How will network monitoring be done on SCOM managed instance (preview)? 
+### How will network monitoring be done on SCOM Managed Instance (preview)? 
 
-SCOM managed instance (preview) and System Center Operations Manager share the same feature set.
+SCOM Managed Instance (preview) and System Center Operations Manager share the same feature set. You can use the same Management packs that you use in on-premises to carry out network monitoring via SCOM Managed Instance (preview).
 
-### How is SCOM managed instance (preview) different from running System Center Operations Manager in Azure VMs?
+### How is SCOM Managed Instance (preview) different from running System Center Operations Manager in Azure VMs?
 
-- SCOM managed instance (preview) is native to Azure while running System Center Operations Manager in Azure VMs isn't a native solution. This means, SCOM managed instance (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to SCOM managed instance (preview).
-- In terms of ease of deployment, SCOM managed instance (preview) is easy to deploy while running VMs in Azure takes possibly months of effort (and requires in depth technical knowledge).
-- SCOM managed instance (preview) uses SQL MI as the backend for database management by default.
-- SCOM managed instance (preview) comes with backup and disaster recovery built in.
+- SCOM Managed Instance (preview) is native to Azure while running System Center Operations Manager in Azure VMs isn't a native solution. This means, SCOM Managed Instance (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to SCOM Managed Instance (preview).
+- In terms of ease of deployment, SCOM Managed Instance (preview) is easy to deploy while running VMs in Azure takes possibly months of effort (and requires in depth technical knowledge).
+- SCOM Managed Instance (preview) uses SQL MI as the backend for database management by default.
+- SCOM Managed Instance (preview) comes with built in scaling, patching features, and integrated reports.
 
 ### What does line-of-sight mean? 
 
 Being in the same private network so that the IPs assigned to each component in the network can be a private IP.
 
-### Can I view the SCOM managed instance (preview) resources and VMs in my subscription? 
+### Can I view the SCOM Managed Instance (preview) resources and VMs in my subscription? 
 
-Since this preview requires you to create the SCOM managed instance (preview) in your subscription, all the SCOM managed instance (preview) resources (including the VMs) will be visible to you. However, we recommend not to do any actions on the VMs and other resources while you're operating SCOM managed instance (preview) to avoid unforeseen complexities.
+Since this preview requires you to create the SCOM Managed Instance (preview) in your subscription, all the SCOM Managed Instance (preview) resources (including the VMs) will be visible to you. However, we recommend not to do any actions on the VMs and other resources while you're operating SCOM Managed Instance (preview) to avoid unforeseen complexities.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [SCOM managed instance (preview) overview](operations-manager-managed-instance-overview.md)
+> [SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
