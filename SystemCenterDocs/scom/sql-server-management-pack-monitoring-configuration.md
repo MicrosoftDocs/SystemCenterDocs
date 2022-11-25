@@ -29,7 +29,7 @@ Management Pack for SQL Server provides the following SQL Server agent alerting 
 - MSSQL on Windows: SQL Server Agent is unable to connect to SQL Server
 - MSSQL on Windows: Unable to re-open the local eventlog
 
-By default, these rules are enabled in [agent monitoring](sql-server-management-pack-monitoring-modes.md) mode, but disabled in [mixed monitoring](sql-server-management-pack-monitoring-modes.md#configuring-mixed-monitoring-mode) mode because Operations Manager does not allow to collect events from event logs on remote computers. To change this, you can override each of these rules by enabling the **AllowProxying** option.
+By default, these rules are enabled in [agent monitoring](sql-server-management-pack-monitoring-modes.md) mode, but disabled in [mixed monitoring](sql-server-management-pack-monitoring-modes.md#configuring-mixed-monitoring-mode) mode because Operations Manager does not allow events from event logs to collect on remote computers. To change this, you can override each of these rules by enabling the **AllowProxying** option.
 
 >[!NOTE]
 >Enabling the **AllowProxying** option may cause remote code execution. Do not enable this option unless you are sure that your computer is secured.
@@ -72,7 +72,7 @@ The backup preferences of the selected availability group can be as follows:
 
 - **Primary**
 
-  Specifies that the backups should always occur on the primary replica. This option is useful if you need backup features, such as creating differential backups, that are not supported when backup is run on a secondary replica.
+  Specifies that the backups should always occur on the primary replica. This option is useful if you need backup features, such as creating differential backups that are not supported when backup is run on a secondary replica.
 
 - **Any Replica**
 
