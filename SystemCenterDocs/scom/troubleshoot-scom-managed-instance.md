@@ -5,7 +5,7 @@ description: This article describes the errors that might occur when you deploy 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 11/24/2022
+ms.date: 11/25/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -189,7 +189,7 @@ This error might occur during the provisioning of SCOM extension or SCOM install
 
 **Resolution**
 
-To resolve, report to the development team.
+To resolve, contact Microsoft support.
 
 ### Issue: Conflict
 
@@ -211,7 +211,7 @@ Development Issue.
 
 **Resolution**
 	
-To resolve, report to the development team.
+To resolve, contact Microsoft support.
 
 ### Issue: Notification is stuck at *Fetching updates* even though the update operation is complete
 
@@ -221,7 +221,7 @@ Network issue/development issue.
 
 **Resolution**
 
-To resolve, try refreshing for updates. If not resolved, report to the development team.
+To resolve, try refreshing for updates. If not resolved, contact Microsoft support.
 
 ### Issue: Update state isn't reflected correctly on the card
 
@@ -231,7 +231,7 @@ Network issue/development issue.
 
 **Resolution**
 
-To resolve, try refreshing for updates. If not resolved, report to the development team.
+To resolve, try refreshing for updates. If not resolved, contact Microsoft support.
 
 ### Issue: Inconsistency in the controls within the card
 
@@ -243,7 +243,7 @@ Development issue.
 
 **Resolution**
 
-To resolve, report to the development team.
+To resolve, contact Microsoft support.
 
 ### Issue: Warning message pops up for updates
 
@@ -258,20 +258,16 @@ Occurs due to the following reasons:
 To resolve, trigger an *update instance*.
 
 ### Issue: Update fails on more than one retries
-
-**Cause**
 	
 **Resolution**
 
-To resolve, report to the development team.
+To resolve, contact Microsoft support.
 
 ### Issue: Update fails, and rollback fails leaving an inconsistent state where the number of VMs on the VMSS instance has been modified
 
-**Cause**
-
 **Resolution**
 
-To resolve, report to the development team.
+To resolve, contact Microsoft support.
 
 ### Issue: Update fails but database update is successful
 
@@ -281,7 +277,7 @@ Occurs due to failed update after the successful database update.
 
 **Resolution**
 
-To resolve, report to the development team.
+To resolve, contact Microsoft support.
 
 ### Issue: After successful update, SCOM console isn't functioning properly on the instance
 
@@ -291,7 +287,7 @@ Occurs if SCOM isn't installed properly or some process might be stuck.
 
 **Resolution**
 
-To resolve, try to restart the instance. If the issue persists, report to the development team.
+To resolve, try to restart the instance. If the issue persists, contact Microsoft support.
 
 ### Issue: Update is taking more than 3 hours and fails eventually
 
@@ -301,7 +297,7 @@ Occurs when the update takes more than 3 hours.
 
 **Resolution**
 
-To resolve, report to the development team.
+To resolve, contact Microsoft support.
 
 ### Issue: Some intermittent issue during update
 
@@ -351,7 +347,7 @@ Occurs due to portal or ARM issue.
 
 **Resolution**
 
-To resolve, wait for some time and retry. If the issue exists even after fixing the portal/ ARM issue, report to the development team.
+To resolve, wait for some time and retry. If the issue exists even after fixing the portal/ ARM issue, contact Microsoft support.
 
 
 ### Issue: Patching or scaling operation is already in progress, try again after some time.
