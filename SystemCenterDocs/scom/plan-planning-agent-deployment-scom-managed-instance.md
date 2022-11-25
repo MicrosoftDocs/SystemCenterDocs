@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Azure Monitor SCOM Managed Instance (preview) Agents
 
-In Azure Monitor SCOM Managed Instance (preview), an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like a SQL database or logical disk, and execute tasks on demand by an operator or in response to a condition. It allows SCOM Managed Instance (preview) to monitor Windows operating systems and the components of an IT service installed on them, like a web site or an Active Directory domain controller.  
+In Azure Monitor SCOM Managed Instance (preview), an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like aN SQL database or logical disk, and execute tasks on demand by an operator or in response to a condition. It allows SCOM Managed Instance (preview) to monitor Windows operating systems and the components of an IT service installed on them, like a web site or an Active Directory domain controller.  
 
 ## Windows agent
 
@@ -35,7 +35,7 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 ### Authentication with gateway server
 
-Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of a management group. Because the gateway server resides in a domain that is not trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of SCOM Managed Instance (preview) for mutual authentication.
+Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of a management group. Because the gateway server resides in a domain that isn't trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of SCOM Managed Instance (preview) for mutual authentication.
 
 This requires you to request certificates for each agent that will report to a gateway server and import those certificates into the target computer using the `MOMCertImport.exe` tool, which is located on the installation media SupportTools\ (amd64 or x86) directory.  You need to have access to a certification authority (CA) which can be a public CA such as VeriSign, or you can use Microsoft Certificate Services.  
 
