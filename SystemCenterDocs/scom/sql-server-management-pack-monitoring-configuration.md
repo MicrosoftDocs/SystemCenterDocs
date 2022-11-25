@@ -2,10 +2,10 @@
 ms.assetid: 9550f943-bcc2-45dc-a866-9eae7b3b8b0c
 title: Monitoring configuration in Management Pack for SQL Server
 description: This section explains monitoring configurations in Management Pack for SQL Server
-author: Anastas1ya
-ms.author: v-asimanovic
+author: VChernov
+ms.author: v-vchernov
 manager: evansma
-ms.date: 11/30/2021
+ms.date: 11/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -284,6 +284,9 @@ The following is a complete list of securables that are checked by the monitor t
   - msdb.dbo.sysjobschedules
   - msdb.dbo.syscategories
   - msdb.dbo.sysjobs_view
+  - msdb.dbo.sysjobactivity
+  - msdb.dbo.sysjobhistory
+  - msdb.dbo.syssessions
   - msdb.dbo.log_shipping_primary_databases
   - msdb.dbo.log_shipping_secondary_databases
   - msdb.dbo.backupset
@@ -292,8 +295,8 @@ The following is a complete list of securables that are checked by the monitor t
   - master.sys.sp_enumerrorlogs
   - master.sys.xp_readerrorlog
   - master.sys.xp_instance_regread
-  - msdb.dbo.sp_help_jobactivity
   - msdb.dbo.sp_help_job
+  - msdb.dbo.agent_datetime
   - msdb.dbo.SQLAGENT_SUSER_SNAME
 
 The following is a complete list of securables checked by the monitor targeted to SQL Server Databases:
