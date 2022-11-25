@@ -39,7 +39,7 @@ Select **Download as CSV** to download the events in the current view.
 
 ### View change history 
 
-You can view the change history of an event and get the details of changes occured during the event time. Select an event from the activity log and then select the **Change history** to view any associated changes with that event.
+You can view the change history of an event and get the details of changes occurred during the event time. Select an event from the activity log and then select the **Change history** to view any associated changes with that event.
 
 :::image type="Change history" source="media/scom-mi-activity-log/view-change-history.png" alt-text="Screenshot showing change history.":::
 
