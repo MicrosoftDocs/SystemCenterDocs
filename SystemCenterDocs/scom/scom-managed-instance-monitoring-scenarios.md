@@ -15,7 +15,7 @@ monikerRange: '>=sc-om-2019'
 
 # Azure Monitor SCOM Managed Instance (preview) monitoring scenarios
 
-Azure Monitor SCOM Managed Instance (preview) supports a variety of methods to actively monitor different services and the components and devices that support them.  This article provides a high level overview of the supported monitoring scenarios with Azure Monitor SCOM Managed Instance (preview).
+Azure Monitor SCOM Managed Instance (preview) supports various methods to actively monitor different services and the components and devices that support them.  This article provides a high level overview of the supported monitoring scenarios with Azure Monitor SCOM Managed Instance (preview).
 
 ## Monitor a workload on-premises
 
@@ -27,7 +27,7 @@ SCOM Managed Instance (preview) allows you to monitor your on-premises workloads
 
 ## Monitor a workload in Azure 
 
-SCOM Managed Instance (preview) allows you to monitor the workloads that you have migrated to cloud VMs. To monitor a cloud workload, follow these steps:
+SCOM Managed Instance (preview) allows you to monitor the workloads that you've migrated to cloud VMs. To monitor a cloud workload, follow these steps:
 
 1. Connect your instance to the Ops Console.
 2. Import the management pack of the cloud workload that you plan to monitor.
@@ -35,7 +35,7 @@ SCOM Managed Instance (preview) allows you to monitor the workloads that you hav
 
 ## Monitor workloads running on-premises and in Azure 
 
-If you have some workloads running on-premises and some in Azure, you can use SCOM Managed Instance (preview) to monitor all of them in one go. ZTo monitor your workloads (both on-premises and in Azure), follow these steps:
+If you have some workloads running on-premises and some in Azure, you can use SCOM Managed Instance (preview) to monitor all of them in one go. To monitor your workloads (both on-premises and in Azure), follow these steps:
 
 1. Connect your instance to the Ops Console.
 2. Import the management pack of the workload that you plan to monitor.

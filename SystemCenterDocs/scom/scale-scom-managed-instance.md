@@ -24,7 +24,7 @@ This article provides information on how to scale your SCOM Managed Instance (pr
 To scale In/Out the management servers, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) and search for **SCOM** or **SCOM Managed Instance**.
-1. On the **Overview** page, under **Configuration**, select **Scaling**..
+1. On the **Overview** page, under **Configuration**, select **Scaling**.
      :::image type="Scaling" source="media/scale-scom-managed-instance/scaling.png" alt-text="Screenshot of Scaling.":::
 1. On the **Scaling** page,
     1. **Current**: Displays the existing number of management servers that are part of the SCOM Managed Instance (preview).
