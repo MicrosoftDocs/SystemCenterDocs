@@ -118,4 +118,4 @@ Operations Manager 2022 UR1 supports SQL Server 2022.
 
 Operations Manager 2022 UR1 allows you to discover Azure Monitor SCOM Managed Instance (preview) from console and manage your Hybrid environment and monitor your workloads through Azure portal. Learn more.
 
-:::image type="Azure Motinor SCOM Managed Instance (preview)" source="/includes/media/whats-new-om-2022/discover-scom-managed-instance.png" alt-text="Screenshot of Azure Motinor SCOM Managed Instance (preview).":::
+:::image type="Azure Motinor SCOM Managed Instance (preview)" source="./media/whats-new-om-2022/discover-scom-managed-instance.png" alt-text="Screenshot of Azure Motinor SCOM Managed Instance (preview).":::
