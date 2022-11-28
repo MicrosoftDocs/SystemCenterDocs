@@ -23,7 +23,7 @@ monikerRange: '>=sc-sm-2016'
 This article provides information about how to determine your current Microsoft System Center – Service Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 > [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2016 – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
+> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
 
 ## Build versions
 
@@ -46,7 +46,7 @@ The following table lists the build versions for Service Manager 2019.
 | 10.19.1035.0 | n/a | System Center 2019 Service Manager RTM     |
 | 10.19.1035.73	 | [4532891](https://support.microsoft.com/help/4532891/update-rollup-1-for-system-center-service-manager-2019) | Update Rollup 1 for System Center 2019 Service Manager    |
 | 10.19.1035.101 | [4558753](https://support.microsoft.com/help/4558753/update-rollup-2-for-system-center-service-manager-2019) | Update Rollup 2 for System Center 2019 Service Manager    |
-| 10.19.1035.137 | [5013428](https://support.microsoft.com/topic/update-rollup-4-for-system-center-service-manager-2019-40b7cdf9-2ba9-4ab0-85bf-796007cde88f) | Update Rollup 4 for System Center 2019 Service Manager |
+| 10.19.1035.137 | [5013428](https://support.microsoft.com/help/5013428/update-rollup-4-for-system-center-service-manager-2019) | Update Rollup 4 for System Center 2019 Service Manager |
 
 ::: moniker-end
 
