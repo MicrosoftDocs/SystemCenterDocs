@@ -5,7 +5,7 @@ description: This article explains how to configure monitoring with service SID
 author: VChernov
 ms.author: v-vchernov
 manager: evansma
-ms.date: 9/5/2022
+ms.date: 11/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This section explains how to configure monitoring using Service SIDs for SQL Server on a Windows Server instance. These steps were first published by Kevin Holman in [his blog](https://kevinholman.com/2016/08/25/sql-mp-run-as-accounts-no-longer-required/). The SQL scripts to configure lowest-privilege access were developed by Brandon Adams.
 
-To configure monitoring using Service Security Identifier, perform the following steps for each monitored server with running SQL Server Database Engine:
+To configure monitoring using Service Security Identifier, perform the following steps:
 
 1. Open the command prompt as an administrator and run the following command:
 
@@ -35,89 +35,83 @@ To configure monitoring using Service Security Identifier, perform the following
 
     ![Running HealthService](./media/sql-server-management-pack/health-service-command.png)
 
-4. Open **Registry Editor** and check that the **ServiceSidType** key is set to 1 at `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService`
+4. Open **Registry Editor** and check that the **ServiceSidType** key is set to 1 at *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService*.
 
-5. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance.
+5. Create the NT SERVICE\HealthService login for the HealthService SID on every SQL Server Instance and grant it SA rights.
 
-6. Create the **NT SERVICE\HealthService** login for the HealthService SID on every SQL Server Instance and grant it SA rights.
-
-    If you cannot grant SA rights, use the following SQL script to set the lowest privilege configuration for the account:
+    If you cannot grant SA rights, use the following SQL scripts to set the lowest privilege configuration for the account:
 
     ```sql
-    USE [master];
-    SET NOCOUNT ON;
-    /*The user account that System Center Operations Manager will
-    use to access the SQL Server instance*/
-    DECLARE @accountname sysname = 'NT SERVICE\HealthService';
-    /*In some cases, administrators change the 'sa' account default name.
-    This will retrieve the name of the account associated to princicpal_id = 1*/
-    DECLARE @sa_name sysname = 'sa';
-    SELECT @sa_name = [Name] FROM sys.server_principals WHERE principal_id = 1
-    /*Create the server role with authorization to the account associated to principal id = 1.
-    Create the role only if it does not already exist*/
-    DECLARE @createSrvRoleCommand nvarchar(200);
-    SET @createSrvRoleCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-    WHERE [Name] = ''SCOM_HealthService'') BEGIN
-    CREATE SERVER ROLE [SCOM_HealthService] AUTHORIZATION [' + @sa_name + ']; END'
-    EXEC(@createSrvRoleCommand);
-    GRANT VIEW ANY DATABASE TO [SCOM_HealthService];
-    GRANT VIEW ANY DEFINITION TO [SCOM_HealthService];
-    GRANT VIEW SERVER STATE TO [SCOM_HealthService];
-    DECLARE @createLoginCommand nvarchar(200);
-    SET @createLoginCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-    WHERE [Name] = '''+ @accountname +''') BEGIN
-    CREATE LOGIN '+ QUOTENAME(@accountname) +' FROM WINDOWS WITH DEFAULT_DATABASE=[master]; END'
-    EXEC(@createLoginCommand);
+    USE [master]
+    SET NOCOUNT ON
+    /*User account that System Center Operations Manager will use to access
+        Default is the Service SID for the HealthService*/
+    DECLARE @accountname sysname = 'NT SERVICE\HealthService'
+    -- Create the server role and grant permissions
+    CREATE SERVER ROLE [SCOM_HealthService]
+    GRANT VIEW ANY DATABASE TO [SCOM_HealthService]
+    GRANT ALTER ANY DATABASE TO [SCOM_HealthService]
+    GRANT VIEW ANY DEFINITION TO [SCOM_HealthService]
+    GRANT VIEW SERVER STATE TO [SCOM_HealthService]
+    DECLARE @createLoginCommand nvarchar(200)
+    SET @createLoginCommand = '
+      CREATE LOGIN '+ QUOTENAME(@accountname) +
+      ' FROM WINDOWS WITH DEFAULT_DATABASE=[master];'
+    EXEC(@createLoginCommand)
     -- Add the login to the user-defined server role
-    DECLARE @addServerMemberCommand nvarchar(200);
-    SET @addServerMemberCommand = 'ALTER SERVER ROLE [SCOM_HealthService] ADD MEMBER '
-    + QUOTENAME(@accountname) + ';'
-    EXEC(@addServerMemberCommand);
-    -- Add the login and database role to each database
-    DECLARE @createDatabaseUserAndRole nvarchar(max);
-    SET @createDatabaseUserAndRole = '';
-    SELECT @createDatabaseUserAndRole = @createDatabaseUserAndRole + ' USE ' + QUOTENAME(db.name) + ';
-    IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = '''+ @accountname +''') BEGIN
-    CREATE USER ' + QUOTENAME(@accountname) + ' FOR LOGIN ' + QUOTENAME(@accountname) + '; END;
-    IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = ''SCOM_HealthService'') BEGIN
-    CREATE ROLE [SCOM_HealthService] AUTHORIZATION [dbo]; END;
-    ALTER ROLE [SCOM_HealthService] ADD MEMBER ' + QUOTENAME(@accountname) + ';'
+    EXEC sp_addsrvrolemember @loginame = @accountname
+      , @rolename = 'SCOM_HealthService'
+    DECLARE @createDatabaseUserAndRole nvarchar(max)
+    SET @createDatabaseUserAndRole = ''
+    SELECT @createDatabaseUserAndRole = @createDatabaseUserAndRole + '
+      USE ' + QUOTENAME(db.name) + ';
+      CREATE USER ' + QUOTENAME(@accountname) +
+      ' FOR LOGIN ' + QUOTENAME(@accountname) + ';
+      CREATE ROLE [SCOM_HealthService];
+      EXEC sp_addrolemember @rolename =
+      ''SCOM_HealthService'', @membername
+      = '+ QUOTENAME(@accountname) + ''
+    -- 'ALTER ROLE [SCOM_HealthService] ADD MEMBER '
+      -- '+ QUOTENAME(@accountname) + ';'
     FROM sys.databases db
-        LEFT JOIN sys.dm_hadr_availability_replica_states hadrstate ON
-            db.replica_id = hadrstate.replica_id
+    LEFT JOIN sys.dm_hadr_availability_replica_states hadrstate ON
+        db.replica_id = hadrstate.replica_id
     WHERE db.database_id <> 2
         AND db.user_access = 0
         AND db.state = 0
         AND db.is_read_only = 0
-        AND (hadrstate.role = 1 or hadrstate.role is null);
-    EXEC(@createDatabaseUserAndRole);
-    -- Add database specific permissions to database role
-    USE [master];
-    GRANT EXECUTE ON sys.xp_readerrorlog TO [SCOM_HealthService];
-    GRANT EXECUTE ON sys.xp_instance_regread TO [SCOM_HealthService];
-    USE [msdb];
-    GRANT SELECT ON [dbo].[sysjobschedules] TO [SCOM_HealthService];
-    GRANT SELECT ON [dbo].[sysschedules] TO [SCOM_HealthService];
-    GRANT SELECT ON [dbo].[sysjobs_view] TO [SCOM_HealthService];
-    GRANT SELECT ON [dbo].[syscategories] TO [SCOM_HealthService];
-    GRANT SELECT ON [dbo].[log_shipping_primary_databases] TO [SCOM_HealthService];
-    GRANT SELECT ON [dbo].[log_shipping_secondary_databases] TO [SCOM_HealthService];
-    GRANT SELECT ON [dbo].[log_shipping_monitor_history_detail] TO [SCOM_HealthService];
-    GRANT SELECT ON [dbo].[log_shipping_monitor_secondary] TO [SCOM_HealthService];
-    GRANT SELECT ON [dbo].[log_shipping_monitor_primary] TO [SCOM_HealthService];
-    GRANT EXECUTE ON [dbo].[sp_help_job] TO [SCOM_HealthService];
-    GRANT EXECUTE ON [dbo].[sp_help_jobactivity] TO [SCOM_HealthService];
-    GRANT EXECUTE ON [dbo].[SQLAGENT_SUSER_SNAME] TO [SCOM_HealthService];
-    ALTER ROLE [SQLAgentReaderRole] ADD MEMBER [SCOM_HealthService];
+        AND (hadrstate.role = 1 or hadrstate.role is null)
+    EXEC(@createDatabaseUserAndRole)
+    GO
+    USE [master]
+    GRANT EXECUTE ON sys.xp_readerrorlog TO [SCOM_HealthService]
+    GRANT EXECUTE ON sys.xp_instance_regread TO [SCOM_HealthService]
+    USE [msdb]
+    GRANT SELECT ON [dbo].[sysjobschedules] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[sysschedules] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[syscategories] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[sysjobs_view] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[sysjobactivity] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[sysjobhistory] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[syssessions] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[log_shipping_primary_databases] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[log_shipping_secondary_databases] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[log_shipping_monitor_history_detail] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[log_shipping_monitor_secondary] TO [SCOM_HealthService]
+    GRANT SELECT ON [dbo].[log_shipping_monitor_primary] TO [SCOM_HealthService]
+    GRANT EXECUTE ON [dbo].[sp_help_job] TO [SCOM_HealthService]
+    GRANT EXECUTE ON [dbo].[agent_datetime] TO [SCOM_HealthService]
+    GRANT EXECUTE ON [dbo].[SQLAGENT_SUSER_SNAME] TO [SCOM_HealthService]
+    EXEC sp_addrolemember @rolename='SQLAgentReaderRole', @membername='SCOM_HealthService'
     ```
 
-7. To run SQL Server MP tasks, such as **Set database Offline**, **Set database Online**, and **Set database to Emergency state**, grant the HealthService SID account the **ALTER ANY DATABASE** permission.
+6. To run SQL Server MP tasks, such as **Set database Offline**, **Set database Online**, and **Set database to Emergency state**, grant the HealthService SID account the **ALTER ANY DATABASE** permission.
 
     ```sql
-    USE [master];
+    USE [master]
     GRANT ALTER ANY DATABASE TO [SCOM_HealthService];
     ```
 
-8. In the **Microsoft Monitoring Agent** properties for the selected management group set the **Local System** account to perform agent actions.
+7. Use the 'Local System' account to run the Health Service on the target SQL Server hosted on a Windows Server instance.
 
-The **NT AUTHORITY\SYSTEM** account should be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.
+The NT AUTHORITY\SYSTEM account should be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.
