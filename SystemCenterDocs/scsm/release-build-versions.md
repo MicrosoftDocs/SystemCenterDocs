@@ -25,9 +25,9 @@ This article provides information about how to determine your current Microsoft 
 > [!NOTE]
 > All System Center Service Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
 
-## Build versions
-
 ::: moniker range="sc-sm-2022"
+
+## Service Manager 2022 build versions
 
 The following table lists the build versions for Service Manager 2022.
 
@@ -38,6 +38,8 @@ The following table lists the build versions for Service Manager 2022.
 ::: moniker-end
 
 ::: moniker range="sc-sm-2019"
+
+## Service Manager 2019 build versions
 
 The following table lists the release history for Service Manager 2019.
 
@@ -51,6 +53,8 @@ The following table lists the release history for Service Manager 2019.
 ::: moniker-end
 
 ::: moniker range="sc-sm-2016"
+
+## Service Manager 2016 build versions
 
 The following table lists the release history for Service Manager 2016.
 
@@ -70,6 +74,8 @@ The following table lists the release history for Service Manager 2016.
 
 ::: moniker range="sc-sm-1801"
 
+## Service Manager 1801 build versions
+
 The following table lists the release history for Service Manager 1801.
 
 | Build Number | KB | Description |
@@ -79,6 +85,8 @@ The following table lists the release history for Service Manager 1801.
 ::: moniker-end
 
 ::: moniker range="sc-sm-1807"
+
+## Service Manager 1807 build versions
 
 The following table lists the release history for Service Manager 1807.
 
