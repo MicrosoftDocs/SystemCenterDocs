@@ -1,11 +1,11 @@
 ---
 ms.assetid: 306caff2-9555-4f41-995c-65714ed97057
-title: Service Manager build versions
-description: This article describes about version numbers.
+title: Release build versions for System Center Service Manager
+description: This article details the release builds in Service Manager
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
+ms.date: 11/28/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
@@ -23,7 +23,7 @@ monikerRange: '>=sc-sm-2016'
 This article provides information about how to determine your current Microsoft System Center – Service Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 > [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
+> All System Center Service Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
 
 ## Build versions
 
@@ -39,7 +39,7 @@ The following table lists the build versions for Service Manager 2022.
 
 ::: moniker range="sc-sm-2019"
 
-The following table lists the build versions for Service Manager 2019.
+The following table lists the release history for Service Manager 2019.
 
 | Build Number | KB | Description |
 | --- | --- |--- |
@@ -52,7 +52,7 @@ The following table lists the build versions for Service Manager 2019.
 
 ::: moniker range="sc-sm-2016"
 
-The following table lists the build versions for Service Manager 2016.
+The following table lists the release history for Service Manager 2016.
 
 | Build Number | KB | Description |
 | --- | --- |--- |
@@ -70,7 +70,7 @@ The following table lists the build versions for Service Manager 2016.
 
 ::: moniker range="sc-sm-1801"
 
-The following table lists the build versions for Service Manager 1801.
+The following table lists the release history for Service Manager 1801.
 
 | Build Number | KB | Description |
 | --- | --- |--- |
@@ -80,7 +80,7 @@ The following table lists the build versions for Service Manager 1801.
 
 ::: moniker range="sc-sm-1807"
 
-The following table lists the build versions for Service Manager 1807.
+The following table lists the release history for Service Manager 1807.
 
 | Build Number | KB | Description |
 | --- | --- |--- |
