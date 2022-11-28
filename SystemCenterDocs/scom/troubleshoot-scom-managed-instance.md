@@ -169,7 +169,7 @@ For more information, see [Create and configure an SQL Managed Instance](/system
 
 For example, the update button is enabled even though the title of the card reads **SCOM is up to date**.
 
-**Cause**:'Development issue.
+**Cause**: Development issue.
 
 **Resolution**: To resolve, contact Microsoft support.
 
