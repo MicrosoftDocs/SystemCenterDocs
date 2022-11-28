@@ -5,7 +5,7 @@ description: This article describes the errors that might occur when you deploy 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 11/25/2022
+ms.date: 11/28/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -18,6 +18,20 @@ monikerRange: '>=sc-om-2019'
 This article describes the errors that might occur when you deploy or use Azure Monitor SCOM Managed Instance (preview) and how to resolve them.
 
 ## SCOM Managed Instance (preview) creation/deployment
+
+### General troubleshooting
+
+**Cause**
+
+Any
+
+**Resolution**
+
+1.	Ensure all the prerequisites are met. Creation issues may arise due to improper/incomplete prerequisites.
+2.	Ensure you read/check the error message carefully. The error messages capture the issue/error in creation.
+3.	Check the **SCOM Setup logs** link provided in the error message. Select the link to download the SCOM setup logs.
+4.	If none of the above steps are unable to identify the issue, login to  the VMSS instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
+
 
 ### Issue: Resource group `%ResourceGroupName;` is managed by other Azure resource
 
