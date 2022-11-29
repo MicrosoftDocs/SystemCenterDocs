@@ -27,11 +27,11 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
 
 - SQL based authentication: 
 
-    - For SQL based authentication, you need the username and password of the SQL managed instance.
+    - You need the username and password of the SQL managed instance.
 
 ## Create reports through public endpoint of SQL MI
 
-1. Sign into the Azure portal and search for SCOM Managed Instances (preview). The SCOM Managed Instance (preview) Overview page opens.
+1. Sign in to the [Azure portal](https://portal.azure.com/) and search for SCOM Managed Instances (preview). The SCOM Managed Instance (preview) Overview page opens.
 1. On the **Overview** page, under **Reports**, select **Power BI**. You have three options on the Power BI page.
     1. **Prerequisite**: Allows you to manage endpoints.
     1. **Configure and install Power BI**: Allows you to install and configure the SCOM Managed Instance (preview) dashboard in Power BI.
@@ -55,5 +55,4 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Operations Manager managed instance (preview) overview](operations-manager-managed-instance-overview.md)
-
+> [Connect the Azure Monitor SCOM managed instance (preview) to Ops console](connect-managed-instance-ops-console.md)
