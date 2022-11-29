@@ -140,7 +140,6 @@ Use the following mapping chart to provide access on SCOM Managed Instance (prev
 SCOM Managed Instance (preview) supports the following notification channels:
 
 - Emails 
-- Teams 
 - SMS/Text 
 
 Export the **Notifications Internal Library** Management pack from the Operations Manager Management Group to migrate all your notification settings and import them to SCOM Managed Instance (preview).
@@ -176,12 +175,8 @@ To migrate from Agent to SCOM Managed Instance (preview), see [High level overvi
 - Groups 
 - 1P Integrations 
 - Agent mapping and configuration
-- System Center Operations Manager Databases (Ops database and DW) 
-- Operations Console 
-- Web Console 
 - Gateways 
 - Custom and 3P Solutions 
-- 3P Management Packs
 
 ## Next steps
 
