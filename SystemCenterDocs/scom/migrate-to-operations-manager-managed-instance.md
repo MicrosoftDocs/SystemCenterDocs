@@ -72,7 +72,7 @@ Below is a quick summary of what can be migrated:
 | Types of data visualizations | Can be migrated to SCOM Managed Instance (preview) | Recommendations |
 |---|---|---|---|---|
 | Dashboards/Views that are available in Management Pack | Yes | Operations console |
-| Dashboards/Views created on Operations console | Yes | Operations Console |
+| Dashboards/Views created on Operations console | Yes | Operations console |
 | Reports that are available in Management Pack | No | Power BI reports |
 | Reports that are created on Operations console | No | Power BI reports |
 
@@ -180,6 +180,5 @@ To migrate from Agent to SCOM Managed Instance (preview), see [High level overvi
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
+[SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
 

@@ -48,12 +48,13 @@ This article describes the errors that might occur when you deploy or use Azure 
 **Cause**: This error can be caused by multiple reasons: 
    - SCOM Managed Instance (preview) might not have read permissions on the SQL Managed Instance or 
    - There might be an issue with your VNet/Region. 
-[]
+
+
 For more information, see [Create and configure an SQL Managed Instance](/system-center/scom/create-operations-manager-managed-instance?tabs=prereqs-portal#create-and-configure-an-sql-mi-instance).
 
 **Resolution**: To resolve, provide read permission to the SQL managed instance.
 
-### Issue: No enough cores to create `%instance;` in the given region.
+### Issue: No enough cores to create `%instance;` in the given region
 
 **Cause**: Occurs when there's no enough cores to create an instance in the given region.
 
@@ -128,7 +129,7 @@ For more information, see [Create and configure an SQL Managed Instance](/system
 
 ## Manual Scale up/down 
 
-### Issue: QUOTA Exceeded
+### Issue: Quota Exceeded
 
 **Cause**: Occurs if there are no cores available for scaling.
 
@@ -243,4 +244,4 @@ For example, the update button is enabled even though the title of the card read
 
 **Cause**: Occurs if a patching or scaling operation has left an inconsistent state after completion. 
 
-**Resolution**: To resolve, please go to SCOM Console and remove the stale management servers. 
+**Resolution**: To resolve, go to SCOM console and remove the stale management servers. 

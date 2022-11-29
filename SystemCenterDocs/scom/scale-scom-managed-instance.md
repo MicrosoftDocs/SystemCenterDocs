@@ -29,7 +29,7 @@ To scale In/Out the management servers, follow these steps:
 1. On the **Scaling** page,
     1. **Current**: Displays the existing number of management servers that are a part of the SCOM Managed Instance (preview).
     1. **Scale In/Out management servers**:
-        1. **Total Endpoints to be monitored**: Enter the total number of endpoints you would like to monitor using a particular SCOM Managed Instance (preview).
+        1. **Total Endpoints to be monitored**: Enter the total number of endpoints you would like to monitor using a specific SCOM Managed Instance (preview).
         1. **Recommended Management servers**: Depending on the number of endpoints you enter, the ideal number of management servers to be provisioned will be recommended. You can change the recommended value as desired.
 
            >[!Note]
@@ -41,5 +41,4 @@ To scale In/Out the management servers, follow these steps:
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Patch SCOM managed instance (preview)](patch-scom-managed-instance.md)
+[Patch SCOM managed instance (preview)](patch-scom-managed-instance.md)

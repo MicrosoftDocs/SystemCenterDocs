@@ -21,25 +21,31 @@ This article provides a high-level overview of the supported monitoring scenario
 
 ## Monitor a workload on-premises
 
-SCOM Managed Instance (preview) allows you to monitor your on-premises workloads. To monitor on-premises workload, follow these steps:
+SCOM Managed Instance (preview) allows you to monitor your on-premises workloads. 
 
-1. Connect your instance to the Operations Console.
+To monitor on-premises workload, follow these steps:
+
+1. Connect your instance to the Operations console.
 2. Import the management pack of the on-premises workload that you plan to monitor.
 3. After successfully importing the management pack, begin monitoring your workload.
 
 ## Monitor a workload in Azure 
 
-SCOM Managed Instance (preview) allows you to monitor the workloads that you've migrated to cloud VMs. To monitor a cloud workload, follow these steps:
+SCOM Managed Instance (preview) allows you to monitor the workloads that you've migrated to cloud VMs. 
 
-1. Connect your instance to the Operations Console.
+To monitor a cloud workload, follow these steps:
+
+1. Connect your instance to the Operations console.
 2. Import the management pack of the cloud workload that you plan to monitor.
 3. After successfully importing the management pack, begin monitoring your workload.
 
 ## Monitor workloads running on-premises and in Azure 
 
-If you have some workloads running on-premises and some in Azure, you can use SCOM Managed Instance (preview) to monitor all of them simultaneously. To monitor your workloads (both on-premises and in Azure), follow these steps:
+If you have some workloads running on-premises and some in Azure, you can use SCOM Managed Instance (preview) to monitor all of them simultaneously. 
 
-1. Connect your instance to the Operations Console.
+To monitor your workloads (both on-premises and in Azure), follow these steps:
+
+1. Connect your instance to the Operations console.
 2. Import the management pack of the workload that you plan to monitor.
 3. After successfully importing the management pack, begin monitoring your workload.
 
