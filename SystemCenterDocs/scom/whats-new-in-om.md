@@ -26,7 +26,7 @@ This article details the new features supported in System Center 2022 - Operatio
 
 Operations Manager 2022 UR1 allows you to discover Azure Monitor SCOM Managed Instance (preview) from console and manage your Hybrid environment and monitor your workloads through Azure portal. Learn more.
 
-:::image type="Azure Monitor SCOM Managed Instance (preview)" source="/media/whats-new-in-om/discover-scom-managed-instance.png" alt-text="Screenshot of Azure Monitor SCOM Managed Instance (preview).":::
+:::image type="content" source="media/whats-new-in-om/discover-scom-managed-instance-inline.png" alt-text="Screenshot of SCOM Managed Instance (preview) page." lightbox="media/whats-new-in-om/discover-scom-managed-instance-expanded.png":::
 
 ::: moniker-end
 
