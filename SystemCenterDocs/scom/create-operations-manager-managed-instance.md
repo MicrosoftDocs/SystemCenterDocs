@@ -31,7 +31,7 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 - Ensure that you've at least four virtual cores (one VM) of type Standard DSv2 in your Azure subscription to deploy an instance.
 - Ensure you allow port 1433 (private port) from the SCOM Managed Instance (preview) to the SQL MI.
 - If you enable public endpoint on SQL MI, ensure that you allow 3342.
-- To ensure reliability and support easy scaling, SCOM Managed Instance- (preview) creates a Standard Load Balancer and a Uniform Virtual Machine Scale Set. For more information, see [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) and [Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview). 
+- To ensure reliability and support easy scaling, SCOM Managed Instance (preview) creates a Standard Load Balancer and a Uniform Virtual Machine Scale Set. For more information, see [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) and [Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview). 
 
 # [In your Active directory domain](#tab/prereqs-active)
 
@@ -39,12 +39,12 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 
 - Ensure that there's direct network connectivity (line-of-sight) between the network, which has your Domain Controller, Ops Console, Agents, and the network in which you'll deploy a SCOM Managed Instance (preview). This is required so that all your resources (Domain Controller, System Center Operations Manager Components such as Ops Console, SCOM Managed Instance (preview) Components such as Management Servers) can communicate with each other over the network.
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/).
-- If your Domain Controller and all other components are in Azure (a conventional Domain Controller and not Azure Active Directory) with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't required). If you're using one VNet to host all your components, you'll already have a line-of-sight between all your components. If you've multiple VNets, you'll need to do VNet peering between all the VNets that are in your network. For more information, see VNet peering in Azure.
+- If your Domain Controller and all other components are in Azure (a conventional Domain Controller and not Azure Active Directory) with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't required). If you're using one VNet to host all your components, you'll already have a line-of-sight between all your components. If you've multiple VNets, you'll need to do VNet peering between all the VNets that are in your network. For more information, see [VNet peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 - Allow ports 5723/5724/443 to communicate while talking from SCOM Managed Instance (preview) to the VMs being monitored and vice versa.
-- We recommend a NAT gateway for outbound internet access from subnets. Edit the subnet to add a NAT gateway. For more information, See [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
-    - In Azure, Add  NAT gateway to Subnet(VNET/Subnet) where SCOM Managed Instance (preview) is going to be created. A NAT gateway is needed for outbound internet access from subnets.For more information, see [Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview).
+- We recommend a NAT gateway for outbound internet access from subnets. Edit the subnet to add a NAT gateway. For more information, see [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
+    - In Azure, Add  NAT gateway to Subnet(VNET/Subnet) where SCOM Managed Instance (preview) is going to be created. A NAT gateway is needed for outbound internet access from subnets. For more information, see [Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview).
         - To create a NAT gateway, follow these steps:
-            - Create NAT gateway in same region where the VNET is present.
+            - Create NAT gateway in same region where the VNet is present.
             - Create NAT gateway in same subscription used for SCOM Managed Instance (preview).
             - Create public IP.
                  :::image type="NAT gateway" source="media/create-operations-manager-managed-instance/nat-gateway.png" alt-text="Screenshot of NAT gateway.":::
@@ -70,7 +70,7 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
 
 ## Create a static IP and configure the DNS name
 
-- For all the SCOM components, to communicate with the load-balancer that will be created by the SCOM Managed Instance (preview) service, you need a static IP and DNS name for the load-balancer front-end configuration. For more information, see \<link\>. 
+- For all the SCOM components, to communicate with the load-balancer that will be created by the SCOM Managed Instance (preview) service, you need a static IP and DNS name for the load-balancer front-end configuration.
 - Ensure that the static IP is in the subnet that was created during VNet creation and it will be used during the creation of an instance. 
 - Create a DNS name (as per your organization policy) for the static IP.
      :::image type="DNS manager" source="media/create-operations-manager-managed-instance/dns-manager.png" alt-text="Screenshot of DNS manager.":::
@@ -116,40 +116,40 @@ The Managed Service Identity provide an identity for applications to use when co
         1. **Name**: Enter the desired name.
          :::image type="Create user assigned managed identity" source="media/create-operations-manager-managed-instance/create-user-assigned-managed-identity.png" alt-text="Screenshot of Create user assigned managed identity.":::
 1. Select **Next : Tags >**.
-1. Under **Tags**, enter the Name, value, and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
+1. Under **Tags**, enter the Name, value, and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups.
 1. Select **Next : Review + Create >**.
 1. Under **Review + create**, review all the information that you provided and select **Create**. 
      :::image type="Managed identity review" source="media/create-operations-manager-managed-instance/managed-identity-review.png" alt-text="Screenshot of Managed identity review.":::
 Your deployment will now be created on Azure and you can access the resource and view its details.
 
-## Create and configure an SQL MI instance
+## Create and configure an SQL MI
 
-Before you create a SCOM Managed Instance (preview), create an SQL MI instance. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql).
+Before you create a SCOM Managed Instance (preview), create an SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql).
 
-We recommend the following for creating an SQL MI instance:
+We recommend the following for creating an SQL MI:
 
 - **Resource Group**: Create a new resource group for SQL MI. Azure best practices recommend you create a new Resource Group for large Azure resources.
-- **Managed Instance name**: Choose a unique name. This name will be used while you create a SCOM Managed Instance (preview) to refer to this SQL MI instance that you're creating.
+- **Managed Instance name**: Choose a unique name. This name will be used while you create a SCOM Managed Instance (preview) to refer to this SQL MI that you're creating.
 - **Region**: Choose the region close to you. There's no strict requirement on region for the instance, but the closest region is recommended for latency purposes.
-- **Compute+Storage**: General Purpose (Gen5) eight cores is the default number of cores. This will suffice for the SCOM managed instance (preview).
-- **Authentication Method**: Select **SQL Authentication**. Enter the credentials you would like to access the SQL MI instance with. These credentials don't refer to any that you've created so far.
-- **VNet**: This SQL MI instance needs to have direct connectivity (line-of-sight) to the SCOM Managed Instance (preview) that you create in the future. Thus, choose a VNet that you'll eventually use for your SCOM Managed Instance (preview), or if you choose a different VNet, ensure it has connectivity to the SCOM Managed Instance (preview) VNet. 
+- **Compute+Storage**: General Purpose (Gen5) eight cores is the default number of cores. This will suffice for the SCOM Managed Instance (preview).
+- **Authentication Method**: Select **SQL Authentication**. Enter the credentials you would like to access the SQL MI with. These credentials don't refer to any that you've created so far.
+- **VNet**: This SQL MI needs to have direct connectivity (line-of-sight) to the SCOM Managed Instance (preview) that you create in the future. Thus, choose a VNet that you'll eventually use for your SCOM Managed Instance (preview), or if you choose a different VNet, ensure it has connectivity to the SCOM Managed Instance (preview) VNet. 
 
-    In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI Instance. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?view=azuresql).
+    In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?view=azuresql).
 - **Connection Type**: By default, connection type is Proxy.
 - **Public Endpoint**: This can either be *Enabled* or *Disabled*. To use the Power BI reporting, you need to enable the Public Endpoint. 
 
-     If the SQL MI VNet is different from the SCOM MI VNet:
+     If the SQL MI VNet is different from the SCOM Managed Instance (preview) VNet:
 
     - If you enable it, you've to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager VNet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql).
-    - If you disable it, you've to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM managed instance (preview) are present.
+    - If you disable it, you've to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM Managed Instance (preview) are present.
 	
 For the rest of the settings in the other tabs, you can leave them as default or change as per your requirements.
 
 >[!Note]
 > Creation of a new SQL MI can take up to 6 hours.
 
-After the creation of SQL MI, you need to provide permission to the SCOM Managed Instance (preview) Resource Provider to access this SQL MI instance. To provide the permissions, do the following:
+After the creation of SQL MI, you need to provide permission to the SCOM Managed Instance (preview) Resource Provider to access this SQL MI. To provide the permissions, do the following:
 
 1. Open SQL MI and select **Access Control (IAM)**. In the top menu, select **+Add** > **Add role assignment**.
      :::image type="Access control" source="media/create-operations-manager-managed-instance/access-control.png" alt-text="Screenshot of access control.":::
@@ -160,9 +160,9 @@ After the creation of SQL MI, you need to provide permission to the SCOM Managed
          :::image type="Add role assignment" source="media/create-operations-manager-managed-instance/add-role-assignment.png" alt-text="Screenshot of Add role assignment.":::
 1. Select **Save**.
 
-### Set the Active Directory Admin value in the SQL MI Instance
+### Set the Active Directory Admin value in the SQL MI
 
-To set the Active Directory Admin value in the SQL MI Instance, follow these steps:
+To set the Active Directory Admin value in the SQL MI, follow these steps:
 
 To perform the below steps, you need to be the Global Admin/Privileged Role Admin of the subscription:
 
@@ -297,14 +297,14 @@ To create a SCOM Managed Instance (preview), follow these steps:
     1. **SQL managed instance**:
         1. **Resource Name**: Select the SQL MI resource name for the instance that you would like to associate with this SCOM Managed Instance (preview). Only the SQL MI instance, which has given permissions to the SCOM Managed Instance (preview) should be used here. For more information, see SQL MI creation and permission.
     1. **User managed Identity**:
-        1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to in the SQL MI Instance. For more information, see MSI creation process.
+        1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to in the SQL MI.
 1. Select **Next**.
-1. Under **Tags**, enter the Name, value, and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see Tags.
+1. Under **Tags**, enter the Name, value, and select the Resource. Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see [Tags](/azure/azure-resource-manager/management/tag-resources?wt.mc_id=azuremachinelearning_inproduct_portal_utilities-tags-tab&tabs=json).
 1. Select **Next**.
 1. Under **Review + Submit**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, and it takes up to an hour for the creation of a SCOM Managed Instance (preview). 
 
     >[!Note]
-    >If the deployment fails, delete the instance and all associated resources, and recreate the instance again. For more information, see delete the instance and its resources.
+    >If the deployment fails, delete the instance and all associated resources, and recreate the instance again. For more information, see [delete the instance and its resources](./operations-manager-managed-instance-common-questions.md#what-is-the-procedure-to-delete-an-instance).
 
 1. After the deployment is completed, select **Go to resource**. On the created instance page, some of the essential details and instructions to view the post-deployment steps/raise bugs appear.
 
