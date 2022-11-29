@@ -2,10 +2,10 @@
 ms.assetid: 8f280433-6981-402e-b94d-ba2e9ae97b81
 title: Service SID in Management Pack for SQL Server
 description: This article explains how to configure monitoring with service SID
-author: VChernov
-ms.author: v-vchernov
+author: epomortseva
+ms.author: v-ekaterinap
 manager: evansma
-ms.date: 11/25/2022
+ms.date: 11/28/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -35,7 +35,7 @@ To configure monitoring using Service Security Identifier, perform the following
 
     ![Running HealthService](./media/sql-server-management-pack/health-service-command.png)
 
-4. Open **Registry Editor** and check that the **ServiceSidType** key is set to 1 at *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HealthService*.
+4. Open **Registry Editor** and check that the **ServiceSidType** key is set to 1 at `HKLM\SYSTEM\CurrentControlSet\Services\HealthService`.
 
 5. Create the NT SERVICE\HealthService login for the HealthService SID on every SQL Server Instance and grant it SA rights.
 
