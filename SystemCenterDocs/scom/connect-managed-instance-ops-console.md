@@ -5,7 +5,7 @@ description: This article describes how to connect the Azure Monitor SCOM Manage
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 10/25/2022
+ms.date: 10/29/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
