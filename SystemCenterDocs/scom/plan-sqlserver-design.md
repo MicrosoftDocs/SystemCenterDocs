@@ -4,8 +4,8 @@ title: SQL Server Design Considerations
 description: This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 04/07/2022
+manager: mkluck
+ms.date: 11/29/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -49,7 +49,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker range="sc-om-2022"
 
-- SQL Server 2022
+- SQL Server 2022 (supported from Operations Manager 2022 UR1)
 - SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server)
 
     >[!NOTE]
