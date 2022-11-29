@@ -5,7 +5,7 @@ description: This article describes the errors that might occur when you deploy 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 11/28/2022
+ms.date: 11/29/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -31,7 +31,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 4.	If none of the above steps are unable to identify the issue, login to  the VMSS instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
 
 
-### Issue: Resource group `%ResourceGroupName;` is managed by other Azure resource
+### Issue: Resource group `%ResourceGroupName%` is managed by other Azure resource
 
 **Cause**: Occurs when the *ManagedBy* property is set for this resource group.
 
@@ -46,8 +46,9 @@ This article describes the errors that might occur when you deploy or use Azure 
 ### Issue: Error when SCOM Managed Instance (preview) is reaching SQL Managed Instance `%instance;`
 
 **Cause**: This error can be caused by multiple reasons: 
-   - SCOM Managed Instance might not have read permissions on the SQL Managed Instance or 
+   - SCOM Managed Instance (preview) might not have read permissions on the SQL Managed Instance or 
    - There might be an issue with your VNet/Region. 
+[]
 For more information, see [Create and configure an SQL Managed Instance](/system-center/scom/create-operations-manager-managed-instance?tabs=prereqs-portal#create-and-configure-an-sql-mi-instance).
 
 **Resolution**: To resolve, provide read permission to the SQL managed instance.
@@ -64,13 +65,13 @@ For more information, see [Create and configure an SQL Managed Instance](/system
 
 **Resolution**: To resolve, either change the name of the instance or select a different resource group.
 
-### Issue: Error when you install SCOM. `%ErrorMessage;`
+### Issue: Error when you install SCOM `%ErrorMessage;`
 
 **Cause**: Check the error message and resolve the issue.
 
 **Resolution**: Resolve issue and try again.
 
-### Issue: VM has reported a failure when processing extension `joindomain` to join to the domain  `%DomainName;`
+### Issue: VM has reported a failure when processing extension `joindomain` to join to the domain `%DomainName;`
 
 **Cause**: Occurs due to the following reasons:
 1. Line-of-sight visibility from SCOM Managed Instance (preview) Server to Domain Controller.
@@ -101,7 +102,7 @@ For more information, see [Create and configure an SQL Managed Instance](/system
 
 ### Issue: Private static IP address `%LbIpAddr;` doesn't belong to the range of subnet `%subnet;`
 
-**Cause**: Occurs as the IP address isn't in the subnet range
+**Cause**: Occurs as the IP address isn't in the subnet range.
 
 **Resolution**: To resolve, provide an available IP from the subnet range and retry the operation.
 
@@ -145,13 +146,7 @@ For more information, see [Create and configure an SQL Managed Instance](/system
 
 **Resolution**: To resolve, wait for the ongoing process to complete and try again.
 
-## Patch UI
-
-### Issue: One or more controls on the patching blade aren't visible
-
-**Cause**: Development Issue.
-
-**Resolution**: To resolve, contact Microsoft support.
+## Patch 
 
 ### Issue: Notification is stuck at *Fetching updates* even though the update operation is complete
 
@@ -181,19 +176,19 @@ For example, the update button is enabled even though the title of the card read
 
 **Resolution**: To resolve, trigger an *update instance*.
 
-### Issue: Update fails on more than one retries
+### Issue: Update fails after multiple retries
 	
 **Resolution**: To resolve, contact Microsoft support.
 
 ### Issue: Update fails, and rollback fails leaving an inconsistent state where the number of VMs on the VMSS instance has been modified
 
-**Resolution**: To resolve, contact Microsoft support.
+**Resolution**: To resolve, go to SCOM console and remove inconsistent nodes.
 
 ### Issue: Update fails but database update is successful
 
 **Cause**: Occurs due to failed update after the successful database update.
 
-**Resolution**: To resolve, contact Microsoft support.
+**Resolution**: To resolve, retry after some time.
 
 ### Issue: After successful update, SCOM console isn't functioning properly on the instance
 
@@ -243,3 +238,9 @@ For example, the update button is enabled even though the title of the card read
 **Cause**: Occurs if a patching or scaling operation is already in progress.
 
 **Resolution**: To resolve, wait for the existing operation to complete and try after some time.
+
+### Issue: Stale Management Servers visible on console
+
+**Cause**: Occurs if a patching or scaling operation has left an inconsistent state after completion. 
+
+**Resolution**: To resolve, please go to SCOM Console and remove the stale management servers. 
