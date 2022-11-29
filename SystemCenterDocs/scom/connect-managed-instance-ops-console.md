@@ -24,7 +24,6 @@ After you create the SCOM Managed Instance (preview) in Azure, connect the insta
 Follow the below steps to connect a SCOM Managed Instance (preview) to Ops Console:
 
 1. Identify server to install Ops Console: Identify a server where you want to install the Ops Console. Don't perform this on a SCOM Managed Instance (preview) VM, but rather on a separate VM. The VM needs to be a Windows Server. This server can be on-premises or on Azure.
-1. Prerequisites to install Ops Console: Complete the [prerequisites](./deploy-install-ops-console.md) before you install the Ops Console. Download and install the *ReportingViewer.msi* and *SQLSysClrTypes.msi* before you install the Ops Console. 
 1. Install the Ops Console: From the [executable file](https://go.microsoft.com/fwlink/?linkid=2212475), install the Operations Console and follow the installation wizard to successfully install the Ops Console.
 1. Connect SCOM Managed Instance (preview) to Ops Console: Log in to the Ops Console and select **Connect To Server**. Add the FQDN pointing to the management servers. 
      For a detailed procedure to connect the Ops Console to a Management Group (in this case, SCOM Managed Instance (preview)), see [How to connect to the Operations and Web Console](/system-center/scom/manage-consoles-how-to-connect?view=sc-om-2019&preserve-view=true)
