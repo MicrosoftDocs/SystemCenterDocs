@@ -48,7 +48,7 @@ Before you create a SCOM Managed Instance (preview), ensure the following:
             - Create NAT gateway in same subscription used for SCOM Managed Instance (preview).
             - Create public IP.
                  :::image type="NAT gateway" source="media/create-operations-manager-managed-instance/nat-gateway.png" alt-text="Screenshot of NAT gateway.":::
-                 Select VNet and subnet for SCOM Managed Instance (preivew).
+                 Select VNet and subnet for SCOM Managed Instance (preview).
 
 
 ## Configure one domain account in Active Directory
