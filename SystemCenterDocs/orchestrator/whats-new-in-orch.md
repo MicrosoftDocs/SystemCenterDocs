@@ -1,7 +1,7 @@
 ---
 title: What's new in System Center Orchestrator
 description: This article describes the new features and other changes in System Center Orchestrator.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -135,6 +135,10 @@ Orchestrator 2022 support SQL Server 2022. [Learn more](/SystemCenterDocs/orches
 ### Support for .NET Core 6
 
 Orchestrator 2022 UR1 supports .NET Core 6. [Learn more](/SystemCenterDocs/orchestrator/system-requirements-orch.md).
+
+### Issues fixed and Improvements in Update Rollup 1 for SCO 2022
+
+To know more about issues fixed in SCO 2022 UR1 and installation instructions, see KB article.
 
 ::: moniker-end
 
