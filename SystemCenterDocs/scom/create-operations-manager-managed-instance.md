@@ -273,7 +273,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
             >[!Note]
             >- SCOM Managed Instance (preview) name can have only alphanumeric characters and be up to 10 characters.
             >- SCOM Managed Instance (preview) is equivalent to System Center Operation Manager Management Group, choose a name accordingly.
-        1. **Region**: Select the region that is near to you geographically so that latency between your agents and the SCOM Managed Instance (preview) is as low as possible. This region must also contain the VNet.
+        1. **Region**: Select the region near to you geographically so that latency between your agents and the SCOM Managed Instance (preview) is as low as possible. This region must also contain the VNet.
              :::image type="Instance details" source="media/create-operations-manager-managed-instance/instance-details.png" alt-text="Screenshot showing instance details.":::
     1. **Active directory details**: 
         1. **Domain name**: Enter the name of the domain that is being administered by the Domain Controller.

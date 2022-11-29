@@ -130,7 +130,7 @@ SCOM Managed Instance (preview) and System Center Operations Manager share the s
 - SCOM Managed Instance (preview) is native to Azure while running System Center Operations Manager in Azure VMs isn't a native solution. This means, SCOM Managed Instance (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to SCOM Managed Instance (preview).
 - In terms of ease of deployment, SCOM Managed Instance (preview) is easy to deploy while running VMs in Azure takes possibly months of effort (and requires in depth technical knowledge).
 - SCOM Managed Instance (preview) uses SQL MI as the backend for database management by default.
-- SCOM Managed Instance (preview) comes with built in scaling, patching features, and integrated reports.
+- SCOM Managed Instance (preview) comes with built-in scaling, patching features, and integrated reports.
 
 ### What does line-of-sight mean? 
 

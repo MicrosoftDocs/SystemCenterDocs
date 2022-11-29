@@ -181,7 +181,7 @@ For example, the update button is enabled even though the title of the card read
 	
 **Resolution**: To resolve, contact Microsoft support.
 
-### Issue: Update fails, and rollback fails leaving an inconsistent state where the number of VMs on the VMSS instance has been modified
+### Issue: Update fails, and rollback fails to leave an inconsistent state where the number of VMs on the VMSS instance has been modified
 
 **Resolution**: To resolve, go to SCOM console and remove inconsistent nodes.
 
@@ -221,7 +221,7 @@ For example, the update button is enabled even though the title of the card read
 
 **Resolution**: To resolve, have SQL Managed Instance and SCOM Managed Instance (preview) in same region.
 
-### Issue: After patching, user data in the database is altered or not retained properly
+### Issue: After patch, user data in the database is altered or not retained properly
 
 **Cause**: Occurs if update was not done properly.
 
