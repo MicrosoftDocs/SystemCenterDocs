@@ -124,7 +124,7 @@ Your deployment will now be created on Azure and you can access the resource and
 
 ## Create and configure an SQL MI
 
-Before you create a SCOM Managed Instance (preview), create an SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql).
+Before you create a SCOM Managed Instance (preview), create an SQL MI. For more information, see [Create an Azure SQL Managed Instance](/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&preserve-view=true).
 
 We recommend the following for creating an SQL MI:
 
@@ -135,13 +135,13 @@ We recommend the following for creating an SQL MI:
 - **Authentication Method**: Select **SQL Authentication**. Enter the credentials you would like to access the SQL MI with. These credentials don't refer to any that you've created so far.
 - **VNet**: This SQL MI needs to have direct connectivity (line-of-sight) to the SCOM Managed Instance (preview) that you create in the future. Thus, choose a VNet that you'll eventually use for your SCOM Managed Instance (preview), or if you choose a different VNet, ensure it has connectivity to the SCOM Managed Instance (preview) VNet. 
 
-    In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?view=azuresql).
+    In terms of Subnet selection, the subnet you provide to SQL MI has to be dedicated (delegated) to the SQL MI. The provided subnet can't be used to house any other resources. By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?view=azuresql&preserve-view=true).
 - **Connection Type**: By default, connection type is Proxy.
 - **Public Endpoint**: This can either be *Enabled* or *Disabled*. To use the Power BI reporting, you need to enable the Public Endpoint. 
 
      If the SQL MI VNet is different from the SCOM Managed Instance (preview) VNet:
 
-    - If you enable it, you've to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager VNet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql).
+    - If you enable it, you've to create an inbound NSG rule on the SQL MI subnet to allow traffic from the System Center Operations Manager VNet/Subnet to port 3342. For more information, see [Configure public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true).
     - If you disable it, you've to peer your SQL MI VNet with the one in which System Center Operations Manager and SCOM Managed Instance (preview) are present.
 	
 For the rest of the settings in the other tabs, you can leave them as default or change as per your requirements.
@@ -166,7 +166,7 @@ To set the Active Directory Admin value in the SQL MI, follow these steps:
 
 To perform the below steps, you need to be the Global Admin/Privileged Role Admin of the subscription:
 
-For more information, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql).
+For more information, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
 
 1.	Open the SQL MI. Under **Settings**, select **Active Directory admin**.
      :::image type="Active directory admin" source="media/create-operations-manager-managed-instance/active-directory-admin.png" alt-text="Screenshot of Active directory admin.":::

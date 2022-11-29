@@ -61,7 +61,7 @@ SCOM Managed Instance (preview) supports both System Assigned Managed Identity a
 
 ## Create a Managed Service Identity (MSI)
 
-Create a [Managed Service identity](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#create-a-managed-service-identity-msi) and provide it with right access level on Azure resource.
+Create a [Managed Service identity](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#create-a-managed-service-identity-msi&preserve-view=true) and provide it with right access level on Azure resource.
 
 ## Create a Key vault and add Credentials as a secret in the Key vault  
 
@@ -73,4 +73,4 @@ Store the domain account you create in the Active Directory in a Key vault accou
 
 ## Set the Active Directory Admin value in the SQL MI 
 
-[Set the Active Directory Admin value](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#set-the-active-directory-admin-value-in-the-sql-mi) in the SQL MI.
+[Set the Active Directory Admin value](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#set-the-active-directory-admin-value-in-the-sql-mi&preserve-view=true) in the SQL MI.

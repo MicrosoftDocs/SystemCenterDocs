@@ -56,7 +56,7 @@ A SCOM Managed Instance (preview) consists of two parts:
 
 ### A Microsoft-managed part
 
-A Microsoft-managed part consists of Management Servers and the [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql) hosting an Operations database and Data Warehouse database. The Azure-hosted components can be managed directly from the Azure portal. At the back-end, the components interact continuously with ARM and the RP to carry out Azure-based operations. 
+A Microsoft-managed part consists of Management Servers and the [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql&preserve-view=true) hosting an Operations database and Data Warehouse database. The Azure-hosted components can be managed directly from the Azure portal. At the back-end, the components interact continuously with ARM and the RP to carry out Azure-based operations. 
 
 
 The databases hosted in the SQL MI allow formation and to view reports in Power BI. The Management Servers can be scaled up/down based on your requirements. When you create a new instance, you will get one management server. The number changes depending on how you decide to scale your instance. Furthermore, you can update your management servers at the click of a button.
