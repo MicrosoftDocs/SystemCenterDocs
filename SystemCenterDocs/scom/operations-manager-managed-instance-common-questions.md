@@ -56,7 +56,7 @@ If you have multiple VNets created, you need to peer your VNets. If you're peeri
 - The first name is used to name the peer network from the current network to the other network. The second name is used to name the peer network from the other network to this network.
 - In the section *Virtual Network*, specify the name of the VNet that you're peering. If you can't find the VNet, you can search for it using the *Resource ID*. Retain the rest of the options as default.
 
-:::image type="Add peering" source="media/operations-manager-managed-instance-common-questions/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/operations-manager-managed-instance-common-questions/add-peering-expanded.png":::
+     :::image type="Add peering" source="media/operations-manager-managed-instance-common-questions/add-peering-inline.png" alt-text="Screenshot showing add peering screen." lightbox="media/operations-manager-managed-instance-common-questions/add-peering-expanded.png":::
 
 ## SQL managed instance
 

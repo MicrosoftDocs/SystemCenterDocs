@@ -35,11 +35,11 @@ To scale In/Out the management servers, follow these steps:
            >[!Note]
            >A Management server can monitor upto 1000 endpoints. 
 
-      :::image type="Scaling SCOM Managed Instance (preview)" source="media/scale-scom-managed-instance/scaling-scom-mi.png" alt-text="Screenshot of Scaling SCOM Managed Instance (preview).":::
+           :::image type="Scaling SCOM Managed Instance (preview)" source="media/scale-scom-managed-instance/scaling-scom-mi.png" alt-text="Screenshot of Scaling SCOM Managed Instance (preview).":::
  
 1. Select **Save** to trigger the Scale In or Scale Out operation. 
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect the Azure Monitor SCOM managed instance (preview) to Ops console](connect-managed-instance-ops-console.md)
+> [Patch SCOM managed instance (preview)](patch-scom-managed-instance.md)
