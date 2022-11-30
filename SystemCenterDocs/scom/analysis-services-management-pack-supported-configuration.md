@@ -2,10 +2,10 @@
 ms.assetid: a9edb3f9-ca6d-4b40-b202-4a9b5728dbc1
 title: Scope and supported configuration in Management Pack for SQL Server Analysis Services
 description: This article explains the scope and supported configuration for Management Pack for SQL Server Analysis Services
-author: VChernov
+author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 7/5/2022
+ms.date: 11/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,18 +14,6 @@ ms.technology: operations-manager
 # Scope and Supported Configuration in Management Pack for SQL Server Analysis Services
 
 This section lists operating systems and features supported by Management Pack for SQL Server Analysis Services.
-
-## Operating Systems and Platforms
-
-Management Pack for SQL Server Analysis Services supports the following operating systems and platforms:
-
-- Windows Server 2012
-- Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server 2019
-- Windows Server 2022
-
-Localized versions of Windows Server are also supported.
 
 ## SQL Server Analysis Services Features
 
@@ -56,6 +44,9 @@ The following is a list of features and configurations supported in Management P
 Management Pack for SQL Server Analysis Services supports the following versions of System Center Operations Manager:
 
 - System Center Operations Manager 2012 R2
+  
+  Due to the [Lifecycle Policy](/lifecycle/products/microsoft-system-center-2012-r2-operations-manager), this version is no longer being tested.
+  
 - System Center Operations Manager 2016
 - System Center Operations Manager 1801
 - System Center Operations Manager 1807
@@ -63,3 +54,15 @@ Management Pack for SQL Server Analysis Services supports the following versions
 - System Center Operations Manager 2022
 
 A dedicated Operations Manager management group is not required for this management pack.
+
+## Operating Systems and Platforms
+
+Management Pack for SQL Server Analysis Services supports the following 64-bit operating systems and platforms:
+
+- Windows Server 2012
+- Windows Server 2012 R2
+- Windows Server 2016
+- Windows Server 2019
+- Windows Server 2022
+
+Localized versions of Windows Server are also supported.

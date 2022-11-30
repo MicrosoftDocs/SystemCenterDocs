@@ -1,7 +1,7 @@
 ---
 ms.assetid: 306caff2-9555-4f41-995c-65714ed97057
-title: Service Manager build versions
-description: This article describes about version numbers.
+title: Release build versions for System Center Service Manager
+description: This article details the release builds in Service Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -22,12 +22,12 @@ monikerRange: '>=sc-sm-2016'
 
 This article provides information about how to determine your current Microsoft System Center – Service Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
+> [!NOTE]
+> All System Center Service Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
+
 ::: moniker range="sc-sm-2022"
 
-> [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2022 – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
-
-## Build versions
+## Service Manager 2022 build versions
 
 The following table lists the build versions for Service Manager 2022.
 
@@ -40,30 +40,24 @@ The following table lists the build versions for Service Manager 2022.
 
 ::: moniker range="sc-sm-2019"
 
-> [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2019 – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
+## Service Manager 2019 build versions
 
-## Build versions
-
-The following table lists the build versions for Service Manager 2019.
+The following table lists the release history for Service Manager 2019.
 
 | Build Number | KB | Description |
 | --- | --- |--- |
 | 10.19.1035.0 | n/a | System Center 2019 Service Manager RTM     |
 | 10.19.1035.73	 | [4532891](https://support.microsoft.com/help/4532891/update-rollup-1-for-system-center-service-manager-2019) | Update Rollup 1 for System Center 2019 Service Manager    |
 | 10.19.1035.101 | [4558753](https://support.microsoft.com/help/4558753/update-rollup-2-for-system-center-service-manager-2019) | Update Rollup 2 for System Center 2019 Service Manager    |
-| 10.19.1035.137 | [5013428](https://support.microsoft.com/topic/update-rollup-4-for-system-center-service-manager-2019-40b7cdf9-2ba9-4ab0-85bf-796007cde88f) | Update Rollup 4 for System Center 2019 Service Manager |
+| 10.19.1035.137 | [5013428](https://support.microsoft.com/help/5013428/update-rollup-4-for-system-center-service-manager-2019) | Update Rollup 4 for System Center 2019 Service Manager |
 
 ::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 
-> [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2016 – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
+## Service Manager 2016 build versions
 
-## Build versions
-
-The following table lists the build versions for Service Manager 2016.
+The following table lists the release history for Service Manager 2016.
 
 | Build Number | KB | Description |
 | --- | --- |--- |
@@ -81,12 +75,9 @@ The following table lists the build versions for Service Manager 2016.
 
 ::: moniker range="sc-sm-1801"
 
-> [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 1801 – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
+## Service Manager 1801 build versions
 
-## Build versions
-
-The following table lists the build versions for Service Manager 1801.
+The following table lists the release history for Service Manager 1801.
 
 | Build Number | KB | Description |
 | --- | --- |--- |
@@ -96,12 +87,9 @@ The following table lists the build versions for Service Manager 1801.
 
 ::: moniker range="sc-sm-1807"
 
-> [!NOTE]
-> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 1807 – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
+## Service Manager 1807 build versions
 
-## Build versions
-
-The following table lists the build versions for Service Manager 1807.
+The following table lists the release history for Service Manager 1807.
 
 | Build Number | KB | Description |
 | --- | --- |--- |
