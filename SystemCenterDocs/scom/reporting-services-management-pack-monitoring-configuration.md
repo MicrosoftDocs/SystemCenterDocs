@@ -2,10 +2,10 @@
 ms.assetid: 28d531e2-24bf-4d7f-9949-5e07f7ff9461
 title: Monitoring configuration in Management Pack for SQL Server Reporting Services
 description: This article explains the monitoring configuration in Management Pack for SQL Server Reporting Services
-author: Anastas1ya
-ms.author: v-asimanovic
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-ms.date: 6/30/2022
+ms.date: 11/23/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,28 +15,28 @@ ms.technology: operations-manager
 
 Management Pack for SQL Server Reporting Services automatically discovers instances of SQL Server Reporting Services and Power BI Report Server by implementing the following workflows:
 
-- Reading the registry to detect if SSRS and PBIRS are installed on the server. If installed, the management pack creates a seed object.
+- Reading the registry to detect if SQL Server Reporting Services and Power BI Report Server are installed on the server. If installed, the management pack creates a seed object.
 
-- If the seed object is discovered, the management pack reads such data sources as the registry, WMI, SSRS configuration file, and so on, to discover instance properties and the **Deployment Seed** object.
+- If the seed object is discovered, the management pack reads such data sources as the registry, WMI, SQL Server Reporting Services configuration file, and so on, to discover instance properties and the **Deployment Seed** object.
 
   The **Deployment Seed** object is an unhosted object managed by System Center Operations Manager Management Server. Appropriate permissions are required to access necessary data sources. For more information, see [Reporting Services Run As Profiles](reporting-services-management-pack-run-as-profiles.md).
 
 ## Discovery of SQL Server Reporting Services Deployment
 
-SSRS Deployment includes the following components:
+SQL Server Reporting Services Deployment includes the following components:
 
 - One or more instances of SQL Server Reporting Services
-- SSRS Database and SQL Server that hosts SSRS Database
+- Reporting Services Database and SQL Server that hosts Reporting Services Database
 
-SSRS Database is a term that describes two databases used by SSRS:
+Reporting Services Database is a term that describes two databases used by Server Reporting Services:
 
-- SSRS Catalog Database
-- SSRS Temporary Database
+- Catalog Database
+- Temporary Database
 
 >[!NOTE]
->Pre-installation of **Microsoft SQL Server on Windows (Discovery)** version 7.0.20.0 or later is required to discover SSRS Deployment. This MP file is part of the **Microsoft System Center Management Pack for SQL Server on Windows** delivery. In cases of absence of **Microsoft SQL Server on Windows (Discovery)**, this management pack will not be able to discover and monitor availability and performance of SSRS Deployment. Monitoring of SSRS instances is still possible without having **Microsoft SQL Server on Windows (Discovery)** installed.
+>Pre-installation of **Microsoft SQL Server on Windows (Discovery)** version 7.0.20.0 or later is required to discover Server Reporting Services Deployment. This MP file is part of the **Microsoft System Center Management Pack for SQL Server on Windows** delivery. In cases of absence of **Microsoft SQL Server on Windows (Discovery)**, this management pack will not be able to discover and monitor availability and performance of Server Reporting Services Deployment. Monitoring of Server Reporting Services is still possible without having **Microsoft SQL Server on Windows (Discovery)** installed.
 
-Management Pack for SQL Server Reporting Services supports different kinds of installations of SQL Server. The SSRS Database can be deployed to:
+Management Pack for SQL Server Reporting Services supports different kinds of installations of SQL Server. The Reporting Services Database can be deployed to:
 
 - Stand-alone instance (either named or the default one)
 - Cluster instance
@@ -47,7 +47,7 @@ For Availability Group failover, it will take about 8 hours to rediscover deploy
 - MSSQL Reporting Services: Native Mode Deployment Discovery
 - MSSQL Reporting Services: Deployment Seed Discovery
 
-To find a SQL Server instance that hosts SSRS Database, the management pack uses the connection string utilized by SSRS Instance to connect to the database. The following connection string formats are supported:
+To find a SQL Server instance that hosts Reporting Services Database, the management pack uses the connection string utilized by Reporting Services Instance to connect to the database. The following connection string formats are supported:
 
 - MachineName
 - MachineName\InstanceName
@@ -55,40 +55,69 @@ To find a SQL Server instance that hosts SSRS Database, the management pack uses
 - IPAddress\PortNumber
 - (local)
 
-Deployment discovery runs on a SCOM Management Server and queries SCOM API to get a list of SSRS Instances and databases discovered on different SQL Servers.
+Deployment discovery runs on a System Center Operations Manager server and queries API to get a list of Reporting Services instances and databases discovered on different SQL Servers.
 
 Not only deployment discovery creates a new **Deployment** object, but it also creates a new **Deployment Watcher** object, both of which are unhosted.
 
-SSRS Scale-out Deployment is a distributed application. Therefore, the deployment object is managed by the management server. The main purpose of the deployment object is to combine the health state of various SSRS components and group respective SCOM objects.
+SQL Server Reporting Services Scale-out Deployment is a distributed application. Therefore, the deployment object is managed by the management server. The main purpose of the deployment object is to combine the health state of various Reporting Services components and group respective System Center Operations Manager objects.
 
-Deployment watcher is an auxiliary object managed either by an agent installed on the server that hosts SSRS Database, or an agent that hosts one of SSRS Instances from the given deployment. This object is used to collect information about SQL Server Reporting Services deployments.
+Deployment watcher is an auxiliary object managed either by an agent installed on the server that hosts SQL Server Reporting Services Database, or an agent that hosts one of Reporting Services instances from the given deployment. This object is used to collect information about SQL Server Reporting Services deployments.
+
+## Disabling Monitoring of Specified SQL Server Reporting Services Versions
+
+Management Pack for SQL Server Reporting Services allows you to exclude certain versions of SQL Server Reporting Services from monitoring.
+
+To exclude versions that you do not want to monitor, override the **Versions of SQL Server to be excluded** parameter in the **MSSQL Reporting Services: Instance Discovery (Native Mode)** discovery with the versions that you want to exclude. Use comma to specify multiple versions.
+
+For example, an override "2016,2017" instructs the management pack to skip instances of SQL Server Reporting Services 2016 and 2017.
+
+![Screenshot of the Disabling Monitoring of Specified SQL Server Versions.](./media/reporting-services-management-pack/overriding-version-parameter.png)
+
+## Disabling Monitoring of Specified SQL Server Reporting Services Editions
+
+Management Pack for SQL Server Reporting Services allows you to exclude certain editions of SQL Server Reporting Services instances from monitoring.
+
+To exclude editions that you do not want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **MSSQL Reporting Services: Instance Discovery (Native Mode)** discovery with the editions that you want to exclude. Use comma to specify multiple editions.
+
+The following table lists short names that you can use to override the **Editions of SQL Server to be excluded** parameter.
+
+|Short Name|Covered Editions|
+|-|-|
+|Enterprise|Enterprise Edition, Enterprise Edition: Core-based Licensing|
+|Standard|Standard Edition, Business Intelligence Edition|
+|Web|Web Edition|
+|Developer|Developer Edition|
+|Express|Express Edition, Express Edition with Advanced Services|
+|Evaluation|Enterprise Evaluation Edition|
+
+![Screenshot of the Disabling Monitoring of Specified SQL Server Editions.](./media/reporting-services-management-pack/overriding-edition-parameter.png)
 
 ## Availability of SQL Server Reporting Services Components
 
-This management pack introduces a set of monitors for SSRS Deployments and SSRS Instances. These monitors verify availability from the following perspectives:
+This management pack introduces a set of monitors for SQL Server Reporting Services Deployments and Instances. These monitors verify availability from the following perspectives:
 
-- SSRS Scale-out Deployment:
-  - SSRS catalog database is accessible
-  - SSRS temporary database is accessible
+- Scale-out Deployment:
+  - Catalog database is accessible
+  - Temporary database is accessible
   - There are no broken references to shared data sources
   - Number of failed report executions (expressed as a percentage of total report executions) is below the threshold
   - All instances within the deployment are discovered
   - Number of failed subscriptions
-- SSRS Instance:
-  - SSRS catalog database is accessible
-  - SSRS temporary database is accessible
-  - SSRS windows service is started
-  - SSRS web service is accessible
-  - SSRS report manager is accessible
-  - SSRS Instance is not using too much CPU resources
-  - SSRS Instance is not using too much memory resources
-  - There is no memory configuration conflict between SSRS Instance and SQL Server Database Engine (if both components are running on the same server)
-  - Other processes allow enough memory resources for the SSRS Instance
-  - Number of failed report executions per minute is below the threshold for the given SSRS Instance
+- Instance:
+  - Catalog database is accessible
+  - Temporary database is accessible
+  - Windows service is started
+  - Web service is accessible
+  - Report manager is accessible
+  - Instance is not using too much CPU resources
+  - Instance is not using too much memory resources
+  - There is no memory configuration conflict between Reporting Services Instance and SQL Server Database Engine (if both components are running on the same server)
+  - Other processes allow enough memory resources for the Reporting Services Instance
+  - Number of failed report executions per minute is below the threshold for the given Reporting Services Instance
 
 ### Report Manager and Web Server Accessible
 
-Management Pack for SQL Server Reporting Services supports monitoring of SSRS Web Service and SSRS Report Manager using multiple endpoint URLs to determine whether they are available. By default, the first URL in the sequence is used. If you want to use a different URL, you can explicitly set the **URL position** override by changing its default value to a value that corresponds to the desirable URL.
+Management Pack for SQL Server Reporting Services supports monitoring of Reporting Services Web Service and Report Manager using multiple endpoint URLs to determine whether they are available. By default, the first URL in the sequence is used. If you want to use a different URL, you can explicitly set the **URL position** override by changing its default value to a value that corresponds to the desirable URL.
 
 ### Failed Subscriptions Monitoring
 
@@ -106,7 +135,7 @@ Management Pack for Reporting Services is capable of tracking the amount of memo
 
 This management pack collects the following performance metrics:
 
-- SSRS Scale-out Deployment:
+- Scale-out Deployment:
   - Failed report executions per minute
   - Report executions per minute
   - Number of reports
@@ -116,7 +145,7 @@ This management pack collects the following performance metrics:
   - On-demand executions per minute
   - Scheduled execution failures per minute
   - Scheduled executions per minute
-- SSRS Instance:
+- Instance:
   - CPU utilization (%)
   - WorkingSetMaximum (GB)
   - WorkingSetMinimum (GB)
@@ -132,10 +161,47 @@ This management pack collects the following performance metrics:
   - Private memory consumed by Power BI Mashup containers (GB)
   - Total memory usage by running Power BI reports on the Server (GB)
 
+## Feature Groups
+
+In System Center Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. For more information about the groups, see [Creating and managing groups](/system-center/scom/manage-create-manage-groups).
+
+In Management Pack for SQL Server Reporting Services you can use two groups, which have the dynamic type of membership:
+
+- MSSQL Reporting Services: Deployment Group
+  This group is used to contain all Reporting Services Deployment objects.
+
+- MSSQL Reporting Services: Power BI Feature Group
+  This group is used to enable Power BI for particular Reporting Services instances, which support this feature, for example:
+
+  - Memory consumed by running Power BI reports monitor
+  - MSSQL Reporting Services: Working set memory consumed by Power BI Mashup containers (GB) performance rule
+  - MSSQL Reporting Services: Private memory consumed by Power BI Mashup containers (GB) performance rule
+  - MSSQL Reporting Services: Working set memory consumed by Power BI Analysis Services process (GB) performance rule
+  - MSSQL Reporting Services: Private memory consumed by Power BI Analysis Services process (GB) performance rule
+  - MSSQL Reporting Services: Total memory usage by running Power BI reports on Server (GB) performance rule
+
+## Enabling Debugging
+
+In Management Pack for SQL Server Reporting Services, you can enable debugging in the Windows Event log in cases when you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
+
+To enable debugging, do the following:
+
+1. Open the Windows registry.
+
+2. Create the following key:
+`HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server MP`
+
+3. Create a Multi-String with the name `<MG Name>` that corresponds to the management group name for which you want to collect logs. Leave **Value data** empty to enable Debug logging for all SQL MP modules in the Operations Manager Event Log.
+
+The same should be done for each agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
+
+>[!NOTE]
+>Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
+
 ## How Health Rolls Up
 
 The following diagram shows how health states of objects roll up for the SQL Server on Windows management pack.
-![SQL Server Health RollsUp](./media/reporting-services-management-pack/health-roll-up.png)
+![Diagram of the SQL Server Health Rolls Up.](./media/reporting-services-management-pack/health-roll-up.png)
 
 ## Best Practice: Create a Management Pack for Customizations
 
@@ -149,4 +215,4 @@ Creating a new management pack for storing overrides has the following advantage
 
 - Creating a new management pack for storing customizations of each sealed management pack makes it easier to export the customizations from a test environment to a production environment. It also makes it easier to delete a management pack, because you must delete any dependencies before you can delete a management pack. If customizations for all management packs are saved in the Default Management Pack and you need to delete a single management pack, you must delete the default management pack first, which also deletes customizations for other management packs.
 
-For more information about management pack customizations and the default management pack, see [What is in an Operations Manager management pack?](manage-overview-management-pack.md).
+For more information about management pack customizations and the default management pack, see [What is in an Operations Manager management pack?](manage-overview-management-pack.md)

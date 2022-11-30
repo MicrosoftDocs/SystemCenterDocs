@@ -26,5 +26,5 @@ To enable debugging, do the following:
 
 The same should be done for each agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
 
->[!NOTE] 
+>[!NOTE]
 >Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
