@@ -24,7 +24,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 1.	Ensure all the prerequisites are met. Creation issues may arise due to improper/incomplete prerequisites.
 2.	Ensure you read/check the error message carefully. The error messages capture the issue/error in creation.
 3.	Check the **SCOM Setup logs** link provided in the error message. Select the link to download the SCOM setup logs.
-4.	If you're unable to identify the issue with the above steps, login to  the Virtual Machine Scale Sets instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
+4.	If you're unable to identify the issue with the above steps, login to the Virtual Machine Scale Sets instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
 5. If the issue persists, raise a support ticket with all relevant details [`correlation-id`, `subscription-id`, etc.,]
 
 
@@ -74,7 +74,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 2. Domain User Credentials aren't provided or incorrect.
 3. OU Path for AD Domain isn't provided.
 
-**Resolution**: Check which cause matches and try to resolve the issue.
+**Resolution**: Check the cause and accordingly try to resolve the issue.
 
 ### Issue: Static IP already in use
 
@@ -84,7 +84,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 
 ### Issue: Invalid Identity Type `%identityType%`
 
-**Cause**: Occurs due to incorrectly provided Managed identity.
+**Cause**: Occurs due to incorrect Managed identity.
 
 **Resolution**: Provide one of the possible Identity types ((None), (SystemAssigned,UserAssigned)) and try again.
 
@@ -128,7 +128,7 @@ Check the quota section on Azure portal and allocate more cores of type Standard
 
 **Cause**: This error might occur during the provisioning of SCOM extension or SCOM installation.
 
-**Resolution**: Check the [general troubleshooting](./troubleshoot-scom-managed-instance.md#general-troubleshooting) and try to identify the issue.
+**Resolution**: Check the [general troubleshooting](./troubleshoot-scom-managed-instance.md#general-troubleshooting), try to identify the issue and accordingly resolve it.
 
 ### Issue: Conflict
 

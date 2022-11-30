@@ -107,7 +107,7 @@ The Managed Service Identity provides an identity for applications to use when c
 
 >[!Note]    
 >- Ensure you're a contributor in the subscription you create the MSI.
->- This MSI must have admin permission on SQL MI and read permission on Key vault used for domain account credentials.
+>- This MSI must have admin permission on SQL MI and read permission on the Key vault used for domain account credentials.
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and search for **Managed Identities**.
      :::image type="Managed Identity in Azure portal" source="media/create-operations-manager-managed-instance/azure-portal-managed-identity.png" alt-text="Screenshot of Managed Identity in Azure portal.":::
@@ -189,12 +189,12 @@ For more information on Directory Readers role, see  [Directory Readers role in 
 
 ## Create a key vault and add credentials as a secret in the Key vault  
 
-For security, you can Store the domain account you created previously in Active Directory in a Key vault.
+For security, you can Store the domain account (you created previously in Active Directory) in a Key vault.
 
 Azure Key Vault is a cloud service that provides a secure store for keys, secrets, and certificates. For more information, see  [Azure Key Vault](/azure/key-vault/general/overview). 
 
 >[!Note]    
-> To perform the below steps, you need to have Global Admin/Privileged Role Admin of the tenant.
+> You must have Global Admin/Privileged Role Admin of the tenant, to do the below steps.
 
 1.	Open Azure portal and search for **Key vaults**. The Key vaults page opens.
      :::image type="Key vaults in portal" source="media/create-operations-manager-managed-instance/azure-portal-key-vaults.png" alt-text="Screenshot of Key vaults in portal.":::
@@ -286,7 +286,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
              :::image type="Active directory details" source="media/create-operations-manager-managed-instance/active-directory-details.png" alt-text="Screenshot showing Active directory details.":::
     1. **Domain account details**: 
         1. **Key vault**: Select the key vault that has the secret username and secret password of the domain account user credentials.
-        1. **Username secret**: Enter the secret name for user under the selected key vault.
+        1. **Username secret**: Enter the secret name for the user under the selected key vault.
         1. **Password secret**: Enter the secret name for password under the selected key vault.
              :::image type="Domain account details" source="media/create-operations-manager-managed-instance/domain-account-details.png" alt-text="Screenshot showing Domain account details.":::
     1. **Azure Hybrid Benefit**: By default, **No** is selected. Select **Yes** if you're using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview) and it won't apply to existing Windows Servers.
@@ -297,7 +297,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
         1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server. 
         1. **Subnet**: Select a subnet that has at least 32 IP addresses to house all the SCOM Managed Instance (preview) components. The minimum address space is 28. The subnet can have existing resources in it, however, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the instance.
     1. **SCOM managed instance interface**:
-        1. **Static IP**: Enter the Static IP for the load balancer. This IP should be in the selected subnet range for SCOM managed instance.
+        1. **Static IP**: Enter the Static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance (preview).
         1. **DNS name**: Enter the DNS name that you attached to the Static IP above.
     1. **gMSA details**: 
         1. **Computer group name**: Enter the name of the computer group that you created post creation of the gMSA account.
