@@ -22,7 +22,7 @@ The following tables list the release history for Operations Manager 2022.
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.22.10118.0||March 2022 |General Availability |
-| - | - |December 2022|Update Rollup 1|
+|10.22.10337.0|5020318|December 2022|Update Rollup 1|
 
 
 
@@ -30,7 +30,7 @@ The following tables list the release history for Operations Manager 2022.
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.22.10056.0||March 2022 |General Availability |
-| - | - |December 2022|Update Rollup 1|
+|10.22.10110.0|5020318|December 2022|Update Rollup 1|
 
 
 ### SCX Agent
@@ -39,6 +39,6 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.1019.0||March 2022 |1.6.9-0 |General Availability |
 |10.22.1024.0||May 2022 |1.6.9-2 |OMI Vulnerability Fix	|
 |10.22.1032.0||August 2022 |1.6.10-2 |OMI Vulnerability Fix	|
-| - | - |December 2022| - |Update Rollup 1|
+| - |5020318|December 2022| - |Update Rollup 1|
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
