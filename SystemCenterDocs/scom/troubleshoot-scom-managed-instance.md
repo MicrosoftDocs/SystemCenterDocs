@@ -17,15 +17,15 @@ monikerRange: '>=sc-om-2019'
 
 This article describes the errors that might occur when you deploy or use Azure Monitor SCOM Managed Instance (preview) and how to resolve them.
 
-## Scenario : SCOM Managed Instance (preview) creation/deployment
+## Scenario: SCOM Managed Instance (preview) creation/deployment
 
 ### General troubleshooting
 
 1.	Ensure all the prerequisites are met. Creation issues may arise due to improper/incomplete prerequisites.
 2.	Ensure you read/check the error message carefully. The error messages capture the issue/error in creation.
 3.	Check the **SCOM Setup logs** link provided in the error message. Select the link to download the SCOM setup logs.
-4.	If you are unable to identify the issue with the above steps, login to  the VMSS instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
-5. If the issue persists, raise a support ticket with all relevant details [`correlation-id`, `subscription-id`, etc.].
+4.	If you're unable to identify the issue with the above steps, login to  the Virtual Machine Scale Sets instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
+5. If the issue persists, raise a support ticket with all relevant details [`correlation-id`, `subscription-id`, etc].
 
 
 ### Issue: Resource group `%ResourceGroupName%` is managed by other Azure resource
@@ -38,7 +38,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 
 **Cause**: Occurs when the subnet has delegations.
 
-**Resolution**: Provide a subnet which isn't delegated to any other service.
+**Resolution**: Provide a subnet, which isn't delegated to any other service.
 
 ### Issue: Error when SCOM Managed Instance (preview) is unable to reach SQL Managed Instance `%instance%`
 
@@ -57,7 +57,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 
 ### Issue: Not enough cores to create `%instance%` in the given region
 
-**Cause**: Occurs when there are not enough cores to create an instance in the given region.
+**Cause**: Occurs when there aren't enough cores to create an instance in the given region.
 
 **Resolution**: Check the quota section on Azure portal and allocate more cores of type Standard Ds3v2 in the region if needed.
 
@@ -94,7 +94,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 
 **Resolution**: Provide an available IP from the subnet range and retry the operation.
 
-## Scenario : Deploy Reports on Power BI
+## Scenario: Deploy Reports on Power BI
 
 ### Issue: SQL Managed Instance isn't reachable
 
@@ -114,7 +114,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 
 **Resolution**: If the Power BI workspace is in *pro* tier, change it to *premium* tier or change the capacity of the workspace.
 
-## Scenario : Manual Scale up/down
+## Scenario: Manual Scale up/down
 
 ### Issue: Quota Exceeded
 
@@ -128,7 +128,7 @@ Check the quota section on Azure portal and allocate more cores of type Standard
 
 **Cause**: This error might occur during the provisioning of SCOM extension or SCOM installation.
 
-**Resolution**: Check the [general troubleshooting](./) and try to identify the issue.
+**Resolution**: Check the [general troubleshooting](./troubleshoot-scom-managed-instance.md#general-troubleshooting) and try to identify the issue.
 
 ### Issue: Conflict
 
@@ -136,7 +136,7 @@ Check the quota section on Azure portal and allocate more cores of type Standard
 
 **Resolution**: Wait for the ongoing process to complete and try again.
 
-## Scenario : Patching
+## Scenario: Patching
 
 ### Issue: Notification is stuck at *Fetching updates* even though the update operation is complete
 
@@ -211,7 +211,7 @@ For example, the update button is enabled even though the title of the card read
 
 ### Issue: After patching, user data in the database is altered or not retained properly
 
-**Cause**: Occurs if update was not done properly.
+**Cause**: Occurs if update wasn't done properly.
 
 **Resolution**: Restart the update.
 
