@@ -21,13 +21,13 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
 
 - Azure Active Directory based authentication: 
 
-    - Create an Azure Active Directory group for the users to whom you want to provide permissions to read the SQL managed instance through this Power BI report. 
+    - Create an Azure Active Directory group for the users to whom you want to provide permissions to read the SQL Managed Instance through this Power BI report. 
 
-    - Create sign in credentials for the Azure Active Directory group in the SQL managed instance created above, which adds the user principal of the group in the SQL managed instance. For more information, see [Create Login (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true).
+    - Create sign in credentials for the Azure Active Directory group in the SQL Managed Instance created above, which adds the user principal of the group in the SQL Managed Instance. For more information, see [Create Login (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true).
 
 - SQL based authentication: 
 
-    - You need the username and password of the SQL managed instance.
+    - You need the username and password of the SQL Managed Instance.
 
 ## Create reports through public endpoint of SQL MI
 
@@ -55,4 +55,4 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
 
 ## Next steps
 
-[Connect the Azure Monitor SCOM managed instance (preview) to Ops console](connect-managed-instance-ops-console.md)
+[Connect the Azure Monitor SCOM Managed Instance (preview) to Ops console](connect-managed-instance-ops-console.md)

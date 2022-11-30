@@ -53,11 +53,11 @@ SCOM Managed Instance (preview) supports both System Assigned Managed Identity a
 
 - User Assigned Managed Identity 
 
-     - For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and will be used to access the SQL MI database. SCOM Managed Instance (preview) reads/writes customer workload monitoring data to SQL managed instance databases.  The User Assigned Identity assigned to SCOM Managed Instance (preview) resource will be used for authenticating from SCOM servers to SQL Managed instance. 
+     - For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and will be used to access the SQL Managed Instance database. SCOM Managed Instance (preview) reads/writes customer workload monitoring data to SQL managed instance databases.  The User Assigned Identity assigned to SCOM Managed Instance (preview) resource will be used for authenticating from SCOM servers to SQL Managed instance. 
 
-     - SCOM Managed Instance (preview) onboarding process takes the domain user credentials stored in Customer Key vault. The secrets in the Customer Key vault are accessed using the managed identity assigned to SCOM MI instance. 
+     - SCOM Managed Instance (preview) onboarding process takes the domain user credentials stored in Customer Key vault. The secrets in the Customer Key vault are accessed using the managed identity assigned to SCOM Managed Instance. 
 
-     During SCOM Managed Instance onboarding, you must provide the User Managed Identity, which has access to Customer key vault and SQL managed instance.
+     During SCOM Managed Instance onboarding, you must provide the User Managed Identity, which has access to Customer key vault and SQL Managed Instance.
 
 ## Create a Managed Service Identity (MSI)
 
@@ -71,6 +71,6 @@ Store the domain account you create in the Active Directory in a Key vault accou
 - Create a [Secret for the domain account](/azure/key-vault/secrets/quick-create-portal).
 - Assign a Reader role on this key vault to the Managed Service Identity (MSI). For more information, see  [Assign a Key Vault access policy](/azure/key-vault/general/assign-access-policy?tabs=azure-portal).
 
-## Set the Active Directory Admin value in the SQL MI 
+## Set the Active Directory Admin value in the SQL Managed Instance
 
-[Set the Active Directory Admin value](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#set-the-active-directory-admin-value-in-the-sql-mi&preserve-view=true) in the SQL MI.
+[Set the Active Directory Admin value](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#set-the-active-directory-admin-value-in-the-sql-mi&preserve-view=true) in the SQL Managed Instance.

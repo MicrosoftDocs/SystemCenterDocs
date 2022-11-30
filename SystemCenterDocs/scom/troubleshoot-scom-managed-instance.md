@@ -221,7 +221,7 @@ For example, the update button is enabled even though the title of the card read
 
 **Resolution**: To resolve, have SQL Managed Instance and SCOM Managed Instance (preview) in same region.
 
-### Issue: After patch, user data in the database is altered or not retained properly
+### Issue: After patching, user data in the database is altered or not retained properly
 
 **Cause**: Occurs if update was not done properly.
 
