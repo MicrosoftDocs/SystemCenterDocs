@@ -308,7 +308,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
     1. **SQL managed instance**:
         1. **Resource Name**: Select the SQL MI resource name for the instance that you would like to associate with this SCOM Managed Instance (preview). Only the SQL MI instance, which has given permissions to the SCOM Managed Instance (preview) should be used here. For more information, see SQL MI creation and permission.
     1. **User managed Identity**:
-        1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to the SQL MI. Ensure the same MSI has read permissions on the keyvault for domain account credentails.
+        1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to the SQL MI. Ensure the same MSI has read permissions on the keyvault for domain account credentials.
 1. Select **Next**.
 1. Under **Tags**, enter the Name, value, and select the Resource.
      
