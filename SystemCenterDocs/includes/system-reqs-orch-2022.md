@@ -83,7 +83,7 @@ The following versions of .NET Core and windows hosting bundle are supported for
 
 |SCO version|.NET Core|
 |---|---|
-|2022 RTM|[.NET Core 5 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true)|
+|2022 RTM|[.NET Core 5 hosting bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true)|
 |2022 UR1|[.NET Core 6 hosting bundle](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-6.0.11-windows-hosting-bundle-installer)|
 
 ## Virtualization

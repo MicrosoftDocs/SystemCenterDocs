@@ -126,7 +126,9 @@ Support for 64 bit enables the use of 64 bit assemblies, Integration Packs and P
 
 The following sections introduce the new features and feature updates supported in Orchestrator 2022 Update Rollup 1 (UR1).
 
-For problems fixed in Orchestrator 2022 UR1, and installation instructions for UR1, see the KB article.
+### Issues fixed and Improvements in SCO 2022 Update Rollup 1
+
+For issues fixed in Orchestrator 2022 UR1, and installation instructions for UR1, see the KB article.
 
 ### Support for SQL Server 2022
 
@@ -135,10 +137,6 @@ Orchestrator 2022 support SQL Server 2022. [Learn more](/SystemCenterDocs/orches
 ### Support for .NET Core 6
 
 Orchestrator 2022 UR1 supports .NET Core 6. [Learn more](/SystemCenterDocs/orchestrator/system-requirements-orch.md).
-
-### Issues fixed and Improvements in Update Rollup 1 for SCO 2022
-
-To know more about issues fixed in SCO 2022 UR1 and installation instructions, see KB article.
 
 ::: moniker-end
 
