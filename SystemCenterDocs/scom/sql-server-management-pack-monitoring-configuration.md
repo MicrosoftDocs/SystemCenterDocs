@@ -321,5 +321,6 @@ This monitor checks whether the configured [Run As Account](sql-server-managemen
 - ROOT\Microsoft\SqlServer\ComputerManagement13
 - ROOT\Microsoft\SqlServer\ComputerManagement14
 - ROOT\Microsoft\SqlServer\ComputerManagement15
+- ROOT\Microsoft\SqlServer\ComputerManagement16
 
 The monitor produces an alert in cases when there is no access to any of the above namespaces.
