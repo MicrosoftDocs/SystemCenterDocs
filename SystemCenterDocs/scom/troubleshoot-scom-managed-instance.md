@@ -17,165 +17,153 @@ monikerRange: '>=sc-om-2019'
 
 This article describes the errors that might occur when you deploy or use Azure Monitor SCOM Managed Instance (preview) and how to resolve them.
 
-## SCOM Managed Instance (preview) creation/deployment
+## Scenario : SCOM Managed Instance (preview) creation/deployment
 
 ### General troubleshooting
-
-**Cause**: Any
-
-**Resolution**:
 
 1.	Ensure all the prerequisites are met. Creation issues may arise due to improper/incomplete prerequisites.
 2.	Ensure you read/check the error message carefully. The error messages capture the issue/error in creation.
 3.	Check the **SCOM Setup logs** link provided in the error message. Select the link to download the SCOM setup logs.
-4.	If none of the above steps are unable to identify the issue, login to  the VMSS instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
+4.	If you are unable to identify the issue with the above steps, login to  the VMSS instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
+5. If the issue persists, raise a support ticket with all relevant details [`correlation-id`, `subscription-id`, etc.].
 
 
 ### Issue: Resource group `%ResourceGroupName%` is managed by other Azure resource
 
-**Cause**: Occurs when the *ManagedBy* property is set for this resource group.
+**Cause**: Occurs when the *ManagedBy* property is set for the resource group.
 
-**Resolution**: To resolve, provide another resource group with *ManagedBy* property as empty.
+**Resolution**: Provide another resource group with *ManagedBy* property as empty.
 
-### Issue: The subnet `%SubnetName;` selected is dedicated to other service
+### Issue: The subnet `%SubnetName%` selected is dedicated to another service
 
 **Cause**: Occurs when the subnet has delegations.
 
-**Resolution**: To resolve, provide a subnet without any delegation.
+**Resolution**: Provide a subnet which isn't delegated to any other service.
 
-### Issue: Error when SCOM Managed Instance (preview) is reaching SQL Managed Instance `%instance;`
+### Issue: Error when SCOM Managed Instance (preview) is unable to reach SQL Managed Instance `%instance%`
 
-**Cause**: This error can be caused by multiple reasons: 
-   - SCOM Managed Instance (preview) might not have read permissions on the SQL Managed Instance or 
-   - There might be an issue with your VNet/Region. 
+**Cause**: This error can be caused by any of the following reasons:
+   -  Missing Line-of-sight visibility from SCOM Managed Instance (preview) VNet to SQL Managed Instance endpoint.
+   -  Missing the right level of NSG rules to allow traffic over SQL Managed Instance public endpoint.
+   -  MSI isn't added as Active Directory admin.
+   - SCOM Managed Instance (preview) might not have read permissions on the SQL Managed Instance.
+   - There might be an issue with your VNet/Region.
 
 
-For more information, see [Create and configure an SQL Managed Instance](/system-center/scom/create-operations-manager-managed-instance?tabs=prereqs-portal#create-and-configure-an-sql-mi-instance).
+**Resolution:**
+   - Provide read permission to the SQL Managed Instance.  
+   - MSI must be added as Active Directory admin on the SQL Managed Instance.
+   - Ensure connectivity between SCOM Managed Instance (preview) and SQL Managed Instance networks. For more information, see [Create and configure an SQL Managed Instance](/system-center/scom/create-operations-manager-managed-instance?tabs=prereqs-portal#create-and-configure-an-sql-mi-instance).
 
-**Resolution**: To resolve, provide read permission to the SQL managed instance.
+### Issue: Not enough cores to create `%instance%` in the given region
 
-### Issue: No enough cores to create `%instance;` in the given region
+**Cause**: Occurs when there are not enough cores to create an instance in the given region.
 
-**Cause**: Occurs when there's no enough cores to create an instance in the given region.
-
-**Resolution**: To resolve, allocate more cores in the region.
+**Resolution**: Check the quota section on Azure portal and allocate more cores of type Standard Ds3v2 in the region if needed.
 
 ### Issue: Secret key with same name is already present in the Key vault
 
-**Cause**: Occurs when the secret key with the same name is already present in the Key vault.
+**Cause**: Occurs when another secret key with the same name is already present in the Key vault.
 
-**Resolution**: To resolve, either change the name of the instance or select a different resource group.
+**Resolution**: Change the name of the instance.
 
-### Issue: Error when you install SCOM `%ErrorMessage;`
-
-**Cause**: Check the error message and resolve the issue.
-
-**Resolution**: Resolve issue and try again.
-
-### Issue: VM has reported a failure when processing extension `joindomain` to join to the domain `%DomainName;`
+### Issue: VM has reported a failure when processing extension `joindomain` to join to the domain `%DomainName%`
 
 **Cause**: Occurs due to the following reasons:
 1. Line-of-sight visibility from SCOM Managed Instance (preview) Server to Domain Controller.
-2. Domain User Credentials.
-3. OU Path for AD Domain.
+2. Domain User Credentials aren't provided or incorrect.
+3. OU Path for AD Domain isn't provided.
 
-**Resolution**: Resolve the issue and try again.
-
-### Issue: Error when SCOM Server is reaching SQL Managed Instance endpoint `%endpoint;`
-
-**Cause**: Occurs due to the following reasons:
-1. Line-of-sight visibility from SCOM Managed Instance (preview) VNet to SQL Managed Instance (preview) endpoint or
-2. Missing the right level of NSG rules to allow traffic over SQL Managed Instance public endpoint.
-
-**Resolution**: Resolve the issue and try again.
+**Resolution**: Check which cause matches and try to resolve the issue.
 
 ### Issue: Static IP already in use
 
-**Cause**: Occurs if static IP is used by another instance.
+**Cause**: Occurs if the static IP is being used by another instance.
 
-**Resolution**: To resolve, use another static IP.
+**Resolution**: Use another static IP.
 
-### Issue: Invalid Identity Type `%identityType;`
+### Issue: Invalid Identity Type `%identityType%`
 
-**Cause**: Occurs due to invalid Managed identity.
+**Cause**: Occurs due to incorrectly provided Managed identity.
 
-**Resolution**: To resolve, provide one of the possible Identity types (`None`, `UserAssigned`, `SystemAssigned`, `SystemAssigned,UserAssigned`) and try again.
+**Resolution**: Provide one of the possible Identity types ((None), (SystemAssigned,UserAssigned)) and try again.
 
-### Issue: Private static IP address `%LbIpAddr;` doesn't belong to the range of subnet `%subnet;`
+### Issue: Private static IP address `%LbIpAddr%` doesn't belong to the range of subnet `%subnet%`
 
 **Cause**: Occurs as the IP address isn't in the subnet range.
 
-**Resolution**: To resolve, provide an available IP from the subnet range and retry the operation.
+**Resolution**: Provide an available IP from the subnet range and retry the operation.
 
-## Deploy Reports on Power BI 
+## Scenario : Deploy Reports on Power BI
 
 ### Issue: SQL Managed Instance isn't reachable
 
 **Cause**: Occurs if the public endpoint isn't enabled. Power BI won't be able to reach SQL Managed Instance.
 
-**Resolution**: To resolve, enable public endpoint on SQL Managed Instance.
+**Resolution**: Check the user permissions on SQL Managed Instance and provide the required permissions.
 
 ### Issue: Unable to refresh dataset credentials
 
 **Cause**: Occurs if the user doesn't have appropriate permissions on the SQL Managed Instance.
 
-**Resolution**: To resolve, check the user permissions on SQL Managed Instance and provide the required permissions.
+**Resolution**: Check the user permissions on SQL Managed Instance and provide the required permissions.
 
 ### Issue: Report unable to refresh
 
 **Cause**: Occurs due to large data size. The report might not refresh.
 
-**Resolution**: To resolve, if the Power BI workspace is in *pro* tier, change it to *premium* tier or change the capacity of the workspace.
+**Resolution**: If the Power BI workspace is in *pro* tier, change it to *premium* tier or change the capacity of the workspace.
 
-## Manual Scale up/down 
+## Scenario : Manual Scale up/down
 
 ### Issue: Quota Exceeded
 
 **Cause**: Occurs if there are no cores available for scaling.
 
-**Resolution**: To resolve, increase the number of cores in the subscription or delete existing VMs/Virtual Machine Scale Sets.
+**Resolution**: Increase the number of cores in the subscription.
+
+Check the quota section on Azure portal and allocate more cores of type Standard Ds3v2 in the region if needed.
 
 ### Issue: Extension provisioning error
 
 **Cause**: This error might occur during the provisioning of SCOM extension or SCOM installation.
 
-**Resolution**: To resolve, contact Microsoft support.
+**Resolution**: Check the [general troubleshooting](./) and try to identify the issue.
 
 ### Issue: Conflict
 
 **Cause**: Occurs if patching or scaling is in progress. A new operation can't be triggered.
 
-**Resolution**: To resolve, wait for the ongoing process to complete and try again.
+**Resolution**: Wait for the ongoing process to complete and try again.
 
-## Patch 
+## Scenario : Patching
 
 ### Issue: Notification is stuck at *Fetching updates* even though the update operation is complete
 
 **Cause**: Network issue/development issue.
 
-**Resolution**: To resolve, try refreshing for updates. If not resolved, contact Microsoft support.
+**Resolution**: Try refreshing for updates. If not resolved, contact Microsoft support.
 
 ### Issue: Update state isn't reflected correctly on the card
 
 **Cause**: Network issue/development issue.
 
-**Resolution**: To resolve, try refreshing for updates. If not resolved, contact Microsoft support.
+**Resolution**: Try refreshing for updates. If not resolved, contact Microsoft support.
 
 ### Issue: Inconsistency in the controls within the card
 
+**Cause**: Consistency Issue. 
 For example, the update button is enabled even though the title of the card reads **SCOM is up to date**.
 
-**Cause**: Development issue.
-
-**Resolution**: To resolve, contact Microsoft support.
+**Resolution**: Try refreshing. If not resolved, contact Microsoft support.
 
 ### Issue: Warning message pops up for updates
 
-**Cause**: Occurs due to the following reasons:
-1. New update is available, and the user hasn't triggered the update instance
-2. Last update failed and the user hasn't triggered another update instance
+**Cause**: Occurs due to any of the following reasons:
+1. New update is available, and the user hasn't triggered the update instance; or
+2. Last update failed and the user hasn't triggered another update instance.
 
-**Resolution**: To resolve, trigger an *update instance*.
+**Resolution**: Trigger an *update instance*.
 
 ### Issue: Update fails after multiple retries
 	
@@ -183,31 +171,31 @@ For example, the update button is enabled even though the title of the card read
 
 ### Issue: Update fails, and rollback fails to leave an inconsistent state where the number of VMs on the VMSS instance has been modified
 
-**Resolution**: To resolve, go to SCOM console and remove inconsistent nodes.
+**Resolution**: Go to SCOM console and remove inconsistent nodes.
 
 ### Issue: Update fails but database update is successful
 
 **Cause**: Occurs due to failed update after the successful database update.
 
-**Resolution**: To resolve, retry after some time.
+**Resolution**: Retry after some time.
 
 ### Issue: After successful update, SCOM console isn't functioning properly on the instance
 
 **Cause**: Occurs if SCOM isn't installed properly or some process might be stuck.
 
-**Resolution**: To resolve, try to restart the instance. If the issue persists, contact Microsoft support.
+**Resolution**: Try to restart the instance. If the issue persists, contact Microsoft support.
 
 ### Issue: Update is taking more than 3 hours and fails eventually
 
 **Cause**: Occurs when the update takes more than 3 hours.
 
-**Resolution**: To resolve, contact Microsoft support.
+**Resolution**: Contact Microsoft support.
 
 ### Issue: Some intermittent issue during update
 
 **Cause**: Occurs if the service fabric or RP crashes or restarts.
 
-**Resolution**: To resolve, restart the update.
+**Resolution**: Restart the update.
 
 ### Issue: Scaling and Patching triggered simultaneously and then fails
 
@@ -219,29 +207,28 @@ For example, the update button is enabled even though the title of the card read
 
 **Cause**: Occurs if SQL Managed Instance and SCOM Managed Instance (preview) are in different regions due to which the extension takes more time to update and eventually fails.
 
-**Resolution**: To resolve, have SQL Managed Instance and SCOM Managed Instance (preview) in same region.
+**Resolution**: Have SQL Managed Instance and SCOM Managed Instance (preview) in same region.
 
 ### Issue: After patching, user data in the database is altered or not retained properly
 
 **Cause**: Occurs if update was not done properly.
 
-**Resolution**: To resolve, restart the update.
+**Resolution**: Restart the update.
 
 ### Issue: Patching request fails
 
 **Cause**: Occurs due to portal or ARM issue.
 
-**Resolution**: To resolve, wait for some time and retry. If the issue exists even after fixing the portal/ ARM issue, contact Microsoft support.
-
+**Resolution**: Wait for some time and retry. If the issue exists even after fixing the portal/ARM issue, contact Microsoft support.
 
 ### Issue: Patching or scaling operation is already in progress, try again after some time.
 
 **Cause**: Occurs if a patching or scaling operation is already in progress.
 
-**Resolution**: To resolve, wait for the existing operation to complete and try after some time.
+**Resolution**: Wait for the existing operation to complete and try after some time.
 
 ### Issue: Stale Management Servers visible on console
 
-**Cause**: Occurs if a patching or scaling operation has left an inconsistent state after completion. 
+**Cause**: Occurs if a patching or scaling operation has left an inconsistent state after completion.
 
-**Resolution**: To resolve, go to SCOM console and remove the stale management servers. 
+**Resolution**: Go to SCOM console and remove the stale management servers.
