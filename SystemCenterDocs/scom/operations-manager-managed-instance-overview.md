@@ -48,7 +48,7 @@ SCOM Managed Instance (preview) functionality allows you to:
 
 ## Architecture
 
-:::image type="SCOM Managed Instance (preivew) architecture" source="media/operations-manager-managed-instance-overview/architecture.png" alt-text="Screenshot showing architecture.":::
+:::image type="SCOM Managed Instance (preview) architecture" source="media/operations-manager-managed-instance-overview/architecture.png" alt-text="Screenshot showing architecture.":::
 
 A SCOM Managed Instance (preview) consists of two parts: 
    - A Microsoft-managed part
