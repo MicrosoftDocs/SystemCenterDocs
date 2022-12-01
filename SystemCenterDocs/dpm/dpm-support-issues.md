@@ -34,11 +34,11 @@ This topic summarizes some of the common support information you might need when
 
 -   As a standalone physical server - DPM can't be deployed in a physical cluster, but you can manage multiple DPM servers from a single location using Central Console in Operations Manager.
 
--   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You can install DPM in the same way as a physical installation. For detailed information, see the row [DPM installed as Hyper-V VM](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
 ::: moniker range="<=sc-dpm-2019"
 
--   As an Azure virtual machine - You can install DPM- 2019 as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an Azure virtual machine - You can install DPM 2019 as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
 -   As a Windows virtual machine in VMware - You can install DPM 2019 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
 
@@ -81,7 +81,7 @@ This topic summarizes some of the common support information you might need when
 ### Underscore isn't supported in the SQL Server name
 **Issue**: If you specify a remote SQL Server that has an underscore in the name during DPM installation, the installation might fail.
 
-**Workaround**: Specify a SQL Server name that doesn't include the underscore `_` character.
+**Workaround**: Specify an SQL Server name that doesn't include the underscore `_` character.
 
 ### NTFS compression isn't supported on DPM volumes
 **Issue**: NTFS not supported.
@@ -137,7 +137,7 @@ Where:
 
 -   Server2 is protected by DPM2
 
--   DPM3 is a secondary server for DPM1 and DPM2 (and thus protects Server1 and Server2.
+-   DPM3 is a secondary server for DPM1 and DPM2 (and thus protects Server1 and Server2)
 
 The following occurs:
 
@@ -155,7 +155,7 @@ The following occurs:
 
 Both scenarios are unsupported. You can only select one of the following options:
 
--   **Option 1** - Use **Switch Protection** on DPM3 for Server1 and leave DPM3 in this mode going forward. Note that in this scenario you can't add secondary protection for Server1 on another DPM server when you're using switched protection mode.
+-   **Option 1** - Use **Switch Protection** on DPM3 for Server1 and leave DPM3 in this mode going forward. Note that in this scenario you can't add secondary protection for Server1 on another DPM server when you're using the switched protection mode.
 
 -   **Option 2** - Rebuild DPM1 with the same name and restore the DPM database. This allows DPM to resume primary protection.
 
@@ -175,7 +175,7 @@ Both scenarios are unsupported. You can only select one of the following options
 
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries for System Center DPM 2012 and later](https://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries for System Center DPM 2012 and later](https://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ Both scenarios are unsupported. You can only select one of the following options
 
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2019 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries](/SystemCenterDocs/dpm/dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2019 or later with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries](/SystemCenterDocs/dpm/dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
 
 ::: moniker-end
 
@@ -191,7 +191,7 @@ Both scenarios are unsupported. You can only select one of the following options
 
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2022 with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries](/SystemCenterDocs/dpm/dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2022 with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries](/SystemCenterDocs/dpm/dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, please contact your tape hardware vendor and ask them to [verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
 
 ::: moniker-end
 
@@ -201,14 +201,14 @@ Both scenarios are unsupported. You can only select one of the following options
 **Workaround**: None. This isn't supported due to a limitation with Windows dynamic disks.
 
 ### Data on CSVs
-**Issue**: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protecting other workloads hosted on CSVs isn't supported.
+**Issue**: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protection of other workloads hosted on Cluster Shared Volumes (CSVs) isn't supported.
 
 ::: moniker range="<=sc-dpm-2019"
-Protection of SQL server database, stored on CSV is supported with [DPM 2019 UR2](/SystemCenterDocs/dpm/what-s-new-in-dpm.md) and later.
+Protection of SQL Server database stored on Cluster Shared Volumes (CSVs) is supported with [DPM 2019 UR2](/SystemCenterDocs/dpm/what-s-new-in-dpm.md) and later.
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
-Protection of SQL server database, stored on CSV is supported with [DPM 2022](what-s-new-in-dpm.md).
+Protection of SQL Server database stored on Cluster Shared Volumes (CSVs) is supported with [DPM 2022](what-s-new-in-dpm.md).
 ::: moniker-end
 
 **Workaround**: None.
@@ -226,7 +226,7 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2022](wh
 ::: moniker range="<=sc-dpm-2019"
 
   >[!NOTE]
-  >Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to backup the volume with deduplication enabled.
+  >Deduplication support for DPM depends on the operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to backup the volume with deduplication enabled.
 
 ::: moniker-end
 
@@ -243,7 +243,7 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2022](wh
 | Windows Server 2012 R2                   | Windows Server 2012 R2                | DPM 2016        | Y                  |
 | Windows Server 2012                      | Windows Server 2012 R2               | DPM 2016        | Y                  |
 
-- **When protecting a WS 2019 NTFS deduped volume with DPM 2019 on WS 2016 OR a WS 2016 NTFS deduped volume with DPM 2016 on WS 2012 R2, the backups and restores will be non-deduped. This means that the backups will consume more space on the DPM server than the original NTFS deduped volume.
+- **When protecting a WS 2019 NTFS deduped volume with DPM 2019 on a WS 2016 or a WS 2016 NTFS deduped volume with DPM 2016 on a WS 2012 R2, the backups and restores will be non-deduped. This means that the backups will consume more space on the DPM server than the original NTFS deduped volume.
 
 
 ::: moniker-end
@@ -262,21 +262,21 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2022](wh
 | Windows Server 2012                      | Windows Server 2016                | DPM 2019        | Y                  |
 
 
-- *When protecting a WS 2016 NTFS Deduped Volume with DPM 2019 running on WS 2019, the recoveries may be affected. We have a fix for doing recoveries in a non-deduped way which will be part of later versions of DPM 2019. Reach out to DPM support if you need this fix on DPM 2019 UR2.
+- *When protecting a WS 2016 NTFS Deduped Volume with DPM 2019 running on WS 2019, the recoveries may be affected. We have a fix for doing recoveries in a non-deduped way, which will be part of the later versions of DPM 2019. Reach out to DPM support if you need this fix on DPM 2019 UR2.
 
-- **When protecting a WS 2019 NTFS deduped volume with DPM 2019 on WS 2016 OR a WS 2016 NTFS deduped volume with DPM 2016 on WS 2012 R2, the backups and restores will be non-deduped. This means that the backups will consume more space on the DPM server than the original NTFS deduped volume.
+- **When protecting a WS 2019 NTFS deduped volume with DPM 2019 on a WS 2016 or a WS 2016 NTFS deduped volume with DPM 2016 on a WS 2012 R2, the backups and restores will be non-deduped. This means that the backups will consume more space on the DPM server than the original NTFS deduped volume.
 
 
-**Issue**: If you upgrade the protected server operating system from Windows Server 2016 to Windows Server 2019, then backup of NTFS deduped volume gets affected due to change in dedupe logic.  
+**Issue**: If you upgrade the protected server operating system from Windows Server 2016 to Windows Server 2019, then the backup of NTFS deduped volume gets affected due to changes in dedupe logic.  
 
 **Workaround**: Fix will be available in the future update rollup of DPM 2019. Reach out to DPM support in case you need this fix for DPM 2019 UR2.
 
 **For ReFS Volumes:**
 
 > [!NOTE]
->We have identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these, and will update this section as soon as we have a fix available. Until then, we are removing the support for backup of deduplicated ReFS volumes from 2019 UR1.
+>We have identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these and will update this section as soon as we have a fix available. Until then, we are removing the support for backup of deduplicated ReFS volumes from 2019 UR1.
 >
->DPM 2019 UR1 and later continues to support protection and recovery of normal ReFS volumes.
+>DPM 2019 UR1 and later continue to support protection and recovery of normal ReFS volumes.
 
 ::: moniker-end
 
@@ -284,7 +284,7 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2022](wh
 
   >[!NOTE]
   >- Deduplication support for DPM depends on operating system support. Also, the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role must be installed on the DPM server to backup the volume with deduplication enabled.
-  >- We have identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these, and will update this section as soon as we have a fix available.
+  >- We have identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these and will update this section as soon as we have a fix available.
 
 | Operating system of protected server | Operating system of DPM server | DPM version | Dedupe support |
 |---|---|---|---|
@@ -295,7 +295,7 @@ Protection of SQL server database, stored on CSV is supported with [DPM 2022](wh
 | Windows Server 2019 | Windows Server 2019 | DPM 2022 | Y |
 | Windows Server 2016 | Windows Server 2019 | DPM 2022 | Y\* |
 
-- *Deduped NTFS volumes in Windows Server 2016 Protected Servers are non-deduplicated during restore. 
+- *Deduped NTFS volumes in Windows Server 2016 Protected Servers are non-deduplicated during restore.
 
 ::: moniker-end
 
@@ -312,7 +312,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 **Workaround**: None.
 
 ### Item-level recovery not supported
-**Issue**: If you're protecting virtual machines that contain deduped volumes, you can't perform Item level recovery (ILR) from those VHD/VHDX files.
+**Issue**: If you're protecting virtual machines that contain deduped volumes, you can't perform item level recovery (ILR) from those VHD/VHDX files.
 
 **Workaround**: Restore the .VHD/VHDX file that contains the deduped volume to a Windows Server that has the Data Deduplication role installed. Mount the .VHD file in disk management and copy out the desired files.
 
@@ -327,9 +327,9 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
    >[!NOTE]
    > Windows 10 on ARM client is not supported for protection using DPM.
 
--   Windows 8.1 clients can be protected with DPM 2012 R2, and DPM 2016.
+-   Windows 8.1 clients can be protected with DPM 2012 R2 and DPM 2016.
 
--   Windows 7 clients can be protected with DPM 2012 R2, and DPM 2016.
+-   Windows 7 clients can be protected with DPM 2012 R2 and DPM 2016.
 
 **Workaround**: Ensure you're running the right version of DPM.
 
@@ -352,9 +352,9 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ::: moniker range="sc-dpm-2022"
 
 ### Support parameters for protecting computers running client operating systems with DPM
-**Issue**: Support for backing up Windows clients with DPM. 
+**Issue**: Support for backing up Windows clients with DPM.
 
-**Workaround**: DPM 2022 can back up Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md). Review the full list of supported workloads here
+**Workaround**: DPM 2022 can back up Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md). Review the full list of supported workloads here.
 
 ::: moniker-end
 
@@ -386,7 +386,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ::: moniker range="sc-dpm-2022"
 **Issue**: Support for backing up Windows Server with DPM.
 
-**Workaround**: DPM 2022 can back up Windows Server 2022, 2019 and 2016. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).
+**Workaround**: DPM 2022 can back up Windows Server 2022, 2019, and 2016. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).
 
 ::: moniker-end
 
@@ -400,9 +400,9 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ::: moniker range="<=sc-dpm-2019"
 
-### File Server end-user recovery (EUR) is not available when using Modern Backup Storage (MBS)
+### File Server end user recovery (EUR) is not available when using Modern Backup Storage (MBS)
 
-**Description**: If you use Modern Backup Storage (MBS) with DPM 2016 or later, File Server end-user recovery is not available.
+**Description**: If you use Modern Backup Storage (MBS) with DPM 2016 or later, File Server EUR is not available.
 
 **Workaround**: None. File Server EUR is not supported when using MBS.
 
@@ -412,7 +412,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ### File Server end-user recovery (EUR) is not available when using Modern Backup Storage (MBS)
 
-**Description**: File Server end-user recovery is not available with DPM 2022 since it uses Modern Backup Storage.
+**Description**: File Server end user recovery (EUR) is not available with DPM 2022 since it uses Modern Backup Storage.
 
 **Workaround**: None. File Server EUR is not supported when using MBS.
 
@@ -429,7 +429,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ### Protection might fail when changing the path of a data source
 **Issue**: When you protect a shared folder, the path to the shared folder includes the logical path on the volume. If you move the shared folder, protection will fail. In addition, if you change the path of a protected data source on a volume that uses the Encrypting File System (EFS) and the new file path exceeds 5120 characters, data protection will fail.
 
-**Workaround**: If you must move a protected shared folder, remove it from its protection group and then add it to protection after the move. For an encrypted volume ensure that the new file path of the protected data source uses fewer than 5120 characters.
+**Workaround**: If you must move a protected shared folder, remove it from its protection group and then add it to protection after the move. For an encrypted volume, ensure that the new file path of the protected data source uses fewer than 5120 characters.
 
 ### Change the domain of a protected resource
 **Issue**: You can't change the domain of a protected computer and continue protection without disruption. In addition, you can't change the domain of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
@@ -437,14 +437,14 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 **Workaround**: We recommend that you don't change the domain of a protected computer. If you must change the domain of a protected computer, then first remove the data sources on the computer from protection. Then protect the data source on the computer after it has a new domain.
 
 ### Change the name of a protected resource
-**Issue**: You can't change the name of a protected computer and continue protection without disruption. In addition, you can't change the name of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
+**Issue**: You can't change the name of a protected computer and continue protection without disruption. Also, you can't change the name of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
 
 **Workaround**: We recommend that you don't change the name of a protected computer. If you must change the name of a protected computer, then first remove the data sources on the computer from protection. Then protect the data source on the computer after it has a new name.
 
 ### Change the time zone of a protected resource
-**Issue**: Ensure you update the time zone correctly if you change it for a protected resource.
+**Issue**: Ensure that you update the time zone correctly if you change it for a protected resource.
 
-**Workaround**: DPM automatically identifies the time zone of a protected computer during the installation of the protection agent. If a protected computer is moved to a different time zone after protection is configured, ensure that you change the computer time in Control Panel. Then update the time zone in the DPM database.
+**Workaround**: DPM automatically identifies the time zone of a protected computer during the installation of the protection agent. If a protected computer is moved to a different time zone after protection is configured, ensure that you change the computer time in the Control Panel. Then update the time zone in the DPM database.
 
 ### Some data types aren't supported
 **Issue**: DPM doesn't support the following data types:
@@ -461,13 +461,13 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 -   Paging files
 
--   System Volume Information folder. To protect system information for a computer you'll need to select the computer's system state as the protect group member.
+-   System Volume Information folder. To protect the system information of a computer, you'll need to select the computer's system state as the protect group member.
 
 -   Non-NTFS volumes
 
 -   Files containing hard links or symbolic links from Windows Vista.
 
--   Files with any of the following combinations of attributes:
+-   Files with any of the following combination of attributes:
 
     -   Encryption and reparse
 
@@ -484,7 +484,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 **Workaround**: None
 
 ### Limitations on protecting computers in workgroups and untrusted domains
-**Issue**: DPM can protect workloads in the same domain as the DPM server, or in child and trusted domains. You can also protect the following workloads in  workgroups and untrusted domains using NTLM or certificate authentication:
+**Issue**: DPM can protect workloads in the same domain as the DPM server or in child and trusted domains. You can also protect the following workloads in workgroups and untrusted domains using NTLM or certificate authentication:
 
 -   SQL Server
 
@@ -506,8 +506,8 @@ These workloads can be running on a single server or in a cluster configuration.
 
 **Workaround**: Add a second tape drive to DPM or to the tape library.
 
-### Backing up data on UPDs (User Profile Disks) isn't supported
-**Issue**: Data on file shares hosting UPDs (User Profile Disks) can't be protected by DPM.
+### Backing up data on User Profile Disks (UPDs) isn't supported
+**Issue**: Data on file shares hosting User Profile Disks (UPDs) can't be protected by DPM.
 
 **Workaround**: None.
 
@@ -516,7 +516,7 @@ These workloads can be running on a single server or in a cluster configuration.
 ### Disk-to-tape backup isn't supported for Exchange DAG
 **Issue**: DPM doesn't support short-term or long-term disk-to-tape (D2T) backup for Exchange DAG workloads.
 
-**Workaround**: Use disk-to-disk-to-tape (D2D2T) for Exchange DAG workload.
+**Workaround**: Use disk-to-disk-to-tape (D2D2T) for Exchange DAG workloads.
 
 ## <a name="BKMK_Sharepoint"></a>SharePoint protection issues
 
@@ -576,7 +576,7 @@ These workloads can be running on a single server or in a cluster configuration.
 **Workaround**: None.
 
 ### AlwaysOn recovery to original location isn't supported
-**Issue**: When DPM is protecting SQL Server with AlwaysOn enabled data recovery to the original location isn't supported.
+**Issue**: When DPM is protecting SQL Server with AlwaysOn enabled, data recovery to the original location isn't supported.
 
 **Workaround**: None.
 
@@ -586,11 +586,11 @@ These workloads can be running on a single server or in a cluster configuration.
 
 **Workaround**: Move the SQL Server databases off the SOFS.
 
-### DPM can't protect SQL server DAG or AG, where the role name on failover cluster is different than the named AG on SQL.
+### DPM can't protect SQL Server DAG or AG, where the role name on failover cluster is different from the named AG on SQL.
 
-**Issue**: DPM can't protect SQL server Distributed Availability Group (DAG) or Availability Group (AG), where the role name on failover cluster is different than the named AG on SQL.
+**Issue**: DPM can't protect SQL Server Distributed Availability Group (DAG) or Availability Group (AG), where the role name on failover cluster is different from the named AG on SQL.
 
-**Workaround**: The role name for SQL server DAG or AG on failover cluster must be the same as the SQL server  availability group or distributed availability group name on SQL and vice versa.
+**Workaround**: The role name for SQL Server DAG or AG on failover cluster must be the same as the SQL server availability group or distributed availability group name on SQL and vice versa.
 
 
 ## <a name="BKMK_VM"></a>Hyper-V and virtual machine protection issues
@@ -601,7 +601,7 @@ These workloads can be running on a single server or in a cluster configuration.
 **Workaround**: None.
 
 ### Backup of Hyper-V servers and clusters in trusted and untrusted domains
-**Issue**: To backup Hyper-V server clusters, they must be located in the same domain as the DPM server or in a trusted or child domain. You can back up servers and clusters in an untrusted domain or workload using NTLM or certificate authentication for a single server, or certificate authentication only for a cluster.
+**Issue**: To backup Hyper-V server clusters, they must be located in the same domain as the DPM server or in a trusted or child domain. You can back up servers and clusters in an untrusted domain or workload using NTLM or certificate authentication for a single server or certificate authentication only for a cluster.
 
 **Workaround**: None
 
@@ -637,7 +637,7 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 
 -   On-premises DPM servers can't protect Azure-based workloads.
 
--   DPM running as an Iaas virtual machine, in Azure, can protect some workloads running as Azure virtual machines. For details see the [DPM protection support matrix](dpm-protection-matrix.md).
+-   DPM running as an infrastructure as a service (IaaS) virtual machine, in Azure, can protect some workloads running as Azure virtual machines. For details, see the [DPM protection support matrix](dpm-protection-matrix.md).
 
 -   DPM running as an Azure virtual machine can't protect on-premises workloads.
 
