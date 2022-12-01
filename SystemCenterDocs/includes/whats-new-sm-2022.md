@@ -21,3 +21,7 @@ For issues fixed and the installation instructions for UR1, see KB article for U
 ### Support to SQL Server 2022
 
 SM 2022 UR1 supports SQL Server 2022. [Learn more](../scsm/system-requirements.md).
+
+### Support for Modern Auth (0Auth2)
+
+With SM 2022 UR1, support for Modern Auth (OAuth2) has been added to email notifications. To use Modern Auth, ensure app registration is complete and TLS 1.2 is enabled. [Learn more](/SystemCenterDocs/scsm/notifications.md#configure-email-notification-with-modern-authentication).

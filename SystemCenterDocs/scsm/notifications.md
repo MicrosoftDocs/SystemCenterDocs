@@ -80,9 +80,9 @@ You can use the following procedures to configure notification channels and vali
 
 ## Configure email notification with Modern authentication
 
-Send notifications using external email authentication in Service Manager. 
+You can send notifications using external email authentication in Service Manager. 
 
-To configure email notifications with Modern authentication, follow these steps:
+To configure email notifications with modern authentication, follow these steps:
 
 ### Create an Azure AD app 
 
@@ -101,14 +101,15 @@ To configure email notifications with Modern authentication, follow these steps:
 9. Select **Add**.
 10. Copy the **Client secret value** created.
      >[!Note]
-     >Client secret value is displayed only at the time of creation and is different from the Client Secret ID. 
+     >Client secret value is displayed only at the time of creation, and is different from the Client Secret ID. 
 11. On the **Overview** page, under **Manage**, select **API Permissions**.
 12. On the **API permissions** page, select **Add a permission** > **Microsoft Graph** > **Delegated mode** > search for **Mail.Send** and add the permission.
 13. Select **Grant admin consent** to give the permission.  
 
 ### Enable TLS 1.2 
 
-1. Open Windows PowerShell in Administrator mode and run the following TLS script to enable the 1.2 version. 
+1. Open Windows PowerShell in Administrator mode.
+1. Run the following TLS script to enable the 1.2 version. 
 
 ### Use OAuth for Notifications
 
