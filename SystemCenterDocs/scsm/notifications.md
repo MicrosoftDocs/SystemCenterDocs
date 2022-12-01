@@ -48,7 +48,7 @@ You can use the following procedures to configure notification channels and vali
 ::: moniker range="sc-sm-2022"
 >[!NOTE]
 >- Only email notification is supported.
->- With Service Manager 2022 UR1, added support for Modern Auth (OAuth2) to email notifications. To use Modern Auth, ensure app registration is complete and TLS 1.2 is enabled.
+>- With Service Manager 2022 UR1, support for Modern Auth (OAuth2) has been added to email notifications. To use Modern Auth, ensure app registration is complete and TLS 1.2 is enabled.
 ::: moniker-end
 
 ### To configure email notifications
@@ -82,17 +82,17 @@ You can use the following procedures to configure notification channels and vali
 
 Send notifications using external email authentication in Service Manager. 
 
-To configure email notification with Modern authentication, follow these steps:
+To configure email notifications with Modern authentication, follow these steps:
 
 ### Create an Azure AD app 
 
-1. Sign in to the [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) using an account with administrator permission that is using the same account with Microsoft 365 subscription (tenant). Search for **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) using an account with administrator permissions that uses the same account with Microsoft 365 subscription (tenant). Search for **Azure Active Directory**.
 2. On the **Overview** page, under **Manage**, select **App registrations** and then select **New registration**.
 3. On the **Register an application** page, do the following:
     1. **Name**: Enter the desired name.
     1. **Supported account types**: Select the desired supported account type.
 4. Select **Register**.
-5. After successful registration, ensure to note the **Application (client) ID** and **Directory (tenant) ID** displayed on the screen.
+5. After successful registration, ensure you note the **Application (client) ID** and **Directory (tenant) ID** displayed on the screen.
 6. On the **Overview** page, under **Manage**, select **Certificates & secrets**.
 7. On the **Certificates & secrets** page, under **Client secrets (0)**, select **+ New client secret**. 
 8. On the **Add a client secret** page, do the following:
@@ -101,7 +101,7 @@ To configure email notification with Modern authentication, follow these steps:
 9. Select **Add**.
 10. Copy the **Client secret value** created.
      >[!Note]
-     >Client secret value is displayed only at the time of creation and is different from Client Secret ID. 
+     >Client secret value is displayed only at the time of creation and is different from the Client Secret ID. 
 11. On the **Overview** page, under **Manage**, select **API Permissions**.
 12. On the **API permissions** page, select **Add a permission** > **Microsoft Graph** > **Delegated mode** > search for **Mail.Send** and add the permission.
 13. Select **Grant admin consent** to give the permission.  
@@ -113,15 +113,15 @@ To configure email notification with Modern authentication, follow these steps:
 ### Use OAuth for Notifications
 
 1. Open Service Manager Console and navigate to **Notifications** > **Channels** > **Properties**. 
-2. On **Configure E-mail Notification Channel** pop-up, select **Enable e-mail notifications**.
+2. On the **Configure E-mail Notification Channel** pop-up, select **Enable e-mail notifications**.
 3. Select **Add**. 
-4. On **Edit SMPT Server** page, do the following:
+4. On the **Edit SMPT Server** page, do the following:
     1. **SMTP server (FQDN)**: Enter the SMTP server.
     1. **Port number**: Enter the port number
     1. **Authentication method**: Select **External E-mail Authentication** from the dropdown.
     1. **Client Id**: Enter the client ID created in the above steps.
     1. **Tenant Id**: Enter the tenant ID created in the above steps.
-    1. **Impersonate User**: Enter your M365 account mail-id, which is used to create Azure AD app.
+    1. **Impersonate User**: Enter your M365 account mail-id, which was used to create the Azure AD app.
     1. **Client Secret**: Enter the client secret created in the above steps.
 1. Select **OK** to save the changes.  
 1. Enter **Return e-mail address** and set **Retry primary after** as required and select **OK**. 
