@@ -41,4 +41,4 @@ To scale In/Out the management servers, follow these steps:
 
 ## Next steps
 
-[Patch SCOM managed instance (preview)](patch-scom-managed-instance.md)
+[Patch SCOM Managed Instance (preview)](patch-scom-managed-instance.md)

@@ -41,4 +41,4 @@ SCOM Managed Instance (preview) uses RPaaS Cosmos database to store SCOM Managed
 
 ## Encryption at Compute 
 
-Though SCOM Managed Instance (preview) doesn't store any customer details, it takes domain user details from your key vault secrets. These domain user details are used for adding System Center Operations Manager management servers to On-Prem Domain controller. To avoid any data leak at compute, encrypt it using the VM extension `AzureDiskEncryption`. 
+Though SCOM Managed Instance (preview) doesn't store any customer details, it takes domain user details from your key vault secrets. These domain user details are used for adding System Center Operations Manager management servers to on-premises Domain controller. To avoid any data leak at compute, encrypt it using the VM extension `AzureDiskEncryption`. 

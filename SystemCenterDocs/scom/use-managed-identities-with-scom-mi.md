@@ -57,7 +57,7 @@ SCOM Managed Instance (preview) supports both System Assigned Managed Identity a
 
      - SCOM Managed Instance (preview) onboarding process takes the domain user credentials stored in Customer Key vault. The secrets in the Customer Key vault are accessed using the managed identity assigned to SCOM Managed Instance (preview). 
 
-     During SCOM Managed Instance (preview) onboarding, you must provide the User Managed Identity, which has access to Customer key vault and SQL Managed Instance.
+     During SCOM Managed Instance (preview) onboarding, you must provide the User Managed Identity, which has access to Customer Key vault and SQL Managed Instance.
 
 ## Create a Managed Service Identity (MSI)
 
