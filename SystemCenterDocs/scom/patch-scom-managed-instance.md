@@ -15,7 +15,7 @@ monikerRange: 'sc-om-2022'
 
 # Patch Azure Monitor SCOM Managed Instance (preview)
 
-Azure Monitor SCOM Managed Instance (preview) offers a convenient patching experience compared to on-premises SCOM. 
+Azure Monitor SCOM Managed Instance (preview) offers a convenient patching experience compared to on-premises System Center Operations Manager. 
 
 Below are the key highlights:
 
@@ -29,7 +29,7 @@ This article provides information on how to patch your SCOM Managed Instance (pr
 
 To patch SCOM Managed Instance (preview), follow these steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) and search for **SCOM** or **SCOM Managed Instance**.
+1. Sign in to the [Azure portal](https://portal.azure.com/) and search for **SCOM Managed Instance**.
 1. On the **Overview** page, under **Configuration**, select **Patching**.
 1. On the **Patching** page, you'll see the status of the updates available for your instance.
 

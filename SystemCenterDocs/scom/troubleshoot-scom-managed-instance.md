@@ -23,7 +23,7 @@ This article describes the errors that might occur when you deploy or use Azure 
 
 1.	Ensure all the prerequisites are met. Creation issues may arise due to improper/incomplete prerequisites.
 2.	Ensure you read/check the error message carefully. The error messages capture the issue/error in creation.
-3.	Check the **SCOM Setup logs** link provided in the error message. Select the link to download the SCOM setup logs.
+3.	Check the **SCOM Setup logs** link provided in the error message. Select the link to download the System Center Operations Manager setup logs.
 4.	If you're unable to identify the issue with the above steps, login to the Virtual Machine Scale Sets instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
 5. If the issue persists, raise a support ticket with all relevant details [`correlation-id`, `subscription-id`, etc.,]
 
@@ -126,7 +126,7 @@ Check the quota section on Azure portal and allocate more cores of type Standard
 
 ### Issue: Extension provisioning error
 
-**Cause**: This error might occur during the provisioning of SCOM extension or SCOM installation.
+**Cause**: This error might occur during the provisioning of System Center Operations Manager extension or System Center Operations Manager installation.
 
 **Resolution**: Check the [general troubleshooting](./troubleshoot-scom-managed-instance.md#general-troubleshooting), try to identify the issue and accordingly resolve it.
 
@@ -169,9 +169,9 @@ For example, the update button is enabled even though the title of the card read
 	
 **Resolution**: To resolve, contact Microsoft support.
 
-### Issue: Update fails, and rollback fails to leave an inconsistent state where the number of VMs on the VMSS instance has been modified
+### Issue: Update fails, and rollback fails to leave an inconsistent state where the number of VMs on the Virtual Machine Scale Sets instance has been modified
 
-**Resolution**: Go to SCOM console and remove inconsistent nodes.
+**Resolution**: Go to System Center Operations Manager console and remove inconsistent nodes.
 
 ### Issue: Update fails but database update is successful
 
@@ -179,9 +179,9 @@ For example, the update button is enabled even though the title of the card read
 
 **Resolution**: Retry after some time.
 
-### Issue: After successful update, SCOM console isn't functioning properly on the instance
+### Issue: After successful update, System Center Operations Manager console isn't functioning properly on the instance
 
-**Cause**: Occurs if SCOM isn't installed properly or some process might be stuck.
+**Cause**: Occurs if System Center Operations Manager isn't installed properly or some process might be stuck.
 
 **Resolution**: Try to restart the instance. If the issue persists, contact Microsoft support.
 
@@ -231,4 +231,4 @@ For example, the update button is enabled even though the title of the card read
 
 **Cause**: Occurs if a patching or scaling operation has left an inconsistent state after completion.
 
-**Resolution**: Go to SCOM console and remove the stale management servers.
+**Resolution**: Go to System Center Operations Manager console and remove the stale management servers.

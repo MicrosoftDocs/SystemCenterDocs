@@ -53,11 +53,11 @@ SCOM Managed Instance (preview) supports both System Assigned Managed Identity a
 
 - User Assigned Managed Identity 
 
-     - For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and will be used to access the SQL Managed Instance database. SCOM Managed Instance (preview) reads/writes customer workload monitoring data to SQL managed instance databases.  The User Assigned Identity assigned to SCOM Managed Instance (preview) resource will be used for authenticating from SCOM servers to SQL Managed instance. 
+     - For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and will be used to access the SQL Managed Instance database. SCOM Managed Instance (preview) reads/writes customer workload monitoring data to SQL managed instance databases. The User Assigned Identity assigned to SCOM Managed Instance (preview) resource will be used for authenticating from System Center Operations Manager servers to SQL Managed instance. 
 
-     - SCOM Managed Instance (preview) onboarding process takes the domain user credentials stored in Customer Key vault. The secrets in the Customer Key vault are accessed using the managed identity assigned to SCOM Managed Instance. 
+     - SCOM Managed Instance (preview) onboarding process takes the domain user credentials stored in Customer Key vault. The secrets in the Customer Key vault are accessed using the managed identity assigned to SCOM Managed Instance (preview). 
 
-     During SCOM Managed Instance onboarding, you must provide the User Managed Identity, which has access to Customer key vault and SQL Managed Instance.
+     During SCOM Managed Instance (preview) onboarding, you must provide the User Managed Identity, which has access to Customer key vault and SQL Managed Instance.
 
 ## Create a Managed Service Identity (MSI)
 

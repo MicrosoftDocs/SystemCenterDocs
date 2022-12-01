@@ -17,7 +17,7 @@ monikerRange: 'sc-om-2022'
 
 Azure Monitor SCOM Managed Instance (preview) provides System Center Operations Manager functionality on Azure and helps you monitor all your workloads, whether on-premises, in Azure, or in any other cloud services.
 
-This article describes how to create a SCOM Managed Instance (preview) with SCOM functionality on Azure.
+This article describes how to create a SCOM Managed Instance (preview) with System Center Operations Manager functionality on Azure.
 
 >[!Note]  
 >In this preview, you can create an instance only in **West Europe** and **West US**.
@@ -57,11 +57,11 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 
 ## Configure a domain account in Active Directory
 
-- Create a domain account in your Active Directory. The domain account is a typical Active Directory account (it can be a non-admin account). This account will be used to add the SCOM Management Servers to your existing domain.
+- Create a domain account in your Active Directory. The domain account is a typical Active Directory account (it can be a non-admin account). This account will be used to add the System Center Operations Manager Management Servers to your existing domain.
       :::image type="Active directory users" source="media/create-operations-manager-managed-instance/active-directory-users.png" alt-text="Screenshot of Active directory users.":::
 - Ensure that this account has the [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain) to join other servers to your domain.
 - You can use an existing domain account if it has these [permissions](/windows/security/threat-protection/security-policy-settings/add-workstations-to-domain).
-- Configured domain account must be used in SCOM Managed Instance creation (preview) at later steps.
+- Configured domain account must be used in SCOM Managed Instance (preview) creation at later steps.
 
 ## Create and configure a computer group
 
@@ -75,7 +75,7 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 
 ## Create a static IP and configure the DNS name
 
-- For all the SCOM components, to communicate with the load-balancer that will be created by the SCOM Managed Instance (preview) service, you need a static IP and DNS name for the load-balancer front-end configuration.
+- For all the System Center Operations Manager components, to communicate with the load-balancer that will be created by the SCOM Managed Instance (preview) service, you need a static IP and DNS name for the load-balancer front-end configuration.
 - Ensure that the static IP is in the subnet that was created during VNet creation and it will be used during the creation of an instance. 
 - Create a DNS name (as per your organization policy) for the static IP.
      :::image type="DNS manager" source="media/create-operations-manager-managed-instance/dns-manager.png" alt-text="Screenshot of DNS manager.":::
@@ -260,12 +260,12 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
 To create a SCOM Managed Instance (preview), follow these steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com) and search for **SCOM** or **SCOM Managed Instance**.
+1. Sign in to the [Azure portal](https://portal.azure.com) and search for **SCOM Managed Instance**.
 1. On the Overview page, you've three options:
     - **Pre-requisites**: Allows you to view the prerequisites.
     - **Create SCOM managed instance**: Allows you to create a SCOM Managed Instance (preview).
     - **Manage your SCOM managed instance**: Allows you to view the list of instances created.
-         :::image type="SCOM MI Overview" source="media/create-operations-manager-managed-instance/scom-mi-overview.png" alt-text="Screenshot showing SCOM MI Overview.":::
+         :::image type="SCOM Managed Instance (preview) Overview" source="media/create-operations-manager-managed-instance/scom-mi-overview.png" alt-text="Screenshot showing SCOM Managed Instance (preview) Overview.":::
 1. Select **Create SCOM Managed Instance**.
 1. Under **Basics**, do the following:
     1. **Project details**:
