@@ -5,12 +5,12 @@ description: This article describes how to migrate from Operations Manager on-pr
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 10/25/2022
+ms.date: 10/29/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-monikerRange: '>=sc-om-2019'
+monikerRange: 'sc-om-2022'
 ---
 
 # Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)
@@ -27,7 +27,7 @@ Provided the procedure for the following artifacts as an example:
 - 1P Integrations 
 - Agent mapping and configuration
 
-[Here](#supported-artifacts-for-migration) is the complete list of supported artifacts.
+[Here's](#supported-artifacts-for-migration) the complete list of supported artifacts.
 
 ## Migrate from on-premises to SCOM Managed Instance (preview)
 
@@ -72,11 +72,11 @@ Below is a quick summary of what can be migrated:
 | Types of data visualizations | Can be migrated to SCOM Managed Instance (preview) | Recommendations |
 |---|---|---|---|---|
 | Dashboards/Views that are available in Management Pack | Yes | Operations console |
-| Dashboards/Views created on Operations console | Yes | Operations Console |
+| Dashboards/Views created on Operations console | Yes | Operations console |
 | Reports that are available in Management Pack | No | Power BI reports |
 | Reports that are created on Operations console | No | Power BI reports |
 
-- For Dashboards/Views that are available in Management Pack, you can view the data similar to the one in Operations Manager on-premises (as they are built into Management Pack).
+- For Dashboards/Views that are available in Management Pack, you can view the data similar to the one in Operations Manager on-premises (as they're built into Management Pack).
 - For Dashboards/Views created on the Operations console, you need to reconfigure custom dashboards and views in SCOM Managed Instance (preview). 
 - For (SSRS) reports that are available in Management Pack and on the Operations console, you need to reconfigure all reports on Power BI as the Reporting Server doesn't exist in SCOM Managed Instance (preview).  
 
@@ -140,7 +140,6 @@ Use the following mapping chart to provide access on SCOM Managed Instance (prev
 SCOM Managed Instance (preview) supports the following notification channels:
 
 - Emails 
-- Teams 
 - SMS/Text 
 
 Export the **Notifications Internal Library** Management pack from the Operations Manager Management Group to migrate all your notification settings and import them to SCOM Managed Instance (preview).
@@ -176,15 +175,10 @@ To migrate from Agent to SCOM Managed Instance (preview), see [High level overvi
 - Groups 
 - 1P Integrations 
 - Agent mapping and configuration
-- System Center Operations Manager Databases (Ops database and DW) 
-- Operations Console 
-- Web Console 
 - Gateways 
 - Custom and 3P Solutions 
-- 3P Management Packs
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
+[SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
 

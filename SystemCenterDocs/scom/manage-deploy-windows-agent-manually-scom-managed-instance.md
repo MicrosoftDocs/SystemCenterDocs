@@ -5,12 +5,12 @@ description: This article describes how to manually install the Azure Monitor SC
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 11/25/2022
+ms.date: 11/29/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-monikerRange: '>=sc-om-2019'
+monikerRange: 'sc-om-2022'
 ---
 
 # Install Windows Agent Manually Using MOMAgent.msi - Azure Monitor SCOM Managed Instance (preview)
@@ -31,6 +31,6 @@ For either of the methods, ensure the following conditions are met:
 > [!NOTE]
 > For information about port requirements for agents, see [Communication Between Agents and Management Servers](plan-planning-agent-deployment.md#communication-between-agents-and-management-servers).
 
-[Download the MOMAgent.msi](https://download.microsoft.com/download/6/a/6/6a6bb9e4-d54e-4938-82b8-0dd0b9a2b8e0/SCOM_MI.exe).
+[Download the MOMAgent.msi](https://go.microsoft.com/fwlink/?linkid=2212475).
 
 For more information about how to deploy the Operations Manager agent from the command line, see [Deploy the Operations Manager agent from the command line](./manage-deploy-windows-agent-manually.md#to-deploy-the-operations-manager-agent-from-the-command-line).
