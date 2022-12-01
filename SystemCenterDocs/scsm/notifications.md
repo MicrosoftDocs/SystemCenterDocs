@@ -1,13 +1,13 @@
 ---
 title: Configure Service Manager notifications
 description: You can create notifications in Service Manager when incidents or changes occur.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 02/15/2016
+ms.date: 12/01/2022
 ms.technology: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
 ---
@@ -40,8 +40,16 @@ While this example is very simple, Service Manager includes substitution strings
 
 You can use the following procedures to configure notification channels and validate the configuration. Notification channels are the method by which notification messages are sent to users. You use the **Configure E-Mail Notification Channel** dialog box to configure and enable email notifications that Service Manager sends to a Simple Mail Transfer Protocol (SMTP) server.
 
-> [!NOTE]
-> Only email notification is supported.
+::: moniker range="<=sc-sm-2019"
+>[!NOTE]
+>Only email notification is supported.
+::: moniker-end
+
+::: moniker range="sc-sm-2022"
+>[!NOTE]
+>- Only email notification is supported.
+>- With Service Manager 2022 UR1, added support for Modern Auth (OAuth2) to email notifications. To use Modern Auth, ensure app registration is complete and TLS 1.2 is enabled.
+::: moniker-end
 
 ### To configure email notifications
 
@@ -67,6 +75,60 @@ You can use the following procedures to configure notification channels and vali
 
 -   For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](/previous-versions/system-center/powershell/system-center-2012-r2/hh316236(v=sc.20)).
 -   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in Service Manager, see [Get-SCSMChannel](/previous-versions/system-center/powershell/system-center-2012-r2/hh316246(v=sc.20)).
+
+::: moniker range="sc-sm-2022"
+
+## Configure email notification with Modern authentication
+
+Send notifications using external email authentication in Service Manager. 
+
+To configure email notification with Modern authentication, follow these steps:
+
+### Create an Azure AD app 
+
+1. Sign in to the [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) using an account with administrator permission that is using the same account with Microsoft 365 subscription (tenant). Search for **Azure Active Directory**.
+2. On the **Overview** page, under **Manage**, select **App registrations** and then select **New registration**.
+3. On the **Register an application** page, do the following:
+    1. **Name**: Enter the desired name.
+    1. **Supported account types**: Select the desired supported account type.
+4. Select **Register**.
+5. After successful registration, ensure to note the **Application (client) ID** and **Directory (tenant) ID** displayed on the screen.
+6. On the **Overview** page, under **Manage**, select **Certificates & secrets**.
+7. On the **Certificates & secrets** page, under **Client secrets (0)**, select **+ New client secret**. 
+8. On the **Add a client secret** page, do the following:
+    1. **Description**: Enter the desired description.
+    1. **Expires**: Select the desired duration from the dropdown.
+9. Select **Add**.
+10. Copy the **Client secret value** created.
+     >[!Note]
+     >Client secret value is displayed only at the time of creation and is different from Client Secret ID. 
+11. On the **Overview** page, under **Manage**, select **API Permissions**.
+12. On the **API permissions** page, select **Add a permission** > **Microsoft Graph** > **Delegated mode** > search for **Mail.Send** and add the permission.
+13. Select **Grant admin consent** to give the permission.  
+
+### Enable TLS 1.2 
+
+1. Open Windows PowerShell in Administrator mode and run the following TLS script to enable the 1.2 version. 
+
+### Use OAuth for Notifications
+
+1. Open Service Manager Console and navigate to **Notifications** > **Channels** > **Properties**. 
+2. On **Configure E-mail Notification Channel** pop up, select **Enable e-mail notifications**.
+3. Select **Add**. 
+4. On **Edit SMPT Server** page, do the following:
+    1. **SMTP server (FQDN)**: Enter the SMTP server.
+    1. **Port number**: Enter the port number
+    1. **Authentication method**: Select **External E-mail Authentication** from the dropdown.
+    1. **Client Id**: Enter the client ID created in the above steps.
+    1. **Tenant Id**: Enter the tenant ID created in the above steps.
+    1. **Impersonate User**: Enter you Microsoft O365 account mail-id which is used to create Azure AD app.
+    1. **Client Secret**: Enter the client secret created in the above steps.
+1. Select **OK** to save the changes.  
+1. Enter **Return e-mail address** and set **Retry primary after** as required and select **OK**. 
+
+Use this channel for sending notifications/outgoing e-mails. 
+
+::: moniker-end
 
 ## Create notification templates
 
