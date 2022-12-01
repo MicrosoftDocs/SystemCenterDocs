@@ -29,11 +29,11 @@ Before notifications are sent, first configure each notification channel, such a
 
 ## Substitution strings in notification templates
 
-Substitution strings are special tokens or system variables that are used in notification templates in Service Manager. These strings retrieve properties from an instance that is related to the instance for which the template was created. The strings then display the value in the notification email. Notification templates in Service Manager include substitution strings. Although you should avoid modifying the predefined templates, you can duplicate them and then modify the duplicates.
+Substitution strings are special tokens or system variables that are used in notification templates in Service Manager. These strings retrieve properties from an instance that is related to the instance for which the template was created. The strings then display the value in the notification email. Notification templates in Service Manager include substitution strings. Although you should avoid modifying the predefined templates, you can duplicate them, and then modify the duplicates.
 
 For example, the end user notification template includes a substitution string in the message body that represents the user's first name. If you want to add the user's last name, you can easily do so by using the **Insert** button, which is available when you edit a notification template, and then browsing the available strings that are available for the class of template that you are modifying. In this example, you would browse and then select **Affected User** and then select **Last Name** to insert the string into the template. Later, when the notification is sent to the user, his or her first and last name is included in the message as a salutation.
 
-While this example is very simple, Service Manager includes substitution strings for almost every property that you might need to create notifications that can inform end users and other Service Manager users with very timely and relevant information. You can easily view the substitution strings that are available in Service Manager by opening an existing notification template and then, in the template design area, clicking the **Insert** button to view the classes and properties.
+While this example is simple, Service Manager includes substitution strings for almost every property that you might need to create notifications that can inform end users and other Service Manager users with timely and relevant information. You can easily view the substitution strings that are available in Service Manager by opening an existing notification template and then, in the template design area, clicking the **Insert** button to view the classes and properties.
 
 
 ## Configure notification channels
@@ -113,7 +113,7 @@ To configure email notification with Modern authentication, follow these steps:
 ### Use OAuth for Notifications
 
 1. Open Service Manager Console and navigate to **Notifications** > **Channels** > **Properties**. 
-2. On **Configure E-mail Notification Channel** pop up, select **Enable e-mail notifications**.
+2. On **Configure E-mail Notification Channel** pop-up, select **Enable e-mail notifications**.
 3. Select **Add**. 
 4. On **Edit SMPT Server** page, do the following:
     1. **SMTP server (FQDN)**: Enter the SMTP server.
@@ -121,7 +121,7 @@ To configure email notification with Modern authentication, follow these steps:
     1. **Authentication method**: Select **External E-mail Authentication** from the dropdown.
     1. **Client Id**: Enter the client ID created in the above steps.
     1. **Tenant Id**: Enter the tenant ID created in the above steps.
-    1. **Impersonate User**: Enter you Microsoft O365 account mail-id which is used to create Azure AD app.
+    1. **Impersonate User**: Enter your M365 account mail-id, which is used to create Azure AD app.
     1. **Client Secret**: Enter the client secret created in the above steps.
 1. Select **OK** to save the changes.  
 1. Enter **Return e-mail address** and set **Retry primary after** as required and select **OK**. 
@@ -256,7 +256,7 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 9. Make sure that an unsealed management pack of your choice is selected, and then click **Next**. For example, select the **Sample Management Pack**.
 10. On the **Additional Criteria** page, select **Release Record**. In the **Available Properties** list, select **Status**, and then click **Add**.
 11. In the **Criteria** area, next to **[Release Record] Status**, select **does not equal**. In the list, select **Closed**, and then click **Next**.
-12. On the **Recurring Notification** page under **Recurrence pattern**, select **Notify every *TimeInterval*** and then choose an interval. For example, set the recurrence pattern to every 1 day.
+12. On the **Recurring Notification** page under **Recurrence pattern**, select **Notify every *TimeInterval*** and then choose an interval. For example, set the recurrence pattern to every one day.
 13. On the **Recurring Notification** page under **Range of recurrence**, select a range of recurrence or choose no end date. For example, select **No end date**.
 14. On the **Template** page, next to the **E-mail template** box, click **Select**.
 15. In the **Select Template** dialog box, in the **Templates** list, select a notification template that you have created for release record notifications.
