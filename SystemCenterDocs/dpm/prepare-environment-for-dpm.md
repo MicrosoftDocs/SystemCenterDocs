@@ -52,7 +52,7 @@ One of your first decisions is how to deploy DPM. You can deploy DPM:
 
 In all deployments you’ll need:
 
-- An SQL Server instance, installed and running, to use for the DPM database. The instance can be co-located on the DPM server or remote.
+- An SQL Server Instance, installed and running, to use for the DPM database. The instance can be co-located on the DPM server or remote.
 - Disk to be used as dedicated space for DPM data storage.
 - DPM protection agent installed on computers and servers you want to protect using DPM.
 
@@ -99,12 +99,12 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 |-----------|----------|
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|1 GB minimum, 3 GB recommended|
-|Required features|Database Engine Services, Reporting Services (for DPM 2019, install SSRS with SQL 2017 or later)<br/><br/>**Note** <br/><br/> - For Remote SQL, the database engine and reporting services must be on the same computer. <br/><br/> - For remote clustered SQL instance, Database Engine must be on the cluster and SSRS must be on a separate computer, which can be the DPM server or any other computer)|
+|Required features|Database Engine Services, Reporting Services (for DPM 2019, install SSRS with SQL 2017 or later)<br/><br/>**Note** <br/><br/> - For Remote SQL, the database engine and reporting services must be on the same computer. <br/><br/> - For remote clustered SQL Instance, Database Engine must be on the cluster and SSRS must be on a separate computer, which can be the DPM server or any other computer)|
 |Collations|SQL_Latin1_General_CP1_CI_AS|
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
 |Installation|Install SQL Server on a remote server, or the DPM server. It must be installed and running before you install DPM.|
-|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](./install-dpm.md#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
+|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server Instance](./install-dpm.md#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server Instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
 
 ::: moniker-end

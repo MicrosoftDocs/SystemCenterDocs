@@ -106,7 +106,7 @@ This topic summarizes some of the common support information you might need when
 ### DPM can't use SQL Server running on a domain controller
 **Issue**: Database deployment not supported.
 
-**Workaround**: If you want to use a remote instance of SQL Server as your DPM database, ensure that the SQL Server instance isn't running on a domain controller.
+**Workaround**: If you want to use a remote instance of SQL Server as your DPM database, ensure that the SQL Server Instance isn't running on a domain controller.
 
 ::: moniker range="<=sc-dpm-2016"
 
@@ -204,11 +204,11 @@ Both scenarios are unsupported. You can only select one of the following options
 **Issue**: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protection of other workloads hosted on Cluster Shared Volumes (CSVs) isn't supported.
 
 ::: moniker range="<=sc-dpm-2019"
-Protection of SQL Server database stored on Cluster Shared Volumes (CSVs) is supported with [DPM 2019 UR2](/SystemCenterDocs/dpm/what-s-new-in-dpm.md) and later.
+Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2019 UR2](/SystemCenterDocs/dpm/what-s-new-in-dpm.md) and later.
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
-Protection of SQL Server database stored on Cluster Shared Volumes (CSVs) is supported with [DPM 2022](what-s-new-in-dpm.md).
+Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2022](what-s-new-in-dpm.md).
 ::: moniker-end
 
 **Workaround**: None.

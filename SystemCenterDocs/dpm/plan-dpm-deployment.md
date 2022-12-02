@@ -72,7 +72,7 @@ Firewall settings for DPM deployment are required on the DPM server, on machines
 |Protected machines||Used for miscellaneous operations between 1) DPM and protected machines, 2) DPM and the domain controller 3) Protected machines and the domain controller. Also used for SMB directly hosted on TCP/IP for DPM functions.|NetBIOS|137/UDP<br /><br />138/UDP<br /><br />139/TCP<br /><br />445/TCP|
 |Remote SQL Server||Enable TCP/IP for the DPM instance of SQL Server with the following: default failure audit; enable password policy checking.|||
 |Remote SQL Server||Enable incoming exception for sqservr.exe for DPM instance of SQL Server to allow TCP on port 80. The report server listens for HTTP requests on port 80.|||
-|Remote SQL Server||Default instance of database engine listens on TCP port 1443.  Can be modified.<br /><br />To use the SQL Server Browser service to connect on a non-default port set UDP port 1434.|||
+|Remote SQL Server||Default instance of database engine listens on TCP port 1443. Can be modified.<br /><br />To use the SQL Server Browser service to connect on a non-default port set UDP port 1434.|||
 |Remote SQL Server||Named instance of SQL Server uses Dynamic ports by default. Can be modified.|||
 |Remote SQL Server||Enable RPC|||
 
