@@ -49,7 +49,7 @@ DPM SQL Self-Service Recovery is not available in DPM 2022 RTM. Support for SQL 
 
 **Description**: If the name of the existing DPM database is **DPMDB**, the upgrade will fail.  
 
-The DPM upgrade process will always rename the DPM database name to **DPMDB**. If the same SQL instance is used by multiple DPM servers, the subsequent upgrade of the other DPM server will fail as there is already a database with the name DPMDB.
+The DPM upgrade process will always rename the DPM database name to **DPMDB**. If the same SQL Instance is used by multiple DPM servers, the subsequent upgrade of the other DPM server will fail as there is already a database with the name DPMDB.
 
 **Workaround**: Rename the corresponding DPM database before you start the upgrade.
 
@@ -162,7 +162,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Workaround**:
 1. Back up the current DPM database.
-2. Open SQL Management Studio and connect to the SQL instance hosting the DPMDB for this server.
+2. Open SQL Management Studio and connect to the SQL Instance hosting the DPMDB for this server.
 3. Run the following query and check if you have two or more summary manager jobs scheduled and see which the older schedule was:
    ```
     SELECT SCH.ScheduleId, SCH.JobDefinitionId, jd.CreationTime
@@ -195,7 +195,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Description**: When upgrading a Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016, two versions of the VM appear in the Create Protection Group wizard.
 
-**Workaround**: For protected VMs that are about to be upgraded, make sure to stop protection with retain data before upgrading the VM. Then upgrade the VM and reprotect it in a new protection group. While configuring reprotection, do a refresh on the VM host for DPM to detect the VM upgrade and protect it as RCT VM.
+**Workaround**: For protected VMs that are about to be upgraded, ensure that you stop protection with retain data before upgrading the VM. Then upgrade the VM and reprotect it in a new protection group. While configuring reprotection, do a refresh on the VM host for DPM to detect the VM upgrade and protect it as RCT VM.
 
 ### Restoration of a previous version for an upgraded Hyper-V VM causes future recovery points to fail
 
@@ -215,7 +215,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Description**: When you upgrade DPM, database name might change in some scenarios.
 
-**Workaround**: If you are protecting a DPM database, make sure you enable the protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the previous DPM database.
+**Workaround**: If you are protecting a DPM database, ensure that you enable the protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the previous DPM database.
 
 ### Hyper-V RCT - recover as files for D-T backup fails
 
@@ -344,7 +344,7 @@ Follow these steps to replace the existing report files:
 
     ![List of individual report files](media/release-notes/individual-report-files.png)
 
-4.	Select the report files that don't end with *Report*, right-click   **Option**, and then select **Manage**.
+4.	Select the report files that don't end with *Report*, select and hold **Option**, and then select **Manage**.
 
     ![Manage report files](media/release-notes/manage-report-files.png)
 
@@ -366,7 +366,7 @@ The following section provides details of the known issue in DPM 2019 UR3 and th
 
 ### DPM Remote console might fail to connect to DPM server, after upgrading to Update Rollup 3
 
-**Description**: After upgrading DPM Remote Administration Console to Update Rollup 3, it might fail to connect to DPM server with an error “The DPM Administrator Console version is incompatible with the DPM server version”.
+**Description**: After upgrading DPM Remote Administration Console to Update Rollup 3, it might fail to connect to DPM server with an error **The DPM Administrator Console version is incompatible with the DPM server version**.
 
 **Workaround**:
 
@@ -529,7 +529,7 @@ The following issues exist in the 1801 release.
 
 **Description**: If the volume's data sources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the data sources can be removed too.
 
-**Workaround**: Before using the cmdlet to remove the volumes, make sure the volume's data sources aren't in use (actively or inactively).
+**Workaround**: Before using the cmdlet to remove the volumes, ensure that the volume's data sources aren't in use (actively or inactively).
 
 ### DPM 2016 on Windows Server 2016 hangs
 
@@ -616,7 +616,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 ### Error 4387 might appear while installing DPM
 
-**Description**: While installing the Data Protection Manager, when you enter an SQL instance in the **Data Protection Manager Setup** > **Prerequisites check**> **Instance of SQL server** text box, error 4387 might appear.
+**Description**: While installing the Data Protection Manager, when you enter an SQL Instance in the **Data Protection Manager Setup** > **Prerequisites check**> **Instance of SQL server** text box, error 4387 might appear.
 
 **Workaround**: Perform the required actions as detailed in this [KB article](https://support.microsoft.com/en-in/help/956013/error-message-when-you-open-sql-server-configuration-manager-in-sql-se) and try the  DPM setup again.
 
@@ -640,7 +640,7 @@ The following sections summarize the release notes for DPM 2016 and include the 
 
 **Description**: If the volume's data sources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the data sources can be removed too.
 
-**Workaround**: Before using the cmdlet to remove the volumes, make sure the volume's data sources aren't in use (actively or inactively).
+**Workaround**: Before using the cmdlet to remove the volumes, ensure that the volume's data sources aren't in use (actively or inactively).
 
 
 ### DPM 2016 on Windows Server 2016 hangs
@@ -732,7 +732,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 ### Error 4387 might appear while installing DPM
 
-**Description**: While installing the Data Protection Manager, when you enter an SQL instance in the **Data Protection Manager Setup** > **Prerequisites check**> **Instance of SQL server** text box, error 4387 might appear.
+**Description**: While installing the Data Protection Manager, when you enter an SQL Instance in the **Data Protection Manager Setup** > **Prerequisites check**> **Instance of SQL server** text box, error 4387 might appear.
 
 **Workaround**: Perform the required actions as detailed in this [KB article](https://support.microsoft.com/en-in/help/956013/error-message-when-you-open-sql-server-configuration-manager-in-sql-se) and try the  DPM setup again.
 
@@ -765,7 +765,7 @@ Follow these steps to replace the existing report files:
 
     ![List of individual report files](media/release-notes/individual-report-files.png)
 
-4.	Select the report files that don't end with *Report*, right-click   **Option**, and then select **Manage**.
+4.	Select the report files that don't end with *Report*, select and hold **Option**, and then select **Manage**.
 
     ![Manage report files](media/release-notes/manage-report-files.png)
 

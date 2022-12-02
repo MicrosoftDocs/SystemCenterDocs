@@ -75,7 +75,7 @@ With DPM 2019, you can back up newer versions of workloads, as listed below:
 -	Exchange 2019
 -	SharePoint 2019
 -	VMware [vSphere 6.7 and 7.0](back-up-vmware.md#vmware-vsphere-67-and-70)
--	System Center Virtual Machine Manager 2019 [Learn more](dpm-protection-matrix.md)
+-	System Center Virtual Machine Manager 2019. [Learn more.](dpm-protection-matrix.md)
 
 ### Faster backups with Tiered storage using SSDs
 DPM 2016 introduced [Modern Backup Storage](./add-storage.md?preserve-view=true&view=sc-dpm-2016), improving storage utilization and performance. MBS uses ReFS as the underlying file system and is designed to make use of hybrid storage such as tiered storage.
@@ -256,9 +256,9 @@ The following information touches on the improvements for protecting VMs with DP
 
 ### Resilient Change Tracking (RCT)
 In Windows Server 2016, Hyper-V virtual hard disks have built-in change tracking. As a result, in case of a host outage or VM migration, change-tracking is automatically preserved. With RCT, backups:
-- **Are more reliable**: Consistency checks aren't required after VM migration.
-- **Are scalable**: More parallel backups and less storage overhead.
-- **Have improved performance**: Lower impact on the production fabric and faster backup.
+- **are more reliable**: Consistency checks aren't required after VM migration.
+- **are scalable**: More parallel backups and less storage overhead.
+- **have improved performance**: Lower impact on the production fabric and faster backup.
 
 #### Enabling RCT VM backup
 
@@ -279,7 +279,7 @@ Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have RC
 
 3. On the DPM 2016 server:
    - Stop protection of the VM and select **Retain Data**.
-   - In the DPM 2016 Administrator Console, click **Protection** > on the tool ribbon, click **New** to start the Create Protection Wizard. Go through the wizard and select **Refresh** to update the data sources.
+   - In the DPM 2016 Administrator Console, select **Protection** > on the tool ribbon, select **New** to start the Create Protection Wizard. Go through the wizard and select **Refresh** to update the data sources.
    - Select your VM and create a new protection group.
    - Delete the old VM's retained data once the retention range has expired.
 
@@ -333,34 +333,34 @@ To protect VMs on SOFS clusters, add the following machine accounts to the backu
 To add the machine accounts to the backup operator groups, run the following steps for each node in the SOFS cluster:
 
 1. Open the command prompt, and type **lusrmgr.msc** to open Local Users and Groups.
-2. In the Local Users and Groups dialog, click **Groups**.
-3. In the list of groups, right-click **Backup Operators** and select **Properties**.
+2. In the Local Users and Groups dialog, select **Groups**.
+3. In the list of groups, select and hold **Backup Operators** and select **Properties**.
 
     The **Backup Operators Properties** dialog opens.
-4. In the **Backup Operators Properties** dialog, click **Add**.
-5. In the **Select Users, Computers, Services Accounts, or Groups** dialog, click **Object Types**.
+4. In the **Backup Operators Properties** dialog, select **Add**.
+5. In the **Select Users, Computers, Services Accounts, or Groups** dialog, select **Object Types**.
     The **Object Types** dialog opens.
-6. In the **Object Types** dialog, select **Computers** and click **OK**.
+6. In the **Object Types** dialog, select **Computers** and select **OK**.
     The **Object Types** dialog closes.
-7. In the **Select Users, Computers, Service Accounts, or Groups** dialog, enter the name of the server or cluster and click **Check Names**.
+7. In the **Select Users, Computers, Service Accounts, or Groups** dialog, enter the name of the server or cluster and select **Check Names**.
 8. Once you have identified the computers, restart the node.
 
 
 To give permissions to the share
 
 1. On a server where the SOFS/SMB share is hosted, open **Server Manager** > **File and Storage Services** > **Shares**.
-2. Right-click the VM storage share and then click **Properties**.
-4. In the **Properties** dialog, on the left navigation menu, click **Permissions**.
-5. Click **Customize permissions** to open the Advanced Security Settings dialog.
-6. On the **Permissions** tab, click **Add**.
-7. Click **Select a Principal**.
-8. In the **Select User, Computer, Services Account, or Group** dialog, click **Object Types**.
-9. In the **Object Types** dialog, select **Computers** and click **OK**.
+2. Select and hold the VM storage share and then select **Properties**.
+4. In the **Properties** dialog, on the left navigation menu, select **Permissions**.
+5. Select **Customize permissions** to open the Advanced Security Settings dialog.
+6. On the **Permissions** tab, select **Add**.
+7. Select **Select a Principal**.
+8. In the **Select User, Computer, Services Account, or Group** dialog, select **Object Types**.
+9. In the **Object Types** dialog, select **Computers** and select **OK**.
 10. In the **Select User, Computer, Service Account, or Group** dialog, enter the name of the Hyper-V node or cluster name you want to have permission for.
-11. Click **Check Names** to resolve the name and click **OK**.
-12. In the **Permission Entry for Share** dialog, select **Full Control**  and click **OK**.
-13. In the **Advanced Security Settings for Share** dialog, click the **Share** tab and repeat steps 6-11 for the **Share** tab instead of the **Permissions** tab.
-14. When you've finished adding permissions for the servers, click **Apply**.
+11. Select **Check Names** to resolve the name and select **OK**.
+12. In the **Permission Entry for Share** dialog, select **Full Control**  and select **OK**.
+13. In the **Advanced Security Settings for Share** dialog, select the **Share** tab and repeat steps 6-11 for the **Share** tab instead of the **Permissions** tab.
+14. When you've finished adding permissions for the servers, select **Apply**.
 
     This prepares the VMs on SOFS shares for the backup process.
 
