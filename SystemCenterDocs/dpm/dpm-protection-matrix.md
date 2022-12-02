@@ -22,7 +22,7 @@ ms.author: jsuri
 
 ::: moniker-end
 
-This article details the workloads that DPM can back up.
+This article provides details of the workloads that DPM can back up.
 
 ::: moniker range="<sc-dpm-2019"
 Use the following matrix for DPM 2016 and Semi-Annual Channel releases: 1801 and 1807:
