@@ -68,7 +68,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 **SQL version** | **Supported**
 --- | ---
-**SQL Server 2022** | Y
+**[SQL Server 2022](https://www.microsoft.com/sql-server/sql-server-2022)** | Y
 **[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
 **[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
 
@@ -79,12 +79,12 @@ The following software is required for a full installation of Orchestrator on a 
 
 Orchestrator requires .NET Framework 4.5 or later to run, we recommend installing .NET Framework 4.7.2.
 
-The following versions of .NET Core and windows hosting bundle are supported for the Orchestrator Web API:
+Orchestrator Web API requires the following versions of .NET Core and Hosting Bundles:
 
 |SCO version|.NET Core|
 |---|---|
-|2022 RTM|[.NET Core 5 hosting bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true)|
-|2022 UR1|[.NET Core 6 hosting bundle](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-6.0.11-windows-hosting-bundle-installer)|
+|2022 RTM|[.NET Core 5 Hosting Bundle](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.17-windows-hosting-bundle-installer)|
+|2022 UR1|[.NET Core 6 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true)|
 
 ## Virtualization
 
