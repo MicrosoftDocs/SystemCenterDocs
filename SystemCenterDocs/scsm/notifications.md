@@ -116,7 +116,7 @@ To configure email notifications with modern authentication, follow these steps:
 1. Open Service Manager Console and navigate to **Notifications** > **Channels** > **Properties**. 
 2. On the **Configure E-mail Notification Channel** pop-up, select **Enable e-mail notifications**.
 3. Select **Add**. 
-4. On the **Edit SMPT Server** page, do the following:
+4. On the **Edit SMTP Server** page, do the following:
     1. **SMTP server (FQDN)**: Enter the SMTP server.
     1. **Port number**: Enter the port number
     1. **Authentication method**: Select **External E-mail Authentication** from the dropdown.
