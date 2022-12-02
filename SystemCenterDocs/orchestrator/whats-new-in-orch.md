@@ -17,7 +17,7 @@ ms.custom: intro-whats-new
 
 ::: moniker range="sc-orch-2022"
 
-This article details the new features supported in System Center 2022 - Orchestrator. Also details the new features in Orchestrator 2022 UR1.
+This article details the new features supported in System Center 2022 - Orchestrator and details the new features in Orchestrator 2022 UR1.
 
 ::: moniker-end
 
