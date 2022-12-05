@@ -22,7 +22,7 @@ ms.author: jsuri
 
 System Center Data Protection Manager (DPM) can use data deduplication.
 
-Data deduplication \(dedup\) finds and removes duplicated data in a volume  while ensuring data remains correct and complete.   Learn more about [deduplication planning](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831700(v=ws.11)).
+Data deduplication \(dedup\) finds and removes duplicated data in a volume  while ensuring data remains correct and complete. Learn more about [deduplication planning](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831700(v=ws.11)).
 
 -   Dedup reduces storage consumption and although the amount of redundancy for a set of data will depend on the workload and data type, typically backup data shows strong savings when dedup is used.
 
