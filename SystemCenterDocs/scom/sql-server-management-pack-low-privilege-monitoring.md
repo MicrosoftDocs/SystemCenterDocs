@@ -2,10 +2,10 @@
 ms.assetid: e357ab3b-45b3-417e-8a41-84c4cc66b4a0
 title: Low-privilege monitoring in Management Pack for SQL Server
 description: This article explains low-privilege monitoring
-author: VChernov
-ms.author: v-vchernov
+author: epomortseva
+ms.author: v-ekaterinap
 manager: evansma
-ms.date: 11/25/2022
+ms.date: 11/28/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -41,9 +41,9 @@ This section explains how to configure low-privilege agent monitoring.
 
 ### On Agents
 
-1. Grant the **SQLTaskAction** user and the **SQLMPLowPriv** group the **Read** permission at HKLM:\\Software\\Microsoft\\Microsoft SQL Server.
+1. Grant the **SQLTaskAction** user and the **SQLMPLowPriv** group the **Read** permission at `HKLM\Software\Microsoft\Microsoft SQL Server`.
 
-2. On each monitored instance, grant the **SQLMPLowPriv** group the **Read** permission at HKLM:\Software\Microsoft\Microsoft SQL Server\\[InstanceID]\MSSQLServer\Parameters.
+2. On each monitored instance, grant the **SQLMPLowPriv** group the **Read** permission at `HKLM\Software\Microsoft\Microsoft SQL Server\[InstanceID]\MSSQLServer\Parameters`.
 
 3. Add the **SQLTaskAction** and **SQLMonitor** users to the **EventLogReaders** local group.
 
@@ -59,6 +59,7 @@ This section explains how to configure low-privilege agent monitoring.
     - ROOT\Microsoft\SqlServer\ComputerManagement13 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement14 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement15 (if exists)
+    - ROOT\Microsoft\SqlServer\ComputerManagement16 (if exists)
 
 ### Extra Steps for Cluster SQL Server Instances
 
@@ -168,7 +169,7 @@ Take the following steps on an agent machine or database only if you want to all
 
     - Check Catalog (DBCC)
     - Check Database (DBCC)
-    - Check Disk (DBCC)” (invokes DBCC CHECKALLOC)
+    - Check Disk (DBCC) (invokes DBCC CHECKALLOC)
 
     ```sql
     USE [msdb]
@@ -369,6 +370,7 @@ To configure security for configurations with low-privilege accounts, perform th
     - ROOT\Microsoft\SqlServer\ComputerManagement13 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement14 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement15 (if exists)
+    - ROOT\Microsoft\SqlServer\ComputerManagement16 (if exists)
 
 8. Click **Security**.
 
@@ -479,21 +481,21 @@ Create a registry key to manage remote access to the registry.
 
 To create a key, perform the following steps:
 
-1. Open **Registry Editor** (Regedt32.exe) and locate the **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control** key.
+1. Open **Registry Editor** and locate the following key `HKLM\SYSTEM\CurrentControlSet\Control`.
 
 2. In the **Edit** menu, click **Add Key** and enter the following values:
 
     - **Key Name:** SecurePipeServers
     - **Class:** REG_SZ
 
-3. Locate the following key: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers'.
+3. Locate the following key `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers`.
 
 4. In the **Edit** menu, click **Add Key** and enter the following values:
 
     - **Key Name:** winreg
     - **Class:** REG_SZ
 
-5. Locate the following key: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg'.
+5. Locate the following key: `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg`.
 
 6. In the **Edit** menu, click **Add Key** and enter the following values:
 
@@ -501,7 +503,7 @@ To create a key, perform the following steps:
     - **Data Type:** REG_SZ
     - **String:** Registry Server
 
-7. Locate the following key: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg'.
+7. Locate the following key: `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg`.
 
 8. Right-click **winreg**, click **Permissions**, and edit the current permissions, or add users or groups you want to grant access to.
 
