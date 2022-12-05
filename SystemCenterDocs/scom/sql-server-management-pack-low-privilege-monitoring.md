@@ -169,7 +169,7 @@ Take the following steps on an agent machine or database only if you want to all
 
     - Check Catalog (DBCC)
     - Check Database (DBCC)
-    - Check Disk (DBCC)” (invokes DBCC CHECKALLOC)
+    - Check Disk (DBCC) (invokes DBCC CHECKALLOC)
 
     ```sql
     USE [msdb]
