@@ -2,10 +2,10 @@
 ms.assetid: 9550f943-bcc2-45dc-a866-9eae7b3b8b0c
 title: Monitoring configuration in Management Pack for SQL Server
 description: This section explains monitoring configurations in Management Pack for SQL Server
-author: VChernov
-ms.author: v-vchernov
+author: epomortseva
+ms.author: v-ekaterinap
 manager: evansma
-ms.date: 11/25/2022
+ms.date: 12/01/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -321,5 +321,44 @@ This monitor checks whether the configured [Run As Account](sql-server-managemen
 - ROOT\Microsoft\SqlServer\ComputerManagement13
 - ROOT\Microsoft\SqlServer\ComputerManagement14
 - ROOT\Microsoft\SqlServer\ComputerManagement15
+- ROOT\Microsoft\SqlServer\ComputerManagement16
 
 The monitor produces an alert in cases when there is no access to any of the above namespaces.
+
+## SQL Server Agent Jobs Monitoring
+
+Management Pack for SQL Server is capable of performing availability and performance monitoring Agent Jobs for SQL Server with the following workflows:
+
+- Last Runs Status monitor
+
+  This monitor checks all jobs on the SQL Agent and if any of the jobs did not completed successfully, the monitor changes its state to Warning. This does not generate an alert because there is an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled.
+
+  The monitor has the **Number of fails threshold** override, which indicates how many times a SQL Agent Job can fail before the monitor's state is changed to Warning. The override **Defines the Canceled status as Failed** could track the Cancelled job's last run status as a Failed.
+
+- Long Running Jobs monitor
+
+  This monitor checks for long running SQL Agent jobs. A Warning or Error alert will appear if a job has been running for longer than the configured thresholds - **Warning Threshold (minutes)** and **Critical Threshold (minutes)**.
+
+  By default, this monitor does not monitor jobs that have schedule type **Start automatically when SQL Server Agent starts** because these jobs often run until SQL Agent stops (i.e. continuously). Usually, SQL Server Replication uses such jobs, but in some cases, jobs with the **Start automatically when SQL Server Agent starts** schedule type may run for a relatively short interval. To monitor these jobs, override the parameter **Included continuously executed jobs** with a comma-delimited list of the job names. The job name in the list should meet the requirements of one of the following identifier classes:
+
+  - Regular
+    - Can contain any character except the comma sign (,) and double quote sign (").
+    - Should not start or end with any of the white-space characters.
+
+  - Delimited
+    - Can contain any characters and should be delimited by double quotes.
+    - Double quotes should be escaped by doubling them.
+  
+  Any name belonging to any of the classes above should be from 1 to 128 characters, excluding delimiter characters. Note that this monitor is disabled by default. Use overrides to enable it when necessary.
+
+- Job Duration monitor
+
+  This monitor checks all jobs on the SQL Agent and if any of the jobs takes longer than the specified threshold. A Warning or Error alert will appear if a job duration is longer than the configured thresholds - **Warning Threshold (minutes)** and **Critical Threshold (minutes)**. This does not generate an alert because there is an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled, or use the **Job Duration alert rule**.
+
+- Job Duration alert rule
+
+  This rule checks whether the execution time of any of your SQL Agent jobs has exceeded the specified threshold in minutes and throws an alert if the execution time has breached the threshold. Note that this rule is disabled by default. Use overrides to enable it when necessary.
+
+- Job Duration performance rule
+
+  This rule collects the duration in minutes of any of your SQL Agent jobs. Note that this rule is disabled by default. Use overrides to enable it when necessary.
