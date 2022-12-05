@@ -52,7 +52,7 @@ One of your first decisions is how to deploy DPM. You can deploy DPM:
 
 In all deployments you’ll need:
 
-- An SQL Server Instance, installed and running, to use for the DPM database. The instance can be co-located on the DPM server or remote.
+- A SQL Server Instance, installed and running, to use for the DPM database. The instance can be co-located on the DPM server or remote.
 - Disk to be used as dedicated space for DPM data storage.
 - DPM protection agent installed on computers and servers you want to protect using DPM.
 

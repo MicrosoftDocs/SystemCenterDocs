@@ -132,7 +132,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
        1.  To change the directory type: **cd /d *&lt;system drive&gt;*:\Program Files\Microsoft Data Protection Manager\DPM\bin**
 
-       2.  Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configure security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
+       2.  Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configures security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
 
 4. If you added the computer to the DPM server before you installed the agent, the  server begins to create backups for the protected computer. If you installed the agent before you added the computer to the DPM server, you must attach the computer before the DPM server begins to create backups.
 
