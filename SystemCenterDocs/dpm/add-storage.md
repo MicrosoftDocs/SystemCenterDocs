@@ -22,11 +22,11 @@ ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
 
 ::: moniker range="<=sc-dpm-1807"
 
-Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage.
+Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient workload-aware storage.
 
 - MBS is enabled automatically when you're running at least DPM 2016 on Windows Server 2016. If DPM is running on a version of Windows Server older than Windows Server 2016, it doesn't use MBS.
 - MBS provides intelligent storage for short-term backup to disk.  MBS provides faster disk backup and consumes less disk space. Without MBS, each data source needs two volumes, one for the initial backup and the other for delta changes.
-- MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology, [Learn more](https://techcommunity.microsoft.com/t5/system-center-blog/introducing-dpm-2016-modern-backup-storage/ba-p/351650).
+- MBS backups are stored on an ReFS disk. It uses ReFS block cloning and VHDX technology. [Learn more](https://techcommunity.microsoft.com/t5/system-center-blog/introducing-dpm-2016-modern-backup-storage/ba-p/351650).
 
 > [!NOTE]
 > DPM does not support deduplication on ReFS disk used for MBS backups.
@@ -34,18 +34,18 @@ Modern Backup Storage (MBS) was introduced in System Center Data Protection Mana
 DPM 2016 accepts volumes for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk. Use only a basic disk.
 
 While you can directly give a volume to DPM, you may face issues in extending the volume if a need arises later.
-To prepare DPM for future expansion, use the available disks to create a storage pool, then create volumes on the storage pool, and expose the volumes to DPM. These virtual volumes can then be extended when needed.
+To prepare DPM for future expansion, use the available disks to create a storage pool. Then create volumes on the storage pool, and expose the volumes to DPM. These virtual volumes can then be extended when needed.
 
 The remainder of this article provides the detail on how to add a volume and to expand it later.
 
 ## Setting up MBS
 
-Setting up MBS consists of the following procedures. Note that  you cannot attach locally created VHD (VHDX) files, and use them as storage on a physical DPM server.
+Setting up MBS consists of the following procedures. Note that you cannot attach locally created VHD (VHDX) files and use them as storage on a physical DPM server.
 
-1. Make sure you're running DPM 2016 or later on a VM running Windows Server 2016 or later.
+1. Ensure that you're running DPM 2016 or later on a VM running Windows Server 2016 or later.
 2. Create a volume. To create a volume on a virtual disk in a storage pool:
     - Add a disk to the storage pool
-    - Create a virtual disk from the storage pool, with layout set to Simple. You can then add additional disks, or extend the virtual disk.
+    - Create a virtual disk from the storage pool, with layout set to Simple. You can then add additional disks or extend the virtual disk.
     - Create volumes on the virtual disk.
 3. Add the volumes to DPM.
 4. Configure workload-aware storage.
@@ -68,11 +68,11 @@ Setting up MBS consists of the following procedures. Note that  you cannot attac
 
     ![Add additional disks](./media/add-storage/dpm2016-add-storage-3.png)
 
-5. Extend the virtual disk with the Simple layout, to reflect any physical disks you added.
+5. Extend the virtual disk with the Simple layout to reflect any physical disks you added.
 
     ![Extend virtual disks](./media/add-storage/dpm2016-add-storage-4.png)
 
-6. Now, create volumes on the virtual disk.
+6. Now create volumes on the virtual disk.
 
     ![Create volume](./media/add-storage/dpm2016-add-storage-5.png)
 
@@ -83,10 +83,10 @@ Setting up MBS consists of the following procedures. Note that  you cannot attac
 ## Add volumes to DPM storage
 
 
-1. In the DPM Management console > **Disk Storage**, click **Rescan**.
-2. In **Add Disk Storage**, click **Add**.
+1. In the DPM Management console > **Disk Storage**, select **Rescan**.
+2. In **Add Disk Storage**, select **Add**.
 3. After the volumes are added, you can give them a friendly name.
-4. Click **OK** to format the volumes to ReFS, so that DPM can use them as MBS.
+4. Select **OK** to format the volumes to ReFS so that DPM can use them as MBS.
 
     ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
 
@@ -133,52 +133,51 @@ After removing volume exclusion, rescan the storage. All volumes and mount point
 
 ## Backup storage migration
 
-Once all your backups are on MBS, there may be a need to migrate certain datasources from one volume to another. For example, scenarios where you need to upgrade storage, or when a volume is getting full. You can use PowerShell or the user interface to migrate datasources. The details can be found [in this blog entry](https://go.microsoft.com/fwlink/?linkid=861519).
+Once all your backups are on MBS, there may be a need to migrate certain data sources from one volume to another. For example, scenarios where you need to upgrade storage or when a volume is getting full. You can use PowerShell or the user interface to migrate data sources. The details can be found [in this blog entry](https://go.microsoft.com/fwlink/?linkid=861519).
 
-The migrating datasource should have all recovery points on Modern Storage. Migrating datasources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported.
+The migrating data source should have all recovery points on Modern Storage. Migrating data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported.
 Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. The scheduled jobs continue as configured. When the migration completes, any running jobs in the protection group are preempted.
 
 ## Custom size allocation
 
-DPM 2016 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together, as in the case of a file server, size calculation can take long time. With DPM, you can configure DPM to accept the volume size as default instead of calculating the size of each file. The corresponding registry key is "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage" with the Key, "EnableCustomAllocationOnReFSStorage" as a String set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
+DPM 2016 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together, as in the case of a file server, size calculation can take a long time. With DPM, you can configure DPM to accept the volume size as default instead of calculating the size of each file. The corresponding registry key is "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage" with the Key, "EnableCustomAllocationOnReFSStorage" as a String set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
 
 
 ::: moniker-end
 
 ::: moniker range=">=sc-dpm-2019"
 
-Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage. DPM 2019 introduces further performance improvements with MBS resulting in 50-70% faster backup with Windows Server 2019.
+Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient workload-aware storage. DPM 2019 introduces further performance improvements with MBS, resulting in 50-70% faster backup with Windows Server 2019.
 
 > [!NOTE]
 > We recommend you to deploy DPM 2019 (using tiered volumes) on Windows Server 2019 to achieve enhanced backup performances.
 
 - MBS is enabled automatically when you're running at least DPM 2016 on Windows Server 2016. If DPM is running on a version of Windows Server earlier than Windows Server 2016, it doesn't use MBS.
--   MBS provides intelligent storage for short-term backup to disk. MBS provides faster disk backup, consuming less disk space. Without MBS, each data source needs two volumes, one for the initial backup and the other for delta changes.
-- MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology. [Learn more](https://techcommunity.microsoft.com/t5/system-center-blog/introducing-dpm-2016-modern-backup-storage/ba-p/351650).
-- With DPM 2019 and later, you can use tiered volumes for DPM native storage which delivers 50-70% faster backups
+- MBS provides intelligent storage for short-term backup to disk. MBS provides faster disk backup, consuming less disk space. Without MBS, each data source needs two volumes, one for the initial backup and the other for delta changes.
+- MBS backups are stored on an ReFS disk. It uses ReFS block cloning and VHDX technology. [Learn more](https://techcommunity.microsoft.com/t5/system-center-blog/introducing-dpm-2016-modern-backup-storage/ba-p/351650).
+- With DPM 2019 and later, you can use tiered volumes for DPM native storage, which delivers 50-70% faster backups.
 
 > [!NOTE]
 > DPM does not support deduplication on ReFS disk used for MBS backups.
 
-DPM 2019 accepts volumes/disks for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk, use only a basic disk.
+DPM 2019 accepts volumes/disks for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk; use only a basic disk.
 
 > [!NOTE]
 > If the physical disk is or will be larger than 2TB, the disk must be converted to GPT before creating the volume(s) for DPM.
 
-You can directly give a volume to DPM, however, you may have issues in extending the volume if a need arises later. You can create additional volumes using storage pools, which could be exposed to DPM and extended as needed. The following sections provide the details on how to create a tiered volume, add a volume to DPM, and expand it later
+You can directly give a volume to DPM; however, you may have issues in extending the volume if a need arises later. You can create additional volumes using storage pools, which could be exposed to DPM and extended as needed. The following sections provide the details on how to create a tiered volume, add a volume to DPM, and expand it later.
 
 
 ## Set up MBS with Tiered Storage
 
-DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization and performance. MBS uses ReFS as underlying filesystem. MBS is designed to make use of hybrid storage such as tiered storage. To achieve the scale and performance claimed by MBS, we recommend using a small percentage (4% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with HDD for DPM native storage.
+DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization and performance. MBS uses ReFS as the underlying filesystem. MBS is designed to make use of hybrid storage, such as tiered storage. To achieve the scale and performance claimed by MBS, we recommend using a small percentage (4% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with HDD for DPM native storage.
 
 Once you configure tiered storage, the ReFS file system has the intelligence to store File System Metadata on the SSD tier. This improves the overall backup job time significantly. There is no further configuration required while configuring the protection groups, etc.
 
 > [!NOTE]
 > - Tiering is recommended for faster backups. However, this is not a mandatory requirement to configure DPM storage.
->- You cannot attach locally created VHD (VHDX) files, and use them as storage on a physical DPM server. Make sure you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.  
-> - When deploying DPM in a virtual machine, DPM 2019 can be deployed in a VM running on Windows Server 2016 or Windows Server 2019. For best performance we strongly recommend DPM 2019 installed on Windows 2019 with the latest Windows update installed.  
-
+>- You cannot attach locally created VHD (VHDX) files and use them as storage on a physical DPM server. Ensure that you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.  
+> - When deploying DPM in a virtual machine, DPM 2019 can be deployed in a VM running on Windows Server 2016 or Windows Server 2019. For best performance, we strongly recommend DPM 2019 installed on Windows 2019 with the latest Windows update installed.  
 
 
 ## Prerequisites
@@ -191,13 +190,13 @@ The tiered storage is configured using [Windows Storage Spaces](/windows-server/
 |HBA considerations|- Simple host bus adapters (HBAs) that do not support RAID functionality are recommended <br><br> - If RAID-capable, HBAs must be in non-RAID mode with all RAID functionality disabled <br><br> - Adapters must not abstract the physical disks, cache data, or obscure any attached devices. This includes enclosure services that are provided by attached just-a-bunch-of-disks (JBOD) devices.|Storage Spaces is compatible only with HBAs where you can completely disable all RAID functionality.|
 
 > [!NOTE]
-> To configure tiered storage, Windows Storage Spaces requires minimum SSD size of 32 GB.
+> To configure tiered storage, Windows Storage Spaces requires a minimum SSD size of 32 GB.
 
-For more information on prerequisites for using Storage Spaces on a stand-alone server, see [Prerequisites to use Storage Spaces on a stand-alone server](/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
+For more information on prerequisites for using Storage Spaces on a standalone server, see [Prerequisites to use Storage Spaces on a stand-alone server](/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
 ## Supported topology
 
-To configure tiered storage, the storage can be directly attached to the DPM server or it can be from the external storage like SAN. The combination of directly attached storage and external storage can also be used.
+To configure tiered storage, the storage can be directly attached to the DPM server or it can be from the external storage like SAN. A combination of directly attached storage and external storage can also be used.
 
 Here are the possible storage combinations that are supported in both physical DPM server or virtual DPM Server scenario.
 
@@ -208,16 +207,16 @@ Here are the possible storage combinations that are supported in both physical D
 
 > [!NOTE]
 > - For DPM running on virtual machines, configuring tiered storage using Windows Storage Spaces is supported.
-> - Hyper-V host presents both, the virtual SSD and HHD to the Virtual machine.
-> - Virtual SSD should be carved out of physical SSD which could be directly attached to the Hyper-V host or from connected external storage.  
+> - Hyper-V host presents both the virtual SSD and HHD to the Virtual machine.
+> - Virtual SSD should be carved out of physical SSD, which could be directly attached to the Hyper-V host or from connected external storage.  
 
 ![Physical server deployment](./media/add-storage/physical-server-deployment.png)
 
 ## Resiliency
 
-DPM supports all of the three resiliency types, supported by Windows Storage spaces. To configure Mirror or Parity mode resiliency for tiered volume, multiple SSDs are required along with HDDs. When you configure simple resiliency type using a single SSD option, there might be data loss if the SSD becomes unavailable.
+DPM supports all of the three resiliency types supported by Windows Storage spaces. To configure Mirror or Parity mode resiliency for tiered volume, multiple SSDs are required along with HDDs. When you configure simple resiliency type using a single SSD option, there might be data loss if the SSD becomes unavailable.
 
-The below chart highlights some pros and cons of the three types of resiliency, supported by Windows Storage Spaces.
+The chart below highlights some pros and cons of the three types of resiliency supported by Windows Storage Spaces.
 
 | TYPE | PRO | CON | Min Disks |
 | --- | --- | --- | --- |
@@ -225,13 +224,13 @@ The below chart highlights some pros and cons of the three types of resiliency, 
 | Mirror | - Increased reliability.<br><br> - Greater data throughput and lower access latency than parity. <br><br> - Stripes the data across multiple physical drives. Can be configured for 2 or 3 copies of data. | - Reduced capacity (50%). <br><br> - Not supported on Iscsi or FC connected SAN. | 2 or 5 |
 | Parity | - Stripes data and parity information across physical disks. <br><br> - Increased reliability. <br><br> - Increases resiliency through journaling. | - Reduced capacity, but not as much as mirroring. <br><br> - Not supported on Iscsi or FC connected SAN.<br><br> -  Slightly reduced performance. | 3 |
 
-For more information to help plan for the number of physical disks and the desired resiliency type for a stand-alone server deployment, use the guidelines documented [here](/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
+For more information to help plan for the number of physical disks and the desired resiliency type for a standalone server deployment, use the guidelines documented [here](/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
 ## Configure DPM storage
 
 Windows Storage Spaces allows you to pool multiple physical disks into one logical drive. It provides an easy way to create software-defined storage using a server's local storage resources.
 
-Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in the sequence, as listed below:
+Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in the sequence listed below:
 
 >[!NOTE]
 >  In case you wish to modify your existing storage to tiered storage, migrate your current backups to a temporary volume using [volume migration](volume-to-volume-migration.md).
@@ -253,14 +252,14 @@ Use the following procedures to prepare physical disks and create Windows storag
 Based on the resiliency option that you have selected, calculate the number of HDDs and SSDs required. Initialize the new disks that are attached to the server first, prior to adding the disks to the storage pool.
 
 >[!NOTE]
-> The disks that are more than 2 TB in size, will be converted to GPT disks.
+> The disks that are more than 2 TB in size will be converted to GPT disks.
 
 To Initialize the disks, follow these steps:
 
 1. Open  **Server Manager**.
-2. Click  **File and Storage Services**.
-3. Click  **Volumes** and then click **Disks Pools**.
-4. Right-click the disks and select **Initialize**.
+2. Select  **File and Storage Services**.
+3. Select **Volumes** and then select **Disks Pools**.
+4. Select and hold the disks and select **Initialize**.
 5. Select **Yes** to initialize the disk.
 The disk gets converted to GPT disk in case the disk size is more than 2 TB.
 6. Repeat the steps for the remaining disks to initialize.
@@ -269,7 +268,7 @@ The disk gets converted to GPT disk in case the disk size is more than 2 TB.
 
 #### Check Primordial pool
 
-By default, available disks are included in a pool that is named as **Primordial** pool. If no Primordial pool is listed under the *Storage Pools*, this indicates that the storage does not meet the requirements for storage spaces. Make sure that the disks meet the requirements that are outlined in the [prerequisites](#prerequisites) section.
+By default, the available disks are included in a pool that is named as **Primordial** pool. If no Primordial pool is listed under the *Storage Pools*, this indicates that the storage does not meet the requirements for storage spaces. Ensure that the disks meet the requirements that are outlined in the [prerequisites](#prerequisites) section.
 
 Run the following cmdlet to view the physical disks available in the Primordial pool:
 
@@ -297,7 +296,7 @@ New-StoragePool –FriendlyName DPMPool –StorageSubsystemFriendlyName (Get-Sto
 
 #### Set MediaType to SSD or HDD
 
-By default, Windows automatically detects the type of disk that is attached, and lists it as either an SSD or HDD. In case the *MediaType* is set as *Unspecified*, use the following cmdlet to set the appropriate *MediaType* manually.
+By default, Windows automatically detects the type of disk that is attached and lists it as either an SSD or HDD. In case the *MediaType* is set as *Unspecified*, use the following cmdlet to set the appropriate *MediaType* manually.
 
 > [!NOTE]
 > It is important that you identify the disk correctly (SSD/HDD) and set the *MediaType* accordingly. You can use the size of the disk as one of the identifiers.
@@ -312,7 +311,7 @@ By default, Windows automatically detects the type of disk that is attached, and
 
    ![Set Media Type](./media/add-storage/set-mediatype-1.png)
 
-2. In the above example, assign the MediaType as SSD to the disk with DeviceID as 1 and assign HDD to the disks with DeviceID as 2,3 and 4.
+2. In the above example, assign the MediaType as SSD to the disk with DeviceID as 1 and assign HDD to the disks with DeviceID as 2,3, and 4.
 
     To set the **MediaType**, run the following cmdlets:
 
@@ -352,14 +351,14 @@ Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 
 ## Create tiered storage volume
 
-You can configure tiered storage volume in the following methods:
+You can configure tiered storage volume using the following methods:
 
--	[Simple volume](#create-simple-tiered-volume-no-resiliency) – recommended when you are using storage from the SAN device or using a virtual machine. The resiliency should be provided by the underlying storage.
-- [Resilient volume](#create-resilient-tiered-volume) – supported when you are using only locally attached storage (JBOD). Ensure that resiliency is not configured at the storage level.
+-	[Simple volume](#create-simple-tiered-volume-no-resiliency) – Recommended when you are using storage from the SAN device or using a virtual machine. The resiliency should be provided by the underlying storage.
+- [Resilient volume](#create-resilient-tiered-volume) – Supported when you are using only locally attached storage (JBOD). Ensure that resiliency is not configured at the storage level.
 
-Before creating the tiered storage, you need to plan the column size.
+Before creating tiered storage, you need to plan the column size.
 
-- The column size determines how the data is written across the physical disks in the storage pool, and also decides the number of physical disks that need to be added to the storage pool before a virtual disk can be expanded, later.
+- The column size determines how the data is written across the physical disks in the storage pool and also decides the number of physical disks that need to be added to the storage pool before a virtual disk can be expanded later.
 - The higher the column size (up to 8), the better the overall performance. If you need to add physical disks later, it needs to be in multiples of the column size.
 - By default, when you create the virtual disk or volume, the column size is automatically determined based on the number of disks available in the storage pool.
 - The default setting is used while creating new virtual disk or volume using Server Manager or when you don't specify the column size while using _New-StorageTier_ cmdlet.
@@ -391,7 +390,7 @@ Before creating the tiered storage, you need to plan the column size.
 
 ### Create Simple tiered volume (No Resiliency)
 
-To create simple tiered volume (no resiliency), follow the steps below.
+To create a simple tiered volume (no resiliency), follow the steps below.
 
 1. Create an SSD tier by running the following cmdlet:
 
@@ -413,12 +412,12 @@ To create simple tiered volume (no resiliency), follow the steps below.
     ![Create HDD Tier](./media/add-storage/create-hdd-tier-1.png)
 
 
-3. Create new volume using the SSD tier and HDD tier
+3. Create a new volume using the SSD tier and HDD tier
 
     > [!NOTE]
-    > Use the storage tier size slightly lower than the actual size as it may exceed the physical capacity of the pool. You can resize (extend) the tier later, by reviewing the details in [extend tiered volume](extend-tiered-volume.md).
+    > Use the storage tier size slightly lower than the actual size as it may exceed the physical capacity of the pool. You can resize (extend) the tier later by reviewing the details in [extend tiered volume](extend-tiered-volume.md).
 
-    Run the following cmdlet to create new volume using SSD tier and HDD tier:
+    Run the following cmdlet to create a new volume using SSD tier and HDD tier:
 
     ```PowerShell
     New-Volume -StoragePoolFriendlyName DPMPool -FriendlyName DPMVol -FileSystem ReFS -StorageTierFriendlyNames SSDTier,HDDTier -StorageTierSizes 745GB,14TB
@@ -428,7 +427,7 @@ To create simple tiered volume (no resiliency), follow the steps below.
 
     ![SSD and HDD Tier](./media/add-storage/ssd-hdd-tier-1.png)
 
-4.  Run the following cmdlet to  verify the performance tier and capacity tier, used for the newly created volume:
+4.  Run the following cmdlet to verify the performance tier and capacity tier used for the newly created volume:
 
     ```PowerShell
     Get-StorageTier
@@ -443,16 +442,16 @@ To create simple tiered volume (no resiliency), follow the steps below.
 
 ### Create Resilient tiered volume
 
-In the following example, the SSD tier is configured with Mirror resiliency and HDD tier is configured with Parity resiliency. In this configuration, a single SSD and /or a single HDD can fail, without experiencing data loss.
+In the following example, the SSD tier is configured with Mirror resiliency and HDD tier is configured with Parity resiliency. In this configuration, a single SSD and/or a single HDD can fail without experiencing data loss.
 
-Ensure that the [minimum disk requirement](#resiliency) is met for the required resiliency type, and the respective tier.
+Ensure that the [minimum disk requirement](#resiliency) is met for the required resiliency type and the respective tier.
 
 > [!NOTE]
-> Configuration of resilient volume is only supported when you are using locally attached disks (JBOD). Review the [Pre-requisites](#prerequisites) section for more details.
+> The configuration of resilient volume is only supported when you are using locally attached disks (JBOD). Review the [Pre-requisites](#prerequisites) section for more details.
 
-To create resilient tiered volume, use the following steps:
+To create a resilient tiered volume, use the following steps:
 
-1. Create an SSD tier with resiliency type as **Mirror**, by running the following cmdlet:
+1. Create an SSD tier with resiliency type as **Mirror** by running the following cmdlet:
 
     ```PowerShell
     New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName SSDMirrorTier -MediaType SSD -ResiliencySettingName Mirror -NumberOfColumns 1 -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
@@ -461,7 +460,7 @@ To create resilient tiered volume, use the following steps:
     **Example**:
     ![Resiliency Type Mirror](./media/add-storage/ps-resiliency-type-mirror.png)
 
-2. Create an HDD Tier with resiliency type as **Parity**, by running the following cmdlet:
+2. Create an HDD tier with resiliency type as **Parity** by running the following cmdlet:
 
     ```PowerShell
       New-StorageTier -StoragePoolFriendlyName DPMPool -FriendlyName HDDParityTier -MediaType HDD -ResiliencySettingName Parity -NumberOfColumns 3 -PhysicalDiskRedundancy 1 -FaultDomainAwareness PhysicalDisk
@@ -472,7 +471,7 @@ To create resilient tiered volume, use the following steps:
 3. Create a new volume using the resilient SSD tier and HDD tier.
 
       > [!NOTE]
-      > Use the storage tier size slightly lower than the actual size as it might exceed the physical capacity of the pool. You can resize (extend) the tier later, by reviewing the details in [extend tiered volume](extend-tiered-volume.md).
+      > Use the storage tier size slightly lower than the actual size as it might exceed the physical capacity of the pool. You can resize (extend) the tier later by reviewing the details in [extend tiered volume](extend-tiered-volume.md).
 
     Run the following cmdlet to create a new volume:
 
@@ -480,9 +479,9 @@ To create resilient tiered volume, use the following steps:
         New-Volume -StoragePoolFriendlyName DPMPool -FriendlyName DPMVOL -FileSystem ReFS -StorageTierFriendlyNames SSDMirrorTier, HDDParityTier -StorageTierSizes 745GB, 8TB
     ```  
     **Example:**
-    ![Create New Volume](./media/add-storage/ps-create-new-volume.png)
+    ![Screenshot of Create New Volume command-let.](./media/add-storage/ps-create-new-volume.png)
 
-4. Run the following cmdlet to verify the performance tier and capacity tier, used for the newly created volume:
+4. Run the following cmdlet to verify the performance tier and capacity tier used for the newly created volume:
 
       ```PowerShell
        Get-StorageTier
@@ -490,21 +489,21 @@ To create resilient tiered volume, use the following steps:
 
     **Example:**
 
-    ![Get StorageTier](./media/add-storage/ps-get-storage-tier.png)
+    ![Screenshot showing the end result of Get StorageTier command-let.](./media/add-storage/ps-get-storage-tier.png)
 
     The following image displays the end result as seen in Server Manager. The volume is ready to get added to the DPM storage pool. You can view the volume in *Windows disk management* as well.
 
-    ![Storage Pools](./media/add-storage/storage-pools.png)
+    ![Screenshot showing Storage Pools.](./media/add-storage/storage-pools.png)
 
 
 ## Add volumes to DPM storage
 
 Follow these steps:
 
-1. In the DPM Management console \> **Disk Storage** , click **Rescan**.
-2. In **Add Disk Storage** , click **Add**.
+1. In the DPM Management console \> **Disk Storage** , select **Rescan**.
+2. In **Add Disk Storage** , select **Add**.
    After the volumes are added, you can give them a friendly name.
-3. Click **OK** to format the volumes to ReFS, so DPM can use them as MBS.
+3. Select **OK** to format the volumes to ReFS, so that DPM can use them as MBS.
 
     ![Add volume to Disk Storage](./media/add-storage/dpm2016-add-storage-7.png)
 
@@ -580,19 +579,19 @@ For Example, to exclude F:\ and C:\MountPoint1, use these steps:
     ```PowerShell
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
     ```
-2. Rescan the storage through UI, or use *Start-DPMDiskRescan* cmdlet.
+2. Re-scan the storage through UI or use *Start-DPMDiskRescan* cmdlet.
 
     The configured volumes and mountpoints are excluded.
-3. To remove volume exclusion, run the following cmdlet:
+3. To remove the volume exclusion, run the following cmdlet:
     ```PowerShell
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion   
     ```
-After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
+After removing volume exclusion, re-scan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
 
 ## Custom size allocation
 
-DPM 2019 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together, as in the case of a file server, size calculation can take long time.
+DPM 2019 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together, as in the case of a file server, size calculation can take a long time.
 
-With DPM 2016 and later, you can configure DPM to accept the volume size as default, instead of calculating the size of each file. The corresponding registry key is *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage* with the Key, *EnableCustomAllocationOnReFSStorage* as a string, set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
+With DPM 2016 and later, you can configure DPM to accept the volume size as default instead of calculating the size of each file. The corresponding registry key is *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage* with the Key, *EnableCustomAllocationOnReFSStorage* as a string, set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
 
 ::: moniker-end
