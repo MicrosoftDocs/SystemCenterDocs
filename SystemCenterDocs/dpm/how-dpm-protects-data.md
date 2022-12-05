@@ -90,7 +90,7 @@ Data that exists on a file server and which needs to be protected as a flat file
 
 Data that exists on an application server and which requires DPM to be aware of the application qualifies as application data, such as Exchange storage groups, SQL Server databases, Windows SharePoint Services farms, and Virtual Servers.
 
-Each data source is presented in the DPM Administrator Console according to the type of protection you can select for that data source. For example, in the Create New Protection Group Wizard, when you expand a server that contains files and is also running a Virtual Server and an instance of an SQL Server, the data sources are treated as follows:
+Each data source is presented in the DPM Administrator Console according to the type of protection you can select for that data source. For example, in the Create New Protection Group Wizard, when you expand a server that contains files and is also running a Virtual Server and an instance of a SQL Server, the data sources are treated as follows:
 
 - If you expand All Shares or All Volumes, DPM displays the shares and volumes on that server and will protect any data source selected in either of those nodes as file data.
 
