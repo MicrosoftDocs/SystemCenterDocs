@@ -34,7 +34,7 @@ You'll set up the agent as follows:
 
 -   If the computer isn't behind a firewall or you've configured firewall exceptions to allow access, you can [install the agent from the DPM console](#BKMK_Console).
 
--   Alternatively, if you don't have access through the firewall, the computer you want to protect is in a workgroup or untrusted domain, or you simply need to use a different installation method, you can [Install the agent manually](#BKMK_Manual) and then [Attach the agent](#BKMK_Attach).
+-   If you don't have access through the firewall, the computer you want to protect is in a workgroup or untrusted domain, or you need to use a different installation method, you can [Install the agent manually](#BKMK_Manual) and then [Attach the agent](#BKMK_Attach).
 
 ## Set up firewall exceptions
 For a protection agent to communicate with the DPM server through a firewall, firewall exceptions are required.
@@ -43,7 +43,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of the SQL
 
 |Protocol|Port|Details|
 |------------|--------|-----------|
-|DCOM|135/TCP<br />Dynamic|The DPM control protocol uses DCOM. DPM issues commands to the protection agent by invoking DCOM calls on the agent. The protection agent responds by invoking DCOM calls on the DPM server.<br /><br />TCP port 135 is the DCE endpoint resolution point used by DCOM.<br /><br />By default, DCOM assigns ports dynamically from the TCP port range of 49152 through 65535. However, you can configure this range by using Component Services.<br /><br />Note that for DPM-Agent communication, you must open the upper ports 49152-65535. To open the ports, perform the following steps:<br /><br />1.  In IIS 7.0 Manager, in the **Connections** pane, select the server-level node in the tree.<br />2.  Double-click the **FTP Firewall Support** icon in the list of features.<br />3.  Enter a range of values for the **Data Channel Port Range**.<br />4.  After you enter the port range for your FTP service, in the **Actions** pane, select **Apply** to save your configuration settings.|
+|DCOM|135/TCP<br />Dynamic|The DPM control protocol uses DCOM. DPM issues commands to the protection agent by invoking DCOM calls on the agent. The protection agent responds by invoking DCOM calls on the DPM server.<br /><br />TCP port 135 is the DCE endpoint resolution point used by DCOM.<br /><br />By default, DCOM assigns ports dynamically from the TCP port range of 49152 through 65535. However, you can configure this range by using Component Services.<br /><br />For DPM agent communication, you must open the upper ports 49152-65535. To open the ports, perform the following steps:<br /><br />1.  In IIS 7.0 Manager, in the **Connections** pane, select the server-level node in the tree.<br />2.  Double-click the **FTP Firewall Support** icon in the list of features.<br />3.  Enter a range of values for the **Data Channel Port Range**.<br />4.  After you enter the port range for your FTP service, in the **Actions** pane, select **Apply** to save your configuration settings.|
 |TCP|5718/TCP<br />5719/TCP|The DPM data channel is based on TCP. Both DPM and the protected computer initiate connections to enable DPM operations, such as synchronization and recovery.<br /><br />DPM communicates with the agent coordinator on port 5718 and with the protection agent on port 5719.|
 |DNS|53/UDP|Used between DPM and the domain controller and between the protected computer and the domain controller for host name resolution.|
 |Kerberos|88/UDP 88/TCP|Used between DPM and the domain controller and between the protected computer and the domain controller for authentication of the connection endpoint.|
@@ -62,15 +62,15 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of the SQL
 
     -   The first time you use the wizard, DPM queries Active Directory to get a list of available computers. After the first installation, DPM stores the list of computers in its database, which is updated once every day by the auto-discovery process.
 
-    -   To find a computer in another domain that has a two-way trust relationship with the domain that the DPM server is located in, you must type the fully qualified domain name (FQDN) of the computer that you want to protect (for example, *&lt;Computer1&gt;.Domain1.contoso.com*, where *Computer1* is the name of the computer that you want to protect, and *Domain1.contoso.com* is the domain to which the target computer belongs.
+    -   To find a computer in another domain that has a two-way trust relationship with the domain that the DPM server is located in, you must type the fully qualified domain name (FQDN) of the computer that you want to protect. For example, *&lt;Computer1&gt;.Domain1.contoso.com*, where *Computer1* is the name of the computer that you want to protect and *Domain1.contoso.com* is the domain to which the target computer belongs.
 
-    -   The **Advanced** button page is enabled only when there is more than one version of a protection agent available for installation on the computers. You can use this option to install a previous version of the protection agent that was installed before you upgraded DPM server to a more recent version.
+    -   The **Advanced** button page is enabled only when there's more than one version of a protection agent available for installation on the computers. You can use this option to install a previous version of the protection agent that was installed before you upgraded DPM server to a more recent version.
 
 4.  On the **Enter Credentials** page, type the username and password for a domain account that is a member of the local Administrators group on all selected computers.
 
-    -   In the **Domain** box, accept or type the domain name of the user account that you are using to install the protection agent on the target computer. This account may belong to the domain that the DPM server is located in or to a domain that has a two-way trust relationship with the domain that the DPM server is located in.
+    -   In the **Domain** box, accept or type the domain name of the user account that you're using to install the protection agent on the target computer. This account may belong to the domain that the DPM server is located in or to a domain that has a two-way trust relationship with the domain that the DPM server is located in.
 
-    -   If you're installing a protection agent on a computer across a trusted domain, enter your current domain user credentials. You can be a member of any domain that has a two-way trust relationship with the domain that the DPM server and you must be member of the local Administrators group on all selected computers on which you want to install an agent.
+    -   If you're installing a protection agent on a computer across a trusted domain, enter your current domain user credentials. You can be a member of any domain that has a two-way trust relationship with the domain that the DPM server is located in, and you must be member of the local Administrators group on all selected computers on which you want to install an agent.
 
     -   If you select a node in a cluster, DPM detects all additional nodes in the cluster and displays the **Select Cluster Nodes** page.
 
@@ -80,16 +80,16 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of the SQL
 
     -   If you select to restart the computers later, the protection agent installation status isn't refreshed automatically on the **Agents** tab in the **Management** task area after the computer restarts, and you'll need to select **Refresh Information**.
 
-    -   Note that you don't need to restart the computer if you are installing a protection agent on another DPM server.
+    -   You don't need to restart the computer if you're installing a protection agent on another DPM server.
 
-    -   If any of the computers that you selected are nodes in a cluster, an additional **Choose Restart Method** page appears that you can use to select the method to restart the clustered computers. You'll need to install a protection agent on all the nodes in a cluster to successfully protect the clustered data. The computers must be restarted before you can start protecting data. As time is required to start services, it might take a few minutes after a restart before DPM can contact the agent on the cluster.
+    -   If any of the computers that you selected are nodes in a cluster, an additional **Choose Restart Method** page appears, which you can use to select the method to restart the clustered computers. You'll need to install a protection agent on all the nodes in a cluster to successfully protect the clustered data. The computers must be restarted before you can start protecting data. As time is required to start services, it might take a few minutes after a restart before DPM can contact the agent on the cluster.
 
-    -   DPM will not automatically restart a computer that belongs to a Microsoft Cluster Server (MSCS) cluster. You must manually restart computers in an MSCS cluster.
+    -   DPM won't automatically restart a computer that belongs to a Microsoft Cluster Server (MSCS) cluster. You must manually restart computers in an MSCS cluster.
 
 7.  On the **Summary** page, select **Install** to begin the installation. If the EULA appears, accept it for the installation to start. On the **Task** tab of the installation page, you can see whether the installation is successful. You can select **Close** before the wizard is finished and monitor the installation progress in the **Agents** tab in the **Management** task area. If the installation is unsuccessful, you can view the alerts in the **Monitoring** task area on the **Alerts** tab.
 
 >  [!NOTE]
->  After you install a protection agent on a computer that is part of a Windows SharePoint Services farm, each of the computers in the farm will not appear as protected computers on the **Agents** tab in the **Management** task area, only the computer that you selected. However, if the Windows SharePoint Services farm has data on the selected computer, DPM protects the data on all of the computers in the farm, provided all of them have the protection agent installed.
+>  After you install a protection agent on a computer that is part of a Windows SharePoint Services farm, each of the computers in the farm won't appear as protected computers on the **Agents** tab in the **Management** task area, only the computer that you selected. However, if the Windows SharePoint Services farm has data on the selected computer, DPM protects the data on all of the computers in the farm, provided all of them have the protection agent installed.
 
 ## <a name="BKMK_Manual"></a>Install the agent manually
 
@@ -129,7 +129,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of the SQL
 
        1.  To change the directory type: **cd /d *&lt;system drive&gt;*:\Program Files\Microsoft Data Protection Manager\DPM\bin**
 
-       2.  Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configures security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
+       2.  Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configures the security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
 
 4. If you added the computer to the DPM server before you installed the agent, the  server begins to create backups for the protected computer. If you installed the agent before you added the computer to the DPM server, you must attach the computer before the DPM server begins to create backups.
 
@@ -148,7 +148,7 @@ Use these steps:
 
       - `netsh advfirewall firewall add rule name=DPMRA_DCOM_135 dir=in action=allow protocol=TCP localport=135 profile=Any`
 
-2.  On the primary domain controller, create and then populate the following security groups, where the protected server name is the name of the RODC on which you plan to install the protection agent:
+2.  On the primary domain controller, create and populate the following security groups (where the protected server name is the name of the RODC on which you plan to install the protection agent):
 
       - Create a security group named **DPMRADCOMTRUSTEDMACHINES$PSNAME**, and then add the DPM server machine account as a member.
 
@@ -208,6 +208,6 @@ After you've installed the DPM agent manually, you'll need to attach the agent t
 
     -   To add multiple computers by using a text file, select the **Add From File** button, and in the **Add From File** dialog box, type the location of the text file or select **Browse** to navigate to its location.
 
-4.  On the **Enter Credentials** page, type the username and password for a domain account that is a member of the local Administrators group on all selected computers. In the **Domain** box, accept or type the domain name of the user account that you are using to install the protection agent on the target computer. This account may belong to the domain that the DPM server is located in or to a trusted domain. If you are installing a protection agent on a computer across a trusted domain, enter your current domain user credentials. You can be a member of any trusted domain, and you must be a member of the local Administrators group on all selected computers that you want to protect.
+4.  On the **Enter Credentials** page, type the username and password for a domain account that is a member of the local Administrators group on all selected computers. In the **Domain** box, accept or type the domain name of the user account that you're using to install the protection agent on the target computer. This account may belong to the domain that the DPM server is located in or to a trusted domain. If you're installing a protection agent on a computer across a trusted domain, enter your current domain user credentials. You can be a member of any trusted domain, and you must be a member of the local Administrators group on all selected computers that you want to protect.
 
 5.  On the **Summary** page, select **Attach**.

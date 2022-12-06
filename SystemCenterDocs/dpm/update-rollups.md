@@ -82,7 +82,7 @@ Use the following procedure to check if an update rollup is successfully install
 
 2. Verify that an update entry was created after the update rollup was installed.
 
-   For example, the 2019 update rollup 2 was released as 4563392. You should be able to see this detail under **View installed updates** if you have installed this update rollup and if it was successfully installed.
+   For example, the 2019 update rollup 2 was released as 4563392. You should be able to see this detail under **View installed updates** if you've installed this update rollup and if it was successfully installed.
 
 3. Verify that the binary's version has the correct build number. 
 

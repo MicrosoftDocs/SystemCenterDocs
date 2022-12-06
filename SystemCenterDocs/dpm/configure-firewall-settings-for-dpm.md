@@ -29,7 +29,7 @@ A common question that arises during System Center Data Protection Manager (DPM)
 |DNS|53/UDP|Used for host name resolution between DPM and the domain controller, and between the protected computer and the domain controller.|  
 |Kerberos|88/UDP<br /><br /> 88/TCP|Used for authentication of the connection endpoint between DPM and the domain controller, and between the protected computer and the domain controller.|  
 |LDAP|389/TCP<br /><br /> 389/UDP|Used for queries between DPM and the domain controller.|  
-|NetBios|137/UDP<br /><br /> 138/UDP<br /><br /> 139/TCP<br /><br /> 445/TCP|Used for miscellaneous operations between DPM and the protected computer, between DPM and the domain controller, and between the protected computer and the domain controller. Used for DPM functions for Server Message Block (SMB) when it is directly hosted on TCP/IP.|  
+|NetBios|137/UDP<br /><br /> 138/UDP<br /><br /> 139/TCP<br /><br /> 445/TCP|Used for miscellaneous operations between DPM and the protected computer, between DPM and the domain controller, and between the protected computer and the domain controller. Used for DPM functions for Server Message Block (SMB) when it's directly hosted on TCP/IP.|  
 
 ##  <a name="BKMK_WF"></a> Windows Firewall settings  
  If Windows Firewall is enabled when you install DPM, the DPM setup configures the Windows Firewall settings as required together with the rules and exceptions. The settings are summarized in the following table.  
@@ -67,7 +67,7 @@ A common question that arises during System Center Data Protection Manager (DPM)
 
    2. Now follow the same steps to manually create the exception that matches the default Microsoft System Center 2012 R2 Data Protection Replication Agent rule by browsing to **<system drive letter\>:\Program Files\Microsoft DPM\DPM\bin** and selecting **Dpmra.exe**.  
 
-      Be aware that if you’re running System Center 2012 R2 with SP1 the default rules will be named by using **Microsoft System Center 2012 Service Pack 1 Data Protection Manager**.  
+      If you’re running System Center 2012 R2 with SP1, the default rules will be named by using **Microsoft System Center 2012 Service Pack 1 Data Protection Manager**.  
 
 ##  <a name="BKMK_SQL"></a> Set up Windows Firewall on the remote instance of the SQL Server  
 

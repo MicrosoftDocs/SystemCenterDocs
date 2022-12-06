@@ -55,15 +55,15 @@ There are a few common ways to organize your protection groups:
 
 -   **By workload** - You separate files and each application data type into different protection groups. Organizing by workload allows you to manage workloads as a group. However, recovering a multi-application server might require multiple tapes from different protection groups.
 
--   **By RPO/RTO** - Gather data sources with similar Recovery Point Objectives (RPOs) and Recovery Time Objectives (RTOs) in protection groups. You control the RPO by setting the synchronization frequency for the protection group which determines the amount of potential data loss (in time) during unexpected outages. The RTO is the acceptable amount of time that data is unavailable. The storage methods you select for the protection group directly impacts the RTO.
+-   **By RPO/RTO** - Gather data sources with similar Recovery Point Objectives (RPOs) and Recovery Time Objectives (RTOs) in protection groups. You control the RPO by setting the synchronization frequency for the protection group, which determines the amount of potential data loss (in time) during unexpected outages. The RTO is the acceptable amount of time that data is unavailable. The storage methods you select for the protection group directly impacts the RTO.
 
 -   **By data characteristics** - For example how often data changes, how rapidly it grows, or its storage requirements.
 
 ## Choosing a name for the protection group
-When choosing a name for your Protection Group, the name should be meaningful. The name must be unique to the DPM server. The Protection Group name can include any combination of alphanumeric characters and spaces, but it cannot be longer than 64 characters. DPM does not support special characters such as `|`, `/`, `(`, `)`, or `.`.
+When choosing a name for your Protection Group, you should choose a meaningful name. The name must be unique to the DPM server. The Protection Group name can include any combination of alphanumeric characters and spaces, but it can't be longer than 64 characters. DPM doesn't support special characters such as `|`, `/`, `(`, `)`, or `.`.
 
 ## Figure out how much storage space you need
-When you create a protection group and select disk-based protection, you must allocate space on the storage pool for the replicas and recovery points for each data source that you have selected for membership in the group, and you must allocate space on protected file servers or workstations for the change journal.
+When you create a protection group and select disk-based protection, you must allocate space on the storage pool for the replicas and recovery points for each data source you've selected for membership in the group. You must also allocate space on protected file servers or workstations for the change journal.
 
 To help you figure out storage capacity, use the [Storage Calculator for DPM with Modern Backup Storage](https://www.microsoft.com/download/details.aspx?id=54301)
 
@@ -83,27 +83,27 @@ DPM provides default space allocations for the members of the protection group. 
 
 When you create a protection group, in the **Modify Disk Allocation** dialog box, the **Data Size** column for each data source displays a **Calculate** link. For the initial disk allocation, DPM applies the default formulas to the size of the volume on which the data source is located. To apply the formula to the actual size of the selected data source, select the **Calculate** link. DPM will determine the size of the data source and recalculate the disk allocation for the recovery point and replica volumes for that data source. This operation can take several minutes to perform.
 
-Accept the default space allocations unless you are certain that they do not meet your needs. Overriding the default allocations can result in allocation of too little or too much space.
+Accept the default space allocations unless you're certain that they don't meet your needs. Overriding the default allocations can result in allocation of too little or too much space.
 
 Allocation of too little space for the recovery points can prevent DPM from storing enough recovery points to meet your retention range objectives. Allocation of too much space wastes disk capacity.
 
 After creating a protection group, if you allocated too little space for a data source, increase the allocations for the replica and recovery point volumes for each data source.
 
-If you allocated too much space for the protection group, remove the data source from the protection group and delete the replica, Then, add the data source to the protection group with smaller allocations.
+If you allocated too much space for the protection group, remove the data source from the protection group and delete the replica. Then, add the data source to the protection group with smaller allocations.
 
 ## Set up protection groups
-When you set up a protection group here's what you'll need to do:
+When you set up a protection group, here's what you'll need to do:
 
 ### Before you start
 Some things to note when creating protection groups:
 
--   If you're backing up to tape and you have only a single stand-alone tape, use a single protection group to minimize the effort to change tapes. Multiple protection groups require a separate tape for each protection group.
+-   If you're backing up to tape and you've only a single stand-alone tape, use a single protection group to minimize the effort to change tapes. Multiple protection groups require a separate tape for each protection group.
 
--   Data sources on a computer must be protected by the same DPM server. In DPM a data source is a volume, share, database, or storage group that is a member of a protection group.
+-   Data sources on a computer must be protected by the same DPM server. In DPM, a data source is a volume, share, database, or storage group that is a member of a protection group.
 
 -   You can include data sources from more than one computer in a protection group.
 
--   Protection group members cannot be moved between protection groups. If you decide later that a protection group member needs to be in a different protection group, you must remove the member from its protection group and then add it to a different protection group.
+-   Protection group members can't be moved between protection groups. If you decide later that a protection group member needs to be in a different protection group, you must remove the member from its protection group and add it to a different protection group.
 
 -   If the members of a protection group no longer require protection, stop protection of the protection group. When you stop protection, your options are to retain protected data or to delete protected data.
 
@@ -113,9 +113,9 @@ Some things to note when creating protection groups:
 
 -   When you select a parent folder or share, its subfolders are automatically selected. You can designate subfolders for exclusion and also exclude file types by extension.
 
--   Verify that you do not have more than a 100 protectable data sources on a single volume. If you do, distribute your data sources across more volumes if possible.
+-   Verify that you don't have more than a 100 protectable data sources on a single volume. If you do, distribute your data sources across more volumes if possible.
 
--   When you select a data source that contains a reparse point, DPM asks whether to include the reparse point target in the protection group. Mount points and junction points are data sources that contain reparse points. If you include the reparse point, it is not replicated; you must manually re-create the reparse point when you recover the data.
+-   When you select a data source that contains a reparse point, DPM asks whether to include the reparse point target in the protection group. Mount points and junction points are data sources that contain reparse points. If you include the reparse point, it isn't replicated; you must manually re-create the reparse point when you recover the data.
 
 Protection groups are created with the Create New Protection Group wizard with the following settings:
 
@@ -124,7 +124,7 @@ Protection groups are created with the Create New Protection Group wizard with t
     >[!NOTE]
     > Some of the data sources may not be listed while adding them to the protection group, as the list is displayed from the cache. Select **Refresh** to update the data sources list.
 
--   **Select data protection method** : Specify how you want to handle short- and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure Backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term backup to a standalone tape device or tape library connected to the DPM server.
+-   **Select data protection method** : Specify how you want to handle short- and long-term backup. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure Backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term backup to a standalone tape device or tape library connected to the DPM server.
 
 -   **Select short-term goals**: Specify how you want to back up to short-term storage on disk. In **Retention range**, you specify how long you want to keep the data on disk. In Synchronization frequency, you specify how often you want to run an incremental backup to disk. If you don't want to set a backup interval, you can check **Just before a recovery point** so that DPM will run an express full backup just before each recovery point is scheduled.
 
@@ -146,7 +146,7 @@ Protection groups are created with the Create New Protection Group wizard with t
 
 -   **Specify online protection data**: If you want to back up to the cloud with Azure Backup, specify the workloads you want to back up.
 
--   **Specify online backup schedule** : If you're backing up to Azure, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs, a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+-   **Specify online backup schedule** : If you're backing up to Azure, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
 -   **Specify online retention policy**: If you're backing up to Azure, you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
@@ -154,7 +154,7 @@ Protection groups are created with the Create New Protection Group wizard with t
 
 
 ## Initial replication options
-When you create a protection group, you must choose a method for creating the initial replica, which copies all the data selected for protection to the DPM server and then runs synchronization with consistency check for each of the replicas.
+When you create a protection group, you must choose a method for creating the initial replica that can copy all the data selected for protection to the DPM server and then run synchronization with consistency check for each of the replicas.
 
 ### Initial replication over the network
 DPM can create the replicas automatically over the network, or you can create the replicas manually by restoring the data from removable media such as tape. Automatic replica creation is easier, but depending on the size of the protected data and the speed of the network, manual replica creation can be faster.
@@ -174,12 +174,12 @@ To help you choose a replica creation method, the following table provides estim
 When you're backing up data from the DPM server to Azure, you can do the initial replication over the network or using offline seeding. [Read more](/azure/backup/backup-azure-backup-import-export).
 
 ### Initial replication manually
-If you are deploying DPM to protect data over a WAN and your protection group includes more than 5 GB of data, we recommend that you choose the manual method for creating the replicas.
+If you're deploying DPM to protect data over a WAN and your protection group includes more than 5 GB of data, we recommend that you choose the manual method for creating the replicas.
 
 If you choose manual replica creation, DPM specifies the precise locations on the DPM server where you must create the replicas. Typically, you create the replicas by restoring your most recent backup of the data source from removable media such as tape. After you restore the data, you complete the process by running synchronization with consistency check for each of the replicas.
 
-It is crucial that when you restore the data to the DPM server to create the replica, you retain the original directory structure and properties of the data source, such as time stamps and security permissions. The more the discrepancies that exist between the replicas and the protected data source, the longer the consistency checking part of the process takes. If you do not preserve the original directory structure and properties, manual replica creation can take as long as automatic replica creation.
+When you restore the data to the DPM server to create the replica, you must retain the original directory structure and properties of the data source, such as time stamps and security permissions. The more the discrepancies that exist between the replicas and the protected data source, the longer the consistency checking part of the process takes. If you don't preserve the original directory structure and properties, manual replica creation can take as long as automatic replica creation.
 
 ## Naming a Protection Group
 
-When you name the protection group, provide a unique, meaningful name for the group. The name can include any combination of alphanumeric characters and can include spaces but cannot exceed 64 characters.
+When you name the protection group, provide a unique, meaningful name for the group. The name can include any combination of alphanumeric characters and can include spaces but can't exceed 64 characters.
