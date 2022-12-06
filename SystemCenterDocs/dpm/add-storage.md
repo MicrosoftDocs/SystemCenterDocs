@@ -29,9 +29,9 @@ Modern Backup Storage (MBS) was introduced in System Center Data Protection Mana
 - MBS backups are stored on an ReFS disk. It uses ReFS block cloning and VHDX technology. [Learn more](https://techcommunity.microsoft.com/t5/system-center-blog/introducing-dpm-2016-modern-backup-storage/ba-p/351650).
 
 > [!NOTE]
-> DPM does not support deduplication on ReFS disk used for MBS backups.
+> DPM doesn't support deduplication on ReFS disk used for MBS backups.
 
-DPM 2016 accepts volumes for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk. Use only a basic disk.
+DPM 2016 accepts volumes for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes can't reside on a dynamic disk. Use only a basic disk.
 
 While you can directly give a volume to DPM, you may face issues in extending the volume if a need arises later.
 To prepare DPM for future expansion, use the available disks to create a storage pool. Then create volumes on the storage pool, and expose the volumes to DPM. These virtual volumes can then be extended when needed.
@@ -40,7 +40,7 @@ The remainder of this article provides the detail on how to add a volume and to 
 
 ## Setting up MBS
 
-Setting up MBS consists of the following procedures. Note that you cannot attach locally created VHD (VHDX) files and use them as storage on a physical DPM server.
+Setting up MBS consists of the following procedures. You can't attach locally created VHD (VHDX) files and use them as storage on a physical DPM server.
 
 1. Ensure that you're running DPM 2016 or later on a VM running Windows Server 2016 or later.
 2. Create a volume. To create a volume on a virtual disk in a storage pool:
@@ -135,8 +135,8 @@ After removing volume exclusion, rescan the storage. All volumes and mount point
 
 Once all your backups are on MBS, there may be a need to migrate certain data sources from one volume to another. For example, scenarios where you need to upgrade storage or when a volume is getting full. You can use PowerShell or the user interface to migrate data sources. The details can be found [in this blog entry](https://go.microsoft.com/fwlink/?linkid=861519).
 
-The migrating data source should have all recovery points on Modern Storage. Migrating data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported.
-Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. The scheduled jobs continue as configured. When the migration completes, any running jobs in the protection group are preempted.
+The migrating data source should have all recovery points on Modern Storage. Migrating data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) isn't supported.
+Migration is similar to modification of a protection group. While migration is in progress, you can't trigger an improvised job. The scheduled jobs continue as configured. When the migration completes, any running jobs in the protection group are preempted.
 
 ## Custom size allocation
 
@@ -160,7 +160,7 @@ Modern Backup Storage (MBS) was introduced in System Center Data Protection Mana
 > [!NOTE]
 > DPM does not support deduplication on ReFS disk used for MBS backups.
 
-DPM 2019 accepts volumes/disks for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk; use only a basic disk.
+DPM 2019 accepts volumes/disks for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes can't reside on a dynamic disk; use only a basic disk.
 
 > [!NOTE]
 > If the physical disk is or will be larger than 2TB, the disk must be converted to GPT before creating the volume(s) for DPM.
@@ -170,13 +170,13 @@ You can directly give a volume to DPM; however, you may have issues in extending
 
 ## Set up MBS with Tiered Storage
 
-DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization and performance. MBS uses ReFS as the underlying filesystem. MBS is designed to make use of hybrid storage, such as tiered storage. To achieve the scale and performance claimed by MBS, we recommend using a small percentage (4% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with HDD for DPM native storage.
+DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization and performance. MBS uses ReFS as the underlying filesystem. MBS is designed to make use of hybrid storage, such as tiered storage. To achieve the scale and performance claimed by MBS, we recommend using a small percentage (4% of the overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with HDD for DPM native storage.
 
-Once you configure tiered storage, the ReFS file system has the intelligence to store File System Metadata on the SSD tier. This improves the overall backup job time significantly. There is no further configuration required while configuring the protection groups, etc.
+Once you configure tiered storage, the ReFS file system has the intelligence to store File System Metadata on the SSD tier. This improves the overall backup job time significantly. There's no further configuration required while configuring the protection groups, etc.
 
 > [!NOTE]
-> - Tiering is recommended for faster backups. However, this is not a mandatory requirement to configure DPM storage.
->- You cannot attach locally created VHD (VHDX) files and use them as storage on a physical DPM server. Ensure that you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.  
+> - Tiering is recommended for faster backups. However, this isn't a mandatory requirement to configure DPM storage.
+>- You can't attach locally created VHD (VHDX) files and use them as storage on a physical DPM server. Ensure that you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.  
 > - When deploying DPM in a virtual machine, DPM 2019 can be deployed in a VM running on Windows Server 2016 or Windows Server 2019. For best performance, we strongly recommend DPM 2019 installed on Windows 2019 with the latest Windows update installed.  
 
 
@@ -187,7 +187,7 @@ The tiered storage is configured using [Windows Storage Spaces](/windows-server/
 |Area | Requirement | Notes |
 |---- |--------------|----|
 |Disk bus types|- Serial Attached SCSI (SAS)<br><br> - Serial Advanced Technology Attachment (SATA) <br><br> - iSCSI and Fibre Channel Controllers.| When you configure Storage Spaces utilizing iSCSI and Fibre Channel (FC) disk controllers,  only non-resilient virtual disks (simple with any number of columns) are supported.|
-|HBA considerations|- Simple host bus adapters (HBAs) that do not support RAID functionality are recommended <br><br> - If RAID-capable, HBAs must be in non-RAID mode with all RAID functionality disabled <br><br> - Adapters must not abstract the physical disks, cache data, or obscure any attached devices. This includes enclosure services that are provided by attached just-a-bunch-of-disks (JBOD) devices.|Storage Spaces is compatible only with HBAs where you can completely disable all RAID functionality.|
+|HBA considerations|- Simple host bus adapters (HBAs) that don't support RAID functionality are recommended <br><br> - If RAID-capable, HBAs must be in non-RAID mode with all RAID functionality disabled <br><br> - Adapters must not abstract the physical disks, cache data, or obscure any attached devices. This includes enclosure services that are provided by attached just-a-bunch-of-disks (JBOD) devices.|Storage Spaces is compatible only with HBAs where you can completely disable all RAID functionality.|
 
 > [!NOTE]
 > To configure tiered storage, Windows Storage Spaces requires a minimum SSD size of 32 GB.
@@ -220,8 +220,8 @@ The chart below highlights some pros and cons of the three types of resiliency s
 
 | TYPE | PRO | CON | Min Disks |
 | --- | --- | --- | --- |
-| Simple | - Max disk capacity (100%). <br><br> - Increased throughput. <br><br> - Stripes data across physical disks if applicable. | - No resiliency. <br><br> - Data loss guaranteed in case of physical disk failure.| 1 |
-| Mirror | - Increased reliability.<br><br> - Greater data throughput and lower access latency than parity. <br><br> - Stripes the data across multiple physical drives. Can be configured for 2 or 3 copies of data. | - Reduced capacity (50%). <br><br> - Not supported on Iscsi or FC connected SAN. | 2 or 5 |
+| Simple | - Max disk capacity (100%). <br><br> - Increased throughput. <br><br> - Stripes data across physical disks if applicable. | - No resiliency. <br><br> - Data loss guaranteed if there's a physical disk failure.| 1 |
+| Mirror | - Increased reliability.<br><br> - Greater data throughput and lower access latency than parity. <br><br> - Stripes the data across multiple physical drives. Can be configured for two or three copies of data. | - Reduced capacity (50%). <br><br> - Not supported on Iscsi or FC connected SAN. | 2 or 5 |
 | Parity | - Stripes data and parity information across physical disks. <br><br> - Increased reliability. <br><br> - Increases resiliency through journaling. | - Reduced capacity, but not as much as mirroring. <br><br> - Not supported on Iscsi or FC connected SAN.<br><br> -  Slightly reduced performance. | 3 |
 
 For more information to help plan for the number of physical disks and the desired resiliency type for a standalone server deployment, use the guidelines documented [here](/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
@@ -233,7 +233,7 @@ Windows Storage Spaces allows you to pool multiple physical disks into one logic
 Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in the sequence listed below:
 
 >[!NOTE]
->  In case you wish to modify your existing storage to tiered storage, migrate your current backups to a temporary volume using [volume migration](volume-to-volume-migration.md).
+>  If you wish to modify your existing storage to tiered storage, migrate your current backups to a temporary volume using [volume migration](volume-to-volume-migration.md).
 
 1. [Prepare physical disks and create Windows Storage Pool](#prepare-physical-disks-and-create-windows-storage-pool)
 2. [Create tiered storage with required resiliency](#create-tiered-storage-volume)
@@ -241,7 +241,7 @@ Follow the steps in the procedures below to set up MBS with tiered storage. Foll
 4. [Disable Write Auto Tiering at file system level](#disable-write-auto-tiering-at-file-system-level)
 
 >[!NOTE]
-> If you have migrated your earlier backups prior to step 1, migrate your data back to the newly created volumes using [volume migration](volume-to-volume-migration.md).
+> If you've migrated your earlier backups prior to step 1, migrate your data back to the newly created volumes using [volume migration](volume-to-volume-migration.md).
 
 ### Prepare physical disks and create Windows storage pool
 
@@ -249,7 +249,7 @@ Use the following procedures to prepare physical disks and create Windows storag
 
 #### Initialize disks
 
-Based on the resiliency option that you have selected, calculate the number of HDDs and SSDs required. Initialize the new disks that are attached to the server first, prior to adding the disks to the storage pool.
+Based on the resiliency option that you've selected, calculate the number of HDDs and SSDs required. Initialize the new disks that are attached to the server first, prior to adding the disks to the storage pool.
 
 >[!NOTE]
 > The disks that are more than 2 TB in size will be converted to GPT disks.
@@ -268,7 +268,7 @@ The disk gets converted to GPT disk in case the disk size is more than 2 TB.
 
 #### Check Primordial pool
 
-By default, the available disks are included in a pool that is named as **Primordial** pool. If no Primordial pool is listed under the *Storage Pools*, this indicates that the storage does not meet the requirements for storage spaces. Ensure that the disks meet the requirements that are outlined in the [prerequisites](#prerequisites) section.
+By default, the available disks are included in a pool that is named as **Primordial** pool. If no Primordial pool is listed under the *Storage Pools*, it indicates that the storage doesn't meet the requirements for storage spaces. Ensure that the disks meet the requirements that are outlined in the [prerequisites](#prerequisites) section.
 
 Run the following cmdlet to view the physical disks available in the Primordial pool:
 
@@ -311,7 +311,7 @@ By default, Windows automatically detects the type of disk that is attached and 
 
    ![Set Media Type](./media/add-storage/set-mediatype-1.png)
 
-2. In the above example, assign the MediaType as SSD to the disk with DeviceID as 1 and assign HDD to the disks with DeviceID as 2,3, and 4.
+2. In the above example, assign the MediaType as SSD to the disk with DeviceID as 1 and assign HDD to the disks with DeviceID as 2, 3, and 4.
 
     To set the **MediaType**, run the following cmdlets:
 
@@ -354,11 +354,11 @@ Set-StoragePool -FriendlyName DPMPool -WriteCacheSizeDefault 0
 You can configure tiered storage volume using the following methods:
 
 -	[Simple volume](#create-simple-tiered-volume-no-resiliency) – Recommended when you are using storage from the SAN device or using a virtual machine. The resiliency should be provided by the underlying storage.
-- [Resilient volume](#create-resilient-tiered-volume) – Supported when you are using only locally attached storage (JBOD). Ensure that resiliency is not configured at the storage level.
+- [Resilient volume](#create-resilient-tiered-volume) – Supported when you are using only locally attached storage (JBOD). Ensure that resiliency isn't configured at the storage level.
 
 Before creating tiered storage, you need to plan the column size.
 
-- The column size determines how the data is written across the physical disks in the storage pool and also decides the number of physical disks that need to be added to the storage pool before a virtual disk can be expanded later.
+- The column size determines how the data is written across the physical disks in the storage pool and also decides the number of physical disks that need to be added to the storage pool before a virtual disk can be expanded.
 - The higher the column size (up to 8), the better the overall performance. If you need to add physical disks later, it needs to be in multiples of the column size.
 - By default, when you create the virtual disk or volume, the column size is automatically determined based on the number of disks available in the storage pool.
 - The default setting is used while creating new virtual disk or volume using Server Manager or when you don't specify the column size while using _New-StorageTier_ cmdlet.
@@ -512,7 +512,7 @@ Follow these steps:
 We recommend you to disable Write Auto Tiering file system level so that the entire performance tier is available for DPM to store ReFS metadata.
 
 > [!NOTE]
-> You can skip this step if more than 10% of SSD is used in the performance tier. This can be disabled later if there is a performance degradation in terms of backup speeds.
+> You can skip this step if more than 10% of SSD is used in the performance tier. This can be disabled later if there's a performance degradation in terms of backup speeds.
 
 Follow the steps below to disable write auto-caching:
 
@@ -542,8 +542,8 @@ In case you had upgraded your existing storage to a tiered storage, you can migr
 Migration of data source should have all recovery points on Modern Storage.
 
 > [!NOTE]
-> - Migration of  data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported.
->- Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are preempted.
+> - Migration of  data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) isn't supported.
+>- Migration is similar to modification of a protection group. While migration is in progress, you can't trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are preempted.
 
 
 ## Configure workload-aware storage
@@ -579,18 +579,18 @@ For Example, to exclude F:\ and C:\MountPoint1, use these steps:
     ```PowerShell
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
     ```
-2. Re-scan the storage through UI or use *Start-DPMDiskRescan* cmdlet.
+2. Rescan the storage through UI or use *Start-DPMDiskRescan* cmdlet.
 
     The configured volumes and mountpoints are excluded.
 3. To remove the volume exclusion, run the following cmdlet:
     ```PowerShell
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion   
     ```
-After removing volume exclusion, re-scan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
+After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
 
 ## Custom size allocation
 
-DPM 2019 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together, as in the case of a file server, size calculation can take a long time.
+DPM 2019 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together (as in the case of a file server), size calculation can take a long time.
 
 With DPM 2016 and later, you can configure DPM to accept the volume size as default instead of calculating the size of each file. The corresponding registry key is *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage* with the Key, *EnableCustomAllocationOnReFSStorage* as a string, set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
 

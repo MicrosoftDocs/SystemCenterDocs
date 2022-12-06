@@ -24,7 +24,7 @@ You can upgrade to DPM 2019 from the following versions:
   Before you upgrade to or install DPM 2019, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
 > [!NOTE] 
-> Existing Data Protection Manager to Microsoft Azure customers should upgrade to the latest agent (version 2.0.9238.0 or later). If the latest agent is not installed, online backups might fail and no Data Protection Manager to Microsoft Azure operation will work (applicable for 2019 UR4).
+> Existing Data Protection Manager to Microsoft Azure customers should upgrade to the latest agent (version 2.0.9238.0 or later). If the latest agent isn't installed, online backups might fail and no Data Protection Manager to Microsoft Azure operation will work (applicable for 2019 UR4).
 
 ## Upgrade path for DPM 2019
 If you upgrade from DPM 2016 to DPM 2019, ensure that your installation has the following necessary updates:
@@ -45,8 +45,8 @@ If you upgrade from DPM 2016 to DPM 2019, ensure that your installation has the 
 ## Migrate the DPM database during upgrade
 
 You may want to move the DPM Database as part of an upgrade. For example:
-- You are merging instances of SQL Server.
-- You are moving to a remote, more powerful SQL Server.
+- You're merging instances of SQL Server.
+- You're moving to a remote, more powerful SQL Server.
 - You want to add fault tolerance by using a SQL Server cluster.
 - You want to move from a remote SQL Server to a local SQL Server or vice versa.
 
@@ -54,7 +54,7 @@ DPM 2019 setup allows you to migrate the DPM database to different SQL Servers d
 
 ### Possible database migration scenarios
 
-The following scenarios exist when you are upgrading DPM 2016/1801/1807 to DPM 2019 using a:
+The following scenarios exist when you're upgrading DPM 2016/1801/1807 to DPM 2019 using a:
 
 1. Local instance and migrating to a remote instance of SQL Server during setup.
 2. Remote instance and migrating to a local instance of SQL Server during setup.
@@ -71,9 +71,9 @@ If you want to use a new SQL server to migrate the DPM database, before you upgr
 - Firewall rules
 - DPM Support files (sqlprep)
 
-Once you have the new instance of SQL Server installed and prepared for DPM use, you must create a backup of the current DPM database and restore it on the new SQL Server.
+Once you've the new instance of SQL Server installed and prepared for DPM use, you must create a backup of the current DPM database and restore it on the new SQL Server.
 
-### Pre-upgrade steps: Backup and restore DPM 2016/1801/1807 database to a new SQL instance
+### Pre-upgrade steps: Back up and restore DPM 2016/1801/1807 database to a new SQL instance
 
 This example prepares a remote SQL Server cluster to use in a migration.
 
@@ -111,7 +111,7 @@ This example prepares a remote SQL Server cluster to use in a migration.
 
       ![Screenshot of the DPM setup page.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-data-protection-manager-setup.png)
 
-2. Change the SQL Settings to use the instance of SQL Server you restored the DPM Database to. If it’s a SQL cluster, you must also specify a separate instance of the SQL Server used for SQL reporting. It's presumed that firewall rules and SQLPrep are already ran. You have to enter the correct credentials and then select the **Check and Install** button.
+2. Change the SQL Settings to use the instance of SQL Server you restored the DPM Database to. If it’s a SQL cluster, you must also specify a separate instance of the SQL Server used for SQL reporting. It's presumed that firewall rules and SQLPrep have already run. You've to enter the correct credentials and then select the **Check and Install** button.
 
       ![Screenshot showing the Install database page.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-install-database.png)
 
@@ -161,7 +161,7 @@ Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-Datasour
 The changes made through PowerShell are reflected in the UI.
 
 ## Migrate legacy storage to Modern Backup Storage
-After upgrading to DPM 2019 and the operating system to Windows Server 2016/2019, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups are not changed and continue to function as they were configured in the earlier version of your DPM. Updating protection groups to use Modern Backup Storage is optional. To update the protection group, stop the protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
+After upgrading to DPM 2019 and the operating system to Windows Server 2016/2019, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups aren't changed and continue to function as they were configured in the earlier version of your DPM. Updating protection groups to use Modern Backup Storage is optional. To update the protection group, stop the protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
 
 Use the following steps:
 

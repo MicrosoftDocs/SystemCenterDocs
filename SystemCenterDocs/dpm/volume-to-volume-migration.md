@@ -24,7 +24,10 @@ ms.custom: intro-migration
 
 This article provides information on how to migrate data sources from one volume to another.
 
-There are various reasons why a [volume migration](add-storage.md#migrate-data-to-newly-created-volumes) is required: the underlying storage in the old volume can have fragmentation or the old volume would have reached the limit of maximum allowed storage size or you want to store your backups on a high-performance underlying storage.
+There're various reasons why a [volume migration](add-storage.md#migrate-data-to-newly-created-volumes) is required: 
+- The underlying storage in the old volume can have fragmentation
+- The old volume would've reached the limit of maximum allowed storage size
+- You want to store your backups on a high-performance underlying storage
 
 DPM supports the following two options to migrate data to a new volume:
 
@@ -71,7 +74,7 @@ Follow these steps:
 
 ## Migrate data sources to new volumes using PowerShell
 
-   Here is an example for migrating a data source from one volume to the other volume using PowerShell cmdlets:
+   Here's an example for migrating a data source from one volume to the other volume using PowerShell cmdlets:
 
 ```powershell
    #Create a modifiable Protection Group of the PG the datasource is in.

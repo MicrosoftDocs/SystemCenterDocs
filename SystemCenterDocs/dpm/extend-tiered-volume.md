@@ -40,7 +40,7 @@ When you resize the **StorageTier** (s), the **VirtualDisk** and **Disk** follow
 
 ## Step 2 – Resize the partition
 
-Next, resize the partition using the **Resize-Partition** cmdlet. The virtual disk is expected to have two partitions: the first partition is reserved and should not be modified; the one you need to resize is **PartitionNumber = 2** and **Type = Basic**.
+Next, resize the partition using the **Resize-Partition** cmdlet. The virtual disk is expected to have two partitions: the first partition is reserved and shouldn't be modified; the one you need to resize is **PartitionNumber = 2** and **Type = Basic**.
 
 Provide the new size in the **-Size** parameter. We recommend using the maximum supported size, as shown below:
 
@@ -65,7 +65,7 @@ You can add more capacity to the tiered volume by adding new disks. Based on the
 
     ![Screenshot showing additional disks connected.](./media/extend-tiered-volume/additional-disk-connected.png)
 
-2.	To add a new disk to an existing storage pool used for DPM, select and hold the storage pool name and then select **Add Physical Disk…**.
+2.	To add a new disk to an existing storage pool used for DPM, select and hold the storage pool name, and then select **Add Physical Disk…**.
 
     ![Screenshot showing add new disks.](./media/extend-tiered-volume/add-physical-disk.png)
 

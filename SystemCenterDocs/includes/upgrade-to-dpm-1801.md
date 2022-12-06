@@ -18,9 +18,9 @@ You can install System Center Data Protection Manager (DPM) version 1801 on Wind
 
 
 ## Upgrade path for DPM 1801
-If you are going to upgrade from DPM 2012 R2 or DPM 2016 to DPM 1801, ensure that your installation has the necessary updates:
+If you're going to upgrade from DPM 2012 R2 or DPM 2016 to DPM 1801, ensure that your installation has the necessary updates:
 
-- Upgrade DPM 2012 R2 to DPM 2012 R2 Update Rollup 14. If you are upgrading from DPM 2016, then first upgrade to DPM 2016 Update Rollup 4. You can download the Update Rollups from Windows Update.
+- Upgrade DPM 2012 R2 to DPM 2012 R2 Update Rollup 14. If you're upgrading from DPM 2016, then first upgrade to DPM 2016 Update Rollup 4. You can download the Update Rollups from Windows Update.
 - Upgrade the DPM server to DPM 1801.
 - Update the agents on the protected servers.
 - Upgrade the DPM Remote Administrator on all production servers.
@@ -37,8 +37,8 @@ Some DPM 1801 features, such as Modern Backup Storage, require Windows Server 20
 ## Migrating the DPM database during upgrade
 
 You may want to move the DPM Database as part of an upgrade. For example:
-- You are merging instances of SQL Server.
-- You are moving to a remote more powerful SQL Server.
+- You're merging instances of SQL Server.
+- You're moving to a remote more powerful SQL Server.
 - You want to add fault tolerance by using a SQL Server cluster.
 - You want to move from a remote SQL server to a local SQL server or vice versa.
 
@@ -62,9 +62,9 @@ If you want to use a new SQL Server to migrate the DPM database, before you upgr
 - Firewall rules
 - DPM Support files (sqlprep)
 
-Once you have the new instance of SQL Server installed and prepared for DPM use, you must create a backup of the current DPM database and restore it on the new SQL Server.
+Once you've the new instance of SQL Server installed and prepared for DPM use, you must create a backup of the current DPM database and restore it on the new SQL Server.
 
-### Pre-upgrade steps: Backup and restore DPM 2012 R2 DPM database to a new SQL instance
+### Pre-upgrade steps: Back up and restore DPM 2012 R2 DPM database to a new SQL instance
 
 This example prepares a remote SQL Server cluster to use in a migration.
 
@@ -83,7 +83,7 @@ This example prepares a remote SQL Server cluster to use in a migration.
 
       ![Screenshot of Microsoft SQL Management Studio showing Select restore database option.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-select-restore-database.png)
 
-7. Select **Device** under **Source**, and then locate the database backup file that was copied in the previous step and select it. Verify the restore options and restore location, and then select **OK** to start the restore. Fix any issue that arise until the restore is successful.
+7. Select **Device** under **Source**, and then locate the database backup file that was copied in the previous step and select it. Verify the restore options and restore location, and then select **OK** to start the restore. Fix any issues that arise until the restore is successful.
 
       ![Screenshot of Microsoft SQL Management Studio showing Restore database option.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-restore-database.png)
 
@@ -102,7 +102,7 @@ This example prepares a remote SQL Server cluster to use in a migration.
 
       ![Screenshot of the DPM setup page.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-data-protection-manager-setup.png)
 
-2. Change the SQL Settings to use the instance of SQL Server you restored the DPM Database to. If it’s a SQL cluster, you must also specify a separate instance of the SQL Server used for SQL reporting. It's presumed that firewall rules and SQLPrep are already ran. You have to enter correct credentials and then select the **Check and Install** button.
+2. Change the SQL Settings to use the instance of SQL Server you restored the DPM Database to. If it’s a SQL cluster, you must also specify a separate instance of the SQL Server used for SQL reporting. It's presumed that firewall rules and SQLPrep have already run. You've to enter correct credentials and then select the **Check and Install** button.
 
       ![Screenshot showing the Install database page.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-install-database.png)
 
@@ -130,7 +130,7 @@ To add a volume in the administrator console:
       ![Screenshot showing how to add volume.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-add-volume.png)
 
 If you want to add a disk, it must belong to a protection group with legacy storage. Those disks can only be used for those protection groups. If the DPM server doesn't have sources with legacy protection, the disk won't appear.
-See the article, [Adding disks to increase legacy storage](#adding-disks-to-increase-legacy-storage), for more information on adding disks. You can't give disks a friendly name.
+For more information on adding disks, see the article [Adding disks to increase legacy storage](#adding-disks-to-increase-legacy-storage). You can't give disks a friendly name.
 
 
 ### Assign Workloads to Volumes
@@ -169,7 +169,7 @@ To create a Protection Group:
 
    ![Screenshot showing how to choose server or client.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-group-screen2.png)
 
-5. On the **Select Group Members** screen, in the **Available members** pane, DPM lists the members with protection agents. For the purposes of this example, select volume D:\ and E:\ to add them to the **Selected members** pane. Once you have chosen the members for the protection group, select **Next**.
+5. On the **Select Group Members** screen, in the **Available members** pane, DPM lists the members with protection agents. For the purposes of this example, select volume D:\ and E:\ to add them to the **Selected members** pane. Once you've chosen the members for the protection group, select **Next**.
 
    ![Screenshot showing how to select group members for protection group.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen3.png)
 
@@ -188,14 +188,14 @@ To create a Protection Group:
 
    The storage volumes are determined based on the workload volume allocation (set using PowerShell) and the available storage. You can change the storage volumes by selecting other volumes from the dropdown menu. If you change the **Target Storage**, the **Available disk storage** dynamically changes to reflect the **Free Space** and **Underprovisioned Space**.
 
-   The **Underprovisioned Space** column in **Available disk storage** reflects the amount of additional storage needed if the data sources grow as planned. Use this value to help plan your storage needs to enable smooth backups. If the value is zero, then there are no potential problems with storage in the foreseeable future. If the value is a number other than zero, then you do not have sufficient storage allocated - based on your protection policy and the data size of your protected members.
+   The **Underprovisioned Space** column in **Available disk storage** reflects the amount of additional storage needed if the data sources grow as planned. Use this value to help plan your storage needs to enable smooth backups. If the value is zero, then there are no potential problems with storage in the foreseeable future. If the value is a number other than zero, then you don't have sufficient storage allocated - based on your protection policy and the data size of your protected members.
 
    ![Screenshot of Underallocated disk storage page.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-underprovision-storage.png)
 
 The remainder of the New Protection Group wizard is unchanged from DPM 2012 R2. Continue through the wizard to complete the creation of your new protection group.
 
 ## Migrating legacy storage to Modern Backup Storage
-After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Server 2016, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups are not changed and continue to function as they were configured in DPM 2012 R2. Updating protection groups to use Modern Backup Storage is optional. To update the protection group, stop the protection of all data sources with Retain Data, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
+After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Server 2016, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups aren't changed and continue to function as they were configured in DPM 2012 R2. Updating protection groups to use Modern Backup Storage is optional. To update the protection group, stop the protection of all data sources with Retain Data, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
 
 1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, select and hold the member and then select **Stop protection of member...**.
 
