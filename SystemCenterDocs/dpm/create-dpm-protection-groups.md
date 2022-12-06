@@ -30,12 +30,12 @@ A System Center Data Protection Manager (DPM) protection group is a collection o
 
 -   **Allocated disk space** - The disk space allocated to data from the storage pool.
 
--   **Initial replication** - How the initial replication of data should be handled, using either over the network or manually offline.
+-   **Initial replication** - How the initial replication of data should be handled using either over the network or manually offline.
 
--   **Consistency checks** - How replicated data should be checked for consistency.
+-   **Consistency checks** - How the replicated data should be checked for consistency.
 
 
-The topics in this section provide guidelines for making the decisions involved in creating a protection group.
+This section provides guidelines for making decisions involved in creating a protection group.
 
 ## Plan protection groups
 
@@ -43,11 +43,11 @@ You need to decide:
 
 -   How to group resources you want to back up into protection groups.
 
--   How to store the protection group backup data?
+-   How to store the protection group backup data.
 
--   How much storage space is required to store data for the protection group?
+-   How much storage space is required to store data for the protection group.
 
--   How to recover backup data for the protection group?
+-   How to recover backup data for the protection group.
 
 There are a few common ways to organize your protection groups:
 
@@ -81,7 +81,7 @@ DPM provides default space allocations for the members of the protection group. 
 -   **Retention range (RR)** - The number of recovery points stored. The DPM default recommendation is five recovery points.
 
 
-When you create a protection group, in the **Modify Disk Allocation** dialog box, the **Data Size** column for each data source displays a **Calculate** link. For the initial disk allocation, DPM applies the default formulas to the size of the volume on which the data source is located. To apply the formula to the actual size of the selected data source, click the **Calculate** link. DPM will determine the size of the data source and recalculate the disk allocation for the recovery point and replica volumes for that data source. This operation can take several minutes to perform.
+When you create a protection group, in the **Modify Disk Allocation** dialog box, the **Data Size** column for each data source displays a **Calculate** link. For the initial disk allocation, DPM applies the default formulas to the size of the volume on which the data source is located. To apply the formula to the actual size of the selected data source, select the **Calculate** link. DPM will determine the size of the data source and recalculate the disk allocation for the recovery point and replica volumes for that data source. This operation can take several minutes to perform.
 
 Accept the default space allocations unless you are certain that they do not meet your needs. Overriding the default allocations can result in allocation of too little or too much space.
 
@@ -122,13 +122,13 @@ Protection groups are created with the Create New Protection Group wizard with t
 -   **Select Group Members**: Specify the machines and sources you want to back up.
 
     >[!NOTE]
-    > Some of the data sources may not be listed while adding them to the protection group, as the list is displayed from the cache. Click **Refresh** to update the data sources list.
+    > Some of the data sources may not be listed while adding them to the protection group, as the list is displayed from the cache. Select **Refresh** to update the data sources list.
 
--   **Select data protection method** : Specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
+-   **Select data protection method** : Specify how you want to handle short- and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure Backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term backup to a standalone tape device or tape library connected to the DPM server.
 
--   **Select short-term goals**: Specify how you want to back up to short-term storage on disk.   In **Retention range** you specify how long you want to keep the data on disk. In Synchronization frequency you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
+-   **Select short-term goals**: Specify how you want to back up to short-term storage on disk. In **Retention range**, you specify how long you want to keep the data on disk. In Synchronization frequency, you specify how often you want to run an incremental backup to disk. If you don't want to set a backup interval, you can check **Just before a recovery point** so that DPM will run an express full backup just before each recovery point is scheduled.
 
--   **Specify long-term goals**: Indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
+-   **Specify long-term goals**: Indicate how long you want to keep tape data (1-99 years). In **Frequency of backup**, specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
     -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
@@ -136,30 +136,30 @@ Protection groups are created with the Create New Protection Group wizard with t
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    You'll also need to specify the tape device/library you want to use, and  whether data should be compressed and encrypted on tape.
+    You'll also need to specify the tape device/library you want to use and  whether data should be compressed and encrypted on tape.
 
--   **Review disk allocation**: You review the storage pool disk space allocated for the protection group. DPM provides a recommended size. You can select to **Automatically grow the volumes** to automatically increase size when more disk space is required for backup.
+-   **Review disk allocation**: You review the storage pool disk space allocated for the protection group. DPM provides a recommended size. You can select **Automatically grow the volumes** to automatically increase size when more disk space is required for backup.
 
--   **Choose replica creation method**: Specify how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
+-   **Choose replica creation method**: Specify how you want to handle the initial full data replication. If you select to replicate over the network, we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
--   In **Choose consistency check options**:  Select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time.
+-   In **Choose consistency check options**:  Select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time.
 
 -   **Specify online protection data**: If you want to back up to the cloud with Azure Backup, specify the workloads you want to back up.
 
--   **Specify online backup schedule** : If you're backing up to Azure specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+-   **Specify online backup schedule** : If you're backing up to Azure, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs, a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
 
--   **Specify online retention policy**: If you're backing up to Azure you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
+-   **Specify online retention policy**: If you're backing up to Azure, you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
--   **Choose online replication**: If you're backing up to Azure specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](/azure/backup/backup-azure-backup-import-export).
+-   **Choose online replication**: If you're backing up to Azure, specify how the initial full replication of data will occur. You can replicate over the network or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](/azure/backup/backup-azure-backup-import-export).
 
 
 ## Initial replication options
 When you create a protection group, you must choose a method for creating the initial replica, which copies all the data selected for protection to the DPM server and then runs synchronization with consistency check for each of the replicas.
 
 ### Initial replication over the network
-DPM can create the replicas automatically over the network, or you can create the replicas manually by restoring the data from removable media such as tape. Automatic replica creation is easier, but, depending on the size of the protected data and the speed of the network, manual replica creation can be faster.
+DPM can create the replicas automatically over the network, or you can create the replicas manually by restoring the data from removable media such as tape. Automatic replica creation is easier, but depending on the size of the protected data and the speed of the network, manual replica creation can be faster.
 
-To help you choose a replica creation method, the following table provides estimates for how long DPM takes to create a replica automatically over the network given different protected data sizes and network speeds. The estimates assume that the network is running at full speed and that other workloads are not competing for bandwidth. Times are shown in hours.
+To help you choose a replica creation method, the following table provides estimates for how long DPM takes to create a replica automatically over the network given different protected data sizes and network speeds. The estimates assume that the network is running at full speed and that other workloads are not competing for bandwidth. Time is shown in hours.
 
 **Hours to Complete Automatic Replica Creation at Different Network Speeds**
 
@@ -171,15 +171,15 @@ To help you choose a replica creation method, the following table provides estim
 |500 GB|2844|711|178|45|15|
 
 ### Offline replication for Azure Backup
-When you're backing up data from the DPM server to Azure you can do the initial replication over the network or using offline seeding. [Read more](/azure/backup/backup-azure-backup-import-export).
+When you're backing up data from the DPM server to Azure, you can do the initial replication over the network or using offline seeding. [Read more](/azure/backup/backup-azure-backup-import-export).
 
 ### Initial replication manually
 If you are deploying DPM to protect data over a WAN and your protection group includes more than 5 GB of data, we recommend that you choose the manual method for creating the replicas.
 
 If you choose manual replica creation, DPM specifies the precise locations on the DPM server where you must create the replicas. Typically, you create the replicas by restoring your most recent backup of the data source from removable media such as tape. After you restore the data, you complete the process by running synchronization with consistency check for each of the replicas.
 
-It is crucial that when you restore the data to the DPM server to create the replica, you retain the original directory structure and properties of the data source, such as time stamps and security permissions. The more discrepancies that exist between the replicas and the protected data source, the longer the consistency checking part of the process takes. If you do not preserve the original directory structure and properties, manual replica creation can take as long as automatic replica creation.
+It is crucial that when you restore the data to the DPM server to create the replica, you retain the original directory structure and properties of the data source, such as time stamps and security permissions. The more the discrepancies that exist between the replicas and the protected data source, the longer the consistency checking part of the process takes. If you do not preserve the original directory structure and properties, manual replica creation can take as long as automatic replica creation.
 
 ## Naming a Protection Group
 
-When you name the protection group, provide a unique, meaningful name for the group. The name can include any combination of alphanumeric characters and can include spaces, but cannot exceed 64 characters.
+When you name the protection group, provide a unique, meaningful name for the group. The name can include any combination of alphanumeric characters and can include spaces but cannot exceed 64 characters.
