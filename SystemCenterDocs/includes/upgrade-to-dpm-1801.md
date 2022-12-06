@@ -125,12 +125,12 @@ To add a volume in the administrator console:
 
 1. In the DPM Administrator console, select the **Management** feature > **Disk Storage** > **Add**.
 
-2. In the **Add Disk Storage** dialog, select an available volume > select **Add** > type a friendly name for the volume > select **OK**.
+2. In the **Add Disk Storage** page, select an available volume > select **Add** > type a friendly name for the volume > select **OK**.
 
       ![Screenshot showing how to add volume.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-add-volume.png)
 
 If you want to add a disk, it must belong to a protection group with legacy storage. Those disks can only be used for those protection groups. If the DPM server doesn't have sources with legacy protection, the disk won't appear.
-For more information on adding disks, see the article [Adding disks to increase legacy storage](#adding-disks-to-increase-legacy-storage). You can't give disks a friendly name.
+For more information on adding disks, see [Adding disks to increase legacy storage](#adding-disks-to-increase-legacy-storage). You can't give disks a friendly name.
 
 
 ### Assign Workloads to Volumes
@@ -201,9 +201,9 @@ After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Serv
 
    ![Screenshot showing how to stop protection.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
 
-   The **Remove from Group** dialog opens.
+   The **Remove from Group** page opens.
 
-2. In the **Remove from Group** dialog, review the used disk space and the available free space in the storage pool. The default is to leave the recovery points on the disk and allow them to expire per their associated retention policy. Select **OK**.
+2. In the **Remove from Group** page, review the used disk space and the available free space in the storage pool. The default is to leave the recovery points on the disk and allow them to expire per their associated retention policy. Select **OK**.
 
     If you want to immediately return the used disk space to the free storage pool, select **Delete replica on disk**. This will delete the backup data (and recovery points) associated with that member.
 
@@ -222,11 +222,11 @@ If you want to use legacy storage with DPM 2016, it may become necessary to add 
 
 3. On the tool ribbon, select **Add**.
 
-    The **Add Disk Storage** dialog opens.
+    The **Add Disk Storage** page opens.
 
-    ![Screenshot showing add disks dialog.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-add-disk-storage.png)
+    ![Screenshot showing add disks page.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-add-disk-storage.png)
 
-4. In the **Add Disk Storage** dialog, select **Add disks**.
+4. In the **Add Disk Storage** page, select **Add disks**.
 
     DPM provides a list of available disks.
 

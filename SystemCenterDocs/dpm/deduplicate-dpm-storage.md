@@ -177,7 +177,7 @@ Dedup requires a special set of configuration options to support virtualized DPM
     Set-ItemProperty -Path HKLM:\Cluster\Dedup -Name DeepGCInterval -Value 0xFFFFFFFF
     ```
 
-3.  **Tune performance for large-scale operations**- Run the following PowerShell script to:
+3.  **Tune performance for large scale operations**- Run the following PowerShell script to:
 
     -   Disable additional processing and I\/O when deep garbage collection runs
 
