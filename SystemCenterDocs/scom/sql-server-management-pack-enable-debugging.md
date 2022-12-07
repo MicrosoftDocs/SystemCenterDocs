@@ -2,10 +2,10 @@
 ms.assetid: b6aec30b-3bd1-4e4e-a664-23faee39953a
 title: Enabling debugging in Management Pack for SQL Server
 description: This article explains how to enable debugging in Management Pack for SQL Server
-author: Anastas1ya
-ms.author: v-asimanovic
-manager: vvithal
-ms.date: 7/11/2022
+manager: evansma
+author: epomortseva
+ms.author: v-ekaterinap
+ms.date: 12/7/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -26,5 +26,5 @@ To enable debugging, do the following:
 
 The same should be done for each agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
 
->[!NOTE]
->Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
+> [!NOTE]
+> Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.

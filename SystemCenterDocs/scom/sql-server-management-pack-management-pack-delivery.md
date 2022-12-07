@@ -66,8 +66,8 @@ The environment that you use must meet the following prerequisites before you st
 
   This management pack requires an author set of privileges to create a management pack for storing overrides. If the default action account does not have these privileges, create a new account and map this account to the Microsoft SQL Server Run As Profile.
 
->[!NOTE]
->Management Pack for SQL Server does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
+> [!NOTE]
+> Management Pack for SQL Server does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 
