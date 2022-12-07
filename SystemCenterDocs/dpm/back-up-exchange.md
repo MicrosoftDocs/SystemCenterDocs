@@ -22,7 +22,7 @@ ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
 
 ::: moniker range="<=sc-dpm-1807"
 
-System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013 and Exchange 2016. To ensure your entire Exchange deployment is protected, configure protection for volumes, system state, or full bare metal recovery. This article provides the steps for configuring DPM so that you can protect your Exchange deployment. If you've a large Exchange deployment, use a database availability group (DAG) to scale protection for Exchange mailbox databases. In addition to backing up mail databases, to fully protect your Exchange deployment, you should back up Exchange Server roles such as the Client Access Server or the transport service on mailbox servers.
+System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013 and Exchange 2016. To ensure your entire Exchange deployment is protected, configure protection for volumes, system state, or full bare metal recovery. This article provides the steps for configuring DPM so that you can protect your Exchange deployment. If you've a large Exchange deployment, use a database availability group (DAG) to scale protection for Exchange mailbox databases. In addition to backing up mail databases to fully protect your Exchange deployment, you should back up Exchange Server roles, such as the Client Access Server or the transport service on mailbox servers.
 
 ## Prerequisites and limitations
 Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the deployment prerequisites:
@@ -31,7 +31,7 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
 -  Review the article, [What's supported and what isn't for DPM?](dpm-support-issues.md), for any Exchange issues.
 
--  Ensure that the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must've the 64-bit version of eseutil.exe and ese.dll. If you update these files on the Exchange server, you must update the files on the DPM server too. The `.ese` and `.eseutil` files are usually in the location, `C:\Program Files\Microsoft\Exchange Server\V15\Bin`.
+-  Ensure that the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must have the 64-bit version of eseutil.exe and ese.dll. If you update these files on the Exchange server, you must update the files on the DPM server too. The `.ese` and `.eseutil` files are usually in the location, `C:\Program Files\Microsoft\Exchange Server\V15\Bin`.
 
     To maintain up-to-date copies:
 
@@ -42,13 +42,13 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
         For example, in a typical installation, type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
       > [!NOTE]
-      > The *Eseutil* is not forward or backward compatible. If you protect two different versions of Exchange Server database using a single DPM server, the integrity check will work only with the compatible version of *Eseutil* and it will fail for all other Exchange Server version. <br>To avoid this, we recommend you to use a separate DPM server for protecting each version of the Exchange Server with respective *Eseutil* version installed on the DPM server. If that is not feasible, you need to turn on the integrity check for only one version of Exchange Server databases with the respective version of *Eseutil*.
+      > The *Eseutil* isn't forward or backward compatible. If you protect two different versions of Exchange Server database using a single DPM server, the integrity check will work only with the compatible version of *Eseutil* and it will fail for all other Exchange Server version. <br>To avoid this, we recommend you to use a separate DPM server for protecting each version of the Exchange Server with respective *Eseutil* version installed on the DPM server. If that isn't feasible, you need to turn on the integrity check for only one version of Exchange Server databases with the respective version of *Eseutil*.
 
 -  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 
 -  To protect an Exchange 2013 and Exchange 2016 Database Availability Group (DAG) node, install the DPM protection agent on the node. While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
--  DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There is an 80 TB limit for DPM replica volumes, and 40 TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user's mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
+-  DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user's mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
 
 -  DPM functions with any database role. You can configure DPM to protect a server that hosts a collection of active or passive mailbox databases.
 
@@ -64,11 +64,11 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
     -   **Add mailbox databases to the server**. If you create or add new mailbox databases to a protected storage group on an Exchange server, these databases are automatically added to the DPMreplication and protection. You can add mailbox databases in incremental backups only after a full backup has finished.
 
-    -   **Change mailbox database file paths**. If you move a protected database or log files to a volume that contains data that is protected by DPM, the protection continues. If you move a protected database or log files to a volume that is not protected by DPM, an alert appears and the protection jobs fail. To resolve the alert, in the alert details, select the **Modify protection job** link and then run a consistency check.
+    -   **Change mailbox database file paths**. If you move a protected database or log files to a volume that contains data that is protected by DPM, the protection continues. If you move a protected database or log files to a volume that isn't protected by DPM, an alert appears and the protection jobs fail. To resolve the alert, in the alert details, select the **Modify protection job** link and then run a consistency check.
 
     -   **Dismount mailbox databases**. If you dismount a protected mailbox database, the protection job for that particular database fails. The replica is marked inconsistent when DPM runs the next express full backup.
 
-    -   **Rename mailbox databases**. If you need to change the name of the mailbox database, stop the protection, and protect the database again. Until you protect the database again, the backups continue to work but mailbox enumeration fails.
+    -   **Rename mailbox databases**. If you need to change the name of the mailbox database, stop the protection, and protect the database again. Until you protect the database again, the backups continue to work, but mailbox enumeration fails.
 
 ## Why back up Exchange with DPM?
 When deciding whether to back up Exchange data with Exchange 2013 and Exchange 2016 native data protection or DPM, consider the following:
@@ -85,7 +85,7 @@ Native data protection provides:
 
 Native protection might not be enough if application errors, corruptions, or security and malware incidents occur. In these situations, DPM provides a number of advantages:
 
--   Less DAGs are required - Native protection requires additional mailbox servers to host copies of active data. There's no reliance on DAGs for backup with DPM protection.
+-   Fewer DAGs are required - Native protection requires additional mailbox servers to host copies of the active data. There's no reliance on DAGs for backup with DPM protection.
 
 -   Simpler restore - DPM provides simple and centralized data recovery from point-in-time backups.
 
@@ -117,9 +117,9 @@ Native protection might not be enough if application errors, corruptions, or sec
 
 3.  In **Select Group Members**, select all the DAGs that store data you want to protect. For each Exchange server, you can also select to do a system state backup or full bare metal backup (which includes the system state). This is useful if you want the ability to recover your entire server and not just the data. [Deploy protection groups](create-dpm-protection-groups.md).
 
-4.  In **Select data protection method**, specify how you want to handle short- and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term backup to a standalone tape device or tape library connected to the DPM server.
+4.  In **Select data protection method**, specify how you want to handle short- and long-term backup. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term backup to a standalone tape device or tape library connected to the DPM server.
 
-5.  In **Specify Exchange Protection Options**, select **Run Eseutil** to check data integrity to check the integrity of the Exchange Server databases. This moves the backup consistency checking from the Exchange Server to the DPM server, which means the I/O impact of running Eseutil.exe on the Exchange Server during the backup itself is eliminated. To protect a DAG, ensure that you select Run for log files only (Recommended for DAG servers). If you did not previously copy the .eseutil file, an error will occur.
+5.  In **Specify Exchange Protection Options**, select **Run Eseutil** to check data integrity to check the integrity of the Exchange Server databases. This moves the backup consistency checking from the Exchange Server to the DPM server, which means the I/O impact of running Eseutil.exe on the Exchange Server during the backup itself is eliminated. To protect a DAG, ensure that you select Run for log files only (Recommended for DAG servers). If you didn't previously copy the .eseutil file, an error will occur.
 
 6.  In **Specify Exchange DAG Protection**, select the databases you want to copy for either a full backup or copy backup from the **Database copies selected for Full Backup** or **Database copies selected for Copy Backup** list boxes. For protecting multiple copies of the same database, you can select only one copy for full backup and then select the remaining copies for copy backup.
 
@@ -133,7 +133,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
+    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page, specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
@@ -147,7 +147,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
 12. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure that the workloads you want to back up to Azure are selected.
 
-13. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs, a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+13. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
 14. In **Specify online retention policy**, you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
@@ -220,7 +220,7 @@ After the protection group has been created, the initial replication occurs, and
 
     Any synchronization job for the selected recovery item is canceled while the recovery is in progress.
 
-8.  After the recovery process has finished, the required mailbox is not quite fully restored. The mailbox database to which the mailbox belongs is only restored to the Recovery mailbox database. Restore the mailbox by running this cmdlet:
+8.  After the recovery process has finished, the required mailbox isn't fully restored. The mailbox database to which the mailbox belongs is only restored to the Recovery mailbox database. Restore the mailbox by running this cmdlet:
 
     ```
     New-MailboxRestoreRequest -SourceDatabase 'RDB-CONTROL' -SourceStoreMailbox 'mailbox name' -TargetMailbox <name>@contoso.com -TargetRootFolder Recovery -SkipMerging StorageProviderForSource
@@ -284,7 +284,7 @@ After the protection group has been created, the initial replication occurs, and
 
     1.  **Mount the databases after they are recovered**. Select this.
 
-    2.  **Network bandwidth usage throttling**. Click **Modify** to enable throttling.
+    2.  **Network bandwidth usage throttling**. Select **Modify** to enable throttling.
 
     3.  Select **Enable SAN-based recovery using hardware snapshots** if applicable.
 
@@ -298,7 +298,7 @@ After the protection group has been created, the initial replication occurs, and
 
     In the **Re-image your computer** wizard, you can ignore any warning about a system image not found.
 
--   In the **Select a system image backup** page, select **Select a system image**. Select **Advanced** to select recovery files from a network share. Select **Search for a system image on the network** and select **Yes** if asked if you're sure you want to connect to the network.
+-   In the **Select a system image backup** page, select **Select a system image**. Select **Advanced** to select recovery files from a network share. Select **Search for a system image on the network** and select **Yes** when asked if you're sure you want to connect to the network.
 
 -   Specify the network folder, select the backup, and select the date and time of the image you want to restore. Specify any additional driver and disk settings, and then select **Finish** to start the restore.
 
@@ -315,7 +315,7 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
 
 -  Review the article, [What's supported and what isn't for DPM?](dpm-support-issues.md), for any Exchange issues.
 
--  Ensure that the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must've the 64-bit version of eseutil.exe and ese.dll. If you update these files on the Exchange server, you must update the files on the DPM server too. The `.ese` and `.eseutil` files are usually in the location, `C:\Program Files\Microsoft\Exchange Server\V15\Bin`.
+-  Ensure that the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must have the 64-bit version of eseutil.exe and ese.dll. If you update these files on the Exchange server, you must update the files on the DPM server too. The `.ese` and `.eseutil` files are usually in the location, `C:\Program Files\Microsoft\Exchange Server\V15\Bin`.
 
     To maintain up-to-date copies:
 
@@ -326,19 +326,19 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
         For example, in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
     > [!NOTE]
-    > The *Eseutil* is not forward or backward compatible. If you protect two different versions of Exchange Server database using a single DPM server, the integrity check will work only with the compatible version of *Eseutil* and it will fail for all other Exchange Server versions.<br>
-    To avoid this, we recommend you to use a separate DPM server for protecting each version of Exchange Server with respective *Eseutil* version installed on the DPM server. If that is not feasible, you need to turn on the integrity check for only one version of Exchange Server databases with the respective version of *Eseutil*.
+    > The *Eseutil* isn't forward or backward compatible. If you protect two different versions of Exchange Server database using a single DPM server, the integrity check will work only with the compatible version of *Eseutil* and it will fail for all other Exchange Server versions.<br>
+    To avoid this, we recommend you to use a separate DPM server for protecting each version of Exchange Server with respective *Eseutil* version installed on the DPM server. If that isn't feasible, you need to turn on the integrity check for only one version of Exchange Server databases with the respective version of *Eseutil*.
 
 
 -  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 
 -  To protect an Exchange 2016 and Exchange 2019 Database Availability Group (DAG) node, install the DPM protection agent on the node. While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
--  DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There is an 80 TB limit for DPM replica volumes, and 40 TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
+-  DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There is an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
 
 -  DPM functions with any database role. You can configure DPM to protect a server that hosts a collection of active or passive mailbox databases.
 
--  Configure one full backup per day and a synchronization frequency to suit your requirements for Exchange log truncations. When protecting more than one copy of an Exchange mailbox database (for example, when protecting members of a DAG), configure one node for full backups and the rest for copy backups. Copy backups do not truncate log files.
+-  Configure one full backup per day and a synchronization frequency to suit your requirements for Exchange log truncations. When protecting more than one copy of an Exchange mailbox database (for example, when protecting members of a DAG), configure one node for full backups and the rest for copy backups. Copy backups don't truncate log files.
 
 -  Protect at least two copies of each mailbox database. You can use inexpensive Serial Advanced Technology Attachment (SATA) drives or several JBOD disks for storage.
 
@@ -350,11 +350,11 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
 
     -   **Add mailbox databases to the server**. If you create or add new mailbox databases to a protected storage group on an Exchange server, these databases are automatically added to the DPMreplication and protection. You can add mailbox databases in incremental backups only after a full backup has finished.
 
-    -   **Change mailbox database file paths**. If you move a protected database or log files to a volume that contains data that is protected by DPM, the protection continues. If you move a protected database or log files to a volume that is not protected by DPM, an alert appears and the protection jobs fail. To resolve the alert, in the alert details, select the **Modify protection job** link and then run a consistency check.
+    -   **Change mailbox database file paths**. If you move a protected database or log files to a volume that contains data that is protected by DPM, the protection continues. If you move a protected database or log files to a volume that isn't protected by DPM, an alert appears and the protection jobs fail. To resolve the alert, in the alert details, select the **Modify protection job** link and then run a consistency check.
 
     -   **Dismount mailbox databases**. If you dismount a protected mailbox database, the protection job for that particular database fails. The replica is marked inconsistent when DPM runs the next express full backup.
 
-    -   **Rename mailbox databases**. If you need to change the name of the mailbox database, stop the protection and protect the database again. Until you protect the database again, the backups continue to work but mailbox enumeration fails.
+    -   **Rename mailbox databases**. If you need to change the name of the mailbox database, stop the protection and protect the database again. Until you protect the database again, the backups continue to work, but mailbox enumeration fails.
 
 ## Why back up Exchange with DPM?
 When deciding whether to back up Exchange data with Exchange 2016 and Exchange 2019 native data protection or DPM, consider the following:
@@ -369,9 +369,9 @@ Native data protection provides:
 
 -   Point-in-time database snapshots
 
-Native protection might not be enough if application errors, corruptions, or security and malware incidents occur. In these situations, DPM provides a number of advantages:
+Native protection might not be enough if application errors, corruptions, or security and malware incidents occur. In these situations, DPM provides the following advantages:
 
--   Less DAGs are required - Native protection requires additional mailbox servers to host copies of active data. There's no reliance on DAGs for backup with DPM protection.
+-   Fewer DAGs are required - Native protection requires additional mailbox servers to host copies of the active data. There's no reliance on DAGs for backup with DPM protection.
 
 -   Simpler restore - DPM provides simple and centralized data recovery from point-in-time backups.
 
@@ -405,7 +405,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
 4.  In **Select data protection method**, specify how you want to handle short- and long-term backup. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
-5.  In **Specify Exchange Protection Options**, select **Run Eseutil** to check data integrity to check the integrity of the Exchange Server databases. This moves the backup consistency checking from the Exchange Server to the DPM server, which means the I/O impact of running Eseutil.exe on the Exchange Server during the backup itself is eliminated. To protect a DAG, ensure that you select Run for log files only (Recommended for DAG servers). If you did not previously copy the .eseutil file, an error will occur.
+5.  In **Specify Exchange Protection Options**, select **Run Eseutil** to check data integrity to check the integrity of the Exchange Server databases. This moves the backup consistency checking from the Exchange Server to the DPM server, which means the I/O impact of running Eseutil.exe on the Exchange Server during the backup itself is eliminated. To protect a DAG, ensure that you select Run for log files only (Recommended for DAG servers). If you didn't previously copy the .eseutil file, an error will occur.
 
 6.  In **Specify Exchange DAG Protection**, select the databases you want to copy for either a full backup or copy backup from the **Database copies selected for Full Backup** or **Database copies selected for Copy Backup** list boxes. For protecting multiple copies of the same database, you can select only one copy for full backup and then select the remaining copies for copy backup.
 
@@ -419,7 +419,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
+    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page, specify the tape/library to use and whether data should be compressed and encrypted on tape.
 
@@ -433,7 +433,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
 12. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure that the workloads you want to back up to Azure are selected.
 
-13. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs, a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+13. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
 
 14. In **Specify online retention policy**, you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
@@ -506,7 +506,7 @@ After the protection group has been created, the initial replication occurs and 
 
     Any synchronization job for the selected recovery item is canceled while the recovery is in progress.
 
-8.  After the recovery process has finished, the required mailbox is not quite fully restored. The mailbox database to which the mailbox belongs is only restored to the Recovery mailbox database. Restore the mailbox by running this cmdlet:
+8.  After the recovery process has finished, the required mailbox isn't fully restored. The mailbox database to which the mailbox belongs is only restored to the Recovery mailbox database. Restore the mailbox by running this cmdlet:
 
     ```
     New-MailboxRestoreRequest -SourceDatabase 'RDB-CONTROL' -SourceStoreMailbox 'mailbox name' -TargetMailbox <name>@contoso.com -TargetRootFolder Recovery -SkipMerging StorageProviderForSource
@@ -584,7 +584,7 @@ After the protection group has been created, the initial replication occurs and 
 
     In the **Re-image your computer** wizard, you can ignore any warning about a system image not found.
 
--   In the **Select a system image backup** page, select **Select a system image**. Select **Advanced** to select recovery files from a network share. Select **Search for a system image on the network** and select **Yes** if asked if you're sure you want to connect to the network.
+-   In the **Select a system image backup** page, select **Select a system image**. Select **Advanced** to select recovery files from a network share. Select **Search for a system image on the network** and select **Yes** when asked if you're sure you want to connect to the network.
 
 -   Specify the network folder, select the backup, and select the date and time of the image you want to restore. Specify any additional driver and disk settings, and then select **Finish** to start the restore.
 

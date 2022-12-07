@@ -53,7 +53,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 -   DPM reduces potential conflicts between backup tools and SQL Server protection schedules.
 
--   DPM can protect SQL Server at the instance level or database level. When protection at the instance level is turned on, DPM detects new databases on that instance and automatically adds them to its protection group.
+-   DPM can protect SQL Server at the instance level or database level. When protection at the instance level is turned on, DPM detects new databases on that instance, and automatically adds them to its protection group.
 
 -   DPM is an affordable option. It's a good fit for a small SQL Server footprint and can scale for organizations that have a larger SQL Server footprint.
 
@@ -63,9 +63,9 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 ## Prerequisites and limitations
 
--   If you have a database with files on a remote file share, protection will fail with Error ID 104. DPM does not support protection for SQL Server data on a remote file share.
+-   If you have a database with files on a remote file share, protection will fail with Error ID 104. DPM doesn't support protection for SQL Server data on a remote file share.
 
--   DPM cannot protect databases that are stored on remote SMB shares.
+-   DPM can't protect databases that are stored on remote SMB shares.
 
 -   Ensure that the [availability group replicas are configured as read-only](/sql/database-engine/availability-groups/windows/configure-read-only-access-on-an-availability-replica-sql-server).
 
@@ -104,7 +104,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 -   SQL Server 2014 or above backup issues:
 
-    -   SQL server 2014 added a new feature to create a [database for on-premises SQL Server in Windows Azure Blob storage](/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure). DPM cannot be used to protect this configuration.
+    -   SQL server 2014 added a new feature to create a [database for on-premises SQL Server in Microsoft Azure Blob storage](/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure). DPM can't be used to protect this configuration.
 
     -   There are some known issues with *Prefer secondary* backup preference for the SQL AlwaysOn option. DPM always takes a backup from secondary; if no secondary can be found, then the backup fails.
 
@@ -121,7 +121,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
     -   [Get DPM installed](install-dpm.md)
 
-2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
+2.  **Set up storage** - You can store backed-up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
 3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
@@ -154,7 +154,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
+    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page, specify the tape/library to use and whether data should be compressed and encrypted on tape.
 
@@ -168,7 +168,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure that the workloads you want to back up to Azure are selected.
 
-11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
 12. In **Specify online retention policy**, you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
@@ -227,7 +227,7 @@ Configure self-service SQL Server recovery as follows:
 > [!NOTE]
 > When you enable users of a DPM role to recover all SQL Server databases on an instance of the SQL Server, those users can also recover any SQL Server databases that are subsequently added to the instance. When you enable access by using DPM roles, ensure that all members of the role have been granted appropriate permission to view and access all the databases.
 
-5.  On the **Recovery Target Locations** page,  to restrict recovery locations for role users, select **Allow users to recover the databases to another instance of SQL Server** and specify one or more recovery target locations and file paths that are allowed. If you want to allow any path on an instance, then don't specify a value in **Recovered File Path**. If you enable the setting, users can recover database files to any location for which they have the write permission. However, users cannot overwrite the original database files, and the DPM Self-Service Recovery Tool (SSRT) for SQL Server blocks them if they attempt to do so.
+5.  On the **Recovery Target Locations** page,  to restrict recovery locations for role users, select **Allow users to recover the databases to another instance of SQL Server** and specify one or more recovery target locations and file paths that are allowed. If you want to allow any path on an instance, then don't specify a value in **Recovered File Path**. If you enable the setting, users can recover database files to any location for which they have the write permission. However, users can't overwrite the original database files, and the DPM Self-Service Recovery Tool (SSRT) for SQL Server blocks them if they attempt to do so.
 
 6.  In addition, on the computer from which self-service recovery will run, ensure that at least .NET framework 3.5 is installed and the DPM Self-Service Recovery Tool is installed. The tool is available in the DPM product installation location in the **DpmSqlEURInstaller** folder.
 

@@ -32,7 +32,7 @@ For information about troubleshooting, see [Troubleshooting SharePoint and DPM](
 
 -   For a list of supported SharePoint versions and the DPM versions required to back them up, see [What can DPM back up?](dpm-protection-matrix.md)
 
--   By default when you protect SharePoint, all content databases \(and the SharePoint\_Config and SharePoint\_AdminContent\* databases\) will be protected. If you want to add customizations such as search indexes, templates or application service databases, or the user profile service, you'll need to configure these for protection separately. Ensure that you enable protection for all folders that include these types of features or customization files.
+-   By default when you protect SharePoint, all content databases \(and the SharePoint\_Config and SharePoint\_AdminContent\* databases\) will be protected. If you want to add customizations, such as search indexes, templates or application service databases, or the user profile service, you'll need to configure these for protection separately. Ensure that you enable protection for all folders that include these types of features or customization files.
 
 -   SharePoint databases using AlwaysOn can be protected from DPM 2012 R2 with Update 5 onwards.
 
@@ -40,9 +40,9 @@ For information about troubleshooting, see [Troubleshooting SharePoint and DPM](
 
 -   Remember that for DPM runs as Local System and to back up SQL Server databases, it needs sysadmin privileges on that account for the SQL Server. On the SQL Server you want to back up, set NT AUTHORITY\\SYSTEM to sysadmin.
 
--   For every 10 million items in the farm, there must be at least 2 GB of space on the volume where the DPM folder is located. This space is required for catalog generation. To enable you to use DPM to perform a specific recovery of items \(site collections, sites, lists, document libraries, folders, individual documents, and list items\), catalog generation creates a list of the URLs contained within each content database. You can view the list of URLs in the recoverable items pane in the Recovery task area of the DPM Administrator Console.
+-   For every 10 million items in the farm, there must be at least 2 GB of space on the volume where the DPM folder is located. This space is required for catalog generation. To enable you to use DPM to perform a specific recovery of items \(site collections, sites, lists, document libraries, folders, individual documents, and list items\), catalog generation creates a list of URLs contained within each content database. You can view the list of URLs in the recoverable items pane in the Recovery task area of the DPM Administrator Console.
 
--   In the SharePoint farm, if you've SQL Server databases that are configured with SQL Server aliases, install the SQL Server client components on the front\-end Web server that DPM will protect.
+-   In the SharePoint farm, if you have SQL Server databases that are configured with SQL Server aliases, install the SQL Server client components on the front\-end Web server that DPM will protect.
 
 -   Protecting application store items isn't supported with SharePoint 2013.
 
@@ -60,9 +60,9 @@ For information about troubleshooting, see [Troubleshooting SharePoint and DPM](
 
     -   [Get DPM installed](install-dpm.md)
 
-2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
+2.  **Set up storage** - You can store backed-up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
-3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every server in the SharePoint farm, including SQL Servers. The only exception is that you only install it on a single Web Front End \(WFE\) server. For example, if you have a single farm with two WFE servers, an index server and a two\-node SQL Server cluster, you'd install the agent on the index server, both nodes in the SQL Server cluster, and one of the WFE servers. As WFE servers don't host content, DPM only needs the agent on one of them to serve as the entry point for protection. Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
+3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every server in the SharePoint farm, including SQL Servers. The only exception is that you only install it on a single Web Front End \(WFE\) server. For example, if you have a single farm with two WFE servers, an index server and a two\-node SQL Server cluster, you would install the agent on the index server, both nodes in the SQL Server cluster, and one of the WFE servers. As WFE servers don't host content, DPM only needs the agent on one of them to serve as the entry point for protection. Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
     If the SharePoint SQL Server database is remote, you'll need to configure the DPM agent on it. If it's clustered, then install the agent on all cluster nodes.
 
@@ -70,7 +70,7 @@ For information about troubleshooting, see [Troubleshooting SharePoint and DPM](
 To back up SharePoint farm, configure protection for SharePoint by using ConfigureSharePoint.exe and then create a protection group in DPM.
 
 1.  **Run ConfigureSharePoint.exe** - This tool configures the SharePoint VSS Writer service \(WSS\) and provides the protection agent with credentials for the SharePoint farm.
-    After you've deployed the protection agent, the ConfigureSharePoint.exe file can be found in the \<DPM Installation Path\>\\bin folder on the front\-end Web server.  If you've multiple WFE servers, you only need to install it on one of them. Run as follows:
+    After you've deployed the protection agent, the ConfigureSharePoint.exe file can be found in the \<DPM Installation Path\>\\bin folder on the front\-end Web server.  If you have multiple WFE servers, you only need to install it on one of them. Run as follows:
 
     -   On the WFE server at a command prompt, navigate to \<DPM installation location\>\\bin\\ and run **ConfigureSharePoint \[\-EnableSharePointProtection\] \[\-EnableSPSearchProtection\] \[\-ResolveAllSQLAliases\] \[\-SetTempPath \<path\>\]**, where:
 
@@ -78,9 +78,9 @@ To back up SharePoint farm, configure protection for SharePoint by using Configu
 
         -   **EnableSPSearchProtection** enables the protection of WSS 3.0 SP Search by using the registry key SharePointSearchEnumerationEnabled under HKLM\\Software\\Microsoft\\ Microsoft Data Protection Manager\\Agent\\2.0\\ on the front\-end Web Server, and registers the identity of the DCOM application WssCmdletsWrapper to run as a user whose credentials are entered with this option. This account should be a farm admin and also local admin on the front\-end Web Server.
 
-        -   **ResolveAllSQLAliases** displays all the aliases reported by the SharePoint VSS writer and resolves them to the corresponding SQL Server. It also displays their resolved instance names. If the servers are mirrored, it will also display the mirrored server. It reports all the aliases that are not being resolved to a SQL Server.
+        -   **ResolveAllSQLAliases** displays all the aliases reported by the SharePoint VSS writer and resolves them to the corresponding SQL Server. It also displays their resolved instance names. If the servers are mirrored, it will also display the mirrored server. It reports all the aliases that aren't being resolved to a SQL Server.
 
-        -   **SetTempPath** sets the environment variable TEMP and TMP to the specified path. Item-level recovery fails if a large site collection, site, list, or item is being recovered and there is insufficient space in the farm admin Temporary folder. This option allows you to change the folder path of the temporary files to a volume that has sufficient space to store the site collection or site being recovered.
+        -   **SetTempPath** sets the environment variable TEMP and TMP to the specified path. Item-level recovery fails if a large site collection, site, list, or item is being recovered and there's insufficient space in the farm admin Temporary folder. This option allows you to change the folder path of the temporary files to a volume that has sufficient space to store the site collection or site being recovered.
 
     -   Enter the farm administrator credentials. This account should be a member of the local Administrator group on the WFE server. If the farm administrator isn't a local admin, grant the following permissions on the WFE server:
 
@@ -96,7 +96,7 @@ To back up SharePoint farm, configure protection for SharePoint by using Configu
 
 4.  In **Select Group Members**, expand the server that holds the WFE role. If there's more than one WFE server, select the one on which you installed ConfigureSharePoint.exe. Learn more in [Deploy protection groups](create-dpm-protection-groups.md).
 
-    When you expand the SharePoint server, DPM queries VSS to see what data DPM can protect. If the SharePoint database is remote, DPM connects to it. If the SharePoint data sources don't appear, check if the VSS writer is running on the SharePoint server and any remote SQL Server and ensure that the DPM agent is installed on both the SharePoint server and the remote SQL Server. In addition, ensure that the SharePoint databases aren't being protected elsewhere as SQL Server databases.
+    When you expand the SharePoint server, DPM queries VSS to see what data DPM can protect. If the SharePoint database is remote, DPM connects to it. If the SharePoint data sources don't appear, check if the VSS writer is running on the SharePoint server and any remote SQL Server, and ensure that the DPM agent is installed on both the SharePoint server and the remote SQL Server. In addition, ensure that the SharePoint databases aren't being protected elsewhere as SQL Server databases.
 
 5.  In **Select data protection method**, specify how you want to handle short- and long\-term backup. Short\-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup \(for short or long\-term\). As an alternative to long\-term backup to the cloud, you can also configure long\-term backup to a standalone tape device or tape library connected to the DPM server.
 
@@ -110,7 +110,7 @@ To back up SharePoint farm, configure protection for SharePoint by using Configu
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
+    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page, specify the tape/library to use and whether data should be compressed and encrypted on tape.
 
@@ -122,9 +122,9 @@ To back up SharePoint farm, configure protection for SharePoint by using Configu
 
 10. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by selecting and holding the protection group in the **Protection** area of the DPM console and selecting **Perform Consistency Check**.
 
-11. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure that the workloads you want to back up to Azure are selected.
+11. If you have selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure that the workloads you want to back up to Azure are selected.
 
-12. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+12. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
 13. In **Specify online retention policy**, you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
@@ -166,7 +166,7 @@ You can recover SharePoint data as follows:
 
 -   Copy the data to tape
 
-Note that to recover a farm:
+To recover a farm:
 
 -   If you protected a SharePoint server as a SQL Server database, you can recover SharePoint data by selecting the SQL Server database in the Recovery Wizard.
 
@@ -208,13 +208,12 @@ There are a couple of possible scenarios for farm recovery:
 
 6.  On the **Review recovery selection** page, select **Next**.
 
-7.  Select where you want to recover the database. Note that:
+7.  Select where you want to recover the database. 
 
-    -   You can't recover an entire farm to an alternate location.
-
-    -   If you select **Copy to a network folder** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices.
-
-    -   If you select **Copy to tape** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices. For the tape option, you'll select the tape library you want to use for recovery.
+> [!NOTE]
+>  -   You can't recover an entire farm to an alternate location.
+>  -   If you select **Copy to a network folder** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices.
+>  -   If you select **Copy to tape** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices. For the tape option, you'll select the tape library you want to use for recovery.
 
 8.  Specify recovery options for network bandwidth usage throttling, SAN-based recovery, and email notifications, and then select **Next**.
 
@@ -242,11 +241,10 @@ There are a couple of possible scenarios for farm recovery:
 
 9. Select where you want to recover the database. Note that:
 
-    -   You can't recover an entire farm to an alternate location.
-
-    -   If you select **Copy to a network folder** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices.
-
-    -   If you select **Copy to tape** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices. For the tape option, you'll select the tape library you want to use for recovery.
+    > [!NOTE]
+    > -   You can't recover an entire farm to an alternate location.
+    > -   If you select **Copy to a network folder** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices.
+    > -   If you select **Copy to tape** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices. For the tape option, you'll select the tape library you want to use for recovery.
 
 10. Specify recovery options for network bandwidth usage throttling, SAN-based recovery, and e-mail notifications, and then select **Next**.
 
@@ -280,7 +278,7 @@ The following procedure uses the example of a server farm with two front-end Web
 
 5. On Server2, at the command prompt, change the directory to _DPM installation location_\bin\ and run ConfigureSharepoint. For more information about ConfigureSharePoint, see [Configure backup](#configure-backup).
 
-6. There is a known issue when the server farm is the only member of the protection group and the protection group is configured to use tape-based protection. If your server farm is the only member of the protection group using tape-based protection, to change the front-end Web server that DPM uses to protect the farm, you must temporarily add another member to the protection group by performing the following steps:
+6. There's a known issue when the server farm is the only member of the protection group and the protection group is configured to use tape-based protection. If your server farm is the only member of the protection group using tape-based protection, to change the front-end Web server that DPM uses to protect the farm, you must temporarily add another member to the protection group by performing the following steps:
 
    - In the DPM Administrator Console, select **Protection** on the navigation bar.
 
@@ -288,7 +286,7 @@ The following procedure uses the example of a server farm with two front-end Web
 
    - In the Modify Group Wizard, add a volume on any server to the protection group. You can remove this volume from the protection after the procedure is completed.
 
-   - If the protection group is configured for short-term disk-based protection and long-term tape-based protection, select the manual replica creation option. This prevents creating a replica for the volume that you are temporarily adding to the protection group.
+   - If the protection group is configured for short-term disk-based protection and long-term tape-based protection, select the manual replica creation option. This prevents creating a replica for the volume that you're temporarily adding to the protection group.
 
    - Complete the wizard.
 
@@ -310,17 +308,17 @@ When a database is removed from a SharePoint farm, DPM will skip the backup of t
 
 ### DPM Alert - Farm Configuration Changed
 
-This is a warning alert that is generated in Data Protection Manager (DPM) when automatic protection of a SharePoint database fails. See the alert **Details** pane for more information about the cause of this alert.
+This is a warning alert that is generated in Data Protection Manager (DPM) when automatic protection of a SharePoint database fails. For more information about the cause of this alert, see the alert **Details** pane.
 
 To resolve this alert, follow these steps:
 
-1. Verify with the SharePoint administrator if the database has actually been removed from the farm. If the database has been removed from the farm, then it must be removed from active protection in DPM.
+1. Verify with the SharePoint administrator if the database has been removed from the farm. If the database has been removed from the farm, then it must be removed from active protection in DPM.
 2. To remove the database from active protection:
    1. In the **MABS Administrator Console**, select **Protection** on the navigation bar.
    2. In the **Display** pane, select and hold the protection group for the SharePoint farm, and then select **Stop Protection of member**.
    3. In the **Stop Protection** dialog, select **Retain Protected Data**.
    4. Select **Stop Protection**.
 
-You can add the SharePoint farm back for protection by using the **Modify Protection Group** wizard. During re-protection, select the SharePoint front-end server and select **Refresh** to update the SharePoint database cache, and then select the SharePoint farm and proceed.
+You can add the SharePoint farm back for protection by using the **Modify Protection Group** wizard. During reprotection, select the SharePoint front-end server and select **Refresh** to update the SharePoint database cache, and then select the SharePoint farm and proceed.
 
 ::: moniker-end

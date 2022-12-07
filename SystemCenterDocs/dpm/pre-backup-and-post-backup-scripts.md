@@ -36,7 +36,7 @@ When DPM runs a protection job, *ScriptingConfig.xml* on the protected computer 
 > [!NOTE]
 > Protection jobs include replica creation, express full backup, synchronization, and consistency check.
 
-DPM runs the pre-backup and post-backup scripts by using the local system account. As a best practice, ensure that the scripts have Read and Execute permissions for the administrator and local system accounts only. This level of permissions prevent unauthorized users from modifying the scripts.
+DPM runs the pre-backup and post-backup scripts by using the local system account. As a best practice, ensure that the scripts have Read and Execute permissions for the administrator and local system accounts only. This level of permissions prevents unauthorized users from modifying the scripts.
 
 **ScriptingConfig.xml**
 
