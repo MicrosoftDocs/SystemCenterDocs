@@ -2,10 +2,10 @@
 ms.assetid: 110aa866-00e8-4672-bd03-39cc8818e6b4
 title: Features and enhancements in Management Pack for SQL Server Dashboards
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Dashboards
-author: Anastas1ya
-ms.author: v-asimanovic
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-ms.date: 6/28/2022
+ms.date: 12/7/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,12 @@ ms.technology: operations-manager
 # Features and Enhancements in Management Pack for SQL Server Dashboards
 
 This section covers new functionality and improvements in Management Pack for SQL Server Dashboards.
+
+## December 2022 - 7.0.40.0 CTP
+
+### What's New
+
+- Removed Silverlight framework
 
 ## June 2022 - 7.0.38.0 RTM
 

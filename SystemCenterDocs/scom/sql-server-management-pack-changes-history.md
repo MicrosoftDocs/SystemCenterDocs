@@ -2,10 +2,10 @@
 ms.assetid: 2973edd7-293f-496e-b4db-405d6438bb04
 title: Features and enhancements in Management Pack for SQL Server
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server
-author: Anastas1ya
-ms.author: v-asimanovic
-manager: vvithal
-ms.date: 6/28/2022
+author: vchvlad
+ms.author: v-vchernov
+manager: evansma
+ms.date: 12/7/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,35 @@ ms.technology: operations-manager
 # Features and Enhancements in Management Pack for SQL Server
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
+
+## December 2022 - 7.0.40.0 CTP
+
+### What's New
+
+- Added support for the SQL Server 2022 RTM
+- Added [custom monitoring](sql-server-management-pack-custom-monitor.md) which allows the creation of monitors and performance rules
+- Added a new "Availability Database Log Backup Status" monitor which allows to track the alert backups in databases participated in Availability Groups
+- Added new tasks which allow running the Discovery process on demand: "Run On-Demand Agent Job Discovery" and "Run On-Demand Database Discovery"
+- Updated the Agent Job "Last Run Status" monitor by adding new overrides: 'Number of fails threshold' which determines the number of the job fails to change the monitor's status, and the 'Define the Canceled status as Failed' which could track the Cancelled job's last run status as a Failed
+- Added new Agent "Job Duration" performance collection rule which collects the duration of the SQL Server Agent job in minutes, for Windows and Linux platforms
+- Added new Agent "Job Duration" alerting rule which throws an alert if the execution time of any of SQL Agent jobs has exceeded the specified threshold in minutes, for Windows and Linux platforms
+- Updated the "Securables Configuration Status" monitor by removing the unnecessary 'msdb.dbo.sp_help_jobactivity' securable and by adding new 'msdb.dbo.sysjobactivity', 'msdb.dbo.sysjobhistory', 'msdb.dbo.syssessions', and 'msdb.dbo.agent_datetime' securables
+- Updated the "Low Privilege Monitoring" and the "Service SID" operations guide sections with updated T-SQL scripts for least-privileged configurations
+- Added new "DB Log Bytes Flushed per Second", "DB Log Flushes per Second", and "DB Log Flush Wait Time" performance collection rules to measure the latency or investigate the I/O performance of a log device, for Windows and Linux platforms
+- Added new "Long Running Queries" alerting rule which throws an alert if the execution time of any of the running SQL queries has exceeded the specified threshold in seconds, for Windows and Linux platforms
+- Added new "DB Engine Disk Write Latency" and the "DB Engine Disk Read Latency" monitors to track the read/write latency issues at the DB Engine level
+- Always On discovery and monitoring workflows have been optimized for better performance
+- Policy discovery workflows have been optimized for better performance
+- Updated space monitoring workflows to apply 4-significant digit rounding in all the values
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
+- Updated display strings
+
+### Bug Fixes
+
+- Fixed a performance issue with the “Service Principal Name Configuration Status” monitor by reducing the load on the domain controller in large environments
+- Fixed an issue with the "Thread Count" monitor and the performance rule. Now these workflows count free threads more precisely including only the 'VISIBLE ONLINE' schedulers
+- Fixed an issue with the "Database Status" monitor in cases when the database, hosted on the Primary Replica of an Availability Group, has an issue with its state, the monitor does not change its state for that database and becomes Healthy
+- Fixed an issue with showing the full SQL query instead of the path in the diagnostic tracing SCOM toolset
 
 ## June 2022 - 7.0.38.0 RTM
 

@@ -287,6 +287,9 @@
 #### [Low-Privilege Monitoring](sql-server-management-pack-low-privilege-monitoring.md)
 ### [Views and Dashboards in Management Pack for SQL Server](sql-server-management-pack-views-and-dashboards.md)
 ### [SQL Server Reporting](sql-server-management-pack-sql-server-reporting.md)
+### Custom Monitoring
+#### [Custom Query-Based Monitors](sql-server-management-pack-custom-monitor.md)
+#### [Custom Query-Based Performance Rules](sql-server-management-pack-custom-rule.md)
 ### [Known Issues and Troubleshooting in Management Pack for SQL Server](sql-server-management-pack-known-issues-and-troubleshooting.md)
 ## Management Pack for Azure SQL Database
 ### [Features and Enhancements in Management Pack for Azure SQL Database](azure-sql-management-pack-changes-history.md)
@@ -294,11 +297,11 @@
 ### [Management Pack for Azure SQL Database Delivery](azure-sql-management-pack-management-pack-delivery.md)
 ### [Monitoring Configuration in Management Pack for Azure SQL Database](azure-sql-management-pack-monitoring-configuration.md)
 #### [Monitoring Types](azure-sql-management-pack-monitoring-types.md)
-#### [Custom Query-Based Monitoring](azure-sql-management-pack-custom-query-monitoring.md)
 ### Security Configuration
 #### [Azure SQL Database Run As Accounts](azure-sql-management-pack-run-as-accounts.md)
 #### [Low-Privilege Configuration](azure-sql-management-pack-low-privilege-configuration.md)
 ### [Views and Dashboards in Management Pack for Azure SQL Database](azure-sql-management-pack-viewing-information.md)
+#### [Custom Query-Based Monitoring](azure-sql-management-pack-custom-query-monitoring.md)
 ### [Known Issues and Troubleshooting in Management Pack for Azure SQL Database](azure-sql-management-pack-known-issues-and-troubleshooting.md)
 ## Management Pack for Azure SQL Managed Instance
 ### [Features and Enhancements in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-changes-history.md)
