@@ -1,7 +1,7 @@
 ---
 ms.assetid: dc45fd44-50ff-47af-bfdd-5407695c6cae
 title: Custom query-based monitoring in Management Pack for SQL Server
-description: This article explains how to configure custom query monitoring in Management Pack for SQL Server
+description: This article explains how to configure custom query monitor in Management Pack for SQL Server
 manager: evansma
 author: epomortseva
 ms.author: v-ekaterinap
