@@ -4,8 +4,8 @@ title: System requirements for System Center Operations Manager
 description: This article describes the software and hardware system requirements for System Center Operations Manager
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 03/02/2021
+manager: mkluck
+ms.date: 12/06/2022
 ms.topic: include
 ms.prod: system-center
 ms.technology: operations-manager

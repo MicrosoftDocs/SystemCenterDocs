@@ -30,7 +30,7 @@ The following tables list the release history for Operations Manager 2022.
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.22.10056.0||March 2022 |General Availability |
-|10.22.10110.0|[5020318](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-operations-manager-3f5780c9-36d9-4bba-8361-d40ca7c7ae80|December 2022|Update Rollup 1|
+|10.22.10110.0|[5020318](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-operations-manager-3f5780c9-36d9-4bba-8361-d40ca7c7ae80)|December 2022|Update Rollup 1|
 
 
 ### SCX Agent

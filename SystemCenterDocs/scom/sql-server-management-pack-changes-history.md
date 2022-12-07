@@ -2,10 +2,10 @@
 ms.assetid: 2973edd7-293f-496e-b4db-405d6438bb04
 title: Features and enhancements in Management Pack for SQL Server
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server
-author: Anastas1ya
-ms.author: v-asimanovic
-manager: vvithal
-ms.date: 6/28/2022
+author: vchvlad
+ms.author: v-vchernov
+manager: evansma
+ms.date: 12/7/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,6 +15,35 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server.
 
+## December 2022 - 7.0.40.0 CTP
+
+### What's New
+
+- Added support for the SQL Server 2022 RTM
+- Added [custom monitoring](sql-server-management-pack-custom-monitor.md) which allows the creation of monitors and performance rules
+- Added a new "Availability Database Log Backup Status" monitor which allows to track the alert backups in databases participated in Availability Groups
+- Added new tasks which allow running the Discovery process on demand: "Run On-Demand Agent Job Discovery" and "Run On-Demand Database Discovery"
+- Updated the Agent Job "Last Run Status" monitor by adding new overrides: 'Number of fails threshold' which determines the number of the job fails to change the monitor's status, and the 'Define the Canceled status as Failed' which could track the Cancelled job's last run status as a Failed
+- Added new Agent "Job Duration" performance collection rule which collects the duration of the SQL Server Agent job in minutes, for Windows and Linux platforms
+- Added new Agent "Job Duration" alerting rule which throws an alert if the execution time of any of SQL Agent jobs has exceeded the specified threshold in minutes, for Windows and Linux platforms
+- Updated the "Securables Configuration Status" monitor by removing the unnecessary 'msdb.dbo.sp_help_jobactivity' securable and by adding new 'msdb.dbo.sysjobactivity', 'msdb.dbo.sysjobhistory', 'msdb.dbo.syssessions', and 'msdb.dbo.agent_datetime' securables
+- Updated the "Low Privilege Monitoring" and the "Service SID" operations guide sections with updated T-SQL scripts for least-privileged configurations
+- Added new "DB Log Bytes Flushed per Second", "DB Log Flushes per Second", and "DB Log Flush Wait Time" performance collection rules to measure the latency or investigate the I/O performance of a log device, for Windows and Linux platforms
+- Added new "Long Running Queries" alerting rule which throws an alert if the execution time of any of the running SQL queries has exceeded the specified threshold in seconds, for Windows and Linux platforms
+- Added new "DB Engine Disk Write Latency" and the "DB Engine Disk Read Latency" monitors to track the read/write latency issues at the DB Engine level
+- Always On discovery and monitoring workflows have been optimized for better performance
+- Policy discovery workflows have been optimized for better performance
+- Updated space monitoring workflows to apply 4-significant digit rounding in all the values
+- Updated the "Product Version Compliance" monitor with the most recent version of public updates for the SQL Server
+- Updated display strings
+
+### Bug Fixes
+
+- Fixed a performance issue with the “Service Principal Name Configuration Status” monitor by reducing the load on the domain controller in large environments
+- Fixed an issue with the "Thread Count" monitor and the performance rule. Now these workflows count free threads more precisely including only the 'VISIBLE ONLINE' schedulers
+- Fixed an issue with the "Database Status" monitor in cases when the database, hosted on the Primary Replica of an Availability Group, has an issue with its state, the monitor does not change its state for that database and becomes Healthy
+- Fixed an issue with showing the full SQL query instead of the path in the System Center Operations Manager diagnostic tracing toolset
+
 ## June 2022 - 7.0.38.0 RTM
 
 ### What's New
@@ -23,7 +52,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Added 'Number of samples' override to the "Database Status" monitor to help avoid alert storming
 - Added support for the SQL Server 2022 public preview
 - Added support for enabling debug logging in Windows Event Log
-- Added support for enabling diagnostic tracing in the SCOM toolset
+- Added support for enabling diagnostic tracing in the System Center Operations Manager toolset
 - The SQL Server Evaluation edition can now be added to the exclude list of the "Local DB Engine" discovery
 - Monitoring workflows have been optimized for better performance
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
@@ -93,7 +122,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### Bug Fixes
 
 - Fixed an issue with continuous login attempts from passive SQL Server cluster node after the failover
-- Fixed an issue with the failing "SQL Server Agent Jobs" discovery in cases of unsupported ASCII characters in job names&mdash;added proper error handling
+- Fixed an issue with the failing "SQL Server Agent Jobs" discovery in cases of unsupported ASCII characters in job names by adding proper error handling
 - Fixed performance data collection for SQL Server DB Engines with Latin1_General_CP850_BIN collations
 - Fixed an issue with the incorrect alert name for the "LOG Free Space Left" monitor
 - Fixed an issue with the "Blocking Sessions" monitor that was enabled by default
@@ -115,7 +144,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated monitor "Product Version Compliance" with versions of most recent public updates to SQL Server
 - Updated data source of alerting rules to avoid alert storm after exiting maintenance mode
 - Updated alert description of monitor "Securables Configuration Status"
-- Added "CheckStartupType" property to SSIS Health Status monitor
+- Added "CheckStartupType" property to the SQL Server Integration Services Health Status monitor
 - Revised columns of SQL Agent and SQL Agent Jobs state views
 - Updated display strings
 
@@ -127,23 +156,23 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Fixed issue in data source of SPN Status monitor that may lead to memory leak
 - Fixed error "Unsupported path format" in workflows targeting Filegroups
 - Fixed discovery error on non-readable availability replicas
-- Fixed wrong Run As profile in SSIS Seed Discovery
+- Fixed wrong Run As profile in the SQL Server Integration Services Seed Discovery
 - Fixed issue that caused rule "Disable Discovery of Selected DB Engines" to fail
 - Fixed discovery issue for databases in recovering state
 - Fixed issue in monitor "Securables Configuration Status" when it went critical on Shared-Memory-only SQL Servers
 
 ## December 2019 - 7.0.20.0 RTM
 
-[Including changes made in the prior preview release — v.7.0.18, November 2019.]
+[Including changes made in the prior preview release — v.7.0.18, November 2019]
 
 ### What's New
 
 - Updated MP to support SQL Server 2019 RTM
 - Added filter by edition to "Local DB Engine Discovery"
-- Redesigned DB Space monitoring to improve performance: Enabled by default monitors and performance rules targeting Database which watch for disk space consumption by ROWS Filegroups and Logfiles
+- Redesigned DB Space monitoring to improve performance: Enabled by default monitors and performance rules targeting Database which watch for disk space consumption by ROWS Filegroups and Log files
 - Redesigned DB Space monitoring: Added two monitors and two performance rules targeting Database to watch for disk space consumption by In-Memory and FILESTREAM data
-- Redesigned DB Space monitoring: Read-only filegroups now count as well
-- Redesigned DB Space monitoring: Disabled by default all workflows targeting Filegroups, Files, Logfiles
+- Redesigned DB Space monitoring: Read-only Filegroups now count as well
+- Redesigned DB Space monitoring: Disabled by default all workflows targeting Filegroups, Files, Log files
 - Redesigned XTP performance counters to make them completely version-agnostic
 - Added attribute "TCP Port" to "SQL DB Engine Class" and updated "DB Engine Discovery" to populate the new property
 - Added summary dashboard for System Center Operations Manager 2019 Web Console (HTML5)
