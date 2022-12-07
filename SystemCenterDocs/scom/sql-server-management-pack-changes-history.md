@@ -42,7 +42,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Fixed a performance issue with the “Service Principal Name Configuration Status” monitor by reducing the load on the domain controller in large environments
 - Fixed an issue with the "Thread Count" monitor and the performance rule. Now these workflows count free threads more precisely including only the 'VISIBLE ONLINE' schedulers
 - Fixed an issue with the "Database Status" monitor in cases when the database, hosted on the Primary Replica of an Availability Group, has an issue with its state, the monitor does not change its state for that database and becomes Healthy
-- Fixed an issue with showing the full SQL query instead of the path in the diagnostic tracing SCOM toolset
+- Fixed an issue with showing the full SQL query instead of the path in the System Center Operations Manager diagnostic tracing toolset
 
 ## June 2022 - 7.0.38.0 RTM
 
@@ -52,7 +52,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Added 'Number of samples' override to the "Database Status" monitor to help avoid alert storming
 - Added support for the SQL Server 2022 public preview
 - Added support for enabling debug logging in Windows Event Log
-- Added support for enabling diagnostic tracing in the SCOM toolset
+- Added support for enabling diagnostic tracing in the System Center Operations Manager toolset
 - The SQL Server Evaluation edition can now be added to the exclude list of the "Local DB Engine" discovery
 - Monitoring workflows have been optimized for better performance
 - Updated the "Product Version Compliance" monitor with the most recent version of public updates for SQL Server
@@ -122,7 +122,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### Bug Fixes
 
 - Fixed an issue with continuous login attempts from passive SQL Server cluster node after the failover
-- Fixed an issue with the failing "SQL Server Agent Jobs" discovery in cases of unsupported ASCII characters in job names&mdash;added proper error handling
+- Fixed an issue with the failing "SQL Server Agent Jobs" discovery in cases of unsupported ASCII characters in job names by adding proper error handling
 - Fixed performance data collection for SQL Server DB Engines with Latin1_General_CP850_BIN collations
 - Fixed an issue with the incorrect alert name for the "LOG Free Space Left" monitor
 - Fixed an issue with the "Blocking Sessions" monitor that was enabled by default
@@ -144,7 +144,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Updated monitor "Product Version Compliance" with versions of most recent public updates to SQL Server
 - Updated data source of alerting rules to avoid alert storm after exiting maintenance mode
 - Updated alert description of monitor "Securables Configuration Status"
-- Added "CheckStartupType" property to SSIS Health Status monitor
+- Added "CheckStartupType" property to the SQL Server Integration Services Health Status monitor
 - Revised columns of SQL Agent and SQL Agent Jobs state views
 - Updated display strings
 
@@ -156,23 +156,23 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Fixed issue in data source of SPN Status monitor that may lead to memory leak
 - Fixed error "Unsupported path format" in workflows targeting Filegroups
 - Fixed discovery error on non-readable availability replicas
-- Fixed wrong Run As profile in SSIS Seed Discovery
+- Fixed wrong Run As profile in the SQL Server Integration Services Seed Discovery
 - Fixed issue that caused rule "Disable Discovery of Selected DB Engines" to fail
 - Fixed discovery issue for databases in recovering state
 - Fixed issue in monitor "Securables Configuration Status" when it went critical on Shared-Memory-only SQL Servers
 
 ## December 2019 - 7.0.20.0 RTM
 
-[Including changes made in the prior preview release — v.7.0.18, November 2019.]
+[Including changes made in the prior preview release — v.7.0.18, November 2019]
 
 ### What's New
 
 - Updated MP to support SQL Server 2019 RTM
 - Added filter by edition to "Local DB Engine Discovery"
-- Redesigned DB Space monitoring to improve performance: Enabled by default monitors and performance rules targeting Database which watch for disk space consumption by ROWS Filegroups and Logfiles
+- Redesigned DB Space monitoring to improve performance: Enabled by default monitors and performance rules targeting Database which watch for disk space consumption by ROWS Filegroups and Log files
 - Redesigned DB Space monitoring: Added two monitors and two performance rules targeting Database to watch for disk space consumption by In-Memory and FILESTREAM data
-- Redesigned DB Space monitoring: Read-only filegroups now count as well
-- Redesigned DB Space monitoring: Disabled by default all workflows targeting Filegroups, Files, Logfiles
+- Redesigned DB Space monitoring: Read-only Filegroups now count as well
+- Redesigned DB Space monitoring: Disabled by default all workflows targeting Filegroups, Files, Log files
 - Redesigned XTP performance counters to make them completely version-agnostic
 - Added attribute "TCP Port" to "SQL DB Engine Class" and updated "DB Engine Discovery" to populate the new property
 - Added summary dashboard for System Center Operations Manager 2019 Web Console (HTML5)

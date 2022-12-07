@@ -42,17 +42,17 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-  - Added tiles for Azure SQL Database Management Pack
-  - Rename tiles for SSRS Management Pack and SQL Server Replication Management Pack
+- Added tiles for Azure SQL Database management pack
+- Rename tiles for SQL Server Reporting Services management pack and SQL Server Replication management pack
 
 ## June 2019 - 7.0.16.0 RTM
 
 ### What's New
 
-  - Updated Dashboards configuration to show tiles for new MDX performance collections in Analysis Services management packs
+- Updated Dashboards configuration to show tiles for new MDX performance collections in the Analysis Services management pack
 
 ## February 2018 - 7.0.2.0 RTM
 
 ### Bug Fixes
 
-  - Fixed issue: "DW data early aggregation" rule crashes on SCOM 2016
+- Fixed issue: "DW data early aggregation" rule crashes on the System Center Operations Manager 2016
