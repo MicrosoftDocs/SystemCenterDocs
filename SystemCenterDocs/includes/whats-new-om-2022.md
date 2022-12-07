@@ -103,3 +103,13 @@ Operations Manager 2022 also includes the following updates:
     - Google Chrome version 88 and later.
 - Supports Ubuntu 20, Oracle Linux 8, Debian 10, and Debian 11.
 - Removed support for AIX, Solaris, RHEL 5, RHEL 6, RHEL 7 (PPC), CentOS 6, Debian 8, SLES 11, and SLES 12 PPC.
+
+## New features in Operations Manager 2022 UR1
+
+The following sections introduce the new features or feature updates supported in Operations Manager 2022 Update Rollup 1 (UR1).
+
+For problems fixed in UR1 and the installation instructions for UR1, see the [KB article](https://support.microsoft.com/topic/update-rollup-1-for-system-center-2022-operations-manager-3f5780c9-36d9-4bba-8361-d40ca7c7ae80).
+
+### Supports SQL Server 2022
+
+Operations Manager 2022 UR1 supports SQL Server 2022.

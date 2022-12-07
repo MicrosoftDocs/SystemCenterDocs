@@ -4,8 +4,8 @@ title: Release build versions for System Center Operations Manager
 description: This article details the release builds in Operations Manager
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 09/20/2022
+manager: mkluck
+ms.date: 11/24/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -21,7 +21,7 @@ ms.technology: operations-manager
 
 ::: moniker range="sc-om-2022"
 
-This article lists Microsoft System Center 2022 - Operations Manager build versions.
+This article lists Microsoft System Center 2022 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 [!INCLUDE [release-build-versions-2022.md](../includes/release-build-versions-2022.md)]
 
