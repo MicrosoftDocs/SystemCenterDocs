@@ -90,7 +90,7 @@ To create a new two-state custom query-based monitor, perform the following step
 
     ![Editing alerts](./media/sql-server-management-pack/editing-alerts.png)
 
->![NOTE]
+> [!NOTE]
 > By default, a custom query-based monitor will work for all SQL Server instances. If you only need to target a specific instance, override your monitor after creation.
 
 ## Three-state Monitor
@@ -99,5 +99,5 @@ Creating a three-state custom query-based monitor is similar to a two-state moni
 
 ![Warning and critical condition to three-states monitor](./media/sql-server-management-pack/warning-and-critical-conditions.png)
 
->![IMPORTANT]
+> [!IMPORTANT]
 > Critical conditions are verified first. If one or more critical conditions fail, the monitor will switch to the critical state, and warning conditions will not be verified.

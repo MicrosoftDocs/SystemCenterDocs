@@ -41,7 +41,7 @@ To create a new custom query-based performance rule, perform the following steps
 
     ![Specify target database name and SQL query](./media/sql-server-management-pack/custom-performance-rule-sql-query.png)
 
-    >![TIP]
+    > [!TIP]
     > After creating a custom performance rule, the original query cannot be changed later. First, test your query with the SQL Server Management Studio directly against the instances before using it in a custom rule.
 
 5. At the **Performance Counter** step, specify conditions to displaying query results.
@@ -73,5 +73,5 @@ To create a new custom query-based performance rule, perform the following steps
 
     ![Configure schedule](./media/sql-server-management-pack/custom-performance-rule-schedule.png)
 
->![NOTE]
+> [!NOTE]
 > By default, a custom query-based rule will work for all SQL Server instances. If you only need to target a specific instance, override your rule after creation.
