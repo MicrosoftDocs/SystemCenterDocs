@@ -88,7 +88,7 @@ To create a new two-state custom query-based monitor, perform the following step
 
     Use the `$Data/Context/Property[@Name=’Message’]$` placeholder to show the list of failed conditions in the alert description.
 
-    ![Screenshot of editing alerts.](./media/sql-server-management-pack/editing-alerts.png)
+   :::image type="content" source="./media/sql-server-management-pack/editing-alerts.png" alt-text="Screenshot of editing alerts." border="true"::: 
 
 > [!NOTE]
 > By default, a custom query-based monitor will work for all SQL Server instances. If you only need to target a specific instance, override your monitor after creation.

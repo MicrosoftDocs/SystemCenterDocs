@@ -20,6 +20,7 @@ To create a new custom query-based performance rule, perform the following steps
 1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, right-click **Rules**, and select **Create a Rule**.
 
     ![Screenshot of creating a performance collection rule.](./media/sql-server-management-pack/creating-custom-performance-rule.png)
+   :::image type="content" source="./media/sql-server-management-pack/creating-custom-performance-rule.png" alt-text="Screenshot of creating a performance collection rule." border="true":::  
 
 2. At the **Rule Type** step, select **Microsoft SQL Server | User-defined SQL Query Performance Collection Rule**.
 
