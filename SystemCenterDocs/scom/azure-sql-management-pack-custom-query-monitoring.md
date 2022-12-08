@@ -72,7 +72,7 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
     You can have more than one condition. It is useful to add the **Execution Time** condition to all tests to check the performance of the Azure SQL Database service. After all required conditions are set, click **Next**.
 
-    ![Diagram that specify execution time.](./media/azure-sql-management-pack/test-conditions-execution-time.png)
+    ![Diagram that specifies execution time.](./media/azure-sql-management-pack/test-conditions-execution-time.png)
 
 7. At the **Schedule** page, configure a query execution schedule.
 
