@@ -68,7 +68,7 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
     When you add a condition, you must specify **Friendly name** and **Configuration** required for a specific check to be performed.
 
-    ![Diagram that specify scalar values.](./media/azure-sql-management-pack/editing-test-conditions.png)
+    ![Diagram that specifies scalar values.](./media/azure-sql-management-pack/editing-test-conditions.png)
 
     You can have more than one condition. It is useful to add the **Execution Time** condition to all tests to check the performance of the Azure SQL Database service. After all required conditions are set, click **Next**.
 
