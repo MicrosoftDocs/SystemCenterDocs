@@ -42,7 +42,7 @@ For information about troubleshooting, see [Troubleshooting SharePoint and DPM](
 
 -   For every 10 million items in the farm, there must be at least 2 GB of space on the volume where the DPM folder is located. This space is required for catalog generation. To enable you to use DPM to perform a specific recovery of items \(site collections, sites, lists, document libraries, folders, individual documents, and list items\), catalog generation creates a list of URLs contained within each content database. You can view the list of URLs in the recoverable items pane in the Recovery task area of the DPM Administrator Console.
 
--   In the SharePoint farm, if you have SQL Server databases that are configured with SQL Server aliases, install the SQL Server client components on the front\-end Web server that DPM will protect.
+-   In the SharePoint farm, if you've SQL Server databases that are configured with SQL Server aliases, install the SQL Server client components on the front\-end Web server that DPM will protect.
 
 -   Protecting application store items isn't supported with SharePoint 2013.
 
@@ -62,7 +62,7 @@ For information about troubleshooting, see [Troubleshooting SharePoint and DPM](
 
 2.  **Set up storage** - You can store backed-up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
-3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every server in the SharePoint farm, including SQL Servers. The only exception is that you only install it on a single Web Front End \(WFE\) server. For example, if you have a single farm with two WFE servers, an index server and a two\-node SQL Server cluster, you would install the agent on the index server, both nodes in the SQL Server cluster, and one of the WFE servers. As WFE servers don't host content, DPM only needs the agent on one of them to serve as the entry point for protection. Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
+3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every server in the SharePoint farm, including SQL Servers. The only exception is that you only install it on a single Web Front End \(WFE\) server. For example, if you've a single farm with two WFE servers, an index server and a two\-node SQL Server cluster, you would install the agent on the index server, both nodes in the SQL Server cluster, and one of the WFE servers. As WFE servers don't host content, DPM only needs the agent on one of them to serve as the entry point for protection. Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
     If the SharePoint SQL Server database is remote, you'll need to configure the DPM agent on it. If it's clustered, then install the agent on all cluster nodes.
 
@@ -70,7 +70,7 @@ For information about troubleshooting, see [Troubleshooting SharePoint and DPM](
 To back up SharePoint farm, configure protection for SharePoint by using ConfigureSharePoint.exe and then create a protection group in DPM.
 
 1.  **Run ConfigureSharePoint.exe** - This tool configures the SharePoint VSS Writer service \(WSS\) and provides the protection agent with credentials for the SharePoint farm.
-    After you've deployed the protection agent, the ConfigureSharePoint.exe file can be found in the \<DPM Installation Path\>\\bin folder on the front\-end Web server.  If you have multiple WFE servers, you only need to install it on one of them. Run as follows:
+    After you've deployed the protection agent, the ConfigureSharePoint.exe file can be found in the \<DPM Installation Path\>\\bin folder on the front\-end Web server.  If you've multiple WFE servers, you only need to install it on one of them. Run as follows:
 
     -   On the WFE server at a command prompt, navigate to \<DPM installation location\>\\bin\\ and run **ConfigureSharePoint \[\-EnableSharePointProtection\] \[\-EnableSPSearchProtection\] \[\-ResolveAllSQLAliases\] \[\-SetTempPath \<path\>\]**, where:
 
@@ -122,7 +122,7 @@ To back up SharePoint farm, configure protection for SharePoint by using Configu
 
 10. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by selecting and holding the protection group in the **Protection** area of the DPM console and selecting **Perform Consistency Check**.
 
-11. If you have selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
+11. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
 
 12. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
@@ -188,7 +188,7 @@ Remember, to recover a farm:
 
 There are a couple of possible scenarios for farm recovery:
 
--   A farm configuration exists as it did at the time of taking the backup. In this case, you will be restoring to a functioning farm.
+-   A farm configuration exists as it did at the time of taking the backup. In this case, you'll be restoring to a functioning farm.
 
 -   The configuration database is corrupt and the servers in the farm are down.
 
@@ -239,7 +239,7 @@ There are a couple of possible scenarios for farm recovery:
 
 8.  On the **Review recovery selection** page, select **Next**.
 
-9. Select where you want to recover the database. Note that:
+9. Select where you want to recover the database.
 
     > [!NOTE]
     > -   You can't recover an entire farm to an alternate location.

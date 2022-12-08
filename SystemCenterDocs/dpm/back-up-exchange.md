@@ -55,7 +55,7 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
 -  DPM functions with any database role. You can configure DPM to protect a server that hosts a collection of active or passive mailbox databases.
 
--  Configure one full backup per day and a synchronization frequency to suit your requirements for Exchange log truncations. When protecting more than one copy of an Exchange mailbox database (for example, when protecting members of a DAG), configure one node for full backups and the rest for copy backups. Copy backups do not truncate log files.
+-  Configure one full backup per day and a synchronization frequency to suit your requirements for Exchange log truncations. When protecting more than one copy of an Exchange mailbox database (for example, when protecting members of a DAG), configure one node for full backups and the rest for copy backups. Copy backups don't truncate log files.
 
 -  Protect at least two copies of each mailbox database. You can use inexpensive Serial Advanced Technology Attachment (SATA) drives or several JBOD disks for storage.
 
@@ -92,7 +92,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
 -   Simpler restore - DPM provides simple and centralized data recovery from point-in-time backups.
 
--   Longer retention range - DPM provides longer retention times for backed up data. Native protection is limited to 14 days.
+-   Longer retention range - DPM provides longer retention times for backed-up data. Native protection is limited to 14 days.
 
 -   Consistent backup of Microsoft workloads - DPM provides a centralized and simple backup and recovery process across your Microsoft workloads, including Exchange, file servers, SQL Server, Hyper-V, and SharePoint.
 
@@ -108,7 +108,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
     -   [Get DPM installed](install-dpm.md)
 
-2.  Set up storage - You can store backed up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
+2.  Set up storage - You can store backed-up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
 3.  **Set up the DPM protection agent** - The agent must be installed on the Exchange server.  Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
@@ -340,7 +340,7 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
 > [!NOTE]
 > While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
--  DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There is an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
+-  DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
 
 -  DPM functions with any database role. You can configure DPM to protect a server that hosts a collection of active or passive mailbox databases.
 
@@ -381,7 +381,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
 -   Simpler restore - DPM provides simple and centralized data recovery from point-in-time backups.
 
--   Longer retention range - DPM provides longer retention times for backed up data. Native protection is limited to 14 days.
+-   Longer retention range - DPM provides longer retention times for backed-up data. Native protection is limited to 14 days.
 
 -   Consistent backup of Microsoft workloads - DPM provides a centralized and simple backup and recovery process across your Microsoft workloads, including Exchange, file servers, SQL Server, Hyper-V, and SharePoint.
 
@@ -397,7 +397,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
     -   [Get DPM installed](install-dpm.md)
 
-2.  Set up storage - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
+2.  Set up storage - You can store backed-up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
 3.  **Set up the DPM protection agent** - The agent must be installed on the Exchange server. Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
@@ -439,7 +439,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
 12. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
 
-13. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+13. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
 14. In **Specify online retention policy**, you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
