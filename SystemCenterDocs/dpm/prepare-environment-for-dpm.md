@@ -42,17 +42,17 @@ Use the following information to plan the deployment for System Center - Data Pr
 
 One of your first decisions is how to deploy DPM. You can deploy DPM:
 
-- **As a physical standalone server**—You can deploy DPM as a physical standalone server to back up on-premises data. Physical DPM servers can’t be deployed in a cluster, but you can manage multiple physical servers from a single console by installing Central Console on System Center Operations Manager.
+- **As a physical standalone server** - You can deploy DPM as a physical standalone server to back up on-premises data. Physical DPM servers can’t be deployed in a cluster, but you can manage multiple physical servers from a single console by installing Central Console on System Center Operations Manager.
 
-- **As a Hyper-V virtual machine**—You can run DPM as a virtual machine (hosted on an on-premises Hyper-V host server), to back up on-premises data. For a list of considerations in this environment see Install DPM as a virtual machine on an on-premises Hyper-V server.
+- **As a Hyper-V virtual machine** - You can run DPM as a virtual machine (hosted on an on-premises Hyper-V host server), to back up on-premises data. For a list of considerations in this environment, see Install DPM as a virtual machine on an on-premises Hyper-V server.
 
-- **As a Windows virtual machine in VMware**—You can deploy DPM to protect Microsoft workloads running on Windows virtual machines in VMware. In this scenario, DPM can be deployed as a physical standalone server, as a Hyper-V virtual machine, or as a Windows virtual machine in VMware.
+- **As a Windows virtual machine in VMware** - You can deploy DPM to protect Microsoft workloads running on Windows virtual machines in VMware. In this scenario, DPM can be deployed as a physical standalone server, as a Hyper-V virtual machine, or as a Windows virtual machine in VMware.
 
-- **As an Azure virtual machine**—DPM can run as a virtual machine in Azure to back up cloud workloads running as Azure virtual machines. For information about this deployment see Install DPM as an Azure virtual machine.
+- **As an Azure virtual machine** - DPM can run as a virtual machine in Azure to back up cloud workloads running as Azure virtual machines. For information about this deployment, see Install DPM as an Azure virtual machine.
 
 In all deployments you’ll need:
 
-- A SQL Server instance, installed and running, to use for the DPM database. The instance can be collocated on the DPM server or remote.
+- A SQL Server Instance, installed and running, to use for the DPM database. The instance can be co-located on the DPM server or remote.
 - Disk to be used as dedicated space for DPM data storage.
 - DPM protection agent installed on computers and servers you want to protect using DPM.
 
@@ -99,12 +99,12 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 |-----------|----------|
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|1 GB minimum, 3 GB recommended|
-|Required features|Database Engine Services, Reporting Services (for DPM 2019, install SSRS with SQL 2017 or later)<br/><br/>**Note** <br/><br/> - For Remote SQL, the database engine and reporting services must be on the same computer. <br/><br/> - For remote clustered SQL instance, Database Engine must be on the cluster and SSRS must be on a separate computer, which can be the DPM server or any other computer)|
+|Required features|Database Engine Services, Reporting Services (for DPM 2019, install SSRS with SQL 2017 or later)<br/><br/>**Note** <br/><br/> - For Remote SQL, the database engine and reporting services must be on the same computer. <br/><br/> - For remote clustered SQL Instance, Database Engine must be on the cluster and SSRS must be on a separate computer, which can be the DPM server or any other computer)|
 |Collations|SQL_Latin1_General_CP1_CI_AS|
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
 |Installation|Install SQL Server on a remote server, or the DPM server. It must be installed and running before you install DPM.|
-|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](./install-dpm.md#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
+|Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server Instance](./install-dpm.md#BKMK_SQL).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server Instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
 
 ::: moniker-end
@@ -151,8 +151,8 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 
 |Requirement|Minimum|Recommended|
 |-----------|-------|-----------|
-|Disk|DPM requires:<br/> - Disk for DPM installation including system files, installation files, prerequisite software, and database files<br/> - Disk dedicated to the storages pool| |
-|DPM installation|DPM installation location: 3 GB<br/> Database files drive: 900 MB<br/> System drive: 1 GB<br/> The system drive disk space is required if SQL Server is installed on the DPM server. If SQL Server is remote, you'll need considerably less disk space for the system drive.|Each protected volume requires a minimum of 300 MB of free space for the change journal. Additionally, you'll need space for DPM to copy the file catalog to a temporary DPM installation location when archiving. 2-3 GB of free space is recommended for the DPM installation volume.|
+|Disk|DPM requires:<br/> - Disk for DPM installation, including system files, installation files, prerequisite software, and database files<br/> - Disk dedicated to the storages pool| |
+|DPM installation|DPM installation location: 3 GB<br/> Database files drive: 900 MB<br/> System drive: 1 GB<br/> The system drive disk space is required if SQL Server is installed on the DPM server. If SQL Server is remote, you'll need considerably less disk space for the system drive.|Each protected volume requires a minimum of 300 MB of free space for the change journal. Additionally, you'll need space for DPM to copy the file catalog to a temporary DPM installation location when archiving. Free space of 2-3 GB is recommended for the DPM installation volume.|
 |Disk for storage pool|1.5 times the size of the protected data|2-3 times the size of the protected data|
 |Logical unit number (LUN)<br/><br/> *Applies only to DPM 2016/2019 servers upgraded from DPM 2012 R2, which uses a legacy storage pool.* | |Maximum of 17 TB for GUID partition table (GPT) dynamic disks<br/> 2 TB for master boot record (MBR) disks<br/> Requirements are based on the maximum size of the hard disk that appears in the operating system.|
 |Limitations<br/><br/> *Applies only to DPM 2016/DPM 2019 servers upgraded from DPM 2012 R2 that used a legacy storage pool.* |- DPM storage pools must be dynamic.<br/> - You can't install DPM on the disk used for the storage pool.<br/> - You can attach or associate custom volumes with protected data sources. Custom volumes can be on basic or dynamic disks but you can't manage the space on these volumes in the DPM Administrator console.<br/> - You can back up to tape with iSCSI attached tape libraries. We recommend a separate adapter for that connection. For more information, see [Compatible tape libraries](identify-compatible-tape-libraries.md).<br/>| |
@@ -163,7 +163,7 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 
 - Sector Size should always be consistent across underlying storage (that is WS storage) to DPM native storage.
 - When storage spaces are used to carve out DPM storage, storage spaces are supported on iSCSI and FC controllers as  long as the virtual disks created on top of them are non-resilient (Simple with any number of columns)
-- Write- Back cache should always be set to zero while using Storage Spaces for DPM storage.
+- Write-back cache should always be set to zero while using Storage Spaces for DPM storage.
 
 ## Protected workloads
 

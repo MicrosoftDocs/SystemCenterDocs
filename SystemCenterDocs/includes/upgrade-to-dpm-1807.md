@@ -20,4 +20,4 @@ You can update System Center Data Protection Manager (DPM) version 1807 only fro
 ## Update steps for DPM 1807
 
 1. To install DPM, double-click Setup.exe to open the System Center 1807 wizard.
-2. Under Install, click Data Protection Manager to start the setup wizard. Agree to the license terms and conditions and follow the setup wizard.
+2. Under Install, select Data Protection Manager to start the setup wizard. Agree to the license terms and conditions and follow the setup wizard.
