@@ -46,7 +46,10 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
 -  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 
--  To protect an Exchange 2013 and Exchange 2016 Database Availability Group (DAG) node, install the DPM protection agent on the node. While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
+-  To protect an Exchange 2013 and Exchange 2016 Database Availability Group (DAG) node, install the DPM protection agent on the node.
+
+> [!NOTE]
+> While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
 -  DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There's an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user's mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
 
@@ -145,7 +148,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
 11. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by selecting and holding the protection group in the **Protection** area of the DPM console and selecting **Perform Consistency Check**.
 
-12. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure that the workloads you want to back up to Azure are selected.
+12. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
 
 13. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
@@ -332,7 +335,10 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
 
 -  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 
--  To protect an Exchange 2016 and Exchange 2019 Database Availability Group (DAG) node, install the DPM protection agent on the node. While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
+-  To protect an Exchange 2016 and Exchange 2019 Database Availability Group (DAG) node, install the DPM protection agent on the node.
+
+> [!NOTE]
+> While you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
 -  DPM 2012 (and later) has a storage pool size limit of 120 terabytes (TB). There is an 80-TB limit for DPM replica volumes, and 40-TB limit for recovery point volumes. When protecting a large Exchange deployment, it's important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database and their mailbox limits to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox is 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user mailbox is greater than 8 GB or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to or greater than the number of DPM servers required to protect all Exchange databases.
 
@@ -431,7 +437,7 @@ Native protection might not be enough if application errors, corruptions, or sec
 
 11. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by selecting and holding the protection group in the **Protection** area of the DPM console and selecting **Perform Consistency Check**.
 
-12. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure that the workloads you want to back up to Azure are selected.
+12. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
 
 13. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
 

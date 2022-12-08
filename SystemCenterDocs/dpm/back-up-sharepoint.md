@@ -122,7 +122,7 @@ To back up SharePoint farm, configure protection for SharePoint by using Configu
 
 10. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by selecting and holding the protection group in the **Protection** area of the DPM console and selecting **Perform Consistency Check**.
 
-11. If you have selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure that the workloads you want to back up to Azure are selected.
+11. If you have selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
 
 12. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
@@ -160,13 +160,13 @@ You can recover SharePoint data as follows:
 
 -   Recover to the original location
 
--   Recover to an alternate location. You can't perform a full farm recovery to a new location.
+-   Recover to an alternate location. Remember, you can't perform a full farm recovery to a new location.
 
 -   Copy the data to a network folder
 
 -   Copy the data to tape
 
-To recover a farm:
+Remember, to recover a farm:
 
 -   If you protected a SharePoint server as a SQL Server database, you can recover SharePoint data by selecting the SQL Server database in the Recovery Wizard.
 

@@ -166,7 +166,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by selecting and holding the protection group in the **Protection** area of the DPM console and selecting **Perform Consistency Check**.
 
-10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure that the workloads you want to back up to Azure are selected.
+10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
 
 11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
@@ -288,7 +288,10 @@ With DPM 2022 UR1, download the [SQL Server Self Service Recovery tool](https://
 
 4.  On the **Specify Recovery Point** page, select the data and time of the recovery point.
 
-5.  On the **Select Recovery Type** page, select whether to recover to any instance on the same SQL Server or a different one. Specify whether to recover to a network folder. Only recovery points that will be created from full express backup can be recovered to a network folder.
+5.  On the **Select Recovery Type** page, select whether to recover to any instance on the same SQL Server or a different one. Specify whether to recover to a network folder. 
+
+    > [!NOTE]
+    > Only recovery points that will be created from full express backup can be recovered to a network folder.
 
 6.  If you're recovering to a database, on the **Specify Database State** page, specify whether the database should remain operational after recovery and specify whether you want to copy the SQL transaction logs.
 
