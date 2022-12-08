@@ -199,7 +199,7 @@ The amount of time it takes to process an Azure import job varies depending on f
 
 ### Monitoring Azure Import job status
 
-You can monitor the status of your Import job from the Azure portal by navigating to the **Import/Export jobs** page and selecting your job. For more information on the status of the Import jobs, see the [Storage Import Export service](/azure/storage/common/storage-import-export-service) article.
+You can monitor the status of your Import job from the Azure portal by navigating to the **Import/Export jobs** page and selecting your job. For more information on the status of the Import jobs, see [Storage Import Export service](/azure/storage/common/storage-import-export-service).
 
 
 ### Complete the workflow

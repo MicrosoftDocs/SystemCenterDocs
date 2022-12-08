@@ -95,7 +95,7 @@ If you allocated too much space for the protection group, remove the data source
 When you set up a protection group, here's what you'll need to do:
 
 ### Before you start
-Some things to note when creating protection groups:
+Some things to remember when creating protection groups:
 
 -   If you're backing up to tape and you've only a single stand-alone tape, use a single protection group to minimize the effort to change tapes. Multiple protection groups require a separate tape for each protection group.
 

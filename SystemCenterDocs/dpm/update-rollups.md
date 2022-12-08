@@ -90,7 +90,7 @@ Use the following procedure to check if an update rollup is successfully install
 
 > [!NOTE]
 > Not all the binaries have the current update rollup build number. However, if you do not have the binaries listed with the relevant update rollup build number, it is likely that the update rollup did not install successfully.
->
+
 
 ## Next steps
 See [what's new in the latest update rollup](what-s-new-in-dpm.md)

@@ -119,17 +119,13 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of the SQL
    - For a 32-bit computer, type: **DpmAgentInstaller_x86.exe *\<DPMServerName\>***
      where *&lt;DPMServerName&gt;* is the fully qualified domain name (FQDN) of the DPM server.
 
-   Note:
-
-   -   To perform a silent installation, you can use the **/q** option after the **DpmAgentInstaller_x64.exe** command. For example: **DpmAgentInstaller_x64.exe /q _&lt;DPMServerName&gt;_**
-
-   -   To accept the EULA manually in a silent installation, use **DpmAgentInstaller_x64.exe /q &lt;DPMServerName&gt; /IAcceptEULA**
-
-   -   If you specify a DPM server name in the command line, it installs the protection agent and automatically configures the security accounts, permissions, and firewall exceptions necessary for the agent to communicate with the specified DPM server. If you didn't specify a server name, open an elevated Command Prompt on the targeted computer and do the following:
-
-       1.  To change the directory type: **cd /d *&lt;system drive&gt;*:\Program Files\Microsoft Data Protection Manager\DPM\bin**
-
-       2.  Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configures the security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
+    > [!NOTE]
+    >  -   To perform a silent installation, you can use the **/q** option after the **DpmAgentInstaller_x64.exe** command. For example: **DpmAgentInstaller_x64.exe /q _&lt;DPMServerName&gt;_**
+    >  -   To accept the EULA manually in a silent installation, use **DpmAgentInstaller_x64.exe /q &lt;DPMServerName&gt; /IAcceptEULA**
+    >  -   If you specify a DPM server name in the command line, it installs the protection agent and automatically configures the security accounts, permissions, and firewall exceptions necessary for the agent to communicate with the specified DPM server. If you didn't specify a server name, open an elevated Command Prompt on the targeted computer and do the following:
+    >
+        >    1.   To change the directory type: **cd /d *&lt;system drive&gt;*:\Program Files\Microsoft Data Protection Manager\DPM\bin**
+        >    2.   Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configures the security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
 
 4. If you added the computer to the DPM server before you installed the agent, the  server begins to create backups for the protected computer. If you installed the agent before you added the computer to the DPM server, you must attach the computer before the DPM server begins to create backups.
 
