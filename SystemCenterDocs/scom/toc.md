@@ -301,7 +301,7 @@
 #### [Azure SQL Database Run As Accounts](azure-sql-management-pack-run-as-accounts.md)
 #### [Low-Privilege Configuration](azure-sql-management-pack-low-privilege-configuration.md)
 ### [Views and Dashboards in Management Pack for Azure SQL Database](azure-sql-management-pack-viewing-information.md)
-#### [Custom Query-Based Monitoring](azure-sql-management-pack-custom-query-monitoring.md)
+### [Custom Query-Based Monitoring](azure-sql-management-pack-custom-query-monitoring.md)
 ### [Known Issues and Troubleshooting in Management Pack for Azure SQL Database](azure-sql-management-pack-known-issues-and-troubleshooting.md)
 ## Management Pack for Azure SQL Managed Instance
 ### [Features and Enhancements in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-changes-history.md)

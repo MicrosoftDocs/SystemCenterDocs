@@ -2,10 +2,10 @@
 ms.assetid: dc45fd44-50ff-47af-bfdd-5407695c6cae
 title: Custom query-based monitoring in Management Pack for Azure SQL Database
 description: This article explains how to configure custom query monitoring in Management Pack for Azure SQL Database
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-author: Anastas1ya
-ms.author: v-asimanovic
-ms.date: 3/17/2021
+ms.date: 12/12/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,16 +15,16 @@ ms.technology: operations-manager
 
 In addition to standard [health and performance monitoring](azure-sql-management-pack-monitoring-types.md), you can configure custom query-based monitors for application-specific health states monitoring.
 
->[!NOTE]
->Before using custom query-based monitors, grant required permissions to your monitoring accounts. For more information, see [Azure SQL Database Run As Accounts](azure-sql-management-pack-run-as-accounts.md).
+> [!NOTE]
+> Before using custom query-based monitors, grant required permissions to your monitoring accounts. For more information, see [Azure SQL Database Run As Accounts](azure-sql-management-pack-run-as-accounts.md).
 
-## Two-State Query Monitor
+## Two-State Monitor
 
 To add a new two-state custom query-based monitor, perform the following steps:
 
 1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, right-click **Monitors**, and select **Create a Monitor | Unit Monitor**.
 
-    ![Create a two-state unit monitor](./media/azure-sql-management-pack/creating-unit-monitor.png)
+    ![Screenshot of creating a two-state unit monitor.](./media/azure-sql-management-pack/creating-unit-monitor.png)
 
 2. At the **Monitor Type** step, select **Microsoft Azure SQL Database | User-defined SQL Query Two State Monitor**.
 
@@ -32,17 +32,17 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
     To create a custom query monitor for specific Azure SQL Databases, select a management pack with the template used to monitor this service. If you want to add a query to all Azure SQL Database services, you can store the monitor in any management pack.
 
-    ![Select a monitor type](./media/azure-sql-management-pack/selecting-monitor-type.png)
+    ![Screenshot of selecting a monitor type.](./media/azure-sql-management-pack/selecting-monitor-type.png)
 
 4. At the **General** step, enter the monitor name and optional description, select **Monitor target** and **Parent monitor**, and click **Next**.
 
     If you select to save a new monitor to the management pack that contains one or more Azure SQL Database templates, you will be able to pick one of the Azure SQL Database services monitored by the templates. Otherwise, only the base **Microsoft Azure SQL Database** will be available as a target. Selecting **Microsoft Azure SQL Database Cloud Server** means that all cloud services will be using your query.
 
-    ![Select a monitor name and description](./media/azure-sql-management-pack/monitor-name-and-description.png)
+    ![Screenshot of selecting a monitor name and description.](./media/azure-sql-management-pack/monitor-name-and-description.png)
 
 5. At the **SQL Query** step, enter the database name, query text, and timeout (in seconds).
 
-    ![Specify target database name and SQL query](./media/azure-sql-management-pack/unit-monitor-sql-query.png)
+    ![Diagram that specify target database name and SQL query.](./media/azure-sql-management-pack/unit-monitor-sql-query.png)
 
 6. At the **Test Conditions** step, add one or more **Test conditions** to verify query results.
 
@@ -64,34 +64,34 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
       Checks query execution duration.
 
-    ![Specify test conditions](./media/azure-sql-management-pack/unit-monitor-test-conditions.png)
+    ![Diagram that specify test conditions.](./media/azure-sql-management-pack/unit-monitor-test-conditions.png)
 
     When you add a condition, you must specify **Friendly name** and **Configuration** required for a specific check to be performed.
 
-    ![Specify scalar values](./media/azure-sql-management-pack/editing-test-conditions.png)
+    ![Diagram that specify scalar values.](./media/azure-sql-management-pack/editing-test-conditions.png)
 
     You can have more than one condition. It is useful to add the **Execution Time** condition to all tests to check the performance of the Azure SQL Database service. After all required conditions are set, click **Next**.
 
-    ![Specify execution time](./media/azure-sql-management-pack/test-conditions-execution-time.png)
+    ![Diagram that specify execution time.](./media/azure-sql-management-pack/test-conditions-execution-time.png)
 
 7. At the **Schedule** page, configure a query execution schedule.
 
-    ![Configure schedule](./media/azure-sql-management-pack/unit-monitor-schedule.png)
+    ![Screenshot of configuring schedule.](./media/azure-sql-management-pack/unit-monitor-schedule.png)
 
 8. At the **Configure Health** step, select the health state that should be generated by the monitor.
 
-    ![Configure health](./media/azure-sql-management-pack/configure-health.png)  
+    ![Screenshot of configuring health.](./media/azure-sql-management-pack/configure-health.png)  
 
 9. At the **Configure Alerts** step, set up an alert name and description to be shown in cases if one or more test conditions fail and click **Create**.
 
-    Use the $Data/Context/Property[@Name=’Message’]$ placeholder to show the list of failed tests in the alert description.
+    Use the `$Data/Context/Property[@Name=’Message’]$` placeholder to show the list of failed conditions in the alert description.
 
-    ![Configure alerts](./media/azure-sql-management-pack/configure-alerts.png)
+    ![Screenshot of configuring alerts.](./media/azure-sql-management-pack/configure-alerts.png)
 
-## Three-State Query Monitor
+## Three-State Monitor
 
 Adding a three-state custom query-based monitor is similar to a two-state monitor. The main difference is that you must specify the **Warning** and **Critical** conditions.
 
 Critical conditions are verified first. If one or more critical conditions fail, the monitor will switch to the critical state and warning conditions will not be verified.
 
-![Select a three-state monitor](./media/azure-sql-management-pack/three-state-monitor.png)
+![Screenshot of selecting a three-state monitor.](./media/azure-sql-management-pack/three-state-monitor.png)
