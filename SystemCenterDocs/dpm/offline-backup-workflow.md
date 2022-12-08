@@ -79,7 +79,7 @@ The information in this section helps you complete the offline backup workflow s
   > [!NOTE]
   > > With DPM 2019 Update Roll Up 1, the console might stall when you select **Add online protection** for an existing Protection group. To resolve this issue, apply the hotfix as detailed in the [KB article](https://support.microsoft.com/en-us/help/4547368/console-may-crash-when-you-select-add-online-protection-to-existing-pr).
 
-2. The Azure sign in page will open. Sign in using your Azure user account, which has *owner* role permission on the Azure Subscription.
+2. The Azure sign-in page will open. Sign in using your Azure user account, which has *owner* role permission on the Azure Subscription.
 
     ![Azure sign-in screen](./media/backup-server/choose-initial-online-replication.png)
 
@@ -97,13 +97,13 @@ The information in this section helps you complete the offline backup workflow s
 
      Save the *staging location* and the *Azure Import Job Name* you provided as it's required to prepare the disks.
 
-4. Complete the workflow to create the or update the protection. And to initiate the offline-backup copy, select and hold the **Protection Group** and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
+4. Complete the workflow to create or update the protection. And to initiate the offline-backup copy, select and hold the **Protection Group** and then choose the **Create recovery point** option. You then choose the **Online Protection** option.
 
-   ![Offline Backup copy](./media/backup-server/create-recovery-point.png)
+   ![Screenshot of Offline Backup copy.](./media/backup-server/create-recovery-point.png)
 
 5. Monitor the Online Replica Creation job in the monitoring pane. The job should complete successfully with the warning *Waiting for Azure Import job to finish*.
 
-   ![View Backup Information](./media/backup-server/complete-recovery-point.png)
+   ![Screenshot of View Backup Information page.](./media/backup-server/complete-recovery-point.png)
 
 6. After the operation finishes, the staging location is ready to be used for disk preparation.
 
@@ -142,7 +142,7 @@ The *AzureOfflineBackupDiskPrep* utility prepares the SATA drives that are sent 
 
 3. Enter the drive letter without the trailing colon for the mounted disk that you want to prepare for transfer to Azure.
 4. Provide confirmation for the formatting of the drive when prompted.
-5. You're prompted to sign into your Azure subscription. Provide your credentials.
+5. You're prompted to sign in to your Azure subscription. Provide your credentials.
 
     ![Input Azure subscription Credentials](./media/backup-server/signindiskprep.png) <br/>
 
@@ -169,7 +169,7 @@ The following procedure updates the Azure Import job shipping details. This info
    * the name of the carrier who delivers the disks to Azure
    * return shipping details for your disks
 
-   1. Sign into your Azure subscription.
+   1. Sign in to your Azure subscription.
    2. In the main menu, select **All services**, and in the All services dialog, type Import. When you see **Import/Export jobs**, select it.
        ![Entering Shipping Information](./media/backup-server/search-import-job.png)<br/>
 

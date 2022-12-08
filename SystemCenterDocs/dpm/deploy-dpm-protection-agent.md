@@ -134,7 +134,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of the SQL
 
 Use these steps:
 
-1.  Either turn the firewall off on the RODC or run the following commands on the RODC before you install the agent:
+1.  Either turn off the firewall on the RODC or run the following commands on the RODC before you install the agent:
 
       - `netsh advfirewall firewall set rule group="@FirewallAPI.dll,-29502" new enable=yes`
 
