@@ -2,10 +2,10 @@
 ms.assetid: 90109309-a692-414d-8877-2853d44d3bb4
 title: Management Pack for SQL Server Analysis Services delivery
 description: This article explains how to install Management Pack for SQL Server Analysis Services
-author: Anastas1ya
-ms.author: v-asimanovic
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-ms.date: 5/31/2022
+ms.date: 12/9/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -18,7 +18,7 @@ Services instances, databases, and partitions.
 
 You can download Management Pack for SQL Server Analysis Services from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=57382) or System Center Operations Manager Online Catalog.
 
-After you download and unpack the **Microsoft.SQLServer.AnalysisServices.ManagementPack.msi** package—a set of MP and MPB files for monitoring of Analysis Services on Windows, the following files become available:
+After you download and unpack the **Microsoft.SQLServer.AnalysisServices.ManagementPack.msi** package — a set of MP and MPB files for monitoring of Analysis Services on Windows, the following files become available:
 
 - **Microsoft.SQLServer.AnalysisServices.Windows.Discovery.mpb**
 
@@ -58,8 +58,8 @@ The environment that you use must meet the following prerequisites before you st
 
 - Associate Microsoft SQL Server Run As profiles with the account that has administrative privileges for both the Windows Server and the SQL Server Analysis Services instance.
 
->[!NOTE]
->Management Pack for SQL Server Analysis Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
+> [!NOTE]
+> Management Pack for SQL Server Analysis Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 
