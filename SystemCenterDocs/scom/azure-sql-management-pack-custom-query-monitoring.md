@@ -64,7 +64,7 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
       Checks query execution duration.
 
-    ![Diagram that specify test conditions.](./media/azure-sql-management-pack/unit-monitor-test-conditions.png)
+    ![Diagram that specifies test conditions.](./media/azure-sql-management-pack/unit-monitor-test-conditions.png)
 
     When you add a condition, you must specify **Friendly name** and **Configuration** required for a specific check to be performed.
 
