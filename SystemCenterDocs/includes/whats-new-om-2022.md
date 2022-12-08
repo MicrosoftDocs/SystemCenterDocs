@@ -4,8 +4,8 @@ title: What's New in Operations Manager
 description: This article describes the new features supported in Operations Manager 2022
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 10/14/2022
+manager: mkluck
+ms.date: 12/06/2022
 ms.custom: intro-whats-new
 ms.prod: system-center
 ms.technology: operations-manager
