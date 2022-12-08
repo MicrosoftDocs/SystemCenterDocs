@@ -42,7 +42,7 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
 5. At the **SQL Query** step, enter the database name, query text, and timeout (in seconds).
 
-    ![Diagram that specify target database name and SQL query.](./media/azure-sql-management-pack/unit-monitor-sql-query.png)
+    ![Diagram that specifies target database name and SQL query.](./media/azure-sql-management-pack/unit-monitor-sql-query.png)
 
 6. At the **Test Conditions** step, add one or more **Test conditions** to verify query results.
 
