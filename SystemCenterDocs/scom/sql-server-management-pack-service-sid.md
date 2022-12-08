@@ -5,7 +5,7 @@ description: This article explains how to configure monitoring with service SID
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/8/2022
+ms.date: 12/9/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -19,7 +19,7 @@ To configure monitoring using Service Security Identifier, perform the following
 
 1. Open the command prompt as an administrator and run the following command:
 
-    ```CMD
+    ```CONSOLE
     sc sidtype HealthService unrestricted
     ```
 
@@ -27,7 +27,7 @@ To configure monitoring using Service Security Identifier, perform the following
 
 3. Run command:
 
-    ```CMD
+    ```CONSOLE
     sc showsid HealthService
     ```
 
@@ -35,7 +35,7 @@ To configure monitoring using Service Security Identifier, perform the following
 
     ![Screenshot of running HealthService.](./media/sql-server-management-pack/health-service-command.png)
 
-4. Open **Registry Editor** and check that the **ServiceSidType** key is set to 1 at `HKLM\SYSTEM\CurrentControlSet\Services\HealthService`.
+4. Open **Registry Editor** and check that the **ServiceSidType** key is set to 1 at `HKLM\SYSTEM\CurrentControlSet\Services\HealthService`
 
 5. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance.
 

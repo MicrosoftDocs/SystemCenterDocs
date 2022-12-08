@@ -5,7 +5,7 @@ description: This article explains low-privilege monitoring
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/8/2022
+ms.date: 12/9/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -183,13 +183,13 @@ Take the following steps on an agent machine or database only if you want to all
 
     For example, if the results of the **sdshow** command for SQL Server service are as follows:
 
-    ```cmd
+    ```CONSOLE
     *D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)*
     ```
 
     In this case, the following command grants sufficient access to **SQLTaskAction** for starting and stopping the SQL Server service. Replace 'SQLServerServiceName' and 'SID for SQLTaskAction' with the appropriate values and keep everything on a single line.
 
-    ```cmd
+    ```CONSOLE
     *sc sdset SQLServerServiceName D:(A;;GRRPWP;;;SID for SQLTaskAction)(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)*
     ```
 
@@ -242,7 +242,7 @@ To prevent SQL Server monitoring issues, the **SQLTaskAction**, **SQLDiscovery**
 
 ## Agentless Monitoring
 
-[Applicable to SQL Server on Windows and on Linux.]
+[Applicable to SQL Server on Windows and on Linux]
 
 This section explains how to configure low-privilege agentless monitoring.
 
@@ -373,11 +373,11 @@ To configure low-privilege agentless monitoring using the monitoring wizard, per
 
     You can also create a new Run As account. For that, in the **Add Instances** window, click **New**, enter a new name for the Run As account, and specify credentials to access the SQL Server that you want to monitor.
 
-    ![New Run As account](./media/sql-server-management-pack/adding-run-as-account.png)
+    ![Screensho of Run As account.](./media/sql-server-management-pack/adding-run-as-account.png)
 
     After connection is established, you can view and edit properties of the added instance.
 
-    ![Instance properties](./media/sql-server-management-pack/modifying-instance-properties.png)
+    ![Screenshot of Instance properties.](./media/sql-server-management-pack/modifying-instance-properties.png)
 
 ## Mixed Monitoring
 
@@ -400,20 +400,20 @@ To configure security for configurations with low-privilege accounts, perform th
 
 2. Expand **Component Services**, right-click **My Computer**, and select **Properties**.
 
-   ![Opening properties](./media/sql-server-management-pack/component-service-properties.png)
+   ![Screenshot of opening properties.](./media/sql-server-management-pack/component-service-properties.png)
 
 3. Open the **COM Security** tab.
 
 4. In the **Launch and Activation Permissions** section, click **Edit Limits**.
 
-   ![Editing limits](./media/sql-server-management-pack/editing-limits.png)
+   ![Screenshot of editing limits.](./media/sql-server-management-pack/editing-limits.png)
 
 5. Grant the following permissions to the remote machine account:
 
     - Remote Launch
     - Remote Activation
 
-   ![Activating permissions](./media/sql-server-management-pack/launch-activate-permissions.png)
+   ![Screenshot of activating permissions.](./media/sql-server-management-pack/launch-activate-permissions.png)
 
 6. Go to the **WMI Control** snap-in and open its properties.
 
@@ -435,7 +435,7 @@ To configure security for configurations with low-privilege accounts, perform th
     - Enable Account
     - Remote Enable
 
-   ![Security permissions](./media/sql-server-management-pack/security-permissions.png)
+   ![Screenshot of security permissions.](./media/sql-server-management-pack/security-permissions.png)
 
 10. Click **Advanced**.
 
@@ -448,7 +448,7 @@ To configure security for configurations with low-privilege accounts, perform th
     - Enable Account
     - Remote Enable
 
-    ![Configuring CIMV permissions](./media/sql-server-management-pack/permissions-cimv.png)
+    ![Screenshot of configuring CIMV permissions.](./media/sql-server-management-pack/permissions-cimv.png)
 
 ### Granting Service Permissions
 
@@ -469,17 +469,17 @@ To get information about the services, grant required permissions according to t
 
     Replace **domainName\userName** with the domain and user names for the **Spotlight User** account.
 
-    ![Replacing spotlite user](./media/sql-server-management-pack/ps-spotlight-user.png)
+    ![Screeshot of replacing spotlite user.](./media/sql-server-management-pack/ps-spotlight-user.png)
 
 3. From the Windows command prompt, run the following command to retrieve the current SDDL for the Services Control Manager:
 
-    ```cmd
+    ```CONSOLE
     sc sdshow scmanager > file.txt
     ```
 
     The SDDL is saved to the **file.txt** file and looks similar to the following one:
 
-    ```cmd
+    ```CONSOLE
     D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA)S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD).
     ```
 
@@ -491,13 +491,13 @@ To get information about the services, grant required permissions according to t
 
     The new SDDL looks similar to the following one:
 
-    ```cmd
+    ```CONSOLE
     D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU) (A;;CCLCRPRC;;;S-1-5-21-214A909598-1293495619-13Z157935-75714)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA) S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)
     ```
 
 5. Set security credentials to access the Service Control Manager by using the **sdset** command.
 
-    ```cmd
+    ```CONSOLE
     sc sdset scmanager "D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA)(A;;CCLCRPRC;;;S-1-5-21-214A909598-1293495619-13Z157935-75714)S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)"
     ```
 
@@ -505,7 +505,7 @@ To get information about the services, grant required permissions according to t
 
     Run the utility with the following options:
 
-    ```cmd
+    ```CONSOLE
     subinacl.exe /service mssqlserver /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
 
     subinacl.exe /service sqlserveragent /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
@@ -513,7 +513,7 @@ To get information about the services, grant required permissions according to t
     subinacl.exe /service mssqlfdlauncher /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
     ```
 
-    ![Running subinacl](./media/sql-server-management-pack/subinacl-run.png)
+    ![Screenshot of running subinacl.](./media/sql-server-management-pack/subinacl-run.png)
 
     The following rights can be read as:
 
@@ -527,7 +527,7 @@ To get information about the services, grant required permissions according to t
 
     Run the utility with the following options:
 
-    ```cmd
+    ```CONSOLE
     subinacl.exe /service clussvc /GRANT= S-1-5-21-214A909598-1293495619-13Z157935-75714=LQSEI
     ```
 
@@ -537,21 +537,21 @@ Create a registry key to manage remote access to the registry.
 
 To create a key, perform the following steps:
 
-1. Open **Registry Editor** and locate the following key `HKLM\SYSTEM\CurrentControlSet\Control`.
+1. Open **Registry Editor** and locate the following key `HKLM\SYSTEM\CurrentControlSet\Control`
 
 2. In the **Edit** menu, click **Add Key** and enter the following values:
 
     - **Key Name:** SecurePipeServers
     - **Class:** REG_SZ
 
-3. Locate the following key `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers`.
+3. Locate the following key `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers`
 
 4. In the **Edit** menu, click **Add Key** and enter the following values:
 
     - **Key Name:** winreg
     - **Class:** REG_SZ
 
-5. Locate the following key: `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg`.
+5. Locate the following key: `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg`
 
 6. In the **Edit** menu, click **Add Key** and enter the following values:
 
@@ -559,7 +559,7 @@ To create a key, perform the following steps:
     - **Data Type:** REG_SZ
     - **String:** Registry Server
 
-7. Locate the following key: `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg`.
+7. Locate the following key: `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg`
 
 8. Right-click **winreg**, click **Permissions**, and edit the current permissions, or add users or groups you want to grant access to.
 
