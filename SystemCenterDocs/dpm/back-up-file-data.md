@@ -46,7 +46,7 @@ After you set up your DPM infrastructure, you can enable protection machines tha
 
 2.  In **Select Protection Group Type**, select **Servers**.
 
-3.  In **Select Group Members**, you'll add the machines for which you want to back up file data to the protection group. On those machines you select the locations, shares, and folders you want to protect.  [Deploy protection groups](create-dpm-protection-groups.md). You can select different types of folders (such as Desktop) or different file or the entire volume. You can also exclude specific locations from protection.
+3.  In **Select Group Members**, you'll add the machines for which you want to back up file data to the protection group. On those machines, you select the locations, shares, and folders you want to protect.  [Deploy protection groups](create-dpm-protection-groups.md). You can select different types of folders (such as Desktop) or different file or the entire volume. You can also exclude specific locations from protection.
 
     >[!NOTE]
     > If you are protecting the volume on which the deduplication is enabled, ensure that the [Data Deduplication](/windows-server/storage/data-deduplication/install-enable) server role is installed on the DPM server. See the [support matrix](dpm-support-issues.md#deduplicated-volumes-support) for detailed information on deduplication.
@@ -63,7 +63,7 @@ After you set up your DPM infrastructure, you can enable protection machines tha
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also co-locate data from different protection groups on tape.
+    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also co-locate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page, specify the tape/library to use and whether data should be compressed and encrypted on tape.
 
@@ -125,7 +125,7 @@ Recover data from the DPM console as follows:
 
 8.  Review your recovery settings, and select **Recover**. Any synchronization job for the selected recovery item will be canceled while the recovery is in progress.
 
-When using Modern Backup Storage (MBS), File Server end user recovery (EUR) is not supported. File Server EUR has a dependency on the Volume Shadow Copy Service (VSS), which Modern Backup Storage does not use. If end user recovery is enabled, then recover data as follows:
+When using Modern Backup Storage (MBS), File Server end user recovery (EUR) isn't supported. File Server EUR has a dependency on the Volume Shadow Copy Service (VSS), which Modern Backup Storage doesn't use. If end user recovery is enabled, then recover data as follows:
 
 1.  Navigate to the protected data file. Select and hold the file name > **Properties**.
 

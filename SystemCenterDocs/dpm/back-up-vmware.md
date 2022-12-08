@@ -39,7 +39,7 @@ DPM provides the following features when backing up VMware virtual machines:
 >[!NOTE]
 > Backup to tape is supported from DPM 2019.
 
-- Agentless backup: DPM does not require an agent to be installed on the vCenter or ESXi server to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN) and sign in credentials used to authenticate the VMware server with DPM.
+- Agentless backup: DPM doesn't require an agent to be installed on the vCenter or ESXi server to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN) and sign in credentials used to authenticate the VMware server with DPM.
 - Cloud Integrated Backup: DPM protects workloads to disk, tape, and cloud. DPM's backup and recovery workflow help you manage long-term retention and offsite backup.
 - Detect and protect VMs managed by vCenter: DPM detects and protects VMs deployed on a VMware server (vCenter or ESXi server). As your deployment size grows, use vCenter to manage your VMware environment. DPM also detects VMs managed by vCenter, allowing you to protect large deployments.
 - Folder-level auto protection: vCenter lets you organize your VMs in VM folders. DPM detects these folders and lets you protect VMs at the folder level and includes all subfolders. When protecting folders, DPM not only protects the VMs in that folder, but also protects VMs added later. DPM detects new VMs on a daily basis and protects them automatically. As you organize your VMs in recursive folders, DPM automatically detects and protects the new VMs deployed in the recursive folders.
@@ -51,16 +51,16 @@ DPM provides the following features when backing up VMware virtual machines:
 
 Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites.
 
-- If you have been using DPM to protect vCenter server (running on Windows) as Windows Server, you cannot protect that as VMware server using FQDN of the server.
+- If you've been using DPM to protect vCenter server (running on Windows) as Windows Server, you can't protect that as VMware server using FQDN of the server.
     - You can use static IP address of vCenter Server as a workaround.
     - If you want to use FQDN, you should stop the protection as Windows Server, remove the protection agent, and then add as VMware Server using FQDN.
-- If you are protecting vCenter Server (running on Windows) using FQDN as VMware Server, you cannot protect the vCenter Server as Windows Server.
+- If you're protecting vCenter Server (running on Windows) using FQDN as VMware Server, you can't protect the vCenter Server as Windows Server.
 - If you use vCenter to manage ESXi servers in your environment, add vCenter (and not ESXi) to the DPM protection group.
-- DPM cannot protect VMware VMs to a secondary DPM server.
-- You cannot back up user snapshots before the first DPM backup. Once DPM completes the first backup, then you can back up user snapshots.
-- DPM cannot protect VMware VMs with pass-through disks and physical raw device mappings (pRDM).
-- DPM cannot detect or protect VMware vApps.
-- DPM cannot protect VMware VMs with existing snapshots.
+- DPM can't protect VMware VMs to a secondary DPM server.
+- You can't back up user snapshots before the first DPM backup. Once DPM completes the first backup, then you can back up user snapshots.
+- DPM can't protect VMware VMs with pass-through disks and physical raw device mappings (pRDM).
+- DPM can't detect or protect VMware vApps.
+- DPM can't protect VMware VMs with existing snapshots.
 - Ensure the following network ports are open:
     - TCP 443 between MABS and vCenter
     - TCP 443 and TCP 902 between MABS and ESXi host
@@ -71,13 +71,13 @@ The following information details how to configure VMware for DPM protection. To
 
 ### Credential management
 
-DPM does not use an agent to communicate with a VMware server. Instead, it uses a username and password credential to authenticate its remote communication with the VMware server. Each time DPM communicates with a VMware server, DPM must be authenticated. As it can be necessary to change credentials and a data center can have multiple vCenter servers requiring unique credentials, tracking these credentials can be a problem. However, DPM has a Manage VMware Credentials feature to securely store and manage credentials.
+DPM doesn't use an agent to communicate with a VMware server. Instead, it uses a username and password credential to authenticate its remote communication with the VMware server. Each time DPM communicates with a VMware server, DPM must be authenticated. As it can be necessary to change credentials and a data center can have multiple vCenter servers requiring unique credentials, tracking these credentials can be a problem. However, DPM has a Manage VMware Credentials feature to securely store and manage credentials.
 
 Remember the following details about credentials:
 
 - One credential can be used to authenticate multiple VMware servers.
 - Once credential details, such as Description, User name, and Password are updated, DPM uses these credentials to communicate with all VMware servers.
-- A credential can be deleted only if it is not being used to authenticate a VMware server.
+- A credential can be deleted only if it isn't being used to authenticate a VMware server.
 
 #### Open the Manage VMware Credentials feature
 
@@ -100,7 +100,7 @@ You add a credential to the DPM server so that you can pair it up with credentia
    ![Screenshot of open Add Credentials page.](./media/back-up-vmware/add-credential-dialog.png)
 
 2. Type your information in the **Name**, **Description**, **User name**, and **Password** fields. Once you've added text in the required fields, the **Add** button becomes active.
-   - **Name** is what appears in the **Credential** column of the Manage Credentials dialog. **Name** is a required field and is the identifier for the credentials. This field cannot be edited later. If you want to change the name of a credential, you must add a new credential.
+   - **Name** is what appears in the **Credential** column of the Manage Credentials dialog. **Name** is a required field and is the identifier for the credentials. This field can't be edited later. If you want to change the name of a credential, you must add a new credential.
    - **Description** is the descriptive text or an alternate name so that you can recognize or distinguish the credentials in the Manage Credentials page. The **Description** text is an optional field and appears in the **Description** column of the Manage Credentials page.
    - **User name** and **Password** are the user name and password for the user account used to access the server. Both fields are required.
 3. Select **Add** to save your new credentials. Once you've created credentials, you can use them to authenticate with a VMware server.
@@ -109,7 +109,7 @@ You add a credential to the DPM server so that you can pair it up with credentia
 
 Most organizations need to update credentials due to security reasons or personnel changes. When VMware server credentials are changed, the credentials used by DPM also need to be updated. If a VMware server's credentials (user name and password) have changed, you must add matching credentials in DPM.
 
-Once you have matching credentials in DPM, update the VMware server credentials using the following steps:
+Once you've matching credentials in DPM, update the VMware server credentials using the following steps:
 
 1. In the DPM Administrator console, select **Management**.
 2. In the list of assets to manage, select **Production Servers**.
@@ -126,27 +126,27 @@ Once you have matching credentials in DPM, update the VMware server credentials 
 
 #### Delete VMware server credentials
 
-When you delete credentials, you are removing the credential from the list on the DPM server. DPM doesn't allow you to delete a credential that is used to authenticate a production server.
+When you delete credentials, you're removing the credential from the list on the DPM server. DPM doesn't allow you to delete a credential that is used to authenticate a production server.
 
 To delete a credential:
 
 1. In the DPM Administrator Console, select Management, select Production Servers, and in the tool ribbon, select Manage VMware Credentials.
-2. In the Manage Credentials page, select the credential. Make sure the credential is not associated with any Production Servers.
+2. In the Manage Credentials page, select the credential. Make sure the credential isn't associated with any Production Servers.
 3. Select **Delete** to remove the credential from the list.
 
 ### Set up secure communication between DPM and a VMware server
 
-DPM communicates with the VMware server securely over an HTTPS channel. To create the secure communication, install a trusted certificate on both the VMware server and the DPM server. If the connection to your vCenter is not secure, you can secure it by installing a certificate on the DPM server. Use the same certificate to make a secure connection with the VMware server.
+DPM communicates with the VMware server securely over an HTTPS channel. To create the secure communication, install a trusted certificate on both the VMware server and the DPM server. If the connection to your vCenter isn't secure, you can secure it by installing a certificate on the DPM server. Use the same certificate to make a secure connection with the VMware server.
 
-To verify if there is a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you are using Chrome and you do not have a valid certificate, you see the strikethrough in the URL, like this example:
+To verify if there is a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you're using Chrome and you do not have a valid certificate, you see the strikethrough in the URL, like this example:
 
 ![Screenshot of no secure communication channel on Chrome.](./media/back-up-vmware/secure-communication-chrome.png)
 
-If you are using Internet Explorer and you don't have a valid certificate, you see this message when you access the URL:
+If you're using Internet Explorer and you don't have a valid certificate, you see this message when you access the URL:
 
 ![Screenshot of no secure communication channel on IE.](./media/back-up-vmware/no-secure-communication-ie.png)
 
-To fix the error, install a valid certificate on the DPM server and the VMware server. In the previous images, the DPM server has a valid certificate, but the certificate is not in the trusted root certification authority store. To fix this situation, add the certificate to the VMware server.
+To fix the error, install a valid certificate on the DPM server and the VMware server. In the previous images, the DPM server has a valid certificate, but the certificate isn't in the trusted root certification authority store. To fix this situation, add the certificate to the VMware server.
 
 1. On the Certificate page, on the **Certification Path** tab, select **View Certificate**.
 
@@ -167,7 +167,7 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 9. In the **Select Certificate Store** page, select **Trusted Root Authority Certificate** and select **OK**.
   ![Screenshot of select Certificate store.](./media/back-up-vmware/trusted-authority-store.png)
 10. Select **Next** and then select **Finish** to import the certificate successfully.
-11. Once you have added the certificate, sign in to your vCenter server to verify if the connection is secure.
+11. Once you've added the certificate, sign in to your vCenter server to verify if the connection is secure.
   ![Screenshot of verify connection page.](./media/back-up-vmware/secure-communication-established.png)
 
 ### Add a new user account in VMware server
@@ -288,16 +288,16 @@ When you create a user, that user must be in the same domain as the objects you 
     ![Screenshot of select VMware server.](./media/back-up-vmware/add-production-server-choose-vmware.png)
 3. On the **Select Computers** screen, provide the following information:
    - **Server Name/IP Address**: Enter the VMware server fully qualified domain name (FQDN) or IP address.
-   - **SSL Port**: Select the SSL port number used to communicate with the VMware server. DPM uses Https to communicate with VMware servers over a secured connection. To successfully communicate with VMware servers, DPM requires the SSL port number configured for that VMware server. If the VMware servers are not explicitly configured with different SSL ports, continue with default port, 443.
-   - **Specify Credential**: Select the credential needed to authenticate with this VMware server. If the required credential has not yet been added to DPM, choose **Add New Credential**. Then, provide the Name, Description, User name, and Password for the credential.
-    Once you have filled out the fields, select **Add** to add the server to the list of VMware Servers. If you would like to add more VMware servers to the list, repeat this step. If you are finished adding servers to the list, select **Next**.
+   - **SSL Port**: Select the SSL port number used to communicate with the VMware server. DPM uses Https to communicate with VMware servers over a secured connection. To successfully communicate with VMware servers, DPM requires the SSL port number configured for that VMware server. If the VMware servers aren't explicitly configured with different SSL ports, continue with default port, 443.
+   - **Specify Credential**: Select the credential needed to authenticate with this VMware server. If the required credential hasn't yet been added to DPM, choose **Add New Credential**. Then, provide the Name, Description, User name, and Password for the credential.
+    Once you've filled out the fields, select **Add** to add the server to the list of VMware Servers. If you would like to add more VMware servers to the list, repeat this step. If you're finished adding servers to the list, select **Next**.
 
 4. On the **Summary** screen, select the server you want to add, and select **Add**.
     After adding the VMware servers to DPM, for information about the available methods of protection, see [Configure Backup](back-up-vmware.md#configure-backup).
 
 ### Disable secure communication protocol
 
-If your organization does not want to use secure communication protocol (HTTPS), you can create a registry key to disable it. To create this registry key:
+If your organization doesn't want to use secure communication protocol (HTTPS), you can create a registry key to disable it. To create this registry key:
 
 1. Copy and paste the following text into a .txt file.
 
@@ -312,17 +312,17 @@ If your organization does not want to use secure communication protocol (HTTPS),
 
 ## Configure Backup
 
-Once you've added the VMware server(s) to DPM, you're almost ready to start protection in DPM. However, before you begin protection, you need to allocate disk storage that DPM can use for short-term storage. For guidance on adding storage, see [Adding Storage to DPM](/previous-versions/system-center/system-center-2012-R2/hh758075(v=sc.12)). Once you've added storage, you are ready to use the **Create New Protection Group** wizard to create a protection group for the VMware VMs.
+Once you've added the VMware server(s) to DPM, you're almost ready to start protection in DPM. However, before you begin protection, you need to allocate disk storage that DPM can use for short-term storage. For guidance on adding storage, see [Adding Storage to DPM](/previous-versions/system-center/system-center-2012-R2/hh758075(v=sc.12)). Once you've added storage, you're ready to use the **Create New Protection Group** wizard to create a protection group for the VMware VMs.
 
 ### Folder-level protection
 
 VMware provides VM folders that let you organize VMs as you like.
 
-DPM can protect individual VMs, as well as cascading levels of folders that contain VMs. Once you select a folder for protection, all folders (and VMs) within this folder are automatically detected and protected. This is called folder-level protection. DPM detects and configures protection for the VMs at 12 AM (based on the DPM server's local time zone). When DPM detects that new VMs have been created, it configures protection by the end of that day.
+DPM can protect individual VMs and cascading levels of folders that contain VMs. Once you select a folder for protection, all folders (and VMs) within this folder are automatically detected and protected. This is called folder-level protection. DPM detects and configures protection for the VMs at 12 AM (based on the DPM server's local time zone). When DPM detects that new VMs have been created, it configures protection by the end of that day.
 
 ### Scale out protection of clustered VMware servers
 
-In large VMware deployments, a single vCenter server can manage thousands of VMs. DPM supports scale-out protection of VMware server clusters. The new scale-out feature removes the limit of a one-to-one relationship between a VMware cluster and a DPM server. You can add a VM to a protection group on any of the recognized DPM servers. Multiple DPM servers can be used to protect VMs managed by a single vCenter server. However, only one DPM server can protect a VM or folder at any given time. VMs and folders that are already protected by one DPM server cannot be selected by another DPM server. To deploy scale-out protection, there must be a minimum of two DPM servers. In the following example graphic, D1 and D2 are visible to all virtual machines hosted on nodes N1, N2, N3, and N4. When protection groups on D1 or D2 are created, any virtual machine can be added.
+In large VMware deployments, a single vCenter server can manage thousands of VMs. DPM supports scale-out protection of VMware server clusters. The new scale-out feature removes the limit of a one-to-one relationship between a VMware cluster and a DPM server. You can add a VM to a protection group on any of the recognized DPM servers. Multiple DPM servers can be used to protect VMs managed by a single vCenter server. However, only one DPM server can protect a VM or folder at any given time. VMs and folders that are already protected by one DPM server can't be selected by another DPM server. To deploy scale-out protection, there must be a minimum of two DPM servers. In the following example graphic, D1 and D2 are visible to all virtual machines hosted on nodes N1, N2, N3, and N4. When protection groups on D1 or D2 are created, any virtual machine can be added.
 
 ![Screenshot of conceptual diagram of a scale-out farm.](./media/back-up-vmware/scale-out-protection-diagram.png)
 
@@ -347,7 +347,7 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 2.	On the **Select Group Members** page, select the VMware VMs you want to protect.
 3.	On the **Select Data Protection Method** page, select **I want long-term protection using tape**.
 4.	In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency you want.
-5.	On the **Select Tape and Library Details** page, specify the tape and library that'll be used for backup of this protection group. You can also specify whether to compress or encrypt the backup data.
+5.	On the **Select Tape and Library Details** page, specify the tape and library that will be used for backup of this protection group. You can also specify whether to compress or encrypt the backup data.
 
 ### Create a Protection Group for VMware VMs
 
@@ -356,16 +356,16 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
 3. In the **Select Protection Group Type** screen, select **Servers** and then select **Next**.
     ![Screenshot of create new protection group.](./media/back-up-vmware/create-new-protection-group-wizard.png)
 4. In the **Select Group Members** screen, expand the **Available members** folders and select the folders to protect and select **Next**.
-    Once you select a folder, the member is added to the Selected members list. Items already protected by a DPM server cannot be selected again. View the DPM server that protects an item by hovering over the item in the Available members list.
+    Once you select a folder, the member is added to the Selected members list. Items already protected by a DPM server can't be selected again. View the DPM server that protects an item by hovering over the item in the Available members list.
 
     ![Screenshot of select members for the new protection group.](./media/back-up-vmware/select-group-members.png)
 5. On the **Select Data Protection Method** screen, type a **Protection group name** and then select the protection method.
     For protection method, you can choose: short-term protection to a hard drive, long-term backup to tape, or online protection to the cloud. Once you've selected your protection method, select **Next**.
 
-    If you have a standalone tape or tape library connected to the DPM server, you'll be able to select **I want long-term protection using tape**.
+    If you've a standalone tape or tape library connected to the DPM server, you'll be able to select **I want long-term protection using tape**.
 
 6.	On the **Specify Short-Term Goals** screen, for the **Retention Range**, specify the number of days your data is kept on disk.
-    If you want to change the schedule when application recovery points are taken, select **Modify**. On the Express Full Backup tab, choose a new schedule for the time(s) and days of the week when Express Full Backups are taken. The default is daily at 8 PM local time for the DPM server. When you have the short-term goals you like, select **Next**.
+    If you want to change the schedule when application recovery points are taken, select **Modify**. On the Express Full Backup tab, choose a new schedule for the time(s) and days of the week when Express Full Backups are taken. The default is daily at 8 PM local time for the DPM server. When you've the short-term goals you like, select **Next**.
 
 7. If you want to store data on tape for long-term storage in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In **Frequency of backup**,  specify how often backups to tape should run. The frequency is based on the retention range you've specified:
     -	When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
@@ -382,8 +382,8 @@ On the **Select Tape and Library Details** page, specify the tape/library to use
 11. On the **Specify Online Protection Data** screen, select the data source(s) that you want to protect.
 12. On the **Specify Online Backup Schedule** screen, specify how often you want to take a backup from the disk backup to Azure. A recovery point is created each time a backup is taken.
 13. On the **Specify Online Retention Policy** screen, specify how long you want to retain your data in Azure. For more information on backing up DPM to Azure, see [Backup DPM workloads with Azure Backup](/azure/backup/backup-azure-dpm-introduction).
-14. On the **Choose Online Replication** screen, choose your method for creating your initial backup copy. The default choice is to send the initial backup copy of your data over the network. However, if you have a large amount of data, it may be more timely to use the Offline Backup feature. For more information, including a step-by-step walkthrough, see the Offline Backup article in Azure.
-15. On the Summary screen, review the settings. If you are interested in optimizing the performance of the protection group, see [Optimizing DPM operations](/previous-versions/system-center/system-center-2012-R2/jj628105(v=sc.12)) that affect performance. Once you are satisfied with all the settings for the protection group, select **Create Group** to create the protection group and trigger the initial backup copy.
+14. On the **Choose Online Replication** screen, choose your method for creating your initial backup copy. The default choice is to send the initial backup copy of your data over the network. However, if you've a large amount of data, it may be more timely to use the Offline Backup feature. For more information, including a step-by-step walkthrough, see the Offline Backup article in Azure.
+15. On the Summary screen, review the settings. If you're interested in optimizing the performance of the protection group, see [Optimizing DPM operations](/previous-versions/system-center/system-center-2012-R2/jj628105(v=sc.12)) that affect performance. Once you're satisfied with all the settings for the protection group, select **Create Group** to create the protection group and trigger the initial backup copy.
 
 The Status screen appears and gives you an update on the creation of your protection group and the state of your initial backup.
 
@@ -426,8 +426,8 @@ You can restore individual files from a protected VM recovery point. This featur
 3. In the **Recovery Points for:** pane, use the calendar to select the date that contains the desired recovery point(s).
     Depending on how the backup policy has been configured, dates can have more than one recovery point. Once you've selected the day when the recovery point was taken, ensure that you've chosen the correct Recovery time. If the selected date has multiple recovery points, choose your recovery point by selecting it in the **Recovery time** dropdown menu. Once you chose the recovery point, the list of recoverable items appears in the **Path:** pane.
 4. To find the files you want to recover, in the **Path** pane, double-click the item in the **Recoverable item** column to open it. Select the file, files, or folders you want to recover. To select multiple items, press the **Ctrl** key while selecting each item.
-    Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** does not search into subfolders. To search through subfolders, double-click the folder. Use the **Up** button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You cannot recover items from multiple folders in the same recovery job.
-5. When you have selected the item(s) for recovery, in the Administrator Console tool ribbon, select **Recover** to open the **Recovery Wizard**.
+    Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** doesn't search into subfolders. To search through subfolders, double-click the folder. Use the **Up** button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You can't recover items from multiple folders in the same recovery job.
+5. When you've selected the item(s) for recovery, in the Administrator Console tool ribbon, select **Recover** to open the **Recovery Wizard**.
     In the Recovery Wizard, the **Review Recovery Selection** screen shows the selected items to be recovered.
 
      ![Screenshot of review Recovery points.](./media/back-up-vmware/review-recovery-point-selection.png)
@@ -436,7 +436,7 @@ You can restore individual files from a protected VM recovery point. This featur
 7. On the **Select Recovery Type** screen, select **Next**. You can only recover your file(s) or folder(s) to a network folder.
 8. On the **Specify Destination** screen, select **Browse** to find a network location for your files or folders. DPM creates a folder where all recovered items are copied. The folder name has the prefix, DPM_day-month-year. When you select a location for the recovered files or folder, the details for that location (Destination, Destination path, and available space) are provided.
     ![Screenshot of specify destination for files or folders.](./media/back-up-vmware/specify-destination.png)
-9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** are not enabled.
+9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** aren't enabled.
 10.	On the **Summary** screen, review your settings and select **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
 
@@ -448,9 +448,9 @@ With earlier versions of DPM, parallel backups were performed only across protec
 
 You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
-Key Path : Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
+Key Path: Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
 
-Key Type : DWORD (32-bit) value.
+Key Type: DWORD (32-bit) value.
 
 > [!NOTE]
 >  You can modify the number of jobs to a higher value. If you set the jobs number to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups, you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
@@ -462,7 +462,7 @@ Key Type : DWORD (32-bit) value.
 
 ## VMware parallel restore in DPM 2022
 
-DPM 2022 supports restore of more than one VMware VMs protected from same vCenter in parallel. By default, 8 parallel recoveries are supported. You can increase the number of parallel restore jobs by adding below registry key.
+DPM 2022 supports restore of more than one VMware VMs protected from same vCenter in parallel. By default, eight parallel recoveries are supported. You can increase the number of parallel restore jobs by adding below registry key.
 
 >[!Note]
 >Before you attempt to increase the number of parallel recoveries, you need to consider the VMware performance. Considering the number of resources in use and additional usage required on VMware vSphere Server, you need to determine the number of recoveries to run in parallel.
@@ -572,7 +572,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
   4. To exclude disk, navigate to Bin folder and run the *ExcludeDisk.ps1* script with the following parameters:
 
         > [!NOTE]
-        > Before running this command, stop the DPMRA service on the DPM server. Else, the script returns success but does not update the exclusion list. Ensure that there are no jobs in progress before stopping the service.
+        > Before running this command, stop the DPMRA service on the DPM server. Else, the script returns success but doesn't update the exclusion list. Ensure that there are no jobs in progress before stopping the service.
         >
         > With DPM 2019 UR2, this experience is improved. You can run the script without stopping the DPMRA service.
 
@@ -608,10 +608,10 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
     </VirtualMachine>
     ```
 
-  Once you configure the protection for this VM, the excluded disk will not be listed during protection.
+  Once you configure the protection for this VM, the excluded disk won't be listed during protection.
 
   > [!NOTE]
-  > If you are performing these steps for already protected VM, you need to run the consistency check manually after adding the disk for exclusion.
+  > If you're performing these steps for already protected VM, you need to run the consistency check manually after adding the disk for exclusion.
 
 
 **Remove the disk from exclusion**

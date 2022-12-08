@@ -26,7 +26,7 @@ System Center Data Protection Manager (DPM) can back up system state and provide
 
     -   Domain member: Boot files, COM+ class registration database, registry
 
-    -   Domain controller: Active Directory (NTDS), boot files, COM+ class registration database, registry, system volume (SYSVOL)
+    -   Domain controller: Active Directory (NTDS), boot files, COM+ class registration database, registry, system volume
 
     -   Machine running cluster services: Additionally backs up cluster server metadata
 
@@ -62,11 +62,11 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 3.  If the protection server is in a cluster, it's possible that a cluster drive will be selected as the drive with the most free space. It's important to be aware of this because if that drive ownership has been switched to another node and a system state backup runs, the drive won't be available and the backup will fail. In this situation, you'll need to modify the PSDataSourceConfig.XML to point it to a local drive.
 
-4.  Windows Server Backup (WSB) creates a folder called WindowsImageBackup on the root of the. As it creates the backup, all data is placed in this folder. When the backup completes, the file will then be transferred over to the DPM server. Note that:
+4.  Windows Server Backup (WSB) creates a folder called WindowsImageBackup on the root of the. As it creates the backup, all data is placed in this folder. When the backup completes, the file will then be transferred over to the DPM server.
 
-    -   This folder and its contents do not get cleaned up after the backup or transfer is done. The best way to think of this is that the space is being reserved for the next time a backup is done.
-
-    -   The folder gets created every time a backup is done. The time/date stamp will reflect the time of your last system state backup.
+    > [!NOTE]
+    >  -   This folder and its contents don't get cleaned up after the backup or transfer is done. The best way to think of this is that the space is being reserved for the next time a backup is done.
+    >  -   The folder gets created every time a backup is done. The time/date stamp will reflect the time of your last system state backup.
 
 ## BMR backup
 
@@ -88,7 +88,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 -   Windows Server Backup must be installed on the protected computer for BMR.
 
--   For BMR protection (unlike system state protection), DPM doesn't have any space requirements on the protected computer. WSB directly transfers the backups to the DPM server. Note that the job for this doesn't appear in the DPM Jobs view.
+-   For BMR protection (unlike system state protection), DPM doesn't have any space requirements on the protected computer. WSB directly transfers the backups to the DPM server. Remember, the job for this doesn't appear in the DPM Jobs view.
 
 - If you use Modern Backup Storage and want to increase the BMR default replica size > 30 GB, use the registry key: HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD).
 
@@ -100,7 +100,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 ::: moniker range="sc-dpm-2016"
 
 > [!NOTE]
-> The following limitations do NOT apply to Modern Backup Storage (MBS). The following limitations apply only when using legacy storage after upgrading DPM 2012 R2 to DPM 2016.
+> The following limitations don't apply to Modern Backup Storage (MBS). The following limitations apply only when using legacy storage after upgrading DPM 2012 R2 to DPM 2016.
 
 ::: moniker-end
 
@@ -113,17 +113,17 @@ This table summarizes what you can back up and recover. You can see detailed inf
     > [!NOTE]
     > You can't reduce the replica volume size to less than 15 GB. DPM doesn't calculate the size of BMR data source but assumes 30 GB for all servers. Admins should change the value as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated as the sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD. Process System state backup
 
--   If you move from system state protection to BMR protection, BMR protection will require less space on the **recovery point volume.** However, the extra space on the volume is not reclaimed. You can shrink the volume size manually from the **Modify Disk Allocation** page of the **Modify Protection Group Wizard** or using the Get-DatasourceDiskAllocation and Set-DatasourceDiskAllocation cmdlets.
+-   If you move from system state protection to BMR protection, BMR protection will require less space on the **recovery point volume.** However, the extra space on the volume isn't reclaimed. You can shrink the volume size manually from the **Modify Disk Allocation** page of the **Modify Protection Group Wizard** or using the Get-DatasourceDiskAllocation and Set-DatasourceDiskAllocation cmdlets.
 
     If you move from system state protection to BMR protection, BMR protection will require more space on the **replica volume**. The volume will be extended automatically. If you want to change the default space allocations, you can use Modify-DiskAllocation.
 
--   If you move from BMR protection to system state protection you'll need more space on the recovery point volume. DPM might try to automatically grow the volume. If there is insufficient space in the storage pool, an error will be issued.
+-   If you move from BMR protection to system state protection, you'll need more space on the recovery point volume. DPM might try to automatically grow the volume. If there's insufficient space in the storage pool, an error will be issued.
 
     If you move from BMR protection to system state protection, you'll need space on the protected computer because system state protection first writes the replica to the local computer and then transfers it to the DPM server
 
 ## Before you start
 
-1.  **Deploy DPM**: Verify DPM is deployed correctly. If you haven't see:
+1.  **Deploy DPM**: Verify DPM is deployed correctly. If you haven't, see:
 
     -   System requirements for DPM
 
@@ -163,7 +163,7 @@ Set up a protection group as described in [Deploy protection groups](create-dpm-
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
+    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page, specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
@@ -211,7 +211,7 @@ Set up the share location:
 
 Restore the system:
 
-1.  Start the machine  for which you want to restore the image to using the Windows DVD to match the system you are restoring.
+1.  Start the machine  for which you want to restore the image to using the Windows DVD to match the system you're restoring.
 
 2.  On the first screen, verify language/locale settings. On the **Install** screen, select **Repair your computer**.
 

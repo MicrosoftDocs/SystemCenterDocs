@@ -32,7 +32,7 @@ Before you deploy DPM to protect client computer data, verify the deployment pre
 
 -   Ensure that the client machines you want to back up are in the DPM server domain or in a domain with a two-way trust relationship with the DPM domain.
 
--   To set up client machines for protection, install the DPM protection agent on them. If Windows Firewall is configured on the client computer, the agent installation will set up the firewall exceptions it needs. If you need to reset the firewall, you can reconfigure it by running SetDpmServer.exe. If you are using a firewall other than Windows Firewall, you'll need to open the necessary ports. Learn more in [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
+-   To set up client machines for protection, install the DPM protection agent on them. If Windows Firewall is configured on the client computer, the agent installation will set up the firewall exceptions it needs. If you need to reset the firewall, you can reconfigure it by running SetDpmServer.exe. If you're using a firewall other than Windows Firewall, you'll need to open the necessary ports. Learn more in [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 -   DPM can back up client computers that are physically or wirelessly connected to the local area network (LAN) or back up over VPN. For VPN backup the ICMP should be enabled on the client computer.
 
@@ -70,9 +70,9 @@ Before you deploy DPM to protect client computer data, verify the deployment pre
 3.  **Set up the DPM protection agent** - The agent needs to be installed on client computers you want to protect. Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 
-## Well known folders to backup on client computers
+## Well known folders to back up on client computers
 
-If you are looking to back up certain common folders in your client machines, you can select these folders from the *Well Known Folder* list in DPM and DPM will take backup of these folders on your client computers in subsequent backup cycles. Below is the list of the well known folders that you can backup with DPM:
+If you're looking to back up certain common folders in your client machines, you can select these folders from the *Well Known Folder* list in DPM, and DPM will take backup of these folders on your client computers in subsequent backup cycles. Below is the list of the well known folders that you can back up with DPM:
 
 | **Well Known Folder**    | **Location to all or every user on the client machine**                                  |
 |--------------------------|------------------------------------------------------------------------------------------|
@@ -98,7 +98,7 @@ If you are looking to back up certain common folders in your client machines, yo
 > To backup *Links*, *Downloads*, *Slides Shows*, and *Quick Launch*, you need to add to the registry location
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders for every user.
 
-The details of the registry entry are below. Please modify the value USERNAME according to your username of the client computer.
+The details of the registry entry are below. Modify the value USERNAME according to your username of the client computer.
 
 - reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"/v Links /t REG_SZ /d C:\Users\USERNAME\Links
 
@@ -150,7 +150,7 @@ The details of the registry entry are below. Please modify the value USERNAME ac
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
+    On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page, specify the tape/library to use and whether data should be compressed and encrypted on tape.
 
@@ -164,7 +164,7 @@ The details of the registry entry are below. Please modify the value USERNAME ac
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page, ensure to select the workloads that you want to back up to Azure.
 
-11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
+11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a backup runs, a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
 12. In **Specify online retention policy**, specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
