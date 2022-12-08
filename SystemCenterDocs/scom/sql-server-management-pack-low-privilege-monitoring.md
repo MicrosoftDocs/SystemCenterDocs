@@ -373,7 +373,7 @@ To configure low-privilege agentless monitoring using the monitoring wizard, per
 
     You can also create a new Run As account. For that, in the **Add Instances** window, click **New**, enter a new name for the Run As account, and specify credentials to access the SQL Server that you want to monitor.
 
-    ![Screensho of Run As account.](./media/sql-server-management-pack/adding-run-as-account.png)
+    ![Screenshot of Run As account.](./media/sql-server-management-pack/adding-run-as-account.png)
 
     After connection is established, you can view and edit properties of the added instance.
 
