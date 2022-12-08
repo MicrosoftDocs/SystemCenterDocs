@@ -2,10 +2,10 @@
 ms.assetid: 8e379e26-a604-4976-88ff-d291c48b8700
 title: Features and enhancements in Management Pack for SQL Server Analysis Services
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Analysis Services
-author: Anastas1ya
-ms.author: v-asimanovic
+author: vchvlad
+ms.author: v-vchernov
 manager: evansma
-ms.date: 6/10/2022
+ms.date: 12/9/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,6 +14,23 @@ ms.technology: operations-manager
 # Features and Enhancements in Management Pack for SQL Server Analysis Services
 
 This section covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
+
+## December 2022 - 7.0.40.0 CTP
+
+### What's New
+
+- Added support for the SQL Server 2022 RTM
+- Added a new 'SQL Server Editions' exclude list override option for the Multidimensional, PowerPivot, and Tabular instance discoveries
+- Added a new 'SQL Server Versions' exclude list override option for the Multidimensional, PowerPivot, and Tabular instance discoveries
+- Added a new 'Exclude list' override option for the "Multidimensional DB" and the "Tabular DB" discoveries
+- Added support for enabling debug logging in Windows Event Log
+- Updated memory and space monitoring workflows to apply 4-significant digit rounding in all the values
+- Discovery and monitoring workflows have been optimized for better performance
+- Updated display strings
+
+### Bug Fixes
+
+- Fixed an issue with failing the 'MultidimensionalPartitionPropertyCD' discovery module in case of Analysis Services instance is stopped
 
 ## June 2022 - 7.0.38.0 RTM
 
@@ -34,7 +51,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### Bug Fixes
 
-- Fixed an issue with not working Operations Manager console tasks in clustered environments. Now tasks "Start Analysis Service" and "Stop Analysis Service" work properly
+- Fixed an issue with not working System Center Operations Manager console tasks in clustered environments. Now tasks "Start Analysis Service" and "Stop Analysis Service" work properly
 
 ## June 2021 - 7.0.32.0 RTM
 
@@ -51,7 +68,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### What's New
 
 - Improved performance of partition discovery for multidimensional databases
-- Updated and improved System Center Operations Manager 2019 HTML Dashboards to display SSAS health and alerts
+- Updated and improved System Center Operations Manager 2019 HTML Dashboards to display the SQL Server Analysis Services health and alerts
 
 ## June 2020 - 7.0.22.0 RTM
 
@@ -73,7 +90,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### What's New
 
 - Replaced the Core Library in the delivery with the version 7.0.7.0, that version which is delivered with the most recent RTM version of the management pack for SQL Server 2017+
-- Improved displaying of the SSAS instance version (now shows Patch Level version instead of Version)
+- Improved displaying of the SQL Server Analysis Services instance version (now shows Patch Level version instead of Version)
 - Added missed dependency monitors required to roll up the instance health appropriately
 - Updated Summary dashboards
 - Updated display strings
