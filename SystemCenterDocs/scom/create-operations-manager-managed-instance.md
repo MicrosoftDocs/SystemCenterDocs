@@ -110,7 +110,7 @@ To register SCOM Managed Instance (preview) resource provider, do the following:
 3. Under **Settings**, select **Resource providers**.
 4. Search for SCOM and register **Microsoft.Scom**.
 
-
+      :::image type="Register resource provider" source="media/create-operations-manager-managed-instance/register-resource-provider.png" alt-text="Screenshot of register resource provider.":::
 ## Create a Managed Service Identity (MSI)
 
 The Managed Service Identity provides an identity for applications to use when connecting to resources that support Azure Active Directory (Azure AD) authentication. For SCOM Managed Instance (preview), a Managed Identity will replace the traditional four System Center Operations Manager service accounts and it will be used to access the SQL MI database. MSI can also be used to access the key vault.
