@@ -53,7 +53,7 @@ After you set up your DPM infrastructure, you can enable protection machines tha
 
 4.  In **Select data protection method**, specify how you want to handle short- and long-term backup. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term backup to a standalone tape device or tape library connected to the DPM server.
 
-5.  In **Select short-term goals**, specify how you want to back up to short-term storage on disk. In **Retention range**, specify how long you want to keep the data on disk. In **Synchronization frequency**, specify how often you want to run an incremental backup to disk. If you don't want to set a backup interval, you can check **Just before a recovery point** so that DPM will run an express full backup just before each recovery point is scheduled.
+5.  In **Select short-term goals**, specify how you want to back up to short-term storage on disk. In **Retention range**, specify how long you want to keep the data on disk. In **Synchronization frequency**, specify how often you want to run an incremental backup to disk. If you don't want to set a backup interval, you can check just before a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
 
 6.  If you want to store data on tape for long-term storage, in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In Frequency of backup, specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 

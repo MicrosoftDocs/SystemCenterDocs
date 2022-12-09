@@ -26,7 +26,7 @@ System Center Data Protection Manager (DPM) can back up system state and provide
 
     -   Domain member: Boot files, COM+ class registration database, registry
 
-    -   Domain controller: Active Directory (NTDS), boot files, COM+ class registration database, registry, system volume
+    -   Domain controller: Active Directory (NTDS), boot files, COM+ class registration database, registry, system volume (SYSVOL)
 
     -   Machine running cluster services: Additionally backs up cluster server metadata
 
@@ -88,7 +88,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 -   Windows Server Backup must be installed on the protected computer for BMR.
 
--   For BMR protection (unlike system state protection), DPM doesn't have any space requirements on the protected computer. WSB directly transfers the backups to the DPM server. Remember, the job for this doesn't appear in the DPM Jobs view.
+-   For BMR protection (unlike system state protection), DPM doesn't have any space requirements on the protected computer. WSB directly transfers the backups to the DPM server. The job for this doesn't appear in the DPM Jobs view.
 
 - If you use Modern Backup Storage and want to increase the BMR default replica size > 30 GB, use the registry key: HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD).
 
@@ -153,7 +153,7 @@ Set up a protection group as described in [Deploy protection groups](create-dpm-
 
 4.  In **Select data protection method**, specify how you want to handle short- and long-term backups. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short- or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term backup to a standalone tape device or tape library connected to the DPM server.
 
-5.  In **Select short-term goals**, specify how you want to back up to short-term storage on disk. In Retention range, specify how long you want to keep the data on disk. In Synchronization frequency, specify how often you want to run an incremental backup to disk. If you don't want to set a backup interval, you can check **Just before a recovery point** so that DPM will run an express full backup just before each recovery point is scheduled.
+5.  In **Select short-term goals**, specify how you want to back up to short-term storage on disk. In Retention range, specify how long you want to keep the data on disk. In Synchronization frequency, specify how often you want to run an incremental backup to disk. If you don't want to set a backup interval, you can check just before a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
 
 6.  If you want to store data on tape for long-term storage in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In Frequency of backup, specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
