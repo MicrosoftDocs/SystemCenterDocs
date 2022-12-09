@@ -174,12 +174,6 @@ Performance collection rules collect the following metrics:
 - Used Space on Drive (GB)
 - Database VertiPaq Memory Size (GB)
 
-## How Health Rolls Up
-
-The following diagram shows the roll up of the object health states.
-
-![Diagram of health Rolls Up.](./media/analysis-services-management-pack/health-rolls-up.png)
-
 ## Enabling Debugging
 
 In Management Pack for SQL Server Analysis Services, you can enable debugging in the Windows Event log in cases when you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
@@ -197,3 +191,9 @@ The same should be done for each agent where extended logging must be enabled. Y
 
 > [!NOTE]
 > Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
+
+## How Health Rolls Up
+
+The following diagram shows the roll up of the object health states.
+
+![Diagram of health Rolls Up.](./media/analysis-services-management-pack/health-rolls-up.png)
