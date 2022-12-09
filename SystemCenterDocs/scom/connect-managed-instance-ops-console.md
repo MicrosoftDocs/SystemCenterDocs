@@ -28,7 +28,10 @@ Follow the below steps to connect a SCOM Managed Instance (preview) to Ops conso
      >Don't perform this on a SCOM Managed Instance (preview) VM, do it on a separate VM. The VM needs to be a Windows Server. This server can be on-premises or on Azure.
 1. **Install the Ops Console**: From the [executable file](https://go.microsoft.com/fwlink/?linkid=2212475), install the Operations console and follow the installation wizard to successfully install the Ops console.
 1. **Connect SCOM Managed Instance (preview) to Ops Console**: Log in to the Ops console and select **Connect To Server**. Add the FQDN pointing to the management servers. 
-     For a detailed procedure to connect the Ops console to a Management Group (in this case, SCOM Managed Instance (preview)), see [How to connect to the Operations and Web console](/system-center/scom/manage-consoles-how-to-connect?view=sc-om-2019&preserve-view=true)
+
+        :::image type="Ops console" source="media/connect-managed-instance-ops-console/ops-console.png" alt-text="Screenshot of Ops console page.":::
+         
+        For a detailed procedure to connect the Ops console to a Management Group (in this case, SCOM Managed Instance (preview)), see [How to connect to the Operations and Web console](/system-center/scom/manage-consoles-how-to-connect?view=sc-om-2019&preserve-view=true)
 1. **Gateway Server requirements**: If your agents are in a domain that is outside the trust boundary of the SCOM Managed Instance (preview), you need to install a gateway server to use certificate-based authentication. 
 
     If you only have a few agents outside the trust boundary, you can use certificates to directly connect them to the SCOM Managed Instance (preview) without a gateway server. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). If you need to install a gateway server, identify a desired server, install the gateway server from the System Center Operations Manager executable file and follow the steps in the installation wizard.
