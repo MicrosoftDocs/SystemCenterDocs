@@ -88,10 +88,10 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
     New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType RC4, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
     ```
     
-    - ContosoVMSSLB = gMSA account name 
-    - ContosoLB.aquiladom.comVMSSLB.dns.net = DNS name for LB (specified in the previous step) 
-    - ContosoServerGroupcomputerGroup = Computer group in AD (specified previously)
-    - MSOMHSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMHSvc/ VMSSLB	ContosoLB, MSOMSdkSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMSdkSvc/ ContosoLBVMSSLB = Service Principal names 
+    - ContosogMSA = gMSA account name 
+    - ContosoLB.aquiladom.com = DNS name for LB (specified in the previous step) 
+    - ContosoServerGroup = Computer group in AD (specified previously)
+    - MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB = Service Principal names 
 
 - Use the below command, if the root key isn't effective:
  
