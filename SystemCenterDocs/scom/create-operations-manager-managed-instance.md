@@ -110,7 +110,6 @@ To register SCOM Managed Instance (preview) resource provider, do the following:
 3. Under **Settings**, select **Resource providers**.
 4. Search for SCOM and register **Microsoft.Scom**.
 
-:::image type="Register resource provider" source="media/create-operations-manager-managed-instance/register-resource-provider.png" alt-text="Screenshot showing register resource provider.":::
 
 ## Create a Managed Service Identity (MSI)
 
