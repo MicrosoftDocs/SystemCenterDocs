@@ -5,7 +5,7 @@ description: This article describes how to create an Azure Monitor SCOM Managed 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 11/29/2022
+ms.date: 12/09/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -85,13 +85,13 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 - Create a gMSA (Group Managed Service Account) account to run the Management Server services and to authenticate the services. Use the below command to create a gMSA account: 
 
     ```powershell
-    New-ADServiceAccount VMSSLBContoso -DNSHostName "ContosoVMSSLB.aquiladomdns.comnet" -PrincipalsAllowedToRetrieveManagedPassword ‘ContosoServerGroupcomputerGroup’ -KerberosEncryptionType RC4, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMHSvc/ ContosoLBVMSSLB, MSOMSdkSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMSdkSvc/ VMSSLB ContosoLB 
+    New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType RC4, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
     ```
     
-    - ContosoVMSSLB = gMSA account name 
-    - ContosoLB.aquiladom.comVMSSLB.dns.net = DNS name for LB (specified in the previous step) 
-    - ContosoServerGroupcomputerGroup = Computer group in AD (specified previously)
-    - MSOMHSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMHSvc/ VMSSLB	ContosoLB, MSOMSdkSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMSdkSvc/ ContosoLBVMSSLB = Service Principal names 
+    - ContosogMSA = gMSA account name 
+    - ContosoLB.aquiladom.com = DNS name for LB (specified in the previous step) 
+    - ContosoServerGroup = Computer group in AD (specified previously)
+    - MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB = Service Principal names 
 
 - Use the below command, if the root key isn't effective:
  
@@ -100,6 +100,16 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
     ```
 
 # [In Azure portal](#tab/prereqs-portal)
+
+## Register SCOM Managed Instance (preview) Resource provider
+
+To register SCOM Managed Instance (preview) resource provider, do the following:
+
+1. Sign in to the [Azure portal](https://portal.azure.com) and select **Subscriptions**.
+2. Select the subscription where you want to deploy SCOM Managed Instance (preview).
+3. Under **Settings**, select **Resource providers**.
+4. Search for SCOM and register **Microsoft.Scom**.
+
 
 ## Create a Managed Service Identity (MSI)
 
@@ -296,6 +306,8 @@ To create a SCOM Managed Instance (preview), follow these steps:
     1. **Virtual network**:
         1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server. 
         1. **Subnet**: Select a subnet that has at least 32 IP addresses to house all the SCOM Managed Instance (preview) components. The minimum address space is 28. The subnet can have existing resources in it, however, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the instance.
+           >[!Note]
+           >Ensure that you have a NAT Gateway associated with the subnet you choose.
     1. **SCOM managed instance interface**:
         1. **Static IP**: Enter the Static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance (preview).
         1. **DNS name**: Enter the DNS name that you attached to the Static IP above.
