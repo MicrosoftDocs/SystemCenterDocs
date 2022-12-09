@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 11/23/2022
+ms.date: 12/9/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -33,8 +33,8 @@ Reporting Services Database is a term that describes two databases used by Serve
 - Catalog Database
 - Temporary Database
 
->[!NOTE]
->Pre-installation of **Microsoft SQL Server on Windows (Discovery)** version 7.0.20.0 or later is required to discover Server Reporting Services Deployment. This MP file is part of the **Microsoft System Center Management Pack for SQL Server on Windows** delivery. In cases of absence of **Microsoft SQL Server on Windows (Discovery)**, this management pack will not be able to discover and monitor availability and performance of Server Reporting Services Deployment. Monitoring of Server Reporting Services is still possible without having **Microsoft SQL Server on Windows (Discovery)** installed.
+> [!NOTE]
+> Pre-installation of **Microsoft SQL Server on Windows (Discovery)** version 7.0.20.0 or later is required to discover Server Reporting Services Deployment. This MP file is part of the **Microsoft System Center Management Pack for SQL Server on Windows** delivery. In cases of absence of **Microsoft SQL Server on Windows (Discovery)**, this management pack will not be able to discover and monitor availability and performance of Server Reporting Services Deployment. Monitoring of Server Reporting Services is still possible without having **Microsoft SQL Server on Windows (Discovery)** installed.
 
 Management Pack for SQL Server Reporting Services supports different kinds of installations of SQL Server. The Reporting Services Database can be deployed to:
 
@@ -168,9 +168,11 @@ In System Center Operations Manager, groups are logical collections of objects, 
 In Management Pack for SQL Server Reporting Services you can use two groups, which have the dynamic type of membership:
 
 - MSSQL Reporting Services: Deployment Group
+  
   This group is used to contain all Reporting Services Deployment objects.
 
 - MSSQL Reporting Services: Power BI Feature Group
+  
   This group is used to enable Power BI for particular Reporting Services instances, which support this feature, for example:
 
   - Memory consumed by running Power BI reports monitor
@@ -195,8 +197,8 @@ To enable debugging, do the following:
 
 The same should be done for each agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
 
->[!NOTE]
->Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
+> [!NOTE]
+> Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
 
 ## How Health Rolls Up
 
