@@ -138,7 +138,7 @@ To delete a credential:
 
 DPM communicates with the VMware server securely over an HTTPS channel. To create the secure communication, install a trusted certificate on both the VMware server and the DPM server. If the connection to your vCenter isn't secure, you can secure it by installing a certificate on the DPM server. Use the same certificate to make a secure connection with the VMware server.
 
-To verify if there is a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you're using Chrome and you do not have a valid certificate, you see the strikethrough in the URL, like this example:
+To verify if there's a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you're using Chrome and you don't have a valid certificate, you see the strikethrough in the URL, like this example:
 
 ![Screenshot of no secure communication channel on Chrome.](./media/back-up-vmware/secure-communication-chrome.png)
 
@@ -444,7 +444,7 @@ You can restore individual files from a protected VM recovery point. This featur
 
 ## VMware parallel backups
 
-With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019 and later, all your VMware VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMware delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019 and later, all your VMware VMs back up within a single protection group would be parallel, leading to faster VM backups. All VMware delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
 
 You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
