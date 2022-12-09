@@ -51,8 +51,8 @@ Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-Add] [-Writers] \<S
 |-------------|--------|---------------|
 |DPMServerNAme|String|Specifies the DPM server against which this command should run. By default, the command is run against the local DPM server.|
 |List|SwitchParameter|Indicates that the command should display the list of registered writer IDs.|
-|Add|SwitchParameter|Indicates that the command should add the list of writer IDs to the list of the writer IDs that is registered with DPM.|
-|Remove|SwitchParameter|Indicates that the given list of writer IDs must be removed from the list of the writer IDs that is registered with DPM.|
+|Add|SwitchParameter|Indicates that the command should add the list of writer IDs to the list of the writer IDs that's registered with DPM.|
+|Remove|SwitchParameter|Indicates that the given list of writer IDs must be removed from the list of the writer IDs that's registered with DPM.|
 |Writers|String|Comma-separated list of writer IDs.|
 
 ## Example 1

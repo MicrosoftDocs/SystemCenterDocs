@@ -43,7 +43,7 @@ Before you start, check the supported protection scenarios and required network 
 |Hyper-V server|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />NTLM and certificate authentication|
 |Hyper-V cluster|Workgroup: Not supported<br /><br />Untrusted Domain: Supported (certificate authentication only)|
 |Exchange Server|Workgroup: Not applicable<br /><br />Untrusted Domain: Supported for single server only. Cluster not supported. CCR, SCR, DAG not supported. LCR supported.<br /><br />NTLM authentication only|
-|Secondary DPM server (For backup of primary DPM server) <br /><br /> **Note:** Both Primary and Secondary DPM Servers must be in same or two-way forest transitive trusted domain. |Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />Certificate authentication only|
+|Secondary DPM server (For backup of primary DPM server) <br /><br /> Ensure that both Primary and Secondary DPM Servers are in same or two-way forest transitive trusted domain. |Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />Certificate authentication only|
 |SharePoint|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
 |Client computers|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
 |Bare metal recovery (BMR)|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
@@ -151,7 +151,7 @@ Here's how to set up protection with certificate authentication.
 
     -   Key type should be **exchange**.
 
-    -   The subject name of the certificate and the root certificate should not be empty.
+    -   The subject name of the certificate and the root certificate shouldn't be empty.
 
     -   The revocation servers of the associated Certificate Authorities are online and accessible by both the protected server and DPM server
 
@@ -182,7 +182,7 @@ You can optionally set up a DPM template for web enrollment. If you do want to d
 
 2.  In **Duplicate Template**, leave the default setting **Windows Server 2003 Enterprise**.
 
-3.  In the **General** tab, change the template display name to something recognizable. For example **DPM Authentication**. Ensure that the setting **Publish certificate in Active Directory** is enabled.
+3.  In the **General** tab, change the template display name to something recognizable. For example, **DPM Authentication**. Ensure that the setting **Publish certificate in Active Directory** is enabled.
 
 4.  In the **Request Handling** tab, ensure that **Allow private key to be exported** is enabled.
 
@@ -311,6 +311,6 @@ To switch from NTLM authentication to certificate authentication, use the follow
 1. On the DPM server, remove all the nodes of the cluster using the *Remove-ProductionServer.ps1* PowerShell script.
 2. Uninstall the DPM agent on all the nodes, and delete the agent folder from **C:\Program Files\Microsoft Data Protection Manager**.
 3. Follow the steps in [back up using certificate authentication](#back-up-using-certificate-authentication).
-4. Once the agents are deployed and configured for certificate authentication, verify that the agent refresh works and it correctly shows (untrusted - Certificates) for each of the nodes.
-5. Refresh the nodes/cluster to get a list of data sources to protect; re-try protecting the clustered resource(s).
+4. Once the agents are deployed and configured for certificate authentication, verify that the agent refresh works, and it correctly shows (untrusted - Certificates) for each of the nodes.
+5. Refresh the nodes/cluster to get a list of data sources to protect; retry protecting the clustered resource(s).
 6. Add the workload to protect and finish the Protection group Wizard.

@@ -50,11 +50,11 @@ Follow the below steps to configure email for DPM using on-premises SMTP server:
 1. Select **Send Test E-mail** to verify if the setup is working.
 1. Select **OK** to save the details.
 
-**Use O365 SMTP to configure email for DPM**
+**Use Microsoft 365 SMTP to configure email for DPM**
 
-DPM supports O365 without a relay agent. 
+DPM supports Microsoft 365 without a relay agent. 
 
-Use *office365 smtp server: smtp.office365.com* on ports 25 and 587 to configure email for alerts and reports. If you use O365, ensure to use the username and password for O365 instead of the domain user.
+Use *office365 smtp server: smtp.office365.com* on ports 25 and 587 to configure email for alerts and reports. If you use Microsoft 365, ensure to use the username and password for Microsoft 365 instead of the domain user.
 
 :::image type="SMTP Server" source="media/monitor-dpm/smtp-server.png" alt-text="Screenshot of SMTP server tab.":::
     
@@ -76,7 +76,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 >[!NOTE]
 > For the backed-up items to be visible in the Azure portal, the DPM version must be 1807 (5.1.378.0) or 2019 (version 10.19.58.0 or later) .
 
-You use the Dashboard to get a quick overview of the state of your System Center - Data Protection Manager (DPM) backups in Windows Azure Backup. The Dashboard provides a centralized gateway to view servers protected by backup vaults as follows:
+You use the Dashboard to get a quick overview of the state of your System Center - Data Protection Manager (DPM) backups in Microsoft Azure Backup. The Dashboard provides a centralized gateway to view servers protected by backup vaults as follows:
 
 -   **Usage Overview** shows how you're using the backup vault. You can select a vault and see how much storage is being consumed by the vault versus the amount of storage provided by your subscription. You can also see the number of servers registered to the vault.
 
@@ -105,7 +105,7 @@ All DPM-A customers (customers connected to Azure) have the flexibility of using
     > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
 
 
-    Here is a sample backup report:
+    Here's a sample backup report:
 
     ![Screenshot of a backup report.](./media/monitor-dpm/azure-backup-report.png)
 
@@ -142,11 +142,11 @@ All DPM-A customers (customers connected to Azure) have the flexibility of using
 
 ::: moniker range=">= sc-dpm-1807"
 
-## Backup items in Recovery Services vault
+## Back up items in Recovery Services vault
 
 You can monitor the backed-up items using Recovery Services vault. From the Recovery Services vault, navigate to **Backup items** to view the number of items backed up for each workload type associated with the vault. Select the workload item to view the detailed list of all the items backed up for the selected workload.
 
-Here is a sample view:
+Here's a sample view:
 
 ![Screenshot of Recovery vault backup items.](./media/monitor-dpm/back-up-items-view.png)
 
@@ -198,7 +198,7 @@ Using these packs you can:
 
 -   If you're running a previous version of the Discover and Library Management Packs obtained from the DPM installation media, you should remove them from the DPM server and install the new versions from the download page.
 
--   You can only run one language version of the Management Pack at one time. If you want to use the pack in a different language, uninstall the pack in the existing language and then install it with the new language.
+-   You can only run one language version of the Management Pack at one time. If you want to use the pack in a different language, uninstall the pack in the existing language, and then install it with the new language.
 
 -   If any previous versions of a DPM Management Pack are installed on the Operations Manager server, remove them before installing the new pack.
 
@@ -216,7 +216,7 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
 
 #### Import the Management Packs
 -  Import the Discovery and Library Management Packs.
--  Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
+-  Sign in to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 -  Remember to remove any previous versions of the Library or Discover Management Packs running on the server.
 
 1.  In the Operations console, select **Administration**. Select and hold **Management Packs** > **Import Management Packs**. Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**
