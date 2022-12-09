@@ -85,7 +85,7 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 - Create a gMSA (Group Managed Service Account) account to run the Management Server services and to authenticate the services. Use the below command to create a gMSA account: 
 
     ```powershell
-    New-ADServiceAccount VMSSLBContoso -DNSHostName "ContosoVMSSLB.aquiladomdns.comnet" -PrincipalsAllowedToRetrieveManagedPassword ‘ContosoServerGroupcomputerGroup’ -KerberosEncryptionType RC4, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMHSvc/ ContosoLBVMSSLB, MSOMSdkSvc/ ContosoLB.aquiladom.comVMSSLB.dns.net, MSOMSdkSvc/ VMSSLB ContosoLB 
+    New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType RC4, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
     ```
     
     - ContosoVMSSLB = gMSA account name 
