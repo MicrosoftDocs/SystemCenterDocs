@@ -261,7 +261,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
     3.  You should get the output to confirm that the configuration was completed successfully.
 
-6.  Retrieve the .bin file and copy it to the DPM server. We suggest you copy it to the default location in which the Attach process will check for the file (Windows\System32) so that you can just specify the filename instead of the full path when you run the Attach command.
+6.  Retrieve the .bin file and copy it to the DPM server. We suggest you copy it to the default location in which the Attach process will check for the file (Windows\System32) so that you can just specify the file name instead of the full path when you run the Attach command.
 
 ### <a name="BKMK_AttachComputer"></a>Attach the computer
 You attach the computer to the DPM server using the Attach-ProductionServerWithCertificate.ps1 PowerShell script, using the syntax.

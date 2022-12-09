@@ -186,7 +186,7 @@ If protection fails after completing the above steps, do the following:
 2.	In the results pane, select and hold **DPM RA Service**. Select **Properties** > **Security**.
 3.	In the **Launch and Activation Permissions** area, select **Edit**.
     -	If the primary server is listed, the Access Control List (ACL) entry might be incorrect. Remove the entry, and then add the primary server with full permissions.
-    -	If the primary server is not listed, add the primary server with full permissions.
+    -	If the primary server isn't listed, add the primary server with full permissions.
 
 ## Back up the DPM database
 As part of your DPM backup strategy, you'll have to back up the DPM database. The DPM database is named DPMDB. This database contains the DPM configuration together with data about DPM's backups. In case of a disaster, you can rebuild most of the functionality of a DPM server by using a recent backup of the database. Assuming you can restore the database, tape\- based backups are accessible, and they maintain all protection group settings and backup schedules. If the DPM storage pool disks weren't affected by the outage, disk\-based backups are also usable after a rebuild. You can back up the database by using different methods.
@@ -317,7 +317,7 @@ To reconstruct your DPM with the same DB, you need to first recover the DPM data
 2. Navigate to any PIT vhd path, that is, **\<DPMServer FQDN\>\<PhysicalReplicaId\>\<PITId\>**, and mount the disk0.vhdx present in it using the *mount-vhd disk0.vhdx* command.
 3. Once replica VHD is mounted, use *mountvol.exe* to assign a drive letter to the replica volume, using the Physical replica ID from the SQL script output. For example, mountvol X: \?\Volume{}\
 
-   All of the following text with angular braces in the above steps are placeholders; replace them with appropriate values.
+   All of the following text within angular braces in the above steps are placeholders; replace them with appropriate values.
    - ReFSVolume - Access path from the SQL script output
    - DPMServer FQDN - Fully qualified domain name of DPM server
    - PhysicalReplicaId - Physical replica ID from the SQL script output
@@ -325,8 +325,8 @@ To reconstruct your DPM with the same DB, you need to first recover the DPM data
 
 4. Open another administrative command prompt and run *psexec.exe -s cmd.exe* to start a command prompt in system context.
 5. Change the directory to the X: drive and navigate to the location of the DPM database files.
-6. Copy them to a location that's easy to restore from. Exit the psexec cmd window after you copy.
-7. Go to the psexec PowerShell window opened in step one, navigate to the VHDX path, and dismount the VHDX by using the command *dismount-vhd disk0.vhdx*.
+6. Copy them to a location that's easy to restore from. Exit the psexec cmd window after copying.
+7. Go to the psexec PowerShell window opened in step 1, navigate to the VHDX path, and dismount the VHDX by using the command *dismount-vhd disk0.vhdx*.
 8. After reinstalling the DPM server, you can use the restored DPMDB to attach to the DPM server by running *DPMSYNC-RESTOREDB* command.
 9. Run *DPMSYNC-SYNC*, once *DPMSYNC-RESTOREDB* is complete.
 
@@ -542,9 +542,9 @@ You can back up the DPM database as you would any other SQL Server database usin
 
 One of the ways to reconstruct your DPM server with the same DB is by backing up the DPM DB to local disks.
 
-DPM database contains the DPM configuration together with data about DPM's backups. In case of a disaster, you can rebuild the functionality of your DPM server by using a recent backup of the database to a local disk. If your DPM server crashes or becomes unoperational and you still have your storage pool intact containing your backups, you can reconfigure the DPM server with the same DPM DB.
+DPM database contains the DPM configuration together with data about DPM's backups. In case of a disaster, you can rebuild the functionality of your DPM server by using a recent backup of the database to a local disk. If your DPM server crashes or becomes unoperational and you still have your storage pool containing your backups intact, you can reconfigure the DPM server with the same DPM DB.
 
-Ensure:
+Ensure that:
 
 1.	DPM DB is backed up on to local disks.
 2.	Storage pool is intact and available.
@@ -598,7 +598,7 @@ For example, mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
 2.	Navigate to any PIT vhd path, that is, \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\<PITId> and mount the disk0.vhdx present in it using mount-vhd disk0.vhdx.
 3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output. For example, mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
 
-    All of the following text with angular braces in the above steps are placeholders; replace them with appropriate values.
+    All of the following text within angular braces in the above steps are placeholders; replace them with appropriate values.
 
     - ReFSVolume - Access path from the SQL script output
     - DPMServer FQDN - Fully qualified domain name of DPM server
@@ -606,8 +606,8 @@ For example, mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
     - PITId - GUID identifier other than physical replica ID in the container directory.
 4.	Open another administrative command prompt and run psexec.exe -s cmd.exe to start a command prompt in system context.
 5.	Change directory to the X: drive and navigate to the location of the DPM database files.
-6.	Copy them to a location that's easy to restore from. Exit the psexec cmd window after you copy.
-7.	Go to the psexec PowerShell window opened in step one, navigate to the VHDX path, and dismount the VHDX by using the command dismount-vhd disk0.vhdx.
+6.	Copy them to a location that's easy to restore from. Exit the psexec cmd window after copying.
+7.	Go to the psexec PowerShell window opened in step 1, navigate to the VHDX path, and dismount the VHDX by using the command dismount-vhd disk0.vhdx.
 8.	After reinstalling the DPM server, you can use the restored DPMDB to attach to the DPM server by running DPMSYNC-RESTOREDB.
 9.	Run DPMSYNC-SYNC once DPMSYNC-RESTOREDB is complete.
 
