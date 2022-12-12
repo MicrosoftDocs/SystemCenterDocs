@@ -2,7 +2,7 @@
 title: Delete File activity
 description: This article describes the delete file activity.
 ms.custom: ""
-ms.date: "05/13/2016"
+ms.date: "12/12/2022"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -10,9 +10,7 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
+  - "System Center - Orchestrator"
 ms.assetid: c79a70d9-2956-4898-a6fe-d1c54bf10fd0
 caps.latest.revision: 11
 author: "jyothisuri"
@@ -20,14 +18,6 @@ ms.author: "jsuri"
 manager: "evansma"
 ---
 # Delete File
-
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
 
 The Delete File activity deletes files from the local file system or from a network location specified using a UNC path. You can purge a folder that contains old log files.  
 
