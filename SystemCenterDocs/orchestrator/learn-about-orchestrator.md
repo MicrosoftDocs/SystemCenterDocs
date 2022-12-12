@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-As an IT administrator, you probably perform a lot of tasks and procedures to keep your computing environment healthy. You may have automated individual tasks, but typically, not the whole process.
+As an IT administrator, you probably perform numerous tasks and procedures to keep your computing environment healthy. You may have automated individual tasks, but typically, not the whole process.
 With System Center - Orchestrator you tie disparate tasks and procedures together using a graphical user interface Runbook Designer to create reliable, flexible, and efficient end-to-end solutions in your IT environment.
 Using Orchestrator, you can:
 
@@ -28,7 +28,7 @@ Using Orchestrator, you can:
 - Standardize best practices to improve operational efficiency.
 - Connect systems from different vendors without having to know how to use scripting and programming languages.
 
-## Orchestrator architecure
+## Orchestrator architecture
 
 The following diagram illustrates each of the Orchestrator features and the communication between each.
 
@@ -43,14 +43,14 @@ The following illustration shows a simple runbook.
 
 ![Simple runbook diagram](./media/learn-about-orchestrator/orch_overview.png)
 
-This runbook monitors an event log. When it detects the specified event, the runbook checks the status of a particular process in Windows on a specific computer. If the process is found to be running, it is stopped. The runbook then starts the process and sends an email as a notification of the change of process state.
+This runbook monitors an event log. When it detects the specified event, the runbook checks the status of a particular process in Windows on a specific computer. If the process is found to be running, it's stopped. The runbook then starts the process and sends an email as a notification of the change of process state.
 
 Each runbook activity finishes before proceeding to the next, and activities are available that provide complex logic such as requiring that multiple activities are completed before the runbook proceeds. By using a combination of logic on activities and smart links, you can implement whatever logic your particular automation scenario requires.
 
 ## How Orchestrator processes a Runbook
-After you have created a runbook, you commit it to the orchestration database by checking it in. You can then use either the Runbook Designer or the Orchestration console to start and stop the runbook.
+After you've created a runbook, you commit it to the orchestration database by checking it in. You can then use either the Runbook Designer or the Orchestration console to start and stop the runbook.
 
-A request to run a runbook creates a *job* that is stored in the orchestration database. Each runbook can define a primary runbook server and one or more standbys that process the runbook if the primary is unavailable. A service on each runbook server continuously monitors the orchestration database for jobs that it can process. When a runbook server detects a job, it logs that it is working on the job, copies the runbook locally, logs that it is running an instance of the runbook, and then begins processing the runbook. For any runbook not containing a monitor, you can create multiple runbook requests meaning that a single runbook can have multiple jobs.
+A request to run a runbook creates a *job* that is stored in the orchestration database. Each runbook can define a primary runbook server and one or more standby that process the runbook if the primary is unavailable. A service on each runbook server continuously monitors the orchestration database for jobs that it can process. When a runbook server detects a job, it logs that it's working on the job, copies the runbook locally, logs that it's running an instance of the runbook, and then begins processing the runbook. For any runbook not containing a monitor, you can create multiple runbooks requests meaning that a single runbook can have multiple jobs.
 
 When a runbook server processes a job, it creates an *instance* of the runbook by making a copy of it locally, and then performing the actions defined within the runbook according to the included workflow logic. Status information, activity results, and data are recorded in the orchestration database so that you can monitor the real\-time and historical status of the runbook.
 

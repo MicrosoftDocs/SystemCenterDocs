@@ -24,13 +24,13 @@ The power of System Center  - Orchestrator lies in providing runbooks and the in
 ## Starting Point
 Your runbook must have only one starting point. A starting point is an activity that automatically runs when the runbook is started. Each activity in the runbook runs after the previous activity in the workflow is completed.  
 
-If a runbook starts with any activity other than a monitor activity, the runbook begins processing and attempts to run to completion. If the runbook starts with a monitoring activity, the monitor loads and waits for the trigger condition. When the condition is met, a runbook instance is created to run the remaining activities in the runbook. The monitor continues to run and waits for another occurrence of the trigger condition. Runbooks that start with monitors continue to run until you stop them from the Runbook Designer or Orchestration console.
+If a runbook starts with any activity other than a monitor activity, the runbook begins processing, and attempts to run to completion. If the runbook starts with a monitoring activity, the monitor loads and waits for the trigger condition. When the condition is met, a runbook instance is created to run the remaining activities in the runbook. The monitor continues to run and waits for another occurrence of the trigger condition. Runbooks that start with monitors continue to run until you stop them from the Runbook Designer or Orchestration console.
 
 ## Variables
 When building runbooks some settings are the same across activities. Variables let you specify a value that activities use in any runbook.  
 
 > [!IMPORTANT]  
-> The access permissions for variables can be modified, but the runbook server does not enforce these permissions.  
+> The access permissions for variables can be modified, but the runbook server doesn't enforce these permissions.  
 
 ::: moniker range="<=sc-orch-2019"
 > [!IMPORTANT]  
@@ -38,7 +38,7 @@ When building runbooks some settings are the same across activities. Variables l
 ::: moniker-end
 
 > [!NOTE]  
-> Orchestrator does not support moving multiple variables with multiple-selection. To move more than one variable to another folder, you must move each variable individually.  
+> Orchestrator doesn't support moving multiple variables with multiple-selection. To move more than one variable to another folder, you must move each variable individually.  
 
 Use the following procedures to create, insert, and organize variables.  
 
@@ -61,7 +61,7 @@ Use the following procedures to create, insert, and organize variables.
 7.  Click **Finish**.  
 
 > [!IMPORTANT]  
-> Orchestrator does not let you combine an encrypted variable with plain text as a parameter value in a runbook.  
+> Orchestrator doesn't let you combine an encrypted variable with plain text as a parameter value in a runbook.  
 
 ### To insert a variable in an activity  
 
@@ -86,12 +86,12 @@ Use the following procedures to create, insert, and organize variables.
 ## Special Variables  
 You can specify special formats of variables to provide dynamic information to your runbooks. Specify the value of the variable to invoke this behavior.  
 
-`NOW()`: When the variable is resolved, it is set to the current date and time. You can pass arguments to this function to return specific portions of the date or time. For example, `NOW(hour)` returns the current hour. The following are the valid arguments for the `NOW()` function: day, dayofweek, dayofyear, month, year, hour, minute, second, millisecond.  
+`NOW()`: When the variable is resolved, it's set to the current date and time. You can pass arguments to this function to return specific portions of the date or time. For example, `NOW(hour)` returns the current hour. The following are the valid arguments for the `NOW()` function: day, dayofweek, dayofyear, month, year, hour, minute, second, millisecond.  
 
-`%ENVVAR%`: This variable returns the value of the environment variable between the percent `(\)` symbols. The environment variable is based on the runbook server computer where the runbook is running, and it is not case\-sensitive. All system variables can be resolved. Any user variables are resolved in the context of the service account on the runbook server. If the environment variable does not exist, the text specified within the variable is returned as\-is \(that is, if you type `%ENVVAR%` and no environment variable named `ENVVAR` exists, the text `'%ENVVAR%'` is returned\).  
+`%ENVVAR%`: This variable returns the value of the environment variable between the percent `(\)` symbols. The environment variable is based on the runbook server computer where the runbook is running, and it's not case\-sensitive. All system variables can be resolved. Any user variables are resolved in the context of the service account on the runbook server. If the environment variable doesn't exist, the text specified within the variable is returned as\-is \(that is, if you type `%ENVVAR%` and no environment variable named `ENVVAR` exists, the text `'%ENVVAR%'` is returned\).  
 
 ## Workflow Control
-When you build runbooks in Orchestrator, it is important to understand the underlying logic of the workflow engine. By using this logic, you can create workflows to automate resource\-based jobs and complex data processing tasks.  
+When you build runbooks in Orchestrator, it's important to understand the underlying logic of the workflow engine. By using this logic, you can create workflows to automate resource\-based jobs and complex data processing tasks.  
 
 The workflow control provides the following controls: Smart Links and Embedded Loops.  
 
@@ -103,13 +103,13 @@ The links that connect individual activities in a runbook are called smart links
 
 Each activity can create a loop so that you can retry operations if they fail or test the output information of the activity for valid data. You can also use these mechanisms to build wait conditions into your workflows.  
 
-When a loop is configured for an activity, it continues to run with the same input data until a desired exit looping criteria is reached. The exit criteria is built in a similar way as smart link configurations. You can use any published data item from the activity as part of the exit or do not exit configuration. Included in the common published data are special data items such as **Loop: Number of attempts** and **Loop: Total duration** that let you use information from the loop itself in the looping conditions.  
+When a loop is configured for an activity, it continues to run with the same input data until a desired exit looping criteria is reached. The exit criteria are built in a similar way as smart link configurations. You can use any published data item from the activity as part of the exit or don't exit configuration. Included in the common published data are special data items such as **Loop: Number of attempts** and **Loop: Total duration** that let you use information from the loop itself in the looping conditions.  
 
 Loops run one time for each incoming piece of data that is passed to the activity. For example, consider a runbook that uses a **Query Database** activity followed by **Append Line**. If the **Query Database** activity returned three rows, the **Append Line** activity would run three times. If you have a loop on the **Append Line** activity, it would run three separate loops. After the first data item has looped through the **Append Line** activity, the next item goes through **Append Line** and loops until it exits, and then the third begins. After all three items have been processed, the next activity in the runbook runs.
 
 ## Extending Runbook capabilities
 
-Orchestrator provides two options for extending standard activities. You can either build new activities, or create new Integration Packs (IP). IPs are collections of activities for Microsoft and products of other companies  which are specific to a product or technology. If the functionality that you require is not available in an IP, you have the alternative option of using the Orchestrator Integration Toolkit.
+Orchestrator provides two options for extending standard activities. You can either build new activities, or create new Integration Packs (IP). IPs are collections of activities for Microsoft and products of other companies, which are specific to a product or technology. If the functionality that you require isn't available in an IP, you have the alternative option of using the Orchestrator Integration Toolkit.
 
 The Orchestrator Integration Toolkit is a set of tools to help you create new integrations for Orchestrator. You can use wizards in the Integration Toolkit to easily create new workflow activities and Integration Packs that extend the capabilities of the product. You can also create custom workflow activities using the Orchestrator SDK and C\#, and then package them into an IP using this toolkit.
 
