@@ -67,4 +67,5 @@ A customer-managed part consists of Ops and Web console that will be used to mon
 
 ## Next steps
 
+[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
 [Create a SCOM Managed Instance (preview) on Azure](create-operations-manager-managed-instance.md)
