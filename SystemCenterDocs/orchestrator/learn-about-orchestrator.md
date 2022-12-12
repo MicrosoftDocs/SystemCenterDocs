@@ -2,9 +2,9 @@
 title: Orchestrator overview
 description: This topic provides an overview of System Center - Orchestrator
 author: jyothisuri
-manager: evansma
+manager: mkluck
 ms.author: jsuri
-ms.date: 01/17/2018
+ms.date: 12/12/2022
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article

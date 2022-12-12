@@ -4,8 +4,8 @@ title: Operations Manager Key Concepts
 description: This article provides a high-level overview of what Operations Manager is and what capabilities it provides as a monitoring platform.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 06/02/2019
+manager: mkluck
+ms.date: 12/12/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager

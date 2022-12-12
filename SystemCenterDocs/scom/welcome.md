@@ -4,8 +4,8 @@ title: Operations Manager
 description: This article is the main landing page for all content related to System Center - Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 11/07/2022
+manager: mkluck
+ms.date: 12/12/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
