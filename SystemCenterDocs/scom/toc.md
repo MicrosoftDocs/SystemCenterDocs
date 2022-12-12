@@ -8,7 +8,7 @@
 ## [What's new in Operations Manager](whats-new-in-om.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
-## [Migrate from On-premises to SCOM managed Instance](migrate-to-operations-manager-managed-instance.md)
+## [Migrate from On-premises to SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
 ## [How to disable RC4 while installing Operations Manager](install-with-rc4-disabled.md)
 ## [Enable service logon ](enable-service-logon.md)
 ## [Turn on/off telemetry settings](manage-telemetry.md)

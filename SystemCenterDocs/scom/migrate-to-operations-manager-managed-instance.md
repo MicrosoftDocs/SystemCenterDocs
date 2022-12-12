@@ -5,7 +5,7 @@ description: This article describes how to migrate from Operations Manager on-pr
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 10/29/2022
+ms.date: 12/09/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -180,5 +180,5 @@ To migrate from Agent to SCOM Managed Instance (preview), see [High level overvi
 
 ## Next steps
 
-[SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
+[Create a SCOM Managed Instance (preview) on Azure](create-operations-manager-managed-instance.md)
 
