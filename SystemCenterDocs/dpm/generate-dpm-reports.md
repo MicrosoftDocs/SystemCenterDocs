@@ -20,7 +20,7 @@ ms.author: jsuri
 
 ::: moniker-end
 
-System Center Data Protection Manager (DPM) uses SQL Server Reporting Services to create reports. In the **Reporting** task area you can generate and view reports, schedule automation report generation, managing settings, and subscribe to reports. Alternatively you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
+System Center Data Protection Manager (DPM) uses SQL Server Reporting Services to create reports. In the **Reporting** task area, you can generate and view reports, schedule automation report generation, managing settings, and subscribe to reports. Alternatively, you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
 
 ## DPM reports
 DPM provides a number of different reports:
@@ -29,7 +29,7 @@ DPM provides a number of different reports:
 
 -   **Protection report**:  Provides commonly used metrics for backup success rolled up over long periods of time. Use this report to track how backups are doing and what's been backed up successfully.
 
--   **Recovery report**: Provides commonly used metrics for recovery success rolled up over long periods of time. Use this report  to track how recoveries are doing and how well you performed against your SLAs for RTOs.
+-   **Recovery report**: Provides commonly used metrics for recovery success rolled up over long periods of time. Use this report to track how recoveries are doing and how well you performed against your SLAs for RTOs.
 
 -   **Disk utilization report**: Summarizes disk capacity, disk allocation, and disk usage in the DPM storage pool.
     Use this report to do the following:
@@ -38,9 +38,10 @@ DPM provides a number of different reports:
 -   **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning, and to verify that the free media threshold hasn't been exceeded. Use the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
 
 ### Predefined SQL reports
-DPM includes several SQL Server views to help you create custom reports. SQL views provide a simpler method that querying tables directly, by populating columns with data collected from multiple tables in the database. You don't need in-depth knowledge of the entire database or the relationship between tables and keys.
+DPM includes several SQL Server views to help you create custom reports. SQL views provide a simpler method than querying tables directly, by populating columns with data collected from multiple tables in the database. You don't need in-depth knowledge of the entire database or the relationship between tables and keys.
 
-Note though that SQL views can degrade performance if used too frequently because the view runs each time it's queries. In addition the supported views might not include all the columns you need.
+> [!NOTE]
+> SQL views can degrade performance if used too frequently because the view runs each time it's queried. In addition, the supported views might not include all the columns you need.
 
 The following table summarizes the predefined SQL views.
 
@@ -48,7 +49,7 @@ The following table summarizes the predefined SQL views.
 |--------|---------|-------------|---------------|
 |**Vw_DPM_Agents**<br /><br />Contains the list of computers on which a DPM protection agent from this DPM server is installed.|ServerName|String|The name of the computer|
 |**Vw_DPM_Agents**|Version|String|DPM agent version on that computer|
-|**Vw_DPM_Alerts**<br /><br />List of alerts from last 30 days|Severity|Integer<br /><br />0=Error<br /><br />1=Warning<br /><br />2=Information|Alert severity|
+|**Vw_DPM_Alerts**<br /><br />List of alerts from the last 30 days|Severity|Integer<br /><br />0=Error<br /><br />1=Warning<br /><br />2=Information|Alert severity|
 |**Vw_DPM_Alerts**|Resolution|Integer<br /><br />0 = Active<br /><br />1 = Recommended action in progress<br /><br />2 = Resolved|Alert state|
 |**Vw_DPM_Alerts**|OccurredSince|Date and Time|First time alert was raised|
 |**Vw_DPM_Alerts**|ResolvedTime|Date and Time|Time when alert was resolved|
@@ -85,7 +86,7 @@ The following table summarizes the predefined SQL views.
 |**Vw_DPM_Media**|IsOnline|Integer|Whether the tape is online|
 |**Vw_DPM_Media**|LibraryName|String|The name of the library in which the tape exists.<br /><br />NULL if tape is offline|
 |**Vw_DPM_Media**|MediaSlotNumber|Integer|The slot number in which the tape exists.<br /><br />NULL if tape is offline<br /><br />If in a drive, this represents the home slot of the tape (to which the tape returns on a dismount).|
-|**Vw_DPM_Media**|PGName|String|The name of the protection group in which the tape exists|
+|**Vw_DPM_Media**|PGName|String|The name of the protection group in which the tape exists.|
 |**Vw_DPM_Media**|MediaExpiryDate|Date and time|The time when all data sets on this tape will expire.<br /><br />Can have the date in the past or NULL if the tape is free.|
 |**Vw_DPM_MediaPool_Media**<br /><br />Tape counts for a given library.|LibraryName|String|The name of the library|
 |**Vw_DPM_MediaPool_Media**|FreeMedia|Integer|Number of tapes that are free in this library|
@@ -165,20 +166,20 @@ The following table summarizes the predefined SQL views.
 ### Set up reports
 
 #### Schedule reports
-Reports aren't scheduled by default in DPM. To start creating and saving historical reports you create a report schedule. Each report type has an independent schedule A report only has a single schedule. Schedule a report as follows:
+Reports aren't scheduled by default in DPM. To start creating and saving historical reports, create a report schedule. Each report type has an independent schedule. A report only has a single schedule. Schedule a report as follows:
 
-1.  In DPM Administrator Console, go to the **Reporting** view. On the display pane, select the report and click **Schedule**.
+1.  In DPM Administrator Console, go to the **Reporting** view. On the display pane, select the report and select **Schedule**.
 
 2.  Select **Run the \<name of report\> according to the schedule options**.
 
 3.  On the **Schedule** tab, select schedule options, including frequency, how to group, the time of the day to generate, and the granularity. Granularity is limited by frequency. So, if the frequency is weekly, then so is the granularity, the time period to be included in the report data, and the number of copies to retain in history.
 
 ### View reports
-In the DPM Administrator Console you can display both new and historical reports in Internet Explorer. You can use the Reporting Services Web toolbar at the top of report to customize, export or print it.
+In the DPM Administrator Console you can display both new and historical reports in Internet Explorer. You can use the Reporting Services Web toolbar at the top of a report to customize, export, or print it.
 
 1.  You can request a new report with the following settings:
 
-    -   Display - You can view a report groups by protected computer or protection group.
+    -   Display - You can view a report group by protected computer or protection group.
 
     -   You can specify or exclude a specific time period. You can set report granularity as follows:
 
@@ -186,20 +187,21 @@ In the DPM Administrator Console you can display both new and historical reports
 
         -   Month - A full month from the first to the last day of the month
 
-        -   Quarterly - For three months starting from January (e.g January through March.
+        -   Quarter - For three months starting from January (e.g., January through March)
 
-        -   Annual - January 1 to December 31 of a particular year.
+        -   Annual - January 1 to December 31 of a particular year
 
 2.  You can view an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that is saved will replace the oldest copy of the report, so you can retain the maximum number of copies at all times.
 
 ### Print reports
 Reports in DPM have been designed to print on A4 paper without horizontally splitting the information across pages. The MHTML and PDF formats are not editable, so you can't modify the report to fit other paper sizes.
 
-Note that if you experience any issues with reports on fitting on A4 paper try changing the dimensions of the report page width 8.27in and the height to 11.69in. There are details of how to do that on Bob Cornelissen's [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
+> [!NOTE]
+> If you experience any issues with reports on fitting on A4 paper, try changing the dimensions of the report page width to 8.27 in and the height to 11.69 in. See details on how to do that on Bob Cornelissen's [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
 
 ##### Print MHTML reports
 
-1.  On the Internet Explorer **File** menu, click **Page Setup**.
+1.  On the Internet Explorer **File** menu, select **Page Setup**.
 
 2.  Set paper size to A4 and select **Orientation** > **Portrait**.
 
@@ -207,7 +209,7 @@ Note that if you experience any issues with reports on fitting on A4 paper try c
 
 ##### Print a PDF report
 
-1.  In Adobe Acrobat, open the **Print** dialog box.
+1.  In Adobe Acrobat, open the **Print** page.
 
 2.  Set **Page Scaling** to **Shrink large pages** (the default setting). Select **Auto-Rotate and Center**.
 
@@ -217,26 +219,26 @@ Note that if you experience any issues with reports on fitting on A4 paper try c
 
 1.  Open the file in Excel.
 
-2.  Click **Page Layout** > **Orientation** > **Portrait**.
+2.  Select **Page Layout** > **Orientation** > **Portrait**.
 
-3.  Click **Size** > **A4** .
+3.  Select **Size** > **A4** .
 
-4.  Click **Margins** > **Custom Margins**. Set the **Top**, **Left**, **Bottom**, and **Footer** margins to 0.
+4.  Select **Margins** > **Custom Margins**. Set the **Top**, **Left**, **Bottom**, and **Footer** margins to 0.
 
-5.  In **Scale to Fit** set  **Scale** to 80%.
+5.  In **Scale to Fit**, set  **Scale** to 80%.
 
-6.  In **Sheet Options** clear **Print** if it's selected. Then print the report.
+6.  In **Sheet Options**, clear **Print** if it's selected. Then print the report.
 
 ### Send reports
-You can send reports to subscribers via [email](/system-center/dpm/monitor-dpm#configure-email-for-dpm). Reports are sent as file attachments. To subscribe to reports do the following:
+You can send reports to subscribers via [email](/system-center/dpm/monitor-dpm#configure-email-for-dpm). Reports are sent as file attachments. To subscribe to reports, do the following:
 1.  Specify the SMTP server that DPM will use to send reports.
 
-2.  In the Reporting view, on the display pane right-click the report to which you want to subscribe and click **Schedule**.
+2.  In the Reporting view, on the display pane, select and hold the report to which you want to subscribe and select **Schedule**.
 
-3.  On the **E-mail** tab, in **Recipients** type the e-mail addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
+3.  On the **E-mail** tab, in **Recipients**, type the email addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
 
 ## Generate DPM reports in Operations Manager
-Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information you can use predefined views, or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212876(v=sc.12)).
+Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information, you can use predefined views or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212876(v=sc.12)).
 DPM provides a number of predefined views that you can use to search more simply than defining your own query or filter.
 
 DPM provides a number of predefined views that you can use to search more simply than defining your own query or filter.
