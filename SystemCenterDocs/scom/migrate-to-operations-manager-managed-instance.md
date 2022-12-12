@@ -180,5 +180,5 @@ To migrate from Agent to SCOM Managed Instance (preview), see [High level overvi
 
 ## Next steps
 
-[SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
+[Create a SCOM Managed Instance (preview) on Azure](create-operations-manager-managed-instance.md)
 
