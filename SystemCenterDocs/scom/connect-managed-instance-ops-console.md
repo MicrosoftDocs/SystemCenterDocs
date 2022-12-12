@@ -29,7 +29,7 @@ Follow the below steps to connect a SCOM Managed Instance (preview) to Ops conso
 1. **Install the Ops Console**: From the [executable file](https://go.microsoft.com/fwlink/?linkid=2212475), install the Operations console and follow the installation wizard to successfully install the Ops console.
 1. **Connect SCOM Managed Instance (preview) to Ops Console**: Log in to the Ops console and select **Connect To Server**. Add the FQDN pointing to the management servers. 
 
-      :::image type="Ops console" source="media/connect-managed-instance-ops-console/ops-console.png" alt-text="Screenshot of Ops console page.":::
+      :::image type="Ops console" source="media/connect-managed-instance-ops-console/ops-console-inline.png" alt-text="Screenshot of Ops console page." lightbox="media/connect-managed-instance-ops-console/ops-console-expanded.png":::
          
       For a detailed procedure to connect the Ops console to a Management Group (in this case, SCOM Managed Instance (preview)), see [How to connect to the Operations and Web console](/system-center/scom/manage-consoles-how-to-connect?view=sc-om-2019&preserve-view=true)
 1. **Gateway Server requirements**: If your agents are in a domain that is outside the trust boundary of the SCOM Managed Instance (preview), you need to install a gateway server to use certificate-based authentication. 
