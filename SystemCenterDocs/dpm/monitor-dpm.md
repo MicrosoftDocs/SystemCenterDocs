@@ -5,11 +5,12 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 11/15/2022
+ms.date: 12/12/2022
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
 ms.author: jsuri
+ms.custom: engagement-fy23
 ---
 
 # Monitor DPM
@@ -94,7 +95,7 @@ All DPM-A customers (customers connected to Azure) have the flexibility of using
 
 **Enable central monitoring**
 
-1.	Sign in to Azure portal.
+1.	Sign in to [Azure portal](https://ms.portal.azure.com/#home).
 2.	[Create a Recovery Service vault](/azure/backup/backup-azure-vms-first-look-arm#back-up-from-azure-vm-settings), or if you already have one, select the same.
 3.	Select **Diagnostic Settings** under **Monitoring** section.
     ![Screenshot of Diagnostics settings.](./media/monitor-dpm/diagnostic-settings.png)

@@ -135,7 +135,10 @@ Set up chaining as follows:
 
 1.  Install the DPM protection agent on the DPM server that you want to protect from the DPM server you want to protect it from.
 
-2.  Configure secondary protection for the data sources protected by the DPM server you're protecting. Remember, in the DPM console you won't be able to configure protection for data sources that are already protected by the agent. This prevents you from repeatedly protecting data.
+2.  Configure secondary protection for the data sources protected by the DPM server you're protecting.
+
+> [!NOTE]
+> In the DPM console, you won't be able to configure protection for data sources that are already protected by the agent. This prevents you from repeatedly protecting data.
 
 3.  As an example, if you have DPM1 and DPM2, you'd install the DPM protection agent from DPM1 to DPM2 and vice versa.
      Then configure secondary protection on DPM2 for servers that DPM1 protects and configure secondary protection on DPM1 for servers that DPM2 protects.
@@ -165,9 +168,9 @@ After switching protection, the replica appears as inconsistent, until the check
 
 When you recover a primary DPM server, you’ll need to re-establish the protection for the computers that were previously protected by the primary DPM server.
 
->[!NOTE]
->  - You can’t restore recovery points for data sources protected by the primary DPM server.
->  - When you recover the database files, ensure that the restore location on the primary DPM server is secure.
+   >[!NOTE]
+   >  - You can’t restore recovery points for data sources protected by the primary DPM server.
+   >  - When you recover the database files, ensure that the restore location on the primary DPM server is secure.
 
 **Re-establish protection with primary DPM server**
 
@@ -265,7 +268,10 @@ You can recover the database from Azure using any DPM server \(must be running a
 
 1.  In the DPM console, select **Recovery** > **Add External DPM**.
 
-2.  Provide the vault credentials \(download from the Azure Backup vault\). Remember, the credentials are only valid for two days.
+2.  Provide the vault credentials \(download from the Azure Backup vault\).
+
+    > [!NOTE]
+    >The credentials are only valid for two days.
 
 3.  In **Select External DPM for Recovery**, select the DPM server for which you want to recover the database, type in the encryption passphrase, and select **OK**.
 
@@ -421,7 +427,10 @@ To recover:
 
 1.  Locate the physical tape that contains the version/date/time of the DPM database you want to restore.
 
-2.  Insert the backup tape into the tape drive or library and perform a detailed inventory in the DPM console -> Management ->Libraries. Remember, if the DPM server you're restoring from is a different DPM server or it's a new installation of DPM on the original server, the tape will be shown as imported (not created by this DPM server).
+2.  Insert the backup tape into the tape drive or library and perform a detailed inventory in the DPM console -> Management ->Libraries.
+
+    > [!NOTE]
+    > If the DPM server you're restoring from is a different DPM server or it's a new installation of DPM on the original server, the tape will be shown as imported (not created by this DPM server).
 
 3.  If necessary, recatalog the imported tape.
 

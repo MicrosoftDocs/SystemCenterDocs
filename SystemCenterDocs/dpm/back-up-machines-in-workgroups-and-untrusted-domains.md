@@ -43,7 +43,7 @@ Before you start, check the supported protection scenarios and required network 
 |Hyper-V server|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />NTLM and certificate authentication|
 |Hyper-V cluster|Workgroup: Not supported<br /><br />Untrusted Domain: Supported (certificate authentication only)|
 |Exchange Server|Workgroup: Not applicable<br /><br />Untrusted Domain: Supported for single server only. Cluster not supported. CCR, SCR, DAG not supported. LCR supported.<br /><br />NTLM authentication only|
-|Secondary DPM server (For backup of primary DPM server) <br /><br /> Ensure that both Primary and Secondary DPM Servers are in same or two-way forest transitive trusted domain. |Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />Certificate authentication only|
+|Secondary DPM server (For backup of primary DPM server)<br /><br /> Note that both Primary and Secondary DPM Servers are in same or two-way forest transitive trusted domain.|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />Certificate authentication only|
 |SharePoint|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
 |Client computers|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
 |Bare metal recovery (BMR)|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
@@ -227,7 +227,10 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
     -   **-AuthCAThumbprint** - Thumbprint of the CA in the trust chain of the certificate. Optional. If not specified, Root will be used.
 
-6.  This generates a metadata file (.bin) that is required at the time of each agent install in untrusted domain. Ensure that the C:\Temp folder exists before you run the command. Remember, if the file is lost or deleted, you can recreate it by running the script with the **-action regenerate** option.
+6.  This generates a metadata file (.bin) that is required at the time of each agent install in untrusted domain. Ensure that the C:\Temp folder exists before you run the command.
+
+    > [!NOTE]
+    > If the file is lost or deleted, you can recreate it by running the script with the **-action regenerate** option.
 
 7.  Retrieve the .bin file and copy it to the C:\Program Files\Microsoft Data Protection Manager\DPM\bin folder on the computer you want to protect. You don't have to do this, but if you don't you'll need to specify the full path of the file for the -DPMcredential parameter when you
 
