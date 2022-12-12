@@ -128,13 +128,13 @@ The following sections introduce the new features and feature updates supported 
 
 ### Issues fixed and Improvements in SCO 2022 Update Rollup 1
 
-For issues fixed in Orchestrator 2022 UR1, and installation instructions for UR1, see the KB article.
+For issues fixed in Orchestrator 2022 UR1, and installation instructions for UR1, see the [KB article](https://support.microsoft.com/KB/5021420).
 
-### Support for SQL Server 2022
+#### Support for SQL Server 2022
 
 Orchestrator 2022 supports SQL Server 2022. [Learn more](/SystemCenterDocs/orchestrator/system-requirements-orch.md).
 
-### Support for .NET Core 6
+#### Support for .NET Core 6
 
 Orchestrator 2022 UR1 depends on .NET Core 6. 
 
