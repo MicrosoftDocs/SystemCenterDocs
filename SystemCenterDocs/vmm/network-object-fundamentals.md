@@ -21,7 +21,7 @@ ms.technology: virtual-machine-manager
 
 System Center Virtual Machine Manager (VMM) is part of the System Center suite used to configure, manage, and transform traditional datacenters. It helps provide a unified management experience across on-premises, service provider, and the Azure cloud.
 
-This topic covers the basics that you need to understand before you move on to more complex topics, such as advanced VMM features and functions and planning and designing private and public clouds.
+This topic covers the basics that you need to understand before you move on to more complex topics, such as advanced VMM features and functions, and planning and designing private and public clouds.
 
 ## Networking objects
 The following VMM networking objects are used to build the basic networking infrastructure of Microsoft's Software Defined Networking (SDN) used in private and public clouds:
