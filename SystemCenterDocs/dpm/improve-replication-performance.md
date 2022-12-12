@@ -20,7 +20,7 @@ ms.author: jsuri
 
 ::: moniker-end
 
-There are a number of steps you can take to optimize the performance of System Center 2012 - Data Protection Manager (DPM) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
+There are many steps you can take to optimize the performance of System Center 2012 - Data Protection Manager (DPM) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
 
 ## Network throttling
 Network bandwidth usage throttling is configured at backed up machine level and you  can specify different network bandwidth usage throttling rates for work hours, non-work hours, and weekends, and you define the times for each of those categories. Enable throttling as follows:
@@ -42,7 +42,7 @@ Network bandwidth usage throttling is configured at backed up machine level and 
 The Group Policy reservable bandwidth limit on the local computer determines the combined reservable bandwidth for all programs that use the Packet Scheduler, including DPM. The DPM network bandwidth usage limit determines the amount of network bandwidth that DPM can consume during replica creation, synchronization, and consistency checks.
 
 If the DPM bandwidth usage limit, either by itself or in combination with the limits of other programs, exceeds the Group Policy reservable bandwidth limit, the DPM bandwidth usage limit might not be applied.
-For example, if a DPM computer with a 1-gigabit-per-second (Gbps) network connection has a Group Policy reservable bandwidth limit of 20%, 200 Mbps of bandwidth is reserved for all programs that use the Packet Scheduler. If DPM bandwidth usage is then set to a maximum of 150 Mbps while Internet Information Services (IIS) bandwidth usage is set to a maximum of 100 Mbps, the combined bandwidth usage limits of DPM and IIS exceed the Group Policy reservable bandwidth limit and the DPM limit might not be applied. To resolve this issue, reduce the DPM setting for network bandwidth usage throttling.
+For example, if a DPM computer with a 1 gigabit per second (Gbps) network connection has a Group Policy reservable bandwidth limit of 20%, 200 Mbps of bandwidth is reserved for all programs that use the Packet Scheduler. If DPM bandwidth usage is then set to a maximum of 150 Mbps while Internet Information Services (IIS) bandwidth usage is set to a maximum of 100 Mbps, the combined bandwidth usage limits of DPM and IIS exceed the Group Policy reservable bandwidth limit and the DPM limit might not be applied. To resolve this issue, reduce the DPM setting for network bandwidth usage throttling.
 
 ## Enable data compression
 On-the-wire compression is configured at the protection-group level for backup to tape. Compressing data reduces the space needed on the tape and increases the number of backup jobs that can be stored on the same tape. Compression doesn't significantly increase the time required to complete the backup job. Encryption increases data security and also doesn't significantly increase the time required for the backup job. Encryption requires a valid certificate on the DPM server. Configure compression as follows:
@@ -53,7 +53,7 @@ On-the-wire compression is configured at the protection-group level for backup t
     On the **Network** tab, check **Enable on-the-wire compression**.
 
 ## Stagger synchronization start times
-To optimize performance, you can offset the start time of synchronization jobs across different protection groups so that all of them do not start at the same time. Offsetting synchronization start times can also be used to optimize secondary protection of another DPM server. Offset as follows:
+To optimize performance, you can offset the start time of synchronization jobs across different protection groups so that all of them don't start at the same time. Offsetting synchronization start times can also be used to optimize secondary protection of another DPM server. Offset as follows:
 
 1.  Select DPM Administrator Console > Protection and select a protection group.
 

@@ -23,7 +23,7 @@ ms.author: jsuri
 System Center Data Protection Manager (DPM) uses SQL Server Reporting Services to create reports. In the **Reporting** task area, you can generate and view reports, schedule automation report generation, managing settings, and subscribe to reports. Alternatively, you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
 
 ## DPM reports
-DPM provides a number of different reports:
+DPM provides many different reports:
 
 -   **Status report**: Provides the status of all recovery points for a specified time period. It lists recovery jobs, and shows the total number of successes and failures for recovery points and recovery point creation. You can use this report to track and verify recovery point metrics.
 
@@ -175,7 +175,7 @@ Reports aren't scheduled by default in DPM. To start creating and saving histori
 3.  On the **Schedule** tab, select schedule options, including frequency, how to group, the time of the day to generate, and the granularity. Granularity is limited by frequency. So, if the frequency is weekly, then so is the granularity, the time period to be included in the report data, and the number of copies to retain in history.
 
 ### View reports
-In the DPM Administrator Console you can display both new and historical reports in Internet Explorer. You can use the Reporting Services Web toolbar at the top of a report to customize, export, or print it.
+In the DPM Administrator Console, you can display both new and historical reports in Internet Explorer. You can use the Reporting Services Web toolbar at the top of a report to customize, export, or print it.
 
 1.  You can request a new report with the following settings:
 
@@ -187,14 +187,14 @@ In the DPM Administrator Console you can display both new and historical reports
 
         -   Month - A full month from the first to the last day of the month
 
-        -   Quarter - For three months starting from January (e.g., January through March)
+        -   Quarter - For three months starting from January (for example, January through March)
 
         -   Annual - January 1 to December 31 of a particular year
 
-2.  You can view an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that is saved will replace the oldest copy of the report, so you can retain the maximum number of copies at all times.
+2.  You can view an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that is saved will replace the oldest copy of the report so that you can retain the maximum number of copies at all times.
 
 ### Print reports
-Reports in DPM have been designed to print on A4 paper without horizontally splitting the information across pages. The MHTML and PDF formats are not editable, so you can't modify the report to fit other paper sizes.
+Reports in DPM have been designed to print on A4 paper without horizontally splitting the information across pages. The MHTML and PDF formats aren't editable, so you can't modify the report to fit other paper sizes.
 
 > [!NOTE]
 > If you experience any issues with reports on fitting on A4 paper, try changing the dimensions of the report page width to 8.27 in and the height to 11.69 in. See details on how to do that on Bob Cornelissen's [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
@@ -239,9 +239,9 @@ You can send reports to subscribers via [email](/system-center/dpm/monitor-dpm#c
 
 ## Generate DPM reports in Operations Manager
 Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information, you can use predefined views or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh212876(v=sc.12)).
-DPM provides a number of predefined views that you can use to search more simply than defining your own query or filter.
+DPM provides many predefined views that you can use to search more simply than defining your own query or filter.
 
-DPM provides a number of predefined views that you can use to search more simply than defining your own query or filter.
+DPM provides many predefined views that you can use to search more simply than defining your own query or filter.
 
 **View Name:**  vDPMBackupJob (Shows backup job details):
 
@@ -264,7 +264,7 @@ DPM provides a number of predefined views that you can use to search more simply
 |TransferredBytes|int|Number of bytes transferred by the job|
 |BackupType|varchar(max)|DiskBackup; TapeBackup; CloudBackUp|
 |IsDPM|bit|Whether job ran again a DPM server (indicating it ran on secondary DPM server)|
-|IsAdHoc|bit|Whether job is ad hoc or scheduled|
+|IsAdHoc|bit|Whether job is unplanned or scheduled|
 
 **View Name:** vDPMRecoveryJob (Recovery job details):
 

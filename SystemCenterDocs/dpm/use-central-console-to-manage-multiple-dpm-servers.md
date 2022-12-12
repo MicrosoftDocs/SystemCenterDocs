@@ -36,7 +36,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 
     -   Same root cause - If multiple alerts have the same root cause or if multiple backups fail for the same data source, only the alert informing you of the failure is generated.
 
-    -   Ticket generation - If you are using a ticketing system, only one ticket is generated.
+    -   Ticket generation - If you're using a ticketing system, only one ticket is generated.
 
 -   Scoped console - This is based on the DPM Administrator Console with a few minor differences.
 
@@ -52,7 +52,7 @@ You can install Central Console on a server computer running Windows Server 2008
 >[!NOTE]
 >To upgrade the DPM central console to a latest version, uninstall the older version and then install the latest.
 
-In case upgrade is not supported:
+In case upgrade isn't supported:
 
 1.  Deploy an Operations Manager agent to your DPM server.  [Read more](./use-ops-manager-to-manage-monitor-dpm.md?preserve-view=true&view=sc-dpm-1807#BKMK_OM).
 
