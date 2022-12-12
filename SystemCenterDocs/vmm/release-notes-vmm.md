@@ -17,7 +17,7 @@ ms.technology: virtual-machine-manager
 
 Virtual Machine Manager (VMM) 2022 does not have any known issues.
 
-For new features in VMM  2022, see [What's new](whats-new-in-vmm.md)
+For new features in VMM  2022, see [What's new](whats-new-in-vmm.md).
 
 ::: moniker-end
 
