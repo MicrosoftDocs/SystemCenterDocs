@@ -2,7 +2,7 @@
 title: Delete File activity
 description: This article describes the delete file activity.
 ms.custom: ""
-ms.date: "05/13/2016"
+ms.date: "12/12/2022"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -10,9 +10,7 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
+  - "System Center - Orchestrator"
 ms.assetid: c79a70d9-2956-4898-a6fe-d1c54bf10fd0
 caps.latest.revision: 11
 author: "jyothisuri"
@@ -21,18 +19,10 @@ manager: "evansma"
 ---
 # Delete File
 
-::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
-
-> [!IMPORTANT]
->
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
-
-::: moniker-end
-
 The Delete File activity deletes files from the local file system or from a network location specified using a UNC path. You can purge a folder that contains old log files.  
 
 ## Configuring the Delete File Activity  
- Before you configure the Delete File activity, you need to know which files you are deleting.  
+ Before you configure the Delete File activity, you need to know which files you're deleting.  
 
  Use the following information to configure the Delete File activity.  
 
@@ -40,10 +30,10 @@ The Delete File activity deletes files from the local file system or from a netw
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Path**|Type the path and name of the file that you want to delete. You can use the * and ? wildcards to specify the file name. These wildcards behave in the same way as the Windows Command Prompt.|  
-|**Delete files from sub-folders**|Select this option to delete any files within the sub-folders of the path you have specified that match the file name that you have specified.|  
+|**Path**|Type the path and name of the file that you want to delete. You can use the `*` and `?` wildcards to specify the file name. These wildcards behave in the same way as the Windows Command Prompt.|  
+|**Delete files from subfolders**|Select this option to delete any files within the subfolders of the path you've specified that match the file name that you've specified.|  
 |**File age**|Select the **Is less than** or **Is more than** option from the drop-down list to delete the files that are older or newer, respectively, than the number of days that you specify.|  
-|**days**|Type the number of days that you will use with the file age measure.|  
+|**days**|Type the number of days that you'll use with the file age measure.|  
 
 ### Published Data  
  The following table lists the published data items.  
@@ -57,8 +47,8 @@ The Delete File activity deletes files from the local file system or from a netw
 |Name and path of the file relative to the origin folder|The relative path of the file starting from the origin folder.|  
 |File operation status|Determines whether the delete operation succeeded or failed.|  
 |Origin folder|The path of the base folder where the file was deleted from.|  
-|Number of failed file operations|The number of files that were not deleted.|  
+|Number of failed file operations|The number of files that weren't deleted.|  
 |Number of successful file operations|The number of files that were successfully deleted.|  
 |Total number of files|The number of files that matched the file that you specified.|  
 |File path|The path of the file that was deleted.|  
-|Delete files from sub-folders|Indicates whether the Delete files from sub-folders check box was selected.|
+|Delete files from subfolders|Indicates whether the Delete files from subfolders check box was selected.|
