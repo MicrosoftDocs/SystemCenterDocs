@@ -33,15 +33,15 @@ You set up guarded hosts in the VMM fabric as follows:
     - **Attestation URL**: The URL that the host uses to connect to the HGS attestation service. This service authorizes a host to run shielded VMs.
     - **Key protection server URL**: The URL that the host uses to retrieve the key needed to decrypt VMs. The host must pass attestation in order to retrieve keys.
     - **Code integrity policies**: A code integrity policy restricts the software that can run on a guarded host. When HGS is configured to use TPM attestation, guarded hosts must be configured to use a code integrity policy authorized by the HGS server. You can specify the location of code integrity policies in VMM and deploy them to your hosts. This is optional and isn't required to manage a guarded fabric.
-    - **VM shielding helper VHD**: A specially-prepared virtual hard disk that is used to convert the existing VMs to shielded VMs. You must configure this setting if you wish to shield the existing VMs.
+    - **VM shielding helper VHD**: A specially prepared virtual hard disk that is used to convert the existing VMs to shielded VMs. You must configure this setting if you wish to shield the existing VMs.
 
 2. **Configure the cloud**: If the guarded host will be included in a VMM cloud, you need to enable the cloud to support shielded VMs.
 
 ## Before you start
 
-Ensure that you have deployed and configured the Host Guardian Service before proceeding. [Learn more](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs) about configuring HGS in the Windows Server documentation.
+Ensure that you've deployed and configured the Host Guardian Service before proceeding. [Learn more](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs) about configuring HGS in the Windows Server documentation.
 
-Additionally, ensure any hosts which will become guarded hosts meet the guarded host prerequisites:
+Additionally, ensure any hosts that will become guarded hosts meet the guarded host prerequisites:
 - **Operating system**: Host servers must run Windows Server Datacenter. It's recommended to use Server Core for guarded hosts.
 - **Role and features**: Host servers should be running the Hyper-V role and the Host Guardian Hyper-V Support feature. Host Guardian Hyper-V Support lets the host communicate with HGS to attest to its health and request keys for shielded VMs. If your host is running Nano Server, it should have the Compute, SCVMM-Package, SCVMM-Compute, SecureStartup, and ShieldedVM packages installed.
 - **TPM-attestation**: If your HGS is configured to use TPM attestation, the host servers must:
@@ -103,7 +103,7 @@ In guarded fabrics configured to use TPM attestation, each host must be configur
 
 To deploy a code integrity policy to a guarded host managed by VMM, complete the following steps:
 
-1. [Create a code integrity policy](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-deployment-overview) for each reference host in your environment. You will need a different CI policy for each unique hardware and software configuration of your guarded hosts.
+1. [Create a code integrity policy](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-deployment-overview) for each reference host in your environment. You'll need a different CI policy for each unique hardware and software configuration of your guarded hosts.
 2. Store the CI policies in a secure file share. The computer accounts for each guarded host require **read access** to the share. Only trusted administrators should have write access.
 3. In the VMM console, select **Settings** > **Host Guardian Service Settings**.
 4. Under the Code Integrity Policies section, select **Add** and specify a friendly name and the path to a CI policy. Repeat this step for each unique CI policy. Ensure that you name your policies in a manner that will help you identify which policy should be applied to which hosts.

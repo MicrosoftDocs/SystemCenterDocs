@@ -31,7 +31,7 @@ You deploy shielded virtual machines in the System Center - Virtual Machine Mana
 
 Shielded VMs can be deployed in two ways: by deploying directly from a signed template disk or by converting an existing VM to a shielded VM.
 
-Signed template disks assure tenants that the disk contents have not been modified and enable tenants to securely transfer deployment secrets like administrator passwords and certificates to the VM in an encrypted manner. For this reason, it is preferred to deploy shielded VMs from signed template disks.
+Signed template disks assure tenants that the disk contents haven't been modified and enable tenants to securely transfer deployment secrets like administrator passwords and certificates to the VM in an encrypted manner. For this reason, it's preferred to deploy shielded VMs from signed template disks.
 
 To prepare and add a signed template disk to the VMM library, complete the following steps:
 
@@ -59,7 +59,7 @@ Templates for shielded VMs vary slightly from a regular VM template. Some settin
 2.	Select the signed template disk, specify a template name and optional description, and select **OK**.
 3.	In **Configure Hardware**, specify the hardware properties for the VMs you create from the template. Ensure there's at least one NIC configured and available. Tenants connect to shielded VMs over Remote Desktop Connection, Windows Remote Management, or other remote management tools that require networking.
 4.	If you want to use static IP addressing in the tenant pool, you need to let your tenants know. Tenants need to provide an answer file with values, which specializes a shielded VM for them. There are special, well-known placeholder values required to support static IP pools.
-5.	In **Configure Operating System**, specify the OS version, computer name, product key, and time zone. The tenant provides secure information, such as the administrator password in a shielding data file (.PDK), that they'll provide when provisioning a new VM. If you specify a product key, ensure it's valid for the operating system on the template disk. If it isn't, the VM will not provision successfully.
+5.	In **Configure Operating System**, specify the OS version, computer name, product key, and time zone. The tenant provides secure information, such as the administrator password in a shielding data file (.PDK), that they'll provide when provisioning a new VM. If you specify a product key, ensure it's valid for the operating system on the template disk. If it isn't, the VM won't provision successfully.
 After the VM template is created, ensure that it's available to the Tenant Administrator user role. Tenants can then use it to provision new VMs.
 
 ## Configure the shielding helper VHD

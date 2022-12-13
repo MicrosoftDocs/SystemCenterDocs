@@ -33,7 +33,7 @@ If you deploy SDN in the VMM fabric, you can:
 - Define and control virtual network policies centrally and link them to your applications or workloads. When your workload is deployed or moved, the network configuration adjusts itself automatically. This is important because it removes the need for manual reconfiguration of network hardware, thereby reducing operational complexity while saving your valuable resources for higher-impact work.
 - Control traffic flow between virtual networks, including the ability to define guaranteed bandwidth for your critical applications and workloads.
 
-SDN combines a number of technologies, among them:
+SDN combines many technologies, among them:
 
 - **Network Controller**: The network controller allows you to automate the configuration of your network infrastructure instead of manually configuring network devices and services.
 ::: moniker range="sc-vmm-2016"

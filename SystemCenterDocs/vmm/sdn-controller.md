@@ -89,7 +89,7 @@ Here's what you need to do to set up an SDN network controller:
 
 ## Prepare a virtual hard disk
 1. Prepare the VHD or VHDX based on the type of template you would like to use.
-2. After your prepare the hard disk, install the latest applicable Windows Server updates and any language packs you need if you have a non-English environment.
+2. After you prepare the hard disk, install the latest applicable Windows Server updates, and any language packs you need if you've a non-English environment.
 3.   Import the VHD/VHDX files to the VMM library. [Learn more](library-files.md).
 
 ## Download the network controller service template
@@ -114,7 +114,7 @@ Here's what you need to do to set up an SDN network controller:
 **Network Controller Standalone Generation 2 VM.xml** | Template | Single-node network controller for generation 2 VMs
 **NcSetup.cr** | Custom resource file | A library resource containing scripts used to set up the network.
 **ServerCertificate.cr** | Custom resource file | Library resource containing the private key for the network controller in .pfx format.
-**NcCertificate.cr** | Custom resource file | Library resource containing the trusted root certificate (.CER) for the network controller. This is used for secure communications between the network controller and other sub-services (For example, SLB MUXes).
+**NcCertificate.cr** | Custom resource file | Library resource containing the trusted root certificate (.CER) for the network controller. This is used for secure communications between the network controller and other subservices (For example, SLB MUXes).
 **TrustedRootCertificate.cr** | Custom resource file | Library resource containing the CA public key (.cer) imported as the trusted root certificate to validate the SSL certificate.
 **EdgeDeployment.cr** | Template | Used for installing SLB MUX roles and gateway roles (for example, VPN)
 
@@ -189,7 +189,7 @@ You can create a management logical network in VMM to mirror your physical manag
 If you want to allocate static IP addresses to network controller VMs, create an IP address pool in the management logical network. If you're using DHCP, you can skip this step.
 
 1.  In the VMM console, select and hold the management logical network and select **Create IP Pool**.
-2.  Provide a **Name** and optional description for the pool and ensure that the management network is selected for the logical network.
+2.  Provide a **Name** and optional description for the pool, and ensure that the management network is selected for the logical network.
 3.  In **Network Site** panel, select the subnet that this IP address pool will service.
 4.  In **IP Address range** panel, type the starting and ending IP addresses.
 5. To use an IP as REST IP, type one of the IP addresses from the specified range in the **IP addresses to be reserved for other uses** box. In case you want to use the REST End Point, skip this step.
@@ -234,7 +234,7 @@ You need an SSL certificate that will be used for secure/HTTPS communication wit
 The following example creates a new self-signed certificate and should be run on the VMM server.
 
 > [!NOTE]
-> - You can use an IP address as the DNS name, but this is not recommended as it restricts the network controller to a single subnet.
+> - You can use an IP address as the DNS name, but this isn't recommended as it restricts the network controller to a single subnet.
 > - You can use any friendly name for the network controller.
 > - For multi-node deployment, The DNS name should be the REST name you want to use.
 > - For single-node deployment, the DNS name should be the network controller name followed by the full domain name.
@@ -253,7 +253,7 @@ Export the certificate and its private key in .pfx format.
   2. Select the certificate > **All Tasks** > **Export**.
   3. Select **Yes, export the private key** option, and select **Next**.  
   4. Choose **Personal Information Exchange - PKCS #12 (.PFX)** and accept the default to **Include all certificates in the certification path if possible**.
-  5. Assign the **Users/Groups** and a password for the certificate you are exporting; select **Next**.
+  5. Assign the **Users/Groups** and a password for the certificate you're exporting; select **Next**.
   6. On the **File to export** page, browse the location where you want to place the exported file, and give it a name.
   7. Similarly, export the certificate in .CER format
      > [!NOTE]
@@ -262,7 +262,7 @@ Export the certificate and its private key in .pfx format.
   8. Copy the .PFX to the ServerCertificate.cr folder.
   9. Copy the .CER file to the NCCertificate.cr folder.
 
-When you are done, refresh these folders and ensure that you have these certificates copied.
+When you're done, refresh these folders, and ensure that you've these certificates copied.
 
 ### Use a CA
 
@@ -312,11 +312,11 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 2. Double-click the computer tier to open the Windows Server Network Controller Properties page.
 3. To specify a product key, select **OS Configuration** > **Product Key**, and specify the key shared by CCEP.
 5.  To enable high availability, select **Hardware configuration** > **Availability**, select the **Make the Virtual machine highly available** check box.
-5.  To enable dynamic IP configuration and leverage DHCP for network controller management, select network adapter on the designer, and change the IPV4 address type to **Dynamic**.
+5.  To enable dynamic IP configuration and use DHCP for network controller management, select network adapter on the designer, and change the IPV4 address type to **Dynamic**.
 
     > [!NOTE]
     > - If you customize the template for high availability, ensure that you deploy this on clustered nodes.
-    > - While configuring your Network Controller and specifying FQDN as the REST name, don’t pre-create Host A record for your primary NC node in your DNS. This may impact Network Controller connectivity once primary NC node changes. This is applicable even if you are deploying the NC by using the SDN Express or VMM Express script.
+    > - While configuring your Network Controller and specifying FQDN as the REST name, don’t pre-create Host A record for your primary NC node in your DNS. This may impact Network Controller connectivity once primary NC node changes. This is applicable even if you're deploying the NC by using the SDN Express or VMM Express script.
 
 ## Deploy the network controller
 
@@ -335,12 +335,12 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 **Setting** | **Requirement** | **Description**
 --- | --- |---
 **ClientSecurityGroup** | Required | Name of the security group that you created, containing network controller client accounts.
-**DiagnosticLogShare** | Optional | File share location where the diagnostic logs will be periodically uploaded. If this is not provided, the logs are stored locally on each node.
+**DiagnosticLogShare** | Optional | File share location where the diagnostic logs will be periodically uploaded. If this isn't provided, the logs are stored locally on each node.
 **DiagnosticLogShareUsername** | Optional | Full user name (including domain name) for an account that has access permissions to the diagnostic log share. In the format: [domain]\\[username].
 **DiagnosticLogSharePassword** | Optional | The password for the account specified in the DiagnosticLogShareUsername parameter.
-**LocalAdmin** | Required | Select a Run as account in your environment, which will be used as the local administrator on the network controller virtual machines.<br><br> **Note**: while creating Run as accounts, uncheck the **validate domain credentials option** if you are creating a local account.<br><br> User name should be .\Administrator (create it if it doesn't exist).
+**LocalAdmin** | Required | Select a Run as account in your environment, which will be used as the local administrator on the network controller virtual machines.<br><br> **Note**: while creating Run as accounts, uncheck the **validate domain credentials option** if you're creating a local account.<br><br> User name should be .\Administrator (create it if it doesn't exist).
 **Management** | Required | Select the management logical network you created earlier.
-**MgmtDomainAccount** | Required | Select a Run as account in your environment which will be used to prepare the network controller. This user must be a member of the management security group, specified below, which has privileges to manage the network controller.
+**MgmtDomainAccount** | Required | Select a Run as account in your environment, which will be used to prepare the network controller. This user must be a member of the management security group, specified below, which has privileges to manage the network controller.
 **MgmtDomainAccountName** | Required | This must be the full user name (including domain name) of the Run as account mapped to MgmtDomainAccount.<br><br> The domain user name will be added to the Administrators group during deployment.
 **MgmtDomainAccountPassword** | Required | Password for the management Run as account mapped to MgmtDomainAccount.
 **MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the network controller virtual machines will join.
@@ -351,7 +351,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 ::: moniker range=">=sc-vmm-2019"
 
 > [!NOTE]
-> Windows Server 2019 onwards, the Network Controller machines must be provided permission to register and modify the SPN in the Active Directory. For more details, see [Kerberos with Service Principal Name](/windows-server/networking/sdn/security/kerberos-with-spn).
+> Windows Server 2019 onwards, the Network Controller machines must be provided permission to register and modify the SPN in the Active Directory. For more information, see [Kerberos with Service Principal Name](/windows-server/networking/sdn/security/kerberos-with-spn).
 
 ::: moniker-end
 
@@ -424,15 +424,15 @@ You can optionally validate the network controller deployment. To do this:
 ::: moniker-end
 
 
-The configure HNV logical network needs an IP address pool, even if DHCP is available on this network. If you have more than one subnet on the configure HNV network, create a pool for each subnet.
+The configure HNV logical network needs an IP address pool, even if DHCP is available on this network. If you've more than one subnet on the configure HNV network, create a pool for each subnet.
 
 1.  Select and hold the configure HNV logical network > **Create IP Pool**.
 2.  Provide a name and optional description, and ensure that the HNV Provider logical network is selected for the logical network.
 ::: moniker range="<sc-vmm-2019"
-3.  In **Network Site**, you need to select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology), then you can just select **Next**.
+3.  In **Network Site**, you need to select the subnet that this IP address pool will service. If you've more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you've only one site (for example, like the sample topology), then you can just select **Next**.
 ::: moniker-end
 ::: moniker range=">=sc-vmm-2019"
-3. In **Network Site**, you need to select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology), then you can just select **Next**.
+3. In **Network Site**, you need to select the subnet that this IP address pool will service. If you've more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you've only one site (for example, like the sample topology), then you can just select **Next**.
 
 ::: moniker-end
 
@@ -470,7 +470,7 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 > - Do not use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
 > - Currently you can’t create a VM network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
 >::: moniker range="<sc-vmm-2019"
-> - Since the network controller is not yet tested with IPv6, use IPv4 for both the logical network and the VM network when you create a VM network.
+> - Since the network controller isn't yet tested with IPv6, use IPv4 for both the logical network and the VM network when you create a VM network.
 >::: moniker-end
 
 1. [Create a VM network](network-virtual.md) for each tenant.

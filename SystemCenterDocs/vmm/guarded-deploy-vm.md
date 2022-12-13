@@ -27,7 +27,7 @@ You can deploy shielded VMs in VMM in a couple of ways:
 - Create a new shielded VM using a signed virtual machine hard disk (VHDX) and optionally a VM template.
 
 > [!NOTE]
-> You may experience issues deploying a shielded virtual machine over a network with a load balancer or WAN optimization device. It is required for the packet to not be modified during transit for Shielded VMs to successfully deploy.
+> You may experience issues deploying a shielded virtual machine over a network with a load balancer or WAN optimization device. It's required for the packet to not be modified during transit for Shielded VMs to successfully deploy.
 
 ## Before you start
 
@@ -75,11 +75,11 @@ You can deploy shielded VMs in VMM in a couple of ways:
 
 Before you can convert an existing VM to a shielded VM or provision a new shielded VM from a template, the VM owner must generate a shielding data file and add it to VMM.
 
-If you do not already have a shielding data file imported, complete the following steps:
+If you don't already have a shielding data file imported, complete the following steps:
 
 1. [Create a shielding data file](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data) if you don't already have one. Ensure that the shielding data file authorizes the hosting fabric VMM manages to run your shielded VMs.
 2. In the VMM console, select **Library** > **Import Shielding Data** > **Browse** and select your shielding data file.
-3. Specify a friendly name for the shielding data file in **Name** and optionally add a description. It is recommended that you indicate whether the shielding data file is intended for use with the existing or new VMs in its name to make it easier to find again.
+3. Specify a friendly name for the shielding data file in **Name** and optionally add a description. We recommend that you indicate whether the shielding data file is intended for use with the existing or new VMs in its name to make it easier to find again.
 4. Select **Import** to save the shielding data in VMM.
 
 To manage your imported shielding data files, go to **Library** > **VM Shielding Data** (under "Profiles").

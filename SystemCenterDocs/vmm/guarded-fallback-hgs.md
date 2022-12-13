@@ -30,7 +30,7 @@ The primary HGS URLs will always be used in favor of the secondary. If the prima
 
 ## Before you start
 
-Ensure that you have deployed and configured the Host Guardian Service before proceeding.
+Ensure that you've deployed and configured the Host Guardian Service before proceeding.
 Learn more about [configuring HGS](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
 
 
@@ -55,7 +55,7 @@ Learn more about [configuring HGS](/windows-server/security/guarded-fabric-shiel
    - **AttestationFallbackServerUrl**
    - **KeyProtectionFallbackServerUrl**
 
-   Here is the sample syntax.
+   Here's the sample syntax.
 
    ```powershell
 

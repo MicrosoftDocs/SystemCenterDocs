@@ -73,7 +73,7 @@ The download contains two templates:
 
 Both the templates have a default count of three virtual machines, which can be changed in the service template designer.
 
-We recommend to use simplified SDN topology (2 physical network) for SLB deployments. Skip creating transit logical network when simplified SDN topology template is used.
+We recommend you use simplified SDN topology (two physical network) for SLB deployments. Skip creating transit logical network when simplified SDN topology template is used.
 
 ## Create the transit logical network
 
@@ -105,14 +105,14 @@ You can create IP address pool using the **Create Logical Network** wizard.
 ::: moniker-end
 
 >[!NOTE]
->- Ensure that you use the IP address range that corresponds to your transit network IP address space. Don't include the first IP address of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .2.
+>- Ensure that you use the IP address range that corresponds to your transit network IP address space. Don't include the first IP address of your subnet in the IP pool you're about to create. For example, if your available subnet is from .1 to .254, start your range at .2.
 >- After you create the Transit logical network, ensure that you associate this logical network with the Management switch uplink port profile you created during the network controller deployment.
 
 **Create the IP address pool**:
 
 1. Select and hold the logical network > **Create IP Pool**.
 2. Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
-3. In **Network Site**, select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology), then you can just select **Next**.
+3. In **Network Site**, select the subnet that this IP address pool will service. If you've more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you've only one site (for example, like the sample topology), then you can just select **Next**.
 4. In **IP Address range**, configure the starting and ending IP address. Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
 5. Next, configure the default gateway address. Select **Insert** next to the **Default gateways** box, type the address, and use the default metric. Optionally configure DNS and WINS.
 6. Review the summary information, and select **Finish** to complete the wizard.
@@ -122,7 +122,10 @@ You can create IP address pool using the **Create Logical Network** wizard.
 
 ## Create private and public VIP logical networks
 
-You need a private VIP address pool to assign a VIP, and a public VIP, to the SLB Manager service. Note that the procedure for creating both is similar but there are some differences.
+You need a private VIP address pool to assign a VIP, and a public VIP, to the SLB Manager service.
+
+> [!NOTE]
+> The procedure for creating both is similar, but there are some differences.
 
 
 **Create a private VIP**:
@@ -170,7 +173,7 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 
 ::: moniker-end
 ::: moniker range="sc-vmm-2019"
-4. In **IP Address range**, configure the starting and ending IP address. Specify the IPv6 address pool if you are using the IPv6 address space.
+4. In **IP Address range**, configure the starting and ending IP address. Specify the IPv6 address pool if you're using the IPv6 address space.
     >[!NOTE]
     > Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
     >
@@ -178,7 +181,7 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
-4. In **IP Address range**, configure the starting and ending IP address. Add IPv6 subnet to network site and create IPv6 address pools if you are using the IPv6 address space.
+4. In **IP Address range**, configure the starting and ending IP address. Add IPv6 subnet to network site and create IPv6 address pools if you're using the IPv6 address space.
     >[!NOTE]
     > - Add IPv6 address pools when you onboard an SLB.
     > - Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
@@ -221,7 +224,7 @@ Now deploy an SLB/MUX service instance.
 2. In the **Network Settings** section, map **TransitNetwork** to your transit VM network and **ManagementNetwork** to your management VM network.
 
     >[!NOTE]
-    >- Transit network is not applicable when you are using simplified topology templates.
+    >- Transit network isn't applicable when you're using simplified topology templates.
     >- The **Deploy Service** screen appears after the mapping is complete. It is normal for the virtual machine instances to be initially Red. Select **Refresh Preview** to automatically find suitable hosts for the virtual machine.
 
 3. On the left of the **Configure Deployment** window, configure the settings as detailed in the following table:
@@ -233,15 +236,15 @@ Now deploy an SLB/MUX service instance.
     **Management network** | Required | Choose the management VM network that you created for host management.
     **MgmtDomainAccount** | Required | Select a Run As Account with permissions to add the SLB/MUX virtual machines to the Active Directory domain associated with the network controller. This can be the same account you used in MgmtDomainAccount while deploying the network controller.
     **MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the SLB/MUX virtual machines will join.
-    **SelfSignedConfiguration** | Required | Specify **True** if the certificate you are using is self-signed.
+    **SelfSignedConfiguration** | Required | Specify **True** if the certificate you're using is self-signed.
 
 4. After you configure these settings, select **Deploy Service** to begin the service deployment job. Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes.
-5. If you are not using a volume licensed VHDX, or if the VHDX doesn't have the product key from an answer file, then deployment will stop at the **Product Key** page during SLB/MUX VM provisioning. You need to manually access the VM desktop, and either skip or enter the product key.
+5. If you're not using a volume licensed VHDX, or if the VHDX doesn't have the product key from an answer file, then deployment will stop at the **Product Key** page during SLB/MUX VM provisioning. You need to manually access the VM desktop, and either skip or enter the product key.
 6. When the service deployment job is complete, verify that your service appears in **VMs and Services** > **Services** > **VM Network Information for Services**. Select and hold the service and verify that the state is **Deployed** in **Properties**.
 
 After deployment, verify that the service appears in **All Hosts** > **Services** > **VM Network Information for Services**. Select and hold the SLB MUX service > **Properties**, and verify that the state is **Deployed**. If the SLB/MUX deployment fails, ensure that you delete the failed service instance before you try to deploy the SLB once again.
 
-If you want to scale-in or scale-out a deployed software load balancer service instance, [read this blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
+If you want to scale in or scale out a deployed software load balancer service instance, [read this blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
 
 > [!NOTE]
 > After the SLB service is deployed, disable DNS registration on the virtual network adapter connected to the transit VM network on all the SLB MUX VMs.
@@ -278,11 +281,11 @@ After you deploy the SLB/MUX, you can validate the deployment by configuring BGP
 3. Check the **Jobs** window to verify that the **Update Fabric Role with required configuration** and **Associate service instance with fabric role** jobs have completed successfully.
 4. To complete the BGP peering operation, you need to configure BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor’s documentation regarding how to set up BGP peering for that device.
 
-    You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either sign in to the SLB MUX virtual machine and run **ipconfig /all** from the command prompt or you can get the IP address from the VMM console.
+    You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either sign in to the SLB MUX virtual machine and run **ipconfig /all** from the command prompt, or you can get the IP address from the VMM console.
 
     > [!NOTE]
     > Enter an IP from the transit network.
-    
+
 5. If you create a new VIP pool after peering is complete, you need to advertise all the VIP address pools using the VMM console.
 
 After you validate, you can start using the SLB for load balancing. For related information, see [load balance network traffic](sdn-load-balance-network-traffic.md) and [configure NAT rules](sdn-set-up-nat.md).
