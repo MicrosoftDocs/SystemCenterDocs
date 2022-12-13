@@ -20,13 +20,13 @@ Azure Arc-enabled System Center Virtual Machine Manager allows you to manage you
 
 Arc-enabled System Center VMM allows you to:
 
-- Perform various VM lifecycle operations such as start, stop, pause, and delete VMs on VMM managed VMs directly from Azure. 
+- Perform various VM lifecycle operations such as start, stop, pause, and delete VMs on VMM managed VMs directly from Azure.
 
 - Empower developers and application teams to self-serve VM operations on-demand using [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview).
 
-- Browse your VMM resources (VMs, templates, VM networks, and storage) in Azure, providing you with a single pane view for your infrastructure across both environments. 
+- Browse your VMM resources (VMs, templates, VM networks, and storage) in Azure, providing you with a single pane view for your infrastructure across both environments.
 
-- Discover and onboard existing SCVMM managed VMs to Azure. 
+- Discover and onboard existing SCVMM managed VMs to Azure.
 
 ## Discover Arc-enabled SCVMM from SCVMM console
 
@@ -37,12 +37,12 @@ Navigate to **Azure Arc** in **SCVMM Console** and you can do the following:
    - **Pre-requisites**: Review the prerequisites of Are-enabled SCVMM.
    - **Steps to deploy**: View steps to Arc enable SCVMM deployment.
    - **Deploy Arc Resource Bridge**: Deploy Arc resource bridge.
-   - **View onboarded SCVMM in Azure**: Navigate to your SCVMM inventory page on the Azure Arc portal from the default web browser. 
+   - **View onboarded SCVMM in Azure**: Navigate to your SCVMM inventory page on the Azure Arc portal from the default web browser.
 
-You need appropriate credentials on the Azure portal with the necessary permissions to onboard or use Azure Arc-enabled SCVMM. 
+You need appropriate credentials on the Azure portal with the necessary permissions to onboard or use Azure Arc-enabled SCVMM.
 
 :::image type="Arc-enabled SCVMM blade" source="media/about-arc-enabled-system-center-virtual-machine-manager/arc-enabled-system-center-virtual-machine-manager.png" alt-text="Screenshot showing Arc-enabled SCVMM blade.":::
 
 ## Next steps
 
-- Get started with [Arc-enabled SCVMM](/azure/azure-arc/system-center-virtual-machine-manager/overview#how-does-it-work).   
+- Get started with [Arc-enabled SCVMM](/azure/azure-arc/system-center-virtual-machine-manager/overview#how-does-it-work).
