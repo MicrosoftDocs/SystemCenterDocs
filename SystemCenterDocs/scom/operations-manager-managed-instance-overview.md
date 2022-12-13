@@ -5,7 +5,7 @@ description: This article describes about Azure Monitor SCOM Managed Instance (p
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 11/29/2022
+ms.date: 12/09/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -67,4 +67,5 @@ A customer-managed part consists of Ops and Web console that will be used to mon
 
 ## Next steps
 
-[Create a SCOM Managed Instance (preview) on Azure](create-operations-manager-managed-instance.md)
+- [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
+- [Create a SCOM Managed Instance (preview) on Azure](create-operations-manager-managed-instance.md)

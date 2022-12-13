@@ -46,7 +46,6 @@ The following table gives a quick reference for where to perform common tasks an
 |How and when to clear the cache|Understand how and when to clear the cache when troubleshooting console or agent issues by performing the steps described in<br>- [How and when to clear the cache](manage-clear-healthservice-cache.md)|
 |Configure communication from Operations Manager to SQL Server|If you need to move the Operations Manager databases to a different SQL Server, reconfigure the SQL Server instance, or implement SQL Always On, perform the steps described in [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md).|
 |Integrate with Azure Monitor|[Integration with Azure Monitor](/azure/azure-monitor/platform/om-agents) logs provides an analytics platform that compliments the Data Warehouse to deliver improved analytics, query performance across large data volumes, correlate log data from Azure resources, and longer retention of monitoring data.|
-||
 
 ## Next steps
 
