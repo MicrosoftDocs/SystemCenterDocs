@@ -19,7 +19,7 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-System Center Virtual Machine Manager (VMM) is part of the System Center suite, used to configure, manage and transform traditional datacenters, and helping to provide a unified management experience across on-premises, service provider, and the Azure cloud.
+System Center Virtual Machine Manager (VMM) is part of the System Center suite used to configure, manage, and transform traditional datacenters. It helps provide a unified management experience across on-premises, service provider, and the Azure cloud.
 
 This topic covers the basics that you need to understand before you move on to more complex topics, such as advanced VMM features and functions, and planning and designing private and public clouds.
 
@@ -47,19 +47,19 @@ The following VMM networking objects are used to build the basic networking infr
 
      A single VM network is created on top of this logical network, and this VM network provides access to all the underlying VLAN-subnet pairs.
 
-     ![Connected network](media/network-logical/connected-network.png)
+     ![Diagram of a connected network.](media/network-logical/connected-network.png)
 
    - [Independent logical network](network-logical-ur1.md)
 
      Multiple VM networks can be created on top of this logical network. Each VM network created provides access to a specific VLAN-subnet pair. The VM networks are independent of each other.
 
-     ![Independent network](media/network-logical/independent-network.png)
+     ![Diagram of an independent network.](media/network-logical/independent-network.png)
 
    - [Virtualized network](network-logical-ur1.md)
 
      This is the fabric network. Multiple virtualized VM networks can be created on top of this logical network. Each VM network has its own virtualized address space.
 
-     ![Virtualized network](media/network-logical/virtualized-network.png)
+     ![Diagram of a virtualized network.](media/network-logical/virtualized-network.png)
 
 - [Network sites](network-virtual.md)
 
