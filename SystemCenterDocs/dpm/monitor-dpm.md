@@ -97,9 +97,10 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 1.	Logon to Azure portal.
 2.	[Create a Recovery Service vault](/azure/backup/backup-azure-vms-first-look-arm#back-up-from-azure-vm-settings), or if you already have one, select the same.
 3.	Select **Diagnostic Settings** under **Monitoring** section.
-    ![Diagnostics settings](./media/monitor-dpm/diagnostic-settings.png)
-4. Click **Turn on Diagnostic Settings**.
-5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport*, and click **Save**.
+
+    ![Screenshot of Diagnostics settings.](./media/monitor-dpm/diagnostic-settings.png)
+4. Select **Turn on Diagnostic Settings**.
+5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport*, and select **Save**.
 
     > [!NOTE]
     > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
@@ -107,34 +108,34 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
     Here is a sample backup report:
 
-    ![backup report](./media/monitor-dpm/azure-backup-report.png)
+    ![Screenshot of backup report.](./media/monitor-dpm/azure-backup-report.png)
 
 **Monitor Backup Data**
 1.	Select your Log Analytics workspace.
-2.	Click **OMS Portal**.
+2.	Select **OMS Portal**.
     The solution dashboard is displayed and provides you with all the backup information as shown below:
 
     Sample 1:
 
-    ![Backup report dashboard](./media/monitor-dpm/monitor-backup-image1.png)
+    ![Screenshot of Backup report dashboard.](./media/monitor-dpm/monitor-backup-image1.png)
 
     Sample 2:
 
-    ![Backup jobs report](./media/monitor-dpm/monitor-backup-image2.png)
+    ![Screenshot of Backup jobs report.](./media/monitor-dpm/monitor-backup-image2.png)
 
 3. You can also monitor active alerts, current data sources being backed-up and cloud storage as shown below:
 
-    ![Azure backup report](./media/monitor-dpm/monitor-backup-image3.png)
+    ![Screenshot of Azure backup report.](./media/monitor-dpm/monitor-backup-image3.png)
 
 4. You can also specify the desired time range for monitoring the backup parameters.
 
-    ![Timeframe for monitoring](./media/monitor-dpm/specify-timeframe.png)
+    ![Screenshot of Timeframe for monitoring.](./media/monitor-dpm/specify-timeframe.png)
 
 **Create Custom Alerts**
-1.	Click any values in the above graph to view more details in the Logs window.
-2.	Click **Alert** icon.
+1.	Select any values in the above graph to view more details in the Logs window.
+2.	Select **Alert** icon.
 3.	Select **Take me to Azure Alerts**.
-4.	In Log Analytics workspace, click **New Alert Rule**.
+4.	In Log Analytics workspace, select **New Alert Rule**.
 5.	Define the **alert condition**, **alert details** and **action group**.
 6.	[Learn more](/azure/azure-monitor/learn/tutorial-response#create-alerts) about how to configure new alerts.
 
@@ -144,15 +145,15 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
 ## Backup items in Recovery Services vault
 
-You can monitor the backed-up items using Recovery Services vault. From the Recovery Services vault, navigate to **Backup items** to view the number of items backed-up for each workload type, associated with the vault. Click the workload item to view the detailed list of all items backed-up for the selected workload.
+You can monitor the backed-up items using Recovery Services vault. From the Recovery Services vault, navigate to **Backup items** to view the number of items backed-up for each workload type, associated with the vault. Select the workload item to view the detailed list of all items backed-up for the selected workload.
 
 Here is a sample view:
 
-![Recovery vault backup items](./media/monitor-dpm/back-up-items-view.png)
+![Screenshot of Recovery vault backup items.](./media/monitor-dpm/back-up-items-view.png)
 
 - To view the list of backup items, select *DPM* or *Azure Backup Server* under **Backup Management Type**.   
 
-  ![Backup items list](./media/monitor-dpm/back-up-items-list.png)
+  ![Screenshot of Backup items list.](./media/monitor-dpm/back-up-items-list.png)
 
   >[!NOTE]
   > - The Latest Recovery Point will always display the latest disk recovery point available for the backup item.
@@ -160,9 +161,9 @@ Here is a sample view:
   > - For the items backed-up to Azure using DPM, the list will show all the data sources protected (both disk and online) using the DPM server. If the protection is stopped for the datasource with backup data retained, the datasource will be still listed in the portal. You can go to the details of the data source to see if the recovery points are present in the disk, online or both. Also, datasources for which the online protection is stopped but data is retained, billing for the online recovery points continue, until the data is completely deleted.
   > - Currently, datasources backed-up directly to tape don't appear in the Recovery Services vault. To make it appear, we recommend you to back up the data to disk for a short term, and then to Azure or tape as required.
 
-- Click the *backup item* to view more details such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
+- Select the *backup item* to view more details such as latest, oldest and total number of recovery points for disk and cloud, if online protection is enabled.
 
-  ![Backup item details](./media/monitor-dpm/back-up-items-details.png)
+  ![Screenshot of Backup item details.](./media/monitor-dpm/back-up-items-details.png)
 
 > [!NOTE]
 > - The *Backup items* view continues to display a datasource even after the protection is stopped. From the datasource details, you will be able to check the available recovery points for online/disk backups. This display continues until you manually remove the existing backup data for the datasource, for which the protection has been stopped.   
@@ -220,7 +221,7 @@ Import the Discovery and Library Management Packs
 Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 Remember to remove any previous versions of the Library or Discover Management Packs running on the server.
 
-1.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
+1.  In the Operations console, select **Administration**. Select and hold **Management Packs** > **Import Management Packs**.
      Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**
 
 2.  Follow the instructions in the Import Management Packs wizard. You can get more information about running this wizard in [How to Import an Operations Manager Management Pack](/previous-versions/system-center/system-center-2012-R2/hh212691(v=sc.12)).
@@ -241,7 +242,7 @@ You'll need to install the DPM Central Console on the Operations Manager server.
 
 1.  Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 
-2.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
+2.  In the Operations console, select **Administration**. Select and hold **Management Packs** > **Import Management Packs**.
 
 3.  Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**.
     Follow the instructions in the Import Management Packs wizard.
