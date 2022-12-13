@@ -15,9 +15,9 @@ ms.technology: virtual-machine-manager
 
 ::: moniker range="sc-vmm-2022"
 
-Virtual Machine Manager (VMM) 2022 does not have any known issues.
+Virtual Machine Manager (VMM) 2022 doesn't have any known issues.
 
-For new features in VMM  2022, see [What's new](whats-new-in-vmm.md)
+For new features in VMM  2022, see [What's new](whats-new-in-vmm.md).
 
 ::: moniker-end
 
