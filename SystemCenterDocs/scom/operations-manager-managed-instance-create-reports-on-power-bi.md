@@ -46,7 +46,7 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
          :::image type="Connect your data" source="media/operations-manager-managed-instance-create-reports-on-power-bi/connect-your-data.png" alt-text="Screenshot showing Connect your data option.":::
 1. After you enter the parameters, select any one of the following authentication methods: 
     - SQL username and password-based method 
-    - Azure Active Directory based method 
+    - Azure Active Directory-based method 
     
     The dataset and reports will be refreshed. 
 

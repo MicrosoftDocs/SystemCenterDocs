@@ -19,7 +19,7 @@ You can use *MOMAgent.msi* to deploy Azure Monitor SCOM Managed Instance (previe
 
 For either of the methods, ensure the following conditions are met:
 
--   The account that is used to run *MOMAgent.msi* must have administrative privileges on the computer on which you are installing agent.
+-   The account that is used to run *MOMAgent.msi* must have administrative privileges on the computer on which you are installing the agent.
 
 -   Each agent must be approved by a management group. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md).
 

@@ -33,7 +33,7 @@ To scale In/Out the management servers, follow these steps:
         1. **Recommended Management servers**: Depending on the number of endpoints you enter, the ideal number of management servers to be provisioned will be recommended. You can change the recommended value as desired.
 
            >[!Note]
-           >A Management server can monitor upto 1000 endpoints. 
+           >A Management server can monitor up to 1000 endpoints. 
 
            :::image type="Scaling SCOM Managed Instance (preview)" source="media/scale-scom-managed-instance/scaling-scom-mi.png" alt-text="Screenshot of Scaling SCOM Managed Instance (preview).":::
  

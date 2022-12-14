@@ -128,7 +128,7 @@ Check the quota section on Azure portal and allocate more cores of type Standard
 
 **Cause**: This error might occur during the provisioning of System Center Operations Manager extension or System Center Operations Manager installation.
 
-**Resolution**: Check the [general troubleshooting](./troubleshoot-scom-managed-instance.md#general-troubleshooting), try to identify the issue and accordingly resolve it.
+**Resolution**: Check the [general troubleshooting](./troubleshoot-scom-managed-instance.md#general-troubleshooting), try to identify the issue, and resolve it accordingly.
 
 ### Issue: Conflict
 
@@ -161,7 +161,7 @@ For example, the update button is enabled even though the title of the card read
 
 **Cause**: Occurs due to any of the following reasons:
 1. New update is available, and the user hasn't triggered the update instance; or
-2. Last update failed and the user hasn't triggered another update instance.
+2. Last update failed, and the user hasn't triggered another update instance.
 
 **Resolution**: Trigger an *update instance*.
 
@@ -207,7 +207,7 @@ For example, the update button is enabled even though the title of the card read
 
 **Cause**: Occurs if SQL Managed Instance and SCOM Managed Instance (preview) are in different regions due to which the extension takes more time to update and eventually fails.
 
-**Resolution**: Have SQL Managed Instance and SCOM Managed Instance (preview) in same region.
+**Resolution**: Have SQL Managed Instance and SCOM Managed Instance (preview) in the same region.
 
 ### Issue: After patching, user data in the database is altered or not retained properly
 
