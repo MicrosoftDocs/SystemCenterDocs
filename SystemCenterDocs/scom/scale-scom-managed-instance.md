@@ -39,8 +39,10 @@ To scale In/Out the management servers, follow these steps:
  
 1. Select **Save** to trigger the Scale In or Scale Out operation. 
 
-Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
-
 ## Next steps
 
 [Patch SCOM Managed Instance (preview)](patch-scom-managed-instance.md)
+
+### Feedback
+
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).

@@ -46,8 +46,10 @@ Follow the below steps to connect a SCOM Managed Instance (preview) to Ops conso
 
 1. **Connect SCOM Managed Instance (preview) to the Web Console**: To connect to the Web console, go to properties in the SCOM Managed Instance (preview) homepage, and copy the value in the *Operations Manager Web Console URL*. Paste that URL in any browser to open the web console.
 
-Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
-
 ## Next step
 
 [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
+
+### Feedback
+
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
