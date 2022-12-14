@@ -174,7 +174,10 @@ Both the templates have a default count of three virtual machines, which can be 
 
 1. Select **Library** > **Import Template**.
 2. Browse to your service template folder. As an example,  select the **EdgeServiceTemplate Generation 2.xml** file.
-3. Update the parameters for your environment as you import the service template. Note that the library resources were imported during network controller deployment.
+3. Update the parameters for your environment as you import the service template. 
+
+> [!NOTE]
+> The library resources were imported during the network controller deployment.
 
     - **WinServer.vhdx**: Select the virtual hard drive image that you prepared and imported earlier during the network controller deployment.
     - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
@@ -262,7 +265,7 @@ Now that the gateway service is deployed, you can configure the properties and a
 ::: moniker-end
 ::: moniker range=">=sc-vmm-2019"
 6. To enable IPv4 support, in **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
-7. To enable IPv6 support, from **Network Controller Properties** > **Services**, select **Enable IPv6** checkbox, select the IPv6 GRE VIP subnet that you have created previously, and input the public IPv6 pool and public IPv6 address, respectively. Also, select IPv6 frontend subnet that will be assigned to Gateway VMs.
+7. To enable IPv6 support, from **Network Controller Properties** > **Services**, select **Enable IPv6** checkbox, select the IPv6 GRE VIP subnet that you've created previously, and input the public IPv6 pool and public IPv6 address, respectively. Also, select IPv6 frontend subnet that will be assigned to Gateway VMs.
 
     ![Screenshot of IPv6 enable.](media/sdn-gateway/configure-gateway-manager-role.png)
 
@@ -320,7 +323,7 @@ For more information on connection types, see [this](/windows-server/networking/
 
 
 ## Set up the traffic selector from PowerShell
-Here is the procedure to set up the traffic selector by using the VMM PowerShell.
+Here's the procedure to set up the traffic selector by using the VMM PowerShell.
 
 1. Create the traffic selector by using the following parameters.
 

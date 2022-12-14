@@ -31,7 +31,7 @@ Using the encrypted networks feature in VMM, end-to-end encryption can be easily
 
 The control of encryption is at the subnet level and encryption can be enabled/disabled for each subnet of the VM network.
 
-This feature is managed through the SDN Network Controller (NC). If you don't already have a Software Defined Network (SDN) infrastructure with an NC, see [deploy SDN](deploy-sdn.md) for more information.
+This feature is managed through the SDN Network Controller (NC). If you don't already have a Software Defined Network (SDN) infrastructure with an NC, for more information, see [deploy SDN](deploy-sdn.md).
 
 > [!NOTE]
 > This feature currently provides protection from third-party and network admins and doesn’t offer any protection against fabric admins. Protection against fabric admins is in the pipeline and will be available soon.
@@ -51,7 +51,7 @@ Ensure the following prerequisites are met:
 
 1. Create a certificate and then place the certificate in the local certificate store of all the hosts where you plan to place the tenant VMs for this validation.
 
-2. You can either create a self-signed certificate or get a certificate from a CA. For information on how to generate a self-signed certificate and place them in the appropriate locations of each host you will be using, [see](/windows-server/networking/sdn/vnet-encryption/sdn-config-vnet-encryption#step-1-create-the-encryption-certificate).
+2. You can either create a self-signed certificate or get a certificate from a CA. For information on how to generate a self-signed certificate and place them in the appropriate locations of each host you'll be using, [see](/windows-server/networking/sdn/vnet-encryption/sdn-config-vnet-encryption#step-1-create-the-encryption-certificate).
 
     > [!NOTE]
     > Make a note of the "Thumbprint" of the certificate that you generate.
@@ -67,4 +67,4 @@ Ensure the following prerequisites are met:
     ![Screenshot of encryption details.](media/encrypt-networks/details-encrypted-network.png)
 5.	Create two VMs on two separate physical hosts and connect them to the above subnet. [Learn more](sdn-controller.md#validate-the-deployment).
 6.	Attach any packet sniffing application on the two network interfaces of the two hosts where the tenant VMs are placed.
-7.	Send traffic, ping, HTTP, or any other packets between the two hosts, and check the packets in the packet sniffing application. The packets should not have any discernible plain text like the parameters of an HTTP request.
+7.	Send traffic, ping, HTTP, or any other packets between the two hosts, and check the packets in the packet sniffing application. The packets shouldn't have any discernible plain text like the parameters of an HTTP request.

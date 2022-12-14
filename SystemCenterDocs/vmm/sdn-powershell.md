@@ -36,7 +36,7 @@ There are a couple of ways to deploy these components:
 
 - Deploy all SDN components with PowerShell scripts.
 - The use of a script can reduce the introduction of manual errors and save significant deployment time.
-- If you deploy using the script, you can modify settings in the VMM console afterwards, just as you would if you deploy the SDN components manually.
+- If you deploy using the script, you can modify settings in the VMM console afterwards just as you would if you deploy the SDN components manually.
 - Like the manual deployment, you have the option of setting up a new management logical network and switch or to reuse an existing network and switch.
 - If the script deployment fails, all changed settings are rolled back so that you can start again.
 - You can turn off deployment for specific components. For example, if you already have network controller deployed, you can deploy SLB and RAS gateway only.

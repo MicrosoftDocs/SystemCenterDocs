@@ -25,13 +25,13 @@ In System Center Virtual Machine Manager (VMM), you can centrally configure and 
 - A port ACL in VMM filters access to a specific VMM network object.
 - Each VMM network object can have only one port ACL attached.
 - An ACL contains rules and can be attached to any number of VMM network objects. You can create an ACL without rules, and add the rules later.
-- If an ACL has multiple rules, they are applied based on the priority. After a rule matches the criteria and is applied, no other rules are processed.  
+- If an ACL has multiple rules, they're applied based on the priority. After a rule matches the criteria and is applied, no other rules are processed.  
 - SDN Port ACLs can be applied to virtual subnets and virtual network adapters.
 
 > [!NOTE]
 > Port ACL settings are exposed only through PowerShell cmdlets in VMM and can't be configured in the VMM console.  
 
-Using VMM PowerShell, you can also configure Hyper-V port ACLs. For more information, see [Hyper-v port ACLs](hyper-v-acls.md).
+Using VMM PowerShell, you can also configure Hyper-V port ACLs. For more information, see [Hyper-V port ACLs](hyper-v-acls.md).
 
 This article provides information on how to create and manage SDN port ACLs by using the VMM PowerShell cmdlets.
 

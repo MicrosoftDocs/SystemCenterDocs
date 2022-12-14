@@ -52,7 +52,7 @@ The following two types of isolation settings are supported in SDN fabric:
 >[!NOTE]  
 > If you want to deploy the VMs with dynamic IP on "no isolation" network, then IP pools are not required.
 
-- By default, VMs connected to a VM network with network virtualization isolation setting cannot connect to other networks. If you want your VM network to connect to other networks, you need to first deploy [SDN SLB ](sdn-slb.md) and [SDN gateway](sdn-gateway.md).
+- By default, VMs connected to a VM network with network virtualization isolation setting can't connect to other networks. If you want your VM network to connect to other networks, you need to first deploy [SDN SLB ](sdn-slb.md) and [SDN gateway](sdn-gateway.md).
 
 ::: moniker range="<=sc-vmm-2019"
 
@@ -101,7 +101,7 @@ Once the job is successfully completed, you can view the newly created VM networ
 
    ![VM network in sdn](media/sdn-create-network/vm-network.png)
 
-5. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
+5. In **VM Subnets**, select **Add**, specify the name and subnets for VM network and then select **Next**.
 
    >[!NOTE]
    >- You can add multiple subnets.

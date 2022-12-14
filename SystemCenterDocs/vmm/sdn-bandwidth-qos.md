@@ -45,7 +45,7 @@ To create virtual network adapter port profile, use the following procedure:
     ![Screenshot of vNIC port profile](media/bandwidth-settings-vnic-port-profile.png).
 5.	In **Bandwidth Settings**, enter the minimum and maximum bandwidth values that you want to apply to the selected vNIC. Maximum bandwidth (Mbps) and Minimum bandwidth (Weight) are used to reserve a portion of the outbound bandwidth for the vNICs.
 
-    - **Maximum bandwidth (Mbps)**: Specify the maximum outbound bandwidth that can be used by this vNIC. This is irrespective of the bandwidth mode configured on the switch. A value of 0 implies that the maximum is not configured.
+    - **Maximum bandwidth (Mbps)**: Specify the maximum outbound bandwidth that can be used by this vNIC. This is irrespective of the bandwidth mode configured on the switch. A value of 0 implies that the maximum isn't configured.
 
     - **Minimum bandwidth (Weight)**: Specify a weighted portion of the outbound bandwidth that you want to reserve for this vNIC. This will reserve a weighted portion of the total physical NIC(s) bandwidth based on the total weights reserved by all other vNICs for a particular switch.
 
@@ -74,8 +74,8 @@ To associate a port classification to the logical switch, use the following proc
 2.	Select and hold the selected logical switch to view its **Properties**.
 3.	Select Virtual Ports , select **Add** to open the **Add Virtual Port** page.
 ![Screenshot of classification for virtual port.](media/port-classification-for-virtaul-port.png)
-4.	**Browse** to select the port classification (as an example: **TenantA Workload**) and select **OK**.
-5.	Select the **Include the Hyper-V virtual network adapter port profile** option and select **Browse**. Select the vNIC port profile, (as an example, **TenantA**  that you created in the previous procedure). Select **OK**.
+4.	**Browse** to select the port classification (as an example, **TenantA Workload**) and select **OK**.
+5.	Select the **Include the Hyper-V virtual network adapter port profile** option and select **Browse**. Select the vNIC port profile (as an example, **TenantA**  that you created in the previous procedure). Select **OK**.
 
     ![Screenshot of virtual port.](media/configure-virtual-port.png)
 6. Repeat the above steps to add the port classifications required for this logical switch.
