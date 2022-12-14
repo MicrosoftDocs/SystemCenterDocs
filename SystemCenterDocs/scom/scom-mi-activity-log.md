@@ -47,7 +47,7 @@ If any changes are associated with the event, you'll see a list of changes that 
 
 :::image type="SCOM Managed Instance (preview) tags" source="media/scom-mi-activity-log/scom-mi-tags.png" alt-text="Screenshot showing SCOM Managed Instance (preview) tags."::: 
 
-### Feedback
+**Feedback**
 
 Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
 

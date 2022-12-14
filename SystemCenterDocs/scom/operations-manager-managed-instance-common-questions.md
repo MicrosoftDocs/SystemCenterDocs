@@ -145,6 +145,6 @@ Since this preview requires you to create the SCOM Managed Instance (preview) in
 > [!div class="nextstepaction"]
 > [SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
 
-### Feedback
+**Feedback**
 
 Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
