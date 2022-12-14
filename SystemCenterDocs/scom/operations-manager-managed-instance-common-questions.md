@@ -88,7 +88,7 @@ Below is the high-level view of how the classic subscription administrator roles
 
 ### What is a Global Administrator role?
 
-Users with the Global administrator role have access to all administrative features in Azure Active Directory, and services that use Azure Active Directory identities such as:
+Users with the Global administrator role have access to all administrative features in Azure Active Directory and services that use Azure Active Directory identities, such as:
    - Microsoft 365 Defender portal
    - Compliance portal
    - Exchange Online
@@ -127,8 +127,8 @@ SCOM Managed Instance (preview) and System Center Operations Manager share the s
 
 ### How is SCOM Managed Instance (preview) different from running System Center Operations Manager in Azure VMs?
 
-- SCOM Managed Instance (preview) is native to Azure while running System Center Operations Manager in Azure VMs isn't a native solution. This means, SCOM Managed Instance (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to SCOM Managed Instance (preview).
-- In terms of ease of deployment, SCOM Managed Instance (preview) is easy to deploy while running VMs in Azure takes possibly months of effort (and requires in depth technical knowledge).
+- SCOM Managed Instance (preview) is native to Azure, while running System Center Operations Manager in Azure VMs isn't a native solution. This means, SCOM Managed Instance (preview) will integrate smoothly with Azure and all of Azure’s updates will be available to SCOM Managed Instance (preview).
+- In terms of ease of deployment, SCOM Managed Instance (preview) is easy to deploy, while running VMs in Azure takes possibly months of effort (and requires in-depth technical knowledge).
 - SCOM Managed Instance (preview) uses SQL MI as the backend for database management by default.
 - SCOM Managed Instance (preview) comes with built-in scaling, patching features, and integrated reports.
 

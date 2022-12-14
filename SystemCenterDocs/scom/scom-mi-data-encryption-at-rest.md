@@ -23,17 +23,17 @@ This article discusses the SCOM Managed Instance (preview) components protecting
 
 ## SCOM Managed Instance (preview) components for Azure Encryption at Rest 
 
-The goal of encryption at rest is that data that is persisted on disk, is encrypted with a secret encryption key. To achieve that goal, secure key creation, storage, access control, and management of the encryption keys must be provided.   
+The goal of encryption at rest is that data that is persisted on disk is encrypted with a secret encryption key. To achieve that goal, secure key creation, storage, access control, and management of the encryption keys must be provided.   
 
-SCOM Managed Instance (preview) service doesn't store any customer details. SCOM Managed Instance (preview) uses different persistence storage such as Key vault, Storage account, and Cosmos Database to store service meta-data. 
+SCOM Managed Instance (preview) service doesn't store any customer details. SCOM Managed Instance (preview) uses different persistence storage such as Key vault, Storage account, and Cosmos Database to store service metadata. 
 
 ### Azure Key Vault 
 
-The storage location of the encryption keys and access control to those keys is central to an Encryption at Rest model. The keys need to be highly secured but manageable by specified users and available to specific services. SCOM Managed Instance (preview) uses Azure Key Vault to store service configurations, certificates, and secrets. SCOM Managed Instance (preview) uses the Encryption at Rest capability of Azure Key Vault.
+The storage location of the encryption keys and access control to those keys is central to an Encryption at Rest model. The keys need to be highly secure but manageable by specified users and available to specific services. SCOM Managed Instance (preview) uses Azure Key Vault to store service configurations, certificates, and secrets. SCOM Managed Instance (preview) uses the Encryption at Rest capability of Azure Key Vault.
 
 ### Azure Storage account 
 
-SCOM Managed Instance (preview) uses a storage account to hold service configurations, scripts, and System Center Operations Manager runtime bits. It's also used to exchange messages (actions on SCOM Managed Instance (preview)) between System Center Operations Manager RP web service and the worker role service. SCOM Managed Instance (preview) meta-data that is stored in Azure storage blob/Queue uses 256-bit AES encryption. 
+SCOM Managed Instance (preview) uses a storage account to hold service configurations, scripts, and System Center Operations Manager runtime bits. It's also used to exchange messages (actions on SCOM Managed Instance (preview)) between System Center Operations Manager RP web service and the worker role service. SCOM Managed Instance (preview) metadata that is stored in Azure storage blob/Queue uses 256-bit AES encryption. 
 
 ## Cosmos database 
 
