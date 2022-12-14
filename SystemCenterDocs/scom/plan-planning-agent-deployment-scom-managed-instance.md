@@ -46,6 +46,8 @@ SCOM Managed Instance (preview) agents can be installed by using manual installa
 >[!NOTE]
 >You cannot install MMA on a computer where SCOM Managed Instance (preview), Operations Manager management server, gateway server, operations console, operational database, web console, System Center Essentials, or System Center Service Manager is installed - as they have their built-in version of MMA installed.
 
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
+
 ## Next steps
 
 [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)

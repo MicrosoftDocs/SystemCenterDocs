@@ -74,3 +74,5 @@ Store the domain account you create in the Active Directory in a Key vault accou
 ## Set the Active Directory Admin value in the SQL Managed Instance
 
 [Set the Active Directory Admin value](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#set-the-active-directory-admin-value-in-the-sql-mi&preserve-view=true) in the SQL Managed Instance.
+
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).

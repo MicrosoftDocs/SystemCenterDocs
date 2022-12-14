@@ -140,6 +140,8 @@ Being in the same private network so that the IPs assigned to each component in 
 
 Since this preview requires you to create the SCOM Managed Instance (preview) in your subscription, all the SCOM Managed Instance (preview) resources (including the VMs) will be visible to you. However, we recommend not to do any actions on the VMs and other resources while you're operating SCOM Managed Instance (preview) to avoid unforeseen complexities.
 
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
+
 ## Next steps
 
 > [!div class="nextstepaction"]

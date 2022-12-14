@@ -46,3 +46,5 @@ You can view the change history of an event and get the details of changes occur
 If any changes are associated with the event, you'll see a list of changes that you can select. To view details, select a change. The  **Change history** page opens and displays the changes to the resource. In the following example, you can see that the SCOM Managed Instance (preview) tags and provision state changes. 
 
 :::image type="SCOM Managed Instance (preview) tags" source="media/scom-mi-activity-log/scom-mi-tags.png" alt-text="Screenshot showing SCOM Managed Instance (preview) tags."::: 
+
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).

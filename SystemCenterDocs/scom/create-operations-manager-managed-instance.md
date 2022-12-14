@@ -333,6 +333,8 @@ To create a SCOM Managed Instance (preview), follow these steps:
 1. After the deployment is completed, select **Go to resource**. 
      On the instance page, you can view some of the essential details and instructions to post-deployment steps/raise bugs appear.
 
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
+
 ## Next steps
 
 - [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)

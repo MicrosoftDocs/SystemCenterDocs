@@ -43,6 +43,8 @@ It takes 30 mins to 1 hour to successfully update the instance.
 
  :::image type="Instance updated" source="media/patch-scom-managed-instance/instance-updated.png" alt-text="Screenshot of Instance updated.":::
 
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
+
 ## Next steps
 
 [Connect the Azure Monitor SCOM Managed Instance (preview) to Ops console](connect-managed-instance-ops-console.md)
