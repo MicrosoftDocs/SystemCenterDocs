@@ -5,7 +5,7 @@ description: This article describes how to create an Azure Monitor SCOM Managed 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 12/09/2022
+ms.date: 12/14/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -335,4 +335,5 @@ To create a SCOM Managed Instance (preview), follow these steps:
 
 ## Next steps
 
-[Scale SCOM Managed Instance (preview)](scale-scom-managed-instance.md)
+- [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
+- [Scale SCOM Managed Instance (preview)](scale-scom-managed-instance.md)

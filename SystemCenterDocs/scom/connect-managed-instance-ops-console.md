@@ -5,7 +5,7 @@ description: This article describes how to connect the Azure Monitor SCOM Manage
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 12/09/2022
+ms.date: 12/14/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -48,4 +48,4 @@ Follow the below steps to connect a SCOM Managed Instance (preview) to Ops conso
 
 ## Next step
 
-[SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
+[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)

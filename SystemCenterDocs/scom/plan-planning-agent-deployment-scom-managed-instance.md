@@ -5,7 +5,7 @@ description: This article provides design guidance for agent deployment on Windo
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 12/09/2022
+ms.date: 12/14/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -45,3 +45,7 @@ SCOM Managed Instance (preview) agents may be installed by using manual installa
 
 >[!NOTE]
 >You cannot install MMA on a computer, where SCOM Managed Instance (preview), Operations Manager management server, gateway server, operations console, operational database, web console, System Center Essentials or System Center Service Manager is installed - as they have their built-in version of MMA installed.
+
+## Next steps
+
+[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
