@@ -54,14 +54,14 @@ Ensure the following:
 
 Use the following procedure:
 
-1. In VMM console, click **VMs and Services** > **VM Networks**. Right-click the selected VM network for which you want to create the NAT connection, and select **Properties**.
-2. Click **Connectivity** on the wizard page displayed.
+1. In the VMM console, select **VMs and Services** > **VM Networks**. Select and hold the selected VM network for which you want to create the NAT connection and select **Properties**.
+2. Select **Connectivity** on the wizard page displayed.
 
-3. In **Connectivity**, select **Connect directly to an additional logical network** and select **Network address translation (NAT)** under this option.   
+3. In **Connectivity**, select **Connect directly to an additional logical network** and select **Network address translation (NAT)** under this option.
 
-    ![nat connection](media/sdn-nat/create-connection-directly.png)
+    ![Screenshot of nat connection.](media/sdn-nat/create-connection-directly.png)
 
-4. In the **IP address pool**, choose the IP pool from which the VIP should come from. In IP address, choose an IP address from the pool selected. Click **OK**.
+4. In the **IP address pool**, choose the IP pool from which the VIP should come from. In IP address, choose an IP address from the pool selected. Select **OK**.
 ::: moniker range=">=sc-vmm-2019"
 5. To enable IPv6, select an IPv6 address pool and provide an IPv6 address.
 ::: moniker-end
@@ -102,11 +102,11 @@ Add-SCNATRule -Name "NATIPv4" -Protocol "TCP" -InternalIPAddress <IP From IPv4 s
 
 Use the following procedure to add rules to a NAT connection:
 
-1.	In VMM console, click **VMs and Services** > **VM Networks**. Right-click the selected VM network and select **Properties**.
-2.	Click **Network Address Translation** on the wizard.
+1.	In the VMM console, select **VMs and Services** > **VM Networks**. Select and hold the selected VM network and select **Properties**.
+2.	Select **Network Address Translation** on the wizard.
 
-    ![nat rules](media/sdn-nat/nat-rules.png)
-3.	Under **Specify network address translation (NAT) rules**, click **Add**.
+    ![Screenshot of nat rules.](media/sdn-nat/nat-rules.png)
+3.	Under **Specify network address translation (NAT) rules**, select **Add**.
 Type the following details as appropriate:
 
     - **Name** – Name for the inbound NAT rule.
@@ -114,7 +114,7 @@ Type the following details as appropriate:
     -	**Incoming Port** – Port number that you want to use along with the VIP to access the VM.
     -	**Destination IP** – IP address of the VM to which you want to direct the external traffic.
     -	**Destination Port** – Port number on the VM, the external traffic should be forwarded to.
-4.	Click **OK**.
+4.	Select **OK**.
 
 >[!NOTE]
 > Multiple NAT rules can be created to forward the traffic to multiple VMs that are part of the VM network.
@@ -122,11 +122,11 @@ Type the following details as appropriate:
 ## Remove a NAT rule
 Use the following procedure:
 
-1.	In VMM console, click **VMs and Services** > **VM Networks**. Right-click the selected VM network and select **Properties**.
-2.	Click **Network Address Translation** on the wizard.
-3. Select the NAT rule that you want to remove, Click **Remove** and then click **OK**.
+1.	In the VMM console, select **VMs and Services** > **VM Networks**. Select and hold the selected VM network and select **Properties**.
+2.	Select **Network Address Translation** on the wizard.
+3. Select the NAT rule that you want to remove, select **Remove**, and then select **OK**.
 
 ## Remove a NAT connection
-1.	In VMM console, click **VMs and Services** > **VM Networks**. Right-click the selected VM network and select **Properties**.
-2. Click **Connectivity** on the wizard.
-3. Clear the option **Connect directly to an additional logical network** and click **OK**.
+1.	In the VMM console, select **VMs and Services** > **VM Networks**. Select and hold the selected VM network and select **Properties**.
+2. Select **Connectivity** on the wizard.
+3. Clear the option **Connect directly to an additional logical network** and select **OK**.
