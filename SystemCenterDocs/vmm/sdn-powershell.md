@@ -67,9 +67,9 @@ Here's what you need to do to set up SDN components in VMM with PowerShell.
 8. [Set up a certificate](sdn-controller.md#set-up-the-security-certificates). You need an SSL certificate for HTTPS communications between VMM and the network controller.
 9. [Download](https://github.com/manishmsft/SDN/tree/master/VMM/VMM%20SDN%20Express) and run the SDN scripts. There are three scripts:
 
-    - **VMMExpress.ps1**: This script deploys the SDN stack. After you download it, you can add your own customizations.
-    - **Fabricconfig.psd1**: This file accepts all the inputs for setting up SDN.
-    - **Fabricconfig_Example.psd1**: A sample file that contains dummy parameters. You can replace those with your own parameters.
+   - **VMMExpress.ps1**: This script deploys the SDN stack. After you download it, you can add your own customizations.
+   - **Fabricconfig.psd1**: This file accepts all the inputs for setting up SDN.
+   - **Fabricconfig_Example.psd1**: A sample file that contains dummy parameters. You can replace those with your own parameters.
 
 ## Next steps
 

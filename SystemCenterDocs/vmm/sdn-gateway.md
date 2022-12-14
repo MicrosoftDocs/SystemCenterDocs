@@ -179,8 +179,8 @@ Both the templates have a default count of three virtual machines, which can be 
 > [!NOTE]
 > The library resources were imported during the network controller deployment.
 
-    - **WinServer.vhdx**: Select the virtual hard drive image that you prepared and imported earlier during the network controller deployment.
-    - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
+   - **WinServer.vhdx**: Select the virtual hard drive image that you prepared and imported earlier during the network controller deployment.
+   - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
 
 4. On the **Summary** page, review the details and select **Import**.
 
