@@ -20,7 +20,7 @@ Azure Monitor SCOM Managed Instance (preview) offers a convenient patching exper
 Below are the key highlights:
 
 - No update rollup in SCOM Managed Instance (preview). A patch will be released as and when there are significant fixes and updates made to the product. They'll be released at a frequency of as often as two weeks or two months.
-- Patching is quick and convenient and happens at a click of a button.
+- Patching is quick and convenient and happens at the click of a button.
 - All newer patches are backward compatible with the older versions. 
 
 This article provides information on how to patch your SCOM Managed Instance (preview).
@@ -46,3 +46,7 @@ It takes 30 mins to 1 hour to successfully update the instance.
 ## Next steps
 
 [Connect the Azure Monitor SCOM Managed Instance (preview) to Ops console](connect-managed-instance-ops-console.md)
+
+**Feedback**
+
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
