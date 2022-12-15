@@ -51,7 +51,7 @@ Ensure the following prerequisites are met:
 
 1. Create a certificate and then place the certificate in the local certificate store of all the hosts where you plan to place the tenant VMs for this validation.
 
-2. You can either create a self-signed certificate or get a certificate from a CA. For information on how to generate a self-signed certificate and place them in the appropriate locations of each host you'll be using, [see](/windows-server/networking/sdn/vnet-encryption/sdn-config-vnet-encryption#step-1-create-the-encryption-certificate).
+2. You can either create a self-signed certificate or get a certificate from a CA. For information on how to generate self-signed certificates and place them in the appropriate locations of each host you'll be using, see [Configure Encryption for a Virtual Subnet](/windows-server/networking/sdn/vnet-encryption/sdn-config-vnet-encryption#step-1-create-the-encryption-certificate).
 
     > [!NOTE]
     > Make a note of the "Thumbprint" of the certificate that you generate.
