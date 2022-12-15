@@ -21,7 +21,7 @@ ms.technology: virtual-machine-manager
 
 This article describes how to set up a Software Defined Networking (SDN) RAS gateway in the System Center - Virtual Machine Manager (VMM) fabric.
 
-An SDN RAS gateway is a data path element in SDN that enables site-to-site connectivity between two autonomous systems. Specifically, a RAS gateway enables site-to-site connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding. [Learn more](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
+An SDN RAS gateway is a data path element in SDN that enables site-to-site connectivity between two autonomous systems. Specifically, a RAS gateway enables site-to-site connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE), or Layer 3 Forwarding. [Learn more](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
 ::: moniker range="sc-vmm-2022"
 
@@ -40,7 +40,7 @@ An SDN RAS gateway is a data path element in SDN that enables site-to-site conne
 
 Ensure the following before you start:
 
-- **Planning**: Read about planning a software defined network, and review the planning topology in [this](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
+- **Planning**: Read about planning a software defined network, and review the planning topology in [this](/windows-server/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM) and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You should deploy the network controller before you deploy the RAS gateway.
 - **SLB**: To ensure that dependencies are handled correctly, you should also deploy the SLB before setting up the gateway. If an SLB and a gateway are configured, you can use and validate an IPsec connection.
 - **Service template**: VMM uses a service template to automate GW deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
@@ -50,10 +50,10 @@ Ensure the following before you start:
 To set up a RAS gateway, do the following:
 
 1. **Download the service template**: Download the service template that you need to deploy the GW.
-2. **Create the VIP logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to define VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
+2. **Create the VIP logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs and to assign VIPs to GRE endpoints. The network exists to define VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
 
 > [!NOTE]
->To enable dual stack support, while creating GRE VIP logical network, add IPv6 subnet to the network site and create IPv6 address pool. (applicable for 2022 and later)
+> To enable dual stack support, while creating GRE VIP logical network, add IPv6 subnet to the network site and create IPv6 address pool. (applicable for 2022 and later)
 
 3. **Import the service template**: Import the RAS gateway service template.
 4. **Deploy the gateway**: Deploy a gateway service instance, and configure its properties.
@@ -68,20 +68,20 @@ To set up a RAS gateway, do the following:
 The download contains Two templates:
 
 - The EdgeServiceTemplate_Generation 1 VM.xml template is for deploying the GW Service on generation 1 virtual machines.
-- The EdgeServiceTemplate_Generation 2 VM.xml is for deploying the GW Service on Generation 2 virtual machines.
+- The EdgeServiceTemplate_Generation 2 VM.xml is for deploying the GW Service on generation 2 virtual machines.
 
-Both the templates have a default count of three virtual machines which can be changed in the service template designer.
+Both the templates have a default count of three virtual machines, which can be changed in the service template designer.
 
 ## Create the GRE VIP logical network
 
-1. In the VMM console, run the Create Logical Network Wizard. Type a **Name**, optionally provide a description, and  click **Next**.
+1. In the VMM console, run the Create Logical Network Wizard. Type a **Name**, optionally provide a description, and  select **Next**.
 ::: moniker range="sc-vmm-2019"
-2. In **Settings**, select **One Connected Network**. Optionally you can select **Create a VM network with the same name**. This setting allows VMs to access this logical network directly. Select **Managed by the Network Controller**, and click **Next**.
-- For VMM 2019 UR1 and later, in **Settings**, select **Connected Network**, and select **Managed by the Network Controller**, and click **Next**.
+2. In **Settings**, select **One Connected Network**. Optionally, you can select **Create a VM network with the same name**. This setting allows VMs to access this logical network directly. Select **Managed by the Network Controller**, and select **Next**.
+- For VMM 2019 UR1 and later, in **Settings**, select **Connected Network**, select **Managed by the Network Controller**, and then select **Next**.
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
-2. In **Settings**, select **Connected Network**. and select **Managed by the Network Controller**, and click **Next**.
+2. In **Settings**, select **Connected Network**, select **Managed by the Network Controller**, and then select **Next**.
 ::: moniker-end
 
 3. In **Network Site**, specify the settings:
@@ -135,51 +135,54 @@ Both the templates have a default count of three virtual machines which can be c
 ::: moniker range="sc-vmm-2019"
 
 >[!NOTE]
-> From VMM 2019 UR1 and later, you can create IP address pool using **Create Logical Network** wizard.
+> From VMM 2019 UR1 and later, you can create IP address pool using the **Create Logical Network** wizard.
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
 
 >[!NOTE]
-> You can create IP address pool using **Create Logical Network** wizard.
+> You can create an IP address pool using the **Create Logical Network** wizard.
 
 ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2019"
 
-1. Right-click the GRE VIP logical network > **Create IP Pool**.
-2. Type a **Name** and optional description for the pool, and check that the VIP network is selected. Click **Next**.
-3. Accept the default network site and click **Next**.
+1. Select and hold the GRE VIP logical network > **Create IP Pool**.
+2. Type a **Name** and optional description for the pool, and check that the VIP network is selected. Select **Next**.
+3. Accept the default network site and select **Next**.
 ::: moniker-end
 
 ::: moniker range="<sc-vmm-2019"
 4. Choose a starting and ending IP address for your range.  Start the range on the second address of your available subnet. For example, if your available subnet is from .1 to .254, start the range at .2.
 5. In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
-6. You don't need to provide gateway, DNS or WINS information as this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens.
+6. You don't need to provide gateway, DNS, or WINS information as this pool is used to allocate IP addresses for VIPs through the network controller only. Select **Next** to skip these screens.
 7. In **Summary**, review the settings and finish the wizard.
 ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2019"
 
 4. If you had created IPv6 subnet, create a separate IPv6 GRE VIP address pool.
-5. Choose a starting and ending IP address for your range.  Start the range on the second address of your available subnet. For example, if your available subnet is from .1 to .254, start the range at .2. For specifying VIP range, don’t use the shortened form of IPv6 address; Use *2001:db8:0:200:0:0:0:7* format instead of *2001:db8:0:200::7*
+5. Choose a starting and ending IP address for your range. Start the range on the second address of your available subnet. For example, if your available subnet is from .1 to .254, start the range at .2. For specifying VIP range, don’t use the shortened form of IPv6 address; Use the *2001:db8:0:200:0:0:0:7* format instead of *2001:db8:0:200::7*.
 6. In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
-7. You don't need to provide gateway, DNS or WINS information as this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens.
+7. You don't need to provide gateway, DNS, or WINS information as this pool is used to allocate IP addresses for VIPs through the network controller only. Select **Next** to skip these screens.
 8. In **Summary**, review the settings and finish the wizard.
 
 ::: moniker-end
 
 ## Import the service template
 
-1. Click **Library** > **Import Template**.
+1. Select **Library** > **Import Template**.
 2. Browse to your service template folder. As an example,  select the **EdgeServiceTemplate Generation 2.xml** file.
-3. Update the parameters for your environment as you import the service template. Note that the library resources were imported during network controller deployment.
+3. Update the parameters for your environment as you import the service template. 
 
-    - **WinServer.vhdx**: Select the virtual hard drive image that you prepared and imported earlier, during the network controller deployment.
-    - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
+> [!NOTE]
+> The library resources were imported during the network controller deployment.
 
-4. On the **Summary** page, review the details and click **Import**.
+   - **WinServer.vhdx**: Select the virtual hard drive image that you prepared and imported earlier during the network controller deployment.
+   - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
+
+4. On the **Summary** page, review the details and select **Import**.
 
     > [!NOTE]
     > You can customize the service template. [Learn more](sdn-controller.md#customize-the-template).
@@ -188,18 +191,18 @@ Both the templates have a default count of three virtual machines which can be c
 
 ::: moniker range="sc-vmm-2022"
 
-To enable IPv6, while onboarding Gateway service, select **Enable IPv6** checkbox and select the IPv6 GRE VIP subnet that you have created previously. Also, select public IPv6 pool and provide the public IPv6 address.
+To enable IPv6, while onboarding Gateway service, select **Enable IPv6** checkbox and select the IPv6 GRE VIP subnet that you've created previously. Also, select public IPv6 pool and provide the public IPv6 address.
 
  ::: moniker-end
 
 This example uses the generation 2 template.
 
-1. Select the **EdgeServiceTemplate Generation2.xml** service template, and click **Configure Deployment**.
-2. Type a **Name** and choose a destination for the service instance. The destination must map to a host group that contains the hosts configured previously for gateway deployment.
+1. Select the **EdgeServiceTemplate Generation2.xml** service template, and select **Configure Deployment**.
+2. Type a **Name**, and choose a destination for the service instance. The destination must map to a host group that contains the hosts configured previously for gateway deployment.
 3. In **Network Settings**, map the management network to the management VM network.
 
     > [!NOTE]
-    > The **Deploy Service** dialog appears after mapping is complete. It's normal for the VM instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the VM.
+    > The **Deploy Service** dialog appears after the mapping is complete. It's normal for the VM instances to be initially Red. Select **Refresh Preview** to automatically find suitable hosts for the VM.
 
 4. On the left of the **Configure Deployment** window, configure the following settings:
 
@@ -208,15 +211,15 @@ This example uses the generation 2 template.
     - **Management Account**. Required. Select a Run as account with permissions to add the gateway to the Active Directory domain associated with the network controller. This can be the same account used for MgmtDomainAccount while deploying the network controller.
     - **FQDN**. Required. FQDN for the Active directory domain for the gateway.
 
-5. Click **Deploy Service** to begin the service deployment job.
+5. Select **Deploy Service** to begin the service deployment job.
 
     > [!NOTE]
     >
     > - Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. If gateway deployment fails, delete the failed service instance in **All Hosts** > **Services** before you retry the deployment.
     >
-    > - If you aren't using a volume licensed VHDX (or the product key isn't supplied using an answer file), then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
+    > - If you aren't using a volume licensed VHDX (or the product key isn't supplied using an answer file), then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key or skip it.
     >
-    > - If you want to scale-in or scale-out a deployed SLB instance, read this [blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
+    > - If you want to scale in or scale out a deployed SLB instance, read this [blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
 
 ## Gateway limits
 The following are the default limits for NC managed gateway:
@@ -235,8 +238,8 @@ To override the default limits, append the override string to the network contro
 
 - **MaxVMNetworksSupported**= followed by the number of VM networks that can be used with this gateway.
 - **MaxVPNConnectionsPerVMNetwork**= followed by the number of VPN Connections that can be created per VM network with this gateway.
-- **MaxVMSubnetsSupported**= followed by the number of VM network subnets  that can be used with this gateway.
-- **MaxVPNConnectionsSupported**= followed by the number of VPN Connections  that can be used with this gateway.
+- **MaxVMSubnetsSupported**= followed by the number of VM network subnets that can be used with this gateway.
+- **MaxVPNConnectionsSupported**= followed by the number of VPN Connections that can be used with this gateway.
 
 **Example**:
 
@@ -246,11 +249,11 @@ To override the maximum number of VM networks that can be used with the gateway 
 
 ## Configure the gateway manager role
 
-Now that the gateway service is deployed, you can configure the properties, and associate it with the network controller service.
+Now that the gateway service is deployed, you can configure the properties and associate it with the network controller service.
 
-1. Click **Fabric** > **Network Service** to display the list of network services installed. Right-click the network controller service > **Properties**.
-2. Click the **Services** tab, and select the **Gateway Manager Role**.
-3. Find the **Associated Service** field under **Service information**, and click **Browse**. Select the gateway service instance you created earlier, and click **OK**.
+1. Select **Fabric** > **Network Service** to display the list of network services installed. Select and hold the network controller service > **Properties**.
+2. Select the **Services** tab, and select the **Gateway Manager Role**.
+3. Find the **Associated Service** field under **Service information**, and select **Browse**. Select the gateway service instance you created earlier, and select **OK**.
 4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines.
 
    > [!NOTE]
@@ -262,9 +265,9 @@ Now that the gateway service is deployed, you can configure the properties, and 
 ::: moniker-end
 ::: moniker range=">=sc-vmm-2019"
 6. To enable IPv4 support, in **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
-7. To enable IPv6 support, from **Network Controller Properties** > **Services**, select **Enable IPv6** checkbox, select the IPv6 GRE VIP subnet that you have created previously, and input the public IPv6 pool and public IPv6 address respectively. Also, select IPv6 frontend subnet that will be assigned to Gateway VMs.
+7. To enable IPv6 support, from **Network Controller Properties** > **Services**, select **Enable IPv6** checkbox, select the IPv6 GRE VIP subnet that you've created previously, and input the public IPv6 pool and public IPv6 address, respectively. Also, select IPv6 frontend subnet that will be assigned to Gateway VMs.
 
-    ![IPv6 enable](media/sdn-gateway/configure-gateway-manager-role.png)
+    ![Screenshot of IPv6 enable.](media/sdn-gateway/configure-gateway-manager-role.png)
 
 8. In **Gateway Capacity**, configure the capacity settings.
 
@@ -273,15 +276,15 @@ Now that the gateway service is deployed, you can configure the properties, and 
     IPsec tunnel bandwidth is limited to (3/20) of the gateway capacity. Which means, if the gateway capacity is set to 1000 Mbps, the equivalent IPsec tunnel capacity would be limited to 150 Mbps.
 
     > [!NOTE]
-    > The bandwidth limit is the total value of  inbound bandwidth and outbound bandwidth.
+    > The bandwidth limit is the total value of inbound bandwidth and outbound bandwidth.
 
-    The equivalent ratios for GRE, and L3 tunnels are 1/5 and 1/2 respectively.
+    The equivalent ratios for GRE, and L3 tunnels are 1/5 and 1/2, respectively.
 
-9. Configure the number of reserved nodes for back-up in **Nodes for reserved for failures field**.
-10. To configure individual gateway VMs, click each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
+9. Configure the number of reserved nodes for backup in **Nodes for reserved for failures field**.
+10. To configure individual gateway VMs, select each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
 
    > [!NOTE]
-   > You must configure the gateway BGP peers, if you plan to use GRE connections.
+   > You must configure the gateway BGP peers if you plan to use GRE connections.
 
 The service instance you deployed is now associated with the gateway Manager role. You should see the gateway VM instance listed under it.
 ::: moniker-end
@@ -293,34 +296,34 @@ The service instance you deployed is now associated with the gateway Manager rol
     IPsec tunnel bandwidth is limited to (3/20) of the gateway capacity. Which means, if the gateway capacity is set to 1000 Mbps, the equivalent IPsec tunnel capacity would be limited to 150 Mbps.
 
     > [!NOTE]
-    > The bandwidth limit is the total value of  inbound bandwidth and outbound bandwidth.
+    > The bandwidth limit is the total value of inbound bandwidth and outbound bandwidth.
 
-    The equivalent ratios For GRE, and L3 tunnels are 1/5 and 1/2 respectively.
+    The equivalent ratios for GRE and L3 tunnels are 1/5 and 1/2, respectively.
 
-8. Configure the number of reserved nodes for back-up in **Nodes for reserved for failures field**.
-9. To configure individual gateway VMs, click each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
+8. Configure the number of reserved nodes for backup in **Nodes for reserved for failures field**.
+9. To configure individual gateway VMs, select each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
 
 ::: moniker-end
 
    > [!NOTE]
-   > You must configure the gateway BGP peers, if you plan to use GRE connections.
+   > You must configure the gateway BGP peers if you plan to use GRE connections.
 
 The service instance you deployed is now associated with the gateway Manager role. You should see the gateway VM instance listed under it.
 
 ## Validate the deployment
 
 After you deploy the gateway, you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
-For additional information, see the following contents:
+For more information, see the following contents:
 
 - [Create and validate site-to-site IPSec connections](sdn-route-network-traffic.md#configure-ipsec-connection)
 - [Create and validate site-to-site GRE connections](sdn-route-network-traffic.md#configure-gre-tunneling)
 - [Create and validate L3 connections](sdn-route-network-traffic.md)
 
-For more information on connection types, see [this](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn) article.
+For more information on connection types, see [this](/windows-server/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
 
 ## Set up the traffic selector from PowerShell
-Here is the procedure to setup the traffic selector by using the VMM PowerShell.
+Here's the procedure to set up the traffic selector by using the VMM PowerShell.
 
 1. Create the traffic selector by using the following parameters.
 

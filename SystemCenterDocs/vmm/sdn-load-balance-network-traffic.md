@@ -43,7 +43,7 @@ This article provides information about how to configure the load balancing of w
 ## Before you start
 
 Ensure the following:
--  [SDN network controller](sdn-controller.md)  and the SDN [software load balancer](sdn-slb.md) are deployed.
+-  [SDN network controller](sdn-controller.md) and the SDN [software load balancer](sdn-slb.md) are deployed.
 
 - Required VMs are created on appropriate networks and are identified for load balancing.
 
@@ -51,32 +51,32 @@ Ensure the following:
 
 Use the following procedures to configure the VIPs to load balance the workload VMs (DIPs).
 
-1. In VMM console, click **Fabric** > **VIP Templates**. Right-click and select **Create VIP Template**.
+1. In the VMM console, select **Fabric** > **VIP Templates**. Right-click and select **Create VIP Template**.
 
-    ![VIP template name](media/sdn-load-balance-network-traffic/lb-template-name-image1.png)
+    ![Screenshot of VIP template name.](media/sdn-load-balance-network-traffic/lb-template-name-image1.png)
 
-2. In the **Name** page, provide the name and optional description. Specify the **Virtual IP Port** that will be used as front end port for the network traffic. In the **Backend port**, specify the port on which the backend workloads are hosted. Click **Next**.
+2. In the **Name** page, provide the name and optional description. Specify the **Virtual IP Port** that will be used as front-end port for the network traffic. In the **Backend port**, specify the port on which the back-end workloads are hosted. Select **Next**.
 
-    ![VIP template type](media/sdn-load-balance-network-traffic/lb-template-type-image2.png)
-3. In **Specify a Template type**, select Specific. In **Manufacturer**, select Microsoft.  In **Model**, select Microsoft Network Controller.  Click **Next**.
+    ![Screenshot of VIP template type.](media/sdn-load-balance-network-traffic/lb-template-type-image2.png)
+3. In **Specify a Template type**, select Specific. In **Manufacturer**, select Microsoft.  In **Model**, select Microsoft Network Controller. Select **Next**.
 
-    ![VIP protocol options](media/sdn-load-balance-network-traffic/lb-protocol-options-image3.png)
-4. In **Specify Protocol options**, select the Custom option and type TCP/UDP in Protocol name. Click **Next**.
+    ![Screenshot of VIP protocol options.](media/sdn-load-balance-network-traffic/lb-protocol-options-image3.png)
+4. In **Specify Protocol options**, select the Custom option and type TCP/UDP in Protocol name. Select **Next**.
 
     > [!NOTE]
-    > SLB supports only layer 4 load balancing of TCP/UDP traffic.  HTTP/ HTTPS protocols are not supported.
+    > SLB supports only layer 4 load balancing of TCP/UDP traffic. HTTP/HTTPS protocols are not supported.
 
-5. For **Persistence** and **Load Balancing**, use the defaults. Click **Next**.
+5. For **Persistence** and **Load Balancing**, use the defaults. Select **Next**.
 
-    ![Health Monitor](media/sdn-load-balance-network-traffic/lb-health-monitor-image4.png)
+    ![Screenshot of Health Monitor.](media/sdn-load-balance-network-traffic/lb-health-monitor-image4.png)
     > [!NOTE]
-    > SLB doesn’t support persistence and different Load balancing methods. By default, SLB uses Round Robin algorithm for load balancing.
+    > SLB doesn’t support persistence and different load balancing methods. By default, SLB uses Round Robin algorithm for load balancing.
 
-6. In **Health Monitors**, optionally, insert appropriate values.  Click **Next**.
+6. In **Health Monitors**, optionally, insert appropriate values. Select **Next**.
 
     Options: TCP and HTTP are supported as health monitor protocols if SLB is used.
 
-7. Verify the settings, and click **Finish**.
+7. Verify the settings, and select **Finish**.
 
 Once the template is created, you can find this under **Fabric** > **VIP Templates**.
 
@@ -100,7 +100,7 @@ The workload VMs can be connected to a **no isolation** network or **network vir
 
 > [!NOTE]
 > - In the script parameters section, substitute the actual values that match your test environment for the samples used in this script.
-> - Ensure you run the script on a VMM server, or on a computer running the VMM console.
+> - Ensure that you run the script on a VMM server or on a computer running the VMM console.
 
 ```powershell
 param(
@@ -185,9 +185,9 @@ This script can be used to create load balancing VIP by passing IPv6 VIP address
 ::: moniker-end
 
 > [!NOTE]
-> - In the Internal load balancing scenario, the VIP comes from the tenant VM network. So, the **$VipNetworkName** is the same tenant VM network name where the VMs are connected. Ensure that the tenant VM network IP pool has the IPs reserved for VIPs. The **$VipAddress** is one of the IP addresses from the reserved VIPs.
+> - In the internal load balancing scenario, the VIP comes from the tenant VM network. So, the **$VipNetworkName** is the same tenant VM network name where the VMs are connected. Ensure that the tenant VM network IP pool has the IPs reserved for VIPs. The **$VipAddress** is one of the IP addresses from the reserved VIPs.
 > - In the script parameters section, substitute the actual values that match your test environment for the samples used in this script.
-> - Ensure you run the script on a VMM server, or on a computer running the VMM console.
+> - Ensure that you run the script on a VMM server or on a computer running the VMM console.
 
 ```powershell
 param(
