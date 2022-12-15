@@ -32,12 +32,12 @@ Here's what you can do:
 
 -   Back up data source with shared disk clusters
 
--   Back up in muliple domains
+-   Back up in multiple domains
 
 -   Back up to tape
 
 ## <a name="GenericDataSource"></a>Registering a new data source
-You'll need to run the Modify-RegisteredWriters command to add, remove or modify the VSS writer ID for a data source to the list that's registered with DPM.
+You'll need to run the Modify-RegisteredWriters command to add, remove, or modify the VSS writer ID for a data source to the list that's registered with DPM.
 
 **Syntax**
 
@@ -51,9 +51,9 @@ Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-Add] [-Writers] \<S
 |-------------|--------|---------------|
 |DPMServerNAme|String|Specifies the DPM server against which this command should run. By default, the command is run against the local DPM server.|
 |List|SwitchParameter|Indicates that the command should display the list of registered writer IDs.|
-|Add|SwitchParameter|Indicates that the command should add the list of writer IDs to the list of the writer IDs that is registered with DPM.|
-|Remove|SwitchParameter|Indicates that the given list of writer IDs must be removed from the list of the writer IDs that is registered with DPM.|
-|Writers|String|Comma-separated list of writer ID.|
+|Add|SwitchParameter|Indicates that the command should add the list of writer IDs to the list of the writer IDs that's registered with DPM.|
+|Remove|SwitchParameter|Indicates that the given list of writer IDs must be removed from the list of the writer IDs that's registered with DPM.|
+|Writers|String|Comma-separated list of writer IDs.|
 
 ## Example 1
 The Modify-RegisteredWriters command displays the list of writers that are currently registered with the local DPM server.

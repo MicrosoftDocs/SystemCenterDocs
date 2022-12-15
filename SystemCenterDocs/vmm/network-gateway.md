@@ -62,7 +62,7 @@ The service template provides a highly available Windows Server Gateway deployme
 
 1. You'll need to download the template from the [Download center](https://download.microsoft.com/download/0/D/1/0D189100-07B7-4CBF-B774-7A3F43960145/Windows%20Server%202012%20R2%20HA%20Gateway.zip).
 
-::: moniker range="sc-vmm-2016"
+::: moniker range="<=sc-vmm-1801"
 > [!NOTE]
 > The templates downloaded are applicable for VMM 2012 R2, 2016 and 1801.
 ::: moniker-end

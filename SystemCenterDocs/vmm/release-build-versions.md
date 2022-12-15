@@ -20,10 +20,10 @@ monikerRange: '>=sc-vmm-2016'
 
 ::: moniker-end
 
-This article describes how to determine your current Microsoft System Center – Virtual Machine Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
+This article describes how to determine your current Microsoft System Center – Virtual Machine Manager version number and the corresponding update rollup (UR). Each update rollup release has a link to a support article describing the UR changes and links to the package downloads.
 
 > [!NOTE]
-> All System Center Virtual Machine Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center – Virtual Machine Manager and never applied an update rollup, you can proceed to install the latest one available.
+> All System Center Virtual Machine Manager update rollups are cumulative. This means, you do not need to apply the URs in order; you can always apply the latest update. If you have deployed System Center – Virtual Machine Manager and never applied an update rollup, you can proceed to install the latest one available.
 
 ::: moniker range="sc-vmm-2019"
 

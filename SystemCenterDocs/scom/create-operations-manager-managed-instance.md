@@ -5,7 +5,7 @@ description: This article describes how to create an Azure Monitor SCOM Managed 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 12/09/2022
+ms.date: 12/14/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -285,26 +285,26 @@ To create a SCOM Managed Instance (preview), follow these steps:
         1. **SCOM Managed Instance name**: Enter the desired SCOM Managed Instance (preview) name.
             >[!Note]    
             >- SCOM Managed Instance (preview) name can have only alphanumeric characters and be up to 10 characters.
-            >- SCOM Managed Instance (preview) is equivalent to System Center Operation Manager Management Group, choose a name accordingly.
-        1. **Region**: Select the region near to you geographically so latency between your agents and the SCOM Managed Instance (preview) is as low as possible. This region must also contain the VNet.
+            >- SCOM Managed Instance (preview) is equivalent to System Center Operation Manager Management Group, so choose a name accordingly.
+        1. **Region**: Select the region near to you geographically so that latency between your agents and the SCOM Managed Instance (preview) is as low as possible. This region must also contain the VNet.
              :::image type="Instance details" source="media/create-operations-manager-managed-instance/instance-details.png" alt-text="Screenshot showing instance details.":::
     1. **Active directory details**: 
         1. **Domain name**: Enter the name of the domain that is being administered by the Domain Controller.
         1. **DNS Server IP**: Enter the IP address of the DNS Server that is providing the IP addresses to the resources in the domain mentioned above.
-        1. **OU Path**: Enter the OU Path to where you want to join the servers. This isn't a necessary field and if left blank, will assume the default value. For example, **OU=testOU,DC=domain,DC=Domain,DC=com**.
+        1. **OU Path**: Enter the OU Path to where you want to join the servers. This isn't a necessary field and if left blank, it will assume the default value. For example, **OU=testOU,DC=domain,DC=Domain,DC=com**.
              :::image type="Active directory details" source="media/create-operations-manager-managed-instance/active-directory-details.png" alt-text="Screenshot showing Active directory details.":::
     1. **Domain account details**: 
         1. **Key vault**: Select the key vault that has the secret username and secret password of the domain account user credentials.
         1. **Username secret**: Enter the secret name for the user under the selected key vault.
         1. **Password secret**: Enter the secret name for password under the selected key vault.
              :::image type="Domain account details" source="media/create-operations-manager-managed-instance/domain-account-details.png" alt-text="Screenshot showing Domain account details.":::
-    1. **Azure Hybrid Benefit**: By default, **No** is selected. Select **Yes** if you're using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview) and it won't apply to existing Windows Servers.
+    1. **Azure Hybrid Benefit**: By default, **No** is selected. Select **Yes** if you're using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview), and it won't apply to existing Windows Servers.
            :::image type="Azure hybrid benefit" source="media/create-operations-manager-managed-instance/azure-hybrid-benefit.png" alt-text="Screenshot showing Azure hybrid benefit.":::
 1. Select **Next**.
 1. Under **Networking**, do the following:
     1. **Virtual network**:
         1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server. 
-        1. **Subnet**: Select a subnet that has at least 32 IP addresses to house all the SCOM Managed Instance (preview) components. The minimum address space is 28. The subnet can have existing resources in it, however, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the instance.
+        1. **Subnet**: Select a subnet that has at least 32 IP addresses to house all the SCOM Managed Instance (preview) components. The minimum address space is 28. The subnet can have existing resources in it; however, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the instance.
            >[!Note]
            >Ensure that you have a NAT Gateway associated with the subnet you choose.
     1. **SCOM managed instance interface**:
@@ -319,7 +319,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
     1. **SQL managed instance**:
         1. **Resource Name**: Select the SQL MI resource name for the instance that you would like to associate with this SCOM Managed Instance (preview). Only the SQL MI instance, which has given permissions to the SCOM Managed Instance (preview) should be used here. For more information, see SQL MI creation and permission.
     1. **User managed Identity**:
-        1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to the SQL MI. Ensure the same MSI has read permissions on the keyvault for domain account credentials.
+        1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to the SQL MI. Ensure the same MSI has read permissions on the key vault for domain account credentials.
 1. Select **Next**.
 1. Under **Tags**, enter the Name, value, and select the Resource.
      
@@ -335,4 +335,9 @@ To create a SCOM Managed Instance (preview), follow these steps:
 
 ## Next steps
 
-[Scale SCOM Managed Instance (preview)](scale-scom-managed-instance.md)
+- [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
+- [Scale SCOM Managed Instance (preview)](scale-scom-managed-instance.md)
+
+**Feedback**
+
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
