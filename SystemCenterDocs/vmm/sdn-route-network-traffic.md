@@ -80,7 +80,7 @@ For specifying VIP range, don’t use the shortened form of the IPv6 address; us
 8.  In **Routes**, type all the remote subnets that you want to connect to. If you've selected **Enable Border Gateway Protocol (BGP)** in the **Connectivity** page, routes aren't required.
 9.  On the **Advanced** tab, accept the default settings.
 10. If you've selected **Enable Border Gateway Protocol (BGP)** in the Connectivity page, then you can fill out your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol** wizard page as shown below:
-![Screenshot of enable bgp.](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
+![Screenshot of enable b g p.](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM network.
 
 ## Configure GRE tunneling
