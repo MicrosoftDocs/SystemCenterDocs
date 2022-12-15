@@ -93,7 +93,7 @@ ms.technology: virtual-machine-manager
 
 7. Update the credential REST resource of type **X509Certificate** retrieved above with the thumbprint of the new certificate.
 
-   Execute these PowerShell cmdlet on any of the NC nodes.
+   Execute this PowerShell cmdlet on any of the NC nodes.
 
    ```powershell
 
@@ -115,7 +115,7 @@ ms.technology: virtual-machine-manager
    $certificate -NetworkService $networkservice
    ```
    - **NetworkService** is the network controller service, **Certificate** is the new NC server certificate.
-   - **ProvisionSelfSignedCertificatesforNetworkService** is **$true** if you are updating to a self-signed certificate.
+   - **ProvisionSelfSignedCertificatesforNetworkService** is **$true** if you're updating to a self-signed certificate.
 
 10. Verify that the connectivity is working fine with the updated certificate.
 

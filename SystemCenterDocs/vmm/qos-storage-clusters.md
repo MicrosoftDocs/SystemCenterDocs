@@ -25,7 +25,7 @@ This article describes how to manage storage quality-of-service (QoS) policies f
 
 
 ## Assign storage QoS policy for clusters
-Windows server 2016 and later allows the deployments to use the storage QoS feature with any VHDs residing on a Cluster Shared Volume (CSV). In VMM 2016, the management of SQoS is limited to VHDs residing on the S2D hyper-converged type clusters and Scale-Out File Servers only (SOFS). Also, the scope of QoS policies is based on the storage arrays, which is not scalable to the scenarios like SAN, where VMM only manages the compute cluster.
+Windows server 2016 and later allows the deployments to use the storage QoS feature with any VHDs residing on a Cluster Shared Volume (CSV). In VMM 2016, the management of SQoS is limited to VHDs residing on the S2D hyper-converged type clusters and Scale-Out File Servers only (SOFS). Also, the scope of QoS policies is based on the storage arrays, which isn't scalable to the scenarios like SAN, where VMM only manages the compute cluster.
 
 ::: moniker range="sc-vmm-1801"
 
@@ -55,7 +55,7 @@ VMM supports QoS on all managed clusters and also SOFS running on Windows Server
 
 1. Select **Fabric** > **Storage** > **QoS Policies** > **Create Storage QoS Policy**.
 2. In the wizard > **General**, specify a policy name.
-3. In **Policy Settings**, specify how the policy should apply. Select **All virtual disk instances share resources** to specify that the policy should be applied to all virtual disks on the file server (pooled, single instance). Select **Resources allocated to each virtual disk instance** to specify that the policy is applied separately to each specified virtual disk (multi instance). Specify the minimum and maximum IOPS. A setting of 0 means that no policy is enforced.
+3. In **Policy Settings**, specify how the policy should apply. Select **All virtual disk instances share resources** to specify that the policy should be applied to all virtual disks on the file server (pooled, single instance). Select **Resources allocated to each virtual disk instance** to specify that the policy is applied separately to each specified virtual disk (multi-instance). Specify the minimum and maximum IOPS. A setting of 0 means that no policy is enforced.
 4. In **Scope**, select the managed cluster under **Clusters** to which you want to apply the policy.
    ![Screenshot of select cluster.](media/storage-sqos-clusters/sqos-clusters.png)
 

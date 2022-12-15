@@ -87,7 +87,7 @@ Use the following refresh procedures to find any such differences between VMM an
 
     ```
 
-3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3. Verify the VMM jobs' log for the result status and follow the recommendations from the log if there're any failures.
 
 ### Refresh logical networks
 1.	Get all the NC-managed logical networks from the VMM server by using the following cmdlet:
@@ -105,7 +105,7 @@ Use the following refresh procedures to find any such differences between VMM an
 
     ```
 
-3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3. Verify the VMM jobs' log for the result status and follow the recommendations from the log if there're any failures.
 
 ### Refresh gateways and load balancer muxes
 1.	Get all the gateways and load balancer muxes by using the following cmdlet:
@@ -130,7 +130,7 @@ Use the following refresh procedures to find any such differences between VMM an
     }
     ```
 
-3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log if there're any failures.
 
 ### Refresh NAT connections and NAT rules
 1.	Get all the NAT connections by using the following cmdlet:
@@ -156,7 +156,7 @@ Use the following refresh procedures to find any such differences between VMM an
     }
     ```
 
-3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log if there're any failures.
 
 ### Refresh all load balancer VIPs
 1.	Get all the load balancer VIPs configured on NC by using the following cmdlet:
@@ -174,7 +174,7 @@ Use the following refresh procedures to find any such differences between VMM an
 
     ```
 
-3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log if there're any failures.
 
 ### Refresh VM Networks
 
@@ -193,7 +193,7 @@ Use the following refresh procedures to find any such differences between VMM an
 
     ```
 
-3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3. Verify the VMM jobs' log for the result status and follow the recommendations from the log if there're any failures.
 
 ### Refresh gateway pools
 
@@ -213,7 +213,7 @@ Use the following refresh procedures to find any such differences between VMM an
         Read-SCFabricRole -FabricRole $fabricRole
     }
     ```
-3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3. Verify the VMM jobs' log for the result status and follow the recommendations from the log if there're any failures.
 
 ### Refresh VM network gateways
 
@@ -238,4 +238,4 @@ Use the following refresh procedures to find any such differences between VMM an
     }
     ```
 
-3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log if there're any failures.

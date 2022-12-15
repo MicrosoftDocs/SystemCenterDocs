@@ -31,8 +31,8 @@ To enable S2D, go to **General Configuration** > **Specify the cluster name and 
 ![Screenshot of S2D enabled](./media/s2d/s2d-enable.png)
 
 After you enable a disaggregated cluster with S2D, VMM does the following:
-1. The File Server role and the Failover Clustering feature is enabled.
-2. Storage replica and data deduplication is enabled.
+1. The File Server role and the Failover Clustering feature are enabled.
+2. Storage replica and data deduplication are enabled.
 3. The cluster is optionally validated and created.
 4. S2D is enabled, and a storage array is created with the same name you provide in the wizard.
 

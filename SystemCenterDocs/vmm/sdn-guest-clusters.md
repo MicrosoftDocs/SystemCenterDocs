@@ -23,7 +23,7 @@ monikerRange: '>sc-vmm-2016'
 
 This article explains about how to configure guest clusters in SDN using the System Center - Virtual machine Manager (VMM).
 
-With the introduction of the network controller, VMs that are connected to the virtual network are only permitted to use the IP address that network controller (NC) assigns for communication. NC does not support floating IP addresses, which are essential for technologies such as Microsoft Failover Clustering to work.
+With the introduction of the network controller, VMs that are connected to the virtual network are only permitted to use the IP address that network controller (NC) assigns for communication. NC doesn't support floating IP addresses, which are essential for technologies such as Microsoft Failover Clustering to work.
 
 ::: moniker range="sc-vmm-1801"
 
@@ -66,7 +66,7 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
    - In **Load Balancing**, select the **Enable Floating IP** Checkbox.
    ![Screenshot of floating IP.](media/sdn-guest-clustering/enable-floating.png)
 
-   - In **Health Monitor**, add the probe that would be used on the guest cluster VMs. Here, you must add the same port which was configured while clustering the hosts in the previous step.
+   - In **Health Monitor**, add the probe that would be used on the guest cluster VMs. Here, you must add the same port that was configured while clustering the hosts in the previous step.
    ![Screenshot of health monitor.](media/sdn-guest-clustering/health-monitors.png)
 
 3. Using PowerShell, create a VIP using the VIP template.

@@ -34,13 +34,13 @@ You can't currently enable S2D in a hyper-converged deployment on a Hyper-V clus
 > [!NOTE]
 > You must enable S2D before adding the storage provider to VMM.
 
-To enable S2D, go to **General Configuration** > **Specify the cluster name and host group** and select the **Enable Storage Spaces Direct** option as shown below:
+To enable S2D, go to **General Configuration** > **Specify the cluster name and host group**, and select the **Enable Storage Spaces Direct** option as shown below:
 
 ![Screenshot of S2D enabled page.](./media/s2d/s2d-enable.png)
 
 After you enable a cluster with S2D, VMM does the following:
-1. The File Server role and the Failover Clustering feature is enabled.
-2. Storage replica and data deduplication is enabled.
+1. The File Server role and the Failover Clustering feature are enabled.
+2. Storage replica and data deduplication are enabled.
 3. The cluster is optionally validated and created.
 4. S2D is enabled, and a storage array is created with the same name you provide in the wizard.
 
@@ -114,7 +114,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 > Configuration of DCB settings is an optional step to achieve high performance during S2D cluster creation workflow. Skip to step 4 if you do not wish to configure DCB settings.
 
 ### Recommendations
-- If you have vNICs deployed, for optimal performance, we recommend you to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually set affinity between vNIC and pNIC by following the steps listed [here](hyper-v-network.md#set-affinity-between-vnics-and-pnics).
+- If you've vNICs deployed, for optimal performance, we recommend you to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually set affinity between vNIC and pNIC by following the steps listed [here](hyper-v-network.md#set-affinity-between-vnics-and-pnics).
 
 
 - When you create a network adapter port profile, we recommend you to allow **IEEE priority**. [Learn more](network-port-profile.md#create-a-virtual-network-adapter-port-profile). You can also set the IEEE Priority by using the following PowerShell commands:
@@ -130,7 +130,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 
 Ensure the following:
 
-1. You are running VMM 2016 or later.
+1. You're running VMM 2016 or later.
 2. Hyper-V hosts in the cluster are running Windows Server 2016 or later with the Hyper-V role installed and configured to host VMs.
 
     >[!NOTE]
