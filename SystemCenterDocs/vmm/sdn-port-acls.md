@@ -24,16 +24,16 @@ In System Center Virtual Machine Manager (VMM), you can centrally configure and 
 - A port ACL is a set of port ACL rules that filter the traffic at layer 2 port level.
 - A port ACL in VMM filters access to a specific VMM network object.
 - Each VMM network object can have only one port ACL attached.
-- An ACL contains rules, and can be attached to any number of VMM network objects. You can create an ACL without rules, and add the rules later.
-- If an ACL has multiple rules, they are applied based on the priority. After a rule matches the criteria and is applied, no other rules are processed.  
+- An ACL contains rules and can be attached to any number of VMM network objects. You can create an ACL without rules, and add the rules later.
+- If an ACL has multiple rules, they're applied based on the priority. After a rule matches the criteria and is applied, no other rules are processed.  
 - SDN Port ACLs can be applied to virtual subnets and virtual network adapters.
 
 > [!NOTE]
->Port ACL settings are exposed only through PowerShell cmdlets in VMM, and can't be configured in the VMM console.  
+> Port ACL settings are exposed only through PowerShell cmdlets in VMM and can't be configured in the VMM console.  
 
-Using VMM PowerShell, you can also configure Hyper-V port ACLs. For more information, see [Hyper-v port ACLs](hyper-v-acls.md).
+Using VMM PowerShell, you can also configure Hyper-V port ACLs. For more information, see [Hyper-V port ACLs](hyper-v-acls.md).
 
-This article provides information about how to create and manage SDN port ACLs by using the VMM PowerShell cmdlets.
+This article provides information on how to create and manage SDN port ACLs by using the VMM PowerShell cmdlets.
 
 ## Before you start
 Ensure that [SDN network controller](sdn-controller.md) is deployed.
@@ -135,7 +135,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
 ## Remove a port ACL rule
 
-1.	Get the port ACL rule to remove.
+1.	Get the port ACL rule that you want to remove.
 
     ```powershell
     PS C:\> $portACLRule = Get-SCPortACLRule –Name “AllowRDPAccess”
@@ -149,7 +149,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
 ## Remove a port ACL
 
-1.	Get the Port ACL that you want to remove.
+1.	Get the port ACL that you want to remove.
 
     ```powershell
     PS C:\> $portACL = Get-SCPortACL -Name “RDPAccess”
