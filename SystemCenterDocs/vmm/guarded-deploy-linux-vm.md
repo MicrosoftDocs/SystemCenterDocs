@@ -67,23 +67,23 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 ## Create a Linux shielded VM template in VMM
 
 1.	In the VMM console library, select **Create VM Template**.
-2.	In **Select Source**, select **Use an existing VM template**. Browse to select the signed template disk that you added to the VMM library. Then select **Next**.
+2.	In **Select Source**, select **Use an existing VM template**. Browse to select the signed template disk that you added to the VMM library. Then, select **Next**.
 3.	In **Configure Hardware**:
-    - Under **Firmware**, select **Enable secure boot**. From the **Secure boot template** drop-down menu, select **OpenSourceShieldedVM**.
+    - Under **Firmware**, select **Enable secure boot**. From the **Secure boot template** dropdown menu, select **OpenSourceShieldedVM**.
 
         > [!NOTE]
         > This boot template is a new addition to RS3 hosts. If no RS3 hosts are in VMM, this option won't show up on the **Secure boot template** menu.
 
     - Select the required configuration for other hardware properties, such as processors, memory, and the VM network.
 
-       ![Hardware configuration for a Linux shielded VM](media/linux-shield/vm-create-linux-template-1.png)
+       ![Screenshot of Hardware configuration for a Linux shielded VM.](media/linux-shield/vm-create-linux-template-1.png)
 4.	In **Configure Operating System**:
 
     - Select the Guest OS profile as **Create new Linux operating system customization settings**.
 
     - Select the OS on the template disk that you created earlier (**Ubuntu Linux**).
 
-        ![Configuration for the VM template's operating system](media/linux-shield/vm-create-linux-template-configure-os.png)
+        ![Screenshot of Configuration for the VM template's operating system.](media/linux-shield/vm-create-linux-template-configure-os.png)
 
 5. Select **Next**.
 6. In **Summary**, review the details and select **Create to finish generation of Linux shielded VM template in VMM**.
@@ -119,10 +119,10 @@ New-ShieldingDataFile -ShieldingDataFilePath '<<Shielding Data file path>>' -Own
     ![Selecting a source for the new virtual machine](media/linux-shield/vm-create-select-source.png)
 
 4.	Name the VM and select **Next**.
-5.	In **Configure Hardware**, make sure the details match your template settings. Then select **Next**.
+5.	In **Configure Hardware**, ensure that the details match your template settings. Then select **Next**.
 6.	In **Configure Operating System** settings, ensure the details conform to the settings you made when you created the template. Then select **Next**.
 7.	Select the shielding data file (PDK) that you created.
-8.	Select the destination host group and then select **Next**.
+8.	Select the destination host group, and then select **Next**.
 9.	Select the host by the rating that the VMM placement engine gave. Then select **Next**.
 10.	In **Configure Settings**, review the virtual machine settings and select **Next**.
 11.	Review the actions in **Add properties** and select **Next**.
