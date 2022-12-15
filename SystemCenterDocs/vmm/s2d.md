@@ -22,11 +22,11 @@ ms.custom: intro-deployment
 
 This article provides an overview of Storage Spaces Direct (S2D), and how it's deployed in the System Center - Virtual Machine Manager (VMM) fabric.
 
-Storage Spaces Direct (S2D) was introduced in Windows Server 2016. It groups physical storage drives into virtual storage pools, to provide virtualized storage. With virtualized storage you can:
+Storage Spaces Direct (S2D) was introduced in Windows Server 2016. It groups physical storage drives into virtual storage pools to provide virtualized storage. With virtualized storage, you can:
 
 - Manage multiple physical storage sources as a single virtual entity.
 - Get inexpensive storage, with and without external storage devices.
-- Gather different types of storage into a single virtual storage pool
+- Gather different types of storage into a single virtual storage pool.
 - Easily provision storage, and expand virtualized storage on demand by adding new drives.
 
 ::: moniker range=">=sc-vmm-2016 <=sc-vmm-2019"
@@ -41,11 +41,11 @@ Storage Spaces Direct (S2D) was introduced in Windows Server 2016. It groups phy
 
 ## How does it work?
 
-S2D creates pools of storage from storage that's attached to specific nodes in a Windows Server cluster. The storage can be internal on the node, or disk devices that are directly attached to a single node. Supported storage drives include NVMe, SSD connected via SATA or SAS, and HDD. [Learn more](/windows-server/storage/storage-spaces/choosing-drives).
--	When you enable S2D on a Windows Server cluster, S2D automatically discovers eligible storage, and adds it to a storage pool for the cluster.
--	S2D also creates a built-in server-side storage cache to maximize performance. The fastest drives are used for caching, and the remaining drives for capacity. [Learn more](/windows-server/storage/storage-spaces/understand-the-cache#cache-drives-are-selected-automatically) about the cache.
+S2D creates pools of storage from storage that's attached to specific nodes in a Windows Server cluster. The storage can be internal on the node or disk devices that are directly attached to a single node. Supported storage drives include NVMe, SSD connected via SATA or SAS, and HDD. [Learn more](/windows-server/storage/storage-spaces/choosing-drives).
+-	When you enable S2D on a Windows Server cluster, S2D automatically discovers eligible storage and adds it to a storage pool for the cluster.
+-	S2D also creates a built-in server-side storage cache to maximize performance. The fastest drives are used for caching and the remaining drives for capacity. [Learn more](/windows-server/storage/storage-spaces/understand-the-cache#cache-drives-are-selected-automatically) about the cache.
 -	You create volumes from a storage pool. Creating a volume creates the virtual disk (storage space), partitions and formats it, adds it to the cluster, and converts it to a clustered shared volumes (CSV).
--	You configure different levels of fault tolerance for a volume, to specify how virtual disks are spread across physical disks in the pool, using SMB 3.0. You can configure a volume with no resiliency, or with mirror or parity resilience. [Learn more](https://blogs.technet.microsoft.com/filecab/2016/09/06/volume-resiliency-and-efficiency-in-storage-spaces-direct/).
+-	You configure different levels of fault tolerance for a volume, to specify how virtual disks are spread across physical disks in the pool, using SMB 3.0. You can configure a volume with no resiliency or with mirror or parity resilience. [Learn more](https://blogs.technet.microsoft.com/filecab/2016/09/06/volume-resiliency-and-efficiency-in-storage-spaces-direct/).
 
 ## Converged and non-converged deployment
 
@@ -58,7 +58,7 @@ A cluster running S2D can be deployed in a couple of ways:
 
 Here's an illustration for hyper-converged deployment
 
-![Hyper-converged](./media/s2d/storage-spaces-hyper-converged.png)
+![Illustration of Hyper-converged deployment.](./media/s2d/storage-spaces-hyper-converged.png)
 
 **Figure 1: Hyper-converged deployment**
 
@@ -71,13 +71,13 @@ Here's an illustration for hyper-converged deployment
 
 Here's an illustration for disaggregated deployment
 
-![Disaggregated](./media/s2d/storage-spaces-disaggregated.png)
+![Illustration of Disaggregated deployment.](./media/s2d/storage-spaces-disaggregated.png)
 
 **Figure 2: Disaggregated deployment**
 
 -	File shares are created on the S2D CSVs.
--	Hyper-V VMs are configured to store their files on the scaled-out file server (SOFS), and accessed using SMB 3.0.
--	You scale the Hyper-V and SOFS clusters separately for finely tuned management. For example, compute nodes might be near full capacity for the number of VMs, but storage nodes might have excess disk and IOPS capacity, so you add only additional compute nodes.
+-	Hyper-V VMs are configured to store their files on the scaled-out file server (SOFS) and accessed using SMB 3.0.
+-	You scale the Hyper-V and SOFS clusters separately for finely tuned management. For example, compute nodes might be near full capacity for a number of VMs, but storage nodes might have excess disk and IOPS capacity; so you add only additional compute nodes.
 
 
 ## Next steps

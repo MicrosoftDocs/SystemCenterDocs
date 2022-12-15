@@ -21,7 +21,7 @@ ms.technology: virtual-machine-manager
 
  This article summarizes the software-defined network (SDN) operations that you can manage in the System Center Virtual Machine Manager (VMM) fabric. For operations that can't be managed in the fabric, you need to use REST APIs or Windows Server PowerShell.
 
- A software-defined network (SDN) abstract physical hardware network infrastructure into virtual networks. In the VMM fabric you can deploy and manage an SDN infrastructure, including network controller, software load balancers, and gateways, to provision and manage virtual networks at scale. [Learn more](deploy-sdn.md#software-defined-network-overview).
+ A software-defined network (SDN) abstracts physical hardware network infrastructure into virtual networks. In the VMM fabric, you can deploy and manage an SDN infrastructure, including network controller, software load balancers, and gateways, to provision and manage virtual networks at scale. [Learn more](deploy-sdn.md#software-defined-network-overview).
 
 
 ## What can I manage in VMM?
@@ -34,13 +34,13 @@ SDN resources fall into two broad categories in VMM:
 
 ### Known resources
 
-These resources can be created and managed with or without VMM. If you make changes to these resources outside VMM, VMM overwrites the out-of-box changes, when a VMM operation is performed on the object. This could cause configuration and connectivity issues, and should be avoided whenever possible. There's no way to revert an overwrite unless you detect the issue, and reconfigure manually.
+These resources can be created and managed with or without VMM. If you make changes to these resources outside VMM, VMM overwrites the out-of-box changes, when a VMM operation is performed on the object. This could cause configuration and connectivity issues and should be avoided whenever possible. There's no way to revert an overwrite unless you detect the issue and reconfigure manually.
 
 We strongly recommend that you configure resources that are known to VMM in the VMM fabric only.
 
 **Known object** | **Details** | **Modify**
 --- | --- | ---
-AccessControlList | An AccessControlList contains a list of ACL rules, and can be assigned to virtual subnets or IP configurations. | Overwritten by VMM if you enable out-of-box
+AccessControlList | An AccessControlList contains a list of ACL rules and can be assigned to virtual subnets or IP configurations. | Overwritten by VMM if you enable out-of-box
 AclRule | Summarizes the network traffic that is allowed or denied for a VM network interface. | Overwritten by VMM if you enable out-of-box
 Gateway | Provides gateway services to one or more virtualNetworks. | Overwritten by VMM if you enable out-of-box
 GatewayPool | GatewayPools aggregate a set of gateways resources into a single pool.  | Overwritten by VMM if you enable out-of-box
@@ -55,7 +55,7 @@ MACPool | Creates a MAC address pool on the network controller | Overwritten by 
 NatRules | Configures the load balancer to apply NAT to traffic | Overwritten by VMM if you enable out-of-box
 NetworkInterface |Specifies the configuration of either a host virtual interface (host vNIC) or a virtual server NIC (VMNIC).  | Overwritten by VMM if you enable out-of-box
 PortSettings | | Overwritten by VMM if you enable out-of-box
-PublicIPAddress | Specifies an IP address, which is publically available. It's used by virtualGateways and loadBalancers to indicate the IP address that can be used to communicate with the virtual network from outside. | Overwritten by VMM if you enable out-of-box
+PublicIPAddress | Specifies an IP address, which is publicly available. It's used by virtualGateways and loadBalancers to indicate the IP address that can be used to communicate with the virtual network from outside. | Overwritten by VMM if you enable out-of-box
 QualityOfService | | Overwritten by VMM if you enable out-of-box
 Servers | Represents a physical server that is being controlled by the Network Controller. | Overwritten by VMM if you enable out-of-box
 VirtualGateway | Describes the gateway used for cross-premises connectivity from the virtual network. | Overwritten by VMM if you enable out-of-box

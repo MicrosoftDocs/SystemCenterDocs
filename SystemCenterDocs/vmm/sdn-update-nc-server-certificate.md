@@ -20,9 +20,9 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-  Network controller (NC) uses a certificate for Northbound communication with REST clients (such as VMM) and Southbound communication with Hyper-V hosts and software load balancers.
+  Network controller (NC) uses a certificate for Northbound communication with REST clients, such as VMM, and Southbound communication with Hyper-V hosts and software load balancers.
 
-  You can change or update this certificate in the following scenarios, after you deploy the NC.
+  You can change or update this certificate in the following scenarios after you deploy the NC.
 
 - The certificate has expired
 - You want to move from a self-signed certificate to a certificate that is issued by a certificate authority (CA).
@@ -32,19 +32,19 @@ ms.technology: virtual-machine-manager
 
 ## Before you start
 
- Make sure you create a new SSL certificate with existing network controller's REST name. [Learn more](sdn-controller.md#set-up-the-security-certificates).
+ Ensure that you create a new SSL certificate with the existing network controller's REST name. [Learn more](sdn-controller.md#set-up-the-security-certificates).
 
 ## Update the server certificate
 
 1. If the certificate is self-signed, do the following:
 
-   - Certificate with private key - Export the certificate and import it on  all the NC nodes' **My** store.
+   - Certificate with private key - Export the certificate and import it on all the NC nodes' **My** store.
    - Certificate without a private key - Export the certificate and import it on all the NC nodes' **Root** store.
 
 2. If the certificate is a CA issued certificate, import it in all network controller nodes' **My** store.
 
    > [!NOTE]
-   > DO NOT remove the current certificate from the NC nodes. You should validate the updated certificate before you remove the existing one. Proceed with rest of the steps to update the certificate.
+   > DO NOT remove the current certificate from the NC nodes. You should validate the updated certificate before you remove the existing one. Proceed with the rest of the steps to update the certificate.
 
 3. Update the server certificate by executing the following PowerShell command on one of the NC nodes.
 
@@ -69,7 +69,7 @@ ms.technology: virtual-machine-manager
    Get-NetworkControllerServer -ConnectionUri <REST uri of your deployment>
    ```
 
-6. In the Server REST resource, navigate to the **Credentials** object and check the credential of type **X509Certificate** with a value matching your certificate's thumbprint. Note the credential resource ID.
+6. In the Server REST resource, navigate to the **Credentials** object and check the credential of type **X509Certificate** with a value matching your certificate's thumbprint. Note down the credential resource ID.
 
    ```powershell
 
@@ -93,7 +93,7 @@ ms.technology: virtual-machine-manager
 
 7. Update the credential REST resource of type **X509Certificate** retrieved above with the thumbprint of the new certificate.
 
-   Execute these PowerShell cmdlet on any of the NC Node.
+   Execute these PowerShell cmdlet on any of the NC nodes.
 
    ```powershell
 
@@ -117,7 +117,7 @@ ms.technology: virtual-machine-manager
    - **NetworkService** is the network controller service, **Certificate** is the new NC server certificate.
    - **ProvisionSelfSignedCertificatesforNetworkService** is **$true** if you are updating to a self-signed certificate.
 
-10. Verify  that the connectivity is working fine with the updated certificate.
+10. Verify that the connectivity is working fine with the updated certificate.
 
     You can now remove the previous certificate from the NC nodes.
 
