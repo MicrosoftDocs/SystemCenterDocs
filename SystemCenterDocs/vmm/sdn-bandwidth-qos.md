@@ -42,7 +42,7 @@ To create virtual network adapter port profile, use the following procedure:
 3.	In **General**, select **Virtual Network Adapter Port Profile**.
 4.	Go to **Bandwidth Settings**.
 
-    ![Screenshot of vNIC port profile](media/bandwidth-settings-vnic-port-profile.png).
+    ![Screenshot of vNIC port profile.](media/bandwidth-settings-vnic-port-profile.png).
 5.	In **Bandwidth Settings**, enter the minimum and maximum bandwidth values that you want to apply to the selected vNIC. Maximum bandwidth (Mbps) and Minimum bandwidth (Weight) are used to reserve a portion of the outbound bandwidth for the vNICs.
 
     - **Maximum bandwidth (Mbps)**: Specify the maximum outbound bandwidth that can be used by this vNIC. This is irrespective of the bandwidth mode configured on the switch. A value of 0 implies that the maximum isn't configured.
