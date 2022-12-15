@@ -106,7 +106,7 @@ To deploy a code integrity policy to a guarded host managed by VMM, complete the
 1. [Create a code integrity policy](/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-deployment-overview) for each reference host in your environment. You'll need a different CI policy for each unique hardware and software configuration of your guarded hosts.
 2. Store the CI policies in a secure file share. The computer accounts for each guarded host require **read access** to the share. Only trusted administrators should have write access.
 3. In the VMM console, select **Settings** > **Host Guardian Service Settings**.
-4. Under the Code Integrity Policies section, select **Add** and specify a friendly name and the path to a CI policy. Repeat this step for each unique CI policy. Ensure that you name your policies in a manner that will help you identify which policy should be applied to which hosts.
+4. Under the Code Integrity Policies section, select **Add** and specify a friendly name and the path to a CI policy. Repeat this step for each unique CI policy. Ensure to name your policies in a manner that will help you identify which policy should be applied to which hosts.
     ![Screenshot of Add a code integrity policy.](./media/guarded-deploy-host/guarded-hgs-settings.png)
 5. Select **Finish** to save the configuration.
 

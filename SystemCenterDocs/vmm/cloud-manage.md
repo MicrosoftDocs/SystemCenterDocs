@@ -30,7 +30,7 @@ You place virtual machines in a VMM cloud if they fit within your capacity setti
 
 ### Example with the default settings
 
-You have a cloud with a maximum setting of 32 GB of memory. That cloud has two VMs with 4 GB of memory each. If you don't want to place a third VM with 26 GB of memory, the action will fail with "Not enough memory available".
+You have a cloud with a maximum setting of 32 GB of memory. That cloud has two VMs with 4 GB of memory each. If you don't want to place a third VM with 26 GB of memory, the action will fail with **Not enough memory available**.
 
 ### Example with the registry setting
 
