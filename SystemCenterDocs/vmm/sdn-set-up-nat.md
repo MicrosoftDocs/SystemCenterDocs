@@ -74,7 +74,7 @@ A NAT connection will be created for this VM network.
 
 ## Add rules to a NAT connection
 
-VMM 2022 supports dual stack. NAT rules to Dual stack VM networks isn't supported at VMM console. NAT rules can be specified using PowerShell cmdlets.
+VMM 2022 supports dual stack. NAT rules to dual stack VM networks isn't supported at the VMM console. NAT rules can be specified using PowerShell cmdlets.
 
 ```
 $vmNetwork = Get-SCVMNetwork -ID <VMNetwork ID>
