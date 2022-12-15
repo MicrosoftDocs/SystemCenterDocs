@@ -142,8 +142,7 @@ Since this preview requires you to create the SCOM Managed Instance (preview) in
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
+[SCOM Managed Instance (preview) overview](operations-manager-managed-instance-overview.md)
 
 **Feedback**
 
