@@ -15,7 +15,7 @@ ms.technology: virtual-machine-manager
 
 ::: moniker range="sc-vmm-2022"
 
-This article details the system requirements for System Center 2022 - Virtual Machine Manager (VMM).
+This article provides details of the system requirements for System Center 2022 - Virtual Machine Manager (VMM).
 
 [!INCLUDE [system-reqs-vmm-2022.md](../includes/system-reqs-vmm-2022.md)]
 
@@ -23,7 +23,7 @@ This article details the system requirements for System Center 2022 - Virtual Ma
 
 ::: moniker range="sc-vmm-2019"
 
-This article details the system requirements for System Center 2019 - Virtual Machine Manager (VMM).
+This article provides details of the system requirements for System Center 2019 - Virtual Machine Manager (VMM).
 
 [!INCLUDE [system-reqs-vmm-2019.md](../includes/system-reqs-vmm-2019.md)]
 
@@ -34,7 +34,7 @@ This article details the system requirements for System Center 2019 - Virtual Ma
 [!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
 
-This article details the system requirements for System Center 1807 - Virtual Machine Manager (VMM).
+This article provides details of the system requirements for System Center 1807 - Virtual Machine Manager (VMM).
 
 [!INCLUDE [system-reqs-vmm-1807.md](../includes/system-reqs-vmm-1807.md)]
 
@@ -45,13 +45,13 @@ This article details the system requirements for System Center 1807 - Virtual Ma
 [!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
 
-This article details the system requirements for System Center 1801 - Virtual Machine Manager (VMM).
+This article provides details of the system requirements for System Center 1801 - Virtual Machine Manager (VMM).
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 
-This article details the system requirements for System Center 2016 - Virtual Machine Manager (VMM).
+This article provides details of the system requirements for System Center 2016 - Virtual Machine Manager (VMM).
 
 ::: moniker-end
 
