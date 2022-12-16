@@ -56,7 +56,7 @@ Quality of Service in [Windows Server](/windows-server/storage/storage-qos/stora
 
 With the advent of converged networking, organizations are using Ethernet as a converged network for their management and storage traffic. It's important for Ethernet networks to support a similar level for performance and losslessness compared to that of dedicated fiber channel networks. This similar level of support becomes more important when the use of S2D clusters is considered.
 
-RDMA in conjunction with data center bridging (DCB) helps to achieve a similar level of performance and losslessness in an Ethernet network compared to fiber channel networks.
+RDMA, in conjunction with data center bridging (DCB), helps to achieve a similar level of performance and losslessness in an Ethernet network compared to fiber channel networks.
 
 The DCB settings must be consistent across all the hosts and the fabric network (switches). A misconfigured DCB setting in any one of the host or fabric devices is detrimental to the S2D performance.
 
