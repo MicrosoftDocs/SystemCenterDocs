@@ -87,7 +87,7 @@ You can install VMM from a command prompt. The installation media contains .ini 
 - **VMClient.ini**: Settings for the VMM console.
 - **VMServerUninstall.ini**: Uninstallation settings for the VMM management server.
 
-Each of these files contain key/value pairs with default values. These entries are commented out. Remove the comment symbol(#) and change the value.
+Each of these files contains key/value pairs with default values. These entries are commented out. Remove the comment symbol(#) and change the value.
 
 1. Edit the VMServer.ini file with the options in the table below this procedure
 2. After you edit, open an elevated command prompt and run setup.exe with the parameters below. For example, to use a VMServer.ini file that is stored in C:\Temp with a SQL Server administrator account of contoso\SQLAdmin01 and a VMM service account of contoso\VMMadmin14, use the following command:

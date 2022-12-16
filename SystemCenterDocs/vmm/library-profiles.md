@@ -82,7 +82,7 @@ A VMM profile contains settings that are used when you create a new virtual mach
 
 ## Create a capability profile
 
-The exact settings for a capability profile depends on the profile in use. As an example, let's configure the Hyper-V capability profile to specify high availability for resources used in a private VMM cloud.
+The exact settings for a capability profile depend on the profile in use. As an example, let's configure the Hyper-V capability profile to specify high availability for resources used in a private VMM cloud.
 
 1. In the VMM console, select > **Library** > **Create** > **Capability Profiles**.
 2. In **Create Capability Profile** > **General**, type in a profile name. In **Capabilities**, specify the profile settings.

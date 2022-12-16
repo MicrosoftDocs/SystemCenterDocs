@@ -16,7 +16,7 @@ ms.technology: virtual-machine-manager
 The following sections provide information about how to upgrade to VMM 1801. Also includes upgrade steps and tasks you should complete after the upgrade finishes.
 
 > [!NOTE]
-> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
+> During VMM Installation, ensure that SQL Database isn't part of any Availability Group.
 
 ## Requirements and limitations
 
@@ -38,7 +38,7 @@ Ensure the following:
 
 2. Close any connections to the VMM management server, including the VMM console and the VMM command shell.
 3. Close any other programs that are running on the VMM management server.
-4. Ensure that there're no pending restarts on VMM servers.
+4. Ensure that there are no pending restarts on VMM servers.
 5. Perform a full backup of the VMM database.
 6. If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager server.
 
@@ -56,9 +56,9 @@ If you're running more than one System Center components, they should be upgrade
 7. Virtual Machine Manager (VMM)
 8. App Controller
 9. Service Provider Foundation
-10. Windows Azure Pack for Windows Server
+10. Microsoft Azure Pack for Windows Server
 11. Service Bus Clouds
-12. Windows Azure Pack
+12. Microsoft Azure Pack
 13. Service Reporting
 
 
@@ -109,9 +109,9 @@ Use the following procedures:
 11. In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
 	>[!NOTE]
-	>You cannot change the ports that you assign during the installation of a VMM management server, unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986; this port number is preassigned.
+	>You can't change the ports that you assign during the installation of a VMM management server, unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986; this port number is preassigned.
 
-12. In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
+12. In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you can't remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 13. In **Upgrade compatibility report**, review the settings, and select **Next** to proceed with the upgrade.
 14. In **Installation Summary**, review the settings and select **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
 15. In **Setup completed successfully**, select **Close** to finish the installation. To open the VMM console, check  **Open the VMM console when this wizard closes**, or you can select the Virtual Machine Manager Console icon on the desktop.
@@ -119,7 +119,7 @@ Use the following procedures:
 > [!NOTE]
 > Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM.
 
-In case of any issue with the setup, check the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder.
+If there is any issue with the setup, check the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder.
 
 During the setup, VMM enables the following firewall rules. These rules remain in effect even if you uninstall the VMM later.
 
@@ -139,7 +139,7 @@ The following two modes of upgrade are supported:
 > SQL Server upgrade can be performed any time, independent of VMM upgrade.
 
 ### Mixed mode upgrade with no additional VMM servers
-This procedure requires no additional VMM servers, but has increased risk for downtime in some scenarios. For example, when you have two node HA VMM and the active VMM node fails while you are upgrading the passive. In this scenario, your VMM server will not have a failover node available.
+This procedure requires no additional VMM servers, but has increased risk for downtime in some scenarios. For example, when you have two node HA VMM and the active VMM node fails while you're upgrading the passive. In this scenario, your VMM server won't have a failover node available.
 
 **Follow these steps**:  
 
@@ -148,7 +148,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
 3. VMM 1801 supports WS 2016 and 1709 as Management OS. On the passive VMM node, upgrade the management OS to Windows server 2016/1709.
 
    If the cluster has VMM 2012 R2 on Windows Server (WS) 2012 R2 and you want to upgrade to VMM 1801 on WS 1709, then use the following steps for each of such nodes in the cluster:
-   - Upgrade to VMM 1801 on WS 2016 as the management OS for all the cluster nodes with WS 2012 R2. This is because, 2012 R2 and WS 1709 mixed cluster is not supported.
+   - Upgrade to VMM 1801 on WS 2016 as the management OS for all the cluster nodes with WS 2012 R2. This is because, 2012 R2 and WS 1709 mixed cluster isn't supported.
    - Upgrade the management OS to WS 1709.
 
 4. Upgrade to the Windows 10/1709 version of the ADK.
@@ -158,7 +158,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
     - When prompted, confirm that you want to add this server as a node to the highly available deployment.
     - On **Database Configuration** page, if prompted, select to upgrade the database.
     - Review the summary and complete the installation.
-6. Failover the active VMM node to the newly upgraded VMM server.
+6. Fail over the active VMM node to the newly upgraded VMM server.
 7. Repeat the procedure on other VMM nodes.
 8. Update the cluster functional level by using the
    **Update-ClusterFunctionalLevel** [command](/powershell/module/failoverclusters/update-clusterfunctionallevel).
@@ -179,7 +179,7 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 3. Install Windows 10/1709 version of the ADK on the newly added 2016 servers.
 4. Install VMM 1801 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode- upgrade-with-no-additional-VMM-servers).    
 5.	Repeat the installation steps for all the other newly added servers.
-6.	Failover the active VMM node to one of the newly added servers.
+6.	Fail over the active VMM node to one of the newly added servers.
 7. Remove 2012 R2/2016 nodes from the cluster after failover.
 8. Update the cluster functional level by using the
 **Update-ClusterFunctionalLevel** [command](/powershell/module/failoverclusters/update-clusterfunctionallevel).
@@ -211,7 +211,7 @@ Before you upgrade, collect information about the VMM database:
 
 1. Back up the existing VMM database, and copy the backup to a computer running a supported version of SQL Server.
 2. Use SQL Server tools to restore the database.
-    - If you are upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
+    - If you're upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
     - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, on the **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration**, specify the new SQL Server details. After reinstall, apply the update rollups and check that the deployment is working as expected.
 
 ### Upgrade a highly available database
@@ -236,7 +236,7 @@ After the upgrade, you need to update the VMM agents on your Hyper-V hosts and i
 
 1. Select **Fabric** >  **Servers** >  **All Hosts**.
 2. In the **Hosts** pane, select and hold a column heading, and then select **Agent Version Status**.
-3. Select the host with the VMM agent that you want to update. On the **Hosts** tab, in the **Host** group, select **Refresh**. If a host needs to have its VMM agent updated, the **Host Status** column will display **Needs Attention** and the **Agent Version Status** column will display **Upgrade Available**.
+3. Select the host with the VMM agent that you want to update. On the **Hosts** tab, in the **Host** group, select **Refresh**. If a host needs to have its VMM agent updated, the **Host Status** column will display **Needs Attention**, and the **Agent Version Status** column will display **Upgrade Available**.
 4. Select and hold the host with the VMM agent that you want to update, and then select **Update Agent**. In **Update Agent** provide the necessary credentials, and then select **OK**.
 5. The **Agent Version Status** column will display a value of **Upgrading**. After the VMM agent is updated successfully on the host, the **Agent Version Status** column will display a value of **Up-to-date**, and the **Agent Version** column will display the updated version of the agent. After you refresh the host again, the **Host Status** column for the host will display a value of **OK**.
 6. You can update the VMM agent on a VMM library server in a similar manner. To view a list of VMM library servers, select **Fabric** > **Servers** > **Library Servers**.
@@ -254,4 +254,4 @@ After the upgrade, reconnect VMM to Operations Manager.
 
 ## Renew certificates for PXE servers
 
-If you have a PXE server in the VMM fabric, you need to remove it from the fabric and then add it again. This is in order to renew the PXE server certificate, and avoid certificate errors.
+If you have a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate, and avoid certificate errors.

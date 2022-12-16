@@ -42,7 +42,7 @@ During a library refresh, the following occurs:
 
 ## Transfer files
 
-You have direct access to copy and move library files through Windows Explorer. Each file in a library share has a unique GUID and is periodically indexed during library refreshes. After a file is refreshed, you can move it to any other location on a library share managed by VMM and refresh automatically tracks the file movement. After the move, file metadata is updated during the next library refresh.
+You've direct access to copy and move library files through Windows Explorer. Each file in a library share has a unique GUID and is periodically indexed during library refreshes. After a file is refreshed, you can move it to any other location on a library share managed by VMM and refresh automatically tracks the file movement. After the move, file metadata is updated during the next library refresh.
 
 In addition, you can allow unencrypted file transfers to and from a library server.
 
@@ -58,7 +58,7 @@ You can remove a file-based resource either temporarily or permanently from the 
 
 ## Remove a library server or share
 
-There're circumstances in which you need to remove a library server or share. For example, if you're no longer using the resources on a share or you temporarily want to remove those resources.
+There are circumstances in which you need to remove a library server or share. For example, if you're no longer using the resources on a share or you temporarily want to remove those resources.
 
 - To remove a library share, select **Library** > **Library servers** > and select the library share. In Actions, select **Library Share** > **Remove**. Select **Yes** to confirm.
 
@@ -76,7 +76,7 @@ There're circumstances in which you need to remove a library server or share. Fo
 
 When you remove a library share from VMM management and there are templates that reference resources that were located on the library share, a representation of the library resource appears in the VMM library as an orphaned resource.
 
-To remove orphaned resources, modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you add the library share again, VMM doesn't automatically re-associate the template with the physical library resource. You must complete these steps to correct the template issues and to remove any orphaned resources.
+To remove orphaned resources, modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you add the library share again, VMM doesn't automatically reassociate the template with the physical library resource. You must complete these steps to correct the template issues and to remove any orphaned resources.
 
 1. Select **Library** > **Orphaned Resources**.
 1. You won't be able to delete an orphaned resource until the templates that reference it are updated to valid references. To view the templates, select and hold the orphaned resource > **Properties**. To update the template, select it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
@@ -97,14 +97,14 @@ VMM supports the management of library servers, which are replicated. You can us
 
 For effective management of replicated shares using VMM, disable the usage of *alternate data stream* for both the source and destination library shares.  You can do this while adding new library shares or by editing properties of the existing library shares. *Alternate data stream* is enabled by default. Disable this option only when using replication across library shares.
 
-VMM generates a GUID for all the library objects managed by VMM. This metadata is written into *Alternate Data Stream* of the file. VMM uses *Alternate Data Stream* to identify library objects as the same objects, while they are moved across folders in library shares or in scenarios where a library object is renamed. Disabled *Alternate Data stream* impacts the identification of object as the same object in the scenarios mentioned above.
+VMM generates a GUID for all the library objects managed by VMM. This metadata is written into *Alternate Data Stream* of the file. VMM uses *Alternate Data Stream* to identify library objects as the same objects, while they're moved across folders in library shares or in scenarios where a library object is renamed. Disabled *Alternate Data stream* impacts the identification of object as the same object in the scenarios mentioned above.
 
- However, for effective management of replicated library shares using VMM, it is required to disable the *Alternate Data Stream* option.
+ However, for effective management of replicated library shares using VMM, it's required to disable the *Alternate Data Stream* option.
 
   ![Screenshot of disable alternate data stream.](media/library-resources/disable-alternate-data-stream.png)
 
 ### Rename/move library files in replicated library shares
-If you have opted to disable writing to *Alternate Data Stream*, some scenarios like rename/move to different library share might be effective. To ensure these scenarios work fine, use the following steps:
+If you've opted to disable writing to *Alternate Data Stream*, some scenarios like rename/move to different library share might be effective. To ensure these scenarios work fine, use the following steps:
 
 1.	Ensure the file that you want to rename/move is replicated across all the library shares.
 2.	Refresh all the replicated library shares.
