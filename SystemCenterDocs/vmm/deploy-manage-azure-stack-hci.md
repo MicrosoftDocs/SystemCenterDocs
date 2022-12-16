@@ -162,7 +162,7 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 1. [Create a new Hyper-V cluster](hyper-v-standalone.md), select **Enable Storage Spaces Direct**.
    *DCB Configuration* option gets added to the Hyper-V cluster creation workflow.
 
-    ![Screenshot of Hyper-V cluster](./media/s2d/create-hyperv-cluster-wizard.png)
+    ![Screenshot of Hyper-V cluster.](./media/s2d/create-hyperv-cluster-wizard.png)
 
 2. In **DCB configuration**, select **Configure Data Center Bridging**.
 

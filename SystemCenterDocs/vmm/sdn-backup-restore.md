@@ -36,7 +36,7 @@ Use the following procedures to bring up a new network controller:
    > [!NOTE]
    > Remove the network controller service instance only. Do not remove the network controller from **Fabric** > **Network Services.**
 
-    ![Screenshot of back up and restore sdn](media/sdn-backup-restore/back-up-restore-sdn.png)
+    ![Screenshot of back up and restore sdn.](media/sdn-backup-restore/back-up-restore-sdn.png)
 
 2. Ensure that the DNS record for the network controller is removed from the DNS.
 
