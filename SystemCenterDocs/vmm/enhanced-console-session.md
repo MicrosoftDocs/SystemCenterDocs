@@ -20,19 +20,19 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-This article provides information about how to configure enhanced console session in System Center - Virtual Machine Manager (VMM).
+This article provides information on how to configure enhanced console session in System Center - Virtual Machine Manager (VMM).
 
-Console connect in VMM provides a way to connect to the VM without a network connection to it.  For information on deploying VMM console, see [install VMM console](install-console.md). Prior to 1801, the console connect in VMM supported only basic session where clipboard text can only be pasted through **Type Clipboard Text menu** option.
+Console connect in VMM provides a way to connect to the VM without a network connection to it.  For information on deploying VMM console, see [install VMM console](install-console.md). Prior to 1801, the console connect in VMM supported only basic session where clipboard text can only be pasted through the **Type Clipboard Text menu** option.
 
 ::: moniker range="sc-vmm-1801"
 
-VMM 1801 and later supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, there by copy/paste commands for text and files are made possible from and to the VM.
+VMM 1801 and later supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, thereby copy/paste commands for text and files are made possible from and to the VM.
 
 ::: moniker-end
 
 ::: moniker range=">sc-vmm-1801"
 
-VMM supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, there by copy/paste commands for text and files are made possible from and to the VM.
+VMM supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, thereby copy/paste commands for text and files are made possible from and to the VM.
 
 ::: moniker-end
 
@@ -41,79 +41,79 @@ VMM supports enhanced console session. With console connected through enhanced s
 Ensure the following prerequisites:
 
 ::: moniker range="sc-vmm-2016"
-1.  The operating system of the host, on which the VM is running, should be Windows Server 2012 R2 and later.
+1.  The operating system of the host on which the VM is running should be Windows Server 2012 R2 and later.
 ::: moniker-end
 
 ::: moniker range=">sc-vmm-2016"
-1.  The operating system of the host, on which the VM is running, should be Windows Server 2016 and later.
+1.  The operating system of the host on which the VM is running should be Windows Server 2016 and later.
 ::: moniker-end
 2.	The Hyper-V host must have Enhanced session mode policy setting turned ON.
-3.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or later.
+3.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016, or later.
 ::: moniker range="sc-vmm-2016"
-4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server 2016 or Windows Server 2012 R2 or later as the guest operating system.
+4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server 2016, Windows Server 2012 R2, or later as the guest operating system.
 ::: moniker-end
 
 ::: moniker range=">sc-vmm-2016 <=sc-vmm-2019"
-4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows Server 2016 or later as the guest operating system.
+4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows Server 2016, or later as the guest operating system.
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2022"
-4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 11, Windows Server 2016 or later as the guest operating system.
+4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 11, Windows Server 2016, or later as the guest operating system.
 ::: moniker-end
 
 ## Procedure - enable the enhanced console session
 
 **Use the following steps**:
 
-1. Right-click the host in **VMs & Services** and navigate to **Enhanced Session** option.
-2. Select **Allow enhanced session mode** and click **OK**.
+1. Select and hold the host in **VMs & Services** and navigate to the **Enhanced Session** option.
+2. Select **Allow enhanced session mode** and select **OK**.
 
-   ![allow enhanced session](media/enhanced-console/enhanced-console-enable.png)
+   ![Screenshot of the allow enhanced session.](media/enhanced-console/enhanced-console-enable.png)
 
-3. In VMM console, navigate to the VM on this host.
-4. Right-click the VM and click **Connect via Console**.
+3. In the VMM console, navigate to the VM on this host.
+4. Select and hold the VM and select **Connect via Console**.
 
 
 ::: moniker range="<sc-vmm-2019"
 
-5. Once you see the VM console, look for **Open Enhanced Session** option at the top right of the page. Click it to launch the enhanced Session window.
+5. Once you see the VM console, look for the **Open Enhanced Session** option at the top right of the page. Select it to launch the enhanced Session window.
 
-   ![enhanced console session](media/enhanced-console/enhanced-console-enabled-status.png)
+   ![Screenshot of the enhanced console session.](media/enhanced-console/enhanced-console-enabled-status.png)
 
    > [!NOTE]
-   > This action will close the current session and opens a new session. You will be redirected to the login screen in the new session.
+   > This action will close the current session and opens a new session. You will be redirected to the sign in screen in the new session.
 
  ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2019"
 
-  5. Once you see the VM console, look for **Enhanced Session** option at the top right of the page. Click it to launch the enhanced Session window.
+  5. Once you see the VM console, look for the **Enhanced Session** option at the top right of the page. Select it to launch the enhanced Session window.
 
-      ![enhanced console session](media/enhanced-console/enhanced-console-enabled-status-2019.png)
+      ![Screenshot of the enhanced console session.](media/enhanced-console/enhanced-console-enabled-status-2019.png)
 
       > [!NOTE]
-      > This action will close the current session and opens a new session. You will be redirected to the login screen in the new session.
+      > This action will close the current session and opens a new session. You will be redirected to the sign in screen in the new session.
 
 
 ::: moniker-end
 
 ::: moniker range="<sc-vmm-2019"
 
-6. To switch back to basic session, click **Open Basic Session** at the top right.
+6. To switch back to the basic session, select **Open Basic Session** at the top right.
 
 
 ::: moniker-end
 
 ::: moniker range=">=sc-vmm-2019"
 
-6. To switch back to basic session, click **Basic Session** at the top right.
+6. To switch back to basic session, select **Basic Session** at the top right.
 
 ::: moniker-end
 
-Once Enhanced Session Mode policy is enabled on the host:
+Once the Enhanced Session Mode policy is enabled on the host:
 
 - Close any open console sessions to view the **Enhanced Session** option.
-- For a VM that is booting for the first-time from a VHD/VHDX, the enhanced session option doesn’t show up when you attempt to connect through console. Restart the VM and refresh the VM properties in VMM for the Enhanced Session option to appear in console connect window.
+- For a VM that is booting for the first-time from a VHD/VHDX, the enhanced session option doesn’t show up when you attempt to connect through console. Restart the VM and refresh the VM properties in VMM for the Enhanced Session option to appear in the console connect window.
 
 
 ## Next steps
