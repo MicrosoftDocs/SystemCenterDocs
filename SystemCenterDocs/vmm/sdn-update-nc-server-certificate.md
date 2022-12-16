@@ -69,7 +69,7 @@ ms.technology: virtual-machine-manager
    Get-NetworkControllerServer -ConnectionUri <REST uri of your deployment>
    ```
 
-6. In the Server REST resource, navigate to the **Credentials** object and check the credential of type **X509Certificate** with a value matching your certificate's thumbprint. Note down the credential resource ID.
+6. In the Server REST resource, navigate to the **Credentials** object and check the credential of type **X509Certificate** with a value matching your certificate's thumbprint. Note the credential resource ID.
 
    ```powershell
 

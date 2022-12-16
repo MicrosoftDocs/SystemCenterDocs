@@ -100,7 +100,7 @@ Ensure the following prerequisites are met:
 
    - Save the service template in **Service Template** > **Save and Validate**.
 
-**Example 1**: Configuring Service with ‘Public’ VM Network as frontend. Here the ‘Backend’ network can be One connected or network virtualized VM network.
+**Example 1**: Configuring Service with ‘Public’ VM Network as front-end. Here the ‘Backend’ network can be One connected or network virtualized VM network.
 
 ![Diagram of slb vip example 1.](media/slb-vip/example-1.png)
 

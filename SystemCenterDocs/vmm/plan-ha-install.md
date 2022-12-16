@@ -94,7 +94,7 @@ You can create highly available library servers to ensure that file-based resour
 - Computers you'll configure as file servers should be running Windows Server 2012 R2 or later. We recommend that all nodes have the same version of Windows.
 - All nodes you want to add as file servers should be in the same domain.
 - Ensure that the hardware and software you want to use for the library meets the system requirements.
-- The user who creates the cluster has **Create Computers objects** permission to the OU or the container where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
+- The user who creates the cluster has **Create Computers objects** permission to the OU or the contain where the servers that will form the cluster reside. If this isn't possible, ask a domain admin to pre-stage a cluster computer object for the cluster.
 - The account you use to create the cluster should be a domain user on all the computers you want to add as file server nodes.
 - The library server can't be a scale-out file server (SOFS). It must be on a failover cluster that doesn't use the SOFS cluster role. This is because when you deploy the library, the VMM agent is deployed on the host. For SOFS, there're multiple hosts in a cluster provides shares, which makes it complicated for agent deployment. When you have a standalone or clustered library server, you can use storage on SOFS by creating shares on it.
 - You can deploy the library shares on a cluster with physical nodes or a guest cluster.

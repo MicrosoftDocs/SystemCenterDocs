@@ -55,8 +55,8 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
 1. Create a cluster for your VMs using the information provided in [this article](/windows-server/networking/sdn/manage/guest-clustering#example-2-configuring-a-microsoft-failover-cluster).
 
    > [!NOTE]
-   >  Cluster should have a ProbePort parameter set to a port of your choice. This port is required while configuring the VIP template in the next step.
-   > Note down the reserved IP address you are using for this cluster. This IP will be required later while creating a VIP using the VIP template.
+   > Cluster should have a ProbePort parameter set to a port of your choice. This port is required while configuring the VIP template in the next step.
+   > Note the reserved IP address you're using for this cluster. This IP will be required later while creating a VIP using the VIP template.
 
 2. Create a VIP template. In the VMM console > **Fabric** > **Networking** > **VIP Templates**, right-click and select **Add VIP Template**.
 
