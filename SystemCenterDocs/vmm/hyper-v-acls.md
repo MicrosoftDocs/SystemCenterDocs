@@ -20,13 +20,13 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-In System Center - Virtual Machine Manager (VMM), you can centrally configure and manage Hyper-V port access control lists (ACLs). Port ACLs can be configured for both a Network Controller- managed fabric, and for networks that aren't managed by Network Controller.
+In System Center - Virtual Machine Manager (VMM), you can centrally configure and manage Hyper-V port access control lists (ACLs). Port ACLs can be configured for both a Network Controller- managed fabric and for networks that aren't managed by Network Controller.
 
-- A port ACL is a set of rules that filter traffic at the layer 2 port level. A port ACL in VMM filters access to a particular VMM  object. A network object can have no more than one port ACL attached.
-- An ACL contains rules, and can be attached to any number of network objects. You can create an ACL without rules, and then add rules at a later time. Each ACL rule corresponds to an only one port ACL
+- A port ACL is a set of rules that filter traffic at the layer 2 port level. A port ACL in VMM filters access to a particular VMM object. A network object can have no more than one port ACL attached.
+- An ACL contains rules and can be attached to any number of network objects. You can create an ACL without rules, and then add rules at a later time. Each ACL rule corresponds to only one port ACL.
 - If an ACL has multiple rules, they are applied based on priority. After a rule matches criteria and is applied, no other rules are processed.
 - A global settings port ACL is applied to all VM virtual network adapters in an infrastructure. There's no separate object type for global settings. Instead, the global settings port ACL is attached to the VMM management server.
-- Port ACL settings are exposed only through PowerShell cmdlets in VMM, and can't be configured in the VMM console.
+- Port ACL settings are exposed only through PowerShell cmdlets in VMM and can't be configured in the VMM console.
 - Port ACLs can be applied to:
     - Virtual subnets and adapters in a Network Controller deployment.
     - Virtual subnets, network adapters, VM networks, and the VMM management server in networks that aren't managed by Network Controller.
@@ -36,12 +36,12 @@ In System Center - Virtual Machine Manager (VMM), you can centrally configure an
 ## Before you start
 
 - To apply an ACL to objects managed by Network Controller, you use the **ManagedByNC** flag, and set it to **True**. If it's not set to **True**, the ACL only applies to network objects that aren't managed by Network Controller.
-- ACL types aren't interchangeable. You can’t apply an ACL with **ManagedByNC** set to **false**, to objects managed by Network Controller, and vice versa.
+- ACL types aren't interchangeable. You can’t apply an ACL with **ManagedByNC** set to **false**, to objects managed by Network Controller and vice versa.
 - The key difference between these two kinds of ACLs is that you need to remediate each network adapter, after applying ACL on objects that aren't managed by Network Controller.
 - There's also a difference in priority ranges:
     - **Hyper-V port ACLs (not managed by Network Controller)**: 1 - 65535
     - **SDN port ACLs (managed by Network Controller)**: 1 - 64500
-- You need full VMM admin permissions to attach a port ACL to global settings. To attach the ACL to VMM objects (VM networks, subnets, virtual network adapters), you need to be a VMM admin or tenant admin, or a self-service user.
+- You need full VMM admin permissions to attach a port ACL to global settings. To attach the ACL to VMM objects (VM networks, subnets, virtual network adapters), you need to be a VMM admin or tenant admin or a self-service user.
 
 
 
@@ -65,7 +65,7 @@ Use the VMM PowerShell interface to do the following:
     - The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs" (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2012 R2 or later, because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
     ::: moniker-end
     ::: moniker range=">sc-vmm-2016"
-    - The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs" (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2016 or later, because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
+    - The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs" (VMNetworkAdapterExtendedAcl). This means that they can apply only to hosts running Windows Server 2016 or later because VMM doesn't create legacy Hyper-V port ACLs (VMNetworkAdapterAcl) for earlier versions.
     ::: moniker-end
     - All port ACL rules defined in VMM are stateful for TCP. You can't create stateless TCP ACL rules.
 2. Attach a port ACL to global settings. This applies the ACL to all VM virtual network adapters.

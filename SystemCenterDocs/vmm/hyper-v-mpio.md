@@ -20,7 +20,7 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-Read this article to learn about how System Center - Virtual Machine Manager (VMM) manages Multipath I/O (MPIO) on Hyper-V hosts.
+Read this article to learn how System Center - Virtual Machine Manager (VMM) manages Multipath I/O (MPIO) on Hyper-V hosts.
 
 When you add fiber channel or iSCSI storage to a Hyper-V host managed in the VMM fabric, the Multipath I/O (MPIO) feature must be enabled on each host.
 
@@ -44,7 +44,7 @@ If you don't want VMM to claim any storage device IDs for MPIO purposes, do the 
 
 1. Open registry location **HKLM\Software\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings**
 2. In this location, create a registry key **RemoveMPIOHardwareIds** with type multi-string.
-3. Add the device IDs from the default list. Make sure you use the same spacing.
+3. Add the device IDs from the default list. Ensure that you use the same spacing.
 4. Restart the VMM service.
 5. Add the Hyper-V host in the VMM.
 
