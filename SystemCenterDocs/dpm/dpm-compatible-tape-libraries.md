@@ -5,8 +5,8 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 11/04/2022
-title: System Center DPM Compatible Tape Libraries
+ms.date: 12/19/2022
+title: 'System Center DPM 2012 R2, 2016, 2019 and 2022: Compatible Tape Libraries'
 ms.technology: data-protection-manager
 ms.assetid: 69cab349-9e1d-46f7-b722-6b612dae9498
 ms.author: jsuri
@@ -182,6 +182,7 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 | ETERNUS LT260 | 2016 | 8.2.0.6, 07/03/2017, signed | 7.50 |   | IBM LTO8 HH FC | 6.2.6.6, 10/24/2017, signed | HB81 |
 | ETERNUS LT260 | 2016 | 8.2.0.6, 07/03/2017, signed | 7.50 |   | IBM LTO8 HH SAS | 6.2.6.6, 10/24/2017, signed | HB81 |
 
+::: moniker range="<=sc-dpm-2019"
 
 ## Hewlett Packard Enterprise
 
@@ -195,6 +196,23 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 | MSL G3 Family |   | HP StoreEver Tape Drivers for Windows v4.4.0.0 or later | MSL8096-1130 or later <br><br>MSL4048-8.70 or later <br><br>MSL2024-6.20 or later | HPE LTO8 HH FC <br><br>HPE LTO8 HH SAS <br><br>HPE LTO7 HH FC <br><br>HPE LTO7 HH SAS <br><br>HP LTO6 HH FC <br><br>HP LTO6 HH SAS <br><br>HP LTO5 FH FC <br><br>HP LTO5 HH FC <br><br>HP LTO5 HH SAS <br><br>HP LTO4 FH FC <br><br>HP LTO4 HH SAS | HPE StoreEver Tape Drivers for Windows v4.4.0.0 or later | J4DB or later <br><br>J4DB or later <br><br>FA17 or later <br><br>FA17 or later <br><br>252W or later <br><br>352W or later <br><br>I6GW or later <br><br>Y6DW or later <br><br>Z6DW or later <br><br>H6FW or later <br><br>U62W or later |
 | 1/8 G2 Autoloader |   | HP StoreEver Tape Drivers for Windows v4.4.0.0 or later | 4.30 or later | HPE LTO8 HH FC <br><br>HPE LTO8 HH SAS <br><br>HPE LTO7 HH FC <br><br>HPE LTO7 HH SAS <br><br>HP LTO6 HH FC <br><br>HP LTO6 HH SAS <br><br>HP LTO5 HH FC <br><br>HP LTO5 HH SAS <br><br>HP LTO4 HH SAS | HPE StoreEver Tape Drivers for Windows v4.4.0.0 or later | J4DB or later <br><br>J4DB or later <br><br>FA17 or later <br><br>FA17 or later <br><br>252W or later <br><br>352W or later <br><br>Y6DW or later <br><br>Z6DW or later <br><br>U62W or later |
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+## Hewlett Packard Enterprise
+
+| Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
+| --- | --- | --- | --- | --- | --- | --- |
+| Standalone Drive | - <br><br>Win Server 2016  | N/A <br><br>N/A | N/A <br><br>N/A | HPE LTO7 HPE LTO8<br><br>HPE LTO9 HH SAS | 1.0.9.1 or later 1.0.9.3 or later <br><br>1.09.4 or later | G9Q1 or later <br><br>J4DB or later <br><br>P371 or later |
+| StoreOnce VTL |   | HP StoreEver Tape Drivers for Windows v4.0.0.0 or later | 3.11.x or later | HP LTO Drives | HP StoreEver Tape Drivers for Windows v4.0.0.0 or later | N/A |
+| ESL G3 |   | HP StoreEver Tape Drivers for Windows v4.0.0.0 or later | 680H.GS50501 MCB2 or later <br>656H.GS10801 MCB1 or later | HPE LTO7 FH FC <br><br>HP LTO6 FH FC <br><br>HP LTO5 FH FC <br><br>HP LTO4 FH FC | HP StoreEver Tape Drivers for Windows v4.0.0.0 or later | FA18 or later <br><br>J3PW or later <br><br>I6GW or later <br><br>H6HW or later |
+| MSL 6480 |  - <br><br>Win Server 2016 | HP StoreEver Tape Drivers for Windows v4.4.0.0 or later <br><br>HPE StoreEver Tape Drivers for Windows 4.6.0.0 or later | 4.60 or later <br><br>6.40 or later | HPE LTO8 HH FC <br><br>HPE LTO8 HH SAS <br><br>HPE LTO7 HH FC <br><br>HPE LTO7 HH SAS <br><br>HP LTO6 HH FCHP LTO6 HH SAS <br><br>HP LTO5 FH FC <br><br>HP LTO5 HH FC <br><br>HP LTO5 HH SAS <br><br>HP LTO4 FH FC <br><br>HP LTO4 HH SAS <br><br>HPE LTO9 HH FC <br><br>HPE LTO9 HH SAS | HPE StoreEver Tape Drivers for Windows v4.4.0.0 or later <br><br>HPE StoreEver Tape Drivers for Windows 4.6.0.0 or later | J4DB or later <br><br>J4DB or later <br><br>FA17 or later <br><br>FA17 or later <br><br>252W or later <br><br>352W or later <br><br>I6GW or later <br><br>Y6DW or later <br><br>Z6DW or later <br><br>H6FW or later <br><br>U62W or later <br><br>P371 or later |
+| MSL 3040 | - <br><br>Win Server 2016  | HP StoreEver Tape Drivers for Windows v4.4.0.0 or later <br><br>HPE StoreEver Tape Drivers for Windows 4.6.0.0 or later | 3210 or later <br><br>3290 or later | HPE LTO8 HH FC <br><br>HPE LTO8 HH SAS <br><br>HPE LTO9 HH FC <br><br>HPE LTO9 HH SAS | HP StoreEver Tape Drivers for Windows v4.4.0.0 or later <br><br>HPE StoreEver Tape Drivers for Windows 4.6.0.0 or later | J4DB or later <br><br>J4DB or later <br><br>P371 or later |
+| MSL G3 Family |   | HP StoreEver Tape Drivers for Windows v4.4.0.0 or later | MSL8096-1130 or later <br><br>MSL4048-8.70 or later <br><br>MSL2024-6.20 or later | HPE LTO8 HH FC <br><br>HPE LTO8 HH SAS <br><br>HPE LTO7 HH FC <br><br>HPE LTO7 HH SAS <br><br>HP LTO6 HH FC <br><br>HP LTO6 HH SAS <br><br>HP LTO5 FH FC <br><br>HP LTO5 HH FC <br><br>HP LTO5 HH SAS <br><br>HP LTO4 FH FC <br><br>HP LTO4 HH SAS | HPE StoreEver Tape Drivers for Windows v4.4.0.0 or later | J4DB or later <br><br>J4DB or later <br><br>FA17 or later <br><br>FA17 or later <br><br>252W or later <br><br>352W or later <br><br>I6GW or later <br><br>Y6DW or later <br><br>Z6DW or later <br><br>H6FW or later <br><br>U62W or later |
+| 1/8 G2 Autoloader |   | HP StoreEver Tape Drivers for Windows v4.4.0.0 or later | 4.30 or later | HPE LTO8 HH FC <br><br>HPE LTO8 HH SAS <br><br>HPE LTO7 HH FC <br><br>HPE LTO7 HH SAS <br><br>HP LTO6 HH FC <br><br>HP LTO6 HH SAS <br><br>HP LTO5 HH FC <br><br>HP LTO5 HH SAS <br><br>HP LTO4 HH SAS | HPE StoreEver Tape Drivers for Windows v4.4.0.0 or later | J4DB or later <br><br>J4DB or later <br><br>FA17 or later <br><br>FA17 or later <br><br>252W or later <br><br>352W or later <br><br>Y6DW or later <br><br>Z6DW or later <br><br>U62W or later |
+
+::: moniker-end
 
 ## IBM
 
