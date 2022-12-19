@@ -28,15 +28,15 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 - Ensure that you've at least local admin permissions on the computer before you run the setup.
 - The service account should be an administrator on the VMM server.
 
-> [!NOTE]
-> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
+>[!NOTE]
+>During VMM Installation, ensure that SQL Database is not part of any Availability Group.
 
 ## Run setup
 
-> [!NOTE]
->  The service account for VMM can be:
-> - 	A local account.
-> - 	A user account used for service.
+>[!NOTE]
+>The service account for VMM can be:
+> -  A local account.
+> -  A user account used for service.
 > -	A group managed service account.
 > - If you're using a local account, you can’t have VMM in highly available configuration.
 > - If you're using gMSA account, the format should be *domainFQDN\gMSAAccount$*.
