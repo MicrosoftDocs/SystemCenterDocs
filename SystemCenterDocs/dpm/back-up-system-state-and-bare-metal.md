@@ -5,11 +5,12 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 04/30/2019
+ms.date: 12/19/2022
 title: Back up system state and bare metal
 ms.technology: data-protection-manager
 ms.assetid: 7035095c-6d30-40aa-ae73-4159e305d7ea
 ms.author: jsuri
+ms.custom: engagement-fy23
 ---
 
 # Back up system state and bare metal
@@ -62,7 +63,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 3.  If the protection server is in a cluster, it's possible that a cluster drive will be selected as the drive with the most free space. It's important to be aware of this because if that drive ownership has been switched to another node and a system state backup runs, the drive won't be available and the backup will fail. In this situation, you'll need to modify the PSDataSourceConfig.XML to point it to a local drive.
 
-4.  Windows Server Backup (WSB) creates a folder called WindowsImageBackup on the root of the. As it creates the backup, all data is placed in this folder. When the backup completes, the file will then be transferred over to the DPM server.
+4.  Windows Server Backup (WSB) creates a folder called WindowsImageBackup on the root of the volume. As it creates the backup, all data is placed in this folder. When the backup completes, the file will then be transferred over to the DPM server.
 
     > [!NOTE]
     >  -   This folder and its contents don't get cleaned up after the backup or transfer is done. The best way to think of this is that the space is being reserved for the next time a backup is done.

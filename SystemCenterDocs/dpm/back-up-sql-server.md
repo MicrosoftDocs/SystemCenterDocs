@@ -229,7 +229,7 @@ Configure self-service SQL Server recovery as follows:
 
 5.  On the **Recovery Target Locations** page,  to restrict recovery locations for role users, select **Allow users to recover the databases to another instance of SQL Server** and specify one or more recovery target locations and file paths that are allowed. If you want to allow any path on an instance, then don't specify a value in **Recovered File Path**. If you enable the setting, users can recover database files to any location for which they have the write permission. However, users can't overwrite the original database files, and the DPM Self-Service Recovery Tool (SSRT) for SQL Server blocks them if they attempt to do so.
 
-6.  In addition, on the computer from which self-service recovery will run, ensure that at least .NET framework 3.5 is installed and the DPM Self-Service Recovery Tool is installed. The tool is available in the DPM product installation location in the **DpmSqlEURInstaller** folder.
+6.  In addition, on the computer from which self-service recovery will run, ensure that at least .NET framework 4.5 is installed and the DPM Self-Service Recovery Tool is installed. The tool is available in the DPM product installation location in the **DpmSqlEURInstaller** folder.
 
 ::: moniker-end
 
