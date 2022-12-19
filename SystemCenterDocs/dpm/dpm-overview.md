@@ -5,11 +5,12 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 8/6/2018
+ms.date: 12/19/2022
 title: Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: ee706e89-20fd-4883-82e3-75565a705751
 ms.author: jsuri
+ms.custom: engagement-fy23
 ---
 
 # Data Protection Manager
@@ -30,7 +31,7 @@ You can deploy System Center Data Protection Manager (DPM) for:
 
 -   **System backup**: Back up system state or run full, bare-metal backups of physical computers running Windows server or Windows client operating systems.
 
--   **Hyper-V backup**: Back up Hyper-V virtual machines (VM) running Windows or Linux. You can back up an entire VM or run application-aware backups of Microsoft workloads on Hyper-V VMs running Windows.
+-   **Virtual Machine backup**: Back up Hyper-V or VMware virtual machines (VM) running Windows or Linux. You can back up an entire VM or run application-aware backups of Microsoft workloads on Hyper-V/VMware VMs running Windows.
 
 -   Get a full list of [What can DPM back up?](~/dpm/dpm-protection-matrix.md)
 
