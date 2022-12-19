@@ -26,7 +26,7 @@ You can apply network settings to a Hyper-V host or cluster using a logical swit
 
 ## Before you start
 
-- If you want to configure network settings manually, ensure you've set up logical networks before you begin. In addition, ensure that the network sites within your logical networks are configured to use the host group of the host you want to assign them to. Check this in **Fabric** > **Servers** > **All Hosts**, and select the host group. In **Hosts**, select the host > **Properties**.
+- If you want to configure network settings manually, ensure that you've set up logical networks before you begin. In addition, ensure that the network sites within your logical networks are configured to use the host group of the host you want to assign them to. Check this in **Fabric** > **Servers** > **All Hosts**, and select the host group. In **Hosts**, select the host > **Properties**.
 - If you want to use a logical switch, you need to create the logical switch and port profiles.
 
 ## Configure network settings with a logical switch
@@ -50,11 +50,11 @@ Regardless of any port profiles and logical switches you're using in your networ
 3. In the **Uplink Port Profile** list, select the uplink port profile that you want to apply. The list contains the uplink port profiles that've been added to the logical switch that you selected. If a profile seems to be missing, review the configuration of the logical switch and then return to this property tab. Select **OK** to finish.
 > [!NOTE]
 > If you didn't create the virtual switch earlier and do it now, the host might temporarily lose network connectivity when VMM creates the switch.
-4. Repeat the steps as needed. If you apply the same logical switch and uplink port profile to two or more adapters, the two adapters might be teamed, depending on a setting in the logical switch. To find out if they will be teamed, open the logical switch properties, select the **Uplink** tab, and view the **Uplink mode** setting. If the setting is **Team**, the adapters will be teamed. The specific mode in which they will be teamed is determined by a setting in the uplink port profile.
+4. Repeat the steps as needed. If you apply the same logical switch and uplink port profile to two or more adapters, the two adapters might be teamed, depending on a setting in the logical switch. To find out if they'll be teamed, open the logical switch properties, select the **Uplink** tab, and view the **Uplink mode** setting. If the setting is **Team**, the adapters will be teamed. The specific mode in which they'll be teamed is determined by a setting in the uplink port profile.
 5. After applying the logical switch, you can check the network adapter settings and verify whether they're in compliance with the switch:
     - Select **Fabric**> **Networking** > **Logical Switches** > **Home** > **Show** > **Hosts**.
     - In **Logical Switch Information for Hosts**, verify the settings. **Fully compliant** indicates that the host settings are compliant with the logical switch. **Partially compliant** indicates some issues. Check the reasons in **Compliance errors**. **Non compliant** indicates that none of the IP subnets and VLANs defined for the logical network are assigned to the physical adapter. Select the switch > **Remediate** to fix this.
-    - If you have a cluster, check each node.
+    - If you've a cluster, check each node.
 
 ::: moniker range="sc-vmm-2019"
 >[!NOTE]
@@ -65,7 +65,7 @@ Regardless of any port profiles and logical switches you're using in your networ
 
 ## Set affinity between vNICs and pNICs
 
-This section provides the information on how to set affinity between virtual network adapters (vNICs) and physical network adapters (pNICs). Affinity between pNICs and vNICs  brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g., live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic.
+This section provides the information on how to set affinity between virtual network adapters (vNICs) and physical network adapters (pNICs). Affinity between pNICs and vNICs  brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g., live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can use SMB multichannel to meet high throughput for SMB traffic.
 
 ### Before you begin
 
@@ -102,9 +102,9 @@ For a host, affinity between vNIC and pNIC can be set at virtual switch level. Y
 
 ### Frequently asked questions
 
-**Q**: I have deployed a SET enabled switch and teamed three physical adapters pNIC1, pNIC2, and pNIC3. I have set affinity between vNIC1 and pNIC1. For some reasons, if pNIC1 goes down, will there be no traffic flow from vNIC1?
+**Q**: I've deployed a SET enabled switch and teamed three physical adapters pNIC1, pNIC2, and pNIC3. I've set affinity between vNIC1 and pNIC1. For some reasons, if pNIC1 goes down, will there be no traffic flow from vNIC1?
 
-**A**: No, traffic will continue to flow from vNIC1 to any of physical adapters (pNIC2 and pNIC3). When a physical adapter for which you have defined an affinity goes down, the default behavior of SET switch overrides affinity behavior. This means, operating system will map the traffic from vNIC1 to any of the active physical adapters (pNIC2 or pNIC3).
+**A**: No, traffic will continue to flow from vNIC1 to any of physical adapters (pNIC2 and pNIC3). When a physical adapter for which you've defined an affinity goes down, the default behavior of SET switch overrides affinity behavior. This means, operating system will map the traffic from vNIC1 to any of the active physical adapters (pNIC2 or pNIC3).
 
 ::: moniker-end
 
@@ -112,7 +112,7 @@ For a host, affinity between vNIC and pNIC can be set at virtual switch level. Y
 
 ## Monitor physical network devices
 
-VMM supports Link Layer Discovery Protocol (LLDP). You can now leverage the LLDP information to remotely monitor physical network device properties and information. You can view this information by using the VMM console and PowerShell.
+VMM supports Link Layer Discovery Protocol (LLDP). You can now use the LLDP information to remotely monitor physical network device properties and information. You can view this information by using the VMM console and PowerShell.
 
 **Console view**
 

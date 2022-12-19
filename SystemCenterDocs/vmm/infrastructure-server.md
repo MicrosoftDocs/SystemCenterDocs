@@ -23,7 +23,7 @@ Read this article to learn about adding and managing infrastructure servers in t
 
 In addition to the infrastructure servers used by the VMM fabric ([library server](manage-library-server.md), [PXE servers](hyper-v-bare-metal.md), and [IPAM servers](network-ipam.md)), you can add other infrastructure servers such as Active Directory, DNS, DHCP, and System Center to the VMM fabric. This allows you to manage and update all of these servers in the same location.
 
-The **Infrastructure** node in the VMM console shows infrastructure servers you add, as well as the VMM management server, vCenter servers, VMM library servers, IPAM servers, and PXE servers if you add them.
+The **Infrastructure** node in the VMM console shows the infrastructure servers you add. It also shows the VMM management servers, vCenter servers, VMM library servers, IPAM servers, and PXE servers if you add them.
 
 ## Add an infrastructure server
 

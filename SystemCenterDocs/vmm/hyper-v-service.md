@@ -28,8 +28,8 @@ We recommend you keep hosts in a Hyper-V host cluster up-to-date with the same u
 
 You can service hosts and VMs by:
 
-- **Setting up servicing windows**: Servicing windows provide a method for scheduling servicing outside VMM. You can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determine if it's currently in a servicing window. Servicing windows do not interfere with the regular use and functionality of VMM.
-- **Placing hosts in maintenance mode**: You can start the maintenance mode for a virtual machine host whenever you need to perform maintenance tasks on the physical host, such as applying security updates or replacing hardware on the physical host computer. You can place Hyper-V hosts and VMware ESX hosts in the VMM fabric into maintenance mode. 
+- **Setting up servicing windows**: Servicing windows provide a method for scheduling servicing outside VMM. You can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determine if it's currently in a servicing window. Servicing windows don't interfere with the regular use and functionality of VMM.
+- **Placing hosts in maintenance mode**: You can start the maintenance mode for a virtual machine host whenever you need to perform maintenance tasks on the physical host, such as applying security updates or replacing hardware on the physical host computer. You can place Hyper-V hosts and VMware ESX hosts in the VMM fabric into maintenance mode.
 
 > [!NOTE]
 > - When a host is in maintenance mode, the following restrictions apply:

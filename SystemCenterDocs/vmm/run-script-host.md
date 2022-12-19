@@ -21,7 +21,7 @@ ms.technology: virtual-machine-manager
 
  System Center Virtual Machine Manager (VMM) supports the ability to execute commands remotely, on a host by using the Run Script command feature. This feature is useful in scenarios where you want to start a service or collect information from a remote host.
 
- You can also run the script on the host by using the custom resources that you added to the VMM library. Custom resources can consist of batch files that can execute specific commands against the server, but the use of custom resources is not required.
+ You can also run the script on the host by using the custom resources that you added to the VMM library. Custom resources can consist of batch files that can execute specific commands against the server, but the use of custom resources isn't required.
 
 
 ## Example scenario 1 - Start a service
@@ -42,7 +42,7 @@ The following example scenario provides information on how you can start a servi
    - **Parameters**: /q /c net start sftlist
    - **Script resource package** and **Run As account**: None
 
-     The **/q** turns off the echo for the command line and **/c** carries out the command and then terminates. If you don't use these switches, the outcome will be a return code 0 from the cmd.exe process and will not display the actual result of the command in the job.
+     The **/q** turns off the echo for the command line and **/c** carries out the command and then terminates. If you don't use these switches, the outcome will be a return code 0 from the cmd.exe process and won't display the actual result of the command in the job.
 
      ![Screenshot of the run script form.](media/run-script-command/run-script-filled.png)
 
@@ -52,7 +52,7 @@ The following example scenario provides information on how you can start a servi
 
 5. Select **Finish**.
 
-Monitor the job in the VMM console for the result. In case of any error, go through the error file log and follow the recommendations as applicable.
+Monitor the job in the VMM console for the result. If there's any error, go through the error file log and follow the recommendations as applicable.
 
 **Here is a sample error message**
 

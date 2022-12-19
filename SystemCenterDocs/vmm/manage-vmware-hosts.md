@@ -27,7 +27,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 
 - You can add vCenter and vSphere hosts to the VMM fabric.
 - VMM integrates directly with VMware vCenter Server. Through the VMM console, you can manage the day-to-day operations of VMware vSphere hosts and clusters, such as the discovery and management of hosts.
-- VMM provides the ability to create, manage, store, place and, deploy virtual machines on vSphere hosts. You can import VMware templates.
+- VMM provides the ability to create, manage, store, place, and deploy virtual machines on vSphere hosts. You can import VMware templates.
 - You can associate host adapters with VMM logical networks. More advanced management takes place on the vCenter Server, for example, configuring port groups, standard and distributed virtual switches (or “vSwitches”), vMotion, and Storage vMotion.
 - You can convert VMware VMs to Hyper-V.
 
@@ -37,42 +37,42 @@ VMM enables you to deploy and manage virtual machines and services across multip
 - VMM supports the management of hosts and clusters running VMware. [Learn more](system-requirements.md) for supported versions of VMware.
 - You need a vCenter server in your deployment. vSphere hosts and host clusters should be managed by a vCenter server, which, in turn, is managed by VMM.
 - The following features are supported by VMM when hosts and clusters are managed with a vCenter server:
-	- VMM command shell (same shell across all hypervisors).
-	- VM placement based on host ratings when you create, deploy, or migrate VMware VMs. Includes concurrent VM deployment during service deployment.
-	- You can deploy VMM services to vSphere hosts. You can't deploy vApps.
-	- You can make vSphere host resources available to a VMM cloud by creating clouds from host groups in which vSphere hosts are located or by creating a cloud from a VMware resource pool.
+ - VMM command shell (same shell across all hypervisors).
+ - VM placement based on host ratings when you create, deploy, or migrate VMware VMs. Includes concurrent VM deployment during service deployment.
+ - You can deploy VMM services to vSphere hosts. You can't deploy vApps.
+ - You can make vSphere host resources available to a VMM cloud by creating clouds from host groups in which vSphere hosts are located or by creating a cloud from a VMware resource pool.
 
-	> [!NOTE]
-    > VMM doesn't integrate with VMware vCloud.
+ > [!NOTE]
+ > VMM doesn't integrate with VMware vCloud.
 
-	- You can use dynamic optimization and power optimization for vSphere hosts. VMM can load balance virtual machines on vSphere clusters using live migration. With power optimization, you can configure VMM to turn vSphere hosts on and off for power management.
-	- You can transfer VMware resources using live migrating between hosts in a cluster (uses vMotion) and live storage migration (uses storage vMotion). Resources supported for transfer include network migration to and from the library and between hosts.
+ - You can use dynamic optimization and power optimization for vSphere hosts. VMM can load balance virtual machines on vSphere clusters using live migration. With power optimization, you can configure VMM to turn vSphere hosts on and off for power management.
+ - You can transfer VMware resources using live migrating between hosts in a cluster (uses vMotion) and live storage migration (uses storage vMotion). Resources supported for transfer include network migration to and from the library and between hosts.
 
-	> [!NOTE]
-    > VMware thin provision disks become thick when you migrate a disk to the VMM library.
+ > [!NOTE]
+ > VMware thin provision disks become thick when you migrate a disk to the VMM library.
 
-	- You can place vSphere hosts managed by VMM into and out of maintenance mode.
-	- You can organize and store VMware VMs, VMDK files, and VMware templates in the VMM library. You can create new VMs from templates.
+ - You can place vSphere hosts managed by VMM into and out of maintenance mode.
+ - You can organize and store VMware VMs, VMDK files, and VMware templates in the VMM library. You can create new VMs from templates.
 
-	> [!NOTE]
-    > VMM doesn't support older VMDK disk types. These disk types are supported: regular VMDK files (VMFS and moniolithic flat), VMDK files that are used to access physical disks (vmfsPassthroughRawDeviceMap), and snapshots (vmfssparse).
+ > [!NOTE]
+ > VMM doesn't support older VMDK disk types. These disk types are supported: regular VMDK files (VMFS and moniolithic flat), VMDK files that are used to access physical disks (vmfsPassthroughRawDeviceMap), and snapshots (vmfssparse).
 
-	- You can create templates using .vmdk files stored in the library. You can also import templates stored on vSphere hosts (only template metadata is imported to VMM).
-	- VMM supports existing standard and distributed vSwitches and port groups. vSwitches and port groups must be configured with the vCenter server.
-	- You can do regular VMM networking tasks, including assigning logical networks, static IP address, and MAC address to Windows-based VMs running on VMware.
-	- VMM supports and recognizes VMware Paravirtual SCSI (PVSCSI) storage adapters.
-	- VMM doesn't support VMware VM with virtual hard disks connected to an IDE bus.
-	- VMM supports VMware thin provision hard disk through the dynamic disk type.
+ - You can create templates using .vmdk files stored in the library. You can also import templates stored on vSphere hosts (only template metadata is imported to VMM).
+ - VMM supports existing standard and distributed vSwitches and port groups. vSwitches and port groups must be configured with the vCenter server.
+ - You can do regular VMM networking tasks, including assigning logical networks, static IP address, and MAC address to Windows-based VMs running on VMware.
+ - VMM supports and recognizes VMware Paravirtual SCSI (PVSCSI) storage adapters.
+ - VMM doesn't support VMware VM with virtual hard disks connected to an IDE bus.
+ - VMM supports VMware thin provision hard disk through the dynamic disk type.
 
-	> [!NOTE]
-    > If you create and deploy a VM to a vSphere host configured to use a dynamic disk, the disk will be thin provisioned. If a VM was created as a thin provisioned disk, out-of-band VM will display it as dynamic. If you save a thin provisioned disk to the library, VMM will save it as thick. It remains thick if you create a VM from it.
+ > [!NOTE]
+ > If you create and deploy a VM to a vSphere host configured to use a dynamic disk, the disk will be thin provisioned. If a VM was created as a thin provisioned disk, out-of-band VM will display it as dynamic. If you save a thin provisioned disk to the library, VMM will save it as thick. It remains thick if you create a VM from it.
 
-	- All storage must be added to vSphere hosts outside VMM.
-	- Communication between VMM and the vCenter server is SSL encrypted. You'll need a certificate to identify the vCenter server You can use a self-signed certificate for a vCenter server or a third-party verified certificate.
-	- If you're using a self-signed certificate for authenticating the vCenter server to VMM, you can manually import the certificate to the Trusted People certificate store on the VMM management server before adding the vCenter server. If you don't, you'll be prompted to do this during deployment.
-	- You'll need an account with admin permissions for the vCenter server (local or Active Directory account) and an account with admin permissions for the vSphere hosts. You can create Run As accounts before you begin. If you don't, you'll need to create accounts during the deployment procedure.
-	- You can decide whether you want VMM to communicate with the vSphere hosts managed by the vCenter server over a secure connection. If so, you'll need a certificate to authenticate communications on each vSphere host or cluster. You can either use the self-signed certificate that VMware created when vSphere was installed on the host, or a certificate from a trusted CA. If you're using a self-signed certificate, you can  import it from each vSphere host to the vMM management server before you begin deployment
-	- Before you configure network settings for vSphere hosts, ensure that you've created logical networks that you want to associate with the physical network adapters on the hosts.
+ - All storage must be added to vSphere hosts outside VMM.
+ - Communication between VMM and the vCenter server is SSL encrypted. You'll need a certificate to identify the vCenter server. You can use a self-signed certificate for a vCenter server or a third-party verified certificate.
+ - If you're using a self-signed certificate for authenticating the vCenter server to VMM, you can manually import the certificate to the Trusted People certificate store on the VMM management server before adding the vCenter server. If you don't, you'll be prompted to do this during deployment.
+ - You'll need an account with admin permissions for the vCenter server (local or Active Directory account) and an account with admin permissions for the vSphere hosts. You can create Run As accounts before you begin. If you don't, you'll need to create accounts during the deployment procedure.
+ - You can decide whether you want VMM to communicate with the vSphere hosts managed by the vCenter server over a secure connection. If so, you'll need a certificate to authenticate communications on each vSphere host or cluster. You can either use the self-signed certificate that VMware created when vSphere was installed on the host, or a certificate from a trusted CA. If you're using a self-signed certificate, you can  import it from each vSphere host to the vMM management server before you begin deployment
+ - Before you configure network settings for vSphere hosts, ensure that you've created logical networks that you want to associate with the physical network adapters on the hosts.
 
 ## Add a v-Center server
 
@@ -94,7 +94,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 4. In **Host Settings**, select the host group to which you want to assign the host or cluster. You don't need to add VM placement paths.
 5. In **Summary**, verify the settings and select **Finish**. Wait until the Jobs dialog shows a **Completed** status.
 6. Select **Fabric** > **Servers**> **All Hosts** and in the host group, check the status of each host or cluster. Either select **OK** or **OK (limited)**.
-7. If the status is limited it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting, select and hold the vCenter server > **Properties** > **Security**.
+7. If the status is limited, it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting, select and hold the vCenter server > **Properties** > **Security**.
 5. To import the certificate, select each relevant host name > **Properties** > **Management** > **Retrieve** > **OK**. The host status should be **OK** after the import.
 
 ## Associate host adapters with logical networks
@@ -126,7 +126,7 @@ You can import VMware templates from the vCenter server to the VMM library. VMM 
 
 ## Set up a servicing window for a VMware host
 
-Servicing windows provide a method for scheduling servicing outside VMM. You can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule the maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determine if it is currently in a servicing window. Servicing windows do not interfere with the regular use and functionality of VMM. Set up a servicing window as follows:
+Servicing windows provide a method for scheduling servicing outside VMM. You can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule the maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determine if it's currently in a servicing window. Servicing windows don't interfere with the regular use and functionality of VMM. Set up a servicing window as follows:
 
 1. In the VMM console, select **Settings** > **Create** > **Create Servicing Window**.
 2. In New Servicing Window, specify a name and optional description for the window.

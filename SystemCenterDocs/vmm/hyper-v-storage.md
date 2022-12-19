@@ -43,7 +43,7 @@ Before you can allocate provisioned storage to hosts and cluster, it should be d
         - A storage group contains one or more host initiator IDs (IQN or WWN) (WWN).
         - A storage group also contains one or more target ports and one or more logical units. Logical units are exposed to the host initiators through the target ports.
         - By default, when VMM manages the assignment of logical units, VMM creates one storage group per host, either a standalone host or a host cluster node.
-        - For some storage arrays, it is preferable to use one storage group for the entire cluster, where host initiators for all cluster nodes are contained in a single storage group. To do this, you need to set the CreateStorageGroupsPerCluster property to $true by using the Set-SCStorageArray cmdlet.
+        - For some storage arrays, it's preferable to use one storage group for the entire cluster, where host initiators for all cluster nodes are contained in a single storage group. To do this, you need to set the CreateStorageGroupsPerCluster property to $true by using the Set-SCStorageArray cmdlet.
 
 
 
@@ -53,7 +53,11 @@ Before you can allocate provisioned storage to hosts and cluster, it should be d
 - You can add LUNs to hosts and clusters.
 - If you already provisioned LUNs on a host group, you can assign these to hosts and clusters.
 - If you provisioned a storage pool on a host group, you can create LUNs during the procedure to add storage to a cluster.
-- If you want to use shared storage that isn't managed by VMM, the storage disks must be available to all hosts or nodes before you can add them. You need to provision one or more LUNs to all hosts you want to cluster, and then mount and format the storage disks on one of the nodes. Note that VMM doesn't support or block the use of asymmetric storage, where a workload can use disks that are shared between a subset of the cluster nodes. Each cluster node must be a possible owner of the cluster disk.
+- If you want to use shared storage that isn't managed by VMM, the storage disks must be available to all hosts or nodes before you can add them. You need to provision one or more LUNs to all hosts you want to cluster, and then mount and format the storage disks on one of the nodes.
+
+> [!NOTE]
+> VMM doesn't support or block the use of asymmetric storage, where a workload can use disks that are shared between a subset of the cluster nodes. Each cluster node must be a possible owner of the cluster disk.
+
 - After adding iSCSI storage to a host, you need to create a new session to the storage.
 
 

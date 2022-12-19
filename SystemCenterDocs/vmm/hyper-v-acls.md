@@ -24,7 +24,7 @@ In System Center - Virtual Machine Manager (VMM), you can centrally configure an
 
 - A port ACL is a set of rules that filter traffic at the layer 2 port level. A port ACL in VMM filters access to a particular VMM object. A network object can have no more than one port ACL attached.
 - An ACL contains rules and can be attached to any number of network objects. You can create an ACL without rules, and then add rules at a later time. Each ACL rule corresponds to only one port ACL.
-- If an ACL has multiple rules, they are applied based on priority. After a rule matches criteria and is applied, no other rules are processed.
+- If an ACL has multiple rules, they're applied based on priority. After a rule matches criteria and is applied, no other rules are processed.
 - A global settings port ACL is applied to all VM virtual network adapters in an infrastructure. There's no separate object type for global settings. Instead, the global settings port ACL is attached to the VMM management server.
 - Port ACL settings are exposed only through PowerShell cmdlets in VMM and can't be configured in the VMM console.
 - Port ACLs can be applied to:
@@ -35,9 +35,9 @@ In System Center - Virtual Machine Manager (VMM), you can centrally configure an
 
 ## Before you start
 
-- To apply an ACL to objects managed by Network Controller, you use the **ManagedByNC** flag, and set it to **True**. If it's not set to **True**, the ACL only applies to network objects that aren't managed by Network Controller.
+- To apply an ACL to objects managed by Network Controller, you use the **ManagedByNC** flag, and set it to **True**. If it isn't set to **True**, the ACL only applies to network objects that aren't managed by Network Controller.
 - ACL types aren't interchangeable. You can’t apply an ACL with **ManagedByNC** set to **false**, to objects managed by Network Controller and vice versa.
-- The key difference between these two kinds of ACLs is that you need to remediate each network adapter, after applying ACL on objects that aren't managed by Network Controller.
+- The key difference between these two kinds of ACLs is that you need to remediate each network adapter after applying ACL on objects that aren't managed by Network Controller.
 - There's also a difference in priority ranges:
     - **Hyper-V port ACLs (not managed by Network Controller)**: 1 - 65535
     - **SDN port ACLs (managed by Network Controller)**: 1 - 64500
@@ -47,13 +47,13 @@ In System Center - Virtual Machine Manager (VMM), you can centrally configure an
 
 ## Unsupported scenarios
 
-Here is a list of unsupported scenarios:
+Here's a list of unsupported scenarios:
 
 - Manage individual rules for a single instance, when the ACL is shared with multiple instances. All rules are managed centrally within their parent ACLs, and apply wherever the ACL is attached.
 - Attach more than one ACL to an entity.
 - Apply port ACLs to virtual network adapters n the Hyper-V parent partition (management operating system).
 - Create port ACL rules in VMM that include IP-level protocols (other than TCP or UDP). Other protocols are still supported natively by Hyper-V.
-- Apply port ACLs to logical networks, network sites (logical network definitions), subnet VLANs, and other VMM networking objects that aren't mentioned as specifically supported.
+- Apply port ACLs to logical networks, network sites (logical network definitions), subnet VLANs, and other VMM networking objects that aren't mentioned as supported.
 
 ## Deployment steps
 
