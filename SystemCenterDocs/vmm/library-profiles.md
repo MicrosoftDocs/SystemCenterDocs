@@ -51,8 +51,8 @@ A VMM profile contains settings that are used when you create a new virtual mach
 3. In **General Settings** > **Operating System**, specify the VM operating system. In **Identity Information**, specify the actual machine name of the VM. You probably want a unique name so that you can specify a wildcard to generate a new name for each VM. You can also use characters ### to set an increasing numeric value. For example, if you type in ContosoVM-##, it generates machines named ContosoVM-01, ContosoVM-02, and so on. In **Admin Password**, specify local admin permissions require a password. You can use the predefined Run As account. In **Product Key**, type in the key for the OS installation. If you add an answer file under **Scripts**, you can select the **Product key provided by answer file** settings. In **Time Zone**, specify the time location for the VM.
 4. In **Roles and Features**, specify what should be installed on the VM. 
 
-> [!NOTE]
-> This setting is only used for the profile used in a VM template, which is then used in a service template.
+>[!NOTE]
+>This setting is only used for the profile used in a VM template, which is then used in a service template.
 
 5. In **Networking**, specify domain settings for the VM and credentials to use for joining the domain.
 6. In **Scripts**, specify any scripts you want to use for the VM. Scripts must be located on the library share. For example, an installation answer file. The **GUIRunOnce** option allows you to run a script the first time a user signs in to the VM.
@@ -67,9 +67,9 @@ A VMM profile contains settings that are used when you create a new virtual mach
 4. Select **Add** and select the type of application or script that you want to apply to the profile. To deploy any app type, select **General**. To deploy SQL Server DAC packages or script, select **SQL Server Application Host** so that you can add packages and scripts to the profile. To deploy Web applications, select **Web Application Host** so that you can add Web Deploy packages and scripts to the profile.
 5. If you selected **General**, you can add more than one more of the application or script to the profile.
 6. For applications, you can specify settings such as certificate, ports, and folders. You can also specify that the deployment of the app should be managed by a script. You can specify the script name and specify when it should run.
-7. Select **Scripts** to add an unlimited number of scripts and properties such as parameters and security settings. For example, you can configure a script to create a guest cluster out of multiple VMs deployed by the VMM. For example, you can specify that one script should run at Creation: First VM (to form the cluster on the first virtual machine) and a different script to run at Creation: VMs After First (to add additional virtual machines to the cluster).
-5. After you're done, verify that the profile was created in **Library** > **Profiles** > **Application Profiles**.
-6. You use application profiles in service templates. For example, you could create a number of VM templates with hardware and OS profiles. Then you create a service template that includes those VM templates and the application profiles to create a set of VMs that are configured and deployed together as a single entity.
+7. Select **Scripts** to add an unlimited number of scripts and properties such as parameters and security settings. For example, you can configure a script to create a guest cluster out of multiple VMs deployed by the VMM. For example, you can specify that one script must run at Creation: First VM (to form the cluster on the first virtual machine) and a different script to run at Creation: VMs After First (to add additional virtual machines to the cluster).
+8. After you're done, verify that the profile was created in **Library** > **Profiles** > **Application Profiles**.
+9. You use application profiles in service templates. For example, you could create a number of VM templates with hardware and OS profiles. Then you create a service template that includes those VM templates and the application profiles to create a set of VMs that are configured and deployed together as a single entity.
 
 ## Create a SQL Server profile
 
@@ -107,9 +107,9 @@ VMM can be used to provision physical computers into Hyper-V hosts or into a sca
 4. In **Hardware Configuration**, set up network adapters, disks and partitions, and any drivers.
 5. In **Network Adapters**, select **Connectivity Properties** to set up consistent device naming (CDN) for the adapter. Specify whether to allocate an IP address with DHCP or from a static pool. If it's a physical network adapter connected to a logical switch, this option isn't available.
 6. In **Disk**, specify the partitioning scheme for the first disk. Select Master Boot Record (MBR) for BIO. or GUID Partition Table (GPT) for EFI. Specify a volume label, what free disk space to use, and what to designate as the boot partition. VMM copies the .vhd or .vhdx file to the boot partition and automatically creates a system partition on the same disk.
-5. In Driver filter, specify the driver files to be applied to the operating system during deployment. You can filter drives with plug and play IDs or with specific tags. With the tag option, you need to add driver files to the library and assign the corresponding tags to the library share before deployment.
-3. In **OS Configuration**, set up the domain, the password for the local admin, name, and organization, product team, time zone, and an answer file for additional setup options. In GUIRunOnce, you can specify commands or scripts that should run the first time a user signs into the machine.
-4. Verify the settings in **Summary** and select **Finish**. You can check the physical computer profile in **Library** > **Profiles** > **Physical Computer Profiles**.
+7. In Driver filter, specify the driver files to be applied to the operating system during deployment. You can filter drives with plug and play IDs or with specific tags. With the tag option, you need to add driver files to the library and assign the corresponding tags to the library share before deployment.
+8. In **OS Configuration**, set up the domain, the password for the local admin, name, and organization, product team, time zone, and an answer file for additional setup options. In GUIRunOnce, you can specify commands or scripts that must run the first time a user signs into the machine.
+9. Verify the settings in **Summary** and select **Finish**. You can check the physical computer profile in **Library** > **Profiles** > **Physical Computer Profiles**.
 
 ## Next steps
 

@@ -75,7 +75,6 @@ Use the following procedures:
 4.	Install Windows 10 or 1709 version of ADK, respectively.
 
 
-
 #### Uninstall the VMM
 1. Go to **Add remove programs**, select **VMM** and then select **Uninstall**.
 2. On the **Uninstall wizard,** select **Remove Features**, select both **VMM management Server** and **VMM Console** under the features to remove list.  
@@ -92,24 +91,24 @@ Use the following procedures:
 6. If **Microsoft Update** page appears, select whether you want to use Microsoft Update and select **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
 7. In **Installation location**, use the default path or type a different installation path for the VMM program files, and then select **Next**.
 8. In **Database configuration**:
-   -   [Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
-   -  If you're using a remote SQL instance, specify the SQL server computer name.
-   -  If SQL server runs on the VMM server, type the name of the VMM server or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
-   - Don't specify a port value if you're using local SQL server or if your remote SQL server uses the default port (1443).
-   - Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database, select **Yes**.
+  -   [Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
+  -  If you're using a remote SQL instance, specify the SQL server computer name.
+  -  If SQL server runs on the VMM server, type the name of the VMM server or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
+  - Don't specify a port value if you're using local SQL server or if your remote SQL server uses the default port (1443).
+  - Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database, select **Yes**.
 9. In **Configure service account and distributed key management**, specify the account that the VMM service will use.
 
-   >[!NOTE]
-   > You can't change the identity of the VMM service account after installation.
+  >[!NOTE]
+  > You can't change the identity of the VMM service account after installation.
 
 10. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
-	>[!NOTE]
-	> Choose the settings for the service account and distributed key management, carefully. Based on your selection, encrypted data such as passwords in templates might not be available after the upgrade, and you'll need to enter them manually.
+  >[!NOTE]
+  > Choose the settings for the service account and distributed key management, carefully. Based on your selection, encrypted data such as passwords in templates might not be available after the upgrade, and you'll need to enter them manually.
 
 11. In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
-	>[!NOTE]
-	>You can't change the ports that you assign during the installation of a VMM management server, unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986; this port number is preassigned.
+  >[!NOTE]
+  >You can't change the ports that you assign during the installation of a VMM management server, unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986; this port number is preassigned.
 
 12. In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you can't remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 13. In **Upgrade compatibility report**, review the settings, and select **Next** to proceed with the upgrade.
@@ -148,16 +147,16 @@ This procedure requires no additional VMM servers, but has increased risk for do
 3. VMM 1801 supports WS 2016 and 1709 as Management OS. On the passive VMM node, upgrade the management OS to Windows server 2016/1709.
 
    If the cluster has VMM 2012 R2 on Windows Server (WS) 2012 R2 and you want to upgrade to VMM 1801 on WS 1709, then use the following steps for each of such nodes in the cluster:
-   - Upgrade to VMM 1801 on WS 2016 as the management OS for all the cluster nodes with WS 2012 R2. This is because, 2012 R2 and WS 1709 mixed cluster isn't supported.
-   - Upgrade the management OS to WS 1709.
+ - Upgrade to VMM 1801 on WS 2016 as the management OS for all the cluster nodes with WS 2012 R2. This is because, 2012 R2 and WS 1709 mixed cluster isn't supported.
+ - Upgrade the management OS to WS 1709.
 
 4. Upgrade to the Windows 10/1709 version of the ADK.
 5. Install VMM 1801 on the passive node by using the following steps:
-	-	In the main setup page, select **Install**.
-    -   In **Select features to install**, select  **VMM management server** and then select **Next**. The VMM console will be automatically installed.
-    - When prompted, confirm that you want to add this server as a node to the highly available deployment.
-    - On **Database Configuration** page, if prompted, select to upgrade the database.
-    - Review the summary and complete the installation.
+-	In the main setup page, select **Install**.
+  -   In **Select features to install**, select  **VMM management server** and then select **Next**. The VMM console will be automatically installed.
+  - When prompted, confirm that you want to add this server as a node to the highly available deployment.
+  - On **Database Configuration** page, if prompted, select to upgrade the database.
+  - Review the summary and complete the installation.
 6. Fail over the active VMM node to the newly upgraded VMM server.
 7. Repeat the procedure on other VMM nodes.
 8. Update the cluster functional level by using the
@@ -175,7 +174,7 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 	If the cluster has VMM 2012 R2 nodes on WS 2012 R2 and you want to upgrade to WS 1709 with VMM 1801, then use the following steps:
 	- Add new WS 2016 nodes and install VMM 1801 on all of these new nodes.
 	- Remove all the WS 2012 R2 nodes from the cluster.
-    - Upgrade the management OS to WS 1709.
+   - Upgrade the management OS to WS 1709.
 3. Install Windows 10/1709 version of the ADK on the newly added 2016 servers.
 4. Install VMM 1801 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode- upgrade-with-no-additional-VMM-servers).    
 5.	Repeat the installation steps for all the other newly added servers.
@@ -211,8 +210,8 @@ Before you upgrade, collect information about the VMM database:
 
 1. Back up the existing VMM database, and copy the backup to a computer running a supported version of SQL Server.
 2. Use SQL Server tools to restore the database.
-    - If you're upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
-    - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, on the **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration**, specify the new SQL Server details. After reinstall, apply the update rollups and check that the deployment is working as expected.
+- If you're upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
+- If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, on the **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration**, specify the new SQL Server details. After reinstall, apply the update rollups and check that the deployment is working as expected.
 
 ### Upgrade a highly available database
 

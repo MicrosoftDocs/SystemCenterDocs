@@ -88,7 +88,7 @@ When you install VMM with this user account SPN will be registered.
 - The SQL Server’s computer name cannot exceed 15 characters in length.
 - If the VMM management server and the SQL Server computer are not members of the same Active Directory domain, then a two-way trust must exist between the two domains.
 - When you install SQL Server, select the **Database Engine Services** and **Management Tools - Complete** features.
-- You can perform an in-place upgrade to a supported version of SQL Server (without moving the VMM database). Make sure no jobs are running when you perform the upgrade, or jobs may fail and may need to be restarted manually.
+- You can perform an in-place upgrade to a supported version of SQL Server (without moving the VMM database). Ensure that no jobs are running when you perform the upgrade, or jobs may fail and may need to be restarted manually.
 - For the VMM database, for better performance, do not store database files on the disk that is used for the operating system.
 - If you are using Software Defined Networking (SDN) in VMM, then all networking information is stored in the VMM database. Because of this, you might want to consider high availability for the VMM database, using the following guidelines:
   - Failover clustering is supported and is the recommended configuration for availability within a single geographical area or datacenter. [Read more](/sql/sql-server/failover-clusters/windows/always-on-failover-cluster-instances-sql-server).

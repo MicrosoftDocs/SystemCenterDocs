@@ -34,12 +34,12 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 ## Run setup
 
 > [!NOTE]
->   The service account for VMM can be:
->  - 	A local account.
->  - 	A user account used for service.
->  -	A group managed service account.
->  - If you're using a local account, you can’t have VMM in highly available configuration.
->  - If you're using gMSA account, the format should be *domainFQDN\gMSAAccount$*.
+>  The service account for VMM can be:
+> - 	A local account.
+> - 	A user account used for service.
+> -	A group managed service account.
+> - If you're using a local account, you can’t have VMM in highly available configuration.
+> - If you're using gMSA account, the format should be *domainFQDN\gMSAAccount$*.
 
 1. Close any open programs and ensure that no restarts are pending on the computer.
 2. To start the Virtual Machine Manager Setup wizard, on your installation media, select and hold **setup.exe** and then select **Run as administrator**.
@@ -137,19 +137,18 @@ Each of these files contains key/value pairs with default values. These entries 
 
 ## Uninstall VMM or the VMM console
 
-1.  Ensure that the VMM console and VMM command shell are closed.
+1. Ensure that the VMM console and VMM command shell are closed.
 2. On the computer on which the VMM management server is installed, select **Start** and then select **Control Panel**.
-3.  Under **Programs**, select **Uninstall a program**. Under **Name**, select and hold **Microsoft System Center Virtual Machine Manager**.
-4.  On the **What would you like to do?** page, select **Remove features**.
-5.  On the **Select features to remove** page, select the **VMM management server** check box, and then select **Next**. If you want to uninstall the VMM console, select the **VMM console** check box.
+3. Under **Programs**, select **Uninstall a program**. Under **Name**, select and hold **Microsoft System Center Virtual Machine Manager**.
+4. On the **What would you like to do?** page, select **Remove features**.
+5. On the **Select features to remove** page, select the **VMM management server** check box, and then select **Next**. If you want to uninstall the VMM console, select the **VMM console** check box.
 
 > [!NOTE]
 > If you've a highly available VMM deploy, you must remove both the VMM server and the VMM console.
 
-1.  On the **Database options** page, select whether you want to retain or remove the VMM database, and, if necessary, credentials for the database, and then select **Next**.
-1.  On the **Summary** page, review your selections and select **Uninstall**. The **Uninstalling features** page appears and uninstallation progress is displayed.
-1.  After the VMM management server is uninstalled, on the **The selected features were removed successfully** page, select **Close**.
-
+6. On the **Database options** page, select whether you want to retain or remove the VMM database, and, if necessary, credentials for the database, and then select **Next**.
+7. On the **Summary** page, review your selections and select **Uninstall**. The **Uninstalling features** page appears and uninstallation progress is displayed.
+8. After the VMM management server is uninstalled, on the **The selected features were removed successfully** page, select **Close**.
 
 
 The following firewall rules, which were enabled during VMM Setup, remain in effect after you uninstall VMM:

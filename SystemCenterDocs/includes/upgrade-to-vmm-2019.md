@@ -112,8 +112,8 @@ Use the following procedures:
 
 11.	In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
-  >[!NOTE]
-  >You can't change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, don't configure any feature to use port 5986; this port number is preassigned.
+>[!NOTE]
+>You can't change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, don't configure any feature to use port 5986; this port number is preassigned.
 
 12.	In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you can't remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 13.	In **Upgrade compatibility report**, review the settings, and select **Next** to proceed with the upgrade.
@@ -152,11 +152,11 @@ This procedure requires no additional VMM servers but has increased risk for dow
 3.	On the passive VMM node, upgrade the management OS to Windows Server 2019/2016.
 4. Upgrade to the Windows 10 version of the ADK.
 5. Install VMM 2019 on the passive node by using the following steps:
-	-	In the main setup page, select **Install**.
-    -   In **Select features to install**, select  **VMM management server** and then select **Next**. The VMM console will be automatically installed.
-    - When prompted, confirm that you want to add this server as a node to the highly available deployment.
-    - On the **Database Configuration** page, if prompted, select to upgrade the database.
-    - Review the summary and complete the installation.
+ -	In the main setup page, select **Install**.
+  -   In **Select features to install**, select  **VMM management server** and then select **Next**. The VMM console will be automatically installed.
+  - When prompted, confirm that you want to add this server as a node to the highly available deployment.
+  - On the **Database Configuration** page, if prompted, select to upgrade the database.
+  - Review the summary and complete the installation.
 6.	Fail over the active VMM node to the newly upgraded VMM server.
 7.	Repeat the procedure on other VMM nodes.
 8.  Update the cluster functional level by using the
@@ -177,8 +177,7 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 7. Uninstall VMM from the 2016 nodes, and remove these nodes from the cluster after failover.
 8. Update the cluster functional level by using the
 **Update-ClusterFunctionalLevel** [command](/powershell/module/failoverclusters/update-clusterfunctionallevel).
-9.	[Optional] Install the appropriate SQL Command line utilities.
-
+9. [Optional] Install the appropriate SQL Command line utilities.
 
 > [!NOTE]
 > Once the HA VMM upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM.  
@@ -194,7 +193,6 @@ This procedure requires additional VMM servers; however, it ensures almost no do
  5. The **Agent Version Status** column will display a value of **Upgrading**. After the VMM agent is updated successfully on the host, the **Agent Version Status** column will display a value of **Up-to-date**, and the **Agent Version** column will display the updated version of the agent. After you refresh the host again, the **Host Status** column for the host will display a value of **OK**.
  6. You can update the VMM agent on a VMM library server in a similar manner. To view a list of VMM library servers, select **Fabric** > **Servers** > **Library Servers**.
 
-
 ## Reassociate hosts and library servers
 
  After the upgrade, you might need to reassociate virtual machine hosts and VMM library servers with the VMM management server.
@@ -204,10 +202,8 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 1. Select **Fabric** > **Servers** > **All Hosts**.
 2. In the **Hosts** pane, ensure that the **Agent Status** column is displayed. If it isn't displayed, select and hold a column heading and select **Agent Status**.
 3. In the host group, select **Refresh**. If a host needs to be reassociated, the Host Status column displays **Needs Attention** and the **Agent Status** column displays **Access Denied**. Select and hold the host that you want to reassociate, and then select **Reassociate**.
-4. In **Reassociate Agent** page, provide credentials, and then select **OK**.
-   The Agent Status displays the status as **Reassociating**. After the host is reassociated successfully, the  status changes to **Responding**.
-   6. Refresh the host, the host status column now displays **OK**.
-      After you've reassociated the host, you might need to update the VMM agent on the host.
+4. In **Reassociate Agent** page, provide credentials, and then select **OK**. The Agent Status displays the status as **Reassociating**. After the host is reassociated successfully, the  status changes to **Responding**.
+5. . Refresh the host, the host status column now displays **OK**. After you've reassociated the host, you might need to update the VMM agent on the host.
 
 ## Upgrade the VMM SQL Server database
 
@@ -230,8 +226,8 @@ Before you upgrade, collect the information about the VMM database:
 
 1. Back up the existing VMM database, and copy the backup to a computer running a supported version of SQL Server.
 2. Use SQL Server tools to restore the database.
-    - If you're upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
-    - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, on the **Database Options** page, select **Retain database**. Then reinstall with the same settings you used for the original installation. On the **Database Configuration**, specify the new SQL Server details. After reinstall, apply the update rollups and check that the deployment is working as expected.
+  - If you're upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
+  - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, on the **Database Options** page, select **Retain database**. Then reinstall with the same settings you used for the original installation. On the **Database Configuration**, specify the new SQL Server details. After reinstall, apply the update rollups and check that the deployment is working as expected.
 
 ### Upgrade a highly available database
 
