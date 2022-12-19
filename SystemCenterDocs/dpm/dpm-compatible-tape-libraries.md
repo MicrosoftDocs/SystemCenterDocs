@@ -204,7 +204,7 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 
 | Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
 | --- | --- | --- | --- | --- | --- | --- |
-| Standalone Drive | Win Server 2016 | N/A | N/A | HPE LTO9 HH SAS | 1.09.4 or later | P371 or later |
+| Standalone | Win Server 2016 | N/A | N/A | HPE LTO9 HH SAS | 1.09.4 or later | P371 or later |
 | StoreOnce VTL |   | HP StoreEver Tape Drivers for Windows v4.0.0.0 or later | 3.11.x or later | HP LTO Drives | HP StoreEver Tape Drivers for Windows v4.0.0.0 or later | N/A |
 | ESL G3 |   | HP StoreEver Tape Drivers for Windows v4.0.0.0 or later | 680H.GS50501 MCB2 or later <br>656H.GS10801 MCB1 or later | HPE LTO7 FH FC <br><br>HP LTO6 FH FC <br><br>HP LTO5 FH FC <br><br>HP LTO4 FH FC | HP StoreEver Tape Drivers for Windows v4.0.0.0 or later | FA18 or later <br><br>J3PW or later <br><br>I6GW or later <br><br>H6HW or later |
 | MSL 6480 | Win Server 2016 | HPE StoreEver Tape Drivers for Windows 4.6.0.0 or later | 6.40 or later | HPE LTO9 HH FC <br><br>HPE LTO9 HH SAS | HPE StoreEver Tape Drivers for Windows 4.6.0.0 or later | P371 or later |
