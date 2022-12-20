@@ -5,10 +5,11 @@ description: This article details the upgrade information and procedures for Vir
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/25/2022
+ms.date: 12/20/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy23
 ---
 
 # Upgrade System Center Virtual Machine Manager
