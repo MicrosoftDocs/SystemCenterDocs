@@ -22,8 +22,8 @@ A logical switch brings virtual switch extensions, port profiles, and port class
 
 You install switch extensions on the VMM server and then include them in a logical switch. There are a few types of switch extensions:
 
-- **Monitoring extensions** can be used to monitor and report on network traffic, but they cannot modify packets.
-- **Capturing extensions** can be used to inspect and sample traffic, but they cannot modify packets.
+- **Monitoring extensions** can be used to monitor and report on network traffic, but they can't modify packets.
+- **Capturing extensions** can be used to inspect and sample traffic, but they can't modify packets.
 - **Filtering extensions** can be used to block, modify, or defragment packets. They can also block ports.
 - **Forwarding extensions** can be used to direct traffic by defining destinations, and they can also capture and filter traffic. To avoid conflicts, only one forwarding extension can be active on a logical switch.
 
@@ -51,8 +51,8 @@ You can set up a virtual switch extension manager (network manager) if you want 
     - Provide a description (optional).
 ::: moniker range="=sc-vmm-1807"
 5. In **Uplink Mode**, select:
-    - **Embedded Team** - if you are using Windows Server 2016 or later
-    - **Team** - if you are using Windows Server 2012 and want to use NIC teaming
+    - **Embedded Team** - if you're using Windows Server 2016 or later
+    - **Team** - if you're using Windows Server 2012 and want to use NIC teaming
     - **No Uplink Team** - if you're not using any teaming
 ::: moniker-end    
 ::: moniker range="=sc-vmm-2019"
@@ -69,9 +69,9 @@ You can set up a virtual switch extension manager (network manager) if you want 
 ::: moniker range="=sc-vmm-2019"
 6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it should manage the switch. If you enable this setting, you won't be able to add extensions to the switch.
     - **Weight** - Weight is the default minimum bandwidth mode. Weight specifies a percentage of bandwidth rather than a specific number of bits per second. Minimum bandwidth is a value ranging from 1 to 100.
-    - **Default** – The system sets the mode to **Weight** if the switch is not IOV enabled, or **None** if the switch is IOV enabled.
+    - **Default** – The system sets the mode to **Weight** if the switch isn't IOV enabled, or **None** if the switch is IOV enabled.
     - **Absolute** – Minimum bandwidth will be in bits per second.  
-    - **None** – Minimum bandwidth is disabled on the switch. Users cannot configure it on any network adapter that is connected to the switch.
+    - **None** – Minimum bandwidth is disabled on the switch. Users can't configure it on any network adapter that is connected to the switch.
 ::: moniker-end
 7. Enable SR-IOV if you need to. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter.
 If you want to enable:
@@ -99,9 +99,9 @@ If you want to enable:
 ::: moniker range="=sc-vmm-2019"
 9. In **Virtual Port**, add one or more port classifications and virtual network adapter port profiles. Every Port Classification must be mapped to a Port Profile. From VMM 2019 UR2, you can view Port Classification to Port Profile mapping on the **Virtual Port** screen.
 ::: moniker-end
-10. In **Uplink**, add an uplink port profile, or [create a new one](../vmm/network-port-profile.md). When you add an uplink port profile, it is placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
+10. In **Uplink**, add an uplink port profile, or [create a new one](../vmm/network-port-profile.md). When you add an uplink port profile, it's placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
 
-    If *Uplink* is chosen as Embedded Team (Switch Embedded Team or SET), then the only supported load balancing algorithms are Hyper-V Port and Dynamic. Hyper-V Port is the default load balancing algorithm. If *Uplink* mode is chosen as Embedded Team, then Hyper-V Port is the recommended load balancing algorithm; Dynamic is not recommended.
+    If *Uplink* is chosen as Embedded Team (Switch Embedded Team or SET), then the only supported load balancing algorithms are Hyper-V Port and Dynamic. Hyper-V Port is the default load balancing algorithm. If *Uplink* mode is chosen as Embedded Team, then Hyper-V Port is the recommended load balancing algorithm; Dynamic isn't recommended.
 
 11. In **Summary**, review the settings and select **Finish**. Verify; the switch created appears in **Logical Switches**.
 ::: moniker range="=sc-vmm-2019"
@@ -146,7 +146,7 @@ If a host in the VMM fabric has a standard virtual switch with or without SET, y
 
     Item | Conversion
     --- |---
-    **SR-IOV** |The SR-IOV setting (enabled or disabled) must be the same in the logical switch as it is in the virtual switch.<br/><br/> If SR-IOV is enabled, it must be enabled in the logical switch itself, and in at least one virtual network adapter port profile within the logical switch.
+    **SR-IOV** |The SR-IOV setting (enabled or disabled) must be the same in the logical switch as it's in the virtual switch.<br/><br/> If SR-IOV is enabled, it must be enabled in the logical switch itself, and in at least one virtual network adapter port profile within the logical switch.
     **Uplink mode**<br/><br/> **Load balancing algorithm**<br /><br /> **Teaming mode** | The **Uplink mode** setting must match.<br /><br /> If the uplink mode is **Team**, then the **Load balancing algorithm** and **Teaming mode** must also match.
     **Minimum bandwidth mode** | Must match.
     **Network sites** | The logical switch must be configured for the correct network sites (in the correct logical network) for this host.

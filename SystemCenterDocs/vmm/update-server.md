@@ -36,7 +36,7 @@ This article explains the prerequisites, information about how to add a WSUS ser
 - The WSUS server can be installed on the VMM management server, but if you'll be processing a large number of updates we recommend a separate server.
 - VMM can work with System Center Updates Publisher but only full content updates are supported. Metadata-only updates can't be added to a baseline.
 - After you add a WSUS server to VMM, you should manage it in the VMM console and not in the WSUS console. In VMM, you update the properties of the update server to configure a proxy server for synchronizations and to change the update categories, products, and supported languages that are synchronized by the WSUS server.
-- In VMM, administrators and delegated administrators manage fabric updates. Only administrators can manage the update server and synchronize updates. Delegated administrators can scan and remediate updates on computers that are within the scope of their user roles. Delegated administrators can use baselines created by administrators and other delegated administrators. But delegated administrators cannot modify or delete baselines created by others.
+- In VMM, administrators and delegated administrators manage fabric updates. Only administrators can manage the update server and synchronize updates. Delegated administrators can scan and remediate updates on computers that are within the scope of their user roles. Delegated administrators can use baselines created by administrators and other delegated administrators. But delegated administrators can't modify or delete baselines created by others.
 
 ## Add a WSUS server to the VMM fabric
 
@@ -66,7 +66,7 @@ After you've added the WSUS server to the fabric, you can configure update basel
 - Update baselines can be assigned to host groups and to individual computers based on their role in VMM.
 - Update baselines that are assigned to a host group are applied to all standalone hosts and host clusters in the host group, as well as the standalone hosts and host clusters in child host groups.
 - During a compliance scan, computers that are assigned to a baseline are graded for compliance with their assigned baselines. After a computer is found noncompliant, an administrator brings the computer into compliance through update remediation.
-- If a host is moved from one host group to another, the baselines for the new host group are applied to the host, and the baselines for the preceding host group no longer apply - that is, unless the baseline is assigned to both host groups. Explicit baseline assignments to a managed host stay with the host when it is moved from one host group to another. It is only when the baseline is assigned to a host group that baseline assignments get revoked during the move.
+- If a host is moved from one host group to another, the baselines for the new host group are applied to the host, and the baselines for the preceding host group no longer apply - that is, unless the baseline is assigned to both host groups. Explicit baseline assignments to a managed host stay with the host when it's moved from one host group to another. It's only when the baseline is assigned to a host group that baseline assignments get revoked during the move.
 - You can use two methods to prepare update baselines for remediation:
   - A VMM built-in update baseline: Sample Baseline for Critical Updates and Sample Baseline for Security Updates.
   - A custom update baseline.
@@ -106,7 +106,7 @@ After you've added the WSUS server to the fabric, you can configure update basel
 
 After you assign computers to an update baseline, you can scan them to determine their compliance status for the baselines. When a computer is scanned for compliance:
 
-- WSUS checks each update in the assigned update baselines to determine whether the update is applicable, and if the update is applicable, whether the it has been installed.
+- WSUS checks each update in the assigned update baselines to determine whether the update is applicable, and if the update is applicable, whether it has been installed.
 - After a compliance scan, for every computer, each update has a compliance status of Compliant, Non Compliant, Error, Pending Reboot, or Unknown. You can view compliance properties for additional information.
 - The compliance scan focuses only on the updates that the administrator has identified as important by adding them to a baseline. That enables organizations to monitor for compliance for what is deemed important for their organization.
 - The following changes can cause an Unknown update status for a computer and should be followed by a scan operation to access the computer's compliance status:

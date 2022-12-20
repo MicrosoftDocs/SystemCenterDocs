@@ -28,7 +28,7 @@ When you set up the logical network, you'll need to configure a static IP addres
 
 - **Pool on logical and VM network**: If you configure your logical network for network virtualization, you'll need to create IP address pools on the logical network and the VM network.
 - **Pool on logical network only**: If you're using VLAN or no isolation, you can use DHCP or create IP address pools on the logical network only. They'll automatically become available on the VM network.
-- **Imported address pools**: If you're using external networks through a vendor console, your IP address pools will be imported from the vendor and you don't need to create them in VMM.
+- **Imported address pools**: If you're using external networks through a vendor console, your IP address pools will be imported from the vendor, and you don't need to create them in VMM.
 
 
 ## Create a static address pool for a logical network
@@ -39,7 +39,7 @@ When you set up the logical network, you'll need to configure a static IP addres
 
 	- For an existing site, select the site and IP subnet from which to create the pool.
 	- For a new site, specify the site name, IP subnet to assign to the site, and VLAN information if relevant. Select the host groups that can access this site and the logical network.
-4. If you're using network virtualization, you can use the pool to support multicasting or broadcasting. To do this, select **Create a multicast IP address pool** and select the IP subnet you want to use. To use multicasting or broadcasting, note that:
+4. If you're using network virtualization, you can use the pool to support multicasting or broadcasting. To do this, select **Create a multicast IP address pool** and select the IP subnet you want to use. To use multicasting or broadcasting, ensure that:
 
 	- The logical network must have network virtualization enabled.
 	- The IP protocol setting for the VM network must match the IP protocol settings for the underlying logical network. You can't view the protocol setting in the VMM console after you've created it. You'll need to run **Get-SCVMMNEtwork -Name \<VM network name\> | Format -List Name, Isolation Type, PoolType** to see it.
@@ -65,7 +65,7 @@ When you set up the logical network, you'll need to configure a static IP addres
 
 ### Release inactive addresses from the static address pool
 
-You can release inactive addresses. When you do, VMM returns the address to the static IP or MAC address pool and considers it available for reassignment. An address is considered inactive if:
+You can release inactive addresses. When you do, VMM returns the address to the static IP, or MAC address pool and considers it available for reassignment. An address is considered inactive if:
 
 - A host that was assigned a static IP address through the bare-metal deployment process is removed from VMM management. When you remove the host, any IP and MAC addresses that were statically assigned to virtual machines on the host are also marked as inactive.
 - A virtual machine goes into a missing state because it was removed outside VMM.

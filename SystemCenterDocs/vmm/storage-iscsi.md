@@ -25,7 +25,7 @@ Here's what you need to do:
 
 
 1. **Install the role**: Install the iSCSI Target Server role (**Server Roles** > **File and Storage Services** > **File and iSCSI Services**) on a server that you want to add as a block storage device.
-2. **Set up virtual iSCSI disks**: After installing the role, you'll need to set up virtual iSCSI disks and connect to the servers you want. [Learn more](/archive/blogs/amitd/configure-windows-2012-r2-as-iscsi-target).
+2. **Set up virtual iSCSI disks**: After installing the role, you'll need to set up virtual iSCSI disks, and connect to the servers you want. [Learn more](/archive/blogs/amitd/configure-windows-2012-r2-as-iscsi-target).
 ::: moniker range="sc-vmm-2016"
 3. **Install the provider**: If the iSCSI Target Server runs Windows Server 2012, you must install the SMI-S provider on it. The provider is located with the setup files in \amd64\Setup\msi\iSCSITargetSMISProvider.msi, and on the VMM server in \Program Files\Microsoft System Center 2012\Virtual Machine Manager\Setup\Msi\iSCSITargetProv\iSCSITargetSMISProvider.msi. You'll need to run the .msi file on the iSCSI Target Server. If the server's running Windows Server 2012 R2, you don't need to install the provider.
 ::: moniker-end
@@ -49,7 +49,7 @@ Open PowerShell and use the cmdlets described below to manage iSCSI target serve
 
 |Command|Purpose|
 |-----------|-----------|
-|`$Cred = Get-Credential`|Obtain the iSCSI Target Server local administrative credentials that are based on user name and password.<br /><br />Note that any account that is part of the Local Administrators group is sufficient.|
+|`$Cred = Get-Credential`|Obtain the iSCSI Target Server local administrative credentials that are based on user name and password.<br /><br /> Any account that is part of the Local Administrators group is sufficient.|
 |`$Runas = New-SCRunAsAccount -Name "iSCSIRunas" -Credential $Cred`|Create a Run As account in VMM.|
 |`Add-SCStorageProvider -Name "Microsoft iSCSI Target Provider" -RunAsAccount $Runas -ComputerName "<computername>" -AddSmisWmiProvider`|Add the storage provider.|
 

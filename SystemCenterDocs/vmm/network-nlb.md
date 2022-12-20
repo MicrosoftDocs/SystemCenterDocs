@@ -25,7 +25,7 @@ Read this article to learn about integrating Windows network load balancing (NLB
 
 Service templates group VMs together to provide an app. They contain information about a service, including the VMs that are deployed as part of the service, the applications installed on VMs, and the network settings that should be used. You can add VM templates, network settings, applications, and storage to a service template.
 
-Service templates can be single or multi tier. A single tier service contains one VM used as a specific app. A multi-tier service contains multiple VMs. [Learn more](library-service-templates.md).
+Service templates can be single or multi-tier. A single tier service contains one VM used as a specific app. A multi-tier service contains multiple VMs. [Learn more](library-service-templates.md).
 
 
 
@@ -39,7 +39,7 @@ To add a load balancer, you'll need to do the following actions:
 - [Create an IP address pool](network-pool.md) for the logical networks. The IP pool must contain a reserved range of virtual IP addresses that can be assigned to the load balancer. You must set up the static IP address pools for the load balancer and for the virtual machines behind the load balancer. These can be from the same pool or from different pools, but you'll need both VIPs and IP addresses for the virtual machines.
 - [Create VM networks](network-virtual.md) on top of logical networks.
 - [Create VIP templates](network-nlb.md#create-vip-templates): A virtual IP (VIP) template contains load balanced settings for a specific type of network traffic. After you create a VIP template, you can specify it when you set up load balancing in a service template.
-- [Set up a hardware load balancer](network-nlb.md#set-up-a-hardware-load-balancer): If you want to enable hardware load balancing in a service template, there are a number of prerequisites you'll need to prepare.
+- [Set up a hardware load balancer](network-nlb.md#set-up-a-hardware-load-balancer): If you want to enable hardware load balancing in a service template, there are many prerequisites you'll need to prepare.
 - [Set up NLB](network-nlb.md#set-up-nlb): If you don't want to use a hardware load balancer, you can use NLB. There are some requirements and limitations.
 
 ### Create VIP templates
@@ -60,7 +60,7 @@ To add a load balancer, you'll need to do the following actions:
 	- Select **Custom** to specify **TCP**, **UDP**, or both.
 
 6. In **Persistence**, select **Enable persistence** to make the client session sticky (affinity). This setting means that the load balancer will always try to direct the same client to the same VM. It's based on the specified source IP address and subnet mask, the destination IP address, and other parameters that vary depending on the protocol.
-7. In **Health Monitors**, you can optionally specify that a verification should run against the load balancer at regular intervals. To add a health monitor, specify the protocol and the request. For example, entering the command GET? makes an HTTP GET request fo rhte home page of the load balancer and checks for a header response. You can also modify the response type, and monitoring interval, timeout, and retries.
+7. In **Health Monitors**, you can optionally specify that a verification should run against the load balancer at regular intervals. To add a health monitor, specify the protocol and the request. For example, entering the command GET? makes an HTTP GET request for the home page of the load balancer and checks for a header response. You can also modify the response type, monitoring interval, timeout, and retries.
 
 > [!NOTE]
 > The timeout should be less than the interval.

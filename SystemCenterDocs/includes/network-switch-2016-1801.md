@@ -22,8 +22,8 @@ A logical switch brings virtual switch extensions, port profiles, and port class
 
 You install switch extensions on the VMM server and then include them in a logical switch. There are a few types of switch extensions:
 
-- **Monitoring extensions** can be used to monitor and report on network traffic, but they cannot modify packets.
-- **Capturing extensions** can be used to inspect and sample traffic, but they cannot modify packets.
+- **Monitoring extensions** can be used to monitor and report on network traffic, but they can't modify packets.
+- **Capturing extensions** can be used to inspect and sample traffic, but they can't modify packets.
 - **Filtering extensions** can be used to block, modify, or defragment packets. They can also block ports.
 - **Forwarding extensions** can be used to direct traffic by defining destinations, and they can capture and filter traffic. To avoid conflicts, only one forwarding extension can be active on a logical switch.
 
@@ -60,7 +60,7 @@ You can set up a virtual switch extension manager (network manager) if you want 
 > Only one forwarding extension can be enabled.
 
 5. In **Virtual Port**, add one or more port classifications and virtual network adapter port profiles. You can also create a port classification and set a default classification.
-6. In **Uplink**, add an uplink port profile or [create a new one](../vmm/network-port-profile.md). When you add an uplink port profile, it is placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
+6. In **Uplink**, add an uplink port profile or [create a new one](../vmm/network-port-profile.md). When you add an uplink port profile, it's placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
 7. In **Summary**, review the settings and select **Finish**. Verify; the switch appears in **Logical Switches**.
 
 ## Convert virtual switch to logical switch
@@ -92,7 +92,7 @@ If a host in the VMM fabric has a standard virtual switch, you can convert it to
 
     Item | Conversion
     --- |---
-    **SR-IOV** |The SR-IOV setting (enabled or disabled) must be the same in the logical switch as it is in the virtual switch.<br/><br/> If SR-IOV is enabled, it must be enabled in the logical switch itself, and in at least one virtual network adapter port profile within the logical switch.
+    **SR-IOV** |The SR-IOV setting (enabled or disabled) must be the same in the logical switch as it's in the virtual switch.<br/><br/> If SR-IOV is enabled, it must be enabled in the logical switch itself, and in at least one virtual network adapter port profile within the logical switch.
     **Uplink mode**<br/><br/> **Load balancing algorithm**<br /><br /> **Teaming mode** | The **Uplink mode** setting must match.<br /><br /> If the uplink mode is **Team**, then the **Load balancing algorithm** and **Teaming mode** must also match.
     **Minimum bandwidth mode** | Must match.
     **Network sites** | The logical switch must be configured for the correct network sites (in the correct logical network) for this host.
@@ -149,4 +149,4 @@ $defaultPortFeature.SettingData.NetCfgInstanceId="{" + $vswitch.Id +"}"
 Add-VMSwitchExtensionPortFeature -SwitchName $VirtualSwitchName -VMSwitchExtensionFeature $defaultPortFeature –ExternalPort
 ```
 
-After you run the script, refresh the host in VMM and verify if VMM recognizes the switch as a logical switch.
+After you run the script, refresh the host in VMM, and verify if VMM recognizes the switch as a logical switch.

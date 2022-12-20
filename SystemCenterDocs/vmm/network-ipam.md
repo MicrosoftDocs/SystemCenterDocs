@@ -47,7 +47,7 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 3. In **Add Network Service Wizard** > **Name**, specify a name and optional description.
 4. In **Manufacturer and Model** > **Manufacturer**, select **Microsoft**, and select **Model** > **Microsoft Windows Server IP Address Management**.
 5. In the **Credentials** page, specify the account you created.
-6. In the **Connection String** page, in the **Connection string** box, type the FQDN of the IPAM server. If you've configured a specific port on the IPAM server, end the string with the port number (for example, **:443**). If a port number is not specified, the default port for the IPAM server is used.
+6. In the **Connection String** page, in the **Connection string** box, type the FQDN of the IPAM server. If you've configured a specific port on the IPAM server, end the string with the port number (for example, **:443**). If a port number isn't specified, the default port for the IPAM server is used.
 7. In **Provider** > **Configuration provider** > **Microsoft IP Address Management Provider**, select **Test** to run basic validation tests with the provider. Results that say **Passed** or **Failed** indicate whether the provider works as expected. One possible cause of failure is insufficient permissions in the Run As account. Results that say **Implemented** and **Not implemented** are informational only, and indicate whether the provider supports a particular API.
 8. In **Host Group**, select one or more host groups for which you want integration between the IPAM server and the VMM server.
 9. In **Summary**, review the settings and select **Finish**. Check that the IPAM server is listed under **Network Services**. Select and hold the server > **Refresh** to get the latest settings.
@@ -65,11 +65,11 @@ VM network | VIRTUALIZED IP ADDRESS SPACE<br /> Customer IP Address Space: **VM 
 
 ## IP address reservation
 
-IP reservation in IPAM is honored by VMM. Please follow the steps below for reserving IP addresses.
+IP reservation in IPAM is honored by VMM. Follow the steps below for reserving IP addresses.
 
 1. In IPAM, select and hold **IP Address Range** for IP address reservation.
-2. Select **Edit IP Address Range**, and a window opens.
-3. In the opened window, there is a **Reservations** tab on the left.
+2. Select **Edit IP Address Range** and a window opens.
+3. In the open window, there's a **Reservations** tab on the left.
 4. In the **Reservations** tab, you can reserve IP addresses for reservation or whether to use them as VIPs.
 5. Go to VMM console. Refresh the IPAM service in the network service section.
 6. Now, you can see the reserved IP addresses reflected in the pool section of the logical network.

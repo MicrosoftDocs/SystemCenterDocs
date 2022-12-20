@@ -33,8 +33,8 @@ Ensure that the storage device is supported before you add it.
     - If you're using SMI-S, specify whether the provider uses **SMI-S CIMXML** or **SMI-S WMI WMI**, add the IP address/FQDN, and add the port used to connect to the provider on the remote server. You can enable SSL if you're using CIMXML. Then specify an account for connecting to the provider.
     - If you're using SMP, select the provider from the list. If it isn't in the list, select **Import** to refresh it.
 4. In **Gather Information**, VMM automatically tries to discover and import the storage device information. To retry, select **Scan Provider**.
-5. If you selected the option to use an SSL connection for an SMI-S provider, note that:
-    - During discovery, the **Import Certificate** dialog appears. Check settings and select **Import**. By default the certificate common name (CN) will be verified. This might cause storage discovery to fail if there's no CN or it doesn't match.
+5. If you selected the option to use an SSL connection for an SMI-S provider, you will observe that:
+    - During discovery, the **Import Certificate** dialog appears. Check settings and select **Import**. By default, the certificate common name (CN) will be verified. This might cause storage discovery to fail if there's no CN or it doesn't match.
     - If discovery fails because of the CN, disable CN verification in the registry on the VMM server. In the registry, go to **HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Storage Management/** and create a new DWORD value - **DisableHttpsCommonNameCheck**. Set the value to 1.
 6. If the discovery process succeeds, the discovered storage arrays, storage pools, manufacturer, model, and capacity are listed on the page. When the process finishes, select **Next**.
 7. In **Select Storage Devices**, you can specify a classification for each storage pool. Storage classifications group storage pools with similar characteristics together so that you can assign a classification as storage for a host or cluster, rather than a specific storage device. Learn more about setting up classifications.

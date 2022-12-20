@@ -32,14 +32,14 @@ Default MAC address pool settings:
 
 ## Before you start
 
-Before you create a custom MAC pool, note that:
+Before you create a custom MAC pool, ensure that:
 
 - If you want to divide one of the default pools into smaller custom pools, you must first delete the default MAC address pool or the default VMware MAC address pool. You must delete the default pool to avoid duplicate MAC address assignments.
 - The first three octets of the beginning and ending MAC address must be the same.
 - You must enter a valid hexadecimal value between 00 and FF.
-- The ranges that you specify cannot overlap.
-- The address range must not have the multi-cast bit set to 1. For example, you cannot use addresses that start with X1, X3, X5, X7, X9, XB, XD, or XF, where X is any value.
-- To avoid conflicts with addresses reserved by Microsoft, VMware, and Citrix, do not use the following prefixes:
+- The ranges that you specify can't overlap.
+- The address range must not have the multi-cast bit set to 1. For example, you can't use addresses that start with X1, X3, X5, X7, X9, XB, XD, or XF, where X is any value.
+- To avoid conflicts with addresses reserved by Microsoft, VMware, and Citrix, don't use the following prefixes:
 	- Reserved for Microsoft: 00:03:FF; 00:0D:3A; 00:12:5A; 00:15:5D; 00:17:FA; 00:50:F2; 00:1D:D8 (except for the 00:1D:D8:B7:1C:00 – 00:1D:D8:F4:1F:FF range that is reserved for VMM)
 	- Reserved for VMware: 00:05:69; 00:0C:29; 00:1C:14; 00:50:56 (except for the 00:50:56:00:00:00 – 00:50:56:3F:FF:FF range that is reserved as the default VMware static range)
 

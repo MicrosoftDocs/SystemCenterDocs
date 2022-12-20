@@ -30,7 +30,7 @@ You can use System Center - Virtual Machine Manager (VMM) to manage your physica
 **Feature** | **Details**
 ---|---
 **Connection** | VMM can manage block storage devices that connect using Fibre Channel, Serial Attached SCSI (SAS), or iSCSI (Internet SCSI).<br/><br/> VMM can discover and manage iSCSI arrays with static, dynamic, or manual targets.<br/><br/>You can use a Microsoft iSCSI target server as a storage device by installing its provider.
-**Protocols** | VMM provides support for storage devices that use the SMI-S and and SMP protocols.<br/><br/> VMM uses Window Storage Management API (SMAPI) to manage block-based storage devices compliant with SMI-S or SMP specifications.<br/><br/> VMM combines SMAPI and SMP to manage directly attached storage and external storage arrays.<br/><br/> VMM combines SMAPI and the Storage Management service (which functions as an SMI-S client) to manage SMI-S storage devices.<br/><br/> Vendors of storage devices with the SMI-S standard create SMI-S provides for their devices.
+**Protocols** | VMM provides support for storage devices that use the SMI-S and SMP protocols.<br/><br/> VMM uses Window Storage Management API (SMAPI) to manage block-based storage devices compliant with SMI-S or SMP specifications.<br/><br/> VMM combines SMAPI and SMP to manage directly attached storage and external storage arrays.<br/><br/> VMM combines SMAPI and the Storage Management service (which functions as an SMI-S client) to manage SMI-S storage devices.<br/><br/> Vendors of storage devices with the SMI-S standard create SMI-S provides for their devices.
 **Virtualization hosts** | Storage configured in VMM can only be used for Hyper-V hosts and clusters.
 **Supported storage arrays** | Specific storage arrays are supported in VMM. You can use other arrays, but there's no guarantee that you'll be able to manage all storage tasks in VMM. We recommend that you chat with your storage provider to determine VMM support.
 **Virtual fibre channel** | If you want to use virtual fibre channel to give VMs direct access to fibre channel storage, you can manage this storage with VMM in these configurations.<br/><br/> Single storage array connected to a single fabric (comprised of single or multiple switches) connected to a single vSAN.<br/><br/> Single storage array connected to multiple fabrics (comprised of single or multiple switches per fabric) connected to a single vSAN.<br/><br/> Multiple storage arrays connected to a single fabric (comprised of single or multiple switches) connected to a single vSAN.<br/><br/> Multiple storage arrays connected to multiple fabrics (comprised of single or multiple switches per fabric) connected to multiple vSANs. This configuration provides dual-redundant paths to storage arrays.<br/><br/> A vSAN can only include HBAs from a single fabric.
@@ -61,7 +61,7 @@ VMM can manage file storage that supports the SMB 3.0 protocol. SMB is supported
 - **Windows file server**: You can add a remote file server as a storage device or you can scale file-based storage Scale-Out File Server (SOFS).
 - **Scaled-out file server (SOFS)**: SOFS provides a file server cluster in which storage is shared between the cluster nodes. Storage for SOFS could be a SAN (SAS, iSCSI, Fibre Channel) or could integrate with Storage Spaces Direct.
 - **Storage Spaces Direct (S2D)**: S2D is the next evolution of Microsoft Storage Spaces, which virtualizes storage by grouping disks into storage pools and creating virtual disks (storage spaces) from the pool capacity. In S2D, you can build highly available storage using local storage. This removes the need for remote SAN storage devices and enables the use of storage devices that weren't previously available, such as SATA SSD or NVMe flash. [Learn more](/windows-server/storage/storage-spaces/storage-spaces-direct-overview).
-- **Storage replication**: VMM supports Windows Storage Replica for protecting data in a primary storage volume than replicating it to a secondary volume. [Learn more](storage-replica.md).
+- **Storage replication**: VMM supports Windows Storage Replica for protecting data in a primary storage volume and replicating it to a secondary volume. [Learn more](storage-replica.md).
 - **Storage resources**: You can control access to shared storage on an SOFS or VM by setting storage quality-of-service (QoS) policies. These policies set maximum and minimum bandwidth for storage resources.
 
 ## Set up file storage
@@ -81,10 +81,10 @@ The general process for setting up file storage in the VMM fabric is as follows:
 
 Storage classifications provide a layer of abstraction over specific storage devices. You group storage devices together based on their characteristics. For example, you could create:
 
-- Bldg1Gold: A set of solid-state drives (SSDs) that you will make available to users in building 1.
-- Bldg1Silver: A set of SSDs and hard disk drives (HDDs) that you will make available to users in building 1.
-- Bldg2Gold: A set of SSDs that you will make available to users in building 2.
-- Bldg2Silver: A set of SSDs and HDDs that you will make available to users in building 2.
+- Bldg1Gold: A set of solid-state drives (SSDs) that you'll make available to users in building 1.
+- Bldg1Silver: A set of SSDs and hard disk drives (HDDs) that you'll make available to users in building 1.
+- Bldg2Gold: A set of SSDs that you'll make available to users in building 2.
+- Bldg2Silver: A set of SSDs and HDDs that you'll make available to users in building 2.
 
 After you've created classifications, you assign them to storage pools that include block or file-based storage. You can tweak classification settings for file shares within pools as required.
 
