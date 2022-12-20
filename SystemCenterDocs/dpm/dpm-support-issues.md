@@ -354,7 +354,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ### Support parameters for protecting computers running client operating systems with DPM
 **Issue**: Support for backing up Windows clients with DPM.
 
-**Workaround**: DPM 2022 can back up Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).
+**Workaround**: DPM 2022 can back up Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2022).
 
 ::: moniker-end
 
@@ -386,7 +386,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ::: moniker range="sc-dpm-2022"
 **Issue**: Support for backing up Windows Server with DPM.
 
-**Workaround**: DPM 2022 can back up Windows Server 2022, 2019, and 2016. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).
+**Workaround**: DPM 2022 can back up Windows Server 2022, 2019, and 2016. For information about supported workloads, see [What can DPM back up](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2022).
 
 ::: moniker-end
 
