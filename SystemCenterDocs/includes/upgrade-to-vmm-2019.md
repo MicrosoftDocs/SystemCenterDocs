@@ -202,7 +202,7 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 2. In the **Hosts** pane, ensure that the **Agent Status** column is displayed. If it isn't displayed, select and hold a column heading and select **Agent Status**.
 3. In the host group, select **Refresh**. If a host needs to be reassociated, the Host Status column displays **Needs Attention** and the **Agent Status** column displays **Access Denied**. Select and hold the host that you want to reassociate, and then select **Reassociate**.
 4. In **Reassociate Agent** page, provide credentials, and then select **OK**. The Agent Status displays the status as **Reassociating**. After the host is reassociated successfully, the  status changes to **Responding**.
-5. . Refresh the host, the host status column now displays **OK**. After you've reassociated the host, you might need to update the VMM agent on the host.
+5. Refresh the host, the host status column now displays **OK**. After you've reassociated the host, you might need to update the VMM agent on the host.
 
 ## Upgrade the VMM SQL Server database
 
