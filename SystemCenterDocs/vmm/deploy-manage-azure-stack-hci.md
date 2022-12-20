@@ -149,12 +149,12 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 
 - When you create a network adapter port profile, we recommend you to allow **IEEE priority**. [Learn more](network-port-profile.md#create-a-virtual-network-adapter-port-profile).
 
-    You can also set the IEEE Priority by using the following PowerShell commands:
+   You can also set the IEEE Priority by using the following PowerShell commands:
 
-    ```PowerShell
-    Set-VMNetworkAdapterVlan -VMNetworkAdapterName 'SMB2' -VlanId '101' -Access -ManagementOS
-    Set-VMNetworkAdapter -ManagementOS -Name 'SMB2' -IeeePriorityTag on
-    ```
+   ```PowerShell
+   Set-VMNetworkAdapterVlan -VMNetworkAdapterName 'SMB2' -VlanId '101' -Access -ManagementOS
+   Set-VMNetworkAdapter -ManagementOS -Name 'SMB2' -IeeePriorityTag on
+   ```
 
 
 **Use the following steps to configure DCB settings**:
@@ -168,8 +168,8 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 
 3. Provide **Priority** and **Bandwidth** values for SMB-Direct and Cluster Heartbeat traffic.
 
-   > [!NOTE]
-   > Default values are assigned to **Priority** and **Bandwidth**. Customize these values based on your organization's environment needs.
+>[!NOTE]
+>Default values are assigned to **Priority** and **Bandwidth**. Customize these values based on your organization's environment needs.
 
    ![Screenshot of Priority bandwidth.](./media/s2d/assign-priority-bandwidth.png)
 
