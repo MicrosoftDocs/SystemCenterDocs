@@ -108,7 +108,7 @@ Use the following procedures:
 11. In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
   >[!NOTE]
-  >You can't change the ports that you assign during the installation of a VMM management server, unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986; this port number is preassigned.
+  >You can't change the ports that you assign during the installation of a VMM management server, unless you uninstall and then reinstall the VMM management server. Also, don't configure any feature to use port 5986; this port number is preassigned.
 
 12. In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you can't remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 13. In **Upgrade compatibility report**, review the settings, and select **Next** to proceed with the upgrade.
@@ -152,7 +152,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
 
 4. Upgrade to the Windows 10/1709 version of the ADK.
 5. Install VMM 1801 on the passive node by using the following steps:
--	In the main setup page, select **Install**.
+  -	In the main setup page, select **Install**.
   -   In **Select features to install**, select  **VMM management server** and then select **Next**. The VMM console will be automatically installed.
   - When prompted, confirm that you want to add this server as a node to the highly available deployment.
   - On **Database Configuration** page, if prompted, select to upgrade the database.

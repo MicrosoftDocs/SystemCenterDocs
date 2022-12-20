@@ -34,7 +34,7 @@ Ensure the following:
 1. Complete any jobs that are currently running in VMM.
 
 >[!NOTE]
-> The jobs history is deleted during the upgrade.
+>The jobs history is deleted during the upgrade.
 
 2. Close any connections to the VMM management server, including the VMM console and the VMM command shell.
 3. Close any other programs that are running on the VMM management server.
@@ -62,8 +62,8 @@ If you're running more than one System Center components, they should be upgrade
 
 ## Upgrade a standalone VMM server
 
-> [!NOTE]
-> When you're upgrading a standalone VMM server, we recommend that you install VMM 2019 on the same server that had VMM 2016, 1801, or 1807.  
+>[!NOTE]
+>When you're upgrading a standalone VMM server, we recommend that you install VMM 2019 on the same server that had VMM 2016, 1801, or 1807.  
 
 If you're using Distributed Key Management, you may choose to install VMM 2019 on a different server, but ensure that the new server has the same name as that of the old VMM server.
 
@@ -77,7 +77,6 @@ Use the following procedures:
 2.	[Uninstall the VMM](#uninstall-the-vmm). Ensure to remove both the management server and the console.
 3.	Upgrade the management OS to Windows Server 2019.
 4.	Install Windows 10 version of ADK.
-
 
 
 #### Uninstall the VMM
@@ -103,12 +102,12 @@ Use the following procedures:
 	- Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database, select **Yes**.
 9.	In **Configure service account and distributed key management**, specify the account that the VMM service will use.
 
-  >[!NOTE]
-  > You can't change the identity of the VMM service account after installation.
+>[!NOTE]
+> You can't change the identity of the VMM service account after installation.
 
 10.	Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
-  >[!NOTE]
-  > Choose the settings for the service account and distributed key management, carefully. Based on your selection, encrypted data, such as passwords in templates, might not be available after the upgrade and you'll need to enter them manually.
+>[!NOTE]
+> Choose the settings for the service account and distributed key management, carefully. Based on your selection, encrypted data, such as passwords in templates, might not be available after the upgrade and you'll need to enter them manually.
 
 11.	In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
@@ -120,8 +119,8 @@ Use the following procedures:
 14.	In **Installation Summary**, review the settings and select **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
 15.	In **Setup completed successfully**, select **Close** to finish the installation. To open the VMM console, check **Open the VMM console when this wizard closes**, or you can select the Virtual Machine Manager Console icon on the desktop.
 
-> [!NOTE]
-> Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM.
+>[!NOTE]
+>Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM.
 
 If there is any issue with the setup, check the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder.
 
@@ -152,11 +151,11 @@ This procedure requires no additional VMM servers but has increased risk for dow
 3.	On the passive VMM node, upgrade the management OS to Windows Server 2019/2016.
 4. Upgrade to the Windows 10 version of the ADK.
 5. Install VMM 2019 on the passive node by using the following steps:
- -	In the main setup page, select **Install**.
-  -   In **Select features to install**, select  **VMM management server** and then select **Next**. The VMM console will be automatically installed.
-  - When prompted, confirm that you want to add this server as a node to the highly available deployment.
-  - On the **Database Configuration** page, if prompted, select to upgrade the database.
-  - Review the summary and complete the installation.
+  -	 In the main setup page, select **Install**.
+  -  In **Select features to install**, select  **VMM management server** and then select **Next**. The VMM console will be automatically installed.
+  -  When prompted, confirm that you want to add this server as a node to the highly available deployment.
+  -  On the **Database Configuration** page, if prompted, select to upgrade the database.
+  -  Review the summary and complete the installation.
 6.	Fail over the active VMM node to the newly upgraded VMM server.
 7.	Repeat the procedure on other VMM nodes.
 8.  Update the cluster functional level by using the

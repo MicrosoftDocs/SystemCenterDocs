@@ -67,10 +67,10 @@ There are circumstances in which you need to remove a library server or share. F
 
 - To remove a library server, select **Library** > **Library servers**. Select **Actions** > **Library Server** > **Remove**.
 
-> [!NOTE]
-> - Specify an account with administrative permissions on the server.
-> - VMM provides a list of dependent resources. If you process VMM removes any references to the removed files on dependent resources. When you remove a library server, the **Library Server** role is removed from the VMM agent running on the server. If the server isn't performing any other VMM roles, the agent is removed.
-> - If you remove a highly available library server, the cluster is removed from the **Library** view. The individual cluster nodes aren't removed, but they're not displayed in the library. To remove the nodes from VMM, remove the VMM agent from each computer.
+Ensure that you specify an account with administrative permissions on the server.
+
+- VMM provides a list of dependent resources. If you process VMM, it removes any references to the removed files on dependent resources. When you remove a library server, the **Library Server** role is removed from the VMM agent running on the server. If the server isn't performing any other VMM roles, the agent is removed.
+- If you remove a highly available library server, the cluster is removed from the **Library** view. The individual cluster nodes aren't removed, but they're not displayed in the library. To remove the nodes from VMM, remove the VMM agent from each computer.
 
 ## Remove orphaned resources
 
@@ -79,9 +79,9 @@ When you remove a library share from VMM management and there are templates that
 To remove orphaned resources, modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you add the library share again, VMM doesn't automatically reassociate the template with the physical library resource. You must complete these steps to correct the template issues and to remove any orphaned resources.
 
 1. Select **Library** > **Orphaned Resources**.
-1. You won't be able to delete an orphaned resource until the templates that reference it are updated to valid references. To view the templates, select and hold the orphaned resource > **Properties**. To update the template, select it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
-1. Add a new resource that's valid.
-1. When you've completed these steps for all the templates, close the **Properties** dialog. To verify there aren't any dependencies, select and hold the orphaned resource > **Properties** > **Dependencies**. Then select and hold the orphaned resource > **Delete**.
+2. You won't be able to delete an orphaned resource until the templates that reference it are updated to valid references. To view the templates, select and hold the orphaned resource > **Properties**. To update the template, select it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
+3. Add a new resource that's valid.
+4. When you've completed these steps for all the templates, close the **Properties** dialog. To verify there aren't any dependencies, select and hold the orphaned resource > **Properties** > **Dependencies**. Then select and hold the orphaned resource > **Delete**.
 
 
 ::: moniker range="sc-vmm-2019"
@@ -99,7 +99,7 @@ For effective management of replicated shares using VMM, disable the usage of *a
 
 VMM generates a GUID for all the library objects managed by VMM. This metadata is written into *Alternate Data Stream* of the file. VMM uses *Alternate Data Stream* to identify library objects as the same objects, while they're moved across folders in library shares or in scenarios where a library object is renamed. Disabled *Alternate Data stream* impacts the identification of object as the same object in the scenarios mentioned above.
 
- However, for effective management of replicated library shares using VMM, it's required to disable the *Alternate Data Stream* option.
+However, for effective management of replicated library shares using VMM, it's required to disable the *Alternate Data Stream* option.
 
   ![Screenshot of disable alternate data stream.](media/library-resources/disable-alternate-data-stream.png)
 

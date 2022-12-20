@@ -103,25 +103,25 @@ Use the following procedures:
 9.	In **Configure service account and distributed key management**, specify the account that the VMM service will use.
 
 >[!NOTE]
-> You can't change the identity of the VMM service account after installation.
+>You can't change the identity of the VMM service account after installation.
 
 10.	Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
 
 >[!NOTE]
-> Choose the settings for the service account and distributed key management carefully. Based on your selection, encrypted data, such as passwords in templates, might not be available after the upgrade and you'll need to enter them manually.
+>Choose the settings for the service account and distributed key management carefully. Based on your selection, encrypted data, such as passwords in templates, might not be available after the upgrade and you'll need to enter them manually.
 
 11.	In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
 >[!NOTE]
->You can't change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986; this port number is preassigned.
+>You can't change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, don't configure any feature to use port 5986; this port number is preassigned.
 
 12.	In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you can't remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 13.	In **Upgrade compatibility report**, review the settings and select **Next** to proceed with the upgrade.
 14.	In **Installation Summary**, review the settings and select **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
 15.	In **Setup completed successfully**, select **Close** to finish the installation. To open the VMM console, check **Open the VMM console when this wizard closes** or you can select the Virtual Machine Manager Console icon on the desktop.
 
-> [!NOTE]
-> Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM.
+>[!NOTE]
+>Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM.
 
 If there is any issue with the setup, check the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder.
 
@@ -139,8 +139,8 @@ The following two modes of upgrade are supported:
 - [Mixed mode with no additional VMM servers](#mixed-mode-upgrade-with-no-additional-vmm-servers)
 - [Mixed mode with additional VMM servers](#mixed-mode-upgrade-with-additional-vmm-servers)
 
-> [!NOTE]
-> SQL Server upgrade can be performed any time, independent of VMM upgrade.
+>[!NOTE]
+>SQL Server upgrade can be performed any time, independent of VMM upgrade.
 
 ### Mixed mode upgrade with no additional VMM servers
 This procedure requires no additional VMM servers, but has increased risk for downtime in some scenarios. For example, when you have two node HA VMM and the active VMM node fails while you're upgrading the passive. In this scenario, your VMM server won't have a failover node available.
@@ -152,11 +152,11 @@ This procedure requires no additional VMM servers, but has increased risk for do
 3. On the passive VMM node, upgrade the management OS to Windows server 2022.
 4. Upgrade to the Windows 11 or Windows Server 2022 version of the [ADK](/windows-hardware/get-started/adk-install).
 5. Install VMM 2022 on the passive node by using the following steps:
--	In the main setup page, select **Install**.
-  -   In **Select features to install**, select **VMM management server** and then select **Next**. The VMM console will be automatically installed.
-  - When prompted, confirm that you want to add this server as a node to the highly available deployment.
-  - On **Database Configuration** page, if prompted, select to upgrade the database.
-  - Review the summary and complete the installation.
+  -	 In the main setup page, select **Install**.
+  -  In **Select features to install**, select **VMM management server** and then select **Next**. The VMM console will be automatically installed.
+  -  When prompted, confirm that you want to add this server as a node to the highly available deployment.
+  -  On **Database Configuration** page, if prompted, select to upgrade the database.
+  -  Review the summary and complete the installation.
 6.	Fail over the active VMM node to the newly upgraded VMM server.
 7.	Repeat the procedure on other VMM nodes.
 8.  Update the cluster functional level by using the
@@ -180,8 +180,8 @@ This procedure requires additional VMM servers; however, it ensures almost no do
 9.	[Optional] Install the appropriate SQL Command line utilities.
 
 
-> [!NOTE]
-> Once the HA VMM upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM.  
+>[!NOTE]
+>Once the HA VMM upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM.  
 
 ## Update VMM agents
 

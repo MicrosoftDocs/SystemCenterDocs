@@ -15,8 +15,8 @@ ms.technology: virtual-machine-manager
 
 The following sections describe how to upgrade to System Center Virtual Machine Manager (VMM) 2016. They include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
-> [!NOTE]
-> During VMM Installation, ensure that SQL Database is not part of any Availability Group.
+>[!NOTE]
+>During VMM Installation, ensure that SQL Database is not part of any Availability Group.
 
 ## Requirements and limitations
 
@@ -71,10 +71,10 @@ Back up and upgrade the operating system and then install VMM 2016.
 
 1. Back up and retain the VMM database.
 2. Uninstall VMM. To do this:
-a. In **Add remove programs**, select **VMM** > **Uninstall**.
-b. Select **Remove Features**, and then select **VMM management Server** and **VMM Console**.
-c. In **Database Options**, select **Retain database**.
-d. Review the summary and select **Uninstall**.
+  a.  In **Add remove programs**, select **VMM** > **Uninstall**.
+  b.  Select **Remove Features**, and then select **VMM management Server** and **VMM Console**.
+  c.  In **Database Options**, select **Retain database**.
+  d.  Review the summary and select **Uninstall**.
 3. Upgrade the management operating system to Windows Server 2016.
 4. Upgrade to the Windows 10 version of the ADK.
 
@@ -95,8 +95,8 @@ d. Review the summary and select **Uninstall**.
  - Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database, select **Yes**.
 11. In **Configure service account and distributed key management**, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
 12. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
- >[!NOTE]
- > Choose the settings for the service account and distributed key management carefully. Based on your selection, encrypted data such as passwords in templates, might not be available after the upgrade and you'll need to enter them manually.
+>[!NOTE]
+> Choose the settings for the service account and distributed key management carefully. Based on your selection, encrypted data such as passwords in templates, might not be available after the upgrade and you'll need to enter them manually.
 13. In **Port configuration**, use the default port number for each feature, or provide a unique port number that is appropriate in your environment. To change the ports you assign during installation of a VMM management server, you need to uninstall and then reinstall the server. Don't configure any feature to use port 5986; this port number is preassigned.
 14. In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you can't remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 15. In **Upgrade compatibility report**, review the settings, select **Next** to proceed with the upgrade.
@@ -130,7 +130,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
 3. On the passive VMM node, upgrade the management OS to Windows Server 2016.
 4. Upgrade to the Windows 10 version of the ADK.
 5. Install VMM 2016 on the passive node by using the following steps:
-- In the main setup page, select **Install**.
+  - In the main setup page, select **Install**.
   - In **Select features to install**, select  **VMM management server** and then select **Next**. The VMM console will be automatically installed.
   - When prompted, confirm that you want to add this server as a node to the highly available deployment.
   - On the **Database Configuration** page, if prompted, select to upgrade the database.
@@ -228,8 +228,8 @@ Read this [blog entry](https://azure.microsoft.com/blog/azure-site-recovery-wind
 
 After the upgrade, reconnect VMM to Operations Manager.
 
-> [!NOTE]
-> You shouldn't install any management pack on VMM 2016 RTM. Update Rollup 1 or later must be installed. If you've installed any management packs on the RTM version, uninstall them before you install Update Rollup 1.
+>[!NOTE]
+>You shouldn't install any management pack on VMM 2016 RTM. Update Rollup 1 or later must be installed. If you've installed any management packs on the RTM version, uninstall them before you install Update Rollup 1.
 
 ## Configure Always On Availability Groups
 
