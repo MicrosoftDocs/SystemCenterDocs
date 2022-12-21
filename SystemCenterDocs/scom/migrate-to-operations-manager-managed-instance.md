@@ -162,7 +162,7 @@ System Center Orchestrator to Azure Automation is the recommendation on Azure eq
 
 # [Agent mapping and configuration](#tab/agent-mapping-config)
 
-To migrate from Agent to SCOM Managed Instance (preview), see [High level overview of upgrading agents and running two environments](/SystemCenterDocs/scom/deploy-upgrade-overview.md#high-level-overview-of-upgrading-agents-and-running-two-environments-1).
+To migrate from Agent to SCOM Managed Instance (preview), see [High level overview of upgrading agents and running two environments](/system-center/scom/deploy-upgrade-overview?view=sc-om-2022#high-level-overview-of-upgrading-agents-and-running-two-environments-1).
 
 --- 
 
