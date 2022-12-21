@@ -194,12 +194,12 @@ Provision as follows:
     - Select or clear **Skip Active Directory for this computer name**. The Active Directory check prevents deployment if the computer account already exists. This helps prevent deploying a computer with the same name as an existing computer. If you skip the Active Directory check, and there's an existing computer account in AD DS other than the Run As account that was specified in the physical computer profile, the deployment process fails to join the computer to the domain.
 11. For the computer you're configuring, select a network adapter (on the left). You can modify the configuration, or fill in more information (...).
 12. You can specify the MAC address of the management NIC (not the BMC) and static IP settings for this network adapter. If you specify an address, select a logical network and an IP subnet if applicable. If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address that's within the logical network or its subnet. If you select an IP subnet, ensure that it corresponds to the physical location where you're deploying the host and to the network that the adapter is connected to. Otherwise, the deployment may fail.
-12. Configure the adapter settings for each network adapter.
+13. Configure the adapter settings for each network adapter.
 
-> [!NOTE]
-> If the number of physical network adapters in a computer doesn't match the number of physical network adapters that are defined in the physical computer profile, you must specify any information that is missing for the adapters. If you decide not to provision this computer right now (for example, if physical hardware needs to be installed or uninstalled), you can select the computer's BMC IP address from the list and then select **Remove**.
+>[!NOTE]
+>If the number of physical network adapters in a computer doesn't match the number of physical network adapters that are defined in the physical computer profile, you must specify any information that is missing for the adapters. If you decide not to provision this computer right now (for example, if physical hardware needs to be installed or uninstalled), you can select the computer's BMC IP address from the list and then select **Remove**.
 
-13. Repeat the configuration for each BMC IP address in the list. When you've filled in information for all the computers you want to provision, select **Next**.
+14. Repeat the configuration for each BMC IP address in the list. When you've filled in information for all the computers you want to provision, select **Next**.
 15. In **Summary**, confirm the settings, and then select **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the **Jobs** dialog might appear. Ensure that all the steps in the job have a status of **Completed**, and then close the dialog.
 16. To confirm that the host was added, select **Fabric** > **Servers** > **All Hosts** > host group, and verify that the new Hyper-V host appears in the group.
 
@@ -237,8 +237,8 @@ Provision as follows:
     - You can specify the MAC address of the management NIC (not the BMC) and static IP settings for this network adapter. If you specify an address, select a logical network and an IP subnet if applicable. If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address that is within the logical network or its subnet. If you select an IP subnet, ensure that it corresponds to the physical location where you're deploying the host and to the network that the adapter is connected to. Otherwise, deployment may fail.
 8. Configure the network adapter settings for each network adapter.
 
-> [!NOTE]
-> If the number of physical network adapters in a computer doesn't match the number of physical network adapters that're defined in the physical computer profile, you must specify any information that's missing for the adapters. If you decide not to provision this computer right now (for example, if physical hardware needs to be installed or uninstalled), you can select the computer's BMC IP address from the list and then select **Remove**.
+>[!NOTE]
+>If the number of physical network adapters in a computer doesn't match the number of physical network adapters that're defined in the physical computer profile, you must specify any information that's missing for the adapters. If you decide not to provision this computer right now (for example, if physical hardware needs to be installed or uninstalled), you can select the computer's BMC IP address from the list and then select **Remove**.
 
 9. Repeat the configuration for each BMC IP address in the list.
 10. When you've filled in the needed information for all the computers you want to provision, select Next.

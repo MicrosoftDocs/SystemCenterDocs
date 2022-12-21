@@ -42,20 +42,20 @@ VMM enables you to deploy and manage virtual machines and services across multip
  - You can deploy VMM services to vSphere hosts. You can't deploy vApps.
  - You can make vSphere host resources available to a VMM cloud by creating clouds from host groups in which vSphere hosts are located or by creating a cloud from a VMware resource pool.
 
- > [!NOTE]
- > VMM doesn't integrate with VMware vCloud.
+ >[!NOTE]
+ >VMM doesn't integrate with VMware vCloud.
 
  - You can use dynamic optimization and power optimization for vSphere hosts. VMM can load balance virtual machines on vSphere clusters using live migration. With power optimization, you can configure VMM to turn vSphere hosts on and off for power management.
  - You can transfer VMware resources using live migrating between hosts in a cluster (uses vMotion) and live storage migration (uses storage vMotion). Resources supported for transfer include network migration to and from the library and between hosts.
 
- > [!NOTE]
- > VMware thin provision disks become thick when you migrate a disk to the VMM library.
+ >[!NOTE]
+ >VMware thin provision disks become thick when you migrate a disk to the VMM library.
 
  - You can place vSphere hosts managed by VMM into and out of maintenance mode.
  - You can organize and store VMware VMs, VMDK files, and VMware templates in the VMM library. You can create new VMs from templates.
 
- > [!NOTE]
- > VMM doesn't support older VMDK disk types. These disk types are supported: regular VMDK files (VMFS and moniolithic flat), VMDK files that are used to access physical disks (vmfsPassthroughRawDeviceMap), and snapshots (vmfssparse).
+ >[!NOTE]
+ >VMM doesn't support older VMDK disk types. These disk types are supported: regular VMDK files (VMFS and moniolithic flat), VMDK files that are used to access physical disks (vmfsPassthroughRawDeviceMap), and snapshots (vmfssparse).
 
  - You can create templates using .vmdk files stored in the library. You can also import templates stored on vSphere hosts (only template metadata is imported to VMM).
  - VMM supports existing standard and distributed vSwitches and port groups. vSwitches and port groups must be configured with the vCenter server.
@@ -64,8 +64,8 @@ VMM enables you to deploy and manage virtual machines and services across multip
  - VMM doesn't support VMware VM with virtual hard disks connected to an IDE bus.
  - VMM supports VMware thin provision hard disk through the dynamic disk type.
 
- > [!NOTE]
- > If you create and deploy a VM to a vSphere host configured to use a dynamic disk, the disk will be thin provisioned. If a VM was created as a thin provisioned disk, out-of-band VM will display it as dynamic. If you save a thin provisioned disk to the library, VMM will save it as thick. It remains thick if you create a VM from it.
+ >[!NOTE]
+ >If you create and deploy a VM to a vSphere host configured to use a dynamic disk, the disk will be thin provisioned. If a VM was created as a thin provisioned disk, out-of-band VM will display it as dynamic. If you save a thin provisioned disk to the library, VMM will save it as thick. It remains thick if you create a VM from it.
 
  - All storage must be added to vSphere hosts outside VMM.
  - Communication between VMM and the vCenter server is SSL encrypted. You'll need a certificate to identify the vCenter server. You can use a self-signed certificate for a vCenter server or a third-party verified certificate.
@@ -101,16 +101,16 @@ VMM enables you to deploy and manage virtual machines and services across multip
 
 By default, when you added vSphere hosts to VMM, VMM automatically created logical networks that match the virtual network switch name.
 
-> [!NOTE]
-> VMM doesn't automatically create port groups, so you'll need to configure port groups with the necessary VLANs that correspond to network sites on the vCenter server.
+>[!NOTE]
+>VMM doesn't automatically create port groups, so you'll need to configure port groups with the necessary VLANs that correspond to network sites on the vCenter server.
 
 Associate the logical network with the physical network adapter (for an external virtual network) as follows:
 
 1. Select **Fabric** > **Servers** > **All Hosts** > vSphere host > **Host** > **Properties** > **Hardware**.
 2. In **Network Adapters**, select the physical network adapter on the host. In **Logical network connectivity**, select the logical networks you want to associate with the adapter.
 
-> [!NOTE]
-> Only logical networks available to the host group are available.
+>[!NOTE]
+>Only logical networks available to the host group are available.
 
 3. Select **Advanced** > **Advanced Network Adapter Properties** to see IP subnets and VLANs available for a logical network. By default for a logical network, the subnets and VLANs are scope to the host group or inherited via a parent host group. If none appears, it indicates that no network site exists for the logical network. If **Unassigned** is available, select it to view VLANS to which the physical adapter is connected, but that aren't included in a network site.
 4. View virtual network settings in the host properties > **Virtual Networks**. View compliance information in **Fabric** > **Networking** > **Logical Networks** > **Hosts** > **Logical Network Information for Hosts** > **Compliance**. A status of **Fully compliant** indicates that all subnets and VLAN that are in the network site are assigned to the network adapter.
