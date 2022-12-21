@@ -69,7 +69,7 @@ IP reservation in IPAM is honored by VMM. Follow the steps below for reserving I
 
 1. In IPAM, select and hold **IP Address Range** for IP address reservation.
 2. Select **Edit IP Address Range** and a window opens.
-3. In the open window, there's a **Reservations** tab on the left.
+3. In the opened window, there's a **Reservations** tab on the left.
 4. In the **Reservations** tab, you can reserve IP addresses for reservation or whether to use them as VIPs.
 5. Go to VMM console. Refresh the IPAM service in the network service section.
 6. Now, you can see the reserved IP addresses reflected in the pool section of the logical network.
