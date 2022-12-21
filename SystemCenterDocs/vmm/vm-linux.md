@@ -25,10 +25,10 @@ This article describes how to create and deploy Linux VMs in the System Center -
 
 ## Before you start
 
-VMM supports virtual machines that contain Linux as the guest operating system. Note that:
+VMM supports virtual machines that contain Linux as the guest operating system. Ensure that:
 
 - Linux Integration Services (LIS) must be installed on the virtual machine.
-- The VMM guest agent for Linux must be installed on the virtual machine. It is required for service template integration, and it allows you to modify properties on the Linux computer such as the host name.
+- The VMM guest agent for Linux must be installed on the virtual machine. It's required for service template integration, and it allows you to modify properties on the Linux computer, such as the host name.
 
     > [!NOTE]
     > SCVMMLinuxGuestAgent (XPlat) cfghostdomain garbles the hosts file if hostname is already set to localhost. We recommend you not to set the hostname as localhost when deploying Linux VMs through VMM.
@@ -65,7 +65,7 @@ By default, LIS is included with some distributions of Linux. If LIS is not incl
     ./install scvmmguestagent.1.0.0.544.x86.tar
     ```
 
-When the agent installs on the VM the following files and folders will be created on the VHD:
+When the agent installs on the VM, the following files and folders will be created on the VHD:
 
 - A default installation folder (/opt/microsoft/scvmmguestagent), and an installation log file (scvmm-install.log)
 - A default log files folder - /var/opt/microsoft/scvmmagent/log
@@ -73,4 +73,4 @@ When the agent installs on the VM the following files and folders will be create
 - A configuration file (scvmm.conf). This file contains the location of the log file and is used to control logging during deployment and specialization.
 
 ## Next steps
-[vm-settings](vm-settings.md)
+[vm-settings](vm-settings.md).
