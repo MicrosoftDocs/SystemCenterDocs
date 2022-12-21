@@ -112,7 +112,7 @@ Associate the logical network with the physical network adapter (for an external
 >[!NOTE]
 >Only logical networks available to the host group are available.
 
-3. Select **Advanced** > **Advanced Network Adapter Properties** to see IP subnets and VLANs available for a logical network. By default for a logical network, the subnets and VLANs are scope to the host group or inherited via a parent host group. If none appears, it indicates that no network site exists for the logical network. If **Unassigned** is available, select it to view VLANS to which the physical adapter is connected, but that aren't included in a network site.
+3. Select **Advanced** > **Advanced Network Adapter Properties** to see IP subnets and VLANs available for a logical network. By default for a logical network, the subnets and VLANs are scope to the host group or inherited via a parent host group. If none appears, it indicates that no network site exists for the logical network. If **Unassigned** is available, select it to view VLANS to which the physical adapter is connected but that isn't included in a network site.
 4. View virtual network settings in the host properties > **Virtual Networks**. View compliance information in **Fabric** > **Networking** > **Logical Networks** > **Hosts** > **Logical Network Information for Hosts** > **Compliance**. A status of **Fully compliant** indicates that all subnets and VLAN that are in the network site are assigned to the network adapter.
 
 
