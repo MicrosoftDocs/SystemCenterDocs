@@ -60,7 +60,7 @@ Here's what you need to do:
 1. Select **Fabric** > **Storage** > **Add Resources** > **Storage Devices**.
 2. In **Add Storage Devices Wizard** > **Select Provider Type**, select **Fibre Channel fabric discovered and managed by an SMI-S provider**.
 3. In **Specify Discovery Scope**, specify the IP address or FQDN and the port number of the provider.
-4. If you're using SMI-S, specify whether the provider uses **SMI-S CIMXML** or **SMI-S WMI** and add the IP address/FQDN and port used to connect to the provider on the remote server. If you're using CIMXML, you can enable SSL.
+4. If you're using SMI-S, specify whether the provider uses **SMI-S CIMXML** or **SMI-S WMI**, and add the IP address/FQDN and port used to connect to the provider on the remote server. If you're using CIMXML, you can enable SSL.
 5. Specify an account for connecting to the provider.
 6. In **Gather Information**, VMM automatically discovers and imports the fibre channel fabric information. If the discovery process succeeds, the discovered fabric name, switches, and fabric World Wide Node Names (WWNN) are listed on the page. When the process successfully completes, select **Next**. To retry the discovery process for an unsuccessful attempt, select **Scan Provider**.
 7. If you selected the option to use an SSL connection for an SMI-S provider, ensure that:

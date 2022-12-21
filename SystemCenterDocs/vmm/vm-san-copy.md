@@ -28,7 +28,7 @@ Rapid provisioning provides a method for deploying new virtual machines to stora
 - You can use rapid provisioning to deploy standalone VMs and VMs that are deployed as part of a service.
 - You create a SAN copy-capable template from a virtual hard disk (VHD) that resides on a storage logical unit that supports SAN copy through cloning or snapshots.
 - When you create a VM by using the SAN copy-capable template, VMM quickly creates a read-write copy of the logical unit that contains the VHD and places the virtual machine files on the new logical unit.
-When VMM deploys a virtual machine by using rapid provisioning through SAN copy, VMM uses a SAN transfer instead of a network transfer. During a SAN transfer, a SAN copy of the logical unit that contains the virtual machine is created and is assigned to the destination host or host cluster. Because the files for a virtual machine are not actually moved over the network when you transfer a virtual machine over a SAN, it is much faster than a transfer over a standard network.
+When VMM deploys a virtual machine by using rapid provisioning through SAN copy, VMM uses a SAN transfer instead of a network transfer. During a SAN transfer, a SAN copy of the logical unit that contains the virtual machine is created and is assigned to the destination host or host cluster. Because the files for a virtual machine aren't moved over the network when you transfer a virtual machine over a SAN, it's much faster than a transfer over a standard network.
 - You can use either of the following methods to create a SAN copy-capable template.
     - Create a SAN-copy capable template from a new VM
     - Create a SAN-copy capable template from an existing VM
@@ -45,7 +45,7 @@ When VMM deploys a virtual machine by using rapid provisioning through SAN copy,
     - If you want to create a SAN-copy capable template from a new virtual machine, the host where you create the virtual machine must also be a member of this host group.
     - If you want to create a SAN-copy capable template from an existing virtual machine, and want to create and assign the logical unit from the library server, the library server must be a member of this host group. Therefore, the library server must be a Hyper-V host. (If you don't want to add the library server as a host, you can assign the logical unit out-of-band by using your storage array vendor’s management tools.)
     - If you want to use rapid provisioning to deploy generation 2 VMs, you must choose a host with an operating system that supports them.
-    - All Hyper-V hosts that you want to use for rapid provisioning and the library server must have access to the storage array. Also, they must use the same type of SAN connectivity. For SAN migrations to succeed, you cannot have some hosts that connect to the array through Fibre Channel and others that connect through iSCSI. Configuration varies, depending on your storage hardware.
+    - All Hyper-V hosts that you want to use for rapid provisioning and the library server must have access to the storage array. Also, they must use the same type of SAN connectivity. For SAN migrations to succeed, you can't have some hosts that connect to the array through Fibre Channel and others that connect through iSCSI. Configuration varies, depending on your storage hardware.
 - You should get specific configuration information from the storage vendor, but configuration typically requires:
     - The Multipath I/O (MPIO) feature must be added on each host that will access the Fibre Channel or iSCSI storage array. You can add the MPIO feature through Server Manager.
         - If the MPIO feature is already enabled before you add a host to VMM management, VMM will automatically enable MPIO for supported storage arrays by using the Microsoft provided Device Specific Module (DSM). If you already installed vendor-specific DSMs for supported storage arrays and then add the host to VMM management, the vendor-specific MPIO settings will be used to communicate with those arrays.
@@ -81,18 +81,18 @@ Create a template from an existing VM.
 
 - If you want to perform this procedure in VMM, the library server must be added as a managed Hyper-V host. This enables you to assign the logical unit to the library server through VMM. If you don't want to make the library a managed Hyper-V host, you can use your array vendor’s management tools to assign the logical unit to the library server.
 - You must have an existing virtual hard disk (that was generalized by using Sysprep) that you want to use as a base image for rapid provisioning.
-- Create a folder in the library share that you will use to mount the logical unit to and to store the virtual hard disk. For example, create a folder in the SEALibrary library share that is named Rapid Provision VHD.
+- Create a folder in the library share that you'll use to mount the logical unit to and to store the virtual hard disk. For example, create a folder in the SEALibrary library share that is named Rapid Provision VHD.
 
 1. Create a logical unit in the VMM storage fabric from the managed storage pool you want to use for rapid provisioning.
 2. Format the logical unit, and mount it to the folder path you created.
 3. Assign the logical unit to the library server. If the library server is a managed Hyper-V host, you can create and assign the logical unit from the library server. You can also format the disk with NTFS and mount the logical unit to the folder path in the library share at the same time.
     - When you create the logical unit, select the option **Mount in the following empty NTFS folder** > **Browse**, and then select the folder that you created.
-    - Do not assign a drive letter. Also, do not ever create multiple mount points to the folder.
+    - Don't assign a drive letter. Also, don't ever create multiple mount points to the folder.
 
 4. If the library server isn't a managed Hyper-V host, use your array vendor’s management tools to create the logical unit and to unmask the logical unit to the library server. Then do the following:
     - Don't assign a drive letter.
     - Use Disk Management (diskmgmt.msc) to rescan the disk, initialize the disk, and then format it.
-    - In Disk Management, mount the logical unit to the folder path you created in the library share (**Change Drive Letter and Paths** > **Add** > **Mount in the following empty NTFS folder**, and click the empty library folder).
+    - In Disk Management, mount the logical unit to the folder path you created in the library share (**Change Drive Letter and Paths** > **Add** > **Mount in the following empty NTFS folder**, and select the empty library folder).
 5. Copy the virtual hard disk you want to use to the new folder in the library share.
 
     > [!NOTE]

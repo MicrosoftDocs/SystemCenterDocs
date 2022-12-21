@@ -42,7 +42,7 @@ Here's what you need for the deployment:
 
 **Prerequisite** | **Details**
 --- | ---
-**Deployment requirements** | You must have a PXE server configured with Windows Deployment Services.<br/><br/> If you have an existing PXE server in your environment configured with Windows Deployment Services, you can add that server to VMM. Then you can use it for provisioning in VMM (and VMM will recognize only the resulting servers). All other requests will continue to be handled by the PXE server according to how it is configured.<br/><br/> If you don't have an existing PXE server, you can deploy the Windows Deployment Services role on a server running a supported operating system (Windows Server 2012 R2 or later).
+**Deployment requirements** | You must have a PXE server configured with Windows Deployment Services.<br/><br/> If you've an existing PXE server in your environment configured with Windows Deployment Services, you can add that server to VMM. Then you can use it for provisioning in VMM (and VMM will recognize only the resulting servers). All other requests will continue to be handled by the PXE server according to how it's configured.<br/><br/> If you don't have an existing PXE server, you can deploy the Windows Deployment Services role on a server running a supported operating system (Windows Server 2012 R2 or later).
 **Location** | The PXE server must be in the same subnet as the physical computers that you want to provision.
 **Windows Deployment Services installation** | When you install Windows Deployment Services, you should install both the Deployment server and Transport server options. You don't need to add images.<br/><br/> During host deployment, VMM uses a virtual hard disk that you've created and stored in the library.<br/><br/> You don't need to configure settings on the PXE response tab. VMM provides its own PXE provider.
 **Permissions** | When you add a PXE server, you must specify account credentials for an account that has local administrator permissions on the PXE server. You can enter a user name and password or specify a Run As account. You can create the RunAs account before you begin or during deployment.
@@ -52,12 +52,12 @@ Here's what you need for the deployment:
 
 **Prerequisite** | **Details**
 --- | ---
-**Virtual hard disk** | Ensure that you have a generalized virtual hard disk in a VMM library share. It should be running Windows Server 2012 R2 or later.<br/><br/> We recommend that for production servers, you use a fixed disk (.vhd or .vhdx file format) to increase performance and to help protect user data.<br/><br/> Ensure that you have a generalized virtual hard disk in a VMM library share. It should be running Windows Server 2012 R2 or later.
+**Virtual hard disk** | Ensure that you've a generalized virtual hard disk in a VMM library share. It should be running Windows Server 2012 R2 or later.<br/><br/> We recommend that for production servers, you use a fixed disk (.vhd or .vhdx file format) to increase performance and to help protect user data.<br/><br/> Ensure that you've a generalized virtual hard disk in a VMM library share. It should be running Windows Server 2012 R2 or later.
 **Dynamic disk** | When you create a physical computer profile, VMM converts a dynamic disk to a fixed disk.
 **Custom drivers** | If you plan to assign custom drivers to a physical computer profile, you add them to a VMM library share in one or more folders with a .CR (custom resources) extension. VMM recognizes them as custom resources.
 **Answer file** | Like custom resources, if you want a physical computer profile to include references to an answer file (Unattend.xml file), create the answer file and add it to a VMM library share before you start deployment. For example, you might want to create an answer file to enable Remote Desktop Services and place it on a library share. Then you can select that file when you configure a physical computer profile.
 **RDS** | If you use Remote Desktop Services (RDS) to manage servers, we recommend that you enable the RDS connections in the image. You can also enable RDS by using an answer file in the physical computer profile.
-**Logical networks** | If you've already configured logical networks or logical switches in VMM, you can include those configurations in the physical computer profile.<br/><br/>To include static IP addressing controlled through a logical network in a physical computer profile, configure the logical network. The logical network must include at least one network site and static IP address pool.<br/><br/>The network site must also be available to the host group or to a parent host group where you want to assign the hosts that you will be creating from bare metal.
+**Logical networks** | If you've already configured logical networks or logical switches in VMM, you can include those configurations in the physical computer profile.<br/><br/>To include static IP addressing controlled through a logical network in a physical computer profile, configure the logical network. The logical network must include at least one network site and static IP address pool.<br/><br/>The network site must also be available to the host group or to a parent host group where you want to assign the hosts that you'll be creating from bare metal.
 **Logical switch** | To use a logical switch, install all the necessary virtual switch extensions and extension providers, and create the switch before you create the physical computer profile.<br/><br/> In the logical switch, as a best practice, include one or more port classifications for the virtual ports.<br/><br/> To apply a logical switch to physical adapters in a physical computer profile, ensure that you've installed the intended number of NICs on the physical computer. </br><br/>  
 
 ## Deployment steps
@@ -100,7 +100,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 
 1. Locate a driver package that you want to add to the library.
 2. In the library share that is located on the library server associated with the group where you want to deploy the physical computers, create a folder to store the drivers and then copy the driver package to the folder.
-3. We strongly recommend that you create a separate folder for each driver package, and that you don't mix resources in the driver folders. If you include other library resources such as .iso images, .vhd files, or scripts with an .inf file name extension in the same folder, the VMM library server will not discover those resources. Also, when you delete an .inf driver package from the library, VMM deletes the entire folder where the driver .inf file resides.
+3. We strongly recommend that you create a separate folder for each driver package, and that you don't mix resources in the driver folders. If you include other library resources such as .iso images, .vhd files, or scripts with an .inf file name extension in the same folder, the VMM library server won't discover those resources. Also, when you delete an .inf driver package from the library, VMM deletes the entire folder where the driver .inf file resides.
 4. In the VMM console > **Library** > **Library Servers**, expand the library server where the share is located, select and hold the share, and then select **Refresh**. After the library refreshes, the folder should appear.
 5. Assign tags if required. In **Library**, expand the folder that you created to store the drivers, and select the folder that contains the driver package.
 6. In the **Physical Library Objects**, select and hold the driver .inf file and then select **Properties**.
@@ -108,7 +108,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 
 ## Create a physical computer profile
 
-Before you start, determine whether the physical computers use Extensible Firmware Interface (EFI) or BIOS. If you have both, create a separate profile for each type.
+Before you start, determine whether the physical computers use Extensible Firmware Interface (EFI) or BIOS. If you've both, create a separate profile for each type.
 
 1. Select **Library** > **Home** > **Create** > **Physical Computer Profile**.
 2. In the **New Physical Computer Profiles Wizard** > **Profile Description**, type in a name and description and select **VM host**.
@@ -135,7 +135,7 @@ Run the wizard:
 1. Select **Fabric** > **Servers** > **Home** > **Create** > **File Server Cluster**.
 2. In the **Create Clustered File Server Wizard** > **General**, type in a cluster name, file server name, and cluster IP addresses if needed.
 3. In **Resource Type**, select the option to provision bare-metal computers. Select the physical computer profile and select **Next**.
-4. In **Credentials and Protocols**, select **Browse** next to the Run As account and choose the account with permissions to access the BMC. In the **Protocol** list, select the out-of-band management protocol you want to use for discovery. If you want to use DCMI, select **Intelligent Platform Management Interface (IPMI)**. DCMI 1.0 isn't listed, but it is supported. Ensure that you use the latest version of firmware for the BMC model.
+4. In **Credentials and Protocols**, select **Browse** next to the Run As account and choose the account with permissions to access the BMC. In the **Protocol** list, select the out-of-band management protocol you want to use for discovery. If you want to use DCMI, select **Intelligent Platform Management Interface (IPMI)**. DCMI 1.0 isn't listed, but it's supported. Ensure that you use the latest version of firmware for the BMC model.
 5. In **Discovery Scope**, specify the IP address scope that includes the IP addresses of the BMCs. You can add a single address, a subnet, or range.
 6. In **Target Resources**, select the computers you want to provision, allow time for deep discovery, and select items to review and modify information.
 
@@ -146,5 +146,5 @@ Run the wizard:
 
 	- **DHCP**: If your physical computer profile uses DHCP, select a BMC IP address and type in a computer name. Decide whether to skip the AD check. If you do the check, deployment will continue if the computer account exists. Select the entry for each BMC IP address.
 	- **Static**: If the profile uses static IP addresses for each BMC IP address, type in a MAC address of the computer's network adapter that's used to communicate with VMM. Select the logical network you want to use. The default logical network is the one indicated in the profile. Select the IP subnet you want to use. The subnet list is scope to what's defined for the logical network in the associated network sites. You should select the IP subnet that corresponds to the physical location in which you're deploying the server and the network to which the adapter is connected. You can automatically assign an IP address or assign a specific address.
-	
+
 8. In **Summary**, confirm the settings and select **Finish**. To confirm the cluster was added, select **Fabric** > **Storage** > **File Servers**.

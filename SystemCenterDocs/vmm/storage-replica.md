@@ -29,7 +29,7 @@ This article explains how Storage Replica integrates with System Center - Virtua
 
 ## Storage Replica in VMM
 
-You can use Storage Replica to replicate Hyper-V cluster data or file data. Using Storage Replica in VMM provides a number of business advantages:
+You can use Storage Replica to replicate Hyper-V cluster data or file data. Using Storage Replica in VMM provides many business advantages:
 
 - Eliminates the cost and complexity associated with synchronous replication solutions such as SAN.
 - Synchronous replication minimizes downtime and data loss. It provides an RPO of 0 (zero data loss). RTO (data unavailability) only occurs during the time in which a primary site fails and a secondary site starts.
@@ -43,7 +43,7 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 * You need two sets of storage, either volume or file storage. Both the source and destination locations must have the same type of storage (file or volume) but the actual storage can be mixed. For example, you could have Fibre Channel SAN at one end and Spaces Direct (in hyper-converged or disaggregated mode) at the other.
 * Each set of storage should be available in each of the clusters. Cluster storage shouldn't be shared.
 * Source and destination volumes (including log volumes) need to be identical in size and block size. This is because Storage Replica uses block replication.
-* You need at least one 1 GbE connection on each storage server, preferably 10 GbE, iWARP, or InfiniBand.
+* You need at least one 1-GbE connection on each storage server, preferably 10 GbE, iWARP, or InfiniBand.
 * Each file server or cluster node needs firewall rules that allow ICMP, SMB (port 445, plus 5445 for SMB Direct), and WS-MAN (port 5985) bi-directional traffic between all nodes.
 * You need to be a member of the Administrator group on each cluster node.
 * Storage Replica can only be set up using Windows PowerShell at present.
@@ -63,7 +63,7 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 7.  **Refresh**: To finalize the creation of replication groups and to trigger the initial data replication, you need to refresh the primary and secondary storage provider. Data replicates to destination storage.
 8.  **Verify status**: Now you can check the status of the primary replication group. It should be in the Replicating state.
 9.  **Add VMs**: When delta replication is up and running, you can add VMs that use storage contained in the replication group. When you add the VMs, they'll be detected and will begin replicating automatically.
-10. **Run failover**: After replication is in a Synchronizing state, you can run a failover to check if it's working as expected. There isn't a test failover mechanism right now, so you'll run a manual failover in response to planned or unplanned outages. After failover, you can delete the VM on the source site (if it still exists) and create a VM on the destination site using the replicated data.
+10. **Run failover**: After replication is in a Synchronizing state, you can run a failover to check if it's working as expected. There isn't a test failover mechanism right now, so you'll run a manual failover in response to planned or unplanned outages. After failover, you can delete the VM on the source site (if it still exists), and create a VM on the destination site using the replicated data.
 11. **Run failback**: After failover is complete and replica VMs are up and running, you can fail back as you need to. Ensure that:
 
     - If you run an unplanned failover and your source location isn't available, you'll run a failover to fail back from the secondary to primary location, and then create the VM in the primary location.

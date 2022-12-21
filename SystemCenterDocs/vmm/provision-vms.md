@@ -25,7 +25,7 @@ This article provides an overview of provisioning Virtual Machines (VMs) in the 
 
 ## Provisioning
 
-VMs can be provisioned using a number of methods:
+VMs can be provisioned using multiple methods:
 
 - [Create VMs from a blank virtual hard disk](vm-blank-disk.md): You create a VM and install an operating system from an .iso image, removable media, or from a network boot with a PXE server.
 - [Create a VM from an existing virtual hard disk](vm-existing-disk.md): You create a VM from a virtual hard disk in the VMM library. We recommend a VHD that's been generalized with Sysprep.
@@ -57,8 +57,8 @@ When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placem
 ### Host ratings
 
 
-- VMM evaluates all hosts within a selected host group and any hosts contained in child host groups. Host ratings are calculated on a scale of 0 to 5 stars, where 5 stars indicate the highest rating. The ratings are based on default criteria that don't include all information. For example, network connection speed is not taken into account.
-- Ratings are based on individual hosts, and not on the relative suitability of all available hosts. Ratings for one host do not change based on the ratings of the other hosts.
+- VMM evaluates all hosts within a selected host group and any hosts contained in child host groups. Host ratings are calculated on a scale of 0 to 5 stars, where 5 stars indicate the highest rating. The ratings are based on default criteria that don't include all information. For example, network connection speed isn't taken into account.
+- Ratings are based on individual hosts, and not on the relative suitability of all available hosts. Ratings for one host don't change based on the ratings of the other hosts.
 - VMM calculates host ratings according to specific formulas, as described in the following table.
 
     - **CPU rating**:  [1 – ( CPU Utilization / (100 – CPU Reserve)) ] x CPU Weight
@@ -81,7 +81,7 @@ When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placem
 
 #### Zero rating
 
-A host might be assigned a zero rating if it doesn't meet conditions to receive a non-zero rating. To receive a non-zero rating, the following criterion are required:
+A host might be assigned a zero rating if it doesn't meet conditions to receive a non-zero rating. To receive a non-zero rating, the following criteria are required:
 
 - The host must have at least one hard disk with enough storage to hold the total hard disk space required by the virtual machine. With dynamic hard disks, the current hard disk size is used, not the maximum hard disk size.
 - The memory required for the virtual machine must be less than the current amount of memory available on the host. A host must also have sufficient memory available to start the virtual machine.
@@ -97,9 +97,9 @@ A host might be assigned a zero rating if it doesn't meet conditions to receive 
 
 - The host must contain all of the virtual networks required for the virtual machine. If you use network tags, the network location tags for the virtual machine and host must be identical.
 - A host in maintenance mode automatically receives a zero rating.
-- If Microsoft RemoteFX 3D video adapter is enabled on the virtual machine, the host must support RemoteFX and have one or more emoteFX-capable graphics processing units (GPUs) with sufficient available memory. If these conditions aren't available and the virtual machine is running, placement will be blocked. If it is stopped or in a saved state, a zero rating with a warning will be issued, but placement will not be blocked.
-- Highly available virtual machines must be placed on clustered hosts. VMM assigns zero stars to hosts that are not clustered but manual placement is not blocked. If you migrate a highly-available virtual machine to a non-clustered host, the virtual machine will no longer be highly available after the migration.
-- VMM blocks migration of Hyper-V hosts to hosts running different virtualization software. Migration of a virtual machine with specific features not allowed by the virtualization software that is running on a host will be blocked. For example, Hyper-V hosts do not allow booting up from a SCSI hard disk.
+- If Microsoft RemoteFX 3D video adapter is enabled on the virtual machine, the host must support RemoteFX and have one or more emoteFX-capable graphics processing units (GPUs) with sufficient available memory. If these conditions aren't available and the virtual machine is running, placement will be blocked. If it's stopped or in a saved state, a zero rating with a warning will be issued, but placement won't be blocked.
+- Highly-available virtual machines must be placed on clustered hosts. VMM assigns zero stars to hosts that aren't clustered but manual placement isn't blocked. If you migrate a highly-available virtual machine to a non-clustered host, the virtual machine will no longer be highly available after the migration.
+- VMM blocks migration of Hyper-V hosts to hosts running different virtualization software. Migration of a virtual machine with specific features not allowed by the virtualization software that is running on a host will be blocked. For example, Hyper-V hosts don't allow booting up from a SCSI hard disk.
 
 
 ## Handling generation 1 and 2 VMs
@@ -133,7 +133,7 @@ In VMM, you can create generation 1 and generation 2 VMs.
 
 VMM optimizes support for differencing disks to provide the following:
 
-- Optimized migration of storage that utilizes differencing disks. During a migration, VMM does not migrate base disks unless it is necessary.
+- Optimized migration of storage that utilizes differencing disks. During a migration, VMM doesn't migrate base disks unless it's necessary.
 - Optimized virtual machine deployment time by utilizing differencing disks. VMM will attempt to identify and utilize differencing disks on the target computer.
 - When differencing disks are utilized, deployment of the base virtual disk is optimized by taking advantage of the Windows Offloaded Data Transfers (ODX) capability to copy files to the guest machine during service deployment.
 - Optimize time and storage of cloning of virtual machines by utilizing differencing disks. VMM provides the option to create and utilize differencing disks during a cloning operation.
@@ -141,13 +141,13 @@ VMM optimizes support for differencing disks to provide the following:
 >[!NOTE]
 > If the parent disks are lost or corrupted, all VHDs that depend on them are also lost. You should have a backup plan in place.
 
-If you're using differencing disks you should optimize management by ensuring that unused parent HDs are removed regularly.
+If you're using differencing disks, you should optimize management by ensuring that unused parent HDs are removed regularly.
 
 ### Fast file copy
 
 During virtual machine deployment, VMM needs to move and copy large files, such as VHDs, between two locations.
 
-Fast file copy improves the performance of file transfers, mostly by leveraging [Windows Offloaded Data Transfers (ODX)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)). In VMM, background intelligent transfer (BITS) is still used as a mechanism for file transfers, but VMM leverages ODX when possible (for example, when copying files to SANs that support ODX). This greatly improves the time performance of virtual machine deployments.
+Fast file copy improves the performance of file transfers, mostly by using [Windows Offloaded Data Transfers (ODX)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)). In VMM, background intelligent transfer (BITS) is still used as a mechanism for file transfers, but VMM uses ODX when possible (for example, when copying files to SANs that support ODX). This greatly improves the time performance of virtual machine deployments.
 
 
 
@@ -175,9 +175,9 @@ After you've set up a vCenter server and ESX/ESXi hosts, you can provision VMwar
 
 ## Converting VMware VMs to Hyper-V
 
-There are currently a couple of methods for converting VMWare VMs to Hyper-V (V2V):
+There are currently a couple of methods for converting VMware VMs to Hyper-V (V2V):
 
-- **Convert Virtual Machine Wizard**: In the VMM console, you can use this wizard. This method has a number of limitations:
+- **Convert Virtual Machine Wizard**: In the VMM console, you can use this wizard. This method has many limitations:
     - Supported for vSphere 4.1 onwards.
     - You can't convert VMware workstations.
     - You can't convert VMs with virtual hard disks connected to an IDE bus.

@@ -42,7 +42,7 @@ Create a VM running Linux using any of the available methods in the VMM fabric. 
 
 ## Install LIS on the VM
 
-By default, LIS is included with some distributions of Linux. If LIS is not included in the distribution of Linux that you are using for the virtual machine, then install it manually. [Learn more](/windows-server/virtualization/hyper-v/Supported-Linux-and-FreeBSD-virtual-machines-for-Hyper-V-on-Windows).
+By default, LIS is included with some distributions of Linux. If LIS isn't included in the distribution of Linux that you're using for the virtual machine, then install it manually. [Learn more](/windows-server/virtualization/hyper-v/Supported-Linux-and-FreeBSD-virtual-machines-for-Hyper-V-on-Windows).
 
 ## Install the VMM guest agent
 
