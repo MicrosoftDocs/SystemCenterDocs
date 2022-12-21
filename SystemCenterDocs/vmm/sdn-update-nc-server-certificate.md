@@ -104,6 +104,7 @@ ms.technology: virtual-machine-manager
    New-NetworkControllerCredential -ConnectionUri <REST uri of the deployment> -ResourceId <credential resource Id> -Properties
    $cred
    ```
+
 8. If the new certificate is a self-signed certificate, provision the certificate (without the private key) in the trusted root certificate store of all the Hyper-V hosts and software load balancer MUX virtual machines.
 
 9. Provision the NC certificate (without the private key) in the trusted root certificate store of the VMM machine using the following PowerShell cmdlet:
