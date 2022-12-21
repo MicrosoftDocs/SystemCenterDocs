@@ -5,7 +5,7 @@ description: This section explains monitoring configurations in Management Pack 
 author: epomortseva
 ms.author: v-ekaterinap
 manager: evansma
-ms.date: 12/01/2022
+ms.date: 12/20/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -56,9 +56,18 @@ sp_altermessage 19406, 'with_log', 'true'
 
 ## Availability Database Backup Monitoring
 
-Management Pack for SQL Server provides a monitor that checks the existence and age of a database backup as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup.
+Management Pack for SQL Server provides monitors that check the existence and age of a database and log backups as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup.
 
-By default the monitor does not track the 'Availability Group Backup Preferences'. If this overdrive is enabled, the monitor will track the backup location configured in the backup preferences of the availability group and will verify whether the backup on the selected replica is in compliance with the backup frequency setting.
+These monitors are located under the Availability Group Database Availability State rollup, in the Availability Group view. The list of monitors is as follows:
+
+- Availability Database Backup Status monitor
+- Availability Database Log Backup Status monitor
+
+### Availability Database Backup Status monitor
+
+This monitor targets on Availability Database Health and checks the database backup status according to the threshold in days.
+
+By default, the monitor does not track the [Availability Group Backup Preferences](/sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page). If this overdrive is enabled, the monitor will track the backup location configured in the backup preferences of the availability group and will verify whether the backup on the selected replica complies with the backup frequency setting.
 
 The backup preferences of the selected availability group can be as follows:
 
@@ -78,7 +87,29 @@ The backup preferences of the selected availability group can be as follows:
 
   Specifies that you prefer that backup jobs ignore the role of the availability replicas when choosing the replica to perform backups. Note backup jobs might evaluate other factors such as backup priority of each availability replica in combination with its operational state and connected state.
 
-For more information, see [Backup Preferences](/sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page).
+The following are examples of turning the track settings option on and off in the case of **backup preferences is the Primary replica** for Availability Group, and the **backup file exists on a secondary replica** only.
+
+Track backup preferences parameter is **enabled** - for **both database replicas** the Availability Database Backup Status monitor is in a **Critical** state:
+
+![Screenshot of availability database backup status rollup when track backup preference is enable for primary replica.](./media/sql-server-management-pack/availability-database-monitor-track-backup-preferencies-ON-primary.png)
+
+Track backup preferences parameter is **disabled** - only for the **primary database replica** the Availability Database Backup Status monitor is in a **Critical** state:
+
+![Screenshot of availability database backup status rollup when track backup preference is disable for primary replica.](./media/sql-server-management-pack/availability-database-monitor-track-backup-preferencies-Off-primary.png)
+
+### Availability Database Log Backup Status monitor
+
+This monitor targets on Availability Database Health and checks the database log backup status according to the threshold in minutes.
+
+## Availability Database rollup monitors alerts
+
+Availability Database Backup Status and Availability Database Log Backup Status monitors are configured with the rollup policy "Best state of any member" and have the critical alerts on the respective rollup by default to display the complete status of the database in the availability group.
+
+Availability Database is the entity of one database that may be hosted on many replicas, based on this, only the "Availability Database Backup Status (rollup)" has the alerting, to check the whole availability database status against displaying database status on each replicas:
+
+![Screenshot of Availability Database backup rollup alert.](./media/sql-server-management-pack/availability-database-backup-rollup-alert.png)
+
+A rollup becomes critical and raises an alert only when all Database Replicas have a critical Database Backup or Log Backup status. If only one Replica has a critical Database Backup or Log Backup status, the rollup remains healthy according to the rollup policy.
 
 ## Policies Monitoring
 
