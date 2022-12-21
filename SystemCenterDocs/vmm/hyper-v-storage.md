@@ -55,8 +55,8 @@ Before you can allocate provisioned storage to hosts and cluster, it should be d
 - If you provisioned a storage pool on a host group, you can create LUNs during the procedure to add storage to a cluster.
 - If you want to use shared storage that isn't managed by VMM, the storage disks must be available to all hosts or nodes before you can add them. You need to provision one or more LUNs to all hosts you want to cluster, and then mount and format the storage disks on one of the nodes.
 
-> [!NOTE]
-> VMM doesn't support or block the use of asymmetric storage, where a workload can use disks that are shared between a subset of the cluster nodes. Each cluster node must be a possible owner of the cluster disk.
+   >[!NOTE]
+   >VMM doesn't support or block the use of asymmetric storage, where a workload can use disks that are shared between a subset of the cluster nodes. Each cluster node must be a possible owner of the cluster disk.
 
 - After adding iSCSI storage to a host, you need to create a new session to the storage.
 
@@ -69,11 +69,11 @@ You can assign file shares on any host on which you want to create VMs that will
 1. Select Fabric > **Servers** > **All Hosts**, and select the host or cluster node you want to configure.
 2. Select **Host** > **Properties** >  **Host Access**. Specify a Run As account. By default, the Run As account that was used to add the host to VMM is listed. In the **Run As** account box, configure the account settings. You can't use the account that you use for the VMM service. 
 
-> [!NOTE]
-> - If you used a domain account for the VMM service account, add the domain account to the local Administrators group on the file server.
-> - If you used the local system account for the VMM service account, add the computer account for the VMM management server to the local Administrators group on the file server. For example, for a VMM management server that is named VMMServer01, add the computer account VMMServer01$.
-> - Any host or host cluster that accesses the SMB 3.0 file share must have been added to VMM using a Run As account. VMM automatically uses this Run As account to access the SMB 3.0 file share.
-> - If you specified explicit user credentials when you added a host or host cluster, you can remove the host or cluster from VMM, and then add it again by using a Run As account.
+    > [!NOTE]
+    > - If you used a domain account for the VMM service account, add the domain account to the local Administrators group on the file server.
+    > - If you used the local system account for the VMM service account, add the computer account for the VMM management server to the local Administrators group on the file server. For example, for a VMM management server that is named VMMServer01, add the computer account VMMServer01$.
+    > - Any host or host cluster that accesses the SMB 3.0 file share must have been added to VMM using a Run As account. VMM automatically uses this Run As account to access the SMB 3.0 file share.
+    > - If you specified explicit user credentials when you added a host or host cluster, you can remove the host or cluster from VMM, and then add it again by using a Run As account.
 
 3. Select **Host Name Properties** > **Storage** > **Add File Share**.
 4. In **File share path**, select the required SMB 3.0 file share, and then select **OK**.
@@ -92,9 +92,11 @@ Either assign an existing unit, or create a new one and assign it.
 
 3.  To assign an existing logical unit to the host, on the toolbar, next to **Disk**, select **Add**, and select the logical unit you want to assign.
 4. In the **Logical unit** list, verify that the logical unit that you just created is selected.
-5. In **Format new disk**, if you want to format the disk, select **Format this volume as NTFS volume with the following settings**, and specify the settings. 
-> [!NOTE]
-> If you select **Force format even if a file system is found**, all the existing data on the volume will be overwritten. If the logical unit has existing data, and you do not use the **Force Format** option, the VMM job to assign the logical unit will complete with a warning. VMM assigns the logical unit to the host. You can format the disk later.
+5. In **Format new disk**, if you want to format the disk, select **Format this volume as NTFS volume with the following settings**, and specify the settings.
+
+   >[!NOTE]
+   >If you select **Force format even if a file system is found**, all the existing data on the volume will be overwritten. If the logical unit has existing data, and you do not use the **Force Format** option, the VMM job to assign the logical unit will complete with a warning. VMM assigns the logical unit to the host. You can format the disk later.
+   
 6. In **Mount Point**, select the mount options. Then select **OK** to assign the logical unit to the host.
 7. VMM registers the storage logical unit to the host and mounts the storage disk.
     - To view the associated job information, open the **Jobs** workspace.
@@ -117,13 +119,13 @@ In **Host Cluster Name** > **Properties**, select a tab:
 
 2.  Configure storage for the host cluster.
 
- - If you add available storage for CSVs, use only alphanumeric characters for a LUN. You can't change the partition style of a disk that has already been initialized.
-- If you're converting available storage to CSVs, ensure that there are no VMs on the cluster that have their associated .vhd or .vhdx files located on the storage that you want to convert.<br/><br/> Convert volumes one at a time. After conversion, confirm that the logical unit appears on the **Shared Volumes** tab.<br/><br/>
+    - If you add available storage for CSVs, use only alphanumeric characters for a LUN. You can't change the partition style of a disk that has already been initialized.
+    - If you're converting available storage to CSVs, ensure that there are no VMs on the cluster that have their associated .vhd or .vhdx files located on the storage that you want to convert.<br/><br/> Convert volumes one at a time. After conversion, confirm that the logical unit appears on the **Shared Volumes** tab.<br/><br/>
 
-> [!CAUTION]
-> If you convert shared to available storage and the storage is being used by virtual machines, serious data loss can result.
+    > [!CAUTION]
+    > If you convert shared to available storage and the storage is being used by virtual machines, serious data loss can result.
 
-- You can only remove storage if there are no VMs in the cluster currently using the storage for their vhds.
+    - You can only remove storage if there are no VMs in the cluster currently using the storage for their vhds.
 
 3.  When you're ready to commit the changes, select **OK**.
 
