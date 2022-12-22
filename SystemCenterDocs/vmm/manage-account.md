@@ -32,7 +32,7 @@ The following table summarizes VMM user roles.
 **VMM user role** | **Permissions** | **Details**
 --- | --- | ---
 Administrator role | Members of this role can perform all administrative actions on all objects that VMM manages. | Only administrators can add a WSUS server to VMM to enable updates of the VMM fabric through VMM.
-Virtual Machine Administrator | Administrators can create the role (applicable for VMM 2019 and later). | Delegated Administrator can create VM administrator role that includes entire scope or a subset of their scope, library servers and Run-As accounts.
+Virtual Machine Administrator | Administrators can create the role (applicable for VMM 2019 and later). | Delegated Administrator can create VM administrator role that includes entire scope or a subset of their scope, library servers, and Run-As accounts.
 Fabric Administrator (Delegated Administrator) | Members of this role can perform all administrative tasks within their assigned host groups, clouds, and library servers. | Delegated Administrators cannot modify VMM settings, add or remove members of the Administrators user role, or add WSUS servers.
 Read-Only Administrator | Members of this role can view properties, status, and job status of objects within their assigned host groups, clouds, and library servers, but they cannot modify the objects. | The read-only administrator can also view Run As accounts that administrators or delegated administrators have specified for that read-only administrator user role.
 Tenant Administrator | Members of this role can manage self-service users and VM networks. | Tenant administrators can create, deploy, and manage their own virtual machines and services by using the VMM console or a web portal.<br/><br/> Tenant administrators can also specify which tasks the self-service users can perform on their virtual machines and services.<br/><br/> Tenant administrators can place quotas on computing resources and virtual machines.
@@ -45,17 +45,16 @@ There are different types of Run As accounts:
 
 - **Host computer accounts** are used to interact with virtualization servers.
 - **BMC accounts** are used to communicate with the BMC on hosts for out-of-band management or power optimization.
-- **External account** are used to communication with external apps such as Operations Manager.
+- **External account** are used to communicate with external apps such as Operations Manager.
 - **Network device accounts** are used to connect with network load balancers.
-- **Profile accounts** are used in Run As profiles when you're deploying a VMM service, or creating profiles.
+- **Profile accounts** are used in Run As profiles when you're deploying a VMM service or creating profiles.
 
-Note that:
-
-- VMM uses the Windows Data Protection API (DPAPI) to provide operating system level data protection services during storage and retrieval of the Run As account credentials. DPAPI is a password-based data protection service that uses cryptographic routines (the strong Triple-DES algorithm, with strong keys) to offset the risk posed by password-based data protection. [Learn more](/previous-versions/ms995355(v=msdn.10)).
-- When you install VMM, you can configure VMM to use Distributed Key Management to store encryption keys in Active Directory.
-- You can set up Run As accounts before you start managing VMM, or you can set up Run As accounts if you need them for specific actions.
+>[!NOTE]
+> - VMM uses the Windows Data Protection API (DPAPI) to provide operating system level data protection services during storage and retrieval of the Run As account credentials. DPAPI is a password-based data protection service that uses cryptographic routines (the strong Triple-DES algorithm, with strong keys) to offset the risk posed by password-based data protection. [Learn more](/previous-versions/ms995355(v=msdn.10)).
+> - When you install VMM, you can configure VMM to use Distributed Key Management to store encryption keys in Active Directory.
+> - You can set up Run As accounts before you start managing VMM or you can set up Run As accounts if you need them for specific actions.
 
 ## Next steps
 
-- [Set up user roles](account-user-role.md)
-- [Set up run as accounts](account-runas.md)
+- [Set up user roles](account-user-role.md).
+- [Set up run as accounts](account-runas.md).
