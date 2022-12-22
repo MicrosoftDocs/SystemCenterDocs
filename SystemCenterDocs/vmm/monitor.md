@@ -32,10 +32,10 @@ A VMM job is created for any action that changes the status of a managed object.
 
 - Jobs are composed of steps that are performed sequentially to complete an action. Simple jobs, such as stopping a virtual machine, contain only one step. More complex jobs, or running a wizard, might contain multiple jobs or job groups.
 -  Jobs are tracked in the **Jobs** view in the VMM console. The **Details** tab in the **Jobs** view shows the status of each step in a job.
-- Each job is represented by one or more VMM PowerShell cmdlets. You can perform almost any VMM task with [PowerShell](/previous-versions/system-center/powershell/system-center-2012-r2/jj654428(v=sc.20)). Each wizard includes a **View Script** button on the **Summary** page, that displays the cmdlets that will perform the job that you just requested. You can save Windows PowerShell scripts to the VMM library, and view and run them in **Library** view.
+- Each job is represented by one or more VMM PowerShell cmdlets. You can perform almost any VMM task with [PowerShell](/previous-versions/system-center/powershell/system-center-2012-r2/jj654428(v=sc.20)). Each wizard includes a **View Script** button on the **Summary** page that displays the cmdlets that will perform the job that you just requested. You can save Windows PowerShell scripts to the VMM library, and view and run them in **Library** view.
 - Each VMM job is independent and doesn't depend on the status of another job. For example, if you're running jobs to add multiple host servers, the  failure to add one host doesn't affect the remaining jobs.
 When a job completes, an audit record is saved that lists the changes that the job made to the VMM object. You can view the audit record in **Jobs** > **Details** > **Change Tracking**.
-- Jobs are started automatically when you perform tasks in the VMM console, or using PowerShell. You can cancel some running jobs, but others, including adding hosts and system jobs, can't be cancelled after they've started running.
+- Jobs are started automatically when you perform tasks in the VMM console, or using PowerShell. You can cancel some running jobs, but others, including adding hosts and system jobs, can't be canceled after they've started running.
 - You can generally restart failed jobs, but note that:
     - If multiple jobs place a VM into a failed state, only the most recent job can be restarted.
     - For jobs that run for a long time, such as virtual machine migration, intermediate results are stored periodically while the job is running, and the Restart action attempts to resume the job from the last known state. All other jobs start from the beginning.
@@ -50,7 +50,7 @@ You can monitor VMM health and status in Operations Manager by installing the VM
 --- | ---
 **Virtual Machine Dashboard** | Monitors the health of virtual machines.<br/><br/> It shows information about discovered VMs in the VMM fabric. You can view alerts, properties, host, and performance information for the VM.
 **VMM Host Dashboard** | Monitors the health of virtualization hosts discovered in the VMM fabric.<br/><br/> It shows information about the host properties, status, VMs, alerts, and performance.
-**Fabric Health Dashboard** | Monitors the health of VMM private clouds.<br/><br/> For each cloud, the dashboard monitors the state of host groups, the compute properties of the cloud (CPU, network adapters etc), and storage information such as pools, file share, LUNs, and network monitoring.<br/><br/> A fabric monitoring dashboard diagram view shows the status for each piece of the fabric.<br/><br/> The dashboard can be scoped to physical or virtual resources or to a particular cloud tenant.
+**Fabric Health Dashboard** | Monitors the health of VMM private clouds.<br/><br/> For each cloud, the dashboard monitors the state of host groups, the compute properties of the cloud (CPU, network adapters, and so on), and storage information such as pools, file share, LUNs, and network monitoring.<br/><br/> A fabric monitoring dashboard diagram view shows the status for each piece of the fabric.<br/><br/> The dashboard can be scoped to physical or virtual resources or to a particular cloud tenant.
 
 [Learn more](monitors-ops-manager.md) about integrating VMM with Operations Manager.
 
