@@ -38,7 +38,7 @@ Storage migration enables you to move VM files from one storage location to anot
 3.  On the **Select Path** page, do the following:
 
     - In **Storage location for VM configuration**, select an existing default virtual machine path on the list. Browse to a location on the host. VMM automatically changes the paths for all virtual disks to the same path that you specified for the configuration files.
-    - Type a path. When you type a new path for the configuration files of the virtual machine, VMM does not automatically change the paths for the virtual disks until you click outside of the **Storage location for VM configuration** box.
+    - Type a path. When you type a new path for the configuration files of the virtual machine, VMM doesn't automatically change the paths for the virtual disks until you click outside of the **Storage location for VM configuration** box.
     - Select the **Add this path to the list of default storage locations on the host** check box if you selected a path other than an existing virtual machine path and you want to add the path to the default paths on the host.
     - Specify the configuration file placement options, as follows:
 

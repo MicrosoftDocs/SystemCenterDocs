@@ -40,7 +40,7 @@ With System Center - Virtual Machine Manager (VMM), you can enable and disable t
 Enable the nested virtualization on a VM and then configure it as a host.
 
 >[!NOTE]
-> Virtualization applications other than Hyper-V are not supported in Hyper-V virtual machines and are likely to fail. This includes any software that requires hardware virtualization extensions.
+> Virtualization applications other than Hyper-V aren't supported in Hyper-V virtual machines and are likely to fail. This includes any software that requires hardware virtualization extensions.
 
 ## Before you start
 
@@ -112,7 +112,7 @@ Administrators/delegated administrators can configure nested virtualization by u
     - File and printer sharing
     - Windows management instrumentation (WMI-Out)
 
-2. Ensure the VM is in **running** state. Start the VM if it is not running.
+2. Ensure the VM is in **running** state. Start the VM if it isn't running.
 
     ![Screenshot of host vm running.](media/nested-vm/nested-vm-running-state.png)
 
@@ -127,7 +127,7 @@ Administrators/delegated administrators can configure nested virtualization by u
 ## Disable nested virtualization
 
 1.	Select the host or VM for which nested virtualization is enabled.
-2.	Ensure the VM is in **stopped** state. Stop the VM if it is running.
+2.	Ensure the VM is in **stopped** state. Stop the VM if it's running.
 3.	Browse the VM **Properties**.
 4.	On **General**, clear the **Enable Nested Virtualization** check box.
 

@@ -27,8 +27,8 @@ Self-service users can interact with VMM to deploy virtual machines and services
 
 ## Create and deploy virtual machines
 
-- [Learn about](vm-existing-disk.md) creating a VM from an existing VHDs
-- [Learn about](vm-blank-disk.md) creating a VM from a blank VHDs
+- [Learn about](vm-existing-disk.md) creating a VM from an existing VHD
+- [Learn about](vm-blank-disk.md) creating a VM from a blank VHD
 - [Learn about](vm-clone.md) cloning an existing VM
 - [Learn about](vm-template.md) deploying VMs from VM templates
 - [Learn about](vm-linux.md) deploying VMs running Linux
@@ -73,10 +73,10 @@ Import resources as follows:
 
     - If you select a folder without a .CR extension, only the files of a supported file type will appear in the VMM library.
     - However, if you use Windows Explorer to access the library share, you can access all the files in the folder depending on the file and share permissions that are configured outside VMM.
-    - If the folder with .CR extension contains more than one hundred files to be imported, it is recommended that you zip the files before the import. This will improve performance.
+    - If the folder with .CR extension contains more than 100 files to be imported, it's recommended that you zip the files before the import. This will improve performance.
 
 3. Select **Add resource** to import one or more files to another library location.
-4. When you are finished, select **Import**. Check that the resources are listed **Self Service User Content** > user role data path > **Self Service User Objects**.
+4. When you're finished, select **Import**. Check that the resources are listed **Self Service User Content** > user role data path > **Self Service User Objects**.
 
 ### Export library resources
 

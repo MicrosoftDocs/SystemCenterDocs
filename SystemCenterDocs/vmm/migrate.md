@@ -30,12 +30,12 @@ You can migrate virtual machines and storage managed in the VMM fabric. VMM auto
 **Network migration** | Performs a network copy of the virtual machine data using BITS. |  This is the slowest type of migration. The amount of downtime is in direct proportion to the size of the data transfer.
  **Quick migration** | Also known as cluster transfer, it can be used to migrate a highly available virtual machine. It uses Windows Failover Cluster to migrate virtual machines between cluster nodes. | The running state of the virtual machine is saved to disk (the virtual machine is hibernated), the disk is failed over to the other cluster node, and then the saved state is loaded to wake up the virtual machine.<br/><br/>  Downtime is minimal because quick migration takes a snapshot of the virtual machine, and transfers data without requiring the virtual machine to be turned off.
 **Quick storage migration** | Used to move VM storage from one location to another. For example, you can move the storage for a virtual machine from a Fibre Channel SAN to an iSCSI SAN. | The virtual disks of a running virtual machine can be migrated independent of the storage protocols (SCSI, Fibre Channel) or storage types (local, DAS, SAN).<br/><br/> Downtime is minimal because quick storage migration takes a snapshot of the virtual machine and transfers data without requiring the virtual machine to be turned off.
-**SAN migration** | Uses SAN transfer to migrate virtual machines and highly available virtual machines in and out of a cluster. It can be used when both the source and destination hosts have access to the same storage infrastructure (LUN), and the storage can be transferred from one host to another. | For SAN migration, the files for a virtual machine are not copied from one server to another and thus downtime is minimized. SAN migration can be used to copy a virtual machine from one host to another or copying a virtual machine to or from the library.<br/><br/> When you migrate a virtual machine into a cluster by using a SAN transfer, VMM checks that each node in the cluster can see the LUN and automatically creates a cluster disk resource for the LUN.<br/><br/> To migrate a virtual machine out of a cluster, the virtual machine must be on a dedicated LUN that is not using CSV.<br/><br/> These SAN infrastructures are supported for migration: Fiber Channel; iSCSI SANs; N_Port ID Virtualization (NPID).
+**SAN migration** | Uses SAN transfer to migrate virtual machines and highly available virtual machines in and out of a cluster. It can be used when both the source and destination hosts have access to the same storage infrastructure (LUN), and the storage can be transferred from one host to another. | For SAN migration, the files for a virtual machine aren't copied from one server to another and thus downtime is minimized. SAN migration can be used to copy a virtual machine from one host to another or copying a virtual machine to or from the library.<br/><br/> When you migrate a virtual machine into a cluster by using a SAN transfer, VMM checks that each node in the cluster can see the LUN,and automatically creates a cluster disk resource for the LUN.<br/><br/> To migrate a virtual machine out of a cluster, the virtual machine must be on a dedicated LUN that isn't using CSV.<br/><br/> These SAN infrastructures are supported for migration: Fiber Channel; iSCSI SANs; N_Port ID Virtualization (NPID).
 **Live migration** | Moves a virtual machine running as part of a failover cluster from one cluster to another. |  No noticeable downtime for users or network applications.
 
 ## Live migration
 
-Using live migration provides a number of benefits:
+Using live migration provides many benefits:
 
 -   **Increased flexibility**: Live migration features can help simplify the movement of virtual machines across hosts and clusters. Therefore, it becomes easier to manage a dynamic datacenter.
 -   **Ease-of-maintenance**: Live migration alleviates the need to take standalone hosts and cluster hosts offline for maintenance and migration purposes, which helps to avoid downtime. With the ability to perform concurrent migrations and maintenance, migration timeframes can become shorter, depending on the time that is required to perform the live migration. In addition, the planning process for Hyper-V mobility is simplified.
@@ -80,7 +80,7 @@ Cluster | Supported<br/><br/> In a cluster, the VM will be demoted and won't be 
 - Source and destination servers must belong to the same Active Directory domain or to different trusted domains.
 - If the source or destination virtual machine VHD has a base disk, the base disk must be in a share that is accessible (registered) from the destination host. Generally, live migration doesn't move the base disk.
 - Migration between clusters is only supported on hosts running in failover clusters. Cluster Shared Volume (CSV) storage should be enabled in the cluster.
-- Live migration of a virtual machine does not migrate virtual machine storage, specifically meaning the location that stores the virtual machine images (VHD, ISO, VFD files). To handle storage requirements, you can use one of the following options:
+- Live migration of a virtual machine doesn't migrate virtual machine storage, specifically meaning the location that stores the virtual machine images (VHD, ISO, VFD files). To handle storage requirements, you can use one of the following options:
 
     - Configure the virtual machine so that the storage files are available on a file share that is accessible by both the source and destination host of the migration.
     - Run a combined live virtual machine and storage migration (live VSM) in a single action.
@@ -93,7 +93,7 @@ Cluster | Supported<br/><br/> In a cluster, the VM will be demoted and won't be 
 
 - A storage migration moves virtual machine images (VHD, ISO, and VFD files), snapshot configurations, and data (saved state files).
 - Storage migration is per virtual machine.
-- Storage migration does not move base (parent) disks, with the exception of snapshot disks.
+- Storage migration doesn't move base (parent) disks, except for snapshot disks.
 
 ### Live VSM
 

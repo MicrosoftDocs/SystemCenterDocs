@@ -87,7 +87,7 @@ You set up Operations Manager with VMM as follows:
 ## Install the Operations Manager agent
 
 1. Install the Operations Manager agent on each VMM server, and on each host managed in the VMM fabric.
-2. You can install the agent from the Operations Manager Operations console, from Operations Manager setup, or from the command line. To understand the different methods for agent deployment, review the [Managing discovery and agents](../scom/manage-deploy-windows-agent-console.md) section in Operations manager documentation.
+2. You can install the agent from the Operations Manager Operations console, from Operations Manager setup, or from the command line. To understand the different methods for agent deployment, review the [Managing discovery and agents](../scom/manage-deploy-windows-agent-console.md) section in Operations Manager documentation.
 
 ## Locate the management packs
 
@@ -107,7 +107,7 @@ Run the wizard to connect the VMM server to the Operations Manager server, and i
 
 2.  In **Introduction**, select **Next**.
 3.  In **Connection to Operations Manager**, specify the Operations Manager server name, and select an account to use to connect to it. You can use the VMM server service account or specify a Run As account. This account must be a member of the Operations Manager Administrator role.
-4.  Select **Enable Performance and Resource Optimization (PRO)** if required.
+4.  Select **Enable Performance and Resource Optimization (PRO)** if necessary.
 5.  Select **Enable maintenance mode integration with Operations Manager**, if desired. Then select **Next**.
 
     When hosts are placed in maintenance mode using the VMM management server, Operations Manager places them in the maintenance mode as well. In this mode, the Operations Manager agent suppresses alerts, notifications, rules, monitors, automatic responses, state changes, and new alerts.

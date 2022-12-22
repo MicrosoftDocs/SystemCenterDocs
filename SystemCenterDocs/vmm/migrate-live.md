@@ -41,7 +41,7 @@ You can migrate a VM between clusters by using shared storage or with no shared 
 
 ### Live migration with shared storage
 
-When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. Therefore, a host failure during the migration causes the virtual machine to become unavailable. For live migration with shared storage, you must use SMB 3.0 file shares as the storage location. Because the storage doesn't have to be migrated, the time in which high availability status cannot be guaranteed is very short.
+When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. Therefore, a host failure during the migration causes the virtual machine to become unavailable. For live migration with shared storage, you must use SMB 3.0 file shares as the storage location. Because the storage doesn't have to be migrated, the time in which high availability status can't be guaranteed is short.
 
 1.  In **VMs and Services** > **All Hosts**, select the cluster node from which you want to migrate.
 2.  In **VMs**, select the running VM that you want to migrate. Start the machine if it's not running.
@@ -79,7 +79,7 @@ Follow these steps:
 ## Migrate storage between two locations on a standalone host
 
 > [!NOTE]
-> You cannot live migrate storage for a shared VHDX file. You can move the other VM files and perform normal live migration.
+> You can't live migrate storage for a shared VHDX file. You can move the other VM files and perform normal live migration.
 > To move the shared VHDX file to another location, you must shut down the VMs and then move the file.
 
 You can run a live migration of VM storage between locations on standalone hosts. You can move the entire virtual machine, which includes virtual hard disks (VHDs) and configuration information, or move only specific VHDs to a different location.

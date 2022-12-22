@@ -22,10 +22,10 @@ ms.technology: virtual-machine-manager
 
 This article describes how to set up self-service in System Center - Virtual Machine Manager (VMM).
 
-VMM offers a number of options for self-service users:
+VMM offers many options for self-service users:
 
-- **Virtual machines/Services**: Users can deploy their virtual machines and services to private clouds. A private clouds can be assigned to multiple self-service user roles. Role-level quotas for each self-service user role with the private cloud in scope are used to allocate cloud compute and storage capacity. Member-level quotas set individual limits for members of the self-service user role.
-- **Virtual hard disks**: Users can deploy VMs from VHDs as well as templates.
+- **Virtual machines/Services**: Users can deploy their virtual machines and services to private clouds. A private cloud can be assigned to multiple self-service user roles. Role-level quotas for each self-service user role with the private cloud in scope are used to allocate cloud compute and storage capacity. Member-level quotas set individual limits for members of the self-service user role.
+- **Virtual hard disks**: Users can deploy VMs from VHDs and templates.
 - **Templates/Profiles**: Users can create their own templates and profiles. The **Author** action for a self-service user role providing these authoring rights to create hardware profiles, guest operating system profiles, app profiles, SQL Server profiles, VM templates, and service templates. 
 
 >[!NOTE]
@@ -93,19 +93,19 @@ All of these procedures must be performed by a VMM administrator. Delegated admi
 
 ## Create read-only library shares
 
-1. Create a shared folder to store resources. The folder will include read-only library shares for private clouds, and user data paths for self-service user roles. We recommend that you create the folder near your default library share so that it's easy to access when you're managing the library. For example C:\ApplicationData\Virtual Machine Manager Cloud Resources.
-2. In the shared folder, create a folder to store the \ApplicationFrameworks resources in case you want to use them. For example C:\ApplicationData\Virtual Machine Manager Cloud Resources\ApplicationFrameworks. Share the folder so that you can add it as a library share.
+1. Create a shared folder to store resources. The folder will include read-only library shares for private clouds, and user data paths for self-service user roles. We recommend that you create the folder near your default library share so that it's easy to access when you're managing the library. For example, C:\ApplicationData\Virtual Machine Manager Cloud Resources.
+2. In the shared folder, create a folder to store the \ApplicationFrameworks resources in case you want to use them. For example, C:\ApplicationData\Virtual Machine Manager Cloud Resources\ApplicationFrameworks. Share the folder so that you can add it as a library share.
     >[!NOTE]
     > The shared folder can't be in the default library share path. You can't add a library share that's in the path of an existing library share.
 3. Copy the \ApplicationFrameworks folder from the default library share to the share you created for private cloud resources.
 4. Add the share to the VMM library. In **Library** > **Library Server** > **Add Library Share**, select each shared folder you want to add to the library. Verify that the share is added in **Library Servers**.
-5. To add the read-only share to a private clouds open VMs and Services > clouds, and select the private cloud you want to update.
+5. To add the read-only share to a private cloud, open VMs and Services > clouds, and select the private cloud you want to update.
 6. In the cloud, select **Folder** > **Properties** > **Library** > **Read-only library shares** > **Add**.
 
 
 ## Enable self-service users to share resources
 
-To enable self-service users with the Author action to share resources they create, you need to create a folder to store shared resources and then enable resource sharing for the self-service user role.
+To enable self-service users with the Author action to share resources they create, you need to create a folder to store shared resources, and then enable resource sharing for the self-service user role.
 
 
 ### Create a folder to share user resources
@@ -113,11 +113,11 @@ To enable self-service users with the Author action to share resources they crea
 Configure a user data path for the self-service user role, and grant read/write permission on the folder.
 
 1. Create a folder to store all resources that will be shared by self-service users. For example, C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data.
-2. Within that folder, create a subfolder to store resources for the self-service user role. For example: C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data\Finance Service Managers.
-3. Then within that subfolder, create a third-level subfolder to store all the application packages for all releases of the virtual application that you will use in this scenario. For example: C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data\Finance Service Managers\<MyApplication>.
-4. In that subfolder, create a fourth-level subfolder to store the application package for the first release of the service. For example: C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data\Finance Service Managers\<MyApplication>\MyApplication v1>.
+2. Within that folder, create a subfolder to store resources for the self-service user role. For example, C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data\Finance Service Managers.
+3. Then within that subfolder, create a third-level subfolder to store all the application packages for all releases of the virtual application that you'll use in this scenario. For example, C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data\Finance Service Managers\<MyApplication>.
+4. In that subfolder, create a fourth-level subfolder to store the application package for the first release of the service. For example, C:\ProgramData\Virtual Machine Manager Cloud Resources\Self-Service User Data\Finance Service Managers\<MyApplication>\MyApplication v1>.
 
-    Each time you update and re-sequence an application by using Server App-V, you will need to store the new application package in a separate folder.
+    Each time you update and resequence an application by using Server App-V, you'll need to store the new application package in a separate folder.
 
 5. To enable members of the self-service user role to access the resources and upload their own resources to the folder, grant all members read/write permission on the folder.
 6. If needed, share the folder that contains user data for all self-service user roles, and then add the share to the VMM library. To be assigned to a self-service user role, a user data path must be on a library share.

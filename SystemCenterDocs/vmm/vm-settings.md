@@ -39,11 +39,11 @@ You can add and remove virtual network adapters (vNICs) from VMs that are runnin
 1. In the virtual machine properties > **Hardware Configuration**, select **Network Adapters**, and select the network adapter you want to add.
 
 
-2. You can configure a number of properties for the network adapter, including:
+2. You can configure many properties for the network adapter, including:
 
     - **Connected to**: Select what the adapter is connected to.
     - **Not connected**: Select if you don't want to specify a network now.
-    - **Internal network**: Select if you want to connect to an isolated internal network that enables communication among VMs on the same host. Virtual machines attached to the internal virtual network cannot communicate with the host, with any other physical computers on the host's LAN, or with the Internet.
+    - **Internal network**: Select if you want to connect to an isolated internal network that enables communication among VMs on the same host. Virtual machines attached to the internal virtual network can't communicate with the host, with any other physical computers on the host's LAN, or with the Internet.
     - **External network**: Select to specify that a virtual machine created by using this hardware profile will be connected to a physical network adapter on its host. Virtual machines attached to a physical network adapter can communicate with any physical or virtual computer that the host can communicate with and with any resources available on the intranet and over the Internet that the host computer can access.
     - **Ethernet (MAC) address**: A virtual MAC address on virtual machines uniquely identifies each computer on the same subnet. Select one of the following options:
         - **Dynamic**. Select this option if you want to enable a dynamic MAC address for a virtual machine.
@@ -72,7 +72,7 @@ To configure trunk mode in VMM, follow these steps:
 1. Under VM **Properties**, navigate to **Configure Hardware Settings** > **Network Adapter**, and then select **Trunk mode** to enable trunk mode for VM vNICs.
 2. Select the VM networks (multiple vLANs) through which you want to direct the VM network traffic.
    ![Screenshot of Trunk mode.](media/vm-settings/configure-trunk-mode.png)
-3. The VM Network that is selected as part of *Connected to a VM Network* workflow should also be made the native VLAN. You cannot change the native VLAN later, as this is based on the VM network that was selected as part of *Connected to a VM Network* workflow.
+3. The VM Network that is selected as part of *Connected to a VM Network* workflow should also be made the native VLAN. You can't change the native VLAN later, as this is based on the VM network that was selected as part of *Connected to a VM Network* workflow.
 
 ### Add a virtual adapter with PowerShell
 
@@ -151,9 +151,9 @@ Production checkpoints allow you to easily create "point in time" images of a VM
 - You can set one of these checkpoint settings for a VM:
 
     - **Disabled**: No checkpoint taken.
-    - **Production**: Production checkpoints are application consistent snapshots of a virtual machine. Hyper-V uses the guest VSS provider to create an image of the virtual machine where all of its applications are in a consistent state. The production snapshot does not support the auto-recovery phase during creation. Applying a production checkpoint requires the restored virtual machine to boot from an off-line state just like with a restored backup. This is always more suitable for production environments.
+    - **Production**: Production checkpoints are application consistent snapshots of a virtual machine. Hyper-V uses the guest VSS provider to create an image of the virtual machine where all of its applications are in a consistent state. The production snapshot doesn't support the auto-recovery phase during creation. Applying a production checkpoint requires the restored virtual machine to boot from an off-line state just like with a restored backup. This is always more suitable for production environments.
     - **ProductionOnly**: This option is the same as Production with one key difference: With ProductionOnly, if a production checkpoint fails, then no checkpoint will be taken. This is different from Production where if a production checkpoint fails, a standard checkpoint will be taken instead.
-    - **Standard**: All of the memory state of running applications gets stored so that when you apply the checkpoint, the application reverts to the previous state. For many applications this would not be suitable for a production environment. Therefore, this type of checkpoint is typically more suitable for development and test environments for some applications.
+    - **Standard**: All of the memory state of running applications gets stored so that when you apply the checkpoint, the application reverts to the previous state. For many applications this wouldn't be suitable for a production environment. Therefore, this type of checkpoint is typically more suitable for development and test environments for some applications.
 
 Set the checkpoint with the following PowerShell command: `Set-SCVirtualMachine CheckpointType (Disabled, Production, ProductionOnly, Standard)`
 
@@ -164,7 +164,7 @@ Set the checkpoint with the following PowerShell command: `Set-SCVirtualMachine 
 
 ## Configure availability options for clustered VMs
 
-You can configure a number of settings that help high availability and resilience for virtual machines in a cluster:
+You can configure many settings that help high availability and resilience for virtual machines in a cluster:
 
 - **Storage QoS**: You can configure Hyper-V VM hard disks with quality-of-service (QoS) settings to control bandwidth. You use Hyper-V Manager to do this.
 - **Virtual machine priority**: You can configure priority settings for VMs deployed in a host cluster. Based on VM priority, the host cluster starts or places high-priority virtual machines before medium-priority or low-priority virtual machines. This ensures that the high-priority virtual machines are allocated memory and other resources first for better performance. Also, after a node failure, if the high-priority virtual machines don't have the necessary memory and other resources to start, the lower priority virtual machines will be taken offline to free up resources for the high-priority virtual machines. Virtual machines that are preempted are restarted later in priority order.
@@ -186,7 +186,7 @@ You can configure a number of settings that help high availability and resilienc
     - To configure a stored virtual machine, in the **Library**, navigate to the library server on which the virtual machine is stored. Select and hold the virtual machine > **Properties**.
     - You can also set up priority while you're configuring a VM on the **Configure Hardware** page.
     To configure a virtual machine template, in **Library** > **Templates**, select **VM Templates**. Select and hold the virtual machine template, > **Properties**.
-3. In **Hardware Configuration** or **Configure Hardware**, scroll down to **Advanced**, and select **Availability**. Ensure that **Make this virtual machine highly available** is checked. On a deployed virtual machine, this setting cannot be changed because it depends on whether the virtual machine is deployed on a host cluster.
+3. In **Hardware Configuration** or **Configure Hardware**, scroll down to **Advanced**, and select **Availability**. Ensure that **Make this virtual machine highly available** is checked. On a deployed virtual machine, this setting can't be changed because it depends on whether the virtual machine is deployed on a host cluster.
 4. In **Virtual machine priority**, select a priority of High, Medium, or Low for the VM. If you want the virtual machine to always require a manual start and never preempt other virtual machines, select **Do not restart automatically**.
 
 
@@ -210,7 +210,7 @@ You can configure availability sets for standalone VMs in a cluster, or in avail
     - To configure a virtual machine template, in **Library** > **Templates**, select **VM Templates**. Select and hold the virtual machine template, > **Properties**.
 
 2.  On the **Hardware Configuration** tab, scroll down to **Advanced** and under it, select **Availability**.
-3.  Confirm that **Make this virtual machine highly available** has the intended setting. (On a deployed virtual machine, the setting cannot be changed because it depends on whether the virtual machine is deployed on a host cluster.)
+3.  Confirm that **Make this virtual machine highly available** has the intended setting. (On a deployed virtual machine, the setting can't be changed because it depends on whether the virtual machine is deployed on a host cluster.)
 4.  Under **Availability sets**, select **Manage availability sets**.
 5.  Select the name of an availability set, and use the controls to add or remove the set. Repeat this action until all of the intended availability sets appear in the **Assigned properties** list. To create a new availability set, select the **Create** button, provide a name for the set, and then select **OK**.
 6.  To verify the setting for a deployed virtual machine, in the listing for the virtual machine, view the name under **Availability Set Name**.
@@ -224,7 +224,7 @@ VMM includes resource throttling features, such as processor (CPU) and memory th
 - **Processor throttling**: You can set the weight of a virtual processor to provide the processor with a larger or smaller share of CPU cycles. The properties ensure that VMs can be prioritized or deprioritized when CPU resources are overcommitted. For highly intensive workloads, more virtual processors can be added, especially when a physical CPU is close to its upper limit.
     -   **High, Normal, Low, Custom**: Specifies how the CPU is distributed when contention occurs. Higher priority virtual machines will be allocated CPU first.
     - **Reserve CPU cycles (%)**: Specifies the percentage of CPU resources that are associated with one logical processor that should be reserved for the virtual machine. This is useful when a virtual machine runs applications that are particularly CPU-intensive and you want to ensure a minimal level of CPU resources. A zero setting indicates that no specific CPU percentage is reserved for the virtual machine.
-    - **Limit CPU cycles (%)**: Specifies that the virtual machine should not consume more than the indicated percentage of one logical processor.
+    - **Limit CPU cycles (%)**: Specifies that the virtual machine shouldn't consume more than the indicated percentage of one logical processor.
 
 - **Memory throttling and weight**: Memory throttling helps to prioritize or deprioritize access to memory resources in scenarios where memory resources are constrained. When memory usage on a host is high, then the virtual machines with a higher memory priority are allocated memory resources before the virtual machines with a lower priority. If you specify a lower priority, it might prevent a virtual machine from starting when other virtual machines are running and the available memory is low. You can set the memory priority settings and thresholds as follows:
 
@@ -233,7 +233,7 @@ VMM includes resource throttling features, such as processor (CPU) and memory th
      - **Start-up memory**: The amount of memory that is allocated to the virtual machine when it starts up. It should at least be set to the minimum amount of memory that is required to run the operating system and applications on the virtual machine. Dynamic memory will adjust the memory amount as required.
      - **Minimum memory**: The minimum amount of memory that is required for the virtual machine. It allows an idle machine to scale back the memory consumption below the start-up memory requirement. The available memory can then be used by other virtual machines.
      - **Maximum memory**: The memory limit that is allocated to the virtual machine. The default value is 1 TB.
-     - **Memory Buffer Percentage**: Dynamic memory adds memory to a virtual machine as required, but there is a chance that an application might demand memory more quickly than the dynamic memory allocates it. The memory buffer percentage specifies the amount of available memory that will be assigned to the virtual machine if needed. The percentage is based on the amount of memory that is actually needed by the applications and services that run on the virtual machine. It is expressed as a percentage because it changes depending on the virtual machine requirements. The percentage is calculated as follows: Amount of memory buffer = memory needed by the virtual machine/(memory buffer value/100). For example, if the memory that is committed to the virtual machine is 1000 MB and the buffer is 20%, then an additional buffer of 20% (200 MB) will be allocated for a total of 1200 MB of physical memory allocated to the virtual machine.
+     - **Memory Buffer Percentage**: Dynamic memory adds memory to a virtual machine as required, but there's a chance that an application might demand memory more quickly than the dynamic memory allocates it. The memory buffer percentage specifies the amount of available memory that will be assigned to the virtual machine if needed. The percentage is based on the amount of memory that is needed by the applications and services that run on the virtual machine. It's expressed as a percentage because it changes depending on the virtual machine requirements. The percentage is calculated as follows: Amount of memory buffer = memory needed by the virtual machine/(memory buffer value/100). For example, if the memory that is committed to the virtual machine is 1000 MB and the buffer is 20%, then an additional buffer of 20% (200 MB) will be allocated for a total of 1200 MB of physical memory allocated to the virtual machine.
   - **Memory weight**: The priority that is allocated to a virtual machine when the memory resources are in full use. If you set a high priority value, it will prioritize a virtual machine when the memory resources are allocated. If you set a low priority, a virtual machine might be unable to start if memory resources are insufficient.
 
 ### Configure processor throttling
@@ -247,7 +247,7 @@ VMM includes resource throttling features, such as processor (CPU) and memory th
    - Custom—Relative weight values that are supported are between 1 and 10000
 
 3. In **Reserve CPU cycles (%)**, specify the percentage of the CPU resources on one logical processor that should be reserved for a virtual machine. This is useful when a virtual machine runs applications that are particularly CPU-intensive, and you want to ensure a minimal level of CPU resources. A zero setting indicates that no specific CPU percentage is reserved.
-4. In **Limit CPU cycles (%)**, specify the maximum percentage of the CPU resources on one logical processor that the virtual machine should consume. The virtual machine will not be allocated more than this percentage.
+4. In **Limit CPU cycles (%)**, specify the maximum percentage of the CPU resources on one logical processor that the virtual machine should consume. The virtual machine won't be allocated more than this percentage.
 
 ### Configure memory throttling
 
