@@ -67,7 +67,7 @@ protocols.
 
 	   ::: moniker-end
 		
-	- **Teaming**: **Switch Independent** is the default setting, and this specifies that physical network switch configuration isn't needed for the NIC team. The network switch isn't configured, and so allow network adapters within the team to be connected to multiple (non-=trunked) physical switches. You can also select:
+	- **Teaming**: **Switch Independent** is the default setting, and this specifies that physical network switch configuration isn't needed for the NIC team. The network switch isn't configured and so allows network adapters within the team to be connected to multiple (non-=trunked) physical switches. You can also select:
 		- **LACP**: Use the LACP protocol to dynamically identify links that are connected between the host and a given switch.
 		- **Static teaming**: Configure both the switch and host to identify which links form the team.
 
