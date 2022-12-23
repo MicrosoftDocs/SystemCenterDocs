@@ -43,32 +43,32 @@ This topic provides detailed installation instructions for the various Orchestra
 
 ## Install Orchestrator management server
 
-1.  On the server where you want to install Orchestrator, install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package and start the Orchestrator Setup Wizard.
+1.  On the server where you want to install the Orchestrator, install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package and start the Orchestrator Setup Wizard.
 
     To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
     > [!IMPORTANT]
-    > Before you begin setup, close any open programs, and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using System Center - Service Manager or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin setup, close any open programs, and ensure that there are no pending restarts on the computer. For example, if you've installed a server role by using System Center - Service Manager or have applied a security update, you might have to restart the computer, and then sign in to the computer with the same user account to finish the installation of the server role or the security update.
 
     > [!NOTE]
     > If User Account Control is enabled, then you will be prompted to verify that you want to allow the setup program to run. This is because it requires administrative access to make changes to the system.
 
-2.  On the main page of the wizard, click **Install**.
+2.  On the main page of the wizard, select **Install**.
 
-3.  On the **Product registration** page, provide the name and company for the product registration, and then click **Next**.
+3.  On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
 
     > [!NOTE]
     > For this evaluation release, a product key is not required.
 
-4.  On the **Please read this License Terms** page, review, and accept the Microsoft Software License Terms, and then click **Next**.
+4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
 
-    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
+    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and then select **Next**.
 
-5.  On the **Select features to install** page, ensure that **Management Server** is the only feature selected, and then click **Next**.
+5.  On the **Select features to install** page, ensure that **Management Server** is the only feature selected and then select **Next**.
 
-6.  Your computer is checked for required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
+6.  Your computer is checked for required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next**, and proceed to the next step.
 
-   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite is not met, a page displays the information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
 
 1. Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
@@ -76,51 +76,51 @@ This topic provides detailed installation instructions for the various Orchestra
    > [!WARNING]
    > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
 
-2. After you resolve the missing prerequisites, click **Verify prerequisites again**.
+2. After you resolve the missing prerequisites, select **Verify prerequisites again**.
 
-3. Click **Next** to continue.
+3. Select **Next** to continue.
 
-4. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. Click **Test** to verify the account credentials. If the credentials are accepted, then click **Next**.
+4. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. Select **Test** to verify the account credentials. If the credentials are accepted, then select **Next**.
 
-5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
+5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-6. On the **Configure the database** page, select a database, or create a new database, and then click **Next**.
+6. On the **Configure the database** page, select a database or create a new database, and then select **Next**.
 
-7. On the **Configure Orchestrator users group** page, accept the default configuration or enter the name of the Active Directory user group to manage Orchestrator, and then click **Next**.
+7. On the **Configure Orchestrator users group** page, accept the default configuration or enter the name of the Active Directory user group to manage Orchestrator, and then select **Next**.
 
-8. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
+8. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then select **Next**.
 
-9. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
+9. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
 
-10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
+10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
 
-11. Review the **Installation summary** page, and then click **Install**.
+11. Review the **Installation summary** page, and then select **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-12. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and then click **Close** to complete the installation.
+12. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and then select **Close** to complete the installation.
 
 ## Install Orchestrator runbook server
 
-1. On the server where you want to install Orchestrator runbook server, install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package and start the Orchestrator Setup Wizard.
+1. On the server where you want to install the Orchestrator runbook server, install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package and start the Orchestrator Setup Wizard.
 
    To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
    > [!NOTE]
-   > Before you begin setup, close any open programs, and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using System Center - Service Manager or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+   > Before you begin setup, close any open programs, and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using System Center - Service Manager or have applied a security update, you might have to restart the computer, and then sign in to the computer with the same user account to finish the installation of the server role or the security update.
 
-2. On the main setup page, under **Standalone installations**, click **Runbook server**.
+2. On the main setup page, under **Standalone installations**, select **Runbook server**.
 
-3. On the **Product registration** page, provide the name and company for the product registration, and then click **Next**.
+3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
 
    > [!NOTE]
    > For this evaluation release, a product key is not required.
 
-4. On the **Please read this License Terms** page, review, and accept the Microsoft Software License Terms, and then click **Next**.
+4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
 
-   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
+   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and then select **Next**.
 
-5. Your computer is checked for required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
+5. Your computer is checked for the required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
    If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
@@ -129,52 +129,52 @@ This topic provides detailed installation instructions for the various Orchestra
       > [!WARNING]
       > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer may require a restart. If you restart your computer, you must run setup again from the beginning.
 
-   2. After you resolve the missing prerequisites, click **Verify prerequisites again**.
+   2. After you resolve the missing prerequisites, select **Verify prerequisites again**.
 
-   3. Click **Next** to continue.
+   3. Select **Next** to continue.
 
-6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
+6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
+7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-8. On the **Configure the database** page, select the Orchestrator database for your deployment, and then click **Next**.
+8. On the **Configure the database** page, select the Orchestrator database for your deployment, and then select **Next**.
 
-9. On the **Select the installation location** page, verify the installation location for Orchestrator, and then click **Next**.
+9. On the **Select the installation location** page, verify the installation location for Orchestrator, and then select **Next**.
 
-10. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
+10. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
 
-11. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
+11. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
 
-12. Review the **Installation summary** page, and then click **Install**.
+12. Review the **Installation summary** page, and then select **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
+13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then select **Close** to complete the installation.
 
 ## Install Orchestrator Web API service
 
-Since Orchestrator 2022, the Web API service and Orchestration Console can be installed separately, on different machines.
+Since Orchestrator 2022, the Web API service and Orchestration Console can be installed separately on different machines.
 
 1. On the server where you want to install the Orchestrator web API, install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package and start the Orchestrator Setup Wizard.
 
    To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
    > [!NOTE]
-   > Before you begin the installation of the Orchestrator Web API service, close any open programs, and ensure that there are no pending restarts on the computer. Then log on to the computer with the same user account to finish the installation of the server role or the security update.
+   > Before you begin the installation of the Orchestrator Web API service, close any open programs, and ensure that there're no pending restarts on the computer. Then sign in to the computer with the same user account to finish the installation of the server role or the security update.
 
 
-2. On the main setup page, under **Standalone installations**, click **Web API Service**.
+2. On the main setup page, under **Standalone installations**, select **Web API Service**.
 
-3. On the **Product registration** page, provide the name and company for the product registration, and then click **Next**.
+3. On the **Product registration** page, provide the name and company for the product registration and then select **Next**.
 
    > [!NOTE]
    > For this evaluation release, a product key is not required.
 
-4. On the **Please read this License Terms** page, review, and accept the Microsoft Software License Terms, and then click **Next**.
+4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
 
-   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
+   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and then select **Next**.
 
-5. Your computer is checked for required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
+5. Your computer is checked for required the hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
    If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
@@ -182,13 +182,13 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
       1.	.NET Hosting bundle
       2.	IIS CORS (Cross-Origin Resource Sharing) module
 
-   2. After you resolve the missing prerequisites, click **Verify prerequisites again**.
+   2. After you resolve the missing prerequisites, select **Verify prerequisites again**.
 
-   3. Click **Next** to continue.
+   3. Select **Next** to continue.
 
-6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Web API will run under an IIS App Pool with this identity. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
+6. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Web API will run under an IIS App Pool with this identity. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. If Windows Authentication is selected, the service account credentials from previous step are used to connect to the database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
+7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. If Windows Authentication is selected, the service account credentials from previous step are used to connect to the database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
 8. On the **Configure the database** page, select the Orchestrator database for your deployment, and then click **Next**.
 
