@@ -35,7 +35,7 @@ Follow these steps:
 6.	Select the **Update Status** link under **Azure Update Management info** to assess and deploy the updates for the VM.
 
 >[!NOTE]
-> Azure update management capability also supports service deployments using service templates; the flow is same as the above.  
+> Azure update management capability also supports service deployments using service templates; the flow is the same as above.  
 
 ## Next steps
 [Manage Azure VMs](manage-azure-vms.md).
