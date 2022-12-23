@@ -247,7 +247,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
      :::image type="Review tab" source="media/create-operations-manager-managed-instance/review.png" alt-text="Screenshot of review tab.":::
 1. On the left pane, under **Objects**, select **Secrets**.
 
-    :::image type="Secrets" source="media/create-operations-manager-managed-instance/secrets.png" alt-text="Screenshot of secrets.":::
+    :::image type="content" source="./media/create-operations-manager-managed-instance/secrets-inline.png" alt-text="Screenshot of secrets." lightbox="./media/create-operations-manager-managed-instance/secrets-expanded.png":::
 
      >[!Note]
      > You must create two secrets to store the domain account credentials.
@@ -262,12 +262,12 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
     - **Secret value**: For username value (in the format, domain\username), it will be the domain account username, and for password, it will be the domain account password.
        For example, if the domain is *contoso.com*, then the username would be in the format *contoso\username*.
         
-:::image type="Secrets" source="media/create-operations-manager-managed-instance/create-a-secret-username.png" alt-text="Screenshot of create a secret username.":::
+       :::image type="Secrets" source="media/create-operations-manager-managed-instance/create-a-secret-username.png" alt-text="Screenshot of create a secret username.":::
 
-:::image type="Secrets" source="media/create-operations-manager-managed-instance/create-a-secret-password.png" alt-text="Screenshot of create a secret password.":::
+       :::image type="Secrets" source="media/create-operations-manager-managed-instance/create-a-secret-password.png" alt-text="Screenshot of create a secret password.":::
 
    - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**, **Enabled**, and **Tags** as default and select **Create** to create the secret.
-         :::image type="Create a secret" source="media/create-operations-manager-managed-instance/create-a-secret.png" alt-text="Screenshot of create a secret.":::
+         :::image type="Create a secret" source="media/create-operations-manager-managed-instance/create-a-secret-2.png" alt-text="Screenshot of create a secret.":::
 
 --- 
 
@@ -303,7 +303,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
     1. **Active directory details**: 
         1. **Domain name**: Enter the name of the domain that is being administered by the Domain Controller.
         1. **DNS Server IP**: Enter the IP address of the DNS Server that is providing the IP addresses to the resources in the domain mentioned above.
-        1. **OU Path**: Enter the OU Path to where you want to join the servers. This isn't a necessary field, and if left blank, it will assume the default value. Value should be in DistinguishedName format. For example, **OU=testOU,DC=domain,DC=Domain,DC=com**.
+        1. **OU Path**: Enter the OU Path to where you want to join the servers. This isn't a necessary field, and if left blank, it will assume the default value. The value should be in DistinguishedName format. For example, **OU=testOU,DC=domain,DC=Domain,DC=com**.
 
              :::image type="Active directory details" source="media/create-operations-manager-managed-instance/active-directory-details.png" alt-text="Screenshot showing Active directory details.":::
 
