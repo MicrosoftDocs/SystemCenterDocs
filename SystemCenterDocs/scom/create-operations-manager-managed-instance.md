@@ -108,7 +108,7 @@ To register SCOM Managed Instance (preview) resource provider, do the following:
 1. Sign in to the [Azure portal](https://portal.azure.com) and select **Subscriptions**.
 2. Select the subscription where you want to deploy SCOM Managed Instance (preview).
 3. Under **Settings**, select **Resource providers**.
-4. Search for SCOM Managed Instance and register **Microsoft.Scom**.
+4. Search for SCOM and register **Microsoft.Scom**.
 
 ## Create a Managed Service Identity (MSI)
 
@@ -190,7 +190,7 @@ For more information on Directory Readers role, see [Directory Readers role in A
 1.	Open the SQL MI. Under **Settings**, select **Active Directory admin**.
      :::image type="Active directory admin" source="media/create-operations-manager-managed-instance/active-directory-admin.png" alt-text="Screenshot of Active directory admin.":::
 
-2.	Select **Set admin**, search for your MSI (the same MSI that you provided during the SCOM Managed Instance (preview) creation flow). You'll find the admin added to the SQL MI.
+2.	Select **Set admin**, search for your MSI (the same MSI that you provided during the SCOM Managed Instance (preview) creation flow). You will find the admin added to the SQL MI.
      :::image type="Azure Active directory admin" source="media/create-operations-manager-managed-instance/azure-active-directory.png" alt-text="Screenshot of Azure Active directory admin.":::
 
 3.	If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, else your instance creation will fail.
@@ -275,19 +275,19 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
 --- 
 
-## Create a SCOM Managed Instance (preview)
+## Create a SCOM managed instance (preview)
 
 To create a SCOM Managed Instance (preview), follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com), and search for **SCOM Managed Instance**.
 1. On the Overview page, you've three options:
-    - **Prerequisites**: Allows you to view the prerequisites.
-    - **Create SCOM Managed Instance**: Allows you to create a SCOM Managed Instance (preview).
-    - **Manage your SCOM Managed Instance**: Allows you to view the list of instances created.
+    - **Pre-requisites**: Allows you to view the prerequisites.
+    - **Create SCOM managed instance**: Allows you to create a SCOM Managed Instance (preview).
+    - **Manage your SCOM managed instance**: Allows you to view the list of instances created.
 
          :::image type="SCOM Managed Instance (preview) Overview" source="media/create-operations-manager-managed-instance/scom-mi-overview.png" alt-text="Screenshot showing SCOM Managed Instance (preview) Overview.":::
 
-1. Select **Create SCOM Managed Instance**.
+1. Select **Create SCOM managed instance**.
 1. Under **Basics**, do the following:
     1. **Project details**:
         1. **Subscription**: Select the Azure subscription in which you want to place the SCOM Managed Instance (preview).
@@ -296,7 +296,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
              :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details.png" alt-text="Screenshot showing project details.":::
 
     1. **Instance details**:
-        1. **SCOM Managed Instance name**: Enter the desired SCOM Managed Instance (preview) name.
+        1. **SCOM managed instance name**: Enter the desired SCOM Managed Instance (preview) name.
             >[!Note]
             >- SCOM Managed Instance (preview) name can have only alphanumeric characters and be up to 10 characters.
             >- SCOM Managed Instance (preview) is equivalent to System Center Operation Manager Management Group, so choose a name accordingly.
@@ -330,7 +330,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
         1. **Subnet**: Select a subnet that has at least 32 IP addresses to house all the SCOM Managed Instance (preview) components. The minimum address space is 28. The subnet can have existing resources in it; however, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the instance.
            >[!Note]
            >Ensure that you have a NAT Gateway associated with the subnet you choose.
-    1. **SCOM Managed Instance interface**:
+    1. **SCOM managed instance interface**:
         1. **Static IP**: Enter the Static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance (preview).
         1. **DNS name**: Enter the DNS name that you attached to the Static IP above.
     1. **gMSA details**: 
