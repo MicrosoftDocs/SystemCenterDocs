@@ -315,7 +315,8 @@ To create a SCOM Managed Instance (preview), follow these steps:
             >[!Note]
             >Ensure that you provide the secret names created in the **selected Key vault**, and not the actual domain username and password.
 
-          :::image type="Domain account details" source="media/create-operations-manager-managed-instance/secret-password-mapping.png" alt-text="Screenshot showing Domain account details.":::
+
+          :::image type="content" source="./media/create-operations-manager-managed-instance/secret-password-mapping-inline.png" alt-text="Screenshot showing password mapping for create a secret." lightbox="./media/create-operations-manager-managed-instance/secret-password-mapping-expanded.png":::
 
     1. **Azure Hybrid Benefit**: By default, **No** is selected. Select **Yes** if you're using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview), and it won't apply to existing Windows Servers.
            :::image type="Azure hybrid benefit" source="media/create-operations-manager-managed-instance/azure-hybrid-benefit.png" alt-text="Screenshot showing Azure hybrid benefit.":::
