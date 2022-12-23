@@ -66,7 +66,9 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 ## Create and configure a computer group
 
 - Create a computer group in your active directory. For more information, see [Create a group account in active directory](/windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory). All the management servers you create will be a part of this group so that all the members of the group can retrieve gMSA account credentials (created in subsequent steps). This group can't contain spaces and must have alphabets only.
-      :::image type="Active directory computers" source="media/create-operations-manager-managed-instance/active-directory-computers.png" alt-text="Screenshot of Active directory computers.":::
+
+:::image type="Active directory computers" source="media/create-operations-manager-managed-instance/active-directory-computers.png" alt-text="Screenshot of Active directory computers.":::
+
 - To manage this computer group, provide permissions to the domain account that you created. Follow the steps below to provide permissions:
     1. Select the group properties and select **Managed By**.
         1. **Name**: Enter the name of the domain account.
