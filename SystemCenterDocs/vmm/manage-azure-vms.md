@@ -24,7 +24,7 @@ This article provides information about the *Manage Azure Virtual Machines (VMs)
 This feature allows you to perform basic actions on Azure instances attached to an Azure profile, created for Azure VM management.
 
 >[!NOTE]
-> To perform these actions, you must create [Azure profile](azure-subscription.md) with **Profile Usage** selected as **Azure VM Management**. Once an Azure profile  for Azure VM Management is created, the VMs deployed on Azure will be accessible on the **VMs and Services** page of VMM console, and will be listed under *Azure Subscriptions*.
+> To perform these actions, you must create [Azure profile](azure-subscription.md) with **Profile Usage** selected as **Azure VM Management**. Once an Azure profile for Azure VM Management is created, the VMs deployed on Azure will be accessible on the **VMs and Services** page of VMM console and will be listed under *Azure Subscriptions*.
 
 You can perform the following actions on Azure instances, without leaving the VMM console.
 
@@ -39,7 +39,7 @@ You can perform the following actions on Azure instances, without leaving the VM
     - Connect via RDP
 
 ## What is not supported
-This feature is not intended to provide feature parity with the Microsoft Azure Management Portal. The functionality of this feature is a minor subset of the features at https://portal.azure.com but you can view your Azure instances and do other basic actions, to simplify everyday tasks and management.
+This feature is not intended to provide feature parity with the Microsoft Azure Management Portal. The functionality of this feature is a minor subset of the features at https://portal.azure.com, but you can view your Azure instances and do other basic actions to simplify everyday tasks and management.
 
 With this feature, You cannot:
 - Manage your Azure subscription
