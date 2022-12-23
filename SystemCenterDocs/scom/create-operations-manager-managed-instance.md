@@ -244,7 +244,9 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 1. Select **Next**.
 1. In **Tags**, select the tags if required and select **Next**.
 1. In **Review + create**, review the selections, and select **Create** to create the Key vault.
-     :::image type="Review tab" source="media/create-operations-manager-managed-instance/review.png" alt-text="Screenshot of review tab.":::
+     
+     :::image type="content" source="./media/create-operations-manager-managed-instance/review-inline.png" alt-text="Screenshot of review tab." lightbox="./media/create-operations-manager-managed-instance/review-expanded.png":::
+
 1. On the left pane, under **Objects**, select **Secrets**.
 
     :::image type="content" source="./media/create-operations-manager-managed-instance/secrets-inline.png" alt-text="Screenshot of secrets." lightbox="./media/create-operations-manager-managed-instance/secrets-expanded.png":::
@@ -268,7 +270,8 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
    - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**, **Enabled**, and **Tags** as default and select **Create** to create the secret.
          
-       :::image type="content" source="./media/create-operations-manager-managed-instance/create-a-secret-2-inline.png" alt-text="Screenshot of create a secret." lightbox="./media/create-operations-manager-managed-instance/create-a-secret-2-expanded.png":::
+       :::image type="Secrets" source="media/create-operations-manager-managed-instance/create-a-secret-2.png" alt-text="Screenshot of create a secret password.":::
+       
 
 --- 
 
@@ -304,7 +307,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
     1. **Active directory details**: 
         1. **Domain name**: Enter the name of the domain that is being administered by the Domain Controller.
         1. **DNS Server IP**: Enter the IP address of the DNS Server that is providing the IP addresses to the resources in the domain mentioned above.
-        1. **OU Path**: Enter the OU Path to where you want to join the servers. This isn't a necessary field, and if left blank, it will assume the default value. The value should be in DistinguishedName format. For example, **OU=testOU,DC=domain,DC=Domain,DC=com**.
+        1. **OU Path**: Enter the OU Path to where you want to join the servers. This isn't a necessary field, and if left blank, it will assume the default value. Ensure that the value you enter is in the DistinguishedName format. For example, **OU=testOU,DC=domain,DC=Domain,DC=com**.
 
              :::image type="Active directory details" source="media/create-operations-manager-managed-instance/active-directory-details.png" alt-text="Screenshot showing Active directory details.":::
 
