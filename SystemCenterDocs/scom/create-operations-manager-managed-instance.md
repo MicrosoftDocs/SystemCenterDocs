@@ -262,7 +262,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
     - **Upload options**: Select **Manual**.
     - **Name**: Enter the name of secret. For example, you can use *Username* for username secret and *Password* for password secret.
     - **Secret value**: For username value (in the format, domain\username), it will be the domain account username, and for password, it will be the domain account password.
-       For example, if the domain is *contoso.com*, then the username would be in the format *contoso\username*.
+       For example, if the domain is *contoso.com*, then the username would be in the format *contoso\username*. Here are the sample screenshots.
         
        :::image type="Secrets" source="media/create-operations-manager-managed-instance/create-a-secret-username.png" alt-text="Screenshot of create a secret username.":::
 
