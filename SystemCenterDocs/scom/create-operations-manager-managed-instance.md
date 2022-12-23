@@ -245,7 +245,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 1. In **Tags**, select the tags if required and select **Next**.
 1. In **Review + create**, review the selections, and select **Create** to create the Key vault.
      
-     :::image type="content" source="./media/create-operations-manager-managed-instance/review-inline.png" alt-text="Screenshot of review tab." lightbox="./media/create-operations-manager-managed-instance/review-expanded.png":::
+    :::image type="content" source="./media/create-operations-manager-managed-instance/review-inline.png" alt-text="Screenshot of review tab." lightbox="./media/create-operations-manager-managed-instance/review-expanded.png":::
 
 1. On the left pane, under **Objects**, select **Secrets**.
 
@@ -270,7 +270,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
    - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**, **Enabled**, and **Tags** as default and select **Create** to create the secret.
          
-       :::image type="Secrets" source="media/create-operations-manager-managed-instance/create-a-secret-2.png" alt-text="Screenshot of create a secret password.":::
+       :::image type="Secrets" source="media/create-operations-manager-managed-instance/create-a-secret-2.png" alt-text="Screenshot of create a secret.":::
        
 
 --- 
