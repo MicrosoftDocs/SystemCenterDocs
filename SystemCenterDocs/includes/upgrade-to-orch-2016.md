@@ -28,7 +28,7 @@ The following sections provide information about how to upgrade to System Center
 **Prepare to upgrade:**
 
 1. Ensure that there are no pending restarts on the computer.
-2. Perform a full back up of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](../orchestrator/migrate-orchestrator-between-environments.md).
+2. Perform a full backup of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](../orchestrator/migrate-orchestrator-between-environments.md).
 3. Upgrade the hardware, operating system, and other software if needed.
 
 **Perform the upgrade:**

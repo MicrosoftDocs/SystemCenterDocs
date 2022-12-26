@@ -96,7 +96,7 @@ For more information on automatic and manual purging of logs, see the [Purging R
 ## Creating Performance Benchmarks  
 To create a simple runbook to test logging growth, you can use the Standard Activity **Compare Values** to create benchmarks of an Orchestrator environment.  
 
-The following procedure creates a simple runbook that runs a **Compare Values** activity 10,000 times. **Compare Values** is a simple activity whose domain code is minimal. This runbook can be invoked under a variety of circumstances to characterize the overall performance of a given Orchestrator runtime environment.  
+The following procedure creates a simple runbook that runs a **Compare Values** activity 10,000 times. **Compare Values** is a simple activity whose domain code is minimal. This runbook can be invoked under various circumstances to characterize the overall performance of a given Orchestrator runtime environment.  
 
 #### To create a runbook that can be used to benchmark your Orchestrator environment  
 
@@ -154,7 +154,7 @@ However, it should be noted that these figures reflect the overhead of the platf
 
 A clearer picture begins to emerge from the data. The scenario where logging of common published data is enabled at Location 2 continues to be the worst performer. However, the platform code and logging only accounts for 6% of the total runtime. While this is a significant figure, the best\-case scenario is 1.4%. Essentially, the time spent in the domain code in the example far outweighs the time spent running platform code. To put this in perspective, if you were able to completely eliminate the platform code costs, you would only see runbook performance improvements in the range of 1.4% to 7.4%.  
 
-Of course, most real\-world scenarios will be different. Activity behavior may change depending on what the domain code is told to do. For example, a **Clone VM from Template** activity may take one minute to clone a VM from Server Template A, but take 5 minutes to clone a VM from Server Template B. Also, Runbook Servers may reside on different networks with different performance characteristics, which can potentially affect both domain code performance and Orchestrator data logging performance.  
+Most real\-world scenarios will be different. Activity behavior may change depending on what the domain code is told to do. For example, a **Clone VM from Template** activity may take one minute to clone a VM from Server Template A, but take 5 minutes to clone a VM from Server Template B. Also, Runbook Servers may reside on different networks with different performance characteristics, which can potentially affect both domain code performance and Orchestrator data logging performance.  
 
 ## Determining Database Growth  
 Your database administrator for the Orchestrator database can use the following guidelines for determining database file growth strategy:  
