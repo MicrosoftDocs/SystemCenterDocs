@@ -53,7 +53,7 @@ The following software is required for a full installation of Orchestrator on a 
 * Microsoft .NET Framework 3.5 Service Pack 1 - Orchestrator Setup installs and enables .NET Framework 3.5 SP1 if it isn't installed and enabled.
 
 * Microsoft .NET Framework 4
-* [Microsoft SQL Server 2012 Native Client - QFE   (applies to SQL 2012/2014/2016)](https://www.microsoft.com/download/details.aspx?id=50402).
+* [Microsoft SQL Server 2012 Native Client - QFE (applies to SQL 2012/2014/2016)](https://www.microsoft.com/download/details.aspx?id=50402).
 
 We recommend the following software for a full installation of Orchestrator on a single computer:
 
