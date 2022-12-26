@@ -20,7 +20,7 @@ manager: evansma
 
 ::: moniker-end
 
-As part of your day-to-day operations of Orchestrator you may need to change the connection settings to the Orchestrator database. You can use the `DBSetup` utility to change this setting. The common scenario is connecting to a restored backup.  
+As part of your day-to-day operations of Orchestrator, you may need to change the connection settings to the Orchestrator database. You can use the `DBSetup` utility to change this setting. The common scenario is connecting to a restored backup.  
 
 This utility provides two functions:  
 

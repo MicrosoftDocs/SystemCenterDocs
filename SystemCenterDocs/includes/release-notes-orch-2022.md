@@ -27,11 +27,11 @@ The following are the known issues and workarounds in System Center 2022 - Orche
 
 **Description**: Web Console doesn't work properly if .NET Core 5 isn't installed.
 
-**Work around**: Install .NET Core 5.
+**Workaround**: Install .NET Core 5.
 
 ### Orchestrator Web console isn't compatible with Internet Explorer
 
-**Work around**: Open the Orchestrator web console with Microsoft Edge or other modern browsers. The new console doesn't depend on Silverlight.
+**Workaround**: Open the Orchestrator web console with Microsoft Edge or other modern browsers. The new console doesn't depend on Silverlight.
 
 ### Orchestration Console navigation pane doesn't render properly when deeply nested
 
@@ -52,7 +52,7 @@ The following are the known issues and workarounds in System Center 2022 - Orche
 
 **Description**: The *oremoting* and *omonitor* service can't be stopped using Service kill.
 
-**Work around**: Kill the service process manually using Task Manager or by using the following command:
+**Workaround**: Kill the service process manually using Task Manager or by using the following command:
 
 ```cmd
 
@@ -61,6 +61,6 @@ taskkill /f /pid {pid of the service}
 ```
 ### Service Manager connector doesn't work with new Web API
 
-**Description**: Service Manager (SM) console doesn't detect orchestrator 2022 installation, because the Connector for the new Web API is yet to be released.
+**Description**: Service Manager (SM) console doesn't detect orchestrator 2022 installation because the Connector for the new Web API is yet to be released.
 
 **Workaround**: Install the Orchestrator 2019 Web features on the computer alongside Orchestrator 2022. Ensure to configure the Orchestrator 2022 database in the 2019 Web features. The SM connector can monitor Orchestrator 2022 with Orchestrator 2019 Web service.

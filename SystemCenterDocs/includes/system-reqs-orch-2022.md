@@ -52,11 +52,11 @@ The following software is required for a full installation of Orchestrator on a 
     > [!NOTE]
     > Management servers and runbook servers installed on the same computer must use the same database.
 
-- Microsoft Internet Information Services (IIS) – Orchestrator Setup enables IIS if it is not enabled.
+- Microsoft Internet Information Services (IIS) – Orchestrator Setup enables IIS if it isn't enabled.
 
 - Microsoft .NET Framework 4.5 or later.
 
-- Ensure that [Microsoft OLE DB Driver for SQL Server v18](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#previous-releases&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer or the Web API Service.
+- Ensure that [Microsoft OLE DB Driver for SQL Server v18](https://learn.microsoft.com/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver16#previous-releases&preserve-view=true) is installed on machines that host the Management Server, Runbook Service, Runbook Designer, or the Web API Service.
 
 - Join the computer to an Active Directory domain.
 
@@ -64,7 +64,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 > [!NOTE]
 > - For the supported versions of SQL, use the service packs/cumulative updates that are currently in support by Microsoft.
-> -	SQL *Always ON*  is supported, except in the cases, where configuration is done on multi subnets.
+> -	SQL *Always ON*  is supported, except in the cases where configuration is done on multi subnets.
 
 **SQL version** | **Supported**
 --- | ---

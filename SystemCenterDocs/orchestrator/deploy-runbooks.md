@@ -24,7 +24,7 @@ There are tools available in Orchestrator to help you manage the versions of you
 ## Version control  
 In Orchestrator, multiple users can create and update runbooks. However, only one user at a time can make changes to a runbook. This protects your work from being overwritten by someone else with the same permission level.  
 
-To edit a runbook, you must check it out. Another user cannot edit that runbook until you either commit all changes by checking the runbook in or revert all changes by undoing the checkout.  
+To edit a runbook, you must check it out. Another user cannot edit that runbook until you either commit all changes by checking in the runbook or revert all changes by undoing the checkout.  
 
 ### Check in and check out  
 
@@ -38,13 +38,13 @@ To edit a runbook, you must check it out. Another user cannot edit that runbook 
 When a runbook has been changed and is checked in by a user, an entry appears in the **Audit History** log.  
 
 > [!TIP]  
-> When a runbook has been altered to a state where it is no longer functioning, you can select the **Audit History** tab at the bottom of the Runbook Designer to see the changes that were made and then reverse them.  
+> When a runbook has been altered to a state where it's no longer functioning, you can select the **Audit History** tab at the bottom of the Runbook Designer to see the changes that were made and then reverse them.  
 
 ### To view runbook change details  
 
-1.  In the Runbook Designer, select the **Audit History** tab at the bottom, double\-click the entry item to open the **Details** dialog box.  
+1.  In the Runbook Designer, select the **Audit History** tab at the bottom and double\-click the entry item to open the **Details** dialog.  
 
-2.  In the **Name** column, click each item in the list to view the changes that were made.  
+2.  In the **Name** column, select each item in the list to view the changes that were made.  
 
 3.  When you select an item, the **Action** type displays beneath the **Activities** box. For example, **Action: Modified** or **Action: Added**. When you select the **Action: Modified** type, the **Attribute**, **Old Value**, and **New Value** are listed in the bottom text box.  
 

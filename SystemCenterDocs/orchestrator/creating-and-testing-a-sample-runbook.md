@@ -32,15 +32,15 @@ Use the following procedures to create the runbook by using the required activit
 
 #### To create a runbook  
 
-1.  Click **Start**, point to  **All Programs**, click **Microsoft System Center 2016**, click **Orchestrator**, and then click **Runbook Designer**.  
+1.  Select **Start**, point to  **All Programs**, select **Microsoft System Center 2016**, select **Orchestrator**, and then select **Runbook Designer**.  
 
-2.  In the **Connections** pane, right-click **Runbooks** to select **New**, and then click **Runbook**.  
+2.  In the **Connections** pane, select and hold **Runbooks** to select **New**, and then select **Runbook**.  
 
     A **New Runbook** tab appears at the top of the **Runbook Designer** Design workspace with the name **New Runbook**.  
 
-3.  Right-click the **New Runbook** tab to select **Rename**.  
+3.  Select and hold the **New Runbook** tab to select **Rename**.  
 
-    In the **Confirm Check out** dialog box, click **Yes**.  
+    In the **Confirm Check out** dialog, select **Yes**.  
 
 4.  Type **Append and Copy Workflow** in the **Input** box, and then press Enter.  
 
@@ -52,23 +52,23 @@ You have created a new runbook and are ready to begin adding and configuring act
 
 2.  Click and drag the **Monitor File** activity to the **Runbook Designer** Design workspace.  
 
-3.  Double\-click the **Monitor File** activity to open its **Properties** dialog box.  
+3.  Double\-click the **Monitor File** activity to open its **Properties** dialog.  
 
 4.  In the **In folder** box, type **C:\\Drop**.  
 
-5.  In the **Filters** section, click the **Add** button.  
+5.  In the **Filters** section, select the **Add** button.  
 
-6.  In the **Filter Settings** dialog box, in the **Name** list, select **File Name**.  
+6.  In the **Filter Settings** dialog, in the **Name** list, select **File Name**.  
 
 7.  In the **Relation** list, select **Matches Pattern**.  
 
 8.  In the **Value** box, type **\*.txt**.  
 
-9. Click **OK**.  
+9. Select **OK**.  
 
-10. Click the **Triggers** tab.  
+10. Select the **Triggers** tab.  
 
-11. In the **Trigger if one of the files was** section, select the **Created** check box, and then click **Finish**.  
+11. In the **Trigger if one of the files was** section, select the **Created** check box, and then select **Finish**.  
 
 The **Monitor File** activity is created and configured to watch for any new text files that are created in the C:\\Drop folder.  
 
@@ -76,49 +76,49 @@ The **Monitor File** activity is created and configured to watch for any new tex
 
 1.  In the **Activities** pane, expand the **File Management** category.  
 
-2.  Click and drag the **Copy File** activity to the **Runbook Designer** Design workspace.  
+2.  Select and drag the **Copy File** activity to the **Runbook Designer** Design workspace.  
 
 3.  Expand the **Text File Management** category.  
 
-4.  Click and drag the **Read Line** activity to the **Runbook Designer** Design workspace.  
+4.  Select and drag the **Read Line** activity to the **Runbook Designer** Design workspace.  
 
-5.  To create a link between the **Monitor File** activity and the **Copy File** activity, click and drag the right arrow of the **Monitor File** activity to the **Copy File** activity.  
+5.  To create a link between the **Monitor File** activity and the **Copy File** activity, select and drag the right arrow of the **Monitor File** activity to the **Copy File** activity.  
 
-6.  To create a link between the **Monitor File** activity and the **Read Line** activity, click and drag the right arrow of the **Monitor File** activity to the **Read Line** activity.  
+6.  To create a link between the **Monitor File** activity and the **Read Line** activity, select and drag the right arrow of the **Monitor File** activity to the **Read Line** activity.  
 
 By adding both the **Read Line** activity and the **Copy File** activity, you have created a workflow.  
 
 #### To configure the Copy File activity  
 
-1.  In the **Append and Copy Workflow** runbook, right-click the **Copy File** activity to  select **Properties**.  
+1.  In the **Append and Copy Workflow** runbook, select and hold the **Copy File** activity to  select **Properties**.  
 
-2.  On the **Details** tab, right-click the **File** box to select **Subscribe**, and then click **Published Data** to open the **Published Data** dialog box.  
+2.  On the **Details** tab, select and hold the **File** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
 
-    The **Monitor File** activity is listed at the top of the **Published Data** dialog box because this is the activity just before to the selected activity.  
+    The **Monitor File** activity is listed at the top of the **Published Data** dialog because this is the activity just before the selected activity.  
 
-3.  In the **Name** column, select **Name and path of the file**, and then click **OK**. This populates the **File** property of the **Copy File** activity with the name of and path to the file from the **Monitor File** activity.  
+3.  In the **Name** column, select **Name and path of the file**, and then select **OK**. This populates the **File** property of the **Copy File** activity with the name of and path to the file from the **Monitor File** activity.  
 
 4.  In the destination **Folder** box, type **C:\\Copy**.  
 
-5.  Click **Finish**.  
+5.  Select **Finish**.  
 
 The **Copy File** activity is now configured to copy files from the source folder to the destination folder.  
 
 #### To configure the Read Line activity  
 
-1.  In the **Append and Copy Workflow** runbook, right-click the **Read Line** activity to select **Properties**.  
+1.  In the **Append and Copy Workflow** runbook, select and hold the **Read Line** activity to select **Properties**.  
 
-2.  On the **Details** tab, right-click the **File** box to select **Subscribe**, and then click **Published Data** to open the **Published Data** dialog box.  
+2.  On the **Details** tab, select and hold the **File** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
 
 3.  In the **Activities** list, select **Monitor File**.  
 
-4.  In the **Name** column, select **Name and path of the file**, and then click **OK**.  
+4.  In the **Name** column, select **Name and path of the file**, and then select **OK**.  
 
-5.  Click the ellipse \(**...**\) button to the right of the **File encoding** box, and then select **auto**.  
+5.  Select the ellipse \(**...**\) button to the right of the **File encoding** box, and then select **auto**.  
 
-6.  In the **Line numbers** box, type **1\-END**, and then click **OK**.  
+6.  In the **Line numbers** box, type **1\-END**, and then select **OK**.  
 
-7.  Click **Finish**.  
+7.  Select **Finish**.  
 
 The Read Line activity is now configured.  
 
@@ -126,21 +126,21 @@ The Read Line activity is now configured.
 
 1.  In the **Activities** pane, expand the **Text File Management** category.  
 
-2.  Click and drag the **Append Line** activity to the **Runbook Designer** Design workspace to the right of the **Read Line** activity.  
+2.  Select and drag the **Append Line** activity to the **Runbook Designer** Design workspace to the right of the **Read Line** activity.  
 
-3.  To create a link from the **Read Line** activity to the **Append Line** activity, click and drag the right arrow of the **Read Line** activity to the **Append Line** activity.  
+3.  To create a link from the **Read Line** activity to the **Append Line** activity, select and drag the right arrow of the **Read Line** activity to the **Append Line** activity.  
 
-4.  Right-click the **Append Line** activity to select **Properties**.  
+4.  Select and hold the **Append Line** activity to select **Properties**.  
 
 5.  On the **Details** tab in the **File** box, type **C:\\Copy\\Masterlog.txt**.  
 
-6.  Click the ellipse \(**...**\) button to the right of the **File encoding** box, and then select **auto**.  
+6.  Select the ellipse \(**...**\) button to the right of the **File encoding** box, and then select **auto**.  
 
-7.  Right-click the **Text** box to select **Subscribe**, and then click **Published Data** to open the **Published Data** dialog box.  
+7.  Select and hold the **Text** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
 
-8.  In the **Name** column for the **Read Line** activity, select **Line text**, and then click **OK**.  
+8.  In the **Name** column for the **Read Line** activity, select **Line text**, and then select **OK**.  
 
-9. Click **Finish**.  
+9. Select **Finish**.  
 
 The **Append File** activity is now configured to append files to the **Masterlog.txt** file.  
 
@@ -148,17 +148,17 @@ The **Append File** activity is now configured to append files to the **Masterlo
 
 1.  In the **Activities** pane, expand the **Runbook Control** category.  
 
-2.  Click and drag the **Junction** icon to the **Runbook Designer** Design workspace.  
+2.  Select and drag the **Junction** icon to the **Runbook Designer** Design workspace.  
 
-3.  To create a link from the **Append Line** activity to the **Junction** activity, click and drag the right arrow of the **Append Line** activity to the **Junction** activity.  
+3.  To create a link from the **Append Line** activity to the **Junction** activity, select and drag the right arrow of the **Append Line** activity to the **Junction** activity.  
 
-4.  To create a link from the **Copy File** activity to the **Junction** activity, click and drag the right arrow of the **Copy File** activity to the **Junction** activity.  
+4.  To create a link from the **Copy File** activity to the **Junction** activity, select and drag the right arrow of the **Copy File** activity to the **Junction** activity.  
 
-5.  Right-click the **Junction** activity to select **Properties**.  
+5.  Select and hold the **Junction** activity to select **Properties**.  
 
-6.  Click the ellipse \(**...**\) button next to the **Return data from** box, and then select **Copy File**. Click **OK**. This action configures the activity to return the same Published Data as the **Copy File** activity.  
+6.  Select the ellipse \(**...**\) button next to the **Return data from** box, and then select **Copy File**. Select **OK**. This action configures the activity to return the same Published Data as the **Copy File** activity.  
 
-7.  Click **Finish**.  
+7.  Select **Finish**.  
 
 The **Junction** activity is configured to coordinate the workflow so that no further activities run until both the **Copy File** activity and **Append Line** activity finish.  
 
@@ -166,23 +166,23 @@ The **Junction** activity is configured to coordinate the workflow so that no fu
 
 1.  In the **Activities** pane, expand the **File Management** category.  
 
-2.  Click and drag the **Delete File** icon to the **Runbook Designer** Design workspace.  
+2.  Select and drag the **Delete File** icon to the **Runbook Designer** Design workspace.  
 
-3.  To create a link from the **Junction** activity to the **Delete File** activity, click and drag the right arrow of the **Junction** activity to the **Delete File** activity.  
+3.  To create a link from the **Junction** activity to the **Delete File** activity, select and drag the right arrow of the **Junction** activity to the **Delete File** activity.  
 
-4.  Right-click the **Delete File** activity to select **Properties**.  
+4.  Select and hold the **Delete File** activity to select **Properties**.  
 
-5.  Right-click the **Path** box to select **Subscribe**, and then click **Published Data** to open the **Published Data** dialog box.  
+5.  Select and hold the **Path** box to select **Subscribe**, and then select **Published Data** to open the **Published Data** dialog.  
 
     In the **Activity** list, select **Copy File**.  
 
-6.  In the **Name** column, select **Name and path of the original file**, and then click **OK**.  
+6.  In the **Name** column, select **Name and path of the original file**, and then select **OK**.  
 
-7.  Click **Finish**.  
+7.  Select **Finish**.  
 
 The **Append and Copy Workflow** runbook is now completed. It should look similar to the following illustration.  
 
-![Sample Runbook 1](./media/creating-and-testing-a-sample-runbook/sample-runbook-1.png)
+![Screenshot of sample Runbook 1.](./media/creating-and-testing-a-sample-runbook/sample-runbook-1.png)
 
 ## Testing the runbook  
 You can test the runbook by using the Runbook Tester. This tool lets you run the entire runbook and inspect the completion status and output of each activity. The Runbook Tester runs the activities, so you must first create the folders specified for the runbook.  
@@ -193,15 +193,15 @@ You can test the runbook by using the Runbook Tester. This tool lets you run the
 
 2.  Create a folder on the runbook server called C:\\Copy.  
 
-3.  With the **Append and Copy Workflow** runbook selected in the Runbook Designer, on the toolbar, click **Runbook Tester**.  
+3.  With the **Append and Copy Workflow** runbook selected in the Runbook Designer, on the toolbar, select **Runbook Tester**.  
 
-4.  Click **Run To Breakpoint**. The **Monitor File** activity is loaded and waits for a text file to be created in the C:\\Drop folder.  
+4.  Select **Run To Breakpoint**. The **Monitor File** activity is loaded and waits for a text file to be created in the C:\\Drop folder.  
 
 5.  Open **Notepad** and type a few lines of text. Save the file as C:\\Drop\\File1.txt.  
 
 6.  Wait a few moments for the other activities to run. Ensure that each of the activities is completed successfully.  
 
-7.  To view the Published Data and other details of an activity, click **Show Details** for the activity.  
+7.  To view the Published Data and other details of an activity, select **Show Details** for the activity.  
 
 8.  Open the C:\\Drop folder and ensure that the file has been removed.  
 

@@ -19,10 +19,10 @@ ms.author: jsuri
 
 ::: moniker-end
 
-Despite the great deal of variance in their design and visual complexity, runbooks are essentially very simple. Runbooks all essentially do three things: Run activities, manage published data, and branch.  
+Despite the great deal of variance in their design and visual complexity, runbooks are essentially very simple. Runbooks essentially do three things: Run activities, manage published data, and branch.  
 
 ## Orchestrator Feature Functions  
-Additionally, runbook activities can be thought of as having two distinct types of code: Platform code and domain code. The term *domain code* is used to identify code called within a runbook activity typically not associated with the Orchestrator product itself. For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code \(the "plumbing" of the activity\) as well as domain code unique to invoking a web service. The platform code will be unique but similar for most activities, since it is built from a common framework. However, there will potentially be great variation in domain code for different activities.  
+Additionally, runbook activities can be thought of as having two distinct types of code: Platform code and domain code. The term *domain code* is used to identify code called within a runbook activity typically not associated with the Orchestrator product itself. For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code \(the "plumbing" of the activity\) as well as domain code unique to invoking a web service. The platform code will be unique but similar for most activities, since it's built from a common framework. However, there will potentially be great variation in domain code for different activities.  
 
 Essentially, Orchestrator runbooks are designed to pass data between discrete elements of domain code.  
 
@@ -32,9 +32,9 @@ All runbook activities create published data, which is referred to as *Common Pu
 
 The data produced by a given activity can contain data elements that are single or multi\-valued. For example, every activity produces a single record of single\-value data referred to as common published data. Domain code can produce multiple records of multi\-value data.  
 
-Branching is a fundamental concept for Orchestrator. A given runbook activity will create a branch if it is the origin of two or more links whose filter conditions indicate there is data to pass to the activity at the end of the link. When a runbook is first invoked it consists of a single thread. When this thread encounters a runbook activity whose links require a branch, additional threads are created, one for each branch. Each thread takes as input the published data from the activity that created the branch. This data is correlated back to the prior activities in the runbook \(hence the ability to subscribe to published data from prior activities\).  
+Branching is a fundamental concept for Orchestrator. A given runbook activity will create a branch if it's the origin of two or more links whose filter conditions indicate there's data to pass to the activity at the end of the link. When a runbook is first invoked, it consists of a single thread. When this thread encounters a runbook activity whose links require a branch, additional threads are created, one for each branch. Each thread takes as input the published data from the activity that created the branch. This data is correlated back to the prior activities in the runbook \(hence, the ability to subscribe to published data from prior activities\).  
 
-The operator experience is based on two components: The Orchestration Console and the Web Service. The Orchestration Console is a Silverlight application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. Hence the Web Service and Orchestration Console are very dependent on the performance of the Orchestrator database.  
+The operator experience is based on two components: The Orchestration Console and the Web Service. The Orchestration Console is a Silverlight application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. Hence, the Web Service and Orchestration Console are very dependent on the performance of the Orchestrator database.  
 
 Parts of the Orchestrator database are new to the product and directly support the Web Service. However, parts of the Web Service depend on the legacy Opalis 6.3 database structure.  
 
