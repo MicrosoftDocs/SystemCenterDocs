@@ -32,11 +32,11 @@ A complete Orchestrator installation includes
 - a server for hosting the Runbook Designer and Runbook Tester,
 - a web server for hosting the Orchestration Console.
 
-It is possible to install all these roles and components on a single computer, but it is more common to distribute the roles across several computers or virtual machines.
+It's possible to install all these roles and components on a single computer, but it's more common to distribute the roles across several computers or virtual machines.
 
 For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](/system-center/orchestrator/learn-about-orchestrator).
 
-This topic provides detailed installation instructions for the various Orchestrator roles.
+This article provides detailed installation instructions for the various Orchestrator roles.
 
 >[!NOTE]
 >Install the [Microsoft Visual C++ Redistributable](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022&preserve-view=true) package before running the Setup executable (SetupOrchestrator.exe).
@@ -58,7 +58,7 @@ This topic provides detailed installation instructions for the various Orchestra
 3.  On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
 
     > [!NOTE]
-    > For this evaluation release, a product key is not required.
+    > For this evaluation release, a product key isn't required.
 
 4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
 
@@ -68,10 +68,10 @@ This topic provides detailed installation instructions for the various Orchestra
 
 6.  Your computer is checked for required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next**, and proceed to the next step.
 
-   If a prerequisite is not met, a page displays the information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite isn't met, a page displays the information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
 
-1. Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
+1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
    > [!WARNING]
    > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
@@ -114,7 +114,7 @@ This topic provides detailed installation instructions for the various Orchestra
 3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
 
    > [!NOTE]
-   > For this evaluation release, a product key is not required.
+   > For this evaluation release, a product key isn't required.
 
 4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
 
@@ -122,9 +122,9 @@ This topic provides detailed installation instructions for the various Orchestra
 
 5. Your computer is checked for the required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
-   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-   1. Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
+   1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
       > [!WARNING]
       > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer may require a restart. If you restart your computer, you must run setup again from the beginning.
@@ -168,7 +168,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 3. On the **Product registration** page, provide the name and company for the product registration and then select **Next**.
 
    > [!NOTE]
-   > For this evaluation release, a product key is not required.
+   > For this evaluation release, a product key isn't required.
 
 4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
 
@@ -176,7 +176,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 5. Your computer is checked for required the hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
-   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
    1. Review the items that didn't pass the prerequisite check. The Web API requires .NET Hosting bundle v5.x and some IIS extensions. Download and install them from the official sites:
       1.	.NET Hosting bundle
@@ -215,7 +215,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 3.	On the **Product registration** page, provide the name and company for the product registration, and select **Next**.
 
     >[!NOTE]
-    >For this evaluation release, a product key is not required.
+    >For this evaluation release, a product key isn't required.
 
 4.	On the **Please read this License Terms** page, review, and accept the Microsoft Software License Terms, and select **Next**.
 
@@ -223,7 +223,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 5.	Your computer is checked for required hardware and software. If your computer meets all the requirements, **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
-    If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+    If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
     Orchestration Console requires IIS URL Rewrite module, download from here.
 
@@ -259,7 +259,7 @@ The **Installing features** page appears and displays the installation progress.
 3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
 
       > [!NOTE]
-      > For this evaluation release, a product key is not required.
+      > For this evaluation release, a product key isn't required.
 
 4. On the **Please read this License Terms** page, review, and accept the Microsoft Software License Terms, and then select **Next**.
 
@@ -267,7 +267,7 @@ The **Installing features** page appears and displays the installation progress.
 
 5. Your computer is checked for the required hardware and software. If your computer meets all the requirements, proceed to the next step.
 
-   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
    1.  Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
@@ -324,16 +324,16 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you're installing Management Server, Runbook Server, or web services.|
 |/DbUser:[UserName]|Specifies the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, no value should be specified.|
 |/DbPassword:[Password]|Specifies the password for the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, then no value should be specified.|
-|/DbNameNew:[Database Name]|Specifies the database name if a new database is being created. Cannot be used with DbNameExisting.|
-|/DbNameExisting:[Database Name]|Specifies the database name if an existing database is being used. Cannot be used with DbNameNew.|
+|/DbNameNew:[Database Name]|Specifies the database name if a new database is being created. Can't be used with DbNameExisting.|
+|/DbNameExisting:[Database Name]|Specifies the database name if an existing database is being used. Can't be used with DbNameNew.|
 |/WebServicePort:[Port]|Specifies the port to use for the Web API service. Required if Web API service is installed.|
 |/WebConsolePublicUrl: [URL]|Specifies the URL of the Orchestration Console that should be used to configure CORS on the Web API. Required if Web API service is installed.|
 |/WebConsolePort:[Port]|Specifies the port to use for the Orchestrator console. Required if Orchestrator Console is installed.|
 |/WebServicePublicUrl:[URL]|Specifies the URL of the web API service that should be used by the Orchestration Console. Required if Orchestration Console is installed.|
 |/OrchestratorUsersGroup:[Group SID]|Specifies the SID of the domain or local group that will be granted access to Management server. If no value is specified, the default local group is used.|
 |/OrchestratorRemote|Specifies that remote access should be granted to the Runbook Designer.|
-|/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 does not change the current opt in status of the computer.|
-|/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt-out from sending Telemetry. **Telemetry is on by default.**|
+|/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 doesn't change the current opt-in status of the computer.|
+|/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt out from sending Telemetry. **Telemetry is on by default.**|
 |/EnableErrorReporting:[value]|Specifies that Orchestrator should send program error reports to Microsoft. Possible values are always, queued, and never.|
 
 For example, you could use the following command to install all the Orchestrator components using Windows Authentication.
@@ -363,7 +363,7 @@ If you experience problems when you're running Orchestrator, the product log fil
 When you deploy additional Runbook Designer applications to your environment, you might see a failed installation message. To correctly install the Runbook Designer, enable the following firewall rules as they apply to your operating system and deployment configuration.  
 
 ### Windows Firewall with advanced security
-By default, **Windows Firewall with Advanced Security** is enabled on all Windows Server computers, and blocks all incoming traffic unless it is a response to a request by the host or it is specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
+By default, **Windows Firewall with Advanced Security** is enabled on all Windows Server computers, and blocks all incoming traffic unless it's a response to a request by the host or it's specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
 
 Enable the following rules to allow all Monitor Event activities to function correctly:  
 
@@ -399,12 +399,12 @@ Enable the following firewall rules on your computer:
 For more information about adding firewall rules, see [Add or Edit a Firewall Rule](/previous-versions/orphan-topics/ws.11/cc753558(v=ws.11)).  
 
 ### <a name="BKMK_RunbookServicefailstostart"></a>RunbookService fails to start after computer reboot  
-When you reboot your runbook server, the RunbookService attempts to connect to the orchestration database. If the database is not available, the RunbookService fails. The event log message is **This computer was unable to communicate with the computer providing the server**. Typically, this can occur when the SQL server and the runbook server are installed on the same computer.  
+When you reboot your runbook server, the RunbookService attempts to connect to the orchestration database. If the database isn't available, the RunbookService fails. The event log message is **This computer was unable to communicate with the computer providing the server**. Typically, this can occur when the SQL server and the runbook server are installed on the same computer.  
 
 To solve this problem, you can manually start the RunbookService or configure the RunbookService to make multiple attempts during start-up to connect to database before failing.  
 
-### Cannot restart runbook service if you uninstall with an account without administrator permissions  
-If you attempt to uninstall Orchestrator while signed in with an account that is a member of OrchestratorSystemGroup but is not an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the service fails because the user account doesn't have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.  
+### Can't restart runbook service if you uninstall with an account without administrator permissions  
+If you attempt to uninstall Orchestrator while signed in with an account that is a member of OrchestratorSystemGroup but isn't an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the service fails because the user account doesn't have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.  
 
 To solve this problem, an administrator can add the user back to OrchestratorSystemGroup.
 
@@ -412,11 +412,11 @@ To solve this problem, an administrator can add the user back to OrchestratorSys
 
 ::: moniker range="<=sc-orch-2019"
 
-A complete Orchestrator installation includes a management server, one or more runbook servers, a SQL Server for hosting the Orchestrator database, a web server for hosting the Orchestrator web service, and a server for hosting the Runbook Designer and Runbook Tester. It is possible to install all these roles on a single computer, but it is more common to distribute the roles across several computers or virtual machines.
+A complete Orchestrator installation includes a management server, one or more runbook servers, a SQL Server for hosting the Orchestrator database, a web server for hosting the Orchestrator web service, and a server for hosting the Runbook Designer and Runbook Tester. It's possible to install all these roles on a single computer, but it's more common to distribute the roles across several computers or virtual machines.
 
 For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](learn-about-orchestrator.md).
 
-This topic provides detailed installation instructions for the various Orchestrator roles.
+This article provides detailed installation instructions for the various Orchestrator roles.
 
 
 ## To install an Orchestrator management server
@@ -434,12 +434,12 @@ This topic provides detailed installation instructions for the various Orchestra
 2.  On the main page of the wizard, select **Install**.
 
     > [!WARNING]
-    > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog appears asking if you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
+    > If Microsoft .NET Framework 3.5 Service Pack 1 isn't installed on your computer, a dialog appears asking if you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
 
 3.  On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
 
     > [!NOTE]
-    > For this evaluation release, a product key is not required.
+    > For this evaluation release, a product key isn't required.
 
 4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
 
@@ -454,16 +454,16 @@ This topic provides detailed installation instructions for the various Orchestra
 ::: moniker range="sc-orch-1801"
 
    > [!NOTE]
-   > SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Management server role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
+   > SQL Server Native Client is a prerequisite which isn't validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Management server role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
 ::: moniker-end
 
 ::: moniker range="<=sc-orch-2019"
 
-   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
 
-1. Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
+1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
    > [!WARNING]
    > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
@@ -504,12 +504,12 @@ This topic provides detailed installation instructions for the various Orchestra
 2. On the main setup page, under **Standalone installations**, select **Runbook server**.
 
    > [!WARNING]
-   > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog appears asking whether you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
+   > If Microsoft .NET Framework 3.5 Service Pack 1 isn't installed on your computer, a dialog appears asking whether you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
 
 3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
 
    > [!NOTE]
-   > For this evaluation release, a product key is not required.
+   > For this evaluation release, a product key isn't required.
 
 4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
 
@@ -522,15 +522,15 @@ This topic provides detailed installation instructions for the various Orchestra
    ::: moniker range="sc-orch-1801"
 
    > [!NOTE]
-   > SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Runbook server role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
+   > SQL Server Native Client is a prerequisite which isn't validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Runbook server role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
    ::: moniker-end
 
 ::: moniker range="<=sc-orch-2019"
 
-   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-   1. Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
+   1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
       > [!WARNING]
       > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
@@ -570,12 +570,12 @@ This topic provides detailed installation instructions for the various Orchestra
 2. On the main setup page, under **Standalone installations**, select **Orchestration Console and Web Service**.
 
    > [!WARNING]
-   > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog appears asking if you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
+   > If Microsoft .NET Framework 3.5 Service Pack 1 isn't installed on your computer, a dialog appears asking if you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
 
 3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
 
    > [!NOTE]
-   > For this evaluation release, a product key is not required.
+   > For this evaluation release, a product key isn't required.
 
 4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
 
@@ -583,9 +583,9 @@ This topic provides detailed installation instructions for the various Orchestra
 
 5. Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
-   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-   1. Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
+   1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
       > [!WARNING]
       > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
@@ -606,7 +606,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
 11. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
 
-12. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
+12. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
 
 13. Review the **Installation summary** page, and then select **Install**.
 
@@ -627,12 +627,12 @@ This topic provides detailed installation instructions for the various Orchestra
 2.  On the main wizard page, select **Runbook Designer**.
 
     > [!WARNING]
-    > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog appears asking if you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
+    > If Microsoft .NET Framework 3.5 Service Pack 1 isn't installed on your computer, a dialog appears asking if you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
 
 3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
 
       > [!NOTE]
-      > For this evaluation release, a product key is not required.
+      > For this evaluation release, a product key isn't required.
 
 4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
 
@@ -645,15 +645,15 @@ This topic provides detailed installation instructions for the various Orchestra
 ::: moniker range="sc-orch-1801"
 
    > [!NOTE]
-   > SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Runbook designer role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
+   > SQL Server Native Client is a prerequisite which isn't validated by Prerequisite check step in setup. Hence, ensure that the SQL Server Native Client is installed on the Runbook designer role. For more information, see [Installing SQL Server Native Client](/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
 ::: moniker-end
 
 ::: moniker range="<=sc-orch-2019"
 
-   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-   1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
+   1.  Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
    2.  After you resolve the missing prerequisites, select **Verify prerequisites again**.
 
@@ -708,14 +708,14 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you are installing Management Server, Runbook Server, or web services.|
 |/DbUser:[User Name]|Specifies the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, no value should be specified.|
 |/DbPassword:[Password]|Specifies the password for the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, then no value should be specified.|
-|/DbNameNew:[Database Name]|Specifies the database name if a new database is being created. Cannot be used with DbNameExisting.|
-|/DbNameExisting:[Database Name]|Specifies the database name if an existing database is being used. Cannot be used with DbNameNew.|
+|/DbNameNew:[Database Name]|Specifies the database name if a new database is being created. Can't be used with DbNameExisting.|
+|/DbNameExisting:[Database Name]|Specifies the database name if an existing database is being used. Can't be used with DbNameNew.|
 |/WebServicePort:[Port]|Specifies the port to use for the web service. Required if web services are installed.|
 |/WebConsolePort:[Port]|Specifies the port to use for the Orchestrator console. Required if web services are installed.|
 |/OrchestratorUsersGroup:[Group SID]|Specifies the SID of the domain or local group that will be granted access to Management server. If no value is specified, the default local group is used.|
 |/OrchestratorRemote|Specifies that remote access should be granted to the Runbook Designer.|
-|/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 does not change the current opt in status of the computer.|
-|/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt-out from sending Telemetry. **Telemetry is on by default.**|
+|/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 doesn't change the current opt-in status of the computer.|
+|/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt out from sending Telemetry. **Telemetry is on by default.**|
 |/EnableErrorReporting:[value]|Specifies that Orchestrator should send program error reports to Microsoft. Possible values are always, queued, and never.|
 
 For example, you could use the following command to install all of the Orchestrator components using Windows Authentication.
@@ -745,7 +745,7 @@ If you experience problems when you are running Orchestrator, the product log fi
 When you deploy additional Runbook Designer applications to your environment, you might see a failed installation message. To correctly install the Runbook Designer, enable the following firewall rules as they apply to your operating system and deployment configuration.  
 
 ### Windows Firewall with advanced security
-By default, **Windows Firewall with Advanced Security** is enabled on all Windows Servercomputers, and blocks all incoming traffic unless it is a response to a request by the host or it is specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
+By default, **Windows Firewall with Advanced Security** is enabled on all Windows Servercomputers, and blocks all incoming traffic unless it's a response to a request by the host or it's specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
 
 Enable the following rules to allow all Monitor Event activities to function correctly:  
 
@@ -783,12 +783,12 @@ Enable the following firewall rules on your computer:
 For more information about adding firewall rules, see [Add or Edit a Firewall Rule](/previous-versions/orphan-topics/ws.11/cc753558(v=ws.11)).  
 
 ### <a name="BKMK_RunbookServicefailstostart"></a>RunbookService fails to start after computer reboot  
-When you reboot your runbook server, the RunbookService attempts to connect to the orchestration database. If the database is not available, the RunbookService fails. The event log message is **This computer was unable to communicate with the computer providing the server.**. Typically, this can occur when the SQL server and the runbook server are installed on the same computer.  
+When you reboot your runbook server, the RunbookService attempts to connect to the orchestration database. If the database isn't available, the RunbookService fails. The event log message is **This computer was unable to communicate with the computer providing the server.**. Typically, this can occur when the SQL server and the runbook server are installed on the same computer.  
 
 To solve this problem. you can manually start the RunbookService, or configure the RunbookService to make multiple attempts during start-up to connect to database before failing.  
 
-### Cannot restart runbook service if you uninstall with an account without administrator permissions  
-If you attempt to uninstall Orchestrator while signed in with an account that is a member of OrchestratorSystemGroup but is not an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the service fails because the user account does not have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.  
+### Can't restart runbook service if you uninstall with an account without administrator permissions  
+If you attempt to uninstall Orchestrator while signed in with an account that is a member of OrchestratorSystemGroup but isn't an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the service fails because the user account doesn't have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.  
 
 To solve this problem, an administrator can add the user back to OrchestratorSystemGroup.
 

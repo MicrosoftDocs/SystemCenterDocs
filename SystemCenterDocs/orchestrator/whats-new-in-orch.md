@@ -56,7 +56,7 @@ For more information about how to set up, configure, and run your environment to
 ::: moniker range="sc-orch-2019"
 
 ## Support for PowerShell 4.0+
-Earlier versions of System Center Orchestrator supported PowerShell V2.0. PowerShell V2.0 did not support some scripts and users had to apply workarounds. System Center Orchestrator 2019 supports PowerShell V4.0 to resolve this issue.
+Earlier versions of System Center Orchestrator supported PowerShell V2.0. PowerShell V2.0 didn't support some scripts and users had to apply workarounds. System Center Orchestrator 2019 supports PowerShell V4.0 to resolve this issue.
 
 ## Support for SQL 2017
 System Center Orchestrator 2019 supports SQL 2017 for fresh installation.
@@ -114,9 +114,9 @@ The new web API is JSON based and makes it easier to use than the older XML-base
 >[!NOTE]
 >The new Web console is a complete redesign and works only on modern browsers like Microsoft Edge without Silverlight.
 
-### Orchestrator is now a 64 bit application
+### Orchestrator is now a 64-bit application
 
-Support for 64 bit enables the use of 64 bit assemblies, Integration Packs, and PowerShell cmdlets.
+Support for 64 bit enables the use of 64-bit assemblies, Integration Packs, and PowerShell cmdlets.
 
 ::: moniker-end
 
