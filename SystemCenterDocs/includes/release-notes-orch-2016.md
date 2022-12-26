@@ -17,13 +17,13 @@ monikerRange: 'sc-orch-2016'
 
 The following sections list the known issues and workarounds that apply to System Center 2016 - Orchestrator.
 
-## Orchestrator Web Console is not compatible with the Microsoft Edge web browser
-**Description:** You cannot open the Orchestrator web console with the Microsoft Edge web browser.
+## Orchestrator Web Console isn't compatible with the Microsoft Edge web browser
+**Description:** You can't open the Orchestrator web console with the Microsoft Edge web browser.
 
 **Workaround:** Open the Orchestrator web console with Internet Explorer.
 
 ## Orchestrator - Runbook Designer's About Page shows the version as System Center 2016 Technical Preview
-**Description:** In the Runbook Designer when you click on Help -> About, the version is shown as System Center 2016 Technical Preview.
+**Description:** In the Runbook Designer when you select Help -> About, the version is shown as System Center 2016 Technical Preview.
 
 **Workaround:** You can validate that you have the latest version using the version number. If you have the RTM version, the build numbers are as follows:
 - Runbook Designer - 7.3.149.0

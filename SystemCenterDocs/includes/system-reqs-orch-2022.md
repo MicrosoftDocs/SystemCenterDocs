@@ -14,7 +14,7 @@ ms.topic: include
 
 ## System requirements for System Center 2022 - Orchestrator
 
-The following sections provide general performance and scalability guidance for System Center 2022- Orchestrator, and state the recommended hardware configurations for a variety of workloads. As System Center 2022 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections provide general performance and scalability guidance for System Center 2022- Orchestrator and state the recommended hardware configurations for various workloads. As System Center 2022 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 
@@ -76,7 +76,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 ## .NET requirements
 
-Orchestrator requires .NET Framework 4.5 or later to run, we recommend installing .NET Framework 4.7.2.
+Orchestrator requires .NET Framework 4.5 or later to run; we recommend installing .NET Framework 4.7.2.
 The Orchestrator Web API requires [.NET Core 5 Hosting Bundle](/aspnet/core/host-and-deploy/iis/hosting-bundle?view=aspnetcore-6.0&preserve-view=true).
 
 ## Virtualization

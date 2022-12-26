@@ -14,7 +14,7 @@ ms.topic: include
 
 ## System requirements for System Center 1801 - Orchestrator
 
-The following sections provide general performance and scalability guidance for System Center 1801- Orchestrator, and recommends the hardware configurations for a variety of workloads. As System Center 1801 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections provide general performance and scalability guidance for System Center 1801- Orchestrator and state the recommended hardware configurations for various workloads. As System Center 1801 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 
@@ -75,11 +75,11 @@ We recommend the following software for a full installation of Orchestrator on a
 | **SQL Server 2014 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2014)** |       Y       |
 | **SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)** |       Y       |
 
-## .Net requirements
+## .NET requirements
 
-All Orchestrator server roles require .Net 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .Net 4.5 with WCF Activation.
+All Orchestrator server roles require .NET 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .NET 4.5 with WCF Activation.
 
-You can download .Net 3.5 SP1 [from the download center](https://www.microsoft.com/en-in/download/details.aspx?id=22).  
+You can download .NET 3.5 SP1 [from the download center](https://www.microsoft.com/en-in/download/details.aspx?id=22).  
 
 ### To turn on WCF activation
 

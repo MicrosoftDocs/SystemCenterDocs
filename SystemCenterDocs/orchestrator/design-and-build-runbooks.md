@@ -35,11 +35,11 @@ The Runbook Designer interface is organized into the following four panes.
 |Pane|Description|  
 |--------|---------------|  
 |**Connections**|The folder structure where you can organize workflows in the Orchestrator system and edit permissions on folders. Also provides access to **Runbook Servers** and **Global Settings**.|  
-|**Runbook Designer workspace**|The workspace where you build Orchestrator runbooks. The runbooks in the folder selection in the **Connections** pane are listed as tabs across the top of the workspace. When you select a tab in a runbook, it is displayed in the Runbook Designer workspace.|  
+|**Runbook Designer workspace**|The workspace where you build Orchestrator runbooks. The runbooks in the folder selection in the **Connections** pane are listed as tabs across the top of the workspace. When you select a tab in a runbook, it's displayed in the Runbook Designer workspace.|  
 |**Activities**|Contains all the activities available \(either standard activities or activities available from integration packs\) for use in runbooks. You drag activities from the **Activities** pane into the Design workspace, and then link them together to form runbooks.|  
 |**Log**|Logs showing the activity and history for the current runbook. For more information, see [Orchestrator Logs](orchestrator-logs.md).|  
 
-## Sorting activities by activity name and category ame  
+## Sorting activities by activity name and category name  
 Orchestrator lets you sort activities alphabetically by activity name or by category name. By default, activities are sorted by category, such as Runbook Control, Email, File Management, Monitoring, Notification, Scheduling, System, Text File Management, and Tools.  
 
 Use the following steps to sort activities by their activity name and category name.  
@@ -84,7 +84,7 @@ You can change the default size of each activity icon from small to large by sel
 
 ## Testing your runbook
 
-After you build a runbook, you can test it before it is run in production. To test, you use the **Runbook Tester** which you start in the **Runbook Designer**. The **Runbook Tester** lets you run the runbook to view the Published Data from each activity. You can run through the entire runbook, step through each activity one at a time, or set breakpoints at certain activities.
+After you build a runbook, you can test it before it's run in production. To test, you use the **Runbook Tester** which you start in the **Runbook Designer**. The **Runbook Tester** lets you run the runbook to view the Published Data from each activity. You can run through the entire runbook, step through each activity one at a time, or set breakpoints at certain activities.
 
 > [!IMPORTANT]  
 > Runbook Tester actually performs each activity within the workflow. The steps are not performed in a simulated or virtualized environment. All the connections referenced in the runbook are live and fully functional. So any activities that modify or destroy data in connected systems cause that data to be modified or destroyed. For example, if you use the **Query Database** activity to **DROP TABLE ImportantTable**, it actually deletes the **ImportantTable** from the instance of Microsoft SQL Server.  

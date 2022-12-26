@@ -56,8 +56,8 @@ If the published data is numerical, you can use any of the following to set the 
 |-------------|---------------|  
 |equals|The value of the Published Data item is exactly equal to the specified value.|  
 |does not equal|The value of the Published Data item does not equal the specified value.|  
-|is less then|The value of the Published Data item is less than the specified value.|  
-|is greater then|The value of the Published Data item is greater than the specified value.|  
+|is less than|The value of the Published Data item is less than the specified value.|  
+|is greater than|The value of the Published Data item is greater than the specified value.|  
 |is less than or equal to|The value of the Published Data item is less than or equal to the specified value.|  
 |is greater than or equal to|The value of the Published Data item is greater than or equal to the specified value.|  
 |is between|The value of the Published Data item is between two specified values.|
@@ -93,7 +93,7 @@ By using loops, you can build automatic retries and monitor at any location in a
 
 You can create a loop for any activity so that you can retry operations if they fail or test the output information of the activity for valid data. You can also use these mechanisms to build wait conditions into your workflows.  
 
-When you configure a loop for an activity, it will continue to run with the same input data until a desired exit looping criteria is reached. You build the exit criteria for the loop in a similar way as smart link configurations. You can use any published data item from the activity as part of the exit or do not exit configuration. Included in the common published data are special data items, such as **Loop: Number of attempts** and **Loop: Total duration**, that let you use information from the loop itself in the looping conditions.  
+When you configure a loop for an activity, it will continue to run with the same input data until a desired exit looping criteria is reached. You build the exit criteria for the loop in a similar way as smart link configurations. You can use any published data item from the activity as part of the exit or don't exit configuration. Included in the common published data are special data items, such as **Loop: Number of attempts** and **Loop: Total duration**, that let you use information from the loop itself in the looping conditions.  
 
 Loops run one time for each incoming piece of data that is passed to the activity. For example, consider a runbook that uses a **Query Database** activity followed by **Append Line**. If the **Query Database** activity returned three rows, the **Append Line** activity would run three times. If you have a loop on the **Append Line** activity, it would run three separate loops. After the first data item has looped through the **Append Line** activity, the next item goes through **Append Line** and loops until it exits, and then the third begins. After all three items have been processed, the next activity in the runbook runs.  
 
@@ -146,7 +146,7 @@ You can set a schedule to control when a runbook runs. For example, there are ti
 
 Schedules use the system clock of the Runbook server that runs the runbook. This enables schedules to function in virtual machine environments, and to continue running even when the system clock is adjusted because of the move to or from daylight savings time.  
 
-Runbooks that start before a prohibited time run until finished, even if they are still processing when the prohibited time arrives. They will not be interrupted after processing has started.  
+Runbooks that start before a prohibited time run until finished, even if they are still processing when the prohibited time arrives. They won't be interrupted after processing has started.  
 
 > [!IMPORTANT]  
 > The access permissions for schedules can be modified, but the runbook server does not enforce these permissions.  
@@ -173,7 +173,7 @@ Runbooks that start before a prohibited time run until finished, even if they ar
 
     **Days of month**: Select this option and select the days of the month when this schedule allows runbooks to run. Specify the days of the month by entering the number of the day. You can use hyphens to describe ranges and commas to separate entries. For example, typing **1,3** includes the first and third day of the month. Typing **1\-21** includes the first through to the twenty\-first day of the month. You can combine both to create complex descriptions of the days of the month. Type **all** to specify all days of the month. Type **last** to specify the last day of the month.  
 
-    You cannot use **all** and **last** as part of a range of days. Additionally, if you typed a range of 5\-31, this range works correctly for all the months, including those with 28, 29, 30, and 31 days.  
+    You can't use **all** and **last** as part of a range of days. Additionally, if you typed a range of 5\-31, this range works correctly for all the months, including those with 28, 29, 30, and 31 days.  
 
 5.  Select **Hours** to open the **Schedule Hours** dialog.  
 
@@ -209,7 +209,7 @@ Runbooks that start before a prohibited time run until finished, even if they ar
 
 4.  Select **Finish**.  
 
-    Every time the runbook is started, it checks the schedule to verify that it is allowed to run. If it is not allowed to run, it stops and does not restart until the next time it is started.  
+    Every time the runbook is started, it checks the schedule to verify that it is allowed to run. If it isn't allowed to run, it stops and does not restart until the next time it is started.  
 
 ### To remove a schedule from a runbook  
 
@@ -217,7 +217,7 @@ Runbooks that start before a prohibited time run until finished, even if they ar
 
 2.  On the **General** tab, select the ellipsis **\(...\)** button to open the **Select a Schedule** dialog.  
 
-3.  Do not select a schedule. Select **OK**.  
+3.  Don't select a schedule. Select **OK**.  
 
 4.  Select **Finish**. The schedule is removed from the runbook.
 

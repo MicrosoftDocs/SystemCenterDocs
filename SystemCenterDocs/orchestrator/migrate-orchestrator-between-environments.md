@@ -121,7 +121,7 @@ Sqlcmd -Q "RESTORE SERVICE MASTER KEY FROM FILE = 'C:\BACKUP\MASTER_KEY.BAK' DEC
 Use the following steps to create a batch script to run on the new SQL Server computer to restore the Orchestrator database.  
 
 
-1.  In SQL Server Management, select and hol the Orchestrator database, select **Tasks**, and then select **Restore**.  
+1.  In SQL Server Management, select and hold the Orchestrator database, select **Tasks**, and then select **Restore**.  
 
 2.  Configure the restore settings as required in your organization.  
 

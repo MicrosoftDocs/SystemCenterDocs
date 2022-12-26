@@ -35,11 +35,11 @@ When you plan a new runbook, you should start with a defined process that you wa
 
 Consider the following points as you design your runbook:  
 
-1.  Failure and Warning links \- It is important to handle all results from an activity. An activity provides a default success string, but does not provide a default failure case. Consider if you should reverse an activity or write the result to a log file.  
+1.  Failure and Warning links \- It's important to handle all results from an activity. An activity provides a default success string, but doesn't provide a default failure case. Consider if you should reverse an activity or write the result to a log file.  
 
 2.  Replace the default strings \- When you look at the workflow in a runbook, the labels should identify what the individual activities are doing. Rename links and activities labels to a descriptive name.  
 
-3.  Link colors \- Change the color of your links when there is a condition or branch. It is common to use GREEN as success and RED for warning or failed. You should use standard associations, but not use too many colors or you lose their descriptive purpose.  
+3.  Link colors \- Change the color of your links when there's a condition or branch. It's common to use GREEN as success and RED for warning or failed. You should use standard associations, but not use too many colors or you lose their descriptive purpose.  
 
 4.  Limit the number of activities per runbook \- Too many activities in a single runbook make it difficult to administer and troubleshoot. Consider splitting a runbook into several subtasks and create child runbooks for each of those subtasks. You can invoke the child runbooks from a parent runbook. You can reuse these child runbooks in other workflows.  
 

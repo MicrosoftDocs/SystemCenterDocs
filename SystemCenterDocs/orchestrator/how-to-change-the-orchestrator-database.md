@@ -44,7 +44,7 @@ You can use the Database Configuration utility to change the connection settings
 7. Select **Finish**.  
 
 ## Web Service  
-The web service supporting the Orchestration console does not use the **Settings.dat** file. To change the database settings for the web service, you must modify the `web.config` file on the Internet Information Services \(IIS\) server.
+The web service supporting the Orchestration console doesn't use the **Settings.dat** file. To change the database settings for the web service, you must modify the `web.config` file on the Internet Information Services \(IIS\) server.
 
 ::: moniker range="<=sc-orch-2019"
 You can use **IIS Manager** to modify the file, but you must first decrypt it by running the aspnet\_regiis.exe executable file.

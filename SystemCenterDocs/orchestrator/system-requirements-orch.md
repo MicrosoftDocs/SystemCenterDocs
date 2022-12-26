@@ -74,4 +74,4 @@ This article details the system requirements for System Center 1807 - Orchestrat
 ::: moniker-end
 
 ## Next steps
-[Install Orchestrator](install.md)
+[Install Orchestrator](install.md).

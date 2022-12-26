@@ -24,11 +24,11 @@ There are tools available in Orchestrator to help you manage the versions of you
 ## Version control  
 In Orchestrator, multiple users can create and update runbooks. However, only one user at a time can make changes to a runbook. This protects your work from being overwritten by someone else with the same permission level.  
 
-To edit a runbook, you must check it out. Another user cannot edit that runbook until you either commit all changes by checking in the runbook or revert all changes by undoing the checkout.  
+To edit a runbook, you must check it out. Another user can't edit that runbook until you either commit all changes by checking in the runbook or revert all changes by undoing the checkout.  
 
 ### Check in and check out  
 
--   **Check Out**: When a user is editing a runbook, the runbook is checked out and cannot be edited by anyone else. If someone else is already editing the runbook, a pop\-up window opens informing you that someone is already editing the runbook.  
+-   **Check Out**: When a user is editing a runbook, the runbook is checked out and can't be edited by anyone else. If someone else is already editing the runbook, a pop\-up window opens informing you that someone is already editing the runbook.  
 
 -   **Check In**: When a user editing the runbook performs a Check In operation, all changes that were made are committed, and other users can then edit the runbook after they check it out. Check in comments describe the changes that have been made.  
 

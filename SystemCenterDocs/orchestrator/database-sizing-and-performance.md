@@ -25,7 +25,7 @@ Database sizing is the key to understanding the performance of System Center - O
 
 Because the Runbook Designer communicates with the Orchestrator database (through the management server), poor database performance will impede that communication.  
 
-The Orchestrator operator experience is based on two components: The **Orchestration Console** and the Web Service. The **Orchestration Console** is a Silverlight\-based application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. Consequently, the Web Service and **Orchestration Console** are both dependent on the performance of the Orchestrator database.  
+The Orchestrator operator experience is based on two components: The **Orchestration Console** and the Web Service. The **Orchestration Console** is a Silverlight\-based application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. So, the Web Service and **Orchestration Console** are both dependent on the performance of the Orchestrator database.  
 
 Additionally, while the **Orchestration Console** is dependent on the Web Service, it also has logic unique to its function as a user interface and its own performance characteristics.  
 
@@ -35,7 +35,7 @@ At a high level, the Orchestrator database contains two kinds of data:
 
 ### Configuration Data  
 
-The Orchestrator infrastructure contains configuration data. This data is not a concern in the context of database growth because the storage requirements for this type of data are small.  
+The Orchestrator infrastructure contains configuration data. This data isn't a concern in the context of database growth because the storage requirements for this type of data are small.  
 
 ### Log Data  
 
@@ -58,7 +58,7 @@ Orchestrator runbook activities contain two distinct types of code:
 
 - *Domain Code*
 
-  Runs a variety of tasks that are specific for the actions for each activity, which are typically not associated with the Orchestrator platform itself. Potentially, there can be a great variation between platform code and domain code.  
+  Runs various tasks that are specific for the actions for each activity, which are typically not associated with the Orchestrator platform itself. Potentially, there can be a great variation between platform code and domain code.  
 
 The logging data generated for a given activity can contain data elements that are single or multi\-valued. Every activity produces a single record of single\-value data. Domain code can produce multiple records of multi\-value data and is therefore responsible for determining what the activity does with the common published data it has received from prior activities.  
 
@@ -89,14 +89,14 @@ The **Logging** tab on the **Properties** for a runbook allows you to optionally
 Setting logging options can significantly affect performance and increase database growth. Consider the scenario where the same runbook activity is run twice, first with data logging at the default level (no published data options selected) and then set with common published data selected. The domain code should take the same amount of time to complete. However, the platform code will take longer to run because it has to support 12 times the amount of common published data logging than it does with just default logging.  
 
 ## Purging Logs  
-The default options specified for the **Log Purge** feature in the **Runbook Designer** is configured to provide the best user experience for an out\-of\-the\-box Orchestrator deployment. Changing these values can change the performance characteristics of the environment and should be implemented gradually and high\-watermarked so that the impact of the change can be evaluated.  
+The default options specified for the **Log Purge** feature in the **Runbook Designer** are configured to provide the best user experience for an out\-of\-the\-box Orchestrator deployment. Changing these values can change the performance characteristics of the environment and should be implemented gradually and high\-watermarked so that the effect of the change can be evaluated.  
 
 For more information on automatic and manual purging of logs, see the [Purging Runbook Logs](design-and-build-runbooks.md).  
 
 ## Creating Performance Benchmarks  
 To create a simple runbook to test logging growth, you can use the Standard Activity **Compare Values** to create benchmarks of an Orchestrator environment.  
 
-The following procedure creates a simple runbook that runs a **Compare Values** activity 10,000 times. **Compare Values** is a very simple activity whose domain code is quite minimal. This runbook can be invoked under a variety of circumstances to characterize the overall performance of a given Orchestrator runtime environment.  
+The following procedure creates a simple runbook that runs a **Compare Values** activity 10,000 times. **Compare Values** is a simple activity whose domain code is minimal. This runbook can be invoked under a variety of circumstances to characterize the overall performance of a given Orchestrator runtime environment.  
 
 #### To create a runbook that can be used to benchmark your Orchestrator environment  
 
@@ -139,7 +139,7 @@ This runbook can be used to experiment with different configurations of Orchestr
 
 Notice the significant decrease in platform performance caused by logging of common published data. The worst scenario appears to be logging of common published data at Location 2. On the surface, this appears to be a clear and relevant conclusion.  
 
-However, it should be noted that these figures reflect the overhead of the platform code, not the domain code. Domain code runtimes can be significantly longer. For example, the **Create VM from Template** activity in the Virtual Machine Manager Integration Pack may run for several minutes as the VM is created. Expanding on the previous example, consider the platform code costs on a runbook activity that takes 1 minute to run (1 minute \= 60,000 milliseconds) regardless of the location.  
+However, it should be noted that these figures reflect the overhead of the platform code, not the domain code. Domain code runtimes can be longer. For example, the **Create VM from Template** activity in the Virtual Machine Manager Integration Pack may run for several minutes as the VM is created. Expanding on the previous example, consider the platform code costs on a runbook activity that takes 1 minute to run (1 minute \= 60,000 milliseconds) regardless of the location.  
 
 |Data Center|Logging Configuration|Platform Code Run Time (milliseconds)|% Domain Code|% Platform Code|  
 |---------------|-------------------------|-------------------------------------------|-----------------|-------------------|  
@@ -152,14 +152,14 @@ However, it should be noted that these figures reflect the overhead of the platf
 |Location 4|Default logging|1474|97.5%|2.5%|  
 |Location 4|Logging common published data|2654|95.6%|4.4%|  
 
-A clearer picture begins to emerge from the data. The scenario where logging of common published data is enabled at Location 2 continues to be the worst performer. However, the platform code and logging only accounts for 6% of the total runtime. While this is a significant figure, the best\-case scenario is 1.4%. Essentially, the time spent in the domain code in the example far outweighs the time spent running platform code. To put this in perspective, if you were able to completely eliminate the platform code costs, you would only see runbook performance improvements in the range of 1.4 to 7.4%.  
+A clearer picture begins to emerge from the data. The scenario where logging of common published data is enabled at Location 2 continues to be the worst performer. However, the platform code and logging only accounts for 6% of the total runtime. While this is a significant figure, the best\-case scenario is 1.4%. Essentially, the time spent in the domain code in the example far outweighs the time spent running platform code. To put this in perspective, if you were able to completely eliminate the platform code costs, you would only see runbook performance improvements in the range of 1.4% to 7.4%.  
 
-Of course, most real\-world scenarios will be different. Activity behavior may change depending on what the domain code is told to do. For example, a **Clone VM from Template** activity may take one minute to clone a VM from Server Template A, but take 5 minutes to clone a VM from Server Template B. Also, Runbook Servers may reside on different networks with different performance characteristics, which can potentially impact both domain code performance as well as Orchestrator data logging performance.  
+Of course, most real\-world scenarios will be different. Activity behavior may change depending on what the domain code is told to do. For example, a **Clone VM from Template** activity may take one minute to clone a VM from Server Template A, but take 5 minutes to clone a VM from Server Template B. Also, Runbook Servers may reside on different networks with different performance characteristics, which can potentially affect both domain code performance and Orchestrator data logging performance.  
 
 ## Determining Database Growth  
 Your database administrator for the Orchestrator database can use the following guidelines for determining database file growth strategy:  
 
--   In general, the database files will not increase in size with each invocation of a runbook. The files will grow when the data contained within them reaches a certain high watermark configured by your database administrator, at which time the file will generally be expanded.  
+-   In general, the database files won't increase in size with each invocation of a runbook. The files will grow when the data contained within them reaches a certain high watermark configured by your database administrator, at which time the file will generally be expanded.  
 
 -   Each time a runbook activity runs, it should be counted individually, which should be considered when looping features can cause a single activity to run multiple times.  
 
@@ -231,14 +231,14 @@ Recalculating the storage figures for the updated configuration produces signifi
 |Runbook 4|4,192|2.0|15,000|60.0|29%|  
 |||Total: 55.5 MB||Total: 203.8 MB||  
 
-While there's very little change in the default logging configuration (500 log entries per runbook), the 30\-day storage requirements have changed greatly. Clearly, the storage cost of using Common Published Data logging for Runbook 4 should be carefully considered since this change results in a 76% reduction in database storage requirements for 30 days of data.  
+While there's little change in the default logging configuration (500 log entries per runbook), the 30\-day storage requirements have changed greatly. Clearly, the storage cost of using Common Published Data logging for Runbook 4 should be carefully considered since this change results in a 76% reduction in database storage requirements for 30 days of data.  
 
 ## Summary  
 Use the following guidelines to manage database sizing and performance:  
 
 -   Enable logging of Common Published Data only if needed.  
 
--   Remember that the number of times activities run determines the volume of logged data. A small runbook with a few of activities run several times can result in more data logging than a larger runbook run a fewer number of times.  
+-   Remember that the number of times activities run determines the volume of logged data. A small runbook with a few of activities run several times can result in more data logging than a larger runbook run a lower number of times.  
 
 -   Don't enable logging of Activity\-specific Published Data in production environments, and should only be used for debugging purposes.  
 

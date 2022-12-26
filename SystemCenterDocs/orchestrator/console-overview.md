@@ -29,7 +29,7 @@ The Orchestrator console is a Single Page App that helps you monitor and execute
 
 ## Navigation pane
 
-The Navigation pane on the left shows the **Runbook** and **Folders** tree, like the one shown on the **Runbook Designer**. Unlike the console in earlier versions, you cannot select the *Folders*, but can select the *Runbooks* and view their jobs and execute them.
+The Navigation pane on the left shows the **Runbook** and **Folders** tree, like the one shown on the **Runbook Designer**. Unlike the console in earlier versions, you can't select the *Folders*, but can select the *Runbooks* and view their jobs and execute them.
 
 The Navigation pane is always visible on all screens to allow quick navigation to other runbooks and folders, while remaining on the same screen.
 
@@ -54,7 +54,7 @@ You can select and expand each of the job rows and view the instances of the job
 
 ## Runbooks
 
-When you select a runbook on the navigation tree or select a runbook link, the app navigates to the Runbook screen. The top panel lists out runbook metadata (editing status, timestamps, and so on). The **Run** button available on the screen allows you to queue the runbook for execution on the desired subset of runbook servers. The **Run** button is disabled for runbooks that are not in **Published** state.
+When you select a runbook on the navigation tree or select a runbook link, the app navigates to the Runbook screen. The top panel lists out runbook metadata (editing status, timestamps, and so on). The **Run** button available on the screen allows you to queue the runbook for execution on the desired subset of runbook servers. The **Run** button is disabled for runbooks that aren't in **Published** state.
 
 [ ![Screenshot showing runbook view.](./media/console-overview-2022/runbook-view-inline.png) ](./media/console-overview-2022/runbook-view-expanded.png#lightbox)
 
@@ -70,7 +70,7 @@ Below this panel is a tabbed view:
 
 You can select the rows in the Jobs view just like the ones on the Dashboard screen. Jobs that are running can be stopped using the buttons on the right of the running row.
 
-While this screen is active, you can choose a different runbook on the Navigation tree. This will not change the selected tab. You can quickly look at Jobs of different runbooks by selecting the jobs tab and navigating to the desired runbooks in the Navigation tree.
+While this screen is active, you can choose a different runbook on the Navigation tree. This won't change the selected tab. You can quickly look at Jobs of different runbooks by selecting the jobs tab and navigating to the desired runbooks in the Navigation tree.
 
 ## Jobs
 
@@ -98,7 +98,7 @@ The status of the job is shown visually with the icons:
 
 ## Instances
 
-When you select an Instance (using the (i) button), the app navigates to this screen. The top panel shows the Instance’s metadata (Job ID, timestamps, parameters, server which executes this instance).
+When you select an Instance (using the (i) button), the app navigates to this screen. The top panel shows the Instance’s metadata (Job ID, timestamps, parameters, server that executes this instance).
 
 [ ![Screenshot showing instance.](./media/console-overview-2022/instance-inline.png) ](./media/console-overview-2022/instance-expanded.png#lightbox)
 
@@ -137,7 +137,7 @@ Navigate to the Runbook screen of the desired Runbook and select **Run** . An ov
 Only one of these servers will actually execute this Job. To execute a Runbook on many servers, you will have to run those many number of Jobs and explicitly set the servers one-by-one.
 
 >[!NOTE]
-> Enter the parameters in the form, else the form will not be considered.
+> Enter the parameters in the form, else the form won't be considered.
 
 When the form is submitted, a disappearing popup is shown on the top right to notify whether the job was successfully queued or not.
 
@@ -151,7 +151,7 @@ The **Stop** button is shown on the Dashboard and the Job screen. Disappearing p
 
 ## FAQ
 
-### The Console does not load, error “Uh oh! Trouble connecting to WebApi [status 0]” appears
+### The Console doesn't load, error “Uh oh! Trouble connecting to WebApi [status 0]” appears
 
 1. Check the [browser’s developer console](/microsoft-edge/devtools-guide-chromium/overview) (Console tab), look for CORS errors (*blocked by CORS policy*)
 
@@ -163,7 +163,7 @@ To fix CORS errors, you must ensure that the API’s *web.config* file must have
 
 ### How do I update the Web API URL?
 
-The Console loads *{install_dir}\assets\configuration.json* to find the API URL. You can edit it using a plain text editor. Ensure that there is no trailing / at the end of the URL.
+The Console loads *{install_dir}\assets\configuration.json* to find the API URL. You can edit it using a plain text editor. Ensure that there's no trailing / at the end of the URL.
 
 ::: moniker-end
 
@@ -178,9 +178,9 @@ The navigation pane is the left pane in the Orchestration console where you can 
 The **Runbooks** workspace lets you start and stop runbooks. You can also view information such as the jobs and instances created for each runbook and their definition.  
 
 #### Summary  
-The **Summary** tab is displayed for any folder or runbook selected in the **Runbooks** workspace. This tab displays summary information for the jobs and instances of the selected runbook or for all of the runbooks in the selected folder. The statistics that are displayed are updated every 10 minutes, so the activity performed within that time might not be reflected in the numbers until they are updated.  
+The **Summary** tab is displayed for any folder or runbook selected in the **Runbooks** workspace. This tab displays summary information for the jobs and instances of the selected runbook or for all of the runbooks in the selected folder. The statistics that are displayed are updated every 10 minutes, so the activity performed within that time might not be reflected in the numbers until they're updated.  
 
-Each column in the **Summary** displays the number of jobs and instances that finished with a particular status \(Succeeded, Warning, or Failed\) within the last hour, the last day, and the last week. For instances, the number of instances that are currently in progress are also displayed. For jobs, the number of jobs that've been created and that are currently queued are also displayed.  
+Each column in the **Summary** displays the number of jobs and instances that finished with a particular status \(Succeeded, Warning, or Failed\) within the last hour, the last day, and the last week. For instances, the number of instances that are currently in progress are also displayed. For jobs, the number of jobs that have been created and that are currently queued are also displayed.  
 
 #### Runbooks  
 The **Runbooks** tab is displayed when you select a folder in the **Runbooks** workspace. It lists the runbooks contained in the selected folder and specifies the status of any running jobs and instances from each. To select one of these runbooks and control their actions, select an option in the **Actions** pane. If you have a large number of runbooks, you can refine the list by specifying a filter.  
@@ -189,7 +189,7 @@ The **Runbooks** tab is displayed when you select a folder in the **Runbooks** w
 The **Jobs** tab is displayed when you select a folder or runbook in the **Runbooks** workspace. This tab lists the jobs created for a given runbook and the completion status. For a folder, it lists the jobs created for all runbooks in the folder and their completion status. A job is a request for a runbook server to run a runbook and is created every time a runbook receives a request to run. If a runbook starts with a monitor, it creates a job that runs continuously until the runbook is stopped. In this case, the status of the job shows an hourglass that indicates it's currently running.  
 
 #### Instances  
-The **Instances** tab is displayed if you select a folder or runbook in the **Runbooks** workspace. For a runbook, this tab lists the instances that've been created for the runbook and their completion status. For a folder, it lists the instances that've been created for all runbooks in the folder and their completion status. An instance is a running copy of a runbook and is created each time that runbook runs. If a runbook starts with a monitor, it creates an instance that continues to run until the monitor condition is met. In this case, the status for the instance shows an hourglass. When the monitor condition is met, the instance continues with the subsequent activities and then shows a completion status. The runbook then creates a new instance that also runs until the monitor condition is met.  
+The **Instances** tab is displayed if you select a folder or runbook in the **Runbooks** workspace. For a runbook, this tab lists the instances that have been created for the runbook and their completion status. For a folder, it lists the instances that have been created for all runbooks in the folder and their completion status. An instance is a running copy of a runbook and is created each time that runbook runs. If a runbook starts with a monitor, it creates an instance that continues to run until the monitor condition is met. In this case, the status for the instance shows an hourglass. When the monitor condition is met, the instance continues with the subsequent activities and then shows a completion status. The runbook then creates a new instance that also runs until the monitor condition is met.  
 
 ### Runbook Servers workspace  
 The **Runbook Servers** workspace lets you view the status of current and completed jobs and instances for each runbook server.  
@@ -279,7 +279,7 @@ When you stop a runbook, the runbook, all jobs, and all instances associated wit
 ## Stopping jobs  
 A job is a request for a runbook to run. A job is created only when you request a runbook to run. If the first action in a runbook is a monitor, the job runs continuously until the runbook or job is stopped. An hourglass indicates the status of a running job. An instance is a running copy of a runbook.  
 
-You cannot start a job; you can only start a runbook.  
+You can't start a job; you can only start a runbook.  
 
 When you view an instance, you can choose to stop the associated job. Stopping the job stops the instance, the job, any other associated instances, and the runbook.  
 

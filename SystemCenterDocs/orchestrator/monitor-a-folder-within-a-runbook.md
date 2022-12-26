@@ -23,7 +23,7 @@ manager: evansma
 
 ::: moniker-end
 
-This sample shows you how to create a simple runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.  
+This sample shows you how to create a sample runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.  
 
 ![Screenshot of Monitor Folder.](./media/monitor-a-folder-within-a-runbook/orch-2016-sample-monitor-folder.png)
 
@@ -92,7 +92,7 @@ The procedures to create, configure, and test a sample runbook that monitors a f
 
     1.  In the **Computer** box, type the name of the computer to receive the Event message.  
 
-        This is typically the computer where you are running Runbook Designer.  
+        This is typically the computer where you're running Runbook Designer.  
 
     2.  In the **Message** box, type the message to display in the Event log. For example, **File Detected**.  
 

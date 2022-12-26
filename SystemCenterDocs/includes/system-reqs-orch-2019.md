@@ -14,7 +14,7 @@ ms.topic: include
 
 ## System requirements for System Center 2019 - Orchestrator
 
-The following sections provide general performance and scalability guidance for System Center 2019 - Orchestrator, and recommend the hardware configurations for a variety of workloads. As System Center 2019 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections provide general performance and scalability guidance for System Center 2019 - Orchestrator and state the recommended hardware configurations for various workloads. As System Center 2019 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 

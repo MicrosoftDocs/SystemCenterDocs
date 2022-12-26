@@ -14,7 +14,7 @@ title:  include file
 
 ##  Orchestrator 2022 release notes
 
-The Orchestrator 2022 release includes all issues fixed till [Orchestrator 2019 UR3](https://support.microsoft.com/topic/update-rollup-3-for-system-center-2019-orchestrator-70bc1df6-adbc-9b89-68bf-df5a6eefca5f).
+The Orchestrator 2022 release includes all issues fixed until [Orchestrator 2019 UR3](https://support.microsoft.com/topic/update-rollup-3-for-system-center-2019-orchestrator-70bc1df6-adbc-9b89-68bf-df5a6eefca5f).
 
 >[!NOTE]
 >- System Center Orchestrator 2019 IPs aren't supported on System Center Orchestrator 2022. 

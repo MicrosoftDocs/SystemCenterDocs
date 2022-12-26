@@ -23,7 +23,7 @@ manager: carmonm
 
 ::: moniker-end
 
-The following topic describes how to create and test a simple runbook. The purpose of this runbook is to detect when a text file is added to a particular folder, copy that file to another folder, read the contents of the file, append a line from the copied file to another file, and then delete the original file.  
+The following article describes how to create and test a sample runbook. The purpose of this runbook is to detect when a text file is added to a particular folder, copy that file to another folder, read the contents of the file, append a line from the copied file to another file, and then delete the original file.  
 
 The runbook starts with a **Monitor File** activity to wait for the text file to be created. It then uses the **Copy File**, **Read Line**, **Append Line**, and **Delete File** activities to perform the other functions. A **Junction** activity is used to coordinate the activities so that the **Copy File** and **Append Line** activities are both completed before the source file is deleted.  
 
@@ -44,13 +44,13 @@ Use the following procedures to create the runbook by using the required activit
 
 4.  Type **Append and Copy Workflow** in the **Input** box, and then press Enter.  
 
-You have created a new runbook and are ready to begin adding and configuring activities.  
+You've created a new runbook and are ready to begin adding and configuring activities.  
 
 #### To add and configure a Monitor File activity  
 
 1.  With the newly created **Append and Copy Workflow** runbook open, in the **Activities** pane, expand the **File Management** category.  
 
-2.  Click and drag the **Monitor File** activity to the **Runbook Designer** Design workspace.  
+2.  Select and drag the **Monitor File** activity to the **Runbook Designer** Design workspace.  
 
 3.  Double\-click the **Monitor File** activity to open its **Properties** dialog.  
 
@@ -86,7 +86,7 @@ The **Monitor File** activity is created and configured to watch for any new tex
 
 6.  To create a link between the **Monitor File** activity and the **Read Line** activity, select and drag the right arrow of the **Monitor File** activity to the **Read Line** activity.  
 
-By adding both the **Read Line** activity and the **Copy File** activity, you have created a workflow.  
+By adding both the **Read Line** activity and the **Copy File** activity, you've created a workflow.  
 
 #### To configure the Copy File activity  
 
