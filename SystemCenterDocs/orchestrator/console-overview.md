@@ -36,7 +36,7 @@ The Navigation pane is always visible on all screens to allow quick navigation t
 To the right of the navigation pane, you can see the chosen screen. The Dashboard screen is shown by default.
 
 >[!NOTE]
->Currently, auto-refresh is not supported for any of the screens. Reload the page manually.
+>Currently, auto-refresh isn't supported for any of the screens. Reload the page manually.
 
 
 ## Dashboard
@@ -195,7 +195,7 @@ The **Instances** tab is displayed if you select a folder or runbook in the **Ru
 The **Runbook Servers** workspace lets you view the status of current and completed jobs and instances for each runbook server.  
 
 #### Jobs  
-The **Jobs** tab lists the jobs that have been run on the runbook server and their completion status. A job is a request for a runbook server to run a runbook and is created every time a runbook receives a request to run. If a runbook starts with a monitor, it creates a job that runs continuously until the runbook is stopped. In this case, the status of the job shows an hourglass, which means that it is currently running.  
+The **Jobs** tab lists the jobs that have been run on the runbook server and their completion status. A job is a request for a runbook server to run a runbook and is created every time a runbook receives a request to run. If a runbook starts with a monitor, it creates a job that runs continuously until the runbook is stopped. In this case, the status of the job shows an hourglass, which means that it's currently running.  
 
 #### Instances  
 The **Instances** tab lists the instances that have been created on the runbook server and their completion status. An instance is a running copy of a runbook and is created each time that runbook runs. If a runbook starts with a monitor, it creates an instance that continues to run until the monitor condition is met. In this case, the status for the instance shows an hourglass. When the monitor condition is met, the instance continues with the subsequent activities, and then shows a completion status. The runbook then creates a new instance that also runs until the monitor condition is met.  
@@ -214,7 +214,7 @@ The **Events** workspace lets you view log events. By default, log events includ
 -  Select the **Orchestration Console** button on the toolbar.  
 
     > [!NOTE]  
-    > If the URL has not been set for the Orchestration console, you will receive an error message. Use the following procedure to set the URL.  
+    > If the URL hasn't been set for the Orchestration console, you will receive an error message. Use the following procedure to set the URL.  
 
 ## To set the Orchestration console URL in the Runbook Designer  
 
@@ -244,7 +244,7 @@ When you stop a runbook, the runbook, all jobs, and all instances associated wit
 6.  If you want to run the runbook on a server other than its default, select a server in the **Available Runbook Server(s)** pane, and then select the right arrow to add the server to the **Selected Runbook Server(s)** pane.
 
     > [!NOTE]
-    > If you add multiple servers to the **Selected Runbook Server(s)** pane, the runbook runs only on the first server if it is available. The other servers are backup servers where the runbook runs only if the primary server is not available.
+    > If you add multiple servers to the **Selected Runbook Server(s)** pane, the runbook runs only on the first server if it's available. The other servers are backup servers where the runbook runs only if the primary server is not available.
 
 7.  Select **Start**.
 
