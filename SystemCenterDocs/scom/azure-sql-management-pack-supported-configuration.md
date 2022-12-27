@@ -5,7 +5,7 @@ description: This article explains the scope and supported configuration in Mana
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 11/25/2022
+ms.date: 11/27/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -58,9 +58,6 @@ When using the vCore-based purchase model, the following rules do not collect da
 - Azure SQL DB: DB DTU Used Count
 - Azure SQL DB: DB DTU Limit Count
 - Azure SQL DB: DB DTU Percentage
-
->[!NOTE]
->When using the Hyperscale service tier, some of the space monitoring workflows may not collect data correctly. For more information see the related [Known Issue](azure-sql-management-pack-known-issues-and-troubleshooting.md).
 
 ## System Center Operations Manager
 
