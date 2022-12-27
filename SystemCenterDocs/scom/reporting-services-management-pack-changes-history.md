@@ -5,7 +5,7 @@ description: This article explains the new functionality and bug fixes implement
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 12/8/2022
+ms.date: 12/9/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
