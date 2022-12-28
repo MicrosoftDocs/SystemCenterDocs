@@ -25,11 +25,11 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
-The Append Line activity appends a line of text into a text file.  Use the Append Line activity to append lines to a log file to create audits trails of runbooks.  
+The Append Line activity appends a line of text into a text file. Use the Append Line activity to append lines to a log file to create audits trails of runbooks.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 
@@ -40,7 +40,7 @@ The Append Line activity appends a line of text into a text file.  Use the Appen
 
 - The type of file encoding that the file you are appending to uses.  
 
-- Text you append.  
+- The text you append.  
 
 Use the following information to configure the Append Line activity.  
 

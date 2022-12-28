@@ -29,7 +29,7 @@ manager: "evansma"
 
 ::: moniker-end
 
-The Delete Line activity deletes lines from a text file.  Use the Delete Line activity to delete outdated lines of text from a text file.  
+The Delete Line activity deletes lines from a text file. Use the Delete Line activity to delete outdated lines of text from a text file.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 
