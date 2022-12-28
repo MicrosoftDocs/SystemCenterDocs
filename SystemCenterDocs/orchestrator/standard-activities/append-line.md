@@ -1,6 +1,6 @@
 ---
 title: Append Line
-description: This articles describes the functionality of Append Line Activity.
+description: This article describes the functionality of Append Line Activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
@@ -38,7 +38,7 @@ The Append Line activity appends a line of text into a text file. Use the Append
 
 - The file name you want to append to.  
 
-- The type of file encoding that the file you are appending to uses.  
+- The type of file encoding that the file you're appending to uses.  
 
 - The text you append.  
 
@@ -48,8 +48,8 @@ Use the following information to configure the Append Line activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to append the text to, or click the ellipsis button **(...)** and browse for it.|  
-|**File encoding**|Click the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** drop-down list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
+|**File**|Type the path and name of the file that you want to append the text to, or select the ellipsis button **(...)** and browse for it.|  
+|**File encoding**|Select the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** drop-down list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
 |**Text**|Type the text that you want to append to the file that you specified.|  
 
 ### Published Data  

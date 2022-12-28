@@ -47,8 +47,8 @@ Use the following information to configure the Get Process Status activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Computer**|Type the name of the computer where the process that you are checking is located. You can also browse for the computer using the ellipsis **(...)** button. The runbook server that runs this runbook must have the appropriate rights to check the process on that computer.|  
-|**Process**|Type the name of the process that you are checking. You can also browse for the process using the ellipsis **(...)** button.|  
+|**Computer**|Type the name of the computer where the process that you're checking is located. You can also browse for the computer using the ellipsis **(...)** button. The runbook server that runs this runbook must have the appropriate rights to check the process on that computer.|  
+|**Process**|Type the name of the process that you're checking. You can also browse for the process using the ellipsis **(...)** button.|  
 
 ### Published Data  
  The following table lists the published data items.  

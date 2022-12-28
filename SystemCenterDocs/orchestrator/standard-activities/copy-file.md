@@ -32,7 +32,7 @@ manager: "evansma"
 The Copy File activity copies a file from one directory to another. You can also copy files to network shares that are available using UNC paths. Use the Copy File activity to copy important files that have been created or modified in a folder that is being monitored by the Monitor Folder activity to a backup location.  
 
 ## Configuring the Copy File Activity  
- Before you configure the Copy File activity, you need to know which files you are copying and the destination path where you will put the copies.  
+ Before you configure the Copy File activity, you need to know which files you're copying and the destination path where you'll put the copies.  
 
  Use the following information to configure the Copy File activity.  
 
@@ -41,7 +41,7 @@ The Copy File activity copies a file from one directory to another. You can also
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**File**|Type the path and name of the file that you want to copy. You can use the * and ? wildcards to specify the file name or path. These wildcards behave the same way as in the Windows Command Prompt.|  
-|**Include sub-folders**|Select this option to copy any files within the sub-folders of the path you have specified that match the filename that you have specified.|  
+|**Include sub-folders**|Select this option to copy any files within the sub-folders of the path you've specified that match the filename that you've specified.|  
 |**Folder**|Type the path of the folder where you want the files to be copied to.|  
 |**If the destination exists**|Select the action that you want to take if a file with the same name already exists in the destination folder:<br /><br /> **Overwrite**: Select this option to overwrite the existing file with the file that is being copied.<br /><br /> **Fail**: Select this option to cause the Copy File activity to fail if the filename already exists.<br /><br /> **Create a file with a unique name**: Select this option to append a value to the filename to create a unique name that doesn't conflict with an existing name.|  
 
@@ -50,7 +50,7 @@ The Copy File activity copies a file from one directory to another. You can also
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**File age**|Specify **Is less than** or **Is more than** to copy the files that are older or newer, respectively, than the number of days that you specify.|  
-|**days**|Enter the number of **days** that you will use with the **File age** measure.|  
+|**days**|Enter the number of **days** that you'll use with the **File age** measure.|  
 |**Date of transfer**|Set the date of the file at the destination to the date when it was copied to the folder.|  
 |**Same as original**|Set the date of the file at the destination to the date of the original file.|  
 

@@ -37,8 +37,8 @@ The Initialize Data activity is a starting point for runbooks that require param
  Use the following information to configure the Initialize Data activity.  
 
 ### Published Data  
- Each parameter that you have configured is available as published data to the other activities in the runbook while the runbook is running. To pass data back to the invoking runbook, use the [Return Data](return-data.md) activity.  
+ Each parameter that you've configured is available as published data to the other activities in the runbook while the runbook is running. To pass data back to the invoking runbook, use the [Return Data](return-data.md) activity.  
 
 ## See Also  
- [Invoke Runbook](invoke-runbook.md)   
- [Return Data](return-data.md)
+ [Invoke Runbook](invoke-runbook.md).   
+ [Return Data](return-data.md).

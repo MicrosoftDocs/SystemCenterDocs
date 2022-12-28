@@ -40,7 +40,7 @@ The Check schedule activity verifies that a runbook is allowed to run at the cur
 
 2.  Double-click the **Check Schedule** activity icon to open the **Properties** dialog.  
 
-3.  Select the **Details** tab, and next to the **Schedule Template** box, click the ellipsis **(...)** button and in the **Select a Schedule** dialog, select the **Schedule** that you want to verify.  
+3.  Select the **Details** tab, and next to the **Schedule Template** box, select the ellipsis **(...)** button and in the **Select a Schedule** dialog, select the **Schedule** that you want to verify.  
 
 ### Published Data  
  The following table lists the published data items.  

@@ -36,7 +36,7 @@ The following table provides a brief description of tasks you can accomplish wit
 |Manipulate text files.|[Text File Management](./standard-activities/text-file-management.md)|  
 |Manage workflows.|[Runbook Control](./standard-activities/runbook-control.md)|  
 
-[Here](./standard-activities/alphabetical-list-of-standard-activities.md) is the alphabetical list of Orchestrator standard activities.
+[Here's](./standard-activities/alphabetical-list-of-standard-activities.md) the alphabetical list of Orchestrator standard activities.
 
 ## See Also  
 

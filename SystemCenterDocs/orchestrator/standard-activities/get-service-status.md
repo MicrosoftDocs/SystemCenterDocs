@@ -44,8 +44,8 @@ Use the following information to configure the Get Service Status activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Computer**|Type the name of the computer where the service that you are checking is located. You can also use the ellipsis **(...)** button to browse for the computer. The runbook server that runs this runbook must have the appropriate rights to monitor the services on that computer.|  
-|**Service**|Type the name of the service that you are checking. You can also browse for the service using the ellipsis **(...)** button.|  
+|**Computer**|Type the name of the computer where the service that you're checking is located. You can also use the ellipsis **(...)** button to browse for the computer. The runbook server that runs this runbook must have the appropriate rights to monitor the services on that computer.|  
+|**Service**|Type the name of the service that you're checking. You can also browse for the service using the ellipsis **(...)** button.|  
 
 ### Published Data  
  The following table lists the published data items.  

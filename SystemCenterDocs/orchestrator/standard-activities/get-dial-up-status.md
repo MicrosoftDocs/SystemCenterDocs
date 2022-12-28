@@ -41,7 +41,7 @@ The Get Dial-up Status activity retrieves the status of a dial-up or VPN network
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Dial-up or VPN entry**|Type the name of the entry as entered in the address book, or click the ellipsis **(…)** button and select the entry from the Remote Access Phone Book.|  
+|**Dial-up or VPN entry**|Type the name of the entry as entered in the address book, or select the ellipsis **(…)** button and select the entry from the Remote Access Phone Book.|  
 
 ### Published Data  
  The following table lists the published data items.  
