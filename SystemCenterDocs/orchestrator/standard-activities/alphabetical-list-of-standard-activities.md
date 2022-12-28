@@ -1,7 +1,6 @@
 ---
 title: Alphabetical List of Standard Activities
 description: This article lists Standard Activities
-ms.custom: ""
 ms.date: 12/28/2022
 ms.prod: system-center
 ms.reviewer: ""
