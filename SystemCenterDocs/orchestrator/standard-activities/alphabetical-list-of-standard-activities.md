@@ -2,7 +2,7 @@
 title: Alphabetical List of Standard Activities
 description: This article lists Standard Activities
 ms.custom: ""
-ms.date: 2/1/2018
+ms.date: 12/28/2022
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "jyothisuri"
 ms.author: "jsuri"
 manager: "evansma"
+ms.custom: engagement-fy23
 ---
 # Alphabetical List of Standard Activities
 
@@ -168,7 +169,7 @@ All standard activities are listed below.
 
  [Return Data](return-data.md)  
 
- [Run .Net Script](run-net-script.md)  
+ [Run .NET Script](run-net-script.md)  
 
  [Run Program](run-program.md)  
 

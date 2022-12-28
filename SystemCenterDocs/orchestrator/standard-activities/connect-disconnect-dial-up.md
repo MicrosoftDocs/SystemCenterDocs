@@ -48,7 +48,7 @@ The Connect/Disconnect Dial-up activity connects or disconnects a dial-up connec
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Domain**|Enter the name of the domain for the username.|  
-|**Username**|Enter the username to logon to the remote network.|  
+|**Username**|Enter the username to sign in to the remote network.|  
 |**Password**|Enter the password for the username.|  
 
 ### Published Data  
