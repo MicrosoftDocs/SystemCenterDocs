@@ -83,7 +83,7 @@ The **Logging** tab on the **Properties** for a runbook allows you to optionally
 
     This logging option generates 6082 bytes in addition to the bytes logged by specific activities.  
 
-    > [TIP]  
+    > [!TIP]  
     > This option is selected primarily for debugging purposes. Leave unchecked to limit logging growth.  
 
 Setting logging options can significantly affect performance and increase database growth. Consider the scenario where the same runbook activity is run twice, first with data logging at the default level (no published data options selected) and then set with common published data selected. The domain code should take the same amount of time to complete. However, the platform code will take longer to run because it has to support 12 times the amount of common published data logging than it does with just default logging.  
@@ -249,5 +249,5 @@ Use the following guidelines to manage database sizing and performance:
 -   Identify opportunities for improvement by making normalized comparisons of your measurements.  
 
 ## See Also  
-[Orchestrator Logs](orchestrator-logs.md).
-[Orchestrator Architecture](learn-about-orchestrator.md).
+- [Orchestrator Logs](orchestrator-logs.md).
+- [Orchestrator Architecture](learn-about-orchestrator.md).

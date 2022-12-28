@@ -15,8 +15,8 @@ title:  include file
 ##  Orchestrator 2019 release notes
 
 The following is the known issue in System Center 2019 - Orchestrator.
-- For issues fixed in Orchestrator UR1, [see the KB article](https://support.microsoft.com/help/4533414)
-- For issues fixed in Orchestrator UR2, [see the KB article](https://support.microsoft.com/help/4569536 )
+- For issues fixed in Orchestrator UR1, [see the KB article](https://support.microsoft.com/help/4533414).
+- For issues fixed in Orchestrator UR2, [see the KB article](https://support.microsoft.com/help/4569536).
 
 ## Orchestrator Web Console isn't compatible with the Microsoft Edge web browser
 **Description:** You can't open the Orchestrator web console with the Microsoft Edge web browser.

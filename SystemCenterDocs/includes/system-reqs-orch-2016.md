@@ -45,8 +45,8 @@ The following software is required for a full installation of Orchestrator on a 
 
 * Microsoft SQL Server 2012, 2014, or 2016 – Orchestrator requires only the basic SQL Server features found in the Database Engine Service. No additional features are required. Orchestrator supports SQL_Latin1_General_CP1_CI_AS for collation. The installation wizard uses SQL_Latin1_General_CP1_CI_AS as the default collation to create the orchestration database. For more information, see the section on [SQL Server](#sql-server).
 
-> [!NOTE]
-> Management servers and runbook servers installed on the same computer must use the same database. The management server must run as a 32-bit application.
+  > [!NOTE]
+  > Management servers and runbook servers installed on the same computer must use the same database. The management server must run as a 32-bit application.
 
 * Microsoft Internet Information Services (IIS) – Orchestrator Setup enables IIS if it isn't enabled.
 
