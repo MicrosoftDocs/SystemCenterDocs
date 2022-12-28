@@ -17,7 +17,7 @@ manager: carmonm
 
 ::: moniker-end
 
-You set the sequence of operations in runbooks by linking activities together in the **Runbook Designer**. These links are known as "smart links" because you can configure them to control the type of data passed from one activity to another. You can also control when the runbook completes activities by setting the logic for when those operations run with embedded loops. Finally, you can use text and numerical operations to manipulate data as it passes between activities, or to set conditions for the order of operations. This topic describes how to control sequencing and manipulate data within your runbook.
+You set the sequence of operations in runbooks by linking activities together in the **Runbook Designer**. These links are known as "smart links" because you can configure them to control the type of data passed from one activity to another. You can also control when the runbook completes activities by setting the logic for when those operations run with embedded loops. Finally, you can use text and numerical operations to manipulate data as it passes between activities, or to set conditions for the order of operations. This article describes how to control sequencing and manipulate data within your runbook.
 
 ## Control activity sequence with smart links
 
@@ -46,7 +46,7 @@ If the published data is text data, you can use any of the following to set the 
 |does not equal|The value of the Published Data item does not match the specified text.|  
 
 > [!NOTE]  
-> Text values are not case\-sensitive.
+> Text values aren't case\-sensitive.
 
 You can also set criteria using regular expressions to perform pattern matching.
 
@@ -142,20 +142,20 @@ Use the following procedure to add or remove an **Exit** condition.
 
 ## Set a schedule for a runbook
 
-You can set a schedule to control when a runbook runs. For example, there are times when it is inappropriate to run some runbooks, such as backing up a runbook on a main server during regular business hours. You can create a schedule that runs according to a complex interval, such as the first and third Mondays and Thursdays of every month, except when these days fall on a holiday.  
+You can set a schedule to control when a runbook runs. For example, there are times when it's inappropriate to run some runbooks, such as backing up a runbook on a main server during regular business hours. You can create a schedule that runs according to a complex interval, such as the first and third Mondays and Thursdays of every month, except when these days fall on a holiday.  
 
 Schedules use the system clock of the Runbook server that runs the runbook. This enables schedules to function in virtual machine environments, and to continue running even when the system clock is adjusted because of the move to or from daylight savings time.  
 
-Runbooks that start before a prohibited time run until finished, even if they are still processing when the prohibited time arrives. They won't be interrupted after processing has started.  
+Runbooks that start before a prohibited time run until finished, even if they're still processing when the prohibited time arrives. They won't be interrupted after processing has started.  
 
 > [!IMPORTANT]  
-> The access permissions for schedules can be modified, but the runbook server does not enforce these permissions.  
+> The access permissions for schedules can be modified, but the runbook server doesn't enforce these permissions.  
 
 > [!NOTE]  
 > If you schedule a runbook to start during an hour that is skipped when the system clock is adjusted forward by one hour, that starting time is skipped, and the runbook starts at the next scheduled time. If you schedule a runbook to start during an hour that occurs two times because the system clock is adjusted backward by one hour, the runbook starts two times.  
 
 > [!NOTE]  
-> Orchestrator does not support moving multiple schedules with multiple\-selection. To move more than one schedule to another folder, you must move each schedule individually.
+> Orchestrator doesn't support moving multiple schedules with multiple\-selection. To move more than one schedule to another folder, you must move each schedule individually.
 
 ### To create a schedule  
 
@@ -209,7 +209,7 @@ Runbooks that start before a prohibited time run until finished, even if they ar
 
 4.  Select **Finish**.  
 
-    Every time the runbook is started, it checks the schedule to verify that it is allowed to run. If it isn't allowed to run, it stops and does not restart until the next time it is started.  
+    Every time the runbook is started, it checks the schedule to verify that it's allowed to run. If it isn't allowed to run, it stops and doesn't restart until the next time it's started.  
 
 ### To remove a schedule from a runbook  
 

@@ -128,13 +128,13 @@ The **Instance** and **Activity status** follow the same format as **Job Status*
 
 ## Execute runbooks
 
-Navigate to the Runbook screen of the desired Runbook and select **Run** . An overlay form opens to the right where you are asked to:
+Navigate to the Runbook screen of the desired Runbook and select **Run** . An overlay form opens to the right where you're asked to:
 - Set values to all input parameters (required)
 - Choose the set of Runbook servers on which this Job can be scheduled.
 
 [ ![Screenshot showing parameterized run.](./media/console-overview-2022/parameterized-run-inline.png) ](./media/console-overview-2022/parameterized-run-expanded.png#lightbox)
 
-Only one of these servers will actually execute this Job. To execute a Runbook on many servers, you will have to run those many number of Jobs and explicitly set the servers one-by-one.
+Only one of these servers will actually execute this Job. To execute a Runbook on many servers, you'll have to run those many number of Jobs and explicitly set the servers one-by-one.
 
 >[!NOTE]
 > Enter the parameters in the form, else the form won't be considered.
@@ -214,7 +214,7 @@ The **Events** workspace lets you view log events. By default, log events includ
 -  Select the **Orchestration Console** button on the toolbar.  
 
     > [!NOTE]  
-    > If the URL hasn't been set for the Orchestration console, you will receive an error message. Use the following procedure to set the URL.  
+    > If the URL hasn't been set for the Orchestration console, you'll receive an error message. Use the following procedure to set the URL.  
 
 ## To set the Orchestration console URL in the Runbook Designer  
 
@@ -239,7 +239,7 @@ When you stop a runbook, the runbook, all jobs, and all instances associated wit
 
 4.  Select the runbook, and then in the **Actions** pane, select **Start Runbook**.
 
-5.  If the runbook requires parameters, they are listed in the **Runbook Parameters** pane. Select the **Value** column for each runbook and type a value for the runbook to use.
+5.  If the runbook requires parameters, they're listed in the **Runbook Parameters** pane. Select the **Value** column for each runbook and type a value for the runbook to use.
 
 6.  If you want to run the runbook on a server other than its default, select a server in the **Available Runbook Server(s)** pane, and then select the right arrow to add the server to the **Selected Runbook Server(s)** pane.
 

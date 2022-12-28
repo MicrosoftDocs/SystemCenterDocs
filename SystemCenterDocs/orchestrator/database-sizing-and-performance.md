@@ -96,7 +96,7 @@ For more information on automatic and manual purging of logs, see the [Purging R
 ## Creating Performance Benchmarks  
 To create a simple runbook to test logging growth, you can use the Standard Activity **Compare Values** to create benchmarks of an Orchestrator environment.  
 
-The following procedure creates a simple runbook that runs a **Compare Values** activity 10,000 times. **Compare Values** is a simple activity whose domain code is minimal. This runbook can be invoked under various circumstances to characterize the overall performance of a given Orchestrator runtime environment.  
+The following procedure creates a runbook that runs a **Compare Values** activity 10,000 times. **Compare Values** is a simple activity whose domain code is minimal. This runbook can be invoked under various circumstances to characterize the overall performance of a given Orchestrator runtime environment.  
 
 #### To create a runbook that can be used to benchmark your Orchestrator environment  
 

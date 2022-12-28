@@ -8,7 +8,7 @@ ms.date:  05/17/2018
 ms.topic:  include
 ms.prod:  system-center-threshold
 ms.technology: orchestrator
-description: include file to provides an overview of how to upgrade your System Center Orchestrator installation to release 1801.
+description: include file to provide an overview of how to upgrade your System Center Orchestrator installation to release 1801.
 keywords:
 ---
 
