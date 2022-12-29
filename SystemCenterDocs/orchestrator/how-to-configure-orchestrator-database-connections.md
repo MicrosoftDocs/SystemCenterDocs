@@ -20,7 +20,7 @@ manager: evansma
 
 ::: moniker-end
 
-As part of your day-to-day operations of Orchestrator you may need to change the connection settings to the Orchestrator database. You can use the `DBSetup` utility to change this setting. The common scenario is connecting to a restored backup.  
+As part of your day-to-day operations of Orchestrator, you may need to change the connection settings to the Orchestrator database. You can use the `DBSetup` utility to change this setting. The common scenario is connecting to a restored backup.  
 
 This utility provides two functions:  
 
@@ -32,7 +32,7 @@ When connecting to a rebuilt database:
 -   This procedure can only be performed against the same database server used during the installation of the management server.  
 -   You must have database permissions to create the database.  
 
-In contrast, `DBconfig` only creates a new database; it does not configure the security for the database. DBConfig configures the database schema in the database and creates the contents of **settings.dat**, which contains the connection details for the management server and runbook servers. For more information on running DBConfig, see [How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md).  
+In contrast, `DBconfig` only creates a new database; it doesn't configure the security for the database. DBConfig configures the database schema in the database and creates the contents of **settings.dat**, which contains the connection details for the management server and runbook servers. For more information on running DBConfig, see [How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md).  
 
 ## To configure Orchestrator database connections  
 

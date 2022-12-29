@@ -157,6 +157,7 @@ This section explains how to configure low-privilege agent monitoring.
     GRANT SELECT ON [dbo].[log_shipping_monitor_secondary] TO [SCOM_SQLMPLowPriv];
     GRANT SELECT ON [dbo].[log_shipping_monitor_primary] TO [SCOM_SQLMPLowPriv];
     GRANT EXECUTE ON [dbo].[sp_help_job] TO [SCOM_SQLMPLowPriv];
+    GRANT EXECUTE ON [dbo].[agent_datetime] TO [SCOM_SQLMPLowPriv];
     GRANT EXECUTE ON [dbo].[SQLAGENT_SUSER_SNAME] TO [SCOM_SQLMPLowPriv];
     ALTER ROLE [SQLAgentReaderRole] ADD MEMBER [SCOM_SQLMPLowPriv];
     ```
@@ -320,6 +321,7 @@ This section explains how to configure low-privilege agentless monitoring.
     GRANT SELECT ON [dbo].[log_shipping_monitor_secondary] TO [SCOM_SQLMPLowPriv];
     GRANT SELECT ON [dbo].[log_shipping_monitor_primary] TO [SCOM_SQLMPLowPriv];
     GRANT EXECUTE ON [dbo].[sp_help_job] TO [SCOM_SQLMPLowPriv];
+    GRANT EXECUTE ON [dbo].[agent_datetime] TO [SCOM_SQLMPLowPriv];
     GRANT EXECUTE ON [dbo].[SQLAGENT_SUSER_SNAME] TO [SCOM_SQLMPLowPriv];
     ALTER ROLE [SQLAgentReaderRole] ADD MEMBER [SCOM_SQLMPLowPriv];
     ```

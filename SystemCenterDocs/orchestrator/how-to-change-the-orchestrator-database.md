@@ -25,8 +25,8 @@ You can use the Database Configuration utility to change the connection settings
 
 ### To change the database settings for the management server and runbook servers  
 
-1. On the management server, click **Start**, point to **All Programs**, click **Microsoft System Center \<version\>**, click **Orchestrator**, and then click **Data Store Configuration**.  
-2. In the **Server** box, enter the name of the server that is hosting the database by using the format **\<server\>\\<instance\>,\<port\>**. You can click the ellipsis **\(...\)** button to select the computer. You do not have to include the instance if the Orchestrator database is installed on the default instance. You do not have to include the port if SQL Server is usually installed on the default port 1433.  
+1. On the management server, select **Start**, point to **All Programs**, select **Microsoft System Center \<version\>**, select **Orchestrator**, and then select **Data Store Configuration**.  
+2. In the **Server** box, enter the name of the server that is hosting the database by using the format **\<server\>\\<instance\>,\<port\>**. You can select the ellipsis **\(...\)** button to select the computer. You don't have to include the instance if the Orchestrator database is installed on the default instance. You don't have to include the port if SQL Server is usually installed on the default port 1433.  
 
    If the Orchestrator database is installed on an instance called MyInstance on a computer named MySQLServer that is configured on port 12345, enter **MySQLServer\\MyInstance,12345**.  
 
@@ -37,14 +37,14 @@ You can use the Database Configuration utility to change the connection settings
 
    -   **Windows Authentication** Connect to the SQL Server by using Windows Authentication.  
 
-   -   **SQL Server Authentication** Connect to the SQL Server by using a SQL Server user account. Type the **User Name** and **Password** of the SQL Server user account. This account must have rights to create, write, and own a database and create, update, and delete rows in the database.  
-4. Click **Next**.  
-5. In the **Data Store** pane, click **Use an existing database**.  
+   -   **SQL Server Authentication** Connect to the SQL Server by using a SQL Server user account. Type the **User Name** and **Password** of the SQL Server user account. This account must have the rights to create, write, and own a database and create, update, and delete rows in the database.  
+4. Select **Next**.  
+5. In the **Data Store** pane, select **Use an existing database**.  
 6. In the **Name** list, select the database.  
-7. Click **Finish**.  
+7. Select **Finish**.  
 
 ## Web Service  
-The web service supporting the Orchestration console does not use the **Settings.dat** file. To change the database settings for the web service, you must modify the `web.config` file on the Internet Information Services \(IIS\) server.
+The web service supporting the Orchestration console doesn't use the **Settings.dat** file. To change the database settings for the web service, you must modify the `web.config` file on the Internet Information Services \(IIS\) server.
 
 ::: moniker range="<=sc-orch-2019"
 You can use **IIS Manager** to modify the file, but you must first decrypt it by running the aspnet\_regiis.exe executable file.
@@ -53,7 +53,7 @@ You can use **IIS Manager** to modify the file, but you must first decrypt it by
 ### To change the database settings for the Orchestrator web service  
 
 ::: moniker range="<=sc-orch-2019"
-1.  Log on with administrative credentials to the computer with the Orchestration console installed.  
+1.  Sign in with administrative credentials to the computer with the Orchestration console installed.  
 2.  Open a Command Prompt window with administrator credentials.  
 3.  Run the following command to decrypt the Web.config file:  
 
@@ -61,12 +61,12 @@ You can use **IIS Manager** to modify the file, but you must first decrypt it by
     C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet\_regiis.exe -pdf "connectionStrings" "C:\Program Files (x86)\Microsoft System Center\Orchestrator\Web Service\Orchestrator"
     ```
 
-4.  To start the IIS Manager, click **Start**, point to **Administrative Tools**, and then click **Internet Information Services \(IIS\) Manager**.  
-5.  Expand the **Sites** node, and then click **Microsoft System Center \<version\> Orchestrator Web Service**.  
+4.  To start the IIS Manager, select **Start**, point to **Administrative Tools**, and then select **Internet Information Services \(IIS\) Manager**.  
+5.  Expand the **Sites** node, and then select **Microsoft System Center \<version\> Orchestrator Web Service**.  
 6.  In the **Features View**, double\-click **Connection Strings**.  
 7.  In the **Connections String** pane, double\-click **OrchestratorContext**.  
 8.  In the **Custom** box, scroll down to the portion of the string that includes the server name \(Data Source\) and database name \(Initial Catalog\). Modify these values as required.  
-9. Click **OK** to close the dialog box.  
+9. Select **OK** to close the dialog.  
 10. Close **IIS Manager**.  
 11. Run the following command to encrypt the Web.config file:  
 
@@ -78,7 +78,7 @@ You can use **IIS Manager** to modify the file, but you must first decrypt it by
 ::: moniker range="sc-orch-2022"
 Edit the `environmentVariable` element in `system.webServer` \> `aspNetCore` \> `environmentVariables` in the `web.config` using a text editor. Particularly, you'd want to change the values of the `DATABASE__*` variables.
 
-The full list of Database connection settings is available in [Connection String syntax][db-conn-string]. First determine the keys you need to specify for your scenario, for example the `Trusted_Connection` (or its alias `Integrated Security`) may require other keys like `User ID`.
+The full list of Database connection settings is available in [Connection String syntax][db-conn-string]. First determine the keys you need to specify for your scenario; for example, the `Trusted_Connection` (or its alias `Integrated Security`) may require other keys like `User ID`.
 
 ```xml
 <!-- system.webServer > aspNetCore -->
