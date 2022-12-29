@@ -27,7 +27,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 ## Overview of Activities in Orchestrator  
  An activity is a single functional part of an Orchestrator runbook. Activities are what do the actual work within runbooks and are joined together using links that can be defined with conditions to create workflow branches. When building a runbook using the Runbook Designer, you drag and drop activities from the Activities pane into the runbook and link them together to form the workflow. As the runbook runs, it invokes each activity in sequence according to the way they were linked. Each activity performs a specific duty and can collect input data from the Orchestrator data bus, and publish its output to the same data bus. Each activity has the ability to draw published data from any of the activities that ran prior to it in the runbook, and publishing output data allows the following activities to access it.  
 
- Activities range from very simple to very complex. You can create an activity using the Command-Line Activity Wizard that does nothing but echoes text to an output property. You can also create a single activity that performs a complex, multi-step action such as virtual machine deployment. It’s up to you to define what each activity will do. However, your goal should be to define activities that encapsulate single sets of functionality that allow for easy re-use in many different types of situations. The key is flexibility. It’s better to create a set of ten different activities that each do something specific and be able to use those activities in 20 different ways, rather than create 20 different activities to solve the specific individual scenarios. More information about best practices is covered later in this document.  
+ Activities range from simple to complex. You can create an activity using the Command-Line Activity Wizard that does nothing but echoes text to an output property. You can also create a single activity that performs a complex, multi-step action such as virtual machine deployment. It’s up to you to define what each activity will do. However, your goal should be to define activities that encapsulate single sets of functionality that allow for easy reuse in many different types of situations. The key is flexibility. It’s better to create a set of 10 different activities that each do something specific and be able to use those activities in 20 different ways, rather than create 20 different activities to solve the specific individual scenarios. More information about best practices is covered later in this document.  
 
 ## Creating a New Activity Assembly  
 
@@ -39,7 +39,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 3.  On the **Assembly Details** page, enter a value for **Name** that begins with a letter and is followed by zero or more alphanumeric characters. This name is used as a C# namespace identifier for the assembly and your activities.  
 
-4.  In **Assembly file**, enter a path and filename of the assembly file that will be created by this wizard. If this file already exists, you will be prompted to overwrite the file.  
+4.  In **Assembly file**, enter a path and filename of the assembly file that will be created by this wizard. If this file already exists, you'll be prompted to overwrite the file.  
 
 5.  Select the **Assembly information** button. You can enter information here that will become the properties of the assembly file, visible in Windows Explorer via file properties. The property values are defined in the table below. This information is optional and not required to build an assembly.  
 
@@ -53,13 +53,13 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
     |Trademark|Specifies a trademark for the assembly, which appears as “Legal trademarks” in Windows Explorer properties|  
     |Version|Specifies the assembly version and file version. These appear in Windows Explorer properties as **File version** and **Product version**.<br /><br /> The version number has four parts as follows:<br /><br /> <major version\>.<minor version\>.<build number\>.<revision\>|  
 
-6.  Select **OK** when you are done entering assembly information.  
+6.  Select **OK** when you're done entering assembly information.  
 
 7.  Select **Next**. The **Commands** page displays.  
 
 8.  Add one or more commands by following the instructions provided in [Adding Commands to an Assembly](command-line-activity-wizard.md#adding-commands-to-an-assembly).  
 
-9. When you've completed the definition of your activity, select **OK**. The dialog closes and your new activity is added to the list on the **Commands** page. If you need to go back and edit a command, select the command in the list and select Edit. If you need to delete a command, select the command in the list and select **Remove**.  
+9. When you've completed the definition of your activity, select **OK**. The dialog closes, and your new activity is added to the list on the **Commands** page. If you need to go back and edit a command, select the command in the list and select Edit. If you need to delete a command, select the command in the list and select **Remove**.  
 
 10. When you're finished adding and modifying commands, select **Next**. The assembly file specified at the start of the wizard is compiled, and when the process is complete, the final wizard page displays.  
 
@@ -82,10 +82,10 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 4.  Select the **Arguments** tab.  
 
-5.  In the **Command Line** field, type the command or command line parameters needed by your activity. If your command will take parameters that you want users to specify, you will need to add them in the **Parameters** list below, and then use the **Insert** button to add them to the command line.  
+5.  In the **Command Line** field, type the command or command line parameters needed by your activity. If your command will take parameters that you want users to specify, you'll need to add them in the **Parameters** list below, and then use the **Insert** button to add them to the command line.  
 
     > [!IMPORTANT]
-    > If you specified **Run Windows PowerShell** for the **Mode** and you are referencing a PowerShell script included with your Integration Pack, you must precede the name of the script with dot and slash characters to refer to the local directory. For example, .\MyScript.ps1 would be specified for a script named MyScript.ps1. This is because the script file will be copied to the default directory for the Integration Pack. When Windows PowerShell runs a script from the local directory, it must specify this notation.  
+    > If you specified **Run Windows PowerShell** for the **Mode** and you're referencing a PowerShell script included with your Integration Pack, you must precede the name of the script with dot and slash characters to refer to the local directory. For example, .\MyScript.ps1 would be specified for a script named MyScript.ps1. This is because the script file will be copied to the default directory for the Integration Pack. When Windows PowerShell runs a script from the local directory, it must specify this notation.  
 
 6.  To provide parameters for a command line, select **Add**. The **Add/Edit Parameter** dialog appears.  
 
@@ -103,7 +103,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
     |Display style|Description|  
     |-|-|  
     |Text|The user will be presented with a free-form text box for entering a value|  
-    |Encrypted Text|The user will be presented with a masked text box. The data in this field will be encrypted within the database and will not be shown in any logs|  
+    |Encrypted Text|The user will be presented with a masked text box. The data in this field will be encrypted within the database and won't be shown in any logs|  
     |True/False|The user can select True or False from a popup dialog|  
     |Text with Selection|The user can select from a group of **Options** that you specify|  
     |Date/Time|The user can select the value using a Date/Time Picker control|  
@@ -129,7 +129,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
     |Items|Description|  
     |-|-|  
-    |Name|The display name of the Published Data item that you are creating|  
+    |Name|The display name of the Published Data item that you're creating|  
     |Source|The source of the Published Data item. You can choose from **Standard Output Stream** or **Standard Error Stream** from the command line|  
     |Mode|The mode that you want to use to select the data published.<br /><br /> Use **Match Pattern** to determine if a given pattern is found within the Source.  This will return **True** or **False**.<br /><br /> Use **Extract Group** to retrieve each item of data that matches the Pattern that you specify|  
     |Pattern|The regular expression that applies to the Mode setting|  
@@ -139,7 +139,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
     |Items|Description|  
     |-|-|  
-    |Name|The display name of the Published Data item that you are creating|  
+    |Name|The display name of the Published Data item that you're creating|  
     |Property|The name of the Windows PowerShell property that will be saved to the Published Data item. This property must be contained in an object output to the PowerShell pipeline during the script and must not be an object (should be able to be converted to a string).|  
     |Description|The description text that displays next to the published data property in the Runbook Designer. (optional)|  
 
@@ -179,10 +179,10 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 13. Select **Show Details** under the activity name in the Run Log pane to see the detailed results, including the input properties and published data.  
 
 ## QIK CLI Activity Migration  
- If you've an assembly that was created using the Opalis 6.3 QIK CLI Wizard, you will need to convert it to be compatible with Orchestrator before it can be used either in an Orchestrator Integration Pack or used directly in runbooks via the Invoke .NET activity. The conversion process is simple and only takes a few seconds per assembly.  
+ If you've an assembly that was created using the Opalis 6.3 QIK CLI Wizard, you'll need to convert it to be compatible with Orchestrator before it can be used either in an Orchestrator Integration Pack or used directly in runbooks via the Invoke .NET activity. The conversion process is simple and only takes a few seconds per assembly.  
 
 > [!IMPORTANT]
-> The install for the Orchestrator Integration Toolkit will not fail if Microsoft .NET Framework 3.5, Service Pack 1 is not installed, but different operations in the Command-Line Activity Wizard will fail if it isn't present. Ensure that Microsoft .NET Framework 3.5, Service Pack 1 is installed before using the CLI.  
+> The install for the Orchestrator Integration Toolkit won't fail if Microsoft .NET Framework 3.5, Service Pack 1 is not installed, but different operations in the Command-Line Activity Wizard will fail if it isn't present. Ensure that Microsoft .NET Framework 3.5, Service Pack 1 is installed before using the CLI.  
 
 #### To convert an Opalis QIK CLI Assembly  
 

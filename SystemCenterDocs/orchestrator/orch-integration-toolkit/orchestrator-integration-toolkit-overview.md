@@ -37,7 +37,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 ::: moniker range="sc-orch-2022"
 
 > [!NOTE]
-> `CLIActivityWizard` is temporarily absent from v10.22.3.* releases; it is not deprecated.
+> `CLIActivityWizard` is temporarily absent from v10.22.3.* releases; it isn't deprecated.
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 #### Orchestrator SDK  
 
--   There have been significant changes to the SDK namespace, interfaces, and attributes as part of rebranding to Microsoft. For details about these changes, please see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).  
+-   There have been significant changes to the SDK namespace, interfaces, and attributes as part of rebranding to Microsoft. For details about these changes, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).  
 
 -   The full SDK documentation and code examples are no longer included in the installation of the Orchestrator Integration Toolkit.
 
@@ -71,7 +71,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 #### General  
 
--   There is now one primary help file for the utilities in the Toolkit. However, detailed documentation is now located on TechNet to allow for continuous content updates.  
+-   There's now one primary help file for the utilities in the Toolkit. However, detailed documentation is now located on TechNet to allow for continuous content updates.  
 
 #### Installation  
 
@@ -95,7 +95,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 -   Allows installation of IPs and dependent files with identical file names. The installation automatically deploys assemblies and dependent files of an Integration Pack into an IP-specific folder to physically separate files of different IPs and prevent issues such as overwriting existing files.  
 
--   The wizard now supports upgrade from any version. It is not necessary to provide a previous version number, so the **Upgrade from** version number inputs have been removed from the wizard.  
+-   The wizard now supports upgrade from any version. It isn't necessary to provide a previous version number, so the **Upgrade from** version number inputs have been removed from the wizard.  
 
 -   IPs created using the wizard are limited to installation on Orchestrator.  
 
@@ -103,17 +103,17 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 -   Improved field validation to avoid compile-time errors.  
 
--   All sample icons have been replaced with new *generic* icons which are more *verb-based* rather than being copies of the existing activity icons. You can also resize the icon viewer dialog in the wizard to see more icons at the same time.  
+-   All sample icons have been replaced with new *generic* icons, which are more *verb-based* rather than being copies of the existing activity icons. You can also resize the icon viewer dialog in the wizard to see more icons at the same time.  
 
 -   The **License Key** feature of Integration Packs has been removed.  
 
--   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset used by the IP Wizard for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation required prior to installing the Toolkit. However, if WiX is subsequently uninstalled, the Integration Pack wizard will fail with an error message directing you to download and install WiX. The Integration Toolkit supports version 3.5 of the WiX Toolset. 
+-   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset used by the IP Wizard for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation required prior to installing the Toolkit. However, if WiX is later uninstalled, the Integration Pack wizard will fail with an error message directing you to download and install WiX. The Integration Toolkit supports version 3.5 of the WiX Toolset. 
 
 #### Toolkit Integration Packs  
 
 -   Installation limited to Orchestrator systems.  
 
--   Activities detect usage of assemblies not compatible with Orchestrator and prevents loading.  
+-   Activities detect usage of assemblies not compatible with Orchestrator and prevent loading.  
 
 -   The Integration Pack for Java-based activities is no longer available.  
 
@@ -129,7 +129,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 #### Integration Pack Wizard  
 
--   Fixed an issue where the files from an IP were not removed when the IP was uninstalled.  
+-   Fixed an issue where the files from an IP weren't removed when the IP was uninstalled.  
 
 ::: moniker-end
 

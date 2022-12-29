@@ -31,8 +31,8 @@ This article provides the system requirements and steps to install the Orchestra
 |Component|Minimum Requirement|  
 |---------------|-------------------------|  
 |Processor|2.4 GHz Intel Pentium 4; 2.0 GHz Intel Core 2 Duo or equivalent|  
-|Memory|1GB|  
-|Hard Disk|60MB|  
+|Memory|1 GB|  
+|Hard Disk|60 MB|  
 |Operating System|Windows Server 2012 (64-bit)<br /><br /> Windows Server 2008 R2 (64-bit)<br /><br /> Windows 8 (32-bit or 64-bit)<br /><br /> Windows 7 (32-bit or 64-bit)|  
 |Additional Software|Windows Installer version 3.1<br /><br /> Microsoft .NET Framework 3.5, Service Pack 1<br /><br /> Windows Installer XML Toolset (WiX) version 3.5. For System Center 2012 SP1, OIT supports only version 3.5|  
 
@@ -43,8 +43,8 @@ This article provides the system requirements and steps to install the Orchestra
 |Component|Minimum Requirement|  
 |---------------|-------------------------|  
 |Processor|2.4 GHz Intel Pentium 4; 2.0 GHz Intel Core 2 Duo or equivalent|  
-|Memory|Minimum 1GB (recommended 2GB)|  
-|Hard Disk|200MB|  
+|Memory|Minimum 1 GB (recommended 2 GB)|  
+|Hard Disk|200 MB|  
 |Operating System|Windows Server 2012 or later|  
 |Additional Software|Windows Installer XML Toolset (WiX) version 3.11. For System Center 2012 SP1, OIT supports only version 3.5|  
 
@@ -112,7 +112,7 @@ This article provides the system requirements and steps to install the Orchestra
 
 ## Orchestrator Resources
 
-In addition to this online reference provided for System Center Orchestrator, there are a number of resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.
+In addition to this online reference provided for System Center Orchestrator, there are many resources that can provide additional information on building runbooks, using the Integration Toolkit, and best practices.
 
 - [System Center home](https://www.microsoft.com/cloud-platform/system-center)
 - [System Center documentation](../index.yml)
