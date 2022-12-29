@@ -113,7 +113,7 @@ You must ensure that your server meets the minimum supported configurations for 
    > [!NOTE]
    > After the management group name is set, it cannot be changed. The Management Group name cannot contain the following characters:
    > ```
-   > , ( ) ^ ~ : ; . ! ? " , ' ` @ # % \ / * + = $ | & [ ] <>{}
+   > , ( ) ^ ~ : ; . ! ? " , ' ` @ # % \ / * + = $ | & [ ] < > { }
    > ```
    > Also, the Management Group name cannot have a leading or trailing space. It is recommended that the Management Group name be unique within your organization if you plan to connect several management groups together.
 
