@@ -25,11 +25,11 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
-The following table provides a brief description of tasks you can accomplish when using each Monitoring activity.  
+The following table provides a brief description of the tasks you can accomplish when using each Monitoring activity.  
 
 |Tasks|Monitoring Activities|  
 |-----------|---------------------------|  
