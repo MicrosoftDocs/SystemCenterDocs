@@ -16,11 +16,11 @@ ms.author: jsuri
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
-System Center Orchestrator enables integration, efficiency, and business alignment of your IT environment. Using System Center Orchestrator, you can automate your IT operations and standardize on best practices to improve operational efficiency. Orchestrator allows you to connect different systems from different vendors without any knowledge of scripting or programming languages.
+System Center Orchestrator enables integration, efficiency, and business alignment of your IT environment. Using System Center Orchestrator, you can automate your IT operations and standardize your best practices to improve operational efficiency. Orchestrator allows you to connect different systems from different vendors without any knowledge of scripting or programming languages.
 
  This overview describes the functionality available in Orchestrator Integration Toolkit.  
 
@@ -37,7 +37,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 ::: moniker range="sc-orch-2022"
 
 > [!NOTE]
-> `CLIActivityWizard` is temporarily absent from v10.22.3.* releases, it is not deprecated.
+> `CLIActivityWizard` is temporarily absent from v10.22.3.* releases; it is not deprecated.
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 ::: moniker range="sc-orch-2022"
 
--   The Integration Toolkit supports the latest (v3.11) of the WiX Toolset. Users must install latest WiX binaries manually from the [official webpage][wix-official].
+-   The Integration Toolkit supports the latest (v3.11) of the WiX Toolset. Users must install the latest WiX binaries manually from the [official webpage][wix-official].
 
 [wix-official]: https://wixtoolset.org/
 
@@ -59,7 +59,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 ::: moniker range="<=sc-orch-2019"
 
--   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset.
+-   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset.
 
 #### Orchestrator SDK  
 
@@ -77,7 +77,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 -   If installing on a computer where Orchestrator is already installed, it will detect the Orchestrator installation path and install there. Otherwise, it installs to a default path of **%ProgramFiles(x86)%\Microsoft System Center \<version\>\Orchestrator\Integration Toolkit**. On 32-bit Windows 7, the base directory is **%ProgramFiles%**.  
 
--   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset. Installation of the Integration Toolkit is prevented until WiX is installed.  
+-   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset used for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation. The Integration Toolkit supports version 3.5 of the WiX Toolset. Installation of the Integration Toolkit is prevented until WiX is installed.  
 
 -   A license key is longer required to install the product.  
 
@@ -103,11 +103,11 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 -   Improved field validation to avoid compile-time errors.  
 
--   All sample icons have been replaced with new *generic* icons which are more *verb-based* rather than being copies of existing activity icons. You can also resize the icon viewer dialog in the wizard to see more icons at the same time.  
+-   All sample icons have been replaced with new *generic* icons which are more *verb-based* rather than being copies of the existing activity icons. You can also resize the icon viewer dialog in the wizard to see more icons at the same time.  
 
 -   The **License Key** feature of Integration Packs has been removed.  
 
--   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset, used by the IP Wizard for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation, required prior to installing the Toolkit. However, if WiX is subsequently uninstalled, the Integration Pack wizard will fail with an error message directing you to download and install WiX. The Integration Toolkit supports version 3.5 of the WiX Toolset. 
+-   The Integration Toolkit no longer includes the binaries for the Windows Installer XML (WiX) Toolset used by the IP Wizard for creating the Windows Installer files within Integration Packs. This set of tools is now a prerequisite installation required prior to installing the Toolkit. However, if WiX is subsequently uninstalled, the Integration Pack wizard will fail with an error message directing you to download and install WiX. The Integration Toolkit supports version 3.5 of the WiX Toolset. 
 
 #### Toolkit Integration Packs  
 
@@ -123,9 +123,9 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 
 -   Now accepts double quote characters **(")** in command lines without failing at compile time.  
 
--   Special characters, such as **"$$"** are no longer removed from command lines.  
+-   Special characters such as **"$$"** are no longer removed from command lines.  
 
--   The **Echo as published data** checkbox has been removed from the wizard. It had errantly been placed there and did not represent an actual feature of the product.  
+-   The **Echo as published data** checkbox has been removed from the wizard. It had errantly been placed there and didn't represent an actual feature of the product.  
 
 #### Integration Pack Wizard  
 
@@ -140,7 +140,7 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 -   When packaging an IP that contains commands created via the Command-Line Activity Wizard that utilize the SSH Command option, all of the SSH commands must be within a single CLI assembly. If the IP contains more than one assembly that uses SSH commands, only the first assembly’s commands will function.  
 
 ## Activity and IP Compatibility with Orchestrator  
- System Center Orchestrator Integration Toolkit has undergone some significant changes in the underlying framework since the original release under the name **Opalis Quick Integration Kit**. These changes make activities created using the CLI Wizard and activities developed using the Opalis API, as well as Integration Packs packed by the QIK Wizard incompatible with Orchestrator. In order to utilize these activities in Orchestrator, they must be converted to use the new framework. The manner in which these activities were created determines the process required to convert them:  
+ System Center Orchestrator Integration Toolkit has undergone some significant changes in the underlying framework since the original release under the name **Opalis Quick Integration Kit**. These changes make activities created using the CLI Wizard and activities developed using the Opalis API, and Integration Packs packed by the QIK Wizard incompatible with Orchestrator. In order to utilize these activities in Orchestrator, they must be converted to use the new framework. The manner in which these activities were created determines the process required to convert them:  
 
 |       Created by        |      Packaged by      |                                                 Process                                                 |
 | ----------------------- | --------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -153,6 +153,6 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 [ipwiz-migration]: integration-pack-wizard.md#qik-integration-pack-migration
 
 ## See Also  
- [Orchestrator documentation](../learn-about-orchestrator.md)   
- [Orchestrator Integration Packs](../list-of-orchestrator-integration-packs.md)      
- [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))
+- [Orchestrator documentation](../learn-about-orchestrator.md)
+- [Orchestrator Integration Packs](../list-of-orchestrator-integration-packs.md)
+- [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))

@@ -17,7 +17,7 @@ ms.custom: intro-installation
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ This article provides the system requirements and steps to install the Orchestra
 ::: moniker-end
 
 > [!IMPORTANT]
->  The install for the Orchestrator Integration Toolkit will not fail if Microsoft .NET Framework 3.5, Service Pack 1 is not installed, but different operations in the Command-Line Activity Wizard will fail if it is not present. Ensure that Microsoft .NET Framework 3.5, Service Pack 1 is installed before you install the OIT.  
+>  The install for the Orchestrator Integration Toolkit won't fail if Microsoft .NET Framework 3.5, Service Pack 1 is not installed, but different operations in the Command-Line Activity Wizard will fail if it isn't present. Ensure that Microsoft .NET Framework 3.5, Service Pack 1 is installed before you install the OIT.  
 
  The Orchestrator Integration Toolkit can also be installed with the Orchestrator server components. In that case, the system requirements for Orchestrator should be used.  
 
@@ -64,7 +64,7 @@ This article provides the system requirements and steps to install the Orchestra
 
 ::: moniker range="<=sc-orch-2019"
 
-1.  Download `System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe` from the [Microsoft download center](https://www.microsoft.com/download), and then run the installer. The welcome page appears.  
+1.  Download `System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe` from the [Microsoft download center](https://www.microsoft.com/download), and run the installer. The welcome page appears.  
 
 ::: moniker-end
 
@@ -74,36 +74,36 @@ This article provides the system requirements and steps to install the Orchestra
 
 ::: moniker-end
 
-2.  Click **Next**. The License Agreement page displays. To continue, you must select the checkbox next to **I accept the terms in the License Agreement**, then click **Next**.  
+2.  Select **Next**. The License Agreement page displays. To continue, you must select the checkbox next to **I accept the terms in the License Agreement** and select **Next**.  
 
-3.  At the User Information page, enter your name and organization information and click **Next**.  
+3.  At the User Information page, enter your name and organization information and select **Next**.  
 
-4.  On the next page, click **Install**. Note the security shield icon on the Install button. This indicates the installation will occur using elevated privileges.  
+4.  On the next page, select **Install**. Note the security shield icon on the Install button. This indicates the installation will occur using elevated privileges.  
 
-5.  A User Account Control dialog will appear notifying you of the elevated privileges. Click **Yes** to continue the installation. The installation should take no more than 60 seconds.  
+5.  A User Account Control dialog will appear notifying you of the elevated privileges. Select **Yes** to continue the installation. The installation should take no more than 60 seconds.  
 
-6.  When the installation is complete, click Finish to exit the setup wizard.  
+6.  When the installation is complete, select **Finish** to exit the setup wizard.  
 
 ## Results of Installing the Integration Toolkit  
  When you install the Orchestrator Integration Toolkit, there are files created on the computer that are used for creating and using Integration Packs.  
 
 ::: moniker range="<=sc-orch-2019"
 
-- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Lib`. For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
+- Integration Toolkit SDK Library – This assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Lib`. For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
 
-- Toolkit Integration Pack for Orchestrator – the System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`.
+- Toolkit Integration Pack for Orchestrator – The System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`.
 
-  Integration Toolkit Utilities, Wizards and Binary files – all the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard and all their dependent files are by default installed to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see [The Command-Line Activity Wizard][cli-wizard] and [The Integration Pack Wizard][ip-wizard].  
+  Integration Toolkit Utilities, Wizards, and Binary files – All the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard, and all their dependent files are by default installed to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see [The Command-Line Activity Wizard][cli-wizard] and [The Integration Pack Wizard][ip-wizard].  
 
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"
 
-- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Lib`. For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
+- Integration Toolkit SDK Library – This assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Lib`. For more information about using the SDK, see the [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10)).
 
-- Toolkit Integration Pack for Orchestrator – the System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`.
+- Toolkit Integration Pack for Orchestrator – The System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`.
 
-  Integration Toolkit Utilities, Wizards and Binary files – all the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard and all their dependent files are by default installed to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see [The Command-Line Activity Wizard][cli-wizard] and [The Integration Pack Wizard][ip-wizard].
+  Integration Toolkit Utilities, Wizards, and Binary files – All the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard, and all their dependent files are by default installed to `C:\Program Files\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see [The Command-Line Activity Wizard][cli-wizard] and [The Integration Pack Wizard][ip-wizard].
 
 ::: moniker-end
 
