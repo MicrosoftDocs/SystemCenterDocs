@@ -23,9 +23,9 @@ Currently, VMM supports update management feature for all new VMs with Windows o
 
 Follow these steps:
 
-1.	Create a profile for Azure Update management using steps detailed in the [Azure subscriptions article](azure-subscription.md).
-2.	In the **Create VM Template** wizard, select **Source Page** > select  **Use an existing VM template or a virtual hard disk stored in the library**.
-3.	On the **Extension** page, select **Enable Azure Update Management** and select the Azure Profile from the dropdown menu. Select **OK**.
+1.	Create a profile for Azure Update management using steps detailed in [Azure subscriptions article](azure-subscription.md).
+2.	In the **Create VM Template** wizard, select **Source Page** > **Use an existing VM template or a virtual hard disk stored in the library**.
+3.	On the **Extensions** page, select **Enable Azure Update Management** and select the Azure Profile from the dropdown menu. Select **OK**.
 
     ![Screenshot of the extension page.](./media/azure-profile/extensions-page.png)
 

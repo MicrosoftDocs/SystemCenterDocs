@@ -125,15 +125,15 @@ Here's what you need to create an Azure profile for Azure Update Management:
 ## Create Azure Profile
 
 Follow these steps:
-1.	In VMM console, go to **Library** > **Create** > **Azure Profile**
+1.	In VMM console, go to **Library** > **Create** > **Azure Profile**.
 
     ![Screenshot of the azure profile.](./media/azure-profile/azure-profile.png)
 
-2.  Under **Profile usage** dropdown menu, select **Azure VM Management** or **Azure update management**. Based on the selection, the next page seeks authentication information for the subscription ID entered.
+2.  Under **Profile usage** dropdown menu, select **Azure VM Management** or **Azure Update Management**. Based on the selection, the next page seeks authentication information for the subscription ID entered.
 
     > [!NOTE]
     > - You can share Azure profile with Self Service Users (SSUs) by adding them as members in the wizard.
-    > - You can view the list of all Azure profiles from **Library**> **Profiles** > **Azure Profiles**.
+    > - You can view the list of all Azure profiles from **Library** > **Profiles** > **Azure Profiles**.
     Select an Azure profile from the list to view detailed information of this profile under the **General Information** pane.
 
 
