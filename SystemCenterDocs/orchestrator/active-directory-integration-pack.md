@@ -29,7 +29,7 @@ Microsoft is committed to protecting your privacy while delivering software that
 
 ## System Requirements
 
-Before you can install the Integration Pack for Active Directory, you must first install and configure the following listed software. For more information on how to install and configure Orchestrator and Active Directory, refer to the respective product documentation.
+Before you can install the Integration Pack for Active Directory, you must first install and configure the following listed software. For more information on how to install and configure Orchestrator and Active Directory, see the respective product documentation.
 
 ::: moniker range="sc-orch-2022"
 -   System Center 2022 integration packs require System Center 2022 - Orchestrator
@@ -80,7 +80,7 @@ An Active Directory connection is a reusable link between Orchestrator and an Ac
 
 6.  In the **Configuration Domain Controller Name (FQDN)** box, enter the fully qualified name of the domain or domain controller for the connection.
 
-7.  In the **Configuration Default Parent Container** box, enter the default Distinguished Name for an Organizational Unit or Common Name. This default will be used when an activity such as Create User or Create Computer does not specify the **Container Distinguished Name**.<br>Examples of **Configuration Default Parent Container** include the following: **CN=Users, DC=mydomain, DC=com** and **OU=MyOU, DC=mydomain, DC=com**
+7.  In the **Configuration Default Parent Container** box, enter the default Distinguished Name for an Organizational Unit or Common Name. This default will be used when an activity such as Create User or Create Computer doesn't specify the **Container Distinguished Name**.<br>Examples of **Configuration Default Parent Container** include the following: **CN=Users, DC=mydomain, DC=com** and **OU=MyOU, DC=mydomain, DC=com**
 
 8.  Select **OK** to close the configuration dialog.
 

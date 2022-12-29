@@ -53,7 +53,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 ### Filter behavior
 
-The Monitor and Get activities use filters to determine the values that will invoke a runbook or retrieve activities. The property values of potential candidates are compared to the values of the filters to determine if the candidates meet the criteria. Then you can select one of the available methods of comparison. You are provided with an option to either match or not match the filter using each method. For example, the "Does not" version of a method finds the messages that don't match the filter to trigger the runbook.
+The Monitor and Get activities use filters to determine the values that will invoke a runbook or retrieve activities. The property values of potential candidates are compared to the values of the filters to determine if the candidates meet the criteria. Then you can select one of the available methods of comparison. You're provided with an option to either match or not match the filter using each method. For example, the "Does not" version of a method finds the messages that don't match the filter to trigger the runbook.
 
 -   **Equals**: The property of the message exactly matches the text or number specified in the filter.
 -   **Does not equal**: The property of the message doesn't exactly match the text or number specified in the filter.
@@ -108,7 +108,7 @@ An activity can subscribe to data only from the activities that are linked befor
 
 3.  Select the published data element that you want to use, and select **OK**.
 
-For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
+For a list of the data elements published by each activity, see the Published Data tables in the activities section. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
 
 ## Activities
 
