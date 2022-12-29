@@ -111,7 +111,11 @@ You must ensure that your server meets the minimum supported configurations for 
 7. On the **Configuration**, **Specify an installation option** page, select **Create the first Management server in a new management group**, type in a name for your management group and then click **Next**.
 
    > [!NOTE]
-   > After the management group name is set, it cannot be changed. The Management Group name cannot contain the following characters:, ( ) ^ ~ : ; . ! ? " , ' ` @ # % \ / * + = $ | & [ ] <>{}, and it cannot have a leading or trailing space. It is recommended that the Management Group name be unique within your organization if you plan to connect several management groups together.
+   > After the management group name is set, it cannot be changed. The Management Group name cannot contain the following characters:
+   > ```
+   > , ( ) ^ ~ : ; . ! ? " , ' ` @ # % \ / * + = $ | & [ ] <>{}
+   > ```
+   > Also, the Management Group name cannot have a leading or trailing space. It is recommended that the Management Group name be unique within your organization if you plan to connect several management groups together.
 
 8. On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood, and agree with the license terms**, and then click **Next**.
 
