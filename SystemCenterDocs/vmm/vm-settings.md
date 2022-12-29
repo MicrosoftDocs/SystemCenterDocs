@@ -46,8 +46,8 @@ You can add and remove virtual network adapters (vNICs) from VMs that are runnin
     - **Internal network**: Select if you want to connect to an isolated internal network that enables communication among VMs on the same host. Virtual machines attached to the internal virtual network can't communicate with the host, with any other physical computers on the host's LAN, or with the Internet.
     - **External network**: Select to specify that a virtual machine created by using this hardware profile will be connected to a physical network adapter on its host. Virtual machines attached to a physical network adapter can communicate with any physical or virtual computer that the host can communicate with and with any resources available on the intranet and over the Internet that the host computer can access.
     - **Ethernet (MAC) address**: A virtual MAC address on virtual machines uniquely identifies each computer on the same subnet. Select one of the following options:
-        - **Dynamic**. Select this option if you want to enable a dynamic MAC address for a virtual machine.
-        - **Static**. Select this option if you want to specify a static MAC address for a virtual machine. Type a static MAC address in the field provided.
+        - **Dynamic**: Select this option if you want to enable a dynamic MAC address for a virtual machine.
+        - **Static**: Select this option if you want to specify a static MAC address for a virtual machine. Type a static MAC address in the field provided.
         - **Trunk Mode**: Select to enable Trunk mode.
 
 ::: moniker range="sc-vmm-2019"
@@ -69,7 +69,7 @@ See the following section for enabling Trunk mode through console; see [Set-SCVi
 
 To configure trunk mode in VMM, follow these steps:
 
-1. Under VM **Properties**, navigate to **Configure Hardware Settings** > **Network Adapter**, and then select **Trunk mode** to enable trunk mode for VM vNICs.
+1. Under VM **Properties**, navigate to **Configure Hardware Settings** > **Network Adapter**, and select **Trunk mode** to enable trunk mode for VM vNICs.
 2. Select the VM networks (multiple vLANs) through which you want to direct the VM network traffic.
    ![Screenshot of Trunk mode.](media/vm-settings/configure-trunk-mode.png)
 3. The VM Network that is selected as part of *Connected to a VM Network* workflow should also be made the native VLAN. You can't change the native VLAN later, as this is based on the VM network that was selected as part of *Connected to a VM Network* workflow.
@@ -137,7 +137,7 @@ PS C:\> Set-SCVirtualMachine -VM $VM -DynamicMemoryEnabled $True -MemoryMB 1024 
 
 ## Add a servicing window to a VM
 
-You can set up a servicing window for a VM or service so that you can maintain it outside the VMM console. You [set up the window](hyper-v-service.md#set-up-a-servicing-window), and then assign it to the VM properties.
+You can set up a servicing window for a VM or service so that you can maintain it outside the VMM console. You [set up the window](hyper-v-service.md#set-up-a-servicing-window), and assign it to the VM properties.
 
 
 ## Create a production checkpoint for a VM
@@ -212,7 +212,7 @@ You can configure availability sets for standalone VMs in a cluster, or in avail
 2.  On the **Hardware Configuration** tab, scroll down to **Advanced** and under it, select **Availability**.
 3.  Confirm that **Make this virtual machine highly available** has the intended setting. (On a deployed virtual machine, the setting can't be changed because it depends on whether the virtual machine is deployed on a host cluster.)
 4.  Under **Availability sets**, select **Manage availability sets**.
-5.  Select the name of an availability set, and use the controls to add or remove the set. Repeat this action until all of the intended availability sets appear in the **Assigned properties** list. To create a new availability set, select the **Create** button, provide a name for the set, and then select **OK**.
+5.  Select the name of an availability set, and use the controls to add or remove the set. Repeat this action until all of the intended availability sets appear in the **Assigned properties** list. To create a new availability set, select the **Create** button, provide a name for the set, and select **OK**.
 6.  To verify the setting for a deployed virtual machine, in the listing for the virtual machine, view the name under **Availability Set Name**.
 
 For virtual machines that have been deployed on a host cluster, another way to configure this setting is to use Windows PowerShell commands for failover clustering. In this context, the setting appears in the [Get-ClusterGroup](/powershell/module/failoverclusters/get-clustergroup) as **AntiAffinityClassNames**.
@@ -241,10 +241,10 @@ VMM includes resource throttling features, such as processor (CPU) and memory th
 1. In the virtual machine > **Properties** > **Advanced**, select **CPU Priority**.
 2. Select a priority value for the virtual machine. These values specify how the CPU resources are balanced between virtual machines and correspond to the relative weight value in Hyper-V:
 
-   - High—Relative weight value of 200
-   - Normal—Relative weight value of 100
-   - Low—Relative weight value of 50
-   - Custom—Relative weight values that are supported are between 1 and 10000
+   - High - Relative weight value of 200
+   - Normal - Relative weight value of 100
+   - Low - Relative weight value of 50
+   - Custom - Relative weight values that are supported are between 1 and 10000
 
 3. In **Reserve CPU cycles (%)**, specify the percentage of the CPU resources on one logical processor that should be reserved for a virtual machine. This is useful when a virtual machine runs applications that are particularly CPU-intensive, and you want to ensure a minimal level of CPU resources. A zero setting indicates that no specific CPU percentage is reserved.
 4. In **Limit CPU cycles (%)**, specify the maximum percentage of the CPU resources on one logical processor that the virtual machine should consume. The virtual machine won't be allocated more than this percentage.

@@ -44,7 +44,7 @@ You set up self-service in VMM as follows:
 
 1.  Select **Settings** > **Create** > **Create User Role**.
 2.  In the **Create User Role Wizard**, enter a name and optional description for the role, and then select **Next**.
-3.  In **Profile** page, select **Self-Service User**, and then select **Next**.
+3.  In **Profile** page, select **Self-Service User**, and select **Next**.
 4.  In **Members**, select **Add** to add user accounts and Active Directory groups to the role. Then select **Next**.
 5.  In **Scope**, select at least one private cloud that members of the role will use. Then select **Next**.
 6.  In **Quotas**, set quota for each private cloud. Each quota sets an individual limit for each member of the user role. If you want all role members to share overall quotas, create a security group in Active Directory, and assign that group to the user role. Supported quota types include:
@@ -70,8 +70,8 @@ You set up self-service in VMM as follows:
     - **Remote connection**: Users can connect to their VMs from the VMM console or App Controller.
     - **Remove/Save**: Users can remove or save their VMs.
     - **Share**: Users can share resources that they own with other self-service user roles. Sharable resources include hardware profiles, operating system profiles, application profiles, SQL Server profiles, virtual machine templates, virtual machines, service templates, and services. A self-service user must be the owner of a resource to share it. For a user role to use the resources, it must have the **Receive** action.
-    **Start/Stop**: Users can start and stop their own VMs and services.
-    **Store and redeploy**: Users can store their own virtual machines in the VMM library, and redeploy those virtual machines. Virtual machines stored in the library don't count against a user's virtual machine quota. VMM doesn't support storing services.
+    - **Start/Stop**: Users can start and stop their own VMs and services.
+    - **Store and redeploy**: Users can store their own virtual machines in the VMM library, and redeploy those virtual machines. Virtual machines stored in the library don't count against a user's virtual machine quota. VMM doesn't support storing services.
 
 10. If the **Run As accounts** page appears, add Run As accounts that you want the members of this role to be able to use in the actions to create VMs and services. Then select **Next**.
 11. In **Summary** page, review the settings, and select **Finish** to create the role. Verify the role appears in **Settings** > **Security** > **User Roles**.
@@ -120,7 +120,7 @@ Configure a user data path for the self-service user role, and grant read/write 
     Each time you update and resequence an application by using Server App-V, you'll need to store the new application package in a separate folder.
 
 5. To enable members of the self-service user role to access the resources and upload their own resources to the folder, grant all members read/write permission on the folder.
-6. If needed, share the folder that contains user data for all self-service user roles, and then add the share to the VMM library. To be assigned to a self-service user role, a user data path must be on a library share.
+6. If needed, share the folder that contains user data for all self-service user roles, and add the share to the VMM library. To be assigned to a self-service user role, a user data path must be on a library share.
 7. Configure the path for a self-service user role as follows:
 
     1. In **Settings** > **Security** > **User Roles**, select the self-service user role.
@@ -139,5 +139,5 @@ Enable resource sharing as follows:
 
 1. Select **Settings** > **Security** > User Roles, and select the self-service user role for which you want to enable resource sharing.
 2. In the **User Role** group, select **Properties**.
-3. In **Actions**, select **Share**, and then select **OK**. Members of this self-service user role can now share their own resources with members of any self-service user role that has the **Receive** action assigned to it.
+3. In **Actions**, select **Share**, and select **OK**. Members of this self-service user role can now share their own resources with members of any self-service user role that has the **Receive** action assigned to it.
 3. To configure a user role with the **Receive** action, select the role > **Properties** >  **Action**, and select **Receive**.

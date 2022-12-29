@@ -27,11 +27,11 @@ Self-service users can interact with VMM to deploy virtual machines and services
 
 ## Create and deploy virtual machines
 
-- [Learn about](vm-existing-disk.md) creating a VM from an existing VHD
-- [Learn about](vm-blank-disk.md) creating a VM from a blank VHD
-- [Learn about](vm-clone.md) cloning an existing VM
-- [Learn about](vm-template.md) deploying VMs from VM templates
-- [Learn about](vm-linux.md) deploying VMs running Linux
+- [Learn about](vm-existing-disk.md) creating a VM from an existing VHD.
+- [Learn about](vm-blank-disk.md) creating a VM from a blank VHD.
+- [Learn about](vm-clone.md) cloning an existing VM.
+- [Learn about](vm-template.md) deploying VMs from VM templates.
+- [Learn about](vm-linux.md) deploying VMs running Linux.
 
 ## Create resources in the VMM library
 
@@ -81,7 +81,7 @@ Import resources as follows:
 ### Export library resources
 
 1. Select **Library** > **Export** > **Export Physical Resource**.
-2. Select **Add** and select the physical resources you want to export. Then select **OK**.
+2. Select **Add**, select the physical resources you want to export, and select **OK**.
 3. In **Specify a destination for the export files**, select **Browse** and select a destination folder. Then select **OK**.
 4. When you're finished, select **Export**.
 
