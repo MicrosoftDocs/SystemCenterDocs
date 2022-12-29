@@ -67,11 +67,11 @@ The following is a list of the available integration packs and the information f
 
 The following is a list of the available integration packs and the information for each.  
 
- [Active Directory](active-directory-integration-pack.md)    
+ [Active Directory](active-directory-integration-pack.md)
 
  [Exchange Administrator](exchange-admin-integration-pack.md)  
 
- [Exchange Users](exchange-users-integration-pack.md)   
+ [Exchange Users](exchange-users-integration-pack.md)
 
  [REST](representational-state-transfer-rest-integration-pack.md)  
 

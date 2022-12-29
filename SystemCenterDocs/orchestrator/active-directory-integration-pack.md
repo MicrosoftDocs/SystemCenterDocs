@@ -25,11 +25,11 @@ robots: noindex
 
 The Integration Pack for Active Directory is an add-on for System Center - Orchestrator that enables you to automate common Active Directory management functions.
 
-Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more Orchestrator-related privacy information, see the [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more Orchestrator-related privacy information, see the [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System Requirements
 
-Before you can install the Integration Pack for Active Directory, you must first install and configure the following listed software. For more information about how to install and configure Orchestrator and Active Directory, refer to the respective product documentation.
+Before you can install the Integration Pack for Active Directory, you must first install and configure the following listed software. For more information on how to install and configure Orchestrator and Active Directory, refer to the respective product documentation.
 
 ::: moniker range="sc-orch-2022"
 -   System Center 2022 integration packs require System Center 2022 - Orchestrator
@@ -46,7 +46,7 @@ Before you can install the Integration Pack for Active Directory, you must first
 
 ::: moniker range="<=sc-orch-2019"
 
-- To download the Orchestrator 2016  integration pack, see [Active Directory Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54098)
+- To download the Orchestrator 2016 integration pack, see [Active Directory Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54098)
 
 - To download the Orchestrator 2019 integration pack, see [Active Directory Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58111)
 
@@ -68,22 +68,22 @@ An Active Directory connection is a reusable link between Orchestrator and an Ac
 
 #### To set up an Active Directory connection
 
-1.  In the Runbook Designer, click **Options**, and then click **Active Directory**. The **Active Directory** dialog box appears.
+1.  In the Runbook Designer, select **Options**, and then select **Active Directory**. The **Active Directory** dialog appears.
 
-2.  On the **Configurations** tab, click **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
+2.  On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog appears.
 
-3.  In the **Name** box, enter a name for the connection. This could be the name of the *Active Directory* domain, or a descriptive name to distinguish the type of connection.
+3.  In the **Name** box, enter a name for the connection. This could be the name of the *Active Directory* domain or a descriptive name to distinguish the type of connection.
 
-4.  Click the ellipsis button (...) next to the **Type** box and select **Microsoft Active Directory Domain Configuration**. Click **OK**.
+4.  Select the ellipsis button (...) next to the **Type** box and select **Microsoft Active Directory Domain Configuration**. Select **OK**.
 
-5.  In the **Configuration User Name** and **Configuration Password** boxes, type the credentials that Orchestrator will use to log on to *Active Directory*. This user account must have the authority to perform the actions in any runbook where the connection is used.
+5.  In the **Configuration User Name** and **Configuration Password** boxes, enter the credentials that Orchestrator will use to sign in to *Active Directory*. This user account must have the authority to perform the actions in any runbook where the connection is used.
 
-6.  In the **Configuration Domain Controller Name (FQDN)** box type the fully qualified name of the domain or domain controller for the connection.
+6.  In the **Configuration Domain Controller Name (FQDN)** box, enter the fully qualified name of the domain or domain controller for the connection.
 
-7.  In the **Configuration Default Parent Container** box, type the default Distinguished Name for an Organizational Unit or Common Name. This default will be used when an activity such as Create User or Create Computer does not specify the **Container Distinguished Name**.<br>Examples of **Configuration Default Parent Container** include the following: **CN=Users, DC=mydomain, DC=com** and **OU=MyOU, DC=mydomain, DC=com**
+7.  In the **Configuration Default Parent Container** box, enter the default Distinguished Name for an Organizational Unit or Common Name. This default will be used when an activity such as Create User or Create Computer does not specify the **Container Distinguished Name**.<br>Examples of **Configuration Default Parent Container** include the following: **CN=Users, DC=mydomain, DC=com** and **OU=MyOU, DC=mydomain, DC=com**
 
-8.  Click **OK** to close the configuration dialog box.
+8.  Select **OK** to close the configuration dialog.
 
 9.  Add additional connections if applicable.
 
-10. Click **Finish**.
+10. Select **Finish**.
