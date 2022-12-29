@@ -21,7 +21,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -64,8 +64,8 @@ The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Wi
 |--------------|--------------------------------|  
 |**Name**|Enter the **Name** of the published data. This will be the name that appears when other activities subscribe to the data published by the Run .Net Script activity.|  
 |**Type**|You can select **Date/Time**, **Integer**, or **String**. If the type you want is not available, select **String**. Use the **ToString** method of the activity to assign a value to this published data.|  
-|**Collection**|If your data is multi-valued data, select **Collection**. When using a collection, you must use the **Add** method to add items to the collection. If you are not using the collection, you can use the assignment operator **(=)** to assign the value.|  
-|**Variable name**|Use unique naming to make sure that your variable name does not collide with existing variables within your script or with classes and keywords available in .NET. We recommend prefixing variables with “OPD_”. For example, if you want to name your variable “myString”, you would name it “OPD_myString”.<br /><br /> The Run .Net Script activity will automatically create a .NET Property for this item. If this variable is a collection it will be created using a List\<T>, where T is the **Type** that you selected. However, if it is not a collection, the property will be created using a **String**, **Integer**, or **Date/Time** based on the **Type** that you selected.|  
+|**Collection**|If your data is multi-valued data, select **Collection**. When using a collection, you must use the **Add** method to add items to the collection. If you aren't using the collection, you can use the assignment operator **(=)** to assign the value.|  
+|**Variable name**|Use unique naming to ensure that your variable name does not collide with existing variables within your script or with classes and keywords available in .NET. We recommend prefixing variables with “OPD_”. For example, if you want to name your variable “myString”, you would name it “OPD_myString”.<br /><br /> The Run .Net Script activity will automatically create a .NET Property for this item. If this variable is a collection, it will be created using a List\<T>, where T is the **Type** that you selected. However, if it isn't a collection, the property will be created using a **String**, **Integer**, or **Date/Time** based on the **Type** that you selected.|  
 
 ### Published Data  
 
@@ -83,7 +83,7 @@ The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Wi
 You can run 64-bit Windows PowerShell in Orchestrator *Run.Net Script* activity. Use the following steps:
 
 1.	Create a Run .Net Script activity from the **System activities group**.
-2.	In **Details** > **Type**, select  **PowerShell** as the language.
+2.	In **Details** > **Type**, select **PowerShell** as the language.
 3.	In  **Script**, enclose your PowerShell commands in the following code:  
 
     ```
@@ -91,9 +91,9 @@ You can run 64-bit Windows PowerShell in Orchestrator *Run.Net Script* activity.
 
     ```
 
-4.	Click **Finish**.
+4.	Select **Finish**.
 
-    ![.Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script.png)
+    ![Screenshot of Run .Net Script Activity.](../standard-activities/media/run-net-script-activity/run-net-script.png)
 
 >[!NOTE]
 >
@@ -112,4 +112,4 @@ $PSVersion = $Result[1]
 )
 ```
 
-![View .Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script-ps-version.png)
+![Screenshot of View .Net Script Activity.](../standard-activities/media/run-net-script-activity/run-net-script-ps-version.png)
