@@ -23,14 +23,14 @@ ms.custom: intro-installation
 
 ::: moniker range="sc-orch-2022"
 
-A complete Orchestrator installation includes
+A complete Orchestrator installation includes:
 
-- a management server, 
-- one or more runbook servers,
-- a SQL Server for hosting the Orchestrator database,
-- a web server for hosting the Orchestrator web API service, 
-- a server for hosting the Runbook Designer and Runbook Tester,
-- a web server for hosting the Orchestration Console.
+- a management server
+- one or more runbook servers
+- a SQL Server for hosting the Orchestrator database
+- a web server for hosting the Orchestrator web API service
+- a server for hosting the Runbook Designer and Runbook Tester
+- a web server for hosting the Orchestration Console
 
 It's possible to install all these roles and components on a single computer, but it's more common to distribute the roles across several computers or virtual machines.
 
@@ -55,21 +55,20 @@ This article provides detailed installation instructions for the various Orchest
 
 2.  On the main page of the wizard, select **Install**.
 
-3.  On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
+3.  On the **Product registration** page, provide the name and company for the product registration, and select **Next**.
 
     > [!NOTE]
     > For this evaluation release, a product key isn't required.
 
-4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
+4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms and select **Next**.
 
-    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and then select **Next**.
+    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and select **Next**.
 
-5.  On the **Select features to install** page, ensure that **Management Server** is the only feature selected and then select **Next**.
+5.  On the **Select features to install** page, ensure that **Management Server** is the only feature selected and select **Next**.
 
 6.  Your computer is checked for required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next**, and proceed to the next step.
 
-   If a prerequisite isn't met, a page displays the information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
-
+If a prerequisite isn't met, a page displays the information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
 1. Review the items that didn't pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
@@ -80,25 +79,25 @@ This article provides detailed installation instructions for the various Orchest
 
 3. Select **Next** to continue.
 
-4. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. Select **Test** to verify the account credentials. If the credentials are accepted, then select **Next**.
+4. On the **Configure the service account** page, enter the username and password for the Orchestrator service account. Select **Test** to verify the account credentials. If the credentials are accepted, select **Next**.
 
 5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-6. On the **Configure the database** page, select a database or create a new database, and then select **Next**.
+6. On the **Configure the database** page, select a database or create a new database, and select **Next**.
 
-7. On the **Configure Orchestrator users group** page, accept the default configuration or enter the name of the Active Directory user group to manage Orchestrator, and then select **Next**.
+7. On the **Configure Orchestrator users group** page, accept the default configuration or enter the name of the Active Directory user group to manage Orchestrator, and select **Next**.
 
-8. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then select **Next**.
+8. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and select **Next**.
 
-9. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
+9. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and select **Next**.
 
-10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
+10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and select **Next**.
 
-11. Review the **Installation summary** page, and then select **Install**.
+11. Review the **Installation summary** page, and select **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-12. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and then select **Close** to complete the installation.
+12. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and select **Close** to complete the installation.
 
 ## Install Orchestrator runbook server
 
@@ -111,14 +110,14 @@ This article provides detailed installation instructions for the various Orchest
 
 2. On the main setup page, under **Standalone installations**, select **Runbook server**.
 
-3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
+3. On the **Product registration** page, provide the name and company for the product registration and select **Next**.
 
    > [!NOTE]
    > For this evaluation release, a product key isn't required.
 
-4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
+4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and select **Next**.
 
-   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and then select **Next**.
+   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and select **Next**.
 
 5. Your computer is checked for the required hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
@@ -137,19 +136,19 @@ This article provides detailed installation instructions for the various Orchest
 
 7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-8. On the **Configure the database** page, select the Orchestrator database for your deployment, and then select **Next**.
+8. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
 
-9. On the **Select the installation location** page, verify the installation location for Orchestrator, and then select **Next**.
+9. On the **Select the installation location** page, verify the installation location for Orchestrator, and select **Next**.
 
-10. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
+10. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and select **Next**.
 
-11. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
+11. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and select **Next**.
 
-12. Review the **Installation summary** page, and then select **Install**.
+12. Review the **Installation summary** page, and select **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then select **Close** to complete the installation.
+13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and select **Close** to complete the installation.
 
 ## Install Orchestrator Web API service
 
@@ -165,14 +164,14 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 2. On the main setup page, under **Standalone installations**, select **Web API Service**.
 
-3. On the **Product registration** page, provide the name and company for the product registration and then select **Next**.
+3. On the **Product registration** page, provide the name and company for the product registration and select **Next**.
 
    > [!NOTE]
    > For this evaluation release, a product key isn't required.
 
-4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
+4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and select **Next**.
 
-   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and then select **Next**.
+   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and select **Next**.
 
 5. Your computer is checked for required the hardware and software. If your computer meets all the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
@@ -190,17 +189,17 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. If Windows Authentication is selected, the service account credentials from previous steps are used to connect to the database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-8. On the **Configure the database** page, select the Orchestrator database for your deployment, and then select **Next**.
+8. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
 
-9. On the **Configure CORS (Cross-Origin Resource Sharing) and the port for the Web API** page, verify the port numbers for the Orchestrator Web API service and the URL of the Orchestration console, and then select **Next**.
+9. On the **Configure CORS (Cross-Origin Resource Sharing) and the port for the Web API** page, verify the port numbers for the Orchestrator Web API service and the URL of the Orchestration console, and select **Next**.
 
-10. On the **Select the installation location** page, verify the installation location for Orchestrator, and then select **Next**.
+10. On the **Select the installation location** page, verify the installation location for Orchestrator, and select **Next**.
 
-11. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
+11. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and select **Next**.
 
-12. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
+12. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and select **Next**.
 
-13. Review the **Installation summary** page, and then select **Install**.
+13. Review the **Installation summary** page, and select **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
@@ -225,7 +224,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
     If a prerequisite isn't met, a page displays information about the prerequisite that hasn't been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-    Orchestration Console requires IIS URL Rewrite module, download from here.
+    Orchestration Console requires IIS URL Rewrite module; download from here.
 
 6.	On the **Configure the service account** page, enter the username and password for the Orchestrator service account. The Console will run under an IIS App Pool with this identity. Select **Test to verify the account credentials**. If the credentials are accepted, select **Next**.
 
@@ -238,7 +237,7 @@ Since Orchestrator 2022, the Web API service and Orchestration Console can be in
 
 9. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates and select **Next**.
 
-10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in Error Reporting, and then select **Next**.
+10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in Error Reporting, and select **Next**.
 
 11. Review the **Installation summary** page and select **Install**.
 
@@ -256,14 +255,14 @@ The **Installing features** page appears and displays the installation progress.
 
 2.  On the main wizard page, select **Runbook Designer**.
 
-3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
+3. On the **Product registration** page, provide the name and company for the product registration, and select **Next**.
 
-      > [!NOTE]
-      > For this evaluation release, a product key isn't required.
+   > [!NOTE]
+   > For this evaluation release, a product key isn't required.
 
-4. On the **Please read this License Terms** page, review, and accept the Microsoft Software License Terms, and then select **Next**.
+4. On the **Please read this License Terms** page, review, and accept the Microsoft Software License Terms, and select **Next**.
 
-   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then select **Next**.
+   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice and select **Next**.
 
 5. Your computer is checked for the required hardware and software. If your computer meets all the requirements, proceed to the next step.
 
@@ -275,17 +274,17 @@ The **Installing features** page appears and displays the installation progress.
 
    3.  Select **Next** to continue.
 
-6. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then select
+6. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and select **Next**.
 
-7. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
+7. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and select **Next**.
 
-8. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
+8. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and select **Next**.
 
-9. Review the **Installation summary** page, and then select **Install**.
+9. Review the **Installation summary** page, and select **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-10. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then select **Close** to complete the installation.
+10. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and select **Close** to complete the installation.
 
 
 ## Connect a Runbook Designer to a management server
@@ -295,17 +294,17 @@ The **Installing features** page appears and displays the installation progress.
     > [!NOTE]
     > If the Runbook Designer is connected to another management server, the **Connect to a server** icon is disabled. Select the **Disconnect** icon before you connect to a different management server.
 
-2.  In **System Center Orchestrator Connection**, enter the name of the server that hosts your Orchestrator management server, and then select **OK**.
+2.  In **System Center Orchestrator Connection**, enter the name of the server that hosts your Orchestrator management server, and select **OK**.
 
 ## Enable network discovery
 
-1.  On the desktop of your computer running Windows server, select **Start**, select **Control Panel**, select **Network and Internet**, select **Network and Sharing Center**, select **Choose Home group and Sharing Options**, and then select **Change advanced sharing settings**.
+1.  On the desktop of your computer running Windows server, select **Start**, select **Control Panel**, select **Network and Internet**, select **Network and Sharing Center**, select **Choose Home group and Sharing Options**, and select **Change advanced sharing settings**.
 
 2.  To change the **Domain** profile, if needed, select the **Arrow** icon to expand the section options and make any necessary changes.
 
-3.  Select **Turn on network discovery**, and then select **Save changes**.
+3.  Select **Turn on network discovery**, and select **Save changes**.
 
-    If you are prompted for an administrator password or confirmation, type the password or provide confirmation.
+    If you are prompted for an administrator password or confirmation, enter the password or provide confirmation.
 
 ## Install from the command prompt
 
@@ -347,7 +346,7 @@ The properties for a runbook server include an optional description and the acco
 
 1.  In the **Connections**  pane, select the Runbook Servers folder. In the right pane, right-click the runbook server to select **Properties**.  
 
-2.  If you want to add or change the **Description** box, type a description for this runbook server, and then select **Finish**.
+2.  If you want to add or change the **Description** box, enter a description for this runbook server, and select **Finish**.
 
 
 ## Troubleshoot your installation
@@ -436,16 +435,16 @@ This article provides detailed installation instructions for the various Orchest
     > [!WARNING]
     > If Microsoft .NET Framework 3.5 Service Pack 1 isn't installed on your computer, a dialog appears asking if you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
 
-3.  On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
+3.  On the **Product registration** page, provide the name and company for the product registration, and select **Next**.
 
     > [!NOTE]
     > For this evaluation release, a product key isn't required.
 
-4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
+4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and select **Next**.
 
-    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then select **Next**.
+    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and select **Next**.
 
-5.  On the **Select features to install** page, ensure that **Management Server** is the only feature selected, and then select **Next**.
+5.  On the **Select features to install** page, ensure that **Management Server** is the only feature selected, and select **Next**.
 
 6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
@@ -476,21 +475,21 @@ This article provides detailed installation instructions for the various Orchest
 
 5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-6. On the **Configure the database** page, select a database or create a new database, and then select **Next**.
+6. On the **Configure the database** page, select a database or create a new database, and select **Next**.
 
-7. On the **Configure Orchestrator users group** page, accept the default configuration or enter the name of the Active Directory user group to manage Orchestrator, and then select **Next**.
+7. On the **Configure Orchestrator users group** page, accept the default configuration or enter the name of the Active Directory user group to manage Orchestrator, and select **Next**.
 
-8. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then select **Next**.
+8. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and select **Next**.
 
-9. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
+9. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and select **Next**.
 
-10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
+10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and select **Next**.
 
-11. Review the **Installation summary** page, and then select **Install**.
+11. Review the **Installation summary** page, and select **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-12. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and then select **Close** to complete the installation.
+12. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and select **Close** to complete the installation.
 
 ## To install an Orchestrator runbook server
 
@@ -506,14 +505,14 @@ This article provides detailed installation instructions for the various Orchest
    > [!WARNING]
    > If Microsoft .NET Framework 3.5 Service Pack 1 isn't installed on your computer, a dialog appears asking whether you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
 
-3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
+3. On the **Product registration** page, provide the name and company for the product registration and select **Next**.
 
    > [!NOTE]
    > For this evaluation release, a product key isn't required.
 
-4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
+4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and select **Next**.
 
-   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then select **Next**.
+   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and select **Next**.
 
 5. Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
@@ -543,19 +542,19 @@ This article provides detailed installation instructions for the various Orchest
 
 7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-8. On the **Configure the database** page, select the Orchestrator database for your deployment, and then select **Next**.
+8. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
 
-9. On the **Select the installation location** page, verify the installation location for Orchestrator, and then select **Next**.
+9. On the **Select the installation location** page, verify the installation location for Orchestrator, and select **Next**.
 
-10. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
+10. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and select **Next**.
 
-11. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
+11. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and select **Next**.
 
-12. Review the **Installation summary** page, and then select **Install**.
+12. Review the **Installation summary** page, and select **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then select **Close** to complete the installation.
+13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and select **Close** to complete the installation.
 
 ## To install the Orchestrator web service
 
@@ -572,14 +571,14 @@ This article provides detailed installation instructions for the various Orchest
    > [!WARNING]
    > If Microsoft .NET Framework 3.5 Service Pack 1 isn't installed on your computer, a dialog appears asking if you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
 
-3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
+3. On the **Product registration** page, provide the name and company for the product registration, and select **Next**.
 
    > [!NOTE]
    > For this evaluation release, a product key isn't required.
 
-4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
+4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and select **Next**.
 
-   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then select **Next**.
+   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and select **Next**.
 
 5. Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Select **Next** and proceed to the next step.
 
@@ -598,21 +597,21 @@ This article provides detailed installation instructions for the various Orchest
 
 7. On the **Configure the database server** page, enter the name of the database server associated with your Orchestrator management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Select **Test Database Connection** to verify the account credentials. If the credentials are accepted, select **Next**.
 
-8. On the **Configure the database** page, select the Orchestrator database for your deployment, and then select **Next**.
+8. On the **Configure the database** page, select the Orchestrator database for your deployment, and select **Next**.
 
-9. On the **Configure the port for the web service** page, verify the port numbers for the Orchestrator web service and the Orchestration console, and then select **Next**.
+9. On the **Configure the port for the web service** page, verify the port numbers for the Orchestrator web service and the Orchestration console, and select **Next**.
 
-10. On the **Select the installation location** page, verify the installation location for Orchestrator, and then select **Next**.
+10. On the **Select the installation location** page, verify the installation location for Orchestrator, and select **Next**.
 
-11. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
+11. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and select **Next**.
 
-12. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
+12. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and select **Next**.
 
-13. Review the **Installation summary** page, and then select **Install**.
+13. Review the **Installation summary** page, and select **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-14. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then select **Close** to complete the installation.
+14. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and select **Close** to complete the installation.
 
 ## To install the Orchestrator Runbook Designer on a single computer
 
@@ -629,14 +628,14 @@ This article provides detailed installation instructions for the various Orchest
     > [!WARNING]
     > If Microsoft .NET Framework 3.5 Service Pack 1 isn't installed on your computer, a dialog appears asking if you want to install .NET Framework 3.5 SP1. Select **Yes** to proceed with the installation.
 
-3. On the **Product registration** page, provide the name and company for the product registration, and then select **Next**.
+3. On the **Product registration** page, provide the name and company for the product registration, and select **Next**.
 
       > [!NOTE]
       > For this evaluation release, a product key isn't required.
 
-4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then select **Next**.
+4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and select **Next**.
 
-5. On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then select **Next**.
+5. On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and select **Next**.
 
 6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, proceed to the next step.
 
@@ -659,17 +658,17 @@ This article provides detailed installation instructions for the various Orchest
 
    3.  Select **Next** to continue.
 
-4. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then select
+4. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and select
 
-5. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then select **Next**.
+5. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and select **Next**.
 
-6. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then select **Next**.
+6. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and select **Next**.
 
-7. Review the **Installation summary** page, and then select **Install**.
+7. Review the **Installation summary** page, and select **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-8. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then select **Close** to complete the installation.
+8. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and select **Close** to complete the installation.
 
 
 ## To connect a Runbook Designer to a management server
@@ -679,7 +678,7 @@ This article provides detailed installation instructions for the various Orchest
     > [!NOTE]
     > If the Runbook Designer is connected to another management server, the **Connect to a server** icon is disabled. Select the **Disconnect** icon before you connect to a different management server.
 
-2.  In **System Center Orchestrator Connection**, enter the name of the server that hosts your Orchestrator management server, and then select **OK**.
+2.  In **System Center Orchestrator Connection**, enter the name of the server that hosts your Orchestrator management server, and select **OK**.
 
 ## To enable network discovery
 
@@ -689,7 +688,7 @@ This article provides detailed installation instructions for the various Orchest
 
 3.  Select **Turn on network discovery**, and then select **Save changes**.
 
-    If you are prompted for an administrator password or confirmation, type the password or provide confirmation.
+    If you are prompted for an administrator password or confirmation, enter the password or provide confirmation.
 
 ## To install from the command prompt
 
@@ -729,7 +728,7 @@ The properties for a runbook server include an optional description and the acco
 
 1.  In the **Connections**  pane, select the Runbook Servers folder. In the right pane, right-click the runbook server to select **Properties**.  
 
-2.  If you want to add or change the **Description** box, type a description for this runbook server, and then select **Finish**.
+2.  If you want to add or change the **Description** box, enter a description for this runbook server, and select **Finish**.
 
 
 ## Troubleshoot your installation
@@ -785,7 +784,7 @@ For more information about adding firewall rules, see [Add or Edit a Firewall Ru
 ### <a name="BKMK_RunbookServicefailstostart"></a>RunbookService fails to start after computer reboot  
 When you reboot your runbook server, the RunbookService attempts to connect to the orchestration database. If the database isn't available, the RunbookService fails. The event log message is **This computer was unable to communicate with the computer providing the server.**. Typically, this can occur when the SQL server and the runbook server are installed on the same computer.  
 
-To solve this problem. you can manually start the RunbookService, or configure the RunbookService to make multiple attempts during start-up to connect to database before failing.  
+To solve this problem, you can manually start the RunbookService, or configure the RunbookService to make multiple attempts during start-up to connect to database before failing.  
 
 ### Can't restart runbook service if you uninstall with an account without administrator permissions  
 If you attempt to uninstall Orchestrator while signed in with an account that is a member of OrchestratorSystemGroup but isn't an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the service fails because the user account doesn't have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.  

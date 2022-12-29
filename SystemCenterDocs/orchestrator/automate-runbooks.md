@@ -48,11 +48,11 @@ Use the following procedures to create, insert, and organize variables.
 
 2.  Select and hold the **Variables** folder or a subfolder of the **Variables** folder to select **New**, and then select **Variable** to open the **New Variable** dialog.  
 
-3.  In the **Name** box, type a name for the variable.  
+3.  In the **Name** box, enter a name for the variable.  
 
-4.  In the **Description** box, type a description that explains the purpose of the variable.  
+4.  In the **Description** box, enter a description that explains the purpose of the variable.  
 
-5.  In the **Value** box, type the value of the variable. This value replaces the placeholder in those activities where the variable is inserted.  
+5.  In the **Value** box, enter the value of the variable. This value replaces the placeholder in those activities where the variable is inserted.  
 
 6.  If you want the variable to be encrypted \(for example, to store a password for use in other runbook activities\), select the **Encrypted Variable** check box.  
 
@@ -88,7 +88,7 @@ You can specify special formats of variables to provide dynamic information to y
 
 `NOW()`: When the variable is resolved, it's set to the current date and time. You can pass arguments to this function to return specific portions of the date or time. For example, `NOW(hour)` returns the current hour. The following are the valid arguments for the `NOW()` function: day, dayofweek, dayofyear, month, year, hour, minute, second, millisecond.  
 
-`%ENVVAR%`: This variable returns the value of the environment variable between the percent `(\)` symbols. The environment variable is based on the runbook server computer where the runbook is running, and it's not case\-sensitive. All system variables can be resolved. Any user variables are resolved in the context of the service account on the runbook server. If the environment variable doesn't exist, the text specified within the variable is returned as\-is \(that is, if you type `%ENVVAR%` and no environment variable named `ENVVAR` exists, the text `'%ENVVAR%'` is returned\).  
+`%ENVVAR%`: This variable returns the value of the environment variable between the percent `(\)` symbols. The environment variable is based on the runbook server computer where the runbook is running, and it's not case\-sensitive. All system variables can be resolved. Any user variables are resolved in the context of the service account on the runbook server. If the environment variable doesn't exist, the text specified within the variable is returned as\-is \(that is, if you enter `%ENVVAR%` and no environment variable named `ENVVAR` exists, the text `'%ENVVAR%'` is returned\).  
 
 ## Workflow Control
 When you build runbooks in Orchestrator, it's important to understand the underlying logic of the workflow engine. By using this logic, you can create workflows to automate resource\-based jobs and complex data processing tasks.  
