@@ -5,10 +5,11 @@ description: This article describes the software and hardware system requirement
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 09/13/2022
+ms.date: 12/26/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
+ms.custom: engagement-fy23
 ---
 
 # System requirements for System Center Orchestrator
@@ -74,4 +75,4 @@ This article details the system requirements for System Center 1807 - Orchestrat
 ::: moniker-end
 
 ## Next steps
-[Install Orchestrator](install.md)
+[Install Orchestrator](install.md).

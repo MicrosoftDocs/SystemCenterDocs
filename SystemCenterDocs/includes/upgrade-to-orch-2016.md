@@ -19,8 +19,8 @@ The following sections provide information about how to upgrade to System Center
 
 ## Before you start
 
-- Make sure your environment has the latest supported versions described in [system requirements](../orchestrator/system-requirements-orch.md).
-- To upgrade a server running Orchestra 2012 R2 to 2016, the server must be running System Center 2012 R2 rollup 8 or later.
+- Ensure that your environment has the latest supported versions described in [system requirements](../orchestrator/system-requirements-orch.md).
+- To upgrade a server running Orchestrator 2012 R2 to 2016, the server must be running System Center 2012 R2 rollup 8 or later.
 - [Learn more](../upgrade-to-system-center-2016.md) about upgrading System Center components.
 
 ## Upgrade steps
@@ -28,7 +28,7 @@ The following sections provide information about how to upgrade to System Center
 **Prepare to upgrade:**
 
 1. Ensure that there are no pending restarts on the computer.
-2. Perform a full back up  of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](../orchestrator/migrate-orchestrator-between-environments.md).
+2. Perform a full backup of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](../orchestrator/migrate-orchestrator-between-environments.md).
 3. Upgrade the hardware, operating system, and other software if needed.
 
 **Perform the upgrade:**
