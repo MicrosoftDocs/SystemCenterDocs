@@ -31,7 +31,7 @@ Storage migration enables you to move VM files from one storage location to anot
 
 1.  In **VM's and Services**, select **All Hosts**, and select the host on which the virtual machine is deployed.
 
-2.  Select and hold the virtual machine > **Migrate Storage**.
+2.  Right-click the virtual machine > **Migrate Storage**.
 
     The Migrate Storage Wizard opens at the **Select Path** page. The current location of the VM configuration files is displayed in the **Storage location for VM configuration**, and the current location of each virtual hard disk (.vhd) is displayed in **Disks**.
 

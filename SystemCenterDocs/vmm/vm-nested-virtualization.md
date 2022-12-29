@@ -153,7 +153,7 @@ You can enable nested virtualization on VMs that are created through a VM templa
 >[!NOTE]
 > Ensure the VMs that will be created using these templates meet the above [prerequisites](#before-you-start).
 
-To enable nested virtualization, on the **Create VM Template Wizard**, select **Select Source**, and then select **Enable Nested Virtualization** on the right pane of the wizard.
+To enable nested virtualization, on the **Create VM Template Wizard**, select **Select Source**, and select **Enable Nested Virtualization** on the right pane of the wizard.
 
 ![Screenshot of the enable nested virtualization through VM template.](media/nested-vm/enable-nested-virtualizaton-vm-template.png)
 
@@ -164,7 +164,7 @@ You can enable nested virtualization on VMs that are created through Create Virt
 >[!NOTE]
 > Ensure the VMs that will be created using this wizard meet the above [prerequisites](#before-you-start).
 
-To enable nested virtualization, on the **Create Virtual Machines wizard**, select  **Select Source**, and then select **Enable Nested Virtualization** on the right pane of the wizard.
+To enable nested virtualization, on the **Create Virtual Machines wizard**, select  **Select Source**, and select **Enable Nested Virtualization** on the right pane of the wizard.
 
 ![Screenshot of enable nested virtualization through Create Virtual Machine wizard.](media/nested-vm/enable-nested-virtualization-vm-wizard.png)
 
@@ -174,7 +174,7 @@ You can enable nested virtualization on VMs that are created through service tem
 >[!NOTE]
 > Ensure the VMs that will be created using this template meet the above [prerequisites](#before-you-start).
 
-To enable nested virtualization,  from  **Single Tier Properties**, select  **General**, and then select **Enable Nested Virtualization** on the right pane of the wizard.
+To enable nested virtualization,  from  **Single Tier Properties**, select  **General**, and select **Enable Nested Virtualization** on the right pane of the wizard.
 
 ![Screenshot of enable nested virtualization through Create VM Service template wizard.](media/nested-vm/enable-nested-virtualization-vm-service-template.png)
 

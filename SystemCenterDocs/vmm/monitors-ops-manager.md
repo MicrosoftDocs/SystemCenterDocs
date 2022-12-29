@@ -112,9 +112,9 @@ Run the wizard to connect the VMM server to the Operations Manager server, and i
 
     When hosts are placed in maintenance mode using the VMM management server, Operations Manager places them in the maintenance mode as well. In this mode, the Operations Manager agent suppresses alerts, notifications, rules, monitors, automatic responses, state changes, and new alerts.
 
-6.  Enter credentials for Operations Manager to connect with the VMM management server, and then select **Next**. This account will be added to the Administrator user role in VMM.
+6.  Enter credentials for Operations Manager to connect with the VMM management server, and select **Next**. This account will be added to the Administrator user role in VMM.
 7. Review the information in the **Summary** page, and select **Finish**. You can view the status of the new connection in the **Jobs** workspace.
-8. With **System Center Settings** still selected, in the results pane, select and hold **Operations Manager Server**, and then select **Properties**. In **Operation Manager Settings** > **Details** > **Connection Status**, confirm that the connection is **OK**.
+8. With **System Center Settings** still selected, in the results pane, select and hold **Operations Manager Server**, and select **Properties**. In **Operation Manager Settings** > **Details** > **Connection Status**, confirm that the connection is **OK**.
 
 If you later remove a connection to an Operations Manager server, this doesn't remove the VMM management packs from the server, but the connector is removed.
 

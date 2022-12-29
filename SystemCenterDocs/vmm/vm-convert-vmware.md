@@ -75,7 +75,7 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
 4. In **Virtual Machine Configuration**, specify the number of processors and memory settings.
 5. In **Select Host**, select a Hyper-V host/Azure Stack HCI (applicable from VMM 2019 UR3 and later) for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM paths are listed.
 6. In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable.
-7. In **Add Properties**, configure the required settings. In **Summary**, review the settings, and then select **Start the virtual machine after deploying it** if necessary.
+7. In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
 8. Select **Create** to start the conversion.
    Verify the VM's conversion in **VMs and Services** > **Home** > **Show** > **VMs**.
 
