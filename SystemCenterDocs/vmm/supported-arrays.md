@@ -21,9 +21,9 @@ ms.technology: virtual-machine-manager
 
 ::: moniker range="<sc-vmm-2019"
 
- Virtualized workloads in System Center - Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fiber channel, iSCSCI, and SAS connections, and network file shares.
+ Virtualized workloads in System Center - Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fiber channel, iSCSCI, SAS connections, and network file shares.
 
- This article provides a list of supported storage devices for VMM 2016, 1801, 1807.
+ This article provides a list of supported storage devices for VMM 2016, 1801, and 1807.
 
 
 
@@ -49,7 +49,7 @@ ms.technology: virtual-machine-manager
 
 ::: moniker range="sc-vmm-2019"
 
-This article details the supported arrays for System Center 2019 - Virtual Machine Manager (VMM).
+This article provides details of the supported arrays for System Center 2019 - Virtual Machine Manager (VMM).
 
 [!INCLUDE [supported-arrays-2019.md](../includes/supported-arrays-2019.md)]
 
@@ -58,7 +58,7 @@ This article details the supported arrays for System Center 2019 - Virtual Machi
 
 ::: moniker range="sc-vmm-2022"
 
-This article details the supported arrays for System Center 2022 - Virtual Machine Manager (VMM).
+This article provides details of the supported arrays for System Center 2022 - Virtual Machine Manager (VMM).
 
 [!INCLUDE [supported-arrays-2022.md](../includes/supported-arrays-2022.md)]
 

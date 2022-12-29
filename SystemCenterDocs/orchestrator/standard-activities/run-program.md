@@ -25,11 +25,11 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
-The Run Program activity runs any program or command on any computer in your domain in interactive or background mode.  Use this activity to run backup applications or a batch script that runs a set of complex commands.  
+The Run Program activity runs any program or command on any computer in your domain in an interactive or background mode. Use this activity to run backup applications or a batch script that runs a set of complex commands.  
 
 ## Configuring the Run Program Activity  
  Before you configure the Run Program activity, you need to determine the following:  
@@ -44,7 +44,7 @@ Use the following information to configure the Run .NET Script activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Program execution**|Select this mode to run a program in the same way as a Windows shortcut or the Windows Run dialog box. You can also use the ellipsis **(...)** button to browse for the computer.|  
+|**Program execution**|Select this mode to run a program in the same way as a Windows shortcut or the Windows Run dialog. You can also use the ellipsis **(...)** button to browse for the computer.|  
 |**Command execution**|Select this mode to run a command in the same way as the Windows Command Prompt.|  
 |**Computer**|Type the computer where this program or command will run.|  
 |**Program path**|-   If you selected the **Program execution** mode, this element appears as **Program path**. Type the full path to the location of the program that you want to run. Then, to pass parameters to the program, type them in the **Parameters** box.<br /><br /> -   If you selected the **Command run** mode, this element appears as **Command**. Type the path of the command that you want to run, and include the parameters that you want to pass to the command on the same line in the **Command** box.|  
@@ -55,11 +55,11 @@ Use the following information to configure the Run .NET Script activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Execution mode**|Select one of the following execution options for the program:<br /><br /> -   **Interactive**: Select this option to display a user interface on the computer where the command or program is run. A user interface, if available, appears in a user session that is defined by the user credentials specified in the Run as boxes (User name, Password) on the Advanced tab.<br /><br /> -   **Background, normal priority**: Select this option to run the command or program in the background with the process priority set to normal. In this mode no user interface will be displayed.<br /><br /> -   **Background, low priority**: Select this option to run the command or program in the background with the process priority set to low. In this mode no user interface will be displayed. Some programs may not function correctly when set to low priority. If this is the case, use the **Interactive** or **Background, normal priority** settings instead.|  
-|**Wait for the completion of the program**|Select this option to cause the Run Program to wait for the program or command to finish running before moving to the next activity in the runbook. If you have set the **Execution mode** to **Interactive**, then the user must close the program before the Run Program activity is able to move to the next activity in the runbook.|  
+|**Execution mode**|Select one of the following execution options for the program:<br /><br /> -   **Interactive**: Select this option to display a user interface on the computer where the command or program is run. A user interface, if available, appears in a user session that is defined by the user credentials specified in the Run as boxes (User name, Password) on the Advanced tab.<br /><br /> -   **Background, normal priority**: Select this option to run the command or program in the background with the process priority set to normal. In this mode, no user interface will be displayed.<br /><br /> -   **Background, low priority**: Select this option to run the command or program in the background with the process priority set to low. In this mode, no user interface will be displayed. Some programs may not function correctly when set to low priority. If this is the case, use the **Interactive** or **Background, normal priority** settings instead.|  
+|**Wait for the completion of the program**|Select this option to cause the Run Program to wait for the program or command to finish running before moving to the next activity in the runbook. If you've set the **Execution mode** to **Interactive**, then the user must close the program before the Run Program activity is able to move to the next activity in the runbook.|  
 |**Terminate after**|Type the maximum number of minutes to wait for the program or command to complete. Set this value to 0 to have the Run Program activity to wait indefinitely for the completion of the program or command. If the time has expired and the program or command has not completed running, the Run Program activity will shut down the program or command and report a failure.|  
 |**Do not wait for the completion of the program**|Select this option to cause the Run Program activity to run the program or command and not wait for it to complete. When this option is selected, the published data items generated by the Run Program activity will not be available to other activities.|  
-|**User name**|To use a different account name to log in to a computer and run a program, type the account number in the User name box. **Note:**  This user name only logs in to the computer where the Run Program activity runs, and uses the interactive logon type. If the program that the Run Program activity launches accesses resources on other computers, the same user name is used on the remote computer, but with the network logon type.|  
+|**User name**|To use a different account name to sign in to a computer and run a program, type the account number in the User name box. **Note:**  This user name only signs in to the computer where the Run Program activity runs and uses the interactive sign-in type. If the program that the Run Program activity launches accesses resources on other computers, the same user name is used on the remote computer, but with the network sign-in type.|  
 |**Password**|Type the password associated with the user name to run the program on the remote computer.|  
 
 ### Published Data  
@@ -70,7 +70,7 @@ Use the following information to configure the Run .NET Script activity.
 |Program path|The program path or command that was entered.|  
 |Program parameters|The parameters that were passed to the program. This option is only available when **Program run** is selected on the **Details** tab.|  
 |Working folder path|The path of the working folder.|  
-|Process ID|The process ID of the application that was started when the Run Program activity runs. If you are using **Command run**, this will be the process ID of the Windows Command Prompt application.|  
+|Process ID|The process ID of the application that was started when the Run Program activity runs. If you're using **Command run**, this will be the process ID of the Windows Command Prompt application.|  
 |Program exit code|The return code of the application that was run by the Run Program activity.|  
 |Computer|The name of the computer where the application was started.|  
 |Program output|The text that was sent to the console when the program was run.|  
@@ -79,8 +79,8 @@ Use the following information to configure the Run .NET Script activity.
 |UNC program output file|The name of the file where the program output was saved in UNC format.|  
 
 ### Security  
- The Run Program activity is based on PsExec.  PsExec lets you execute processes on other systems, complete with full interactivity for console applications. For more information on PsExec, go to [PsExec](/sysinternals/downloads/psexec).  
+ The Run Program activity is based on PsExec. PsExec lets you execute processes on other systems, complete with full interactivity for console applications. For more information on PsExec, go to [PsExec](/sysinternals/downloads/psexec).  
 
- The Run Program activity inherits certain security concerns from PsExec.  Specifically, PsExec uses named pipes. This can be a security concern, as credentials can be sent through this tool.  
+ The Run Program activity inherits certain security concerns from PsExec. Specifically, PsExec uses named pipes. This can be a security concern, as credentials can be sent through this tool.  
 
- A work-around for customers concerned about security vulnerabilities is to create a mapped drive to the server that is the target of the Run Program activity. This establishes a security context for the Run Program activity.
+ A workaround for customers concerned about security vulnerabilities is to create a mapped drive to the server that is the target of the Run Program activity. This establishes a security context for the Run Program activity.
