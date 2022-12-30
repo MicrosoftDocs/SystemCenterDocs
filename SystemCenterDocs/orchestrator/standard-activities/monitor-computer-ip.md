@@ -36,7 +36,7 @@ The Monitor Computer/IP activity will send a ping to a remote computer or IP add
 
 -   The computer you are monitoring.  
 
--   Whether you are waiting for the computer to become reachable or waiting for it become not reachable.  
+-   Whether you are waiting for the computer to become reachable or waiting for it to become not reachable.  
 
 > [!IMPORTANT]
 >  You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
@@ -47,9 +47,9 @@ The Monitor Computer/IP activity will send a ping to a remote computer or IP add
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Computer**|Type the name of the computer that you are monitoring. You can also browse for the computer using the ellipsis **(...)** button.|  
-|**The computer is not reachable**|Select to invoke the Monitor Computer/IP activity when the computer that you are monitoring cannot be reached using a ping.|  
-|**The computer is reachable**|Select to run the Monitor Computer/IP activity when the computer that you are monitoring can be reached using a ping.|  
+|**Computer**|Enter the name of the computer that you're monitoring. You can also browse for the computer using the ellipsis **(...)** button.|  
+|**The computer is not reachable**|Select to invoke the Monitor Computer/IP activity when the computer that you're monitoring cannot be reached using a ping.|  
+|**The computer is reachable**|Select to run the Monitor Computer/IP activity when the computer that you're monitoring can be reached using a ping.|  
 |**Test frequency**|Specify the amount of time between each ping to the **Computer**.|  
 
 ### Published Data  
@@ -57,5 +57,5 @@ The Monitor Computer/IP activity will send a ping to a remote computer or IP add
 
 |Item|Description|  
 |----------|-----------------|  
-|Computer to ping|The computer that is being monitored.|  
+|Computer to ping|The computer that's being monitored.|  
 |Percentage of packets received|The percentage of packets that were received back from the ping.|
