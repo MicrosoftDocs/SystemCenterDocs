@@ -25,7 +25,7 @@ manager: "evansma"
 
 ::: moniker-end
 
-The PGP Encrypt File activity encrypts a file or an entire folder tree using a PGP key file that you have created. When encrypting an entire folder, the folder tree is preserved from the root folder down. For example, if you encrypt C:\Documents and Settings\Administrator\My Documents\\\*.\* and all subfolders, all files in My Documents are encrypted and also all the files in folders under My Documents. All the files that are in subfolders will be in the same subfolder in the Output folder. Use the PGP Encrypt File activity to encrypt files before backing them up.  
+The PGP Encrypt File activity encrypts a file or an entire folder tree using a PGP key file that you've created. When encrypting an entire folder, the folder tree is preserved from the root folder down. For example, if you encrypt C:\Documents and Settings\Administrator\My Documents\\\*.\* and all subfolders, all files in My Documents are encrypted and also all the files in folders under My Documents. All the files that are in subfolders will be in the same subfolder in the Output folder. Use the PGP Encrypt File activity to encrypt files before backing them up.  
 
  To use this activity, you must install the gpg executable.
 
@@ -71,14 +71,14 @@ Use the following information to configure the PGP Encrypt File activity.
 |**Skip**|Select this option to skip encrypting a file when a file with the same name is found in the Output folder.|  
 |**Overwrite**|Select this option to overwrite any files with the same name as the resulting encrypted file.|  
 |**Create unique name**|Select this option to give the encrypted file a unique name if a file with the same name already exists.|  
-|**File extension**|Enter the file name extension that you want to appended to the file name when it's encrypted. The default extension is gpg.|  
+|**File extension**|Enter the file name extension that you want to append to the file name when it's encrypted. The default extension is gpg.|  
 
 ### Advanced  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Key file**|Enter the location of the PGP key file that you'll use to encrypt the files. If you leave this field blank, the PGP Encrypt File activity uses the file that you specify in the **Keyring folder** field. Files can have any file name extension, but *.asc is the standard.|  
-|**Keyring folder**|Enter the location of the folder that contains the keyring that you will use to encrypt the files. The public keyring file (\*.pkr) may be renamed with a \*.gpg file name extension. **Important:** The PGP Encrypt File activity creates files in the keyring folder. The Orchestrator Runbook Service account, or the user account used to run the runbook, requires read and write permissions on the keyring folder.|  
+|**Keyring folder**|Enter the location of the folder that contains the keyring that you'll use to encrypt the files. The public keyring file (\*.pkr) may be renamed with a \*.gpg file name extension. **Important:** The PGP Encrypt File activity creates files in the keyring folder. The Orchestrator Runbook Service account, or the user account used to run the runbook, requires read and write permissions on the keyring folder.|  
 |**User**|Enter the user name that was specified when the encryption key was created. This is a required field.|  
 |**Comment**|Enter the comment that was specified when the encryption key was created. If this field was completed when the encryption key was created, you must provide this information when using this activity.|  
 |**Email**|Enter the email address that was specified when the encryption key was created. This is a required field.|  

@@ -68,7 +68,7 @@ Use the following steps:
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Keyring folder**|Enter the location of the keyring folder that contains the secret keyring file that you will use to decrypt the files. The secret keyring file (*.skr) may be renamed with a \*.gpg extension.|  
+|**Keyring folder**|Enter the location of the keyring folder that contains the secret keyring file that you'll use to decrypt the files. The secret keyring file (*.skr) may be renamed with a \*.gpg extension.|  
 |**Passphrase**|Enter the passphrase that is associated with the keyring file.|  
 
 ### Published Data  
