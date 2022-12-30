@@ -91,7 +91,7 @@ Create a template from an existing VM.
 
 4. If the library server isn't a managed Hyper-V host, use your array vendor’s management tools to create the logical unit and to unmask the logical unit to the library server. Then do the following:
     - Don't assign a drive letter.
-    - Use Disk Management (diskmgmt.msc) to rescan the disk, initialize the disk, and then format it.
+    - Use Disk Management (diskmgmt.msc) to rescan the disk, initialize the disk, and format it.
     - In Disk Management, mount the logical unit to the folder path you created in the library share (**Change Drive Letter and Paths** > **Add** > **Mount in the following empty NTFS folder**, and select the empty library folder).
 5. Copy the virtual hard disk you want to use to the new folder in the library share.
 
@@ -105,10 +105,10 @@ Create a template from an existing VM.
 
 1. Select **Library** > **Create** > **Create VM Template**.
 2. In **Create VM Template Wizard** > **Select Source**, select **From an existing virtual machine that is deployed on a host** > **Browse**. Select the VM on the logical unit. Select **Yes** on the warning message.
-3. In **Identity**, type in a template name and description.
+3. In **Identity**, enter a template name and description.
 4. In **Configure Hardware**, select **Next**. The classification that appears matches what you assigned to the storage pool from which you created the logical unit.
 5. In **Configure Operating System**, select **Next**.
-6. In **Select Library Server**, select the library server where you want to create the template. Verify that the **Transfer Type** is **SAN**, and then select **Next**. The library server must have access to the same storage pool as the host.
+6. In **Select Library Server**, select the library server where you want to create the template. Verify that the **Transfer Type** is **SAN**, and select **Next**. The library server must have access to the same storage pool as the host.
 7. In **Select Path**, select **Browse**, and select a location on the library server to store the VM files.
 8. In **Summary**, review the settings and select **Create**. In **Jobs**, you can track the template being created. Wait for the **Completed** status. Verify the template in **Library** > **Templates** > **VM Templates**.
 
@@ -128,7 +128,8 @@ Now deploy a VM from the SAN-copy capable template. This procedure explains how 
 4. Complete the rest of the steps  wizard to create and deploy the virtual machine.
 
     >[!NOTE]
-    > - In **Configure Hardware** > **Bus Configuration**, leave the **Classification** list empty, or select the storage classification that - In **Select Host** or **Select Cloud**, ensure that the **Transfer Type** column indicates **SAN**.
+    > - In **Configure Hardware** > **Bus Configuration**, leave the **Classification** list empty or select the storage classification that 
+    > - In **Select Host** or **Select Cloud**, ensure that the **Transfer Type** column indicates **SAN**.
     > - If you selected to place the virtual machine on a host, in **Configure Settings** > **Machine Resources**, select the virtual hard disk to verify the deployment options. For rapid provisioning through SAN copy, ensure that the method to deploy the virtual hard disk to the host list is **Transfer the virtual disk by using the SAN**.
 
 5. After you complete the wizard, open **Jobs** > **Create virtual machine job** to view the job status.

@@ -45,7 +45,7 @@ You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-
 
 When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placement to evaluate available hosts.
 
-- The placement algorithm analyzes performance data for the workload and the host, and then rates hosts on a scale of one to five stars to indicate the best placement choice.
+- The placement algorithm analyzes performance data for the workload and the host, and rates hosts on a scale of one to five stars to indicate the best placement choice.
 - Placement includes a preferred and possible owners feature that allows to specify which hosts are preferred and possible if failover of VMs occurs.
 - Placement considers storage classifications. Clouds can be scoped to limit VM placement to specific storage classifications only.
 - Placement options can be selected as follows:
@@ -86,8 +86,8 @@ A host might be assigned a zero rating if it doesn't meet conditions to receive 
 - The host must have at least one hard disk with enough storage to hold the total hard disk space required by the virtual machine. With dynamic hard disks, the current hard disk size is used, not the maximum hard disk size.
 - The memory required for the virtual machine must be less than the current amount of memory available on the host. A host must also have sufficient memory available to start the virtual machine.
 
-> [!NOTE]
-> VMM does offer the option of overcommitting cloud and host group capacity for replica VMs.
+  > [!NOTE]
+  > VMM does offer the option of overcommitting cloud and host group capacity for replica VMs.
 
 - If dynamic memory is enabled, ensure the following:
     - If the virtual machine (including any one of its checkpoints) is configured to use Dynamic Memory, the host should also have Dynamic Memory enabled. If it doesn't, the placement of the virtual machine will be blocked during creation or migration.
@@ -97,7 +97,7 @@ A host might be assigned a zero rating if it doesn't meet conditions to receive 
 
 - The host must contain all of the virtual networks required for the virtual machine. If you use network tags, the network location tags for the virtual machine and host must be identical.
 - A host in maintenance mode automatically receives a zero rating.
-- If Microsoft RemoteFX 3D video adapter is enabled on the virtual machine, the host must support RemoteFX and have one or more emoteFX-capable graphics processing units (GPUs) with sufficient available memory. If these conditions aren't available and the virtual machine is running, placement will be blocked. If it's stopped or in a saved state, a zero rating with a warning will be issued, but placement won't be blocked.
+- If Microsoft RemoteFX 3D video adapter is enabled on the virtual machine, the host must support RemoteFX and have one or more RemoteFX-capable graphics processing units (GPUs) with sufficient available memory. If these conditions aren't available and the virtual machine is running, placement will be blocked. If it's stopped or in a saved state, a zero rating with a warning will be issued, but placement won't be blocked.
 - Highly-available virtual machines must be placed on clustered hosts. VMM assigns zero stars to hosts that aren't clustered but manual placement isn't blocked. If you migrate a highly-available virtual machine to a non-clustered host, the virtual machine will no longer be highly available after the migration.
 - VMM blocks migration of Hyper-V hosts to hosts running different virtualization software. Migration of a virtual machine with specific features not allowed by the virtualization software that is running on a host will be blocked. For example, Hyper-V hosts don't allow booting up from a SCSI hard disk.
 
@@ -138,8 +138,8 @@ VMM optimizes support for differencing disks to provide the following:
 - When differencing disks are utilized, deployment of the base virtual disk is optimized by taking advantage of the Windows Offloaded Data Transfers (ODX) capability to copy files to the guest machine during service deployment.
 - Optimize time and storage of cloning of virtual machines by utilizing differencing disks. VMM provides the option to create and utilize differencing disks during a cloning operation.
 
->[!NOTE]
-> If the parent disks are lost or corrupted, all VHDs that depend on them are also lost. You should have a backup plan in place.
+  >[!NOTE]
+  > If the parent disks are lost or corrupted, all VHDs that depend on them are also lost. You should have a backup plan in place.
 
 If you're using differencing disks, you should optimize management by ensuring that unused parent HDs are removed regularly.
 
@@ -170,8 +170,8 @@ After you've set up a vCenter server and ESX/ESXi hosts, you can provision VMwar
 - VMM doesn't support VMware VMs with VHDs connected to an IDE bus.
 - VMM supports VMware thin provision hard disk through the dynamic disk type. 
 
->[!NOTE]
-> If you create and deploy a VM to a vSphere host configured to use a dynamic disk, the disk will be thin provisioned. If a VM was created as a thin provisioned disk, out-of-band VM will display it as dynamic. If you save a thin provision disk to the library, VMM will save it as thick. It remains thick if you create a VM from it.
+  >[!NOTE]
+  > If you create and deploy a VM to a vSphere host configured to use a dynamic disk, the disk will be thin provisioned. If a VM was created as a thin provisioned disk, out-of-band VM will display it as dynamic. If you save a thin provision disk to the library, VMM will save it as thick. It remains thick if you create a VM from it.
 
 ## Converting VMware VMs to Hyper-V
 
@@ -184,7 +184,7 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V (V2
     - Online conversions aren't supported. You need to power off the VMware VMs.
     - Anti-virus apps must be supported.
     - VMware tools must be uninstalled from the guest operating system of the VM.
-- [Microsoft Virtual Machine Converter](https://techcommunity.microsoft.com/t5/system-center-blog/microsoft-virtual-machine-converter-3-0-is-now-available-for/ba-p/349874): After June 3, 2017, this tool will no longer be available. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/)
+- [Microsoft Virtual Machine Converter](https://techcommunity.microsoft.com/t5/system-center-blog/microsoft-virtual-machine-converter-3-0-is-now-available-for/ba-p/349874): After June 3, 2017, this tool will no longer be available. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/).
 
 ::: moniker range=">=sc-vmm-2019"
 
@@ -209,8 +209,8 @@ You can set the static MAC address on the VM while:
 
 1. In VMM Console, navigate to **VMs and Services** > **Home** > **Clouds**.
 2. Select the cloud to deploy the VM.  
-3. Select and hold > **Create Virtual Machine** to enter the Create Virtual Machine wizard and create the VM.
-4. Select and hold the VM and select **Properties**.
+3. Right-click > **Create Virtual Machine** to enter the Create Virtual Machine wizard and create the VM.
+4. Right-click the VM and select **Properties**.
 5. Navigate to the **Configure Hardware** page and select the network adapter to which you want to assign a static MAC address.
 6. In the **MAC address** section, select **Static** and enter the MAC address in the text box.
 

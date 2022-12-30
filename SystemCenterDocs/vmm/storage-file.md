@@ -58,7 +58,7 @@ You can assign file shares on any host on which you want to create VMs that will
 	- If you specified explicit user credentials when you added a host or host cluster, you can remove the host or cluster from VMM and then add it again by using a Run As account.
 
 3. Select **Host Name Properties** > **Storage** > **Add File Share**.
-4. In **File share path**, select the required SMB 3.0 file share, and then select **OK**. To confirm that the host has access, open the **Jobs** workspace to view the job status. Or open the host properties again and then select the **Storage** tab. Under **File Shares**, select the SMB 3.0 file share. Verify that a green check mark appears next to **Access to file share**.
+4. In **File share path**, select the required SMB 3.0 file share, and select **OK**. To confirm that the host has access, open the **Jobs** workspace to view the job status. Or open the host properties again and select the **Storage** tab. Under **File Shares**, select the SMB 3.0 file share. Verify that a green check mark appears next to **Access to file share**.
 5. Repeat this procedure for any standalone host that you want to access the SMB 3.0 file share or for all nodes in a cluster.
 
 ## Next steps

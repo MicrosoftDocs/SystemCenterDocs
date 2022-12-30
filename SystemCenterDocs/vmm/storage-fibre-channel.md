@@ -69,7 +69,7 @@ Here's what you need to do:
 8. On the **Fibre Channel Fabrics** page, do the following for each storage fabric that requires a classification:
     1. In the **Storage Device** column, select the check box next to a fibre channel fabric that you want VMM to manage.
     2. In the **Classification** column, select the classification that you want to assign to the fabric. The fabric classification task is separate from that for storage classification, although the concept is similar.
-9. On the **Summary** page, confirm the settings and then select **Finish**.
+9. On the **Summary** page, confirm the settings and select **Finish**.
 
 ## Create vSANs and assign HBAs
 
@@ -77,14 +77,14 @@ You can create vSANs and assign HBAs to it. One or more vSANs can be created for
 
 Virtual Host Bus Adapters (vHBAs) represent the virtualization of fibre channel HBAs and are used by VMs to connect with vSANs. Each vHBA has a World Wide Node Name (WWNN), which is different than the host HBA WWNN. Using N_Port ID Virtualization (NPIV), a host computer HBA can map to multiple vHBAs. HBA ports assigned to a vSAN can be added or removed as needed.
 
-1. Select **Fabric** and select and hold the applicable host >  **Properties** > **Hardware** > **New Virtual SAN**.
+1. Select **Fabric** and right-click the applicable host >  **Properties** > **Hardware** > **New Virtual SAN**.
 2. In **New Virtual SAN**, specify a name and optional description. In **Fibre Channel adapters**, select the check boxes next to the fibre channel HBAs that you want to assign to the vSAN. Select **OK**.
 3. If you want to edit vSAN port assignments, in **Properties** > **Hardware** > **FC Virtual SAN** > **Fibre Channel adapter details**, select or unselect the HBA ports.
 4. If you want to add a new vHBA and assign it to a vSAN, select **Properties** > **Hardware Configuration** > **New** > **Fibre Channel Adapter**. In **Virtual SAN name**, select a vSAN to assign it. Specify whether you want to assign port settings for the vHBA statically or dynamically.
 5. If you want to change the global default port settings for vHBA, select **Properties** > **Hardware** > **Global Settings** and modify settings in **Fibre Channel adapter details**. 
 
->[!NOTE]
->Changing these settings does not affect vHBA ports that have already been created. To apply a new setting to an existing vHBA port, recreate the port by removing it and then adding it again.
+   >[!NOTE]
+   >Changing these settings does not affect vHBA ports that have already been created. To apply a new setting to an existing vHBA port, recreate the port by removing it and then adding it again.
 
 ## Create a VM template
 
@@ -106,10 +106,10 @@ Zones are used to connect a fibre channel array to a host or virtual machine (VM
 
 Set up zones as follows:
 
-1. Select **VMs and Services** > **Services**, select and hold the applicable VM, > **Properties** > **Storage**  > **Add** > **Add Fibre Channel Array**.
-2. In **Add Fibre Channel Array** > **Properties** page > **Create New Zone**, specify a zone name, select a storage array, and in **Fabric**, select a switch. In **Storage array target ports**, select the applicable WWPM port or ports. In **Virtual machine initiator**, select the applicable WWPM port or ports. Then select **Create**. Select **Show aliases** to view the available zone aliases.
+1. Select **VMs and Services** > **Services**, right-click the applicable VM, > **Properties** > **Storage**  > **Add** > **Add Fibre Channel Array**.
+2. In **Add Fibre Channel Array** > **Properties** page > **Create New Zone**, specify a zone name, select a storage array, and in **Fabric**, select a switch. In **Storage array target ports**, select the applicable WWPM port or ports. In **Virtual machine initiator**, select the applicable WWPM port or ports. Select **Create**. Select **Show aliases** to view the available zone aliases.
 3. To activate the zoneset, select **Fabric** > **Name**, and select the inactive zoneset > **Activate Zoneset**.
-4. You can view the zonesets for a fabric in **Fabric** > **Fibre Channel Fabric** > **Name**; select and hold the applicable fabric > **Properties** > **Zonesets**.
+4. You can view the zonesets for a fabric in **Fabric** > **Fibre Channel Fabric** > **Name**; right-click the applicable fabric > **Properties** > **Zonesets**.
 5. If you want to modify zoning for a storage array, select **VMs and Services** > applicable host > **Properties** > **Storage** > **Fibre Channel Arrays** > **Edit** > applicable array and modify the zoning settings.
 
 ## Create and register LUNs
@@ -118,7 +118,7 @@ For a host computer, VM, or computer service tier to access storage array resour
 
 1. Select **Fabric** > **Storage** > **Classifications and Pools**. Under **Name**, select the applicable storage device > **Create Logical Unit**.
 2. In the **Create Logical Unit**, select a storage pool, and specify a name and description and LUN size. Specify whether you want to create a thin or fixed size LUN.
-3. To register the LUN, in **VMs and Services** pane, select and hold the applicable VM > **Properties** > **Add** > **Add Disk**.
+3. To register the LUN, in **VMs and Services** pane, right-click the applicable VM > **Properties** > **Add** > **Add Disk**.
 4. In **Create Logical Unit**, select a storage pool, name, and size. Select **OK** to register the LUN.
 
 ## Create and deploy a service tier

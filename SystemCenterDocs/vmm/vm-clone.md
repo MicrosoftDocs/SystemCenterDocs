@@ -37,7 +37,7 @@ This article describes how to create and deploy virtual machines by cloning exis
 1. Select **VMs and Services** > **Create Virtual Machine** > **Create Virtual Machine**.
 2. In **Create Virtual Machine Wizard** > **Select Source**, select **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**. Select an existing VM.
 3. In **Select Source**, select **Next**.
-4. In **Configure Hardware**, optionally configure any available settings. Then select **Next**.
+4. In **Configure Hardware**, optionally configure any available settings. Select **Next**.
 5. In the **Select Destination** page, specify how the virtual machine should be deployed - in a private cloud, on a host, or stored in the library.
 
 
@@ -51,12 +51,12 @@ This article describes how to create and deploy virtual machines by cloning exis
     -   **Details**: Indicates the status of the host, the operating system, and the type and status of the virtualization software.
     -   **Rating Explanation**: Provides an explanation if a host received a zero rating.
     -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM doesn't recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
-    - The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy can't be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
+        The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy can't be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
 
 2.  In **Configure Settings**, review the VM settings. Either accept the default VM path on the host or specify a different location. You can optionally select to **Add this path to the list of default virtual machine paths on the host**. In **Machine Resources**, accept the default values for the VHD or modify as required. To prevent placement from choosing its own values, select the pin icon next to the setting. This option isn't available for self-service users.
-3.  In **Select Networks**, if it appears, optionally select the network settings and then select **Next**.
-4.  In **Add Properties**, configure the action to take when the host starts or stops, and the operating system that you'll install on the VM. Then select **Next.**
-5.  In **Summary**, confirm the settings, and select **Create**. Confirm that the VM was created in **VMs and Services** > **Clouds** and then select the cloud. The virtual machine appears in the **VMs** pane.
+3.  In **Select Networks**, if it appears, optionally select the network settings and select **Next**.
+4.  In **Add Properties**, configure the action to take when the host starts or stops, and the operating system that you'll install on the VM. Select **Next.**
+5.  In **Summary**, confirm the settings, and select **Create**. Confirm that the VM was created in **VMs and Services** > **Clouds** and select the cloud. The virtual machine appears in the **VMs** pane.
 
 ## Deploy the VM on a host
 
@@ -67,19 +67,20 @@ This article describes how to create and deploy virtual machines by cloning exis
     -   **Details**: Indicates the status of the host, the operating system, and the type and status of the virtualization software.
     -   **Rating Explanation**: Provides an explanation if a host received a zero rating.
     -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM doesn't recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
-    - The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
+        The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
+
 2.  In **Configure Settings**, review the VM settings. Either accept the default VM path on the host or specify a different location. You can optionally select to **Add this path to the list of default virtual machine paths on the host**. In **Machine Resources**, accept the default values for the VHD or modify as required. To prevent placement from choosing its own values, select the pin icon next to the setting. This option isn't available for self-service users.
 3. In **Select Networks**, if it appears, optionally select the network settings, and select **Next**.
-4. In **Add Properties**, configure the action to take when the host starts or stops, and the operating system that you'll install on the VM. Then select **Next.**
-5.  On the **Summary** page, confirm the settings and then select **Create**.
+4. In **Add Properties**, configure the action to take when the host starts or stops, and the operating system that you'll install on the VM. Select **Next.**
+5.  On the **Summary** page, confirm the settings and select **Create**.
 
 
 ## Store the VM in the library
 
-1.  In **Select Library Server**, select the library server that you want to use, and then select **Next**.
-2.  In **Select Path**, specify the library share location to store the virtual machine. Select **Browse** to select a library share and an optional folder location, select **OK**, and then select **Next**.
-3.  In **Summary**, confirm the settings and then select **Create**.
-4.  To confirm that the virtual machine was created, in the **Library** workspace, in the **Library** pane, expand **Library Servers**, expand the library server where you stored the virtual machine, and then select **Stored Virtual Machines and Services**. The stored virtual machine appears in the **Physical Library Objects** pane.
+1.  In **Select Library Server**, select the library server that you want to use, and select **Next**.
+2.  In **Select Path**, specify the library share location to store the virtual machine. Select **Browse** to select a library share and an optional folder location, select **OK**, and select **Next**.
+3.  In **Summary**, confirm the settings and select **Create**.
+4.  To confirm that the virtual machine was created, in the **Library** workspace, in the **Library** pane, expand **Library Servers**, expand the library server where you stored the virtual machine, and select **Stored Virtual Machines and Services**. The stored virtual machine appears in the **Physical Library Objects** pane.
 
 ## Next steps
 

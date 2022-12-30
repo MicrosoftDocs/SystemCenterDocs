@@ -31,6 +31,6 @@ Use the instructions in this article if you want to use System Center - Virtual 
 3. In **Resource Type**, select the option to provision computers on which Windows Server 2016 or later is installed and fill in the details.
 ::: moniker-end
 4.  In **Cluster Nodes**, define a list of computers to add to the cluster.
-5.  On the **Summary** page, confirm the settings and then select **Finish**.
+5.  On the **Summary** page, confirm the settings and select **Finish**.
 
 You can monitor the cluster status on the **Jobs** page. After the job finishes, check the cluster in **Fabric** > **Storage** > **File servers**.

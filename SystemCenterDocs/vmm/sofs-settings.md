@@ -28,7 +28,7 @@ You can manage scale-out file server (SOFS) in the System Center - Virtual Machi
 
 ## Create storage pools
 
-1. Select **Fabric** > **Storage** > **File Servers**. Select and hold the SOFS server (not the nodes) and select **Manage Pools**.
+1. Select **Fabric** > **Storage** > **File Servers**. Right-click the SOFS server (not the nodes) and select **Manage Pools**.
 2. In **Manage Pools of File Server**, select **New** to create a new pool or modify an existing one.
 3. In **General**, specify a name and select a storage classification.
 4. In **Physical Disks**, select the disks you want to include in the pool. Disks will be displayed in accordance with the SOFS settings. For example, a file server with shared storage might show SAS storage disks, or a file server using Storage Spaces Direct would show local disks attached to each node.
@@ -36,22 +36,21 @@ You can manage scale-out file server (SOFS) in the System Center - Virtual Machi
 
 	- **Fault domain**: When you select a fault domain, you specify how many copies of your data will be distributed across a cluster.
 
-   > [!NOTE]
-   > Fault domain isn't displayed for clusters configured with Storage Spaces Direct. These clusters have a fault domain of **Node** to indicate that copies of data are stored on multiple nodes in the cluster and data is available even if a specific node isn't.
+     > [!NOTE]
+     > Fault domain isn't displayed for clusters configured with Storage Spaces Direct. These clusters have a fault domain of **Node** to indicate that copies of data are stored on multiple nodes in the cluster and data is available even if a specific node isn't.
 
 	- **Interleave**: Interleave (along with the number of columns) specify the way is which data is written to physical disks.
 
-5. Select **OK** to save the storage pool settings. After the job completes, verify the pools in **Fabric** > **Storage** > **Classifications and Pools**.
+6. Select **OK** to save the storage pool settings. After the job completes, verify the pools in **Fabric** > **Storage** > **Classifications and Pools**.
 
 ## Create a file share
 
 1. Select **Fabric** > **Storage** > **Home** > **Create File Share**.
-2. In **Create File Share Wizard** > **Storage Type**, select the SOFS on which you want to create a share. Type in a name and description for the share and select the storage pool you want to use. If the CSV exists, select **Volume** and specify it. If the folder path exists, select **Local path** and specify it. The file share inherits the classification of the storage pool.
+2. In **Create File Share Wizard** > **Storage Type**, select the SOFS on which you want to create a share. Enter a name and description for the share and select the storage pool you want to use. If the CSV exists, select **Volume** and specify it. If the folder path exists, select **Local path** and specify it. The file share inherits the classification of the storage pool.
 3. In **Capacity**, specify the file share size and type. Leave the default type unless the disk is used for backups or deduplication, in which case NTFS is recommended.
 4. In **Capacity** > **Resiliency**, for ReFS resilience must be mirror (two or three-way). For NTFS, it can be mirror or parity (single or dual). The default is a three-way mirror.
 5. Enable deduplication if necessary. Change the unit size allocation if required, and optionally enable storage tiers.
 6. In **Summary**, review the settings and select **Finish**. Verify the file share in **Fabric** > **Storage** > **File Servers** > **File Shares**.
-
 
 ## Set a storage QoS for an SOFS
 
@@ -68,8 +67,6 @@ Set a storage QoS policy as follows:
 3. In **Policy Settings**, select whether you want all the virtual hard disks for VMs to share resources equally or allocate resources per VM. If you choose to allocate per instance, you'll need to set a minimum and maximum IOPS. Then a virtual disk to which the policy is applied will receive the minimum and maximum limits.
 4. In **Scope**, specify the file servers on which to apply the policy. You can apply the policy to multiple servers, which is useful when you migrate VMs across servers so that QoS policy settings remain the same.
 5. In **Summary**, review the settings and select **Finish**. Verify the policy in **Fabric** > **Storage** > **QoS Policies**.
-
-
 
 
 ## Set a disk witness for the SOFS

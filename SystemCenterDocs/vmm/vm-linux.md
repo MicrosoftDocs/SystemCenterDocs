@@ -62,9 +62,11 @@ By default, LIS is included with some distributions of Linux. If LIS isn't inclu
 
      ```powershell
     ./install scvmmguestagent.1.0.0.544.x64.tar
-    ./install scvmmguestagent.1.0.0.544.x86.tar
     ```
 
+     ```powershell
+    ./install scvmmguestagent.1.0.0.544.x86.tar
+    ```
 When the agent installs on the VM, the following files and folders will be created on the VHD:
 
 - A default installation folder (/opt/microsoft/scvmmguestagent), and an installation log file (scvmm-install.log)
@@ -73,4 +75,5 @@ When the agent installs on the VM, the following files and folders will be creat
 - A configuration file (scvmm.conf). This file contains the location of the log file and is used to control logging during deployment and specialization.
 
 ## Next steps
-[vm-settings](vm-settings.md).
+
+Learn more about how to [Configure virtual machine settings in the VMM compute fabric](vm-settings.md).

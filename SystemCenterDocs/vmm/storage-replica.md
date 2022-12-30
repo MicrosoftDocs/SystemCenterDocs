@@ -63,7 +63,7 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 7.  **Refresh**: To finalize the creation of replication groups and to trigger the initial data replication, you need to refresh the primary and secondary storage provider. Data replicates to destination storage.
 8.  **Verify status**: Now you can check the status of the primary replication group. It should be in the Replicating state.
 9.  **Add VMs**: When delta replication is up and running, you can add VMs that use storage contained in the replication group. When you add the VMs, they'll be detected and will begin replicating automatically.
-10. **Run failover**: After replication is in a Synchronizing state, you can run a failover to check if it's working as expected. There isn't a test failover mechanism right now, so you'll run a manual failover in response to planned or unplanned outages. After failover, you can delete the VM on the source site (if it still exists), and create a VM on the destination site using the replicated data.
+10. **Run failover**: After replication is in a Synchronizing state, you can run a failover to check if it's working as expected. There isn't a test failover mechanism, so you'll run a manual failover in response to planned or unplanned outages. After failover, you can delete the VM on the source site (if it still exists), and create a VM on the destination site using the replicated data.
 11. **Run failback**: After failover is complete and replica VMs are up and running, you can fail back as you need to. Ensure that:
 
     - If you run an unplanned failover and your source location isn't available, you'll run a failover to fail back from the secondary to primary location, and then create the VM in the primary location.
@@ -73,25 +73,25 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 ## Retrieve PowerShell objects
 
 1. Before you start, retrieve the name of the PowerShell objects you want to use.
-2. Get the name of the primary storage array and assign to variable.
+2. Get the name of the primary storage array and assign it to a variable.
 
       ```PowerShell
           $PriArray = Get-SCStorageArray - Name $PriArrayName
       ```
 
-3. Get the name of the secondary storage array and assign to variable.
+3. Get the name of the secondary storage array and assign it to a variable.
 
       ```PowerShell
           RecArray = Get-SCStorageArray - Name $RecArrayName
       ```
 
-4. Get the name of the primary storage pool and assign to variable.
+4. Get the name of the primary storage pool and assign it to a variable.
 
       ```PowerShell
           $ $ PriPoolName $RecPool = Get-SCStoragePool -Name $
       ```
 
-5. Get the name of the secondary storage pool and assign to variable.
+5. Get the name of the secondary storage pool and assign it to a variable.
 
       ```PowerShell
           $ $PriPoolName $RecPool = Get-SCStoragePool -Name $
@@ -110,10 +110,10 @@ Pair the primary and secondary storage arrays using the variables for the storag
   ```
 
 If you created the cluster outside the VMM and you do need to rename the array name to match the cluster name, use:
-    ```PowerShell
-        Get-SCStorageArray -Name "existing-name" | Set-SCStorageArray -Name "new-name"
-    ```
 
+  ```PowerShell
+        Get-SCStorageArray -Name "existing-name" | Set-SCStorageArray -Name "new-name"
+  ```
 
 ## Provision LUNs and create the storage groups
 

@@ -26,7 +26,7 @@ In addition to adding existing file servers to an SOFS cluster in the System Cen
 Here's what you need for the deployment:
 
 - **Physical computers** to deploy as SOFS cluster nodes. These computers must meet the prerequisites described in the table below. They can be running on operating system, or an operating system that will be overwritten during the deployment process.
-- **Virtual hard disk** with an appropriate operating system located on a VMM library share. When you create the virtual hard disk, you can create a virtual machine, install the guest operating system, and then use Sysprep with the /generalize and the /oobe options.<br/><br/> The operating system on the virtual hard disk that you deploy on the cluster nodes must support the boot from the virtual hard disk (VHD) option.
+- **Virtual hard disk** with an appropriate operating system located on a VMM library share. When you create the virtual hard disk, you can create a virtual machine, install the guest operating system, and use Sysprep with the /generalize and the /oobe options.<br/><br/> The operating system on the virtual hard disk that you deploy on the cluster nodes must support the boot from the virtual hard disk (VHD) option.
 - **PXE server** configured with Windows Deployment Services is needed for bare metal deployment.
 
 ### Physical computer requirements
@@ -71,8 +71,6 @@ Here's what you need for the deployment:
 5. **Add nodes to SOFS cluster**: After you've provisioned the nodes, you can create a new cluster with them or add them to an existing one.
 
 
-
-
 ## Prepare physical computers
 
 Prepare each computer to support virtualization, as follows:
@@ -80,7 +78,6 @@ Prepare each computer to support virtualization, as follows:
 1. Set the BIOS boot order to boot from a Pre-Boot Execution Environment (PXE)-enabled network adapter as the first device.
 2. Configure the sign-in credentials and IP address settings for the BMC on each computer.
 3. If your environment has multiple DNS servers, where replication may take some time, we strongly recommend that you create DNS entries for the computer names that will be assigned to the physical computers, and allow time for DNS replication to occur. Otherwise, the deployment of the computers may fail.
-
 
 
 ## Add a PXE server to the VMM fabric
@@ -99,26 +96,26 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 
 
 1. Locate a driver package that you want to add to the library.
-2. In the library share that is located on the library server associated with the group where you want to deploy the physical computers, create a folder to store the drivers and then copy the driver package to the folder.
+2. In the library share that is located on the library server associated with the group where you want to deploy the physical computers, create a folder to store the drivers and copy the driver package to the folder.
 3. We strongly recommend that you create a separate folder for each driver package, and that you don't mix resources in the driver folders. If you include other library resources such as .iso images, .vhd files, or scripts with an .inf file name extension in the same folder, the VMM library server won't discover those resources. Also, when you delete an .inf driver package from the library, VMM deletes the entire folder where the driver .inf file resides.
-4. In the VMM console > **Library** > **Library Servers**, expand the library server where the share is located, select and hold the share, and then select **Refresh**. After the library refreshes, the folder should appear.
+4. In the VMM console > **Library** > **Library Servers**, expand the library server where the share is located, right-click the share, and select **Refresh**. After the library refreshes, the folder should appear.
 5. Assign tags if required. In **Library**, expand the folder that you created to store the drivers, and select the folder that contains the driver package.
-6. In the **Physical Library Objects**, select and hold the driver .inf file and then select **Properties**.
-7. In the **Driver File Name Properties** > **Custom tags**, enter custom tags separated by a semicolon, or select **Select** to assign available tags or to create and assign new ones. If you select **Select**, and then select **New Tag**, you can change the name of the tag after you select **OK**. For example, if you added a network adapter driver file, you could create a tag that is named ServerModel NetworkAdapterModel, where ServerModel is the server model and NetworkAdapterModel is the network adapter model.
+6. In the **Physical Library Objects**, select and hold the driver .inf file and select **Properties**.
+7. In the **Driver File Name Properties** > **Custom tags**, enter custom tags separated by a semicolon, or select **Select** to assign available tags or to create and assign new ones. If you select **Select** and then select **New Tag**, you can change the name of the tag after you select **OK**. For example, if you added a network adapter driver file, you could create a tag that is named ServerModel NetworkAdapterModel, where ServerModel is the server model and NetworkAdapterModel is the network adapter model.
 
 ## Create a physical computer profile
 
 Before you start, determine whether the physical computers use Extensible Firmware Interface (EFI) or BIOS. If you've both, create a separate profile for each type.
 
 1. Select **Library** > **Home** > **Create** > **Physical Computer Profile**.
-2. In the **New Physical Computer Profiles Wizard** > **Profile Description**, type in a name and description and select **VM host**.
+2. In the **New Physical Computer Profiles Wizard** > **Profile Description**, enter a name and description and select **VM host**.
 3. In **OS Image** > **Virtual hard disk file** > **Browse**, select the generalized virtual hard disk that you added to the library share. By default, if the disk is dynamic, VMM converts it to a fixed disk during host deployment. We recommend that for production servers, you use a fixed disk to increase performance and help protect user data.
 4. In **Hardware Configuration** > **Management NIC**, select the network adapter you'll use to communicate with VMM and whether to use DHCP or a static address. If you want to use Consistent Device Naming (CDN) for the adapter or configure logical switches and ports, select **Physical Properties**. Select **Add** to add the adapter.
 5. In **Disk**, specify the partitioning scheme for the first disk. You can use GPT if the physical computer profile is EFI. In **Partition Information**, select the volume label, whether to use all the remaining free space or a specific size, and whether to designate the partition as the boot partition. You can also add a new disk or partition. During deployment, VMM will copy the virtual hard disk file to the boot partition and automatically create a system partition on the same disk.
 6. In **Driver filter**, filter the drivers that will be applied to the operating system during host deployment. You can filter by Plug and Play ID or by specific tags. If you select to filter drivers with matching tags, ensure that you've added driver files to the library and assigned the  corresponding tags.
 7. In **OS Configuration**, specify the domain that the Hyper-V host or cluster should join, and specify the local admin credentials and identity information. Add the product key for installation, and set the time zone. In GUIRunOnce, you can specify one or more commands that will run when the user signs in to the Hyper-V host for the first time.
 8. In **Host Settings**, specify the path of the host to store the files that are associated with virtual machines placed on the host. Don't specify drive C because it's not available for placement. If you don't specify a path, VMM placement will determine the most suitable location.
-9. In **Summary**, verify the settings. Wait until Jobs shows a status of completed, and then verify the profile in **Library** > **Profiles** > **Physical Computer Profiles**.
+9. In **Summary**, verify the settings. Wait until Jobs shows a status of completed, and verify the profile in **Library** > **Profiles** > **Physical Computer Profiles**.
 
 ## Provision a Scale-Out File Server cluster from bare metal
 
@@ -133,18 +130,18 @@ The Create Clustered File Server Wizard does the following:
 Run the wizard:
 
 1. Select **Fabric** > **Servers** > **Home** > **Create** > **File Server Cluster**.
-2. In the **Create Clustered File Server Wizard** > **General**, type in a cluster name, file server name, and cluster IP addresses if needed.
+2. In the **Create Clustered File Server Wizard** > **General**, enter a cluster name, file server name, and cluster IP addresses if needed.
 3. In **Resource Type**, select the option to provision bare-metal computers. Select the physical computer profile and select **Next**.
 4. In **Credentials and Protocols**, select **Browse** next to the Run As account and choose the account with permissions to access the BMC. In the **Protocol** list, select the out-of-band management protocol you want to use for discovery. If you want to use DCMI, select **Intelligent Platform Management Interface (IPMI)**. DCMI 1.0 isn't listed, but it's supported. Ensure that you use the latest version of firmware for the BMC model.
 5. In **Discovery Scope**, specify the IP address scope that includes the IP addresses of the BMCs. You can add a single address, a subnet, or range.
 6. In **Target Resources**, select the computers you want to provision, allow time for deep discovery, and select items to review and modify information.
 
->[!NOTE]
->If the number of physical network adapters doesn't match the number of physical adapters defined in the computer profile, you'll need to add the missing information. If you don't want to deploy a computer immediately, you can select its BMC IP address and select **Remove**.
+   >[!NOTE]
+   >If the number of physical network adapters doesn't match the number of physical adapters defined in the computer profile, you'll need to add the missing information. If you don't want to deploy a computer immediately, you can select its BMC IP address and select **Remove**.
 
 7. In **Deployment Customization**, configure the settings and when there are no more warnings about missing information, select **Next**.
 
-	- **DHCP**: If your physical computer profile uses DHCP, select a BMC IP address and type in a computer name. Decide whether to skip the AD check. If you do the check, deployment will continue if the computer account exists. Select the entry for each BMC IP address.
-	- **Static**: If the profile uses static IP addresses for each BMC IP address, type in a MAC address of the computer's network adapter that's used to communicate with VMM. Select the logical network you want to use. The default logical network is the one indicated in the profile. Select the IP subnet you want to use. The subnet list is scope to what's defined for the logical network in the associated network sites. You should select the IP subnet that corresponds to the physical location in which you're deploying the server and the network to which the adapter is connected. You can automatically assign an IP address or assign a specific address.
+	- **DHCP**: If your physical computer profile uses DHCP, select a BMC IP address and enter a computer name. Decide whether to skip the AD check. If you do the check, deployment will continue if the computer account exists. Select the entry for each BMC IP address.
+	- **Static**: If the profile uses static IP addresses for each BMC IP address, enter a MAC address of the computer's network adapter that's used to communicate with VMM. Select the logical network you want to use. The default logical network is the one indicated in the profile. Select the IP subnet you want to use. The subnet list is scope to what's defined for the logical network in the associated network sites. You should select the IP subnet that corresponds to the physical location in which you're deploying the server and the network to which the adapter is connected. You can automatically assign an IP address or assign a specific address.
 
 8. In **Summary**, confirm the settings and select **Finish**. To confirm the cluster was added, select **Fabric** > **Storage** > **File Servers**.
