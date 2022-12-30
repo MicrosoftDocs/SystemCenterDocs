@@ -109,6 +109,7 @@ To configure monitoring using Service Security Identifier, perform the following
     GRANT SELECT ON [dbo].[log_shipping_monitor_secondary] TO [SCOM_HealthService];
     GRANT SELECT ON [dbo].[log_shipping_monitor_primary] TO [SCOM_HealthService];
     GRANT EXECUTE ON [dbo].[sp_help_job] TO [SCOM_HealthService];
+    GRANT EXECUTE ON [dbo].[agent_datetime] TO [SCOM_HealthService];
     GRANT EXECUTE ON [dbo].[SQLAGENT_SUSER_SNAME] TO [SCOM_HealthService];
     ALTER ROLE [SQLAgentReaderRole] ADD MEMBER [SCOM_HealthService];
     ```

@@ -21,21 +21,21 @@ ms.technology: orchestrator
 
 This article provides information about how to manage the telemetry (Diagnostics and utility data) settings in System Center - Orchestrator.
 
-By default, Orchestrator sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security and integrity of Microsoft products and services.
+By default, Orchestrator sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security, and integrity of Microsoft products and services.
 
 Administrators can turn off this feature at any point of time.
 
 ## Turn on/off telemetry from console
 
-1. In the Orchestration console > toolbar, click **Help**.
+1. In the Orchestration console > toolbar, select **Help**.
 
-2. In the **Help** menu, click **Send diagnostic and usage data to Microsoft**.
+2. In the **Help** menu, select **Send diagnostic and usage data to Microsoft**.
 
-   ![console telemetry option](./media/telemetry/telemetry-option-help-menu.png)
+   ![Screenshot of console telemetry option.](./media/telemetry/telemetry-option-help-menu.png)
 
-3. Select the  diagnostic and usage data sharing preference from the options displayed, and click  **OK**.
+3. Select the  diagnostic and usage data sharing preference from the options displayed, and select **OK**.
 
-   ![console telemetry selection](./media/telemetry/telemetry-option-selection.png)
+   ![Screenshot of console telemetry selection.](./media/telemetry/telemetry-option-selection.png)
 
    >[!NOTE]
    >We recommend that you read the Privacy Statement before you select the option.
@@ -53,4 +53,4 @@ Administrators can turn off this feature at any point of time.
 
 
 ## Next steps
-[Work with runbooks in Orchestrator console](console-overview.md)
+[Work with runbooks in Orchestrator console](console-overview.md).

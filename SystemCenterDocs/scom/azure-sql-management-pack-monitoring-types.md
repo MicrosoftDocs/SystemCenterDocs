@@ -5,7 +5,7 @@ description: This article explains how to configure Azure REST API and T-SQL mon
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 11/23/2022
+ms.date: 12/21/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -123,7 +123,8 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
     Upon successful creation of the Azure AD application, at the **Auto-Create SPN Status** step, authentication information will be displayed.
 
-    This information is available only once. Make sure to save this information to a secure location for reuse.
+    >[!TIP]
+    > This information is available only once. Make sure to save this information to a secure location for reuse.
 
     ![Authentication information](./media/azure-sql-management-pack/reviewing-authentication-information.png)
 
