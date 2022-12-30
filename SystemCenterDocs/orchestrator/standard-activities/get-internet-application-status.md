@@ -92,7 +92,7 @@ The Get Internet Application Status activity checks the availability of an inter
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Computer**|Enter the name of the computer where the DNS server is located. You can also browse for the computer using the ellipsis **(...)** button. This field is not required to test the availability of a DNS server.|  
+|**Computer**|Enter the name of the computer where the DNS server is located. You can also browse for the computer using the ellipsis **(...)** button. This field isn't required to test the availability of a DNS server.|  
 |**Port**|Use the default port of 53 to connect to the DNS server.|  
 |**Port**|Select to specify the port to use to connect to the DNS server.|  
 |**Test DNS table IP address**|Select to specify a computer name and the IP address that should be associated with that IP address. When this option is selected, the server is only considered available if the IP address is assigned to the computer that you specify.|  
@@ -107,7 +107,7 @@ The Get Internet Application Status activity checks the availability of an inter
 |**Receive data**|Select **Publish as execution data** and select the name of the variable where the received data will be saved. Select **Save data**, specify the **File** where you want to save the data received from the Internet application. Select the action you want to specify in the **If the Destination File Exists** box. You can select **Create a file with a unique name**, **Append data to the existing file**, or **Overwrite the existing file**.|  
 |**Close port**|You must configure the **Open port** action before you can select this action.|  
 
- You can use a sequence of actions to test a custom Internet application that is not part of the predefined list. You can perform actions such as opening and closing a port and communicating with the Internet application by sending and receiving information.  
+ You can use a sequence of actions to test a custom Internet application that isn't part of the predefined list. You can perform actions such as opening and closing a port and communicating with the Internet application by sending and receiving information.  
 
 ### Published Data  
  The following table lists the published data items.  

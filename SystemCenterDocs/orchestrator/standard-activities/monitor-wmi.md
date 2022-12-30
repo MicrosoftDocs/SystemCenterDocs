@@ -72,7 +72,7 @@ The Monitor WMI activity invokes a runbook when a WMI event is received as a res
 
 |Item|Description|  
 |----------|-----------------|  
-|Computer where the WMI query is performed|The name of the computer where the WMI query was ran.|  
+|Computer where the WMI query is performed|The name of the computer where the WMI query was run.|  
 |WMI Query|The WMI query that was sent to the computer.|  
 |WMI Query Result as a string|The result of the WMI query.|  
 |WMI Namespace|The WMI namespace that you queried.|

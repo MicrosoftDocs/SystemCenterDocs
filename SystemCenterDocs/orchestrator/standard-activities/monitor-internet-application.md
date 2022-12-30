@@ -29,7 +29,7 @@ manager: "evansma"
 
 ::: moniker-end
 
-The Monitor Internet Application activity will invoke a runbook when an internet application server becomes unavailable or becomes available. You can monitor a Web, Email (POP3 or SMTP), FTP, or DNS server.  You can also configure your external FTP or Web servers to be reachable through the internet and then automatically restart the server if it is found to be unavailable.  
+The Monitor Internet Application activity will invoke a runbook when an internet application server becomes unavailable or becomes available. You can monitor a Web, Email (POP3 or SMTP), FTP, or DNS server.  You can also configure your external FTP or Web servers to be reachable through the internet and then automatically restart the server if it's found to be unavailable.  
 
 ## Configuring the Monitor Internet Application Activity  
  Use the following information to configure the Monitor Internet Application activity.  
@@ -96,7 +96,7 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Computer**|Enter the name of the computer where the DNS server is located. You can also browse for the computer using the ellipsis **(...)** button. This field is not required to test the availability of a DNS server.|  
+|**Computer**|Enter the name of the computer where the DNS server is located. You can also browse for the computer using the ellipsis **(...)** button. This field isn't required to test the availability of a DNS server.|  
 |**Port**|Select to use the default port of 53 to connect to the DNS server.|  
 |**Port**|Select to specify the port to use to connect to the DNS server.|  
 |**Test DNS table IP Address**|Select to specify a computer name and the IP address that should be associated with that IP address. When this option is selected, the server is only considered available if the IP address is assigned to the computer that you specify.|  
@@ -106,8 +106,8 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Trigger if test succeeds**|Select to invoke the Monitor Internet Application activity when the server that you are checking becomes available.|  
-|**Trigger if test fails**|Select to invoke the Monitor Internet Application activity when the server that you are checking becomes unavailable.|  
+|**Trigger if test succeeds**|Select to invoke the Monitor Internet Application activity when the server that you're checking becomes available.|  
+|**Trigger if test fails**|Select to invoke the Monitor Internet Application activity when the server that you're checking becomes unavailable.|  
 
 ### Published Data  
  The following table lists the published data items.  
