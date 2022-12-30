@@ -62,7 +62,7 @@ This article describes how to create and deploy virtual machines in the System C
 
 2.  In **Configure Settings**, review the VM settings. Either accept the default VM path on the host or specify a different location. You can optionally select to **Add this path to the list of default virtual machine paths on the host**. In **Machine Resources**, accept the default values for the VHD or modify as required. To prevent placement from choosing its own values, select the pin icon next to the setting. This option isn't available for self-service users.
 3.  In **Select Networks**, if it appears, optionally select the network settings, and select **Next**.
-4.  In **Add Properties**, configure the action to take when the host starts or stops, and the operating system that you will install on the VM. Select **Next.**
+4.  In **Add Properties**, configure the action to take when the host starts or stops, and the operating system that you'll install on the VM. Select **Next.**
 5.  In **Summary**, confirm the settings, and select **Create**. Confirm that the VM was created in **VMs and Services** > **Clouds**, and select the cloud. The virtual machine appears in the **VMs** pane.
 
 ## Deploy the VM on a host
@@ -86,7 +86,7 @@ This article describes how to create and deploy virtual machines in the System C
 
 2.  In **Configure Settings**, review the VM settings. Either accept the default VM path on the host or specify a different location. You can optionally select to **Add this path to the list of default virtual machine paths on the host**. In **Machine Resources**, accept the default values for the VHD, or modify as required. To prevent placement from choosing its own values, select the pin icon next to the setting. This option isn't available for self-service users.
 3. In **Select Networks**, if it appears, optionally select the network settings, and select **Next**.
-4. In **Add Properties**, configure the action to take when the host starts or stops, and the operating system that you will install on the VM. Select **Next.**
+4. In **Add Properties**, configure the action to take when the host starts or stops, and the operating system that you'll install on the VM. Select **Next.**
 5.  On the **Summary** page, confirm the settings and select **Create**.
 
 

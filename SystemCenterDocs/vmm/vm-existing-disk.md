@@ -78,7 +78,7 @@ This article describes how to create and deploy virtual machines in the System C
            The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy can't be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). [Learn more](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831628(v=ws.11)).
 2.  In **Configure Settings**, review the VM settings. Either accept the default VM path on the host or specify a different location. You can optionally select to **Add this path to the list of default virtual machine paths on the host**. In **Machine Resources**, accept the default values for the VHD or modify as required. To prevent placement from choosing its own values, select the pin icon next to the setting. This option isn't available for self-service users.
 3. In **Select Networks**, if it appears, optionally select the network settings, and select **Next**.
-4. In **Add Properties**, configure the action to take when the host starts or stops and the operating system that you will install on the VM. Select **Next.**
+4. In **Add Properties**, configure the action to take when the host starts or stops and the operating system that you'll install on the VM. Select **Next.**
 5. In **Summary**, confirm the settings and select **Create**.
 
 

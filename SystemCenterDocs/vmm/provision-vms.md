@@ -57,7 +57,7 @@ When you deploy or [migrate a VM](migrate-vm.md), VMM uses intelligent VM placem
 ### Host ratings
 
 
-- VMM evaluates all hosts within a selected host group and any hosts contained in child host groups. Host ratings are calculated on a scale of 0 to 5 stars, where 5 stars indicate the highest rating. The ratings are based on default criteria that don't include all information. For example, network connection speed isn't taken into account.
+- VMM evaluates all hosts within a selected host group and any hosts contained in child host groups. Host ratings are calculated on a scale of 0 to 5 stars, where five stars indicate the highest rating. The ratings are based on default criteria that don't include all information. For example, network connection speed isn't taken into account.
 - Ratings are based on individual hosts, and not on the relative suitability of all available hosts. Ratings for one host don't change based on the ratings of the other hosts.
 - VMM calculates host ratings according to specific formulas, as described in the following table.
 
@@ -190,7 +190,7 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V (V2
 
 ## Static MAC address for VMs deployed on a VMM cloud
 
-In earlier releases, VMM allowed the users to set a static MAC address on the VMs deployed on the hosts and did not have an option to set static MAC address for the VMs deployed on the cloud.
+In earlier releases, VMM allowed the users to set a static MAC address on the VMs deployed on the hosts and didn't have an option to set static MAC address for the VMs deployed on the cloud.
 
 VMM allows you to set a static MAC address for the VMs deployed on VMM Cloud.
 
