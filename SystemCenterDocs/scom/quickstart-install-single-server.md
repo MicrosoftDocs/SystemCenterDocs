@@ -50,8 +50,55 @@ You must ensure that your server meets the minimum supported configurations for 
 
 4. On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
 
+::: moniker range="sc-om-2022"
+
    > [!NOTE]
-   > For System Center 2016 - Operations Manager, the default path is `C:\Program Files\Microsoft System Center 2016\Operations Manager`.  For all later releases (1801, 1807 and 2019), the default path is `C:\Program Files\Microsoft System Center\Operations Manager`.
+   > For System Center 2022 - Operations Manager, the default path is:
+   > ```
+   > C:\Program Files\Microsoft System Center\Operations Manager
+   > ```
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
+
+   > [!NOTE]
+   > For System Center 2019 - Operations Manager, the default path is:
+   > ```
+   > C:\Program Files\Microsoft System Center\Operations Manager
+   > ```
+
+::: moniker-end
+
+::: moniker range="sc-om-1801"
+
+   > [!NOTE]
+   > For System Center 1801 - Operations Manager, the default path is:
+   > ```
+   > C:\Program Files\Microsoft System Center\Operations Manager
+   > ```
+
+::: moniker-end
+
+::: moniker range="sc-om-1807"
+
+   > [!NOTE]
+   > For System Center 1807 - Operations Manager, the default path is:
+   > ```
+   > C:\Program Files\Microsoft System Center\Operations Manager
+   > ```
+
+::: moniker-end
+
+::: moniker range="sc-om-2016"
+
+   > [!NOTE]
+   > For System Center 2016 - Operations Manager, the default path is:
+   > ```
+   > C:\Program Files\Microsoft System Center 2016\Operations Manager
+   > ```
+
+::: moniker-end
 
 5. On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -64,7 +111,11 @@ You must ensure that your server meets the minimum supported configurations for 
 7. On the **Configuration**, **Specify an installation option** page, select **Create the first Management server in a new management group**, type in a name for your management group and then click **Next**.
 
    > [!NOTE]
-   > After the management group name is set, it cannot be changed. The Management Group name cannot contain the following characters:, ( ) ^ ~ : ; . ! ? " , ' ` @ # % \ / * + = $ | & [ ] <>{}, and it cannot have a leading or trailing space. It is recommended that the Management Group name be unique within your organization if you plan to connect several management groups together.
+   > After the management group name is set, it cannot be changed. The Management Group name cannot contain the following characters:
+   > ```
+   > ( ) ^ ~ : ; . ! ? " , ' ` @ # % \ / * + = $ | & [ ] < > { }
+   > ```
+   > Also, the Management Group name cannot have a leading or trailing space. It is recommended that the Management Group name be unique within your organization if you plan to connect several management groups together.
 
 8. On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood, and agree with the license terms**, and then click **Next**.
 
@@ -92,9 +143,11 @@ You must ensure that your server meets the minimum supported configurations for 
     > These paths do not change if you connect to a different instance of SQL Server.
 
     > [!IMPORTANT]
-    > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>*  placeholder with the location of SQL Server:
+    > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>* placeholder with the location of SQL Server:
     >
-    > `mofcomp.exe "<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof"`
+    > ```
+    > mofcomp.exe "<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof"
+    > ```
 
     > [!NOTE]
     > The SQL Server model database size must not be greater than 100 MB. If it is, you might encounter an error in Setup regarding the inability to create a database on SQL due to user permissions. To resolve the issue, you must reduce the size of the model database.
@@ -108,7 +161,9 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>* placeholder with the location of SQL Server:
     >
-    > `mofcomp.exe "<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof"`
+    > ```
+    > mofcomp.exe "<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof"
+    > ```
 
     > [!NOTE]
     > These paths do not change if you connect to a different instance of SQL Server.

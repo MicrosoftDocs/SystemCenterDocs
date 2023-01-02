@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -34,7 +34,7 @@ The Monitor Service activity invokes runbooks when a service has been started or
 ## Configuring the Monitor Service Activity  
  Before you configure the Monitor Service activity, you need to determine the following:  
 
-- Which computer hosts the service that you are monitoring  
+- Which computer hosts the service that you're monitoring  
 
 - Which service you want to monitor  
 
@@ -47,9 +47,9 @@ Use the following information to configure the Monitor Service activity.
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Type the name of the computer where the service that you are monitoring is located. You can also browse for the computer using the ellipsis **(...)** button. The runbook server that runs this activity must have the appropriate rights to monitor the services on that computer.|  
-|**Service**|Type the name of the service that you are monitoring. To open the **Choose a Service** dialog box, click the ellipsis **(...)** button.|  
+|**Service**|Type the name of the service that you're monitoring. To open the **Choose a Service** dialog box, select the ellipsis **(...)** button.|  
 |**Service is started**|Select to invoke the Monitor Service activity when the selected service has been started.|  
-|**Service is stopped or paused**|Select to invoke the Monitor Service activity when the selected service has been stopped or paused.<br /><br /> When a service is restarted using the Windows Service Control Manager it is stopped and then started in succession. This will cause the Monitor Service activity to be invoked regardless of whether you have specified to invoke when the **Service is started** or **Service is stopped or paused**.|  
+|**Service is stopped or paused**|Select to invoke the Monitor Service activity when the selected service has been stopped or paused.<br /><br /> When a service is restarted using the Windows Service Control Manager, it is stopped and then started in succession. This will cause the Monitor Service activity to be invoked regardless of whether you have specified to invoke when the **Service is started** or **Service is stopped or paused**.|  
 |**Restart stopped service**|Select the **Restart stopped service** box to restart a service that has stopped. You can also use the Start/Stop Service activity instead of selecting this option.|  
 |**Test frequency**|Select the amount of time to wait between each time that the Monitor Service activity checks the status of the service.|  
 
