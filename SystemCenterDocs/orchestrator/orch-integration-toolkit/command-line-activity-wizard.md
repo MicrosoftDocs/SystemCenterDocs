@@ -41,7 +41,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 
 4.  In **Assembly file**, enter a path and filename of the assembly file that will be created by this wizard. If this file already exists, you'll be prompted to overwrite the file.  
 
-5.  Select the **Assembly information** button. You can enter information here that will become the properties of the assembly file, visible in Windows Explorer via file properties. The property values are defined in the table below. This information is optional and not required to build an assembly.  
+5.  Select **Assembly information**. You can enter information here that will become the properties of the assembly file, visible in Windows Explorer via file properties. The property values are defined in the table below. This information is optional and not required to build an assembly.  
 
     |Property|Description|  
     |-|-|   

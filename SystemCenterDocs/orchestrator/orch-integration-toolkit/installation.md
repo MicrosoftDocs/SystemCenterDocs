@@ -93,7 +93,7 @@ This article provides the system requirements and steps to install the Orchestra
 
 - Toolkit Integration Pack for Orchestrator – The System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Integration Packs`.
 
-  Integration Toolkit Utilities, Wizards, and Binary files – All the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard, and all their dependent files are by default installed to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see [The Command-Line Activity Wizard][cli-wizard] and [The Integration Pack Wizard][ip-wizard].  
+  **Integration Toolkit Utilities, Wizards, and Binary files** – All the files needed to run the Command-Line Activity Wizard, Integration Pack Wizard, and all their dependent files are by default installed to `C:\Program Files (x86)\Microsoft System Center\Orchestrator\Integration Toolkit\Bin`. For more information about the wizards, see [The Command-Line Activity Wizard][cli-wizard] and [The Integration Pack Wizard][ip-wizard].  
 
 ::: moniker-end
 
