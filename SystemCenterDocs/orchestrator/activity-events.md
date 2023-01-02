@@ -68,7 +68,7 @@ For example, use the following procedure to send traps by using SNMP version 1 t
 4.  Restart the Orchestrator Runbook Service and the Orchestrator Runbook Server Monitor service.  
 
 ### Remove All SNMP Trap Destinations  
-You cannot remove individual SNMP trap destinations. Instead, you must remove all destinations, and then add back any that you want. To remove all SNMP trap destination, run the `oedc` command with the following syntax:  
+You can't remove individual SNMP trap destinations. Instead, you must remove all destinations, and then add back any that you want. To remove all SNMP trap destination, run the `oedc` command with the following syntax:  
 
 **oedc /snmp /clear**  
 

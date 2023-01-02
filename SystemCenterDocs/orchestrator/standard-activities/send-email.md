@@ -35,7 +35,7 @@ The Send Email activity sends an email message using the standard SMTP protocol 
 > If you put more than 1 MB of text directly into the message body, the activity can fail during initialization. To avoid this issue, enter no more than 1 MB of text directly into the message body or save the text to a file and provide the file name as the message you want to send.  
 
 ## Configuring the Send Email Activity  
- Before you configure the Send Email activity, you will need to determine the following:  
+ Before you configure the Send Email activity, you'll need to determine the following:  
 
 - Your SMTP server information  
 
@@ -51,9 +51,9 @@ Use the following information to configure the Send Email activity.
 |--------------|--------------------------------|  
 |**Subject**|Enter the subject of the email.|  
 |**Recipients**|The list displays the email addresses that the email will be sent to. To add a recipient, select **Add** to open the **Recipients Properties** dialog, specify the **Email address** and from the **Recipient type** box, select **To**, **Cc**, or **Bcc**, and then select **OK**.<br /><br /> To remove a recipient, select the recipient in the **Recipients** and select **Remove**. To edit a recipient, double-click the recipient in the **Recipients** box.|  
-|**Message**|Select how you want the message to be entered for this email:<br /><br /> **Text**: Enter the message body. To use HTML formatting, you will need to select **HTML** as the **Format** on the **Advanced** tab.<br /><br /> **File**: Enter the name of the file that contains the message body. To browse for the file name, select the ellipsis **(...)** button next to the **Message** box.|  
+|**Message**|Select how you want the message to be entered for this email:<br /><br /> **Text**: Enter the message body. To use HTML formatting, you'll need to select **HTML** as the **Format** on the **Advanced** tab.<br /><br /> **File**: Enter the name of the file that contains the message body. To browse for the file name, select the ellipsis **(...)** button next to the **Message** box.|  
 |**Attachments**|The list displays the attachments that will be sent with the email. To add an attachment, select **Add** to open the **Attachment Properties** dialog, specify the path of the attachment or select the ellipsis **(...)** button next to the **File** box, and then select **OK**.<br /><br /> To remove an attachment, select the attachment in the **Attachments** box, and select **Remove**. To edit an attachment, double-click the attachment in the **Attachments** box.|  
-|**Task fails if an attachment is missing**|Select this box to cause the Send Email activity to fail if any of the attachments cannot be found when the email is being sent.|  
+|**Task fails if an attachment is missing**|Select this box to cause the Send Email activity to fail if any of the attachments can't be found when the email is being sent.|  
 
 ### Advanced  
 
@@ -61,7 +61,7 @@ Use the following information to configure the Send Email activity.
 |--------------|--------------------------------|  
 |**Priority**|Select the priority of the email from the dropdown list.  You can select **Normal**, **Low**, or **High**.|  
 |**Format**|Select the format that will be used for the message body. You can select **Rich Text**, **ASCII**, or **HTML**. **Note:**  Some SPAM filters may not allow Rich Text or HTML email.|  
-|**User Id**|If your SMTP server requires authentication, you will need to enter the user ID that will be used to send the email.|  
+|**User Id**|If your SMTP server requires authentication, you'll need to enter the user ID that will be used to send the email.|  
 |**Password**|The password that is associated with the User ID.|  
 |**Domain**|The domain associated with the User ID.|  
 

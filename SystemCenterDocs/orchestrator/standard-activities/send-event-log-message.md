@@ -32,11 +32,11 @@ manager: "evansma"
 The Send Event Log Message activity creates an entry in the Windows Event Log within the Application folder. This activity can be used to create audit logs in the Windows Event Log that document any problems that occur while trying to correct issues by using an automated runbook.  
 
 ## Configuring the Send Event Log Message Activity  
- Before you configure the Send Event Log Message activity, you will need to determine the following:  
+ Before you configure the Send Event Log Message activity, you'll need to determine the following:  
 
 - The event message you're creating.  
 
-- The severity of the event  
+- The severity of the event.
 
 Use the following information to configure the Send Event Log Message activity.  
 
