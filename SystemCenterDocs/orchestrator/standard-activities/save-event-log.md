@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ The Save Event Log activity is used to save entries from an event log so that th
 -   The format of the file  
 
 > [!NOTE]
->  If you require only specific entries to be saved and not the entire event log, you will need to know what fields to filter against as well as what values to filter.  
+>  If you require only specific entries to be saved and not the entire event log, you will need to know what fields to filter against and what values to filter.  
 
  Use the following information to configure the Save Event Log activity.  
 
@@ -74,10 +74,10 @@ The Save Event Log activity is used to save entries from an event log so that th
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**File name**|Type the name of the file where the event log entries will be saved. This file will be saved on the computer where the event log resides.|  
-|**If the file exists**|Select the action that you want to take if a file with the same name already exists:<br /><br /> -   **Create a file with a unique name**: Select to append a value to the filename to create a unique name that does not conflict with an existing name.<br />-   **Append**: Select to append the entries that are being saved to the file.<br />-   **Overwrite**: Select to overwrite the existing file with the file that is being created.<br />-   **Fail**: Select to cause the Save Event Log activity to fail if the filename already exists.|  
+|**If the file exists**|Select the action that you want to take if a file with the same name already exists:<br /><br /> -   **Create a file with a unique name**: Select to append a value to the filename to create a unique name that doesn't conflict with an existing name.<br />-   **Append**: Select to append the entries that are being saved to the file.<br />-   **Overwrite**: Select to overwrite the existing file with the file that is being created.<br />-   **Fail**: Select to cause the Save Event Log activity to fail if the filename already exists.|  
 |**File format**|Select the format that will be used to save the event log entries to the file:<br /><br /> -   **CSV Delimited**: Select to use the CSV format to write each log entry.<br />-   **TAB Delimited**: Select to separate fields in each entry using the TAB character.<br />-   **Custom Delimited**: Select to separate fields in each entry using a custom character that you specify in the **Delimiter** box.|  
 |**Delimiter**|Type the delimiter that you want to use to separate the fields of each entry.|  
-|**Create column headings**|Select to save the column header information when saving a set of entries to a file. The header information contains meta data such as the field names.|  
+|**Create column headings**|Select to save the column header information when saving a set of entries to a file. The header information contains metadata such as the field names.|  
 
 ### Published Data  
  The following table lists the published data items.  

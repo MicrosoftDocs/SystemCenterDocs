@@ -49,14 +49,14 @@ This article details the new features supported in System Center 1801 - Orchestr
 
 This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 4 of SCO 2016](https://support.microsoft.com/help/4047355/update-rollup-4-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
 
-For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+For more information about how to set up, configure, and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 ::: moniker-end
 
 ::: moniker range="sc-orch-2019"
 
 ## Support for PowerShell 4.0+
-Earlier versions of System Center Orchestrator supported PowerShell V2.0. PowerShell V2.0 did not support some scripts and users had to apply workarounds. System Center Orchestrator 2019 supports PowerShell V4.0 to resolve this issue.
+Earlier versions of System Center Orchestrator supported PowerShell V2.0. PowerShell V2.0 didn't support some scripts and users had to apply workarounds. System Center Orchestrator 2019 supports PowerShell V4.0 to resolve this issue.
 
 ## Support for SQL 2017
 System Center Orchestrator 2019 supports SQL 2017 for fresh installation.
@@ -66,13 +66,13 @@ System Center Orchestrator 2019 supports SQL 2017 for fresh installation.
 Orchestrator 2019 support SQL Server 2022.
 
 ## Other Improvements
--  Latest Putty - No workaround needed to SSH to the latest Linux/Unix machines.
--  SM/SCOM integration is cleaner and now have respective console dependency only.
+-  Latest Putty: No workaround needed to SSH to the latest Linux/Unix machines.
+-  SM/SCOM integration is cleaner and now has respective console dependency only.
 
 ## Bug fixes
 This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 6 of SCO 2016](https://support.microsoft.com/help/4465567/update-rollup-6-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
 
-For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+For more information about how to set up, configure, and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 > [!NOTE]
 > No features were introduced in System Center Orchestrator 1807.
@@ -84,7 +84,7 @@ For more information about how to set up, configure and run your environment to 
 
 This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 4 of SCO 2016](https://support.microsoft.com/help/4047355/update-rollup-4-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
 
-For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+For more information about how to set up, configure, and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ See the following sections for detailed information about the new features/featu
 
 ### SCO 2022 Integration packs
 
-Following SCO 2022 Integration packs are available for download from Download Center:
+The following SCO 2022 Integration packs are available for download from Download Center:
 
  - [System Center 2022 Configuration Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104338)
  - [System Center 2022 Operations Manager Integration Pack](https://www.microsoft.com/download/details.aspx?id=104339)
@@ -118,9 +118,9 @@ The new web API is JSON based and makes it easier to use than the older XML-base
 >[!NOTE]
 >The new Web console is a complete redesign and works only on modern browsers like Microsoft Edge without Silverlight.
 
-### Orchestrator is now a 64 bit application
+### Orchestrator is now a 64-bit application
 
-Support for 64 bit enables the use of 64 bit assemblies, Integration Packs and PowerShell cmdlets.
+Support for 64 bit enables the use of 64-bit assemblies, Integration Packs, and PowerShell cmdlets.
 
 ## New features in Orchestrator 2022 UR1
 
@@ -143,5 +143,5 @@ Ensure .NET Core 6 and Hosting Bundle are installed when you upgrade from RTM. [
 ::: moniker-end
 
 ## Next steps
-[Know the fixed issues](release-notes-orch.md)
+[Know the fixed issues](release-notes-orch.md).
 
