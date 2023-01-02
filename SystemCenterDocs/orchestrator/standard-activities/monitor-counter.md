@@ -39,15 +39,15 @@ The Monitor Counter activity invokes a runbook when a counter has reached a valu
 - The **Counter** you will be monitoring.  
 
   > [!WARNING]
-  >  Before you can use this activity, you must configure a **Counter**.  
+  > Before you can use this activity, you must configure a **Counter**.  
 
-- The value that will invoke the runbook  
+- The value that will invoke the runbook.
 
 Use the following information to configure the Monitor Counter activity.  
 
 ### Published Data  
- The following table lists the published data items.  
+The following table lists the published data items.  
 
 |Item|Description|  
 |----------|-----------------|  
-|Counter Value|The value of the counter being monitored|
+|Counter Value|The value of the counter being monitored.|
