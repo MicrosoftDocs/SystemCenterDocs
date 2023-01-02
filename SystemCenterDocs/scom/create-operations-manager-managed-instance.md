@@ -277,7 +277,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
 --- 
 
-## Create a SCOM managed instance (preview)
+## Create a SCOM Managed Instance (preview)
 
 To create a SCOM Managed Instance (preview), follow these steps:
 

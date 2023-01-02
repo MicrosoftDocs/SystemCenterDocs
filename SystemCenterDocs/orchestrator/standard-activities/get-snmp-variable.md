@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -34,12 +34,12 @@ The Get SNMP Variable activity will query a network device for the value of vari
 ## Configuring the Get SNMP Variable Activity  
  Before you configure the Get SNMP Variable activity, you need to determine the following:  
 
--   The IP address of the device, as well as the port number, SNMP MIB, and SNMP version  
+-   The IP address of the device, and also the port number, SNMP MIB, and SNMP version  
 
 -   The community string required to retrieve the variable.  
 
 > [!NOTE]
->  You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
+> You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
 
  Use the following information to configure the Get SNMP Variable activity.  
 
@@ -51,7 +51,7 @@ The Get SNMP Variable activity will query a network device for the value of vari
 |**Port**|Type port used to communicate with the network device. The default port is 161.|  
 |**Object identifier**|Type the MIB identifier of the variable whose value you want to retrieve.|  
 |**SNMP Version**|Select the SNMP version to use when connecting to the network device.|  
-|**Community string**|Type the community string that will be used to authenticate against the network device. The community should have rights of Read only or higher. This field is case-sensitive and supports only alphanumeric characters.|  
+|**Community string**|Type the community string that will be used to authenticate against the network device. The community should have the rights of Read only or higher. This field is case-sensitive and supports only alphanumeric characters.|  
 
 ### Advanced Tab  
 

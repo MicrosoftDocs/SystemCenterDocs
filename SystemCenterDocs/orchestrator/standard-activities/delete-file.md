@@ -32,7 +32,7 @@ The Delete File activity deletes files from the local file system or from a netw
 |--------------|--------------------------------|  
 |**Path**|Type the path and name of the file that you want to delete. You can use the `*` and `?` wildcards to specify the file name. These wildcards behave in the same way as the Windows Command Prompt.|  
 |**Delete files from subfolders**|Select this option to delete any files within the subfolders of the path you've specified that match the file name that you've specified.|  
-|**File age**|Select the **Is less than** or **Is more than** option from the drop-down list to delete the files that are older or newer, respectively, than the number of days that you specify.|  
+|**File age**|Select the **Is less than** or **Is more than** option from the dropdown list to delete the files that are older or newer, respectively, than the number of days that you specify.|  
 |**days**|Type the number of days that you'll use with the file age measure.|  
 
 ### Published Data  
