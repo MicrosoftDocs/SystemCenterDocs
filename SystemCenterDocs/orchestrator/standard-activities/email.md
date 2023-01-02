@@ -29,7 +29,7 @@ manager: "evansma"
 
 ::: moniker-end
 
-The following table provides a brief description of tasks you can accomplish when using an Email activity.  
+The following table provides a brief description of the tasks you can accomplish when using an Email activity.  
 
 |Tasks|Email Activities|  
 |-----------|----------------------|  

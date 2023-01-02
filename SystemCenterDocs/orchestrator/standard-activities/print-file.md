@@ -44,8 +44,8 @@ Use the following information to configure the Print File activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to print.|  
-|**Printer**|Type the path of the printer that will print the file.|  
+|**File**|Enter the path and name of the file that you want to print.|  
+|**Printer**|Enter the path of the printer that will print the file.|  
 |**Age**|Specify **is less than** or **is more than** to print the files that are older or newer, respectively, than the number of days that you specify.|  
 |**days**|Enter the number of **days** that you will use with the **Age** measure.|  
 
