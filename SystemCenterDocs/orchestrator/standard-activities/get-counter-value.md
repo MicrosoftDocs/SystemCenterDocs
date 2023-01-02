@@ -35,7 +35,7 @@ The Get Counter Value activity retrieves the value of a counter and returns it a
  Before you configure the Get Counter Value activity, you need to determine which counter you'll retrieve.  
 
 > [!WARNING]
->  Before you can use this activity, you must configure a Counter. To modify a counter, use the [Modify Counter](modify-counter.md) activity.
+> Before you can use this activity, you must configure a Counter. To modify a counter, use the [Modify Counter](modify-counter.md) activity.
 
  Use the following information to configure the Get Counter Value activity.  
 
@@ -43,7 +43,7 @@ The Get Counter Value activity retrieves the value of a counter and returns it a
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|Counter|Select the ellipsis **(...)** button to select the **Counter** that you're retrieving.|  
+|Counter|Select the ellipsis **(...)** to select the **Counter** that you're retrieving.|  
 
 ### Published Data  
  The following table lists the published data items.  

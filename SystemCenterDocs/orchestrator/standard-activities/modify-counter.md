@@ -36,7 +36,7 @@ The Modify Counter increments and decrements a counter, and resets it to its def
 ## Configuring the Modify Counter Activity  
  Before you configure the Modify Counter activity, you need to determine the following:  
 
-- The counter you are updating.  
+- The counter you're updating.  
 
 - The type of update that will be made.  
 
@@ -46,7 +46,7 @@ Use the following information to configure the Modify Counter activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Counter**|Select the ellipsis **(...)** button to select the **Counter** that you're retrieving.|  
+|**Counter**|Select the ellipsis **(...)** to select the **Counter** that you're retrieving.|  
 |**Action**|Select how you want the value of the counter to be changed:<br /><br /> **Increment**: add the **Step** value to the value of the counter.<br /><br /> **Decrement**: subtract the **Step** value from the value of the counter.<br /><br /> **Set**: set the value of the counter to the **Step** value.<br /><br /> **Reset**: reset the value of the counter to the default value.|  
 |**Value**|The value used by the **Increment**, **Decrement**, or **Set** action.|  
 

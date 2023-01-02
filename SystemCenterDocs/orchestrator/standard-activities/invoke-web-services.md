@@ -48,10 +48,10 @@ Use the following information to configure the Invoke Web Services activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**WSDL**|Enter the path of the WSDL file or use the ellipsis **(...)** button to browse for the file.|  
-|**Method**|Enter the name of the method that you're invoking on the web service, or select the ellipsis button **(...)** and browse for it. Ensure that you match the casing of the method.|  
+|**WSDL**|Enter the path of the WSDL file or use the ellipsis **(...)** to browse for the file.|  
+|**Method**|Enter the name of the method that you're invoking on the web service, or select the ellipsis **(...)** and browse for it. Ensure that you match the casing of the method.|  
 |**XML Request Payload**|Enter the parameters that you're sending to the web service method. Ensure that the format matches what is described in the WSDL document.|  
-|**Format Hint**|Select this button to receive hints on formatting the XML job payload. Replace the placeholder values with your own.|  
+|**Format Hint**|Select this to receive hints on formatting the XML job payload. Replace the placeholder values with your own.|  
 
 ### Advanced  
 

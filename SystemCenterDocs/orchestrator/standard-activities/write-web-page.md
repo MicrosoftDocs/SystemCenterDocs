@@ -29,9 +29,9 @@ manager: "evansma"
 
 ::: moniker-end
 
-The Write Web Page activity will create or add information to an HTML file. When creating new web pages with the Write Web Page activity, you can use templates that can contain any of the formatting that you require. When using the Write Web Page activity to create web pages, all occurrences of the tags \<DOC-TITLE> and \<DOC-TEXT> will be replaced by the title and text that you specify, respectively.  
+The Write Web Page activity will create or add information to an HTML file. When creating new web pages with the Write Web Page activity, you can use templates that can contain any of the formattings that you require. When using the Write Web Page activity to create web pages, all occurrences of the tags \<DOC-TITLE> and \<DOC-TEXT> will be replaced by the title and text that you specify, respectively.  
 
- When using the Write Web Page activity to append to an existing web page, you will specify an HTML tag that will mark the position where the page will be appended. The Write Web Page activity will append the text above the HTML tag that you've specified.  
+ When using the Write Web Page activity to append to an existing web page, you'll specify an HTML tag that will mark the position where the page will be appended. The Write Web Page activity will append the text above the HTML tag that you've specified.  
 
  The Write Web Page activity can be used to output the entire audit log of a runbook that was run to correct a problem on the network. You can also use the Write Web Page activity to keep a constant update of what maintenance runbooks are running and their status.  
 

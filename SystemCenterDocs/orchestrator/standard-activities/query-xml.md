@@ -36,7 +36,7 @@ The Query XML activity is used to perform an XPath query on an XML file. You can
 
 - The XML file name or Block of XML that you want to search.  
 
-- The query you will use to perform the search.  
+- The query you'll use to perform the search.  
 
 Use the following information to configure the Query XML activity.  
 
@@ -44,7 +44,7 @@ Use the following information to configure the Query XML activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**XML File**|Select either this option or the XML Text option. Enter the path or URL of the XML file that you want to search in, or select the ellipsis button **(...)** and browse for it.|  
+|**XML File**|Select either this option or the XML Text option. Enter the path or URL of the XML file that you want to search in, or select the ellipsis **(...)** and browse for it.|  
 |**XML Text**|Select either this option or the XML File option. Enter the name of the element in the XML text that you want to search in.|  
 |**XPath Query**|Enter the XPath query for your search.|  
 
@@ -55,7 +55,7 @@ Use the following information to configure the Query XML activity.
 |----------|-----------------|  
 |Escaped Query Result|The result of the query.|  
 |Escaped XML Attributes|The attributes found in the element tag of the query result.|  
-|The input XML file|The name of the XML file that you are searching in. This item is blank if you used the Block of XML option.|  
+|The input XML file|The name of the XML file that you're searching in. This item is blank if you used the Block of XML option.|  
 |The input XML text|The XML text that you searched in. This item is blank if you used the XML File option.|  
 |The XPath query.|The XPath query that was used in the search.|  
 |Node count|The number of results published from the query.|

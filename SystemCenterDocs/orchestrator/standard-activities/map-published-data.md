@@ -48,7 +48,7 @@ The Map Published Data activity transforms the existing Published Data items or 
 
 2.  Double-click the **Map Published Data** activity icon to open the **Properties** dialog.  
 
-3.  Configure the settings on the **Mapping rules** tab. Configuration instructions are listed in the following table.  
+3.  Configure the settings in the **Mapping rules** tab. Configuration instructions are listed in the following table.  
 
 ### Mapping rules  
 
@@ -59,7 +59,7 @@ The Map Published Data activity transforms the existing Published Data items or 
 |**Source data**|Insert Published Data or variable items to map to the new Published Data item. To insert items, right-click the edit box and select **Subscribe**, select **Published Data** or **Subscribe**, and select **Variable**. You can insert as many items as you want.<br /><br /> You can also enter text to transform to a new Published Data item.|  
 |**Pattern**|Enter the existing pattern that you want to transform.|  
 |**Map To**|Enter the new text that replaces the text of those items that match the Pattern.<br /><br /> Select **OK** to return to the **Map Published Data Properties** dialog.|  
-|**Add**, **Edit**, **Remove**|If you want to add more rules, select **Add** and repeat the **Pattern** and **Map To** configuration instructions. On the **Mapping rules** tab, you will see a list of all the transformations you created.<br /><br /> To remove items from the rules list, select **Remove**. To edit an item in the rules list, select **Edit**.|  
+|**Add**, **Edit**, **Remove**|If you want to add more rules, select **Add** and repeat the **Pattern** and **Map To** configuration instructions. On the **Mapping rules** tab, you'll see a list of all the transformations you created.<br /><br /> To remove items from the rules list, select **Remove**. To edit an item in the rules list, select **Edit**.|  
 
 ### Examples  
  The following examples describe how to use the Map Published Data activity.  
@@ -124,7 +124,7 @@ The Map Published Data activity transforms the existing Published Data items or 
 
 - Multiple Published Data or Variable Items  
 
-   Operating system names are usually composed of multiple parts, such as manufacturer, platform, version year, and release. In Orchestrator, each part of a name can be represented by an individual Published Data item. You can combine multiple Published Data items into one new item, such as Windows Server.  
+   Operating system names are composed of multiple parts, such as manufacturer, platform, version year, and release. In Orchestrator, each part of a name can be represented by an individual Published Data item. You can combine multiple Published Data items into one new item, such as Windows Server.  
 
   ##### To map multiple values to a single value  
 
