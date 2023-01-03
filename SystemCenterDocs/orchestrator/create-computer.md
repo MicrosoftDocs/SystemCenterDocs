@@ -44,7 +44,7 @@ The following tables list the required and optional properties and published dat
 | Display Name   | Display name of the computer   | String   |
 | DNS Host Name   | Name of the computer as registered in DNS   | String   |
 | Location   | Computer's location   | String   |
-| SAM Account Name   | The Security Accounts Manager (SAM) logon name used to support clients and servers running earlier versions of the operating system. | String   |
+| SAM Account Name   | The Security Accounts Manager (SAM) sign-in name used to support clients and servers running earlier versions of the operating system. | String   |
 
 ## Published data for Create Computer activity
 
