@@ -29,7 +29,7 @@ manager: "evansma"
 
 ::: moniker-end
 
-The Copy File activity copies a file from one directory to another. You can also copy files to network shares that are available using UNC paths. Use the Copy File activity to copy important files that have been created or modified in a folder that is being monitored by the Monitor Folder activity to a backup location.  
+The Copy File activity copies a file from one directory to another. You can also copy files to network shares that are available using UNC paths. Use the Copy File activity to copy important files that have been created or modified in a folder that's being monitored by the Monitor Folder activity to a backup location.  
 
 ## Configuring the Copy File Activity  
  Before you configure the Copy File activity, you need to know which files you're copying and the destination path where you'll put the copies.  
@@ -40,10 +40,10 @@ The Copy File activity copies a file from one directory to another. You can also
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to copy. You can use the * and ? wildcards to specify the file name or path. These wildcards behave the same way as in the Windows Command Prompt.|  
+|**File**|Enter the path and name of the file that you want to copy. You can use the * and ? wildcards to specify the file name or path. These wildcards behave the same way as in the Windows Command Prompt.|  
 |**Include sub-folders**|Select this option to copy any files within the sub-folders of the path you've specified that match the filename that you've specified.|  
-|**Folder**|Type the path of the folder where you want the files to be copied to.|  
-|**If the destination exists**|Select the action that you want to take if a file with the same name already exists in the destination folder:<br /><br /> **Overwrite**: Select this option to overwrite the existing file with the file that is being copied.<br /><br /> **Fail**: Select this option to cause the Copy File activity to fail if the filename already exists.<br /><br /> **Create a file with a unique name**: Select this option to append a value to the filename to create a unique name that doesn't conflict with an existing name.|  
+|**Folder**|Enter the path of the folder where you want the files to be copied to.|  
+|**If the destination exists**|Select the action that you want to take if a file with the same name already exists in the destination folder:<br /><br /> **Overwrite**: Select this option to overwrite the existing file with the file that's being copied.<br /><br /> **Fail**: Select this option to cause the Copy File activity to fail if the filename already exists.<br /><br /> **Create a file with a unique name**: Select this option to append a value to the filename to create a unique name that doesn't conflict with an existing name.|  
 
 ### Advanced Tab  
 
@@ -90,4 +90,4 @@ The Copy File activity copies a file from one directory to another. You can also
 |Modified date option|The option that was selected for the date to be assigned to the destination file.|  
 |Name and path of the destination file|The name and path that the file was copied to.|  
 |Name and path of the origin file|The name and path that the file was copied from.|  
-|Include sub-folders|Indicates whether the Include sub-folders check box was selected.|
+|Include sub-folders|Indicates whether the Include sub-folders checkbox was selected.|
