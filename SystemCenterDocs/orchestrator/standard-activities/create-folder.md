@@ -29,7 +29,7 @@ manager: "evansma"
 
 ::: moniker-end
 
-The Create Folder activity creates a new folder on the local file system or a network location specified using a UNC path. Use the Create Folder activity to create folders dynamically with names that represent the context in which they were created. For example, on August 25 you can create `"C:\backupfolderAug25"`.  
+The Create Folder activity creates a new folder on the local file system or a network location specified using a UNC path. Use the Create Folder activity to create folders dynamically with names that represent the context in which they were created. For example, on August 25, you can create `"C:\backupfolderAug25"`.  
 
 ## Configuring the Create Folder Activity  
  Before you configure the Create Folder activity, you need to know the name of the folder that you're creating.  

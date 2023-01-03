@@ -44,9 +44,9 @@ Use the following information to configure the Decompress File activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path of the archive file that you want to extract files from.|  
-|**Files to extract**|Type the name of the file that you want to extract. You can use the * and ? wildcards to specify the file name. These wildcards behave in the same way as in the Windows Command Prompt.|  
-|**Folder**|Type the folder name to which the files will be extracted, or select the ellipsis **(...)** button and browse for it.|  
+|**File**|Enter the path of the archive file that you want to extract files from.|  
+|**Files to extract**|Enter the name of the file that you want to extract. You can use the * and ? wildcards to specify the file name. These wildcards behave in the same way as in the Windows Command Prompt.|  
+|**Folder**|Enter the folder name to which the files will be extracted, or select the ellipsis **(...)** button and browse for it.|  
 |**Reproduce tree**|Select this option to extract the files to the same relative paths that they were saved in. To use this feature, the relative paths must have been stored in the zip archive when it was created.|  
 |**If the destination file exists**|Select the action that you want to take if a file with the same name as the file being extracted exists in the destination folder:<br /><br /> **Create a file with a unique name**: Select this option to append a value to the filename to create a unique filename that doesn't conflict with an existing filename.<br /><br /> **Overwrite**: Select this option to overwrite the existing file with the file that you're extracting.<br /><br /> **Fail**: Select this option to cause the **Decompress File** activity to fail if the file name already exists.|  
 
