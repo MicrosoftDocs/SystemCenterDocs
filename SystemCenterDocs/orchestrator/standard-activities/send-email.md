@@ -32,6 +32,7 @@ manager: "evansma"
 The Send Email activity sends an email message using the standard SMTP protocol or an Exchange server. You can use this activity to notify an administrator of problems that have occurred with a system.  
 
 > [!IMPORTANT]
+
 > If you put more than 1 MB of text directly into the message body, the activity can fail during initialization. To avoid this issue, enter no more than 1 MB of text directly into the message body or save the text to a file, and provide the file name as the message you want to send.  
 
 ## Configuring the Send Email Activity  
@@ -70,7 +71,7 @@ Use the following information to configure the Send Email activity.
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Email address**|Enter the email address that will be inserted into the From: field of the email.|  
-|**Computer**|Enter the name of the SMTP server. You can also use the ellipsis **(...)** to browse for the server.|  
+|**Computer**|Enter the name of the SMTP server. You can also use the ellipsis **(...)** button to browse for the server.|  
 |**Port**|Select to change the port that will be used to connect to the SMTP server. The default port is 25.|  
 |**Enable SSL**|Select to indicate that the SMTP connection requires SSL.|  
 
