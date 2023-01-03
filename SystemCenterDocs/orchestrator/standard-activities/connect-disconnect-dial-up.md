@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -38,7 +38,7 @@ The Connect/Disconnect Dial-up activity connects or disconnects a dial-up connec
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Dial-up or VPN entry**|Type the name of the entry as entered in the address book, or click the ellipsis **(…)** button and select the entry from the Remote Access Phone Book.|  
+|**Dial-up or VPN entry**|Type the name of the entry as entered in the address book, or select the ellipsis **(…)** button and select the entry from the Remote Access Phone Book.|  
 |**Connect/Disconnect**|Select whether to connect to or disconnect from the dial-up connection or VPN|  
 |**Attempts**|Enter the number of times the activity should attempt to connect to the remote network before quitting.|  
 |**Delay**|Enter the amount of time, in seconds, that the activity should wait between retry attempts.|  
@@ -48,7 +48,7 @@ The Connect/Disconnect Dial-up activity connects or disconnects a dial-up connec
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Domain**|Enter the name of the domain for the username.|  
-|**Username**|Enter the username to logon to the remote network.|  
+|**Username**|Enter the username to sign in to the remote network.|  
 |**Password**|Enter the password for the username.|  
 
 ### Published Data  

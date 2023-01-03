@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -43,11 +43,11 @@ The Disconnect Network Path activity allows you to disconnect a network path. Yo
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Network path**|Type the name of the network path that you want to disconnect, or click the ellipsis button **(...)** and browse for it.|  
+|**Network path**|Type the name of the network path that you want to disconnect, or select the ellipsis button **(...)** and browse for it.|  
 
 ### Published Data  
  The following table lists the published data items.  
 
 |Item|Description|  
 |----------|-----------------|  
-|Network path|The network path you are disconnecting.|
+|Network path|The network path you're disconnecting.|
