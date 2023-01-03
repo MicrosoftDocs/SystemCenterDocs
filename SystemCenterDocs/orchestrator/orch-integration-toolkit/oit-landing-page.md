@@ -16,7 +16,7 @@ ms.author: jsuri
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -24,14 +24,14 @@ The System Center Orchestrator Integration Toolkit is a set of tools to help you
 
  For more information about the role of integration packs and for other options for building custom solutions with Orchestrator, see the [System Center 2012 Integration Guide on TechNet Wiki](https://go.microsoft.com/fwlink/?LinkID=275796).
 
-## Orchestration Integration Toolkit topics
+## Orchestration Integration Toolkit articles
 
-[Overview of Orchestrator Integration Toolkit](orchestrator-integration-toolkit-overview.md)
+- [Overview of Orchestrator Integration Toolkit](orchestrator-integration-toolkit-overview.md)
 
-[Installation](installation.md)
+- [Installation](installation.md)
 
-[Command Line Activity Wizard](command-line-activity-wizard.md)
+- [Command Line Activity Wizard](command-line-activity-wizard.md)
 
-[Integration Pack Wizard](integration-pack-wizard.md)
+- [Integration Pack Wizard](integration-pack-wizard.md)
 
-[Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))
+- [Orchestrator SDK](/previous-versions/system-center/developer/hh855054(v=msdn.10))
