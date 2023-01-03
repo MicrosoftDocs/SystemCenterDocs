@@ -61,7 +61,7 @@ Use the following information to configure the Format Date/Time activity.
 |M|Month as a number from 1 to 12. If the month number is a single-digit number, it's displayed without a leading zero.|  
 |MM|Month in two digits. If the month number is a single-digit number, it's displayed with a leading zero.|  
 |MMM|The name of the month in three letters. For example, August would be represented as Aug.|  
-|MMMM|The name of the month spelled in full. For example, August would be represented as August. **Note:**  This format is only supported for the output format.|  
+|MMMM|The name of the month spelled in full. This format is supported only for output time. **Note:** This format is only supported for the output format.|  
 |d|Day as a number from 1 to 31. If the day number is a single-digit number, it's displayed without a leading zero.|  
 |dd|Day in two digits. If the day number is a single-digit number, it's displayed with a leading zero.|  
 |ddd|The abbreviated name of the day of the week in three letters. For example, Saturday is abbreviated as “Sat”.|  
