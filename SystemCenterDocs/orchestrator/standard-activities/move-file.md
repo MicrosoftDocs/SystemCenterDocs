@@ -34,9 +34,9 @@ The Move File activity moves a file from one directory to another. You can move 
 ## Configuring the Move File Activity  
  Before you configure the Move File activity, you need to determine the following:  
 
-- The files you are moving.  
+- The files you're moving.  
 
-- The destination path where you will move the files.  
+- The destination path where you'll move the files.  
 
 Use the following information to configure the Move File activity.  
 
@@ -44,17 +44,17 @@ Use the following information to configure the Move File activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to move. You can use the * and ? wildcards to specify the filename and path. These wildcards behave the same way as in the Windows Command Prompt.|  
-|**Include sub-folders**|Select this option to move any files within the sub-folders of the path you have specified that match the filename that you have specified.|  
-|**Folder**|Type the path of the folder where you want the files to be moved to.|  
-|**If the destination exists**|Select the action that you want to take if a file with the same name already exists in the destination folder:<br /><br /> **Overwrite**: Select this option to overwrite the existing file with the file that is being moved.<br /><br /> **Fail**: Select this option to cause the Move File activity to fail if the filename already exists.<br /><br /> **Create a file with a unique name**: Select this option to append a value to the filename to create a unique name that does not conflict with an existing name.|  
+|**File**|Enter the path and name of the file that you want to move. You can use the * and ? wildcards to specify the filename and path. These wildcards behave the same way as in the Windows Command Prompt.|  
+|**Include sub-folders**|Select this option to move any files within the sub-folders of the path you've specified that match the filename that you've specified.|  
+|**Folder**|Enter the path of the folder where you want the files to be moved to.|  
+|**If the destination exists**|Select the action that you want to take if a file with the same name already exists in the destination folder:<br /><br /> **Overwrite**: Select this option to overwrite the existing file with the file that is being moved.<br /><br /> **Fail**: Select this option to cause the Move File activity to fail if the filename already exists.<br /><br /> **Create a file with a unique name**: Select this option to append a value to the filename to create a unique name that doesn't conflict with an existing name.|  
 
 ### Advanced Tab  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File age**|Select **Is less than** or **Is more than** from the drop-down list to move the files that are older or newer, respectively, than the number of **days** that you specify.|  
-|**days**|Enter the number of **days** that you will use with the **File age** measure.|  
+|**File age**|Select **Is less than** or **Is more than** from the dropdown list to move the files that are older or newer, respectively, than the number of **days** that you specify.|  
+|**days**|Enter the number of **days** that you'll use with the **File age** measure.|  
 |**Date of transfer**|Set the file date at the destination to the date when it was copied to the folder.|  
 |**Same as original**|Set the date of the file at the destination to the date of the original file.|  
 
@@ -78,4 +78,4 @@ Use the following information to configure the Move File activity.
 |Modified date option|The option that was selected for the date to be assigned to the destination file.|  
 |Name and path of the destination file|The name and path that the file was moved to.|  
 |Name and path of the origin file|The name and path that the file was moved from.|  
-|Include sub-folders|Indicates whether the **Include sub-folders** check box was selected.|
+|Include sub-folders|Indicates whether the **Include sub-folders** checkbox was selected.|
