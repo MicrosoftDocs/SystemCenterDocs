@@ -30,13 +30,13 @@ The following table provides a brief description of tasks you can accomplish wit
 |Perform schedule-based activities.|[Scheduling](./standard-activities/scheduling.md)|  
 |Monitor processes or system-level events.|[Monitoring](./standard-activities/monitoring.md)|  
 |Manage file interactions such as copying and moving files.|[File Management](./standard-activities/file-management.md)|  
-|Send e-mail notifications.|[Email](./standard-activities/email.md)|  
+|Send email notifications.|[Email](./standard-activities/email.md)|  
 |Support other notification types.|[Notification](./standard-activities/notification.md)|  
 |Search for or modify data within a workflow.|[Utilities](./standard-activities/utilities.md)|  
 |Manipulate text files.|[Text File Management](./standard-activities/text-file-management.md)|  
 |Manage workflows.|[Runbook Control](./standard-activities/runbook-control.md)|  
 
-[Here](./standard-activities/alphabetical-list-of-standard-activities.md) is the alphabetical list of Orchestrator standard activities.
+[Here's](./standard-activities/alphabetical-list-of-standard-activities.md) the alphabetical list of Orchestrator standard activities.
 
 ## See Also  
 

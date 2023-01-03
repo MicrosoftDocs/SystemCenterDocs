@@ -23,13 +23,13 @@ monikerRange: '>sc-vmm-2016'
 
 This article explains about how to configure guest clusters in SDN using the System Center - Virtual machine Manager (VMM).
 
-With the introduction of the network controller, VMs, which are connected to the virtual network are only permitted to use the IP address that NC assigns for communication. NC does not support floating IP addresses which are essential for technologies such as Microsoft Failover Clustering to work.
+With the introduction of the network controller, VMs that are connected to the virtual network are only permitted to use the IP address that network controller (NC) assigns for communication. NC doesn't support floating IP addresses, which are essential for technologies such as Microsoft Failover Clustering to work.
 
 ::: moniker range="sc-vmm-1801"
 
-VMM 1801 and later, you can enable this feature by emulating the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
+In VMM 1801 and later, you can enable this feature by emulating the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
 
-VMM 1801 and later supports guest clustering in SDN through an Internal Load Balancer(ILB) Virtual IP(VIP). The ILB uses probe ports which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
+VMM 1801 and later supports guest clustering in SDN through an Internal Load Balancer (ILB) Virtual IP (VIP). The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
 
 ::: moniker-end
 
@@ -38,7 +38,7 @@ VMM 1801 and later supports guest clustering in SDN through an Internal Load Bal
 
 You can enable this feature by emulating the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
 
-VMM supports guest clustering in SDN through an Internal Load Balancer(ILB) Virtual IP(VIP). The ILB uses probe ports which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
+VMM supports guest clustering in SDN through an Internal Load Balancer (ILB) Virtual IP (VIP). The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ VMM supports guest clustering in SDN through an Internal Load Balancer(ILB) Virt
 
 Ensure the following prerequisite:
 
-Guesting clustering is managed through the SDN NC. Ensure you have set up SDN and [deployed NC](sdn-controller.md) and [SLB](sdn-slb.md).   
+Guesting clustering is managed through the SDN NC. Ensure you have set up SDN and [deployed NC](sdn-controller.md) and [SLB](sdn-slb.md). 
 
 ## Procedure - configure guest clusters
 
@@ -55,30 +55,30 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
 1. Create a cluster for your VMs using the information provided in [this article](/windows-server/networking/sdn/manage/guest-clustering#example-2-configuring-a-microsoft-failover-cluster).
 
    > [!NOTE]
-   >  Cluster should have a ProbePort parameter set to a port of your choice. This port is required while configuring the VIP template in the next step.
-   > Note the reserved IP address you are using for this cluster. This IP will be required later while creating a VIP using the VIP template.
+   > Cluster should have a ProbePort parameter set to a port of your choice. This port is required while configuring the VIP template in the next step.
+   > Note the reserved IP address you're using for this cluster. This IP will be required later while creating a VIP using the VIP template.
 
-2. Create a VIP template. In VMM console > **Fabric** > **Networking** > **VIP Templates**, right-click and select **Add VIP Template**.
+2. Create a VIP template. In the VMM console > **Fabric** > **Networking** > **VIP Templates**, right-click and select **Add VIP Template**.
 
    - In **Type**, select **Microsoft Network Controller**.
-   ![network controller](media/sdn-guest-clustering/select-controller.png)
+   ![Screenshot of network controller.](media/sdn-guest-clustering/select-controller.png)
 
-   - In **Load Balancing**, select **Enable Floating IP** Checkbox.
-   ![floating IP](media/sdn-guest-clustering/enable-floating.png)
+   - In **Load Balancing**, select the **Enable Floating IP** Checkbox.
+   ![Screenshot of floating IP.](media/sdn-guest-clustering/enable-floating.png)
 
-   - In **Health Monitor**, add the probe which would be used on the guest cluster VMs. Here, you must add the same port which was configured while clustering the hosts in the previous step.
-   ![health monitor](media/sdn-guest-clustering/health-monitors.png)
+   - In **Health Monitor**, add the probe that would be used on the guest cluster VMs. Here, you must add the same port that was configured while clustering the hosts in the previous step.
+   ![Screenshot of health monitor.](media/sdn-guest-clustering/health-monitors.png)
 
 3. Using PowerShell, create a VIP using the VIP template.
 
    > [!NOTE]
-   > As explained in the beginning of this article, an Internal Load Balancer VIP is being implemented to support Guest Clustering. The PowerShell script for creating a VIP from the VIP template, to Load Balance Internal Network traffic is provided below.
+   > As explained at the beginning of this article, an Internal Load Balancer VIP is being implemented to support Guest Clustering. The PowerShell script for creating a VIP from the VIP template to Load Balance Internal Network traffic is provided below.
 
-   Use the [sample script here](sdn-load-balance-network-traffic.md#script-for-creating-vip-to-load-balance-internal-network-traffic)to create a VIP and load balance the internal network. Modify the parameters as required, based on the following details:
+   Use the [sample script here](sdn-load-balance-network-traffic.md#script-for-creating-vip-to-load-balance-internal-network-traffic) to create a VIP and load balance the internal network. Modify the parameters as required, based on the following details:
 
-   - LBServiceName – name of the Network Controller service
-   - VipMemberNames – names of the VMs in the cluster.
-   - VipNetworkName – name of the tenant network.
-   - VipAddress – the reserved IP address from the tenant network which was used in step 2 as the IP address for the VM cluster.
-   - VipTemplateName – name of the VIP template created in step 3, above.
-   - VipName – any friendly name you want to refer to the VIP by.
+   - LBServiceName – Name of the Network Controller service.
+   - VipMemberNames – Names of the VMs in the cluster.
+   - VipNetworkName – Name of the tenant network.
+   - VipAddress – The reserved IP address from the tenant network, which was used in step 2 as the IP address for the VM cluster.
+   - VipTemplateName – Name of the VIP template created in step 3 above.
+   - VipName – Any friendly name you want to refer to the VIP by.

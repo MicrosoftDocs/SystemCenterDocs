@@ -14,9 +14,9 @@ title:  include file
 
 ##  Release notes for System Center 1801 - Orchestrator
 
-The following is the known issues observed in System Center 1801- Orchestrator.
+The following is the known issue observed in System Center 1801 - Orchestrator.
 
-## Orchestrator Web Console is not compatible with the Microsoft Edge web browser
-**Description:** You cannot open the Orchestrator web console with the Microsoft Edge web browser.
+## Orchestrator Web Console isn't compatible with the Microsoft Edge web browser
+**Description:** You can't open the Orchestrator web console with the Microsoft Edge web browser.
 
-**Work around:** Open the Orchestrator web console with Internet Explorer.
+**Workaround:** Open the Orchestrator web console with Internet Explorer.

@@ -25,19 +25,19 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
 The Read Text Log activity will read lines in a structured text log file. If you have log files that change names, you can configure the Read Text Log activity to read from the newest file in a folder that matches a file name pattern. The Read Text Log activity can be used to check a log for errors and then take corrective action on the server that is creating the log or send an email to an administrator to escalate the issue.  
 
 > [!IMPORTANT]
->  For the Read Text Log activity to work correctly, every line in the text log file must begin with a timestamp.  
+> For the Read Text Log activity to work correctly, every line in the text log file must begin with a timestamp.  
 
 ## Configuring the Read Text Log Activity  
  Before you configure the Read Text Log activity, you need to determine the following:  
 
-- The log file name you are reading.  
+- The log file name you're reading.  
 
 - The timestamps format in the log.  
 
@@ -47,10 +47,10 @@ Use the following information to configure the Read Text Log activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Select and type the name of the log file that will be read. You can also use the ellipsis **(...)** button to browse for the file.|  
-|**The most recent file in this folder**|Select and type the folder where the most recent file that matches the pattern that you specify will be read. You can also use the ellipsis **(...)** button to browse for the folder.|  
-|**Matching this pattern**|Type the file name pattern that will be used to find the log file that will be read. You can use the * and ? wildcards to specify the pattern. These wildcards behave in the same way as the Windows Command Prompt.|  
-|**Read**|Select and specify the dates that the lines you are reading are from:<br /><br /> **lines between the dates…**: Select and specify the begin date and end date that make up the range that will be read. The dates that you specify must match the **Timestamp format**.<br /><br /> **lines more recent than…**: Select and specify the oldest date of the logs that will be read. The date that you specify must match the entered **Timestamp format**.<br /><br /> **new lines**: Select to read all the logs that have not previously been read by the Read Text Log activity.|  
+|**File**|Select and enter the name of the log file that will be read. You can also use the ellipsis **(...)** to browse for the file.|  
+|**The most recent file in this folder**|Select and enter the folder where the most recent file that matches the pattern that you specify will be read. You can also use the ellipsis **(...)** to browse for the folder.|  
+|**Matching this pattern**|Enter the file name pattern that will be used to find the log file that will be read. You can use the * and ? wildcards to specify the pattern. These wildcards behave in the same way as the Windows Command Prompt.|  
+|**Read**|Select and specify the dates that the lines you're reading are from:<br /><br /> **lines between the dates…**: Select and specify the begin date and end date that make up the range that will be read. The dates that you specify must match the **Timestamp format**.<br /><br /> **lines more recent than…**: Select and specify the oldest date of the logs that will be read. The date that you specify must match the entered **Timestamp format**.<br /><br /> **new lines**: Select to read all the logs that haven't previously been read by the Read Text Log activity.|  
 |**Timestamp format**|Specify the format of the timestamp of the logs. For more information on how to specify the timestamp format, see the following Timestamp Format Codes table.|  
 |**Read the last lines**|Enter the number of lines.|  
 
@@ -67,7 +67,7 @@ Use the following information to configure the Read Text Log activity.
 |%S|Seconds in two digits.|  
 |%s|Milliseconds in three digits.|  
 
- Here are some examples of dates and their corresponding timestamp format.  
+Here are some examples of dates and their corresponding timestamp format.  
 
 |Date|Format|  
 |----------|------------|  

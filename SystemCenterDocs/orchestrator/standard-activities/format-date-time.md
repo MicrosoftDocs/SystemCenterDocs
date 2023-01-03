@@ -25,11 +25,11 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
-The Format Date/Time activity enables you to transform existing date and time formats into custom formats that you create.  
+The Format Date/Time activity enables you to transform the existing date and time formats into custom formats that you create.  
 
 ## Configuring the Format Date/Time Activity  
  Before you configure the Format Date/Time activity, you need to determine the following:  
@@ -44,10 +44,10 @@ Use the following information to configure the Format Date/Time activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Date/Time**|Type the time that you want to convert.|  
-|**Format**|Type the format of the time that you want to convert. See the Date/Time Format Codes table for format codes and examples.|  
-|**Format**|Type the format that you want to convert the input time to.|  
-|**Output Adjustments**|Type a number in any of the following fields to adjust the output time from the input time. For example, if the input time is coming from a server that is three hours ahead of your local time, type -3 in the Hours field to set the output time (your local time) to three hours behind the input time. If the input time is three hours behind your local time, type 3 to set the output time to three hours ahead of the input time.<br /><br /> You can adjust the output time using the following time units:<br /><br /> Days<br /><br /> Months<br /><br /> Years<br /><br /> Hours<br /><br /> Minutes<br /><br /> Seconds|  
+|**Date/Time**|Enter the time that you want to convert.|  
+|**Format**|Enter the format of the time that you want to convert. See the Date/Time Format Codes table for format codes and examples.|  
+|**Format**|Enter the format that you want to convert the input time to.|  
+|**Output Adjustments**|Enter a number in any of the following fields to adjust the output time from the input time. For example, if the input time is coming from a server that is three hours ahead of your local time, enter -3 in the Hours field to set the output time (your local time) to three hours behind the input time. If the input time is three hours behind your local time, enter 3 to set the output time to three hours ahead of the input time.<br /><br /> You can adjust the output time using the following time units:<br /><br /> Days<br /><br /> Months<br /><br /> Years<br /><br /> Hours<br /><br /> Minutes<br /><br /> Seconds|  
 
  To specify a date/time format, you must enter the codes that represent each part of the date and time.  
 
@@ -56,27 +56,27 @@ Use the following information to configure the Format Date/Time activity.
 |Code|Description|  
 |----------|-----------------|  
 |y|The last digit of the year. For example, 2005 would be represented as 5.|  
-|yy|The last two digits of the year number. For example, in this format 2005 would be represented as 05.|  
-|yyyy|The year number in four digits. For example, in this format 2005 would be represented as 2005.|  
-|M|Month as a number from 1 to 12. If the month number is a single-digit number, it is displayed without a leading zero.|  
-|MM|Month in two digits. If the month number is a single-digit number, it is displayed with a leading zero.|  
+|yy|The last two digits of the year number. For example, in this format, 2005 would be represented as 05.|  
+|yyyy|The year number in four digits. For example, in this format, 2005 would be represented as 2005.|  
+|M|Month as a number from 1 to 12. If the month number is a single-digit number, it's displayed without a leading zero.|  
+|MM|Month in two digits. If the month number is a single-digit number, it's displayed with a leading zero.|  
 |MMM|The name of the month in three letters. For example, August would be represented as Aug.|  
-|MMMM|The name of the month spelled in full. This format is supported only for output time. **Note:**  This format is only supported for the output format.|  
-|d|Day as a number from 1 to 31. If the day number is a single-digit number, it is displayed without a leading zero.|  
-|dd|Day in two digits. If the day number is a single-digit number, it is displayed with a leading zero.|  
+|MMMM|The name of the month spelled in full. This format is supported only for output time. **Note:** This format is only supported for the output format.|  
+|d|Day as a number from 1 to 31. If the day number is a single-digit number, it's displayed without a leading zero.|  
+|dd|Day in two digits. If the day number is a single-digit number, it's displayed with a leading zero.|  
 |ddd|The abbreviated name of the day of the week in three letters. For example, Saturday is abbreviated as “Sat”.|  
 |dddd|The full name of the day of the week. For example, Saturday is displayed in full. **Note:**  This format is only supported for the output format.|  
-|h|Hour as a number from 1 to 12 when using the 12-hour clock. If the hour number is a single-digit number, it is displayed without a leading zero.|  
-|hh|Hour in two digits using the 12-hour clock. If the hour number is a single-digit number, it is displayed with a leading zero.|  
-|H|Hour as a number from 0 to 23 when using the 24-hour clock. For example, in this format 1 pm would be represented as 13. If the hour number is a single-digit number, it is displayed without a leading zero.|  
-|HH|Hour in two digits using the 24-hour clock. For example, in this format 1 pm would be represented as 13. If the hour number is a single-digit number, it is displayed with a leading zero|  
-|m|Minutes as a number from 0 to 59. If the minute number is a single-digit number, it is displayed without a leading zero.|  
-|mm|Minutes in two digits. If the minute number is a single-digit number, it is displayed with a leading zero.|  
-|s|Seconds as a number from 0 to 59. If the second number is a single-digit number, it is displayed without a leading zero.|  
-|ss|Seconds in two digits. If the second number is a single-digit number, it is displayed with a leading zero.|  
+|h|Hour as a number from 1 to 12 when using the 12-hour clock. If the hour number is a single-digit number, it's displayed without a leading zero.|  
+|hh|Hour in two digits using the 12-hour clock. If the hour number is a single-digit number, it's displayed with a leading zero.|  
+|H|Hour as a number from 0 to 23 when using the 24-hour clock. For example, in this format, 1 pm would be represented as 13. If the hour number is a single-digit number, it's displayed without a leading zero.|  
+|HH|Hour in two digits using the 24-hour clock. For example, in this format, 1 pm would be represented as 13. If the hour number is a single-digit number, it's displayed with a leading zero|  
+|m|Minutes as a number from 0 to 59. If the minute number is a single-digit number, it's displayed without a leading zero.|  
+|mm|Minutes in two digits. If the minute number is a single-digit number, it's displayed with a leading zero.|  
+|s|Seconds as a number from 0 to 59. If the second number is a single-digit number, it's displayed without a leading zero.|  
+|ss|Seconds in two digits. If the second number is a single-digit number, it's displayed with a leading zero.|  
 |tt|A.M. or P.M. as two letters: A.M. or P.M. as defined on your system.|  
 
- Here are some examples of dates and times and their corresponding format:  
+ Here are some examples of dates and times and their corresponding formats:  
 
 |Format|Date|  
 |------------|----------|  

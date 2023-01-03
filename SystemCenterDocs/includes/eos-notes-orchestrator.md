@@ -12,4 +12,4 @@ ms.technology: orchestrator
 ---
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2022](/system-center/orchestrator/upgrade-orch).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2022](/system-center/orchestrator/upgrade-orch).

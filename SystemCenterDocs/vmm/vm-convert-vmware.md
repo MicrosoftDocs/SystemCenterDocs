@@ -24,7 +24,7 @@ This article describes how to convert VMware VMs in the System Center - Virtual 
 
 ::: moniker range=">=sc-vmm-2019"
 
-You can convert the VMs using the *Convert Virtual Machine* wizard.  You can use this wizard from the VMM console.
+You can convert the VMs using the *Convert Virtual Machine* wizard. You can use this wizard from the VMM console.
 
 ::: moniker-end
 
@@ -75,14 +75,14 @@ There are currently a couple of methods for converting VMware VMs to Hyper-V:
 4. In **Virtual Machine Configuration**, specify the number of processors and memory settings.
 5. In **Select Host**, select a Hyper-V host/Azure Stack HCI (applicable from VMM 2019 UR3 and later) for placement. In **Select Path**, configure the storage location on the host for the VM files. The default VM paths are listed.
 6. In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable.
-7. In **Add Properties**, configure the required settings. In **Summary**, review the settings, and then select **Start the virtual machine after deploying it** if necessary.
+7. In **Add Properties**, configure the required settings. In **Summary**, review the settings, and select **Start the virtual machine after deploying it** if necessary.
 8. Select **Create** to start the conversion.
    Verify the VM's conversion in **VMs and Services** > **Home** > **Show** > **VMs**.
 
 ::: moniker range=">sc-vmm-2016"
 
 ## Convert EFI-based VM to Hyper-V generation 2 VM
-System Center VMM enables migration of EFI-based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take the advantage of generation 2 features.
+System Center VMM enables the migration of EFI-based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take advantage of generation 2 features.
 
 ::: moniker-end
 
@@ -110,17 +110,17 @@ Ensure the following prerequisites are met:
 - VMware ESXi Hosts added in System Center VMM
 
 ### Conversion procedure
-1. To convert, follow the [above procedure](#convert-using-the-wizard), select **Generation 2** in step 4.
+1. To convert, follow the [above procedure](#convert-using-the-wizard) and select **Generation 2** in step 4.
 
-    ![Configure VM conversion to gen 2](media/vm-conversion/vm-conversion-select-gen2.png)
+    ![Screenshot of Configure VM conversion to gen 2.](media/vm-conversion/vm-conversion-select-gen2.png)
 
 2. Once the VM is converted, you can see the Generation 2 VM as shown in the image below:
 
-    ![vm conversion to gen 2](media/vm-conversion/vm-conversion-gen2-created.png)
+    ![Screenshot of vm conversion to gen 2.](media/vm-conversion/vm-conversion-gen2-created.png)
 
 > [!NOTE]
 > - Disk conversion (from **vmdk** to **VHDX/VHD**) is enhanced to be ~50% faster than earlier.
-> - PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based on the requirements.
+> - PowerShell commands allow you to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based on the requirements.
 
 ## Convert using PowerShell cmdlets
 
@@ -145,4 +145,4 @@ New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>]
 
 ## Next steps
 
-[Manage the VM settings](vm-settings.md)
+[Manage the VM settings](vm-settings.md).

@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -44,9 +44,9 @@ The Write to Database activity can be used to replicate important Windows Event 
 ## Configuring the Write to Database Activity  
  Before you configure the Write to Database activity, you need to determine the following:  
 
-- The database you are connecting to.  
+- The database you're connecting to.  
 
-- The table and fields you are updating.  
+- The table and fields you're updating.  
 
 Use the following information to configure the Write to Database activity.  
 
@@ -54,24 +54,24 @@ Use the following information to configure the Write to Database activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Table name**|Type the name of the database table that you are adding the row to.|  
-|**Data**|The list displays all the fields in the table that will be set. To add a field, click **Add** and enter the **Field name** and **Value**. To remove a field, select it and click **Remove**. To edit a field, double-click the field name.|  
+|**Table name**|Enter the name of the database table that you're adding the row to.|  
+|**Data**|The list displays all the fields in the table that will be set. To add a field, select **Add** and enter the **Field name** and **Value**. To remove a field, select it, and select **Remove**. To edit a field, double-click the field name.|  
 
 ### Connection Tab  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Database type**|Select the **Database type** from the drop-down list. The options include the following:<br /><br /> -   Access<br />-   ODBC<br />-   Oracle<br />-   SQL Server<br /><br /> Configuration instructions for each **Connection** tab **Database type** are listed in the following tables.|  
+|**Database type**|Select the **Database type** from the dropdown list. The options include the following:<br /><br /> -   Access<br />-   ODBC<br />-   Oracle<br />-   SQL Server<br /><br /> Configuration instructions for each **Connection** tab **Database type** are listed in the following tables.|  
 
 ### Access Connections Tab  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the name of the **Access** database file that you want to access.|  
-|**Workgroup file**|Type the name of the **Access** workgroup file that is associated with this database.|  
-|**User name**|Type the user name for the workgroup file.|  
-|**Password**|Type the password for the workgroup file.|  
-|**DB password**|Type the password for the Access database.|  
+|**File**|Enter the name of the **Access** database file that you want to access.|  
+|**Workgroup file**|Enter the name of the **Access** workgroup file that is associated with this database.|  
+|**User name**|Enter the user name for the workgroup file.|  
+|**Password**|Enter the password for the workgroup file.|  
+|**DB password**|Enter the password for the Access database.|  
 
 ### ODBC Connections Tab  
 
@@ -95,7 +95,7 @@ Use the following information to configure the Write to Database activity.
 |--------------|--------------------------------|  
 |**Authentication**|Select either **Windows Authentication** or **SQL Server Authentication**.|  
 |**Server**|Enter the name of the SQL Server that you want to access.|  
-|**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, type the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
+|**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, enter the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
 
 ### Timeout Tab  
 
