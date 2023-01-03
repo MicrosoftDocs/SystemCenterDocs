@@ -38,8 +38,8 @@ The Move Folder activity moves a folder and its sub-folders from one directory t
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Source**|Type the path of the folder that you want to move, or click the ellipsis **(...)** button to browse for it. The Move Folder activity does not support the * and ? wildcards.|  
-|**Destination**|Type the path and name that you want to move the folder to, or click the ellipsis **(...)** button to browse for it.|  
+|**Source**|Enter the path of the folder that you want to move, or select the ellipsis **(...)** button to browse for it. The Move Folder activity doesn't support the * and ? wildcards.|  
+|**Destination**|Enter the path and name that you want to move the folder to, or select the ellipsis **(...)** button to browse for it.|  
 
 ### Published Data  
  The following table lists the published data items.  

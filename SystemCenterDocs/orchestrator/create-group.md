@@ -44,7 +44,7 @@ The following tables list the required and optional properties and published dat
 | Display Name   | Display the name of the group   | String   |
 | Group Scope   | Set of flags identifying the scope of the group   | String   |
 | Group Type   | Set of flags identifying the group's type   | String   |
-| SAM Account Name   | The Security Accounts Manager (SAM) logon name used to support clients and servers running earlier versions of the operating system. | String   |
+| SAM Account Name   | The Security Accounts Manager (SAM) sign-in name used to support clients and servers running earlier versions of the operating system. | String   |
 
 ## Published data for Create Group activity
 
@@ -58,4 +58,4 @@ The following tables list the required and optional properties and published dat
 | Group Type   | Set of flags identifying the type of the group   | String   |
 | Container Distinguished Name | Distinguished name of the container where the group is located   | String   |
 | Container Path   | Path of the container where the group is located   | String   |
-| SAM Account Name   | The Security Accounts Manager (SAM) logon name used to support clients and servers running earlier versions of the operating system. | String   |
+| SAM Account Name   | The Security Accounts Manager (SAM) sign-in name used to support clients and servers running earlier versions of the operating system. | String   |

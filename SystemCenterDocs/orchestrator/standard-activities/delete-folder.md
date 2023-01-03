@@ -44,7 +44,7 @@ Use the following information to configure the Delete Folder activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Path**|Type the path of the folder that you're targeting.|  
+|**Path**|Enter the path of the folder that you're targeting.|  
 |**Delete the folder only if it is empty**|Select this option to delete the folder only if there are no files or subfolders in it.|  
 |**Delete all files and subfolders**|Select this option to delete the specified folder and all subfolders and files contained in that folder.|  
 
