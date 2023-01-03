@@ -25,7 +25,7 @@ robots: noindex
 
 You can use the Create User activity in a runbook to create a user in the Microsoft Active Directory.
 
-This activity publishes all of the data from the required and optional properties into published data except user password. Additional published data is generated based on the class that you select when you define the activity.
+This activity publishes all of the data from the required and optional properties into published data except the user password. Additional published data is generated based on the class that you select when you define the activity.
 
 The following tables list the required and optional properties and published data for this activity.
 
@@ -69,26 +69,26 @@ The following tables list the required and optional properties and published dat
 | State or Province   | User's state or province   | String   |
 | Street Address   | User's street address   | String   |
 | Phone Number   | User's telephone number   | String   |
-| RDS Allow Logon   | Specifies whether the user is allowed to log on to Remote Desktop Services   | Boolean   |
+| RDS Allow Logon   | Specifies whether the user is allowed to sign in to Remote Desktop Services   | Boolean   |
 | RDS Broken Connection Action | Specifies the action to take when a Remote Desktop Services session limit is reached   | Boolean   |
-| RDS Connect Client Drives   | Specifies whether to reconnect to mapped client drives when a user logs on to a Remote Desktop Services session   | Boolean   |
-| RDS Connect Printer Drives   | Specifies whether to reconnect to mapped client printers when a user logs on to a Remote Desktop Services session   | Boolean   |
+| RDS Connect Client Drives   | Specifies whether to reconnect to mapped client drives when a user signs in to a Remote Desktop Services session   | Boolean   |
+| RDS Connect Printer Drives   | Specifies whether to reconnect to mapped client printers when a user signs in to a Remote Desktop Services session   | Boolean   |
 | RDS Default To Main Printer  | Specifies whether to print automatically to the client's default printer from a Remote Desktop Services session   | Boolean   |
-| RDS Home Directory   | The Home directory for the user when they log on to Remote Desktop Services (RDS)   | String   |
-| RDS Home Drive   | The Home drive for the user when they log on to Remote Desktop Services   | String   |
-| RDS Initial Program   | The Path and file names of the application to start automatically when the user logs on to the Remote Desktop Services   | String   |
+| RDS Home Directory   | The Home directory for the user when they sign in to Remote Desktop Services (RDS)   | String   |
+| RDS Home Drive   | The Home drive for the user when they sign in to Remote Desktop Services   | String   |
+| RDS Initial Program   | The Path and file names of the application to start automatically when the user signs in to the Remote Desktop Services   | String   |
 | RDS Max Connection Time   | The maximum duration, in minutes, of a Remote Desktop Session for the user   | Int32   |
 | RDS Max Disconnection Time   | The maximum amount of time, in minutes, that a disconnected Remote Desktop Services session remains active for the user   | Int32   |
 | RDS Max Idle Time   | The maximum amount of time, in minutes, that a Remote Desktop Services session can remain idle for the user   | Int32   |
-| RDS Profile Path   | Roaming or mandatory profile path to use when the user logs on to Remote Desktop Services   | String   |
+| RDS Profile Path   | Roaming or mandatory profile path to use when the user signs in to Remote Desktop Services   | String   |
 | RDS Reconnection Action   | Specifies whether the user is allowed to reconnect to a disconnected Remote Desktop Services session   | Boolean   |
 | RDS Remote Control   | Specifies whether to allow remote observation or remote control of the user's Remote Desktop Services session   | Int32   |
 | RDS Work Directory   | The working directory path for the user in a Remote Desktop Session   | String   |
-| SAM Account Name   | The Security Accounts Manager (SAM) logon name used to support clients and servers running earlier versions of the operating system. | String   |
+| SAM Account Name   | The Security Accounts Manager (SAM) sign-in name used to support clients and servers running earlier versions of the operating system. | String   |
 | Title   | User's job title   | String   |
-| User Cannot Change Password  | Specifies that the user cannot change their password   | Boolean   |
-| User Must Change Password   | Specifies that the user must change their password the next time they log on   | Boolean   |
-| User Principal Name   | This attribute contains the UPN that is an Internet-style login name for a user based on the Internet standard RFC 822   | String   |
+| User Cannot Change Password  | Specifies that the user can't change their password   | Boolean   |
+| User Must Change Password   | Specifies that the user must change their password the next time they sign in   | Boolean   |
+| User Principal Name   | This attribute contains the UPN that is an Internet-style sign-in name for a user based on the Internet standard RFC 822   | String   |
 | Web Page   | User's primary web page   | String   |
 
 ## Published data for Create User activity
@@ -127,24 +127,24 @@ The following tables list the required and optional properties and published dat
 | State or Province   | User's state or province   | String   |
 | Street Address   | User's street address   | String   |
 | Phone Number   | User's telephone number   | String   |
-| RDS Allow Logon   | Specifies whether the user is allowed to log on to Remote Desktop Services   | Boolean   |
+| RDS Allow Logon   | Specifies whether the user is allowed sign in to Remote Desktop Services   | Boolean   |
 | RDS Broken Connection Action | Specifies the action to take when a Remote Desktop Services session limit is reached   | Boolean   |
-| RDS Connect Client Drives   | Specifies whether to reconnect to the mapped client drives when user logs on to a Remote Desktop Services session   | Boolean   |
-| RDS Connect Printer Drives   | Specifies whether to reconnect to the mapped client printers when user logs on to a Remote Desktop Services session   | Boolean   |
+| RDS Connect Client Drives   | Specifies whether to reconnect to the mapped client drives when user signs in to a Remote Desktop Services session   | Boolean   |
+| RDS Connect Printer Drives   | Specifies whether to reconnect to the mapped client printers when user signs in to a Remote Desktop Services session   | Boolean   |
 | RDS Default To Main Printer  | Specifies whether to print automatically to the client's default printer from a Remote Desktop Services session   | Boolean   |
-| RDS Home Directory   | The Home directory for the user when they log on to Remote Desktop Services   | String   |
-| RDS Home Drive   | The Home drive for the user when they log on to Remote Desktop Services   | String   |
-| RDS Initial Program   | Path and file names of the application to start automatically when the user logs on to the Remote Desktop Services   | String   |
+| RDS Home Directory   | The Home directory for the user when they sign in to Remote Desktop Services   | String   |
+| RDS Home Drive   | The Home drive for the user when they sign in to Remote Desktop Services   | String   |
+| RDS Initial Program   | Path and file names of the application to start automatically when the user signs in to the Remote Desktop Services   | String   |
 | RDS Max Connection Time   | The maximum duration, in minutes, of a Remote Desktop Session for the user   | Int32   |
 | RDS Max Disconnection Time   | The maximum amount of time, in minutes, that a disconnected Remote Desktop Services session remains active for the user   | Int32   |
 | RDS Max Idle Time   | The maximum amount of time, in minutes, that a Remote Desktop Services session can remain idle for the user   | Int32   |
-| RDS Profile Path   | Roaming or mandatory profile path to use when the user logs on to Remote Desktop Services   | String   |
+| RDS Profile Path   | Roaming or mandatory profile path to use when the user signs in to Remote Desktop Services   | String   |
 | RDS Reconnection Action   | Specifies whether the user is allowed to reconnect to a disconnected Remote Desktop Services session   | Boolean   |
 | RDS Remote Control   | Specifies whether to allow remote observation or remote control of the user's Remote Desktop Services session   | Int32   |
 | RDS Work Directory   | The working directory path for the user in a Remote Desktop Session   | String   |
-| SAM Account Name   | The Security Accounts Manager (SAM) logon name used to support clients and servers running earlier versions of the operating system. | String   |
+| SAM Account Name   | The Security Accounts Manager (SAM) sign-in name used to support clients and servers running earlier versions of the operating system. | String   |
 | Title   | User's job title   | String   |
-| User Cannot Change Password  | Specifies that the user cannot change their password   | Boolean   |
-| User Must Change Password   | Specifies that the user must change their password the next time they log on.   | Boolean   |
-| User Principal Name   | This attribute contains the UPN that is an Internet-style login name for a user based on the Internet standard RFC 822.   | String   |
+| User Cannot Change Password  | Specifies that the user can't change their password   | Boolean   |
+| User Must Change Password   | Specifies that the user must change their password the next time they sign in.   | Boolean   |
+| User Principal Name   | This attribute contains the UPN that is an Internet-style sign-in name for a user based on the Internet standard RFC 822.   | String   |
 | Web Page   | User's primary web page   | String   |
