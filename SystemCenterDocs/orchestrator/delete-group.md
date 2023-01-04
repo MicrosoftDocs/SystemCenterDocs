@@ -33,10 +33,10 @@ The following tables list the required and optional properties and published dat
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
-| Distinguished Name | Distinguished name of the group to delete | String   |
+| Distinguished Name | Distinguished name of the group to delete | String |
 
 ## Published data for Delete Group activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
-| Distinguished Name | Distinguished name of the group to delete | String   |
+| Distinguished Name | Distinguished name of the group to delete | String |
