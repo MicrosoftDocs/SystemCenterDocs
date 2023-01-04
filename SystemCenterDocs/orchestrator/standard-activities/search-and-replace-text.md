@@ -42,7 +42,7 @@ The Search and Replace Text activity searches for and replaces text that you spe
 
 - The text you want to search for.  
 
-- The replacement text  
+- The replacement text.
 
 Use the following information to configure the Search and Replace Text activity.  
 
@@ -50,26 +50,26 @@ Use the following information to configure the Search and Replace Text activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to read the text from, or click the ellipsis button **(...)** and browse for it.|  
-|**File encoding**|Click the ellipsis button **(...)** to open the **File Encoding** dialog box and select the format that the file is encoded in from the **File Encoding** drop-down list. Verify that you select the correct encoding format: if the file uses a different encoding format, the activity fails.|  
-|**Search text**|Type the text that you are searching for in the file.|  
+|**File**|Enter the path and name of the file that you want to read the text from, or select the ellipsis button **(...)** and browse for it.|  
+|**File encoding**|Select the ellipsis button **(...)** to open the **File Encoding** dialog and select the format that the file is encoded in from the **File Encoding** dropdown list. Verify that you select the correct encoding format: if the file uses a different encoding format, the activity fails.|  
+|**Search text**|Enter the text that you're searching for in the file.|  
 |**Case sensitive**|Select this option to search only for lines where the case of the words matches the text from the **Search text** field exactly.|  
 |**Use regular expressions**|Select this option to use regular expressions in your search. |  
-|**Replacement text**|Type the text that you want to replace the search text with.|  
+|**Replacement text**|Enter the text that you want to replace the search text with.|  
 
 ### Published Data  
  The following table lists the published data items.  
 
 |Item|Description|  
 |----------|-----------------|  
-|Case sensitive|Indicates whether the Case sensitive check box was checked or not.|  
+|Case sensitive|Indicates whether the Case sensitive checkbox was checked or not.|  
 |File encoding|The file encoding format that you selected in the File encoding field.|  
 |File name|The name of the file that was searched for text.|  
-|Line number of match|The line number where matching text was found.|  
+|Line number of match|The line number where the matching text was found.|  
 |Modified line|The entire line of text as it was written after the replace operations occurred.|  
 |Number of lines matched|The number of lines where matching text was found.|  
 |Number of matches|The number of matching items that were found.|  
 |Original line|The entire line of text as it was written before the replace operation occurred.|  
 |Replace text|The text that was used to replace the search text.|  
 |Search text|The search string that was used for the search.|  
-|Use Regex|Indicates whether the Use regular expressions check box was checked or not.|
+|Use Regex|Indicates whether the Use regular expressions checkbox was checked or not.|
