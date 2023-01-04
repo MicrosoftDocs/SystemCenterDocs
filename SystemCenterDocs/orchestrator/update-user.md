@@ -83,7 +83,7 @@ The following tables list the required and optional properties and published dat
 | RDS Remote Control   | Specifies whether to allow remote observation or remote control of the user's Remote Desktop Services session   | Int32   |
 | RDS Work Directory   | The working directory path for the user in a Remote Desktop Session   | String   |
 | Title   | User's job title   | String   |
-| User Cannot Change Password  | Specifies that the user cannot change their password   | Boolean   |
+| User Cannot Change Password  | Specifies that the user can't change their password   | Boolean   |
 | User Must Change Password   | Specifies that the user must change their password the next time they sign in.   | Boolean   |
 | User Principal Name   | This attribute contains the UPN that is an Internet-style sign-in name for a user based on the Internet standard RFC 822 | String   |
 | Web Page   | User's primary web page   | String   |
@@ -137,7 +137,7 @@ The following tables list the required and optional properties and published dat
 | RDS Remote Control   | Specifies whether to allow remote observation or remote control of the user's Remote Desktop Services session   | Int32   |
 | RDS Work Directory   | The working directory path for the user in a Remote Desktop Session   | String   |
 | Title   | User's job title   | String   |
-| User Cannot Change Password  | Specifies that the user cannot change their password   | Boolean   |
+| User Cannot Change Password  | Specifies that the user can't change their password   | Boolean   |
 | User Must Change Password   | Specifies that the user must change their password the next time they sign in.   | Boolean   |
 | User Principal Name   | This attribute contains the UPN that is an Internet-style sign-in name for a user based on the Internet standard RFC 822 | String   |
 | Web Page   | User's primary web page   | String   |

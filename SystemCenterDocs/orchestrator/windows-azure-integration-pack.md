@@ -29,7 +29,7 @@ Microsoft is committed to protecting your privacy while delivering software that
 
 ## System Requirements
 
-Before you install the Integration Pack for Windows Azure, the following listed software must be installed and configured. For more information about installing and configuring Orchestrator and Windows Azure, refer to the respective product documentation.
+Before you install the Integration Pack for Windows Azure, the following listed software must be installed and configured. For more information about installing and configuring Orchestrator and Windows Azure, see the respective product documentation.
 
 ::: moniker range="<=sc-orch-2019"
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
@@ -61,7 +61,7 @@ Before you install the Integration Pack for Windows Azure, the following listed 
 
 ## Register and Deploy the Integration Pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Add an Integration Pack](how-to-add-an-integration-pack.md).
+After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Add an Integration Pack](how-to-add-an-integration-pack.md).
 
 ## Configure the Windows Azure Connections
 

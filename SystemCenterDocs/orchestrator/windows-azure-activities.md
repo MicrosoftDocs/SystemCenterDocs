@@ -58,13 +58,13 @@ The **Properties** tab contains properties that are specific to the activity. Al
 Some activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When you specify filter criteria, you can select one of the available methods of comparison. The system provides an option to either match or not match the filter using each method. For example, the "Does not" version of a method finds items that do not match the filter to trigger the runbook.
 
 -   **Equals**: The property of the item exactly matches the text or number specified in the filter.
--   **Does not equal**: The property of the item does not exactly match the text or number specified in the filter.
+-   **Does not equal**: The property of the item doesn't exactly match the text or number specified in the filter.
 -   **Is less than**: The numeric property of the item is less than the number specified in the filter.
 -   **Is less than or equal to**: The numeric property of the item is less than or equal to the number specified in the filter.
 -   **Is greater than**: The property of the item is greater than the number specified in the filter.
 -   **Is greater than or equal to**: The numeric property of the item is greater than or equal to the number specified in the filter.
 -   **Contains**: The property of the item contains the exact text specified in the filter. There can be other text surrounding the matching text.
--   **Does not contain**: The property of the item does not contain the exact text specified in the filter.
+-   **Does not contain**: The property of the item doesn't contain the exact text specified in the filter.
 -   **Matches pattern**: This comparison method uses regular expressions to specify a pattern that the text must match.
 -   **Does not match pattern**: This comparison method uses regular expressions to specify a pattern that the text must not match.
 -   **Starts with**: The property of the item starts with the exact text specified in the filter.
@@ -86,7 +86,7 @@ By default, the data from a **Get** activity will be passed on as multiple indiv
 -   **Separate with**. Each item is separated by one or more characters of your choice.
 -   **Use CSV format**. All items are in the CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
 
-A **Get** activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
+A **Get** activity will produce a new set of data every time it runs. The **Flatten** feature doesn't flatten data across multiple instances of the same activity.
 
 ## Time-out and failure event notifications
 
@@ -111,7 +111,7 @@ An activity can only subscribe to data from the activities that occur before it 
 
 3.  Select the published data element that you want to use, and select **OK**.
 
-For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
+For a list of the data elements published by each activity, see the **Published Data** tables in the activity article. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
 
 ## Activities
 
