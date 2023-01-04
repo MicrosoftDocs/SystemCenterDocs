@@ -1,6 +1,6 @@
 ---
 title: Map Network Path
-description: This articles describes the functionality of Map Network Path activity.
+description: This article describes the functionality of Map Network Path activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
@@ -44,7 +44,7 @@ Use the following information to configure the Map Network Path activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Network path**|Enter the network path that you want to connect to in UNC format (\\\servername\foldername), or select the ellipsis button **(...)** and browse for it.<br /><br /> Verify that the network path that you want to map does not already exist.|  
+|**Network path**|Enter the network path that you want to connect to in UNC format (\\\servername\foldername), or select the ellipsis button **(...)** and browse for it.<br /><br /> Verify that the network path that you want to map doesn't already exist.|  
 |**User account**|Enter the user account that you need to access the network path.|  
 |**Password**|Enter the password that you need to access the network path.|  
 
