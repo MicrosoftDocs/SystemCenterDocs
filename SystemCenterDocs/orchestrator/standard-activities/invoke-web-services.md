@@ -29,18 +29,18 @@ manager: "evansma"
 
 ::: moniker-end
 
-The Invoke Web Services activity runs a web service with XML parameters you specify.  
+The Invoke Web Services activity runs a web service with the XML parameters you specify.  
 
 ## Configuring the Invoke Web Services Activity  
  Before you configure the Invoke Web Services activity, you need to determine the following:  
 
-- WSDL file of the web service  
+- WSDL file of the web service.
 
-- Web service method name  
+- Web service method name.
 
-- Input SOAP message body format  
+- Input SOAP message body format.
 
-- Output SOAP message body format  
+- Output SOAP message body format.
 
 Use the following information to configure the Invoke Web Services activity.  
 
@@ -48,26 +48,26 @@ Use the following information to configure the Invoke Web Services activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**WSDL**|Type the path of the WSDL file or use the ellipsis **(...)** button to browse for the file.|  
-|**Method**|Type the name of the method that you are invoking on the web service, or click the ellipsis button **(...)** and browse for it. Make sure that you match the casing of the method.|  
-|**XML Request Payload**|Type the parameters that you are sending to the web service method. Make sure that the format matches what is described in the WSDL document.|  
-|**Format Hint**|Click this button to receive hints on formatting the XML job payload. Replace the placeholder values with your own.|  
+|**WSDL**|Enter the path of the WSDL file or use the ellipsis **(...)** to browse for the file.|  
+|**Method**|Enter the name of the method that you're invoking on the web service, or select the ellipsis **(...)** and browse for it. Ensure that you match the casing of the method.|  
+|**XML Request Payload**|Enter the parameters that you're sending to the web service method. Ensure that the format matches what is described in the WSDL document.|  
+|**Format Hint**|Select this to receive hints on formatting the XML job payload. Replace the placeholder values with your own.|  
 
 ### Advanced  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Save**|To save the responses, select the **Save** check box and specify the folder where the responses will be saved.|  
-|**URL**|To specify the URL location of the web service, select the **URL** check box and type the URL location.|  
+|**Save**|To save the responses, select the **Save** checkbox and specify the folder where the responses will be saved.|  
+|**URL**|To specify the URL location of the web service, select the **URL** checkbox and enter the URL location.|  
 |**Value**|Select the SOAP protocol that the web service uses. The **Value** options include the following:<br /><br /> -   SOAP 1.1<br />-   SOAP 1.2|  
 
 ### Security  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Enable**|Select the **Enable** check box to enable HTTP authentication, and fill in the fields.|  
-|**User name**|Type the user name to access the secured web service.|  
-|**Password**|Type the password to access the secured web service.|  
+|**Enable**|Select the **Enable** checkbox to enable HTTP authentication, and fill in the fields.|  
+|**User name**|Enter the user name to access the secured web service.|  
+|**Password**|Enter the password to access the secured web service.|  
 
 ###  <a name="BKMK_HTTPS"></a> HTTPS certificate options  
  Orchestrator allows you to configure HTTPS certificate options in cases where certificate validation fails.  
@@ -76,7 +76,7 @@ Use the following information to configure the Invoke Web Services activity.
 
 ##### To configure HTTPS certificate options  
 
-1.  In the Runbook Designer, click the **Options** menu, and select **Invoke Web Services** to open the **Invoke Web Services** dialog box.  
+1.  In the Runbook Designer, select the **Options** menu and select **Invoke Web Services** to open the **Invoke Web Services** dialog.  
 
 2.  Configure the settings on the **Details** tab. Configuration instructions are listed in the following table.  
 
@@ -90,13 +90,13 @@ Use the following information to configure the Invoke Web Services activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Accept all certificates**|Accepts certificates from all hosts.<br /><br /> After you select this HTTPS option, click **Finish**.|  
+|**Accept all certificates**|Accepts certificates from all hosts.<br /><br /> After you select this HTTPS option, select **Finish**.|  
 
 ### Accept certificates from trusted hosts Details  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Accept certificates from trusted hosts**|Specifies the hosts you want to accept the certificates from.<br /><br /> 1.  Click **Add** to open the **Trusted Host** dialog box.<br />2.  Type the trusted host name in the **Value** box, and click **OK**. The host is then added to the list.<br /><br /> To edit hosts, click **Edit**.<br /><br /> To remove hosts, click **Remove**.|  
+|**Accept certificates from trusted hosts**|Specifies the hosts you want to accept the certificates from.<br /><br /> 1.  Select **Add** to open the **Trusted Host** dialog.<br />2.  Enter the trusted host name in the **Value** box, and select **OK**. The host is then added to the list.<br /><br /> To edit hosts, select **Edit**.<br /><br /> To remove hosts, select **Remove**.|  
 
 ### Published Data  
  The following table lists the published data items.  
@@ -112,6 +112,6 @@ Use the following information to configure the Invoke Web Services activity.
 |Web Service protocol|The protocol that the web service uses.|  
 
 ### Publishing web services  
- The Invoke Web Service object builds an assembly at **C:\ProgramData\Microsoft System Center 2012\Orchestrator\Activities\WebServices2**or **C:\Users\USERNAME\AppData\Local\Microsoft System Center 2012\Orchestrator\Activities\WebServices2**.  The assembly is identified by the web service location. For example, **http://localhost/TestService/DylanService.asmx?WSDL**.  
+ The Invoke Web Service object builds an assembly at **C:\ProgramData\Microsoft System Center 2012\Orchestrator\Activities\WebServices2**or **C:\Users\USERNAME\AppData\Local\Microsoft System Center 2012\Orchestrator\Activities\WebServices2**. The assembly is identified by the web service location. For example, **http://localhost/TestService/DylanService.asmx?WSDL**.  
 
- If you publish additional services, or update an existing service, you must clean the cache, except for the **wspkey.snk** file. After cleaning the cache, the web service changes are correctly published.
+ If you publish additional services or update an existing service, you must clean the cache, except for the **wspkey.snk** file. After cleaning the cache, the web service changes are   correctly published.
