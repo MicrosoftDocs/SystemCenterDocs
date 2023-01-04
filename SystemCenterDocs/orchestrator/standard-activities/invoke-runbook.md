@@ -30,15 +30,15 @@ manager: "evansma"
 ::: moniker-end
 
 
-The Invoke Runbook activity launches a runbook that you have specified. You can transfer data to runbooks by configuring an [Initialize Data](initialize-data.md) activity in the invoked runbook. You can return data from the invoked runbook by configuring a [Return Data](return-data.md) activity.  
+The Invoke Runbook activity launches a runbook that you've specified. You can transfer data to runbooks by configuring an [Initialize Data](initialize-data.md) activity in the invoked runbook. You can return data from the invoked runbook by configuring a [Return Data](return-data.md) activity.  
 
- You can use the Invoke Runbook activity to invoke generic runbooks that only perform specific actions that do not depend on how the runbook is invoked. For example, you can create a runbook that calls separate runbooks to perform a backup maintenance procedure that in turn calls a runbook to shut down services, another runbook to back up data, and then a final runbook to restart the services.  
+ You can use the Invoke Runbook activity to invoke generic runbooks that only perform specific actions that don't depend on how the runbook is invoked. For example, you can create a runbook that calls separate runbooks to perform a backup maintenance procedure that in turn calls a runbook to shut down services, another runbook to back up data, and then a final runbook to restart the services.  
 
 > [!IMPORTANT]
->  If you modify the folder name or location of a runbook, you must also re-configure any Invoke Runbook activity that references the modified runbook.  
+> If you modify the folder name or location of a runbook, you must also reconfigure any Invoke Runbook activity that references the modified runbook.  
 
 ## Configuring the Invoke Runbook activity  
- Before you configure the Invoke Runbook activity, you need to know which runbook you are invoking.  
+ Before you configure the Invoke Runbook activity, you need to know which runbook you're invoking.  
 
  Use the following information to configure the Invoke Runbook activity.  
 
@@ -46,11 +46,11 @@ The Invoke Runbook activity launches a runbook that you have specified. You can 
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Runbook**|Click the ellipsis **(...)** button to browse for the runbook that you want to invoke. **Important:**  Do not invoke a runbook that starts with a Monitor activity.|  
+|**Runbook**|Select the ellipsis **(...)** button to browse for the runbook that you want to invoke. **Important:**  Don't invoke a runbook that starts with a Monitor activity.|  
 |**Invoke by path**|Select to force the Invoke Runbook activity to invoke the runbook by the specific path and name. When selected, any runbook with the same name in the same folder location is invoked. When unselected, the runbook that is invoked can be moved around the environment and the Invoke Runbook activity automatically maps itself to the new location.|  
-|**Wait for completion**|Select to force the Invoke Runbook activity to keep the invoked runbook running until it is completed. **Important:**  Do not select **Wait for completion** if any return data in the invoked runbook is also return data in the invoking runbook.|  
-|**Parameters**|If you have selected a runbook that contains an [Initialize Data](initialize-data.md) activity, the list of parameters required to invoke that activity will be displayed. Enter a value for each parameter.|  
-|**Runbook Servers**|Type the list of runbook servers that will run this runbook. Separate each name with a semi-colon `(;)`. The order in which the runbook servers are listed will be the order used for failover and load balancing of the runbook. The runbook server names must correspond to the names that are displayed within the runbook server’s tree in the Orchestrator Deployment Manager. Leave this field blank to use the runbook or global defaults for the runbook server assignment.|  
+|**Wait for completion**|Select to force the Invoke Runbook activity to keep the invoked runbook running until it's completed. **Important:** Don't select **Wait for completion** if any return data in the invoked runbook is also return data in the invoking runbook.|  
+|**Parameters**|If you've selected a runbook that contains an [Initialize Data](initialize-data.md) activity, the list of parameters required to invoke that activity will be displayed. Enter a value for each parameter.|  
+|**Runbook Servers**|Enter the list of runbook servers that will run this runbook. Separate each name with a semi-colon `(;)`. The order in which the runbook servers are listed will be the order used for failover and load balancing of the runbook. The runbook server names must correspond to the names that are displayed within the runbook server’s tree in the Orchestrator Deployment Manager. Leave this field blank to use the runbook or global defaults for the runbook server assignment.|  
 
 ### Published Data  
  The following table lists the published data items from the Invoke Runbook activity.  
@@ -66,6 +66,6 @@ The Invoke Runbook activity launches a runbook that you have specified. You can 
  If you use the Invoke Runbook activity and you use [Security Credentials](../common-activity-properties.md#security-credentials), the account you use must be a member of the Orchestrator System group to run successfully.  
 
 ## See Also  
- [Initialize Data](initialize-data.md)   
- [Return Data](return-data.md)   
- [Security Credentials](../common-activity-properties.md#security-credentials)
+- [Initialize Data](initialize-data.md)
+- [Return Data](return-data.md)
+- [Security Credentials](../common-activity-properties.md#security-credentials)

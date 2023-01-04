@@ -30,7 +30,7 @@ When you add fiber channel or iSCSI storage to a Hyper-V host managed in the VMM
 
 ## MPIO tracking in VMM
 
-When Hyper-V hosts and clusters are added to the VMM fabric, VMM deploys an agent to connectivity between the host and the VMM server. Additionally, VMM collects configuration information about the host or cluster and adds it to VMM. For MPIO, VMM adds two registry keys containing MPIO information.
+When Hyper-V hosts and clusters are added to the VMM fabric, VMM deploys an agent to connect between the host and the VMM server. Additionally, VMM collects configuration information about the host or cluster and adds it to VMM. For MPIO, VMM adds two registry keys containing MPIO information.
 
   - HKEY LOCAL MACHINE\SYSTEM\CurrentControlSet\Control\MPDEV\MPIOSupportedDeviceList
   - HKEY LOCAL MACHINE\SYSTEM\CurrentControlSet\Services\msdsm\Parameters\DsmSupportedDeviceList
