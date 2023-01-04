@@ -33,9 +33,9 @@ The following tables list the required and optional properties and published dat
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
-| ReturnDNOnly | If true, only the Distinguished Name property will be returned instead of all properties.   | Boolean   |
+| ReturnDNOnly | If true, only the Distinguished Name property will be returned instead of all the properties.   | Boolean   |
 | Search Root  | The distinguished name of the node in the Active Directory Domain Services hierarchy where the search starts. | String   |
-| Search Scope | The scope of the search that is observed by the server. The options are Base, OneLevel or SubTree.   | String   |
+| Search Scope | The scope of the search that is observed by the server; the options are Base, OneLevel, or SubTree   | String   |
 
 ## Get Computer filter properties
 
@@ -48,7 +48,7 @@ The following tables list the required and optional properties and published dat
 | Indirect MemberOf   | Distinguished names of groups that this computer is an indirect member of | EqualTo   | String   |
 | Computer Role   | Computer's role in the domain: Domain Controller, server, or workstation  | Equals, DoesNotEqual   | Int32   |
 | Location   | Computer's location   | Equals, DoesNotEqual   | String   |
-| Managed By   | Distinguished name of the user that is assigned to manage this object.   | EqualTo   | String   |
+| Managed By   | Distinguished name of the user that is assigned to manage this object  | EqualTo   | String   |
 | MemberOf   | Distinguished names of groups that this computer is a member of   | EqualTo   | String   |
 | Operating System   | Name of the computer's operating system   | EqualTo, NotEqualTo, Contains, DoesNotContain, EndsWith, StartsWith   | String   |
 | Operating System Service Pack | Service pack level of the computer's operating system   | EqualTo, NotEqualTo, Contains, DoesNotContain, EndsWith, StartsWith   | String   |
@@ -62,21 +62,21 @@ The following tables list the required and optional properties and published dat
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
-| Disabled   | Specifies whether the account is currently disabled.   | Boolean   |
-| Common Name   | Name to identify the computer.   | String   |
-| Count   | The number of groups returned by this activity.   | Integer   |
-| Description   | Description of the computer.   | String   |
+| Disabled   | Specifies whether the account is currently disabled   | Boolean   |
+| Common Name   | Name to identify the computer | String   |
+| Count   | The number of groups returned by this activity   | Integer   |
+| Description   | Description of the computer   | String   |
 | Display Name   | Displays the name of the computer   | String   |
 | Distinguished Name   | Distinguished name that uniquely identifies the computer account   | String   |
 | DNS Host Name   | Name of the computer as registered in DNS   | String   |
 | Location   | Computer's location   | String   |
 | Computer Role   | Computer's role in the domain: Domain Controller, server, or workstation   | Int32   |
-| Managed By   | Distinguished name of the user that is assigned to manage this object.   | String   |
+| Managed By   | Distinguished name of the user that is assigned to manage this object   | String   |
 | Operating System   | Name of the computer operating system   | String   |
 | Operating System Service Pack | Service pack level of the computer operating system   | String   |
 | Operating System Version   | Version of the computer operating system   | String   |
 | Sam Account Name   | Account name to support earlier versions of the operating system   | String   |
 | Modification Date   | The date when the computer account was last changed   | DateTime   |
 | Creation Date   | The date and time when the account was created   | DateTime   |
-| Search Root   | The distinguished name of the node in the Active Directory Domain Services hierarchy where the search starts. | String   |
-| Search Scope   | The scope of the search that is observed by the server. The options are Base, OneLevel or SubTree.   | String   |
+| Search Root   | The distinguished name of the node in the Active Directory Domain Services hierarchy where the search starts | String   |
+| Search Scope   | The scope of the search that is observed by the server; the options are Base, OneLevel, or SubTree   | String   |
