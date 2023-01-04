@@ -26,16 +26,16 @@ When you install Operations Manager in a security hardened environment, the setu
 
 ## Important information
 
-In a disabled RC4 environment, when you try to install Operations Manager, you can't pass the Account Validation stage if the steps in the [Before you Begin](#before-you-begin) section are not implemented, and you will see the following error in the Operations Manager setup:
+In a disabled RC4 environment, when you try to install Operations Manager, you can't pass the Account Validation stage if the steps in the [Before you Begin](#before-you-begin) section aren't implemented, and you'll see the following error in the Operations Manager setup:
 
 ![Screenshot of the Error in operations manager setup.](./media/protocol-disabled/error-operations-manager-setup.png)
 
 
-Operations Manager internally uses a Windows Security API as part of its credential validation process and the requested encryption type is not supported by the KDC. The client and service should support the same type of encryption for communication.
+Operations Manager internally uses a Windows Security API as part of its credential validation process and the requested encryption type isn't supported by the KDC. The client and service should support the same type of encryption for communication.
 
 When a service ticket is requested, the domain controller selects the ticket encryption type based on the **msDS-SupportedEncryptionTypes** attribute of the account associated with the requested SPN.
 
-By default, user accounts don't have a value set, unless you've manually enabled AES on them, tickets for service accounts are encrypted with RC4. For more information, see [Decrypting the Selection of Supported Kerberos Encryption Types - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797).
+By default, user accounts don't have a value set, unless you've manually enabled AES on them; tickets for service accounts are encrypted with RC4. For more information, see [Decrypting the Selection of Supported Kerberos Encryption Types - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797).
 
 For more information on registry entries about Kerberos version 5 authentication protocol, see [Kerberos protocol registry entries and KDC configuration keys in Windows](/troubleshoot/windows-server/windows-security/kerberos-protocol-registry-kdc-configuration-keys).
 
@@ -47,7 +47,7 @@ Before you begin, implement the steps in the section below:
 
 For information about how to configure the encryption types allowed for Kerberos, see [Network security Configure encryption types allowed for Kerberos - Windows security | Microsoft Docs](/windows/security/threat-protection/security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos).
 
-In an environment which has RC4 disabled, ensure the following steps are implemented:
+In an environment that has RC4 disabled, ensure the following steps are implemented:
 
 1. The user account used to install Operations Manager has **AES Attributes** enabled on the **Domain Controller**. Navigate to the user object in Active Directory and verify that the **Account options** have the following:
    - Check **This account supports Kerberos AES 128 bit encryption.**

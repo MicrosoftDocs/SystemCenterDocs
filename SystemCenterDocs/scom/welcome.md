@@ -34,11 +34,11 @@ Welcome to System Center - Operations Manager. Operations Manager provides infra
 
 -   [Deploying System Center - Operations Manager](deploy-overview.md)
 
-    Read these topics to learn how to deploy Operations Manager in your environment.
+    Read these articles to learn how to deploy Operations Manager in your environment.
 
 -   [System Center - Operations Manager Operations Guide](manage-operations-guide-overview.md)
 
-    Read these topics once you've Operations Manager up and running and are looking to start monitoring your environment and procedures for day-to-day operations.
+    Read these articles once you've Operations Manager up and running and are looking to start monitoring your environment and procedures for day-to-day operations.
 
 -   [Management Pack Authoring Guide for Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh457564(v=sc.12))
 

@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-Operations Manager, a component of Microsoft System Center, is a software that helps you monitor services, devices, and operations for many computers from a single console. This article explains the basic concepts about Operations Manager for the administrator who manages the Operations Manager infrastructure and the operator who monitors and supports the IT services for your business.
+Operations Manager, a component of Microsoft System Center, is software that helps you monitor services, devices, and operations for many computers from a single console. This article explains the basic concepts about Operations Manager for the administrator who manages the Operations Manager infrastructure and the operator who monitors and supports the IT services for your business.
 
 ## What Operations Manager does
 
@@ -92,7 +92,7 @@ The workflows that the System Center Management service runs are defined by *man
 
 After Operations Manager installs an agent on a computer, it sends an initial configuration to the agent. The initial configuration includes *object discoveries* from management packs. The management pack defines the types of objects, such as applications and features that will be monitored on computers that have been discovered by Operations Manager. Agents send data to the management server that identifies the instances of objects discovered on the computer. The management server then sends the agents the elements of management packs that apply to the discovered objects for each computer, such as rules and monitors.
 
-A *rule* defines the events and performance data to collect from computers and what to do with the information after it is collected. A simple way to think about rules is as an If/Then statement. For example, a management pack for an application might contain rules such as the following:
+A *rule* defines the events and performance data to collect from computers and what to do with the information after it's collected. A simple way to think about rules is as an If/Then statement. For example, a management pack for an application might contain rules such as the following:
 
 -   If a message indicating that the application is shutting down appears in the event log, create an alert.
 

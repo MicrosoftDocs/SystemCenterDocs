@@ -27,7 +27,7 @@ You can install features of Operations Manager by using the **setup.exe** comman
 The following table lists the command-line parameters for installing features of Operations Manager.
 
 > [!NOTE]
-> If the parameter contains a colon, a value is required. Otherwise, it is simply a switch.
+> If the parameter contains a colon, a value is required. Otherwise, it's simply a switch.
 
 |Parameter|Value|
 |-------------|---------|
@@ -51,7 +51,7 @@ The following table lists the command-line parameters for installing features of
 |/ManagementServer:|Used to specify the name of the management server associated with a web console and/or Reporting server that isn't installed on a management server.|
 |/ManagementGroupName:|The name of the management group|
 |/ManagementServicePort:|Change the Management Server port on install|
-|/recover|Recover the Operations Manager Management Server. This will check if any other Management Servers in the Management Group are still online. If another Management Server is found online, the Setup will attempt to contact them and copy the registry entries needed to deal with RunAs Account Decryption. <br><br> If there aren't any Management Servers detected, the Setup will re-generate a new decryption key. You'll need to re-enter your existing RunAs Account passwords after the recovery completes.|
+|/recover|Recover the Operations Manager Management Server. This will check if any other Management Servers in the Management Group are still online. If another Management Server is found online, the Setup will attempt to contact them and copy the registry entries needed to deal with RunAs Account Decryption. <br><br> If there aren't any Management Servers detected, the Setup will regenerate a new decryption key. You'll need to reenter your existing RunAs Account passwords after the recovery completes.|
 |/silent|Doesn't display the installation wizard.|
 |/SqlServerInstance:|The SQL server and instance `<server\instance>` or Always On availability group listener.|
 |/SqlInstancePort:| The SQL server instance port number.|
@@ -61,7 +61,7 @@ The following table lists the command-line parameters for installing features of
 |/UseLocalSystemActionAccount|Used to specify the Local System for the Management server action account.|
 |/UseLocalSystemDASAccount|Used to specify the Local System for the Data Access service account.|
 |/UseMicrosoftUpdate:|0: Don't opt in to Microsoft Update.<br><br>1: Opt in to Microsoft Update.|
-|/uninstall|Uninstalls Operations Manager. Use **/components** to indicate specific features to uninstall. If **/components** is not specified, it will uninstall all features of Operations Manager on the server.|
+|/uninstall|Uninstalls Operations Manager. Use **/components** to indicate specific features to uninstall. If **/components** isn't specified, it will uninstall all features of Operations Manager on the server.|
 |/WebSiteName:|The name of the website. For default web installation, specify "**Default Web Site**".<br><br>Used for web console installations.|
 |/WebConsoleUseSSL|Specify only if your website has Secure Sockets Layer (SSL) activated.<br><br>Used for web console installations.|
 |/WebConsoleAuthorizationMode:|Mixed: Used for intranet scenarios.<br><br>Network: Used for extranet scenarios.<br><br>Used for web console installations.|

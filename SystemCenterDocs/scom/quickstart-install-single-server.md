@@ -179,7 +179,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
 19. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and select **Next**.
 
-20. If Windows Update is not activated on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and select **Next**.
+20. If Windows Update isn't activated on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and select **Next**.
 
 21. Review the options on the **Configuration**, **Installation Summary** page, and select **Install**. Setup continues.
 

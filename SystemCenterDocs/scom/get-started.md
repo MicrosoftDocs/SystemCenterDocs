@@ -22,7 +22,7 @@ ms.topic: article
 
 Welcome to Microsoft System Center - Operations Manager. The following article provides information to help you start learning about Operations Manager in order to develop an effective architecture design plan that supports your requirements, a deployment strategy to successfully perform an installation of Operations Manager in your environment, and operational guidance so you can successfully use, manage, and maintain your deployment.  
 
-## Getting started topics
+## Getting started articles
 
 To learn what's new in System Center - Operations Manager, first review [What's New in Operations Manager](./whats-new-in-om.md)
 
