@@ -73,6 +73,7 @@ The following is the build version for Operations Manager 1801.
 ::: moniker-end
 
 ## Next steps
+
 - See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.
 
-- [What's New in Operations Manager](./whats-new-in-om.md)
+- See [What's New in Operations Manager](./whats-new-in-om.md).

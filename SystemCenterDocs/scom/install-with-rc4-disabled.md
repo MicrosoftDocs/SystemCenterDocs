@@ -22,20 +22,20 @@ ms.topic: article
 
 This article describes how to disable RC4 while installing Operations Manager.
 
-When you install Operations Manager in a security hardened environment, the setup tends to fail at the account configuration step if the appropriate permissions are not configured properly.
+When you install Operations Manager in a security hardened environment, the setup tends to fail at the account configuration step if the appropriate permissions aren't configured properly.
 
 ## Important information
 
-In a disabled RC4 environment, when you try to install Operations Manager, you cannot pass the Account Validation stage if the steps in the [Before you Begin](#before-you-begin) section are not implemented, and you will see the following error in the Operations Manager setup:
+In a disabled RC4 environment, when you try to install Operations Manager, you can't pass the Account Validation stage if the steps in the [Before you Begin](#before-you-begin) section are not implemented, and you will see the following error in the Operations Manager setup:
 
-![Error in operations manager setup](./media/protocol-disabled/error-operations-manager-setup.png)
+![Screenshot of the Error in operations manager setup.](./media/protocol-disabled/error-operations-manager-setup.png)
 
 
-Operations Manager internally uses a Windows Security API as part of its credential validation process and the requested encryption type is not supported by the KDC. The client and service should support same type of encryption for communication.
+Operations Manager internally uses a Windows Security API as part of its credential validation process and the requested encryption type is not supported by the KDC. The client and service should support the same type of encryption for communication.
 
 When a service ticket is requested, the domain controller selects the ticket encryption type based on the **msDS-SupportedEncryptionTypes** attribute of the account associated with the requested SPN.
 
-By default, user accounts do not have a value set, unless you have manually enabled AES on them, tickets for service accounts are encrypted with RC4. For more information, see [Decrypting the Selection of Supported Kerberos Encryption Types - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797).
+By default, user accounts don't have a value set, unless you've manually enabled AES on them, tickets for service accounts are encrypted with RC4. For more information, see [Decrypting the Selection of Supported Kerberos Encryption Types - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797).
 
 For more information on registry entries about Kerberos version 5 authentication protocol, see [Kerberos protocol registry entries and KDC configuration keys in Windows](/troubleshoot/windows-server/windows-security/kerberos-protocol-registry-kdc-configuration-keys).
 
@@ -53,14 +53,14 @@ In an environment which has RC4 disabled, ensure the following steps are impleme
    - Check **This account supports Kerberos AES 128 bit encryption.**
    - Check **This account supports Kerberos AES 256 bit encryption.**
 
-   ![AES Attributes enabled on the Domain Controller](./media/protocol-disabled/attributes-domain-controller.png)
+   ![Screenshot of the AES Attributes enabled on the Domain Controller.](./media/protocol-disabled/attributes-domain-controller.png)
 
 
 2. AES Encryption type is allowed for Kerberos on the computer where Management Server needs to be installed. On the Management Server, go to **Local Group Policy Editor** > **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** > **Network security: Configure encryption types allowed for Kerberos** > **Enable AES Encryption**
    - Check **AES128_HMAC_SHA1**
    - Check **AES256_HMAC_SHA1**
 
-   ![AES encryption type](./media/protocol-disabled/aes-encryption.png)
+   ![Screenshot of the AES encryption type.](./media/protocol-disabled/aes-encryption.png)
 
 
 > [!NOTE]
@@ -74,7 +74,7 @@ To disable RC4 in an Operations Manager Management Server, follow these steps:
 1. On the Management Server, go to **Local Group Policy Editor** > **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** > **Network security: Configure encryption types allowed for Kerberos** > **Disable RC4**.
    - Uncheck **RC4_HMAC_MD5**
 
-   ![Disable RC4](./media/protocol-disabled/kerberos-disable-rc4.png)
+   ![Screenshot of the Disable RC4.](./media/protocol-disabled/kerberos-disable-rc4.png)
 
 2. Run a `gpupdate /force` command in an elevated command prompt to ensure that the changes are done.
 

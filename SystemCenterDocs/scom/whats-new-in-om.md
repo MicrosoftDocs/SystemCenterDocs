@@ -18,7 +18,7 @@ ms.topic: article
 
 ::: moniker range="sc-om-2022"
 
-This article details the new features supported in System Center 2022 - Operations Manager. Also includes the new features in Operations Manager 2022 UR1.
+This article provides details of the new features supported in System Center 2022 - Operations Manager. It also includes the new features in Operations Manager 2022 UR1.
 
 [!INCLUDE [whats-new-om-2022.md](../includes/whats-new-om-2022.md)]
 
@@ -32,7 +32,7 @@ Operations Manager 2022 UR1 allows you to discover Azure Monitor SCOM Managed In
 
 ::: moniker range="sc-om-2019"
 
-This article details the new features supported in System Center 2019 - Operations Manager. Also includes the new features in Operations Manager 2019 UR1, 2019 UR2, 2019 UR3 and 2019 UR4.
+This article provides details of the new features supported in System Center 2019 - Operations Manager. It also includes the new features in Operations Manager 2019 UR1, 2019 UR2, 2019 UR3, and 2019 UR4.
 
 [!INCLUDE [whats-new-om-2019.md](../includes/whats-new-om-2019.md)]
 
@@ -42,7 +42,7 @@ This article details the new features supported in System Center 2019 - Operatio
 
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-This article details the new features supported in System Center 1807 - Operations Manager.
+This article provides details of the new features supported in System Center 1807 - Operations Manager.
 
 [!INCLUDE [whats-new-om-1807.md](../includes/whats-new-om-1807.md)]
 
@@ -52,13 +52,13 @@ This article details the new features supported in System Center 1807 - Operatio
 
 [!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
-This article details the new features supported in System Center 1801 - Operations Manager.
+This article provides details of the new features supported in System Center 1801 - Operations Manager.
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
-This article details the new features supported in System Center 2016 - Operations Manager.
+This article provides details of the new features supported in System Center 2016 - Operations Manager.
 
 ::: moniker-end
 

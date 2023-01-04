@@ -20,15 +20,15 @@ ms.topic: article
 
 ::: moniker-end
 
-Operations Manager, a component of Microsoft System Center, is software that helps you monitor services, devices, and operations for many computers from a single console. This topic explains basic concepts about Operations Manager for the administrator who manages the Operations Manager infrastructure and the operator who monitors and supports the IT services for your business.
+Operations Manager, a component of Microsoft System Center, is a software that helps you monitor services, devices, and operations for many computers from a single console. This article explains the basic concepts about Operations Manager for the administrator who manages the Operations Manager infrastructure and the operator who monitors and supports the IT services for your business.
 
 ## What Operations Manager does
 
-Businesses, small and large, are typically dependent on the services and applications provided by their computing environment. IT departments are responsible for ensuring the performance and availability of those critical services and applications. That means that IT departments need to know when there's a problem, identify where the problem is, and figure out what is causing the problem, ideally before the users of the applications encounter the problems. The more computers and devices in the business, the more challenging this task becomes.
+Businesses, small and large, are typically dependent on the services and applications provided by their computing environment. IT departments are responsible for ensuring the performance and availability of those critical services and applications. That means that IT departments need to know when there's a problem, identify where the problem is, and figure out what is causing the problem, ideally before the users of the applications encounter the problems. The more the computers and devices in the business, the more challenging this task becomes.
 
-Using Operations Manager in the environment makes it easier to monitor multiple computers, devices, services, and applications. The Operations console, shown in the following image, enables you to check the health, performance, and availability for all monitored objects in the environment and helps you identify and resolve problems.
+Using Operations Manager in the environment makes it easier to monitor multiple computers, devices, services, and applications. The Operations console, shown in the following image, enables you to check the health, performance, and availability for all the monitored objects in the environment and helps you identify and resolve problems.
 
-![Operations Console](./media/key-concepts/om2016-operations-console-monitoring-view.png)
+![Screenshot of the Operations Console.](./media/key-concepts/om2016-operations-console-monitoring-view.png)
 
 > [!NOTE]
 > To learn more about the Operations Manager consoles, see [Comparing the Operations Manager Consoles](manage-consoles-comparison.md) in the Operations Guide.
@@ -45,11 +45,11 @@ Installing Operations Manager creates a *management group*. The management group
 
 -   The **data warehouse database** is a SQL Server database that stores monitoring and alerting data for historical purposes. Data that is written to the Operations Manager database is also written to the data warehouse database, so reports always contain current data. The data warehouse database retains long-term data.
 
-When Operations Manager reporting functionality is installed, the management group also contains a *Reporting server* which builds and presents reports from data in the data warehouse database.
+When Operations Manager reporting functionality is installed, the management group also contains a *Reporting server*, which builds and presents reports from data in the data warehouse database.
 
 These core components of a management group can exist on a single server, or they can be distributed across multiple servers, as shown in the following image.
 
-![Basic Management Group](./media/key-concepts/om2016-basic-management-group.png)
+![Illustration of the Basic Management Group.](./media/key-concepts/om2016-basic-management-group.png)
 
 For information about installing management group features, see [Operations Manager Deployment Guide](deploy-overview.md).
 
@@ -57,13 +57,13 @@ For information about installing management group features, see [Operations Mana
 
 The role of the management server is to administer the management group configuration, administer and communicate with agents, and communicate with the databases in the management group.
 
-The management group can contain multiple management servers to provide additional capacity and continuous availability. When two or more management servers are added to a management group, the management servers become part of a *resource pool* and work is spread across the members of the pool. When a member of the resource pool fails, other members in the resource pool will pick up that member’s workload. When a new management server is added, the new management server automatically picks up some of the work from existing members in the resource pool. All members in the resource pool will manage a distinct set of remote objects; at any given time, two members in the same pool won't manage the same object at the same time.
+The management group can contain multiple management servers to provide additional capacity and continuous availability. When two or more management servers are added to a management group, the management servers become part of a *resource pool* and work is spread across the members of the pool. When a member of the resource pool fails, other members in the resource pool will pick up that member’s workload. When a new management server is added, the new management server automatically picks up some of the work from the existing members in the resource pool. All members in the resource pool will manage a distinct set of remote objects; at any given time, two members in the same pool won't manage the same object at the same time.
 
 A specialized type of management server is the *gateway server*. A gateway server enables the monitoring of computers in untrusted domains. For more information, see [Planning a management group design](plan-mgmt-group-design.md#gateway-server).
 
 ### Agents
 
-An Operations Manager *agent* is a service that is installed on a computer. The agent collects data, compares sampled data to predefined values, creates alerts, and runs responses. A management server receives and distributes configurations to agents on monitored computers.
+An Operations Manager *agent* is a service that is installed on a computer. The agent collects data, compares sample data to predefined values, creates alerts, and runs responses. A management server receives and distributes configurations to agents on monitored computers.
 
 Every agent reports to a management server in the management group. This management server is referred to as the agent's primary management server.
 
@@ -96,7 +96,7 @@ A *rule* defines the events and performance data to collect from computers and w
 
 -   If a message indicating that the application is shutting down appears in the event log, create an alert.
 
--   If upload of a source file fails, collect the event that indicates this failure.
+-   If the upload of a source file fails, collect the event that indicates this failure.
 
 As these examples show, rules can create alerts and collect events or performance data, which the agent sends to the management server. Rules can also run scripts, such as allowing a rule to attempt to restart a failed application.
 
@@ -106,7 +106,7 @@ Discovered objects have a health state, which is reflected in the Operations con
 
 The following image is a simplified illustration of how objects are discovered and monitored.
 
-![Discovery and Monitoring Overview](./media/key-concepts/om2016-windows-computer-discovery.png)
+![Illustration of a Discovery and Monitoring Overview.](./media/key-concepts/om2016-windows-computer-discovery.png)
 
 1.  The administrator configures Operations Manager to search for computers to manage. For more information about discovering computers, see [Agent deployment planning](plan-planning-agent-deployment.md).
 
@@ -114,18 +114,18 @@ The following image is a simplified illustration of how objects are discovered a
 
 3.  An Operations Manager agent is installed on the discovered computer.
 
-4.  The agent requests configuration data, and then the management server sends the agent configuration data from installed management packs that includes classes to be discovered. For example, if the Windows Server operating system management packs are installed, the management server will send the agent the operating system classes.
+4.  The agent requests configuration data, and then the management server sends the agent configuration data from installed management packs, which includes classes to be discovered. For example, if the Windows Server operating system management packs are installed, the management server will send the agent the operating system classes.
 
 5.  The agent compares the configuration data to the computer, identifies any objects that it discovers, and returns the information to the management server. For example, the agent will return to the management server that an instance of Windows Server 2019 operating system is on the computer.
 
-6.  The management server sends the agent all monitoring logic from installed management packs that applies to the discovered objects. For example, the agent will receive all monitoring logic that applies to Windows Server 2019.
+6.  The management server sends the agent all monitoring logic from the installed management packs that applies to the discovered objects. For example, the agent will receive all monitoring logic that applies to Windows Server 2019.
 
 7.  The agent applies the monitoring logic, such as rules and monitors, runs workflows, and returns data to the management server.
 
-8.  As changes occur to discovered objects, such as applications being added or uninstalled, the agent sends the updated information to the management server, which then sends updated monitoring logic.
+8.  As changes occur to discovered objects, such as applications being added or uninstalled, the agent sends the updated information to the management server, which then sends the updated monitoring logic.
 
 > [!NOTE]
-> Operations Manager can also discover and monitor network devices, computers running UNIX and Linux operating systems, and provide agentless monitoring. For more information, see [Operations Manager Monitoring Scenarios](/previous-versions/system-center/system-center-2012-R2/hh212763(v=sc.12)) in the Operations Guide.
+> Operations Manager can also discover and monitor network devices, computers running UNIX, and Linux operating systems, and provide agentless monitoring. For more information, see [Operations Manager Monitoring Scenarios](/previous-versions/system-center/system-center-2012-R2/hh212763(v=sc.12)) in the Operations Guide.
 
 ### Communication between agents and management servers
 
@@ -139,15 +139,15 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 ### Other resources for Operations Manager
 
--   [Main page for System Center - Operations Manager](welcome.md)
+-   [Main page for System Center - Operations Manager](welcome.md).
 
--   Review the design and deployment considerations and recommendations for Operations Manager in the [Planning Guide](plan-overview.md)
+-   Review the design and deployment considerations and recommendations for Operations Manager in the [Planning Guide](plan-overview.md).
 
--   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center - Operations Manager](deploy-overview.md)
+-   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center - Operations Manager](deploy-overview.md).
 
--   To learn how to use Operations Manager after the management group is set up, see [System Center - Operations Manager Operations Guide](manage-operations-guide-overview.md)
+-   To learn how to use Operations Manager after the management group is set up, see [System Center - Operations Manager Operations Guide](manage-operations-guide-overview.md).
 
--   To learn how to create a management pack, see [Create management pack templates](create-management-pack-templates.md)
+-   To learn how to create a management pack, see [Create management pack templates](create-management-pack-templates.md).
 
--   [Operations Manager Community](https://go.microsoft.com/fwlink/p/?LinkID=221328)
+-   [Operations Manager Community](https://go.microsoft.com/fwlink/p/?LinkID=221328).
 

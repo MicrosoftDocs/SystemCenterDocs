@@ -15,7 +15,7 @@ monikerRange: 'sc-om-2022'
 
 # Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)
 
-This article provides detailed information on how you can migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview). 
+This article provides detailed information on how you can migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview).
 
 Provided the procedure for the following artifacts as an example:
 
@@ -42,6 +42,7 @@ Select the required artifact to view the migration procedure from on-premises to
     ```
 
 2. Export [unsealed Management Packs](/system-center/scom/manage-mp-import-remove-delete?#how-to-export-an-operations-manager-management-pack):
+
    ```powershell
    Get-SCOMManagementPack | Where{ $_.Sealed -eq $false } | Export-SCOMManagementPack -Path "C:\Temp\Unsealed Management Packs"
    ```
@@ -56,7 +57,7 @@ Select the required artifact to view the migration procedure from on-premises to
 
 Follow these steps to validate the migration of Groups and Data collection.
 
-1. **In Groups**: Go to **Authoring** workspace in the Operations Manager console and select **Groups**.  Review the membership of any groups created by the Management Packs and verify that they've been populated with the correct objects. 
+1. **In Groups**: Go to **Authoring** workspace in the Operations Manager console and select **Groups**. Review the membership of any groups created by the Management Packs and verify that they've been populated with the correct objects. 
 
 1. **In Data collection**: To verify that the intended objects are discovered, go to **Monitoring** in the Operations Manager console and review the views for each Management Pack.
 
@@ -83,7 +84,7 @@ Below is a quick summary of what can be migrated:
 # [User roles and permissions](#tab/userrole-permission)
 
 >[!Note]
->No 1:1 mapping is permitted between user roles in SCOM Managed Instance (preview) to Operations Manager on-premises. 
+> No 1:1 mapping is permitted between user roles in SCOM Managed Instance (preview) to Operations Manager on-premises.
 
 In preview, only two user roles are available, whereas Operations Manager on-premises has 10 user profile roles. For more information, see [Operations associated with user role profiles](/system-center/scom/manage-security-create-runas-account). 
 
@@ -180,7 +181,7 @@ To migrate from Agent to SCOM Managed Instance (preview), see [High level overvi
 
 ## Next steps
 
-[Create a SCOM Managed Instance (preview) on Azure](create-operations-manager-managed-instance.md)
+[Create a SCOM Managed Instance (preview) on Azure](create-operations-manager-managed-instance.md).
 
 **Feedback**
 

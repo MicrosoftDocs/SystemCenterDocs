@@ -21,23 +21,23 @@ ms.technology: operations-manager
 
 This article provides information about how to manage the telemetry (Diagnostics and utility data) settings in System Center - Operations Manager (SCOM).
 
-By default, Operations Manager  sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security, and integrity of Microsoft products and services.
+By default, Operations Manager sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security, and integrity of Microsoft products and services.
 
-Administrators can turn off this feature at any point of time. Learn more about [data collected by Operations Manager](#telemetry-data-collected)
+Administrators can turn off this feature at any point of time. Learn more about [data collected by Operations Manager](#telemetry-data-collected).
 
 ## Turn on/off telemetry from console
 
-1. In the Operations Manager console, click **Settings** in the Administration pane.
+1. In the Operations Manager console, select **Settings** in the Administration pane.
 
 2. Under **Type: General**, double-click **Privacy**.
 
-   ![console telemetry privacy](./media/telemetry/telemetry-privacy.png)
+   ![Screenshot of console telemetry privacy.](./media/telemetry/telemetry-privacy.png)
 
-   **Diagnostic and Usage Data Settings** options page appear.
+   **Diagnostic and Usage Data Settings** options page appears.
 
-   ![console telemetry options](./media/telemetry/telemetry-options.png)
+   ![Screenshot of console telemetry options.](./media/telemetry/telemetry-options.png)
 
-3. Select the  diagnostic and usage data sharing preference from the options displayed, and click  **OK**.
+3. Select the diagnostic and usage data sharing preference from the options displayed, and select **OK**.
 
    > [!NOTE]
    > We recommend you to read the Privacy Statement before you select the option.
@@ -69,11 +69,11 @@ The following table details the telemetry data that is collected by Operations M
 
 - SQL configuration of the SCOM environment (version/SP version/SQL Always ON/Cluster)
 - Microsoft alerts that are marked as not useful and the reason
-- Number of widgets, views, dashboards created in *Monitoring* pane
+- Number of widgets, views, and dashboards created in *Monitoring* pane
 - Number of dashboards in *My Workspace*
 - Time taken to load the Scheduled Maintenance summary screen
 - Average number of entities that are set to maintenance mode through Maintenance mode task and Scheduled Maintenance mode screen
-- System Center ID the SCOM environment reside in
+- System Center ID the SCOM environment resides in
 - Selected features
 
 
@@ -102,4 +102,4 @@ The following table details the telemetry data that is collected by Operations M
 
 
 ## Next steps
-[Plan agent deployment](plan-planning-agent-deployment.md)
+See [Plan agent deployment](plan-planning-agent-deployment.md)
