@@ -31,13 +31,13 @@ Each activity contains a set of required or optional properties. These define ho
 
 ### To view and configure the properties for an activity
 
-1.  Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
+1.  Double-click the activity. Alternatively, you can right-click the activity and select **Properties**.
 
 2.  View and configure activity properties as needed.
 
-3.  To save your configuration entries, click **Finish**.
+3.  To save your configuration entries, select **Finish**.
 
-In the activity properties dialog box, various tabs provide access to general and specific settings for the activity. The number of available tabs for object properties will vary according to the activity.
+In the activity properties dialog, various tabs provide access to general and specific settings for the activity. The number of available tabs for object properties will vary according to the activity.
 
 ## General tab
 
@@ -49,7 +49,7 @@ The **Properties** tab contains properties that are specific to the activity. Al
 
 ### To configure the Configuration Name property
 
-1.  Click the ellipsis **(...)** button next to the **Name** box.
+1.  Select the ellipsis **(...)** button next to the **Name** box.
 
 2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in Windows Azure Integration Pack for System Center 2016 - Orchestrator.
 
@@ -84,13 +84,13 @@ By default, the data from a **Get** activity will be passed on as multiple indiv
 
 -   **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files.
 -   **Separate with**. Each item is separated by one or more characters of your choice.
--   **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
+-   **Use CSV format**. All items are in the CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
 
 A **Get** activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
 
 ## Time-out and failure event notifications
 
-Some activities are expected to take only a limited amount of time to complete. If they do not complete within an expected tine frame, they may be stalled or there may be another issue preventing completion. You can define the number of seconds to wait for completion of the action. If the processing of the activity exceeds this time-out threshold, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
+Some activities are expected to take only a limited amount of time to complete. If they don't complete within an expected time frame, they may be stalled or there may be another issue preventing completion. You can define the number of seconds to wait for the completion of the action. If the processing of the activity exceeds this time-out threshold, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
 ### To be notified when the activity takes longer than a specified time to run or fails to run
 
@@ -101,15 +101,15 @@ Some activities are expected to take only a limited amount of time to complete. 
 ## Published data
 Published data is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Published data is the foundation of a working runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
 
-An activity can only subscribe to data from the activities that occur before it in the runbook. You can use published data to automatically populate the property values needed by activities.
+An activity can only subscribe to data from the activities that occur before it in the runbook. You can use published data to automatically populate the property values needed by the activities.
 
 ### To use published data
 
-1.  Right-click the property value box, click **Subscribe**, and then click **Published Data**.
+1.  Right-click the property value box, select **Subscribe**, and select **Published Data**.
 
-2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
+2.  Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
 
-3.  Click the published data element that you want to use, and then click **OK**.
+3.  Select the published data element that you want to use, and select **OK**.
 
 For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
 
@@ -118,131 +118,131 @@ For a list of the data elements published by each activity, see the **Published 
 
 This integration pack adds the **Windows Azure** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Add Management Certificate](add-management-certificate.md)
+- [Add Management Certificate](add-management-certificate.md)
 
-[Add OS Image](~/orchestrator/add-os-image.md)
+- [Add OS Image](~/orchestrator/add-os-image.md)
 
-[Add Service Certificate](add-service-certificate.md)
+- [Add Service Certificate](add-service-certificate.md)
 
-[Add VM Data Disk](add-vm-data-disk.md)
+- [Add VM Data Disk](add-vm-data-disk.md)
 
-[Add VM Disk](add-vm-disk.md)
+- [Add VM Disk](add-vm-disk.md)
 
-[Add VM Endpoint](add-vm-endpoint.md)
+- [Add VM Endpoint](add-vm-endpoint.md)
 
-[Add VM Instance](add-vm-instance.md)
+- [Add VM Instance](add-vm-instance.md)
 
-[Capture VM Instance](capture-vm-instance.md)
+- [Capture VM Instance](capture-vm-instance.md)
 
-[Change Deployment Configuration](change-deployment-configuration.md)
+- [Change Deployment Configuration](change-deployment-configuration.md)
 
-[Change Deployment OS](change-deployment-os.md)
+- [Change Deployment OS](change-deployment-os.md)
 
-[Check Cloud Service Name Availability](check-cloud-service-name-availability.md)
+- [Check Cloud Service Name Availability](check-cloud-service-name-availability.md)
 
-[Copy Blob](copy-blob.md)
+- [Copy Blob](copy-blob.md)
 
-[Create Affinity Group](create-affinity-group.md)
+- [Create Affinity Group](create-affinity-group.md)
 
-[Create Cloud Service](create-cloud-service.md)
+- [Create Cloud Service](create-cloud-service.md)
 
-[Create Container](create-container.md)
+- [Create Container](create-container.md)
 
-[Create Deployment](create-deployment.md)
+- [Create Deployment](create-deployment.md)
 
-[Create Storage Account](create-storage-account.md)
+- [Create Storage Account](create-storage-account.md)
 
-[Create VM Deployment](create-vm-deployment.md)
+- [Create VM Deployment](create-vm-deployment.md)
 
-[Delete Blob](delete-blob.md)
+- [Delete Blob](delete-blob.md)
 
-[Delete Cloud Service](delete-cloud-service.md)
+- [Delete Cloud Service](delete-cloud-service.md)
 
-[Delete Container](delete-container.md)
+- [Delete Container](delete-container.md)
 
-[Delete Deployment](delete-deployment.md)
+- [Delete Deployment](delete-deployment.md)
 
-[Delete Management Certificate](delete-management-certificate.md)
+- [Delete Management Certificate](delete-management-certificate.md)
 
-[Delete OS Image](delete-os-image.md)
+- [Delete OS Image](delete-os-image.md)
 
-[Delete Service Certificate](delete-service-certificate.md)
+- [Delete Service Certificate](delete-service-certificate.md)
 
-[Delete Storage Account](delete-storage-account.md)
+- [Delete Storage Account](delete-storage-account.md)
 
-[Delete VM Data Disk](delete-vm-data-disk.md)
+- [Delete VM Data Disk](delete-vm-data-disk.md)
 
-[Delete VM Disk](delete-vm-disk.md)
+- [Delete VM Disk](delete-vm-disk.md)
 
-[Delete VM Instance](delete-vm-instance.md)
+- [Delete VM Instance](delete-vm-instance.md)
 
-[Download Blob](download-blob.md)
+- [Download Blob](download-blob.md)
 
-[Get Deployment](get-deployment.md)
+- [Get Deployment](get-deployment.md)
 
-[Get Operating Systems](get-operating-systems.md)
+- [Get Operating Systems](get-operating-systems.md)
 
-[Get Operation Status](get-operation-status.md)
+- [Get Operation Status](get-operation-status.md)
 
-[Get Storage Account Keys](get-storage-account-keys.md)
+- [Get Storage Account Keys](get-storage-account-keys.md)
 
-[Get Storage Account Properties](get-storage-account-properties.md)
+- [Get Storage Account Properties](get-storage-account-properties.md)
 
-[Get VM Data Disk](get-vm-data-disk.md)
+- [Get VM Data Disk](get-vm-data-disk.md)
 
-[Get VM RDP File](get-vm-rdp-file.md)
+- [Get VM RDP File](get-vm-rdp-file.md)
 
-[Get VM instance](get-vm-instance.md)
+- [Get VM instance](get-vm-instance.md)
 
-[List Blob](list-blob.md)
+- [List Blob](list-blob.md)
 
-[List Cloud Service](list-cloud-service.md)
+- [List Cloud Service](list-cloud-service.md)
 
-[List Container](list-container.md)
+- [List Container](list-container.md)
 
-[List Management Certificate](list-management-certificate.md)
+- [List Management Certificate](list-management-certificate.md)
 
-[List OS Images](list-os-images.md)
+- [List OS Images](list-os-images.md)
 
-[List Service Certificate](list-service-certificate.md)
+- [List Service Certificate](list-service-certificate.md)
 
-[List Storage Account](list-storage-account.md)
+- [List Storage Account](list-storage-account.md)
 
-[List VM Disks](list-vm-disks.md)
+- [List VM Disks](list-vm-disks.md)
 
-[Put Blob](put-blob.md)
+- [Put Blob](put-blob.md)
 
-[Reboot Role Instance](reboot-role-instance.md)
+- [Reboot Role Instance](reboot-role-instance.md)
 
-[Regenerate Storage Account Key](regenerate-storage-account-key.md)
+- [Regenerate Storage Account Key](regenerate-storage-account-key.md)
 
-[Reimage VM Instance](reimage-vm-instance.md)
+- [Reimage VM Instance](reimage-vm-instance.md)
 
-[Remove VM Endpoint](remove-vm-endpoint.md)
+- [Remove VM Endpoint](remove-vm-endpoint.md)
 
-[Restart VM Instance](start-vm-instance.md)
+- [Restart VM Instance](start-vm-instance.md)
 
-[Rollback Update or Upgrade](rollback-update-or-upgrade.md)
+- [Rollback Update or Upgrade](rollback-update-or-upgrade.md)
 
-[Shutdown VM Instance](shutdown-vm-instance.md)
+- [Shutdown VM Instance](shutdown-vm-instance.md)
 
-[Snapshot Blob](snapshot-blob.md)
+- [Snapshot Blob](snapshot-blob.md)
 
-[Start VM Instance](~/orchestrator/start-vm-instance.md)
+- [Start VM Instance](~/orchestrator/start-vm-instance.md)
 
-[Swap Deployment](swap-deployment.md)
+- [Swap Deployment](swap-deployment.md)
 
-[Upgrade Deployment](upgrade-deployment.md)
+- [Upgrade Deployment](upgrade-deployment.md)
 
-[Update Deployment Status](update-deployment-status.md)
+- [Update Deployment Status](update-deployment-status.md)
 
-[Update OS Image](update-os-image.md)
+- [Update OS Image](update-os-image.md)
 
-[Update Storage Account](update-storage-account.md)
+- [Update Storage Account](update-storage-account.md)
 
-[Update VM Instance](update-vm-instance.md)
+- [Update VM Instance](update-vm-instance.md)
 
-[Walk Upgrade Domain](walk-upgrade-domain.md)
+- [Walk Upgrade Domain](walk-upgrade-domain.md)
 
 ## Other Resources
 
