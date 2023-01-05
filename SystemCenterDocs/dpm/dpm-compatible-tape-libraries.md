@@ -65,8 +65,8 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 
 |Windows Server versions| DPM 2019 | DPM 2022 |
 | --- | --- | --- |
-| Windows Server 2019    |  N |  N |  Y | Y |
-| Windows Server 2022    |  N |  N |  Y | Y |
+| Windows Server 2019    | Y | Y |
+| Windows Server 2022    | Y | Y |
 
 ::: moniker-end
 
