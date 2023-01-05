@@ -26,21 +26,22 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 ::: moniker range="<=sc-dpm-2019"
 
 > [!NOTE]
+> DPM supports only the tape libraries that are connected using a single path and not the tape libraries connected using the multi-path software.
 > Tape libraries configured with a virtual Fibre Channel adapter are only supported when using certified tape library hardware on the following configurations:
 > - System Center Data Protection Manager 2012 R2 U3 (or later) running on Windows 2012 R2 (or later).
 > - System Center Data Protection Manager 2016 running on Windows Server 2012 R2 (or later).
 > - System Center Data Protection Manager 2019 running on Windows Server 2016 and Windows Server 2019.
-> DPM supports only the tape libraries that are connected using a single path and not the tape libraries connected using the multi-path software.
+
 
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
 
 > [!NOTE]
+> DPM supports only the tape libraries that are connected using a single path and not the tape libraries connected using the multi-path software.
 > Tape libraries configured with a virtual Fibre Channel adapter are only supported when using certified tape library hardware on the following configurations:
 > - System Center Data Protection Manager 2019 running on Windows Server 2016 and Windows Server 2019.
 > - System Center Data Protection Manager 2022 running on Windows Server 2019 and Windows Server 2022.
-> DPM supports only the tape libraries that are connected using a single path and not the tape libraries connected using the multi-path software.
 
 ::: moniker-end
 
