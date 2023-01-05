@@ -1,12 +1,12 @@
 ---
 description: This article describes tape libraries compatible with DPM.
-manager: vvithal
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 12/19/2022
-title: 'System Center DPM 2012 R2, 2016, 2019 and 2022: Compatible Tape Libraries'
+ms.date: 01/05/2023
+title: System Center DPM Compatible Tape Libraries
 ms.technology: data-protection-manager
 ms.assetid: 69cab349-9e1d-46f7-b722-6b612dae9498
 ms.author: jsuri
@@ -22,15 +22,32 @@ ms.custom: engagement-fy23
 ::: moniker-end
 
 Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be deployed using tape-based backup for data protected by the DPM server. A tape library or standalone tape drive can be connected to DPM servers. For more information, see [Planning the Tape Libraries Configuration](/previous-versions/system-center/data-protection-manager-2010/ff399733(v=technet.10)). The following tables summarize tape libraries that are compatible with DPM in System Center 2012 R2, 2016 and 2019.
+ 
+::: moniker range="<=sc-dpm-2019"
 
 > [!NOTE]
 > Tape libraries configured with a virtual Fibre Channel adapter are only supported when using certified tape library hardware on the following configurations:
 > - System Center Data Protection Manager 2012 R2 U3 (or later) running on Windows 2012 R2 (or later).
 > - System Center Data Protection Manager 2016 running on Windows Server 2012 R2 (or later).
 > - System Center Data Protection Manager 2019 running on Windows Server 2016 and Windows Server 2019.
+> DPM supports only the tape libraries that are connected using a single path and not the tape libraries connected using the multi-path software.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+> [!NOTE]
+> Tape libraries configured with a virtual Fibre Channel adapter are only supported when using certified tape library hardware on the following configurations:
+> - System Center Data Protection Manager 2019 running on Windows Server 2016 and Windows Server 2019.
+> - System Center Data Protection Manager 2022 running on Windows Server 2019 and Windows Server 2022.
+> DPM supports only the tape libraries that are connected using a single path and not the tape libraries connected using the multi-path software.
+
+::: moniker-end
 
 
 ## Support Matrix
+
+::: moniker range="<=sc-dpm-2019"
 
 |Windows Server versions| DPM 2012 R2 | DPM 2016 | DPM 2019 | DPM 2022 |
 | --- | --- | --- | --- | --- |
@@ -39,9 +56,20 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 | Windows Server 2019    |  N |  N |  Y | Y |
 | Windows Server 2022    |  N |  N |  Y | Y |
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+|Windows Server versions| DPM 2019 | DPM 2022 |
+| --- | --- | --- |
+| Windows Server 2019    |  N |  N |  Y | Y |
+| Windows Server 2022    |  N |  N |  Y | Y |
+
+::: moniker-end
+
 ## BDT
 
-| Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Additional Libraries in Test | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
+| Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Other Libraries in Test | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | FlexStor II 1U |   | 5.2.3790.7, 06/06/2009, signed | 2.4 | 2U, 4U, 8U | HP LTO5 HH FC | 1.0.6.3, 10/07/2010, signed | Y23B |
 | FlexStor II 1U |   | 5.2.3790.7, 06/06/2009, signed | 2.4 | 2U, 4U, 8U | HP LTO5 HH SAS | 1.0.6.3, 10/07/2010, signed | Z21B |
@@ -52,7 +80,7 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 | FlexStor II 4U |   | 5.2.3790.7, 06/06/2009, signed | 4.70/3.00e | 1U, 2U, 8U | IBM LTO5 HH FC | 6.2.1.5, 01/13/2011, signed | A6S1 |
 | FlexStor II 4U |   | 5.2.3790.7, 06/06/2009, signed | 4.70/3.00e | 1U, 2U, 8U | IBM LTO5 HH SAS | 6.2.1.5, 01/13/2011, signed | A6S1 |
 | FlexStor II 4U | 2008 R2 | 5.2.3790.7, 06/06/2009, signed | 4.90/3.20e | 1U, 2U, 8U | HP LTO6 HH FC | 1.0.7.1, 02/11/2013, signed | 22EB |
-| FlexStor II 4U | 2012 | 8.0.0.1, 07/05/2012, signed | 4.90/3.20e | 1U, 2U, 8U | HP LTO6 HH FC | 1.0.7.1, 02/11/2013, signed | 22EB |
+| FlexStor II 4U | 2012 | 8.0.0.1, 07/05/2012, signed | 4.90/3.20e | 1U, 2U, 8U | HP LTO6 HH FC | 1.0.7.1, 02/11/2013, signed | 22 EB |
 | FlexStor II 4U | 2008 R2 | 5.2.3790.7, 06/06/2009, signed | 4.90/3.20e | 1U, 2U, 8U | HP LTO6 HH SAS | 1.0.7.1, 02/11/2013, signed | 32CB |
 | FlexStor II 4U | 2012 | 8.0.0.1, 07/05/2012, signed | 4.90/3.20e | 1U, 2U, 8U | HP LTO6 HH SAS | 1.0.7.1, 02/11/2013, signed | 32CB |
 | FlexStor II 4U | 2008 R2 | 5.2.3790.7, 06/06/2009, signed | 4.90/3.20e | 1U, 2U, 8U | IBM LTO6 HH FC | 6.2.3.3, 10/29/2012, signed | CBW5 |
@@ -124,7 +152,7 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 
 ## Fujitsu
 
-| Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Additional Libraries in Test | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
+| Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Other Libraries in Test | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | ETERNUS LT60 |   | 7.7600.16385.0, 01/02/2010, signed | 4.51/3.00e | LT40 | HP LTO5 FH FC | 1.0.6.3, 10/07/2010, signed | I24B |
 | ETERNUS LT60 |   | 7.7600.16385.0, 01/02/2010, signed | 4.51/3.00e | LT40, LT20 | HP LTO5 HH FC | 1.0.6.3, 10/07/2010, signed | Y23B |
@@ -245,7 +273,7 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 
 ## Quantum
 
-| Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Additional Libraries in Test | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
+| Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Other Libraries in Test | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | DXi6701 Scalar (emulating i2000) |   | Qi2Kx64.sys, 7.5.0.0 | V 2.1.1 | DXi6702 | HP LTO5 | hplto.sys, 1.6.0.3 | I30Z |
 | DXi6701 Scalar (emulating i2000) |   | Qi2Kx64.sys, 7.5.0.0 | V 2.1.1 | DXi6702 | IBM LTO5 | ibmtp2k8.sys, 6.2.1.8 | A5MO |
@@ -292,14 +320,14 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 
 ## Tandberg Data
 
-| Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Additional Libraries in Test | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
+| Library Model Name | Operating System | Changer Driver Version | Library Firmware Revision | Other Libraries in Test | Tape Drive Type | Tape Driver Version | Tape Drive Firmware Revision |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | StorageLoader LTO |   | 1.8.0.11 | 3.47 |   | HP 3000 LTO 5 HH SAS | 1.0.6.1 | Z21U |
 | StorageLoader LTO |   | 1.8.0.11 | 3.47 |   | HP 3000 LTO 5 HH SAS | 1.0.6.1 | Z33U |
-|   |   | exbchgx64.sys, 2.1.9.0, 11/21/2008, signed, 64bit | V1C270 |   | LTO4 | hplto.sys, 1.0.5.2, 12/10/2007, signed, 64bit | D217 |
-|   |   | exachgx64.sys, 2.1.9.0, 11/21/2008, unsigned, 64bit | V1C270 |   | LTO4 | ibmtp2k8.sys, 6.1.8.9, 3/19/2008, signed, 64bit | 85V3 |
-|   |   | exbchgx64.sys, 2.1.9.0, 11/21/2008, signed, 64bit | V1D170 |   | LTO4 | ibmtp2k8.sys, 6.1.9.5, 6/11/2008, signed, 64bit | 85V3 |
-|   |   | exachgx64.sys, 2.1.9.0, 11/21/2008, unsigned, 64bit | V1D170 |   | LTO4 | ibmtp2k3.sys, 6.1.8.9, 3/19/2008, signed, 64bit | 85V3 |
+|   |   | exbchgx64.sys, 2.1.9.0, 11/21/2008, signed, 64 bit | V1C270 |   | LTO4 | hplto.sys, 1.0.5.2, 12/10/2007, signed, 64 bit | D217 |
+|   |   | exachgx64.sys, 2.1.9.0, 11/21/2008, unsigned, 64 bit | V1C270 |   | LTO4 | ibmtp2k8.sys, 6.1.8.9, 3/19/2008, signed, 64 bit | 85V3 |
+|   |   | exbchgx64.sys, 2.1.9.0, 11/21/2008, signed, 64 bit | V1D170 |   | LTO4 | ibmtp2k8.sys, 6.1.9.5, 6/11/2008, signed, 64 bit | 85V3 |
+|   |   | exachgx64.sys, 2.1.9.0, 11/21/2008, unsigned, 64 bit | V1D170 |   | LTO4 | ibmtp2k3.sys, 6.1.8.9, 3/19/2008, signed, 64 bit | 85V3 |
 |   |   | 3.01.0009.0 | V1C290 | Magnum 224, StorageLoader 2U LTO | HP 3000 LTO 5 HH SAS | 1.0.6.1 | Z21U |
 |   |   | 3.01.0009.0 | V1C290 | Magnum 224, StorageLoader 2U LTO | HP 3000 LTO 5 HH SAS | 1.0.6.1 | Z33U |
 |   |   | 3.01.0009.0 | V1C290 | Magnum 224, StorageLoader 2U LTO | HP 3000 LTO 5 HH FC | 1.0.6.1 | Y21U |
@@ -308,9 +336,9 @@ Data Protection Manager (DPM) in System Center 2012 R2, 2016 and 2019 can be dep
 |   |   | 3.01.0009.0 | V1C290 | Magnum 224, StorageLoader 2U LTO | HP 1760 LTO 4 HH FC | 1.0.6.1 | V51U |
 |   |   | 3.01.0009.0 | V1C290 | Magnum 224, StorageLoader 2U LTO | HP 1760 LTO 4 HH SAS | 1.0.6.1 | U51U |
 |   |   | 3.01.0009.0 | V1C290 | Magnum 224, StorageLoader 2U LTO | HP 1760 LTO 4 HH SCSI | 1.0.6.1 | W51U |
-|   |   | tdsafe.sys, 1.7.0.0, 1/4/2008, signed, 64bit | 3.42 |   | LTO4 | hplto.sys, 1.0.5.2, 12/10/2007, signed, 64bit | W22U |
-|   |   | tdsafe.sys, 1.7.0.0, 1/4/2008, signed, 64bit | 3.8 |   | LTO4 | ltotape.sys, 6.0.6001.18000, 6/21/2006, signed, 64bit | 85V3 |
-|   |   | tdsafe.sys, 1.7.0.0, 1/4/2008, signed, 64bit | 3.63 |   | LTO4 | ibmtp2k8.sys, 6.1.8.9, 3/19/2008, signed, 64bit | 85V3 |
+|   |   | tdsafe.sys, 1.7.0.0, 1/4/2008, signed, 64 bit | 3.42 |   | LTO4 | hplto.sys, 1.0.5.2, 12/10/2007, signed, 64 bit | W22U |
+|   |   | tdsafe.sys, 1.7.0.0, 1/4/2008, signed, 64 bit | 3.8 |   | LTO4 | ltotape.sys, 6.0.6001.18000, 6/21/2006, signed, 64 bit | 85V3 |
+|   |   | tdsafe.sys, 1.7.0.0, 1/4/2008, signed, 64 bit | 3.63 |   | LTO4 | ibmtp2k8.sys, 6.1.8.9, 3/19/2008, signed, 64 bit | 85V3 |
 |   |   | 1.8.0.11 | 3.47 |   | HP 3000 LTO 5 HH FC | 1.0.6.1 | Y21U |
 |   |   | 1.8.0.11 | 3.47 |   | HP 3000 LTO 5 HH FC | 1.0.6.1 | Y31U |
 |   |   | 1.8.0.11 | 3.47 |   | HP 3000 LTO 5 HH FC | 1.0.6.1 | Y32U |
