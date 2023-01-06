@@ -56,13 +56,13 @@ Select the required artifact to view the migration procedure from on-premises to
 
 Follow these steps to validate the migration of Groups and Data collection.
 
-1. **In Groups**: Go to **Authoring** workspace in the Operations Manager console and select **Groups**.  Review the membership of any groups created by the Management Packs and verify that they've been populated with the correct objects. 
+1. **In Groups**: Go to **Authoring** workspace in the Operations Manager console and select **Groups**. Review the membership of any groups created by the Management Packs and verify that they've been populated with the correct objects. 
 
 1. **In Data collection**: To verify that the intended objects are discovered, go to **Monitoring** in the Operations Manager console and review the views for each Management Pack.
 
     1. Verify that the state views are populated with the correct objects (Servers, Databases, Websites, and so on) and they're being monitored (Health State isn't **Unmonitored**).
 
-    1. Check the performance views and verify that performance data has been collected.
+    1. Check the performance views and verify that that performance data has been collected.
 
 # [Dashboard](#tab/dashboard)
 
@@ -148,7 +148,7 @@ After you migrate the notification configuration to SCOM Managed Instance (previ
 
 # [Groups](#tab/groups)
 
-Groups are migrated as part of Management Packs. For more information, see **step 5** in **Management Packs and Overrides** tab.
+Groups are migrated as part of Management Packs. For more information, see **step 5** in the **Management Packs and Overrides** tab.
 
 # [1P Integrations](#tab/integrations)
 

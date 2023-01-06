@@ -48,19 +48,19 @@ Perform the following steps to enable TLS protocol version 1.2:
 ::: moniker-end
 
 ::: moniker range=">sc-om-2016"
-1. Install [MSOLEDBSQL 18.2](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver15#1821&preserve-view=true) or later on all management servers and the Web console server.  
-2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.   
+1. Install [MSOLEDBSQL 18.2](/sql/connect/oledb/release-notes-for-oledb-driver-for-sql-server?view=sql-server-ver15#1821&preserve-view=true) or later on all management servers and the Web console server.
+2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.
 3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
 4. Install [ODBC 17.3](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#173&preserve-view=true) or later on all management servers.
 5. Configure Windows to only use TLS 1.2.  
 6. Configure Operations Manager to only use TLS 1.2.  
 ::: moniker-end
 
-Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is required to enable TLS 1.2.  If CA-signed certificates are used, make sure that the certificates are either SHA1 or SHA2.
+Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is required to enable TLS 1.2. If CA-signed certificates are used, ensure that the certificates are either SHA1 or SHA2.
 
 ::: moniker range="sc-om-2016"
 >[!NOTE]
->If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server, gateway server, Web console, and Reporting services role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install these roles is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
+>If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server, gateway server, Web console, and Reporting services role will fail because the setup media doesn't include the updates to support TLS 1.2.  The only way you can install these roles is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation doesn't apply to Operations Manager version 1801.
 
 ::: moniker-end
 ## Configure Windows Operating System to only use TLS 1.2 protocol
@@ -73,10 +73,10 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 > Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend that you enable the TLS 1.2 protocol for all incoming communications and outgoing communications.
 >
 > [!NOTE]
-> Making these registry changes does not affect the use of Kerberos or NTLM protocols.
+> Making these registry changes doesn't affect the use of Kerberos or NTLM protocols.
 
-1. Log on to the server by using an account that has local administrative credentials.
-2. Start Registry Editor by right-clicking **Start**, type **regedit** in the **Run** textbox, and then click **OK**.
+1. Sign in to the server by using an account that has local administrative credentials.
+2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.
 3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols**.
 4. Create a subkey under **Protocols** for **SSL 2.0**, **SSL 3.0**, **TLS 1.0**, **TLS 1.1**, and **TLS 1.2**.  
 5. Create a **Client** and **Server** subkey under each protocol version subkey you created earlier.  For example, the sub-key for TLS 1.0 would be **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client** and **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server**.  
@@ -138,19 +138,19 @@ After completing the configuration of all prerequisites for Operations Manager, 
 > [!NOTE]
 > SCOM 2012 R2 running in Windows OS 2012 needs additional changes to use TLS 1.2 over HTTP for UNIX/LINUX monitoring. In order to enable TLS 1.2 as default security protocols in WinHTTP in Windows, the following changes need to be made as per [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392).
 > 1. Install [KB3140245](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392) on the Management Servers/Gateways Servers in the UNIX/LINUX Resource Pool.
-> 2. Backup the registries that are modified as mentioned in the KB article.
+> 2. Back up the registries that are modified as mentioned in the KB article.
 > 3. Download and run the [Easy Fix](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392#bkmk_easy) tool on the Management Servers/Gateways in the UNIX/LINUX Resource Pool.
 > 4. Reboot the servers.
 
 ::: moniker-end
 
 ### Manually modify the registry
-1. Log on to the server by using an account that has local administrative credentials.  
-2. Start Registry Editor by right-clicking **Start**, type **regedit** in the **Run** textbox, and then click **OK**.  
+1. Sign in to the server by using an account that has local administrative credentials.  
+2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and then select **OK**.  
 3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.30319**.  
 4. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.    
 5. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\\.NETFramework\v4.0.30319**.  
-6. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.    
+6. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.
 7. Restart the system for the settings to take effect.  
 
 ## Automatically modify the registry
@@ -169,7 +169,7 @@ New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -P
 
 ::: moniker range="sc-om-2016"
 
-If this is being implemented for System Center 2016 - Operations Manager, after applying Update Rollup 4, be sure to import the management packs that are included in this rollup located in the following directory: **\Program Files\Microsoft System Center 2016\Operations Manager\Server\Management Packs for Update Rollups**.  
+If this is being implemented for System Center 2016 - Operations Manager, after applying Update Rollup 4, ensure to import the management packs that are included in this rollup located in the following directory: **\Program Files\Microsoft System Center 2016\Operations Manager\Server\Management Packs for Update Rollups**.  
 
 ::: moniker-end
 
@@ -178,14 +178,14 @@ If you're monitoring a supported version of Linux server with Operations Manager
 ### Audit Collection Services
 For Audit Collection Services (ACS), you must make additional changes in the registry on ACS Collector server.  ACS uses the DSN to make connections to the database. You must update DSN settings to make them functional for TLS 1.2.
 
-1. Log on to the server by using an account that has local administrative credentials.  
-2. Start Registry Editor by right-clicking **Start**, type **regedit** in the **Run** textbox, and then click **OK**.  
+1. Sign in to the server by using an account that has local administrative credentials.  
+2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.  
 3. Locate the following ODBC subkey for OpsMgrAC: **HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC**.  
 
     >[!NOTE]
     >The default name of DSN is OpsMgrAC.
 
-4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of ODBC driver to be used for the database connection. If you have ODBC 11.0 installed, change this name to **ODBC Driver 11 for SQL Server**, or if you have ODBC 13.0 installed, change this name to **ODBC Driver 13 for SQL Server**.
+4. Under **ODBC Data Sources** subkey, select the DSN name **OpsMgrAC**. This contains the name of the ODBC driver to be used for the database connection. If you have ODBC 11.0 installed, change this name to **ODBC Driver 11 for SQL Server**, or if you have ODBC 13.0 installed, change this name to **ODBC Driver 13 for SQL Server**.
 5. Under the **OpsMgrAC** subkey, update the **Driver**  for the ODBS version that is installed.
    * If ODBC 11.0 is installed, change the Driver entry to %WINDIR%\system32\msodbcsql11.dll.
    * If ODBC 13.0 is installed, change the Driver entry to %WINDIR%\system32\msodbcsql13.dll.
