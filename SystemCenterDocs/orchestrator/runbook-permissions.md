@@ -11,8 +11,8 @@ ms.topic: article
 ms.assetid: 0b0304df-364d-4f75-b9d5-6b3ddfea6bef
 ms.date: 10/12/2016
 author: jyothisuri
-manager: jsuri
-ms.author: evansma
+manager: mkluck
+ms.author: jsuri
 ---
 # Runbook permissions
 
