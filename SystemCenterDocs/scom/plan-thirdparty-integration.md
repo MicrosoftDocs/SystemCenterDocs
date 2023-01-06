@@ -34,7 +34,7 @@ Operations Manager also integrates with [Azure Monitor](/azure/azure-monitor/pla
 
 ## When separated by a firewall
 
-The ports and communication between Operations Manager and the other management products depends on the method of integration used. If you're using System Center - Orchestrator, the Orchestrator runbook server connects to the Operations Manager management server over TCP port 5724. It is a one-way directed communication.  
+The ports and communication between Operations Manager and the other management products depends on the method of integration used. If you're using System Center - Orchestrator, the Orchestrator runbook server connects to the Operations Manager management server over TCP port 5724. It's a one-way directed communication.  
 
 ![Illustration of the Integration with Orchestrator.](./media/plan-thirdparty-integration/om2016-integration-orchestrator.png)
 
@@ -44,7 +44,7 @@ If you're using a connector provided by the vendor, review their documentation i
 
 ## Design considerations
 
-Integration between Operations Manager and other monitoring and management products is commonly configured between a single management server and the other management product. Or in other cases, between multiple management servers or specifying the Operations Manager management group name. Support for multiple, connected management groups is not supported, and each management group will need to install a separate instance of the connector for each management group. This includes integration between System Center Orchestrator, VMM, and Service Manager.
+Integration between Operations Manager and other monitoring and management products is commonly configured between a single management server and the other management product. Or in other cases, between multiple management servers or specifying the Operations Manager management group name. Support for multiple, connected management groups isn't supported, and each management group will need to install a separate instance of the connector for each management group. This includes integration between System Center Orchestrator, VMM, and Service Manager.
 
 When planning for service continuity, it's important to evaluate and determine the risks, impact, and recovery options for your Operations Manager deployment to support your service level targets.  
 

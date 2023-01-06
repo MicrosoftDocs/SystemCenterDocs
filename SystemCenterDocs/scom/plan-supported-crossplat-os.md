@@ -185,7 +185,7 @@ Supported versions:
 - Ubuntu 16.04, 18.04, and 20.04
 
 >[!NOTE]
-> Debian 10, 11, and Ubuntu 20.04 are compatible with SCOM 2019 UR3 and later.
+> Debian 10, 11, and Ubuntu 20.04 are compatible with System Center - Operations Manager 2019 UR3 and later.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -202,7 +202,7 @@ Supported versions:
 - Rocky 8 (supported from Operations Manager 2019 UR4 and later)
 - Alma 8 (supported from Operations Manager 2019 UR4 and later)
 
-Oracle Linux 8 is supported from SCOM 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|

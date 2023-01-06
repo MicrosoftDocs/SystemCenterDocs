@@ -41,15 +41,15 @@ The following information helps you understand the performance and scalability c
 ## Upgrade sequence
 If you're upgrading an installation of System Center 2012 R2 Operations Manager or System Center 2016 - Operations Manager that is integrated with one or more System Center components, it's important that you upgrade in the following order.  
 
-1. Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group.
-2. Service Manager - if you have configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager.
-3. Data Protection Manager - if you have configured the central console to centrally manage your DPM environment.
+1. Orchestrator - if you've the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group.
+2. Service Manager - if you've configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager.
+3. Data Protection Manager - if you've configured the central console to centrally manage your DPM environment.
 4. Operations Manager  
-5. Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines, and virtual machine hosts.
+5. Virtual Machine Manager - if you've configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines, and virtual machine hosts.
 
 ## Hardware requirements
 
-Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 - Operations Manager and higher, considering the minimum hardware requirements for processor, RAM, and disk space. You should use the information here whether you are deploying one or multiple components. For more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, refer to the [Operations Manager 2012 Sizing Helper](https://www.microsoft.com/download/details.aspx?id=29270).
+Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 - Operations Manager and higher, considering the minimum hardware requirements for processor, RAM, and disk space. You should use the information here whether you're deploying one or multiple components. For more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, refer to the [Operations Manager 2012 Sizing Helper](https://www.microsoft.com/download/details.aspx?id=29270).
 
 > [!NOTE]
 > While the Operations Manager 2012 Sizing helper hasn't been updated to reflect the 2016 and higher release of Operations Manager, the information provided is still valid to help you estimate for your design requirements. However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section isn't correct. The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.  
@@ -142,7 +142,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - .NET Framework 4 or .NET Framework 4.5 is required, and .NET Framework 4.7 is also supported.
 ::: moniker range="sc-om-2016"
 
-- Microsoft .NET Framework 4.8 is not supported.
+- Microsoft .NET Framework 4.8 isn't supported.
 
 ::: moniker-end
 
@@ -229,7 +229,7 @@ Microsoft supports running all System Center 2016 – Operations Manager and hig
 
 System Center 2016 - Operations Manager and higher runs on virtual machines in Microsoft Azure just as it does on physical computer systems. We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises. You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.  
 
-- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](/en-in/azure/site-recovery/site-recovery-workload). The virtualized environment referred here can be either on on-premises or Azure, and it would failover to this environment on account of any disaster.  
+- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](/en-in/azure/site-recovery/site-recovery-workload). The virtualized environment referred here can be either on on-premises or Azure, and it would fail over to this environment on account of any disaster.  
 - If the Operations Manager databases are to be hosted on virtualized SQL Server(s) for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.  
 
 
@@ -270,15 +270,15 @@ System Center Operations Manager supports an in-place upgrade from the following
 
 ## Active Directory and DNS
 
-Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization. DNS is leveraged for name resolution of the supporting roles in the management group as well as computers, network devices, and other monitored workloads such as web URLs.  
+Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization. DNS is used for name resolution of the supporting roles in the management group and computers, network devices, and other monitored workloads such as web URLs.  
 
 ### Active Directory Domain Services
 
-System Center Operations Manager relies on AD DS for a number of services, including definition of security principles, rights assignment, authentication, and authorization. Operations Manager queries AD DS when performing computer and service discovery and can use AD DS for storing and distributing agent configuration information. For Operations Manager to function properly, AD DS and its supporting service, DNS, need to be healthy and at certain minimum configuration levels. In addition, certain domain naming conventions must be followed.
+System Center Operations Manager relies on AD DS for many services, including definition of security principles, rights assignment, authentication, and authorization. Operations Manager queries AD DS when performing computer and service discovery and can use AD DS for storing and distributing agent configuration information. For Operations Manager to function properly, AD DS and its supporting service, DNS, need to be healthy and at certain minimum configuration levels. In addition, certain domain naming conventions must be followed.
 
 ### Domain space naming
 
-An Operations Manager management group can't be installed into a root Active Directory domain that has a flat DNS namespace. However, you can install the management group into child domains of the root domain. For example, you have a root domain that has a DNS name of "Woodgrove". Because this root domain has a flat DNS namespace, you cannot install an Operations Manager management group into the Woodgrove domain. But if the Woodgrove domain has a child domain with a DNS name of "National", the fully qualified domain name of the child domain would be national.woodgrove. For more information about configuring Windows for domains with single-label DNS names, see Information about configuring Active Directory domains by using single-label DNS names.
+An Operations Manager management group can't be installed into a root Active Directory domain that has a flat DNS namespace. However, you can install the management group into child domains of the root domain. For example, you've a root domain that has a DNS name of "Woodgrove". Because this root domain has a flat DNS namespace, you can't install an Operations Manager management group into the Woodgrove domain. But if the Woodgrove domain has a child domain with a DNS name of "National", the fully qualified domain name of the child domain would be national.woodgrove. For more information about configuring Windows for domains with single-label DNS names, see Information about configuring Active Directory domains by using single-label DNS names.
 
 ### Domain functional level
 
@@ -286,7 +286,7 @@ Windows Server Active Directory can operate at different functional levels. Thes
 
 ### Forest functional level
 
-The forest functional level is similar to the domain functional level in that it sets a minimum domain controller operating system level across the whole forest. After it is set, domain controllers with down-level operating systems from lower functional levels can't be introduced into the forest. Operations Manager doesn't have a forest functional level requirement.
+The forest functional level is similar to the domain functional level in that it sets a minimum domain controller operating system level across the whole forest. After it's set, domain controllers with down-level operating systems from lower functional levels can't be introduced into the forest. Operations Manager doesn't have a forest functional level requirement.
 
 ### DNS
 

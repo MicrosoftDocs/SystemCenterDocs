@@ -32,35 +32,35 @@ In the Operations Manager console, go to **Administration** \> **Run-as configur
 
 The following images show the default **Action** account.
 
-![Default Action account](media/gmsa/default-action-account.png)
+![Screenshot of Default Action account.](media/gmsa/default-action-account.png)
 
-![Default Action monitoring host](media/gmsa/default-action-monitoring-host.png)
+![Screenshot of Default Action monitoring host.](media/gmsa/default-action-monitoring-host.png)
 
 Change the credentials of the default **Action** account to **gMSA**.
 
-![Provide Default Action account credentials](media/gmsa/act-gmsa.png)
+![Screenshot of Provide Default Action account credentials.](media/gmsa/act-gmsa.png)
 
-![Default Action change credentials](media/gmsa/default-action-change-credentials.png)
+![Screenshot of Default Action change credentials.](media/gmsa/default-action-change-credentials.png)
 
  Validate that *MonitoringHost.exe* runs as gMSA.
 
-![Default Action gMSA](media/gmsa/default-action-gmsa.png)
+![Screenshot of Default Action gMSA.](media/gmsa/default-action-gmsa.png)
 
 ### Default Action account Run As profile
 
  Change the default **Action** account Run As profile to use the **gMSA** Run As default **Action** accounts.
 
- ![Default Action Run As account](media/gmsa/defaul-action-run-as-account.png)
+ ![Screenshot of Default Action Run As account.](media/gmsa/defaul-action-run-as-account.png)
 
 ## Microsoft Monitoring Agent
 To alter the agent **Action** account in the Microsoft Monitoring Agent, change the credentials from the target agent computer, as shown.
 
-![Microsoft Monitoring Agent](media/gmsa/monitoring-agent-properties.png)
+![Screenshot of Microsoft Monitoring Agent.](media/gmsa/monitoring-agent-properties.png)
 
 ### Create Run As accounts
 When you create a new Run As account, enter the gMSA in the **User name** box followed by **$**. Don't enter a password. Continue to create the Run As account.
 
-![Run As accounts](media/gmsa/run-account-credentials.png)
+![Screenshot of Run As accounts.](media/gmsa/run-account-credentials.png)
 
 ### Discovery and push installation of the agent
 

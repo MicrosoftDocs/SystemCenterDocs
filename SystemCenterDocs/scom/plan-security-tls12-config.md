@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management group.  
+This article describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management group.  
 
 >[!NOTE]
 > Operations Manager will use the protocol configured at the Operating System Level. For example, if TLS 1.0, TLS 1.1, and TLS 1.2 are enabled at the Operating System Level, then Operations Manager will select one of the three protocols in the following order of preference:
@@ -79,7 +79,7 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 2. Start Registry Editor by selecting and holding **Start**, enter **regedit** in the **Run** textbox, and select **OK**.
 3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols**.
 4. Create a subkey under **Protocols** for **SSL 2.0**, **SSL 3.0**, **TLS 1.0**, **TLS 1.1**, and **TLS 1.2**.  
-5. Create a **Client** and **Server** subkey under each protocol version subkey you created earlier.  For example, the sub-key for TLS 1.0 would be **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client** and **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server**.  
+5. Create a **Client** and **Server** subkey under each protocol version subkey you created earlier.  For example, the subkey for TLS 1.0 would be **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client** and **HKLM\System\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server**.  
 6. To disable each protocol, create the following DWORD values under **Server** and **Client**:  
    * **Enabled** [Value = 0]  
    * **DisabledByDefault** [Value = 1]  
