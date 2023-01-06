@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This topic describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
+This article describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
 
 In Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:
 
@@ -72,9 +72,9 @@ Operations Manager contains three predefined profiles to use in monitoring UNIX 
 
     This profile is used for privileged maintenance operations, such as updating and removing agents.
 
-In the UNIX and Linux management packs, all the rules, monitors, tasks, recoveries, and other management pack elements are configured to use these profiles. Consequently, there is no requirement to define additional profiles by using the Run As Profiles Wizard unless special circumstances dictate it. The profiles aren't cumulative in scope. For example, the UNIX/Linux maintenance account profile can't be used in place of the other profiles simply because it's configured using a privileged account.
+In the UNIX and Linux management packs, all the rules, monitors, tasks, recoveries, and other management pack elements are configured to use these profiles. So, there's no requirement to define additional profiles by using the Run As Profiles Wizard unless special circumstances dictate it. The profiles aren't cumulative in scope. For example, the UNIX/Linux maintenance account profile can't be used in place of the other profiles simply because it's configured using a privileged account.
 
-In Operations Manager, a profile cannot function until it's associated with at least one Run As account. The credentials for accessing the UNIX or Linux computers are configured in the Run As accounts. Because there are no predefined Run As accounts for UNIX and Linux monitoring, you must create them.
+In Operations Manager, a profile can't function until it's associated with at least one Run As account. The credentials for accessing the UNIX or Linux computers are configured in the Run As accounts. Because there are no predefined Run As accounts for UNIX and Linux monitoring, you must create them.
 
 To create a Run As account, you must run the **UNIX/Linux Run As Account Wizard** that is available when you select **UNIX/Linux Accounts** in the **Administration** workspace. The wizard creates a Run As account based on the choice of a Run As account type. There are two Run As account types:
 

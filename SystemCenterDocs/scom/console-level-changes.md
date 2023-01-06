@@ -68,7 +68,7 @@ When a gMSA is provided during the discovery process, leave the **Password** box
 
 ## Known issue and resolution
 
-Post migration to gMSA, you might encounter an error when you export a report in Word, PowerPoint, or Excel format. This error is specifically observed for SQL Server Reporting Services on SQL Server 2017.
+Post migration to gMSA, you might encounter an error when you export a report in Word, PowerPoint, or Excel format. This error is observed for SQL Server Reporting Services on SQL Server 2017.
 
 This error appears to be a persistent issue with SQL Server Reporting Services in SQL Server 2017. To resolve it, follow these steps.
 
