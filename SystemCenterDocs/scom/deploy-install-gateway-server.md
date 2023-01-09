@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of management groups, such as in a domain that isn't trusted. The gateway server acts as a concentration point for agent-to-management server communication. Agents in domains that aren't trusted communicate with the gateway server, and the gateway server communicates with one or more management servers. Because communication between the gateway server and the management servers occurs over only one port (TCP 5723), that port is the only one that has to be opened on any intervening firewalls to enable management of multiple agent-managed computers. Multiple gateway servers can be placed in a single domain so that the agents can failover from one to the other if they lose communication with one of the gateway servers. Similarly, a single gateway server can be configured to fail over between management servers so that no single point of failure exists in the communication chain.
+Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of management groups, such as in a domain that isn't trusted. The gateway server acts as a concentration point for agent-to-management server communication. Agents in domains that aren't trusted communicate with the gateway server, and the gateway server communicates with one or more management servers. Because communication between the gateway server and the management servers occurs over only one port (TCP 5723), that port is the only one that has to be opened on any intervening firewalls to enable management of multiple agent-managed computers. Multiple gateway servers can be placed in a single domain so that the agents can fail over from one to the other if they lose communication with one of the gateway servers. Similarly, a single gateway server can be configured to fail over between management servers so that no single point of failure exists in the communication chain.
 
 Because the gateway server resides in a domain that isn't trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of Operations Manager for mutual authentication.
 
@@ -128,7 +128,7 @@ This procedure installs the gateway server. The server that is to be the gateway
 
 6.  On the **Management Group Configuration** page, enter the target management group name in the **Management Group Name** field, enter the target management server name in the **Management Server** field, check that the **Management Server Port** field is **5723**, and select **Next**. This port can be changed if you've enabled a different port for management server communication in the Operations console.
 
-7.  On the **Gateway Action Account** page, select the **Local System** account option, unless you've specifically created a domain-based or local computer-based gateway Action account. Select **Next**.
+7.  On the **Gateway Action Account** page, select the **Local System** account option, unless you've created a domain-based or local computer-based gateway Action account. Select **Next**.
 
 8.  On the **Microsoft Update** page, optionally indicate if you want to use Microsoft Update, and select **Next**.
 
@@ -190,7 +190,7 @@ Use the Set-SCOMParentManagementServer command in the Operations Manager shell, 
 
 ## To chain multiple gateway servers
 
-It is sometimes necessary to chain multiple gateways together in order to monitor across multiple untrusted boundaries. This topic describes how to chain multiple gateways together.
+It's sometimes necessary to chain multiple gateways together in order to monitor across multiple untrusted boundaries. This article describes how to chain multiple gateways together.
 
 > [!NOTE]
 > - You should install one gateway at a time, and verify that each newly installed gateway is configured correctly before adding another gateway in the chain.

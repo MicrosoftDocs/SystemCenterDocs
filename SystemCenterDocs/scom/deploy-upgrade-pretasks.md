@@ -26,7 +26,7 @@ Perform the following pre-upgrade tasks in the order presented before you begin 
 
 2. Clean up the Database (ETL Table)
 
-3. Configure agents to failover between multiple gateway servers so all agents reporting to a gateway have a failover gateway assigned.   
+3. Configure agents to fail over between multiple gateway servers so all agents reporting to a gateway have a failover gateway assigned.   
 
 4. Remove Agents from Pending Management
 
@@ -48,13 +48,13 @@ Perform the following pre-upgrade tasks in the order presented before you begin 
 
 Review the event logs for Operations Manager on the management servers to look for recurring warning or critical events. Address them and save a copy of the event logs before you perform your upgrade.
 
-## Cleanup the database (ETL table)
+## Clean up the database (ETL table)
 
-As part of upgrade to System Center Operations Manager installation (setup) includes a script to cleanup ETL tables and grooming the database. However, in cases where there are a large number of rows (greater than 100,000) to cleanup, we recommend running the script before starting the upgrade to promote a faster upgrade and prevent possible timeout of setup. Performing this pre-upgrade task in all circumstances ensures a more efficient installation.
+As part of upgrade to System Center Operations Manager installation (setup) includes a script to clean up ETL tables and grooming the database. However, in cases where there are a large number of rows (greater than 100,000) to clean up, we recommend running the script before starting the upgrade to promote a faster upgrade and prevent possible timeout of setup. Performing this pre-upgrade task in all circumstances ensures a more efficient installation.
 
-### To cleanup ETL
+### To clean up ETL
 
-To cleanup the ETL table, run the following script on the SQL Server hosting the Operations Manager database:
+To clean up the ETL table, run the following script on the SQL Server hosting the Operations Manager database:
 
   ```
     -- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         --
@@ -84,7 +84,7 @@ To cleanup the ETL table, run the following script on the SQL Server hosting the
   ```   
 
 > [!NOTE]
-> Cleanup of ETL can require several hours to complete.
+> Clean up of ETL can require several hours to complete.
 
 ## Remove Agents from pending management
 
