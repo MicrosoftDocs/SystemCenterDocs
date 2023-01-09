@@ -4,8 +4,8 @@ title: Operations Manager
 description: This article is the main landing page for all content related to System Center - Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 11/07/2022
+manager: mkluck
+ms.date: 12/12/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-Welcome to System Center - Operations Manager.  Operations Manager provides infrastructure monitoring that is flexible and cost-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
+Welcome to System Center - Operations Manager. Operations Manager provides infrastructure monitoring that is flexible and cost-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
 
 ## Operations Manager documentation
 
@@ -34,11 +34,11 @@ Welcome to System Center - Operations Manager.  Operations Manager provides infr
 
 -   [Deploying System Center - Operations Manager](deploy-overview.md)
 
-    Read these topics to learn how to deploy Operations Manager in your environment.
+    Read these articles to learn how to deploy Operations Manager in your environment.
 
 -   [System Center - Operations Manager Operations Guide](manage-operations-guide-overview.md)
 
-    Read these topics once you have Operations Manager up and running and are looking to start monitoring your environment, as well as procedures for day to day operations.
+    Read these articles once you've Operations Manager up and running and are looking to start monitoring your environment and procedures for day-to-day operations.
 
 -   [Management Pack Authoring Guide for Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh457564(v=sc.12))
 

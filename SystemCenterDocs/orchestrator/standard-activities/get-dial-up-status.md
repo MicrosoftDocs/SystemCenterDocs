@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -35,16 +35,16 @@ The Get Dial-up Status activity retrieves the status of a dial-up or VPN network
  Use the following information to configure the Get Dial-up Status activity.  
 
 > [!NOTE]
->  You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
+> You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
 
 ### Connection Tab  
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Dial-up or VPN entry**|Type the name of the entry as entered in the address book, or click the ellipsis **(…)** button and select the entry from the Remote Access Phone Book.|  
+|**Dial-up or VPN entry**|Enter the name of the entry as entered in the address book, or select the ellipsis **(…)** button and select the entry from the Remote Access Phone Book.|  
 
 ### Published Data  
- The following table lists the published data items.  
+The following table lists the published data items.  
 
 |Item|Description|  
 |----------|-----------------|  

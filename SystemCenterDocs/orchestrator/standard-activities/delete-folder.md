@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -34,9 +34,9 @@ The Delete Folder activity deletes a folder, subfolders, or the entire folder tr
 ## Configuring the Delete Folder Activity  
  Before you configure the Delete Folder activity, you need to determine the following:  
 
-- The folder name you are targeting.  
+- The folder name you're targeting.  
 
-- Whether you are going to delete the entire tree; delete the subfolders only; or delete just the directory.  
+- Whether you're going to delete the entire tree; delete the subfolders only; or delete just the directory.  
 
 Use the following information to configure the Delete Folder activity.  
 
@@ -44,7 +44,7 @@ Use the following information to configure the Delete Folder activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Path**|Type the path of the folder that you are targeting.|  
+|**Path**|Enter the path of the folder that you're targeting.|  
 |**Delete the folder only if it is empty**|Select this option to delete the folder only if there are no files or subfolders in it.|  
 |**Delete all files and subfolders**|Select this option to delete the specified folder and all subfolders and files contained in that folder.|  
 

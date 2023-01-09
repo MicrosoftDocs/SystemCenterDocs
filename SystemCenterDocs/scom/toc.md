@@ -1,4 +1,5 @@
-# [Overview](welcome.md)
+# [About Operations Manager](welcome.md)
+## [About Azure Monitor SCOM Managed Instance (preview)](operations-manager-managed-instance-overview.md)
 ## [Operations Manager key concepts](key-concepts.md)
 # [Get Started](get-started.md)
 ## [Operations Manager build versions](release-build-versions.md)
@@ -7,6 +8,7 @@
 ## [What's new in Operations Manager](whats-new-in-om.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
+## [Migrate from On-premises to SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
 ## [How to disable RC4 while installing Operations Manager](install-with-rc4-disabled.md)
 ## [Enable service logon ](enable-service-logon.md)
 ## [Turn on/off telemetry settings](manage-telemetry.md)
@@ -20,6 +22,7 @@
 ### [Design integration with other enterprise management products](plan-thirdparty-integration.md)
 ### [Designing for high availability and disaster recovery](plan-hadr-design.md)
 ### [Agent deployment planning](plan-planning-agent-deployment.md)
+### [Migrate to Operations Manager managed instance (preview)](migrate-to-operations-manager-managed-instance.md)
 ### Security
 #### [Configuring a firewall for Operations Manager](plan-security-config-firewall.md)
 #### [Configure TLS 1.2 encryption](plan-security-tls12-config.md)
@@ -68,6 +71,23 @@
 ## Manage
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
+### Azure Monitor SCOM Managed Instance (preview)
+#### [Create a SCOM Managed Instance (preview)](create-operations-manager-managed-instance.md)
+#### [Scale SCOM Managed Instance (preview)](scale-scom-managed-instance.md)
+#### [Patch SCOM Managed Instance (preview)](patch-scom-managed-instance.md)
+#### [Report using Power BI](operations-manager-managed-instance-create-reports-on-power-bi.md)
+#### [SCOM Managed Instance (preview) monitoring scenarios](scom-managed-instance-monitoring-scenarios.md)
+#### [SCOM Managed Instance (preview) agents](plan-planning-agent-deployment-scom-managed-instance.md)
+#### [Install Windows Agent manually Using MOMAgent.msi](manage-deploy-windows-agent-manually-scom-managed-instance.md)
+#### Post Deployment
+##### [Connect to the Ops Console](connect-managed-instance-ops-console.md)
+#### Logs
+##### [Activity Log](scom-mi-activity-log.md)
+#### [FAQs](operations-manager-managed-instance-common-questions.md)
+#### [Troubleshoot](troubleshoot-scom-managed-instance.md)
+#### Security
+##### [Managed Identity](use-managed-identities-with-scom-mi.md)
+##### [Encryption at rest](scom-mi-data-encryption-at-rest.md)
 ### Managing discovery and agents
 #### [Discover and install agent on Windows](manage-deploy-windows-agent-console.md)
 #### [Discover and install agent on UNIX and Linux](manage-deploy-crossplat-agent-console.md)
@@ -287,6 +307,9 @@
 #### [Low-Privilege Monitoring](sql-server-management-pack-low-privilege-monitoring.md)
 ### [Views and Dashboards in Management Pack for SQL Server](sql-server-management-pack-views-and-dashboards.md)
 ### [SQL Server Reporting](sql-server-management-pack-sql-server-reporting.md)
+### Custom Monitoring
+#### [Custom Query-Based Monitors](sql-server-management-pack-custom-monitor.md)
+#### [Custom Query-Based Performance Rules](sql-server-management-pack-custom-rule.md)
 ### [Known Issues and Troubleshooting in Management Pack for SQL Server](sql-server-management-pack-known-issues-and-troubleshooting.md)
 ## Management Pack for Azure SQL Database
 ### [Features and Enhancements in Management Pack for Azure SQL Database](azure-sql-management-pack-changes-history.md)
@@ -294,11 +317,11 @@
 ### [Management Pack for Azure SQL Database Delivery](azure-sql-management-pack-management-pack-delivery.md)
 ### [Monitoring Configuration in Management Pack for Azure SQL Database](azure-sql-management-pack-monitoring-configuration.md)
 #### [Monitoring Types](azure-sql-management-pack-monitoring-types.md)
-#### [Custom Query-Based Monitoring](azure-sql-management-pack-custom-query-monitoring.md)
 ### Security Configuration
 #### [Azure SQL Database Run As Accounts](azure-sql-management-pack-run-as-accounts.md)
 #### [Low-Privilege Configuration](azure-sql-management-pack-low-privilege-configuration.md)
 ### [Views and Dashboards in Management Pack for Azure SQL Database](azure-sql-management-pack-viewing-information.md)
+### [Custom Query-Based Monitoring](azure-sql-management-pack-custom-query-monitoring.md)
 ### [Known Issues and Troubleshooting in Management Pack for Azure SQL Database](azure-sql-management-pack-known-issues-and-troubleshooting.md)
 ## Management Pack for Azure SQL Managed Instance
 ### [Features and Enhancements in Management Pack for Azure SQL Managed Instance](managed-instance-management-pack-changes-history.md)

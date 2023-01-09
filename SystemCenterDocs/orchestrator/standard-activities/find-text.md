@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -48,9 +48,9 @@ Use the following information to configure the Find Text activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to find the text in, or click the ellipsis button **(...)** and browse for it.|  
-|**File encoding**|Click the ellipsis button **(...)** and select the format that the file is encoded in from the File encoding drop-down list. Verify that you select the correct encoding format: if the file uses a different encoding format, the activity fails.|  
-|**Search text**|Type the text that you are searching for in the file.|  
+|**File**|Enter the path and name of the file that you want to find the text in, or select the ellipsis button **(...)** and browse for it.|  
+|**File encoding**|Select the ellipsis button **(...)** and select the format that the file is encoded in from the File encoding dropdown list. Verify that you select the correct encoding format; if the file uses a different encoding format, the activity fails.|  
+|**Search text**|Type the text that you're searching for in the file.|  
 |**Case sensitive**|Select this option to search only for lines where the case of the words matches the text from the **Search text** field exactly.|  
 |**Use regular expressions**|Select this option to use regular expressions in your search.|  
 |**Result**|Select one of the following options for your results:<br /><br /> **Only the first line that matches the text will be returned**<br /><br /> **All lines that match the text will be returned**|  
@@ -60,10 +60,10 @@ Use the following information to configure the Find Text activity.
 
 |Item|Description|  
 |----------|-----------------|  
-|Case sensitive|Indicates whether the Case sensitive check box was selected.|  
+|Case sensitive|Indicates whether the Case sensitive checkbox was selected.|  
 |File encoding|The file encoding format that you selected in the File encoding field.|  
 |File name|The name of the file that was searched for text.|  
-|Return first line or all lines|Indicates whether the Only the first line that matches the text will be published or All lines that match the text will be published option was selected.|  
+|Return first line or all lines|Indicates whether Only the first line that matches the text will be published or All lines that match the text will be published option was selected.|  
 |Line number of match|The line number where matching text was found.|  
 |Match end|The character offset position that the match ends on.|  
 |Match start|The character offset position that the match starts on.|  
@@ -72,4 +72,4 @@ Use the following information to configure the Find Text activity.
 |Number of matches|The number of matching items that were found.|  
 |Original line|The entire line that contains the matching item.|  
 |Search text|The search string that was used for the search.|  
-|Use Regex|Indicates whether the Use regular expressions check box was selected.|
+|Use Regex|Indicates whether the Use regular expressions checkbox was selected.|

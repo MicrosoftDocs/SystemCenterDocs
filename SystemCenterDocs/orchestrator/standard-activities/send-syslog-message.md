@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -38,10 +38,10 @@ The Send Syslog Message activity creates a message on the Syslog server that you
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Computer**|Type the name of the computer that contains the Syslog server that you are writing the message to. You can also use the ellipsis **(...)** button to browse for the computer.|  
-|**Text**|Type the message of the event log entry.|  
-|**Priority**|Select the priority from the drop-down menu that is appropriate for this message.|  
-|**Facility**|Select the facility from the drop-down menu that is appropriate for this message.|  
+|**Computer**|Enter the name of the computer that contains the Syslog server that you're writing the message to. You can also use the ellipsis **(...)** button to browse for the computer.|  
+|**Text**|Enter the message of the event log entry.|  
+|**Priority**|Select the priority from the dropdown menu that is appropriate for this message.|  
+|**Facility**|Select the facility from the dropdown menu that is appropriate for this message.|  
 
 ### Published Data  
  The following table lists the published data items.  

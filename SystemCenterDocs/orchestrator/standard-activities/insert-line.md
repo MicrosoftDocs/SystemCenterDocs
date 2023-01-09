@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -48,10 +48,10 @@ Use the following information to configure the Insert Line activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to insert the text into, or click the ellipsis button **(...)** and browse for it.|  
-|**File encoding**|Click the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** drop-down list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
-|**Text**|Type the text that you want to insert into the file.|  
-|**Line number**|Type the line number where the text will be inserted.|  
+|**File**|Enter the path and name of the file that you want to insert the text into, or select the ellipsis button **(...)** and browse for it.|  
+|**File encoding**|Select the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** dropdown list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
+|**Text**|Enter the text that you want to insert into the file.|  
+|**Line number**|Enter the line number where the text will be inserted.|  
 
 ### Published Data  
  The following table lists the published data items.  

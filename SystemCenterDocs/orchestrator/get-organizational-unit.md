@@ -33,9 +33,9 @@ The following tables list the required and optional properties and published dat
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
-| ReturnDNOnly | If true, only the Distinguished Name property will be returned instead of all properties   | Boolean   |
+| ReturnDNOnly | If true, only the Distinguished Name property will be returned instead of all the properties   | Boolean   |
 | Search Root  | The distinguished name of the node in the Active Directory Domain Services hierarchy where the search starts | String   |
-| Search Scope | The scope of the search that is observed by the server. The options are Base, OneLevel or SubTree.   | String   |
+| Search Scope | The scope of the search that is observed by the server; the options are Base, OneLevel, or SubTree   | String   |
 
 ## Get Organizational Unit filter properties
 
@@ -43,7 +43,7 @@ The following tables list the required and optional properties and published dat
 |:---|:---|:---|:---|
 | Description   | Description for the organizational unit   | EqualTo, NotEqualTo, Contains, DoesNotContain, EndsWith, StartsWith   | String   |
 | Display Name   | Display name of the organizational unit   | EqualTo, NotEqualTo, Contains, DoesNotContain, EndsWith, StartsWith   | String   |
-| Managed By   | Distinguished name of the user that is assigned to manage this object. | EqualTo   | String   |
+| Managed By   | Distinguished name of the user that is assigned to manage this object | EqualTo   | String   |
 | Organizational Unit | Unique name to identify the organizational unit   | EqualTo, NotEqualTo, Contains, DoesNotContain, EndsWith, StartsWith   | String   |
 | Modification Date   | Date the organizational unit account was last changed   | EqualTo, NotEqualTo, GreaterThan, GreaterThanOrEqualTo, LessThan, LessThanOrEqualTo | DateTime   |
 | Creation Date   | Date and time that the organizational unit was created   | EqualTo, NotEqualTo, GreaterThan, GreaterThanOrEqualTo, LessThan, LessThanOrEqualTo | DateTime   |
@@ -53,12 +53,12 @@ The following tables list the required and optional properties and published dat
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Description   | Description for the organizational unit   | String   |
-| Count   | The number of organizational units returned by this activity.   | Integer   |
+| Count   | The number of organizational units returned by this activity   | Integer   |
 | Display Name   | Display name of the organizational unit   | String   |
 | Distinguished Name  | Distinguished name that uniquely identifies the organizational unit   | String   |
-| Managed By   | Distinguished name of the user that is assigned to manage this object.   | String   |
+| Managed By   | Distinguished name of the user that is assigned to manage this object   | String   |
 | Organizational Unit | Unique name to identify the organizational unit   | String   |
 | Modification Date   | Date the organizational unit account was last changed   | DateTime   |
 | Creation Date   | Date and time that the organizational unit was created   | DateTime   |
-| Search Root   | The distinguished name of the node in the Active Directory Domain Services hierarchy where the search starts. | String   |
-| Search Scope   | The scope of the search that is observed by the server. The options are Base, OneLevel or SubTree.   | String   |
+| Search Root   | The distinguished name of the node in the Active Directory Domain Services hierarchy where the search starts | String   |
+| Search Scope   | The scope of the search that is observed by the server; the options are Base, OneLevel, or SubTree | String   |
