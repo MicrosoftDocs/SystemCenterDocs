@@ -17,6 +17,8 @@ monikerRange: 'sc-om-2022'
 
 This article provides detailed information on how you can migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview). 
 
+> [!VIDEO https://www.youtube.com/embed/lOlUq72wWag]
+
 Provided the procedure for the following artifacts as an example:
 
 - Management Packs and Overrides 
