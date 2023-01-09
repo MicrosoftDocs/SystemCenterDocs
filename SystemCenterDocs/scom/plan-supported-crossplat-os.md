@@ -5,8 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 09/01/2023
-ms.custom: na
+ms.date: 01/09/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

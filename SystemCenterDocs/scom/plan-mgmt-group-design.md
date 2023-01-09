@@ -5,8 +5,7 @@ description: This article provides an overview of the design decisions for consi
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 09/01/2023
-ms.custom: na
+ms.date: 01/09/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
