@@ -21,7 +21,7 @@ ms.technology: operations-manager
 
 ::: moniker range="sc-om-2022"
 
-This article lists Microsoft System Center 2022 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
+This article lists Microsoft System Center 2022 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes and links to the package downloads.
 
 [!INCLUDE [release-build-versions-2022.md](../includes/release-build-versions-2022.md)]
 
@@ -30,7 +30,7 @@ This article lists Microsoft System Center 2022 - Operations Manager build versi
 
 ::: moniker range="sc-om-2019"
 
-This article lists Microsoft System Center 2019 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
+This article lists Microsoft System Center 2019 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes and links to the package downloads.
 
 [!INCLUDE [release-build-versions-2019.md](../includes/release-build-versions-2019.md)]
 
@@ -38,7 +38,7 @@ This article lists Microsoft System Center 2019 - Operations Manager build versi
 
 ::: moniker range="sc-om-2016"
 
-This article lists Microsoft System Center 2016 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
+This article lists Microsoft System Center 2016 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes and links to the package downloads.
 
 [!INCLUDE [release-build-versions-2016.md](../includes/release-build-versions-2016.md)]
 
@@ -73,6 +73,7 @@ The following is the build version for Operations Manager 1801.
 ::: moniker-end
 
 ## Next steps
+
 - See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.
 
-- [What's New in Operations Manager](./whats-new-in-om.md)
+- See [What's New in Operations Manager](./whats-new-in-om.md).

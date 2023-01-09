@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 12/19/2022
+ms.date: 01/09/2023
 title: Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: ee706e89-20fd-4883-82e3-75565a705751
@@ -21,13 +21,13 @@ ms.custom: engagement-fy23
 
 ::: moniker-end
 
-Every organization needs a business continuity and disaster recovery (BCDR) strategy to make sure resources are available during planned and unplanned outages, and that you're able to recover to normal working conditions when things go wrong. Your BCDR strategy requires keeping your data safe and recoverable, and keeping your business workloads, applications, and services continuously available. System Center Data Protection Manager (DPM) is a robust enterprise backup and recovery system that contributes to your BCDR strategy by facilitating the backup and recovery of enterprise data.
+Every organization needs a business continuity and disaster recovery (BCDR) strategy to ensure resources are available during planned and unplanned outages. Your BCDR strategy requires keeping your data safe and recoverable, and keeping your business workloads, applications, and services continuously available. System Center Data Protection Manager (DPM) is a robust enterprise backup and recovery system that contributes to your BCDR strategy by facilitating the backup and recovery of enterprise data.
 
-You can deploy System Center Data Protection Manager (DPM) for:
+You can deploy System Center DPM for:
 
 -   **Application-aware backup**: Application-aware back up of Microsoft workloads, including SQL Server, Exchange, and SharePoint.
 
--   **File backup**: Back up files, folders and volumes for computers running Windows server and Windows client operating systems.
+-   **File backup**: Back up files, folders, and volumes for computers running Windows server and Windows client operating systems.
 
 -   **System backup**: Back up system state or run full, bare-metal backups of physical computers running Windows server or Windows client operating systems.
 
@@ -45,7 +45,7 @@ DPM can store backup data to:
 
 When outages occur and source data is unavailable, you can use DPM to easily restore data to the original source or to an alternate location. That way, if the original data is unavailable because of planned or unexpected issues, you can easily restore data from an alternate location. DPM uses SQL Server as its database, and you protect the DPM server itself for disaster recovery purposes. The following diagram provides an overview of DPM backup functionality.
 
-![Overview of DPM backup workflow](./media/dpm-overview/dpm-backup.png)
+:::image type="content" source="./media/dpm-overview/dpm-backup-inline.png" alt-text="Diagram of DPM backup workflow." lightbox="./media/dpm-overview/dpm-backup-expanded.png":::
 
 ## Next steps
 Learn more in [How does DPM work?](~/dpm/how-dpm-protects-data.md)
