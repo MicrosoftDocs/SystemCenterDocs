@@ -23,49 +23,49 @@ ms.topic: article
 When you upgrade a distributed management group, you start by upgrading each of the management servers in your management group. There are a number of pre-upgrade tasks that you must perform first. For more information, see [Pre-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-overview.md).
 
 > [!IMPORTANT]
-> Between the time that you upgrade the management servers and upgrade the agents, you might experience Application Platform Monitoring (APM)-related event log entries on the agent-managed servers. These event log entries might occur on agent-managed servers that are not APM-enabled. These event log entries will be resolved when you complete the upgrade of the agents. You might have to restart the health service after the agent is upgraded in order to clear the events.
+> Between the time that you upgrade the management servers and upgrade the agents, you might experience Application Platform Monitoring (APM)-related event log entries on the agent-managed servers. These event log entries might occur on agent-managed servers that aren't APM-enabled. These event log entries will be resolved when you complete the upgrade of the agents. You might have to restart the health service after the agent is upgraded in order to clear the events.
 
 > [!NOTE]
-> Because the ACS Collector server must be on same machine as a management server, we recommend you perform the steps described in [How to Upgrade an ACS Collector](~/scom/deploy-upgrade-acs-collector.md) along with the upgrade of the management server on which ACS resides.
+> Because the ACS Collector server must be on the same machine as a management server, we recommend you perform the steps described in [How to Upgrade an ACS Collector](~/scom/deploy-upgrade-acs-collector.md) along with the upgrade of the management server on which ACS resides.
 
 > [!IMPORTANT]
-> When upgrading multiple management servers in a distributed management group, you must wait to start upgrade of additional management servers until after setup on the first management server completes. Failing to do so can cause a SQL update script that runs early in the set up process to run on multiple management servers and result in database issues.  This SQL update script only needs to run on the initial management server being upgraded.
+> When upgrading multiple management servers in a distributed management group, you must wait to start upgrade of additional management servers until after the setup on the first management server completes. Failing to do so can cause a SQL update script that runs early in the set up process to run on multiple management servers and result in database issues.  This SQL update script only needs to run on the initial management server being upgraded.
 
 > [!NOTE]
-> When upgrading multiple management servers in a distributed management group, sequence the upgrades in a manner that best suits your business needs.  Upgrade all management servers in the distributed management group as soon as possible after the initial management server is upgraded to verify that your upgraded environment is healthy.
+> When upgrading multiple management servers in a distributed management group, sequence the upgrades in a manner that best suits your business needs. Upgrade all management servers in the distributed management group as soon as possible after the initial management server is upgraded to verify that your upgraded environment is healthy.
 
 ### To upgrade a management server
 
-1.  Log on to the Operations Manager management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1.  Sign in to the Operations Manager management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2.  From the Operations Manager media, run **Setup.exe**, and then click **Install**. The **Getting Started** page displays information about which features will be upgraded.
+2.  From the Operations Manager media, run **Setup.exe**, and then select **Install**. The **Getting Started** page displays information about which features will be upgraded.
 
-3.  On the **Getting Started** page, click **Next** to proceed with the upgrade.
+3.  On the **Getting Started** page, select **Next** to proceed with the upgrade.
 
-4.  On the **Getting Started, Please read the license terms** page, read the Microsoft Software License Terms, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.
+4.  On the **Getting Started, Please read the license terms** page, read the Microsoft Software License Terms, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.
 
-5.  On the **Getting Started, Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+5.  On the **Getting Started, Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
 
     > [!NOTE]
     > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (1801, 1807, 2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
     >
 
-6.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify prerequisites again** to recheck the system.
+6.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify prerequisites again** to recheck the system.
 
-7.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites, Proceed with Setup** page appears. Click **Next**.
+7.  If the Prerequisites checker doesn't return any warnings or errors, the **Prerequisites, Proceed with Setup** page appears. Select **Next**.
 
-8.  On the **Configuration, Configure Operations Manager accounts** page, enter the domain account credentials for the System Center Configuration and Data Access Service account, and then click **Next**
+8.  On the **Configuration, Configure Operations Manager accounts** page, enter the domain account credentials for the System Center Configuration and Data Access Service account, and select **Next**
 
-9. Review the **Configuration, Ready To Upgrade** page, and then click **Upgrade**. The upgrade proceeds and displays the upgrade progress.
+9. Review the **Configuration, Ready To Upgrade** page, and select **Upgrade**. The upgrade proceeds and displays the upgrade progress.
 
-10. When the upgrade is finished, the **Upgrade complete** page appears. Click **Close**.
+10. When the upgrade is finished, the **Upgrade complete** page appears. Select **Close**.
 
     > [!NOTE]
-    > Upgrading a management server is just one phase of the distributed upgrade process. Upgrade is not completed until you have upgraded all of the other features in your management group. The next step is to upgrade any gateways.  See [How to Upgrade a Gateway Server](~/scom/deploy-upgrade-gateway-server.md) for more information.
+    > Upgrading a management server is just one phase of the distributed upgrade process. Upgrade isn't completed until you've upgraded all of the other features in your management group. The next step is to upgrade any gateways. For more information, see [How to Upgrade a Gateway Server](~/scom/deploy-upgrade-gateway-server.md).
 
 ### To upgrade a management server from the Command Prompt
 
-1.  Log on to the management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1.  Sign in to the management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
 2.  Open a Command Prompt window by using the **Run as Administrator** option.
 
@@ -80,11 +80,11 @@ When you upgrade a distributed management group, you start by upgrading each of 
     /DataReaderPassword:<password>
     ```
 
-After you have upgraded all of the management servers in your management group, you should upgrade gateway servers, and then upgrade any stand-alone Operations consoles.
+After you've upgraded all of the management servers in your management group, you should upgrade gateway servers, and then upgrade any standalone Operations consoles.
 
 
 ## Next steps
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
 
-- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+- To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).  
