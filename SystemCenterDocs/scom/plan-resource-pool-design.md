@@ -32,7 +32,11 @@ For every resource pool created in the Operations console, the Operations Manage
 
 Another role supporting a resource pool are *Observers*.  This is a management server or a Gateway server that doesn't participate in loading workflows for the pool; however, they participate in quorum decisions. This is never used under normal circumstances, and therefore shouldn't be considered.  
 
-There are two types of membership: automatic and manual.  When you create a resource pool, its membership is set to manual and can't be reconfigured to automatic.  When a System Center – Operations Manager management group is created, three resource pools are created by default with automatic membership.  The following table describes these three resource pools.
+There are two types of membership:
+- Automatic 
+- Manual
+
+When you create a resource pool, its membership is set to manual and can't be reconfigured to automatic.  When a System Center – Operations Manager management group is created, three resource pools are created by default with automatic membership.  The following table describes these three resource pools.
 
 | Resource Pool Name | Description
 |----------|----------

@@ -62,7 +62,7 @@ Follow these steps to validate the migration of Groups and Data collection.
 
     1. Verify that the state views are populated with the correct objects (Servers, Databases, Websites, and so on) and they're being monitored (Health State isn't **Unmonitored**).
 
-    1. Check the performance views and verify that that performance data has been collected.
+    1. Check the performance views and verify that the performance data has been collected.
 
 # [Dashboard](#tab/dashboard)
 
