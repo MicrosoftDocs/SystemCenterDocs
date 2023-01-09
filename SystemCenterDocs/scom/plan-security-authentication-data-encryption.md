@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-System Center Operations Manager consists of features such as the management server, gateway server, Reporting server, Operational database, Reporting data warehouse, agent, web console, and Operations console. This section explains how authentication is performed and identifies connection channels where the data is encrypted.
+System Center Operations Manager consists of features such as the management server, gateway server, Reporting server, Operational database, Reporting data warehouse, agent, web console, and Operations console. This article explains how authentication is performed and identifies connection channels where the data is encrypted.
 
 ## Certificate-Based Authentication
 
@@ -32,10 +32,11 @@ An agent and the management server use Windows authentication to mutually authen
 
 ### Setting Up Communication Between Agents and Management Servers Across Trust Boundaries
 
-An agent (or agents) might be deployed into a domain (domain B) separate from the management server (domain A), and no two-way trust might exist between the domains. Because there is no trust between the two domains, the agents in one domain cannot authenticate with the management server in the other domain using the Kerberos protocol. Mutual authentication between the Operations Manager features within each domain still occurs.
+An agent (or agents) might be deployed into a domain (domain B) separate from the management server (domain A), and no two-way trust might exist between the domains. Because there's no trust between the two domains, the agents in one domain cannot authenticate with the management server in the other domain using the Kerberos protocol. Mutual authentication between the Operations Manager features within each domain still occurs.
+
 A solution to this situation is to install a gateway server in the same domain where the agents reside, and then install certificates on the gateway server and the management server to achieve mutual authentication and data encryption. The use of the gateway server means you need only one certificate in domain B and only one port through the firewall, as shown in the following illustration.
 
-![Monitor Untrusted Agent with Gateway](./media/plan-security-authentication-data-encryption/om2016-untrusted-agent-with-gateway.png)
+![Illustration of the Monitor Untrusted Agent with Gateway.](./media/plan-security-authentication-data-encryption/om2016-untrusted-agent-with-gateway.png)
 
 ### Setting Up Communication Across a Domain – Workgroup Boundary
 
@@ -44,7 +45,7 @@ In your environment, you may have one or two agents deployed to a workgroup insi
 > [!NOTE]
 > In this scenario, the agent must be manually installed.
 
-![Monitor Untrusted Agent in Workgroup](./media/plan-security-authentication-data-encryption/om2016-untrusted-agent-no-gateway.png)
+![Illustration of the Monitor Untrusted Agent in Workgroup.](./media/plan-security-authentication-data-encryption/om2016-untrusted-agent-no-gateway.png)
 
 Perform the following steps on both the computer hosting the agent and the management server using the same certification authority (CA) for each:
 
@@ -54,14 +55,14 @@ Perform the following steps on both the computer hosting the agent and the manag
 4. Use the MOMCertImport tool to configure Operations Manager.
 
 > [!NOTE]
-> Certificates with the KEYSPEC other than 1 are not supported.
+> Certificates with the KEYSPEC other than 1 aren't supported.
 
 
-These are the same steps for installing certificates on a gateway server, except you do not install or run the gateway approval tool
+These are the same steps for installing certificates on a gateway server, except you don't install or run the gateway approval tool
 
 #### Confirming Certificate Installation
 
-If you have properly installed the certificate, the following event is written into the Operations Manager event log.
+If you've properly installed the certificate, the following event is written into the Operations Manager event log.
 
 Type | Source | Event ID | General |
 ----------|----------|----------|----------|
@@ -82,7 +83,7 @@ Some communication between the management server and the agent may include crede
 
 ## Management server and Operations console, Web console server, and Reporting server
 
-Authentication and data encryption between the management server and the Operations console, Web console server, or Reporting server is accomplished by using Windows Communication Foundation (WCF) technology. The initial attempt at authentication is made by using the user's credentials. The Kerberos protocol is attempted first. If the Kerberos protocol does not work, another attempt is made using NTLM. If authentication still fails, the user is prompted to provide credentials. After authentication has taken place, the data stream is encrypted as a function of either the Kerberos protocol or SSL, if NTLM is used.
+Authentication and data encryption between the management server and the Operations console, Web console server, or Reporting server is accomplished by using Windows Communication Foundation (WCF) technology. The initial attempt at authentication is made by using the user's credentials. The Kerberos protocol is attempted first. If the Kerberos protocol doesn't work, another attempt is made using NTLM. If authentication still fails, the user is prompted to provide credentials. After authentication has taken place, the data stream is encrypted as a function of either the Kerberos protocol or SSL if NTLM is used.
 
 In the case of a Reporting server and a management server, after authentication has occurred, a data connection is established between the management server and SQL Server Reporting Server. This is accomplished by strictly using the Kerberos protocol; therefore, the management server and Reporting Server must reside in trusted domains. For more information about WCF, see the MSDN article [What Is Windows Communication Foundation](/dotnet/framework/wcf/whats-wcf).
 
@@ -97,7 +98,7 @@ Two communication channels exist between a management server and the Reporting d
 
 By default, the monitoring host process spawned by the Health Service, which is responsible for writing collected events and performance counters to the data warehouse, achieves Windows Integrated Authentication by running as the Data Writer Account specified during Reporting Setup. The account credential is securely stored in a Run As Account called Data Warehouse Action Account. This Run As Account is a member of a Run As Profile called Data Warehouse Account (which is associated with the actual collection rules).
 
-If the Reporting data warehouse and the management server are separated by a trust boundary (for example, each resides in different domains with no trust), then Windows Integrated Authentication will not work. To work around this situation, the monitoring host process can connect to the Reporting data warehouse using SQL Server Authentication. To do this, create a new Run As Account (of Simple Account type) with the SQL account credential and make it a member of the Run As Profile called Data Warehouse SQL Server Authentication Account, with the management server as the target computer.
+If the Reporting data warehouse and the management server are separated by a trust boundary (for example, each resides in different domains with no trust), then Windows Integrated Authentication won't work. To work around this situation, the monitoring host process can connect to the Reporting data warehouse using SQL Server Authentication. To do this, create a new Run As Account (of Simple Account type) with the SQL account credential and make it a member of the Run As Profile called Data Warehouse SQL Server Authentication Account, with the management server as the target computer.
 
 > [!IMPORTANT]
 > By default, the Run As Profile, Data Warehouse SQL Server Authentication Account was assigned a special account through the use of the Run As Account of the same name. Never make any changes to the account that is associated with the Run As Profile, Data Warehouse SQL Server Authentication Account. Instead, create your own account and your own Run As Account and make the Run As Account a member of the Run As Profile, Data Warehouse SQL Server Authentication Account when configuring SQL Server Authentication.
@@ -124,10 +125,10 @@ The following outlines the relationship of the various account credentials, Run 
 
 By default, the System Center Data Access service, which is responsible for reading data from the Reporting data warehouse and making it available in the Report Parameter Area, achieves Windows Integrated Authentication by running as the Data Access Service and Config Service account that was defined during setup of Operations Manager.
 
-If the Reporting data warehouse and the management server are separated by a trust boundary (for example, each resides in different domains with no trust), then Windows Integrated Authentication would not work. To work around this situation, the System Center Data Access service can connect to the Reporting data warehouse using SQL Server Authentication. To do this, create a new Run As Account (of Simple Account type) with the SQL account credential and make it a member of the Run As Profile called Reporting SDK SQL Server Authentication Account with the management server as the target computer.
+If the Reporting data warehouse and the management server are separated by a trust boundary (for example, each resides in different domains with no trust), then Windows Integrated Authentication wouldn't work. To work around this situation, the System Center Data Access service can connect to the Reporting data warehouse using SQL Server Authentication. To do this, create a new Run As Account (of Simple Account type) with the SQL account credential and make it a member of the Run As Profile called Reporting SDK SQL Server Authentication Account with the management server as the target computer.
 
 > [!IMPORTANT]
-> By default, the Run As Profile, Reporting SDK SQL Server Authentication Account was assigned a special account through the use of the Run As Account of the same name. Never make any changes to the account that is associated with the Run As Profile, Reporting SDK SQL Server Authentication Account. Instead, create your own account and your own Run As Account, and make the Run As Account a member of the Run As Profile, Reporting SDK SQL Server Authentication Account when configuring SQL Server Authentication.
+> By default, the Run As Profile, Reporting SDK SQL Server Authentication Account was assigned a special account through the use of the Run As Account of the same name. Never make any changes to the account that's associated with the Run As Profile, Reporting SDK SQL Server Authentication Account. Instead, create your own account and your own Run As Account, and make the Run As Account a member of the Run As Profile, Reporting SDK SQL Server Authentication Account when configuring SQL Server Authentication.
 
 The following outlines the relationship of the various account credentials, Run As Accounts, and Run As Profiles for both Windows Integrated Authentication and SQL Server Authentication.
 
@@ -145,8 +146,8 @@ Default: Windows Integrated Authentication
 
 ## Operations console and Reporting server
 
-The Operations console connects to Reporting Server on port 80 using HTTP. Authentication is performed by using Windows Authentication. Data can be encrypted by using the SSL channel.
+The Operations console connects to Reporting Server on port 80 using HTTP. Authentication is performed using Windows Authentication. Data can be encrypted by using the SSL channel.
 
 ## Reporting server and Reporting data warehouse
 
-Authentication between Reporting Server and the Reporting data warehouse is accomplished using Windows Authentication. The account that was specified as the Data Reader Account during setup of Reporting becomes the Execution Account on Reporting Server. If the password for the account should change, you will need to make the same password change using the Reporting Services Configuration Manager in SQL Server. The data between the Reporting Server and the Reporting data warehouse is not encrypted.
+Authentication between Reporting Server and the Reporting data warehouse is accomplished using Windows Authentication. The account that was specified as the Data Reader Account during setup of Reporting becomes the Execution Account on Reporting Server. If the password for the account should change, you will need to make the same password change using the Reporting Services Configuration Manager in SQL Server. The data between the Reporting Server and the Reporting data warehouse isn't encrypted.

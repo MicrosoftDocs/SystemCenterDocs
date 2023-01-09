@@ -59,28 +59,28 @@ Before you begin your deployment, you should read the release notes, and ensure 
 
 ### Operations Manager Administrators role assignment
 
-The System Center Operations Manager setup procedure automatically assigns the Administrators group on the local computer to the Operations Manager Administrators role. You must be logged on with an account that has local Administrator rights to run Setup on the first management server that you install; this ensures that you can open the Operations console after Setup is completed. When you install additional management servers, you must use a Domain account of which you are a member.
+The System Center Operations Manager setup procedure automatically assigns the Administrators group on the local computer to the Operations Manager Administrators role. You must be signed in with an account that has local Administrator rights to run Setup on the first management server that you install; this ensures that you can open the Operations console after Setup is completed. When you install additional management servers, you must use a Domain account of which you're a member.
 
 ### Required accounts
 
-During setup, you are prompted for three accounts, the **management server action account**,  the **System Center Configuration service and System Center Data Access service** account, and the **Data Warehouse Write account**. In Operations Manager, you can use the same account for the **System Center Configuration and System Center Data Access service** services.
+During setup, you're prompted for three accounts: the **management server action account**,  the **System Center Configuration service and System Center Data Access service** account, and the **Data Warehouse Write account**. In Operations Manager, you can use the same account for the **System Center Configuration and System Center Data Access service** services.
 
-If you install Reporting, you are prompted for one additional account, the **Data Reader account**. For further information regarding the specific privileges to be granted before running setup and what rights are assigned to the accounts during setup, please review the [Service, User, and Security accounts](plan-security-accounts.md) guidance.  
-
-> [!NOTE]
-> If you create a specific account for installation, this account must be a member of the **sysadmin** server role for Microsoft SQL Server, but also have access to the master database.
+If you install Reporting, you're prompted for one additional account, the **Data Reader account**. For further information regarding the specific privileges to be granted before running setup and what rights are assigned to the accounts during setup, please review the [Service, User, and Security accounts](plan-security-accounts.md) guidance.  
 
 > [!NOTE]
-> If you install multiple management servers, you are prompted for a **management server action account** and a **System Center Configuration service and System Center Data Access service account** each time you add a management server. You must provide the same accounts for each installation.
+> If you create a specific account for installation, this account must be a member of the **sysadmin** server role for Microsoft SQL Server and also have access to the master database.
+
+> [!NOTE]
+> If you install multiple management servers, you're prompted for a **management server action account** and a **System Center Configuration service and System Center Data Access service account** each time you add a management server. You must provide the same accounts for each installation.
 
 
 ### SQL Server requirements
 
-System Center Operations Manager requires access to an instance of a server running Microsoft SQL Server. This instance can be located on a separate computer from the management servers in a distributed installation or on the first management server in the management group. In either case, the instance of Microsoft SQL Server must already exist and be accessible before you start your first management server installation. The SQL Server Collation setting must be a supported value, and SQL Full Text Search must be enabled.  To review which versions of SQL Server are supported for Operations Manager, see [SQL Server requirements](plan-sqlserver-design.md#sql-server-requirements) in the SQL Server Design Considerations planning article.   
+System Center Operations Manager requires access to an instance of a server running Microsoft SQL Server. This instance can be located on a separate computer from the management servers in a distributed installation or on the first management server in the management group. In either case, the instance of Microsoft SQL Server must already exist and be accessible before you start your first management server installation. The SQL Server Collation setting must be a supported value, and SQL Full Text Search must be enabled.  To review which versions of SQL Server are supported for Operations Manager, see [SQL Server requirements](plan-sqlserver-design.md#sql-server-requirements) in the SQL Server Design Considerations planning article.
 
-During setup, you are prompted for the following:
+During setup, you're prompted for the following:
 
--   The SQL Server database server name, Always On availability group name, or primary cluster name and instance name. If you have installed SQL Server by using the default instance, you only have to specify the SQL Server name.  
+-   The SQL Server database server name, Always On availability group name, or primary cluster name and instance name. If you have installed SQL Server using the default instance, you only have to specify the SQL Server name.  
 
 You can accept the default values for or set:
 
@@ -95,18 +95,18 @@ You can accept the default values for or set:
 -   The Data file and Log folder locations. By default, these are C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\Data or C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\Log as appropriate to the SQL Server defaults.
 
 > [!IMPORTANT]
-> If TCP/IP is disabled on a remote server that is hosting the SQL Server database, Setup will not be able to connect to the SQL Server database. To resolve this issue, enable TCP/IP on the remote server.
+> If TCP/IP is disabled on a remote server that is hosting the SQL Server database, Setup won't be able to connect to the SQL Server database. To resolve this issue, enable TCP/IP on the remote server.
 
-Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation (SQL Server 2014)](/sql/reporting-services/install-windows/install-reporting-services-native-mode-report-server?viewFallbackFrom=sql-server-2014).  For more information about how to install and configure SQL Server 2016 Reporting Services, see [SQL Server Installation (SQL Server 2016)](/sql/reporting-services/install-windows/install-reporting-services-native-mode-report-server).
+Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation (SQL Server 2014)](/sql/reporting-services/install-windows/install-reporting-services-native-mode-report-server?viewFallbackFrom=sql-server-2014). For more information about how to install and configure SQL Server 2016 Reporting Services, see [SQL Server Installation (SQL Server 2016)](/sql/reporting-services/install-windows/install-reporting-services-native-mode-report-server).
 
 For additional information to help you properly plan your SQL Server configuration in support of Operations Manager, see [SQL Server Design Considerations](plan-sqlserver-design.md).  
 
 ## Next steps
 
-- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](~/scom/manage-deploy-windows-agent-console.md)
+- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](~/scom/manage-deploy-windows-agent-console.md).
 
-- If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](~/scom/manage-deploy-windows-agent-manually.md)
+- If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](~/scom/manage-deploy-windows-agent-manually.md).
 
-- If you would like to install the Nano Server agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](manage-deploy-windows-agent-nano.md)
+- If you would like to install the Nano Server agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](manage-deploy-windows-agent-nano.md).
 
-- To deploy the agent to UNIX and Linux computers from the Operations console using the Discovery Wizard, review [Install Agent on UNIX and Linux Using the Discovery Wizard](~/scom/manage-deploy-crossplat-agent-console.md)
+- To deploy the agent to UNIX and Linux computers from the Operations console using the Discovery Wizard, review [Install Agent on UNIX and Linux Using the Discovery Wizard](~/scom/manage-deploy-crossplat-agent-console.md).
