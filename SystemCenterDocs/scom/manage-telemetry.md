@@ -5,10 +5,11 @@ description: This article provides information about how to manage the telemetry
 author:  jyothisuri
 ms.author: jsuri
 manager:  evansma
-ms.date:  03/21/2022
+ms.date:  01/09/2023
 ms.topic:  article
 ms.prod:  system-center
 ms.technology: operations-manager
+ms.custom: engagement-fy23 
 ---
 
 # Manage telemetry settings in Operations Manager

@@ -5,11 +5,12 @@ description: This article provides an overview of the design decisions for consi
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 06/03/2019
+ms.date: 09/01/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
+ms.custom: engagement-fy23
 ---
 
 # Planning a Management Group Design
