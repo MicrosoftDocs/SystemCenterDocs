@@ -5,7 +5,7 @@ description: This article describes how to create an Azure Monitor SCOM Managed 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 12/23/2022
+ms.date: 01/09/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
