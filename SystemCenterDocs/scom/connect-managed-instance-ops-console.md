@@ -19,6 +19,8 @@ Azure Monitor SCOM Managed Instance (preview) is compatible with [System Center 
 
 After you create the SCOM Managed Instance (preview) in Azure, connect the instance to Ops console to configure the workloads and monitor.
 
+> [!VIDEO https://www.youtube.com/embed/urxiQBkObkU]
+
 ## Connect SCOM Managed Instance (preview) to Ops console
 
 Follow the below steps to connect a SCOM Managed Instance (preview) to Ops console:

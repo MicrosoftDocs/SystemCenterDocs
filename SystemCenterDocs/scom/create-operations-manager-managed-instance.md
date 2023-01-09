@@ -22,6 +22,9 @@ This article describes how to create a SCOM Managed Instance (preview) with Syst
 >[!Note]  
 >In this preview, you can create an instance only in **West Europe** and **West US**.
 
+
+> [!VIDEO https://www.youtube.com/embed/urxiQBkObkU]
+
 ## Prerequisites
 
 Before you create a SCOM Managed Instance (preview), ensure you select all the three tabs (General pointers, In your active directory domain, and In Azure portal) and create the necessary prerequisites.
