@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -39,4 +39,4 @@ The following table provides a brief description of tasks you can accomplish wit
 |Run a runbook.|[Invoke Runbook](invoke-runbook.md)|  
 
 ## See Also  
- [Standard Activities](../standard-activities.md)
+[Standard Activities](../standard-activities.md).

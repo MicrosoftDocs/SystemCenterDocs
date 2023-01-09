@@ -25,10 +25,10 @@ This article describes how to create and deploy Linux VMs in the System Center -
 
 ## Before you start
 
-VMM supports virtual machines that contain Linux as the guest operating system. Note that:
+VMM supports virtual machines that contain Linux as the guest operating system. Ensure that:
 
 - Linux Integration Services (LIS) must be installed on the virtual machine.
-- The VMM guest agent for Linux must be installed on the virtual machine. It is required for service template integration, and it allows you to modify properties on the Linux computer such as the host name.
+- The VMM guest agent for Linux must be installed on the virtual machine. It's required for service template integration, and it allows you to modify properties on the Linux computer, such as the host name.
 
     > [!NOTE]
     > SCVMMLinuxGuestAgent (XPlat) cfghostdomain garbles the hosts file if hostname is already set to localhost. We recommend you not to set the hostname as localhost when deploying Linux VMs through VMM.
@@ -42,7 +42,7 @@ Create a VM running Linux using any of the available methods in the VMM fabric. 
 
 ## Install LIS on the VM
 
-By default, LIS is included with some distributions of Linux. If LIS is not included in the distribution of Linux that you are using for the virtual machine, then install it manually. [Learn more](/windows-server/virtualization/hyper-v/Supported-Linux-and-FreeBSD-virtual-machines-for-Hyper-V-on-Windows).
+By default, LIS is included with some distributions of Linux. If LIS isn't included in the distribution of Linux that you're using for the virtual machine, then install it manually. [Learn more](/windows-server/virtualization/hyper-v/Supported-Linux-and-FreeBSD-virtual-machines-for-Hyper-V-on-Windows).
 
 ## Install the VMM guest agent
 
@@ -62,10 +62,12 @@ By default, LIS is included with some distributions of Linux. If LIS is not incl
 
      ```powershell
     ./install scvmmguestagent.1.0.0.544.x64.tar
-    ./install scvmmguestagent.1.0.0.544.x86.tar
     ```
 
-When the agent installs on the VM the following files and folders will be created on the VHD:
+     ```powershell
+    ./install scvmmguestagent.1.0.0.544.x86.tar
+    ```
+When the agent installs on the VM, the following files and folders will be created on the VHD:
 
 - A default installation folder (/opt/microsoft/scvmmguestagent), and an installation log file (scvmm-install.log)
 - A default log files folder - /var/opt/microsoft/scvmmagent/log
@@ -73,4 +75,5 @@ When the agent installs on the VM the following files and folders will be create
 - A configuration file (scvmm.conf). This file contains the location of the log file and is used to control logging during deployment and specialization.
 
 ## Next steps
-[vm-settings](vm-settings.md)
+
+Learn more about how to [Configure virtual machine settings in the VMM compute fabric](vm-settings.md).

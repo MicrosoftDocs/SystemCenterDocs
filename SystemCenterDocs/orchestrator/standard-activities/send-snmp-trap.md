@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -40,10 +40,10 @@ The Send SNMP Trap activity will raise an SNMP event that can be detected by a n
 
 -   The SNMP version you will use  
 
--   The agent address you want to identify as the sender of the SNMP trap information.  
+-   The agent address you want to identify as the sender of the SNMP trap information 
 
 > [!NOTE]
->  You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
+>  You can't set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
 
  Use the following information to configure the Send SNMP Trap activity.  
 
@@ -56,8 +56,8 @@ The Send SNMP Trap activity will raise an SNMP event that can be detected by a n
 |**IP address**|Type the name of the computer or IP address where you are sending the SNMP trap.|  
 |**Port**|Type the port to use to send the SNMP trap.|  
 |**Enterprise identifier**|Specify the enterprise identifier of the event being raised by the Send SNMP Trap activity.|  
-|**Generic identifier**|Specify the generic identifier of the SNMP trap. There are six options available:<br /><br /> **coldStart(0)**: Select to signify a cold start of the network device. This option has a numerical value of 0.<br /><br /> **warmStart(1)**: Select to signify a warm start of the network device. This option has a numerical value of 1.<br /><br /> **linkDown(2)**: Select to signify a severed connection to the network device. This option has a numerical value of 2.<br /><br /> **linkUp(3)**: Select to signify a re-established connection to the network device. This option has a numerical value of 3.<br /><br /> **authenticationFailure(4)**: Select to signify a failed SNMP authentications to the network device. This option has a numerical value of 4.<br /><br /> **egpNeighborLoss(5)**: Select to signify a lost EGP peer connection to the network device. This option has a numerical value of 5.<br /><br /> **enterpriseSpecific(6)**: Select to specify an enterprise specific id. This option has a numerical value of 6. You must specify this option to specify a specific identifier.|  
-|**Specific identifier**|Type the enterprise specific identifier for the SNMP trap. This setting becomes active when you select the **enterpriseSpecific(6)** option of the **Generic identifier** box.|  
+|**Generic identifier**|Specify the generic identifier of the SNMP trap. There are six options available:<br /><br /> **coldStart(0)**: Select to signify a cold start of the network device. This option has a numerical value of 0.<br /><br /> **warmStart(1)**: Select to signify a warm start of the network device. This option has a numerical value of 1.<br /><br /> **linkDown(2)**: Select to signify a severed connection to the network device. This option has a numerical value of 2.<br /><br /> **linkUp(3)**: Select to signify a re-established connection to the network device. This option has a numerical value of 3.<br /><br /> **authenticationFailure(4)**: Select to signify a failed SNMP authentications to the network device. This option has a numerical value of 4.<br /><br /> **egpNeighborLoss(5)**: Select to signify a lost EGP peer connection to the network device. This option has a numerical value of 5.<br /><br /> **enterpriseSpecific(6)**: Select to specify an enterprise-specific id. This option has a numerical value of 6. You must specify this option to specify a specific identifier.|  
+|**Specific identifier**|Type the enterprise-specific identifier for the SNMP trap. This setting becomes active when you select the **enterpriseSpecific(6)** option of the **Generic identifier** box.|  
 |**SNMP Version**|Select the SNMP version to use when generating the SNMP trap.|  
 |**Community string**|Type the community string that will be used to authenticate against the network device. This field is case-sensitive and supports only alphanumeric characters.<br /><br /> The Send SNMP Trap activity does not verify the content of community strings, nor whether the strings are received. It sends whatever data you provide, whether it is valid or not. The activity returns a status of Success if it was able to send the data, regardless of whether the data were correct or readable.|  
 

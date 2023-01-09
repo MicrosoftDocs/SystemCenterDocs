@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -34,7 +34,7 @@ The Print File activity prints text files to a printer that you specify. You can
 ## Configuring the Print File Activity  
  Before you configure the Print File activity, you need to determine the following:  
 
-- File name you are printing.  
+- File name you're printing.  
 
 - Printer name  
 
@@ -44,10 +44,10 @@ Use the following information to configure the Print File activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to print.|  
-|**Printer**|Type the path of the printer that will print the file.|  
+|**File**|Enter the path and name of the file that you want to print.|  
+|**Printer**|Enter the path of the printer that will print the file.|  
 |**Age**|Specify **is less than** or **is more than** to print the files that are older or newer, respectively, than the number of days that you specify.|  
-|**days**|Enter the number of **days** that you will use with the **Age** measure.|  
+|**days**|Enter the number of **days** that you'll use with the **Age** measure.|  
 
 ### Published Data  
  The following table lists the published data items.  

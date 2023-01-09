@@ -25,14 +25,14 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
 The Set SNMP Variable activity will modify a variable, specified by its MIB, on a network device. Use the Set SNMP Variable to update a variable that reports on the failure or success of a critical runbook.  
 
 ## Configuring the Set SNMP Variable Activity  
- Before you configure the Set SNMP Variable activity you need to determine the following:  
+ Before you configure the Set SNMP Variable activity, you need to determine the following:  
 
 -   IP address of the device as well as the port number, SNMP MIB, and the SNMP version  
 
@@ -50,7 +50,7 @@ The Set SNMP Variable activity will modify a variable, specified by its MIB, on 
 |**IP address**|Type the IP address of the device hosting the MIB variable.|  
 |**Port**|Type port used to communicate with the network device.|  
 |**Object identifier**|Type the MIB identifier of the variable whose value you want to change.|  
-|**Object value**|Type the new value of the variable you are changing. Make sure that the new value matches the constraints that are set out by device manufacturer. This field is case-sensitive and supports only alphanumeric characters.|  
+|**Object value**|Type the new value of the variable you are changing. Ensure that the new value matches the constraints that are set out by device manufacturer. This field is case-sensitive and supports only alphanumeric characters.|  
 |**SNMP version**|Select the SNMP version to use when connecting to the network device. You can select **SNMPv1** or **SNMPv2c**.|  
 |**Community string**|Type the community string that will be used to authenticate against the network device. The community should have rights of Read write or higher. This field is case-sensitive and supports only alphanumeric characters.|  
 

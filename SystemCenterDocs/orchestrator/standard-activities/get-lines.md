@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -48,9 +48,9 @@ Use the following information to configure the Get Lines activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to get the text from, or click the ellipsis button **(...)** and browse for it.|  
-|**File encoding**|Click the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** drop-down list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
-|**Lines**|Click **Add** to open the **Add Line** dialog box and create filters for the lines that you want to get from the file:<br /><br /> **Name**: Search for lines by their name.<br /><br /> **Range**: Search for lines by their range.|  
+|**File**|Enter the path and name of the file that you want to get the text from, or select the ellipsis button **(...)** and browse for it.|  
+|**File encoding**|Select the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** dropdown list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
+|**Lines**|Select **Add** to open the **Add Line** dialog and create filters for the lines that you want to get from the file:<br /><br /> **Name**: Search for lines by their name.<br /><br /> **Range**: Search for lines by their range.|  
 
 ### Published Data  
  The following table lists the published data items.  

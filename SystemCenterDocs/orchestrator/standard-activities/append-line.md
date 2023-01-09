@@ -1,6 +1,6 @@
 ---
 title: Append Line
-description: This articles describes the functionality of Append Line Activity.
+description: This article describes the functionality of Append Line Activity.
 ms.custom: ""
 ms.date: "05/13/2016"
 ms.prod: system-center
@@ -25,11 +25,11 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
-The Append Line activity appends a line of text into a text file.  Use the Append Line activity to append lines to a log file to create audits trails of runbooks.  
+The Append Line activity appends a line of text into a text file. Use the Append Line activity to append lines to a log file to create audits trails of runbooks.  
 
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
 
@@ -38,9 +38,9 @@ The Append Line activity appends a line of text into a text file.  Use the Appen
 
 - The file name you want to append to.  
 
-- The type of file encoding that the file you are appending to uses.  
+- The type of file encoding that the file you're appending to uses.  
 
-- Text you append.  
+- The text you append.  
 
 Use the following information to configure the Append Line activity.  
 
@@ -48,9 +48,9 @@ Use the following information to configure the Append Line activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to append the text to, or click the ellipsis button **(...)** and browse for it.|  
-|**File encoding**|Click the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** drop-down list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
-|**Text**|Type the text that you want to append to the file that you specified.|  
+|**File**|Enter the path and name of the file that you want to append the text to, or select the ellipsis button **(...)** and browse for it.|  
+|**File encoding**|Select the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** dropdown list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
+|**Text**|Enter the text that you want to append to the file that you specified.|  
 
 ### Published Data  
  The following table lists the published data items.  

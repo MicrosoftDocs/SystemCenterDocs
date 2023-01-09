@@ -25,7 +25,7 @@ manager: "evansma"
 
 > [!IMPORTANT]
 >
-> This version of Orchestrator has reached the end of support, we recommend you to [upgrade to Orchestrator 2019](../index.yml).
+> This version of Orchestrator has reached the end of support. We recommend you to [upgrade to Orchestrator 2019](../index.yml).
 
 ::: moniker-end
 
@@ -40,8 +40,8 @@ The Generate Random Text activity generates random strings of text.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Text Length**|Type the number of characters that you want the string to include, for example, 45.|  
-|**Text Contents**|Select the options for the items that you want the Generate Random Text activity to include in the random text string. In the Minimum Quantity field for each option that you select, type the minimum number of these characters that you want to include in the string. The total of all Minimum Quantity fields must not be more than the number you typed in the Text Length field.<br /><br /> **Lower-Case Characters**<br /><br /> **Upper-Case Characters**<br /><br /> **Numbers**<br /><br /> **Symbols**|  
+|**Text Length**|Enter the number of characters that you want the string to include; for example, 45.|  
+|**Text Contents**|Select the options for the items that you want the Generate Random Text activity to include in the random text string. In the Minimum Quantity field for each option that you select, enter the minimum number of these characters that you want to include in the string. The total of all Minimum Quantity fields must not be more than the number you entered in the Text Length field.<br /><br /> **Lower-Case Characters**<br /><br /> **Upper-Case Characters**<br /><br /> **Numbers**<br /><br /> **Symbols**|  
 
 ### Published Data  
  The following table lists the published data items.  

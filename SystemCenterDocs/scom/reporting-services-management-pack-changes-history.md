@@ -2,10 +2,10 @@
 ms.assetid: d68fe81d-e14c-494f-b118-e9a421d551c1
 title: Features and enhancements in Management Pack for SQL Server Reporting Services
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Reporting Services
-author: Anastas1ya
-ms.author: v-asimanovic
+author: epomortseva
+ms.author: v-ekaterinap
 manager: evansma
-ms.date: 6/10/2022
+ms.date: 12/27/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,12 +15,26 @@ ms.technology: operations-manager
 
 This section covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
 
+## December 2022 - 7.0.42.0 RTM
+
+### What's New
+
+- Added a new feature group for the automated population of Power BI Report Services
+- Added a new 'SQL Server Editions' exclude list override option for the instance discovery
+- Added a new 'SQL Server Versions' exclude list override option for the instance discovery
+- Added support for enabling debug logging in Windows Event Log
+- Updated memory and space monitoring workflows to apply 4-significant digit rounding in all the values
+- Updated display strings
+
+### Bug Fixes
+
+- Fixed an issue with an increasing value of more than a hundred percent in the "CPU Utilization" monitor and the performance rule
+
 ## June 2022 - 7.0.38.0 RTM
 
 ### What's New
 
-- Added a new feature group for the automated population of PBI report services
-- Extended monitoring for PBI report rendering by adding new performance rules – "Working set memory consumed by Power BI Mashup containers (GB)", "Private memory consumed by Power BI Mashup containers (GB)", "Working set memory consumed by Power BI Analysis Services process (GB)", "Private memory consumed by Power BI Analysis Services process (GB)"
+- Extended monitoring for Power BI Report Services report rendering by adding new performance rules – "Working set memory consumed by Power BI Mashup containers (GB)", "Private memory consumed by Power BI Mashup containers (GB)", "Working set memory consumed by Power BI Analysis Services process (GB)", "Private memory consumed by Power BI Analysis Services process (GB)"
 - Added a new 'URL position' override that indicates which URL to use to monitor the availability of the Web service in the "Report manager accessible" and "Web service accessible" monitors
 - Improved rounding of values in alerts from memory-related workflows: "Running SSRS processes consume too much memory" and "Non SSRS-related processes consume too much memory"
 - Updated display strings
@@ -44,14 +58,14 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Updated the 'Deployments' state view with the 'SSRS Instances' column
+- Updated the 'Deployments' state view with the 'SQL Server Reporting Services Instances' column
 - Updated display strings
 
 ## December 2020 - 7.0.29.0 RTM
 
 ### What's New
 
-- Updated and improved System Center Operations Manager 2019 HTML Dashboards to display SSRS health and alerts
+- Updated and improved System Center Operations Manager 2019 HTML Dashboards to display SQL Server Reporting Services health and alerts
 - Updated alert description for Report Manager Accessible & Web Service Accessible monitors
 
 ## June 2020 - 7.0.22.0 RTM
@@ -59,16 +73,16 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### What's New
 
 - Added tasks Start/Stop Reporting Services Windows Service
-- Updated display name of SSRS Deployment object to display AG name as part of it instead of GUID
+- Updated display name of SQL Server Reporting Services Deployment object to display Availability Group name as part of it instead of GUID
 - Updated logic of installation detection for local Reporting Services instance to query Windows Registry instead of WMI
 - Improved error handling for cases when error "Process with an Id is not running" is returned
 - Updated display strings
 
 ### Bug Fixes
 
-- Fixed false alerting with status code 400 in monitor Report Manager Accessible for SSRS 2016 and PBIRS
-- Fixed alert parameter replacement failure in monitor Report Manager Accessible
-- Fixed issue with accessing DBConnectionString property of PBIRS
+- Fixed false alerting with status code 400 in monitor "Report Manager Accessible" for SQL Server Reporting Services 2016 and Power BI Report Services
+- Fixed alert parameter replacement failure in monitor "Report Manager Accessible"
+- Fixed issue with accessing 'DBConnectionString' property of Power BI Report Services
 
 ## December 2019 - 7.0.19.0 CTP
 
@@ -80,7 +94,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### Bug Fixes
 
-- Fixed NullReferenceException error when Report Server portal being configured to have several ports
+- Fixed 'NullReferenceException' error when Report Server portal being configured to have several ports
 
 ## April 2019 - 7.0.15.0 RTM
 
@@ -99,7 +113,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 ### What's New
 
 - Replaced the Core Library in the delivery with the version 7.0.7.0, that version which is delivered with the most recent RTM version of the management pack for SQL Server 2017+
-- Updated the monitoring of Memory Consumption and CPU Usage in order to collect performance data for all subprocesses in addition to the main SSRS service process
+- Updated the monitoring of "Memory Consumption" and "CPU Usage" in order to collect performance data for all subprocesses in addition to the main SQL Server Reporting Services process
 - Updated Summary dashboards
 - Updated display strings
 

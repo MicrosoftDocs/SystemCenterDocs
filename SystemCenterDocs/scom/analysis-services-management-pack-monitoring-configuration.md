@@ -5,7 +5,7 @@ description: This section explains monitoring configurations in Management Pack 
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 11/23/2022
+ms.date: 12/9/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -29,7 +29,7 @@ Analysis Services Instance includes the following server modes:
 - Tabular mode
 - Power Pivot for SharePoint mode
 
-For comparing model features see [Screenshot of determine the Server Mode of an Analysis Services Instance.](/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance).
+For comparing model features see [determine the Server Mode of an Analysis Services Instance](/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance) article.
 
 ## Discovery of SQL Server Analysis Services Database
 
@@ -72,9 +72,9 @@ The following table lists short names that you can use to override the **Edition
 
 You can disable discovery and monitoring of databases by specifying database names in the **Exclude list** parameter available in the following discoveries:
 
-- SSAS: Multidimensional DB Discovery
+- Multidimensional DB Discovery
 
-- SSAS: Tabular DB Discovery
+- Tabular DB Discovery
 
 Use commas to separate database names and asterisks to replace one or more characters. For example, when setting the **Exclude list** parameter to dev*, \*test*, *stage, dbnotmon, the monitoring behavior would be as follows:
 
@@ -97,87 +97,82 @@ If you have \* (asterisk) in the list as a database name (for example, \*temp*, 
 
 ## Instance Monitoring
 
-The following monitors are available for monitoring of SSAS instances.
+The following monitors are available for monitoring of SQL Server Analysis Services instances.
 
 |Monitor|Description
 |-|-|
-|Service State|This monitor reports an alert when the Windows service for the SSAS instance is not in the running state for a period that exceeds the specified threshold. <br /> <br /> **NOTE:** This monitor does not work on a clustered SSAS instance.|
-|Memory Configuration Conflict with SQL Server|This monitor reports an alert if there is a SQL Server relational database engine process running on the server and the **TotalMemoryLimit** configuration for the SSAS instance is higher than the specified threshold.|
-|Total Memory Limit Configuration|This monitor reports an alert when the configured **TotalMemoryLimit** setting for the SSAS instance exceeds the specified threshold, risking allocation of physical memory that is required for the operating system to perform basic functions (at least 2 GB).|
-|Memory Usage| This monitor reports a Warning alert when memory allocations by the SSAS instance exceeds the configured warning threshold expressed as a percentage of the **TotalMemoryLimit** setting for the SSAS instance. The monitor reports a Critical alert when these allocations exceed the configured critical threshold.|
+|Service State|This monitor reports an alert when the Windows service for the SQL Server Analysis Services instance is not in the running state for a period that exceeds the specified threshold. <br /> <br /> **NOTE:** This monitor does not work on a clustered SQL Server Analysis Services instance.|
+|Memory Configuration Conflict with SQL Server|This monitor reports an alert if there is a SQL Server relational database engine process running on the server and the **TotalMemoryLimit** configuration for the SQL Server Analysis Services instance is higher than the specified threshold.|
+|Total Memory Limit Configuration|This monitor reports an alert when the configured **TotalMemoryLimit** setting for the SQL Server Analysis Services instance exceeds the specified threshold, risking allocation of physical memory that is required for the operating system to perform basic functions (at least 2 GB).|
+|Memory Usage| This monitor reports a Warning alert when memory allocations by the SQL Server Analysis Services instance exceeds the configured warning threshold expressed as a percentage of the **TotalMemoryLimit** setting for the SQL Server Analysis Services instance. The monitor reports a Critical alert when these allocations exceed the configured critical threshold.|
 |Memory Usage on the Server|This monitor observes the memory usage by non-SSAS processes on the server to ensure that **TotalMemoryLimit** for Analysis Services is always available.|
-|Processing Pool I/O Job Queue length|This monitor reports an alert when the processing pool I/O job queue for the SSAS instance exceeds the configured threshold.|
-|Processing Pool Job Queue length|This monitor reports an alert when the processing pool job queue for the SSAS instance exceeds the configured threshold.|
+|Processing Pool I/O Job Queue length|This monitor reports an alert when the processing pool I/O job queue for the SQL Server Analysis Services instance exceeds the configured threshold.|
+|Processing Pool Job Queue length|This monitor reports an alert when the processing pool job queue for the SQL Server Analysis Services instance exceeds the configured threshold.|
 |Default Storage Free Space|This monitor reports a Warning alert when the available free space for the instance default storage drops below the **Warning Threshold** setting expressed as a percentage of the sum of estimated default storage folder (DataDir) size and free disk space. The monitor reports a Critical alert when the available space drops below **Critical Threshold**. The monitor does not take into account databases and partitions located in folders other than the default storage folder (DataDir).|
-|CPU utilization|This monitor reports an alert if the CPU usage by the SSAS process is high.|
+|CPU utilization|This monitor reports an alert if the CPU usage by the SQL Server Analysis Services process is high.|
 
 ## Database Monitoring
 
-The following monitors are available for monitoring of SSAS databases.
+The following monitors are available for monitoring of SQL Server Analysis Services databases.
 
 |Monitor|Description
 |-|-|
-|Database Free Space|This monitor reports a Warning alert when the available disk space for the SSAS database storage folder drops below the **Warning Threshold** setting expressed as a percentage of the sum of the estimated database storage folder size and disk free space. The monitor reports a Critical alert when the available space drops below the **Critical Threshold** setting.|
+|Database Status|This monitor checks the status of the Microsoft SQL Server Analysis Services database. Status check is done by running a query against the SQL Server Analysis Services instance database which returns the current database state.
+|Database Free Space|This monitor reports a Warning alert when the available disk space for the SQL Server Analysis Services database storage folder drops below the **Warning Threshold** setting expressed as a percentage of the sum of the estimated database storage folder size and disk free space. The monitor reports a Critical alert when the available space drops below the **Critical Threshold** setting.|
 |Blocking Duration|This monitor report an alert if at least one session is blocked longer than the configured threshold.|
 |Blocking Session Count|This monitor alerts when the number of sessions that are blocked for a period longer than the **WaitMinutes** setting exceeds the threshold.|
-|Database VertiPaq Size|This monitor reports a warning when the amount of VertiPaq memory consumed by SSAS tabular databases exceeds the 'Warning Threshold' override (specified in GB). In cases when tabular databases consume more VertiPaq memory than it is allowed by the 'Critical Threshold' override, the monitor throws a critical alert.|
+|Database VertiPaq Size|This monitor reports a warning when the amount of VertiPaq memory consumed by SQL Server Analysis Services tabular databases exceeds the 'Warning Threshold' override (specified in GB). In cases when tabular databases consume more VertiPaq memory than it is allowed by the 'Critical Threshold' override, the monitor throws a critical alert.|
 
 ## Partition Monitoring
 
-The following monitors are available for monitoring of health aspects of SSAS Multidimensional Databases partitions.
+The following monitors are available for monitoring of health aspects of SQL Server Analysis Services Multidimensional Databases partitions.
 
 |Monitor|Description
 |-|-|
-|Partition Storage Free Space|This monitor reports a Warning alert when the available free space for the partition storage location drops below the **Critical Threshold** setting expressed as a percentage of the sum of the total size of the folder plus disk free space. The monitor reports a Critical alert when the available space drops below the Warning threshold. The monitor does not monitor available space for the default storage location for the SSAS instance.|
+|Partition Storage Free Space|This monitor reports a Warning alert when the available free space for the partition storage location drops below the **Critical Threshold** setting expressed as a percentage of the sum of the total size of the folder plus disk free space. The monitor reports a Critical alert when the available space drops below the Warning threshold. The monitor does not monitor available space for the default storage location for the SQL Server Analysis Services instance.|
 
 ## Performance Collection Rules
 
 Performance collection rules collect the following metrics:
 
-- SSAS: Database Disk Free Space (GB)
-- SSAS: Database Drive Space Used By Others (GB)
-- SSAS: Database Blocking Duration (minutes)
-- SSAS: Database Free Space (%)
-- SSAS: Database Free Space (GB)
-- SSAS: Number of Database Blocked Sessions
-- SSAS: Database Size (GB)
-- SSAS: Database Storage Folder Size (GB)
-- SSAS: Partition Size (GB)
-- SSAS: Partition Free Space (GB)
-- SSAS: Partition Used by Others (GB)
-- SSAS: Partition Free Space (%)
-- SSAS: Total Drive Size (GB)
-- SSAS: Drive Used Space (GB)
-- SSAS: Actual System Cache (GB)
-- SSAS: Instance Free Space (%)
-- SSAS: Instance Free Space (GB)
-- SSAS: Cache Evictions/sec
-- SSAS: Cache Inserts/sec
-- SSAS: Cache KB added/sec
-- SSAS: CPU utilization (%)
-- SSAS: Default Storage Folder Size (GB)
-- SSAS: Low Memory Limit (GB)
-- SSAS: Cleaner Current Price
-- SSAS: Memory Usage on the Server (GB)
-- SSAS: Memory Usage on the Server (%)
-- SSAS: Memory Usage by AS Non-shrinkable (GB)
-- SSAS: Processing Pool I/O Job Queue Length
-- SSAS: Processing Pool Job Queue Length
-- SSAS: Processing Rows read/sec
-- SSAS: Instance Memory (GB)
-- SSAS: Instance Memory (%)
-- SSAS: Query Pool Job Queue Length
-- SSAS: Storage Engine Query Rows sent/sec
-- SSAS: Total Memory Limit (GB)
-- SSAS: Total Memory on the Server (GB)
-- SSAS: Used Space on Drive (GB)
-- SSAS: Database VertiPaq Memory Size (GB)
-
-## How Health Rolls Up
-
-The following diagram shows the roll up of the object health states.
-
-![Diagram of health Rolls Up.](./media/analysis-services-management-pack/health-rolls-up.png)
+- Database Disk Free Space (GB)
+- Database Drive Space Used By Others (GB)
+- Database Blocking Duration (minutes)
+- Database Free Space (%)
+- Database Free Space (GB)
+- Number of Database Blocked Sessions
+- Database Size (GB)
+- Database Storage Folder Size (GB)
+- Partition Size (GB)
+- Partition Free Space (GB)
+- Partition Used by Others (GB)
+- Partition Free Space (%)
+- Total Drive Size (GB)
+- Drive Used Space (GB)
+- Actual System Cache (GB)
+- Instance Free Space (%)
+- Instance Free Space (GB)
+- Cache Evictions/sec
+- Cache Inserts/sec
+- Cache KB added/sec
+- CPU utilization (%)
+- Default Storage Folder Size (GB)
+- Low Memory Limit (GB)
+- Cleaner Current Price
+- Memory Usage on the Server (GB)
+- Memory Usage on the Server (%)
+- Memory Usage by AS Non-shrinkable (GB)
+- Processing Pool I/O Job Queue Length
+- Processing Pool Job Queue Length
+- Processing Rows read/sec
+- Instance Memory (GB)
+- Instance Memory (%)
+- Query Pool Job Queue Length
+- Storage Engine Query Rows sent/sec
+- Total Memory Limit (GB)
+- Total Memory on the Server (GB)
+- Used Space on Drive (GB)
+- Database VertiPaq Memory Size (GB)
 
 ## Enabling Debugging
 
@@ -188,11 +183,17 @@ To enable debugging, do the following:
 1. Open the Windows registry.
 
 2. Create the following key:
-`HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server MP`
+`HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server Analysis Services MP`
 
 3. Create a Multi-String with the name `<MG Name>` that corresponds to the management group name for which you want to collect logs. Leave **Value data** empty to enable Debug logging for all SQL MP modules in the Operations Manager Event Log.
 
 The same should be done for each agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
 
->[!NOTE]
->Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
+> [!NOTE]
+> Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
+
+## How Health Rolls Up
+
+The following diagram shows the roll up of the object health states.
+
+![Diagram of health Rolls Up.](./media/analysis-services-management-pack/health-rolls-up.png)
