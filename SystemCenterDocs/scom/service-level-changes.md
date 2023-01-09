@@ -30,24 +30,24 @@ To enable System Center Data Access Service to use gMSA:
 
 1. Add **gMSA** to the local Administrators group on the computer on which the management server is installed, as shown.
 
-    ![Data access service](media/gmsa/data-access-service.png)
+    ![Screenshot of Data access service.](media/gmsa/data-access-service.png)
 
 1. Change the existing service account for System Center Data Access Service to **gMSA** from Windows Services Console, as shown.
 
-    ![Log On As A Service right](media/gmsa/logon-service-right.png)
+    ![Screenshot of Log On As A Service right.](media/gmsa/logon-service-right.png)
 
 
 ## Change the credentials for the System Center configuration service
 
 Change the sign-in credentials for this service account from Windows Services Console, as shown.
 
-![Configuration service](media/gmsa/configuration-service.png)
+![Screenshot of Configuration service.](media/gmsa/configuration-service.png)
 
-![Configuration properties](media/gmsa/configuration-properties.png)
+![Screenshot of Configuration properties.](media/gmsa/configuration-properties.png)
 
 Validate that both the services are running with gMSA.
 
-![System Center Data Access Service](media/gmsa/system-center-data-access-service.png)
+![Screenshot of System Center Data Access Service.](media/gmsa/system-center-data-access-service.png)
 
 ## Change the service account for SQL Server Reporting Services to gMSA
 
@@ -57,21 +57,21 @@ You can change the data reader account in the following two ways.
 
 Change the existing service account for SQL Server Reporting Services to **gMSA** from Windows Services Console, as shown.
 
-![Change service account for SQL Server](media/gmsa/change-service-account-SQL.png)
+![Screenshot of Change service account for SQL Server.](media/gmsa/change-service-account-SQL.png)
 
 Validate that SQL Server Reporting Services is running with gMSA.
 
-![SQL Server Reporting Services](media/gmsa/sql-server-reporting-service.png)
+![Screenshot of SQL Server Reporting Services.](media/gmsa/sql-server-reporting-service.png)
 
 ### From Reporting Services Configuration Manager
 
-![Reporting Services Configuration Manager](media/gmsa/reporting-service-configuration-manager.png)
+![Screenshot of Reporting Services Configuration Manager.](media/gmsa/reporting-service-configuration-manager.png)
 
 Select **Service Credentials** as **Authentication Type**, which is already specified as a gMSA earlier in Reporting Services Configuration Manager.
 
-![Report Server Database Configuration Wizard](media/gmsa/configuration-manager-change-credentials.png)
+![Screenshot of Report Server Database Configuration Wizard.](media/gmsa/configuration-manager-change-credentials.png)
 
-![Report Server Database](media/gmsa/configuration-manager-report-server-database.png)
+![Screenshot of Report Server Database.](media/gmsa/configuration-manager-report-server-database.png)
 
 >[!NOTE]
 >SQL Server doesn't support gMSA for the SQL Server Reporting Services Execution account. Continue to use a non-gMSA account for this account.
@@ -79,22 +79,22 @@ Select **Service Credentials** as **Authentication Type**, which is already spec
 
 ## Change the Data Warehouse Write account to use gMSA
 
-Operations Manager stores the credentials for the Data Warehouse Write account within a Run As account, called the Data Warehouse Action account.
+Operations Manager stores the credentials for the Data Warehouse Write account within a Run As account called the Data Warehouse Action account.
 
 Change the credentials of this Action account to gMSA that you intend to use as a Data Warehouse Write account, which is a Windows account.  
 
-![Data Warehouse Monitoring host](media/gmsa/change-data-warehouse-write-account.png)
+![Screenshot of Data Warehouse Monitoring host.](media/gmsa/change-data-warehouse-write-account.png)
 
 Validate that the *MonitoringHost.exe* uses the gMSA credentials for the Data Warehouse Write account.
 
 
 ## Change the Data Warehouse Report Deployment account to use gMSA
 
-Operations Manager stores the credentials for the Data Warehouse Report Deployment account within a Run As account, called the Data Warehouse Action account.
+Operations Manager stores the credentials for the Data Warehouse Report Deployment account within a Run As account called the Data Warehouse Action account.
 
 Change the credentials of this Action account to gMSA that you intend to use as a Data Warehouse Report Deployment account, which is a Windows account.  
 
-![Data Warehouse Report Deployment](media/gmsa/change-data-warehouse-report-deployment-account.png)
+![Screenshot of Data Warehouse Report Deployment.](media/gmsa/change-data-warehouse-report-deployment-account.png)
 
 Validate that the *MonitoringHost.exe* uses the gMSA credentials for the Data Warehouse Write account.
 
