@@ -19,7 +19,7 @@ ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
 
 ::: moniker-end
 
-The method System Center Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It is intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers disk-based protection processes, tape-Based protection processes, recovery process, as well as the protection policy.
+The method System Center Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It's intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers disk-based protection processes, tape-Based protection processes, recovery process, and the protection policy.
 
 ## Disk-based protection process
 
@@ -27,7 +27,7 @@ To provide disk-based data protection, the DPM server creates and maintains a re
 
 ![Diagram of disk-based protection process.](./media/how-dpm-protects-data/dpm-replica-creation.png)
 
-Whether you are protecting file data or application data, protection begins with the creation of a replica of the data source.
+Whether you're protecting file data or application data, protection begins with the creation of a replica of the data source.
 
 The replica is synchronized, or updated, at regular intervals according to the settings you configure. The method that DPM uses to synchronize the replica depends on the type of data being protected. For more information, see The File Data Synchronization Process and The Application Data Synchronization Process. If a replica is identified as being inconsistent, DPM performs a consistency check, which is a block-by-block verification of the replica against the data source.
 
@@ -44,7 +44,7 @@ DPM stores a separate replica for each protection group member in the storage po
 - A database of an instance of SQL Server or server cluster
 
 > [!NOTE]
-> DPM does not protect data stored in USB drives.
+> DPM doesn't protect data stored in USB drives.
 
 ### The file data synchronization process
 
@@ -70,9 +70,9 @@ Each express full backup creates a recovery point for application data. If the a
 
 - For protected Exchange data, synchronization transfers an incremental VSS snapshot using the Exchange VSS writer. Recovery points are created for each synchronization and express full backup.
 
-- SQL Server databases that are log-shipped, in read-only mode, or that use the simple recovery model do not support incremental backup. Recovery points are created for each express full backup only. For all other SQL Server databases, synchronization transfers a transaction log backup, and recovery points are created for each incremental synchronization and express full backup. The transaction log is a serial record of all the transactions that have been performed against the database since the transaction log was last backed up.
+- SQL Server databases that are log-shipped, in read-only mode, or that use the simple recovery model don't support incremental backup. Recovery points are created for each express full backup only. For all other SQL Server databases, synchronization transfers a transaction log backup, and recovery points are created for each incremental synchronization and express full backup. The transaction log is a serial record of all the transactions that have been performed against the database since the transaction log was last backed up.
 
-- Windows SharePoint Services and Microsoft Virtual Server do not support incremental backup. Recovery points are created for each express full backup only.
+- Windows SharePoint Services and Microsoft Virtual Server don't support incremental backup. Recovery points are created for each express full backup only.
 
 Incremental synchronizations require less time than performing an express full backup. However, the time required to recover data increases as the number of synchronizations increases. This is because DPM must restore the last full backup and then restore and apply all the incremental synchronizations up to the point in time selected for recovery.
 
@@ -100,9 +100,9 @@ Each data source is presented in the DPM Administrator Console according to the 
 
 ## Tape-based protection process
 
-When you use short-term disk-based protection and long-term tape-based protection, DPM can back up data from the replica volume to tape so that there is no impact on the protected computer. When you use tape-based protection only, DPM backs up the data directly from the protected computer to tape.
+When you use short-term disk-based protection and long-term tape-based protection, DPM can back up data from the replica volume to tape so that there's no impact on the protected computer. When you use tape-based protection only, DPM backs up the data directly from the protected computer to tape.
 
-DPM protects data on tape through a combination of full and incremental backups from either the protected data source (for short-term protection on tape or for long-term protection on tape when DPM does not protect the data on disk) or from the DPM replica (for long-term protection on tape when short-term protection is on disk).
+DPM protects data on tape through a combination of full and incremental backups from either the protected data source (for short-term protection on tape or for long-term protection on tape when DPM doesn't protect the data on disk) or from the DPM replica (for long-term protection on tape when short-term protection is on disk).
 
 > [!NOTE]
 > If a file was open when the replica was last synchronized, the backup of that file from the replica will be in a crash consistent state. A crash consistent state of the file will contain all data of the file that was persisted to disk at the time of last synchronization. This applies only to file system backups. Application backups will always be consistent with the application state.
@@ -126,7 +126,7 @@ The following illustration shows how each protection group member is associated 
 
 Administrators recover data from available recovery points by using the Recovery Wizard in DPM Administrator Console. When you select a data source and point in time from which to recover, DPM notifies you if the data is on tape, whether the tape is online or offline, and which tapes are needed to complete the recovery.
 
-DPM gives administrators the ability to enable their users to perform their own recoveries by leveraging the Previous Versions feature in Windows. If you do not want to provide this capability to your users, you can recover the data for desktop computers using the Recovery Wizard.
+DPM gives administrators the ability to enable their users to perform their own recoveries by using the Previous Versions feature in Windows. If you don't want to provide this capability to your users, you can recover the data for desktop computers using the Recovery Wizard.
 
 ## Protection policy
 
@@ -138,13 +138,13 @@ DPM configures the protection policy, or schedule of jobs, for each protection g
 
 - **Make data available for recovery for 7 years**
 
-Your recovery goals quantify your organization's data protection requirements. In DPM, the recovery goals are defined by retention range, data loss tolerance, recovery point schedule, and— for database applications—the express full backup schedule.
+Your recovery goals quantify your organization's data protection requirements. In DPM, the recovery goals are defined by retention range, data loss tolerance, recovery point schedule, and—for database applications—the express full backup schedule.
 
 The retention range is how long you need the backup data available. For example, do you need data from today to be available a week from now? Two weeks from now? A year from now?
 
 Data loss tolerance is the maximum amount of data loss, measured in time, that is acceptable to business requirements. It determines how often DPM should synchronize with the protected server by collecting data changes from the protected server. You can change the synchronization frequency to any interval between 15 minutes and 24 hours. You can also select to synchronize just before a recovery point is created, rather than on a specified time schedule.
 
-Recovery point schedule establishes how many recovery points of this protection group should be created. For file protection, you select the days and times for which you want recovery points created. For data protection of applications that support incremental backups, the synchronization frequency determines the recovery point schedule. For data protection of applications that do not support incremental backups, the express full backup schedule determines the recovery point schedule.
+Recovery point schedule establishes how many recovery points of this protection group should be created. For file protection, you select the days and times for which you want recovery points created. For data protection of applications that support incremental backups, the synchronization frequency determines the recovery point schedule. For data protection of applications that don't support incremental backups, the express full backup schedule determines the recovery point schedule.
 
 > [!NOTE]
 > When you create a protection group, DPM identifies the type of data being protected and offers only the protection options available for the data.
@@ -153,11 +153,11 @@ Recovery point schedule establishes how many recovery points of this protection 
 
 Auto discovery is the daily process by which DPM automatically detects new or removed computers on the network. Once a day, at a time that you can schedule, DPM sends a small packet (less than 10 kilobytes) to the closest domain controller. The domain controller responds to the LDAP request with the computers in that domain, and DPM identifies new and removed computers. The network traffic created by the auto discovery process is minimal.
 
-Auto discovery does not discover new and removed computers in other domains. To install a protection agent on a computer in another domain, you must identify the computer by using its fully qualified domain name.
+Auto discovery doesn't discover new and removed computers in other domains. To install a protection agent on a computer in another domain, you must identify the computer by using its fully qualified domain name.
 
 ## DPM directory structure
 
-When you begin protecting data with DPM, you will notice that the installation path of DPM contains three folders in the Volumes directory:
+When you begin protecting data with DPM, you'll notice that the installation path of DPM contains three folders in the Volumes directory:
 
 - \Microsoft DPM\DPM\Volumes\DiffArea
 
@@ -175,7 +175,7 @@ The **ShadowCopy** folder contains local backup copies of the DPM database. In a
 
 ## DPM Telemetry
 
-DPM does not collect any telemetry. If you are sending the data to Azure, the information needed by Azure Backup is sent to Microsoft. It does not contain any PII.
+DPM doesn't collect any telemetry. If you're sending the data to Azure, the information needed by Azure Backup is sent to Microsoft. It doesn't contain any PII.
 
 ::: moniker-end
 
