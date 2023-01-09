@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: How to configure an HTTPS binding for a Windows Server CA
-description: This article describes How to configure an HTTPS binding for a Windows Server CA.
+description: This article describes how to configure an HTTPS binding for a Windows Server CA.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma

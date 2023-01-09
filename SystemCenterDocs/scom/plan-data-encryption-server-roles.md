@@ -58,7 +58,7 @@ The following is a summarized list of steps required to configure FIPS for your 
 -	Edit the **WebHost\web.config** file.
 -	Edit the **MonitoringView\web.config** file.
 
-You will need the Global Assembly Cache Tool, gacutil.exe. This utility is part of the Windows .NET Framework SDK, which is a installation component included in the Windows Software Development Kit.  For more information, see [Gacutil.exe (Global Assembly Cache Tool)](/dotnet/framework/tools/gacutil-exe-gac-tool).
+You'll need the Global Assembly Cache Tool, gacutil.exe. This utility is part of the Windows .NET Framework SDK, which is an installation component included in the Windows Software Development Kit.  For more information, see [Gacutil.exe (Global Assembly Cache Tool)](/dotnet/framework/tools/gacutil-exe-gac-tool).
 
 The following is a summarized list of steps required to configure FIPS for your Reporting server:
 

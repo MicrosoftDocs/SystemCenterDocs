@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
 title: Obtain a certificate for use with Windows Servers and System Center Operations Manager
-description: This article explains How to obtain a certificate for use with Windows Servers and System Center Operations Manager.
+description: This article explains how to obtain a certificate for use with Windows Servers and System Center Operations Manager.
 author: jyothisuri
 ms.author: v-pgaddala
 manager: v-pgaddala
@@ -19,7 +19,7 @@ This article describes how to obtain a certificate and use with Operations Manag
 
 ## Prerequisites
 
-Ensure you have the following:
+Ensure you've the following:
 
 - AD-CS installed and configured in the environment with web services **or** a third party Certificate Authority with certificates that match the required settings shown.
 - HTTPS binding and its associated certificate installed. For information about creating an HTTPS binding, see [How to Configure an HTTPS Binding for a Windows Server CA](/system-center/scom/configure-https-binding-windows-server-ca).
@@ -401,7 +401,7 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
       1. Select the applicable Certificate Enrollment Policy (default may be the **Active Directory Enrollment Policy**), select **Next**
       1. Select the desired Enrollment Policy template to create the certificate
           1. If the template isn't immediately available, select **Show all templates** box below the list
-          1. If the template needed is available with a red X beside it, please consult your Active Directory or Certificate team
+          1. If the template needed is available with a red X beside it, consult your Active Directory or Certificate team
       1. In most environments, you can find a warning message with a hyperlink under the certificate template, select the link and continue to fill the information for the certificate.
           
       1. **Certificate Properties wizard:**
@@ -416,7 +416,7 @@ For Enterprise CAs with a defined certificate template, you may be able to reque
          |Signature| If your organization requires a registration authority, provide a signing certificate for this request. |
 
       1. Once the information has been provided in the Certificate Properties wizard, the warning hyperlink from earlier disappears.
-      1. Select **Enroll to create the certificate**. If there is an error, please consult your AD or certificate team.
+      1. Select **Enroll to create the certificate**. If there's an error, consult your AD or certificate team.
       1. If successful, the status will read **Succeeded** and a new certificate will be placed in the Personal/Certificates store.
 5. If these actions were taken on the intended recipient of the certificate, proceed to the next steps.
 6. Otherwise, export the new certificate from the machine and copy to the next.
@@ -508,7 +508,7 @@ The Operations Manager generates an alert when an imported certificate for Manag
 5. Select the option that best applies to what you want to do and follow the wizard.
 6. Once completed, run the `MOMCertImport.exe` tool to ensure Operations Manager has the new serial number (reversed) of the certificate if it changed; see the above section for further details.
 
-If certificate renewal via this method is not available, use the prior steps to request a new certificate or with the organization’s certificate authority. Install and import (MOMCertImport) the new certificate for use by Operations Manager.
+If certificate renewal via this method isn't available, use the prior steps to request a new certificate or with the organization’s certificate authority. Install and import (MOMCertImport) the new certificate for use by Operations Manager.
 
 ### Optional: Configure certificate auto-enrollment and renewal
 

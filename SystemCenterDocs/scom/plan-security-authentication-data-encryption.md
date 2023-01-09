@@ -32,7 +32,7 @@ An agent and the management server use Windows authentication to mutually authen
 
 ### Setting Up Communication Between Agents and Management Servers Across Trust Boundaries
 
-An agent (or agents) might be deployed into a domain (domain B) separate from the management server (domain A), and no two-way trust might exist between the domains. Because there's no trust between the two domains, the agents in one domain cannot authenticate with the management server in the other domain using the Kerberos protocol. Mutual authentication between the Operations Manager features within each domain still occurs.
+An agent (or agents) might be deployed into a domain (domain B) separate from the management server (domain A), and no two-way trust might exist between the domains. Because there's no trust between the two domains, the agents in one domain can't authenticate with the management server in the other domain using the Kerberos protocol. Mutual authentication between the Operations Manager features within each domain still occurs.
 
 A solution to this situation is to install a gateway server in the same domain where the agents reside, and then install certificates on the gateway server and the management server to achieve mutual authentication and data encryption. The use of the gateway server means you need only one certificate in domain B and only one port through the firewall, as shown in the following illustration.
 
@@ -40,7 +40,7 @@ A solution to this situation is to install a gateway server in the same domain w
 
 ### Setting Up Communication Across a Domain – Workgroup Boundary
 
-In your environment, you may have one or two agents deployed to a workgroup inside your firewall. The agent in the workgroup cannot authenticate with the management server in the domain using the Kerberos protocol. A solution to this situation is to install certificates on both the computer hosting the agent and the management server that the agent connects to, as shown in the following illustration.
+In your environment, you may have one or two agents deployed to a workgroup inside your firewall. The agent in the workgroup can't authenticate with the management server in the domain using the Kerberos protocol. A solution to this situation is to install certificates on both the computer hosting the agent and the management server that the agent connects to, as shown in the following illustration.
 
 > [!NOTE]
 > In this scenario, the agent must be manually installed.
@@ -150,4 +150,4 @@ The Operations console connects to Reporting Server on port 80 using HTTP. Auth
 
 ## Reporting server and Reporting data warehouse
 
-Authentication between Reporting Server and the Reporting data warehouse is accomplished using Windows Authentication. The account that was specified as the Data Reader Account during setup of Reporting becomes the Execution Account on Reporting Server. If the password for the account should change, you will need to make the same password change using the Reporting Services Configuration Manager in SQL Server. The data between the Reporting Server and the Reporting data warehouse isn't encrypted.
+Authentication between Reporting Server and the Reporting data warehouse is accomplished using Windows Authentication. The account that was specified as the Data Reader Account during setup of Reporting becomes the Execution Account on Reporting Server. If the password for the account should change, you'll need to make the same password change using the Reporting Services Configuration Manager in SQL Server. The data between the Reporting Server and the Reporting data warehouse isn't encrypted.

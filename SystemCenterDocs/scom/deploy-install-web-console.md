@@ -66,7 +66,7 @@ If you plan to use network load balancing with Application Diagnostics console a
 > [!IMPORTANT]
 > The web console operates with sensitive data, such as clear text user credentials, server names, IP addresses, and so on. If these are exposed on the network, they can represent a significant security risk. If Internet Information Services (IIS) doesn't have Secure Sockets Layer (SSL) configured, you're advised to configure it manually. For more information about security, see [Data Encryption for Web console and Reporting server Connections](plan-data-encryption-server-roles.md).
 
-If the web console doesn't have sufficient access to the operational database or the data warehouse database, you will receive a warning during the web console configuration step. You can proceed with Setup, but the web console won't be configured correctly for .NET Application monitoring. To resolve this issue, you can have your database administrator run the following SQL Server statement on both the operational database and data warehouse database:
+If the web console doesn't have sufficient access to the operational database or the data warehouse database, you'll receive a warning during the web console configuration step. You can proceed with Setup, but the web console won't be configured correctly for .NET Application monitoring. To resolve this issue, you can have your database administrator run the following SQL Server statement on both the operational database and data warehouse database:
 
 ```
 EXEC [apm].GrantRWPermissionsToComputer N'[LOGIN]'
@@ -131,7 +131,7 @@ The local and remote parameters are as follows:
     > [!NOTE]
     > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](https://techcommunity.microsoft.com/t5/system-center-blog/running-the-web-console-server-on-a-standalone-server-using/ba-p/340345).
 
-10. On the **Diagnostic and Usage Data** page, please review data collection terms and then select **Next** to continue.  
+10. On the **Diagnostic and Usage Data** page, review data collection terms and then select **Next** to continue.  
 
 11. If Microsoft Update isn't enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your option, and select **Next**.
 

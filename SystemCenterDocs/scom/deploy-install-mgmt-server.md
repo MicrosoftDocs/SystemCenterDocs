@@ -135,7 +135,7 @@ Once you've installed the first management server and created the management gro
 
 21. In the Operations console, in the navigation pane, select the **Administration** button, and then expand **Device Management**.
 
-22. In **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the **Health State** column.
+22. In **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you installed with a green check mark in the **Health State** column.
 
 ### To install additional management servers in the management group
 
@@ -196,7 +196,7 @@ Perform the following steps to add additional management servers in your managem
 
 16. In the Operations console, in the navigation pane, select the **Administration** button, and then expand **Device Management**.
 
-17. In **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the **Health State** column.  
+17. In **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you installed with a green check mark in the **Health State** column.  
 
 ## To install the first management server in the management group from the Command Prompt
 
