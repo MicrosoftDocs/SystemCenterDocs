@@ -138,7 +138,7 @@ To delete a credential
 
 DPM communicates with the VMware server securely over an HTTPS channel. To create the secure communication, install a trusted certificate on both the VMware server and DPM server. If the connection to your vCenter is not secure, you can secure it by installing a certificate on the DPM server. Use the same certificate to make a secure connection with the VMware server.
 
-To verify there is a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you are using Chrome, and you do not have a valid certificate you see the strikethrough in the URL, like this example:
+To verify there's a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you are using Chrome, and you do not have a valid certificate you see the strikethrough in the URL, like this example:
 
 ![no secure communication channel on Chrome ](./media/back-up-vmware/secure-communication-chrome.png)
 
@@ -372,7 +372,7 @@ For long term retention on VMware backup data on-premises, you can now enable VM
     -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
     - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also collocate data from different protection groups on tape.
+On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also collocate data from different protection groups on tape.
 
 On the **Select Tape and Library Details** page, specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 

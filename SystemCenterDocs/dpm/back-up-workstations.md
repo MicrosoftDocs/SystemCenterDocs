@@ -1,6 +1,6 @@
 ---
 description: You can use DPM to back up client computers.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
@@ -34,7 +34,7 @@ Before you deploy DPM to protect client computer data verify the deployment prer
 
 -   To set up client machines for protection you install the DPM protection agent on them. If Windows Firewall is configured on the client computer, the agent installation will set up the firewall exceptions it needs. If you need to reset the firewall, you can reconfigure it by running SetDpmServer.exe.  If you are using a firewall other than Windows Firewall, you'll need to open the necessary ports. Learn more in [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
--   DPM  can back up client computers that are physically or wirelessly connected to the local area network (LAN)or back up over VPN. For VPN backup the ICMP should be enabled on the client computer.
+-   DPM can back up client computers that are physically or wirelessly connected to the local area network (LAN) or back up over VPN. For VPN backup the ICMP should be enabled on the client computer.
 
 -   Each DPM server can protect up to 3000 client computers. When protecting client computers at scale, Microsoft recommends you create multiple protection groups, and stagger the recovery point times for those protection groups. The more clients that belong to a protection group, the longer it takes to enumerate the changes to the protection group.
 

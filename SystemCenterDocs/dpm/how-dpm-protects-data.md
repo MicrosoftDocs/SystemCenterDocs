@@ -1,6 +1,6 @@
 ---
 description: This article provides an overview of how DPM protects the various data types, the recovery process, and protection policies.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -78,7 +78,7 @@ Incremental synchronizations require less time than performing an express full b
 
 To enable faster recovery time, DPM regularly performs an express full backup, a type of synchronization that updates the replica to include the changed blocks.
 
-During express full backup, DPM takes a snapshot of the replica before updating the replica with the changed blocks. To enable more frequent recovery point objectives, as well as to reduce the data loss window, DPM also performs incremental synchronizations in the time between two express full backups.
+During express full backup, DPM takes a snapshot of the replica before updating the replica with the changed blocks. To enable more frequent recovery point objectives, and to reduce the data loss window, DPM also performs incremental synchronizations in the time between two express full backups.
 
 As with the protection of file data, if a replica becomes inconsistent with its data source, DPM generates an alert that specifies which server and which data sources are affected. To resolve the problem, the administrator repairs the replica by initiating a synchronization with consistency check on the replica. During a consistency check, DPM performs a block-by-block verification and repairs the replica to make it consistent with the data source.
 
@@ -100,7 +100,7 @@ Each data source is presented in the DPM Administrator Console according to the 
 
 ## Tape-based protection process
 
-When you use short-term disk-based protection and long-term tape-based protection, DPM can back up data from the replica volume to tape so that there's no impact on the protected computer. When you use tape-based protection only, DPM backs up the data directly from the protected computer to tape.
+When you use short-term disk-based protection and long-term tape-based protection, DPM can back up data from the replica volume to tape so that there's no effect on the protected computer. When you use tape-based protection only, DPM backs up the data directly from the protected computer to tape.
 
 DPM protects data on tape through a combination of full and incremental backups from either the protected data source (for short-term protection on tape or for long-term protection on tape when DPM doesn't protect the data on disk) or from the DPM replica (for long-term protection on tape when short-term protection is on disk).
 
@@ -113,7 +113,7 @@ For specific backup types and schedules, see Planning Protection Groups
 
 The method of data protection, disk-based or tape-based, makes no difference to the recovery task. You select the recovery point of data that you want to recover, and DPM recovers the data to the protected computer.
 
-DPM can store a maximum of 64 recovery points for each file member of a protection group. For application data sources, DPM can store up to 448 express full backups and up to 96 incremental backups for each express full backup. When storage area limits have been reached and the retention range for the existing recovery points is not met yet, protection jobs will fail.
+DPM can store a maximum of 64 recovery points for each file member of a protection group. For application data sources, DPM can store up to 448 express full backups and up to 96 incremental backups for each express full backup. When storage area limits have been reached and the retention range for the existing recovery points isn't met yet, protection jobs will fail.
 
 > [!NOTE]
 > To support end-user recovery, the recovery points for files are limited to 64 by Volume Shadow Copy Service (VSS).
