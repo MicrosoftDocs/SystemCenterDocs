@@ -4,7 +4,7 @@ title: Single-Server Deployment of Operations Manager
 description: This article provides an overview of the single-server deployment of Operations Manager 2016 to prepare you before performing setup.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center

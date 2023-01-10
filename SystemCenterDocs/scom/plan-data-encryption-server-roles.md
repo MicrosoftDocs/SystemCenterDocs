@@ -4,7 +4,7 @@ title: Data Encryption for Web console and Reporting server Connections
 description: This article provides design guidance for Operations Manager 2016 roles where secure communication is required in the enterprise.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center
