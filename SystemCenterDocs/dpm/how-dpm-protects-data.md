@@ -115,7 +115,7 @@ For specific backup types and schedules, see Planning Protection Groups
 
 The method of data protection, disk-based or tape-based, makes no difference to the recovery task. You select the recovery point of data that you want to recover, and DPM recovers the data to the protected computer.
 
-DPM can store a maximum of 64 recovery points for each file member of a protection group. For application data sources, DPM can store up to 448 express full backups and up to 96 incremental backups for each express full backup. When storage area limits have been reached and the retention range for the existing recovery points is not met yet, protection jobs will fail.
+DPM can store a maximum of 64 recovery points for each file member of a protection group. For application data sources, DPM can store up to 448 express full backups and up to 96 incremental backups for each express full backup. When storage area limits have been reached and the retention range for the existing recovery points isn't met yet, protection jobs will fail.
 
 > [!NOTE]
 > To support end-user recovery, the recovery points for files are limited to 64 by Volume Shadow Copy Service (VSS).
