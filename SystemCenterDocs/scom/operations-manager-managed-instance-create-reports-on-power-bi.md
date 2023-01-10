@@ -51,11 +51,11 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
     The dataset and reports will be refreshed. 
 
      >[!Note]
-     >To view Power BI reports of multiple SCOM Managed Instances (preview), **Microsoft SCOM managed instance reports** app must be installed individually in different Power BI workspace.
+     >To view Power BI reports of multiple SCOM Managed Instances (preview), **Microsoft SCOM managed instance reports** app must be installed individually in a different Power BI workspace.
 
 ## Next steps
 
-[Connect the Azure Monitor SCOM Managed Instance (preview) to Ops console](connect-managed-instance-ops-console.md)
+[Connect the Azure Monitor SCOM Managed Instance (preview) to Ops console](connect-managed-instance-ops-console.md).
 
 **Feedback**
 

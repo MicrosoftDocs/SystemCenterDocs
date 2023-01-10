@@ -4,7 +4,7 @@ title: Post-Upgrade Tasks When Upgrading to System Center Operations Manager
 description: This guide provides the post-upgrade tasks you must perform after upgrading to Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/22/2022
 ms.custom: na
 ms.prod: system-center
@@ -20,11 +20,11 @@ ms.topic: article
 
 ::: moniker-end
 
-After you have completed the upgrade process, you must perform a number of post-upgrade tasks.
+After you've completed the upgrade process, you must perform a number of post-upgrade tasks.
 
 ## Post-upgrade tasks
 
-Perform the following tasks when you have completed the upgrade process.
+Perform the following tasks when you've completed the upgrade process.
 
 1. Re-enable the Notification Subscriptions
 
@@ -43,14 +43,14 @@ After the upgrade has finished, use the following procedure to re-enable subscri
 #### To re-enable the subscriptions
 
 1. Open the Operations console with an account that is a member of the Operations Manager Administrators role for the Operations Manager management group.
-2. In the Operations console, in the navigation pane, click the **Administration** button.
+2. In the Operations console, in the navigation pane, select the **Administration** button.
 
     > [!NOTE]
-    > When you run the Operations console on a computer that is not a management server, the **Connect To Server** dialog box appears. In the **Server name** text box, type the name of the Operations Manager management server to which you want to connect.
+    > When you run the Operations console on a computer that isn't a management server, the **Connect To Server** dialog appears. In the **Server name** text box, enter the name of the Operations Manager management server to which you want to connect.
 
 
-3. In the **Administration** pane, under **Notifications**, click **Subscriptions**.
-4. In the **Actions** pane, click **Enable** for each subscription listed that was enabled prior to performing the upgrade.
+3. In the **Administration** pane, under **Notifications**, select **Subscriptions**.
+4. In the **Actions** pane, select **Enable** for each subscription listed that was enabled prior to performing the upgrade.
 
 ### Restart or re-enable the connector services
 
@@ -58,8 +58,8 @@ Refer to third-party documentation for any installed connectors to determine if 
 
 #### To restart a connector service
 
-1. Open the Services MMC snap-in. Click **Start**, and then type **services.msc** in the **Start Search** box.
-2. In the **Name** column, right-click the connector that you want to restart, and then click **Start**.
+1. Open the Services MMC snap-in. Select **Start**, and then enter **services.msc** in the **Start Search** box.
+2. In the **Name** column, right-click the connector that you want to restart, and select **Start**.
 
 ### Re-Enable Audit Collection Services
 
@@ -79,11 +79,11 @@ Perform the following tasks to verify that the upgrade was successful.
 - Review the event logs of all the management servers for new errors.
 Sort alerts by the last-modified column to review the new alerts.
 - Monitor CPU and memory utilization, and disk I/O on your database servers to ensure that they are functioning normally.
-- If the Reporting feature is installed, click Reporting, and then run a generic performance report to ensure that Reporting is functioning correctly.
+- If the Reporting feature is installed, select Reporting, and then run a generic performance report to ensure that Reporting is functioning correctly.
 
 ### Apply the workaround to make the AD rules work
 
-Previous AD rules do not work after upgrading to Operations Manager 2019. After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), 1801 or 1807, previous AD rules do not work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 does not have this issue.
+Previous AD rules don't work after upgrading to Operations Manager 2019. After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), 1801 or 1807, previous AD rules don't work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 doesn't have this issue.
 
 Use the following steps to fix this issue:
 
@@ -109,4 +109,4 @@ Use the following steps to fix this issue:
 
 ## Next steps
 
-- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+- To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).  
