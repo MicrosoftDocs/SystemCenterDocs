@@ -74,7 +74,7 @@ Management Pack for Azure SQL Database supports the following versions of System
 - System Center Operations Manager 2022
 
 >![NOTE]
-> To connect System Center Operations Manager to Azure resources, your server must have TLS 1.2 enabled. Check protocol status with [TLS 1.2 enforcement for Azure AD Connect](azure/active-directory/hybrid/reference-connect-tls-enforcement#powershell-script-to-check-tls-12).
+> To connect System Center Operations Manager to Azure resources, your server must have TLS 1.2 enabled. Check protocol status with [TLS 1.2 enforcement for Azure AD Connect](/azure/active-directory/hybrid/reference-connect-tls-enforcement#powershell-script-to-check-tls-12).
 ## Operating Systems and Platforms
 
 Management Pack for Azure SQL Database supports the following 64-bit operating systems and platforms:
