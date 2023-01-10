@@ -32,7 +32,7 @@ manager: "evansma"
 The following table provides a brief description of tasks you can accomplish when using each Text File Management activity.  
 
 > [!CAUTION]
->  If permissions on the installation path are changed and the activity’s Security Credentials has a custom user account that does not include **Read/Execute** permissions to **ExecutionData.dll** on the Runbook server, the activity will fail.  
+> If permissions on the installation path are changed and the activity’s Security Credentials has a custom user account that doesn't include **Read/Execute** permissions to **ExecutionData.dll** on the Runbook server, the activity will fail.  
 
 |Tasks|Text File Management Activities|  
 |-----------|-------------------------------------|  

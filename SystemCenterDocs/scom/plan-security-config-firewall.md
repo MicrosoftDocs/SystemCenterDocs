@@ -23,14 +23,14 @@ ms.topic: article
 This section describes how to configure your firewall to allow communication between the different Operations Manager features on your network.  
 
 >[!NOTE]
-> Operations Manager uses port 389 for LDAP queries for multiple actions such as agent discovery, active directory integration, etc. Operations Manager does not support LDAPs.
+> Operations Manager uses port 389 for LDAP queries for multiple actions such as agent discovery, active directory integration, and so on. Operations Manager doesn't support LDAPs.
 
 ## Port assignments
 The following table shows Operations Manager feature interaction across a firewall, including information about the ports used for communication between the features, which direction to open the inbound port, and whether the port number can be changed.
 
 |Operations Manager Feature A|Port Number and Direction|Operations Manager Feature B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
-|Management server|1433/TCP ---> <br>  1434/UDP ---> <br>  135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024.  For further information, see [Special considerations for Port 135](/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135) <br> Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>2</sup>|
+|Management server|1433/TCP ---> <br>  1434/UDP ---> <br>  135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024.  For more information, see [Special considerations for Port 135](/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135) <br> Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>2</sup>|
 |Management server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
 |Management server|161,162 <--->|network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
 |Gateway server|5723 --->|management server|No||
@@ -60,15 +60,15 @@ The following table shows Operations Manager feature interaction across a firewa
 
 - Additionally, the following URL must be allowed by your firewall - https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx.
 
-- If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following:
+- If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it's configured with a dynamic port. To identify the port, do the following:
 
   1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for \<instance name\>, and then double-click **TCP/IP**.
-  2. In the **TCP/IP Properties** dialog box, on the **IP Addresses** tab, note the port value for **IPAall**.  
+  2. In the **TCP/IP Properties** dialog, on the **IP Addresses** tab, note the port value for **IPAall**.  
 
 - If you plan on deploying the Operations Manager databases on a SQL Server configured with an Always On Availability Group or migrate after installation, do the following to identify the port:
 
-  1. In Object Explorer, connect to a server instance that hosts any availability replica of the availability group whose listener you want to view. Click the server name to expand the server tree.
+  1. In Object Explorer, connect to a server instance that hosts any availability replica of the availability group whose listener you want to view. Select the server name to expand the server tree.
   2. Expand the **Always On High Availability** node and the **Availability Groups** node.
   3. Expand the node of the availability group, and expand the **Availability Groups Listeners** node.
   4. Right-click the listener that you want to view, and select the **Properties** command.
-  This opens the **Availability Group Listener Properties** dialog box.
+  This opens the **Availability Group Listener Properties** dialog.

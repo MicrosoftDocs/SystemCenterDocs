@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This topic describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
+This article describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
 
 In Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:
 
@@ -32,7 +32,7 @@ In Operations Manager, the management server uses two protocols to communicate w
 
 The protocol that is used depends on the action or information that is requested on the management server. All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account.
 
-In Operations Manager, the system administrator is no longer is required to provide the root password of the UNIX or Linux computer to the management server. Now by elevation, an unprivileged account can assume the identity of a privileged account on the UNIX or Linux computer. The elevation process is performed by the UNIX su (superuser) and sudo programs that use the credentials that the management server supplies. For privileged agent maintenance operations that use SSH (such as discovery, deployment, upgrades, uninstallation, and agent recovery), support for su, sudo elevation, and support for SSH key authentication (with or without passphrase) is provided. For privileged WS-Management operations (such as viewing secure log files), support for sudo elevation (without password) is added.
+In Operations Manager, the system administrator is no longer required to provide the root password of the UNIX or Linux computer to the management server. Now by elevation, an unprivileged account can assume the identity of a privileged account on the UNIX or Linux computer. The elevation process is performed by the UNIX su (superuser) and sudo programs that use the credentials that the management server supplies. For privileged agent maintenance operations that use SSH (such as discovery, deployment, upgrades, uninstallation, and agent recovery), support for su, sudo elevation, and support for SSH key authentication (with or without passphrase) is provided. For privileged WS-Management operations (such as viewing secure log files), support for sudo elevation (without password) is added.
 
 ## Credentials for installing agents
 
@@ -44,9 +44,9 @@ Operations Manager uses the Secure Shell (SSH) protocol to install an agent and 
 
 -   Specify a user name and an SSH key. The key can include an optional passphrase.
 
-If you are not using the credentials for a privileged account, you can provide additional credentials so that your account becomes  a privileged account through elevation of privilege on the UNIX or Linux computer.
+If you aren't using the credentials for a privileged account, you can provide additional credentials so that your account becomes a privileged account through elevation of privilege on the UNIX or Linux computer.
 
-The installation is not completed until the agent is verified. Agent verification is performed by the WS-Management protocol that uses credentials maintained on the management server, separate from the privileged account that is used to install the agent. You are required to provide a user name and password for agent verification if you have done one of the following:
+The installation isn't completed until the agent is verified. Agent verification is performed by the WS-Management protocol that uses credentials maintained on the management server, separate from the privileged account that is used to install the agent. You're required to provide a user name and password for agent verification if you've done one of the following:
 
 -   Provided a privileged account by using a key.
 
@@ -72,9 +72,9 @@ Operations Manager contains three predefined profiles to use in monitoring UNIX 
 
     This profile is used for privileged maintenance operations, such as updating and removing agents.
 
-In the UNIX and Linux management packs, all the rules, monitors, tasks, recoveries, and other management pack elements are configured to use these profiles. Consequently, there is no requirement to define additional profiles by using the Run As Profiles Wizard unless special circumstances dictate it. The profiles are not cumulative in the scope. For example, the UNIX/Linux maintenance account profile cannot be used in place of the other profiles simply because it is configured by using a privileged account.
+In the UNIX and Linux management packs, all the rules, monitors, tasks, recoveries, and other management pack elements are configured to use these profiles. So, there's no requirement to define additional profiles by using the Run As Profiles Wizard unless special circumstances dictate it. The profiles aren't cumulative in scope. For example, the UNIX/Linux maintenance account profile can't be used in place of the other profiles simply because it's configured using a privileged account.
 
-In Operations Manager, a profile cannot function until it is associated with at least one Run As account. The credentials for accessing the UNIX or Linux computers are configured in the Run As accounts. Because there are no predefined Run As accounts for UNIX and Linux monitoring, you must create them.
+In Operations Manager, a profile can't function until it's associated with at least one Run As account. The credentials for accessing the UNIX or Linux computers are configured in the Run As accounts. Because there are no predefined Run As accounts for UNIX and Linux monitoring, you must create them.
 
 To create a Run As account, you must run the **UNIX/Linux Run As Account Wizard** that is available when you select **UNIX/Linux Accounts** in the **Administration** workspace. The wizard creates a Run As account based on the choice of a Run As account type. There are two Run As account types:
 
@@ -94,7 +94,8 @@ These Run As account types can be configured for different levels of access acco
 |UNIX/Linux privileged account|Monitoring account|-   Privileged<br>-   Unprivileged, elevated to privileged|
 |UNIX/Linux maintenance account|Agent maintenance account|-   Privileged<br>-   Unprivileged, elevated to privileged|
 
-Note that there are three profiles, but only two Run As Account types.
+>[!NOTE]
+> There are three profiles, but only two Run As Account types.
 
 When you specify a Monitoring Run As Account Type, you must specify a user name and password for use by the WS-Management protocol. When you specify an Agent Maintenance Run As Account Type, you must specify how the credentials are supplied to the targeted computer by using the SSH protocol:
 
@@ -105,9 +106,9 @@ When you specify a Monitoring Run As Account Type, you must specify a user name 
 After you created the Run As accounts, you must edit the UNIX and Linux profiles to associate them with the Run As accounts you created.  For detailed instructions, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](~/scom/manage-security-config-crossplat-runas-profile.md)
 
 ## Important security considerations
-The Operations Manager Linux/UNIX agent uses the standard PAM (Pluggable Authentication Module) mechanism on the Linux or UNIX computer to authenticate the user name and password specified in the Action Profile and Privilege Profile.  Any user name with a password that PAM authenticates can perform monitoring functions, including running command lines and scripts that collect monitoring data.  Such monitoring functions are always performed in the context of that user name (unless sudo elevation is explicitly enabled for that user name), so the Operations Manager agent provides no more capability than if the user name were to login to the Linux/UNIX system.
+The Operations Manager Linux/UNIX agent uses the standard PAM (Pluggable Authentication Module) mechanism on the Linux or UNIX computer to authenticate the user name and password specified in the Action Profile and Privilege Profile.  Any user name with a password that PAM authenticates can perform monitoring functions, including running command lines and scripts that collect monitoring data. Such monitoring functions are always performed in the context of that user name (unless sudo elevation is explicitly enabled for that user name), so the Operations Manager agent provides no more capability than if the user name were to sign in to the Linux/UNIX system.
 
-However, the PAM authentication used by the Operations Manager agent does not require that the user name have an interactive shell associated with it.  If your Linux/UNIX account management practices include removing the interactive shell as a way to pseudo-disable an account, such removal does not prevent the account from being used to connect to the Operations Manager agent and perform monitoring functions.  In these cases, you should use additional PAM configuration to ensure that these pseudo-disabled accounts do not authenticate to the Operations Manager agent.
+However, the PAM authentication used by the Operations Manager agent doesn't require that the user name have an interactive shell associated with it.  If your Linux/UNIX account management practices include removing the interactive shell as a way to pseudo-disable an account, such removal doesn't prevent the account from being used to connect to the Operations Manager agent and perform monitoring functions.  In these cases, you should use additional PAM configuration to ensure that these pseudo-disabled accounts don't authenticate to the Operations Manager agent.
 
 ## Credentials for upgrading and uninstalling agents
 
@@ -117,8 +118,8 @@ The **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wiz
 
     Select this option to use the credentials associated with the UNIX/Linux action account profile and the UNIX/Linux maintenance account profile.
 
-    The wizard alerts you if one or more of the selected computers do not have an associated Run As account in the required profiles, in which case you must go back and clear those computers that do not have an associated Run As account, or specify credentials.
+    The wizard alerts you if one or more of the selected computers don't have an associated Run As account in the required profiles, in which case you must go back and clear those computers that don't have an associated Run As account or specify credentials.
 
 -   **Specify credentials**
 
-    Select this option to specify Secure Shell (SSH) credentials by using a user name and password or a user name and a key. You can optionally provide a passphrase with a key. If the credentials are not for a privileged account, you can have them elevated to a privileged account on the target computered by using the UNIX su or sudo elevation programs. The 'su' elevation requires a password. If you use sudo elevation, you are prompted for a user name and password for agent verification by using an unprivileged account.
+    Select this option to specify Secure Shell (SSH) credentials by using a user name and password or a user name and a key. You can optionally provide a passphrase with a key. If the credentials aren't for a privileged account, you can have them elevated to a privileged account on the target computer by using the UNIX su or sudo elevation programs. The 'su' elevation requires a password. If you use sudo elevation, you're prompted for a user name and password for agent verification by using an unprivileged account.

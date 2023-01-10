@@ -42,13 +42,13 @@ You must ensure that your server meets the minimum supported configurations for 
 
 ### To install the single server management group configuration
 
-1. Log on to the server by using an account that has local administrative credentials.
+1. Sign in to the server by using an account that has local administrative credentials.
 
-2. On the System Center Operations Manager installation media, run **Setup.exe**, and then click **Install**.
+2. On the System Center Operations Manager installation media, run **Setup.exe**, and then select **Install**.
 
-3. On the **Getting Started**, **Select features to install** page select the **Management server**, **Operations console**, **Web console**, and **Reporting server** features. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature. Then click **Next**.
+3. On the **Getting Started**, **Select features to install** page, select the **Management server**, **Operations console**, **Web console**, and **Reporting server** features. To read more about each feature and its requirements, select **Expand all**, or expand the buttons next to each feature. Then select **Next**.
 
-4. On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+4. On the **Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
 
 ::: moniker range="sc-om-2022"
 
@@ -100,15 +100,14 @@ You must ensure that your server meets the minimum supported configurations for 
 
 ::: moniker-end
 
-5. On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
+5. On the **Prerequisites** page, review and resolve any warnings or errors, and then select **Verify Prerequisites Again** to recheck the system.
 
    > [!NOTE]
-   > Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
+   > Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and select **Allow**.
 
+6. If the Prerequisites checker doesn't return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
 
-6. If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
-
-7. On the **Configuration**, **Specify an installation option** page, select **Create the first Management server in a new management group**, type in a name for your management group and then click **Next**.
+7. On the **Configuration**, **Specify an installation option** page, select **Create the first Management server in a new management group**, type in a name for your management group and then select **Next**.
 
    > [!NOTE]
    > After the management group name is set, it cannot be changed. The Management Group name cannot contain the following characters:
@@ -117,33 +116,33 @@ You must ensure that your server meets the minimum supported configurations for 
    > ```
    > Also, the Management Group name cannot have a leading or trailing space. It is recommended that the Management Group name be unique within your organization if you plan to connect several management groups together.
 
-8. On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood, and agree with the license terms**, and then click **Next**.
+8. On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood, and agree with the license terms**, and select **Next**.
 
-9. When the **Configuration**, **Configure the operational database** page opens, in the **Server name and instance name** box, type the name of the server and the name of the SQL Server instance for the database server that will host the operational database. If you installed SQL Server by using the default instance, you only have to enter the server name. If you changed the default SQL Server port, you must type in the new port number in the **SQL Server port** box.
+9. When the **Configuration**, **Configure the operational database** page opens, in the **Server name and instance name** box, enter the name of the server and the name of the SQL Server instance for the database server that will host the operational database. If you installed the SQL Server by using the default instance, you only have to enter the server name. If you changed the default SQL Server port, you must enter the new port number in the **SQL Server port** box.
 
-    If you type an invalid SQL Server and instance name, you see a red circle with a white **X** in it appear to the left of the **Server name and instance name** and **SQL Server port**.
+    If you enter an invalid SQL Server and instance name, you see a red circle with a white **X** in it appear to the left of the **Server name and instance name** and **SQL Server port**.
 
     The white **X** appears under the following circumstances:
 
-   - You entered an instance of SQL Server or a SQL Server port value that is not valid or that does not exist.
+   - You entered an instance of SQL Server or a SQL Server port value that isn't valid or that doesn't exist.
 
-   - The instance of SQL Server that you specified does not have the required configuration or features.
+   - The instance of SQL Server that you specified doesn't have the required configuration or features.
 
    - You entered a value that is out-of-range (for example, port 999999).
 
-   - You entered an illegal character for that box (for example, server\instance%)
+   - You entered an illegal character for that box (for example, server\instance%).
 
      You can hover the cursor over the **Server name and instance** text box to view additional information about the error.
 
-10. After you type the correct value for the SQL Server database server name, click the **SQL Server port** box so that Setup will attempt to validate the values you typed for the SQL Server name and for the port number.
+10. After you enter the correct value for the SQL Server database server name, select the **SQL Server port** box so that Setup will attempt to validate the values you entered for the SQL Server name and for the port number.
 
-11. In the **Database name**, **Database size (MB)Data file folder**, and **Log file folder** box, we recommend that you accept the default values. Click **Next**
+11. In the **Database name**, **Database size (MB)Data file folder**, and **Log file folder** box, we recommend that you accept the default values. Select **Next**
 
     > [!NOTE]
-    > These paths do not change if you connect to a different instance of SQL Server.
+    > These paths don't change if you connect to a different instance of the SQL Server.
 
     > [!IMPORTANT]
-    > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>* placeholder with the location of SQL Server:
+    > You might receive a message about having the wrong version of the SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>* placeholder with the location of the SQL Server:
     >
     > ```
     > mofcomp.exe "<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof"
@@ -156,39 +155,39 @@ You must ensure that your server meets the minimum supported configurations for 
 
 13. Because this is a single-server installation, accept the default value of **Create a new data warehouse database**.
 
-14. In the **Database name**, **Database size (MB)Data file folder**, and **Log file folder** boxes, we recommend that you accept the default values. Click **Next**.
+14. In the **Database name**, **Database size (MB)Data file folder**, and **Log file folder** boxes, we recommend that you accept the default values. Select **Next**.
 
     > [!IMPORTANT]
-    > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>* placeholder with the location of SQL Server:
+    > You might receive a message about having the wrong version of the SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>* placeholder with the location of SQL Server:
     >
     > ```
     > mofcomp.exe "<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof"
     > ```
 
     > [!NOTE]
-    > These paths do not change if you connect to a different instance of SQL Server.
+    > These paths don't change if you connect to a different instance of the SQL Server.
 
-15. On the **Configuration**, **SQL Server instance for reporting services** page, select the SQL Server database instance from the drop-down list. This drop-down list contains the SQL Server database instance name that was created when you installed SQL Server. Click **Next**.
+15. On the **Configuration**, **SQL Server instance for reporting services** page, select the SQL Server database instance from the dropdown list. This dropdown list contains the SQL Server database instance name that was created when you installed the SQL Server. Select **Next**.
 
-16. On the **Configuration**, **Specify a web site for use with the Web console** page, select **Default Web Site** or the name of an existing website. Select the option **Enable SSL** only if the website has been configured to use SSL, and then click **Next**.
+16. On the **Configuration**, **Specify a web site for use with the Web console** page, select **Default Web Site** or the name of an existing website. Select the option **Enable SSL** only if the website has been configured to use SSL, and select **Next**.
 
-17. On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your option, and then click **Next**.
+17. On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your option, and select **Next**.
 
 18. On the **Configuration**, **Configure Operations Manager accounts** page, we recommend that you use **Domain Account** option for the **Management Server Action Account**, **System Center Configuration service and System Center Data Access service**, the **Data Reader account**, and the **Data Writer account**.
 
-    Enter the credentials for a domain account in each field. The error icon will disappear after account validation. Click **Next**.
+    Enter the credentials for a domain account in each field. The error icon will disappear after account validation. Select **Next**.
 
-19. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**.
+19. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and select **Next**.
 
-20. If Windows Update is not activated on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
+20. If Windows Update isn't activated on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and select **Next**.
 
-21. Review the options on the **Configuration**, **Installation Summary** page, and click **Install**. Setup continues.
+21. Review the options on the **Configuration**, **Installation Summary** page, and select **Install**. Setup continues.
 
-22. When Setup is finished, the **Setup is complete** page appears. Click **Close** and the Operations console will open.
+22. When Setup is finished, the **Setup is complete** page appears. Select **Close** and the Operations console will open.
 
 ### To install the Operations Manager single server management group configuration from the Command Prompt
 
-1.  Log on to the server by using an account that has local administrative credentials.
+1.  Sign in to the server by using an account that has local administrative credentials.
 
 2.  Open the Command Prompt by using the **Run as Administrator** option.
 
@@ -238,11 +237,11 @@ You must ensure that your server meets the minimum supported configurations for 
 
 ## Removed dependency on LocalSystem account
 
-Operations Manager 2022 provides the following changes:   
+Operations Manager 2022 provides the following changes:
 
 - LocalSystem is no longer used internally instead of the Default Action Account.
 This was used earlier for APM configuration, Privileged Monitoring Account, RunAs Profile fallback. There was an association created for the Validate Subscription Account RunAs Profile.  
-- LocalSystem account is still being added to Operations Manager Administrators Group by Setup, but it is now visible in the console and can be removed and added later as required.  
+- LocalSystem account is still being added to Operations Manager Administrators Group by Setup, but it's now visible in the console and can be removed and added later as required.  
 
 ::: moniker-end
 
@@ -252,16 +251,16 @@ This was used earlier for APM configuration, Privileged Monitoring Account, RunA
 
 1.  In the Operations console, select the **Administration** workspace.
 
-2.  In **Device Management** select **Management Servers**. In the results pane, you should see the Management server that you just installed with a green check mark in the **Health State** column.
+2.  In **Device Management**, select **Management Servers**. In the results pane, you should see the Management server that you just installed with a green check mark in the **Health State** column.
 
 #### To confirm the health of Operations Manager reports
 
-1.  In the Operations console, in the navigation pane, click the **Reporting** button.
+1.  In the Operations console, in the navigation pane, select the **Reporting** button.
 
     > [!NOTE]
-    > After initial deployment, it can take up to 30 minutes for reports to appear.
+    > After the initial deployment, it can take up to 30 minutes for reports to appear.
 
-2.  Click **Microsoft ODR Report Library**, and then double-click any of the reports listed. The selected report is generated and displays in a new window.
+2.  Select **Microsoft ODR Report Library**, and then double-click any of the reports listed. The selected report is generated and displays in a new window.
 
     By default, you should see the following reports:
 
@@ -282,4 +281,4 @@ This was used earlier for APM configuration, Privileged Monitoring Account, RunA
 
 ## Next steps
 
-Now that you have installed System Center Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Agent deployment planning](plan-planning-agent-deployment.md) and [Operations Manager Monitoring Scenarios](manage-monitoring-scenarios.md).
+Now that you've installed System Center Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Agent deployment planning](plan-planning-agent-deployment.md) and [Operations Manager Monitoring Scenarios](manage-monitoring-scenarios.md).
