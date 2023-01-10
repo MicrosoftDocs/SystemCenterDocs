@@ -1,6 +1,6 @@
 ---
 description: You can use DPM to back up your system state and provide bare metal recovery (BMR) protection.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
@@ -27,7 +27,7 @@ System Center Data Protection Manager (DPM) can back up system state and provide
 
     -   Domain member: Boot files, COM+ class registration database, registry
 
-    -   Domain controller: Active Directory (NTDS), boot files, COM+ class registration database, registry, system volume (SYSVOL)
+    -   Domain controller: Active Directory (NTDS), boot files, COM+ class registration database, registry, system volume (SYSVOL folder)
 
     -   Machine running cluster services: Additionally backs up cluster server metadata
 

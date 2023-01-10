@@ -1,6 +1,6 @@
 ---
 description: You can use DPM to back up and recover SQL Server databases.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
@@ -56,7 +56,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 -   DPM can protect SQL Server at the instance level or database level. When protection at the instance level is turned on, DPM detects new databases on that instance, and automatically adds them to its protection group.
 
--   DPM is an affordable option. It's a good fit for a small SQL Server footprint and can scale for organizations that've a larger SQL Server footprint.
+-   DPM is an affordable option. It's a good fit for a small SQL Server footprint and can scale for organizations that have a larger SQL Server footprint.
 
 -   DPM has a Self-Service Recovery Tool (SSRT) that extends database administrators' options for self-service recovery of SQL databases.
 

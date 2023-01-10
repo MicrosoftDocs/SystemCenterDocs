@@ -1,6 +1,6 @@
 ---
 description: You can use DPM to back up client computers.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

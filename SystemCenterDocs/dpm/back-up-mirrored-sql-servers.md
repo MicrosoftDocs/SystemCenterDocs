@@ -4,7 +4,7 @@ title: Manage mirrored SQL servers
 description: This article provides information about how to manage mirrored SQL servers in System Center DPM.
 author:  jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date:  04/08/2021
 ms.topic:  article
 ms.prod:  system-center
