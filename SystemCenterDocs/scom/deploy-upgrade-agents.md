@@ -41,7 +41,7 @@ Use the following procedures to upgrade an agent running on Windows or Linux to 
 For more information, see [enable service log on](enable-service-logon.md).
 > - If before the upgrade an agent was installed using the push install method, after the upgrade the agent-managed computer is put into a pending update state and can be upgraded through the Operations console. Otherwise, the agent needs to be upgraded manually.
 
-When you upgrade an agent, the Operations Manager installer service runs and isn't removed until after the completion of the upgrade. If the agent upgrade fails, you might have to re-install the agent because the installer service wasn't properly removed. If you attempt to upgrade the agent again and it fails, you should re-install the agent after you've completed upgrading all features of Operations Manager.
+When you upgrade an agent, the Operations Manager installer service runs and isn't removed until after the completion of the upgrade. If the agent upgrade fails, you might have to reinstall the agent because the installer service wasn't properly removed. If you attempt to upgrade the agent again and it fails, you should reinstall the agent after you've completed upgrading all features of Operations Manager.
 
 > [!NOTE]
 > If you've Audit Collection Services (ACS) enabled for an agent prior to this upgrade, it's disabled as part of the agent upgrade process. ACS must be re-enabled after the upgrade completes.
@@ -97,7 +97,7 @@ Push-installed agents are agents that were installed by using the **Computer and
 
 ## Upgrade manually installed agents
 
-Manually-installed agents are agents that were installed manually either from the Command Prompt or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents. Navigate to the Operations Manager installation folder to locate the Agent installation files for Windows: `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\amd64`
+Manually installed agents are agents that were installed manually either from the Command Prompt or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents. Navigate to the Operations Manager installation folder to locate the Agent installation files for Windows: `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\amd64`
 
 #### To upgrade a manually installed Windows agent by using the Setup Wizard
 
@@ -197,7 +197,7 @@ Use the following procedures to upgrade an agent running on Windows or Linux to 
 > [!NOTE]
 > If before the upgrade an agent was installed using the push install method, after upgrade the agent-managed computer is put into a pending update state and can be upgraded through the Operations console. Otherwise, the agent needs to be upgraded manually.
 
-When you upgrade an agent, the Operations Manager installer service runs and isn't removed until after the completion of the upgrade. If the agent upgrade fails, you might have to re-install the agent because the installer service wasn't properly removed. If you attempt to upgrade the agent again and it fails, you should re-install the agent after you've completed upgrading all the features of Operations Manager.
+When you upgrade an agent, the Operations Manager installer service runs and isn't removed until after the completion of the upgrade. If the agent upgrade fails, you might have to reinstall the agent because the installer service wasn't properly removed. If you attempt to upgrade the agent again and it fails, you should reinstall the agent after you've completed upgrading all the features of Operations Manager.
 
 > [!NOTE]
 > If you've Audit Collection Services (ACS) enabled for an agent prior to this upgrade, it's disabled as part of the agent upgrade process. ACS must be re-enabled after the upgrade completes.
@@ -238,7 +238,7 @@ Push-installed agents are agents that were installed by using the **Computer and
 
 ## Upgrading manually installed agents
 
-Manually-installed agents are agents that were installed manually either from the Command Prompt or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents. Remember the installation files are located in your Operations Manager installation directory: `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\amd64`
+Manually installed agents are agents that were installed manually either from the Command Prompt or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents. Remember the installation files are located in your Operations Manager installation directory: `C:\Program Files\Microsoft System Center\Operations Manager\Server\AgentManagement\amd64`
 
 #### To upgrade a manually installed Windows agent by using the Setup Wizard
 

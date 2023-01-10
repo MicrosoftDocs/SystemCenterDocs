@@ -192,7 +192,7 @@ For more information on Directory Readers role, see [Directory Readers role in A
 1.	Open the SQL MI. Under **Settings**, select **Active Directory admin**.
      :::image type="Active directory admin" source="media/create-operations-manager-managed-instance/active-directory-admin.png" alt-text="Screenshot of Active directory admin.":::
 
-2.	Select **Set admin**, and search for your MSI (the same MSI that you provided during the SCOM Managed Instance (preview) creation flow). You will find the admin added to the SQL MI.
+2.	Select **Set admin**, and search for your MSI (the same MSI that you provided during the SCOM Managed Instance (preview) creation flow). You'll find the admin added to the SQL MI.
      :::image type="Azure Active directory admin" source="media/create-operations-manager-managed-instance/azure-active-directory.png" alt-text="Screenshot of Azure Active directory admin.":::
 
 3.	If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, else your instance creation will fail.

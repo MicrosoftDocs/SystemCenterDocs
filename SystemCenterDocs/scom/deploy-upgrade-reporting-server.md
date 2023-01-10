@@ -37,7 +37,7 @@ When you try to upgrade Reporting server to System Center Operations Manager 201
 
 The prerequisites checker will report the following error:  **Management Server Upgraded Check - The management server to which this component reports has not been upgraded.**
 
-To work around this issue, install the System Center 2016 or 1801 or 1807 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 2019. Once the upgrade is successfully completed, you can re-run setup and uninstall the upgraded Operations console from the Reporting server.  
+To work around this issue, install the System Center 2016 or 1801 or 1807 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 2019. Once the upgrade is successfully completed, you can rerun setup and uninstall the upgraded Operations console from the Reporting server.  
 
 ::: moniker-end
 
@@ -60,7 +60,7 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify Prerequisites Again** to recheck the system.
 
-6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
+6.  If the Prerequisites checker doesn't return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
 
 7.  On the **Ready to Upgrade** page, review the options, and select **Upgrade**.
 
@@ -100,7 +100,7 @@ When you try to upgrade System Center 2016 - Operations Manager Reporting server
 
 The prerequisites checker will report the following error:  **Management Server Upgraded Check - The management server to which this component reports has not been upgraded.**
 
-To work around this issue, install the System Center 2016 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 1801. Once the upgrade is successfully completed, you can re-run setup and uninstall the upgraded Operations console from the Reporting server.  
+To work around this issue, install the System Center 2016 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 1801. Once the upgrade is successfully completed, you can rerun setup and uninstall the upgraded Operations console from the Reporting server.  
 
 ## To upgrade the Reporting server
 

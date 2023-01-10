@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-After you've completed the upgrade process, you must perform a number of post-upgrade tasks.
+After you've completed the upgrade process, you must perform many post-upgrade tasks.
 
 ## Post-upgrade tasks
 
@@ -78,7 +78,7 @@ Perform the following tasks to verify that the upgrade was successful.
 - Check the health state of the management and gateway servers, and agents in the Health Service Watcher state view. In the **Administration** workspace of the Operations console, ensure that the management and gateway servers, and agents are healthy. In the **Monitoring** workspace, check if there are any alerts related to the management group health.
 - Review the event logs of all the management servers for new errors.
 Sort alerts by the last-modified column to review the new alerts.
-- Monitor CPU and memory utilization, and disk I/O on your database servers to ensure that they are functioning normally.
+- Monitor CPU and memory utilization, and disk I/O on your database servers to ensure that they're functioning normally.
 - If the Reporting feature is installed, select Reporting, and then run a generic performance report to ensure that Reporting is functioning correctly.
 
 ### Apply the workaround to make the AD rules work

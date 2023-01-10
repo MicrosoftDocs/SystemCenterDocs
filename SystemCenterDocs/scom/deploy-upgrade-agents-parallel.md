@@ -57,6 +57,6 @@ Once you've completed all the post-upgrade steps and are comfortable with the st
 
 - To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).  
 
-- To understand the options and steps for installing agents and discovering objects to be monitored by Operations Manager, review information in the [Managing Discovery and Agents](welcome.md) section .
+- To understand the options and steps for installing agents and discovering objects to be monitored by Operations Manager, review information in the [Managing Discovery and Agents](welcome.md) section.
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
