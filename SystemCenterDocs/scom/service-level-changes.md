@@ -4,8 +4,8 @@ title: Service-level changes for gMSA in System Center Operations Manager
 description: This article describes the service-level changes that are required to use group Managed Service Accounts (gMSA), a new feature supported in Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 08/24/2020
+manager: mkluck
+ms.date: 01/11/2023
 ms.prod: system-center
 monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
@@ -23,6 +23,9 @@ This article describes the service-level changes that are required to use group 
 >This article applies to Operations Manager 2019 Update Rollup 1 (UR1) and later.
 
 ::: moniker-end
+
+>[!Note]
+>[Group Managed Service Accounts (gMSAs)](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview) are not supported as a report server service account.
 
 ## Change the service account for System Center Data Access Service to gMSA
 
@@ -48,34 +51,6 @@ Change the sign-in credentials for this service account from Windows Services Co
 Validate that both the services are running with gMSA.
 
 ![Screenshot of System Center Data Access Service.](media/gmsa/system-center-data-access-service.png)
-
-## Change the service account for SQL Server Reporting Services to gMSA
-
-You can change the data reader account in the following two ways.
-
-### From Windows Services Console
-
-Change the existing service account for SQL Server Reporting Services to **gMSA** from Windows Services Console, as shown.
-
-![Screenshot of Change service account for SQL Server.](media/gmsa/change-service-account-SQL.png)
-
-Validate that SQL Server Reporting Services is running with gMSA.
-
-![Screenshot of SQL Server Reporting Services.](media/gmsa/sql-server-reporting-service.png)
-
-### From Reporting Services Configuration Manager
-
-![Screenshot of Reporting Services Configuration Manager.](media/gmsa/reporting-service-configuration-manager.png)
-
-Select **Service Credentials** as **Authentication Type**, which is already specified as a gMSA earlier in Reporting Services Configuration Manager.
-
-![Screenshot of Report Server Database Configuration Wizard.](media/gmsa/configuration-manager-change-credentials.png)
-
-![Screenshot of Report Server Database.](media/gmsa/configuration-manager-report-server-database.png)
-
->[!NOTE]
->SQL Server doesn't support gMSA for the SQL Server Reporting Services Execution account. Continue to use a non-gMSA account for this account.
-
 
 ## Change the Data Warehouse Write account to use gMSA
 
