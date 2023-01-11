@@ -24,7 +24,7 @@ There are three ways to uninstall the UNIX and Linux management packs and agents
 
 1.  Delete selected UNIX or Linux system management packs from the Operations Manager Operations Console.
 
-2.  Delete an agent from Operations Manager, and uninstall the agent from the monitored computer. It'll be uninstalled first from the UNIX or Linux computer.
+2.  Delete an agent from Operations Manager, and uninstall the agent from the monitored computer. It will be uninstalled first from the UNIX or Linux computer.
 
 3.  Delete the agent from Operations Manager without uninstalling it on the UNIX or Linux host.
 

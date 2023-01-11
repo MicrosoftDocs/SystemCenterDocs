@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This topic describes how to upgrade and uninstall agents on UNIX and Linux computers using the **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks. For more information, see [Planning Security Credentials for Accessing Unix and Linux Computers](plan-security-crossplat-credentials.md).
+This article describes how to upgrade and uninstall agents on UNIX and Linux computers using the **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks. For more information, see [Planning Security Credentials for Accessing Unix and Linux Computers](plan-security-crossplat-credentials.md).
 
 ## Upgrading agents
 
@@ -64,7 +64,7 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 
 5.  On the **Credentials** page, select one of the credentials options.
 
-    If you select the option to use existing credentials and are alerted that one or more of the selected target computers does not have a Run As account assigned, you must do one of the following:
+    If you select the option to use existing credentials and are alerted that one or more of the selected target computers doesn't have a Run As account assigned, you must do one of the following:
 
     -   Provide specified credentials with the **Provide uninstall credentials** option.
 

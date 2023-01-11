@@ -91,7 +91,7 @@ The Operations Manager Agent Assignment and Failover Wizard creates an agent ass
 > [!IMPORTANT]  
 > The Active Directory Domain Services container for the management group must be created prior to running the Agent Assignment and Failover Wizard.  
 
-The Agent Assignment and Failover Wizard does not deploy the agent. You must manually deploy the agent to the computers using MOMAgent.msi.  
+The Agent Assignment and Failover Wizard doesn't deploy the agent. You must manually deploy the agent to the computers using MOMAgent.msi.  
 
 Changing the agent assignment rule can result in computers no longer being assigned to, and therefore monitored by, the management group. The state of these computers will change to critical, because the computers no longer send heartbeats to the management group. These computers can be deleted from the management group and, if the computer isn't assigned to other management groups, the Operations Manager agent can be uninstalled.  
 
@@ -103,7 +103,7 @@ Changing the agent assignment rule can result in computers no longer being assig
 
 3. In the Administration workspace, select **Management Servers**.  
 
-4. In the **Management Servers** pane, right-click the management server or gateway server to be **Primary Management Server** for the computers returned by the rules you will create in the following procedure, and then select **Properties**.  
+4. In the **Management Servers** pane, right-click the management server or gateway server to be **Primary Management Server** for the computers returned by the rules you'll create in the following procedure, and then select **Properties**.  
 
    > [!NOTE]  
    > Gateway servers work like management servers in this context.  

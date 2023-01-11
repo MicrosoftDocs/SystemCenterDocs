@@ -44,7 +44,7 @@ Each management pack can contain any or all of the following parts:
 
 Every management pack defines a model of the component that it manages. This model is expressed as one or more classes, each representing something that can be monitored and managed. When a management pack's information is sent to an agent, the agent relies on specific discovery rules in the management pack to find the actual instances of the classes this pack defines.  
 
-To reduce network utilization and storage requirements on the agent, only the parts of the management pack that are required by the agent to perform monitoring are downloaded to the agent for local storage.  For example, the sections of the management packs which define rules and monitors are downloaded, while the sections for knowledge and reports aren't.  
+To reduce network utilization and storage requirements on the agent, only the parts of the management pack that are required by the agent to perform monitoring are downloaded to the agent for local storage.  For example, the sections of the management packs that define rules and monitors are downloaded, while the sections for knowledge and reports aren't.  
 
 ### Monitors  
 
@@ -58,7 +58,7 @@ In Operations Manager, a rule defines the events and performance data to collect
 
 -   If a message indicating that the application is shutting down appears in the event log, send an alert.  
 
--   If a sign in attempt fails, collect the event that indicates this failure.  
+-   If a sign-in attempt fails, collect the event that indicates this failure.  
 
 As these examples show, rules can send alerts, events, or performance data. Rules can also run scripts, such as allowing a rule to attempt to restart a failed application.  
 
@@ -92,7 +92,7 @@ Management pack authors can create a Run As profile and associate the profile wi
 
 ## Sealed and unsealed management packs
 
-Management packs are either sealed or unsealed. A sealed management pack is a binary file that cannot be edited. An unsealed management pack is an XML file that can be edited. Sealed management packs should have an .mp extension, while unsealed management packs should have an .xml extension.  
+Management packs are either sealed or unsealed. A sealed management pack is a binary file that can't be edited. An unsealed management pack is an XML file that can be edited. Sealed management packs should have an .mp extension, while unsealed management packs should have an .xml extension.  
 
 In general, management packs obtained from an application or hardware device vendor are sealed.  
 

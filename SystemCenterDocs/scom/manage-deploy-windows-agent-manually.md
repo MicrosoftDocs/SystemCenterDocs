@@ -30,7 +30,7 @@ Before you use either method to manually deploy the agent, ensure the following 
 
 -   If an agent is manually deployed to a domain controller and the Active Directory management pack is later deployed, errors might occur during deployment of the management pack. The Active Directory helper object is used by the Active Directory management pack on Windows domain controllers. The Active Directory Management Pack helper object is normally installed automatically when the agent is deployed using the Discovery Wizard. To prevent errors from occurring or recover from errors already occurring, you need to manually install the Windows installer package OomADs.msi on the affected domain controller. The file can be located on the domain controller in the *%ProgramFiles%\Microsoft Monitoring Agent\Agent\HelperObjects* folder.
 
--   A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi, or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
+-   A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi, or they'll be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
 
 
 > [!NOTE]
@@ -97,7 +97,7 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
     ```
 
     > [!NOTE]
-    > Ensure you use the correct 32-bit or 64-bit version of MOMAgent.msi for the computer you are installing the agent on.
+    > Ensure you use the correct 32-bit or 64-bit version of MOMAgent.msi for the computer you're installing the agent on.
 
     where:
 
@@ -109,14 +109,14 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
     |MANAGEMENT_SERVER_DNS=*MSname*|Specifies the fully qualified domain name for the management server. To use a gateway server, enter the gateway server FQDN as **MANAGEMENT_SERVER_DNS**.|
     |MANAGEMENT_SERVER_AD_NAME=*ADname*|Use this parameter if the computer's DNS and Active Directory names differ to set to the fully qualified Active Directory Domain Services name.|
     |SECURE_PORT=*PortNumber*|Sets the health service port number.|
-    |ENABLE_ERROR_REPORTING={0&#124;1}|Optional parameter. Use this parameter with "1" to opt in to error report forwarding to Microsoft. If you do not include this parameter, the agent installation defaults to "0", which opts out of error report forwarding.|
-    |QUEUE_ERROR_REPORTS={0&#124;1}|Optional parameter. Use this parameter with "1" to queue error reports or with "0" to send reports immediately. If you do not include this parameter, the agent installation defaults to "0".|
+    |ENABLE_ERROR_REPORTING={0&#124;1}|Optional parameter. Use this parameter with "1" to opt in to error report forwarding to Microsoft. If you don't include this parameter, the agent installation defaults to "0", which opts out of error report forwarding.|
+    |QUEUE_ERROR_REPORTS={0&#124;1}|Optional parameter. Use this parameter with "1" to queue error reports or with "0" to send reports immediately. If you don't include this parameter, the agent installation defaults to "0".|
     |INSTALLDIR=*path*|Optional parameter. Use this parameter if you want to install the agent to a folder other than the default installation path. Note that \Agent will be appended to this value.|
     |ACTIONS_USE_COMPUTER_ACCOUNT={0&#124;1}|Indicates whether to use a specified user account (0) or the Local System account (1).|
     |ACTIONSUSER=*UserName*|Sets the Agent Action account to *UserName*. This parameter is required if you specified ACTIONS_USE_COMPUTER_ACCOUNT=0.|
     |ACTIONSDOMAIN= *DomainName*|Sets the domain for the Agent Action account identified with the ACTIONSUSER parameter.|
     |ACTIONSPASSWORD= *Password*|The password for the user identified with the ACTIONSUSER parameter.|
-    |NOAPM=1|Optional parameter. Installs the Operations Manager agent without .NET Application Performance Monitoring. If you are using AVIcode 5.7, NOAPM=1 leaves the AVIcode agent in place. If you are using AVIcode 5.7 and install the Operations Manager agent by using momagent.msi without NOAPM=1, the AVIcode agent will not work correctly and an alert will be generated.|
+    |NOAPM=1|Optional parameter. Installs the Operations Manager agent without .NET Application Performance Monitoring. If you're using AVIcode 5.7, NOAPM=1 leaves the AVIcode agent in place. If you're using AVIcode 5.7 and install the Operations Manager agent by using momagent.msi without NOAPM=1, the AVIcode agent won't work correctly and an alert will be generated.|
     |AcceptEndUserLicenseAgreement=1|Used to specify that you accept the End User License Agreement (EULA). This parameter is required when you use /qn to perform a fully silent installation of the agent.|
 
 
