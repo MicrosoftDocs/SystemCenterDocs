@@ -5,7 +5,7 @@ description: This article describes how to create an Azure Monitor SCOM Managed 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 01/09/2023
+ms.date: 01/10/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -113,6 +113,9 @@ To register SCOM Managed Instance (preview) resource provider, do the following:
 2. Select the subscription where you want to deploy SCOM Managed Instance (preview).
 3. Under **Settings**, select **Resource providers**.
 4. Search for SCOM and register **Microsoft.Scom**.
+5. In the Subscription page, under **Settings**, select **Resource providers** and search for **microsoft.insights**. If the **microsoft.insights** provider isn't registered, select the provider and then select **Register**.
+
+     :::image type="Microsoft insights resource provider" source="media/create-operations-manager-managed-instance/resource-provider.png" alt-text="Screenshot of microsoft insights provider.":::
 
 ## Create a Managed Service Identity (MSI)
 
