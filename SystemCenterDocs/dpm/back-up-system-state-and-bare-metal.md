@@ -27,7 +27,7 @@ System Center Data Protection Manager (DPM) can back up system state and provide
 
     -   Domain member: Boot files, COM+ class registration database, registry
 
-    -   Domain controller: Active Directory (NTDS), boot files, COM+ class registration database, registry, system volume (SYSVOL folder)
+    -   Domain controller: Active Directory (NTDS), boot files, COM+ class registration database, registry, system volume (sysvol folder)
 
     -   Machine running cluster services: Additionally backs up cluster server metadata
 
