@@ -65,7 +65,7 @@ Follow these steps to validate the migration of Groups and Data collection.
 
     1. Verify that the state views are populated with the correct objects (Servers, Databases, Websites, and so on) and they're being monitored (Health State isn't **Unmonitored**).
 
-    1. Check the performance views and verify that performance data has been collected.
+    1. Check the performance views and verify that the performance data has been collected.
 
 # [Dashboard](#tab/dashboard)
 
@@ -151,7 +151,7 @@ After you migrate the notification configuration to SCOM Managed Instance (previ
 
 # [Groups](#tab/groups)
 
-Groups are migrated as part of Management Packs. For more information, see **step 5** in **Management Packs and Overrides** tab.
+Groups are migrated as part of Management Packs. For more information, see **step 5** in the **Management Packs and Overrides** tab.
 
 # [1P Integrations](#tab/integrations)
 
