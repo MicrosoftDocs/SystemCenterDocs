@@ -7,7 +7,6 @@ ms.author: jsuri
 manager: mkluck
 ms.date: 01/11/2023
 ms.prod: system-center
-monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -16,13 +15,6 @@ ms.topic: article
 # Service-level changes
 
 This article describes the service-level changes that are required to use group Managed Service Accounts (gMSAs) in System Center Operations Manager.
-
-::: moniker range="sc-om-2019"
-
->[!NOTE]
->This article applies to Operations Manager 2019 Update Rollup 1 (UR1) and later.
-
-::: moniker-end
 
 >[!Note]
 >[Group Managed Service Accounts (gMSAs)](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview) are not supported as a report server service account.
