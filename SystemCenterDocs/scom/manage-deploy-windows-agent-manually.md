@@ -4,7 +4,7 @@ title: Install Windows Agent Manually Using MOMAgent.msi
 description: This article describes how to manually install the Operations Manager agent manually on Windows computers.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/21/2022
 ms.custom: na, intro-installation
 ms.prod: system-center
@@ -20,17 +20,17 @@ ms.topic: article
 
 ::: moniker-end
 
-You can use MOMAgent.msi to deploy System Center Operations Manager agents from the command line or by using the Setup Wizard. Deploying agents from the command line is also referred to as a manual install.  For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](./system-requirements.md).
+You can use MOMAgent.msi to deploy System Center Operations Manager agents from the command line or by using the Setup Wizard. Deploying agents from the command line is also referred to as a manual install. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](./system-requirements.md).
 
 Before you use either method to manually deploy the agent, ensure the following conditions are met:
 
--   The account that is used to run MOMAgent.msi must have administrative privileges on the computer on which you are installing agent.
+-   The account that is used to run MOMAgent.msi must have administrative privileges on the computer on which you're installing agent.
 
 -   Each agent that is installed with the Setup Wizard or from the command line must be approved by a management group. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md).
 
--   If an agent is manually deployed to a domain controller and the Active Directory management pack is later deployed, errors might occur during deployment of the management pack.  The Active Directory helper object is used by the Active Directory management pack on Windows domain controllers.  The Active Directory Management Pack helper object is normally installed automatically when the agent is deployed using the Discovery Wizard.  To prevent errors from occurring or recover from errors already occurring, you need to manually install the Windows installer package OomADs.msi on the affected domain controller.  The file can be located on the domain controller in the *%ProgramFiles%\Microsoft Monitoring Agent\Agent\HelperObjects* folder.   
+-   If an agent is manually deployed to a domain controller and the Active Directory management pack is later deployed, errors might occur during deployment of the management pack. The Active Directory helper object is used by the Active Directory management pack on Windows domain controllers. The Active Directory Management Pack helper object is normally installed automatically when the agent is deployed using the Discovery Wizard. To prevent errors from occurring or recover from errors already occurring, you need to manually install the Windows installer package OomADs.msi on the affected domain controller. The file can be located on the domain controller in the *%ProgramFiles%\Microsoft Monitoring Agent\Agent\HelperObjects* folder.
 
--   A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
+-   A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi, or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
 
 
 > [!NOTE]
@@ -46,45 +46,45 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
 
 ::: moniker range=">=sc-om-2016 <=sc-om-1801"
 > [!IMPORTANT]
->  The Application Performance Monitoring (APM) feature in System Center 2016 Operations Manager and version 1801 agent causes a crash with IIS Application Pools that are running under the .NET Framework 2.0 runtime. By default when the agent is installed on a Windows computer, the APM components are installed by default.  To avoid issues and prevent installation of the APM components on target Windows servers when you deploy the agent, add the `NOAPM=true` parameter
+>  The Application Performance Monitoring (APM) feature in System Center 2016 Operations Manager and version 1801 agent causes a crash with IIS Application Pools that are running under the .NET Framework 2.0 runtime. By default when the agent is installed on a Windows computer, the APM components are installed by default. To avoid issues and prevent installation of the APM components on target Windows servers when you deploy the agent, add the `NOAPM=true` parameter
 ::: moniker-end
 
 ## To deploy the Operations Manager agent with the Agent Setup Wizard
 
-1.  Use local administrator privileges to log on to the computer where you want to install the agent.
+1.  Use local administrator privileges to sign in to the computer where you want to install the agent.
 
 2.  On the Operations Manager installation media, double-click **Setup.exe**.
 
-3.  In **Optional Installations**, click **Local agent**.
+3.  In **Optional Installations**, select **Local agent**.
 
-4.  On the **Welcome** page, click **Next**.
+4.  On the **Welcome** page, select **Next**.
 
-5.  On the **Important Notice** page, review the Microsoft software license terms and then click **I Agree**.
+5.  On the **Important Notice** page, review the Microsoft software license terms and select **I Agree**.
 
-6.  On the **Destination Folder** page, leave the installation folder set to the default, or click **Change** and type a path, and then click **Next**.
+6.  On the **Destination Folder** page, leave the installation folder set to the default, or select **Change** and type a path, and select **Next**.
 
-6.  On the **Agent Setup Options** page, you can choose whether you want to **connect the agent to Operations Manager**. When you connect the agent to Operations Manager, you can manually choose the management group that this agent will participate with in monitoring. If you do not select this option, the agent can still collect Application Performance Monitoring data locally. You can change your selection in the **Monitoring Agent** item in Control Panel.  
+6.  On the **Agent Setup Options** page, you can choose whether you want to **connect the agent to Operations Manager**. When you connect the agent to Operations Manager, you can manually choose the management group that this agent will participate with in monitoring. If you don't select this option, the agent can still collect Application Performance Monitoring data locally. You can change your selection in the **Monitoring Agent** item in Control Panel.  
 
 7.  On the **Management Group Configuration** page, do the following:
 
-    a. Type the name of the management group in the **Management Group Name** field and the (which server?) server name in the **Management Server** field.
+    a. Enter the name of the management group in the **Management Group Name** field and the (which server?) server name in the **Management Server** field.
 
        > [!NOTE]
        > To use a gateway server, enter the gateway server name in the **Management Server** text box.
 
-    b. Type a value for **Management Server Port**, or leave the default of 5723.
+    b. Enter a value for **Management Server Port**, or leave the default of 5723.
 
-    c.  Click **Next**.
+    c. Enter **Next**.
 
-8.  On the **Agent Action Account** page, leave it set to the default of **Local System**, or select **Domain or Local Computer Account**; type the **User Account**, **Password**, and **Domain or local computer**; and then click **Next**.
+8.  On the **Agent Action Account** page, leave it set to the default of **Local System**, or select **Domain or Local Computer Account**; enter the **User Account**, **Password**, and **Domain or local computer**; and select **Next**.
 
-9. On the **Ready to Install** page, review the settings and then click **Install** to display the **Installing Microsoft Monitoring Agent** page.
+9. On the **Ready to Install** page, review the settings and select **Install** to display the **Installing Microsoft Monitoring Agent** page.
 
-11. When the **Completing the Microsoft Monitoring Agent Setup Wizard** page appears, click **Finish**.
+11. When the **Completing the Microsoft Monitoring Agent Setup Wizard** page appears, select **Finish**.
 
 ## To deploy the Operations Manager agent from the command line
 
-1.  Log on to the computer where you want to install the agent by using an account with local administrator privileges.
+1.  Sign in to the computer where you want to install the agent by using an account with local administrator privileges.
 
 2.  Open a command prompt as an administrator.
 
@@ -203,8 +203,8 @@ Get-SCOMAgent -DNSHostName "ComputerA.contoso.net" | Repair-SCOMAgent -NoAPM
 
 - If you would like to install the Nano Server agent using the Discovery Wizard, from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](manage-deploy-windows-agent-nano.md).
 
-- To learn how to upgrade the agent on Windows computers from a previous version, see [How to upgrade an agent to System Center Operations Manager](deploy-upgrade-agents.md).    
+- To learn how to upgrade the agent on Windows computers from a previous version, see [How to upgrade an agent to System Center Operations Manager](deploy-upgrade-agents.md).
 
 - To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](~/scom/manage-deploy-config-windows-agent.md).
 
-- Review [Uninstall Agent from Windows-based Computers](~/scom/manage-uninstall-windows-agent.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.
+- To understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers, review [Uninstall Agent from Windows-based Computers](~/scom/manage-uninstall-windows-agent.md).

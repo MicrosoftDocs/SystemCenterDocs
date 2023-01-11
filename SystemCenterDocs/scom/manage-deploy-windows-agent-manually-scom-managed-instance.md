@@ -19,13 +19,13 @@ You can use *MOMAgent.msi* to deploy Azure Monitor SCOM Managed Instance (previe
 
 For either of the methods, ensure the following conditions are met:
 
--   The account that is used to run *MOMAgent.msi* must have administrative privileges on the computer on which you are installing the agent.
+-   The account that is used to run *MOMAgent.msi* must have administrative privileges on the computer on which you're installing the agent.
 
 -   Each agent must be approved by a management group. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md).
 
--   If an agent is manually deployed to a domain controller and the Active Directory management pack is later deployed, errors might occur during deployment of the management pack. The Active Directory helper object is used by the Active Directory management pack on Windows domain controllers. To prevent errors from occurring or recover from errors already occurring, you need to manually install the Windows installer package OomADs.msi on the affected domain controller.  The file can be located on the domain controller in the *%ProgramFiles%\Microsoft Monitoring Agent\Agent\HelperObjects* folder.   
+-   If an agent is manually deployed to a domain controller and the Active Directory management pack is later deployed, errors might occur during deployment of the management pack. The Active Directory helper object is used by the Active Directory management pack on Windows domain controllers. To prevent errors from occurring or recover from errors already occurring, you need to manually install the Windows installer package OomADs.msi on the affected domain controller.  The file can be located on the domain controller in the *%ProgramFiles%\Microsoft Monitoring Agent\Agent\HelperObjects* folder.
 
-- SCOM Managed Instance (preview) must be configured to accept agents installed with *MOMAgent.msi* or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the managed instance is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
+- SCOM Managed Instance (preview) must be configured to accept agents installed with *MOMAgent.msi*, or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the managed instance is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
 
 
 > [!NOTE]

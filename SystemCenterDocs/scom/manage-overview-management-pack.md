@@ -4,7 +4,7 @@ title: What is in an Operations Manager Management Pack?
 description: This article describes the composition of an Operations Manager management pack.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/29/2019
 ms.custom: na, intro-overview
 ms.prod: system-center
@@ -44,21 +44,21 @@ Each management pack can contain any or all of the following parts:
 
 Every management pack defines a model of the component that it manages. This model is expressed as one or more classes, each representing something that can be monitored and managed. When a management pack's information is sent to an agent, the agent relies on specific discovery rules in the management pack to find the actual instances of the classes this pack defines.  
 
-To reduce network utilization and storage requirements on the agent, only the parts of the management pack that are required by the agent to perform monitoring are downloaded to the agent for local storage.  For example, the sections of the management packs which define rules and monitors are downloaded, while the sections for knowledge and reports are not.  
+To reduce network utilization and storage requirements on the agent, only the parts of the management pack that are required by the agent to perform monitoring are downloaded to the agent for local storage.  For example, the sections of the management packs which define rules and monitors are downloaded, while the sections for knowledge and reports aren't.  
 
 ### Monitors  
 
 Each management pack defines one or more classes that can be managed, and then specifies a group of monitors for instances of the classes. These monitors keep track of the state of each class instance, making it easier to avoid problems before they occur.  
 
-Each monitor reflects the state of some aspect of a class instance, and changes as the state of the class instance changes. For example, a monitor that tracks disk utilization might be in one of three states: green, if the disk is less than 75 percent full; yellow, if it is between 75 and 90 percent full; and red, if the disk is more than 90 percent full. A monitor that tracks the availability of an application might have only two states: green, if the application is running; and red, if it is not. The author of each management pack defines the monitors it contains, how many states each monitor has, and what aspect of the managed class this monitor tracks.  
+Each monitor reflects the state of some aspect of a class instance, and changes as the state of the class instance changes. For example, a monitor that tracks disk utilization might be in one of three states: green, if the disk is less than 75 percent full; yellow, if it's between 75 and 90 percent full; and red, if it's more than 90 percent full. A monitor that tracks the availability of an application might have only two states: green, if the application is running; and red, if it's not. The author of each management pack defines the monitors it contains, how many states each monitor has, and what aspect of the managed class this monitor tracks.  
 
 ### Rules
 
-In Operations Manager, a rule defines the events and performance data to collect from computers, and what to do with the information after it is collected. A simple way to think about rules is as an if\/then statement. For example, a management pack for an application might contain rules such as the following:  
+In Operations Manager, a rule defines the events and performance data to collect from computers, and what to do with the information after it's collected. A simple way to think about rules is as an if\/then statement. For example, a management pack for an application might contain rules such as the following:  
 
 -   If a message indicating that the application is shutting down appears in the event log, send an alert.  
 
--   If a logon attempt fails, collect the event that indicates this failure.  
+-   If a sign in attempt fails, collect the event that indicates this failure.  
 
 As these examples show, rules can send alerts, events, or performance data. Rules can also run scripts, such as allowing a rule to attempt to restart a failed application.  
 
@@ -74,7 +74,7 @@ Knowledge is referred to as *product knowledge* or *company knowledge*. Product 
 
 ### Tasks  
 
-A task is a script or other executable code that runs either on the management server or on the server, client, or other device that is being managed. Tasks can potentially perform any kind of activity, including restarting a failed application and deleting files. Like other aspects of a management pack, each task is associated with a particular managed class. For example, running chkdsk makes sense only on a disk drive while a task that restarts Microsoft Exchange Server is meaningful only on a computer that is running Exchange Server. If necessary, an operator can also run the same task simultaneously on multiple managed systems. Monitors can have two special kinds of tasks associated with them: diagnostic tasks that try to discover the cause of a problem, and recovery tasks that try to fix the problem. These tasks can be run automatically when the monitor enters an error state, providing an automated way to solve problems. They can also be run manually, because automated recovery isn't always the preferred approach.  
+A task is a script or other executable code that runs either on the management server or on the server, client, or other device that is being managed. Tasks can potentially perform any kind of activity, including restarting a failed application and deleting files. Like other aspects of a management pack, each task is associated with a particular managed class. For example, running chkdsk makes sense only on a disk drive while a task that restarts Microsoft Exchange Server is meaningful only on a computer that's running Exchange Server. If necessary, an operator can also run the same task simultaneously on multiple managed systems. Monitors can have two special kinds of tasks associated with them: diagnostic tasks that try to discover the cause of a problem, and recovery tasks that try to fix the problem. These tasks can be run automatically when the monitor enters an error state, providing an automated way to solve problems. They can also be run manually, because automated recovery isn't always the preferred approach.  
 
 ### Reports  
 
@@ -82,7 +82,7 @@ Just as a management pack can contain views customized for the objects that mana
 
 ### Object discoveries  
 
-Object discoveries are used to find the specific objects on a network that need to be monitored. Management packs define the type of objects that the management pack monitors. The object discoveries can use the registry, WMI, scripts, OLE DB, LDAP, or even custom managed code to find objects on a network. If an object discovery finds objects on your network that you do not want to monitor, you can limit the scope of object discoveries by using overrides.  
+Object discoveries are used to find the specific objects on a network that need to be monitored. Management packs define the type of objects that the management pack monitors. The object discoveries can use the registry, WMI, scripts, OLE DB, LDAP, or even custom managed code to find objects on a network. If an object discovery finds objects on your network that you don't want to monitor, you can limit the scope of object discoveries by using overrides.  
 
 ### Run As profiles  
 
@@ -96,30 +96,30 @@ Management packs are either sealed or unsealed. A sealed management pack is a bi
 
 In general, management packs obtained from an application or hardware device vendor are sealed.  
 
-Although you cannot change the settings in a sealed management pack, you can still customize the applied settings of a management pack after it is imported by using overrides or by creating additional settings such as rules, monitors, and tasks that supersede the management pack's default settings. All customizations that you create are saved to a separate management pack file.  
+Although you can't change the settings in a sealed management pack, you can still customize the applied settings of a management pack after it's imported by using overrides or by creating additional settings such as rules, monitors, and tasks that supersede the management pack's default settings. All customizations that you create are saved to a separate management pack file.  
 
 ## Management pack libraries and dependencies  
 
-Certain management packs are referred to as *libraries*, because they provide a foundation of classes on which other management packs depend. A management pack that you download from the Operations Manager Catalog might include a library management pack. Several library management packs are imported as part of the Operations Manager installation process. For a list of management packs imported during the installation of Operations Manager, see [Management Packs Installed with Operations Manager](manage-mp-installed-during-seutp.md).  
+Certain management packs are referred to as *libraries* because they provide a foundation of classes on which other management packs depend. A management pack that you download from the Operations Manager Catalog might include a library management pack. Several library management packs are imported as part of the Operations Manager installation process. For a list of management packs imported during the installation of Operations Manager, see [Management Packs Installed with Operations Manager](manage-mp-installed-during-seutp.md).  
 
-A dependency exists when a management pack references other management packs. You must import all referenced management packs before you can import the management pack that depends on those management packs. Management packs include a management pack guide that should document the dependencies of the management pack. In addition, if you attempt to import a management pack and the management packs that it is dependent on are not present, the **Import Management Packs** dialog box will display a message that the management pack will fail to import and a list of the missing management packs. After you import a management pack, you can view its dependencies in the Operations console.  
+A dependency exists when a management pack references other management packs. You must import all referenced management packs before you can import the management pack that depends on those management packs. Management packs include a management pack guide that should document the dependencies of the management pack. In addition, if you attempt to import a management pack and the management packs that it's dependent on aren't present, the **Import Management Packs** dialog will display a message that the management pack will fail to import and a list of the missing management packs. After you import a management pack, you can view its dependencies in the Operations console.  
 
 ### To view the dependencies for a management pack  
 
-1.  In the Operations console, in the **Administration** workspace, click **Management Packs**.  
+1.  In the Operations console, in the **Administration** workspace, select **Management Packs**.  
 
-2.  Right\-click the desired management pack, and then click **Properties**.  
+2.  Right\-click the desired management pack, and select **Properties**.  
 
-3.  In the **Properties** dialog box for the management pack, click the **Dependencies** tab.  
+3.  In the **Properties** dialog for the management pack, select the **Dependencies** tab.  
 
     The **Dependencies** tab lists any management packs that the selected management pack depends on and any management packs that depend on the selected management pack.  
 
 ## Next steps
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md)
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).
 
-- To understand the basic concepts for managing the monitoring configuration of an application or service defined in a management pack, see [Management Pack Lifecycle](manage-mp-lifecycle.md)  
+- To understand the basic concepts for managing the monitoring configuration of an application or service defined in a management pack, see [Management Pack Lifecycle](manage-mp-lifecycle.md).
 
-- See [How to import, export and remove a management pack](manage-mp-import-remove-delete.md) to perform common administrative tasks with management packs in your management group.
+- To perform common administrative tasks with management packs in your management group, see [How to import, export and remove a management pack](manage-mp-import-remove-delete.md).
 
-- If you want to create your own custom knowledge for specific alerts generated by rules or monitors from a sealed management pack, review [How to Add Knowledge to a Management Pack](manage-mp-add-knowledge.md)  
+- If you want to create your own custom knowledge for specific alerts generated by rules or monitors from a sealed management pack, review [How to Add Knowledge to a Management Pack](manage-mp-add-knowledge.md).
