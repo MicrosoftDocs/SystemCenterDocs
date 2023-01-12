@@ -38,7 +38,7 @@ This article summarizes some of the common support information you might need wh
 
 ::: moniker range="<=sc-dpm-2019"
 
--   As an Azure virtual machine - You can install DPM 2019 as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an Azure virtual machine - You can install DPM 2019 as an Azure virtual machine. There are many restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
 -   As a Windows virtual machine in VMware - You can install DPM 2019 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
 
@@ -46,7 +46,7 @@ This article summarizes some of the common support information you might need wh
 
 ::: moniker range="sc-dpm-2022"
 
--   As an Azure virtual machine - You can install DPM 2022 as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an Azure virtual machine - You can install DPM 2022 as an Azure virtual machine. There are many restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
 -   As a Windows virtual machine in VMware - You can install DPM 2022 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
 

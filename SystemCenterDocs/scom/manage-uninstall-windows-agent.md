@@ -4,7 +4,7 @@ title: Uninstall Agent from Windows-based Computers
 description: This article describes the different methods to uninstall the Operations Manager agent from Windows computers.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/07/2016
 ms.custom: na
 ms.prod: system-center
@@ -20,54 +20,54 @@ ms.topic: article
 
 ::: moniker-end
 
-Use one of the following procedures to uninstall an System Center Operations Manager agent from an agent-managed computer.
+Use one of the following procedures to uninstall a System Center Operations Manager agent from an agent-managed computer.
 
 ## Uninstall the agent by using the Operations console
 
-1.  Log on to the computer with an account that is a member of the Operations Manager Administrators role.
+1.  Sign in to the computer with an account that is a member of the Operations Manager Administrators role.
 
-2.  In the Operations console, click **Administration**.
+2.  In the Operations console, select **Administration**.
 
-3.  In the **Administration** workspace, click **Agent Managed**.
+3.  In the **Administration** workspace, select **Agent Managed**.
 
 4.  In the **Agent Managed** pane, right-click the computers for which you want to uninstall the agent, and then select **Uninstall**.
 
-5.  In the **Uninstall Agents** dialog box, either leave **Use selected Management Server Action Account** selected or do the following:
+5.  In the **Uninstall Agents** dialog, either leave **Use selected Management Server Action Account** selected or do the following:
 
     1.  Select **Other user account**.
 
-    2.  Type the **User name** and **Password**, and type or select the **Domain** from the list. Select **This is a local computer account, not a domain account** if the account is a local computer account.
+    2.  Enter the **User name** and **Password**, and enter or select the **Domain** from the list. Select **This is a local computer account, not a domain account** if the account is a local computer account.
 
         > [!IMPORTANT]
         > The account must have administrative rights on the computer or the uninstall will fail.
 
-    3.  Click **Uninstall**.
+    3.  Select **Uninstall**.
 
-6.  In the **Agent Management Task Status** dialog box, the **Status** for each selected computer changes from **Queued** to **Success**.
+6.  In the **Agent Management Task Status** dialog, the **Status** for each selected computer changes from **Queued** to **Success**.
 
     > [!NOTE]
-    > If the task fails for a computer, click the computer and read the reason for the failure in the **Task Output** text box.
+    > If the task fails for a computer, select the computer and read the reason for the failure in the **Task Output** text box.
 
-7.  Click **Close**.
+7.  Select **Close**.
 
 ## Uninstall the agent by using the MOMAgent.msi agent setup wizard
 
-1.  Log on to a managed computer with an account that is a member of the administrators security group for the computer.
+1.  Sign in to a managed computer with an account that is a member of the administrators security group for the computer.
 
-2.  In **Control Panel**, click **Uninstall a program**.
+2.  In **Control Panel**, select **Uninstall a program**.
 
-3.  In **Programs and Features**, click **Microsoft Monitoring Agent**, click **Remove**, and then click **Yes**.
+3.  In **Programs and Features**, select **Microsoft Monitoring Agent**, select **Remove**, and then select **Yes**.
 
     > [!NOTE]
     > The **Agent Setup Wizard** can also be run by double-clicking **MOMAgent.msi**, which is available on the Operations Manager installation media.
 
 ### Uninstall the agent by using MOMAgent.msi from the command line
 
-1.  Log on to the managed computer with an account that is a member of the administrators security group for the computer.
+1.  Sign in to the managed computer with an account that is a member of the administrators security group for the computer.
 
 2.  Open a command prompt.
 
-3.  At the prompt, for example, type the following:
+3.  At the prompt, for example, enter the following:
 
     **%WinDir%\System32\msiexec.exe /x \<path\>\MOMAgent.msi /qb**
 
@@ -75,9 +75,9 @@ Use one of the following procedures to uninstall an System Center Operations Man
 
 1.  Using either the Operations console method or the command line method, uninstall the agent from each node of the cluster.
 
-2.  In the Operations console, click **Administration**.
+2.  In the Operations console, select **Administration**.
 
-3.  In the **Administration** workspace, click **Agentless Managed**.
+3.  In the **Administration** workspace, select **Agentless Managed**.
 
 4.  In the **Agentless Managed** pane, locate all virtual instances for the cluster, right-click, and then select **Delete**.
 
@@ -85,8 +85,8 @@ Use one of the following procedures to uninstall an System Center Operations Man
 
 - To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](~/scom/manage-deploy-windows-agent-console.md).
 
-- If you would like to install the Nano Server agent using the Discovery Wizard, from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](~/scom/manage-deploy-windows-agent-nano.md).
+- If you would like to install the Nano Server agent using the Discovery Wizard from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](~/scom/manage-deploy-windows-agent-nano.md).
 
-- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](manage-deploy-windows-agent-manually.md).
+- To understand how to manage the configuration settings of a Windows agent and the options available, review [Configuring Windows Agents](manage-deploy-windows-agent-manually.md).
 
 - If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](manage-deploy-windows-agent-manually.md).

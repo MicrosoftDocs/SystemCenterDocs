@@ -1,6 +1,6 @@
 ---
 description: This article describes the way that you can monitor DPM.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
