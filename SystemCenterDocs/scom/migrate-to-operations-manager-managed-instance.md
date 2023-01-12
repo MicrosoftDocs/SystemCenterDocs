@@ -72,14 +72,14 @@ Below is a quick summary of what can be migrated:
 
 | Types of data visualizations | Can be migrated to SCOM Managed Instance (preview) | Recommendations |
 |---|---|---|---|---|
-| Dashboards/Views that're available in Management Pack | Yes | Operations console |
+| Dashboards/Views that are available in Management Pack | Yes | Operations console |
 | Dashboards/Views created on Operations console | Yes | Operations console |
-| Reports that're available in Management Pack | No | Power BI reports |
-| Reports that're created on Operations console | No | Power BI reports |
+| Reports that are available in Management Pack | No | Power BI reports |
+| Reports that are created on Operations console | No | Power BI reports |
 
-- For Dashboards/Views that're available in Management Pack, you can view the data similar to the one in Operations Manager on-premises (as they're built into Management Pack).
+- For Dashboards/Views that are available in Management Pack, you can view the data similar to the one in Operations Manager on-premises (as they're built into Management Pack).
 - For Dashboards/Views created on the Operations console, you need to reconfigure custom dashboards and views in SCOM Managed Instance (preview). 
-- For (SSRS) reports that're available in Management Pack and on the Operations console, you need to reconfigure all reports on Power BI as the Reporting Server doesn't exist in SCOM Managed Instance (preview).  
+- For (SSRS) reports that are available in Management Pack and on the Operations console, you need to reconfigure all reports on Power BI as the Reporting Server doesn't exist in SCOM Managed Instance (preview).  
 
 # [User roles and permissions](#tab/userrole-permission)
 
@@ -145,7 +145,7 @@ SCOM Managed Instance (preview) supports the following notification channels:
 
 Export the **Notifications Internal Library** Management pack from the Operations Manager Management Group to migrate all your notification settings and import them to SCOM Managed Instance (preview).
 
-After you migrate the notification configuration to SCOM Managed Instance (preview), copy the local files that're used in Command Channels to the same path on all Management Servers in the Notification Resource Pool. If you migrate from Operations Manager 2016, configuring Notification Channel requires additional steps.
+After you migrate the notification configuration to SCOM Managed Instance (preview), copy the local files that are used in Command Channels to the same path on all Management Servers in the Notification Resource Pool. If you migrate from Operations Manager 2016, configuring Notification Channel requires more steps.
 
 # [Groups](#tab/groups)
 
