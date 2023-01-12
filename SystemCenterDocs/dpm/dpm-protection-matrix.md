@@ -87,6 +87,7 @@ The following sections provide details of the protection support matrix for DPM:
 |Exchange|Exchange 2019, 2016|Physical server<br/><br/> Hyper-V virtual machine <br /><br />VMware virtual machine |Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG).<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG.<br/><br/> DPM 2019 doesn't support the backup of Exchange over ReFS.<br /><br /> DPM 2019 UR1 and later supports the backup of Exchange over ReFS.|
 |SharePoint|SharePoint 2019, 2016 with latest SPs|Physical server<br /><br /> Hyper-V virtual machine <br /><br />VMware virtual machine <br /><br />Azure virtual machine (when workload is running as Azure virtual machine)|Protect (all deployment scenarios): Farm, frontend web server content.<br /><br />Recover (all deployment scenarios): Farm, database, web application, file or list item, SharePoint search, frontend web server.<br /><br />DPM 2019 UR1 and later supports the backup of SharePoint over ReFS.|
 
+
 ### VM backup
 
 |Workload|Version|DPM installation|Protection and recovery|
