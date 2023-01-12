@@ -17,6 +17,8 @@ monikerRange: 'sc-om-2022'
 
 This article describes how to create reports on Power BI for Azure Monitor SCOM Managed Instance (preview).
 
+> [!VIDEO https://www.youtube.com/embed/MG5kGoe1zj0?start=215]
+
 ## Prerequisites
 
 - Azure Active Directory based authentication: 

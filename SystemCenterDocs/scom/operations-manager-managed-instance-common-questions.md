@@ -93,13 +93,13 @@ Users with the Global administrator role have access to all administrative featu
    - Compliance portal
    - Exchange Online
    - SharePoint Online
-   - Skype for Business Online.
+   - Skype for Business Online
 
 ## Other queries
 
 ### What are the charges that will be incurred during preview? 
 
-The charges that incur while running SCOM Managed Instance (preview) will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, etc.). Apart from the infrastructure charges, there will be no other IP-related charge.
+The charges that incur while running SCOM Managed Instance (preview) will be the charges of owning a subscription in Azure along with all the resources inside it (SQL MI instance, Azure VMs, and so on). Apart from the infrastructure charges, there will be no other IP-related charge.
 
 ### What if there's an error during the deployment? 
 

@@ -5,7 +5,7 @@ description: This article describes how to connect the Azure Monitor SCOM Manage
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 01/09/2023
+ms.date: 01/12/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -18,8 +18,6 @@ monikerRange: 'sc-om-2022'
 Azure Monitor SCOM Managed Instance (preview) is compatible with [System Center Operations Manager 2022](https://www.microsoft.com/download/details.aspx?id=104038).
 
 After you create the SCOM Managed Instance (preview) in Azure, connect the instance to Ops console to configure the workloads and monitor.
-
-> [!VIDEO https://www.youtube.com/embed/urxiQBkObkU]
 
 ## Connect SCOM Managed Instance (preview) to Ops console
 
@@ -42,7 +40,7 @@ Follow the below steps to connect a SCOM Managed Instance (preview) to Ops conso
 1. **Configure the Gateway Server**: When you install the Gateway Server, enter the following:
    - *Management Group Name*: The name of the SCOM Managed Instance (preview).
    - *Management Server Name*: The FQDN of the Management Server that you would link the gateway server to. 
-    You can set the second management server in SCOM Managed Instance (preview) as a failover server so that the gateway server can fail over to it when the primary management server stops working. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). Setting up the failover management server is a command-line based setup and needs to run from where you have the System Center Operations Manager shell or the management server.
+    You can set the second management server in SCOM Managed Instance (preview) as a failover server so that the gateway server can fail over to it when the primary management server stops working. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). Setting up the failover management server is a command-line-based setup and needs to run from where you've the System Center Operations Manager shell or the management server.
 
 1. **Install Agents**: Open the ports 5723/135/138/445 and [install your agents](/system-center/scom/manage-deploy-windows-agent-console?view=sc-om-2019&preserve-view=true).
 
