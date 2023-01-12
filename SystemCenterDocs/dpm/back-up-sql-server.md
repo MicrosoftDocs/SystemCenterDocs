@@ -5,11 +5,12 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 11/15/2022
+ms.date: 12/19/2022
 title: Back up SQL Server with DPM
 ms.technology: data-protection-manager
 ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
 ms.author: jsuri
+ms.custom: engagement-fy23
 ---
 
 # Back up SQL Server with DPM
@@ -63,7 +64,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 ## Prerequisites and limitations
 
--   If you have a database with files on a remote file share, protection will fail with Error ID 104. DPM doesn't support protection for SQL Server data on a remote file share.
+-   If you've a database with files on a remote file share, protection will fail with Error ID 104. DPM doesn't support protection for SQL Server data on a remote file share.
 
 -   DPM can't protect databases that are stored on remote SMB shares.
 
@@ -97,10 +98,10 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
     > [!NOTE]
     >   -   Backups can happen from any readable replica, i.e., primary, synchronous secondary, asynchronous secondary.
-    >  -   If any replica is excluded from backup (for example, Exclude Replica is enabled or is marked as not readable), then that replica will not be selected for backup under any of the options.
+    >  -   If any replica is excluded from backup (for example, Exclude Replica is enabled or is marked as not readable), then that replica won't be selected for backup under any of the options.
     >  -   If multiple replicas are available and readable, then the node with the highest backup priority will be selected for backup.
     >  -   If the backup fails on the selected node, then the backup operation fails.
-    >  -   Recovery to the original location is not supported.
+    >  -   Recovery to the original location isn't supported.
 
 -   SQL Server 2014 or above backup issues:
 
@@ -135,16 +136,16 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 3.  In **Select Group Members**, select the SQL Server instances on the server you want to protect.  Learn more in [Deploy protection groups](create-dpm-protection-groups.md). 
 
 > [!NOTE]
->    -  You have the option of selecting protection at the instance level or protection of individual databases.
->    -   When you are protecting at the instance level, any database that is added to that instance of SQL Server will automatically be added to DPM protection.
->    -   If you are using SQL Server AlwaysOn availability groups, you can create a protection group that contains the availability groups. DPM detects the availability groups and will displays them under **Cluster Group**. Select the whole group to protect it so that any databases that you add to the group are protected automatically, or select individual databases. For each instance of SQL Server, you can also run a system state backup or full bare metal backup. This in useful if you want to be able to recover your whole server and not just data.
+>  -  You've the option of selecting protection at the instance level or protection of individual databases.
+>  -  When you are protecting at the instance level, any database that is added to that instance of SQL Server will automatically be added to DPM protection.
+>  -  If you are using SQL Server AlwaysOn availability groups, you can create a protection group that contains the availability groups. DPM detects the availability groups and will displays them under **Cluster Group**. Select the whole group to protect it so that any databases that you add to the group are protected automatically, or select individual databases. For each instance of SQL Server, you can also run a system state backup or full bare metal backup. This in useful if you want to be able to recover your whole server and not just data.
 
 4.  In **Select data protection method**,  specify how you want to handle short- and long-term backup. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud, you can also configure long-term backup to a standalone tape device or tape library connected to the DPM server.
 
 5.  In **Select short-term goals**, specify how you want to back up to short-term storage on disk. In **Retention range**, you specify how long you want to keep the data on disk. In **Synchronization frequency**, you specify how often you want to run an incremental backup to disk. If you don't want to set a backup interval, you can select **Just before a recovery point** so that DPM will run an express full backup just before each recovery point is scheduled.
 
     > [!NOTE]
-    > SQL Server databases that are log-shipped, in read-only mode, or that use the simple recovery model do not support incremental backup. Recovery points are created for each express full backup only. For all other SQL Server databases, synchronization transfers a transaction log backup, and recovery points are created for each incremental synchronization and express full backup. The transaction log is a serial record of all the transactions that have been performed against the database since the transaction log was last backed up.
+    > SQL Server databases that are log-shipped, in read-only mode, or that use the simple recovery model don't support incremental backup. Recovery points are created for each express full backup only. For all other SQL Server databases, synchronization transfers a transaction log backup, and recovery points are created for each incremental synchronization and express full backup. The transaction log is a serial record of all the transactions that have been performed against the database since the transaction log was last backed up.
 
 6.  If you want to store data on tape for long-term storage, in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In Frequency of backup, specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
@@ -227,9 +228,9 @@ Configure self-service SQL Server recovery as follows:
 > [!NOTE]
 > When you enable users of a DPM role to recover all SQL Server databases on an instance of the SQL Server, those users can also recover any SQL Server databases that are subsequently added to the instance. When you enable access by using DPM roles, ensure that all members of the role have been granted appropriate permission to view and access all the databases.
 
-5.  On the **Recovery Target Locations** page,  to restrict recovery locations for role users, select **Allow users to recover the databases to another instance of SQL Server** and specify one or more recovery target locations and file paths that are allowed. If you want to allow any path on an instance, then don't specify a value in **Recovered File Path**. If you enable the setting, users can recover database files to any location for which they have the write permission. However, users can't overwrite the original database files, and the DPM Self-Service Recovery Tool (SSRT) for SQL Server blocks them if they attempt to do so.
+5.  On the **Recovery Target Locations** page,  to restrict recovery locations for role users, select **Allow users to recover the databases to another instance of SQL Server** and specify one or more recovery target locations and file paths that are allowed. If you want to allow any path on an instance, then don't specify a value in **Recovered File Path**. If you enable the setting, users can recover database files to any location for which they've the write permission. However, users can't overwrite the original database files, and the DPM Self-Service Recovery Tool (SSRT) for SQL Server blocks them if they attempt to do so.
 
-6.  In addition, on the computer from which self-service recovery will run, ensure that at least .NET framework 3.5 is installed and the DPM Self-Service Recovery Tool is installed. The tool is available in the DPM product installation location in the **DpmSqlEURInstaller** folder.
+6.  In addition, on the computer from which self-service recovery will run, ensure that at least .NET framework 4.5 is installed and the DPM Self-Service Recovery Tool is installed. The tool is available in the DPM product installation location in the **DpmSqlEURInstaller** folder.
 
 ::: moniker-end
 

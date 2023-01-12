@@ -19,6 +19,7 @@ ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
 
 ::: moniker-end
 
+
 The method System Center Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It's intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers disk-based protection processes, tape-Based protection processes, recovery process, and the protection policy.
 
 ## Disk-based protection process
@@ -69,6 +70,7 @@ During the type of synchronization that is labeled express full backup in DPM Ad
 Each express full backup creates a recovery point for application data. If the application supports incremental backups, each synchronization also creates a recovery point. The synchronization type supported by each type of application data is summarized as follows:
 
 - For protected Exchange data, synchronization transfers an incremental VSS snapshot using the Exchange VSS writer. Recovery points are created for each synchronization and express full backup.
+
 
 - SQL Server databases that are log-shipped, in read-only mode, or that use the simple recovery model don't support incremental backup. Recovery points are created for each express full backup only. For all other SQL Server databases, synchronization transfers a transaction log backup, and recovery points are created for each incremental synchronization and express full backup. The transaction log is a serial record of all the transactions that have been performed against the database since the transaction log was last backed up.
 
@@ -151,7 +153,7 @@ Recovery point schedule establishes how many recovery points of this protection 
 
 ## Auto discovery process
 
-Auto discovery is the daily process by which DPM automatically detects new or removed computers on the network. Once a day, at a time that you can schedule, DPM sends a small packet (less than 10 kilobytes) to the closest domain controller. The domain controller responds to the LDAP request with the computers in that domain, and DPM identifies new and removed computers. The network traffic created by the auto discovery process is minimal.
+Auto discovery is the daily process by which DPM automatically detects new or removed computers on the network. Once a day, at a time that you can schedule, DPM sends a small packet (less than 10 kilobytes) to the closest domain controller. The domain controller responds to the Lightweight Directory Access Protocol (LDAP) request with the computers in that domain, and DPM identifies new and removed computers. The network traffic created by the auto discovery process is minimal.
 
 Auto discovery doesn't discover new and removed computers in other domains. To install a protection agent on a computer in another domain, you must identify the computer by using its fully qualified domain name.
 
