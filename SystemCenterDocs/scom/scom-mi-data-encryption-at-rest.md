@@ -23,9 +23,9 @@ This article discusses the SCOM Managed Instance (preview) components protecting
 
 ## SCOM Managed Instance (preview) components for Azure Encryption at Rest 
 
-The goal of encryption at rest is that data that is persisted on disk is encrypted with a secret encryption key. To achieve that goal, secure key creation, storage, access control, and management of the encryption keys must be provided.   
+The goal of encryption at rest is that data that is persisted on disk is encrypted with a secret encryption key. To achieve that goal, secure key creation, storage, access control, and management of the encryption keys must be provided.
 
-SCOM Managed Instance (preview) service doesn't store any customer details. SCOM Managed Instance (preview) uses different persistence storage such as Key vault, Storage account, and Cosmos Database to store service metadata. 
+SCOM Managed Instance (preview) service doesn't store any customer details. SCOM Managed Instance (preview) uses different persistence storage, such as Key vault, Storage account, and Cosmos Database, to store service metadata.
 
 ### Azure Key Vault 
 
