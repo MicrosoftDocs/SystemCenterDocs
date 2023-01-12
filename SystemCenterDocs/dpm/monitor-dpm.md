@@ -98,9 +98,10 @@ All DPM-A customers (customers connected to Azure) have the flexibility of using
 1.	Sign in to [Azure portal](https://ms.portal.azure.com/#home).
 2.	[Create a Recovery Service vault](/azure/backup/backup-azure-vms-first-look-arm#back-up-from-azure-vm-settings), or if you already have one, select the same.
 3.	Select **Diagnostic Settings** under **Monitoring** section.
+
     ![Screenshot of Diagnostics settings.](./media/monitor-dpm/diagnostic-settings.png)
 4. Select **Turn on Diagnostic Settings**.
-5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](/azure/azure-monitor/learn/quick-create-workspace), select the relevant log *AzureBackupReport*, and select **Save**.
+5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport*, and select **Save**.
 
     > [!NOTE]
     > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
@@ -145,7 +146,7 @@ All DPM-A customers (customers connected to Azure) have the flexibility of using
 
 ## Back up items in Recovery Services vault
 
-You can monitor the backed-up items using Recovery Services vault. From the Recovery Services vault, navigate to **Backup items** to view the number of items backed up for each workload type associated with the vault. Select the workload item to view the detailed list of all the items backed up for the selected workload.
+You can monitor the backed-up items using Recovery Services vault. From the Recovery Services vault, navigate to **Backup items** to view the number of items backed-up for each workload type, associated with the vault. Select the workload item to view the detailed list of all items backed-up for the selected workload.
 
 Here's a sample view:
 
