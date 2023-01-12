@@ -19,6 +19,8 @@ Addition or deletion of a management server to the existing System Center Operat
 
 This article provides information on how to scale your SCOM Managed Instance (preview).
 
+> [!VIDEO https://www.youtube.com/embed/MG5kGoe1zj0?start=63]
+
 ## Scale In/Out the management servers
 
 To scale In/Out the management servers, follow these steps:

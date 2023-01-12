@@ -24,8 +24,8 @@ This article describes the errors that might occur when you deploy or use Azure 
 1.	Ensure all the prerequisites are met. Creation issues may arise due to improper/incomplete prerequisites.
 2.	Ensure you read/check the error message carefully. The error messages capture the issue/error in creation.
 3.	Check the **SCOM Setup logs** link provided in the error message. Select the link to download the System Center Operations Manager setup logs.
-4.	If you're unable to identify the issue with the above steps, login to the Virtual Machine Scale Sets instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
-5. If the issue persists, raise a support ticket with all relevant details [`correlation-id`, `subscription-id`, etc.,]
+4.	If you're unable to identify the issue with the above steps, sign in to the Virtual Machine Scale Sets instance and check the logs under *C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.SCOMMIServer.ScomServerForWindows\1.0.66*, which helps you identify the issue.
+5. If the issue persists, raise a support ticket with all relevant details [`correlation-id`, `subscription-id`, and so on]
 
 
 ### Issue: Resource group `%ResourceGroupName%` is managed by other Azure resource
