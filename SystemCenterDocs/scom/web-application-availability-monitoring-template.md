@@ -28,7 +28,7 @@ Use the  **Web Application Availability Monitoring**  template in scenarios wher
 
 ## Internal locations
 
-You might have web applications that must be available at all times at internal locations. Use the  **Web Application Availability Monitoring**  template to see which web applications are available from which internal locations.
+You might have web applications that must always be available at internal locations. Use the  **Web Application Availability Monitoring**  template to see which web applications are available from which internal locations.
 
 ## Monitoring Performed by the Web Application Availability Monitoring Template
 
@@ -169,7 +169,7 @@ The following options are available on the  **Test Results Details**  tab of the
 | --- | --- |
 | Details tab: URL | See detailed information about the test. Displays which URL was tested. |
 | Details tab: Result | Displays whether the test request was processed successfully or not. |
-| Details tab: DNS resolution time (milliseconds) | Displays the DNS resolution time which checks that website performs as you expected it to. What's the IP address of the URL you're monitoring. Time it takes for DNS to get the IP address for the website. |
+| Details tab: DNS resolution time (milliseconds) | Displays the DNS resolution time, which checks that the website performs as you expected it to. What's the IP address of the URL you're monitoring. Time it takes for DNS to get the IP address for the website. |
 | Details tab: Total response time (milliseconds) | Displays the Total response time from same as transaction time performance counter. |
 | Details tab: HTTP status code | Displays the HTTP status code when you ping a website, you get a status code. |
 | Details tab: Response body size (bytes) | Displays the Response body size of the HTTP response information. |
@@ -219,9 +219,9 @@ The following options are available on the  **Change Configuration for Test Set*
 | Option | Description |
 | --- | --- |
 | Test Frequency/Performance Data Collection Interval: Test frequency | Enter how often you want to run each test. |
-| Test Frequency/Performance Data Collection Interval: Performance data collection interval | Enter the frequency with which you want to collect performance data. This specifies whether you want to collect performance data every interval or not. For example, if the interval is 10 minutes and the collection interval is set to 2, this means that performance data will be collected every other interval, or once every 20 minutes. |
+| Test Frequency/Performance Data Collection Interval: Performance data collection interval | Enter the frequency with which you want to collect the performance data. This specifies whether you want to collect the performance data every interval or not. For example, if the interval is 10 minutes and the collection interval is set to 2, this means that the performance data will be collected every other interval, or once every 20 minutes. |
 | Test Frequency/Performance Data Collection Interval: Test time-out | Enter how long you want the test to keep a request active until the test times out and cancels. |
-| Alerts: Criteria for error health state: Transaction response time | Specify if transaction response time is a factor that should or shouldn't generate an error health state. If it's specified to generate an error health state, set the threshold in seconds that a transaction must exceed before it generates an error health state. |
+| Alerts: Criteria for error health state: Transaction response time | Specify if the transaction response time is a factor that should or shouldn't generate an error health state. If it's specified to generate an error health state, set the threshold in seconds that a transaction must exceed before it generates an error health state. |
 | Alerts: Criteria for error health state: Request (Base page): HTTP status code | Specify if the HTTP status code is a factor that should or shouldn't generate an error health state. If it's specified to generate an error health state, set the HTTP status code to the number for which you want it to generate an error health state. |
 | Alerts: Criteria for error health state: Request (Base page): Content match | Specify if any content matches should or shouldn't generate an error health state. If it's specified to generate an error health state, specify the content you wish to match. |
 | Alerts: Criteria for error health state: Request (Base page): Check for redirects | Specify if the presence of redirects should or shouldn't generate an error health state. |
@@ -229,7 +229,7 @@ The following options are available on the  **Change Configuration for Test Set*
 | Alerts: Criteria for warning health state: Request (Base page): HTTP status code | Specify if the HTTP status code should or shouldn't generate a warning health state. If it's specified to generate warning health state, set the HTTP status code to the number for which you want it to generate a warning health state. |
 | Alerts: Criteria for warning health state: Request (Base page): Content match | Specify if any content matches should or shouldn't generate a warning health state. If it's specified to generate a warning health state, specify the content you wish to match. |
 | Alerts: Criteria for warning health state: Request (Base page): check for redirects | Specify if the presence of redirects should or shouldn't generate a warning health state. |
-| Alerts: Number of consecutive time a criteria should fail before an alert is generated | Specify the number of consecutive times selected criteria in the Alerts section list should fail before an alert is generated. |
+| Alerts: Number of consecutive times a criteria should fail before an alert is generated | Specify the number of consecutive times selected criteria in the Alerts section list should fail before an alert is generated. |
 | Alerts: Generate alerts from each test | Select to receive an alert for each URL test for an application. |
 | Alerts: Generate a single summary alert | Select to receive a summary alert for an application, rather than choosing to receive an alert for each URL test for an application. This is helpful if you're monitoring a vertical website or an application because this will reduce the number of alerts you receive and keep the focus of your alerts the overall state of the application. <br>You can further reduce alerts by raising the threshold for how many failures you want to have before receiving an alert. Together, these two approaches will focus your alerts on what is most important to you: How well the application is running, given the performance you require.</br> |
 | Performance Collection: Transaction response time | Cumulative response time: DNS\_RESOLUTION\_TIME + TCP\_CONNECT\_TIME + TIME\_TO\_LAST\_BYTE |

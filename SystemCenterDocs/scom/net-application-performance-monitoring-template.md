@@ -203,7 +203,7 @@ The following options are available on the  **Server-Side Modifying Settings**  
 
 ## Application types and server-side transactions you can monitor
 
-For each application type there are several transaction types you can choose to monitor. The following options are available:
+For each application type, there are several transaction types you can choose to monitor. The following options are available:
 
 | Application type | Transaction types for System Center 2012 | Transaction types for System Center 2012 SP1 |
 | --- | --- | --- |

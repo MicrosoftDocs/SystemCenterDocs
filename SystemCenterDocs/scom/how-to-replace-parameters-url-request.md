@@ -98,7 +98,7 @@ To determine where in the response body the search term appears, you can view th
 
 ![Illustration of the Bing Popular Now Search String.](./media/bing-popular-now-search-string.png)
 
-You could just pull out the term itself, but it's more straightforward to include the entire string in the parameter. This string is preceded by the characters  **\<h3>Popular now\</h3>\<ul>\<li>\<a href=>**  and ends with the next occurrence of  **"**. Those are the values that you will use when you define the parameter extraction.
+You could just pull out the term itself, but it's more straightforward to include the entire string in the parameter. This string is preceded by the characters  **\<h3>Popular now\</h3>\<ul>\<li>\<a href=>**  and ends with the next occurrence of  **"**. Those are the values that you'll use when you define the parameter extraction.
 
 ### To record a sample web application
 
