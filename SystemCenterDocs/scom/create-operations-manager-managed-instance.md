@@ -4,8 +4,8 @@ title: Create an Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to create an Azure Monitor SCOM Managed Instance (preview) to monitor workloads using System Center Operations Manager functionality on Azure.
 author: v-pgaddala
 ms.author: v-pgaddala
-manager: jsuri
-ms.date: 01/10/2023
+manager: mkluck
+ms.date: 12/23/2022
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -39,7 +39,7 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 
 >[!Note]
 >- To perform active directory operations, install **Active directory users and computers** tool. Before you install this tool, install **RSAT: Active Directory Domain Services and Lightweight Directory Tools** feature. This tool can be installed on any machine that has domain connectivity. You must sign in to this tool with some admin permissions to perform all active directory operations.
->- To perform operation on DNS server, you need to sign in to DNS server and run **DNS manager** tool.
+>- To perform operations on DNS server, you need to sign in to DNS server and run the **DNS manager** tool.
 
 ## Establish direct connectivity (line-of-sight) between your Domain Controller and Azure network
 
@@ -48,7 +48,7 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 - If your Domain Controller and all other components are in Azure (a conventional Domain Controller and not Azure Active Directory) with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't required). If you're using one VNet to host all your components, you'll already have a line-of-sight between all your components. If you've multiple VNets, you'll need to do VNet peering between all the VNets that are in your network. For more information, see  [VNet peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 - Allow ports 5723/5724/443 to communicate while talking from SCOM Managed Instance (preview) to the VMs being monitored and vice versa.
 - We recommend a NAT gateway for outbound Internet access from subnets. Edit the subnet to add a NAT gateway. For more information, see [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
-    - In Azure, Add  NAT gateway to Subnet (VNET/Subnet) where SCOM Managed Instance (preview) is going to be created. A NAT gateway is needed for outbound Internet access from subnets. For more information, see  [Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview).
+    - In Azure, add NAT gateway to Subnet (VNET/Subnet) where SCOM Managed Instance (preview) is going to be created. A NAT gateway is needed for outbound Internet access from subnets. For more information, see  [Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview).
         - To create a NAT gateway, follow these steps:
             - Create NAT gateway in the same region where the VNet is present.
             - Create NAT gateway in the same subscription used for SCOM Managed Instance (preview).
@@ -79,7 +79,7 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 
 ## Create a static IP and configure the DNS name
 
-- For all the System Center Operations Manager components, to communicate with the load-balancer that will be created by the SCOM Managed Instance (preview) service. You need a static IP and DNS name for the load-balancer front-end configuration.
+- For all the System Center Operations Manager components to communicate with the load-balancer that will be created by the SCOM Managed Instance (preview) service, you need a static IP and DNS name for the load-balancer front-end configuration.
 - Ensure that the static IP is in the subnet that was created during VNet creation, and it will be used during the creation of an instance.
 - Create a DNS name (as per your organization policy) for the static IP.
      :::image type="DNS manager" source="media/create-operations-manager-managed-instance/dns-manager.png" alt-text="Screenshot of DNS manager.":::
@@ -97,7 +97,7 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
     - ContosoServerGroup = Computer group in AD (specified previously)
     - MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB = Service Principal names 
 
-- Use the below command, if the root key isn't effective:
+- Use the below command if the root key isn't effective:
  
     ```powershell
     Add-KdsRootKey -EffectiveTime ((get-date).addhours(-10)) 
@@ -178,7 +178,7 @@ To provide the permissions, do the following:
 
 1. Open SQL MI and select **Access Control (IAM)**. In the top menu, select **+Add** > **Add role assignment**.
      :::image type="Access control" source="media/create-operations-manager-managed-instance/access-control.png" alt-text="Screenshot of access control.":::
-1. In **Add role assignment** page, do the following:
+1. In the **Add role assignment** page, do the following:
     - **Role**: Select **Reader** from the dropdown.
     - **Assign access to**: Select **User, group, or service principal** from the dropdown.
     - **Select**: Enter **Microsoft.SCOM Resource Provider**
@@ -197,7 +197,7 @@ For more information on Directory Readers role, see [Directory Readers role in A
 1.	Open the SQL MI. Under **Settings**, select **Active Directory admin**.
      :::image type="Active directory admin" source="media/create-operations-manager-managed-instance/active-directory-admin.png" alt-text="Screenshot of Active directory admin.":::
 
-2.	Select **Set admin**, search for your MSI (the same MSI that you provided during the SCOM Managed Instance (preview) creation flow). You will find the admin added to the SQL MI.
+2.	Select **Set admin**, and search for your MSI (the same MSI that you provided during the SCOM Managed Instance (preview) creation flow). You'll find the admin added to the SQL MI.
      :::image type="Azure Active directory admin" source="media/create-operations-manager-managed-instance/azure-active-directory.png" alt-text="Screenshot of Azure Active directory admin.":::
 
 3.	If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Ensure to provide the necessary permissions before you create your instance, else your instance creation will fail.
@@ -328,12 +328,12 @@ To create a SCOM Managed Instance (preview), follow these steps:
 
           :::image type="content" source="./media/create-operations-manager-managed-instance/secret-password-mapping-inline.png" alt-text="Screenshot showing password mapping for create a secret." lightbox="./media/create-operations-manager-managed-instance/secret-password-mapping-expanded.png":::
 
-    1. **Azure Hybrid Benefit**: By default, **No** is selected. Select **Yes** if you're using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview), and it won't apply to existing Windows Servers.
+    1. **Azure Hybrid Benefit**: By default, **No** is selected. Select **Yes** if you're using a Windows Server license for your existing servers. This license is only applicable for the Windows Servers that will be used while creating VMs for the SCOM Managed Instance (preview), and it won't apply to the existing Windows Servers.
            :::image type="Azure hybrid benefit" source="media/create-operations-manager-managed-instance/azure-hybrid-benefit.png" alt-text="Screenshot showing Azure hybrid benefit.":::
 1. Select **Next**.
 1. Under **Networking**, do the following:
     1. **Virtual network**:
-        1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server. 
+        1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads you want to monitor and to your domain controller + DNS server.
         1. **Subnet**: Select a subnet that has at least 32 IP addresses to house all the SCOM Managed Instance (preview) components. The minimum address space is 28. The subnet can have existing resources in it; however, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the instance.
            >[!Note]
            >Ensure that you have a NAT Gateway associated with the subnet you choose.
@@ -347,7 +347,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
 1. Select **Next**.
 1. Under **Database**, do the following:
     1. **SQL managed instance**:
-        1. **Resource Name**: Select the SQL MI resource name for the instance that you would like to associate with this SCOM Managed Instance (preview). Only the SQL MI instance, which has given permissions to the SCOM Managed Instance (preview) should be used here. For more information, see SQL MI creation and permission.
+        1. **Resource Name**: Select the SQL MI resource name for the instance that you would like to associate with this SCOM Managed Instance (preview). Only the SQL MI instance, which has given permissions to the SCOM Managed Instance (preview), should be used here. For more information, see SQL MI creation and permission.
     1. **User managed Identity**:
         1. **User managed identity account**: Select the Managed Identity that you created and provided Admin permissions to the SQL MI. Ensure the same MSI has read permissions on the key vault for domain account credentials.
 1. Select **Next**.
@@ -357,8 +357,8 @@ To create a SCOM Managed Instance (preview), follow these steps:
 1. Select **Next**.
 1. Under **Review + Submit**, review all the inputs given so far and select **Create**. Your deployment will now be created on Azure, and it takes up to an hour for the creation of a SCOM Managed Instance (preview). 
 
-    >[!Note]    
-    >If the deployment fails, delete the instance and all associated resources, and recreate the instance again. For more information, see [delete the instance and its resources](./operations-manager-managed-instance-common-questions.md#what-is-the-procedure-to-delete-an-instance).
+    >[!Note]
+    >If the deployment fails, delete the instance and all the associated resources, and recreate the instance again. For more information, see [delete the instance and its resources](./operations-manager-managed-instance-common-questions.md#what-is-the-procedure-to-delete-an-instance).
 
 1. After the deployment is completed, select **Go to resource**.
      On the instance page, you can view some of the essential details and instructions to post-deployment steps/raise bugs appear.
