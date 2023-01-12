@@ -5,7 +5,7 @@ description: This article describes how to migrate from Operations Manager on-pr
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 01/09/2023
+ms.date: 01/12/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -16,8 +16,6 @@ monikerRange: 'sc-om-2022'
 # Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)
 
 This article provides detailed information on how you can migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview).
-
-> [!VIDEO https://www.youtube.com/embed/lOlUq72wWag]
 
 Provided the procedure for the following artifacts as an example:
 
