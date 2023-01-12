@@ -46,7 +46,7 @@ The default list of exception handlers includes:
 2. Right-click the application group you want to modify, and then select  **Properties**.
 3. On the  **Server-Side Defaults**  tab, select  **Advanced Settings**.
 4. On the  **Advanced settings**  page, select  **Critical Exceptions**  to open the  **Exception handlers list**  page. This is where you can add exception handlers.
-5. To add an exception handler, select  **Add**  and enter the method you want to add to the exception handlers list. If you want this exception handler to effect monitoring, ensure the  **Enable monitoring**  checkbox is selected. Select  **OK**.
+5. To add an exception handler, select  **Add**  and enter the method you want to add to the exception handlers list. If you want this exception handler to affect monitoring, ensure the  **Enable monitoring**  checkbox is selected. Select  **OK**.
 
     > [!Important]
     > Adding handlers that are defined in the .NET Framework as part of mscorlib as Critical Exceptions won't produce any effect.

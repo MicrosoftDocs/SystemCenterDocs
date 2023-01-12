@@ -80,9 +80,9 @@ The following options are available on the  **Query Performance**  page of the w
 
 | Option | Description |
 | --- | --- |
-| Connection time in milliseconds | If selected, the values  **Error Threshold**  and  **Warning Threshold**  provide the number of milliseconds for the connection when the monitor enters that state and an alert is generated. If not selected, the connection time is not monitored. |
-| Query time in milliseconds | If selected, the values  **Error Threshold**  and  **Warning Threshold**  define the number of milliseconds the query can run before the monitor enters that state and generates an alert. If not selected, the time to run the query is not monitored. If a query is not provided, this option is not available. |
-| Fetch time in milliseconds | If selected, the values  **Error Threshold**  and  **Warning Threshold**  define the number of milliseconds to retrieve the results of the query before the monitor enters that state and generates an alert. If not selected, the time to retrieve the results of the query is not monitored. If a query is not provided, this option is not available. |
+| Connection time in milliseconds | If selected, the values  **Error Threshold**  and  **Warning Threshold**  provide the number of milliseconds for the connection when the monitor enters that state and an alert is generated. If not selected, the connection time isn't monitored. |
+| Query time in milliseconds | If selected, the values  **Error Threshold**  and  **Warning Threshold**  define the number of milliseconds the query can run before the monitor enters that state and generates an alert. If not selected, the time to run the query isn't monitored. If a query isn't provided, this option isn't available. |
+| Fetch time in milliseconds | If selected, the values  **Error Threshold**  and  **Warning Threshold**  define the number of milliseconds to retrieve the results of the query before the monitor enters that state and generates an alert. If not selected, the time to retrieve the results of the query isn't monitored. If a query isn't provided, this option isn't available. |
 
 ## Watcher Nodes
 
@@ -95,7 +95,7 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 
 ## Security considerations
 
-The  **OLE DB Data Source**  template creates two Run As profiles. The name for each of these profiles starts with the name that you provided in the template and is followed by "Simple Authentication Profile" and "Synthetic Transaction Profile". If no Run As account is added to either of these profiles, the Default Action Account for each watcher node is used to connect the database and run the query. If the Default Action Account does not have access to the database that is being monitored, the connection fails. You can specify either integrated security or simple authentication by creating a Run As account and adding it to the appropriate Run As profile that the  **OLE DB Data Source** template created.
+The  **OLE DB Data Source**  template creates two Run As profiles. The name for each of these profiles starts with the name that you provided in the template and is followed by "Simple Authentication Profile" and "Synthetic Transaction Profile". If no Run As account is added to either of these profiles, the Default Action Account for each watcher node is used to connect the database and run the query. If the Default Action Account doesn't have access to the database that is being monitored, the connection fails. You can specify either integrated security or simple authentication by creating a Run As account and adding it to the appropriate Run As profile that the  **OLE DB Data Source** template created.
 
 When you run the  **OLE DB Data Source**  template, it creates two Run As profiles. The name for each starts with the  **Name**  that you provided when you ran the template. The  **OLE DB Synthetic Transaction Profile**  is used when you want to use integrated security for the database connection. The  **OLE DB Simple Authentication Profile**  is used when you want to use simple authentication for the database connection.
 
@@ -126,12 +126,12 @@ Simple authentication lets you connect to the database by using a simple name an
      > [!NOTE]
      > The test is performed on the workstation that you're using to run the template. If this workstation can't access the database, this test fails. When the template is completed, the query is run from the watcher nodes that you specify.
 
-12. Select  **Next**  when you have validated your connection string and query.
+12. Select  **Next**  when you've validated your connection string and query.
 13. Select the measurements that you want to monitor and set an error and warning threshold for each. Select  **Next**.
 14. Select one or more [Watcher Nodes](/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29) to run the monitor.
 15. Specify the frequency to run the monitor in the  **Run this query**  box. Select  **Next**.
 16. Review the summary of the monitor, and select  **Create**.
-17. If a Run As account with credentials that have access to the database does not exist, create an appropriate Run As account in the  **Administration**  workspace. For more information, see [How to Create a Run As Account](/previous-versions/system-center/system-center-2012-R2/hh321655%28v%3dsc.12%29).
+17. If a Run As account with credentials that have access to the database doesn't exist, create an appropriate Run As account in the  **Administration**  workspace. For more information, see [How to Create a Run As Account](/previous-versions/system-center/system-center-2012-R2/hh321655%28v%3dsc.12%29).
 
      > [!NOTE]
      > To create and modify a Run As account, you must have administrative credentials for the management group.

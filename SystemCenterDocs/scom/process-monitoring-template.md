@@ -90,7 +90,7 @@ The following options are available on the  **Running Processes**  page of the w
 
 | Option | Description |
 | --- | --- |
-| Generate an alert of the number of processes is below the minimum value or above the maximum value for longer than the specified duration | If selected, the monitor is set to a critical state, and an alert is created if the number of instances of the specified process is less than the specified minimum or greater than the specified maximum for a longer period than the specified duration.To ensure that at least one instance of the process is running, set both the minimum and maximum to 1. |
+| Generate an alert of the number of processes is below the minimum value or above the maximum value for longer than the specified duration | If selected, the monitor is set to a critical state, and an alert is created if the number of instances of the specified process is less than the specified minimum or greater than the specified maximum for a longer period than the specified duration. To ensure that at least one instance of the process is running, set both the minimum and maximum to 1. |
 | Minimum number of processes | The minimum number of processes that should be running. |
 | Maximum number of processes | The maximum number of processes that should be running. |
 | Duration | Specifies how long the number of running processes must exceed the specified range before the monitor is set to a critical state. Don't set this value to less than 1 minute. |
@@ -106,7 +106,7 @@ The following options are available on the  **Performance Data**  page of the wi
 | CPU Usage (percentage) | If CPU utilization is monitored, this option sets the threshold. If the percentage of total CPU usage exceeds the threshold, the object is set to an error state, and an alert is generated. |
 | Generate an alert if memory usage exceeds the specified threshold | Specifies if memory usage of the process should be monitored. A monitor will be created to set an error state on the object, and generate an alert when the specified threshold is exceeded. A rule is created to collect CPU usage for analysis and reporting. |
 | Memory Usage (MB) | If memory usage is monitored, this option sets the threshold. If the disk space in megabytes (MB) of total CPU usage exceeds the threshold, the object is set to an error state, and an alert is generated. |
-| Number of samples | If CPU usage or memory is monitored, this option specifies the number of consecutive performance samples that must be exceeded before the object is set to an error state, and an alert is generated. Specifying a number greater than 1 for this option limits the noise from monitoring by ensuring that an alert isn't generated when the service only briefly exceeds the threshold. The larger the value that you set, the longer the period of time before you are alerted to a problem. A typical value is 2 or 3. |
+| Number of samples | If CPU usage or memory is monitored, this option specifies the number of consecutive performance samples that must be exceeded before the object is set to an error state, and an alert is generated. Specifying a number greater than 1 for this option limits the noise from monitoring by ensuring that an alert isn't generated when the service only briefly exceeds the threshold. The larger the value that you set, the longer the period of time before you're alerted to a problem. A typical value is 2 or 3. |
 | Sampling interval | If CPU usage or memory is monitored, specify the length of time between performance samples.A smaller value for this option reduces the time for detecting a problem but increases overhead on the agent and the amount of data collected for reporting. A typical value is between 5 and 15 minutes. |
 
 ## Additional monitoring
@@ -123,7 +123,7 @@ In addition to performing the specified monitoring, the  **Process Monitoring** 
 
    - If you only want the process to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
 
-   - If the process that you are monitoring is in a cluster, create a group with objects of the class **Virtual Server** representing the nodes of the cluster that contain the service.
+   - If the process that you're monitoring is in a cluster, create a group with objects of the class **Virtual Server** representing the nodes of the cluster that contain the service.
 
 2. Start the Add Monitoring wizard.
 3. On the  **Select Monitoring Type**  page, select  **Process Monitoring** , and select  **Next**.

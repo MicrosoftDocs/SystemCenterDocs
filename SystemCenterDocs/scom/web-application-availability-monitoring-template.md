@@ -4,7 +4,7 @@ title: Web Application Availability Monitoring template in Operations Manager ma
 description: This article provides an overview of web application availability monitoring template
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center
@@ -24,7 +24,7 @@ The  **Web Application Availability Monitoring**  template lets you create avail
 
 ## Scenarios
 
-Use the  **Web Application Availability Monitoring**  template in scenarios where you have to monitor web-based applications from different locations to see if they are working according to certain requirements, which you can specify.
+Use the  **Web Application Availability Monitoring**  template in scenarios where you've to monitor web-based applications from different locations to see if they are working according to certain requirements, which you can specify.
 
 ## Internal locations
 
@@ -62,33 +62,33 @@ By default, the  **Web Application Availability Monitoring**  template configure
 
 ## Viewing monitoring data
 
-All data collected by the  **Web Application Availability Monitoring**  template appears in the  **Web Application Availability Monitoring**  folder in the  **Application Monitoring**  folder in the  **Monitoring**  navigation pane. The  **Application Availability Monitoring**  folder contains the default views and subfolders that provide Test State, Web Application Status, and alerts related to the tests being monitored. By using the Test State view, you can see the test state of the individual tests. The state of each object matches the state of the targeted object that has the worst health state so that you see the worst state of the monitors that are running. If one or more of the tests are shown with an error while at least one other test is healthy, it could indicate a problem for that particular test location. If all of the components are unhealthy, it could indicate a problem with the web application itself.
+All data collected by the  **Web Application Availability Monitoring**  template appears in the  **Web Application Availability Monitoring**  folder in the  **Application Monitoring**  folder in the  **Monitoring**  navigation pane. The  **Application Availability Monitoring**  folder contains the default views and subfolders that provide Test State, Web Application Status, and alerts related to the tests being monitored. By using the Test State view, you can see the test state of the individual tests. The state of each object matches the state of the targeted object that has the worst health state so that you see the worst state of the monitors that are running. If one or more of the tests are shown with an error while at least one other test is healthy, it could indicate a problem for that particular test location. If all the components are unhealthy, it could indicate a problem with the web application itself.
 
 **Web Application Availability Monitoring folder**
 
-![Web Application Availability Monitoring folder](./media/web-application-availability-monitoring-folder.png)
+![Screenshot of Web Application Availability Monitoring folder.](./media/web-application-availability-monitoring-folder.png)
 
 To view the state of the individual monitors, open the Health Explorer for each test.
 
 ## Wizard options
 
-When you run the  **Web Application Availability Monitoring**  template, you have to provide values for options as listed in the following tables. Each table represents a single page in the wizard.
+When you run the  **Web Application Availability Monitoring**  template, you've to provide values for options as listed in the following tables. Each table represents a single page in the wizard.
 
 ## General
 
-![General page](./media/general-page.png)
+![Screenshot of the General page.](./media/general-page.png)
 
 The following options are available on the  **General**  page of the wizard.
 
 | Option | Description |
 | --- | --- |
-| Name | Enter the friendly name used for the template and test group that you are creating. This name is displayed in the Operations Console in the Web Application status view and is used for the folder under the  **Web Application Availability Monitoring**  folder. <br>**Note:** After you have given the template a name and saved the template, this name cannot be edited without deleting and re-creating the template.</br> |
+| Name | Enter the friendly name used for the template and test group that you're creating. This name is displayed in the Operations Console in the Web Application status view and is used for the folder under the  **Web Application Availability Monitoring**  folder. <br>**Note:** After you've given the template a name and saved the template, this name can't be edited without deleting and re-creating the template.</br> |
 | Description | Describe the template. (Optional) |
 | Select destination management pack | Select the management pack to store the views and configuration created by the template. Use the same name for your new management pack as the test group so you can easily pair the two names. You can use an existing management pack or create a new management pack. For more information about management packs, see [Selecting a Management Pack File](/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29). |
 
 ## What to monitor
 
-![What to Monitor page](./media/what-to-monitor-page.png)
+![Screenshot of What to Monitor page.](./media/what-to-monitor-page.png)
 
 Add URLs to the list by typing, pasting, or importing a file into the table, including the appropriate protocol (http:// or https://). You can paste entire rows as pairs of comma-separated values (CSV) that are in the format 'Name, URL', or you can paste just the list of URLs.
 
@@ -102,7 +102,7 @@ The following options are available on the  **What to Monitor**  page of the wiz
 
 ## Where to Monitor From
 
-![Where to Monitor From page](./media/where-to-monitor-from-page.png)
+![Screenshot of Where to Monitor From page.](./media/where-to-monitor-from-page.png)
 
 Select the internal locations from which you want the URLs to be monitored.
 
@@ -115,9 +115,9 @@ The following options are available on the  **Where to Monitor From**  page of t
 
 ## Select Internal Locations
 
-![Select internal locations page](./media/select-internal-locations-page.png)
+![Screenshot of select internal locations page.](./media/select-internal-locations-page.png)
 
-Select the internal locations from which you want to monitor the URLs you specified on the  **What to Monitor**  page. Click Add to add internal locations and then search for and select the internal locations that you want to monitor from.
+Select the internal locations from which you want to monitor the URLs you specified on the  **What to Monitor**  page. Select Add to add internal locations and then search for and select the internal locations that you want to monitor from.
 
 The following options are available on the  **Select internal locations**  page of the wizard.
 
@@ -134,9 +134,9 @@ The following options are available on the  **Select internal locations**  page 
 
 ## View and validate tests
 
-![View and Validate Tests page](./media/view-and-validate-tests-page.png)
+![Screenshot of View and Validate Tests page.](./media/view-and-validate-tests-page.png)
 
-This is a summary of all tests that will be run. Select an internal location and click  **Run Test**  to validate the test configuration. Select Change configuration to change the default settings for all tests in this template.
+This is a summary of all tests that will be run. Select an internal location and select  **Run Test**  to validate the test configuration. Select Change configuration to change the default settings for all tests in this template.
 
 The following options are available on the  **View and Validate Tests**  page of the wizard.
 
@@ -151,17 +151,17 @@ The following options are available on the  **View and Validate Tests**  page of
 
 ## Test results: Summary tab
 
-![Test Results Summary tab](./media/test-results-summary-tab.png)
+![Screenshot of Test Results Summary tab.](./media/test-results-summary-tab.png)
 
 The following options are available on the  **Test Results Summary**  tab of the wizard.
 
 | Option | Description |
 | --- | --- |
-| Summary tab | Confirms if the test request was correctly processed and shows the URL and Location used in the test. Additionally. The specific tests and results are shown: Status code, DNS resolution time, and Total response time. |
+| Summary tab | Confirms if the test request was correctly processed and shows the URL and Location used in the test. Additionally, the specific tests and results are shown: Status code, DNS resolution time, and Total response time. |
 
 ## Test results: Details tab
 
-![Test Results Details tab](./media/test-results-details-tab.png)
+![Screenshot of Test Results Details tab.](./media/test-results-details-tab.png)
 
 The following options are available on the  **Test Results Details**  tab of the wizard.
 
@@ -177,7 +177,7 @@ The following options are available on the  **Test Results Details**  tab of the
 
 ## Test results: HTTP request tab
 
-![Test Results HTTP Request tab](./media/test-results-http-request-tab.png)
+![Screenshot of Test Results HTTP Request tab.](./media/test-results-http-request-tab.png)
 
 The following options are available on the  **Test Results HTTP Request**  tab of the wizard.
 
@@ -187,7 +187,7 @@ The following options are available on the  **Test Results HTTP Request**  tab o
 
 ## Test results: HTTP response tab
 
-![Test Results HTTP Response tab](./media/test-results-http-response-tab.png)
+![Screenshot of Test Results HTTP Response tab.](./media/test-results-http-response-tab.png)
 
 The following options are available on the  **Test Results HTTP Response**  tab of the wizard.
 
@@ -197,7 +197,7 @@ The following options are available on the  **Test Results HTTP Response**  tab 
 
 ## Test results: Raw data tab
 
-![Test Results Raw Data tab](./media/test-results-raw-data-tab.png)
+![Screenshot of Test Results Raw Data tab.](./media/test-results-raw-data-tab.png)
 
 The following options are available on the  **Test Results Raw Data**  tab of the wizard.
 
@@ -207,9 +207,9 @@ The following options are available on the  **Test Results Raw Data**  tab of th
 
 ## Change configuration for test set
 
-![Change Configuration for Test page (top)](./media/change-configuration-for-test-page-top.png)
+![Screenshot of Change Configuration for Test page (top).](./media/change-configuration-for-test-page-top.png)
 
-![Change Configuration for Test page (bottom)](./media/change-configuration-for-test-page-bottom.png)
+![Screenshot of Change Configuration for Test page (bottom).](./media/change-configuration-for-test-page-bottom.png)
 
 The following options are available on the  **Change Configuration for Test Set**  page of the wizard.
 
@@ -218,17 +218,17 @@ The following options are available on the  **Change Configuration for Test Set*
 
 | Option | Description |
 | --- | --- |
-| Test Frequency/Performance Data Collection Interval: Test frequency | Enter the how often you want to run each test. |
+| Test Frequency/Performance Data Collection Interval: Test frequency | Enter how often you want to run each test. |
 | Test Frequency/Performance Data Collection Interval: Performance data collection interval | Enter the frequency with which you want to collect performance data. This specifies whether you want to collect performance data every interval or not. For example, if the interval is 10 minutes and the collection interval is set to 2, this means that performance data will be collected every other interval, or once every 20 minutes. |
 | Test Frequency/Performance Data Collection Interval: Test time-out | Enter how long you want the test to keep a request active until the test times out and cancels. |
-| Alerts: Criteria for error health state: Transaction response time | Specify if transaction response time is a factor that should or should not generate an error health state. If it is specified to generate an error health state, set the threshold in seconds that a transaction must exceed before it generates an error health state. |
-| Alerts: Criteria for error health state: Request (Base page): HTTP status code | Specify if the HTTP status code is a factor that should or should not generate an error health state. If it is specified to generate an error health state, set the HTTP status code to the number for which you want it to generate an error health state. |
-| Alerts: Criteria for error health state: Request (Base page): Content match | Specify if any content matches should or should not generate an error health state. If it is specified to generate an error health state, specify the content you wish to match. |
-| Alerts: Criteria for error health state: Request (Base page): Check for redirects | Specify if the presence of redirects should or should not generate an error health state. |
-| Alerts: Criteria for warning health state: Transaction response time | Specify if the transaction response time is a factor that should or should not generate a warning health state. If it is specified to generate warning health state, set the threshold in seconds that a transaction must exceed before it generates a warning health state. |
-| Alerts: Criteria for warning health state: Request (Base page): HTTP status code | Specify if the HTTP status code should or should not generate a warning health state. If it is specified to generate warning health state, set the HTTP status code to the number for which you want it to generate a warning health state. |
-| Alerts: Criteria for warning health state: Request (Base page): Content match | Specify if any content matches should or should not generate a warning health state. If it is specified to generate a warning health state, specify the content you wish to match. |
-| Alerts: Criteria for warning health state: Request (Base page): check for redirects | Specify if the presence of redirects should or should not generate a warning health state. |
+| Alerts: Criteria for error health state: Transaction response time | Specify if transaction response time is a factor that should or shouldn't generate an error health state. If it is specified to generate an error health state, set the threshold in seconds that a transaction must exceed before it generates an error health state. |
+| Alerts: Criteria for error health state: Request (Base page): HTTP status code | Specify if the HTTP status code is a factor that should or shouldn't generate an error health state. If it is specified to generate an error health state, set the HTTP status code to the number for which you want it to generate an error health state. |
+| Alerts: Criteria for error health state: Request (Base page): Content match | Specify if any content matches should or shouldn't generate an error health state. If it is specified to generate an error health state, specify the content you wish to match. |
+| Alerts: Criteria for error health state: Request (Base page): Check for redirects | Specify if the presence of redirects should or shouldn't generate an error health state. |
+| Alerts: Criteria for warning health state: Transaction response time | Specify if the transaction response time is a factor that should or shouldn't generate a warning health state. If it is specified to generate warning health state, set the threshold in seconds that a transaction must exceed before it generates a warning health state. |
+| Alerts: Criteria for warning health state: Request (Base page): HTTP status code | Specify if the HTTP status code should or shouldn't generate a warning health state. If it is specified to generate warning health state, set the HTTP status code to the number for which you want it to generate a warning health state. |
+| Alerts: Criteria for warning health state: Request (Base page): Content match | Specify if any content matches should or shouldn't generate a warning health state. If it is specified to generate a warning health state, specify the content you wish to match. |
+| Alerts: Criteria for warning health state: Request (Base page): check for redirects | Specify if the presence of redirects should or shouldn't generate a warning health state. |
 | Alerts: Number of consecutive time a criteria should fail before an alert is generated | Specify the number of consecutive times selected criteria in the Alerts section list should fail before an alert is generated. |
 | Alerts: Generate alerts from each test | Select to receive an alert for each URL test for an application. |
 | Alerts: Generate a single summary alert | Select to receive a summary alert for an application, rather than choosing to receive an alert for each URL test for an application. This is helpful if you are monitoring a vertical website or an application because this will reduce the number of alerts you receive and keep the focus of your alerts the overall state of the application. <br>You can further reduce alerts by raising the threshold for how many failures you want to have before receiving an alert. Together, these two approaches will focus your alerts on what is most important to you: How well the application is running, given the performance you require.</br> |
@@ -257,9 +257,9 @@ The following options are available on the  **Change Configuration for Test Set*
 
 ## Summary
 
-![Summary page](./media/summary-page1.png)
+![Screenshot of Summary page.](./media/summary-page1.png)
 
-The  **Summary**  page of the wizard lists the settings you have configured for the  **Web Application Availability Monitoring**  template. If you want to change any of these settings, click  **Previous**  or the template page until you reach the page with the settings that you want to change.
+The  **Summary**  page of the wizard lists the settings you've configured for the  **Web Application Availability Monitoring**  template. If you want to change any of these settings, select  **Previous**  or the template page until you reach the page with the settings that you want to change.
 
 ## Creating and modifying web application availability monitoring templates
 
@@ -268,11 +268,11 @@ For the procedure to run the .NET Application Performance Monitoring wizard, see
 #### To modify an existing Web application availability monitoring template
 
 1. Open the Operations console with a user account that has Author credentials in the management group.
-2. Click the  **Authoring**  workspace.
+2. Select the  **Authoring**  workspace.
 3. In the  **Authoring**  navigation pane, expand  **Management Pack Templates** , and then select  **Web Application Availability Monitoring**.
 4. In the  **Web Application Availability Monitoring**  pane, locate the template you want to change.
 5. Right-click the test group that you want to modify, and then select  **Properties**.
-6. Using the tabs to navigate the pages of settings, make the desired changes, such as reconfiguring criteria for tests in this group, and then click  **OK**.
+6. Using the tabs to navigate the pages of settings, make the desired changes, such as reconfiguring criteria for tests in this group, and select  **OK**.
 
 ## Viewing web application availability monitoring monitors and collected data
 
@@ -281,22 +281,22 @@ After you configure monitoring for an application, these three views will help y
 #### To view all web application availability monitoring monitored applications
 
 1. Open the Operations console.
-2. Click the  **Monitoring**  workspace.
-3. In the  **Monitoring**  navigation pane, expand  **Application Monitoring** , expand  **Web Application Availability Monitoring** , and then click  **Web Application Status**.
+2. Select the  **Monitoring**  workspace.
+3. In the  **Monitoring**  navigation pane, expand  **Application Monitoring** , expand  **Web Application Availability Monitoring** , and select  **Web Application Status**.
 
 #### To view the state of each monitor
 
 1. Open the Operations console.
-2. Click the  **Monitoring**  workspace.
-3. In the  **Monitoring**  navigation pane, expand  **Application Monitoring** , expand  **Web Application Availability Monitoring** , and then click  **Test State**.
-4. In the  **Test State**  view, right-click an object. Select  **Open** , and then click  **Health Explorer**.
+2. Select the  **Monitoring**  workspace.
+3. In the  **Monitoring**  navigation pane, expand  **Application Monitoring** , expand  **Web Application Availability Monitoring** , and select  **Test State**.
+4. In the  **Test State**  view, right-click an object. Select  **Open**, and select  **Health Explorer**.
 
 #### To view the performance collected for an application component
 
 1. Open the Operations console.
-2. Click the  **Monitoring**  workspace.
-3. In the  **Monitoring**  navigation pane, expand  **Application Monitoring** , expand  **Web Application Availability Monitoring** , and then click  **Web Application Status**.
-4. In the  **Test State**  pane, right-click an object. Select  **Open** , and then click  **Performance View**.
+2. Select the  **Monitoring**  workspace.
+3. In the  **Monitoring**  navigation pane, expand  **Application Monitoring** , expand  **Web Application Availability Monitoring** , and select  **Web Application Status**.
+4. In the  **Test State**  pane, right-click an object. Select  **Open** , and select  **Performance View**.
 5. In the  **Legend**  pane, select the counters that you want to view.
 6. Use options in the  **Actions**  pane to modify the Performance view.
 
