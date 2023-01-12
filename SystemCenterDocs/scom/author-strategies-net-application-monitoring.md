@@ -106,7 +106,7 @@ You might also want to adjust the sampling rate to control the performance impac
    > [!NOTE]
    > Because you can change the sampling rate for both the application group and each application component, changes to the application group settings will not automatically be applied to the component settings when the component settings have been previously customized.
 
-2. In the  **Sampling**  section, use the dropdown menu to select the percentage of incoming requests that you want to monitor. For example, if you select  **50%**, you will monitor 50 percent of the incoming requests. Select  **25%**  and you will monitor 25 percent of the incoming requests, and so on. To get helpful information, you don't have to monitor all of the incoming requests.
+2. In the  **Sampling**  section, use the dropdown menu to select the percentage of incoming requests that you want to monitor. For example, if you select  **50%**, you'll monitor 50 percent of the incoming requests. Select  **25%**  and you'll monitor 25 percent of the incoming requests, and so on. To get helpful information, you don't have to monitor all of the incoming requests.
 3. When you have set the sampling rate, select  **OK**.
 
 ## See also

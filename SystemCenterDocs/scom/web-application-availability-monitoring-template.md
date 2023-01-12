@@ -24,7 +24,7 @@ The  **Web Application Availability Monitoring**  template lets you create avail
 
 ## Scenarios
 
-Use the  **Web Application Availability Monitoring**  template in scenarios where you've to monitor web-based applications from different locations to see if they are working according to certain requirements, which you can specify.
+Use the  **Web Application Availability Monitoring**  template in scenarios where you've to monitor web-based applications from different locations to see if they're working according to certain requirements, which you can specify.
 
 ## Internal locations
 
@@ -110,7 +110,7 @@ The following options are available on the  **Where to Monitor From**  page of t
 
 | Option | Description |
 | --- | --- |
-| Internal locations | The internal locations you are configuring to monitor from. |
+| Internal locations | The internal locations you're configuring to monitor from. |
 | Add/Remove | Add or remove internal locations you want to monitor from. |
 
 ## Select Internal Locations
@@ -123,14 +123,14 @@ The following options are available on the  **Select internal locations**  page 
 
 | Option | Description |
 | --- | --- |
-| Search for | Option showing the kind of locations you search will look for. You can choose agents or pools. |
+| Search for | Option showing the kind of locations your search will look for. You can choose agents or pools. |
 | Filter by part of name | Filter your search of internal locations. |
-| Search | Search for locations that are available to monitor from. Available locations are displayed in the in the Location area. |
+| Search | Search for locations that are available to monitor from. Available locations are displayed in the Location area. |
 | Where to monitor: Name | List of the internal locations from which you can select to monitor from. |
 | Where to monitor: Location | List of the locations from which you can select to monitor from.  |
-| Add | Add the internal locations you have selected to the Selected locations area. These are the locations you are configuring the wizard to monitor from. |
-| Selected locations: Name | These are the internal locations you have chosen to monitor from. |
-| Selected locations: Location | List of the locations you have chosen to monitor from. |
+| Add | Add the internal locations you've selected to the Selected locations area. These are the locations you're configuring the wizard to monitor from. |
+| Selected locations: Name | These are the internal locations you've chosen to monitor from. |
+| Selected locations: Location | List of the locations you've chosen to monitor from. |
 
 ## View and validate tests
 
@@ -147,7 +147,7 @@ The following options are available on the  **View and Validate Tests**  page of
 | URL | URL for a specific test. |
 | Agent/Pool | The Agent or Pool location for your internal URL tests. |
 | Run Test | Run a validation test for internal tests that are selected. |
-| Change Configuration | Open the  **Change Configuration**  page where you can change the settings for all tests in the template you are authoring. |
+| Change Configuration | Open the  **Change Configuration**  page where you can change the settings for all tests in the template you're authoring. |
 
 ## Test results: Summary tab
 
@@ -169,7 +169,7 @@ The following options are available on the  **Test Results Details**  tab of the
 | --- | --- |
 | Details tab: URL | See detailed information about the test. Displays which URL was tested. |
 | Details tab: Result | Displays whether the test request was processed successfully or not. |
-| Details tab: DNS resolution time (milliseconds) | Displays the DNS resolution time which checks that website performs as you expected it to. What's the IP address of the URL you are. Time it takes for DNS to get the IP address for the website. |
+| Details tab: DNS resolution time (milliseconds) | Displays the DNS resolution time which checks that website performs as you expected it to. What's the IP address of the URL you're monitoring. Time it takes for DNS to get the IP address for the website. |
 | Details tab: Total response time (milliseconds) | Displays the Total response time from same as transaction time performance counter. |
 | Details tab: HTTP status code | Displays the HTTP status code when you ping a website, you get a status code. |
 | Details tab: Response body size (bytes) | Displays the Response body size of the HTTP response information. |
@@ -221,21 +221,21 @@ The following options are available on the  **Change Configuration for Test Set*
 | Test Frequency/Performance Data Collection Interval: Test frequency | Enter how often you want to run each test. |
 | Test Frequency/Performance Data Collection Interval: Performance data collection interval | Enter the frequency with which you want to collect performance data. This specifies whether you want to collect performance data every interval or not. For example, if the interval is 10 minutes and the collection interval is set to 2, this means that performance data will be collected every other interval, or once every 20 minutes. |
 | Test Frequency/Performance Data Collection Interval: Test time-out | Enter how long you want the test to keep a request active until the test times out and cancels. |
-| Alerts: Criteria for error health state: Transaction response time | Specify if transaction response time is a factor that should or shouldn't generate an error health state. If it is specified to generate an error health state, set the threshold in seconds that a transaction must exceed before it generates an error health state. |
-| Alerts: Criteria for error health state: Request (Base page): HTTP status code | Specify if the HTTP status code is a factor that should or shouldn't generate an error health state. If it is specified to generate an error health state, set the HTTP status code to the number for which you want it to generate an error health state. |
-| Alerts: Criteria for error health state: Request (Base page): Content match | Specify if any content matches should or shouldn't generate an error health state. If it is specified to generate an error health state, specify the content you wish to match. |
+| Alerts: Criteria for error health state: Transaction response time | Specify if transaction response time is a factor that should or shouldn't generate an error health state. If it's specified to generate an error health state, set the threshold in seconds that a transaction must exceed before it generates an error health state. |
+| Alerts: Criteria for error health state: Request (Base page): HTTP status code | Specify if the HTTP status code is a factor that should or shouldn't generate an error health state. If it's specified to generate an error health state, set the HTTP status code to the number for which you want it to generate an error health state. |
+| Alerts: Criteria for error health state: Request (Base page): Content match | Specify if any content matches should or shouldn't generate an error health state. If it's specified to generate an error health state, specify the content you wish to match. |
 | Alerts: Criteria for error health state: Request (Base page): Check for redirects | Specify if the presence of redirects should or shouldn't generate an error health state. |
-| Alerts: Criteria for warning health state: Transaction response time | Specify if the transaction response time is a factor that should or shouldn't generate a warning health state. If it is specified to generate warning health state, set the threshold in seconds that a transaction must exceed before it generates a warning health state. |
-| Alerts: Criteria for warning health state: Request (Base page): HTTP status code | Specify if the HTTP status code should or shouldn't generate a warning health state. If it is specified to generate warning health state, set the HTTP status code to the number for which you want it to generate a warning health state. |
-| Alerts: Criteria for warning health state: Request (Base page): Content match | Specify if any content matches should or shouldn't generate a warning health state. If it is specified to generate a warning health state, specify the content you wish to match. |
+| Alerts: Criteria for warning health state: Transaction response time | Specify if the transaction response time is a factor that should or shouldn't generate a warning health state. If it's specified to generate warning health state, set the threshold in seconds that a transaction must exceed before it generates a warning health state. |
+| Alerts: Criteria for warning health state: Request (Base page): HTTP status code | Specify if the HTTP status code should or shouldn't generate a warning health state. If it's specified to generate warning health state, set the HTTP status code to the number for which you want it to generate a warning health state. |
+| Alerts: Criteria for warning health state: Request (Base page): Content match | Specify if any content matches should or shouldn't generate a warning health state. If it's specified to generate a warning health state, specify the content you wish to match. |
 | Alerts: Criteria for warning health state: Request (Base page): check for redirects | Specify if the presence of redirects should or shouldn't generate a warning health state. |
 | Alerts: Number of consecutive time a criteria should fail before an alert is generated | Specify the number of consecutive times selected criteria in the Alerts section list should fail before an alert is generated. |
 | Alerts: Generate alerts from each test | Select to receive an alert for each URL test for an application. |
-| Alerts: Generate a single summary alert | Select to receive a summary alert for an application, rather than choosing to receive an alert for each URL test for an application. This is helpful if you are monitoring a vertical website or an application because this will reduce the number of alerts you receive and keep the focus of your alerts the overall state of the application. <br>You can further reduce alerts by raising the threshold for how many failures you want to have before receiving an alert. Together, these two approaches will focus your alerts on what is most important to you: How well the application is running, given the performance you require.</br> |
+| Alerts: Generate a single summary alert | Select to receive a summary alert for an application, rather than choosing to receive an alert for each URL test for an application. This is helpful if you're monitoring a vertical website or an application because this will reduce the number of alerts you receive and keep the focus of your alerts the overall state of the application. <br>You can further reduce alerts by raising the threshold for how many failures you want to have before receiving an alert. Together, these two approaches will focus your alerts on what is most important to you: How well the application is running, given the performance you require.</br> |
 | Performance Collection: Transaction response time | Cumulative response time: DNS\_RESOLUTION\_TIME + TCP\_CONNECT\_TIME + TIME\_TO\_LAST\_BYTE |
 | Performance Collection: Request (Base page): Response time | Processing time for the request, such as opening a browser and waiting for all resources to load. |
 | Performance Collection: Request (Base page): TCP connect time | Time taken to establish a TCP connection to the target server and receive the initial greeting from the service. |
-| Performance Collection: Request (Base page): Time to first byte | Time take since the TCP connection is established till the first byte of response is received. |
+| Performance Collection: Request (Base page): Time to first byte | Time taken since the TCP connection is established until the first byte of response is received. |
 | Performance Collection: Request (Base page): Time to last byte | Time from when TCP connection is established until the last byte of response is completely received. |
 | Performance Collection: Request (Base page): DNS resolution time | Time taken to resolve the URL domain name to the IP address. |
 | Performance Collection: Request (Base page): Content size | Size of the response body received. |

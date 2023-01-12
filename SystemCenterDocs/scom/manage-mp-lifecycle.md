@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-System Center - Operations Manager uses management packs contain monitoring settings for applications and services. Ideally, a management pack tells you everything you want to know about the application or technology that you're monitoring and nothing that you don't want to know. Management packs are designed to provide a useful monitoring experience for most environments; however, you will want to test, tune, and tailor each management pack to provide optimal results for your organization's needs.  
+System Center - Operations Manager uses management packs contain monitoring settings for applications and services. Ideally, a management pack tells you everything you want to know about the application or technology that you're monitoring and nothing that you don't want to know. Management packs are designed to provide a useful monitoring experience for most environments; however, you'll want to test, tune, and tailor each management pack to provide optimal results for your organization's needs.  
 
 The management pack lifecycle, described in the following table, is the recommended approach to using management packs. The sections following the table provide details for each stage.  
 
@@ -49,7 +49,7 @@ You can use overrides to refine the settings of a monitoring object in Operation
 
 To effectively tune the monitoring configuration of your IT services, which may involve one or more management packs depending on the complexity of that service, you should involve the service owner or subject matter experts, a representative from the service desk, a representative from the operations team members who monitor the alerts and events and take action when something requires attention, and the engineering team responsible for the Operations Manager infrastructure. Depending on the service that is monitored by the management pack(s), you might also include representation from the networking and security teams. Those responsible for the Operations Manager infrastructure might not have the knowledge and experience with the service to effectively tune the management pack(s) without expert input.  
 
-Start by reviewing the most common alerts in an effort to improve monitoring accuracy by focusing on high-volume alerts. Identify the following and prioritize based on impact:
+Start by reviewing the most common alerts to improve monitoring accuracy by focusing on high-volume alerts. Identify the following and prioritize based on impact:
 
 - Number and percentage of alerts caused by existing/known problems
 - Number and percentage of repeated or duplicate alerts. May indicate additional tuning is necessary or there's a potential issue to investigate further.
@@ -57,13 +57,13 @@ Start by reviewing the most common alerts in an effort to improve monitoring acc
 - Ratio of alerts to tickets generated
 - Alerts whose resolution state has been set to a state indicating the workflow is generating a high volume of alerts and is determined through investigation to be faulty by operations or tier-2 support
 
-Leverage the following reports to determine if additional tuning is required:
+Use the following reports to determine if additional tuning is required:
 
 - Most Common Alerts Report
 - Alerts Report
 - Data Volume by Management Pack
 
-The following reports are important to validate we are efficiently monitoring the service in its entirety, and there isn’t:
+The following reports are important to validate you're efficiently monitoring the service in its entirety, and there isn’t:
 
 - Configuration churn due to discovery rules running too frequently or there's a property/attribute being collected that changes frequently
 - Performance data being collected too frequently or doesn’t need to be collected because the organization won't use it in a report, view, or dashboard
@@ -101,7 +101,7 @@ At a minimum, each workflow should be evaluated according to the following crite
 
 -   Override the monitor or rule as applicable for all objects of a particular class, a group, or a specific object.  
 
--   Disable the monitor or rule if the issue isn't severe enough to warrant an alert and you do not need to be made aware of the specific situation being monitored.  
+-   Disable the monitor or rule if the issue isn't severe enough to warrant an alert and you don't need to be made aware of the specific situation being monitored.  
 
 -   Change the threshold of the monitor that is generating the alert if you want the underlying condition to be monitored, but the alert is being generated before the condition is actually a problem for your particular environment.  
 
@@ -126,7 +126,7 @@ After a management pack has been deployed, you should periodically evaluate its 
 
 -   **Upgrading a version of an application**  
 
-    When organizations upgrade application versions, they usually either upgrade in stages, during which both versions of the application will exist in the network, or upgrade all installations of the application at one time. After testing the management packs with the new version and making any necessary adjustments, you should use the same approach for deploying the management packs that you use for deploying the upgrades. If both versions of the application will be in use at one time, you should install management packs appropriate for each version. If all installations of the application will be upgraded at one time, remove the management pack for the old version of the application and install the management pack for the new version.  
+    When organizations upgrade application versions, they either upgrade in stages, during which both versions of the application will exist in the network, or upgrade all installations of the application at one time. After testing the management packs with the new version and making any necessary adjustments, you should use the same approach for deploying the management packs that you use for deploying the upgrades. If both versions of the application will be in use at one time, you should install management packs appropriate for each version. If all installations of the application will be upgraded at one time, remove the management pack for the old version of the application and install the management pack for the new version.  
 
 -   **When a new or updated version of the management pack is available**  
 
@@ -144,7 +144,7 @@ The following are some best practices to follow when managing Operations Manager
 
 -   When you set overrides for a management pack, save them to a management pack that is named *ManagementPack*\_Override, where *ManagementPack* is the name of the sealed management pack to which the overrides apply. For example, overrides to the management pack Microsoft.SQLServer.2012.Monitoring.mp would be saved to Microsoft.SQLServer.2012.Monitoring\_Overrides.xml. For more information, see [Creating a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).  
 
--   When a management pack is updated, update the corresponding \_Overrides.xml file with the new version number. You must use an XML editor to update the version number of the \_Overrides.xml file. If you make changes to an \_Overrides.xml file but don't change the version attribute, you can import the file but the settings in the file will not be applied.  
+-   When a management pack is updated, update the corresponding \_Overrides.xml file with the new version number. You must use an XML editor to update the version number of the \_Overrides.xml file. If you make changes to an \_Overrides.xml file but don't change the version attribute, you can import the file but the settings in the file won't be applied.  
 
 -   Document the overrides that you make to management packs. When you set an override, add an explanation of the action you're taking and the reason for it to the description field by selecting **Edit** in the Details pane of the Override Properties dialog. You may also want to maintain a spreadsheet or other form to document changes that you make to management packs.  
 

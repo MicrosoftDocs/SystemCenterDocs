@@ -63,7 +63,7 @@ You want to ensure that your customers are having quality web experiences. By cr
 
 ## Monitoring performed by the .NET application performance monitoring template
 
-By default, the  **.NET Application Performance Monitoring**  template configures the following monitoring. You can be enable, disable, and modify monitors in the **Advanced Configuration**  page of the **.NET Application Performance Monitoring** template.
+By default, the  **.NET Application Performance Monitoring**  template configures the following monitoring. You can enable, disable, and modify monitors in the **Advanced Configuration**  page of the **.NET Application Performance Monitoring** template.
 
 | Monitor description | Default values |
 | --- | --- |

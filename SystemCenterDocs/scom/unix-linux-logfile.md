@@ -98,7 +98,7 @@ The following options are available on the  **Log File Details**  page of the wi
 
 ## View UNIX/Linux log file data
 
-There is no monitor or collected data for the  **UNIX/Linux Log File Monitoring**  template. If a match is found in the specified log file, an alert is generated. You can view this alert in the  **Active Alerts** view with the other alerts.
+There's no monitor or collected data for the  **UNIX/Linux Log File Monitoring**  template. If a match is found in the specified log file, an alert is generated. You can view this alert in the  **Active Alerts** view with the other alerts.
 
 ## See also
 
