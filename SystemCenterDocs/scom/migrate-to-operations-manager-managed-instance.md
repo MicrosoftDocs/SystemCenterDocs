@@ -77,7 +77,7 @@ Below is a quick summary of what can be migrated:
 | Reports that are available in Management Pack | No | Power BI reports |
 | Reports that are created on Operations console | No | Power BI reports |
 
-- For Dashboards/Views that are available in Management Pack, you can view the data similar to the one in Operations Manager on-premises (as they're built into Management Pack).
+- For Dashboards/Views that's available in Management Pack, you can view the data similar to the one in Operations Manager on-premises (as they're built into Management Pack).
 - For Dashboards/Views created on the Operations console, you need to reconfigure custom dashboards and views in SCOM Managed Instance (preview). 
 - For (SSRS) reports that are available in Management Pack and on the Operations console, you need to reconfigure all reports on Power BI as the Reporting Server doesn't exist in SCOM Managed Instance (preview).  
 
