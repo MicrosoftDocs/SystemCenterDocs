@@ -1,6 +1,6 @@
 ---
 description: This article provides an overview of how DPM protects the various data types, the recovery process, and protection policies.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -18,6 +18,7 @@ ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
 [!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
 
 ::: moniker-end
+
 
 The method System Center Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It's intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers disk-based protection processes, tape-Based protection processes, recovery process, and the protection policy.
 
@@ -70,6 +71,7 @@ Each express full backup creates a recovery point for application data. If the a
 
 - For protected Exchange data, synchronization transfers an incremental VSS snapshot using the Exchange VSS writer. Recovery points are created for each synchronization and express full backup.
 
+
 - SQL Server databases that are log-shipped, in read-only mode, or that use the simple recovery model don't support incremental backup. Recovery points are created for each express full backup only. For all other SQL Server databases, synchronization transfers a transaction log backup, and recovery points are created for each incremental synchronization and express full backup. The transaction log is a serial record of all the transactions that have been performed against the database since the transaction log was last backed up.
 
 - Windows SharePoint Services and Microsoft Virtual Server don't support incremental backup. Recovery points are created for each express full backup only.
@@ -78,7 +80,7 @@ Incremental synchronizations require less time than performing an express full b
 
 To enable faster recovery time, DPM regularly performs an express full backup, a type of synchronization that updates the replica to include the changed blocks.
 
-During express full backup, DPM takes a snapshot of the replica before updating the replica with the changed blocks. To enable more frequent recovery point objectives, as well as to reduce the data loss window, DPM also performs incremental synchronizations in the time between two express full backups.
+During express full backup, DPM takes a snapshot of the replica before updating the replica with the changed blocks. To enable more frequent recovery point objectives, and to reduce the data loss window, DPM also performs incremental synchronizations in the time between two express full backups.
 
 As with the protection of file data, if a replica becomes inconsistent with its data source, DPM generates an alert that specifies which server and which data sources are affected. To resolve the problem, the administrator repairs the replica by initiating a synchronization with consistency check on the replica. During a consistency check, DPM performs a block-by-block verification and repairs the replica to make it consistent with the data source.
 
@@ -100,7 +102,7 @@ Each data source is presented in the DPM Administrator Console according to the 
 
 ## Tape-based protection process
 
-When you use short-term disk-based protection and long-term tape-based protection, DPM can back up data from the replica volume to tape so that there's no impact on the protected computer. When you use tape-based protection only, DPM backs up the data directly from the protected computer to tape.
+When you use short-term disk-based protection and long-term tape-based protection, DPM can back up data from the replica volume to tape so that there's no effect on the protected computer. When you use tape-based protection only, DPM backs up the data directly from the protected computer to tape.
 
 DPM protects data on tape through a combination of full and incremental backups from either the protected data source (for short-term protection on tape or for long-term protection on tape when DPM doesn't protect the data on disk) or from the DPM replica (for long-term protection on tape when short-term protection is on disk).
 
@@ -113,7 +115,7 @@ For specific backup types and schedules, see Planning Protection Groups
 
 The method of data protection, disk-based or tape-based, makes no difference to the recovery task. You select the recovery point of data that you want to recover, and DPM recovers the data to the protected computer.
 
-DPM can store a maximum of 64 recovery points for each file member of a protection group. For application data sources, DPM can store up to 448 express full backups and up to 96 incremental backups for each express full backup. When storage area limits have been reached and the retention range for the existing recovery points is not met yet, protection jobs will fail.
+DPM can store a maximum of 64 recovery points for each file member of a protection group. For application data sources, DPM can store up to 448 express full backups and up to 96 incremental backups for each express full backup. When storage area limits have been reached and the retention range for the existing recovery points isn't met yet, protection jobs will fail.
 
 > [!NOTE]
 > To support end-user recovery, the recovery points for files are limited to 64 by Volume Shadow Copy Service (VSS).
@@ -151,7 +153,7 @@ Recovery point schedule establishes how many recovery points of this protection 
 
 ## Auto discovery process
 
-Auto discovery is the daily process by which DPM automatically detects new or removed computers on the network. Once a day, at a time that you can schedule, DPM sends a small packet (less than 10 kilobytes) to the closest domain controller. The domain controller responds to the LDAP request with the computers in that domain, and DPM identifies new and removed computers. The network traffic created by the auto discovery process is minimal.
+Auto discovery is the daily process by which DPM automatically detects new or removed computers on the network. Once a day, at a time that you can schedule, DPM sends a small packet (less than 10 kilobytes) to the closest domain controller. The domain controller responds to the Lightweight Directory Access Protocol (LDAP) request with the computers in that domain, and DPM identifies new and removed computers. The network traffic created by the auto discovery process is minimal.
 
 Auto discovery doesn't discover new and removed computers in other domains. To install a protection agent on a computer in another domain, you must identify the computer by using its fully qualified domain name.
 
