@@ -5,7 +5,7 @@ description: This article describes how to connect the Azure Monitor SCOM Manage
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 01/09/2023
+ms.date: 01/12/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -18,8 +18,6 @@ monikerRange: 'sc-om-2022'
 Azure Monitor SCOM Managed Instance (preview) is compatible with [System Center Operations Manager 2022](https://www.microsoft.com/download/details.aspx?id=104038).
 
 After you create the SCOM Managed Instance (preview) in Azure, connect the instance to Ops console to configure the workloads and monitor.
-
-> [!VIDEO https://www.youtube.com/embed/urxiQBkObkU]
 
 ## Connect SCOM Managed Instance (preview) to Ops console
 
