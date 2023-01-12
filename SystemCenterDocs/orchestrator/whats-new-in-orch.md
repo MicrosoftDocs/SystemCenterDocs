@@ -132,13 +132,13 @@ For issues fixed in Orchestrator 2022 UR1, and installation instructions for UR1
 
 #### Support for SQL Server 2022
 
-Orchestrator 2022 supports SQL Server 2022. [Learn more](/SystemCenterDocs/orchestrator/system-requirements-orch.md).
+Orchestrator 2022 supports SQL Server 2022. [Learn more](/system-center/orchestrator/system-requirements-orch#sql-server).
 
 #### Support for .NET Core 6
 
 Orchestrator 2022 UR1 depends on .NET Core 6. 
 
-Ensure .NET Core 6 and Hosting Bundle are installed when you upgrade from RTM. [Learn more](/SystemCenterDocs/orchestrator/system-requirements-orch.md).
+Ensure .NET Core 6 and Hosting Bundle are installed when you upgrade from RTM. [Learn more](/system-center/orchestrator/system-requirements-orch#net-requirements).
 
 ::: moniker-end
 
