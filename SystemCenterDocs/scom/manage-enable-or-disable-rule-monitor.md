@@ -1,7 +1,7 @@
 ---
 ms.assetid: 954164df-4d78-45a7-868e-a7639747b761
 title: How to Enable or Disable a Rule or Monitor
-description: This topic provides specific instructions on how to enable or enable Management Pack monitoring rules and monitors.
+description: This article provides specific instructions on how to enable or enable Management Pack monitoring rules and monitors.
 author: jyothisuri
 manager: mkluck
 ms.author: jsuri
@@ -34,7 +34,7 @@ In System Center - Operations Manager, if a management pack's default settings c
 
 5.  On the Operations console toolbar, select **Overrides** and then point to **Override the Monitor** (or **Rule**). You can choose to override this monitor or rule for objects of a specific type or for all objects within a group. After you choose which group of object type to override, the **Override Properties** dialog opens, enabling you to view the default settings contained in this monitor or rule. For more information about applying an override, see [Using Classes and Groups for Overrides](~/scom/manage-mp-overview-override-targets.md).  
 
-6.  In the **Override Properties** dialog, click to select the **Override** checkbox that corresponds to the **Enabled** parameter.  
+6.  In the **Override Properties** dialog, select the **Override** checkbox that corresponds to the **Enabled** parameter.  
 
     > [!NOTE]  
     > If you select **Disable** instead of **Override**, the **Override Properties** dialog opens with the **Override** checkbox selected and the **Enabled** value set to **False**.  

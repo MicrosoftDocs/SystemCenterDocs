@@ -24,7 +24,7 @@ ms.topic: article
 
 Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (that is, workloads) deployed in your IT infrastructure that weren't monitored by Operations Manager or aren't monitored using the latest version of a management pack.
 
-If there are Management Packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for Management Packs that are installed in your management group.
+If there are Management Packs in the catalog that are designed to monitor those workloads, they'll be displayed on the Updates and Recommendations screen. You'll also find a list of any updates that are available for Management Packs that are installed in your management group.
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ If there are Management Packs in the catalog that are designed to monitor those 
 
 Operations Manager includes support for [Linux and Unix](plan-supported-crossplat-os.md) workloads and operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operations Manager 2019 also supports a new capability called **Machine Details**, which provides the computer details (name and operating system) on which a selected workload is running.
 
-If there are management packs in the catalog that are designed to monitor those workloads, they will be displayed on the *Updates and Recommendations* screen. You will also find a list of any updates that are available for management packs that are installed in your management group.
+If there are management packs in the catalog that are designed to monitor those workloads, they'll be displayed on the *Updates and Recommendations* screen. You'll also find a list of any updates that are available for management packs that are installed in your management group.
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ The following procedure describes how to use the Get MP option to download a man
 
 2. In the Operations console, select **Administration**.
 
-3. Click on **Updates and Recommendations**  under **Management Packs**.
+3. Select **Updates and Recommendations**  under **Management Packs**.
 
     >[!NOTE]
     >When accessing the Updates and Recommendations view, you may receive the following message, "An error occurred while displaying the Updates and Recommendations View. This might be because the database query has encountered an issue or the online catalog is down."  This can be caused by having a duplicate management pack with the same name.  To help troubleshoot the issue, run the following command in the Operations Manager  Shell and review the output file to identify the duplicate MP:

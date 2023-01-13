@@ -79,7 +79,7 @@ System Center Operations Manager provides the reports described in the following
 |Alerts Per Day|This report shows the number of alerts generated per day from each rule or monitor that alerted within the report period \(by default one week\).|  
 |Instance Space|This report shows the number of instances of each class \(for example, Exchange Servers\) that are created in your management group.|  
 |Management Group|This report shows the operating system version used in the Operations Manager infrastructure \(management servers\).|  
-|Management Packs|This report shows the versions of each management pack that is installed in your environment. It also summarizes all the overrides you have defined in your environment, as well as custom rules and monitors you have authored.|  
+|Management Packs|This report shows the versions of each management pack that is installed in your environment. It also summarizes all the overrides you've defined in your environment, as well as custom rules and monitors you've authored.|  
 |Most Common Alerts|This report shows the most common alerts generated within the report period \(by default one week\). It also shows this data by management pack.|  
 
 ## System Center Core Monitoring Reports  

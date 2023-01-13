@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-Operations Manager includes a number of reports when you install a management group, to help you review the operational telemetry and configuration information to help troubleshoot issues or problems, review the day-to-day health of your IT services, and make decisions that drive changes in capacity planning or service operations of the service.  
+Operations Manager includes many reports when you install a management group, to help you review the operational telemetry and configuration information to help troubleshoot issues or problems, review the day-to-day health of your IT services, and make decisions that drive changes in capacity planning or service operations of the service.  
 
 ## Operational Data report
 
@@ -81,7 +81,7 @@ Use the following procedure to create an event analysis report.
 
 ## Availability report
 
-The following procedure is an example of how you create an availability report for a managed computer. The procedure presented here is applicable to creating other types of availability reports. In this example procedure, you generate a report for the entire week.  
+The following procedure is an example of how you create an availability report for a managed computer. The procedure presented here's applicable to creating other types of availability reports. In this example procedure, you generate a report for the entire week.  
 
 > [!NOTE]  
 > Operations Manager Reporting must be installed before you can run an Availability report.  
@@ -110,7 +110,7 @@ The availability report provides the following information about the selected co
 
 3.  In the **Monitoring** workspace, expand **Monitoring**, and select **Windows Computers**.  
 
-4.  In the **Windows Computers** pane, select the row, or rows, that represent the computer for which you want to run an availability report.  
+4.  In the **Windows Computers** pane, select the row, or rows, that represents the computer for which you want to run an availability report.  
 
 5.  In the **Tasks** pane, under **Report Tasks**, select **Availability**.  
 
@@ -134,7 +134,7 @@ The availability report provides the following information about the selected co
 
 ## Alerts report
 
-An alerts report summarizes alerts that have occurred on a managed entity. The following procedure is an example of how you create an alerts report for a managed computer. The procedure presented here is applicable to creating other types of alerts reports. In this example procedure, you generate a report for the previous 24-hour period.  
+An alerts report summarizes alerts that have occurred on a managed entity. The following procedure is an example of how you create an alerts report for a managed computer. The procedure presented here's applicable to creating other types of alerts reports. In this example procedure, you generate a report for the previous 24-hour period.  
 
 > [!NOTE]  
 > Operations Manager Reporting must be installed before you can run an alerts report.  

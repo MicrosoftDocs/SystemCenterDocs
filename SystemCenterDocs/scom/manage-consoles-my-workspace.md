@@ -61,7 +61,7 @@ In My Workspace, you can add shortcuts to any existing views in the Monitoring w
 
 3.  Select **OK**.  
 
-When you go to My Workspace, you will see the view that you added listed in the navigation pane.  
+When you go to My Workspace, you'll see the view that you added listed in the navigation pane.  
 
 ## Save searches  
 
@@ -95,7 +95,7 @@ You can save useful searches in My Workspace to run at any time.
 
 4.  In the displayed criteria for the object type, select the condition that you want to search against.  
 
-5.  Each condition that you select is added to the **Criteria description**. Select the underlined value in each condition to edit the value. After you edit a value, select **OK** and then edit the next value. Continue until all conditions have values specified.  
+5.  Each condition that you select is added to the **Criteria description**. Select the underlined value in each condition to edit the value. After you edit a value, select **OK**, and then edit the next value. Continue until all conditions have values specified.  
 
 6.  Select **Save parameters to My Favorites**.  
 

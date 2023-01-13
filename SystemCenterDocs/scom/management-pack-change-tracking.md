@@ -69,7 +69,7 @@ The following sections detail the reports used for change tracking in management
 
 The management pack history report generates the list of all the management packs, which are either imported or deleted on any management server in your management group. You can filter the report by date, action, and username.
 
-**Example:** Report of all the management packs imported by Bob and Dan from first day of the last month till date. You can apply the filters as shown in the following example and generate the report for this user.
+**Example:** Report of all the management packs imported by Bob and Dan from the first day of the last month till date. You can apply the filters as shown in the following example and generate the report for this user.
 
 ![Screenshot of the Management pack history.](./media/change-tracking/management-pack-history.png)
 
@@ -114,7 +114,7 @@ The management pack objects report tracks and generates the list of all manageme
 
 You can filter the reports by date, username, management pack, action criteria (new, delete, or edit), and type of objects.
 
-**Example**: If you want to see all the new monitors created by a user Dan in the past one month, then you will select the filters as shown in the following example:
+**Example**: If you want to see all the new monitors created by a user Dan in the past one month, then you'll select the filters as shown in the following example:
 
 ![Screenshot showing Management pack objects.](./media/change-tracking/managment-pack-objects.png)
 
@@ -144,7 +144,7 @@ This report has relevant fields/information to track overrides in detail such as
 
 ## Data grooming settings in Management pack
 
-Grooming settings are tied with management pack grooming settings for data warehouse. This means, by default, three versions of management packs and 400 days old data will be shown in the reports. For example: whenever you make a change in *MyCustomMP* and save your changes in a new version as v1, v2, v3, v4 over Seven days, then by default, v1 will be groomed and you will only see changes for v2, v3, and v4. Besides this, any change which is 400 days old will be groomed.
+Grooming settings are tied with management pack grooming settings for data warehouse. This means, by default, three versions of management packs and 400 days old data will be shown in the reports. For example: whenever you make a change in *MyCustomMP* and save your changes in a new version as v1, v2, v3, v4 over Seven days, then by default, v1 will be groomed and you'll only see changes for v2, v3, and v4. Besides this, any change that is 400 days old will be groomed.
 
 
 ## Change tracking for agent

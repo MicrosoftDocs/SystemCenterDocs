@@ -49,7 +49,7 @@ Each object type will display a unique set of criteria for your search. The foll
 
 ## Set the criteria values
 
-If you've ever created a rule in Microsoft Outlook, setting criteria values for an advanced search will be familiar to you. When you select a criterion for an object, it is added to the **Criteria description** section. Most criteria contain a variable value. For example, in the criterion **With a specific name**, *specific* is a variable and will be underlined in the **Criteria description** section. (The criterion **Is enabled** is only true or false, so it contains no variables; you either select it or you don't select it.)  
+If you've ever created a rule in Microsoft Outlook, setting criteria values for an advanced search will be familiar to you. When you select a criterion for an object, it's added to the **Criteria description** section. Most criteria contain a variable value. For example, in the criterion **With a specific name**, *specific* is a variable and will be underlined in the **Criteria description** section. (The criterion **Is enabled** is only true or false, so it contains no variables; you either select it or you don't select it.)  
 
 To assign a value to the variable, select the underlined portion of the criterion. A dialog appears. In the example of **With a specific name**, you enter a text string for the specific name. For variables with limited values, such as alert priorities, the dialog provides checkboxes that you can select.  
 

@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This topic describes the differences between classes and groups in System Center - Operations Manager, and how workflows, such as rules and monitors, apply to each. The following sections define classes and groups, and provide examples for applying overrides with the available override options.  
+This article describes the differences between classes and groups in System Center - Operations Manager, and how workflows, such as rules and monitors, apply to each. The following sections define classes and groups, and provide examples for applying overrides with the available override options.  
 
 ## Classes  
 

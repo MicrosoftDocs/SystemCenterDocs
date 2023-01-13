@@ -20,12 +20,12 @@ ms.assetid: d47793da-7d78-4794-b471-8dca0673d88e
 
 ::: moniker-end
 
-System Center Operations Manager, with the appropriate management packs imported, will provide you with a comprehensive view of what is going on with your monitored applications, hardware, and processes. This can result in a very large volume of data being displayed in the Operations console. Learning how to quickly locate the data you need is essential to efficient interaction with the console. You can use the **Scope**, **Find**, and **Search** buttons on the Operations console toolbar to filter your view of monitoring data so that you can find the exact monitoring object or group of objects that you need. You can also filter your data based on the number of hours or days you would like to show.  
+System Center Operations Manager, with the appropriate management packs imported, will provide you with a comprehensive view of what is going on with your monitored applications, hardware, and processes. This can result in a large volume of data being displayed in the Operations console. Learning how to quickly locate the data you need is essential to efficient interaction with the console. You can use the **Scope**, **Find**, and **Search** buttons on the Operations console toolbar to filter your view of monitoring data so that you can find the exact monitoring object or group of objects that you need. You can also filter your data based on the number of hours or days you would like to show.  
 
 > [!NOTE]  
 > Any time that you don't see the information you expect in the results pane, check the scope and time filters to ensure that the correct objects and time period are set for the results you need.  
 
-The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter to the data you are viewing in the console. While you can locate a specific object using Search or Find, you can also use Scope or Time to display a set of objects that meet a set of criteria. The following table shows the differences between the different filtering options.  
+The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter to the data you're viewing in the console. While you can locate a specific object using Search or Find, you can also use Scope or Time to display a set of objects that meet a set of criteria. The following table shows the differences between the different filtering options.  
 
 |Filter|When to use|For more information, see|  
 |----------|---------------|-----------------------------|  
@@ -57,7 +57,7 @@ For example, if you want to view only those computers in your environment that a
 
 Use the **Find** button when the list of objects in the Results pane is too long to quickly pick out a particular object. Use the **Search** button when you want to find all objects that meet a certain criteria.  
 
-### To use Find to create a list of of objects
+### To use Find to create a list of objects
 
 1.  In the Operations console, select **Monitoring**.  
 
