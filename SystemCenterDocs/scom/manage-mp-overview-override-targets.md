@@ -4,7 +4,7 @@ title: Using Classes and Groups for Overrides
 description: This article describes how to apply overrides to classes and groups in Operations Manager 2016.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
@@ -24,7 +24,7 @@ This topic describes the differences between classes and groups in System Center
 
 ## Classes  
 
-In Operations Manager, a *class* is a definition of an item that can be discovered and managed. A class can represent a computer, a database, a service, a disk, an application, or any other kind of object that requires monitoring. Monitors, rules, discoveries, overrides, and tasks can apply to a class. For example, **Windows Server 2012 Logical Disk** is a class that defines logical disks on a computer that is running the Windows Server 2003 operating system. A monitor that applies to the **Windows Server 2012 Logical Disk** class will be applied only to objects that meet that class definition.  
+In Operations Manager, a *class* is a definition of an item that can be discovered and managed. A class can represent a computer, a database, a service, a disk, an application, or any other kind of object that requires monitoring. Monitors, rules, discoveries, overrides, and tasks can apply to a class. For example, **Windows Server 2012 Logical Disk** is a class that defines logical disks on a computer that's running the Windows Server 2003 operating system. A monitor that applies to the **Windows Server 2012 Logical Disk** class will be applied only to objects that meet that class definition.  
 
 > [!NOTE]  
 > In the Operations console, the term *target* is used instead of *class*.  
@@ -37,7 +37,7 @@ In Operations Manager, a *group* is a logical set of objects that can be used to
 
 ## Overrides  
 
-You have seen that classes are used to target workflows such as rules and monitors. A monitor or rule is applied to a specific class. To change the value for a parameter of a rule or monitor, you create an override. You have the following options for applying your override:  
+You've seen that classes are used to target workflows such as rules and monitors. A monitor or rule is applied to a specific class. To change the value for a parameter of a rule or monitor, you create an override. You've the following options for applying your override:  
 
 -   **For all objects of class:** *Class*  
 
@@ -47,7 +47,7 @@ You have seen that classes are used to target workflows such as rules and monito
 
     When you select this option for your override, the override settings apply only to members of the group. The rule or monitor without the override settings continues to apply to all objects in the targeted class except for those objects that are also members of the group used for the override.  
 
-    When you create a group, you save it to an unsealed management pack. However, an element in an unsealed management pack, such as an override, cannot reference an element in a different unsealed management pack, such as a group. If you are going to use a group to limit the application of an override, you must either save the group to the same unsealed management pack as the override, or you must seal the management pack that contains the group.  
+    When you create a group, you save it to an unsealed management pack. However, an element in an unsealed management pack, such as an override, can't reference an element in a different unsealed management pack, such as a group. If you're going to use a group to limit the application of an override, you must either save the group to the same unsealed management pack as the override, or you must seal the management pack that contains the group.  
 
 -   **For a specific object of class:** *Class*  
 
@@ -61,7 +61,7 @@ You have seen that classes are used to target workflows such as rules and monito
 
 Operations Manager 2022 provides support for sort option by column, in **Overrides Summary**.
 
-![Overrides Summary](./media/manage-mp-overview-override-targets/overrides-summary.png)
+![Screenshot of Overrides Summary.](./media/manage-mp-overview-override-targets/overrides-summary.png)
 
 ::: moniker-end
 
@@ -97,17 +97,17 @@ In this common scenario, you must perform the following two tasks:
 
 ## Using the Enforced Attribute in Overrides
 
-When you configure an override to a rule, monitor, or discovery in Operations Manager, you will notice an **Enforced** check box in the row for each value that you can override, as shown in the following illustration.  
+When you configure an override to a rule, monitor, or discovery in Operations Manager, you'll notice an **Enforced** checkbox in the row for each value that you can override, as shown in the following illustration.  
 
-![Enforced checkbox for overrides](./media/manage-mp-overview-override-targets/om2016-override-enforced-setting.png)  
+![Illustration showing Enforced checkbox for overrides.](./media/manage-mp-overview-override-targets/om2016-override-enforced-setting.png)  
 
-When the Enforced attribute is selected for an override, this setting ensures that the override will take precedence over all other overrides of the same type and context that do not have **Enforced** set.  
+When the Enforced attribute is selected for an override, this setting ensures that the override will take precedence over all other overrides of the same type and context that don't have **Enforced** set.  
 
 Overrides that apply to a class are applied first, then overrides that apply to a group, and finally overrides that apply to a specific object. The Enforced attribute assures that the override will take precedence when two overrides of the same type and context conflict.  
 
-For example, you have two Windows computers, COMPUTER1 and COMPUTER2. COMPUTER1 is member of GROUP-A and is also member of GROUP-B. COMPUTER2 is not a member of any group. The default threshold for a CPU monitor is 80%.  
+For example, you've two Windows computers, COMPUTER1 and COMPUTER2. COMPUTER1 is member of GROUP-A and is also member of GROUP-B. COMPUTER2 isn't a member of any group. The default threshold for a CPU monitor is 80%.  
 
-You apply an override to the Windows Computer class that changes the CPU monitor threshold to 70%. You create another override to that monitor that applies to GROUP-A and sets the threshold to 90%. At this point, the threshold for COMPUTER1 is 90% and the threshold for COMPUTER2 is 70%.  
+You apply an override to the Windows Computer class that changes the CPU monitor threshold to 70%. You create another override to that monitor that applies to GROUP-A and sets the threshold to 90%. At this point, the threshold for COMPUTER1 is 90%, and the threshold for COMPUTER2 is 70%.  
 
 If you create an override that applies to GROUP-B and sets the threshold to 95%, the resulting threshold for COMPUTER1, which is member of both GROUP-A and GROUP-B, is unpredictable. However, if you used the Enforced attribute on the override that applies to GROUP-B, you ensure that the 95% threshold applies to COMPUTER1.  
 
@@ -116,8 +116,8 @@ If you create an override that applies to COMPUTER1 and sets the threshold to 60
 
 ## Next steps
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md)
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).
 
-- See [How to Import, Export, and Remove an Operations Manager Management Pack](manage-mp-import-remove-delete.md) to perform common administrative tasks with management packs in your management group.
+- To perform common administrative tasks with management packs in your management group, see [How to Import, Export, and Remove an Operations Manager Management Pack](manage-mp-import-remove-delete.md).
 
-- Review [How to Enable Recovery and Diagnostic Tasks](manage-enable-recovery-and-diagnostic-tasks.md) to understand how they can help investigate and auto-remediate issues identified by monitors.  
+- To understand how they can help investigate and auto-remediate issues identified by monitors, review [How to Enable Recovery and Diagnostic Tasks](manage-enable-recovery-and-diagnostic-tasks.md).  

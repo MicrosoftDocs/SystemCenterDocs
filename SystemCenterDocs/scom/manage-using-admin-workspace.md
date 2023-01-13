@@ -3,7 +3,7 @@ title: Using the Administration workspace in Operations Manager
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/03/2017
 ms.custom: na
 ms.prod: system-center
@@ -22,7 +22,7 @@ ms.topic: article
 
 In the System Center - Operations Manager Operations console, the Administration workspace is the primary workspace for administrators. You use the Administration workspace to configure a management group.  
 
-When you first open the Administration workspace or when you click **Administration** in the navigation pane, the Administration Overview opens, which displays task links for any required or optional configuration steps that have not been completed yet.  
+When you first open the Administration workspace or when you select **Administration** in the navigation pane, the Administration Overview opens, which displays task links for any required or optional configuration steps that haven't been completed yet.  
 
 The sections below describe the different options in the Administration workspace and link to more detailed information about the task or option.  
 
@@ -34,7 +34,7 @@ Use **Connected Management Groups** in the Administration workspace to connect a
 For more information, see [Connecting Management Groups in Operations Manager](manage-connecting-mgmtgroups.md).  
 
 ## Device Management  
-You can use **Device Management** to perform configuration of specific management servers, agent-managed computers, agentless-managed computers, UNIX servers, and Linux servers. The following table summarizes the uses of the items in Device Management and provides links to more detailed information.  
+You can use **Device Management** to perform the configuration of specific management servers, agent-managed computers, agentless-managed computers, UNIX servers, and Linux servers. The following table summarizes the uses of the items in Device Management and provides links to more detailed information.  
 
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
@@ -65,7 +65,7 @@ You can use **Network Management** in the Administration workspace to discover n
 |Network Devices Pending Management|To retry or reject discovered network devices that are pending management|[How to Discover Network Devices in Operations Manager](manage-monitor-networkdevice-discover.md)|  
 
 ## Notifications  
-Notifications generate messages or run commands automatically when an alert is raised on a monitored system. By default, notifications for alerts are not configured. For Operations Manager users to be notified immediately when an alert is generated, you need to configure a channel for notifications, add subscribers, and then create a notification.  
+Notifications generate messages or run commands automatically when an alert is raised on a monitored system. By default, notifications for alerts aren't configured. For Operations Manager users to be notified immediately when an alert is generated, you need to configure a channel for notifications, add subscribers, and then create a notification.  
 
 In **Notifications** in the Administration workspace, you can create channels, subscribers, subscriptions, and modify the channels, subscribers, and subscriptions that you create. For more information, see [Subscribing to Alert Notifications](manage-notifications-alert-notifications.md).  
 

@@ -3,7 +3,7 @@ title: Using My Workspace
 description: This article describes how to use My Workspace in the Operations Manager Operations console create personalized views of operational data for your specific needs.
 author: jyothisuri
 ms.author: jsuri
-ms.manager: evansma
+ms.manager: mkluck
 ms.date: 07/18/2018
 ms.custom: na
 ms.prod: system-center
@@ -21,18 +21,18 @@ ms.assetid: 91b1dd4c-6ce2-442b-826f-21a265ed3ac7
 
 ::: moniker-end
 
-My Workspace provides you with a private area in the Operations and Web console that you can customize for your specific needs. Using My Workspace in the Operations console, you can create folders to organize the workspace, add shortcuts to favorite views, save useful searches, and create views that are only visible to you. 
+My Workspace provides you with a private area in the Operations and Web console that you can customize for your specific needs. Using My Workspace in the Operations console, you can create folders to organize the workspace, add shortcuts to favorite views, save useful searches, and create views that are only visible to you.
 
 
 ::: moniker range="sc-om-1807"
-In version 1807, you can create dashboards as well as add an existing dashboard from the Monitoring workspace. See [Using My Workspace in Web console](manage-web-console-my-workspace.md) for additional information.
+In version 1807, you can create dashboards as well as add an existing dashboard from the Monitoring workspace. For more information, see [Using My Workspace in Web console](manage-web-console-my-workspace.md).
 ::: moniker-end
 
 ::: moniker range=">=sc-om-2019"
-You can create dashboards as well as add an existing dashboard from the Monitoring workspace. See [Using My Workspace in Web console](manage-web-console-my-workspace.md) for additional information.
+You can create dashboards and add an existing dashboard from the Monitoring workspace. For more information, see [Using My Workspace in Web console](manage-web-console-my-workspace.md).
 ::: moniker-end
 
-Your configuration of My Workspace will be available to you in any Operations or Web console that you log in to using the same Windows credentials.  
+Your configuration of My Workspace will be available to you in any Operations or Web console that you sign in to using the same Windows credentials.  
 
 ## Create folders in My Workspace  
 
@@ -45,9 +45,9 @@ My Workspace contains two default folders: **Favorite Views** and **Saved Search
     > [!NOTE]  
     > To create a nested folder, right-click the folder in which you want to create a child folder, and then continue to step 2.  
 
-2.  Point to **New** and click **Folder**.  
+2.  Point to **New** and select **Folder**.  
 
-3.  Type a folder name, and then click **OK**.  
+3.  Enter a folder name, and select **OK**.  
 
 ## Add Shortcuts to views  
 
@@ -55,11 +55,11 @@ In My Workspace, you can add shortcuts to any existing views in the Monitoring w
 
 ### To add a view to My Workspace  
 
-1.  In the **Monitoring** workspace, select a view, right-click, and then click **Add to My Workspace**.  
+1.  In the **Monitoring** workspace, select a view, right-click, and select **Add to My Workspace**.  
 
 2.  Specify the folder in My Workspace where you want the view to appear.  
 
-3.  Click **OK**.  
+3.  Select **OK**.  
 
 When you go to My Workspace, you will see the view that you added listed in the navigation pane.  
 
@@ -69,9 +69,9 @@ You can save useful searches in My Workspace to run at any time.
 
 ### To save a search in My Workspace  
 
-1.  Click **Saved Searches**.  
+1.  Select **Saved Searches**.  
 
-2.  In the **Tasks** pane, click **Create New Search**.  
+2.  In the **Tasks** pane, select **Create New Search**.  
 
 3.  In the **Advanced Search** window, select the object type for your search. Your options are:  
 
@@ -95,26 +95,26 @@ You can save useful searches in My Workspace to run at any time.
 
 4.  In the displayed criteria for the object type, select the condition that you want to search against.  
 
-5.  Each condition that you select is added to the **Criteria description**. Click the underlined value in each condition to edit the value. After you edit a value, click **OK** and then edit the next value. Continue until all conditions have values specified.  
+5.  Each condition that you select is added to the **Criteria description**. Select the underlined value in each condition to edit the value. After you edit a value, select **OK** and then edit the next value. Continue until all conditions have values specified.  
 
-6.  Click **Save parameters to My Favorites**.  
+6.  Select **Save parameters to My Favorites**.  
 
-7.  Enter a name for the saved search and click **OK**.  
+7.  Enter a name for the saved search and select **OK**.  
 
-You can run saved searches right-clicking a search in the list and then clicking **Search Now**.  
+You can run saved searches right-clicking a search in the list and then selecting **Search Now**.  
 
 ## Create views  
 
 Views that you create in My Workspace are unique views, not shortcuts to existing views. As an operator, you can create views in the My Workspace pane. You must have the rights of the Author role to create a view in the Monitoring workspace.  
 
 > [!NOTE]  
-> The general instructions in the following procedure do not apply to Diagram, Web Page, or Dashboard views. For more information on creating a view, see the specific view type in [How to Create and Scope Views in Operations Manager](manage-console-scope-views.md).  
+> The general instructions in the following procedure don't apply to Diagram, Web Page, or Dashboard views. For more information on creating a view, see the specific view type in [How to Create and Scope Views in Operations Manager](manage-console-scope-views.md).  
 
 ### To create a view in My Workspace  
 
 1.  Right-click in the folder where you want to store the view and point to **New**. You can select any view type. For more information on the view types available, see [View Types in Operations Manager](manage-console-view-types.md).  
 
-2.  In the view properties, enter a name and description for the view. The view properties dialog box contains two tabs: **Criteria** and **Display**.  
+2.  In the view properties, enter a name and description for the view. The view properties dialog contains two tabs: **Criteria** and **Display**.  
 
     On the **Criteria** tab, in the **Show data related to** field, specify the item to target. The item you select will display related conditions in the **Select conditions** section. For more information, see [Creating and Scoping Views in Operations Manager](manage-console-scope-views.md).  
 
@@ -124,7 +124,7 @@ Views that you create in My Workspace are unique views, not shortcuts to existin
 
 4.  On the **Display** tab, select the columns that you want displayed in the view. You can also specify how to sort the columns and group the items.  
 
-5.  After you have specified the conditions and values for the view, click **OK**. The new view will appear in the navigation pane.  
+5.  After you've specified the conditions and values for the view, select **OK**. The new view will appear in the navigation pane.  
 
 ## Next steps
 

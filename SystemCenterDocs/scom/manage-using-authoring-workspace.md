@@ -3,7 +3,7 @@ title: Using the Authoring Workspace in Operations Manager
 description: This article describes how to use the Operations Manager Operations console to perform authoring tasks.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
@@ -25,7 +25,7 @@ The options in the Authoring workspace allow you to create new monitoring scenar
 Authoring is described in detail in the [Operations Manager Authoring Guide](https://social.technet.microsoft.com/wiki/contents/articles/15251.system-center-management-pack-authoring-guide.aspx). The sections below describe the different options in the Authoring workspace.  
 
 ## Management Pack Templates  
-*Management Pack Templates* allow you to create complete monitoring scenarios with minimal input. Once you complete a wizard, the management pack template creates monitors, rules, and even classes to implement the particular scenario. There is no requirement for you to understand the management pack elements that are created since you can continue to use the template to perform configuration. It will make any necessary modifications to the underlying elements.  
+*Management Pack Templates* allow you to create complete monitoring scenarios with minimal input. Once you complete a wizard, the management pack template creates monitors, rules, and even classes to implement the particular scenario. There's no requirement for you to understand the management pack elements that are created since you can continue to use the template to perform configuration. It will make any necessary modifications to the underlying elements.  
 
 |Elements|Description|  
 |-|-|  
@@ -41,10 +41,10 @@ Authoring is described in detail in the [Operations Manager Authoring Guide](htt
 |Web Application Transaction Monitoring|Create a monitoring test of a Web Application to verify availability and performance.|  
 
 ## Distributed Applications  
-*Distributed Applications* allow you to group together multiple components that are part of a single application. The health of each included object are used to calculate an overall health for the application itself. This health can be used to support alerts, views, and reports.  
+*Distributed Applications* allow you to group together multiple components that are part of a single application. The health of each included object is used to calculate an overall health of the application itself. This health can be used to support alerts, views, and reports.  
 
 ## Groups  
-*Groups* contain a particular set of managed objects. They are used to scope views, reports, and certain monitoring scenarios. Criteria can be provided to automatically populate a group based on properties of the objects, or you can add specific objects to a group.You can create new groups and edit existing groups. You can also view the current members of a group. Once it has been created, a group can be used in the Monitoring workspace for scoping views, the Reporting workspace for scoping reports, or in the Authoring workspace for overrides, management pack templates, or service level objects.  
+*Groups* contain a particular set of managed objects. They are used to scope views, reports, and certain monitoring scenarios. Criteria can be provided to automatically populate a group based on properties of the objects, or you can add specific objects to a group. You can create new groups and edit existing groups. You can also view the current members of a group. Once it has been created, a group can be used in the Monitoring workspace for scoping views, the Reporting workspace for scoping reports, or in the Authoring workspace for overrides, management pack templates, or service level objects.  
 
 ## Management Pack Objects  
 The Management Pack Objects section provides access to the different elements that are available. Depending on the kind of object, you may be able to create new objects, edit existing objects, or view existing objects.  
@@ -62,8 +62,8 @@ The Management Pack Objects section provides access to the different elements th
 
 ## Next steps
 
-* Learn [How to Connect to the Operations and Web Console](manage-consoles-how-to-connect.md) in order to access and interact with the operational data or perform administrative tasks.
+* To learn how to access and interact with the operational data or perform administrative tasks, see [How to Connect to the Operations and Web Console](manage-consoles-how-to-connect.md).
 
 * To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).
 
-* Review [Creating and managing groups](manage-create-manage-groups.md) and learn how to use groups to collect monitoring objects into manageable units for granular configuration management in the management group.  
+* To learn how to use groups to collect monitoring objects into manageable units for granular configuration management in the management group, review [Creating and managing groups](manage-create-manage-groups.md).  

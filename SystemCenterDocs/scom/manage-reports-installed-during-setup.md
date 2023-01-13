@@ -4,7 +4,7 @@ title: Operations Manager Reports Library
 description: This article summarizes the default reports included with Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
@@ -30,7 +30,7 @@ System Center Operations Manager provides the reports described in the following
 ::: moniker range="=sc-om-2019"
 
 >[!NOTE]
-> Reports **Management pack history**, **Management pack objects** and **Overrides tracking** are available from 2019 UR2 and later.
+> Reports **Management pack history**, **Management pack objects**, and **Overrides tracking** are available from 2019 UR2 and later.
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ System Center Operations Manager provides the reports described in the following
 |----------|---------------|  
 |Application Failure Analysis|This report provides detailed failure analysis for a selected application.|  
 |Application Performance Analysis|This report provides detailed performance analysis for a selected application|  
-|Application Status|This report provides daily, weekly and monthly application status summaries.|  
+|Application Status|This report provides daily, weekly, and monthly application status summaries.|  
 |Problems Distribution Analysis|This report shows the distribution of performance, connectivity, security and code problems across all monitored applications, highlighting the applications that are most problematic.|  
 |Summary Failure Analysis|This report provides a breakdown of problems by application.|  
 |Summary Performance Analysis|This report provides a breakdown of performance violations by application.|  
