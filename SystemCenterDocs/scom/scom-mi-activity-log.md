@@ -27,7 +27,7 @@ Activity log events are retained in Azure for 90 days and then deleted. Ther
 
 ## View the activity log 
 
-You can access the activity log from the Azure portal. The menu that you open it from determines its initial filter. You can change the filter to view all other entries. Select  **Add Filter**  to add more properties to the filter. 
+You can access the activity log from the Azure portal. The menu that you open it from determines its initial filter. You can change the filter to view all other entries. Select **Add Filter**  to add more properties to the filter. 
 
 For more information on activity log categories, see [Azure activity log event schema](/azure/azure-monitor/essentials/activity-log-schema#categories).
 

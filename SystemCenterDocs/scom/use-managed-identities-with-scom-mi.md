@@ -17,7 +17,7 @@ monikerRange: 'sc-om-2022'
 
 A common challenge when building cloud applications is how to securely manage the credentials in your code for authenticating various services without saving them locally on a developer workstation or in source control. 
 
-*Managed identities for Azure* solve this problem for all your resources in Azure Active Directory by providing them with automatically managed identities. You can use a service's identity to authenticate any service that supports Azure Active Directory authentication, including Key vault, without  sorting any credentials in your code. 
+*Managed identities for Azure* solve this problem for all your resources in Azure Active Directory by providing them with automatically managed identities. You can use a service's identity to authenticate any service that supports Azure Active Directory authentication, including Key vault, without sorting any credentials in your code. 
 
 >[!Note]
 >- *Managed identities for Azure* are the new name for the service formerly known as Managed Service Identity (MSI).
@@ -45,7 +45,7 @@ For more information on Managed identity types, see  [How do managed identitie
 
 ## Supported scenarios for SCOM Managed Instance (preview)
 
-SCOM Managed Instance (preview) supports both System Assigned Managed Identity and User Assigned Managed Identity for the SCOM Managed Instances (preview) deployed in Azure. SCOM Managed Instance (preview) creates other dependency resources like Virtual Machine Scale Sets (VMSS) cluster to host management servers. SCOM Managed Instance (preview) onboarded the Managed identities with HOBO v2, so that the assigned Identity will be delegated to the underlying infrastructure for authenticating with sink resources. These Identities are used to authenticate other Azure services in different scenarios. 
+SCOM Managed Instance (preview) supports both System Assigned Managed Identity and User Assigned Managed Identity for the SCOM Managed Instances (preview) deployed in Azure. SCOM Managed Instance (preview) creates other dependency resources like Virtual Machine Scale Sets (VMSS) cluster to host management servers. SCOM Managed Instance (preview) onboarded the Managed identities with HOBO v2 so that the assigned Identity will be delegated to the underlying infrastructure for authenticating with sink resources. These Identities are used to authenticate other Azure services in different scenarios. 
 
 - System Assigned Managed Identity
 
@@ -65,7 +65,7 @@ Create a [Managed Service identity](/system-center/scom/create-operations-manage
 
 ## Create a Key vault and add Credentials as a secret in the Key vault  
 
-Store the domain account you create in the Active Directory in a Key vault account for security. Azure Key Vault is a cloud service that provides a secure store for keys, secrets, and certificates. For more information, see  [Azure Key vault](/azure/key-vault/general/overview).
+Store the domain account you create in the Active Directory in a Key vault account for security. Azure Key Vault is a cloud service that provides a secure store for keys, secrets, and certificates. For more information, see [Azure Key vault](/azure/key-vault/general/overview).
 
 - Create a [Key vault](/azure/key-vault/general/quick-create-portal).
 - Create a [Secret for the domain account](/azure/key-vault/secrets/quick-create-portal).
