@@ -37,10 +37,10 @@ The following table shows Operations Manager feature interaction across a firewa
 |Management server|1433/TCP ---><br>  1434/UDP ---> <br> 135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Reporting data warehouse|No|Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>2</sup>|
 |Reporting server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
 |Operations console|5724 --->|management server|No||
-|Operations console|443 --->|Management Pack Catalog web service|No|Supports downloading management packs directly in the console from the catalog.<sup>1</sup>|
+|Operations console|80, 443 --->|Management Pack Catalog web service|No|Supports downloading management packs directly in the console from the catalog.<sup>[1](#footnote1)</sup>|
 |Connector framework source|51905 --->|management server|No||
 |Web console server|5724 --->|management server|No||
-|Web console browser|80,443 --->|web console server|Yes (IIS Admin)|Default ports for HTTP or SSL enabled.|
+|Web console browser|80, 443 --->|web console server|Yes (IIS Admin)|Default ports for HTTP or SSL enabled.|
 |Web console for Application Diagnostics|1433/TCP ---><br>  1434 --->|Operations Manager database|Yes (Setup) <sup>2</sup>||
 |Web console for Application Advisor|1433/TCP ---><br>  1434 --->|Reporting data warehouse|Yes (Setup) <sup>2</sup>||
 |Connected management server (Local)|5724 --->|connected management server (Connected)|No||
@@ -58,7 +58,10 @@ The following table shows Operations Manager feature interaction across a firewa
 |Reporting server|1433/TCP ---><br>  1434/UDP --->|Reporting data warehouse|Yes <sup>2</sup>||
 |Management server (Audit Collection Services collector)|1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes <sup>2</sup>||
 
-- Additionally, the following URL must be allowed by your firewall - https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx.
+> <a name="footnote1"></a> Note 1: Management Pack Catalog web service
+> - The following URLs must be allowed by your firewall to allow the Management Pack Catalog web service to be accessible:
+>   1. https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx
+>   2. http://go.microsoft.com/fwlink/?LinkId=148038&clcid=0x409
 
 - If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it's configured with a dynamic port. To identify the port, do the following:
 
