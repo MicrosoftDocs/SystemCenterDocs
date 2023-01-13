@@ -78,9 +78,9 @@ VMM 2022 UR1 supports VMware Vsphere 7.0 and ESXI 7.0. [Learn more](/system-cent
 
 VMM 2022 UR1 supports SQL Server 2022. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
 
-### Support for Smart card login in SCVMM Console
+### Support for Smart card sign in in SCVMM Console
 
-VMM 2022 UR1 supports Smart card login with enhanced session mode in SCVMM Console. 
+VMM 2022 UR1 supports Smart card sign in with enhanced session mode in SCVMM Console. 
 
 ### SR-IOV support for Network Controller managed NICs
 
