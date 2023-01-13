@@ -1,12 +1,12 @@
 ---
 title: What's new in System Center Orchestrator
 description: This article describes the new features and other changes in System Center Orchestrator.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 01/15/2021
+ms.date: 11/22/2022
 ms.technology: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: '>sc-orch-2016'
@@ -17,7 +17,7 @@ ms.custom: intro-whats-new
 
 ::: moniker range="sc-orch-2022"
 
-This article details the new features supported in System Center 2022 - Orchestrator.
+This article details the new features supported in System Center 2022 - Orchestrator and Orchestrator 2022 UR1.
 
 ::: moniker-end
 
@@ -60,6 +60,10 @@ Earlier versions of System Center Orchestrator supported PowerShell V2.0. PowerS
 
 ## Support for SQL 2017
 System Center Orchestrator 2019 supports SQL 2017 for fresh installation.
+
+## Support for SQL Server 2022
+
+Orchestrator 2019 support SQL Server 2022.
 
 ## Other Improvements
 -  Latest Putty: No workaround needed to SSH to the latest Linux/Unix machines.
@@ -117,6 +121,24 @@ The new web API is JSON based and makes it easier to use than the older XML-base
 ### Orchestrator is now a 64-bit application
 
 Support for 64 bit enables the use of 64-bit assemblies, Integration Packs, and PowerShell cmdlets.
+
+## New features in Orchestrator 2022 UR1
+
+The following sections introduce the new features and feature updates supported in Orchestrator 2022 Update Rollup 1 (UR1).
+
+### Issues fixed and Improvements in SCO 2022 Update Rollup 1
+
+For issues fixed in Orchestrator 2022 UR1, and installation instructions for UR1, see the [KB article](https://support.microsoft.com/KB/5021420).
+
+#### Support for SQL Server 2022
+
+Orchestrator 2022 supports SQL Server 2022. [Learn more](/system-center/orchestrator/system-requirements-orch#sql-server).
+
+#### Support for .NET Core 6
+
+Orchestrator 2022 UR1 depends on .NET Core 6. 
+
+Ensure .NET Core 6 and Hosting Bundle are installed when you upgrade from RTM. [Learn more](/system-center/orchestrator/system-requirements-orch#net-requirements).
 
 ::: moniker-end
 
