@@ -138,7 +138,6 @@ To delete a credential:
 
 DPM communicates with the VMware server securely over an HTTPS channel. To create the secure communication, install a trusted certificate on both the VMware server and the DPM server. If the connection to your vCenter isn't secure, you can secure it by installing a certificate on the DPM server. Use the same certificate to make a secure connection with the VMware server.
 
-
 To verify there's a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you are using Chrome, and you do not have a valid certificate you see the strikethrough in the URL, like this example:
 
 ![Screenshot of no secure communication channel on Chrome.](./media/back-up-vmware/secure-communication-chrome.png)

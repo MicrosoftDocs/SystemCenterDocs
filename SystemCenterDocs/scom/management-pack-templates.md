@@ -4,7 +4,7 @@ title: Management pack templates in Operations Manager management pack
 description: This article provides an overview of management pack templates
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center
@@ -20,15 +20,15 @@ ms.topic: article
 
 ::: moniker-end
 
-_Management Pack Templates_ provide _Monitoring wizards_ that let you create complete monitoring scenarios with minimal input. The wizard creates the required monitors, rules, and even targets to implement the particular scenario. There is no requirement for you to understand the management pack elements that are created. You can modify the configuration of the wizard itself if you want to change the way that monitoring is being performed.
+_Management Pack Templates_ provide _Monitoring wizards_ that let you create complete monitoring scenarios with minimal input. The wizard creates the required monitors, rules, and even targets to implement the particular scenario. There's no requirement for you to understand the management pack elements that are created. You can modify the configuration of the wizard itself if you want to change the way that monitoring is being performed.
 
-## Conceptual view of a monitoring wizards
+## Conceptual view of a monitoring wizard
 
-![Conceptual view of monitoring wizard](./media/conceptual-view-monitoring-wizard.png)
+![Illustration showing the Conceptual view of monitoring wizard.](./media/conceptual-view-monitoring-wizard.png)
 
-If a management pack template is available for your particular monitoring requirement, using the template most likely is your best strategy. In many cases, you could create the individual rules and monitors yourself, but this exercise is significantly more complex than using an available template. In addition, some templates perform actions that you cannot perform in any other way in the Operations console.
+If a management pack template is available for your particular monitoring requirement, using the template most likely is your best strategy. In many cases, you could create the individual rules and monitors yourself, but this exercise is more complex than using an available template. In addition, some templates perform actions that you can't perform in any other way in the Operations console.
 
-The following table lists the management pack templates that are part of the standard Operations Manager installation. You can install other management packs that might provide additional templates. Each of these templates is covered in detail in subsequent sections of this guide.
+The following table lists the management pack templates that are part of the standard Operations Manager installation. You can install other management packs that might provide additional templates. Each of these templates is covered in detail in the subsequent sections of this article.
 
 | Template | Description |
 | --- | --- |
