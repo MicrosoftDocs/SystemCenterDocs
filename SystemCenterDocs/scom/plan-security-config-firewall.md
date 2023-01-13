@@ -37,7 +37,7 @@ The following table shows Operations Manager feature interaction across a firewa
 |Management server|1433/TCP ---><br>  1434/UDP ---> <br> 135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Reporting data warehouse|No|Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>2</sup>|
 |Reporting server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
 |Operations console|5724 --->|management server|No||
-|Operations console|80, 443 --->|Management Pack Catalog web service|No|Supports downloading management packs directly in the console from the catalog.<sup>[1](#footnote1)</sup>|
+|Operations console|80, 443 ---><br>49152-65535 TCP <--->|Management Pack Catalog web service|No|Supports downloading management packs directly in the console from the catalog.<sup>[1](#footnote1)</sup>|
 |Connector framework source|51905 --->|management server|No||
 |Web console server|5724 --->|management server|No||
 |Web console browser|80, 443 --->|web console server|Yes (IIS Admin)|Default ports for HTTP or SSL enabled.|
