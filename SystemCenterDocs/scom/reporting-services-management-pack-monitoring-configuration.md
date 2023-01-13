@@ -199,12 +199,12 @@ Or use the following PowerShell script to enable debugging in automated mode:
 
 ```PowerShell
 $SCOMRoot = 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\'
-$MPDebugKey = Join-Path -Path $ScomRoot -ChildPath 'SQL Management Packs\EnableEvtLogDebugOutput\SQL Server Reporting Services MP'
-$AgRoot = Join-Path -Path $ScomRoot -ChildPath 'Agent Management Groups'
-$SrvRoot = Join-Path -Path $ScomRoot -ChildPath 'Server Management Groups'
+$MPDebugKey = Join-Path -Path $SCOMRoot -ChildPath 'SQL Management Packs\EnableEvtLogDebugOutput\SQL Server Reporting Services MP'
+$AgRoot = Join-Path -Path $SCOMRoot -ChildPath 'Agent Management Groups'
+$SrvRoot = Join-Path -Path $SCOMRoot -ChildPath 'Server Management Groups'
 $searchPath = if (Test-Path $AgRoot) { $AgRoot } else { $SrvRoot }
 
-if (-not(Test-Path $ScomRoot)) {
+if (-not(Test-Path $SCOMRoot)) {
     Write-Error 'The Microsoft Operations Manager or Monitoring Agent is not installed.' -ErrorAction Stop
 }
 
