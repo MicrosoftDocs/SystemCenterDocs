@@ -13,7 +13,7 @@ ms.technology: operations-manager
 ms.topic: conceptual
 ---
 
-# How to upgrade Operations Manager databases to SQL Server 2022
+# Upgrade Operations Manager databases to SQL Server 2022
 
 Operations Manager 2022 UR1 supports SQL 2022.
 
