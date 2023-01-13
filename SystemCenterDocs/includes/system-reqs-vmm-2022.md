@@ -4,8 +4,8 @@ title: include file
 description: include article to detail the system requirements for VMM 2022
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 12/02/2021
+manager: mkluck
+ms.date: 01/13/2023
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -119,8 +119,8 @@ Windows Server 2022 | Y | Y | Y | Y
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 6.5, 6.7, 7.0 (supported from VMM 2022 UR1)
-vCenter | 6.5, 6.7, 7.0 (supported from VMM 2022 UR1)
+ESX | ESX/ESXi 6.5, 6.7<br/>7.0, 8.0 (supported from VMM 2022 UR1)
+vCenter | 6.5, 6.7<br/>7.0, 8.0 (supported from VMM 2022 UR1)
 Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 
 ## VMs in the VMM fabric

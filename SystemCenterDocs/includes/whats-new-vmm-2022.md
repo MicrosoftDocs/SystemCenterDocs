@@ -4,8 +4,8 @@ title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 11/08/2022
+manager: mkluck
+ms.date: 01/13/2023
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -98,3 +98,6 @@ VMM 2022 UR1 allows you to discover Arc-enabled SCVMM from console and manage yo
 
 VMM 2022 UR1 supports 64 virtual networks for Windows Server 2019 or later.  
 
+### Support for VMware Vsphere 8.0 and ESXI 8.0
+
+VMM 2022 UR1 supports VMware Vsphere 8.0 and ESXI 8.0. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
