@@ -4,8 +4,8 @@ title: What's new in System Center Virtual Machine Manager
 description: This article describes the new features supported in VMM
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 11/08/2022
+manager: mkluck
+ms.date: 01/16/2023
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -70,17 +70,17 @@ Most of the operations to manage Azure Stack clusters in VMM are similar to mana
 
 See [Deploy and manage Azure Stack HCI clusters in VMM](/system-center/vmm/deploy-manage-azure-stack-hci).
 
-### Support for VMware Vsphere 7.0 and ESXI 7.0
+### Support for VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0
 
-VMM 2022 UR1 supports VMware Vsphere 7.0 and ESXI 7.0. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
+VMM 2022 UR1 supports VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
 
 ### Support for SQL Server 2022
 
 VMM 2022 UR1 supports SQL Server 2022. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
 
-### Support for Smart card login in SCVMM Console
+### Support for Smart card sign in in SCVMM Console
 
-VMM 2022 UR1 supports Smart card login with enhanced session mode in SCVMM Console. 
+VMM 2022 UR1 supports Smart card sign in with enhanced session mode in SCVMM Console. 
 
 ### SR-IOV support for Network Controller managed NICs
 
@@ -97,4 +97,3 @@ VMM 2022 UR1 allows you to discover Arc-enabled SCVMM from console and manage yo
 ### Support for 64 virtual networks for Windows Server 2019 or later
 
 VMM 2022 UR1 supports 64 virtual networks for Windows Server 2019 or later.  
-
