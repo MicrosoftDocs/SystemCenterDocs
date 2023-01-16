@@ -1,7 +1,7 @@
 ---
 ms.assetid:
 title: How to create a dashboard with the Alert widget in the Web console
-description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Alert widget.
+description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the Alert widget.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -95,7 +95,7 @@ For one or more alerts selected in the widget, you can perform such actions as:
 
 To perform these actions, hover your mouse over the widget, and click on the ellipsis **...** on the top right corner of the widget. This will display actions available for the widget.
 
-   * Select **Set resolution state** and select one or multiple alerts by selecting the checkbox in the first column on the left, for each alert resolution state you are going to change. Select the resolution state from the dropdown list and select **Save**.  
+   * Select **Set resolution state** and select one or multiple alerts by selecting the checkbox in the first column on the left, for each alert resolution state you're going to change. Select the resolution state from the dropdown list and select **Save**.  
    * Select **Export to Excel** to export the alert data to an Excel file.  
    * Select **Personalize** to change your selection of columns to be displayed or to group alerts. Select **Save personalization** when you've completed making your changes.  
 
@@ -140,7 +140,7 @@ The **Sort by** option is available under **Edit** > **Personalize**.
 3. Select the columns for sorting under **Sort by**, and select the **Order** (Ascending or Descending).
 4. Select **Save the settings**.
 
-Here is a sample view:
+Here's a sample view:
 
 ![Screenshot showing Personalize alert.](./media/create-web-dashboard-alerts/personalize-alert.png)
 

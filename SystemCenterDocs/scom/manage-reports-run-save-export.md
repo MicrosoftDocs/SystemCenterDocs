@@ -62,7 +62,7 @@ Use the following procedure to run a report from the Reporting workspace. In thi
 
 ## How to save a report   
 
-When you run a report, you can save the report to **Favorite Reports** or you can it into an existing management pack. A report saved to **Favorite Reports** is only visible to you. Saving a report to an unsealed management pack is useful if you need to share with report users that includes a specific set of parameters.  
+When you run a report, you can save the report to **Favorite Reports** or you can save it into an existing management pack. A report saved to **Favorite Reports** is only visible to you. Saving a report to an unsealed management pack is useful if you need to share with report users that include a specific set of parameters.  
 
 The following steps outline the procedure for saving a report to a management pack:  
 
@@ -89,7 +89,7 @@ After the wizard completes, the management pack is saved to Operations Manager a
 
 ## How to export a Report
 
-After a report has been run, you can export the report into one of several formats supported by SQL Server Reporting Services.  To learn about what formats are supported by SQL Server Reporting Services, please review [Export Reports](/sql/reporting-services/report-builder/export-reports-report-builder-and-ssrs)
+After a report has been run, you can export the report into one of several formats supported by SQL Server Reporting Services.  To learn about what formats are supported by SQL Server Reporting Services, review [Export Reports](/sql/reporting-services/report-builder/export-reports-report-builder-and-ssrs)
 
 > [!NOTE]  
 > Operations Manager Reporting must be installed before you can run a report.  

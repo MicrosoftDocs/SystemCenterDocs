@@ -19,7 +19,7 @@ ms.topic: article
 
 ::: moniker-end
 
-A dashboard has a particular layout, which specifies the arrangement of the cells that actually host content.  Each cell in a dashboard can contain a single widget.  A widget accesses a particular set of data or performs a particular function and presents its information in the dashboard.  Each widget provides a specific set of customizations that you can modify according to your particular requirements.  Depending on the Dashboard Layout that you select, the dashboard may have a fixed set of widgets or may allow you to define a number of configurations of cells that can each contain a widget of your choice.
+A dashboard has a particular layout, which specifies the arrangement of the cells that actually host content.  Each cell in a dashboard can contain a single widget.  A widget accesses a particular set of data or performs a particular function and presents its information in the dashboard.  Each widget provides a specific set of customizations that you can modify according to your particular requirements.  Depending on the Dashboard Layout that you select, the dashboard may have a fixed set of widgets or may allow you to define many configurations of cells that can each contain a widget of your choice.
 
 
 ::: moniker range="=sc-om-2019"
@@ -45,14 +45,14 @@ Dashboards in Operations Manager deliver the following benefits:
 
 ## Dashboard templates
 
-The first thing that you must specify when you create a dashboard is its template, which will define the widgets that'll be included in the dashboard and their layout. You can't change the dashboard's template once it has been created.  The following sections provide details on the available templates.  Additional templates may be provided with subsequent versions of Operations Manager or from third parties.
+The first thing that you must specify when you create a dashboard is its template, which will define the widgets that will be included in the dashboard and their layout. You can't change the dashboard's template once it has been created.  The following sections provide details on the available templates.  Additional templates may be provided with subsequent versions of Operations Manager or from third parties.
 
 ### Service Level dashboard
 
 A Service Level Dashboard displays information on one or more Service Level Agreements and their included Service Level Objectives.  You can't configure the individual components but can edit the configuration of the dashboard to define the SLAs and time period to include.
 
 - Service Level component that lists the SLAs that you selected for the dashboard.  
-- Service Level Objectives (SLOs) component which lists the SLOs for the SLA that is selected in the Service Level cell.  
+- Service Level Objectives (SLOs) component, which lists the SLOs for the SLA that is selected in the Service Level cell.  
 - Service Level Details component that displays a speedometer visualization for the current measure of the selected SLO and a line chart showing the history of the measure.
 
 ### Summary dashboard
@@ -81,11 +81,11 @@ Instance Details Widget (Object Details) that displays the details of the targe
 
 ### Column layout
 
-A Column Layout is an empty dashboard that allows you to set your own layout and add and configure your own set of widgets. When you create the dashboard, you specify the number of columns that it'll have. The dashboard will start with one cell in each column. You can add additional cells by selecting the gear icon at the top right of the dashboard and selecting Add Cell.
+A Column Layout is an empty dashboard that allows you to set your own layout and add and configure your own set of widgets. When you create the dashboard, you specify the number of columns that it will have. The dashboard will start with one cell in each column. You can add more cells by selecting the gear icon at the top right of the dashboard and selecting Add Cell.
 
 ### Grid layout
 
-A Grid Layout is an empty dashboard that allows you to set your own layout and add and configure your own set of widgets.  When you create the dashboard, you specify the number of cells that it'll have and select a layout for the cells. You can change the layout of the cells after the dashboard has been created, but you can't change the number of cells.
+A Grid Layout is an empty dashboard that allows you to set your own layout and add and configure your own set of widgets.  When you create the dashboard, you specify the number of cells that it will have and select a layout for the cells. You can change the layout of the cells after the dashboard has been created, but you can't change the number of cells.
 
 ## Dashboard widgets
 
@@ -118,7 +118,7 @@ SLA Tiles | Displays an SLA tile showing the last Service Level Objective value 
 Topology | Displays an icon for one or more objects on a selected image. | Operations DB | N/A|
 Web Browser | Displays a web, optionally sending the ID of the management group, the ID of an object selected in another widget in the dashboard, and the ID of an alert selected in another widget in the dashboard.  This allows you to create a web page that could use the Operations Manager SDK to retrieve information or perform some other action dynamically in response to a user selection in the dashboard. | Operational DB | N/A|
 
-For more details of each widget and the configurable properties available, please see [Operations Manager Dashboard Widgets](https://social.technet.microsoft.com/wiki/contents/articles/24133.operations-manager-dashboard-widgets.aspx) from the Management Pack Authoring Guide.
+For more details of each widget and the configurable properties available, see [Operations Manager Dashboard Widgets](https://social.technet.microsoft.com/wiki/contents/articles/24133.operations-manager-dashboard-widgets.aspx) from the Management Pack Authoring Guide.
 
 ## Next steps
 

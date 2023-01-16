@@ -4,7 +4,7 @@ title: How to create a dashboard with the Custom widget in the Web console
 description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Custom widget.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
@@ -26,7 +26,7 @@ In System Center Operations Manager, the Web console provides a monitoring inter
 ::: moniker range="sc-om-2019"
 
 >[!NOTE]
-> Operations Manager 2019 UR1 and later supports Cross-Site Request Forgery (CSRF) tokens to prevent CSRF attacks.  If you are using Operations Manager 2019 UR1 or later, you must initialize the CSRF token. HTML scripts do not work without the initialization of CSRF token.
+> Operations Manager 2019 UR1 and later supports Cross-Site Request Forgery (CSRF) tokens to prevent CSRF attacks.  If you're using Operations Manager 2019 UR1 or later, you must initialize the CSRF token. HTML scripts don't work without the initialization of CSRF token.
 
 ## Initialize the CSRF token
 Required action, applicable for Operations Manager 2019 UR1 and later.
@@ -50,7 +50,7 @@ var requestHeaders = {
         }
 ```
 
-2. In the onload function, change the header value to **requestHeaders**. If the header value does not exist, add it as shown below.
+2. In the onload function, change the header value to **requestHeaders**. If the header value doesn't exist, add it as shown below.
 
 **Example:**
 
@@ -59,17 +59,17 @@ var requestHeaders = {
 ::: moniker-end
 
 ## Using the Operations Manager REST API reference
-Use the REST API reference to learn about available operations you can perform with the custom widget to present operational data in the dashboard.  If you're new to REST API, take a look at the information on [getting started with this API](/rest/operationsmanager), if you haven't already seen it.
+Use the REST API reference to learn about available operations you can perform with the custom widget to present operational data in the dashboard. If you're new to REST API, take a look at the information on [getting started with this API](/rest/operationsmanager) if you haven't already seen it.
 
 ## Script structure
 A Custom Widget script has three major sections:
 
 1. Defining the REST API and its properties. This section defines what data needs to be retrieved from Operations Manager for visualization, such as alerts, state, or performance data.
 2. Specify business logic to identify the results to present in the visualization, such as identifying a class or group, conditions such as severity, health state, or a specific performance object instance.
-3. Third-party visualization, which is open-source libraries hosted on cloudflare.com that are required to render the data, depending on the chart type selected.   
+3. Third-party visualization, which is open-source libraries hosted on cloudflare.com that are required to render the data depending on the chart type selected.
 
 ### Widget properties
-In order for the script to query and return data in the visualization, the **URL** parameter specifies the address of the Operations Manager Web console and the data type.  The URL syntax is *http://\<servername\>/operationsmanager/data/\<dataitem\>* and value for **dataitem** is one of the following:
+In order for the script to query and return data in the visualization, the **URL** parameter specifies the address of the Operations Manager Web console and the data type.  The URL syntax is *http://\<servername\>/operationsmanager/data/\<dataitem\>* and the value for **dataitem** is one of the following:
 
 * *alert* represents a monitoring alert
 * *state* represents monitoring health state data
@@ -95,7 +95,7 @@ In order for the script to query and return data in the visualization, the **URL
 To scope the monitoring data for each data type, you can select a class to see all instances of that class, or to see only a subset of objects of the selected class, you can also include a group.  For example, to specify all objects of class Windows Server DC Computer, you would modify the property value for *classId*.
 
 >[!NOTE]
->This is only applicable to state data, not alert or performance.  For performance data, you specify a group or monitored object.
+>This is only applicable to state data, not alert or performance.  For performance data, specify a group or monitored object.
 
 ```
 <!DOCTYPE HTML>
@@ -139,7 +139,7 @@ To specify a group that contains a subset of objects of the same class specified
                     "objectIds": { "3c8ac4f3-475e-44dd-4163-8a97af363705": -1 }),
 ```
 
-Once you have specified the target class and optionally a group to further scope the results, you then specify the criteria to limit the type of data to display according to the values of one or more properties.   
+Once you've specified the target class and optionally a group to further scope the results, you can then specify the criteria to limit the type of data to display according to the values of one or more properties.
 
 ## Widget examples
 The widget supports rendering monitoring data in the following chart types:
@@ -912,28 +912,28 @@ var totalCounter =0;
 ## Add widget to dashboard
 
 1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
-2. From the left pane in the Web console, click **+ New dashboard**.<br><br> ![Select New Dashboard in Web console](./media/create-web-dashboard-alerts/web-console-new-dashboard-01.png)<br>
+2. From the left pane in the Web console, select **+ New dashboard**.<br><br> ![Screenshot showing select New Dashboard in Web console.](./media/create-web-dashboard-alerts/web-console-new-dashboard-01.png)<br>
 3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
 
-    ![Specify name and description for new dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
+    ![Screenshot showing specify name and description for new dashboard.](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
 
-4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** drop-down list or you can save the dashboard by creating a new management pack by clicking **New** next to the **Management Pack** drop-down list and provide a name, description, and optionally a version number.
+4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** dropdown list or you can save the dashboard by creating a new management pack by selecting **New** next to the **Management Pack** dropdown list and provide a name, description, and optionally a version number.
 
-    ![Specify name and description for new MP](./media/create-web-dashboard-alerts/web-console-new-dashboard-03.png)
+    ![Screenshot showing Specify name and description for new MP.](./media/create-web-dashboard-alerts/web-console-new-dashboard-03.png)
 
-5. When you have completed specifying where to save the new dashboard to, click **OK**.
-6. Click **Save** after providing a name and description for the new dashboard.
-7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard** and **View in fullscreen** options on the top of the page.
+5. When you've completed specifying where to save the new dashboard to, select **OK**.
+6. Select **Save** after providing a name and description for the new dashboard.
+7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard**, and **View in fullscreen** options at the top of the page.
 
-    ![New dashboard canvas](./media/create-web-dashboard-alerts/web-console-new-dashboard-04.png)
+    ![Screenshot showing New dashboard canvas.](./media/create-web-dashboard-alerts/web-console-new-dashboard-04.png)
 
-8. Select **Custom Widget** from the **Select Widget** drop-down list.
-9. In the Custom widget pane, select criteria for the widget adding the HTML code using one of the earlier examples, to visualize monitoring data in one of the supported chart visualizations.
+8. Select **Custom Widget** from the **Select Widget** dropdown list.
+9. In the Custom widget pane, select criteria for the widget adding the HTML code using one of the earlier examples to visualize monitoring data in one of the supported chart visualizations.
 
-    ![Configure the Custom widget for dashboard](./media/create-web-dashboard-custom/web-console-new-dashboard-custom.png)
+    ![Screenshot showing Configure the Custom widget for dashboard.](./media/create-web-dashboard-custom/web-console-new-dashboard-custom.png)
 
-10. Complete the configuration by providing a **Name**, **Description**, and **Widget refresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
+10. Complete the configuration by providing a **Name**, **Description**, and **Widget refresh interval** (default interval is 5 minutes) for the widget. Select **Save Widget** to save your new dashboard.  
 
-After the widget has been created, it displays the output of the HTLM code.
+After the widget has been created, it displays the output of the HTML code.
 
-![Completed example of Tile widget in dashboard](./media/create-web-dashboard-custom/web-console-new-dashboard-custom-01.png)
+![Screenshot showing Completed example of Tile widget in dashboard.](./media/create-web-dashboard-custom/web-console-new-dashboard-custom-01.png)

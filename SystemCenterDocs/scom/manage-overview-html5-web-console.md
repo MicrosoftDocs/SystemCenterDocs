@@ -28,7 +28,7 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 ::: moniker range="sc-om-2019"
 
-   Additional view options are included in Alert and State widget from 2019 UR3. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+   Additional view options are included in Alert and State widget from 2019 UR3. For more information, see [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 20.	Delete HTML5 dashboards from the Web console; you can create dashboards or views to My workspace.  In version 1801, you can add dashboards or views to My Workspace from the monitoring tree.
 
-21.	The IIS web server hosting the Web console role can be setup with network authentication mode and users can access the Web console using network authentication.
+21.	The IIS web server hosting the Web console role can be set up with network authentication mode and users can access the Web console using network authentication.
 
 22.	You can provide feedback on HTML5 dashboards from within the Web console.
 

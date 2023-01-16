@@ -68,7 +68,7 @@ For more information on how to run and save a report, see [How to Run, Save, and
 
 ## How to Email scheduled reports
 
-The report server e-mail delivery extension isn't configured by default. You must use the Reporting Services Configuration Manager to minimally configure the extension.  For additional  information on how to configure SQL Server Reporting Services for e-mail delivery, see [Configure a Report Server for E-Mail Delivery (SSRS Configuration Manager)](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager).
+The report server e-mail delivery extension isn't configured by default. You must use the Reporting Services Configuration Manager to minimally configure the extension.  For more  information on how to configure SQL Server Reporting Services for e-mail delivery, see [Configure a Report Server for E-Mail Delivery (SSRS Configuration Manager)](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager).
 
 
 ### Configure email settings in the SQL Server Report Server  
@@ -152,7 +152,7 @@ Use the following procedure to cancel scheduled reports.
 
 4.  In the **Scheduled Reports** pane, right-click the scheduled report you want to cancel, and select **Cancel Schedule**.  
 
-5.  In the **System Center Operations Manager** dialog box, click **OK** to confirm the deletion of your schedule or click **No** to keep your schedule.  
+5.  In the **System Center Operations Manager** dialog, select **OK** to confirm the deletion of your schedule or select **No** to keep your schedule.  
 
 
 ## Schedule the delivery of a report to the SQL Report Server Cache  
