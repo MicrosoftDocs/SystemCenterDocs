@@ -122,7 +122,7 @@ The management pack object report contains the following fields and values:
 
 | **Field** | **Description** |
 | --- | --- |
-| **Management pack name** | Name of the management pack to which the changed objects belong to. |
+| **Management pack name** | Name of the management pack to which the changed objects belong. |
 | **Object Name** | Name of the object, which was created/deleted/edited. |
 | **Object Type** | Type of the object. Example: Monitor/Rule/Group/Module. |
 | **Affected property** | The property of the object that was edited. |
