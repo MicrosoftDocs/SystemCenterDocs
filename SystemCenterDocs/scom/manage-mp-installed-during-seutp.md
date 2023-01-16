@@ -4,7 +4,7 @@ title: Management Packs Installed with Operations Manager
 description: This article describes what management packs are installed with Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-When you install Operations Manager, a component of System Center, a number of management packs are installed as well. The following table describes the purposes of those management packs.  
+When you install Operations Manager, a component of System Center, many management packs are installed as well. The following table describes the purposes of those management packs.  
 
 |Purpose|Associated management packs|  
 |-----------|-------------------------------|  
@@ -44,12 +44,12 @@ The following unsealed management packs are included in Operations Manager:
 
 -   Network Discovery Internal Management Pack  
 
-Do not save any settings, views, or overrides to these management packs. You should create your own local pack, which is an unsealed management pack in which to store your customizations. As a best practice, you should create a separate local pack for each sealed management pack you customize.  
+Don't save any settings, views, or overrides to these management packs. You should create your own local pack, which is an unsealed management pack in which to store your customizations. As a best practice, you should create a separate local pack for each sealed management pack you customize.  
 
 ## Next steps
 
-- To understand the basic concepts for managing the monitoring configuration of an application or service defined in a management pack, see [Management Pack Lifecycle](~/scom/manage-mp-lifecycle.md)  
+- To understand the basic concepts for managing the monitoring configuration of an application or service defined in a management pack, see [Management Pack Lifecycle](~/scom/manage-mp-lifecycle.md).
 
-- See [How to import, export and remove a management pack](~/scom/manage-mp-import-remove-delete.md) to perform common administrative tasks with management packs in your management group.
+- To perform common administrative tasks with management packs in your management group, see [How to import, export and remove a management pack](~/scom/manage-mp-import-remove-delete.md).
 
 - To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](~/scom/manage-mp-create-unsealed-mp.md).  
