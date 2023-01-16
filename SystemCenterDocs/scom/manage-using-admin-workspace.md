@@ -3,7 +3,7 @@ title: Using the Administration workspace in Operations Manager
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/03/2017
 ms.custom: na
 ms.prod: system-center
@@ -22,7 +22,7 @@ ms.topic: article
 
 In the System Center - Operations Manager Operations console, the Administration workspace is the primary workspace for administrators. You use the Administration workspace to configure a management group.  
 
-When you first open the Administration workspace or when you click **Administration** in the navigation pane, the Administration Overview opens, which displays task links for any required or optional configuration steps that have not been completed yet.  
+When you first open the Administration workspace or when you select **Administration** in the navigation pane, the Administration Overview opens, which displays task links for any required or optional configuration steps that haven't been completed yet.  
 
 The sections below describe the different options in the Administration workspace and link to more detailed information about the task or option.  
 
@@ -34,7 +34,7 @@ Use **Connected Management Groups** in the Administration workspace to connect a
 For more information, see [Connecting Management Groups in Operations Manager](manage-connecting-mgmtgroups.md).  
 
 ## Device Management  
-You can use **Device Management** to perform configuration of specific management servers, agent-managed computers, agentless-managed computers, UNIX servers, and Linux servers. The following table summarizes the uses of the items in Device Management and provides links to more detailed information.  
+You can use **Device Management** to perform the configuration of specific management servers, agent-managed computers, agentless-managed computers, UNIX servers, and Linux servers. The following table summarizes the uses of the items in Device Management and provides links to more detailed information.  
 
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
@@ -50,8 +50,8 @@ Under the  **Management Packs** node in the Administration workspace, you can pe
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
 |Installed Management Packs | Lists all management packs imported into your management group.|[How to import, export, remove management packs](manage-mp-import-remove-delete.md)|
-|Tune Management Packs| Highlight the management packs and its workflows which generate a high volume of alerts.| [Data driven alert management](manage-alert-data-driven-management.md)|
-|Updates and Recommendations | Identify new technologies or workloads that are not monitored by Operations Manager or not monitored with the latest version of a management pack.| [MP Updates and Recommendations](manage-mp-mpassessment.md)
+|Tune Management Packs| Highlight the management packs and its workflows that generate a high volume of alerts.| [Data driven alert management](manage-alert-data-driven-management.md)|
+|Updates and Recommendations | Identify new technologies or workloads that aren't monitored by Operations Manager or not monitored with the latest version of a management pack.| [MP Updates and Recommendations](manage-mp-mpassessment.md)
 
 For more information, see [Management pack overview](manage-overview-management-pack.md).  
 
@@ -65,7 +65,7 @@ You can use **Network Management** in the Administration workspace to discover n
 |Network Devices Pending Management|To retry or reject discovered network devices that are pending management|[How to Discover Network Devices in Operations Manager](manage-monitor-networkdevice-discover.md)|  
 
 ## Notifications  
-Notifications generate messages or run commands automatically when an alert is raised on a monitored system. By default, notifications for alerts are not configured. For Operations Manager users to be notified immediately when an alert is generated, you need to configure a channel for notifications, add subscribers, and then create a notification.  
+Notifications generate messages or run commands automatically when an alert is raised on a monitored system. By default, notifications for alerts aren't configured. For Operations Manager users to be notified immediately when an alert is generated, you need to configure a channel for notifications, add subscribers, and then create a notification.  
 
 In **Notifications** in the Administration workspace, you can create channels, subscribers, subscriptions, and modify the channels, subscribers, and subscriptions that you create. For more information, see [Subscribing to Alert Notifications](manage-notifications-alert-notifications.md).  
 
@@ -89,11 +89,11 @@ The following table summarizes the settings you can manage in **Settings** in th
 
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
-|Agent Heartbeat|Agents generate a heartbeat at specific intervals to ensure they are operating properly. You can adjust the interval.|[How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md)|  
+|Agent Heartbeat|Agents generate a heartbeat at specific intervals to ensure they're operating properly. You can adjust the interval.|[How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md)|  
 |Alerts|-   To configure alert resolution states.<br>-   To configure automatic alert resolution.|-   [How to Set Alert Resolution States](manage-alert-set-resolution-states.md)<br>-   [How to Configure Automatic Alert Resolution](manage-alert-configure-auto-resolution.md)|  
 |Database Grooming|To configure how long different types of data should be retained in the operational database.|[Maintenance of Operations Manager](manage-omdb-grooming-settings.md)|  
 |Privacy|To modify the settings for the following programs:<br><br>-   Customer Experience Improvement Program (CEIP)<br>-   Operational Data Reporting<br>-   Error Reporting|[Sending Data to Microsoft](manage-client-monitoring-using-aem.md) in the Deployment Guide|  
 |Reporting|Configure the path for the reporting server.|[Using the Reporting Workspace in Operations Manager](manage-reports-run-save-export.md)|  
 |Web Addresses|Designate web addresses for the Web console and online company knowledge.|[How to Connect to the Web Console](manage-consoles-how-to-connect.md#how-to-connect-to-the-web-console)|  
 |Server Heartbeat|Configure the number of missed heartbeats before the management server pings the agent-managed computer.|[How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md)|  
-|Server Security|Specify how the management server should handle manually-installed agents.|[Process Manual Agent Installations](manage-process-manual-agent-install.md)|
+|Server Security|Specify how the management server should handle manually installed agents.|[Process Manual Agent Installations](manage-process-manual-agent-install.md)|
