@@ -70,9 +70,9 @@ Most of the operations to manage Azure Stack clusters in VMM are similar to mana
 
 See [Deploy and manage Azure Stack HCI clusters in VMM](/system-center/vmm/deploy-manage-azure-stack-hci).
 
-### Support for VMware Vsphere 7.0, 8.0 and ESXI 7.0, 8.0
+### Support for VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0
 
-VMM 2022 UR1 supports VMware Vsphere 7.0, 8.0 and ESXI 7.0, 8.0. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
+VMM 2022 UR1 supports VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0. [Learn more](/system-center/vmm/system-requirements?view=sc-vmm-2022).
 
 ### Support for SQL Server 2022
 
