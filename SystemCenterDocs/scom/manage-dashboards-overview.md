@@ -3,7 +3,7 @@ title: Dashboards in Operations Manager
 description: This article provides an overview of dashboards in Operations Manager to visualize operational data from monitored services and their components.
 author: jyothisuri
 ms.author: jsuri
-ms.manager: evansma
+ms.manager: mkluck
 ms.date: 10/08/2020
 ms.custom: na
 ms.prod: system-center
@@ -19,45 +19,45 @@ ms.topic: article
 
 ::: moniker-end
 
-A dashboard has a particular layout, which specifies the arrangement of the cells that actually host content.  Each cell in a dashboard can contain a single widget.  A widget accesses a particular set of data or performs a particular function and presents its information in the dashboard.  Each widget provides a specific set of customizations that you can modify according to your particular requirements.  Depending on the Dashboard Layout that you select, the dashboard may have a fixed set of widgets or may allow you to define a number of configuration of cells that can each contain a widget of your choice.
+A dashboard has a particular layout, which specifies the arrangement of the cells that actually host content.  Each cell in a dashboard can contain a single widget.  A widget accesses a particular set of data or performs a particular function and presents its information in the dashboard.  Each widget provides a specific set of customizations that you can modify according to your particular requirements.  Depending on the Dashboard Layout that you select, the dashboard may have a fixed set of widgets or may allow you to define a number of configurations of cells that can each contain a widget of your choice.
 
 
 ::: moniker range="=sc-om-2019"
 
-Operations Manager 2019 UR2 and later supports folders' creation in web console, inside which, you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md)
+Operations Manager 2019 UR2 and later support folders' creation in web console, inside which you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md).
 
 ::: moniker-end
 
 ::: moniker range="=sc-om-2022"
 
-Operations Manager supports folders' creation in web console, inside which, you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md)
+Operations Manager supports folders' creation in web console, inside which you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md).
 
 ::: moniker-end
 
 > [!NOTE]
-> Folders and views created from operations console can be viewed in the web console but the dashboards created from the web console will not be visible in the operations console.
+> Folders and views created from the operations console can be viewed in the web console but the dashboards created from the web console won't be visible in the operations console.
 
 Dashboards in Operations Manager deliver the following benefits:
 
 * A dashboard is defined and shared in a management pack.
-* Authoring a dashboard is a simple process for an Operations Manager user. A new dashboard can be created or an existing dashboard modified in both the Operations console and the Web console with the **New Dashboard and Widget** wizard. However, if the default dashboard templates do not meet your requirements, you can [author custom dashboards](https://social.technet.microsoft.com/wiki/contents/articles/24639.aspx) and create [custom widgets](https://social.technet.microsoft.com/wiki/contents/articles/24641.operations-manager-management-pack-authoring-custom-widgets.aspx) with Visual Studio using the [Visual Studio Authoring Extensions](https://www.microsoft.com/download/details.aspx?id=30169).
-* Once created, a dashboard is available from the Operations console, the Web console and the SharePoint Web Part.
+* Authoring a dashboard is a simple process for an Operations Manager user. A new dashboard can be created or an existing dashboard modified in both the Operations console and the Web console with the **New Dashboard and Widget** wizard. However, if the default dashboard templates don't meet your requirements, you can [author custom dashboards](https://social.technet.microsoft.com/wiki/contents/articles/24639.aspx) and create [custom widgets](https://social.technet.microsoft.com/wiki/contents/articles/24641.operations-manager-management-pack-authoring-custom-widgets.aspx) with Visual Studio using the [Visual Studio Authoring Extensions](https://www.microsoft.com/download/details.aspx?id=30169).
+* Once created, a dashboard is available from the Operations console, the Web console, and the SharePoint Web Part.
 
 ## Dashboard templates
 
-The first thing that you must specify when you create a dashboard is its template, which will define the widgets that will be included in the dashboard and their layout.  You cannot change the dashboard's template once it has been created.  The following sections provide details on the available templates.  Additional templates may be provided with subsequent versions of Operations Manager or from third parties.
+The first thing that you must specify when you create a dashboard is its template, which will define the widgets that'll be included in the dashboard and their layout. You can't change the dashboard's template once it has been created.  The following sections provide details on the available templates.  Additional templates may be provided with subsequent versions of Operations Manager or from third parties.
 
 ### Service Level dashboard
 
-A Service Level Dashboard displays information on one or more Service Level Agreements and their included Service Level Objectives.  You cannot configure the individual components but can edit the configuration of the dashboard to define the SLAs and time period to include.
+A Service Level Dashboard displays information on one or more Service Level Agreements and their included Service Level Objectives.  You can't configure the individual components but can edit the configuration of the dashboard to define the SLAs and time period to include.
 
-- Service Levels component that lists the SLAs that you selected for the dashboard.  
-- Service Level Objectives component which lists the SLOs for the SLA that is selected in the Service Level cell.  
+- Service Level component that lists the SLAs that you selected for the dashboard.  
+- Service Level Objectives (SLOs) component which lists the SLOs for the SLA that is selected in the Service Level cell.  
 - Service Level Details component that displays a speedometer visualization for the current measure of the selected SLO and a line chart showing the history of the measure.
 
 ### Summary dashboard
 
-A Summary Dashboard includes a fixed set of widgets displaying a combination of state, performance, and alert information.  The widgets are independent of on another and do not display information based on the objects selected in another widget.   You do not provide any configuration when you create the dashboard other than the name but instead configure each widget independently after the dashboard is created.
+A Summary Dashboard includes a fixed set of widgets displaying a combination of state, performance, and alert information. The widgets are independent of one another and don't display information based on the objects selected in another widget. You don't provide any configuration when you create the dashboard other than the name but instead configure each widget independently after the dashboard is created.
 Summary Dashboards include the following widgets.  
 
 - Object by Performance Widget (Top N)  
@@ -67,23 +67,25 @@ Summary Dashboards include the following widgets.  
 
 ### Object state 
 
-An Object State dashboard includes multiple widgets showing information about a particular object or group.  You cannot configure the individual widgets but can edit the configuration of the dashboard to define the target object or group that all the widgets will include in addition to the criteria for included alerts.  
+An Object State dashboard includes multiple widgets showing information about a particular object or group. You can't configure the individual widgets but can edit the configuration of the dashboard to define the target object or group that all the widgets will include in addition to the criteria for included alerts.  
 
 Object State dashboards include the following widgets.  
 
-- Object Health Widget (Health) showing the monitors for the target object or group.  If a group is selected only monitors targeted at the group itself are included, not the monitors of the group's members.  
-- State Tiles Widget (Host) showing the health state and open alert count for the target object's host.  Note that if you selected an unhosted target such as a group or a distributed application for the dashboard, this widget will be empty.  
+- Object Health Widget (Health) showing the monitors for the target object or group.  If a group is selected, only monitors targeted at the group itself are included, not the monitors of the group's members.  
+- State Tiles Widget (Host) showing the health state and open alert count for the target object's host. 
+  > [!NOTE]
+  > If you selected an unhosted target such as a group or a distributed application for the dashboard, this widget will be empty.  
 - State Widget (Contained objects) showing the health state of any objects contained by the target.  If the target is a group, then this will be the members of the group.  If the target has no contained objects, then this widget will be empty.   
 Instance Details Widget (Object Details) that displays the details of the target object or group.  
-- Alert Widget (Alerts) showing the active alerts for the target and any of its contained objects.  If the target is a group, then alerts from the members of the group are included.  You set the criteria for which alerts are included in the configuration for the dashboard itself instead of for this individual widget.
+- Alert Widget (Alerts) showing the active alerts for the target and any of its contained objects. If the target is a group, then alerts from the members of the group are included. You set the criteria for which alerts are included in the configuration for the dashboard itself instead of for this individual widget.
 
 ### Column layout
 
-A Column Layout is an empty dashboard that allows you to set your own layout and add and configure your own set of widgets.  When you create the dashboard, you specify the number of columns that it will have.  The dashboard will start with one cell in each column.  You can add additional cells by clicking the gear icon at the top right of the dashboard and selecting Add Cell.
+A Column Layout is an empty dashboard that allows you to set your own layout and add and configure your own set of widgets. When you create the dashboard, you specify the number of columns that it'll have. The dashboard will start with one cell in each column. You can add additional cells by selecting the gear icon at the top right of the dashboard and selecting Add Cell.
 
 ### Grid layout
 
-A Grid Layout is an empty dashboard that allows you to set your own layout and add and configure your own set of widgets.  When you create the dashboard, you specify the number of cells that it will have and select a layout for the cells.  You can change the layout of the cells after the dashboard has been created, but you can't change the number of cells.
+A Grid Layout is an empty dashboard that allows you to set your own layout and add and configure your own set of widgets.  When you create the dashboard, you specify the number of cells that it'll have and select a layout for the cells. You can change the layout of the cells after the dashboard has been created, but you can't change the number of cells.
 
 ## Dashboard widgets
 
@@ -116,8 +118,8 @@ SLA Tiles | Displays an SLA tile showing the last Service Level Objective value 
 Topology | Displays an icon for one or more objects on a selected image. | Operations DB | N/A|
 Web Browser | Displays a web, optionally sending the ID of the management group, the ID of an object selected in another widget in the dashboard, and the ID of an alert selected in another widget in the dashboard.  This allows you to create a web page that could use the Operations Manager SDK to retrieve information or perform some other action dynamically in response to a user selection in the dashboard. | Operational DB | N/A|
 
-For additional details of each widget and the configurable properties available, please see [Operations Manager Dashboard Widgets](https://social.technet.microsoft.com/wiki/contents/articles/24133.operations-manager-dashboard-widgets.aspx) from the Management Pack Authoring Guide.   
+For more details of each widget and the configurable properties available, please see [Operations Manager Dashboard Widgets](https://social.technet.microsoft.com/wiki/contents/articles/24133.operations-manager-dashboard-widgets.aspx) from the Management Pack Authoring Guide.
 
 ## Next steps
 
-- To understand how to create your own custom views and dashboards in Operations Manager,  as well as how to scope them, see [Creating and Scoping Views in Operations Manager](manage-console-scope-views.md).  
+- To understand how to create your own custom views and dashboards in Operations Manager and how to scope them, see [Creating and Scoping Views in Operations Manager](manage-console-scope-views.md).  

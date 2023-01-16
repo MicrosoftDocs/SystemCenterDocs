@@ -3,7 +3,7 @@ title: Using SharePoint to View Operations Manager Data
 description: This article describes how deploy the Operations Manager Web console SharePoint web part for viewing select dashboards in SharePoint from Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 07/14/2020
 ms.custom: na
 ms.prod: system-center
@@ -25,24 +25,24 @@ System Center Operations Manager can display select dashboards from the Web cons
 Use the following procedures to configure dashboards on a SharePoint page.  This is accomplished using the Page Viewer Web Part included with SharePoint, which lets you view another web page from within your SharePoint page.  If the user hasn't already been granted rights to view operational data from either console available in Operations Manager, they will need to be [assigned membership](manage-security-overview.md#how-to-assign-members-to-built-in-user-roles) to one of the built-in user roles.  If the user will only need to view the data but not interact with it from the Operations or web console, such as close an alert or perform some other related task, consider adding them to the **Read-only Operator** role.
 
 > [!NOTE]
-> Silverlight-based dashboards made accessible from the SharePoint web part can only be viewed using Internet Explorer.
+> Silverlight-based dashboards made accessible from the SharePoint web part can only be viewed using the Internet Explorer.
 >
 
 ## How to configure the web part to connect to a Web console  
 
 1.  Open an Internet browser, and then navigate to the SharePoint server.  
 
-2.  In the **Site Actions** dropdown menu, click **New Page**.  
+2.  In the **Site Actions** dropdown menu, select **New Page**.  
 
-3.  Enter a name for the page, and then click **Create**.  
+3.  Enter a name for the page, and select **Create**.  
 
-4.  The new page opens with editing tools available. Click **Insert**.  
+4.  The new page opens with editing tools available. Select **Insert**.  
 
-5.  On the **Insert** toolbar, click **Web Part**.  
+5.  On the **Insert** toolbar, select **Web Part**.  
 
-6.  In **Categories**, select **Media and Content** and then select **Page Viewer**.  Click **Add** to the page.    
+6.  In **Categories**, select **Media and Content** and then select **Page Viewer**. Select **Add** to the page.
 
-7.  Click the arrow in the top right of the web part, and then click **Edit web part**.  
+7.  Select the arrow in the top right of the web part, and select **Edit web part**.  
 
 8. In the **To specify a link, type a URL or path** field, enter the URL of an Operations Manager Web console dashboard view.  
 
@@ -50,11 +50,11 @@ Use the following procedures to configure dashboards on a SharePoint page.  This
 
     - For Operations Manager 1801 and later, and the corresponding URs, append `?removeTree=True` at the end of the URL to disable the tree view from being displayed with the web part.
 
-    To enable the tree view, do not append any value at the end of the URL.
+    To enable the tree view, don't append any value at the end of the URL.
 
-9. Configure the appearance, layout, and Advance properties of the SharePoint page, and then click **OK**.
+9. Configure the appearance, layout, and Advance properties of the SharePoint page, and select **OK**.
 
-10. On the menu bar, click **Save & Close**.  
+10. On the menu bar, select **Save & Close**.  
 
 ## Next steps
 

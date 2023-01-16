@@ -4,7 +4,7 @@ title: Overview of HTML5 Web console and dashboards
 description: This article provides an overview of the new HTML5 Web console and dashboards in System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
@@ -21,7 +21,7 @@ ms.topic: article
 
 ::: moniker-end
 
-System Center Operations Manager now delivers HTML5 based dashboards, which enhance the authoring and visualization experiences for Web console users. With these improvements you can visualize operational data with richer data visualizations, faster performance, and drill-down.  You can access these dashboards from multiple browsers (such as Chrome) and are no longer dependent on Silverlight.
+System Center Operations Manager now delivers HTML5-based dashboards, which enhance the authoring and visualization experiences for Web console users. With these improvements, you can visualize operational data with richer data visualizations, faster performance, and drill-down.  You can access these dashboards from multiple browsers (such as Chrome) and are no longer dependent on Silverlight.
 
 ## Supported scenarios
 You can take advantage of the following HTML5 dashboard capabilities:
@@ -34,13 +34,13 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 ::: moniker range="sc-om-2022"
 
- Additional view options are available in Alert and State widget. For more information see, [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+ Additional view options are available in Alert and State widget. For more information, see [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
 
 ::: moniker-end
 
-1. Create HTML 5 dashboards from multiple browsers without a dependency on Silverlight.  
+1. Create HTML5 dashboards from multiple browsers without a dependency on Silverlight.  
 
-2. Visualize monitoring data in HTML 5 dashboards with:
+2. Visualize monitoring data in HTML5 dashboards with:
 
     - [Alert widget](manage-create-web-dashboard-alerts.md)
 
@@ -57,7 +57,7 @@ You can take advantage of the following HTML5 dashboard capabilities:
     - [PowerShell widget](manage-create-web-dashboard-posh.md)
 
 
-3. Perform create, edit and delete operations on the widgets.  
+3. Perform create, edit, and delete operations on the widgets.  
 
 4. Create or edit these widgets and scope by objects or groups.
 
@@ -65,7 +65,7 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 6. Create any number of widgets in the dashboard without any predefined layout selection.
 
-7. Easily move, reposition and resize the widgets in the dashboard.
+7. Easily move, reposition, and resize the widgets in the dashboard.
 
 8. View the dashboards in full screen without the monitoring tree view.
 
@@ -73,7 +73,7 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 10.	Visualize the following dashboards:
 
-    -  Web Application Status.
+    - Web Application Status.
 
     - Management Group Health.
 
@@ -85,7 +85,7 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
     - You can view Network Node and Network Interface Dashboard for Network Node/interface from the **Monitored Objects** page.
 
-11. You can visualize the effective configuration of rules and monitors for a monitored object from the **Monitored objects** drill down page.
+11. You can visualize the effective configuration of rules and monitors for a monitored object from the **Monitored objects** drill-down page.
 
 12.	You can sign out from your current web console session.
 
@@ -129,14 +129,14 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
     - Export to Excel the legend data to Excel for further analysis.
 
-20.	Delete HTML5 dashboards from the Web console, you can create dashboards or views to My workspace.  In version 1801, you add dashboards or views to My Workspace from the monitoring tree.
+20.	Delete HTML5 dashboards from the Web console; you can create dashboards or views to My workspace.  In version 1801, you can add dashboards or views to My Workspace from the monitoring tree.
 
 21.	The IIS web server hosting the Web console role can be setup with network authentication mode and users can access the Web console using network authentication.
 
 22.	You can provide feedback on HTML5 dashboards from within the Web console.
 
 ## Supported browsers
-System Center Operations Manager Web console supports Microsoft Edge, Google Chrome, Mozilla Firefox and Internet Explorer.  
+System Center Operations Manager Web console supports Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer.  
 
 >[!NOTE]
->Internet Explorer compatibility mode is not supported.   
+>Internet Explorer compatibility mode isn't supported.
