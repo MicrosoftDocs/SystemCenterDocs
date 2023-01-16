@@ -372,7 +372,6 @@ For long-term retention on VMware backup data on-premises, you can now enable VM
     -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
     - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-<<<<<<<<< Temporary merge branch 1
 On a standalone tape drive, for a single protection group, DPM uses the same tape for daily backups until there's insufficient space on the tape. You can also collocate data from different protection groups on tape.
 
 On the **Select Tape and Library Details** page, specify the tape/library to use and whether data should be compressed and encrypted on tape.
