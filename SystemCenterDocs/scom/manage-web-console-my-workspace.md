@@ -35,7 +35,7 @@ From the Monitoring workspace, you can add shortcuts to any existing view or das
 
 3. Specify an existing folder or create a new one by selecting **New Folder** and specifying a folder name, and select **OK** to save the new folder.  Select the new folder where you want the view or dashboard to appear and select **OK**.  
 
-When you go to My Workspace, you will see the view or dashboard that you added listed in the navigation pane.  
+When you go to My Workspace, you'll see the view or dashboard that you added listed in the navigation pane.  
 
 ## Create dashboards  
 
@@ -56,7 +56,7 @@ For detailed steps, review the following articles:
 
 
 ::: moniker range="sc-om-1801"
-Creating dashboard with PowerShell widget is not supported in 1801.
+Creating dashboard with PowerShell widget isn't supported in 1801.
 
 ::: moniker-end
 

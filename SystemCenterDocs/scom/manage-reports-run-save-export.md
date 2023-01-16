@@ -62,7 +62,7 @@ Use the following procedure to run a report from the Reporting workspace. In thi
 
 ## How to save a report   
 
-When you run a report, you can save the report to **Favorite Reports** or you can save it into an existing management pack. A report saved to **Favorite Reports** is only visible to you. Saving a report to an unsealed management pack is useful if you need to share with report users that include a specific set of parameters.  
+When you run a report, you can save the report to **Favorite Reports**, or you can save it into an existing management pack. A report saved to **Favorite Reports** is only visible to you. Saving a report to an unsealed management pack is useful if you need to share with report users that include a specific set of parameters.  
 
 The following steps outline the procedure for saving a report to a management pack:  
 

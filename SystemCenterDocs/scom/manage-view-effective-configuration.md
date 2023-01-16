@@ -1,6 +1,6 @@
 ---
 title: View Configuration of a Monitored Object
-description: This article describes how view the effective configuration of a monitored object in the Operations Manager HTLM5 Web console.
+description: This article describes how to view the effective configuration of a monitored object in the Operations Manager HTLM5 Web console.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -23,7 +23,7 @@ ms.topic: article
 
  In System Center Operations Manager, the Web console allows an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.
 
-From the results, you are able to see the following details:
+From the results, you're able to see the following details:
 
 * Monitor/Rule name
 * Target class

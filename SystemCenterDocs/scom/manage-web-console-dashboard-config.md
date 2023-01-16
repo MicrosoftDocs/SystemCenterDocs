@@ -1,7 +1,7 @@
 ---
 ms.assetid:
 title: Manage dashboard and widget configuration in Web console
-description: This article describes how to manage the configuration of the HTML5 Web console dashbaords and widgets in System Center Operations Manager.
+description: This article describes how to manage the configuration of the HTML5 Web console dashboards and widgets in System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -27,7 +27,7 @@ To delete dashboard, select the **Delete dashboard** option available from the t
 
 ![Screenshot showing Delete dashboard option on page.](./media/manage-web-console-dashboard-config/dashboard-banner-01.png)  
 
-You are prompted to confirm you wish to proceed with deleting the dashboard. This notification appears at the bottom of the page. Select **Yes** to continue or **No** to cancel the operation.
+You're prompted to confirm your wish to proceed with deleting the dashboard. This notification appears at the bottom of the page. Select **Yes** to continue or **No** to cancel the operation.
 
 ![Screenshot showing Delete dashboard notification.](./media/manage-web-console-dashboard-config/dashboard-delete-notify.png)
 
