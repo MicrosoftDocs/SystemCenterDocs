@@ -3,7 +3,7 @@ title: How to Enable a Command Notification Channel
 description: This article describes how to create a command notification channel in Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 09/06/2019
 ms.custom: na
 ms.prod: system-center
@@ -24,31 +24,31 @@ To configure alert notifications for System Center - Operations Manager, your fi
 
 To create a command notification channel, you need the following information:  
 
--   Full path of the command file.  
+-   Full path of the command file
 
--   Command line parameters.  
+-   Command line parameters
 
--   The startup folder for the command, which is the path of the program you want to run.  
+-   The startup folder for the command, which is the path of the program you want to run 
 
 ## To enable a command notification  
 
-1.  Log on to the computer with a user account that is a member of the Operations Manager Administrators role.  
+1.  Sign in to the computer with a user account that is a member of the Operations Manager Administrators role.  
 
-2.  In the Operations console, click **Administration**.  
+2.  In the Operations console, select **Administration**.  
 
-3.  In the navigation pane, under **Notifications**, right-click **Channels**. Click **New channel** and then click **Command**.  
+3.  In the navigation pane, under **Notifications**, right-click **Channels**. Select **New channel** and select **Command**.  
 
-4.  Type a unique name for this command channel in the **Notification command channel name** box and a brief description in the **Description** box. Click **Next**.  
+4.  Enter a unique name for this command channel in the **Notification command channel name** box and a brief description in the **Description** box. Select **Next**.  
 
-5.  Type the path to the executable file that you want to run in the **Full path to command file**  box. For example, "%systemroot%\cmd.exe" or "c:\windows\system32\cscript.exe". Type any parameters that you want to run with this command in **Command line parameters** box. Type the  directory for this command in the **Startup folder for the command line** box.  
+5.  Enter the path to the executable file that you want to run in the **Full path to command file**  box. For example, "%systemroot%\cmd.exe" or "c:\windows\system32\cscript.exe". Enter any parameters that you want to run with this command in **Command line parameters** box. Enter the  directory for this command in the **Startup folder for the command line** box.  
 
-6.  Click **Finish**, and then click **Close**.  
+6.  Select **Finish**, and select **Close**.  
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](manage-notifications-create-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](manage-notifications-create-subscribers.md).
 
-* Create a [notification subscription](manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
+* To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).  
 
 * To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](manage-notifications-create-txt-channel.md).
 

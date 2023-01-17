@@ -3,7 +3,7 @@ title: Using the Visio Add-in and SharePoint Visio Services Data Provider
 description: This article highlights the Visio add-in and SharePoint Visio services data provider.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
@@ -26,7 +26,7 @@ The Visio Add-in for System Center - Operations Manager combines the strengths o
 - By role in a logical view of an application
 - By topology for complex distributed applications or a core infrastructure technology such as Active Directory Domain Services
 
-The SharePoint Visio Services Data Provider for System Center - Operations Manager enables you to take the customized dashboards you create with the Visio Add-in and include them in SharePoint 2010, 2013, and 2016 Web sites. These Web-based dashboards are updated and provide access to instant status information through the familiar SharePoint browser-based experience.  
+The SharePoint Visio Services Data Provider for System Center - Operations Manager enables you to take the customized dashboards you create with the Visio Add-in and include them in SharePoint 2010, 2013, and 2016 websites. These Web-based dashboards are updated and provide access to instant status information through the familiar SharePoint browser-based experience.  
 
 The Visio Add-in and SharePoint  Visio Services Data Provider have the following features:  
 
@@ -34,7 +34,7 @@ The Visio Add-in and SharePoint  Visio Services Data Provider have the following
 
 -   You can easily create new Visio documents and link shapes to any managed object (such as a computer, database, Web site, or perspective) to show the current health state.  
 
--   You can automatically link entire existing Visio documents to the computer and to network devices managed by Operations Manager by matching computer names or IP addresses.  
+-   You can automatically link the entire existing Visio documents to the computer and to network devices managed by Operations Manager by matching computer names or IP addresses.  
 
 -   Health states can be automatically refreshed in Visio documents. You can use this option along with Visio's full-screen view to create dashboard views suitable for use as a summary display in a data center control room.  
 

@@ -3,7 +3,7 @@ title: How to Customize Message Content for Notifications
 description: This article describes how to customize the notification messages delivered by Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
@@ -23,7 +23,7 @@ ms.assetid: 0f6934ea-1998-4bd5-987a-41cf4e24d408
 In System Center - Operations Manager, you can customize the format that will be used for messages that notify you of alerts. The format of an alert notification is determined by the channel by which the notification is sent. Each channel type has a default format, as shown in the following examples.  
 
 > [!NOTE]  
-> The command channel type is not mentioned because it generates a command rather than a notification message. 
+> The command channel type isn't mentioned because it generates a command rather than a notification message.
 
 ::: moniker range="sc-om-2019"
 
@@ -97,37 +97,37 @@ You can change the format on the **Format** page of the channel type wizard when
 
 ## To configure notification format  
 
-1.  On the **Format** page of the channel type wizard, in the message box for the channel type (or subject box for the email channel), delete any information from the default format that you do not want to include.  
+1.  On the **Format** page of the channel type wizard, in the message box for the channel type (or subject box for the email channel), delete any information from the default format that you don't want to include.  
 
 2.  Position your cursor in the location of the box where you want to add information.  
 
-3.  Type any non-variable text that you want in the message.  
+3.  Enter any non-variable text that you want in the message.  
 
-4.  Click the button to the right of the box to display the information you can add to the subject or message for notifications, as shown in the following illustration.  
+4.  Select the button to the right of the box to display the information you can add to the subject or message for notifications, as shown in the following illustration.  
 
-    ![Options for notification messages](./media/manage-notificiations-customize-message/om2016-notification-format-options.png)  
+    ![Screenshot showing Options for notification messages.](./media/manage-notificiations-customize-message/om2016-notification-format-options.png)  
 
-5.  Click any item in that list to add the corresponding variable to the notification message. For example, if you click **Alert Severity**, the following variable will be added to the box:  
+5.  Select any item in that list to add the corresponding variable to the notification message. For example, if you select **Alert Severity**, the following variable will be added to the box:  
 
     $Data/[Default='Not Present']/Context/DataItem/Severity$  
 
     > [!NOTE]  
-    > When a default value for a parameter is included, such as [Default='Not Present'] in the preceding example, it indicates the text to provide when the alert does not contain data for that parameter.  
+    > When a default value for a parameter is included, such as [Default='Not Present'] in the preceding example, it indicates the text to provide when the alert doesn't contain data for that parameter.  
 
-6.  When you are done, click **Finish**. All notification messages that use the same channel will be formatted the same way.  
+6.  When you are done, select **Finish**. All notification messages that use the same channel will be formatted the same way.  
 
 ## Customizing a channel for a subscription  
 
 When you create a subscription, you can copy an existing channel that you can customize for that subscription.  
 
-1.  In the **Notification Subscription Wizard**, on the **Channels** page, click **New**, and then click **Create Customized Copy**.  
+1.  In the **Notification Subscription Wizard**, on the **Channels** page, select **New**, and then select **Create Customized Copy**.  
 
-2.  In the **Channel Search** window, use **Filter by** and **Search** to locate the channel you want to copy. Select the channel in **Available channels**, click **Add**, and then click **OK**.  
+2.  In the **Channel Search** window, use **Filter by**, and **Search** to locate the channel you want to copy. Select the channel in **Available channels**, select **Add**, and select **OK**.  
 
-3.  The notification channel wizard for the selected channel opens. You can change the name, description, settings, and message format on the corresponding wizard pages. As a best practice, change the name of the channel to distinguish it from the original channel. Click **Finish** when you are done making changes.  
+3.  The notification channel wizard for the selected channel opens. You can change the name, description, settings, and message format on the corresponding wizard pages. As a best practice, change the name of the channel to distinguish it from the original channel. Select **Finish** when you're done making changes.  
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md).
 
-* Create a [notification subscription](manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
+* To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).

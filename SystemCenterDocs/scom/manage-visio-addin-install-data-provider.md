@@ -3,7 +3,7 @@ title: Install and Configure the Visio Services Data Provider
 description: This article describes how to install and configure the Visio Services Data Provider in a SharePoint farm.
 author: jyothisuri
 ms.author: jsuri
-manager: cfreemanwa
+manager: mkluck
 ms.date: 04/29/2019
 ms.custom: na, intro-installation
 ms.prod: system-center
@@ -28,23 +28,23 @@ The Visio Services Data Provider for Operations Manager has the following prereq
 
 -   SharePoint 2010, 2013, or 2016 Enterprise  
 
--   Microsoft .NET Framework 3.5 SP1.  For Windows 2012 and 2012 R2 see [Enable .NET Framework 3.5 by using the Add Roles and Features Wizard](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10)).    
+-   Microsoft .NET Framework 3.5 SP1.  For Windows 2012 and 2012 R2, see [Enable .NET Framework 3.5 by using the Add Roles and Features Wizard](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10)).
 
 > [!NOTE]  
-> You must install SharePoint Server 2010, 2013, or 2016 in a farm environment versus standalone (on a single server with a built-in database by using the default settings) so that Visio Services can be configured to run as a domain account with Operations Manager  access. For more information about installing SharePoint Server on a single server farm, see [Install SharePoint Server 2013 on a single server with SQL Server)](/SharePoint/install/install-sharepoint-server-2016-on-one-server). For more information about installing SharePoint Server 2013 on a multiple server farm, see [Install SharePoint 2013 across multiple servers for a three-tier farm](/SharePoint/install/install-sharepoint-server-2016-across-multiple-servers) and for SharePoint 2016 see [Install SharePoint 2016 across multiple servers](/SharePoint/install/install-sharepoint-server-2016-across-multiple-servers).  
+> You must install SharePoint Server 2010, 2013, or 2016 in a farm environment versus standalone (on a single server with a built-in database by using the default settings) so that Visio Services can be configured to run as a domain account with Operations Manager access. For more information about installing SharePoint Server on a single server farm, see [Install SharePoint Server 2013 on a single server with SQL Server)](/SharePoint/install/install-sharepoint-server-2016-on-one-server). For more information about installing SharePoint Server 2013 on a multiple server farm, see [Install SharePoint 2013 across multiple servers for a three-tier farm](/SharePoint/install/install-sharepoint-server-2016-across-multiple-servers), and for SharePoint 2016, see [Install SharePoint 2016 across multiple servers](/SharePoint/install/install-sharepoint-server-2016-across-multiple-servers).  
 
 ## Install the Visio Services data provider  
 
 1.  In Windows Explorer, navigate to the directory where you downloaded the Add-in and then double-click **the OpsMgrDataModuleSetup.msi**.  
 
-2.  Read the license agreement, select **I Agree**, and then click **Next**.  
+2.  Read the license agreement, select **I Agree**, and select **Next**.  
 
-3.  Specify the installation location, and then click **Next**.  
+3.  Specify the installation location, and select **Next**.  
 
     By default, files are extracted to the C:\Program Files\ directory. You can change this to any location.  
 
     > [!NOTE]  
-    > The .msi program does not install or deploy the data provider to the SharePoint servers in the server farm. This program simply extracts the SharePoint deployment package to a location specified by the SharePoint administrator.  
+    > The .msi program doesn't install or deploy the data provider to the SharePoint servers in the server farm. This program simply extracts the SharePoint deployment package to a location specified by the SharePoint administrator.  
 
 4.  Open the SharePoint Management Shell as an administrator.  
 
@@ -73,7 +73,7 @@ If you need to determine the account that is configured for Visio Services, use 
 
 1.  Open the Central Administration site.  
 
-2.  In the **Security** section, click **Configure Service Accounts**.  
+2.  In the **Security** section, select **Configure Service Accounts**.  
 
 3.  In the list of Service Accounts, select Service Application Pool - SharePoint Web Services Default.  
 
@@ -81,14 +81,14 @@ If you need to determine the account that is configured for Visio Services, use 
 
 ## Grant the Visio Services account Read-Only Operator access to the management server  
 
-1.  In the Operations console, click **Administration**.  
+1.  In the Operations console, select **Administration**.  
 
-2.  In the Administration pane, expand **Administration**, expand **Security**, and then click **User Roles**.  
+2.  In the Administration pane, expand **Administration**, expand **Security**, and select **User Roles**.  
 
-3.  In the User Roles pane, right-click **Read-Only Operator**, and then click **Properties**.  
+3.  In the User Roles pane, right-click **Read-Only Operator**, and select **Properties**.  
 
-4.  In the **Operations Manager Read-Only Operators - User Role Properties** dialog box, on the **General Properties** page, click **Add**.  
+4.  In the **Operations Manager Read-Only Operators - User Role Properties** dialog, on the **General Properties** page, select **Add**.  
 
-5.  On the **Select User or Groups** page, enter the account that is configured for Service Application Pool, and then click **OK**.  
+5.  On the **Select User or Groups** page, enter the account that is configured for Service Application Pool, and select **OK**.  
 
-6.  Click **Apply**, and then click **OK** to close the **Operations Manager Read-Only Operators - User Role Properties** dialog box.
+6.  Select **Apply**, and select **OK** to close the **Operations Manager Read-Only Operators - User Role Properties** dialog.

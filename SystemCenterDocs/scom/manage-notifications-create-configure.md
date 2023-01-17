@@ -4,7 +4,7 @@ title:  Notification Action Account
 description: This article provides information on how to create and configure the notification action account.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
@@ -24,50 +24,50 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 
 ## To create and configure the Notification action account  
 
-1.  Sign in to the computer with a user account that is a member of the Operations Manager Administrators role.  
+1.  Sign in to the computer with a user account that's a member of the Operations Manager Administrators role.  
 
-2.  In the Operations console, click **Administration**.  
+2.  In the Operations console, select **Administration**.  
 
-3.  In the **Administration** workspace, right-click **Security**, and then click **Create Run As Account**. Use the Create Run As Account Wizard to create an account to use as the Notification action account, which is used to send the notifications.  
+3.  In the **Administration** workspace, right-click **Security**, and select **Create Run As Account**. Use the Create Run As Account Wizard to create an account to use as the Notification action account, which is used to send the notifications.  
 
-4.  On the **Introduction** page, click **Next**.  
+4.  On the **Introduction** page, select **Next**.  
 
-5.  On the **General Properties** page, select **Windows** in the **Run As Account type** list for setting up authentication with an email server in the same organization or domain or select **Simple Authentication** for setting up authentication with Microsoft Teams/external mail server, and then in **Display name**, type **Notification action account**. Click **Next**.  
+5.  On the **General Properties** page, select **Windows** in the **Run As Account type** list for setting up authentication with an email server in the same organization or domain or select **Simple Authentication** for setting up authentication with Microsoft Teams/external mail server, and then in **Display name**, enter **Notification action account**. Select **Next**.  
 
-6.  On the **Credentials** page, type the information for the user name, password, and domain (if required) of the user account that to be used for notifications. Click **Next**.  
+6.  On the **Credentials** page, enter the information for the user name, password, and domain (if required) of the user account that is to be used for notifications. Select **Next**.  
 
 7.  Select the **More secure** distribution security option. For more information on this option, see [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).  
 
-8.  Click **Create**.  
+8.  Select **Create**.  
 
-9. In the navigation pane, click **Accounts** under **Run As Configuration**.  
+9. In the navigation pane, select **Accounts** under **Run As Configuration**.  
 
-10. In the details pane, right-click **Notification action account**, and then click **Properties**.  
+10. In the details pane, right-click **Notification action account**, and select **Properties**.  
 
-11. On the **Distribution** tab, click **Add**.  
+11. On the **Distribution** tab, select **Add**.  
 
-12. In the **Computer Search** window, click **Search** to display a name of available computers.  
+12. In the **Computer Search** window, select **Search** to display a name of available computers.  
 
-13. Select the server or servers to distribute the credentials to, click **Add**, and then click **OK** to close the search window.  
+13. Select the server or servers to distribute the credentials to, select **Add**, and then select **OK** to close the search window.  
 
-14. Click **OK** to close the properties window.  
+14. Select **OK** to close the properties window.  
 
-15. In the navigation pane, click **Profiles** under **Run As Configuration**.  
+15. In the navigation pane, select **Profiles** under **Run As Configuration**.  
 
-16. Right-click **Notification Account** and click **Properties**, which will open the **Run As Profile Wizard**.  
+16. Right-click **Notification Account** and select **Properties**, which will open the **Run As Profile Wizard**.  
 
-17. On the **Introduction** page, click **Next**.  
+17. On the **Introduction** page, select **Next**.  
 
-18. If you are configuring an internal email, then on the **General Properties** page, click **Next**. If you are configuring an external email then, right-click on **Profiles** and click **Create Run As Profile**. On the **General Properties** page enter a suitable **Display name** and for **Select destination management pack**, choose **Notification Internal Library** from the drop-down list.  
+18. If you're configuring an internal email, then on the **General Properties** page, select **Next**. If you're configuring an external email, then right-click on **Profiles** and select **Create Run As Profile**. On the **General Properties** page enter a suitable **Display name** and for **Select destination management pack**, choose **Notification Internal Library** from the dropdown list.  
 
-19. On the **Run As Accounts** page, click **Add**.  
+19. On the **Run As Accounts** page, select **Add**.  
 
-20. In the **Add a Run As Account** window, in the **Run As account** drop-down list,  select the Run As account that you created earlier in this procedure. If you are configuring an internal email accept the default **All targeted objects** and then click **OK**. If you are configuring an external email, choose **A selected class, group, or object**, click **Select** and choose **Class**. On the **Class Search** page search and select **Alert Notification Subscription server**, and then click **OK**.
+20. In the **Add a Run As Account** window, in the **Run As account** dropdown list,  select the Run As account that you created earlier in this procedure. If you're configuring an internal email, accept the default **All targeted objects** and select **OK**. If you're configuring an external email, choose **A selected class, group, or object**, select **Select**, and choose **Class**. On the **Class Search** page, search and select **Alert Notification Subscription server**, and select **OK**.
 
-21. Click **Save**. When the association is completed, click **Close** to close the wizard.  
+21. Select **Save**. When the association is completed, select **Close** to close the wizard.  
 
-## Next steps
+## Next Steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md).
 
-* Create a [notification subscription](manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
+* To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).

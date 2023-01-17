@@ -3,7 +3,7 @@ title: Troubleshooting the Visio Add-in
 description: This article provides information to help troubleshoot common issues with the Visio add-in for Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: cfreemanwa
+manager: mkluck
 ms.date: 12/13/2016
 ms.custom: na
 ms.prod: system-center
@@ -77,7 +77,7 @@ You can change the font size by selecting the shape and then choosing a differen
 
 ### Hyperlinks on sub-shapes are not available  
 
-Health Explorer and Alert View hyperlinks might not be available in Edit mode or Full Screen mode if you have grouped your shapes or added links to any shapes that were already contained within groups.  
+Health Explorer and Alert View hyperlinks might not be available in Edit mode or Full Screen mode if you've grouped your shapes or added links to any shapes that were already contained within groups.  
 
 ### You receive a ConfigurationErrorsException error message  
 You might see the following error message:  
@@ -114,9 +114,9 @@ To resolve this problem, install [Microsoft .NET Framework 3.5 SP1](https://www.
 
 ### The state graphic is not displayed  
 
-The state graphic does not appear on a stencil even though you have linked the shape with the **Link Shape to Data** option.  
+The state graphic doesn't appear on a stencil even though you've linked the shape with the **Link Shape to Data** option.  
 
-Some stencils in Visio are not defined with a wrapping group. To resolve this problem, create a group for the shape, and then use the **Link Shape to Data** option again. To create a group, right-click the shape, and then click **Shape** and **Group**.  
+Some stencils in Visio aren't defined with a wrapping group. To resolve this problem, create a group for the shape, and then use the **Link Shape to Data** option again. To create a group, right-click the shape, and select **Shape** and **Group**.  
 
 ### You see security warnings when you open a diagram  
 When you open a document that you previously linked to Operations Manager, you receive multiple security warnings.  
@@ -124,6 +124,6 @@ When you open a document that you previously linked to Operations Manager, you r
 This problem occurs because the status of the document components is set to refresh automatically. To suppress the warnings, select **Don't show this message again**.  
 
 ### You cannot re-install the Visio Add-in  
-If you delete the Operations Manager Visio Add-in by using the Visio Trust Center, you cannot add it again later.  
+If you delete the Operations Manager Visio Add-in by using the Visio Trust Center, you can't add it again later.  
 
 This behavior occurs by design in Visio. Before you can add the Operations Manager Visio Add-in again, uninstall it by using Add/Remove Programs (or Programs and Features) in the Control Panel, and then reinstall it.  
