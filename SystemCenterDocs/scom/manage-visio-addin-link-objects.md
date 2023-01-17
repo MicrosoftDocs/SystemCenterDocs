@@ -22,7 +22,7 @@ ms.assetid: f5a4749c-e042-401c-86ae-f9830576fcf2
 
 The Visio Add-in for System Center - Operations Manager lets you link to Operations Manager objects to present health state information in a new or existing Microsoft Visio drawing.
 
-To do this, you first specify a Operations Manager management server from which the Visio Add-in will query to get information about the managed objects and their health state. Then, you add the links by using one of the following methods:  
+To do this, you first specify an Operations Manager management server from which the Visio Add-in will query to get information about the managed objects and their health state. Then, you add the links by using one of the following methods:  
 
 -   Link a single shape to a managed object. You can quickly link a few shapes to any object managed by Operations Manager.  
 

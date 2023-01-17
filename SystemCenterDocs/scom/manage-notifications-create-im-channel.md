@@ -19,7 +19,7 @@ ms.assetid: 086970a5-845c-4a67-b164-a15f0af3213d
 
 ::: moniker-end
 
-To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using an instant message.  
+To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This article describes how to configure a channel that will send alert notifications to subscribers by using an instant message.  
 
 Before you begin, gather the following information from your instant message server:  
 
@@ -60,7 +60,7 @@ Before you begin, gather the following information from your instant message ser
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](manage-notifications-create-subscribers.md).
+* To designate when to send notifications and the addresses to which the notifications should be sent, review [How to create notification subscribers](manage-notifications-create-subscribers.md).
 
 * To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).
 

@@ -40,7 +40,7 @@ With the Visio Add-in installed on the client and the data provider installed on
 
 7.  Select **Save**.  
 
-When the diagram is saved to a document library, you can simply browse to the document library in your browser and select the link to the document. The Visio diagram will open in your browser. With the data provider installed, the data will be refreshed directly from the management server.  
+When the diagram is saved to a document library, you can browse to the document library in your browser and select the link to the document. The Visio diagram will open in your browser. With the data provider installed, the data will be refreshed directly from the management server.  
 
 > [!NOTE]
 > When viewing a published Visio diagram on SharePoint, when you select a linked shape it will open the Operations Manager Web console and direct you to the homepage rather than the Health Explorer. This is a known issue currently being investigated.

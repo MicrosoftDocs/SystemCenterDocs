@@ -15,7 +15,7 @@ MonikerRange: 'sc-om-2022'
 
 # How to enable Microsoft Teams notification channel in Operations Manager
 
-This topic describes how to configure a notification channel that will send alert notifications to subscribers by using Microsoft Teams.
+This article describes how to configure a notification channel that will send alert notifications to subscribers by using Microsoft Teams.
 
 Earlier, System Center - Operations Manager supported integration with *Skype for Business* that allowed the users to receive alerts from Operations Manager. All *Skype for Business* customers were encouraged to start using Microsoft Teams as their communications and collaboration service as Skype for Business was retired on July 31, 2021.
 
@@ -28,10 +28,10 @@ To configure alert notifications for Operations Manager, you must enable a notif
 > [!NOTE]
 > Integration of Operations Manager with Teams is supported for customers who use GCC, GCC High, and DoD Clouds.
 
-Before you begin, ensure you have the following:
+Before you begin, ensure you've the following:
 
 - Teams tenant information.
-- Run As account. Delegated API type is used in Teams integration and the Rus As account credentials will be used to authenticate.
+- Run As account. Delegated API type is used in Teams integration and the Run As account credentials will be used to authenticate.
   Run As account should be
    - A valid Azure Active Directory (Azure AD) account (sample: user@domain)
    - Licensed to use Microsoft Teams
@@ -158,7 +158,7 @@ Follow these steps:
 
    :::image type="subscription wizard" source="media/teams-notifications/subscription-wizard.png" alt-text="screenshot showing subscription wizard.":::
 
-3. Under **Description**, enter **Subscription name** and click **Next**.
+3. Under **Description**, enter **Subscription name** and select **Next**.
 
    :::image type="create notification subscription" source="media/teams-notifications/create-notification-subscription.png" alt-text="screenshot showing create notification subscription.":::
 

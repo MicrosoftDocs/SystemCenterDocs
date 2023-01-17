@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), text message (SMS), or Microsoft Teams (applicable for 2022). The Notification Account Run As profile is used to send notifications. For notifications to work correctly, you must create a Run As account that provides the credentials for sending notifications and associate the Run As account to the Notification Account profile.  
+In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), text message (SMS), or Microsoft Teams (applicable for 2022). The Notification Account Run As profile is used to send notifications. For notifications to work correctly, you must create a Run As account that provides the credentials for sending notifications, and associate the Run As account to the Notification Account profile.  
 
 ## To create and configure the Notification action account  
 
@@ -58,7 +58,7 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 
 17. On the **Introduction** page, select **Next**.  
 
-18. If you're configuring an internal email, then on the **General Properties** page, select **Next**. If you're configuring an external email, then right-click on **Profiles** and select **Create Run As Profile**. On the **General Properties** page enter a suitable **Display name** and for **Select destination management pack**, choose **Notification Internal Library** from the dropdown list.  
+18. If you're configuring an internal email, then on the **General Properties** page, select **Next**. If you're configuring an external email, then right-click on **Profiles** and select **Create Run As Profile**. On the **General Properties** page, enter a suitable **Display name** and for **Select destination management pack**, choose **Notification Internal Library** from the dropdown list.  
 
 19. On the **Run As Accounts** page, select **Add**.  
 
@@ -68,6 +68,6 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 
 ## Next Steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md).
+* To designate when to send notifications and the addresses to which the notifications should be sent, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md).
 
 * To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).

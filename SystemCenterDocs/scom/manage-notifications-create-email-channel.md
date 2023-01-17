@@ -20,7 +20,7 @@ ms.assetid: eb68582d-fe83-4d79-9017-55673f7f65b9
 
 ::: moniker-end
 
-To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers from an email server either within the domain of the organization or external email authentication.  
+To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This article describes how to configure a channel that will send alert notifications to subscribers from an email server either within the domain of the organization or external email authentication.  
 
 Before you begin, gather the following information:  
 
@@ -126,6 +126,6 @@ The following example is created from a warning severity alert:
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](manage-notifications-create-subscribers.md).
+* To designate when to send notifications and the addresses to which the notifications should be sent, review [How to create notification subscribers](manage-notifications-create-subscribers.md).
 
 * To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).  

@@ -20,7 +20,7 @@ ms.assetid: 230eadbd-2a79-4987-903f-4bd0c85536fd
 
 ::: moniker-end
 
-To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that runs an executable program automatically in response to an alert.  
+To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This article describes how to configure a channel that runs an executable program automatically in response to an alert.  
 
 To create a command notification channel, you need the following information:  
 
@@ -46,7 +46,7 @@ To create a command notification channel, you need the following information:
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](manage-notifications-create-subscribers.md).
+* To designate when to send notifications and the addresses to which the notifications should be sent, review [How to create notification subscribers](manage-notifications-create-subscribers.md).
 
 * To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).  
 
@@ -54,4 +54,4 @@ To create a command notification channel, you need the following information:
 
 * To create an email notification channel, see [How to enable an email notification channel](manage-notifications-create-email-channel.md).
 
-* To create an instant message notification channel see, [How to enable an instant message notification channel](manage-notifications-create-im-channel.md).
+* To create an instant message notification channel, see [How to enable an instant message notification channel](manage-notifications-create-im-channel.md).

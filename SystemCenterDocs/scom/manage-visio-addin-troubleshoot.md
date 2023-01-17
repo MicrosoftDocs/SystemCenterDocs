@@ -75,7 +75,7 @@ When you insert a new graphic by using the **Insert Shape** option, the font siz
 
 You can change the font size by selecting the shape and then choosing a different font size in the Visio toolbar.  
 
-### Hyperlinks on sub-shapes are not available  
+### Hyperlinks on subshapes aren't available  
 
 Health Explorer and Alert View hyperlinks might not be available in Edit mode or Full Screen mode if you've grouped your shapes or added links to any shapes that were already contained within groups.  
 
@@ -112,7 +112,7 @@ System.MissingMethodException: Method not found: 'System.Security.SecureString S
 
 To resolve this problem, install [Microsoft .NET Framework 3.5 SP1](https://www.microsoft.com/download/details.aspx?id=22), available from https://www.microsoft.com/download/details.aspx?id=22.  
 
-### The state graphic is not displayed  
+### The state graphic isn't displayed  
 
 The state graphic doesn't appear on a stencil even though you've linked the shape with the **Link Shape to Data** option.  
 
@@ -123,7 +123,7 @@ When you open a document that you previously linked to Operations Manager, you r
 
 This problem occurs because the status of the document components is set to refresh automatically. To suppress the warnings, select **Don't show this message again**.  
 
-### You cannot re-install the Visio Add-in  
+### You can't reinstall the Visio Add-in  
 If you delete the Operations Manager Visio Add-in by using the Visio Trust Center, you can't add it again later.  
 
 This behavior occurs by design in Visio. Before you can add the Operations Manager Visio Add-in again, uninstall it by using Add/Remove Programs (or Programs and Features) in the Control Panel, and then reinstall it.  

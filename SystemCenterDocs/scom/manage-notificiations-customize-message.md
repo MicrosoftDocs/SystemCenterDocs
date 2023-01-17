@@ -114,7 +114,7 @@ You can change the format on the **Format** page of the channel type wizard when
     > [!NOTE]  
     > When a default value for a parameter is included, such as [Default='Not Present'] in the preceding example, it indicates the text to provide when the alert doesn't contain data for that parameter.  
 
-6.  When you are done, select **Finish**. All notification messages that use the same channel will be formatted the same way.  
+6.  When you're done, select **Finish**. All notification messages that use the same channel will be formatted the same way.  
 
 ## Customizing a channel for a subscription  
 
@@ -128,6 +128,6 @@ When you create a subscription, you can copy an existing channel that you can cu
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md).
+* To designate when to send notifications and the addresses to which the notifications should be sent, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md).
 
 * To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).

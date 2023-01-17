@@ -38,7 +38,7 @@ When you create a subscription to be notified when Operations Manager generates 
 
 ![Screenshot showing List of conditions for alerts.](./media/manage-notifications-create-subscriptions/om2016-operations-console-notification-subscription-criteria.png)  
 
-When you select a condition, it is added to the **Criteria description**. In the **Criteria description** box, the word **specific** is blue and underlined, and is a placeholder for the value for the condition. Select **specific** to set the value for that condition.  
+When you select a condition, it's added to the **Criteria description**. In the **Criteria description** box, the word **specific** is blue and underlined, and is a placeholder for the value for the condition. Select **specific** to set the value for that condition.  
 
 For example, for the condition of **a specific severity**, select **specific**, and then select from the available values: **Information**, **Warning**, and **Critical**.  
 
@@ -113,7 +113,7 @@ When you select a specific class as a condition for an alert notification, notif
 
 **Example 2:** To send notifications of new alerts with a critical severity and high priority to your IT Operations team, you create a subscription using the condition **of Critical severity**, **of a High priority**, **with New (0) resolution state**, and select your subscriber representing the IT Operations team.
 
-In the first example, the UNIX administrator would be notified of alerts raised by the operating system on a UNIX computer, as well as any other alerts that are raised by a UNIX computer. In the second example, the notifications would only be sent when new alerts are raised with critical severity and high priority.  
+In the first example, the UNIX administrator would be notified of alerts raised by the operating system on a UNIX computer, and any other alerts that are raised by a UNIX computer. In the second example, the notifications would only be sent when new alerts are raised with critical severity and high priority.  
 
 ## To create a notification subscription as an administrator  
 

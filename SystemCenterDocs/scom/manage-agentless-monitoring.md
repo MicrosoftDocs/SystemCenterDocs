@@ -23,7 +23,7 @@ System Center Operations Manager can gather performance and availability data on
 
 An agentless-managed computer is a Windows-based computer that is discovered by using the Operations console. You assign a management server or agent-managed computer to provide remote (proxy) agent functionality for the computers.  
 
-Agentless-managed computers are managed as if there is an agent installed on them. Not all management packs work in the agentless mode. For more information, see the documentation for the management packs you're running.  
+Agentless-managed computers are managed as if there's an agent installed on them. Not all management packs work in the agentless mode. For more information, see the documentation for the management packs you're running.  
 
 > [!IMPORTANT]  
 > Agentless management of a computer won't work if the agentless-managed computer and its proxy communicate through a firewall. A management server won't collect descriptions for events or publishers that are present on an agentless managed computer but aren't present on the proxy agent.  

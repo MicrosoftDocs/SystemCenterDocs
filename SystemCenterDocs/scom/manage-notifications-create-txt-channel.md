@@ -58,7 +58,7 @@ To enable an SMS Notification Channel, ensure the following:
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](manage-notifications-create-subscribers.md).
+* To designate when to send notifications and the addresses to which the notifications should be sent, review [How to create notification subscribers](manage-notifications-create-subscribers.md).
 
 * To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).  
 
@@ -66,4 +66,4 @@ To enable an SMS Notification Channel, ensure the following:
 
 * To create a command channel notification, see [How to enable a command notification channel](manage-notifications-create-command-channel.md).
 
-* To create an instant message notification channel see, [How to enable an instant message notification channel](manage-notifications-create-im-channel.md).
+* To create an instant message notification channel, see [How to enable an instant message notification channel](manage-notifications-create-im-channel.md).

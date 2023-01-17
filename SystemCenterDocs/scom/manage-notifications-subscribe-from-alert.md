@@ -35,7 +35,7 @@ You can create a notification subscription from an alert to ensure that you're n
 
 3.  The text boxes for the conditions and criteria for when the notification is sent are pre-populated with default values from the alert. Select **Next**.  
 
-4.  Select **Add or Remove** to select the notification subscriber that the notifications should be sent to.  
+4.  Select **Add or Remove** to select the notification subscriber to whom the notifications should be sent.  
 
 5.  Select **Search** to display all available subscribers.  
 
