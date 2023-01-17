@@ -24,11 +24,11 @@ In Operations Manager, views provide insight into the performance of your servic
 
 After you identify the IT services to monitor the configuration of how to monitor them, you need to configure how that data will be visualized and provided to the different personas in the organization who are responsible for sustaining and maintaining the service, the end-users who want to see a summarized availability status of critical services provided, and management who are interested in determining if IT is meeting its service objectives to the business.
 
-Each view type in System Center - Operations Manager displays a different aspect of monitoring data. Each view type has a different icon as shown in the following image.  
+Each view type in System Center - Operations Manager displays a different aspect of monitoring data. Each view type has a different icon as shown in the following image.
 
-![Screenshot showing icons associated with each view type.](./media/manage-console-view-types/om2016-operations-console-view-types.png)  
+![Screenshot showing icons associated with each view type.](./media/manage-console-view-types/om2016-operations-console-view-types.png)
 
-## Alert view type  
+## Alert view type
 
 The alert view displays alerts that meet your specific criteria, such as alert severity, resolution state, or alerts that are assigned to you. For information on creating an alert view, see [How to Create an Alert View](manage-console-scope-views.md#how-to-create-an-alert-view).  
 
@@ -114,8 +114,8 @@ For information on creating a dashboard view, see [How to Create a Dashboard Vie
 
 ## Next steps
 
-- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Using Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md).  
+- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Using Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md).
 
 - To understand how to create your own custom views and dashboards in Operations Manager, see [Creating and scoping views in Operations Manager](~/scom/manage-console-scope-views.md).
 
-- Views included in sealed management packs can be modified to include other monitored object properties. To customize a view, see [How to personalize a View in Operations Manager](manage-console-personalize-views.md).  
+- Views included in sealed management packs can be modified to include other monitored object properties. To customize a view, see [How to personalize a View in Operations Manager](manage-console-personalize-views.md).
