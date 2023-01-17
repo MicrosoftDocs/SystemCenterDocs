@@ -294,8 +294,9 @@ To create a SCOM Managed Instance (preview), follow these steps:
 
          :::image type="SCOM Managed Instance (preview) Overview" source="media/create-operations-manager-managed-instance/scom-mi-overview.png" alt-text="Screenshot showing SCOM Managed Instance (preview) Overview.":::
 
-1. Select **Create SCOM managed instance**. **Prerequisites to create SCOM managed instance** page opens.
-1. Download the script and run in a domain-joined machine to validate the prerequisites.
+1. Select **Create SCOM managed instance**. 
+1. **Prerequisites to create SCOM managed instance** page opens. Download the script and run in a domain-joined machine to validate the prerequisites.
+        :::image type="Script download" source="media/create-operations-manager-managed-instance/script-download.png" alt-text="Screenshot showing script download option.":::
 1. Under **Basics**, do the following:
     1. **Project details**:
         1. **Subscription**: Select the Azure subscription in which you want to place the SCOM Managed Instance (preview).
