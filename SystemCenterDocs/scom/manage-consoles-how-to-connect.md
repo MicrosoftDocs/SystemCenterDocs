@@ -3,7 +3,7 @@ title: How to Connect to the Operations and Web Console
 description: This article describes how to open and configure the Operations Manager consoles to view monitoring data and perform administration in the management group.
 author: jyothisuri
 ms.author: jsuri
-ms.manager: evansma
+ms.manager: mkluck
 ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
@@ -20,31 +20,35 @@ ms.assetid: 12dba3ee-d394-4575-8fc0-2c403b2818ed
 
 ::: moniker-end
 
-System Center Operations Manager includes two consoles, the Operations console and Web console. To view operational data and administer the management group configuration, you use the Operations console.  The Web console provides a light-weight interface with essential functionality to view the monitoring data, which avoids having to manage the lifecycle deployment of the Operations console.  
+System Center Operations Manager includes two consoles:
+- The Operations console
+- The Web console
 
-In this section we provide information on how to connect to the Operations and Web console.    
+To view operational data and administer the management group configuration, you use the Operations console.  The Web console provides a light-weight interface with the essential functionality to view the monitoring data, which avoids having to manage the lifecycle deployment of the Operations console.  
+
+In this section we provide information on how to connect to the Operations and Web consoles.
 
 ## How to connect to the Operations console
 
-The System Center Operations Manager Operations console can be installed on any computer that meets the [system requirements](./system-requirements.md). When you open the Operations console on a management server, the console connects to that management server, however you can use the following procedure to connect to a different management server. When you initially open the Operations console on a computer that is not a management server, you must specify the management server to connect to. The following image shows the **Connect To Server** dialog box.  
+The System Center Operations Manager Operations console can be installed on any computer that meets the [system requirements](./system-requirements.md). When you open the Operations console on a management server, the console connects to that management server; however, you can use the following procedure to connect to a different management server. When you initially open the Operations console on a computer that isn't a management server, you must specify the management server to connect to. The following image shows the **Connect To Server** dialog.  
 
-![Dialog box to connect console to server](./media/manage-consoles-how-to-connect/om2016-operations-console-connect-to-server.png)  
+![Screenshot showing Dialog box to connect console to server.](./media/manage-consoles-how-to-connect/om2016-operations-console-connect-to-server.png)  
 
 ::: moniker range="= sc-om-2016"
 ### To connect an Operations console to a management server  
 
-1.  To open the Operations console. click **Start**, select **Microsoft System Center 2016\Operations Console**.
+1.  To open the Operations console, select **Start** and then select **Microsoft System Center 2016\Operations Console**.
 
-2.  In the **Connect To Server** dialog box, type in the server name or select a server from the list. (In the image above, the console has not yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.)  
+2.  In the **Connect To Server** dialog, enter the server name or select a server from the list. (In the image above, the console hasn't yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.)  
 
 ::: moniker-end
 
 ::: moniker range=">= sc-om-1801"
 ### To connect an Operations console to a management server  
 
-1.  To open the Operations console, click **Start**, select **Microsoft System Center\Operations Console**.
+1.  To open the Operations console, select **Start** and then select **Microsoft System Center\Operations Console**.
 
-2.  In the **Connect To Server** dialog box, type in the server name or select a server from the list. (In the image above, the console has not yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.)  
+2.  In the **Connect To Server** dialog, enter the server name or select a server from the list. (In the image above, the console hasn't yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.)  
 
 ::: moniker-end
 
@@ -52,9 +56,9 @@ The Operations console opens with the focus on the Monitoring workspace.
 
 ### To change the management server that the Operations console is connected to  
 
-1.  In the Operations console, click **Tools** and then click **Connect...** as shown in the following image, which will open the **Connect To Server** window.  
+1.  In the Operations console, select **Tools**, and then select **Connect...** as shown in the following image, which will open the **Connect To Server** window.  
 
-    ![Connect option from the Tools menu](./media/manage-consoles-how-to-connect/om2016-operations-console-menu-connect.png)  
+    ![Screenshot showing Connect option from the Tools menu.](./media/manage-consoles-how-to-connect/om2016-operations-console-menu-connect.png)  
 
 ## How to Connect to the Web console
 
@@ -63,7 +67,7 @@ In System Center Operations Manager, the web console provides a monitoring inter
 ::: moniker range="<sc-om-1807"
 
 > [!NOTE]  
-> You must use Internet Explorer 11 to connect to the web console in both System Center 2016 - Operations Manager and version 1801 to access the Silverlight-enabled dashboards. In addition, the Operations Manager web console requires that JavaScript be enabled and Silverlight version 5 is installed on the client computer. To enable JavaScript in Internet Explorer, open **Internet Options**, and click the **Security** tab. Select the zone for the Web console (Internet, Local intranet, or Trusted sites), and then click **Custom level**. Enable **Active scripting**, click **OK**, click **OK**, and then connect to the Web console.  The web console does not support running IE in Compatibility View, otherwise you will receive a blank page when attempting to access the console. To turn off Compatibility View feature, please see [How to use Compatibility View in Internet Explorer](https://mskb.pkisolutions.com/kb/2536204)
+> You must use Internet Explorer 11 to connect to the web console in both System Center 2016 - Operations Manager and version 1801 to access the Silverlight-enabled dashboards. In addition, the Operations Manager web console requires that JavaScript be enabled and Silverlight version 5 is installed on the client computer. To enable JavaScript in Internet Explorer, open **Internet Options**, and select the **Security** tab. Select the zone for the Web console (Internet, Local intranet, or Trusted sites), and select **Custom level**. Enable **Active scripting**, select **OK**, select **OK**, and then connect to the Web console.  The web console doesn't support running IE in Compatibility View, otherwise you'll receive a blank page when attempting to access the console. To turn off Compatibility View feature, please see [How to use Compatibility View in Internet Explorer](https://mskb.pkisolutions.com/kb/2536204)
 
 ::: moniker-end
 

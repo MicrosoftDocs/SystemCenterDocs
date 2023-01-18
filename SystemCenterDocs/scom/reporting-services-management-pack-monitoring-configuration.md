@@ -2,10 +2,10 @@
 ms.assetid: 28d531e2-24bf-4d7f-9949-5e07f7ff9461
 title: Monitoring configuration in Management Pack for SQL Server Reporting Services
 description: This article explains the monitoring configuration in Management Pack for SQL Server Reporting Services
-author: vchvlad
-ms.author: v-vchernov
 manager: evansma
-ms.date: 12/9/2022
+author: epomortseva
+ms.author: v-ekaterinap
+ms.date: 01/12/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -195,7 +195,31 @@ To enable debugging, do the following:
 
 3. Create a Multi-String with the name `<MG Name>` that corresponds to the management group name for which you want to collect logs. Leave **Value data** empty to enable Debug logging for all SQL MP modules in the Operations Manager Event Log.
 
-The same should be done for each agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
+Or use the following PowerShell script to enable debugging in automated mode:
+
+```PowerShell
+$SCOMRoot = 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\'
+$MPDebugKey = Join-Path -Path $SCOMRoot -ChildPath 'SQL Management Packs\EnableEvtLogDebugOutput\SQL Server Reporting Services MP'
+$AgRoot = Join-Path -Path $SCOMRoot -ChildPath 'Agent Management Groups'
+$SrvRoot = Join-Path -Path $SCOMRoot -ChildPath 'Server Management Groups'
+$searchPath = if (Test-Path $AgRoot) { $AgRoot } else { $SrvRoot }
+
+if (-not(Test-Path $SCOMRoot)) {
+    Write-Error 'The Microsoft Operations Manager or Monitoring Agent is not installed.' -ErrorAction Stop
+}
+
+if (-not(Test-Path $MPDebugKey)) {
+    New-Item -Path $MPDebugKey -Force | Out-Null
+}
+
+Get-ChildItem -Path $searchPath |
+Out-GridView -OutputMode Multiple | # Remove this line if there is no need for GUI
+ForEach-Object {
+    New-ItemProperty -LiteralPath $MPDebugKey -Name $_.PSChildName -Value '1' -PropertyType 'MultiString' -Force | Out-Null
+}
+```
+
+The same should be done for each Operations Manager or Monitoring Agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
 
 > [!NOTE]
 > Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.

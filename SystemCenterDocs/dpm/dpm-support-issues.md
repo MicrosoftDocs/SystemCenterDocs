@@ -38,7 +38,7 @@ This article summarizes some of the common support information you might need wh
 
 ::: moniker range="<=sc-dpm-2019"
 
--   As an Azure virtual machine - You can install DPM 2019 as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an Azure virtual machine - You can install DPM 2019 as an Azure virtual machine. There are many restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
 -   As a Windows virtual machine in VMware - You can install DPM 2019 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
 
@@ -46,7 +46,7 @@ This article summarizes some of the common support information you might need wh
 
 ::: moniker range="sc-dpm-2022"
 
--   As an Azure virtual machine - You can install DPM 2022 as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an Azure virtual machine - You can install DPM 2022 as an Azure virtual machine. There are many restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
 -   As a Windows virtual machine in VMware - You can install DPM 2022 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
 
@@ -354,7 +354,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ### Support parameters for protecting computers running client operating systems with DPM
 **Issue**: Support for backing up Windows clients with DPM.
 
-**Workaround**: DPM 2022 can back up Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md). Review the full list of supported workloads here.
+**Workaround**: DPM 2022 can back up Windows 10 and Windows 11 client computers. For information about supported workloads, see [What can DPM back up](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2022).
 
 ::: moniker-end
 
@@ -386,7 +386,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ::: moniker range="sc-dpm-2022"
 **Issue**: Support for backing up Windows Server with DPM.
 
-**Workaround**: DPM 2022 can back up Windows Server 2022, 2019, and 2016. For information about supported workloads, see [What can DPM back up](/SystemCenterDocs/dpm/dpm-protection-matrix.md).
+**Workaround**: DPM 2022 can back up Windows Server 2022, 2019, and 2016. For information about supported workloads, see [What can DPM back up](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2022).
 
 ::: moniker-end
 

@@ -17,25 +17,25 @@ ms.topic: article
 
 ::: moniker range="sc-om-2019"
 
-Operations Manager 2019 UR1 and later supports group managed service accounts (gMSA). This article details the accounts used for gMSA, and the procedures involved with gMSA support.
+Operations Manager 2019 UR1 and later supports group managed service accounts (gMSA). This article details the accounts used for gMSA and the procedures involved with gMSA support.
 
 >[!NOTE]
 > This article is applicable for Operations Manager 2019 UR1 and later.
->The article provides information on how to use gMSA in operations manager, does not include information on how to create these. For information on how to create gMSA accounts, see [gMSA accounts](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
+> The article provides information on how to use gMSA in operations manager, and doesn't include information on how to create these. For information on how to create gMSA accounts, see [gMSA accounts](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
 
-Operations Manager supports group managed service accounts (gMSA). This article details the accounts used for gMSA, and the procedures involved with gMSA support.
+Operations Manager supports group managed service accounts (gMSA). This article details the accounts used for gMSA and the procedures involved with gMSA support.
 
 >[!NOTE]
->The article provides information on how to use gMSA in operations manager, does not include information on how to create these. For information on how to create gMSA accounts, see [gMSA accounts](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
+>The article provides information on how to use gMSA in operations manager, and doesn't include information on how to create these. For information on how to create gMSA accounts, see [gMSA accounts](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
 
 ::: moniker-end
 
 ## Accounts used for gMSA
-Currently, the Operations Manager uses the following accounts and services :
+Currently, the Operations Manager uses the following accounts and services:
 
   - Action Accounts
       - Default Action account-management server Action account
@@ -43,12 +43,12 @@ Currently, the Operations Manager uses the following accounts and services :
       - GW Server Action account
       - Run as accounts
   - System Center Configuration Service and System Center Data Access Service (needs to be a part of local administrators group).
-  - Data Reader account (for SSRS), must be a member of Operations Manager Report Security Administrators group.
-  - Data Warehouse Write account (for DW), must be a member of Operations Manager Report Security Administrators group.
+  - Data Reader account (for SSRS) must be a member of Operations Manager Report Security Administrators group.
+  - Data Warehouse Write account (for DW) must be a member of Operations Manager Report Security Administrators group.
   - Agent Installation account
-      - MSAA by default, needs admin rights on the target computers.
+      - MSAA, by default, needs admin rights on the target computers.
 
-To leverage gMSA, administrators must do the following:
+To use gMSA, administrators must do the following:
 
 **Verify if managed service accounts can be used on the computer**
 
@@ -61,10 +61,10 @@ Test-ADServiceAccount <gMSA_name>
 ## Next steps
 To use gMSA, do the following:
 
-[Provide security rights](provide-security-rights.md)
+- [Provide security rights](provide-security-rights.md)
 
-[Change databases](database-changes.md)
+- [Change databases](database-changes.md)
 
-[Service level account changes](service-level-changes.md)
+- [Service level account changes](service-level-changes.md)
 
-[Console level changes](console-level-changes.md)
+- [Console level changes](console-level-changes.md)

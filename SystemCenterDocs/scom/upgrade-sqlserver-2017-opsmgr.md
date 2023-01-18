@@ -3,7 +3,7 @@ title: Upgrade Operations Manager databases to SQL Server 2017
 description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2017.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 10/29/2020
 ms.custom: na
 ms.prod: system-center
@@ -48,13 +48,13 @@ On all the management servers in the management group, stop the Operations Manag
 
 1. On the Operations Manager reporting server, uninstall the Operations Manager reporting server component as follows:
 
-    a. Open Control Panel, and then click **Programs and Features**.
+    a. Open Control Panel, and select **Programs and Features**.
 
-    b. In **Programs and Features**, select **System Center Operations Manager**, and then click **Uninstall**.
+    b. In **Programs and Features**, select **System Center Operations Manager**, and select **Uninstall**.
 
-    c. In the **Operations Manager Setup** wizard, click **Remove a feature**.
+    c. In the **Operations Manager Setup** wizard, select **Remove a feature**.
 
-    d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes.
+    d. In the **Select features to remove** page, select **Reporting server**, and select **Uninstall**. Select **Close** when the wizard finishes.
 
 2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 documentation](/sql/database-engine/install-windows/upgrade-database-engine?preserve-view=true&view=sql-server-2017).
 
@@ -62,7 +62,7 @@ On all the management servers in the management group, stop the Operations Manag
 
 >[!NOTE]
 >
->From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
+>From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings don't allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
 >
 >To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
 
@@ -86,7 +86,7 @@ After a successful setup, select **Configure Report Server** to launch the Repor
 ## Verify the installation of SQL Report server
 After reinstalling the Operations Manager reporting server component, perform the following steps to confirm SQL Reporting Services is working correctly.
 
-1. Run the Reporting Services Configuration tool and connect to the report server instance you installed. The Web Service URL page includes a link to the Report Server Web service. Click the link to verify you can access the server.
+1. Run the Reporting Services Configuration tool and connect to the report server instance you installed. The Web Service URL page includes a link to the Report Server Web service. Select the link to verify you can access the server.
 
 2. Open a browser and type the report server URL in the address bar. The address consists of the server name and the virtual directory name that you specified for the report server during setup. By default, the report server virtual directory is named **ReportServer**. You can use the following URL to verify report server installation: `http://<computer name>/ReportServer<_instance name>`. The URL will be different if you installed the report server as a named instance.
 
@@ -98,7 +98,7 @@ After the upgrade is complete, perform the following steps to [install Operation
 
 ## Optional - Enable CLR strict security
 
-To enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017) on the Operations Manager databases,  run the following SQL script on each Operations Manager database (by default, CLR strict security will be OFF after upgrading to SQL Server 2017).  
+To enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017) on the Operations Manager databases, run the following SQL script on each Operations Manager database (by default, CLR strict security will be OFF after upgrading to SQL Server 2017).  
 
 ```
 -- Do this only for SQL server version 2017 and more
@@ -144,4 +144,4 @@ When reinstalling the Operations Manager reporting server component on the serve
 
 1. Verify that you can successfully run a report from the Operations console.
 
-2. Ensure that the health state of all Management servers is **Healthy**.
+2. Ensure that the health state of all the Management servers is **Healthy**.
