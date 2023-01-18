@@ -64,7 +64,7 @@ In this example, you would be required to deploy one or more Windows Servers wit
 
 ```powershell
 
-Setup.exe /silent /AcceptEndUserLicenseAgreement /recover /InstallPath:<Install Directory> /ManagementGroupName:MGNAME /SqlServerInstance:SQLServerName.domain.com /DatabaseName:OperationsManager /DWSqlServerInstance:SQLServerName.domain.com /DWDatabaseName:OperationsManagerDW /ActionAccountUser:DOMAIN\omaa /ActionAccountPassword:password /DASAccountUser:DOMAIN\omdas /DASAccountPassword:password /DatareaderUser:DOMAIN\omdr /DatareaderPassword:password /DataWriterUser:DOMAIN\omdw /DataWriterPassword:password /EnableErrorReporting:Always /SendCEIPReports:1 /UseMicrosoftUpdate:1
+Setup.exe /silent /AcceptEndUserLicenseAgreement:1 /recover /InstallPath:<Install Directory> /ManagementGroupName:MGNAME /SqlServerInstance:SQLServerName.domain.com /DatabaseName:OperationsManager /DWSqlServerInstance:SQLServerName.domain.com /DWDatabaseName:OperationsManagerDW /ActionAccountUser:DOMAIN\omaa /ActionAccountPassword:password /DASAccountUser:DOMAIN\omdas /DASAccountPassword:password /DatareaderUser:DOMAIN\omdr /DatareaderPassword:password /DataWriterUser:DOMAIN\omdw /DataWriterPassword:password /EnableErrorReporting:Always /SendCEIPReports:1 /UseMicrosoftUpdate:0
 
 ```
 
