@@ -4,7 +4,7 @@ title: Use System Center Advisor to Proactively Monitor Cloud Fabric in System C
 description: This article provides an overview of using system center advisor to proactively monitor cloud fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 06/27/2019
 ms.custom: na
 ms.prod: system-center

@@ -3,7 +3,7 @@ title: Run As Accounts for Network Monitoring in Operations Manager
 description: This article describes how configure the Run As accounts required to discover network devices in Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
@@ -47,10 +47,10 @@ Two Run As profiles are created when you install Operations Manager: SNMP Monito
 
 ## Next steps
 
-- Learn [How to discover network devices in Operations Manager](manage-monitor-networkdevice-overview.md).    
+- Learn [How to discover network devices in Operations Manager](manage-monitor-networkdevice-overview.md).
 
-- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md).    
+- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md).
 
-- To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](manage-monitor-networkdevice-viewing-data.md).  
+- To view information about the network devices you're monitoring, see [Viewing Network Devices and Data in Operations Manager](manage-monitor-networkdevice-viewing-data.md).  
 
--  Operations Manager includes several reports that help analyze performance of monitored network devices.  To learn more, see [Reports for network monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).   
+- Operations Manager includes several reports that help analyze performance of monitored network devices. To learn more, see [Reports for network monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).

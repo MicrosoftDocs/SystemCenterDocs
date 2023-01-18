@@ -3,7 +3,7 @@ title: Monitoring Networks by Using Operations Manager
 description: This article provides an overview of how you can monitor network devices with Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 07/24/2017
 ms.custom: na
 ms.prod: system-center
@@ -20,9 +20,9 @@ ms.assetid: fe56f0f3-0f28-4b0c-8adf-9982a710540a
 
 ::: moniker-end
 
-System Center Operations Manager can monitor physical network routers and switches, including the interfaces and ports on those devices, and the virtual local area networks (VLANs) and Hot Standby Router Protocol (HSRP) groups that they participate in, as well as firewalls and load balancers. Increased visibility into your network infrastructure can help you identify failures in critical services and applications that were caused by the network. For example, you observe an alert informing you that a critical server is unavailable. If you have configured network monitoring, you would also observe an alert informing you that a port is offline. When you view the computer vicinity diagram for the server, you see that the unavailable computer is connected to the offline port. Thus, you can focus on troubleshooting the root cause for the unavailable computers.  
+System Center Operations Manager can monitor physical network routers and switches, including the interfaces and ports on those devices, and the virtual local area networks (VLANs) and Hot Standby Router Protocol (HSRP) groups that they participate in, as well as firewalls and load balancers. Increased visibility into your network infrastructure can help you identify failures in critical services and applications that were caused by the network. For example, you observe an alert informing you that a critical server is unavailable. If you've configured network monitoring, you would also observe an alert informing you that a port is offline. When you view the computer vicinity diagram for the server, you see that the unavailable computer is connected to the offline port. Thus, you can focus on troubleshooting the root cause for the unavailable computers.  
 
-Operations Manager can show you how your network is connected to the computers you are monitoring through the [Network Vicinity View](manage-monitor-networkdevice-viewing-data.md#network-vicinity-dashboard) dashboard. Using Network Vicinity View, you can see how your topology is laid out, as well as the health of each network device, computer, and the connection between each.  
+Operations Manager can show you how your network is connected to the computers you're monitoring through the [Network Vicinity View](manage-monitor-networkdevice-viewing-data.md#network-vicinity-dashboard) dashboard. Using Network Vicinity View, you can see how your topology is laid out, as well as the health of each network device, computer, and the connection between each.  
 
 Operations Manager can discover and monitor network devices that use the Simple Network Management Protocol (SNMP v1, v2c, and v3. For a complete list of supported devices, see  [Network Devices with Extended Monitoring Capability spreadsheet](https://www.microsoft.com/download/details.aspx?id=51219). The devices worksheet includes processor and memory columns for each device to indicate whether Operations Manager can provide extended monitoring for either or both aspects for each device.  
 
@@ -34,7 +34,7 @@ System Center 2016 - Operations Manager introduced a Network Monitoring Manageme
 Network Monitoring Management Pack generation tool helps you create a custom management pack to add extended monitoring support for new network devices, without the need of Microsoft device certification.  
 ::: moniker-end
 
-Additionally, this tool enables you to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply. You can download the tool and user guide from the [Microsoft Download Center](https://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx).  This tool is also supported with newer releases of Operations Manager.
+Additionally, this tool enables you to add monitoring of additional device components such as fan, temperature sensor, voltage sensor, and power supply. You can download the tool and user guide from the [Microsoft Download Center](https://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx). This tool is also supported with newer releases of Operations Manager.
 
 ## Network device monitoring capabilities and scope  
 
@@ -57,7 +57,7 @@ Operations Manager provides the following monitoring for discovered network devi
     -   Drop and broadcast rates  
 
     > [!NOTE]  
-    > Ports that are connected to a computer are not monitored; only ports that connect to other network devices are monitored. You can monitor a port that is connected to a computer that is not agent-managed in the same management group by adding the port to the Critical Network Adapters Group.  
+    > Ports that are connected to a computer aren't monitored; only ports that connect to other network devices are monitored. You can monitor a port that is connected to a computer that isn't agent-managed in the same management group by adding the port to the Critical Network Adapters Group.  
 
 -   Processor - % Utilization (for some certified devices)  
 
@@ -105,11 +105,11 @@ Discovery rules run on a schedule that you can specify, and you can also run a r
     > [!NOTE]  
     > Operations Manager can identify connected devices in a recursive discovery that use an IPv6 address; however, the initial device that is discovered must use an IPv4 address.  
 
-A discovery rule can perform only explicit or recursive discovery, but cannot perform a combination of discovery types. You can change the discovery type of a rule after the rule is created. If you know all of the network devices that you want discovered, you should use explicit discovery. Recursive discovery can discover devices that you have no business need to monitor and as a result, can increase the administrative workload of monitoring your network.  
+A discovery rule can perform only explicit or recursive discovery, but can't perform a combination of discovery types. You can change the discovery type of a rule after the rule is created. If you know all of the network devices that you want discovered, you should use explicit discovery. Recursive discovery can discover devices that you've no business need to monitor and as a result, can increase the administrative workload of monitoring your network.  
 
-A discovery rule can discover any combination of SNMP v1, v2, and v3 devices. SNMP v3 devices can only be discovered by explicit discovery or by being specified in a recursive discovery rule. If you specify an SNMP v3 device in a recursive discovery rule, the SNMP v3 device will be discovered but devices connected to it will not be discovered. If you specify an SNMP v1 or v2 device in a recursive discovery rule, only SNMP v1 and v2 devices connected to it will be included in the recursive discovery.  
+A discovery rule can discover any combination of SNMP v1, v2, and v3 devices. SNMP v3 devices can only be discovered by explicit discovery or by being specified in a recursive discovery rule. If you specify an SNMP v3 device in a recursive discovery rule, the SNMP v3 device will be discovered but devices connected to it won't be discovered. If you specify an SNMP v1 or v2 device in a recursive discovery rule, only SNMP v1 and v2 devices connected to it will be included in the recursive discovery.  
 
-SNMP trap rules are not supported for SNMP v3 devices.  
+SNMP trap rules aren't supported for SNMP v3 devices.  
 
 > [!NOTE]  
 > Windows computers running SNMP are filtered out of discovery results if:  
@@ -145,14 +145,14 @@ Network device discovery consists of the following phases, which are displayed i
 
     Operations Manager correlates network device ports to the servers that the ports are connected to, inserts items into the operational database, and associates Run As accounts.  
 
-After discovery is complete, the management server resource pool that you specify in the discovery rule begins monitoring the discovered network devices. For more information on monitoring network devices, see [Viewing Network Devices and Data in Operations Manager]../om/manage/viewing-network-devices-and-data-in-operations-manager.md) and [Reports for Network Monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).  
+After discovery is complete, the management server resource pool that you specify in the discovery rule begins monitoring the discovered network devices. For more information on monitoring network devices, see [Viewing Network Devices and Data in Operations Manager](../om/manage/viewing-network-devices-and-data-in-operations-manager.md) and [Reports for Network Monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).  
 
 ## Next steps
 
-- Review [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md) to understand the firewall ports and direction the communication flows in preparing your environment for network device monitoring with Operations Manager.  
+- To understand the firewall ports and direction the communication flows in preparing your environment for network device monitoring with Operations Manager, review [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md).  
 
 - Learn [How to discover network devices in Operations Manager](manage-monitor-networkdevice-overview.md).  
 
-- Review [Run As accounts for network monitoring in Operations Manager](manage-monitor-networkdevice-authentication.md) to understand how to configure the Run As accounts before configuring the Run As accounts or network device discovery rules.  
+- To understand how to configure the Run As accounts before configuring the Run As accounts or network device discovery rules, review [Run As accounts for network monitoring in Operations Manager](manage-monitor-networkdevice-authentication.md).  
 
-- To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](~/scom/manage-monitor-networkdevice-viewing-data.md).  
+- To view information about the network devices you're monitoring, see [Viewing Network Devices and Data in Operations Manager](~/scom/manage-monitor-networkdevice-viewing-data.md).  
