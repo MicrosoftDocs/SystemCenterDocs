@@ -69,7 +69,7 @@ A node can be any device connected to a network. Nodes can be switches, routers,
 
 -   Vicinity view of the node
 
--   Availability statistics of the node over the last 24 hours, last 48 hours, past 7 days, or past 30 days
+-   Availability statistics of the node over the last 24 hours, last 48 hours, past seven days, or past 30 days
 
     > [!NOTE]
     > Periods of time that were not monitored are counted as available in the availability statistics.
@@ -99,7 +99,7 @@ A node can be any device connected to a network. Nodes can be switches, routers,
 5.  In the **Tasks** pane, select **Network Node Dashboard**.
 
 ## Network Interface Dashboard view
-An interface is a physical entity with which network connections are made, such as a port. By default, Operations Manager will only monitor ports that are connected to another device that's being monitored. Ports that are not connected won't be monitored. Use the Network Interface Dashboard view to view the following information:
+An interface is a physical entity with which network connections are made, such as a port. By default, Operations Manager will only monitor ports that are connected to another device that's being monitored. Ports that aren't connected won't be monitored. Use the Network Interface Dashboard view to view the following information:
 
 -   Bytes sent and received over the past 24 hours
 

@@ -40,7 +40,7 @@ Masking sensitive data allows you to use a regular expression to filter out comm
 7.  Select **OK**.  
 
 ## Avoid Collecting Sensitive Data  
-If you don't want to capture this sensitive information at all, here is how to avoid it. Some applications will pass sensitive information embedded in the exceptions raised or parameters collected. To avoid the sensitive information, you can disable monitoring for specific methods and restrict the collection of specific exceptions. To do this, disable parameter collection of a method or disable collection of exceptions thrown from specific namespaces or classes.  
+If you don't want to capture this sensitive information at all, here's how to avoid it. Some applications will pass sensitive information embedded in the exceptions raised or parameters collected. To avoid the sensitive information, you can disable monitoring for specific methods and restrict the collection of specific exceptions. To do this, disable parameter collection of a method or disable collection of exceptions thrown from specific namespaces or classes.  
 
 ### Disable parameter collection of a method  
 

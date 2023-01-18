@@ -39,7 +39,7 @@ To create a network devices discovery rule, you need the following information:
     > [!NOTE]
     > Operations Manager can identify connected devices in a recursive discovery that use an IPv6 address; however, the initial device that's discovered must use an IPv4 address.
 
--   The version of SNMP that each devices uses. This can be SNMP v1, v2, or v3.
+-   The version of SNMP that each device uses. This can be SNMP v1, v2, or v3.
 
 -   The SNMP community string of each SNMP v1 or v2 device that you want to discover and monitor.
 
@@ -104,7 +104,7 @@ You must ensure the following firewall configuration before creating the network
        > [!NOTE]
        > If the rule will discover devices that use more than one SNMP community string, you must create one Run As account for each SNMP community string.
 
-   7.  On the **Default Accounts** page, you will see that the Run As account that you just created is listed in the **SNMPv1/v2 Run As accounts** box and is selected. Select **Next**
+   7.  On the **Default Accounts** page, you'll see that the Run As account that you just created is listed in the **SNMPv1/v2 Run As accounts** box and is selected. Select **Next**
 
 7. If you're adding an SNMP v1 or v2 device, on the **Devices** page, do the following:
 
@@ -201,7 +201,7 @@ You must ensure the following firewall configuration before creating the network
 
 11. Review your settings on the **Summary** page, and select **Finish** when you're ready to proceed.
 
-12. You will see a Warning popup that reads "The following accounts need to be distributed to the health service *management server name* in order for the discovery to work: *DiscoveryName\Run As Account*. Would you like Operations Manager to distribute the accounts? Yes: Distribute the accounts and create the discovery. No: Do not distribute the accounts and do not create the discovery."  Select **Yes**.
+12. You'll see a Warning popup that reads "The following accounts need to be distributed to the health service *management server name* in order for the discovery to work: *DiscoveryName\Run As Account*. Would you like Operations Manager to distribute the accounts? Yes: Distribute the accounts and create the discovery. No: Do not distribute the accounts and do not create the discovery."  Select **Yes**.
 
 13. The wizard completes and you see the message **The network discovery rule was successfully created**. Ensure **Run the network discovery rule after the wizard is closed** is selected if you want the rule to run immediately, and select **Close**. The network devices discovery rule is created. If you didn't select **Run the network discovery rule after the wizard is closed**, the discovery rule will run on the scheduled day and time.
 

@@ -30,7 +30,7 @@ monikerRange: '>=sc-om-2019'
 
 Operations Manager web application URL monitoring capability has been improved to not ignore server certificate errors by default. Send requests won't be retried for the URLs with certificate errors.
 
- However, you can ignore the server certificate errors if you wish to, while monitoring a website. To support this feature, we've added the option **Ignore Server Certificate Errors** in the Web Application Editor. To monitor a website for which there is no valid SSL certificate, select this option.
+ However, you can ignore the server certificate errors if you wish to, while monitoring a website. To support this feature, we've added the option **Ignore Server Certificate Errors** in the Web Application Editor. To monitor a website for which there's no valid SSL certificate, select this option.
 
  ![Screenshot showing server certification errors.](./media/url-monitoring/ignore-server-certificate-errors.png)
 
@@ -67,8 +67,8 @@ Use the **Performance Criteria** tab to enable the **Transaction response time**
 
 | **Item** | **Description** |
 | --- | --- |
-| Error Transaction Response Time | Select this option and provide a criteria and number of seconds if you want to monitor for a critical state. If the time to process the complete set of requests matches this criteria, the monitor is set to a critical state. |
-| Warning Transaction Response Time | Select this option and provide a criteria and number of seconds if you want to monitor for a warning state. If the time to process the complete set of requests matches this criteria, and the error criteria isn't also true, the monitor is set to a warning state. |
+| Error Transaction Response Time | Select this option and provide a criteria and the number of seconds if you want to monitor for a critical state. If the time to process the complete set of requests matches this criteria, the monitor is set to a critical state. |
+| Warning Transaction Response Time | Select this option and provide a criteria and number of seconds if you want to monitor for a warning state. If the time to process the complete set of requests matches this criteria and the error criteria isn't also true, the monitor is set to a warning state. |
 
 ## Performance Counter Tab
 

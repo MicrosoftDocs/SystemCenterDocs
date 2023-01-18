@@ -20,7 +20,7 @@ ms.assetid: f7229aef-0a5c-40de-9219-c1df83fd3aa9
 
 ::: moniker-end
 
-System Center Operations Manager offers a number of settings that you can use to configure discovery of network devices. The following table explains the available settings and how to configure them in the Network Devices Discovery Wizard.
+System Center Operations Manager offers many settings that you can use to configure discovery of network devices. The following table explains the available settings and how to configure them in the Network Devices Discovery Wizard.
 
 |Setting|Location|Notes|
 |-----------|------------|---------|

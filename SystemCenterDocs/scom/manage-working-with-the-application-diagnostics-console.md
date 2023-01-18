@@ -30,7 +30,7 @@ Legend:
 
 *  Yes - Can always use the feature  
 
-*  No - Cannot use the feature unless the user also belongs to a group that grants access to this functionality.  
+*  No - Can't use the feature unless the user also belongs to a group that grants access to this functionality.  
 
 |Tasks|Administrator|Author|Advanced Operator|Application Monitoring Operator|Operator|Read-Only Operator|Report Operator|Report Security Administrator|  
 |-|-----------------|----------|---------------------|-----------------------------------|------------|-----------------------|-------------------|---------------------------------|  
@@ -43,7 +43,7 @@ Legend:
 
 
 ## The Application Diagnostics console  
-The Application Diagnostics console is the place to look at the individual performance and reliability events that are being raised within your environment. You can look at all the events, or group them into "problem groups" in which events coming from the same sources are grouped together to highlight the problems with the monitored applications. Use Application Diagnostics to look at events and the transaction chains related to those events to understand how the performance and reliability issues are impacting your applications. 
+The Application Diagnostics console is the place to look at the individual performance and reliability events that are being raised within your environment. You can look at all the events, or group them into "problem groups" in which events coming from the same sources are grouped together to highlight the problems with the monitored applications. Use Application Diagnostics to look at events and the transaction chains related to those events to understand how the performance and reliability issues are affecting your applications. 
 
 The Application Advisor console provides analytics and telemetry of the data presented in Application Diagnostics. Through the Application Advisor console you gain insights into which events are causing the most problems. For more information about Application Advisor, see [Prioritizing alerts by using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md)  
 
@@ -97,7 +97,7 @@ Your first selection (**Application Errors** and **Performance**) affects the gr
 
 -   **Exception Class** What it displays: The bottom level exception thrown by each event is the same. Value: Consolidating by exception class is a good way to find the most typical coding mistakes and promotes improved coding practices.  
 
--   **Failed Function** What it displays: The exception occurred in the same function for each event. Value: This grouping is valuable for two reasons: First, it allows you to identify cases where a shared function is used incorrectly. Second, it allows you to identify how many applications are impacted by an error in a shared function.  
+-   **Failed Function** What it displays: The exception occurred in the same function for each event. Value: This grouping is valuable for two reasons: First, it allows you to identify cases where a shared function is used incorrectly. Second, it allows you to identify how many applications are affected by an error in a shared function.  
 
 -   **None** This option doesn't group the events.  
 
@@ -107,7 +107,7 @@ Your first selection (**Application Errors** and **Performance**) affects the gr
 
 -   **Heaviest Resource** What it displays: All events triggered by the same resource call. This grouping is valuable for determining which events exceeded their thresholds more than the other resources.  
 
--   **None** This option does not group the events.  
+-   **None** This option doesn't group the events.  
 
 ## Example: Grouping Application Errors by Exception Class  
 Filtering by application errors and exception class quickly shows you which kinds, or classes, of exception events you're receiving most often.  
@@ -140,7 +140,7 @@ Filtering by application errors and failed function quickly shows you which func
 4.  To begin investigating the issue and open Event properties, select a **Failed Function** entry. For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).
 
 ## Example: Grouping Performance Events by Heaviest Resource  
-Filtering by application errors and exception class quickly shows you which performance events are triggered by the same resource call. The performance events that are most often triggered by the same resource call are the ones you should investigate first to have the highest impact on you application's performance.  
+Filtering by application errors and exception class quickly shows you which performance events are triggered by the same resource call. The performance events that are most often triggered by the same resource call are the ones you should investigate first to have the highest impact on your application's performance.  
 
 ![Screenshot showing Filter by performance and heaviest resource.](./media/om2016-appmonitoring-appdiagnosticsfilter-heavyres.png)  
 

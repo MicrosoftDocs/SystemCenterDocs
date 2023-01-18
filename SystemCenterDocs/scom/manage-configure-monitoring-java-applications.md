@@ -42,7 +42,7 @@ Getting started with monitoring Java applications requires these four general st
     > [!IMPORTANT]  
     > Ensure to download the corresponding management pack guide (.docx file) for the application server you're using. It contains the details of how to install the management pack and describes what is monitored.  
 
-    The System Center Management Pack for Tomcat, for example, allows an IT administrator to monitor the health of JEE application server instances in Operations Manager. In addition, it provides the option to deploy BeanSpy, an open source technology from Microsoft, that provides deeper monitoring, which includes memory usage.  
+    The System Center Management Pack for Tomcat, for example, allows an IT administrator to monitor the health of JEE application server instances in Operations Manager. In addition, it provides the option to deploy BeanSpy, an open source technology from Microsoft that provides deeper monitoring, which includes memory usage.  
 
 2.  After the management packs for the JEE application servers are imported, the instances of Tomcat application servers will be automatically discovered. The discovery interval is set to 4 hours by default, so discovery can take up to that length of time. On Tomcat, an application server must be running for Operations Manager to discover it for the first time. After an instance of an application is discovered, the configuration is removed only when the application server is uninstalled.  
 
@@ -84,7 +84,7 @@ Getting started with monitoring Java applications requires these four general st
 
 ### Manually deploy the Java Application Performance Monitoring agent and enable Java Application Performance Monitoring  
 
-1.  Now that you've configured the Management Pack for Java Enterprise Edition (JEE) through deep monitoring and imported the Management Pack for Java Application Performance Monitoring, you are ready to manually deploy the Java Application Performance Monitoring agent. To see application servers you've configured for monitoring, in **Monitoring**, select **Configurations**.  
+1.  Now that you've configured the Management Pack for Java Enterprise Edition (JEE) through deep monitoring and imported the Management Pack for Java Application Performance Monitoring, you're ready to manually deploy the Java Application Performance Monitoring agent. To see application servers you've configured for monitoring, in **Monitoring**, select **Configurations**.  
 
 2.  To enable Java Application Performance Monitoring, in the **Monitoring** pane, in the **Tasks** pane, select **Deep Monitored Configurations**, and then select a deep monitoring application server.  
 
@@ -94,7 +94,7 @@ Getting started with monitoring Java applications requires these four general st
 
 ### Verify Application Performance Monitoring agent deployment and override monitors  
 
-1.  To verify if Application Performance Monitoring is monitoring an application, right-click an application and you can see a list of counters: Monitored Requests/sec, Average Request Time, Performance Events/sec, Exception Events/sec, and values for each counter. Five monitors apply to these. For more information about monitors, see the [Management Pack Guide for Java Application Performance Monitoring](/previous-versions/system-center/packs/dn502605(v=technet.10)).  
+1.  To verify if Application Performance Monitoring is monitoring an application, right-click an application, and you can see a list of counters: Monitored Requests/sec, Average Request Time, Performance Events/sec, Exception Events/sec, and values for each counter. Five monitors apply to these. For more information about monitors, see the [Management Pack Guide for Java Application Performance Monitoring](/previous-versions/system-center/packs/dn502605(v=technet.10)).  
 
     > [!IMPORTANT]  
     > If you don't see values for the counters, Application Performance Monitoring isn't enabled for these applications. This means that you might need to wait for Application Performance Monitoring discovery.  

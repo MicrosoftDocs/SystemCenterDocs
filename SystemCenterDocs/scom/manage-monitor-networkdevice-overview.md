@@ -34,7 +34,7 @@ System Center 2016 - Operations Manager introduced a Network Monitoring Manageme
 Network Monitoring Management Pack generation tool helps you create a custom management pack to add extended monitoring support for new network devices, without the need of Microsoft device certification.  
 ::: moniker-end
 
-Additionally, this tool enables you to add monitoring of additional device components such as fan, temperature sensor, voltage sensor, and power supply. You can download the tool and user guide from the [Microsoft Download Center](https://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx). This tool is also supported with newer releases of Operations Manager.
+Additionally, this tool enables you to add monitoring of other device components such as fan, temperature sensor, voltage sensor, and power supply. You can download the tool and user guide from the [Microsoft Download Center](https://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx). This tool is also supported with newer releases of Operations Manager.
 
 ## Network device monitoring capabilities and scope  
 
@@ -86,13 +86,13 @@ Network discovery and monitoring requires the following management packs, which 
 
 -   Microsoft.Windows.Client.NetworkDiscovery  
 
-There are additional management packs that are required to relate network devices to each other and to the agent computers they are connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs are installed for each of the operating systems in your environment. See [System Requirements](/system-center/scom/system-requirements).
+There are additional management packs that are required to relate network devices to each other and to the agent computers they're connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs are installed for each of the operating systems in your environment. See [System Requirements](/system-center/scom/system-requirements).
 
 ## How Network device discovery works  
 
 Network device discovery is performed by discovery rules that you create. For instructions on creating a discovery rule, see [How to discover network devices in Operations Manager](manage-monitor-networkdevice-discover.md) and [How to configure network device discovery settings](manage-monitor-networkdevice-discovery-settings.md).  
 
-When you create a discovery rule, you designate a management server or gateway server to run the rule. Each management server or gateway server can run only one discovery rule. You may need to strategically place management servers on different network segments so that they can access the network devices that they are discovering.  
+When you create a discovery rule, you designate a management server or gateway server to run the rule. Each management server or gateway server can run only one discovery rule. You may need to strategically place management servers on different network segments so that they can access the network devices that they're discovering.  
 
 Discovery rules run on a schedule that you can specify, and you can also run a rule on demand. Each time the discovery rule runs, it attempts to find new devices within its definition or changes to devices that were previously discovered. A discovery rule can perform *explicit discovery* or *recursive discovery*.  
 
@@ -145,7 +145,7 @@ Network device discovery consists of the following phases, which are displayed i
 
     Operations Manager correlates network device ports to the servers that the ports are connected to, inserts items into the operational database, and associates Run As accounts.  
 
-After discovery is complete, the management server resource pool that you specify in the discovery rule begins monitoring the discovered network devices. For more information on monitoring network devices, see [Viewing Network Devices and Data in Operations Manager](../om/manage/viewing-network-devices-and-data-in-operations-manager.md) and [Reports for Network Monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).  
+After discovery is complete, the management server resource pool that you specify in the discovery rule begins monitoring the discovered network devices. For more information on monitoring network devices, see [Viewing Network Devices and Data in Operations Manager](manage-monitor-networkdevice-viewing-data.md) and [Reports for Network Monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).  
 
 ## Next steps
 

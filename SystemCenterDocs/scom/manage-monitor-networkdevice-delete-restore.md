@@ -1,6 +1,6 @@
 ---
 title: How to Delete or Restore a Network Device in Operations Manager
-description: This article describes how to delete or restore a network devices monitored by Operations Manager.
+description: This article describes how to delete or restore a network device monitored by Operations Manager.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -20,7 +20,7 @@ ms.assetid: 85dae573-5813-4fd1-b81a-6a05f6e1cb7f
 
 ::: moniker-end
 
-After System Center - Operations Manager has discovered and is monitoring a network device, you might want to stop monitoring the device because it is being replaced or because there is no business value in monitoring that particular device or for any other reason. To stop monitoring a device, you can use maintenance mode or you can delete the network device from the discovery rule. You can also restore a deleted device that was discovered by a recursive discovery rule.  
+After System Center - Operations Manager has discovered and is monitoring a network device, you might want to stop monitoring the device because it's being replaced or because there's no business value in monitoring that particular device or for any other reason. To stop monitoring a device, you can use maintenance mode or you can delete the network device from the discovery rule. You can also restore a deleted device that was discovered by a recursive discovery rule.  
 
 To delete a device that is the starting point for recursive discovery, you must first delete the discovery rule or remove the device from the discovery rule.  
 
@@ -52,7 +52,7 @@ If you delete a device that was discovered by a recursive discovery rule, it wil
 
 3.  In the **Network Devices** pane, right-click a device that was discovered by recursive discovery, and then select **Delete**.  
 
-4.  You will be prompted with a message asking you to confirm that you want to stop monitoring the selected network device. Select **Yes**.  
+4.  You'll be prompted with a message asking you to confirm that you want to stop monitoring the selected network device. Select **Yes**.  
 
 5.  Select **Discovery Rules**.  
 

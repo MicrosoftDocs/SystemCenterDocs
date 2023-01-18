@@ -20,7 +20,7 @@ ms.assetid: caf7af6f-5967-48a0-b0e5-47cb0e0314f7
 
 ::: moniker-end
 
-Working with alerts is a standard part of working with System Center - Operations Manager. Alerts for .NET application monitoring show you the information you will recognize from other alerts, such as the general information and product knowledge. However, a .NET application alert also provides a link in the alert description. This link opens the event that raised the alert in Application Diagnostics. Here you can see far more information that will help you troubleshoot and identify your problem and solution.  
+Working with alerts is a standard part of working with System Center - Operations Manager. Alerts for .NET application monitoring show you the information you'll recognize from other alerts, such as the general information and product knowledge. However, a .NET application alert also provides a link in the alert description. This link opens the event that raised the alert in Application Diagnostics. Here you can see far more information that will help you troubleshoot and identify your problem and solution.  
 
 > [!NOTE]  
 > Deep troubleshooting of alerts from Application Performance Monitoring often requires access to the application source code and might require input from developers. You can install the Team Foundation Server Work Item Synchronization Management Pack and forward alerts to Team Foundation Server used by the development team. The Team Foundation Server Work Item Synchronization Management Pack tracks and synchronizes changes made to Team Foundation Server work items and changes made to associated Operations Manager alerts.  
@@ -43,7 +43,7 @@ Use the following procedures to investigate your alert. IT Pros will most likely
 
 ### Troubleshoot by using Exception Event properties in Application Diagnostics  
 
-1.  In the Application Diagnostics window for the exception alert you're investigating, select the **Event properties** tab to view key details about the alert. This is the first place to check to see if the alert problem is apparent. Some of the key categories of information you will see on the Event properties page are as follows:  
+1.  In the Application Diagnostics window for the exception alert you're investigating, select the **Event properties** tab to view key details about the alert. This is the first place to check to see if the alert problem is apparent. Some of the key categories of information you'll see on the Event properties page are as follows:  
 
     -   **Source** To display the application load and response times, select the **Source** link in the upper-left corner. This information shows the load the system was under in the context of the exception event failure. To view performance counters and further assess system state, on the Source page, select the **Trend reports** tab. To see which computers this application is working on and see if there might be a load balancing problem across computers, select the **Computers** tab. To see a breakdown of related calls, or where the events are happening based on chains, select the **Topology** tab.  
 
@@ -62,7 +62,7 @@ Use the following procedures to investigate your alert. IT Pros will most likely
 
 ### Troubleshoot by using Performance Event properties in Application Diagnostics  
 
-1.  In the Application Diagnostics window for the performance alert you are investigating, select the **Event properties** tab to view the key details about the alert. This is the first place to check to see if the alert problem is apparent. Some of the key categories of information you will see on the Performance properties page are as follows:  
+1.  In the Application Diagnostics window for the performance alert you're investigating, select the **Event properties** tab to view the key details about the alert. This is the first place to check to see if the alert problem is apparent. Some of the key categories of information you'll see on the Performance properties page are as follows:  
 
     -   **Source** To display the application load and response times, select the **Source** link in the upper-left corner. This information shows the load the system was under in the context of the exception event failure. To view performance counters and further assess system state, on the Source page, select the **Trend reports** tab. To see which computers this application is working on and see if there might be a load balancing problem across computers, select the **Computers** tab. To see a breakdown of related calls, or where the events are happening based on chains, select the **Topology** tab.  
 
@@ -90,11 +90,11 @@ Use the following procedures to investigate your alert. IT Pros will most likely
 2.  In the Distributed chains view, select one of the calls, or links, in the chain. If there are multiple events for the same object, the Chaining Wizard will open. This wizard allows you to select possible events to correlate into a chain of events. To begin the Wizard, select **Next**.  
 
     > [!NOTE]  
-    > Get the timestamp from the call you select as you will pair this with an event on the next page.  
+    > Get the timestamp from the call you select as you'll pair this with an event on the next page.  
 
 3.  On the **Select Possible Chain Event** page, select the event that you want to examine. Ideally it will be the event with the timestamp that's closest to the call you selected in the Distributed Chains view.  
 
-4.  What you see next depends on the kind of problem you're investigating. For example, if you select a transaction where a server isn't found, you might go to the event properties page for that event. This will let you pair the server error with the event you were initially investigating. Since it's a server error, you know that the problem isn't on the client side, but the server side. You might see a graph of the event you selected and be able to breakdown a performance event in terms of the page load time.  
+4.  What you see next depends on the kind of problem you're investigating. For example, if you select a transaction where a server isn't found, you might go to the event properties page for that event. This will let you pair the server error with the event you were initially investigating. Since it's a server error, you know that the problem isn't on the client side, but the server side. You might see a graph of the event you selected and be able to break down a performance event in terms of the page load time.  
 
 5.  From event properties, select the server-side call, and select the **Performance Counters** tab for more details.  
 
@@ -108,11 +108,11 @@ Use the following procedures to investigate your alert. IT Pros will most likely
 
     -   **Filtering by Action** groups the similar events by aspect: security, performance, connectivity, and application failure. Select the **Diagram View** button, and you can see the number of similar events by these aspect categories and more easily see which ones the problem might be related to.  
 
-    -   **Filtering by Exception class** groups the similar events according to how you named them during configuration. Presumably, these would be names that would help you identify the kind of exceptions they are, such as **System.NullReferenceException** class.  
+    -   **Filtering by Exception class** groups the similar events according to how you named them during configuration. Presumably, these would be names that would help you identify the kind of exceptions they're, such as **System.NullReferenceException** class.  
 
     -   **Filtering by Failed function** groups the similar events by the same function is throwing the exception. This could mean that there's a problem with the entry point.  
 
-    Keep in mind that these are all similar events—related by definition—and these filters give you a better idea of exactly how they are related. So, using the Similar Events filters, you might find that most of your total events have the same problem as the event you are viewing, that it's a performance problem, that they belong to an exception class you configured, and that half of the similar events had the same failed function. Action: The function goes to the developer who needs to update the function code.  
+    Keep in mind that these are all similar events—related by definition—and these filters give you a better idea of exactly how they're related. So, using the Similar Events filters, you might find that most of your total events have the same problem as the event you're viewing, that it's a performance problem, that they belong to an exception class you configured, and that half of the similar events had the same failed function. Action: The function goes to the developer who needs to update the function code.  
 
 ### Troubleshoot by viewing related events  
 
@@ -120,7 +120,7 @@ Use the following procedures to investigate your alert. IT Pros will most likely
 
 2.  To view the event details of an event in the list, select the link in the **Description** column.  
 
-    In the related events, you might notice that response time is very slow for all events during a certain time. This could indicate a problem with the system, not the code, and so it might be redirected to the IT pro for a solution.  
+    In the related events, you might notice that the response time is slow for all the events during a certain time. This could indicate a problem with the system, not the code, and so it might be redirected to the IT pro for a solution.  
 
 ## Next steps
 

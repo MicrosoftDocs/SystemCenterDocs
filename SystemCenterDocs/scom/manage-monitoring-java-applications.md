@@ -59,7 +59,7 @@ Following this strategy for monitoring a new Java application will help you get 
 First, keep the configuration simple: monitor one application on one server. Second, when you first configure Java Application Performance Monitoring to monitor a new application, plan to keep the settings you implement long enough for you to understand some trends. A day's worth of data should provide you with insights into the performance and usage patterns of the application.  
 
 ### Establish baseline performance using default settings and some specific settings  
-Usually, you will want to keep the default settings. The default settings ensure that you will see any large issues with the application and keep the impact on the monitored application at a minimum.  
+Usually, you'll want to keep the default settings. The default settings ensure that you'll see any large issues with the application and keep the impact on the monitored application at a minimum.  
 
 If you aren't getting any performance or exception events raised, you can use the following steps to get a feel for what the baseline performance looks like.  
 
@@ -67,14 +67,14 @@ To begin monitoring, here are some settings you might want to adjust as noted he
 
 -   Lower the thresholds for performance. This helps you establish a baseline performance measure by seeing what the current performance characteristics of the application are. For more information about performance thresholds, see [How to Configure Monitoring for Java Applications](manage-configure-monitoring-java-applications.md).  
 
--   Examine all exceptions. You need to know what kinds of exceptions are being thrown. Using known exception handlers limits the exceptions you will receive.  
+-   Examine all exceptions. You need to know what kinds of exceptions are being thrown. Using known exception handlers limits the exceptions you'll receive.  
 
-This can result in significant data, more than you would want for long-term monitoring.  Initially, this amount of data will be helpful as you will see trends, such as the kinds of paths customers are taking through the system and what normal performance looks like.  
+This can result in significant data, more than you would want for long-term monitoring.  Initially, this amount of data will be helpful as you'll see trends, such as the kinds of paths customers are taking through the system and what normal performance looks like.  
 
-With the data collection complete, use the Application Advisor reports, such as Application Performance Analysis, to see how the monitored applications are looking. Using the report, you will see what the average duration is for the heaviest (longest running) calls through the system, and the maximum amount of time spent processing requests. This allows you to set customized smart thresholds based on real application performance. You will also see which functions are running faster than others, and you can create specific web page, web method, and function transactions for the critical methods so that you can ensure they are responding under a tighter SLA than the application as a whole. For more information on viewing reports, see how to scope and run an Application Advisor report in [Prioritizing Alerts by Using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md).  
+With the data collection complete, use the Application Advisor reports, such as Application Performance Analysis, to see how the monitored applications are looking. Using the report, you'll see what the average duration is for the heaviest (longest running) calls through the system, and the maximum amount of time spent processing requests. This allows you to set customized smart thresholds based on real application performance. You'll also see which functions are running faster than others, and you can create specific web page, web method, and function transactions for the critical methods so that you can ensure they're responding under a tighter SLA than the application as a whole. For more information on viewing reports, see how to scope and run an Application Advisor report in [Prioritizing Alerts by Using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md).  
 
 ### Adjust settings and compare to the baseline  
-Once you've established a baseline performance measure, begin to adjust the settings to tune the monitoring so that it catches the kinds of exceptions that are being raised. By reporting all exceptions, you will see if there are any default exception handlers in the application that are catching exceptions for which you would prefer receiving alerts. The data you get will be more meaningful and lower in volume with each adjustment.  
+Once you've established a baseline performance measure, begin to adjust the settings to tune the monitoring so that it catches the kinds of exceptions that are being raised. By reporting all exceptions, you'll see if there are any default exception handlers in the application that are catching exceptions for which you would prefer receiving alerts. The data you get will be more meaningful and lower in volume with each adjustment.  
 
 -   Remove the custom settings and set thresholds based on the data collected.  
 
@@ -82,7 +82,7 @@ Once you've established a baseline performance measure, begin to adjust the sett
 
 -   Add specialized transactions to monitor the performance of common methods that should be held to a stronger SLA than the application as a whole.  
 
-Compare the new data to your baseline. You will begin to see the real average response time, for instance. Now that you know the various performance exceptions the application is sending, you can add the specific namespaces you want rather than monitoring all namespaces. Your application will be configured to be monitored based on the observed performance levels and will be alerted if things move outside of normal levels.  
+Compare the new data to your baseline. You'll begin to see the real average response time, for instance. Now that you know the various performance exceptions the application is sending, you can add the specific namespaces you want rather than monitoring all namespaces. Your application will be configured to be monitored based on the observed performance levels and will be alerted if things move outside of normal levels.  
 
 ### Gradually deploy the application to more monitored servers  
 After monitoring the application for a time with the new monitoring configuration, when you feel your application is healthy, increase the number of servers you're running the application on and monitoring from one to 10, for example. Once you have it running healthy at that level, increase the deployment and monitoring to more servers, and so on. This gradual rollout approach will help you gain confidence in the monitoring for that application and help ensure the health of your system.  
