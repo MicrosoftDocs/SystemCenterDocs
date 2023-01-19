@@ -66,7 +66,7 @@ In System Center - Operations Manager, when an alert is generated, Operations Ma
 
 21. Select **Save**. When the association is completed, select **Close** to close the wizard.  
 
-## Next Steps
+## Next steps
 
 * To designate when to send notifications and the addresses to which the notifications should be sent, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md).
 

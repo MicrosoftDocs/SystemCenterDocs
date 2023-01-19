@@ -43,3 +43,5 @@ When you export a distributed application from the System Center 2016 - Operatio
     Now that you have the initial diagram in Visio, you can customize it by adding new shapes. You can add links to Operations Manager components by dragging an object from the External Data window to an image or drawing in the diagram. The data is automatically linked to the image.  
 
     You can also change the way that the health state data is displayed on an object. Select the object, and select a data graphic on the right side of Visio.  
+
+## Next steps

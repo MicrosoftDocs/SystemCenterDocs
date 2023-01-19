@@ -45,3 +45,5 @@ When the diagram is saved to a document library, you can browse to the document 
 > [!NOTE]
 > When viewing a published Visio diagram on SharePoint, when you select a linked shape it will open the Operations Manager Web console and direct you to the homepage rather than the Health Explorer. This is a known issue currently being investigated.
 >
+
+## Next steps
