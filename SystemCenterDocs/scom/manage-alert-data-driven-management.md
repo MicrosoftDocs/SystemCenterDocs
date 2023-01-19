@@ -37,7 +37,7 @@ By default, the view is scoped to present 30 or more alerts that have been gener
 
 4. This view gives you an overall picture of the alerts generated (by alert count) by management packs in your management group for the specified duration.
 
-5. To get more information on a specific management pack, select that particular management pack and this will enable the “Properties” and “Tune Alerts” actions in the Tasks pane.  
+5. To get more information on a specific management pack, select that particular management pack and, this will enable the “Properties” and “Tune Alerts” actions in the Tasks pane.  
 
 6. To review properties of the selected management pack, select **Properties** from the Tasks pane.  The **Management Pack General Properties** dialog will appear for the specified management pack.  
 
