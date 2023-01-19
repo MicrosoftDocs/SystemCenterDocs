@@ -20,7 +20,7 @@ ms.assetid: 7fd5ca6b-cde4-4610-ba6d-6fbb7ca57373
 
 ::: moniker-end
 
-Microsoft System Center - Operations Manager interoperates with other management solutions through [System Center - Orchestrator](../orchestrator/learn-about-orchestrator.md) or product connectors built on the [Operations Manager Connector Framework (OMCF)](/previous-versions/system-center/developer/hh328935(v=msdn.10)), which are developed from the Operations Manager Software Development Kit (SDK). The OMCF provides methods and types that you can use to initialize and manage a connector and to get or send operations data. With earlier versions of Operations Manager, the primary means of synchronizing alerts between Operations Manager and other systems was through a connector. An Operations Manager connector specifically created for the other system was required for this purpose, and a variety of connectors have been released by vendors of those management solutions.
+Microsoft System Center - Operations Manager interoperates with other management solutions through [System Center - Orchestrator](../orchestrator/learn-about-orchestrator.md) or product connectors built on the [Operations Manager Connector Framework (OMCF)](/previous-versions/system-center/developer/hh328935(v=msdn.10)), which are developed from the Operations Manager Software Development Kit (SDK). The OMCF provides methods and types that you can use to initialize and manage a connector and to get or send operations data. With earlier versions of Operations Manager, the primary means of synchronizing alerts between Operations Manager and other systems was through a connector. An Operations Manager connector created for the other system was required for this purpose, and various connectors have been released by vendors of those management solutions.
 
 Orchestrator integrates with System Center, other Microsoft products, and non-Microsoft products to enable interoperability across the data center.
 
@@ -59,7 +59,7 @@ In System Center, Virtual Machine Manager integrates directly with Operations Ma
 
 VMM performs some actions using the Operations Manager SDK that are typically performed with management packs for other products. For example, several VMM objects are created without using object discoveries. One example of this is the Virtual Machine object. If you select this class in the Object Discoveries node in the Authoring workspace of the Operations Manager, no object discoveries are listed. Instead of relying on a discovery in the management pack, VMM creates these objects through the Operations Manager SDK whenever a new virtual machine is created or modified.
 
-There is nothing that the vendor of resources that are used by VMM must do to have those resources discovered and monitored. If the resource is recognized by VMM, then it will be discovered and monitored by the monitoring pack.  Vendors are still encouraged to create monitoring packs for their own resources though to provide any deep monitoring specific to their product.  While the VMM monitoring pack may be able to identify that the resource is offline, it would be unable to provide detailed analysis to the root cause of the problem and potential remedies.
+There's nothing that the vendor of resources that are used by VMM must do to have those resources discovered and monitored. If the resource is recognized by VMM, then it will be discovered and monitored by the monitoring pack.  Vendors are still encouraged to create monitoring packs for their own resources though to provide any deep monitoring specific to their product.  While the VMM monitoring pack may be able to identify that the resource is offline, it would be unable to provide detailed analysis to the root cause of the problem and potential remedies.
 
 ### Service Manager
 
@@ -72,14 +72,14 @@ Service Manager integrates with Operations Manager through two types of connecto
 
 The System Center Monitoring Pack for System Center - Service Manager allows Operations Manager to monitor the health of a Service Manager environment. It discovers Service Manager management servers and data warehouse and measures the health of its services.
 
-The Operations Manager agent can't be installed on a Service Manager management server because Service Manager uses the System Center Management service to process its own management packs. To monitor a Service Manager management server, you must configure it to use agentless monitoring, which allows Operations Manager to process its management packs on an Operations Manager management server.  Once the computer is added to the Operations Manager management group in this manner, it is monitored like any other computer.  The only exception is that it won't run any rules or monitors that don't support an agentless scenario.
+The Operations Manager agent can't be installed on a Service Manager management server because Service Manager uses the System Center Management service to process its own management packs. To monitor a Service Manager management server, you must configure it to use agentless monitoring, which allows Operations Manager to process its management packs on an Operations Manager management server.  Once the computer is added to the Operations Manager management group in this manner, it's monitored like any other computer.  The only exception is that it won't run any rules or monitors that don't support an agentless scenario.
  
 ## Orchestrator
 
 The System Center Integration Pack for System Center Operations Manager includes activities that allow you to create a runbook in System Center - Orchestrator that interacts with Operations Manager.  You can perform many of the functions that you can perform with Windows PowerShell cmdlets only within the context of an Orchestrator runbook. 
 The activities included in the Operations Manager Integration Pack address the following scenarios:
 
-* Retrieve and modify alerts. This includes the ability to monitor for an alert to be created or changed, a feature which directly supports the connector scenario with other management systems.  
+* Retrieve and modify alerts. This includes the ability to monitor for an alert to be created or changed, a feature that directly supports the connector scenario with other management systems.  
 * Get the current health state of one or more monitored objects.  
 * Start and stop maintenance mode.  
 

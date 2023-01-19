@@ -24,7 +24,7 @@ To drive towards improved accuracy of issues detected and alerted for infrastruc
 
 Now you can get better visibility with the alerts being generated in your environment through the console as opposed to having to run reports or utilize custom scripts to expose this data.  For monitors and rules from a management pack that are generating a significant volume of alerts, you can directly review the configuration of the rule or monitor, review which monitored objects are generating the alert volume, or modify its configuration by setting an override without having to navigate to the Monitoring or Authoring view.  
 
-By default, the view is scoped to present 30 or more alerts that've been generated during the past 90 days.   
+By default, the view is scoped to present 30 or more alerts that have been generated during the past 90 days.   
 
 
 ## Reviewing alerts to tune

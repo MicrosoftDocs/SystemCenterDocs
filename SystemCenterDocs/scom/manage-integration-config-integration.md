@@ -36,7 +36,7 @@ System Center - Operations Manager supports the ability to synchronize alert dat
     > [!NOTE]  
     > Operations Manager internal product connectors are listed in the Operations console. These connectors are used for discovery workflows. Don't create subscriptions for these internal product connectors.  
 
-4.  On the **General** page, enter a name and a short description for the subscription you are creating, and select **Next**.  
+4.  On the **General** page, enter a name and a short description for the subscription you're creating, and select **Next**.  
 
 5.  On the **Groups** page, you can filter which alerts this connector forwards to an external management system based on groups. By default, all checkboxes are selected, so alerts from all groups are forwarded. To enable the child checkboxes, clear the top\-level checkbox. After you make your selections, select **Next**.  
 

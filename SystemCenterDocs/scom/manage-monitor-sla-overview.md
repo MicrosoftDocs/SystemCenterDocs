@@ -26,7 +26,7 @@ Service level objectives are measurements to ensure that you're meeting defined 
 
 Using the information from these reports, you can identify any shortfalls between your service level objectives and your actual performance. This means that you aren't only aware of problems, but also can track the relative business effect of these problems.
 
-For example, if you've a group of servers running instances of Microsoft Exchange Server, which are critical to your internal e-mail network, you can define a service level objective that states that 95% of the servers must be available at all times. Then, you can generate a report that compares the actual availability of those servers against the service level objective.
+For example, if you've a group of servers running instances of Microsoft Exchange Server, which are critical to your internal e-mail network, you can define a service level objective that states that 95% of the servers must always be available. Then, you can generate a report that compares the actual availability of those servers against the service level objective.
 
 You can also create dashboard views to track service level objectives.
 
@@ -42,7 +42,7 @@ You can define a service level objective (SLO) to establish the availability and
 
 4.  In the **Tasks** pane, select **Create**.
 
-5.  In the **Service Level Tracking** dialog, enter a name for the service level that you are defining. For example, enter **LOB Application 1**. Optionally, you can provide a description. Select **Next**.
+5.  In the **Service Level Tracking** dialog, enter a name for the service level that you're defining. For example, enter **LOB Application 1**. Optionally, you can provide a description. Select **Next**.
 
 6.  On the **Objects to Track** page, under **Targeted class**, select **Select**.
 
