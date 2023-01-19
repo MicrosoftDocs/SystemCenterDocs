@@ -4,7 +4,7 @@ title: Web application request properties
 description: This article provides information about how to manage the web application requests properties in Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
@@ -22,7 +22,7 @@ Use the **General** tab to specify the general details of the request. The diffe
 
 | **Item** | **Description** |
 | --- | --- |
-| Request URL | The URL that you are requesting. You can specify whether the protocol will be http or https. |
+| Request URL | The URL that you're requesting. You can specify whether the protocol will be http or https. |
 | HTTP Method | The method to use for the request. Most requests use a GET method. The POST method is typically used when selecting an option to submit information to a website, such as clicking a button to submit a name and password. |
 | HTTP Version | The version of HTTP that the request specifies to the receiving website. |
 | Request Body | Only enabled when the **HTTP method** is POST. This is the body of the request that the post submits. |
@@ -34,7 +34,7 @@ The **HTTP Headers** tab is used to define the different fields that will be inc
 
 ## Performance counter tab
 
-The **Performance Counter** tab lets you select the performance counters that will be collected for the request. Any selected counters are added to the list of counters specified in the **Web Application** settings which enable the counter for an aggregate of all requests in a browser session. The value for any selected counter is collected every time that the request is made.
+The **Performance Counter** tab lets you select the performance counters that will be collected for the request. Any selected counters are added to the list of counters specified in the **Web Application** settings which enable the counter for an aggregate of all requests in a browser session. The value for any selected counter is collected every time the request is made.
 
 ## Monitoring
 
@@ -43,7 +43,7 @@ Use the **Monitoring** tab to control certain monitoring settings for the reques
 | **Item** | **Description** |
 | --- | --- |
 | Monitor SSL health on secure sites | If the request is using https, monitors that measure the health of the related Secure Sockets Layer (SSL) certificates. |
-| Enable health evaluation and performance collection for resources | If selected, a monitor is enabled that displays the status of the resources for the page. Instead of measuring every resource, the total of all resources is evaluated. If this option is not selected, the resource monitor does not function for the request. |
+| Enable health evaluation and performance collection for resources | If selected, a monitor is enabled that displays the status of the resources for the page. Instead of measuring every resource, the total of all resources is evaluated. If this option is not selected, the resource monitor doesn't function for the request. |
 | Enable health evaluation and performance collection for Internal links | Enables the collection of the status of each internal link and includes internal links in the evaluation of the **Links Status Code** monitor for the request. An internal link is a link that refers to a location on the same page. |
 | Enable health evaluation and performance collection for External Links | Enables the collection of the status of each external link and includes external links in the evaluation of the **Links Status Code** monitor for the request. An external link is a link that refers to a location outside the current page. |
 | Link traversal | Specifies the number of levels of external links to collect. If the value is 0, only the links on the page itself are evaluated. If the value is 1, the links on each target page are evaluated. If the value is 2, the links on those target pages are evaluated, and so on. |
@@ -55,11 +55,11 @@ Use the **Monitoring** tab to control certain monitoring settings for the reques
 
 ## Custom error
 
-The **Custom Error** tab lets you specify error criteria for the request by using information that is not available in the **Request Details** pane of the **Web Application Editor**. You can either provide simple criteria by using a single metric, or you can use multiple metrics to specify complex logic. Click the **Insert** button to add a criterion or a group specifying **AND** or **OR** logic. If the criteria that you specify resolve to true when the request is run, the monitor indicates an error for the web application.
+The **Custom Error** tab lets you specify error criteria for the request by using information that isn't available in the **Request Details** pane of the **Web Application Editor**. You can either provide simple criteria by using a single metric, or you can use multiple metrics to specify complex logic. Click the **Insert** button to add a criterion or a group specifying **AND** or **OR** logic. If the criteria that you specify resolve to true when the request is run, the monitor indicates an error for the web application.
 
 ## Custom warning
 
-The **Custom Warning** tab lets you specify error criteria for the request by using information that is not available in the **Request Details** pane of the **Web Application Editor**. You can either provide simple criteria by using a single metric, or you can use multiple metrics to specify complex logic. Click the **Insert** button to add a criterion or a group specifying **AND** or **OR** logic. If the criteria that you specify resolve to true when the request is run, the monitor indicates a warning for the web application.
+The **Custom Warning** tab lets you specify error criteria for the request by using information that isn't available in the **Request Details** pane of the **Web Application Editor**. You can either provide simple criteria by using a single metric, or you can use multiple metrics to specify complex logic. Click the **Insert** button to add a criterion or a group specifying **AND** or **OR** logic. If the criteria that you specify resolve to true when the request is run, the monitor indicates a warning for the web application.
 
 ## Extraction rules
 
