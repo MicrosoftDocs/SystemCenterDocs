@@ -94,7 +94,7 @@ In this procedure, you can create a connection between two management groups. Th
 
 3.  In the Operations console for the local management group, in the **Administration** view, expand **Security**, and select **User Roles**.  
 
-4.  In the right pane, right-click the user role to which you want to grant connected management group access, and then click **Properties**.  
+4.  In the right pane, right-click the user role to which you want to grant connected management group access, and select **Properties**.  
 
 5.  On the **Group Scope** tab, select the connected management groups to which you want to grant access to this user role, and select **OK**. A user with both permission and access to at least one connected management group will see the **Show Connected Alerts** button in the toolbar of any **Alert** view in the **Monitoring** space.  
 
