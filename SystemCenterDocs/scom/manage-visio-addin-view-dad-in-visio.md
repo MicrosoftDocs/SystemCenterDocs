@@ -45,3 +45,5 @@ When you export a distributed application from the System Center 2016 - Operatio
     You can also change the way that the health state data is displayed on an object. Select the object, and select a data graphic on the right side of Visio.  
 
 ## Next steps
+
+[Learn how to link to Operations Manager objects to present health state information in a new or existing Microsoft Visio drawing](/SystemCenterDocs/scom/manage-visio-addin-link-objects.md).

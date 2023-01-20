@@ -65,3 +65,5 @@ SharePoint Enterprise edition includes a Web part for Visio Services called the 
 Your Web part should now display with the published diagram in the Visio Web Access Web part. Notice that the **Open in Visio** button (normally available by default) is no longer available in the Web part toolbar.  
 
 ## Next steps
+
+[Learn how to publish Visio diagrams that you’ve connected to Operations Manager data to a SharePoint document library](/SystemCenterDocs/scom/manage-visio-addin-publish-sharepoint.md).

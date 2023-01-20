@@ -47,3 +47,5 @@ When the diagram is saved to a document library, you can browse to the document 
 >
 
 ## Next steps
+
+[Learn how to customize the way health state is represented in Visio](/SystemCenterDocs/scom/manage-visio-addin-change-healthstate-datagraphic.md).
