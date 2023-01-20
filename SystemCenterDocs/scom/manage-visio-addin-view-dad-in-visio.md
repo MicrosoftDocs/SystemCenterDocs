@@ -46,4 +46,4 @@ When you export a distributed application from the System Center 2016 - Operatio
 
 ## Next steps
 
-[Learn how to link to Operations Manager objects to present health state information in a new or existing Microsoft Visio drawing](/SystemCenterDocs/scom/manage-visio-addin-link-objects.md).
+[Learn how to link to Operations Manager objects to present health state information in a new or existing Microsoft Visio drawing](manage-visio-addin-link-objects.md)

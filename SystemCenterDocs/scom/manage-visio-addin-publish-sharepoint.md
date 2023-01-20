@@ -22,7 +22,7 @@ ms.assetid: 4c5bb8ee-725f-4ff2-ba85-21e689bcc1de
 
 With the Visio Add-in installed on the client and the data provider installed on the SharePoint server, you can now publish diagrams that you've connected to Operations Manager data to a SharePoint document library to share them with others in your organization.  
 
-### To publish a diagram to a SharePoint document library  
+## To publish a diagram to a SharePoint document library  
 
 1.  From the **File** tab on the Visio ribbon, select **Save & Send**.  
 
@@ -48,4 +48,4 @@ When the diagram is saved to a document library, you can browse to the document 
 
 ## Next steps
 
-[Learn how to customize the way health state is represented in Visio](/SystemCenterDocs/scom/manage-visio-addin-change-healthstate-datagraphic.md).
+[Learn how to customize the way health state is represented in Visio](manage-visio-addin-change-healthstate-datagraphic.md)
