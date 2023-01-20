@@ -4,7 +4,7 @@ title: How to Move the Operational Database
 description: This article describes how to move the Operations Manager operational database to a different SQL Server instance after initial deployment.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 07/17/2018
 ms.custom: na
 ms.prod: system-center
@@ -25,11 +25,11 @@ After the initial deployment of System Center Operations Manager, you might nee
 During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry and configuration file on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](/sql/sql-server/).
 
 > [!NOTE]
-> This procedure can result in data loss if it is not performed correctly and within a reasonable length of time of the failure. Ensure that you follow all steps precisely, without unnecessary delays between the steps.
+> This procedure can result in data loss if it isn't performed correctly and within a reasonable length of time of the failure. Ensure that you follow all the steps precisely, without unnecessary delays between the steps.
 
 ## Summary of steps
 
-![Summary steps for moving operational database](./media/manage-move-opsdb/om2016-move-operational-database-steps.png)<br>
+![Diagram showing Summary steps for moving operational database.](./media/manage-move-opsdb/om2016-move-operational-database-steps.png)<br>
 
 ## Moving the Operational database
 
@@ -73,7 +73,7 @@ After moving the Operations Manager operational database to a different SQL Serv
 2. Expand **Security**, then expand **Logins**, and add the data writer account name.
 3. Under **Logins**, add the data writer account. For more information, see [How to Create a SQL Server Login](/sql/relational-databases/security/authentication-access/create-a-login).
 4. Under **Logins**, add the management server action account.  
-5. Under **Logins**, add the Data Access Service (DAS) user account, using the format "domain\user".
+5. Under **Logins**, add the Data Access Service (DAS) user account using the format "domain\user".
 6. For the DAS user account, add the following user mappings:
    - ConfigService
    - db_accessadmin
@@ -84,7 +84,7 @@ After moving the Operations Manager operational database to a different SQL Serv
    - sdk_users
    - sql_dependency_subscriber
 
-7. If an account has not existed before in the SQL Server instance in which you are adding it, the mapping will be picked up by SID automatically from the restored operational  database. If the account has existed in that SQL Server instance before, you receive an error indicating failure for that login, although the account appears under **Logins**. If you are creating a new login, ensure the User Mapping for that log in and database are set to the same values as the previous login as follows:
+7. If an account hasn't existed before in the SQL Server instance in which you're adding it, the mapping will be picked up by SID automatically from the restored operational database. If the account has existed in that SQL Server instance before, you receive an error indicating failure for that login, although the account appears under **Logins**. If you're creating a new login, ensure the User Mapping for that log in and database are set to the same values as the previous login as follows:
 
     | Login | Database|
     |-------|----------|
@@ -93,7 +93,7 @@ After moving the Operations Manager operational database to a different SQL Serv
     | DAS/Configuration account | - ConfigService<br>- db_accessadmin<br>- db_datareader<br>- db_datawriter<br>- db_ddladmin<br>- db_securityadmin<br>- sdk_users<br>- sql_dependency_subscriber|
 
     > [!NOTE]
-    > If the DAS/Configuration account uses the LocalSystem account, specify computer account in the form \<domain\>\<computername>$.
+    > If the DAS/Configuration account uses the LocalSystem account, specify the computer account in the form \<domain\>\<computername>$.
 
 8. Run the following command on the new SQL Server instance hosting the Operations Manager operational database.  
    ```
@@ -125,8 +125,8 @@ After moving the Operations Manager operational database to a different SQL Serv
 
 
 ### Update Service Principal Name for Kerberos Connections
-To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?preserve-view=true&view=sql-server-2017#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
+To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?preserve-view=true&view=sql-server-2017#Manual) in order for management servers to authenticate with the SQL Server using the Kerberos protocol.  
 
 ## Next steps
 
-- See [How to move the Reporting data warehouse database](manage-move-omdwdb.md) to understand the sequence and steps for moving the Operations Manager Reporting data warehouse database to a new SQL Server instance.
+- To understand the sequence and steps for moving the Operations Manager Reporting data warehouse database to a new SQL Server instance, see [How to move the Reporting data warehouse database](manage-move-omdwdb.md).
