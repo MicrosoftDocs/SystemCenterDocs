@@ -16,7 +16,7 @@ ms.technology: operations-manager
 Management Pack for SQL Server occupies certain amount of memory and CPU capacity in order to monitor your SQL environment. The following table provides statistics on memory and CPU consumption per SKU type, depending on the number of databases being monitored.
 
 >[!NOTE]
->Metrics below are applicable to Management Pack for SQL Server only; capacities that are consumed by other resources are not considered in this table. Also, Management Pack for SQL Server supports monitoring of no more than 2300 databases on a single instance and no more than 50 SQL Server instances on a single machine.
+>The metrics below are applicable to Management Pack for SQL Server only; capacities that are consumed by other resources aren't considered in this table. Also, Management Pack for SQL Server supports monitoring of no more than 2300 databases on a single instance and no more than 50 SQL Server instances on a single machine.
 
 |SKU type|Total v-cores|RAM (GB)|SQL Server edition|Number of monitored databases per DB Engine|Database supports In-Memory OLTP*|Total CPU utilization|Total memory reserved|
 |-|-|-|-|-|-|-|-|

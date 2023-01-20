@@ -29,12 +29,12 @@ Management Pack for SQL Server provides the following SQL Server agent alerting 
 - MSSQL on Windows: SQL Server Agent is unable to connect to SQL Server
 - MSSQL on Windows: Unable to re-open the local eventlog
 
-By default, these rules are enabled in [agent monitoring](sql-server-management-pack-monitoring-modes.md) mode, but disabled in [mixed monitoring](sql-server-management-pack-monitoring-modes.md#configuring-mixed-monitoring-mode) mode because Operations Manager does not allow events from event logs to collect on remote computers. To change this, you can override each of these rules by enabling the **AllowProxying** option.
+By default, these rules are enabled in [agent monitoring](sql-server-management-pack-monitoring-modes.md) mode, but disabled in [mixed monitoring](sql-server-management-pack-monitoring-modes.md#configuring-mixed-monitoring-mode) mode because Operations Manager doesn't allow events from event logs to collect on remote computers. To change this, you can override each of these rules by enabling the **AllowProxying** option.
 
 >[!NOTE]
->Enabling the **AllowProxying** option may cause remote code execution. Do not enable this option unless you are sure that your computer is secured.
+>Enabling the **AllowProxying** option may cause remote code execution. Don't enable this option unless you're sure that your computer is secured.
 
-None of these rules work in [agentless monitoring](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode) mode and are unavailable for SQL on Linux.
+None of these rules work in the [agentless monitoring](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode) mode and are unavailable for SQL on Linux.
 
 ## Always On Alert Rules
 
@@ -58,7 +58,7 @@ sp_altermessage 19406, 'with_log', 'true'
 
 Management Pack for SQL Server provides monitors that check the existence and age of a database and log backups as reported by Microsoft SQL Server. This is done by running a query against the master database of the SQL instance and returning the age of the backup.
 
-These monitors are located under the Availability Group Database Availability State rollup, in the Availability Group view. The list of monitors is as follows:
+These monitors are located under the Availability Group Database Availability State rollup in the Availability Group view. The list of monitors is as follows:
 
 - Availability Database Backup Status monitor
 - Availability Database Log Backup Status monitor
@@ -67,7 +67,7 @@ These monitors are located under the Availability Group Database Availability St
 
 This monitor targets on Availability Database Health and checks the database backup status according to the threshold in days.
 
-By default, the monitor does not track the [Availability Group Backup Preferences](/sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page). If this overdrive is enabled, the monitor will track the backup location configured in the backup preferences of the availability group and will verify whether the backup on the selected replica complies with the backup frequency setting.
+By default, the monitor doesn't track the [Availability Group Backup Preferences](/sql/database-engine/availability-groups/windows/availability-group-properties-new-availability-group-backup-preferences-page). If this overdrive is enabled, the monitor will track the backup location configured in the backup preferences of the availability group and will verify whether the backup on the selected replica complies with the backup frequency setting.
 
 The backup preferences of the selected availability group can be as follows:
 
@@ -77,15 +77,17 @@ The backup preferences of the selected availability group can be as follows:
 
 - **Secondary only**
 
-  Specifies that backups should never be performed on the primary replica. If the primary replica is the only replica online, the backup should not occur.
+  Specifies that backups should never be performed on the primary replica. If the primary replica is the only replica online, the backup shouldn't occur.
 
 - **Primary**
 
-  Specifies that the backups should always occur on the primary replica. This option is useful if you need backup features, such as creating differential backups that are not supported when backup is run on a secondary replica.
+  Specifies that the backups should always occur on the primary replica. This option is useful if you need backup features, such as creating differential backups that aren't supported when backup is run on a secondary replica.
 
 - **Any Replica**
 
-  Specifies that you prefer that backup jobs ignore the role of the availability replicas when choosing the replica to perform backups. Note backup jobs might evaluate other factors such as backup priority of each availability replica in combination with its operational state and connected state.
+  Specifies that you prefer that backup jobs ignore the role of the availability replicas when choosing the replica to perform backups.
+  > [!NOTE]
+  > Backup jobs might evaluate other factors such as backup priority of each availability replica in combination with its operational state and connected state.
 
 The following are examples of turning the track settings option on and off in the case of **backup preferences is the Primary replica** for Availability Group, and the **backup file exists on a secondary replica** only.
 
@@ -145,7 +147,7 @@ Space monitoring supports the following types of media:
 - SMB Shares
 - Azure BLOBs
 
-After you import Management Pack for SQL Server, you may find that some of the space monitoring workflows are enabled by default while others are disabled. For the purposes of reducing the load on the environment, space monitoring is enabled only for the database level and disabled for the filegroup, log file, In-Memory OLTP container, and FILESTREAM filegroup levels. If your environment is sensitive to extra load, enabling rarely used workflows is not recommended.
+After you import Management Pack for SQL Server, you may find that some of the space monitoring workflows are enabled by default while others are disabled. For the purposes of reducing the load on the environment, space monitoring is enabled only for the database level and disabled for the filegroup, log file, In-Memory OLTP container, and FILESTREAM filegroup levels. If your environment is sensitive to extra load, enabling rarely used workflows isn't recommended.
 
 >[!NOTE]
 >When monitoring filegroups, an alert is only thrown if all files in the filegroup are unhealthy altogether. If there is at least one file in the filegroup that is healthy, then no alerts will be registered.
@@ -198,7 +200,7 @@ This override allows you to define how you want to monitor free space in your en
 
 ## Disabled Space Monitoring Workflows for SQL on Linux
 
-The following workflows are disabled by default as they are not provided with the necessary data by the SQL Server on Linux:
+The following workflows are disabled by default as they aren't provided with the necessary data by the SQL Server on Linux:
 
 - Rules
   - MSSQL on Linux: DB Memory-Optimized Data Filegroup Free Space Total (MB)
@@ -240,7 +242,7 @@ All database states except the ONLINE one will result in an unhealthy monitor st
 
 For more information, see [Database States](/sql/relational-databases/databases/database-states).
 
-The monitor also supports the "Disable if Availability Group is offline" override for Windows-based environments. When this override is set to true and the Availability Group that hosts the database is unavailable, the monitor stops tracking the state of such a database. This override is useful as it helps you prevent alert storming that may happen when working with SQL Server 2012 due to the specifics of its architecture. For higher versions of SQL Server, this override is not required.
+The monitor also supports the "Disable if Availability Group is offline" override for Windows-based environments. When this override is set to true and the Availability Group that hosts the database is unavailable, the monitor stops tracking the state of such a database. This override is useful as it helps you prevent alert storming that may happen when working with SQL Server 2012 due to the specifics of its architecture. For higher versions of SQL Server, this override isn't required.
 
 ## Many Databases on the Same Drive
 
@@ -339,7 +341,7 @@ The following is a complete list of securables checked by the monitor targeted t
   - sys.syscolumns
 
 >[!NOTE]
->Mind that some monitors may have properties with double underscore in their names. Such properties are used for internal management pack purposes; make sure not to use them.
+>Some monitors may have properties with double underscore in their names. Such properties are used for internal management pack purposes; ensure not to use them.
 
 ## WMI Health State Monitor
 
@@ -354,7 +356,7 @@ This monitor checks whether the configured [Run As Account](sql-server-managemen
 - ROOT\Microsoft\SqlServer\ComputerManagement15
 - ROOT\Microsoft\SqlServer\ComputerManagement16
 
-The monitor produces an alert in cases when there is no access to any of the above namespaces.
+The monitor produces an alert in cases when there's no access to any of the above namespaces.
 
 ## SQL Server Agent Jobs Monitoring
 
@@ -362,7 +364,7 @@ Management Pack for SQL Server is capable of performing availability and perform
 
 - Last Runs Status monitor
 
-  This monitor checks all jobs on the SQL Agent and if any of the jobs did not completed successfully, the monitor changes its state to Warning. This does not generate an alert because there is an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled.
+  This monitor checks all jobs on the SQL Agent and if any of the jobs didn't complete successfully, the monitor changes its state to Warning. This doesnt generate an alert because there's an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled.
 
   The monitor has the **Number of fails threshold** override, which indicates how many times a SQL Agent Job can fail before the monitor's state is changed to Warning. The override **Defines the Canceled status as Failed** could track the Cancelled job's last run status as a Failed.
 
@@ -370,26 +372,33 @@ Management Pack for SQL Server is capable of performing availability and perform
 
   This monitor checks for long running SQL Agent jobs. A Warning or Error alert will appear if a job has been running for longer than the configured thresholds - **Warning Threshold (minutes)** and **Critical Threshold (minutes)**.
 
-  By default, this monitor does not monitor jobs that have schedule type **Start automatically when SQL Server Agent starts** because these jobs often run until SQL Agent stops (i.e. continuously). Usually, SQL Server Replication uses such jobs, but in some cases, jobs with the **Start automatically when SQL Server Agent starts** schedule type may run for a relatively short interval. To monitor these jobs, override the parameter **Included continuously executed jobs** with a comma-delimited list of the job names. The job name in the list should meet the requirements of one of the following identifier classes:
+  By default, this monitor doesn't monitor jobs that have schedule type **Start automatically when SQL Server Agent starts** because these jobs often run until SQL Agent stops (that is, continuously). Usually, SQL Server Replication uses such jobs, but in some cases, jobs with the **Start automatically when SQL Server Agent starts** schedule type may run for a relatively short interval. To monitor these jobs, override the parameter **Included continuously executed jobs** with a comma-delimited list of the job names. The job name in the list should meet the requirements of one of the following identifier classes:
 
   - Regular
     - Can contain any character except the comma sign (,) and double quote sign (").
-    - Should not start or end with any of the white-space characters.
+    - Shouldn't start or end with any of the white-space characters.
 
   - Delimited
     - Can contain any characters and should be delimited by double quotes.
     - Double quotes should be escaped by doubling them.
   
-  Any name belonging to any of the classes above should be from 1 to 128 characters, excluding delimiter characters. Note that this monitor is disabled by default. Use overrides to enable it when necessary.
+  Any name belonging to any of the classes above should be from 1 to 128 characters, excluding delimiter characters.
+
+  > [!NOTE]
+  > This monitor is disabled by default. Use overrides to enable it when necessary.
 
 - Job Duration monitor
 
-  This monitor checks all jobs on the SQL Agent and if any of the jobs takes longer than the specified threshold. A Warning or Error alert will appear if a job duration is longer than the configured thresholds - **Warning Threshold (minutes)** and **Critical Threshold (minutes)**. This does not generate an alert because there is an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled, or use the **Job Duration alert rule**.
+  This monitor checks all jobs on the SQL Agent and if any of the jobs takes longer than the specified threshold. A Warning or Error alert will appear if a job duration is longer than the configured thresholds - **Warning Threshold (minutes)** and **Critical Threshold (minutes)**. This doesn't generate an alert because there's an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled, or use the **Job Duration alert rule**.
 
 - Job Duration alert rule
 
-  This rule checks whether the execution time of any of your SQL Agent jobs has exceeded the specified threshold in minutes and throws an alert if the execution time has breached the threshold. Note that this rule is disabled by default. Use overrides to enable it when necessary.
+  This rule checks whether the execution time of any of your SQL Agent jobs has exceeded the specified threshold in minutes and throws an alert if the execution time has breached the threshold. 
+  > [!NOTE]
+  > This rule is disabled by default. Use overrides to enable it when necessary.
 
 - Job Duration performance rule
 
-  This rule collects the duration in minutes of any of your SQL Agent jobs. Note that this rule is disabled by default. Use overrides to enable it when necessary.
+  This rule collects the duration in minutes of any of your SQL Agent jobs. 
+  > [!NOTE]
+  > This rule is disabled by default. Use overrides to enable it when necessary.
