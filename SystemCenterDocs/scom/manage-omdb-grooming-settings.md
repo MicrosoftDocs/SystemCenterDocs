@@ -45,7 +45,7 @@ The grooming process removes unnecessary data from the Operations Manager databa
 
 Any updates to the grooming settings are applied immediately.  
 
-Use the following procedure to specify when specific data types are deleted or groomed from the Operations Manager database in a management group. The default grooming setting for all data types is data older than 7 days.  
+Use the following procedure to specify when specific data types are deleted or groomed from the Operations Manager database in a management group. The default grooming setting for all data types is data older than seven days.  
 
 ## To configure database grooming settings for a management group  
 

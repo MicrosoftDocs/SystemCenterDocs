@@ -24,7 +24,7 @@ You can move the System Center Operations Manager Reporting server component to 
 
 During this move, Operations Manager stops storing data in the OperationsManagerDW database until you complete the Operations Manager reporting server reinstall.
 
-Use the procedures in this article to move the reporting server to a new server and verify the success of the move. You must back up any custom reports authored outside of Operations Manager, favorites, and schedules which are stored in the report server database.  For more information about the preparation and steps required to move the SQL Server reporting services installation, see [Moving the Report Server Databases to Another Computer (SSRS Native Mode)](/sql/reporting-services/report-server/moving-the-report-server-databases-to-another-computer-ssrs-native-mode).
+Use the procedures in this article to move the reporting server to a new server and verify the success of the move. You must back up any custom reports authored outside of Operations Manager, favorites, and schedules, which are stored in the report server database.  For more information about the preparation and steps required to move the SQL Server reporting services installation, see [Moving the Report Server Databases to Another Computer (SSRS Native Mode)](/sql/reporting-services/report-server/moving-the-report-server-databases-to-another-computer-ssrs-native-mode).
 
 >[!NOTE]
 >Ensure that you follow all steps precisely, as not doing so might result in data corruption.
@@ -43,7 +43,7 @@ The migration process for Reporting Services includes manual and automated steps
 ## Backup data
 
 1. Create a full backup of the data warehouse database. The default name is **OperationsManagerDW**. Also create a full backup of the **ReportServer** and **ReportServerTempDB** database. For more information, see [Create a Full Database Backup (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
-2. On the current Operations Manager reporting server, backup the SSRS encryption key. For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+2. On the current Operations Manager reporting server, back up the SSRS encryption key. For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 3. Back up the report server configuration files. Files to back up include:
    - Web.config
 

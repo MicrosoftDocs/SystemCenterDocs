@@ -84,7 +84,7 @@ After moving the Operations Manager operational database to a different SQL Serv
    - sdk_users
    - sql_dependency_subscriber
 
-7. If an account hasn't existed before in the SQL Server instance in which you're adding it, the mapping will be picked up by SID automatically from the restored operational database. If the account has existed in that SQL Server instance before, you receive an error indicating failure for that login, although the account appears under **Logins**. If you're creating a new login, ensure the User Mapping for that log in and database are set to the same values as the previous login as follows:
+7. If an account hasn't existed before in the SQL Server instance in which you're adding it, the mapping will be picked up by SID automatically from the restored operational database. If the account has existed in that SQL Server instance before, you receive an error indicating failure for that login, although the account appears under **Logins**. If you're creating a new login, ensure the User Mapping for that log in, and database are set to the same values as the previous login as follows:
 
     | Login | Database|
     |-------|----------|

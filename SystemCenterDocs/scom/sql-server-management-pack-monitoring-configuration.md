@@ -107,7 +107,7 @@ This monitor targets on Availability Database Health and checks the database log
 
 Availability Database Backup Status and Availability Database Log Backup Status monitors are configured with the rollup policy "Best state of any member" and have the critical alerts on the respective rollup by default to display the complete status of the database in the availability group.
 
-Availability Database is the entity of one database that may be hosted on many replicas, based on this, only the "Availability Database Backup Status (rollup)" has the alerting, to check the whole availability database status against displaying database status on each replicas:
+Availability Database is the entity of one database that may be hosted on many replicas, based on this, only the "Availability Database Backup Status (rollup)" has the alerting, to check the whole availability database status against displaying database status on each replica:
 
 ![Screenshot of Availability Database backup rollup alert.](./media/sql-server-management-pack/availability-database-backup-rollup-alert.png)
 
@@ -366,7 +366,7 @@ Management Pack for SQL Server is capable of performing availability and perform
 
   This monitor checks all jobs on the SQL Agent and if any of the jobs didn't complete successfully, the monitor changes its state to Warning. This doesnt generate an alert because there's an override to disable alerts to control noise. If you want this level of monitoring, you need to override **Generates Alerts** back to enabled.
 
-  The monitor has the **Number of fails threshold** override, which indicates how many times a SQL Agent Job can fail before the monitor's state is changed to Warning. The override **Defines the Canceled status as Failed** could track the Cancelled job's last run status as a Failed.
+  The monitor has the **Number of fails threshold** override, which indicates how many times a SQL Agent Job can fail before the monitor's state is changed to Warning. The override **Defines the Canceled status as Failed** could track the Canceled job's last run status as a Failed.
 
 - Long Running Jobs monitor
 

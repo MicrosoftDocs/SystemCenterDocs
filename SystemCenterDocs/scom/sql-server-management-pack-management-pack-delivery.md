@@ -17,8 +17,8 @@ You can download Management Pack for SQL Server from the [Microsoft portal](http
 
 The package includes the following files:
 
-- **SQLServerMP.Windows.msi** — a set of MP and MPB files for monitoring of SQL on Windows.
-- **SQLServerMP.Linux.msi** — a set of MP and MPB files for monitoring of SQL on Linux.
+- **SQLServerMP.Windows.msi**—a set of MP and MPB files for monitoring of SQL on Windows.
+- **SQLServerMP.Linux.msi**—a set of MP and MPB files for monitoring of SQL on Linux.
 
 Management Pack for SQL Server consists of the following files:  
 
@@ -79,7 +79,7 @@ This rule looks for existing instances and adds the corresponding versions to th
 
 If you remove the **Microsoft SQLServer overrides** management pack while still having version-specific management packs, the rule will re-create this management pack anew.
 
-To make the version-agnostic management pack the primary source of monitoring, remove version-specific management packs and then remove (or modify) the **Microsoft SQLServer overrides** management pack.
+To make the version-agnostic management pack the primary source of monitoring, remove version-specific management packs, and then remove (or modify) the **Microsoft SQLServer overrides** management pack.
 
 When you import version-specific management packs after importing the version-agnostic management pack, the monitoring provided by the version-agnostic management pack won't be disabled.
 

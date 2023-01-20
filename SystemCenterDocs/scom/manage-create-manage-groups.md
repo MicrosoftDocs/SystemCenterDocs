@@ -36,7 +36,7 @@ Some of the purposes of using groups are:
 
 -   To scope alert notifications or product connector subscriptions for a specific set of computers.
 
--   To scope user consoles, so the user role only sees the servers they are responsible for.  
+-   To scope user consoles, so the user role only sees the servers they're responsible for.  
 
 -   To scope a set of computers that need to go into a scheduled maintenance mode.  
 

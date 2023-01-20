@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-A Resource Pool is a collection of management servers and/or gateway servers used to distribute work among themselves and take over work from a failed member.  In this article, we will cover how to create and modify resource pools and their membership, and configure a resource pool dedicated to monitor UNIX and Linux computers.
+A Resource Pool is a collection of management servers and/or gateway servers used to distribute work among themselves and take over work from a failed member.  In this article, we'll cover how to create and modify resource pools and their membership, and configure a resource pool dedicated to monitor UNIX and Linux computers.
 
 
 ## To create a resource pool

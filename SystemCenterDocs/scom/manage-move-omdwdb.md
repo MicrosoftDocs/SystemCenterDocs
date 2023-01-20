@@ -40,7 +40,7 @@ On all the management servers in the management group, stop the Operations Manag
   - Microsoft Monitoring Agent
   - System Center Management Configuration
 
-### Backup the Reporting data warehouse database on the old SQL Server instance
+### Back up the Reporting data warehouse database on the old SQL Server instance
 
 1. On the original SQL Server instance hosting the Reporting data warehouse database, use Microsoft SQL Server Management Studio to create a full backup of the database. The default name is OperationsManagerDW.
 
@@ -109,7 +109,7 @@ To update Kerberos authentication with SQL Server, you should review [Register a
 
 1. Verify that you can successfully run a report from the console.
 
-2. Ensure that the health state of all management servers in the management group are Healthy.  If the health state of any management server is Critical, open Health Explorer, expand Availability - \<server name\>, and then continue to expand until you can navigate to Data Warehouse SQL RS Deployed Management Pack List Request State. Check the associated events to determine if there's an issue accessing the data warehouse database.
+2. Ensure that the health states of all management servers in the management group are Healthy. If the health state of any management server is Critical, open Health Explorer, expand Availability - \<server name\>, and then continue to expand until you can navigate to Data Warehouse SQL RS Deployed Management Pack List Request State. Check the associated events to determine if there's an issue accessing the data warehouse database.
 
 3. Check operating system events.
 
@@ -122,7 +122,7 @@ To update Kerberos authentication with SQL Server, you should review [Register a
     a. In the Operations console, select Monitoring.  
     b. In the Monitoring workspace, navigate to Monitoring, Operations Manager, Health Service Module Events, and then to Performance Data Source Module Events.  
     c. Search the Performance Data Source Module Events pane for events with a Date and Time that is later than the move.  
-    d. If there's a problem with the data warehouse database, events which have a Source of Health Service Module and an Event Number of 10103 should exist.
+    d. If there's a problem with the data warehouse database, events that have a Source of Health Service Module and an Event Number of 10103 should exist.
 
 ## Next steps
 
