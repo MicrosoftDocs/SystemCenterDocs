@@ -3,7 +3,7 @@ title: How to Set Alert Resolution States
 description: This article describes how to set custom resolution states for alerts generated in Operations Manager to support your incident management process.
 author: jyothisuri
 ms.author: jsuri
-ms.manager: evansma
+ms.manager: mkluck
 ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center
@@ -34,31 +34,31 @@ In System Center Operations Manager there are seven default resolution states fo
 
 When an alert is generated, its resolution state is **New**. Operators can change the resolution state for a new alert to Closed or to a custom resolution state that an administrator has created for the management group.  
 
-Custom alert resolution states can used any descriptor you want, such as "Assigned to support" or "Requires investigation". The default resolution states cannot be changed or deleted.  
+Custom alert resolution states can use any descriptor you want, such as "Assigned to support" or "Requires investigation". The default resolution states can't be changed or deleted.  
 
-Each resolution state is assigned an ID, a number which uniquely identifies that resolution state. You can assign custom resolution states any that is not already used, and you cannot use a value higher than 255.  
+Each resolution state is assigned an ID, a number which uniquely identifies that resolution state. You can assign custom resolution state that isn't already used, and you can't use a value higher than 255.  
 
 ## To set the resolution state for an alert  
 
-1.  In the Operations console, click **Monitoring**.  
+1.  In the Operations console, select **Monitoring**.  
 
-2.  Click any view that displays alerts, such as **Active Alerts**.  
+2.  Select any view that displays alerts, such as **Active Alerts**.  
 
-3.  Right-click an alert, point to **Set Resolution State**, and then click the desired resolution state.  
+3.  Right-click an alert, point to **Set Resolution State**, and select the desired resolution state.  
 
 ## To create an alert resolution state  
 
-1.  In the Operations console, click **Administration**.  
+1.  In the Operations console, select **Administration**.  
 
-2.  Click **Settings**.  
+2.  Select **Settings**.  
 
 3.  Double-click **Alerts**.  
 
-4.  On the **Alert Resolution States** tab, click **New**.  
+4.  On the **Alert Resolution States** tab, select **New**.  
 
-5.  In **Add Alert Resolution State**, type a name for the resolution state and select a value in the **Unique ID** box, and then click **OK**.  
+5.  In **Add Alert Resolution State**, enter a name for the resolution state, select a value in the **Unique ID** box, and select **OK**.  
 
-6.  In **Global Management Group Settings - Alerts**, click **OK**.  
+6.  In **Global Management Group Settings - Alerts**, select **OK**.  
 
 ## Next steps
 
