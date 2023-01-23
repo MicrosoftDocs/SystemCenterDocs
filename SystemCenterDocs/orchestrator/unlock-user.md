@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-You can use the Unlock User activity in a runbook to reset the user password in Active Directory.
+You can use the Unlock User activity in a runbook to reset the user password in Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
