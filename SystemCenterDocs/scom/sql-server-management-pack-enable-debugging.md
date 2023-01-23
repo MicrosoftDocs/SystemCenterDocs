@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Enabling Debugging
 
-In Management Pack for SQL Server, you can enable debugging in the Windows Event log in cases when you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
+In Management Pack for SQL Server, you can enable debugging in the Windows Event log in cases where you want to investigate potential issues that may occur during monitoring or see the detailed data sets used in the management pack workflows.
 
 To enable debugging, do the following:
 
@@ -48,7 +48,7 @@ ForEach-Object {
 }
 ```
 
-The same should be done for each Operations Manager or Monitoring Agent where extended logging must be enabled. You do not need to restart any service, changes are applied automatically.
+The same should be done for each Operations Manager or Monitoring Agent where extended logging must be enabled. You don't need to restart any service; changes are applied automatically.
 
 > [!NOTE]
-> Currently you can enable extended logging for all SQL MP modules only. Extended logging of separate modules is not supported yet.
+> Currently, you can enable extended logging for all SQL MP modules only. Extended logging of separate modules isn't supported yet.

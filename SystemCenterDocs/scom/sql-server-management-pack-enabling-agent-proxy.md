@@ -23,6 +23,6 @@ To enable the **Agent Proxy** option, perform the following steps:
 
 3. Double-click an agent.
 
-4. On the **Security** tab, select the **Allow this agent to act as a proxy and discover managed objects on other computers** checkbox, and click **OK**.
+4. On the **Security** tab, select the **Allow this agent to act as a proxy and discover managed objects on other computers** checkbox, and select **OK**.
 
-    ![Enable agent proxy option](./media/sql-server-management-pack/enabling-agent-proxy-option.png)
+    ![Screenshot showing Enable agent proxy option.](./media/sql-server-management-pack/enabling-agent-proxy-option.png)

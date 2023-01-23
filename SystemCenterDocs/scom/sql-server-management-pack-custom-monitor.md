@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Custom Query-Based Monitors
 
-If the set of default monitors in the management pack is not enough to cover your workflows, you can create your monitor that targets the SQL Server DB Engine for Windows and Linux platforms.
+If the set of default monitors in the management pack isn't enough to cover your workflows, you can create your monitor that targets the SQL Server DB Engine for Windows and Linux platforms.
 
 There are two types of monitors:
 
@@ -30,11 +30,11 @@ To create a new two-state custom query-based monitor, perform the following step
 
 2. At the **Monitor Type** step, select **Microsoft SQL Server | User-defined SQL Query Two State Monitor**.
 
-3. From the **Select destination management pack** drop-down list, select a management pack that you want to use or create a new one and click **Next**.
+3. From the **Select destination management pack** dropdown list, select a management pack that you want to use or create a new one and select **Next**.
 
     ![Screenshot of selecting a monitor type.](./media/sql-server-management-pack/selecting-monitor-type.png)
 
-4. At the **General Properties** step, enter the monitor name and optional description, select **Monitor target** and **Parent monitor**, and click **Next**.
+4. At the **General Properties** step, enter the monitor name and optional description, select **Monitor target** and **Parent monitor**, and select **Next**.
 
     ![Screenshot of selecting a monitor name and description.](./media/sql-server-management-pack/custom-monitor-name-and-description.png)
 
@@ -44,11 +44,11 @@ To create a new two-state custom query-based monitor, perform the following step
 
     The default selected database is **master**.
 
-    ![Diagram that specify target database name and SQL query.](./media/sql-server-management-pack/unit-monitor-sql-query.png)
+    ![Screenshot showing target database name and SQL query.](./media/sql-server-management-pack/unit-monitor-sql-query.png)
 
 6. At the **Conditions** step, add one or more **Conditions** to verify query results.
 
-    To add a new condition, click **Add** and select one of the available conditions:
+    To add a new condition, select **Add** and select one of the available conditions:
 
     - **Empty Result Set**
 
@@ -56,23 +56,23 @@ To create a new two-state custom query-based monitor, perform the following step
 
     - **Not Empty Result Set**
 
-      Checks if the specified result set that was returned by the query is not empty.
+      Checks if the specified result set that was returned by the query isn't empty.
 
     - **Scalar Value**
 
       Checks the scalar value in the specified cell of the result set. Only equal comparison is available at this moment. If you need complex logic, you may cover that with the query.
 
-    ![Diagram that specify test conditions.](./media/sql-server-management-pack/unit-monitor-conditions.png)
+    ![Screenshot showing test conditions.](./media/sql-server-management-pack/unit-monitor-conditions.png)
 
     When you add a condition, you must specify **Friendly name** and **Configuration** required for a specific check to be performed.
 
-    ![Diagram that specify scalar values.](./media/sql-server-management-pack/editing-test-conditions.png)
+    ![Screenshot showing scalar values.](./media/sql-server-management-pack/editing-test-conditions.png)
 
     You can make more than one condition using the **OR** and **AND** operators. Any condition can be changed or deleted using the following buttons.
 
-    ![Diagram that shows multiple conditions.](./media/sql-server-management-pack/multiple-conditions.png)
+    ![Screenshot showing multiple conditions.](./media/sql-server-management-pack/multiple-conditions.png)
 
-    After all required conditions are set, click **Next**
+    After all the required conditions are set, select **Next**
 
 7. At the **Schedule** page, configure a query execution schedule and synchronization time.
 
@@ -82,7 +82,7 @@ To create a new two-state custom query-based monitor, perform the following step
 
     ![Screenshot of configuring health.](./media/sql-server-management-pack/configure-health.png)  
 
-9. At the **Configure Alerts** step, enable the generating alerts and edit the **Alert properties** if needed, and click **Create**.
+9. At the **Configure Alerts** step, enable the generating alerts and edit the **Alert properties** if needed, and select **Create**.
 
     If you need to activate alerts for the monitor, check the box **Generate alerts for this monitor**, and set up an alert name and description to be shown in cases of conditions failing. Change priority and severity, and resolve the alert mode.
 
@@ -97,7 +97,7 @@ To create a new two-state custom query-based monitor, perform the following step
 
 Creating a three-state custom query-based monitor is similar to a two-state monitor. The main difference is that you may specify the **Warning** and **Critical** conditions.
 
-![Diagram that shows a warning and a critical condition to three-states monitor.](./media/sql-server-management-pack/warning-and-critical-conditions.png)
+![Screenshot showing a warning and a critical condition to three-states monitor.](./media/sql-server-management-pack/warning-and-critical-conditions.png)
 
 > [!IMPORTANT]
-> Critical conditions are verified first. If one or more critical conditions fail, the monitor will switch to the critical state, and warning conditions will not be verified.
+> Critical conditions are verified first. If one or more critical conditions fail, the monitor will switch to the critical state, and warning conditions won't be verified.

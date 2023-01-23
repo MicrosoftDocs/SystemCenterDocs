@@ -18,7 +18,7 @@ All workflows (discoveries, rules, monitors, and actions) in this management pac
 To enable low-privilege monitoring, grant appropriate permissions to Run As accounts and map these accounts to respective Run As Profiles.
 
 > [!NOTE]
-> The **Virtual Log File Count** monitor (VLF) does not support low-privilege monitoring on SQL Servers 2012 and 2014.
+> The **Virtual Log File Count** monitor (VLF) doesn't support low-privilege monitoring on SQL Servers 2012 and 2014.
 
 ## Agent Monitoring
 
@@ -64,14 +64,14 @@ This section explains how to configure low-privilege agent monitoring.
 5. Configure the **Allow log on locally** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to log on locally.
 
     > [!NOTE]
-    > If you are using the versions of the System Center Operations Manager 2012 R2 or 2016, follow the steps above to provide **Allow log on locally** permission to Run As accounts. [Learn more](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally).
+    > If you're using the versions of the System Center Operations Manager 2012 R2 or 2016, follow the steps above to provide **Allow log on locally** permission to Run As accounts. [Learn more](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally).
 
-6. Configure the **Log on as a Service** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to log on as a service.
+6. Configure the **Log on as a Service** local security policy to allow the **SQLTaskAction** user and the **SQLMPLowPriv** domain group users to sign in as a service.
 
     > [!NOTE]
-    > If you are using the versions of the System Center Operations Manager 2019 and higher, follow the steps above to provide **Log on as a Service** permission to Run As accounts. [Learn more](./enable-service-logon.md).
+    > If you're using the versions of System Center Operations Manager 2019 and higher, follow the steps above to provide **Log on as a Service** permission to Run As accounts. [Learn more](./enable-service-logon.md).
 
-7. In the **Microsoft Monitoring Agent** properties for the selected management group set the **Local System** account to perform agent actions.
+7. In the **Microsoft Monitoring Agent** properties for the selected management group, set the **Local System** account to perform agent actions.
 
 ### Extra Steps for Cluster SQL Server Instances
 
@@ -180,7 +180,7 @@ Take the following steps on an agent machine or database only if you want to all
 
 1. If the task is related to starting or stopping an NT service (such as DB Engine Service, SQL Server Agent service, SQL Full Text Search Service, Integration Services), on the agent machine, grant the **SQLTaskAction** user the permission to start or stop an NT service. This involves setting a service security descriptor. For more information, see [Sc sdset](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc742037(v=ws.10)).
 
-    Read existing privileges for the given service using **sc sdshow** and grant extra privileges to the **SQLTaskAction** user.
+    Read the existing privileges for the given service using **sc sdshow** and grant extra privileges to the **SQLTaskAction** user.
 
     For example, if the results of the **sdshow** command for SQL Server service are as follows:
 
@@ -233,7 +233,7 @@ Take the following steps on an agent machine or database only if you want to all
     - SQLDiscovery
     - SQLMonitor
 
-3. In the System Center Operations Manager console, configure Run As Profiles as follows:
+3. In System Center Operations Manager console, configure Run As Profiles as follows:
 
     - Set the **Microsoft SQL Server Task** Run As Profile to use the **SQLTaskAction** Run As account.
     - Set the **Microsoft SQL Server Discovery** Run As Profile to use the **SQLDiscovery** Run As account.
@@ -363,9 +363,9 @@ Take the following steps only if you want to allow the System Center Operations 
 
 To configure low-privilege agentless monitoring using the monitoring wizard, perform the steps provided in the [Configuring Agentless Monitoring Mode](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode) section, but with the following changes:
 
-1. In the **Add Monitoring Wizard** window, click **Add Instances**.
+1. In the **Add Monitoring Wizard** window, select **Add Instances**.
 
-2. In the **Add Instances** window, select a common Run As account with the appropriate SQL low-privilege login and specify data sources and/or connection strings.
+2. In the **Add Instances** window, select a common Run As account with the appropriate SQL low-privilege login, and specify data sources and/or connection strings.
 
     For example:
 
@@ -373,11 +373,11 @@ To configure low-privilege agentless monitoring using the monitoring wizard, per
      - 172.31.2.133,50626;MachineName="W12BOX-839";InstanceName="SQLEXPRESS";Platform="Windows"
      - 172.17.5.115;MachineName="ubuntu";InstanceName="MSSQLSERVER";Platform="Linux"
 
-    You can also create a new Run As account. For that, in the **Add Instances** window, click **New**, enter a new name for the Run As account, and specify credentials to access the SQL Server that you want to monitor.
+    You can also create a new Run As account. For that, in the **Add Instances** window, select **New**, enter a new name for the Run As account, and specify credentials to access the SQL Server that you want to monitor.
 
     ![Screenshot of Run As account.](./media/sql-server-management-pack/adding-run-as-account.png)
 
-    After connection is established, you can view and edit properties of the added instance.
+    After the connection is established, you can view and edit properties of the added instance.
 
     ![Screenshot of Instance properties.](./media/sql-server-management-pack/modifying-instance-properties.png)
 
@@ -400,13 +400,13 @@ To configure security for configurations with low-privilege accounts, perform th
     - Component Services
     - WMI Control (for a local computer)
 
-2. Expand **Component Services**, right-click **My Computer**, and select **Properties**.
+2. Expand **Component Services**, select and hold **My Computer**, and select **Properties**.
 
    ![Screenshot of opening properties.](./media/sql-server-management-pack/component-service-properties.png)
 
 3. Open the **COM Security** tab.
 
-4. In the **Launch and Activation Permissions** section, click **Edit Limits**.
+4. In the **Launch and Activation Permissions** section, select **Edit Limits**.
 
    ![Screenshot of editing limits.](./media/sql-server-management-pack/editing-limits.png)
 
@@ -430,7 +430,7 @@ To configure security for configurations with low-privilege accounts, perform th
     - ROOT\Microsoft\SqlServer\ComputerManagement15 (if exists)
     - ROOT\Microsoft\SqlServer\ComputerManagement16 (if exists)
 
-8. Click **Security**.
+8. Select **Security**.
 
 9. Grant the following permissions to the target computer:
 
@@ -439,11 +439,11 @@ To configure security for configurations with low-privilege accounts, perform th
 
    ![Screenshot of security permissions.](./media/sql-server-management-pack/security-permissions.png)
 
-10. Click **Advanced**.
+10. Select **Advanced**.
 
-11. Select the target account and click **Edit**.
+11. Select the target account and select **Edit**.
 
-12. From the **Applies to** drop-down list, select **This namespace only**.
+12. From the **Applies to** dropdown list, select **This namespace only**.
 
 13. In the **Permissions** section, enable the following checkboxes:
 
@@ -487,9 +487,9 @@ To get information about the services, grant required permissions according to t
 
 4. Modify the SDDL string by copying the SDDL section that ends in **IU** (Interactive Users).
 
-    This section is enclosed in parentheses (that is, A;;CCLCRPRC;;;IU). Paste this clause directly after the clause you have copied.
+    This section is enclosed in parentheses (that is, A;;CCLCRPRC;;;IU). Paste this clause directly after the clause you've copied.
 
-    In the following text, replace the IU string with the **Spotlight User** SID.
+    Replace the IU string with the **Spotlight User** SID in the following text.
 
     The new SDDL looks similar to the following one:
 
@@ -497,7 +497,7 @@ To get information about the services, grant required permissions according to t
     D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU) (A;;CCLCRPRC;;;S-1-5-21-214A909598-1293495619-13Z157935-75714)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA) S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)
     ```
 
-5. Set security credentials to access the Service Control Manager by using the **sdset** command.
+5. Set the security credentials to access the Service Control Manager by using the **sdset** command.
 
     ```CONSOLE
     sc sdset scmanager "D:(A;;CC;;;AU)(A;;CCLCRPRC;;;IU)(A;;CCLCRPRC;;;SU)(A;;CCLCRPWPRC;;;SY)(A;;KA;;;BA)(A;;CCLCRPRC;;;S-1-5-21-214A909598-1293495619-13Z157935-75714)S:(AU;FA;KA;;;WD)(AU;OIIOFA;GA;;;WD)"
@@ -525,7 +525,7 @@ To get information about the services, grant required permissions according to t
       - E: Enumerate Dependent Services
       - I: Interrogate Service
 
-7. Set rights for **ClusSvc** (Cluster Service) using the **Command-Line Tool SubInACL** utility for the **Spotlight User** SID.
+7. Set the rights for **ClusSvc** (Cluster Service) using the **Command-Line Tool SubInACL** utility for the **Spotlight User** SID.
 
     Run the utility with the following options:
 
@@ -539,23 +539,23 @@ Create a registry key to manage remote access to the registry.
 
 To create a key, perform the following steps:
 
-1. Open **Registry Editor** and locate the following key `HKLM\SYSTEM\CurrentControlSet\Control`
+1. Open **Registry Editor**, and locate the following key `HKLM\SYSTEM\CurrentControlSet\Control`
 
-2. In the **Edit** menu, click **Add Key** and enter the following values:
+2. In the **Edit** menu, select **Add Key** and enter the following values:
 
     - **Key Name:** SecurePipeServers
     - **Class:** REG_SZ
 
 3. Locate the following key `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers`
 
-4. In the **Edit** menu, click **Add Key** and enter the following values:
+4. In the **Edit** menu, select **Add Key** and enter the following values:
 
     - **Key Name:** winreg
     - **Class:** REG_SZ
 
 5. Locate the following key: `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg`
 
-6. In the **Edit** menu, click **Add Key** and enter the following values:
+6. In the **Edit** menu, select **Add Key** and enter the following values:
 
     - **Value Name:** Description
     - **Data Type:** REG_SZ
@@ -563,6 +563,6 @@ To create a key, perform the following steps:
 
 7. Locate the following key: `HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg`
 
-8. Right-click **winreg**, click **Permissions**, and edit the current permissions, or add users or groups you want to grant access to.
+8. Right-click **winreg**, select **Permissions**, and edit the current permissions, or add users or groups you want to grant access to.
 
 9. Quit **Registry Editor** and restart Windows.
