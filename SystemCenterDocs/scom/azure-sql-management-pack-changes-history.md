@@ -24,7 +24,7 @@ This section covers new functionality and improvements in Management Pack for Az
 - Added a new regular expression filtering mask type in the 'Database Filter List' monitoring wizard, now the database names can be filtered using regular expression for include and exclude from the monitoring
 - Added a new "Allocated Storage Percentage" monitor which tracks the allocated space in Elastic Pool
 - Added a new "Elastic Pool Data Space Allocated Percentage" performance rule which collects the metric 'Data space allocated percentage' of Microsoft Azure SQL Elastic Database Pool in percentage terms
-- Added a new "Elastic Pool Data Max Size" performance rule which collects the metric 'Data max size' of Microsoft Azure SQL Elastic Database Pool in megabytes
+- Added a new "Elastic Pool Data Max Size" performance rule, which collects the metric 'Data max size' of Microsoft Azure SQL Elastic Database Pool in megabytes
 - Added a new "Elastic Pool Data Space Used" performance rule which collects the metric 'Data space used' of Microsoft Azure SQL Elastic Database Pool in megabytes
 - Updated display strings
 
@@ -115,7 +115,7 @@ This section covers new functionality and improvements in Management Pack for Az
 - Added health monitoring for Elastic Pools
 - Added monitoring for “Average DTU utilization percentage” metric
 - Introduced performance improvements to the Management Pack
-- Optimized performance rules notation: all Object Names are standardized; Instance Names are not used anymore
+- Optimized performance rules notation: all Object Names are standardized; Instance Names aren't used anymore
 - Updated the visualization library
 
 ### Bug Fixes

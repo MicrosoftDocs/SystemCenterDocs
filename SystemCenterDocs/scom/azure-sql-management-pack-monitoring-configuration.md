@@ -17,7 +17,7 @@ This section explains monitoring scenarios supported in Management Pack for Azur
 
 ## Service Availability Monitoring
 
-The **State changes of the master database** monitor tracks availability of discovered Azure SQL Database. This monitor is not considered to be noisy and does not require any special configuration.
+The **State changes of the master database** monitor tracks availability of discovered Azure SQL Database. This monitor isn't considered to be noisy and doesn't require any special configuration.
 
 ## Service Performance Monitoring
 
@@ -25,7 +25,7 @@ The management pack provides a server performance monitor that tracks situations
 
 By default, this monitor goes into the **Warning** state when 120 or more databases are created per server and goes into the **Critical** state when 135 or more databases are created per server.
 
-In some situations, these default values are not appropriate. For example, an application may be designed to use all 150 databases for Azure SQL Database. When the default values create noise, the monitor should be disabled or the thresholds should be overridden, depending on the situation.
+In some situations, these default values aren't appropriate. For example, an application may be designed to use all 150 databases for Azure SQL Database. When the default values create noise, the monitor should be disabled or the thresholds should be overridden, depending on the situation.
 
 >[!NOTE]
 >Database performance monitors roll up to service performance monitoring, which can affect the service health state.
@@ -36,7 +36,7 @@ The management pack provides a single rule that collects the number of databases
 
 ## Database Availability Monitoring
 
-The **State changes of the database** monitor tracks availability of the discovered databases. This monitor is not considered to be noisy and does not require any special configuration.
+The **State changes of the database** monitor tracks the availability of the discovered databases. This monitor isn't considered to be noisy and doesn't require any special configuration.
 
 ## Database Performance Monitoring
 
@@ -63,7 +63,7 @@ There are several rules that collect the following performance information about
 
 The management pack can monitor failover group databases.
 
-Active geo-replication is designed as a business continuity solution that allows the application to perform quick disaster recovery of individual databases in cases of a regional disaster or large-scale outage.
+Active geo-replication is designed as a business continuity solution that allows the application to perform quick disaster recovery of individual databases in case of a regional disaster or large-scale outage.
 
 If geo-replication is enabled, the application can initiate failover to a secondary database in a different Azure region. For more information, see the [Creating and using active geo-replication - Azure SQL Database](/azure/azure-sql/database/active-geo-replication-overview) article.
 
