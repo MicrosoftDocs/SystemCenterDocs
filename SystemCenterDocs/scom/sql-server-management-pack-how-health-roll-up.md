@@ -19,16 +19,16 @@ This section explains diagrams that show how the health state of objects roll up
 
 The following figure explains how to read the diagram.
 
-![Legend](./media/sql-server-management-pack/health-rolls-up-legend.png)
+![Illustration of the Legend.](./media/sql-server-management-pack/health-rolls-up-legend.png)
 
 ## Database Engine Health Rollup Diagram
 
 The following diagram shows the inheritance model of the health state of Database Engine objects. The health state of child objects affects the health state of parent objects.
 
-![Health diagram](./media/sql-server-management-pack/health-rollup-diagram.png)
+![The Health diagram.](./media/sql-server-management-pack/health-rollup-diagram.png)
 
 ## Database Health Rollup Diagram
 
 The following diagram shows the inheritance model of the health state of database objects. The health state of child objects affects the health state of parent objects.
 
-![Database diagram](./media/sql-server-management-pack/database-health-rollup-diagram.png)
+![The Database diagram.](./media/sql-server-management-pack/database-health-rollup-diagram.png)
