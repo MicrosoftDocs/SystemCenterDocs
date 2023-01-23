@@ -4,7 +4,7 @@ title: Features and enhancements in Management Pack for SQL Server Dashboards
 description: This article explains the new functionality and bug fixes implemented in Management Pack for SQL Server Dashboards
 author: vchvlad
 ms.author: v-vchernov
-manager: evansma
+manager: mkluck
 ms.date: 12/7/2022
 ms.topic: article
 ms.prod: system-center

@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-You can use the Remove Group From Group activity in a runbook to remove a group from a group in the Microsoft Active Directory.
+You can use the Remove Group From Group activity in a runbook to remove a group from a group in Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
