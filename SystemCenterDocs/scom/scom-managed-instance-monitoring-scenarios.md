@@ -41,7 +41,7 @@ To monitor a cloud workload, follow these steps:
 
 ## Monitor workloads running on-premises and in Azure 
 
-If you have some workloads running on-premises and some in Azure, you can use SCOM Managed Instance (preview) to monitor all of them simultaneously. 
+If you've some workloads running on-premises and some in Azure, you can use SCOM Managed Instance (preview) to monitor all of them simultaneously. 
 
 To monitor your workloads (both on-premises and in Azure), follow these steps:
 
@@ -55,7 +55,7 @@ In SCOM Managed Instance (preview), agents need to be installed manually. The Di
 
 ## Next steps
 
-[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
+[Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md).
 
 **Feedback**
 

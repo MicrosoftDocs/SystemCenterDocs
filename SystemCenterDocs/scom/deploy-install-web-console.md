@@ -5,7 +5,7 @@ description: This article describes how to install the Web console for System Ce
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/21/2022
+ms.date: 01/12/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -129,7 +129,7 @@ The local and remote parameters are as follows:
 10. On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your option, and select **Next**.
 
     > [!NOTE]
-    > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](https://techcommunity.microsoft.com/t5/system-center-blog/running-the-web-console-server-on-a-standalone-server-using/ba-p/340345).
+    > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console).
 
 10. On the **Diagnostic and Usage Data** page, review data collection terms and then select **Next** to continue.  
 

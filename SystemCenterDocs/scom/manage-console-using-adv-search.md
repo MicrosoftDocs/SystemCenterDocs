@@ -3,7 +3,7 @@ title: Using Advanced Search
 description: This article describes how to search in My Workspace in the Operations Manager Operations console to see data based on your specific criteria.
 author: jyothisuri
 ms.author: jsuri
-ms.manager: evansma
+ms.manager: mkluck
 ms.date: 02/13/2018
 ms.custom: na
 ms.prod: system-center
@@ -45,22 +45,22 @@ Each object type will display a unique set of criteria for your search. The foll
 |Tasks|-   With a specific name<br>-   With specific text in the description<br>-   Is enabled<br>-   Was added in a specified time period<br>-   Was modified in a specified time period|  
 |Views|-   With a specific name<br>-   With specific text in the description<br>-   Was added in a specified time period<br>-   Was modified in a specified time period|  
 
-<sup>1</sup> A remotable rule or discovery can run against a computer that does not have an agent installed.  
+<sup>1</sup> A remotable rule or discovery can run against a computer that doesn't have an agent installed.  
 
 ## Set the criteria values
 
-If you have ever created a rule in Microsoft Outlook, setting criteria values for an advanced search will be familiar to you. When you select a criterion for an object, it is added to the **Criteria description** section. Most criteria contain a variable value. For example, in the criterion **With a specific name**, *specific* is a variable and will be underlined in the **Criteria description** section. (The criterion **Is enabled** is only true or false, so it contains no variables; you either select it or you do not select it.)  
+If you've ever created a rule in Microsoft Outlook, setting criteria values for an advanced search will be familiar to you. When you select a criterion for an object, it's added to the **Criteria description** section. Most criteria contain a variable value. For example, in the criterion **With a specific name**, *specific* is a variable and will be underlined in the **Criteria description** section. (The criterion **Is enabled** is only true or false, so it contains no variables; you either select it or you don't select it.)  
 
-To assign a value to the variable, click the underlined portion of the criterion. A dialog box appears. In the example of **With a specific name**, you enter a text string for the specific name. For variables with limited values, such as alert priorities, the dialog box provides checkboxes that you can select.  
+To assign a value to the variable, select the underlined portion of the criterion. A dialog appears. In the example of **With a specific name**, you enter a text string for the specific name. For variables with limited values, such as alert priorities, the dialog provides checkboxes that you can select.  
 
 ## Running and saving searches  
 
-After you set the values for the search criteria, you can run the search by clicking **Search** or you can save the search by clicking **Save parameters to My Favorites**. Saved searches are displayed in My Workspace and can be run at any time.  
+After you set the values for the search criteria, you can run the search by selecting **Search** or you can save the search by selecting **Save parameters to My Favorites**. Saved searches are displayed in My Workspace and can be run at any time.  
 
-When you run a search or a saved search, a window opens with a view appropriate to the object type of your search. For example, a search on object type **Alerts** opens an Alert View window. A hyperlinked action, **Show parameters**, is displayed below the view title bar. You can click **Show parameters** to change the search parameters.  
+When you run a search or a saved search, a window opens with a view appropriate to the object type of your search. For example, a search on object type **Alerts** opens an Alert View window. A hyperlinked action, **Show parameters**, is displayed below the view title bar. You can select **Show parameters** to change the search parameters.  
 
 > [!NOTE]  
-> When you run a saved search, change the parameters, click **Search**, and then close the results window, you will be asked if you want to save the changes to the search.  
+> When you run a saved search, change the parameters, select **Search**, and then close the results window; you will be asked if you want to save the changes to the search.  
 
 ## Examples of using advanced search in Operations Manager
 
