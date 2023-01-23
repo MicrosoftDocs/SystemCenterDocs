@@ -1,9 +1,9 @@
 ---
 description: This article contains prerequisites and setup instructions for DPM 2016 and it includes attended and unattended instructions
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
-ms.date: 11/15/2022
+ms.date: 01/05/2023
 title: Installing DPM
 ms.author: jsuri
 ms.prod: system-center

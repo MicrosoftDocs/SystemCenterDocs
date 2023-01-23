@@ -4,7 +4,7 @@ title: Manually Uninstalling Agents from UNIX and Linux Computers
 description: This article describes how to manually uninstall the Operations Manager agent from UNIX and Linux computers.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center
@@ -34,65 +34,65 @@ Use the following procedures to uninstall agents.
 
 1.  For more information, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](manage-upgrade-uninstall-crossplat-agent.md).
 
-After the UNIX or Linux computer has been deleted from the list of monitored computers, you must log on to the monitored computer and manually uninstall the agent. Use the following procedures to manually uninstall agents from UNIX and Linux computers.
+After the UNIX or Linux computer has been deleted from the list of monitored computers, you must sign in to the monitored computer and manually uninstall the agent. Use the following procedures to manually uninstall agents from UNIX and Linux computers.
 
 ### To uninstall the agent from Red Hat enterprise Linux and SUSE Linux enterprise servers
 
-1.  Log on as the root user, and uninstall the agent by typing
+1.  Sign in as the root user, and uninstall the agent by entering
 
     **rpm -e scx**
 
-2.  To verify that the package is uninstalled, type
+2.  To verify that the package is uninstalled, enter
 
     **rpm -q scx**
 
 ### To uninstall the agent from RPM based Universal Linux servers (Oracle and Centos)
 
-1.  Log on as the root user, and uninstall the agent by typing
+1.  Sign in as the root user, and uninstall the agent by entering
 
     **rpm -e scx**
 
-2.  To verify that the package is uninstalled, type
+2.  To verify that the package is uninstalled, enter
 
     **rpm -q scx**
 
 ### To uninstall the agent from DEB based Universal Linux servers (Debian and Ubuntu)
 
-1.  Log on as the root user, and uninstall the agent by typing
+1.  Sign in as the root user, and uninstall the agent by entering
 
     **dpkg -P scx**
 
-2.  To verify that the package is uninstalled, type
+2.  To verify that the package is uninstalled, enter
 
     **dpkg -l scx**
 
 ### To uninstall the agent from Solaris computers
 
-1.  Log on as the root user, and uninstall the agent by typing
+1.  Sign in as the root user, and uninstall the agent by entering
 
     **pkgrm MSFTscx**
 
-2.  To verify that the package is uninstalled, type
+2.  To verify that the package is uninstalled, enter
 
     **pkginfo -I MSFTscx**
 
 ### To uninstall the agent from HP-UX
 
-1.  Log on as the root user, and uninstall the agent by typing
+1.  Sign in as the root user, and uninstall the agent by entering
 
     **swremove scx**
 
-2.  To verify that the package is uninstalled, type
+2.  To verify that the package is uninstalled, enter
 
     **swlist scx**
 
 ### To uninstall the agent from IBM AIX
 
-1.  Log on as the root user, and uninstall the agent by typing
+1.  Sign in as the root user, and uninstall the agent by entering
 
     **installp -u scx**
 
-2.  To verify that the package is uninstalled, type
+2.  To verify that the package is uninstalled, enter
 
     **lslpp -L scx.rte**
 

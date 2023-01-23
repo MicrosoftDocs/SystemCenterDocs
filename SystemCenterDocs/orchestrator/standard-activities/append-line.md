@@ -48,9 +48,9 @@ Use the following information to configure the Append Line activity.
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**File**|Type the path and name of the file that you want to append the text to, or select the ellipsis button **(...)** and browse for it.|  
-|**File encoding**|Select the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** drop-down list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
-|**Text**|Type the text that you want to append to the file that you specified.|  
+|**File**|Enter the path and name of the file that you want to append the text to, or select the ellipsis button **(...)** and browse for it.|  
+|**File encoding**|Select the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** dropdown list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
+|**Text**|Enter the text that you want to append to the file that you specified.|  
 
 ### Published Data  
  The following table lists the published data items.  

@@ -5,7 +5,7 @@ description: This article describes how to connect the Azure Monitor SCOM Manage
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 12/14/2022
+ms.date: 01/20/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -30,17 +30,6 @@ Follow the below steps to connect a SCOM Managed Instance (preview) to Ops conso
 1. **Connect SCOM Managed Instance (preview) to Ops Console**: Sign in to the Ops console and select **Connect To Server**. Add the FQDN pointing to the management servers.
          
       For a detailed procedure to connect the Ops console to a Management Group (in this case, SCOM Managed Instance (preview)), see [How to connect to the Operations and Web console](/system-center/scom/manage-consoles-how-to-connect?view=sc-om-2019&preserve-view=true)
-1. **Gateway Server requirements**: If your agents are in a domain that is outside the trust boundary of the SCOM Managed Instance (preview), you need to install a gateway server to use certificate-based authentication. 
-
-    If you only have a few agents outside the trust boundary, you can use certificates to directly connect them to the SCOM Managed Instance (preview) without a gateway server. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). If you need to install a gateway server, identify a desired server, install the gateway server from the System Center Operations Manager executable file, and follow the steps in the installation wizard.
-
-    >[!Note]
-    >Run the `gatewayapprovaltool` before you install the gateway software on the gateway. This needs to be run from the management server side.
-
-1. **Configure the Gateway Server**: When you install the Gateway Server, enter the following:
-   - *Management Group Name*: The name of the SCOM Managed Instance (preview).
-   - *Management Server Name*: The FQDN of the Management Server that you would link the gateway server to. 
-    You can set the second management server in SCOM Managed Instance (preview) as a failover server so that the gateway server can fail over to it when the primary management server stops working. For more information, see [Install a gateway server](/scom/deploy-install-gateway-server?view=sc-om-2019&preserve-view=true). Setting up the failover management server is a command-line based setup and needs to run from where you have the System Center Operations Manager shell or the management server.
 
 1. **Install Agents**: Open the ports 5723/135/138/445 and [install your agents](/system-center/scom/manage-deploy-windows-agent-console?view=sc-om-2019&preserve-view=true).
 

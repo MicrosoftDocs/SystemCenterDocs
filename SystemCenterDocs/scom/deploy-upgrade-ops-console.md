@@ -4,7 +4,7 @@ title: How to Upgrade an Operations Console
 description: This article describes how to upgrade an Operations console to the latest version of System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/21/2022
 ms.custom: na
 ms.prod: system-center
@@ -20,22 +20,22 @@ ms.topic: article
 
 ::: moniker-end
 
-This procedure upgrades a stand-alone Operations console to System Center - Operations Manager. Perform this procedure locally on the computer that has a stand-alone Operations console installed. You do not have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
+This procedure upgrades a standalone Operations console to System Center - Operations Manager. Perform this procedure locally on the computer that has a standalone Operations console installed. You don't have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
+Before you begin the upgrade process, ensure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
-## To upgrade a stand-alone Operations console
+## To upgrade a standalone Operations console
 
-1.  Log on to the computer that hosts the Operations console with an account that is a member of the Operations Manager Administrators role in your Operations Manager management group.
+1.  Sign in to the computer that hosts the Operations console with an account that is a member of the Operations Manager Administrators role in your Operations Manager management group.
 
-2.  On the Operations Manager source media, run **Setup.exe**, and then click **Install**.
+2.  On the Operations Manager source media, run **Setup.exe**, and select **Install**.
 
     > [!NOTE]
-    > The **Getting Started** page displays information about what will be upgraded. Click **Next** to proceed with the upgrade.
+    > The **Getting Started** page displays information about what will be upgraded. Select **Next** to proceed with the upgrade.
 
-3.  On the **Getting Started, Please read the license terms page**, read the Microsoft Software License Terms, click **I have read, understood, and agree with the license terms**, and then click **Next**.
+3.  On the **Getting Started, Please read the license terms page**, read the Microsoft Software License Terms, select **I have read, understood, and agree with the license terms**, and select **Next**.
 
-4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+4.  On the **Select installation location** page, accept the default value, enter a new location, or browse to one. Then select **Next**.
 
 ::: moniker range="sc-om-2016"
    > [!NOTE]
@@ -47,17 +47,17 @@ Before you begin the upgrade process, make sure that your server meets the minim
    > The default path is C:\Program Files\Microsoft System Center\Operations Manager.
 ::: moniker-end
 
-5.  On the **Prerequisites** page, review and address any warnings or errors that are returned by the Prerequisites checker, and then click **Verify Prerequisites Again** to recheck the system.
+5.  On the **Prerequisites** page, review and address any warnings or errors that are returned by the Prerequisites checker, and select **Verify Prerequisites Again** to recheck the system.
 
-6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
+6.  If the Prerequisites checker doesn't return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Select **Next**.
 
-7.  On the **Configuration**, **Ready To Upgrade** page, click **Upgrade**.
+7.  On the **Configuration**, **Ready To Upgrade** page, select **Upgrade**.
 
-8.  When the upgrade is finished, the **Upgrade complete** page appears. Click **Close**.
+8.  When the upgrade is finished, the **Upgrade complete** page appears. Select **Close**.
 
 ### To upgrade a stand-alone Operations console from the Command Prompt
 
-1.  Log on to the computer that hosts the Operations console with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
+1.  Sign in to the computer that hosts the Operations console with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
 
 2.  Open an elevated Command Prompt by using the **Run as Administrator** option.
 
@@ -69,9 +69,9 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 ### To verify the Operations console upgrade
 
-1.  On the Windows desktop, click **Start**, and then click **Run**.
+1.  On the Windows desktop, select **Start**, and select **Run**.
 
-2.  Type **regedit**, and then click **OK**. The Registry Editor starts.
+2.  Enter **regedit**, and select **OK**. The Registry Editor starts.
 
     > [!CAUTION]
     > Incorrectly editing the registry can severely damage your system. Before you make changes to the registry, you should back up any valued data that is on the computer.
@@ -89,8 +89,8 @@ The value of **UIVersion** is 8.0.13053.0.
 
 ## Next steps
 
-- After you have upgraded all of the stand-alone operations consoles in your management group, you can upgrade the agents.  See [How to Upgrade an Agent to System Center Operations Manager](~/scom/deploy-upgrade-agents.md) for more information.
+- After you've upgraded all of the standalone operations consoles in your management group, you can upgrade the agents. For more information, see [How to Upgrade an Agent to System Center Operations Manager](~/scom/deploy-upgrade-agents.md).
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
 
-- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.
+- To understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group, see [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md).

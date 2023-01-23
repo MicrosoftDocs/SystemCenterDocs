@@ -48,6 +48,9 @@ The main difference between [Azure REST API](/rest/api/azure/) monitoring and T-
 
 To enable these workflows in Azure REST API, select the **Use T-SQL monitoring** checkbox and run required T-SQL scripts provided in [Configuring Azure REST API Monitoring](#configuring-azure-rest-api-monitoring).
 
+>[!NOTE]
+> To connect System Center Operations Manager to Azure resources, your server must have TLS 1.2 enabled. Check protocol status with [TLS 1.2 enforcement for Azure AD Connect](/azure/active-directory/hybrid/reference-connect-tls-enforcement#powershell-script-to-check-tls-12).
+
 ## Configuring Azure REST API Monitoring
 
 Azure REST API monitoring provides a wide range of monitoring targets.
