@@ -1,6 +1,6 @@
 ---
 title: Windows Azure Integration Pack for Orchestrator in System Center
-description: The Integration Pack for Windows Azure is an add-on for Orchestrator in System Center that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines using Windows Azure Service Management REST API.
+description: The Integration Pack for Windows Azure is an add-on for Orchestrator in System Center that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines using Windows Azure Classic Deployments REST API.
 ms.custom: na
 ms.date: 04/04/2019
 ms.prod: system-center
@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-The Integration Pack for Windows Azure is an add-on for Orchestrator in System Center that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines using the '2012-03-01' version of the Windows Azure Service Management REST API.
+The Integration Pack for Windows Azure is an add-on for Orchestrator in System Center that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines using the '2012-03-01' version of the Windows Azure Classic Deployments REST API.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
