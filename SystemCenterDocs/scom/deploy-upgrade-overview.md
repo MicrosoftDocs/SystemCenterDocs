@@ -5,7 +5,7 @@ description: This guide provides information on how to upgrade to Operations Man
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/25/2022
+ms.date: 01/23/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
