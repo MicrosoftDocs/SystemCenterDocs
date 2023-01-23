@@ -4,7 +4,7 @@ title: Scope and supported configuration in Management Pack for SQL Server Repli
 description: This article explains the scope and supported configuration for Management Pack for SQL Server Replication
 author: vchvlad
 ms.author: v-vchernov
-manager: evansma
+manager: mkluck
 ms.date: 11/25/2022
 ms.topic: article
 ms.prod: system-center
@@ -71,7 +71,7 @@ Management Pack for SQL Server Replication supports the following operating syst
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
 
-A dedicated management group is not required.
+A dedicated management group isn't required.
 
 ## Operating Systems and Platforms
 
