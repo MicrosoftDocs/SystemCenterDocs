@@ -26,7 +26,7 @@ This article provides information on how to create users, assign roles, and memb
 These roles are similar to the roles created for non-gMSA accounts.
 
 >[!NOTE]
->For all gMSA accounts used, you will also need to create the accounts under the **Security** > **Logins** of the SQL instance directly, and not only under each individual DB. Without this, the other permissions will not take effect as the initial login is at the instance level.
+>For all gMSA accounts used, you'll also need to create the accounts under the **Security** > **Logins** of the SQL instance directly, and not only under each individual DB. Without this, the other permissions won't take effect as the initial sign in is at the instance level.
 
 ## Action account
 
@@ -40,12 +40,12 @@ These roles are similar to the roles created for non-gMSA accounts.
 
 1. Select **Entire Directory** in the **From the location** box. Select **Service Accounts** in the **Object types** box.
 
-    ![Server management object types](media/gmsa/server-management-object-types.png)
+    ![Screenshot of Server management object types.](media/gmsa/server-management-object-types.png)
 
 1. Check names for *momActGMSA*, which is an example gMSA for the Action account, in the directory.
 Because *momActGMSA* is an example, use the name of the gMSA that you intend to use as the Action account.
 
-   ![Server management select user](media/gmsa/server-management-select-users.png)
+   ![Screenshot of server management select user.](media/gmsa/server-management-select-users.png)
 
 
 1. Assign the following roles for the Action account:
@@ -54,7 +54,7 @@ Because *momActGMSA* is an example, use the name of the gMSA that you intend to 
    - SQLAgentReaderRole
    - SQLAgentUserRole
 
-   ![Database user membership](media/gmsa/database-user-membership.png)
+   ![Screenshot of Database user membership.](media/gmsa/database-user-membership.png)
 
 
 Follow steps 1 to 5 from the previous procedure. Assign the roles by using the information in this table.
