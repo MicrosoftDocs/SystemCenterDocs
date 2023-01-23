@@ -3,7 +3,7 @@ title: Examining Properties of Alerts, Rules, and Monitors
 description: This article describes how to examine properties of alerts, rules and monitors.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/30/2021
 ms.assetid: 51b60a9a-0bfb-4bea-b89f-9f1797fc5a09
 ms.custom: na
@@ -26,10 +26,10 @@ The properties pages for alerts, rules, and monitors offer useful information an
 
 |Tab|Description|  
 |-------|---------------|  
-|General|The general tab contains key details about the alert, such as source \(the monitored object on which the alert condition occurred\), severity, priority, and repeat count \(the number of times the alert condition has occurred\). The alert description and status are also displayed on the general tab.<br /><br />You can assign an owner and ticket ID for an alert on the general tab.<br /><br />The rule or monitor that generated the alert is not displayed anywhere in the alert properties; for that information, see the alert details in the Operations console.|  
+|General|The general tab contains key details about the alert, such as source \(the monitored object on which the alert condition occurred\), severity, priority, and repeat count \(the number of times the alert condition has occurred\). The alert description and status are also displayed on the general tab.<br /><br />You can assign an owner and ticket ID for an alert on the general tab.<br /><br />The rule or monitor that generated the alert isn't displayed anywhere in the alert properties; for that information, see the alert details in the Operations console.|  
 |Product Knowledge|Product knowledge is information about the alert written by the author of the management pack that contains the alert. It should include information about the probable causes for the condition that caused the alert and guidance on resolving the condition.|  
 |Company Knowledge|Administrators can add knowledge to rules, monitors, and alerts to expand the troubleshooting information in the product knowledge to provide company\-specific information for operators.|  
-|History|You can add comments on the history tab that will be added to the alert history. This is useful for tracking actions related to the alert. Comments are limited to 85 characters.<br /><br />The alert history is specific to this occurrence of the alert, and is not contained in the same alert that is generated for another source or at another time. For notes that are useful for all occurrences of an alert, information should be added to the company knowledge tab.|  
+|History|You can add comments on the history tab that will be added to the alert history. This is useful for tracking actions related to the alert. Comments are limited to 85 characters.<br /><br />The alert history is specific to this occurrence of the alert, and isn't contained in the same alert that is generated for another source or at another time. For notes that are useful for all occurrences of an alert, information should be added to the company knowledge tab.|  
 |Alert Context|Some alerts may display an alert context. The specific information provided in the alert context depends on the specific alert.|  
 |Custom Fields|Administrators can add information to any of the nine custom fields in an alert when an alert has been generated. The information added only applies to this unique alert. The custom fields can be searched on by using advanced search.|  
 
@@ -37,24 +37,24 @@ The properties pages for alerts, rules, and monitors offer useful information an
 
 |Tab|Description|  
 |-------|---------------|  
-|General|The general tab provides the name and description of the rule, the management pack that it is contained in, the rule target, and whether the rule is enabled.|  
+|General|The general tab provides the name and description of the rule, the management pack that it's contained in, the rule target, and whether the rule is enabled.|  
 |Configuration|The configuration tab provides information about the data source, condition, and responses configured for the rule. Unlike monitors which have alert configuration on an **Alerting** tab, alert configuration for a rule is on the **Configuration** tab, in **Responses**.|  
 |Product Knowledge|Product knowledge is information about the rule written by the author of the management pack that contains the rule.|  
 |Company Knowledge|Administrators can add knowledge to rules, monitors, and alerts to expand the troubleshooting information in the product knowledge to provide company\-specific information for operators.|  
-|Overrides|Administrators can apply overrides to the monitor on the overrides tab. Click **View summary** to view all overrides applied to the monitor.|  
+|Overrides|Administrators can apply overrides to the monitor on the overrides tab. Select **View summary** to view all overrides applied to the monitor.|  
 
 ## Properties for monitors  
 
 |Tab|Description|  
 |-------|---------------|  
-|General|The general tab provides the name and description of the monitor, the management pack that it is contained in, the parent monitor, and whether the monitor is enabled.|  
+|General|The general tab provides the name and description of the monitor, the management pack that it's contained in, the parent monitor, and whether the monitor is enabled.|  
 |Health|The health tab tells you how health is defined for the monitor.|  
 |Alerting|The alerting tab provides information about an alert generated by the monitor. You can also see on this tab whether alerts generated by this monitor are automatically resolved.|  
 |Diagnostic and Recovery|This tab lists any diagnostic or recovery tasks associated with this monitor. Administrators can add either type of task to the monitor on this tab.|  
-|Configuration|If there is a user interface for configuration of this monitor, it will be displayed on the configuration tab. If there is no user interface define, the XML that defines the configuration of this monitor is displayed.|  
+|Configuration|If there's a user interface for configuration of this monitor, it will be displayed on the configuration tab. If there's no user interface define, the XML that defines the configuration of this monitor is displayed.|  
 |Product Knowledge|Product knowledge is information about the monitor written by the author of the management pack that contains the monitor.|  
 |Company Knowledge|Administrators can add knowledge to rules, monitors, and alerts to expand the troubleshooting information in the product knowledge to provide company\-specific information for operators.|  
-|Overrides|Administrators can apply overrides to the monitor on the overrides tab. Click **View summary** to view all overrides applied to the monitor.|  
+|Overrides|Administrators can apply overrides to the monitor on the overrides tab. Select **View summary** to view all overrides applied to the monitor.|  
 
 >[!NOTE]
 > Orphan alerts are closed based on the type of monitor. [Learn more](manage-alert-created-by-monitor.md#closure-of-orphan-alerts)
@@ -62,7 +62,7 @@ The properties pages for alerts, rules, and monitors offer useful information an
 
 ## Next steps
 
-- Review [How to Close an Alert Generated by a Monitor](manage-alert-created-by-monitor.md) to understand the behavior of alerts generated by monitors and how to approach managing alerts from them.  
+- To understand the behavior of alerts generated by monitors and how to approach managing alerts from them, review [How to Close an Alert Generated by a Monitor](manage-alert-created-by-monitor.md).  
 
 - After investigating and resolving the issue detected by one or more monitors, review [How to Reset Health](manage-health-reset-health.md) to manually reset health if the monitor isn't configured to auto-resolve or you don't want to wait for the monitor to detect health state.  
 
