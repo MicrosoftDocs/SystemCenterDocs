@@ -64,17 +64,15 @@ The following table shows Operations Manager feature interaction across a firewa
 >   1. https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx
 >   2. http://go.microsoft.com/fwlink/?LinkId=148038&clcid=0x409
 
->[!NOTE]
-> #### <a name="footnote2"></a> Note 2: Identify SQL Port
->  - If SQL Server is installed with the default port, the port number is 1433. If not the default port, it may be dynamic or non-default. To identify the port, follow these steps:
->    1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for \<instance name\>, and then double-click **TCP/IP**.
->    2. In the **TCP/IP Properties** dialog, on the **IP Addresses** tab, note the port value for **IPAall**.  
-> 
->  - If you plan on deploying the Operations Manager databases on a SQL Server configured with an Always On Availability Group or migrate after installation, do the following to identify the port:
->   
->    1. In Object Explorer, connect to a server instance that hosts any availability replica of the availability group whose listener you want to view. Select the server name to expand the server tree.
->    2. Expand the **Always On High Availability** node and the **Availability Groups** node.
->    3. Expand the node of the availability group, and expand the **Availability Groups Listeners** node.
->    4. Right-click the listener that you want to view, and select the **Properties** command. \
->       This opens the **Availability Group Listener Properties** dialog.
->  
+#### <a name="footnote2"></a> Note 2: Identify SQL Port
+ - If SQL Server is installed with the default port, the port number is 1433. If not the default port, it may be dynamic or non-default. To identify the port, follow these steps:
+   1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for \<instance name\>, and then double-click **TCP/IP**.
+   2. In the **TCP/IP Properties** dialog, on the **IP Addresses** tab, note the port value for **IPAall**.  
+
+ - If you plan on deploying the Operations Manager databases on a SQL Server configured with an Always On Availability Group or migrate after installation, do the following to identify the port:
+  
+   1. In Object Explorer, connect to a server instance that hosts any availability replica of the availability group whose listener you want to view. Select the server name to expand the server tree.
+   2. Expand the **Always On High Availability** node and the **Availability Groups** node.
+   3. Expand the node of the availability group, and expand the **Availability Groups Listeners** node.
+   4. Right-click the listener that you want to view, and select the **Properties** command. \
+      This opens the **Availability Group Listener Properties** dialog. 
