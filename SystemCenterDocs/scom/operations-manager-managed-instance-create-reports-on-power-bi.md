@@ -27,7 +27,7 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
 
     2. Create login credentials for the Azure Active Directory group in the SQL Managed Instance, which adds the user principal of the group in the SQL Managed Instance. To create a login, see [Create Login (Transact-SQL)](/sql/t-sql/statements/create-login-transact-sql?view=azuresqldb-mi-current&preserve-view=true).
     
-    3. To login to Data warehouse database, provide **db_datareader** permission.
+    3. Provide **db_datareader** permission to the Login on Data warehouse database.
             :::image type="Login properties" source="media/operations-manager-managed-instance-create-reports-on-power-bi/login-properties.png" alt-text="Screenshot showing login properties.":::
 
 - SQL based authentication: 
