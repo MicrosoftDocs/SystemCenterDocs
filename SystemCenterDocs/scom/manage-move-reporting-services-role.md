@@ -75,7 +75,7 @@ If you're reinstalling the Operations Manager reporting server component on the 
 ## Install Operations Manager Reporting server
 
 1. On the new Operations Manager reporting server, install the Operations Manager Reporting server component as follows:  
-   a. On the **Configuration, SQL Server instance for reporting services** page, ensure the SQL Server instance refers to the new SQL Server instance if you're moving reporting to a new server.  
+   a. On the **Configuration, SQL Server instance for reporting services** page, ensure that the SQL Server instance refers to the new SQL Server instance if you're moving reporting to a new server.  
    b. On the **Configuration, Configure Operation Manager accounts** page, ensure that the Data Reader account is the same account previously used for the report server.  
 
 If you're restoring the original configuration on a new SQL Server reporting services instance, restore the original **ReportServer** and **ReportServerTempDB** databases for SQL Server Reporting services to preserve your custom reports, favorites, and schedules from the original reporting services deployment.
