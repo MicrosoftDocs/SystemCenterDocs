@@ -3,7 +3,7 @@ title: How to Configure Grooming Settings for the Reporting Data Warehouse Datab
 description: This article reviews the default grooming settings for the Reporting data warehouse database and how to modify those settings.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 12/05/2016
 ms.custom: na
 ms.prod: system-center
@@ -41,19 +41,19 @@ Settings for grooming the data warehouse can be changed through Microsoft SQL Se
 
 ## To change grooming settings in the Reporting data warehouse  
 
-1.  Log on to the computer with an account that is a member of the SQL Server sysadmin fixed server role.
+1.  Sign in to the computer with an account that's a member of the SQL Server sysadmin fixed server role.
 
-2.  On the Start Page, type **SQL Server Management Studio** and the program will appear.  Click the program to open SQL Server Management Studio.  You might want to right-click the program and pin it to the Start Page.
+2.  On the Start Page, enter **SQL Server Management Studio** and the program will appear.  Select the program to open SQL Server Management Studio. You might want to right-click the program and pin it to the Start Page.
 
-3.  In the **Connect to Server** dialog box, in the **Server Type** list, select **Database Engine**; in the **Server Name** list, select the server and instance for your Reporting data warehouse (for example, computer\INSTANCE1); in **Authentication** list, select **Windows Authentication**; and then click **Connect**.  
+3.  In the **Connect to Server** dialog, in the **Server Type** list, select **Database Engine**; in the **Server Name** list, select the server and instance for your Reporting data warehouse (for example, computer\INSTANCE1); in **Authentication** list, select **Windows Authentication**; and select **Connect**.  
 
 4.  In the Object Explorer pane, expand **Databases**, expand **OperationsManagerDW**, and then expand **Tables**.  
 
-5.  Right-click **dbo.Dataset,** and then click **Open Table**.  
+5.  Right-click **dbo.Dataset,** and select **Open Table**.  
 
 6.  Locate the dataset for which you want to change the grooming setting in the **DatasetDefaultName** column and make note of its GUID in the **DatasetId** column.  
 
-7.  In the Object Explorer pane, right-click **dbo.StandardDatasetAggregation** and then click **Open Table**.  
+7.  In the Object Explorer pane, right-click **dbo.StandardDatasetAggregation** and select **Open Table**.  
 
 8.  In the **DatasetId** column, locate the dataset GUID you noted in step 5. Multiple entries of the same GUID might display.  
 
@@ -67,9 +67,9 @@ Settings for grooming the data warehouse can be changed through Microsoft SQL Se
 
     -   30 = daily  
 
-After you have located the dataset and its aggregation type, scroll to the **MaxDataAgeDays** column, and then edit the value there to set the grooming interval.  
+After you've located the dataset and its aggregation type, scroll to the **MaxDataAgeDays** column, and then edit the value there to set the grooming interval.  
 
 ## Next steps
 
-To learn more about the default retention period for the different data types stored in the Operations Manager operational database and how to modify those settings, please see
+To learn more about the default retention period for the different data types stored in the Operations Manager operational database and how to modify those settings, see
 [How to configure grooming settings for the Operations Manager database](manage-omdb-grooming-settings.md).
