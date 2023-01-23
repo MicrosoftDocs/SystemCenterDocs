@@ -4,7 +4,7 @@ title: Sample configuration file for collecting Linux log files
 description: This article describes a sample configuration file for collecting Linux log files on Linux in System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 09/24/2020
 ms.custom: na
 ms.prod: system-center
