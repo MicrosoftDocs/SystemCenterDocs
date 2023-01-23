@@ -64,7 +64,7 @@ To configure Run As profiles, use one of the following scenarios:
 
 ### Action Account is Local Administrator and SA
 
-A System Center Operations Manager default action account is mapped to either local system account or any domain user account that is a member of the local administrators group on the monitored machines.
+A System Center Operations Manager default action account is mapped to either local system account or any domain user account that is a member of the local administrators' group on the monitored machines.
 
 The account that you use must be granted the SQL System Administrator (SA) rights on the monitored SQL Server instances.
 
@@ -82,7 +82,7 @@ A System Center Operations Manager default action account is mapped to either lo
 
 If the security policy allows granting SA rights to the separate domain user account used for launching SQL Server MP workflows only, perform the following steps:
 
-1. Create a new domain user account and add this account to the Local Administrators group on each monitored server.
+1. Create a new domain user account and add this account to the Local Administrators' group on each monitored server.
 
 2. Grant SA rights to this account on SQL Server.
 

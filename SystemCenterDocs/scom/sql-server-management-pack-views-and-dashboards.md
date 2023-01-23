@@ -23,4 +23,4 @@ The **SQL Server Roles** dashboard provides information about instances of SQL S
 
 ![Screenshot of SQL server roles.](./media/sql-server-management-pack/sql-server-roles.png)
 
-Some of these views may consist of a very long list of objects and metrics. To find specific objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding data and objects in the Operations Manager consoles](manage-console-finding-data.md).
+Some of these views may consist of a long list of objects and metrics. To find specific objects, you can use the **Scope**, **Search**, and **Find** buttons on the Operations Manager toolbar. For more information, see [Finding data and objects in the Operations Manager consoles](manage-console-finding-data.md).

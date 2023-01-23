@@ -92,6 +92,6 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
 Adding a three-state custom query-based monitor is similar to a two-state monitor. The main difference is that you must specify the **Warning** and **Critical** conditions.
 
-Critical conditions are verified first. If one or more critical conditions fail, the monitor will switch to the critical state and warning conditions won't be verified.
+Critical conditions are verified first. If one or more critical conditions fail, the monitor will switch to the critical state and the warning conditions won't be verified.
 
 ![Screenshot showing a three-state monitor.](./media/azure-sql-management-pack/three-state-monitor.png)

@@ -88,19 +88,19 @@ System Center Operations Manager tasks require higher privileges on the agent co
 
     Results options:
   - Error-none - means everything is consistency
-  - Printed error message - for more details see [DBCC CHECKCATALOG](/sql/t-sql/database-console-commands/dbcc-checkcatalog-transact-sql).
+  - Printed error message - for more information, see [DBCC CHECKCATALOG](/sql/t-sql/database-console-commands/dbcc-checkcatalog-transact-sql).
   
 - **Check Database (DBCC)**
 
     Checks the allocation, structural, and logical integrity of all the objects in the specified database by task from System Center Operations Manager. The database must be online. The output will show a list of database objects and their state.
 
-    For more details, see [DBCC CHECKDB](/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql).
+    For more information, see [DBCC CHECKDB](/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql).
 
 - **Check Disk (DBCC)**
 
     Checks the consistency of disk space allocation structures for a specified database by task from System Center Operations Manager. The database must be online. The output will show a list of objects and their state.
 
-    For more details, see [DBCC CHECKDB](/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql).
+    For more information, see [DBCC CHECKDB](/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql).
 
 - **Set Database Offline**
 
