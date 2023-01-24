@@ -79,7 +79,7 @@ To configure Run As profiles, perform the following steps:
 
 2. For each system, create or use an existing set of credentials that have at least the set of privileges described in [Least-Privilege Monitoring](reporting-services-management-pack-least-privilege-monitoring.md).
 
-3. For each set of credentials identified in Step 2, ensure that a corresponding **Run As Account** exists in the management group. Create a **Run As Account**, if required.
+3. For each set of credentials identified in Step 2, ensure that a corresponding **Run As Account** exists in the management group. Create a **Run As Account**, if necessary.
 
 4. Configure mapping between targets and Run As accounts on the **Run As Accounts** tab of each of the Run As profiles.
 

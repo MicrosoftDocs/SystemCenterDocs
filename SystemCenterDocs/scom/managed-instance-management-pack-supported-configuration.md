@@ -21,14 +21,14 @@ Management Pack for Azure SQL Managed Instance supports the following tiers and 
 
 - Tiers
   - General Purpose
-  - Business Critical (monitoring of Read-Scale Replicas is not supported yet)
+  - Business Critical (monitoring of Read-Scale Replicas isn't supported yet)
 - Features
   - Database Engine
   - Database
   - Agent and Jobs
   - Memory-Optimized Data (In-Memory OLTP)
   - Failover Groups, including secondary read-only replicas
-  - Authentication Mode — both SQL Server Authentication and Azure AD Authentication are supported.
+  - Authentication Mode—both SQL Server Authentication and Azure AD Authentication are supported.
 
 ## System Center Operations Manager
 

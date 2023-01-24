@@ -125,7 +125,7 @@ Management Pack for SQL Server Reporting Services supports monitoring of failed 
 
 To determine whether you've such failed subscriptions or plans, the monitor scans the **LastStatus** column in the **Subscriptions** table. For more information about the statuses, see [this article](/sql/reporting-services/subscriptions/monitor-reporting-services-subscriptions).
 
-Report subscriptions and scheduled refresh plans may fail due to various reasons. For more information on what caused the failure, refer to **My subscriptions** on the reporting portal and **Scheduled refresh** on the Power BI reporting portal.
+Report subscriptions and scheduled refresh plans may fail due to various reasons. For more information on what caused the failure, see **My subscriptions** on the reporting portal and **Scheduled refresh** on the Power BI reporting portal.
 
 ### Running Power BI reports monitoring
 
@@ -237,7 +237,7 @@ By default, Operations Manager saves all customizations to the default managemen
 
 Creating a new management pack for storing overrides has the following advantages:
 
-- When you create a management pack for the purpose of storing customized settings for a sealed management pack, it's helpful to base the name of the new management pack on the name of the management pack you're customizing; for example, **Microsoft SQL Server Reporting Services Overrides**.
+- When you create a management pack for storing customized settings for a sealed management pack, it's helpful to base the name of the new management pack on the name of the management pack you're customizing; for example, **Microsoft SQL Server Reporting Services Overrides**.
 
 - Creating a new management pack for storing customizations of each sealed management pack makes it easier to export the customizations from a test environment to a production environment. It also makes it easier to delete a management pack because you must delete any dependencies before you can delete a management pack. If customizations for all management packs are saved in the Default Management Pack and you need to delete a single management pack, you must delete the default management pack first, which also deletes customizations for other management packs.
 

@@ -5,17 +5,18 @@ description: This article explains a security configuration in Management Pack f
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 01/24/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
+ms.custom: engagement-fy23
 ---
 
 # Security Configuration
 
-Monitoring accounts, SQL accounts, and AAD principles used by this management pack for monitoring should have enough permissions to access each managed instance specified in your monitoring templates.
+Monitoring accounts, SQL accounts, and Azure Active Directory principles used by this management pack for monitoring should have enough permissions to access each managed instance specified in your monitoring templates.
 
-Every managed instance should have a login for the monitoring account. This login should be granted either of the following permissions:
+Every managed instance should have a sign-in for the monitoring account. This sign-in should be granted either of the following permissions:
 
 - Sysadmin rights
 

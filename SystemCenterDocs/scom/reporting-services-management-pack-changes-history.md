@@ -23,7 +23,7 @@ This article covers new functionality and improvements in Management Pack for SQ
 - Added a new 'SQL Server Editions' exclude list override option for the instance discovery
 - Added a new 'SQL Server Versions' exclude list override option for the instance discovery
 - Added support for enabling debug logging in Windows Event Log
-- Updated memory and space monitoring workflows to apply 4-significant digit rounding in all the values
+- Updated memory and space monitoring workflows to apply four significant digit rounding in all the values
 - Updated display strings
 
 ### Bug Fixes

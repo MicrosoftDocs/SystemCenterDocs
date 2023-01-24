@@ -29,7 +29,7 @@ To configure monitoring using the automatic monitoring template, perform the fol
 
     ![Screenshot showing the Select destination management pack.](./media/managed-instance-management-pack/destination-management-pack.png)
 
-4. At the **Azure Endpoints** step, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox, and modify the default Azure endpoints, if required. The default endpoints for creating Azure Service Principal Name are as follows:
+4. At the **Azure Endpoints** step, select the **Enable checkbox if you want to change default Azure Endpoints** checkbox, and modify the default Azure endpoints, if necessary. The default endpoints for creating Azure Service Principal Name are as follows:
 
    - Authority URI: <https://login.windows.net>
    - Management Service URI: <https://management.azure.com>

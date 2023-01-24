@@ -24,13 +24,13 @@ This article covers new functionality and improvements in Management Pack for SQ
 - Added a new 'SQL Server Versions' exclude list override option for the Multidimensional, PowerPivot, and Tabular instance discoveries
 - Added a new 'Exclude list' override option for the "Multidimensional DB" and the "Tabular DB" discoveries
 - Added support for enabling debug logging in Windows Event Log
-- Updated memory and space monitoring workflows to apply 4-significant digit rounding in all the values
+- Updated memory and space monitoring workflows to apply four significant digit rounding in all the values
 - Discovery and monitoring workflows have been optimized for better performance
 - Updated display strings
 
 ### Bug Fixes
 
-- Fixed an issue with failing the 'MultidimensionalPartitionPropertyCD' discovery module in case of Analysis Services instance is stopped
+- Fixed an issue with failing the 'MultidimensionalPartitionPropertyCD' discovery module in case Analysis Services instance is stopped
 
 ## June 2022 - 7.0.38.0 RTM
 

@@ -102,9 +102,9 @@ The following monitors are available for the monitoring of SQL Server Analysis S
 |Monitor|Description
 |-|-|
 |Service State|This monitor reports an alert when the Windows service for the SQL Server Analysis Services instance isn't in the running state for a period that exceeds the specified threshold. <br /> <br /> **NOTE:** This monitor doesn't work on a clustered SQL Server Analysis Services instance.|
-|Memory Configuration Conflict with SQL Server|This monitor reports an alert if there is a SQL Server relational database engine process running on the server, and the **TotalMemoryLimit** configuration for the SQL Server Analysis Services instance is higher than the specified threshold.|
+|Memory Configuration Conflict with SQL Server|This monitor reports an alert if there's a SQL Server relational database engine process running on the server, and the **TotalMemoryLimit** configuration for the SQL Server Analysis Services instance is higher than the specified threshold.|
 |Total Memory Limit Configuration|This monitor reports an alert when the configured **TotalMemoryLimit** setting for the SQL Server Analysis Services instance exceeds the specified threshold, risking allocation of physical memory that is required for the operating system to perform basic functions (at least 2 GB).|
-|Memory Usage| This monitor reports a Warning alert when memory allocations by the SQL Server Analysis Services instance exceeds the configured warning threshold expressed as a percentage of the **TotalMemoryLimit** setting for the SQL Server Analysis Services instance. The monitor reports a Critical alert when these allocations exceed the configured critical threshold.|
+|Memory Usage| This monitor reports a Warning alert when memory allocations by the SQL Server Analysis Services instance exceed the configured warning threshold expressed as a percentage of the **TotalMemoryLimit** setting for the SQL Server Analysis Services instance. The monitor reports a Critical alert when these allocations exceed the configured critical threshold.|
 |Memory Usage on the Server|This monitor observes the memory usage by non-SSAS processes on the server to ensure that **TotalMemoryLimit** for Analysis Services is always available.|
 |Processing Pool I/O Job Queue length|This monitor reports an alert when the processing pool I/O job queue for the SQL Server Analysis Services instance exceeds the configured threshold.|
 |Processing Pool Job Queue length|This monitor reports an alert when the processing pool job queue for the SQL Server Analysis Services instance exceeds the configured threshold.|
@@ -129,7 +129,7 @@ The following monitors are available for monitoring of health aspects of SQL Ser
 
 |Monitor|Description
 |-|-|
-|Partition Storage Free Space|This monitor reports a Warning alert when the available free space for the partition storage location drops below the **Critical Threshold** setting expressed as a percentage of the sum of the total size of the folder plus disk free space. The monitor reports a Critical alert when the available space drops below the Warning threshold. The monitor does not monitor available space for the default storage location for the SQL Server Analysis Services instance.|
+|Partition Storage Free Space|This monitor reports a Warning alert when the available free space for the partition storage location drops below the **Critical Threshold** setting expressed as a percentage of the sum of the total size of the folder plus disk free space. The monitor reports a Critical alert when the available space drops below the Warning threshold. The monitor doesn't monitor available space for the default storage location for the SQL Server Analysis Services instance.|
 
 ## Performance Collection Rules
 
@@ -205,7 +205,7 @@ if (-not(Test-Path $MPDebugKey)) {
 }
 
 Get-ChildItem -Path $searchPath |
-Out-GridView -OutputMode Multiple | # Remove this line if there is no need for GUI
+Out-GridView -OutputMode Multiple | # Remove this line if there's no need for GUI
 ForEach-Object {
     New-ItemProperty -LiteralPath $MPDebugKey -Name $_.PSChildName -Value '1' -PropertyType 'MultiString' -Force | Out-Null
 }
@@ -218,6 +218,6 @@ The same should be done for each Operations Manager or Monitoring Agent where ex
 
 ## How Health Rolls Up
 
-The following diagram shows the roll up of the object health states.
+The following diagram shows the rollup of the object health states.
 
 ![Diagram of health Rolls Up.](./media/analysis-services-management-pack/health-rolls-up.png)

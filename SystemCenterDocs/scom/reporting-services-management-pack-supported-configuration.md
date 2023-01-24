@@ -25,7 +25,7 @@ The following is a list of features and configurations supported in Management P
 
 - Power BI Report Server - Verified with build 15.0.1110.120
 
-  The management pack treats Power BI Report Server as a special kind of SQL Server Reporting Services and provides the same monitoring for Power BI Report Server instances as it does for Reporting Services instances. In this guide, we will use SSRS or Reporting Services, but each term is intended for both SQL Server Reporting Services and Power BI Report Server.
+  The management pack treats Power BI Report Server as a special kind of SQL Server Reporting Services and provides the same monitoring for Power BI Report Server instances as it does for Reporting Services instances. In this guide, we'll use SSRS or Reporting Services, but each term is intended for both SQL Server Reporting Services and Power BI Report Server.
 
 ## System Center Operations Manager
 
