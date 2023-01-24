@@ -1,9 +1,9 @@
 ---
 title: Subscribe to alert notifications in Operations Manager
-description: This article describes the alerts that Operations Manager can generate and notify individuals through email, instant message, text message, and Microsoft teams.
+description: This article describes the alerts that Operations Manager can generate and notify individuals through email, instant message, text message, and Microsoft Teams.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
@@ -21,10 +21,10 @@ ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8
 ::: moniker-end
 
 
-In System Center - Operations Manager, when an alert is generated, Operations Manager can notify the designated individuals in the following modes
+In System Center - Operations Manager, when an alert is generated, Operations Manager can notify the designated individuals in the following modes:
 - Email
 - Instant message (IM)
-- Text message (SMS) or 
+- Text message (SMS)
 - Microsoft Teams (applicable for 2022)
 
 Notifications can also run commands automatically when an alert is raised on a monitored system.  
@@ -33,15 +33,15 @@ A notification requires the following elements:
 
 -   A Run As account that provides credentials to the Notification Account Run As profile.  
 
--   A notification channel which defines the format for the notification and the method by which the notification is sent.  
+-   A notification channel that defines the format for the notification and the method by which the notification is sent.  
 
--   A notification subscriber which defines the recipients and the schedule for sending notifications to the subscriber.  
+-   A notification subscriber that defines the recipients and the schedule for sending notifications to the subscriber.  
 
--   A notification subscription which defines the criteria for sending a notification, the channel to be used, and the subscribers to receive the notification.  
+-   A notification subscription that defines the criteria for sending a notification, the channel to be used, and the subscribers to receive the notification.  
 
 An Operations Manager administrator must define the notification channels and if authentication is required, configure the Run As account for notifications. An Operations Manager administrator, advanced operator, or operator can create a subscriber and a subscription.  
 
-## Subscribing to alert notifications topics  
+## Subscribing to alert notifications articles  
 
 -   [How to create and configure the Notification Action account](manage-notifications-create-configure.md)  
 
@@ -65,6 +65,6 @@ An Operations Manager administrator must define the notification channels and if
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md).
 
-* Create a [notification subscription](manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
+* To define the criteria, notification channel, and subscribers that will receive the notification, create a [notification subscription](manage-notifications-create-subscriptions.md).
