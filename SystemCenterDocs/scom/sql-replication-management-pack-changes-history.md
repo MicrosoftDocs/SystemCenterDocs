@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Features and Enhancements in Management Pack for SQL Server Replication
 
-This section covers new functionality and improvements in Management Pack for SQL Server Replication.
+This article covers new functionality and improvements in Management Pack for SQL Server Replication.
 
 ## December 2020 - 7.0.28.0 RTM
 

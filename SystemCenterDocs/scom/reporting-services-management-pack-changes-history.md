@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Features and Enhancements in Management Pack for SQL Server Reporting Services
 
-This section covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
+This article covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
 
 ## December 2022 - 7.0.42.0 RTM
 
@@ -88,8 +88,8 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Added support for monitoring SQL Server Reporting Services 2012, 2014, and 2016 in addition to 2017 and up
-- Updated Event Log Collection Target Management Server Discovery to make it use default System Center Operations Manager action profile instead of SQL MP Discovery run as profile
+- Added support for monitoring SQL Server Reporting Services 2012, 2014, and 2016 in addition to 2017 and higher
+- Updated Event Log Collection Target Management Server Discovery to make it use default System Center Operations Manager action profile instead of SQL MP Discovery Run As profile
 - Updated display strings
 
 ### Bug Fixes

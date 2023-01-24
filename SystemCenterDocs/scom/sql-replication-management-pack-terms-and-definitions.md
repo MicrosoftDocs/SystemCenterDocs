@@ -17,11 +17,11 @@ The following terms and definitions are mentioned throughout this guide:
 
 - **Distributor**
 
-  Distributor is a database instance that acts as a store for replication of specific data associated with one or more Publishers. Each Publisher is associated with a single database (known as a distribution database) at the Distributor. In many cases, a single database server instance acts as both Publisher and Distributor. This is known as a local Distributor. When Publisher and Distributor are configured on separate database server instances, the Distributor is known as a remote Distributor.
+  Distributor is a database instance that acts as a store for replication of specific data associated with one or more Publishers. Each Publisher is associated with a single database (known as a distribution database) at the Distributor. In many cases, a single database server instance acts as both the Publisher and Distributor. This is known as a local Distributor. When Publisher and Distributor are configured on separate database server instances, the Distributor is known as a remote Distributor.
 
 - **Distribution database**
 
-  Distribution database stores replication status data, metadata about the publication, and, in some cases, acts as a queue for data moving from Publisher to Subscribers. In many cases, a single database server instance acts as both Publisher and Distributor. This is known as a local Distributor. When Publisher and Distributor are configured on separate database server instances, the Distributor is known as a remote Distributor.
+  Distribution database stores replication status data, metadata about the publication, and, in some cases, acts as a queue for data moving from the Publisher to Subscribers. In many cases, a single database server instance acts as both Publisher and Distributor. This is known as a local Distributor. When Publisher and Distributor are configured on separate database server instances, the Distributor is known as a remote Distributor.
 
 - **Publisher**
 
@@ -41,7 +41,7 @@ The following terms and definitions are mentioned throughout this guide:
 
 - **Subscription**
 
-  Subscription is a request for a copy of a publication to be delivered to a Subscriber. A subscription defines what publication will be received, where and when. There are two types of subscriptions: push and pull.
+  Subscription is a request for a copy of a publication to be delivered to a Subscriber. A subscription defines what publication will be received, where, and when. There are two types of subscriptions: push and pull.
 
 - **Push subscription**
 
@@ -53,11 +53,11 @@ The following terms and definitions are mentioned throughout this guide:
 
 - **Virtual Distributor**
 
-  Virtual Distributor is a virtual entity, which serves to represent a real distributor on the diagram view for a Replication Database Health.
+  Virtual Distributor is a virtual entity that serves to represent a real distributor on the diagram view for a Replication Database Health.
 
 - **Virtual Publisher**
 
-  Virtual Publisher is a virtual entity serves to represent a real publisher on the diagram view for a Replication Database Health.
+  Virtual Publisher is a virtual entity that serves to represent a real publisher on the diagram view for a Replication Database Health.
 
 - **Virtual Subscriber Host**
 
@@ -65,7 +65,7 @@ The following terms and definitions are mentioned throughout this guide:
 
 - **Virtual Subscriber**
 
-  Virtual Subscriber is a virtual entity serves to represent a real Subscriber on the diagram view for a Replication Database Health.
+  Virtual Subscriber is a virtual entity that serves to represent a real Subscriber on the diagram view for a Replication Database Health.
 
 - **Virtual Publication Host**
 
@@ -77,4 +77,4 @@ The following terms and definitions are mentioned throughout this guide:
 
 - **Virtual Subscription**
 
-  Virtual Subscription is a virtual entity serves to represent a real subscription on the diagram view for a Replication Database Health. The purpose of this entity is to hide all subscriptions when the diagram is opened for the first time.
+  Virtual Subscription is a virtual entity that serves to represent a real subscription on the diagram view for a Replication Database Health. The purpose of this entity is to hide all subscriptions when the diagram is opened for the first time.

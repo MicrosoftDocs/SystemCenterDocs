@@ -34,7 +34,7 @@ The environment that you use must meet the following prerequisites before you st
     Managed instances are usually deployed to an isolated private network. This means that there should be a permanent VPN connection configured on servers from which the managed instances should be accessed. 
 
 >[!NOTE]
->Management Pack for Azure SQL Managed Instance does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
+>Management Pack for Azure SQL Managed Instance doesn't support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
     
 ## Importing Management Pack
 

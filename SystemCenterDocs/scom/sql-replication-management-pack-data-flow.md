@@ -13,23 +13,23 @@ ms.technology: operations-manager
 
 # Data Flow
 
-This section explains data flows in Management Pack for SQL Server Replication.
+This article explains data flows in Management Pack for SQL Server Replication.
 
 ## Logical Structure
 
-![Logical structure diagram](./media/sql-replication-management-pack/logical-structure-data-flow.png)
+![Diagram of the Logical structure.](./media/sql-replication-management-pack/logical-structure-data-flow.png)
 
 ## Publication Flow
 
-![Publication flow diagram](./media/sql-replication-management-pack/publication-flow-diagram.png)
+![Publication flow diagram.](./media/sql-replication-management-pack/publication-flow-diagram.png)
 
 ## Replication Database Health
 
-![Top-level structure diagram](./media/sql-replication-management-pack/top-level-structure-diagram.png)
+![Top-level structure diagram.](./media/sql-replication-management-pack/top-level-structure-diagram.png)
 
 ### Virtual Distributor Level Structure
 
-![Virtual distributor level structure diagram](./media/sql-replication-management-pack/virtual-distributor-diagram.png)
+![Virtual distributor level structure diagram.](./media/sql-replication-management-pack/virtual-distributor-diagram.png)
 
 ### Replication Agents
 
@@ -45,7 +45,7 @@ The following table lists replication agent files located in the **\Program File
 
 ### Replication Maintenance Jobs
 
-In addition to replication agents, replication has a number of jobs that perform scheduled and on-demand maintenance operations.
+In addition to replication agents, replication has many jobs that perform scheduled and on-demand maintenance operations.
 
 |Clean up job|Description|Default schedule|
 |-|-|-|
@@ -58,8 +58,8 @@ In addition to replication agents, replication has a number of jobs that perform
 
 ### Virtual Publisher Level Structure
 
-![Virtual Publisher level structure diagram](./media/sql-replication-management-pack/publisher-structure-diagram.png)
+![Virtual Publisher level structure diagram.](./media/sql-replication-management-pack/publisher-structure-diagram.png)
 
 ### Virtual Subscriber Level Structure
 
-![Virtual Subscriber level structure diagram](./media/sql-replication-management-pack/describer-structure-diagram.png)
+![Virtual Subscriber level structure diagram.](./media/sql-replication-management-pack/describer-structure-diagram.png)
