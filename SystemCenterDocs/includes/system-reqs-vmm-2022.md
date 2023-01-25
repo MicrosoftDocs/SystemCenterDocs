@@ -4,8 +4,8 @@ title: include file
 description: include article to detail the system requirements for VMM 2022
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 12/02/2021
+manager: mkluck
+ms.date: 01/13/2023
 ms.topic: include
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -17,7 +17,7 @@ The following sections describe the scalability information, hardware, software,
 
 ## Capacity limits
 
-The following table provides the scale limits that were tested for System Center Virtual Machine Manager 2022. There are various factors that impact the scale limits, such as hardware configuration, network, topology, and others.
+The following table provides the scale limits that were tested for System Center Virtual Machine Manager 2022. There are various factors that affect the scale limits, such as hardware configuration, network, topology, and others.
 
 The [planning guide](../vmm/plan-install.md) provides the details about how these factors can be adapted to specific requirements.
 
@@ -95,8 +95,8 @@ These components should be installed on the server, before you install VMM.
 
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
-Active Directory | The VMM management server must be a domain member.<br><br> The computer name should not exceed 15 characters. | A computer with the VMM console installed should be a domain member.
-Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 11 and Windows Server 2022 and download windows PE Add on for ADK| Not applicable
+Active Directory | The VMM management server must be a domain member.<br><br> The computer name shouldn't exceed 15 characters. | A computer with the VMM console installed should be a domain member.
+Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 11 and Windows Server 2022 and download windows PE Add-on for ADK| Not applicable
 PowerShell | PowerShell 5.1 | PowerShell 5.0, 5.1
 .NET (minimum) | 4.6 |  4.5
 
@@ -119,8 +119,8 @@ Windows Server 2022 | Y | Y | Y | Y
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 6.5, 6.7, 7.0 (supported from VMM 2022 UR1)
-vCenter | 6.5, 6.7, 7.0 (supported from VMM 2022 UR1)
+ESX | ESX/ESXi 6.5, 6.7<br/>7.0, 8.0 (supported from VMM 2022 UR1)
+vCenter | 6.5, 6.7<br/>7.0, 8.0 (supported from VMM 2022 UR1)
 Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 
 ## VMs in the VMM fabric

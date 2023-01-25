@@ -4,7 +4,7 @@ title: Favorite reports in Web console in System Center Operation Manager
 description: This article describes about Favorite reports in Web console
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
@@ -20,7 +20,7 @@ ms.topic: article
 This article provides information about how to create and view favorite reports in Operations Manager 2019 UR2 and later.
 
 > [!Note]
-> This feature is not supported in 2019 RTM/UR1.
+> This feature isn't supported in 2019 RTM/UR1.
 
 In Operations Manager 2019 UR2 and later, you can run and view favorite reports from **Web Console** > **My Workspace**. This feature is available in Operations Manager 2012 web console, which is now supported in 2019 UR2.
 
@@ -38,7 +38,7 @@ You can create a report in operations console and view them as *Favorite reports
 
 ## Before you begin
 
-- Ensure you have any of the following five roles to login to the web console. These permissions remain the same as in earlier supported versions of Operations Manager.  
+- Ensure you've any of the following five roles to sign in to the web console. These permissions remain the same as in earlier supported versions of Operations Manager.  
 
    - Administrator
    - Author
@@ -46,7 +46,7 @@ You can create a report in operations console and view them as *Favorite reports
    - Operator
    - Read-only Operator
 
-- Ensure you have the following three roles to view reports on Web Console. These permissions remain the same as in earlier supported versions of Operations Manager.  
+- Ensure you've the following three roles to view reports on Web Console. These permissions remain the same as in earlier supported versions of Operations Manager.  
 
    - Administrator
    - Report Operator
@@ -54,7 +54,7 @@ You can create a report in operations console and view them as *Favorite reports
 
 - If Operations Manager Report Server and Management Server are installed on different computers, ensure to set up Windows Authentication (Kerberos) to connect to SQL Reporting Services Web Service, [as detailed in the following section](#configure-windows-authentication).  
 
-    For additional information on windows authentication, see [this article](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
+    For more information on windows authentication, see [this article](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 
 ## Save a report as favorite from Operations console
@@ -64,17 +64,17 @@ Use the following procedure to save a report from Operations console:
 1. Go to operations console and run any report.
 2. After the report is generated, go to **File** and select **Save to favorites**.
 
-   ![Agents health state](./media/favorite-reports/agents-health-state.png)
+   ![Screenshot showing Agents health state.](./media/favorite-reports/agents-health-state.png)
 
 ## Run favorite reports in Web console
 
 Use the following procedure to run favorite reports in Web console:
 
 1. Open a web browser on any computer and enter http://\<web host>/Operations Manager, where web host is the name of the computer hosting web console.
-2. Navigate to **My Workspace** and click **Favorite reports** in the left pane.
-3. Select any report and click **Run** in the right panel. Favorite reports will be generated in a new tab.
+2. Navigate to **My Workspace** and select **Favorite reports** in the left pane.
+3. Select any report and select **Run** in the right panel. Favorite reports will be generated in a new tab.
 
-    ![My workspace](./media/favorite-reports/my-workspace-fav-reports.png)
+    ![Screenshot showing My workspace.](./media/favorite-reports/my-workspace-fav-reports.png)
 
 ## Configure Windows authentication
 
@@ -84,7 +84,7 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
 
 2. Change the authentication type to *\<RSWindowsNegotiate />* from *\<RSWindowsNTLM />*, and recycle the SQL reporting service.
 
-    ![Windows authentication](./media/favorite-reports/windows-authentication.png)
+    ![Screenshot showing Windows authentication.](./media/favorite-reports/windows-authentication.png)
 
 3. SPNs' registration: register the SPNs for the account under which the SQL Reporting service is running.
 
@@ -95,7 +95,7 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
 
         ```
 
-    - If the SPNs are not set, run the following command to register SPN for both NetBIOS and FQDN with SSRS account (include the port only if it is not using the default port 80):
+    - If the SPNs aren't set, run the following command to register SPN for both NetBIOS and FQDN with SSRS account (include the port only if it isn't using the default port 80):
         ```
         Setspn -s http/<computer-name> <domain-name>:<port> <domain-user-account-under-which-ssrs-is-running>
 
@@ -110,7 +110,7 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
         - **Domain name**:smx.net
         - **Domain user account under which SSRS is running**:smx\momReporting
 
-4.	Trust delegation: In case SQL Reporting Services (Operations Manager reporting services) is not installed on a Management Server, the (computer or domain), account under which the SQL Reporting Service is running needs to be trusted on the Management Server on which it is installed.
+4.	Trust delegation: In case SQL Reporting Services (Operations Manager reporting services) isn't installed on a Management Server, the (computer or domain) account under which the SQL Reporting Service is running needs to be trusted on the Management Server on which it's installed.
 
     >[!NOTE]
     >The domain administrator can select *Trust this computer for delegation to any service(kerberos only)*, or constraint delegation with protocol transition.
@@ -119,8 +119,8 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
 
 ### Important notes
 
--	If Operations Management web console is installed on a Stand-alone server (not an Operations Manager Management  Server), then  add the SDK Account SPN (account under which System Center Data Access Service is running) to the *Constraint Delegation* allowed list for the Operations Manager Web Console server as well.
--	If you do not want to see the sign in prompt for web console, add the web console URL to intranet zone (**Internet Options** > **Security** > **Local Intranet**).
+-	If Operations Management web console is installed on a Standalone server (not an Operations Manager Management  Server), then add the SDK Account SPN (account under which System Center Data Access Service is running) to the *Constraint Delegation* allowed list for the Operations Manager Web Console server as well.
+-	If you don't want to see the sign in prompt for web console, add the web console URL to the intranet zone (**Internet Options** > **Security** > **Local Intranet**).
 
 ## Next steps
 

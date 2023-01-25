@@ -3,7 +3,7 @@ title: Using Health Explorer in Operations Manager
 description: This article describes how to use the Operations Manager Health Explorer to view health and state changes for monitored objects.
 author: jyothisuri
 ms.author: jsuri
-ms.manager: evansma
+ms.manager: mkluck
 ms.date: 08/13/2018
 ms.custom: na
 ms.prod: system-center
@@ -34,7 +34,7 @@ You can start Health Explorer from the **Tasks** pane after you select an object
 
 All monitors that are defined for a selected object display in the appropriate category.  
 
-![Health Explorer](./media/manage-consoles-overview-healthexplorer/om2016-healthexplorer.png)  
+![Screenshot showing Health Explorer.](./media/manage-consoles-overview-healthexplorer/om2016-healthexplorer.png)  
 
 The icons used to indicate state are as follows:  
 
@@ -47,9 +47,9 @@ The icons used to indicate state are as follows:
 |![Wrench icon indicates maintenance mode](./media/manage-consoles-overview-healthexplorer/om2016-maintenancemodeicon.png)|Maintenance mode (gray)|  
 |![Grayed-out healthy icon](./media/manage-consoles-overview-healthexplorer/om2016-healthygrayicon.png)|Out of contact (gray)|  
 
-By default, when the Health Explorer windows first opens, all monitors that are in a failed, or red state are expanded. If a monitor contains other monitors, as in the case of a roll-up monitor, all monitors are shown in a hierarchical layout so that monitoring data for all dependent services and applications is displayed. If you want to view more detail on any dependent monitor, right-click that monitor and then click **Monitor Properties** to open another Health Explorer window.  
+By default, when the Health Explorer windows first opens, all the monitors that are in a failed or red state are expanded. If a monitor contains other monitors, as in the case of a roll-up monitor, all monitors are shown in a hierarchical layout so that monitoring data for all dependent services and applications is displayed. If you want to view more details on any dependent monitor, right-click that monitor and then select **Monitor Properties** to open another Health Explorer window.  
 
-When the Health Explorer window is open, you can review a history of diagnostic tests that have run automatically and the output from those tasks. You can also run additional diagnostic tasks. Any task that is formatted as a hyperlink can run directly from the **Knowledge** tab.  
+When the Health Explorer window is open, you can review a history of diagnostic tests that have run automatically and the output from those tasks. You can also run additional diagnostic tasks. Any task that's formatted as a hyperlink can run directly from the **Knowledge** tab.  
 
 The Health Explorer window refreshes automatically every 30 seconds. Press the F5 function key for an immediate refresh.  
 
