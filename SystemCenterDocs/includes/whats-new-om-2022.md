@@ -58,7 +58,7 @@ Operations Manager 2022 supports sort option by column, in Overrides Summary.
 
 Operations Manager 2022 provides improved installation experience as detailed below:
 
-Values of few registries which are customized (commonly) are retained when an update (UR/Hotfix) is installed or upgraded from Operations Manager 2019 to Operations Manager 2022.  Here is the list of registries that are backed up & retained:
+Values of few registries which are customized (commonly) are retained when an update (UR/Hotfix) is installed or upgraded from Operations Manager 2019 to Operations Manager 2022.  Here's the list of registries that are backed up & retained:
 
 | Registry Key Location                                            | Value                                      |
 |------------------------------------------------------------------|--------------------------------------------|
@@ -84,7 +84,7 @@ Operations Manager 2022 supports the display of Alert source (monitor/rule) unde
 Operations Manager 2022 provides the following changes:   
 
 - LocalSystem is no longer used internally instead of the Default Action Account. This was used earlier for APM configuration, Privileged Monitoring Account, RunAs Profile fallback. There was an association created for the Validate Subscription Account RunAs Profile.  
-- LocalSystem account is still being added to Operations Manager Administrators Group by Setup, but it is now visible in the console and can be removed and added later as required.  
+- LocalSystem account is still being added to Operations Manager Administrators Group by Setup, but it's now visible in the console and can be removed and added later as required.  
 
 ### Folderization of Change Tracking Reports
 

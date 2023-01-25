@@ -55,15 +55,15 @@ The existing alert notifications and subscription experience in Operations Manag
 
 ### Management server failover support for Linux and UNIX monitoring
 
-Failover of the management server in a resource pool that supports monitoring of a workload ensures high availability and fault tolerance. In earlier versions of Operations Manager, when a primary management server fails and another management server takes over the role of the primary management server in the pool, the existing monitor-based alerts in Operations Manager are closed. New alerts are created for the same condition. In deployments where Operations Manager is integrated with an incident management system, these new alerts lead to the creation of new tickets or incidents.
+Failover of the management server in a resource pool that supports monitoring of a workload ensures high availability and fault tolerance. In the earlier versions of Operations Manager, when a primary management server fails and another management server takes over the role of the primary management server in the pool, the existing monitor-based alerts in Operations Manager are closed. New alerts are created for the same condition. In deployments where Operations Manager is integrated with an incident management system, these new alerts lead to the creation of new tickets or incidents.
 
 The problem of alerts and tickets that are created during failover or load balancing of management servers is addressed in Operations Manager 2019. Now, when the primary management server fails over, the alerts don't get re-created. Only the repeat count of the existing alerts is incremented.
 
 ### Linux agent installation changes
 
-With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called *omi* is created on the agent computer. However, you can choose to create user **omi** in advance, according to the specifics of your user policies.
+With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called *omi* is created on the agent computer. However, you can choose to create user **omi** in advance according to the specifics of your user policies.
 
-We recommend that user **omi** be a system user with no login shell, password and home directory.
+We recommend that user **omi** be a system user with no login shell, password, and home directory.
 
 To use the log file monitoring feature, you must install the Linux log file monitoring management pack that's provided with Operations Manager 2019. This change ensures that the *omsagent* user is created only when you use the log file monitoring feature. For more information, see [Install agent on UNIX and Linux computers](../scom/manage-install-crossplat-agent-cmdline.md) and [Linux log file monitoring](../scom/manage-linux-logfiles.md).
 
@@ -111,7 +111,7 @@ The following new platforms are supported for monitoring in Operations Manager 2
 
 ### HTML 5 web console client browsers
 
-For the HTML 5 web console, the following client web browsers are supported:
+For the HTML5 web console, the following client web browsers are supported:
 
 * Internet Explorer version 11
 * Microsoft Edge version 40 and later
@@ -150,11 +150,11 @@ Operations Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or la
 
 ### URL monitoring enhancements for server certificate errors
 
-The existing URL monitoring capability is enhanced. With this improvement, Operations Manager won't ignore server certificate errors by default. Examples of certificate errors include server certificate CN, expiry date, untrusted CA, and wrong usage. If you want to monitor websites that don't have a valid SSL certificate, select the **Ignore Server Certificate Errors** check box in your web application properties. For more information, see [Web application properties](../scom/web-application-properties.md).
+The existing URL monitoring capability is enhanced. With this improvement, Operations Manager won't ignore server certificate errors by default. Examples of certificate errors include server certificate CN, expiry date, untrusted CA, and wrong usage. If you want to monitor websites that don't have a valid SSL certificate, select the **Ignore Server Certificate Errors** checkbox in your web application properties. For more information, see [Web application properties](../scom/web-application-properties.md).
 
 ### Updates and Recommendations feature for Linux
 
-The Updates and Recommendations feature is now extended for Linux workloads. Previously, it was available only for Windows workloads. This feature helps you to proactively identify workloads deployed on your Linux computers that weren't monitored by Operations Manager. You can also identify workloads that aren't monitored by using the latest version of a management pack. For more information, see [Management pack assessment](../scom/manage-mp-mpassessment.md).
+The Updates and Recommendations feature is now extended for Linux workloads. Previously, it was available only for Windows workloads. This feature helps you proactively identify workloads deployed on your Linux computers that weren't monitored by Operations Manager. You can also identify workloads that aren't monitored by using the latest version of a management pack. For more information, see [Management pack assessment](../scom/manage-mp-mpassessment.md).
 
 If there are management packs in the catalog that are designed to monitor those workloads, they appear on the **Updates and Recommendations** page. You'll also find updates that are available for the management packs installed in your management group.
 
