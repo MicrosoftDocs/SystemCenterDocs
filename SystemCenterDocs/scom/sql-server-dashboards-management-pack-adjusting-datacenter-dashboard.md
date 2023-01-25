@@ -41,7 +41,7 @@ The **Contrast** theme is automatically activated when the corresponding system 
 
 ## Adding Groups
 
-To add groups, click the menu button and select **Add Group** from the dropdown list. You can search for the desired group in the **Add group** dialog by entering a group name.
+To add groups, select the menu button and select **Add Group** from the dropdown list. You can search for the desired group in the **Add group** dialog by entering a group name.
 
 The **Add Group** dialog requires the **GROUP** combobox and the **DISPLAY NAME** field. When the **GROUP** combobox is in focus, the **It is required to select a group** hint is displayed.
 
@@ -52,7 +52,7 @@ When the **DISPLAY NAME** field is in focus, the **The field is required** hint 
 
 ![Screenshot showing Highlighting of fields.](./media/sql-server-dashboards-management-pack/highlighting.png)
 
-The user can open the dropdown list with available groups or type part of a group name and best match groups will be displayed in the dropdown list. Information entered in the **GROUP** field can be deleted by clicking the **X** button.
+The user can open the dropdown list with available groups or type part of a group name and best match groups will be displayed in the dropdown list. Information entered in the **GROUP** field can be deleted by selecting the **X** button.
 
 ![Screenshot showing Removing information from the field.](./media/sql-server-dashboards-management-pack/removing-information.png)
 
@@ -84,7 +84,7 @@ The context menu of the **State** tile allows removing it and opening the **Enab
 
 ![Screenshot showing Removal of tiles.](./media/sql-server-dashboards-management-pack/removing-tiles.png)
 
-All other tiles (3 types of alerts) can be only removed in the context menu.
+All other tiles (three types of alerts) can be only removed in the context menu.
 
 ![Screenshot showing Removal of other tiles.](./media/sql-server-dashboards-management-pack/removing-other-tiles.png)
 
@@ -122,7 +122,7 @@ The **Reset to default** button is disabled if the **Default** checkbox settings
 
 ### Adding Aggregated Tiles
 
-Left or right click the group menu button calls the **Add aggregated tile** menu. In this menu, the user can add a performance tile and monitor tile, and rename and remove a group.
+Left- or right-click the group menu button calls the **Add aggregated tile** menu. In this menu, the user can add a performance tile and monitor tile, and rename and remove a group.
 
 ![Screenshot showing Aggregated tiles.](./media/sql-server-dashboards-management-pack/aggregated-tiles.png)
 

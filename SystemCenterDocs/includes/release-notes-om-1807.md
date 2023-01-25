@@ -63,7 +63,7 @@ You can change the default values to support your requirements. The default conf
 
 ## Support for Operations Manager and Service Manager console coexistence
 
-**Description**:  With System Center version 1801, installing the Service Manager console on a Operations Manager management server wasn't supported.  This would cause the SDK service to prematurely stop.  
+**Description**:  With System Center version 1801, installing the Service Manager console on an Operations Manager management server wasn't supported.  This would cause the SDK service to prematurely stop.  
 
 **Workaround**:  To co-locate the Operations Manager and Service Manager console on the same computer, they must be running version 1807.  
 

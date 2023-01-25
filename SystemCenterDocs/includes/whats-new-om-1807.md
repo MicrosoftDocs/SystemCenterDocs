@@ -1,7 +1,7 @@
 ---
 ms.assetid: 70fad9da-0c8b-4b0a-abbd-a1246b57da5b
 title: include file
-description: include file to describe the new features in operations manager 1807.
+description: include file to describe the new features in Operations Manager 1807.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
@@ -44,7 +44,7 @@ The following improvements are provided in the Web console for version 1807:
 With version 1807, upgrading from SQL Server 2016 to SQL Server 2017 is supported. To understand the requirements and steps to successfully upgrade your Operations Manager version 1801 management group to version 1807, review [How to upgrade to Operations Manager version 1807](../scom/upgrade-1801-to-1807.md).
 
 ## Operations Manager and Service Manager console coexistence
-The Operations and Service Manager version 1807 consoles, as well as PowerShell modules can be installed on the same system.  
+The Operations and Service Manager version 1807 consoles and PowerShell modules can be installed on the same system.  
 
 ## OpenSSL 1.1.0 version support
 On Linux platforms, OpenSSL 0.9.8 support is dropped and we've added support for OpenSSL 1.1.0.

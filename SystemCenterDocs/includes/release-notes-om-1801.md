@@ -41,7 +41,7 @@ The following sections summarize the release notes for Operations Manager 1801 a
 ## In-place upgrade from Operations Manager 2016 will fail if ACS Linux/UNIX MP installed
 **Description**: If you've already installed the Audit Collection Services (ACS) Linux/UNIX management packs, and you're attempting to upgrade from Operations Manager 2016 RTM to the latest update rollup, the upgrade will fail and result in the removal of the management server role.  
 
-**Cause**: There is an issue with the installer package during the upgrade process, where setup tries to upgrade the ACS management pack but it has a dependency on the Microsoft.Linux.Universal.Library.MP. If this dependency management pack isn't upgraded, importing the ACS MP will fail during the process and the following error is displayed:
+**Cause**: There's an issue with the installer package during the upgrade process, where setup tries to upgrade the ACS management pack but it has a dependency on the Microsoft.Linux.Universal.Library.MP. If this dependency management pack isn't upgraded, importing the ACS MP will fail during the process, and the following error is displayed:
 
 ```
 Error:Found error in 2|Microsoft.ACS.Linux.Universal|7.7.1124.0|Microsoft.ACS.Linux.Universal|| with message:  

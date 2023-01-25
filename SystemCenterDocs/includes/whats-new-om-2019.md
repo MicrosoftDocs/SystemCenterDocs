@@ -325,16 +325,16 @@ Three new reports **Management Pack History**, **Management Pack Objects** and *
 You can use the filters available in the reports to set the criteria and get the reports per your requirement. [Learn more](../scom/management-pack-change-tracking.md).
 
 ### Improvements in scheduled maintenance mode
-In earlier releases, if there is a conflict in maintenance mode window for object(s), the newly updated end time overwrites the existing scheduled time. If this latest defined time is longer than previous value, then computer stays in maintenance mode for extended period. However, when the latest defined time is shorter, then the computer comes out of maintenance mode, earlier than expected, generating false alerts.
+In earlier releases, if there's a conflict in maintenance mode window for object(s), the newly updated end time overwrites the existing scheduled time. If this latest defined time is longer than previous value, then computer stays in maintenance mode for extended period. However, when the latest defined time is shorter, then the computer comes out of maintenance mode, earlier than expected, generating false alerts.
 
-With 2019 UR2, if there is a conflict in maintenance mode end time, then the object will exit maintenance mode at the furthest end time defined for the object. [Learn more](../scom/manage-maintenance-mode-overview.md#furthest-end-time-during-schedule-overlap).
+With 2019 UR2, if there's a conflict in maintenance mode end time, then the object will exit maintenance mode at the furthest end time defined for the object. [Learn more](../scom/manage-maintenance-mode-overview.md#furthest-end-time-during-schedule-overlap).
 
 ### Favorite reports in web console
 
 With Operations Manager 2019 UR2, you can run and view favorite reports under **Web Console** > **My Workspace**. This feature is available in Operations Manager 2012 web console, which is now supported in 2019 UR2. [Learn more](../scom/favorite-reports-web-console.md).
 
 ### Support for folders in monitoring view of web console
-In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-web-console.md).
+In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature isn't available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-web-console.md).
 
 ## New features in Operations Manager 2019 UR3
 
@@ -360,7 +360,7 @@ With Operations Manager 2019 UR3 and later, you can change the log-level setting
 
 ### Resolved issues with orphan alerts
 
-In earlier releases, active alerts are not getting closed after non-persistent health state in failover scenarios. Overall, health service doesn’t hold the last state of the monitor; alerts are not closed while resetting the monitor to healthy.
+In earlier releases, active alerts aren't getting closed after non-persistent health state in failover scenarios. Overall, health service doesn’t hold the last state of the monitor; alerts aren't closed while resetting the monitor to healthy.
 
 With Operations Manager 2019 UR3 and later, all of the orphan alerts are closed, eventually, depending on the type of monitor. [Learn more](../scom/manage-alert-created-by-monitor.md#closure-of-orphan-alerts).
 
@@ -390,7 +390,7 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Le
 
 - **Grooming of maintenance mode staging table**
 
-  In earlier releases, Operations Manager Data warehouse grooming (emptying) of maintenance mode staging table was not occurring. The table increased every day into millions of rows, which eventually filled up the database that could potentially lead to additional cost to spin up a new database. The increase in utilization of database is usually correlated with decrease in performance of Operation Manager's console.
+  In earlier releases, Operations Manager Data warehouse grooming (emptying) of maintenance mode staging table wasn't occurring. The table increased every day into millions of rows, which eventually filled up the database that could potentially lead to additional cost to spin up a new database. The increase in utilization of database is usually correlated with decrease in performance of Operation Manager's console.
 
   With Operations Manager 2019 UR3, an index is added to the maintenance mode staging table; grooming of the table occurs now.
 

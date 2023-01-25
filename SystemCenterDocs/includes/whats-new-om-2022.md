@@ -58,7 +58,7 @@ Operations Manager 2022 supports sort option by column, in Overrides Summary.
 
 Operations Manager 2022 provides improved installation experience as detailed below:
 
-Values of few registries which are customized (commonly) are retained when an update (UR/Hotfix) is installed or upgraded from Operations Manager 2019 to Operations Manager 2022.  Here's the list of registries that are backed up & retained:
+Values of few registries that are customized (commonly) are retained when an update (UR/Hotfix) is installed or upgraded from Operations Manager 2019 to Operations Manager 2022.  Here's the list of registries that are backed up & retained:
 
 | Registry Key Location                                            | Value                                      |
 |------------------------------------------------------------------|--------------------------------------------|

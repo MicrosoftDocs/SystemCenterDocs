@@ -1,7 +1,7 @@
 ---
 ms.assetid: d15240cb-f087-4641-a65d-b0b48469f208
 title: include file
-description: include file to describe the new features in operations manager 1801
+description: include file to describe the new features in Operations Manager 1801
 author: jyothisuri
 ms.author: jsuri
 manager: evansma

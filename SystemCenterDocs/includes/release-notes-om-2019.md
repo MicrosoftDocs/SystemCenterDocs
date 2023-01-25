@@ -74,14 +74,14 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Chan
 
 This command will add the service user to the list of allowed users who can access VirtualMachineManager-Server/Operational event log.
 
-### Operations Manager 2019 does not support HPUX library  
+### Operations Manager 2019 doesn't support HPUX library  
 
 **Description**: Operations Manager 2019 doesn't support HPUX. However, HPUX library is available in the list of management packs delivered for Operations Manager 2019.
 
 **Workaround**: Ignore this. HPUX is removed from the latest pack on the DLC, [here]( https://www.microsoft.com/download/details.aspx?id=58208&WT.mc_id=rss_windows_allproducts).
 
 
-### Previous AD rules do not work after upgrading to Operations Manager 2019
+### Previous AD rules don't work after upgrading to Operations Manager 2019
 **Description:**  After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), 1801 or 1807, previous AD rules don't work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 doesn't have this issue.
 
 **Workaround**: To resolve this, use the following steps:
@@ -109,7 +109,7 @@ This command will add the service user to the list of allowed users who can acce
     >This issue is fixed in 2019 UR2.
 
 
-### REST API in Operations Manager does not return required values for classes
+### REST API in Operations Manager doesn't return required values for classes
 
 **Description:** When called from Operations Manager 2019, REST API doesn't return className, path and fullname, information returned is empty.
 Also, ID is returned as className.
@@ -140,7 +140,7 @@ For the problems fixed in UR1 and the installation instructions for UR1, [see th
 **Description:** Post migration to gMSA, while exporting a report in Word, PowerPoint, or Excel format, You may encounter the following error:
 *An error occurred during rendering the report*.
 
-This is specifically observed for SQL Server Reporting Services on SQL Server 2017. This error appears to be a persistent issue with SSRS in SQL Server 2017.
+This is observed for SQL Server Reporting Services on SQL Server 2017. This error appears to be a persistent issue with SSRS in SQL Server 2017.
 
 **Workaround**: To resolve this, use the following steps:
 
@@ -181,7 +181,7 @@ The following sections summarize the release notes for Operations Manager 2019 U
 
 For the problems fixed in UR4 and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-operations-manager-2019-07ad0ef3-a330-4373-92f6-2dda3821bee5).
 
-### Three columns in Authoring > Groups are not localized
+### Three columns in Authoring > Groups aren't localized
 
 **Description**: In Operations Manager console **Authoring** > **Groups** new columns (**Management Pack**, **Sealed** and **Members**), appear in English, not displayed in the language as set in the computer accessing this view. 
 

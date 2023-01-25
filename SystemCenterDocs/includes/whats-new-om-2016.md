@@ -1,7 +1,7 @@
 ---
 ms.assetid: c46cb9b2-e66e-4f06-9020-2157b063df3a
 title: include file
-description: include file to describe the new features in operations manager 2016
+description: include file to describe the new features in Operations Manager 2016
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
@@ -32,7 +32,7 @@ Operations Manager now supports sending notifications from an e-mail server, eit
 With the release of System Center 2016 - Operations Manager, the Silverlight dependency is removed from all the Web console views except Dashboard views.
 This feature provides the following value:
 - No more Silverlight prerequisite to access Operations Manager Web console
-- Operations Manager Web console can be accessed from multiple web browsers like Edge, Chrome, and Firefox
+- Operations Manager Web console can be accessed from multiple web browsers like Microsoft Edge, Chrome, and Firefox
 - Performant experience
 
 > [!NOTE]
@@ -109,7 +109,7 @@ If you need to restore the original configuration using the WSMAN Sync APIs, you
 
 ## Extend Operations Manager with Operations Management Suite
 
-With Microsoft Operations Management Suite you can extend your management capabilities by connecting your Operations Management infrastructure to management and analysis services provided through your Azure account. The main scenarios for connecting System Center 2016 - Operations Manager to Microsoft Operations Management Suite include:
+With Microsoft Operations Management Suite, you can extend your management capabilities by connecting your Operations Management infrastructure to management and analysis services provided through your Azure account. The main scenarios for connecting System Center 2016 - Operations Manager to Microsoft Operations Management Suite include:
 
 -   Configuration Assessment
 
