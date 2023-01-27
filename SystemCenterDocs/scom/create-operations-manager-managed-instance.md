@@ -296,8 +296,6 @@ To create a SCOM Managed Instance (preview), follow these steps:
 
 1. Select **Create SCOM managed instance**. 
 1. **Prerequisites to create SCOM managed instance** page opens. Download the script and run in a domain-joined machine to validate the prerequisites.
-
-   :::image type="Script download" source="media/create-operations-manager-managed-instance/script-download-inline.png" alt-text="Screenshot showing script download option." lightbox="media/create-operations-manager-managed-instance/script-download-expanded.png":::
         
 1. Under **Basics**, do the following:
     1. **Project details**:
