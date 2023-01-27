@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: c1167698-44e1-4f63-9400-00e964077e62
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete Storage Account

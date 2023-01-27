@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 846005ef-f15b-42e1-a6f5-ead1324a788f
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Deployment
@@ -23,9 +23,9 @@ manager: evansma
 
 ::: moniker-end
 
-The **Get Deployment** activity returns configuration information, status, and system properties for a deployment. It is part of the **Azure Deployments** category activity.
+The **Get Deployment** activity returns configuration information, status, and system properties for a deployment. It's part of the **Azure Deployments** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get Deployment Required Properties
 

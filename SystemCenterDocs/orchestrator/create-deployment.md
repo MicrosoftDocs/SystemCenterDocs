@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: c0fc7ec4-32ab-4f96-a9cf-3a696cc512ad
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Deployment
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Create Deployment** activity uploads a new service package and creates a new deployment on staging or production. It is part of the **Azure Deployments** category activity.
+The **Create Deployment** activity uploads a new service package and creates a new deployment on staging or production. It's part of the **Azure Deployments** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create Deployment Required Properties
 

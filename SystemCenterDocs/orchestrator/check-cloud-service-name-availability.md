@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: b4f862ca-5918-4f0a-9031-973cce272d68
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Check Cloud Service Name Availability

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 29ca91cb-1d7f-43b1-a967-23e7cdf2918c
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Add VM Data Disk
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Add VM Data Disk** activity adds a data disk to a virtual machine. It is part of the **Azure Virtual Machine Disks** category activity.
+The **Add VM Data Disk** activity adds a data disk to a virtual machine. It's part of the **Azure Virtual Machine Disks** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Add VM Data Disk Required Properties
 

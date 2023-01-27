@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 1102ac6c-cbce-4ad6-b36d-7085c3c4c3b7
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Remove VM Endpoint

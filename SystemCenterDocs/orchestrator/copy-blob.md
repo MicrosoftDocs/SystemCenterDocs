@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: b3512761-a75f-44f0-8fbb-42c683dc2391
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Copy Blob
@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-The **Copy Blob** activity copies a blob to a destination within the storage account. It is part of the **Azure Storage** category activity.
+The **Copy Blob** activity copies a blob to a destination within the storage account. It's part of the **Azure Storage** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
