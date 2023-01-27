@@ -1,8 +1,8 @@
 ---
 title: Get Deployment
 description: The Get Deployment activity returns configuration information, status, and system properties for a deployment.
-ms.custom: na
-ms.date: 4/25/2017
+ms.custom: engagement-fy23
+ms.date: 1/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -31,7 +31,7 @@ The activity publishes all the data from the required and optional properties in
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
-| Service DNS Prefix | The DNS prefix name of the Windows Azure hosted. | String   |
+| Service DNS Prefix | The DNS prefix name of the Microsoft Azure hosted. | String   |
 | Deployment Slot   | The deployment slot of the deployment.   | Staging, Production |
 
 ## Get Deployment Optional Properties
@@ -51,12 +51,12 @@ There are no optional properties for this runbook activity.
 | Is Upgrading   | Whether the deployment is currently upgrading.   | Boolean   |
 | Number of Upgrade Domains   | The number of upgrade domains in the deployment.   | Integer   |
 | OS Family Number   | The operating system family that this deployment runs under.   | Integer   |
-| OS Version String   | The version of the Windows Azure Guest operating system on which this deployment runs. | String   |
-| Private ID   | A unique identifier generated internally by Windows Azure for this deployment.   | String   |
-| Raw XML Output   | The raw XML output returned by Windows Azure for this operation.   | String   |
+| OS Version String   | The version of the Microsoft Azure Guest operating system on which this deployment runs. | String   |
+| Private ID   | A unique identifier generated internally by Microsoft Azure for this deployment.   | String   |
+| Raw XML Output   | The raw XML output returned by Microsoft Azure for this operation.   | String   |
 | Upgrade Type   | The upgrade type designated for this deployment.   | String   |
 | Status   | The status of the deployment.   | String   |
-| Service DNS Prefix   | The DNS prefix name of the Windows Azure cloud service.   | String   |
+| Service DNS Prefix   | The DNS prefix name of the Microsoft Azure cloud service.   | String   |
 | Deployment Slot   | The deployment slot of the deployment.   | String   |
 | Deployment Name   | The name of the deployment.   | String   |
 | Label   | A friendly name for the cloud service.   | String   |

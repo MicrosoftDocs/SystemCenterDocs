@@ -37,7 +37,7 @@ The activity publishes all the data from the required and optional properties in
 | Label   | A friendly name for the cloud service.   | String   |
 | Service Configuration File Path | The path to the service configuration file for the deployment.   | String   |
 | Service Package URL   | A URL that refers to the location of the service package in the Blob service. The service package can be located either in a storage account beneath the same subscription or a Shared Access Signature (SAS) URI from any storage account. | String   |
-| Start Deployment Immediately   | Indicates whether to start the deployment immediately after it is created.   | True, False   |
+| Start Deployment Immediately   | Indicates whether to start the deployment immediately after it's created.   | True, False   |
 | Treat Warnings as Errors   | Indicates whether to treat package validation warnings as errors. If set to true, the Create Deployment activity fails if there are validation warnings on the service package.   | True, False   |
 | Wait for Completion   | Whether to wait for this operation to complete in Azure before moving on to the next activity.   | True, False   |
 
@@ -70,7 +70,7 @@ There are no optional properties for this runbook activity.
 | Label   | A friendly name for the cloud service.   | String   |
 | Service Configuration File Path | The path to the service configuration file for the deployment.   | String   |
 | Service Package URL   | A URL that refers to the location of the service package in the Blob service. The service package can be located either in a storage account beneath the same subscription or a Shared Access Signature (SAS) URI from any storage account. | String   |
-| Start Deployment Immediately   | Indicates whether to start the deployment immediately after it is created.   | Boolean   |
+| Start Deployment Immediately   | Indicates whether to start the deployment immediately after it's created.   | Boolean   |
 | Treat Warnings as Errors   | Indicates whether to treat package validation warnings as errors. If set to true, the Create Deployment activity fails if there are validation warnings on the service package.   | Boolean   |
 | Wait for Completion   | Whether to wait for this operation to complete in Azure before moving on to the next activity.   | Boolean   |
 
