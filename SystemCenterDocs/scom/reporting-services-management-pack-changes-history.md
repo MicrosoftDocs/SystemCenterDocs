@@ -75,7 +75,7 @@ This article covers new functionality and improvements in Management Pack for SQ
 - Added tasks Start/Stop Reporting Services Windows Service
 - Updated display name of SQL Server Reporting Services Deployment object to display Availability Group name as part of it instead of GUID
 - Updated logic of installation detection for local Reporting Services instance to query Windows Registry instead of WMI
-- Improved error handling for cases when error "Process with an Id is not running" is returned
+- Improved error handling for cases when error **Process with an Id is not running** is returned
 - Updated display strings
 
 ### Bug Fixes
