@@ -1,7 +1,7 @@
 ---
 ms.assetid: 70fad9da-0c8b-4b0a-abbd-a1246b57da5b
 title: include file
-description: include file to describe the new features in operations manager 1807.
+description: include file to describe the new features in Operations Manager 1807.
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
@@ -15,7 +15,7 @@ ms.topic: include
 
 ## New features in Operations Manager 1807
 
-The content in the following sections describe new features in System Center 1807 - Operations Manager.
+The content in the following sections describes new features in System Center 1807 - Operations Manager.
 
 >[!NOTE]
 > To view the bugs fixed and the installation instructions for Operations Manager 1807, see [KB article 4133779](https://support.microsoft.com/help/4133779).
@@ -26,14 +26,14 @@ In System Center Operations Manager version 1801 agent, the Application Performa
 
 ## Linux log rotation
 
-To prevent the SCX logs from growing and consuming all available free space on the system disk, a log rotation feature is now available for the SCX agent.  
+To prevent the SCX logs from growing and consuming all the available free space on the system disk, a log rotation feature is now available for the SCX agent.  
 
 ## HTML5 Web console enhancements
 The following improvements are provided in the Web console for version 1807:
 
 * Added the PowerShell widget
 * Includes an effective configuration widget in the Monitoring objects detail page showing the running rules and monitors and override settings applied
-* Network node/network interface drill-down is now available as a tab when you select a network device and drill-down to the Monitoring objects detailed page.  It delivers the same experience as what is available in the Operations console.
+* Network node/network interface drill-down is now available as a tab when you select a network device and drill down to the Monitoring objects detailed page.  It delivers the same experience as what is available in the Operations console.
 * Alert widget enhancement includes an improved layout and presentation of alert details. You can modify the resolution state and drill down to the Monitoring object details page for the alert source.
 * The monitoring tree can be hidden when a dashboard is integrated with SharePoint.
 * The size of the health icon can be changed in the Topology widget.
@@ -44,10 +44,10 @@ The following improvements are provided in the Web console for version 1807:
 With version 1807, upgrading from SQL Server 2016 to SQL Server 2017 is supported. To understand the requirements and steps to successfully upgrade your Operations Manager version 1801 management group to version 1807, review [How to upgrade to Operations Manager version 1807](../scom/upgrade-1801-to-1807.md).
 
 ## Operations Manager and Service Manager console coexistence
-The Operations and Service Manager version 1807 consoles, as well as PowerShell modules can be installed on the same system.  
+The Operations and Service Manager version 1807 consoles and PowerShell modules can be installed on the same system.  
 
 ## OpenSSL 1.1.0 version support
-On Linux platforms, OpenSSL 0.9.8 support is dropped and we have added support for OpenSSL 1.1.0.
+On Linux platforms, OpenSSL 0.9.8 support is dropped and we've added support for OpenSSL 1.1.0.
 
 ## Ubuntu 18 and Debian 9 support
 These Linux platforms are added to our support matrix for monitoring UNIX and Linux computers.
