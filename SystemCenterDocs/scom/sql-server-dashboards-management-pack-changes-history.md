@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Features and Enhancements in Management Pack for SQL Server Dashboards
 
-This section covers new functionality and improvements in Management Pack for SQL Server Dashboards.
+This article covers new functionality and improvements in Management Pack for SQL Server Dashboards.
 
 ## December 2022 - 7.0.40.0 CTP
 
