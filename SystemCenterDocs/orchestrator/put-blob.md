@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 81fab0b3-5c85-4434-826c-eebf098c7511
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Put Blob
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Put Blob** activity creates a new block blob from the specified file, or updates the content of an existing block blob. It is part of the **Azure Storage** category activity.
+The **Put Blob** activity creates a new block blob from the specified file, or updates the content of an existing block blob. It's part of the **Azure Storage** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Put Blob required properties
 

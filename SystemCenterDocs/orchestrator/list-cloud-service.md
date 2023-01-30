@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 83b9212b-1329-4ecd-aacf-8329001dd3ad
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # List Cloud Service
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **List Cloud Service** activity lists the cloud services available under the current subscription. It is part of the **Azure Cloud Services** category activity.
+The **List Cloud Service** activity lists the cloud services available under the current subscription. It's part of the **Azure Cloud Services** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## List Cloud Service required properties
 

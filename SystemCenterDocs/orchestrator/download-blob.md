@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: a6e1b38f-d31a-45da-9f00-dc1ee232da42
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Download Blob
@@ -23,7 +23,7 @@ manager: evansma
 
 ::: moniker-end
 
-The **Download Blob** activity downloads a blob from the system. It is part of the **Azure Storage** category activity.
+The **Download Blob** activity downloads a blob from the system. It's part of the **Azure Storage** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 

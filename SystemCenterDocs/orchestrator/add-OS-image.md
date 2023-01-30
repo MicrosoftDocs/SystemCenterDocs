@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 0d88f548-97ef-4fb4-9f1c-4f45b0afc796
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Add OS Image
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Add OS Image** activity adds an operating system image that is currently stored in a storage account in your subscription to the image repository. It is part of the **Azure Virtual Machine Images** category activity.
+The **Add OS Image** activity adds an operating system image that is currently stored in a storage account in your subscription to the image repository. It's part of the **Azure Virtual Machine Images** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Add OS Image Required Properties
 

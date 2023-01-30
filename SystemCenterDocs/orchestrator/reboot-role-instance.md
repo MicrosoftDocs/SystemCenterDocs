@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 817a1bdc-c48e-4c9d-82a1-f864cc6293b6
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Reboot Role Instance
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Reboot Role Instance** activity requests a reboot of a role instance that is running in a deployment. It is part of the **Azure Deployments** category activity.
+The **Reboot Role Instance** activity requests a reboot of a role instance that is running in a deployment. It's part of the **Azure Deployments** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Reboot Role Instance required properties
 
