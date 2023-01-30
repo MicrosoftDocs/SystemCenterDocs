@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 99eae19a-b3e3-4188-82d6-6d25acb8abfe
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Operating Systems
@@ -23,9 +23,9 @@ manager: evansma
 
 ::: moniker-end
 
-The **Get Operating Systems** activity gets all Windows Azure operating systems. It is part of the **Azure Deployments** category activity.
+The **Get Operating Systems** activity gets all Windows Azure operating systems. It's part of the **Azure Deployments** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get Operating Systems Required Properties
 

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: d77c39e2-e0bb-4259-8072-803361ad4211
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Storage Account
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Create Storage Account** activity creates a new storage account in Azure. It is part of the **Azure Storage** category activity.
+The **Create Storage Account** activity creates a new storage account in Azure. It's part of the **Azure Storage** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create Storage Account Required Properties
 

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 40e827f1-2dfa-4a05-81c8-e23bfd8643ec
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete Deployment
@@ -23,12 +23,12 @@ robots: noindex
 
 ::: moniker-end
 
-The **Delete Deployment** activity deletes the specified deployment. It is part of the **Azure Deployments** category activity.
+The **Delete Deployment** activity deletes the specified deployment. It's part of the **Azure Deployments** category activity.
 
 >[!IMPORTANT]
 >The delete deployment activity will delete all roles under the deployment. This includes the deletion of any virtual machines under the deployment.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Delete Deployment Required Properties
 
