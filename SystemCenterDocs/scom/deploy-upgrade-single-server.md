@@ -3,7 +3,7 @@ title: How to Upgrade a single-server Management Group
 description: This article describes how to upgrade a single-server management group to the newest release of Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 01/15/2018
 ms.custom: na
 ms.prod: system-center
@@ -20,44 +20,44 @@ ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 
 ::: moniker-end
 
-When you upgrade a single-server management group, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
+When you upgrade a single-server management group, all the features that are installed on the server are upgraded. Before you begin the upgrade process, ensure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](./system-requirements.md).
 
 ### To upgrade a single-server management group
 
-1. Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1. Sign in to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2. On the Operations Manager media, run **Setup.exe**, and then click **Install**.
+2. On the Operations Manager media, run **Setup.exe**, and select **Install**.
 
    > [!NOTE]
-   > The **Getting Started** page displays information about what will be upgraded. Click **Next** to proceed with the upgrade.
+   > The **Getting Started** page displays information about what will be upgraded. Select **Next** to proceed with the upgrade.
 
-3. On the **Getting Started, Please read the license terms page**, read the Microsoft Software License Terms, click **I have read, understood, and agree with the license terms**, and then click **Next**.
+3. On the **Getting Started, Please read the license terms page**, read the Microsoft Software License Terms, select **I have read, understood, and agree with the license terms**, and then select **Next**.
 
-4. On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+4. On the **Select installation location** page, accept the default value, enter a new location or browse to one. Then select **Next**.
 
    > [!NOTE]
    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager. For all later releases (1801, 1807, 2019 and 2022), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
    >
 
-5. On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify prerequisites again** to recheck the system.
+5. On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and select **Verify prerequisites again** to recheck the system.
 
    > [!NOTE]
    > Microsoft SQL Server Full Text Search must be enabled on the SQL Server hosting the OperationsManager and OperationsManagerDW databases.
 
-6. If the Prerequisites checker does not return any other errors or warnings that have to be addressed, click **Next**.
+6. If the Prerequisites checker doesn't return any other errors or warnings that have to be addressed, select **Next**.
 
-7. On the **Configuration, Configure Operations Manager accounts** page, enter the domain account or Local System credentials for the System Center Configuration and Data Access service accounts, and then click **Next**.
+7. On the **Configuration, Configure Operations Manager accounts** page, enter the domain account or Local System credentials for the System Center Configuration and Data Access service accounts, and select **Next**.
 
    > [!IMPORTANT]
-   > If you receive a message about using the wrong version of SQL Server, or experience a problem with the SQL Server Windows Management Instrumentation (WMI) provider, you can resolve this. Open a Command Prompt window by using the **Run as administrator** option. Then run the following command, replace the *\<path>* placeholder with the location of Microsoft SQL Server:
+   > If you receive a message about using the wrong version of the SQL Server, or experience a problem with the SQL Server Windows Management Instrumentation (WMI) provider, you can resolve this. Open a Command Prompt window by using the **Run as administrator** option. Then run the following command; replace the *\<path>* placeholder with the location of Microsoft SQL Server:
    >
    > **mofcomp.exe \<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof**
 
-8. When the **Ready to Upgrade** page appears, review the upgrade summary, and then click **Upgrade**.
+8. When the **Ready to Upgrade** page appears, review the upgrade summary, and select **Upgrade**.
 
 ### To upgrade a single-server management group from the Command Prompt
 
-1.  Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1.  Sign in to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
 2.  Open an elevated Command Prompt by using the **Run as Administrator** option.
 
@@ -99,15 +99,15 @@ When you upgrade a single-server management group, all features that are install
     > [!TIP]
     > If you want to upgrade a specific component, you can add `/components: <component name1> [<, component name2>][ <, component name3>]`
 
-    After you have upgraded your single-server management group, you can upgrade the agents.
+    After you've upgraded your single-server management group, you can upgrade the agents.
 
 ## Verifying the upgrade
 
 ### To confirm the health of the management server
 
-1. In the Operations console, in the navigation pane, click **Administration**.
+1. In the Operations console, in the navigation pane, select **Administration**.
 
-2. Under **Device Management**, click **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the Health State column.
+2. Under **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you installed with a green check mark in the Health State column.
 
 ## Next steps
 
