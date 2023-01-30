@@ -7,7 +7,7 @@ ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ---
 
 # Add VM Disk
@@ -18,9 +18,9 @@ manager: carmonm
 
 ::: moniker-end
 
-The **Add VM Disk** activity adds a disk to the user image repository. It is part of the **Azure Virtual Machine Disks** category activity.
+The **Add VM Disk** activity adds a disk to the user image repository. It's part of the **Azure Virtual Machine Disks** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Add required properties
 
