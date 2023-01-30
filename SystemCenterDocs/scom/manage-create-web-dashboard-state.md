@@ -4,7 +4,7 @@ title: How to create a dashboard with the State widget in the Web console
 description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Health State widget.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/22/2022
 ms.custom: na
 ms.prod: system-center
@@ -33,30 +33,30 @@ System Center Operations Manager Web console provides a monitoring interface for
 ## Add widget to dashboard
 
 1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
-2. From the left pane in the Web console, click **+ New dashboard**.
+2. From the left pane in the Web console, select **+ New dashboard**.
 
-    ![Select New Dashboard in Web console](./media/create-web-dashboard-alerts/web-console-new-dashboard-01.png)
+    ![Screenshot showing select New Dashboard in Web console.](./media/create-web-dashboard-alerts/web-console-new-dashboard-01.png)
 
 3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
 
-    ![Specify name and description for new dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
+    ![Screenshot showing Specify name and description for new dashboard.](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
 
-4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** drop-down list or you can save the dashboard by creating a new management pack by clicking **New** next to the **Management Pack** drop-down list and provide a name, description and optionally a version number.
+4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** dropdown list or you can save the dashboard by creating a new management pack by selecting **New** next to the **Management Pack** dropdown list and provide a name, description, and optionally a version number.
 
-    ![Specify name and description for new MP](./media/create-web-dashboard-alerts/web-console-new-dashboard-03.png)
+    ![Screenshot showing Specify name and description for new MP.](./media/create-web-dashboard-alerts/web-console-new-dashboard-03.png)
 
-5. When you have completed specifying where to save the new dashboard to, click **OK**.
-6. Click **Save** after providing a name and description for the new dashboard.
-7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard** and **View in fullscreen** options on the top of the page.
+5. When you've completed specifying where to save the new dashboard to, select **OK**.
+6. Select **Save** after providing a name and description for the new dashboard.
+7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard**, and **View in fullscreen** options on the top of the page.
 
-    ![New dashboard canvas](./media/create-web-dashboard-alerts/web-console-new-dashboard-04.png)
+    ![Screenshot showing New dashboard canvas.](./media/create-web-dashboard-alerts/web-console-new-dashboard-04.png)
 
-8. Select **State Widget** from the **Select Widget** drop-down list.
-9. In the State widget pane, select scope for the widget by clicking either **Groups** or **Class**.
+8. Select **State Widget** from the **Select Widget** dropdown list.
+9. In the State widget pane, select scope for the widget by selecting either **Groups** or **Class**.
 
-    ![Select scope for State widget](./media/create-web-dashboard-state/web-console-new-dashboard-state.png)
+    ![Screenshot showing Select scope for State widget.](./media/create-web-dashboard-state/web-console-new-dashboard-state.png)
 
-    For either option selected, you can search by keyword in the list.  As you begin typing, the list filters based on your input.  You can select an individual group or class or multiple from the returned results.
+    For either option selected, you can search by keyword in the list. As you begin typing, the list filters based on your input.  You can select an individual group or class or multiple from the returned results.
 
 10. Set the criteria to identify the health state to display.  To narrow the results, you can filter by selecting the following:
     * By all health states or a specific state
@@ -64,14 +64,14 @@ System Center Operations Manager Web console provides a monitoring interface for
 
     Data matching the defined criteria will only be displayed in the widget.
 
-    ![Set criteria for Alert widget](./media/create-web-dashboard-state/web-console-new-dashboard-state-02.png)
+    ![Screenshot showing Set criteria for Alert widget.](./media/create-web-dashboard-state/web-console-new-dashboard-state-02.png)
 
-11. Select **Display** to choose the columns to be displayed in the dashboard.  You can select or search for the columns from the drop-down list.  
-12. Complete the configuration by providing a **Name**, **Description** and **Widget refresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
+11. Select **Display** to choose the columns to be displayed in the dashboard.  You can select or search for the columns from the dropdown list.  
+12. Complete the configuration by providing a **Name**, **Description**, and **Widget refresh interval** (default interval is 5 minutes) for the widget. Select **Save Widget** to save your new dashboard.  
 
 After the widget has been created, it displays health state of the objects based on the scope and criteria defined. You see the name of the state widget along with the number of objects in the header of the widget. Objects can also be filtered in the widget by searching for a keyword in the filter box.
 
-![Completed example of State widget in dashboard](./media/create-web-dashboard-state/web-console-new-dashboard-state-03.png)
+![Screenshot showing Completed example of State widget in dashboard.](./media/create-web-dashboard-state/web-console-new-dashboard-state-03.png)
 
 When you select an object in the widget, it presents the Monitoring Object details page and from here you can view:
 
@@ -81,7 +81,7 @@ When you select an object in the widget, it presents the Monitoring Object detai
 * Classes
 * Effective configuration of the rules and monitors running on the target device or system
 
-![Monitored object details page](./media/create-web-dashboard-state/monitored-object-details.png)
+![Screenshot showing Monitored object details page.](./media/create-web-dashboard-state/monitored-object-details.png)
 
 To learn more about the effective configuration feature, see [View configuration of a monitored object](manage-view-effective-configuration.md).
 
@@ -91,10 +91,10 @@ For one or more monitored objects selected in the widget, you can perform such a
 - Export the alerts to Excel for further analysis
 - Modify how the alerts are presented by included or excluding columns or how to group alerts, customized to your personal needs
 
-To perform these actions, hover your mouse over the widget and click on the ellipse **...** on the top right corner of the widget.  This will display actions available for the widget.  
+To perform these actions, hover your mouse over the widget and click on the ellipsis **...** on the top right corner of the widget.  This will display actions available for the widget.  
 
    * Select **Export to Excel** to export the alert data to an Excel file.
-   * Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Click **Save personalization** when you have completed making your changes.  
+   * Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Select **Save personalization** when you have completed making your changes.  
 
 :::moniker range="sc-om-2019"
 
@@ -106,9 +106,9 @@ To perform these actions, hover your mouse over the widget and click on the elli
 
 State widget now supports sort by option.
 
-In earlier releases, this feature is not available for State widget, and on all H5 dashboard personalization but is available on all views of operations console of Operations Manager 2019.
+In earlier releases, this feature isn't available for State widget, and on all H5 dashboard personalization but is available on all views of operations console of Operations Manager 2019.
 
-With Operations Manager 2019 UR3 and later, you can sort the results columns in the State widget, also group the columns. For more information, see [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+With Operations Manager 2019 UR3 and later, you can sort the results columns in the State widget, and also group the columns. For more information, see [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
 
 ::: moniker-end
 
@@ -118,10 +118,10 @@ With Operations Manager 2019 UR3 and later, you can sort the results columns in 
 
 State widget supports sort by option.
 
-You can sort the results columns in the State widget, also group the columns. For more information, see [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
+You can sort the results columns in the State widget, and also group the columns. For more information, see [Support for Sort by option](manage-create-web-dashboard-alerts.md#support-for-sort-by-option).
 
 ::: moniker-end
 
 ## Next steps
 
-To learn how to create a dashboard in the new web console with the Topology widget, see [How create a dashboard with the Topology widget in the Web console](manage-create-web-dashboard-topology.md)
+To learn how to create a dashboard in the new web console with the Topology widget, see [How create a dashboard with the Topology widget in the Web console](manage-create-web-dashboard-topology.md).

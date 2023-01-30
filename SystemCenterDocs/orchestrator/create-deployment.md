@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: c0fc7ec4-32ab-4f96-a9cf-3a696cc512ad
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Deployment
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Create Deployment** activity uploads a new service package and creates a new deployment on staging or production. It is part of the **Azure Deployments** category activity.
+The **Create Deployment** activity uploads a new service package and creates a new deployment on staging or production. It's part of the **Azure Deployments** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create Deployment Required Properties
 
@@ -37,7 +37,7 @@ The activity publishes all of the data from the required and optional properties
 | Label   | A friendly name for the cloud service.   | String   |
 | Service Configuration File Path | The path to the service configuration file for the deployment.   | String   |
 | Service Package URL   | A URL that refers to the location of the service package in the Blob service. The service package can be located either in a storage account beneath the same subscription or a Shared Access Signature (SAS) URI from any storage account. | String   |
-| Start Deployment Immediately   | Indicates whether to start the deployment immediately after it is created.   | True, False   |
+| Start Deployment Immediately   | Indicates whether to start the deployment immediately after it's created.   | True, False   |
 | Treat Warnings as Errors   | Indicates whether to treat package validation warnings as errors. If set to true, the Create Deployment activity fails if there are validation warnings on the service package.   | True, False   |
 | Wait for Completion   | Whether to wait for this operation to complete in Azure before moving on to the next activity.   | True, False   |
 
@@ -70,7 +70,7 @@ There are no optional properties for this runbook activity.
 | Label   | A friendly name for the cloud service.   | String   |
 | Service Configuration File Path | The path to the service configuration file for the deployment.   | String   |
 | Service Package URL   | A URL that refers to the location of the service package in the Blob service. The service package can be located either in a storage account beneath the same subscription or a Shared Access Signature (SAS) URI from any storage account. | String   |
-| Start Deployment Immediately   | Indicates whether to start the deployment immediately after it is created.   | Boolean   |
+| Start Deployment Immediately   | Indicates whether to start the deployment immediately after it's created.   | Boolean   |
 | Treat Warnings as Errors   | Indicates whether to treat package validation warnings as errors. If set to true, the Create Deployment activity fails if there are validation warnings on the service package.   | Boolean   |
 | Wait for Completion   | Whether to wait for this operation to complete in Azure before moving on to the next activity.   | Boolean   |
 

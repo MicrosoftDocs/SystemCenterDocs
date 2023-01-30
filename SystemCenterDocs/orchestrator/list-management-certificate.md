@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: e62158f4-c8bd-4a51-ab8a-0deee62347fd
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # List Management Certificate
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **List Management Certificate** activity is used in a runbook to list basic information about all of the management certificates associated with the specified subscription. It is part of the **Azure Certificates** category activity.
+The **List Management Certificate** activity is used in a runbook to list basic information about all the management certificates associated with the specified subscription. It's part of the **Azure Certificates** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## List Management Certificate required properties
 

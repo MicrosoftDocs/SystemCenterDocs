@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-You can use the Rename Group activity in a runbook to rename a group in the Microsoft Active Directory.
+You can use the Rename Group activity in a runbook to rename a group in Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
@@ -40,7 +40,7 @@ The following tables list the required and optional properties and published dat
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
-| New Sam Account Name | New logon name to support earlier versions of the operating system | String   |
+| New Sam Account Name | New sign-in name to support earlier versions of the operating system | String   |
 
 ## Published data for Rename Group activity
 
@@ -48,4 +48,4 @@ The following tables list the required and optional properties and published dat
 |:---|:---|:---|
 | New Common Name   | New common name for the group   | String   |
 | Distinguished Name   | Distinguished name of the group   | String   |
-| New Sam Account Name | New logon name to support earlier versions of the operating system | String   |
+| New Sam Account Name | New sign-in name to support earlier versions of the operating system | String   |

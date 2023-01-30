@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 653f1f13-751b-48aa-b5aa-ad3ac5ddbaa8
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete Management Certificate
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Delete Management Certificate** activity is used in a runbook to delete a certificate from the list of management certificates. It is part of the **Azure Certificates** category activity.
+The **Delete Management Certificate** activity is used in a runbook to delete a certificate from the list of management certificates. It's part of the **Azure Certificates** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Delete Management Certificate Required Properties
 

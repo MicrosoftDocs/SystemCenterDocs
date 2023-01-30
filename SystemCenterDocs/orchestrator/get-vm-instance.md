@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: db87de08-2b60-48da-b908-23d0b83f5146
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get VM instance
@@ -23,9 +23,9 @@ manager: evansma
 
 ::: moniker-end
 
-The **Get VM Instance** activity retrieves the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
+The **Get VM Instance** activity retrieves the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get VM Instance Required Properties
 

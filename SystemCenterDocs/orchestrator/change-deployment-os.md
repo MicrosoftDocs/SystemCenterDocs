@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 88be6019-d575-4212-b57e-a0fe71f19090
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Change Deployment OS
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Change Deployment OS** activity changes the underlying guest operating system of a deployment. It is part of the **Azure Deployments** category activity.
+The **Change Deployment OS** activity changes the underlying guest operating system of a deployment. It's part of the **Azure Deployments** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Change Deployment OS Required Properties
 
