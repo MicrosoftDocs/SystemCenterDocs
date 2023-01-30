@@ -192,7 +192,7 @@ For more information, see [certificate templates](/previous-versions/windows/it-
    |Request Handling| 1. **Purpose**: Select **Signature and encryption** from the dropdown.</br> 2. Select **Allow private key to be exported** checkbox.|
    |Cryptography| 1. **Provider Category**: Select Legacy Cryptography Service Provider</br> 2. **Algorithm name**: Select Determined by CSP from the dropdown.</br> 3. **Minimum Key size**: 2048 or 4096 as per Organization security requirement.</br> 4. **Providers**: Select **Microsoft RSA channel Cryptographic Provider** and **Microsoft Enhanced Cryptographic Provider v1.0** from the dropdown.|
    |Extensions| 1. Under **Extensions included in this template**, select **Application Policies** and then select **Edit**</br> 2. **Edit Application Policies Extension** dialog opens.</br> 3. Under **Application policies:**, select **IP security IKE intermediate** and then select **Remove**</br> 4. Select **Add** and then select the **Client Authentication** and **Server Authentication** under **Application policies**.</br> 5. Select **OK**.</br> 6. Select **Key Usage** and **Edit**.</br> 7. Ensure **Digital signature** and **Allow key exchange only with key encryption (key encipherment)** are selected. </br>8. Select **Make this extension critical** checkbox and select **OK**.|
-   |Security| 1. Ensure that the **Authenticated Users** group has **Read** and **Enroll** permissions and select **Apply** to create the template.|
+   |Security| 1. Ensure that the **Authenticated Users** group (or Computer object) has **Read** and **Enroll** permissions and select **Apply** to create the template.|
 
 ### Add the template to the Certificate Templates folder
 

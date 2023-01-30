@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: c361dda5-c55c-4743-8053-1bdf57667fa3
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Affinity Group
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Create Affinity Group** activity creates a new affinity group for the specified subscription. It is part of the **Azure Cloud Services** category activity.
+The **Create Affinity Group** activity creates a new affinity group for the specified subscription. It's part of the **Azure Cloud Services** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create Affinity Group Required Properties
 

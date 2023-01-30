@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: f142536a-1a83-42d6-aab3-9ad72799942e
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Add VM Instance
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Add VM Instance** activity adds a virtual machine to an existing deployment. It is part of the Azure Virtual Machines category activity.
+The **Add VM Instance** activity adds a virtual machine to an existing deployment. It's part of the Azure Virtual Machines category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Add VM Instance Required Properties
 

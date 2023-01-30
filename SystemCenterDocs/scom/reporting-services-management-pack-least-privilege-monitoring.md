@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Least-Privilege Monitoring Configuration
 
-This section explains how to configure least-privilege monitoring in Management Pack for SQL Server Reporting Services.
+This article explains how to configure least-privilege monitoring in Management Pack for SQL Server Reporting Services.
 
 ## Active Directory
 
@@ -40,21 +40,21 @@ To configure permissions on an instance of SQL Server Reporting Services, perfor
 
 1. Open a web browser and connect to SSRS Report Manager.
 
-2. Click **Site Settings** in the upper-right corner of the page to navigate to the **Site Settings** page.
+2. Select **Site Settings** in the upper-right corner of the page to navigate to the **Site Settings** page.
 
-3. Click **Security** on the left side of the **Site Settings** page.
+3. Select **Security** on the left side of the **Site Settings** page.
 
-4. Click **New Role Assignment**.
+4. Select **New Role Assignment**.
 
-5. On **New Role Assignment** enter the group name (**<Your Domain\>\\SSRSMPLowPriv**) and select the **System Administrator** checkbox.
+5. On **New Role Assignment**, enter the group name (**<Your Domain\>\\SSRSMPLowPriv**) and select the **System Administrator** checkbox.
 
-6. Click **OK**.
+6. Select **OK**.
 
 ## SQL Server Reporting Services Catalog Database
 
 To configure permissions on SQL Server Reporting Services Catalog Database, perform the following steps:
 
-1. In SQL Server Management Studio, for the instance of SQL Server Database Engine that hosts SSRS Catalog Database, create a login for **SSRSMPLowPriv**.
+1. In SQL Server Management Studio, for the instance of SQL Server Database Engine that hosts SSRS Catalog Database, create a sign-in for **SSRSMPLowPriv**.
 
 2. Create a **SSRSMPLowPriv** user in both SSRS Catalog and Temporary databases.
 
@@ -64,7 +64,7 @@ To configure permissions on SQL Server Reporting Services Catalog Database, perf
 
 To configure System Center Operations Manager, perform the following steps:
 
-1. Import [Management Pack for SQL Server](sql-server-management-pack-management-pack-delivery.md) if it has not been imported.
+1. Import [Management Pack for SQL Server](sql-server-management-pack-management-pack-delivery.md) if it hasn't been imported.
 
 2. Create **SSRSMonitoring**, **SSRSDiscovery** and **SSRSSDK**  Run As accounts with the **Windows** account type. For more information about how to create a Run As account, see [How to create a Run As account and associate with a Run As profile](manage-security-create-runas-link-profile.md). For more information about various Run As Account types, see [Managing Run As accounts and profiles](manage-security-maintain-runas-profiles.md).
 
@@ -77,7 +77,7 @@ To configure System Center Operations Manager, perform the following steps:
     - Instruct the **Microsoft SQL Server SDK Run As Profile** Run As profile to use the **SSRSSDK** Run As account.
 
 >[!NOTE]
->**Microsoft SQL Server on Windows (Discovery)** uses the same Run As Profiles; make sure to adjust the low-privilege configuration for this pack as well.
+>**Microsoft SQL Server on Windows (Discovery)** uses the same Run As Profiles; ensure to adjust the low-privilege configuration for this pack as well.
 
 ### Permissions on System Center Operations Manager
 
@@ -89,10 +89,10 @@ To configure permissions on System Center Operations Manager Management Server, 
 
 3. Open the **User Roles** view (located under the **Security** folder).
 
-4. Right-click the **Operations Manager Operators** role and select **Properties**.
+4. Select and hold the **Operations Manager Operators** role and select **Properties**.
 
-5. On the **General Properties** tab, click **Add**.
+5. On the **General Properties** tab, select **Add**.
 
-6. Find the **SSRSSDK** user and click **OK**.
+6. Find the **SSRSSDK** user and select **OK**.
 
-7. Click **OK**.
+7. Select **OK**.

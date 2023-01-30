@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 5c12e8ec-fdc2-40c9-b217-5f598f9b93ad
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Add Service Certificate
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Add Service Certificate** activity is used in a runbook to add a certificate to a cloud service. It is part of the **Azure Certificates** category activity.
+The **Add Service Certificate** activity is used in a runbook to add a certificate to a cloud service. It's part of the **Azure Certificates** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Add Service Certificate Required Properties
 
