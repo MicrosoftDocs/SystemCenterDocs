@@ -1,6 +1,6 @@
 ---
 title: Get Move Request Statistics
-description: You can use the Get Move Request Statistics activity to retrieve statistical information about existing move requests for an on-premise environment.
+description: You can use the Get Move Request Statistics activity to retrieve statistical information about existing move requests for an on-premises environment.
 ms.custom: na
 ms.date: 4/25/2017
 ms.prod: system-center
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 62e227c1-8233-4201-8bc1-cfbd4aa70f9e
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Move Request Statistics
@@ -23,7 +23,7 @@ manager: evansma
 
 ::: moniker-end
 
-You can use the Get Move Request Statistics activity to retrieve statistical information about existing move requests for an on-premise environment.
+You can use the Get Move Request Statistics activity to retrieve statistical information about the existing move requests for an on-premises environment.
 
 The following tables list the optional properties, filters, and published data for this activity.
 
@@ -115,8 +115,8 @@ This activity has no required properties.
 | Items Transferred   | Items transferred.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
 | Percent Complete   | Percent complete.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
 | Completed Request Age Limit   | Age limit of a completed request. <br>Format: d.hh:mm:ss where d = days, h = hours, m = minutes, and s = seconds.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
-| Position In Queue   | Position in Queue.   | Equals<br>Does not equal<br>Contains<br>Does not cotain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with   |
-| Failure Code   | Failure code.   | Equals<br>Does not equal<br>Contains<br>Does not cotain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with   |
+| Position In Queue   | Position in Queue.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with   |
+| Failure Code   | Failure code.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with   |
 | Failure Type   | Failure type.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br> Starts with<br>Ends with |
 | Failure Side   | Failure side.<br>Can be one of:<br>None <br>Source <br>Target   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern <br>Starts with<br>Ends with |
 | Message   | Message   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern <br>Starts with<br>Ends with |

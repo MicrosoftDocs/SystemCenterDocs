@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: d3f20506-1362-4290-af79-ef3f6d0f1b05
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Run Exchange PowerShell Command
@@ -49,5 +49,5 @@ The following tables list the required properties and published data for this ac
 | Is Exchange Command   | Indicates if the command is to be run against the configured Exchange server.   | String   |
 | Skip CA Check   | Indicates whether the client validates that the server certificate is signed by a trusted certification authority (CA) when connecting over Hypertext Transfer Protocol by using a Secure Socket Layer.   | String   |
 | Skip CN Check   | Indicates whether the client validates that the certificate common name (CN) of the server matches the hostname of the server.   | String   |
-| Skip Revocation Check   | Indicates whether the connection does not validate the revocation status of the server certificate.   | String   |
+| Skip Revocation Check   | Indicates whether the connection doesn't validate the revocation status of the server certificate.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |

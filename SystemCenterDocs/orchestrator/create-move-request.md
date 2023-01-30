@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 346a8baa-10d7-4d04-931e-82f12ebf6c58
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Move Request
@@ -37,7 +37,7 @@ The following tables list the required properties, optional properties, and publ
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
-| Accept Large Data Loss   | Specifies that a large amount of data loss is acceptable if the Bad Item Limit property is set to 51 or higher. An item is considered corrupted if it cannot be read from the source database or cannot be written to the target database. Corrupted items will not be available in the destination mailbox or .pst file. <br>Default is True, when selected.   | True, False   |
+| Accept Large Data Loss   | Specifies that a large amount of data loss is acceptable if the Bad Item Limit property is set to 51 or higher. An item is considered corrupted if it can't be read from the source database or can't be written to the target database. Corrupted items won't be available in the destination mailbox or .pst file. <br>Default is True, when selected.   | True, False   |
 | Archive Domain   | Specifies the fully qualified domain name (FQDN) of the external domain to which the archive is moved. This property is used to move the archive to a cloud-based service.   | String   |
 | Archive Only   | Specifies that only the personal archive associated with the mailbox is to be moved. This property cannot be set to True when the Primary Only property is True.<br>Default is True, when selected.   | True, False   |
 | Archive Target Database   | Specifies the target database for the new location of the personal archive. If a target database is not specified, the archive is moved to the same database as the primary mailbox. If a target database is not specified and the Archive Only property is True, the archive is moved to the homeMDB attribute of the primary mailbox. <br>This can be one of the following value types:<br>GUID of the database<br>Database name   | String   |
@@ -48,8 +48,8 @@ The following tables list the required properties, optional properties, and publ
 | Ignore Rule Limit Errors   | Specifies that the command will not move the user's rules to the target server that runs Exchange.<br>Default is True, when selected.   | True, False   |
 | MRS Server   | Specifies the FQDN of the Client Access server that runs the Microsoft Exchange Mailbox Replication service (MRS). This property is used for debugging purposes only.   | String   |
 | Outbound   | Specifies that a cross-forest mailbox move is to be initiated from the source forest. <br>Default is True, when selected.   | True, False   |
-| Primary Only   | Specifies that the command will only move the primary mailbox and will not move the personal archive. This property cannot be set to True when the Archive Only property is True.<br>Default is True, when selected.   | True, False   |
-| Remote   | Specifies that the move is outside the organization and that this move is being initiated from the target forest. This property cannot be set to True when the Outbound property is True.<br>Default is True, when selected.   | True, False   |
+| Primary Only   | Specifies that the command will only move the primary mailbox and will not move the personal archive. This property can't be set to True when the Archive Only property is True.<br>Default is True, when selected.   | True, False   |
+| Remote   | Specifies that the move is outside the organization and that this move is being initiated from the target forest. This property can't be set to True when the Outbound property is True.<br>Default is True, when selected.   | True, False   |
 | Remote Archive Target Database   | Specifies the name of the target database in the remote forest for the new location of the personal archive. Use this property to move users with archives from the local forest to a remote forest. For moves from a remote forest to the local forest, use the Archive Target Database property.<br>When you use this property, you must also specify the Remote or Remote Legacy property.   | String   |
 | Remote Credential Password   | Specifies the password for the administrator identified in the Remote Credential User Name property.   | String   |
 | Remote Credential User Name   | Specifies user name for an administrator who has permission to perform the mailbox move.   | String   |
@@ -57,9 +57,9 @@ The following tables list the required properties, optional properties, and publ
 | Remote Host Name   | Specifies the FQDN of the cross-forest organization from which you are moving the mailbox.   | String   |
 | Remote Legacy   | Specifies that this mailbox move is from a remote forest that does not have Exchange 2010 installed. <br>Default is True, when selected.   | True, False   |
 | Remote Target Database   | Specifies the name of the target database in the remote forest. Use this property to move mailboxes from the local forest to a remote forest. For moves from a remote forest to the local forest, use the Target Database property.<br>When you use this property, you must also specify the Remote or Remote Legacy property.   | String   |
-| Suspend   | Specifies whether to suspend the request. If you enable this property, the move request will be queued but will not reach the status of InProgress until the request is resumed.<br>Default is True, when selected.   | True, False   |
+| Suspend   | Specifies whether to suspend the request. If you enable this property, the move request will be queued but won't reach the status of InProgress until the request is resumed.<br>Default is True, when selected.   | True, False   |
 | Suspend Comment   | Specifies the reason for suspending the move request or other related comment. This property can only be used when the Suspend property is True.   | String   |
-| Suspend When Ready To Complete   | Specifies whether to suspend the move request before it reaches the status of CompletionInProgress. After the move is suspended per this setting, it has a status of AutoSuspended. The move can then be manually completed with the Resume-MoveRequest command.<br>You can only use the Suspend When Ready To Complete property for online mailbox moves and when moving mailboxes from Exchange Server 2007 or Exchange 2010 mailbox databases. You cannot use this property for offline moves or when moving from Exchange Server 2003 mailbox databases. <br>Default is True, when selected.   | True, False   |
+| Suspend When Ready To Complete   | Specifies whether to suspend the move request before it reaches the status of CompletionInProgress. After the move is suspended per this setting, it has a status of AutoSuspended. The move can then be manually completed with the Resume-MoveRequest command.<br>You can only use the Suspend When Ready To Complete property for online mailbox moves and when moving mailboxes from Exchange Server 2007 or Exchange 2010 mailbox databases. You can't use this property for offline moves or when moving from Exchange Server 2003 mailbox databases. <br>Default is True, when selected.   | True, False   |
 | Target Database   | Specifies the identity of the database to which the mailbox is being moved. If the target database is not specified, the command uses the automatic mailbox distribution logic to determine the target database. This can be one of the following value types:<br>GUID of the database<br>Database name   | String   |
 | Target Delivery Domain   | Specifies the FQDN of the external email address that this move request creates in the source forest for the mail-enabled user. This property is allowed only to perform remote moves with the Remote or RemoteLegacy property.   | String   |
 

@@ -1,6 +1,6 @@
 ---
 title: Remove Mailbox
-description: You can use the Remove Mailbox activity to delete an existing mailbox and the Active Directory user that is associated with that mailbox, in an on-premise or online Exchange environment.
+description: You can use the Remove Mailbox activity to delete an existing mailbox and the Active Directory user that is associated with that mailbox, in an on-premises or online Exchange environment.
 ms.custom: na
 ms.date: 12/02/2016
 ms.prod: system-center
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 57ac9277-f810-4efe-a8a4-dd01829113e7
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Remove Mailbox
@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-You can use the Remove Mailbox activity to delete an existing mailbox and the Active Directory user that is associated with that mailbox, in an on-premise or online Exchange environment. For an environment such as Microsoft 365, the Remove Mailbox activity can be used to delete a mailbox.
+You can use the Remove Mailbox activity to delete an existing mailbox and the Active Directory user that is associated with that mailbox in an on-premises or online Exchange environment. For an environment such as Microsoft 365, the Remove Mailbox activity can be used to delete a mailbox.
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
@@ -41,11 +41,11 @@ The following tables list the required properties, optional properties, and publ
 | Arbitration   | Specifies that the mailbox for which the command is executed is an arbitration mailbox. Arbitration mailboxes are used for managing approval workflow. For example, an arbitration mailbox is used for handling moderated recipients and distribution group membership approval.<br>Default is value True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 | Database   | Specifies the database that contains the mailbox object to be removed.<br>This property accepts the following value types:<br>GUID<br>Database name<br>Use in conjunction with the StoreMailboxIdentity type when you have disconnected a mailbox from its associated user and want to remove the mailbox object from the Exchange store. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Domain Controller   | Specifies the fully qualified domain name (FQDN) of the domain controller that writes this configuration change to Active Directory. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
-| Ignore Default Scope   | Instructs the command to ignore the default recipient scope setting for the Exchange Management Shell session and use the entire forest as the scope. This allows the command to access Active Directory objects that aren't currently in the default scope. <br>The Ignore Default Scope property introduces the following restrictions:<br>Domain Controller property cannot be used. The command uses an appropriate global catalog server automatically.<br>Only the DN for the Identity property can be used. Other forms of identification, such as alias or GUID, are not accepted.<br>Default value is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br> | True, False   |
-| Ignore Legal Hold   | Ignores the legal hold status of the mail user and allows you to remove the mailbox that's on legal hold. After a mailbox is removed, it cannot be included in a discovery search. Depending on the configured properties, removed mailboxes are either purged immediately or when the deleted mailbox retention period expires. Check with your organization's policy or Human Resources department before you disable a mailbox that's on legal hold.<br>Default value is True, when selected. <br><br><strong>Note </strong><br> This property is not available in the Live@edu environment. <br><br>   | True, False   |
-| Keep Windows Live ID (Live@edu only)   | Preserves the Windows Live ID that's associated with the deleted mailbox. This property applies to objects in the cloud-based service. It is not available for on-premises deployments.<br>Default value is True, when selected. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
+| Ignore Default Scope   | Instructs the command to ignore the default recipient scope setting for the Exchange Management Shell session and use the entire forest as the scope. This allows the command to access Active Directory objects that aren't currently in the default scope. <br>The Ignore Default Scope property introduces the following restrictions:<br>Domain Controller property cannot be used. The command uses an appropriate global catalog server automatically.<br>Only the DN for the Identity property can be used. Other forms of identification, such as alias or GUID, aren't accepted.<br>Default value is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br> | True, False   |
+| Ignore Legal Hold   | Ignores the legal hold status of the mail user and allows you to remove the mailbox that's on legal hold. After a mailbox is removed, it can't be included in a discovery search. Depending on the configured properties, removed mailboxes are either purged immediately or when the deleted mailbox retention period expires. Check with your organization's policy or Human Resources department before you disable a mailbox that's on legal hold.<br>Default value is True, when selected. <br><br><strong>Note </strong><br> This property isn't available in the Live@edu environment. <br><br>   | True, False   |
+| Keep Windows Live ID (Live@edu only)   | Preserves the Windows Live ID that's associated with the deleted mailbox. This property applies to objects in the cloud-based service. It isn't available for on-premises deployments.<br>Default value is True, when selected. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
 | Permanent   | Use this in conjunction with the Identity type to specify whether to disconnect the mailbox from the user, to remove the associated user object from Active Directory, and to remove the mailbox object from the Exchange database. Default value is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
-| Remove Last Arbitration Mailbox Allowed | Indicates whether it is allowed to remove the last Arbitration Mailbox.<br>Default value is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True or<br>False |
+| Remove Last Arbitration Mailbox Allowed | Indicates whether it's allowed to remove the last Arbitration Mailbox.<br>Default value is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True or<br>False |
 
 ## Published data for Remove Mailbox activity
 

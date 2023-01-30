@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 8172f3a7-8890-4ef1-9c0f-ff6d81ec9f33
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Remote Mailbox (Hybrid)
@@ -41,7 +41,7 @@ This activity has no required properties.
 | Archive   | Specifies whether to return information about the recipient's archive mailbox.   | True, False   |
 | Domain Controller   | Specifies the fully qualified domain name (FQDN) of the domain controller that retrieves data from Active Directory.   | String   |
 | Identity   | Identifies the remote mailbox. The remote mailbox identity can be one the following value types:<br>GUID <br>Distinguished name (DN)<br>Domain\\Account <br>User principal name (UPN)<br>LegacyExchangeDN<br>SmtpAddress<br>Alias   | String   |
-| Ignore Default Scope   | Instructs the command to ignore the default recipient scope setting for the Exchange Management Shell session and to use the entire forest as the scope. This allows the command to access the Active Directory objects that are not currently in the default scope. Using this property introduces the following restrictions:<br>You cannot use the Domain Controller property. The command uses an appropriate global catalog server automatically.<br>You can only use the DN for the Identity property. Other forms of identification, such as alias, are not accepted.<br>You cannot use the On Premises Organizational Unit and Identity properties together.<br>You cannot use the User Name and Password properties. | True, False   |
+| Ignore Default Scope   | Instructs the command to ignore the default recipient scope setting for the Exchange Management Shell session and to use the entire forest as the scope. This allows the command to access the Active Directory objects that are not currently in the default scope. Using this property introduces the following restrictions:<br>You cannot use the Domain Controller property. The command uses an appropriate global catalog server automatically.<br>You can only use the DN for the Identity property. Other forms of identification, such as alias, are not accepted.<br>You can't use the On Premises Organizational Unit and Identity properties together.<br>You cannot use the User Name and Password properties. | True, False   |
 | On-Premises Organizational Unit | Specifies a container in the on-premises organization in which to limit the results. You can specify either an organizational unit (OU) or a domain. The canonical name should be specified, such as,<br>OU: westcoast.contoso.com/users <br>Domain: westcoast.contoso.com   | String   |
 | Read From Domain Controller   | Specifies that the user information is read from a domain controller in the user's domain. If you set the recipient scope to include all recipients in the forest and do not use this property, it is possible that the user information is read from a global catalog with outdated information. If you use this property, multiple reads might be necessary in order to get the information.<br>By default, the recipient scope is set to the domain that hosts your servers that run Exchange.   | True, False   |
 | Result Size   | Specifies the maximum number of results to return. If you want to return all mailboxes that match the query, use **unlimited** for the value of this property. The default value is **unlimited**.   | String   |

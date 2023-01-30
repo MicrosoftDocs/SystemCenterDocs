@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 1e5f6075-259b-426b-97c9-a934d155f665
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Mailbox
@@ -25,7 +25,7 @@ manager: evansma
 
 You can use the Get Mailbox activity to retrieve the attributes and objects for a mailbox in an on-premises or online environment. The Get Mailbox activity lets you filter against various mailbox attributes.
 
-This activity calls the Exchange Get-Mailbox PowerShell cmdlet to do the underlying work. For more information, see [this article](/powershell/module/exchange/get-mailbox) about the Get-Mailbox cmdlet that shares the same parameters set.
+This activity calls the Exchange Get-Mailbox PowerShell cmdlet to do the underlying work. For more information, see [this article](/powershell/module/exchange/get-mailbox) about the Get-Mailbox cmdlet that shares the same parameter set.
 
 The following tables list the required properties, filters, optional properties, and published data for this activity.
 
@@ -37,7 +37,7 @@ This activity has no required properties.
 
 The values in this section are used to filter the results returned from the underlying call to the Exchange Get-Mailbox PowerShell cmdlet.
 
-The filter values mentioned here only filters the returned results from the cmdlet and don't pass any values specified here as parameters to the underlying cmdlet.
+The filter values mentioned here only filter the returned results from the cmdlet and don't pass any values specified here as parameters to the underlying cmdlet.
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|

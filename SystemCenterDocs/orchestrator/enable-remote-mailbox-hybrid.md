@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: cb690bb4-e07e-4a9f-9f19-2886c9a8fec4
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ---
 
 # Enable Remote Mailbox (Hybrid)
@@ -45,7 +45,7 @@ The following tables list the required properties, optional properties, and publ
 | Equipment              | Specifies the new mailbox as equipment if this mailbox is a resource mailbox.<br>Default is True, when selected.                                                                                                                                                                        | True, False      |
 | Primary SMTP Address   | Primary SMTP address for the mailbox.                                                                                                                                                                                                                                                   | String           |
 | Room                   | Specifies the new mailbox as a room, if this mailbox is a resource mailbox. Default is True, when selected.                                                                                                                                                                             | True, False      |
-| Remote Routing Address | Specifies the SMTP address of the mailbox in the service that this user is associated with.<br>If you have configured mail flow between the on-premises organization and the service, you do not need to specify this property. The remote routing address is calculated automatically. | String           |
+| Remote Routing Address | Specifies the SMTP address of the mailbox in the service that this user is associated with.<br>If you've configured mail flow between the on-premises organization and the service, you do not need to specify this property. The remote routing address is calculated automatically. | String           |
 
 ## Published data for Enable Remote Mailbox (Hybrid)
 
@@ -63,7 +63,7 @@ The following tables list the required properties, optional properties, and publ
 | Archive Quota   | The archive mailbox Quota parameter.   | String   |
 | Archive Status   | The archive status (Active or None).   | String   |
 | Archive Warning Quota   | Mailbox size at which a warning message is sent.   | String   |
-| Bypass Moderation From Senders Or Members   | Senders or list members whose messages are not subject to approval.   | String   |
+| Bypass Moderation From Senders Or Members   | Senders or list members whose messages aren't subject to approval.   | String   |
 | Calendar Version Store Disabled   | Indicates whether changes to calendar items are logged.   | String   |
 | Custom Attribute 1   | Custom attribute 1.   | String   |
 | Custom Attribute 10   | Custom attribute 10.   | String   |
@@ -166,7 +166,7 @@ The following tables list the required properties, optional properties, and publ
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |
 | User Principal Name   | Principal name for the mailbox user.   | String   |
 | When Changed   | Date and time when mailbox was changed.   | Datetime   |
-| When Changed UTC   | UTC date and time when mailbox was changed.   | Datetime   |
+| When Changed UTC   | UTC date and time when the mailbox was changed.   | Datetime   |
 | When Created   | Date and time when the mailbox was created.   | Datetime   |
 | When Created UTC   | UTC date and time when the mailbox was created.   | Datetime   |
 | When Mailbox Created   | Date and time when mailbox was created.   | Datetime   |
