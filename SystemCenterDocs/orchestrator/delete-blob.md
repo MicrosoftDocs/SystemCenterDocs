@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: d22e65e3-fc99-4dfa-aaf4-c8d2796e678d
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete Blob
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Delete Blob** marks the specified blob or snapshot for deletion. It is part of the **Azure Storage** category activity.
+The **Delete Blob** marks the specified blob or snapshot for deletion. It's part of the **Azure Storage** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Delete Blob Required Properties
 

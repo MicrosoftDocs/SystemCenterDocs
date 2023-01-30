@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: db5fcc47-994c-4e79-b3b2-78c85919ae9d
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Storage Account Properties
@@ -23,7 +23,7 @@ manager: evansma
 
 ::: moniker-end
 
-The **Get Storage Account Properties** activity returns system properties for the specified storage account. It is part of the **Azure Storage** category activity.
+The **Get Storage Account Properties** activity returns system properties for the specified storage account. It's part of the **Azure Storage** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 

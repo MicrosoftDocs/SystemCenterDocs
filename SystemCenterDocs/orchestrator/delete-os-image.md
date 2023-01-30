@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 92f0d221-ffe8-4187-9e70-ecea0954174b
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete OS Image
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Delete OS Image** activity deletes the specified operating system image from your image repository. It is part of the **Azure Virtual Machine Images** category activity.
+The **Delete OS Image** activity deletes the specified operating system image from your image repository. It's part of the **Azure Virtual Machine Images** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Delete OS Image Required Properties
 
