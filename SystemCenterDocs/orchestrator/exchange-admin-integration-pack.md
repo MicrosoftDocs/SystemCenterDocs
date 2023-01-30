@@ -25,13 +25,13 @@ manager: mkluck
 
 Integration packs are add-ons for System Center - Orchestrator, a component of System Center. Integration packs help to optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and other third-party products.
 
-The Integration Pack for Exchange Admin helps to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote, or cloud-based environments in Microsoft Exchange and Microsoft 365.
+The Integration Pack for Exchange Admin helps to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premises, remote, or cloud-based environments in Microsoft Exchange and Microsoft 365.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System requirements
 
-Before you implement the Integration Pack for Exchange Admin, you must install the following softwares. For more information on how to install and configure Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
+Before you implement the Integration Pack for Exchange Admin, you must install the following software. For more information on how to install and configure Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
 
 ::: moniker range="<=sc-orch-2019"
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
@@ -84,7 +84,7 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 
 ## Register and Deploy the Integration Pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How to add an Integration Pack](how-to-add-an-integration-pack.md).
+After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How to add an Integration Pack](how-to-add-an-integration-pack.md).
 
 ## Configure the Exchange Admin Integration Pack connections
 

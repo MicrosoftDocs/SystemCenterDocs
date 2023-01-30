@@ -106,12 +106,12 @@ This activity has no required properties.
 | Total Transient Failure Duration   | Total Transient Failure duration.<br>Format: d.hh:mm:ss where d = days, h = hours, m = minutes, and s = seconds.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
 | Total Proxy Backoff Duration   | Total Proxy Backoff duration.<br>Format: d.hh:mm:ss where d = days, h = hours, m = minutes, and s = seconds.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
 | MRS Server Name   | FQDN of the Client Access server on which the instance of the Microsoft Exchange Mailbox Replication service (MRS) is running.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern <br>Starts with<br>Ends with |
-| Total Mailbox Size   | Total mailbox size.<br>It can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of: KB, MB, GB, TB. The default unit value is Byte, when it is not specified.<br>For example, 55 GB, unlimited, 77, 14 KB   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
+| Total Mailbox Size   | Total mailbox size.<br>It can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of: KB, MB, GB, TB. The default unit value is Byte, when it isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
 | Total Mailbox Item Count   | Total mailbox item count.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
-| Total Archive Size   | Total archive size.<br>It can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of: KB, MB, GB, TB. The default unit value is Byte, when unit is not specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
+| Total Archive Size   | Total archive size.<br>It can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of: KB, MB, GB, TB. The default unit value is Byte, when unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
 | Total Archive Item Count   | Total archive item count.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
-| Bytes Transferred   | Total transferred bytes. <br>It can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of: KB, MB, GB, TB. The default value is Byte, when unit is not specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
-| Bytes Transferred Per Minute   | Total bytes transferred per minute.<br>The total can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of: KB, MB, GB, TB. The default is Byte, when unit is not specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
+| Bytes Transferred   | Total transferred bytes. <br>It can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of: KB, MB, GB, TB. The default value is Byte, when unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
+| Bytes Transferred Per Minute   | Total bytes transferred per minute.<br>The total can be either "unlimited" or a string with <br>format &lt;integer&gt; &lt;unit&gt;, where unit can be one of: KB, MB, GB, TB. The default is Byte, when unit isn't specified.<br>For example, 55 GB, unlimited, 77, 14 KB.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
 | Items Transferred   | Items transferred.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
 | Percent Complete   | Percent complete.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
 | Completed Request Age Limit   | Age limit of a completed request. <br>Format: d.hh:mm:ss where d = days, h = hours, m = minutes, and s = seconds.   | Equals<br>Does not equal<br>Is less than<br>Is greater than<br>Is less than or equal to<br>Is greater than or equal to   |
@@ -138,10 +138,10 @@ This activity has no required properties.
 | Element   | Description   | Valid values |
 |:---|:---|:---|
 | Domain Controller  | Specifies the fully qualified domain name (FQDN) of the domain controller that retrieves data from Active Directory.   | String   |
-| Identity   | Specifies the identity of the mailbox or mail user. Can be one of the following value types:<br>GUID<br>Distinguished name (DN)<br>Domain\\Account <br>User principal name (UPN)<br>Legacy Exchange DN<br>SMTP address<br>Alias<br>This property cannot be used in conjunction with the Move Request Queue, MRS Instance, or Mailbox GUID properties. | String   |
+| Identity   | Specifies the identity of the mailbox or mail user. Can be one of the following value types:<br>GUID<br>Distinguished name (DN)<br>Domain\\Account <br>User principal name (UPN)<br>Legacy Exchange DN<br>SMTP address<br>Alias<br>This property can't be used with the Move Request Queue, MRS Instance, or Mailbox GUID properties. | String   |
 | Include Report   | Specifies whether to return additional details about the request, which can be used for troubleshooting.   | True, False  |
-| Mailbox GUID   | Specifies the GUID of a mailbox for which you want to view the move request statistics.<br>This property cannot be used in conjunction with the Identity property.   | String   |
-| Move Request Queue | Specifies the mailbox database on which the move request resides. You can use one of the following values:<br>GUID of the database<br>Database name<br>This property cannot be used in conjunction with the Identity or MRS Instance properties.   | String   |
+| Mailbox GUID   | Specifies the GUID of a mailbox for which you want to view the move request statistics.<br>This property cannot be used with the Identity property.   | String   |
+| Move Request Queue | Specifies the mailbox database on which the move request resides. You can use one of the following values:<br>GUID of the database<br>Database name<br>This property cannot be used with the Identity or MRS Instance properties.   | String   |
 
 ### Published data for Get Move Request Statistics
 
@@ -162,7 +162,7 @@ This activity has no required properties.
 | Display Name   | Mailbox display name.   | String   |
 | Distinguished Name   | Distinguished name for the mailbox.   | String   |
 | Do Not Preserve Mailbox Signature   | Indicates that the move does not preserve the mailbox mapping signature.   | String   |
-| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premise.   | String   |
+| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premises.   | String   |
 | Exchange GUID   | Unique identifier of the Microsoft Exchange installation.   | String   |
 | Exchange PowerShell Application   | Specifies the application name segment of the connection URI.   | String   |
 | Exchange Server Host   | Exchange Server connected.   | String   |
@@ -175,7 +175,7 @@ This activity has no required properties.
 | Final Sync Timestamp   | Timestamp for final sync.   | String   |
 | Flags   | Request flags. Can be one of:<br>CrossOrg <br>IntraOrg <br>MoveOnlyArchiveMailbox<br>MoveOnlyPrimaryMailbox <br>None <br>Offline <br>Protected <br>Pull <br>Push <br>RemoteLegacy <br>Suspend <br>SuspendWhenReadyToComplete   | String   |
 | Identity   | Identity of the object.   | String   |
-| Ignore Rule Limit Errors   | Specifies that the command does not move the user's rules to the target server running Exchange.   | String   |
+| Ignore Rule Limit Errors   | Specifies that the command doesn't move the user's rules to the target server running Exchange.   | String   |
 | Initial Seeding Completed Timestamp   | Timestamp when the move was completed.   | DateTime   |
 | Internal Flags   | Move request internal flags.   | String   |
 | Is Offline   | Indicates if this is an offline move request.   | String   |
@@ -211,7 +211,7 @@ This activity has no required properties.
 | Request Style   | Indicates whether the move request is within the same organization or between different organizations. Can be one of the following:<br>IntraOrg <br>CorssOrg   | String   |
 | Skip CA Check   | Indicates whether the client validates that the server certificate is signed by a trusted certification authority (CA) when connecting over Hypertext Transfer Protocol over Secure Socket Layer.   | String   |
 | Skip CN Check   | Indicates whether the client validates that the certificate common name (CN) of the server matches the hostname of the server.   | String   |
-| Skip Revocation Check   | Indicates whether the connection does not validate the revocation status of the server certificate.   | String   |
+| Skip Revocation Check   | Indicates whether the connection doesn't validate the revocation status of the server certificate.   | String   |
 | Source Archive Database   | Mailbox database where the mailbox archive is being moved from.   | String   |
 | Source Archive Server   | Server where the mailbox archive is being moved from.   | String   |
 | Source Archive Version   | Version of Exchange installation where the mailbox archive is being moved from.   | String   |

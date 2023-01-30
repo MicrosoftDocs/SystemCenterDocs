@@ -55,7 +55,7 @@ The following tables list the required properties, optional properties, and publ
 | Exchange PowerShell Application | The application name segment of the connection URI.   | String   |
 | Exchange Server Host   | The associated Exchange server host machine.   | String   |
 | Exchange Server Port   | The associated Exchange Server port.   | String   |
-| Exchange User Name   | The username to log on to the Exchange server.   | String   |
+| Exchange User Name   | The username to sign in to the Exchange server.   | String   |
 | Identity   | Mailbox identity.   | String   |
 | Skip CA Check   | Indicates whether the client skips the validation that the server certificate is signed by a trusted certification authority (CA) when connecting over Hypertext Transfer Protocol (HTTP) over Secure Sockets Layer (SSL). | String   |
 | Skip CN Check   | Indicates whether the client skips validation that the certificate common name (CN) of the server matches the hostname of the server.   | String   |

@@ -79,13 +79,13 @@ This Activity has no required properties.
 | Domain Controller   | The fully FQDN of the domain controller that writes this configuration change to the Active Directory.   | String   |
 | Identity   | Mailbox identity.   | String   |
 | Offline   | Indicates if this is an offline move request. The default value is True, when selected.   | True, False   |
-| Move Status   | Specifies to return "move" requests with the specified configured status.<br>Cannot be used in conjunction with Identity property. The Value range is one of the following:<br>Auto Suspended <br>Completed <br>Completed With Warning <br>Completion In Progress <br>Failed <br>In Progress <br>None <br>Queued <br>Suspended <br>Default is blank, when selected. | AutoSuspended<br>Completed CompletedWithWaring<br>CompletionInProgress<br>Failed<br>InProgress<br>None<br>Queued<br>Suspended |
+| Move Status   | Specifies to return "move" requests with the specified configured status.<br>Can't be used with Identity property. The Value range is one of the following:<br>Auto Suspended <br>Completed <br>Completed With Warning <br>Completion In Progress <br>Failed <br>In Progress <br>None <br>Queued <br>Suspended <br>Default is blank, when selected. | AutoSuspended<br>Completed CompletedWithWaring<br>CompletionInProgress<br>Failed<br>InProgress<br>None<br>Queued<br>Suspended |
 | Multi Tenant   | Specifies that the search should be performed across the entire forest, not just across the organization that's currently scoped. The default value is True, when selected   | True, False   |
 | Organization   | Specifies the organization in which the search will be performed. This filter is available for multi-tenant deployments. It isn't available for on-premises deployments.   | String   |
 | Organizational Unit   | Specifies an organizational unit (OU) and is used to limit the results.   | String   |
 | Password   | Specifies the password used by the mail user to secure the user account and the associated mailbox in the service.   | String   |
 | Protect   | Returns the moved mailboxes in protected mode. <br>Can't be used in conjunction with the Identity property. The default value is True, when selected.   | True, False   |
-| Remote Host Name   | Specifies the FQDN of the cross-forest organization from which the mailbox is moved. <br>Can't be used in conjunction with the Identity property.   | String   |
+| Remote Host Name   | Specifies the FQDN of the cross-forest organization from which the mailbox is moved. <br>Can't be used with the Identity property.   | String   |
 | Result Size   | Specifies the maximum number of results to return. If you want to return all requests that match the query, use 'unlimited' for the value of this property. The default value is 1000.   | String   |
 | Source Database   | Mailbox database where the mailbox is being moved from.   | String   |
 | Suspend   | Indicates if the request is suspended when queued. The default value is True, when selected.   | True, False   |
@@ -131,7 +131,7 @@ This Activity has no required properties.
 | Recipient Type Details   | Recipient type details.   | String   |
 | Remote Host Name   | FQDN of the cross-forest organization from which the mailbox is moved.   | String   |
 | Request Style   | Indicates whether the move request is within the same organization or between different organizations.   | String   |
-| Skip CA Check   | Indicates whether the client does not validate that the server certificate is signed by a trusted certification authority (CA), when connecting through HTTPS. It is used when the Use SSL value is True.   | String   |
+| Skip CA Check   | Indicates whether the client doesn't validate that the server certificate is signed by a trusted certification authority (CA), when connecting through HTTPS. It is used when the Use SSL value is True.   | String   |
 | Skip CN Check   | Indicates whether the certificate common name (CN) of the server and the configured hostname of the server aren't checked for being the same. It is used when the Use SSL value is True.   | String   |
 | Skip Revocation Check   | Indicates whether the revocation status of the server certificate is to be checked or not.   | String   |
 | Source Archive Database   | Mailbox database from which the mailbox archive is moved.   | String   |

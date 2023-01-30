@@ -23,9 +23,9 @@ manager: mkluck
 
 ::: moniker-end
 
-The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack. The detailed configuration topics for specific Exchange Admin activities all contain links back to these general instructions.
+The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack. The detailed configuration sections for specific Exchange Admin activities all contain links back to these general instructions.
 
-Each procedure in this topic is performed on an activity that has been placed in the runbook window of the **Orchestrator Runbook Designer**.
+Each procedure in this article is performed on an activity that has been placed in the runbook window of the **Orchestrator Runbook Designer**.
 
 ## Activity properties
 
@@ -62,13 +62,13 @@ The **Properties** tab contains properties that are specific to the activity. Al
 The **Get** activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When you specify filter criteria, you can select one of the available methods of comparison. The system provides an option to either match or not match the filter using each method. For example, the "Does not" version of a method finds items that don't match the filter. All text filters are case sensitive.
 
 -   **Equals**: The property of the item matches the text or number specified in the filter.
--   **Does not equal**: The property of the item does not match the text or number specified in the filter.
+-   **Does not equal**: The property of the item doesn't match the text or number specified in the filter.
 -   **Is less than**: The numeric property of the item is less than the number specified in the filter.
 -   **Is less than or equal to**: The numeric property of the item is less than or equal to the number specified in the filter.
 -   **Is greater than**: The numeric property of the item is greater than the number specified in the filter.
 -   **Is greater than or equal to**: The numeric property of the item is greater than or equal to the number specified in the filter.
 -   **Contains**: The property of the item contains the exact text specified in the filter. There can be other text surrounding the matching text.
--   **Does not contain**: The property of the item does not contain the exact text specified in the filter.
+-   **Does not contain**: The property of the item doesn't contain the exact text specified in the filter.
 -   **Matches pattern**: This comparison method uses regular expressions to specify a pattern that the text must match.
 -   **Does not match pattern**: This comparison method uses regular expressions to specify a pattern that the text must not match.
 -   **Starts with**: The property of the item starts with the exact text specified in the filter.
@@ -112,7 +112,7 @@ An activity can subscribe only to data from the activities that are linked befor
 2.  Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
 3.  Select the published data element that you want to use, and select **OK**.
 
-For a list of the data elements published by each activity, see the **Published Data** table in the specific activity topic. For information about the common published data items, see <span>Common Published Data</span>.
+For a list of the data elements published by each activity, see the **Published Data** table in the specific activity section. For information about the common published data items, see <span>Common Published Data</span>.
 
 ## Activities
 

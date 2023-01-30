@@ -256,7 +256,7 @@ If the value specified for any of these optional properties is empty or null, (n
 | Archive State   | Indicates the state of the mailbox archive. This parameter can be one of the following values:<br>HostedPending <br>HostedProvisioned <br>Local <br>None <br>OnPremise   | String   |
 | Archive Status   | The archive status (Active or None).   | String   |
 | Archive Warning Quota   | Mailbox size at which a warning message is sent.   | String   |
-| Audit Admin   | List of admin operations which are logged. This parameter can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
+| Audit Admin   | List of admin operations that are logged. This parameter can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
 | Audit Delegate   | List of delegate options which are logged. This parameter can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
 | Audit Enabled   | Indicates whether audit logging is enabled or disabled for the mailbox.   | String   |
 | Audit Log Age Limit   | Amount of time that the audit log entries are retained in the mailbox.   | String   |

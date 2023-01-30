@@ -45,11 +45,11 @@ The following tables list the required properties, optional properties, and publ
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
-| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premise.   | String   |
+| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premises.   | String   |
 | Exchange PowerShell Application | Specifies the application name segment of the connection URI.   | String   |
 | Exchange Server Host   | The associated Exchange server host machine.   | String   |
 | Exchange Server Port   | The associated Exchange server port.   | String   |
-| Exchange User Name   | The username to log on to the Exchange server.   | String   |
+| Exchange User Name   | The username to sign in to the Exchange server.   | String   |
 | Identity   | The identity of the remote mailbox to be disabled.   | String   |
 | Skip CA Check   | Indicates whether the client must validate that the server certificate is signed by a trusted certification authority (CA) when connecting over Hypertext Transfer Protocol over Secure Socket Layer. | String   |
 | Skip CN Check   | Indicates whether the client must validate that the certificate common name (CN) of the server matches the hostname of the server.   | String   |

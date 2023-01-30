@@ -38,7 +38,7 @@ The following tables list the required properties and published data for this ac
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
-| Command Output   | The output results from running the command. Each result consists of a collection of name-value pairs (format \[&lt;Name&gt;: &lt;Value&gt;\]) that represents the result object fields and their respective values. When the command returns multiple results, they are published as multi-valued data. | String   |
+| Command Output   | The output results from running the command. Each result consists of a collection of name-value pairs (format \[&lt;Name&gt;: &lt;Value&gt;\]) that represents the result object fields and their respective values. When the command returns multiple results, they're published as multi-valued data. | String   |
 | Command Text   | The full command text, to include the parameters.   | String   |
 | Command Warnings   | The warning stream contents that result from running the command.   | String   |
 | Exchange Environment   | The type of Exchange environment where the activity will be executed.   | String   |
