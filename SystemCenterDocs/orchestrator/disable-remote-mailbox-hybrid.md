@@ -45,7 +45,7 @@ The following tables list the required properties, optional properties, and publ
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
-| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premises.   | String   |
+| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premise.   | String   |
 | Exchange PowerShell Application | Specifies the application name segment of the connection URI.   | String   |
 | Exchange Server Host   | The associated Exchange server host machine.   | String   |
 | Exchange Server Port   | The associated Exchange server port.   | String   |

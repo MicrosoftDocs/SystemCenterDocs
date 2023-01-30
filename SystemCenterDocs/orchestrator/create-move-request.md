@@ -82,7 +82,7 @@ The following tables list the required properties, optional properties, and publ
 | Display Name   | Mailbox display name.   | String   |
 | Distinguished Name   | Distinguished name for the mailbox.   | String   |
 | Do Not Preserve Mailbox Signature   | Indicates that the move doesn't preserve the mailbox mapping signature.   | String   |
-| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. The default is On-Premises.   | String   |
+| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. The default is On-Premise.   | String   |
 | Exchange GUID   | Globally unique identifier of the Microsoft Exchange installation.   | String   |
 | Exchange PowerShell Application   | Specifies the application name segment of the connection URI.   | String   |
 | Exchange Server Host   | The connected host Exchange server.   | String   |

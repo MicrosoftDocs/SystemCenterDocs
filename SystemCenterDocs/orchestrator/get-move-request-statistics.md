@@ -162,7 +162,7 @@ This activity has no required properties.
 | Display Name   | Mailbox display name.   | String   |
 | Distinguished Name   | Distinguished name for the mailbox.   | String   |
 | Do Not Preserve Mailbox Signature   | Indicates that the move does not preserve the mailbox mapping signature.   | String   |
-| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premises.   | String   |
+| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premise.   | String   |
 | Exchange GUID   | Unique identifier of the Microsoft Exchange installation.   | String   |
 | Exchange PowerShell Application   | Specifies the application name segment of the connection URI.   | String   |
 | Exchange Server Host   | Exchange Server connected.   | String   |

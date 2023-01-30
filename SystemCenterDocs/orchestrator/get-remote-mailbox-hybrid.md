@@ -186,7 +186,7 @@ This activity has no required properties.
 | Email Address Policy Enabled   | Indicated whether the use of Address Policies is enabled.   | String   |
 | Email Addresses   | Specifies the collection of email addresses for the mailbox.   | String   |
 | End Date For Retention Hold   | Specifies the end date of the Retention Hold period.   | String   |
-| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premises.   | String   |
+| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premise.   | String   |
 | Exchange GUID   | Specifies the unique identifier of the Microsoft Exchange installation.   | String   |
 | Exchange PowerShell Application   | Specifies the application name segment of the connection URI.   | String   |
 | Exchange Server Host   | Specifies the connected Exchange Server.   | String   |
