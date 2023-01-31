@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 3d807dc8-013d-45da-9647-825ab64aba2a
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ---
 
 # Exchange Admin Integration Pack for Orchestrator in System Center
@@ -103,7 +103,7 @@ A connection establishes a reusable link between the Orchestrator and an Exchang
 7. In the **Exchange Server Port** box, enter the port that is used to communicate with the Exchange server. If you use SSL, be sure to select the appropriate port.
 8. In the **Exchange PowerShell Application** box, enter the application name segment of the connection URI.
 9.  In the **Exchange User Name** and **Exchange User Password** boxes, enter the credentials that Orchestrator will use to sign in to the Exchange environment. The configured user must have the appropriate Exchange permissions.
-10.  Configure the **Exchange Environment** as necessary for connecting to an On-Premises installation or to Office.
+10.  Configure the **Exchange Environment** as necessary for connecting to an on-premises installation or to Office.
 11. Set the **Use SSL** property to **True** to have all communication between the runbook server and the Exchange server encrypted over HTTPS.
 12. If you use SSL:
     - The **Skip CA Check** property specifies whether the client doesn't validate that the server certificate is signed by a trusted certification authority (CA).

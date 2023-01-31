@@ -204,11 +204,11 @@ Both scenarios are unsupported. You can only select one of the following options
 **Issue**: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protection of other workloads hosted on Cluster Shared Volumes (CSVs) isn't supported.
 
 ::: moniker range="<=sc-dpm-2019"
-Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2019 UR2](what-s-new-in-dpm.md?view=sc-dpm-2019) and later.
+Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2019 UR2](what-s-new-in-dpm?view=sc-dpm-2019) and later.
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
-Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2022](what-s-new-in-dpm.md?view=sc-dpm-2022).
+Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2022](what-s-new-in-dpm?view=sc-dpm-2022).
 ::: moniker-end
 
 **Workaround**: None.
