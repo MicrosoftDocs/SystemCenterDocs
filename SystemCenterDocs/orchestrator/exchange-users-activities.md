@@ -1,6 +1,6 @@
 ---
 title: Exchange Users Activities
-description: The configuration instructions in this topic apply to all activities in the Exchange Users Integration Pack.
+description: The configuration instructions in this article apply to all activities in the Exchange Users Integration Pack.
 ms.custom: na
 ms.date: 4/25/2017
 ms.prod: system-center
@@ -103,7 +103,7 @@ An activity can subscribe only to data from the activities that are linked befor
 2.  Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
 3.  Select the published data element that you want to use, and select **OK**.
 
-For a list of the data elements published by each activity, see the **Published Data** table in the activity topic. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
+For a list of the data elements published by each activity, see the **Published Data** table in the activity section. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
 
 ## Activities
 

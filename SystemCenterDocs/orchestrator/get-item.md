@@ -129,7 +129,7 @@ The following tables list the required properties, filters, and published data f
 | Time Zone   | The time zone that is specified for the appointment   | String   |
 | Timeout (seconds)   | Connection time-out threshold   |   |
 | Use Autodiscover   | Indicates whether or not to use Autodiscover to check for changes   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit From Query String | Query string to append to the Exchange Web client URL to open the email for editing   | String   |
 | Web Client Read From Query String | Query string to append to the Exchange Web client URL to open the email for reading   | String   |
 | iCal Recurrence ID   | The iCalendar RecurrenceId   | DateTime   |
@@ -170,7 +170,7 @@ The following tables list the required properties, filters, and published data f
 | Search Subfolders   | Indicates whether subfolders should be included in the search   | String   |
 | Timeout (seconds)   | Connection timeout   | Number   |
 | Use Autodiscover   | Indicates whether or not to use the Autodiscover service to check for changes   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit From Query String | Query string to append to the Exchange Web client URL to open the contact group for editing | String   |
 | Web Client Read From Query String | Query string to append to the Exchange Web client URL to open the contact group for reading | String   |
 
@@ -252,7 +252,7 @@ The following tables list the required properties, filters, and published data f
 | Timeout (seconds)   | The connection timeout threshold in seconds   | Number   |
 | To   | List of To recipients of the email message   | String   |
 | Use Autodiscover   | Indicates whether or not to use the Autodiscover service   | Boolean   |
-| User Name   | User name used to log on to Exchange server   | String   |
+| User Name   | User name used to sign in to Exchange server   | String   |
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the email for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the email for reading | String   |
 
@@ -337,6 +337,6 @@ The following tables list the required properties, filters, and published data f
 | Timeout (seconds)   | Connection timeout   | Number   |
 | Total Work   | The total amount of work spent on the task   | Number   |
 | Use Autodiscover   | Indicates whether or not to use the Autodiscover service   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the task for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the task for reading | String   |

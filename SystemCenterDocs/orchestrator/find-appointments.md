@@ -68,7 +68,7 @@ The following tables list the required properties, optional properties, filters,
 | Is Meeting   | Indicates whether the appointment is a meeting   | Equals<br>Does not equal   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Equals<br>Does not equal   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Equals<br>Does not equal   |
-| Is Reminder Set   | Indicates whether there is a reminder set for this appointment   | Equals<br>Does not equal   |
+| Is Reminder Set   | Indicates whether there's a reminder set for this appointment   | Equals<br>Does not equal   |
 | Is Response Requested   | Indicates whether responses are requested when invitations are sent   | Equals<br>Does not equal   |
 | Is Submitted   | Indicates whether this message has been submitted to sent   | Equals<br>Does not equal   |
 | Is Unmodified   | Indicates if the appointment has been modified since creation   | Equals<br>Does not equal   |
@@ -117,7 +117,7 @@ The following tables list the required properties, optional properties, filters,
 | Is Meeting   | Indicates whether the appointment is a meeting   | Boolean   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Boolean   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Boolean   |
-| Is Reminder Set   | Indicates whether there is a reminder set for this appointment   | Boolean   |
+| Is Reminder Set   | Indicates whether there's a reminder set for this appointment   | Boolean   |
 | Is Response Requested   | Indicates whether a response is requested for this appointment invitation   | Boolean   |
 | Is Submitted   | Indicates whether this message has been submitted to sent   | Boolean   |
 | Is Unmodified   | Indicates if the appointment has been modified since creation   | Boolean   |

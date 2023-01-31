@@ -54,7 +54,7 @@ The following tables list the required properties, optional properties, and publ
 | Domain   | Domain the Exchange server belongs to   | String   |
 | Exchange Server Address | Address of the Exchange server   | String   |
 | ID   | The ID of the item   | String   |
-| Reply To All   | Indicates whether the response should be send to all recipients of the original message | Boolean   |
+| Reply To All   | Indicates whether the response should be sent to all the recipients of the original message | Boolean   |
 | Timeout (seconds)   | Connection timeout threshold   | Number   |
 | Use Autodiscover   | Whether or not the Autodiscover service is being used   | Boolean   |
 | User Name   | User name used to sign in to Exchange Server   | String   |
