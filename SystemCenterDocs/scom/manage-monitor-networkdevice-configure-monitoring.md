@@ -3,7 +3,7 @@ title: How to Configure Monitoring of Network Devices
 description: This article describes how to configure Operations Manager to sample specific performance metrics and alert for certain issues detected on network devices.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 01/26/2017
 ms.custom: na
 ms.prod: system-center
@@ -51,7 +51,7 @@ System Center Operations Manager includes the following management packs specifi
     This management pack contains templates for authoring network management workflows.
 
 ## Tuning network rules
-The following rules are disabled by default. Using overrides, enable these rules only for the specific device types in your environment. To view these rules grouped by type, in the **Authoring** workspace, scope **Management Pack Objects** to the network monitoring management packs listed in the previous section, and then click **Rules**.
+The following rules are disabled by default. Using overrides, enable these rules only for the specific device types in your environment. To view these rules grouped by type, in the **Authoring** workspace, scope **Management Pack Objects** to the network monitoring management packs listed in the previous section, and select **Rules**.
 
 |Rule|Description|Types|
 |----|-------|---------|
@@ -107,6 +107,6 @@ The following monitors that generate alerts are disabled by default. Using overr
 
 ## Next steps
 
-- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md).    
+- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md).
 
-- To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](manage-monitor-networkdevice-viewing-data.md).  
+- To view information about the network devices you're monitoring, see [Viewing Network Devices and Data in Operations Manager](manage-monitor-networkdevice-viewing-data.md).  

@@ -4,7 +4,7 @@ title: The Fabric Monitoring Diagram View displaying health states of cloud envi
 description: This article provides an overview of the Fabric Monitoring diagram view
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 06/27/2019
 ms.custom: na
 ms.prod: system-center
@@ -20,21 +20,21 @@ ms.topic: article
 
 ::: moniker-end
 
-The Fabric Monitoring Diagram view gives you a diagram of the entire infrastructure and shows the health state of each part of the fabric. The Diagram view helps you answer questions, such as “What is the health of my entire fabric?” Improvements to the diagram ensure that health rolls up and that the relevant fabric components are part of the Diagram View.
+The Fabric Monitoring Diagram view gives you a diagram of the entire infrastructure and shows the health state of each part of the fabric. The Diagram view helps you answer questions such as “What is the health of my entire fabric?” Improvements to the diagram ensure that health rolls up and that the relevant fabric components are part of the Diagram View.
 
 ## Using Diagram view to locate and investigate problems
 
 Follow these steps:
 
-1. To open Diagram View, click **Monitoring**, and in **Microsoft System Center Virtual Machine Manager Views**, click **Diagram View** for the environment you want to see displayed as a diagram.
+1. To open the Diagram View, select **Monitoring**, and in **Microsoft System Center Virtual Machine Manager Views**, select **Diagram View** for the environment you want to see displayed as a diagram.
 
-   Diagram View nodes show the health roll up, so if a node is shown as healthy, you know that everything beneath is also healthy. Similarly, if a node is marked unhealthy, something in that node is having a problem.
+   Diagram View nodes show the health roll up, so if a node is shown as healthy, you know that everything beneath is also healthy. Similarly, if a node is marked unhealthy, something in that node has a problem.
 
-   ![Diagram view](./media/fabric-monitoring/diagram-view.png)
+   ![Screenshot showing the Diagram view.](./media/fabric-monitoring/diagram-view.png)
 
-2. To see where a problem is occurring, click a node that is marked as unhealthy and expand it until you begin to find unhealthy nodes within that tree. When you find the problem you want to investigate right-click the node and select **Health Explorer**.
+2. To see where a problem is occurring, select a node that's marked as unhealthy and expand it until you begin to find unhealthy nodes within that tree. When you find the problem you want to investigate, right-click the node and select **Health Explorer**.
 
-3. In **Health Explorer**, click the monitor you want to investigate, and you can see Knowledge and health for each monitor.
+3. In **Health Explorer**, select the monitor you want to investigate, and you can see Knowledge and health for each monitor.
 
 4. To see when and why a monitor became unhealthy, open **State Change Events**.
 
