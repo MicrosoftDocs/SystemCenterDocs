@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 99513133-5547-471a-b1c1-cabfad6eab0b
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Monitor Item

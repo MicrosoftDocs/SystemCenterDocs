@@ -1,6 +1,6 @@
 ---
 title: Delete File
-description: The Delete File activity is used in a runbook to delete a file on a FTP server.
+description: The Delete File activity is used in a runbook to delete a file on an FTP server.
 ms.custom: na
 ms.date: 05/07/2019
 ms.prod: system-center
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: a7fe1669-71b4-4f8b-a3c2-7b5c032dae91
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete file on an FTP server
@@ -50,7 +50,7 @@ The following tables list the required properties and published data for this ac
 | Log   | Detailed FTP log.   | String   |
 | Port   | The port used to connect to the FTP server.   | Integer   |
 | Server   | The IP address or computer name of the FTP server.   | String   |
-| Timeout   | The time to wait before a FTP operation times out.   | Integer   |
+| Timeout   | The time to wait before an FTP operation times out.   | Integer   |
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |
 

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 223820eb-1c24-43ce-938e-935176e2a8bf
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Find Appointments
@@ -47,7 +47,7 @@ The following tables list the required properties, optional properties, filters,
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
 | Adjacent Meeting Count   | The number of calendar entries that are adjacent to the appointment   | Equals<br>Does not equal<br>Less than<br>Less than or equal to<br>Greater than<br>Greater than or equal to   |
-| Allow New Time Proposal   | Indicates whether new time proposals are allowed for attendees of the meeting   | Equals<br>Does not equal   |
+| Allow New Time Proposal   | Indicates whether new time proposals are allowed for the attendees of the meeting   | Equals<br>Does not equal   |
 | Appointment Reply Time   | When the attendee replied to the meeting request   | Equals<br>Does not equal<br>Less than<br>Less than or equal to<br>Greater than<br>Greater than or equal to   |
 | Appointment Sequence Number | The sequence number of the appointment   | Equals<br>Does not equal<br>Less than<br>Less than or equal to<br>Greater than<br>Greater than or equal to   |
 | Appointment State   | The state of the appointment   | Equals<br>Does not equal<br>Less than<br>Less than or equal to<br>Greater than<br>Greater than or equal to   |
@@ -143,10 +143,10 @@ The following tables list the required properties, optional properties, filters,
 | End Date   | The date and time to stop searching at   | DateTime   |
 | Start   | The start time of the appointment   | DateTime   |
 | Subject   | The subject of the appointment   | String   |
-| Time Zone   | The time zone that is specified for the appointment   | String   |
+| Time Zone   | The time zone that's specified for the appointment   | String   |
 | Timeout (seconds)   | Timeout value for the Exchange server connection   | Number   |
 | Use Autodiscover   |   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit From Query String | Query string to append to the Exchange Web client URL to open the appointment for editing | String   |
 | Web Client Read From Query String | Query string to append to the Exchange Web client URL to open the appointment for reading | String   |
 | iCal DateTime Stamp   | Contains the iCalendar DateTimeStamp   | DateTime   |

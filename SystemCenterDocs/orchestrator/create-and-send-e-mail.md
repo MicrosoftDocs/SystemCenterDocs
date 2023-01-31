@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 42303d7c-eb1c-4343-93d2-3123b93f1464
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create and Send E-Mail
@@ -64,7 +64,7 @@ The following tables list the required properties, optional properties, and publ
 | Exchange Server Address | Address of the Exchange server   | String   |
 | Timeout (seconds)   | Timeout value for the Exchange server connection   | Number   |
 | Use Autodiscover   | Indicates whether or not to use Autodiscover to check for changes | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 
 #### Other Resources
 
