@@ -197,7 +197,7 @@ On the Exchange server, ensure that PowerShell does not require SSL:
 
 # [Exchange Online](#tab/ex-online)
 
-Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866&preserve-view=true) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell	V2 Module (EXO V2)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) to connect to Exchange Server. For detailed information on EXO V2 module, see
+Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell	V2 Module (EXO V2)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) to connect to Exchange Server. For detailed information on EXO V2 module, see
  - [Prerequisites](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#prerequisites-for-the-exo-v2-module&preserve-view=true)
  - [Installation instructions](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-the-exo-v2-module&preserve-view=true) and
  - [Troubleshooting installation issues](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#troubleshoot-installing-the-exo-v2-module&preserve-view=true)
