@@ -4,7 +4,7 @@ title: Fabric Monitoring in System Center Operation Manager
 description: This article provides an overview of fabric monitoring
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/30/2020
 ms.custom: na
 ms.prod: system-center
@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-A close integration between System Center Virtual Machine Manager and System Center Operations Manager introduces System Center cloud monitoring of virtual layers for private cloud environments. The management pack for System Center Virtual Machine Manager monitors availability of VMM and the availability, health, and performance of all virtual machines and virtual machine hosts that VMM manages. The Fabric Health Dashboard shows a detailed overview of the health of your private clouds and the fabric that services those clouds. The dashboard helps you answer questions like "What is the health of my clouds and the fabric serving those clouds?" and helps you understand how your fabric components are connected. At a glance, you can see cloud health and the health of the underlying fabric/virtual machines. You can also do the root cause analysis by linking to existing dashboards, such as network monitoring dashboards and the Virtual Machine Manager diagram view can help you dive into network and storage monitoring.
+A close integration between System Center Virtual Machine Manager and System Center Operations Manager introduces System Center cloud monitoring of virtual layers for private cloud environments. The management pack for System Center Virtual Machine Manager monitors availability of VMM and the availability, health, and performance of all virtual machines and virtual machine hosts that VMM manages. The Fabric Health Dashboard shows a detailed overview of the health of your private clouds and the fabric that services those clouds. The dashboard helps you answer questions like "What is the health of my clouds and the fabric serving those clouds?" and helps you understand how your fabric components are connected. At a glance, you can see cloud health and the health of the underlying fabric/virtual machines. You can also do the root cause analysis by linking to existing dashboards, such as network monitoring dashboards, and the Virtual Machine Manager diagram view can help you dive into network and storage monitoring.
 
 To get the dashboard, use the System Center management pack for System Center Virtual Machine Manager Fabric Health Dashboard, which is imported automatically when you integrate Operations Manager and Virtual Machine Manager.
 
@@ -29,7 +29,7 @@ To get the dashboard, use the System Center management pack for System Center Vi
 The fabric of a private cloud consists of physical and virtual elements that fall into three main categories: Compute, Storage, and Hardware.
 
 - **Compute**  includes hosts, operating systems/platforms that are running on the hosts, workloads (what's running on your private cloud, such as SQL, AD, DNS, DHCP), workload configuration, and management infrastructure.
-- **Storage**  includes file shares, LUNs, storage pools.
+- **Storage**  includes file shares, LUNs, and storage pools.
 - **Hardware**  includes physical and virtual network devices and networks, as well as fabric hardware.
 
 ## Before you begin
