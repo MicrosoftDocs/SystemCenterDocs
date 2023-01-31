@@ -108,7 +108,7 @@ Use the following procedures to investigate your alert. IT Pros will most likely
 
     -   **Filtering by Action** groups the similar events by aspect: security, performance, connectivity, and application failure. Select the **Diagram View** button, and you can see the number of similar events by these aspect categories and more easily see which ones the problem might be related to.  
 
-    -   **Filtering by Exception class** groups the similar events according to how you named them during configuration. Presumably, these would be names that would help you identify the kind of exceptions they're, such as **System.NullReferenceException** class.  
+    -   **Filtering by Exception class** groups the similar events according to how you named them during configuration. Presumably, these would be names that would help you identify the kind of exceptions they are, such as **System.NullReferenceException** class.  
 
     -   **Filtering by Failed function** groups the similar events by the same function is throwing the exception. This could mean that there's a problem with the entry point.  
 
