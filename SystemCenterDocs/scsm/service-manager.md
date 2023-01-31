@@ -32,7 +32,7 @@ System Center - Service Manager provides an integrated platform for automating a
 - The [author](author-with-sm.md) section provides an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool, and contains tasks to author and customize management packs, which enable customizations in Service Manager.  
 - The [disaster recovery](disaster-recovery.md) section helps you create a recovery plan for potential software and equipment failures in your Service Manager environment. It also helps you create a deployment strategy that separates the Service Manager and data warehouse management servers from the computers that host their respective databases.
 - The [glossary section](glossary.md) is a list of terms and definitions used in Service Manager that have meaning specific to Service Manager.
-- The [release notes](release-notes-sm.md)section contains release notes apply to Service Manager. They contain descriptions and workarounds for known issues that you should be aware of before you deploy Service Manager.
+- The [release notes](release-notes-sm.md) section contains release notes apply to Service Manager. They contain descriptions and workarounds for known issues that you should be aware of before you deploy Service Manager.
 
 ## Next steps
 
