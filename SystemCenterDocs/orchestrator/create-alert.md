@@ -57,7 +57,7 @@ The activity publishes all the data from the required and optional properties in
 | **Element**   | **Description**   |
 |-----------------------------------|-------------------------------------------------------------------------------------------------|
 | Category   | The category name of the Management Pack   |
-| Connection   | The connection string to the System Center Operations Manager server that you are using   |
+| Connection   | The connection string to the System Center Operations Manager server that you're using   |
 | ConnectorId   | The ID of the connector that generated the connection string   |
 | ConnectorStatus   | The status of the connector   |
 | Context   | The System Center Operations Manager context of the alert   |

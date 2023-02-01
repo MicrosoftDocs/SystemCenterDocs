@@ -59,7 +59,7 @@ The following tables list the required properties and published data for this ac
 | Original Message   | Details of the event that is the cause of this message.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
 | Custom Attributes   | An XML representation of the custom message attributes associated with the message.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
 | Number of Annotations   | Number of annotations that have been added to the message.   | Equals<br>Does not equal<br>Is less than<br>Is less than or equal to<br>Is greater than<br>Is greater than or equal to   | Integer   |
-| Source   | Contains the name and version of the template that created the message.   | Equals<br>Does not equa<br>lContains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
+| Source   | Contains the name and version of the template that created the message.   | Equals<br>Does not equal<br>lContains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
 
 ## Get Message Published Data
 
@@ -94,7 +94,7 @@ The following tables list the required properties and published data for this ac
 | Custom Attributes   | An XML representation of the custom message attributes associated with the message.   | String   |
 | Number of Annotations   | Number of annotations that have been added to the message.   | Integer   |
 | Source   | Contains the name and version of the template that created the message.   | String   |
-| Message Count   | The number of messages that were retrieved from the HPOM management server that satisfy the specified filter criteria.   | Integer   |
+| Message Count   | The number of messages that were retrieved from the HPOM management server that satisfies the specified filter criteria.   | Integer   |
 | HPOM Host   | The name or IP address of the HPOM management server.   | String   |
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server.   | String   |

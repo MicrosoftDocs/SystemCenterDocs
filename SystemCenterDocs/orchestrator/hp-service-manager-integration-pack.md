@@ -68,14 +68,14 @@ The following software must be installed on each Runbook Server and Runbook Desi
 
 ## Registering and Deploying the Integration Pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Add an Integration Pack](how-to-add-an-integration-pack.md).
+After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Add an Integration Pack](how-to-add-an-integration-pack.md).
 
 ## Preparing to connect to the HP Service Manager Server
 
 -   Make a record of the HP Service Manager server name and port number used to connect the HP Service Manager client.
 -   For all HP Service Manager servers that you plan to connect to you must create an ODBC data source name (DSN) on each Client and Runbook server. Both SQL Server Native and Oracle ODBC connections are supported. See [Configuring the HP Service Manager Connections](#configuring-the-hp-service-manager-connections).
 -   The licensing model for the components of HP Service Manager varies depending on the version installed. Consult the HP product documentation to determine which components are licensed separately. This integration pack requires HP Service Manager SOAP web service access to operate correctly. Ensure that this component is installed and licensed, if necessary.
--   Ensure that the user configured to access the HP Service Manager server has been assigned the SOAP-API CAPABILITY WORD in the HP Service Manager system. Depending on the version of HP Service Manager, it may be necessary to purchase extra licensing to enable the SOAP-API CAPABILITY WORD. Consult your HP Sales Representative for further information about licensing.
+-   Ensure that the user configured to access the HP Service Manager server has been assigned the SOAP-API CAPABILITY WORD in the HP Service Manager system. Depending on the version of HP Service Manager, it may be necessary to purchase extra licensing to enable the SOAP-API CAPABILITY WORD. Consult your HP Sales Representative for more information on licensing.
 
 ## Configuring the HP Service Manager Connections
 
@@ -98,7 +98,7 @@ To avoid possible corruption, don't use alternate means to directly connect to t
 9.  Select the appropriate authentication method for the database server and enter valid credentials.
 10. Select **Next**.
 11. Ensure the checkbox **Change the default database to:** is selected.
-12. In the dropdown list below the checkbox select the HP Service Manager database.
+12. In the dropdown list below the checkbox, select the HP Service Manager database.
 13. Select **Next**.
 14. Select **Finish**.
 15. Select **Test Data Source** to confirm connectivity to the database.
@@ -107,7 +107,7 @@ To avoid possible corruption, don't use alternate means to directly connect to t
 
 #### Setting up an Oracle ODBC Connection
 
-1.  Configure an Oracle Net Service name using the Oracle Net Configuration Assistant. For more information on this step, refer to the relevant Oracle product documentation.
+1.  Configure an Oracle Net Service name using the Oracle Net Configuration Assistant. For more information on this step, see the relevant Oracle product documentation.
 2.  Open the ODBC Data Source Administrator Utility (32-bit). To access this utility, select **Start**, then **Run**, and then enter **\\Windows\\SysWOW64\\odbcad32.exe** in the **Open** box. Select **OK**.
 3.  In the ODBC Data Source Administrator, select the **System DSN** tab.
 4.  Select **Add**.
@@ -120,7 +120,7 @@ To avoid possible corruption, don't use alternate means to directly connect to t
 11. Select **OK**.
 12. Select **OK** to close the ODBC Data Source Administrator.
 
-#### To set up a HP Service Manager connection
+#### To set up an HP Service Manager connection
 
 1.  In the Runbook Designer, select the **Options** menu, and select **HP Service Manager**. The HP Service Manager dialog appears.
 2.  On the **Connections** tab, select **Add** to begin the connection setup. The **Connection Configuration** dialog will appear.
@@ -143,7 +143,7 @@ To avoid possible corruption, don't use alternate means to directly connect to t
 
 ## Exposing Required Fields
 
-If an activity reports an error and indicates that a required field must be specified but the IP doesn't provide the field in the user interface, the field must be exposed through the HP Service Manager Web service API. To expose the field complete the following procedure:
+If an activity reports an error and indicates that a required field must be specified but the IP doesn't provide the field in the user interface, the field must be exposed through the HP Service Manager Web service API. To expose the field, complete the following procedure:
 
 #### To expose a required field
 
@@ -163,7 +163,7 @@ If an activity reports an error and indicates that a required field must be spec
 
 
 -   The **Test Connection** button can't be used to validate Service Manager 7.1 web service connections if the HP ServiceCenter 6.2 web service has been disabled.
--   Certain permissions are required when dealing with Change tickets. These permissions are specified by assigning a user a Change Management Profile. While a user can have more than one profile, it can only belong to one profile per session. If the user is assigned more than one Change Management Profile, it will automatically use the first profile in the alphabetical order. To avoid confusion it's recommended that the user configured for use with the integration pack is only assigned one Change Management Profile.
+-   Certain permissions are required when dealing with Change tickets. These permissions are specified by assigning a user a Change Management Profile. While a user can have more than one profile, it can only belong to one profile per session. If the user is assigned more than one Change Management Profile, it will automatically use the first profile in the alphabetical order. To avoid confusion, it's recommended that the user configured for use with the integration pack is only assigned one Change Management Profile.
 -   The user configured for use with the integration pack must have its time zone preferences set to Greenwich/Universal with a date format of mm/dd/yy.
 -   In certain versions of HP Service Manager, the list of available categories when creating an incident displays Change, yet choosing it causes the object to fail with the following message: Please provide a valid category. This is a known issue with the HP Service Manager server. Ensure that the fields are visible to the web service (See Troubleshooting) and the HP Service Manager server is patched to the latest version.
 -   The **Set as default** button available in the **Create Entry**, **Update Entry**, and **Close Entry** activities may report an error when selected. Use the following procedure to work around this issue.

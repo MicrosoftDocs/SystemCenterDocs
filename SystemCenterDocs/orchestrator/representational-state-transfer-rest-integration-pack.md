@@ -38,4 +38,4 @@ The integration pack for Representational State Transfer (REST) is an add-on for
 
 ## Register and deploy the integration pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and installed Runbook Designers. Learn more about [adding an integration pack](how-to-add-an-integration-pack.md).
+After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to runbook servers and installed Runbook Designers. Learn more about [adding an integration pack](how-to-add-an-integration-pack.md).

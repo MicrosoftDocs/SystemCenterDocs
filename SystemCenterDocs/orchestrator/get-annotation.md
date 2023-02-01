@@ -40,7 +40,7 @@ The following tables list the required properties and published data for this ac
 | Annotation ID   | Unique identifier for an annotation.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts With<br>Ends With | String   |
 | Annotation Text | The annotation text.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts With<br>Ends With | String   |
 | Author   | Name of the HPOM user that is currently responsible for the annotation. | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts With<br>Ends With | String   |
-| Time Created   | The time that the annotations was created.   | Less than<br>Greater than   | Datetime   |
+| Time Created   | The time that the annotation was created.   | Less than<br>Greater than   | Datetime   |
 
 ## Get Annotation Published Data
 
