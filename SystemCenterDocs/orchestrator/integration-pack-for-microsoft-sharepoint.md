@@ -1,13 +1,14 @@
 ---
 title: System Center integration pack for SharePoint
 description: This article describes the SharePoint integration pack for System Center - Orchestrator.
-ms.date: 04/06/2021
+ms.date: 02/01/2023
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
+ms.custom: engagement-fy23
 ---
 
 # Integration pack for SharePoint
@@ -98,7 +99,7 @@ To register a client application on Azure AD, follow these steps:
 
    ![Screenshot of Registration page.](./media/integration-pack-for-sharepoint/sp-reg.png)
 
-4. Choose the account type depending on your AD setup and whether you use both on-prem and online products.
+4. Choose the account type depending on your AD setup and whether you use both on-premises and online products.
 
 5. Select **Register**.
 
