@@ -55,7 +55,7 @@ After you download the integration pack file, you must register it with the Orch
 
 The SharePoint Integration Pack performs actions on behalf of a user who can access your SharePoint domain. The IP authenticates with SharePoint as this user in two modes:
 
-- Basic Auth (default, supports both SharePoint Online and SharePoint OnPrem).
+- Basic Auth (default, supports both SharePoint Online and SharePoint on-premises).
 - Modern Auth (also known as OAuth) using Azure AD (applicable only for SharePoint Online).
 
 
@@ -73,7 +73,7 @@ A connection establishes a reusable link between Orchestrator and a SharePoint s
 6.  In the **SharePoint Site** box, enter the URL of the SharePoint site that you want to integrate with.
 7.  In the **User Name** and **Password** boxes, enter the credentials that Orchestrator will use to connect to the SharePoint site.
 8.  In the **Domain** box, enter the name of the domain to authorize access.
-9.  In the **SharePoint Online** box, enter **False** if the SharePoint instance is OnPrem.
+9.  In the **SharePoint Online** box, enter **False** if the SharePoint instance is on-premises.
 10. Set the **Utilize OAuth** box to **False**.
 11.  In the **Default Monitor Interval (seconds)** box, enter a timeout value in seconds or keep the default value.
 12. In the **Default Maximum Items** box, enter a maximum value, or keep the default value.
@@ -161,7 +161,7 @@ Use the following steps to configure the SharePoint IP for OAuth authentication:
 
 11. Set the **Application ID** to the application ID seen on the portal.
 
-12. Set the **Directory ID** to the directory (tenant) ID seen on the portal. This is also referred to as Microsoft365 Tenant ID.
+12. Set the **Directory ID** to the directory (tenant) ID seen on the portal. This is also referred to as Microsoft 365 Tenant ID.
 
 13. Set the **AAD Instance URI** to your AD URL (or leave it to default value).
 
