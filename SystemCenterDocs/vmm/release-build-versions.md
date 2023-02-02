@@ -5,7 +5,7 @@ description: This article details the release builds in Virtual Machine Manager
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/28/2022
+ms.date: 02/02/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -47,10 +47,10 @@ The following table lists the release history for Virtual Machine Manager 2019.
 
 The following table lists the release history for Virtual Machine Manager 2022.
 
-| **Build Number** | **KB** |**Description** |
-| --- | --- | --- |
-|10.22.1287.0 |n/a |System Center 2022 Virtual Machine Manager RTM |
-|10.22.1508.0 |[5019202](https://support.microsoft.com/kb/5019202) |Update Rollup 1 |
+| **Build Number** | **KB** | **Release Date** | **Description** |
+| --- | --- | --- | --- |
+|10.22.1287.0 |n/a |March 2022 | System Center 2022 Virtual Machine Manager RTM |
+|10.22.1508.0 |[5019202](https://support.microsoft.com/kb/5019202) | November 2022 | Update Rollup 1 |
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
