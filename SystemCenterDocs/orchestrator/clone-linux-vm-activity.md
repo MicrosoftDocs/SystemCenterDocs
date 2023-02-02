@@ -1,6 +1,6 @@
 ---
 title: Clone Linux VM activity
-description: The articles describes the Clone Linux VM activity,  to create a copy of an existing Linux virtual machine or template in a runbook.
+description: The article describes the Clone Linux VM activity,  to create a copy of an existing Linux virtual machine or template in a runbook.
 ms.custom: na
 ms.date: 01/17/2018
 ms.prod: system-center
@@ -46,7 +46,7 @@ With the exception of "Source VM/Template Path," all properties and published da
 | Host System Path   | The path to the host system of the cloned virtual machine.   | String   | Yes   |
 | Memory Size (MB)   | The amount of memory, in megabytes, to assign to the cloned virtual machine.   | Integer   | No   |
 | New Virtual Machine Name   | The name of the cloned virtual machine.   | String   | No   |
-| Power on after creation   | Indicates whether the cloned virtual machine is turned on after it is created.   | Boolean   | Yes   |
+| Power on after creation   | Indicates whether the cloned virtual machine is turned on after it's created.   | Boolean   | Yes   |
 | Resource Pool Path   | The path to the resource pool that the cloned virtual machine will use.   | String   | Yes   |
 | Source VM/Template Path   | The name of the virtual machine or template that you want to clone.   | String   | Yes   |
 | Virtual Processors   | The number of virtual processors to assign to the cloned virtual machine.   | Integer   | No   |

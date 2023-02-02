@@ -65,8 +65,8 @@ No optional properties are provided for this activity.
 | MemorySharesLevel   | Memory allocation shares level. Can be the preset levels Low, Normal, High or Custom. If set to Custom, the allocation is described in the **MemoryShares** property. | String   |
 | MemoryShares   | The number of Memory Shares allocated. Set to -1 if **MemorySharesLevel** has a preset level.   | Integer   |
 | MemoryUnlimited   | True, if the memory usage is unlimited. Otherwise, False.   | Boolean   |
-| MemoryUnreservedForPool   | The amount of memory that is not in use for the pool (in bytes).   | Integer   |
-| MemoryUnreservedForVm   | The amount of memory that is not in use for the VMs (in bytes).   | Integer   |
+| MemoryUnreservedForPool   | The amount of memory that isn't in use for the pool (in bytes).   | Integer   |
+| MemoryUnreservedForVm   | The amount of memory that isn't in use for the VMs (in bytes).   | Integer   |
 | Overall Health   | The overall health of the resource pool. Green indicates under committed, yellow indicates overcommitted, and red indicates inconsistent.   | String   |
 | Resource Pool Path   | The path of the resource pool.   | String   |
 | Virtual Machine Path   | The paths of all the virtual machines in the resource pool.   | String   |

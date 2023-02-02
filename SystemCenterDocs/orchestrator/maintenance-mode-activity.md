@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-The Maintenance Mode activity is used in a runbook to enter and exit the maintenance mode for an ESX host controlled by the VMware vSphere vCenter server. Entering the maintenance mode prevents VM's powering up or failing over to the host if it's taking part in a high availability cluster. This allows the runbook to enable the Maintenance mode before powering off the host for hardware maintenance.
+The Maintenance Mode activity is used in a runbook to enter and exit the maintenance mode for an ESX host controlled by the VMware vSphere vCenter server. Entering the maintenance mode prevents VMs powering up or failing over to the host if it's taking part in a high availability cluster. This allows the runbook to enable the Maintenance mode before powering off the host for hardware maintenance.
 
 The following tables list the required and optional properties and published data for this activity.
 
@@ -49,7 +49,7 @@ The activity publishes all the data from the required and optional properties in
 |:---|:---|:---|
 | Host   | The path of the managed host controlled by the vSphere VMware server.   | String   |
 | Operation   | The action that is to be performed, selected from a drop-down list.   | String   |
-| Evacuate Powered Off VMs | If true, the activity will not succeed on a non-DRS cluster unless all powered-off virtual machines have been manually reregistered. On a DRS-enabled cluster, vCenter will automatically reregister powered off virtual machines. | Boolean   |
+| Evacuate Powered Off VMs | If true, the activity won't succeed on a non-DRS cluster unless all powered-off virtual machines have been manually reregistered. On a DRS-enabled cluster, vCenter will automatically reregister powered off virtual machines. | Boolean   |
 | Timeout (Seconds)   | The time in seconds for the operation to complete.   | Integer   |
 
 ## Configuring the Maintenance Mode activity

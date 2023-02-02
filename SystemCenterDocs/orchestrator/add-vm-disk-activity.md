@@ -56,7 +56,7 @@ The activity publishes all the data from the required and optional properties in
 | SCSI Bus Number   | The SCSI bus number setting specified.  | Integer   |
 | SCSI Unit Key   | The SCSI unit key setting specified.   | Integer   |
 | VM Path   | The path of the virtual machine that this disk belongs to.   | String   |
-| SCSI Controller Type(available only in System Center 2016) | The type of SCSI controller to add if one does not exist on the chosen SCSI bus. | String   |
+| SCSI Controller Type (available only in System Center 2016) | The type of SCSI controller to add if one doesn't exist on the chosen SCSI bus. | String   |
 
 ## Configuring the Add VM Disk Activity
 

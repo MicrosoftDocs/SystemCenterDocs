@@ -51,7 +51,7 @@ With the exception of "Source VM/Template Path," all the properties and publishe
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
-| Clone Task Timeout in seconds | The number of seconds for the clone activity to complete before timing out. The activity will fail if the clone operation has not completed within the configured time.   | Integer   | No   |
+| Clone Task Timeout in seconds | The number of seconds for the clone activity to complete before timing out. The activity will fail if the clone operation hasn't completed within the configured time.   | Integer   | No   |
 | Customize   | Indicates whether the virtual machine computer settings are customized after the virtual machine is cloned. If set to False, any guest customizations such as IP address or DNS name won't be applied. | Boolean   | Yes   |
 | Datastore Path   | The data store name that the cloned virtual machine will use.   | String   | Yes   |
 | Folder Path   | The path to the folder containing the cloned virtual machine.   | String   | Yes   |
@@ -114,7 +114,7 @@ With the exception of "Source VM/Template Path," all the properties and publishe
 | Memory Size (MB)   | The amount of memory, in megabytes, assigned to the cloned virtual machine.   | Integer   |
 | Organization Name   | The organization name.   | String   |
 | Owner's Name   | The name of the owner of the cloned virtual machine.   | String   |
-| Power on after creation   | Indicates whether the cloned virtual machine is turned on after it is created.   | Boolean   |
+| Power on after creation   | Indicates whether the cloned virtual machine is turned on after it's created.   | Boolean   |
 | Product ID   | The Windows product ID.   | String   |
 | Resource Pool Path   | The path to the resource pool used by the cloned virtual machine.   | String   |
 | Source VM/Template Path   | The name of the virtual machine or template to clone.   | String   |

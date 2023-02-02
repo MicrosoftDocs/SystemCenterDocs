@@ -47,13 +47,13 @@ This tab contains properties that are specific to the activity. All activities i
 The Monitor and Get activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When matching against values, you select one of the available methods of comparison. An option is provided to either match or not match the filter using each method. For example, the "Does not" version of a method finds messages that don't match the filter to trigger the policy.
 
 -   **Equals**: The property of the message exactly matches the text or the number specified in the filter.
--   **Does not equal**: The property of the message does not exactly match the text or the number specified in the filter.
+-   **Does not equal**: The property of the message doesn't exactly match the text or the number specified in the filter.
 -   **Is less than**: The property of the message is less than the number specified in the filter.
 -   **Is less than or equal to**: The property of the message is less than or equal to the number specified in the filter.
 -   **Is greater than**: The property of the message is greater than the number n the filter.
 -   **Is greater than or equal to**: The property of the message is greater than or equal to the number specified in the filter.
 -   **Contains**: The property of the message contains the exact text specified in the filter. Unlike the Equals behavior, there can be other text surrounding the matching text.
--   **Does not contain**: The property of the message does not contain the exact text specified in the filter. Unlike the Equals behavior, there can be other text surrounding the matching text.
+-   **Does not contain**: The property of the message doesn't contain the exact text specified in the filter. Unlike the Equals behavior, there can be other text surrounding the matching text.
 -   **Matches pattern**: Use regular expressions to specify a pattern that the text must match.
 -   **Does not match pattern**: Use regular expressions to specify a pattern that the text must not match.
 -   **Starts with**: The property of the message starts with the exact text specified in the filter.

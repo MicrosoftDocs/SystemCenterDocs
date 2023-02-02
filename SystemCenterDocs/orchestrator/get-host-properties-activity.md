@@ -49,7 +49,7 @@ No optional properties are provided for this activity.
 | Name   | The name of the managed host.   | String   |
 | Overall Status   | The overall status of the host.   | Gray (unknown)@br Green (OK)@br Yellow (warning)@br Red (alarm)   |
 | Port   | The management port for the managed host.   | Integer   |
-| Power State   | The power state of the host.   | Powered On@br Powered Off@br Standby@br Unknown (e.g. disconnected) |
+| Power State   | The power state of the host.   | Powered On@br Powered Off@br Standby@br Unknown (for example, disconnected) |
 | Product   | The full product name and version of the host hypervisor. | String   |
 | Reboot Required   | Indicates whether a reboot is required.   | True@br False   |
 | vMotion Enabled   | Indicates whether vMotion is enabled.   | True@br False   |

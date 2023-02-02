@@ -40,7 +40,7 @@ The activity publishes all the data from the required and optional properties in
 | Memory (MB)   | The amount of memory, in megabytes, assigned to the virtual machine.   | Integer   | No   |
 | Nic (1-4)   | The name of the virtual network. You must enter a value for Nic1, but can leave Nics 2-4 blank if there are no additional networks. | String   | No   |
 | Number Processors   | The number of processors assigned to the virtual machine.   | Integer   | No   |
-| Power on after creation | Indicates whether to turn on the virtual machine after it is created.   | Boolean   | Yes   |
+| Power on after creation | Indicates whether to turn on the virtual machine after it's created.   | Boolean   | Yes   |
 | Resource Pool Path   | The path to the resource pool used by the virtual machine.   | String   | Yes   |
 | Virtual Disk Size(GB)   | The size of the virtual hard disk assigned to this virtual machine.   | Integer   | No   |
 | Virtual Machine Name   | The name of the virtual machine as it will appear in the vSphere user interface.   | String   | No   |
