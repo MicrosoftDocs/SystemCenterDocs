@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 32e0b1e4-6e53-42a3-a6e1-4f144d2e4073
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Host Properties Activity
@@ -23,11 +23,11 @@ manager: evansma
 
 ::: moniker-end
 
-The Get Host Properties activity is used in a runbook to retrieve a list of properties for a specified host in the VMware vSphere cluster. Examples of these properties include Connection Status (Powered on, disconnected, etc) and Maintenance Mode state.
+The Get Host Properties activity is used in a runbook to retrieve a list of properties for a specified host in the VMware vSphere cluster. Examples of these properties include Connection Status (Powered on, disconnected, and so on) and Maintenance Mode state.
 
 The following tables list the required and optional properties and published data for this activity.
 
-The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
+The activity publishes all the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
 ## Get Host Properties Activity Required Properties
 
@@ -61,9 +61,9 @@ The following procedure describes the steps required to configure a Get Host Pro
 ### To configure the Get Host Properties Activity
 
 1.  From the **Activities** pane, drag a **Get Host Properties** activity to the active runbook.
-2.  Double-click the **Get Host Properties** activity icon. The **Properties** dialog box opens.
+2.  Double-click the **Get Host Properties** activity icon. The **Properties** dialog opens.
 3.  Configure the settings in the **Properties** tab as follows:
-    1.  In the **Configuration** section, click the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Click **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can click the ellipsis **(...)** button next to the text box to browse for a value.
+    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
-4.  Click **Finish**.
+4.  Select **Finish**.

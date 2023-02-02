@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 0259e54f-d6ba-4e2e-92a9-c3d27102bf88
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Upload Document
@@ -38,7 +38,7 @@ The following tables list the optional and required properties and Published Dat
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
-| Document Folder | The document library relative path of the child folder to which the file is to be uploaded. If this property is not defined, the file is uploaded to the document library's root folder. | String   |
+| Document Folder | The document library relative path of the child folder to which the file is to be uploaded. If this property isn't defined, the file is uploaded to the document library's root folder. | String   |
 | Title   | The title to assign to the document.   | String   |
 
 ## Upload Document Published Data
