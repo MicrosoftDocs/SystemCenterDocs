@@ -47,18 +47,17 @@ Microsoft is committed to protect your privacy while delivering software that br
 
 Prior to implementing the Exchange Users Integration Pack, you must install and configure the following listed software. For more information on how to install and configure Orchestrator and the Exchange Users Integration Pack, see the respective product documentation.
 
-::: moniker range="<=sc-orch-2019"
+::: moniker range="<sc-orch-2019"
 
 - System Center 2016 integration packs require System Center 2016 - Orchestrator
-- System Center 2019 integration packs require System Center 2019 - Orchestrator
-- Microsoft .NET Framework 4.7
+- Microsoft .NET Framework 3.5
 - Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or Microsoft Exchange
     Online/Microsoft 365
 
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
-
+::: moniker range=">= sc-orch-2019"
+- System Center 2019 integration packs require System Center 2019 - Orchestrator
 - System Center 2022 integration packs require System Center 2022 - Orchestrator
 - Microsoft .NET Framework 4.7
 - Exchange accounts on,
