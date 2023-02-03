@@ -47,18 +47,17 @@ Microsoft is committed to protect your privacy while delivering software that br
 
 Prior to implementing the Exchange Users Integration Pack, you must install and configure the following listed software. For more information on how to install and configure Orchestrator and the Exchange Users Integration Pack, see the respective product documentation.
 
-::: moniker range="<=sc-orch-2019"
+::: moniker range="<sc-orch-2019"
 
 - System Center 2016 integration packs require System Center 2016 - Orchestrator
-- System Center 2019 integration packs require System Center 2019 - Orchestrator
 - Microsoft .NET Framework 3.5
 - Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or Microsoft Exchange
     Online/Microsoft 365
 
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
-
+::: moniker range=">= sc-orch-2019"
+- System Center 2019 integration packs require System Center 2019 - Orchestrator
 - System Center 2022 integration packs require System Center 2022 - Orchestrator
 - Microsoft .NET Framework 4.7
 - Exchange accounts on,
@@ -109,7 +108,7 @@ Here's how the connection will be established when the activity runs:
 
 ::: moniker-end
 
-::: moniker range="sc-orch-2022"
+::: moniker range=">= sc-orch-2019"
 
 ### Register an Azure AD client application in your tenant
 
@@ -212,7 +211,7 @@ The **Exchange Configuration (Item)** configuration is used for the remaining ac
    >[!NOTE]
    > If your email account is of the form `johndoe@contoso.onmicrosoft.com`, then your domain is *contoso.onmicrosoft.com*
 
-::: moniker range="sc-orch-2022"
+::: moniker range=">= sc-orch-2019"
 
 8. Set **Server is Exchange Online or Office365** to `True` if you're connecting to a managed Exchange Online or Office 365 Exchange instance. If so, follow these further steps (ignore otherwise):
 
@@ -228,19 +227,6 @@ The **Exchange Configuration (Item)** configuration is used for the remaining ac
 10. In the **Timeout** box, enter a timeout value or leave the default.
 11. Select **OK**.
 12. Add any more connections if needed, and then select **Finish**.
-::: moniker-end
-
-::: moniker range="sc-orch-2019"
-
-8. Set **ExchangeOnline** to `True` if you're connecting to a managed
-    Exchange Online or Office365 Exchange instance. If so, follow these further steps (ignore
-    otherwise):
-    1. In **Application ID**, specify the Azure AD client app ID created for this purpose.
-    2. In **Tenant ID**, specify your Azure AD Tenant ID seen on the AD portal.
-9. In the **Timeout** box, enter a timeout value or leave the default.
-10. Select **OK**.
-11. Add any more connections if needed, and then select **Finish**.
-
 ::: moniker-end
 
 ::: moniker range="<sc-orch-2019"
