@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 7b6d6bc5-6de0-4207-9f5e-b5405913f293
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Upload attachment to SharePoint

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 25a60cd2-3942-47f6-b671-e126f109d291
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Hosts Activity
@@ -27,7 +27,7 @@ The Get Hosts activity is used in a runbook to retrieve all the hosts attached t
 
 The following tables list the required and optional properties and published data for this activity.
 
-The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
+The activity publishes all the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
 ## Get Hosts Activity Required Properties
 No required properties are provided for this activity.
@@ -47,10 +47,10 @@ The following procedure describes the steps required to configure a Get Hosts ac
 
 1.  From the **Activities** pane, drag a **Get Hosts** activity to the active runbook.
 
-2.  Double-click the **Get Hosts** activity icon. The **Properties** dialog box opens.
+2.  Double-click the **Get Hosts** activity icon. The **Properties** dialog opens.
 
 3.  Configure the settings in the **Properties** tab as follows:
 
-    1.  In the **Configuration** section, click the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Click **OK**.
+    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
 
-4.  Click **Finish**.
+4.  Select **Finish**.
