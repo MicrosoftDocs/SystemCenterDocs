@@ -53,7 +53,7 @@ The following tables list the required properties, filters, and published data f
 | ID   | ID of the appointment   | Equals<br>Does not equal   |
 | Importance   | Importance of the appointment   | Equals<br>Does not equal   |
 | Is All Day Event   | Indicates whether the appointment is an all-day event   | Equals<br>Does not equal   |
-| Is Cancelled   | Indicates whether the appointment has been cancelled   | Equals<br>Does not equal   |
+| Is Cancelled   | Indicates whether the appointment has been canceled   | Equals<br>Does not equal   |
 | Is Meeting   | Indicates whether the appointment is a meeting   | Equals<br>Does not equal   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Equals<br>Does not equal   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Equals<br>Does not equal   |
@@ -100,7 +100,7 @@ The following tables list the required properties, filters, and published data f
 | ID   | ID of the appointment   | String   |
 | Importance   | The importance of the appointment   | String   |
 | Is All Day Event   | Indicates whether the appointment is an all day event   | Boolean   |
-| Is Cancelled   | Indicates whether the appointment has been cancelled   | Boolean   |
+| Is Cancelled   | Indicates whether the appointment has been canceled   | Boolean   |
 | Is Meeting   | Indicates whether the appointment is a meeting   | Boolean   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Boolean   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Boolean   |
