@@ -52,7 +52,7 @@ Because this activity targets individual computers and bypasses the normal commu
 
 ## Perform Client Action properties
 
-- Computer: The NetBIOS name, fully-qualified domain name (FQDN), or IP address of the Configuration Manager client.
+- Computer: The NetBIOS name, fully qualified domain name (FQDN), or IP address of the Configuration Manager client.
 - Action: The client action to be performed. Options are:
     -   Machine Policy Retrieval & Evaluation Cycle
     -   Software Updates Scan and Deployment Re-evaluation

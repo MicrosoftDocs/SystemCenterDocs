@@ -41,7 +41,7 @@ optional properties into published data.
 
 ## Deploy application properties
 
-- Deployment Name: The desired name for the new deployment that'll be shown in the Configuration Manager console.
+- Deployment Name: The desired name for the new deployment that will be shown in the Configuration Manager console.
 
 - Application: The display name or ID of an existing application.
 
@@ -71,8 +71,8 @@ optional properties into published data.
 
 - User Notification: Determines how the user sees the application and its notifications. Options are:
   - **Show all notifications** (default): the application is listed in the Software Center and all notifications are displayed to the user.
-  - **Show only restart notifications**: the application is not listed in the Software Center, but notifications about a required reboot are displayed to the user.
-  - **Hide all notifications**: the application is not listed in the Software Center, and notifications about a required reboot aren't displayed to the user.
+  - **Show only restart notifications**: the application isn't listed in the Software Center, but notifications about a required reboot are displayed to the user.
+  - **Hide all notifications**: the application isn't listed in the Software Center, and notifications about a required reboot aren't displayed to the user.
 
 >[!Note]
 > If you set this property to **Hide all notifications** and the Purpose property is set to **Available**, this property will automatically be reset to **Show only restart notifications** because Configuration Manager disallows that setting.

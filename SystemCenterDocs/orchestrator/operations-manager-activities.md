@@ -56,7 +56,7 @@ The Monitor and Get activities use filters to determine the values that will inv
 -   **Is greater than**: The property of the message is greater than the number in the filter.
 -   **Is greater than or equal to**: The property of the message is greater than or equal to the number specified in the filter.
 -   **Contains**: The property of the message contains the exact text specified in the filter. Unlike the Equals behavior, there can be other text surrounding the matching text.
--   **Does not contain**: The property of the message does not contain the exact text specified in the filter. Unlike the **Does not Equal** behavior, the result can contain other surrounding text.
+-   **Does not contain**: The property of the message doesn't contain the exact text specified in the filter. Unlike the **Does not Equal** behavior, the result can contain other surrounding text.
 -   **Matches pattern**: Use regular expressions to specify a pattern that the text must match.
 -   **Does not match pattern**: Use regular expressions to specify a pattern that the text must not match.
 -   **Starts with**: the property of the message starts with the exact text specified in the filter.

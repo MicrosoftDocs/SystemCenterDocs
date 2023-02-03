@@ -66,7 +66,7 @@ activity.
     >When this property is set to **Required**, a mandatory schedule must be defined on the **Schedule** tab or the activity will fail.
 - User Notification: Determines how the end-user sees the deployment and its notifications. Options are:
   - **Show all notifications** (default): The deployment is listed in the Software Center and all notifications are displayed to the user.
-  - **Show only restart notifications**: The deployment is not listed in the Software Center, but notifications about a required reboot are displayed to the user.
+  - **Show only restart notifications**: The deployment isn't listed in the Software Center, but notifications about a required reboot are displayed to the user.
   - **Hide all notifications**: The deployment isn't listed in the Software Center, and notifications about a required reboot aren't displayed to the user.
 
     >[!NOTE]
@@ -90,9 +90,9 @@ activity.
     >[!NOTE]
     >This setting applies only if the **Purpose** is set to **Required**.
 - Slow boundary deployment option: Specifies the options available when the client is within a slow or unreliable network boundary. Options are:
-    -   **Do not run program** (default): The program will not be run when a client is connected within a slow or unreliable network boundary.
+    -   **Do not run program** (default): The program won't be run when a client is connected within a slow or unreliable network boundary.
     -   **Download content and run locally**: the client will download the content from the Distribution Point before attempting to run the program.
-- Allow unprotected distribution point: True or False (Default = False) Specifies whether Configuration Manager will permit a client to use an unprotected distribution point if content is not immediately available on its protected distribution point, or if it forces a client to use the protected local distribution point if it is within the boundaries for that point.
+- Allow unprotected distribution point: True or False (Default = False) Specifies whether Configuration Manager will permit a client to use an unprotected distribution point if content isn't immediately available on its protected distribution point, or if it forces a client to use the protected local distribution point if it is within the boundaries for that point.
 - Suppress Restart on Servers: True or False (Default = False) When set to **True**, prevents the automatic restart of servers after update installation
 - Suppress Restart on Workstations: True or False (Default = False) When set to **True**, prevents the automatic restart of workstations after update installation
 - Comment: An optional comment associated with the deployment

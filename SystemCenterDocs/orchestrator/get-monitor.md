@@ -49,7 +49,7 @@ The following tables list the filters, properties, and published data for this a
 | Element   | Description   |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | AvailabilityLastModified   | The date and time that the availability of the monitor was last changed   |
-| Connection   | The connection string to the Operations Manager server that you are using   |
+| Connection   | The connection string to the Operations Manager server that you're using   |
 | DisplayName   | The display name of the Operations Manager monitoring object   |
 | Domain   | The domain from which the alert came   |
 | FullName   | The full name of the Operations Manager monitoring object   |

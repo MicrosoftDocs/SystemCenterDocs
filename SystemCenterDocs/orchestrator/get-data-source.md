@@ -23,7 +23,7 @@ manager: mkluck
 
 ::: moniker-end
 
-The Get Data Source activity retrieves information about Data Sources from either a production server (a computer that has the Data Protection Manager Protection Agent installed) or from a protection group (a named entity that holds the backup policy for a workload). A data source is a workload that is currently protected or will be protected by Data Protection Manager. When the Get Data Source activity is used in a protection scenario, you select a production server which becomes the default. When this activity is used in a recovery scenario, you will select a protection group or the production server. You then filter the list of data sources obtained using your own custom criteria that result in the data source(s) that you want to use in your runbook.
+The Get Data Source activity retrieves information about Data Sources from either a production server (a computer that has the Data Protection Manager Protection Agent installed) or from a protection group (a named entity that holds the backup policy for a workload). A data source is a workload that is currently protected or will be protected by Data Protection Manager. When the Get Data Source activity is used in a protection scenario, you select a production server, which becomes the default. When this activity is used in a recovery scenario, you'll select a protection group or the production server. You then filter the list of data sources obtained using your own custom criteria that result in the data source(s) that you want to use in your runbook.
 
 The common filters for this activity are as follows:
 

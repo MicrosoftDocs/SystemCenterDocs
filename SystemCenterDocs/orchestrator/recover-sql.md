@@ -25,9 +25,9 @@ robots: noindex
 
 The Recover SQL activity is used in a runbook that recovers a SQL database to its original location or to a network folder.
 
-Be aware that the term *Network Folder* is used in this integration pack in the same way that it's used in the Data Protection Manager user interface. Choosing Network Folder recovers to a local path on a production server. Therefore, the selection of Network Folder requires the name of a production server and a local path on that production server.
+The term *Network Folder* is used in this integration pack in the same way that it's used in the Data Protection Manager user interface. Choosing Network Folder recovers to a local path on a production server. Therefore, the selection of Network Folder requires the name of a production server and a local path on that production server.
 
-Also, be aware that recovery to any SQL Instance isn't a supported activity for this integration pack because Data Protection Manager doesn't support this scenario through its PowerShell API.
+Also, recovery to any SQL Instance isn't a supported activity for this integration pack because Data Protection Manager doesn't support this scenario through its PowerShell API.
 
 The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 

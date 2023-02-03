@@ -96,7 +96,7 @@ The Mandatory Schedule dialog contains the following elements:
 
 
 - Use the following schedule
-  * Enables the **Schedule** group which allows you to define a specific schedule.
+  * Enables the **Schedule** group, which allows you to define a specific schedule.
     * **None**: Specifies that the operation doesn't recur.
     * **Weekly**: Specifies that the operation recurs every N weeks. If this option is selected, you must specify the day of the week on which the operation will occur.
     * **Monthly**: Specifies that the operation recurs every N months. If this option is selected, you must specify the day of the month on which the operation will occur.

@@ -32,7 +32,7 @@ in the collection when it updates.
 To use this activity, a collection must already exist, which can be
 created by the **Create Collection** activity. Membership rules can be
 added to the collection by using the **Add Collection Rule** activity.
-To force re-evaluation of the collection’s membership after adding or
+To force reevaluation of the collection’s membership after adding or
 removing collection rules, use the **Update Collection Membership**
 activity.
 

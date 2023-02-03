@@ -25,7 +25,7 @@ robots: noindex
 
 The Recover VM activity is used in a runbook that recovers a virtual machine from a specified point in time so that it can be restored to a server running Hyper-V or to a network folder.
 
-Be aware that the term *Network Folder* is used in this integration pack in the same way that it's used in the Data Protection Manager user interface. Choosing Network Folder recovers to a local path on a production server. Therefore, the selection of Network Folder requires the name of a production server and a local path on that production server.
+The term *Network Folder* is used in this integration pack in the same way that it's used in the Data Protection Manager user interface. Choosing Network Folder recovers to a local path on a production server. Therefore, the selection of Network Folder requires the name of a production server and a local path on that production server.
 
 For example, you can use the Get Data Source activity to obtain the target virtual machine object so that it can be recovered. You can then use the Get Recovery Point activity to obtain the protected virtual machine's backup to be restored. Finally, the Recover VM activity can be used to recover the virtual machine to the specified server running Hyper-V, an alternate server running Hyper-V (as a disaster recovery scenario), or the cluster.
 

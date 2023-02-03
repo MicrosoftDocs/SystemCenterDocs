@@ -94,7 +94,7 @@ The following tables list the required and optional properties and published dat
 | AlertCount   | The number of monitoring alerts that were found   |
 | Category   | The category name of the Management Pack   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |
-| Connection   | The connection string to the Operations Manager server that you are using   |
+| Connection   | The connection string to the Operations Manager server that you're using   |
 | Company Knowledge   | Description of any relevant information, specific to business   |
 | ConnectorId   | The ID of the connector that generated the connection string   |
 | ConnectorStatus   | The status of the connector   |

@@ -1,6 +1,6 @@
 ---
 title: Delete Collection Activity
-description: This topic provides guidance on how to configure the Delete Collection activity for System Center 2016 Configuration Manager.
+description: This article provides guidance on how to configure the Delete Collection activity for System Center 2016 Configuration Manager.
 ms.custom: na
 ms.date: 03/08/2017
 ms.prod: system-center

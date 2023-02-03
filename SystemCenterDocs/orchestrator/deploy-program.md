@@ -70,9 +70,9 @@ optional properties into published data.
         >When this property is set to **Required**, a mandatory schedule must be defined on the **Schedule** tab or the activity will fail.
 
 - Rerun behavior: Specifies whether the program will be rerun on the client computer if it has previously been run before the scheduled mandatory time. Options are:
-    -   **Always rerun program** (default): The program will always be rerun on the client when the advertisement is scheduled, even if the program has already been successfully run. This is particularly useful when using recurring advertisements in which the program is routinely updated, as with some virus detection software.
+    -   **Always rerun program** (default): The program will always be rerun on the client when the advertisement is scheduled, even if the program has already been successfully run. This is useful when using recurring advertisements in which the program is routinely updated, as with some virus detection software.
     -   **Never rerun program**: The program won't be rerun on the client if the program has previously been run on the client, even if the program originally failed or the program files have been changed.
-    -   **Rerun if failed previous attempt**: The program will be rerun when the advertisement is scheduled only if it failed on the previous run attempt. This is particularly useful when assigning a mandatory advertisement, so that it will rerun according to the assignment schedule if it hasn't successfully done so.
+    -   **Rerun if failed previous attempt**: The program will be rerun when the advertisement is scheduled only if it failed on the previous run attempt. This is useful when assigning a mandatory advertisement, so that it will rerun according to the assignment schedule if it hasn't successfully done so.
     -   **Rerun if succeeded on previous attempt**: The program will be rerun only if it has previously run successfully on the client. This is useful when using recurring advertisements in which the program is routinely updated, and in which each update requires the previous update to have been successfully installed.
 
 - Distribution Point: The name of a distribution point to where the content for this deployment will be distributed. The name is typically in a UNC format, such as: “\\\\server1.contoso.com”
@@ -89,7 +89,7 @@ optional properties into published data.
 - Allow running independently of assignments: True or False (Default = False) Specifies whether or not users may run the program independently, regardless of its assignment status.
 - Allow Software Install Outside of Maintenance Windows: True or False (Default = False) Allows the application to install even if the installation would occur outside of a maintenance window.
 - Allow System Restart Outside of Maintenance Windows: True or False (Default = False) Allows the advertised program to restart the client even if the restart would occur outside of a maintenance window.
-- Allow unprotected distribution point: True or False (Default = False) Specifies whether Configuration Manager will permit a client to use an unprotected distribution point if content is not immediately available on its protected distribution point, or if it forces a client to use the protected local distribution point if it is within the boundaries for that point.
+- Allow unprotected distribution point: True or False (Default = False) Specifies whether Configuration Manager will permit a client to use an unprotected distribution point if content isn't immediately available on its protected distribution point, or if it forces a client to use the protected local distribution point if it is within the boundaries for that point.
 - Comment: An optional comment associated with the deployment.
 - Fast (LAN) boundary deployment option: Specifies how a program is run when the client is connected within a fast (LAN) network boundary. Options are:
     -   **Download content and run locally** (default): the client will download the content from the Distribution Point before attempting to run the program.
@@ -100,7 +100,7 @@ optional properties into published data.
     >This setting applies only if the **Purpose** is set to **Required**.
 
 - Slow boundary deployment option: Specifies the options available when the client is within a slow or unreliable network boundary. Options are:
-    -   **Do not run program** (default): The program will not be run when a client is connected within a slow or unreliable network boundary.
+    -   **Do not run program** (default): The program won't be run when a client is connected within a slow or unreliable network boundary.
     -   **Download content and run locally**: The client will download the content from the Distribution Point before attempting to run the program.
 
 - Use default distribution point groups: True or False (Default = True) If distribution point groups are already associated with this collection, the content associated with this deployment will automatically be distributed to those distribution point groups without having to specify individual distribution points or groups.
@@ -164,7 +164,7 @@ above:
 
 4. Configuring the **Schedule** tab:
 
-   The Schedule tab allows you to define when the deployment becomes available or when it expires, as well as mandatory assignment schedules. Mandatory assignment schedules cause Configuration Manager to automatically run the program at a specific time or according to a specific event, such as user Logon/Logoff. The settings on this tab are optional.
+   The Schedule tab allows you to define when the deployment becomes available or when it expires, and mandatory assignment schedules. Mandatory assignment schedules cause Configuration Manager to automatically run the program at a specific time or according to a specific event, such as user Logon/Logoff. The settings on this tab are optional.
    >[!NOTE]
    >When a deployment is set to **Required**, then a mandatory schedule must be defined for the deployment or the activity will fail.
 

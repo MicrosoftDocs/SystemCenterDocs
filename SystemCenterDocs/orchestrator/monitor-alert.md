@@ -89,8 +89,8 @@ The following tables list the filters, properties, and published data for this a
 |-----------------------------------|-------------------------------------------------------------------------------------------|
 | Category   | The category name of the Management Pack   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |
-| CompanyKnowledge   | Knowledge from the rule or monitor that triggered the alert; for instance remediation information. Not available in System Center 2016 SP1. |
-| Connection   | The connection string to the Operations Manager server that you are using   |
+| CompanyKnowledge   | Knowledge from the rule or monitor that triggered the alert; for instance, remediation information. Not available in System Center 2016 SP1. |
+| Connection   | The connection string to the Operations Manager server that you're using   |
 | ConnectorId   | The ID of the connector that generated the connection string   |
 | ConnectorStatus   | The status of the connector   |
 | Context   | The Operations Manager context of the alert   |

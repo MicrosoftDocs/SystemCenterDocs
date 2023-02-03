@@ -32,7 +32,7 @@ as application or software update deployments.
 Once a collection is created, its membership must be defined by adding
 collection membership rules using the **Add Collection Rule** activity.
 Membership rules can be removed from the collection by using the
-**Delete Collection Rule** activity. To force re-evaluation of the
+**Delete Collection Rule** activity. To force reevaluation of the
 collection’s membership after adding or removing collection rules, use
 the **Update Collection Membership** activity.
 

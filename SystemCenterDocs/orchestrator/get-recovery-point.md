@@ -31,7 +31,7 @@ The activity publishes all the data from the required and optional properties in
 
 | Element   | Sample Value   |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Selection   | Options are:Latest - the most recent recovery point associated with the data sourceAll - a list of all the data points associated with the data source (can return multiple values) |
+| Selection   | Options are: Latest - the most recent recovery point associated with the data sourceAll - a list of all the data points associated with the data source (can return multiple values) |
 | Data Source ID | The unique identifier (GUID) of the data source for the recovery point, which can be obtained via the Get Data Source activity.   |
 
 ## Get Recovery Point Filters

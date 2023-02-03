@@ -51,10 +51,10 @@ above:
 | Connection | Specifies the name of the connection to the Configuration Manager server |
 |  Collection ID | Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property). |
 |  AMTFullVersion | Provides the Intel Active Management Technology (Intel AMT) firmware version of this computer. The format is: MAJOR.MINOR.MICRO |
-|  AMTStatus | Status of the Intel AMT component of this computer. Possible values are:<br><br>NULL: Unknown<br>0: Computer is not supported<br>1: Computer is detected<br>2: Computer is not provisioned<br>3: Computer is provisioned |
+|  AMTStatus | Status of the Intel AMT component of this computer. Possible values are:<br><br>NULL: Unknown<br>0: Computer isn't supported<br>1: Computer is detected<br>2: Computer isn't provisioned<br>3: Computer is provisioned |
 |  ClientCertType | Type of certificate used by the client. Possible values are:<br><br>1.  Self-signed<br>2.  Issued by CA |
 |  ClientType | Type of client. Possible values are:<br><br>1.  Client<br>2.  Device |
-|  ClientVersion | he version ID of the client |
+|  ClientVersion | The version ID of the client |
 |  Domain | Domain to which the resource belongs. |
 | Is Always Internet | True or False. True if this is an Internet-facing client. |
 | Is Approved | True or False. True if the client is approved. |
@@ -68,7 +68,7 @@ above:
 |  Is Virtual Machine | True or False. True if this is a virtual machine. |
 | Member Name | Name of the resource. |
 |  Member Resource Type | Type of resource. Possible values are:<br><br>System<br>User group<br>User |
-| Resource ID  | Unique ID supplied by Configuration Manager for the resource. This ID is not unique across sites. |
+| Resource ID  | Unique ID supplied by Configuration Manager for the resource. This ID isn't unique across sites. |
 | Site Code | Site code of the site that created the collection.
 | SMSID | Configuration Manager unique ID |
 |  Suppress Auto Provision | True or False. When set to true and when this resource belongs to a collection configured for automatic provisioning, it prevents the resource from being automatically provisioned by an Out of Band service point. |

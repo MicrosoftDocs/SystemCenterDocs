@@ -31,7 +31,7 @@ Microsoft is committed to protecting your privacy while delivering software that
 
 ## System Requirements
 
-Before you can install the Integration Pack for Configuration Manager, you must first install and configure the following listed software. For more information about how to install and configure Orchestrator and Active Directory, refer to the respective product documentation.
+Before you can install the Integration Pack for Configuration Manager, you must first install and configure the following listed software. For more information about how to install and configure Orchestrator and Active Directory, see the respective product documentation.
 
 -   System Center integration packs require System Center - Orchestrator and Configuration Manager.
 
@@ -52,7 +52,7 @@ Before you can install the Integration Pack for Configuration Manager, you must 
 
 ## Registering and deploying the Integration Pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](how-to-add-an-integration-pack.md).
+After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](how-to-add-an-integration-pack.md).
 
 ## Configuring the Configuration Manager Integration Pack connection settings
 
