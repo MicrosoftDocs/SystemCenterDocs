@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 3cd9da10-0931-4029-b313-7860eda9ba27
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Move Or Copy Item
