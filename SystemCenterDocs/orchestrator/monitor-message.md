@@ -90,7 +90,7 @@ The following tables list the required properties and published data for this ac
 | Message Key   | String that enables other processes to identify messages that relate to each other.   | String   |
 | Message Text   | Brief description of the event that the message relates to.   | String   |
 | Message Type   | String used for organizing messages.   | String   |
-| Monitor Acknowledged Messages   | The runbook will be invoked if the monitor detects a message than that was acknowledged.   | Boolean   |
+| Monitor Acknowledged Messages   | The runbook will be invoked if the monitor detects a message that was acknowledged.   | Boolean   |
 | Monitor Modified Messages   | The runbook will be invoked if the monitor detects a modified message.   | Boolean   |
 | Monitor New Messages   | The runbook will be invoked if the monitor detects a new message.   | Boolean   |
 | Monitor UnAcknowledged Messages | The runbook will be invoked if the monitor detects a message that was unacknowledged.   | Boolean   |
@@ -117,7 +117,7 @@ The following tables list the required properties and published data for this ac
 
 ## Other activities
 
-The Integration Pack for HP Operations Manager integration contains the following additional activities:
+The Integration Pack for HP Operations Manager integration contains the following other activities:
 
 - [Acknowledge Message](acknowledge-message.md)
 - [Add Annotation to Message](add-annotation-to-message.md)
