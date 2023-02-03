@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: ee86105b-c786-4aee-b2ec-8cfcd88f8fc5
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Collection Member activity for Configuration Manager Integration Pack
@@ -37,7 +37,7 @@ specified.
 - Collection Name: The display name or ID of an existing collection
     >[!NOTE]
     >When you use the browse feature to look up a collection name, or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
-- Collection Value Type   Specifies whether the value in the **Collection** property is a name or a collection ID. Options are:
+- Collection Value Type: Specifies whether the value in the **Collection** property is a name or a collection ID. Options are:
     - **ID** (default): the value is a collection ID
     - **Name**: the value is a collection name
 
@@ -71,7 +71,7 @@ above:
 | Resource ID  | Unique ID supplied by Configuration Manager for the resource. This ID is not unique across sites. |
 | Site Code | Site code of the site that created the collection.
 | SMSID | Configuration Manager unique ID |
-|  Suppress Auto Provision | True or False. When set to true and when this resource belongs to a collection configured for automatic provisioning, prevents the resource from being automatically provisioned by an Out of Band service point. |
+|  Suppress Auto Provision | True or False. When set to true and when this resource belongs to a collection configured for automatic provisioning, it prevents the resource from being automatically provisioned by an Out of Band service point. |
 
 ## Configuring the Get Collection Member activity
 
@@ -79,21 +79,21 @@ above:
     activity to the active runbook.
 
 2.  Double-click the **Get Collection Member** activity icon. The
-    **Properties** dialog box opens.
+    **Properties** dialog opens.
 
 3.  Configuring the **Details** tab:
 
-    1.  In the **Connection** section, click the ellipsis button
+    1.  In the **Connection** section, select the ellipsis button
         **(...)**, and then select the Configuration Manager server
-        connection that you want to use for this activity. Click **OK**.
+        connection that you want to use for this activity. Select **OK**.
 
     2.  In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
-        click the ellipsis **(...)** button next to the text box to browse
+        select the ellipsis **(...)** button next to the text box to browse
         for a value.
 
         You can also use published data to automatically populate the
         value of the property from the data output by a previous
         activity in the runbook.
 
-4.  Click **Finish**.
+4.  Select **Finish**.

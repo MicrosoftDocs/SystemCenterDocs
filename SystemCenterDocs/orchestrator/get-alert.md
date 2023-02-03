@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: bbfd5c5d-8b67-4ee1-93d8-758e4cd03cd6
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Alert
@@ -25,7 +25,9 @@ manager: evansma
 
 The Get Alert activity is used in a runbook to retrieve alerts from Operations Manager that match the criteria that you specify. You can use the Get Alert activity to retrieve an alert and replicate the information to a ticketing system for troubleshooting.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. 
+
+The following tables list the required and optional properties and published data for this activity.
 
 ## Get Alert Filters
 

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: b1197648-35b2-4366-886e-1c93dca4f1cf
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ROBOTS: noindex
 ---
 
@@ -29,9 +29,7 @@ deployments and assign them to collections. This activity uses the new
 Configuration Manager application model and relies on applications
 rather than packages and programs.
 
-To deploy a legacy application (package/program), use the **Deploy
-Program** activity. To deploy a task sequence, use the **Deploy Task
-Sequence** activity. To deploy software updates in an update group, use
+To deploy a legacy application (package/program), use the **Deploy Program** activity. To deploy a task sequence, use the **Deploy Task Sequence** activity. To deploy software updates in an update group, use
 the **Deploy Software Update** activity. To get status on deployments
 you’ve created, use the **Get Deployment Status** activity.
 
@@ -43,7 +41,7 @@ optional properties into published data.
 
 ## Deploy application properties
 
-- Deployment Name: The desired name for the new deployment that will be shown in the Configuration Manager console
+- Deployment Name: The desired name for the new deployment that'll be shown in the Configuration Manager console.
 
 - Application: The display name or ID of an existing application.
 
@@ -58,7 +56,7 @@ optional properties into published data.
 
   - **ID** (default): the value is a collection ID
 
-  -   **Name**: the value is a collection name             
+  -   **Name**: the value is a collection name
 
 - Purpose: The deployment intent or purpose. Options are:
   - **Required** (default): the application is mandatory to be installed or uninstalled
@@ -74,21 +72,20 @@ optional properties into published data.
 - User Notification: Determines how the user sees the application and its notifications. Options are:
   - **Show all notifications** (default): the application is listed in the Software Center and all notifications are displayed to the user.
   - **Show only restart notifications**: the application is not listed in the Software Center, but notifications about a required reboot are displayed to the user.
-
-  - **Hide all notifications**: the application is not listed in the Software Center, and notifications about a required reboot are not displayed to the user.
+  - **Hide all notifications**: the application is not listed in the Software Center, and notifications about a required reboot aren't displayed to the user.
 
 >[!Note]
 > If you set this property to **Hide all notifications** and the Purpose property is set to **Available**, this property will automatically be reset to **Show only restart notifications** because Configuration Manager disallows that setting.
 
 - Distribution Point: The name of a distribution point to where the content for this deployment will be distributed. The name is typically in a UNC format, such as: “\\\\server1.contoso.com”
 
-> [!Note]                             
-> If there are no default distribution point groups associated with the collection, and the content is not already distributed, this property or the **Distribution Point Group** property must have a value or the activity will fail.
+> [!Note]
+> If there are no default distribution point groups associated with the collection and the content isn't already distributed, this property or the **Distribution Point Group** property must have a value or the activity will fail.
 
 - Distribution Point Group: The name of a distribution point group to where the content for this deployment will be distributed.
 
 > [!Warning]
-> If there are no default distribution point groups associated with the collection, and the content is not already distributed, this property or the **Distribution Point** property must have a value or the activity will fail.
+> If there are no default distribution point groups associated with the collection and the content isn't already distributed, this property or the **Distribution Point** property must have a value or the activity will fail.
 
 ## Deploy application optional properties
 
@@ -133,7 +130,7 @@ The following values are published in addition to the input values above:
    to the active runbook.
 
 2. Double-click the **Deploy Application** activity icon. The
-   **Properties** dialog box opens.
+   **Properties** dialog opens.
 
 3. Configuring the **Details** tab:
 

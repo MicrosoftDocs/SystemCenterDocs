@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 36855461-0113-451b-86f9-e10656fd8b15
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Data Source
@@ -30,12 +30,12 @@ The common filters for this activity are as follows:
 -   Name contains or matches a pattern
 -   Protected - True or False
 
-This activity returns the Data Source ID (DataSourceId) which is used in all activities except Get DPM Server Capacity.
+This activity returns the Data Source ID (DataSourceId), which is used in all activities except Get DPM Server Capacity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 >[!IMPORTANT]
->The Protect Data Source activity does not support adding the FileSystem datasource type to a DPM Protection Group. If you need to protect file system datasources, you must use the Run DPM PowerShell Script activity to add FileSystem datasource types to a protection group.
+>The Protect Data Source activity doesn't support adding the FileSystem datasource type to a DPM Protection Group. If you need to protect file system datasources, you must use the Run DPM PowerShell Script activity to add FileSystem datasource types to a protection group.
 
 ## Get Data Source Required Properties
 

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 4d2feb46-3f4c-4ed6-adbf-50097f94ea61
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Configuration Manager Integration Pack for System Center - Orchestrator
@@ -27,7 +27,7 @@ The Integration Pack for Configuration Manager is an add-on for System Center - 
 
 With this integration pack, you can also create workflows that interact with and transfer information to the integration packs for System Center Service Manager, System Center Data Protection Manager, System Center Operations Manager, and System Center Virtual Machine Manager.
 
-Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more Orchestrator-related privacy information, see the [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more Orchestrator-related privacy information, see the [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ## System Requirements
 
@@ -60,16 +60,19 @@ Connections provide a way for you to define the way that the Configuration Manag
 
 ### To set up a Configuration Manager connection
 
-1.  In the Runbook Designer, click **Options**, and then click **Configuration Manager**. The **Configuration Manager** dialog box appears.
+1.  In the Runbook Designer, select **Options**, and select **Configuration Manager**. The **Configuration Manager** dialog appears.
 
-2.  On the **Connections** tab, click **Add** to begin the connection setup. The **Add Connection** dialog box appears.
+2.  On the **Connections** tab, select **Add** to begin the connection setup. The **Add Connection** dialog appears.
 
 3.  In the **Name** box, enter a name for the connection. This could be the name of the *Active Directory* domain, or a descriptive name to distinguish the type of connection.
 
-4.  In the Server box, type the name or IP address of the Configuration Manager computer. If you are using the computer name, you can type the NetBIOS name or the fully qualified domain name (FQDN). If you have installed Orchestrator on the Configuration Manager server, you can type “Localhost” or the NetBIOS name of the server.
+4.  In the Server box, enter the name or IP address of the Configuration Manager computer. If you're using the computer name, you can enter the NetBIOS name or the fully qualified domain name (FQDN). If you've installed Orchestrator on the Configuration Manager server, you can enter “Localhost” or the NetBIOS name of the server.
 
-5.  In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to connect to the Configuration Manager Site Server. Note that the Username includes the domain name, for example: “contoso\admin”.
+5.  In the **Username** and **Password** boxes, enter the credentials that Orchestrator will use to connect to the Configuration Manager Site Server. 
 
-6.  Click **Test Connection**. When the message "Successfully connected" appears, click OK.
+> [!NOTE]
+> The Username includes the domain name, for example: “contoso\admin”.
 
-7. Click OK to close the configuration dialog box, and then click Finish.
+6.  Select **Test Connection**. When the message "Successfully connected" appears, select **OK**.
+
+7. Select **OK** to close the configuration dialog, and select **Finish**.

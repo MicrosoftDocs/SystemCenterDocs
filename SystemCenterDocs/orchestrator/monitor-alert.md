@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: e3763763-05be-47ae-81bc-5efa349863f9
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Monitor Alert

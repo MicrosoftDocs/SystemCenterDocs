@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 2cddc23c-c3b6-4cd7-be8c-446fb557e24b
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Recovery Point
@@ -25,13 +25,13 @@ manager: evansma
 
 The Get Recovery Point activity is used in a runbook that queries a data source for all its associated recovery points or only the most recent recovery point.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get Recovery Point Required Properties
 
 | Element   | Sample Value   |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Selection   | Options are:Latest- the most recent recovery point associated with the data sourceAll - a list of all the data points associated with the data source (can return multiple values) |
+| Selection   | Options are:Latest - the most recent recovery point associated with the data sourceAll - a list of all the data points associated with the data source (can return multiple values) |
 | Data Source ID | The unique identifier (GUID) of the data source for the recovery point, which can be obtained via the Get Data Source activity.   |
 
 ## Get Recovery Point Filters

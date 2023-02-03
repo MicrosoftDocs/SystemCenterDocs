@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 196b2938-3b17-4ab8-bfe9-3f5fb17ba159
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Monitor
@@ -25,7 +25,7 @@ manager: evansma
 
 The Get Monitor activity is used in a runbook to retrieve monitoring activities from Operations Manager that match the criteria that you specify. For example, you can use the Get Monitor activity to retrieve a message and replicate the information to a trouble ticketing system.
 
-The following tables list the filters, properties, and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
+The following tables list the filters, properties, and published data for this activity. The activity publishes all the data from the required and optional properties into published data.
 
 ## Get Monitor Filters
 
