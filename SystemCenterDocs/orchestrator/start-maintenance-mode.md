@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 1297492c-caa3-4bd9-a488-afd41b00665c
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Start Maintenance Mode
@@ -27,7 +27,9 @@ The Start Maintenance Mode activity puts a monitor in Operations Manager into ma
 
 If you choose to put a computer (Microsoft.Windows.Computer or Microsoft.Unix.Computer) into maintenance mode, then all child monitors for that computer will also be put in maintenance mode.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data.
+
+The following tables list the required and optional properties and published data for this activity.
 
 ## Start Maintenance Mode Required Properties
 

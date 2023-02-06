@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 46968478-f49f-487a-ab84-07d9e2506718
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create New Disk from VHD
@@ -25,7 +25,7 @@ robots: noindex
 
 The Create New Disk from VHD activity is used to create a new disk from a VHD and add the disk to an existing virtual machine.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create New Disk from VHD Required Properties
 

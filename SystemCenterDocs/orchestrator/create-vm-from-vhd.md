@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 87146c7c-d1e7-4faf-a079-7814a81b9f1b
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create VM from VHD
@@ -25,15 +25,15 @@ robots: noindex
 
 The Create VM from VHD activity is used to create a new virtual machine from an existing virtual hard disk.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create VM from VHD Required Properties
 
 | Element   | Description    |
 |:---|:---|
-| Disk Bus   | The IDE or SCSI bus to which to attach the virtual disk drive. If you select &lt;Auto&gt; then the first available value will be selected.   |
+| Disk Bus   | The IDE or SCSI bus to which to attach the virtual disk drive. If you select &lt;Auto&gt;, then the first available value will be selected.   |
 | Disk File Name   | The name of the destination VHD   |
-| Disk Logical Unit Number (LUN) | The logical unit number (LUN) for a virtual disk drive object on an IDE or SCSI bus. If you select &lt;Auto&gt; then the first available value will be selected. |
+| Disk Logical Unit Number (LUN) | The logical unit number (LUN) for a virtual disk drive object on an IDE or SCSI bus. If you select &lt;Auto&gt;, then the first available value will be selected. |
 | Path   | The path of the virtual machine in the format C:\\VMM   |
 | Virtual Hard Disk Path   | The location of the VHD used to create the virtual machine   |
 | VM Host   | The full computer name of the host computer for Virtual Machine Manager   |

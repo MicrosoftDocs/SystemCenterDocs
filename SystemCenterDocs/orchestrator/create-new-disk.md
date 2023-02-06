@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 6565cdb0-f0f7-4d4a-a08d-f4016806e0c6
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create New Disk
@@ -25,7 +25,7 @@ robots: noindex
 
 The Create New Disk activity is used to create a new disk and add it to a virtual machine.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create New Disk Required Properties
 

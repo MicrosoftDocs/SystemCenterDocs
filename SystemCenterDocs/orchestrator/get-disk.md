@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 18befb12-ce3b-48e3-98fc-7d7b6ff34ff9
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Disk
@@ -25,7 +25,7 @@ manager: evansma
 
 The Get Disk activity is used to retrieve an existing virtual disk based on the filters that you specify.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get Disk Required Properties
 

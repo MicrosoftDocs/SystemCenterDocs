@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 114d69dd-6ae6-488a-bb61-483df029728a
 author: jyothisuri
 ms.author: jsuri
-manager: ievansma
+manager: mkluck
 ---
 
 # Get Network Adapter
@@ -25,7 +25,7 @@ manager: ievansma
 
 The Get Network Adapter activity is used to retrieve an existing Virtual Network Adapter based on the filters you specify.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get Network Adapter Filters
 

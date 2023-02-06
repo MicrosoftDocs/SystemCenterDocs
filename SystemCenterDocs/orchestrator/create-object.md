@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: ef4f2dd4-3ba2-4781-a0a9-cd153feb8ea9
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Object
@@ -25,9 +25,9 @@ robots: noindex
 
 The Create Object is used to create a new Service Manager record associated with a specified class. This activity includes support for incidents and changes.
 
-The following published data element is specific to Create Object. Additional published data is generated based on the class that you selected when you defined the object. For a list of the data elements published by each class, see Service Manager Published Data.
+The following published data element is specific to Create Object. Additional published data is generated based on the class that you selected when you defined the object. For a list of data elements published by each class, see Service Manager Published Data.
 
-Certain classes contain a mandatory ID property which requires a GUID. Generating a GUID is the responsibility of the workflow author, and can be generated using a .NET scripting activity with the following procedure.
+Certain classes contain a mandatory ID property, which requires a GUID. Generating a GUID is the responsibility of the workflow author and can be generated using a .NET scripting activity with the following procedure.
 
 #### To create a class with an ID property
 

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 047a8606-628d-4689-bfbc-336163cc52ba
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Checkpoint
@@ -25,7 +25,7 @@ manager: evansma
 
 The Get Checkpoint activity is used to retrieve a virtual machine checkpoint based on the filters you specify so that it can be used to restore the virtual machine to a previous state.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get Checkpoint Filters
 
@@ -38,7 +38,7 @@ The activity publishes all of the data from the required and optional properties
 | ID   | The unique identifier (GUID) of the checkpoint inside the platform; for example, Hyper-V, VMWare, or Virtual Server   |  
 | Description   | An alphanumeric description of the checkpoint   |  
 | Disk I/O (IOPS)   | The disk I/O performance, measured by the number of I/O operations per second (IOPS) that can be performed with acceptable latency |  
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |  
+| Enabled   | True or False. If False, the virtual machine can't be started.   |  
 | Modified Time   | The date and time that the checkpoint was modified in the format yyyy-mm-dd hh:mm:ss AM or PM   |  
 | Most Recent   | True or False   |  
 | Parent Checkpoint ID | The unique identifier (GUID) of the parent of the checkpoint   |  

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 4c5d8bf4-cb22-443f-b5fb-ff4361e081a6
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create VM from Template
@@ -25,7 +25,7 @@ robots: noindex
 
 The Create VM from Template activity is used to create a new virtual machine from the specified template.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create VM from Template Required Properties
 
@@ -56,7 +56,7 @@ The activity publishes all of the data from the required and optional properties
 | Full Name                 | The full name of the owner that is specified during Sysprep as part of operating system install                                                                                                                                                                                                                                                                                                   |
 | Guest OS Profile          | The full path and file name of the library resource that contains the most common settings from a Sysprep.inf file. This includes the computer name and domain or workgroup settings, which can be applied to a virtual machine Template                                                                                                                                                          |
 | Hardware Profile          | The full path and file name of the library resource containing hardware specifications that can be applied to a new virtual machine or to a virtual machine Template. A hardware profile can contain specifications for CPU, memory, network adapters, a DVD drive, a floppy drive, COM ports, and the priority given to the virtual machine when allocating resources on a virtual machine host. |
-| Memory (MB)               | The total amount of memory on the host that is assigned to the virtual machine in megabytes (MB)                                                                                                                                                                                                                                                                                                  |
+| Memory (MB)               | The total amount of memory on the host that's assigned to the virtual machine in megabytes (MB)                                                                                                                                                                                                                                                                                                  |
 | Network Location          | The network location for a physical network adapter or for a virtual network adapter                                                                                                                                                                                                                                                                                                              |
 | Network Spoofing          | True or False                                                                                                                                                                                                                                                                                                                                                                                     |
 | Network Tag               | An alphanumeric value of your choice used to locate related networks                                                                                                                                                                                                                                                                                                                              |

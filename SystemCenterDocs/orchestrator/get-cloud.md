@@ -7,7 +7,7 @@ ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Cloud activity
@@ -20,7 +20,7 @@ manager: evansma
 
 The Get Cloud activity is used in a runbook to return all clouds on the VMM management server that meet the filtering criteria.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Required properties
 

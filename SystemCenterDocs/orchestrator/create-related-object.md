@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 06e71bd9-60d6-4a75-b658-d34791a75e5b
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Related Object
@@ -25,7 +25,7 @@ robots: noindex
 
 The Create Related Object activity is used to create a new Service Manager object that is related to other existing objects either by membership or by a hosted relationship.
 
-The following published data elements are specific to Create Related Object. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see Service Manager Published Data.
+The following published data elements are specific to Create Related Object. Additional published data is generated based on the class that you select when you define the activity. For a list of data elements published by each class, see Service Manager Published Data.
 
 Certain classes contain a mandatory ID property which requires a GUID. Generating a GUID is the responsibility of the workflow author, and can be generated using a .NET scripting activity with the following procedure.
 
@@ -35,7 +35,7 @@ Certain classes contain a mandatory ID property which requires a GUID. Generatin
 
 2.  On the Published Data tab, define the GUID variable using the following settings:Name: guidType: StringVariable: GUID
 
-When the .NET Script Activity runs, it will generate a GUID that you can subscribe to in the ID property of the activity you are creating.
+When the .NET Script Activity runs, it will generate a GUID that you can subscribe to in the ID property of the activity you're creating.
 
 ## Create Related Object Published Data
 
