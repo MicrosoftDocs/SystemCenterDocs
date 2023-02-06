@@ -37,4 +37,4 @@ Cloud ID<br>Capability Profiles<br>Cloud Name<br>Logical Networks<br>Memory (MB)
 
 ## Published data
 
-There is no published data for this activity.
+There's no published data for this activity.

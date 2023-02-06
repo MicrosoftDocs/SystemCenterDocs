@@ -1,5 +1,5 @@
 ---
-title: Get Service Template activity in System Center - Orhcestra
+title: Get Service Template activity in System Center - Orchestra
 description: The Get Service Template activity is used in a runbook to return a list of all service templates.
 ms.date: 01/22/2018
 ms.prod: system-center
@@ -32,4 +32,4 @@ There are no optional properties for this activity.
 
 ## Published data
 
-There is no published data for this activity.
+There's no published data for this activity.

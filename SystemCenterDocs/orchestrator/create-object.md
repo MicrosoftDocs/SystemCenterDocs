@@ -35,7 +35,7 @@ Certain classes contain a mandatory ID property, which requires a GUID. Generati
 
 2.  On the Published Data tab, define the GUID variable using the following settings:Name: guidType: StringVariable: GUID
 
-When the .NET Script Activity runs, it will generate a GUID that you can subscribe to in the ID property of the activity you are creating.
+When the .NET Script Activity runs, it will generate a GUID that you can subscribe to in the ID property of the activity you're creating.
 
 ## Create Object Published Data
 

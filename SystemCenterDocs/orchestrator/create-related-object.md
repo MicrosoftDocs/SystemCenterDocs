@@ -27,7 +27,7 @@ The Create Related Object activity is used to create a new Service Manager objec
 
 The following published data elements are specific to Create Related Object. Additional published data is generated based on the class that you select when you define the activity. For a list of data elements published by each class, see Service Manager Published Data.
 
-Certain classes contain a mandatory ID property which requires a GUID. Generating a GUID is the responsibility of the workflow author, and can be generated using a .NET scripting activity with the following procedure.
+Certain classes contain a mandatory ID property, which requires a GUID. Generating a GUID is the responsibility of the workflow author, and can be generated using a .NET scripting activity with the following procedure.
 
 #### To create a class with an ID property
 

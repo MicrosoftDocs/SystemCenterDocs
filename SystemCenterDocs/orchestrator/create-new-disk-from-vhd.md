@@ -55,7 +55,7 @@ The activity publishes all the data from the required and optional properties in
 | Bus   | The IDE or SCSI bus to which to attach the disk   |   
 | Bus Type   | IDE or SCSI   |   
 | Description   | An alphanumeric description of the disk   |   
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |   
+| Enabled   | True or False. If False, the virtual machine can't be started.   |   
 | File Name   | The name of the VHD on which the new disk will be based   |   
 | Is VHD   | True or False   |   
 | LUN   | The logical unit number (LUN) for the VHD object on an IDE or SCSI bus   |   

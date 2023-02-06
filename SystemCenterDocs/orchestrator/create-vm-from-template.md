@@ -101,7 +101,7 @@ The activity publishes all the data from the required and optional properties in
 | Domain Password   | The password used to join the computer to a domain, if Domain Name has a value   |   
 | Domain User Name   | The user name used to join the computer to a domain, if Join Domain = True   |   
 | Disk I/O (IOPS)   | The disk I/O performance, measured by the number of I/O operations per second \[IOPS\] that can be performed with acceptable latency   |   
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |   
+| Enabled   | True or False. If False, the virtual machine can't be started.   |   
 | Expected CPU Utilization %   | Two-digit percent value that represents the average CPU usage for the virtual machine   |   
 | Failed Job ID   | The unique identifier (GUID) of the most recent failed job   |   
 | Full Name   | The full name of the owner that is specified during Sysprep as part of operating system install   |   
@@ -155,7 +155,7 @@ The activity publishes all the data from the required and optional properties in
 | Time Synchronization Enabled   | True or False   |   
 | Total Size   | The total size of the virtual machine, including all disks and configuration files   |   
 | Undo Disks Enabled   | True or False. If True, the virtual machine can undo any changes when shutting down.   |   
-| Unsupported Reason   | If an error occurs during creation of the virtual machine, this message text describes the reason that the attempted action is not supported   |   
+| Unsupported Reason   | If an error occurs during creation of the virtual machine, this message text describes the reason that the attempted action isn't supported   |   
 | Use Hardware Assisted Virtualization | True or False   |   
 | User Role   | The user role that allows users to create virtual machines   |   
 | User Role ID   | The unique identifier (GUID) of the user role that allows users to create virtual machines   |   
@@ -164,7 +164,7 @@ The activity publishes all the data from the required and optional properties in
 | Virtual Disk Drives   | A list of the names of Virtual Disk Drives   |   
 | Virtual Floppy Drive   | A list of the names of Virtual Floppy Drives   |   
 | Virtual Hard Disks   | A list of the names of Virtual Hard Disks   |   
-| Virtualization Platform   | The virtualization platform. Valid values are: HyperV, VMWareESX, or Unknown.   |   
+| Virtualization Platform   | The virtualization platform. Valid values are: Hyper-V, VMWareESX, or Unknown.   |   
 | Virtual Network   | The name of the virtual network   |   
 | Virtual Network Adapters   | A list of the names of Virtual Network Adapters   |   
 | Virtual SCSI Adapters   | A list of the names of Virtual SCSI Adapters   |   

@@ -37,4 +37,4 @@ VM Host Name
 
 ## Published data
 
-There is no published data for this activity.
+There's no published data for this activity.
