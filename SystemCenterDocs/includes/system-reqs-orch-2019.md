@@ -27,7 +27,7 @@ The following sections provide general performance and scalability guidance for 
 The following versions of Windows Server operating system are supported.
 
 | Component        | Windows Server 2016 Standard, Datacenter with Desktop Experience | Windows Server 2019 Standard, Datacenter with Desktop Experience |
-| :--------------- | :--------------------------------------------------------------- | :--------------------------------------------------------------- |  |
+| :--------------- | :--------------------------------------------------------------- | :--------------------------------------------------------------- |
 | All server roles | Supported                                                        | Supported                                                        |
 
 
@@ -36,7 +36,7 @@ The following versions of Windows Server operating system are supported.
 The following versions of Windows client operating system are supported for the Orchestrator.
 
 | Component        | Windows Server 2016 Standard, Datacenter with Desktop Experience | Windows Server 2019 Standard, Datacenter with Desktop Experience | Windows 10 |
-| :--------------- | :--------------------------------------------------------------- | :--------------------------------------------------------------- | :--------- |  |
+| :--------------- | :--------------------------------------------------------------- | :--------------------------------------------------------------- | :--------- |
 | Runbook Designer | supported                                                        | Supported                                                        | Supported  |
 
 ## Software
