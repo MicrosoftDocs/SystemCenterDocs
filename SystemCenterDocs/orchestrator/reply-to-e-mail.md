@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 6a81c1b1-081b-4b2d-b292-90030263fd96
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Reply To E-Mail
@@ -31,7 +31,7 @@ The following tables list the required properties, optional properties, and publ
 
 | **Element**  | **Description**   | **Valid values** |
 |:---|:---|:---|
-| ID   | The ID of the existing e-mail message to reply to   | String   |
+| ID   | The ID of the existing email message to reply to   | String   |
 | Reply To All | Indicates whether the response should be sent to all recipients of the original message   | True<br>False   |
 | Body Prefix  | The prefix that will be prepended to the original message's body when the reply is created | String   |
 
@@ -54,7 +54,7 @@ The following tables list the required properties, optional properties, and publ
 | Domain   | Domain the Exchange server belongs to   | String   |
 | Exchange Server Address | Address of the Exchange server   | String   |
 | ID   | The ID of the item   | String   |
-| Reply To All   | Indicates whether the response should be send to all recipients of the original message | Boolean   |
+| Reply To All   | Indicates whether the response should be sent to all the recipients of the original message | Boolean   |
 | Timeout (seconds)   | Connection timeout threshold   | Number   |
 | Use Autodiscover   | Whether or not the Autodiscover service is being used   | Boolean   |
-| User Name   | User name used to log on to Exchange Server   | String   |
+| User Name   | User name used to sign in to Exchange Server   | String   |

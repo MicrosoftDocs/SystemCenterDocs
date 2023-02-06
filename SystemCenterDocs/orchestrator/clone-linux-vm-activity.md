@@ -1,6 +1,6 @@
 ---
 title: Clone Linux VM activity
-description: The articles describes the Clone Linux VM activity,  to create a copy of an existing Linux virtual machine or template in a runbook.
+description: The article describes the Clone Linux VM activity,  to create a copy of an existing Linux virtual machine or template in a runbook.
 ms.custom: na
 ms.date: 01/17/2018
 ms.prod: system-center
@@ -8,7 +8,7 @@ ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ---
 
 # Clone Linux VM activity
@@ -19,11 +19,11 @@ manager: carmonm
 
 ::: moniker-end
 
-The Clone Linux VM activity is used in a runbook to create a copy of an existing Linux virtual machine or template. This can be used to create new virtual machines quickly and easily using existing virtual machines or templates as models.
+The Clone Linux VM activity is used in a runbook to create a copy of an existing Linux virtual machine or template. This can be used to create new virtual machines quickly and easily using the existing virtual machines or templates as models.
 
 The following tables list the required and optional properties and published data for this activity.
 
-The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
+The activity publishes all the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
 With the exception of "Source VM/Template Path," all properties and published data refer to the destination VM produced by the clone operation.
 
@@ -39,14 +39,14 @@ With the exception of "Source VM/Template Path," all properties and published da
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
-| Clone Task Timeout in seconds | The number of seconds to wait for the clone operation to complete. After the timeout has been reached the activity will fail if the clone operation has not completed.   | Integer   | No   |
-| Customize   | Indicates whether the virtual machine guest settings are customized after the virtual machine is cloned. If set to False, guest customizations (IP address, DNS name, etc) will not be applied. | Boolean   | Yes   |
+| Clone Task Timeout in seconds | The number of seconds to wait for the clone operation to complete. After the timeout has been reached, the activity will fail if the clone operation hasn't completed.   | Integer   | No   |
+| Customize   | Indicates whether the virtual machine guest settings are customized after the virtual machine is cloned. If set to False, guest customizations (IP address, DNS name, and so on) won't be applied. | Boolean   | Yes   |
 | Datastore Path   | The data store name for the cloned virtual machine.   | String   | Yes   |
 | Folder Path   | The path to the folder where the cloned virtual machine will be saved.   | String   | Yes   |
 | Host System Path   | The path to the host system of the cloned virtual machine.   | String   | Yes   |
 | Memory Size (MB)   | The amount of memory, in megabytes, to assign to the cloned virtual machine.   | Integer   | No   |
 | New Virtual Machine Name   | The name of the cloned virtual machine.   | String   | No   |
-| Power on after creation   | Indicates whether the cloned virtual machine is turned on after it is created.   | Boolean   | Yes   |
+| Power on after creation   | Indicates whether the cloned virtual machine is turned on after it's created.   | Boolean   | Yes   |
 | Resource Pool Path   | The path to the resource pool that the cloned virtual machine will use.   | String   | Yes   |
 | Source VM/Template Path   | The name of the virtual machine or template that you want to clone.   | String   | Yes   |
 | Virtual Processors   | The number of virtual processors to assign to the cloned virtual machine.   | Integer   | No   |
@@ -58,7 +58,7 @@ With the exception of "Source VM/Template Path," all properties and published da
 | DNS Name   | The Hostname or Short DNS Name with no spaces or periods (.).   | String   | No   |
 | DNS Server   | The name of the DNS server that will resolve name requests for the clone virtual machine.   | String   | No   |
 | Domain Name   | The name of the domain that the cloned virtual machine will belong to.   | String   | No   |
-| Gateway   | The gateway that the cloned virtual machine will use   | String   | No   |
+| Gateway   | The gateway that the cloned virtual machine will use   | String.  | No   |
 | IP Address   | The IP address that will be assigned to the cloned virtual machine.   | String   | No   |
 | Subnet Mask   | The subnet mask that the cloned virtual machine will use.   | String   | No   |
 | DNS Suffix   | The DNS Suffix that will be assigned to the network adapter of the cloned virtual machine. For example, example.com. | String   | No   |
@@ -94,12 +94,12 @@ The following procedure describes the steps required to configure a Clone Linux 
 
 1.  From the **Activities** pane, drag a **Clone Linux VM** activity to the active runbook.
 
-2.  Double-click the **Clone Linux VM** activity icon. The **Properties** dialog box opens.
+2.  Double-click the **Clone Linux VM** activity icon. The **Properties** dialog opens.
 
 3.  Configure the settings in the **Properties** tab as follows:
 
-    1.  In the **Configuration** section, click the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Click **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can click the ellipsis **(...)** button next to the text box to browse for a value.
+    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Click **Finish**.
+4.  Select **Finish**.
