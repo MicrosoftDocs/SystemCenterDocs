@@ -46,7 +46,7 @@ activity. To force re-evaluation of the collection’s membership after
 adding or removing collection rules, use the **Update Collection
 Membership** activity.
 
-For the procedure to configure this object, see: [Configuring the Add Collection Rule Activity](#configuring-the-add-collection-rule-activity).
+For the procedure to configure this object, see: [Configuring the add collection rule activity](#configuring-the-add-collection-rule-activity).
 
 
 ## Properties and Published Data
