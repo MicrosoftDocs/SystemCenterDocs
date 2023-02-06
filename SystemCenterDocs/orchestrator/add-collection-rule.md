@@ -64,7 +64,7 @@ You can specify the following rule properties:
 - Rule Name: The name for the rule that will be shown in the Configuration Manager console for the collection’s membership rules.
 - Rule Type: The type of membership rule to be added. Options are:
   * Direct Rule - a single user or computer
-  * Query Rule - a SQL query string or a predefined query saved on a Configuration Manager sever.
+  * Query Rule - a SQL query string or a predefined query saved on a Configuration Manager server.
   * Include Collection - a collection whose members will be included.
   * Exclude Collection - a collection whose members will be excluded.
 - Rule Definition: The allowed values for a rule are determined by the type of rule.   
