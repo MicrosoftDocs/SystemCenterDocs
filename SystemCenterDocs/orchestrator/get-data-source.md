@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 36855461-0113-451b-86f9-e10656fd8b15
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Data Source
@@ -23,19 +23,19 @@ manager: evansma
 
 ::: moniker-end
 
-The Get Data Source activity retrieves information about Data Sources from either a production server (a computer that has the Data Protection Manager Protection Agent installed) or from a protection group (a named entity that holds the backup policy for a workload). A data source is a workload that is currently protected or will be protected by Data Protection Manager. When the Get Data Source activity is used in a protection scenario, you select a production server which becomes the default. When this activity is used in a recovery scenario, you will select a protection group or the production server. You then filter the list of data sources obtained using your own custom criteria that result in the data source(s) that you want to use in your runbook.
+The Get Data Source activity retrieves information about Data Sources from either a production server (a computer that has the Data Protection Manager Protection Agent installed) or from a protection group (a named entity that holds the backup policy for a workload). A data source is a workload that is currently protected or will be protected by Data Protection Manager. When the Get Data Source activity is used in a protection scenario, you select a production server, which becomes the default. When this activity is used in a recovery scenario, you'll select a protection group or the production server. You then filter the list of data sources obtained using your own custom criteria that result in the data source(s) that you want to use in your runbook.
 
 The common filters for this activity are as follows:
 
 -   Name contains or matches a pattern
 -   Protected - True or False
 
-This activity returns the Data Source ID (DataSourceId) which is used in all activities except Get DPM Server Capacity.
+This activity returns the Data Source ID (DataSourceId), which is used in all activities except Get DPM Server Capacity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 >[!IMPORTANT]
->The Protect Data Source activity does not support adding the FileSystem datasource type to a DPM Protection Group. If you need to protect file system datasources, you must use the Run DPM PowerShell Script activity to add FileSystem datasource types to a protection group.
+>The Protect Data Source activity doesn't support adding the FileSystem datasource type to a DPM Protection Group. If you need to protect file system datasources, you must use the Run DPM PowerShell Script activity to add FileSystem datasource types to a protection group.
 
 ## Get Data Source Required Properties
 

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: ff8803a3-174b-4239-ae68-58e6c1bb1667
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Deployment Status activity for Configuration Manager Integration Pack
@@ -46,7 +46,7 @@ activity
 
 To add new filter criteria:
 
-1. Click **Add** and select the property on which to filter.
+1. Select **Add** and select the property on which to filter.
 2. Select a **Relation** and then enter a value for the filter.
 
    The type of relation value available will depend on the data type of the property selected.
@@ -185,17 +185,18 @@ Deployment Types.
 1.  From the **Activities** pane, drag a **Get Deployment Status**
     activity to the active runbook.
 2.  Double-click the **Get Deployment Status** activity icon. The
-    **Properties** dialog box opens.
+    **Properties** dialog opens.
 3.  Configuring the **Details** tab:
-    1.  In the **Connection** section, click the ellipsis button
+    1.  In the **Connection** section, select the ellipsis button
         **(...)**, and then select the Configuration Manager server
-        connection that you want to use for this activity. Click **OK**.
+        connection that you want to use for this activity. Select **OK**.
     2.  In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
-        click the ellipsis **(...)** button next to the text box to browse
+        select the ellipsis button **(...)**  next to the text box to browse
         for a value.
 
         You can also use published data to automatically populate the
         value of the property from the data output by a previous
         activity in the runbook.
-4.  Click **Finish**.
+
+4.  Select **Finish**.
