@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: acf1e7a8-72d6-4d46-be36-830d0e6c6a37
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Protect Data Source
@@ -30,11 +30,11 @@ The Protect Data Source activity is used to protect a workload by adding a data 
 
 The following items apply to the Replica Creation Method for this release:
 
--   The Replica Creation Method value of Now is not supported in this release of the integration pack because Data Protection Manager has no reliable way to determine the progress and status of replica creation, other than in the user interface.
+-   The Replica Creation Method value of Now isn't supported in this release of the integration pack because Data Protection Manager has no reliable way to determine the progress and status of replica creation, other than in the user interface.
 -   If you select the Replica Creation Method value of Later, the optional property Replica Creation Time is a required property.
 -   If you select the Replica Creation Method value of Manual, the replica creation can be forced by using the Create Recovery Point activity. The Data Protection Manager user interface will display this as a consistency check job.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Protect Data Source required properties
 
