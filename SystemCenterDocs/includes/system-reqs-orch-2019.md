@@ -62,6 +62,9 @@ The following software is required for a full installation of Orchestrator on a 
     > [!NOTE]
     > On the first use of the Orchestration console, you're prompted to install Microsoft Silverlight on the computer if it isn't already installed. Install Silverlight 5.0.
 
+    > [!TIP]
+    > New version of the Web API and Orchestration Console have been released that don't depend on Silverlight. Follow instructions in the [announcement blog post](https://techcommunity.microsoft.com/t5/system-center-blog/a-brand-new-web-console-for-orchestrator-2019/ba-p/3040427) to download and install them.
+
 ## SQL Server
 
 > [!NOTE]
