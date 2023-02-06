@@ -38,5 +38,5 @@ You can't open the Orchestrator web console with the Microsoft Edge web browser.
 
 Open the Orchestrator web console with Internet Explorer.
 
-    > [!TIP]
-    > New version of the Web API and Orchestrator Console have been released that don't depend on Silverlight. Follow instructions in the [announcement blog post](https://techcommunity.microsoft.com/t5/system-center-blog/a-brand-new-web-console-for-orchestrator-2019/ba-p/3040427) to download and install them.
+> [!TIP]
+> New version of the Web API and Orchestrator Console have been released that don't depend on Silverlight. Follow instructions in the [announcement blog post](https://techcommunity.microsoft.com/t5/system-center-blog/a-brand-new-web-console-for-orchestrator-2019/ba-p/3040427) to download and install them.
