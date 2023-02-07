@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 299c0f5b-287f-4e68-8657-1cb8696b1668
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete Container
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Delete Container** activity marks the specified container for deletion. The container and any blobs contained within it are later deleted during garbage collection. It is part of the **Azure Storage** category activity.
+The **Delete Container** activity marks the specified container for deletion. The container and any blobs contained within it are later deleted during garbage collection. It's part of the **Azure Storage** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Delete Container Required Properties
 

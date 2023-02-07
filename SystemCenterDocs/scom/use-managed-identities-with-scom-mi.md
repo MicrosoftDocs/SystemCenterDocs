@@ -5,10 +5,10 @@ description: This article describes how to use Managed identities for Azure with
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 01/27/2023
+ms.date: 02/02/2023
 ms.custom: na
 ms.prod: system-center
-ms.technology: operations-manager
+ms.technology: operations-manager-managed-instance
 ms.topic: article
 monikerRange: 'sc-om-2022'
 ---

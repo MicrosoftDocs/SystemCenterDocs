@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 8b09506e-34d1-4c32-ad34-600d86ceb109
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Add Network Adapter Activity
@@ -27,13 +27,13 @@ The **Add Network Adapter** activity is used in a runbook to add a virtual netwo
 
 The following tables list the required and optional properties and published data for this activity.
 
-The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
+The activity publishes all the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
 ### Add Network Adapter Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
-| Adapter Type   | The virtual network adapter type. For System Center, the supported types are **Flexible**, **VMXNET 2 (Enhanced)**, **VMXNET 3** and **E1000**. | String   | Yes   |
+| Adapter Type   | The virtual network adapter type. For System Center, the supported types are **Flexible**, **VMXNET 2 (Enhanced)**, **VMXNET 3**, and **E1000**. | String   | Yes   |
 | Connection at Power On | Indicates whether the adapter will be connected when the virtual machine is powered on.   | Boolean   | Yes   |
 | Network   | The vSphere network that the adapter will connect to.   | String   | Yes   |
 | VM Path   | The path of the virtual machine.   | String   | Yes   |
@@ -59,12 +59,12 @@ The following procedure describes the steps required to configure an Add Network
 
 1.  From the **Activities** pane, drag an **Add Network Adapter** activity to the active runbook.
 
-2.  Double-click the **Add Network Adapter Activity** activity icon. The **Properties** dialog box opens.
+2.  Double-click the **Add Network Adapter Activity** activity icon. The **Properties** dialog opens.
 
 3.  Configure the settings in the **Properties** tab as follows:
 
-    1.  In the **Configuration** section, click the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Click **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can click the ellipsis **(...)** button next to the text box to browse for a value.
+    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Click **Finish**.
+4.  Select **Finish**.

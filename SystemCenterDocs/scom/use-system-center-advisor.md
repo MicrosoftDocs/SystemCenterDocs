@@ -4,7 +4,7 @@ title: Use System Center Advisor to Proactively Monitor Cloud Fabric in System C
 description: This article provides an overview of using system center advisor to proactively monitor cloud fabric
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 06/27/2019
 ms.custom: na
 ms.prod: system-center
@@ -22,4 +22,4 @@ ms.topic: article
 
 System Center Advisor is an online service that analyzes installations of Microsoft server software and covers fabric components. With the latest version of Advisor, you can now view Advisor alerts in the Operations Manager Operations console.
 
-Advisor collects data from your installations, analyzes it, and generates alerts that identify potential issues (such as missing security patches) or deviations from identified best practices with regard to configuration and usage. Advisor also provides both current and historical views of the configuration of servers in your environment. Ultimately, Advisor recommendations help you proactively avoid configuration problems, reduce downtime, improve performance, and resolve issues faster. For more information about Application Advisor, see [Prioritizing alerts by using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md).
+Advisor collects data from your installations, analyzes it, and generates alerts that identify potential issues (such as missing security patches) or deviations from identified best practices regarding configuration and usage. Advisor also provides both current and historical views of the configuration of servers in your environment. Ultimately, Advisor recommendations help you proactively avoid configuration problems, reduce downtime, improve performance, and resolve issues faster. For more information about Application Advisor, see [Prioritizing alerts by using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md).

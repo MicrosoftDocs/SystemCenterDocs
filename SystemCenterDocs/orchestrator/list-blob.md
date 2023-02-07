@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 1a10dcef-501b-4678-b1dd-ffdd963fa430
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # List Blob
@@ -23,7 +23,7 @@ manager: evansma
 
 ::: moniker-end
 
-The **List Blob** activity returns all user-defined metadata, standard HTTP properties, and system properties for blobs in the specified container. It is part of the **Azure Storage** category activity.
+The **List Blob** activity returns all user-defined metadata, standard HTTP properties, and system properties for blobs in the specified container. It's part of the **Azure Storage** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 

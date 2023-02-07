@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: ffdc4a8b-e875-437d-afa0-9a1a0f1007bf
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Resource Pool Properties Activity
@@ -27,7 +27,7 @@ The Get Resource Pool Properties activity is used in a runbook to retrieve all t
 
 The following tables list the required and optional properties and published data for this activity.
 
-The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
+The activity publishes all the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
 ## Get Resource Pool Properties Activity Required Properties
 
@@ -65,9 +65,9 @@ No optional properties are provided for this activity.
 | MemorySharesLevel   | Memory allocation shares level. Can be the preset levels Low, Normal, High or Custom. If set to Custom, the allocation is described in the **MemoryShares** property. | String   |
 | MemoryShares   | The number of Memory Shares allocated. Set to -1 if **MemorySharesLevel** has a preset level.   | Integer   |
 | MemoryUnlimited   | True, if the memory usage is unlimited. Otherwise, False.   | Boolean   |
-| MemoryUnreservedForPool   | The amount of memory that is not in use for the pool (in bytes).   | Integer   |
-| MemoryUnreservedForVm   | The amount of memory that is not in use for the VMs (in bytes).   | Integer   |
-| Overall Health   | The overall health of the resource pool. Green indicates under committed; yellow indicates overcommitted, and red indicates inconsistent.   | String   |
+| MemoryUnreservedForPool   | The amount of memory that isn't in use for the pool (in bytes).   | Integer   |
+| MemoryUnreservedForVm   | The amount of memory that isn't in use for the VMs (in bytes).   | Integer   |
+| Overall Health   | The overall health of the resource pool. Green indicates under committed, yellow indicates overcommitted, and red indicates inconsistent.   | String   |
 | Resource Pool Path   | The path of the resource pool.   | String   |
 | Virtual Machine Path   | The paths of all the virtual machines in the resource pool.   | String   |
 
@@ -79,12 +79,12 @@ The following procedure describes the steps required to configure a Get Resource
 
 1.  From the **Activities** pane, drag a **Get Resource Pool Properties** activity to the active runbook.
 
-2.  Double-click the **Get Resource Pool Properties** activity icon. The **Properties** dialog box opens.
+2.  Double-click the **Get Resource Pool Properties** activity icon. The **Properties** dialog opens.
 
 3.  Configure the settings in the **Properties** tab as follows:
 
-    1.  In the **Configuration** section, click the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Click **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can click the ellipsis **(...)** button next to the text box to browse for a value.
+    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Click **Finish**.
+4.  Select **Finish**.

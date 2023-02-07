@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 55184e52-7605-48e9-81b3-0ad20e06a28e
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get VM Data Disk
@@ -23,9 +23,9 @@ manager: evansma
 
 ::: moniker-end
 
-The **Get VM Data Disk** activity retrieves the specified data disk from a virtual machine. It is part of the **Azure Virtual Machine Disks** category activity.
+The **Get VM Data Disk** activity retrieves the specified data disk from a virtual machine. It's part of the **Azure Virtual Machine Disks** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get VM Data Disk Required Properties
 

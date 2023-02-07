@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 99513133-5547-471a-b1c1-cabfad6eab0b
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Monitor Item
@@ -53,7 +53,7 @@ The following tables list the required properties, filters, and published data f
 | ID   | ID of the appointment   | Equals<br>Does not equal   |
 | Importance   | Importance of the appointment   | Equals<br>Does not equal   |
 | Is All Day Event   | Indicates whether the appointment is an all-day event   | Equals<br>Does not equal   |
-| Is Cancelled   | Indicates whether the appointment has been cancelled   | Equals<br>Does not equal   |
+| Is Cancelled   | Indicates whether the appointment has been canceled   | Equals<br>Does not equal   |
 | Is Meeting   | Indicates whether the appointment is a meeting   | Equals<br>Does not equal   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Equals<br>Does not equal   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Equals<br>Does not equal   |
@@ -100,7 +100,7 @@ The following tables list the required properties, filters, and published data f
 | ID   | ID of the appointment   | String   |
 | Importance   | The importance of the appointment   | String   |
 | Is All Day Event   | Indicates whether the appointment is an all day event   | Boolean   |
-| Is Cancelled   | Indicates whether the appointment has been cancelled   | Boolean   |
+| Is Cancelled   | Indicates whether the appointment has been canceled   | Boolean   |
 | Is Meeting   | Indicates whether the appointment is a meeting   | Boolean   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Boolean   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Boolean   |
@@ -135,7 +135,7 @@ The following tables list the required properties, filters, and published data f
 | Time Zone   | The time zone that is specified for the appointment   | String   |
 | Timeout (seconds)   | Connection timeout threshold   | Number   |
 | Use Autodiscover   | Indicates whether or not the Autodiscover service is used   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the appointment for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the appointment for reading | String   |
 | iCal DateTime Stamp   | The iCal date/time stamp   | DateTime   |
@@ -180,7 +180,7 @@ The following tables list the required properties, filters, and published data f
 | Search Subfolders   | Indicates whether subfolders should be included in the search   | String   |
 | Timeout (seconds)   | Connection timeout threshold   | Number   |
 | Use Autodiscover   | Indicates whether or not the Autodiscover service is used   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the contact group for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the contact group for reading | String   |
 
@@ -266,7 +266,7 @@ The following tables list the required properties, filters, and published data f
 | Timeout (seconds)   | The connection timeout threshold in seconds   | Number   |
 | To   | List of To recipients of the email message   | String   |
 | Use Autodiscover   | Indicates whether or not the Autodiscover service is used   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the email for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the email for reading | String   |
 
@@ -354,6 +354,6 @@ The following tables list the required properties, filters, and published data f
 | Timeout (seconds)   | Connection timeout threshold   | Number   |
 | Total Work   | The total amount of work spent on the task   | Number   |
 | Use Autodiscover   | Indicates whether or not the Autodiscover service is used   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the task for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the task for reading | String   |
