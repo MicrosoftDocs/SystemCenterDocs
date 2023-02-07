@@ -28,35 +28,35 @@ This section describes how to configure your firewall to allow communication bet
 ## Port assignments
 The following table shows Operations Manager feature interaction across a firewall, including information about the ports used for communication between the features, which direction to open the inbound port, and whether the port number can be changed.
 
-|Operations&nbsp;Manager&nbsp;Feature&nbsp;A|Port&nbsp;Number&nbsp;and&nbsp;Direction|Operations&nbsp;Manager&nbsp;Feature&nbsp;B|Configurable|Note|
+|Operations Manager Feature A|Port Number and Direction|Operations Manager Feature B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
-|Management&nbsp;server|1433/TCP&nbsp;--->&nbsp;<br>1434/UDP&nbsp;--->&nbsp;<br>135/TCP&nbsp;(DCOM/RPC)&nbsp;--->&nbsp;<br>137/UDP&nbsp;--->&nbsp;<br>445/TCP&nbsp;--->&nbsp;<br>49152-65535&nbsp;--->&nbsp;&nbsp;&nbsp;|Operations&nbsp;Manager&nbsp;database|Yes&nbsp;(Setup)|WMI&nbsp;Port&nbsp;135&nbsp;(DCOM/RPC)&nbsp;for&nbsp;the&nbsp;initial&nbsp;connection&nbsp;and&nbsp;then&nbsp;a&nbsp;dynamically&nbsp;assigned&nbsp;port&nbsp;above&nbsp;1024.&nbsp;&nbsp;For&nbsp;more&nbsp;information,&nbsp;see&nbsp;[Special&nbsp;considerations&nbsp;for&nbsp;Port&nbsp;135](/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135)&nbsp;<br>Ports&nbsp;135,137,445,49152-65535&nbsp;are&nbsp;only&nbsp;required&nbsp;to&nbsp;be&nbsp;open&nbsp;during&nbsp;the&nbsp;initial&nbsp;Management&nbsp;Server&nbsp;installation&nbsp;to&nbsp;allow&nbsp;the&nbsp;setup&nbsp;process&nbsp;to&nbsp;validate&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;SQL&nbsp;services&nbsp;on&nbsp;the&nbsp;target&nbsp;machine.&nbsp;<sup>[2](#footnote2)</sup>|
-|Management&nbsp;server|5723,&nbsp;5724&nbsp;--->|management&nbsp;server|No|Port&nbsp;5724&nbsp;must&nbsp;be&nbsp;open&nbsp;to&nbsp;install&nbsp;this&nbsp;feature&nbsp;and&nbsp;can&nbsp;be&nbsp;closed&nbsp;after&nbsp;this&nbsp;feature&nbsp;has&nbsp;been&nbsp;installed.|
-|Management&nbsp;server|161,162&nbsp;<--->|network&nbsp;device|No|All&nbsp;firewalls&nbsp;between&nbsp;the&nbsp;management&nbsp;server&nbsp;and&nbsp;the&nbsp;network&nbsp;devices&nbsp;need&nbsp;to&nbsp;allow&nbsp;SNMP&nbsp;(UDP)&nbsp;and&nbsp;ICMP&nbsp;bi-directionally.|
-|Gateway&nbsp;server|5723&nbsp;--->|management&nbsp;server|No||
-|Management&nbsp;server|1433/TCP&nbsp;---><br>1434/UDP&nbsp;--->&nbsp;<br>135/TCP&nbsp;(DCOM/RPC)&nbsp;--->&nbsp;<br>137/UDP&nbsp;--->&nbsp;<br>445/TCP&nbsp;--->&nbsp;<br>49152-65535&nbsp;--->&nbsp;&nbsp;&nbsp;|Reporting&nbsp;data&nbsp;warehouse|No|Ports&nbsp;135,137,445,49152-65535&nbsp;are&nbsp;only&nbsp;required&nbsp;to&nbsp;be&nbsp;open&nbsp;during&nbsp;the&nbsp;initial&nbsp;Management&nbsp;Server&nbsp;installation&nbsp;to&nbsp;allow&nbsp;the&nbsp;setup&nbsp;process&nbsp;to&nbsp;validate&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;SQL&nbsp;services&nbsp;on&nbsp;the&nbsp;target&nbsp;machine.&nbsp;<sup>[2](#footnote2)</sup>|
-|Reporting&nbsp;server|5723,&nbsp;5724&nbsp;--->|management&nbsp;server|No|Port&nbsp;5724&nbsp;must&nbsp;be&nbsp;open&nbsp;to&nbsp;install&nbsp;this&nbsp;feature&nbsp;and&nbsp;can&nbsp;be&nbsp;closed&nbsp;after&nbsp;this&nbsp;feature&nbsp;has&nbsp;been&nbsp;installed.|
-|Operations&nbsp;console|5724&nbsp;--->|management&nbsp;server|No||
-|Operations&nbsp;console|80,&nbsp;443&nbsp;---><br>49152-65535&nbsp;TCP&nbsp;<--->|Management&nbsp;Pack&nbsp;Catalog&nbsp;web&nbsp;service|No|Supports&nbsp;downloading&nbsp;management&nbsp;packs&nbsp;directly&nbsp;in&nbsp;the&nbsp;console&nbsp;from&nbsp;the&nbsp;catalog.<sup>[1](#footnote1)</sup>|
-|Connector&nbsp;framework&nbsp;source|51905&nbsp;--->|management&nbsp;server|No||
-|Web&nbsp;console&nbsp;server|5724&nbsp;--->|management&nbsp;server|No||
-|Web&nbsp;console&nbsp;browser|80,&nbsp;443&nbsp;--->|web&nbsp;console&nbsp;server|Yes&nbsp;(IIS&nbsp;Admin)|Default&nbsp;ports&nbsp;for&nbsp;HTTP&nbsp;or&nbsp;SSL&nbsp;enabled.|
-|Web&nbsp;console&nbsp;for&nbsp;Application&nbsp;Diagnostics|1433/TCP&nbsp;---><br>&nbsp;1434&nbsp;--->|Operations&nbsp;Manager&nbsp;database|Yes&nbsp;(Setup)&nbsp;<sup>[2](#footnote2)</sup>||
-|Web&nbsp;console&nbsp;for&nbsp;Application&nbsp;Advisor|1433/TCP&nbsp;---><br>&nbsp;1434&nbsp;--->|Reporting&nbsp;data&nbsp;warehouse|Yes&nbsp;(Setup)&nbsp;<sup>[2](#footnote2)</sup>||
-|Connected&nbsp;management&nbsp;server&nbsp;(Local)|5724&nbsp;--->|connected&nbsp;management&nbsp;server&nbsp;(Connected)|No||
-|Windows&nbsp;agent&nbsp;installed&nbsp;using&nbsp;MOMAgent.msi|5723&nbsp;--->|management&nbsp;server|Yes&nbsp;(Setup)||
-|Windows&nbsp;agent&nbsp;installed&nbsp;using&nbsp;MOMAgent.msi|5723&nbsp;--->|gateway&nbsp;server|Yes&nbsp;(Setup)||
-|Windows&nbsp;agent&nbsp;push&nbsp;installation,&nbsp;pending&nbsp;repair,&nbsp;pending&nbsp;update|5723/TCP<br>135/TCP<br>137/UDP<br>138/UDP<br>139/TCP<br>445/TCP<br><br>*RPC/DCOM&nbsp;High&nbsp;ports&nbsp;(2008&nbsp;OS&nbsp;and&nbsp;later)<br>Ports&nbsp;49152-65535&nbsp;TCP||Communication&nbsp;is&nbsp;initiated&nbsp;from&nbsp;MS/GW&nbsp;to&nbsp;an&nbsp;Active&nbsp;Directory&nbsp;domain&nbsp;controller&nbsp;and&nbsp;the&nbsp;target&nbsp;computer.|
-|UNIX/Linux&nbsp;agent&nbsp;discovery&nbsp;and&nbsp;monitoring&nbsp;of&nbsp;agent|TCP&nbsp;1270&nbsp;<---|management&nbsp;server&nbsp;or&nbsp;gateway&nbsp;server|No||
-|UNIX/Linux&nbsp;agent&nbsp;for&nbsp;installing,&nbsp;upgrading,&nbsp;and&nbsp;removing&nbsp;agent&nbsp;using&nbsp;SSH|TCP&nbsp;22&nbsp;<---|management&nbsp;server&nbsp;or&nbsp;gateway&nbsp;server|Yes||
-|OMED&nbsp;Service|TCP&nbsp;8886&nbsp;<---|management&nbsp;server&nbsp;or&nbsp;gateway&nbsp;server|Yes||
-|Gateway&nbsp;server|5723&nbsp;--->|management&nbsp;server|Yes&nbsp;(Setup)||
-|Agent&nbsp;(Audit&nbsp;Collection&nbsp;Services&nbsp;forwarder)|51909&nbsp;--->|management&nbsp;server&nbsp;Audit&nbsp;Collection&nbsp;Services&nbsp;collector|Yes&nbsp;(Registry)||
-|Agentless&nbsp;Exception&nbsp;Monitoring&nbsp;data&nbsp;from&nbsp;client|51906&nbsp;--->|management&nbsp;server&nbsp;Agentless&nbsp;Exception&nbsp;Monitoring&nbsp;file&nbsp;share|Yes&nbsp;(Client&nbsp;Monitoring&nbsp;Wizard)||
-|Customer&nbsp;Experience&nbsp;Improvement&nbsp;Program&nbsp;data&nbsp;from&nbsp;client|51907&nbsp;--->|management&nbsp;server&nbsp;(Customer&nbsp;Experience&nbsp;Improvement&nbsp;Program&nbsp;End)&nbsp;Point|Yes&nbsp;(Client&nbsp;Monitoring&nbsp;Wizard)||
-|Operations&nbsp;console&nbsp;(reports)|80&nbsp;--->|SQL&nbsp;Reporting&nbsp;Services|No|The&nbsp;Operations&nbsp;console&nbsp;uses&nbsp;Port&nbsp;80&nbsp;to&nbsp;connect&nbsp;to&nbsp;the&nbsp;SQL&nbsp;Reporting&nbsp;Services&nbsp;web&nbsp;site.|
-|Reporting&nbsp;server|1433/TCP&nbsp;---><br>1434/UDP&nbsp;--->|Reporting&nbsp;data&nbsp;warehouse|Yes&nbsp;<sup>[2](#footnote2)</sup>||
-|Management&nbsp;server&nbsp;(Audit&nbsp;Collection&nbsp;Services&nbsp;collector)|1433/TCP&nbsp;<---<br>1434/UDP&nbsp;<---|Audit&nbsp;Collection&nbsp;Services&nbsp;database|Yes&nbsp;<sup>[2](#footnote2)</sup>||
+|Management server|1433/TCP&nbsp;--->&nbsp;<br>1434/UDP&nbsp;--->&nbsp;<br>135/TCP&nbsp;(DCOM/RPC)&nbsp;--->&nbsp;<br>137/UDP&nbsp;--->&nbsp;<br>445/TCP&nbsp;--->&nbsp;<br>49152-65535&nbsp;--->|Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024.  For more information, see [Special considerations for Port 135](/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135) <br>Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>[2](#footnote2)</sup>|
+|Management server|5723,&nbsp;5724&nbsp;--->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
+|Management server|161,162&nbsp;<--->|network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
+|Gateway server|5723&nbsp;--->|management server|No||
+|Management server|1433/TCP&nbsp;---><br>1434/UDP&nbsp;--->&nbsp;<br>135/TCP&nbsp;(DCOM/RPC)&nbsp;--->&nbsp;<br>137/UDP&nbsp;--->&nbsp;<br>445/TCP&nbsp;--->&nbsp;<br>49152-65535&nbsp;--->|Reporting data warehouse|No|Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>[2](#footnote2)</sup>|
+|Reporting server|5723,&nbsp;5724&nbsp;--->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
+|Operations console|5724&nbsp;--->|management server|No||
+|Operations console|80,&nbsp;443&nbsp;---><br>49152-65535&nbsp;TCP&nbsp;<--->|Management Pack Catalog web service|No|Supports downloading management packs directly in the console from the catalog.<sup>[1](#footnote1)</sup>|
+|Connector framework source|51905&nbsp;--->|management server|No||
+|Web console server|5724&nbsp;--->|management server|No||
+|Web console browser|80,&nbsp;443&nbsp;--->|web console server|Yes (IIS Admin)|Default ports for HTTP or SSL enabled.|
+|Web console for Application Diagnostics|1433/TCP&nbsp;---><br>&nbsp;1434&nbsp;--->|Operations Manager database|Yes (Setup) <sup>[2](#footnote2)</sup>||
+|Web console for Application Advisor|1433/TCP&nbsp;---><br>&nbsp;1434&nbsp;--->|Reporting data warehouse|Yes (Setup) <sup>[2](#footnote2)</sup>||
+|Connected management server (Local)|5724&nbsp;--->|connected management server (Connected)|No||
+|Windows agent installed using MOMAgent.msi|5723&nbsp;--->|management server|Yes (Setup)||
+|Windows agent installed using MOMAgent.msi|5723&nbsp;--->|gateway server|Yes (Setup)||
+|Windows agent push installation, pending repair, pending update|5723/TCP<br>135/TCP<br>137/UDP<br>138/UDP<br>139/TCP<br>445/TCP<br><br>*RPC/DCOM&nbsp;High&nbsp;ports&nbsp;(2008&nbsp;OS&nbsp;and&nbsp;later)<br>Ports&nbsp;49152-65535&nbsp;TCP||Communication is initiated from MS/GW to an Active Directory domain controller and the target computer.|
+|UNIX/Linux agent discovery and monitoring of agent|TCP&nbsp;1270&nbsp;<---|management server or gateway server|No||
+|UNIX/Linux agent for installing, upgrading, and removing agent using SSH|TCP&nbsp;22&nbsp;<---|management server or gateway server|Yes||
+|OMED Service|TCP&nbsp;8886&nbsp;<---|management server or gateway server|Yes||
+|Gateway server|5723&nbsp;--->|management server|Yes (Setup)||
+|Agent (Audit Collection Services forwarder)|51909&nbsp;--->|management server Audit Collection Services collector|Yes (Registry)||
+|Agentless Exception Monitoring data from client|51906&nbsp;--->|management server Agentless Exception Monitoring file share|Yes (Client Monitoring Wizard)||
+|Customer Experience Improvement Program data from client|51907&nbsp;--->|management server (Customer Experience Improvement Program End) Point|Yes (Client Monitoring Wizard)||
+|Operations console (reports)|80&nbsp;--->|SQL Reporting Services|No|The Operations console uses Port 80 to connect to the SQL Reporting Services web site.|
+|Reporting server|1433/TCP&nbsp;---><br>1434/UDP&nbsp;--->|Reporting data warehouse|Yes <sup>[2](#footnote2)</sup>||
+|Management server (Audit Collection Services collector)|1433/TCP&nbsp;<---<br>1434/UDP&nbsp;<---|Audit Collection Services database|Yes <sup>[2](#footnote2)</sup>||
 
 #### <a name="footnote1"></a> Management Pack Catalog Web Service <sup>1</sup>
 - To access the Management Pack Catalog web service, your firewall must allow the following URL:
