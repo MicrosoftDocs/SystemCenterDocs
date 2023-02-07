@@ -65,12 +65,12 @@ The following table lists the release history for Virtual Machine Manager 2016.
 |4.0.1968.0|[3190597](https://support.microsoft.com/kb/3190597) | October 2016 |Update Rollup 1 |
 |4.0.1968.10|[3208888](https://support.microsoft.com/kb/3208888) | December 2016 |Update Rollup 1 - Hotfix 1 |
 |4.0.2043.0|[3209586](https://support.microsoft.com/kb/3209586) | January 2017 |Update Rollup 2 |
-|4.0.2043.0|[3209586](https://support.microsoft.com/kb/3209586) | February 2017 |Update Rollup 2.1 |
+|4.0.2051.0|[3209586](https://support.microsoft.com/kb/3209586) | February 2017 |Update Rollup 2.1 |
 |4.0.2051.1|[3209586](https://www.microsoft.com/download/details.aspx?id=54853) | March 2017 |Update Rollup 2.1 - Hotfix |
 |4.0.2139.0|[4014528](https://support.microsoft.com/kb/4014528) | May 2017 |Update Rollup 3 |
 |4.0.2244.0|[4041074](https://support.microsoft.com/kb/4041074) | October 2017 |Update Rollup 4 |
 |4.0.2314.0|[4094925](https://support.microsoft.com/kb/4094925) | April 2018 |Update Rollup 5 |
-|4.0.2314.0|[4094925](https://support.microsoft.com/kb/4094925) | August 2018 |Update Rollup 5 - Hotfix 1 |
+|4.0.2314.4|[4094925](https://support.microsoft.com/kb/4094925) | August 2018 |Update Rollup 5 - Hotfix 1 |
 |4.0.2413.0|[4463450](https://support.microsoft.com/kb/4463450) | October 2018 |Update Rollup 6 |
 |4.0.2548.0|[4496920](https://support.microsoft.com/kb/4496920) | April 2019 |Update Rollup 7 |
 |4.0.2589.0|[4518885](https://support.microsoft.com/kb/4518885) | September 2019 |Update Rollup 8 |
