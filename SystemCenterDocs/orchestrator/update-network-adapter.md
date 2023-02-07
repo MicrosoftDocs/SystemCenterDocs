@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: b1f889d8-9b37-4e10-95ec-0f6034bf0a88
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update Network Adapter
@@ -25,7 +25,7 @@ robots: noindex
 
 The Update Network Adapter activity is used to make changes to an existing network adapter.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Update Network Adapter Required Properties
 
@@ -52,7 +52,7 @@ The activity publishes all of the data from the required and optional properties
 |:---|:---|
 | Accessibility   | Public or Internal      |
 | Added Time   | The date and time that the Virtual Network Adapter was added, in the format yyyy-mm-dd hh:mm:ss AM or PM      |
-| Enabled   | True or False. If False, the virtual machine cannot be started.      |
+| Enabled   | True or False. If False, the virtual machine can't be started.      |
 | Ethernet Address   | The Virtual Network Adapter address, in the format 00:00:00:00:00:00      |
 | Ethernet Address Type   | Dynamic or Static      |
 | MAC Address   | Dynamic or Static      |

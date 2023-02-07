@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: b21b1694-b13c-4547-9029-b24ba6ee38a4
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Stop VM
@@ -25,7 +25,7 @@ robots: noindex
 
 The Stop VM activity is used to stop a virtual machine that is currently running or in a paused state.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Stop VM Required Properties
 
@@ -57,7 +57,7 @@ The activity publishes all of the data from the required and optional properties
 | Delay Start (s)   | The number of seconds to wait after the virtualization service starts before automatically starting the virtual machine   |   
 | Description   | An alphanumeric description of the virtual machine   |   
 | Disk I/O (IOPS)   | The disk I/O performance, measured by the number of I/O operations per second \[IOPS\] that can be performed with acceptable latency   |   
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |   
+| Enabled   | True or False. If False, the virtual machine can't be started.   |   
 | Expected CPU Utilization   | A two-digit percent value that represents the average CPU usage for the virtual machine   |   
 | Failed Job ID   | The unique identifier (GUID) of the most recent failed job   |   
 | Has Pass-through Disk   | True or False   |   
@@ -105,7 +105,7 @@ The activity publishes all of the data from the required and optional properties
 | Virtual Disk Drives   | A list of the names of Virtual Disk Drives   |   
 | Virtual Floppy Drive   | A list of the names of Virtual Floppy Drives   |   
 | Virtual Hard Disks   | A list of the names of Virtual Hard Disks   |   
-| Virtualization Platform   | The virtualization platform. Valid values are: HyperV, VMWareESX, or Unknown.   |   
+| Virtualization Platform   | The virtualization platform. Valid values are: Hyper-V, VMWareESX, or Unknown.   |   
 | Virtual Network Adapters   | A list of the names of Virtual Network Adapters   |   
 | Virtual SCSI Adapters   | A list of the names of Virtual SCSI Adapters   |   
 | VMC Path   | The virtual machine Configuration file path, in the format C:\\VMM\\DRDemo-DataTier\\VirtualMachines\\abc12345-d6ef-78g9-h0ij-1kl2-34m56n7890p12.xml   |   

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 488bb198-73fc-4983-b0ef-14a8c7176f9c
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Stop Service activity
@@ -21,7 +21,7 @@ robots: noindex
 
 The Stop Service activity is used in a runbook to stop a VMM service.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Required properties
 
