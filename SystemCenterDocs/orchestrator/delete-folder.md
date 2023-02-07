@@ -1,6 +1,6 @@
 ---
 title: Delete Folder
-description: The Delete Folder activity is used in a runbook to delete a folder on a FTP server.
+description: The Delete Folder activity is used in a runbook to delete a folder on an FTP server.
 ms.custom: na
 ms.date: 05/07/2019
 ms.prod: system-center
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 2692378a-ba5e-4e1f-ac74-8019d17e6e24
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete folder on an FTP server
@@ -25,7 +25,7 @@ robots: noindex
 
 The Delete Folder activity is used in a runbook to delete a folder on an FTP server.
 
-This activity publishes all of the data from the required properties into published data.
+This activity publishes all the data from the required properties into published data.
 
 The following tables list the required properties and published data for this activity.
 
@@ -33,7 +33,7 @@ The following tables list the required properties and published data for this ac
 
 | **Element** | **Description**   | **Valid Values** |
 |:---|:---|:---|
-| Folder Path | The relative or absolute path of the folder to delete. Absolute paths can be used provided the FTP server supports this feature. The asterisk (\*) and question mark (?) are not supported. | String   |
+| Folder Path | The relative or absolute path of the folder to delete. Absolute paths can be used provided the FTP server supports this feature. The asterisk (\*) and question mark (?) aren't supported. | String   |
 
 ## Deleted Folder Published Data
 
@@ -50,7 +50,7 @@ The following tables list the required properties and published data for this ac
 | Log   | Detailed FTP log.   | String   |
 | Port   | The port used to connect to the FTP server.   | Integer   |
 | Server   | The IP address or computer name of the FTP server.   | String   |
-| Timeout   | The time to wait before a FTP operation times out.   | Integer   |
+| Timeout   | The time to wait before an FTP operation times out.   | Integer   |
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive,<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |
 

@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: ebe29f05-8025-4ad0-a77f-0171289e20a7
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Synchronize Folder or File
@@ -25,7 +25,7 @@ robots: noindex
 
 The Synchronize Folder/File activity is used in a runbook to perform a one way synchronization of a folder/File.
 
-This activity publishes all of the data from the required and optional properties into published data.
+This activity publishes all the data from the required and optional properties into published data.
 
 The following tables list the required and optional properties and published data for this activity.
 
@@ -95,7 +95,7 @@ The following tables list the required and optional properties and published dat
 | Log   | Detailed FTP log.   | String   |
 | Port   | The port used to connect to the FTP server.   | Integer   |
 | Server   | The IP address or computer name of the FTP server.   | String   |
-| Timeout   | The time to wait before a FTP operation times out.   | Integer   |
+| Timeout   | The time to wait before an FTP operation times out.   | Integer   |
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |
 

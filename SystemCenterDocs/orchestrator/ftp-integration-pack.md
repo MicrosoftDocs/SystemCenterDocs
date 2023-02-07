@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: e0482f7f-711a-4b40-9884-1d1bd4b96bf2
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # FTP integration pack
@@ -23,13 +23,13 @@ manager: evansma
 
 ::: moniker-end
 
-Integration packs are add-ons for Orchestrator, a component of System Center, that can help you optimize IT operations across heterogeneous environments. You can design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and by third party products. The Integration Pack for FTP enables you to automate FTP operations which include creating a folder, deleting a file or folder, downloading, uploading, file and folder listing and synchronization.
+Integration packs are add-ons for Orchestrator, a component of System Center, that can help you optimize IT operations across heterogeneous environments. You can design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third-party products. The Integration Pack for FTP enables you to automate FTP operations, which include creating a folder, deleting a file or folder, downloading, uploading, file, and folder listing and synchronization.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System requirements
 
-The Integration Pack for FTP requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and FTP, refer to the respective product documentation.
+The Integration Pack for FTP requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and FTP, see the respective product documentation.
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
 -   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   FTP server
@@ -47,7 +47,7 @@ The Integration Pack for FTP requires the following software to be installed and
 ::: moniker range="sc-orch-2022"
 
 >[!Note]
->Integration packs and toolkit for Orchestrator 2022 are yet to be released, download links will be provided once they are available.
+>Integration packs and toolkit for Orchestrator 2022 are yet to be released; download links will be provided once they are available.
 
 ::: moniker-end
 
@@ -58,21 +58,21 @@ After you download the integration pack file, you must register it with the Orch
 ## Configuring the FTP connections
 
 A connection establishes a reusable link between Orchestrator and an FTP server. You can create as many connections as you require specifying links to multiple FTP servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
-To set up an FTP connection
+To set up an FTP connection:
 
-1.  In the **Orchestrator Runbook Designer**, click **Options**, and then click **FTP**. The **FTP** dialog box appears.
-2.  On the **Configurations** tab, click **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
-3.  In the **Name** box, enter a name for the connection. This can be the name of the **FTP** server, or a descriptive name to distinguish the type of connection.
-4.  In the **Type** box, click the â€¦ button and select a configuration type.
-5.  In the **Connection Type** box, click the â€¦ button and select a connection type.
-6.  In the **Transfer Type (FTP)** box, click the â€¦ button and select a transfer type. This configuration property applies to FTP only. This property can be left empty when the connection type is SSH File Transfer Protocol (SFTP).<br>**Note:**   Orchestrator does not support SFTP on computers that run Windows.
-7.  In the **Server** box, type the name or IP address of the **FTP** server. If you are using the computer name, you can type the NetBIOS name or the fully qualified domain name (FQDN).
-8.  In the **Port** box, type the port number for the selected connection type.
-9.  In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to connect to the **FTP** server.
-10.  In the **Timeout** box, type the amount of time in seconds before an FTP operation will time out.
-11. In the **Certificate Path (FTP)** box, type the path to a certificate. This configuration property applies to FTP only. This configuration property is optional and can be left empty.
-12.  In the **Certificate Password (FTP)** box, type the password for the certificate. This configuration property applies to FTP only. This configuration property is optional and can be left empty.
-13.  In the **HTTP Proxy Server (FTP)** box, type the name of IP address of the HTTP proxy server. If you are using the computer name, you can type the NetBIOS name or the fully qualified domain name (FQDN). This configuration property applies to FTP only. This configuration property is optional and can be left empty.
-14.  In the **HTTP Proxy Port (FTP)** box, type the port number for the HTTP proxy server. This configuration property applies to FTP only. This configuration property is optional and can be left empty.
-15.  In the **HTTP Proxy Username (FTP)** and **HTTP Proxy Password (FTP)**, type the credentials that Orchestrator will used to connect to the HTTP proxy server. This configuration property applies to FTP only. This configuration property is optional and can be left empty.
-16.  Click **OK** to close the configuration dialog box, and then click **Finish**.
+1.  In the **Orchestrator Runbook Designer**, select **Options**, and select **FTP**. The **FTP** dialog appears.
+2.  On the **Configurations** tab, select **Add** to begin the connection setup. The **Add Configuration** dialog appears.
+3.  In the **Name** box, enter a name for the connection. This can be the name of the **FTP** server or a descriptive name to distinguish the type of connection.
+4.  In the **Type** box, select the â€¦ button and select a configuration type.
+5.  In the **Connection Type** box, select the â€¦ button and select a connection type.
+6.  In the **Transfer Type (FTP)** box, select the â€¦ button and select a transfer type. This configuration property applies to FTP only. This property can be left empty when the connection type is SSH File Transfer Protocol (SFTP).<br>**Note:**   Orchestrator doesn't support SFTP on computers that run Windows.
+7.  In the **Server** box, enter the name or IP address of the **FTP** server. If you're using the computer name, you can enter the NetBIOS name or the fully qualified domain name (FQDN).
+8.  In the **Port** box, enter the port number for the selected connection type.
+9.  In the **Username** and **Password** boxes, enter the credentials that Orchestrator will use to connect to the **FTP** server.
+10.  In the **Timeout** box, enter the amount of time in seconds before an FTP operation will time out.
+11. In the **Certificate Path (FTP)** box, enter the path to a certificate. This configuration property applies to FTP only. This configuration property is optional and can be left empty.
+12.  In the **Certificate Password (FTP)** box, enter the password for the certificate. This configuration property applies to FTP only. This configuration property is optional and can be left empty.
+13.  In the **HTTP Proxy Server (FTP)** box, enter the name of the IP address of the HTTP proxy server. If you're using the computer name, you can enter the NetBIOS name or the fully qualified domain name (FQDN). This configuration property applies to FTP only. This configuration property is optional and can be left empty.
+14.  In the **HTTP Proxy Port (FTP)** box, enter the port number for the HTTP proxy server. This configuration property applies to FTP only. This configuration property is optional and can be left empty.
+15.  In the **HTTP Proxy Username (FTP)** and **HTTP Proxy Password (FTP)**, enter the credentials that Orchestrator will use to connect to the HTTP proxy server. This configuration property applies to FTP only. This configuration property is optional and can be left empty.
+16.  Select **OK** to close the configuration dialog, and select **Finish**.
