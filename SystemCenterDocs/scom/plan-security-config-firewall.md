@@ -59,7 +59,7 @@ The following table shows Operations Manager feature interaction across a firewa
 |Management server (Audit Collection Services collector)|1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes <sup>[2](#footnote2)</sup>||
 
 #### <a name="footnote1"></a> Management Pack Catalog Web Service <sup>1</sup>
-- To access the Management Pack Catalog web service, your firewall must allow the following link:
+- To access the Management Pack Catalog web service, your firewall must allow the following URL:
   1. [https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx](https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx)
 
 #### <a name="footnote2"></a> Identify SQL Port <sup>2</sup>
