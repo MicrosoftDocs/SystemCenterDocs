@@ -74,7 +74,7 @@ The activity publishes all the data from the required and optional properties in
 | Heartbeat Enabled   | True or False   |   
 | Host Group Path   | The path of the virtual machine under its host group, in the format All Hosts\\virtual machine Name   |   
 | Host ID   | The unique identifier (GUID) of the host computer   |   
-| Host Type   | VMHost   |   
+| Host Type   | VM Host   |   
 | Is Highly Available   | True or False   |   
 | Is Tag Empty   | True or False   |   
 | Is Undergoing Live Migration   | True or False   |   
@@ -108,7 +108,7 @@ The activity publishes all the data from the required and optional properties in
 | Time Synchronization Enabled   | True or False   |   
 | Total Size   | The total size of the virtual machine, including all disks and configuration files   |   
 | Undo Disks Enabled   | True or False. If True, the virtual machine can undo any changes when shutting down.   |   
-| Unsupported Reason   | If an error occurs during cloning, this message text describes the reason that the attempted action is not supported   |   
+| Unsupported Reason   | If an error occurs during cloning, this message text describes the reason that the attempted action isn't supported   |   
 | Use Hardware Assisted Virtualization | True or False   |   
 | Use LAN   | True or False   |   
 | User Role ID   | The unique identifier (GUID) of the user role that allows users to create virtual machines   |   

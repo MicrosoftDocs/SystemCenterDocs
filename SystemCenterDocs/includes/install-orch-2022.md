@@ -321,7 +321,7 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/WebServicePublicUrl:[URL]|Specifies the URL of the web API service that should be used by the Orchestration Console. Required if Orchestration Console is installed.|
 |/OrchestratorUsersGroup:[Group SID]|Specifies the SID of the domain or local group that will be granted access to Management server. If no value is specified, the default local group is used.|
 |/OrchestratorRemote|Specifies that remote access should be granted to the Runbook Designer.|
-|/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 does not change the current opt in status of the computer.|
+|/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 doesn't change the current opt-in status of the computer.|
 |/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt out from sending Telemetry. **Telemetry is on by default.**|
 |/EnableErrorReporting:[value]|Specifies that Orchestrator should send program error reports to Microsoft. Possible values are always, queued, and never.|
 
@@ -352,7 +352,7 @@ If you experience problems when you're running Orchestrator, the product log fil
 When you deploy additional Runbook Designer applications to your environment, you might see a failed installation message. To correctly install the Runbook Designer, enable the following firewall rules as they apply to your operating system and deployment configuration.  
 
 ### Windows Firewall with advanced security
-By default, **Windows Firewall with Advanced Security** is enabled on all Windows Server computers, and blocks all incoming traffic unless it is a response to a request by the host, or it is specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
+By default, **Windows Firewall with Advanced Security** is enabled on all Windows Server computers, and blocks all incoming traffic unless it's a response to a request by the host, or it's specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
 
 Enable the following rules to allow all Monitor Event activities to function correctly:  
 

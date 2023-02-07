@@ -33,4 +33,4 @@ There are no optional properties for this activity.
 
 ## Published data
 
-There is no published data for this activity.
+There's no published data for this activity.

@@ -22,7 +22,7 @@ manager: mkluck
 
 ::: moniker-end
 
-This article provides information on common troubleshooting issues and the available tools that can assist in identifying the root problems.  
+This article provides information on common troubleshooting issues and the available tools that can help identify the root problems.  
 
 ## Log files  
 In Orchestrator, different logs are available that provide information about Orchestrator runbooks and servers. The following table lists the available types of log files, with links to the appropriate sections that describe the logs in more detail.  
