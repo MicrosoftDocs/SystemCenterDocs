@@ -374,7 +374,7 @@ To create a SCOM managed instance, follow these steps:
         :::image type="gMSA details" source="media/create-operations-manager-managed-instance/gmsa-details.png" alt-text="Screenshot that shows gMSA details.":::
 1. Select **Next**.
 1. Under **Database**, do the following:
-    - **SQL managed instance**: For **Resource Name**, select the Azure SQL Managed Instance resource name for the instance that you want to associate with this SCOM managed instance. Use only the SQL managed instance that has given permissions to the SCOM managed instance. For more information, see [SQL managed instance creation and permission](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#create-and-configure-a-sql-mi).
+    - **SQL managed instance**: For **Resource Name**, select the Azure SQL Managed Instance resource name for the instance that you want to associate with this SCOM managed instance. Use only the SQL managed instance that has given permissions to the SCOM managed instance. For more information, see [SQL managed instance creation and permission](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#create-and-configure-a-sql-mi&preserve-view=true).
     - **User managed identity**: For **User managed identity account**, select the managed identity that you created and for which you provided admin permissions to the SQL managed instance. Ensure that the same MSI has read permissions on the key vault for domain account credentials.
 1. Select **Next**.
 1. Under **Tags**, enter the **Name** value, and then select the resource.
