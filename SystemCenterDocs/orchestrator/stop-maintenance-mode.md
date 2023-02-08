@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 2358a3dd-2f24-46f6-b7b9-4a5d0952b887
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Stop Maintenance Mode
@@ -27,7 +27,7 @@ The Stop Maintenance Mode activity takes a monitor out of maintenance mode. If y
 
 If you choose to take a computer (Microsoft.Windows.Computer or Microsoft.Unix.Computer) out of maintenance mode, then all child monitors for that computer will also be taken out of maintenance mode.
 
-The following tables list the properties and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
+The following tables list the properties and published data for this activity. The activity publishes all the data from the required and optional properties into published data.
 
 ## Stop Maintenance Mode Required Properties
 
