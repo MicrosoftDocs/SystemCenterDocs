@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 49456582-3214-450f-afca-cbe812fdaed7
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update Disk
@@ -25,7 +25,7 @@ robots: noindex
 
 The Update Disk activity is used to add more disk space and to change some of the properties of an existing disk.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Update Disk Required Properties
 
@@ -56,7 +56,7 @@ The activity publishes all of the data from the required and optional properties
 | Bus Type   | IDE or SCSI   |  
 | Compact   | True or False. Compacting only works on a dynamically expanding virtual hard disk to reduce the size of the VHD file as much as possible. |   
 | Disk Type   | Dynamic or Fixed   |  
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |  
+| Enabled   | True or False. If False, the virtual machine can't be started.   |  
 | File Name   | The name of the VHD on which the new disk will be based   |  
 | Is VHD   | True or False   |  
 | LUN   | The logical unit number (LUN) for the VHD object on an IDE or SCSI bus   |  

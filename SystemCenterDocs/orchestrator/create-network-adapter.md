@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: d03ca34d-ec65-4fb8-ba30-c36acc06d8cc
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Network Adapter
@@ -25,7 +25,7 @@ robots: noindex
 
 The Create Network Adapter activity is used to create a new network adapter and attach it to a specified virtual machine.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create Network Adapter Required Properties
 

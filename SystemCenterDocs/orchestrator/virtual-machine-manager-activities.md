@@ -7,7 +7,7 @@ ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 # System Center VMM Activities
 
@@ -17,7 +17,7 @@ manager: evansma
 
 ::: moniker-end
 
-The following configuration instructions apply to all activities in the System Center Integration Pack for System Center - Virtual Machine Manager (VMM).
+The following configuration instructions apply to all the activities in the System Center Integration Pack for System Center - Virtual Machine Manager (VMM).
 
 ## Activity properties
 
@@ -25,11 +25,11 @@ Each activity has a set of required or optional properties that define the confi
 
 To configure the properties for an activity:
 
-1.  Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
+1.  Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
 
-2.  To save your configuration entries, click **Finish**.
+2.  To save your configuration entries, select **Finish**.
 
-In the activity properties dialog box, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs between different activities.
+In the activity properties dialog, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs between different activities.
 
 ## General tab
 
@@ -38,11 +38,11 @@ This tab contains the **Name** and **Description** properties for the activity. 
 
 ## Properties tab
 
-This tab contains properties that are specific to the activity. All activities in this integration pack have the **Configuration Name** property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the VMM server.
+This tab contains properties that are specific to the activity. All the activities in this integration pack have the **Configuration Name** property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the VMM server.
 
 ### Set the Configuration Name property
 
-1.  Click the ellipsis **(...)** button next to the **Name** field.
+1.  Select the ellipsis button **(...)** next to the **Name** field.
 
 2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuring the System Center 2016 Virtual Machine Manager Connections](/previous-versions/system-center/packs/hh830700(v=technet.10)#BKMK_ConfigureVMMConnections).
 
@@ -50,20 +50,20 @@ This tab contains properties that are specific to the activity. All activities i
 
 The Monitor and Get activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When matching against values, you select one of the available methods of comparison. An option is provided to either match or not match the filter using each method. For example, the "Does not" version of a method finds messages that do not match the filter to trigger the policy.
 
--   **Equals**: the property of the message exactly matches the text or number specified in the filter.
--   **Does not equal**: the property of the message does not exactly match the text or number specified in the filter.
--   **Is less than**: the property of the message is less than the number specified in the filter.
--   **Is less than or equal to**: the property of the message is less than or equal to the number specified in the filter.
--   **Is greater than**: the property of the message is greater than the number n the filter.
--   **Is greater than or equal to**: the property of the message is greater than or equal to the number specified in the filter.
--   **Contains**: the property of the message contains the exact text specified in the filter. Unlike the Equals behavior, there can be other text surrounding the matching text.
--   **Does not contain**: the property of the message does not contain the exact text specified in the filter. Unlike the Equals behavior, there can be other text surrounding the matching text.
--   **Matches pattern**: use regular expressions to specify a pattern that the text must match.
--   **Does not match pattern**: use regular expressions to specify a pattern that the text must not match.
--   **Starts with**: the property of the message starts with the exact text specified in the filter.
+-   **Equals**: The property of the message exactly matches the text or the number specified in the filter.
+-   **Does not equal**: The property of the message does not exactly match the text or the number specified in the filter.
+-   **Is less than**: The property of the message is less than the number specified in the filter.
+-   **Is less than or equal to**: The property of the message is less than or equal to the number specified in the filter.
+-   **Is greater than**: The property of the message is greater than the number n the filter.
+-   **Is greater than or equal to**: The property of the message is greater than or equal to the number specified in the filter.
+-   **Contains**: The property of the message contains the exact text specified in the filter. Unlike the Equals behavior, there can be other text surrounding the matching text.
+-   **Does not contain**: The property of the message does not contain the exact text specified in the filter. Unlike the Equals behavior, there can be other text surrounding the matching text.
+-   **Matches pattern**: Use regular expressions to specify a pattern that the text must match.
+-   **Does not match pattern**: Use regular expressions to specify a pattern that the text must not match.
+-   **Starts with**: The property of the message starts with the exact text specified in the filter.
 -   **Ends with**: the property of the message starts with the exact text specified in the filter.
--   **After**: the property of the message is after the date/time specified in the filter.
--   **Before**: the property of the message is before the date/time specified in the filter.
+-   **After**: The property of the message is after the date/time specified in the filter.
+-   **Before**: The property of the message is before the date/time specified in the filter.
 
 ## Run Behavior tab
 
@@ -77,13 +77,13 @@ By default, the data from the Get activity will be passed on as multiple individ
 
 -   **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files for the output.
 -   **Separate with**. Each item is separated by one or more characters of your choice.
--   **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
+-   **Use CSV format**. All the items are in a CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
 
-The activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
+The activity will produce a new set of data every time it runs. The **Flatten** feature doesn't flatten data across multiple instances of the same activity.
 
 ## Event notifications
 
-Some activities are expected to take a limited amount of time to complete. If they do not complete within that time they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this period a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
+Some activities are expected to take a limited amount of time to complete. If they don't complete within that time, they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this period, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
 To be notified when the activity takes longer than a specified time to run or fails to run:
 
@@ -99,11 +99,11 @@ An activity can only subscribe to data from the activities that are linked befor
 
 To use published data:
 
-1.  Right-click the property value box, click **Subscribe**, and then click **Published Data**.
+1.  Select and hold the property value box, select **Subscribe**, and select **Published Data**.
 
-2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
+2.  Select the **Activity** dropdown box, and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
 
-3.  Click the published data element that you want to use, and then click **OK**.
+3.  Select the published data element that you want to use, and select **OK**.
 
 For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](/previous-versions/system-center/system-center-2012-R2/hh403821(v=sc.12)#CommonPublishedData).
 
@@ -111,60 +111,32 @@ For a list of the data elements published by each activity, see the **Published 
 
 The VMM integration pack adds the Virtual Machine Manager category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Checkpoint](create-checkpoint.md)
-
-[Create New Disk from VHD](create-new-disk-from-vhd.md)
-
-[Create Network Adapter](create-network-adapter.md)
-
-[Create New Disk](create-new-disk.md)
-
-[Create User Role](create-user-role.md)
-
-[Create VM from Template](create-vm-from-template.md)
-
-[Create VM from VHD](create-vm-from-vhd.md)
-
-[Create VM from VM](create-vm-from-vm.md)
-
-[Remove User Role](remove-user-role.md)
-
-[Get Checkpoint](get-checkpoint.md)
-
-[Get Disk](get-disk.md)
-
-[Get Network Adapter](get-network-adapter.md)
-
-[Get User Role](get-user-role.md)
-
-[Get VM](get-vm.md)
-
-[Manage Checkpoint](manage-checkpoint.md)
-
-[Move VM](move-vm.md)
-
-[Remove VM](remove-vm.md)
-
-[Repair VM](repair-vm.md)
-
-[Resume VM](resume-vm.md)
-
-[Run VMM PowerShell Script](run-vmm-powershell-script.md)
-
-[Shut Down VM](shut-down-vm.md)
-
-[Start VM](start-vm.md)
-
-[Stop VM](stop-vm.md)
-
-[Suspend VM](suspend-vm.md)
-
-[Update Disk](update-disk.md)
-
-[Update Network Adapter](update-network-adapter.md)
-
-[Update VM](update-vm.md)
-
-[Update User Role Property](update-user-role-property.md)
-
-[Update User Role Quota](update-user-role-quota.md)
+- [Create Checkpoint](create-checkpoint.md)
+- [Create New Disk from VHD](create-new-disk-from-vhd.md)
+- [Create Network Adapter](create-network-adapter.md)
+- [Create New Disk](create-new-disk.md)
+- [Create User Role](create-user-role.md)
+- [Create VM from Template](create-vm-from-template.md)
+- [Create VM from VHD](create-vm-from-vhd.md)
+- [Create VM from VM](create-vm-from-vm.md)
+- [Remove User Role](remove-user-role.md)
+- [Get Checkpoint](get-checkpoint.md)
+- [Get Disk](get-disk.md)
+- [Get Network Adapter](get-network-adapter.md)
+- [Get User Role](get-user-role.md)
+- [Get VM](get-vm.md)
+- [Manage Checkpoint](manage-checkpoint.md)
+- [Move VM](move-vm.md)
+- [Remove VM](remove-vm.md)
+- [Repair VM](repair-vm.md)
+- [Resume VM](resume-vm.md)
+- [Run VMM PowerShell Script](run-vmm-powershell-script.md)
+- [Shut Down VM](shut-down-vm.md)
+- [Start VM](start-vm.md)
+- [Stop VM](stop-vm.md)
+- [Suspend VM](suspend-vm.md)
+- [Update Disk](update-disk.md)
+- [Update Network Adapter](update-network-adapter.md)
+- [Update VM](update-vm.md)
+- [Update User Role Property](update-user-role-property.md)
+- [Update User Role Quota](update-user-role-quota.md)
