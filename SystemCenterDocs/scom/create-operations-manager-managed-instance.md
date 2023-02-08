@@ -79,7 +79,7 @@ You'll use the configured domain account in later steps for creating a SCOM mana
 
 ## Create and configure a computer group
 
-Create a computer group in your Active Directory instance. For more information, see [Create a group account in Active Directory](/windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory). All the management servers that you create will be a part of this group so that all the members of the group can retrieve group managed service account (gMSA) credentials. (You'll create these credentials in later steps.) This group can't contain spaces and must have alphanumeric characters only.
+Create a computer group in your Active Directory instance. For more information, see [Create a group account in Active Directory](/windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory). All the management servers that you create will be a part of this group so that all the members of the group can retrieve group managed service account (gMSA) credentials. (You'll create these credentials in later steps.) This group can't contain spaces and must have alphabet characters only.
 
 :::image type="Active directory computers" source="media/create-operations-manager-managed-instance/active-directory-computers.png" alt-text="Screenshot of Active Directory computers.":::
 
@@ -146,12 +146,12 @@ The managed service identity (MSI) provides an identity for applications to use 
 
    The **Create User Assigned Managed Identity** pane opens.
 1. Under **Basics**, do the following:
-    1. **Project details**:
-        1. **Subscription**: Select the Azure subscription in which you want to create the SCOM managed instance.
-        1. **Resource group**: Select the resource group in which you want to create the SCOM managed instance.
-    1. **Instance details**:
-        1. **Region**: Select the region in which you want to create the SCOM managed instance.
-        1. **Name**: Enter a name for the instance.
+    - **Project details**:
+        - **Subscription**: Select the Azure subscription in which you want to create the SCOM managed instance.
+        - **Resource group**: Select the resource group in which you want to create the SCOM managed instance.
+    - **Instance details**:
+        - **Region**: Select the region in which you want to create the SCOM managed instance.
+        - **Name**: Enter a name for the instance.
 
     :::image type="Create user assigned managed identity" source="media/create-operations-manager-managed-instance/create-user-assigned-managed-identity.png" alt-text="Screenshot of project and instance details for a user-assigned managed identity.":::
 1. Select **Next : Tags >**.
@@ -175,13 +175,13 @@ We recommend the following settings for creating a SQL managed instance:
 - **Region**: Choose the region close to you. There's no strict requirement on region for the instance, but we recommend the closest region for latency purposes.
 - **Compute + storage**: General Purpose (Gen5) with eight cores is the default. This configuration will suffice for the SCOM managed instance.
 - **Authentication method**: Select **SQL Authentication**. Enter the credentials that you want to use for accessing the SQL managed instance. These credentials don't refer to any that you've created so far.
-- **Virtual network**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM managed instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM managed instance. If you choose a different virtual network, ensure that it has connectivity to the Azure Monitor SCOM Managed Instance virtual network.
+- **VNet**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM managed instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM managed instance. If you choose a different virtual network, ensure that it has connectivity to the Azure Monitor SCOM Managed Instance virtual network.
 
    The subnet that you provide to Azure SQL Managed Instance has to be dedicated (delegated) to the SQL managed instance. The provided subnet can't be used to house any other resources. 
 
    By design, a managed instance needs a minimum of 32 IP addresses in a subnet. As a result, you can use a minimum subnet mask of /27 when defining your subnet IP ranges. For more information, see [Determine required subnet size and range for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/vnet-subnet-determine-size?view=azuresql&preserve-view=true).
-- **Connection type**: By default, the connection type is **Proxy**.
-- **Public endpoint**: This setting can be either enabled or disabled. To use Power BI reporting, you need to enable the public endpoint.
+- **Connection Type**: By default, the connection type is **Proxy**.
+- **Public Endpoint**: This setting can be either **Enabled** or **Disabled**. To use Power BI reporting, you need to enable the public endpoint.
 
   If the Azure SQL Managed Instance virtual network is different from the Azure Monitor SCOM Managed Instance virtual network:
 
@@ -195,14 +195,14 @@ For the rest of the settings on the other tabs, you can leave them as default or
 
 After you create a SQL managed instance, you need to provide permission to the Azure Monitor SCOM Managed Instance resource provider to access this SQL managed instance.
 
-To provide the permission:
+To provide the permission, do the following:
 
 1. Open the SQL managed instance and select **Access control (IAM)**. On the top menu, select **+ Add** > **Add role assignment**.
    :::image type="Access control" source="media/create-operations-manager-managed-instance/access-control.png" alt-text="Screenshot that shows selections for starting the process of adding a role assignment for access control.":::
 1. On the **Add role assignment** pane:
    - For **Role**, select **Reader** from the dropdown list.
    - For **Assign access to**, select **User, group, or service principal** from the dropdown list.
-   - For **Select**, enter **Microsoft.SCOM**.
+   - For **Select**, enter **Microsoft.SCOM Resource Provider**.
    :::image type="Add role assignment" source="media/create-operations-manager-managed-instance/add-role-assignment.png" alt-text="Screenshot of selections for adding a role assignment.":::
 1. Select **Save**.
 
@@ -213,7 +213,7 @@ To set the Active Directory admin value in the SQL managed instance, use the fol
 >[!Note]
 >You must have Global Administrator or Privileged Role Administrator permissions for the subscription.
 
-1. Open the SQL managed instance. Under **Settings**, select **Azure Active Directory admin**.
+1. Open the SQL managed instance. Under **Settings**, select **Active Directory admin**.
    :::image type="Active directory admin" source="media/create-operations-manager-managed-instance/active-directory-admin.png" alt-text="Screenshot of the pane for Active Directory admin information.":::
 
 2. Select **Set admin**, and search for your MSI. This is the same MSI that you provided during the Azure Monitor SCOM Managed Instance creation flow. You'll find the admin added to the SQL managed instance.
@@ -224,7 +224,7 @@ To set the Active Directory admin value in the SQL managed instance, use the fol
 
 For more information about permissions, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
 
-## Create a key vault and add credentials as a secret  
+## Create a key vault and add credentials as a secret in the key vault  
 
 For security, you can store the domain account (which you created previously in Active Directory) in a key vault.
 
@@ -241,7 +241,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 1. Select **+ Create**.
      :::image type="Key vault" source="media/create-operations-manager-managed-instance/key-vaults.png" alt-text="Screenshot of the button for creating a key vault.":::
 
-1. On the **Basics** tab, do the following:
+1. For **Basics**, do the following:
     - **Project details**:
         - **Subscription**: Select the subscription.
         - **Resource group**: Select the desired resource group.
@@ -255,30 +255,30 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
    :::image type="create a key vault" source="media/create-operations-manager-managed-instance/create-a-key-vault.png" alt-text="Screenshot of basic information for creating a key vault.":::
 1. Select **Next**.
-1. On the **Access Policy** tab, do the following:
+1. For **Access Policy**, do the following:
     - **Access configuration**: Select **Vault access policy**.
     - **Resource access**: Don't select any of the options.
     - **Access policies**: Select **+ Create** to create a new access policy.
       :::image type="Access policies" source="media/create-operations-manager-managed-instance/access-policies.png" alt-text="Screenshot of the button for creating an access policy.":::
 
-      The **Create an access policy** pane opens.
+      The **Create an access policy** page opens on the right pane.
 
-      1. On the **Permissions** tab, under **Secret permissions**, select **Get** and **List**.
+      1. For **Permissions**, under **Secret permissions**, select **Get** and **List**.
          :::image type="Create an Access policy" source="media/create-operations-manager-managed-instance/create-an-access-policy.png" alt-text="Screenshot of checkboxes for get and list permissions.":::
       1. Select **Next**.
-      1. On the **Principal** tab, select the same MSI that you used in Azure SQL Managed Instance admin configuration.
+      1. For **Principal**, select the same MSI that you used in Azure SQL Managed Instance admin configuration.
 
-      1. On the **Review + create** tab, review the selections, and then select **Create**.
+      1. For **Review + create**, review the selections, and then select **Create**.
 1. Select the access policy that you created, and then select **Next**.
      :::image type="Access policy" source="media/create-operations-manager-managed-instance/access-policy.png" alt-text="Screenshot of a selected access policy.":::
-1. On the **Networking** tab:
-    1. Select **Enable public access**.
-    1. Under **Public Access**, for **Allow access from**, select **All networks**.
+1. For **Networking**, do the following:
+    - Select **Enable public access**.
+    - Under **Public Access**, for **Allow access from**, select **All networks**.
 
    :::image type="Networking tab" source="media/create-operations-manager-managed-instance/networking-inline.png" alt-text="Screenshot of selections for enabling public access on the Networking tab." lightbox="media/create-operations-manager-managed-instance/networking-expanded.png":::
 1. Select **Next**.
-1. On the **Tags** tab, select the tags if required, and then select **Next**.
-1. On the **Review + create** tab, review the selections, and then select **Create** to create the key vault.
+1. For **Tags**, select the tags if required, and then select **Next**.
+1. For **Review + create**, review the selections, and then select **Create** to create the key vault.
   
     :::image type="content" source="media/create-operations-manager-managed-instance/review-inline.png" alt-text="Screenshot of the tab for reviewing selections before creating a key vault." lightbox="media/create-operations-manager-managed-instance/review-expanded.png":::
 
@@ -292,15 +292,15 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 1. Select **+ Generate/Import**.
 
 1. On the **Create a secret** page, do the following:
-    1. **Upload options**: Select **Manual**.
-    1. **Name**: Enter the name of the secret. For example, you can use *Username* for the username secret and *Password* for the password secret.
-    1. **Secret value**: For the username value (in the format *domain\username*), enter the domain account username. For the password value, enter the domain account password. For example, if the domain is *contoso.com*, the username should be in the format *contoso\username*.
+    - **Upload options**: Select **Manual**.
+    - **Name**: Enter the name of the secret. For example, you can use *Username* for the username secret and *Password* for the password secret.
+    - **Secret value**: For the username value (in the format *domain\username*), enter the domain account username. For the password value, enter the domain account password. For example, if the domain is *contoso.com*, the username should be in the format *contoso\username*.
 
        :::image type="Secrets" source="media/create-operations-manager-managed-instance/create-a-secret-username.png" alt-text="Screenshot of entering a secret value for a username.":::
 
        :::image type="Secrets" source="media/create-operations-manager-managed-instance/create-a-secret-password.png" alt-text="Screenshot of entering a secret value for a password.":::
 
-    1. Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**, **Enabled**, and **Tags** areas as default, and select **Create** to create the secret.
+    - Leave the **Content type (optional)**, **Set activation date**, **Set expiration date**, **Enabled**, and **Tags** areas as default, and select **Create** to create the secret.
 
 ---
 
@@ -320,62 +320,62 @@ To create a SCOM managed instance, follow these steps:
 1. The **Prerequisites to create SCOM managed instance** page opens. Download the script and run it on a domain-joined machine to validate the prerequisites.
     :::image type="Script download" source="media/create-operations-manager-managed-instance/script-download-inline.png" alt-text="Screenshot that shows the button for downloading a script." lightbox="media/create-operations-manager-managed-instance/script-download-expanded.png":::
 1. Under **Basics**, do the following:
-    1. **Project details**:
-        1. **Subscription**: Select the Azure subscription in which you want to place the SCOM managed instance.
-        1. **Resource group**: Select the resource group in which you want to place the SCOM managed instance. If you don't have a resource group, select **Create new** to create a new resource group, and then place the instance. We recommend that you have a new resource group exclusively for Azure Monitor SCOM Managed Instance.
+    - **Project details**:
+        - **Subscription**: Select the Azure subscription in which you want to place the SCOM managed instance.
+        - **Resource group**: Select the resource group in which you want to place the SCOM managed instance. If you don't have a resource group, select **Create new** to create a new resource group, and then place the instance. We recommend that you have a new resource group exclusively for Azure Monitor SCOM Managed Instance.
 
         :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details.png" alt-text="Screenshot that shows project details for creating a SCOM managed instance.":::
 
-    1. **Instance details**:
-        1. **SCOM managed instance name**: Enter a name for your SCOM managed instance.
+    - **Instance details**:
+        - **SCOM managed instance name**: Enter a name for your SCOM managed instance.
             >[!Note]
             >- The name of a SCOM managed instance can have only alphanumeric characters and be up to 10 characters.
             >- A SCOM managed instance is equivalent to a System Center Operations Manager management group, so choose a name accordingly.
-        1. **Region**: Select a region near to you geographically so that latency between your agents and the SCOM managed instance is as low as possible. This region must also contain the virtual network.
+        - **Region**: Select a region near to you geographically so that latency between your agents and the SCOM managed instance is as low as possible. This region must also contain the virtual network.
 
         :::image type="Instance details" source="media/create-operations-manager-managed-instance/instance-details.png" alt-text="Screenshot that shows instance details for creating a SCOM managed instance.":::
 
-    1. **Active directory details**:
-        1. **Domain name**: Enter the name of the domain that the domain controller is administering.
-        1. **DNS Server IP**: Enter the IP address of the DNS server that's providing the IP addresses to the resources in the domain from the previous step.
-        1. **OU Path**: Enter the organizational unit (OU) path to where you want to join the servers. This isn't a necessary field. If you leave it blank, it will assume the default value. Ensure that the value you enter is in the distinguished name format. For example: **OU=testOU,DC=domain,DC=Domain,DC=com**.
+    - **Active directory details**:
+        - **Domain name**: Enter the name of the domain that the domain controller is administering.
+        - **DNS Server IP**: Enter the IP address of the DNS server that's providing the IP addresses to the resources in the domain from the previous step.
+        - **OU Path**: Enter the organizational unit (OU) path to where you want to join the servers. This isn't a necessary field. If you leave it blank, it will assume the default value. Ensure that the value you enter is in the distinguished name format. For example: **OU=testOU,DC=domain,DC=Domain,DC=com**.
 
         :::image type="Active Directory details" source="media/create-operations-manager-managed-instance/active-directory-details.png" alt-text="Screenshot that shows Active Directory details for creating a SCOM managed instance.":::
 
-    1. **Domain account details**:
-        1. **Key vault**: Select the key vault that has the secret username and secret password of the domain account's user credentials.
-        1. **Username secret**: Enter the secret name for the user under the selected key vault.
-        1. **Password secret**: Enter the secret name for the password under the selected key vault.
+    - **Domain account details**:
+        - **Key vault**: Select the key vault that has the secret username and secret password of the domain account's user credentials.
+        - **Username secret**: Enter the secret name for the user under the selected key vault.
+        - **Password secret**: Enter the secret name for the password under the selected key vault.
 
         >[!Note]
         >Ensure that you provide the secret names created in the *selected key vault*, and not the actual domain username and password.
 
         :::image type="content" source="./media/create-operations-manager-managed-instance/secret-password-mapping-inline.png" alt-text="Screenshot that shows password mapping for creating a secret." lightbox="./media/create-operations-manager-managed-instance/secret-password-mapping-expanded.png":::
 
-    1. **Azure hybrid benefit**: By default, **No** is selected. Select **Yes** if you're using a Windows Server license for your existing servers. This license is applicable only for the Windows servers that will be used while you're creating virtual machine for the SCOM managed instance. It won't apply to the existing Windows servers.
+    - **Azure hybrid benefit**: By default, **No** is selected. Select **Yes** if you're using a Windows Server license for your existing servers. This license is applicable only for the Windows servers that will be used while you're creating virtual machine for the SCOM managed instance. It won't apply to the existing Windows servers.
         :::image type="Azure hybrid benefit" source="media/create-operations-manager-managed-instance/azure-hybrid-benefit.png" alt-text="Screenshot that shows options for Azure hybrid benefit.":::
 1. Select **Next**.
 1. Under **Networking**, do the following:
-    1. **Virtual network**:
-        1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads that you want to monitor and to your domain controller and DNS server.
-        1. **Subnet**: Select a subnet that has at least 32 IP addresses to house the instance. The minimum address space is 28.
+    - **Virtual network**:
+        - **Virtual network**: Select the virtual network that has direct connectivity to the workloads that you want to monitor and to your domain controller and DNS server.
+        - **Subnet**: Select a subnet that has at least 32 IP addresses to house the instance. The minimum address space is 28.
 
            The subnet can have existing resources in it. However, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the Azure Monitor SCOM Managed Instance components.
 
            >[!Note]
            >Ensure that you have a NAT gateway associated with the subnet that you choose.
-    1. **SCOM managed instance interface**:
-        1. **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for Azure Monitor SCOM Managed Instance.
-        1. **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step.
-    1. **gMSA details**:
-        1. **Computer group name**: Enter the name of the computer group that you create after creation of the gMSA account.
-        1. **gMSA account name**: Enter the gMSA name. It must end with **$**.
+    - **SCOM managed instance interface**:
+        - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for Azure Monitor SCOM Managed Instance.
+        - **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step.
+    - **gMSA details**:
+        - **Computer group name**: Enter the name of the computer group that you create after creation of the gMSA account.
+        - **gMSA account name**: Enter the gMSA name. It must end with **$**.
 
         :::image type="gMSA details" source="media/create-operations-manager-managed-instance/gmsa-details.png" alt-text="Screenshot that shows gMSA details.":::
 1. Select **Next**.
 1. Under **Database**, do the following:
-    1. **SQL managed instance**: For **Resource Name**, select the Azure SQL Managed Instance resource name for the instance that you want to associate with this SCOM managed instance. Use only the SQL managed instance that has given permissions to the SCOM managed instance. For more information, see SQL managed instance creation and permission.
-    1. **User managed identity**: For **User managed identity account**, select the managed identity that you created and for which you provided admin permissions to the SQL managed instance. Ensure that the same MSI has read permissions on the key vault for domain account credentials.
+    - **SQL managed instance**: For **Resource Name**, select the Azure SQL Managed Instance resource name for the instance that you want to associate with this SCOM managed instance. Use only the SQL managed instance that has given permissions to the SCOM managed instance. For more information, see SQL managed instance creation and permission.
+    - **User managed identity**: For **User managed identity account**, select the managed identity that you created and for which you provided admin permissions to the SQL managed instance. Ensure that the same MSI has read permissions on the key vault for domain account credentials.
 1. Select **Next**.
 1. Under **Tags**, enter the **Name** value, and then select the resource.
 1. Select **Next**.
