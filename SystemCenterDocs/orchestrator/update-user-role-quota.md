@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 253dbe66-1fdd-4160-a664-0cf34e712e03
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update User Role Quota
@@ -37,7 +37,7 @@ Updates the quotas for a certain user role and cloud.
 
 | Element   | Description   |
 |:---|:---|
-| Max Custom Quota   | Enter maximum value for custom property. |   
+| Max Custom Quota   | Enter maximum value for custom property |   
 | Max Memory in MBs  | Maximum memory   |   
 | Max Storage in GBs | Maximum storage space   |   
 | Max Virtual CPUs   | Maximum number of virtual CPUs   |   

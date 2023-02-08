@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: ad598fdd-5ced-4679-8fde-e1ec078ab4d1
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Start VM
@@ -25,7 +25,7 @@ robots: noindex
 
 The Start VM activity is used to start a virtual machine that has been paused, shut down, or stopped.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Start VM Required Properties
 
@@ -57,7 +57,7 @@ The activity publishes all of the data from the required and optional properties
 | Delay Start (s)   | The number of seconds to wait after the virtualization service starts before automatically starting the virtual machine   |   
 | Description   | An alphanumeric description of the virtual machine   |   
 | Disk I/O (IOPS)   | The disk I/O performance, measured by the number of I/O operations per second \[IOPS\] that can be performed with acceptable latency   |   
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |   
+| Enabled   | True or False. If False, the virtual machine can't be started.   |   
 | Expected CPU Utilization   | A two-digit percent value that represents the average CPU usage for the virtual machine   |   
 | Failed Job ID   | The unique identifier (GUID) of the most recent failed job   |   
 | Has Pass-through Disk   | True or False   |   
@@ -65,7 +65,7 @@ The activity publishes all of the data from the required and optional properties
 | Heartbeat Enabled   | True or False   |   
 | Host Group Path   | The path of the virtual machine under its Host Group, in the format All Hosts\\virtual machine Name   |   
 | Host ID   | The unique identifier (GUID) of the Host Computer   |   
-| Host Type   | VMHost   |   
+| Host Type   | VM Host   |   
 | Is Highly Available   | True or False   |   
 | Is Tag Empty   | True or False   |   
 | Is Undergoing Live Migration   | True or False   |   
@@ -97,7 +97,7 @@ The activity publishes all of the data from the required and optional properties
 | Time Synchronization Enabled   | True or False   |   
 | Total Size   | The total size of the virtual machine, including all disks and configuration files   |   
 | Undo Disks Enabled   | True or False. If True, the virtual machine can undo any changes when shutting down.   |   
-| Unsupported Reason   | If an error occurs during cloning, this message text describes the reason that the attempted action is not supported   |   
+| Unsupported Reason   | If an error occurs during cloning, this message text describes the reason that the attempted action isn't supported   |   
 | Use Hardware Assisted Virtualization | True or False   |   
 | User Role ID   | The unique identifier (GUID) of the user role that allows users to create virtual machines   |   
 | Virtual COM Ports   | A list of the names of the Virtual COM Ports. Always COM1 or COM2.   |   
@@ -105,7 +105,7 @@ The activity publishes all of the data from the required and optional properties
 | Virtual Disk Drives   | A list of the names of Virtual Disk Drives   |   
 | Virtual Floppy Drive   | A list of the names of Virtual Floppy Drives   |   
 | Virtual Hard Disks   | A list of the names of Virtual Hard Disks   |   
-| Virtualization Platform   | The virtualization platform. Valid values are: HyperV, VMWareESX, or Unknown.   |   
+| Virtualization Platform   | The virtualization platform. Valid values are: Hyper-V, VMWareESX, or Unknown.   |   
 | Virtual Network Adapters   | A list of the names of Virtual Network Adapters   |   
 | Virtual SCSI Adapters   | A list of the names of Virtual SCSI Adapters   |   
 | VMC Path   | The virtual machine Configuration file path, in the format C:\\VMM\\DRDemo-DataTier\\VirtualMachines\\abc12345-d6ef-78g9-h0ij-1kl2-34m56n7890p12.xml   |   
