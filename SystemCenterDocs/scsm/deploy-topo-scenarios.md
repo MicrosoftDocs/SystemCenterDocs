@@ -36,7 +36,7 @@ Service Manager roles:
 Hardware configuration:  
 
 -   8\-core 2.66 GHz CPU
--   16 GB RAM \(5 GB for each virtual computer and 1 GB for the host computer\)
+-   16-GB RAM \(5 GB for each virtual computer and 1 GB for the host computer\)
 -   100 GB of available disk space
 
 This configuration was tested with the following load.  
@@ -65,7 +65,7 @@ Service Manager roles:
 Hardware configuration:  
 
 -   8\-core 2.66 GHz CPU  
--   16 GB RAM \(5 GB for each virtual computer and 1 GB for the host computer\)  
+-   16-GB RAM \(5 GB for each virtual computer and 1 GB for the host computer\)  
 -   100 GB of available disk space, which doesn't include the .vhd file disk space requirements on the host computer  
 
 This configuration was tested with the following load.  
@@ -91,13 +91,13 @@ We recommend the following hardware, configured for roles and hardware as descri
 Hardware configuration for the Service Manager management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 disk RAID 1  
 
 Hardware configuration for the Service Manager data warehouse management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 disk RAID 1  
 
 Hardware configuration for the Self-Service Portal with web content server with SharePoint Web Parts:  
@@ -136,7 +136,7 @@ Hardware configuration for the Service Manager management server:
 Hardware configuration for the Service Manager data warehouse management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 disk RAID 1  
 -   10 GB of available hard disk space  
 
@@ -150,7 +150,7 @@ Hardware configuration for the Service Manager database server:
 Hardware configuration for the Service Manager data warehouse database server:  
 
 -   8\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   4 RAID 1\+0 disk drives for data  
 -   2 RAID 1 disk drives for logs  
 -   80 GB of available hard disk space  
@@ -164,7 +164,7 @@ Hardware configuration for the Self-Service Portal with web content server:
 Hardware configuration for the Self-Service Portal with SharePoint web parts:  
 
 -   4\-Core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   80 GB of available hard disk space  
 
 This configuration was tested with the following load.  
@@ -190,27 +190,27 @@ In this scenario, we recommend the following hardware, configured for roles and 
 Hardware configuration for the Service Manager management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 disk RAID 1  
 -   10 GB of available hard disk space  
 
 Hardware configuration for each additional Service Manager management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 RAID 1 disk drives  
 
 Hardware configuration for the Service Manager data warehouse management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 RAID 1 disk drives  
 -   10 GB of available hard disk space  
 
 Hardware configuration for the Service Manager database server:  
 
 -   8\-core 2.66 GHz CPU  
--   8 GB RAM to 32 GB RAM, depending on the expected size of the database  
+-   8-GB RAM to 32-GB RAM, depending on the expected size of the database  
 -   4 RAID 1\+0 disk drives for data  
 -   2 RAID 1 disk drives for logs  
 
@@ -230,13 +230,13 @@ Hardware configuration for the Self-Service Portal with web content server:
 Hardware configuration for the Self-Service Portal with SharePoint web parts:  
 
 -   4\-core 2.66 GHz CPU
--   8 GB RAM  
+-   8-GB RAM  
 -   80 GB of available hard disk space  
 
 Hardware configuration for each Service Manager console:  
 
 -   2\-core 2.0 GHz CPU  
--   4 GB RAM  
+-   4-GB RAM  
 -   10 GB of available hard disk space  
 
 This configuration was tested with the following load.  

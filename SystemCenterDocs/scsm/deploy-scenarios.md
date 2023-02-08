@@ -1,6 +1,6 @@
 ---
 title: Deploy Service Manager
-description: You can install Service Manager for a variety of deployment scenarios.
+description: You can install Service Manager for various deployment scenarios.
 manager: mkluck
 ms.custom: na, intro-deployment
 ms.prod: system-center
@@ -44,7 +44,7 @@ The deployment guide describes the following three deployment scenarios: [instal
 
  While we don't recommend it \(for performance reasons\), if you want to host the Service Manager management server and the Self-Service Portal on the same computer, you must deploy the Service Manager management server before you deploy the Self-Service Portal.  
 
- Performing an upgrade from technical preview versions of Service Manager is not supported. Furthermore, for this release, Service Manager setup installs files in predefined folders that might already exist if you've a previous version of Service Manager installed.  
+ Performing an upgrade from technical preview versions of Service Manager isn't supported. Furthermore, for this release, Service Manager setup installs files in predefined folders that might already exist if you've a previous version of Service Manager installed.  
 
  The user installing Service Manager has access to the Service Connection Point \(SCP\) object of Service Manager in the Active Directory. This SCP stores the information about the service. Client applications, such as Service Manager, can connect to services using the SCP. For more information about service connection points, see [Publishing Services in Active Directory](/previous-versions/windows/it-pro/windows-2000-server/cc961733(v=technet.10)).  
 

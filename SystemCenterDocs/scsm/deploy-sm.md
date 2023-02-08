@@ -29,13 +29,13 @@ The sections in this article also describe how to find and read the Setup log if
 
 The following sections describe considerations you should read before you deploy Service Manager.
 
-## Manage default language for SQL login accounts
+## Manage default language for SQL sign-in accounts
 
-We recommend English as the default language for the SQL users sign in accounts.
+We recommend English as the default language for the SQL users sign-in accounts.
 
-As date format is based on the language, if the language of SQL user sign in accounts isn't English, then, a few data Warehouse jobs, especially the jobs that use SQL *SET_DateFormat* function, fail. These jobs don't push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse.
+As date format is based on the language, if the language of SQL user sign-in accounts isn't English, then a few data Warehouse jobs, especially the jobs that use SQL *SET_DateFormat* function, fail. These jobs don't push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse.
 
-You can set the default language for a new SQL sign in account or change the default language for an existing account. See the following sections for the steps to use.
+You can set the default language for a new SQL sign-in account or change the default language for an existing account. See the following sections for the steps to use.
 
 **Use these steps**:
 
@@ -51,7 +51,7 @@ You can set the default language for a new SQL sign in account or change the def
 
 5. Select **OK**.
 
-6. To change the default language for an existing sign in account:
+6. To change the default language for an existing sign-in account:
     1. Repeat steps 1 and 2.
     2. From the **Logins** folder, select and double-click the account for which you want to change the default language.
     3. Select **Properties** and repeat step 4 and 5.  
