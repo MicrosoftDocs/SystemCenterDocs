@@ -32,7 +32,7 @@ Before you start the deployment of System Center - Service Manager, you create a
 
 ## Account considerations before you run Setup
 
-Before running Setup for Service Manager, review the following sections to ensure that the requirements that are needed to install Service Manager have been met. During Setup, you will be prompted to provide domain users or groups for various Service Manager functions. Review this information to ensure that you are ready for the setup process.
+Before running Setup for Service Manager, review the following sections to ensure that the requirements that are needed to install Service Manager have been met. During Setup, you will be prompted to provide domain users or groups for various Service Manager functions. Review this information to ensure that you're ready for the setup process.
 
 
 ### Account used when you install Service Manager
@@ -73,7 +73,7 @@ You need the following permissions when you're installing the data warehouse man
 
 You need the following permissions when you're installing SSRS:  
 
-Permissions to place a binary file into the \\Program Files\\Microsoft SQL Server\\*Instance Name*\Reporting Services\\ReportServer\\Bin folder on the computer hosting the data warehouse management server .
+Permissions to place a binary file into the \\Program Files\\Microsoft SQL Server\\*Instance Name*\Reporting Services\\ReportServer\\Bin folder on the computer hosting the data warehouse management server.
 
 #### Registering Service Manager with the data warehouse  
 
@@ -93,7 +93,7 @@ You will have to provide credentials for the accounts in the following table dur
 
 #### Accounts used when installing a Service Manager management server  
 
-|Account|Permissions|How it is used in Service Manager|  
+|Account|Permissions|How it's used in Service Manager|  
 |-------------|-----------------|---------------------------------------------|  
 |Management group administrators|-   Must be a domain user or group. <br> **Important:**      The user account that is logged into the computer during installation of an initial Service Manager management server is automatically added to this group.|-   Added to the Service Manager Administrators user role.|  
 |Service Manager services account|-   Must be a domain user or group.<br />-   Must be member of local administrators.<br />- Must have **Log on as a service**. <br /><br /> To set these permissions, use **Security Settings** > **Local Policies** > **User Rights Assignment**.  <br /> <br /> **Optional**: <br /><br />- Deny log on as a batch job <br /><br /> - Deny log on through Remote Desktop Services. |-   Becomes the Operational System Account.<br />-   Assigned to the logon account for the System Center Data Access Service.<br />-   Assigned to the logon account for System Center Management Configuration service.<br />- Becomes a member of the sdk\_users and configsvc\_users database roles for the Service Manager database.<br />-   If you change the credentials for these two services, ensure that the new account has a SQL Login in the ServiceManager database and that this account is a member of the Builtin\\Administrators group.|  
@@ -107,7 +107,7 @@ You will have to provide credentials for the accounts in the following table dur
 
 #### Accounts used when you install a data warehouse management server  
 
-|Account|Permissions|How it is used in Service Manager|  
+|Account|Permissions|How it's used in Service Manager|  
 |-------------|-----------------|---------------------------------------------|  
 |Management group administrators|-   Must be a domain user or group.|-   Added to the data warehouse administrators user role.|  
 |Service Manager services account|-   Must be a domain user or group.<br />-   Must be member of local administrators on the data warehouse management server.<br />-   Must be the same account that you used for the Service Manager management server services account.|-   Becomes the data warehouse system Run As account.<br />-   Assigned to the ServiceManager SDK Service account.<br />-   Assigned to ServiceManager Config account.<br />-   Becomes a member of the sdk\_users and configsvc\_users database roles for the DWDataMart database.<br />-   Becomes a member of the db\_datareader database role for the DWRepository database.<br />-   Becomes a member of the configsvc\_users database role for the Service Manager database.|  
@@ -116,7 +116,7 @@ You will have to provide credentials for the accounts in the following table dur
 
 ### Credential used when registering a Service Manager management group with the data warehouse management group
 
- As part of the installation process, you register the Service Manager management group with the data warehouse management group. During this process, you will be prompted to provide credentials. The account credentials that you provide must be a domain account. Furthermore, you will have to provide an account with the following permissions:  
+ As part of the installation process, you register the Service Manager management group with the data warehouse management group. During this process, you'll be prompted to provide credentials. The account credentials that you provide must be a domain account. Furthermore, you will have to provide an account with the following permissions:  
 
 -   Must be a member of the Administrator user role in both the Service Manager and data warehouse management groups.  
 -   Must be a member of the users local administrator group on the data warehouse management server.  

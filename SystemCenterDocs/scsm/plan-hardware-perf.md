@@ -68,7 +68,7 @@ Network latency was also tested in the baseline. Network latency was introduced 
  The tests also delivered the following results:  
 
 -   Where network latency was less than 100 milliseconds \(msec\), overall Service Manager console response times were found good.  
--   Where network latency was 150 to 200 msec, performance was noted as usable, with up to a 40\-percent degradation in response time in some scenarios. With latency between 150 to 200 msec, you should plan to evaluate the key scenarios for your organization and determine if Remote Desktop Connection \(RDC\) is a better option.  
+-   Where network latency was 150 msec to 200 msec, performance was noted as usable, with up to a 40\-percent degradation in response time in some scenarios. With latency between 150 msec to 200 msec, you should plan to evaluate the key scenarios for your organization and determine if Remote Desktop Connection \(RDC\) is a better option.  
 
     > [!NOTE]  
     >  Expanding service maps in the Service Manager console was slow with any amount of latency.  
@@ -77,4 +77,4 @@ Network latency was also tested in the baseline. Network latency was introduced 
 
 ## Next steps
 
-- To read general guidelines to consider when you are planning for Service Manager software performance, review [Service Manager performance](sm-perf.md).
+- To read general guidelines to consider when you're planning for Service Manager software performance, review [Service Manager performance](sm-perf.md).

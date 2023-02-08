@@ -1,6 +1,6 @@
 ---
 title: Enable service logon
-description: the article provides information about how to enable service log on as log on type.
+description: the article provides information about how to enable service logon as log on type.
 manager: mkluck
 ms.custom: na
 ms.prod: system-center
@@ -46,9 +46,9 @@ To enable using domain policy, contact your administrators. To use local group p
 
 If required accounts aren't provided with service log on permission, then *monitoringhost.exe* doesn't run under those accounts. Which means, some of the workflows such as SLA/SLO wouldn't run. In such case, the following error event is logged in the Operations Manager event log:
 
-<em>The Health Service could not log on the RunAs account XXXXXXX for management group XXXX because it has not been granted the *Log on as a service</em>
+<em>The Health Service couldn't log on the RunAs account XXXXXXX for management group XXXX because it hasn't been granted the *Log on as a service</em>
 
-Here is a sample error:
+Here's a sample error:
 
 ![Screenshot of identify accounts that need service log on permission.](./media/enable-service-logon-sm/identify-logon-type.png)
 

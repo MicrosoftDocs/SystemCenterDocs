@@ -34,7 +34,7 @@ When you deploy a Service Manager management server and a data warehouse, you ne
 ## Database collations
 
 - You must use the same supported language collations if you want to import data from Operations Manager into Service Manager.
-- This only applies to the the Operations Manager database, and the SM DWStagingAndConfig database, when you create an Operations Manager Data Source for the data warehouse. Specifically, this appears in the Service Manager console as a Data Warehouse Data Source.
+- This only applies to the Operations Manager database, and the SM DWStagingAndConfig database, when you create an Operations Manager Data Source for the data warehouse. Specifically, this appears in the Service Manager console as a Data Warehouse Data Source.
 - This doesn't affect either the Operations Manager to Service Manager Configuration Item connector, or the Operations Manager to  Service Manager Alert Incident connector.  
 - If you've databases with collations that don't match, you can't use the Operations Manager to Service Manager data warehouse connector. This connector imports alerts from the Operations Manager database, to the Service Manager DWStagingAndConfig database.
 
