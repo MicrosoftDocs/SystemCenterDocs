@@ -1,13 +1,13 @@
 ---
 title: Get Tier activity in System Center - Orchestra
-description: The Get Tier activity is used in a runbook to returns data on all tiers within the VMM management server. This topic also lists the filters and published data.
+description: The Get Tier activity is used in a runbook to return data on all tiers within the VMM management server. This article also lists the filters and published data.
 ms.date: 01/22/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Tier activity
@@ -18,9 +18,9 @@ manager: evansma
 
 ::: moniker-end
 
-The Get Tier activity is used in a runbook to returns data on all tiers within the VMM management server. The Published Data below is returned for each tier.
+The Get Tier activity is used in a runbook to return data on all tiers within the VMM management server. The Published Data below is returned for each tier.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ##  Filters
 

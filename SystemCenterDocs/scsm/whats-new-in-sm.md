@@ -4,7 +4,7 @@ title: What's new in System Center Service Manager
 description: This article describes the new features supported in Service Manager
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 10/14/2022
 ms.topic: article
 ms.prod: system-center
@@ -67,5 +67,5 @@ This article details the new features supported in System Center 2016 - Service 
 
 ## Next steps
 
-- Review [Planning for Service Manager](../scsm/plan-sm.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.
+- To understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization, see [Planning for Service Manager](../scsm/plan-sm.md).
 - See the [fixed issues](release-notes-sm.md).

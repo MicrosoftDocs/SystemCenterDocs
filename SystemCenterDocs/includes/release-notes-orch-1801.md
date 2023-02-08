@@ -1,7 +1,7 @@
 ---
 ms.assetid: 7a39a3e6-4a8d-4182-9bf5-13fa55f9fb44
 description: include file to provide Release Notes for System Center 1801 - Orchestrator
-manager: evansma
+manager: mkluck
 ms.topic:  include
 author: jyothisuri
 ms.author: jsuri
