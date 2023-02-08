@@ -7,7 +7,7 @@ ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noinde
 ---
 # Service Manager published data
