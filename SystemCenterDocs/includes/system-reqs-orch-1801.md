@@ -3,7 +3,7 @@ ms.assetid: 1e6e82dd-2ba6-45f2-8340-8efaeae1d4a6
 title: include file
 description: include file to provide system requirements for Orchestrator 1801, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/17/2018
 ms.custom: na
 author: jyothisuri
@@ -60,7 +60,7 @@ We recommend the following software for a full installation of Orchestrator on a
 * Join the computer to an Active Directory domain.
 
 > [!NOTE]
-> On the first use of the Orchestration console, you are prompted to install Microsoft Silverlight on the computer if it isn't already installed. Install Silverlight 5.0.
+> On the first use of the Orchestration console, you're prompted to install Microsoft Silverlight on the computer if it isn't already installed. Install Silverlight 5.0.
 
 ## SQL Server
 
@@ -90,7 +90,7 @@ You can download .NET 3.5 SP1 [from the download center](https://www.microsoft.c
 5.	Select **.NET Framework 4.5** if it isn’t already selected.
 6.	Expand **WCF Services**.
 7.	Select **HTTP Activation** if it isn’t already selected.
-8.	Select **Next** and follow the prompts to finish the installation. If you have problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](/previous-versions/system-center/system-center-2012-R2/hh546549(v=sc.12)).
+8.	Select **Next** and follow the prompts to finish the installation. If you've problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](/previous-versions/system-center/system-center-2012-R2/hh546549(v=sc.12)).
 
 
 ## Virtualization
