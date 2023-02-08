@@ -306,6 +306,8 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
 ## Create a SCOM managed instance
 
+To create a SCOM managed instance, follow these steps:
+
 1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **SCOM Managed Instance**.
 1. On the **Overview** page, you have three options:
     - **Pre-requisites**: Allows you to view the prerequisites.
@@ -314,13 +316,13 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 
     :::image type="Azure Monitor SCOM Managed Instance Overview" source="media/create-operations-manager-managed-instance/scom-mi-overview.png" alt-text="Screenshot that shows options on the overview page for Azure Monitor SCOM Managed Instance.":::
 
-    Select **SCOM managed instance**.
+    Select **Create SCOM managed instance**.
 1. The **Prerequisites to create SCOM managed instance** page opens. Download the script and run it on a domain-joined machine to validate the prerequisites.
     :::image type="Script download" source="media/create-operations-manager-managed-instance/script-download-inline.png" alt-text="Screenshot that shows the button for downloading a script." lightbox="media/create-operations-manager-managed-instance/script-download-expanded.png":::
 1. Under **Basics**, do the following:
     1. **Project details**:
         1. **Subscription**: Select the Azure subscription in which you want to place the SCOM managed instance.
-        1. **Resource group**: Select the resource group in which you want to place the SCOM managed instance. If you don't have a resource group, select **Create new** to create a new resource group, and then place the instance in it. We recommend that you have a new resource group exclusively for Azure Monitor SCOM Managed Instance.
+        1. **Resource group**: Select the resource group in which you want to place the SCOM managed instance. If you don't have a resource group, select **Create new** to create a new resource group, and then place the instance. We recommend that you have a new resource group exclusively for Azure Monitor SCOM Managed Instance.
 
         :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details.png" alt-text="Screenshot that shows project details for creating a SCOM managed instance.":::
 
@@ -328,7 +330,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
         1. **SCOM managed instance name**: Enter a name for your SCOM managed instance.
             >[!Note]
             >- The name of a SCOM managed instance can have only alphanumeric characters and be up to 10 characters.
-            >- A SCOM managed instance is equivalent to a System Center Operations Manager management group. Choose a name accordingly.
+            >- A SCOM managed instance is equivalent to a System Center Operations Manager management group, so choose a name accordingly.
         1. **Region**: Select a region near to you geographically so that latency between your agents and the SCOM managed instance is as low as possible. This region must also contain the virtual network.
 
         :::image type="Instance details" source="media/create-operations-manager-managed-instance/instance-details.png" alt-text="Screenshot that shows instance details for creating a SCOM managed instance.":::
@@ -356,7 +358,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 1. Under **Networking**, do the following:
     1. **Virtual network**:
         1. **Virtual network**: Select the virtual network that has direct connectivity to the workloads that you want to monitor and to your domain controller and DNS server.
-        1. **Subnet**: Select a subnet that has at least 32 IP addresses to house all the Azure Monitor SCOM Managed Instance components. The minimum address space is 28.
+        1. **Subnet**: Select a subnet that has at least 32 IP addresses to house the instance. The minimum address space is 28.
 
            The subnet can have existing resources in it. However, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the Azure Monitor SCOM Managed Instance components.
 
@@ -366,7 +368,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
         1. **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for Azure Monitor SCOM Managed Instance.
         1. **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step.
     1. **gMSA details**:
-        1. **Computer group name**: Enter the name of the computer group that you created for the gMSA.
+        1. **Computer group name**: Enter the name of the computer group that you create after creation of the gMSA account.
         1. **gMSA account name**: Enter the gMSA name. It must end with **$**.
 
         :::image type="gMSA details" source="media/create-operations-manager-managed-instance/gmsa-details.png" alt-text="Screenshot that shows gMSA details.":::
@@ -380,7 +382,7 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 1. Under **Review + Submit**, review all the inputs given so far, and then select **Create**. Your deployment will now be created on Azure. Creation of a SCOM managed instance takes up to an hour.
 
     >[!Note]
-    >If the deployment fails, delete the instance and all the associated resources, and then create the instance again. For more information, see [What is the procedure to delete an instance?](./operations-manager-managed-instance-common-questions.md#what-is-the-procedure-to-delete-an-instance).
+    >If the deployment fails, delete the instance and all the associated resources, and then create the instance again. For more information, see [How to delete an instance](./operations-manager-managed-instance-common-questions.md#what-is-the-procedure-to-delete-an-instance).
 
 1. After the deployment is completed, select **Go to resource**.
 
