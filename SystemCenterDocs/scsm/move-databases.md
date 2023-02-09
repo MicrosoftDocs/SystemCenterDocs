@@ -23,7 +23,7 @@ ms.assetid: 8b6c406a-7cb3-4be7-902b-5a09be71ad98
 
 ::: moniker-end
 
-After you've deployed Service Manager, you might need to move the Service Manager or data warehouse databases from one computer running Microsoft SQL Server to another for reasons such as the following:  
+After you've deployed Service Manager, you might need to move the Service Manager or data warehouse databases from one computer running Microsoft SQL Server to another for reasons such as the following.  
 
 - You need to replace hardware that is experiencing issues and is no longer considered reliable.  
 
@@ -39,7 +39,7 @@ After you've deployed Service Manager, you might need to move the Service Manage
 
 - You need to restore functionality in a failure scenario.  
 
-If you want the move the data warehouse database, and if you've installed Service Manager within the last 90 days, it might be easier for you to unregister the data warehouse, install a new data warehouse, and register the new database. If the data hasn't been groomed from the Service Manager database, there will be no data loss in the data warehouse database because it will be synchronized. By default, the grooming interval for work items is 90 days from the last time a work item was modified. Using this process is much simpler than using the following guidance, which details how to move your databases from one server to another and requires many steps.  
+If you want the move the data warehouse database, and if you've installed Service Manager within the last 90 days, it might be easier for you to unregister the data warehouse, install a new data warehouse, and register the new database. If the data hasn't been groomed from the Service Manager database, there will be no data loss in the data warehouse database because it will be synchronized. By default, the grooming interval for work items is 90 days from the last time a work item was modified. Using this process is simpler than using the following guidance, which details how to move your databases from one server to another and requires many steps.  
 
 
 ## Move the Service Manager database
@@ -80,7 +80,7 @@ You must use the following high\-level steps to move the Service Manager databas
 
     2.  Browse to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\System Center\\\<version\>\\Common\\Database**.  
 
-    3.  Configure two keys: one for the server name \(DatabaseServerName\) and one for the database name \(DatabaseName\). Set values to the new server name and database name, if they are different from the original values.  
+    3.  Configure two keys: one for the server name \(DatabaseServerName\) and one for the database name \(DatabaseName\). Set values to the new server name and database name, if they're different from the original values.  
 
 8.  If you're also upgrading the SQL server while moving, then upgrade the following SQL Server prerequisites for the Service Manager Management server. There are 2 SQL Server prerequisites:  
 
@@ -326,14 +326,14 @@ The following high\-level steps are required to move the data warehouse database
 
 3.  In the **Object Explorer** pane, expand **Databases**.  
 
-4.  Right\-click the **DWStagingAndConfig** database, select **Tasks**, and select **Back Up**.  
+4.  Select and hold the **DWStagingAndConfig** database, select **Tasks**, and select **Back Up**.  
 
 5.  In the **Back Up Database** dialog, enter a path and a file name in the **Destination on disk** text box, and select **OK**.  
 
     > [!IMPORTANT]  
     >  The destination location must have enough available free disk space to store the backup files.  
 
-6.  Select **OK** in the **Back Up Database** dialog to start the back up.  
+6.  Select **OK** in the **Back Up Database** dialog to start the backup.  
 
 7.  Repeat these steps for the DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart databases.  
 
@@ -355,7 +355,7 @@ The following high\-level steps are required to move the data warehouse database
 
 3.  In the **Object Explorer** pane, expand **Databases**.  
 
-4.  Right\-click the **DWStagingAndConfig** database, select **Tasks**, and select **Take Offline**.  
+4.  Select and hold the **DWStagingAndConfig** database, select **Tasks**, and select **Take Offline**.  
 
 5.  In the **Take database offline** dialog, select **Close**.  
 
@@ -601,15 +601,15 @@ The following high\-level steps are required to move the data warehouse database
 
 2.  Select **dbo.MT\_Microsoft$SystemCenter$ManagementGroup**, and select **Edit Top 200 Rows**.  
 
-3.  In the center pane, locate the column **SQLServerName\_ 43FB076F\_7970\_4C86\_6DCA\_8BD541F45E3A**, and then in the first row of the column, enter the name of the new computer running SQL Server that is hosting the DWStagingAndConfig database. In the case of named instances, enter **ComputerName\\InstanceName**.  
+3.  In the center pane, locate the column **SQLServerName\_ 43FB076F\_7970\_4C86\_6DCA\_8BD541F45E3A**, and then in the first row of the column, enter the name of the new computer running SQL Server that is hosting the DWStagingAndConfig database. For named instances, enter **ComputerName\\InstanceName**.  
 
 4.  Select and hold **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SqlResourceStore**, and select **Edit Top 200 Rows**.  
 
-5.  Update the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA** for rows representing DWStagingAndConfig, DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart by entering the name of the new computer running SQL Server that is hosting the respective databases. In the case of named instances, enter **ComputerName\\InstanceName**.  
+5.  Update the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA** for rows representing DWStagingAndConfig, DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart by entering the name of the new computer running SQL Server that is hosting the respective databases. For named instances, enter **ComputerName\\InstanceName**.  
 
 6.  Select and hold **dbo.MT\_Microsoft$SystemCenter$ResourceAccessLayer$CMDBResourceStore**, and select **Edit Top 200 Rows**.  
 
-7.  In the center pane, locate the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, and in the first row of the column, enter the name of the new computer running SQL Server that is hosting the DWStagingAndConfig database. In the case of named instances, enter **ComputerName\\InstanceName**.  
+7.  In the center pane, locate the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, and in the first row of the column, enter the name of the new computer running SQL Server that is hosting the DWStagingAndConfig database. For named instances, enter **ComputerName\\InstanceName**.  
 
 8.  Select and hold **LFX.DataSource**, and select **Edit Top 200 Rows**.  
 
@@ -676,7 +676,7 @@ The following high\-level steps are required to move the data warehouse database
 
 7.  In the **Connection string** box, the string resembles `data source=<server name>;initial catalog=DWDataMart`. Replace the existing name of the computer running SQL Server by typing the name of the new computer running SQL Server.  
 
-8.  Go back to the previous Service Manager folder webpage, and click the **DWStagingAndConfig** data source.  
+8.  Go back to the previous Service Manager folder webpage, and select the **DWStagingAndConfig** data source.  
 
 9. In the **Connection string** box, the string resembles `data source=<server name>;initial catalog= DWStagingAndConfig`. Replace the existing name of the computer running SQL Server by typing the name of the new computer running SQL Server.  
 

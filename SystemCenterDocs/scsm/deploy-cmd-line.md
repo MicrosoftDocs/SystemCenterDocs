@@ -67,7 +67,7 @@ Setup.exe
 
 ### Prepare the computer
 
- To help prevent an installation failure, perform the following steps on the computer where you will be installing Service Manager:  
+ To help prevent an installation failure, perform the following steps on the computer where you'll be installing Service Manager:  
 
 1.  Run the UI\-based Setup up to the point where you run the prerequisite checker. Ensure that the prerequisite checker passes, or at least passes with a warning.  
 
@@ -76,7 +76,7 @@ Setup.exe
 3.  If you're going to deploy the Reporting Server on a computer other than the computer hosting the data warehouse management server, ensure that you've completed the procedure in [Manual Steps to Configure the Remote SQL Server Reporting Services](config-remote-ssrs.md).  
 
 ### Determine when installation is complete  
- When installation of either the Service Manager management server or the data warehouse management server is complete, an event with Event&nbsp;ID&nbsp;1033 is written into the Application Event log, as shown in the following illustration.  
+ When installation of either the Service Manager management server or the data warehouse management server is complete, an event with Event&nbsp;ID&nbsp;1033 is written into the Application event log, as shown in the following illustration.  
 
  ![Screenshot showing the Command Line Install Event Log.](./media/deploy-cmd-line/deploy-commandlineinstalleventlog.png)  
 
@@ -86,7 +86,7 @@ Setup.exe
 ### Check error codes  
  When the command\-line Setup is complete, the command prompt appears. You can view the error code that was returned by entering **echo %errorlevel%**. An error code of 0 means that the installation was successful. The error codes that could be returned by the command\-line installation are listed in [Command-line option error codes](#command-line-option-error-codes).  
 
- The command\-line installation will not check the database name that you supply to see if it already exists. If you supply a database name that already exists, the command\-line installation will fail and a \-1 will be returned as an error code.  
+ The command\-line installation won't check the database name that you supply to see if it already exists. If you supply a database name that already exists, the command\-line installation will fail and a \-1 will be returned as an error code.  
 
 ## Deploy a management server
 
@@ -126,7 +126,7 @@ Use the following procedures to deploy a Service Manager data warehouse and data
 
 ## Deploy the data warehouse  
 
- Use the following procedures to deploy the data warehouse with the Operations Manager and Configuration Manager data mart databases. If you want to install the data warehouse management server and data warehouse databases on the same computer, use the same computer name that you are running Setup on for all instances of **\[computer name\]**. If you want to deploy the databases on a separate computer, adjust the **\[computer name\]** entries accordingly.  
+ Use the following procedures to deploy the data warehouse with the Operations Manager and Configuration Manager data mart databases. If you want to install the data warehouse management server and data warehouse databases on the same computer, use the same computer name that you're running Setup on for all instances of **\[computer name\]**. If you want to deploy the databases on a separate computer, adjust the **\[computer name\]** entries accordingly.  
 
  The **/AnalysisServerDatabaseDataFilePath** is optional, and if it isn't used, the default path will be used.  
 
