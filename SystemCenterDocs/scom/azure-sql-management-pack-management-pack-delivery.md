@@ -5,7 +5,7 @@ description: This article explains how to install Management Pack for Azure SQL 
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 1/31/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -17,14 +17,14 @@ You can download Management Pack for Azure SQL Database from the [Microsoft port
 
 After you download and unpack the **Microsoft.SqlServer.Azure.ManagementPack.msi** package—a set of MP and MPB files for monitoring of Azure SQL Database, the following files become available:
 
-- Microsoft.SqlServer.Azure.mpb
-- Microsoft.SqlServer.Azure.Presentation.</i>mp
-- Microsoft.SqlServer.UserMonitoring.mpb
+- Microsoft.SQLServer.Azure.mpb
+- Microsoft.SQLServer.Azure.Presentation.mp
+- Microsoft.SQLServer.UserMonitoring.mpb
 - Microsoft.SQLServer.Core.Library.mpb
 - Microsoft.SQLServer.Visualization.Library.mpb
 
->[!NOTE]
->SQL Azure Federation and Federation member workflows are deprecated in this management pack.
+> [!NOTE]
+> SQL Azure Federation and Federation member workflows are deprecated in this management pack.
 
 ## Prerequisites
 

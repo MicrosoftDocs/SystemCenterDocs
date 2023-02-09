@@ -3,7 +3,7 @@ title: Reports for Network Monitoring in Operations Manager
 description: This article summarizes the default reports for network devices included with Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
@@ -20,7 +20,7 @@ ms.assetid: acd07be8-9878-4997-86c4-4a932f5e27e2
 
 ::: moniker-end
 
-System Center - Operations Manager provides the reports described in the following table. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**.   
+System Center - Operations Manager provides the reports described in the following table. For more information on a report, in the **Reporting** workspace, select the report and view the **Report Details**.
 
 > [!NOTE]  
 > When you first install Operations Manager, it may take several minutes for all report libraries to appear in **Reporting**.  
@@ -41,8 +41,8 @@ System Center - Operations Manager provides the reports described in the followi
 
 ## Next steps
 
-- Review [How to create reports in Operations Manager](~/scom/manage-reports-create-reports.md) to learn how create reports for your operational needs.
+- To learn how create reports for your operational needs, review [How to create reports in Operations Manager](~/scom/manage-reports-create-reports.md).
 
 - [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.  
 
-- See [How to Configure and Modify Report Schedules](manage-reports-config-modify-schedules.md) to learn how to schedule report delivery for reports available in Operations Manager.  
+- To learn how to schedule report delivery for reports available in Operations Manager, see [How to Configure and Modify Report Schedules](manage-reports-config-modify-schedules.md).  

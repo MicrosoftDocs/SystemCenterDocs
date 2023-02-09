@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: ba93f546-04de-40dc-b03b-08a12dc18818
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Item
@@ -23,9 +23,9 @@ manager: evansma
 
 ::: moniker-end
 
-The Get Item activity is used in a runbook to retrieve details of existing appointment, contact group, email message, and task items that satisfy a set of filter criteria.
+The Get Item activity is used in a runbook to retrieve details of an existing appointment, contact group, email message, and task items that satisfy a set of filter criteria.
 
-The following tables list the required properties, filters, and published data for use of the Get Item activity. The tables for filters and published data are presented according to item type: appointment, contact group, and task.
+The following tables list the required properties, filters, and published data for use of the Get Item activity. The tables for filters and published data are presented according to the item type: appointment, contact group, email message, and task.
 
 ## Get Item Required Properties
 
@@ -50,7 +50,7 @@ The following tables list the required properties, filters, and published data f
 | ID   | ID of the appointment   | Equals<br>Does not equal   |
 | Importance   | Importance of the appointment   | Equals<br>Does not equal   |
 | Is All Day Event   | Indicates whether the appointment is an all-day event   | Equals<br>Does not equal   |
-| Is Cancelled   | Indicates whether the appointment has been cancelled   | Equals<br>Does not equal   |
+| Is Cancelled   | Indicates whether the appointment has been canceled   | Equals<br>Does not equal   |
 | Is Meeting   | Indicates whether the appointment is a meeting   | Equals<br>Does not equal   |
 | Is Online Meeting   | Indicates whether the meeting is an online meeting   | Equals<br>Does not equal   |
 | Is Recurring   | Indicates whether the appointment is recurring   | Equals<br>Does not equal   |
@@ -129,7 +129,7 @@ The following tables list the required properties, filters, and published data f
 | Time Zone   | The time zone that is specified for the appointment   | String   |
 | Timeout (seconds)   | Connection time-out threshold   |   |
 | Use Autodiscover   | Indicates whether or not to use Autodiscover to check for changes   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit From Query String | Query string to append to the Exchange Web client URL to open the email for editing   | String   |
 | Web Client Read From Query String | Query string to append to the Exchange Web client URL to open the email for reading   | String   |
 | iCal Recurrence ID   | The iCalendar RecurrenceId   | DateTime   |
@@ -170,7 +170,7 @@ The following tables list the required properties, filters, and published data f
 | Search Subfolders   | Indicates whether subfolders should be included in the search   | String   |
 | Timeout (seconds)   | Connection timeout   | Number   |
 | Use Autodiscover   | Indicates whether or not to use the Autodiscover service to check for changes   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit From Query String | Query string to append to the Exchange Web client URL to open the contact group for editing | String   |
 | Web Client Read From Query String | Query string to append to the Exchange Web client URL to open the contact group for reading | String   |
 
@@ -252,7 +252,7 @@ The following tables list the required properties, filters, and published data f
 | Timeout (seconds)   | The connection timeout threshold in seconds   | Number   |
 | To   | List of To recipients of the email message   | String   |
 | Use Autodiscover   | Indicates whether or not to use the Autodiscover service   | Boolean   |
-| User Name   | User name used to log on to Exchange server   | String   |
+| User Name   | User name used to sign in to Exchange server   | String   |
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the email for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the email for reading | String   |
 
@@ -337,6 +337,6 @@ The following tables list the required properties, filters, and published data f
 | Timeout (seconds)   | Connection timeout   | Number   |
 | Total Work   | The total amount of work spent on the task   | Number   |
 | Use Autodiscover   | Indicates whether or not to use the Autodiscover service   | Boolean   |
-| User Name   | Username used to log on to the Exchange server   | String   |
+| User Name   | Username used to sign in to the Exchange server   | String   |
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the task for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the task for reading | String   |

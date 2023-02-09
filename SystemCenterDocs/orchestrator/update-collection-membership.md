@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 32836679-a36c-4d97-8bd4-384502d10f21
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 
@@ -32,11 +32,11 @@ before other activities are performed on the collection or its members.
 
 - Collection: The display name or ID of an existing collection.
     >[!NOTE]
-    >When you use the browse feature to look up a collection name, or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
+    >When you use the browse feature to look up a collection name or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
 - Collection Value Type: Specifies whether the value in the **Collection** property is a name or a collection ID. Options are:
     -   **ID** (default): the value is a collection ID
     -   **Name**: the value is a collection name
-- Wait for Refresh Completion: True or False. If set to **True**, the activity will not complete and move to the next activity in the workflow until Configuration Manager signals that the update has been completed.
+- Wait for Refresh Completion: True or False. If set to **True**, the activity won't complete and move to the next activity in the workflow until Configuration Manager signals that the update has been completed.
 - Polling Interval (seconds): Minimum = 5. Specifies the number of seconds between queries to Configuration Manager to determine if the update is complete.
 
 ## Update Collection Membership published data
@@ -55,21 +55,21 @@ above:
     Membership** activity to the active runbook.
 
 2.  Double-click the **Update Collection Membership** activity icon. The
-    **Properties** dialog box opens.
+    **Properties** dialog opens.
 
 3.  Configuring the **Details** tab:
 
-    1.  In the **Connection** section, click the ellipsis button
+    1.  In the **Connection** section, select the ellipsis button
         **(...)**, and then select the Configuration Manager server
-        connection that you want to use for this activity. Click **OK**.
+        connection that you want to use for this activity. Select **OK**.
 
     2.  In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
-        click the ellipsis **(…)** button next to the text box to browse
+        select the ellipsis **(…)** button next to the text box to browse
         for a value.
 
         You can also use published data to automatically populate the
         value of the property from the data output by a previous
         activity in the runbook.
 
-4.  Click **Finish**.
+4.  Select **Finish**.

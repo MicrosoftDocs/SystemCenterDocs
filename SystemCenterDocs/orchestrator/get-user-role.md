@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 2c0732bd-d486-48c2-ae47-b35d42b45810
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get User Role

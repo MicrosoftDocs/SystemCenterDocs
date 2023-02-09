@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 568d336c-ed98-4ca1-8783-265a8dd0c6db
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Capture VM Instance
@@ -26,9 +26,9 @@ robots: noindex
 The **Capture VM Instance** activity makes a running virtual machine available as an image for reuse. For Windows-based virtual machines, the image should be sysprepped before capture. After performing the capture, the virtual machine is deleted. This activity is part of the **Azure Virtual Machines** category activity.
 
 >[!CAUTION]
->This activity deletes the virtual machine after it is captured.
+>This activity deletes the virtual machine after it's captured.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Capture VM Instance Required Properties
 

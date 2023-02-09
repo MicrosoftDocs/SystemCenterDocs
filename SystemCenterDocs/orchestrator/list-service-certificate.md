@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: e538b939-e4f2-4092-b9c4-c1843e342149
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # List Service Certificate
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **List Service Certificate** activity is used in a runbook to list all of the service certificates associated with the specified cloud service. It is part of the **Azure Certificates** category activity.
+The **List Service Certificate** activity is used in a runbook to list all the service certificates associated with the specified cloud service. It's part of the **Azure Certificates** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## List Service Certificate required properties
 

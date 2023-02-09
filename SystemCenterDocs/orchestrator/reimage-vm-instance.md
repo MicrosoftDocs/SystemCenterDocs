@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 2ab3be4a-3f87-4f77-9a35-7d077a84cfd0
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Reimage VM Instance
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Reimage Role Instance** activity requests a reimage of a role instance that is running in a deployment. It is part of the **Azure Deployments** category activity.
+The **Reimage Role Instance** activity requests a reimage of a role instance that is running in a deployment. It's part of the **Azure Deployments** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Reimage Role Instance required properties
 

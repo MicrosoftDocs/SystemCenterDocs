@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 1d0bdea4-64e2-4a0f-973c-867bdb9213bb
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Alert
@@ -28,15 +28,15 @@ The Create Alert activity is used in a runbook to create a new alert in an Opera
 The first time you run this activity in a runbook, it installs the Orchestrator Integration Library Management Pack in Operations Manager. The Create Alert activity creates an event in Operations Manager, which the Orchestrator Integration Library Management Pack then translates into a System Center Operations Manager alert.
 
 >[!IMPORTANT]
->When the Create Alert activity runs for the first time, it does not create an alert. The workaround is to run it again. The new alert is created after the activity is run a second time.
+>When the Create Alert activity runs for the first time, it doesn't create an alert. The workaround is to run it again. The new alert is created after the activity is run a second time.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create Alert Required Properties
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|
-| Description   | A description of the alert that you are creating   | String   |
+| Description   | A description of the alert that you're creating   | String   |
 | Name   | A name for the alert   | String   |
 | Owner   | The owner name that you want to assign to the alert   | String   |
 | Priority   | The priority level that you want to assign to the alert | High<br>Low<br>Medium   |
@@ -57,7 +57,7 @@ The activity publishes all of the data from the required and optional properties
 | **Element**   | **Description**   |
 |-----------------------------------|-------------------------------------------------------------------------------------------------|
 | Category   | The category name of the Management Pack   |
-| Connection   | The connection string to the System Center Operations Manager server that you are using   |
+| Connection   | The connection string to the System Center Operations Manager server that you're using   |
 | ConnectorId   | The ID of the connector that generated the connection string   |
 | ConnectorStatus   | The status of the connector   |
 | Context   | The System Center Operations Manager context of the alert   |

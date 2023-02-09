@@ -3,7 +3,7 @@ ms.assetid: 1e6e82dd-2ba6-45f2-8340-8efaeae1d4a6
 title: include file
 description: include file to provide system requirements for Orchestrator 1807, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 08/31/2018
 ms.custom: na
 author: jyothisuri
@@ -14,7 +14,7 @@ ms.topic: include
 
 ## System requirements for System Center 1807 - Orchestrator
 
-The following sections provide general performance and scalability guidance for System Center 1807- Orchestrator and state the recommended hardware configurations for various workloads. As System Center 1807 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections provide general performance and scalability guidance for System Center 1807 - Orchestrator and state the recommended hardware configurations for various workloads. As System Center 1807 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 
@@ -33,7 +33,7 @@ The following versions of Windows Server operating system are supported.
 
 ## Client operating system
 
-The following versions of Windows client operating system are supported for the Orchestrator.
+The following versions of Windows client operating system are supported for Orchestrator.
 
 |Component| Windows 7 | Windows 8 | Windows 8.1 | Windows 10 Enterprise |
 |:--- |:---|:--- |:--- |:---|
@@ -60,7 +60,7 @@ We recommend the following software for a full installation of Orchestrator on a
 * Join the computer to an Active Directory domain.
 
 > [!NOTE]
-> On the first use of the Orchestration console, you are prompted to install Microsoft Silverlight on the computer if it isn't already installed. Install Silverlight 5.0.
+> On the first use of the Orchestration console, you're prompted to install Microsoft Silverlight on the computer if it isn't already installed. Install Silverlight 5.0.
 
 ## SQL Server
 
@@ -90,7 +90,7 @@ You can download .NET 3.5 SP1 at:
 5.	Select **.NET Framework 4.5** if it isn’t already selected.
 6.	Expand **WCF Services**.
 7.	Select **HTTP Activation** if it isn’t already selected.
-8.	Select **Next** and follow the prompts to finish the installation. If you have problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](/previous-versions/system-center/system-center-2012-R2/hh546549(v=sc.12)).
+8.	Select **Next** and follow the prompts to finish the installation. If you've problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](/previous-versions/system-center/system-center-2012-R2/hh546549(v=sc.12)).
 
 
 ## Virtualization

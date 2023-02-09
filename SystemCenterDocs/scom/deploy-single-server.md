@@ -4,7 +4,7 @@ title: Single-Server Deployment of Operations Manager
 description: This article provides an overview of the single-server deployment of Operations Manager 2016 to prepare you before performing setup.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center
@@ -24,7 +24,7 @@ The single-server management group scenario combines all the management group ro
 
 You deploy Operations Manager in a single-server management group when you want to use it for evaluation, testing, and management pack development, usually in a lab, development, or non-production environment.
 
-![Single Server Deployment](./media/deploy-single-server/om2016-simple-mg-config.png)
+![Illustration of Single Server Deployment.](./media/deploy-single-server/om2016-simple-mg-config.png)
 
 ## Operations Manager services
 
@@ -66,15 +66,15 @@ The single-server management group configuration combines these features:
 
 ## Restrictions
 
-The single-server management group configuration is the easiest to deploy, but there are limitations to its capabilities and therefore limitations to what it is commonly used for.
+The single-server management group configuration is the easiest to deploy, but there are limitations to its capabilities and therefore limitations to what it's commonly used for.
 
 ### Gateway server
 
-This configuration does not include the gateway server role. Because of this, all monitored devices must be in the same Active Directory forest as the management server or you must use certificates on both the managed computer and the management server to provide for mutual authentication.
+This configuration doesn't include the gateway server role. Because of this, all monitored devices must be in the same Active Directory forest as the management server or you must use certificates on both the managed computer and the management server to provide for mutual authentication.
 
 ### High availability and redundancy
 
-The single server, single management group resides on a single set of hardware or virtual machine. This configuration supports only one instance of each server role and therefore does not support agent failover between management servers.
+The single server, single management group resides on a single set of hardware or virtual machine. This configuration supports only one instance of each server role and therefore doesn't support agent failover between management servers.
 
 ## Common uses
 
@@ -82,13 +82,13 @@ This configuration is most commonly used for evaluation, testing, and management
 
 ## Ports used
 
-In this configuration, you need to make sure that network ports are opened for communication between the agents and the management server, between the Operations console and the management server, and between the Web console and the management server. All other inter-service communication occurs on the management server itself. The ports are as follows:
+In this configuration, you need to ensure that network ports are opened for communication between the agents and the management server, between the Operations console and the management server, and between the Web console and the management server. All other inter-service communication occurs on the management server itself. The ports are as follows:
 
 -   Operations console to management server: TCP 5724
 
 -   Operations console to Reporting server: TCP 80
 
--   Web console to Web console server: TCP 51908 is the default port when you select Windows Authentication.  If you chose Forms Authentication, the port will be user-defined.  
+-   Web console to Web console server: TCP 51908 is the default port when you select Windows Authentication. If you chose Forms Authentication, the port will be user-defined.  
 
 -   Agent to management server: TCP 5723
 
