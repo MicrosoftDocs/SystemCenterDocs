@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 178651bc-0edb-4046-8b64-4bbb2998408f
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Recovery Point
@@ -25,9 +25,9 @@ robots: noindex
 
 The Create Recovery Point activity is used to create a backup for a selected data source. This activity allows you to create a recovery point outside the Data Protection Manager scheduled interval as configured for a protection group. This activity can also be used to force creation of an initial replica. For more information, see Protect Data Source.
 
-The behavior is synchronous - the activity will run for as long it takes for Data Protection Manager to complete the action.
+The behavior is synchronous - The activity will run for as long it takes for Data Protection Manager to complete the action.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create Recovery Point Required Properties
 

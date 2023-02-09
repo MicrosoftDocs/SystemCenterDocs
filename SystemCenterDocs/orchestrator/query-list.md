@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 157c07bc-10eb-4c38-ba66-472f1736d3d6
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Query List
@@ -32,7 +32,7 @@ The following tables list the required properties and Published Data for this ac
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | List Name   | The name of the SharePoint list to be searched.   | String   |
-| CAML Query  | A CAML query to determine which items to select.<br> **Important** Do not enclose the CAML XML in &lt;Query&gt;&lt;/Query&gt; tags. | String   |
+| CAML Query  | A CAML query to determine which items to select.<br> **Important** Don't enclose the CAML XML in &lt;Query&gt;&lt;/Query&gt; tags. | String   |
 
 ## Query List optional properties
 

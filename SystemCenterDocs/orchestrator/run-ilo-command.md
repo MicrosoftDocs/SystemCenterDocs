@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 21614e77-3027-49a7-8545-27349b71d392
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Run iLO Command
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Run iLO Command** activity is used in a runbook to run a command that can be used to perform management activities such as **Create User**, **Get Power State**, and **Set Configuration**.
+The **Run iLO Command** activity is used in a runbook to run a command that can be used to perform management activities, such as **Create User**, **Get Power State**, and **Set Configuration**.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Run iLO Command required properties
 
@@ -56,10 +56,10 @@ The activity publishes all of the data from the required and optional properties
 | Standard output | Standard output of command | String   |
 
 >[!WARNING]
->The Run iLO Command activity in runbooks imported from Opalis 6.3 when opened for editing in the Runbook Designer will display an error dialog with no message. To remove this error close the error message by clicking **OK**. Record your command and field values for re-entry. Then reselect the command and re-enter the field values. When importing runbooks that contain **Get user** or **Modify user** activities from Opalis 6.3, clicking on the activities **Get user** or **Modify user** will display a message " Command not found". The commands should be updated to the specific version activity i.e. **Get user (iLO v2)** or **Get user (iLO v3)** manually.
+>The Run iLO Command activity in runbooks imported from Opalis 6.3 when opened for editing in the Runbook Designer will display an error dialog with no message. To remove this error, close the error message by selecting **OK**. Record your command and field values for re-entry. Then reselect the command and re-enter the field values. When importing runbooks that contain **Get user** or **Modify user** activities from Opalis 6.3, selecting the activities **Get user**, or **Modify user** will display a message " Command not found". The commands should be updated to the specific version activity, that is, **Get user (iLO v2)** or **Get user (iLO v3)** manually.
 
 ## Other activities
 
-The Integration Pack for HP iLO and OA contains the following additional activities:
+The Integration Pack for HP iLO and OA contains the following additional activity:
 
 - [Run OA Command](run-oa-command.md)

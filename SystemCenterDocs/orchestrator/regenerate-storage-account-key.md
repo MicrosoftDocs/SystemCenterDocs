@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 1483a1dd-43fb-446f-a7e6-a18f6760b7a6
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Regenerate Storage Account Key
@@ -23,12 +23,12 @@ robots: noindex
 
 ::: moniker-end
 
-The **Regenerate Storage Account Key** activity regenerates the primary or secondary access key for the specified storage account. It is part of the **Azure Storage** category activity.
+The **Regenerate Storage Account Key** activity regenerates the primary or secondary access key for the specified storage account. It's part of the **Azure Storage** category activity.
 
 >[!NOTE]
->Using this activity will publish the new storage account key to the Orchestrator databus. If you chose to use this activity, make sure to appropriately protect the key after regeneration.
+>Using this activity will publish the new storage account key to the Orchestrator databus. If you choose to use this activity, ensure to appropriately protect the key after regeneration.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Regenerate Storage Account Key required properties
 

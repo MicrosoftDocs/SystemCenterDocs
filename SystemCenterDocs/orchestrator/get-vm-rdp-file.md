@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 7765b664-92ed-489c-ac4c-d75bed9527e7
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get VM RDP File
@@ -23,9 +23,9 @@ manager: evansma
 
 ::: moniker-end
 
-The **Get VM RDP File** activity retrieves the Remote Desktop Protocol configuration file from the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
+The **Get VM RDP File** activity retrieves the Remote Desktop Protocol configuration file from the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get VM RDP File Required Properties
 

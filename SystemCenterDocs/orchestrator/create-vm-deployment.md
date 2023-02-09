@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: f779ed1b-43a0-4063-be59-905713b2969a
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create VM Deployment
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Create VM Deployment** activity provisions a virtual machine based on the supplied configuration. It is part of the **Azure Virtual Machines** category activity.
+The **Create VM Deployment** activity provisions a virtual machine based on the supplied configuration. It's part of the **Azure Virtual Machines** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create VM Deployment Required Properties
 

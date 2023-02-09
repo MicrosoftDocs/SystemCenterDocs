@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 3d8d8e98-4d80-4a4e-af7f-07ab5e8d8d9c
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Storage Account Keys
@@ -23,9 +23,9 @@ manager: evansma
 
 ::: moniker-end
 
-The **Get Storage Account Keys** activity returns the primary and secondary access keys for the specified storage account. It is part of the **Azure Storage** category activity.
+The **Get Storage Account Keys** activity returns the primary and secondary access keys for the specified storage account. It's part of the **Azure Storage** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get Storage Account Keys Required Properties
 

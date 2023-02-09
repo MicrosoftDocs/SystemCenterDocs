@@ -5,10 +5,10 @@ description: This article provides information on how to patch your Azure Monito
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 12/09/2022
+ms.date: 01/27/2023
 ms.custom: na
 ms.prod: system-center
-ms.technology: operations-manager
+ms.technology: operations-manager-managed-instance
 ms.topic: article
 monikerRange: 'sc-om-2022'
 ---

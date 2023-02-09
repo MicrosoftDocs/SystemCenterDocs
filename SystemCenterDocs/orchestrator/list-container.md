@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 6b2bb18f-00dd-44da-a4be-d2ec57f9a257
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # List Container
@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-The **List Container** activity returns a list of the containers under the specified storage account. It is part of the Azure Storage category activity.
+The **List Container** activity returns a list of the containers under the specified storage account. It's part of the Azure Storage category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 

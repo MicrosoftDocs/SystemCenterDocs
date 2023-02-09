@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 912dfce9-c159-4de2-853b-c47fc161b5ca
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get VM Status Activity
@@ -23,11 +23,11 @@ manager: evansma
 
 ::: moniker-end
 
-The Get VM Status activity is used in a runbook to retrieve the state and other related information about a virtual machine. This, for example, enables the runbook to retrieve the current status of a virtual machine to ensure that is has been properly shut down before performing a backup.
+The Get VM Status activity is used in a runbook to retrieve the state and other related information about a virtual machine. This, for example, enables the runbook to retrieve the current status of a virtual machine to ensure that it has been properly shut down before performing a backup.
 
 The following tables list the required and optional properties and published data for this activity.
 
-The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
+The activity publishes all the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
 ## Get VM Status Activity Required Properties
 
@@ -43,7 +43,7 @@ No optional properties are provided for this activity.
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
-| CPU Usage   | The current CPU usage of the virtual machine   | Integer   |
+| CPU Usage   | The current CPU usage of the virtual machine.   | Integer   |
 | Computer Name   | The computer name assigned to the guest operating system.   | String   |
 | Disk Capacity(MB) | The size of the virtual disk in megabytes.   | Integer   |
 | IP Address   | The primary IP address of the virtual machine.   | String   |
@@ -66,12 +66,12 @@ The following procedure describes the steps required to configure a Get VM Statu
 
 1.  From the **Activities** pane, drag a **Get VM Status** activity to the active runbook.
 
-2.  Double-click the **Get VM Status** activity icon. The **Properties** dialog box opens.
+2.  Double-click the **Get VM Status** activity icon. The **Properties** dialog opens.
 
 3.  Configure the settings in the **Properties** tab as follows:
 
-    1.  In the **Configuration** section, click the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Click **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can click the ellipsis **(...)** button next to the text box to browse for a value.
+    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Click **Finish**.
+4.  Select **Finish**.

@@ -2,10 +2,10 @@
 ms.assetid: 6d774c55-b334-489e-977e-206b2c6bc2e9
 title: Known issues and troubleshooting in Management Pack for Azure SQL Database
 description: This article explains known issues and troubleshooting in Management Pack for Azure SQL Database
-author: vchvlad
-ms.author: v-vchernov
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.date: 11/25/2022
+ms.date: 1/31/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -16,7 +16,7 @@ ms.technology: operations-manager
 This article lists the known issues for Management Pack for Azure SQL Database.
 
 > [!WARNING]
-> There is an issue in the **SQL Server 2019 CU8 and higher**, which is used as the **OperationsManager** database-hosted SQL server in the System Center Operations Manager. In the case of this configuration, the Azure SQL Database MP failed to import into the System Center Operations Manager with the following error: `MPInfra_p_ManagementPackInstall failed with exception: Conversion failed when converting from a character string to uniqueidentifier.`
+> There is an issue in the **SQL Server 2019 CU8 and higher** which is used as the **OperationsManager** database-hosted SQL server in the System Center Operations Manager. In the case of this configuration, the Azure SQL Database MP failed to import into the System Center Operations Manager with the following error: `MPInfra_p_ManagementPackInstall failed with exception: Conversion failed when converting from a character string to uniqueidentifier.` It's related to the [Scalar UDF Inlining](/sql/relational-databases/user-defined-functions/scalar-udf-inlining) feature that improves the performance of queries that invoke scalar UDFs starting with SQL Server 2019. [See the workaround below](#disable-scalar-udf-inlining-without-changing-the-database-compatibility-level).
 
 |Issue title|Behavior / Symptom|Known workaround|
 |-|-|-|
@@ -39,4 +39,20 @@ The following is a list of exceptions that might occur if the number of database
 
 - Connection Timeout Expired. The timeout period elapsed while attempting to consume the pre-login handshake acknowledgment. This could be because the pre-login handshake failed or the server was unable to respond back in time.
 
-- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server wasn't found or wasn't accessible. Verify that the instance name is correct and the SQL Server is configured to allow remote connections.
+- A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and the SQL Server is configured to allow remote connections.
+
+## Disable Scalar UDF Inlining without changing the database compatibility level
+
+To import the Azure SQL Database management pack on an environment with the Operations Manager database hosted on the SQL Server 2019 and higher, you can temporarily disable at the Operations Manager database the Scalar UDF Inlining at the database scope. To disable it, execute the following statement within the context of the applicable database:
+
+```SQL
+USE OperationsManager;
+ALTER DATABASE SCOPED CONFIGURATION SET TSQL_SCALAR_UDF_INLINING = OFF;
+```
+
+When the importing process of the management pack is successfully done, you can enable back the Scalar UDF Inlining at the Operations Manager database:
+
+```SQL
+USE OperationsManager;
+ALTER DATABASE SCOPED CONFIGURATION SET TSQL_SCALAR_UDF_INLINING = ON;
+```

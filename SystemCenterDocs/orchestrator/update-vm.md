@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 602a269a-9b1b-493f-ba94-b086fd83e3f8
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update VM
@@ -25,7 +25,7 @@ robots: noindex
 
 The Update VM Properties activity is used to make changes to an existing virtual machine.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Update VM Required Properties
 
@@ -107,7 +107,7 @@ The activity publishes all of the data from the required and optional properties
 | Enable Heartbeat   | True or False   |
 | Enable Operating System Shutdown   | True or False   |
 | Enable Time Synchronization   | True or False   |
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |
+| Enabled   | True or False. If False, the virtual machine can't be started.   |
 | Expected CPU Utilization   | A two-digit percent value that represents the average CPU usage for the virtual machine   |
 | Failed Job ID   | The unique identifier (GUID) of the most recent failed job   |
 | Has Pass-through Disk   | True or False   |
@@ -157,7 +157,7 @@ The activity publishes all of the data from the required and optional properties
 | Virtual Disk Drives   | A list of the names of Virtual Disk Drives   |
 | Virtual Floppy Drive   | A list of the names of Virtual Floppy Drives   |
 | Virtual Hard Disks   | A list of the names of Virtual Hard Disks   |
-| Virtualization Platform   | The virtualization platform. Valid values are: HyperV, VMWareESX, or Unknown.   |
+| Virtualization Platform   | The virtualization platform. Valid values are: Hyper-V, VMWareESX, or Unknown.   |
 | Virtual Network Adapters   | A list of the names of Virtual Network Adapters   |
 | Virtual SCSI Adapters   | A list of the names of Virtual SCSI Adapters   |
 | VMC Path   | The virtual machine Configuration file path, in the format C:\\VMM\\DRDemo-DataTier\\VirtualMachines\\abc12345-d6ef-78g9-h0ij-1kl2-34m56n7890p12.xml   |

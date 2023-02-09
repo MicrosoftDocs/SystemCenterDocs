@@ -3,7 +3,7 @@ title: Viewing Network Devices and Data in Operations Manager
 description: This article describes how to view the information about the network devices monitored by Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center
@@ -25,7 +25,7 @@ After System Center Operations Manager discovers your network devices, you can v
 > [!IMPORTANT]
 > You must open the Operations console as an Operations Manager administrator to view the dashboard views.
 
-This topic describes the following views:
+This article describes the following views:
 
 -   Network Summary Dashboard View
 
@@ -54,7 +54,7 @@ Use the Network Summary Dashboard view to view the following information:
 
 -   Interfaces with the Most Alerts
 
-You can select a particular node or interface name in the Network Summary Dashboard view and then select related tasks in the **Tasks** pane, such as starting the Network Node Dashboard view and the Network Interface Dashboard view.
+You can select a particular node or interface name in the Network Summary Dashboard view and then select the related tasks in the **Tasks** pane, such as starting the Network Node Dashboard view and the Network Interface Dashboard view.
 
 ### To open the Network Summary Dashboard view
 
@@ -62,14 +62,14 @@ You can select a particular node or interface name in the Network Summary Dashbo
 
 2.  Expand **Network Monitoring**.
 
-3.  Click **Network Summary Dashboard**.
+3.  Select **Network Summary Dashboard**.
 
 ## Network Node Dashboard view
 A node can be any device connected to a network. Nodes can be switches, routers, firewalls, load balancers, or any other networked device. Use the Network Node Dashboard view to view the following information:
 
 -   Vicinity view of the node
 
--   Availability statistics of the node over the last 24 hours, last 48 hours, past 7 days, or past 30 days
+-   Availability statistics of the node over the last 24 hours, last 48 hours, past seven days, or past 30 days
 
     > [!NOTE]
     > Periods of time that were not monitored are counted as available in the availability statistics.
@@ -92,14 +92,14 @@ A node can be any device connected to a network. Nodes can be switches, routers,
 
 2.  Expand **Network Monitoring**.
 
-3.  Click the view for the desired node, such as **Switches**.
+3.  Select the view for the desired node, such as **Switches**.
 
 4.  Select a node.
 
 5.  In the **Tasks** pane, select **Network Node Dashboard**.
 
 ## Network Interface Dashboard view
-An interface is a physical entity with which network connections are made, such as a port. By default, Operations Manager will only monitor ports that are connected to another device that is being monitored. Ports that are not connected will not be monitored. Use the Network Interface Dashboard view to view the following information:
+An interface is a physical entity with which network connections are made, such as a port. By default, Operations Manager will only monitor ports that are connected to another device that's being monitored. Ports that aren't connected won't be monitored. Use the Network Interface Dashboard view to view the following information:
 
 -   Bytes sent and received over the past 24 hours
 
@@ -121,30 +121,30 @@ An interface is a physical entity with which network connections are made, such 
 
 2.  Expand **Network Monitoring**.
 
-3.  Click the view for the desired node, such as **Switches**.
+3.  Select the view for the desired node, such as **Switches**.
 
 4.  Select a node.
 
 5.  In the **Tasks** pane, select **Network Node Dashboard**.
 
-6.  In the **Health of Interfaces on this Node** section, click an interface, and then in the **Tasks** pane, select **Network Interface Dashboard**.
+6.  In the **Health of Interfaces on this Node** section, select an interface, and then in the **Tasks** pane, select **Network Interface Dashboard**.
 
 ## Network Vicinity Dashboard
-Use the Network Vicinity Dashboard to view a diagram of a node and all nodes and agent computers that are connected to that node. The Network Vicinity Dashboard view displays one "hop", or level of connection. However, you can configure the view to display up to five levels of connection. The diagram displays the health of the nodes and the health of the connections between nodes.
+Use the Network Vicinity Dashboard to view a diagram of a node and all nodes and agent computers that are connected to that node. The Network Vicinity Dashboard view displays one "hop", or level of connection. However, you can configure the view to display up to five levels of connections. The diagram displays the health of the nodes and the health of the connections between nodes.
 
-The vicinity view shows the relation between network devices and the Windows computers and other network devices that are connected to them. This logic is performed by relating the network adapter on the agent computer with the network device that it is connected to. Because of this, the network adapter must be discovered before this association can occur. You can view the discovered network adapters by either creating a new view or using the **Discovered Inventory** view to list instances of the **Computer Network Adapter** class.
-
-> [!NOTE]
-> Because devices that use OSI layer 1, such as hubs, do not have MAC addresses, layer 1 devices will not be connected to computers in the Network Vicinity Dashboard. The vicinity view will only show connections between layer 1 devices and layer 2 or 3 devices.
+The vicinity view shows the relation between network devices and the Windows computers and other network devices that are connected to them. This logic is performed by relating the network adapter on the agent computer with the network device that it's connected to. Because of this, the network adapter must be discovered before this association can occur. You can view the discovered network adapters by either creating a new view or using the **Discovered Inventory** view to list instances of the **Computer Network Adapter** class.
 
 > [!NOTE]
-> Network adapters using NIC teaming will not be identified as "teamed" in the Network Vicinity Dashboard.
+> Because devices that use OSI layer 1, such as hubs, don't have MAC addresses, layer 1 devices won't be connected to computers in the Network Vicinity Dashboard. The vicinity view will only show connections between layer 1 devices and layer 2 or 3 devices.
 
 > [!NOTE]
-> Virtual machines are associated with the same network device as their host. This version of Operations Manager does not show a relationship between the two computers.
+> Network adapters using NIC teaming won't be identified as "teamed" in the Network Vicinity Dashboard.
 
 > [!NOTE]
-> Operations Manager does not display UNIX- and Linux-based devices in the Network Vicinity Dashboard.
+> Virtual machines are associated with the same network device as their host. This version of Operations Manager doesn't show a relationship between the two computers.
+
+> [!NOTE]
+> Operations Manager doesn't display UNIX- and Linux-based devices in the Network Vicinity Dashboard.
 
 ### To open Network Vicinity view
 
@@ -152,9 +152,9 @@ The vicinity view shows the relation between network devices and the Windows com
 
 2.  Expand **Network Monitoring**.
 
-3.  Click a node state view, such as **Network Devices**.
+3.  Select a node state view, such as **Network Devices**.
 
-4.  In the **Tasks** pane, click  **Vicinity Dashboard**.
+4.  In the **Tasks** pane, select  **Vicinity Dashboard**.
 
 Things to try in the vicinity view:
 
@@ -162,17 +162,17 @@ Things to try in the vicinity view:
 
 -   Change the levels of connection to be displayed in the diagram by selecting a new value for **Hops** in the toolbar.
 
--   To include agent computers in the view in addition to network devices, select the **Show Computers** check box.
+-   To include agent computers in the view in addition to network devices, select the **Show Computers** checkbox.
 
--   Select a node in the vicinity view. In the **Tasks** pane, click the option to launch the Network Node dashboard.
+-   Select a node in the vicinity view. In the **Tasks** pane, select the option to launch the Network Node dashboard.
 
--   To change the central device of the view, select a device, and then click **Vicinity View**.
+-   To change the central device of the view, select a device, and select **Vicinity View**.
 
 
 ## Next steps
 
 - To understand how to configure what to monitor and alert with your network devices, see [How to configure monitoring of network devices](manage-monitor-networkdevice-configure-monitoring.md).  
 
--  Operations Manager includes several reports that help analyze performance of monitored network devices.  To learn more, see [Reports for network monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).
+-  Operations Manager includes several reports that help analyze performance of monitored network devices. To learn more, see [Reports for network monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).
 
 - To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md).
