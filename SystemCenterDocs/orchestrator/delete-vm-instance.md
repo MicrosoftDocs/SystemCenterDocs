@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 40a56eae-4b1f-4110-a0a7-a1449e8bba6a
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Delete VM Instance
@@ -23,7 +23,7 @@ robots: noindex
 
 ::: moniker-end
 
-The **Delete VM Instance** activity deletes the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
+The **Delete VM Instance** activity deletes the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 

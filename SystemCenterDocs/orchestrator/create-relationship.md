@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 63ab5e0c-4407-401b-9f43-59ca1a3a4915
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Relationship

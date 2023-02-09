@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 87f2a757-d513-44fb-b1c5-bcf2feeec0bf
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update Item
@@ -123,7 +123,7 @@ The following tables list the required properties, optional properties, and publ
 | References   | Sets the reference of the email message.   | String   |
 | Sender   | The sender of the email message   | String   |
 | Sensitivity   | The sensitivity of the email   | Normal<br>Personal<br>Private<br>Confidential |
-| Subject   | The subject of the e-mail   | String   |
+| Subject   | The subject of the email   | String   |
 | To   | List of recipients of the email message   | String   |
 
 ## Update Item Published Data
@@ -136,7 +136,7 @@ The following tables list the required properties, optional properties, and publ
 | Item Type   | The type of item being sent   | String   |
 | Timeout (seconds)   | Connection timeout threshold   | Number   |
 | Use Autodiscover   | Indicates whether or not the Autodiscover service is being used | Boolean   |
-| User Name   | Username to used to log on to the Exchange server   | String   |
+| User Name   | Username to used to sign in to the Exchange server   | String   |
 
 #### Other Resources
 

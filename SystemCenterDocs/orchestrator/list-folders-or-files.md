@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: f7816e0c-c185-4f76-967d-5b501fe39f58
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # List Folders or Files
@@ -25,7 +25,7 @@ robots: noindex
 
 The List Folders/Files activity is used in a runbook to list the folders and files in the specified folder path.
 
-This activity publishes all of the data from the required and optional properties into published data.
+This activity publishes all the data from the required and optional properties into published data.
 
 The following tables list the required and optional properties and published data for this activity.
 

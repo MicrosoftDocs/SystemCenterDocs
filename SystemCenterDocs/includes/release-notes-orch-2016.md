@@ -1,7 +1,7 @@
 ---
 ms.assetid: d90ac676-292f-4b33-aa79-b7a5870c1ea3
 description: include file to provide Release Notes for System Center 2016 -Orchestrator
-manager: evansma
+manager: mkluck
 ms.topic:  include file
 author: jyothisuri
 ms.author: jsuri
@@ -25,7 +25,7 @@ The following sections list the known issues and workarounds that apply to Syste
 ## Orchestrator - Runbook Designer's About Page shows the version as System Center 2016 Technical Preview
 **Description:** In the Runbook Designer when you select Help -> About, the version is shown as System Center 2016 Technical Preview.
 
-**Workaround:** You can validate that you have the latest version using the version number. If you have the RTM version, the build numbers are as follows:
+**Workaround:** You can validate that you've the latest version using the version number. If you've the RTM version, the build numbers are as follows:
 - Runbook Designer - 7.3.149.0
 - Management Server - 7.3.149.0 <br/>
 

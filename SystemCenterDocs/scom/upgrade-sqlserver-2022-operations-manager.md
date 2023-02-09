@@ -1,31 +1,30 @@
 ---
-title: Upgrade Operations Manager databases to SQL Server 2019
-description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2019.
-author: jyothisuri
-ms.author: jsuri
-manager: evansma
+title: Upgrade Operations Manager databases to SQL Server 2022
+description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2022.
+author: v-pgaddala
+ms.author: v-pgaddala
+manager: jsuri
 ms.date: 01/13/2023
 ms.custom: na
 ms.prod: system-center
-monikerRange: '>=sc-om-2019'
+monikerRange: 'sc-om-2022'
 ms.assetid:
 ms.technology: operations-manager
 ms.topic: conceptual
 ---
 
-# Upgrade Operations Manager databases to SQL Server 2019
+# Upgrade Operations Manager databases to SQL Server 2022
 
-Operations Manager 2019 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
+Operations Manager 2022 UR1 supports SQL 2022.
 
-Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager to SQL Server 2019 (with CU8 or later).  Before proceeding, you should back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
+Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager to SQL Server 2022.  Before you proceed, back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
 
 
 >[!NOTE]
-> - You must use Cumulative Update 8 (CU8) or later with SQL 2019.
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
-> - Upgrading to SQL Server 2019 uninstalls SQL Reporting Services, as this is now a separately-installed feature.
+> - Upgrading to SQL Server 2022 uninstalls SQL Reporting Services, as this is now a separately-installed feature.
 
-Before performing these upgrade steps, review the [SQL Server 2019 upgrade information](/sql/database-engine/install-windows/upgrade-sql-server).
+Before you perform these upgrade steps, review the [SQL Server 2022 upgrade information](/sql/database-engine/install-windows/upgrade-sql-server).
 
 ## Stop the Operations Manager services
 On all the management servers in the management group, stop the Operations Manager services:
@@ -47,26 +46,26 @@ On all the management servers in the management group, stop the Operations Manag
 
 1. On the Operations Manager reporting server, uninstall the Operations Manager reporting server component as follows:
 
-    a. Open Control Panel, and then click **Programs and Features**.
+    a. Open Control Panel, and then select **Programs and Features**.
 
-    b. In **Programs and Features**, select **System Center Operations Manager**, and then click **Uninstall**.
+    b. In **Programs and Features**, select **System Center Operations Manager**, and then select **Uninstall**.
 
-    c. In the **Operations Manager Setup** wizard, click **Remove a feature**.
+    c. In the **Operations Manager Setup** wizard, select **Remove a feature**.
 
-    d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes.
+    d. In the **Select features to remove** page, select **Reporting server**, and then select **Uninstall**. Select **Close** when the wizard finishes.
 
-2. Perform the upgrade to SQL Server 2019 following the steps described in [SQL 2019 documentation](/sql/database-engine/install-windows/upgrade-sql-server).
+2. Perform the upgrade to SQL Server 2022 following the steps described in [SQL 2022 documentation](/sql/database-engine/install-windows/upgrade-sql-server).
 
-## Install SQL Server 2019 Reporting services
+## Install SQL Server 2022 Reporting services
 
 >[!NOTE]
 >
->With SQL Server Reporting Services (SSRS) 2019, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
+>With SQL Server Reporting Services (SSRS) 2022, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
 >
 >To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
 
 
-To download SQL Server 2019 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download).
+To download SQL Server 2022 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=104502).
 
 After a successful setup, select **Configure Report Server** to launch the Reporting Services Configuration Manager.  This is necessary to configure Reporting Services to:
 
@@ -80,24 +79,26 @@ After a successful setup, select **Configure Report Server** to launch the Repor
 
 6. Create a registry REG_SZ  value named *Version* under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\Setup\ with REG_SZ value noted in the previous step.
 
-7. Reboot the server in order for the changes to take effect.
+7. Reboot the server for the changes to take effect.
 
 ## Verify the installation of SQL Report server
 After reinstalling the Operations Manager reporting server component, perform the following steps to confirm SQL Reporting Services is working correctly.
 
-1. Run the Reporting Services Configuration tool and connect to the report server instance you installed. The Web Service URL page includes a link to the Report Server Web service. Click the link to verify you can access the server.
+1. Run the Reporting Services Configuration tool and connect to the report server instance you installed. The Web Service URL page includes a link to the Report Server Web service. Select the link to verify you can access the server.
 
-2. Open a browser and type the report server URL in the address bar. The address consists of the server name and the virtual directory name that you specified for the report server during setup. By default, the report server virtual directory is named **ReportServer**. You can use the following URL to verify report server installation: `http://<computer name>/ReportServer<_instance name>`. The URL will be different if you installed the report server as a named instance.
+2. Open a browser and type the report server URL in the address bar. The address consists of the server's name and the virtual directory name that you specified for the report server during setup. By default, the report server virtual directory is named **ReportServer**. You can use the following URL to verify report server installation: `http://<computer name>/ReportServer<_instance name>`. The URL will be different if you installed the report server as a named instance.
 
-3. To verify that the web portal is installed and running, open a browser and type the Web Portal URL in the address bar. The address consists of the server name and the virtual directory name that you specified for the web portal during setup or in the Web Portal URL page in the Reporting Services Configuration tool. By default, the web portal virtual directory is **Reports**. You can use the following URL to verify the web portal installation: `http://<computer name>/Reports<_instance name>`.
+3. To verify that the web portal is installed and running, open a browser and type the Web Portal URL in the address bar. The address consists of the server's name and the virtual directory name that you specified for the web portal during setup or in the Web Portal URL page in the Reporting Services Configuration tool. By default, the web portal virtual directory is **Reports**. You can use the following URL to verify the web portal installation: `http://<computer name>/Reports<_instance name>`.
 
 ## Install Operations Manager Reporting server
 
-After the upgrade is complete, perform the following steps to [install Operations Manager Reporting server](deploy-install-reporting-server.md).
+After the upgrade, perform the following steps to [install Operations Manager Reporting server](deploy-install-reporting-server.md).
+
+After the Installation of Operations Manager Reporting Server, apply UR1 for the Operations Manager 2022 Reporting Server.
 
 ## Optional - Enable CLR strict security
 
-To enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017) on the Operations Manager databases, run the following SQL script on each Operations Manager database (by default, CLR strict security will be OFF after upgrading to SQL Server 2019).  
+To enable [CLR strict security](/sql/database-engine/configure-windows/clr-strict-security?preserve-view=true&view=sql-server-2017) on the Operations Manager databases, run the following SQL script on each Operations Manager database (by default, CLR strict security will be OFF after upgrading to SQL Server 2022).  
 
 ```
 -- Do this only for SQL server version 2017 and more

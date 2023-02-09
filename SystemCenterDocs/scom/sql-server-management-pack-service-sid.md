@@ -2,10 +2,10 @@
 ms.assetid: 8f280433-6981-402e-b94d-ba2e9ae97b81
 title: Service SID in Management Pack for SQL Server
 description: This article explains how to configure monitoring with service SID
-author: epomortseva
-ms.author: v-ekaterinap
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.date: 12/9/2022
+ms.date: 2/1/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -52,12 +52,12 @@ To configure monitoring using Service Security Identifier, perform the following
     /*In some cases, administrators change the 'sa' account default name.
     This will retrieve the name of the account associated to princicpal_id = 1*/
     DECLARE @sa_name sysname = 'sa';
-    SELECT @sa_name = [Name] FROM sys.server_principals WHERE principal_id = 1
+    SELECT @sa_name = [name] FROM sys.server_principals WHERE principal_id = 1
     /*Create the server role with authorization to the account associated to principal id = 1.
     Create the role only if it does not already exist*/
     DECLARE @createSrvRoleCommand nvarchar(200);
     SET @createSrvRoleCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-    WHERE [Name] = ''SCOM_HealthService'') BEGIN
+    WHERE [name] = ''SCOM_HealthService'') BEGIN
     CREATE SERVER ROLE [SCOM_HealthService] AUTHORIZATION [' + @sa_name + ']; END'
     EXEC(@createSrvRoleCommand);
     GRANT VIEW ANY DATABASE TO [SCOM_HealthService];
@@ -65,7 +65,7 @@ To configure monitoring using Service Security Identifier, perform the following
     GRANT VIEW SERVER STATE TO [SCOM_HealthService];
     DECLARE @createLoginCommand nvarchar(200);
     SET @createLoginCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-    WHERE [Name] = '''+ @accountname +''') BEGIN
+    WHERE [name] = '''+ @accountname +''') BEGIN
     CREATE LOGIN '+ QUOTENAME(@accountname) +' FROM WINDOWS WITH DEFAULT_DATABASE=[master]; END'
     EXEC(@createLoginCommand);
     -- Add the login to the user-defined server role
@@ -77,9 +77,9 @@ To configure monitoring using Service Security Identifier, perform the following
     DECLARE @createDatabaseUserAndRole nvarchar(max);
     SET @createDatabaseUserAndRole = '';
     SELECT @createDatabaseUserAndRole = @createDatabaseUserAndRole + ' USE ' + QUOTENAME(db.name) + ';
-    IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = '''+ @accountname +''') BEGIN
+    IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [name] = '''+ @accountname +''') BEGIN
     CREATE USER ' + QUOTENAME(@accountname) + ' FOR LOGIN ' + QUOTENAME(@accountname) + '; END;
-    IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = ''SCOM_HealthService'') BEGIN
+    IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [name] = ''SCOM_HealthService'') BEGIN
     CREATE ROLE [SCOM_HealthService] AUTHORIZATION [dbo]; END;
     ALTER ROLE [SCOM_HealthService] ADD MEMBER ' + QUOTENAME(@accountname) + ';'
     FROM sys.databases db

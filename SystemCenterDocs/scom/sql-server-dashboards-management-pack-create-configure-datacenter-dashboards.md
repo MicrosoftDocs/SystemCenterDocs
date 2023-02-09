@@ -13,15 +13,15 @@ ms.technology: operations-manager
 
 # Configuring Datacenter Dashboard
 
-It is recommended to store datacenter dashboards in a separate management pack to allow easy exporting and re-using configured views.
+It's recommended to store datacenter dashboards in a separate management pack to allow easy exporting and reusing configured views.
 
 ## Creating Management Pack
 
 To create a new management pack, perform the following steps:
 
-1. Open the **Administration** view and click **Management Packs**.
+1. Open the **Administration** view and select **Management Packs**.
 
-2. Right-click **Management Packs** and select **Create Management Pack**.
+2. Select and hold **Management Packs** and select **Create Management Pack**.
 
 ## Creating Datacenter Dashboard
 
@@ -31,22 +31,22 @@ To create a new datacenter dashboard, perform the following steps:
 
 2. In the **Monitoring** view, right-click a folder for a new dashboard, and select **New** > **Dashboard View**.
 
-3. At the **Template** step, select **SQL Server Dashboards** and click **Next**.
+3. At the **Template** step, select **SQL Server Dashboards** and select **Next**.
 
-    ![Select a template](./media/sql-server-dashboards-management-pack/selecting-template.png)
+    ![Screenshot showing Select a template.](./media/sql-server-dashboards-management-pack/selecting-template.png)
 
 4. At the **General Properties** step, specify a name and description for the template.
 
-    ![General properties](./media/sql-server-dashboards-management-pack/general-properties.png)
+    ![Screenshot showing General properties.](./media/sql-server-dashboards-management-pack/general-properties.png)
 
-5. At the **Summary** step, click **Create** and wait until the dashboard view is created.
+5. At the **Summary** step, select **Create** and wait until the dashboard view is created.
 
-    ![Summary information](./media/sql-server-dashboards-management-pack/summary.png)
+    ![Screenshot showing Summary information.](./media/sql-server-dashboards-management-pack/summary.png)
 
-6. At the **Completion** step, click **Close**.
+6. At the **Completion** step, select **Close**.
 
-    ![Final step of the wizard](./media/sql-server-dashboards-management-pack/completion.png)
+    ![Screenshot showing Final step of the wizard.](./media/sql-server-dashboards-management-pack/completion.png)
 
 A new dashboard has no groups by default and only the **Home** note (not clickable) that represents the root of breadcrumbs and datacenter menu is available.
 
-While the dashboard is in the **Loading…** state, the hamburger button and the **Home** title are not displayed.
+While the dashboard is in the **Loading…** state, the hamburger button and the **Home** title aren't displayed.

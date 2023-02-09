@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 16b29d57-c3d9-407d-949f-94dc8b4e4ef0
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete VM Data Disk
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Delete VM Data Disk** activity removes the specified data disk from a virtual machine. It is part of the **Azure Virtual Machine Disks** category activity.
+The **Delete VM Data Disk** activity removes the specified data disk from a virtual machine. It's part of the **Azure Virtual Machine Disks** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Delete VM Data Disk Required Properties
 

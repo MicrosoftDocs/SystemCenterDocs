@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 46968478-f49f-487a-ab84-07d9e2506718
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create New Disk from VHD
@@ -25,7 +25,7 @@ robots: noindex
 
 The Create New Disk from VHD activity is used to create a new disk from a VHD and add the disk to an existing virtual machine.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create New Disk from VHD Required Properties
 
@@ -55,7 +55,7 @@ The activity publishes all of the data from the required and optional properties
 | Bus   | The IDE or SCSI bus to which to attach the disk   |   
 | Bus Type   | IDE or SCSI   |   
 | Description   | An alphanumeric description of the disk   |   
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |   
+| Enabled   | True or False. If False, the virtual machine can't be started.   |   
 | File Name   | The name of the VHD on which the new disk will be based   |   
 | Is VHD   | True or False   |   
 | LUN   | The logical unit number (LUN) for the VHD object on an IDE or SCSI bus   |   

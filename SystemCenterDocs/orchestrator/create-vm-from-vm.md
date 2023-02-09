@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 6ad6e788-460d-4c30-98d3-d34c411cbdbd
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create VM from VM
@@ -25,7 +25,7 @@ robots: noindex
 
 The Create VM From VM activity is used to create a new virtual machine from an existing virtual machine.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create VM from VM Required Properties
 

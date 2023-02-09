@@ -3,7 +3,7 @@ ms.assetid: c5700b3d-d4a2-494c-9c37-de5bed7a0b5e
 title:  include file  
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date:  09/07/2022
 ms.topic:  include
 ms.prod:  system center
@@ -27,7 +27,7 @@ Before you attempt the upgrade, ensure that your environment is upgraded to the 
 
 **Prepare to upgrade:**
 
-1. If you're using Orchestrator 2016, ensure you have UR6 installed.  
+1. If you're using Orchestrator 2016, ensure you've UR6 installed.  
 2. Ensure that there are no pending restarts on the computer.
 3. Perform a full backup of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](../orchestrator/migrate-orchestrator-between-environments.md).
 4. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Orchestrator in System Center 2019.

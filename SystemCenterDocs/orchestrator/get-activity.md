@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 60938aea-2ad0-42b2-b425-09d02b3d5053
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Activity

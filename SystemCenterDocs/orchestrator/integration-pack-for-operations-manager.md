@@ -7,7 +7,7 @@ ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # The integration pack for System Center Operations Manager
@@ -18,7 +18,7 @@ manager: evansma
 
 ::: moniker-end
 
-The integration pack for Operations Manager is an add-in provided by System Center Orchestrator. Use the integration pack to connect an Orchestrator Runbook server to an Operations Manager management server so you can automate various actions.
+The integration pack for Operations Manager is an add-in provided by System Center Orchestrator. Use the integration pack to connect an Orchestrator Runbook server to an Operations Manager management server so that you can automate various actions.
 
 For more information about integration packs, see the [System Center integration guide](https://go.microsoft.com/fwlink/?LinkID=275796).
 
@@ -33,7 +33,7 @@ Before you deploy the Operations Manager integration pack, install and configure
 - Operations Manager. The integration pack version should match the System Center version.
 
     >[!NOTE]
-    >If you're using the Orchestrator 2016 or 1801 integration pack for Operations Manager 2016 UR4 or later, if you've configured Operations Manager to accept only TLS 1.1 or 1.2 connections, make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-or-later).
+    >If you're using the Orchestrator 2016 or 1801 integration pack for Operations Manager 2016 UR4 or later and if you've configured Operations Manager to accept only TLS 1.1 or 1.2 connections, make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-or-later).
 
 - To allow server interaction with Operations Manager, install the Operations Manager console where an Orchestrator Runbook server or Runbook Designer is installed.
 
@@ -85,9 +85,9 @@ To configure a connection:
 
 1.  In Runbook Designer, select **Options** > **Operations Manager**.
 2.  On the **Connections** tab, select **Add**.
-3.  In **Connection Entry**, in the  **Name** box, type the name or IP address of the server that runs Operations Manager.
-4.  In the **Domain** box, type the domain name of the Operations Manager server. Or select the ellipsis button (...) to browse for the domain, select it, and then select **Add**.
-5.  In the **User name** and **Password** boxes, type the credentials that the Orchestrator server will use to connect to the Operations Manager server.
+3.  In **Connection Entry**, in the  **Name** box, enter the name or IP address of the server that runs Operations Manager.
+4.  In the **Domain** box, enter the domain name of the Operations Manager server. Or select the ellipsis button **(...)** to browse for the domain, select it, and then select **Add**.
+5.  In the **User name** and **Password** boxes, enter the credentials that the Orchestrator server will use to connect to the Operations Manager server.
 6. In **Monitoring Intervals\\Polling** and **Monitoring Intervals\\Reconnect**, accept the default value of 10 seconds, or change the value. The property **(default value: 10 seconds)** is configurable.
 7.  Select **Test Connection**. When the confirmation message appears, select **OK**.
 8.  Add more connections if necessary.
@@ -104,21 +104,21 @@ Follow these steps:
    **Method 1: Manually modify the registry**
 
    >[!Important]
-   >Carefully follow the steps in this section. You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs.
+   >Carefully follow the steps in this section. You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so that you can restore it if a problems occurs.
 
    Use the following steps to enable or disable all SCHANNEL protocols across the system.
 
    >[!NOTE]
-   >We recommend that you enable the TLS 1.2 protocol for incoming communications. Enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications. Registry changes don't affect the use of the Kerberos protocol or NTLM protocol.
+   >We recommend that you enable the TLS 1.2 protocol for incoming communications. Enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications. Registry changes don't affect the use of the Kerberos protocol or the NTLM protocol.
 
-   a. Start Registry Editor. To do this, right-click **Start**, type **regedit** in the Run box, and then select **OK**.
+   a. Start Registry Editor. To do this, select and hold **Start**, enter **regedit** in the Run box, and then select **OK**.
 
    b. Locate the following registry subkey:          
     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols
 
-   c. Right-click  **Protocol**, and point to **New** > **Key**.
+   c. Select and hold **Protocol**, and point to **New** > **Key**.
 
-      ![New registry key](./media/integration-pack-for-om/new-registry-key.png)
+      ![Screenshot showing New registry key.](./media/integration-pack-for-om/new-registry-key.png)
 
    d. Enter **SSL 3.0**.
 
