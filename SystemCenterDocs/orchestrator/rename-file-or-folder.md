@@ -1,6 +1,6 @@
 ---
 title: Rename File or Folder
-description: The Rename File/Folder activity is used in a runbook to rename a file or folder on a FTP server.
+description: The Rename File/Folder activity is used in a runbook to rename a file or folder on an FTP server.
 ms.custom: na
 ms.date: 12/02/2016
 ms.prod: system-center
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 1eeb6dcd-0579-4e33-b51d-db5241e6b0cc
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Rename File or Folder
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The Rename File/Folder activity is used in a runbook to rename a file or folder on a FTP server.
+The Rename File/Folder activity is used in a runbook to rename a file or folder on an FTP server.
 
-This activity publishes all of the data from the required properties into published data.
+This activity publishes all the data from the required properties into published data.
 
 The following tables list the required properties and published data for this activity.
 
@@ -53,6 +53,6 @@ The following tables list the required properties and published data for this ac
 | Log   | Detailed FTP log.   | String   |
 | Port   | The port used to connect to the FTP server.   | Integer   |
 | Server   | The IP address or computer name of the FTP server.   | String   |
-| Timeout   | The time to wait before a FTP operation times out.   | Integer   |
+| Timeout   | The time to wait before an FTP operation times out.   | Integer   |
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |

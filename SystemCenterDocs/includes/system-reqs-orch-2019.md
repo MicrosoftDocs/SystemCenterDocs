@@ -3,7 +3,7 @@ ms.assetid: ca2c5b46-d017-465f-b970-1594724776b9
 title: include file
 description: include file to provide system requirements for Orchestrator 2019, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 12/18/2020
 ms.custom: na
 author: jyothisuri
@@ -60,7 +60,7 @@ The following software is required for a full installation of Orchestrator on a 
 * Join the computer to an Active Directory domain.
 
     > [!NOTE]
-    > On the first use of the Orchestration console, you are prompted to install Microsoft Silverlight on the computer if it isn't already installed. Install Silverlight 5.0.
+    > On the first use of the Orchestration console, you're prompted to install Microsoft Silverlight on the computer if it isn't already installed. Install Silverlight 5.0.
 
 ## SQL Server
 

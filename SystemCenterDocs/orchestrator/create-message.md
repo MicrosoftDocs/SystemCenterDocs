@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: e2d32a3a-f9ee-4ff4-8a4b-6a32b1f01f4a
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Message
@@ -79,7 +79,7 @@ The following tables list the required and optional properties and published dat
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server.   | String   |
 
 >[!WARNING]
->The **Message ID** that is published by the **Create Message** activity might not be valid in those cases where HP Operations Manager performs correlation. Therefore, caution must be taken to ensure that the **Message ID** published from the **Create Message** activity is only used in Runbooks where you are confident that the new message is not a duplicate of an existing message.
+>The **Message ID** that is published by the **Create Message** activity might not be valid in those cases where HP Operations Manager performs correlation. Therefore, caution must be taken to ensure that the **Message ID** published from the **Create Message** activity is only used in Runbooks where you're confident that the new message isn't a duplicate of an existing message.
 
 >[!WARNING]
 >The **Create Message** activity will succeed and publish an invalid Message ID when provided with an invalid **Node**.
@@ -88,26 +88,26 @@ The following tables list the required and optional properties and published dat
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 
-[Acknowledge Message](acknowledge-message.md)
+- [Acknowledge Message](acknowledge-message.md)
 
-[Add Annotation to Message](add-annotation-to-message.md)
+- [Add Annotation to Message](add-annotation-to-message.md)
 
-[Delete Annotation](delete-annotation.md)
+- [Delete Annotation](delete-annotation.md)
 
-[Delete Custom Attribute](delete-custom-attribute.md)
+- [Delete Custom Attribute](delete-custom-attribute.md)
 
-[Get Annotation](get-annotation.md)
+- [Get Annotation](get-annotation.md)
 
-[Get Message](get-message.md)
+- [Get Message](get-message.md)
 
-[Launch Tool](launch-tool.md)
+- [Launch Tool](launch-tool.md)
 
-[Monitor Message](monitor-message.md)
+- [Monitor Message](monitor-message.md)
 
-[Own/Disown Message](own-or-disown-message.md)
+- [Own/Disown Message](own-or-disown-message.md)
 
-[Set Custom Attribute](set-custom-attribute.md)
+- [Set Custom Attribute](set-custom-attribute.md)
 
-[Update Annotation](update-annotation.md)
+- [Update Annotation](update-annotation.md)
 
-[Update Message](update-message.md)
+- [Update Message](update-message.md)

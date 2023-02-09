@@ -12,7 +12,7 @@ ms.assetid: 4c06b17d-fd0d-4a98-8013-f5e5954606ed
 ms.author: jsuri
 ms.date: 10/12/2016
 author: jyothisuri
-manager: evansma
+manager: mkluck
 ---
 # Orchestrator logs
 
@@ -22,7 +22,7 @@ manager: evansma
 
 ::: moniker-end
 
-This article provides information on common troubleshooting issues and the available tools that can assist in identifying root problems.  
+This article provides information on common troubleshooting issues and the available tools that can help identify the root problems.  
 
 ## Log files  
 In Orchestrator, different logs are available that provide information about Orchestrator runbooks and servers. The following table lists the available types of log files, with links to the appropriate sections that describe the logs in more detail.  

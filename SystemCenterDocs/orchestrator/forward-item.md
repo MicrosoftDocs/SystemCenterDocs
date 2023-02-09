@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 147edef0-e9db-49e8-b6f8-f8539a7c610d
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Forward Item
@@ -31,7 +31,7 @@ The following tables list the required properties, optional properties, and publ
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
-| Body Prefix | The prefix that will be prepended to the original item's body when it is forwarded | String   |
+| Body Prefix | The prefix that will be prepended to the original item's body when it's forwarded | String   |
 | ID   | The ID of the item to be forwarded   | String   |
 | To   | The list of recipients the response will be sent to   | Comma-separated list of email addresses |
 
@@ -39,9 +39,9 @@ The following tables list the required properties, optional properties, and publ
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
-| Bcc   | The list of addresses this item will be sent to as Bcc recipients | Comma separated list of email addresses |
+| Bcc   | The list of addresses this item will be sent to as Bcc recipients | Comma-separated list of email addresses |
 | Body Type   | The format of body of the email message   | Text<br>HTML   |
-| Cc   | The list of addresses the item will be sent to as Cc recipients   | Comma separated list of email addresses |
+| Cc   | The list of addresses the item will be sent to as Cc recipients   | Comma-separated list of email addresses |
 
 ## Forward Item Published Data
 
@@ -56,5 +56,5 @@ The following tables list the required properties, optional properties, and publ
 | ID   | The ID of the forwarded item   | String   |
 | Timeout (seconds)   | Connection timeout threshold   | Number   |
 | To   | List of recipients   | String   |
-| User Name   | User name used to log on to Exchange server   | String   |
+| User Name   | User name used to sign in to Exchange server   | String   |
 | Use Autodiscover   | Indication of whether or not to use Autodiscover to check for changes | Boolean   |

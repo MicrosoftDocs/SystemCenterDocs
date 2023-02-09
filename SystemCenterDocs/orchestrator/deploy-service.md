@@ -7,7 +7,7 @@ ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.custom: intro-deployment
 ---
 # Deploy Service activity
@@ -19,7 +19,7 @@ ms.custom: intro-deployment
 ::: moniker-end
 
 The Deploy Service activity is used in a runbook to create a service using a specified service template.
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Required properties
 

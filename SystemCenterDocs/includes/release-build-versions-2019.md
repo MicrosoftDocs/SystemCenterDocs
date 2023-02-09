@@ -53,5 +53,6 @@ The following tables list the release history for Operations Manager 2019.
 |10.19.1147.0|[5005527](https://support.microsoft.com/kb/5005527) |October 2021 |1.6.8-1 |Update Rollup 3 - OMI Vulnerability Fix |
 |10.19.1150.0|[5013427](https://support.microsoft.com/kb/5013427) |June 2022 |1.6.10-1 |Update Rollup 4 |
 |10.19.1158.0|[5013427](https://support.microsoft.com/kb/5013427) |August 2022 |1.6.10-2 |Update Rollup 4 - OMI Vulnerability Fix |
+|10.19.1167.0|[5013427](https://support.microsoft.com/kb/5013427) |December 2022 |1.6.11-0 |Update Rollup 4 - Hotfix |
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
