@@ -39,7 +39,7 @@ When you're ready to move System Center - Service Manager into a production envi
 
 The following procedure describes how to install the System Center - Service Manager management server, the Service Manager database, the data warehouse management server, data warehouse databases, and the Service Manager console in a four\-computer topology. You start the deployment process by installing the Service Manager management server and the Service Manager console on one computer and the Service Manager database on a second computer. Before you start, ensure that Microsoft SQL&nbsp;Server&nbsp;2016 is installed on the computer that will host the Service Manager database.  
 
- During Setup, you will be prompted to provide credentials for the following accounts:  
+ During Setup, you'll be prompted to provide credentials for the following accounts:  
 
 - Management group administrator  
 
@@ -96,7 +96,7 @@ For more information about the permissions that these accounts require, see [Acc
 
 To start deployment of the System Center - Service Manager data warehouse and data warehouse databases, install the data warehouse management server on one computer \(for example, computer 3\), and all of the data warehouse databases on another computer \(for example, computer 4\).  
 
- During Setup, you will be prompted to provide credentials for the following accounts:  
+ During Setup, you'll be prompted to provide credentials for the following accounts:  
 
 - Management group administrator  
 
@@ -159,7 +159,7 @@ The data warehouse databases include the following three databases: DWStagingAnd
 
         > [!NOTE] 
         > - Manually configure the SQL Server Reporting Services even when SSRS and data warehouse management server MS are on the same machine. For detailed information, see [Manual steps to configure remote SQL Server Reporting Services](/system-center/scsm/config-remote-ssrs). 
-        > - The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented can't be resolved in your environment, you will need to configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information, see the TechNet article [Configure a URL](/sql/reporting-services/install-windows/configure-a-url-ssrs-configuration-manager).  
+        > - The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented can't be resolved in your environment, you'll need to configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information, see the TechNet article [Configure a URL](/sql/reporting-services/install-windows/configure-a-url-ssrs-configuration-manager).  
 
     2.  Verify that **Default** is displayed in the **Report server instance** box.  
 
@@ -208,7 +208,7 @@ After the installation, do the following:
     $Databases = $Server.Databases
     $DWASDB = $Databases["DWASDataBase"]
 
-    #update DWDatamart dsv. Comment the below 3 commands if DWdatamart dsv is not present 
+    #update DWDatamart dsv. Comment the below 3 commands if DWdatamart dsv isn't present 
 
     $DWASDB.DataSourceViews["DwDataMart"].Schema.Tables["OperatingsystemDim"].Columns["PhysicalMemory"].DataType  =  [decimal] 
 
@@ -216,7 +216,7 @@ After the installation, do the following:
 
     $DWASDB.DataSourceViews["DwDataMart"].Update([Microsoft.AnalysisServices.UpdateOptions]::ExpandFull) 
 
-    #update CMDatamart dsv.Comment the below 2 commands if cmdatamart dsv is not present 
+    #update CMDatamart dsv.Comment the below 2 commands if cmdatamart dsv isn't present 
 
     $DWASDB.DataSourceViews["CMDataMart"].Schema.Tables["OperatingsystemDim"].Columns["PhysicalMemory"].DataType  =  [decimal] 
 
@@ -245,7 +245,7 @@ After the installation, do the following:
 
 ## Validate the four-computer installation
 
-The procedures in this topic describe how to validate the four\-computer installation of System Center - Service Manager.  
+The procedures in this article describe how to validate the four\-computer installation of System Center - Service Manager.  
 
 ### Step 1: validate the installation of the management server and database  
 
@@ -347,4 +347,4 @@ The procedures in this topic describe how to validate the four\-computer install
 
 ## Next steps
 
-- To manually configure SSRS in situations where SSRS is not on the same server as the data warehouse management server, review [Manual steps to configure remote SQL Server Reporting Services](config-remote-ssrs.md).
+- To manually configure SSRS in situations where SSRS isn't on the same server as the data warehouse management server, review [Manual steps to configure remote SQL Server Reporting Services](config-remote-ssrs.md).

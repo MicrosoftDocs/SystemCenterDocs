@@ -34,7 +34,7 @@ If you want to evaluate System Center - Service Manager and you've a minimal amo
 
 To install System Center - Service Manager on a single computer, you install the Service Manager management server, database, and console on the computer. Then, you install the data warehouse on a virtual machine on the same computer.  
 
- During Setup, you will be prompted to provide credentials for the following accounts:  
+ During Setup, you'll be prompted to provide credentials for the following accounts:  
 
 - Management group administrator  
 
@@ -82,7 +82,7 @@ For more information about the permissions that these accounts require, see "Acc
 
 12. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates. If you want Windows Update to check for updates, select **Initiate machine wide Automatic update**. Select **Next**.  
 
-13. On the **Installation summary** page, click **Install**.  
+13. On the **Installation summary** page, select **Install**.  
 
 14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and select **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](encryption-key.md).  
 

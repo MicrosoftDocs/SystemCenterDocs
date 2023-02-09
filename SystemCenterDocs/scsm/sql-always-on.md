@@ -37,7 +37,7 @@ However, this information isn't intended to provide detailed instructions on how
 SQL Server AlwaysOn supports the following Service Manager databases:
 
 - Service Manager CMDB
-- Service Manager Data Warehouse (all 3 databases)
+- Service Manager Data Warehouse (all the three databases)
 - OM and CM DataMart
 
 ## New management group installation
@@ -65,11 +65,11 @@ Use the following series of tasks when using an existing management group with a
 3. Open the inbound port for the SQL Server instance and AGL on each computer running SQL Server.
 4. Review the information at [Move the Service Manager and data warehouse databases](move-databases.md#move-the-service-manager-database)  and follow the steps there, with the following changes:
     1. In step 5, *To Configure Service Manager tables*, use the `AGL Name,AGL Port number` instead of the computer name hosting the Service Manager database, for example: SMListener,5122
-    2. In Step 6, use the `AGL Name,AGL Port number` to update the both DWStaging and Config database tables.
+    2. In Step 6, use the `AGL Name,AGL Port number` to update both DWStaging and Config database tables.
     3. In Step 7, *Configure the registry on all the management servers*, change the registry key `HKEY\_LOCAL\_MACHINE\Software\Microsoft\System Center2010\Common\Database` and give `DatabaseServerName` as `AGL Name,AGL Port number`.
 
-To summarize, you are changing the computer name hosting the Service Manager database to *AGL Name*,*AGL Port number* for SQL Server AlwaysOn support.
+To summarize, you're changing the computer name hosting the Service Manager database to *AGL Name*,*AGL Port number* for SQL Server AlwaysOn support.
 
 ## Next steps
 
-- To create a system image that contains software needed for use as a template so that you can apply it to new servers, review [Create and deploy server images of Service Manager](deploy-sm-images.md).
+- To create a system image that contains the software needed for use as a template so that you can apply it to new servers, review [Create and deploy server images of Service Manager](deploy-sm-images.md).

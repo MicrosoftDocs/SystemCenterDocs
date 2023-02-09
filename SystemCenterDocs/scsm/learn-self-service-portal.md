@@ -164,7 +164,7 @@ The new Self-Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  ![Diagram of the sm&#45;ssp&#45;scenario&#45;11.](./media/learn-self-service-portal/deploy-sm-ssp-scenario-11.png)  
 
 #### Basic authentication  
- For a double\-hop scenario, Windows Authentication won't work so it must be disabled. Enable and configure basic authentication.
+ For a double\-hop scenario, Windows Authentication won't work; so it must be disabled. Enable and configure basic authentication.
 
  ![Diagram of the sm&#45;ssp&#45;scenario&#45;12.](./media/learn-self-service-portal/deploy-sm-ssp-scenario-12.png)  
 

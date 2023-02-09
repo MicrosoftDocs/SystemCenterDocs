@@ -27,7 +27,7 @@ After you 've deployed the Service Manager management servers and data warehouse
 
  The management pack deployment process can take several hours to complete. It's a best practice not to turn off any Service Manager computers or stop any Service Manager services during this time. During this registration process, you can continue to use the Service Manager console to perform any Service Manager functions that you want.  
 
- To ensure that reporting data will be available, use the procedures in the following topics to register the data warehouse and deploy the management packs.  
+ To ensure that reporting data will be available, use the procedures in the following sections to register the data warehouse and deploy the management packs.  
 
 ## Run the Data Warehouse Registration wizard
 
@@ -65,7 +65,7 @@ You can use the following steps in System Center - Service Manager to use the Da
 
 ## Determine when Data Warehouse registration is complete
 
-Several management packs are imported during the data warehouse registration process in Service Manager. Data warehouse registration is complete when all of the management packs have been imported. You will have to determine when that process is complete by using the following procedure.  
+Several management packs are imported during the data warehouse registration process in Service Manager. Data warehouse registration is complete when all of the management packs have been imported. You'll have to determine when that process is complete by using the following procedure.  
 
 ### To determine when management pack deployment has completed  
 
@@ -79,7 +79,7 @@ Several management packs are imported during the data warehouse registration pro
 
 5. In the **MPSyncJob** details pane, in the **Synchronization Job Details** list, scroll to the right to view the **Status** column, and select **Status** to alphabetically sort the status column.  
 
-6. Scroll through the **Status** list. The management pack deployment process is complete when the status for all of the management packs is **Associated** or **Imported**. Ensure that there is no status of either **Pending Association** or **Failed** in the status list. In the **Data Warehouse Jobs** pane, the status of the **MPSyncJob** will have changed from **Running** to **Not Started** when the registration process is complete. This deployment process can take up to two hours to complete.  
+6. Scroll through the **Status** list. The management pack deployment process is complete when the status for all of the management packs is **Associated** or **Imported**. Ensure that there's no status of either **Pending Association** or **Failed** in the status list. In the **Data Warehouse Jobs** pane, the status of the **MPSyncJob** will have changed from **Running** to **Not Started** when the registration process is complete. This deployment process can take up to two hours to complete.  
 
 7. Use the following steps to periodically refresh the **Data Warehouse Job** pane to monitor the progress of the registration process:  
 

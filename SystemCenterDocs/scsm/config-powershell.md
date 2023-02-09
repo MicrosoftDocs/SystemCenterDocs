@@ -100,7 +100,7 @@ To be able to use the data warehouse cmdlets in Service Manager, you must first 
 
 ### To import the data warehouse cmdlets module
 
-1. On a management server, open a Service Manager Windows PowerShell session. Or, on a data warehouse management server open a Windows PowerShell session.
+1. On a management server, open a Service Manager Windows PowerShell session. Or on a data warehouse management server, open a Windows PowerShell session.
     Ensure that the Windows PowerShell prompt is at the Service Manager installation folder.
 2. At the Windows PowerShell command prompt, enter the following command, and then press ENTER:
 

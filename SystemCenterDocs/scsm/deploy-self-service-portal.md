@@ -106,7 +106,7 @@ Use the following steps to install the Self-Service Portal WebApp using Setup.
 
     -   **WebSite Name** : The name of the website to display in the IIS Management console.
 
-    -   **SM Server name**: You can provide a fully-qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal. For more details, see [Deployment topologies](/system-center/scsm/learn-self-service-portal?#deployment-topologies).
+    -   **SM Server name**: You can provide a fully qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal. For more information, see [Deployment topologies](/system-center/scsm/learn-self-service-portal?#deployment-topologies).
 
     -   **Portal Port**: The port number that the website will use.
 
@@ -157,17 +157,17 @@ In the future, you need to make all customizations to the Service Manager Self-S
 
 ### Basic customization
 
-The `<appSettings>` tab in the Web.config file offers some standard settings to easily customize and personalize the areas which are most often modified. Here's a list of them.
+The `<appSettings>` tab in the Web.config file offers some standard settings to easily customize and personalize the areas that are most often modified. Here's a list of them.
 
 |Key|Purpose|
 |-------|-----------|
 |CompanyName|The value of this key appears as the company's name inside the portal.|
 |CompanyLogoLocation|The value of this key is used as the image file, which is displayed as the company's logo inside the portal.|
 |ITPhone|This key takes the value to configure the IT help desk's phone number. This information appears at the bottom of the navigation menu.|
-|ITEmail|The value of this key is used configure the IT help desk's email ID. This information appears at the bottom of the navigation menu.|
-|DefaultLanguage|By default, the Portal web pages are loaded as defined by the browser's language. Then current user can manually select the language in the top-right corner of each page.<br />The value of this key defines the default failover language which is chosen by the portal, when the browser's language is not available.|
-|GenericOffering|The value of this key accepts the name of the request offering which is mapped to the generic request button. This generic request button is used by the user, when they can't find an appropriate request offering in the catalog.|
-|SDKServerName|The value of this key defines the name of the server where the Service Manager SDK runs and it is used to interact with other Service Manager servers. By default, it has the same value that you provided in Setup.<br />You can use the fully qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you dedicate a secondary Service Manager management server to communicate with the portal.|
+|ITEmail|The value of this key is used to configure the IT help desk's email ID. This information appears at the bottom of the navigation menu.|
+|DefaultLanguage|By default, the Portal web pages are loaded as defined by the browser's language. Then current user can manually select the language in the top-right corner of each page.<br />The value of this key defines the default failover language, which is chosen by the portal when the browser's language isn't available.|
+|GenericOffering|The value of this key accepts the name of the request offering, which is mapped to the generic request button. This generic request button is used by the user, when they can't find an appropriate request offering in the catalog.|
+|SDKServerName|The value of this key defines the name of the server where the Service Manager SDK runs, and it's used to interact with other Service Manager servers. By default, it has the same value that you provided in Setup.<br />You can use the fully qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you dedicate a secondary Service Manager management server to communicate with the portal.|
 |MaxQueryResults|The value of this key defines the maximum number of results that are returned by any query form element inside your request offering forms.|
 |UserCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache user-specific details of the signed-in user.|
 |DataCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache generic data which can be shared among different users.|
@@ -180,7 +180,7 @@ The `<appSettings>` tab in the Web.config file offers some standard settings to 
 ### Style customization
 Web page style, such as font, color, and background, is customized by adding the Custom.css file in the \Content\css website folder.
 
-Styles defined in the CSS file overrides the default styles of the Self-Service Portal..
+Styles defined in the CSS file override the default styles of the Self-Service Portal.
 
 ### Customizing the left menu bar
 You can modify the content shown in the left navigation bar (menu) by editing the Sidebar.cshtml file, which is in the \Views\Shared inside the website folder.

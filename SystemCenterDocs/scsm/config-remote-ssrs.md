@@ -97,7 +97,7 @@ Use the following steps:
 
 2. Using an XML editor of your choice (such as Notepad), open the rsreportserver.config file.
 
-3. Scroll through the rsreportserver.config file and locate the `<Data>` code segment. There is only one `<Data>` code segment in this file.
+3. Scroll through the rsreportserver.config file and locate the `<Data>` code segment. There's only one `<Data>` code segment in this file.
 
 4. Add the following `Extension` tag to the `<Data>` code segment where all the other `Extension` tags are:
 

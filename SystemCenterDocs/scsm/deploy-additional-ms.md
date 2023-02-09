@@ -53,7 +53,7 @@ The following procedure shows how to install an additional management server in 
 
 3.  On the **Service Manager Setup Wizard** page, select **Service Manager management server**.  
 
-4.  On the **Product registration** page, enter the information in the boxes. In the **Product key** boxes, enter the product key you received with Service Manager, or as an alternative, select **Install as an evaluation edition \(180 day trial\)?**. Read the Microsoft Software License Terms, and, if applicable, click **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
+4.  On the **Product registration** page, enter the information in the boxes. In the **Product key** boxes, enter the product key you received with Service Manager, or as an alternative, select **Install as an evaluation edition \(180 day trial\)?**. Read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
 
 5.  On the **Installation location** page, verify that sufficient free disk space is available, and select **Next**. If necessary, select **Browse** to change the location where the additional Service Manager management server will be installed.  
 

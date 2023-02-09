@@ -36,7 +36,7 @@ If you want to evaluate System Center - Service Manager and its reporting capabi
 
 As the first step in the two-computer installation process, install the Service Manager management server, the Service Manager database, and the Service Manager console on one of the two computers.  
 
- During setup, you will be prompted to provide credentials for the following accounts:  
+ During setup, you'll be prompted to provide credentials for the following accounts:  
 
 - Management group administrator  
 - Service Manager services account  
@@ -88,7 +88,7 @@ For more information about the permissions that these accounts require, see [Acc
 
 ## Install the Service Manager data warehouse (two-computer scenario)
 
-As the second step in the two\-computer installation process for System Center - Service Manager, deploy the data warehouse management server and the data warehouse databases on the second computer. During Setup, you will be prompted to provide credentials for the following accounts:  
+As the second step in the two\-computer installation process for System Center - Service Manager, deploy the data warehouse management server and the data warehouse databases on the second computer. During Setup, you'll be prompted to provide credentials for the following accounts:  
 
 - Management group administrator  
 - Service Manager services account  
