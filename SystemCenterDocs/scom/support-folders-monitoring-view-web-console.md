@@ -4,7 +4,7 @@ title: Create folders from web console in System Center Operations Manager
 description: This article describes the procedure on how to create folders using Operations Manager web console, and store dashboards inside them.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
@@ -19,7 +19,7 @@ You can create folders using the web console and save the dashboard inside them.
 
 ::: moniker range="sc-om-2019"
 
-In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside it using the Operations console. However, this feature is not available from the Web console. With 2019 UR2, using the web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs.
+In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside it using the Operations console. However, this feature isn't available from the Web console. With 2019 UR2, using the Web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs.
 
 ::: moniker-end
 
@@ -30,7 +30,7 @@ In Operations Manager, you can create a folder and place dashboards/views inside
 ::: moniker-end
 
 > [!NOTE]
-> Folders and views created from operations console can be viewed in the web console but the dashboards created from the web console will not be visible in the operations console.
+> Folders and views created from operations console can be viewed in the web console, but the dashboards created from the web console won't be visible in the operations console.
 
 
 ## Create a new folder
@@ -38,20 +38,20 @@ In Operations Manager, you can create a folder and place dashboards/views inside
 Use the following steps:
 
 1. Open the web console and navigate to **Monitoring**.
-2. Click **New dashboard**. This opens a right panel like before where **Monitoring** is selected by default.
+2. Select **New dashboard**. This opens a right panel like before where **Monitoring** is selected by default.
 
-   ![New dashboard](./media/support-for-folders/new-dashboard.png)
+   ![Screenshot of New dashboard.](./media/support-for-folders/new-dashboard.png)
 
-3. Select the management pack where you want to save this new folder from the drop-down menu. For e.g. currently, **Client monitoring overrides management pack** is selected.
-4. Click **New folder** and enter the name of the new folder. For example, **Folder\_in\_client** as shown in the below image:
+3. Select the management pack where you want to save this new folder from the dropdown menu. For example, currently **Client monitoring overrides management pack** is selected.
+4. Select **New folder**, and enter the name of the new folder. For example, **Folder\_in\_client** as shown in the below image:
 
-   ![Monitoring](./media/support-for-folders/create-in-monitoring.png)
+   ![Screenshot of Monitoring.](./media/support-for-folders/create-in-monitoring.png)
 
-5. Click **OK**.
+5. Select **OK**.
 
    The new folder is saved in the selected management pack, and displays in the list of folders.
 
-   ![Create folder](./media/support-for-folders/create-folder-in-client.png)
+   ![Screenshot of Create folder.](./media/support-for-folders/create-folder-in-client.png)
 
 > [!NOTE]
 > - You can save a folder inside a preexisting folder. To do this, select the desired folder instead of Monitoring, and follow the same procedure mentioned above.
@@ -61,17 +61,17 @@ Use the following steps:
 ## Save a dashboard inside a folder
 
 1. Open the web console and navigate to **Monitoring**.
-2. Click **New dashboard**.
+2. Select **New dashboard**.
 3. Enter the name of the dashboard.
 4. Select the folder from the list where you want to store the dashboard.
    Management pack selection will be based on root folder.
-6. Click **Save**.
-   The dashboard is stored inside the selected folder, and can be seen in the left navigation pane.
+6. Select **Save**.
+   The dashboard is stored inside the selected folder and can be seen in the left navigation pane.
 
-   ![Save dashboard](./media/support-for-folders/new-dashboard-folder-in-client.png)
+   ![Screenshot of save dashboard.](./media/support-for-folders/new-dashboard-folder-in-client.png)
 
    > [!NOTE]
-   >  You can create a dashboard at the root monitoring level as before, by not selecting any folder and clicking the monitoring root.
+   > You can create a dashboard at the root monitoring level as before by not selecting any folder and selecting the monitoring root.
 
 ## Create folders in Web console using REST API
 

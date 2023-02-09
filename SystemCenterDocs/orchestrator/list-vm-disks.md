@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 43d6d155-7f84-45eb-aa36-9a7ed4a3b95a
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # List VM Disks
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **List VM Disks** activity retrieves a list of the disks in your image repository. It is part of the **Azure Virtual Machine Disks** category activity.
+The **List VM Disks** activity retrieves a list of the disks in your image repository. It's part of the **Azure Virtual Machine Disks** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## List VM Disks required properties
 

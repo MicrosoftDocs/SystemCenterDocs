@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: b6ddabeb-d6fb-4f7f-9b8e-afe7f88b01ba
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Add VM Endpoint
@@ -23,12 +23,12 @@ robots: noindex
 
 ::: moniker-end
 
-The **Add VM Endpoint** activity adds an external endpoint to the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
+The **Add VM Endpoint** activity adds an external endpoint to the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
 >[!NOTE]
->This activity will retrieve the current endpoints for a virtual machine from Azure, and then make a request to Azure to update the endpoints for the virtual machine to be all the retrieved endpoints, as well as the endpoint added using this activity. Because the activity requires two calls to Azure, it is possible to experience concurrency issues when another process modifies the endpoints after this activity retrieves them, but before this activity submits the updated endpoints. |
+>This activity will retrieve the current endpoints for a virtual machine from Azure, and then make a request to Azure to update the endpoints for the virtual machine to be all the retrieved endpoints, as well as the endpoint added using this activity. Because the activity requires two calls to Azure, it's possible to experience concurrency issues when another process modifies the endpoints after this activity retrieves them, but before this activity submits the updated endpoints. |
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Add VM Endpoint Required Properties
 

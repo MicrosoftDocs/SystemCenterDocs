@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: d86c35be-c407-4f65-aec2-593839e58b4f
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Run OA Command
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Run OA Command** activity is used in a runbook to run a command that can be used to perform management activities such as **Add User**, **Enable User**, and **Show Server Status**.
+The **Run OA Command** activity is used in a runbook to run a command that can be used to perform management activities, such as **Add User**, **Enable User**, and **Show Server Status**.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Run OA Command required properties
 
@@ -59,6 +59,6 @@ The activity publishes all of the data from the required and optional properties
 
 ## Other activities
 
-The Integration Pack for HP iLO and OA contains the following additional activities:
+The Integration Pack for HP iLO and OA contains the following additional activity:
 
 - [Run iLO Command](run-ilo-command.md)

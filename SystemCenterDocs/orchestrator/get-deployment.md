@@ -1,8 +1,8 @@
 ---
 title: Get Deployment
 description: The Get Deployment activity returns configuration information, status, and system properties for a deployment.
-ms.custom: na
-ms.date: 4/25/2017
+ms.custom: engagement-fy23
+ms.date: 1/27/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 846005ef-f15b-42e1-a6f5-ead1324a788f
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Deployment
@@ -23,15 +23,15 @@ manager: evansma
 
 ::: moniker-end
 
-The **Get Deployment** activity returns configuration information, status, and system properties for a deployment. It is part of the **Azure Deployments** category activity.
+The **Get Deployment** activity returns configuration information, status, and system properties for a deployment. It's part of the **Azure Deployments** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get Deployment Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
-| Service DNS Prefix | The DNS prefix name of the Windows Azure hosted. | String   |
+| Service DNS Prefix | The DNS prefix name of the Microsoft Azure hosted. | String   |
 | Deployment Slot   | The deployment slot of the deployment.   | Staging, Production |
 
 ## Get Deployment Optional Properties
@@ -51,12 +51,12 @@ There are no optional properties for this runbook activity.
 | Is Upgrading   | Whether the deployment is currently upgrading.   | Boolean   |
 | Number of Upgrade Domains   | The number of upgrade domains in the deployment.   | Integer   |
 | OS Family Number   | The operating system family that this deployment runs under.   | Integer   |
-| OS Version String   | The version of the Windows Azure Guest operating system on which this deployment runs. | String   |
-| Private ID   | A unique identifier generated internally by Windows Azure for this deployment.   | String   |
-| Raw XML Output   | The raw XML output returned by Windows Azure for this operation.   | String   |
+| OS Version String   | The version of the Microsoft Azure Guest operating system on which this deployment runs. | String   |
+| Private ID   | A unique identifier generated internally by Microsoft Azure for this deployment.   | String   |
+| Raw XML Output   | The raw XML output returned by Microsoft Azure for this operation.   | String   |
 | Upgrade Type   | The upgrade type designated for this deployment.   | String   |
 | Status   | The status of the deployment.   | String   |
-| Service DNS Prefix   | The DNS prefix name of the Windows Azure cloud service.   | String   |
+| Service DNS Prefix   | The DNS prefix name of the Microsoft Azure cloud service.   | String   |
 | Deployment Slot   | The deployment slot of the deployment.   | String   |
 | Deployment Name   | The name of the deployment.   | String   |
 | Label   | A friendly name for the cloud service.   | String   |

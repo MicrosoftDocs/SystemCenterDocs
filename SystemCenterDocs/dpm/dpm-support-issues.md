@@ -34,11 +34,11 @@ This article summarizes some of the common support information you might need wh
 
 -   As a standalone physical server - DPM can't be deployed in a physical cluster, but you can manage multiple DPM servers from a single location using Central Console in Operations Manager.
 
--   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You can install DPM in the same way as a physical installation. For detailed information, see the row [DPM installed as Hyper-V VM](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You can install DPM in the same way as a physical installation. For detailed information, see the row [DPM installed as Hyper-V VM](install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
 ::: moniker range="<=sc-dpm-2019"
 
--   As an Azure virtual machine - You can install DPM 2019 as an Azure virtual machine. There are many restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an Azure virtual machine - You can install DPM 2019 as an Azure virtual machine. There are many restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
 -   As a Windows virtual machine in VMware - You can install DPM 2019 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
 
@@ -46,7 +46,7 @@ This article summarizes some of the common support information you might need wh
 
 ::: moniker range="sc-dpm-2022"
 
--   As an Azure virtual machine - You can install DPM 2022 as an Azure virtual machine. There are many restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an Azure virtual machine - You can install DPM 2022 as an Azure virtual machine. There are many restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
 -   As a Windows virtual machine in VMware - You can install DPM 2022 on a Windows virtual machine in a VMware environment. In this configuration, DPM can protect Microsoft workloads running as Windows virtual machines in VMware.
 
@@ -175,7 +175,7 @@ Both scenarios are unsupported. You can only select one of the following options
 
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries for System Center DPM 2012 and later](https://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fiber channel adapter, contact your tape hardware vendor, and ask them to [verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries for System Center DPM 2012 and later](https://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fiber channel adapter, contact your tape hardware vendor, and ask them to [verify tape library compatibility](identify-compatible-tape-libraries.md).
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ Both scenarios are unsupported. You can only select one of the following options
 
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2019 or later with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries](/SystemCenterDocs/dpm/dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, contact your tape hardware vendor and ask them to [verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2019 or later with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries](dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, contact your tape hardware vendor and ask them to [verify tape library compatibility](identify-compatible-tape-libraries.md).
 
 ::: moniker-end
 
@@ -191,7 +191,7 @@ Both scenarios are unsupported. You can only select one of the following options
 
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2022 with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries](/SystemCenterDocs/dpm/dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, contact your tape hardware vendor and ask them to [verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fiber channel adapter are supported on DPM 2022 with certified hardware. For the current list of supported hardware, see [Compatible Tape Libraries](dpm-compatible-tape-libraries.md). To check if your tape library is supported by the virtual fiber channel adapter, contact your tape hardware vendor and ask them to [verify tape library compatibility](identify-compatible-tape-libraries.md).
 
 ::: moniker-end
 
@@ -204,11 +204,11 @@ Both scenarios are unsupported. You can only select one of the following options
 **Issue**: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protection of other workloads hosted on Cluster Shared Volumes (CSVs) isn't supported.
 
 ::: moniker range="<=sc-dpm-2019"
-Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2019 UR2](/SystemCenterDocs/dpm/what-s-new-in-dpm.md) and later.
+Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2019 UR2](what-s-new-in-dpm.md?view=sc-dpm-2019) and later.
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2022"
-Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2022](what-s-new-in-dpm.md).
+Protection of SQL Server database stored on Cluster Shared Volume (CSV) is supported with [DPM 2022](what-s-new-in-dpm.md?view=sc-dpm-2022).
 ::: moniker-end
 
 **Workaround**: None.
@@ -304,7 +304,7 @@ Protection of SQL Server database stored on Cluster Shared Volume (CSV) is suppo
 
 **Workaround**: Deploy DPM as a virtual machine.
 
-You can enable deduplication for DPM storage when it runs in a Hyper-V virtual machine and stored backup data to VHDs in shared folders on Windows File Servers with data deduplication enabled. For more information about this scenario, read [Deduplicating DPM storage](~/dpm/deduplicate-dpm-storage.md).
+You can enable deduplication for DPM storage when it runs in a Hyper-V virtual machine and stored backup data to VHDs in shared folders on Windows File Servers with data deduplication enabled. For more information about this scenario, read [Deduplicating DPM storage](deduplicate-dpm-storage.md).
 
 ### The Dedup file system can't be protected to a secondary DPM server
 **Issue**: After a dedup file system is protected by a primary DPM server, it can't be protected to a secondary DPM server.
@@ -494,7 +494,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 These workloads can be running on a single server or in a cluster configuration.
 
-**Workaround**: If you want to protect a workload that isn't in a trusted domain, see [Prepare computers in workgroups and untrusted domains](~/dpm/prepare-environment-for-dpm.md) for exact details of what's supported and what authentication is required.
+**Workaround**: If you want to protect a workload that isn't in a trusted domain, see [Prepare computers in workgroups and untrusted domains](prepare-environment-for-dpm.md) for exact details of what's supported and what authentication is required.
 
 ### Short-term backup to tape isn't supported
 **Issue**: DPM doesn't support short-term backup (incremental backup) to tape for workload data (Exchange, SQL Server, SharePoint, Hyper-V). Only file data (volumes, shares, folders) can be backed up incrementally.
@@ -641,4 +641,4 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 
 -   DPM running as an Azure virtual machine can't protect on-premises workloads.
 
-**Workaround**: For more information about this scenario, see [Install DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites).
+**Workaround**: For more information about this scenario, see [Install DPM as an Azure virtual machine](install-dpm.md#setup-prerequisites).

@@ -7,7 +7,7 @@ ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 # Monitor VMM Job activity
 
@@ -19,7 +19,7 @@ manager: evansma
 
 The Monitor VMM Job activity is used in a runbook to monitor a VMM job.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Required properties
 

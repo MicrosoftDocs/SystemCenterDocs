@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 30dc0550-1edc-40dc-8bdd-93e2fc10103e
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Send E-Mail
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The Send E-Mail activity is used in a runbook to send e-mail messages.
+The Send E-Mail activity is used in a runbook to send email messages.
 
-This activity publishes all of the data from the required and optional properties into published data.
+This activity publishes all the data from the required and optional properties into published data.
 
 The following tables list the required and optional properties and published data for this activity.
 

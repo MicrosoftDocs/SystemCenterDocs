@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: e58ceb1a-56fe-4675-95e5-a7f8187198ce
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Container
@@ -23,12 +23,12 @@ robots: noindex
 
 ::: moniker-end
 
-The **Create Container** activity creates a new container under the specified account. It is part of the **Azure Storage** category activity.
+The **Create Container** activity creates a new container under the specified account. It's part of the **Azure Storage** category activity.
 
 >[!NOTE]
->Currently, this activity will not fail if a container already exists with the same name as the container to create. No new container will be created, but the activity will succeed in Orchestrator.
+>Currently, this activity won't fail if a container already exists with the same name as the container to create. No new container will be created, but the activity will succeed in Orchestrator.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Create Container Required Properties
 
