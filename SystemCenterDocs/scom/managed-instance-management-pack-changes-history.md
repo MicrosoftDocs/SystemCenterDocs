@@ -54,4 +54,4 @@ This article covers new functionality and improvements in Management Pack for Az
 
 - Disabled “XTP Configuration Monitor”
 - Disabled “Database Backup Status Monitor”
-- Rebuild management pack and verify against the current version of Managed Instance Provided a few minor UI improvements to the Add Monitoring Wizard
+- Rebuild management pack and verify against the current version of Azure SQL Managed Instance Provided a few minor UI improvements to the Add Monitoring Wizard
