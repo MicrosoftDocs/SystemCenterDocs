@@ -4,11 +4,11 @@ title: Create an Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to create an Azure Monitor SCOM Managed Instance (preview) to monitor workloads using System Center Operations Manager functionality on Azure.
 author: v-pgaddala
 ms.author: v-pgaddala
-manager: mkluck
-ms.date: 01/17/2023
+manager: jsuri
+ms.date: 01/27/2023
 ms.custom: na
 ms.prod: system-center
-ms.technology: operations-manager
+ms.technology: operations-manager-managed-instance
 ms.topic: article
 monikerRange: 'sc-om-2022'
 ---
@@ -47,6 +47,7 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 - If your Domain Controller or any other component is on-premises, the line-of-sight can be established through *ExpressRoute* or *VPN*. For more information, see  [ExpressRoute](/azure/expressroute/) and [VPN Gateway](/azure/vpn-gateway/).
 - If your Domain Controller and all other components are in Azure (a conventional Domain Controller and not Azure Active Directory) with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't required). If you're using one VNet to host all your components, you'll already have a line-of-sight between all your components. If you've multiple VNets, you'll need to do VNet peering between all the VNets that are in your network. For more information, see  [VNet peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 - Allow ports 5723/5724/443 to communicate while talking from SCOM Managed Instance (preview) to the VMs being monitored and vice versa.
+- Active directory web service must run on domain controllers; Firewall rule/NSG must allow communication on port 9389 between SCOM Managed Instance (preview) VNet and domain controller.
 - We recommend a NAT gateway for outbound Internet access from subnets. Edit the subnet to add a NAT gateway. For more information, see [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
     - In Azure, add NAT gateway to Subnet (VNET/Subnet) where SCOM Managed Instance (preview) is going to be created. A NAT gateway is needed for outbound Internet access from subnets. For more information, see  [Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview).
         - To create a NAT gateway, follow these steps:
@@ -296,9 +297,7 @@ To create a SCOM Managed Instance (preview), follow these steps:
 
 1. Select **Create SCOM managed instance**. 
 1. **Prerequisites to create SCOM managed instance** page opens. Download the script and run in a domain-joined machine to validate the prerequisites.
-
-   :::image type="Script download" source="media/create-operations-manager-managed-instance/script-download.png" alt-text="Screenshot showing script download option.":::
-        
+    :::image type="Script download" source="media/create-operations-manager-managed-instance/script-download-inline.png" alt-text="Screenshot showing script download option." lightbox="media/create-operations-manager-managed-instance/script-download-expanded.png":::
 1. Under **Basics**, do the following:
     1. **Project details**:
         1. **Subscription**: Select the Azure subscription in which you want to place the SCOM Managed Instance (preview).

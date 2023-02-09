@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: e6ea8b08-b182-45dd-a680-2b06bc62ce8e
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 
@@ -74,8 +74,10 @@ data for further action.
 >   -   Site Addresses Created, Modified, or Deleted
 >   -   Site Systems Flagged with Warning or Critical Status
 
-The activity publishes all of the data from the required and optional
-properties into published data. The following tables list the required
+The activity publishes all the data from the required and optional
+properties into published data. 
+
+The following tables list the required
 and optional properties and published data for this activity.
 
 ## Query ConfigMgr required properties

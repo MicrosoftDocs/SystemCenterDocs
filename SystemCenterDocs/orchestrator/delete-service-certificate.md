@@ -1,6 +1,6 @@
 ---
 title: Delete Service Certificate
-description: The Delete Service Certificate activity is used in a runbook delete a service certificate from the certificate store of a cloud service.
+description: The Delete Service Certificate activity is used in a runbook to delete a service certificate from the certificate store of a cloud service.
 ms.custom: na
 ms.date: 05/07/2019
 ms.prod: system-center
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: f6aeb60a-85bb-49ea-9fd3-ca8704ce7225
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete Service Certificate
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Delete Service Certificate** activity is used in a runbook delete a service certificate from the certificate store of a cloud service. It is part of the **Azure Certificates** category activity.
+The **Delete Service Certificate** activity is used in a runbook to delete a service certificate from the certificate store of a cloud service. It's part of the **Azure Certificates** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Delete Service Certificate Required Properties
 

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 81d9905b-685d-4fc8-9da2-9b742bded6ef
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Add Annotation to Message
@@ -46,32 +46,32 @@ The following tables list the required properties and published data for this ac
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server. | String   |
 
 >[!TIP]
->When used in conjunction with the Create Message activity care must be taken to ensure that the Message ID is associated with an original message. Using the Message ID of a duplicate message that has been correlated by HP Operations Manager will cause the Add Annotation to Message activity to fail.
+>When used with the Create Message activity, care must be taken to ensure that the Message ID is associated with an original message. Using the Message ID of a duplicate message that has been correlated by HP Operations Manager will cause the Add Annotation to Message activity to fail.
 
 ## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 
-[Acknowledge Message](acknowledge-message.md)
+- [Acknowledge Message](acknowledge-message.md)
 
-[Create Message](create-message.md)
+- [Create Message](create-message.md)
 
-[Delete Annotation](delete-annotation.md)
+- [Delete Annotation](delete-annotation.md)
 
-[Delete Custom Attribute](delete-custom-attribute.md)
+- [Delete Custom Attribute](delete-custom-attribute.md)
 
-[Get Annotation](get-annotation.md)
+- [Get Annotation](get-annotation.md)
 
-[Get Message](get-message.md)
+- [Get Message](get-message.md)
 
-[Launch Tool](launch-tool.md)
+- [Launch Tool](launch-tool.md)
 
-[Monitor Message](monitor-message.md)
+- [Monitor Message](monitor-message.md)
 
-[Own/Disown Message](own-or-disown-message.md)
+- [Own/Disown Message](own-or-disown-message.md)
 
-[Set Custom Attribute](set-custom-attribute.md)
+- [Set Custom Attribute](set-custom-attribute.md)
 
-[Update Annotation](update-annotation.md)
+- [Update Annotation](update-annotation.md)
 
-[Update Message](update-message.md)
+- [Update Message](update-message.md)

@@ -7,7 +7,7 @@ ms.technology: orchestrator
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ---
 
 # Configuration Manager integration pack activities
@@ -18,7 +18,7 @@ manager: carmonm
 
 ::: moniker-end
 
-The following configuration instructions apply to all activities in this integration pack.
+The following configuration instructions apply to all the activities in this integration pack.
 
 ## Activity properties
 
@@ -30,13 +30,13 @@ runbook.
 
 ## Configure activity properties
 
-- Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
-- To save your configuration entries, click **Finish**.
+- Double-click the activity. Alternatively, you can right-click the activity, and select **Properties**.
+- To save your configuration entries, select **Finish**.
 
 > [!Note]
-> The filters for all activities are case sensitive. A value that does not match the case of your filter entry is not returned.
+> The filters for all the activities are case sensitive. A value that doesn't match the case of your filter entry isn't returned.
 
-In the activity properties dialog box, several tabs along the left side
+In the activity properties dialog, several tabs along the left side
 provide access to general and specific settings for the activity.
 Although the number of available tabs for activity properties differs
 from activity to activity, all activities will have a **General** tab, a
@@ -54,14 +54,14 @@ description of the actions of the activity.
 ## Details tab
 
 This tab contains properties that are specific to the activity. All
-activities in this integration pack except for the Perform Client Action
+the activities in this integration pack except for the Perform Client Action
 activity have the **Connection Name** property at the top of the
 **Details** tab. This property is used to specify the connection to the
 Configuration Manager server.
 
 ## Configure the Connection Name property
 
--   Click the ellipsis **(…)** button next to the **Name** field, and
+-   Select the ellipsis **(…)** button next to the **Name** field, and
     then select the applicable connection name. Connections displayed in
     the list have been previously configured as described in
     [Configuration Manager Integration Pack](configuration-manager-integration-pack.md).
@@ -74,13 +74,13 @@ listed immediately above the Value Type property.
 
 ## Configure Value Type properties
 
--   Click the ellipsis **(…)** button next to the **Value Type** field,
+-   Select the ellipsis **(…)** button next to the **Value Type** field,
     and then select the setting that correctly identifies the type of
     value in the associated property.
 
 ## Schedule tab
 
-The **Schedule** tab allows you to define availability, expiration and
+The **Schedule** tab allows you to define availability, expiration, and
 mandatory assignments for deployments. Options available on the tab may
 vary depending on the type of deployment. Mandatory assignment schedules
 cause Configuration Manager to automatically run the program at a
@@ -89,33 +89,33 @@ Logon/Logoff. The settings on this tab are optional.
 
 ## Mandatory assignment schedules
 
-To add a new mandatory assignment, click the **New** button. The
+To add a new mandatory assignment, select the **New** button. The
 Mandatory Schedule dialog appears.
 
-The Mandatory Schedule dialog box contains the following elements:
+The Mandatory Schedule dialog contains the following elements:
 
 
 - Use the following schedule
-  * Enables the **Schedule** group which allows you to define a specific schedule.
-    * **None**: Specifies that the operation does not recur.
+  * Enables the **Schedule** group, which allows you to define a specific schedule.
+    * **None**: Specifies that the operation doesn't recur.
     * **Weekly**: Specifies that the operation recurs every N weeks. If this option is selected, you must specify the day of the week on which the operation will occur.
     * **Monthly**: Specifies that the operation recurs every N months. If this option is selected, you must specify the day of the month on which the operation will occur.
     * **Custom interval** (varies depending on the recurrence pattern selected): Specifies the frequency with which the operation will recur. You may set this in terms of minutes, hours, or days.
 - Assign immediately after this event
   * Enables the selector for event-based assignment. Options are:
     * **As soon as possible**: Specifies that the program will automatically run as soon as it reaches the client and all program requirements are met. This value is specified by default.
-    * **Logon**: Specifies that the program will automatically run the next time a user logs on to the client.
-    * **Logoff**: Specifies that the program will automatically run the next time a user logs off the client.
+    * **Logon**: Specifies that the program will automatically run the next time a user signs in to the client.
+    * **Logoff**: Specifies that the program will automatically run the next time a user signs out of the client.
 
 ## Add a mandatory assignment
 
-1. Click **Add**. The **Mandatory Schedule** dialog box opens.
-2. To schedule the advertisement at a specified date and time select **Use the following schedule**.
-3. To schedule the event, click the ellipsis **(…)** button to open the **Date Time Selection** dialog. Modify the date and time according to your needs, and then click **OK**.
-4. If you want all clients to run the program at the same time regardless of time zone, select the **UTC** check box.
-5. If you want the advertisement to run on a recurring schedule, select one of the options: **Weekly**, **Monthly** or **Custom Interval** and set the properties according to your needs.
+1. Select **Add**. The **Mandatory Schedule** dialog opens.
+2. To schedule the advertisement at a specified date and time, select **Use the following schedule**.
+3. To schedule the event, select the ellipsis **(…)** button to open the **Date Time Selection** dialog. Modify the date and time according to your needs, and select **OK**.
+4. If you want all the clients to run the program at the same time regardless of time zone, select the **UTC** checkbox.
+5. If you want the advertisement to run on a recurring schedule, select one of the options: **Weekly**, **Monthly**, or **Custom Interval** and set the properties according to your needs.
 6. To run the advertisement after an event, select **Assign immediately after this event**. Select the applicable option **As soon as possible**, **Logoff**, or **Logon**.
-7. Click **OK** to save the schedule.
+7. Select **OK** to save the schedule.
 
 > [!Note]
 > You can create multiple mandatory assignments.
@@ -129,7 +129,7 @@ activity fails or runs for an excessive period of time.
 ## Returned data behavior
 
 The “Get” activities retrieve information from another activity or
-outside source, and can return one or more values in the published data.
+outside source and can return one or more values in the published data.
 For example, when you use the Get Collection Member activity, the data
 output from that activity might be a list of computers that belong to
 the specified collection.
@@ -144,24 +144,24 @@ enable this option, you also choose a formatting option:
     format is useful for creating human-readable text files for the
     output.
 
--   **Separate with \_** . Each item is separated by one or more
+-   **Separate with \_**. Each item is separated by one or more
     characters of your choice.
 
--   **Use CSV format**. All items are in CSV (comma-separated value)
+-   **Use CSV format**. All the items are in a CSV (comma-separated value)
     format. This format is useful for importing data into spreadsheets
     or other applications.
 
 The activity will produce a new set of data every time it runs. The
-**Flatten** feature does not flatten data across multiple executions of
+**Flatten** feature doesn't flatten data across multiple executions of
 the same activity.
 
 ## Event notifications
 
 Some activities are expected to take a limited amount of time to
-complete. If they do not complete within that time they may be stalled
+complete. If they don't complete within that time, they may be stalled
 or there may be another issue preventing them from completing. You can
-define the number of seconds to wait for completion of the action. After
-this period a platform event will be sent and the issue will be
+define the number of seconds to wait for the completion of the action. After
+this period, a platform event will be sent and the issue will be
 reported. You can also choose whether to generate a platform event if
 the activity returns a failure.
 
@@ -171,12 +171,12 @@ run or fails to run**
 1.  In the **Event Notifications** box, enter the **number of seconds**
     of run time before a notification is generated.
 
-2.  Select the **Report if activity fails to run** check box to generate
+2.  Select the **Report if activity fails to run** checkbox to generate
     run failure notifications.
 
 ## Published data
 
-Published data is the foundation of a working runbook. It is the data
+Published data is the foundation of a working runbook. It's the data
 produced as a result of the actions of an activity. This data is
 published to an internal data bus that is unique for each runbook.
 Subsequent activities in the runbook can subscribe to this published
@@ -189,12 +189,11 @@ automatically populate the property values needed by activities.
 
 To use published data:
 
-1.  Right-click the property value box, click **Subscribe**, and then
-    click **Published Data**.
+1.  Right-click the property value box, select **Subscribe**, and select **Published Data**.
 
-2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all policies, select **Show Common Published Data**.
+2.  Select the **Activity** dropdown box and select the activity from which you want to obtain the data. To view additional data elements common to all the policies, select **Show Common Published Data**.
 
-3.  Click the published data element that you want to use, and then click **OK**.
+3.  Select the published data element that you want to use, and select **OK**.
 
 ## Activities
 

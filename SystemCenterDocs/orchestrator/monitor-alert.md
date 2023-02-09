@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: e3763763-05be-47ae-81bc-5efa349863f9
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Monitor Alert
@@ -25,7 +25,7 @@ robots: noindex
 
 The Monitor Alert activity triggers a runbook when new Operations Manager alerts are generated, and when existing Operations Manager alerts are updated, according to filter criteria that you specify. For example, you can use the Monitor Alert activity to trigger a diagnostic and corrective runbook that responds to critical alerts in your network.
 
-The following tables list the filters, properties, and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
+The following tables list the filters, properties, and published data for this activity. The activity publishes all the data from the required and optional properties into published data.
 
 ## Monitor Alert filters
 
@@ -89,8 +89,8 @@ The following tables list the filters, properties, and published data for this a
 |-----------------------------------|-------------------------------------------------------------------------------------------|
 | Category   | The category name of the Management Pack   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |
-| CompanyKnowledge   | Knowledge from the rule or monitor that triggered the alert; for instance remediation information. Not available in System Center 2016 SP1. |
-| Connection   | The connection string to the Operations Manager server that you are using   |
+| CompanyKnowledge   | Knowledge from the rule or monitor that triggered the alert; for instance, remediation information. Not available in System Center 2016 SP1. |
+| Connection   | The connection string to the Operations Manager server that you're using   |
 | ConnectorId   | The ID of the connector that generated the connection string   |
 | ConnectorStatus   | The status of the connector   |
 | Context   | The Operations Manager context of the alert   |
