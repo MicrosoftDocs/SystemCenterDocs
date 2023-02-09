@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 337c7278-33f1-40bd-8966-0f69c67711a5
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update Activity

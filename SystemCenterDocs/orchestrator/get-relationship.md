@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 7ccabcbe-6594-4db6-813d-a0dfaa3258df
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Relationship

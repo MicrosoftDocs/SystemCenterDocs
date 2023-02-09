@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 47d10330-5980-44f7-a11c-23cc04636ddc
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Monitor State
@@ -25,13 +25,13 @@ robots: noindex
 
 The Monitor State activity monitors the state of an Operations Manager object that you specify. For example, you can use the Monitor State activity to trigger a corrective runbook when an object with a Warning or Critical state is detected.
 
-The following tables list the properties and published data for this activity. The activity publishes all of the data from the properties into published data.
+The following tables list the properties and published data for this activity. The activity publishes all the data from the properties into published data.
 
 ## Monitor State required properties
 
 | Element   | Description   | Valid Values   | Lookup |
 |:---|:---|:---|:---|
-| Connection | The connection string to the Operations Manager server that you are using | String   | Yes   |
+| Connection | The connection string to the Operations Manager server that you're using | String   | Yes   |
 | Object   | The name of the Operations Manager object to be monitored   | String   | Yes   |
 | State   | The health state of the Operations Manager monitoring object   | CriticalHealthyUninitializedWarning | Yes   |
 
@@ -40,7 +40,7 @@ The following tables list the properties and published data for this activity. T
 | Element   | Description   |
 |-------------------|---------------------------------------------------------------|
 | AvailabilityLastModified   | The last date and time that the availability of the monitor was changed   |
-| Connection   | The connection string to the Operations Manager server that you are using   |
+| Connection   | The connection string to the Operations Manager server that you're using   |
 | DisplayName   | The display name of the Operations Manager monitoring object   |
 | Domain   | The domain that the alert came from   |
 | FullName   | The full name of the Operations Manager monitoring object   |

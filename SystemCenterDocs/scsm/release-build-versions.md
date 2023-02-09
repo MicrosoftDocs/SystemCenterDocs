@@ -4,7 +4,7 @@ title: Release build versions for System Center Service Manager
 description: This article details the release builds in Service Manager
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 02/07/2023
 ms.topic: article
 ms.prod: system-center
@@ -20,10 +20,10 @@ monikerRange: '>=sc-sm-2016'
 
 ::: moniker-end
 
-This article provides information about how to determine your current Microsoft System Center – Service Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
+This article provides information about how to determine your current Microsoft System Center – Service Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes and links to the package downloads.
 
 > [!NOTE]
-> All System Center Service Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
+> All System Center Service Manager update rollups are cumulative. This means, you don't need to apply the URs in order; you can always apply the latest update. If you've deployed System Center – Service Manager and never applied an update rollup, you can proceed to install the latest one available.
 
 ::: moniker range="sc-sm-2022"
 
@@ -97,4 +97,5 @@ The following table lists the release history for Service Manager 1807.
 ::: moniker-end
 
 ## Next steps
+
 [What's New in SM](whats-new-in-sm.md)
