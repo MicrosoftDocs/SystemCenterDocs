@@ -1,7 +1,7 @@
 ---
 title: Using SQL Server AlwaysOn availability groups with Service Manager
 description: Use SQL Server AlwaysOn availability groups with Service Manager to support a failover environment.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -20,12 +20,12 @@ ms.assetid: 706e433d-c641-4dc3-8be5-fe582ef9f4bc
 
 ::: moniker-end
 
-The information in this topic provides tasks that you need to perform in order for Service Manager to work effectively when using availability groups. AlwaysOn support a failover environment. This information is supported only with SQL Server 2012 SP2 and above.
+The information in this article provides tasks that you need to perform in order for Service Manager to work effectively when using availability groups. AlwaysOn supports a failover environment. This information is supported only with SQL Server 2012 SP2 and above.
 
-However, this information is not intended to provide detailed instructions on how to configure a SQL Server AlwaysOn Availability Group. Additionally, Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in Service Manager connection strings.
+However, this information isn't intended to provide detailed instructions on how to configure a SQL Server AlwaysOn Availability Group. Additionally, Service Manager doesn't support setting the MultiSubnetFailover parameter. This parameter isn't used in Service Manager connection strings.
 
 >[!IMPORTANT]
-> Service Manager does not support a topology where the reporting and analysis server database is configured as part of the AlwaysOn Availability Group.
+> Service Manager doesn't support a topology where the reporting and analysis server database is configured as part of the AlwaysOn Availability Group.
 
 
 > [!NOTE]
@@ -47,13 +47,13 @@ Use the following tasks when you install a new management group with a SQL Alway
 ### Before installing Service Manager on an availability group
 
 1. Ensure that you use the Group Listener Name and port when installing Service Manager for the databases that are going to be added to the availability databases.
-2. The first management server will use the Group Listener to get the primary SQL instance, and will install the databases on that instance.
+2. The first management server will use the Group Listener to get the primary SQL instance and will install the databases on that instance.
 
 ### After installing the first management server
 
-1. Ensure that the recovery model of the database is full. Open **SQL Server Management Studio** and connect to the instance where the database(s) are installed. Right-click the targeted database, and select its  **properties**  and then select  **Options**. If the recovery model is not listed as **Full** , then select  **Full**  from the drop-down list.
-2. Create a full back up the databases.
-3. Use SQL Server Management Studio to add the databases to the availability databases. When adding the databases to the availability databases under  **Select Data Synchronization**, three choices are possible:  **Full** ,  **Join only**  and  **Skip initial data synchronization**. Choose the option that is most appropriate for you. We recommend selecting  **Full**  and allowing the  **Add Database wizard**  to create a full backup and restore of the databases on the secondary replicas. More steps might or might not be needed depending on which choice you made. See  [Manually Prepare a Secondary Database for an Availability Group (SQL Server)](/sql/database-engine/availability-groups/windows/manually-prepare-a-secondary-database-for-an-availability-group-sql-server) for more information.
+1. Ensure that the recovery model of the database is full. Open **SQL Server Management Studio** and connect to the instance where the database(s) are installed. Right-click the targeted database, and select its **properties**  and then select  **Options**. If the recovery model isn't listed as **Full** , then select  **Full**  from the dropdown list.
+2. Create a full backup of the databases.
+3. Use SQL Server Management Studio to add the databases to the availability databases. When adding the databases to the availability databases under  **Select Data Synchronization**, three choices are possible:  **Full** ,  **Join only**  and  **Skip initial data synchronization**. Choose the option that is most appropriate for you. We recommend selecting  **Full**  and allowing the  **Add Database wizard**  to create a full backup and restore of the databases on the secondary replicas. More steps might or might not be needed depending on which choice you made. For more information, see [Manually Prepare a Secondary Database for an Availability Group (SQL Server)](/sql/database-engine/availability-groups/windows/manually-prepare-a-secondary-database-for-an-availability-group-sql-server).
 
 ## Use an existing management group
 
@@ -72,4 +72,4 @@ To summarize, you are changing the computer name hosting the Service Manager dat
 
 ## Next steps
 
-- Review [Create and deploy server images of Service Manager](deploy-sm-images.md) to create a system image that contains software needed for use as a template so that you can apply it to new servers.
+- To create a system image that contains software needed for use as a template so that you can apply it to new servers, review [Create and deploy server images of Service Manager](deploy-sm-images.md).
