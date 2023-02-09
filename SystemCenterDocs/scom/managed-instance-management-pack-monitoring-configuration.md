@@ -33,7 +33,7 @@ Management Pack for Azure SQL Managed Instance is capable of performing space mo
 - Instance
 - Database
 
-For instance space monitoring, the management pack checks storage utilization at the Managed Instance level. For database space monitoring, the management pack checks storage utilization at the database level, which can be measured for the following types:
+For instance space monitoring, the management pack checks storage utilization at the Azure SQL Managed Instance level. For database space monitoring, the management pack checks storage utilization at the database level, which can be measured for the following types:
 
 - **ROWS Data Free Space Left**
 
@@ -108,7 +108,7 @@ The following is a complete list of securables that are checked by the monitor t
 
 ## Database Status Monitoring
 
-Database status monitoring is intended to check the database status as reported by the SQL Managed Instance. Status check is done by running a query against the master database of the Managed Instance that returns the database state. If you receive an alert from this monitor, an action is required in order to bring the database back to an operational state.
+Database status monitoring is intended to check the database status as reported by the Azure SQL Managed Instance. Status check is done by running a query against the master database of the Azure SQL Managed Instance that returns the database state. If you receive an alert from this monitor, an action is required in order to bring the database back to an operational state.
 
 All database states except the ONLINE one will result in an unhealthy monitor state. The following table defines the database states.
 
