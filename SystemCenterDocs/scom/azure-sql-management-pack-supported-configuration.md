@@ -54,7 +54,7 @@ Management Pack for Azure SQL Database supports monitoring of databases in any o
   - Hyperscale
   - Business Critical
 
-When using the vCore-based purchase model, the following rules do not collect data because **DTULimit** metrics are not available in this model:
+When using the vCore-based purchase model, the following rules don'ot collect data because **DTULimit** metrics aren't available in this model:
 
 - Azure SQL DB: DB DTU Used Count
 - Azure SQL DB: DB DTU Limit Count
