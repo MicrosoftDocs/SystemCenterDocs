@@ -1,7 +1,7 @@
 ---
 title: System Center Service Manager Evaluation and Licensing
 description: This article provides information about the Evaluation and Licensing related updates in System Center - Service Manager
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -36,30 +36,30 @@ The evaluation version of Service Manager can be installed and used for 180 days
 
 To view the evaluation period related information, from the Service Manager console, go to **Help** > **About**. The page displays the details as shown in the following example:
 
- ![About SM](./media/sm-licensing/sm-about.png)
+ ![Screenshot of About SM page.](./media/sm-licensing/sm-about.png)
 
 ## Evaluation expiry notices
 
-You will receive notices for evaluation expiry, once the evaluation period expires.
+You will receive notices for evaluation expiry once the evaluation period expires.
 
-If you try to connect to Service Manager after the expiry of the evaluation period, the following notices appear on Console and on PowerShell.
+If you try to connect to Service Manager after the expiry of the evaluation period, the following notices appear on the Console and on PowerShell.
 
 **Notice for Service Manager Console**
 
-![Notice through console](./media/sm-licensing/notice-for-sm.png)
+![Screenshot showing Notice through console.](./media/sm-licensing/notice-for-sm.png)
 
 **Notice for Service Manager PowerShell**
 
-![Notice through PowerShell](./media/sm-licensing/notice-for-sm-powershell.png)
+![Screenshot showing Notice through PowerShell.](./media/sm-licensing/notice-for-sm-powershell.png)
 
 ## Activate Service Manager
 
 ::: moniker range="sc-sm-1801"
-You can active Service Manager 1801 and later using the product key from Console and PowerShell, by using the following steps.
+You can activate Service Manager 1801 and later using the product key from Console and PowerShell by using the following steps.
 ::: moniker-end
 
 ::: moniker range=">sc-sm-1801"
-You can active Service Manager using the product key from Console and PowerShell, by using the following steps.
+You can activate Service Manager using the product key from Console and PowerShell by using the following steps.
 ::: moniker-end
 
 ## Activate Service Manager through console
@@ -67,21 +67,21 @@ You can active Service Manager using the product key from Console and PowerShell
 > [!NOTE]
 > If the Evaluation Period has expired, you can activate SM only [through PowerShell](#activate-service-manager-through-powershell).
 
-1. From the SM console, go to **Help** > **About** and then click **Activate** at the bottom left of the **About** page.
+1. From the SM console, go to **Help** > **About** and select **Activate** at the bottom left of the **About** page.
 
-    ![SM activate through console](./media/sm-licensing/sm-activate.png)
+    ![Screenshot showing SM activate through console.](./media/sm-licensing/sm-activate.png)
 
     **Enter product key** page appears.
 
-    ![SM product key](./media/sm-licensing/product-key-sm.png)
+    ![Screenshot showing SM product key.](./media/sm-licensing/product-key-sm.png)
 
-2. Type the product key for Service Manager and click **Continue**.
+2. Enter the product key for Service Manager and select **Continue**.
 
-    If you provide a valid product key, License Agreement page appears, else an error message is displayed.
+    If you provide a valid product key, the License Agreement page appears, else an error message is displayed.
 
-    ![SM license agreement](./media/sm-licensing/license-agreement-sm.png)
+    ![Screenshot showing SM license agreement.](./media/sm-licensing/license-agreement-sm.png)
 
-3. Read through the License Agreement. Select the **I have read understood and agree with the terms of the license agreement** checkbox and then click **Accept** to complete the process.
+3. Read through the License Agreement. Select the **I have read understood and agree with the terms of the license agreement** checkbox and select **Accept** to complete the process.
 
 ## Activate Service Manager through PowerShell
 
@@ -89,15 +89,15 @@ To activate Service Manager through PowerShell, use the following procedure:
 
 1. Open a PowerShell window on the computer where the SM console is installed.
 
-2. Type the following command and press enter.
+2. Enter the following command and press enter.
 
     ```  
     Set-SCSMLicense -ManagementServer <ManagementServer> -ProductId <Product Key>
     ```      
-   On executing the command, you get a prompt asking for the required credential to execute the command. Provide the credentials as appropriate.
+   On executing the command, you get a prompt asking for the required credentials to execute the command. Provide the credentials as appropriate.
 
 A confirmation message appears.
 
 3. Read and accept the confirmation message. Upon successful confirmation, licensing complete information appears as shown below:  
 
-   ![SM license completion](./media/sm-licensing/licensing-complete.png)
+   ![Screenshot showing the SM license completion.](./media/sm-licensing/licensing-complete.png)
