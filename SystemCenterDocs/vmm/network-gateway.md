@@ -2,10 +2,11 @@
 ms.assetid: b75145ed-5980-4952-866e-41c617938f66
 title: Add a network virtualization gateway to the VMM fabric
 description: This article provides information about adding a gateway to the VMM fabric
+ms.custom: engagement-fy23
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/12/2022
+ms.date: 12/14/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
