@@ -209,7 +209,7 @@ To begin monitoring of Azure SQL Databases using the Azure REST API, perform the
 
     ![Screenshot of the database exclude list regular expression SQL.](./media/azure-sql-management-pack/configuring-database-exclude-regular-expression-list.png)
 
-    If you want to remove an existing mask, select it and click **Delete**.
+    If you want to remove an existing mask, select it and select **Delete**.
 
 9. At the **User Management Pool** step, select a pool with management servers and select **Next**.
 
