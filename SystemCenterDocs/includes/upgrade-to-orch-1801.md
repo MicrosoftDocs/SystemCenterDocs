@@ -3,7 +3,7 @@ ms.assetid: ba25182b-5ddf-439e-8dd6-541194e65168
 title:  include file  
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date:  05/17/2018
 ms.topic:  include
 ms.prod:  system-center-threshold
@@ -22,7 +22,7 @@ You can upgrade your installation of System Center 2012 R2 Update Rollup (UR) 14
 
 **Prepare to upgrade:**
 
-1. For 2012 R2, ensure you have UR14 installed, and for 2016, UR4 installed.  
+1. For 2012 R2, ensure you've UR14 installed, and for 2016, UR4 installed.  
 2. Ensure that there are no pending restarts on the computer.
 3. Perform a full backup of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](../orchestrator/migrate-orchestrator-between-environments.md).
 4. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Orchestrator in System Center 1801.
