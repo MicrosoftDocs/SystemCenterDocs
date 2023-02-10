@@ -37,7 +37,7 @@ The following versions of Windows client operating system are supported for the 
 
 | Component        | Windows Server 2016 Standard, Datacenter with Desktop Experience | Windows Server 2019 Standard, Datacenter with Desktop Experience | Windows 10 |
 | :--------------- | :--------------------------------------------------------------- | :--------------------------------------------------------------- | :--------- |
-| Runbook Designer | supported                                                        | Supported                                                        | Supported  |
+| Runbook Designer | Supported                                                        | Supported                                                        | Supported  |
 
 ## Software
 
