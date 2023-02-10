@@ -33,7 +33,7 @@ By default, Service Manager contains several pre-imported, sealed management pac
 
 To use a management pack, import it into Service Manager. The management pack is stored in a .xml, .mp, or a .mpb file that you can import by using the Service Manager console.
 
-For more information about management packs key concepts, management packs best practices, and other management pack related topics, see [Management Packs: Working with Management Packs](/previous-versions/system-center/system-center-2012-R2/hh519661(v=sc.12)).
+For more information about management packs key concepts, management packs best practices, and other management pack related articles, see [Management Packs: Working with Management Packs](/previous-versions/system-center/system-center-2012-R2/hh519661(v=sc.12)).
 
 ## Create a management pack file
 
