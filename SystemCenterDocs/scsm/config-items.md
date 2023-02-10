@@ -70,7 +70,7 @@ You can use the following procedures to create a service in Service Manager. You
 
 In the first procedure, you manually create a service from configuration items that are already present in Service Manager. This is a simple example and requires little other than a few existing configuration items.
 
-In the second procedure, you view an edit a distributed application that was imported from Operations Manager. The prerequisites for this example can be very complex, depending on the distributed applications that you've created in Operations Manager. The following are high-level steps needed to import distributed applications from Operations Manager into Service Manager as services:
+In the second procedure, you view an edit a distributed application that was imported from Operations Manager. The prerequisites for this example can be complex, depending on the distributed applications that you've created in Operations Manager. The following are high-level steps needed to import distributed applications from Operations Manager into Service Manager as services:
 
 1.  In Operations Manager, export each management pack that contains a component for your distributed application. Ensure that you export all management pack dependencies.
 
@@ -104,7 +104,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 
 15. In the tree, select **Service Components**, and select **Add Category**. In the **Choose Class** dialog, select **Other Components Group**, and select **OK**.
 16. In the tree, select **OtherComponentsGroup**, and select **Add Item**. In the **Select Objects** dialog, under **Filter by Class List**, select **Services**, and then select **Active Directory Topology Root**. Next, select **OK**.
-17. Select the **Service Dependents** tab to define the items that use the service or that are external to the service. For example, define other configuration items or services that use the new service.
+17. Select the **Service Dependents** tab to define the items that use the service or are external to the service. For example, define other configuration items or services that use the new service.
 18. Select **OK** to save the new configuration item.
 
 ### To view and edit a distributed application that was imported from Operations Manager
@@ -230,7 +230,7 @@ You can use the following procedures to add information, such as related work it
 
 For example, when you're troubleshooting an incident, you might discover that a relationship exists between two or more objects. A work item to apply an application service pack might be related to more than one configuration item. You might need to update the configuration items to reflect that relationship.
 
-Similarly, work items such as incidents, problems, and change requests are often interrelated. Related work items share some commonality with each other or with a configuration item. When a work item affects a particular configuration item, they are linked.
+Similarly, work items such as incidents, problems, and change requests are often interrelated. Related work items share some commonality with each other or with a configuration item. When a work item affects a particular configuration item, they're linked.
 
 ### To add information to configuration items
 

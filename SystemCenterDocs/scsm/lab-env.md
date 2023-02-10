@@ -44,7 +44,7 @@ Use the following procedure to restore the production Service Manager database u
     - Restrict access to the restored database  
 
       For more information, see [Restore Database \(Options Page\)](/sql/relational-databases/backup-restore/restore-database-options-page)  
-11. Optionally, you can restore the database to a new location by specifying a new restore destination for each file in **Restore the database files as**. For more information see [Restore Database \(Options Page\)](/sql/relational-databases/backup-restore/restore-database-options-page).  
+11. Optionally, you can restore the database to a new location by specifying a new restore destination for each file in **Restore the database files as**. For more information, see [Restore Database \(Options Page\)](/sql/relational-databases/backup-restore/restore-database-options-page).  
 12. In the **Recovery state** panel, select one of the following options most appropriate for your environment:  
     - **Leave the database ready to use by rolling back the uncommitted transactions. Additional transaction logs cannot be restored. \(RESTORE WITH RECOVERY\)**  
 
@@ -128,18 +128,18 @@ Use the following procedure to prepare the Service Manager database in the lab e
 1.  In the **Object Explorer** pane, expand **Databases**, expand **ServiceManager**, and then expand **Tables**.  
 2.  Right\-click **dbo.MT\_Microsoft$SystemCenter$ManagementGroup**, and select **Edit Top 200 Rows**.  
 3.  In the center pane, locate the column **SQLServerName\_43FB076F\_7970\_4C86\_6DCA\_8BD541F45E3A**.  
-4.  In the first row and second rows of this column, enter the computer name of the computer hosting the Service Manager database in the lab environment. In the case of named instances, enter computer name\\instance name.  
+4.  In the first row and second rows of this column, enter the computer name of the computer hosting the Service Manager database in the lab environment. For named instances, enter computer name\\instance name.  
 5.  Right\-click **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SqlResourceStore**, and select **Edit Top 200 Rows**.  
 6.  In the center pane, locate the column **Server\_43FB076F\_7970\_4C86\_6DCA\_8BD541F45E3A**.  
-7.  In the first row of this column, enter the computer name of the computer hosting the SQL Server for the Service Manager database in the lab environment. In the case of named instances, enter computer name\\instance name.  
+7.  In the first row of this column, enter the computer name of the computer hosting the SQL Server for the Service Manager database in the lab environment. For named instances, enter computer name\\instance name.  
 8.  Right\-click **LFX.DataSource**, and select **Edit Top 200 Rows**.  
 9. In the center pane, locate the column **DataSourceAddress**.  
 10. In the first row of this column, locate the entry that starts with **Data Source \= \<server name\>; Initial Catalog \= ServiceManager; Persist Security Info\=False**. Enter the name of the computer hosting SQL Server in the lab environment in place of **\<server name\>**.  
 11. Right\-click **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SdkResourceStore**, and select **Edit Top 200 Rows**.  
 12. In the center pane, locate the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**.  
-13. In all of the rows in this column, enter the name of the computer hosting the Service Manager management server in the lab environment.  
+13. In all the rows in this column, enter the name of the computer hosting the Service Manager management server in the lab environment.  
 14. Right\-click&nbsp;**\[dbo\].\[MT\_Microsoft$SystemCenter$ResourceAccessLayer$CmdbResourceStore\]**, and select&nbsp;**Edit Top 200 Rows**.  
-15. In all rows update the column&nbsp;**Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, enter the name of the SQL computer hosting the Service Manager database in the lab environment  
+15. In all the rows, update the column&nbsp;**Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, enter the name of the SQL computer hosting the Service Manager database in the lab environment  
 16. In the toolbar, select **New Query**.  
 17. In the center pane, enter the following command, and select **Execute**.  
 
@@ -249,7 +249,7 @@ Use the following procedure to install a new data warehouse server in the lab en
 4.  On the **Product registration** page, enter information in the boxes. In the **Product key** boxes, enter the product key you received with Service Manager, or alternatively, select **Install as an evaluation edition \(180 day trial\)?.** Read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
 5.  On the **Installation location** page, verify that sufficient free disk space is available, and select **Next**. If necessary, select **Browse** to change the location in which the Service Manager data warehouse management server will be installed.  
 6.  On the **System check results** page, ensure that prerequisites passed or at least passed with warnings, and select **Next**.  
-7.  On the **Configure data warehouse databases** page, Service Manager checks the computer you're using to see if it can host the data warehouse databases. For this configuration, confirm that the database server is the computer on which you're installing the data warehouse management server, and then click **Next**.  
+7.  On the **Configure data warehouse databases** page, Service Manager checks the computer you're using to see if it can host the data warehouse databases. For this configuration, confirm that the database server is the computer on which you're installing the data warehouse management server, and then select **Next**.  
 
     > [!WARNING]  
     >  A warning message appears if you're using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager isn't possible when you're using the default collation. If later you decide to support multiple languages using a different collation, you have to re\-install SQL Server.  

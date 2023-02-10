@@ -33,7 +33,7 @@ When you install a secondary management server, data retention settings are rese
 
 1.  By using an account that has administrator rights and that is also a member of the Service Manager Management group administrators, sign in to the computer that will host the additional Service Manager Management server.  
 2.  On the System Center - Service Manager installation media, double\-click Setup.exe.  
-3.  On the **Microsoft System Center \<version\> Service Manager** page, click **Install a Service Manager Management server**.  
+3.  On the **Microsoft System Center \<version\> Service Manager** page, select **Install a Service Manager Management server**.  
 4.  On the **Product registration** page, enter the information in the boxes. In the **Product key** boxes, enter the product key you received with Service Manager, or alternatively, select **Install as an evaluation edition \(180 day trial\)?**. Read the Microsoft Software License Terms, and, if applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
 5.  On the **Installation location** page, verify that sufficient free disk space is available, and select **Next**. If necessary, select **Browse** to change the location where the additional Service Manager Management server will be installed.  
 6.  On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  

@@ -18,7 +18,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This articles describes the tasks you should complete after upgrading System Center - Service Manager.
+This article describes the tasks you should complete after upgrading System Center - Service Manager.
 
 ## Restart the Data Access service and workflows
  If necessary, use the following procedures to restart the service and workflows.  

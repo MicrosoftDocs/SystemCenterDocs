@@ -32,7 +32,7 @@ Disabling ECL logging doesn't affect importing data from connectors. Instead, mo
 
 Disabled ECL logging isn't automatically turned on. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a PowerShell cmdlet.
 
--   Disabling ECL logging doesn't turn off logging history data about work items like incident, change requests, and so on. They will continue to work as-is.
+-   Disabling ECL logging doesn't turn off logging history data about work items like incident, change requests, and so on. They'll continue to work as-is.
 
 -   Any *explicit change made by the user* to the data imported by the connectors, such as a user or a computer, is still recorded in the ECL and history.
 
@@ -54,7 +54,7 @@ Here are some disadvantages of this feature:
 
 You can't create DCM incidents when you disable ECL logging.
 
-Some Service Manager users have created user-defined workflows that monitor data being imported by connectors. If you've defined workflows that need to be triggered when the data is imported by connectors, then enabling this feature will not trigger those workflows. Because the workflows look into the ECL table for entries and this feature doesn't log entries in the ECL table, these workflows won't work. In this case, you shouldn't disable ECL logging.
+Some Service Manager users have created user-defined workflows that monitor data being imported by connectors. If you've defined workflows that need to be triggered when the data is imported by connectors, then enabling this feature won't trigger those workflows. Because the workflows look into the ECL table for entries and this feature doesn't log entries in the ECL table, these workflows won't work. In this case, you shouldn't disable ECL logging.
 
 Because entries aren't written to the ECL and history table, the history of the creation and/or the changes to data items imported by connectors in Service Manager aren't recorded. In other words, if you disable ECL logging you can't determine when a user or a computer object was imported into the Service Manager database and/or when changes to these objects are imported into the Service Manager database.
 

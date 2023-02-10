@@ -24,7 +24,7 @@ This article provides an overview and procedures for importing data and configur
 
 ## Import data from comma-separated files
 
-Configuration items contained in a comma-separated value (.csv) file can be imported into the Service Manager database by using the Import from CSV File feature. This feature lets you to bulk-import instances of any class type or projection type that is defined in the Service Manager database. You can use this feature to:
+Configuration items contained in a comma-separated value (.csv) file can be imported into the Service Manager database by using the Import from CSV File feature. This feature lets you bulk-import instances of any class type or projection type that is defined in the Service Manager database. You can use this feature to:
 
 -   Create configuration item or work item instances from data stored in a tabular format.
 
@@ -41,7 +41,7 @@ Two files are required to import a set of instances by using the Import from CSV
 
 1.  A data file that consists of a series of comma-delimited object instances. The data file must end with the .csv file name extension.
 
-2.  A format file that specifies the class type or projection type of the instances present in the data file. Every instance in the data file is assumed to be of this kind. The format file also specifies (1) the subset of properties and, for projections, specifies components. They are being imported for the indicated type, and (2) the order in which those properties appear as columns in the associated data file. The format file must have the same file name as the csv file that it describes, and it must end with the .xml file name extension.
+2.  A format file that specifies the class type or projection type of the instances present in the data file. Every instance in the data file is assumed to be of this kind. The format file also specifies (1) the subset of properties and, for projections, specifies components. They're being imported for the indicated type, and (2) the order in which those properties appear as columns in the associated data file. The format file must have the same file name as the csv file that it describes, and it must end with the .xml file name extension.
 
 ## Create the data file
 For example, you receive a spreadsheet that contains information about computers that you want to import into the Service Manager database. The following is a sample of the first 10 computers in the spreadsheet.

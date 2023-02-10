@@ -56,4 +56,4 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 ## Next steps
 
-- To upgrade the Self Service portal for a variety of possible configurations, review [Upgrade configurations for the Self-Service portal](upgrade-configs-portal.md).
+- To upgrade the Self Service portal for various possible configurations, review [Upgrade configurations for the Self-Service portal](upgrade-configs-portal.md).
