@@ -1,11 +1,11 @@
 ---
 title: Walkthrough Installing Operations Manager on a Single Server
 description: This article describes how to install all Operations Manager roles in a simple single-server deployment.
+ms.custom: engagement-fy23
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 03/21/2022
-ms.custom: na
+ms.date: 12/30/2022
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -251,7 +251,7 @@ This was used earlier for APM configuration, Privileged Monitoring Account, RunA
 
 1.  In the Operations console, select the **Administration** workspace.
 
-2.  In **Device Management**, select **Management Servers**. In the results pane, you should see the Management server that you just installed with a green check mark in the **Health State** column.
+2.  In **Device Management**, select **Management Servers**. In the results pane, you should see the Management server that you installed with a green check mark in the **Health State** column.
 
 #### To confirm the health of Operations Manager reports
 
