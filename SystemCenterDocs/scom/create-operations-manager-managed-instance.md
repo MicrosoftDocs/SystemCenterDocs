@@ -5,7 +5,7 @@ description: This article describes how to create an Azure Monitor SCOM Managed 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 02/09/2023
+ms.date: 01/27/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -48,12 +48,6 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 - If your Domain Controller and all other components are in Azure (a conventional Domain Controller and not Azure Active Directory) with no presence on-premises, a Virtual network (VNet) will work (ExpressRoute isn't required). If you're using one VNet to host all your components, you'll already have a line-of-sight between all your components. If you've multiple VNets, you'll need to do VNet peering between all the VNets that are in your network. For more information, see  [VNet peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 - Allow ports 5723/5724/443 to communicate while talking from SCOM Managed Instance (preview) to the VMs being monitored and vice versa.
 - Active directory web service must run on domain controllers; Firewall rule/NSG must allow communication on port 9389 between SCOM Managed Instance (preview) VNet and domain controller.
-- To ensure the functioning of Active Directory commands on a SCOM Managed Instance (preview), verify that the following ports are accessible from the VNet/Subnet:
-    - TCP port 389 for LDAP 
-    - TCP port 636 for LDAP over SSL 
-    - TCP port 3269 for GC (Global Catalog) over SSL 
-    - TCP and UDP port 88 for Kerberos 
-    - TCP and UDP port 53 for DNS 
 - We recommend a NAT gateway for outbound Internet access from subnets. Edit the subnet to add a NAT gateway. For more information, see [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
     - In Azure, add NAT gateway to Subnet (VNET/Subnet) where SCOM Managed Instance (preview) is going to be created. A NAT gateway is needed for outbound Internet access from subnets. For more information, see  [Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview).
         - To create a NAT gateway, follow these steps:
@@ -96,7 +90,7 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
 - Create a gMSA (Group Managed Service Account) account to run the Management Server services and to authenticate the services. Use the below command to create a gMSA account: 
 
     ```powershell
-    New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
+    New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType RC4, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
     ```
     
     - ContosogMSA = gMSA account name 
@@ -109,7 +103,6 @@ Before you create a SCOM Managed Instance (preview), ensure you select all the t
     ```powershell
     Add-KdsRootKey -EffectiveTime ((get-date).addhours(-10)) 
     ```
-Ensure that the gMSA account created is a local admin account. If there are any GPO policies on the local admins at the Active Directory level, ensure that the GPO policy has the gMSA account as the local admin.
 
 # [In Azure portal](#tab/prereqs-portal)
 
