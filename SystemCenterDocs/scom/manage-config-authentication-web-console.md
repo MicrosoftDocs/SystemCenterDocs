@@ -5,8 +5,8 @@ description: This topic describes how to configure Secure Sockets Layer (SSL) en
 author: jyothisuri
 manager: evansma
 ms.author: jsuri
-ms.date: 07/01/2020
-ms.custom: na
+ms.date: 01/19/2023
+ms.custom: engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
