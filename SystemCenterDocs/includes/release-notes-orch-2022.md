@@ -12,16 +12,20 @@ ms.date: 03/21/2022
 title:  include file
 ---
 
-##  Orchestrator 2022 release notes
+## Orchestrator 2022 release notes
 
 The Orchestrator 2022 release includes all issues fixed until [Orchestrator 2019 UR3](https://support.microsoft.com/topic/update-rollup-3-for-system-center-2019-orchestrator-70bc1df6-adbc-9b89-68bf-df5a6eefca5f).
 
 >[!NOTE]
 >System Center Orchestrator 2019 IPs aren't supported on System Center Orchestrator 2022. 
 
-The following are the known issues and workarounds in System Center 2022 - Orchestrator.
+### Update Rollup 1 (12 January 2023)
+
+See [KB article #5021420](https://support.microsoft.com/kb/5021420) for improvements and issues fixed in 2022 UR1.
 
 ## Known Issues and Workarounds
+
+The following are the known issues and workarounds in System Center 2022 - Orchestrator.
 
 ### Orchestrator Web console doesn't work properly
 
@@ -47,7 +51,6 @@ The following are the known issues and workarounds in System Center 2022 - Orche
 
 **Workaround**: Use any string as value, it will be overwritten by the runbook execution with the output.
 
-
 ### Orchestrator Remoting Service and Runbook Server Monitor Service don’t exit cleanly
 
 **Description**: The *oremoting* and *omonitor* services can't be stopped using Service kill.
@@ -59,6 +62,7 @@ The following are the known issues and workarounds in System Center 2022 - Orche
 taskkill /f /pid {pid of the service}
 
 ```
+
 ### Service Manager connector doesn't work with new Web API
 
 **Description**: Service Manager (SM) console doesn't detect Orchestrator 2022 installation because the Connector for the new Web API is yet to be released.
