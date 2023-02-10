@@ -1,6 +1,6 @@
 ---
 title: Update Alert
-description: The Update Alert activity publishes all of the data from the required and optional properties into published data.
+description: The Update Alert activity publishes all the data from the required and optional properties into published data.
 ms.custom: na
 ms.date: 12/02/2016
 ms.prod: system-center
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 430d19dd-77f5-4e1c-9af1-2dbfecb5221c
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update Alert
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The Update Alert activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The Update Alert activity publishes all the data from the required and optional properties into published data. 
 
-The following tables list the properties and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
+The following tables list the required and optional properties and published data for this activity.
 
 ## Update Alert Required Properties
 

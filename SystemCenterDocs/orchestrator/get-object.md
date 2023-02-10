@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: e1217c55-4f07-4892-8480-65ea1d453be1
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 # Get Object
 
