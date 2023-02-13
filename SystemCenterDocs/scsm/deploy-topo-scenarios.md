@@ -1,7 +1,7 @@
 ---
 title: Recommended deployment topology scenarios
 description: Recommended deployment topology scenarios for Service Manager.
-manager: evansma
+manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -18,7 +18,7 @@ ms.topic: article
 
 ::: moniker-end
 
-For performance and scalability planning purposes, we recommend that you plan your deployment topology for System Center - Service Manager using scenarios that we have tested. While these are not firm guidelines, Microsoft has tested deployment topologies using these scenarios and found that each configuration achieves satisfactory performance.  
+For performance and scalability planning purposes, we recommend that you plan your deployment topology for System Center - Service Manager using scenarios that we've tested. While these aren't firm guidelines, Microsoft has tested deployment topologies using these scenarios and found that each configuration achieves satisfactory performance.  
 
 ## Test and small deployment scenarios
 
@@ -36,7 +36,7 @@ Service Manager roles:
 Hardware configuration:  
 
 -   8\-core 2.66 GHz CPU
--   16 GB RAM \(5 GB for each virtual computer and 1 GB for the host computer\)
+-   16-GB RAM \(5 GB for each virtual computer and 1 GB for the host computer\)
 -   100 GB of available disk space
 
 This configuration was tested with the following load.  
@@ -55,7 +55,7 @@ This configuration was tested with the following load.
 
 ### Small scenario
 
-In this scenario, we recommend the following hardware, configured for roles and hardware as described.  
+In this scenario, we recommend the following hardware configured for roles and hardware as described.  
 
 Service Manager roles:  
 
@@ -65,8 +65,8 @@ Service Manager roles:
 Hardware configuration:  
 
 -   8\-core 2.66 GHz CPU  
--   16 GB RAM \(5 GB for each virtual computer and 1 GB for the host computer\)  
--   100 GB of available disk space, which does not include the .vhd file disk space requirements on the host computer  
+-   16-GB RAM \(5 GB for each virtual computer and 1 GB for the host computer\)  
+-   100 GB of available disk space, which doesn't include the .vhd file disk space requirements on the host computer  
 
 This configuration was tested with the following load.  
 
@@ -91,13 +91,13 @@ We recommend the following hardware, configured for roles and hardware as descri
 Hardware configuration for the Service Manager management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 disk RAID 1  
 
 Hardware configuration for the Service Manager data warehouse management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 disk RAID 1  
 
 Hardware configuration for the Self-Service Portal with web content server with SharePoint Web Parts:  
@@ -136,7 +136,7 @@ Hardware configuration for the Service Manager management server:
 Hardware configuration for the Service Manager data warehouse management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 disk RAID 1  
 -   10 GB of available hard disk space  
 
@@ -150,7 +150,7 @@ Hardware configuration for the Service Manager database server:
 Hardware configuration for the Service Manager data warehouse database server:  
 
 -   8\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   4 RAID 1\+0 disk drives for data  
 -   2 RAID 1 disk drives for logs  
 -   80 GB of available hard disk space  
@@ -164,7 +164,7 @@ Hardware configuration for the Self-Service Portal with web content server:
 Hardware configuration for the Self-Service Portal with SharePoint web parts:  
 
 -   4\-Core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   80 GB of available hard disk space  
 
 This configuration was tested with the following load.  
@@ -190,27 +190,27 @@ In this scenario, we recommend the following hardware, configured for roles and 
 Hardware configuration for the Service Manager management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 disk RAID 1  
 -   10 GB of available hard disk space  
 
 Hardware configuration for each additional Service Manager management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 RAID 1 disk drives  
 
 Hardware configuration for the Service Manager data warehouse management server:  
 
 -   4\-core 2.66 GHz CPU  
--   8 GB RAM  
+-   8-GB RAM  
 -   2 RAID 1 disk drives  
 -   10 GB of available hard disk space  
 
 Hardware configuration for the Service Manager database server:  
 
 -   8\-core 2.66 GHz CPU  
--   8 GB RAM to 32 GB RAM, depending on the expected size of the database  
+-   8-GB RAM to 32-GB RAM, depending on the expected size of the database  
 -   4 RAID 1\+0 disk drives for data  
 -   2 RAID 1 disk drives for logs  
 
@@ -230,13 +230,13 @@ Hardware configuration for the Self-Service Portal with web content server:
 Hardware configuration for the Self-Service Portal with SharePoint web parts:  
 
 -   4\-core 2.66 GHz CPU
--   8 GB RAM  
+-   8-GB RAM  
 -   80 GB of available hard disk space  
 
 Hardware configuration for each Service Manager console:  
 
 -   2\-core 2.0 GHz CPU  
--   4 GB RAM  
+-   4-GB RAM  
 -   10 GB of available hard disk space  
 
 This configuration was tested with the following load.  
@@ -256,4 +256,4 @@ This configuration was tested with the following load.
 
 ## Next steps
 
-- Review [Deploy System Center - Service Manager](deploy-sm.md) to learn about deploying Service Manager in one of several different scenarios.
+- To learn about deploying Service Manager in one of several different scenarios, review [Deploy System Center - Service Manager](deploy-sm.md).
