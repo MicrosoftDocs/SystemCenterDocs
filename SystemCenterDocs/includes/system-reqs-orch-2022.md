@@ -4,7 +4,7 @@ title: include file
 description: include file to provide system requirements for Orchestrator 2022, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/22/2022
+ms.date: 01/12/2023
 ms.custom: na
 author: jyothisuri
 ms.prod: system center
@@ -14,7 +14,7 @@ ms.topic: include
 
 ## System requirements for System Center 2022 - Orchestrator
 
-The following sections provide general performance and scalability guidance for System Center 2022- Orchestrator and state the recommended hardware configurations for various workloads. As System Center 2022 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections provide general performance and scalability guidance for System Center 2022 - Orchestrator and state the recommended hardware configurations for various workloads. As System Center 2022 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 
@@ -64,7 +64,7 @@ The following software is required for a full installation of Orchestrator on a 
 
 > [!NOTE]
 > - For the supported versions of SQL, use the service packs/cumulative updates that are currently in support by Microsoft.
-> -	SQL *Always ON*  is supported, except in the cases where configuration is done on multi subnets.
+> -	SQL *Always ON*  is supported, except in cases where configuration is done on multi subnets.
 
 **SQL version** | **Supported**
 --- | ---
@@ -89,5 +89,4 @@ Orchestrator Web API requires the following versions of .NET Core and Hosting Bu
 ## Virtualization
 
 Deploying and running Orchestrator on a virtualized operating system is fully supported. The software requirements are the same as those listed above. Any of the Orchestrator roles can also be run on a virtualized server running in Microsoft Azure.
-
 

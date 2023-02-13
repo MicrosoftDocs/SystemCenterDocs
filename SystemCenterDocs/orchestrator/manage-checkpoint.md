@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: ab911e0f-d549-4e63-ba67-fe2641ca5136
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Manage Checkpoint
@@ -25,7 +25,7 @@ robots: noindex
 
 The Manage Checkpoint activity is used to restore a virtual machine to the state when the checkpoint was created or to remove a checkpoint that is no longer needed.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Manage Checkpoint required properties
 
@@ -45,7 +45,7 @@ The activity publishes all of the data from the required and optional properties
 | Checkpoint Name   | The name of the checkpoint   |   |
 | ID   | The unique identifier (GUID) of the checkpoint inside the platform; for example, Hyper-V, VMWare, or Virtual Server |   |
 | Description   | An alphanumeric description of the checkpoint   |   |
-| Enabled   | True or False. If False, the virtual machine cannot be started.   |   |
+| Enabled   | True or False. If False, the virtual machine can't be started.   |   |
 | Modified Time   | The modification date and time for the checkpoint, in the format yyyy-mm-dd hh:mm:ss AM or PM   |   |
 | Most Recent Task   | The last recorded task for the checkpoint, for example, Start virtual machine   |   |
 | Parent Checkpoint ID | The unique identifier (GUID) of the parent of the checkpoint   |   |

@@ -5,7 +5,7 @@ description: This article describes how to create a SCOM managed instance to mon
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 01/27/2023
+ms.date: 02/13/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -54,6 +54,14 @@ If your domain controller and all other components are in Azure (a conventional 
 Allow communication on ports 5723, 5724, and 443 between Azure Monitor SCOM Managed Instance and the virtual machine being monitored, and vice versa.
 
 The Active Directory web service must run on domain controllers. The firewall rule and network security group (NSG) must allow communication on port 9389 between the Azure Monitor SCOM Managed Instance virtual network and the domain controller.
+
+To ensure the functioning of Active Directory commands on a SCOM managed instance, verify that the following ports are accessible from the virtual network or subnet:
+
+- TCP port 389 for LDAP
+- TCP port 636 for LDAP over SSL
+- TCP port 3269 for global catalog over SSL
+- TCP and UDP port 88 for Kerberos
+- TCP and UDP port 53 for DNS
 
 We recommend a NAT gateway for outbound internet access from subnets. Edit the subnet to add a NAT gateway. In Azure, add a NAT gateway to the virtual network or subnet where the SCOM managed instance will be created. A NAT gateway is needed for outbound internet access from subnets. For more information, see [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview).
 
@@ -104,7 +112,7 @@ Ensure that the static IP is in the subnet that you created during virtual netwo
 Create a gMSA to run and authenticate the services for the management server. Use the following command to create a gMSA:
 
 ```powershell
-New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType RC4, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
+New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
 ```
 
 In that command:
@@ -118,6 +126,8 @@ Use the following command if the root key isn't effective:
 ```powershell
 Add-KdsRootKey -EffectiveTime ((get-date).addhours(-10)) 
 ```
+
+Ensure that the created gMSA account is a local admin account. If there are any GPO policies on the local admins at the Active Directory level, ensure that they have the gMSA account as the local admin.
 
 # [In the Azure portal](#tab/prereqs-portal)
 
@@ -391,4 +401,4 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
 - [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md)
 - [Scale Azure Monitor SCOM Managed Instance](scale-scom-managed-instance.md)
 
-To provide feedback on Azure Monitor SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
+To provide feedback on Azure Monitor SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
