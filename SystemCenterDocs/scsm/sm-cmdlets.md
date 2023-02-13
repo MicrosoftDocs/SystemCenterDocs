@@ -1,7 +1,7 @@
 ---
 title: Configure and use Service Manager cmdlets
 description: This article provides an introduction to the Service Manager cmdlets for the Windows PowerShell command-line interface and describes how to get started using them.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -42,23 +42,23 @@ The Service Manager cmdlets are delivered in two modules that are listed below. 
 
 The data warehouse cmdlets operate on the data warehouse database, and you can run them on both the  Service Manager management server or the data warehouse management server.
 
-Data returned from Windows PowerShell command might contain more information than can be displayed in a default Windows PowerShell command window. We recommend increasing the width of the command window: Right-click the title bar, click **Properties**, and in the **Layout** tab, set the **Screen Buffer Size** width to 120.
+Data returned from Windows PowerShell command might contain more information than can be displayed in a default Windows PowerShell command window. We recommend increasing the width of the command window: Right-click the title bar, select **Properties**, and in the **Layout** tab, set the **Screen Buffer Size** width to 120.
 
 The following procedures help you to get started with Service Manager cmdlets.
 
 ### To open a Service Manager Windows PowerShell session from the Service Manager console
 
-1.  In the Service Manager console, click **Administration**.
+1.  In the Service Manager console, select **Administration**.
 
-2.  On the **Tasks** pane, click **Start PowerShell Session**.
+2.  On the **Tasks** pane, select **Start PowerShell Session**.
 
 The administrator cmdlet module is automatically pre-imported in this session.
 
 ### To open a Service Manager Windows PowerShell session from Windows
 
-1. On the computer that hosts the Service Manager management server, on the taskbar, click **Start**, point to **All Programs**, and then click **Microsoft System Center**.
+1. On the computer that hosts the Service Manager management server, on the taskbar, select **Start**, point to **All Programs**, and select **Microsoft System Center**.
 
-2. Click **Service Manager \<version\>**, and then click **Service Manager Shell**.
+2. Select **Service Manager \<version\>**, and select **Service Manager Shell**.
 
 The administrator cmdlet module is automatically pre-imported in this session.
 
@@ -66,13 +66,13 @@ The administrator cmdlet module is automatically pre-imported in this session.
 
 1.  Open a Service Manager Windows PowerShell session.
 
-2.  To list the cmdlets that are included in the administrator module, in the Service Manager Windows PowerShell session, type the following, and then press ENTER:
+2.  To list the cmdlets that are included in the administrator module, in the Service Manager Windows PowerShell session, enter the following, and then press ENTER:
 
     ```
     Get-Command -module System.Center.Service.Manager
     ```
 
-3.  To list the cmdlets that are included in the data warehouse module, in the Service Manager Windows PowerShell session, type the following, and then press ENTER:
+3.  To list the cmdlets that are included in the data warehouse module, in the Service Manager Windows PowerShell session, enter the following, and then press ENTER:
 
     ```
     Get-Command -module Microsoft.EnterpriseManagement.Warehouse.Cmdlets
@@ -218,4 +218,4 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 
 ## Next steps
 
-- [Manage the data warehouse](manage-dw.md) to perform maintenance tasks on data warehouse jobs.
+- To perform maintenance tasks on data warehouse jobs, see [Manage the data warehouse](manage-dw.md).
