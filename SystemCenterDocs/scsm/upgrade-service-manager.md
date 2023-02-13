@@ -4,7 +4,7 @@ title: Upgrade information for System Center Service Manager
 description: This article details the upgrade information and procedures for Service Manager
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 05/25/2022
 ms.topic: article
 ms.prod: system-center
