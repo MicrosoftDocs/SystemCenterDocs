@@ -24,7 +24,7 @@ Runbooks in Service Manger are used to automate procedures. The following sectio
 
 ## Runbooks in Service Manager
 
-To automate processes in System Center, Orchestrator uses runbooks to automate procedures. Runbooks are visual representations of the procedures. The value that runbooks have is that they help ensure that Orchestrator automation is driven and tracked from Service Manager and that Service Manager interactions with other System Center products and non-Microsoft systems are much easier to implement.
+To automate processes in System Center, Orchestrator uses runbooks to automate procedures. Runbooks are visual representations of the procedures. The value that runbooks have is that they help ensure that Orchestrator automation is driven and tracked from Service Manager and that Service Manager interactions with other System Center products and non-Microsoft systems are easier to implement.
 
 Additionally, the Orchestrator workflow authoring interface is available for your custom Service Manager scenarios. Runbooks are imported into Service Manager using the Orchestrator connector. After the connector is synchronized, imported runbooks appear in the **Library** workspace under the **Runbooks** node in the Service Manager console, where you can view them and also create runbook automation activity templates.
 
@@ -46,7 +46,7 @@ Through its workflow designer, Orchestrator automatically shares data and initia
 
 After you import runbooks into Service Manager using the Orchestrator connector from Orchestrator, you can create a runbook automation activity template to map parameters in Orchestrator to corresponding parameters in Service Manager.
 
-As an example, you can implement a new request offering using an Orchestrator runbook to automate it. Then, you can go to the Runbooks view in the Library workspace, select a runbook, and create a runbook automation activity template. You can go to the templates view and verify that the template is created. You can then add the Orchestrator activity template to a service request template and create the request offering. You then can then map the runbook template to a different runbook with the same inputs and outputs if you find that you need to fix a problem or improve the process.
+As an example, you can implement a new request offering using an Orchestrator runbook to automate it. Then, you can go to the Runbooks view in the Library workspace, select a runbook, and create a runbook automation activity template. You can go to the templates view and verify that the template is created. You can then add the Orchestrator activity template to a service request template and create the request offering. You can then map the runbook template to a different runbook with the same inputs and outputs if you find that you need to fix a problem or improve the process.
 
 > [!IMPORTANT]
 > If you have extended root classes such as service request or release record, then you can map runbook activity parameter to extended properties only if the runbook activity template and service request templates are saved in same management pack where the definition extension is located.
@@ -71,7 +71,7 @@ As an example, you can implement a new request offering using an Orchestrator ru
 
 9. Ensure that **Is Ready for Automation** is selected.
 
-10. Select the **Runbook** tab, and then under **Parameter Mapping**, note that the parameters from the runbook are mapped to generic properties. For example, Parameter1, Parameter2, and so on of the runbook activity class. The **Type** column specifies whether the parameters are inputs or outputs. You can also enter default values for each parameter using **Edit Mapping**.
+10. Select the **Runbook** tab, and then under **Parameter Mapping**, note that the parameters from the runbook are mapped to generic properties. For example, Parameter1, Parameter2, and so on, of the runbook activity class. The **Type** column specifies whether the parameters are inputs or outputs. You can also enter default values for each parameter using **Edit Mapping**.
 
 11. For any parameter, select **Edit Mapping**.
 

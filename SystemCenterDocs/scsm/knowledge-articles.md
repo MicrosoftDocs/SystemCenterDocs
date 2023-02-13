@@ -26,7 +26,7 @@ Use the procedures in this article to create and search for knowledge articles.
 
 ## Create a knowledge article
 
-You can use the following procedure to create a knowledge article in Service Manger. This procedure describes how to create a new example knowledge article to help users obtain the latest service pack for Windows 10. However, you can complete these steps to create any type of knowledge article.
+You can use the following procedure to create a knowledge article in Service Manager. This procedure describes how to create a new example knowledge article to help users obtain the latest service pack for Windows 10. However, you can complete these steps to create any type of knowledge article.
 
 > [!NOTE]
 > To view external content in knowledge articles, the computer on which the Service Manager console is installed must be connected to the Internet, either directly or through a proxy server.

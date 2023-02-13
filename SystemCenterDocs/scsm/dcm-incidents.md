@@ -53,7 +53,7 @@ You can use the following procedures to configure incident management to automat
 
     3.  On the **Select System Center Configuration Manager Configuration Items** page, expand all the configuration baselines that are listed, select the Configuration Manager configuration items that you want to include in the rule, and select **Next**.
 
-    4.  On the **Select Incident Template** page, select **Apply the following template**, select a template for the new incidents that'll be created by this rule, and select **Next**.
+    4.  On the **Select Incident Template** page, select **Apply the following template**, select a template for the new incidents that will be created by this rule, and select **Next**.
 
     5.  On the **Select People to Notify** page, select the **Enable notification** checkbox. Select the users who should be notified when an incident is created by this rule. For each user, specify the notification method and a template, and select **Add**. Select **Next**.
 

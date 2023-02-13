@@ -22,7 +22,7 @@ ms.assetid: 556f240e-d032-406a-ba10-2404fb591d04
 
 During the setup of Service Manager, you specified credentials for the workflow and service accounts, for Microsoft SQL Server Analysis Services, and for SQL Server Reporting Services (SSRS). If, because of the configurations of password security requirements used in your organization, these passwords expire, you must update the new passwords in Service Manager. In addition, if you decide that the user names must change, you also must change them in Service Manager. This section describes how to make those changes.
 
-It is a best practice never to delete Run As accounts from the Service Manager console. The Service Manager management pack monitors Run As accounts. At regular intervals, the Health service attempts to log on as the Run As accounts. If this fails, Event ID 7000 is invoked that causes an alert. The best way to avoid this issue is never to delete Run As accounts from the Service Manager console. You can reuse existing Run As accounts by changing their name or credentials. If you want to stop using a Run As account, you can change its credentials to Local System and change the name to something easy to remember, such as *Inactive*.
+It's a best practice never to delete Run As accounts from the Service Manager console. The Service Manager management pack monitors Run As accounts. At regular intervals, the Health service attempts to log on as the Run As accounts. If this fails, Event ID 7000 is invoked that causes an alert. The best way to avoid this issue is never to delete Run As accounts from the Service Manager console. You can reuse existing Run As accounts by changing their name or credentials. If you want to stop using a Run As account, you can change its credentials to Local System and change the name to something easy to remember, such as *Inactive*.
 
 ## Change the user credentials for the Operational Database account used by Service Manager
 
@@ -121,7 +121,7 @@ Use the following procedures to make these changes in Service Manager.
 
 ## Change the password for the Operational Database account used by Service Manager
 
-To change the sign-in password for the Service Manager Data Access and Service Manager Management Configuration services, perform the following procedure.
+To change the login password for the Service Manager Data Access and Service Manager Management Configuration services, perform the following procedure.
 
 1.  On the Windows desktop, select **Start**, and select **Run**.
 2.  In the **Run** dialog, in the **Open** box, enter **services.msc**, and select **OK**.
@@ -196,7 +196,7 @@ If the account that is used for the SQL Server Reporting Services account change
 
 We recommend English as the default language for the SQL users' login accounts.
 
-As date format is based on the language, if the language of SQL user sign in accounts is not English, then, a few data warehouse jobs, especially the jobs that use SQL *SET_DateFormat* function, fail. These jobs don't push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse.
+As date format is based on the language, if the language of SQL user login accounts isn't English, then, a few data warehouse jobs, especially the jobs that use SQL *SET_DateFormat* function, fail. These jobs don't push the data into the data warehouse from Service Manager or might send incorrect data into the data warehouse, leading to data corruption in the data warehouse.
 
 You can set the default language as English for a new SQL login account or change the default language for an existing account. [Learn more](deploy-sm.md#manage-default-language-for-sql-login-accounts).
 

@@ -20,7 +20,7 @@ ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
 
 ::: moniker-end
 
-In Service Manager, you can use groups to manage configuration items, queues to manage work items, and lists to customize forms to classify different objects, such as incidents, change requests, activities, or configuration items. Use the overview and the procedures in the following topics to help manage these items.
+In Service Manager, you can use groups to manage configuration items, queues to manage work items, and lists to customize forms to classify different objects, such as incidents, change requests, activities, or configuration items. Use the overview and the procedures in the following article to help manage these items.
 
 The **Library** pane in Service Manager contains items, such as groups, queues, and lists. You can use groups to manage configuration items, and you can use queues to manage work items. You can use lists to customize forms.
 
@@ -36,7 +36,7 @@ In Service Manager, groups contain objects. Typically, these objects are configu
 For example, say that you want to restrict access to Exchange servers to only specific users. To do this, you create a new group that is named **Exchange Servers** and add all Exchange servers in this environment to the group. Later, you can configure user roles to limit access to the **Exchange Servers** group to only the specific users to whom you want to grant access. You can use the **Exchange Servers** group as criteria when you configure notification subscriptions. You can also use the **Exchange Servers** group as criteria for a report parameter.
 
 ## Use queues to manage work items
-In Service Manager, queues are used to group similar work items that meet specified criteria, for example, all incidents that are classified by analysts as E-mail incidents. All work items in a queue must be of the same type, such as incidents, change requests, activities, or trouble tickets. Queues use membership rules to determine which work items should be included in each queue. Queue membership rules are dynamic, and they are periodically recalculated to ensure that the queue membership list is current.
+In Service Manager, queues are used to group similar work items that meet specified criteria, for example, all incidents that are classified by analysts as E-mail incidents. All work items in a queue must be of the same type, such as incidents, change requests, activities, or trouble tickets. Queues use membership rules to determine which work items should be included in each queue. Queue membership rules are dynamic, and they're periodically recalculated to ensure that the queue membership list is current.
 
 You can create a queue to group work items with a specific type or with a specific priority. You can then configure user roles to limit access to that queue to only specific users.
 

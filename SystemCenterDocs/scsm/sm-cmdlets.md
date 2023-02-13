@@ -34,11 +34,11 @@ The Service Manager cmdlets are implemented in the following two modules:
 
 Windows PowerShell is a Windows command-line shell that includes an interactive prompt and a scripting environment. Windows PowerShell uses cmdlets to manipulate the Windows PowerShell objects. Service Manager includes many cmdlets that you can use to perform various Service Manager-related tasks without using the Service Manager console. For example, you can use the **Import-SCSMManagementPack** cmdlet to import a management pack.
 
-The Service Manager cmdlets are delivered in two modules that are listed below. In Service Manager, these cmdlet modules are not installed in the typical path that is listed in the $env:PSModulePath variable. Therefore, if you run the `Get-Module -List` cmdlet, the Service Manager modules are not listed.
+The Service Manager cmdlets are delivered in two modules that are listed below. In Service Manager, these cmdlet modules aren't installed in the typical path that is listed in the $env:PSModulePath variable. Therefore, if you run the `Get-Module -List` cmdlet, the Service Manager modules aren't listed.
 
--   Administrator cmdlets: The System.Center.Service.Manager module which contains the cmdlets that are needed for common administrative tasks.
+-   Administrator cmdlets: The System.Center.Service.Manager module that contains the cmdlets that are needed for common administrative tasks.
 
--   Data warehouse cmdlets: The Microsoft.EnterpriseManagement.Warehouse.Cmdlets module which contains the cmdlets that are needed for operating on the Service Manager data warehouse.
+-   Data warehouse cmdlets: The Microsoft.EnterpriseManagement.Warehouse.Cmdlets module that contains the cmdlets that are needed for operating on the Service Manager data warehouse.
 
 The data warehouse cmdlets operate on the data warehouse database, and you can run them on both the  Service Manager management server or the data warehouse management server.
 
@@ -146,7 +146,7 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |New-SCSMCMConnector|Creates a new Configuration Manager connector in Service Manager.|
 |New-SCSMDCMWorkflow|Creates a new desired configuration management workflow in Service Manager.|
 |New-SCSMEmailTemplate|Creates a new Email template for Service Manager.|
-|New-SCSMManagementGroupConnection|Creates a new connection for the specified management group. The most recent management group connection that was created is the active connection that  **Get-** cmdlets use by default, in which you did not specify the **ComputerName** and **Credential**, or the **SCSession** parameters.|
+|New-SCSMManagementGroupConnection|Creates a new connection for the specified management group. The most recent management group connection that was created is the active connection that  **Get-** cmdlets use by default, in which you didn't specify the **ComputerName** and **Credential**, or the **SCSession** parameters.|
 |New-SCSMManagementPack|Creates a new management pack.|
 |New-SCSMManagementPackBundle|Bundles individual management packs and their resources, creating a new management pack bundle.|
 |New-SCSMOMAlertConnector|Creates a new Operations Manager alert connector in Service Manager.|

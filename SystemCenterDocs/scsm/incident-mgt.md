@@ -48,7 +48,7 @@ The policy at your organization might limit the number of files that can be atta
 > [!NOTE]
 > The maximum number of attached files and maximum file size settings that you configure also apply to the attached files in the **Related Items** tab for configuration items.
 
-Incident priority calculation is rated on a scale from 1 to 9. A priority of 1 is the highest priority. It's based on a combination of impact and urgency. Impact and urgency settings are defined as High, Medium, or Low, and they are configured when the incident is created. The following table shows how to define the incident priority for each possible combination of impact and urgency.
+Incident priority calculation is rated on a scale from 1 to 9. A priority of 1 is the highest priority. It's based on a combination of impact and urgency. Impact and urgency settings are defined as High, Medium, or Low, and they're configured when the incident is created. The following table shows how to define the incident priority for each possible combination of impact and urgency.
 
 ![Illustration showing the calculation table.](./media/incident-mgt/prioritycalculationtable.png)
 
@@ -166,7 +166,7 @@ Use the following procedure to set a resolution time based on incident priority 
 
 ### To validate resolution time
 
--   When you create a new incident or edit an existing one, the resulting resolution times for an incident matches the values that are defined in the preceding procedures.
+-   When you create a new incident or edit an existing one, the resulting resolution times for an incident match the values that are defined in the preceding procedures.
 
 ## Set Operations Manager web settings in Service Manager
 

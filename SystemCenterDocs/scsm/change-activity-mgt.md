@@ -30,7 +30,7 @@ A change request template is useful when you create a change request for a recur
 
 Use the following procedures to create two change request templates and then validate them. The first template is used to create change requests to modify Microsoft Exchange Server infrastructure. The second template is used to automatically change the priority of a standard change request to **Low**.
 
-Change request templates store commonly used settings and apply the information to new change requests. For example, you can create a change request template that includes a number of activities. However, activities that you want to include in a change request template must have been previously created as activity templates.
+Change request templates store commonly used settings and apply the information to new change requests. For example, you can create a change request template that includes many activities. However, activities that you want to include in a change request template must have been previously created as activity templates.
 
 > [!NOTE]
 > When you create a change request template, don't create links to configuration items or work items, and don't enter any user information. If you create a template with these objects, you can't remove them, and you'll have to recreate the template.
@@ -54,7 +54,7 @@ Change request templates store commonly used settings and apply the information 
 13. In the **Risk** box, select a value. For example, select **Medium**.
 14. Select the **Activities** tab, and select **Add**.
 15. In the **Templates** list, select **Default Review Activity**, and select **OK** to open the review activity form.
-16. In the **Title** box, enter a name for the review activity. For example, enter **Messaging Infrastructure Request Approval**. Select **Add** to add the user or group that'll normally approve the change request.
+16. In the **Title** box, enter a name for the review activity. For example, enter **Messaging Infrastructure Request Approval**. Select **Add** to add the user or group that will normally approve the change request.
 17. In each open form or dialog, select **OK**.
 
 ### To create a priority-modifying template
@@ -118,7 +118,7 @@ Use the following procedures to configure settings to specify change request pre
 
 ### To validate change settings
 
-1.  To validate changes to the prefix code, create a new a change request, and verify that the change request IDs have the prefix that you specified.
+1.  To validate changes to the prefix code, create a new change request, and verify that the change request IDs have the prefix that you specified.
 2.  To validate changes to the attachment settings, open a change request, and attempt to add a file attachment that violates the settings that you specified.
 
 ## Configure general activity settings

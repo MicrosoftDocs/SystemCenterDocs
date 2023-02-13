@@ -20,7 +20,7 @@ ms.assetid: b204c2fc-c65e-41f3-a650-e425060f61b3
 
 ::: moniker-end
 
-In Service Manager, a workflow is a sequence of activities that automate a business process. Workflows can, for example, update incidents when various changes occur. A workflow can automatically generate incidents when computers fall out of compliance from desired configuration management. You create a workflow that defines when and under what circumstances it'll run. For example, a workflow can automatically change the support tier from a setting of 1 to 2 whenever a low-priority incident pertaining to printing problems is changed to a higher priority. Workflow activities function by the application of templates. For this example, an incident template to change the support tier to a setting of 2 must have been created previously.
+In Service Manager, a workflow is a sequence of activities that automate a business process. Workflows can, for example, update incidents when various changes occur. A workflow can automatically generate incidents when computers fall out of compliance from desired configuration management. You create a workflow that defines when and under what circumstances it will run. For example, a workflow can automatically change the support tier from a setting of 1 to 2 whenever a low-priority incident pertaining to printing problems is changed to a higher priority. Workflow activities function by the application of templates. For this example, an incident template to change the support tier to a setting of 2 must have been created previously.
 
 You can create multiple workflows for each workflow configuration. You can enable or disable the workflow conditions. If a particular rule is disabled, the remaining rules still cause the workflow to run. If you want to completely disable a workflow, you must disable all of the rules that call the workflow.
 
@@ -41,7 +41,7 @@ You can use the following procedure to create and configure a workflow rule that
     2.  On the **Workflow Information** page, in the **Name** box, enter a name for the workflow. For example, enter **Escalates Printer Problems to Support Tier 2 when the Urgency property is changed to High**.
     3.  In the **Check for events** list, select **when an object is created or when an object is updated**, ensure that the **Enabled** checkbox is selected, and select **Next**.
     4.  On the **Specify Event Criteria** page, select the **Changed to** tab. In the **Available Properties** list, select **Urgency**, and select **Add**. In the **Criteria** box, select **equals**. In the list, select **High**. Then, select **Next**.
-    5.  On the **Select Incident Template** page, select **Apply the following template**, and then select the template you created earlier that'll set the support group to **Tier 2**. For example, select **Escalate Printer Problems to Tier 2**, and select **Next**.
+    5.  On the **Select Incident Template** page, select **Apply the following template**, and then select the template you created earlier that will set the support group to **Tier 2**. For example, select **Escalate Printer Problems to Tier 2**, and select **Next**.
     6.  Optionally, in the **Select People to Notify** page, select the **Enable notification** checkbox, select the user to notify, and select **Next**.
     7.  On the **Summary** page, review your settings, and select **Create**.
     8.  On the **Completion** page, select **Close**.

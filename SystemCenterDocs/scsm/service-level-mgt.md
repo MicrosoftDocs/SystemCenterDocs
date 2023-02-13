@@ -40,9 +40,9 @@ The Metric node is used to define time metrics against a calendar item, correspo
 
 -   Completion Time
 
-The Resolution Time metric is used to measure the maximum length of time that incidents should take before they are resolved. By default, the two points in time that define Resolution Time are the start date as the date and time that each incident is created and the end date as the date and time that each incident is resolved.
+The Resolution Time metric is used to measure the maximum length of time that incidents should take before they're resolved. By default, the two points in time that define Resolution Time are the start date as the date and time that each incident is created and the end date as the date and time that each incident is resolved.
 
-The Completion Time metric is used to measure the maximum length of time that service requests should take before they are completed. By default, the two points in time that define Completion Time are the start date as the date and time that each service request is created and the end date as the date and time that each service request is completed.
+The Completion Time metric is used to measure the maximum length of time that service requests should take before they're completed. By default, the two points in time that define Completion Time are the start date as the date and time that each service request is created and the end date as the date and time that each service request is completed.
 
 ## Service level objectives
 
@@ -173,7 +173,7 @@ The service level objective that you edit is linked to a queue. If you want to m
 
 1.  In the Service Manager console, select **Administration**.
 2.  In the **Administration** pane, expand **Service Level Management**, and select **Service Level Objective**.
-3.  In the **Service Level Objectives** list, select an existing service level objective, and then in the **Tasks** pane, under *ServiceLevelObjectiveName*, click **Properties**.
+3.  In the **Service Level Objectives** list, select an existing service level objective, and then in the **Tasks** pane, under *ServiceLevelObjectiveName*, select **Properties**.
 4.  In the **Edit SLO** dialog, modify any of the following items, as needed.
     -   **Title**
     -   **Queues**
@@ -243,7 +243,7 @@ You can send notifications to analysts who are responsible for incidents when ea
 
 ## Reactivate incidents with SLA information
 
-You can reactivate resolved incidents that have an associated service level objective. However, keep in mind that the original date and time that the incident was opened is preserved. Consequently, the time that elapsed while the incident was resolved continues to apply against the service level objective—possibly resulting in the service level objective being breached.
+You can reactivate resolved incidents that have an associated service level objective. However, keep in mind that the original date and time that the incident was opened is preserved. So, the time that elapsed while the incident was resolved continues to apply against the service level objective—possibly resulting in the service level objective being breached.
 
 ### To reactivate an incident with SLA information
 

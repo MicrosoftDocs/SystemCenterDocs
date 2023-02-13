@@ -31,7 +31,7 @@ Before notifications are sent, first configure each notification channel, such a
 
 Substitution strings are special tokens or system variables that are used in notification templates in Service Manager. These strings retrieve properties from an instance that is related to the instance for which the template was created. The strings then display the value in the notification email. Notification templates in Service Manager include substitution strings. Although you should avoid modifying the predefined templates, you can duplicate them and then modify the duplicates.
 
-For example, the end-user notification template includes a substitution string in the message body that represents the user's first name. If you want to add the user's last name, you can easily do so by using the **Insert** button, which is available when you edit a notification template, and then browsing the available strings that are available for the class of template that you are modifying. In this example, you would browse and then select **Affected User** and then select **Last Name** to insert the string into the template. Later, when the notification is sent to the user, his or her first and last name is included in the message as a salutation.
+For example, the end-user notification template includes a substitution string in the message body that represents the user's first name. If you want to add the user's last name, you can easily do so by using the **Insert** button, which is available when you edit a notification template, and then browsing the available strings that are available for the class of template that you're modifying. In this example, you would browse and then select **Affected User** and then select **Last Name** to insert the string into the template. Later, when the notification is sent to the user, their first and last name is included in the message as a salutation.
 
 While this example is simple, Service Manager includes substitution strings for almost every property that you might need to create notifications that can inform end-users and other Service Manager users with very timely and relevant information. You can easily view the substitution strings that are available in Service Manager by opening an existing notification template and then, in the template design area, selecting the **Insert** button to view the classes and properties.
 
@@ -50,7 +50,7 @@ You can use the following procedures to configure notification channels and vali
 3.  In the **Channels** pane, select **E-Mail Notification Channel**.
 4.  In the **Tasks** pane, under **E-Mail Notification Channel**, select **Properties** to open the **Configure E-Mail Notification Channel** dialog.
 5.  Select the **Enable e-mail notifications** checkbox.
-6.  Click **Add**. In the **Add SMTP Server** dialog, enter the fully qualified domain name (FQDN) of the SMTP server that you want to use. For example, enter **Exchange01.Woodgrove.Com**.
+6.  Select **Add**. In the **Add SMTP Server** dialog, enter the fully qualified domain name (FQDN) of the SMTP server that you want to use. For example, enter **Exchange01.Woodgrove.Com**.
 7.  In the **Port number** box, enter or select the SMTP port number that you want to use. For example, select **25**.
 8.  In the **Authentication method** box, select either **Anonymous** or **Windows Integrated**. For example, select **Anonymous**. Then, select **OK**.
 9. In the **Return e-mail address** box, enter the email address of the service account that is used during setup. For example, enter **smadmin\@woodgrove.com**.
@@ -97,7 +97,7 @@ The following two templates are prerequisites for other procedures:
 9. In the **Select Property** dialog, select **ID**, and select **Add**.
 10. In the **Message body** box, enter a description to indicate that a new incident was opened for an email problem.
 11. Use the other default values on this page, and select **Next**.
-12. On the **Summary** page, review the settings that you have selected for the template. Then, select **Create**.
+12. On the **Summary** page, review the settings that you've selected for the template. Then, select **Create**.
 13. On the **Completion** page, select **Close**.
 
 ### To create a notification template for change requests
@@ -148,7 +148,7 @@ The following two templates are prerequisites for other procedures:
 
 After you create a notification template, and after you've enabled at least one notification channel, you can use the following procedure to subscribe to notifications by using the Notification Subscription Wizard. Then, notifications will be sent when an object is created or updated or periodically when other criteria that you specify are met.
 
-The scenarios in this topic center on the Create E-Mail Notification Subscription Wizard. The condition that you choose to notify will dynamically change the wizard pages that are available.
+The scenarios in this article center on the Create E-Mail Notification Subscription Wizard. The condition that you choose to notify will dynamically change the wizard pages that are available.
 
 In the first procedure, you set up a subscription so that a messaging analyst is notified when a new incident that pertains to an email problem is opened. In the second procedure, you set up a subscription so that daily status updates are sent to the release manager while the HR web application is in development, testing, and deployment.
 
@@ -194,10 +194,10 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 9. Ensure that an unsealed management pack of your choice is selected, and select **Next**. For example, select the **Sample Management Pack**.
 10. On the **Additional Criteria** page, select **Release Record**. In the **Available Properties** list, select **Status**, and select **Add**.
 11. In the **Criteria** area, next to **[Release Record] Status**, select **does not equal**. In the list, select **Closed**, and select **Next**.
-12. On the **Recurring Notification** page under **Recurrence pattern**, select **Notify every *TimeInterval*** and then choose an interval. For example, set the recurrence pattern to every 1 day.
+12. On the **Recurring Notification** page under **Recurrence pattern**, select **Notify every *TimeInterval*** and then choose an interval. For example, set the recurrence pattern to every one day.
 13. On the **Recurring Notification** page under **Range of recurrence**, select a range of recurrence or choose no end date. For example, select **No end date**.
 14. On the **Template** page, next to the **E-mail template** box, select **Select**.
-15. In the **Select Template** dialog, in the **Templates** list, select a notification template that you have created for release record notifications.
+15. In the **Select Template** dialog, in the **Templates** list, select a notification template that you've created for release record notifications.
 16. On the **Recipient** page, select **Add**.
 17. In the **Select Objects** dialog, search for the appropriate user, and then select the user. Select **Add**, select **OK**, and select **Next**. For example, select the user account for the release manager.
 
@@ -239,9 +239,9 @@ If you're verifying a recurring notification subscription, you must wait for the
 
 In some situations, you may want to use a group rather than an individual user in Service Manager as a work item stakeholder. For example, you might want to assign an incident to a team of people, such as an initial response team that routes incidents, and then notify everyone in the initial response team that an incident has been assigned to their team.
 
-Messaging-enabled universal security groups in Microsoft Exchange Server are the key to this task. This topic describes how to accomplish this using the Exchange Server Exchange Management console for incidents. You can use the following procedures to create a messaging-enabled universal security group, create a workflow to notify stakeholders when an incident is created, and then test for success.
+Messaging-enabled universal security groups in Microsoft Exchange Server are the key to this task. This article describes how to accomplish this using the Exchange Server Exchange Management console for incidents. You can use the following procedures to create a messaging-enabled universal security group, create a workflow to notify stakeholders when an incident is created, and then test for success.
 
-In Exchange Server, the **Require that all senders are authenticated** setting is enabled by default for mail-enabled universal security groups. You can modify the setting in the distribution group properties, in Mail-Flow settings, in the **Message Delivery Restrictions** dialog. If your outgoing Simple Mail Transfer Protocol (SMTP) server specified in the Service Manager settings (Under **Administration** > **Notifications Channels** > **Edit**) is using Anonymous as the Authentication Method (either in  Service Manager or the SMTP settings), then given the above default setting in exchange, the email wouldn't be sent out. If you have Anonymous Access configured on the SMTP side, it's necessary either to clear the **Require that all senders are authenticated** setting in exchange for the Mail Enabled Universal Security Group, or change the SMTP authentication settings (in Service Manager or the outgoing SMTP Server settings) from anonymous to Windows Integrated, so that the user is authenticated, allowing the email to be sent.
+In Exchange Server, the **Require that all senders are authenticated** setting is enabled by default for mail-enabled universal security groups. You can modify the setting in the distribution group properties, in Mail-Flow settings, in the **Message Delivery Restrictions** dialog. If your outgoing Simple Mail Transfer Protocol (SMTP) server specified in the Service Manager settings (Under **Administration** > **Notifications Channels** > **Edit**) is using Anonymous as the Authentication Method (either in  Service Manager or the SMTP settings), then given the above default setting in exchange, the email wouldn't be sent out. If you've Anonymous Access configured on the SMTP side, it's necessary either to clear the **Require that all senders are authenticated** setting in exchange for the Mail Enabled Universal Security Group, or change the SMTP authentication settings (in Service Manager or the outgoing SMTP Server settings) from anonymous to Windows Integrated, so that the user is authenticated, allowing the email to be sent.
 
 As an alternative, you can avoid using **Assigned to** and instead use **Support Group** changing as a triggering field. To set this up, create a new email notification subscription, and under additional criteria, use the following:
 

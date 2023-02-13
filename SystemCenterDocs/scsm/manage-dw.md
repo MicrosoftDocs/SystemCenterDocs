@@ -34,14 +34,14 @@ There are seven data warehouse jobs that run at various times to maintain the da
 |----------------------|---------------|
 |MPSyncJob|This job synchronizes all the management packs from the Service Manager source. These management packs define the content of the data warehouse. This job starts to run as soon as you register the Service Manager management group, and it takes several hours to complete on its initial run.|
 |DWMaintenance|This job performs data warehouse maintenance, such as indexing and updating statistics. This job will run automatically after the MPSyncJob has finished.|
-|Entity (or Grooming)|Grooming functions typically involve activities on the data warehouse that remove data based on a configurable time period. **Note:** For this release of Service Manager, grooming functions are handled as a workflow. Settings for this job are not configurable.|
+|Entity (or Grooming)|Grooming functions typically involve activities on the data warehouse that remove data based on a configurable time period. **Note:** For this release of Service Manager, grooming functions are handled as a workflow. Settings for this job aren't configurable.|
 |Extract|This job retrieves data from the Service Manager database. This job queries the Service Manager database for the delta data from its last run and writes this new data into the DWStagingAndConfig database in the data warehouse. There are two extract jobs in Service Manager: one for the Service Manager management group and the other for the data warehouse management group.|
 |Transform|This job takes the raw data from the staging area and does any cleansing, reformatting, and aggregation that is required to get it into the final format for reporting. This transformed data is written into the DWRepository database.|
 |Load|This job queries the data from the DWRepository database and inserts it into the DWDatamart database. The DWDatamart is the database that is used for all end user reporting needs.|
 
 
 ## Job schedule and frequency
-The schedule for a job defines when a job starts. Frequency refers to how often the job runs after it has started. Regardless of schedule and frequency, a job does not run unless the schedule for that job has been enabled. Except for the Entity (Grooming) job, each job has a default scheduled start time, which is midnight. The following table lists the scheduled start time, frequency, and default schedule setting.
+The schedule for a job defines when a job starts. Frequency refers to how often the job runs after it has started. Regardless of schedule and frequency, a job doesn't run unless the schedule for that job has been enabled. Except for the Entity (Grooming) job, each job has a default scheduled start time, which is midnight. The following table lists the scheduled start time, frequency, and default schedule setting.
 
 |Data warehouse job|Scheduled start time|Frequency|Enabled by default?|
 |----------------------|------------------------|-------------|-----------------------|
@@ -51,7 +51,7 @@ The schedule for a job defines when a job starts. Frequency refers to how often 
 |Transform|Midnight|Every 30 minutes|Yes|
 |Load|Midnight|Every hour|Yes|
 
-In this release of Service Manager, grooming functions are handled as a workflow. Settings for this job are not configurable.
+In this release of Service Manager, grooming functions are handled as a workflow. Settings for this job aren't configurable.
 
 ## PowerShell cmdlets
 The Service Manager Windows PowerShell module contains cmdlets that are used in this scenario to manage data warehouse functions on the server that hosts the data warehouse. You must run all Windows PowerShell cmdlets as an administrator. To view the Windows PowerShell Help, type the **get-help** command, followed by the name of the cmdlet for which you want help. For example, type `get-help Set-SCDWJobSchedule`. The following cmdlets are used in this scenario:
@@ -89,11 +89,11 @@ It's possible that multiple sources may refer to the same management pack. The v
 
 It's possible to remove management packs from the data warehouse. However, keep the following points in mind:
 
-1.  Removing management packs does not delete the data from the data warehouse as it does in the  Service Manager database; instead, the database view that users are granted access to is dropped.
-2.  If you reimport a management pack after you have removed the corresponding management pack, the historical data is exposed once again.
+1.  Removing management packs doesn't delete the data from the data warehouse as it does in the  Service Manager database; instead, the database view that users are granted access to is dropped.
+2.  If you reimport a management pack after you've removed the corresponding management pack, the historical data is exposed once again.
 
     > [!NOTE]
-    > Only sealed management packs are synchronized from Service Manager to the data warehouse. An exception to this is list items, also known as enumerations. Groups or queues are synchronized to the data warehouse, regardless of whether they are in a sealed or unsealed management pack.
+    > Only sealed management packs are synchronized from Service Manager to the data warehouse. An exception to this is list items, also known as enumerations. Groups or queues are synchronized to the data warehouse, regardless of whether they're in a sealed or unsealed management pack.
 
 Management packs that are imported from Service Manager are Service Manager-specific and data warehouse specific. The Service Manager management packs provide awareness of what the Service Manager database is structured like, and the data warehouse management packs drive the structure and processes of the data warehouse databases.
 
@@ -111,7 +111,7 @@ Sequentially, report deployment occurs in the following process:
 7.  Schema changes are deployed to the DWRepository database.
 8.  Any necessary changes to extract, transform, and load (ETL) modules are made to the DWStagingandConfig database.
 
-Management packs that contain only Service Manager-specific information do not cause the deployment activities to execute. They are only be triggered for new data warehouse and reporting-specific elements.
+Management packs that contain only Service Manager-specific information don't cause the deployment activities to execute. They're only be triggered for new data warehouse and reporting-specific elements.
 
 ### Understand the ETL processes
 
@@ -142,7 +142,7 @@ The load process starts on a scheduled interval. The load process queries for th
 
 ## Service Manager data warehouse retention
 
-By default, data is stored in the data warehouse for 3 years for fact tables and for an unlimited period for dimension and outrigger tables. However, you can modify the retention period if you want to retain data longer or groom it out more aggressively.
+By default, data is stored in the data warehouse for three years for fact tables and for an unlimited period for dimension and outrigger tables. However, you can modify the retention period if you want to retain data longer or groom it out more aggressively.
 
 ### Fact table retention settings
 There are two types of retention settings in the data warehouse:
@@ -168,13 +168,13 @@ Individual fact tables inherit the global retention value when created, or you c
 
 During development and testing of management packs that contain reports that access data warehouse information, you might need to remove the management packs and then reimport them later. However, after a management pack is uninstalled from the data warehouse, if the new management pack contains the same dimension, fact, or cube name with a schema that is different from the original, you must delete the dimension or fact table from the DWRepository and DWDataMart databases manually and also delete any referencing cube from the SQL Server Analysis Services (SSAS) database.
 
-In addition, if a dimension or fact is already referenced by an existing data cube, you must also delete the management pack that contains the data cube and the data cube itself before uninstalling the new management pack. Because Service Manager does not remove the dimension or fact table from the DataSourceView and because dimensions are not removed from SSAS database, you must manually delete information that a data cube references. In this situation, you should use SQL Server Management Studio to remove any custom data cube that you created with the management pack from the DWASDatabase before you reregister or reinstall an updated management pack.
+In addition, if a dimension or fact is already referenced by an existing data cube, you must also delete the management pack that contains the data cube and the data cube itself before uninstalling the new management pack. Because Service Manager doesn't remove the dimension or fact table from the DataSourceView and because dimensions aren't removed from SSAS database, you must manually delete information that a data cube references. In this situation, you should use SQL Server Management Studio to remove any custom data cube that you created with the management pack from the DWASDatabase before you reregister or reinstall an updated management pack.
 
 In general, you should avoid having the same dimension, fact, and cube name in differing schemas. Service Manager doesn't support this condition.
 
 ## Enable or disable data warehouse job schedules
 
-Use the following procedure to enable the schedule for the ETL jobs as needed; you can use this procedure to enable the schedule for any of the data warehouse jobs. By default, the schedules for the extract, transform, and load (ETL) jobs are enabled. In this release of Service Manger, you can enable the schedules only by using Windows PowerShell.
+Use the following procedure to enable the schedule for the ETL jobs as needed; you can use this procedure to enable the schedule for any of the data warehouse jobs. By default, the schedules for the extract, transform, and load (ETL) jobs are enabled. In this release of Service Manager, you can enable the schedules only by using Windows PowerShell.
 
 ### To enable a schedule for a data warehouse job by using a Windows PowerShell cmdlet
 
@@ -440,7 +440,7 @@ In Service Manager, you may encounter problems related to data warehouse jobs. A
 
 You can use the first procedure to determine whether a job failed using Windows PowerShell cmdlets, and you can evaluate any error messages that this job created.
 
-The second procedure can be used to change the default transform job timeout period. If you see that the data warehouse transform job doesn't complete successfully, then this may be due to the default 3-hour timeout period for the job being surpassed. This can happen due to the fact that a large volume of data is transformed in the data warehouse. To confirm that this is actually happening, you can view the Event Viewer in the Data Warehouse where messages similar to:  **Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.** can be seen for a module. As an example, you might see the message above for the TransformEntityRelatesToEntityFact module. To resolve the problem in this case, you can set the timeout period to be longer than the default value of 10800 seconds.
+The second procedure can be used to change the default transform job timeout period. If you see that the data warehouse transform job doesn't complete successfully, then this may be due to the default 3-hour timeout period for the job being surpassed. This can happen because a large volume of data is transformed in the data warehouse. To confirm that this is actually happening, you can view the Event Viewer in the Data Warehouse where messages similar to:  **Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.** can be seen for a module. As an example, you might see the message above for the TransformEntityRelatesToEntityFact module. To resolve the problem in this case, you can set the timeout period to be longer than the default value of 10800 seconds.
 
 ### To troubleshoot data warehouse jobs by using Windows PowerShell cmdlets
 
