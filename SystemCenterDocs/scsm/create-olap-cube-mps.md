@@ -1,7 +1,7 @@
 ---
 title: Create an OLAP cube using a management pack
 description: Explains how to create a Service Manager OLAP cube using a management pack.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -38,7 +38,7 @@ All elements other than MeasureGroups are optional.
 
 When you define an OLAP cube using the schema above and you import the management pack, the System Center - Service Manager data warehouse deploys the cube using SQL&nbsp;Server Analysis Management Objects (AMO), and it creates the required infrastructure to maintain it. For example, you can create a simple OLAP cube based on *ComputerHostsOperatingSystemFact*. The following illustration is the dimensional view of the fact in the warehouse.
 
-![Diagram of dimensional view](./media/create-olap-cube-mps/ops-comptuerhostsoperatingsystemfact.png)
+![Diagram of the dimensional view.](./media/create-olap-cube-mps/ops-comptuerhostsoperatingsystemfact.png)
 
 ### To create an OLAP cube using a management pack
 
@@ -58,7 +58,7 @@ When you define an OLAP cube using the schema above and you import the managemen
 
 2. Import the management pack, and then run the MPsync job. The OLAP cube will appear in the Service Manager console in an unprocessed state.
 
-3. To view OLAP cube, open the Service Manager console, navigate to **Data Warehouse** and **Cubes**, and then click **ComputerCube**.
+3. To view OLAP cube, open the Service Manager console, navigate to **Data Warehouse** and **Cubes**, and select **ComputerCube**.
 
 4. A data warehouse process job is created for the OLAP cube with a default 24-hour job schedule. Therefore,  process the cube using the Service Manager console or using the cmdlet **Start-SCDWJob -JobName Process.ComputerCube**.
 
