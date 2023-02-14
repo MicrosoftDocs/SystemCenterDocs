@@ -1,6 +1,6 @@
 ---
 title: Manage changes and activities
-description: Provides an example scenario and details about how to managing changes and activities in Service Manager.
+description: Provides an example scenario and details about how to manage changes and activities in Service Manager.
 manager: mkluck
 ms.custom: na
 ms.prod: system-center
@@ -32,7 +32,7 @@ This sample scenario for System Center - Service Manager helps you achieve your 
 ## Initiate classify change requests  
 In the scenario that encompasses initiating and classifying a change request, Julia, the messaging support analyst, wants to propose and track a change. To do this, she creates a change request to capture information that she and others will use to evaluate, plan, develop, test, deploy, and assess changes. Julia starts by initiating the change request and then identifying its priority and category.  
 
-In incident management scenarios, Phil created an incident in which a user had a messaging problem, and he completed an initial investigation of the problem. In this scenario, Julia continues to investigate the same incident. She verifies that the cause is a known issue with Microsoft Exchange Server and fixes it. She also determines that all Exchange servers need a update, not just a single server. Next, Julia views the service map for the Exchange service configuration item that requires the update, and she opens a change request from the service's configuration item form. Lastly, Julia attaches a saved screenshot to the change request, which might help later with the change request review.  
+In incident management scenarios, Phil created an incident in which a user had a messaging problem, and he completed an initial investigation of the problem. In this scenario, Julia continues to investigate the same incident. She verifies that the cause is a known issue with Microsoft Exchange Server and fixes it. She also determines that all Exchange servers need an update, not just a single server. Next, Julia views the service map for the Exchange service configuration item that requires the update, and she opens a change request from the service's configuration item form. Lastly, Julia attaches a saved screenshot to the change request, which might help later with the change request review.  
 
  After the change request is created, the change reviewers at Woodgrove Bank must approve the change request, and the change implementers must complete the actions that are required for the change. These review and implementation steps are defined in the change request as a set of review activities and manual activities.  
 
@@ -93,7 +93,7 @@ You can use the following procedures in Service Manager to create a change reque
 
 ### Add related items to a change request
 
-You can use the following procedures to add related items to a change request and then validate the addition of the items. You can add related items, such as configuration items, incidents, other change requests, files, and knowledge articles. When you add files, such as saved screen shots, saved written procedures, and knowledge articles, reviewers and implementers can more easily review, approve, and implement the change.  
+You can use the following procedures to add related items to a change request and then validate the addition of the items. You can add related items, such as configuration items, incidents, other change requests, files, and knowledge articles. When you add files, such as saved screenshots, saved written procedures, and knowledge articles, reviewers and implementers can more easily review, approve, and implement the change.  
 
 To add files to any work item, including change requests, you must first enable the appropriate option. For more information, see [How to Configure General Change Settings](./change-activity-mgt.md).  
 

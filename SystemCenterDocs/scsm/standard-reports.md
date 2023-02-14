@@ -27,7 +27,7 @@ This article describes how to use standard reports in Service Manager.
 
  The simple reporting infrastructure that is included in Service Manager is built on SQL&nbsp;Server Reporting Services \(SSRS\), where data is accessed from the Service Manager data warehouse. The SSRS infrastructure provides for basic reporting functionality, such as report\-level security, report subscriptions, browser\-based access to reports, linked reports, and customization. This reporting functionally is similar to the experience that is included with System Center Operations Manager.  
 
- The Reporting workspace contains the catalog of reports that users can run on demand. Reports are viewable for all Service Manager console users. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SSRS server, they can also view reports in work item task lists. Like in Operations Manager, you can run a report in context. For example, you can select a computer in a view in the console and then run the Computer Details report about that computer. Any user can export report data from a report they view. Exported reports are saved in a variety of file formats.  
+ The Reporting workspace contains the catalog of reports that users can run on demand. Reports are viewable for all Service Manager console users. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SSRS server, they can also view reports in work item task lists. Like in Operations Manager, you can run a report in context. For example, you can select a computer in a view in the console and then run the Computer Details report about that computer. Any user can export report data from a report they view. Exported reports are saved in various file formats.  
 
  For more information about SSRS, see [SQL Server Reporting Services](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports). If you want to see the relationship between high\-level processes and services that are involved between Service Manager and SSRS, refer to the Service Manager architecture diagram \(ArchitectureDiagram.vsd\) that is included in the Service Manager job aids \(SM\_job\_aids.zip\). Because the architecture diagram is too large to see properly in this guide, you can download it and the other jobs aids from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=186291).  
 
@@ -46,11 +46,11 @@ You can use the following procedure to view the catalog of reports that is avail
 ## Add permissions for standard reports
 
 ::: moniker range="sc-sm-2016"
-By default, all System Center 2016 - Service Manager users have access to reports through the Reporting workspace. However, before users who do not have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\). 
+By default, all System Center 2016 - Service Manager users have access to reports through the Reporting workspace. However, before users who don't have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\). 
 ::: moniker-end 
 
 ::: moniker range=">sc-sm-2016"
-By default, all System Center - Service Manager users have access to reports through the Reporting workspace. However, before users who do not have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\). 
+By default, all System Center - Service Manager users have access to reports through the Reporting workspace. However, before users who don't have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\). 
 ::: moniker-end
 
  You can grant access at the root level, which enables a user to view the Reporting workspace and all the reports in Service Manager. You can also grant restricted access to specific report folders, such as the Incident report folder, or to individual reports.  
@@ -86,7 +86,7 @@ You can use the following procedure to run a report in Service Manager. In this 
 > [!NOTE]  
 >  Before you can run a report, the extract, transform, and load \(ETL\) process must be complete. For more information about the ETL process and about how to schedule it to run, see [How to Enable Data Warehouse Jobs Schedules](./manage-dw.md).  
 >   
->  The Service Manager data warehouse does not create dimensions for classes or relationships in unsealed management packs. If you're using an unsealed management pack, you will not see any data from that management pack in your reports. Because of this, the best practice is to model all classes and relationships in sealed management packs.  
+>  The Service Manager data warehouse doesn't create dimensions for classes or relationships in unsealed management packs. If you're using an unsealed management pack, you won't see any data from that management pack in your reports. Because of this, the best practice is to model all classes and relationships in sealed management packs.  
 >   
 >  For this example, you must have previously created an incident. Otherwise, the report will return no data.  
 
@@ -138,7 +138,7 @@ You can use the following procedure to run a report in Service Manager. In this 
 
 8.  In the **Tasks** list, select **Run Report**.  
 
-9. In the report, review the data to ensure the incident information that you want to view is displayed. If you do not see the information you expect, revise the criteria, and then run the report again by selecting **Run Report**.  
+9. In the report, review the data to ensure the incident information that you want to view is displayed. If you don't see the information you expect, revise the criteria, and then run the report again by selecting **Run Report**.  
 
      In reports that show lists or additional detail, such as the associated subreports in the List of Incidents report, you might see multiple rows that contain the same information. This is because an instance can have multiple types; for example, a computer is a Computer, a Windows Computer, and a Managed Windows Computer. The level of detail for these reports is per type per instance. Therefore, these multiple types result in multiple rows.  
 
@@ -242,7 +242,7 @@ You can set up subscriptions to your reports in Service Manager through SQL&nbsp
 
 ## Schedule a standard report
 
-In Service Manager, you can schedule a linked report to run on a regular basis to ensure that the information is up to date. To do this, use SQL&nbsp;Server Reporting Services \(SSRS\) Report Manager. In SSRS Report Manager, you can schedule reports to run one time or on a continuous basis at intervals of hours, days, weeks, or months. You can do the following:  
+In Service Manager, you can schedule a linked report to run regularly to ensure that the information is up to date. To do this, use SQL&nbsp;Server Reporting Services \(SSRS\) Report Manager. In SSRS Report Manager, you can schedule reports to run one time or on a continuous basis at intervals of hours, days, weeks, or months. You can do the following:  
 
 - Schedule report delivery in a standard or data\-driven subscription.  
 
@@ -288,7 +288,7 @@ The following reports are available in Service Manager.
 |Change management|List of Change Requests|Provides a list of change requests within a certain time frame. The data in this report includes the current status, category, and user to whom the request is assigned.|  
 |Change management|Change Request Detail|Provides detailed information about a specific change request, including the title, description, status, change creator, and template.|  
 |Configuration management|Computer Detail|Provides detailed configuration information for a specific computer.|  
-|Configuration management|Computer Inventory|Provides a list of computers available in the management group. **Note:**  The Computer Inventory report might contain more total computers than actually exist in a single Service Manager management group. This situation is uncommon but possible when you've more than one management group share a data warehouse. More specifically, if you manually create a computer in one management group and manually create a computer with the same name in another management group, the data warehouse can't reconcile the two manually\-created computers. Because this situation does not occur when computers are discovered by a connector, you can avoid multiple computers appearing in the report by deleting the manually\-created computer configuration item and then discover it by using a connector.|  
+|Configuration management|Computer Inventory|Provides a list of computers available in the management group. **Note:**  The Computer Inventory report might contain more total computers than actually exist in a single Service Manager management group. This situation is uncommon but possible when you've more than one management group share a data warehouse. More specifically, if you manually create a computer in one management group and manually create a computer with the same name in another management group, the data warehouse can't reconcile the two manually\-created computers. Because this situation doesn't occur when computers are discovered by a connector, you can avoid multiple computers appearing in the report by deleting the manually\-created computer configuration item and then discover it by using a connector.|  
 |Configuration Management|Software Update Compliance Trend|Provides detailed information for software update compliance. You can filter this data by classification or category, and by day, week, month, quarter, or year.|  
 |Incident management|Incident Analyst|Provides key performance metrics for a specified analyst. The data in this report includes the number of incidents assigned to the analyst, the number of incidents resolved by the analyst, the number of incidents worked on by the analyst, and any labor logged against an incident.|  
 |Incident management|Incident Details|Provides detailed information for a specific incident, including the title, description, classification, affected services, affected configuration items, and related activities.|  

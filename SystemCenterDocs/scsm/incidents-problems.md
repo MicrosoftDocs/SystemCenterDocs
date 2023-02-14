@@ -80,7 +80,7 @@ IDs that are assigned to change requests and incidents aren't created in sequenc
 
 ## Combine Service Manager incidents into parent-child groups
 
-Incidents in System Center - Service Manager are usually short\-lived while help desk analysts investigate and then restore operations. Often, incidents are related and it is useful to group incidents together. You can create a parent incident to group other existing incidents together, which can help provide visibility into them and their relationship to one another.  
+Incidents in System Center - Service Manager are short-lived while help desk analysts investigate and then restore operations. Often, incidents are related and it's useful to group incidents together. You can create a parent incident to group other existing incidents together, which can help provide visibility into them and their relationship to one another.  
 
 A Service Manager administrator can define automatic incident resolution settings so that when a parent incident is resolved, all its child incidents resolve automatically, don't resolve automatically, or to let the analyst decide whether to resolve or not. Similarly, an administrator can also define automatic incident reactivation settings so that when a parent incident is reactivated, all its child incidents reactivate automatically, don't reactivate automatically, or to let the analyst decide whether to reactivate the child incidents. Both processes can help you verify that all child incidents are resolved or activated together as a group.  
 
@@ -146,7 +146,7 @@ While reviewing active incidents in Service Manager, help desk analysts might de
 3.  Select one or more incidents, and in the **Tasks** pane, select **Link\/Unlink to Existing Parent Incident**, and then in the submenu, select **Link**.  
 4.  In the **Select Parent Incident** dialog, select the resolved parent incident that you want to link the open incident to, and select **OK**.  
 5.  In the **Link to parent incident** dialog, select **Link to parent and resolve incident**.  
-6.  If you are linking multiple active incidents to a resolved parent, ensure that you select **Repeat this option for all conflicts** to automatically resolve all the incidents.
+6.  If you're linking multiple active incidents to a resolved parent, ensure that you select **Repeat this option for all conflicts** to automatically resolve all the incidents.
 
 ### Reactivate a resolved parent incident
 
@@ -158,9 +158,9 @@ Depending on the parent incident settings in the Administration workspace, the b
 
 1.  In the Service Manager console, open the Work Items workspace, and in the **Work Items** pane, expand **Incident Management**.  
 2.  Select the **All Incidents** view, and then in the list of parent incidents, select the incident that you want to reactivate.  
-3.  In the **Tasks** pane, click **Change Incident Status**, and then in the submenu, select **Activate**.  
+3.  In the **Tasks** pane, select **Change Incident Status**, and then in the submenu, select **Activate**.  
 4.  In the **Activate** dialog, in the **Comments** box, enter a description of the reason you're activating the incident.  
-5.  Select **OK** to activate the incident and child incidents, if they are available and selected, and to close the **Activate** dialog.
+5.  Select **OK** to activate the incident and child incidents, if they're available and selected, and to close the **Activate** dialog.
 
 ### Create a parent incident template
 
@@ -216,7 +216,7 @@ Use the following procedure to manually create a new incident and then link it t
 9. In the **Alternate Contact Method** box, enter additional contact information for the affected user \(optional\).  
 10. If necessary, select the **Related Items** tab.  
 11. Optionally, in the **Attached Files** area, select **Add**.  
-12. Optionally, in the **Open** dialog, select the file that you want to attach to this incident, and select **Open**. For example, select the screen shot of an error message that the affected user has received.  
+12. Optionally, in the **Open** dialog, select the file that you want to attach to this incident, and select **Open**. For example, select the screenshot of an error message that the affected user has received.  
 13. Select **OK**.  
 
 #### To validate creation of a new incident  
@@ -241,7 +241,7 @@ In Service Manager, incidents are automatically created from email requests by u
 9. In the **Alternate Contact Method** box, enter additional contact information for the affected user \(optional\).  
 10. Select the **Related Items** tab.  
 11. In the **Attached Files** area, select **Add**.  
-12. In the **Open** dialog, select the file that you want to attach to this incident, and select **Open**. For example, select the screen shot of an error message that the affected user has received.  
+12. In the **Open** dialog, select the file that you want to attach to this incident, and select **Open**. For example, select the screenshot of an error message that the affected user has received.  
 13. Select **OK**.  
 
 ### To create a new incident by email  
@@ -259,7 +259,7 @@ In Service Manager, incidents are automatically created from email requests by u
 ## Change an existing incident in Service Manager
 
 
-In Service Manager, you can use the following procedures to change the urgency of an incident, edit an unassigned incident from Operations Manager, link a knowledge article to an incident, and validate the changes. Users create simplified incidents using the Self-Service Portal based on the Incident portal template. Because user\-created incidents are simplified, analysts often need to revise new incidents with additional information. Additionally, there is no functional difference between incidents created with the Self-Service Portal, using either the **Need help with a problem** or **Need repair or fix** options.  
+In Service Manager, you can use the following procedures to change the urgency of an incident, edit an unassigned incident from Operations Manager, link a knowledge article to an incident, and validate the changes. Users create simplified incidents using the Self-Service Portal based on the Incident portal template. Because user\-created incidents are simplified, analysts often need to revise new incidents with additional information. Additionally, there's no functional difference between incidents created with the Self-Service Portal, using either the **Need help with a problem** or **Need repair or fix** options.  
 
 > [!NOTE]  
 >  Incidents are automatically created by System Center - Service Manager when the Operations Manager Alert connector is enabled. You can edit the new incidents that are generated when an Operations Manager alert is raised and then assign the incidents to analysts.  
@@ -403,7 +403,7 @@ Additionally, when you use the **Service Components** tab to view the service ma
 
 The procedures in this section describe how to manage problems in Service Manager.  
 
-In Service Manager, problems are records that are created to help prevent future problems and incidents from happening, to eliminate recurring incidents, and to minimize the impact of incidents that cannot be prevented. Analysts can use the Service Manager console to create problem records and to associate incidents with problems.  
+In Service Manager, problems are records that are created to help prevent future problems and incidents from happening, to eliminate recurring incidents, and to minimize the impact of incidents that can't be prevented. Analysts can use the Service Manager console to create problem records and to associate incidents with problems.  
 
 ### Create and edit problem records
 

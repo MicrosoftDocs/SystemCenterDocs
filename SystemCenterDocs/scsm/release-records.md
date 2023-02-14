@@ -22,7 +22,7 @@ The key to understanding release management in System Center - Service Manager i
 
 Often, there are multiple parts of a project, and there's more than one change request that can be deployed at different times that can affect a project. The overall goal of change management and release management is to protect the production environment from unnecessary changes, so that every change to it must first be approved. Release management deals only with approved changes.  
 
-When changes are approved, it's up to release management processes to group the changes together, schedule them, and develop them. Depending on the nature of the change, sometimes development can occur in the project phase and other times it can occur in the release management phase. Regardless of when development occurs, release management ensures that changes are tested and that they are safe to deploy. Additionally, release management is used to evaluate and package various releases together to help minimize infrastructure downtime. The package of releases is tested together to verify that no technical or resource conflicts exist that could affect infrastructure availability. Multiple changes are bundled together and planned for deployment together during the next scheduled release or maintenance window. The function of release management using release records is to consolidate multiple changes and deploy them in the safest and most efficient method possible.  
+When changes are approved, it's up to release management processes to group the changes together, schedule them, and develop them. Depending on the nature of the change, sometimes development can occur in the project phase and other times it can occur in the release management phase. Regardless of when development occurs, release management ensures that changes are tested and that they're safe to deploy. Additionally, release management is used to evaluate and package various releases together to help minimize infrastructure downtime. The package of releases is tested together to verify that no technical or resource conflicts exist that could affect infrastructure availability. Multiple changes are bundled together and planned for deployment together during the next scheduled release or maintenance window. The function of release management using release records is to consolidate multiple changes and deploy them in the safest and most efficient method possible.  
 
 After the changes have been bundled together, a release manager defines the sequence of actions needed for a release with release activities. For example, different changes might have infrastructure update tasks, database modification tasks, tasks to update applications, or other individual tasks. In some cases, it might make sense to group some tasks together with infrastructure updates or perform database updates or application updates. Some tasks can be deployed simultaneously, while other tasks must be deployed sequentially or separately.  
 
@@ -30,7 +30,7 @@ After the changes have been bundled together, a release manager defines the sequ
 
 The release manager or other person responsible for the release defines the sequence of actions with a release record. The release record might depict the deployment sequence of different changes using parallel activities, sequential activities, and other activities. The release manager can delegate the responsibility for activities to others. When an activity is delegated, the person responsible for the activity can modify the activity and update its status.  
 
-When you modify an activity, its status is not immediately updated. There is a delay after until the workflow activates and the activity status is updated. Often, 30 to 60 seconds might elapse before you see the updated status of the activity in the console after you refresh your view of an item. Other dependent activities in the release record might take longer to update. For example, assume that you have a release record containing a dozen activities. If you update an item near the top of the list, it might take 30 seconds to update in the console. Then, the next activity in the release record might automatically get updated 30 seconds later, and so on. Therefore, the update that you originally made might take some time to propagate to all affected activities in the release record.  
+When you modify an activity, its status isn't immediately updated. There's a delay after until the workflow activates and the activity status is updated. Often, 30 to 60 seconds might elapse before you see the updated status of the activity in the console after you refresh your view of an item. Other dependent activities in the release record might take longer to update. For example, assume that you've a release record containing a dozen activities. If you update an item near the top of the list, it might take 30 seconds to update in the console. Then, the next activity in the release record might automatically get updated 30 seconds later, and so on. Therefore, the update that you originally made might take some time to propagate to all affected activities in the release record.  
 
 ### Parts of release records  
 
@@ -46,9 +46,9 @@ Information Technology \(IT\) managers at Woodgrove Bank administer multiple pro
 
 Release management starts when there are approved changes. According to company policies, the changes must be deployed through release management processes. The release manager, Garret, creates a parent release record, and then he drafts a high\-level diagram of the release and links high\-level activities to a change request. The release activity in a release record is linked to an existing deployment activity in a change request. Garret or a delegated activity designer then adds child release records and new activities as necessary to the release record that detail the steps needed to be completed to deploy the change. This process is repeated for each change request to allow any level of detail needed. Therefore, any number of change requests can be included in the release record, depending on the need of the organization. When a change request is ready for implementation, the change implementer marks corresponding activities as Completed.  
 
-Woodgrove Bank normally deploys updates to its production environment, also called a release, once a month. Garret wants to package several releases that he defined in the June release, in the July release, and so on. He defines those releases as parent releases, and he links all network\-related and database\-related releases into the June parent release, and he links an application\-related release into the July parent release. He also adds a new "Test Network with Database Integration" activity into the June release to ensure that both sub-releases function together.  
+Woodgrove Bank normally deploys updates to its production environment, also called a release, once a month. Garret wants to package several releases that he defined in the June release, in the July release, and so on. He defines those releases as parent releases, and he links all network\-related and database\-related releases into the June parent release, and he links an application\-related release into the July parent release. He also adds a new "Test Network with Database Integration" activity into the June release to ensure that both subreleases function together.  
 
-The next major release for Woodgrove Bank is a deployment of a new version of its HRWeb web application. HRWeb developers have given the Release Management team a new build of the HRWeb application. The Woodgrove Release Management team evaluates the build in its testing environment, finds a critical problem in the build, and then asks developers to fix the problem and provide a new build. The development team provides a new build, and the Release Management team successfully retests it in the test environment. The build then moves to the preproduction environment, where it is tested and used in the preproduction environment for two weeks. When testing is completed successfully, the build is deployed to the production environment. During this process, Garret creates a new build configuration item, links it to the HRWeb software configuration item, and links the build configuration item to the release record release package. When the last build is deployed into the production environment, Garret updates the version information in the HRWeb software configuration item, and he closes the release record.  
+The next major release for Woodgrove Bank is a deployment of a new version of its HRWeb web application. HRWeb developers have given the Release Management team a new build of the HRWeb application. The Woodgrove Release Management team evaluates the build in its testing environment, finds a critical problem in the build, and then asks developers to fix the problem and provide a new build. The development team provides a new build, and the Release Management team successfully retests it in the test environment. The build then moves to the preproduction environment, where it's tested and used in the preproduction environment for two weeks. When testing is completed successfully, the build is deployed to the production environment. During this process, Garret creates a new build configuration item, links it to the HRWeb software configuration item, and links the build configuration item to the release record release package. When the last build is deployed into the production environment, Garret updates the version information in the HRWeb software configuration item, and he closes the release record.  
 
 At Woodgrove Bank, Garret configures administrative settings for releases, and he creates a parent release record. He also creates templates for parallel and sequential activities. Then, Phil creates release records, based on the templates that Garret created. Phil chooses which changes to deploy, and then he updates release activities by adding, deleting, or modifying them for each release, as necessary. Garret configures notifications for release records to notify users. Garret and Phil can review the status and the progress of change requests for a release whenever they need to.
 
@@ -65,7 +65,7 @@ The Release Manager creates a release record in Service Manager using the follow
 4.  In the release record form on the **General** tab, enter any necessary information, and select the **Activities** tab.  
 5.  Modify the default set of release activities that are added from the release record template, if any, are present. You can add, delete, or modify sets of activities to the release record, including the following actions:  
     -   Add activities from the list of existing activity templates.  
-    -   Move activities up and down in the order in which they are completed.  
+    -   Move activities up and down in the order in which they're completed.  
     -   Move activities in the process list, and place them inside container activities.  
     -   Move activities from container activities, and place them anywhere in the process list.  
     -   Delete activities.  
@@ -88,7 +88,7 @@ The template author creates a template for release records by completing the fol
 6.  Enter information in the boxes on the **General** tab, and select the **Activities** tab.  
 7.  You can add, delete, or modify sets of activities to the release record template, including the following actions:  
     -   Add activities from the list of existing activity templates.  
-    -   Move activities up and down in the order in which they are completed.  
+    -   Move activities up and down in the order in which they're completed.  
     -   Move activities in the process list, and place them inside container activities.  
     -   Move activities from container activities, and place them anywhere in the process list.  
     -   Delete activities.  
@@ -128,7 +128,7 @@ The following procedure is performed on a parent release record that may or may 
 3.  In the **Tasks** pane, select **Edit** to open the release record.  
 4.  In the **Tasks** pane, select **Convert or Revert to Parent**.  
 5.  If the release record that you're demoting contains child release records, a message appears stating that all links to child records will be removed. If so, select **OK** to unlink any child release records.  
-6.  In the **Comments** box, enter a comment indicating that you have reverted the release record from a parent release record, and select **OK** to close the **Comments** box.  
+6.  In the **Comments** box, enter a comment indicating that you've reverted the release record from a parent release record, and select **OK** to close the **Comments** box.  
 7.  The **Child Items** tab no longer appears in the form.  
 8.  In the release record form, select **OK** to close it.  
 
@@ -173,7 +173,7 @@ The Release Manager can unlink a child release record while editing a parent rel
 
 ## Define release package configuration items
 
-Release packages normally contain a build and an environment that the release is tested with. The topics in this section describe how to build the configuration item parts that are contained in a release package and how they are added to the release package.  
+Release packages normally contain a build and an environment that the release is tested with. The sections in this article describe how to build the configuration item parts that are contained in a release package and how they're added to the release package.  
 
 ### Create a build configuration item
 
@@ -204,7 +204,7 @@ The release manager can create an environment configuration item that defines th
 3.  In the **Tasks** pane, under **Environments**, select **Create Environment**.  
 4.  On the **General** tab in the form, do the following:  
     1.  In the **Title** box, enter a name for the environment. For example, for the pre\-environment that will be used to test the new HRWeb software, enter **Environment for HRWeb July 2011**.  
-    2.  Optionally, in other boxes on the tab, enter or select information that might help you easily identify the environment that you are creating. For example, set the **Category** to **Pre Production**.  
+    2.  Optionally, in other boxes on the tab, enter or select information that might help you easily identify the environment that you're creating. For example, set the **Category** to **Pre Production**.  
     3.  Select **OK**.  
 5.  On the **Related Items** tab, under **Configuration Items: Computers, Services and People**, you can add configuration items that are important to the environment. Examples might include the following:  
     -   Software  
@@ -244,7 +244,7 @@ The template author creates a template for a parallel activity by performing the
 7.  You can add, delete, or modify sets of activities to the parallel activity template, including the following actions:  
     1.  Add activities from the list of existing activity templates.  
     2.  Add parallel or sequential activities from the list of existing activity templates.  
-    3.  Move activities up and down in the order in which they are completed.  
+    3.  Move activities up and down in the order in which they're completed.  
     4.  Move activities in the process list.  
     5.  Delete activities.  
 8.  As you add an activity, the activity form opens. Enter the necessary information, and select **OK** to save the activity.  

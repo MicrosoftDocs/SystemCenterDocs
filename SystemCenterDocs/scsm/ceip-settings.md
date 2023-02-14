@@ -40,7 +40,7 @@ During setup in Service Manager, on the **Diagnostic and usage data** page, for 
 
 4. **Select** your diagnostic and usage data sharing preference from the dialog and select **Ok**.
 
-5. In the **Run** dialog box, in the Open text field, type **services.msc**, and then click **Ok**.
+5. In the **Run** dialog box, in the Open text field, enter **services.msc**, and select **Ok**.
 
 6. In the **Services** window, in the **Services (Local)** pane, locate the **System Center Data Access Service**, and select **Restart**.
 

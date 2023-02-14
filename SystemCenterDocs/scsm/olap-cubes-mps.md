@@ -23,14 +23,14 @@ ms.assetid: 7f6da179-5a54-46fb-adc4-3fcaa7bd9864
 
 ::: moniker-end
 
-The ability to define customized management pack elements was used to model the online analytical processing \(OLAP\) cube management pack elements that are included in Service Manager. These management pack elements make it possible for the user to declaratively define and customize an OLAP cube at a higher level of abstraction. Based on the definition, the deployment of these management pack elements create the correct relationships, components, and fundamental building blocks of the OLAP cube at a greater level of detail, without any further user guidance. The following are the two main management pack elements that are included in OLAP cubes:  
+The ability to define customized management pack elements was used to model the online analytical processing \(OLAP\) cube management pack elements that are included in Service Manager. These management pack elements make it possible for the user to declaratively define and customize an OLAP cube at a higher level of abstraction. Based on the definition, the deployment of these management pack elements creates the correct relationships, components, and fundamental building blocks of the OLAP cube at a greater level of detail, without any further user guidance. The following are the two main management pack elements that are included in OLAP cubes:  
 
 -   SystemCenterCube  
 
 -   CubeExtension  
 
 ## SystemCenterCube  
- The SystemCenterCube element defines the OLAP cube to a varying degree of detail, depending on your specific needs. This element contains the following sub-elements:  
+ The SystemCenterCube element defines the OLAP cube to a varying degree of detail, depending on your specific needs. This element contains the following subelements:  
 
 -   MeasureGroup  
 
@@ -76,7 +76,7 @@ The ability to define customized management pack elements was used to model the 
 
  In this example, the *IncidentAssignedToUser* measure group points at the *WorkitemAssignedToUser* relationship. This relationship, however, won't only contain incidents, but it will also contain change requests and problems that have also been assigned to any users. To ensure that this measure group only contains incidents, Service Manager substitutes *WorkItemDim* with *IncidentDim*. This means that the table that is created in the data source view for the measure group automatically performs an inner join on WorkItemDim with IncidentDim and returns only those instances where a join is valid based on the EntityDimKey or BaseManagedEntityId.  
 
- Remember that you must define the relationship endpoint where you want to perform the substitution. This element is required because it is possible that the source and endpoint dimensions are identical and a methodology is needed to uniquely identify which dimension to substitute. An example of such a relationship is *WorkItemRelates to WorkItem*.  
+ Remember that you must define the relationship endpoint where you want to perform the substitution. This element is required because it's possible that the source and endpoint dimensions are identical and a methodology is needed to uniquely identify which dimension to substitute. An example of such a relationship is *WorkItemRelates to WorkItem*.  
 
  The substitution element is also used to define alias dimensions for the cube. In other words, you can define an alias name for a dimension, but it isn't required to actually substitute a dimension. In effect, the substitution in this case isn't on the dimension but on the cube dimension or alias dimension name, as shown in the following example:  
 
@@ -98,7 +98,7 @@ The ability to define customized management pack elements was used to model the 
 |DimensionAlias|No|ManagementPackDimension|The dimension alias from a custom fact if one exists|  
 
 ## Custom MDX  
- You can use custom Multi\-Dimensional Expression \(MDX\) scripts to modify and tailor the OLAP cube to the exact specifications that meet your needs. Because Service Manager are model based, it's impossible to determine all your possible semantic needs when taking into account the wide spectrum of requirements and exact specifications for the domain\-specific business needs of a particular user. Custom MDX makes it possible for you to define MDX scripts that will be applied to the OLAP cube to enable specific scenarios that users need to measure and instrument.  
+ You can use custom Multi\-Dimensional Expression \(MDX\) scripts to modify and tailor the OLAP cube to the exact specifications that meet your needs. Because Service Manager is model based, it's impossible to determine all your possible semantic needs when taking into account the wide spectrum of requirements and exact specifications for the domain\-specific business needs of a particular user. Custom MDX makes it possible for you to define MDX scripts that will be applied to the OLAP cube to enable specific scenarios that users need to measure and instrument.  
 
 ## Named calculation  
  You can use named calculations to define new attributes on a dimension that a custom measure can later target. This makes it possible for you to extend the dimensional schema and customize the schema to fit your exact needs. The following example is from the SystemCenterWorkItemsCube:  
@@ -111,7 +111,7 @@ The ability to define customized management pack elements was used to model the 
 
  In this example, the Incident dimension contains data, such as the status of the incident and the target resolution time. However, there's no native measure that calculates the number of incidents that exceeded the target resolution time, although this type of data is very useful for a systems administrator. You can create this scenario using a named calculation and aggregate the data so that a custom measure can target the new attribute and then present the information to an end-user.  
 
- Remember that Service Manager supports only NamedCalculation targeting dimensions. NamedCalculation cannot target facts. The following table describes named calculation attributes.  
+ Remember that Service Manager supports only NamedCalculation targeting dimensions. NamedCalculation can't target facts. The following table describes named calculation attributes.  
 
 |Attribute|Required|Values|Definition|  
 |---------------|--------------|------------|----------------|  
@@ -120,10 +120,10 @@ The ability to define customized management pack elements was used to model the 
 |ColumnType|Yes|\(Int, Double\)|The Structured Query Language \(SQL\) type of the column|  
 |Type|No|\(Count, Sum\)|The type of the measure|  
 
- The sub-element \<Calculation\> contains, as its value, the definition of the named calculation. The value is stored as an MDX expression.  
+ The subelement \<Calculation\> contains, as its value, the definition of the named calculation. The value is stored as an MDX expression.  
 
 ## Measure  
- You can use custom measures to aggregate and display data based on numeric attributes from dimensions. Service Manager doesn't support custom measures based on facts. Continuing with the example of he Named Calculation above, Service Manager defines a custom measure on IncidentsPastTargetResolutionTime as the following:  
+ You can use custom measures to aggregate and display data based on numeric attributes from dimensions. Service Manager doesn't support custom measures based on facts. Continuing with the example of the Named Calculation above, Service Manager defines a custom measure on IncidentsPastTargetResolutionTime as the following:  
 
 ```  
 <Measure ID="IncidentsPastTargetResolutionTimeCount" Target="IncidentDW!IncidentDim" Type="Sum" Property="IncidentsPastTargetResolutionTime"/>  
@@ -149,7 +149,7 @@ The ability to define customized management pack elements was used to model the 
 <ManyToManyRelationship CubeDimension="ServiceDim" TargetMeasureGroup="AlertAboutConfigItem" IntermediateMeasureGroup="ServiceContainsConfigItem" />  
 ```  
 
- The following table describes many to many relationship attributes.  
+ The following table describes many-to-many relationship attributes.  
 
 |Attribute|Required|Values|Definition|  
 |---------------|--------------|------------|----------------|  
@@ -186,7 +186,7 @@ The ability to define customized management pack elements was used to model the 
 |Status Graphic|Yes|\(Shapes, TrafficLight, RoadSigns, Gauge, ReversedGauge, Thermometer, Cylinder, Faces, VarianceArrow\)|The symbol that will represent the KPI.|  
 
 ## Action  
- Actions are events that you can trigger on an OLAP cube when you are accessing data in the cube. Only drill\-through actions are supported by Service Manager. The following is an example of an action:  
+ Actions are events that you can trigger on an OLAP cube when you're accessing data in the cube. Only drill\-through actions are supported by Service Manager. The following is an example of an action:  
 
 ```  
 <Action ID="DrillThroughOnWICreatedByUser" MeasureGroupName="CreatedByUser" ActionType="DrillThrough">   

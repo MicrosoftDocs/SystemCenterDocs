@@ -23,7 +23,7 @@ ms.assetid: aeb99cdc-6d17-4979-bbf8-76f822e2636b
 
 ::: moniker-end
 
-You can use the following procedures in Service Manager to refresh data in a Microsoft Online Analytical Processing \(OLAP\) data cube and then validate that it was refreshed. By default, most OLAP data cubes are refreshed every 24 hours. However, you can manually refresh the data to ensure that you are accessing the latest information from the data warehouse.  
+You can use the following procedures in Service Manager to refresh data in a Microsoft Online Analytical Processing \(OLAP\) data cube and then validate that it was refreshed. By default, most OLAP data cubes are refreshed every 24 hours. However, you can manually refresh the data to ensure that you're accessing the latest information from the data warehouse.  
 
  If necessary, you can also manually process an OLAP data cube outside of the processing job.  
 

@@ -111,7 +111,7 @@ You can use the following steps in Service Manager to register Configuration Man
 
 -   In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Configuration Manager**. You might have to refresh your view to see the new data source.
 
-## Register the System Center data warehouse to a Service Manager wource
+## Register the System Center data warehouse to a Service Manager source
 
 
 You can use the following procedures in Service Manager to register the System Center Data Warehouse with a Service Manager management group and then validate the registration. This makes it possible to host multiple Service Manager management groups in a single data warehouse.
@@ -177,7 +177,7 @@ This section describes steps you can take to troubleshoot System Center data war
 ### Use the Operations Manager event log on the Data Warehouse server to troubleshoot errors
 Service Manager event logs are found in the Operations Manager event log. Evaluating events in the log is useful because most errors from the data warehouse are found in this event log. Events in the log are from two different sources: Deployment and Data Warehouse.
 
-Events with a source of **Deployment** are usually generated during management pack deployment, which includes report deployment or assembling the data warehouse; for example, by creating outriggers, dimensions, and fact tables. Errors in the event log usually include instructions about how to recover from the errors. For example, you might read instructions suggesting that you stop and then restart the Service Manager services. The three services on a data warehouse management server are:
+Events with a source of **Deployment** are generated during management pack deployment, which includes report deployment or assembling the data warehouse; for example, by creating outriggers, dimensions, and fact tables. Errors in the event log include instructions about how to recover from the errors. For example, you might read instructions suggesting that you stop and then restart the Service Manager services. The three services on a data warehouse management server are:
 
 -   System Center Data Access Service
 
@@ -204,9 +204,9 @@ The Windows PowerShell cmdlets in the following table provide detailed informati
 |Command|Description|
 |-----------|---------------|
 |Get-SCDWMgmtGroup|This command tells you which sources are currently registered with the data warehouse. You should expect to see at least two different DataSourceName values.|
-|Get-SCDWJob|This command lists the data warehouse job status of the current batch. Using the command, you can check whether the jobs are enabled or not, which jobs are running, and when they started.<br /><br />When the MPSync or DWMaintenance jobs start, they disable all of the ETL jobs. You will see the **Is Enabled** column set to **False** for each of the ETL jobs. This means that even if the ETL job status shows it is running, it actually is not running. When the MPSync or DWMaintenance job completes, the ETL jobs are automatically enabled and resume processing.<br /><br />Jobs normally have the **Not Started** status, unless the previous batch has completed. If you prefer, you can use the **Get-SCDWJob** command to view the last few batches of a specific job.|
+|Get-SCDWJob|This command lists the data warehouse job status of the current batch. Using the command, you can check whether the jobs are enabled or not, which jobs are running, and when they started.<br /><br />When the MPSync or DWMaintenance jobs start, they disable all of the ETL jobs. You will see the **Is Enabled** column set to **False** for each of the ETL jobs. This means that even if the ETL job status shows it's running, it actually isn't running. When the MPSync or DWMaintenance job completes, the ETL jobs are automatically enabled and resume processing.<br /><br />Jobs normally have the **Not Started** status, unless the previous batch has completed. If you prefer, you can use the **Get-SCDWJob** command to view the last few batches of a specific job.|
 |Get-SCDWJob -JobName *Specific job name* -NumberOfBatches *number* |Use this command to see the latest job, specified by *Specific job name*, completed, when it started, and when it ended. You can calculate how long it ran and what the next batch ID and status is. The job batch ID is always incremental.|
-|Get-SCDWJobModule|This command provides detailed information about the specific modules within the job. This is very useful when you see job failures and you want to find out what caused the failure.|
+|Get-SCDWJobModule|This command provides detailed information about the specific modules within the job. This is useful when you see job failures and you want to find out what caused the failure.|
 
 ### Troubleshoot common data warehouse issues
 This list isn't exhaustive, but it covers most of the common problems that you're likely to encounter.
@@ -331,9 +331,9 @@ To troubleshoot this problem, complete the following steps:
     Enable-SCDWJob -JobName Transform.Common
     ```
 
-3.  If the MPSync and DWMaintenance ETL jobs are all enabled and running but their individual batch ID has not changed for a long time, or if you use the **Get-SCDWJobModule** cmdlet for specific jobs and you do not see that any module is actually running, check the event log and see if there are any error messages. Sometimes the error message might be many days old and you might need to review many days-worth of events.
+3.  If the MPSync and DWMaintenance ETL jobs are all enabled and running but their individual batch ID hasn't changed for a long time, or if you use the **Get-SCDWJobModule** cmdlet for specific jobs and you don't see that any module is actually running, check the event log and see if there are any error messages. Sometimes the error message might be many days old and you might need to review many days-worth of events.
 
-4.  Check if the three services: System Center Data Access Service, Microsoft Monitoring Agent, and System Center Management Configuration on the data warehouse management server are actually running. On the data warehouse management server, select **Start**, select **Run**, and then enter **Services.msc**. In **Services** verify that the following services are running: System Center Data Access Service, Microsoft Monitoring Agent, and System Center Management Configuration.
+4.  Check if the three services: System Center Data Access Service, Microsoft Monitoring Agent, and System Center Management Configuration on the data warehouse management server are actually running. On the data warehouse management server, select **Start**, select **Run**, and then enter **Services.msc**. In **Services**, verify that the following services are running: System Center Data Access Service, Microsoft Monitoring Agent, and System Center Management Configuration.
 
     If any of the services aren't running, restart all three services. In addition, if all services are actually running, events from the Event Source Data Warehouse and OpsMgr SDK Service are sent to the Operations Manager event log. You can use this information as another source to verify whether all the services are running. If you don't see events from the Event Source Data Warehouse and OpsMgr SDK Service for a long time, you should restart all three services.
 
@@ -409,7 +409,7 @@ To troubleshoot this problem, complete the following steps:
 #### ETL jobs fail due to login credentials problems
 **Symptom**
 
-Some or all ETL jobs have failed. The Operations Manager event log on the data warehouse management server indicates that the ETL job failure is related to a sign-in user failure.
+Some or all ETL jobs have failed. The Operations Manager event log on the data warehouse management server indicates that the ETL job failure is related to a login user failure.
 
 **Troubleshooting Steps**
 

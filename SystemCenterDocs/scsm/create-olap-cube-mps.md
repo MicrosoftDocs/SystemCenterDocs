@@ -25,7 +25,7 @@ ms.assetid: 3ed8ab2f-0e0d-4b6f-b3e4-a0f44775ec13
 
 A System Center online analytical processing (OLAP) cube is defined as a collection of the following management pack elements:
 
-- Measure groups, which points to the facts that are included
+- Measure groups, which point to the facts that are included
 - Substitutions to be performed on the fact
 - MDX resources
 - Drill-Through Actions
@@ -73,7 +73,7 @@ When you define an OLAP cube using the schema above and you import the managemen
 7. Notice that the following cube dimensions are created:
 
     - The outrigger dimensions corresponding to the fact are added as cube dimensions so that you can slice the facts on those dimensions. These dimensions include Priority and Status.
-    - DateDim is added to the OLAP cube because it is relevant to any fact.
+    - DateDim is added to the OLAP cube because it's relevant to any fact.
     - EntityStatus and RelationshipStatus cube dimensions are defined for all cubes to indicate whether the entity or relationship is deleted.
 
 ## Next steps
