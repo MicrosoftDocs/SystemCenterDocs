@@ -1,7 +1,7 @@
 ---
 title: Customize the data warehouse
 description: Provides an overview about customizing the Service Manager data warehouse.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -23,7 +23,7 @@ ms.assetid: 26cc6924-b9c7-4c0c-b20e-0ab85d9c2140
 
 ::: moniker-end
 
-After the Service Manager data warehouse is deployed and you have viewed its reports, you can customize the information in the reports to better suit your organization. For example, you might want to recreate reports that you have used in the past with other information systems using Service Manager. Or, you might want to customize the reports for your internal business processes for incidents or change management.
+After the Service Manager data warehouse is deployed and you've viewed its reports, you can customize the information in the reports to better suit your organization. For example, you might want to recreate reports that you've used in the past with other information systems using Service Manager. Or, you might want to customize the reports for your internal business processes for incidents or change management.
 
 The information in this section can help you determine how to extend and customize the data warehouse to enable in-depth analyses.
 
@@ -36,7 +36,7 @@ The data warehouse is optimized for aggregating and analyzing a lot of data at o
 To optimize the data warehouse for performance and ease of use, Service Manager uses the Kimball approach to dimensional modeling. (For more information about the Kimball approach, see [Dimensional modeling](https://go.microsoft.com/fwlink/p/?LinkId=246459).) This means that tables in the DWDataMart database are grouped logically into subject matter areas that resemble a star when they are laid out in a diagram. Therefore, these groupings are often called star schemas, and they include the following:
 
 - In the center of the star is a fact table. Fact tables represent relationships, measures, and key performance indicators (KPIs). Fact tables are normally long and have relatively few columns, but they contain a large number of transactions.
-- The fact table joins to dimension tables, which represent classes, properties, and enumerations. Dimension tables usually contain far fewer rows than fact tables, but they are wider because they have attributes by which report users slice and dice reports. These attributes can include status, classifications, and date attributes (such as Created Date or Resolved Date) of a class.
+- The fact table joins to dimension tables, which represent classes, properties, and enumerations. Dimension tables usually contain far fewer rows than fact tables, but they're wider because they have attributes by which report users slice and dice reports. These attributes can include status, classifications, and date attributes (such as Created Date or Resolved Date) of a class.
 - An outrigger is a special kind of dimension table that hangs off another dimension table for performance and usability reasons.
 
 When you think about a star schema, consider what a star schema for a coffee shop might resemble. If the transactions represent coffee purchases, the dimensions might include the following:
@@ -54,19 +54,19 @@ When you consider the measures that the fact table might include, the list might
 - Total sales
 - Total discounts
 
-Information technology (IT) processes are not very different from the coffee shop example when you are designing a dimensional model. There are transactions that occur, such as incident creation, resolution, and closure, that can produce interesting and useful metrics, such as time to resolution, resolution target adherence, billable time incurred by analysts, and duration in status.
+Information technology (IT) processes aren't very different from the coffee shop example when you're designing a dimensional model. There are transactions that occur, such as incident creation, resolution, and closure, that can produce interesting and useful metrics, such as time to resolution, resolution target adherence, billable time incurred by analysts, and duration in status.
 
-When you think about extending and customizing your data warehouse, consider the business questions that you want to answer, and investigate dimensional modeling for useful information and best practices. For additional information about customizing the data warehouse, see the other topics in this section.
+When you think about extending and customizing your data warehouse, consider the business questions that you want to answer, and investigate dimensional modeling for useful information and best practices. For additional information about customizing the data warehouse, see the other sections in this article.
 
 ## Fact tables in the data warehouse
 
-This topic describes how to define relationship facts in the data warehouse in Service Manager. A relationship fact in the Service Manager data warehouse is similar to a relationship in Service Manager. You can use a relationship fact to help answer queries, such as the following:
+This section describes how to define relationship facts in the data warehouse in Service Manager. A relationship fact in the Service Manager data warehouse is similar to a relationship in Service Manager. You can use a relationship fact to help answer queries, such as the following:
 
 - Which work items are currently assigned to the user John Smith so that you can determine their status?
 - What is the list of all the computers in the domain that currently have Windows&nbsp;10 installed so that you can update them to the latest version?
 - What are all the review activities that list Samantha Smith as a reviewer so that they can be reassigned because she is on vacation?
 
-In each of these scenarios, there is a source instance and a target instance that are joined together by a relationship. Without a relationship fact, it is difficult to determine the associations between the instances. Consider the relationship in the Microsoft.Windows.ComputerHostsOperatingSystem in the Microsoft.Windows.Library management pack in the following example:
+In each of these scenarios, there's a source instance and a target instance that are joined together by a relationship. Without a relationship fact, it's difficult to determine the associations between the instances. Consider the relationship in the Microsoft.Windows.ComputerHostsOperatingSystem in the Microsoft.Windows.Library management pack in the following example:
 
 ```xml
 <RelationshipType ID="Microsoft.Windows.ComputerHostsOperatingSystem" Accessibility="Public" Base="System!System.Hosting">
@@ -130,7 +130,7 @@ An outrigger is useful in two ways:
 - You can use discrete values from an outrigger as a drop-down menu for a report parameter when you create and view reports in the Service Manager console.
 - You can use outrigger values to group data in reports for advanced analysis.
 
-Outriggers in the data warehouse can target one or more class properties and consolidate them into a single set of discrete values. These properties can only be a data type String or ManagementPackEnumeration. When they are based on an enumeration, outriggers also preserve the hierarchy. Service Manager does not support an outrigger that is defined on a data type other than String or ManagementPackEnumeration.
+Outriggers in the data warehouse can target one or more class properties and consolidate them into a single set of discrete values. These properties can only be a data type String or ManagementPackEnumeration. When they are based on an enumeration, outriggers also preserve the hierarchy. Service Manager doesn't support an outrigger that is defined on a data type other than String or ManagementPackEnumeration.
 
 Although the benefit of defining an outrigger on an enumeration is evident, an advantage of defining an outrigger on a string column is that the data warehouse infrastructure combines the distinct values of a property from the instance space into a small list. You can then use the list in an easy-to-use drop-down list in a report. A good example of a string-based outrigger is the `Manufacturer` property on the **Computer** class, which is modeled as a string in the Service Manager database. By defining an outrigger on that property, Service Manager provides the ability to select a value from the drop-down list, instead of searching among manufacturers that you procured your computers from.
 
@@ -218,7 +218,7 @@ In the Service Manager data warehouse, a dimension always targets a single class
 
 In certain cases that are described in further detail in this topic, a dimension may also map to the properties of a target class's base and derived classes. Therefore, while a dimension may be roughly analogous to a management pack class, it can also contain properties that are within that management pack class's hierarchy.
 
-You can see an example of how a dimension is used in the Activity Distribution report. In the report, under **Select affected configuration item (optional)**, when you click **Add**, the **Select dimension objects** box opens and you can search for dimension instances in the ConfigItemDim dimension. You can filter on the **Display Name** property. When you select **All Windows Computers** as the dimension object, the report header is updated with the selected filter value. When you run the report, only activities that affect the selected configuration item, **All Windows Computers**, are displayed.
+You can see an example of how a dimension is used in the Activity Distribution report. In the report, under **Select affected configuration item (optional)**, when you select **Add**, the **Select dimension objects** box opens and you can search for dimension instances in the ConfigItemDim dimension. You can filter on the **Display Name** property. When you select **All Windows Computers** as the dimension object, the report header is updated with the selected filter value. When you run the report, only activities that affect the selected configuration item, **All Windows Computers**, are displayed.
 
 To see how the dimension was modeled, you can look at the System.Entity and System.ConfigItem classes that are defined in the System.Library management pack:
 
@@ -278,7 +278,7 @@ The Exact HierarchySupport value requires you to manually list each attribute th
 
 For a dimension with a HierarchySupport of IncludeExtendedClassProperties, all the attributes of the target class and all of its base classes are included in the dimension table and transform. The following illustration shows an example: CarDimension, which targets the class Car and has a HierarchySupport of IncludeExtendedClassProperties.
 
-![Diagram of IncludeExtendedClassProperties example](./media/customize-dw/ops-includeextendedclassproperties.png)
+![Diagram of the IncludeExtendedClassProperties example.](./media/customize-dw/ops-includeextendedclassproperties.png)
 
 Because CarDimension targets the Car class and has a HierarchySupport value of IncludeExtendedClassProperties, it processes both the Car class and its base class, Vehicle. The resulting table and transform contain the attributes in the following table.
 
@@ -298,7 +298,7 @@ For a dimension with a HierarchySupport of IncludeDerivedClassProperties, all th
 
 Slightly modifying the previous example, CarDimension now has a HierarchySupport of IncludeDerivedClassProperties below. Because it processes both the base and derived classes of the target class, the dimension now processes the attributes of three classes: Vehicle, Car, and Sportscar, as shown in the following illustration.
 
-![Diagram of IncludeDerivedClassProperties dimension](./media/customize-dw/ops-includederivedclassproperties.png)
+![Diagram of the IncludeDerivedClassProperties dimension.](./media/customize-dw/ops-includederivedclassproperties.png)
 
 The CarDimension dimension table and transform contain the attributes in the following table.
 
