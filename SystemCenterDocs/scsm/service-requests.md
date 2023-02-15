@@ -1,7 +1,7 @@
 ---
 title: Manage service requests
 description: Explains how to manage service requests in Service Manager.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -39,31 +39,31 @@ Service requests are requests for existing, preauthorized services and features 
 
 ## Create a service request using the Service Manager console
 
-End users often create service requests in Service Manager by accessing the service catalog from the Self-Service Portal or by submitting email requests. However, you can use the following procedure to manually create a new service request in the Service Manager console. For example, you might want to manually create a new service request if a user contacts the help desk by telephone. In the following example, you can update any information that you want to as you complete the form.  
+End-users often create service requests in Service Manager by accessing the service catalog from the Self-Service Portal or by submitting email requests. However, you can use the following procedure to manually create a new service request in the Service Manager console. For example, you might want to manually create a new service request if a user contacts the help desk by telephone. In the following example, you can update any information that you want to as you complete the form.  
 
 ### To create a new service request using the Service Manager console  
 
 1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Assigned To Me**.  
 
-2.  In the **Tasks** pane under **Service Request Fulfillment**, click **Create Service Request from Template**.  
+2.  In the **Tasks** pane under **Service Request Fulfillment**, select **Create Service Request from Template**.  
 
-3.  Under **Templates** in the **Select Template** dialog box, select a template, and then click **OK** to open a new service request and apply the template. For example, select **Request Membership to Group**.  
+3.  Under **Templates** in the **Select Template** dialog, select a template, and select **OK** to open a new service request and apply the template. For example, select **Request Membership to Group**.  
 
 4.  In the **&lt;SR&lt;ID&gt;: ServiceRequestName&gt;** form in the **Affected user** box, select the user who submitted the service request. For example, select **Joe Andreshak**.  
 
 5.  Optionally, in the **Alternate Contact Method** box, enter additional contact information for the affected user.  
 
-6.  In the **Title** box, type a title for the service request or update one if it has been populated by a template. For example, type **Request Membership to Active Directory Group - Joe Andreshak**.  
+6.  In the **Title** box, enter a title for the service request or update one if it has been populated by a template. For example, enter **Request Membership to Active Directory Group - Joe Andreshak**.  
 
 7.  In the **Description** box, enter a description for this service request.  
 
-8.  In the **Urgency** and **Priority** lists, select one for each if they have not been populated by a template.  
+8.  In the **Urgency** and **Priority** lists, select one for each if they haven't been populated by a template.  
 
-9. In the **Source** list, select **Portal** if it has not been populated by a template.  
+9. In the **Source** list, select **Portal** if it hasn't been populated by a template.  
 
 10. In the **Assigned to** box, choose an analyst to assign the service request to. For example, assign the service request to yourself.  
 
-11. Click **OK** to save and close the service request form.  
+11. Select **OK** to save and close the service request form.  
 
 ## Approve and complete a service request using activities
 
@@ -74,27 +74,27 @@ You can use the following procedures to approve a review activity and complete a
 
 ### To approve a review activity for a service request  
 
-1.  In the Service Manager console, click **Work Items**.  
+1.  In the Service Manager console, select **Work Items**.  
 
-2.  In the **Work Items** pane, expand **Work Items**, expand **Activity Management**, expand **Review Activities**, and then click **Activities Assigned to Me**.  
+2.  In the **Work Items** pane, expand **Work Items**, expand **Activity Management**, expand **Review Activities**, and select **Activities Assigned to Me**.  
 
 3.  Select a review activity. For example, select the **Approval for the user requesting membership to an Active Directory group**.  
 
-4.  In the **Tasks** pane, click **Approve**.  
+4.  In the **Tasks** pane, select **Approve**.  
 
-5.  In the **Comments** dialog box, type any comments that you have for the approval or rejection, and then click **OK**.  
+5.  In the **Comments** dialog, enter any comments that you have for the approval or rejection, and select **OK**.  
 
 ### To complete a manual activity for a service request  
 
-1.  In the Service Manager console, click **Work Items**.  
+1.  In the Service Manager console, select **Work Items**.  
 
-2.  In the **Work Items** pane, expand **Work Items**, expand **Activity Management**, expand **Manual Activities**, and then click **Activities Assigned to Me**.  
+2.  In the **Work Items** pane, expand **Work Items**, expand **Activity Management**, expand **Manual Activities**, and select **Activities Assigned to Me**.  
 
 3.  Select a manual activity. For example, select the **Approval for the user requesting membership to an Active Directory group**.  
 
-4.  In the **Tasks** pane, click **Mark as Completed**.  
+4.  In the **Tasks** pane, select **Mark as Completed**.  
 
-5.  In the **Comments** dialog box, type any comments that you have for the manual activity, and then click **OK**. For example, type **The Active Directory administrator has added this user to the groups requested**.  
+5.  In the **Comments** dialog, enter any comments that you've for the manual activity, and select **OK**. For example, enter **The Active Directory administrator has added this user to the groups requested**.  
 
 ## Cancel a service request
 
@@ -102,15 +102,15 @@ Occasionally, you might need to cancel a service request in Service Manager. You
 
 ### To cancel a service request  
 
-1.  In the Service Manager console, click **Work Items**.  
+1.  In the Service Manager console, select **Work Items**.  
 
-2.  In the **Work Items** pane, expand **Work Items**, expand **Service Request Fulfillment**, and then click **All Open Service Requests** or some other service request view.  
+2.  In the **Work Items** pane, expand **Work Items**, expand **Service Request Fulfillment**, and select **All Open Service Requests** or some other service request view.  
 
 3.  Select the service request that you want to cancel. For example, select **Request Membership to Active Directory Group - Joe Andreshak**.  
 
-4.  In the **Tasks** pane, click **Cancel**.  
+4.  In the **Tasks** pane, select **Cancel**.  
 
-5.  In the **Comments** dialog box, type any comments that you have for cancelling the service request, and then click **OK**. For example, type **This request was a duplicate and is not needed**.  
+5.  In the **Comments** dialog, enter any comments that you have for canceling the service request, and select **OK**. For example, enter **This request was a duplicate and is not needed**.  
 
 ## Close a service request
 
@@ -118,15 +118,15 @@ After all the review activities are approved or rejected and any manual activiti
 
 ### To close a service request  
 
-1.  In the Service Manager console, click **Work Items**.  
+1.  In the Service Manager console, select **Work Items**.  
 
-2.  In the **Work Items** pane, expand **Work Items**, expand **Service Request Fulfillment**, and then click **Completed Service Requests**.  
+2.  In the **Work Items** pane, expand **Work Items**, expand **Service Request Fulfillment**, and select **Completed Service Requests**.  
 
 3.  Select a completed service request. For example, select **Request Membership to Active Directory Group - Joe Andreshak**.  
 
-4.  In the **Tasks** pane, click **Close**.  
+4.  In the **Tasks** pane, select **Close**.  
 
-5.  In the **Comments** dialog box, type any comments that you have for the closure, and then click **OK**.  
+5.  In the **Comments** dialog, enter any comments that you've for the closure, and select **OK**.  
 
 ## Edit a service request
 
@@ -136,11 +136,11 @@ Service requests are often created by end users by accessing the service catalog
 
 1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Assigned To Me**.  
 
-2.  In the list, select a service request to edit, and then in the **Tasks** pane under **&lt;Service Request ID - Service Request Name&gt;**, click **Edit**. For example, select **Request Membership to Active Directory Group**.  
+2.  In the list, select a service request to edit, and then in the **Tasks** pane under **&lt;Service Request ID - Service Request Name&gt;**, select **Edit**. For example, select **Request Membership to Active Directory Group**.  
 
 3.  In the **&lt;SR&lt;ID&gt;: ServiceRequestName&gt;** form in the **Affected user** box, select the user who submitted the service request. For example, select **Joe Andreshak**.  
 
-4.  Update any information in form as necessary, and then click **OK** to close the form.  
+4.  Update any information in the form as necessary, and select **OK** to close the form.  
 
 ## View service request details
 
@@ -148,8 +148,8 @@ You can use the following procedure to view the details of a service request in 
 
 
 1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Assigned To Me**.  
-2.  In the list, select a service request to view, and then in the **Tasks** pane under **\<Service Request ID - Service Request Name\>**, click **Edit**. For example, select **Request Membership to Active Directory Group**.  
-3.  Review information in service request form, and then click **OK** to close the form.  
+2.  In the list, select a service request to view, and then in the **Tasks** pane under **\<Service Request ID - Service Request Name\>**, select **Edit**. For example, select **Request Membership to Active Directory Group**.  
+3.  Review information in service request form, and select **OK** to close the form.  
 
 
 ## Duplicate or hide views for service requests
@@ -158,28 +158,28 @@ You can use the following procedures to duplicate or hide a service request view
 
 ### To duplicate a service request view  
 
-1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode. For example, click **Assigned To Me**.  
+1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode. For example, select **Assigned To Me**.  
 
-2.  In the **Tasks** pane, click **Duplicate View**.  
+2.  In the **Tasks** pane, select **Duplicate View**.  
 
-3.  In the **Select management pack** dialog box, select a management pack to add the new view information to or create a new one, and then click **OK**.  
+3.  In the **Select management pack** dialog, select a management pack to add the new view information to or create a new one, and select **OK**.  
 
 4.  Optionally, you can use the **Edit View** task to edit the new view, titled **&lt;View Name - Copy&gt;**, to change the view name or other criteria of the view.  
 
-5.  In the **Work Items** pane, locate the new duplicate view that was created. For example, click **Assigned To Me - Copy**.  
+5.  In the **Work Items** pane, locate the new duplicate view that was created. For example, select **Assigned To Me - Copy**.  
 
-6.  In the **Tasks** pane, click **Edit View**.  
+6.  In the **Tasks** pane, select **Edit View**.  
 
-7.  In the **Edit Assigned To Me -Copy** dialog box, click **Criteria**.  
+7.  In the **Edit Assigned To Me -Copy** dialog, select **Criteria**.  
 
-8.  In the **Criteria** area, next to **Assigned To User ID**, in the text box after **equals**, type **[me]**, and then click **OK**.  
+8.  In the **Criteria** area, next to **Assigned To User ID**, in the text box after **equals**, enter **[me]**, and select **OK**.  
 
 ### To hide a service request view  
 
 1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Closed Service Requests**.  
 
-2.  In the **Tasks** pane, click **Hide View**.  
+2.  In the **Tasks** pane, select **Hide View**.  
 
 ## Next steps
 
-- [Manage release records](release-records.md) to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.
+- To help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them, see [Manage release records](release-records.md).
