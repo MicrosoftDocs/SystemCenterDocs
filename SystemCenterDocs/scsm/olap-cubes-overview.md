@@ -1,6 +1,6 @@
 ---
 title: Overview of OLAP cubes for advanced analytics
-description: Provides an overview of Service Manger OLAP cubes for advanced analytics.
+description: Provides an overview of Service Manager OLAP cubes for advanced analytics.
 manager: mkluck
 ms.custom: na
 ms.prod: system-center
@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 36e556eb-3db1-4900-be1a-a44dc0073d3e
 ---
 
-# Overview of Service Manger OLAP cubes for advanced analytics
+# Overview of Service Manager OLAP cubes for advanced analytics
 
 ::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
