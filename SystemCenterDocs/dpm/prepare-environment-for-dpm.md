@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 11/15/2022
+ms.date: 02/15/2023
 title: Preparing your environment for System Center Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -87,7 +87,7 @@ DPM 1807 | - SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?ter
 
 **DPM version** | **SQL version**
 --- | ---
-DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019)<br/><br/> - SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
+DPM 2019 | - SQL Server 2022 as detailed [here](https://www.microsoft.com/en-in/sql-server/sql-server-2022?rtc=1) (supported from DPM 2019 UR5)  <br/><br/>  - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019)<br/><br/> - SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ DPM 2019 | - SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+S
 
 |Requirement|Details|
 |-----------|-------|
-|Operating System|Windows Server 2019, Datacenter, and Standard editions (Windows Server Core 2019 is supported)<br/> Windows Server 2016, Datacenter, and Standard editions|
+|Operating System| Windows Server 2019, Datacenter, and Standard editions (Windows Server Core 2019 is supported)<br/> Windows Server 2016, Datacenter, and Standard editions|
 |Installation prerequisites|Microsoft .NET Framework 4.5 or later <br/> Windows Installer 4.5 or later versions<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> SQL management tools (install explicitly if your SQL Server is on remote server)<br/><br/> Setup automatically installs the prerequisites if they aren't already installed.|
 |Limitations|You can install DPM on the operation system volume or a different volume.<br/> DPM is designed to run on a dedicated, single-purpose server. Don't install DPM on:<br/> - a server running an Application Server role<br/> - An Operations Manager Management server<br/> - A server running Exchange<br/> - A server running on a cluster node<br/> DPM isn't supported on the Turkish language version of any of the supported Windows Server versions.|
 |RAM|4 GB minimum, 8 GB recommended|
