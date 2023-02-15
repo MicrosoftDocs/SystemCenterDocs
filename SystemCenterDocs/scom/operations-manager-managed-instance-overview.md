@@ -5,12 +5,12 @@ description: This article describes about Azure Monitor SCOM Managed Instance (p
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 02/15/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article
-monikerRange: 'sc-om-2022'
+monikerRange: 'sc-om-2019' 'sc-om-2022'
 ---
 
 # About Azure Monitor SCOM Managed Instance (preview)
