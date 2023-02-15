@@ -4,7 +4,7 @@ manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
-ms.date: 11/15/2022
+ms.date: 02/15/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -24,7 +24,7 @@ This article gives details of the new features supported in System Center - Data
 
 ::: moniker range="sc-dpm-2019"
 
-This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3) and [2019 UR4](#new-features-in-dpm-2019-ur4).
+This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3) and [2019 UR4](#new-features-in-dpm-2019-ur4), [2019 UR4](#new-features-in-dpm-2019-ur5.)
 
 ::: moniker-end
 
@@ -180,6 +180,28 @@ Improvements done for VHDX file mounting and unmounting. To mount or unmount VHD
 ### Improved DPM reliability after DPM agent uninstallation 
 
 With DPM 2019 UR4, you can restore previously backed up data even after DPM agent uninstallation.
+
+## New features in DPM 2019 UR5
+
+See the following sections for information about the new features/feature updates supported in DPM 2019 UR5.
+
+For issues fixed and the installation instructions for UR5, see the KB article.
+
+### Support for SQL Server 2022
+
+DPM 2019 UR5 supports SQL Server 2022 both as a protected workload and DPM database. Learn more.
+
+### Backup support for Windows Server 2022
+
+DPM 2019 UR5 support backup of Windows Server 2022. For more information on supported versions for Windows Servers, see system requirements.
+
+### End of support for vSphere 5.5
+
+vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsphere/2018/02/vsphere-5-5-vsan-5-5-end-general-support-reminder.html), DPM 2019 UR5 and later don't support backups for VMWare VMs on vSphere 5.5. Ensure to upgrade to newer vSphere versions.
+
+### Support for vSpheres 6.7 & 7.0
+
+DPM 2019 UR5 support backups for VMWare VMs on vSpheres 6.7 & 7.0. Learn more.
 
 ::: moniker-end
 
