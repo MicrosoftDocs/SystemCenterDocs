@@ -59,9 +59,9 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 > [!NOTE]
 > Before you continue with this procedure, ensure that the account you plan to use for the Data Warehouse Write account has SQL Server logon rights and is an Administrator on the computers hosting both the operational database and the Reporting data warehouse database. Otherwise, the Setup fails, and all changes are rolled back, which might leave SQL Server Reporting Services in an inoperable state.
 
-::: moniker range="sc-om-2022"
+::: moniker range=">= sc-om-2016"
 
-## Install  Reporting Services on NTLM hardened enterprises  
+## Install Reporting Services on NTLM hardened enterprises
 
 In Operations Manager 2016 and later, if NTLM is disabled as an organization policy, Operations Manager’s reporting services were impacted. For organizations with NTLM disabled, you can select the Reporting Manager **Authentication Type**, as **Windows Negotiate** while installing. NTLM is the default option.
 
