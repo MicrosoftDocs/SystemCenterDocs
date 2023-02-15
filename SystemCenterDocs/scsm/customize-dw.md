@@ -33,7 +33,7 @@ The data warehouse in Service Manager is a set of databases and processes. The p
 
 The data warehouse is optimized for aggregating and analyzing a lot of data at once in many seemly unpredictable ways. This behavior differs from transactional processing systems, which are optimized for write access on few records in any given transaction, making the behavior of those transactions more predictable.
 
-To optimize the data warehouse for performance and ease of use, Service Manager uses the Kimball approach to dimensional modeling. (For more information about the Kimball approach, see [Dimensional modeling](https://go.microsoft.com/fwlink/p/?LinkId=246459).) This means that tables in the DWDataMart database are grouped logically into subject matter areas that resemble a star when they are laid out in a diagram. Therefore, these groupings are often called star schemas, and they include the following:
+To optimize the data warehouse for performance and ease of use, Service Manager uses the Kimball approach to dimensional modeling. (For more information about the Kimball approach, see [Dimensional modeling](https://go.microsoft.com/fwlink/p/?LinkId=246459).) This means that tables in the DWDataMart database are grouped logically into subject matter areas that resemble a star when they're laid out in a diagram. Therefore, these groupings are often called star schemas, and they include the following:
 
 - In the center of the star is a fact table. Fact tables represent relationships, measures, and key performance indicators (KPIs). Fact tables are normally long and have relatively few columns, but they contain a large number of transactions.
 - The fact table joins to dimension tables, which represent classes, properties, and enumerations. Dimension tables usually contain far fewer rows than fact tables, but they're wider because they have attributes by which report users slice and dice reports. These attributes can include status, classifications, and date attributes (such as Created Date or Resolved Date) of a class.
@@ -54,9 +54,9 @@ When you consider the measures that the fact table might include, the list might
 - Total sales
 - Total discounts
 
-Information technology (IT) processes aren't very different from the coffee shop example when you're designing a dimensional model. There are transactions that occur, such as incident creation, resolution, and closure, that can produce interesting and useful metrics, such as time to resolution, resolution target adherence, billable time incurred by analysts, and duration in status.
+Information technology (IT) processes aren't different from the coffee shop example when you're designing a dimensional model. There are transactions that occur, such as incident creation, resolution, and closure, that can produce interesting and useful metrics such as time to resolution, resolution target adherence, billable time incurred by analysts, and duration in status.
 
-When you think about extending and customizing your data warehouse, consider the business questions that you want to answer, and investigate dimensional modeling for useful information and best practices. For additional information about customizing the data warehouse, see the other sections in this article.
+When you think about extending and customizing your data warehouse, consider the business questions that you want to answer, and investigate dimensional modeling for useful information and best practices. For more information about customizing the data warehouse, see the other sections in this article.
 
 ## Fact tables in the data warehouse
 
@@ -130,7 +130,7 @@ An outrigger is useful in two ways:
 - You can use discrete values from an outrigger as a drop-down menu for a report parameter when you create and view reports in the Service Manager console.
 - You can use outrigger values to group data in reports for advanced analysis.
 
-Outriggers in the data warehouse can target one or more class properties and consolidate them into a single set of discrete values. These properties can only be a data type String or ManagementPackEnumeration. When they are based on an enumeration, outriggers also preserve the hierarchy. Service Manager doesn't support an outrigger that is defined on a data type other than String or ManagementPackEnumeration.
+Outriggers in the data warehouse can target one or more class properties and consolidate them into a single set of discrete values. These properties can only be a data type String or ManagementPackEnumeration. When they're based on an enumeration, outriggers also preserve the hierarchy. Service Manager doesn't support an outrigger that is defined on a data type other than String or ManagementPackEnumeration.
 
 Although the benefit of defining an outrigger on an enumeration is evident, an advantage of defining an outrigger on a string column is that the data warehouse infrastructure combines the distinct values of a property from the instance space into a small list. You can then use the list in an easy-to-use drop-down list in a report. A good example of a string-based outrigger is the `Manufacturer` property on the **Computer** class, which is modeled as a string in the Service Manager database. By defining an outrigger on that property, Service Manager provides the ability to select a value from the drop-down list, instead of searching among manufacturers that you procured your computers from.
 
@@ -214,9 +214,9 @@ A dimension in the Service Manager data warehouse in Service Manager is roughly 
 
 Suppose that a user wants a report in Service Manager to display some information about the attributes for the computers in a particular domain. For example, the user may want to know the IP address, number of logical processors, and Domain Name System (DNS) name for each computer. Using dimensions, the user can bring the data over from Service Manager to the data warehouse where reports can query and display this data for each computer.
 
-In the Service Manager data warehouse, a dimension always targets a single class. The dimension attributes then map to the target class's properties. In this example, to get the information about the attributes from a computer, there is a computer dimension that is targeted at the Microsoft.Windows.Computers class.
+In the Service Manager data warehouse, a dimension always targets a single class. The dimension attributes then map to the target class's properties. In this example, to get the information about the attributes from a computer, there's a computer dimension that is targeted at the Microsoft.Windows.Computers class.
 
-In certain cases that are described in further detail in this topic, a dimension may also map to the properties of a target class's base and derived classes. Therefore, while a dimension may be roughly analogous to a management pack class, it can also contain properties that are within that management pack class's hierarchy.
+In certain cases that are described in further detail in this article, a dimension may also map to the properties of a target class's base and derived classes. Therefore, while a dimension may be roughly analogous to a management pack class, it can also contain properties that are within that management pack class's hierarchy.
 
 You can see an example of how a dimension is used in the Activity Distribution report. In the report, under **Select affected configuration item (optional)**, when you select **Add**, the **Select dimension objects** box opens and you can search for dimension instances in the ConfigItemDim dimension. You can filter on the **Display Name** property. When you select **All Windows Computers** as the dimension object, the report header is updated with the selected filter value. When you run the report, only activities that affect the selected configuration item, **All Windows Computers**, are displayed.
 
@@ -254,9 +254,9 @@ The following table provides details about how to construct and model a dimensio
 |Accessibility|This element should always be set to "Public".|
 |Target|The management pack class name that the dimension is targeting.|
 |InferredDimension|This value is always to true.|
-|HierarchySupport|The hierarchy of classes that help define the properties that will be included in the dimension. There are three possible values:<br /><br /> 1. Exact<br />2. IncludeExtendedClassProperties<br />3. IncludeDerivedClassProperties<br /><br /> For details of these values, see the next sections of this topic.|
-|Extends|Optional boolean flag to indicate whether the dimension is a base dimension or is extending another dimension. After a dimension has been defined, you can use the Service Manager data warehouse to "extend" the dimension and add more attributes at a later point in time.<br /><br /> If the Extends flag is set to true, HierarchySupport must be set to Exact and all the extension attributes must be listed. By default, this flag is set to false.|
-|Reconcile|Optional boolean flag that indicates whether two instances, which are otherwise identical and only differ with regard to which source the data originated from, should be consolidated into one single row of data. By default, this flag is set to false.<br /><br /> Dimensions that are related to configuration items should have this flag set to true, and dimensions that are related to work items have this flag set to false.|
+|HierarchySupport|The hierarchy of classes that help define the properties that will be included in the dimension. There are three possible values:<br /><br /> 1. Exact<br />2. IncludeExtendedClassProperties<br />3. IncludeDerivedClassProperties<br /><br /> For details of these values, see the next sections of this article.|
+|Extends|Optional boolean flag to indicate whether the dimension is a base dimension or is extending another dimension. After a dimension has been defined, you can use the Service Manager data warehouse to "extend" the dimension and add more attributes at a later point in time.<br /><br /> If the Extends flag is set to true, HierarchySupport must be set to Exact, and all the extension attributes must be listed. By default, this flag is set to false.|
+|Reconcile|Optional boolean flag that indicates whether two instances, which are otherwise identical and only differ regarding which source the data originated from, should be consolidated into one single row of data. By default, this flag is set to false.<br /><br /> Dimensions that are related to configuration items should have this flag set to true, and dimensions that are related to work items have this flag set to false.|
 
 The HierarchySupport attribute determines which classes are processed and the specific attributes that are included in the dimension. Details for each possible value are described in the following sections.
 
@@ -296,7 +296,7 @@ Because CarDimension targets the Car class and has a HierarchySupport value of I
 
 For a dimension with a HierarchySupport of IncludeDerivedClassProperties, all the attributes of the target class, its base classes, and its derived classes are included in the dimension table and its associated transform.
 
-Slightly modifying the previous example, CarDimension now has a HierarchySupport of IncludeDerivedClassProperties below. Because it processes both the base and derived classes of the target class, the dimension now processes the attributes of three classes: Vehicle, Car, and Sportscar, as shown in the following illustration.
+Slightly modifying the previous example, CarDimension now has a HierarchySupport of IncludeDerivedClassProperties below. Because it processes both the base and derived classes of the target class, the dimension now processes the attributes of three classes: Vehicle, Car, and Sports car, as shown in the following illustration.
 
 ![Diagram of the IncludeDerivedClassProperties dimension.](./media/customize-dw/ops-includederivedclassproperties.png)
 

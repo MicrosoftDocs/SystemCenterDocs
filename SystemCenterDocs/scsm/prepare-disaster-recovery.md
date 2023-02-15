@@ -64,7 +64,7 @@ You use the Encryption Key Backup or Restore Wizard to back up encryption keys o
 4.  On the **Introduction** page, select **Next**.  
 5.  On the **Backup or Restore?** page, select **Backup the Encryption Key**, and select **Next**.  
 6.  On the **Provide a Location** page, enter the path and file name for the encryption key. For example, if you want to specify the file name SMBackupkey.bin for the encryption key on the MyServer server in the Backup shared folder, enter **\\\\MyServer\\Backup\\SMBackupkey.bin**, and select **Next**.  
-7.  On the **Provide a Password** page, in the **Password** box, enter a password that contains at least eight characters. In the **Confirm Password** box, re-enter the same password, and select **Next**.  
+7.  On the **Provide a Password** page, in the **Password** box, enter a password that contains at least eight characters. In the **Confirm Password** box, reenter the same password, and select **Next**.  
     > [!IMPORTANT]  
     >  Recovery of the password is not possible if the password is lost or forgotten.  
 

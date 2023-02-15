@@ -37,7 +37,7 @@ You can use PerformancePoint Dashboard Designer with Service Manager to create a
 
 ## Configure SharePoint infrastructure for dashboards
 
-Before you can create and deploy dashboards for use on the Self-Service Portal in Service Manager, you must configure Microsoft SharePoint&nbsp;2010 and then install Dashboard Designer.  
+Before you can create and deploy dashboards for use on the Self-Service Portal in Service Manager, you must configure Microsoft SharePoint&nbsp;2010, and then install Dashboard Designer.  
 
 ### To configure SharePoint infrastructure for dashboards  
 

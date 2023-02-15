@@ -50,7 +50,7 @@ You can use the following procedure to restore the encryption keys before you ru
 4.  On the **Introduction** page, select **Next**.  
 5.  On the **Backup or Restore?** page, select **Restore the Encryption Key**, and select **Next**.  
 6.  On the **Provide a Location** page, enter the path and file name for the encryption key. For example, if you want to specify the file name SMBackupkey.bin for the encryption key on the server MyServer in the Backup shared folder, enter **\\\\MyServer\\Backup\\SMBackupkey.bin**, and select **Next**.  
-7.  On the **Provide a Password** page, enter the password that you used to back up the encryption key in the **Password** box. In the **Confirm Password** box, re-enter the same password, and select **Next**.  
+7.  On the **Provide a Password** page, enter the password that you used to back up the encryption key in the **Password** box. In the **Confirm Password** box, reenter the same password, and select **Next**.  
 8.  After you receive the message **Secure Storage Key Restore Complete**, select **Finish**.
 
 ### Restore the server
@@ -139,7 +139,7 @@ When you first ran Setup for Service Manager, you installed the initial Service 
     3.  Select **Connect**.  
 3.  In the **Object Explorer** pane, expand **Databases**, and select **ServiceManager**.  
 4.  On the toolbar, select **New Query**.  
-5.  In the **SQLQuery1.sql** pane \(the center pane\), type the following, where \<FQDN of your server\> is the fully qualified domain name \(FQDN\) of the management server that you are promoting:  
+5.  In the **SQLQuery1.sql** pane \(the center pane\), type the following, where \<FQDN of your server\> is the fully qualified domain name \(FQDN\) of the management server that you're promoting:  
 
     ```  
     EXEC p_PromoteActiveWorkflowServer '<FQDN of your server>'  
