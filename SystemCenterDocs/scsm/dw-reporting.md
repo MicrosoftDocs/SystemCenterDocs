@@ -1,7 +1,7 @@
 ---
 title: Data warehouse reporting and analytics
 description: Provides an overview about data warehouse reporting and analytics in Service Manager.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -25,7 +25,7 @@ ms.assetid: 90c721f6-6b0e-4c35-ac85-3fb2e4134ecc
 
 Service Manager reports enable you to collect and view data and trends from across the business environment. For example, you can generate a report that shows the number of incidents that occur in a specific time frame. You can then use that information to calculate the cost of each incident \(in hours\) and also to identify any trends and take preventative measures to reduce the cost and occurrence of incidences.  
 
- Standard reports are viewable for all Service Manager console users in the Reporting workspace. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SQL&nbsp;Server Reporting Services \(SSRS\) server, they can also view reports in work item task lists. Any user can export report data from a report they view. Exported reports are saved in a variety of file formats.  
+ Standard reports are viewable for all Service Manager console users in the Reporting workspace. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SQL&nbsp;Server Reporting Services \(SSRS\) server, they can also view reports in work item task lists. Any user can export report data from a report they view. Exported reports are saved in various file formats.  
 
 ## Overview
 
@@ -74,7 +74,7 @@ The data warehouse that ships with Service Manager is actually its own managemen
 ### System Center Common Model and data warehouse database schema  
  Diagrams that represent the System Center common model and the data warehouse database schema are available for Service Manager. The database schema is based on the common management pack model, which means the relational database objects and relationships benefit from class inheritance.  
 
- If you are not familiar with developing management packs, writing custom queries against the data warehouse can be intimidating. However, the schema diagrams are very useful to help get you started. You can download the Visio diagrams, SystemCenterCommonModel\-SCSM2010.vsd and DWDataMart.vsd, as part of the [Service Manager Job aids](https://go.microsoft.com/fwlink/p/?LinkID=186291) \(SM\_job\_aids.zip\). The different types of tables in the data warehouse are color coded in the schema diagram.  
+ If you aren't familiar with developing management packs, writing custom queries against the data warehouse can be intimidating. However, the schema diagrams are useful to help get you started. You can download the Visio diagrams, SystemCenterCommonModel\-SCSM2010.vsd and DWDataMart.vsd, as part of the [Service Manager Job aids](https://go.microsoft.com/fwlink/p/?LinkID=186291) \(SM\_job\_aids.zip\). The different types of tables in the data warehouse are color coded in the schema diagram.  
 
 ## Data warehouse databases  
  The data warehouse in Service Manager comprises the following databases:  
@@ -86,12 +86,12 @@ The data warehouse that ships with Service Manager is actually its own managemen
 -   DWDataMart-where published data is stored and gets consumed by the reports. This is also where data is stored for an extended period of time to facilitate historical reporting and analysis.  
 
 ### OLAP cubes  
- As mentioned previously, an OLAP cube is used for online analytical processing, and it is a data structure that provides fast analysis of data. You can think of it as helping manipulate and analyze data from multiple perspectives. The cube data structure can help overcome some limitations of relational databases.  
+ As mentioned previously, an OLAP cube is used for online analytical processing, and it's a data structure that provides fast analysis of data. You can think of it as helping manipulate and analyze data from multiple perspectives. The cube data structure can help overcome some limitations of relational databases.  
 
 Service Manager includes a number of predefined OLAP cubes that users can view in Microsoft Excel and also as SharePoint dashboards. Authors can create their own OLAP cubes for customized data sources and include the cubes in custom management packs.  
 
 ## Software Development Kit (SDK)
- The Service Manager SDK contains information that you might need when you are authoring with Service Manager to extend the data warehouse so that it can manage your own customized data. Before you can utilize the capabilities of the data warehouse, such as OLAP cube processing for customized data, you must first create a custom management pack and import it. Your custom management pack bundle will contain a definition for your data model and, possibly, OLAP cube definitions.  
+ The Service Manager SDK contains information that you might need when you're authoring with Service Manager to extend the data warehouse so that it can manage your own customized data. Before you can utilize the capabilities of the data warehouse, such as OLAP cube processing for customized data, you must first create a custom management pack and import it. Your custom management pack bundle will contain a definition for your data model and, possibly, OLAP cube definitions.  
 
 ## Next steps
 
