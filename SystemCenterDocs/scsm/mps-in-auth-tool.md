@@ -94,7 +94,7 @@ The following guidelines and best practices for working with management packs in
 
     -   Relationships  
 
-    -   Child EnumerationValues that should not be modified  
+    -   Child EnumerationValues that shouldn't be modified  
 
     -   Forms for viewing and editing objects of the defined classes, and the respective assembly resources  
 
@@ -103,10 +103,10 @@ The following guidelines and best practices for working with management packs in
 -   Group customizations based on usage considerations. For example, store customizations that you need to test and deploy as a unit in the same management pack.  
 
 ### Seal model management packs  
- You should seal management packs that contain base classes and other model objects on which other definitions in other management packs depend on. Sealing a management pack prevents it from being modified. Also, it's important to seal a management pack so that its definitions are synchronized with the data warehouse database during import. This makes it possible for you to later add customizations (in another management pack), such as presentations, that depend on the base objects from the sealed management pack.  
+ You should seal management packs that contain base classes and other model objects on which other definitions in other management packs depend. Sealing a management pack prevents it from being modified. Also, it's important to seal a management pack so that its definitions are synchronized with the data warehouse database during import. This makes it possible for you to later add customizations (in another management pack), such as presentations, that depend on the base objects from the sealed management pack.  
 
 ### Create your own custom management packs when possible  
- Some of the solution\-specific, preimported, unsealed management packs ("Configuration" management packs) contain customizable elements for the specific solution. In some cases you must store your customizations in those preimported management packs to ensure that the management pack adheres to the dependency rules. For example, templates that use list values that are defined in a "Configuration" management pack must be stored in that same management pack. This is because the list values that are used are defined in another unsealed management pack, and dependency on unsealed management packs isn't supported.  
+ Some of the solution\-specific, preimported, unsealed management packs ("Configuration" management packs) contain customizable elements for the specific solution. In some cases, you must store your customizations in those preimported management packs to ensure that the management pack adheres to the dependency rules. For example, templates that use list values that are defined in a "Configuration" management pack must be stored in that same management pack. This is because the list values that are used are defined in another unsealed management pack, and dependency on unsealed management packs isn't supported.  
 
  However, whenever possible we recommend that you create new management packs to store your customizations. Creating your own management pack simplifies transportation of the management pack, and it can simplify an upgrade.  
 

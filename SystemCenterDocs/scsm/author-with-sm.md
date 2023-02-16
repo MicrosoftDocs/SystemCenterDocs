@@ -165,7 +165,7 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 4. Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe** and double-click **Setup.exe** file.
 5. In the Service Manager Authoring Tool Setup Wizard, select **Install the Service Manager Authoring Tool**.  
 6. Continue through the **Product registration** and the **Installation location** pages.  
-7. On the **Prerequisites** page, if any prerequisite test fails, you must update the server to ensure that each prerequisite is met. If Microsoft Visual Studio 2008 Shell is not installed, select **Install Microsoft Visual Studio Shell 2008** to install the application.  
+7. On the **Prerequisites** page, if any prerequisite test fails, you must update the server to ensure that each prerequisite is met. If Microsoft Visual Studio 2008 Shell isn't installed, select **Install Microsoft Visual Studio Shell 2008** to install the application.  
     Select **Check prerequisites again**, and fix any other problems until all prerequisite tests pass.  
 8. Continue through the **Use Microsoft Update to help keep your computer secure and up\-to\-date** pages.  
 9. On the **Installation summary** page, select **Install** and wait for the installation to finish.  
