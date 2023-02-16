@@ -5,12 +5,12 @@ description: This article describes how to create reports on Power BI for Azure 
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 02/13/2023
+ms.date: 02/15/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article
-monikerRange: 'sc-om-2022'
+monikerRange: '>=sc-om-2019'
 ---
 
 # Create reports on Power BI

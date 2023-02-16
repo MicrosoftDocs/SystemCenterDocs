@@ -5,7 +5,7 @@ description: This include file describes the new features in Virtual Machine Man
 author:  jyothisuri
 ms.author: jsuri
 manager:  evansma
-ms.date:  06/07/2022
+ms.date:  02/15/2023
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -396,3 +396,19 @@ VMM 2019 UR4 supports Windows Server 2012 2022 and Windows 11 guest virtual mach
 #### Support for Smart card login
 
 VMM 2019 UR4 supports smart card login to connect virtual machines in enhanced session mode.
+
+## New features in VMM 2019 UR5
+
+The following sections introduce the new features or feature updates supported in VMM 2019 Update Rollup 5 (UR5).
+
+For problems fixed in UR5, and the installation instructions for UR5, see the KB article.
+
+### Compute
+
+#### Support for VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0
+
+VMM 2019 UR5 supports VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0. [Learn more.](/system-center/vmm/system-requirements?view=sc-vmm-2019&preserve-view=true#servers-in-the-vmm-fabric).
+
+### Discover Arc-enabled SCVMM from VMM console
+
+VMM 2019 UR5 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal. [Learn more.](/system-center/vmm/about-arc-enabled-system-center-virtual-machine-manager?view=sc-vmm-2022).
