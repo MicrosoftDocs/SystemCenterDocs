@@ -48,7 +48,7 @@ You can use the following procedures to configure notification channels and vali
 
 ::: moniker-end
 
-::: moniker range=">sc-sm-2019"
+::: moniker range="<=sc-sm-1807"
 
 > [!NOTE]
 > Only email notification is supported.
