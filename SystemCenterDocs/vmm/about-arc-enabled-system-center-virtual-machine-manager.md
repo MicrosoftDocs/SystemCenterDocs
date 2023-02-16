@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ms.custom: intro-overview
-monikerRange: 'sc-vmm-2019' 'sc-vmm-2022'
+monikerRange: '>=sc-om-2019'
 ---
 
 # About Arc-enabled System Center Virtual Machine Manager
