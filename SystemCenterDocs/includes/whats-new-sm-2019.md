@@ -1,6 +1,6 @@
 ---
 title:  include file
-description: include file to describes the new features and other changes in System Center 2019 - Service Manager.
+description: include file that describes the new features and other changes in System Center 2019 - Service Manager.
 manager: evansma
 ms.topic:  include
 author: jyothisuri
