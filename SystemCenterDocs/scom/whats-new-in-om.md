@@ -32,7 +32,7 @@ Operations Manager 2022 UR1 allows you to discover Azure Monitor SCOM Managed In
 
 ::: moniker range="sc-om-2019"
 
-This article provides details of the new features supported in System Center 2019 - Operations Manager. It also includes the new features in Operations Manager 2019 UR1, 2019 UR2, 2019 UR3, and 2019 UR4.
+This article provides details of the new features supported in System Center 2019 - Operations Manager. It also includes the new features in Operations Manager 2019 UR1, 2019 UR2, 2019 UR3, 2019 UR4, and 2019 UR5.
 
 [!INCLUDE [whats-new-om-2019.md](../includes/whats-new-om-2019.md)]
 
