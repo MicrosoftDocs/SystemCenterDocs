@@ -199,9 +199,9 @@ DPM 2019 UR5 support backup of Windows Server 2022. For more information on supp
 
 vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsphere/2018/02/vsphere-5-5-vsan-5-5-end-general-support-reminder.html), DPM 2019 UR5 and later don't support backups for VMWare VMs on vSphere 5.5. Ensure to upgrade to newer vSphere versions.
 
-### Support for vSpheres 6.7 & 7.0
+### Support for vSpheres 6.7 and 7.0
 
-DPM 2019 UR5 support backups for VMWare VMs on vSpheres 6.7 & 7.0. Learn more.
+DPM 2019 UR5 support backups for VMWare VMs on vSpheres 6.7 and 7.0. Learn more.
 
 ::: moniker-end
 
