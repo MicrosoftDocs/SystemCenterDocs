@@ -388,6 +388,8 @@ To create a SCOM managed instance, follow these steps:
     - **User managed identity**: For **User managed identity account**, select the managed identity that you created and for which you provided admin permissions to the SQL managed instance. Ensure that the same MSI has read permissions on the key vault for domain account credentials.
 1. Select **Next**.
 1. Under **Tags**, enter the **Name** value, and then select the resource.
+   
+   Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see [Use tags to organize your Azure resources and management hierarchy](/azure/azure-resource-manager/management/tag-resources?wt.mc_id=azuremachinelearning_inproduct_portal_utilities-tags-tab&tabs=json).
 1. Select **Next**.
 1. Under **Review + Submit**, review all the inputs given so far, and then select **Create**. Your deployment will now be created on Azure. Creation of a SCOM managed instance takes up to an hour.
 
