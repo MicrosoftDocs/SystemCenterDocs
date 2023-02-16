@@ -401,13 +401,13 @@ VMM 2019 UR4 supports smart card login to connect virtual machines in enhanced s
 
 The following sections introduce the new features or feature updates supported in VMM 2019 Update Rollup 5 (UR5).
 
-For problems fixed in UR5, and the installation instructions for UR5, see [the KB article]().
+For problems fixed in UR5, and the installation instructions for UR5, see the KB article.
 
 ### Compute
 
-#### Support for VMware vSphere 7.0, 8.0 and ESXi 8.0
+#### Support for VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0
 
-VMM 2019 UR5 supports VMware vSphere 7.0, 8.0 and ESXi 8.0. [Learn more.](/system-center/vmm/system-requirements?view=sc-vmm-2019&preserve-view=true#servers-in-the-vmm-fabric).
+VMM 2019 UR5 supports VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0. [Learn more.](/system-center/vmm/system-requirements?view=sc-vmm-2019&preserve-view=true#servers-in-the-vmm-fabric).
 
 ### Discover Arc-enabled SCVMM from VMM console
 
