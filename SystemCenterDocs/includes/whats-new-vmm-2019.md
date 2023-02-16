@@ -411,4 +411,4 @@ VMM 2019 UR5 supports VMware vSphere 7.0, 8.0 and ESXi 7.0, 8.0. [Learn more](/s
 
 ### Discover Arc-enabled SCVMM from VMM console
 
-VMM 2019 UR5 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal. [Learn more](/system-center/vmm/about-arc-enabled-system-center-virtual-machine-manager?view=sc-vmm-2022).
+VMM 2019 UR5 allows you to discover Arc-enabled SCVMM from console and manage your Hybrid environment and perform self-service VM operations through Azure portal. [Learn more](/system-center/vmm/about-arc-enabled-system-center-virtual-machine-manager?view=true).
