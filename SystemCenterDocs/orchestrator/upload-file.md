@@ -1,6 +1,6 @@
 ---
 title: Upload File
-description: The Upload File activity is used in a runbook to upload files to a FTP server.
+description: The Upload File activity is used in a runbook to upload files to an FTP server.
 ms.custom: na
 ms.date: 05/08/2019
 ms.prod: system-center
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: f59566d7-d55c-4444-ad1b-779da05140f6
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Upload File
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The Upload File activity is used in a runbook to upload files to a FTP server.
+The Upload File activity is used in a runbook to upload files to an FTP server.
 
-This activity publishes all of the data from the required and optional properties into published data.
+This activity publishes all the data from the required and optional properties into published data.
 
 The following tables list the required and optional properties and published data for this activity.
 
@@ -72,7 +72,7 @@ The following tables list the required and optional properties and published dat
 | Log   | Detailed FTP log.   | String   |
 | Port   | The port used to connect to the FTP server.   | Integer   |
 | Server   | The IP address or computer name of the FTP server.   | String   |
-| Timeout   | The time to wait before a FTP operation times out.   | Integer   |
+| Timeout   | The time to wait before an FTP operation times out.   | Integer   |
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |
 

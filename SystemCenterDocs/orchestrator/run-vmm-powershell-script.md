@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 6c162738-677c-49f5-8b14-b63f81a7da2b
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Run VMM PowerShell Script
@@ -30,13 +30,13 @@ The Run VMM PowerShell activity is used to call any PowerShell activity.
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | PowerShell Script  | The PowerShell script to execute   | $x = 4;   |
-| Output Variable 01 | Use a variable name defined in your script that you want to return as Published Data. You can use either the PowerShell notation **$var1** or the variable name **var1**. The value of an element must be a simple type value and not an object or collection of objects. You cannot specify an object property, such as $var1.propertyname, as an output element. The name in the output element must be the name of an actual PowerShell variable. If the PowerShell variable contains a complex type or a collection of objects, the data returned is similar to **System.Object** or **System.Object\[\]** because the contents of the output variable cannot be represented as a string. | $x   |
+| Output Variable 01 | Use a variable name defined in your script that you want to return as Published Data. You can use either the PowerShell notation **$var1** or the variable name **var1**. The value of an element must be a simple type value and not an object or collection of objects. You can't specify an object property, such as $var1.propertyname, as an output element. The name in the output element must be the name of an actual PowerShell variable. If the PowerShell variable contains a complex type or a collection of objects, the data returned is similar to **System.Object** or **System.Object\[\]** because the contents of the output variable can't be represented as a string. | $x   |
 
 ## Run VMM PowerShell Script optional properties
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
-|  - | Same as Output Variable 01 above. | $x   |
+|  - | Same as Output Variable 01 above | $x   |
 
 ## Run VMM PowerShell Script published data
 

@@ -2,10 +2,10 @@
 ms.assetid: e357ab3b-45b3-417e-8a41-84c4cc66b4a0
 title: Low-privilege monitoring in Management Pack for SQL Server
 description: This article explains low-privilege monitoring
-author: epomortseva
-ms.author: v-ekaterinap
+author: Anastas1ya
+ms.author: v-asimanovic
 manager: evansma
-ms.date: 12/9/2022
+ms.date: 2/1/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -100,12 +100,12 @@ This section explains how to configure low-privilege agent monitoring.
     /*In some cases, administrators change the 'sa' account default name.
     This will retrieve the name of the account associated to princicpal_id = 1*/
     DECLARE @sa_name sysname = 'sa';
-    SELECT @sa_name = [Name] FROM sys.server_principals WHERE principal_id = 1
+    SELECT @sa_name = [name] FROM sys.server_principals WHERE principal_id = 1
     /*Create the server role with authorization to the account associated to principal id = 1.
     Create the role only if it does not already exist*/
     DECLARE @createSrvRoleCommand nvarchar(200);
     SET @createSrvRoleCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-        WHERE [Name] = ''SCOM_SQLMPLowPriv'') BEGIN
+        WHERE [name] = ''SCOM_SQLMPLowPriv'') BEGIN
         CREATE SERVER ROLE [SCOM_SQLMPLowPriv] AUTHORIZATION [' + @sa_name + ']; END'
     EXEC(@createSrvRoleCommand);
     GRANT VIEW ANY DATABASE TO [SCOM_SQLMPLowPriv];
@@ -113,7 +113,7 @@ This section explains how to configure low-privilege agent monitoring.
     GRANT VIEW SERVER STATE TO [SCOM_SQLMPLowPriv];
     DECLARE @createLoginCommand nvarchar(200);
     SET @createLoginCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-        WHERE [Name] = '''+ @accountname +''') BEGIN
+        WHERE [name] = '''+ @accountname +''') BEGIN
         CREATE LOGIN '+ QUOTENAME(@accountname) +' FROM WINDOWS WITH DEFAULT_DATABASE=[master]; END'
     EXEC(@createLoginCommand);
     -- Add the login to the user-defined server role
@@ -125,9 +125,9 @@ This section explains how to configure low-privilege agent monitoring.
     DECLARE @createDatabaseUserAndRole nvarchar(max);
     SET @createDatabaseUserAndRole = '';
     SELECT @createDatabaseUserAndRole = @createDatabaseUserAndRole + ' USE ' + QUOTENAME(db.name) + ';
-        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = '''+ @accountname +''') BEGIN
+        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [name] = '''+ @accountname +''') BEGIN
         CREATE USER ' + QUOTENAME(@accountname) + ' FOR LOGIN ' + QUOTENAME(@accountname) + '; END;
-        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = ''SCOM_SQLMPLowPriv'') BEGIN
+        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [name] = ''SCOM_SQLMPLowPriv'') BEGIN
         CREATE ROLE [SCOM_SQLMPLowPriv] AUTHORIZATION [dbo]; END;
         ALTER ROLE [SCOM_SQLMPLowPriv] ADD MEMBER ' + QUOTENAME(@accountname) + ';'
     FROM sys.databases db
@@ -262,12 +262,12 @@ This section explains how to configure low-privilege agentless monitoring.
     /*In some cases, administrators change the 'sa' account default name.
     This will retrieve the name of the account associated to princicpal_id = 1*/
     DECLARE @sa_name sysname = 'sa';
-    SELECT @sa_name = [Name] FROM sys.server_principals WHERE principal_id = 1
+    SELECT @sa_name = [name] FROM sys.server_principals WHERE principal_id = 1
     /*Create the server role with authorization to the account associated to principal id = 1.
     Create the role only if it does not already exist*/
     DECLARE @createSrvRoleCommand nvarchar(200);
     SET @createSrvRoleCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-        WHERE [Name] = ''SCOM_SQLMPLowPriv'') BEGIN
+        WHERE [name] = ''SCOM_SQLMPLowPriv'') BEGIN
         CREATE SERVER ROLE [SCOM_SQLMPLowPriv] AUTHORIZATION [' + @sa_name + ']; END'
     EXEC(@createSrvRoleCommand);
     GRANT VIEW ANY DATABASE TO [SCOM_SQLMPLowPriv];
@@ -277,7 +277,7 @@ This section explains how to configure low-privilege agentless monitoring.
     /*Create the login with SQL Server authentication using the password,
     and replace it with your value below*/
     SET @createLoginCommand = 'IF NOT EXISTS (SELECT 1 FROM sys.server_principals
-        WHERE [Name] = '''+ @accountname +''') BEGIN
+        WHERE [name] = '''+ @accountname +''') BEGIN
         CREATE LOGIN '+ QUOTENAME(@accountname) +' WITH PASSWORD=N'''', DEFAULT_DATABASE=[master]; END'
     EXEC(@createLoginCommand);
     -- Add the login to the user-defined server role
@@ -289,9 +289,9 @@ This section explains how to configure low-privilege agentless monitoring.
     DECLARE @createDatabaseUserAndRole nvarchar(max);
     SET @createDatabaseUserAndRole = '';
     SELECT @createDatabaseUserAndRole = @createDatabaseUserAndRole + ' USE ' + QUOTENAME(db.name) + ';
-        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = '''+ @accountname +''') BEGIN
+        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [name] = '''+ @accountname +''') BEGIN
         CREATE USER ' + QUOTENAME(@accountname) + ' FOR LOGIN ' + QUOTENAME(@accountname) + '; END;
-        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [Name] = ''SCOM_SQLMPLowPriv'') BEGIN
+        IF NOT EXISTS (SELECT 1 FROM sys.database_principals WHERE [name] = ''SCOM_SQLMPLowPriv'') BEGIN
         CREATE ROLE [SCOM_SQLMPLowPriv] AUTHORIZATION [dbo]; END;
         ALTER ROLE [SCOM_SQLMPLowPriv] ADD MEMBER ' + QUOTENAME(@accountname) + ';'
     FROM sys.databases db

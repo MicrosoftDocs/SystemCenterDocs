@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: ab0c21ce-3a9d-4901-ad45-4e9e76757a48
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Clone Windows VM Activity
@@ -23,13 +23,13 @@ robots: noindex
 
 ::: moniker-end
 
-The Clone Windows VM activity is used in a runbook to create a copy of an existing Windows virtual machine or template. This creates virtual machines quickly and easily using existing virtual machines or templates as models.
+The Clone Windows VM activity is used in a runbook to create a copy of an existing Windows virtual machine or template. This creates virtual machines quickly and easily using the existing virtual machines or templates as models.
 
 The following tables list the required and optional properties and published data for this activity.
 
-The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
+The activity publishes all the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-With the exception of "Source VM/Template Path," all properties and published data refer to the destination VM produced by the clone operation.
+With the exception of "Source VM/Template Path," all the properties and published data refer to the destination VM produced by the clone operation.
 
 > [!NOTE]
 > To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties support a comma-separated list of values. Each list must have the same number of values. For example, to assign network details to three network adapters, use the following format:
@@ -45,14 +45,14 @@ With the exception of "Source VM/Template Path," all properties and published da
 > 1. After the clone operation completes, ensure that the cloned virtual machine is turned on in the vSphere client.
 > 1. After the cloned virtual machine boots to the lock screen, wait two minutes.
 > 1. After the cloned virtual machine automatically reboots, the VMware customization message appears.  After the cloned VM reboots for a second time to the lock screen, wait two minutes.
-> 1. Verify all the customizations (which you specified in the Properties dialog box of this activity) in vSphere client. You can view these customizations on the Virtual Machine Properties dialog box, or the Summary tab window, or you can log into the guest operating system in the vSphere console.
+> 1. Verify all the customizations (which you specified in the Properties dialog box of this activity) in vSphere client. You can view these customizations on the Virtual Machine Properties dialog, or the Summary tab window, or you can sign in to the guest operating system in the vSphere console.
 
 ### Clone Windows VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
-| Clone Task Timeout in seconds | The number of seconds for the clone activity to complete before timing out. The activity will fail if the clone operation has not completed within the configured time.   | Integer   | No   |
-| Customize   | Indicates whether the virtual machine computer settings are customized after the virtual machine is cloned. If set to False, any guest customizations such as IP address or DNS name will not be applied. | Boolean   | Yes   |
+| Clone Task Timeout in seconds | The number of seconds for the clone activity to complete before timing out. The activity will fail if the clone operation hasn't completed within the configured time.   | Integer   | No   |
+| Customize   | Indicates whether the virtual machine computer settings are customized after the virtual machine is cloned. If set to False, any guest customizations such as IP address or DNS name won't be applied. | Boolean   | Yes   |
 | Datastore Path   | The data store name that the cloned virtual machine will use.   | String   | Yes   |
 | Folder Path   | The path to the folder containing the cloned virtual machine.   | String   | Yes   |
 | Host System Path   | The path to the host operating system of the cloned virtual machine.   | String   | Yes   |
@@ -83,7 +83,7 @@ With the exception of "Source VM/Template Path," all properties and published da
 | Computer Membership   | The name of the workgroup if the computer is part of a Windows workgroup, or the domain name if the computer is part of an Active Directory domain.   | String   | Yes   |
 | Organization Name   | The name of the owner's organization of the cloned virtual machine.   | String   | No   |
 | Owner's Name   | The name of the owner of the cloned virtual machine.   | String   | No   |
-| Power on after creation   | Indicates whether the cloned virtual machine is turned on after it is created.   | Boolean   | Yes   |
+| Power on after creation   | Indicates whether the cloned virtual machine is turned on after it's created.   | Boolean   | Yes   |
 | Product ID   | The product ID of the cloned virtual machine. You must add a dash after every fifth character to divide the product ID number into five parts. For example, enter AAAAA-BBBBB-CCCCC-DDDDD-EEEEE. | String   | No   |
 | Subnet Mask   | The subnet mask for the cloned virtual machine.   | String   | No   |
 | Workgroup   | The name of the workgroup the cloned virtual machine belongs to.   | String   | No   |
@@ -114,7 +114,7 @@ With the exception of "Source VM/Template Path," all properties and published da
 | Memory Size (MB)   | The amount of memory, in megabytes, assigned to the cloned virtual machine.   | Integer   |
 | Organization Name   | The organization name.   | String   |
 | Owner's Name   | The name of the owner of the cloned virtual machine.   | String   |
-| Power on after creation   | Indicates whether the cloned virtual machine is turned on after it is created.   | Boolean   |
+| Power on after creation   | Indicates whether the cloned virtual machine is turned on after it's created.   | Boolean   |
 | Product ID   | The Windows product ID.   | String   |
 | Resource Pool Path   | The path to the resource pool used by the cloned virtual machine.   | String   |
 | Source VM/Template Path   | The name of the virtual machine or template to clone.   | String   |
@@ -131,12 +131,12 @@ The following procedure describes the steps required to configure a Clone Window
 
 1.  From the **Activities** pane, drag a **Clone Windows VM** activity to the active runbook.
 
-2.  Double-click the **Clone Windows VM** activity icon. The **Properties** dialog box opens.
+2.  Double-click the **Clone Windows VM** activity icon. The **Properties** dialog opens.
 
 3.  Configure the settings in the **Properties** tab as follows:
 
-    1.  In the **Configuration** section, click the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Click **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can click the ellipsis **(...)** button next to the text box to browse for a value.
+    1.  In the **Configuration** section, select the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Select **OK**.
+    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
-4.  Click **Finish**.
+4.  Select **Finish**.

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 1102ac6c-cbce-4ad6-b36d-7085c3c4c3b7
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Remove VM Endpoint
@@ -23,10 +23,10 @@ robots: noindex
 
 ::: moniker-end
 
-The **Remove VM Endpoint** activity removes an external endpoint from the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
+The **Remove VM Endpoint** activity removes an external endpoint from the specified virtual machine. It's part of the **Azure Virtual Machines** category activity.
 
 >[!NOTE]
->This activity will retrieve the current endpoints for a virtual machine from Windows Azure, and then make a request to Windows Azure to update the endpoints for the virtual machine to be all the retrieved endpoints, except the endpoint removed using this activity. Because the activity requires two calls to Windows Azure, it is possible to experience concurrency issues when another process modifies the endpoints after this activity retrieves them, but before this activity submits the updated endpoints.
+>This activity will retrieve the current endpoints for a virtual machine from Windows Azure, and then make a request to Windows Azure to update the endpoints for the virtual machine to be all the retrieved endpoints except the endpoint removed using this activity. Because the activity requires two calls to Windows Azure, it's possible to experience concurrency issues when another process modifies the endpoints after this activity retrieves them, but before this activity submits the updated endpoints.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 

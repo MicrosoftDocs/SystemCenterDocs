@@ -31,7 +31,7 @@ Microsoft is committed to protecting your privacy while delivering software that
 
 ## System requirements
 
-Before you implement the Integration Pack for Exchange Admin, you must install the following software. For more information on how to install and configure Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
+Before you implement the Integration Pack for Exchange Admin, you must install the following software. For more information on how to install and configure Orchestrator and the Exchange Admin Integration Pack, see the respective product documentation.
 
 ::: moniker range="<=sc-orch-2019"
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
@@ -103,8 +103,8 @@ A connection establishes a reusable link between the Orchestrator and an Exchang
 7. In the **Exchange Server Port** box, enter the port that is used to communicate with the Exchange server. If you use SSL, ensure to select the appropriate port.
 8. In the **Exchange PowerShell Application** box, enter the application name segment of the connection URI.
 9.  In the **Exchange User Name** and **Exchange User Password** boxes, enter the credentials that Orchestrator will use to sign in to the Exchange environment. The configured user must have the appropriate Exchange permissions.
-10.  Configure the **Exchange Environment** as necessary for connecting to an On-Premises installation or to Office.
-11. Set the **Use SSL** property to **True** to have all the communication between the runbook server and the Exchange server encrypted over HTTPS.
+10.  Configure the **Exchange Environment** as necessary for connecting to an on-premises installation or to Office.
+11. Set the **Use SSL** property to **True** to have all communication between the runbook server and the Exchange server encrypted over HTTPS.
 12. If you use SSL:
     - The **Skip CA Check** property specifies whether the client doesn't validate that the server certificate is signed by a trusted certification authority (CA).
     - The **Skip CN Check** property specifies that the certificate common name (CN) of the server doesn't need to match the hostname of the server.
@@ -193,11 +193,11 @@ On the Exchange server, ensure that PowerShell doesn't require SSL:
 
 1.  Start **Internet Information Services (IIS) Manager**.
 2.  Navigate to the **PowerShell** site.
-3.  Open **SSL Settings**, and ensure that the **Require SSL** checkbox isn't selected.
+3.  Open **SSL Settings** and ensure that the **Require SSL** checkbox isn't selected.
 
 # [Exchange Online](#tab/ex-online)
 
-Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866&preserve-view=true) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell V2 Module (EXO V2)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) to connect to Exchange Server. For detailed information on EXO V2 module, see
+Due to the [deprecation](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866) of Basic Auth in Exchange Online, Exchange Admin 2022 Integration Pack for System-Center now uses [Exchange Online PowerShell	V2 Module (EXO V2)](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true) to connect to Exchange Server. For detailed information on EXO V2 module, see
  - [Prerequisites](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#prerequisites-for-the-exo-v2-module&preserve-view=true)
  - [Installation instructions](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-the-exo-v2-module&preserve-view=true) and
  - [Troubleshooting installation issues](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#troubleshoot-installing-the-exo-v2-module&preserve-view=true)

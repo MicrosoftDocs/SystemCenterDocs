@@ -1,6 +1,6 @@
 ---
 title: Create Collection Activity
-description: This topic provides guidance on how to configure the Create Collection activity for System Center 2016 Configuration Manager.
+description: This article provides guidance on how to configure the Create Collection activity for System Center 2016 Configuration Manager.
 ms.custom: na
 ms.date: 03/08/2017
 ms.prod: system-center
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: e9df3561-cd3d-440c-afce-f47e3d0d933d
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 
@@ -32,7 +32,7 @@ as application or software update deployments.
 Once a collection is created, its membership must be defined by adding
 collection membership rules using the **Add Collection Rule** activity.
 Membership rules can be removed from the collection by using the
-**Delete Collection Rule** activity. To force re-evaluation of the
+**Delete Collection Rule** activity. To force reevaluation of the
 collection’s membership after adding or removing collection rules, use
 the **Update Collection Membership** activity.
 
@@ -57,7 +57,7 @@ optional properties into published data.
 
 When you use the browse feature to look up a collection name, or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
 
-- Limiting Collection Value Type:   Specifies whether the value in the Limiting Collection property is a name or a collection ID. Options are:
+- Limiting Collection Value Type: Specifies whether the value in the Limiting Collection property is a name or a collection ID. Options are:
 
   - **ID** (default): the value is a collection ID
 
@@ -69,7 +69,7 @@ When you use the browse feature to look up a collection name, or enter a collect
 
 ## Create collection published data
 
-- Collection ID:   Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).
+- Collection ID: Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).
 - Connection: Specifies the name of the connection to the Configuration Manager server
 
 ## To configure the create collection activity
@@ -78,28 +78,28 @@ When you use the browse feature to look up a collection name, or enter a collect
    to the active runbook.
 
 2. Double-click the **Create Collection** activity icon. The
-   **Properties** dialog box opens.
+   **Properties** dialog opens.
 
 3. Configuring the **Details** tab:
 
-   1. In the **Connection** section, click the ellipsis button
+   1. In the **Connection** section, select the ellipsis button
       **(...)**, and then select the Configuration Manager server
-      connection that you want to use for this activity. Click **OK**.
+      connection that you want to use for this activity. Select **OK**.
 
    2. In the **Fields** section, enter a value for each of the
       required properties. If the property is Lookup-enabled, you can
-      click the ellipsis **(…)** button next to the text box to browse
+      select the ellipsis **(…)** button next to the text box to browse
       for a value.\
       \
       You can also use published data to automatically populate the
       value of the property from the data output by a previous
       activity in the runbook.
 
-4. Click **Finish**.
+4. Select **Finish**.
 
 ## Schedule tab properties
 
-- Update this collection on a schedule:   True or False (Default = False). Set to **True** to update the collection at the specified intervals. Set to **False** to prevent the collection from being updated after it is created.
+- Update this collection on a schedule: True or False (Default = False). Set to **True** to update the collection at the specified intervals. Set to **False** to prevent the collection from being updated after it's created.
 
 - Start: Defines a date and timestamp and how the time values are interpreted. Options are:
 

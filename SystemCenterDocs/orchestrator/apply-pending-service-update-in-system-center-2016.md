@@ -39,7 +39,7 @@ There are no optional properties for this activity.
 
 ## Apply Pending Service Update Published Data
 
-There is no published data for this activity.
+There's no published data for this activity.
 
 ## See Also
 

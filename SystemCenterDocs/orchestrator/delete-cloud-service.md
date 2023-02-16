@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 54232d7c-117c-4eb5-839e-cdb8e2f4c2f2
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete Cloud Service
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Delete Cloud Service** activity deletes the specified cloud service from Azure. It is part of the **Azure Cloud Services** category activity.
+The **Delete Cloud Service** activity deletes the specified cloud service from Azure. It's part of the **Azure Cloud Services** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Delete Cloud Service Required Properties
 

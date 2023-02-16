@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: b89cdf77-e3d9-4513-a0c6-657bdc0ef3c7
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # List OS Images
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **List OS Images** activity retrieves a list of the operating system images from the image repository. It is part of the **Azure Virtual Machine Images** category activity.
+The **List OS Images** activity retrieves a list of the operating system images from the image repository. It's part of the **Azure Virtual Machine Images** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## List OS Images required properties
 

@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: be8f686e-782e-424e-b804-b8945aa3ef8d
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create User Role
