@@ -186,7 +186,7 @@ This activity has no required properties.
 | Email Address Policy Enabled   | Indicated whether the use of Address Policies is enabled.   | String   |
 | Email Addresses   | Specifies the collection of email addresses for the mailbox.   | String   |
 | End Date For Retention Hold   | Specifies the end date of the Retention Hold period.   | String   |
-| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premise.   | String   |
+| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-premises.   | String   |
 | Exchange GUID   | Specifies the unique identifier of the Microsoft Exchange installation.   | String   |
 | Exchange PowerShell Application   | Specifies the application name segment of the connection URI.   | String   |
 | Exchange Server Host   | Specifies the connected Exchange Server.   | String   |
@@ -259,7 +259,7 @@ This activity has no required properties.
 | Single Item Recovery Enabled   | Indicates whether the Recovery Items folder can be purged.   | String   |
 | Skip CA Check   | Indicates whether the client validates that the server certificate is signed by a trusted certification authority (CA) when connecting over Hypertext Transfer Protocol over Secure Socket Layer.   | String   |
 | Skip CN Check   | Indicates whether the client validates that the certificate common name (CN) of the server matches the hostname of the server.   | String   |
-| Skip Revocation Check   | Indicates whether the connection does not validate the revocation status of the server certificate.   | String   |
+| Skip Revocation Check   | Indicates whether the connection doesn't validate the revocation status of the server certificate.   | String   |
 | Start Date For Retention Hold   | Indicates the date and time that a retention hold on messages in this mailbox begins.   | String   |
 | UM DTMF Map   | UM DTMF Map.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |

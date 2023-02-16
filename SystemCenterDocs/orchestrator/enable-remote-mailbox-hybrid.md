@@ -88,7 +88,7 @@ The following tables list the required properties, optional properties, and publ
 | Email Address Policy Enabled   | Indicates whether the use of Address Policies is enabled.   | String   |
 | Email Addresses   | Collection of email addresses for the mailbox.   | String   |
 | End Date For Retention Hold   | End date of the Retention Hold period.   | Datetime   |
-| Exchange Environment   | Indicates the type of Exchange Server environment where this activity will be executed. Default is On-Premise.   | String   |
+| Exchange Environment   | Indicates the type of Exchange Server environment where this activity will be executed. Default is On-premises.   | String   |
 | Exchange GUID   | Unique identifier of the Microsoft Exchange installation.   | String   |
 | Exchange PowerShell Application   | The application name segment of the connection URI.   | String   |
 | Exchange Server Host   | The connected host Exchange Server.   | String   |

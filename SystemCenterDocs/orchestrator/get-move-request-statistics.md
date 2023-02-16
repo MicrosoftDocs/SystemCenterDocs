@@ -140,8 +140,8 @@ This activity has no required properties.
 | Domain Controller  | Specifies the fully qualified domain name (FQDN) of the domain controller that retrieves data from Active Directory.   | String   |
 | Identity   | Specifies the identity of the mailbox or mail user. Can be one of the following value types:<br>GUID<br>Distinguished name (DN)<br>Domain\\Account <br>User principal name (UPN)<br>Legacy Exchange DN<br>SMTP address<br>Alias<br>This property can't be used with the Move Request Queue, MRS Instance, or Mailbox GUID properties. | String   |
 | Include Report   | Specifies whether to return additional details about the request, which can be used for troubleshooting.   | True, False  |
-| Mailbox GUID   | Specifies the GUID of a mailbox for which you want to view the move request statistics.<br>This property cannot be used with the Identity property.   | String   |
-| Move Request Queue | Specifies the mailbox database on which the move request resides. You can use one of the following values:<br>GUID of the database<br>Database name<br>This property cannot be used with the Identity or MRS Instance properties.   | String   |
+| Mailbox GUID   | Specifies the GUID of a mailbox for which you want to view the move request statistics.<br>This property can't be used with the Identity property.   | String   |
+| Move Request Queue | Specifies the mailbox database on which the move request resides. You can use one of the following values:<br>GUID of the database<br>Database name<br>This property can't be used with the Identity or MRS Instance properties.   | String   |
 
 ### Published data for Get Move Request Statistics
 
@@ -161,8 +161,8 @@ This activity has no required properties.
 | Direction   | Indicates the move request direction. Can be one of the following:<br>Push <br>Pull   | String   |
 | Display Name   | Mailbox display name.   | String   |
 | Distinguished Name   | Distinguished name for the mailbox.   | String   |
-| Do Not Preserve Mailbox Signature   | Indicates that the move does not preserve the mailbox mapping signature.   | String   |
-| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-Premise.   | String   |
+| Do Not Preserve Mailbox Signature   | Indicates that the move doesn't preserve the mailbox mapping signature.   | String   |
+| Exchange Environment   | Indicates the type of Exchange environment where this activity will be executed. Default is On-premises.   | String   |
 | Exchange GUID   | Unique identifier of the Microsoft Exchange installation.   | String   |
 | Exchange PowerShell Application   | Specifies the application name segment of the connection URI.   | String   |
 | Exchange Server Host   | Exchange Server connected.   | String   |
