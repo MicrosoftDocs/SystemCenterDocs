@@ -23,7 +23,8 @@ There are no new features introduced in Service Manager 2022. For issues fixed i
 
 ::: moniker range="sc-sm-2019"
 
-This article details the new features supported in System Center 2019 - Service Manager.  
+This article provides details of the new features supported in System Center 2019 – Service Manager. It also includes the new features in Service Manager 2019 UR2 and 2019 UR5
+ 
 
 [!INCLUDE [whats-new-sm-2019.md](../includes/whats-new-sm-2019.md)]
 
