@@ -5,7 +5,7 @@ description: This include file describes the new features in Operations Manager 
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.date: 06/04/2021
+ms.date: 02/15/2023
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -421,3 +421,14 @@ The following are the UI improvements in Operations Console:
 - Added 3 new columns **Management Pack**, **Sealed** and **Members** in the **Authoring** pane > **Groups**.
 
 - Added new column for **Management Pack Display Name** in the **Authoring** pane > **Create Group wizard**.
+
+## New features in Operations Manager 2019 UR5
+
+The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 5 (UR5).
+
+For the problems fixed in UR5, and the installation instructions for UR5, see the KB article.
+
+### Discover Azure Monitor SCOM Managed Instance (preview) from SCOM console
+Operations Manager 2019 UR5 allows you to discover Azure Monitor SCOM Managed Instance (preview) from console and manage your Hybrid environment and monitor your workloads through Azure portal. [Learn more](/SystemCenterDocs/scom/operations-manager-managed-instance-overview.md).
+
+:::image type="content" source="media/whats-new-in-om/discover-scom-managed-instance-inline.png" alt-text="Screenshot of SCOM Managed Instance (preview) page." lightbox="media/whats-new-in-om/discover-scom-managed-instance-expanded.png":::

@@ -5,7 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 12/06/2022
+ms.date: 02/15/2023
 ms.custom: na, intro-whats-new
 ms.prod: system-center
 ms.technology: operations-manager
@@ -35,11 +35,6 @@ Operations Manager 2022 UR1 allows you to discover Azure Monitor SCOM Managed In
 This article provides details of the new features supported in System Center 2019 - Operations Manager. It also includes the new features in Operations Manager 2019 UR1, 2019 UR2, 2019 UR3, 2019 UR4, and 2019 UR5.
 
 [!INCLUDE [whats-new-om-2019.md](../includes/whats-new-om-2019.md)]
-
-### Discover Azure Monitor SCOM Managed Instance (preview) from SCOM console
-Operations Manager 2019 UR5 allows you to discover Azure Monitor SCOM Managed Instance (preview) from console and manage your Hybrid environment and monitor your workloads through Azure portal. [Learn more](/SystemCenterDocs/scom/operations-manager-managed-instance-overview.md).
-
-:::image type="content" source="media/whats-new-in-om/discover-scom-managed-instance-inline.png" alt-text="Screenshot of SCOM Managed Instance (preview) page." lightbox="media/whats-new-in-om/discover-scom-managed-instance-expanded.png":::
 
 ::: moniker-end
 
