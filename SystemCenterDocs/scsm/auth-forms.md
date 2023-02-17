@@ -79,7 +79,7 @@ We recommend that you set these properties as follows:
 When the form is hosted inside the Service Manager forms host, the last\-used size and location is preserved for subsequent display of that form by the same user within the same run session.
 
 #### Refresh
- The target instance of a form can change as a result of executing a **Refresh** command on the form. The handler for this command fetches new data from the database. When the data arrives, the form's **DataContext** property value is set to the new target instance and the **DataContextChanged** event is raised.
+ The target instance of a form can change as a result of executing a **Refresh** command on the form. The handler for this command fetches new data from the database. When the data arrives, the form's **DataContext** property value is set to the new target instance, and the **DataContextChanged** event is raised.
 
  To differentiate between the **DataContextChanged** event that was raised when the form was first loaded and the event that was raised to handle a **Refresh** command, check the **OldValue** property of the event arguments that are passed in with the event. This property is null if the form has just been initialized.
 
@@ -136,7 +136,7 @@ When you design a form, use public design guidelines to ensure that the form is 
 
 ### Avoid code-behind
 
-*Code\-behind* is a term that describes the code that is joined with markup\-defined objects when an XAML page is markup compiled. Limit the use of code\-behind in a form as much as possible. It is preferable that you embed the code for a form in the control itself, because later it's easier to change that code. Instead, use the declarative capabilities that are supported by the Service Manager forms infrastructure to define value conversions and validation rules in the form.
+*Code\-behind* is a term that describes the code that is joined with markup\-defined objects when an XAML page is markup compiled. Limit the use of code\-behind in a form as much as possible. It's preferable that you embed the code for a form in the control itself, because later it's easier to change that code. Instead, use the declarative capabilities that are supported by the Service Manager forms infrastructure to define value conversions and validation rules in the form.
 
 As a general guideline, you should limit the use of code\-behind to situations in which it isn't possible to provide the required functionality by using the declarative capabilities of XAML, with classes defined in the WPF and the forms infrastructure library. Even then, consider moving the functionality that is implemented in code\-behind into a helper library, and then reference it from the XAML.
 
@@ -156,7 +156,7 @@ When you're designing a new form, you should consider future customizations and 
 
 - If possible, avoid moving controls to a different location on the same tab when you upgrade a form. A common user customization is moving controls on the form to a different location. If you change the location of a control in a new version of the form, there's a risk that the new control location could overlap with a control that the user has relocated.
 
-- If possible, avoid moving controls between tabs when you're designing an update to an existing form. Controls are identified both by name and by the tab on which they are located. Moving a control from one tab to another in a new version of the form can break customizations that the user makes to that control, because the customizations will fail to identify the target control.
+- If possible, avoid moving controls between tabs when you're designing an update to an existing form. Controls are identified both by name and by the tab on which they're located. Moving a control from one tab to another in a new version of the form can break customizations that the user makes to that control, because the customizations will fail to identify the target control.
 
 - When the update to a form includes new controls, consider adding the new controls to a new tab. That is the safest way to avoid interfering with any user customizations to the existing tabs and controls.
 
@@ -184,7 +184,7 @@ The **BindableDataItem** class also implements **ICustomTypeDescriptor**, which 
 
 It isn't necessary to specify the **Source** of the binding because the target instances are set as the **DataContext** of the form, which serves as the default **Source** for all the controls on the form.
 
-Controls on the form can be bound to data sources other than the target instance, and the forms infrastructure library contains a number of controls that perform the binding implicitly. For example, the instance picker control is bound to the data source, which provides the collection of instances to choose. It's also possible to define additional data sources declaratively using the **ObjectDataProvider** and **XmlDataProvider** classes.
+Controls on the form can be bound to data sources other than the target instance, and the forms infrastructure library contains many controls that perform the binding implicitly. For example, the instance picker control is bound to the data source, which provides the collection of instances to choose. It's also possible to define additional data sources declaratively using the **ObjectDataProvider** and **XmlDataProvider** classes.
 
 The forms infrastructure considers the target instance as the only read\/write data source on the form. Therefore, the implementation of the **Submit** command will only store the changes that are made to the target instance. Other data sources for the form are treated as read only.
 
@@ -192,7 +192,7 @@ The forms infrastructure considers the target instance as the only read\/write d
 
 We recommend that you use forms infrastructure validation rules in forms to designate data input that isn't valid. The WPF binding infrastructure supports validation for control properties that are bound to a data source with either one\-way or two\-way bindings. The binding object has a **ValidationRules** collection that can contain any number of **ValidationRule** objects. Whenever data is pushed from the control to the data source, the **ValidationRule** objects are called to validate the value.
 
-The forms infrastructure library contains a number of validation rules that handle the most common cases. The forms infrastructure takes advantage of the validation rules to determine whether the form contents can be submitted for storing. For example, a form's **Submit** button can be disabled if there's a control that has a validation error on the form.
+The forms infrastructure library contains many validation rules that handle the most common cases. The forms infrastructure takes advantage of the validation rules to determine whether the form contents can be submitted for storing. For example, a form's **Submit** button can be disabled if there's a control that has a validation error on the form.
 
 We recommend that you use the custom error template that is provided with the forms infrastructure library. If a control has a validation error, it appears by default with a red border around it. The WPF makes it possible to define a custom error indicator through the **Validation.ErrorTemplate** property, which can be set on any control. The Service Manager forms infrastructure library contains a custom error template, which displays an error icon instead of the WPF red border. In addition, when a mouse points to the error icon, a tooltip pops up with an error message. The error message should indicate the reason why the data in the control failed validation.
 
@@ -242,7 +242,7 @@ internal bool DoVerify(out string errorMessage)
 
 ### Use form infrastructure commands and events
 
-The form infrastructure exposes a number of commands that can be run on a form. These commands include:
+The form infrastructure exposes many commands that can be run on a form. These commands include:
 
 - **FormsCommand.Submit**, which saves the target instance of the form.
 

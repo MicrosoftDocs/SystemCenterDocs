@@ -36,7 +36,7 @@ Installing or removing custom activity assemblies changes the set of available a
 
 ### Install a custom activity assembly
 
-The activity assembly files must first be installed so that you can use custom or third-party Windows Workflow Foundation (WF) activities in workflows. You must have administrative permissions on the computer running the Service Manager Authoring Tool and the computer running Service Manager. Like the default activities, custom activities must be available on the computer running Service Manager as well as on the computer running the Authoring Tool.
+The activity assembly files must first be installed so that you can use custom or third-party Windows Workflow Foundation (WF) activities in workflows. You must have administrative permissions on the computer running the Service Manager Authoring Tool and the computer running Service Manager. Like the default activities, custom activities must be available on the computer running Service Manager and on the computer running the Authoring Tool.
 
 1. On the computer running the Authoring Tool, browse to the Authoring Tool Workflow Activity Library folder; for example, D:Program Files (x86)Microsoft System CenterService Manager \<version\> AuthoringWorkflow Activity Library. Paste the custom activity assembly into this folder.
 
@@ -96,7 +96,7 @@ Use this procedure to add activities to a personalized activity group in the Ser
 > [!IMPORTANT]
 > You can only add activities to personalized activity groups. You can't add activities to the default activity groups.
 
-If you want to use custom activities in workflows, you must add them to a group in order to make them available in the **Activities Toolbox** pane. Note that before you can add custom activities to groups, an administrator must install the appropriate activity assembly files on the computer running the Authoring Tool.
+If you want to use custom activities in workflows, you must add them to a group in order to make them available in the **Activities Toolbox** pane. Before you can add custom activities to groups, an administrator must install the appropriate activity assembly files on the computer running the Authoring Tool.
 
 1. In the **Activities Toolbox** pane, right-click the group, and select **Choose Activities**.
 
@@ -108,7 +108,7 @@ If you want to use custom activities in workflows, you must add them to a group 
 
 ### Remove activities from a personalized activity group
 
-Use this procedure to remove activities from a personalized activity group in the Service Manager Authoring Tool. Note that removing an activity from a group doesn't remove the activity from the Activity Library or from any other group.
+Use this procedure to remove activities from a personalized activity group in the Service Manager Authoring Tool. Removing an activity from a group doesn't remove the activity from the Activity Library or from any other group.
 
 > [!IMPORTANT]
 > You can only remove activities from personalized activity groups. You can't remove activities from the default activity groups.
@@ -119,7 +119,7 @@ Use this procedure to remove activities from a personalized activity group in th
 
 ### Delete a personalized activity group
 
-Use this procedure to delete an activity group in the Service Manager Authoring Tool. If the activity group contains one or more subgroups, the subgroups will also be deleted. Note that deleting an activity group doesn't remove its member activities from the Activity Library or from any other groups.
+Use this procedure to delete an activity group in the Service Manager Authoring Tool. If the activity group contains one or more subgroups, the subgroups will also be deleted. Deleting an activity group doesn't remove its member activities from the Activity Library or from any other groups.
 
 > [!IMPORTANT]
 > You can only delete personalized activity groups. You can't delete the default activity groups.

@@ -53,11 +53,13 @@ Use the following procedure to customize the default Incident form in the Author
 
 3. In the **New Management Pack** dialog, in the **File name** box, enter **MyIncidentFormCustomizations**, and select **Save**.
 
-     Note that the **MyIncidentFormCustomizations** management pack is now listed in the **Management Pack Explorer**.
+    > [!NOTE]
+    > The **MyIncidentFormCustomizations** management pack is now listed in the **Management Pack Explorer**.
 
 4. In the **Form Browser** pane, locate and then right\-click the **System.WorkfItem.Incident.ConsoleForm** form, which is the default Incident form, and select **View**.
 
-     Note that the **Service Manager Incident Management Library** management pack, which contains the default Incident form, is now listed in the **Management Pack Explorer**.
+    > [!NOTE]
+    > The **Service Manager Incident Management Library** management pack, which contains the default Incident form, is now listed in the **Management Pack Explorer**.
 
 5. In the authoring pane, select **Customize**.
 
@@ -87,7 +89,8 @@ Use the following procedure to view and use the customized Incident form in the 
 
 6. Select **Incidents**, and then in the **Tasks** pane, select **Create Incident**.
 
-     Note that the **Incident** form that is displayed is your customized form.
+    > [!NOTE]
+    > The **Incident** form that is displayed is your customized form.
 
 7. Fill in the form, and then save the incident.
 

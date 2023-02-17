@@ -36,7 +36,7 @@ Use the following guidelines when you're authoring forms in the Service Manager 
 
 ## Browse a form
 
-Use one of the following procedures to browse a form in the Service Manager Authoring Tool. In both the procedures, note that the properties in the **Details** pane are updated according to the class property that is bound to the selected control. Also note that the **Binding Path** entry in the **Details** pane indicates the respective property that the field in the form represents.  
+Use one of the following procedures to browse a form in the Service Manager Authoring Tool. In both the procedures, ensure that the properties in the **Details** pane are updated according to the class property that is bound to the selected control. Also, the **Binding Path** entry in the **Details** pane indicates the respective property that the field in the form represents.  
 
 ### To browse a form from the Form Browser  
 
@@ -142,7 +142,9 @@ Use the following procedure to add a **Check Box** control to a form.
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2.  Drag the **Check Box** icon from the **Form Customization Toolbox** pane to the form. Select the **Check Box** control on the form.  
 3.  In the **Details** pane, select the **Content** property and set its value to text that will be displayed on the check box.  
-4.  In the **Details** pane, select the **Binding Path** property, and select the ellipsis button (**...**). In the **Binding Path** dialog, expand the classes, and then select a **Boolean** property for the control to bind to. Note that the **Content** property is automatically set to the display name of the property that the control is bound to.  
+4.  In the **Details** pane, select the **Binding Path** property, and select the ellipsis button (**...**). In the **Binding Path** dialog, expand the classes, and then select a **Boolean** property for the control to bind to. 
+    > [!NOTE]
+    > The **Content** property is automatically set to the display name of the property that the control is bound to.  
 5.  Select any other property, such as **Font Family**, in the **Details** pane to customize the properties of the **Check Box** control.  
 6.  Select **File**, and select **Save All** to save the custom form to a management pack.  
 
@@ -170,7 +172,9 @@ Use the following procedure to add an **Image** control to a form.
 
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 2.  Drag the **Image** icon from the **Form Customization Toolbox** pane to the form.  
-3.  In the **Insert Image** dialog, specify the path of the image file for the image. Note that the image you chose appears on the form.  
+3.  In the **Insert Image** dialog, specify the path of the image file for the image. 
+    > [!NOTE]
+    > The image you chose appears on the form.  
 4.  Select any property in the **Details** pane to customize other properties of the **Image** control.  
 5.  Select **File**, and select **Save All** to save the custom form to a management pack.  
 
@@ -210,7 +214,7 @@ Use the following procedure to add a **List Picker** control to a form.
 
 ## Add a panel control to a form
 
-The **Panel** control in the Service Manager Authoring Tool is a **Layout** control that helps you manage a group of related controls. Typically, you drag and position several controls that have a related purpose on the form on a panel control. Then, if you need to move the controls that are on the panel, instead of moving each control individually, you can simply move the **Panel** control.  
+The **Panel** control in the Service Manager Authoring Tool is a **Layout** control that helps you manage a group of related controls. Typically, you drag and position several controls that have a related purpose on the form on a panel control. Then, if you need to move the controls that are on the panel, instead of moving each control individually, you can move the **Panel** control.  
 
 Use the following procedure to add a **Panel** control to a form.  
 
@@ -221,7 +225,7 @@ Use the following procedure to add a **Panel** control to a form.
 
 ## Add a single instance picker control to a form
 
-A **Single Instance Picker** control in the Service Manager Authoring Tool is a custom control. It is used for presenting a list of instances of a certain class, and it lets the user select an instance from that list. This control resembles the **User Picker** control, but instead of being based on the **User** class, it's based on any class that you specify, including custom classes. You can modify properties of the **Single Instance Picker** control to customize characteristics such as the class whose instances will populate the list.  
+A **Single Instance Picker** control in the Service Manager Authoring Tool is a custom control. It's used for presenting a list of instances of a certain class, and it lets the user select an instance from that list. This control resembles the **User Picker** control, but instead of being based on the **User** class, it's based on any class that you specify, including custom classes. You can modify properties of the **Single Instance Picker** control to customize characteristics such as the class whose instances will populate the list.  
 
 Use the following procedure to add a **Single Instance Picker** control to a form.  
 
@@ -265,7 +269,9 @@ Use the following procedure to add a **Text Box** control to a form.
 2.  Drag the **Text Box** icon from the **Form Customization Toolbox** window to the form. Select the **Text Box** control on the form.  
 3.  Set a text string by doing either of the following:  
     -   In the **Details** pane, select the **Binding Path** property. Select the ellipsis button (**...**), and then in the **Binding Path** dialog, select the class property that you want the **Text Box** control to bind to.  
-    -   Select the **Text** property. Select the default **Text Box** string value and replace it. Note that the new string value that you entered now appears on the form.  
+    -   Select the **Text** property. Select the default **Text Box** string value and replace it.
+        > [!NOTE]
+        > The new string value that you entered now appears on the form.  
 4.  Select the **Accepts the ENTER key** property, and set its value to **True**. In the deployed form, this value lets users enter multiple lines of text.  
 5.  Select any other property, such as **Horizontal Scroll Bar Visibility** and **Maximum Lines**, in the **Details** pane to customize other properties of the **Text Box** control.  
 6.  Select **File**, and select **Save All** to save the custom form to a management pack.  

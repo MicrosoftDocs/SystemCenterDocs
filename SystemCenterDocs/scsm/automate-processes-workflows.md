@@ -59,7 +59,7 @@ To implement a management pack with workflows in your Service Manager console en
 
 ## The Activity Library
 
-The Activity Library in Service Manager Authoring Tool provides a number of workflow activities for building basic Windows Workflow Foundation \(WF\) workflows. Each activity performs a discrete function, such as establishing a loop structure within the workflow, running a script, or creating a Service Manager incident. The Activity Library includes the following types of activities:  
+The Activity Library in Service Manager Authoring Tool provides many workflow activities for building basic Windows Workflow Foundation \(WF\) workflows. Each activity performs a discrete function, such as establishing a loop structure within the workflow, running a script, or creating a Service Manager incident. The Activity Library includes the following types of activities:  
 
 - [Active Directory Activities](workflow-activity-ref.md) - Activities that perform Active&nbsp;Directory functions, such as adding users or computers to groups.  
 

@@ -51,7 +51,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 ### Base classes and inheritance  
  Every class must specify a *base class* that identifies an existing class that the new class will *specialize*. The management pack libraries that are included with Service Manager contain several classes that can be used as the base for custom classes in management packs. A management pack will typically have at least one class inheriting from a library class and potentially other classes inheriting from classes in the same management pack.  
 
- The concept of a base class can be illustrated with the Windows&nbsp;Server Operating System management pack. This management pack includes classes representing logical disks installed on the computer. The following illustration shows the classes **Windows&nbsp;Server&nbsp;2003 Logical Disk** and **Windows&nbsp;Server&nbsp;2008 Logical Disk**. These classes are both based on **Logical Disk \(Server\)** that is defined in the Microsoft.Windows.Server.Library management pack file. **Logical Disk \(Server\)** is in turn based on **Logical Disk**, which itself is based on **Logical Device**, and so on through **Logical Hardware**, **Logical Entity**, and finally **Entity**. All classes can trace a similar inheritance path and will always end up at **Entity**, which is the root of the class structure. This is the only class that doesn't have a base class, and all the other classes eventually inherit from it.  
+ The concept of a base class can be illustrated with the Windows&nbsp;Server Operating System management pack. This management pack includes classes representing logical disks installed on the computer. The following illustration shows the classes **Windows&nbsp;Server&nbsp;2003 Logical Disk** and **Windows&nbsp;Server&nbsp;2008 Logical Disk**. These classes are both based on **Logical Disk \(Server\)** that is defined in the Microsoft.Windows.Server.Library management pack file. **Logical Disk \(Server\)** is in turn based on **Logical Disk**, which itself is based on **Logical Device**, and so on, through **Logical Hardware**, **Logical Entity**, and finally **Entity**. All classes can trace a similar inheritance path and will always end up at **Entity**, which is the root of the class structure. This is the only class that doesn't have a base class, and all the other classes eventually inherit from it.  
 
  **Inheritance of properties between classes**  
 
@@ -63,9 +63,9 @@ Objects in Service Manager are *instances* of a particular base class. All insta
  Most classes have one or more actual instances and are known as *concrete classes*. *Abstract classes* and *singleton classes* are special kinds of classes that behave differently and are used for particular scenarios.  
 
 #### Abstract classes  
- Abstract classes have no instances and exist only to act as a base class for other classes. All the properties and relationships that are defined at the abstract class level are inherited by child classes and don't have to be defined again. Most of the classes that are defined in management pack libraries are abstract, since they are only provided to act as base classes for classes that are defined in custom management packs.  
+ Abstract classes have no instances and exist only to act as a base class for other classes. All the properties and relationships that are defined at the abstract class level are inherited by child classes and don't have to be defined again. Most of the classes that are defined in management pack libraries are abstract, since they're only provided to act as base classes for classes that are defined in custom management packs.  
 
- Abstract classes are used where there is a common set of properties, relationships, or grouping that can be defined across all further specializations of a class. In the previous example, all the classes shown above **Windows&nbsp;Server&nbsp;2003 Logical Disk** and **Windows&nbsp;Server&nbsp;2008 Logical Disk** are abstract. They exist only for the lower\-level classes to inherit from.  
+ Abstract classes are used where there's a common set of properties, relationships, or grouping that can be defined across all further specializations of a class. In the previous example, all the classes shown above **Windows&nbsp;Server&nbsp;2003 Logical Disk** and **Windows&nbsp;Server&nbsp;2008 Logical Disk** are abstract. They exist only for the lower\-level classes to inherit from.  
 
 #### Singleton classes  
  *Singleton classes* are used when there's one and only one instance of a class. The class is the instance, and it always exists. The single instance is being created when the management pack is installed. Similarly, a key property isn't required for a singleton class, because it will only ever have a single instance. A common use of singleton classes is for the **Groups** class, because there's only a single instance of this class required throughout the management group.  
@@ -74,7 +74,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
  To customize a class, you can extend it by adding new properties to the existing class definition. The new properties will now be included in all the instances of that class that already exist, and in any new instances that will be created. An abstract class can't be extended.  
 
 ### Relationships  
- *Relationships* are defined between classes to indicate an association between a particular instance of one class and the particular instance of another. There are three types of relationships, and they are detailed in the following sections:  
+ *Relationships* are defined between classes to indicate an association between a particular instance of one class and the particular instance of another. There are three types of relationships, and they're detailed in the following sections:  
 
 - Hosting relationship  
 
@@ -151,7 +151,7 @@ Examples: **Microsoft.AD.Printer**, **Microsoft.Windows.Computer**, **System.Kno
 #### Best practices for naming classes  
  Use the following best practices when you're naming classes:  
 
--   Don't create two separate classes \(even if they are in two different management packs\) that would result in identical key values being stored for different objects of the two classes.  
+-   Don't create two separate classes \(even if they're in two different management packs\) that would result in identical key values being stored for different objects of the two classes.  
 
 -   When you're extending a class, always ensure that the class extension names are unique across management packs. If possible, use meaningful class extension names.  
 

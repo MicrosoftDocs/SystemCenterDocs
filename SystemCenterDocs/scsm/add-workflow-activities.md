@@ -116,7 +116,7 @@ To use a **Delay** activity, just drag the **Delay** activity into the workflow,
 
 Using a **For Each Loop** activity resembles using an **IfElse** or **Parallel** activity; however, you might want to set additional properties for the activities in the **For Each Loop**. Use the following procedure to add a **For Each Loop** to a workflow.  
 
-### To add a for each loop to a workflow  
+### To add for each loop to a workflow  
 
 1.  In the **Management Pack Explorer**, expand **Workflows**, right\-click the workflow you want, and select **Edit**. This opens the workflow in the authoring pane.  
 
@@ -135,7 +135,9 @@ Using a **For Each Loop** activity resembles using an **IfElse** or **Parallel**
         > [!NOTE]  
         >  Setting the properties isn't mandatory, and it's useful only if you want to take the object from the **Input Collection** of the **Loop Container**.  
 
-        1.  Set **Current Item** to the **Current Item** property of the **Loop Container** activity of the **ForEach** activity. Note that if this activity is the first activity in the **For Each Loop**, **Current Item** is set automatically.  
+        1.  Set **Current Item** to the **Current Item** property of the **Loop Container** activity of the **ForEach** activity. 
+            > [!NOTE]
+            > If this activity is the first activity in the **For Each Loop**, **Current Item** is set automatically.  
 
         2.  Set the value of the **Property to Bind** property to the value of the property of the current activity that will use the **Current Item** value.  
 

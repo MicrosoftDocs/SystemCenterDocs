@@ -23,7 +23,7 @@ ms.assetid: 50891279-b22e-4d84-baf7-1488f6e9585b
 
 ::: moniker-end
 
-Service Manager automates a variety of information technology (IT) processes. For the Incident Management process; for example, Service Manager includes various automated steps, such as automated notifications to users when incidents are created or resolved and automatic routing of incidents to various queues, based on categorization. This automation is implemented by using workflows that are defined for the various solutions, and it uses Windows Workflow Foundation (WF) capabilities to describe, execute, and track the automated operations.
+Service Manager automates various information technology (IT) processes. For the Incident Management process; for example, Service Manager includes various automated steps, such as automated notifications to users when incidents are created or resolved and automatic routing of incidents to various queues, based on categorization. This automation is implemented by using workflows that are defined for the various solutions, and it uses Windows Workflow Foundation (WF) capabilities to describe, execute, and track the automated operations.
 
 Customers and partners can extend the included automation by defining new workflows and adding them into a process. Workflows can be set to occur on a fixed schedule or on a specified condition occurring in the database, for example, when an incident is created or when it changes to a specified state, such as **Active** or **Resolved**.
 
@@ -266,7 +266,7 @@ You can use the authoring pane of the Authoring Tool to author workflows in a ma
 
 ## Visual C# Code for the workflow
 
-The following sample shows the Visual C# code that the Authoring Tool generates for an example workflow that uses the **Set Activity Status to Completed** activity. This code declares a simple sequential workflow, **SetActivityStatusToCompleteWF**, that has one workflow parameter, the dependency property **ActivityId**. The value of **ActivityID** is determined by the management pack definitions that are shown later in this example. When the workflow runs, Service Manager identifies the value and passes it into the workflow.
+The following sample shows the Visual C# code that the Authoring Tool generates for an example workflow that uses the **Set Activity Status to Completed** activity. This code declares a simple sequential workflow, **SetActivityStatusToCompleteWF** that has one workflow parameter, the dependency property **ActivityId**. The value of **ActivityID** is determined by the management pack definitions that are shown later in this example. When the workflow runs, Service Manager identifies the value and passes it into the workflow.
 
 ```cs
 namespace WorkflowAuthoring
@@ -308,7 +308,7 @@ namespace WorkflowAuthoring
 
 ## XOML code for the workflow
 
-WF uses the XOML format for some of the workflow definitions. In the case of the example workflow, the Authoring Tool creates the file SetActivityStatusToCompleteWF.xoml with the following content:
+WF uses the XOML format for some of the workflow definitions. For the example workflow, the Authoring Tool creates the file SetActivityStatusToCompleteWF.xoml with the following content:
 
 ```xml
 <SequentialWorkflowActivity x:Class="WorkflowAuthoring.SetActivityStatusToCompleteWF" x:Name="SetActivityStatusToCompleteWF" xmlns:ns0="clr-namespace:Microsoft.ServiceManager.WorkflowAuthoring.ActivityLibrary;Assembly=Microsoft.ServiceManager.WorkflowAuthoring.ActivityLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml" xmlns="https://schemas.microsoft.com/winfx/2006/xaml/workflow">
@@ -328,7 +328,7 @@ The management pack defines the trigger of the workflow (when the new Service Ma
 
 The **Monitoring** section of the management pack contains the **Rule** definition for the workflow. In turn, the **Rule** definition has two parts, the **DataSource** element and the **WriteAction** element.
 
-In the case of the example workflow, the **DataSource** element contains a **Subscription** element, which specifies that the workflow should run when an instance of the **AddComputerToGroup** class (a custom Service Manager class) changes state to **Active**.
+For the example workflow, the **DataSource** element contains a **Subscription** element, which specifies that the workflow should run when an instance of the **AddComputerToGroup** class (a custom Service Manager class) changes state to **Active**.
 
 ```xml
 <Monitoring>
