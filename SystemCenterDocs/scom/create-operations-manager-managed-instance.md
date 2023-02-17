@@ -1,6 +1,6 @@
 ---
 ms.assetid: 
-title: Create an instance of Azure Monitor SCOM Managed Instance Preview
+title: Create an instance of Azure Monitor SCOM Managed Instance (preview)
 description: This article describes how to create a SCOM managed instance to monitor workloads by using System Center Operations Manager functionality on Azure.
 author: v-pgaddala
 ms.author: v-pgaddala
@@ -13,18 +13,18 @@ ms.topic: article
 monikerRange: 'sc-om-2022'
 ---
 
-# Create an instance of Azure Monitor SCOM Managed Instance Preview
+# Create an instance of Azure Monitor SCOM Managed Instance (preview)
 
-Azure Monitor SCOM Managed Instance Preview provides System Center Operations Manager functionality in Azure. It helps you monitor all your workloads, whether they're on-premises, in Azure, or in any other cloud services.
+Azure Monitor SCOM Managed Instance (preview) provides System Center Operations Manager functionality in Azure. It helps you monitor all your workloads, whether they're on-premises, in Azure, or in any other cloud services.
 
 This article describes how to create an instance of the service (a SCOM managed instance) with System Center Operations Manager functionality in Azure.
 
-For more information about deploying Azure Monitor SCOM Managed Instance, play the following video.
+For more information about deploying SCOM Managed Instance (preview), play the following video.
 
 > [!VIDEO https://www.youtube.com/embed/urxiQBkObkU]
 
 >[!Note]  
->In this preview of the service, you can create an instance only in the West Europe and West US regions.
+>In this preview of the service, you can create an instance only in the **West Europe** and **West US** regions.
 
 ## Prerequisites
 
@@ -33,9 +33,9 @@ Before you create a SCOM managed instance, use all three of the following tabs t
 # [General pointers](#tab/pointers-general)
 
 - Ensure that you have at least four virtual cores (one virtual machine) of type Standard DSv2 in your Azure subscription to deploy an instance.
-- Ensure that you allow port 1433 (private port) from Azure Monitor SCOM Managed Instance to Azure SQL Managed Instance.
+- Ensure that you allow port 1433 (private port) from SCOM Managed Instance (preview) to Azure SQL Managed Instance.
 - If you enable public endpoint on Azure SQL Managed Instance, ensure that you allow port 3342.
-- To help ensure reliability and support easy scaling, Azure Monitor SCOM Managed Instance creates a standard load balancer and a uniform virtual machine scale set. For more information, see [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) and [Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview).
+- To help ensure reliability and support easy scaling, SCOM Managed Instance (preview) creates a standard load balancer and a uniform virtual machine scale set. For more information, see [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) and [Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview).
 
 # [In your Active Directory domain](#tab/prereqs-active)
 
@@ -45,15 +45,15 @@ Before you create a SCOM managed instance, use all three of the following tabs t
 
 ## Establish direct connectivity (line of sight) between your domain controller and the Azure network
 
-Ensure that there's direct network connectivity (line of sight) between the network that has your domain controller and the network in which you'll deploy a SCOM managed instance. This is required so that all your resources (domain controller, agents, System Center Operations Manager components such as the Ops console, and Azure Monitor SCOM Managed Instance Preview components such as management servers) can communicate with each other over the network.
+Ensure that there's direct network connectivity (line of sight) between the network that has your domain controller and the network in which you'll deploy a SCOM managed instance. This is required so that all your resources (domain controller, agents, System Center Operations Manager components such as the Ops console, and SCOM Managed Instance (preview) components such as management servers) can communicate with each other over the network.
 
 If your domain controller or any other component is on-premises, you can establish the line of sight through Azure ExpressRoute or VPN. For more information, see [ExpressRoute documentation](/azure/expressroute/) and [Azure VPN Gateway documentation](/azure/vpn-gateway/).
 
 If your domain controller and all other components are in Azure (a conventional domain controller and not Azure Active Directory) with no presence on-premises, a virtual network will work. (ExpressRoute isn't required.) If you're using one virtual network to host all your components, you'll already have a line of sight between all your components. If you have multiple virtual networks, you'll need to do virtual network peering between all the virtual networks that are in your network. For more information, see  [Virtual network peering in Azure](/azure/virtual-network/virtual-network-peering-overview).
 
-Allow communication on ports 5723, 5724, and 443 between Azure Monitor SCOM Managed Instance and the virtual machine being monitored, and vice versa.
+Allow communication on ports 5723, 5724, and 443 between SCOM Managed Instance (preview) and the virtual machine being monitored, and vice versa.
 
-The Active Directory web service must run on domain controllers. The firewall rule and network security group (NSG) must allow communication on port 9389 between the Azure Monitor SCOM Managed Instance virtual network and the domain controller.
+The Active Directory web service must run on domain controllers. The firewall rule and network security group (NSG) must allow communication on port 9389 between the SCOM Managed Instance (preview) virtual network and the domain controller.
 
 To ensure the functioning of Active Directory commands on a SCOM managed instance, verify that the following ports are accessible from the virtual network or subnet:
 
@@ -68,12 +68,12 @@ We recommend a NAT gateway for outbound internet access from subnets. Edit the s
 To create a NAT gateway, follow these steps:
 
 1. Create a NAT gateway in the same region where the virtual network is present.
-1. Create a NAT gateway in the same subscription that you use for Azure Monitor SCOM Managed Instance.
+1. Create a NAT gateway in the same subscription that you use for SCOM Managed Instance (preview).
 1. Create a public IP.
 
    :::image type="NAT gateway" source="media/create-operations-manager-managed-instance/nat-gateway.png" alt-text="Screenshot of public IP information for a NAT gateway.":::
 
-1. Select a virtual network and subnet for Azure Monitor SCOM Managed Instance.
+1. Select a virtual network and subnet for SCOM Managed Instance (preview).
 
 ## Configure a domain account in Active Directory
 
@@ -101,7 +101,7 @@ To manage this computer group, provide permissions to the domain account that yo
 
 ## Create a static IP and configure the DNS name
 
-For all the System Center Operations Manager components to communicate with the load balancer that the Azure Monitor SCOM Managed Instance Preview service will create, you need a static IP and DNS name for the load balancer's front-end configuration.
+For all the System Center Operations Manager components to communicate with the load balancer that the SCOM Managed Instance (preview) service will create, you need a static IP and DNS name for the load balancer's front-end configuration.
 
 Ensure that the static IP is in the subnet that you created during virtual network creation. Create a DNS name (according to your organization's policy) for the static IP.
 
@@ -109,7 +109,7 @@ Ensure that the static IP is in the subnet that you created during virtual netwo
 
 ## Create and configure a gMSA account
 
-Create a gMSA to run and authenticate the services for the management server. Use the following command to create a gMSA:
+Create a gMSA to run the management server services and to authenticate the services. Use the following command to create a gMSA:
 
 ```powershell
 New-ADServiceAccount ContosogMSA -DNSHostName "ContosoLB.aquiladom.com" -PrincipalsAllowedToRetrieveManagedPassword "ContosoServerGroup" -KerberosEncryptionType, AES128, AES256 -ServicePrincipalNames MSOMHSvc/ContosoLB.aquiladom.com, MSOMHSvc/ContosoLB, MSOMSdkSvc/ContosoLB.aquiladom.com, MSOMSdkSvc/ContosoLB 
@@ -131,10 +131,10 @@ Ensure that the created gMSA account is a local admin account. If there are any 
 
 # [In the Azure portal](#tab/prereqs-portal)
 
-## Register the Azure Monitor SCOM Managed Instance resource provider
+## Register the SCOM Managed Instance (preview) resource provider
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and select **Subscriptions**.
-2. Select the subscription where you want to deploy Azure Monitor SCOM Managed Instance Preview.
+2. Select the subscription where you want to deploy SCOM Managed Instance (preview).
 3. Under **Settings**, select **Resource providers**.
 4. Search for **SCOM** and register **Microsoft.Scom**.
 5. On the **Subscription** page, under **Settings**, select **Resource providers** and search for **microsoft.insights**. If the **microsoft.insights** provider isn't registered, select the provider and then select **Register**.
@@ -143,7 +143,7 @@ Ensure that the created gMSA account is a local admin account. If there are any 
 
 ## Create a managed service identity
 
-The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory (Azure AD) authentication. For Azure Monitor SCOM Managed Instance Preview, a managed identity will replace the traditional four System Center Operations Manager service accounts. It will be used to access the Azure SQL Managed Instance database. You can also use the MSI to access the key vault.
+The managed service identity (MSI) provides an identity for applications to use when they're connecting to resources that support Azure Active Directory (Azure AD) authentication. For SCOM Managed Instance (preview), a managed identity will replace the traditional four System Center Operations Manager service accounts. It will be used to access the Azure SQL Managed Instance database. You can also use the MSI to access the key vault.
 
 >[!Note]
 >- Ensure that you're a contributor in the subscription where you create the MSI.
@@ -180,12 +180,12 @@ Before you create a SCOM managed instance, create a SQL managed instance. For mo
 
 We recommend the following settings for creating a SQL managed instance:
 
-- **Resource group**: Create a new resource group for Azure SQL Managed Instance Preview. A best practice is to create a new resource group for large Azure resources.
-- **Managed instance name**: Choose a unique name. This name will be used while you create a SCOM managed instance to refer to this SQL managed instance.
+- **Resource Group**: Create a new resource group for Azure SQL Managed Instance (preview). A best practice is to create a new resource group for large Azure resources.
+- **Managed Instance name**: Choose a unique name. This name will be used while you create a SCOM managed instance to refer to this SQL managed instance.
 - **Region**: Choose the region close to you. There's no strict requirement on region for the instance, but we recommend the closest region for latency purposes.
-- **Compute + storage**: General Purpose (Gen5) with eight cores is the default. This configuration will suffice for the SCOM managed instance.
-- **Authentication method**: Select **SQL Authentication**. Enter the credentials that you want to use for accessing the SQL managed instance. These credentials don't refer to any that you've created so far.
-- **VNet**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM managed instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM managed instance. If you choose a different virtual network, ensure that it has connectivity to the Azure Monitor SCOM Managed Instance virtual network.
+- **Compute+Storage**: General Purpose (Gen5) with eight cores is the default. This configuration will suffice for the SCOM managed instance.
+- **Authentication Method**: Select **SQL Authentication**. Enter the credentials that you want to use for accessing the SQL managed instance. These credentials don't refer to any that you've created so far.
+- **VNet**: This SQL managed instance needs to have direct connectivity (line of sight) to the SCOM managed instance that you create in the future. Choose a virtual network that you'll eventually use for your SCOM managed instance. If you choose a different virtual network, ensure that it has connectivity to the SCOM Managed Instance (preview) virtual network.
 
    The subnet that you provide to Azure SQL Managed Instance has to be dedicated (delegated) to the SQL managed instance. The provided subnet can't be used to house any other resources. 
 
@@ -193,21 +193,21 @@ We recommend the following settings for creating a SQL managed instance:
 - **Connection Type**: By default, the connection type is **Proxy**.
 - **Public Endpoint**: This setting can be either **Enabled** or **Disabled**. To use Power BI reporting, you need to enable the public endpoint.
 
-  If the Azure SQL Managed Instance virtual network is different from the Azure Monitor SCOM Managed Instance virtual network:
+  If the Azure SQL Managed Instance virtual network is different from the SCOM Managed Instance (preview) virtual network:
 
   - If you choose to enable, create an inbound NSG rule on the Azure SQL Managed Instance subnet to allow traffic from the System Center Operations Manager virtual network or subnet to port 3342. For more information, see [Configure a public endpoint in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql&preserve-view=true).
-  - If you choose to disable, be sure to peer your Azure SQL Managed Instance virtual network with the one in which System Center Operations Manager and Azure Monitor SCOM Managed Instance are present.
+  - If you choose to disable, be sure to peer your Azure SQL Managed Instance virtual network with the one in which System Center Operations Manager and SCOM Managed Instance (preview) are present.
 
 For the rest of the settings on the other tabs, you can leave them as default or change them according to your requirements.
 
 >[!Note]
 > Creation of a new SQL managed instance can take up to six hours.
 
-After you create a SQL managed instance, you need to provide permission to the Azure Monitor SCOM Managed Instance resource provider to access this SQL managed instance.
+After you create a SQL managed instance, you need to provide permission to the SCOM Managed Instance (preview) resource provider to access this SQL managed instance.
 
 To provide the permission, do the following:
 
-1. Open the SQL managed instance and select **Access control (IAM)**. On the top menu, select **+ Add** > **Add role assignment**.
+1. Open the SQL managed instance and select **Access control (IAM)**. On the top menu, select **+Add** > **Add role assignment**.
    :::image type="Access control" source="media/create-operations-manager-managed-instance/access-control.png" alt-text="Screenshot that shows selections for starting the process of adding a role assignment for access control.":::
 1. On the **Add role assignment** pane:
    - For **Role**, select **Reader** from the dropdown list.
@@ -218,7 +218,7 @@ To provide the permission, do the following:
 
 ### Set the Active Directory admin value in the SQL managed instance
 
-To set the Active Directory admin value in the SQL managed instance, use the following steps.
+To set the Active Directory admin value in the SQL managed instance, use the following steps:
 
 >[!Note]
 >You must have Global Administrator or Privileged Role Administrator permissions for the subscription.
@@ -226,10 +226,10 @@ To set the Active Directory admin value in the SQL managed instance, use the fol
 1. Open the SQL managed instance. Under **Settings**, select **Active Directory admin**.
    :::image type="Active directory admin" source="media/create-operations-manager-managed-instance/active-directory-admin.png" alt-text="Screenshot of the pane for Active Directory admin information.":::
 
-2. Select **Set admin**, and search for your MSI. This is the same MSI that you provided during the Azure Monitor SCOM Managed Instance creation flow. You'll find the admin added to the SQL managed instance.
+2. Select **Set admin**, and search for your MSI. This is the same MSI that you provided during the SCOM Managed Instance (preview) creation flow. You'll find the admin added to the SQL managed instance.
    :::image type="Azure Active directory admin" source="media/create-operations-manager-managed-instance/azure-active-directory.png" alt-text="Screenshot of MSI information for Azure Active Directory.":::
 
-3. If you get an error after you add a managed identity account, read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your instance, or your instance creation will fail.
+3. If you get an error after you add a managed identity account, it indicates that read permissions aren't yet provided to your identity. Be sure to provide the necessary permissions before you create your instance, or your instance creation will fail.
    :::image type="SQL Active directory admin" source="media/create-operations-manager-managed-instance/sql-active-directory-admin.png" alt-text="Screenshot that shows successful Active Directory authentication.":::
 
 For more information about permissions, see [Directory Readers role in Azure Active Directory for Azure SQL](/azure/azure-sql/database/authentication-aad-directory-readers-role?view=azuresql&preserve-view=true).
@@ -297,7 +297,9 @@ Azure Key Vault is a cloud service that provides a secure store for keys, secret
     :::image type="content" source="./media/create-operations-manager-managed-instance/secrets-inline.png" alt-text="Screenshot of the pane for secrets." lightbox="./media/create-operations-manager-managed-instance/secrets-expanded.png":::
 
      >[!Note]
-     > You must create two secrets to store the domain account credentials: username and password.
+     > You must create two secrets to store the domain account credentials: 
+     > - Username
+     > - Password
 
 1. Select **+ Generate/Import**.
 
@@ -324,7 +326,7 @@ To create a SCOM managed instance, follow these steps:
     - **SCOM managed instance**: Allows you to create a SCOM managed instance.
     - **Manage your SCOM managed instance**: Allows you to view the list of created instances.
 
-    :::image type="Azure Monitor SCOM Managed Instance Overview" source="media/create-operations-manager-managed-instance/scom-mi-overview.png" alt-text="Screenshot that shows options on the overview page for Azure Monitor SCOM Managed Instance.":::
+    :::image type="SCOM Managed Instance (preview) overview" source="media/create-operations-manager-managed-instance/scom-mi-overview.png" alt-text="Screenshot that shows options on the overview page for SCOM Managed Instance (preview).":::
 
     Select **Create SCOM managed instance**.
 1. The **Prerequisites to create SCOM managed instance** page opens. Download the script and run it on a domain-joined machine to validate the prerequisites.
@@ -332,7 +334,7 @@ To create a SCOM managed instance, follow these steps:
 1. Under **Basics**, do the following:
     - **Project details**:
         - **Subscription**: Select the Azure subscription in which you want to place the SCOM managed instance.
-        - **Resource group**: Select the resource group in which you want to place the SCOM managed instance. If you don't have a resource group, select **Create new** to create a new resource group, and then place the instance. We recommend that you have a new resource group exclusively for Azure Monitor SCOM Managed Instance.
+        - **Resource group**: Select the resource group in which you want to place the SCOM managed instance. If you don't have a resource group, select **Create new** to create a new resource group, and then place the instance. We recommend that you have a new resource group exclusively for SCOM Managed Instance (preview).
 
         :::image type="Project details" source="media/create-operations-manager-managed-instance/project-details.png" alt-text="Screenshot that shows project details for creating a SCOM managed instance.":::
 
@@ -370,12 +372,12 @@ To create a SCOM managed instance, follow these steps:
         - **Virtual network**: Select the virtual network that has direct connectivity to the workloads that you want to monitor and to your domain controller and DNS server.
         - **Subnet**: Select a subnet that has at least 32 IP addresses to house the instance. The minimum address space is 28.
 
-           The subnet can have existing resources in it. However, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the Azure Monitor SCOM Managed Instance components.
+           The subnet can have existing resources in it. However, don't choose the subnet that houses the SQL managed instance because it won't contain enough IP addresses to house the SCOM Managed Instance (preview) components.
 
            >[!Note]
            >Ensure that you have a NAT gateway associated with the subnet that you choose.
     - **SCOM managed instance interface**:
-        - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for Azure Monitor SCOM Managed Instance.
+        - **Static IP**: Enter the static IP for the load balancer. This IP should be in the selected subnet range for SCOM Managed Instance (preview).
         - **DNS name**: Enter the DNS name that you attached to the static IP from the preceding step.
     - **gMSA details**:
         - **Computer group name**: Enter the name of the computer group that you create after creation of the gMSA account.
@@ -387,7 +389,7 @@ To create a SCOM managed instance, follow these steps:
     - **SQL managed instance**: For **Resource Name**, select the Azure SQL Managed Instance resource name for the instance that you want to associate with this SCOM managed instance. Use only the SQL managed instance that has given permissions to the SCOM managed instance. For more information, see [SQL managed instance creation and permission](/system-center/scom/create-operations-manager-managed-instance?view=sc-om-2022&tabs=prereqs-portal#create-and-configure-a-sql-mi&preserve-view=true).
     - **User managed identity**: For **User managed identity account**, select the managed identity that you created and for which you provided admin permissions to the SQL managed instance. Ensure that the same MSI has read permissions on the key vault for domain account credentials.
 1. Select **Next**.
-1. Under **Tags**, enter the **Name** value, and then select the resource.
+1. Under **Tags**, enter the **Name, value** information, and then select the resource.
    
    Tags help you categorize resources and view consolidated billing by applying the same tags to multiple resources and resource groups. For more information, see [Use tags to organize your Azure resources and management hierarchy](/azure/azure-resource-manager/management/tag-resources?wt.mc_id=azuremachinelearning_inproduct_portal_utilities-tags-tab&tabs=json).
 1. Select **Next**.
@@ -402,7 +404,7 @@ To create a SCOM managed instance, follow these steps:
 
 ## Next steps
 
-- [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance](migrate-to-operations-manager-managed-instance.md)
-- [Scale Azure Monitor SCOM Managed Instance](scale-scom-managed-instance.md)
+- [Migrate from Operations Manager on-premises to SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
+- [Scale SCOM Managed Instance (preview)](scale-scom-managed-instance.md)
 
-To provide feedback on Azure Monitor SCOM Managed Instance, use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
+To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
