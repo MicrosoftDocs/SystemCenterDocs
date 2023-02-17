@@ -404,7 +404,7 @@ To create a SCOM managed instance, follow these steps:
 
 ## Next steps
 
-- [Migrate from Operations Manager on-premises to SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
-- [Scale SCOM Managed Instance (preview)](scale-scom-managed-instance.md)
+- [Migrate from Operations Manager on-premises to Azure Monitor SCOM Managed Instance (preview)](migrate-to-operations-manager-managed-instance.md)
+- [Scale Azure Monitor SCOM Managed Instance (preview)](scale-scom-managed-instance.md)
 
 To provide feedback on SCOM Managed Instance (preview), use [this online form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).
