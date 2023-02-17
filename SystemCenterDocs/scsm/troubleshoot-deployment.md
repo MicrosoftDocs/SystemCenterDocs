@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot System Center - Service Manager deployment issues
 description: Describes how to troubleshoot System Center - Service Manager deployment issues.
-manager: evansma
+manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -29,20 +29,20 @@ A log file, SCSMInstall.log, captures the progress of the installation. You can 
 
 ## Event logs
 
-Service Manager event logs are located in Event Viewer, in the **Application and Service Logs/Microsoft/Operations Manager** folder.
+Service Manager event logs are located in Event Viewer in the **Application and Service Logs/Microsoft/Operations Manager** folder.
 
 ## Create database error
 
 During setup, when you were configuring Service Manager or data warehouse databases, you were given the opportunity to specify how much disk space to allocate for each database. The default setting is 2,000 megabytes (MB) (2 gigabytes (GB)). In addition to the disk space that is required for the database, Service Manager sets aside additional space for file groups and log files. The additional space that is required for the file groups and log files can be equal to the space that is required for the database.
 
-If there is insufficient disk space available, a message appears, indicating that an error occurred during execution of a custom action: `_CreateDatabase`. The installation stops before permanent changes are made. If you examine the Service Manager setup log, you find the following string:
+If there's insufficient disk space available, a message appears indicating that an error occurred during the execution of a custom action: `_CreateDatabase`. The installation stops before permanent changes are made. If you examine the Service Manager setup log, you find the following string:
 
 ```
 Additional Error Description : MODIFY FILE encountered operating system error 112(There is not enough space on the disk.) while attempting to expand the physical file
 ```
 
-You have to either increase the amount of free disk space that is available or reduce the amount of space that Service Manager allocates for the database, and then attempt the installation again. If you are installing Service Manager in a nonproduction environment, you can specify as little as 500 MB for the database.
+You've to either increase the amount of free disk space that is available or reduce the amount of space that Service Manager allocates for the database, and then attempt the installation again. If you're installing Service Manager in a nonproduction environment, you can specify as little as 500 MB for the database.
 
 ## Next steps
 
-- Review [Deploy Service Manager from a command line](deploy-cmd-line.md) to deploy Service Manager using command-line parameters.
+- To deploy Service Manager using command-line parameters, review [Deploy Service Manager from a command line](deploy-cmd-line.md).

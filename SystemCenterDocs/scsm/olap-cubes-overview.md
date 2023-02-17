@@ -1,7 +1,7 @@
 ---
 title: Overview of OLAP cubes for advanced analytics
-description: Provides an overview of Service Manger OLAP cubes for advanced analytics.
-manager: evansma
+description: Provides an overview of Service Manager OLAP cubes for advanced analytics.
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 36e556eb-3db1-4900-be1a-a44dc0073d3e
 ---
 
-# Overview of Service Manger OLAP cubes for advanced analytics
+# Overview of Service Manager OLAP cubes for advanced analytics
 
 ::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
 
@@ -23,7 +23,7 @@ ms.assetid: 36e556eb-3db1-4900-be1a-a44dc0073d3e
 
 ::: moniker-end
 
-In Service Manager, data that is present in the data warehouse can be consolidated from various sources. It is presented through Service Manager by using predefined and customized Microsoft Online Analytical Processing \(OLAP\) data cubes. In short, advanced analytics in Service Manager consist of publishing, viewing, and manipulating cube data, usually in either Microsoft Excel or Microsoft SharePoint. Excel is primarily used by itself to view and manipulate data. SharePoint is used primarily as a means of publishing and sharing cube data.  
+In Service Manager, data that is present in the data warehouse can be consolidated from various sources. It's presented through Service Manager by using predefined and customized Microsoft Online Analytical Processing \(OLAP\) data cubes. In short, advanced analytics in Service Manager consist of publishing, viewing, and manipulating cube data, usually in either Microsoft Excel or Microsoft SharePoint. Excel is primarily used by itself to view and manipulate data. SharePoint is used primarily as a means of publishing and sharing cube data.  
 
 Service Manager includes a System Center-wide data warehouse. Therefore, data from Operations Manager, Configuration Manager, and Service Manager can be consolidated into the data warehouse, where you can easily use multiple data views to get any information that you might want. This is also an interface where you can put data into the same data warehouse from your own custom sources, such as SAP applications or a third\-party human resources application. This consolidation creates a common data model and enables enriched analyses to help you build a data warehouse across your Information Technology \(IT\) organization that can serve all your business intelligence and reporting needs.  
 
@@ -42,7 +42,7 @@ The databases that a business uses to store all its transactions and records are
 
 OLAP cubes can be considered as the final piece of the puzzle for a data warehousing solution. An OLAP cube, also known as multidimensional cube or hypercube, is a data structure in SQL&nbsp;Server Analysis Services \(SSAS\) that is built, using OLAP databases, to allow near\-instantaneous analysis of data. The topology of this system is shown in the following illustration.  
 
- ![Diagram of the Service Manager 2016 DW](./media/olap-cubes-overview/ops-dw2012.png)  
+ ![Diagram of the Service Manager 2016 DW.](./media/olap-cubes-overview/ops-dw2012.png)  
 
 The useful feature of an OLAP cube is that the data in the cube can be contained in an aggregated form. To the user, the cube seems to have the answers in advance because assortments of values are already precomputed. Without having to query the source OLAP database, the cube can return answers for a wide range of questions almost instantaneously.  
 
@@ -53,7 +53,7 @@ The main goal of Service Manager OLAP cubes is to give software vendors or infor
 -   Allowing users to use self\-service business intelligence tools, such as Excel, to analyze the data from multiple perspectives.  
 -   Saving generated Excel reports for future reference.  
 
-To see how data warehouse cubes are represented in the Service Manager console, navigate to the **Data Warehouse** workspace, and then click **Cubes**.  
+To see how data warehouse cubes are represented in the Service Manager console, navigate to the **Data Warehouse** workspace, and select **Cubes**.  
 
 
 
@@ -61,7 +61,7 @@ To see how data warehouse cubes are represented in the Service Manager console, 
 
 The following illustration shows an image from SQL&nbsp;Server Business Intelligence Development Studio \(BIDS\) that depicts the main parts that are required for online analytical processing \(OLAP\) cubes. These parts are the data source, data source view, cubes, and dimensions. The following sections describe the OLAP cube parts and the actions that users can take using them.  
 
- ![Image of cube architecture](./media/olap-cubes-overview/ops-cubedimensions.png)  
+ ![Image of the cube architecture.](./media/olap-cubes-overview/ops-cubedimensions.png)  
 
 ### Data source  
 
@@ -69,7 +69,7 @@ A data source is the origin of all the data that is contained within an OLAP cub
 
 ### Data source view  
 
-The data source view \(DSV\) is a collection of views that represent the dimension, fact, and outrigger tables from the data source, such as the Service Manager data marts. The DSV contains all the relationships between tables, such as primary and foreign keys. In other words, the DSV specifies how the SSAS database will map to the relational schema, and it provides a layer of abstraction on top of the relational database. Using this layer of abstraction, relationships can be defined between fact and dimension tables, even if no relationships exist within the source relational database. Named calculations, custom measures, and new attributes may also be defined in the DSV that may not natively exist in the data warehouse dimensional schema. For example, a named calculation that defines a Boolean value for *Incidents Resolved* calculates the value as true if an incident's status is resolved or closed. Using the named calculation, Service Manager can then define a measure to display useful information such as the percentage of incidents resolved, the total number of incidents resolved, and the total number of incidents that are not resolved.  
+The data source view \(DSV\) is a collection of views that represent the dimension, fact, and outrigger tables from the data source, such as the Service Manager data marts. The DSV contains all the relationships between tables, such as primary and foreign keys. In other words, the DSV specifies how the SSAS database will map to the relational schema, and it provides a layer of abstraction on top of the relational database. Using this layer of abstraction, relationships can be defined between fact and dimension tables, even if no relationships exist within the source relational database. Named calculations, custom measures, and new attributes may also be defined in the DSV that may not natively exist in the data warehouse dimensional schema. For example, a named calculation that defines a Boolean value for *Incidents Resolved* calculates the value as true if an incident's status is resolved or closed. Using the named calculation, Service Manager can then define a measure to display useful information such as the percentage of incidents resolved, the total number of incidents resolved, and the total number of incidents that aren't resolved.  
 
 Another quick example of a named calculation is *ReleasesImplementedOnSchedule*. This named calculation provides a quick health status check on the number of release records in which the actual end date is less than or equal to the scheduled end date.  
 
@@ -79,11 +79,11 @@ An OLAP cube is a data structure that overcomes limitations of relational databa
 
 #### Dimensions  
 
-A dimension in SSAS references a dimension from the Service Manager data warehouse. In Service Manager, a dimension is roughly equivalent to a management pack class. Each management pack class has a list of properties, while each dimension contains a list of attributes, with each attribute mapping to one property in a class. Dimensions allow the filtering, grouping, and labeling of data. For example, you can filter computers by the installed operating system and group people into categories by gender or age. The data can then be presented in a format where the data is categorized naturally into these hierarches and categories to allow a more in\-depth analysis. Dimensions may also have natural hierarches to allow users to "drill down" to more detailed levels of detail. For instance, the Date dimension has a hierarchy that can be drilled down by Year, then Quarter, then Month, then Week, and then Day.  
+A dimension in SSAS references a dimension from the Service Manager data warehouse. In Service Manager, a dimension is roughly equivalent to a management pack class. Each management pack class has a list of properties, while each dimension contains a list of attributes, with each attribute mapping to one property in a class. Dimensions allow the filtering, grouping, and labeling of data. For example, you can filter computers by the installed operating system and group people into categories by gender or age. The data can then be presented in a format where the data is categorized naturally into these hierarchies and categories to allow a more in\-depth analysis. Dimensions may also have natural hierarchies to allow users to "drill down" to more detailed levels of detail. For instance, the Date dimension has a hierarchy that can be drilled down by Year, then Quarter, then Month, then Week, and then Day.  
 
 The following illustration shows an OLAP cube that contains the Date, Region, and Product dimensions.  
 
-![Diagram of cube dimensions](./media/olap-cubes-overview/ops-dimensions.png)  
+![Diagram of cube dimensions.](./media/olap-cubes-overview/ops-dimensions.png)  
 
 For example, Microsoft team members might want a quick and simple summary of the sales of the Xbox&nbsp;One gaming console in applicable version. They can further drill down to get sales figures for a more focused time frame. Business analysts may want to examine how the sales of Xbox&nbsp;One consoles were affected by the launch of the new console design and the Kinect for Xbox&nbsp;One. This helps them determine what sales trends are occurring and what potential revisions of business strategy are needed. By filtering on the date dimension, this information can be quickly delivered and consumed. This slicing and dicing of data is enabled only because the dimensions have been designed with attributes and data that can easily be filtered and grouped by the customer.  
 
@@ -103,34 +103,34 @@ Measures are values that usually map to numeric columns in a data warehouse fact
 
 Aggregation functions are calculated on measures to enable further data analysis. The most common aggregation function is Sum. A common OLAP cube query, for example, sums up the total time for all activities that are *In Progress*. Other common aggregation functions include Min, Max, and Count.  
 
-After the raw data has been processed in an OLAP cube, users can perform more complex calculations and queries using multidimensional expressions \(MDX\) to define their own measure expressions or calculated members. MDX is the industry standard for querying and accessing data that is stored in OLAP systems. SQL&nbsp;Server was not designed to work with the data model that multidimensional databases support.  
+After the raw data has been processed in an OLAP cube, users can perform more complex calculations and queries using multidimensional expressions \(MDX\) to define their own measure expressions or calculated members. MDX is the industry standard for querying and accessing data that is stored in OLAP systems. SQL&nbsp;Server wasn't designed to work with the data model that multidimensional databases support.  
 
 #### Drill-down  
 
-When a user drills down into the data in an OLAP cube, the user is analyzing the data at a different level of summarization. The level of detail of the data changes as the user drills down, examining the data at different levels in the hierarchy. As the user drills down, he or she moves from summary information to data with a more narrow focus. The following are examples of drilling down:  
+When a user drills down into the data in an OLAP cube, the user is analyzing the data at a different level of summarization. The level of detail of the data changes as the user drills down, examining the data at different levels in the hierarchy. As the users drill down, they move from summary information to data with a more narrow focus. The following are examples of drilling down:  
 
 -   Drilling down into data to look at demographic information about the population of the United States, then into the state of Washington, then into the metropolitan area of Seattle, then into the city of Redmond, and finally into the population at Microsoft.  
 -   Drilling down into sales figures for Xbox&nbsp;One consoles for the 2015 calendar year, then the fourth quarter of the year, then the month of December, then the week before Christmas, and finally Christmas Eve.  
 
 #### Drill through  
 
-When users *drill-through* data, they want to see all the individual transactions that contributed to the OLAP cube's aggregated data. In other words, the user can retrieve the data at a lowest level of detail for a given measure value. For example, when you are given the sales data for a particular month and product category, you can drill through that data to see a list of each table row that is contained within that cell of data.  
+When users *drill-through* data, they want to see all the individual transactions that contributed to the OLAP cube's aggregated data. In other words, the user can retrieve the data at a lowest level of detail for a given measure value. For example, when you're given the sales data for a particular month and product category, you can drill through that data to see a list of each table row that is contained within that cell of data.  
 
 It is common to confuse the terms "drill down" and "drill through" with each other. The main difference between them is that a drill\-down operates on a predefined hierarchy of data-for example, USA, then into Washington, then into Seattle-within the OLAP cube. A drill\-through go directly to the lowest level of detail of data and retrieves a set of rows from the data source that has been aggregated into a single cell.  
 
 #### Key performance indicator  
 
-Organizations can use key performance indicators \(KPIs\) to gauge the health of their enterprise and their performance by measuring their progress toward their goals. KPIs are business metrics that can be defined to monitor progress toward certain predefined objectives and goals. A KPI usually has a target value and an actual value, which represents a quantitative goal that is critical to the success of the organization. KPIs are usually displayed in groups on a scorecard to show the overall health of the business in one quick snapshot.  
+Organizations can use key performance indicators \(KPIs\) to gauge the health of their enterprise and their performance by measuring their progress toward their goals. KPIs are business metrics that can be defined to monitor progress toward certain predefined objectives and goals. A KPI has a target value and an actual value, which represents a quantitative goal that is critical to the success of the organization. KPIs are displayed in groups on a scorecard to show the overall health of the business in one quick snapshot.  
 
 An example of a KPI is to complete all change requests within 48 hours. A KPI can be used to measure the percentage of change requests that are resolved within that time frame. You can create dashboards to represent KPIs visually. For example, you might want to define a KPI target value for completion of all change requests within 48 hours to 75&nbsp;percent.  
 
 #### Partitions  
 
-A partition is a data structure that holds some or all of the data in a measure group. Every measure group is divided into partitions. A partition defines a subset of the fact data that is loaded into the measure group. SSAS Standard Edition allows only one partition per measure group, while SSAS Enterprise Edition allows a measure group to contain multiple partitions. Partitions are a feature that is transparent to the end user, but they have a major impact on both the performance and the scalability of OLAP cubes. All partitions for a measure group always exist in the same physical database.  
+A partition is a data structure that holds some or all of the data in a measure group. Every measure group is divided into partitions. A partition defines a subset of the fact data that is loaded into the measure group. SSAS Standard Edition allows only one partition per measure group, while SSAS Enterprise Edition allows a measure group to contain multiple partitions. Partitions are a feature that is transparent to the end-user, but they have a major impact on both the performance and the scalability of OLAP cubes. All partitions for a measure group always exist in the same physical database.  
 
 Partitions make it possible for an administrator to better manage an OLAP cube and improve an OLAP cube's performance. For example, you can remove or reprocess the data in one partition of a measure group without affecting the rest of the measure group. When you load new data into a fact table, only the partitions that should contain the new data are affected.  
 
-Partitioning also improves processing and query performance for OLAP cubes. SSAS can process multiple partitions in parallel, leading to a much more efficient use of CPU and memory resources on the server. While it runs a query, SSAS fetches, processes, and aggregates data from multiple partitions as well. Only partitions that contain the data that is relevant to a query are scanned, which reduces the overall amount of input and output.  
+Partitioning also improves processing and query performance for OLAP cubes. SSAS can process multiple partitions in parallel, leading to a much more efficient use of CPU and memory resources on the server. While it runs a query, SSAS fetches, processes, and aggregates data from multiple partitions as well, only partitions that contain the data that is relevant to a query are scanned, which reduces the overall amount of input and output.  
 
 One example of a partitioning strategy is to place the fact data for each month into a monthly partition. At the end of each month, all the new data goes into a new partition, which leads to a natural distribution of data with nonoverlapping values.  
 
@@ -174,7 +174,7 @@ To do this, the Structured Query Language \(SQL\) table etl.TablePartition is re
 
 Remember the following about cube processing:  
 
-- Only measure groups that are targeted at facts contain multiple partitions in SQL&nbsp;Server Standard Edition. By default, all measure groups and dimensions contain only one partition. Therefore, the partition does not have any boundary conditions.  
+- Only measure groups that are targeted at facts contain multiple partitions in SQL&nbsp;Server Standard Edition. By default, all measure groups and dimensions contain only one partition. Therefore, the partition doesn't have any boundary conditions.  
 - The partition boundaries are defined by a query binding that is based on datekeys that match up to the datekeys for the corresponding fact partition in the etl.TablePartition table.  
 
 
@@ -186,9 +186,9 @@ To summarize, a deployable element returns a deployer with a collection of resou
 
 The dbo.Selector table in the DWStagingAndConfig database contains an entry for both the SystemCenterCube and CubeExtension management pack elements. The deployment engine uses this metadata if additional deployment processing is necessary for a management pack element when the management pack is imported into the data warehouse using the MPSync job.  
 
-Deployments use the Analysis Management Objects \(AMO\) application programming interface \(API\) to create and modify all the cube components in the SSAS database. Specifically, AMO in disconnected mode is used because the CubeDeployable element will not have a connection to the SSAS database. Working with AMO in disconnected mode makes it possible for you to create the entire tree of AMO objects without establishing a connection to the server. Service Manager then serializes the hierarchy of objects as stream resources and attaches them to the deployer object that is passed back to the deployment infrastructure. The deployer object is then deserialized, establishes a connection to the SSAD database, and creates the objects by sending the appropriate requests to the server.  
+Deployments use the Analysis Management Objects \(AMO\) application programming interface \(API\) to create and modify all the cube components in the SSAS database. Specifically, AMO in disconnected mode is used because the CubeDeployable element won't have a connection to the SSAS database. Working with AMO in disconnected mode makes it possible for you to create the entire tree of AMO objects without establishing a connection to the server. Service Manager then serializes the hierarchy of objects as stream resources and attaches them to the deployer object that is passed back to the deployment infrastructure. The deployer object is then deserialized, establishes a connection to the SSAD database, and creates the objects by sending the appropriate requests to the server.  
 
-Only major objects can be serialized. In AMO, major objects are considered classes that represent a complete object as a complete entity and not as part of another object. For example, major objects include Server, Cube, and Dimension, which are all stand\-alone entities. The DimensionAttribute, however, is not a major object because it can only be created as part of a parent major object of Dimension. DimensionAttribute, therefore, is a minor object. The OLAP cube design focuses on creating all the major objects that are needed for cubes, along with any dependent minor objects. These major objects are the objects that will be serialized-and, eventually, deserialized-before the objects are created in the SSAS database.  
+Only major objects can be serialized. In AMO, major objects are considered classes that represent a complete object as a complete entity and not as part of another object. For example, major objects include Server, Cube, and Dimension, which are all standalone entities. The DimensionAttribute, however, is not a major object because it can only be created as part of a parent major object of Dimension. DimensionAttribute, therefore, is a minor object. The OLAP cube design focuses on creating all the major objects that are needed for cubes, along with any dependent minor objects. These major objects are the objects that will be serialized-and, eventually, deserialized-before the objects are created in the SSAS database.  
 
 Resources that wrap major objects must be created in a specific order for deployment to complete successfully and satisfy the dependency requirements of the OLAP cube elements. The following two lists illustrate the deployment sequence for the SystemCenterCube and CubeExtension elements, respectively:  
 
@@ -202,7 +202,7 @@ Resources that wrap major objects must be created in a specific order for deploy
 
 ## Service Manager OLAP cube processing
 
-When an online analytical processing \(OLAP\) cube has been deployed and all its partitions have been created, it is ready to be processed so that it is viewable. Processing a cube is the final step after extract, transform, and load \(ETL\) runs. These steps occur as follows:  
+When an online analytical processing \(OLAP\) cube has been deployed and all its partitions have been created, it is ready to be processed so that it's viewable. Processing a cube is the final step after extract, transform, and load \(ETL\) runs. These steps occur as follows:  
 
 1.  Extract: Extract data from the source system  
 2.  Transform: Apply functions to conform data to a standard dimensional schema  
@@ -231,17 +231,17 @@ Whenever a new dimension is added to the SQL Server Analysis Server \(SSAS\) dat
 
 This singleton class contains a property, *IntervalInMinutes*, which describes how often to process a dimension. By default this property is set to 60 minutes. For example, if a dimension was processed at 3:05 P.M. and another cube that targets the same dimension is processed at 3:45 P.M., the dimension will not be reprocessed. One drawback to this approach is the increased likelihood of dimension key errors. A retry mechanism handles dimension key errors to reprocess the dimension and then the cube partition. For more information about processing failures, see the "Common Problems with Debugging and Troubleshooting" section.  
 
-After a dimension has been fully processed, incremental processing with *ProcessUpdate* is executed. The only other time that *ProcessFull* is executed is when a dimension schema changes, because it results in the dimension returning to an unprocessed state. Remember that if *ProcessFull* is performed on a dimension, all affected cubes and their partitions will subsequently exist in an unprocessed state and they will have to be fully processed on their next scheduled run.  
+After a dimension has been fully processed, incremental processing with *ProcessUpdate* is executed. The only other time that *ProcessFull* is executed is when a dimension schema changes, because it results in the dimension returning to an unprocessed state. Remember that if *ProcessFull* is performed on a dimension, all affected cubes and their partitions will then exist in an unprocessed state and they will have to be fully processed on their next scheduled run.  
 
 ### Partition processing  
 
-Partition processing must be carefully considered because reprocessing a large partition is very slow and it consumes many CPU resources on the server that hosts SSAS. Partition processing generally takes longer than dimension processing. Unlike dimension processing, processing a partition has no side effects on other objects. The only two types of processing that are performed on System Center - Service Manager OLAP cubes are ProcessFull and ProcessAdd.  
+Partition processing must be carefully considered because reprocessing a large partition is slow, and it consumes many CPU resources on the server that hosts SSAS. Partition processing generally takes longer than dimension processing. Unlike dimension processing, processing a partition has no side effects on other objects. The only two types of processing that are performed on System Center - Service Manager OLAP cubes are ProcessFull and ProcessAdd.  
 
 Similar to dimensions, creating new partitions in an OLAP cube requires a ProcessFull task for the partition to be in a state where it can be queried. Because a ProcessFull task is an expensive operation, you should perform a ProcessFull task only when necessary; for example, when you create a partition or when a row has been updated. In scenarios in which rows have been added and no rows have been updated, Service Manager can perform a ProcessAdd task. To do this, Service Manager uses watermarks and other metadata. Specifically, the etl.cubepartition table and the etl.tablepartition table are queried to determine what type of processing to perform.  
 
 The following diagram illustrates how Service Manager determines what type of processing to perform based on the watermark data.  
 
-![Diagram of cube processing](./media/olap-cubes-overview/ops-cubeprocessing.png)  
+![Diagram of cube processing.](./media/olap-cubes-overview/ops-cubeprocessing.png)  
 
 When a ProcessAdd task is performed, Service Manager limits the scope of the query using watermarks. For example, if the InsertedBatchId value is 100 and the WatermarkBatchId value is 50, the query loads data only from the data mart where the InsertedBatchId is greater than 50 and less than 100.  
 
