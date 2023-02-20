@@ -1,7 +1,7 @@
 ---
 title: User role profiles in Service Manager
 description: Learn about the scope and properties of user role profiles in Service Manager.
-manager: evansma
+manager: mkluck
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri

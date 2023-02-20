@@ -1,6 +1,6 @@
 ---
 description: include file to detail the release notes for Service Manager 2022
-manager:  evansma
+manager:  mkluck
 ms.topic: include
 author:  v-pgaddala
 ms.author: v-pgaddala
@@ -19,7 +19,7 @@ The following sections detail the release notes for Service Manager 2022 and inc
 
 ### Manual steps to activate Data Warehouse Server
 
-**Description**: Service Manager Data Warehouse is not activated as part of the Management Server license activation. You must manually activate the Data Warehouse.
+**Description**: Service Manager Data Warehouse isn't activated as part of the Management Server license activation. You must manually activate the Data Warehouse.
 
 **Workaround**:
 Follow these steps to manually activate the Data Warehouse server:  
