@@ -48,7 +48,7 @@ Disable TLS 1.2 before the installation/upgrade and re-enable it after the upgra
 Connector for Orchestrator 2022 might not work due to changes in Orchestrator Web service.
 
 **Workaround**:
-Continue using System Center 2019 Web API till we fix this. System Center 2022 supports running 2019 Web console/API side-by-side.
+Continue using System Center 2019 Web API until we fix this. System Center 2022 supports running 2019 Web console/API side-by-side.
 
 ### Report management pack deployments might fail
 

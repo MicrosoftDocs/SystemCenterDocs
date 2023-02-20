@@ -134,7 +134,7 @@ The following versions of Windows client operating system are supported for the 
 |**Service Manager** Console|&#8226;|&#8226;|&#8226;|||&#8226;|&#8226;|&#8226;|
 
 
-## .Net Versions supported
+## .NET Versions supported
 
 The following versions of .NET are supported for Service Manager.
 

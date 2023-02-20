@@ -76,7 +76,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 
  Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center 2022 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2022 - Service Manager reporting.
 
- Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2022. Use this information whether you are deploying one or multiple components of System Center.
+ Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2022. Use this information whether you're deploying one or multiple components of System Center.
 
 >[!NOTE]
 > During installation, select *SQL Server full-text search* on the computers running SQL Server that will host the Service Manager and data warehouse databases.

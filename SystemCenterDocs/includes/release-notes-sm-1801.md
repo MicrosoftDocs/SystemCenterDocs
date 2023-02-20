@@ -22,7 +22,7 @@ The following sections detail the release notes for SM 1801 and include the know
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. For more information on changing the Cardinality Estimator, see [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](/archive/blogs/saponsqlserver/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation).
 
 ## Prerequisite for installing SM Authoring Tool
-**Description:** Microsoft Visual C++ 2012 redistributable should be installed before deploying Service Manager 1801 Authoring Tool.
+**Description:** Microsoft Visual C++ 2012 Redistributable should be installed before deploying Service Manager 1801 Authoring Tool.
 
 **Workaround:** None
 
@@ -132,7 +132,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 ## SM console installed on an Operations Manager management server causes an error
 
-**Description:** Installing the Service Manager console on a Operations Manager management server isn't supported.
+**Description:** Installing the Service Manager console on an Operations Manager management server isn't supported.
 
 **Workaround:** None.
 
@@ -163,7 +163,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Workaround:** If your Orchestrator connector account password contains a $ character, change the password to one that doesn't include the $ character.
 
 ## Information linked from Setup might not display localized content
-**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in Service Manager are available in English only. Technical documentation is available in a variety of localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
+**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in Service Manager are available in English only. Technical documentation is available in various localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
 
 **Workaround:** None.
 

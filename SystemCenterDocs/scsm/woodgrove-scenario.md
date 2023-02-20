@@ -179,7 +179,7 @@ For general information about deploying a workflow to Service Manager, see [How 
 
 ## Step 5 - Bundle and import the custom management pack to Service Manager
 
-In this of the Woodgrove Bank customization scenario, Ken needs to bundle the management pack file with all the necessary resource files and then import the bundled file into Service Manager. When Service Manager imports a management pack, it validates the XML code in the management pack file and then imports the management pack only if it is valid.  
+In this of the Woodgrove Bank customization scenario, Ken needs to bundle the management pack file with all the necessary resource files and then import the bundled file into Service Manager. When Service Manager imports a management pack, it validates the XML code in the management pack file and then imports the management pack only if it's valid.  
 
 ### To bundle the management pack file with its associated resource files  
 

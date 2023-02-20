@@ -219,7 +219,7 @@ After the installation, do the following:
 
 10.  Deploy the new Self-Service Portal.  
 
-The timing of your upgrades is also important. After you upgrade your data warehouse management server, you must update the Service Manager management server and also deploy the new Self-Service Portal. After you upgrade your initial Service Manager management server, you must be prepared to upgrade your Service Manager console or Service Manager consoles, additional Service Manager management servers, and Self-Service Portal at the same time.  
+The timing of your upgrades is also important. After you upgrade your data warehouse management server, you must update the Service Manager management server, and also deploy the new Self-Service Portal. After you upgrade your initial Service Manager management server, you must be prepared to upgrade your Service Manager console or Service Manager consoles, additional Service Manager management servers, and Self-Service Portal at the same time.  
 
 
 ### Database impacts  

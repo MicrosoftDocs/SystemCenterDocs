@@ -35,7 +35,7 @@ ms.technology: service-manager
 |combination class|A feature in Service Manager that is used mostly in reports and in views to display information from multiple classes that are defined in Service Manager.|
 |configuration item|Any component that needs to be managed to deliver a service. In Service Manager, configuration items might include services, hardware, software, buildings, people, and formal documentation, such as process documentation and service level agreements (SLA).|
 |configuration item class|A collection of configuration items. Groups can contain members of different configuration items classes (for example, a computer and a user).|
-|connector|A software component that is the integration mechanism between Service Manager and an external system. It is used for data transfers from these external systems to Service Manager.|
+|connector|A software component that is the integration mechanism between Service Manager and an external system. It's used for data transfers from these external systems to Service Manager.|
 |dependent change management activity|A change management activity that is used to link change requests to a release record.|
 |DWDataMart database|The database that includes the reporting data, stored for the long-term.|
 |DWRepository database|The database that includes the transformed data from the DWStagingAndConfig database.|
@@ -44,7 +44,7 @@ ms.technology: service-manager
 |filtered view|A view to which a set of conditions have been applied to reduce the total number of displayed objects.|
 |groom|To permanently remove data from the data warehouse.|
 |history|A record of all the changes to an object&trade;s properties and relationships. History exists for all objects, such as configuration items and work items."|
-|incident|A way of tracking any event that is not part of the standard operation of a service and that causes, or may cause, an interruption to, or a reduction in, the quality of that service.|
+|incident|A way of tracking any event that isn't part of the standard operation of a service and that causes, or may cause, an interruption to, or a reduction in, the quality of that service.|
 |knowledge|Information that can help an end-user or analyst solve a problem.|
 |list|An administrator-defined customization that enables users to classify objects such as incidents, change requests, activities, or configuration items. For example, a list might be **Location** or **Organization**.|
 |list item|An option that constrains the values that users can enter for a specific list. For example, **Redmond** might be a list item for **Location**.|

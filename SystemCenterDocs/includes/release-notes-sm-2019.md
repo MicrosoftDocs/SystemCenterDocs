@@ -38,7 +38,7 @@ Follow these steps to manually activate the Data Warehouse server:
 
 ### SCSM doesn’t work with default SSAS mode on SQL 2017
 **Description:**
-System Center Service Manager 2019 requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. With SQL 2017 the default SSAS mode is **Tabular**. Service Manager’s Management Server and Data Warehouse only work with SSAS mode **Multi-Dimensional** and not **Tabular**.
+System Center Service Manager 2019 requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. With SQL 2017, the default SSAS mode is **Tabular**. Service Manager’s Management Server and Data Warehouse only work with SSAS mode **Multi-Dimensional** and not **Tabular**.
 
 **Workaround:**
 In case of fresh installation of SQL Server 2017, select the SSAS mode as **Multi-Dimensional**. In case of an upgrade from an earlier version of SQL Server to SQL Server 2017, the older SSAS mode persists. Hence, no manual step is required for SQL Server upgrade scenario.
@@ -49,7 +49,7 @@ In case of fresh installation of SQL Server 2017, select the SSAS mode as **Mult
 **Workaround**: Disable TLS 1.2 before the installation/upgrade and re-enable it after the upgrade is complete.
 
 ### Prerequisite for installing SM Authoring Tool
-**Description**: Install Microsoft Visual C++ 2012 redistributable before you deploy Service Manager Authoring Tool 2019.
+**Description**: Install Microsoft Visual C++ 2012 Redistributable before you deploy Service Manager Authoring Tool 2019.
 
 **Workaround**: None.
 
@@ -96,7 +96,7 @@ When you don't fill this field and select **Ok** or **Apply**, an error appears 
 **Workaround**: Remove the earlier version of Service Manager Authoring Tool, and then retry the setup.
 
 ### Setup does not install the Report Viewer language pack
-**Description**: Setup includes a prerequisite checker that checks for and, if necessary, installs the Microsoft Report Viewer. However, Setup doesn't install the Report Viewer language pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that're configured to use languages other than English.
+**Description**: Setup includes a prerequisite checker that checks for and, if necessary, installs the Microsoft Report Viewer. However, Setup doesn't install the Report Viewer language pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that are configured to use languages other than English.
 
 **Workaround**: If your system is configured to use a language other than English, you should manually install the Report Viewer Language Pack for that language.
 
@@ -154,7 +154,7 @@ To resolve this issue, follow the steps:
 <mux:Column Name="lastModified" DisplayMemberBinding="{datebinding:DateBinding Path=$LastModified$, Mode=OneWay}" Width="150" DisplayName="Header_Last_Modified" Property="$LastModified$" DataType="s:DateTime" />
 
 1.	Repeat steps 1–2 for columns that are named **LastModified**.
-2.	Re-import the modified management pack.
+2.	Reimport the modified management pack.
 3.	Restart the console.
 
 

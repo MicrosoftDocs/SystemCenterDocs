@@ -17,7 +17,7 @@ ms.assetid: 87d03428-968d-4036-8d1c-8064900756cb
 
 ## System requirements for System Center 1807 - Service Manager
 
-The following sections describe the general performance and scalability guidance for SM 1807, and recommend the  hardware configurations for a variety of workloads. Because System Center 1807 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
+The following sections describe the general performance and scalability guidance for SM 1807, and recommend the  hardware configurations for various workloads. Because System Center 1807 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
 
 ## Capacity limits for Service Manager
 
@@ -68,7 +68,7 @@ To help simplify upgrades, you can use Service Manager 1807 connectors with the 
 
 - **SMTP server**- You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use the Notification feature and for incident creation through email.  
 
-- **Windows safe mode**- Service Manager doesn't operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
+- **Windows safe mode**- Service Manager doesn't operate and the services used by Service Manager don't start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
 
 ## SQL Server requirements
 

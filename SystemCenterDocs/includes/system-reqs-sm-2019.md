@@ -70,13 +70,13 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 
 - **SMTP server**- You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use the Notification feature and for incident creation through email.  
 
-- **Windows safe mode**- Service Manager doesn't operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
+- **Windows safe mode**- Service Manager doesn't operate and the services used by Service Manager don't start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
 
 ## SQL Server requirements
 
  Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center 2019 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2019 - Service Manager reporting.
 
- Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2019. Use this information whether you are deploying one or multiple components of System Center.
+ Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2019. Use this information whether you're deploying one or multiple components of System Center.
 
 >[!NOTE]
 > During installation, select *SQL Server full-text search* on the computers running SQL Server that will host the Service Manager and data warehouse databases.

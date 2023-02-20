@@ -34,7 +34,7 @@ You can only upgrade to System Center 2016 from System Center 2012 R2 - Service 
 
 This section outlines the procedures necessary to upgrade to System Center 2016.  
 
-An in\-place upgrade from Service Manager 2012 R2 to Service Manager 2016 is supported. An in\-place upgrade is an upgrade of all Service Manager parts on the same hardware. Other approaches, such as side\-by\-side upgrades or rolling upgrades, are not supported.  
+An in\-place upgrade from Service Manager 2012 R2 to Service Manager 2016 is supported. An in\-place upgrade is an upgrade of all Service Manager parts on the same hardware. Other approaches, such as side\-by\-side upgrades or rolling upgrades, aren't supported.  
 
 Upgrading to Service Manager 2016 requires preparation. We recommend that you install Service Manager in a lab environment and then replicate your production databases into the lab. You then perform an upgrade of the new installation in the lab, and once that has proven successful, perform the same upgrade to Service Manager SP1 in the production environment.  
 
@@ -77,7 +77,7 @@ All software requirements for System Center 2016 - Service Manager are fully doc
 
 ### Impact on custom development
 
-With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by 3rd party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
+With the System Center 2016 - Service Manager release, the product has moved to support .NET 4.5.1. The tool set to support this movement to .NET 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by third party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
 
 ### Preventing MPSync jobs from failing
 
@@ -132,7 +132,7 @@ FROM    FactPKListStr f
 
 ```  
 
-**Workaround 1:** If you have already upgraded and you do not have problems with transform or load job failures but do have a management pack deployment failure, then follow the steps in the Before Upgrade section. In addition, after the default primary keys have been restored, restart the failed management pack deployment in the Service Manager console by navigating to the Data Warehouse workspace and then select Management Pack.  
+**Workaround 1:** If you've already upgraded and you don't have problems with transform or load job failures but do have a management pack deployment failure, then follow the steps in the Before Upgrade section. In addition, after the default primary keys have been restored, restart the failed management pack deployment in the Service Manager console by navigating to the Data Warehouse workspace and then select Management Pack.  
 
 **Workaround 2:** If you've upgraded and you've problems with transform or load job failures, then determine if the SystemDerivedMp.Microsoft.SystemCenter.Datawarehouse.Base management pack exists in the DWStagingAndConfig database by running the following query.  
 
@@ -140,7 +140,7 @@ FROM    FactPKListStr f
 select * from ManagementPack where mpname like '%SystemDerivedMp.Microsoft.SystemCenter.Datawarehouse.Base%'  
 ```  
 
-If the management pack does not exist, you need to restore your database to a state prior to upgrade. To restore your database, perform the following steps.  
+If the management pack doesn't exist, you need to restore your database to a state prior to upgrade. To restore your database, perform the following steps.  
 
 1.  Perform disaster recovery steps for the database backups.  
 
@@ -158,7 +158,7 @@ We recommend that you test the upgrade to System Center 2016 - Service Manager i
 
 The order of your upgrades is important. Perform the upgrade steps in the following order:  
 
-1.  Backup your databases and your management packs. See the sections **Backing Up Service Manager Databases** and **Backing Up Unsealed Management Packs** in the [Disaster Recovery Guide for System Center 2016 - Service Manager](../scsm/disaster-recovery.md).  
+1.  Back up your databases and your management packs. See the sections **Backing Up Service Manager Databases** and **Backing Up Unsealed Management Packs** in the [Disaster Recovery Guide for System Center 2016 - Service Manager](../scsm/disaster-recovery.md).  
 
 2.  Start with the data warehouse management server. You will be stopping the data warehouse jobs, and you won't be able to start them again until after you've completed the upgrade.  
 

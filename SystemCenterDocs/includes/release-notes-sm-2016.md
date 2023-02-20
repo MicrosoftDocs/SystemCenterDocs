@@ -46,7 +46,7 @@ The following sections detail the release notes for SM 2016 and include the know
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. For more information on changing the Cardinality Estimator, see [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](/archive/blogs/saponsqlserver/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation).
 
 ## Prerequisite for installing SM Authoring Tool
-**Description:** Microsoft Visual C++ 2012 redistributable should be installed before deploying Service Manager 2016 Authoring Tool.
+**Description:** Microsoft Visual C++ 2012 Redistributable should be installed before deploying Service Manager 2016 Authoring Tool.
 
 **Workaround:** None
 
@@ -138,7 +138,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 2.  Using an XML editor of your choice (such as Notepad), open the rsreportserver.config file.
 
-3.  Scroll through the rsreportserver.config file and locate the code segment. There is only one code segment in this file.
+3.  Scroll through the rsreportserver.config file and locate the code segment. There's only one code segment in this file.
 
 4.  Add the following **Extension** tag to the code segment where all the other **Extension** tags are:
 
@@ -156,7 +156,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 ## SM console installed on an Operations Manager management server causes an error
 
-**Description:** Installing the Service Manager console on a Operations Manager management server isn't supported.
+**Description:** Installing the Service Manager console on an Operations Manager management server isn't supported.
 
 **Workaround:** None.
 
@@ -164,15 +164,15 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 ## Data Warehouse Setup might fail if the DB or log path has a single quote
 **Description:** During Setup, if you specify a database or log path that includes a single quotation mark character ('), Setup might fail.
 
-**Workaround:** None. The path that you specify cannot include a single quotation mark character.
+**Workaround:** None. The path that you specify can't include a single quotation mark character.
 
 ## Setup might fail if the SM Authoring Tool was installed
-**Description:** Setup might fail if you have previously installed any version of the Service Manager Authoring Tool.
+**Description:** Setup might fail if you've previously installed any version of the Service Manager Authoring Tool.
 
 **Workaround:** Remove the Service Manager Authoring Tool, and then retry Setup.
 
 ## Setup does not install the Report Viewer language pack
-**Description:** Setup includes a prerequisite checker that checks for and, if necessary, installs the Microsoft Report Viewer. However, Setup doesn't install the Report Viewer Language Pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that're configured to use languages other than English.
+**Description:** Setup includes a prerequisite checker that checks for and, if necessary, installs the Microsoft Report Viewer. However, Setup doesn't install the Report Viewer Language Pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that are configured to use languages other than English.
 
 **Workaround:** If your system is configured to use a language other than English, you should manually install the Report Viewer Language Pack for that language.
 
@@ -187,7 +187,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Workaround:** If your Orchestrator connector account password contains a $ character, change the password to one that doesn't include the $ character.
 
 ## Information linked from Setup might not display localized content
-**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in Service Manager are available in English only. Technical documentation is available in a variety of localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
+**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in Service Manager are available in English only. Technical documentation is available in various localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
 
 **Workaround:** None.
 

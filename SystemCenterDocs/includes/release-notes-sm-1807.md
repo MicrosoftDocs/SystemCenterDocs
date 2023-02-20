@@ -56,5 +56,5 @@ To resolve this issue, follow the steps:
 <mux:Column Name="lastModified" DisplayMemberBinding="{datebinding:DateBinding Path=$LastModified$, Mode=OneWay}" Width="150" DisplayName="Header_Last_Modified" Property="$LastModified$" DataType="s:DateTime" />
 
 1.	Repeat steps 1–2 for columns that're named **LastModified**.
-2.	Re-import the modified management pack.
+2.	Reimport the modified management pack.
 3.	Restart the console.

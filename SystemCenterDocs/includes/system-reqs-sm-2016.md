@@ -68,7 +68,7 @@ The following versions of Windows client operating system are supported for the 
 |**Service Manager** Console|&#8226;|&#8226;|&#8226;|||&#8226;|&#8226;|&#8226;|
 
 
-## .Net versions
+## .NET versions
 
 The following versions of .NET are supported for Service Manager.
 
@@ -105,11 +105,11 @@ The following versions of PowerShell are supported for Service Manager.
 |          **Configuration Manager**           |                                                                                                                                       Service Manager can import configuration items from a Configuration Manager environment.                                                                                                                                       |
 |           **Network requirements**           |                                                                                                    To view external content from within knowledge articles, computers that host the Service Manager console must have Internet access, either directly or through a proxy server.                                                                                                    |
 |               **SMTP server**                |                                                                                                                   You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use the Notification feature and for incident creation through email.                                                                                                                   |
-|            **Windows safe mode**             |                                              Service Manager doesn't operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.                                               |
+|            **Windows safe mode**             |                                              Service Manager doesn't operate and the services used by Service Manager don't start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.                                               |
 
 Microsoft SQL Server hosts the databases that System Center 2016 - Service Manager creates. In addition, System Center 2016 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 - Service Manager reporting.
 
-Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2016. Use this information whether you are deploying one or multiple components of System Center.
+Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2016. Use this information whether you're deploying one or multiple components of System Center.
 
 ## SQL Server versions
 
