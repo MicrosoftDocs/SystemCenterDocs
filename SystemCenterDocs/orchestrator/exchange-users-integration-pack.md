@@ -70,7 +70,7 @@ Prior to implementing the Exchange Users Integration Pack, you must install and 
 
 > [!IMPORTANT]
 >
-> 1. Exchange User Integration Pack (v10.19.25.0 or above) targets .NET Framework 4.7, please ensure
+> 1. Exchange User Integration Pack (v10.19.25.0 or above) targets .NET Framework 4.7. Ensure
 >    that .NET Framework Runtime v4.7 or later is installed on Runbook Designer and Runbook Server
 >    machines. We recommend installing the latest available .NET framework version.
 > 2. Create the following files with (identical) contents as shown below to update

@@ -46,7 +46,7 @@ The integration pack for SharePoint requires the following software to be instal
 
 > [!IMPORTANT]
 >
-> 1. SharePoint Integration Pack (v10.19.38.0 or above) targets .NET Framework 4.6.1, please ensure
+> 1. SharePoint Integration Pack (v10.19.38.0 or above) targets .NET Framework 4.6.1. Ensure
 >    that .NET Framework Runtime v4.6.1 or later is installed on Runbook Designer and Runbook Server
 >    machines. We recommend installing the latest available .NET framework version.
 > 2. Create the following files with (identical) contents as shown below to update

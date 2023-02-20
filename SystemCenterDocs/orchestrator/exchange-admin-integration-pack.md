@@ -44,9 +44,9 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 
 > [!IMPORTANT]
 >
-> 1. Exchange Admin Integration Pack (v10.19.16.0 or above) targets .NET Framework 4.5.2, please
->    ensure that .NET Framework Runtime v4.5.2 or later is installed on Runbook Designer and Runbook
->    Server machines. We recommend installing the latest available .NET framework version.
+> 1. Exchange Admin Integration Pack (v10.19.16.0 or above) targets .NET Framework 4.5.2. Ensure
+>    that .NET Framework Runtime v4.5.2 or later is installed on Runbook Designer and Runbook Server
+>    machines. We recommend installing the latest available .NET framework version.
 > 2. Create the following files with (identical) contents as shown below to update
 >    `supportedRuntimeVersion` to v4:
 >    - `%systemdrive%/Program Files (x86)/Microsoft System Center/Orchestrator/Runbook Designer/RunbookDesigner.exe.config`
