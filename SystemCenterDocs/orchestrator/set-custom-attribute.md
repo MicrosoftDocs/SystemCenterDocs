@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 7655d0b0-8b28-495a-8431-e9962a6d5fcd
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Set Custom Attribute
