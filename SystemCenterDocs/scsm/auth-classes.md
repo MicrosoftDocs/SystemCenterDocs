@@ -117,7 +117,7 @@ Class relationships affect objects in the following ways.
 
  **Sample database hosting relationships**  
 
- ![Diagram of a Sample Database Hosting Relationship](./media/auth-classes/author-authguide_sampledatabasehosting.png).
+ ![Diagram of a Sample Database Hosting Relationship.](./media/auth-classes/author-authguide_sampledatabasehosting.png)
 
 ## General guidelines and best practices for classes
 
