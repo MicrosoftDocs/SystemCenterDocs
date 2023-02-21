@@ -1,7 +1,7 @@
 ---
 title:  include file
 description: include file to describe the new features and other changes in System Center 2016 - Service Manager.
-manager: evansma
+manager: mkluck
 ms.topic:  include
 author: jyothisuri
 ms.author: jsuri
@@ -47,17 +47,17 @@ In System Center 2016 - Service Manager, data processing throughout has been inc
 - Workflows in Service Manager should have less latency and should catch up faster when you do experience latency.
 
 ### Higher work-item per second processing capacity
-- Service Manger can more easily handle a large inflow of 45 work items per minute.
+- Service Manager can more easily handle a large inflow of 45 work items per minute.
 
 ### Group and queue calculations were improved significantly
 - The internal testing results have shown 50% improvement. For example, the time was reduced by half for a work item or configuration item to show up for associated users or workflows. In Service Manager 2012 R2 where a stressed environment would take 30 minutes to refresh the groups and queues, Service Manager 2016 can refresh the groups/queues within 15 minutes for the same load.
 
 Here's a summary of the performance improvement metrics:
 
-Here is how the test bed looks like which we have used for testing-
+Here's how the test bed looks like which we've used for testing:
 - 400 simultaneous client connections
 - Inflow of 45 work-items per minute
-- 2 secondary Service Manager management servers handling 200 client connections each
+- Two secondary Service Manager management servers handling 200 client connections each
 - 216 subscription workflows
 - 42 queues
 - Service Manager Data Warehouse registered
@@ -70,8 +70,8 @@ Time to create and update work items was greatly reduced using this improvement.
 
 | action  | **Service Manager 2012 R2** | **Service Manager 2016** | improvement |
 | --- | --- | --- | ---|
-| incident creation time | 2 - 6 seconds | 0.5 seconds | 4 times |
-| incident creation time during connector sync | 8 - 10 seconds| less than 1 second| 8 times|
+| incident creation time | 2-6 seconds | 0.5 second | 4 times |
+| incident creation time during connector sync | 8-10 seconds| less than 1 second| 8 times|
 
 **Improved workflow processing**
 
@@ -86,11 +86,11 @@ Here are the times for  workflows to catch up after 2 hours of latency at a 45 w
 
 **Higher work-item per second processing capacity**
 
-Service Manger can more easily handle a large inflow of 45 work items per minute.
+Service Manager can more easily handle a large inflow of 45 work items per minute.
 
 | action  | **Service Manager 2012 R2** | **Service Manager 2016** | improvement |
 | --- | --- | --- | --- |
-| average incident creation time | 2.2 seconds | 0.5 seconds | 4 times |
+| average incident creation time | 2.2 seconds | 0.5 second | 4 times |
 
 
 ## Faster SCCM and Active Directory connector sync
@@ -98,16 +98,16 @@ Service Manger can more easily handle a large inflow of 45 work items per minute
 The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem - in some cases, it can slow down the system significantly.
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
-Disabling ECL logging, doesn't affect importing data from connectors. Instead, most logging data doesn't get written to the ECL and history tables, which can result is significant performance improvement.
-Disabled ECL logging is not available by default. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a simple PowerShell cmdlet. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../scsm/disable-ecl-logging.md).
+Disabling ECL logging doesn't affect importing data from connectors. Instead, most logging data doesn't get written to the ECL and history tables, which can result in significant performance improvement.
+Disabled ECL logging isn't available by default. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a simple PowerShell cmdlet. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../scsm/disable-ecl-logging.md).
 
 ## Grooming improvements for ECL logs
 
-During ECL log grooming, Service Manager does not groom the latest change to an entity, even if the retention history period of that entity has elapsed.
+During ECL log grooming, Service Manager doesn't groom the latest change to an entity, even if the retention history period of that entity has elapsed.
 
-Grooming eventually leaves one entry for every object ever created in the ECL table for the lifetime of your Service Manager deployment. In order to keep the last entry in the ECL table, the execution of the stored procedure (p_GroomChangeLog) can take a time. In some cases, longer than 30 minutes when the ECL entry is very large. As part of the optimization, Service Manager does not keep the entry, which results in a performance improvement for the grooming stored procedure. Typically, the grooming stored procedure runs 3 to 4 times faster.
+Grooming eventually leaves one entry for every object ever created in the ECL table for the lifetime of your Service Manager deployment. In order to keep the last entry in the ECL table, the execution of the stored procedure (p_GroomChangeLog) can take a time. In some cases, longer than 30 minutes when the ECL entry is very large. As part of the optimization, Service Manager doesn't keep the entry, which results in a performance improvement for the grooming stored procedure. Typically, the grooming stored procedure runs 3 to 4 times faster.
 
-As a result, the history tab would not show any entry for an entity if its history retention period has elapsed, as opposed to seeing one entry earlier.
+As a result, the history tab wouldn't show any entry for an entity if its history retention period has elapsed, as opposed to seeing one entry earlier.
 
 ## Reduction in incident workflow lag
 
@@ -133,7 +133,7 @@ The AD GroupExpansion functionality is now part of the ADConnector, as opposed t
 
 ## New Date dimensions in Data Warehouse cubes
 
- With System Center 2016 - Service Manager, the Service Manager Data Warehouse cubes contain new date dimensions which help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
+ With System Center 2016 - Service Manager, the Service Manager Data Warehouse cubes contain new date dimensions which help you to create rich reports and slice data based on Year, Quarter, Month, Day, etc.
 
 ![date dimensions](../scsm/media/whats-new/sm-date-dimensions.png)
 
@@ -200,7 +200,7 @@ All these dimensions have the following attributes, which you can use for slicin
           </NamedCalculation>
     ```
 
-    The NamedCalculation ID should have string `__DateKey` in the end, and this field in the data warehouse should not be NULL or 0.
+    The NamedCalculation ID should have string `__DateKey` in the end, and this field in the data warehouse shouldn't be NULL or 0.
 2.  Seal the management pack and import it into Service Manager.
 3.  Run the MPSyncJob on the data warehouse and wait until the management pack is marked **Completed**.
 4.  Process all the cubes, or wait for automatic processing overnight.
@@ -227,11 +227,11 @@ For more information and installing and customizing the portal, see [Deploy the 
 
 ## Spell check in Service Manager console
 
-Spell check is now enabled for work item forms. It is enabled for 17 out of the 21 Service Manager supported languages [Chinese (Simplified), Chinese (Traditional), Japanese and Korean are currently not supported]. To use this feature, install your desired language pack and set the keyboard IME for your desired language. This feature is enabled by default, but can be switched by navigating to **View** > **spell check**.
+Spell check is now enabled for work item forms. It's enabled for 17 out of the 21 Service Manager supported languages [Chinese (Simplified), Chinese (Traditional), Japanese and Korean are currently not supported]. To use this feature, install your desired language pack and set the keyboard IME for your desired language. This feature is enabled by default, but can be switched by navigating to **View** > **spell check**.
 
 ## Open activity in progress
 
-A new console task *Open Activity in Progress*, was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the work item.* is displayed. In previous versions of Service Manager, it required to open the work item, navigate to the **Activities** tab, and then clicking the *In progress* activity. Now In progress activity can be accessed with a single click.
+A new console task *Open Activity in Progress* was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the work item.* is displayed. In previous versions of Service Manager, it required to open the work item, navigate to the **Activities** tab, and then selecting the *In progress* activity. Now In progress activity can be accessed with a single click.
 
 ## Support for Lync 2013 and Skype for Business
 System Center 2016 - Service Manager includes the updates that support integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../scsm/incidents-problems.md).
@@ -247,4 +247,4 @@ Now you can configure the SQL management server, instance name and port number t
 ![configure SQL management server and port ](../scsm/media/whats-new/sm-sqlserver-config.png)
 
 ## Support for .NET Framework 4.5.1
-Service Manager 2016 now supports the .Net framework 4.5.1
+Service Manager 2016 now supports the .NET framework 4.5.1
