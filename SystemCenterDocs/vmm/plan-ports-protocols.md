@@ -66,8 +66,7 @@ VMM server to Windows file server | 5985/5986:WinRM | Control channel<br/><br/> 
 ::: moniker range=">= sc-vmm-2019"
 
 > [!NOTE]
-> System Center Virtual Machine Manager uses NTLM authentication protocol to perform management operations.
-> Using Kerberos authentication protocol isn’t recommended as it may break a few VM operations.
+> System Center Virtual Machine Manager uses NTLM authentication protocol to perform management operations.<br/>Using Kerberos authentication protocol isn’t recommended as it may break a few VM operations.
 
 ::: moniker-end
 
