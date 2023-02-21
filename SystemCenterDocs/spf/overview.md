@@ -31,7 +31,7 @@ The following graphic shows how SPF works.
 
 ## SPF services
 
-SPF provides a number of services:
+SPF provides many services:
 -	**Admin web service**:  Provides servers, tenants, and stamps for Service Provider Foundation
 -	**VMM service**: Provides access to VMM capabilities
 -	**Provider service**: Used by Microsoft Azure Pack

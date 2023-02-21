@@ -4,7 +4,7 @@ description: include file to provide information about how to upgrade to System 
 author: jyothisuri
 ms.author: jsuri
 manager:  mkluck
-ms.date:  03/14/2019
+ms.date:  02/21/2023
 ms.topic: include
 ms.prod:  system center
 ms.technology:  service-provider-foundation
@@ -21,7 +21,7 @@ The following sections describe the procedures required to upgrade from SPF 2016
     - If you're using SPF 2016, install [update rollup 2](https://support.microsoft.com/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f) or later.
 - VMM:
     - If you're using VMM 2016, install [update rollup 6](https://support.microsoft.com/help/4463450/update-rollup-6-for-system-center-2016-virtual-machine-manager) or later.
-- Windows Azure Pack - Install [update rollup 12](https://support.microsoft.com/help/4043909/update-rollup-12-for-windows-azure-pack) or later.
+- Microsoft Azure Pack - Install [update rollup 12](https://support.microsoft.com/help/4043909/update-rollup-12-for-windows-azure-pack) or later.
 - VMM management console - The machine running the VMM 2016/1801/1807 management console should have the latest VMM updates installed.
 
 
@@ -29,10 +29,10 @@ The following sections describe the procedures required to upgrade from SPF 2016
 The upgrade instructions in this article assume the following scenario:
 
 - SPF and VMM are running on System Center 2016/1801/1807.
-- We highly recommend that you reuse the current SPF server name to simplify the seamless integration into your existing Windows Azure Pack deployment.
+- We highly recommend that you reuse the current SPF server name to simplify the seamless integration into your existing Microsoft Azure Pack deployment.
 - The VMM console is installed on a separate computer.
 - The upgrade uses the existing SPF server name.
-- These upgrade instructions assume that the VMM 2019 upgrade has already been completed, and that the necessary backups of the current Windows Azure Pack environment have been performed.
+- These upgrade instructions assume that the VMM 2019 upgrade has already been completed, and that the necessary backups of the current Microsoft Azure Pack environment have been performed.
 
 ## Upgrade order
 
@@ -44,9 +44,9 @@ Here's the recommended upgrade order for the above scenario:
 
 ## Before you start
 
-1. Ensure Windows Azure Pack, SPF, and VMM are all running the required updates.
-2. We recommend that you shut down VMM and Windows Azure Pack servers, removing all database activity.
-3. Verify SPF [system requirements](../spf/system-requirements-spf.md). Note that SPF must run on Windows Server 2016/2019 - Core or Desktop experience.
+1. Ensure Microsoft Azure Pack, SPF, and VMM are all running the required updates.
+2. We recommend that you shut down VMM and Microsoft Azure Pack servers, removing all database activity.
+3. Verify SPF [system requirements](../spf/system-requirements-spf.md). Ensure that SPF must run on Windows Server 2016/2019 - Core or Desktop experience.
 4. Verify VMM [console requirements](../vmm/system-requirements.md?preserve-view=true&view=sc-vmm-1801#vmm-console-operating-system).
 
 
@@ -90,10 +90,10 @@ Prepare the SPF 2019 computer on which you want to run the upgrade.
     - The FQDN should be specified for the certification path instead of "localhost".
     - It should be located in the personal or web hosting store.
 
-## Test Windows Azure Pack
+## Test Microsoft Azure Pack
 
 Test everything's working as follows:
 
 1. Start VMM 2019.
-2. In the Windows Azure Pack  Admin portal, check in this order: 1) VMs; 2) Gallery items; 3) Templates; 4) SPF configuration settings. Ensure everything's working as expected.
-3. In the Windows Azure Pack Tenant portal, check in this order: 1) Deployment settings; 2) VMs; 3) Plans; 4) Deployment options. Ensure everything's working as expected.
+2. In the Microsoft Azure Pack  Admin portal, check in this order: 1) VMs; 2) Gallery items; 3) Templates; 4) SPF configuration settings. Ensure everything's working as expected.
+3. In the Microsoft Azure Pack Tenant portal, check in this order: 1) Deployment settings; 2) VMs; 3) Plans; 4) Deployment options. Ensure everything's working as expected.

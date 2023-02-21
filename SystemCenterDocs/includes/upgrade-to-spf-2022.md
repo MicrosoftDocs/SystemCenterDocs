@@ -46,7 +46,7 @@ Here's the recommended upgrade order for the above scenario:
 
 1. Ensure Microsoft Azure Pack, SPF, and VMM are all running the required updates.
 2. We recommend that you shut down VMM and Microsoft Azure Pack servers, removing all database activity.
-3. Verify SPF [system requirements](../spf/system-requirements-spf.md). Note that SPF must run on Windows Server 2022 - Core or Desktop experience.
+3. Verify SPF [system requirements](../spf/system-requirements-spf.md). Ensure that SPF must run on Windows Server 2022 - Core or Desktop experience.
 4. Verify VMM [console requirements](../vmm/system-requirements.md?preserve-view=true&view=sc-vmm-1801#vmm-console-operating-system).
 
 

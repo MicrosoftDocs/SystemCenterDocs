@@ -1,6 +1,6 @@
 ---
 title: Plan SPF deployment
-description: This topic provides an overview of how to plan for a Service Provider Foundation installation.
+description: This article provides an overview of how to plan for a Service Provider Foundation installation.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -78,7 +78,7 @@ SPF_Admin: Admin
 
 **5000 or less VMs** | **5000-12,000 VMs** | **12,000 - 25,000 VMs**
 --- | --- | ---
-4 processor cores, 8 GB RAM | 8 processor cores, 8 GB RAM | 16 processor cores, 8 GB RAM.<br/><br/> Recommended for computers running VMM with or without SQL Server.
+4 processor cores, 8-GB RAM | 8 processor cores, 8-GB RAM | 16 processor cores, 8-GB RAM.<br/><br/> Recommended for computers running VMM with or without SQL Server.
 
 ## Plan database
 
