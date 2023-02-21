@@ -1,12 +1,12 @@
 ---
 ms.assetid: cf56de7b-757b-4639-89b7-d819130d02fb
 title: Configure Authentication with the Web console
-description: This topic describes how to configure Secure Sockets Layer (SSL) encryption for the web server running the Operations Manager Web Console.
+description: This article describes how to configure Secure Sockets Layer (SSL) encryption for the web server running the Operations Manager Web Console.
 author: jyothisuri
 manager: evansma
 ms.author: jsuri
-ms.date: 07/01/2020
-ms.custom: na
+ms.date: 01/19/2023
+ms.custom: engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -32,12 +32,12 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 
 1. Ensure that the SSL certificates are installed and configured on the management server.
 
-2. Add a https binding in the IIS website wherever the Operations Manager Web console is installed.
+2. Add an https binding in the IIS website wherever the Operations Manager Web console is installed.
 
 3. After completing the above steps, reset the Web site hosting the Operations Manager Web console.
 
 >[!NOTE]
-> Enable SSL check box in the installer only works if you are using a https binding for the web console. For more information, see [How to set up SSL on IIS 7](/iis/manage/configuring-security/how-to-set-up-ssl-on-iis).
+> Enable SSL check box in the installer only works if you're using an https binding for the web console. For more information, see [How to set up SSL on IIS 7](/iis/manage/configuring-security/how-to-set-up-ssl-on-iis).
 
 ::: moniker range="<sc-om-2019"
 
@@ -55,7 +55,7 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
       ```
 
 4. Save and close the file when finished.
-5. Click **Start**, click **Run**, type **regedit**, and then click **OK**.
+5. Select **Start**, select **Run**, type **regedit**, and select **OK**.
 
 5. Under **HKEY_LOCAL_MACHINE\Software\Microsoft\System Center Operations Manager\12\Setup\WebConsole\\**, double-click the value **HTTP_GET_ENABLED** and change its value to **false**. Double-click the value **BINDING_CONFIGURATION** and change its value to **DefaultHttpsBinding**.
 
@@ -77,7 +77,7 @@ Follow these steps for the Operations Manager Web console server component to us
 ### To edit the machine.config files
 
 1.  Use a plain text editor to open the **machine.config** file in *%WinDir%\Microsoft.NET\Framework\v2.0.50727\CONFIG\\*.
-2.  If the following content does not exist within the `<Configuration>` root element, add as follows:
+2.  If the following content doesn't exist within the `<Configuration>` root element, add as follows:
 
     ```
      <mscorlib>
@@ -108,8 +108,8 @@ Repeat the preceding step on the following files:
 ### To edit the web.config file in WebHost folder
 
 1.	Use a plain text editor to open the web.config file in `<Path>:\Program Files\System Center 2016\Operations Manager\WebConsole\WebHost\web.config`.
-2.	In the \<encryption\> element, add the following element if it does not exist: `<symmetricAlgorithm  iv="SHA256"/>`
-3.	In the `<connection autoSignIn="true" autoSignOutInterval="30">` element, in the `<session>` tag, add the following attribute if it does not exist: **tokenAlgorithm="SHA256"**
+2.	In the \<encryption\> element, add the following element if it doesn't exist: `<symmetricAlgorithm  iv="SHA256"/>`
+3.	In the `<connection autoSignIn="true" autoSignOutInterval="30">` element, in the `<session>` tag, add the following attribute if it doesn't exist: **tokenAlgorithm="SHA256"**
 
      ```
      <connection autoSignIn="True" autoSignOutInterval="30">  
@@ -130,15 +130,15 @@ Repeat the preceding step on the following files:
 ### To edit the web.config file in MonitoringView folder
 
 1. Use a plain text editor to open the web.config file in `<PATH>:\Program Files\System Center 2012\Operations Manager\WebConsole\MonitoringView\web.config`.
-2. In the `<encryption>` element, add the following element if it does not exist: `<symmetricAlgorithm  iv="SHA256"/>`.
-3. In the `<connection>` element, In the `<connection autoSignIn="true" autoSignOutInterval="30">` element, in the `<session>` tag, add the following attribute if it does not exist: **tokenAlgorithm="SHA256"**
+2. In the `<encryption>` element, add the following element if it doesn't exist: `<symmetricAlgorithm  iv="SHA256"/>`.
+3. In the `<connection>` element, In the `<connection autoSignIn="true" autoSignOutInterval="30">` element, in the `<session>` tag, add the following attribute if it doesn't exist: **tokenAlgorithm="SHA256"**
 
      ```
      <connection autoSignIn="True" autoSignOutInterval="30">
      <session encryptionKey="SessionEncryptionKey" tokenAlgorithm="SHA256">
      ```
 
-4. In the `<system.web>` element, add the following element if it does not exist:
+4. In the `<system.web>` element, add the following element if it doesn't exist:
 
      ```
      <machineKey validationKey="AutoGenerate,IsolateApps" decryptionKey="AutoGenerate,IsolateApps" validation="3DES" decryption="3DES"/>
@@ -156,7 +156,7 @@ Repeat the preceding step on the following files:
 >The web console uses windows authentication by default, if available to login into the website. The default session timeout interval for web console is 1 day and this is the maximum value.
 
 1. To edit the value, use a plain text editor to open the web.config in `<PATH>:\Program Files\Microsoft System Center\Operations Manager\WebConsole\Dashboard`.
-2. In the `<appSettings>` root element, modify the following session time out value in minutes.
+2. In the `<appSettings>` root element, modify the following session timeout value in minutes.
     ```
 	  <add key="SessionTimeout" value="1440"/>
     ```

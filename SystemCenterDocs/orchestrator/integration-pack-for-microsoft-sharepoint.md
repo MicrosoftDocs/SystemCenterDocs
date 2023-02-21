@@ -32,9 +32,52 @@ The System Center Integration Pack for Microsoft SharePoint enables the automati
 
 The integration pack for SharePoint requires the following software to be installed and configured before you implement the integration.
 
+::: moniker range="<sc-orch-2019"
+
 -   System Center - Orchestrator
 -   Microsoft .NET Framework 4
 -   Microsoft SharePoint
+
+::: moniker-end
+
+::: moniker range="=sc-orch-2019"
+
+- System Center - Orchestrator 2019
+- Microsoft .NET Framework 4.6.1 or above (latest .NET Framework recommended)
+
+> [!IMPORTANT]
+>
+> 1. SharePoint Integration Pack (v10.19.38.0 or above) targets .NET Framework 4.6.1. Ensure
+>    that .NET Framework Runtime v4.6.1 or later is installed on Runbook Designer and Runbook Server
+>    machines. We recommend installing the latest available .NET framework version.
+> 2. Create the following files with (identical) contents as shown below to update
+>    `supportedRuntimeVersion` to v4:
+>    - `%systemdrive%/Program Files (x86)/Microsoft System Center/Orchestrator/Runbook Designer/RunbookDesigner.exe.config`
+>    - `%systemdrive%/Program Files (x86)/Microsoft System Center/Orchestrator/Runbook Designer/RunbookTester.exe.config`
+>    - `%systemdrive%/Program Files (x86)/Microsoft System Center/Orchestrator/Runbook Server/PolicyModule.exe.config`
+>
+>    Contents:
+>
+>    ```xml
+>    <?xml version="1.0" encoding="utf-8"?>
+>    <configuration>
+>      <startup useLegacyV2RuntimeActivationPolicy="true">
+>        <supportedRuntime version="v4.0.30319"/>
+>      </startup>
+>      <system.xml.serialization>
+>        <xmlSerializer tempFilesLocation="C:\ProgramData\Microsoft System Center 2012\Orchestrator\Activities\XmlSerializers\"/>
+>      </system.xml.serialization>
+>    </configuration>
+>    ```
+
+::: moniker-end
+
+::: moniker range=">=sc-orch-2022"
+
+- System Center - Orchestrator 2022
+- Microsoft .NET Framework 4.7 or above (latest .NET Framework recommended)
+
+::: moniker-end
 
 ## Download the pack
 
