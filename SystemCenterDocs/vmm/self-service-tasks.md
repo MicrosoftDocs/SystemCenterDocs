@@ -5,7 +5,7 @@ description: This article describes how to work with VMM as a self-service user
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 02/21/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -24,6 +24,13 @@ ms.technology: virtual-machine-manager
 This article describes how to work with System Center - Virtual Machine Manager (VMM) as a self-service user.
 
 Self-service users can interact with VMM to deploy virtual machines and services to private clouds. Depending on your permissions, you can deploy VMs from VHDs and templates, and create and share your own templates and profiles. You interact with VMM using the VMM console (or PowerShell).
+
+::: moniker range=">= sc-vmm-2019 <= sc-vmm-2022"
+
+> [!NOTE]
+> If the default language configured in the guest VM and the console differs, you may not be able to copy the text from the VMM console into the guest VM. This impacts the sign-in functionality when you're copying password from the VMM console and then pasting it in the Password textbox while signing in to the guest VM. Change the language using the keyboard language icon in the VM sign-in page.
+
+::: moniker-end
 
 ## Create and deploy virtual machines
 

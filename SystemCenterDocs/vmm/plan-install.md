@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/21/2021
+ms.date: 02/21/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -18,7 +18,6 @@ ms.technology: virtual-machine-manager
 [!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
 
 ::: moniker-end
-
 
 This article helps you to plan all the elements required for a successful System Center - Virtual Machine Manager (VMM) installation and includes information for releases VMM 2016 and later. Use these requirements as applicable for the VMM version you plan to install.
 
@@ -37,6 +36,8 @@ Verify the following [system requirements](system-requirements.md):
 
 ## Additional deployment requirements
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-2019"
+
 **Component** | **Details**
 --- | ---
 **Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
@@ -48,6 +49,23 @@ Verify the following [system requirements](system-requirements.md):
 **Monitoring** | System Center Operations Manager 2016/1801. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
 **VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/><br/> ESX 5.5, ESX 6.0, ESX 6.5 <br/><br/> vCenter and ESX servers running these versions can be managed in VMM.
 **Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare-metal servers.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2022"
+
+**Component** | **Details**
+--- | ---
+**Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=57474)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
+**Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10.<br/><br/> You can install from setup, or [download it](/windows-hardware/get-started/adk-install). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.
+**Guest operating system** | Windows operating systems [supported by Hyper-V](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows).<br/><br/> Linux (CentOS, RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
+**PowerShell** | [Supported versions](system-requirements.md)
+**.NET** | [Supported versions](system-requirements.md)
+**Host agent** | VMM 2016/1801/1807/2019<br/><br/> Needed for hosts managed in VMM.
+**Monitoring** | System Center Operations Manager 2016/1801. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
+**VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/><br/>vCenter 7.0 and 8.0 (Supported from 2022 UR1)<br/><br/> ESXi 5.5, 6.0, 6.5 <br/><br/> ESXi 7.0 and 8.0 (Supported from 2022 UR1)<br/><br/> vCenter and ESXi servers running these versions can be managed in VMM.
+**Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare-metal servers.
+::: moniker-end
 
 ### SPN
 
@@ -82,7 +100,19 @@ When you install VMM with this user account, SPN will be registered.
 - The management server computer name can't exceed 15 characters.
 - Don’t install the VMM management server, or other System Center components other than agents, on servers running Hyper-V.
 - You can install the VMM management server on a VM. If you do, and you use the Dynamic Memory feature of Hyper-V, then you must set the startup RAM for the virtual machine to be at least 2,048 megabytes (MB).
+::: moniker range=">= sc-vmm-2019 <= sc-vmm-2022"
+
+- We recommend that you use a dedicated SCVMM management server and not install any other System Center components and management tools on the same server.
+- If you want to manage more than 150 hosts, we recommend the following:
+
+::: moniker-end
+
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-2016"
+
 - If you want to manage more than 150 hosts, we recommend that you use a dedicated computer for the VMM management server and do the following:
+
+::: moniker-end
+
   - Add one or more remote computers as library servers, and don't use the default library share on the VMM management server.
   - Don't run the SQL Server instance on the VMM management server.
 - For high availability, the VMM management server can be installed on a failover cluster. [Learn more](~/vmm/plan-ha-install.md).
