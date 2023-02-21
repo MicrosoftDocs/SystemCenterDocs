@@ -1,7 +1,7 @@
 ---
 title: Author with Service Manager
 description: Provides an overview of using, authoring, and customizing management packs, which enable customizations in Service Manager.
-manager: evansma
+manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -26,7 +26,7 @@ Service Manager automates help desk functions, such as ticketing and change requ
 
 Service Manager uses management pack files that contain object definitions for the various features of the product. You can customize the behavior of Service Manager and extend it by creating and modifying management packs. This authoring guide describes the use, authoring, and customization of management packs.  
 
-The Service Manager Software Development Kit \(SDK\) contains information that you might need when you are authoring with Service Manager. The SDK includes reference information for the class libraries and documents that the schema uses to create XML\-based management packs. To download the documentation for the System Center Service Manager SDK, see [System Center Service Manager Software Development Kit \(SDK\) Documentation](/previous-versions/system-center/developer/hh965050(v=msdn.10)).  
+The Service Manager Software Development Kit \(SDK\) contains information that you might need when you're authoring with Service Manager. The SDK includes reference information for the class libraries and documents that the schema uses to create XML\-based management packs. To download the documentation for the System Center Service Manager SDK, see [System Center Service Manager Software Development Kit \(SDK\) Documentation](/previous-versions/system-center/developer/hh965050(v=msdn.10)).  
 
 ### Overview of management packs
 
@@ -42,11 +42,11 @@ You can use management packs to extend Service Manager with the definitions and 
 By default, the Service Manager installation folder contains several preimported management packs that enable core Service Manager features, such as incident management and change management.  
 
 > [!IMPORTANT]  
->  Unsealed management packs are not automatically upgraded during an upgrade to Service Manager.  
+>  Unsealed management packs aren't automatically upgraded during an upgrade to Service Manager.  
 
 ### Overview of authoring methods for Service Manager
 
-There are three methods that you can use to customize Service Manager. While all three methods result in changes to a management pack file, they differ in scope and in the complexity of the customization that they provide.  
+There are three methods that you can use to customize Service Manager. While all the three methods result in changes to a management pack file, they differ in scope and in the complexity of the customization that they provide.  
 
 The three methods for customizing and extending Service Manager are as follows:  
 
@@ -54,7 +54,7 @@ The three methods for customizing and extending Service Manager are as follows:
 -   Using the Service Manager Authoring Tool  
 -   Directly modifying and authoring management pack files  
 
-In general, we recommend that you use the Service Manager console or the Authoring Tool for simple customizations and that you work directly with the management pack files only for customizations that the Service Manager console and the Authoring Tool do not support.  
+In general, we recommend that you use the Service Manager console or the Authoring Tool for simple customizations and that you work directly with the management pack files only for customizations that the Service Manager console and the Authoring Tool don't support.  
 
 #### Service Manager console  
 
@@ -63,17 +63,17 @@ The **Administration** pane and the **Authoring** pane in the Service Manager co
 The Service Manager console provides for the following customizations:  
 
 -   In the **Administration** pane, you can customize settings for activities, change management, incident management, and notifications. For example, you can configure the list notification recipients when an incident changes status.  
--   In the **Authoring** pane, you can make simple customizations to objects, such as queues, lists, and views.  
+-   In the **Authoring** pane, you can make simple customizations to objects such as queues, lists, and views.  
 
 
 #### Authoring Tool  
 The Authoring Tool provides an environment in which you can open, view, customize, extend, and author Service Manager management packs. You can use the Authoring Tool to modify some class properties, customize forms in a graphical form designer, and modify and create Service Manager workflows.  
 
-You can also use the Authoring Tool to create advanced customizations that require testing and verification before implementation. The Authoring Tool does not require advanced user skills or advanced knowledge of the internal architecture of Service Manager.  
+You can also use the Authoring Tool to create advanced customizations that require testing and verification before implementation. The Authoring Tool doesn't require advanced user skills or advanced knowledge of the internal architecture of Service Manager.  
 
 #### Directly modifying and authoring management pack files  
 
-For extensive or complex customizations and for customizations that require coding \(such as extending the data in the Service Manager database, customizing forms, or modifying the default behavior of a feature's workflow\), you have to edit the .xml file of the corresponding management pack directly. Working directly with management pack files requires in\-depth knowledge in several areas, such as the System Center Common Schema and the structure of management packs. Also, manual editing is prone to errors.  
+For extensive or complex customizations and for customizations that require coding (such as extending the data in the Service Manager database, customizing forms, or modifying the default behavior of a feature's workflow), you've to edit the .xml file of the corresponding management pack directly. Working directly with management pack files requires in-depth knowledge in several areas, such as the System Center Common Schema and the structure of management packs. Also, manual editing is prone to errors.  
 
 ### Overview of the Authoring Tool for Service Manager
 
@@ -130,7 +130,7 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 -   Microsoft Visual Studio 2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
 
     > [!NOTE]  
-    >  During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2008 is not installed and you've verified that it is installed, then the Visual Studio 2008 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2008 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
+    >  During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2008 isn't installed and you've verified that it's installed, then the Visual Studio 2008 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2008 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
 
 #### Set up the Authoring Tool
 
@@ -141,15 +141,15 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 ::: moniker range="sc-sm-1801"
 
 > [!NOTE]
-> Do not install the Service Manager Authoring tool on the same computer that has the Service Manager Web portal installed.
+> Don't install the Service Manager Authoring tool on the same computer that has the Service Manager Web portal installed.
 
 ::: moniker-end    
 
 ::: moniker range="sc-sm-2016"
 
 > [!NOTE]
-> - Do not install the Service Manager Authoring tool on the same computer that has the Service Manager (SM) Web portal installed.
-> - Install at least Update Rollup 5 on the computer with SM management server/data warehouse management server/Service Manager console installed - if Service Manager Authoring tool is to be used on the same computer.   
+> - Don't install the Service Manager Authoring tool on the same computer that has the Service Manager (SM) Web portal installed.
+> - Install at least Update Rollup 5 on the computer with SM management server/data warehouse management server/Service Manager console installed - if Service Manager Authoring tool is to be used on the same computer.
 
 ::: moniker-end
 
@@ -162,20 +162,20 @@ If Windows Error Reporting is enabled on the computer that is running the Author
    - [Download 1801 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=56561)  
 
 3. Double-click the downloaded zip file, read through the license agreement, and extract the files to the desired location.  
-4. Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe** and double-click **Setup.exe** file.   
-5. In the Service Manager Authoring Tool Setup Wizard, click **Install the Service Manager Authoring Tool**.  
+4. Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe** and double-click **Setup.exe** file.
+5. In the Service Manager Authoring Tool Setup Wizard, select **Install the Service Manager Authoring Tool**.  
 6. Continue through the **Product registration** and the **Installation location** pages.  
-7. On the **Prerequisites** page, if any prerequisite test fails, you must update the server to ensure that each prerequisite is met. If Microsoft Visual Studio 2008 Shell is not installed, click **Install Microsoft Visual Studio Shell 2008** to install the application.  
-    Click **Check prerequisites again**, and fix any other problems until all prerequisite tests pass.  
+7. On the **Prerequisites** page, if any prerequisite test fails, you must update the server to ensure that each prerequisite is met. If Microsoft Visual Studio 2008 Shell isn't installed, select **Install Microsoft Visual Studio Shell 2008** to install the application.  
+    Select **Check prerequisites again**, and fix any other problems until all prerequisite tests pass.  
 8. Continue through the **Use Microsoft Update to help keep your computer secure and up\-to\-date** pages.  
-9. On the **Installation summary** page, click **Install** and wait for the installation to finish.  
+9. On the **Installation summary** page, select **Install** and wait for the installation to finish.  
 
 ##### To start the Authoring Tool  
 
-1.  On your desktop, click **Start**.  
-2.  Click **Programs**, click **Microsoft System Center**, and then click **Service Manager \<version\> Authoring**.  
-3.  Click **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
-4.  In the **Class Browser** pane, click **Refresh**. This populates the browser with all the classes that are defined in management packs from the \<Installation folder\>\/Library folder. When you opened the Authoring Tool for the first time, this pane was empty.  
+1.  On your desktop, select **Start**.  
+2.  Select **Programs**, select **Microsoft System Center**, and select **Service Manager \<version\> Authoring**.  
+3.  Select **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
+4.  In the **Class Browser** pane, select **Refresh**. This populates the browser with all the classes that are defined in management packs from the \<Installation folder\>\/Library folder. When you opened the Authoring Tool for the first time, this pane was empty.  
 
 #### Authoring Tool panes
 
@@ -187,7 +187,7 @@ The following sections describe the panes in the Authoring Tool.
 
 ##### Class browser  
 
-The **Class Browser** pane displays the classes and their properties from all the management packs that are in the Library folder and all the management packs that have been opened in the Authoring Tool. You can also drag a property from this pane to add a control to a form that you are authoring in the authoring pane.  
+The **Class Browser** pane displays the classes and their properties from all the management packs that are in the Library folder and all the management packs that have been opened in the Authoring Tool. You can also drag a property from this pane to add a control to a form that you're authoring in the authoring pane.  
 
 ##### Form browser  
 
@@ -217,18 +217,18 @@ The **Activities Toolbox** pane displays activities that you can use as building
 
 #### Upgrade management packs to work with the Authoring Tool
 
-During an upgrade to Service Manager, all customized Service Manager management packs are unsealed. \(Unsealed management packs are management packs that you can modify. For more information about sealed and unsealed management packs, see [Management Packs: Key Concepts](mps-in-auth-tool.md)). Management packs are copied to the new Service Manager folders without any further upgrade\-related processing. Using these custom management packs that were authored in previous versions of System Center Service Manager is supported. However, there are some issues to be aware of, and you may have to make some updates to these management packs to ensure that they work properly and as intended after the upgrade to Service Manager.  
+During an upgrade to Service Manager, all customized Service Manager management packs are unsealed. \(Unsealed management packs are management packs that you can modify. For more information about sealed and unsealed management packs, see [Management Packs: Key Concepts](mps-in-auth-tool.md)). Management packs are copied to the new Service Manager folders without any further upgrade\-related processing. Using these custom management packs that were authored in previous versions of System Center, Service Manager is supported. However, there are some issues to be aware of, and you may have to make some updates to these management packs to ensure that they work properly and as intended after the upgrade to Service Manager.  
 
 ##### Forms  
 The placement of a control in a form is determined by its top, bottom, left, and right margins in relation to either its parent control or to the form itself. In a customized form, this method can cause controls to be adjusted improperly when the margins of the parent control or of the form are modified.  
 
-As a result of updated styles that were implemented in System Center 2012 - Service Manager, some custom forms that were authored in System Center Service Manager 2010 might have layout issues when they are imported into Service Manager. Depending on the customization, some controls might be placed incorrectly, causing issues such as overlapping and clipping. Some of these issues affect only how the form looks, and other issues can prevent some intended functionality of the form.  
+As a result of updated styles that were implemented in System Center 2012 - Service Manager, some custom forms that were authored in System Center Service Manager 2010 might have layout issues when they're imported into Service Manager. Depending on the customization, some controls might be placed incorrectly, causing issues such as overlapping and clipping. Some of these issues affect only how the form looks, and other issues can prevent some intended functionality of the form.  
 
 The following sections describe the issues that you might encounter when you import into Service Manager forms that were authored in System Center Service Manager 2010. These sections also describe how you can use the Service Manager Authoring Tool to rectify these issues to ensure that these forms look and function as intended.  
 
 ###### Clipping and overlapping controls  
 
-Some controls on a form might appear clipped, with incomplete border lines and cut\-off text. Sometimes this issue appears in conjunction with another issue in which controls overlap each other. Also, some controls on a form might not be visible, causing some functionality of the form to be unavailable.  
+Some controls on a form might appear clipped, with incomplete border lines and cut-off text. Sometimes this issue appears with another issue in which the controls overlap each other. Also, some controls on a form might not be visible, causing some functionality of the form to be unavailable.  
 
 To rectify these issues, you may have to use the Authoring Tool to adjust the control's properties as follows. You may have to try several remedies, and you may have to make several attempts before the control is placed correctly.  
 
@@ -246,7 +246,7 @@ To rectify this issue, use the Authoring Tool to do one of the following:
 
 -   Drag controls to their desired location on the form.  
 -   Select the control that is shuffled. In the **Details** pane, in the **Margin** properties group, adjust properties such as **Bottom** or **Left** to place the control in the desired location.  
--   Select the control that contains the shuffled control. In the **Details** pane, modify its properties such as **Bottom** or **Left**, in the **Margin** properties group.  
+-   Select the control that contains the shuffled control. In the **Details** pane, modify its properties such as **Bottom** or **Left** in the **Margin** properties group.  
 
 ##### Workflows  
 
@@ -254,9 +254,9 @@ Workflows that were developed in System Center Service Manager 2010 are supporte
 
 ###### Virtual Machine management activities  
 
-The Virtual Machine Management (VMM) workflow activities in Service Manager support System Center Virtual Machine Manager 2008 R2. However, these activities do not support System Center VMM.
+The Virtual Machine Management (VMM) workflow activities in Service Manager support System Center Virtual Machine Manager 2008 R2. However, these activities don't support System Center VMM.
 
-If you are trying to automate IT processes that require the use of an activity that supports VMM, using System Center - Orchestrator runbooks and VMM instead might be helpful.  
+If you're trying to automate the IT processes that require the use of an activity that supports VMM, using System Center - Orchestrator runbooks and VMM instead might be helpful.  
 
 ## Next steps
 
