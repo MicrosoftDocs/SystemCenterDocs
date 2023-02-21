@@ -36,7 +36,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 > [!NOTE]  
 >  When you're creating a class, always ensure that the class names are unique among management packs. If possible, use class names that are meaningful in your environment. You can determine whether a class name already exists by using the search feature in the **Class Browser** window of the Service Manager Authoring Tool.  
 
-### properties  
+### Properties  
  All the instances of a particular class share a common set of *properties*. The values for these properties are provided in various methods by users and can vary among different instances. Properties are used to represent details of the actual object, such as a unique name, location, and other details that may be interesting to the user or that are required for management scenarios.  
 
 #### Key properties  
@@ -117,8 +117,8 @@ Class relationships affect objects in the following ways.
 
  **Sample database hosting relationships**  
 
- ![Diagram of a Sample Database Hosting Relationship](./media/auth-classes/author-authguide_sampledatabasehosting.png)  
-.
+ ![Diagram of a Sample Database Hosting Relationship](./media/auth-classes/author-authguide_sampledatabasehosting.png).
+
 ## General guidelines and best practices for classes
 
 Use the following guidelines and best practices when you're customizing classes in the Service Manager Authoring Tool.  

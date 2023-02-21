@@ -42,7 +42,7 @@ Service Manager runs a Windows Workflow Foundation \(WF\) workflow using trigger
 
 To implement a management pack with workflows in your Service Manager console environment, ensure that Service Manager has access to the workflow assembly file and the activity assembly files, as well as the management pack itself. The following illustration shows how the various files interact when a workflow runs.  
 
-  ![Illustratio of the Management Pack and Workflow Files.](./media/automate-processes-workflows/author-mpandworkflowcomponents_production.png)  
+  ![Illustration of the Management Pack and Workflow Files.](./media/automate-processes-workflows/author-mpandworkflowcomponents_production.png)  
 
 ### Trigger conditions for workflows  
  A workflow's data source module defines the workflow trigger condition. A workflow can have one of two types of trigger condition:  
