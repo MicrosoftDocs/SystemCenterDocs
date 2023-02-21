@@ -1,7 +1,7 @@
 ---
 title: Configure PowerShell to run in Service Manager
 description: Before you use PowerShell with Service Manager, you need to prepare and then import Service Manager cmdlets.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -86,13 +86,13 @@ You have to run this command only once on the computer where you intend to use W
 
 ### To set execution policy
 
-1. On the computer where you want to run Windows PowerShell, click **Start**, click **All Programs**, click **Microsoft System Center \<version\>**, click **Service Manager**, and then click **Service Manager Shell**.
-2. At the Windows PowerShell prompt, type the following command, and then press ENTER:
+1. On the computer where you want to run Windows PowerShell, select **Start**, select **All Programs**, select **Microsoft System Center \<version\>**, select **Service Manager**, and select **Service Manager Shell**.
+2. At the Windows PowerShell prompt, enter the following command, and then press ENTER:
 
     ```powershell
     Set-ExecutionPolicy –Force RemoteSigned
     ```
-3. Type *exit*, and then press ENTER to close the **Administrator: Windows PowerShell** window.
+3. Enter *exit*, and then press ENTER to close the **Administrator: Windows PowerShell** window.
 
 ## Import the data warehouse cmdlet module
 
@@ -100,16 +100,16 @@ To be able to use the data warehouse cmdlets in Service Manager, you must first 
 
 ### To import the data warehouse cmdlets module
 
-1. On a management server, open a Service Manager Windows PowerShell session. Or, on a data warehouse management server open a Windows PowerShell session.
+1. On a management server, open a Service Manager Windows PowerShell session. Or on a data warehouse management server, open a Windows PowerShell session.
     Ensure that the Windows PowerShell prompt is at the Service Manager installation folder.
-2. At the Windows PowerShell command prompt, type the following command, and then press ENTER:
+2. At the Windows PowerShell command prompt, enter the following command, and then press ENTER:
 
     ```powershell
     Import-Module ".Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1"
     ```
 
-3. Type *exit*, and then press ENTER to close the **Administrator: Windows PowerShell** window.
+3. Enter *exit*, and then press ENTER to close the **Administrator: Windows PowerShell** window.
 
 ## Next steps
 
-- Review [Register with the data warehouse to enable reporting](register-dw.md) to run the Data Warehouse Registration Wizard to register the Service Manager management group with the Service Manager data warehouse management server. Registering with the data warehouse makes it possible for you to run reports.
+- To run the Data Warehouse Registration Wizard to register the Service Manager management group with the Service Manager data warehouse management server, review [Register with the data warehouse to enable reporting](register-dw.md). Registering with the data warehouse makes it possible for you to run reports.

@@ -1,7 +1,7 @@
 ---
 title: Form control properties
 description: Provides a reference for form control properties in the Service Manager Authoring Tool.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -23,16 +23,16 @@ ms.assetid: 7d62ce9b-fd6d-4521-932d-f2ede5920955
 
 ::: moniker-end
 
-The table in this topic lists the properties of Service Manager form controls. This information can help you customize and create forms in the Service Manager Authoring Tool.  
+The table in this article lists the properties of Service Manager form controls. This information can help you customize and create forms in the Service Manager Authoring Tool.  
 
- Most properties of Service Manager forms are based on Windows Presentation Foundation (WPF) properties, and other properties are defined by Service Manager. The following table provides details about the WPF-based property groups and their respective properties, when they are applicable. For more information about WPF properties, see [System.Windows.Controls Namespace](/dotnet/api/system.windows.controls) on MSDN.  
+ Most properties of Service Manager forms are based on Windows Presentation Foundation (WPF) properties, and other properties are defined by Service Manager. The following table provides details about the WPF-based property groups and their respective properties, when they're applicable. For more information about WPF properties, see [System.Windows.Controls Namespace](/dotnet/api/system.windows.controls) on MSDN.  
 
 **Group** | **Name** | **Source** | **WPF** | **Details**
 --- | --- | --- | --- | ---
 **Appearance** | Opacity | WPF | UIElement/Opacity |
  | Visibility | WPF | UIElement/Visibility |  
 **Binding** | Binding Mode | WPF | Binding/Mode |
- | Binding Path | Service Manager/WPF | Binding/Path | Binds the control dynamically to the its displayed property.<br/><br/> The value it updated as it changes.<br/><br/> The control and displayed property types must match. Example: the **Binding Path** property type of a **Date Picker** control must be **Date**.
+ | Binding Path | Service Manager/WPF | Binding/Path | Binds the control dynamically to its displayed property.<br/><br/> The value it updated as it changes.<br/><br/> The control and displayed property types must match. Example: the **Binding Path** property type of a **Date Picker** control must be **Date**.
  |Binds directly to source | WPF | Binding/BindsDirectlyToSource |   
 **Date** | Date Format | Service Manager | N/A | The date format. Example:"Full date and time", "Short".
 **Drawing** | Source Path |Service Manager | N/A | Image file path in an **Image** control.|  

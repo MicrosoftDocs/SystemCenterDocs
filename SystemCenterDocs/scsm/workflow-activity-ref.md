@@ -1,7 +1,7 @@
 ---
 title: Workflow activity reference
 description: Provides a reference for Service Manager Authoring Tool workflow activities.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -23,7 +23,7 @@ ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32
 
 ::: moniker-end
 
-This section provides guidance for information technology (IT) developers so that they can create custom Windows Workflow Foundation (WF) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library-the activities that are distributed with the Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers (or IT pros acting as developers) create custom WF activities, as needed.  
+This section provides guidance for information technology (IT) developers so that they can create custom Windows Workflow Foundation (WF) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library—the activities that are distributed with the Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers (or IT pros acting as developers) create custom WF activities, as needed.  
 
  For information about how to use WF activities and WF workflows with Service Manager, see [Automating IT Processes with Workflows](automate-processes-workflows.md).  
 
@@ -31,17 +31,17 @@ This section provides guidance for information technology (IT) developers so tha
 
 Use Active Directory Domain Services (AD&nbsp;DS) activities to make Active&nbsp;Directory functions part of your workflow in Service Manager.  
 
- The Service Manager Authoring Tool provides two default Service Manager activities in the **Active Directory Activities** group in the **Activities Toolbox** pane. The topics in this section describe these activities.  
+ The Service Manager Authoring Tool provides two default Service Manager activities in the **Active Directory Activities** group in the **Activities Toolbox** pane. The sections in this article describe these activities.  
 
 ### Add AD DS Computer to a Group activity
 
-This activity adds a computer to a security group in Active Directory Domain Services (AD&nbsp;DS) in Service Manager. The computer and the group must belong to the same domain, and all containers in the domain are searched.  
+This activity adds a computer to a security group in Active Directory Domain Services (AD&nbsp;DS) in Service Manager. The computer and the group must belong to the same domain, and all the containers in the domain are searched.  
 
 #### Design time prerequisites  
  None.  
 
 #### Run time prerequisites  
- When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.  
+ When you use this activity, ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.  
 
 #### Properties  
  The **Add AD DS Computer to Group** activity uses the input properties that are described in the following table.  
@@ -56,7 +56,7 @@ This activity adds a computer to a security group in Active Directory Domain Ser
 
 |Display name|Internal name|Type|Description|  
 |------------------|-------------------|----------|-----------------|  
-|Output|Output|Boolean|The result of the operation: **True** if the addition succeeded, **False** if it failed.|  
+|Output|Output|Boolean|The result of the operation: **True** if the addition succeeded; **False** if it failed.|  
 
 #### Errors and exceptions  
  None.  
@@ -75,7 +75,7 @@ This activity adds a user to a security group in Active Directory Domain Service
  None.  
 
 #### Run time prerequisites  
- When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.  
+ When you use this activity, ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.  
 
 #### Properties  
  The **Add AD DS User to Group** activity uses the input properties that are listed in the following table.  
@@ -103,7 +103,7 @@ This activity adds a user to a security group in Active Directory Domain Service
 
 ## Control Flow activities
 
-Use control flow activities to provide structure-branches, loops, or timer delays-for your workflow in Service Manager.  
+Use control flow activities to provide structure—branches, loops, or timer delays—for your workflow in Service Manager.  
 
  The Authoring Tool provides four default control flow activities in the **Control Flow** group in the **Activities Toolbox** pane.  
 
@@ -124,7 +124,7 @@ This activity introduces a delay between activities in a workflow in Service Man
 |Initialize TimeoutDuration|InitializeTimeoutDuration||Internal|Specifies a handler to initialize the **TimeoutDuration** property.|  
 |TimeoutDuration|TimeoutDuration|Timespan|Yes|Duration of the delay.|  
 
- The **Delay** activity does not produce an output property.  
+ The **Delay** activity doesn't produce an output property.  
 
 #### Errors and exceptions  
  None.  
@@ -136,7 +136,7 @@ This activity introduces a delay between activities in a workflow in Service Man
  None.  
 
 ### For Each Loop activity
-The **For Each Loop** activity takes as an input an array (*collection*) of objects and repeats the set of activities within the loop for each object in the collection. For example, if the input collection has five objects, the loop iterates five times. If the collection is empty, the loop does not iterate. There is no upper limit to the number of objects in the collection. The **For Each Loop** activity always runs on the computer on which the workflow runs.  
+The **For Each Loop** activity takes as an input an array (*collection*) of objects and repeats the set of activities within the loop for each object in the collection. For example, if the input collection has five objects, the loop iterates five times. If the collection is empty, the loop doesn't iterate. There's no upper limit to the number of objects in the collection. The **For Each Loop** activity always runs on the computer on which the workflow runs.  
 
  The **For Each Loop** activity is a composite activity with two containers for activities:  
 
@@ -144,11 +144,11 @@ The **For Each Loop** activity takes as an input an array (*collection*) of obje
 
 - **Loop Container**: Named **ForEachChildActivity**, this activity contains the loop activities. Most Windows Workflow Foundation (WF) activities that you place in this container have two additional properties: **Current Item** and **Property to Bind**. For each activity within the loop container, set these properties as follows:  
 
-  1. Set **Current Item** to the **Current Item** property of the **Loop Container** activity of the **ForEach** activity. Note that if this activity is the first activity in the **For Each Loop** activity, **Current Item** is set automatically.  
+  1. Set **Current Item** to the **Current Item** property of the **Loop Container** activity of the **ForEach** activity. If this activity is the first activity in the **For Each Loop** activity, **Current Item** is set automatically.  
 
   2. Set the value of the **Property to Bind** property to the value of the property of the current activity that uses the **Current Item** value.  
 
-Two types of activities do not get the **Current Item** and **Property to Bind** properties and therefore cannot use the objects in the input collection:  
+Two types of activities don't get the **Current Item** and **Property to Bind** properties and therefore can't use the objects in the input collection:  
 
   -   Script activities, such as the **Windows PowerShell Script** activity.  
 
@@ -165,19 +165,19 @@ Two types of activities do not get the **Current Item** and **Property to Bind**
 
 |Display name|Internal name|Type|Required|Description|  
 |------------------|-------------------|----------|--------------|-----------------|  
-|Input Collection|InputCollection|Array/Object|N/A|A collection of objects to be passed, one at a time, to the activities within the **For Each Loop** activity. If the activity that resides in the input container produces an array of objects as its output property, **Input Collection** is automatically set to that property. To view the current value of this property, right-click the loop container, and then click **Properties**.|  
+|Input Collection|InputCollection|Array/Object|N/A|A collection of objects to be passed, one at a time, to the activities within the **For Each Loop** activity. If the activity that resides in the input container produces an array of objects as its output property, **Input Collection** is automatically set to that property. To view the current value of this property, right-click the loop container, and select **Properties**.|  
 |Current Item|CurrentItem|Object|N/A|An index into **Input Collection** that activities within the loop can use as an input property. For the first activity in the loop container, this property is set automatically.|  
 
 #### Errors and exceptions  
  The **For Each Loop** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions under the following conditions:  
 
-- If any error occurs in the **ForEachLoop** activity and that is not with the child activities, the workflow terminates.  
+- If any error occurs in the **ForEachLoop** activity and that isn't with the child activities, the workflow terminates.  
 
 - If any error occurs within the child activities, the workflow terminates unless **ContinueOnError**=true.  
 
-- If any of the input properties are null. The activity does not iterate.  
+- If any of the input properties are null. The activity doesn't iterate.  
 
-  Each activity within the **For Each Loop** activity must write its own errors or exceptions to the custom tracking service. The **For Each Loop** activity does not do so itself.  
+  Each activity within the **For Each Loop** activity must write its own errors or exceptions to the custom tracking service. The **For Each Loop** activity doesn't do so itself.  
 
 #### Remarks  
  None.  
@@ -260,10 +260,10 @@ This activity in Service Manager retrieves a list of one or more virtual machine
 |Parameter Set|ParameterSet|String|No; the default is **Connection**.|Specifies a subset of parameters, organized for a particular purpose. For the **Get VM** activity, you can select one of the following parameter sets:<br /><br /> -   **All:** Search for all of the available virtual machines.<br />-   **ID:** Search for a virtual machine with a known ID.<br />-   **Connection:** Search for virtual machines that are connected to the Virtual Machine Manager (VMM) server that is designated by the **VMMServer** property.<br />-   **VMHostGroup:** Search for virtual machines that are connected to the virtual machine host that is designated by the **VM Host** property.|  
 |Continue On Error|ContinueOnError|Boolean|No. (The default setting is True.)|Determines whether the workflow should continue running if the activity fails.|  
 |Has Error|HasError||N/A|Specifies if the activity has an error set. (Read-only)|  
-|All|All|Boolean|No. (The default setting is True.)|Available if the **Parameter Set** is **All**. If it is set to **True**, the **Get VM** activity returns a list of the virtual machine IDs of all of the available virtual machines.|  
+|All|All|Boolean|No. (The default setting is True.)|Available if the **Parameter Set** is **All**. If it's set to **True**, the **Get VM** activity returns a list of the virtual machine IDs of all of the available virtual machines.|  
 |ID|ID|String|Required if **Parameter Set** is **ID**.|Available if the **Parameter Set** is **ID**. If it is set to **True**, the **Get VM** activity returns a list of the virtual machine IDs of all of the virtual machines whose virtual machine IDs match all or part of the specified ID value.|  
 |Management Group|ManagementGroup|String|No|Specifies the management group in which this activity will run. Set to **localhost**. (Read-only)|  
-|Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **localhost**.|  
+|Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the activity to run.|  
 |VM Host|VMHost|String|Required if the **Parameter Set** is **VMHostGroup**|Available if the **Parameter Set** is **VMHostGroup**. If this parameter set is selected, the **Get VM** activity returns a list of the virtual machine IDs of all of the virtual machines running on the specified host.|  
 |VM Name|VMName|String|No|Specifies the name or part of a name of the virtual machine to search for. If the string is part of a name, the activity retrieves the IDs of all virtual machines that contain the string.|  
@@ -311,7 +311,7 @@ This activity in Service Manager moves a virtual machine from the Virtual Machin
 |Path|Path|String|No|Specifies the destination of the virtual machine on the maintenance host.|  
 |PROTipID|PROTipID|Guid|No|Specifies the ID of the Performance and Resource Optimization (PRO) tip that triggered this action. Allows for future auditing of PRO tips.|  
 |Run Asynchronously|RunAsynchronously|Boolean|No. (The default setting is False.)|Specifies that the job runs asynchronously so that control returns to the command shell immediately.|  
-|Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **localhost**.|  
+|Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the activity to run.|  
 |Start VM On Target|StartVMOnTarget|Boolean|No. (The default setting is False.)|Specifies that a virtual machine starts as soon as it reaches its destination host.|  
 |Use Cluster|UseCluster|Boolean|No. (The default setting is False.)|Forces the use of Windows Server 2008 Cluster Migration for the transfer of a virtual machine that is in a saved state to a host, even if the cluster supports Hyper-V live migration.|  
@@ -361,7 +361,7 @@ This activity in Service Manager shuts down the guest operating system on a virt
 |Management Group|ManagementGroup|String|No|Specifies the management group in which this activity will run. Set to **localhost**. (Read-only)|  
 |PROTipID|PROTipID|Guid|No|Specifies the ID of the Performance and Resource Optimization (PRO) tip that triggered this action. Allows for future auditing of PRO tips.|  
 |Run Asynchronously|RunAsynchronously|Boolean|No. (The default setting is False.)|Specifies that the job runs asynchronously so that control returns to the command shell immediately.|  
-|Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **Localhost**.|  
+|Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **Localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the activity to run.|  
 |VM ID|VMID|String|Yes|Specifies the unique ID of the virtual machine to be shut down.|  
 |VMMServer|VMMServer|String|Yes|Specifies the name of the System Center Virtual Machine Manager (VMM) server that manages the virtual machines.|  
@@ -446,7 +446,7 @@ This activity in Service Manager saves the state of a virtual machine and then s
 |Management Group|ManagementGroup|String|No|Specifies the management group in which this activity will run. Set to **localhost**. (Read-only)|  
 |PROTipID|PROTipID|Guid|No|Specifies the ID of the Performance and Resource Optimization (PRO) tip that triggered this action. Allows for future auditing of PRO tips.|  
 |Run Asynchronously|RunAsynchronously|Boolean|No. (The default setting is False.)|Specifies that the job runs asynchronously so that control returns to the command shell immediately.|  
-|Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **localhost**.|  
+|Script Server|Target|String|Yes|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the activity to run.|  
 |VM ID|VMID|String|Yes|Specifies the unique ID of the virtual machine to be saved.|  
 |VMM Server|VMMServer|String|Yes|Specifies the name of the System Center Virtual Machine Manager (VMM) server that manages the virtual machines.|  
@@ -458,7 +458,7 @@ This activity in Service Manager saves the state of a virtual machine and then s
 |VM ID|VMID|String|Specifies the unique ID of the virtual machine that was saved. The input **VM ID** and the output **VM ID** are equal unless the activity failed to find a virtual machine with a **VM ID** that matches the input **VM ID**. In that case, the output **VM ID** is set to Null.|  
 
 #### Errors and exceptions  
- The **Save State VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
+ The **Save State VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.  
 
 #### Remarks  
  None.  
@@ -495,11 +495,11 @@ This activity runs a command-line script as part of a Windows Workflow Foundatio
 |Management Group|ManagementGroupName|String|No|Specifies the management group to which the script server belongs. By default, this is set to **localhost**. (Read-only)|  
 |Script Parameters|Parameters|Dictionary <string,string>|Yes|Specifies command-line switches or switch/value pairs to be passed into the script when it runs.|  
 |Script Body|ScriptBody|String|Yes|Specifies the text of the script itself.|  
-|Script Server|Target|String|No|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **localhost**.|  
+|Script Server|Target|String|No|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the script to run.|  
 
 #### Errors and exceptions  
- The **Command Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
+ The **Command Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.  
 
 #### Remarks  
  None.  
@@ -531,11 +531,11 @@ This activity in Service Manager runs a Windows PowerShell script as part of a W
 |Script Parameters|Parameters|Dictionary <string,string>|Yes|Specifies the name/value list of parameters to be passed into the script when it runs.<br /><br /> You can set parameter values to any of the following management pack references:<br /><br /> -   $Target/...$<br />-   $MPElement[...]<br />-   $Data/...$. $Data references are resolved only at run time in the parameters (not in the script itself).<br /><br /> Using one of these references as the only value for a parameter sets that parameter to the XML string that represents the input data item (from **GetItemXML**).|  
 |Script Body|ScriptBody|String|Yes|Specifies the text of the script itself.|  
 |Snap-ins|SnapIns|String|No|Lists Windows PowerShell snap-ins to preload into the runspace.|  
-|Script Server|Target|String|No|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **localhost**.|  
+|Script Server|Target|String|No|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the script to run.|  
 
 #### Errors and exceptions  
- The **Windows PowerShell Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
+ The **Windows PowerShell Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.  
 
 #### Remarks  
  For more information about Windows PowerShell, see [Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=164777).  
@@ -562,11 +562,11 @@ This activity in Service Manager runs a VBScript script as part of a Windows Wor
 |Management Group|ManagementGroupName|String|No|Specifies the management group to which the script server belongs. (By default, this is set to **localhost**) (Read-only)|  
 |Script Parameters|Parameters|Dictionary <string,string>|Yes|Provides the list of the standard switches and any associated values that this script uses when it runs.|  
 |Script Body|ScriptBody|String|Yes|Specifies the text of the script itself.|  
-|Script Server|Target|String|No|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **localhost**.|  
+|Script Server|Target|String|No|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Don't use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the script to run.|  
 
 ### Errors and exceptions  
- The **VBScript Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
+ The **VBScript Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties can't be resolved.  
 
 #### Remarks  
  None.  

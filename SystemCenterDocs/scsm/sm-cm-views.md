@@ -1,7 +1,7 @@
 ---
 title: Mapping System Center - Service Manager properties to Configuration Manager database views
 description: Learn about the relationships between Service Manager properties and Configuration Manager database views.
-manager: evansma
+manager: mkluck
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
