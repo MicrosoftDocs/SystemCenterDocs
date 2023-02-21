@@ -44,8 +44,8 @@ Self-service users can interact with VMM to deploy virtual machines and services
 
 The VMM library is a file share that includes a catalog of resources that are used to deploy virtual machines and services in the VMM fabric. The library stores:
 
-- File-based resources, such as virtual hard disks, ISO images, scripts, driver files, and application packages (SQL Server data-tier applications and Web Deploy).
-- Non-file-based resources, such as virtual machine templates and service templates, that are used to create VMs and services.
+- File-based resources such as virtual hard disks, ISO images, scripts, driver files, and application packages (SQL Server data-tier applications and Web Deploy).
+- Non-file-based resources such as virtual machine templates and service templates that are used to create VMs and services.
 - Offline virtual machines are stored in the library.
 
 If you have Author permissions, you can create templates and profiles in the library. [Learn more](manage-library-server.md).
