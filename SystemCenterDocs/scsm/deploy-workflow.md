@@ -1,7 +1,7 @@
 ---
 title: Deploy a workflow to Service Manager
 description: Describes how to deploy a workflow to Service Manager using the Service Manager Authoring Tool.
-manager: evansma
+manager: mkluck
 ms.custom: na, intro-deployment
 ms.prod: system-center
 author: jyothisuri
@@ -38,17 +38,17 @@ Use these procedures to move workflows from the Service Manager Authoring Tool t
 
 ## Import the management pack into Service Manager  
 
-1.  In the Service Manager console, click **Administration**.  
+1.  In the Service Manager console, select **Administration**.  
 
-2.  In the **Administration** pane, expand **Administration**, and then click **Management Packs**.  
+2.  In the **Administration** pane, expand **Administration**, and select **Management Packs**.  
 
-3.  In the **Tasks** pane, under **Management Packs**, click **Import Management Pack**.  
+3.  In the **Tasks** pane, under **Management Packs**, select **Import Management Pack**.  
 
-4.  In the **Select Management Packs to Import** dialog box, select the management pack file that is associated with the workflow, and then click **Open**. For example, select **AddComputerToADGroupMP.xml**.  
+4.  In the **Select Management Packs to Import** dialog, select the management pack file that is associated with the workflow, and select **Open**. For example, select **AddComputerToADGroupMP.xml**.  
 
-5.  In the **Import Management Packs** dialog box, click **Add** to add the management pack that you want to import.  
+5.  In the **Import Management Packs** dialog, select **Add** to add the management pack that you want to import.  
 
-6.  Click **Import**, and then click **OK**.  
+6.  Select **Import**, and select **OK**.  
 
 ## Next steps
 

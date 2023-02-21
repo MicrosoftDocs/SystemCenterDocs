@@ -1,6 +1,6 @@
 ---
 description: include file to detail the release notes for System Center 2016 - Service Manager
-manager: evansma
+manager: mkluck
 ms.topic: include
 author: jyothisuri
 ms.author: jsuri
@@ -46,29 +46,29 @@ The following sections detail the release notes for SM 2016 and include the know
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. For more information on changing the Cardinality Estimator, see [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](/archive/blogs/saponsqlserver/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation).
 
 ## Prerequisite for installing SM Authoring Tool
-**Description:** Microsoft Visual C++ 2012 redistributable should be installed before deploying Service Manager 2016 Authoring Tool.
+**Description:** Microsoft Visual C++ 2012 Redistributable should be installed before deploying Service Manager 2016 Authoring Tool.
 
 **Workaround:** None
 
 ## Create Exchange Connector wizard might crash
-**Description:** Creating a new Exchange Connector via Service Manager 2016 console throws an exception if the admin clicks on the "Test Connection" button in the "Server Connection" pane of "Create Exchange Connector" wizard.
+**Description:** Creating a new Exchange Connector via Service Manager 2016 console throws an exception if the admin selects on the **Test Connection** button in the **Server Connection** pane of **Create Exchange Connector** wizard.
 
-**Workaround:** To work around this issue, avoid clicking "Test Connection" button in the "Create Exchange Connector" wizard. Instead, directly click the "Next" button, which internally tests the connection and does not crash the wizard.
+**Workaround:** To work around this issue, avoid selecting **Test Connection** button in the **Create Exchange Connector** wizard. Instead, directly select the **Next** button, which internally tests the connection and doesn't crash the wizard.
 
 If the crash has already occurred, you can restart the wizard and use this workaround.
 
 ## Browsing domain in AD connector wizard raises error
-**Description:** Error is raised on clicking “Browse” while choosing Domain or OU in AD connector wizard of Service Manager 2016 console.
+**Description:** Error is raised on selecting **Browse** while choosing Domain or OU in AD connector wizard of Service Manager 2016 console.
 
 **Workaround:** Install Microsoft Visual C++ 2012 Redistributable on the affected machine.
 
 ## Error while creating a new Software type configuration item
-**Description:** The property “Is Virtual Application" in create Software configuration item form is mandatory, but the asterix (\*) symbol is not shown for this property. Hence on clicking "Ok" or "Apply" button without setting this field throws an error "The form could not be submitted for the following reasons: Property Is Virtual Application must be set", and makes the form unusable.
+**Description:** The property **Is Virtual Application** in create Software configuration item form is mandatory, but the asterix (\*) symbol isn't shown for this property. Hence, by selecting **Ok** or **Apply** button without setting this field throws an error **The form could not be submitted for the following reasons: Property Is Virtual Application must be set**, and makes the form unusable.
 
-**Workaround:** Reopen the create Software configuration item form, and fill all the details including the field "Is Virtual Application", before clicking on "Ok" or "Apply" button.
+**Workaround:** Reopen the create Software configuration item form, and fill all the details including the field **Is Virtual Application**, before selecting **Ok** or **Apply** button.
 
 ## Manual steps to configure remote SQL Server 2014 Reporting Services
-**Description:** During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
+**Description:** During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you're prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
 
 -   Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the Service Manager installation media to the computer that is hosting SSRS.
 
@@ -76,7 +76,7 @@ If the crash has already occurred, you can restart the wizard and use this worka
 
 -   Add an Extension tag to the existing Data segment in the rsreportserver configuration file on the same computer.
 
-If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll (which is located in the Prerequisites folder on your Service Manager installation media) to the folder \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer\Bin on the computer that is hosting SSRS. If you did not use the default instance of SQL Server, the path of the required folder is \Program Files\Microsoft SQL Server\MSRS12.<INSTANCE_NAME>\Reporting Services\ReportServer\Bin. In the following procedure, the default instance name is used.
+If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll (which is located in the Prerequisites folder on your Service Manager installation media) to the folder \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer\Bin on the computer that is hosting SSRS. If you didn't use the default instance of SQL Server, the path of the required folder is \Program Files\Microsoft SQL Server\MSRS12.<INSTANCE_NAME>\Reporting Services\ReportServer\Bin. In the following procedure, the default instance name is used.
 
 **To copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file**
 
@@ -86,7 +86,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 3.  Start a second instance of Windows Explorer, locate the drive that contains the Service Manager installation media, and then open the Prerequisites folder.
 
-4.  In the Prerequisites folder, click **Microsoft.EnterpriseManagement.Reporting.Code.dll**, and drag it to the folder that you located previously.
+4.  In the Prerequisites folder, select **Microsoft.EnterpriseManagement.Reporting.Code.dll**, and drag it to the folder that you located previously.
 
 **To add a code segment to the rssrvpolicy.config file**
 
@@ -138,7 +138,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 2.  Using an XML editor of your choice (such as Notepad), open the rsreportserver.config file.
 
-3.  Scroll through the rsreportserver.config file and locate the code segment. There is only one code segment in this file.
+3.  Scroll through the rsreportserver.config file and locate the code segment. There's only one code segment in this file.
 
 4.  Add the following **Extension** tag to the code segment where all the other **Extension** tags are:
 
@@ -150,13 +150,13 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 
 ## SM console installed on a VMM Server causes VMM connector failure
-**Description:** If the Service Manager console is installed on the same server as VMM, then you cannot use that Service Manager console to create a VMM connector to that VMM server.
+**Description:** If the Service Manager console is installed on the same server as VMM, then you can't use that Service Manager console to create a VMM connector to that VMM server.
 
-**Workaround:** None, however you can use a different Service Manager console to create the VMM connector.
+**Workaround:** None; however, you can use a different Service Manager console to create the VMM connector.
 
 ## SM console installed on an Operations Manager management server causes an error
 
-**Description:** Installing the Service Manager console on a Operations Manager management server is not supported.
+**Description:** Installing the Service Manager console on an Operations Manager management server isn't supported.
 
 **Workaround:** None.
 
@@ -164,30 +164,30 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 ## Data Warehouse Setup might fail if the DB or log path has a single quote
 **Description:** During Setup, if you specify a database or log path that includes a single quotation mark character ('), Setup might fail.
 
-**Workaround:** None. The path that you specify cannot include a single quotation mark character.
+**Workaround:** None. The path that you specify can't include a single quotation mark character.
 
 ## Setup might fail if the SM Authoring Tool was installed
-**Description:** Setup might fail if you have previously installed any version of the Service Manager Authoring Tool.
+**Description:** Setup might fail if you've previously installed any version of the Service Manager Authoring Tool.
 
 **Workaround:** Remove the Service Manager Authoring Tool, and then retry Setup.
 
 ## Setup does not install the Report Viewer language pack
-**Description:** Setup includes a prerequisite checker that checks for and - if necessary, installs - the Microsoft Report Viewer. However, Setup does not install the Report Viewer Language Pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that are configured to use languages other than English.
+**Description:** Setup includes a prerequisite checker that checks for and, if necessary, installs the Microsoft Report Viewer. However, Setup doesn't install the Report Viewer Language Pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that are configured to use languages other than English.
 
 **Workaround:** If your system is configured to use a language other than English, you should manually install the Report Viewer Language Pack for that language.
 
 ## SM Setup fails if a SQL Server instance contains a $ character
 **Description:** If you attempt to install Service Manager using a named Structured Query Language (SQL) instance that contains a dollar sign ($) character, Setup fails.
 
-**Workaround:** Use a SQL instance that does not contain the $ character in its name.
+**Workaround:** Use a SQL instance that doesn't contain the $ character in its name.
 
 ## Orchestrator Connector Account Password cannot contain $ characters
-**Description:** If the Orchestrator connector account password contains a $ character, the sync job completes, however runbooks are not updated in the Service Manager database.
+**Description:** If the Orchestrator connector account password contains a $ character, the sync job completes; however, runbooks aren't updated in the Service Manager database.
 
-**Workaround:** If your Orchestrator connector account password contains a $ character, change the password to one that does not include the $ character.
+**Workaround:** If your Orchestrator connector account password contains a $ character, change the password to one that doesn't include the $ character.
 
 ## Information linked from Setup might not display localized content
-**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in Service Manager are available in English only. Technical documentation is available in a variety of localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
+**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in Service Manager are available in English only. Technical documentation is available in various localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
 
 **Workaround:** None.
 
@@ -204,17 +204,17 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Workaround:** None.
 
 ## Double-Byte characters are sent incorrectly to Search Provider
-**Description:** When you perform a knowledge search and you type double-byte characters in the Search Provider box, they are not sent correctly to the search website. Instead, erroneous characters are sent.
+**Description:** When you perform a knowledge search and you enter double-byte characters in the Search Provider box, they aren't sent correctly to the search website. Instead, erroneous characters are sent.
 
 **Workaround:** None.
 
 ## Sorting of Knowledge Articles by Date does not work
-**Description:** When you try to sort knowledge articles by date, sorting does not work.
+**Description:** When you try to sort knowledge articles by date, sorting doesn't work.
 
 **Workaround:** None.
 
 ##  Active Directory group expansion selection after upgrade
-**Description:** When upgrading from System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager, do not change the AD group expansion selection value in any AD connector (if it is OFF, let it remain OFF, if it is ON, let it remain ON), until the connector has run at least one time after the upgrade.
+**Description:** When upgrading from System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager, don't change the AD group expansion selection value in any AD connector (if it's OFF, let it remain OFF, if it's ON, let it remain ON), until the connector has run at least one time after the upgrade.
 
 **Workaround:** None.
 

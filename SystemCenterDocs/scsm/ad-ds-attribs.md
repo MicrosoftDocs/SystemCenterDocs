@@ -1,7 +1,7 @@
 ---
 title: Mapping Active Directory Domain Services attributes to properties in Service Manager
 description: Learn about the relationships between Active Directory Domain Services attributes and properties in Service Manager.
-manager: evansma
+manager: mkluck
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
@@ -23,7 +23,7 @@ ms.assetid: fb609f10-418e-4e1c-a514-ee36f9fdc560
 Using an Active Directory connector, Service Manager synchronizes data with the User, Group, Computer, and Printer Active Directory Domain Services (AD DS) objects. The following tables describe the mapping between the attributes of the Active Directory objects and the corresponding Service Manager class properties.
 
 ## User/Microsoft.AD.User
-The following table describes the mapping between the attributes of the Active Directory User object and the  Service Manager **Microsoft.AD.User** class properties.
+The following table describes the mapping between the attributes of the Active Directory User object and the Service Manager **Microsoft.AD.User** class properties.
 
 |Active Directory user attribute|Microsoft.AD.User property|
 |-----------------------------------|------------------------------|
@@ -116,7 +116,7 @@ The following table describes the mapping between the attributes of the Active D
 |description|description|
 
 ## Computer/Microsoft.Windows.Computer
-The following table describes the mapping between the attributes of the Active Directory Computer object and the  Service Manager **Microsoft.Windows.Computer** class properties.
+The following table describes the mapping between the attributes of the Active Directory Computer object and the Service Manager **Microsoft.Windows.Computer** class properties.
 
 |Active Directory computer attribute|Microsoft.Windows.Computer property|
 |---------------------------------------|---------------------------------------|
