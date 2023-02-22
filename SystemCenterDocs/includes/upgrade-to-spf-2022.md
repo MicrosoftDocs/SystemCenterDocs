@@ -3,7 +3,7 @@ title: include file
 description: include file to provide information about how to upgrade to System Center Service Provider Foundation (SPF) 2022.
 author: jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date: 11/18/2022
 ms.topic: include
 ms.prod:  system center
@@ -21,7 +21,7 @@ The following sections describe the procedures required to upgrade from SPF 2019
     - SPF 2019 installed.
 - VMM:
     - VMM 2019 installed
-- Microsoft Azure Pack - Install [update rollup 12](https://support.microsoft.com/help/4043909/update-rollup-12-for-windows-azure-pack), or later.
+- Microsoft Azure Pack - Install [update rollup 12](https://support.microsoft.com/help/4043909/update-rollup-12-for-windows-azure-pack) or later.
 - VMM management console - The machine running the VMM 2019 management console should have the latest VMM updates installed.
 
 
@@ -44,9 +44,9 @@ Here's the recommended upgrade order for the above scenario:
 
 ## Before you start
 
-1. Make sure Microsoft Azure Pack, SPF, and VMM are all running the required updates.
+1. Ensure Microsoft Azure Pack, SPF, and VMM are all running the required updates.
 2. We recommend that you shut down VMM and Microsoft Azure Pack servers, removing all database activity.
-3. Verify SPF [system requirements](../spf/system-requirements-spf.md). Note that SPF must run on Windows Server 2022 - Core or Desktop experience.
+3. Verify SPF [system requirements](../spf/system-requirements-spf.md). Ensure that SPF must run on Windows Server 2022 - Core or Desktop experience.
 4. Verify VMM [console requirements](../vmm/system-requirements.md?preserve-view=true&view=sc-vmm-1801#vmm-console-operating-system).
 
 
@@ -54,9 +54,9 @@ Here's the recommended upgrade order for the above scenario:
 
 Prepare the SPF 2022 computer on which you want to run the upgrade.
 
-1. Create a new server running Windows Server 2022, on which you want to install SPF 2022. You can also use a Virtual Machine (VM).
+1. Create a new server running Windows Server 2022 on which you want to install SPF 2022. You can also use a Virtual Machine (VM).
 2. In our example, we'll create a machine call **SERVER-SPF-UPGRADE**.
-3. Install the prerequisites on the new VM, as follows:
+3. Install the prerequisites on the new VM as follows:
     - Install [SQL ODBC Drivers](https://www.microsoft.com/download/details.aspx?id=36434).
     - Install [SQL Native Client](https://www.microsoft.com/en-us/download/details.aspx?id=50402)
     - Install SQL Server [command line utilities](https://www.microsoft.com/en-us/download/details.aspx?id=53591).
@@ -65,7 +65,7 @@ Prepare the SPF 2022 computer on which you want to run the upgrade.
     - Install [WCF Data Services 5.0 for OData V3](https://www.microsoft.com/download/details.aspx?id=29306).
     - Install [ASP.NET MVC 4](https://www.microsoft.com/download/details.aspx?id=30683).
 4. Install the latest Windows updates on the VM.
-5. Restart the VM to make sure there are no pending reboots.
+5. Restart the VM to ensure there are no pending reboots.
    >[!NOTE]
    > Don't join the VM to a domain.
 
@@ -78,9 +78,9 @@ Prepare the SPF 2022 computer on which you want to run the upgrade.
 
 ### Set up the SPF 2022 computer
 
-1. Rename the VM  you set up. Use the original name of the SPF computer. So, change the VM name from **SERVER-SPF-UPGRADE** to **SERVER-SPF-01**.
+1. Rename the VM you set up. Use the original name of the SPF computer. So, change the VM name from **SERVER-SPF-UPGRADE** to **SERVER-SPF-01**.
 2. Join the VM to the domain.
-3. Install the [VMM console](../vmm/install-console.md). For a core installation you can install from the [command line](../vmm/install-console.md#install-the-console-from-the-command-prompt), or set up from the user interface and change to Core later.
+3. Install the [VMM console](../vmm/install-console.md). For a core installation, you can install from the [command line](../vmm/install-console.md#install-the-console-from-the-command-prompt), or set up from the user interface and change to Core later.
 4. Install [SPF 2022](../spf/deploy-spf.md), using the existing SQL Server database name during setup.
 
 
