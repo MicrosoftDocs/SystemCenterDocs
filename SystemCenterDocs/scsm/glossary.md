@@ -1,7 +1,7 @@
 ---
 title: Glossary for System Center - Service Manager
 description: This glossary defines terms used in Service Manager.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -35,7 +35,7 @@ ms.technology: service-manager
 |combination class|A feature in Service Manager that is used mostly in reports and in views to display information from multiple classes that are defined in Service Manager.|
 |configuration item|Any component that needs to be managed to deliver a service. In Service Manager, configuration items might include services, hardware, software, buildings, people, and formal documentation, such as process documentation and service level agreements (SLA).|
 |configuration item class|A collection of configuration items. Groups can contain members of different configuration items classes (for example, a computer and a user).|
-|connector|A software component that is the integration mechanism between Service Manager and an external system. It is used for data transfers from these external systems to Service Manager.|
+|connector|A software component that is the integration mechanism between Service Manager and an external system. It's used for data transfers from these external systems to Service Manager.|
 |dependent change management activity|A change management activity that is used to link change requests to a release record.|
 |DWDataMart database|The database that includes the reporting data, stored for the long-term.|
 |DWRepository database|The database that includes the transformed data from the DWStagingAndConfig database.|
@@ -44,10 +44,10 @@ ms.technology: service-manager
 |filtered view|A view to which a set of conditions have been applied to reduce the total number of displayed objects.|
 |groom|To permanently remove data from the data warehouse.|
 |history|A record of all the changes to an object&trade;s properties and relationships. History exists for all objects, such as configuration items and work items."|
-|incident|A way of tracking any event that is not part of the standard operation of a service and that causes, or may cause, an interruption to, or a reduction in, the quality of that service.|
+|incident|A way of tracking any event that isn't part of the standard operation of a service and that causes, or may cause, an interruption to, or a reduction in, the quality of that service.|
 |knowledge|Information that can help an end-user or analyst solve a problem.|
-|list|An administrator-defined customization that enables users to classify objects such as incidents, change requests, activities, or configuration items. For example, a list might be "Location" or "Organization."|
-|list item|An option that constrains the values that users can enter for a specific list. For example, "Redmond" might be a list item for "Location."|
+|list|An administrator-defined customization that enables users to classify objects such as incidents, change requests, activities, or configuration items. For example, a list might be **Location** or **Organization**.|
+|list item|An option that constrains the values that users can enter for a specific list. For example, **Redmond** might be a list item for **Location**.|
 |management pack|A grouping of classes, workflows, views, forms, reports, and knowledge that extends Service Manager with the information necessary to implement all or part of a service management process. For example, the Incident management pack provides the necessary information to enable Service Manager to implement the incident management process.|
 |notification subscriber|The user who receives notifications.|
 |notification subscriber address|A package that contains information about how to reach a particular user. It includes items such as the protocol to use and the target address.|
@@ -62,7 +62,7 @@ ms.technology: service-manager
 |reviewer|The user who completes an approval activity.|
 |role-based security|A method of limiting access to the Service Manager console.|
 |runbook|The sequence of activities that orchestrate actions on computers and networks.|
-|Self-Service Portal|A Web interface that is configured by an administrator so that end users can search knowledge, create requests, and read IT announcements.|
+|Self-Service Portal|A Web interface that is configured by an administrator so that end-users can search knowledge, create requests, and read IT announcements.|
 |service catalog|The list of published service offerings.|
 |service component|The set of configuration items that are used to deliver a business service, such as computers, Web sites, databases, and other application components.|
 |service dependent|The person or service in an enterprise that relies on a business service. These people and services are affected by the output and downtime of the business service.|
@@ -79,7 +79,7 @@ ms.technology: service-manager
 |SLA|An industry-wide term that is detailed in the Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). Microsoft Solutions Framework (MSF) definition: An agreement between an IT organization and the user community that defines the responsibilities of all participating parties and that binds IT management to provide a particular service of a specific agreed-on quality and quantity. An SLA limits the demands that users may place on the service to the limits that are defined by the agreement.|
 |SLA metric|A calculated time interval that Service Manager determines between the date and time fields in incidents and service requests. For example, the SLA metric resolution time is defined as the difference between the Incident Created Date and the Incident Resolved Date.|
 |SLA target|The specified duration of time in which the IT organization must respond to or resolve an incident or service request.|
-|SQL Server Analysis Services cube|(Analysis Services cube for short.) A conceptual view, consisting of descriptive categories (dimensions) and quantitative values (measures). The generic industry term is "OLAP data cube."|
+|SQL Server Analysis Services cube|(Analysis Services cube for short.) A conceptual view, consisting of descriptive categories (dimensions) and quantitative values (measures). The generic industry term is **OLAP data cube**.|
 |task|An action that a user accomplishes by using the Actions pane and the context-sensitive menu that affects non-Service Manager objects.|
 |Tasks pane|A pane in the Service Manager console that contains tasks that a user can perform.|
 |template|A method that is used to populate initial values in a class, such as a change request or incident.|
