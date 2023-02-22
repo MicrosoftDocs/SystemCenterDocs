@@ -1,7 +1,7 @@
 ---
 title: include file
 description: include file that outlines planning considerations and the order to upgrade to System Center 2022 - Service Manager.  
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -32,15 +32,15 @@ The following sections provide information about how to upgrade to System Center
  You can only upgrade to System Center 2022 from System Center 2019.
 
 > [!IMPORTANT]  
->  It is assumed in this guide that you are performing an *upgrade* to an existing System Center version. For information about installing System Center 2022 - Service Manager on a computer where no previous version of Service Manager exists, see [deploying System Center - Service Manager](../scsm/deploy-sm.md).  
+>  It's assumed in this guide that you're performing an *upgrade* to an existing System Center version. For information about installing System Center 2022 - Service Manager on a computer where no previous version of Service Manager exists, see [deploying System Center - Service Manager](../scsm/deploy-sm.md).  
 
 ## Plan the upgrade to System Center 2022 - Service Manager
 
 This section outlines the procedures necessary to upgrade to System Center 2022.  
 
-An in-place upgrade from Service Manager 2019 is supported. An in-place upgrade is an upgrade of all Service Manager parts on the same hardware. Other approaches, such as side-by-side upgrades or rolling upgrades, are not supported.  
+An in-place upgrade from Service Manager 2019 is supported. An in-place upgrade is an upgrade of all Service Manager parts on the same hardware. Other approaches, such as side-by-side upgrades or rolling upgrades, aren't supported.  
 
-Upgrading to Service Manager 2022 requires preparation. We recommend that you install Service Manager in a lab environment and then replicate your production databases into the lab. After that perform an upgrade of the new installation in the lab.   
+Upgrading to Service Manager 2022 requires preparation. We recommend that you install Service Manager in a lab environment and then replicate your production databases into the lab. After that perform an upgrade of the new installation in the lab.
 
 ### Evaluation and Select versions  
 
@@ -127,7 +127,7 @@ FROM    FactPKListStr f
 
 ```  
 
-**Workaround 1:** If you've already upgraded and you do not have problems with transform or load job failures but do have a management pack deployment failure, then follow the steps in the (Before Upgrade)[#back-up-service-manager-before-you-upgrade] section. In addition, after the default primary keys have been restored, restart the failed management pack deployment in the Service Manager console by navigating to the Data Warehouse workspace and then select Management Pack.  
+**Workaround 1:** If you've already upgraded and you don't have problems with transform or load job failures but do have a management pack deployment failure, then follow the steps in the (Before Upgrade)[#back-up-service-manager-before-you-upgrade] section. In addition, after the default primary keys have been restored, restart the failed management pack deployment in the Service Manager console by navigating to the Data Warehouse workspace and then select Management Pack.  
 
 **Workaround 2:** If you've upgraded and you've problems with transform or load job failures, then determine if the SystemDerivedMp.Microsoft.SystemCenter.Datawarehouse.Base management pack exists in the DWStagingAndConfig database by running the following query.  
 
@@ -135,7 +135,7 @@ FROM    FactPKListStr f
 select * from ManagementPack where mpname like '%SystemDerivedMp.Microsoft.SystemCenter.Datawarehouse.Base%'  
 ```  
 
-If the management pack does not exist, you need to restore your database to a state prior to upgrade. To restore your database, perform the following steps.  
+If the management pack doesn't exist, you need to restore your database to a state prior to upgrade. To restore your database, perform the following steps.  
 
 1.  Perform disaster recovery steps for the database backups.  
 
@@ -153,15 +153,15 @@ We recommend that you test the upgrade to System Center 2022 - Service Manager i
 
 The order of your upgrades is important. Perform the upgrade steps in the following order:  
 
-1.  Back up your databases and your management packs. See the topics "Backing Up Service Manager Databases" and "Backing Up Unsealed Management Packs" in the [Disaster Recovery Guide for System Center - Service Manager](../scsm/disaster-recovery.md).  
+1.  Back up your databases and your management packs. See the sections **Backing Up Service Manager Databases** and **Backing Up Unsealed Management Packs** in the [Disaster Recovery Guide for System Center - Service Manager](../scsm/disaster-recovery.md).  
 
-2.  Start with the data warehouse management server. You'11 be stopping the data warehouse jobs, and you will not be able to start them again until after you've completed the upgrade.  
+2.  Start with the data warehouse management server. You will be stopping the data warehouse jobs, and you won't be able to start them again until after you've completed the upgrade.  
 
 3.  After the upgrade to the data warehouse management server is complete, upgrade the initial Service Manager management server. If you created more than one Service Manager management server, the initial Service Manager management server is the first one that you created.  
 
 After the installation, do the following:
 
-4. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the  following commands:
+4. Disable all the Data Warehouse jobs. To do this, open the Service Manager shell, and then run the following commands:
     ```
     $DW ='DWMS Servername'
 
@@ -219,7 +219,7 @@ After the installation, do the following:
 
 10.  Deploy the new Self-Service Portal.  
 
-The timing of your upgrades is also important. After you upgrade your data warehouse management server, you must  update the Service Manager management server and also deploy the new Self-Service Portal. After you upgrade your initial Service Manager management server, you must be prepared to upgrade your Service Manager console or Service Manager consoles, additional Service Manager management servers, and Self-Service Portal at the same time.  
+The timing of your upgrades is also important. After you upgrade your data warehouse management server, you must update the Service Manager management server, and also deploy the new Self-Service Portal. After you upgrade your initial Service Manager management server, you must be prepared to upgrade your Service Manager console or Service Manager consoles, additional Service Manager management servers, and Self-Service Portal at the same time.  
 
 
 ### Database impacts  
@@ -232,8 +232,8 @@ Before you start any upgrade, we recommend that you back up your Service Manager
 
 ### Register the Service Manager data warehouse  
 
-If you've installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You can't perform this task if you've not registered with the Service Manager data warehouse. If the **Data Warehouse** button isn't visible in the Service Manager console, complete the procedure in "Registering with the Service Manager Data Warehouse to Enable Reporting" in the [Deployment Guide for System Center - Service Manager](../scsm/deploy-sm.md).  
+If you've installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You can't perform this task if you've not registered with the Service Manager data warehouse. If the **Data Warehouse** button isn't visible in the Service Manager console, complete the procedure in **Registering with the Service Manager Data Warehouse to Enable Reporting** in the [Deployment Guide for System Center - Service Manager](../scsm/deploy-sm.md).  
 
 ### Encryption keys  
 
-When you've finished running Setup to either install or upgrade to System Center 2022 - Service Manager, you are prompted to open the Encryption Backup or Restore Wizard. If you've previously backed up the encryption keys, no additional action is required. If you never backed up the encryption keys, use the Encryption Key Backup or Restore Wizard to back up the encryption keys on the Service Manager management servers.  
+When you've finished running Setup to either install or upgrade to System Center 2022 - Service Manager, you're prompted to open the Encryption Backup or Restore Wizard. If you've previously backed up the encryption keys, no additional action is required. If you never backed up the encryption keys, use the Encryption Key Backup or Restore Wizard to back up the encryption keys on the Service Manager management servers.  

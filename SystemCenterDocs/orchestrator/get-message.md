@@ -1,6 +1,6 @@
 ---
 title: Get Message
-description: The Get Message activity retrieves message from a management server according to filter criteria that you specify.
+description: The Get Message activity retrieves message from a management server according to the filter criteria that you specify.
 ms.custom: na
 ms.date: 4/25/2017
 ms.prod: system-center
@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: cd78c430-e320-44f8-b6ae-2b55c4e42ff6
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Message
@@ -23,7 +23,7 @@ manager: evansma
 
 ::: moniker-end
 
-The Get Message activity retrieves message from a management server according to filter criteria that you specify. The activity uses filters to determine which messages retrieved from the management server should be published.
+The Get Message activity retrieves message from a management server according to the filter criteria that you specify. The activity uses filters to determine which messages retrieved from the management server should be published.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).
 
@@ -59,7 +59,7 @@ The following tables list the required properties and published data for this ac
 | Original Message   | Details of the event that is the cause of this message.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
 | Custom Attributes   | An XML representation of the custom message attributes associated with the message.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
 | Number of Annotations   | Number of annotations that have been added to the message.   | Equals<br>Does not equal<br>Is less than<br>Is less than or equal to<br>Is greater than<br>Is greater than or equal to   | Integer   |
-| Source   | Contains the name and version of the template that created the message.   | Equals<br>Does not equa<br>lContains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
+| Source   | Contains the name and version of the template that created the message.   | Equals<br>Does not equal<br>lContains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
 
 ## Get Message Published Data
 
@@ -94,7 +94,7 @@ The following tables list the required properties and published data for this ac
 | Custom Attributes   | An XML representation of the custom message attributes associated with the message.   | String   |
 | Number of Annotations   | Number of annotations that have been added to the message.   | Integer   |
 | Source   | Contains the name and version of the template that created the message.   | String   |
-| Message Count   | The number of messages that were retrieved from the HPOM management server that satisfy the specified filter criteria.   | Integer   |
+| Message Count   | The number of messages that were retrieved from the HPOM management server that satisfies the specified filter criteria.   | Integer   |
 | HPOM Host   | The name or IP address of the HPOM management server.   | String   |
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server.   | String   |
@@ -103,24 +103,24 @@ The following tables list the required properties and published data for this ac
 >The **Get Message** activity can only retrieve Active messages from the HP Operations Manager management server.
 
 >[!TIP]
->The maximum number of Messages that can be returned by the Get Message activity is determined by the HP Operations Manager Web Service **MaxItemsMaximum** configuration parameter. The **MaxItemsMaximum** configuration parameter has a default value of 500, however this can be increased up to 5,000 as directed in the HP Operations Manager Web Services Integration Manager documentation.
+>The maximum number of Messages that can be returned by the Get Message activity is determined by the HP Operations Manager Web Service **MaxItemsMaximum** configuration parameter. The **MaxItemsMaximum** configuration parameter has a default value of 500; however, this can be increased up to 5,000 as directed in the HP Operations Manager Web Services Integration Manager documentation.
 
 >[!TIP]
->When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change.
+>When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, select **Cancel** to dismiss the Filter Settings dialog without committing the change.
 
 ## Other Activities
 
-The Integration Pack for HP Operations Manager integration contains the following additional activities:
+The Integration Pack for HP Operations Manager integration contains the following other activities:
 
-[Acknowledge Message](acknowledge-message.md)  
-[Add Annotation to Message](add-annotation-to-message.md)  
-[Create Message](create-message.md)  
-[Delete Annotation](delete-annotation.md)  
-[Delete Custom Attribute](delete-custom-attribute.md)  
-[Get Annotation](get-annotation.md)  
-[Launch Tool](launch-tool.md)  
-[Monitor Message](monitor-message.md)  
-[Own/Disown Message](own-or-disown-message.md)  
-[Set Custom Attribute](set-custom-attribute.md)  
-[Update Annotation](update-annotation.md)  
-[Update Message](update-message.md)  
+- [Acknowledge Message](acknowledge-message.md)  
+- [Add Annotation to Message](add-annotation-to-message.md)  
+- [Create Message](create-message.md)  
+- [Delete Annotation](delete-annotation.md)  
+- [Delete Custom Attribute](delete-custom-attribute.md)  
+- [Get Annotation](get-annotation.md)  
+- [Launch Tool](launch-tool.md)  
+- [Monitor Message](monitor-message.md)  
+- [Own/Disown Message](own-or-disown-message.md)  
+- [Set Custom Attribute](set-custom-attribute.md)  
+- [Update Annotation](update-annotation.md)  
+- [Update Message](update-message.md)  

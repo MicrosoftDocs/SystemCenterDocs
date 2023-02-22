@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: f36431cf-1c54-4ae3-9aa5-ee41d39c7631
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete Alert Activity
@@ -49,13 +49,13 @@ The following procedure describes the steps required to configure a Delete Alert
 
 #### To configure the Delete Alert Activity
 
-1.  From the **Activities** pane, click and drag a **Delete Alert** activity to the active runbook.
+1.  From the **Activities** pane, select and drag a **Delete Alert** activity to the active runbook.
 
 2.  Double-click the **Delete Alert** activity icon. <br>The **Properties** dialog box opens.
 
 3.  Configure the settings in the **Details** tab as follows:
 
-    1.  In the **Connection** section, select the IBM Tivoli Netcool/OMNIbus ObjectServer connection that you want to use for this activity and Click **OK**.
+    1.  In the **Connection** section, select the IBM Tivoli Netcool/OMNIbus ObjectServer connection that you want to use for this activity and select **OK**.
     2.  In the **Properties** section, enter the name of the alert in the Identifier box.
 
-4.  Click **Finish**.
+4.  Select **Finish**.
