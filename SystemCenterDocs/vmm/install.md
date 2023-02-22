@@ -29,7 +29,7 @@ This article describes how to install the System Center Virtual Machine Manager 
 - The service account should be an administrator on the VMM server.
 
 >[!NOTE]
->During VMM Installation, ensure that SQL Database is not part of any Availability Group.
+>During VMM Installation, ensure that the SQL Database isn't part of any Availability Group.
 
 ## Run setup
 
@@ -38,7 +38,7 @@ This article describes how to install the System Center Virtual Machine Manager 
 > - A local account.
 > - A user account used for service.
 > -	A group managed service account.
-> - If you're using a local account, you can't have VMM in highly available configuration.
+> - If you're using a local account, you can't have VMM in a highly available configuration.
 > - If you're using gMSA account, the format should be *domainFQDN\gMSAAccount$*.
 
 1. Close any open programs and ensure that no restarts are pending on the computer.
@@ -56,7 +56,7 @@ This article describes how to install the System Center Virtual Machine Manager 
     1. Select whether you want to use Microsoft Update, and then select **Next**. 
          If you've already chosen to use Microsoft Update on this computer, the page won't appear.
 1. On the **Diagnostic and Usage Data** page, 
-    1. Review Microsoft's data collection policy and how to disable data collection and then select **Next**
+    1. Review Microsoft's data collection policy and how to disable data collection and then select **Next**.
 1. On the **Installation location** page, 
     1. Use the default path or type a different installation path for the VMM program files, and then select **Next**. 
          The setup program checks the computer on which you're installing the VMM management server to ensure that the computer meets the appropriate hardware and software requirements. If the computer doesn't meet a prerequisite, a page that contains information about the prerequisite and how to resolve the issue appears.
@@ -64,7 +64,7 @@ This article describes how to install the System Center Virtual Machine Manager 
     - If you're using a remote SQL instance, specify the name of the computer that's running the SQL Server. 
     - If you're installing the VMM management server on the same computer that's running the SQL Server, then in the **Server name** box, either enter the name of the computer (for example, **vmmserver01**) or **localhost**. 
     - If the SQL Server is in a cluster, enter the cluster name.
-1. Don't specify a **Port** value if you don't have a remote instance of the SQL Server or if you have a remote SQL Server that uses the default port (1443).
+1. Don't specify a **Port** value if you don't have a remote instance of the SQL Server or if you've a remote SQL Server that uses the default port (1443).
 1. Specify the SQL Server instance name and whether to use an existing or new database. You need an account with permissions to connect to the instance.
 1. On the **Configure service account and distributed key management** page, 
     1. Specify the account that the VMM service uses. You can't change the identity of the VMM service account after installation. Learn more about distributed key management [here](plan-install.md#distributed-key-management).
@@ -102,13 +102,13 @@ During Setup, VMM enables the following firewall rules. These rules remain in ef
 
 ## Install VMM from a command prompt
 
-You can install VMM from a command prompt. The installation media contains `.ini` files for all VMM features:
+You can install VMM from a command prompt. The installation media contains `.ini` files for all the VMM features:
 
 - **VMServer.ini**: Settings for the VMM management server.
 - **VMClient.ini**: Settings for the VMM console.
 - **VMServerUninstall.ini**: Uninstallation settings for the VMM management server.
 
-Each of these files contains key/value pairs with default values. These entries are commented out. Remove the comment symbol(#) and change the value.
+Each of these files contains key/value pairs with default values. These entries are commented out. Remove the comment symbol (#) and change the value.
 
 1. Edit the `VMServer.ini` file with the options in the table below this procedure.
 2. After you edit, open an elevated command prompt and run setup.exe with the following parameters. For example, to use a `VMServer.ini` file that is stored in C:\Temp with a SQL Server administrator account of *contoso\SQLAdmin01* and a VMM service account of *contoso\VMMadmin14*, use the following command:
@@ -162,13 +162,13 @@ Each of these files contains key/value pairs with default values. These entries 
 2. On the computer on which the VMM management server is installed, select **Start** and then select **Control Panel**.
 3. Under **Programs**, select **Uninstall a program**. Under **Name**, select and hold **Microsoft System Center Virtual Machine Manager**.
 4. On the **What would you like to do?** page, select **Remove features**.
-5. On the **Select features to remove** page, select the **VMM management server** check box, and then select **Next**. If you want to uninstall the VMM console, select the **VMM console** check box.
+5. On the **Select features to remove** page, select the **VMM management server** check-box, and then select **Next**. If you want to uninstall the VMM console, select the **VMM console** check-box.
 
      > [!NOTE]
      > If you've a highly available VMM deploy, you must remove both the VMM server and the VMM console.
 
 6. On the **Database options** page, select whether you want to retain or remove the VMM database, and, if necessary, credentials for the database, and then select **Next**.
-7. On the **Summary** page, review your selections and select **Uninstall**. The **Uninstalling features** page appears and uninstallation progress is displayed.
+7. On the **Summary** page, review your selections and select **Uninstall**. The **Uninstalling features** page appears, and uninstallation progress is displayed.
 8. After the VMM management server is uninstalled, on the **The selected features were removed successfully** page, select **Close**.
 
 
