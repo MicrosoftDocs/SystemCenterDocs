@@ -28,7 +28,7 @@ Self-service users can interact with VMM to deploy virtual machines and services
 ::: moniker range=">= sc-vmm-2019"
 
 > [!NOTE]
-> If the default language configured in the guest VM and the console differs, you may not be able to copy the text from the VMM console into the guest VM. This impacts the sign-in functionality when you're copying password from the VMM console and then pasting it in the Password textbox while signing in to the guest VM. Change the language using the keyboard language icon in the VM sign-in page.
+> When the default language configured in the guest VM and the console differs, you may not be able to seamlessly copy text from the VMM console into the guest VM. This will primarily impact the login functionality when you are copying password from the VMM console and then pasting it in the Password textbox while logging into guest VM. You can circumvent this by changing the language using the keyboard language icon in the VM login page.
 
 ::: moniker-end
 
