@@ -5,11 +5,11 @@ description: This article provides an overview of System Center VMM and a summar
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 02/22/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-overview
+ms.custom: intro-overview, engagement-fy23
 ---
 
 # What is Virtual Machine Manager?
