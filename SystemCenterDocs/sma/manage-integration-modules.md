@@ -77,7 +77,7 @@ Get-SmaModule -WebServiceEndpoint $webServer -Port $port
 
 ## Import a module
 
-A module is a compressed file with a .zip extension that contains a folder which includes one of the following file types:
+A module is a compressed file with a .zip extension that contains a folder, which includes one of the following file types:
 
 - A module (psm1 file)
 - A module manifest (psd1 file)

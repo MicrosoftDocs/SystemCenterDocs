@@ -60,7 +60,7 @@ The name of the workflow should conform to the Verb-Noun format that is standard
 For a complete list of limitations and syntax differences between Windows PowerShell Workflows and Windows PowerShell, see [Syntactic Differences Between Script Workflows and Scripts](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574140(v=ws.11)).
 
 ## Activities
-An activity is a specific task in a workflow. Just as a script is composed of one or more commands, a workflow is composed of one or more activities that are carried out in a sequence. Windows PowerShell Workflow automatically converts many of the Windows PowerShell cmdlets to activities when it runs a workflow. When you specify one of these cmdlets in your runbook, the corresponding activity is actually run by Windows Workflow Foundation. For cmdlets without a corresponding activity, Windows PowerShell Workflow automatically runs the cmdlet within an [InlineScript](#inlinescript) activity. There is a set of cmdlets that are excluded and can't be used in a workflow unless you explicitly include them in an [InlineScript](#inlinescript) block. For further details on these concepts, see [Using Activities in Script Workflows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574194(v=ws.11)).
+An activity is a specific task in a workflow. Just as a script is composed of one or more commands, a workflow is composed of one or more activities that are carried out in a sequence. Windows PowerShell Workflow automatically converts many of the Windows PowerShell cmdlets to activities when it runs a workflow. When you specify one of these cmdlets in your runbook, the corresponding activity is actually run by Windows Workflow Foundation. For cmdlets without a corresponding activity, Windows PowerShell Workflow automatically runs the cmdlet within an [InlineScript](#inlinescript) activity. There's a set of cmdlets that are excluded and can't be used in a workflow unless you explicitly include them in an [InlineScript](#inlinescript) block. For more information on these concepts, see [Using Activities in Script Workflows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574194(v=ws.11)).
 
 Workflow activities share a set of common parameters to configure their operation. For details about the workflow common parameters, see [about_WorkflowCommonParameters](/powershell/module/psworkflow/about/about_workflowcommonparameters).
 
@@ -193,7 +193,7 @@ Keep the following recommendations in mind if you do use an **InlineScript** in 
 
 -   Avoid defining workflows within **InlineScript** scope. Even though some workflows may appear to operate correctly, this isn't a tested scenario. As a result, you may encounter confusing error messages or unexpected behavior.
 
-For further details on using **InlineScript**, see [Running Windows PowerShell Commands in a Workflow](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574197(v=ws.11)) and [about_InlineScript](/powershell/module/psworkflow/about/about_inlinescript).
+For more information on using **InlineScript**, see [Running Windows PowerShell Commands in a Workflow](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574197(v=ws.11)) and [about_InlineScript](/powershell/module/psworkflow/about/about_inlinescript).
 
 ## Next steps
 

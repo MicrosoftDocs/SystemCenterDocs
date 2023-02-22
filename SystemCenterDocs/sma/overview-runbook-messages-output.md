@@ -30,8 +30,8 @@ The following table provides a brief description of each of the streams and thei
 |Warning|Warning message intended for the user.|Written to the job history.|Displayed in the Test Output Pane.|
 |Error|Error message intended for the user. Unlike an exception, the runbook continues after an error message by default.|Written to the job history.|Displayed in the Test Output Pane.|
 |Verbose|Messages providing general or troubleshooting information.|Written to job history only if verbose logging is turned on for the runbook.|Displayed in the Test Output pane only if [$VerbosePreference](overview-runbook-messages-output.md#preference-variables) is set to **Continue** in the runbook.|
-|Progress|Records automatically generated before and after each activity in the runbook. The runbook should not attempt to create its own progress records since they are intended for an interactive user.|Written to job history only if progress logging is turned on for the runbook.|Not displayed in the Test Output Pane.|
-|Debug|Messages intended for an interactive user. Should not be used in runbooks.|Not written to job history.|Not written to Test Output Pane.|
+|Progress|Records automatically generated before and after each activity in the runbook. The runbook shouldn't attempt to create its own progress records since they're intended for an interactive user.|Written to job history only if progress logging is turned on for the runbook.|Not displayed in the Test Output Pane.|
+|Debug|Messages intended for an interactive user. Shouldn't be used in runbooks.|Not written to job history.|Not written to Test Output Pane.|
 
 ## Output stream
 The Output stream is intended for output of objects created by a workflow when it runs correctly. In Automation, this stream is primarily used for objects intended to be consumed by [parent runbooks that call the current runbook](~/sma/link-runbooks.md). When you [call a runbook inline](~/sma/link-runbooks.md#invoke-a-child-runbook-using-inline-execution) from a parent runbook, it returns data from the output stream to the parent. You should only use the output stream to communicate general information back to the user if you know the runbook will never be called by another runbook. As a best practice, however, you should typically use the [Verbose Stream](overview-runbook-messages-output.md#verbose-stream) to communicate general information to the user.
@@ -102,7 +102,7 @@ Workflow Test-Runbook
 Unlike the output stream, message streams are intended to communicate information to the user. There are multiple message streams for different kinds of information, and each is handled differently by Automation.
 
 ### Warning and Error streams
-The Warning and Error streams are intended to log problems that occur in a runbook. They are written to the job history when a runbook is executed and are included in the Test Output Pane in the Management Portal when a runbook is tested. By default, the runbook will continue executing after a warning or error. You can specify that the runbook should be suspended on a warning or error by setting a [preference variable](overview-runbook-messages-output.md#preference-variables) in the runbook before creating the message. For example, to cause a runbook to suspend on an error as it would an exception, set $ErrorActionPreference to **Stop**.
+The Warning and Error streams are intended to log problems that occur in a runbook. They're written to the job history when a runbook is executed and are included in the Test Output Pane in the Management Portal when a runbook is tested. By default, the runbook will continue executing after a warning or error. You can specify that the runbook should be suspended on a warning or error by setting a [preference variable](overview-runbook-messages-output.md#preference-variables) in the runbook before creating the message. For example, to cause a runbook to suspend on an error as it would an exception, set $ErrorActionPreference to **Stop**.
 
 Create a warning or error message using the [Write-Warning](/powershell/module/microsoft.powershell.utility/write-warning) or [Write-Error](/powershell/module/microsoft.powershell.utility/write-error) cmdlet. Activities may also write to these streams.
 
@@ -130,7 +130,7 @@ Write-Verbose -Message "This is a verbose message."
 ```
 
 ### Debug stream
-The Debug stream is intended for use with an interactive user and should not be used in runbooks.
+The Debug stream is intended for use with an interactive user and shouldn't be used in runbooks.
 
 ## Progress records
 If you configure a runbook to log progress records (on the **Configure** tab of the runbook in the Management Portal), then a record will be written to the job history before and after each activity is run. In most cases, you should keep the default setting of not logging progress records for a runbook in order to maximize performance. Turn on this option only to troubleshoot or debug a runbook. When testing a runbook, progress messages aren't displayed even if the runbook is configured to log progress records.

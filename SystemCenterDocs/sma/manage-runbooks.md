@@ -180,7 +180,7 @@ Display the dashboard as follows:
 You can view a list of all the jobs that have been created for a particular runbook and their most recent status.
 
 - You can filter the list by job status and the range of dates for the last change to the job.
-- Click on the name of a job to view its detailed information and its output.
+- Select the name of a job to view its detailed information and its output.
 - The detailed view of the job includes the values for the runbook parameters that were provided to that job.
 - The job history includes output, warning, and error messages with time stamps of when the record was created.
 - Learn more about [runbook output and messages](overview-runbook-messages-output.md).

@@ -27,7 +27,7 @@ When you invoke a runbook inline, it runs in the same job as the parent runbook.
 
 When a runbook is published, any child runbooks that it calls must already have a published version. This is because Automation builds an association with any child runbooks when a runbook is compiled. If they aren't, the parent runbook will appear to publish properly, but it will generate an exception when it's started. If this happens, you can republish the parent runbook in order to properly reference the child runbooks. You don't need to republish the parent runbook if any of the child runbooks are changed because the association will have already been created.
 
-The parameters of a child runbook called inline can be any data type, including complex objects, and there is no [JSON serialization](manage-runbooks.md) as there is when you start the runbook using the Management Portal or with the [Start-SmaRunbook](/previous-versions/system-center/powershell/system-center-2012-r2/dn502564(v=sc.20)) cmdlet.
+The parameters of a child runbook called inline can be any data type, including complex objects, and there's no [JSON serialization](manage-runbooks.md) as there's when you start the runbook using the Management Portal or with the [Start-SmaRunbook](/previous-versions/system-center/powershell/system-center-2012-r2/dn502564(v=sc.20)) cmdlet.
 
 ### Runbook types
 
@@ -87,7 +87,7 @@ The following table summarizes the differences between the two methods for calli
 |**Execution**|Parent runbook waits for the child runbook to complete before continuing.|Parent runbook continues immediately after child runbook is started.|
 |**Output**|Parent runbook can directly get output from child runbook.|Parent runbook must retrieve output from child runbook job.|
 |**Parameters**|Values for the child runbook parameters are specified separately and can use any data type.|Values for the child runbook parameters must be combined into a single hashtable and can only include simple, array, and object data types that leverage JSON serialization.|
-|**Publishing**|Child runbook must be published before parent runbook is published.|Child runbook must be published any time before a parent runbook is started.|
+|**Publishing**|Child runbook must be published before parent runbook is published.|Child runbook must be published anytime before a parent runbook is started.|
 
 ## Next steps
 
