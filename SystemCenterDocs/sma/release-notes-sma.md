@@ -4,7 +4,7 @@ title: Release notes for System Center Service Management Automation
 description: This article details the known issues and issues fixed in Service Management Automation.
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: mkluck
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: system-center
@@ -55,4 +55,5 @@ This article provides the release notes for System Center 1801 - Service Managem
 ::: moniker-end
 
 ## Next steps
-[What's new in Service Management Automation](../sma/whats-new-in-sma.md)
+
+- [What's new in Service Management Automation](../sma/whats-new-in-sma.md)

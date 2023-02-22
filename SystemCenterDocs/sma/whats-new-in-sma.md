@@ -4,7 +4,7 @@ title: What's new in System Center Service Management Automation
 description: This article describes the new features supported in Service Management Automation.
 author: jyothisuri
 ms.author: jsuri
-manager: vvithal
+manager: mkluck
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
@@ -35,7 +35,7 @@ This article provides the new features supported by System Center 2022 - Service
 
 [!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
 
-SMA includes the features that are introduced in SMA 1801, there are no additional features included.  [Learn about the features introduced in 1801](?preserve-view=true&view=sc-sma-1801).
+SMA includes the features that are introduced in SMA 1801; there are no additional features included.  [Learn about the features introduced in 1801](?preserve-view=true&view=sc-sma-1801).
 
 ::: moniker-end
 
@@ -58,5 +58,6 @@ This article details the new features supported in System Center 2016 - Service 
 ::: moniker-end
 
 ## Next steps
-- [know the fixed issues ](./release-notes-sma.md)
-- [Know the system requirements for SMA](../sma/system-requirements-sma.md)
+
+- [Know the fixed issues](./release-notes-sma.md).
+- [Know the system requirements for SMA](../sma/system-requirements-sma.md).
