@@ -1,6 +1,6 @@
 ---
 description: Provides an overview of how you can scale out a machine tier
-manager: vvithal
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
@@ -21,15 +21,15 @@ ms.assetid: 00e55889-02fc-49a9-9a52-f8cbdaf36255
 ::: moniker-end
 
 
-Use the guidance in this section to scale out a machine tier in a service that's deployed in Service Management Automation (SMA). You can add runbook workers and web services, to add additional capacity for runbook processing.
+Use the guidance in this section to scale out a machine tier in a service that's deployed in Service Management Automation (SMA). You can add runbook workers and web services to add additional capacity for runbook processing.
 
 ## Initial recommendations
 
 The recommended configuration is as follows:
 
-- Three VMs, each with an installed a runbook worker and web service.
+- Three VMs, each with an installed runbook worker and web service.
 - The incoming web traffic should be load balanced.
-- The machines should have at least two cores, and contain a minimum of 4 GB of RAM, along with 60 GB of storage.
+- The machines should have at least two cores and contain a minimum of 4 GB of RAM, along with 60 GB of storage.
 - Only one PowerShell module should be installed.
 
 ## SQL Server recommendations
