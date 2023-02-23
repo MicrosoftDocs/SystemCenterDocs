@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Ser
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/18/2022
+ms.date: 02/21/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
@@ -57,4 +57,5 @@ This article provides the upgrade information for System Center 2016 - Service P
 ::: moniker-end
 
 ## Next steps
-[Manage SPF](manage-tenants.md)
+
+- [Manage SPF](manage-tenants.md)

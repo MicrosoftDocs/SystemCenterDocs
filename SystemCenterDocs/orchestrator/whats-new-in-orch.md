@@ -6,7 +6,7 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 01/12/2023
+ms.date: 02/22/2023
 ms.technology: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: '>sc-orch-2016'
@@ -54,6 +54,9 @@ For more information about how to set up, configure, and run your environment to
 ::: moniker-end
 
 ::: moniker range="sc-orch-2019"
+
+## OAuth support for Exchange Online
+System Center 2019 provides OAuth support for Exchange Online in System Center Orchestrator 2019 Exchange Admin and Exchange User Integration Packs.
 
 ## Support for PowerShell 4.0+
 Earlier versions of System Center Orchestrator supported PowerShell V2.0. PowerShell V2.0 didn't support some scripts and users had to apply workarounds. System Center Orchestrator 2019 supports PowerShell V4.0 to resolve this issue.
