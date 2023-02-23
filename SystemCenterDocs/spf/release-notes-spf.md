@@ -32,7 +32,7 @@ This article lists the release notes for System Center 2019 - Service Provider F
 
 [!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
 
-The release notes for System Center 1807 - Service Provider Foundation (SPF) is applicable for System Center 1801 - Service Provider Foundation (SPF).
+The release notes for System Center 1807 - Service Provider Foundation (SPF) are applicable for System Center 1801 - Service Provider Foundation (SPF).
 
 ::: moniker-end
 
@@ -47,4 +47,5 @@ This article lists the release notes for System Center 1801 - Service Provider F
 ::: moniker-end
 
 ## Next steps
-[What's new in Service Provider Foundation](./whats-new-in-spf.md)
+
+- [What's new in Service Provider Foundation](./whats-new-in-spf.md)
