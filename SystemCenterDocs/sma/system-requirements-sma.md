@@ -5,17 +5,18 @@ description: This article describes the software and hardware system requirement
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 04/04/2022
+ms.date: 02/22/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-management-automation
+ms.custom: engagement-fy23
 ---
 
 # System requirements for System Center Service Management Automation
 
 ::: moniker range="sc-sma-2022"
 
-This article details the system requirements for System Center 2022 - Service Management Automation (SMA).
+This article provides details of the system requirements for System Center 2022 - Service Management Automation (SMA).
 
 [!INCLUDE [system-reqs-sma-2022.md](../includes/system-reqs-sma-2022.md)]
 
@@ -23,7 +24,7 @@ This article details the system requirements for System Center 2022 - Service Ma
 
 ::: moniker range="sc-sma-2019"
 
-This article details the system requirements for System Center 2019 - Service Management Automation (SMA).
+This article provides details of the system requirements for System Center 2019 - Service Management Automation (SMA).
 
 [!INCLUDE [system-reqs-sma-2019.md](../includes/system-reqs-sma-2019.md)]
 
@@ -41,13 +42,13 @@ SMA 1801 system requirements are also applicable for SMA 1807; there are no chan
 
 [!INCLUDE [eos-notes-service-management-automation.md](../includes/eos-notes-service-management-automation.md)]
 
-This article details the system requirements for System Center 1801 - Service Management Automation (SMA).
+This article provides details of the system requirements for System Center 1801 - Service Management Automation (SMA).
 
 ::: moniker-end
 
 ::: moniker range="sc-sma-2016"
 
-This article details the system requirements for System Center 2016 - Service Management Automation (SMA).
+This article provides details of the system requirements for System Center 2016 - Service Management Automation (SMA).
 
 ::: moniker-end
 

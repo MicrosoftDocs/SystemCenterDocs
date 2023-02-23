@@ -9,6 +9,7 @@ keywords:
 ms.date: 02/22/2023
 title: Author Automation Runbooks
 ms.technology: service-management-automation
+ms.custom: engagement-fy23
 ---
 # Author Service Management Automation runbooks
 
@@ -273,7 +274,7 @@ The following runbooks ship with Service Management Automation as sample runbook
 |Runbook name|Description|
 |----------------|---------------|
 |Sample-Deleting-VMCloud-Subscription|Demonstrates a useful scenario for triggering a runbook when a user deletes a VM Clouds subscription.|
-|Sample-Managing-Azure|Shows how to connect to a Windows Azure subscription and perform basic operations using the Windows Azure PowerShell module.|
+|Sample-Managing-Azure|Shows how to connect to a Microsoft Azure subscription and perform basic operations using the Microsoft Azure PowerShell module.|
 |Sample-Managing-ConfigurationManager|Demonstrates the capability of Service Management Automation to connect into Configuration Manager.|
 |Sample-Managing-DataProtectionManager|Demonstrates how to connect to a Data Protection Manager (DPM) server and view information about the disks found on the DPM server.|
 |Sample-Managing-MySQLServers|Demonstrates how to retrieve a security token which will be used to then retrieve a list of host servers.|
@@ -282,7 +283,7 @@ The following runbooks ship with Service Management Automation as sample runbook
 |Sample-Managing-Plans|Demonstrates how to create a new plan and add the SQL Server service with a defined quota to the new plan.|
 |Sample-Managing-ServiceBusClouds|Demonstrates how to connect to a Service Bus Cloud server and view information about the created namespaces.|
 |Sample-Managing-SQLServers|Demonstrates how create a new server group and add a SQL hosting server.|
-|Sample-Managing-UserAccounts|Demonstrates how to create a User in Windows Azure Pack for Windows Server, which will be created in Windows Azure Pack, and appear in the management portal for administrators Users extension. However, this user should also be integrated into the authentication provider (for example, AuthSite) for accessing the management portal for tenants, which isn't included in this sample.|
+|Sample-Managing-UserAccounts|Demonstrates how to create a User in Microsoft Azure Pack for Windows Server, which will be created in Microsoft Azure Pack, and appear in the management portal for administrators Users extension. However, this user should also be integrated into the authentication provider (for example, AuthSite) for accessing the management portal for tenants, which isn't included in this sample.|
 |Sample-Managing-VirtualMachineManager|Demonstrates how to connect to a Virtual Machine Manager (VMM) server and view information about the VMM server license.|
 |Sample-Managing-VMClouds|Demonstrates how to access information about a Service Provider Foundation server's database connection and information about the VMM server objects managed by Service Provider Foundation.|
 |Sample-Managing-WebSiteCloud|Demonstrates how to connect to a Web Site Clouds controller server and view information about the Web Site Clouds deployed servers.|
