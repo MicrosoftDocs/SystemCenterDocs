@@ -167,8 +167,7 @@ This is observed for SQL Server Reporting Services on SQL Server 2017. This erro
 3. If this is a fresh installation of Operations Manager, wait for 24 hours, and then apply the Update Rollup. This is applicable to all the roles in Operations Manager.
 
 >[!NOTE]
-> Ensure that DW and DR accounts are members of the Operations Manager Report Security Administrators group, so the issue doesn't recur. See [gMSA accounts](../scom/support-group-managed-service-accounts.md) for more information.
-.
+> Ensure that DW and DR accounts are members of the Operations Manager Report Security Administrators group, so the issue doesn't recur. For more information, see [gMSA accounts](../scom/support-group-managed-service-accounts.md).
 
 ## Operations Manager 2019 UR2 release notes
 No known issues in Operations Manager 2019 UR2.
