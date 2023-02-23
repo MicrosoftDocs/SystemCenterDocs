@@ -4,7 +4,7 @@ title: include file
 description: This article describes how to create logical switches in the VMM fabric
 author:  jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date:  21/11/2018
 ms.topic:  include
 ms.prod:  system-center-2016
@@ -33,7 +33,7 @@ You can set up a virtual switch extension manager (network manager) if you want 
 
 1. Obtain the provider software from your vendor and install the provider on the VMM management server. If you have a cluster, install it on all the nodes.
 2. Select **Fabric** > **Home** > **Show** > **Fabric Resources** > **Networking** > **Switch Extension Managers**.
-3. In **Add Virtual Switch Extension Manager Wizard** > **General**, specify the manufacturer and type the connection string. For example, myextmanager1.contoso.com:443. The exact syntax is defined by the vendor. Specify the account you want to use to connect to the resource.
+3. In **Add Virtual Switch Extension Manager Wizard** > **General**, specify the manufacturer and enter the connection string. For example, myextmanager1.contoso.com:443. The exact syntax is defined by the vendor. Specify the account you want to use to connect to the resource.
 4. In **Host Groups**, specify the host groups for which you want to use the extension manager.
 5. In **Summary**, review settings and select **Finish**. Check that the extension appears in the **Virtual Switch Extension Managers** pane.
 
@@ -41,10 +41,10 @@ You can set up a virtual switch extension manager (network manager) if you want 
 ## Set up a logical switch
 
 >[!NOTE]
-> Ensure you have at least one uplink port profile before you begin.
+> Ensure you've at least one uplink port profile before you begin.
 
 1. Select **Fabric** > **Networking**
-2. Select and hold **Logical Switches** and then select **Create Logical Switch**.
+2. Select and hold **Logical Switches**, and then select **Create Logical Switch**.
 3. In **Create Logical Switch Wizard** > **Getting Started**, review the information.
 4. In **General**,
     - Specify a name
@@ -75,7 +75,7 @@ You can set up a virtual switch extension manager (network manager) if you want 
 ::: moniker-end
 7. Enable SR-IOV if you need to. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter.
 If you want to enable:
-    - Ensure that you have SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
+    - Ensure that you've SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
     - Create a native port profile for virtual network adapters that is SR-IOV enabled.
     - When you configure networking settings on the host (in the host property called Virtual switches), attach the native port profile for virtual network adapters to the virtual switch by using a port classification. You can use the SR-IOV port classification that is provided in VMM, or create your own port classification.
 ::: moniker range="=sc-vmm-1807"

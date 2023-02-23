@@ -3,7 +3,7 @@ title: System Center 2016 - Operations Manager Release Build Versions
 description: Include file that shows the list of release builds for System Center 2016 - Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 10/21/2022
 ms.custom: na
 ms.prod: system-center
@@ -15,7 +15,7 @@ ms.topic: include
 ## Operations Manager 2016 build versions
 
 >[!NOTE]
->All System Center Operations Manager update rollups are cumulative. This means you do not need to apply them in order, you can always apply the latest update. If you have deployed System Center 2016 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
+>All System Center Operations Manager update rollups are cumulative. This means you don't need to apply them in order; you can always apply the latest update. If you've deployed System Center 2016 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
 >
 
 The following tables list the release history for Operations Manager 2016.
@@ -65,4 +65,4 @@ The following tables list the release history for Operations Manager 2016.
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
 
- <sup>1</sup> *All System Center Operations Manager update rollups are cumulative.  This means you don't need to apply them in order, you can always apply the latest update. However, there's one exception to this upgrade behavior. If you want the ability to uninstall UR4, you should make sure you have previously applied UR2 or UR3, which fixed an uninstall issue. Update rollups subsequent to UR4 can be uninstalled without previous rollups being applied.*
+ <sup>1</sup> *All System Center Operations Manager update rollups are cumulative. This means you don't need to apply them in order; you can always apply the latest update. However, there's one exception to this upgrade behavior. If you want the ability to uninstall UR4, you should ensure you've previously applied UR2 or UR3, which fixed an uninstall issue. Update rollups subsequent to UR4 can be uninstalled without previous rollups being applied.*
