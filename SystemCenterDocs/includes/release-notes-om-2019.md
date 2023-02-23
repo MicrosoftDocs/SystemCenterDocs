@@ -3,7 +3,7 @@ title: include file
 description: include file that summarizes the release notes for Operations Manager 2019.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 09/02/2020
 ms.prod: system-center
 ms.assetid: 56adc06e-4317-4622-83f2-cc44a5f40c78
@@ -14,24 +14,24 @@ ms.topic: include
 ## Operations Manager 2019 release notes
 
 The following sections summarize the release notes for Operations Manager 2019, and include the known issues and workarounds.
-See also, [2019 UR1](#operations-manager-2019-ur1-release-notes) and [2019 UR2](#operations-manager-2019-ur2-release-notes) release notes.
+Also see [2019 UR1](#operations-manager-2019-ur1-release-notes) and [2019 UR2](#operations-manager-2019-ur2-release-notes) release notes.
 
 ### Health Service with Log on type as *Service* by default
 
-**Description:**
+**Description**:
 With Operations Manager 2019, *Log on as a Service* feature is enabled by default. This change impacts all the service accounts and Run As accounts; they must have *Log on as a Service* permission.  
 
-**Workaround:** Enable log on as a service permission for these accounts. [Learn more](../scom/enable-service-logon.md).
+**Workaround**: Enable log on as a service permission for these accounts. [Learn more](../scom/enable-service-logon.md).
 
 ### User experience changes in maintenance mode
 
 **Description**: The following are the user experience changes with Operations Manager 2019 maintenance mode. These changes are applicable to both Windows and Linux\Unix monitoring:
 
-- As an entity enters the maintenance mode, monitor-based active alerts on it will be automatically resolved.  In earlier releases, these alerts get automatically resolved when the entity exits the  maintenance mode.
+- As an entity enters the maintenance mode, monitor-based active alerts on it will be automatically resolved. In earlier releases, these alerts get automatically resolved when the entity exits the maintenance mode.
 
 - On-demand monitors and regular monitors now behave similarly when the target entity enters and exits the maintenance mode.
 
-**Workaround**: None
+**Workaround**: None.
 
 ### Support for x64 components
 
@@ -40,7 +40,7 @@ If you try to push install the agent from the console to a x86 computer, the fol
 
 *The system cannot find the path specified*.
 
-**Workaround**:  None  
+**Workaround**: None.
 
 ### Upgrade to reporting server fails the prerequisites check
 
@@ -56,7 +56,7 @@ This error occurs in a distributed management group scenario, where the reportin
 
 **Description**: The HTML5 Web console doesn't support Internet Explorer compatibility View.  
 
-**Workaround**: None
+**Workaround**: None.
 
 ### OpenSSL 1.1.0 version support
 
@@ -82,7 +82,7 @@ This command will add the service user to the list of allowed users who can acce
 
 
 ### Previous AD rules don't work after upgrading to Operations Manager 2019
-**Description:**  After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), 1801 or 1807, previous AD rules don't work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 doesn't have this issue.
+**Description**:  After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), 1801 or 1807, previous AD rules don't work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 doesn't have this issue.
 
 **Workaround**: To resolve this, use the following steps:
 
@@ -93,7 +93,7 @@ This command will add the service user to the list of allowed users who can acce
     >[!NOTE]
     > Domain name is case-sensitive.
 
-    **Example:**
+    **Example**:
 
     Before: Rule ID="_smx.net_MS1_contoso.com" Enabled="true"
 
@@ -111,10 +111,10 @@ This command will add the service user to the list of allowed users who can acce
 
 ### REST API in Operations Manager doesn't return required values for classes
 
-**Description:** When called from Operations Manager 2019, REST API doesn't return className, path and fullname, information returned is empty.
+**Description**: When called from Operations Manager 2019, REST API doesn't return className, path and fullname, information returned is empty.
 Also, ID is returned as className.
 
-**Workaround**: None
+**Workaround**: None.
 
 >[!NOTE]
 >This issue is fixed in 2019 UR2.
@@ -126,18 +126,18 @@ For the problems fixed in UR1 and the installation instructions for UR1, [see th
 
 ### Pending management after patching
 
-**Description:** After you apply the 2019 update rollup (UR1), the agents to be updated aren't listed in **Pending Management** console view.
+**Description**: After you apply the 2019 update rollup (UR1), the agents to be updated aren't listed in **Pending Management** console view.
 
-**Workaround:** You need to identify the agents and update them manually. To do this, go to **Administration**> **Device Management**>**Agent Managed**, and update the agents that are of the older version. To view the correct version of the agent, after applying the management server patch, import the management pack as mentioned in the KB article for Operations Manager 2019 UR1.
+**Workaround**: You need to identify the agents and update them manually. To do this, go to **Administration**> **Device Management**>**Agent Managed**, and update the agents that are of the older version. To view the correct version of the agent, after applying the management server patch, import the management pack as mentioned in the KB article for Operations Manager 2019 UR1.
 
 ### Version display
 
-**Description:** Version display doesn't show **UR1** in areas such  **Help**>**About** and **Device Management** view.
+**Description**: Version display doesn't show **UR1** in areas such  **Help**>**About** and **Device Management** view.
 
-**Workaround:** To check if the Operations Manager components are successfully updated for UR1, see the version number of respective components in **Administration**> **Operations Manager Products**.
+**Workaround**: To check if the Operations Manager components are successfully updated for UR1, see the version number of respective components in **Administration**> **Operations Manager Products**.
 
 ### Error while exporting reports post gMSA migration
-**Description:** Post migration to gMSA, while exporting a report in Word, PowerPoint, or Excel format, You may encounter the following error:
+**Description**: Post migration to gMSA, while exporting a report in Word, PowerPoint, or Excel format, You may encounter the following error:
 *An error occurred during rendering the report*.
 
 This is observed for SQL Server Reporting Services on SQL Server 2017. This error appears to be a persistent issue with SSRS in SQL Server 2017.
@@ -156,7 +156,7 @@ This is observed for SQL Server Reporting Services on SQL Server 2017. This erro
 
 ### Replacement of previously used service accounts with gMSA fails
 
-**Description:**  Replacement of previously used Operation Manager's service accounts with gMSA fails, leading to Operations Manager's console issues (Console fails to open). This occurs if the data access service isn't initialized.
+**Description**:  Replacement of previously used Operation Manager's service accounts with gMSA fails, leading to Operations Manager's console issues (Console fails to open). This occurs if the data access service isn't initialized.
 
 **Workaround**:
 
@@ -164,7 +164,7 @@ This is observed for SQL Server Reporting Services on SQL Server 2017. This erro
 
 2.	Run the PowerShell script as detailed [here](https://support.microsoft.com/help/4519161/operations-manager-2019-and-1807-reports-fail-to-deploy).
 
-3. If this is a fresh installation of Operations Manager, wait for 24 hours, and then apply the Update Rollup. This is applicable to all roles in Operations Manager.
+3. If this is a fresh installation of Operations Manager, wait for 24 hours, and then apply the Update Rollup. This is applicable to all the roles in Operations Manager.
 
 >[!NOTE]
 > Ensure that DW and DR accounts are members of the Operations Manager Report Security Administrators group, so the issue doesn't recur. See [gMSA accounts](../scom/support-group-managed-service-accounts.md) for more information.
@@ -183,6 +183,6 @@ For the problems fixed in UR4 and the installation instructions for UR4, see [th
 
 ### Three columns in Authoring > Groups aren't localized
 
-**Description**: In Operations Manager console **Authoring** > **Groups** new columns (**Management Pack**, **Sealed** and **Members**), appear in English, not displayed in the language as set in the computer accessing this view. 
+**Description**: In Operations Manager console **Authoring** > **Groups** new columns (**Management Pack**, **Sealed** and **Members**) appear in English, not displayed in the language as set in the computer accessing this view. 
 
-**Workaround**: None
+**Workaround**: None.

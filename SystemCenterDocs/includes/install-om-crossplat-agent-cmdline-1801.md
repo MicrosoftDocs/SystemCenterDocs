@@ -74,7 +74,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
 ## To install the agent on Solaris
 
-1.  Transfer the agent (`scx-<version>.solaris.<version>.<arch>.sh`) to the Solaris server .  
+1.  Transfer the agent (`scx-<version>.solaris.<version>.<arch>.sh`) to the Solaris server.  
 
 2.  To install the package, enter:
 
@@ -90,7 +90,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
 ## To install the agent on HP-UX
 
-1.  Transfer the agent (`scx-<version>.hpux.<version>.<arch>.sh`) to the HP server .
+1.  Transfer the agent (`scx-<version>.hpux.<version>.<arch>.sh`) to the HP server.
 
 2.  To install the package, enter:
 
@@ -126,7 +126,7 @@ When you manually deploy an agent, you perform the first two steps that are typi
 
 If there are existing certificates on the system, they're reused during agent installation. New certificates aren't created. Certificates aren't automatically deleted when you uninstall an agent. You must manually delete the certificates that are listed in the folder `/etc/opt/microsoft/scx/ssl` for UNIX and `/etc/opt/microsoft/omsagent/scom/certs` folder for Linux. To regenerate the certificates at install, you must remove this folder before agent installation.
 
-You must have already manually installed an agent before you start this procedure. You will need a root or elevated account to perform the procedure.
+You must have already manually installed an agent before you start this procedure. You'll need a root or elevated account to perform the procedure.
 
 ## To install certificates for UNIX and Linux support
 
