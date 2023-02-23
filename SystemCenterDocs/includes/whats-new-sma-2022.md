@@ -1,7 +1,7 @@
 ---
 title:  include file
 description: include file to describe the new features and other changes in System Center Service Management Automation 2022.
-manager:  evansma
+manager:  mkluck
 ms.topic:  include
 author: jyothisuri
 ms.author: jsuri
@@ -18,7 +18,7 @@ The following sections provide information about the new feature(s)/enhancements
 
 ### Improved reliability of SMA jobs
 
-With improvements made in Sandbox lifecycle management, we’ve improved the overall reliability of jobs run in SMA. See [release notes](/system-center/sma/release-notes-sma?view=sc-sma-2022&preserve-view=true) for the details of the improvements done.
+With improvements made in Sandbox lifecycle management, we've improved the overall reliability of jobs run in SMA. See [release notes](/system-center/sma/release-notes-sma?view=sc-sma-2022&preserve-view=true) for details of the improvements done.
 
 ### Support for PowerShell filters
 

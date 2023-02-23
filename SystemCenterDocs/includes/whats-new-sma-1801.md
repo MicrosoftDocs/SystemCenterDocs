@@ -1,7 +1,7 @@
 ---
 title:  include file
 description: include file to describe the new features and other changes in System Center Service Management Automation 1801.
-manager: evansma
+manager: mkluck
 ms.topic:  include
 author: jyothisuri
 ms.author: jsuri
