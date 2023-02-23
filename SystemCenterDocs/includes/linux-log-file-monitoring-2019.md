@@ -13,7 +13,7 @@ ms.technology:  operations-manager
 
 ## Overview of configuration
 
-Log file monitoring requires the following steps. The detailed information for these is provided in the following sections:
+Log file monitoring requires the following steps. The detailed information is provided in the following sections:
 
 1. Import the latest Linux management pack.
 2. Install the latest version of the Linux agent on each Linux computer to be monitored.
@@ -209,7 +209,7 @@ Takes two input patterns. Sends an event to Operations Manager when a single rec
 
 #### Repeated correlation: filter_scom_repeated_cor
 
-Takes three inputs: a patterns, a time interval, and  number of occurrences. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if the pattern is matches the specified number of times before the timer ends.
+Takes three inputs: a patterns, a time interval, and  number of occurrences. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if the pattern is matched the specified number of times before the timer ends.
 
 ```
 <filter tag>
@@ -223,7 +223,7 @@ Takes three inputs: a patterns, a time interval, and  number of occurrences. Whe
 
 #### Correlated match: filter_scom_cor_match
 
-Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there is a match for the second pattern before the timer ends.
+Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there's a match for the second pattern before the timer ends.
 
 ```
 <filter tag>
@@ -237,7 +237,7 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
 
 #### Exclusive correlation: filter_scom_excl_correlation
 
-Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there is no match for the second pattern before the timer ends.
+Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there's no match for the second pattern before the timer ends.
 
 ```
 <filter tag>
@@ -265,7 +265,7 @@ Sends an event to Operations Manager for all records it receives. Sends the spec
 
 The **match** directive defines how to process events collected from the source with matching tags. Only events with a **tag** matching the pattern are sent to the output destination. When multiple patterns are listed inside one **match** tag, events can match any of the listed patterns. The **type** parameter specifies the type of plugin to use for these events.
 
-This example processes events with tags matching **scom.log.** \*\* and  **scom.alert**  (\*\* matches zero or more tag parts). It specifies the  **out\_scom**  plugin which allows the events to be collected by the Operations Manager management pack.
+This example processes events with tags matching **scom.log.** \*\* and  **scom.alert**  (\*\* matches zero or more tag parts). It specifies the  **out\_scom**  plugin, which allows the events to be collected by the Operations Manager management pack.
 
 ```
 <match scom.log.** scom.event>

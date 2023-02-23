@@ -195,7 +195,7 @@ Takes two input patterns. Sends an event to Operations Manager when a single rec
   ```
 
 #### Repeated correlation: filter_scom_repeated_cor
-Takes three inputs: a patterns, a time interval, and a number of occurrences. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if the pattern is matched the specified number of times before the timer ends.
+Takes three inputs: a pattern, a time interval, and many occurrences. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if the pattern is matched the specified number of times before the timer ends.
 
   ```
     <filter tag>
@@ -209,7 +209,7 @@ Takes three inputs: a patterns, a time interval, and a number of occurrences. Wh
 
 
 #### Correlated match: filter_scom_cor_match
-Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there is a match for the second pattern before the timer ends.
+Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there's a match for the second pattern before the timer ends.
 
   ```
     <filter tag>
@@ -223,7 +223,7 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
 
 
 #### Exclusive correlation: filter_scom_excl_correlation
-Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there is no match for the second pattern before the timer ends.
+Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts. An event is sent to Operations Manager if there's no match for the second pattern before the timer ends.
 
   ```
     <filter tag>
@@ -252,7 +252,7 @@ The fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/s
 
 
 ## Create rules and monitors
-The Linux MP doesn't provide modules to collect events from FluentD. The Linux MP is bundled with the Linux agent. It is the fluentd module in the Linux agent and the OMED service on the management and gateway server that provides the capabilities for enhanced log file monitoring.
+The Linux MP doesn't provide modules to collect events from FluentD. The Linux MP is bundled with the Linux agent. It's the fluentd module in the Linux agent and the OMED service on the management and gateway server that provides the capabilities for enhanced log file monitoring.
 
 You need to create your own management pack with custom rules and monitors that use the module **Microsoft.Linux.OMED.EventDataSource**, which collects the events from Fluentd.  
 

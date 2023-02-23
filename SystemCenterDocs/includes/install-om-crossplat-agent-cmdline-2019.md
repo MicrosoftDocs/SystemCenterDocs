@@ -108,7 +108,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
 When you manually deploy an agent, you perform the first two steps that are typically handled by the Discovery Wizard, deployment and certificate signing. Then, you use the Discovery Wizard to add the computer to the management group.
 
-If there are existing certificates on the system, they are reused during agent installation. New certificates aren't created. Certificates aren't automatically deleted when you uninstall an agent. You must manually delete the certificates that are listed in the folder `/etc/opt/microsoft/scx/ssl` for UNIX and `/etc/opt/microsoft/scx/scom/certs` folder for Linux. To regenerate the certificates at install, you must remove this folder before agent installation.
+If there are existing certificates on the system, they're reused during agent installation. New certificates aren't created. Certificates aren't automatically deleted when you uninstall an agent. You must manually delete the certificates that are listed in the folder `/etc/opt/microsoft/scx/ssl` for UNIX and `/etc/opt/microsoft/scx/scom/certs` folder for Linux. To regenerate the certificates at install, you must remove this folder before agent installation.
 
 You must have already manually installed an agent before you start this procedure. You will need a root or elevated account to perform the procedure.
 

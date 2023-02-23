@@ -59,7 +59,7 @@ Use this information to evaluate if your hardware environment is ready to suppor
 | Management Server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 | Gateway Server managing up to 2000 agents | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 | Gateway Server in resource pool managing up to 500 network devices | 8-Core 2.66 GHz CPU | 32 GB | 10 GB |
-| Gateway Server in resource pool managing up to 100 UNIX/Linux computers | 4-Core 2.66 GHz CPU | 4 GB RAM | 10 GB |
+| Gateway Server in resource pool managing up to 100 UNIX/Linux computers | 4-Core 2.66 GHz CPU | 4-GB RAM | 10 GB |
 | Web Console server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 | SQL Server Reporting Services server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 
