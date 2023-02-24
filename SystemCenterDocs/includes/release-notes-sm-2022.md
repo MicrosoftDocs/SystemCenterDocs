@@ -1,6 +1,6 @@
 ---
 description: include file to detail the release notes for Service Manager 2022
-manager:  evansma
+manager:  mkluck
 ms.topic: include
 author:  v-pgaddala
 ms.author: v-pgaddala
@@ -19,7 +19,7 @@ The following sections detail the release notes for Service Manager 2022 and inc
 
 ### Manual steps to activate Data Warehouse Server
 
-**Description**: Service Manager Data Warehouse is not activated as part of the Management Server license activation. You must manually activate the Data Warehouse.
+**Description**: Service Manager Data Warehouse isn't activated as part of the Management Server license activation. You must manually activate the Data Warehouse.
 
 **Workaround**:
 Follow these steps to manually activate the Data Warehouse server:  
@@ -48,7 +48,7 @@ Disable TLS 1.2 before the installation/upgrade and re-enable it after the upgra
 Connector for Orchestrator 2022 might not work due to changes in Orchestrator Web service.
 
 **Workaround**:
-Continue using System Center 2019 Web API till we fix this. System Center 2022 supports running 2019 Web console/API side-by-side.
+Continue using System Center 2019 Web API until we fix this. System Center 2022 supports running 2019 Web console/API side-by-side.
 
 ### Report management pack deployments might fail
 

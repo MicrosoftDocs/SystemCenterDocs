@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 99b3f71f-f993-4501-a726-71bb399bd815
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get List Items

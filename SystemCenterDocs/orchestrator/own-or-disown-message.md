@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 0e07b864-9bb3-4808-947a-1f05a1673dac
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Own or Disown Message
@@ -45,7 +45,7 @@ The following tables list the required properties and published data for this ac
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server. | String   |
 
 >[!TIP]
->The Own/Disown Message activity will succeed when provided with a Message ID that does not match a Message stored in HP Operations Manager management server.
+>The Own/Disown Message activity will succeed when provided with a Message ID that doesn't match a Message stored in HP Operations Manager management server.
 
 ## Other activities
 

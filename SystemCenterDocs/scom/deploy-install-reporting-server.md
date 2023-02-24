@@ -133,7 +133,8 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
 3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command.
 
     > [!NOTE]
-    > The /ManagementServer parameter is only required when you're installing reporting on a server that isn't a management server.
+    > - The `/ManagementServer` parameter is only required when you're installing reporting on a server that isn't a management server.
+    > - The `/SRSInstance` parameter is only allowed to utilize a local SSRS instance.
 
     ```
     setup.exe /silent /install /components:OMReporting

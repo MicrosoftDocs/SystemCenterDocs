@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 5966113a-fea5-46b9-a510-e57745f92737
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update Annotation
@@ -47,32 +47,32 @@ The following tables list the required properties and published data for this ac
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server.  | String   |
 
 >[!TIP]
->The Update Annotation activity will succeed when provided with a **Message ID** that does not match a Message stored on the HP Operations Manager management server.
+>The Update Annotation activity will succeed when provided with a **Message ID** that doesn't match a Message stored on the HP Operations Manager management server.
 
 ## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 
-[Acknowledge Message](acknowledge-message.md)
+- [Acknowledge Message](acknowledge-message.md)
 
-[Add Annotation to Message](add-annotation-to-message.md)
+- [Add Annotation to Message](add-annotation-to-message.md)
 
-[Create Message](create-message.md)
+- [Create Message](create-message.md)
 
-[Delete Annotation](delete-annotation.md)
+- [Delete Annotation](delete-annotation.md)
 
-[Delete Custom Attribute](delete-custom-attribute.md)
+- [Delete Custom Attribute](delete-custom-attribute.md)
 
-[Get Annotation](get-annotation.md)
+- [Get Annotation](get-annotation.md)
 
-[Get Message](get-message.md)
+- [Get Message](get-message.md)
 
-[Launch Tool](launch-tool.md)
+- [Launch Tool](launch-tool.md)
 
-[Monitor Message](monitor-message.md)
+- [Monitor Message](monitor-message.md)
 
-[Own/Disown Message](own-or-disown-message.md)
+- [Own/Disown Message](own-or-disown-message.md)
 
-[Set Custom Attribute](set-custom-attribute.md)
+- [Set Custom Attribute](set-custom-attribute.md)
 
-[Update Message](update-message.md)
+- [Update Message](update-message.md)
