@@ -127,7 +127,7 @@ The following sections summarize the release notes for VMM 2016 and include the 
 **Workaround**: Update the clusters outside VMM, using cluster-aware updating (CAU) in Windows.
 
 ### A cluster rolling upgrade of a Windows Server 2012 R2 host cluster to a Windows Server 2016 Nano Server host cluster will fail
-**Description**: When you try to upgrade the host nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server using cluster rolling upgrade functionality in VMM, the upgrade will fail with error 20406: "VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server \<servername\>. Failed with error MI RESULT 7 The requested operation isn't supported.:
+**Description**: When you try to upgrade the host nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server using cluster rolling upgrade functionality in VMM, the upgrade will fail with error 20406: "VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server \<servername\>. Failed with error MI RESULT 7 The requested operation isn't supported.
 **Workaround**: Manually upgrade the Windows Server 2012 R2 host cluster to Nano outside of VMM.
 
 > [!NOTE]
@@ -257,5 +257,5 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 ## Integration
 
 ## SQL Server Analysis Services (SSAS) integration doesn't work in VMM and Operations Manager Update Rollup 1.
-**Description**: If you're running Upate Rollup 1, you can't configure SSAS for SQL Server.
+**Description**: If you're running Update Rollup 1, you can't configure SSAS for SQL Server.
 **Workaround**: Download the latest Update Rollups. The issue was fixed in Update Rollup 2.
