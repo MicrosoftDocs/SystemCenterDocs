@@ -5,11 +5,11 @@ description: This article describes how to rapidly provision VMs in the VMM fabr
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 02/24/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-deployment
+ms.custom: intro-deployment, engagement-fy23
 ---
 
 
@@ -51,7 +51,7 @@ When VMM deploys a virtual machine by using rapid provisioning through SAN copy,
         - If the MPIO feature is already enabled before you add a host to VMM management, VMM will automatically enable MPIO for supported storage arrays by using the Microsoft provided Device Specific Module (DSM). If you already installed vendor-specific DSMs for supported storage arrays and then add the host to VMM management, the vendor-specific MPIO settings will be used to communicate with those arrays.
         - If you add a host to VMM before you add the MPIO feature, you must manually configure MPIO to add the discovered device hardware IDs. Alternatively, you can install vendor-specific DSMs.
         - If you're using a Fibre Channel storage area network (SAN), each host that will access the storage array must have a host bus adapter (HBA) installed. Additionally, ensure that the hosts are zoned accordingly so that they can access the storage array.
-        - If you use an iSCSI SAN, ensure that iSCSI portals have been added and that the iSCSI initiator is logged into the array. Additionally, ensure that the Microsoft iSCSI Initiator Service on each host is started and set to Automatic. For information on how to create an iSCSI session on a host through VMM, see [How to Configure Storage on a Hyper-V Host in VMM](/SystemCenterDocs/vmm/hyper-v-storage.md#configure-storage-for-a-hyper-v-cluster).
+        - If you use an iSCSI SAN, ensure that iSCSI portals have been added and that the iSCSI initiator is logged into the array. Additionally, ensure that the Microsoft iSCSI Initiator Service on each host is started and set to Automatic. For information on how to create an iSCSI session on a host through VMM, see [How to Configure Storage on a Hyper-V Host in VMM](hyper-v-storage.md#configure-storage-for-a-hyper-v-cluster).
 
 
 ## Create a SAN copy-capable template from a new virtual machine
