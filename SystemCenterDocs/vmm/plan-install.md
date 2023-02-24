@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 09/21/2021
+ms.date: 02/21/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -19,10 +19,9 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-
 This article helps you to plan all the elements required for a successful System Center - Virtual Machine Manager (VMM) installation and includes information for releases VMM 2016 and later. Use these requirements as applicable for the VMM version you plan to install.
 
-For additional information on the supported versions of hardware and software, see the system requirements article for the version you install.
+For more information on the supported versions of hardware and software, see the system requirements article for the version you install.
 
 ## Deployment requirements
 
@@ -46,7 +45,7 @@ Verify the following [system requirements](system-requirements.md):
 **.NET** | [Supported versions](system-requirements.md)
 **Host agent** | VMM 2016/1801/1807/2019<br/><br/> Needed for hosts managed in VMM.
 **Monitoring** | System Center Operations Manager 2016/1801. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
-**VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/><br/> ESX 5.5, ESX 6.0, ESX 6.5 <br/><br/> vCenter and ESX servers running these versions can be managed in VMM.
+**VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/>vCenter 7.0 and 8.0 (Supported from 2022 UR1)<br/><br/> ESXi 5.5, 6.0, 6.5<br/>ESXi 7.0 and 8.0 (Supported from 2022 UR1)<br/><br/>vCenter and ESXi servers running these versions can be managed in VMM.
 **Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare-metal servers.
 
 ### SPN
@@ -82,9 +81,17 @@ When you install VMM with this user account, SPN will be registered.
 - The management server computer name can't exceed 15 characters.
 - Don’t install the VMM management server, or other System Center components other than agents, on servers running Hyper-V.
 - You can install the VMM management server on a VM. If you do, and you use the Dynamic Memory feature of Hyper-V, then you must set the startup RAM for the virtual machine to be at least 2,048 megabytes (MB).
+::: moniker range=">= sc-vmm-2019"
+- We recommend that you use a dedicated SCVMM management server and not install any other System Center components and management tools on the same server.
+- If you want to manage more than 150 hosts, we recommend the following:
+     -  Add one or more remote computers as library servers, and don't use the default library share on the VMM management server.
+     -  Don't run the SQL Server instance on the VMM management server.
+::: moniker-end
+::: moniker range="<= sc-vmm-1807"
 - If you want to manage more than 150 hosts, we recommend that you use a dedicated computer for the VMM management server and do the following:
-  - Add one or more remote computers as library servers, and don't use the default library share on the VMM management server.
-  - Don't run the SQL Server instance on the VMM management server.
+     -  Add one or more remote computers as library servers, and don't use the default library share on the VMM management server.
+     -  Don't run the SQL Server instance on the VMM management server.
+::: moniker-end
 - For high availability, the VMM management server can be installed on a failover cluster. [Learn more](~/vmm/plan-ha-install.md).
 
 ## SQL Server and database
@@ -136,8 +143,10 @@ When you install VMM, you must configure the VMM service to use any one of the f
 Ensure the following before you prepare an account:
 
 ::: moniker range=">=sc-vmm-2019"
+
 - VMM service account should have *log on as a service* permission on the VMM server.
 ::: moniker-end
+
 - You can't change the identity of the Virtual Machine Manager service account after installation. This includes changing from the local system account to a domain account, from a domain account to the local system account, or changing the domain account to another domain account. To change the Virtual Machine Manager service account after installation, you must uninstall VMM (selecting the Retain data option if you want to keep the SQL Server database), and then reinstall VMM by using the new service account.
 - If you specify a domain account, the account must be a member of the local Administrators group on the computer.
 - If you specify a domain account, it's recommended that you create an account that is designated to be used for this purpose. When a host is removed from the VMM management server, the account that the System Center Virtual Machine Manager service is running under is removed from the local Administrators group of the host. If the same account is used for other purposes on the host, this can cause unexpected results.

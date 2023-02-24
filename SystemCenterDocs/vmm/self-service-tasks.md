@@ -5,7 +5,7 @@ description: This article describes how to work with VMM as a self-service user
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/07/2017
+ms.date: 02/21/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -25,6 +25,13 @@ This article describes how to work with System Center - Virtual Machine Manager 
 
 Self-service users can interact with VMM to deploy virtual machines and services to private clouds. Depending on your permissions, you can deploy VMs from VHDs and templates, and create and share your own templates and profiles. You interact with VMM using the VMM console (or PowerShell).
 
+::: moniker range=">= sc-vmm-2019"
+
+> [!NOTE]
+> When the default language configured in the guest VM and the console differs, you may not be able to seamlessly copy text from the VMM console into the guest VM. This will primarily impact the login functionality when you are copying password from the VMM console and then pasting it in the Password textbox while logging into guest VM. You can circumvent this by changing the language using the keyboard language icon in the VM login page.
+
+::: moniker-end
+
 ## Create and deploy virtual machines
 
 - [Learn about](vm-existing-disk.md) creating a VM from an existing VHD.
@@ -37,8 +44,8 @@ Self-service users can interact with VMM to deploy virtual machines and services
 
 The VMM library is a file share that includes a catalog of resources that are used to deploy virtual machines and services in the VMM fabric. The library stores:
 
-- File-based resources, such as virtual hard disks, ISO images, and scripts, driver files and application packages (SQL Server data-tier applications and Web Deploy).
-- Non-file-based resources, such as virtual machine templates and service templates that are used to create VMs and services.
+- File-based resources such as virtual hard disks, ISO images, scripts, driver files, and application packages (SQL Server data-tier applications and Web Deploy).
+- Non-file-based resources such as virtual machine templates and service templates that are used to create VMs and services.
 - Offline virtual machines are stored in the library.
 
 If you have Author permissions, you can create templates and profiles in the library. [Learn more](manage-library-server.md).

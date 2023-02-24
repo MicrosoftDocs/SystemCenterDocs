@@ -1,6 +1,6 @@
 ---
 title: include file
-manager: evansma
+manager: mkluck
 description: include file to describe the system requirements for Service Manager 2016.
 ms.prod: system-center-2016
 author: jyothisuri
@@ -14,7 +14,7 @@ ms.assetid: ff4c7819-632e-486f-a329-041b7fa6a478
 
 ## System requirements for System Center 2016 - Service Manager
 
-The following sections describe the general performance and scalability guidance for SM 2016, and recommend the  hardware configurations for a variety of workloads. Because System Center 2016 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
+The following sections describe the general performance and scalability guidance for SM 2016, and recommend the  hardware configurations for various workloads. Because System Center 2016 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
 
 ## Capacity limits for Service Manager
 
@@ -28,9 +28,9 @@ To help simplify upgrades, you can use the following Service Manager 2016 connec
 - System Center 2012 R2 Orchestrator
 - System Center 2012 R2 Operations Manager
 - System Center 2012 R2 Configuration Manager
-- System Center Configuration Manager (SCCM) CB releases - 1511, 1602, 1606 and 1710.
+- System Center Configuration Manager (SCCM) CB releases - 1511, 1602, 1606, and 1710.
     - UR5 supports 1802
-    - UR9 and UR10 supports from 1806 to 2103. However, there is a limitation that the size of the devices supported by SCCM should be less than 2 PB.
+    - UR9 and UR10 supports from 1806 to 2103. However, there's a limitation that the size of the devices supported by SCCM should be less than 2 PB.
     - UR10 supports 2107
 
 
@@ -68,9 +68,9 @@ The following versions of Windows client operating system are supported for the 
 |**Service Manager** Console|&#8226;|&#8226;|&#8226;|||&#8226;|&#8226;|&#8226;|
 
 
-## .Net versions
+## .NET versions
 
-The following versions of .Net are supported for Service Manager.
+The following versions of .NET are supported for Service Manager.
 
 |System Center 2016 component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|.NET 4.6.1|.NET 4.7|
 |-----------------------------------|----------------|----------|------------|--------------|--------------|------------|-------|------|
@@ -100,16 +100,16 @@ The following versions of PowerShell are supported for Service Manager.
 |         **Service Manager console**          | The console requires: Microsoft Report Viewer Redistributable (available on System Center media): Microsoft Excel in order view OLAP data cubes on the console computer;  ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server; SQL Server Analysis Management Objects<br/><br/> The console can be installed on both 32\-bit and 64\-bit editions of Windows. |
 |           **Self-Service portal**            |                                     The Self-Service Portal server requires: Windows 2012 R2 server or later; the IIS role and ASP.NET 4.5 enabled; SQL Server Analysis Management Objects<br/><br/>  Join the server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server.                                      |
 |         Machines using self-service          |                                                                                  The Self Service portal needs a screen resolution above 1024 X 768.<br/><br/> Supported browsers: Microsoft Edge; Microsoft Internet Explorer 10 and 11; Mozilla Firefox 42 and later; Google Chrome 46 and later                                                                                   |
-|      **SQL Server Reporting Services**       |                                         In a deployment topology where the computer hosting SSRS is not on the same computer that hosts the data warehouse management server, you have to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](../scsm/config-remote-ssrs.md) the manual steps.                                         |
+|      **SQL Server Reporting Services**       |                                         In a deployment topology where the computer hosting SSRS isn't on the same computer that hosts the data warehouse management server, you've to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](../scsm/config-remote-ssrs.md) the manual steps.                                         |
 |            **Operations Manager**            |                                     Service Manager has the capability to import alerts and configuration items from an Operations Manager environment. [Read about](../scsm/om-considerations.md) installing both Service Manager and Operations Manager in the same environment.<br/><br/> You can create a data mart for Operations Manager.                                      |
 |          **Configuration Manager**           |                                                                                                                                       Service Manager can import configuration items from a Configuration Manager environment.                                                                                                                                       |
 |           **Network requirements**           |                                                                                                    To view external content from within knowledge articles, computers that host the Service Manager console must have Internet access, either directly or through a proxy server.                                                                                                    |
 |               **SMTP server**                |                                                                                                                   You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use the Notification feature and for incident creation through email.                                                                                                                   |
-|            **Windows safe mode**             |                                              Service Manager doesn't operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.                                               |
+|            **Windows safe mode**             |                                              Service Manager doesn't operate and the services used by Service Manager don't start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.                                               |
 
 Microsoft SQL Server hosts the databases that System Center 2016 - Service Manager creates. In addition, System Center 2016 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 - Service Manager reporting.
 
-Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2016. Use this information whether you are deploying one or multiple components of System Center.
+Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2016. Use this information whether you're deploying one or multiple components of System Center.
 
 ## SQL Server versions
 
@@ -125,9 +125,9 @@ The following table summarizes the support for SQL Server 64-bit Enterprise and 
 
 
 
-- System Center 2016 - Service Manager doesn't support setting the MultiSubnetFailover parameter. This parameter is not used in Service Manager connection strings.
+- System Center 2016 - Service Manager doesn't support setting the MultiSubnetFailover parameter. This parameter isn't used in Service Manager connection strings.
 - SQL Server AlwaysOn Availability Groups are supported in System Center 2016 - Service Manager. [Learn more](../scsm/sql-always-on.md).
-- To install or upgrade Service Manager, SQL Server machines that host databases must be configured to allow updates. Otherwise an error appears when Service Manager tries to create a database:
+- To install or upgrade Service Manager, SQL Server machines that host databases must be configured to allow updates. Otherwise, an error appears when Service Manager tries to create a database:
     - *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry upgrade for this role.*
     - You can check the status of **allow updates** on SQL Server by executing the following stored procedure from within SQL Server Management Studio:
         ```

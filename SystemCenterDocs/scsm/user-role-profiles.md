@@ -1,7 +1,7 @@
 ---
 title: User role profiles in Service Manager
 description: Learn about the scope and properties of user role profiles in Service Manager.
-manager: evansma
+manager: mkluck
 ms.topic: reference
 author: jyothisuri
 ms.author: jsuri
@@ -67,7 +67,7 @@ The table below shows the tabs and order that they appear in the console.
 | update CIs | advanced operator, author, workflow |
 | delete CIs | advanced operator, author, workflow |
 | create user preference | activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow |
-| update user preference | They can update them self only. Say Activity implementer user login as "ABC1" user then he can update "ABC1" only. Same with all the user roles.
+| update user preference | They can update them self only. Say Activity implementer user login as "ABC1" user, then he can update "ABC1" only. Same with all the user roles.
 
 ## Default user role relationships in Service Manager
 

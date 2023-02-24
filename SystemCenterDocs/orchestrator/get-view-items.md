@@ -12,7 +12,7 @@ ms.topic: reference
 ms.assetid: 08e35080-8778-4199-96c0-6522aa8d586a
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get View Items

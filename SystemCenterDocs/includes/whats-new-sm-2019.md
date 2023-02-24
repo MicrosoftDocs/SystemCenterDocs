@@ -1,7 +1,7 @@
 ---
 title:  include file
-description: include file that describes the new features and other changes in System Center 2019 - Service Manager.
-manager: evansma
+description: include file to describe the new features and other changes in System Center 2019 - Service Manager.
+manager: mkluck
 ms.topic:  include
 author: jyothisuri
 ms.author: jsuri
@@ -24,7 +24,7 @@ SM 2019 supports new installation of SQL Server 2017.
 Service Manager supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server).
 
 >[!NOTE]
-> - Service Manager 2019 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
+> - Service Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 
@@ -37,7 +37,7 @@ The user interface is made responsive by addressing memory leak problems.
 ### Enable Service Logon
 In earlier releases, during the setup of Service Manager Management Server and Service Manager Data Warehouse Management Server, various credentials are asked for SM accounts. These accounts had been interactive (accounts having **Allow log on locally** (SetInteractiveLogonRight) permission).
 
-With SM 2019, we have enabled *Service Logon* type to make Service Manager more secure, and the default logon type is set to *Service Logon*. For information on how to grant service logon permissions to the Run As accounts, see enable service logon feature. [Learn more](../scsm/enable-service-log-on-sm.md).
+With SM 2019, we've enabled *Service Logon* type to make Service Manager more secure, and the default logon type is set to *Service Logon*. For information on how to grant service logon permissions to the Run As accounts, see enable service logon feature. [Learn more](../scsm/enable-service-log-on-sm.md).
 
 ### Bug fixes
 This release of System Center Service Manager contains all the bug fixes shipped until the [Update Rollup 5 of SCSM 2016](https://support.microsoft.com/help/4093685/update-rollup-5-for-system-center-2016-service-manager).  
@@ -57,7 +57,7 @@ You can upgrade SQL server 2016 to SQL 2017.
 
 SM supports an enhanced experience for evaluating Service Manager and activating the product for retail use.  
 
-The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. With Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your SM. [Learn more](../scsm/sm-license.md).
+The evaluation version of Service Manager can be installed and used for 180 days. In SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. With Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your SM. [Learn more](../scsm/sm-license.md).
 
 ## New features in Service Manager UR2
 
@@ -65,12 +65,12 @@ The following new feature is supported with Service Manager Update Rollup 2.
 
 ### Support for SQL 2019 CU8 or later
 
-Service  Manager UR2 supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server).
+Service Manager UR2 supports SQL Server 2019 with Cumulative Update 8 (CU8) or later, as detailed [here](/archive/blogs/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server).
 
 This support is applicable for Service Manager 2019.
 
 >[!NOTE]
-> - Service Manager 2019 does not support SQL 2019 RTM, supports SQL 2019 with CU8 or later.
+> - Service Manager 2019 doesn't support SQL 2019 RTM, supports SQL 2019 with CU8 or later.
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 ## New features in Service Manager UR5
