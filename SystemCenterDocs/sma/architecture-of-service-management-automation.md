@@ -1,13 +1,14 @@
 ---
 title: Service Management Automation architecture in System Center
 description: Provides an overview of the architecture in System Center Service Management Automation (SMA)
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
-ms.date: 05/09/2018
+ms.date: 02/22/2023
 ms.technology: service-management-automation
+ms.custom: engagement-fy23
 ---
 
 # Service Management Automation architecture
@@ -18,17 +19,18 @@ ms.technology: service-management-automation
 
 ::: moniker-end
 
-This article shows a diagram that illustrates System Center Service Management Automation (SMA) features.
+This article shows a diagram that illustrates System Center - Service Management Automation (SMA) features.
 
 
-![SMA architecture diagram](/system-center/sma/media/architecture-of-service-management-automation/smaarchitecture.png)
+![SMA architecture diagram.](/system-center/sma/media/architecture-of-service-management-automation/smaarchitecture.png)
 
  ## Features
 
-  - The SMA web service communicates with Windows Azure Pack and authenticates users.
-  - The SQL Server databases store and retrieve a number of components. These include runbooks, runbook assets, activities, integration modules, and runbook job information.
+  - The SMA web service communicates with Microsoft Azure Pack and authenticates users.
+  - The SQL Server databases store and retrieve many components. These include runbooks, runbook assets, activities, integration modules, and runbook job information.
   - Runbook workers run the runbooks, and they can be used for load balancing.
-  The management portal in Windows Azure Pack is where you author, debug, start, and stop runbooks.
+  The management portal in Microsoft Azure Pack is where you author, debug, start, and stop runbooks.
 
 ## Next steps
-Learn [what's new](./whats-new-in-sma.md) in the latest version of SMA.
+
+- Learn [what's new](./whats-new-in-sma.md) in the latest version of SMA.
