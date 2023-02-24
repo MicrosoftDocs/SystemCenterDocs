@@ -4,7 +4,7 @@ title: include file
 description: include file to summarize the release notes for VMM 2016.
 author:  jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date:  04/30/2018
 ms.topic:  include
 ms.prod:  system-center-threshold
@@ -44,7 +44,7 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Workaround**: Configure static IP addresses.
 
 ### SET switch shows as ‘Internal’ in VMM
-**Description**: If you deploy an SET switch outside the VMM console, and then start managing it in the VMM fabric, The switch type will show as "internal".. This doesn't impact switch functionality.
+**Description**: If you deploy an SET switch outside the VMM console, and then start managing it in the VMM fabric, The switch type will show as **internal**. This doesn't impact switch functionality.
 **Workaround**: None
 
 ### LACP teamed switch doesn't work after upgrade
@@ -127,12 +127,12 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Workaround**: Update the clusters outside VMM, using cluster-aware updating (CAU) in Windows.
 
 ### A cluster rolling upgrade of a Windows Server 2012 R2 host cluster to a Windows Server 2016 Nano Server host cluster will fail
-**Description**: When you try to upgrade the host nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server using cluster rolling upgrade functionality in VMM, the upgrade will fail with error 20406: "VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server \<servername\>. Failed with error MI RESULT 7 The requested operation is not supported.:
+**Description**: When you try to upgrade the host nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server using cluster rolling upgrade functionality in VMM, the upgrade will fail with error 20406: "VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server \<servername\>. Failed with error MI RESULT 7 The requested operation isn't supported.:
 **Workaround**: Manually upgrade the Windows Server 2012 R2 host cluster to Nano outside of VMM. Note that rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Full Server works fine. This issue is specific to Nano.
 
 ### Adding a cluster in the VMM Admin console might cause an error
-**Description**: When you add a cluster as a resource in the VMM Administrative console, you might receive an error stating "There were no computers discovered based on your inputs".
-**Workaround**: Select **OK**, and close the error dialog box. Then try to add the cluster again.
+**Description**: When you add a cluster as a resource in the VMM Administrative console, you might receive an error stating **There were no computers discovered based on your inputs**.
+**Workaround**: Select **OK**, and close the error dialog. Then try to add the cluster again.
 
 ### A cluster rolling upgrade doesn't do live migration of VMs that aren't highly available
 **Description**: When you run a rolling upgrade of Windows Server 2012 R2 clusters to Windows Server 2016 using VMM, it does not perform live migration of VMs that aren't highly-available. They are moved to a saved state.
@@ -156,7 +156,7 @@ The following sections summarize the release notes for VMM 2016 and includes the
 
 
 ### You can't add Nano Server-based hosts located in a perimeter network
-**Description:** Trying to add a Nano Server-based host located in a perimter network using the Add Resource Wizard fails.
+**Description:** Trying to add a Nano Server-based host located in a perimeter network using the Add Resource Wizard fails.
 **Workaround:**  Perform these steps on the host, and then add it as an untrusted host to the VMM fabric.
 
 1.  Enable WINRM over HTTPS on the host:
@@ -203,7 +203,7 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Workaround**: Install the latest VMM update rollup. The issue was fixed in update rollup 2.
 
 ###  Creating tiered file share on SOFS doesn't work as expect o
-**Description**: When you successfully create a tiered fileshare on SOFS, an error (43020 [SM_RC_DEDUP_NOT_AVAILABLE]) is issued, even if dedup option is not selected.
+**Description**: When you successfully create a tiered fileshare on SOFS, an error (43020 [SM_RC_DEDUP_NOT_AVAILABLE]) is issued, even if dedup option isn't selected.
 **Workaround**: Ignore the error.
 
 ###  VMM doesn't show correct information for a hyper-converged  cluster, or Storage Spaces Direct SOFS
@@ -230,7 +230,7 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 ### You can't create VM templates from a Nano Server-based VM.
 **Description**: When you try to create a VM template from a Nano Server-based VM, error 2903 is issued: "VMM could not locate the specified file/folder '' on the '\<server name\>' server. This file/folder might be required as part of another object."
-**Workaround:** Create a VM template from scratch, using a Nano Server VHD.
+**Workaround**: Create a VM template from scratch using a Nano Server VHD.
 
 ### Service deployments from service templates might fail on a Nano Server/Core-based guest OS.
 **Description**: When selecting roles and features for a service template, the guest OS profile doesn't differentiate between Core, Nano Server, and Desktop. If you select roles and features (such as Desktop Experience or other GUI-related features) that don't apply to a Core/Nano Server-based guest OS, deployment failure might occur.
@@ -242,7 +242,7 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 ### Nano Server-based VM fails to join a domain
 **Description**: During Nano Server VM deployment, if you join the VM to a domain by specifying the domain join information on the **OS Configuration** page of the VM deployment Wizard, VMM deploys the VM but doesn't add it to the specified domain.
-**Workaround:** After the VM is deployed, manually join the VM to the domain. [Learn more](/windows-server/get-started/getting-started-with-nano-server).
+**Workaround**: After the VM is deployed, manually join the VM to the domain. [Learn more](/windows-server/get-started/getting-started-with-nano-server).
 
 
 ### Error when starting a VM with Start Ordering
@@ -255,4 +255,4 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 ## SQL Server Analysis Services (SSAS) integration doesn't work in VMM and Operations Manager Update Rollup 1.
 **Description**: If you're runnning Upate Rollup 1, you can't configure SSAS for SQL Server.
-**Workaround:** Dowload the latest Update Rollups. The issue was fixed in Update Rollup 2.
+**Workaround**: Dowload the latest Update Rollups. The issue was fixed in Update Rollup 2.

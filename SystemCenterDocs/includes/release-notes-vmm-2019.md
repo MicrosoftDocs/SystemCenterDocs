@@ -4,7 +4,7 @@ title: include file
 description: include file to summarize the release notes for VMM 2019.
 author:  jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date:  08/04/2019
 ms.topic:  include
 ms.prod:  system-center
@@ -21,11 +21,11 @@ No known issues in VMM 2019 UR1 and UR2.
 
 ## Removal of cluster node fails with CleanUpDisks flag
 
- **Description**: When you remove a cluster node from Windows Server 2019 S2D cluster, with a CleanUpDisks flag, the removal fails with **Could not get the specified instance MSFT_StorageJob** error, in the following scenarios
+ **Description**: When you remove a cluster node from Windows Server 2019 S2D cluster, with a CleanUpDisks flag, the removal fails with **Could not get the specified instance MSFT_StorageJob** error, in the following scenarios.
 
   - The storage capacity is inadequate in the remaining servers to accommodate all the volumes.
 
-  - There are not enough fault domains to provide the resiliency of the volume.  
+  - There aren't enough fault domains to provide the resiliency of the volume.  
 
 **Workaround**: Ensure the following:
 
@@ -37,7 +37,7 @@ No known issues in VMM 2019 UR1 and UR2.
 
 **Description**: Addition of storage device having SMI-S management interface fails with the error *Registration of storage provider failed with error code WsManMIInvokeFailed* when System Center Virtual Machine Manager (VMM) 2019 is installed on Windows Server 2019.  
 
-**Workaround**: VMM depends on the *Windows Standards-Based Storage Management* service to manage the storage devices using SMI-S. Make sure that the service is started before trying to add the storage device.  
+**Workaround**: VMM depends on the *Windows Standards-Based Storage Management* service to manage the storage devices using SMI-S. Ensure that the service is started before trying to add the storage device.  
 
 ## Windows Server 2019 does not support HNVv1 networks
 
@@ -68,7 +68,7 @@ To avoid this issue, prior to CRU triggering, ensure to install the latest OS up
 
 ## Storage Dynamic Optimization does not trigger VHD migration even when optimization criteria are met
 
-**Description**: Storage Dynamic Optimization (DO) should trigger the VHD migration between Clustered Shared Volumes (CSV),  when the free storage space in one of the CSVs falls below the disk space threshold set in the Dynamic Optimization page, and the aggressiveness criteria are met. However, in some cases, the VHDs might not be migrated even if all other Storage DO conditions are met.
+**Description**: Storage Dynamic Optimization (DO) should trigger the VHD migration between Clustered Shared Volumes (CSV), when the free storage space in one of the CSVs falls below the disk space threshold set in the Dynamic Optimization page, and the aggressiveness criteria are met. However, in some cases, the VHDs might not be migrated even if all other Storage DO conditions are met.
 
 **Workaround**: To ensure Storage migration is triggered, do the following:
 1.	Check the *HostVolumeID* using *Get-SCStorageVolume* cmdlet. If the *HostVolumeID* returns Null for the volume, refresh the VM and perform Storage DO again.
@@ -78,7 +78,7 @@ To avoid this issue, prior to CRU triggering, ensure to install the latest OS up
 
 **Description**: If there is a mismatch of disk space warning levels between host groups having the same file share, it can result in multiple migrations, to and from that file share, and might impact storage DO performance.
 
-**Workaround**: We recommend that you do not do a file share across different clusters, where storage dynamic optimization is enabled.
+**Workaround**: We recommend that you don't do a file share across different clusters where storage dynamic optimization is enabled.
 
 ## Performance monitoring for VMM server fails with *Access denied* event error
 
@@ -93,7 +93,7 @@ This command will add the service user to the list of allowed users, who can acc
 
 ## Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object
 
-**Description**: Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object, due to which Remove-PortACL job fails with NC Exception that is still in use.
+**Description**: Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object due to which Remove-PortACL job fails with NC Exception that is still in use.
 
 **Workaround**: Remove the VMSubnet from VMM and then remove Port-ACL.
 
