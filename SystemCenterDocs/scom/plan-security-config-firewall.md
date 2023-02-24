@@ -59,8 +59,9 @@ The following table shows Operations Manager feature interaction across a firewa
 |Management server (Audit Collection Services collector)|1433/TCP&nbsp;<---<br>1434/UDP&nbsp;<---|Audit Collection Services database|Yes <sup>[2](#footnote2)</sup>||
 
 #### <a name="footnote1"></a> Management Pack Catalog Web Service <sup>1</sup>
-- To access the Management Pack Catalog web service, your firewall must allow the following URL:
+- To access the Management Pack Catalog web service, your firewall must allow the following URL and wildcard (*):
   1. [https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx](https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx)
+  2. `http://go.microsoft.com/fwlink/*`
 
 #### <a name="footnote2"></a> Identify SQL Port <sup>2</sup>
  - If SQL Server is installed with the default port, the port number is 1433. If not the default port, it may be dynamic or non-default. To identify the port, follow these steps:
