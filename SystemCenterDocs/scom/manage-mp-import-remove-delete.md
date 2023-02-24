@@ -5,8 +5,8 @@ description: This article describes how to import, export and remove an Operatio
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 08/04/2020
-ms.custom: na
+ms.date: 02/24/2023
+ms.custom: engagement-fy23
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -48,7 +48,7 @@ You have several options for importing management packs:
 -   Download a management pack by using an Internet browser to import at a later time.
 
 > [!NOTE]
-> Using the management pack catalog service requires an Internet connection and your firewall needs to allow access to the the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx?**. If the computer running Operations Manager Operations console can't connect to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that's accessible from the console.
+> Using the management pack catalog service requires an Internet connection and your firewall needs to allow access to the the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx**. If the computer running Operations Manager Operations console can't connect to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that's accessible from the console.
 
 The Operations Manager community maintains a list of management packs developed by Microsoft on the following website [Microsoft Management Pack List](https://go.microsoft.com/fwlink/?LinkId=82105). You can obtain third-party management packs directly from those companies and import them by following the procedure [Import a management pack from disk](#import-a-management-pack-from-disk).
 

@@ -1,6 +1,6 @@
 ---
 description: include file to describe the new features in Service Management Automation (SMA) 2016
-manager: evansma
+manager: mkluck
 ms.topic: include
 author: jyothisuri
 ms.author: jsuri
@@ -17,7 +17,7 @@ SMA 2016 added the following features.
 
 ## Support for PowerShell script
 
-SMA 2016 supports PowerShell Script in addition to PowerShell Workflow, which was the only runbook format supported in previous versions. [Learn more](https://blogs.technet.microsoft.com/orchestrator/2016/04/28/powershell-script-runbook-support-in-system-center-service-management-automation-2016-sma-part-1/).
+SMA 2016 supports PowerShell Script in addition to PowerShell Workflow, which was the only runbook format supported in the previous versions. [Learn more](https://blogs.technet.microsoft.com/orchestrator/2016/04/28/powershell-script-runbook-support-in-system-center-service-management-automation-2016-sma-part-1/).
 
 ## PowerShell ISE add-on
 
