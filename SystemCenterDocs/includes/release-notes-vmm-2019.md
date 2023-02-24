@@ -41,7 +41,7 @@ No known issues in VMM 2019 UR1 and UR2.
 
 ## Windows Server 2019 does not support HNVv1 networks
 
-**Description**: Windows Server 2019 does not support HNVv1. If HNVv1 is currently in use, then the cluster that is utilizing HNVv1 should not be upgraded to Windows Server 2019 using Cluster Rolling Upgrade.
+**Description**: Windows Server 2019 doesn't support HNVv1. If HNVv1 is currently in use, then the cluster that is utilizing HNVv1 shouldn't be upgraded to Windows Server 2019 using Cluster Rolling Upgrade.
 
 **Workaround**: Migrate out of HNVv1 to SDNv2 on Windows Server 2016 before using Cluster Rolling upgrade to Windows Server 2019.
 
@@ -60,7 +60,7 @@ No known issues in VMM 2019 UR1 and UR2.
 
 ## Cluster Rollup Upgrade fails
 
-**Description**: Cluster rollup upgrade (CRU) fails during the *Connect Hyper-V host to storage arrays* stage, if the Windows Server 2019 Virtual Hard Disk (VHD) in library server, used as the computer profile for redeploying the operating system (OS) is not installed with the latest updates.
+**Description**: Cluster rollup upgrade (CRU) fails during the *Connect Hyper-V host to storage arrays* stage, if the Windows Server 2019 Virtual Hard Disk (VHD) in library server, used as the computer profile for redeploying the operating system (OS) isn't installed with the latest updates.
 
 **Workaround**: To resolve this error, install all the pending updates on the VHD and restart the CRU job.
 
@@ -76,13 +76,13 @@ To avoid this issue, prior to CRU triggering, ensure to install the latest OS up
 
 ## Storage Dynamic Optimization disk performs multiple back and forth VHD migrations
 
-**Description**: If there is a mismatch of disk space warning levels between host groups having the same file share, it can result in multiple migrations, to and from that file share, and might impact storage DO performance.
+**Description**: If there's a mismatch of disk space warning levels between host groups having the same file share, it can result in multiple migrations, to and from that file share, and might impact storage DO performance.
 
 **Workaround**: We recommend that you don't do a file share across different clusters where storage dynamic optimization is enabled.
 
 ## Performance monitoring for VMM server fails with *Access denied* event error
 
-**Description**: In a scenario where VMM is monitored using Operations Manager, performance monitoring for VMM server fails with *Access denied*  event error. Service users do not have permission to access VirtualMachineManager-Server/Operational event log.
+**Description**: In a scenario where VMM is monitored using Operations Manager, performance monitoring for VMM server fails with *Access denied*  event error. Service users don't have permission to access VirtualMachineManager-Server/Operational event log.
 
 **Workaround**: Change the security descriptor for Operational event log registry with the following command, and then restart the event log service and health log service.
 

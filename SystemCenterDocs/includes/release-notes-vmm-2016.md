@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 ## VMM 2016 release notes
 
-The following sections summarize the release notes for VMM 2016 and includes the known issues, fixes, and the workarounds.
+The following sections summarize the release notes for VMM 2016 and include the known issues, fixes, and the workarounds.
 
 ## VMM deployment
 
@@ -49,7 +49,7 @@ The following sections summarize the release notes for VMM 2016 and includes the
 
 ### LACP teamed switch doesn't work after upgrade
 **Description**: An LACP team configured in a logical switch doesn't work after upgrading to VMM 2016.
-**Workaround**: Redeploy the switch, or remove and re-add a physical network adapter in the team.
+**Workaround**: Redeploy the switch, or remove and readd a physical network adapter in the team.
 
 ### Backend adapter connectivity for SLB MUX doesn't work as expected
 **Description**: Backend adapter connectivity of SLB MUX might not work as expected after VM migration.
@@ -128,14 +128,17 @@ The following sections summarize the release notes for VMM 2016 and includes the
 
 ### A cluster rolling upgrade of a Windows Server 2012 R2 host cluster to a Windows Server 2016 Nano Server host cluster will fail
 **Description**: When you try to upgrade the host nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server using cluster rolling upgrade functionality in VMM, the upgrade will fail with error 20406: "VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server \<servername\>. Failed with error MI RESULT 7 The requested operation isn't supported.:
-**Workaround**: Manually upgrade the Windows Server 2012 R2 host cluster to Nano outside of VMM. Note that rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Full Server works fine. This issue is specific to Nano.
+**Workaround**: Manually upgrade the Windows Server 2012 R2 host cluster to Nano outside of VMM.
+
+> [!NOTE]
+> The rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Full Server works fine. This issue is specific to Nano.
 
 ### Adding a cluster in the VMM Admin console might cause an error
 **Description**: When you add a cluster as a resource in the VMM Administrative console, you might receive an error stating **There were no computers discovered based on your inputs**.
 **Workaround**: Select **OK**, and close the error dialog. Then try to add the cluster again.
 
 ### A cluster rolling upgrade doesn't do live migration of VMs that aren't highly available
-**Description**: When you run a rolling upgrade of Windows Server 2012 R2 clusters to Windows Server 2016 using VMM, it does not perform live migration of VMs that aren't highly-available. They are moved to a saved state.
+**Description**: When you run a rolling upgrade of Windows Server 2012 R2 clusters to Windows Server 2016 using VMM, it doesn't perform live migration of VMs that aren't highly available. They're moved to a saved state.
 **Workaround**: Either make all cluster VMs highly available before the upgrade, or do a manual live migration for the specific VMs.
 
 ### You need manual steps to add a Nano Server-based host located in an untrusted domain
@@ -148,7 +151,7 @@ The following sections summarize the release notes for VMM 2016 and includes the
       New-Item -Path WSMan:\LocalHost\Listener -Transport HTTPS -Address * -CertificateThumbPrint $cert.Thumbprint –Force
       ``
 
-2.  Create an firewall exception on the host, to allow WINRM over HTTPS:
+2.  Create a firewall exception on the host to allow WINRM over HTTPS:
 
       ``
       New-NetFirewallRule -DisplayName 'Windows Remote Management (HTTPS-In)' -Name 'Windows Remote Management (HTTPS-In)' -Profile Any -LocalPort 5986 -Protocol TCP
@@ -199,7 +202,7 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Workaround**: Install the latest VMM update rollup. The issue was fixed in Update Rollup 2.
 
 ###  A classification change on a Cluster Shared Volume (CSV) isn't applied
-**Description**: If you change the classification on a Cluster Shared Volume (CSV) in a Storage Spaces Direct hyper-converged cluster , only the classification of the owner node is updated. The other nodes still have the older classification assigned.
+**Description**: If you change the classification on a Cluster Shared Volume (CSV) in a Storage Spaces Direct hyper-converged cluster, only the classification of the owner node is updated. The other nodes still have the older classification assigned.
 **Workaround**: Install the latest VMM update rollup. The issue was fixed in update rollup 2.
 
 ###  Creating tiered file share on SOFS doesn't work as expect o
@@ -218,11 +221,11 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Workaround**: Repair the VM with the **Ignore** option.
 
 ### VMM doesn't show changes to VM security properties
-**Description**: If you change the secure boot properties of a generation 2 VM, or enable/disable vTPM for a shielded VM, outside the VMM console, the change is not immediately shown in VMM.
+**Description**: If you change the secure boot properties of a generation 2 VM, or enable/disable vTPM for a shielded VM, outside the VMM console, the change isn't immediately shown in VMM.
 **Workaround**: Manually refresh the VM to show the changes.
 
 ### Storing a VM in the VMM library fails if you change the default port for BITS (443)
-**Description**: If you change the defaul BITS port when configuring VMM, and error is issued when you store a VM in the VMM library. Error 2940: "VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established."
+**Description**: If you change the default BITS port when configuring VMM, and error is issued when you store a VM in the VMM library. Error 2940: "VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established."
 **Workaround**: Manually add the new port number to the Windows Firewall exceptions list of the host:
 ``
 netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<port no.> protocol=TCP
@@ -246,7 +249,7 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 
 ### Error when starting a VM with Start Ordering
-**Description**: Windows Server 2016 includes the VM Start Ordering feature which defines the order in which dependent VMs are started. This functionality isn't available in VMM, but if you've configured the feature outside the VMM, VMM understands the order in which the VMs will start. However, VMM throws a false positive error (12711): "VMM cannot complete the WMI operation on the server \<servername\> because of an error: [MSCluster_ResourceGroup.Name=\<name\>] The group or resource is not in the correct state to perform the requested operation.
+**Description**: Windows Server 2016 includes the VM Start Ordering feature, which defines the order in which dependent VMs are started. This functionality isn't available in VMM, but if you've configured the feature outside the VMM, VMM understands the order in which the VMs will start. However, VMM throws a false positive error (12711): "VMM cannot complete the WMI operation on the server \<servername\> because of an error: [MSCluster_ResourceGroup.Name=\<name\>] The group or resource isn't in the correct state to perform the requested operation.
 **Workaround**: Ignore the error. The VMs will start in the correct order.
 
 
@@ -254,5 +257,5 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 ## Integration
 
 ## SQL Server Analysis Services (SSAS) integration doesn't work in VMM and Operations Manager Update Rollup 1.
-**Description**: If you're runnning Upate Rollup 1, you can't configure SSAS for SQL Server.
-**Workaround**: Dowload the latest Update Rollups. The issue was fixed in Update Rollup 2.
+**Description**: If you're running Upate Rollup 1, you can't configure SSAS for SQL Server.
+**Workaround**: Download the latest Update Rollups. The issue was fixed in Update Rollup 2.
