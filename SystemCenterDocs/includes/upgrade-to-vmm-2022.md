@@ -123,7 +123,7 @@ Use the following procedures:
 >[!NOTE]
 >Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents) by using the VMM.
 
-If there is any issue with the setup, check the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder.
+If there's any issue with the setup, check the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder.
 
 During the setup, VMM enables the following firewall rules. These rules remain in effect even if you uninstall the VMM later.
 

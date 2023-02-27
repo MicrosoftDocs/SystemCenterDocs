@@ -206,7 +206,7 @@ System Center 2019 - Operations Manager supports an in-place upgrade from the fo
 
 ## Active Directory and DNS
 
-Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization. DNS is leveraged for name resolution of the supporting roles in the management group as well as computers, network devices, and other monitored workloads such as web URLs.
+Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization. DNS is used for name resolution of the supporting roles in the management group and computers, network devices, and other monitored workloads such as web URLs.
 
 ### Active Directory Domain Services
 

@@ -23,11 +23,11 @@ See the following sections for information about the new features supported in V
 
 ### Supports selection of CSV for placing a new VHD
 
-VMM 1807 allows you to select a cluster shared volumes (CSV) for placing a new virtual hard disc (VHD).
+VMM 1807 allows you to select a cluster shared volumes (CSV) for placing a new virtual hard disk (VHD).
 
 In earlier versions of VMM, a new VHD on a virtual machine (VM), by default, is placed on the same CSV where the earlier VHDs associated with the VM are placed, there was no option to choose a different CSV/folder. In case of any issues related to the CSV, such as storage full or overcommitment, users had to migrate the VHD only after deploying the VHD.
 
-With VMM 1807, you can now choose any location to place the new disc. You can manage this disc easily based on the storage availability of CSVs. [Learn more](/previous-versions/system-center/virtual-machine-manager-2008-r2/cc956004(v=technet.10)).
+With VMM 1807, you can now choose any location to place the new disk. You can manage this disk easily based on the storage availability of CSVs. [Learn more](/previous-versions/system-center/virtual-machine-manager-2008-r2/cc956004(v=technet.10)).
 
 ## Networking
 
@@ -40,7 +40,7 @@ With VMM 1807, you can now choose any location to place the new disc. You can ma
  VMM 1807 allows you to convert a switch embedded teaming (SET) switch to logical switch by using the VMM console. In earlier versions, this feature was supported only through PowerShell script. [Learn more](../vmm/network-switch.md).
 
 ### VMware host management
-VMM 1807 supports VMware ESXi v6.5 servers in VMM fabric. This support facilitates the administrators with  additional  flexibility in managing multiple hypervisors in use. [Learn more](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric) about the additional details of supported vmware server versions.
+VMM 1807 supports VMware ESXi v6.5 servers in VMM fabric. This support facilitates the administrators with  additional  flexibility in managing multiple hypervisors in use. [Learn more](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric) about the additional details of supported VMware server versions.
 
 ### Support for S2D cluster update
 

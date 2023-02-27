@@ -81,7 +81,7 @@ Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
 SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016) | Y
 SQL Server 2017 as detailed [here](/lifecycle/products/?terms=SQL+Server+2017) | Y
 SQL Server 2019 as detailed [here](/lifecycle/products/?terms=SQL+Server+2019) | Y
-SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack. <br/><br/> Not required for VMM installation..
+SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack. <br/><br/> Not required for VMM installation.
 
 ## Virtualization
 
@@ -99,7 +99,7 @@ These components should be installed on the server before you install VMM.
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
 Active Directory | The VMM management server must be a domain member.<br><br> The computer name shouldn't exceed 15 characters. | A computer with the VMM console installed should be a domain member.
-Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 10 and download windows PE Add on for ADK| Not applicable
+Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 10 and download windows PE Add-on for ADK| Not applicable
 PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 .NET (minimum) | 4.6 |  4.5
 
@@ -122,7 +122,7 @@ Windows Server 2022 | N | N | N | N
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5 , 6.7 (supported from 2019 UR2 and later)
+ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5, 6.7 (supported from 2019 UR2 and later)
 vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7 (supported from 2019 UR2 and later)
 Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 

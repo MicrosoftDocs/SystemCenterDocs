@@ -20,7 +20,7 @@ See the following sections for detailed information about the new features suppo
 ### Nested virtualization
 VMM  supports Nested Virtualization feature that allows you to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
 
-You can leverage this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use third-party virtualization management products with Microsoft hypervisor.
+You can use this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use third-party virtualization management products with Microsoft hypervisor.
 
 You can enable or disable the nested virtualization feature using SCVMM 1801. You can configure the VM as a Host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization considers a nested VM host for placement. [Learn more](../vmm/vm-nested-virtualization.md).
 
@@ -36,7 +36,7 @@ As part of this release, the **Convert Virtual machine** wizard enables the VM m
 1.	BIOS-based VMs are migrated to Hyper-V VM generation 1.
 2.	EFI-based VMs are migrated to Hyper-V VM generation 2.
 
-We've also made improvements in the VMWare VM conversion process that makes the conversion up to 50% faster.
+We've also made improvements in the VMware VM conversion process that makes the conversion up to 50% faster.
 
 ### Performance improvement in host refresher
 
@@ -76,7 +76,7 @@ VMM 1801 release also supports the floating IP functionality through the Softwar
 . [Learn more](../vmm/sdn-guest-clusters.md).
 
 ### Configuration of  SLB VIPs through VMM service templates
-SDN in Windows 2016 can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 currently supports deployment of  SLB Virtual IPs (VIPs) using power shell.
+SDN in Windows 2016 can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 currently supports deployment of  SLB Virtual IPs (VIPs) using PowerShell.
 
 With VMM 1801, VMM supports configuration of SLB VIPs while deploying multi-tier application by using the service templates. [Learn more](../vmm/sdn-configure-slb-vip.md).
 
@@ -104,6 +104,6 @@ The primary HGS URLs will always be used in favor of the secondary. If the prima
 
 ### Management of Azure Resource Manager-based and region-specific Azure subscriptions
 
-Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and public Azure regions.
+Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and global Azure regions.
 
 VMM 1801 supports management of Azure Resource Manager based VMs, Azure Active Directory (AD) based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).

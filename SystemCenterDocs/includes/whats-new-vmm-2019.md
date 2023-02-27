@@ -30,7 +30,7 @@ VMM 2019 supports deduplication for ReFS volume on the Windows Server 2019 hyper
 
 #### Storage dynamic optimization
 
-This feature helps to prevent cluster shared storage (CSV and file shares) from becoming full due to expansion or new virtual hard discs (VHDs) being placed on the cluster shared storage. You can now set a threshold value to trigger a warning when free storage space in the cluster shared storage falls below the threshold. This situation might occur during a new disk placement. It also might occur when VHDs are automigrated to other shared storage in the cluster. For more information, see [Dynamic optimization](../vmm/vm-optimization.md#dynamic-optimization).
+This feature helps to prevent cluster shared storage (CSV and file shares) from becoming full due to expansion or new virtual hard disks (VHDs) being placed on the cluster shared storage. You can now set a threshold value to trigger a warning when free storage space in the cluster shared storage falls below the threshold. This situation might occur during a new disk placement. It also might occur when VHDs are automigrated to other shared storage in the cluster. For more information, see [Dynamic optimization](../vmm/vm-optimization.md#dynamic-optimization).
 
 #### Support for storage health monitoring
 
@@ -65,9 +65,9 @@ With this feature, you can set a static MAC address on VMs deployed on a cloud. 
 
 ### Azure integration
 
-#### VM update management through VMM by using an Azure automation subscription
+#### VM update management through VMM by using an Azure Automation subscription
 
-VMM 2019 introduces the possibility of patching and updating on-premises VMs (managed by VMM) by integrating VMM with an Azure automation subscription. For more information, see [Manage VMs](../vmm/vms-manage-azure-ad-and-region-specific.md).
+VMM 2019 introduces the possibility of patching and updating on-premises VMs (managed by VMM) by integrating VMM with an Azure Automation subscription. For more information, see [Manage VMs](../vmm/vms-manage-azure-ad-and-region-specific.md).
 
 #### New RBAC role: Virtual Machine Administrator
 
@@ -96,7 +96,7 @@ With VMM, you can select cluster shared volumes (CSVs) for placing a new VHD.
 
 In earlier versions of VMM, by default a new VHD on a VM is placed on the same CSV where the earlier VHDs associated with the VM are placed. There was no option to choose a different CSV/ folder. In case of any problems related to the CSV, such as storage that's full or over commitment, users had to migrate the VHD, but only after they deployed the VHD.
 
-With VMM 1807, you can now choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. For more information, see [Add a virtual hard disk to a virtual machine](/previous-versions/system-center/virtual-machine-manager-2008-r2/cc956004(v=technet.10)).
+With VMM 1807, you can now choose any location to place the new disk. You can manage this disk easily, based on the storage availability of CSVs. For more information, see [Add a virtual hard disk to a virtual machine](/previous-versions/system-center/virtual-machine-manager-2008-r2/cc956004(v=technet.10)).
 
 ### Networking
 
@@ -314,7 +314,7 @@ VMM 2019 UR2 supports IPv6 SDN deployment. [Learn more](../vmm/sdn-controller.md
 
 #### Provision to set affinity between virtual network adapters and physical adapters
 
-VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual network adapters and physical adapters brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic. [Learn more](../vmm/hyper-v-network.md#set-affinity-between-vnics-and-pnics).
+VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual network adapters and physical adapters brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with an RDMA settings-enabled vNIC. Also, you can route specific type of traffic (for example, live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can use SMB multichannel to meet high throughput for SMB traffic. [Learn more](../vmm/hyper-v-network.md#set-affinity-between-vnics-and-pnics).
 
 ### Others
 

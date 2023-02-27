@@ -66,7 +66,7 @@ VMM supports an enhanced console session that enables **Cut (Ctrl + X)**, **Copy
 
 ### Storage Replica
 
-In VMM 2016 you can use Windows Storage Replica to protect data in a volume by synchronously replicating it between primary and secondary (recovery) volumes. You can deploy the primary and secondary volumes to a single cluster to two different clusters or to two standalone servers. You use PowerShell to set up Storage Replica and run failover. [Learn more](../vmm/storage-replica.md)
+In VMM 2016, you can use Windows Storage Replica to protect data in a volume by synchronously replicating it between primary and secondary (recovery) volumes. You can deploy the primary and secondary volumes to a single cluster to two different clusters or to two standalone servers. You use PowerShell to set up Storage Replica and run failover. [Learn more](../vmm/storage-replica.md)
 
 ### Storage Quality of Service (QoS)
 
@@ -98,8 +98,8 @@ You can provide self-service capabilities for fabric managed by Network Controll
 ### Logical switch deployment across hosts
 
 - The interface for creating a logical switch has been streamlined to make it easier to select settings.
-- You can directly use Hyper-v to configure a standard virtual switch on a managed host, and then use VMM to convert the standard virtual switch to a VMM logical switch, which you later apply on additional hosts.
-- When apply a logical switch to a particular host, if the entire operation doesn't succeed, the operation is reverted and host settings are left unchanged. Improved logging makes it easier to diagnose failures.
+- You can directly use Hyper-V to configure a standard virtual switch on a managed host, and then use VMM to convert the standard virtual switch to a VMM logical switch, which you later apply on additional hosts.
+- When applying a logical switch to a particular host, if the entire operation doesn't succeed, the operation is reverted and host settings are left unchanged. Improved logging makes it easier to diagnose failures.
 
 ## Security
 

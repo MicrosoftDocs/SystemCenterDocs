@@ -112,7 +112,7 @@ Windows Server 2016 | Y | Y | N | N
 Windows Server 2016 (with desktop experience) | Y | Y | Y | Y
 Windows Server 1709 | Y | Y | N | N
 
-## VMWare servers in the VMM fabric
+## VMware servers in the VMM fabric
 
 **VMware** | **Supported**
 --- | ---
@@ -125,4 +125,4 @@ Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
 **Guest operating system** | **Supported**
 --- | ---
 Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows) and [earlier versions](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277(v=ws.11)).
-VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software).
+VMware VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software).
