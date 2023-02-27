@@ -4,7 +4,7 @@ title: include file
 description: include file to describe the new features in Operations Manager 2016
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/09/2017
 ms.custom: na
 ms.prod: system-center-2016
@@ -24,7 +24,7 @@ With the release of System Center 2016 - Operations Manager, performance improve
 
 ## Send E-mail notifications with external authentication
 
-Operations Manager now supports sending notifications from an e-mail server, either within the organization or external and configuring a Run As account to authenticate with that external messaging system.
+Operations Manager now supports sending notifications from an email server, either within the organization or external and configuring a Run As account to authenticate with that external messaging system.
 
 
 ## Non Silverlight Web console (except Dashboard views)
@@ -43,12 +43,12 @@ This feature provides the following value:
 
 Schedule Maintenance mode is a feature released in System Center 2016 - Operations Manager to suspend monitoring of an object during regular software or hardware maintenance activities, such as software updates or hardware replacements. Entities can be put to maintenance in older versions of Operations Manager, but they can't be put into maintenance mode at a future time. The newly created Maintenance Mode Scheduling wizard gives the ability to choose different types of entities to put into maintenance and to schedule maintenance at a future time.
 
-With the release of System Center 2016 - Operations Manager, Operators can access the “Maintenance Schedules” feature from the monitoring pane without the dependency on administrators to schedule maintenance at a future time. Server administrators can set the agent-managed computer in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  
+With the release of System Center 2016 - Operations Manager, Operators can access the **Maintenance Schedules** feature from the monitoring pane without the dependency on administrators to schedule maintenance at a future time. Server administrators can set the agent-managed computer in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  
 
 
 ## Management Pack Updates and Recommendations
 
-Operations Manager can assess Microsoft and partner management packs.  Operations Manager includes a new feature called Updates and Recommendations to help you proactively identify new technologies or components (that is, workloads) deployed in your IT infrastructure that weren't monitored by Operations Manager or aren't monitored using the latest version of a management pack. For more information about Updates and Recommendations, see [Management Pack Assessment](../scom/manage-mp-mpassessment.md).
+Operations Manager can assess Microsoft and partner management packs. Operations Manager includes a new feature called Updates and Recommendations to help you proactively identify new technologies or components (that is, workloads) deployed in your IT infrastructure that weren't monitored by Operations Manager or aren't monitored using the latest version of a management pack. For more information about Updates and Recommendations, see [Management Pack Assessment](../scom/manage-mp-mpassessment.md).
 
 
 ## Alert data management

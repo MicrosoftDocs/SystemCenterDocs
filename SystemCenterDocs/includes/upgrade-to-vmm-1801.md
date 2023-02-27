@@ -4,7 +4,7 @@ title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 1801.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 02/19/2021
 ms.topic: include
 ms.prod:  system-center-threshold
@@ -21,7 +21,7 @@ The following sections provide information about how to upgrade to VMM 1801. Als
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2012 R2 update rollup 14 or 2016 UR 4.
-- Ensure that the server meets all requirements for VMM 1801 and that prerequisites are in place [Learn more](../vmm/install.md)
+- Ensure that the server meets all the requirements for VMM 1801 and that prerequisites are in place. [Learn more](../vmm/install.md).
 - Ensure that you're running a [supported version of SQL Server](../vmm/system-requirements.md).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
 	- Site Recovery settings can't be upgraded. After the upgrade, you need to redeploy.
@@ -76,8 +76,8 @@ Use the following procedures:
 
 
 #### Uninstall the VMM
-1. Go to **Add remove programs**, select **VMM** and then select **Uninstall**.
-2. On the **Uninstall wizard,** select **Remove Features**, select both **VMM management Server** and **VMM Console** under the features to remove list.  
+1. Go to **Add remove programs**, select **VMM**, and then select **Uninstall**.
+2. On the **Uninstall wizard,** select **Remove Features**, and select both **VMM management Server** and **VMM Console** under the features to remove list.  
 3. On database options page, select **Retain database**.
 4. Review the summary and select **Uninstall**.
 
@@ -89,13 +89,13 @@ Use the following procedures:
 4. In **Please read this license agreement**, review the license agreement, select the <strong>I have read, understood, and agree with the terms of the license agreement **check box, and then select **Next</strong>.
 5. In **Usage and Connectivity Data**, select either of the options, and then select **Next**.
 6. If **Microsoft Update** page appears, select whether you want to use Microsoft Update and select **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
-7. In **Installation location**, use the default path or type a different installation path for the VMM program files, and then select **Next**.
+7. In **Installation location**, use the default path or enter a different installation path for the VMM program files, and then select **Next**.
 8. In **Database configuration**:
   -   [Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
   -  If you're using a remote SQL instance, specify the SQL server computer name.
-  -  If SQL server runs on the VMM server, type the name of the VMM server or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
+  -  If SQL server runs on the VMM server, enter the name of the VMM server or enter **localhost**. If the SQL Server is in a cluster, enter the cluster name.
   - Don't specify a port value if you're using local SQL server or if your remote SQL server uses the default port (1443).
-  - Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database, select **Yes**.
+  - Select **Existing Database**, and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database, select **Yes**.
 9. In **Configure service account and distributed key management**, specify the account that the VMM service will use.
 
   >[!NOTE]
@@ -103,7 +103,7 @@ Use the following procedures:
 
 10. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
   >[!NOTE]
-  > Choose the settings for the service account and distributed key management, carefully. Based on your selection, encrypted data such as passwords in templates might not be available after the upgrade, and you'll need to enter them manually.
+  > Choose the settings for the service account and distributed key management carefully. Based on your selection, encrypted data such as passwords in templates might not be available after the upgrade, and you'll need to enter them manually.
 
 11. In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
@@ -253,4 +253,4 @@ After the upgrade, reconnect VMM to Operations Manager.
 
 ## Renew certificates for PXE servers
 
-If you have a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate, and avoid certificate errors.
+If you've a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate, and avoid certificate errors.

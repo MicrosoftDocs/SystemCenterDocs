@@ -4,7 +4,7 @@ title: include file
 description: This include file describes the new features in Operations Manager 2019, 2019 UR1, 2019 UR2, 2019 UR3 and 2019 UR4.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 06/04/2021
 ms.prod: system-center
 monikerRange: 'sc-om-2019'

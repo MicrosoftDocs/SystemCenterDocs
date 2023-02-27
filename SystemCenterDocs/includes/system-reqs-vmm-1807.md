@@ -4,7 +4,7 @@ title: include file
 description: include article to detail the system requirements for VMM 1807
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date:  07/24/2018
 ms.topic:  include
 ms.prod:  system-center-threshold
@@ -17,7 +17,7 @@ The following sections describe the scalability information, hardware, software,
 
 ## Capacity limits
 
-The following table provides the scale limits that were tested for System Center  Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology, and others.
+The following table provides the scale limits that were tested for System Center Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology, and others.
 
 The [planning guide](../vmm/plan-install.md) provides the details about how these factors can be adapted to specific requirements.
 
@@ -68,7 +68,7 @@ Window Server 2016 Standard, Datacenter | Y
 
 > [!NOTE]
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
-> - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
+> - For the below supported SQL versions, Standard, Enterprise, and Datacenter (64-bit) editions are supported based on the availability.
 
 **SQL version** | **Supported**
 --- | ---
@@ -83,18 +83,18 @@ SQL Server command line utilities | Install on VMM server if you want to deploy 
 
 **VM** | **Supported**
 --- | ---
-VMM management server | The VMM management server can be installed on a VM.<br/><br/> If you use dynamic memory, set the start RAM of the VM to at least 2048 MB.<br/><br/> Don&#39;t install on a server running Hyper-V.<br/><br/> You can deploy the VMM management server (physical or VM) in a highly available cluster.
+VMM management server | The VMM management server can be installed on a VM.<br/><br/> If you use dynamic memory, set the start RAM of the VM to at least 2048 MB.<br/><br/> Don't install on a server running Hyper-V.<br/><br/> You can deploy the VMM management server (physical or VM) in a highly available cluster.
 VMM console | You can install the VMM console on a VM.
 
 
 
 ## Installation components
 
-These components should be installed on the server, before you install VMM.
+These components should be installed on the server before you install VMM.
 
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
-Active Directory | The VMM management server must be a domain member.<br><br> The computer name should not exceed 15 characters. | A computer with the VMM console installed should be a domain member.
+Active Directory | The VMM management server must be a domain member.<br><br> The computer name shouldn't exceed 15 characters. | A computer with the VMM console installed should be a domain member.
 Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 10 | Not applicable
 PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 .NET | 4.6 | 4.5, 4.5.1, 4.5.2, 4.6
@@ -102,7 +102,7 @@ PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 
 ## Servers in the VMM fabric
 >[!NOTE]
-> Hyper-V server 2016 and 2019 are not supported.
+> Hyper-V server 2016 and 2019 aren't supported.
 
 **Operating system** | **Hyper-V host** | **SOFS** | **Update server** | **PXE server**
 --- | --- | --- | --- | ---
@@ -125,4 +125,4 @@ Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
 **Guest operating system** | **Supported**
 --- | ---
 Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows) and [earlier versions](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277(v=ws.11)).
-VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software)
+VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software).

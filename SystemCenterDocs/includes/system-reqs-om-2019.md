@@ -4,7 +4,7 @@ title: include file
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager 2019.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 12/16/2020
 ms.custom: na
 ms.prod: system-center
@@ -52,7 +52,7 @@ If you're upgrading an installation of System Center 2016/1801/1807 - Operations
 Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2019 - Operations Manager, considering the minimum hardware requirements for processor, memory, and disk space. You should use the information here whether you're deploying one or multiple components, and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, see [Operations Manager Sizing Helper](https://techcommunity.microsoft.com/t5/system-center-blog/operations-manager-2012-sizing-helper-tool/ba-p/345075).
 
 > [!NOTE]
-> While the Operations Manager 2012 Sizing helper hasn't been updated to reflect the 2016 and higher release of Operations Manager, the information provided is still valid to help you estimate for your design requirements.  However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section isn't correct.  The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.
+> While the Operations Manager 2012 Sizing helper hasn't been updated to reflect the 2016 and higher release of Operations Manager, the information provided is still valid to help you estimate for your design requirements. However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section, isn't correct. The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.
 
 | Operations Manager Server Role | x64 Processor (min) | Memory (min) | Disk space (min) |
 |:--- |:---|:--- |:--- |
@@ -135,7 +135,7 @@ The following versions of Windows Server operating system are supported for the 
 - .NET Framework 4 or .NET Framework 4.5 is required; .NET Framework 4.7 and 4.8 are also supported. 
 
 > [!NOTE]
-> Installation of the web console requires that **ISAPI and CGI Restrictions** in IIS are enabled for ASP.NET 4. To enable this, select the web server in **IIS Manager**, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
+> Installation of the web console requires that **ISAPI and CGI Restrictions** in IIS are enabled for ASP.NET 4. To enable this, select the web server in **IIS Manager**, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then select **Allow**.
 
 ### Operations Manager reporting server
 
@@ -175,13 +175,13 @@ Windows 10 and Windows 11 client operating systems are supported for the Operati
 
 ## Virtualization
 
-Microsoft supports running all System Center 2019 – Operations Manager server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document.  There are some restrictions on virtualization functionality that is applicable to Operations Manager.  Specifically, Microsoft doesn't support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager:
-- Virtual computers running any Operations Manager component must not make use of any functionality where all activity on the virtual computer isn't immediately committed to the virtual hard drive.  This includes making use of point-in-time snapshots, and writing changes to a temporary virtual hard drive.
-- Virtual computers running any Operations Manager component can't be paused or placed into a ‘save state’ status and restarted.  They can only be shut down and restarted as would be done with a physical computer.
+Microsoft supports running all System Center 2019 – Operations Manager server features in any physical or virtual environment that meets the minimum requirements that are stated in this document. There are some restrictions on virtualization functionality that is applicable to Operations Manager.  Specifically, Microsoft doesn't support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager:
+- Virtual computers running any Operations Manager component must not make use of any functionality where all activity on the virtual computer isn't immediately committed to the virtual hard drive. This includes making use of point-in-time snapshots, and writing changes to a temporary virtual hard drive.
+- Virtual computers running any Operations Manager component can't be paused or placed into a ‘save state’ status and restarted. They can only be shut down and restarted as would be done with a physical computer.
 
-System Center 2016 - Operations Manager and higher runs on virtual machines in Microsoft Azure as it does on physical computer systems.  We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises.  You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.
+System Center 2016 - Operations Manager and higher runs on virtual machines in Microsoft Azure as it does on physical computer systems. We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises. You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.
 
-- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](/en-in/azure/site-recovery/site-recovery-workload). The virtualized environment referred here, can be either on on-premises or Azure, and it would fail over to this environment on account of any disaster.
+- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](/en-in/azure/site-recovery/site-recovery-workload). The virtualized environment referred here can be either on on-premises or Azure, and it would fail over to this environment on account of any disaster.
 - If the Operations Manager databases are to be hosted on virtualized SQL Server(s), for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.
 
 
@@ -206,7 +206,7 @@ System Center 2019 - Operations Manager supports an in-place upgrade from the fo
 
 ## Active Directory and DNS
 
-Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization.  DNS is leveraged for name resolution of the supporting roles in the management group as well as computers, network devices, and other monitored workloads such as web URLs.
+Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization. DNS is leveraged for name resolution of the supporting roles in the management group as well as computers, network devices, and other monitored workloads such as web URLs.
 
 ### Active Directory Domain Services
 
@@ -214,7 +214,7 @@ System Center Operations Manager relies on AD DS for many services, including de
 
 ### Domain space naming
 
-An Operations Manager management group can't be installed into a root Active Directory domain that has a flat DNS namespace. However, you can install the management group into child domains of the root domain. For example, you have a root domain that has a DNS name of "Woodgrove". Because this root domain has a flat DNS namespace, you can't install an Operations Manager management group into the Woodgrove domain. But, if the Woodgrove domain has a child domain with a DNS name of "National", the fully qualified domain name of the child domain would be national.woodgrove. For more information about configuring Windows for domains with single-label DNS names, see Information about configuring Active Directory domains by using single-label DNS names.
+An Operations Manager management group can't be installed into a root Active Directory domain that has a flat DNS namespace. However, you can install the management group into child domains of the root domain. For example, you've a root domain that has a DNS name of **Woodgrove**. Because this root domain has a flat DNS namespace, you can't install an Operations Manager management group into the Woodgrove domain. But if the Woodgrove domain has a child domain with a DNS name of **National**, the fully qualified domain name of the child domain would be national.woodgrove. For more information about configuring Windows for domains with single-label DNS names, see Information about configuring Active Directory domains by using single-label DNS names.
 
 ### Domain functional level
 

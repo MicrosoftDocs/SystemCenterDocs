@@ -4,7 +4,7 @@ title: include file
 description: include file to provide information about how to upgrade VMM servers and databases to VMM 2019.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 11/29/2021
 ms.topic: include
 ms.prod:  system-center
@@ -16,13 +16,13 @@ ms.technology: virtual-machine-manager
 The following sections provide information about how to upgrade to VMM 2022. These include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
 > [!NOTE]
-> - You can upgrade to VMM 2022 from VMM 2019, upgrade from 2016 is not supported.
-> - During VMM Installation, ensure that SQL Database is not part of any Availability Group.
+> - You can upgrade to VMM 2022 from VMM 2019; upgrade from 2016 isn't supported.
+> - During VMM Installation, ensure that SQL Database isn't part of any Availability Group.
 
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2019.
-- Ensure that the server meets all requirements for VMM 2022 and that prerequisites are in place [Learn more](../vmm/install.md)
+- Ensure that the server meets all the requirements for VMM 2022 and that prerequisites are in place. [Learn more](../vmm/install.md).
 - Ensure that you're running a [supported version of SQL Server](../vmm/system-requirements.md).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
 	- Site Recovery settings can't be upgraded. After the upgrade, you need to redeploy.
@@ -44,7 +44,7 @@ Ensure the following:
 6.  If the current SQL Server database used Always On availability groups:
 
 	- If the VMM database is included in the availability group, remove it in SQL Server Management Studio.
-	- Initiate a failover to the computer that is running SQL Server, on which the VMM database is installed.
+	- Initiate a failover to the computer that is running SQL Server on which the VMM database is installed.
 
 7. If you're running Operations Manager with VMM, disconnect the connection between the VMM and the Operations Manager server.
 
@@ -90,14 +90,14 @@ Use the following procedures:
 1.	In the main setup page, select **Install**.
 2.	In **Select features to install**, select the VMM management server, and then select **Next**. The VMM console will be automatically installed.
 3.	In **Product registration information**, provide the appropriate information and then select **Next**. If you don't enter a product key, VMM will be installed as an evaluation version that expires after 180 days from the installation date.
-4.	In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** check box, and then select **Next**.
+4.	In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** checkbox, and then select **Next**.
 5.	In **Usage and Connectivity Data**, select either of the options, and then select **Next**.
 6.	If the **Microsoft Update** page appears, select whether you want to use Microsoft Update and select **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
-7.	In **Installation location**, use the default path or type a different installation path for the VMM program files and then select **Next**.
+7.	In **Installation location**, use the default path or enter a different installation path for the VMM program files and then select **Next**.
 8.	In **Database configuration**:
 	- [Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
 	- If you're using a remote SQL instance, specify the SQL server computer name.
-	- If SQL server runs on the VMM server, type the name of the VMM server, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
+	- If SQL server runs on the VMM server, enter the name of the VMM server, or enter **localhost**. If the SQL Server is in a cluster, enter the cluster name.
 	- Don't specify a port value if you're using a local SQL server or if your remote SQL server uses the default port (1443).
 	- Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database, select **Yes**.
 9.	In **Configure service account and distributed key management**, specify the account that the VMM service will use.
@@ -250,7 +250,7 @@ When uninstalling VMM server from last node, you may get a message about unsucce
 
 ## Redeploy Azure Site Recovery
 
-If Azure Site Recovery was integrated into your VMM 2019 deployment, you need to redeploy it with VMM 2022, for [replication to Azure](/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](/azure/site-recovery/site-recovery-vmm-to-vmm).
+If Azure Site Recovery was integrated into your VMM 2019 deployment, you need to redeploy it with VMM 2022 for [replication to Azure](/azure/site-recovery/site-recovery-vmm-to-azure) or [replication to a secondary site](/azure/site-recovery/site-recovery-vmm-to-vmm).
 
 
 ## Connect to Operations Manager
@@ -259,4 +259,4 @@ After the upgrade, reconnect VMM to the Operations Manager.
 
 ## Renew certificates for PXE servers
 
-If you have a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate and avoid certificate errors.
+If you've a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate and avoid certificate errors.

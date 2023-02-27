@@ -4,7 +4,7 @@ title: include file
 description: include file to detail the new features in virtual machine manager 1807.
 author:  jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date:  07/24/2018
 ms.topic:  include
 ms.prod:  system-center-2016
@@ -25,9 +25,9 @@ See the following sections for information about the new features supported in V
 
 VMM 1807 allows you to select a cluster shared volumes (CSV) for placing a new virtual hard disc (VHD).
 
-In earlier versions of VMM, a new VHD on a virtual machine (VM), by default, is placed on the same CSV where the earlier VHDs associated with the VM are placed, there was no option to choose a different CSV/ folder. In case of any issues related to the CSV, such as storage full or over commitment, users had to migrate the VHD, only after deploying the VHD.
+In earlier versions of VMM, a new VHD on a virtual machine (VM), by default, is placed on the same CSV where the earlier VHDs associated with the VM are placed, there was no option to choose a different CSV/folder. In case of any issues related to the CSV, such as storage full or overcommitment, users had to migrate the VHD only after deploying the VHD.
 
-With VMM 1807, you can now  choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. [Learn more](/previous-versions/system-center/virtual-machine-manager-2008-r2/cc956004(v=technet.10)).
+With VMM 1807, you can now choose any location to place the new disc. You can manage this disc easily based on the storage availability of CSVs. [Learn more](/previous-versions/system-center/virtual-machine-manager-2008-r2/cc956004(v=technet.10)).
 
 ## Networking
 

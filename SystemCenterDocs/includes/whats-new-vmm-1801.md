@@ -4,7 +4,7 @@ title: include file
 description: include file to detail the new features in virtual machine manager 1801.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date:  04/25/2018
 ms.topic:  include
 ms.prod:  system-center-2016
@@ -20,9 +20,9 @@ See the following sections for detailed information about the new features suppo
 ### Nested virtualization
 VMM  supports Nested Virtualization feature that allows you to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
 
-You can leverage this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use third- party virtualization management products with Microsoft hypervisor.
+You can leverage this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use third-party virtualization management products with Microsoft hypervisor.
 
-You can enable or disable the nested virtualization feature using SCVMM 1801. You can configure the VM as a Host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization considers a nested VM host for placement.  [Learn more](../vmm/vm-nested-virtualization.md).
+You can enable or disable the nested virtualization feature using SCVMM 1801. You can configure the VM as a Host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization considers a nested VM host for placement. [Learn more](../vmm/vm-nested-virtualization.md).
 
 
 ### Migration of VMware VM (EFI firmware-based VM) to Hyper-V VM
@@ -36,21 +36,21 @@ As part of this release, the **Convert Virtual machine** wizard enables the VM m
 1.	BIOS-based VMs are migrated to Hyper-V VM generation 1.
 2.	EFI-based VMs are migrated to Hyper-V VM generation 2.
 
-We have also made improvements in the VMWare VM conversion process that makes the conversion up to 50% faster.
+We've also made improvements in the VMWare VM conversion process that makes the conversion up to 50% faster.
 
 ### Performance improvement in host refresher
 
 The VMM 1801 host refresher has undergone certain updates for performance improvement.
 
-With these updates, in scenarios where the organization is managing large number of hosts and VMs with checkpoints – you would be able to observe significant and noticeable improvements in the performance of the job.
+With these updates, in scenarios where the organization is managing a large number of hosts and VMs with checkpoints – you would be able to observe significant and noticeable improvements in the performance of the job.
 
-In our lab with VMM instances managing 20 hosts - each host managing 45-100 VMs, we have measured up to 10X performance improvement.
+In our lab with VMM instances managing 20 hosts - each host managing 45-100 VMs, we've measured up to 10X performance improvement.
 
 ### Enhanced console session in VMM
 
-Console connect in VMM provides an alternative way to remote desktop to connect to the VM. This is most useful when the VM does not have any network connectivity or want to change network configuration that could break the network connectivity. Currently, the current console connect in VMM supports only basic session where clipboard text can only be pasted through Type Clipboard Text menu option.
+Console connect in VMM provides an alternative way to remote desktop to connect to the VM. This is most useful when the VM doesn't have any network connectivity or want to change network configuration that could break the network connectivity. Currently, the current console connect in VMM supports only basic session where clipboard text can only be pasted through Type Clipboard Text menu option.
 
-VMM 1801 supports enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, thereby copy/paste commands for text and files are possible from and to the VM. [Learn more](../vmm/enhanced-console-session.md).
+VMM 1801 supports enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)**, and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, thereby copy/paste commands for text and files are possible from and to the VM. [Learn more](../vmm/enhanced-console-session.md).
 
 ## Storage
 
@@ -70,7 +70,7 @@ VMM 1801 supports the following improvements in SQoS:
 
 With the advent of the software defined network (SDN), in Windows Server 2016 and System Center 2016, the configuration of guest clusters has undergone some change.
 
-With the introduction of the SDN, VMs which are connected to the virtual network using SDN are only permitted to use the IP address that the network controller assigns for communication. The SDN design is inspired by Azure networking design, supports the floating IP functionality through the Software Load Balancer (SLB), like Azure networking.
+With the introduction of the SDN, VMs that are connected to the virtual network using SDN are only permitted to use the IP address that the network controller assigns for communication. The SDN design is inspired by Azure networking design, supports the floating IP functionality through the Software Load Balancer (SLB), like Azure networking.
 
 VMM 1801 release also supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN scenarios. VMM 1801 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node. At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
 . [Learn more](../vmm/sdn-guest-clusters.md).
@@ -96,10 +96,9 @@ With Windows Server 1709, Hyper-V introduces support for provisioning Linux shie
 ### Configuration of fallback HGS
 Being at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, the host guardian service (HGS) should operate even in situations of disaster. Windows Server 1709 added support for fallback HGS.
 
-Using VMM 1801, a guarded host can be configured with a primary and a secondary pair of HGS URLS (an attestation and key protection URI). This capability enables scenarios such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs etc.
+Using VMM 1801, a guarded host can be configured with a primary and a secondary pair of HGS URLS (an attestation and key protection URI). This capability enables scenarios such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs, etc.
 
-The primary HGS URLs will always be used in favor of the secondary.  If the primary HGS fails to respond after the appropriate timeout and retry count, the operation will be reattempted against the secondary.  Subsequent operations will always favor the primary; the secondary will only be used when the primary fails.
-[Learn more](../vmm/guarded-fallback-hgs.md).
+The primary HGS URLs will always be used in favor of the secondary. If the primary HGS fails to respond after the appropriate timeout and retry count, the operation will be reattempted against the secondary. Subsequent operations will always favor the primary; the secondary will only be used when the primary fails. [Learn more](../vmm/guarded-fallback-hgs.md).
 
 ## Azure Integration
 

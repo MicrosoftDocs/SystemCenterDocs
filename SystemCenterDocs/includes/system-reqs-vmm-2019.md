@@ -4,7 +4,7 @@ title: include file
 description: include article to detail the system requirements for VMM 2019
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date:  03/30/2021
 ms.topic:  include
 ms.prod:  system-center
@@ -38,7 +38,7 @@ Library Objects (templates, profiles)| 100
   **Hardware** | **VMM server** | **VMM database** | **VMM  library** | **VMM console**
   --- | --- | --- | --- | ---
   **Processor (minimum)** | 8 core Pentium 4, 2 GHz (x64) | 8 core Pentium 4, 2.8 GHz | 4 core Pentium 4, 2.8 GHz | 2 core Pentium 4, 1 GHz CPU
-  **Processor (recommended)** | 16-core, 2.66 GHz CPU | 16 core 2.6 GHz CPU | 4 core 2.8 GHz CPU | 2 core 2 GHz CPU
+  **Processor (recommended)** | 16 core, 2.66 GHz CPU | 16 core 2.6 GHz CPU | 4 core 2.8 GHz CPU | 2 core 2 GHz CPU
   **RAM (minimum)** | 4 GB | 8 GB | 2 GB | 4 GB
   **RAM (recommended)** | 16 GB | 16 GB | 4 GB | 4 GB
   **Hard drive (minimum)** | 4 GB | 50 GB | Based on size/amount of stored files | 10 GB
@@ -58,7 +58,7 @@ Windows Server 2019 Server Core| Y | Y | If supported by SQL Server version
 
 
 > [!NOTE]
-> Ensure that VMM server operating system  is same as the managed host operating system in case of deployment of  Hyper Converged Infrastructure.
+> Ensure that VMM server operating system  is the same as the managed host operating system in case of deployment of Hyper Converged Infrastructure.
 
 ## VMM console operating system
 
@@ -74,7 +74,7 @@ Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
 
 > [!NOTE]
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
-> - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
+> - For the below supported SQL versions, Standard, Enterprise, and Datacenter (64-bit) editions are supported based on the availability.
 
 **SQL version** | **Supported**
 --- | ---
@@ -94,11 +94,11 @@ VMM console | You can install the VMM console on a VM.
 
 ## Installation components
 
-These components should be installed on the server, before you install VMM.
+These components should be installed on the server before you install VMM.
 
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
-Active Directory | The VMM management server must be a domain member.<br><br> The computer name should not exceed 15 characters. | A computer with the VMM console installed should be a domain member.
+Active Directory | The VMM management server must be a domain member.<br><br> The computer name shouldn't exceed 15 characters. | A computer with the VMM console installed should be a domain member.
 Windows ADK | [Download](/windows-hardware/get-started/adk-install) Windows ADK for Windows 10 and download windows PE Add on for ADK| Not applicable
 PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 .NET (minimum) | 4.6 |  4.5
@@ -131,4 +131,4 @@ Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 **Guest operating system** | **Supported**
 --- | ---
 Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2019](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows) and [earlier versions](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277(v=ws.11)).
-VMware VM | Any VM running on supported VMware servers. [Learn more](http://www.VMware.com/resources/compatibility/search.php?deviceCategory=software)
+VMware VM | Any VM running on supported VMware servers. [Learn more](http://www.VMware.com/resources/compatibility/search.php?deviceCategory=software).

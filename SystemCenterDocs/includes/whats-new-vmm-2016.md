@@ -4,7 +4,7 @@ title: include file
 description: include file to describe the new features in virtual machine manager 2016
 author: jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date:  04/24/2020
 ms.topic:  include
 ms.prod:  system-center-2016
@@ -24,13 +24,13 @@ You can provision and manage Nano Server-based hosts and virtual machines in the
 
 ### Rolling upgrade of a Windows Server 2012 R2 host clusters
 
-You can now upgrade Hyper-V and scale-out file server (SOFS) clusters in the VMM fabric from Windows Server 2012 R2 to Windows Server 2016, with no downtime for the host workloads. VMM orchestrates the entire workflow. It drains the node, removes it from the cluster, reinstalls the operating system, and adds it back into the cluster. Learn more about performing rolling upgrades for [Hyper-V clusters](../vmm/hyper-v-rolling-upgrade.md), and [SOFS clusters](../vmm/sofs-rolling-upgrade.md).
+You can now upgrade Hyper-V and scale-out file server (SOFS) clusters in the VMM fabric from Windows Server 2012 R2 to Windows Server 2016, with no downtime for the host workloads. VMM orchestrates the entire workflow. It drains the node, removes it from the cluster, reinstalls the operating system, and adds it back into the cluster. Learn more about performing rolling upgrades for [Hyper-V clusters](../vmm/hyper-v-rolling-upgrade.md) and [SOFS clusters](../vmm/sofs-rolling-upgrade.md).
 
 ### Creating Hyper-V & SOFS clusters
 
 There's a streamlined workflow for creating Hyper-V and SOFS clusters:
 
-* **Bare metal deployment of Hyper-V host clusters**: Deploying a Hyper-V host cluster from bare metal machines is now a single step. [Learn more](../vmm/hyper-v-bare-metal.md)
+* **Bare metal deployment of Hyper-V host clusters**: Deploying a Hyper-V host cluster from bare-metal machines is now a single step. [Learn more](../vmm/hyper-v-bare-metal.md)
 
 * **Adding a bare-metal node to an existing Hyper-V host cluster or an SOFS Cluster**: You can now directly add a bare-metal computer to an existing [Hyper-V](../vmm/hyper-v-bare-metal.md) or [SOFS](../vmm/sofs-bare-metal.md) cluster.
 
@@ -40,11 +40,11 @@ You can now increase/decrease static memory and add/remove virtual network adapt
 
 ### Production checkpoints
 
-You can now create production checkpoints for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent (compared to standard checkpoints based on saved state technology that aren't. [Learn more](../vmm/vm-settings.md).
+You can now create production checkpoints for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent (compared to standard checkpoints based on saved state technology that aren't). [Learn more](../vmm/vm-settings.md).
 
 ### Server App-V
 
-The Server App-V application in service templates is no longer available in VMM 2016. You can't create new templates or deploy new services with the Server App-V app. If you upgrade from VMM 2012 R2 and have a service with the Server App-V application, the existing deployment will continue to work. However, after the upgrade you can't scale out the tier with Server App-V application. You can scale out other tiers.
+The Server App-V application in service templates is no longer available in VMM 2016. You can't create new templates or deploy new services with the Server App-V app. If you upgrade from VMM 2012 R2 and have a service with the Server App-V application, the existing deployment will continue to work. However, after the upgrade, you can't scale out the tier with Server App-V application. You can scale out other tiers.
 
 
 >[!NOTE]
@@ -61,12 +61,12 @@ VMM supports an enhanced console session that enables **Cut (Ctrl + X)**, **Copy
 
 ### Deploy and manage storage clusters with Storage Spaces Direct (S2D)
 
-[Storage Spaces Direct in Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview) enables you to build highly available storage systems on Windows Server. You can use VMM to create a Scale-Out File Server running Windows Server 2016, and configure it with Storage Spaces Direct. After it's configure you can create storage pools and file shares on it. [Learn more](../vmm/s2d.md).
+[Storage Spaces Direct in Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview) enables you to build highly available storage systems on Windows Server. You can use VMM to create a Scale-Out File Server running Windows Server 2016, and configure it with Storage Spaces Direct. After it's configured, you can create storage pools and file shares on it. [Learn more](../vmm/s2d.md).
 
 
 ### Storage Replica
 
-In VMM 2016 you can use Windows Storage Replica to protect data in a volume by synchronously replicating it between primary and secondary (recovery) volumes. You can deploy the primary and secondary volumes to a single cluster, to two different clusters, or to two standalone servers. You use PowerShell to set up Storage Replica and run failover. [Learn more](../vmm/storage-replica.md)
+In VMM 2016 you can use Windows Storage Replica to protect data in a volume by synchronously replicating it between primary and secondary (recovery) volumes. You can deploy the primary and secondary volumes to a single cluster to two different clusters or to two standalone servers. You use PowerShell to set up Storage Replica and run failover. [Learn more](../vmm/storage-replica.md)
 
 ### Storage Quality of Service (QoS)
 
@@ -77,10 +77,10 @@ You can configure QoS for storage to ensure that disks, VMs, apps, and tenants d
 
 ### Software Defined Networking (SDN)
 
-In VMM 2016 you can deploy the entire SDN stack using VMM service templates.
+In VMM 2016, you can deploy the entire SDN stack using VMM service templates.
 
-* You can deploy and manage a multi-node Network Controller in a subnet. After you deploy and onboard the Network Controller, you can specify that fabric components should be managed with SDN, to provide connectivity to tenant VMs and to define policies.
-* You can deploy and configure a software load balancer, to distribute traffic within networks managed by Network Controller. The software load balancer can be used for inbound and outbound NAT.
+* You can deploy and manage a multi-node Network Controller in a subnet. After you deploy and onboard the Network Controller, you can specify that fabric components should be managed with SDN to provide connectivity to tenant VMs and to define policies.
+* You can deploy and configure a software load balancer to distribute traffic within networks managed by Network Controller. The software load balancer can be used for inbound and outbound NAT.
 * You can deploy and configure a Windows Server Gateway pool with M+N redundancy. After you deploy the gateway, you connect a tenant network to a hosting provider network, or to your own remote data center network using S2S GRE, S2S IPSec, or L3.
 
 ### Network traffic isolation and filtering
@@ -89,7 +89,7 @@ You can limit and segregate network traffic by specifying port ACLs on VM networ
 
 ### Virtual network adapter naming
 
-When you deploy a virtual machine, you might want to run a post-deployment script on the guest operating system to configure virtual network adapters.  Previously, this was difficult because there wasn't an easy way to distinguish different virtual network adapters during deployment. Now, for generation 2 virtual machines deployed on Hyper-V hosts running Windows Server 2016, you can name the virtual network adapter in a virtual machine template. This is similar to using consistent device naming (CDN) for a physical network adapter.
+When you deploy a virtual machine, you might want to run a post-deployment script on the guest operating system to configure virtual network adapters. Previously, this was difficult because there wasn't an easy way to distinguish different virtual network adapters during deployment. Now, for generation 2 virtual machines deployed on Hyper-V hosts running Windows Server 2016, you can name the virtual network adapter in a virtual machine template. This is similar to using consistent device naming (CDN) for a physical network adapter.
 
 ### Self-service SDN management using Windows Azure Pack (WAP)
 

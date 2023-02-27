@@ -4,7 +4,7 @@ title: include file
 description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1, UR2, UR3 and UR4.
 author:  jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date:  06/07/2022
 ms.topic:  include
 ms.prod:  system-center
@@ -276,12 +276,12 @@ VMM 2019 UR1 includes the following cmdlet updates for the respective features:
 
    - New cmdlet  **New-SCDCBSettings** - configures DCB settings in the S2D cluster managed by VMM.
 
-   - New parameter **[-DCBSettings]** - specifies the DCB settings configured on the cluster, and is included in **Install-SCVMHostCluster**, **Set-SCVMHostCluster** and **Set-SCStorageFileServer** cmdlets.
+   - New parameter **[-DCBSettings]** - specifies the DCB settings configured on the cluster, and is included in **Install-SCVMHostCluster**, **Set-SCVMHostCluster**, and **Set-SCStorageFileServer** cmdlets.
 
 
 2. Additional options to enable nested virtualization
 
-   - New parameter **[-EnableNestedVirtualization]** - enables the nested virtualization, and is included in **Set-SCComputerTierTemplate** cmdlet.
+   - New parameter **[-EnableNestedVirtualization]** - enables the nested virtualization and is included in **Set-SCComputerTierTemplate** cmdlet.
 
 
 For more information about these updates, see [VMM PowerShell articles](/powershell/module/virtualmachinemanager/?preserve-view=true&view=systemcenter-ps-2019).
@@ -291,7 +291,7 @@ For more information about these updates, see [VMM PowerShell articles](/powersh
 
 The following sections introduce the new features and feature updates supported in VMM 2019 Update Rollup 2 (UR2).
 
-For problems fixed in VMM 2019 UR2, and installation instructions for UR2, [see the KB article](https://support.microsoft.com/help/4569533).
+For problems fixed in VMM 2019 UR2 and installation instructions for UR2, [see the KB article](https://support.microsoft.com/help/4569533).
 
 ### Compute
 
@@ -336,12 +336,12 @@ VMM 2019 UR2 includes the following cmdlet updates for the respective features:
 
 2. Set affinity between virtual network adapters and physical adapters
 
-   - New parameter **[-PhysicalNetworkAdapterName]** - specifies the name of the physical network adapter, and is included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
+   - New parameter **[-PhysicalNetworkAdapterName]** - specifies the name of the physical network adapter and is included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
 
 
 3. Support for IPv6
 
-    - New parameter **[-IPv6Subnet]** - specifies an IPv6 subnet, and is included in **Add-SCFabricRoleResource** cmdlet.
+    - New parameter **[-IPv6Subnet]** - specifies an IPv6 subnet and is included in **Add-SCFabricRoleResource** cmdlet.
 
     - Updates to parameters in existing cmdlets:
       - IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
