@@ -4,7 +4,7 @@ title: include file
 description: include file to describe the new features in Operations Manager 1807.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 12/21/2018
 ms.custom: na
 ms.prod: system-center
@@ -21,7 +21,7 @@ The content in the following sections describes new features in System Center 18
 > To view the bugs fixed and the installation instructions for Operations Manager 1807, see [KB article 4133779](https://support.microsoft.com/help/4133779).
 
 ## Configure APM component during agent install or repair
-In System Center Operations Manager version 1801 agent, the Application Performance Monitoring (APM) feature could cause a crash with IIS Application pools and could crash the SharePoint Central Administration v4 application pool running .NET Framework 2.0, preventing it from starting. You can now disable the APM component when you deploy the Operations Manager agent from Discovery Wizard in the console, when performing a repair of the agent from the Operations console, and similarly controlling behavior when using the PowerShell cmdlets **Install-SCOMAgent** and **Repair-SCOMAgent**.  
+In System Center Operations Manager version 1801 agent, the Application Performance Monitoring (APM) feature could cause a crash with IIS Application pools and could crash the SharePoint Central Administration v4 application pool running .NET Framework 2.0, preventing it from starting. You can now disable the APM component when you deploy the Operations Manager agent from Discovery Wizard in the console, when performing a repair of the agent from the Operations console and similarly controlling behavior when using the PowerShell cmdlets **Install-SCOMAgent** and **Repair-SCOMAgent**.  
 
 
 ## Linux log rotation
@@ -31,9 +31,9 @@ To prevent the SCX logs from growing and consuming all the available free space 
 ## HTML5 Web console enhancements
 The following improvements are provided in the Web console for version 1807:
 
-* Added the PowerShell widget
-* Includes an effective configuration widget in the Monitoring objects detail page showing the running rules and monitors and override settings applied
-* Network node/network interface drill-down is now available as a tab when you select a network device and drill down to the Monitoring objects detailed page.  It delivers the same experience as what is available in the Operations console.
+* Added the PowerShell widget.
+* Includes an effective configuration widget in the Monitoring objects detail page showing the running rules and monitors and override settings applied.
+* Network node/network interface drill-down is now available as a tab when you select a network device and drill down to the Monitoring objects detailed page. It delivers the same experience as what is available in the Operations console.
 * Alert widget enhancement includes an improved layout and presentation of alert details. You can modify the resolution state and drill down to the Monitoring object details page for the alert source.
 * The monitoring tree can be hidden when a dashboard is integrated with SharePoint.
 * The size of the health icon can be changed in the Topology widget.
