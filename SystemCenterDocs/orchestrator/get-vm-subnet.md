@@ -4,7 +4,7 @@ description: The Get VM Subnet activity is used in a runbook to return all virtu
 ms.date: 01/22/2018
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: reference
+ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck

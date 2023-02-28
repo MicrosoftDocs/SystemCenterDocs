@@ -6,7 +6,7 @@ manager: mkluck
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: reference
+ms.topic: article
 ms.author: jsuri
 ---
 
