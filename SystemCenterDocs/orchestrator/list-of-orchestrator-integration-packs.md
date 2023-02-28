@@ -8,7 +8,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
-ms.topic: reference
+ms.topic: article
 ms.assetid:
 caps.latest.revision: 12
 author: jyothisuri

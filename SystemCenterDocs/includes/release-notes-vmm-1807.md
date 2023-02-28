@@ -4,7 +4,7 @@ title: include file
 description: include file to detail the release notes for System Center 1807 Virtual Machine Manager
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date:  07/24/2018
 ms.topic:  include
 ms.prod:  system-center-2016
@@ -36,17 +36,17 @@ The following sections summarize the release notes for VMM 1807 and include the 
 
 ## VMM integrated with Azure Site Recovery will not support DRA versions earlier than 5.1.3100
 
-**Description**: In case you are using a VMM integrated with Azure Site Recovery, VMM supports Data Recovery Agent (DRA) version [5.1.3100](https://aka.ms/downloaddra) or higher. Earlier versions are not supported.
+**Description**: In case you're using a VMM integrated with Azure Site Recovery, VMM supports Data Recovery Agent (DRA) version [5.1.3100](https://aka.ms/downloaddra) or higher. Earlier versions aren't supported.
 
 **Workaround**: Use the following steps and upgrade the DRA version:
 
 1. Uninstall existing version of DRA
 2. Install VMM 1807 patch)
-3. [Install 5.1.3100](https://aka.ms/downloaddra) version or higher.   
+3. [Install 5.1.3100](https://aka.ms/downloaddra) version or higher.
 
 ## Host/Cluster refresh might take longer if there are large number of logical network definitions
 
-**Description**: When there are large number of logical network definitions in the environment, cluster/host refresh might take longer than expected.
+**Description**: When there are a large number of logical network definitions in the environment, cluster/host refresh might take longer than expected.
 
 ## Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object
 

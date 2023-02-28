@@ -4,7 +4,7 @@ description: This article describes how the Modify VM Disk activity is used in a
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: reference
+ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
