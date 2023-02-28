@@ -4,7 +4,7 @@ description: Learn about the integration pack for Operations Manager, an add-in 
 ms.date: 04/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: reference
+ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
