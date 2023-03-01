@@ -1,6 +1,6 @@
 ---
 description: Learn about the new features when you upgrade to DPM 2016. This article also provides an overview of how to upgrade your DPM installation.
-manager: evansma
+manager: mkluck
 ms.topic:  article
 author:  jyothisuri
 ms.author: jsuri
@@ -124,7 +124,7 @@ To add a volume in the administrator console:
 
 1. In the DPM Administrator console, select the **Management** feature > **Disk Storage** > **Add**.
 
-2. In the **Add Disk Storage** page, select an available volume > select **Add** > type a friendly name for the volume > select **OK**.
+2. In the **Add Disk Storage** page, select an available volume > select **Add** > enter a friendly name for the volume > select **OK**.
 
       ![Screenshot showing how to Add volume.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-add-volume.png)
 
@@ -136,7 +136,7 @@ For more information on adding disks, see [Screenshot showing how to add disks t
 
 DPM 2016 allows the user to specify which kinds of workloads should be assigned to which volumes. For example, expensive volumes that support high IOPS can be configured to store only the workloads that require frequent, high-volume backups like SQL with transaction Logs.
 
-To update the properties of a volume in the storage pool on a DPM server, use the PowerShell cmdlet, *Update-DPMDiskStorage*.
+To update the properties of a volume in the storage pool on a DPM server, use the PowerShell cmdlet *Update-DPMDiskStorage*.
 
 **Update-DPMDiskStorage**
 
@@ -173,12 +173,12 @@ To create a Protection Group:
 
    ![Screenshot of select group members for protection group page.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen3.png)
 
-6. On the **Select Data Protection Method** screen, type a name for the **Protection group**, select the protection method(s) and select **Next**.
+6. On the **Select Data Protection Method** screen, enter a name for the **Protection group**, select the protection method(s) and select **Next**.
     If you want short-term protection, you must use Disk backup.
 
    ![Screenshot showing select data protection method.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen4.png)
 
-7. On the **Specify Short-Term Goals** screen specify the details for **Retention Range** and **Synchronization Frequency**, and select **Next**. If desired, select **Modify** to change the schedule when recovery points are taken.
+7. On the **Specify Short-Term Goals** screen, specify the details for **Retention Range** and **Synchronization Frequency**, and select **Next**. If desired, select **Modify** to change the schedule when recovery points are taken.
 
    ![Screeenshot showing specify short-term goals page.](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen5.png)
 

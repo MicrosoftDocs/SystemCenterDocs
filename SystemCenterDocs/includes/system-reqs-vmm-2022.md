@@ -53,7 +53,7 @@ Windows Server 2022 Desktop experience| Y | Y | If supported by SQL Server versi
 Windows Server 2022 Server Core| Y | Y | If supported by SQL Server version
 
 >[!NOTE]
-> Ensure that VMM server operating system is same as the managed host operating system in case of deployment of Hyper Converged Infrastructure.
+> Ensure that VMM server operating system is the same as the managed host operating system in case of deployment of Hyper Converged Infrastructure.
 
 ## VMM console operating system
 
@@ -71,7 +71,7 @@ Windows Server 2022 Standard, Datacenter | Y
 
 >[!NOTE]
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
-> - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
+> - For the below supported SQL versions, Standard, Enterprise, and Datacenter (64-bit) editions are supported based on the availability.
 
 **SQL version** | **Supported**
 --- | ---
@@ -91,7 +91,7 @@ VMM console | You can install the VMM console on a VM.
 
 ## Installation components
 
-These components should be installed on the server, before you install VMM.
+These components should be installed on the server before you install VMM.
 
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
@@ -128,4 +128,4 @@ Supported | [Features and limitations](../vmm/manage-VMware-hosts.md)
 **Guest operating system** | **Supported**
 --- | ---
 Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2022](/windows-server/virtualization/hyper-v/Supported-Windows-guest-operating-systems-for-Hyper-V-on-Windows) and [earlier versions](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/mt126277(v=ws.11)).
-VMware VM | Any VM running on supported VMware servers. [Learn more](http://www.VMware.com/resources/compatibility/search.php?deviceCategory=software)
+VMware VM | Any VM running on supported VMware servers. [Learn more](http://www.VMware.com/resources/compatibility/search.php?deviceCategory=software).

@@ -4,7 +4,7 @@ title: include file
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 09/21/2021
 ms.custom: na
 ms.prod: system-center
@@ -52,14 +52,14 @@ If you're upgrading an installation of System Center 2012 R2 Operations Manager 
 Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 - Operations Manager and higher, considering the minimum hardware requirements for processor, RAM, and disk space. You should use the information here whether you're deploying one or multiple components. For more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, refer to the [Operations Manager 2012 Sizing Helper](https://www.microsoft.com/download/details.aspx?id=29270).
 
 > [!NOTE]
-> While the Operations Manager 2012 Sizing helper hasn't been updated to reflect the 2016 and higher release of Operations Manager, the information provided is still valid to help you estimate for your design requirements. However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section isn't correct. The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.  
+> While the Operations Manager 2012 Sizing helper hasn't been updated to reflect the 2016 and higher release of Operations Manager, the information provided is still valid to help you estimate for your design requirements. However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section, isn't correct. The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.  
 
 | Operations Manager Server Role | x64 Processor (min) | Memory (min) | Disk space (min) |
 |:--- |:---|:--- |:--- |
 | Management Server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 | Gateway Server managing up to 2000 agents | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 | Gateway Server in resource pool managing up to 500 network devices | 8-Core 2.66 GHz CPU | 32 GB | 10 GB |
-| Gateway Server in resource pool managing up to 100 UNIX/Linux computers | 4-Core 2.66 GHz CPU | 4 GB RAM | 10 GB |
+| Gateway Server in resource pool managing up to 100 UNIX/Linux computers | 4-Core 2.66 GHz CPU | 4-GB RAM | 10 GB |
 | Web Console server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 | SQL Server Reporting Services server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 
@@ -168,7 +168,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 are required.
 
     >[!NOTE]
-    >The Web console doesn't support running IE in Compatibility View. Ensure to turn off the compatibility view, otherwise you will receive a blank page when you attempt to access the console.
+    >The Web console doesn't support running IE in Compatibility View. Ensure to turn off the compatibility view, otherwise you'll receive a blank page when you attempt to access the console.
 
 - Client web browser for HTML5 web console:  
 
@@ -223,7 +223,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 ## Virtualization
 
-Microsoft supports running all System Center 2016 – Operations Manager and higher server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document.  There are some restrictions on virtualization functionality that is applicable to Operations Manager.  Specifically, Microsoft doesn't support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager:  
+Microsoft supports running all System Center 2016 – Operations Manager and higher server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document.  There are some restrictions on virtualization functionality that is applicable to Operations Manager. Specifically, Microsoft doesn't support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager:  
 - Virtual computers running any Operations Manager component must not make use of any functionality where all activity on the virtual computer isn't immediately committed to the virtual hard drive. This includes making use of point-in-time snapshots, and writing changes to a temporary virtual hard drive.  
 - Virtual computers running any Operations Manager component can't be paused or placed into a ‘save state’ status and restarted. They can only be shut down and restarted just as would be done with a physical computer.  
 

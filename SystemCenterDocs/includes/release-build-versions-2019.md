@@ -3,7 +3,7 @@ title: System Center 2019 - Operations Manager Release Build Versions
 description: Include file that shows the list of release builds for System Center 2019 - Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 09/09/2022
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
@@ -14,7 +14,7 @@ ms.topic: include
 ## Operations Manager 2019 build versions
 
 >[!NOTE]
->All System Center Operations Manager update rollups are cumulative. This means you do not need to apply them in order, you can always apply the latest update. If you have deployed System Center 2019 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
+>All System Center Operations Manager update rollups are cumulative. This means you don't need to apply them in order; you can always apply the latest update. If you've deployed System Center 2019 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
 >
 
 The following tables list the release history for Operations Manager 2019.

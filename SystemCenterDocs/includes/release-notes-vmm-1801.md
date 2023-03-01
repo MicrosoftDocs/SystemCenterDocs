@@ -4,7 +4,7 @@ title: include file
 description: include file to detail the release notes for System Center Virtual Machine Manager 1801
 author:  jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date:  04/30/2018
 ms.topic:  include
 ms.prod:  system-center-2016
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 ## VMM 1801 release notes
 
-The following sections summarize the release notes for VMM 1801 and includes the known issues and workarounds.
+The following sections summarize the release notes for VMM 1801 and include the known issues and workarounds.
 
 ## Latest accessibility fixes in Console are not available
 
@@ -40,7 +40,7 @@ The following sections summarize the release notes for VMM 1801 and includes the
 
 *Violation of PRIMARY KEY constraint 'PK_tbl_NetMan_PortClassification'. Cannot insert duplicate key in object 'dbo.tbl_NetMan_PortClassification'*.
 
-**Workaround**: Change the port classification name back to original name, and then trigger the upgrade. After the upgrade, you can change the default name to a different one.
+**Workaround**: Change the port classification name back to the original name, and then trigger the upgrade. After the upgrade, you can change the default name to a different one.
 
 ## Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object
 
