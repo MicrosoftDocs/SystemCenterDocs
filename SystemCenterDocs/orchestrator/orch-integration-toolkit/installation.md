@@ -6,7 +6,7 @@ manager: evansma
 ms.date: 04/25/2022
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: reference
+ms.topic: article
 ms.author: jsuri
 ms.custom: intro-installation
 ---

@@ -4,7 +4,7 @@ description: This article describes all activities in the System Center integrat
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: reference
+ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck

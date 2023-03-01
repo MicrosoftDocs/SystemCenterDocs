@@ -4,7 +4,7 @@ description: This article provides information about deploying the IBM Tivoli Ne
 ms.date: 10/27/2022
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: reference
+ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: evansma

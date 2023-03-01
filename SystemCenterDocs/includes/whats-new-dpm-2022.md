@@ -1,10 +1,10 @@
 ---
 description: This article provides the new features and feature updates supported by System Center DPM 2022.
-manager:
+manager: mkluck
 ms.topic: include
 author: jyothisuri
 ms.prod: system-center
-ms.date: 11/10/2022
+ms.date: 02/27/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid:
@@ -22,10 +22,10 @@ DPM 2022 supports the installation of DPM 2022 on Windows Server 2022 and the pr
 
 ### Removed File Catalog dependency for online backup of file/folder workloads
 
-DPM 2022 removes the dependency on File Catalog, which was needed to restore individual files and folders from the Online recovery points. DPM now uses the iSCSI mount method to provide individual file restoration. This also improves backups time as upload of file catalog metadata is not needed anymore
+DPM 2022 removes the dependency on File Catalog, which was needed to restore individual files and folders from the Online recovery points. DPM now uses the iSCSI mount method to provide individual file restoration. This also improves backup time as upload of file catalog metadata isn't needed anymore
 
 > [!NOTE]
-> The MARS agent version you are using must be 2.0.9236.0 or later.
+> The MARS agent version you're using must be 2.0.9236.0 or later.
 
 ### Private endpoint support
 With DPM 2022, you can use a private endpoint to take online backup to the Azure Backup Recovery Services vault. [Learn more](/azure/backup/private-endpoints-overview).
@@ -48,14 +48,14 @@ For issues fixed and the installation instructions for UR1, see [KB article](htt
 
 DPM 2022 UR1 supports SQL Server 2022 both as a protected workload and DPM database. [Learn more](/system-center/dpm/prepare-environment-for-dpm#sql-server-database).
 
-### SQL Self Service Recovery Tool 
+### SQL Self Service Recovery Tool
 
-DPM 2022 UR1 supports DPM SQL Self Service Recovery tool which is not available in DPM 2022 RTM. [Learn more](/system-center/dpm/back-up-sql-server?view=sc-dpm-2022#allow-sql-server-admins-to-restore-data).
+DPM 2022 UR1 supports DPM SQL Self Service Recovery tool, which isn't available in DPM 2022 RTM. [Learn more](/system-center/dpm/back-up-sql-server?view=sc-dpm-2022#allow-sql-server-admins-to-restore-data).
 
-### Support for O365 SMTP
+### Support for Microsoft 365 SMTP
 
-DPM 2022 UR1 supports sending alert and report emails using O365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2022#configure-email-for-dpm).
+DPM 2022 UR1 supports sending alert and report emails using Microsoft 365 SMTP directly without a relay agent. [Learn more](/system-center/dpm/monitor-dpm?view=sc-dpm-2022#configure-email-for-dpm).
 
-### End of Support for vSphere 6.0 
+### End of Support for vSphere 6.0
 
-vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html), DPM 2022 UR1 and later don't support backups for VMWare VMs on vSphere 6.0. Ensure to upgrade to newer vSphere versions.
+vSphere 6.0 has reached [end of general support](https://blogs.vmware.com/vsphere/2019/10/vsphere-6-0-reaches-end-of-general-support-eogs-in-march-2020.html). DPM 2022 UR1 and later don't support backups for VMware VMs on vSphere 6.0. Ensure to upgrade to newer vSphere versions.

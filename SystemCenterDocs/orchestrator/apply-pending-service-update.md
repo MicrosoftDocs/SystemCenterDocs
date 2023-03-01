@@ -4,7 +4,7 @@ description: The Apply Pending Service Update activity is used in a runbook to a
 ms.date: 01/22/2018
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: reference
+ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck

@@ -4,7 +4,7 @@ title: include file
 description: Include file to summarize the supported storage arrays for VMM 2019.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 12/22/2020
 ms.topic: include
 ms.prod: system-center
