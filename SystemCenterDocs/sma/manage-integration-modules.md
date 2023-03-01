@@ -52,7 +52,7 @@ If the module should contain a [Connection](~/sma/manage-global-assets.md) type,
 
 ```
 
-The steps for creating and working with Automation runbooks are different depending on whether you are using a management portal or Windows PowerShell. The basic steps for various common operations using both the methods are provided in the following sections.
+The steps for creating and working with Automation runbooks are different depending on whether you're using a management portal or Windows PowerShell. The basic steps for various common operations using both the methods are provided in the following sections.
 
 ## Enumerate installed modules
 

@@ -3,7 +3,7 @@ ms.assetid: e305673d-88ab-4aa1-9287-31b617a9f1fc
 title: Installing Operations Manager From the Command Prompt
 description: This article describes the different command-line arguments you would use when installing an Operations Manager component from the Command Prompt.
 author: jyothisuri
-manager: evansma
+manager: mkluck
 ms.author: jsuri
 ms.date: 04/22/2022
 ms.custom: UpdateFrequency.5, intro-installation
@@ -33,7 +33,7 @@ The following table lists the command-line parameters for installing features of
 |-------------|---------|
 |/ActionAccountUser:|The domain and user name of the Management server action account.<br><br>Used if you don't want to specify the Local System|
 |/ActionAccountPassword:|The password for the Management server action account.<br><br>Used if you don't want to specify the Local System.|
-|/AcceptEndUserLicenseAgreement:|0: Don't accept the End User License Agreement (EULA).<br><br>1: Accept the End User License Agreement (EULA).<br><br>When performing a clean installation of System Center Operations Manager, this switch is needed for all management servers. It is also needed for other scripted installations.|
+|/AcceptEndUserLicenseAgreement:|0: Don't accept the End User License Agreement (EULA).<br><br>1: Accept the End User License Agreement (EULA).<br><br>When performing a clean installation of System Center Operations Manager, this switch is needed for all management servers. It's also needed for other scripted installations.|
 |/components:|OMServer: install a management server.<br><br>OMConsole: install an Operations console.<br><br>OMWebConsole: install a web console.<br><br>OMReporting: install a Reporting server.|
 |/DatabaseName:|The name of the Operational database.|
 |/DWSqlServerInstance:|The data warehouse server and instance `<server\instance>` or Always On availability group listener.|

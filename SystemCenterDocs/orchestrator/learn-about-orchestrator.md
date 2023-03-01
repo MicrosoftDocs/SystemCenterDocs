@@ -1,6 +1,6 @@
 ---
 title: Orchestrator overview
-description: This topic provides an overview of System Center - Orchestrator
+description: This article provides an overview of System Center - Orchestrator
 author: jyothisuri
 manager: mkluck
 ms.author: jsuri
