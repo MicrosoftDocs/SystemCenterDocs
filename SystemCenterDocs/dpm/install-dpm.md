@@ -8,7 +8,7 @@ title: Installing DPM
 ms.author: jsuri
 ms.prod: system-center
 ms.technology: data-protection-manager
-ms.custom: intro-installation
+ms.custom: UpdateFrequency.5, intro-installation
 ---
 
 # Get DPM installed

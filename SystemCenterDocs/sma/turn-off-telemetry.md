@@ -8,7 +8,7 @@ manager: mkluck
 ms.date: 05/08/2018
 ms.topic: article
 ms.prod: system-center
-ms.technology: service-management-automation
+ms.technology: UpdateFrequency2, service-management-automation
 ---
 
 # Turn off telemetry settings in Service Management Automation

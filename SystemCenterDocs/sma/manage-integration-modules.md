@@ -8,6 +8,7 @@ ms.prod: system-center
 ms.date: 05/08/2018
 title: Work with Integration Modules
 ms.technology: service-management-automation
+ms.custom: UpdateFrequency2
 ---
 
 # Work with integration modules

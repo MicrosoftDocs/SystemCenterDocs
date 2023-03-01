@@ -8,6 +8,7 @@ ms.author: jsuri
 ms.prod: system-center
 ms.date: 05/08/2018
 ms.technology: service-management-automation
+ms.custom: UpdateFrequency2
 ---
 
 # Windows PowerShell Workflow Concepts

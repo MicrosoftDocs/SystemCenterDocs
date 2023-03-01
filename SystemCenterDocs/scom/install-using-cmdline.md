@@ -6,7 +6,7 @@ author: jyothisuri
 manager: evansma
 ms.author: jsuri
 ms.date: 04/22/2022
-ms.custom: na, intro-installation
+ms.custom: UpdateFrequency.5, intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

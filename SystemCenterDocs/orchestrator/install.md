@@ -8,7 +8,7 @@ ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.author: jsuri
-ms.custom: intro-installation
+ms.custom: UpdateFrequency.5, intro-installation
 ---
 
 
