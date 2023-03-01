@@ -5,7 +5,7 @@ description: This article provides design guidance for agent deployment on Windo
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 02/15/2023
+ms.date: 02/28/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -35,16 +35,16 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 ### Authentication with gateway server
 
-Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of a management group. Because the gateway server resides in a domain that isn't trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of SCOM Managed Instance (preview) for mutual authentication.
+Gateway servers are often used to enable agent-management of computers that are outside the Kerberos trust boundary of a management group. If the gateway server resides in a domain that isn't trusted by the domain that the System Center Operations Manager management group is in, certificates must be used to establish the computer's identity between gateway server and management server. This arrangement satisfies the requirement of SCOM Managed Instance (preview) for mutual authentication.
 
-You need to request certificates for each agent that will report to a gateway server and import those certificates into the target computer using the `MOMCertImport.exe` tool, which is located on the installation media SupportTools\ (amd64 or x86) directory.  You need to have access to a certification authority (CA), which can be a public CA such as VeriSign, or you can use Microsoft Certificate Services.  
+You need to request certificates for each gateway and management server involved and import those certificates into the target computer using the `MOMCertImport.exe` tool, which is located on the installation media SupportTools\amd64 directory. You need to have access to a certification authority (CA) to request the right type of certificates, which can be a public CA, or you can use Microsoft Certificate Services. For more information about how to obtain a certificate, see [Obtain a certificate for use with Windows Servers and System Center Operations Manager](/SystemCenterDocs/scom/obtain-certificate-windows-server-and-operations-manager.md).
 
 ## Agent deployment
 
 SCOM Managed Instance (preview) agents can be installed by using manual installation method. The setup is manually run on the agent or deployed through an existing software distribution tool. 
 
 >[!NOTE]
->You cannot install MMA on a computer where SCOM Managed Instance (preview), Operations Manager management server, gateway server, operations console, operational database, web console, System Center Essentials, or System Center Service Manager is installed - as they have their built-in version of MMA installed.
+>You cannot install MMA on a computer where SCOM Managed Instance (preview) management server, Operations Manager management server, System Center Operations Manager gateway server, System Center Essentials, or System Center Service Manager is installed - as they have their built-in version of MMA installed.
 
 ## Next steps
 

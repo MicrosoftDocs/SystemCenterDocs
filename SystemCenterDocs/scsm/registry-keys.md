@@ -2,7 +2,7 @@
 title: Service Manager registry keys
 description: Learn about registry keys used by Service Manager.
 manager: mkluck
-ms.topic: reference
+ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center

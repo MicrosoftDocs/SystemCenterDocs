@@ -4,7 +4,7 @@ title: include file
 description: include file to summarize the release notes for VMM 2016.
 author:  jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date:  04/30/2018
 ms.topic:  include
 ms.prod:  system-center-threshold
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 ## VMM 2016 release notes
 
-The following sections summarize the release notes for VMM 2016 and includes the known issues, fixes, and the workarounds.
+The following sections summarize the release notes for VMM 2016 and include the known issues, fixes, and the workarounds.
 
 ## VMM deployment
 
@@ -44,8 +44,8 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Workaround**: Configure static IP addresses.
 
 ### SET switch shows as ‘Internal’ in VMM
-**Description**: If you deploy an SET switch outside the VMM console, and then start managing it in the VMM fabric, The switch type will show as "internal".. This doesn't impact switch functionality.
-**Workaround**: None
+**Description**: If you deploy an SET switch outside the VMM console, and then start managing it in the VMM fabric, The switch type will show as **internal**. This doesn't impact switch functionality.
+**Workaround**: None.
 
 ### LACP teamed switch doesn't work after upgrade
 **Description**: An LACP team configured in a logical switch doesn't work after upgrading to VMM 2016.
@@ -67,7 +67,7 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Description**: IPv6 isn't supported by Network Controller in the VMM fabric.
 **Workaround:** Use IPv4.
 
-### Connectivity issues for SLB addresses.
+### Connectivity issues for SLB addresses
 
 **Description**: For frontend and backend IP addresses assigned to SLB MUX VMs, you might experience connectivity issues if **Register this connection's address in DNS** is selected.
 **Workaround**: Clear the setting to avoid issues.
@@ -127,20 +127,23 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Workaround**: Update the clusters outside VMM, using cluster-aware updating (CAU) in Windows.
 
 ### A cluster rolling upgrade of a Windows Server 2012 R2 host cluster to a Windows Server 2016 Nano Server host cluster will fail
-**Description**: When you try to upgrade the host nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server using cluster rolling upgrade functionality in VMM, the upgrade will fail with error 20406: "VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server \<servername\>. Failed with error MI RESULT 7 The requested operation is not supported.:
-**Workaround**: Manually upgrade the Windows Server 2012 R2 host cluster to Nano outside of VMM. Note that rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Full Server works fine. This issue is specific to Nano.
+**Description**: When you try to upgrade the host nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server using cluster rolling upgrade functionality in VMM, the upgrade will fail with error 20406: **VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server \<servername\>. Failed with error MI RESULT 7 The requested operation isn't supported**.
+**Workaround**: Manually upgrade the Windows Server 2012 R2 host cluster to Nano outside of VMM.
+
+> [!NOTE]
+> The rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Full Server works fine. This issue is specific to Nano.
 
 ### Adding a cluster in the VMM Admin console might cause an error
-**Description**: When you add a cluster as a resource in the VMM Administrative console, you might receive an error stating "There were no computers discovered based on your inputs".
-**Workaround**: Select **OK**, and close the error dialog box. Then try to add the cluster again.
+**Description**: When you add a cluster as a resource in the VMM Administrative console, you might receive an error stating **There were no computers discovered based on your inputs**.
+**Workaround**: Select **OK**, and close the error dialog. Then try to add the cluster again.
 
 ### A cluster rolling upgrade doesn't do live migration of VMs that aren't highly available
-**Description**: When you run a rolling upgrade of Windows Server 2012 R2 clusters to Windows Server 2016 using VMM, it does not perform live migration of VMs that aren't highly-available. They are moved to a saved state.
+**Description**: When you run a rolling upgrade of Windows Server 2012 R2 clusters to Windows Server 2016 using VMM, it doesn't perform live migration of VMs that aren't highly available. They're moved to a saved state.
 **Workaround**: Either make all cluster VMs highly available before the upgrade, or do a manual live migration for the specific VMs.
 
 ### You need manual steps to add a Nano Server-based host located in an untrusted domain
 **Description**: You can't add a Nano Server-based host in an untrusted domain.
-**Workaround:** Perform these steps on the host and then add it to the VMM fabric as an untrusted host.
+**Workaround**: Perform these steps on the host and then add it to the VMM fabric as an untrusted host.
 
 1.  Enable WINRM over HTTPS:
 
@@ -148,7 +151,7 @@ The following sections summarize the release notes for VMM 2016 and includes the
       New-Item -Path WSMan:\LocalHost\Listener -Transport HTTPS -Address * -CertificateThumbPrint $cert.Thumbprint –Force
       ``
 
-2.  Create an firewall exception on the host, to allow WINRM over HTTPS:
+2.  Create a firewall exception on the host to allow WINRM over HTTPS:
 
       ``
       New-NetFirewallRule -DisplayName 'Windows Remote Management (HTTPS-In)' -Name 'Windows Remote Management (HTTPS-In)' -Profile Any -LocalPort 5986 -Protocol TCP
@@ -156,8 +159,8 @@ The following sections summarize the release notes for VMM 2016 and includes the
 
 
 ### You can't add Nano Server-based hosts located in a perimeter network
-**Description:** Trying to add a Nano Server-based host located in a perimter network using the Add Resource Wizard fails.
-**Workaround:**  Perform these steps on the host, and then add it as an untrusted host to the VMM fabric.
+**Description**: Trying to add a Nano Server-based host located in a perimeter network using the Add Resource Wizard fails.
+**Workaround**: Perform these steps on the host, and then add it as an untrusted host to the VMM fabric.
 
 1.  Enable WINRM over HTTPS on the host:
 
@@ -180,8 +183,8 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Workaround**: Repairing the host on the **Host Status** page
 
 ### SAN migration fails for a Nano Server-based host
-**Description:** If you do a SAN migration between two standalone Nano Server-based hosts, an error is issued.
-**Workaround**: Install the latest VMM update rollup (issue fixed in Update Rollup 2)
+**Description**: If you do a SAN migration between two standalone Nano Server-based hosts, an error is issued.
+**Workaround**: Install the latest VMM update rollup (issue fixed in Update Rollup 2).
 
 ## Storage Spaces Direct
 
@@ -190,20 +193,19 @@ The following sections summarize the release notes for VMM 2016 and includes the
 **Workaround**: Install the latest VMM update rollup (issue fixed in Update Rollup 2).
 
 ### Deploying a VM on SOFS using fast file copy issues a warning
-**Description**: If you deploy a VM on an SOFS using fast file copy, the action completes successfully with the following warning:
-"VMM could not transfer the file \<source location\> to \<destination location\> using fast file copy. The VMM agent on \<host\> returned an error
-**Workaround:** None
+**Description**: If you deploy a VM on an SOFS using fast file copy, the action completes successfully with the following warning: **VMM could not transfer the file \<source location\> to \<destination location\> using fast file copy. The VMM agent on \<host\> returned an error**.
+**Workaround**: None.
 
 ### Cluster validation always runs
 **Description**: When you add a node to a cluster (or create a Storage Spaces Direct hyper-converged cluster), cluster validation is always performed, even when the skip cluster validation option is selected.
 **Workaround**: Install the latest VMM update rollup. The issue was fixed in Update Rollup 2.
 
 ###  A classification change on a Cluster Shared Volume (CSV) isn't applied
-**Description**: If you change the classification on a Cluster Shared Volume (CSV) in a Storage Spaces Direct hyper-converged cluster , only the classification of the owner node is updated. The other nodes still have the older classification assigned.
+**Description**: If you change the classification on a Cluster Shared Volume (CSV) in a Storage Spaces Direct hyper-converged cluster, only the classification of the owner node is updated. The other nodes still have the older classification assigned.
 **Workaround**: Install the latest VMM update rollup. The issue was fixed in update rollup 2.
 
 ###  Creating tiered file share on SOFS doesn't work as expect o
-**Description**: When you successfully create a tiered fileshare on SOFS, an error (43020 [SM_RC_DEDUP_NOT_AVAILABLE]) is issued, even if dedup option is not selected.
+**Description**: When you successfully create a tiered fileshare on SOFS, an error (43020 [SM_RC_DEDUP_NOT_AVAILABLE]) is issued even if dedup option isn't selected.
 **Workaround**: Ignore the error.
 
 ###  VMM doesn't show correct information for a hyper-converged  cluster, or Storage Spaces Direct SOFS
@@ -214,23 +216,23 @@ The following sections summarize the release notes for VMM 2016 and includes the
 ## VM management
 
 ### Shielding a VM causes an error
-**Description**: If you enable shield for an existing VM in the VMM fabric, or if you create a shielded VM from a non-shielded template, the job might fail with the error 1730: "The selected action could not be completed because the virtual machine is not in a state in which the action is valid." The failure happens during the last step of the job, when the VM is shut down after the shielding is completed. The VM is shielded properly, and is usable.
+**Description**: If you enable shield for an existing VM in the VMM fabric, or if you create a shielded VM from a non-shielded template, the job might fail with the error 1730: **The selected action could not be completed because the virtual machine is not in a state in which the action is valid**. The failure happens during the last step of the job, when the VM is shut down after the shielding is completed. The VM is shielded properly, and is usable.
 **Workaround**: Repair the VM with the **Ignore** option.
 
 ### VMM doesn't show changes to VM security properties
-**Description**: If you change the secure boot properties of a generation 2 VM, or enable/disable vTPM for a shielded VM, outside the VMM console, the change is not immediately shown in VMM.
+**Description**: If you change the secure boot properties of a generation 2 VM, or enable/disable vTPM for a shielded VM, outside the VMM console, the change isn't immediately shown in VMM.
 **Workaround**: Manually refresh the VM to show the changes.
 
 ### Storing a VM in the VMM library fails if you change the default port for BITS (443)
-**Description**: If you change the defaul BITS port when configuring VMM, and error is issued when you store a VM in the VMM library. Error 2940: "VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established."
+**Description**: If you change the default BITS port when configuring VMM, and error is issued when you store a VM in the VMM library. Error 2940: **VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established**.
 **Workaround**: Manually add the new port number to the Windows Firewall exceptions list of the host:
 ``
 netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<port no.> protocol=TCP
 ``
 
 ### You can't create VM templates from a Nano Server-based VM.
-**Description**: When you try to create a VM template from a Nano Server-based VM, error 2903 is issued: "VMM could not locate the specified file/folder '' on the '\<server name\>' server. This file/folder might be required as part of another object."
-**Workaround:** Create a VM template from scratch, using a Nano Server VHD.
+**Description**: When you try to create a VM template from a Nano Server-based VM, error 2903 is issued: **VMM could not locate the specified file/folder '' on the '\<server name\>' server. This file/folder might be required as part of another object**.
+**Workaround**: Create a VM template from scratch using a Nano Server VHD.
 
 ### Service deployments from service templates might fail on a Nano Server/Core-based guest OS.
 **Description**: When selecting roles and features for a service template, the guest OS profile doesn't differentiate between Core, Nano Server, and Desktop. If you select roles and features (such as Desktop Experience or other GUI-related features) that don't apply to a Core/Nano Server-based guest OS, deployment failure might occur.
@@ -242,11 +244,11 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 ### Nano Server-based VM fails to join a domain
 **Description**: During Nano Server VM deployment, if you join the VM to a domain by specifying the domain join information on the **OS Configuration** page of the VM deployment Wizard, VMM deploys the VM but doesn't add it to the specified domain.
-**Workaround:** After the VM is deployed, manually join the VM to the domain. [Learn more](/windows-server/get-started/getting-started-with-nano-server).
+**Workaround**: After the VM is deployed, manually join the VM to the domain. [Learn more](/windows-server/get-started/getting-started-with-nano-server).
 
 
 ### Error when starting a VM with Start Ordering
-**Description**: Windows Server 2016 includes the VM Start Ordering feature which defines the order in which dependent VMs are started. This functionality isn't available in VMM, but if you've configured the feature outside the VMM, VMM understands the order in which the VMs will start. However, VMM throws a false positive error (12711): "VMM cannot complete the WMI operation on the server \<servername\> because of an error: [MSCluster_ResourceGroup.Name=\<name\>] The group or resource is not in the correct state to perform the requested operation.
+**Description**: Windows Server 2016 includes the VM Start Ordering feature, which defines the order in which dependent VMs are started. This functionality isn't available in VMM, but if you've configured the feature outside the VMM, VMM understands the order in which the VMs will start. However, VMM throws a false positive error (12711): **VMM cannot complete the WMI operation on the server \<servername\> because of an error: [MSCluster_ResourceGroup.Name=\<name\>] The group or resource isn't in the correct state to perform the requested operation**.
 **Workaround**: Ignore the error. The VMs will start in the correct order.
 
 
@@ -254,5 +256,5 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 ## Integration
 
 ## SQL Server Analysis Services (SSAS) integration doesn't work in VMM and Operations Manager Update Rollup 1.
-**Description**: If you're runnning Upate Rollup 1, you can't configure SSAS for SQL Server.
-**Workaround:** Dowload the latest Update Rollups. The issue was fixed in Update Rollup 2.
+**Description**: If you're running Update Rollup 1, you can't configure SSAS for SQL Server.
+**Workaround**: Download the latest Update Rollups. The issue was fixed in Update Rollup 2.
