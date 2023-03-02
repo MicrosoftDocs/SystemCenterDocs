@@ -5,13 +5,14 @@ description: This article explains how to configure monitoring pool in Managemen
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 03/02/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
+ms.custom: engagement-fy23
 ---
 
-# Managed Instance Monitoring Pool
+# Azure SQL Managed Instance Monitoring Pool
 
 To configure a monitoring pool using the Operations Manager console, perform the following steps:
 
