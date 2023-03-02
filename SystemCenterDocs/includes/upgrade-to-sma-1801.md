@@ -1,6 +1,6 @@
 ---
 description: include file to provide information about how to upgrade your existing Service Management Automation to release 1801.
-manager: evansma
+manager: mkluck
 ms.topic: include
 author: jyothisuri
 ms.author: jsuri
@@ -18,7 +18,7 @@ ms.assetid:  23356ae4-74ba-46f0-8484-22f896a5e0f5
 The following sections provide information about how to upgrade your existing Service Management Automation (SMA) 2012 R2 UR8/2016 UR1 Service Management Automation installation to 1801.
 
 > [!NOTE]
-> To upgrade to System Center 1801 - SMA, you must install UR8 on 2012 R2 /UR1 on 2016.
+> To upgrade to System Center 1801 - SMA, you must install UR8 on 2012 R2/UR1 on 2016.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ The following sections provide information about how to upgrade your existing Se
 
 ## Upgrading
 
-There is no in place upgrade for SMA servers, so you must uninstall the existing servers before installing the new ones.  You can keep the database intact, which contains the runbooks and configuration settings.  
+There's no in place upgrade for SMA servers, so you must uninstall the existing servers before installing the new ones. You can keep the database intact, which contains the runbooks and configuration settings.  
 
 > [!NOTE]
 > When installing SMA with an existing database, you must install the worker servers before the web service.

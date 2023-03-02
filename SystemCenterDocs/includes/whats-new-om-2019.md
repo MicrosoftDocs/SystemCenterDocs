@@ -4,7 +4,7 @@ title: include file
 description: This include file describes the new features in Operations Manager 2019, 2019 UR1, 2019 UR2, 2019 UR3 and 2019 UR4.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 06/04/2021
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
@@ -390,7 +390,7 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Le
 
 - **Grooming of maintenance mode staging table**
 
-  In earlier releases, Operations Manager Data warehouse grooming (emptying) of maintenance mode staging table wasn't occurring. The table increased every day into millions of rows, which eventually filled up the database that could potentially lead to additional cost to spin up a new database. The increase in utilization of database is usually correlated with decrease in performance of Operation Manager's console.
+  In earlier releases, Operations Manager Data warehouse grooming (emptying) of maintenance mode staging table wasn't occurring. The table increased every day into millions of rows, which eventually filled up the database that could potentially lead to additional cost to spin up a new database. The increase in utilization of database is correlated with decrease in performance of Operation Manager's console.
 
   With Operations Manager 2019 UR3, an index is added to the maintenance mode staging table; grooming of the table occurs now.
 
@@ -398,7 +398,7 @@ Operations Manager 2019 UR3 and later supports TLS 1.2 for Solaris 10 SPARC. [Le
 
   Operations Manager console was taking longer time to load and complete basic tasks.
 
-  With Operations Manager 2019 UR3, we optimized relevant SQL queries and the performance has significantly improved now.
+  With Operations Manager 2019 UR3, we optimized relevant SQL queries and the performance has improved now.
 
 ## New features in Operations Manager 2019 UR4
 

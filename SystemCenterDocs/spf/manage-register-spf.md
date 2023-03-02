@@ -22,7 +22,7 @@ ms.custom: engagement-fy23
 ::: moniker-end
 
 
-For System Center - Service Provider Foundation (SPF) to provide services and connectivity for delivering IaaS in Microsoft Azure Pack,  you need to register it.
+For System Center - Service Provider Foundation (SPF) to provide services and connectivity for delivering IaaS in Microsoft Azure Pack, you need to register it.
 
 1. On the SPF server, note the credentials used for the Admin, VMM, Usage, and Provider Application Pool identity in IIS.
 2. Register the SPF endpoint with the Azure Pack management portal. After registration, you can enable the VM Clouds service from the portal.

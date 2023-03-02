@@ -19,9 +19,9 @@ ms.custom: engagement-fy23
 
 ::: moniker-end
 
- Gallery items are VM roles that serve as standard and reusable artifacts. These items can be used by hosting service providers, to provide offerings to their tenants. In Microsoft Azure Pack, you can add a gallery item to a tenant subscription plan. Virtual machine roles represent a scalable tier of virtual machines that can be provisioned by a tenant using a single process. Examples of workloads that can be created by virtual machine roles could include a single virtual machine, an Active Directory Domain Controller, a SQL Server cluster, or Internet Information Services \(IIS\) web farm.  [Learn more](https://social.technet.microsoft.com/wiki/contents/articles/20194.downloading-and-installing-windows-azure-pack-gallery-resource.aspx) about gallery resources.
+ Gallery items are VM roles that serve as standard and reusable artifacts. These items can be used by hosting service providers to provide offerings to their tenants. In Microsoft Azure Pack, you can add a gallery item to a tenant subscription plan. Virtual machine roles represent a scalable tier of virtual machines that can be provisioned by a tenant using a single process. Examples of workloads that can be created by virtual machine roles could include a single virtual machine, an Active Directory Domain Controller, a SQL Server cluster, or Internet Information Services \(IIS\) web farm.  [Learn more](https://social.technet.microsoft.com/wiki/contents/articles/20194.downloading-and-installing-windows-azure-pack-gallery-resource.aspx) about gallery resources.
 
-In System Center - Service Provider Foundation (SPF), you can import gallery items into System Center - Virtual Machine Manager (VMM) from downloaded resource packages. The gallery items are tracked in the SPFDB database. Gallery items will then be immediately available for viewing in the management portal, by Microsoft Azure Pack administrators.
+In System Center - Service Provider Foundation (SPF), you can import gallery items into System Center - Virtual Machine Manager (VMM) from downloaded resource packages. The gallery items are tracked in the SPFDB database. Gallery items will then be immediately available for viewing in the management portal by Microsoft Azure Pack administrators.
 
 SPF provides the following cmdlets for the gallery:  
 
@@ -40,9 +40,9 @@ SPF provides the following cmdlets for the gallery:
 
 ## Obtain a gallery resource
 
-You can use the SPF Admin web service or cmdlets to get a gallery package, item, or the icon for an item. Portal developers can create UI elements and functionality, to offer tenants a compelling experience in selecting gallery items.  
+You can use the SPF Admin web service or cmdlets to get a gallery package, item, or the icon for an item. Portal developers can create UI elements and functionality to offer tenants a compelling experience in selecting gallery items.  
 
-The following example shows how to use PowerShell to import a gallery item from a package and use its contents, and then remove it.  
+The following example shows how to use PowerShell to import a gallery item from a package and use its contents and then remove it.  
 
 ```powershell  
 PS C:\> # The first command gets the path to the resource package and stores it in the $Path variable.   

@@ -1,6 +1,6 @@
 ---
 description: This article explains how to update your DPM installation to version 1807.
-manager: evansma
+manager: mkluck
 ms.topic:  article
 author: jyothisuri
 ms.author: jsuri

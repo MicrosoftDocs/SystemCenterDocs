@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.assetid: 60a8bd5f-fde6-4a8a-8470-4462b5331644
 author: jyothisuri
 ms.author: jsuri
