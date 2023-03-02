@@ -1,7 +1,7 @@
 ---
 title: Implement disaster recovery
 description: Describes the steps needed to recover from potential software and equipment failures in your Service Manager environment.
-manager: evansma
+manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -31,7 +31,7 @@ In addition, you must use the script that you created in the [Backing Up Unseale
 
 ## Recover a management server
 
-This section describes how to recover a Service Manager management server or a data warehouse management server. If you installed additional Service Manager management servers, you have the option of promoting an additional Service Manager management server. Regardless of whether you encounter software or hardware failures of the Service Manager management server, your recovery process is based on restoring a computer that has the same computer name.  
+This section describes how to recover a Service Manager management server or a data warehouse management server. If you installed additional Service Manager management servers, you've the option of promoting an additional Service Manager management server. Regardless of whether you encounter software or hardware failures of the Service Manager management server, your recovery process is based on restoring a computer that has the same computer name.  
 
 For either management server, your first step must be to restore the encryption key *before* you start the management server setup.  
 
@@ -41,17 +41,17 @@ You can use the following procedure to restore the encryption keys before you ru
 
 #### To restore the encryption key  
 
-1.  Log on to the computer that will host the Service Manager part that you are attempting to recover by using an account that is a member of the Administrators group. For example, log on to the computer that will host the Service Manager or data warehouse management servers.  
+1.  Sign in to the computer that will host the Service Manager part that you're attempting to recover by using an account that is a member of the Administrators group. For example, sign in to the computer that will host the Service Manager or data warehouse management servers.  
 2.  In Windows Explorer, open the Tools\\SecureStorageBackup folder on the installation media.  
-3.  Right\-click **SecureStorageBackup.exe** then click **Run as administrator** to start the Encryption Key Backup or Restore Wizard.  
+3.  Select and hold **SecureStorageBackup.exe** and select **Run as administrator** to start the Encryption Key Backup or Restore Wizard.  
     > [!NOTE]  
-    >  In this release, the wizard contains references to "Operations Manager." This issue will be resolved in a future release.  
+    >  In this release, the wizard contains references to **Operations Manager**. This issue will be resolved in a future release.  
 
-4.  On the **Introduction** page, click **Next**.  
-5.  On the **Backup or Restore?** page, select **Restore the Encryption Key**, and then click **Next**.  
-6.  On the **Provide a Location** page, type the path and file name for the encryption key. For example, if you want to specify the file name SMBackupkey.bin for the encryption key on the server MyServer in the Backup shared folder, type **\\\\MyServer\\Backup\\SMBackupkey.bin**, and then click **Next**.  
-7.  On the **Provide a Password** page, type the password that you used to back up the encryption key in the **Password** box. In the **Confirm Password** box, reenter the same password, and then click **Next**.  
-8.  After you receive the message, "Secure Storage Key Restore Complete," click **Finish**.
+4.  On the **Introduction** page, select **Next**.  
+5.  On the **Backup or Restore?** page, select **Restore the Encryption Key**, and select **Next**.  
+6.  On the **Provide a Location** page, enter the path and file name for the encryption key. For example, if you want to specify the file name SMBackupkey.bin for the encryption key on the server MyServer in the Backup shared folder, enter **\\\\MyServer\\Backup\\SMBackupkey.bin**, and select **Next**.  
+7.  On the **Provide a Password** page, enter the password that you used to back up the encryption key in the **Password** box. In the **Confirm Password** box, reenter the same password, and select **Next**.  
+8.  After you receive the message **Secure Storage Key Restore Complete**, select **Finish**.
 
 ### Restore the server
 
@@ -62,21 +62,21 @@ You can use the following procedure to reinstall a management server in Service 
 
 #### To recover a Service Manager management server  
 
-1.  Log on to the computer that will host the new Service Manager management server using an account that has administrator rights.  
+1.  Sign in to the computer that will host the new Service Manager management server using an account that has administrator rights.  
 2.  On the Service Manager installation media, double\-click the **Setup.exe** file.  
-3.  On the **Service Manager Setup Wizard** page, click **Service Manager management server**.  
-4.  On the **Product registration** page, type the information in the text boxes. If applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.  
-5.  On the **Installation location** page, verify that sufficient free disk space is available, and then click **Next**. If necessary, click **Browse** to change the location in which you want to install the Service Manager management server.  
-6.  On the **System check results** page, make sure that the prerequisite check passed or at least passed with warnings, and then click **Next**.  
+3.  On the **Service Manager Setup Wizard** page, select **Service Manager management server**.  
+4.  On the **Product registration** page, enter the information in the text boxes. If applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
+5.  On the **Installation location** page, verify that sufficient free disk space is available, and select **Next**. If necessary, select **Browse** to change the location in which you want to install the Service Manager management server.  
+6.  On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
 7.  On the **Configure the Service Manager database** page, do the following:  
-    1.  In **Database server**, type the name of the computer that is hosting the Service Manager database, and then press the TAB key.  
+    1.  In **Database server**, enter the name of the computer that is hosting the Service Manager database, and then press the TAB key.  
     2.  Select **Use an existing database**.  
-    3.  Click the **Database** list, select the database name for the Service Manager database \(the default name is **ServiceManager**\), and then click **Next**.  
-8.  On the **Configure the Service Manager management group**, wait until the **Management group name** and **Management group administrators** fields have been populated. Then, click **Next**.  
-9. On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. Make sure that you receive the following message: "The credentials were accepted." and then click **Next**.  
-10. On the **Help improve System Center** page, indicate your preference for participation in both the Customer Experience Improvement Program and Error Reporting. For more information, click **Tell me more about the program**, and then click **Next**.  
-11. On the **Installation summary** page, click **Install**.  
-12. On the **Setup completed successfully** page, click **Close**.
+    3.  Select the **Database** list, select the database name for the Service Manager database \(the default name is **ServiceManager**\), and select **Next**.  
+8.  On the **Configure the Service Manager management group**, wait until the **Management group name** and **Management group administrators** fields have been populated. Then select **Next**.  
+9. On the **Configure the account for Service Manager services** page, select **Domain account**; specify the user name, password, and domain for the account; and select **Test Credentials**. Ensure that you receive the following message: **The credentials were accepted**, and select **Next**.  
+10. On the **Help improve System Center** page, indicate your preference for participation in both the Customer Experience Improvement Program and Error Reporting. For more information, select **Tell me more about the program**, and select **Next**.  
+11. On the **Installation summary** page, select **Install**.  
+12. On the **Setup completed successfully** page, select **Close**.
 
 
 ## Recover a data warehouse management server
@@ -84,32 +84,32 @@ You can use the following procedure to reinstall a management server in Service 
 You can use the following procedure to reinstall a data warehouse management server for Service Manager.  
 
 > [!NOTE]  
->  You must restore the encryption key before starting this procedure.   
+>  You must restore the encryption key before starting this procedure.
 
 ### To recover a data warehouse management server  
 
-1.  Log on to the computer that will host the new data warehouse management server using an account that has administrator rights.  
+1.  Sign in to the computer that will host the new data warehouse management server using an account that has administrator rights.  
 2.  On the Service Manager installation media, double\-click the **Setup.exe** file.  
-3.  On the **Service Manager Setup Wizard** page, click **Service Manager data warehouse management server**.  
-4.  On the **Product registration** page, type the information in the boxes. If applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.  
-5.  On the **Installation location** page, verify that sufficient free disk space is available, and then click **Next**. If necessary, click **Browse** to change the location in which you want to install the Service Manager data warehouse management server.  
-6.  On the **System check results** page, make sure that the prerequisite check passed or at least passed with warnings, and then click **Next**.  
+3.  On the **Service Manager Setup Wizard** page, select **Service Manager data warehouse management server**.  
+4.  On the **Product registration** page, enter the information in the boxes. If applicable, select **I have read, understood, and agree with the terms of the license agreement**, and select **Next**.  
+5.  On the **Installation location** page, verify that sufficient free disk space is available, and select **Next**. If necessary, select **Browse** to change the location in which you want to install the Service Manager data warehouse management server.  
+6.  On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and select **Next**.  
 7.  On the **Configure the data warehouse database** page, do the following:  
     1.  In the **Select a database to change its default properties** area, select **Staging and Configuration**.  
-    2.  In **Database server**, type the name of the computer that is hosting data warehouse databases, and then press the TAB key.  
+    2.  In **Database server**, enter the name of the computer that is hosting data warehouse databases, and then press the TAB key.  
     3.  Select **Use an existing database**.  
-    4.  Click the **Database** list, select the database name for the Staging and Configuration database \(the default name is **DWStagingAndConfig**\), and then click **Next**.  
-8.  On the **Configure the data warehouse management group** page, wait until the **Management group name** and **Management group administrators** fields have been populated, and then click **Next**.  
-9. On the **Configure the reporting server for the data warehouse** page, in the **Report server** text box, type the computer name of the computer that hosts SQL Server Reporting Services \(SSRS\), and then click **Next**.  
+    4.  Select the **Database** list, select the database name for the Staging and Configuration database \(the default name is **DWStagingAndConfig**\), and select **Next**.  
+8.  On the **Configure the data warehouse management group** page, wait until the **Management group name** and **Management group administrators** fields have been populated, and select **Next**.  
+9. On the **Configure the reporting server for the data warehouse** page, in the **Report server** text box, enter the computer name of the computer that hosts SQL Server Reporting Services \(SSRS\), and select **Next**.  
     > [!NOTE]  
     >  You must use the original URL for the Reporting Server.  
 
-10. On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. Make sure that you receive the following message: "The credentials were accepted.", and then click **Next**.  
-11. On the **Configure the reporting account** page, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
-12. On the **Help improve System Center** page, indicate your preference for participation in both the Customer Experience Improvement Program and Error Reporting. For more information, click **Tell me more about the program**, and then click **Next**.  
-13. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates, and then click **Next**.  
-14. On the **Installation summary** page, click **Install**.  
-15. On the **Setup completed successfully** page, click **Close**.
+10. On the **Configure the account for Service Manager services** page, select **Domain account**; specify the user name, password, and domain for the account; and select **Test Credentials**. Ensure that you receive the following message: **The credentials were accepted**, and select **Next**.  
+11. On the **Configure the reporting account** page, specify the user name, password, and domain for the account, and select **Test Credentials**. After you receive a **The credentials were accepted** message, select **Next**.  
+12. On the **Help improve System Center** page, indicate your preference for participation in both the Customer Experience Improvement Program and Error Reporting. For more information, select **Tell me more about the program**, and select **Next**.  
+13. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates, and select **Next**.  
+14. On the **Installation summary** page, select **Install**.  
+15. On the **Setup completed successfully** page, select **Close**.
 
 ### Promote a Service Manager management server
 
@@ -120,9 +120,9 @@ When you first ran Setup for Service Manager, you installed the initial Service 
 #### To prepare the secondary management server  
 
 1.  On the secondary management server, close the Service Manager console.  
-2.  On the Windows desktop, click **Start**, and then click **Run**.  
-3.  In the **Run** dialog box, in the **Open** text field, type **services.msc**, and then click **OK**.  
-4.  In the **Services** window, in the **Services \(Local\)** pane, locate the following three services, and for each one click **Stop**:  
+2.  On the Windows desktop, select **Start**, and select **Run**.  
+3.  In the **Run** dialog, in the **Open** text field, enter **services.msc**, and select **OK**.  
+4.  In the **Services** window, in the **Services \(Local\)** pane, locate the following three services, and for each one select **Stop**:  
     -   System Center Data Access Service  
     -   Microsoft Monitoring Agent  
     -   System Center Management Configuration  
@@ -132,28 +132,28 @@ When you first ran Setup for Service Manager, you installed the initial Service 
 
 #### To define the computer name for the Service Manager database  
 
-1.  On the Service Manager database, on the Windows desktop, click **Start**, point to **Programs**, point to **Microsoft SQL Server**, and then click **SQL Server Management Studio**.  
-2.  In the **Connect to Database Engine** dialog box, do the following:  
-    1.  In **Server name**, type the name of the server that hosts the Service Manager database.  
+1.  On the Service Manager database, on the Windows desktop, select **Start**, point to **Programs**, point to **Microsoft SQL Server**, and select **SQL Server Management Studio**.  
+2.  In the **Connect to Database Engine** dialog, do the following:  
+    1.  In **Server name**, enter the name of the server that hosts the Service Manager database.  
     2.  In **Authentication**, select **Windows Authentication**.  
-    3.  Click **Connect**.  
-3.  In the **Object Explorer** pane, expand **Databases**, and then click **ServiceManager**.  
-4.  On the toolbar, click **New Query**.  
-5.  In the **SQLQuery1.sql** pane \(the center pane\), type the following, where \<FQDN of your server\> is the fully qualified domain name \(FQDN\) of the management server that you are promoting:  
+    3.  Select **Connect**.  
+3.  In the **Object Explorer** pane, expand **Databases**, and select **ServiceManager**.  
+4.  On the toolbar, select **New Query**.  
+5.  In the **SQLQuery1.sql** pane \(the center pane\), type the following, where \<FQDN of your server\> is the fully qualified domain name \(FQDN\) of the management server that you're promoting:  
 
     ```  
     EXEC p_PromoteActiveWorkflowServer '<FQDN of your server>'  
     ```  
 
-6.  On the toolbar, click **Execute**.  
+6.  On the toolbar, select **Execute**.  
 7.  At the bottom of the **SQLQuery1.sql** pane \(the center pane\), confirm that the "Query executed successfully" message appears.  
 8.  Exit Microsoft SQL&nbsp;Server Management Studio.  
 
 #### To restart the services on the secondary management server  
 
-1.  On the secondary management server, on the Windows desktop, click **Start**, and then click **Run**.  
-2.  In the **Run** dialog box, in **Open**, type **services.msc**, and then click **OK**.  
-3.  In the **Services** window, in the **Services \(Local\)** pane, locate the following three services, and for each one click **Start**.  
+1.  On the secondary management server, on the Windows desktop, select **Start**, and select **Run**.  
+2.  In the **Run** dialog, in **Open**, enter **services.msc**, and select **OK**.  
+3.  In the **Services** window, in the **Services \(Local\)** pane, locate the following three services, and for each one select **Start**.  
     -   System Center Data Access Service  
     -   Microsoft Monitoring Agent  
     -   System Center Management Configuration  
@@ -162,7 +162,7 @@ Your secondary management server is now the primary management server for the ma
 
 ## Import Service Manager unsealed management packs
 
-After you have restored your Service Manager management server, the next step is to import unsealed management packs.  
+After you've restored your Service Manager management server, the next step is to import unsealed management packs.  
 
 ### Import management packs
 
@@ -170,8 +170,8 @@ You can use this procedure to import the unsealed management packs that you save
 
 #### To import management packs  
 
-1.  In the Service Manager console, click **Administration**.  
-2.  In the **Administration** pane, expand **Administration**, and then click **Management Packs**.  
-3.  In the **Tasks** pane, under **Management Packs**, click **Import**.  
-4.  In the **Select Management Packs to Import** window, under **Favorite Links**, specify the location where you backed up your unsealed management packs, select the files, and then click **Open**.  
-5.  In the **Import Management Pack** window, click **Import**.
+1.  In the Service Manager console, select **Administration**.  
+2.  In the **Administration** pane, expand **Administration**, and select **Management Packs**.  
+3.  In the **Tasks** pane, under **Management Packs**, select **Import**.  
+4.  In the **Select Management Packs to Import** window, under **Favorite Links**, specify the location where you backed up your unsealed management packs, select the files, and select **Open**.  
+5.  In the **Import Management Pack** window, select **Import**.

@@ -1,6 +1,6 @@
 ---
 description: include file to describe the process to upgrade Service Management Automation in System Center 2016.
-manager: evansma
+manager: mkluck
 ms.topic:  include
 author: jyothisuri
 ms.author: jsuri
@@ -24,7 +24,7 @@ The following sections provide details about how to upgrade SMA 2012 R2 to SMA 2
 
 ## Upgrade
 
-There is no in place upgrade for SMA servers, so you must uninstall the existing servers before installing the new ones.  You can keep the database, which contains the runbooks and configuration settings intact.
+There's no in place upgrade for SMA servers, so you must uninstall the existing servers before installing the new ones. You can keep the database, which contains the runbooks and configuration settings intact.
 
 > [!NOTE]
 > When installing SMA with an existing database, you must install the worker servers before the web service.

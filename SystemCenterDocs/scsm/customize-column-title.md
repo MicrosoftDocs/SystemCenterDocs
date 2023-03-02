@@ -1,7 +1,7 @@
 ---
 title: Customize a column title in a view for the views sample scenario
 description: Describes how to customize a column title in a view for the Service Manager Authoring Tool views sample scenario.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -23,7 +23,7 @@ ms.assetid: 0a48640f-1ecf-4636-912e-42d9000cebc7
 
 ::: moniker-end
 
-System Center - Service Manager contains predefined views that you can use to display information and status of various work items and configuration items in the Service Manager console. Views are defined in unsealed management packs, allowing for some customizations of views.
+System Center - Service Manager contains predefined views that you can use to display information and the status of various work items and configuration items in the Service Manager console. Views are defined in unsealed management packs, allowing for some customizations of views.
 
 For example, you can use the following procedure to customize a column title of a predefined view to reflect processes that are used in your organization.
 
@@ -33,11 +33,11 @@ Another customization to a view is adding a column to a predefined view. For mor
 
 1. Locate and export the management pack that contains the view that you want to customize, as follows:
 
-    1. In the Service Manager console, click **Administration**.
+    1. In the Service Manager console, select **Administration**.
     2. In the **Administration** pane, select **Management Packs**.
-    3. In the **Management Packs** view, click **Sealed** to sort the column by sealed and unsealed management packs. Select the management pack that contains the view that you want to customize. It must be an unsealed management pack, such as **Service Manager Incident Management Configuration Library**.
-    4. In the **Tasks** pane, click **Export**.
-    5. In the **Browse For Folder** dialog box, select a folder to store the exported management pack, and then click **OK**.
+    3. In the **Management Packs** view, select **Sealed** to sort the column by sealed and unsealed management packs. Select the management pack that contains the view that you want to customize. It must be an unsealed management pack, such as **Service Manager Incident Management Configuration Library**.
+    4. In the **Tasks** pane, select **Export**.
+    5. In the **Browse For Folder** dialog, select a folder to store the exported management pack, and select **OK**.
 
 2. Open the exported management pack in an XML editor, such as Notepad or Microsoft Visual Studio.
 
@@ -73,9 +73,9 @@ Another customization to a view is adding a column to a predefined view. For mor
 5. Import the custom management pack in Service Manager:
 
     1. In the **Administration** pane, select **Management Packs**.
-    2. In the **Tasks** pane, click **Import**.
-    3. In the **Select Management Pack to Import** dialog box, select a folder in which you stored the custom management pack, and then click **Open**.
-    4. In the **Import Management Pack** dialog box, click **Import**. Wait for the import to complete, and then click **OK**.
+    2. In the **Tasks** pane, select **Import**.
+    3. In the **Select Management Pack to Import** dialog, select a folder in which you stored the custom management pack, and select **Open**.
+    4. In the **Import Management Pack** dialog, select **Import**. Wait for the import to complete, and select **OK**.
 
 In the Service Manager console, select the view that you customized to see the new column title.
 

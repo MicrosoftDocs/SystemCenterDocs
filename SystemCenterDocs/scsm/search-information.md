@@ -1,7 +1,7 @@
 ---
 title: Search for information
 description: Describes how to search for information in Service Manager.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -33,7 +33,7 @@ In Service Manager, you can use the search feature in the Service Manager consol
 
 However, only knowledge articles are returned when you perform a knowledge search.  
 
-When you search for most items in Service Manager, only exact keyword matches return results. However, partial matches are returned for configuration items of Windows\-based computers. Searches that use wildcard characters are not supported.  
+When you search for most items in Service Manager, only exact keyword matches return results. However, partial matches are returned for configuration items of Windows\-based computers. Searches that use wildcard characters aren't supported.  
 
 When you search for items, you open a view that displays a large number of items, and there are more than 5,000 items in the results, the complete results can take a few minutes to appear.
 

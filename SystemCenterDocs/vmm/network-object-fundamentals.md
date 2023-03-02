@@ -5,10 +5,11 @@ description: This article describes about network object fundamentals.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 05/09/2022
+ms.date: 02/22/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: engagement-fy23
 ---
 
 # Virtual Machine Manager network object fundamentals

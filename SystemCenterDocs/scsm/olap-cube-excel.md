@@ -1,7 +1,7 @@
 ---
 title: Analyze OLAP cube data with Excel
 description: Explains how to analyze Service Manager OLAP cube data with Excel.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -23,7 +23,7 @@ ms.assetid: 57102204-4876-4a97-9da4-ef6dac619721
 
 ::: moniker-end
 
-Service Manager includes predefined Microsoft Online Analytical Processing \(OLAP\) data cubes that connect to the data warehouse to retrieve data so that you can manipulate it by using Microsoft Excel in a tabular fashion. When it is opened, a data cube is presented as a worksheet containing a blank PivotTable report. Information defining the OLAP data source is embedded in a worksheet. When you open a report or when you refresh the data connection, Excel uses Microsoft SQL&nbsp;Server Analysis Services \(SSAS\) to connect to the data warehouse to retrieve key performance indicators \(KPIs\) and other data. After it is opened, the current worksheet contains a snapshot or subset of data from the data warehouse. If you save a worksheet, the data source connection information, KPIs, and any other customizations you have made are saved with it. If you save the worksheet to an analysis library, you can later reopen it without having to use the Service Manager console.  
+Service Manager includes predefined Microsoft Online Analytical Processing \(OLAP\) data cubes that connect to the data warehouse to retrieve data so that you can manipulate it by using Microsoft Excel in a tabular fashion. When it's opened, a data cube is presented as a worksheet containing a blank PivotTable report. Information defining the OLAP data source is embedded in a worksheet. When you open a report or when you refresh the data connection, Excel uses Microsoft SQL&nbsp;Server Analysis Services \(SSAS\) to connect to the data warehouse to retrieve key performance indicators \(KPIs\) and other data. After it's opened, the current worksheet contains a snapshot or subset of data from the data warehouse. If you save a worksheet, the data source connection information, KPIs, and any other customizations you've made are saved with it. If you save the worksheet to an analysis library, you can later reopen it without having to use the Service Manager console.  
 
  KPIs included in Service Manager data cubes are predefined, special, calculated measures that are defined on the server that make it possible for you to track KPIs, such as status \(does the current value meet a specific number?\) and trend \(what is the value over time?\). When these KPIs are displayed in a PivotTable, the server can send related icons that are similar to the new Excel icon set to indicate status levels that are above or below a certain threshold \(for example, with a stop light icon\) or whether a value is trending up or down \(for example, with a directional arrow icon\).  
 
@@ -33,7 +33,7 @@ Service Manager includes predefined Microsoft Online Analytical Processing \(OLA
 2. Select a second category and add it as a column.  
 3. Select a category or subcategory to add values.  
 
-After you have created your report, you can add any level of additional complexity by sorting, filtering, formatting, and adding calculations and charts. You can also go in and out of categories as you continue your analysis.  
+After you've created your report, you can add any level of additional complexity by sorting, filtering, formatting, and adding calculations and charts. You can also go in and out of categories as you continue your analysis.  
 
 To view a demonstration of creating a report and manipulating data in Excel using data from an OLAP data cube in a PivotTable, see [Drill into PivotTable data](https://support.office.com/en-US/article/Drill-into-PivotTable-data-C1B11240-FC8F-4FDD-A697-629BF6F7EE0B).  
 
@@ -47,8 +47,8 @@ You can use the following procedure to view and analyze a Microsoft Online Analy
 
 ### To view and analyze an OLAP data cube with Excel  
 
-1.  In the Service Manager console, click **Data Warehouse**, expand the **Data Warehouse** node, and then click **Cubes**.  
-2.  In the **Cubes** pane, select a cube name, and then under **Tasks**, click **Analyze Cube in Excel**. For example, select **SystemCenterWorkItemsCube** and analyze it.  
+1.  In the Service Manager console, select **Data Warehouse**, expand the **Data Warehouse** node, and select **Cubes**.  
+2.  In the **Cubes** pane, select a cube name, and then under **Tasks**, select **Analyze Cube in Excel**. For example, select **SystemCenterWorkItemsCube** and analyze it.  
 3.  When the worksheet opens in Excel, you can drag and drop fields from the PivotTable Field List and create slicers and charts.  
     -  For example, if you want to see the total number of incidents currently open, expand **IncidentDimGroup**, and then select **Incidents Opened**.  
     -  You can add additional fields to generate a more complex analysis. For example, you can add computers from the **ComputerDim** dimension by selecting the **DisplayName** field to see the number of incidents that affect different computers.  

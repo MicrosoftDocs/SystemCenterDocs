@@ -4,7 +4,7 @@ title: System requirements for Service Manager
 description: This article describes the software and hardware system requirements for System Center Service Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/25/2022
 ms.topic: article
 ms.prod: system-center
@@ -18,7 +18,7 @@ ms.technology: service-manager
 This article details the system requirements for System Center 2022 - Service Manager (SM).
 
 >[!NOTE]
-> Unlike the earlier releases, for SM 2022, you do not need to manually install **Report Viewer tools** /**Microsoft CLR Types for SQL Server 2014** as a prerequisite.
+> Unlike the earlier releases, for SM 2022, you don't need to manually install **Report Viewer tools** /**Microsoft CLR Types for SQL Server 2014** as a prerequisite.
 
  [!INCLUDE [system-reqs-sm-2022](../includes/system-reqs-sm-2022.md)]
 
@@ -69,6 +69,6 @@ This article details the system requirements for System Center 2016 - Service Ma
 ::: moniker-end
 
 ## Next steps
-- Review [Service Manager editions](../scsm/sm-editions.md) to learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions.
-- Read [Configurations for deployment scenarios](../scsm/deploy-topo-scenarios.md) to learn about the tested limits of Service Manager.
+- To learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions, review [Service Manager editions](../scsm/sm-editions.md).
+- To learn about the tested limits of Service Manager, read [Configurations for deployment scenarios](../scsm/deploy-topo-scenarios.md).
 - Read about Service Manager [hardware performance](../scsm/plan-hardware-perf.md).

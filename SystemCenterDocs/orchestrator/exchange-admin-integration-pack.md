@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.assetid: 3d807dc8-013d-45da-9647-825ab64aba2a
 author: jyothisuri
 ms.author: jsuri
@@ -36,11 +36,37 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 ::: moniker range="<=sc-orch-2019"
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
 -   System Center 2019 integration packs require System Center 2019 - Orchestrator
--   Microsoft .NET Framework 3.5 Service Pack 1
+-   Microsoft .NET Framework 4.7 or above
 -   Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Microsoft 365
 -   Microsoft Exchange Management Shell
 -   Microsoft PowerShell 2.0
 -   Microsoft WinRM 2.0
+
+> [!IMPORTANT]
+>
+> 1. Exchange Admin Integration Pack (v10.19.16.0 or above) targets .NET Framework 4.5.2. Ensure
+>    that .NET Framework Runtime v4.5.2 or later is installed on Runbook Designer and Runbook Server
+>    machines. We recommend installing the latest available .NET framework version.
+> 2. Create the following files with (identical) contents as shown below to update
+>    `supportedRuntimeVersion` to v4:
+>    - `%systemdrive%/Program Files (x86)/Microsoft System Center/Orchestrator/Runbook Designer/RunbookDesigner.exe.config`
+>    - `%systemdrive%/Program Files (x86)/Microsoft System Center/Orchestrator/Runbook Designer/RunbookTester.exe.config`
+>    - `%systemdrive%/Program Files (x86)/Microsoft System Center/Orchestrator/Runbook Server/PolicyModule.exe.config`
+>
+>    Contents:
+>
+>    ```xml
+>    <?xml version="1.0" encoding="utf-8"?>
+>    <configuration>
+>      <startup useLegacyV2RuntimeActivationPolicy="true">
+>        <supportedRuntime version="v4.0.30319"/>
+>      </startup>
+>      <system.xml.serialization>
+>        <xmlSerializer tempFilesLocation="C:\ProgramData\Microsoft System Center 2012\Orchestrator\Activities\XmlSerializers\"/>
+>      </system.xml.serialization>
+>    </configuration>
+>    ```
+
 ::: moniker-end
 
 ::: moniker range="sc-orch-2022"

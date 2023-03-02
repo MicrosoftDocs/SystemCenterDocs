@@ -64,4 +64,5 @@ This article provides the upgrade information for System Center 2016 - Service M
 ::: moniker-end
 
 ## Next steps
-[Author Runbooks](authoring-automation-runbooks.md)
+
+- [Author Runbooks](authoring-automation-runbooks.md).

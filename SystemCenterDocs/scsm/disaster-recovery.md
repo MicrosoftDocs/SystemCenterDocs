@@ -1,7 +1,7 @@
 ---
 title: Disaster recovery for Service Manager
 description: Describes the process used for disaster recovery for System Center - Service Manager.
-manager: evansma
+manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -20,13 +20,13 @@ ms.topic: article
 
 A recovery plan for potential software and equipment failures in your System Center - Service Manager environment requires a deployment strategy that separates the Service Manager and data warehouse management servers from the computers that host their respective databases. During installation, you must back up the encryption keys on all the management servers, both the Service Manager management server and data warehouse management servers.  
 
-![cloud symbol](./media/disaster-recovery/disaster-all_symbols_cloud.png)
+![Screenshot of the cloud symbol.](./media/disaster-recovery/disaster-all_symbols_cloud.png)
 
 - Did you know that Microsoft Azure provides similar functionality in the cloud? Learn more about [Microsoft Azure storage solutions](https://aka.ms/y03tdi).
 - Create a hybrid storage solution in Microsoft Azure:
-    - [Configure Azure backup for DPM data](/previous-versions/system-center/system-center-2012-R2/jj728752(v=sc.12))
-    - [Configure Azure Backup to prepare for back up of Windows Server](/azure/backup/backup-windows-with-mars-agent)
-    - [Learn about Azure backup and how it integrates with your on\-premises DPM environment](/azure/backup/backup-overview)   
+    - [Configure Azure backup for DPM data](/previous-versions/system-center/system-center-2012-R2/jj728752(v=sc.12)).
+    - [Configure Azure Backup to prepare for back up of Windows Server](/azure/backup/backup-windows-with-mars-agent).
+    - [Learn about Azure backup and how it integrates with your on\-premises DPM environment](/azure/backup/backup-overview).
 
 
 > [!NOTE]  
@@ -43,7 +43,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 2. When a replacement server is available, install an additional Service Manager management server. For more information, see [How to Install an Additional Management Server](deploy-additional-ms.md).  
 
-   If promoting an additional Service Manager management server is not an option, you have to install a replacement management server. Installing a replacement Service Manager management server involves the following procedures:  
+   If promoting an additional Service Manager management server isn't an option, you've to install a replacement management server. Installing a replacement Service Manager management server involves the following procedures:  
 
 3. Start with a new computer that has the same computer name as the computer that failed.  
 

@@ -4,7 +4,7 @@ title: Encrypt SMA web service to SQL connection by using SSL
 description: This article provides information about how to encrypt SMA web service to SQL connection by using SSL.
 author:  jyothisuri
 ms.author: jsuri
-manager:  vvithal
+manager:  mkluck
 ms.date:  12/25/2020
 ms.topic:  article
 ms.prod:  system-center
@@ -32,18 +32,18 @@ Use the following procedure to securely connect SMA web service with the SQL ser
     ```powershell
     .\aspnet_regiis.exe -pdf "connectionStrings" 'C:\inetpub\Service Management Automation'
     ```
-    ![Decrypt config file](./media/encrypt-sma-web-service/decrypt-config-file.png)
+    ![Screenshot of the Decrypt config file.](./media/encrypt-sma-web-service/decrypt-config-file.png)
 
 4.	Open the web.config file in Notepad from the path **C:\inet\Service Management Automation** and append the Connection String with **“;encrypt=true;trustServerCertificate=true”** as shown below:
 
-    ![Append connection](./media/encrypt-sma-web-service/append-connection.png)
+    ![Screenshot of the Append connection.](./media/encrypt-sma-web-service/append-connection.png)
 
 5.	Encrypt the Config file section by running the following command:
 
     ```powershell
     .\aspnet_regiis.exe -pef "connectionStrings" 'C:\inetpub\Service Management Automation'
     ```
-    ![Encrypt config file](./media/encrypt-sma-web-service/encrypt-config-file.png)
+    ![Screenshot of the Encrypt config file.](./media/encrypt-sma-web-service/encrypt-config-file.png)
 
 6.	Restart the SMA App Pool from **Computer Management**> **Service and Applications** > **Internet Information Service(IIS) Manager**.
 
@@ -52,7 +52,7 @@ Use the following procedure to securely connect SMA web service with the SQL ser
 Use the following steps to secure the connection between Runbook worker and the SQL server.
 
 >[!NOTE]
-> To encrypt the connection, you must run these steps on each of the Runbook worker computer.
+> To encrypt the connection, you must run these steps on each of the Runbook worker computers.
 
 
 1. Navigate to the installation path of SMA and locate the `Orchestrator.Settings.config` file.
@@ -82,8 +82,8 @@ Use the following steps to secure the connection between Runbook worker and the 
 
      For more information, see [SqlClient Connection Strings](/dotnet/framework/data/adonet/connection-string-syntax#sqlclient-connection-strings).
 
-4. Append `TrustServerCertificate=true;` to `connectionString` in case the SSL certificate is not installed on the worker computer.
+4. Append `TrustServerCertificate=true;` to `connectionString` in case the SSL certificate isn't installed on the worker computer.
 
+## Next steps
 
-### Next steps
-[Manage runbooks](manage-runbooks.md)
+- [Manage runbooks](manage-runbooks.md).

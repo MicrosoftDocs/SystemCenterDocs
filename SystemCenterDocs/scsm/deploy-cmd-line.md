@@ -1,7 +1,7 @@
 ---
 title: Deploy from a command line
 description: This article describes how to deploy Service Manager using command-line parameters.
-manager: evansma
+manager: mkluck
 ms.custom: na, intro-deployment
 ms.prod: system-center
 author: jyothisuri
@@ -40,7 +40,7 @@ Setup.exe
 
 ```  
 
- If your command\-line argument contains a space-for example, **\[owners name\]**-enclose the argument in double quotation marks. For example, if you use **Garret Young** as the argument for the **RegisteredOwner** command\-line parameter, type the name as shown in the following example:  
+ If your command\-line argument contains a space-for example, **\[owners name\]**-enclose the argument in double quotation marks. For example, if you use **Garret Young** as the argument for the **RegisteredOwner** command\-line parameter, enter the name as shown in the following example:  
 
 ```  
 /RegisteredOwner:"Garret Young"  
@@ -54,7 +54,7 @@ Setup.exe
 
 
 
- For additional information about command\-line parameters, type **setup.exe /?**. The parameters in the following table are optional.  
+ For additional information about command\-line parameters, enter **setup.exe /?**. The parameters in the following table are optional.  
 
 |command|notes|  
 |---|---|  
@@ -67,26 +67,26 @@ Setup.exe
 
 ### Prepare the computer
 
- To help prevent an installation failure, perform the following steps on the computer where you will be installing Service Manager:  
+ To help prevent an installation failure, perform the following steps on the computer where you'll be installing Service Manager:  
 
-1.  Run the UI\-based Setup up to the point where you run the prerequisite checker. Make sure that the prerequisite checker passes, or at least passes with a warning.  
+1.  Run the UI\-based Setup up to the point where you run the prerequisite checker. Ensure that the prerequisite checker passes, or at least passes with a warning.  
 
-2.  On the computer where you will be installing the reporting server, make sure that the SQL&nbsp;Server Reporting Services \(SSRS\) service has started.  
+2.  On the computer where you'll be installing the reporting server, ensure that the SQL&nbsp;Server Reporting Services \(SSRS\) service has started.  
 
-3.  If you are going to deploy the Reporting Server on a computer other than the computer hosting the data warehouse management server, make sure that you have completed the procedure in [Manual Steps to Configure the Remote SQL Server Reporting Services](config-remote-ssrs.md).  
+3.  If you're going to deploy the Reporting Server on a computer other than the computer hosting the data warehouse management server, ensure that you've completed the procedure in [Manual Steps to Configure the Remote SQL Server Reporting Services](config-remote-ssrs.md).  
 
 ### Determine when installation is complete  
- When installation of either the Service Manager management server or the data warehouse management server is complete, an event with Event&nbsp;ID&nbsp;1033 is written into the Application Event log, as shown in the following illustration.  
+ When installation of either the Service Manager management server or the data warehouse management server is complete, an event with Event&nbsp;ID&nbsp;1033 is written into the Application event log, as shown in the following illustration.  
 
- ![Command Line Install Event Log](./media/deploy-cmd-line/deploy-commandlineinstalleventlog.png)  
+ ![Screenshot showing the Command Line Install Event Log.](./media/deploy-cmd-line/deploy-commandlineinstalleventlog.png)  
 
 
- If you use the **start \/w** command when you are using setup.exe, the command window will remain open when Setup completes, giving you the opportunity to examine any return codes.  
+ If you use the **start \/w** command when you're using setup.exe, the command window will remain open when Setup completes, giving you the opportunity to examine any return codes.  
 
 ### Check error codes  
- When the command\-line Setup is complete, the command prompt appears. You can view the error code that was returned by typing **echo %errorlevel%**. An error code of 0 means that the installation was successful. The error codes that could be returned by the command\-line installation are listed in [Command-line option error codes](#command-line-option-error-codes).  
+ When the command\-line Setup is complete, the command prompt appears. You can view the error code that was returned by entering **echo %errorlevel%**. An error code of 0 means that the installation was successful. The error codes that could be returned by the command\-line installation are listed in [Command-line option error codes](#command-line-option-error-codes).  
 
- The command\-line installation will not check the database name that you supply to see if it already exists. If you supply a database name that already exists, the command\-line installation will fail and a \-1 will be returned as an error code.  
+ The command\-line installation won't check the database name that you supply to see if it already exists. If you supply a database name that already exists, the command\-line installation will fail and a \-1 will be returned as an error code.  
 
 ## Deploy a management server
 
@@ -94,11 +94,11 @@ You can use the following command\-line procedures to deploy the Service Manager
 
 ### To deploy the Service Manager management server and database on one computer  
 
-1.  Log on to the computer where you want to install the Service Manager console using administrative credentials.  
+1.  Sign in to the computer where you want to install the Service Manager console using administrative credentials.  
 
 2.  Open the command window.  
 
-3.  At the command prompt, change directories to the location of the Service Manager installation media, and then type the following:  
+3.  At the command prompt, change directories to the location of the Service Manager installation media, and enter the following:  
 
     ```  
     Start /Wait   
@@ -126,22 +126,22 @@ Use the following procedures to deploy a Service Manager data warehouse and data
 
 ## Deploy the data warehouse  
 
- Use the following procedures to deploy the data warehouse with the Operations Manager and Configuration Manager data mart databases. If you want to install the data warehouse management server and data warehouse databases on the same computer, use the same computer name that you are running Setup on for all instances of **\[computer name\]**. If you want to deploy the databases on a separate computer, adjust the **\[computer name\]** entries accordingly.  
+ Use the following procedures to deploy the data warehouse with the Operations Manager and Configuration Manager data mart databases. If you want to install the data warehouse management server and data warehouse databases on the same computer, use the same computer name that you're running Setup on for all instances of **\[computer name\]**. If you want to deploy the databases on a separate computer, adjust the **\[computer name\]** entries accordingly.  
 
- The **/AnalysisServerDatabaseDataFilePath** is optional, and if it is not used, the default path will be used.  
+ The **/AnalysisServerDatabaseDataFilePath** is optional, and if it isn't used, the default path will be used.  
 
- The DWStagingAndConfig database and the DWRepository database must reside on the same instance. Make sure that you specify the same computer and instance for the **/StgConfigSqlServerInstance** and **/RepositorySqlServerInstance** command\-line options.  
+ The DWStagingAndConfig database and the DWRepository database must reside on the same instance. Ensure that you specify the same computer and instance for the **/StgConfigSqlServerInstance** and **/RepositorySqlServerInstance** command\-line options.  
 
 #### To deploy the data warehouse management server, data warehouse databases, and optional data marts  
 
-1.  Log on to the computer where you want to install the Service Manager console using administrative credentials.  
+1.  Sign in to the computer where you want to install the Service Manager console using administrative credentials.  
 
 2.  Open a command window.  
 
     > [!NOTE]  
     >  You must run the command prompt with administrative credentials.  
 
-3.  At the command prompt, change directories to the location of the Service Manager installation media, and then type the following:  
+3.  At the command prompt, change directories to the location of the Service Manager installation media, and enter the following:  
 
     ```  
     Start /Wait   
@@ -177,11 +177,11 @@ Use the following command\-line procedure to deploy the Service Manager console 
 
 ### To deploy the Service Manager console  
 
-1.  Log on to the computer where you want to install the Service Manager console using administrative credentials.  
+1.  Sign in to the computer where you want to install the Service Manager console using administrative credentials.  
 
 2.  Open a command window.  
 
-3.  At the command prompt, change directories to the location of the Service Manager installation media, and then type the following:  
+3.  At the command prompt, change directories to the location of the Service Manager installation media, and enter the following:  
 
     ```  
     Start /Wait   
@@ -305,4 +305,4 @@ The following is a list of the error codes that are used in the command-line ins
 
 ## Next steps
 
-- Review [Move the Service Manager and data warehouse databases to different servers](move-databases.md) to read prescriptive and how-to guidance about moving Service Manager databases.
+- To read prescriptive and how-to guidance about moving Service Manager databases, review [Move the Service Manager and data warehouse databases to different servers](move-databases.md).

@@ -1,7 +1,7 @@
 ---
 title:  include file
-description: include file to describes the new features and other changes in System Center 1807 - Service Manager.
-manager: evansma
+description: include file to describe the new features and other changes in System Center 1807 - Service Manager.
+manager: mkluck
 ms.topic:  include
 author: jyothisuri
 ms.author: jsuri
@@ -24,5 +24,5 @@ SM 1807 supports SQL 2017. You can upgrade SQL server 2016 to SQL 2017.
 [Learn more](../scsm/system-requirements.md)
 
 > [!NOTE]
-> - With SM 1807, SQL 2017 is supported only if it is upgraded from SQL 2016. Fresh installation of SQL 2017 with SM 1807 is not supported. Users with 1801 deployment and SQL 2016 needs to apply SM 1807 and then upgrade to SQL 2017.
-> - Upgrade process to SQL 2017 uninstalls the reporting services, ensure to migrate required reports such as backup reporting DB and encryption keys.
+> - With SM 1807, SQL 2017 is supported only if it's upgraded from SQL 2016. Fresh installation of SQL 2017 with SM 1807 isn't supported. Users with 1801 deployment and SQL 2016 need to apply SM 1807 and then upgrade to SQL 2017.
+> - Upgrade process to SQL 2017 uninstalls the reporting services; ensure to migrate the required reports such as backup reporting DB and encryption keys.
