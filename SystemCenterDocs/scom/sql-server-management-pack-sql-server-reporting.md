@@ -25,22 +25,22 @@ To open the report, perform the following steps:
 
 1. In the **Reporting** view, double-click **Database Files Space Usage Forecast**.
 
-    ![Database usage forecast](./media/sql-server-management-pack/database-files-space-usage-forecast.png)
+    ![Screenshot showing Database usage forecast.](./media/sql-server-management-pack/database-files-space-usage-forecast.png)
 
 2. In the **Add Group** window, add an object or a group of objects.
 
-    ![Adding objects and groups](./media/sql-server-management-pack/adding-objects-and-groups.png)
+    ![Screenshot showing Adding objects and groups.](./media/sql-server-management-pack/adding-objects-and-groups.png)
 
 3. Select a period and the corresponding time zone for the report. Also, select the number of days for the file space consumption forecast.
 
-    ![Forecast period](./media/sql-server-management-pack/forecast-period.png)
+    ![Screenshot showing the Forecast period.](./media/sql-server-management-pack/forecast-period.png)
 
-4. Click **Run**.
+4. Select **Run**.
 
 The report displays a separate chart for each selected object or a group of objects.
 
-![Forecast chart](./media/sql-server-management-pack/forecast-chart.png)
+![Screenshot showing Forecast chart.](./media/sql-server-management-pack/forecast-chart.png)
 
 A space usage forecast can be reviewed in a separate table.
 
-![Forecast space usage](./media/sql-server-management-pack/forecast-space-usage.png)
+![Screenshot showing Forecast space usage.](./media/sql-server-management-pack/forecast-space-usage.png)
