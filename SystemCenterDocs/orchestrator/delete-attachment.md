@@ -8,11 +8,11 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.assetid: 01589057-32ee-4de2-8148-59eacc1586a4
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete Attachment
@@ -49,6 +49,5 @@ There are no optional properties for this runbook activity.
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 
 ## See Also
-
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

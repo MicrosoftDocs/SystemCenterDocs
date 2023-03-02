@@ -1,7 +1,7 @@
 ---
 title: Use a CSV file to import data
 description: Describes how you can use a CSV file to import data into Service Manager.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -20,11 +20,11 @@ ms.assetid: d968e937-59c1-4a9a-8786-8ff0bbf62db0
 
 ::: moniker-end
 
-This artilce provides an overview and procedures for importing data and configuration items into Service Manager by using comma-separated value (CSV) files.
+This article provides an overview and procedures for importing data and configuration items into Service Manager by using comma-separated value (CSV) files.
 
 ## Import data from comma-separated files
 
-Configuration items contained in a comma-separated value (.csv) file can be imported into the Service Manager database by using the Import from CSV File feature. This feature lets you to bulk-import instances of any class type or projection type that is defined in the Service Manager database. You can use this feature to:
+Configuration items contained in a comma-separated value (.csv) file can be imported into the Service Manager database by using the Import from CSV File feature. This feature lets you bulk-import instances of any class type or projection type that is defined in the Service Manager database. You can use this feature to:
 
 -   Create configuration item or work item instances from data stored in a tabular format.
 
@@ -41,7 +41,7 @@ Two files are required to import a set of instances by using the Import from CSV
 
 1.  A data file that consists of a series of comma-delimited object instances. The data file must end with the .csv file name extension.
 
-2.  A format file that specifies the class type or projection type of the instances present in the data file. Every instance in the data file is assumed to be of this kind. The format file also specifies (1) the subset of properties and, for projections, specifies components. They are being imported for the indicated type, and (2) the order in which those properties appear as columns in the associated data file. The format file must have the same file name as the csv file that it describes, and it must end with the .xml file name extension.
+2.  A format file that specifies the class type or projection type of the instances present in the data file. Every instance in the data file is assumed to be of this kind. The format file also specifies (1) the subset of properties and, for projections, specifies components. They're being imported for the indicated type, and (2) the order in which those properties appear as columns in the associated data file. The format file must have the same file name as the csv file that it describes, and it must end with the .xml file name extension.
 
 ## Create the data file
 For example, you receive a spreadsheet that contains information about computers that you want to import into the Service Manager database. The following is a sample of the first 10 computers in the spreadsheet.
@@ -111,33 +111,33 @@ Save this file as **newcomputers.xml**.
 
 ## Import configuration items from a CSV file
 
-Before you can import data from a comma-separated value (CSV) file, you have to create two files: a data file and a format file. You can use the following procedure to import the Newcomputers.csv file by using the Newcomputers.xml format file.
+Before you can import data from a comma-separated value (CSV) file, you've to create two files: a data file and a format file. You can use the following procedure to import the Newcomputers.csv file by using the Newcomputers.xml format file.
 
 ### To import configuration items from a CSV file
 
-1.  In the Service Manager console, click **Administration**.
+1.  In the Service Manager console, select **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
+2.  In the **Administration** pane, expand **Administration**, and select **Connectors**.
 
-3.  In the **Tasks** pane, click **Import from CSV file**.
+3.  In the **Tasks** pane, select **Import from CSV file**.
 
-4.  In the **Import Instances from CSV File** dialog box, do the following:
+4.  In the **Import Instances from CSV File** dialog, do the following:
 
-    1.  Next to the **XML format file** box, click **Browse**, and then select the format file. For example, select **Newcomputers.xml**, and then click **Open**.
+    1.  Next to the **XML format file** box, select **Browse**, and then select the format file. For example, select **Newcomputers.xml**, and select **Open**.
 
-    2.  Next to the **Data file** box, click **Browse**, and then select the data file. For example, select **Newcomputers.csv**, and then click **Open**.
+    2.  Next to the **Data file** box, select **Browse**, and then select the data file. For example, select **Newcomputers.csv**, and select **Open**.
 
-5.  In the **Import Instances from CSV File** dialog box, click **Import**.
+5.  In the **Import Instances from CSV File** dialog, select **Import**.
 
-6.  In the **Import Instances from CSV File** dialog box, verify that the numbers next to **Items saved**, **Instances created in memory**, and **Instances committed to database** are equal to the number of rows in the data file, and then click **Close**.
+6.  In the **Import Instances from CSV File** dialog, verify that the numbers next to **Items saved**, **Instances created in memory**, and **Instances committed to database** are equal to the number of rows in the data file, and select **Close**.
 
-![PowerShell symbol](./media/import-data-csv/pssymbol.png) You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to import configuration items from a CSV file, see [Import-SCSMInstance](/previous-versions/system-center/powershell/system-center-2012-r2/hh316249(v=sc.20)).
+![Screenshot of the PowerShell symbol.](./media/import-data-csv/pssymbol.png) You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to import configuration items from a CSV file, see [Import-SCSMInstance](/previous-versions/system-center/powershell/system-center-2012-r2/hh316249(v=sc.20)).
 
 ### To validate the import of configuration items from a CSV file
 
-1.  In the Service Manager console, click **Configuration Items**.
+1.  In the Service Manager console, select **Configuration Items**.
 
-2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**.
+2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and select **All Windows Computers**.
 
 3.  In the **All Windows Computers** pane, verify that the computers in the CSV file are listed.
 

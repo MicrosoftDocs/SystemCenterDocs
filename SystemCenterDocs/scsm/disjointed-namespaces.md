@@ -1,7 +1,7 @@
 ---
 title: Deployment considerations with a disjointed namespace
 description: This article helps you avoid Service Manager Setup problems with disjointed namespaces.
-manager: evansma
+manager: mkluck
 ms.custom: na, intro-deployment
 ms.prod: system-center
 author: jyothisuri
@@ -31,27 +31,27 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
 1. Start a Service Manager console.  
 
-2. In the Service Manager console, click **Configuration Items**.  
+2. In the Service Manager console, select **Configuration Items**.  
 
-3. In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**.  
+3. In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and select **All Windows Computers**.  
 
-4. In the **All Windows Computers** pane, click the computer that hosts the Service Manager management server.  
+4. In the **All Windows Computers** pane, select the computer that hosts the Service Manager management server.  
 
-5. In the **Tasks** pane, under the name of the computer, click **Edit**.  
+5. In the **Tasks** pane, under the name of the computer, select **Edit**.  
 
-6. In the **Computer - *computer name*** window, observe that there is an **Extensions** tab at the top of the form. The **Extensions** tab appears only when you view a Service Manager management server.  
+6. In the **Computer - *computer name*** window, observe that there's an **Extensions** tab at the top of the form. The **Extensions** tab appears only when you view a Service Manager management server.  
 
-7. In the **General** tab in the form, in the **Computer Identity** area, the **Principal name** box shows the principal name that you will use in the following procedure.  
+7. In the **General** tab in the form, in the **Computer Identity** area, the **Principal name** box shows the principal name that you'll use in the following procedure.  
 
-8. Click **Close** to close the form.  
+8. Select **Close** to close the form.  
 
 9. At a command prompt, ping the Service Manager management server. You must have the IP address of the Service Manager management server for the following procedure.  
 
 ## Edit the hosts file  
 
-1.  On the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal, start Windows Explorer, and then locate the %Systemroot%\\System32\\Drivers\\Etc folder.  
+1.  On the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal, start Windows Explorer and then locate the %Systemroot%\\System32\\Drivers\\Etc folder.  
 
-2.  Open the hosts file with Notepad by typing **notepad hosts**, and then press ENTER.  
+2.  Open the hosts file with Notepad by entering **notepad hosts**, and then press ENTER.  
 
 3.  At the end of the hosts file, add an entry starting with the IP address of the Service Manager management server followed by its principal name.  
 

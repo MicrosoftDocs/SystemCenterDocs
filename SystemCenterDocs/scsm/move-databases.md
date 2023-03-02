@@ -1,7 +1,7 @@
 ---
 title: Move the Service Manager and data warehouse databases
 description: This article helps you move the Service Manager and data warehouse databases to different servers after you have deployed Service Manager.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -23,9 +23,9 @@ ms.assetid: 8b6c406a-7cb3-4be7-902b-5a09be71ad98
 
 ::: moniker-end
 
-After you have deployed Service Manager, you might need to move the Service Manager or data warehouse databases from one computer running Microsoft SQL Server to another for reasons such as the following:  
+After you've deployed Service Manager, you might need to move the Service Manager or data warehouse databases from one computer running Microsoft SQL Server to another for reasons such as the following.  
 
-- You need to replace hardware that is experiencing issues and that is no longer considered reliable.  
+- You need to replace hardware that is experiencing issues and is no longer considered reliable.  
 
 - You need to add additional hardware to improve scalability and performance.  
 
@@ -39,7 +39,7 @@ After you have deployed Service Manager, you might need to move the Service Mana
 
 - You need to restore functionality in a failure scenario.  
 
-If you want the move the data warehouse database, and if you have installed Service Manager within the last 90 days, it might be easier for you to unregister the data warehouse, install a new data warehouse, and register the new database. If the data has not been groomed from the Service Manager database, there will be no data loss in the data warehouse database because it will be synchronized. By default, the grooming interval for work items is 90 days from the last time a work item was modified. Using this process is much simpler than using the following guidance, which details how to move your databases from one server to another and requires many steps.  
+If you want the move the data warehouse database, and if you've installed Service Manager within the last 90 days, it might be easier for you to unregister the data warehouse, install a new data warehouse, and register the new database. If the data hasn't been groomed from the Service Manager database, there will be no data loss in the data warehouse database because it will be synchronized. By default, the grooming interval for work items is 90 days from the last time a work item was modified. Using this process is simpler than using the following guidance, which details how to move your databases from one server to another and requires many steps.  
 
 
 ## Move the Service Manager database
@@ -62,7 +62,7 @@ You must use the following high\-level steps to move the Service Manager databas
 5.  Configure the Service Manager database, as described in [How to Prepare the Service Manager Database in the Lab Environment](lab-env.md#prepare-the-service-manager-database-in-the-lab-environment).  
 
     > [!IMPORTANT]  
-    >  Do not perform step 17 in the procedure for configuring tables.  
+    >  Don't perform step 17 in the procedure for configuring tables.  
 
 6.  After you move the ServiceManager database, ensure that you manually change all the Service Manager database and data warehouse registration information in the DWStagingAndConfig database. Old information about where the ServiceManager database is located remains in the DWStagingAndConfig database in the following tables:  
 
@@ -74,15 +74,15 @@ You must use the following high\-level steps to move the Service Manager databas
 
         -   In the corresponding entry with DataService\_GUID \= ServiceManager, change the field Server\_GUID to the new name of the SQLServer\\Instance where the ServiceManager database has moved to.  
 
-7.  Configure the registry on all the management servers that will access the new SQL Server instance, by using the following steps:  
+7.  Configure the registry on all the management servers that will access the new SQL Server instance by using the following steps:  
 
     1.  Open Registry Editor.  
 
     2.  Browse to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\System Center\\\<version\>\\Common\\Database**.  
 
-    3.  Configure two keys: one for the server name \(DatabaseServerName\) and one for the database name \(DatabaseName\). Set values to the new server name and database name, if they are different from the original values.  
+    3.  Configure two keys: one for the server name \(DatabaseServerName\) and one for the database name \(DatabaseName\). Set values to the new server name and database name, if they're different from the original values.  
 
-8.  If you are also upgrading the SQL server while moving, then upgrade the following SQL Server prerequisites for the Service Manager Management server. There are 2 SQL Server prerequisites:  
+8.  If you're also upgrading the SQL server while moving, then upgrade the following SQL Server prerequisites for the Service Manager Management server. There are 2 SQL Server prerequisites:  
 
     -   SQL Native Client  
 
@@ -90,11 +90,11 @@ You must use the following high\-level steps to move the Service Manager databas
 
 9. Start the System Center services on all the management servers, as described in [How to Start Service Manager Services on the Secondary Management Server](lab-env.md#start-service-manager-services-on-the-secondary-management-server).  
 
-10. Install another Service Manager database that has a different name on the same computer that is running SQL Server, by installing another Service Manager management server and choosing to create a new database. This step will populate the master database with error message text so that if an error occurs in the future, the error message can describe the specific problem instead of displaying generic text. After the database is installed, you can drop it from the computer that is running SQL Server and uninstall the additional, temporary management server.  
+10. Install another Service Manager database that has a different name on the same computer that is running SQL Server by installing another Service Manager management server and choosing to create a new database. This step will populate the master database with error message text so that if an error occurs in the future, the error message can describe the specific problem instead of displaying generic text. After the database is installed, you can drop it from the computer that is running SQL Server and uninstall the additional, temporary management server.  
 
      \-Or\-  
 
-     Run the following query on the source Service Manager database server and copy the output script and then run it on new Service Manager database server.  
+     Run the following query on the source Service Manager database server and copy the output script, and then run it on new Service Manager database server.  
 
     ```  
     DECLARE @crlf char(2);  
@@ -131,7 +131,7 @@ You must use the following high\-level steps to move the Service Manager databas
 
 ## Move data warehouse databases
 
-The following high\-level steps are required to move the data warehouse databases. Each step in this list links to an associated procedure later in this document.  
+The following high\-level steps are required to move the data warehouse databases. Each step in this list links to an associated procedure later in this article.  
 
 1. Locate user accounts and instances of SQL Server
 2. Stop Service Manager services
@@ -145,7 +145,7 @@ The following high\-level steps are required to move the data warehouse database
 10. Start Service Manager Services on the data warehouse management server
 
 > [!IMPORTANT]  
->  After you move the **DWStagingAndConfig** and **DWRepository** databases, they have to be restored on the same instance of SQL Server. Restoring them on a separate instances of SQL Server is not supported.  
+>  After you move the **DWStagingAndConfig** and **DWRepository** databases, they have to be restored on the same instance of SQL Server. Restoring them on a separate instances of SQL Server isn't supported.  
 >   
 >  The collation on the new instance of SQL Server has to match the collation of the original instances of SQL Server where the data warehouse databases were originally hosted.  
 
@@ -155,11 +155,11 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To identify the SQL Server database and instance names used by the data warehouse management server  
 
-1.  Log on to the data warehouse management server as a user with administrative credentials.  
+1.  Sign in to the data warehouse management server as a user with administrative credentials.  
 
-2.  On the Windows desktop, click **Start**, and then click **Run**.  
+2.  On the Windows desktop, select **Start**, and select **Run**.  
 
-3.  In the **Run** dialog box, in the **Open** box, type **regedit**, and then click **OK**.  
+3.  In the **Run** dialog, in the **Open** box, enter **regedit**, and select **OK**.  
 
 4.  In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\\<version\>\\Common\\Database**, and then make note of the following registry values:  
 
@@ -189,9 +189,9 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To identify the reporting server and instance names used by data warehouse management server  
 
-1. Log on to the data warehouse management server as a user with administrative credentials.  
-2. On the Windows desktop, click **Start**, and then click **Run**.  
-3. In the **Run** dialog box, in the **Open** box, type **regedit**, and then click **OK**.  
+1. Sign in to the data warehouse management server as a user with administrative credentials.  
+2. On the Windows desktop, select **Start**, and select **Run**.  
+3. In the **Run** dialog, in the **Open** box, enter **regedit**, and select **OK**.  
 4. In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\\<version\>\\Common\\Reporting**, and then make note of the following registry values:  
 
     -   Server  
@@ -200,13 +200,13 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To identify the service account used by the data warehouse management server  
 
-1.  On the Windows desktop, click **Start**, and then click **Run**.  
+1.  On the Windows desktop, select **Start**, and select **Run**.  
 
-2.  In the **Run** dialog box, in the **Open** box, type **services.msc**, and then click **OK**.  
+2.  In the **Run** dialog, in the **Open** box, enter **services.msc**, and select **OK**.  
 
 3.  Locate the service System Center Data Access Service, and double\-click it.  
 
-4.  In the **Properties** window, click the **Log On** tab.  
+4.  In the **Properties** window, select the **Log On** tab.  
 
 5.  Make a note of the user account name under **This account:**.  
 
@@ -217,44 +217,44 @@ The following high\-level steps are required to move the data warehouse database
 1.  > [!NOTE]  
     >  The account that is configured by using the names in the following data sources in SQL Server Reporting Services is called the **Reporting account**.  
 
-     Log on to the server with SQL Server Reporting Services that are hosting the Service Manager reports.  
+     Sign in to the server with SQL Server Reporting Services that are hosting the Service Manager reports.  
 
     > [!NOTE]  
-    >  In this procedure, you will use values that you noted in the "To identify the SQL Server database and instance names used by the data warehouse management server" procedure.  
+    >  In this procedure, you'll use values that you noted in the "To identify the SQL Server database and instance names used by the data warehouse management server" procedure.  
 
-2.  In SQL Server Reporting Services, click **Start**, click **All Programs**, click the program group for the version of SQL Server you are running, click **Configuration Tools**, and then click **Reporting Services Configuration Manager**.  
+2.  In SQL Server Reporting Services, select **Start**, select **All Programs**, select the program group for the version of SQL Server you're running, select **Configuration Tools**, and select **Reporting Services Configuration Manager**.  
 
-3.  In the **Reporting Services Configuration Connection** dialog box, connect to the **SQL Reporting instance** that you noted in a previous procedure.  
+3.  In the **Reporting Services Configuration Connection** dialog, connect to the **SQL Reporting instance** that you noted in a previous procedure.  
 
-4.  In **Reporting Services Configuration Manager**, click **Reporting Manager URL**.  
+4.  In **Reporting Services Configuration Manager**, select **Reporting Manager URL**.  
 
-5.  On the **Reporting Manager URL** page, click the hyperlink that resembles `http://Servername:portnumber/Reports` to open it in your web browser.  
+5.  On the **Reporting Manager URL** page, select the hyperlink that resembles `http://Servername:portnumber/Reports` to open it in your web browser.  
 
 6.  Open the **System Center** folder and then open the **Service Manager** folder.  
 
-7.  Click the **DWDataMart** data source and make a note of the **User name** value under **Credentials stored securely in the report server**.  
+7.  Select the **DWDataMart** data source and make a note of the **User name** value under **Credentials stored securely in the report server**.  
 
-8.  In your browser, click **Back** to return to the **Service Manager** folder.  
+8.  In your browser, select **Back** to return to the **Service Manager** folder.  
 
-9. Click the **DWStagingAndConfig** data source and make a note of the **User name** value under **Credentials stored securely in the report server**.  
+9. Select the **DWStagingAndConfig** data source and make a note of the **User name** value under **Credentials stored securely in the report server**.  
 
-10. In your browser, click **Back** to return to the **Service Manager** folder.  
+10. In your browser, select **Back** to return to the **Service Manager** folder.  
 
-11. Click the **ConfigurationManager** data source and make a note of the **User name** value under **Credentials stored securely in the report server**.  
+11. Select the **ConfigurationManager** data source and make a note of the **User name** value under **Credentials stored securely in the report server**.  
 
-12. In your browser, click **Back** to return to the **Service Manager** folder.  
+12. In your browser, select **Back** to return to the **Service Manager** folder.  
 
-13. Click the **MultiMartDatasource** data source and make a note of the **User name** value under **Credentials stored securely in the report server**.  
+13. Select the **MultiMartDatasource** data source and make a note of the **User name** value under **Credentials stored securely in the report server**.  
 
-14. In your browser, click **Back** to return to the **Service Manager** folder.  
+14. In your browser, select **Back** to return to the **Service Manager** folder.  
 
-15. Click the **OperationsManager** data source and make a note of the **User name** value under **Credentials stored securely in the report server**.  
+15. Select the **OperationsManager** data source and make a note of the **User name** value under **Credentials stored securely in the report server**.  
 
 16. Close the browser window.  
 
 #### To identify the OLAP Account used by the data warehouse management server  
 
-1. Log on to the Service Manager server, click **Start**, click **All Programs**, click **Microsoft System Center \<version\>**, click **Service Manager**, and then click **Service Manager Shell**.  
+1. Sign in to the Service Manager server, select **Start**, select **All Programs**, select **Microsoft System Center \<version\>**, select **Service Manager**, and select **Service Manager Shell**.  
 
 2. In the Windows PowerShell command prompt, copy the following command, and then press ENTER.  
 
@@ -276,19 +276,19 @@ The following high\-level steps are required to move the data warehouse database
 
    2.  In the **Connect to Server** window, select **Analysis Services** in the **Server type** list.  
 
-   3.  In the **Server name** list, type or select the name you noted from the output of the $OLAPServer.Server cmdlet in previous step, and then click **Connect**.  
+   3.  In the **Server name** list, enter or select the name you noted from the output of the $OLAPServer.Server cmdlet in previous step, and select **Connect**.  
 
    4.  In the **Object Explorer** pane, expand **Databases**, and then expand the **DWASDataBase** OLAP database.  
 
    5.  Expand the **Data Sources** folder, and then double\-click **CMDataMart**.  
 
-   6.  In the **Data Source Properties - CMDataMart** dialog box, note the value of **Connection String**.  
+   6.  In the **Data Source Properties - CMDataMart** dialog, note the value of **Connection String**.  
 
-   7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button \(...\), to open the **Impersonation Information** dialog box.  
+   7.  Under **Security Settings**, select **Impersonation Account**, and select the properties button \(...\), to open the **Impersonation Information** dialog.  
 
-   8.  In the **Impersonation Information** dialog box, note the user name.  
+   8.  In the **Impersonation Information** dialog, note the user name.  
 
-   9. Click **Cancel** twice to close the dialog boxes.  
+   9. Select **Cancel** twice to close the dialogs.  
 
    10. Repeat the steps above to note the Connection string and the User name for the DWDataMart and OMDataMart databases.  
 
@@ -298,9 +298,9 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To stop Service Manager services on the data warehouse management server  
 
-1.  In the **Run** dialog box, in the **Open** text field, type **services.msc**, and then click **OK**.  
+1.  In the **Run** dialog, in the **Open** text field, enter **services.msc**, and select **OK**.  
 
-2.  In the **Services** window, in the **Services \(Local\)** pane, locate the following three services, and for each one, click **Stop**:  
+2.  In the **Services** window, in the **Services \(Local\)** pane, locate the following three services, and for each one, select **Stop**:  
 
     1.  System Center Data Access Service  
 
@@ -314,26 +314,26 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To back up the data warehouse databases  
 
-1.  Log on to the original computer running SQL Server that is hosting the data warehouse databases, and open **SQL Server Management Studio**.  
+1.  Sign in to the original computer running SQL Server that is hosting the data warehouse databases, and open **SQL Server Management Studio**.  
 
-2.  In the **Connect to Server** dialog box, follow these steps:  
+2.  In the **Connect to Server** dialog, follow these steps:  
 
     1.  In the **Server Type** list, select **Database Engine**.  
 
     2.  In the **Server Name** list, select the server name for your data warehouse database.  
 
-    3.  In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.  
+    3.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
 
 3.  In the **Object Explorer** pane, expand **Databases**.  
 
-4.  Right\-click the **DWStagingAndConfig** database, click **Tasks**, and then click **Back Up**.  
+4.  Select and hold the **DWStagingAndConfig** database, select **Tasks**, and select **Back Up**.  
 
-5.  In the **Back Up Database** dialog box, type a path and a file name in the **Destination on disk** text box, and then click **OK**.  
+5.  In the **Back Up Database** dialog, enter a path and a file name in the **Destination on disk** text box, and select **OK**.  
 
     > [!IMPORTANT]  
     >  The destination location must have enough available free disk space to store the backup files.  
 
-6.  Click **OK** in the **Back Up Database** dialog box to start the back up.  
+6.  Select **OK** in the **Back Up Database** dialog to start the backup.  
 
 7.  Repeat these steps for the DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart databases.  
 
@@ -343,21 +343,21 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To take the data warehouse databases offline  
 
-1.  Log on to the original computer running SQL Server that is hosting the data warehouse databases, and open **SQL Server Management Studio**.  
+1.  Sign in to the original computer running SQL Server that is hosting the data warehouse databases, and open **SQL Server Management Studio**.  
 
-2.  In the **Connect to Server** dialog box, follow these steps:  
+2.  In the **Connect to Server** dialog, follow these steps:  
 
     1.  In the **Server Type** list, select **Database Engine**.  
 
     2.  In the **Server Name** list, select the server name for your data warehouse database.  
 
-    3.  In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.  
+    3.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
 
 3.  In the **Object Explorer** pane, expand **Databases**.  
 
-4.  Right\-click the **DWStagingAndConfig** database, click **Tasks**, and then click **Take Offline**.  
+4.  Select and hold the **DWStagingAndConfig** database, select **Tasks**, and select **Take Offline**.  
 
-5.  In the **Take database offline** dialog box, click **Close**.  
+5.  In the **Take database offline** dialog, select **Close**.  
 
 6.  Repeat the previous steps for the DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart databases.  
 
@@ -369,23 +369,23 @@ The following high\-level steps are required to move the data warehouse database
 
 1.  On the new computer running SQL Server, open **SQL Server Management Studio**.  
 
-2.  In the **Connect to Server** dialog box, follow these steps:  
+2.  In the **Connect to Server** dialog, follow these steps:  
 
     1.  In the **Server Type** list, select **Database Engine**.  
 
     2.  In the **Server Name** list, select the server name for your Service Manager services database.  
 
-    3.  In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.  
+    3.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
 
-3.  In the **Object Explorer** pane, right\-click the **Databases** folder, and then click **Restore Database**.  
+3.  In the **Object Explorer** pane, select and hold the **Databases** folder, and select **Restore Database**.  
 
-4.  In the **Restore Database** dialog box, under the **To a point in time** text box, retain the default, **Most recent possible**, or select a specific date and time by clicking the browse button to open the **Point in Time Restore** dialog box.  
+4.  In the **Restore Database** dialog, under the **To a point in time** text box, retain the default, **Most recent possible**, or select a specific date and time by selecting the browse button to open the **Point in Time Restore** dialog.  
 
-5.  To specify the source and location of the backup sets to restore, click **From Device**.  
+5.  To specify the source and location of the backup sets to restore, select **From Device**.  
 
-6.  Click **Browse** to open the **Specify Backup** dialog box.  
+6.  Select **Browse** to open the **Specify Backup** dialog.  
 
-7.  In the **Backup media** list box, select one of the listed device types. To select more devices for the Backup location, click **Add**.  
+7.  In the **Backup media** list box, select one of the listed device types. To select more devices for the Backup location, select **Add**.  
 
 8.  In the **Select the backup sets to restore** grid, select the backups to restore. \(This grid displays the backups that are available for the specified location.\)  
 
@@ -397,7 +397,7 @@ The following high\-level steps are required to move the data warehouse database
 
 12. For the **Recovery state** option, select **Leave the databases ready to use by rolling back the uncommitted transactions. Additional transaction logs cannot be restored \(RESTORE WITH RECOVERY\)**.  
 
-13. Click **OK** to restore the database.  
+13. Select **OK** to restore the database.  
 
 14. Repeat the previous steps for the DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart databases.  
 
@@ -415,19 +415,19 @@ The following high\-level steps are required to move the data warehouse database
 
 1.  On the new computer running SQL Server, open **SQL Server Management Studio**.  
 
-2.  In the **Connect to Server** dialog box, follow these steps:  
+2.  In the **Connect to Server** dialog, follow these steps:  
 
     1.  In the **Server Type** list, select **Database Engine**.  
 
     2.  In the **Server Name** list, select the name of the new computer running SQL Server that hosts the **DWStagingAndConfig** database.  
 
-    3.  In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.  
+    3.  In the **Authentication** list, select **Windows Authentication**, and select **Connect**.  
 
-3.  In the **Object Explorer** pane, expand **Databases**, and then click **DWStagingAndConfig**.  
+3.  In the **Object Explorer** pane, expand **Databases**, and select **DWStagingAndConfig**.  
 
-4.  In the toolbar, click **New Query**.  
+4.  In the toolbar, select **New Query**.  
 
-5.  In the center pane, copy the following command, and then click **Execute**.  
+5.  In the center pane, copy the following command, and select **Execute**.  
 
     ```  
     sp_configure&nbsp;'clr enabled',&nbsp;1  
@@ -436,19 +436,19 @@ The following high\-level steps are required to move the data warehouse database
     go  
     ```  
 
-6.  In the center pane, remove the command you typed in the previous step, copy the following command, and then click **Execute**.  
+6.  In the center pane, remove the command you typed in the previous step, copy the following command, and select **Execute**.  
 
     ```  
     ALTER DATABASE DWStagingAndConfig SET SINGLE_USER WITH ROLLBACK IMMEDIATE  
     ```  
 
-7.  In the center pane, remove the command you typed in the previous step, copy the following command, and then click **Execute**.  
+7.  In the center pane, remove the command you entered in the previous step, copy the following command, and select **Execute**.  
 
     ```  
     ALTER DATABASE DWStagingAndConfig SET ENABLE_BROKER  
     ```  
 
-8.  In the center pane, remove the command you typed in the previous step, type the following command, and then click **Execute**.  
+8.  In the center pane, remove the command you entered in the previous step, enter the following command, and select **Execute**.  
 
     ```  
     ALTER DATABASE DWStagingAndConfig SET MULTI_USER  
@@ -456,16 +456,16 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To configure the service account database permissions  
 
-1.  In the **Object Explorer** pane, expand **Security**, and then expand **Logins**. Right\-click **Logins**, and then click **New Login**.  
+1.  In the **Object Explorer** pane, expand **Security**, and then expand **Logins**. Select and hold **Logins**, and select **New Login**.  
 
-2.  Click **Search**.  
+2.  Select **Search**.  
 
-3.  Type the user name by using the domain\\user name format for the data warehouse service account, click **Check Names**, and then click **OK**.  
+3.  Enter the user name by using the domain\\user name format for the data warehouse service account, select **Check Names**, and select **OK**.  
 
     > [!NOTE]  
     >  If the Data Access Account is running as LocalSystem, use the format *domain\computername$* in SQL Logins, where *computername* is the name of the management server.  
 
-4.  In the **Select a page** pane, click **User Mapping**.  
+4.  In the **Select a page** pane, select **User Mapping**.  
 
 5.  In the **Users mapped to this login** area, in the **Map** column, select the row that represents the name of the DWStagingAndConfig database. DWStagingAndConfig is the default database name.  
 
@@ -505,17 +505,17 @@ The following high\-level steps are required to move the data warehouse database
 
     -   **public**  
 
-9. Click **OK**.  
+9. Select **OK**.  
 
 10. In the **Object Explorer** pane, expand **Security**, and then expand **Logins**.  
 
-11. Right\-click **Logins**, and then **click New  Login**.  
+11. Select and hold **Logins**, and then **click New  Login**.  
 
-12. Click **Search**.  
+12. Select **Search**.  
 
-13. Type the user name in the domain\\user name format for the reporting account, click **Check Names**, and then click **OK**.  
+13. Enter the user name in the domain\\user name format for the reporting account, select **Check Names**, and select **OK**.  
 
-14. In the **Select a page** pane, click **User Mapping**.  
+14. In the **Select a page** pane, select **User Mapping**.  
 
 15. In the **Users mapped to this login** area, in the **Map** column, select the row that represents the name of the DWStagingAndConfig. DWStagingAndConfig is the default database name.  
 
@@ -557,17 +557,17 @@ The following high\-level steps are required to move the data warehouse database
 
     -   **reportuser**  
 
-21. Click **OK**.  
+21. Select **OK**.  
 
 22. In the **Object Explorer** pane, expand **Security**, and then expand **Logins**.  
 
-23. Right\-click **Logins**, and then click **New  Login**.  
+23. Select and hold **Logins**, and select **New  Login**.  
 
-24. Click **Search**.  
+24. Select **Search**.  
 
-25. Type the user name in the domain\\user name format for the **OLAP account**, click **Check Names**, and then click **OK**.  
+25. Enter the user name in the domain\\user name format for the **OLAP account**, select **Check Names**, and select **OK**.  
 
-26. In the **Select a page** pane, click **User Mapping**.  
+26. In the **Select a page** pane, select **User Mapping**.  
 
 27. In the **Database role membership for: DWDataMart** area, ensure that the following entries are selected:  
 
@@ -593,29 +593,29 @@ The following high\-level steps are required to move the data warehouse database
 
     -   **reportuser**  
 
-30. Click **OK**.  
+30. Select **OK**.  
 
 #### To configure the DWStagingAndConfig tables  
 
 1.  In the **Object Explorer** pane, expand **Databases**, expand **DWStagingAndConfig**, and then expand **Tables**.  
 
-2.  Right\-click **dbo.MT\_Microsoft$SystemCenter$ManagementGroup**, and then click **Edit Top 200 Rows**.  
+2.  Select **dbo.MT\_Microsoft$SystemCenter$ManagementGroup**, and select **Edit Top 200 Rows**.  
 
-3.  In the center pane, locate the column **SQLServerName\_ 43FB076F\_7970\_4C86\_6DCA\_8BD541F45E3A**, and then in the first row of the column, type the name of the new computer running SQL Server that is hosting the DWStagingAndConfig database. In the case of named instances, type **ComputerName\\InstanceName**.  
+3.  In the center pane, locate the column **SQLServerName\_ 43FB076F\_7970\_4C86\_6DCA\_8BD541F45E3A**, and then in the first row of the column, enter the name of the new computer running SQL Server that is hosting the DWStagingAndConfig database. For named instances, enter **ComputerName\\InstanceName**.  
 
-4.  Right\-click **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SqlResourceStore**, and then click **Edit Top 200 Rows**.  
+4.  Select and hold **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SqlResourceStore**, and select **Edit Top 200 Rows**.  
 
-5.  Update the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA** for rows representing DWStagingAndConfig, DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart by typing the name of the new computer running SQL Server that is hosting the respective databases. In the case of named instances, type **ComputerName\\InstanceName**.  
+5.  Update the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA** for rows representing DWStagingAndConfig, DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart by entering the name of the new computer running SQL Server that is hosting the respective databases. For named instances, enter **ComputerName\\InstanceName**.  
 
-6.  Right\-click **dbo.MT\_Microsoft$SystemCenter$ResourceAccessLayer$CMDBResourceStore**, and then click **Edit Top 200 Rows**.  
+6.  Select and hold **dbo.MT\_Microsoft$SystemCenter$ResourceAccessLayer$CMDBResourceStore**, and select **Edit Top 200 Rows**.  
 
-7.  In the center pane, locate the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, and in the first row of the column, type the name of the new computer running SQL Server that is hosting the DWStagingAndConfig database. In the case of named instances, type **ComputerName\\InstanceName**.  
+7.  In the center pane, locate the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, and in the first row of the column, enter the name of the new computer running SQL Server that is hosting the DWStagingAndConfig database. For named instances, enter **ComputerName\\InstanceName**.  
 
-8.  Right\-click **LFX.DataSource**, and then click **Edit Top 200 Rows**.  
+8.  Select and hold **LFX.DataSource**, and select **Edit Top 200 Rows**.  
 
 9. In the center pane, locate the **DataSourceAddress** column, and in the first row of the column, locate the entry that starts with **Data Source = *server name*; Initial Catalog = DWStagingAndConfig; Persist Security Info=False**. Replace ***server name*** with the name of the new computer running SQL Server.  
 
-10. Ensure that the values you typed were saved by querying the tables specified in the previous steps.  
+10. Ensure that the values you entered were saved by querying the tables specified in the previous steps.  
 
 11. Close **Microsoft SQL Server Management Studio**.  
 
@@ -625,11 +625,11 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To update the data warehouse management server to use the new database server name  
 
-1.  Log on to the computer as a user with administrative credentials.  
+1.  Sign in to the computer as a user with administrative credentials.  
 
-2.  On the Windows desktop, click **Start**, and then click **Run**.  
+2.  On the Windows desktop, select **Start**, and select **Run**.  
 
-3.  In the **Run** dialog box, in the **Open** box, type **regedit**, and then click **OK**.  
+3.  In the **Run** dialog, in the **Open** box, enter **regedit**, and select **OK**.  
 
     > [!CAUTION]  
     >  Incorrectly editing the registry might severely damage your system; therefore, before making changes to the registry, back up any valued data on the computer.  
@@ -639,9 +639,9 @@ The following high\-level steps are required to move the data warehouse database
 
 5.  In the right pane, double\-click **DatabaseServerName**.  
 
-6.  In the **Edit String** box, in the **Value data** box, type the name of the new computer running SQL Server that hosts the DWStagingAndConfig database. If you are using a named instance of SQL Server, use the Computer Name\\Instance name format.  
+6.  In the **Edit String** box, in the **Value data** box, enter the name of the new computer running SQL Server that hosts the DWStagingAndConfig database. If you're using a named instance of SQL Server, use the Computer Name\\Instance name format.  
 
-7.  Click **OK**.  
+7.  Select **OK**.  
 
 8.  Repeat the previous steps for the registry values to reflect the new name of the computer running SQL Server for the DWDataMart, OMDWDataMart, CMDWDataMart, DWRepository, and DWStagingAndConfig databases.  
 
@@ -662,33 +662,33 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To update the data sources on the reporting server  
 
-1.  Log on to the Service Manager reporting server, and start **Reporting Services Configuration Manager**.  
+1.  Sign in to the Service Manager reporting server, and start **Reporting Services Configuration Manager**.  
 
-2.  In the **Reporting Services Configuration Connection** dialog box, connect to the correct reporting server instance as noted in the section To identify the reporting server and instance name used by data warehouse management server.  
+2.  In the **Reporting Services Configuration Connection** dialog, connect to the correct reporting server instance as noted in the section To identify the reporting server and instance name used by data warehouse management server.  
 
 3.  In the Reporting Services Configuration Manager list, select **Report Manager URL**.  
 
-4.  On the **Report Manager URL** page, click the hyperlink that resembles `http://Servername/:portnumber/Reports` to open the **Reports** home page in your Internet browser.  
+4.  On the **Report Manager URL** page, select the hyperlink that resembles `http://Servername/:portnumber/Reports` to open the **Reports** home page in your Internet browser.  
 
 5.  On the home page, open the **System Center** folder, and then open the **Service Manager** folder.  
 
-6.  Open the list of Service Manager items, and then click the **DWDataMart** data source.  
+6.  Open the list of Service Manager items, and select the **DWDataMart** data source.  
 
 7.  In the **Connection string** box, the string resembles `data source=<server name>;initial catalog=DWDataMart`. Replace the existing name of the computer running SQL Server by typing the name of the new computer running SQL Server.  
 
-8.  Go back to the previous Service Manager folder webpage, and click the **DWStagingAndConfig** data source.  
+8.  Go back to the previous Service Manager folder webpage, and select the **DWStagingAndConfig** data source.  
 
 9. In the **Connection string** box, the string resembles `data source=<server name>;initial catalog= DWStagingAndConfig`. Replace the existing name of the computer running SQL Server by typing the name of the new computer running SQL Server.  
 
-10. Go back to the previous Service Manager folder webpage and click the **ConfigurationManager** data source.  
+10. Go back to the previous Service Manager folder webpage and select the **ConfigurationManager** data source.  
 
-11. In the **Connection string** box, the string resembles `data source=<server name>;initial catalog= CMDWDataMart`. Replace the existing name of the computer running SQL Server by typing the name of the new computer running SQL Server.  
+11. In the **Connection string** box, the string resembles `data source=<server name>;initial catalog= CMDWDataMart`. Replace the existing name of the computer running SQL Server by entering the name of the new computer running SQL Server.  
 
-12. Go back to the previous Service Manager folder webpage and click the **MultiMartDatasource** data source.  
+12. Go back to the previous Service Manager folder webpage and select the **MultiMartDatasource** data source.  
 
-13. In the **Connection string** box, the string resembles `<root><source id='DWDataMart' connectionString='Data Source=<Server name>;Initial Catalog=DWDataMart;Integrated Security=True' /><source id='OMDataMart' connectionString='Data Source=<Server name>;Initial Catalog=OMDWDataMart;Integrated Security=True' /><source id='CMDataMart' connectionString='Data Source=<Server name>;Initial Catalog=CMDWDataMart;Integrated Security=True' /></root>`. Replace the existing name of the computer running SQL Server by typing the name of the new computer running SQL Server.  
+13. In the **Connection string** box, the string resembles `<root><source id='DWDataMart' connectionString='Data Source=<Server name>;Initial Catalog=DWDataMart;Integrated Security=True' /><source id='OMDataMart' connectionString='Data Source=<Server name>;Initial Catalog=OMDWDataMart;Integrated Security=True' /><source id='CMDataMart' connectionString='Data Source=<Server name>;Initial Catalog=CMDWDataMart;Integrated Security=True' /></root>`. Replace the existing name of the computer running SQL Server by entering the name of the new computer running SQL Server.  
 
-14. Go back to the previous Service Manager folder webpage and click the **Operations Manager** data source.  
+14. Go back to the previous Service Manager folder webpage and select the **Operations Manager** data source.  
 
 15. In the **Connection string** box, the string resembles `data source=<server name>;initial catalog= OMDWDataMart`. Replace the existing name of the computer running SQL Server by typing the name of the new computer running SQL Server.  
 
@@ -700,23 +700,23 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To update the data sources for the Analysis services  
 
-1.  Log on to the server that hosts the SQL Server Analysis Services database.  
+1.  Sign in to the server that hosts the SQL Server Analysis Services database.  
 
 2.  Open **SQL Server Management Studio**.  
 
-3.  In the **Connect to Server** dialog box, in the **Server Type** list, select **Analysis Services**.  
+3.  In the **Connect to Server** dialog, in the **Server Type** list, select **Analysis Services**.  
 
-4.  In the **Server name** list, type the server name that you received as output from the $OLAPServer.Server cmdlet. \(You noted this information in the To identify the OLAP Account used by the data warehouse management server section earlier in this topic.\)  
+4.  In the **Server name** list, enter the server name that you received as output from the $OLAPServer.Server cmdlet. \(You noted this information in the To identify the OLAP Account used by the data warehouse management server section earlier in this topic.\)  
 
 5.  In the **Object Explorer** pane, expand **Databases**, and then expand **DWASDataBase**.  
 
 6.  Expand **Data Sources**, and then double\-click **CMDataMart**.  
 
-7.  In the **Data Source Properties - CMDataMart** dialog box, select **Connection string Provider=SQLNCLI10.1;Data Source=servername;Integrated Security=SSPI;Initial Catalog=CMDWDataMart**.  
+7.  In the **Data Source Properties - CMDataMart** dialog, select **Connection string Provider=SQLNCLI10.1;Data Source=servername;Integrated Security=SSPI;Initial Catalog=CMDWDataMart**.  
 
 8.  Replace \<servername\> with the name of the computer running SQL Server that hosts the CMDWDataMart database.  
 
-9. You need to re\-enter the impersonation account password when you've completed updating the Data Source server. Select the ellipsis button to the right of **ImpersonateAccount** and then add the password in the **Impersonation Information** dialog box. Click **OK** to accept the changes.  
+9. You need to re\-enter the impersonation account password when you've completed updating the Data Source server. Select the ellipsis button to the right of **ImpersonateAccount** and then add the password in the **Impersonation Information** dialog. Select **OK** to accept the changes.  
 
 10. Repeat the previous steps to update the connection strings for the DWDataMart and OMDataMart data sources.  
 
@@ -726,9 +726,9 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To start Service Manager services on the data warehouse management server  
 
-1.  In the **Run** dialog box, in the **Open** text field, type **services.msc**, and then click **OK**.  
+1.  In the **Run** dialog, in the **Open** text field, enter **services.msc**, and select **OK**.  
 
-2.  In the **Services** window, in the **Services \(Local\)** pane, locate the following three services, and for each one, click **Start**:  
+2.  In the **Services** window, in the **Services \(Local\)** pane, locate the following three services, and for each one, select **Start**:  
 
     1.  System Center Data Access Service  
 
@@ -739,4 +739,4 @@ The following high\-level steps are required to move the data warehouse database
 
 ## Next steps
 
-- Review [Upgrade System Center 2012 R2 - Service Manager to System Center - Service Manager](./upgrade-service-manager.md) to learn about upgrading Service Manager.
+- To learn about upgrading Service Manager, review [Upgrade System Center 2012 R2 - Service Manager to System Center - Service Manager](./upgrade-service-manager.md).

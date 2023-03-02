@@ -1,7 +1,7 @@
 ---
 title: Plan for hardware performance
 description: Describes planning considerations for Service Manager hardware performance.
-manager: evansma
+manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -18,13 +18,13 @@ ms.topic: article
 
 ::: moniker-end
 
-An important part of System Center - Service Manager performance depends on a hardware configuration and deployment topology that is planned to handle the needs of your organization. The following sections provide general guidelines to consider when you are planning for adequate hardware performance.  
+An important part of System Center - Service Manager performance depends on the hardware configuration and deployment topology that is planned to handle the needs of your organization. The following sections provide general guidelines to consider when you're planning for adequate hardware performance.  
 
 ## Hardware performance  
 
 The following are the hardware bottlenecks that are most noticeable in Service Manager, with a significant load and amount of data in the Service Manager database:  
 
-1.  The most common bottleneck is memory and I/O on the computer that is running Microsoft SQL Server. If you have the resources, investing in more memory and a faster I/O subsystem to improve SQL Server I/O will achieve better performance.  
+1.  The most common bottleneck is memory and I/O on the computer that is running Microsoft SQL Server. If you've the resources, investing in more memory and a faster I/O subsystem to improve SQL Server I/O will achieve better performance.  
 2.  If you expect to have many consoles connecting to a management server, you can improve performance to handle peak load by investing in additional CPUs and memory for the management server or by installing a secondary Service Manager management server.  
 
 Be aware of the recommended minimum hardware for each role, as described in this document.  
@@ -33,13 +33,13 @@ Be aware of the recommended minimum hardware for each role, as described in this
 
 Many organizations use virtual machines to host Windows Server applications. Service Manager server roles, such as the management server and data warehouse server, are no exceptions. The use of virtual machines might range from all server roles being virtualized to some other combination of virtual and physical computers.  
 
-We do not recommend any specific virtual\-to\-physical\-computer ratio because the needs of your organization are inherently unique. However, the minimum hardware requirements for each software role apply to physical computers. If you decide to virtualize a software role, you should plan to ensure that you have additional hardware resources for each virtual computer.  
+We don't recommend any specific virtual\-to\-physical\-computer ratio because the needs of your organization are inherently unique. However, the minimum hardware requirements for each software role apply to physical computers. If you decide to virtualize a software role, you should plan to ensure that you've additional hardware resources for each virtual computer.  
 
-Database servers are vulnerable to poor performance on virtual machines if the following planning guidance is not followed:  
+Database servers are vulnerable to poor performance on virtual machines if the following planning guidance isn't followed:  
 
 -   [Running SQL Server in a Hyper\-V Environment](https://go.microsoft.com/fwlink/p/?LinkID=144622).  
 -   You should never use dynamic disks on virtual machines that are intended to host SQL Server. Use fixed\-size virtual hard drives or pass\-through.  
--   Hyper\-V allows only four virtual CPUs per guest, which might constrain the Service Manager server if you have many consoles.  
+-   Hyper\-V allows only four virtual CPUs per guest, which might constrain the Service Manager server if you've many consoles.  
 
 ### Service Manager baseline test results  
 
@@ -68,7 +68,7 @@ Network latency was also tested in the baseline. Network latency was introduced 
  The tests also delivered the following results:  
 
 -   Where network latency was less than 100 milliseconds \(msec\), overall Service Manager console response times were found good.  
--   Where network latency was 150 to 200 msec, performance was noted as usable, with up to a 40\-percent degradation in response time in some scenarios. With latency between 150 to 200 msec, you should plan to evaluate the key scenarios for your organization and determine if Remote Desktop Connection \(RDC\) is a better option.  
+-   Where network latency was 150 msec to 200 msec, performance was noted as usable, with up to a 40\-percent degradation in response time in some scenarios. With latency between 150 msec to 200 msec, you should plan to evaluate the key scenarios for your organization and determine if Remote Desktop Connection \(RDC\) is a better option.  
 
     > [!NOTE]  
     >  Expanding service maps in the Service Manager console was slow with any amount of latency.  
@@ -77,4 +77,4 @@ Network latency was also tested in the baseline. Network latency was introduced 
 
 ## Next steps
 
-- Review [Service Manager performance](sm-perf.md) to read general guidelines to consider when you are planning for Service Manager software performance.
+- To read general guidelines to consider when you're planning for Service Manager software performance, review [Service Manager performance](sm-perf.md).

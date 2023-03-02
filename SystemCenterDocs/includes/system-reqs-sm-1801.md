@@ -1,7 +1,7 @@
 ---
 title: include file
-manager: evansma
-description: include file to describe the hardware, software and other system requirements  Service Manager 1801.
+manager: mkluck
+description: include file to describe the hardware, software, and other system requirements Service Manager 1801.
 ms.custom: na
 ms.prod: system-center-2016
 author: jyothisuri
@@ -17,7 +17,7 @@ ms.assetid: 5a6b1532-d4e0-4fb0-b721-086e934b4b5f
 
 ## System requirements for System Center 1801 - Service Manager
 
-The following sections describe the general performance and scalability guidance for SM 1801, and recommend the  hardware configurations for a variety of workloads. Because System Center 1801 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
+The following sections describe the general performance and scalability guidance for SM 1801, and recommend the hardware configurations for various workloads. Because System Center 1801 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
 
 ## Capacity limits for Service Manager
 
@@ -25,7 +25,7 @@ Read [Configurations for deployment scenarios](../scsm/deploy-topo-scenarios.md)
 
 ## Supported coexistence
 
-To help simplify upgrades, you can use Service Manager 1801 connectors with the following  System Center components.
+To help simplify upgrades, you can use Service Manager 1801 connectors with the following System Center components.
 
 - System Center 2012 R2/2016 Virtual Machine manager
 - System Center 2012 R2/2016 Orchestrator
@@ -55,7 +55,7 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 |**Service Manager console**|The console requires: Microsoft Report Viewer Redistributable (available on System Center media): Microsoft Excel in order to view OLAP data cubes on the console computer;  ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server; SQL Server Analysis Management Objects.<br/><br/> The console can be installed on both 32\-bit and 64\-bit editions of Windows.|  
 |**Self-Service portal**|The Self-Service Portal server requires: Windows 2012 R2 server or later; the IIS role and ASP.NET 4.5 enabled; SQL Server Analysis Management Objects.<br/><br/>  Join the server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server.
 |**Machines using self-service**|The Self Service portal needs a screen resolution above 1024 X 768.<br/><br/> Supported browsers: Microsoft Edge; Microsoft Internet Explorer 10 and 11; Mozilla Firefox 42 and later; Google Chrome 46 and later.|  
-|**SQL Server Reporting Services**|In a deployment topology where the computer hosting SSRS is not on the same computer that hosts the data warehouse management server, you have to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](../scsm/config-remote-ssrs.md) the manual steps.
+|**SQL Server Reporting Services**|In a deployment topology where the computer hosting SSRS isn't on the same computer that hosts the data warehouse management server, you've to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](../scsm/config-remote-ssrs.md) the manual steps.
 
 
 ### Additional notes
@@ -68,13 +68,13 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 
 - **SMTP server**- You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use the Notification feature and for incident creation through email.  
 
-- **Windows safe mode**- Service Manager doesn't operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
+- **Windows safe mode**- Service Manager doesn't operate and the services used by Service Manager don't start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
 
 ## SQL Server requirements
 
  Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center 1801 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 1801 - Service Manager reporting.
 
- Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 1801. Use this information whether you are deploying one or multiple components of System Center.
+ Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 1801. Use this information whether you're deploying one or multiple components of System Center.
 
 
 ### SQL Server version support
@@ -88,11 +88,11 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 
 
   > [!NOTE]
-  > System Center 1801 - Service Manager does not support the *MultiSubnetFailover* parameter. This parameter is not used in System Center 1801 - Service Manager connection strings.
+  > System Center 1801 - Service Manager does not support the *MultiSubnetFailover* parameter. This parameter isn't used in System Center 1801 - Service Manager connection strings.
 
 ### Allow updates
 
- To either install or upgrade System Center 1801 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates are not allowed, System Center 1801 - Service Manager Setup will not complete and the following error message will appear at the **Create database** stage of the installation:
+ To either install or upgrade System Center 1801 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center 1801 - Service Manager Setup won't complete and the following error message will appear at the **Create database** stage of the installation:
 
  *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry the upgrade for this role.*
 
@@ -134,9 +134,9 @@ The following versions of Windows client operating system are supported for the 
 |**Service Manager** Console|&#8226;|&#8226;|&#8226;|||&#8226;|&#8226;|&#8226;|
 
 
-## .Net Versions supported
+## .NET Versions supported
 
-The following versions of .Net are supported for Service Manager.
+The following versions of .NET are supported for Service Manager.
 
 |System Center 1801 component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|
 |-----------------------------------|----------------|----------|------------|--------------|--------------|------------|

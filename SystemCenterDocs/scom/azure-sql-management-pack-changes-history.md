@@ -22,10 +22,10 @@ This section covers new functionality and improvements in Management Pack for Az
 - Updated the SPN creation process related to the [latest changes in Azure API](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains)
 - Added a new regular expression filtering mask type in the 'Server Filter List' monitoring wizard, now the server names can be filtered using regular expression for include and exclude from the monitoring
 - Added a new regular expression filtering mask type in the 'Database Filter List' monitoring wizard, now the database names can be filtered using regular expression for include and exclude from the monitoring
-- Added a new "Allocated Storage Percentage" monitor which tracks the allocated space in Elastic Pool
-- Added a new "Elastic Pool Data Space Allocated Percentage" performance rule which collects the metric 'Data space allocated percentage' of Microsoft Azure SQL Elastic Database Pool in percentage terms
-- Added a new "Elastic Pool Data Max Size" performance rule which collects the metric 'Data max size' of Microsoft Azure SQL Elastic Database Pool in megabytes
-- Added a new "Elastic Pool Data Space Used" performance rule which collects the metric 'Data space used' of Microsoft Azure SQL Elastic Database Pool in megabytes
+- Added a new "Allocated Storage Percentage" monitor ,which tracks the allocated space in Elastic Pool
+- Added a new "Elastic Pool Data Space Allocated Percentage" performance rule, which collects the metric 'Data space allocated percentage' of Microsoft Azure SQL Elastic Database Pool in percentage terms
+- Added a new "Elastic Pool Data Max Size" performance rule, which collects the metric 'Data max size' of Microsoft Azure SQL Elastic Database Pool in megabytes
+- Added a new "Elastic Pool Data Space Used" performance rule, which collects the metric 'Data space used' of Microsoft Azure SQL Elastic Database Pool in megabytes
 - Updated display strings
 
 ### Bug Fixes
@@ -86,7 +86,7 @@ This section covers new functionality and improvements in Management Pack for Az
 
 - Fixed "DB Transactions Locks Count" rule and "Transaction Locks Count" monitor
 - Fixed "Azure SQL Database Event Log Collection Target Management Service" discovery
-- Fixed "Server Exclude list" filter issue: 'server name could not contain whitespaces'
+- Fixed "Server Exclude list" filter issue: 'server name couldn't contain whitespaces'
 - Fixed the display strings, implemented appropriate Azure portal naming style
 
 ## March 2017 - 6.7.25.0 CTP2
@@ -98,7 +98,7 @@ This section covers new functionality and improvements in Management Pack for Az
 
 ### Bug Fixes
 
-- Fixed issue: "Collect Elastic Database Pool Number of Databases" rule does not collect performance data if REST monitoring is used
+- Fixed issue: "Collect Elastic Database Pool Number of Databases" rule doesn't collect performance data if REST monitoring is used
 - Fixed issue: "Operations Manager Expression Filter Module" error messages appear in the Operations Manager event log
 
 ## December 2016 - 6.7.11.0 CTP1
@@ -115,7 +115,7 @@ This section covers new functionality and improvements in Management Pack for Az
 - Added health monitoring for Elastic Pools
 - Added monitoring for “Average DTU utilization percentage” metric
 - Introduced performance improvements to the Management Pack
-- Optimized performance rules notation: all Object Names are standardized; Instance Names are not used anymore
+- Optimized performance rules notation: all Object Names are standardized; Instance Names aren't used anymore
 - Updated the visualization library
 
 ### Bug Fixes
@@ -127,7 +127,7 @@ This section covers new functionality and improvements in Management Pack for Az
 ### What's New
 
 - Added Dashboards
-- Added a number of new monitors and rules, including the following:
+- Added many new monitors and rules, including the following:
   - CPU Usage (%)
   - Workers Usage (%)
   - Log write (%)

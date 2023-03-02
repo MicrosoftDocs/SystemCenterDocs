@@ -1,7 +1,7 @@
 ---
 title: Automate IT processes with workflows
 description: Learn about how you can automate IT processes with workflows in Service Manager.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -38,11 +38,11 @@ Service Manager runs a Windows Workflow Foundation \(WF\) workflow using trigger
 
 - **Compiled workflow assembly file** \(*workflowname*.dll\). When you save a management pack in the Service Manager Authoring Tool, the tool also compiles any raw workflow files \(the XOML and CS files\) into a workflow assembly \(DLL\) file.  
 
-- **Activity assembly files** \(*activityname*.dll\). These files contain definitions of the available workflow activities. The Authoring Tool cannot modify the activity assembly files.  
+- **Activity assembly files** \(*activityname*.dll\). These files contain definitions of the available workflow activities. The Authoring Tool can't modify the activity assembly files.  
 
-To implement a management pack with workflows in your Service Manager console environment, make sure that Service Manager has access to the workflow assembly file and the activity assembly files, as well as the management pack itself. The following illustration shows how the various files interact when a workflow runs.  
+To implement a management pack with workflows in your Service Manager console environment, ensure that Service Manager has access to the workflow assembly file and the activity assembly files, as well as the management pack itself. The following illustration shows how the various files interact when a workflow runs.  
 
-  ![Management Pack and Workflow Files](./media/automate-processes-workflows/author-mpandworkflowcomponents_production.png)  
+  ![Illustration of the Management Pack and Workflow Files.](./media/automate-processes-workflows/author-mpandworkflowcomponents_production.png)  
 
 ### Trigger conditions for workflows  
  A workflow's data source module defines the workflow trigger condition. A workflow can have one of two types of trigger condition:  
@@ -59,7 +59,7 @@ To implement a management pack with workflows in your Service Manager console en
 
 ## The Activity Library
 
-The Activity Library in Service Manager Authoring Tool provides a number of workflow activities for building basic Windows Workflow Foundation \(WF\) workflows. Each activity performs a discrete function, such as establishing a loop structure within the workflow, running a script, or creating a Service Manager incident. The Activity Library includes the following types of activities:  
+The Activity Library in Service Manager Authoring Tool provides many workflow activities for building basic Windows Workflow Foundation \(WF\) workflows. Each activity performs a discrete function, such as establishing a loop structure within the workflow, running a script, or creating a Service Manager incident. The Activity Library includes the following types of activities:  
 
 - [Active Directory Activities](workflow-activity-ref.md) - Activities that perform Active&nbsp;Directory functions, such as adding users or computers to groups.  
 
@@ -75,8 +75,8 @@ The Activity Library in Service Manager Authoring Tool provides a number of work
 
 |Active Directory activity|Description|  
 |-------------------------------|-----------------|  
-|Add AD DS Computer To Group|Use this activity to add a computer to a security group in Active Directory Domain Services \(AD&nbsp;DS\).<br /><br /> When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.|  
-|Add AD DS User To Group|Use this activity to add a user to a security group in AD&nbsp;DS.<br /><br /> When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.|  
+|Add AD DS Computer To Group|Use this activity to add a computer to a security group in Active Directory Domain Services \(AD&nbsp;DS\).<br /><br /> When you use this activity, ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.|  
+|Add AD DS User To Group|Use this activity to add a user to a security group in AD&nbsp;DS.<br /><br /> When you use this activity, ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.|  
 
 |Control Flow activity|Description|  
 |---------------------------|-----------------|  

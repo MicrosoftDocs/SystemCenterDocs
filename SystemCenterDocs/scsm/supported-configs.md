@@ -2,12 +2,12 @@
 title: Supported configurations for System Center - Service Manager
 description: The article describes supported configurations for Service Manager.
 ms.prod: system-center
-manager: evansma
+manager: mkluck
 author: jyothisuri
 ms.author: jsuri
 ms.date: 01/23/2018
 ms.technology: service-manager
-ms.topic: reference
+ms.topic: article
 ---
 
 # Supported configurations
@@ -18,7 +18,7 @@ ms.topic: reference
 
 ::: moniker-end
 
-This article summarized the workloads for which System Center - Service Manager is tested.
+This article summarizes the workloads for which System Center - Service Manager is tested.
 
 - The test environment contains one Service Manager management server supporting 80 to 100 concurrent Service Manager consoles.
 - High\-performance storage using 15,000\-RPM SCSI drives was used on the database servers.

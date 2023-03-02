@@ -1,8 +1,8 @@
 ---
 title: SQL Server requirements for Service Manager
 description: The article describes SQL Server requirements for Service Manager.
-manager: evansma
-ms.topic: reference
+manager: mkluck
+ms.topic: article
 ms.author: jsuri
 author: jyothisuri
 ms.prod: system-center
@@ -17,7 +17,7 @@ monikerRange:  sc-sm-2016 || sc-sm-2019 || sc-sm-2022
 
 Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center - Service Manager reporting.
 
-Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center. Use this information whether you are deploying one or multiple components of System Center.
+Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center. Use this information whether you're deploying one or multiple components of System Center.
 
 ## SQL Server version support
 
@@ -31,7 +31,7 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 > [!NOTE]
 > System Center 2016 - Service Manager requires SQL Server 2014 or later.
 >
-> System Center 2016 - Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in System Center 2016 - Service Manager connection strings.
+> System Center 2016 - Service Manager doesn't support setting the MultiSubnetFailover parameter. This parameter isn't used in System Center 2016 - Service Manager connection strings.
 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
 
@@ -50,7 +50,7 @@ For detailed information about the requirements for Service Manager components, 
 
 
 >[!NOTE]
-> - Service Manager 2019 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
+> - Service Manager 2019 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
 > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 For detailed information about the requirements for Service Manager components, see [Software Requirements](sm-software-reqs.md).
@@ -72,7 +72,7 @@ For detailed information about the requirements for Service Manager components, 
 
 ## Allow updates
 
-To either install or upgrade System Center - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates are not allowed, System Center - Service Manager Setup will not complete and the following error message will appear at the **Create database** stage of the installation:
+To either install or upgrade System Center - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates aren't allowed, System Center - Service Manager Setup won't complete and the following error message will appear at the **Create database** stage of the installation:
 
 *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry upgrade for this role.*
 
@@ -96,4 +96,4 @@ For more information about installing Service Manager with AlwaysOn availability
 
 ## Next steps
 
-- Review [Service Manager editions](sm-editions.md) to learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions.
+- To learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions, review [Service Manager editions](sm-editions.md).

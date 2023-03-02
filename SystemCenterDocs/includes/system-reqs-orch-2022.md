@@ -4,7 +4,7 @@ title: include file
 description: include file to provide system requirements for Orchestrator 2022, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/22/2022
+ms.date: 01/12/2023
 ms.custom: na
 author: jyothisuri
 ms.prod: system center
