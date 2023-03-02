@@ -9,7 +9,7 @@ ms.date: 11/23/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency1
 ---
 
 # Release notes for System Center Orchestrator
