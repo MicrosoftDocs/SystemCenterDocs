@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 706e433d-c641-4dc3-8be5-fe582ef9f4bc
+ms.custom: UpdateFrequency1
 ---
 
 # Use SQL Server AlwaysOn availability groups with Service Manager to support failover

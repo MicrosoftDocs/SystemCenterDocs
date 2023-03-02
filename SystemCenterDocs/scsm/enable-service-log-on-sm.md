@@ -2,7 +2,7 @@
 title: Enable service logon
 description: the article provides information about how to enable service logon as log on type.
 manager: mkluck
-ms.custom: na
+ms.custom: UpdateFrequency1
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

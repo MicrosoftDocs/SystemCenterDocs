@@ -8,6 +8,7 @@ ms.author: jsuri
 ms.date: 12/09/2020
 ms.technology: service-manager
 ms.topic: article
+ms.custom: UpdateFrequency5
 ---
 
 # Prepare for System Center - Service Manager deployment
