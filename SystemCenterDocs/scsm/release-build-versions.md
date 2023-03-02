@@ -9,7 +9,7 @@ ms.date: 02/13/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency1
 ---
 
 # System Center – Service Manager build versions

@@ -11,7 +11,7 @@ ms.date: 05/10/2022
 ms.technology: service-manager
 ms.assetid: 58180b0a-aef8-4448-a26a-0ab85e1977c8
 monikerRange: '>sc-sm-2016'
-ms.custom: UpdateFrequency.5
+ms.custom: UpdateFrequency1
 ---
 
 
