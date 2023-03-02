@@ -31,7 +31,7 @@ Each managed replication object is discovered and monitored using a number of ru
 
 Space monitoring introduced in this management pack may be noisy in environments where many publication snapshots share the same media. In such cases, an alert for a publication snapshot is generated when the amount of free space on the hard drive reaches the threshold.
 
-To reduce the noise, turn off space monitors for **Snapshot Available Space (%)** and use Operating System Management Pack to monitor space on the hard drive.
+To reduce the noise, turn off space monitors for **Snapshot Available Space (%)**, and use Operating System Management Pack to monitor space on the hard drive.
 
 ## Maintenance Job Failure
 
@@ -44,7 +44,7 @@ Replication uses maintenance jobs that are monitored by **MSSQL Replication: The
 - Distribution clean up: distribution
 - Expired subscription clean up
 
-For more information, see [Run Replication Maintenance Jobs (SQL Server Management Studio)](/sql/relational-databases/replication/administration/run-replication-maintenance-jobs-sql-server-management-studio?preserve-view=true&view=sql-server-ver15)
+For more information, see [Run Replication Maintenance Jobs (SQL Server Management Studio)](/sql/relational-databases/replication/administration/run-replication-maintenance-jobs-sql-server-management-studio?preserve-view=true&view=sql-server-ver15).
 
 ## Job Failure
 
