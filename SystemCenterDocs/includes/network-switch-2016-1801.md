@@ -4,7 +4,7 @@ title: Create logical switches
 description: This article describes how to create logical switches in the VMM fabric
 author:  jyothisuri
 ms.author: jsuri
-manager:  evansma
+manager:  mkluck
 ms.date:  07/24/2018
 ms.topic:  include
 ms.prod:  system-center-2016
@@ -31,16 +31,16 @@ You can set up a virtual switch extension manager (network manager) if you want 
 
 ### Set up a virtual switch extension manager
 
-1. Obtain the provider software from your vendor and install the provider on the VMM management server. If you have a cluster, install it on all the nodes.
+1. Obtain the provider software from your vendor and install the provider on the VMM management server. If you've a cluster, install it on all the nodes.
 2. Select **Fabric** > **Home** > **Show** > **Fabric Resources** > **Networking** > **Switch Extension Managers**.
-3. In **Add Virtual Switch Extension Manager Wizard** > **General**, specify the manufacturer and type the connection string. For example, myextmanager1.contoso.com:443. The exact syntax is defined by the vendor. Specify the account you want to use to connect to the resource.
+3. In **Add Virtual Switch Extension Manager Wizard** > **General**, specify the manufacturer and enter the connection string. For example, myextmanager1.contoso.com:443. The exact syntax is defined by the vendor. Specify the account you want to use to connect to the resource.
 4. In **Host Groups**, specify the host groups for which you want to use the extension manager.
 5. In **Summary**, review settings and select **Finish**. Check that the extension appears in the **Virtual Switch Extension Managers** pane.
 
 
 ## Set up a logical switch
 
-1. Ensure that you have at least one uplink port profile before you begin.
+1. Ensure that you've at least one uplink port profile before you begin.
 2. Select **Fabric** tab > **Networking** > **Logical Switches** > **Create Logical Switch**.
 3. In **Create Logical Switch Wizard** > **Getting Started**, review the information.
 4. In **General**, specify a name and optional description.
@@ -51,7 +51,7 @@ You can set up a virtual switch extension manager (network manager) if you want 
 6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it should manage the switch. If you enable this setting, you won't be able to add extensions to the switch.
 7. Enable SR-IOV if you need to. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter. If you want to enable:
 
-    - Ensure that you have SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
+    - Ensure that you've SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
     - Create a native port profile for virtual network adapters that is also SR-IOV enabled.
     - When you configure networking settings on the host (in the host property called Virtual switches), attach the native port profile for virtual network adapters to the virtual switch by using a port classification. You can use the SR-IOV port classification that is provided in VMM, or create your own port classification.
 4. In **Extensions**, if you're using virtual switch extensions, select them and arrange the order. Extensions process network traffic through the switch in the order you specify.
@@ -68,7 +68,7 @@ You can set up a virtual switch extension manager (network manager) if you want 
 If a host in the VMM fabric has a standard virtual switch, you can convert it to use as a logical switch.
 
 > [!NOTE]
-> - The following procedure is not applicable for SET, use the [script](#script-for-set-switch-conversion) instead.
+> - The following procedure isn't applicable for SET, use the [script](#script-for-set-switch-conversion) instead.
 > - Before you can convert, you need a logical switch in place with specific settings.
 > - You must be a member of the Administrator user role, or a member of the Delegated Administrator user role, where the management scope includes the host group in which the Hyper-V host is located.
 
@@ -103,13 +103,13 @@ If a host in the VMM fabric has a standard virtual switch, you can convert it to
 
 > [!NOTE]
 > - The conversion will not interrupt network traffic.
-> - If any operation in the conversion fails, no settings will be changed, and the switch will not be converted.
+> - If any operation in the conversion fails, no settings will be changed, and the switch won't be converted.
 
 
 1. In VMM, select  **Fabric** > **Servers** > **All Hosts**. Select and hold the host > **Properties**.
 2. On the **Virtual Switches** tab, select **Convert to Logical Switch**.
 3. Select the logical switch that you want to convert the host to. Then select the uplink port profile to use and select **Convert**.
-4. The **Jobs** dialog might appear, depending on your settings. Ensure that the job has a status of **Completed**, and then close the dialog.
+4. The **Jobs** dialog might appear depending on your settings. Ensure that the job has a status of **Completed**, and then close the dialog.
 5. To verify that the switch was converted, select and hold the host, select **Properties**, and then select the **Virtual Switches** tab.
 
 #### <a name="script-for-set-switch-conversion"></a> Script for SET switch conversion

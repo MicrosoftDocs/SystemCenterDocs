@@ -7,7 +7,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.date: 01/23/2018
 ms.technology: service-manager
-ms.topic: reference
+ms.topic: article
 ---
 
 # Supported configurations

@@ -5,7 +5,7 @@ description: This article provides information on how to patch your Azure Monito
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 01/27/2023
+ms.date: 02/13/2023
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
@@ -49,4 +49,4 @@ It takes 30 mins to 1 hour to successfully update the instance.
 
 **Feedback**
 
-Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUMUlFOUY4N0RENktHWDhNNkgwMkhQV0lSQi4u).
+Provide your feedback on Azure Monitor SCOM Managed Instance (preview) [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8_G7TnWWL9AgnUEG-odf9BUNkhBQ0s4NUIxVTY5UjBSUzhENUZVNlNVUS4u).

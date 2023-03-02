@@ -1,7 +1,7 @@
 ---
 title: Use and manage standard reports
 description: Explains how to use and manage standard reports in Service Manager.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -27,7 +27,7 @@ This article describes how to use standard reports in Service Manager.
 
  The simple reporting infrastructure that is included in Service Manager is built on SQL&nbsp;Server Reporting Services \(SSRS\), where data is accessed from the Service Manager data warehouse. The SSRS infrastructure provides for basic reporting functionality, such as report\-level security, report subscriptions, browser\-based access to reports, linked reports, and customization. This reporting functionally is similar to the experience that is included with System Center Operations Manager.  
 
- The Reporting workspace contains the catalog of reports that users can run on demand. Reports are viewable for all Service Manager console users. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SSRS server, they can also view reports in work item task lists. Like in Operations Manager, you can run a report in context. For example, you can select a computer in a view in the console and then run the Computer Details report about that computer. Any user can export report data from a report they view. Exported reports are saved in a variety of file formats.  
+ The Reporting workspace contains the catalog of reports that users can run on demand. Reports are viewable for all Service Manager console users. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SSRS server, they can also view reports in work item task lists. Like in Operations Manager, you can run a report in context. For example, you can select a computer in a view in the console and then run the Computer Details report about that computer. Any user can export report data from a report they view. Exported reports are saved in various file formats.  
 
  For more information about SSRS, see [SQL Server Reporting Services](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports). If you want to see the relationship between high\-level processes and services that are involved between Service Manager and SSRS, refer to the Service Manager architecture diagram \(ArchitectureDiagram.vsd\) that is included in the Service Manager job aids \(SM\_job\_aids.zip\). Because the architecture diagram is too large to see properly in this guide, you can download it and the other jobs aids from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=186291).  
 
@@ -37,20 +37,20 @@ You can use the following procedure to view the catalog of reports that is avail
 
 ### To view the report catalog  
 
-1. In the Service Manager console, click **Reporting**.  
+1. In the Service Manager console, select **Reporting**.  
 
-2. Expand **Reports**, and then click a folder. For example, click **Incident Management**.  
+2. Expand **Reports**, and select a folder. For example, select **Incident Management**.  
 
    The reports that are available appear in the results pane of the **Report** console.  
 
 ## Add permissions for standard reports
 
 ::: moniker range="sc-sm-2016"
-By default, all System Center 2016 - Service Manager users have access to reports through the Reporting workspace. However, before users who do not have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\). 
+By default, all System Center 2016 - Service Manager users have access to reports through the Reporting workspace. However, before users who don't have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\). 
 ::: moniker-end 
 
 ::: moniker range=">sc-sm-2016"
-By default, all System Center - Service Manager users have access to reports through the Reporting workspace. However, before users who do not have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\). 
+By default, all System Center - Service Manager users have access to reports through the Reporting workspace. However, before users who don't have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\). 
 ::: moniker-end
 
  You can grant access at the root level, which enables a user to view the Reporting workspace and all the reports in Service Manager. You can also grant restricted access to specific report folders, such as the Incident report folder, or to individual reports.  
@@ -63,21 +63,21 @@ By default, all System Center - Service Manager users have access to reports thr
 
 2.  Locate the folder or report for which you want to grant access permission. For example, locate the SystemCenter and ServiceManager root folders.  
 
-3.  Click **Security**.  
+3. Select **Security**.  
 
-4.  Click **Edit Item Security**.  
+4. Select **Edit Item Security**.  
 
 5.  The following message appears: "Item security is inherited from a parent item. Do you want to apply security settings for this item that are different from those of the Home parent item?"  
 
-     Click **OK**.  
+    Select **OK**.  
 
-6.  Click **New Role Assignment**.  
+6. Select **New Role Assignment**.  
 
-7.  Type the name of the Active&nbsp;Directory group or user in the **Group or user name** box. For example, type **woodgrove\\SCSMReportAccess**.  
+7.  Enter the name of the Active&nbsp;Directory group or user in the **Group or user name** box. For example, enter **woodgrove\\SCSMReportAccess**.  
 
-8.  Set the roles for the group or user. Select the **Browser** check box to grant access to run reports.  
+8.  Set the roles for the group or user. Select the **Browser** checkbox to grant access to run reports.  
 
-9. Click **OK**.   
+9. Select **OK**.   
 
 ## Run a standard report
 
@@ -86,21 +86,21 @@ You can use the following procedure to run a report in Service Manager. In this 
 > [!NOTE]  
 >  Before you can run a report, the extract, transform, and load \(ETL\) process must be complete. For more information about the ETL process and about how to schedule it to run, see [How to Enable Data Warehouse Jobs Schedules](./manage-dw.md).  
 >   
->  The Service Manager data warehouse does not create dimensions for classes or relationships in unsealed management packs. If you are using an unsealed management pack, you will not see any data from that management pack in your reports. Because of this, the best practice is to model all classes and relationships in sealed management packs.  
+>  The Service Manager data warehouse doesn't create dimensions for classes or relationships in unsealed management packs. If you're using an unsealed management pack, you won't see any data from that management pack in your reports. Because of this, the best practice is to model all classes and relationships in sealed management packs.  
 >   
 >  For this example, you must have previously created an incident. Otherwise, the report will return no data.  
 
 ### To run a report  
 
-1.  In the Service Manager console, click **Reporting**.  
+1.  In the Service Manager console, select **Reporting**.  
 
 2.  Expand **Reports**, and then expand a report folder. For example, expand **Incident Management**.  
 
-3.  Click the name of the report you want to run. For example, click the **List of Incidents** report.  
+3. Select the name of the report you want to run. For example, select the **List of Incidents** report.  
 
-4.  In the **Tasks** list, click **Run Report**.  
+4.  In the **Tasks** list, select **Run Report**.  
 
-5.  Click **Parameter Control Header** to display the parameter controls for the report. Use these parameters to customize the report.  
+5. Select **Parameter Control Header** to display the parameter controls for the report. Use these parameters to customize the report.  
 
      Each report has a set of parameters you can use to search and filter for the specific items you want to include in the report. For example, in the **List of Incidents** report, you can set the following parameters:  
 
@@ -132,13 +132,13 @@ You can use the following procedure to run a report in Service Manager. In this 
 
     -   **Resolution Category**  
 
-6.  In the **Start Date** list, select the date one week before the current date \(today\), and then click anywhere in the form.  
+6.  In the **Start Date** list, select the date one week before the current date \(today\), and select anywhere in the form.  
 
 7.  Optionally, specify other criteria that you want to filter.  
 
-8.  In the **Tasks** list, click **Run Report**.  
+8.  In the **Tasks** list, select **Run Report**.  
 
-9. In the report, review the data to ensure the incident information that you want to view is displayed. If you do not see the information you expect, revise the criteria, and then run the report again by clicking **Run Report**.  
+9. In the report, review the data to ensure the incident information that you want to view is displayed. If you don't see the information you expect, revise the criteria, and then run the report again by selecting **Run Report**.  
 
      In reports that show lists or additional detail, such as the associated subreports in the List of Incidents report, you might see multiple rows that contain the same information. This is because an instance can have multiple types; for example, a computer is a Computer, a Windows Computer, and a Managed Windows Computer. The level of detail for these reports is per type per instance. Therefore, these multiple types result in multiple rows.  
 
@@ -151,23 +151,23 @@ You can use the following procedure to export a report into several different ty
 
 ### To open the report and then export the report data  
 
-1.  In the Service Manager console, click **Reporting**.  
+1.  In the Service Manager console, select **Reporting**.  
 
-2.  Expand **Reports**, and then click any view. For example, click **Incident Management**.  
+2.  Expand **Reports**, and select any view. For example, select **Incident Management**.  
 
-3.  In the **Incident Management** view, select the **List of Incidents** report, and then in the **Tasks** list, click **Run Report**.  
+3.  In the **Incident Management** view, select the **List of Incidents** report, and then in the **Tasks** list, select **Run Report**.  
 
-4.  Click **Parameter Control Header** to display the parameter controls for the report. Use these parameters to customize the report.  
+4. Select **Parameter Control Header** to display the parameter controls for the report. Use these parameters to customize the report.  
 
-5.  In the **Start Date** list, select the date one week before the current date \(today\), and then click anywhere in the form.  
+5.  In the **Start Date** list, select the date one week before the current date \(today\), and then select anywhere in the form.  
 
 6.  Optionally, specify other criteria that you want to filter.  
 
-7.  In the **Tasks** list, click **Run Report**.  
+7.  In the **Tasks** list, select **Run Report**.  
 
-8.  In the **List of Incidents** report, review the data to ensure the incident information that you want to view is displayed. If you do not see the information you expect, revise the criteria, and then run the report again by clicking **Run Report**.  
+8.  In the **List of Incidents** report, review the data to ensure the incident information that you want to view is displayed. If you don't see the information you expect, revise the criteria, and then run the report again by selecting **Run Report**.  
 
-9. Click the **Export** icon, and then select the format in which you want to save the report. In the list, select one of the following:  
+9. Select the **Export** icon, and then select the format in which you want to save the report. In the list, select one of the following:  
 
     -   **XML file with report data**  
 
@@ -189,21 +189,21 @@ You can use the following procedure to export a report into several different ty
 
 You can use the following procedure to create a linked report.  
 
- A linked report is a shortcut to a report-it is similar to a program shortcut on your desktop. A linked report is derived from publicly defined reports from any management pack. A linked report retains some of the original report's properties, such as the report layout. Other properties of the linked report, such as parameters and subscriptions, can be different from the original report.  
+ A linked report is a shortcut to a report—it's similar to a program shortcut on your desktop. A linked report is derived from publicly defined reports from any management pack. A linked report retains some of the original report's properties, such as the report layout. Other properties of the linked report, such as parameters and subscriptions, can be different from the original report.  
 
 ### To create a linked report  
 
-1. In the **Reporting** view, select the report you want to use as the basis for the linked report, and then, in the **Tasks** pane, click **Run Report**.  
+1. In the **Reporting** view, select the report you want to use as the basis for the linked report, and then, in the **Tasks** pane, select **Run Report**.  
 
-2. In the **Report** window, click **Save as Linked Report** in the **Task** pane.  
+2. In the **Report** window, select **Save as Linked Report** in the **Task** pane.  
 
-3. Type a name and an optional description for the new linked report.  
+3. Enter a name and an optional description for the new linked report.  
 
 4. Select a management pack for the linked report.  
 
-5. Click **Select Folder**, and then select the folder in which you want to save the report.  
+5. Select **Select Folder**, and select the folder in which you want to save the report.  
 
-6. Click **OK**.  
+6. Select **OK**.  
 
 7. Close the report.  
 
@@ -216,19 +216,19 @@ You can use the following procedure to create a linked report.
 
 You can use the following procedure to add a report to the Favorite Reports folder in Service Manager.  
 
- After you have run several reports and determined the best parameters to use to customize the report contents, you can save a report to the Favorite Reports folder. This enables you to run the report directly from the **Reporting** view without having to specify parameters.  
+ After you've run several reports and determined the best parameters to use to customize the report contents, you can save a report to the Favorite Reports folder. This enables you to run the report directly from the **Reporting** view without having to specify parameters.  
 
 ### To save a report to the Favorite Reports folder  
 
-1. In the **Reporting** view, select the report that you want to use as the basis for the saved report, and then, in the **Tasks** pane, click **Run Report**.  
+1. In the **Reporting** view, select the report that you want to use as the basis for the saved report, and then, in the **Tasks** pane, select **Run Report**.  
 
-2. In the report window, click **Save as Favorite Report** under **Tasks**.  
+2. In the report window, select **Save as Favorite Report** under **Tasks**.  
 
-3. Type a name for the report, and then click **OK**.  
+3. Enter a name for the report, and select **OK**.  
 
 4. Close the report window.  
 
-5. In the **Reporting** navigation tree, click **Favorite Reports**.  
+5. In the **Reporting** navigation tree, select **Favorite Reports**.  
 
    The new report is displayed.  
 
@@ -238,11 +238,11 @@ You can set up subscriptions to your reports in Service Manager through SQL&nbsp
 
 ### To create report subscriptions  
 
--   Complete the procedures in the [Subscriptions and Delivery \(Reporting Services\)](/sql/reporting-services/subscriptions/subscriptions-and-delivery-reporting-services) topic.   
+-   Complete the procedures in the [Subscriptions and Delivery \(Reporting Services\)](/sql/reporting-services/subscriptions/subscriptions-and-delivery-reporting-services) article.   
 
 ## Schedule a standard report
 
-In Service Manager, you can schedule a linked report to run on a regular basis to ensure that the information is up to date. To do this, use SQL&nbsp;Server Reporting Services \(SSRS\) Report Manager. In SSRS Report Manager, you can schedule reports to run one time or on a continuous basis at intervals of hours, days, weeks, or months. You can do the following:  
+In Service Manager, you can schedule a linked report to run regularly to ensure that the information is up to date. To do this, use SQL&nbsp;Server Reporting Services \(SSRS\) Report Manager. In SSRS Report Manager, you can schedule reports to run one time or on a continuous basis at intervals of hours, days, weeks, or months. You can do the following:  
 
 - Schedule report delivery in a standard or data\-driven subscription.  
 
@@ -264,13 +264,13 @@ You can display SQL Server Reporting Services \(SSRS\) reports from any source u
 
 2.  Navigate to the System Center\\ServiceManager reports folder, create a new folder, and give it a name. For example, name the folder **Financial Management**.  
 
-3.  In the new folder, click **New Data Source**, and then add the data source of the new report.  
+3.  In the new folder, select **New Data Source**, and then add the data source of the new report.  
 
 4.  Add the new report that uses the new data source.  
 
 5.  Open the Service Manager console, select the **Reporting** workspace, and then navigate to the folder that contains the report.  
 
-6.  In the **Tasks** pane, click **Run Report**.   
+6.  In the **Tasks** pane, select **Run Report**.
 
 ## Standard reports available in Service Manager
 
@@ -288,7 +288,7 @@ The following reports are available in Service Manager.
 |Change management|List of Change Requests|Provides a list of change requests within a certain time frame. The data in this report includes the current status, category, and user to whom the request is assigned.|  
 |Change management|Change Request Detail|Provides detailed information about a specific change request, including the title, description, status, change creator, and template.|  
 |Configuration management|Computer Detail|Provides detailed configuration information for a specific computer.|  
-|Configuration management|Computer Inventory|Provides a list of computers available in the management group. **Note:**  The Computer Inventory report might contain more total computers than actually exist in a single Service Manager management group. This situation is uncommon but possible when you have more than one management group share a data warehouse. More specifically, if you manually create a computer in one management group and manually create a computer with the same name in another management group, the data warehouse cannot reconcile the two manually\-created computers. Because this situation does not occur when computers are discovered by a connector, you can avoid multiple computers appearing in the report by deleting the manually\-created computer configuration item and then discover it by using a connector.|  
+|Configuration management|Computer Inventory|Provides a list of computers available in the management group. **Note:**  The Computer Inventory report might contain more total computers than actually exist in a single Service Manager management group. This situation is uncommon but possible when you've more than one management group share a data warehouse. More specifically, if you manually create a computer in one management group and manually create a computer with the same name in another management group, the data warehouse can't reconcile the two manually\-created computers. Because this situation doesn't occur when computers are discovered by a connector, you can avoid multiple computers appearing in the report by deleting the manually\-created computer configuration item and then discover it by using a connector.|  
 |Configuration Management|Software Update Compliance Trend|Provides detailed information for software update compliance. You can filter this data by classification or category, and by day, week, month, quarter, or year.|  
 |Incident management|Incident Analyst|Provides key performance metrics for a specified analyst. The data in this report includes the number of incidents assigned to the analyst, the number of incidents resolved by the analyst, the number of incidents worked on by the analyst, and any labor logged against an incident.|  
 |Incident management|Incident Details|Provides detailed information for a specific incident, including the title, description, classification, affected services, affected configuration items, and related activities.|  
@@ -305,4 +305,4 @@ The following reports are available in Service Manager.
 
 ## Next steps
 
-- Read [Overview of OLAP cubes for advanced analytics](olap-cubes-overview.md) to learn about data that is present in the data warehouse by using predefined and customized Microsoft Online Analytical Processing \(OLAP\) data cubes.
+- To learn about data that is present in the data warehouse by using predefined and customized Microsoft Online Analytical Processing \(OLAP\) data cubes, read [Overview of OLAP cubes for advanced analytics](olap-cubes-overview.md).

@@ -1,7 +1,7 @@
 ---
 title: Advanced analytical reports in Service Manager
 description: Provides a reference of advanced analytical reports available in Service Manager.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -11,7 +11,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
 ---
 
@@ -23,10 +23,10 @@ ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
 
 ::: moniker-end
 
-The following analytical reports - which are presented as [Microsoft Online Analytical Processing \(OLAP\) data cubes](olap-cubes-overview.md) - are available in Service Manager. The data cubes that are included in Service Manager contain measures and dimensions.  
+The following analytical reports - which are presented as [Microsoft Online Analytical Processing (OLAP) data cubes](olap-cubes-overview.md) - are available in Service Manager. The data cubes that are included in Service Manager contain measures and dimensions.  
 
 ## Dimensions  
- The following dimensions are contained in various data cubes. However - not all data cubes contain each dimension.  
+ The following dimensions are contained in various data cubes. However, not all data cubes contain each dimension.  
 
  - WorkItemDim
  - ConfigItemDim

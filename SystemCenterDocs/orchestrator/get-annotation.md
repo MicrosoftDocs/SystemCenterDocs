@@ -1,6 +1,6 @@
 ---
 title: Get Annotation
-description: The Get Annotation activity retrieves annotations for a specified message according to filter criteria that you specify.
+description: The Get Annotation activity retrieves annotations for a specified message according to the filter criteria that you specify.
 ms.custom: na
 ms.date: 4/25/2017
 ms.prod: system-center
@@ -8,11 +8,11 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.assetid: 60be0ba1-5e71-4521-bfae-9c7721fdfa03
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Annotation
@@ -23,7 +23,7 @@ manager: evansma
 
 ::: moniker-end
 
-The Get Annotation activity retrieves annotations for a specified message according to filter criteria that you specify. The activity uses filters to determine which annotations retrieved from the management server should be published.
+The Get Annotation activity retrieves annotations for a specified message according to the filter criteria that you specify. The activity uses filters to determine which annotations retrieved from the management server should be published.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).
 
@@ -40,7 +40,7 @@ The following tables list the required properties and published data for this ac
 | Annotation ID   | Unique identifier for an annotation.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts With<br>Ends With | String   |
 | Annotation Text | The annotation text.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts With<br>Ends With | String   |
 | Author   | Name of the HPOM user that is currently responsible for the annotation. | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts With<br>Ends With | String   |
-| Time Created   | The time that the annotations was created.   | Less than<br>Greater than   | Datetime   |
+| Time Created   | The time that the annotation was created.   | Less than<br>Greater than   | Datetime   |
 
 ## Get Annotation Published Data
 
@@ -60,15 +60,15 @@ The following tables list the required properties and published data for this ac
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 
-[Acknowledge Message](acknowledge-message.md)  
-[Add Annotation to Message](add-annotation-to-message.md)  
-[Create Message](create-message.md)  
-[Delete Annotation](delete-annotation.md)  
-[Delete Custom Attribute](delete-custom-attribute.md)  
-[Get Message](get-message.md)  
-[Launch Tool](launch-tool.md)  
-[Monitor Message](monitor-message.md)  
-[Own/Disown Message](own-or-disown-message.md)  
-[Set Custom Attribute](set-custom-attribute.md)  
-[Update Annotation](update-annotation.md)  
-[Update Message](update-message.md)  
+- [Acknowledge Message](acknowledge-message.md)  
+- [Add Annotation to Message](add-annotation-to-message.md)  
+- [Create Message](create-message.md)  
+- [Delete Annotation](delete-annotation.md)  
+- [Delete Custom Attribute](delete-custom-attribute.md)  
+- [Get Message](get-message.md)  
+- [Launch Tool](launch-tool.md)  
+- [Monitor Message](monitor-message.md)  
+- [Own/Disown Message](own-or-disown-message.md)  
+- [Set Custom Attribute](set-custom-attribute.md)  
+- [Update Annotation](update-annotation.md)  
+- [Update Message](update-message.md)  

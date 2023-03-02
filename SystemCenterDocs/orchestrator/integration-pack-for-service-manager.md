@@ -1,10 +1,10 @@
 ---
 title: System Center integration pack for System Center - Service Manager
 description: The article describes the integration pack for System Center - Service Manager. The pack is an add-in for System Center - Orchestrator.
-ms.date: 04/04/2019
+ms.date: 02/10/2023
 ms.prod: system-center
 ms.technology: orchestrator
-ms.topic: reference
+ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -31,6 +31,10 @@ The Service Manager integration pack requires the following software to be insta
 -   The Service Manager integration pack is only supported for use on computers set to use:
     -   The ENU Locale
     -   The U.S. English date format (month/day/year)
+
+>[!Note]
+>- SCO's SCSM IP must be deployed on machines that already have `Microsoft.EnterpriseManagement.Core.dll`.
+>- Ensure to install the Service Manager console on the machine where the IP is deployed as DLL is removed from the 2022 SCSM IP.
 
 
 ## Download the pack

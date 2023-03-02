@@ -1,7 +1,7 @@
 ---
 ms.assetid: 4645135e-4007-41eb-abf1-addae8627aec
 description: include file to summarize the release notes for System Center 2019 - Service Provider Foundation
-manager: evansma
+manager: mkluck
 ms.topic: include
 author: jyothisuri
 ms.author: jsuri
@@ -14,4 +14,4 @@ title: include file
 
 ## SPF 2019 release notes
 
-This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the Update Rollup 2 of SPF 2016.
+This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped until Update Rollup 2 of SPF 2016.

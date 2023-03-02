@@ -47,7 +47,7 @@ This article details the new features supported in System Center 1801 - Service 
 
 ## Support for TLS 1.2
 
-This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f), along with added support for TLS 1.2 Protocol. For more information about how to set up, configure and run your environment to use TLS 1.2, [Read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped until the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f), along with added support for TLS 1.2 Protocol. For more information about how to set up, configure, and run your environment to use TLS 1.2, [Read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 This build should be used for validating the SPF integration scenarios with other System Center components included in the 1801 release.
 
@@ -56,14 +56,14 @@ This build should be used for validating the SPF integration scenarios with othe
 ::: moniker range="sc-spf-2019"
 
 ## Support for PowerShell 4.0+
-Earlier versions of SPF supported PowerShell V2.0. PowerShell V2.0 didn't support some scripts and users had to apply workarounds. SPF 2019 supports PowerShell V4.0 to resolve this issue.
+The earlier versions of SPF supported PowerShell V2.0. PowerShell V2.0 didn't support some scripts and users had to apply workarounds. SPF 2019 supports PowerShell V4.0 to resolve this issue.
 
 ## Support for SQL 2017
 SPF 2019 supports SQL 2017 for fresh installation.
 
 ## Bug fixes
 
-This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f).
+This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped until the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f).
 
 > [!NOTE]
 > No features were introduced in SPF 1807.
@@ -73,11 +73,12 @@ This release of System Center Service Provider Foundation (SPF) contains all the
 
 ## Support for TLS 1.2
 
-This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f), along with added support for TLS 1.2 Protocol. For more information about how to set up, configure and run your environment to use TLS 1.2, [Read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped until the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f), along with added support for TLS 1.2 Protocol. For more information about how to set up, configure, and run your environment to use TLS 1.2, [Read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 This build should be used for validating the SPF integration scenarios with other System Center components included in the 1801 release.
 
 ::: moniker-end
 
 ## Next steps
+
 - [Know the fixed issues](./release-notes-spf.md)

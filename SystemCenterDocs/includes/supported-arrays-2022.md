@@ -4,7 +4,7 @@ title: include file
 description: Include file to summarize the supported storage arrays for VMM 2022.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/06/2022
 ms.topic: include
 ms.prod: system-center

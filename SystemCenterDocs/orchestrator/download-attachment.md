@@ -8,11 +8,11 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.assetid: db57641c-d761-4391-ba2f-871bdea9ce1a
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Download Attachment
@@ -47,7 +47,7 @@ There are no optional properties for this runbook activity.
 |:---|:---|:---|
 | Attachment   | The file name and file name extension of the file that was downloaded.   | String   |
 | Destination File Name | The file name of the downloaded file on the local computer. The name of the downloaded file can be different from the name of the attachment if the Rename option was applied using the **Action If Exists** property. | String   |
-| Destination Folder   | The absolute path of the folder on the local computer where the attachment was be downloaded.   | String   |
+| Destination Folder   | The absolute path of the folder on the local computer where the attachment was to be downloaded.   | String   |
 | Destination Path   | The absolute path of the downloaded file on the local computer.   | String   |
 | ID   | The ID of the list item that contains the attachment that was downloaded.   | Integer   |
 | List Name   | The name of the SharePoint list that contains the item.   | String   |

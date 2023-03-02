@@ -1,8 +1,8 @@
 ---
 title: Service Manager registry keys
 description: Learn about registry keys used by Service Manager.
-manager: evansma
-ms.topic: reference
+manager: mkluck
+ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center

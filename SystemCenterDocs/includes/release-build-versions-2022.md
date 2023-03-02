@@ -14,7 +14,7 @@ ms.topic: include
 ## Operations Manager 2022 build versions
 
 >[!NOTE]
->All System Center Operations Manager update rollups are cumulative. This means you do not need to apply them in order, you can always apply the latest update. If you have deployed System Center 2022 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
+>All System Center Operations Manager update rollups are cumulative. This means you don't need to apply them in order; you can always apply the latest update. If you've deployed System Center 2022 - Operations Manager and never applied an update rollup, you can proceed to install the latest one available.
 
 The following tables list the release history for Operations Manager 2022.
 

@@ -18,26 +18,26 @@ The following sections provide general performance and scalability guidance for 
 
 ## Hardware
 
-| Orchestrator Server Role | x64 Processor (min) | Memory (min) | Disk space (min) |
-|:-----|:----|:---- |:---- |
-|All server roles|2.1 GHz, dual-core CPU |2 GB|200 MB
+| Orchestrator Server Role | x64 Processor (min)    | Memory (min) | Disk space (min) |
+| :----------------------- | :--------------------- | :----------- | :--------------- |
+| All server roles         | 2.1 GHz, dual-core CPU | 2 GB         | 200 MB           |
 
 ## Server operating system
 
 The following versions of Windows Server operating system are supported.
 
-| Component | Windows Server 2016 Standard, Datacenter with Desktop Experience | Windows Server 2019 Standard, Datacenter with Desktop Experience |
-|:--- |:---|:--- |:--- |
-|All server roles|Supported|Supported|
+| Component        | Windows Server 2016 Standard, Datacenter with Desktop Experience | Windows Server 2019 Standard, Datacenter with Desktop Experience |
+| :--------------- | :--------------------------------------------------------------- | :--------------------------------------------------------------- |
+| All server roles | Supported                                                        | Supported                                                        |
 
 
 ## Client operating system
 
 The following versions of Windows client operating system are supported for the Orchestrator.
 
-|Component| Windows Server 2016 Standard, Datacenter with Desktop Experience| Windows Server 2019 Standard, Datacenter with Desktop Experience | Windows 10 |
-|:--- |:---|:--- |:--- |:---|
-|Runbook Designer|supported|Supported| Supported|
+| Component        | Windows Server 2016 Standard, Datacenter with Desktop Experience | Windows Server 2019 Standard, Datacenter with Desktop Experience | Windows 10 |
+| :--------------- | :--------------------------------------------------------------- | :--------------------------------------------------------------- | :--------- |
+| Runbook Designer | Supported                                                        | Supported                                                        | Supported  |
 
 ## Software
 
@@ -62,17 +62,20 @@ The following software is required for a full installation of Orchestrator on a 
     > [!NOTE]
     > On the first use of the Orchestration console, you're prompted to install Microsoft Silverlight on the computer if it isn't already installed. Install Silverlight 5.0.
 
+    > [!TIP]
+    > New version of the Web API and Orchestration Console have been released that doesn't depend on Silverlight. Follow instructions in the [announcement blog post](https://techcommunity.microsoft.com/t5/system-center-blog/a-brand-new-web-console-for-orchestrator-2019/ba-p/3040427) to download and install them.
+
 ## SQL Server
 
 > [!NOTE]
 > - For the supported versions of SQL, use the service packs/cumulative updates that are currently in support by Microsoft.
 > -	SQL *Always ON*  is supported, except in the cases where configuration is done on multi subnets.
 
-**SQL version** | **Supported**
---- | ---
-**[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)** | Y
-**[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)** | Y
-**SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)** | Y
+| **SQL version**                                                                            | **Supported** |
+| ------------------------------------------------------------------------------------------ | ------------- |
+| **[SQL Server 2019](/lifecycle/products/?terms=SQL+Server+2019)**                          | Y             |
+| **[SQL Server 2017](/lifecycle/products/?terms=SQL+Server+2017)**                          | Y             |
+| **SQL Server 2016 and SPs as detailed [here](/lifecycle/products/?terms=SQL+Server+2016)** | Y             |
 
 >[!NOTE]
 > When you deploy Orchestrator in an **Always ON** scenario, the Database Availability wizard prompts for the database encryption key password. For information on how to retrieve the password, see [database migration](../orchestrator/migrate-orchestrator-between-environments.md).
