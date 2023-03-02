@@ -30,7 +30,7 @@ This article describes how to create reports on Power BI for Azure Monitor SCOM 
     3. Provide **db_datareader** permission to the Login on Data warehouse database.
             :::image type="Login properties" source="media/operations-manager-managed-instance-create-reports-on-power-bi/login-properties.png" alt-text="Screenshot showing login properties.":::
     4. [Download the supported SSMS](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) and add login to SSMS.
-    5. Create an NSG rule to allow public endpoint traffic on the network security group. For more information about how to configure public endpoint, see Configure public endpoint.
+    5. Create an NSG rule to allow public endpoint traffic on the network security group. For more information about how to configure public endpoint, see [Configure public endpoint](/azure/azure-sql/managed-instance/public-endpoint-configure?view=azuresql).
 
 - SQL based authentication: 
 
