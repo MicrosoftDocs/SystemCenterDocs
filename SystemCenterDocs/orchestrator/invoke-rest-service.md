@@ -1,18 +1,18 @@
 ---
 title: Invoke REST Service
 description: The Invoke REST Service activity is used in a runbook to make requests to RESTful web services and retrieve data or execute functions.
-ms.custom: na
-ms.date: 4/25/2017
+ms.custom: engagement-fy23
+ms.date: 02/01/2023
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.assetid: 8e13d6ae-5c53-48dc-912d-ba132e5eeb11
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Invoke REST Service
@@ -44,7 +44,7 @@ The activity publishes all of the data from the required and optional properties
 | Request Header   | Special request headers entered in this format:<br>&lt;Parameter&gt;: &lt;Value&gt;   | Valid HTTP request header parameters and values. Can be blank.<br>Each parameter: value pair must be on a separate line. |
 | Request Body   | The request body. If not blank, then Payload File Path must be blank.   | String. Can be blank.   |
 | Payload File Path   | The location of the payload file to use with the request. If not blank, Request Body must be blank.   | A valid file location. Can be blank.   |
-| PFX File Path   | The location of the encrypted client certificate file used for requests to Windows Azure.   | A valid file location. Can be blank.   |
+| PFX File Path   | The location of the encrypted client certificate file used for requests to Microsoft Azure.   | A valid file location. Can be blank.   |
 | PFX File Password   | The password to the encrypted file ini .PFX format.   | String. Can be encrypted. Can be blank.   |
 
 ## Invoke REST Service Optional Properties
@@ -60,7 +60,7 @@ There are no optional properties for this activity.
 | Encode URL   | Whether or not to encode the URL.   | Boolean   |
 | HTTP Method   | The HTTP method to use.   | String   |
 | HTTP Version   | The version of HTTP to use.   | String   |
-| PFX File Path   | The location of the encrypted client certificate file used for requests to Windows Azure.   | String   |
+| PFX File Path   | The location of the encrypted client certificate file used for requests to Microsoft Azure.   | String   |
 | Payload File Path   | The location of the payload file to use with the request. If not blank, Request Body must be blank.   | String   |
 | Request Body   | The request body. If not blank, then Payload File Path must be blank.   | String   |
 | Request Header   | Special request headers entered in this format:<br>&lt;Parameter&gt;: &lt;Value&gt;   | String   |

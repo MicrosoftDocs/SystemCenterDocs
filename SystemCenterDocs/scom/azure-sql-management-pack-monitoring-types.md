@@ -2,10 +2,11 @@
 ms.assetid: 3711a302-ab02-4bf9-a3ad-c0dbbdf669fb
 title: Monitoring types in Management Pack for Azure SQL Database
 description: This article explains how to configure Azure REST API and T-SQL monitoring in Management Pack for Azure SQL Database
+ms.custom: engagement-fy23
 author: vchvlad
 ms.author: v-vchernov
 manager: evansma
-ms.date: 12/21/2022
+ms.date: 01/09/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -64,7 +65,7 @@ For more information, see [How to - Use the portal to create an Azure AD applica
 
 To begin the monitoring of Azure SQL Databases using the Azure REST API, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, right-click **Azure SQL Database Monitoring**, and select **Add Monitoring Wizard**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Templates**, select and hold **Azure SQL Database Monitoring**, and select **Add Monitoring Wizard**.
 
     ![Screenshot showing the REST API monitoring wizard.](./media/azure-sql-management-pack/opening-monitoring-wizard.png)  
 
@@ -74,7 +75,7 @@ To begin the monitoring of Azure SQL Databases using the Azure REST API, perform
 
 3. At the **General Properties** step, enter a new name and description, and from the **Select destination management pack** dropdown list, select a management pack that you want to use to store the template.  
 
-    To create a new management pack, select **New** and follow the instructions of the wizard.
+    To create a new management pack, select **New**, and follow the instructions of the wizard.
 
     ![Screenshot showing General properties.](./media/azure-sql-management-pack/configuring-general-properties.png)
 
@@ -169,9 +170,9 @@ To begin the monitoring of Azure SQL Databases using the Azure REST API, perform
 
     ![Screenshot showing SPN status.](./media/azure-sql-management-pack/reviewing-spn-status.png)
 
-7. [Optionally] At the **Server Filter List** step, select the filtering mode, which can be either **Exclude** or **Include**, and select the filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Server names that you want to exclude from or include to the monitoring list, select **Add**, and select **Next**.
+7. [Optionally] At the **Server Filter List** step, select filtering mode, which can be either **Exclude** or **Include**, and select filtering masks type, which can be either **Wildcard** or **Regular Expression**, enter filtering masks that should match SQL Server names that you want to exclude from or include to the monitoring list, select **Add**, and select **Next**.
 
-    **Wildcard** filtering mask type can contain a server name in only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
+    **Wildcard** filtering mask type can contain a server name only lowercase letters, numbers, and the '-' character, but can't start from or end with the '\\' character or contain more than 63 characters. A server exclude list filter mask ignores whitespaces.
 
     ![Screenshot of the server exclude list wildcard SPN.](./media/azure-sql-management-pack/configuring-server-include-wildcard-list.png)
 

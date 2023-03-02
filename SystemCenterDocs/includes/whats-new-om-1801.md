@@ -4,7 +4,7 @@ title: include file
 description: include file to describe the new features in Operations Manager 1801
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 12/21/2018
 ms.prod: system-center
 monikerRange: 'sc-om-1801'
@@ -24,7 +24,7 @@ In the previous versions of Operations Manager, you had to upgrade from the eval
 
 You can now use a Linux agent with FluentD support for log file monitoring at par with Windows Server. This update provides the following improvements over previous log file monitoring:
 
-- Wild-card characters in log file name and path.
+- Wildcard characters in log file name and path.
 - New match patterns for customizable log search like simple match, exclusive match, correlated match, repeated correlation, and exclusive correlation.
 - Support for generic Fluentd plugins published by the fluentd community.
 
@@ -54,4 +54,4 @@ In System Center 2016, we released the MP Updates and Recommendations feature, w
 Operations Manager can now support Kerberos authentication wherever the WS-Management protocol is used by the management server to communicate with UNIX and Linux computers, providing greater security by no longer needing to enable basic authentication for Windows Remote Management (WinRM).
 
 ## Service Map integration
-Service Map automatically discovers application components on Windows and Linux systems and maps the communication between services. It automatically builds a common reference map of dependencies across your servers, processes, and third-party services. Integration between Service Map and System Center Operations Manager allows you to automatically create distributed application diagrams in Operations Manager that are based on the dynamic dependency maps in Service Map.  For more information on planning and configuring  integration, see [Service Map integration with System Center Operations Manager](/azure/operations-management-suite/operations-management-suite-service-map-scom).
+Service Map automatically discovers application components on Windows and Linux systems and maps the communication between services. It automatically builds a common reference map of dependencies across your servers, processes, and third-party services. Integration between Service Map and System Center Operations Manager allows you to automatically create distributed application diagrams in Operations Manager that are based on the dynamic dependency maps in Service Map. For more information on planning and configuring  integration, see [Service Map integration with System Center Operations Manager](/azure/operations-management-suite/operations-management-suite-service-map-scom).

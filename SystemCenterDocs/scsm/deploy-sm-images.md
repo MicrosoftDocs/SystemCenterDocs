@@ -1,7 +1,7 @@
 ---
 title: Create and deploy server images of Service Manager
 description: This article helps you create a system image that contains software needed for use as a template so that you can apply it to new servers.
-manager: evansma
+manager: mkluck
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -23,10 +23,10 @@ ms.assetid: 22f049e0-a591-447c-b299-df44e3d95784
 
 ::: moniker-end
 
-You can use the information in this article to create a system image that contains Windows server, SQL Server, and Service Manager for use as a template that you can apply to new servers. Follow the basic steps below to prepare the image. You can modify them, as needed for your environment. For more information about the Windows System Preparation Tool, [What is Sysprep?](/previous-versions/windows/it-pro/windows-vista/cc721940(v=ws.10))  
+You can use the information in this article to create a system image that contains Windows server, SQL Server, and Service Manager for use as a template that you can apply to new servers. Follow the basic steps below to prepare the image. You can modify them, as needed, for your environment. For more information about the Windows System Preparation Tool, see [What is Sysprep?](/previous-versions/windows/it-pro/windows-vista/cc721940(v=ws.10)).
 
 > [!NOTE]  
->  Details about installing SQL Server using a configuration file are not covered in this topic. For more information about using a configuration file to install SQL Server, see [Install SQL Server Using a Configuration File](/sql/database-engine/install-windows/install-sql-server-using-a-configuration-file).  
+>  Details about installing SQL Server using a configuration file aren't covered in this article. For more information about using a configuration file to install SQL Server, see [Install SQL Server Using a Configuration File](/sql/database-engine/install-windows/install-sql-server-using-a-configuration-file).  
 
  Afterward, modify and save the sample CMD file below to create your own customized version and then run the file.  
 
@@ -34,7 +34,7 @@ You can use the information in this article to create a system image that contai
 
 1.  Install Windows Server on the new server.  
 
-2.  Install SQL Server in *Prepare for imaging* mode. This installs the binary files, but does not configure SQL server.  
+2.  Install SQL Server in *Prepare for imaging* mode. This installs the binary files, but doesn't configure SQL server.  
 
     > [!NOTE]  
     >  SQL server is unusable at this point.  
@@ -47,7 +47,7 @@ You can use the information in this article to create a system image that contai
 
 6.  Run the System Preparation Tool \(Sysprep\) with the \/generalize command to generalize the server.  
 
-7.  Capture the Windows installation with ImageX, by creating a reference images with which to install servers with the same hardware configuration.  
+7.  Capture the Windows installation with ImageX by creating a reference image with which to install servers with the same hardware configuration.  
 
 8.  Create a Windows Unattend.xml file to customize Windows when the image is booted and have it run FirstRun.cmd.  
 
@@ -76,4 +76,4 @@ You can use the information in this article to create a system image that contai
 
 ## Next steps
 
-- Review [Guidance for installing Service Manager on virtual machines](install-sm-vms.md) for information that you should consider when you install Service Manager in a Hyper-V virtual environment.
+- For information that you should consider when you install Service Manager in a Hyper-V virtual environment, review [Guidance for installing Service Manager on virtual machines](install-sm-vms.md).

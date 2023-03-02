@@ -1,7 +1,7 @@
 ---
 title: Post-upgrade tasks in System Center - Service Manager p
 description: Summarizes tasks to complete after you upgrade System Center - Service Manager.
-manager: evansma
+manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -18,38 +18,38 @@ ms.topic: article
 
 ::: moniker-end
 
-This articles describes the tasks you should complete after upgrading System Center - Service Manager.
+This article describes the tasks you should complete after upgrading System Center - Service Manager.
 
 ## Restart the Data Access service and workflows
  If necessary, use the following procedures to restart the service and workflows.  
 
 #### To restart the Data Access service  
 
-1.  On the computer that hosts the data warehouse management server, on the Windows desktop, click **Start**, and then click **Run**.  
+1.  On the computer that hosts the data warehouse management server, on the Windows desktop, select **Start**, and select **Run**.  
 
-2.  In the **Run** dialog box, in **Open**, type **services.msc**, and then click **OK**.  
+2.  In the **Run** dialog, in **Open**, enter **services.msc**, and select **OK**.  
 
-3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **System Center Data Access Service**, and then click **Start**.  
+3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **System Center Data Access Service**, and select **Start**.  
 
 #### To start Service Manager workflows  
 
-1.  On the computer that hosts the Service Manager management server, on the Windows desktop, click **Start**, and then click **Run**.  
+1.  On the computer that hosts the Service Manager management server, on the Windows desktop, select **Start**, and select **Run**.  
 
-2.  In the **Run** dialog box, in **Open**, type **services.msc**, and then click **OK**.  
+2.  In the **Run** dialog, in **Open**, enter **services.msc**, and select **OK**.  
 
-3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **System Center Management**, and then click **Start**.  
+3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **System Center Management**, and select **Start**.  
 
 ## Restart data warehouse jobs  
  After you upgrade the data warehouse management server, you might need to restart the data warehouse \(extraction, transformation, and load \(ETL\)\) jobs. You can use the following procedure to restart the data warehouse jobs. In this procedure, you enable data warehouse job schedules by using Windows&nbsp;PowerShell cmdlets.  
 
 #### To restart data warehouse jobs  
 
-1.  On the computer that hosts the data warehouse management server, click **Start**, point to **Programs**, point to **Accessories**, click **Windows PowerShell**, right\-click **Windows PowerShell**, and then click **Run as administrator**.  
+1.  On the computer that hosts the data warehouse management server, select **Start**, point to **Programs**, point to **Accessories**, select **Windows PowerShell**, right\-click **Windows PowerShell**, and select **Run as administrator**.  
 
-2.  Type the following commands and then press Enter after each command.  
+2.  Enter the following commands and then press Enter after each command.  
 
     > [!NOTE]  
-    >  It is assumed in the following command examples that Service Manager was installed in its default location on the C: drive. If necessary, change directories to the location where you installed Service Manager.  
+    >  It's assumed in the following command examples that Service Manager was installed in its default location on the C: drive. If necessary, change directories to the location where you installed Service Manager.  
 
     ```  
     cd 'C:\Program Files\Microsoft System Center <version>\Service Manager'  
@@ -98,13 +98,13 @@ This articles describes the tasks you should complete after upgrading System Cen
 
 #### To stop and then restart SSRS  
 
-1.  On the computer that hosts SSRS, on the Windows desktop, click **Start**, and then click **Run**.  
+1.  On the computer that hosts SSRS, on the Windows desktop, select **Start**, and select **Run**.  
 
-2.  In the **Run** dialog box, type **services.msc**, and then click **OK**.  
+2.  In the **Run** dialog, enter **services.msc**, and select **OK**.  
 
-3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **SQL Server Reporting Services**, and then click **Stop**.  
+3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **SQL Server Reporting Services**, and select **Stop**.  
 
-4.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **SQL Server Reporting Services**, and then click **Start**.
+4.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **SQL Server Reporting Services**, and select **Start**.
 
 
 ## Next steps

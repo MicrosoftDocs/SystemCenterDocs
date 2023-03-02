@@ -1,7 +1,7 @@
 ---
 title: include file
-manager: evansma
-description: include file to describe the hardware, software and other system requirements  Service Manager 2022.
+manager: mkluck
+description: include file to describe the hardware, software, and other system requirements  Service Manager 2022.
 ms.custom: na
 ms.prod: system-center
 author: jyothisuri
@@ -57,7 +57,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 |**Service Manager console**|The console requires: Microsoft Excel in order to view OLAP data cubes on the console computer;  ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server; SQL Server Analysis Management Objects.<br/><br/> The console can be installed on 64\-bit edition of Windows.|  
 |**Self-Service portal**|The Self-Service Portal server requires: Windows 2016 server or later; the IIS role and ASP.NET 4.5 enabled; SQL Server Analysis Management Objects.<br/><br/>  Join the server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server.
 |**Machines using self-service**|The Self Service portal needs a screen resolution above 1024 X 768.<br/><br/> Supported browsers: Microsoft Edge; Microsoft Internet Explorer 10 and 11; Mozilla Firefox 42 and later; Google Chrome 46 and later.|  
-|**SQL Server Reporting Services**|In a deployment topology where the computer hosting SSRS is not on the same computer that hosts the data warehouse management server, you have to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](../scsm/config-remote-ssrs.md) the manual steps.
+|**SQL Server Reporting Services**|In a deployment topology where the computer hosting SSRS isn't on the same computer that hosts the data warehouse management server, you've to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](../scsm/config-remote-ssrs.md) the manual steps.
 
 
 ### Additional notes
@@ -76,7 +76,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 
  Microsoft SQL Server hosts the databases that System Center - Service Manager creates. In addition, System Center 2022 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2022 - Service Manager reporting.
 
- Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2022. Use this information whether you are deploying one or multiple components of System Center.
+ Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2022. Use this information whether you're deploying one or multiple components of System Center.
 
 >[!NOTE]
 > During installation, select *SQL Server full-text search* on the computers running SQL Server that will host the Service Manager and data warehouse databases.
@@ -86,7 +86,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 > [!NOTE]
 > - SM  doesn’t support SSAS mode *Tabular*. Select the SSAS mode as *Multi-dimensional* during the installation of SQL Server.
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
-> - Service Manager 2022 supports SQL 2019 with CU8 or later; however, it does not support SQL 2019 RTM.
+> - Service Manager 2022 supports SQL 2019 with CU8 or later; however, it doesn't support SQL 2019 RTM.
 > - With SQL 2019 (CU8 or later), use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
 
 
@@ -97,7 +97,7 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
 
 
   > [!NOTE]
-  > System Center 2022 - Service Manager does not support the *MultiSubnetFailover* parameter. This parameter is not used in System Center 2022 - Service Manager connection strings.
+  > System Center 2022 - Service Manager doesn't support the *MultiSubnetFailover* parameter. This parameter isn't used in System Center 2022 - Service Manager connection strings.
 
 ### Allow updates
 
@@ -129,13 +129,13 @@ To help simplify upgrades, you can use Service Manager 2022 connectors with the 
  The following steps provide information about upgrading to SQL 2017.
 
   > [!NOTE]  
-  > Upgrade process to SQL 2017 uninstalls the reporting services, ensure to migrate required reports such as backup reporting DB and encryption keys.
+  > Upgrade process to SQL 2017 uninstalls the reporting services; ensure to migrate required reports such as backup reporting DB and encryption keys.
 
 **Use the following steps to upgrade from SQL 2016 to 2017**:
 
 1. Upgrade to SQL 2017.
-2. Install SQL 2017 reporting services (SSRS), and launch the reporting services configuration manager to use the existing reporting DB, restore encryption keys.  Configure the Web service URL and Web portal URL.
-3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2017.      
+2. Install SQL 2017 reporting services (SSRS), launch the reporting services configuration manager to use the existing reporting DB, and restore encryption keys. Configure the Web service URL and Web portal URL.
+3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2017.
 4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
 5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2017.
 
@@ -146,12 +146,12 @@ The following steps provide information about upgrading to SQL 2019.
  > [!NOTE]  
  > - You must use Cumulative Update 8 (CU8) or later with SQL 2019.
  > - Use ODBC 17.3 or later, and MSOLEDBSQL 18.2 or later.
- > - Upgrade process to SQL 2019 uninstalls the reporting services, ensure to migrate required reports such as backup reporting DB and encryption keys.
+ > - Upgrade process to SQL 2019 uninstalls the reporting services; ensure to migrate required reports such as backup reporting DB and encryption keys.
 
  **Use the following steps to upgrade from SQL 2017 to 2019**:
 
 1. Upgrade to SQL 2019.
-2. Install SQL 2019 reporting services (SSRS), and launch the reporting services configuration manager to use the existing reporting DB, restore encryption keys.  Configure the Web service URL and Web portal URL.
+2. Install SQL 2019 reporting services (SSRS), launch the reporting services configuration manager to use the existing reporting DB, and restore encryption keys. Configure the Web service URL and Web portal URL.
 3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2019.      
 4. Configure the SSRS as per the details shared [here](../scsm/prepare-remote-ssrs.md).
 5. [**Optional**] To enable CLR strict security, run the [following script](#enable-clr-strict-security) on each of the Service Manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2019.

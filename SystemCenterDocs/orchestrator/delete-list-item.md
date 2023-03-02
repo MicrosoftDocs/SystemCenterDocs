@@ -8,11 +8,11 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.assetid: 4cd54565-fcd1-4326-bb0d-be17d0dd1356
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete List Item
@@ -24,6 +24,7 @@ robots: noindex
 ::: moniker-end
 
 The **Delete List Item** activity is used in a runbook to delete an item from a Microsoft SharePoint list.
+
 The following tables list the required properties and published data for this activity.
 
 ## Delete List Item Required Properties

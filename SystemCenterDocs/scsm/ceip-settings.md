@@ -1,7 +1,7 @@
 ---
 title: Configure your preference for sharing diagnostic and usage data
 description: Learn about how to configure your preference for sharing Service Manager diagnostic and usage data.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -24,35 +24,35 @@ During setup in Service Manager, on the **Diagnostic and usage data** page, for 
 
 ## To configure your preference for sharing data from the Service Manager console
 
-1. In the Service Manager console, in the toolbar, click **Help**.
+1. In the Service Manager console, in the toolbar, select **Help**.
 
-2. In the **Help** menu, click on **Send diagnostic and usage data to Microsoft**
+2. In the **Help** menu, select **Send diagnostic and usage data to Microsoft**
 
-3. **Select** your diagnostic and usage data sharing preference from the dialog and  click on **Ok**.
+3. **Select** your diagnostic and usage data sharing preference from the dialog and select **Ok**.
 
 ## To configure your preference for sharing data from the Service Manager management server or data warehouse management server
 
 1. Use the Service Manager console installed on same machine as Service Manager Management Server or Data Warehouse Management Server (and connect the console to same server), depending on where you want to configure the preference for sharing Service Manager diagnostic and usage data.
 
-2. In the Service Manager console, in the toolbar, click **Help**.
+2. In the Service Manager console, in the toolbar, select **Help**.
 
-3. In the **Help** menu, click on **Send diagnostic and usage data to Microsoft**
+3. In the **Help** menu, select **Send diagnostic and usage data to Microsoft**
 
-4. **Select** your diagnostic and usage data sharing preference from the dialog and  click on **Ok**.
+4. **Select** your diagnostic and usage data sharing preference from the dialog and select **Ok**.
 
-5. In the **Run** dialog box, in the Open text field, type **services.msc**, and then click **Ok**.
+5. In the **Run** dialog box, in the Open text field, enter **services.msc**, and select **Ok**.
 
-6. In the **Services** window, in the **Services (Local)** pane, locate the **System Center Data Access Service**, and click **Restart**.
+6. In the **Services** window, in the **Services (Local)** pane, locate the **System Center Data Access Service**, and select **Restart**.
 
 ## To configure your preference for sharing data from the Self Service portal
 
-1. Log in as an **administrator** on the **IIS server** which is hosting the **Service Manager Self Service Portal** website.
+1. Sign in as an **administrator** on the **IIS server**, which is hosting the **Service Manager Self Service Portal** website.
 
 2. Open the **Web.config** file in the directory where **Service Manager Self Service Portal** is installed.
 
 3. In **Web.config** file, find the key named **EnableTelemetry** under the XML tag **appSettings**.
 
-4. Configure the **value** of **EnableTelemetry** key depending on your preference to share  Service Manager diagnostic and usage data for Service Manager Self Service Portal. The value set as **true** for this key **enables** the sharing of diagnostic and usage data with Microsoft, and setting the value of **EnableTelemetry** key as **false**,  **disables** the sharing of diagnostic and usage data with Microsoft.
+4. Configure the **value** of **EnableTelemetry** key depending on your preference to share Service Manager diagnostic and usage data for Service Manager Self Service Portal. The value set as **true** for this key **enables** the sharing of diagnostic and usage data with Microsoft, and setting the value of **EnableTelemetry** key as **false**, **disables** the sharing of diagnostic and usage data with Microsoft.
 
 5. **Save** and **Close** the **Web.config** file.
 

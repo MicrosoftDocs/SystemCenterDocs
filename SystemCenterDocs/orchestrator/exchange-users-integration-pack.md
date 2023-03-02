@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.assetid: 2a7359ab-604e-4e05-89f3-09eb13a14c58
 author: jyothisuri
 ms.author: jsuri
@@ -33,11 +33,11 @@ This integration pack can be used to connect to both on-premises or Online Excha
 
 This integration pack operates in the methods shown below:
 
-| Server kind               | Supported auth mode | Default    |
-| ------------------------- | ------------------- | ---------- |
+| Server kind                   | Supported auth mode | Default    |
+| ----------------------------- | ------------------- | ---------- |
 | Exchange Server (on-premises) | Basic Auth          | Basic Auth |
-| Exchange Online           | OAuth               | OAuth      |
-| Office 365 Exchange       | OAuth               | OAuth      |
+| Exchange Online               | OAuth               | OAuth      |
+| Office 365 Exchange           | OAuth               | OAuth      |
 
 ::: moniker-end
 
@@ -63,6 +63,35 @@ Prior to implementing the Exchange Users Integration Pack, you must install and 
 - Exchange accounts on,
   - (On-premises Exchange Server) Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or
   - (Exchange Online) Microsoft Exchange Online/Microsoft Office 365 Exchange.
+
+::: moniker-end
+
+::: moniker range="=sc-orch-2019"
+
+> [!IMPORTANT]
+>
+> 1. Exchange User Integration Pack (v10.19.25.0 or above) targets .NET Framework 4.7. Ensure
+>    that .NET Framework Runtime v4.7 or later is installed on Runbook Designer and Runbook Server
+>    machines. We recommend installing the latest available .NET framework version.
+> 2. Create the following files with (identical) contents as shown below to update
+>    `supportedRuntimeVersion` to v4:
+>    - `%systemdrive%/Program Files (x86)/Microsoft System Center/Orchestrator/Runbook Designer/RunbookDesigner.exe.config`
+>    - `%systemdrive%/Program Files (x86)/Microsoft System Center/Orchestrator/Runbook Designer/RunbookTester.exe.config`
+>    - `%systemdrive%/Program Files (x86)/Microsoft System Center/Orchestrator/Runbook Server/PolicyModule.exe.config`
+>
+>    Contents:
+>
+>    ```xml
+>    <?xml version="1.0" encoding="utf-8"?>
+>    <configuration>
+>      <startup useLegacyV2RuntimeActivationPolicy="true">
+>        <supportedRuntime version="v4.0.30319"/>
+>      </startup>
+>      <system.xml.serialization>
+>        <xmlSerializer tempFilesLocation="C:\ProgramData\Microsoft System Center 2012\Orchestrator\Activities\XmlSerializers\"/>
+>      </system.xml.serialization>
+>    </configuration>
+>    ```
 
 ::: moniker-end
 

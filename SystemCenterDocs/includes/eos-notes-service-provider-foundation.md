@@ -12,4 +12,4 @@ ms.technology: service-provider-foundation
 ---
 > [!IMPORTANT]
 >
-> This version of Service Provider Foundation (SPF) has reached the end of support, we recommend you to [upgrade to SPF 2022](/system-center/spf/upgrade-spf).
+> This version of Service Provider Foundation (SPF) has reached the end of support; we recommend you to [upgrade to SPF 2022](/system-center/spf/upgrade-spf).

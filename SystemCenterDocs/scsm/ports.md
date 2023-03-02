@@ -1,7 +1,7 @@
 ---
 title: Port assignments for System Center - Service Manager
 description: Learn about the port assignments used by System Center - Service Manager.
-manager: evansma
+manager: mkluck
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -18,7 +18,7 @@ ms.topic: article
 
 ::: moniker-end
 
-As part of your security infrastructure, you may want to keep track of port numbers that are used throughout your System Center - Service Manager environment. And while these port numbers are not configurable, you can review the following table that lists port numbers that are used between the parts of Service Manager. You will want to ensure that these firewall ports are opened on computers that host Service Manager.  
+As part of your security infrastructure, you may want to keep track of port numbers that are used throughout your System Center - Service Manager environment. And while these port numbers aren't configurable, you can review the following table that lists port numbers that are used between the parts of Service Manager. You will want to ensure that these firewall ports are opened on computers that host Service Manager.  
 
 ## Port assignments  
 

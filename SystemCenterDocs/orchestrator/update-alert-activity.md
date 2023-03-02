@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: ba537978-bae7-4188-8c49-c380c7fc4adc
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Update Alert Activity
@@ -23,11 +23,11 @@ robots: noindex
 
 ::: moniker-end
 
-The Update Alert activity updated an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer. This activity can change the information in an alert based on results from automated diagnostics performed by a runbook.
+The Update Alert activity updated an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer. This activity can change the information in an alert based on the results from automated diagnostics performed by a runbook.
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
+The activity publishes all the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
 ## Update Alerts Required Properties
 
@@ -171,14 +171,14 @@ The following procedure describes the steps required to configure an Update Aler
 
 1.  From the **Activities** pane, drag an **Update Alert** activity to the active runbook.
 
-2.  Double-click the **Update Alert** activity icon. The **Properties** dialog box opens.
+2.  Double-click the **Update Alert** activity icon. The **Properties** dialog opens.
 
 3.  Configure the settings in the **Details** tab as follows:
 
-    1.  In the **Connection** section, click the ellipsis button **(...)**, and then select the IBM Tivoli Netcool/OMNIbus ObjectServer connection that you want to use for this activity. Click **OK**.
-    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can click the ellipsis (...) button next to the text box to browse for a value.
-        To add optional properties, click **Select Fields**. You must enter at least one optional property.
+    1.  In the **Connection** section, select the ellipsis button **(...)**, and then select the IBM Tivoli Netcool/OMNIbus ObjectServer connection that you want to use for this activity. Select **OK**.
+    2.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is lookup-enabled, you can select the ellipsis (...) button next to the text box to browse for a value.
+        To add optional properties, select **Select Fields**. You must enter at least one optional property.
 
 4.  In the **Fields** section, enter a value for each of the required properties and the applicable optional properties. If the property is lookup-enabled, you can browse for a value.
 
-5.  Click **Finish**.
+5.  Select **Finish**.

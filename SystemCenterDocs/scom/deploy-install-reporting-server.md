@@ -59,9 +59,7 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 > [!NOTE]
 > Before you continue with this procedure, ensure that the account you plan to use for the Data Warehouse Write account has SQL Server logon rights and is an Administrator on the computers hosting both the operational database and the Reporting data warehouse database. Otherwise, the Setup fails, and all changes are rolled back, which might leave SQL Server Reporting Services in an inoperable state.
 
-::: moniker range="sc-om-2022"
-
-## Install  Reporting Services on NTLM hardened enterprises  
+## Install Reporting Services on NTLM hardened enterprises
 
 In Operations Manager 2016 and later, if NTLM is disabled as an organization policy, Operations Manager’s reporting services were impacted. For organizations with NTLM disabled, you can select the Reporting Manager **Authentication Type**, as **Windows Negotiate** while installing. NTLM is the default option.
 
@@ -73,8 +71,6 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
 - If SSRS and SQL both installed on remote servers, ensure SDK, SSRS, and SQL SPNs are set.
 - If SSRS is installed on remote server and SQL and Management Server are installed on the same server, SDK and SSRS SPNs are required.
 - If SQL installed on remote server and SSRS and Management Server are installed on the same server, ensure that SQL, SSRS, and SDK SPNs are set.
-
-::: moniker-end
 
 #### To verify that Reporting Services is configured correctly
 
@@ -137,7 +133,8 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
 3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command.
 
     > [!NOTE]
-    > The /ManagementServer parameter is only required when you're installing reporting on a server that isn't a management server.
+    > - The `/ManagementServer` parameter is only required when you're installing reporting on a server that isn't a management server.
+    > - The `/SRSInstance` parameter is only allowed to utilize a local SSRS instance.
 
     ```
     setup.exe /silent /install /components:OMReporting
