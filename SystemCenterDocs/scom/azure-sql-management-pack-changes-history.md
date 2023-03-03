@@ -22,7 +22,7 @@ This section covers new functionality and improvements in Management Pack for Az
 - Updated the SPN creation process related to the [latest changes in Azure API](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains)
 - Added a new regular expression filtering mask type in the 'Server Filter List' monitoring wizard, now the server names can be filtered using regular expression for include and exclude from the monitoring
 - Added a new regular expression filtering mask type in the 'Database Filter List' monitoring wizard, now the database names can be filtered using regular expression for include and exclude from the monitoring
-- Added a new "Allocated Storage Percentage" monitor ,which tracks the allocated space in Elastic Pool
+- Added a new "Allocated Storage Percentage" monitor, which tracks the allocated space in Elastic Pool
 - Added a new "Elastic Pool Data Space Allocated Percentage" performance rule, which collects the metric 'Data space allocated percentage' of Microsoft Azure SQL Elastic Database Pool in percentage terms
 - Added a new "Elastic Pool Data Max Size" performance rule, which collects the metric 'Data max size' of Microsoft Azure SQL Elastic Database Pool in megabytes
 - Added a new "Elastic Pool Data Space Used" performance rule, which collects the metric 'Data space used' of Microsoft Azure SQL Elastic Database Pool in megabytes
