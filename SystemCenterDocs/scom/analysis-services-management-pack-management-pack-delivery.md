@@ -18,7 +18,7 @@ Services instances, databases, and partitions.
 
 You can download Management Pack for SQL Server Analysis Services from the [Microsoft portal](https://www.microsoft.com/download/details.aspx?id=57382) or System Center Operations Manager Online Catalog.
 
-After you download and unpack the **Microsoft.SQLServer.AnalysisServices.ManagementPack.msi** package — a set of MP and MPB files for monitoring of Analysis Services on Windows, the following files become available:
+After you download and unpack the **Microsoft.SQLServer.AnalysisServices.ManagementPack.msi** package—a set of MP and MPB files for monitoring of Analysis Services on Windows, the following files become available:
 
 - **Microsoft.SQLServer.AnalysisServices.Windows.Discovery.mpb**
 
@@ -52,14 +52,14 @@ The environment that you use must meet the following prerequisites before you st
 
 - Import **Management Pack for Windows Server Operating System**.
 
-- Enable the **Agent Proxy** option on each agent that is installed on the clustered servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md). Enabling this option for standalone servers is not required.
+- Enable the **Agent Proxy** option on each agent that is installed on the clustered servers. For more information, see [Enabling Agent Proxy Option](sql-server-management-pack-enabling-agent-proxy.md). Enabling this option for standalone servers isn't required.
 
-- Enable the **SQL Server Browser** service. This service is required for Analysis Services discovery and monitoring and must be installed and running on computers with Analysis Services. Note that SQL Server Analysis Services port configuration depends on the SQL Server Browser settings. For more information, see [SQL Server Browser Service (Database Engine and SSAS)](/sql/database-engine/configure-windows/sql-server-browser-service-database-engine-and-ssas).
+- Enable the **SQL Server Browser** service. This service is required for Analysis Services discovery and monitoring and must be installed and running on computers with Analysis Services. SQL Server Analysis Services port configuration depends on the SQL Server Browser settings. For more information, see [SQL Server Browser Service (Database Engine and SSAS)](/sql/database-engine/configure-windows/sql-server-browser-service-database-engine-and-ssas).
 
 - Associate Microsoft SQL Server Run As profiles with the account that has administrative privileges for both the Windows Server and the SQL Server Analysis Services instance.
 
 > [!NOTE]
-> Management Pack for SQL Server Analysis Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
+> Management Pack for SQL Server Analysis Services doesn't support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 
