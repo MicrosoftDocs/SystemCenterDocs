@@ -2,7 +2,7 @@
 title: Deployment considerations with a disjointed namespace
 description: This article helps you avoid Service Manager Setup problems with disjointed namespaces.
 manager: mkluck
-ms.custom: na, intro-deployment, UpdateFrequency5
+ms.custom: na, intro-deployment, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

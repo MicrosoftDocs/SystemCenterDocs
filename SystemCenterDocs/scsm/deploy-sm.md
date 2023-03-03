@@ -8,7 +8,7 @@ ms.author: jsuri
 ms.date: 10/13/2020
 ms.technology: service-manager
 ms.topic: article
-ms.custom: intro-deployment, UpdateFrequency5
+ms.custom: intro-deployment, UpdateFrequency3
 ---
 
 # Deploy System Center - Service Manager
