@@ -8,6 +8,7 @@ ms.author: jsuri
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article
+ms.custom: UpdateFrequency2
 ---
 
 # Set up a lab environment for upgrade testing

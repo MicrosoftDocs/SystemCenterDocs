@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 399ef0ce-7ebe-4c30-8f8a-d10f475ad49d
+ms.custom: UpdateFrequency3
 ---
 
 # Configure change and activity management in Service Manager

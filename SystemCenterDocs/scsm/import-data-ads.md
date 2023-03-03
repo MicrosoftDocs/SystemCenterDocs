@@ -10,6 +10,7 @@ keywords:
 ms.date: 03/10/2022
 ms.technology: service-manager
 ms.assetid: d039eac3-e5cd-4f11-ac6c-bb856bafcc92
+ms.custom: UpdateFrequency2
 ---
 
 # Import data from Active Directory Domain Services

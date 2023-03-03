@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 8453a3e9-56ee-4750-b111-81e241c480a4
+ms.custom: UpdateFrequency2
 ---
 
 # Configure Incident Management in Service Manager

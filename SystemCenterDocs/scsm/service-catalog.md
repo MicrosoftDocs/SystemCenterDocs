@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 37c13875-a46b-4387-b35a-5d2c8f511f56
+ms.custom: UpdateFrequency3
 ---
 
 # Use the Service Manager service catalog to offer services

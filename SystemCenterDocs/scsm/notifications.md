@@ -10,6 +10,7 @@ keywords:
 ms.date: 02/15/2016
 ms.technology: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
+ms.custom: UpdateFrequency3
 ---
 
 # Configure notifications in Service Manager

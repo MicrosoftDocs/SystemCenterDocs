@@ -2,7 +2,7 @@
 title: Deploy from a command line
 description: This article describes how to deploy Service Manager using command-line parameters.
 manager: mkluck
-ms.custom: na, intro-deployment
+ms.custom: na, intro-deployment, UpdateFrequency2
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: a8f84795-11fd-4c62-8f50-0929cedd3b20
+ms.custom: UpdateFrequency3
 ---
 
 # Configure Service Level Management
