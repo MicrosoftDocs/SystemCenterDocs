@@ -27,7 +27,7 @@ After you download and unpack the **Microsoft.SQLServer.ReportingServices.Manage
 
 - **Microsoft.SQLServer.ReportingServices.Core.Library.mpb**
 
-    This library contains basic components required for monitoring of Microsoft SQL Server Reporting Services.
+    This library contains the basic components required for monitoring of Microsoft SQL Server Reporting Services.
 
 - **Microsoft.SQLServer.ReportingServices.Core.Views.mp**
 
@@ -59,7 +59,7 @@ The environment that you use must meet the following prerequisites before you st
 
 - Import the **Microsoft SQL Server on Windows (Discovery)** management pack.
 
-    This management pack does not discover database objects for SSRS Catalog Database or SSRS Temporary Database.
+    This management pack doesn't discover database objects for SSRS Catalog Database or SSRS Temporary Database.
 
     Import Management Pack for SQL Server to enable discovery, monitoring, and health rollup for SSRS databases and deployment performance collection. For more information, see [Discovery of SQL Server Reporting Services Deployment](reporting-services-management-pack-monitoring-configuration.md#discovery-of-sql-server-reporting-services-deployment).
 
@@ -70,7 +70,7 @@ The environment that you use must meet the following prerequisites before you st
     You can use the Local System account or HealthService SSID as an action account.
 
 >[!NOTE]
->Management Pack for SQL Server Reporting Services does not support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
+>Management Pack for SQL Server Reporting Services doesn't support most of the non-printable characters, except #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF], which are supported. Using unsupported non-printable characters in object names leads to inevitable workflow failure.
 
 ## Importing Management Pack
 
