@@ -9,7 +9,6 @@ ms.date: 04/22/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
-ms.custom: UpdateFrequency1
 ---
 
 # Release notes for System Center Operations Manager

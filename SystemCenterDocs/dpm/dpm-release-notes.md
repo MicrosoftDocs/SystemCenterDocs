@@ -9,7 +9,6 @@ ms.date: 11/15/2022
 ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: article
-ms.custom: UpdateFrequency1
 ---
 
 # System Center DPM Release Notes

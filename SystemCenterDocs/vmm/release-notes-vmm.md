@@ -9,7 +9,6 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency1
 ---
 
 # Release notes for System Center Virtual Machine Manager

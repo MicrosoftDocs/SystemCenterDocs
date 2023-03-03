@@ -9,7 +9,7 @@ ms.date: 10/14/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
-ms.custom: UpdateFrequency1, intro-whats-new
+ms.custom: intro-whats-new
 ---
 
 
