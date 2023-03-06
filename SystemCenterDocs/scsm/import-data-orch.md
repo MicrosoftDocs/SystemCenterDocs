@@ -10,7 +10,7 @@ keywords:
 ms.date: 05/12/2022
 ms.technology: service-manager
 ms.assetid: 33f8fa88-fad7-4354-bf6b-dbed1658ff0f
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ---
 
 # Import Runbooks from System Center Orchestrator into Service Manager
