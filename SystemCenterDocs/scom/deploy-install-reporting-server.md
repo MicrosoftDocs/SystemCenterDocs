@@ -68,9 +68,9 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
 
 ### Prerequisites to disable NTLM
 
-- If SSRS and SQL both installed on remote servers, ensure SDK, SSRS, and SQL SPNs are set.
-- If SSRS is installed on remote server and SQL and Management Server are installed on the same server, SDK and SSRS SPNs are required.
-- If SQL installed on remote server and SSRS and Management Server are installed on the same server, ensure that SQL, SSRS, and SDK SPNs are set.
+- If SSRS and SQL both installed on remote servers, ensure [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns), [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server), and [SQL](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections) SPNs are set.
+- If SSRS is installed on remote server and SQL and Management Server are installed on the same server, [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns) and [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server) SPNs are required.
+- If SQL installed on remote server and SSRS and Management Server are installed on the same server, ensure that [SQL](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections), [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server), and [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns) SPNs are set.
 
 #### To verify that Reporting Services is configured correctly
 
