@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 1825d27b-c016-4d16-8237-350fbced1686
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ---
 
 # Enable Mailbox
@@ -23,7 +23,7 @@ manager: carmonm
 
 ::: moniker-end
 
-You can use the Enable Mailbox activity in an on-premises environment to enable a mailbox for an existing Active Directory user or InetOrgPerson object. This activity creates additional mailbox attributes on the user object in Active Directory. When the user logs on to the mailbox or receives email messages, the system creates a mailbox object in the Exchange database.
+You can use the Enable Mailbox activity in an on-premises environment to enable a mailbox for an existing Active Directory user or InetOrgPerson object. This activity creates additional mailbox attributes on the user object in Active Directory. When the user signs in to the mailbox or receives email messages, the system creates a mailbox object in the Exchange database.
 
 For an online cloud-based environment, you can use this activity with the Archive parameter to enable an archive for an existing mailbox.
 
@@ -39,39 +39,39 @@ The following tables list the required properties, optional properties, and publ
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
-| Active Sync Mailbox Policy   | Specifies the name or identity of the mailbox policy to apply to the new mailbox. If this property is not configured, the default mailbox policy will be applied. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
+| Active Sync Mailbox Policy   | Specifies the name or identity of the mailbox policy to apply to the new mailbox. If this property isn't configured, the default mailbox policy will be applied. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Address Book Policy   | Specifies the name or identity of the address book policy to apply to this new mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Alias   | The mail nickname of the user. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Arbitration   | Specifies that the newly enabled mailbox is an arbitration mailbox. Arbitration mailboxes are used for managing approval workflow. For example, an arbitration mailbox is used for handling moderated recipients and distribution group membership approval.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
-| Archive   | Specifies whether to disconnect the archive mailbox from the associated mailbox user. This property cannot be used with the Remote Archive property.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is not available in the Live@edu environment. <br><br>   | True, False   |
+| Archive   | Specifies whether to disconnect the archive mailbox from the associated mailbox user. This property can't be used with the Remote Archive property.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property isn't available in the Live@edu environment. <br><br>   | True, False   |
 | Archive Database   | The archive mailbox database. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Archive Domain   | Specifies the cloud-based services domain on which the archive associated with this mailbox exists. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
-| Archive Name   | The archive mailbox name. <br><br><strong>Note </strong><br> This property is not available in the Live@edu environment. <br><br>   | String   |
-| Bypass Moderation From Senders or Members | A list of Senders or Members of a list whose messages are not subject to approval. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
+| Archive Name   | The archive mailbox name. <br><br><strong>Note </strong><br> This property isn't available in the Live@edu environment. <br><br>   | String   |
+| Bypass Moderation From Senders or Members | A list of Senders or Members of a list whose messages aren't subject to approval. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Database   | The Exchange database (GUID or database name) that contains the new mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
-| Discovery   | Specifies the mailbox as a Discovery mailbox. Discovery mailboxes are created as target mailboxes for Discovery searches. After being created or enabled, a Discovery mailbox cannot be repurposed or converted to another type of mailbox.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
+| Discovery   | Specifies the mailbox as a Discovery mailbox. Discovery mailboxes are created as target mailboxes for Discovery searches. After being created or enabled, a Discovery mailbox can't be repurposed or converted to another type of mailbox.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 | Display Name   | The contents of the Simple Display Name field. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Domain Controller   | The fully qualified domain name (FQDN) of the domain controller that writes this configuration change to Active Directory. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Equipment   | Specifies the new mailbox as equipment if this mailbox is a resource mailbox.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
-| Linked Domain Controller   | The domain controller in the forest where the user account resides. This domain controller is used to get security information for the account specified by the Linked Master Account property. This property is required only if you are creating a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
+| Linked Domain Controller   | The domain controller in the forest where the user account resides. This domain controller is used to get security information for the account specified by the Linked Master Account property. This property is required only if you're creating a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Linked Domain Password   | The password that is used to access the domain controller specified by the Linked Domain Controller property. This property is optional, even if when enabling a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Linked Domain User Name   | The user name that is used to access the domain controller specified by the Linked Domain Controller property. This property is optional, even if when enabling a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
-| Linked Master Account   | The master account in the forest where the user account resides. This master account is the account to link the mailbox to. The master account grants access to the mailbox. This property is required only if you are creating a linked mailbox.<br>This property can be one of the following value types:<br>GUID <br>DN<br>Domain\\Account <br>UPN<br>LegacyExchangeDN<br>SmtpAddress<br>Alias <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br> | String   |
-| Managed Folder Mailbox Policy Allowed   | Specifies whether to bypass the warning that messaging records management (MRM) features are not supported for email clients using versions of Microsoft Outlook earlier than Office Outlook 2007.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
+| Linked Master Account   | The master account in the forest where the user account resides. This master account is the account to link the mailbox to. The master account grants access to the mailbox. This property is required only if you're creating a linked mailbox.<br>This property can be one of the following value types:<br>GUID <br>DN<br>Domain\\Account <br>UPN<br>LegacyExchangeDN<br>SmtpAddress<br>Alias <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br> | String   |
+| Managed Folder Mailbox Policy Allowed   | Specifies whether to bypass the warning that messaging records management (MRM) features aren't supported for email clients using versions of Microsoft Outlook earlier than Office Outlook 2007.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 | Managed Folder Mailbox Policy   | The name or identity of the managed folder mailbox policy to apply to the mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Primary SMTP Address   | Primary SMTP address for the mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
-| Remote Archive   | Specifies whether to disconnect the remote archive for this mailbox. When you enable this property, the RemoteRecipientType property for the mailbox is reset to specify that this mailbox does not have a remote archive. A remote archive exists in a cloud-based service. This property cannot be used with the Archive property. <br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
+| Remote Archive   | Specifies whether to disconnect the remote archive for this mailbox. When you enable this property, the RemoteRecipientType property for the mailbox is reset to specify that this mailbox doesn't have a remote archive. A remote archive exists in a cloud-based service. This property can't be used with the Archive property. <br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 | Retention Policy   | The retention policy that is applied to the mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
-| Role Assignment Policy   | The management role that was assigned to the mailbox when it was created or enabled. <br><br><strong>Note </strong><br> This property is not available in the Live@edu environment. <br><br>   | String   |
-| Room   | Specifies that the mailbox in the service is to be created as a room resource mailbox. <br>This property cannot be set to True when the Equipment property is also set to True.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
-| Shared   | Specifies the new mailbox as a shared mailbox. A shared mailbox is a mailbox to which multiple users can log on. A shared mailbox is not associated with any of the users that can log on. It is associated with a disabled user account. <br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
+| Role Assignment Policy   | The management role that was assigned to the mailbox when it was created or enabled. <br><br><strong>Note </strong><br> This property isn't available in the Live@edu environment. <br><br>   | String   |
+| Room   | Specifies that the mailbox in the service is to be created as a room resource mailbox. <br>This property can't be set to True when the Equipment property is also set to True.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
+| Shared   | Specifies the new mailbox as a shared mailbox. A shared mailbox is a mailbox to which multiple users can sign in. A shared mailbox isn't associated with any of the users that can sign in. It's associated with a disabled user account. <br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 
 ## Published data for the Enable Mailbox activity
 
 | Element   | Description   | Valid values |
 |:---|:---|:---|
 | Accept Messages Only From   | Mailbox users and mail-enabled contacts that can send email messages to this distribution group.   | String   |
-| Accept Messages Only From DL Members   | Distribution list that are allowed to send email messages to this mailbox.   | String   |
+| Accept Messages Only From DL Members   | Distribution list that is allowed to send email messages to this mailbox.   | String   |
 | Accept Messages Only From Senders Or Members | Senders or members that are allowed to send email messages to this distribution group.   | String   |
 | Address Book Policy   | Address book policy for the mailbox.   | String   |
 | Address List Membership   | Address list IDs.   | String   |
@@ -127,7 +127,7 @@ The following tables list the required properties, optional properties, and publ
 | Exchange Server Host   | The connected Exchange server host machine.   | String   |
 | Exchange Server Port   | The connected Exchange server port.   | String   |
 | Exchange User Account Control   | A mask that is used to retrieve the user account control flags associated with this mailbox. This property can be one of the following values:<br>AccountDisabled <br>CannotChangePassword <br>DoNotExpirePassword <br>DoNotRequirePreauthentication <br>EncryptedTextPasswordAllowed <br>HomeDirectoryRequired <br>InterDomainTrustAccount <br>Lockout <br>MnsLogonAccount <br>None <br>NormalAccount <br>NotDelegated <br>PasswordExpired <br>PasswordNotRequired <br>Script <br>ServerTrustAccount <br>SmartCardRequired <br>TemporaryDuplicateAccount <br>TrustedForDelegation <br>TrustedToAuthenticateForDelegation <br>UseDesKeyOnly <br>WorkstationTrustAccount   | String   |
-| Exchange User Name   | Username used to log on to Exchange server.   | String   |
+| Exchange User Name   | Username used to sign in to Exchange server.   | String   |
 | Exchange Version   | Version of Microsoft Exchange that this object is associated with.   | String   |
 | Extension Custom Attribute 1   | Extension custom attribute 1.   | String   |
 | Extension Custom Attribute 2   | Extension custom attribute 2.   | String   |

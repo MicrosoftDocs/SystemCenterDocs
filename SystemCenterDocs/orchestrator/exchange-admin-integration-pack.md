@@ -110,7 +110,7 @@ Before you implement the Integration Pack for Exchange Admin, you must install t
 
 ## Register and Deploy the Integration Pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How to add an Integration Pack](how-to-add-an-integration-pack.md).
+After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How to add an Integration Pack](how-to-add-an-integration-pack.md).
 
 ## Configure the Exchange Admin Integration Pack connections
 
@@ -125,8 +125,8 @@ A connection establishes a reusable link between the Orchestrator and an Exchang
 3. In the **Name** box, enter a name for the connection. This can be the name of the **Exchange** server or a descriptive name to differentiate the type of connection.
 4. Select the **(...)** button and select **Exchange Configuration**.
 5. Select the **(...)** button for **Exchange Environment** and select **On-Premise**. 
-6. In the **Exchange Server Host** box, enter the name or IP address of the Exchange server. To use a computer name, you can type the *NetBIOS* name or the *fully qualified domain name (FQDN)*.
-7. In the **Exchange Server Port** box, enter the port that is used to communicate with the Exchange server. If you use SSL, be sure to select the appropriate port.
+6. In the **Exchange Server Host** box, enter the name or IP address of the Exchange server. To use a computer name, you can enter the *NetBIOS* name or the *fully qualified domain name (FQDN)*.
+7. In the **Exchange Server Port** box, enter the port that is used to communicate with the Exchange server. If you use SSL, ensure to select the appropriate port.
 8. In the **Exchange PowerShell Application** box, enter the application name segment of the connection URI.
 9.  In the **Exchange User Name** and **Exchange User Password** boxes, enter the credentials that Orchestrator will use to sign in to the Exchange environment. The configured user must have the appropriate Exchange permissions.
 10.  Configure the **Exchange Environment** as necessary for connecting to an on-premises installation or to Office.
@@ -142,7 +142,7 @@ A connection establishes a reusable link between the Orchestrator and an Exchang
 
 **Configure IP with Exchange Online:**
 
-Exchange Admin 2022 supports [App-only](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true) based modern (OAuth) authentication to Exchange Online. 
+Exchange Admin 2022 supports [App-only](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true) based modern (OAuth) authentication to Exchange Online.
 For more information on setting up app-only authentication for Exchange Online to provision an Azure AD application in your tenant, see [setup app-only authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps#set-up-app-only-authentication&preserve-view=true). 
 
 1. In the **Orchestrator Runbook Designer**, select **Options** > **Exchange Admin**. The **Exchange Admin** dialog appears.
@@ -168,7 +168,7 @@ For more information on setting up app-only authentication for Exchange Online t
 
 On the computer where Orchestrator runbooks are executed, ensure that PowerShell scripts can be run:
 
-1.  Start **Windows PowerShell** command line.
+1.  Start the **Windows PowerShell** command line.
 2.  To determine whether PowerShell scripts can be executed, run the following command:
 
     ```PowerShell
@@ -204,11 +204,11 @@ On the Exchange server, ensure that PowerShell Basic Authentication is enabled:
 
 1.  Start **Internet Information Services (IIS) Manager**.
 2.  Navigate to the **PowerShell** site.
-3.  Open the **Authentication** settings and ensure **Basic Authentication** is enabled.
+3.  Open the **Authentication** settings, and ensure **Basic Authentication** is enabled.
 
 ### Configure WinRM for HTTP unencrypted communication
 
-On the machine where Orchestrator runbooks are executed, configure WinRM trusted hosts and to allow unencrypted traffic:
+On the machine where Orchestrator runbooks are executed, configure WinRM trusted hosts, and to allow unencrypted traffic:
 
 1.  Open the **Local Group Policy** user interface: Windows Start Button &gt; Run &gt; gpedit.msc.
 2.  Navigate to **Local Computer Policy** &gt; **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Remote Management (WinRM)** &gt; **WinRM Client**.
