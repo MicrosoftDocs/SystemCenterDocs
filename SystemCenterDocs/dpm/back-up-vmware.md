@@ -485,7 +485,7 @@ The value should be the number (decimal) of virtual machines that you select for
 
 To back up vSphere 6.7, do the following:
 
-::: moniker end
+::: moniker-end
 
 ::: moniker range=">=sc-dpm-2019"
 
@@ -497,13 +497,13 @@ To back up vSphere 6.7, do the following:
 
 To back up vSphere 6.7 and 7.0, do the following:
 
-::: moniker end
+::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
 
 To back up vSphere 6.7 and 7.0 (supported for DPM 2019 UR5), do the following:
 
-::: moniker end
+::: moniker-end
 
 ::: moniker range=">=sc-dpm-1807"
 
