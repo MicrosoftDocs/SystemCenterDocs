@@ -24,7 +24,7 @@ This article gives details of the new features supported in System Center - Data
 
 ::: moniker range="sc-dpm-2019"
 
-This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3) and [2019 UR4](#new-features-in-dpm-2019-ur4), [2019 UR5](#new-features-in-dpm-2019-ur5).
+This article provides details of the new features supported in System Center - Data Protection Manager (DPM) and also includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1), [2019 UR2](#new-features-in-dpm-2019-ur2), [2019 UR3](#new-features-in-dpm-2019-ur3), [2019 UR4](#new-features-in-dpm-2019-ur4) and [2019 UR5](#new-features-in-dpm-2019-ur5).
 
 ::: moniker-end
 
@@ -189,7 +189,7 @@ For issues fixed and the installation instructions for UR5, see the KB article.
 
 ### Support for SQL Server 2022
 
-DPM 2019 UR5 supports SQL Server 2022 both as a protected workload and DPM database. Learn more.
+DPM 2019 UR5 supports SQL Server 2022 both as a protected workload. Learn more.
 
 ### Backup support for Windows Server 2022
 
@@ -199,9 +199,13 @@ DPM 2019 UR5 support backup of Windows Server 2022. For more information on supp
 
 vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsphere/2018/02/vsphere-5-5-vsan-5-5-end-general-support-reminder.html), DPM 2019 UR5 and later don't support backups for VMWare VMs on vSphere 5.5. Ensure to upgrade to newer vSphere versions.
 
-### Support for vSphere 6.7 and 7.0
+### Support for vSphere 7.0
 
-DPM 2019 UR5 support backups for VMWare VMs on vSphere 6.7 and 7.0. Learn more.
+DPM 2019 UR5 support backups for VMWare VMs on vSphere 7.0. Learn more.
+
+### Parallel online backup jobs - limit enhancement
+
+DPM 2019 UR5 supports increase in the maximum parallel online backup jobs from 8 to a configurable limit based on your hardware and network limitations through a registry key for faster online backups. Learn more.
 
 ::: moniker-end
 
