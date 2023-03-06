@@ -5,7 +5,7 @@ ms.topic: article
 author: jyothisuri
 ms.prod: system-center
 keywords:
-ms.date: 02/15/2023
+ms.date: 03/06/2023
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -481,9 +481,31 @@ The value should be the number (decimal) of virtual machines that you select for
 
 ::: moniker range=">=sc-dpm-1807"
 
+## VMware vSphere 6.7
+
+To back up vSphere 6.7, do the following:
+
+::: moniker end
+
+::: moniker range=">=sc-dpm-2019"
+
 ## VMware vSphere 6.7 and 7.0
 
-To back up vSphere 6.7 and 7.0 (supported from DPM 2022), do the following:
+::: moniker-end
+
+::: moniker range="sc-dpm-2022"
+
+To back up vSphere 6.7 and 7.0, do the following:
+
+::: moniker end
+
+::: moniker range="sc-dpm-2019"
+
+To back up vSphere 6.7 and 7.0 (supported for DPM 2019 UR5), do the following:
+
+::: moniker end
+
+::: moniker range=">=sc-dpm-1807"
 
 - Enable TLS 1.2 on DPM Server
   >[!Note]
