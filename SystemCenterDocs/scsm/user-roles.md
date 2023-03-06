@@ -1,7 +1,7 @@
 ---
 title: Manage user roles
 description: Describes the user roles used by Service Manager and how to manage them.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -27,12 +27,12 @@ This section provides an overview of user roles in [List of User Role Profiles i
 
 In your organization, some employees are responsible for supporting hardware, such as portable computers and servers. Some of the employees are allowed to create and update configuration items but not delete them, whereas others are allowed to create, update, and delete configuration items.
 
-In the [List of User Role Profiles in Service Manager](user-role-profiles.md), the security rights that allow users to access or update information are defined in a user role profile. A user role profile is a named collection of access rights, and it usually corresponds to an employee's business responsibilities. Each user role profile controls access to such artifacts as knowledge articles, work items (incidents, change requests), authoring, administration, and other credentials. Think of user role profiles as defining what you are allowed to do.
+In the [List of User Role Profiles in Service Manager](user-role-profiles.md), the security rights that allow users to access or update information are defined in a user role profile. A user role profile is a named collection of access rights, and it usually corresponds to an employee's business responsibilities. Each user role profile controls access to such artifacts as knowledge articles, work items (incidents, change requests), authoring, administration, and other credentials. Think of user role profiles as defining what you're allowed to do.
 
-In the future, managers at your organization may decide to separate the group of employees who maintain configuration items into two groups: those who handle configuration items for desktop computers and those who handle configuration items for portable computers. They want to retain these two user role profiles, one profile that can create and edit but not delete configuration items, and another profile that can create, edit, and delete configuration items. You would define these user role profiles with different scopes, one for desktops and one for portable computers. If user role profiles define what you are allowed to do, think of scopes as defining what items you are allowed to modify. The combination of a user role profile and a scope is called a user role.
+In the future, managers at your organization may decide to separate the group of employees who maintain configuration items into two groups: those who handle configuration items for desktop computers and those who handle configuration items for portable computers. They want to retain these two user role profiles, one profile that can create and edit but not delete configuration items, and another profile that can create, edit, and delete configuration items. You would define these user role profiles with different scopes, one for desktops and one for portable computers. If user role profiles define what you're allowed to do, think of scopes as defining what items you're allowed to modify. The combination of a user role profile and a scope is called a user role.
 
 ### Understanding user roles
-In Service Manager, when you click **Administration**, expand **Security**, and then click **User Roles**, a **User Roles** pane displays a list of user roles. Each of these user roles has been configured with a user role profile and an undefined scope. Because the scope is undefined for these user roles, they can exercise their user profiles on all management packs, queues, groups, tasks, views, and form templates. The following table lists the default user roles, their associated user role profiles, and scope.
+In Service Manager, when you select **Administration**, expand **Security**, and select **User Roles**, a **User Roles** pane displays a list of user roles. Each of these user roles has been configured with a user role profile and an undefined scope. Because the scope is undefined for these user roles, they can exercise their user profiles on all management packs, queues, groups, tasks, views, and form templates. The following table lists the default user roles, their associated user role profiles, and scope.
 
 |User role|User role profile|Scope|
 |-------------|---------------------|---------|
@@ -52,7 +52,7 @@ In Service Manager, when you click **Administration**, expand **Security**, and 
 |Service Request Analysts|Service Request Analyst|Global|
 
 > [!NOTE]
-> The Service Manager Report Users user role is available only after you register with the Service Manager data warehouse and after the Data Warehouse navigation button is available. To view the Service Manager Report Users user role, click **Data Warehouse**, expand **Security**, and then click **User Roles**.
+> The Service Manager Report Users user role is available only after you register with the Service Manager data warehouse and after the Data Warehouse navigation button is available. To view the Service Manager Report Users user role, select **Data Warehouse**, expand **Security**, and select **User Roles**.
 
 ### Example
 For example, say that you want to define one security access that allows users to create and edit, but not delete, configuration items and another security access that allows users to create, edit, and delete configuration items. Appendix A, at the end of this guide, lists the user role profiles and their associated artifacts. The following table shows user role profiles as they relate to configuration items.
@@ -79,16 +79,16 @@ As a best practice, assume that members of the asset management team might chang
 In the future, if you break the asset management team into two groups, one for desktops and the other for laptops, you can create your own user role by using the same user role profiles, but with different scopes.
 
 ### Why some user roles cannot be created
-When you are creating a user role, notice that three user roles are not available: Administrator, Report User, and Workflows. These three user roles are created and populated during Setup, and, generally speaking, these user roles are used by Service Manager. The following sections describe each of these user roles.
+When you're creating a user role, notice that three user roles aren't available: Administrator, Report User, and Workflows. These three user roles are created and populated during Setup, and, generally speaking, these user roles are used by Service Manager. The following sections describe each of these user roles.
 
 #### Administrator
-The Administrator user role is global in scope; therefore, there is no reason for creating another user role of this type.
+The Administrator user role is global in scope; therefore, there's no reason for creating another user role of this type.
 
 #### Report user
-The user role, Report User, has one purpose in Service Manager: to find the computer hosting Microsoft SQL Server Reporting Services (SSRS) for the user at a Service Manager console. When a user at a Service Manager console tries to run a report, a query is made to the Service Manager management server seeking the computer that is hosting the data warehouse management server. The Service Manager console then queries the data warehouse management server seeking the name of the computer hosting SSRS. With that information, the Service Manager console connects to SSRS. The singular purpose of the user role, Report User, is to make these queries. After the Service Manager console connects to the SSRS, the credentials of the user running the console grant access as defined on the SSRS. Because of the narrow purpose of this user role, there is no reason for creating another user role.
+The user role, Report User, has one purpose in Service Manager: to find the computer hosting Microsoft SQL Server Reporting Services (SSRS) for the user at a Service Manager console. When a user at a Service Manager console tries to run a report, a query is made to the Service Manager management server seeking the computer that is hosting the data warehouse management server. The Service Manager console then queries the data warehouse management server seeking the name of the computer hosting SSRS. With that information, the Service Manager console connects to SSRS. The singular purpose of the user role, Report User, is to make these queries. After the Service Manager console connects to the SSRS, the credentials of the user running the console grant access as defined on the SSRS. Because of the narrow purpose of this user role, there's no reason for creating another user role.
 
 #### Workflows
-Workflows might have to read and write to the Service Manager database. During Setup, you are asked to provide credentials for the Workflows user role, and this user role performs the required actions on the Service Manager database. Like the user role, Report User, the narrow purpose of the Workflow user role means there is no reason for creating other user roles.
+Workflows might have to read and write to the Service Manager database. During Setup, you're asked to provide credentials for the Workflows user role, and this user role performs the required actions on the Service Manager database. Like the user role, Report User, the narrow purpose of the Workflow user role means there's no reason for creating other user roles.
 
 ## Add a member to a user role
 
@@ -100,25 +100,25 @@ Use the following procedures to add a user to the Service Manager Advanced Opera
 
 ### To assign a user to a user role
 
-1.  In the Service Manager console, click **Administration**.
+1.  In the Service Manager console, select **Administration**.
 
 2.  In the **Administration** pane, expand **Security**, and then select **User Roles**.
 
 3.  In the **User Roles** pane, double-click **Advanced Operators**.
 
-4.  In the **Edit User Role** dialog box, click **Users**.
+4.  In the **Edit User Role** dialog, select **Users**.
 
-5.  On the **Users** page, click **Add**.
+5.  On the **Users** page, select **Add**.
 
-6.  In the **Select Users or Groups** dialog box, type the name of a user or group that you want to add to this user role, click **Check Names**, and then click **OK**.
+6.  In the **Select Users or Groups** dialog, enter the name of a user or group that you want to add to this user role, select **Check Names**, and select **OK**.
 
-7.  In the **Edit User Role** dialog box, click **OK**.
+7.  In the **Edit User Role** dialog, select **OK**.
 
 ### To validate the assignment of a user to a user role
 
--   Log on to the Service Manager console as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user roles.
+-   Sign in to the Service Manager console as one of the users assigned to the user role. Verify that you can't access data for which you don't have access rights, as specified in the user roles.
 
-![PowerShell symbol](./media/user-roles/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get-SCSMUser](/previous-versions/system-center/powershell/system-center-2012-r2/hh316233(v=sc.20)).
+![Screenshot of the PowerShell symbol.](./media/user-roles/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get-SCSMUser](/previous-versions/system-center/powershell/system-center-2012-r2/hh316233(v=sc.20)).
 
 ## Create a user role
 
@@ -134,30 +134,30 @@ Use the following procedures to create a user role and assign users to that role
 
 4.  Complete the **User Role Wizard** by doing the following:
 
-    1.  On the **Before You Begin** page, click **Next**.
+    1.  On the **Before You Begin** page, select **Next**.
 
-    2.  On the **General** page, enter a name and description for this user role, and then click **Next**.
+    2.  On the **General** page, enter a name and description for this user role, and select **Next**.
 
-    3.  On the **Management Packs** page, start to filter the scope of the data that you want to assign access to. Select the management packs that contain the data that you want to assign access to, such as **Incident Management Library**. Click **Next**.
+    3.  On the **Management Packs** page, start to filter the scope of the data that you want to assign access to. Select the management packs that contain the data that you want to assign access to, such as **Incident Management Library**. Select **Next**.
 
     4.  On the following pages, all the classes, queues, groups, tasks, views, and form templates that are available for the specified user role from the specified management packs, are displayed. You can select specific items on these pages to further limit the set of data that access is assigned to.
 
         > [!IMPORTANT]
-        > The groups and the queues lists are not filtered--all groups and queues from all management packs are listed. If you select the **Select all queues** item on the **Queues** page, on the **Groups** page, **Select all Groups** is selected automatically. In addition, by default, no groups have been created. You have to create a group if you want to limit scope by group.
+        > The groups and the queues lists aren't filtered--all groups and queues from all management packs are listed. If you select the **Select all queues** item on the **Queues** page, on the **Groups** page, **Select all Groups** is selected automatically. In addition, by default, no groups have been created. You've to create a group if you want to limit scope by group.
 
-    5.  On the **Users** page, click **Add**, and use the **Select Users or Groups** dialog box to select users and user groups from Active Directory Domain Services (AD DS) for this user role, and then click **Next**.
+    5.  On the **Users** page, select **Add**, and use the **Select Users or Groups** dialog to select users and user groups from Active Directory Domain Services (AD DS) for this user role, and then select **Next**.
 
-    6.  On the **Summary** page, make sure that the settings are correct, and then click **Create**.
+    6.  On the **Summary** page, ensure that the settings are correct, and select **Create**.
 
-    7.  On the **Completion** page, make sure that **The user role was created successfully** appears, and then click **Close**.
+    7.  On the **Completion** page, ensure that **The user role was created successfully** appears, and select **Close**.
 
 ### To validate the creation of a user role
 
 1.  In the Service Manager console, verify that the newly created user role appears in the middle pane.
 
-2.  Log on to the Service Manager console as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user role.
+2.  Sign in to the Service Manager console as one of the users assigned to the user role. Verify that you can't access data for which you don't have access rights, as specified in the user role.
 
-![PowerShell symbol](./media/user-roles/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![Screenshot of the PowerShell symbol.](./media/user-roles/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new user role in Service Manager, see [New-SCSMUserRole](/previous-versions/system-center/powershell/system-center-2012-r2/hh316208(v=sc.20)).
 
@@ -170,4 +170,4 @@ Use the following procedures to create a user role and assign users to that role
 
 ## Next steps
 
-- [Manage Run As accounts](run-as-accounts.md) for password security requirements, password expiration, and user name changes.
+- For password security requirements, password expiration, and user name changes, see [Manage Run As accounts](run-as-accounts.md).

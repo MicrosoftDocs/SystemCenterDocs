@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 4817dd67-6ee5-4c2f-86dd-82b3ee90fa51
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Snapshot Blob
@@ -23,9 +23,9 @@ robots: noindex
 
 ::: moniker-end
 
-The **Snapshot Blob** activity creates a read-only snapshot of a blob. It is part of the **Azure Storage** category activity.
+The **Snapshot Blob** activity creates a read-only snapshot of a blob. It's part of the **Azure Storage** category activity.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Snapshot Blob Required Properties
 
