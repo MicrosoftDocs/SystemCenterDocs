@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 7f48a1c7-dc88-447d-8bde-8af76783e2d3
+ms.custom: UpdateFrequency2
 ---
 
 # Register source systems to the System Center data warehouse in Service Manager

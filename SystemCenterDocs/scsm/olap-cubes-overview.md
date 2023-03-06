@@ -2,7 +2,7 @@
 title: Overview of OLAP cubes for advanced analytics
 description: Provides an overview of Service Manager OLAP cubes for advanced analytics.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency5
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

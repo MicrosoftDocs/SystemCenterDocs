@@ -2,7 +2,7 @@
 title: Manage changes and activities
 description: Provides an example scenario and details about how to manage changes and activities in Service Manager.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency2
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

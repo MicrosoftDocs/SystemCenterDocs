@@ -2,7 +2,7 @@
 title: Customize and author classes
 description: Learn about customizing and authoring classes with Service Manager authoring.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency5
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
