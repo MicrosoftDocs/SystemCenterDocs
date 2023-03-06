@@ -479,7 +479,7 @@ The value should be the number (decimal) of virtual machines that you select for
 
 ::: moniker-end
 
-::: moniker range=">=sc-dpm-1807"
+::: moniker range="sc-dpm-1807"
 
 ## VMware vSphere 6.7
 
