@@ -139,7 +139,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 ::: moniker range="sc-om-2022"
 >[!NOTE]
 >- SUSE Linux Enterprise Server 12 (Power) isn't supported in Operations Manager 2022.
->- Ubuntu 22.04 and RHEL 9 are supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
+
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
@@ -215,6 +215,9 @@ Supported versions:
 - Debian 9, 10, and 11
 - Ubuntu 16.04, 18.04, 20.04, and 22.04
 
+>[!Note]
+>Ubuntu 22.04 and RHEL 9 are supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
+
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |libc6|C Standard shared library|2.24-11|
@@ -232,6 +235,9 @@ Supported versions:
 - Rocky 8 
 - Alma 8 
 - Red Hat Enterprise Linux (RHEL) Server 8 and 9
+
+>[!Note]
+>RHEL 9 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081). 
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
