@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 02/24/2023
-ms.custom: engagement-fy23, intro-whats-new
+ms.custom: UpdateFrequency.5, engagement-fy23, intro-whats-new
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

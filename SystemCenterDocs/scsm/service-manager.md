@@ -8,7 +8,7 @@ ms.author: jsuri
 ms.prod: system-center
 ms.date: 01/31/2023
 ms.technology: service-manager
-ms.custom: UpdateFrequency.5, engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # About System Center - Service Manager
