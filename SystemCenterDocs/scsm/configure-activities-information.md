@@ -2,7 +2,7 @@
 title: Configure the way activities manage and pass information
 description: You can configure the way that activities manage and pass information in Service Manager authoring.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

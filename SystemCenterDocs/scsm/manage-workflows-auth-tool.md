@@ -2,7 +2,7 @@
 title: Manage workflows
 description: Describes how to manage workflows with the Service Manager Authoring Tool.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

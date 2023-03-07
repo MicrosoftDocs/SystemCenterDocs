@@ -2,7 +2,7 @@
 title: Guidelines for creating custom activities
 description: Learn about the guidelines for creating custom activities in the Service Manager Authoring Tool.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
