@@ -195,8 +195,9 @@ Supported versions:
 - Alma 8 (supported from Operations Manager 2019 UR4 and later)
 - Red Hat Enterprise Linux (RHEL) Server 8 (supported from Operations Manager 2019 UR1 and later)
 - Red Hat Enterprise Linux (RHEL) Server 9 (supported from Operations Manager 2019 UR4 and later) 
+- Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later. 
 
-Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
@@ -216,12 +217,12 @@ Supported versions:
 - Ubuntu 16.04, 18.04, 20.04, and 22.04
 
 >[!Note]
->Ubuntu 22.04 and RHEL 9 are supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
+>Ubuntu 22.04 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |libc6|C Standard shared library|2.24-11|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0|
 |PAM|Pluggable Authentication Modules|1.1.8-3.1|
 
 ## Universal Linux (RPM package)
