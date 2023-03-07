@@ -9,7 +9,7 @@ keywords:
 ms.date: 02/22/2023
 title: Author Automation Runbooks
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 # Author Service Management Automation runbooks
 

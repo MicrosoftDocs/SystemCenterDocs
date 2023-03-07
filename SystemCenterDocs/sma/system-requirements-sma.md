@@ -9,7 +9,7 @@ ms.date: 02/22/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # System requirements for System Center Service Management Automation

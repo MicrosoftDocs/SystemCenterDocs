@@ -8,7 +8,7 @@ ms.prod: system-center
 ms.date: 01/22/2018
 title: Purge the Service Management Automation database
 ms.technology: service-management-automation
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency1
 ---
 
 # Purge the Service Management Automation database
