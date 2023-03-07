@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 monikerRange: '>sc-vmm-2016'
+ms.custom: UpdateFrequency3
 ---
 
 # Configure HGS fallback URLs in VMM
