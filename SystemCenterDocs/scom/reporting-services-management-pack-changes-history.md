@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Features and Enhancements in Management Pack for SQL Server Reporting Services
 
-This section covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
+This article covers new functionality and improvements in Management Pack for SQL Server Reporting Services.
 
 ## December 2022 - 7.0.42.0 RTM
 
@@ -23,7 +23,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Added a new 'SQL Server Editions' exclude list override option for the instance discovery
 - Added a new 'SQL Server Versions' exclude list override option for the instance discovery
 - Added support for enabling debug logging in Windows Event Log
-- Updated memory and space monitoring workflows to apply 4-significant digit rounding in all the values
+- Updated memory and space monitoring workflows to apply four significant digit rounding in all the values
 - Updated display strings
 
 ### Bug Fixes
@@ -75,7 +75,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Added tasks Start/Stop Reporting Services Windows Service
 - Updated display name of SQL Server Reporting Services Deployment object to display Availability Group name as part of it instead of GUID
 - Updated logic of installation detection for local Reporting Services instance to query Windows Registry instead of WMI
-- Improved error handling for cases when error "Process with an Id is not running" is returned
+- Improved error handling for cases when error **Process with an Id is not running** is returned
 - Updated display strings
 
 ### Bug Fixes
@@ -88,8 +88,8 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Added support for monitoring SQL Server Reporting Services 2012, 2014, and 2016 in addition to 2017 and up
-- Updated Event Log Collection Target Management Server Discovery to make it use default System Center Operations Manager action profile instead of SQL MP Discovery run as profile
+- Added support for monitoring SQL Server Reporting Services 2012, 2014, and 2016 in addition to 2017 and higher
+- Updated Event Log Collection Target Management Server Discovery to make it use default System Center Operations Manager action profile instead of SQL MP Discovery Run As profile
 - Updated display strings
 
 ### Bug Fixes

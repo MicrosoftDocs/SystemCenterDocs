@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Service SID
 
-This section explains how to configure monitoring using Service SIDs for SQL Server on a Windows Server instance. These steps were first published by Kevin Holman in [his blog](https://kevinholman.com/2016/08/25/sql-mp-run-as-accounts-no-longer-required/). The SQL scripts to configure lowest-privilege access were developed by Brandon Adams.
+This section explains how to configure monitoring using Service SIDs for SQL Server on a Windows Server instance. These steps were first published by Kevin Holman in [his blog](https://kevinholman.com/2016/08/25/sql-mp-run-as-accounts-no-longer-required/). The SQL scripts to configure the lowest-privilege access were developed by Brandon Adams.
 
 To configure monitoring using Service Security Identifier, perform the following steps for each monitored server with running SQL Server Database Engine:
 
@@ -35,13 +35,13 @@ To configure monitoring using Service Security Identifier, perform the following
 
     ![Screenshot of running HealthService.](./media/sql-server-management-pack/health-service-command.png)
 
-4. Open **Registry Editor** and check that the **ServiceSidType** key is set to 1 at `HKLM\SYSTEM\CurrentControlSet\Services\HealthService`
+4. Open **Registry Editor**, and check that the **ServiceSidType** key is set to 1 at `HKLM\SYSTEM\CurrentControlSet\Services\HealthService`
 
 5. Open SQL Server Management Studio and connect to the SQL Server Database Engine instance.
 
 6. Create the **NT SERVICE\HealthService** login for the HealthService SID on every SQL Server Instance and grant it SA rights.
 
-    If you cannot grant SA rights, use the following SQL script to set the lowest privilege configuration for the account:
+    If you can't grant SA rights, use the following SQL script to set the lowest privilege configuration for the account:
 
     ```sql
     USE [master];
@@ -121,6 +121,6 @@ To configure monitoring using Service Security Identifier, perform the following
     GRANT ALTER ANY DATABASE TO [SCOM_HealthService];
     ```
 
-8. In the **Microsoft Monitoring Agent** properties for the selected management group set the **Local System** account to perform agent actions.
+8. In the **Microsoft Monitoring Agent** properties for the selected management group, set the **Local System** account to perform agent actions.
 
 The **NT AUTHORITY\SYSTEM** account should be present as a SQL login and must not be disabled. This login must also be present and enabled for cluster nodes and Always On.

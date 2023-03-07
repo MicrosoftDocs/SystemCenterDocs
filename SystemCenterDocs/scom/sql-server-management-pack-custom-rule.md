@@ -13,40 +13,40 @@ ms.technology: operations-manager
 
 # Custom Query-Based Performance Rule
 
-If the set of default performance rules in the management pack is not enough to cover your workflows, you can create your rule that targets the SQL Server DB Engine for Windows and Linux platforms.
+If the set of default performance rules in the management pack isn't enough to cover your workflows, you can create your rule that targets the SQL Server DB Engine for Windows and Linux platforms.
 
 To create a new custom query-based performance rule, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, right-click **Rules**, and select **Create a Rule**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, select and hold **Rules**, and select **Create a Rule**.
 
    :::image type="content" source="./media/sql-server-management-pack/creating-custom-performance-rule.png" alt-text="Screenshot of creating a performance collection rule." border="true":::  
 
 2. At the **Rule Type** step, select **Microsoft SQL Server | User-defined SQL Query Performance Collection Rule**.
 
-   From the **Select destination management pack** drop-down list, select a management pack that you want to use or create a new one and click **Next**.
+   From the **Select destination management pack** dropdown list, select a management pack that you want to use or create a new one and select **Next**.
 
-    ![Screenshot of selecting a rule type.](./media/sql-server-management-pack/selecting-rule-type.png)
+    ![Screenshot showing selecting a rule type.](./media/sql-server-management-pack/selecting-rule-type.png)
 
-3. At the **General** step, enter the rule name and optional description, select **Rule Category**, click **Next**.
+3. At the **General** step, enter the rule name and optional description, select **Rule Category**, select **Next**.
 
     The default selected category is **Performance Collection**.
 
-    ![Screenshot of  selecting a rule name and description.](./media/sql-server-management-pack/custom-rule-name-and-description.png)
+    ![Screenshot showing selecting a rule name and description.](./media/sql-server-management-pack/custom-rule-name-and-description.png)
 
-    At this step, you can determine whether this **Rule is enabled** by default or not. Disabled rules cannot be displayed in the System Center Operations Manager performance view. If you need to see the performance rule, keep it enabled.
+    At this step, you can determine whether this **Rule is enabled** by default or not. Disabled rules can't be displayed in the System Center Operations Manager performance view. If you need to see the performance rule, keep it enabled.
 
 4. At the **SQL Query** step, enter the database name, query text, and timeout (in seconds).
 
     The default selected database is **master**.
 
-    ![Diagram that specify target database name and SQL query.](./media/sql-server-management-pack/custom-performance-rule-sql-query.png)
+    ![Screenshot showing target database name and SQL query.](./media/sql-server-management-pack/custom-performance-rule-sql-query.png)
 
     > [!TIP]
-    > After creating a custom performance rule, the original query cannot be changed later. First, test your query with the SQL Server Management Studio directly against the instances before using it in a custom rule.
+    > After creating a custom performance rule, the original query can't be changed later. First, test your query with the SQL Server Management Studio directly against the instances before using it in a custom rule.
 
 5. At the **Performance Counter** step, specify conditions to displaying query results.
 
-    To create custom rule conditions enter values in the following fields:
+    To create custom rule conditions, enter the values in the following fields:
 
     **Result set** is 1 by default. You can increase the number of expected result sets.
 
@@ -56,22 +56,22 @@ To create a new custom query-based performance rule, perform the following steps
 
     **Counter Instance** - monitored instance.
 
-    For Counter Object, Counter Name and Counter Instance there are three options to choose:
+    For Counter Object, Counter Name, and Counter Instance, there are three options to choose:
       - **Column Name**: field to enter the column name
       - **Column Number**: serial number of the column
-      - **Constant**: field to enter value different from column name, e.g. one from all values in the column
+      - **Constant**: field to enter a value different from the column name; for example, one from all the values in the column
 
     For the **Counter Value**, you can use the Column Name or the Column Number only.
 
-    ![Diagram that specify condition for performance counter.](./media/sql-server-management-pack/custom-performance-counter-step-work-example.png)
+    ![Screenshot showing the condition for performance counter.](./media/sql-server-management-pack/custom-performance-counter-step-work-example.png)
 
     If you need complex logic, you may cover that with the query.
 
-    After all required conditions are set, click **Next**
+    After all the required conditions are set, select **Next**.
 
-6. At the **Schedule** page, configure a query execution schedule and synchronization time, and click **Create**.
+6. At the **Schedule** page, configure a query execution schedule and synchronization time, and select **Create**.
 
     ![Screenshot of configuring schedule.](./media/sql-server-management-pack/custom-performance-rule-schedule.png)
 
 > [!NOTE]
-> By default, a custom query-based rule will work for all SQL Server instances. If you only need to target a specific instance, override your rule after creation.
+> By default, a custom query-based rule will work for all the SQL Server instances. If you only need to target a specific instance, override your rule after creation.

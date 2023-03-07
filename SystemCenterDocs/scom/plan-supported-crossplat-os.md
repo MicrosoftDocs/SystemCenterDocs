@@ -4,8 +4,8 @@ title: Supported UNIX and Linux operating system versions
 description: This article lists the supported versions of Linux and UNIX operating system for System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.date: 01/09/2023
+manager: mkluck
+ms.date: 03/07/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -57,14 +57,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker range=">=sc-om-2019"
 
-## Red Hat Enterprise Linux Server 8 (applicable for 2019 UR1 and later)
-
-|Required package|Description|Minimum version|
-|--------------------|---------------|-------------------|
-|glibc|C Standard Libraries|2.28|
-|Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.1.1c-fips|
-|PAM|Pluggable Authentication Modules|1.3.1-4|
-
 ## Red Hat Enterprise Linux Server 7
 
 |Required package|Description|Minimum version|
@@ -101,8 +93,6 @@ Operations Manager 2019 UR3 and later supports RHEL 6 through the RHEL 6 managem
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
 |PAM|Pluggable Authentication Modules|1.1.1-4|  
 
->[!NOTE]
-> Solaris zone-level monitoring isn't supported.
 
 ## Solaris 10 SPARC
 
@@ -148,7 +138,8 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ::: moniker range="sc-om-2022"
 >[!NOTE]
-> SUSE Linux Enterprise Server 12 (Power) isn't supported in Operations Manager 2022.
+>- SUSE Linux Enterprise Server 12 (Power) isn't supported in Operations Manager 2022.
+
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
@@ -182,15 +173,16 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 Supported versions:
 
 - Debian 9, 10, and 11
-- Ubuntu 16.04, 18.04, and 20.04
+- Ubuntu 16.04, 18.04, 20.04 and 22.04
 
 >[!NOTE]
-> Debian 10, 11, and Ubuntu 20.04 are compatible with System Center - Operations Manager 2019 UR3 and later.
+>- Debian 10, 11, and Ubuntu 20.04 are compatible with System Center - Operations Manager 2019 UR3 and later.
+>- Ubuntu 22.04 is compatible with System Center - Operations Manager 2019 UR4 and later.
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |libc6|C Standard shared library|2.24-11|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0|
 |PAM|Pluggable Authentication Modules|1.1.8-3.1|
 
 ## Universal Linux (RPM package)
@@ -201,13 +193,16 @@ Supported versions:
 - Oracle Linux 7 and 8
 - Rocky 8 (supported from Operations Manager 2019 UR4 and later)
 - Alma 8 (supported from Operations Manager 2019 UR4 and later)
+- Red Hat Enterprise Linux (RHEL) Server 8 (supported from Operations Manager 2019 UR1 and later)
+- Red Hat Enterprise Linux (RHEL) Server 9 (supported from Operations Manager 2019 UR4 and later) 
+- Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later. 
 
-Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc|C Standard shared library|2.5-12|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0|
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
 
 ::: moniker-end
@@ -219,12 +214,15 @@ Oracle Linux 8 is supported from System Center - Operations Manager 2019 UR3 and
 Supported versions:
 
 - Debian 9, 10, and 11
-- Ubuntu 16.04, 18.04, and 20.04
+- Ubuntu 16.04, 18.04, 20.04, and 22.04
+
+>[!Note]
+>Ubuntu 22.04 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |libc6|C Standard shared library|2.24-11|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0|
 |PAM|Pluggable Authentication Modules|1.1.8-3.1|
 
 ## Universal Linux (RPM package)
@@ -237,11 +235,15 @@ Supported versions:
 - openSUSE Leap 15t
 - Rocky 8 
 - Alma 8 
+- Red Hat Enterprise Linux (RHEL) Server 8 and 9
+
+>[!Note]
+>RHEL 9 is supported from Operations Manager 2022 UR1 and later when you apply [this hotfix](https://support.microsoft.com/topic/system-center-operations-manager-2022-now-has-openssl3-0-integration-kb-5024286-331bd221-10f9-42d5-bc06-775eaabe3081). 
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc|C Standard shared library|2.5-12|
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0, 1.1 or 3.0|
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
 
 ::: moniker-end

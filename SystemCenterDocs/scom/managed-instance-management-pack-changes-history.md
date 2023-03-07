@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Features and Enhancements in Management Pack for Azure SQL Managed Instance
 
-This section covers new functionality and improvements in Management Pack for Azure SQL Managed Instance.
+This article covers new functionality and improvements in Management Pack for Azure SQL Managed Instance.
 
 ## December 2021 - 7.0.34.0 RTM
 
@@ -34,7 +34,7 @@ This section covers new functionality and improvements in Management Pack for Az
 - Updated monitor “Securables Configuration Status”
 - Updated monitor “Job Duration” to add current job run's duration to its alert description
 - Updated UI of wizard “Automatic Discovery”
-- Updated alerting rules to avoid gathering SQL Log events that happened during maintenance mode
+- Updated alerting rules to avoid gathering SQL Log events that happened during the maintenance mode
 - Updated dashboards
 - Updated display strings
 
@@ -54,4 +54,4 @@ This section covers new functionality and improvements in Management Pack for Az
 
 - Disabled “XTP Configuration Monitor”
 - Disabled “Database Backup Status Monitor”
-- Rebuild management pack and verify against the current version of Managed Instance Provided a few minor UI improvements to the Add Monitoring Wizard
+- Rebuild management pack and verify against the current version of Azure SQL Managed Instance Provided a few minor UI improvements to the Add Monitoring Wizard

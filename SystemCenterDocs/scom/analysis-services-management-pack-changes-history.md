@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Features and Enhancements in Management Pack for SQL Server Analysis Services
 
-This section covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
+This article covers new functionality and improvements in Management Pack for SQL Server Analysis Services.
 
 ## December 2022 - 7.0.42.0 RTM
 
@@ -24,13 +24,13 @@ This section covers new functionality and improvements in Management Pack for SQ
 - Added a new 'SQL Server Versions' exclude list override option for the Multidimensional, PowerPivot, and Tabular instance discoveries
 - Added a new 'Exclude list' override option for the "Multidimensional DB" and the "Tabular DB" discoveries
 - Added support for enabling debug logging in Windows Event Log
-- Updated memory and space monitoring workflows to apply 4-significant digit rounding in all the values
+- Updated memory and space monitoring workflows to apply four significant digit rounding in all the values
 - Discovery and monitoring workflows have been optimized for better performance
 - Updated display strings
 
 ### Bug Fixes
 
-- Fixed an issue with failing the 'MultidimensionalPartitionPropertyCD' discovery module in case of Analysis Services instance is stopped
+- Fixed an issue with failing the 'MultidimensionalPartitionPropertyCD' discovery module in case Analysis Services instance is stopped
 
 ## June 2022 - 7.0.38.0 RTM
 
@@ -51,7 +51,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### Bug Fixes
 
-- Fixed an issue with not working System Center Operations Manager console tasks in clustered environments. Now tasks "Start Analysis Service" and "Stop Analysis Service" work properly
+- Fixed an issue with not working System Center Operations Manager console tasks in clustered environments. Now tasks "Start Analysis Service" and "Stop Analysis Service" work properly.
 
 ## June 2021 - 7.0.32.0 RTM
 
@@ -81,7 +81,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Added support for SQL Server Analysis Services 2012, 2014, and 2016 in addition to previously supported 2017 and up
+- Added support for SQL Server Analysis Services 2012, 2014, and 2016 in addition to previously supported 2017 and higher
 - Implemented Database Status monitor
 - Updated display strings
 
@@ -89,7 +89,7 @@ This section covers new functionality and improvements in Management Pack for SQ
 
 ### What's New
 
-- Replaced the Core Library in the delivery with the version 7.0.7.0, that version which is delivered with the most recent RTM version of the management pack for SQL Server 2017+
+- Replaced the Core Library in the delivery with the version 7.0.7.0, that version, which is delivered with the most recent RTM version of the management pack for SQL Server 2017+
 - Improved displaying of the SQL Server Analysis Services instance version (now shows Patch Level version instead of Version)
 - Added missed dependency monitors required to roll up the instance health appropriately
 - Updated Summary dashboards
