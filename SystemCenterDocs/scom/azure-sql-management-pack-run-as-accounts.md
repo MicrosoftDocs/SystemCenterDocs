@@ -19,28 +19,28 @@ To create Run As accounts, perform the following steps:
 
 1. In the System Center Operations Manager console, right-click the **Administration | Run As Configuration | Accounts** node, and select **Create Run As Account**.
 
-    ![Create Run As Accounts](./media/azure-sql-management-pack/creating-run-as-accounts.png)
+    ![Screenshot showing Create Run As Accounts.](./media/azure-sql-management-pack/creating-run-as-accounts.png)
 
-2. At the **Introduction** step, click **Next**.
+2. At the **Introduction** step, select **Next**.
 
-3. At the **General Properties** step, from the **Run As account type** drop-down list, select **Simple Authentication**, enter a display name and optional description, and click **Next**.
+3. At the **General Properties** step, from the **Run As account type** dropdown list, select **Simple Authentication**, enter a display name and optional description, and select **Next**.
 
-    ![General properties](./media/azure-sql-management-pack/configuring-general-properties-run-as.png)
+    ![Screenshot showing General properties.](./media/azure-sql-management-pack/configuring-general-properties-run-as.png)
 
-4. At the **Credentials** step, specify credentials that you want to use to connect to Azure SQL Database and click **Next**. For more information, see [Low-Privilege Configuration](azure-sql-management-pack-low-privilege-configuration.md).
+4. At the **Credentials** step, specify the credentials that you want to use to connect to Azure SQL Database and select **Next**. For more information, see [Low-Privilege Configuration](azure-sql-management-pack-low-privilege-configuration.md).
 
-    ![Set credentials](./media/azure-sql-management-pack/configuring-credentials.png)
+    ![Screenshot showing Set credentials.](./media/azure-sql-management-pack/configuring-credentials.png)
 
-5. At the **Distribution Security** step, select the **More secure** option and click **Create**.
+5. At the **Distribution Security** step, select the **More secure** option and select **Create**.
 
     You can use the **Less secure** option and skip steps 7 – 8 if your environment is secure.
 
-6. Click **Close** to close the window.
+6. Select **Close** to close the window.
 
 7. Right-click the newly created account and select **Properties**.
 
-    ![Account properties](./media/azure-sql-management-pack/account-properties.png)
+    ![Screenshot showing Account properties.](./media/azure-sql-management-pack/account-properties.png)
 
 8. Open the **Distribution** tab and add a System Center Operations Manager agent that you want to use as a watcher node to monitor Azure SQL Database.
 
-    ![Add agent](./media/azure-sql-management-pack/adding-agent.png)
+    ![Screenshot showing Add agent.](./media/azure-sql-management-pack/adding-agent.png)
