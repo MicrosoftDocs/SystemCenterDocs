@@ -43,7 +43,7 @@ In addition, the following known issues are observed.
 
 ### No DPM SQL Self-Service Recovery Tool in DPM 2022 RTM
 
-DPM SQL Self-Service Recovery isn't available in DPM 2022 RTM. Support for SQL Self-Service Recovery is available from DPM 2022 UR1. [Learn More](/system-center/dpm/what-s-new-in-dpm?view=sc-dpm-2022#sql-self-service-recovery-tool).
+DPM SQL Self-Service Recovery isn't available in DPM 2022 RTM. Support for SQL Self-Service Recovery is available from DPM 2022 UR1. [Learn More](/system-center/dpm/what-s-new-in-dpm?view=sc-dpm-2022&preserve-view=true#sql-self-service-recovery-tool).
 
 ### Upgrade from DPM 2019 to DPM 2022 might fail when the DPM database name is **DPMDB**
 

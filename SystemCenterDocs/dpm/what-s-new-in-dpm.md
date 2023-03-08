@@ -175,7 +175,7 @@ With DPM 2019 UR4, you can use a private endpoint to take online backup to Azure
 
 ### Improvements VHDX mounting and unmounting
 
-Improvements done for VHDX file mounting and unmounting. To mount or unmount VHDX files, we now use Win32 APIs by default. This is a change from our previous approach, which leveraged WMI. If you want to continue using the old (WMI) approach, see  this [documentation](/system-center/dpm/dpm-support-issues?view=sc-dpm-2019).
+Improvements done for VHDX file mounting and unmounting. To mount or unmount VHDX files, we now use Win32 APIs by default. This is a change from our previous approach, which leveraged WMI. If you want to continue using the old (WMI) approach, see  this [documentation](/system-center/dpm/dpm-support-issues?view=sc-dpm-2019&preserve-view=true).
 
 ### Improved DPM reliability after DPM agent uninstallation 
 
