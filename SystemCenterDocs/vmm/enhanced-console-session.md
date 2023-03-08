@@ -9,7 +9,7 @@ ms.date: 05/10/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-
+ms.custom: UpdateFrequency2
 ---
 
 # Enable enhanced console session in VMM
