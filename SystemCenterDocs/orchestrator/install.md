@@ -2,13 +2,13 @@
 title: Install Orchestrator
 description: Provides instructions for installing System Center - Orchestrator
 author: jyothisuri
-manager: evansma
+manager: mkluck
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.author: jsuri
-ms.custom: intro-installation
+ms.custom: UpdateFrequency.5, intro-installation
 ---
 
 
@@ -304,7 +304,7 @@ The **Installing features** page appears and displays the installation progress.
 
 3.  Select **Turn on network discovery**, and select **Save changes**.
 
-    If you are prompted for an administrator password or confirmation, enter the password or provide confirmation.
+    If you're prompted for an administrator password or confirmation, enter the password or provide confirmation.
 
 ## Install from the command prompt
 
@@ -688,7 +688,7 @@ This article provides detailed installation instructions for the various Orchest
 
 3.  Select **Turn on network discovery**, and then select **Save changes**.
 
-    If you are prompted for an administrator password or confirmation, enter the password or provide confirmation.
+    If you're prompted for an administrator password or confirmation, enter the password or provide confirmation.
 
 ## To install from the command prompt
 
@@ -700,11 +700,11 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/Silent|Installation is performed without displaying a dialog.|
 |/Uninstall|Product is uninstalled. This option is performed silently.|
 |/Key:[Product Key]|Specifies the product key. If no product key is specified, Orchestrator is installed as an evaluation edition.|
-|/ServiceUserName:[User Name]|Specifies the user account for the Orchestrator Management Service. This value is required if you are installing Management Server, Runbook Server, or web services.|
-|/ServicePassword:[Password]|Specifies the password for the user account for the Orchestrator Management Service. This value is required if you are installing Management Server, Runbook Server, or web services.|
+|/ServiceUserName:[User Name]|Specifies the user account for the Orchestrator Management Service. This value is required if you're installing Management Server, Runbook Server, or web services.|
+|/ServicePassword:[Password]|Specifies the password for the user account for the Orchestrator Management Service. This value is required if you're installing Management Server, Runbook Server, or web services.|
 |/Components:[Feature 1, Feature 2,"]|Specifies the features to install. Possible values are ManagementServer, RunbookServer, RunbookDesigner, WebComponents, and All.|
 |/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files (x86)\Microsoft System Center \<version\>\Orchestrator is used.|
-|/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you are installing Management Server, Runbook Server, or web services.|
+|/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you're installing Management Server, Runbook Server, or web services.|
 |/DbUser:[User Name]|Specifies the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, no value should be specified.|
 |/DbPassword:[Password]|Specifies the password for the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, then no value should be specified.|
 |/DbNameNew:[Database Name]|Specifies the database name if a new database is being created. Can't be used with DbNameExisting.|
@@ -738,13 +738,13 @@ The following information provides additional instructions and caveats that you 
 ### Orchestrator log files  
 If you experience problems during installation, installation log files are located in the folder **C:\\Users\\%USERNAME%\\AppData\\Local\\SCO\\LOGS**.  
 
-If you experience problems when you are running Orchestrator, the product log files are located in the folder **C:\\ProgramData\\Microsoft System Center \<version\>\\Orchestrator\\**.  
+If you experience problems when you're running Orchestrator, the product log files are located in the folder **C:\\ProgramData\\Microsoft System Center \<version\>\\Orchestrator\\**.  
 
 ### Windows Firewall  
 When you deploy additional Runbook Designer applications to your environment, you might see a failed installation message. To correctly install the Runbook Designer, enable the following firewall rules as they apply to your operating system and deployment configuration.  
 
 ### Windows Firewall with advanced security
-By default, **Windows Firewall with Advanced Security** is enabled on all Windows Servercomputers, and blocks all incoming traffic unless it's a response to a request by the host or it's specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
+By default, **Windows Firewall with Advanced Security** is enabled on all Windows Server computers, and blocks all incoming traffic unless it's a response to a request by the host or it's specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
 
 Enable the following rules to allow all Monitor Event activities to function correctly:  
 
