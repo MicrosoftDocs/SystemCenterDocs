@@ -8,7 +8,7 @@ ms.prod: system-center
 ms.date: 02/22/2023
 title: Deploy Service Management Automation
 ms.technology: service-management-automation
-ms.custom: intro-deployment, engagement-fy23
+ms.custom: UpdateFrequency2, intro-deployment, engagement-fy23
 ---
 
 # Deploy Service Management Automation

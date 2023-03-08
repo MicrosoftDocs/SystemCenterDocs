@@ -8,6 +8,7 @@ ms.author: jsuri
 ms.prod: system-center
 ms.date: 12/25/2020
 ms.technology: service-management-automation
+ms.custom: UpdateFrequency2
 ---
 
 # Manage runbooks for Service Management Automation

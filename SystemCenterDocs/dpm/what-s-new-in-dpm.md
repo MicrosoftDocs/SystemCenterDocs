@@ -9,7 +9,7 @@ title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ms.author: jsuri
-ms.custom: intro-whats-new
+ms.custom: UpdateFrequency.5, intro-whats-new
 ---
 
 # What's new in System Center Data Protection Manager
@@ -105,7 +105,7 @@ For issues fixed and the installation instructions for UR1, see [KB article for 
 
 ### Support for ReFS volumes
 
-With DPM 2019 UR1, you can backup the ReFS volumes and workloads deployed on the ReFS volumes. You can back up the following workloads:
+With DPM 2019 UR1, you can back up the ReFS volumes and workloads deployed on the ReFS volumes. You can back up the following workloads:
 
  - **Operating System (64 bit)**: Windows Server 2019, 2016, 2012 R2, 2012.
  - **SQL Server**: SQL Server 2019, SQL Server 2017, 2016.
@@ -121,7 +121,7 @@ With DPM 2019 UR1, you can backup the ReFS volumes and workloads deployed on the
 You can install DPM 2019 UR1 on Windows Server Core 2019 and 2016.
 
 > [!NOTE]
-> Installation of MARS agent on Windows Server Core is not supported. With this limitation, DPM cannot be connected to Azure Recovery Services Vault when it is installed on Windows Server Core.
+> Installation of MARS agent on Windows Server Core isn't supported. With this limitation, DPM cannot be connected to Azure Recovery Services Vault when it's installed on Windows Server Core.
 
 ### Disk exclusion for VMware VM backup
 With DPM 2019 UR1, you can exclude the specific disk from a VMware VM backup. [Learn more](back-up-vmware.md).
@@ -141,7 +141,7 @@ For issues fixed in UR2 and the installation instructions for UR2, see the [KB a
 
 ### Support for SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV)
 
-DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV). With CSV, the management of your SQL Server Instance is simplified. You will be able to manage the underlying storage from any node as there is an abstraction to which node owns the disk. [Learn more](back-up-sql-server.md).
+DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV). With CSV, the management of your SQL Server Instance is simplified. You will be able to manage the underlying storage from any node as there's an abstraction to which node owns the disk. [Learn more](back-up-sql-server.md).
 
 ### Optimized Volume-to-Volume Migration
 
@@ -167,7 +167,7 @@ See the following sections for information about the new features/feature update
 For issues fixed in UR4 and the installation instructions for UR4, see [the KB article](https://support.microsoft.com/topic/update-rollup-4-for-system-center-2019-data-protection-manager-1f4a13ed-9750-49bb-b312-9def71bc31da).
 
 ### Removed File Catalog dependency for online backup of file/folder workloads
-DPM 2019 UR4 removes the dependency on File Catalog, which was needed to restore individual files and folders from the online recovery points. DPM now uses the iSCSI mount method to provide individual file restore. This also improves backup time as the upload of file catalog metadata is not needed anymore.
+DPM 2019 UR4 removes the dependency on File Catalog, which was needed to restore individual files and folders from the online recovery points. DPM now uses the iSCSI mount method to provide individual file restore. This also improves backup time as the upload of file catalog metadata isn't needed anymore.
 
 ### Private endpoint support 
 
@@ -175,7 +175,7 @@ With DPM 2019 UR4, you can use a private endpoint to take online backup to Azure
 
 ### Improvements VHDX mounting and unmounting
 
-Improvements done for VHDX file mounting and unmounting. To mount or unmount VHDX files, we now use Win32 APIs by default. This is a change from our previous approach, which leveraged WMI. If you want to continue using the old (WMI) approach, see  this [documentation](/system-center/dpm/dpm-support-issues?view=sc-dpm-2019).
+Improvements done for VHDX file mounting and unmounting. To mount or unmount VHDX files, we now use Win32 APIs by default. This is a change from our previous approach, which leveraged WMI. If you want to continue using the old (WMI) approach, see  this [documentation](/system-center/dpm/dpm-support-issues?view=sc-dpm-2019&preserve-view=true).
 
 ### Improved DPM reliability after DPM agent uninstallation 
 
@@ -212,7 +212,7 @@ System Center DPM 1801 supports [back up and restore of VMware virtual machines]
 The following features are either new to DPM or are improved for DPM 2016.
 
 - **Modern Backup Storage** -
-Using Resilient File System (ReFS) block-cloning technology to store incremental backups, DPM 2016 improves storage utilization and performance. Backup storage grows and shrinks with production data source. There is no over-allocation of storage.
+Using Resilient File System (ReFS) block-cloning technology to store incremental backups, DPM 2016 improves storage utilization and performance. Backup storage grows and shrinks with production data source. There's no over-allocation of storage.
 
 - **Resilient change tracking (RCT)** -
 DPM uses RCT (the native change tracking in Hyper-V), which removes the need for time-consuming consistency checks. RCT provides better resiliency than the change tracking provided by VSS snapshot-based backups. DPM also uses RCT for incremental backup. It identifies VHD changes for virtual machines and transfers only those blocks that are indicated by the change tracker.
@@ -230,7 +230,7 @@ DPM recognizes and protects Hyper-V VMs deployed on Storage Spaces Direct, deliv
 DPM 2016 can back up Hyper-V VMs deployed on ReFS-based SOFS clusters. Backup and recovery of RCT-based VMs and non-RCT VMs is supported.
 
 - **Upgrading a DPM production server to 2016 doesn't require a reboot** -
-When you upgrade to DPM 2016, you are not required to reboot the production server. To avoid rebooting the production server, upgrade to DPM 2016 and upgrade the DPM agent on the production servers. Backups continue and you reboot the production server when you want.
+When you upgrade to DPM 2016, you aren't required to reboot the production server. To avoid rebooting the production server, upgrade to DPM 2016 and upgrade the DPM agent on the production servers. Backups continue and you reboot the production server when you want.
 
 ## Modern Backup Storage
 
@@ -262,7 +262,7 @@ In Windows Server 2016, Hyper-V virtual hard disks have built-in change tracking
 
 #### Enabling RCT VM backup
 
-Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have RCT by default. VMs deployed on Windows Server 2012 R2 or earlier do not support RCT. However, you can upgrade older VMs. To upgrade older VMs to enable RCT:
+Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have RCT by default. VMs deployed on Windows Server 2012 R2 or earlier don't support RCT. However, you can upgrade older VMs. To upgrade older VMs to enable RCT:
 
 
 1. In Hyper-V Manager, shut down the virtual machine.
@@ -287,7 +287,7 @@ This backs up RCT-enabled VMs deployed in various configurations. The following 
 
 #### Meet backup SLA during cluster operating system rolling upgrade
 
-Cluster OS rolling upgrade is a feature of Windows Server 2016 used to upgrade the cluster nodes' operating system, from Windows Server 2012 R2 to Windows Server 2016, without stopping the Hyper-V or Scale-Out File Server (SOFS) workloads. Cluster OS rolling upgrade ensures protection is not interrupted during operating system upgrades. This sustained protection meets the backup SLA, reinforces continuity, and provides peace of mind for backup administrators. For detailed information on the cluster OS rolling upgrade process, see the article, [Cluster OS Rolling Upgrade Process](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#cluster-os-rolling-upgrade-process).
+Cluster OS rolling upgrade is a feature of Windows Server 2016 used to upgrade the cluster nodes' operating system, from Windows Server 2012 R2 to Windows Server 2016, without stopping the Hyper-V or Scale-Out File Server (SOFS) workloads. Cluster OS rolling upgrade ensures protection isn't interrupted during operating system upgrades. This sustained protection meets the backup SLA, reinforces continuity, and provides peace of mind for backup administrators. For detailed information on the cluster OS rolling upgrade process, see the article, [Cluster OS Rolling Upgrade Process](/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#cluster-os-rolling-upgrade-process).
 
 To enable uninterrupted protection, run the following steps for each node:
 
@@ -309,9 +309,9 @@ To enable uninterrupted protection, run the following steps for each node:
 
 #### Seamless protection and recovery of Shielded VMs (vTPM-enabled VMs)
 
-Trusted Platform Module (TPM) is a chip in the motherboard of a computer that helps to integrate cryptographic keys. These keys are used by BitLocker to protect the computer even if it is stolen. Virtual TPM (vTPM) is a feature in Windows Server 2016. With vTPM, you can use BitLocker and a virtual TPM chip to encrypt a VM, thereby protecting the VM. These VMs, called Shielded VMs, can only be run on healthy and approved hosts in the fabric.
+Trusted Platform Module (TPM) is a chip in the motherboard of a computer that helps to integrate cryptographic keys. These keys are used by BitLocker to protect the computer even if it's stolen. Virtual TPM (vTPM) is a feature in Windows Server 2016. With vTPM, you can use BitLocker and a virtual TPM chip to encrypt a VM, thereby protecting the VM. These VMs, called Shielded VMs, can only be run on healthy and approved hosts in the fabric.
 
-DPM 2016 supports the backup and recovery of Shielded VMs that have their VHDs/VHDXs protected with vTPM. Note that Item Level Recovery (ILR) and Alternate Location Recovery (ALR) to a location outside the guarded fabric is not available for this scenario.
+DPM 2016 supports the backup and recovery of Shielded VMs that have their VHDs/VHDXs protected with vTPM. Note that Item Level Recovery (ILR) and Alternate Location Recovery (ALR) to a location outside the guarded fabric isn't available for this scenario.
 
 #### Protecting VMs stored on Storage Spaces Direct
 
@@ -319,7 +319,7 @@ Storage Spaces Direct leverages the Storage Spaces feature introduced in Windows
 The primary use case for Storage Spaces Direct is private cloud storage, either on-premises for enterprises or in hosted private clouds for service providers.
 For more information about Storage Spaces Direct, see the article [Storage Spaces Direct in Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview).
 
-DPM protects Hyper-V VMs that use Storage Spaces Direct. Most configurations are supported, including the back up of VMs using the [Storage Spaces Direct hyper-converged scenario](/windows-server/storage/storage-spaces/deploy-storage-spaces-direct) with the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster. Note that backing up and restoring virtual machines running on a Windows Nano Server isn't supported.
+DPM protects Hyper-V VMs that use Storage Spaces Direct. Most configurations are supported, including the backup of VMs using the [Storage Spaces Direct hyper-converged scenario](/windows-server/storage/storage-spaces/deploy-storage-spaces-direct) with the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster. Note that backing up and restoring virtual machines running on a Windows Nano Server isn't supported.
 
 #### Protecting VMs stored on NTFS and ReFS-based SOFS clusters
 
@@ -343,7 +343,7 @@ To add the machine accounts to the backup operator groups, run the following ste
 6. In the **Object Types** dialog, select **Computers** and select **OK**.
     The **Object Types** dialog closes.
 7. In the **Select Users, Computers, Service Accounts, or Groups** dialog, enter the name of the server or cluster and select **Check Names**.
-8. Once you have identified the computers, restart the node.
+8. Once you've identified the computers, restart the node.
 
 
 To give permissions to the share
