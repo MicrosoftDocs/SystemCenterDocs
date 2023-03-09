@@ -7,7 +7,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 02/16/2023
+ms.date: 03/09/2023
 ms.technology: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
 ---
@@ -33,7 +33,7 @@ Substitution strings are special tokens or system variables that are used in not
 
 For example, the end-user notification template includes a substitution string in the message body that represents the user's first name. If you want to add the user's last name, you can easily do so by using the **Insert** button, which is available when you edit a notification template, and then browsing the available strings that are available for the class of template that you're modifying. In this example, you would browse and then select **Affected User** and then select **Last Name** to insert the string into the template. Later, when the notification is sent to the user, their first and last name is included in the message as a salutation.
 
-While this example is simple, Service Manager includes substitution strings for almost every property that you might need to create notifications that can inform end-users and other Service Manager users with timely and relevant information. You can easily view the substitution strings that are available in Service Manager by opening an existing notification template and then, in the template design area, selecting the **Insert** button to view the classes and properties.
+While this example is simple, Service Manager includes substitution strings for almost every property that you might need to create notifications that can inform end-users and other Service Manager users with very timely and relevant information. You can easily view the substitution strings that are available in Service Manager by opening an existing notification template and then, in the template design area, selecting the **Insert** button to view the classes and properties.
 
 
 ## Configure notification channels
@@ -89,55 +89,101 @@ You can use the following procedures to configure notification channels and vali
 
 ::: moniker range="sc-sm-2019"
 
-## Configure email notification with Modern authentication
+## Send notifications using external email authentication
 
-You can send notifications using external email authentication in Service Manager. 
+Azure Active Directory (Azure AD) implements OAuth protocol for secure authentication of its users and applications. Here's how the connection establishes when the activity runs: 
 
-To configure email notifications with modern authentication, follow these steps:
+1. Obtains user credentials from IP configuration. 
 
-### Create an Azure AD app 
+2. Uses the credentials to authenticate with Azure AD using OAuth. 
 
-1. Sign in to the [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) using an account with administrator permissions that uses the same account with Microsoft 365 subscription (tenant). Search for **Azure Active Directory**.
-2. On the **Overview** page, under **Manage**, select **App registrations** and then select **New registration**.
-3. On the **Register an application** page, do the following:
-    1. **Name**: Enter the desired name.
-    1. **Supported account types**: Select the desired supported account type.
-4. Select **Register**.
-5. After successful registration, ensure you note the **Application (client) ID** and **Directory (tenant) ID** displayed on the screen.
-6. On the **Overview** page, under **Manage**, select **Certificates & secrets**.
-7. On the **Certificates & secrets** page, under **Client secrets (0)**, select **+ New client secret**. 
-8. On the **Add a client secret** page, do the following:
-    1. **Description**: Enter the desired description.
-    1. **Expires**: Select the desired duration from the dropdown.
-9. Select **Add**.
-10. Copy the **Client secret value** created.
-     >[!Note]
-     >Client secret value is displayed only at the time of creation, and is different from the Client Secret ID. 
-11. On the **Overview** page, under **Manage**, select **API Permissions**.
-12. On the **API permissions** page, select **Add a permission** > **Microsoft Graph** > **Delegated mode** > search for **Mail.Send** and add the permission.
-13. Select **Grant admin consent** to give the permission.  
+3. After authentication, you will receive an OAuth token from Azure AD. 
+
+4. Activity performs operations on the EWS endpoint using the OAuth token. 
+
+### Create an Azure AD app
+
+To create an Azure AD app, do the following:
+
+1. Sign in to the [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) and search for **[Azure Active Directory admin center](https://aad.portal.azure.com/)**.
+1. On the **Azure Active Directory admin center** dashboard, select **Azure Active Directory**.
+1. On the **Overview** page, under **Manage** > **App registrations**, select **New registration**.
+     :::image type="App registrations page" source="media/notifications/app-registrations.png" alt-text="screenshot of app registrations page.":::
+1. On the **Register an application** page, do the following:
+    - **Name**: Enter the desired name.
+    - **Supported account types**: Select the supported account type based on your scenario.
+    - **Redirect URI (optional)**: From the **Select a platform** dropdown, select **Public client/native (mobile & desktop)**, and set the URI to *https://login.microsoftonline.com/common/oauth2/nativeclient*.
+           :::image type="Register application page" source="media/notifications/register-application-inline.png" alt-text="screenshot of register an application page." lightbox="media/notifications/register-application-expanded.png":::
+1. Select **Register**.
+1. After successful registration, under **Overview** > **Essentials**, ensure to note the **Application (client) ID** and **Directory (tenant) ID**.
+      
+      :::image type="Overview essentials" source="media/notifications/overview-essentials.png" alt-text="screenshot of overview essentials page.":::
+1. On the **Overview** page, under **Manage**, select **Authentication**, and do the following:
+    1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with atleast *https://login.microsoftonline.com/common/oauth2/nativeclient* as one of the Redirect URIs.
+           :::image type="Authentication" source="media/notifications/authentication-inline.png" alt-text="screenshot of authentication page." lightbox="media/notifications/authentication-expanded.png":::
+    1. Under **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
+         :::image type="Advanced settings" source="media/notifications/advanced-settings.png" alt-text="screenshot of advanced settings page.":::
+1. Select **Save**.
+1. On the **Overview** page, under **Manage**, select **API Permissions**.
+1. On the **API permissions** page, select **Add a permission** > **APIs my organization uses**.
+1. Enter **Office** in the search bar and select **Office 365 Exchange Online**, and then select **Delegated permissions** > **EWS** > **EWS.AccessAsUser.All** permission.
+      :::image type="APIs used by organization" source="media/notifications/apis-used-by-my-organization.png" alt-text="screenshot of APIs used by organization.":::
+      :::image type="Request api permissions" source="media/notifications/request-api-permissions-inline.png" alt-text="screenshot of request api permissions." lightbox="media/notifications/request-api-permissions-expanded.png":::
+1. Remove redundant permissions and select **Grant admin consent**.
+     :::image type="API permissions" source="media/notifications/api-permissions.png" alt-text="screenshot of API permissions.":::
+
 ### Enable TLS 1.2 
 
-1. Open Windows PowerShell in Administrator mode.
-1. Run the following TLS script to enable the 1.2 version. 
+To enable TLS 1.2, do the following:
+
+1. Open Windows PowerShell in Administrator mode in Service Manager Console machine.
+1. Run the following script to enable TLS 1.2 version. 
+     ```powershell
+     New-Item 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319' -name 'SystemDefaultTlsVersions' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319' -name 'SchUseStrongCrypto' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-Item 'HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319' -name 'SystemDefaultTlsVersions' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319' -name 'SchUseStrongCrypto' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-Item 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -name 'Enabled' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -name 'DisabledByDefault' -value 0 -PropertyType 'DWord' -Force | Out-Null
+     New-Item 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -name 'Enabled' -value '1' -PropertyType 'DWord' -Force | Out-Null
+     New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -name 'DisabledByDefault' -value 0 -PropertyType 'DWord' -Force | Out-Null
+     Write-Host 'TLS 1.2 has been enabled.' 
+     ```
 
 ### Use OAuth for Notifications
 
-1. Open Service Manager Console and navigate to **Notifications** > **Channels** > **Properties**. 
-2. On the **Configure E-mail Notification Channel** pop-up, select **Enable e-mail notifications**.
-3. Select **Add**. 
-4. On the **Edit SMTP Server** page, do the following:
-    1. **SMTP server (FQDN)**: Enter the SMTP server.
-    1. **Port number**: Enter the port number
-    1. **Authentication method**: Select **External E-mail Authentication** from the dropdown.
-    1. **Client Id**: Enter the client ID created in the above steps.
-    1. **Tenant Id**: Enter the tenant ID created in the above steps.
-    1. **Impersonate User**: Enter your Microsoft 365 account mail-id, which was used to create the Azure AD app.
-    1. **Client Secret**: Enter the client secret created in the above steps.
+To use OAuth for notifications, do the following:
+
+1. Open the Service Manager Console and navigate to **Notifications** > **Channels** > **Properties**. 
+2. On the **Configure E-mail Notification Channel** pop-up, select **Enable e-mail notifications** checkbox, and select **Add**. 
+      :::image type="Email notification channel" source="media/notifications/email-notification-channel-inline.png" alt-text="screenshot of Email notification channel." lightbox="media/notifications/email-notification-channel-expanded.png":::
+1. On the **Add SMTP Server** page, do the following:
+    - **SMTP server (FQDN)**: Enter the SMTP server.
+    - **Port number**: Enter the port number.
+    - **Authentication method**: Select **External E-mail Authentication** from the dropdown.
+    - **Client Id**: Enter the client ID created in the previous steps.
+    - **Tenant Id**: Enter the tenant ID created in the previous steps.
+    - **Mail Id**: Enter the mail Id that acts as a sender for notifications.
+    - **Password**: Enter the corresponding password.
+           :::image type="Add SMTP server" source="media/notifications/add-smtp-server-inline.png" alt-text="screenshot of add SMTP server." lightbox="media/notifications/add-smtp-server-expanded.png":::
 1. Select **OK** to save the changes.  
 1. Enter **Return e-mail address** and set **Retry primary after** as required and select **OK**. 
 
 Use this channel for sending notifications/outgoing e-mails. 
+
+An additional setup of connector/SMTP relay and SMTP details such as FQDN and port number are not required while you use External E-mail Authentication mode for sending notifications. Therefore, FQDN and port number values are set to random values as NA and 65534 when a channel is created using this authentication method.
+
+### Troubleshooting
+
+Each time Notification part runs, it logs events into the event viewer. In case of unexpected behavior, check events to troubleshoot. For more information or for debugging purposes, refer EWS Traces in events. To display trace and logs in the event viewer, open command prompt in administrator mode in the Service Manager Console machine and set the env var *EXTERNALEWSLogs* value to 1 (setx /m EXTERNALEWSLogs 1).
+
+Setting EXTERNALEWSLogs to 1 enables trace and logs to be shown in event viewer as follows:
+
+:::image type="Troubleshooting" source="media/notifications/troubleshooting-inline.png" alt-text="screenshot of troubleshooting." lightbox="media/notifications/troubleshooting-expanded.png":::
 
 ::: moniker-end
 

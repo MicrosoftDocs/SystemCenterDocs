@@ -4,7 +4,7 @@ manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
-ms.date: 02/15/2023
+ms.date: 03/09/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -203,9 +203,9 @@ vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsph
 
 DPM 2019 UR5 support backups for VMWare VMs on vSphere 7.0. Learn more.
 
-### Parallel online backup jobs - limit enhancement
+### Limit enhancement for parallel online backup jobs
 
-DPM 2019 UR5 supports increase in the maximum parallel online backup jobs from 8 to a configurable limit based on your hardware and network limitations through a registry key for faster online backups. Learn more.
+With DPM 2019 UR5, there is an increase in the maximum parallel online backup jobs.Using a registry key, you can now have faster online backups, that is from eight to a configurable limit as per the hardware and network limitations. Learn more.
 
 ::: moniker-end
 
