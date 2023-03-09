@@ -113,14 +113,12 @@ To create an Azure AD app, do the following:
     - **Name**: Enter the desired name.
     - **Supported account types**: Select the supported account type based on your scenario.
     - **Redirect URI (optional)**: From the **Select a platform** dropdown, select **Public client/native (mobile & desktop)**, and set the URI to *https://login.microsoftonline.com/common/oauth2/nativeclient*.
-           :::image type="Register application page" source="media/notifications/register-application-inline.png" alt-text="screenshot of register an application page." lightbox="media/notifications/register-application-expanded.png":::
 1. Select **Register**.
 1. After successful registration, under **Overview** > **Essentials**, ensure to note the **Application (client) ID** and **Directory (tenant) ID**.
       
       :::image type="Overview essentials" source="media/notifications/overview-essentials.png" alt-text="screenshot of overview essentials page.":::
 1. On the **Overview** page, under **Manage**, select **Authentication**, and do the following:
     1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with at least *https://login.microsoftonline.com/common/oauth2/nativeclient* as one of the Redirect URIs.
-           :::image type="Authentication" source="media/notifications/authentication-inline.png" alt-text="screenshot of authentication page." lightbox="media/notifications/authentication-expanded.png":::
     1. Under **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
          :::image type="Advanced settings" source="media/notifications/advanced-settings.png" alt-text="screenshot of advanced settings page.":::
 1. Select **Save**.
@@ -128,7 +126,6 @@ To create an Azure AD app, do the following:
 1. On the **API permissions** page, select **Add a permission** > **APIs my organization uses**.
 1. Enter **Office** in the search bar and select **Office 365 Exchange Online**, and then select **Delegated permissions** > **EWS** > **EWS.AccessAsUser.All** permission.
       :::image type="APIs used by organization" source="media/notifications/apis-used-by-my-organization.png" alt-text="screenshot of APIs used by organization.":::
-      :::image type="Request api permissions" source="media/notifications/request-api-permissions-inline.png" alt-text="screenshot of request api permissions." lightbox="media/notifications/request-api-permissions-expanded.png":::
 1. Remove redundant permissions and select **Grant admin consent**.
      :::image type="API permissions" source="media/notifications/api-permissions.png" alt-text="screenshot of API permissions.":::
 
@@ -159,8 +156,7 @@ To enable TLS 1.2, do the following:
 To use OAuth for notifications, do the following:
 
 1. Open the Service Manager Console and navigate to **Notifications** > **Channels** > **Properties**. 
-2. On the **Configure E-mail Notification Channel** pop-up, select **Enable e-mail notifications** checkbox, and select **Add**. 
-      :::image type="Email notification channel" source="media/notifications/email-notification-channel-inline.png" alt-text="screenshot of Email notification channel." lightbox="media/notifications/email-notification-channel-expanded.png":::
+1. On the **Configure E-mail Notification Channel** pop-up, select **Enable e-mail notifications** checkbox, and select **Add**. 
 1. On the **Add SMTP Server** page, do the following:
     - **SMTP server (FQDN)**: Enter the SMTP server.
     - **Port number**: Enter the port number.
@@ -169,7 +165,8 @@ To use OAuth for notifications, do the following:
     - **Tenant Id**: Enter the tenant ID created in the previous steps.
     - **Mail Id**: Enter the mail ID that acts as a sender for notifications.
     - **Password**: Enter the corresponding password.
-           :::image type="Add SMTP server" source="media/notifications/add-smtp-server-inline.png" alt-text="screenshot of add SMTP server." lightbox="media/notifications/add-smtp-server-expanded.png":::
+           
+         :::image type="Add SMTP server" source="media/notifications/add-smtp-server-inline.png" alt-text="screenshot of add SMTP server." lightbox="media/notifications/add-smtp-server-expanded.png":::
 1. Select **OK** to save the changes.  
 1. Enter **Return e-mail address** and set **Retry primary after** as required and select **OK**. 
 
@@ -181,9 +178,7 @@ An additional setup of connector/SMTP relay and SMTP details such as FQDN and po
 
 Each time Notification part runs, it logs events into the event viewer. In case of unexpected behavior, check events to troubleshoot. For more information or for debugging purposes, refer EWS Traces in events. To display trace and logs in the event viewer, open command prompt in administrator mode in the Service Manager Console machine and set the env var *EXTERNALEWSLogs* value to 1 (setx /m EXTERNALEWSLogs 1).
 
-Setting EXTERNALEWSLogs to 1 enables trace and logs to be shown in event viewer as follows:
-
-:::image type="Troubleshooting" source="media/notifications/troubleshooting-inline.png" alt-text="screenshot of troubleshooting." lightbox="media/notifications/troubleshooting-expanded.png":::
+Setting EXTERNALEWSLogs to 1 enables trace and logs to be shown in event viewer.
 
 ::: moniker-end
 
