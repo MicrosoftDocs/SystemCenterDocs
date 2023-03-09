@@ -2,7 +2,7 @@
 title: Upgrade to System Center 2016 - Service Manager
 description: Use this article to upgrade to System Center 2016 - Service Manager.
 manager: evansma
-ms.custom: na
+ms.custom: na, UpdateFrequency2
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
