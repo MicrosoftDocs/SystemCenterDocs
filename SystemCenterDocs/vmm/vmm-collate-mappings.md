@@ -176,7 +176,7 @@ This article provides the code and associated details for the VMM server collate
 
 **Code** | **Details**
 --- | ---
-1055 |Turkish (Turkey)
+1055 |Turkish (Türkiye)
 
 
 **Collation Name = Hungarian_100_CI_AS**
