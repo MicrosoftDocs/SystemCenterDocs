@@ -19,17 +19,17 @@ This section explains how to disable monitoring of SQL Servers and Databases.
 
 Management Pack for SQL Server allows you to exclude certain versions of SQL Server instances from monitoring.
 
-To exclude versions that you do not want to monitor, override the **Versions of SQL Server to be excluded** parameter in the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery with the versions that you want to exclude. Use comma to specify multiple versions.
+To exclude versions that you don't want to monitor, override the **Versions of SQL Server to be excluded** parameter in the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery with the versions that you want to exclude. Use comma to specify multiple versions.
 
 For example, an override "2014,2012" instructs the management pack to skip instances of SQL Server 2012 and 2014.
 
-![Disabling Monitoring of Specified SQL Server Versions](./media/sql-server-management-pack/overriding-version-parameter.png)
+![Screenshot showing Disabling Monitoring of Specified SQL Server Versions.](./media/sql-server-management-pack/overriding-version-parameter.png)
 
 ## Disabling Monitoring of Specified SQL Server Editions
 
 Management Pack for SQL Server allows you to exclude certain editions of SQL Server instances from monitoring.
 
-To exclude editions that you do not want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery with the editions that you want to exclude. Use comma to specify multiple editions.
+To exclude editions that you don't want to monitor, override the **Editions of SQL Server to be excluded** parameter in the **MSSQL on Windows: Discover SQL Server Database Engines (Local)** discovery with the editions that you want to exclude. Use comma to specify multiple editions.
 
 The following table lists short names that you can use to override the **Editions of SQL Server to be excluded** parameter.
 
@@ -42,7 +42,7 @@ The following table lists short names that you can use to override the **Edition
 |Express|Express Edition, Express Edition with Advanced Services|
 |Evaluation|Enterprise Evaluation Edition|
 
-![Disabling Monitoring of Specified SQL Server Editions](./media/sql-server-management-pack/overriding-edition-parameter.png)
+![Screenshot showing Disabling Monitoring of Specified SQL Server Editions.](./media/sql-server-management-pack/overriding-edition-parameter.png)
 
 ## Disabling Monitoring of Specified Databases by Name
 
@@ -69,4 +69,4 @@ Use commas to separate database names and asterisks to replace one or more chara
 |dbnotmon_sales|Monitored|
 |sales_dbnotmon|Monitored|
 
-If you have \* (asterisk) in the list as a database name (for example, \*temp*, \*, \*dev* or \*temp,*), it disables monitoring of any database.
+If you've \* (asterisk) in the list as a database name (for example, \*temp*, \*, \*dev* or \*temp,*), it disables monitoring of any database.
