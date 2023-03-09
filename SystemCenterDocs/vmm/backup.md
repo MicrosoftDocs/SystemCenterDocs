@@ -175,7 +175,7 @@ Next, reinstall VMM on the selected server, and point this VMM server to the VMM
 
 5.  Identify managed computers that are marked as **Access Denied**, right-click each one, select **Reassociate**, and then provide the administrative credentials.
 
-6.  If you are restoring a VMM management server that was also a library server, then the new computer lists the original VMM server as the default library server. From the **Library** view, remove the original library server, and then add the new computer as a library server.
+6.  If you're restoring a VMM management server that was also a library server, then the new computer lists the original VMM server as the default library server. From the **Library** view, remove the original library server, and then add the new computer as a library server.
 
 You might also need to reassociate servers in the perimeter network (also known as DMZ, demilitarized zone, and screened subnet), as described in the next section.
 

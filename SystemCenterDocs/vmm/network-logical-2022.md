@@ -109,7 +109,10 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
     IP pools can be created when you add network sites in the **Create Logical Network Wizard**.
 
-    - **DHCP no VLAN**: If you use DHCP to allocate IP addresses and you don't have VLANs, you don't need a network site. Note that VMM automatically suggests a site name. A network name is limited to a length of 64 characters.
+    - **DHCP no VLAN**: If you use DHCP to allocate IP addresses and you don't have VLANs, you don't need a network site. 
+      > [!NOTE]
+      > VMM automatically suggests a site name. A network name is limited to a length of 64 characters.
+      
     - **Static IP**: If you use static IP addresses, create at least one network site and associate at least one IP subnet with it.
     - **VLAN**: If you use VLANs with static IP addressing, create corresponding network sites for the VLAN and subnet pairs. If you use DHCP, create corresponding network sites for VLAN information only.
     - **Network virtualization**: If you use network virtualization, create at least one network site with an associated IP subnet so that the logical network has an IP address pool.

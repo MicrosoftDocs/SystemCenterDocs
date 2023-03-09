@@ -78,19 +78,19 @@ SPF implements Windows and IIS security features. Requirements include:
 
 **5000 or less VMs** | **5000-12,000 VMs** | **12,000 - 25,000 VMs**
 --- | --- | ---
-4 processor cores, 8 GB RAM | 8 processor cores, 8 GB RAM | 16 processor cores, 8 GB RAM.<br/><br/> Recommended for computers running VMM with or without SQL Server.
+4 processor cores, 8-GB RAM | 8 processor cores, 8-GB RAM | 16 processor cores, 8-GB RAM.<br/><br/> Recommended for computers running VMM with or without SQL Server.
 
 ## Plan database
 
 There are two database scenario configurations:
 
-- Install SPF and connect to an existing database. In this scenario the SPF administrator must verify that the permissions for the database were granted by the database administrator as follows:
+- Install SPF and connect to an existing database. In this scenario, the SPF administrator must verify that the permissions for the database were granted by the database administrator as follows:
     - **Alter**: Create tables
     - **Connect with Grant**: Connect to existing database
     - **Select with Grant, Update with Grant, Delete with Grant, Insert with Grant**: Grant permissions to application pool users
     - **Alter all logins**: Create SQL Server logins for application pool users.
 
-- Create a new database. In this scenario the database administrator must create the database (SCSPFDB) and then the SPF administrator installs SPF and has permissions to configure the database as needed. For example, to add tables, SPF administrators must create SPF Application Pool in Internet Information Services (IIS) and create a database user for an Application Pool User with the following permissions:
+- Create a new database. In this scenario, the database administrator must create the database (SCSPFDB) and then the SPF administrator installs SPF and has permissions to configure the database as needed. For example, to add tables, SPF administrators must create SPF Application Pool in Internet Information Services (IIS) and create a database user for an Application Pool User with the following permissions:
     - **Connect**: Connect to the SPF database
     - **Select, Update, Delete, Insert**: Perform basic operations
     - **Create the SQL Server logon for Application Pool User with default database set to SCSPFDB.**: To sign in to SQL Server and access the database.

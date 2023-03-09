@@ -209,7 +209,7 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 ### Forms  
  Forms are defined in a management pack. You can use forms to view and modify a single instance of a type or combination class.  
 
- Forms are based on the Windows Presentation Framework \(WPF\), and they are defined in assemblies. The assembly and class that contain the form implementations for a management pack are included in the resources section of the management pack. As with any binary resource in a management pack that uses the new common schema, the management pack itself doesn't contain the binary data for the form. Only the resource manifest is specified in the management pack.  
+ Forms are based on the Windows Presentation Framework \(WPF\), and they're defined in assemblies. The assembly and class that contain the form implementations for a management pack are included in the resources section of the management pack. As with any binary resource in a management pack that uses the new common schema, the management pack itself doesn't contain the binary data for the form. Only the resource manifest is specified in the management pack.  
 
  You can specify your own configuration information for the form in the management pack. In the following example, the Configuration section contains a **ShowXboxes** property. This configuration information isn't evaluated by the management pack verification process; it's only interpreted by the form implementation.  
 
@@ -631,7 +631,7 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
 
  **Defining Folders**  
 
- Defining a folder determines the location in the navigation tree in which the view is displayed. In this example, a configuration item is defined so that it is only suitable to place the view under the existing folder for configuration items in the **Configuration Items** workspace:  
+ Defining a folder determines the location in the navigation tree in which the view is displayed. In this example, a configuration item is defined so that it's only suitable to place the view under the existing folder for configuration items in the **Configuration Items** workspace:  
 
 ```  
 <Folders>  
@@ -744,7 +744,7 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
 IsExtensionType="true"  
 ```  
 
- The other option is **false**, which indicates that it is not an extension of another class but a new class that inherits from the base. The default value is **false**; therefore, this attribute does not have to be used if the class is not an extension.  
+ The other option is **false**, which indicates that it isn't an extension of another class but a new class that inherits from the base. The default value is **false**; therefore, this attribute doesn't have to be used if the class isn't an extension.  
 
  **Full Example**  
 

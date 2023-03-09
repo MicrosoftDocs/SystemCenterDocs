@@ -24,7 +24,9 @@ Using VMM, you can add and manage existing hosts running Nano, configure bare-me
 
 - For VM deployment, you need to create the Nano Server virtual hard disk outside VMM.
 - You can't create a VM template from a Nano Server VM in VMM. You can create a VM template from scratch using a Nano Server virtual hard disk.
-- There are some known issues when joining a Nano Server VM to a domain. If you try to join the VM to a domain with customization details in a VM template, the domain information is ignored by VMM. The VM is deployed, but doesn't join the domain. As a workaround, deploy the VM and then join it to a domain. [Learn more](/windows-server/get-started/nano-server-quick-start). Note that joining a physical machine to a domain during bare metal deployment works fine.
+- There are some known issues when joining a Nano Server VM to a domain. If you try to join the VM to a domain with customization details in a VM template, the domain information is ignored by VMM. The VM is deployed, but doesn't join the domain. As a workaround, deploy the VM and then join it to a domain. [Learn more](/windows-server/get-started/nano-server-quick-start). 
+   > [!NOTE]
+   > Joining a physical machine to a domain during bare metal deployment works fine.
 
 ## Prepare a Nano server virtual hard disk
 
@@ -61,7 +63,7 @@ To get started with the deployment of a Nano Server-based host or virtual machin
    - When creating the VHD, it uses a folder called Base in the same folder in which you ran **New-NanoServerImage**
    - It places the VHD in a folder called **Nano1** in the folder from which the command runs.
    - The computer name in this example is **Nano-srv1**. It includes the OEM drivers installed for most common hardware and has the clustering feature enabled.
-   - The VHD has remote management of the Nano server enabled, even from the systems which aren't in the same subnet.
+   - The VHD has remote management of the Nano server enabled, even from the systems that aren't in the same subnet.
    - If the server uses UEFI to boot, you need to change the script from **NanoServer.vhd** to **NanoServer.vhdx**.
 
 5. Sign in as an administrator on the physical server on which you want to run the Nano Server VHD.
@@ -74,7 +76,7 @@ To get started with the deployment of a Nano Server-based host or virtual machin
 7. Boot the physical computer into the Nano Server virtual hard disk.
 8. Sign in to the Nano server Recovery Console using the administrator name and password you supplied when running the script and obtain the IP address of the Nano server-based host. [Learn more](/windows-server/get-started/getting-started-with-nano-server).
 9. Ensure that the Nano server is joined to the same domain as the VMM server. [Learn more](/windows-server/get-started/getting-started-with-nano-server).
-10. Ensure that the VMM service account and the Run As account are added to the administrators group on the Nano server.
+10. Ensure that the VMM service account and the Run As account are added to the administrators' group on the Nano server.
 
 ### Install the VMM packages offline on an existing Nano Server
 

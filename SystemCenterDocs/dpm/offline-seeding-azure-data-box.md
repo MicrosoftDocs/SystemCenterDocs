@@ -76,7 +76,7 @@ Ensure that the required Data Box devices are in *Delivered* state before trigge
 
 ## Setup Azure Data Box device(s)
 
-Once you receive the Azure Data Box device, depending on the Azure Data Box SKU you have ordered, perform the steps in the appropriate sections below to set up and prepare the Data Box device(s) for the DPM Server to identify and transfer the initial backup data.
+Once you receive the Azure Data Box device, depending on the Azure Data Box SKU you've ordered, perform the steps in the appropriate sections below to set up and prepare the Data Box device(s) for the DPM Server to identify and transfer the initial backup data.
 
 ### Setup Azure Data Box disk
 
@@ -133,7 +133,7 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
 
     ![Screenshot showing Choose initial online replication.](./media/databox/choose-initial-online-replication.png)
 
-12. Sign into Azure when prompted, using the user credentials that have owner access on the Azure Subscription. After successful sign in, the following screen is displayed:
+12. Sign into Azure when prompted, using the user credentials that have owner access on the Azure Subscription. After successful sign-in, the following screen is displayed:
 
     ![Screenshot of After successful sign in.](./media/databox/after-successful-login.png)
 

@@ -84,7 +84,7 @@ Set-scvirtualharddisk –virtualharddisk $myVHD –OperatingSystem $WS2012Datace
     - The Familyname property values should indicate the contents of the virtual hard disk, including the Windows Server release and edition. The Readme file of the Gallery Resource should include appropriate Familyname values.
     Release property values must conform to the Microsoft Azure versioning scheme of n.n.n.n. Examples include 1.0.0.0 and 1.0.0.1.
 
-2. Set the property using the VMM console, or PowerShell. The following example shows how to set the virtual hard disk MyVirtualHardDisk to a Familyname **Windows Server 2012 Datacenter**, and the Release property to **1.0.0.0**. Your cmdlet with replace values with one of the values in the Readme file.
+2. Set the property using the VMM console or PowerShell. The following example shows how to set the virtual hard disk MyVirtualHardDisk to a Familyname **Windows Server 2012 Datacenter**, and the Release property to **1.0.0.0**. Your cmdlet will replace values with one of the values in the Readme file.
 
 ```
 $myVHD = Get-SCVirtualHardDisk | where {$_.Name –eq 'MyVirtualHardDisk.vhd'}
@@ -98,7 +98,7 @@ Set-scvirtualharddisk –virtualharddisk $myVHD –FamilyName $familyName –Rel
 Virtual Machine Role gallery items specify tags that must be included on an operating system disk for it to be available as an option when a user provisions the virtual machine. The Readme file of the gallery resource should include the tags that it requires.
 
 1. When you create the hard disk, specify the required tags using PowerShell.
-2. The following example shows how to set the tag **WindowsServer2012R1** for the virtual hard disk MyVirtualHardDisk. Your cmdlet use the values in the Readme file.
+2. The following example shows how to set the tag **WindowsServer2012R1** for the virtual hard disk MyVirtualHardDisk. Your cmdlet uses the values in the Readme file.
 
 ```
 $myVHD = Get-SCVirtualHardDisk | where {$_.Name –eq 'MyVirtualHardDisk.vhd'}

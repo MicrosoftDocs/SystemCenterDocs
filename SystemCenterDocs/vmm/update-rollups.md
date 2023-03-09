@@ -141,7 +141,7 @@ When you know the RTM product GUID and the patch GUID, run the following command
 Use the following procedure to check if the update rollup was successfully removed:
 
 1. Check whether the update was removed from **Programs and Features**. 
-1. Verify that binaries were reverted successfully. To do this, go to the VMM installation directory, and verify that there is no binary that has the build version of the update rollup that you uninstalled. 
+1. Verify that binaries were reverted successfully. To do this, go to the VMM installation directory, and verify that there's no binary that has the build version of the update rollup that you uninstalled. 
 
 > [!NOTE]
 > When you uninstall the server and console updates from the VMM server, the order of uninstallation isn't important.
@@ -154,7 +154,7 @@ Use the following procedure to check if the update rollup was successfully remov
 > 1. Ensure that you restore the database backup that you created prior to the update rollup installation.
 >
 
-For information on how to restore the database back up, see [this article](backup.md#restore-the-vmm-environment).
+For information on how to restore the database backup, see [this article](backup.md#restore-the-vmm-environment).
 
 ### Post-restore tasks
 

@@ -37,7 +37,7 @@ This article describes the steps for deploying a highly available System Center 
 6. After you've at least two nodes in the cluster, you can run cluster validation tests. Open **Failover Cluster Manager** and under **Management**, select **Validate Configuration**.
 7. In **Select Servers or a Cluster**, specify the NetBIOS or FQDN of a node you're adding and select **Add**. In **Testing Options**, select **Run all tests (recommended)**.
 8. In **Summary**, if the tests completed correctly, select **Create the cluster now using the validated nodes**. Select **View Report** to troubleshoot any issues.
-9. In **Access Point for Administering the Cluster**, specify the cluster name. For example **VMMLibrary**.
+9. In **Access Point for Administering the Cluster**, specify the cluster name. For example, **VMMLibrary**.
  When the cluster is created, this name is registered as the cluster computer object (CNO) in Active Directory. If you specify a NetBIOS name for the cluster, the CNO is created in the same location where the computer objects for the cluster node reside (either the default Computers container or an OU). You can specify a different location by adding the distinguished OU name. For example, CN=ClusterName, OU=Clusters,DC=Contoso. For more information, see [distributed key management](plan-install.md#distributed-key-management).
 10. If the server isn't configured to use DHCP, specify a static IP address for the cluster. Select each network you want to use for cluster management and in **Address**, select the IP address. This is the IP address that is associated with the cluster in DNS.
 11. In **Confirmation**, review the settings. Clear **Add all eligible storage to the cluster** if you want to configure storage later. Select **Next** to create the cluster.
@@ -45,7 +45,7 @@ This article describes the steps for deploying a highly available System Center 
 
 ### Install VMM on the first cluster node
 
-1. On either node of the cluster you created run VMM setup and select **Install**.
+1. On either node of the cluster you created, run VMM setup and select **Install**.
 2. VMM detects its installing on a cluster node and asks you if you want to make the VMM server highly available. Select **Yes**.
 3. In **Select features to install**, select the VMM management server and the VMM console.
 4. In **Product registration information**, specify organizational details and the product key.
