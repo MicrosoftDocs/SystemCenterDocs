@@ -119,7 +119,7 @@ To create an Azure AD app, do the following:
       
       :::image type="Overview essentials" source="media/notifications/overview-essentials.png" alt-text="screenshot of overview essentials page.":::
 1. On the **Overview** page, under **Manage**, select **Authentication**, and do the following:
-    1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with atleast *https://login.microsoftonline.com/common/oauth2/nativeclient* as one of the Redirect URIs.
+    1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with at least *https://login.microsoftonline.com/common/oauth2/nativeclient* as one of the Redirect URIs.
            :::image type="Authentication" source="media/notifications/authentication-inline.png" alt-text="screenshot of authentication page." lightbox="media/notifications/authentication-expanded.png":::
     1. Under **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
          :::image type="Advanced settings" source="media/notifications/advanced-settings.png" alt-text="screenshot of advanced settings page.":::
@@ -167,7 +167,7 @@ To use OAuth for notifications, do the following:
     - **Authentication method**: Select **External E-mail Authentication** from the dropdown.
     - **Client Id**: Enter the client ID created in the previous steps.
     - **Tenant Id**: Enter the tenant ID created in the previous steps.
-    - **Mail Id**: Enter the mail Id that acts as a sender for notifications.
+    - **Mail Id**: Enter the mail ID that acts as a sender for notifications.
     - **Password**: Enter the corresponding password.
            :::image type="Add SMTP server" source="media/notifications/add-smtp-server-inline.png" alt-text="screenshot of add SMTP server." lightbox="media/notifications/add-smtp-server-expanded.png":::
 1. Select **OK** to save the changes.  
