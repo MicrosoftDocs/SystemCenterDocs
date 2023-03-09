@@ -13,40 +13,40 @@ ms.technology: operations-manager
 
 # Custom Query-Based Monitoring
 
-In addition to standard [health and performance monitoring](azure-sql-management-pack-monitoring-types.md), you can configure custom query-based monitors for application-specific health states monitoring.
+In addition to the standard [health and performance monitoring](azure-sql-management-pack-monitoring-types.md), you can configure custom query-based monitors for application-specific health state monitoring.
 
 > [!NOTE]
-> Before using custom query-based monitors, grant required permissions to your monitoring accounts. For more information, see [Azure SQL Database Run As Accounts](azure-sql-management-pack-run-as-accounts.md).
+> Before using custom query-based monitors, grant the required permissions to your monitoring accounts. For more information, see [Azure SQL Database Run As Accounts](azure-sql-management-pack-run-as-accounts.md).
 
 ## Two-State Monitor
 
 To add a new two-state custom query-based monitor, perform the following steps:
 
-1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, right-click **Monitors**, and select **Create a Monitor | Unit Monitor**.
+1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, select and hold **Monitors**, and select **Create a Monitor | Unit Monitor**.
 
     ![Screenshot of creating a two-state unit monitor.](./media/azure-sql-management-pack/creating-unit-monitor.png)
 
 2. At the **Monitor Type** step, select **Microsoft Azure SQL Database | User-defined SQL Query Two State Monitor**.
 
-3. From the **Select destination management pack** drop-down list, select a management pack that you want to use and click **Next**.
+3. From the **Select destination management pack** dropdown list, select a management pack that you want to use and select **Next**.
 
     To create a custom query monitor for specific Azure SQL Databases, select a management pack with the template used to monitor this service. If you want to add a query to all Azure SQL Database services, you can store the monitor in any management pack.
 
     ![Screenshot of selecting a monitor type.](./media/azure-sql-management-pack/selecting-monitor-type.png)
 
-4. At the **General** step, enter the monitor name and optional description, select **Monitor target** and **Parent monitor**, and click **Next**.
+4. At the **General** step, enter the monitor name and optional description, select **Monitor target** and **Parent monitor**, and select **Next**.
 
-    If you select to save a new monitor to the management pack that contains one or more Azure SQL Database templates, you will be able to pick one of the Azure SQL Database services monitored by the templates. Otherwise, only the base **Microsoft Azure SQL Database** will be available as a target. Selecting **Microsoft Azure SQL Database Cloud Server** means that all cloud services will be using your query.
+    If you select to save a new monitor to the management pack that contains one or more Azure SQL Database templates, you'll be able to pick one of the Azure SQL Database services monitored by the templates. Otherwise, only the base **Microsoft Azure SQL Database** will be available as a target. Selecting **Microsoft Azure SQL Database Cloud Server** means that all the cloud services will be using your query.
 
     ![Screenshot of selecting a monitor name and description.](./media/azure-sql-management-pack/monitor-name-and-description.png)
 
 5. At the **SQL Query** step, enter the database name, query text, and timeout (in seconds).
 
-    ![Diagram that specifies target database name and SQL query.](./media/azure-sql-management-pack/unit-monitor-sql-query.png)
+    ![Screenshot showing target database name and SQL query.](./media/azure-sql-management-pack/unit-monitor-sql-query.png)
 
 6. At the **Test Conditions** step, add one or more **Test conditions** to verify query results.
 
-    To add a new condition, click **Add** and select one of the available conditions:
+    To add a new condition, select **Add** and select one of the available conditions:
 
     - **Empty Result Set**
 
@@ -54,7 +54,7 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
     - **Not Empty Result Set**
 
-      Checks if the specified result set that was returned by the query is not empty.
+      Checks if the specified result set that was returned by the query isn't empty.
 
     - **Scalar Value**
 
@@ -64,15 +64,15 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
       Checks query execution duration.
 
-    ![Diagram that specifies test conditions.](./media/azure-sql-management-pack/unit-monitor-test-conditions.png)
+    ![Screenshot showing test conditions.](./media/azure-sql-management-pack/unit-monitor-test-conditions.png)
 
     When you add a condition, you must specify **Friendly name** and **Configuration** required for a specific check to be performed.
 
-    ![Diagram that specifies scalar values.](./media/azure-sql-management-pack/editing-test-conditions.png)
+    ![Screenshot showing scalar values.](./media/azure-sql-management-pack/editing-test-conditions.png)
 
-    You can have more than one condition. It is useful to add the **Execution Time** condition to all tests to check the performance of the Azure SQL Database service. After all required conditions are set, click **Next**.
+    You can have more than one condition. It's useful to add the **Execution Time** condition to all the tests to check the performance of the Azure SQL Database service. After all the required conditions are set, select **Next**.
 
-    ![Diagram that specifies execution time.](./media/azure-sql-management-pack/test-conditions-execution-time.png)
+    ![Screenshot showing execution time.](./media/azure-sql-management-pack/test-conditions-execution-time.png)
 
 7. At the **Schedule** page, configure a query execution schedule.
 
@@ -82,7 +82,7 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
     ![Screenshot of configuring health.](./media/azure-sql-management-pack/configure-health.png)  
 
-9. At the **Configure Alerts** step, set up an alert name and description to be shown in cases if one or more test conditions fail and click **Create**.
+9. At the **Configure Alerts** step, set up an alert name and description to be shown in cases if one or more test conditions fail and select **Create**.
 
     Use the `$Data/Context/Property[@Name=’Message’]$` placeholder to show the list of failed conditions in the alert description.
 
@@ -92,6 +92,6 @@ To add a new two-state custom query-based monitor, perform the following steps:
 
 Adding a three-state custom query-based monitor is similar to a two-state monitor. The main difference is that you must specify the **Warning** and **Critical** conditions.
 
-Critical conditions are verified first. If one or more critical conditions fail, the monitor will switch to the critical state and warning conditions will not be verified.
+Critical conditions are verified first. If one or more critical conditions fail, the monitor will switch to the critical state and the warning conditions won't be verified.
 
-![Screenshot of selecting a three-state monitor.](./media/azure-sql-management-pack/three-state-monitor.png)
+![Screenshot showing a three-state monitor.](./media/azure-sql-management-pack/three-state-monitor.png)

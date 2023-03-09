@@ -64,28 +64,28 @@ After importing Management Pack for SQL Server Reporting Services, the following
         - WorkingSetMaximum (GB)
         - WorkingSetMinimum (GB)
 
-By default, all discoveries, monitors, and rules defined in the management pack use accounts defined in the **Default Action Account** Run As profile.
+By default, all discoveries, monitors, and rules defined in the management pack use accounts are defined in the **Default Action Account** Run As profile.
 
-If the default action account for the given system does not have necessary permissions to discover and monitor instances of SQL Server Analysis Services, those systems can be bound to more specific credentials in **Microsoft SQL Server** Run As profiles.
+If the default action account for the given system doesn't have the necessary permissions to discover and monitor instances of SQL Server Analysis Services, those systems can be bound to more specific credentials in **Microsoft SQL Server** Run As profiles.
 
 >[!NOTE]
->It is not recommended to use the Local System account or HealthService SSID because its special case to monitor SSRS. Some workflows run on the server hosting an SSRS instance and try to reach the SSRS Database usually installed on another server. You will need to provide computer accounts of all servers hosting SSRS instances with the required permissions to access the SSRS Database. A domain account is a more preferable option.
+>It's not recommended to use the Local System account or HealthService SSID because it's a special case to monitor SSRS. Some workflows run on the server hosting an SSRS instance and try to reach the SSRS Database usually installed on another server. You'll need to provide computer accounts of all the servers hosting SSRS instances with the required permissions to access the SSRS Database. A domain account is a more preferable option.
 
 ## Configuring Run As Profiles
 
-To configure Run As profiles, perfrom the following steps:
+To configure Run As profiles, perform the following steps:
 
 1. Identify the names of the target computers where the default action account has insufficient rights to monitor SQL Server Reporting Services.
 
 2. For each system, create or use an existing set of credentials that have at least the set of privileges described in [Least-Privilege Monitoring](reporting-services-management-pack-least-privilege-monitoring.md).
 
-3. For each set of credentials identified in Step 2, make sure that a corresponding **Run As Account** exists in the management group. Create a **Run As Account** if necessary.
+3. For each set of credentials identified in Step 2, ensure that a corresponding **Run As Account** exists in the management group. Create a **Run As Account**, if necessary.
 
 4. Configure mapping between targets and Run As accounts on the **Run As Accounts** tab of each of the Run As profiles.
 
 ## SQL Server and SQL Server Reporting Services Run As Profiles
 
-To use separate accounts for monitoring of DB Engine, SSRS, and SSAS, create 3 different Windows accounts, and configure each account in each Run As profile according to the following table.
+To use separate accounts for monitoring of DB Engine, SSRS, and SSAS, create three different Windows accounts, and configure each account in each Run As profile according to the following table.
 
 |Monitoring Account|[Association] Used for|
 |-|-|

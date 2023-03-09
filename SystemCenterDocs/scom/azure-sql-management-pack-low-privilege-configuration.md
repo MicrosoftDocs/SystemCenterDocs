@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This section explains how to configure low-privilege accounts to monitor the Azure SQL Database service.
 
-To configure low-privilege account, perform the following steps:
+To configure a low-privilege account, perform the following steps:
 
 1. Connect to the **master** database and create server-level credentials for the low-privilege monitoring user by executing the following query:
 

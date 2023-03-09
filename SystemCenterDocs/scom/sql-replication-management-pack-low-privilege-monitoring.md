@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Security Configuration in Management Pack for SQL Server Replication
 
-This section explains how to configure security for Management Pack for Microsoft SQL Server Replication.
+This article explains how to configure security for Management Pack for Microsoft SQL Server Replication.
 
 ## Run As Profiles
 
