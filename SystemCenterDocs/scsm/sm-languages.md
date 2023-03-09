@@ -49,4 +49,4 @@ It is assumed in this article that you are installing System Center - Service Ma
 |Russian|Cyrillic\_General\_100\_CI\_AS|  
 |Spanish\_Modern\_Sort|Modern\_Spanish\_100\_CI\_AS|  
 |Swedish \(Sweden\)|Finnish\_Swedish\_100\_CI\_AS|  
-|Turkish \(Turkey\)|Turkish\_100\_CI\_AS|  
+|Turkish \(Türkiye\)|Turkish\_100\_CI\_AS|  
