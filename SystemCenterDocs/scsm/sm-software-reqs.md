@@ -1,6 +1,6 @@
 ---
 title: Software Requirements for Service Manager
-manager: evansma
+manager: mkluck
 description: The article describes System Center 2016 - Service Manager software requirements.
 ms.custom: na
 ms.prod: system-center
@@ -22,7 +22,7 @@ This article describes the software requirements for Service Manager in System C
 
 ## Software requirements
 
- All basic software requirements for System Center 2016 Service Manager are listed at [System requirements for Service Manager](system-requirements.md).  
+ All the basic software requirements for System Center 2016 Service Manager are listed in [System requirements for Service Manager](system-requirements.md).  
 
 > [!NOTE]  
 >  The Service Manager management server and data warehouse management server must be installed on the 64\-bit edition of the Windows operating system. The Service Manager console can be installed on both the 32\-bit and 64\-bit editions of Windows.  
@@ -64,7 +64,7 @@ You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use t
 
 ### Windows safe mode
 
-Service Manager does not operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
+Service Manager doesn't operate and the services used by Service Manager don't start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
 
 ## Next steps
 
