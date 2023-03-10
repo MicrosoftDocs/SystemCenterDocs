@@ -4,7 +4,7 @@ title: Making Changes to an Operations Manager Management Group
 description: This article describes the tasks you may perform after you have deployed or upgraded Operations Manager in your environment.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
@@ -24,7 +24,7 @@ After the initial deployment of System Center – Operations Manager, you migh
 
 - Replace hardware that is experiencing problems and that is no longer considered reliable.  
 
-- Replace hardware as part of the upgrade process from System Center Operations Manager previous version.  
+- Replace hardware as part of the upgrade process from System Center - Operations Manager previous version.  
 
 - Add additional hardware to improve scalability and performance.  
 

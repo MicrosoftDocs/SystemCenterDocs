@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 18e965c9-7f74-4259-96ae-14e0b4a19efa
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 monikerRange: '=sc-orch-2016'
 ---
@@ -20,7 +20,7 @@ monikerRange: '=sc-orch-2016'
 
 The Set Pending Service Update activity is used in a runbook to set a specific service template as the pending service update.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Set Pending Service Update Required Properties
 
@@ -78,6 +78,6 @@ There are no optional properties for this activity.
 | User Role Name   |   |   |
 
 
-## Other Resources
+## Next steps
 
 [Using Runbooks in System Center 2016 Orchestrator](design-and-build-runbooks.md)
