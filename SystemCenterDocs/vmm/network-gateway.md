@@ -10,6 +10,7 @@ ms.date: 12/14/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency2
 ---
 
 # Add a network virtualization gateway to the VMM fabric
