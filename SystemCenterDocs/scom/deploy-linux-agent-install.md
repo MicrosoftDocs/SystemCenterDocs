@@ -73,7 +73,7 @@ The following sections describe the steps required to manually install the Linux
 
     sudo sh ./omsagent-1.4.0-45.universald.1.x64.sh --install --enable-opsmgr
 
-1. Run the omsadmin.sh command supplying **scom** for your workspace id. This command must be run as root (with sudo elevation). This script will generate a certificate at **/etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem**, which will need to be signed by the Management Server in a later step.
+1. Run the omsadmin.sh command supplying **scom** for your workspace ID. This command must be run as root (with sudo elevation). This script will generate a certificate at **/etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem**, which will need to be signed by the Management Server in a later step.
 
     /opt/microsoft/omsagent/bin/omsadmin.sh -w scom
 
