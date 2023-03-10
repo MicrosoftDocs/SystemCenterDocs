@@ -15,7 +15,7 @@ monikerRange: 'sc-dpm-2019'
 
 # Overview of offline backup in DPM
 
-This article gives an overview of the offline backup modes that DPM supports.
+This article gives an overview of offline backup and the offline backup modes that DPM supports.
 
 Initial full backups to Azure typically transfer large amounts of data online and require more network bandwidth compared to subsequent backups that transfer only incremental changes. Remote offices or datacenters in certain geographies don't always have sufficient network bandwidth. So, these initial backups take several days. During this time, the backups continuously use the same network that was provisioned for applications running in the on-premises datacenter.
 
