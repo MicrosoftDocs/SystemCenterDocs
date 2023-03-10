@@ -78,9 +78,9 @@ This article describes how to prepare your System Center 2012 R2 - Service Manag
 
 1.  In the Service Manager console, select **Data Warehouse**.  
 
-2.  In the **Data Warehouse** page, expand **Data Warehouse**, and select **Data Warehouse Jobs**.  
+2.  In the **Data Warehouse** pane, expand **Data Warehouse**, and select **Data Warehouse Jobs**.  
 
-3.  In the **Data Warehouse Jobs** page, observe the **Status** column for each data warehouse job. When the status for each job is listed as **Not Started**, proceed to the next procedure to stop the Self-Service Portal. If no Self-Service Portal exists in your environment, you can start the upgrade process.  
+3.  In the **Data Warehouse Jobs** pane, observe the **Status** column for each data warehouse job. When the status for each job is listed as **Not Started**, proceed to the next procedure to stop the Self-Service Portal. If no Self-Service Portal exists in your environment, you can start the upgrade process.  
 
 ### To prevent MPSync jobs from failing  
 
@@ -166,7 +166,7 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 7.  On the **Configure Analysis Service for OLAP cubes** page, in the **Database server** box, enter the computer name of the server that will host the SQL Server Analysis Services \(SSAS\) database, and then press the tab key. When **Default** appears in the **SQL Server instance** box, select **Next**.  
 
     > [!IMPORTANT]  
-    >  If you're installing SSAS on a computer other than the computer that hosts the data warehouse management server and there's a firewall in your environment, you must ensure that the proper firewall ports are opened. For more information, see **Port Assignments for System Center 2016 - Service Manager** in the [Planning Guide for System Center 2016 - Service Manager](plan-sm.md) article.  
+    >  If you're installing SSAS on a computer other than the computer that hosts the data warehouse management server and there's a firewall in your environment, you must ensure that the proper firewall ports are opened. For more information, see **Port Assignments for System Center 2016 - Service Manager** in the [Planning Guide for System Center 2016 - Service Manager](plan-sm.md).  
 
 8.  On the **Configure Analysis Services credential** page, specify the user name, password, and domain for the account, and select **Test Credentials**. After you receive a message saying **The credentials were accepted**, select **Next**.  
 
