@@ -180,7 +180,7 @@ An additional setup of connector/SMTP relay and SMTP details such as FQDN and po
 
 Each time Notification part runs, it logs events into the event viewer. In case of unexpected behavior, check events to troubleshoot. For more information or for debugging purposes, refer EWS Traces in events. To display trace and logs in the event viewer, open command prompt in administrator mode in the Service Manager Console machine and set the env var *EXTERNALEWSLogs* value to 1 (setx /m EXTERNALEWSLogs 1).
 
-Setting EXTERNALEWSLogs to 1 enables trace and logs to be shown in event viewer.
+Setting EXTERNALEWSLogs to 1 enables trace and logs to be shown in event viewer as follows:
 
 :::image type="Troubleshooting" source="media/notifications/troubleshooting-inline.png" alt-text="screenshot of troubleshooting." lightbox="media/notifications/troubleshooting-expanded.png":::
 
