@@ -9,6 +9,7 @@ ms.date: 01/11/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
+ms.custom: UpdateFrequency2
 ---
 
 

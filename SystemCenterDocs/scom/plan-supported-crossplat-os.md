@@ -9,7 +9,7 @@ ms.date: 01/09/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency.5
 ---
 
 # Supported UNIX and Linux operating system versions
