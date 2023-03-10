@@ -34,7 +34,7 @@ This activity has no optional properties.
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|
-| Actions Permitted   | The actions that members of a Self-Service User role can perform on their virtual machines or services. | AllowLocalAdmin, Author, CanShare, CanReceive, Checkpoint,CheckpointRestoreOnly, Create, CreateFromVHDOrTemplate, PauseAndResume, RemoteConnect, Remove, Save, Shutdown, Start, Stop, Store. |
+| Actions Permitted   | The actions that members of a Self-Service User role can perform on their virtual machines or services. | AllowLocalAdmin, Author, CanShare, CanReceive, Checkpoint, CheckpointRestoreOnly, Create, CreateFromVHDOrTemplate, PauseAndResume, RemoteConnect, Remove, Save, Shutdown, Start, Stop, Store. |
 | Cloud Names in Scope   | The cloud scope of a user role.   |   |
 | Host Group Names in Scope   | The host scope of a user role (not for Self-Service User Role).   |   |
 | Description   | An alphanumeric description of the user role.   |   |
