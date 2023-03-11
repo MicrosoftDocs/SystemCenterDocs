@@ -4,7 +4,7 @@ title: Required Capabilities for UNIX and Linux Accounts
 description: This article describes the capabilities for privileged and unprivileged access to Linux and UNIX computer with Operations Manager
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/09/2017
 ms.custom: na
 ms.prod: system-center
@@ -43,8 +43,8 @@ However, the PAM authentication that is used by the Operations Manager agent doe
 
 ## Next steps
 
-- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md)  
+- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md).
 
-- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](manage-security-create-crossplat-sudo-sshkeys.md)  
+- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](manage-security-create-crossplat-sudo-sshkeys.md).
 
-- Review the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) if you need to reconfigure Operations Manager to use a different cipher.   
+- If you need to reconfigure Operations Manager to use a different cipher, review the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md).

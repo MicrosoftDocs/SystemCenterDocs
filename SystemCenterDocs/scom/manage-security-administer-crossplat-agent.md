@@ -4,7 +4,7 @@ title: Administering and Configuring the UNIX - Linux Agent
 description: This article describes options to administer and configure the UNIX and Linux agent Operations Manager 2016.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/30/2021
 ms.custom: na
 ms.prod: system-center
@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This topic describes options to administer and configure the UNIX/Linux agent for System Center - Operations Manager.  
+This article describes options to administer and configure the UNIX/Linux agent for System Center - Operations Manager.  
 
 ## Agent directories  
 
@@ -51,7 +51,7 @@ The tools for configuring the UNIX/Linux Agent are located in the directory:
 
 ## Scxadmin  
 
-The **scxadmin** tool is used to control the state of the UNIX/Linux agent (start, stop, or restart) as well as control logging performed by the agent.  The usage of the tool can be displayed with the following command: `scxadmin -?`  
+The **scxadmin** tool is used to control the state of the UNIX/Linux agent (start, stop, or restart) as well as control logging performed by the agent. The usage of the tool can be displayed with the following command: `scxadmin -?`  
 
 ```  
 
@@ -97,10 +97,10 @@ cd /opt/microsoft/scx/bin/tools/
 
 ## scxsslconfig  
 
-The **scxsslconfig** tool is used to generate the certificate in `/etc/opt/Microsoft/scx/ssl/`. This tool is useful in correcting issues in which the fully\-qualified domain name cannot be determined from the UNIX or Linux host itself, or the FQDN known to the UNIX\/Linux host does not match the FQDN used by the management server to reach the host.  
+The **scxsslconfig** tool is used to generate the certificate in `/etc/opt/Microsoft/scx/ssl/`. This tool is useful in correcting issues in which the fully-qualified domain name can't be determined from the UNIX or Linux host itself, or the FQDN known to the UNIX\/Linux host doesn't match the FQDN used by the management server to reach the host.  
 
 > [!NOTE]  
-> The generated certificate must be signed by Operations Manager management server in order to be used in WS-Management communication.  Overwriting a previously signed certificate will require that the certificate be signed again.  
+> The generated certificate must be signed by Operations Manager management server in order to be used in WS-Management communication. Overwriting a previously signed certificate will require that the certificate be signed again.  
 
 Usage for the **scxsslconfig** tool can be displayed with the following command: `scxsslconfig -?`  
 
@@ -141,7 +141,7 @@ cd /opt/microsoft/scx/bin/tools/
 
 ### SSL ciphers
 
-If required, the SSL cipher list used by the UNIX/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) topic.  
+If required, the SSL cipher list used by the UNIX/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) article.  
 
 ### Specifying an alternate temporary path for scripts
 
@@ -157,7 +157,7 @@ Create the file `disablereleasefileupdates` in the directory: `/etc/opt/microsof
 touch /etc/opt/microsoft/scx/conf/disablereleasefileupdates  
 ```  
 
-If this file exists, the agent will not attempt to update the operating system properties that are returned to Operations Manager. This ensures that the customizations are preserved.  
+If this file exists, the agent won't attempt to update the operating system properties that are returned to Operations Manager. This ensures that the customizations are preserved.  
 
 Edit the file `scx-release` in the directory: `/etc/opt/microsoft/scx/conf`. This file has the format:  
 
@@ -172,7 +172,7 @@ OSManufacturer=
 The values of the **OSName**, **OSVersion**, and **OSFullName** properties can be edited to reflect customized values.  
 
 > [!NOTE]  
-> The OSAlias property should not be edited. All properties in this file (except for OSManufacturer) are mandatory and should not be null.  
+> The OSAlias property shouldn't be edited. All the properties in this file (except for OSManufacturer) are mandatory and shouldn't be null.  
 
 ::: moniker range="sc-om-2019"
 
@@ -208,17 +208,17 @@ To improve the performance, X-Plat Filter variable is introduced in override. Yo
 Also, to avoid quick filling of disk space, SCX logging is decreased from *Information* to *Warning*.
 
 
-Here is an example of how you may configure an override by using the **Filter** variable:
+Here's an example of how you may configure an override by using the **Filter** variable:
 
 If you wish to get only the data for *loop200*, then use the following query in the Filter variable:
 
 select * from SCX_DiskDrive where DeviceID=loop200
 
-![override controlled parameters example1](media/manage-security-administer-crossplat-agent/override-example-1.png)
+![Screenshot showing the override controlled parameters example1.](media/manage-security-administer-crossplat-agent/override-example-1.png)
 
 Now, you will see data only for the disk ‘loop200’ in the performance view.
 
-![override controlled parameters example](media/manage-security-administer-crossplat-agent/override-example-2.png)
+![Screenshot showing the override controlled parameters example2.](media/manage-security-administer-crossplat-agent/override-example-2.png)
 
 ::: moniker-end
 
@@ -255,6 +255,6 @@ Use the following steps:
 
 ## Next steps
 
-- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](manage-install-crossplat-agent-cmdline.md)
+- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](manage-install-crossplat-agent-cmdline.md).
 
-- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](manage-upgrade-uninstall-crossplat-agent.md)
+- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](manage-upgrade-uninstall-crossplat-agent.md).

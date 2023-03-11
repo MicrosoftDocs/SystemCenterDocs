@@ -3,7 +3,7 @@ title: Operations Guide for System Center Operations Manager
 description: This article provides an overview of the System Center Operations Manager Operations Guide.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 06/22/2018
 ms.custom: na
 ms.prod: system-center
@@ -22,11 +22,11 @@ ms.assetid: c2b63b0a-4c6e-40b3-a75e-2ca514df3bc4
 
 Operations Manager, a component of System Center, enables you to monitor services, devices, and operations for many computers in a single console. Operators can gain rapid insight into the state of the IT environment and the IT services running across different systems and workloads by receiving alerts and using numerous views providing insight into health, security, performance, or configuration issues affecting the health of the service.  
 
-The Operations Guide is a comprehensive resource that can be used to understand and use Operations Manager. The Operations Guide covers administrative, monitoring, reporting, and operating tasks typically performed by an administrator or operator. It follows the Operations Manager Deployment Guide in order of use during an Operations Manager implementation project, but does not assume that the administrator or operator participated in the installation of the Operations Manager infrastructure.  
+The Operations Guide is a comprehensive resource that can be used to understand and use Operations Manager. The Operations Guide covers administrative, monitoring, reporting, and operating tasks typically performed by an administrator or operator. It follows the Operations Manager Deployment Guide in order of use during an Operations Manager implementation project, but doesn't assume that the administrator or operator participated in the installation of the Operations Manager infrastructure.  
 
 **Before you read the Operations Guide:**  
 
-If you are new to Operations Manager, you should read [Key Concepts](key-concepts.md) to understand what a management group is and how Operations Manager works.  
+If you're new to Operations Manager, you should read [Key Concepts](key-concepts.md) to understand what a management group is and how Operations Manager works.  
 
 Read [What's New in Operations Manager](./whats-new-in-om.md) to review the differences between Operations Manager 2016 and later versions.
 
@@ -34,7 +34,7 @@ Read [What's New in Operations Manager](./whats-new-in-om.md) to review the diff
 
 -   [Quick Reference to Operations Manager Tasks](manage-quick-reference.md)  
 
-    This topic lists common tasks, tells you where to start each task, and includes links to relevant information.  
+    This section lists the common tasks, tells you where to start each task, and includes links to relevant information.  
 
 -   [Managing discovery and agents](manage-deploy-windows-agent-console.md)
 
@@ -42,7 +42,7 @@ Read [What's New in Operations Manager](./whats-new-in-om.md) to review the diff
 
 -   [Using management packs](manage-overview-management-pack.md)
 
-    This section explains the management packs and monitoring that are in place when a management group is first created.  This section also explains how to approach tuning workflows in management packs and assess which management packs have updates available.  
+    This section explains the management packs and monitoring that are in place when a management group is first created. It also explains how to approach tuning workflows in management packs and assess which management packs have updates available.  
 
 -   [Using the Operations Manager consoles](manage-consoles-comparison.md)
 
@@ -72,4 +72,4 @@ Read [What's New in Operations Manager](./whats-new-in-om.md) to review the diff
 
     This section explains how to manage grooming configuration for the databases, moving the database, configuring communication with SQL Server, understand how to monitor the health of your management group, and other maintenance tasks to help manage the health and performance of the roles supporting your management group.   
 
-Other topics in this guide include guidance and recommendations for configuring monitoring of network devices, web-based applications, integration with SharePoint Server or create custom Visio dashboards to visualize monitoring data, and much more to help you make the most effective use of Operations Manager in support of your IT operations.
+Other sections in this guide include guidance and recommendations for configuring monitoring of network devices, web-based applications, integration with SharePoint Server or create custom Visio dashboards to visualize monitoring data, and much more to help you make the most effective use of Operations Manager in support of your IT operations.

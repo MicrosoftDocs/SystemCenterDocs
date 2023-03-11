@@ -4,7 +4,7 @@ title: Operations Associated with User Role Profiles
 description: This article describe the user roles in Operations Manager and they what actions they can perform in the management group.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 03/21/2022
 ms.custom: na
 ms.prod: system-center
@@ -20,7 +20,7 @@ ms.topic: article
 
 ::: moniker-end
 
-This topic provides a list of the operations in System Center Operations Manager that are associated with each profile.  
+This article provides a list of the operations in System Center Operations Manager that are associated with each profile.  
 
 ::: moniker range="sc-om-2022"
 
@@ -222,7 +222,7 @@ The Application Monitoring Operator profile includes a set of privileges designe
 
 ## Author  
 
-The Author profile includes a set of privileges designed for authoring monitoring configurations. A role based on the Authors profile grants members the ability to create, edit, and delete monitoring configuration (tasks, rules, monitors, and views) within the configured scope. For convenience, Authors can also be configured to have Advanced Operator privileges scoped by group. The Author profile contains all of the privileges found in the Advanced Operator, Operator, and Read-Only Operator profiles in addition to those listed below.  
+The Author profile includes a set of privileges designed for authoring monitoring configurations. A role based on the Author's profile grants members the ability to create, edit, and delete monitoring configuration (tasks, rules, monitors, and views) within the configured scope. For convenience, Authors can also be configured to have Advanced Operator privileges scoped by group. The Author profile contains all of the privileges found in the Advanced Operator, Operator, and Read-Only Operator profiles in addition to those listed below.  
 
 -   Create management packs  
 
@@ -247,7 +247,7 @@ The Author profile includes a set of privileges designed for authoring monitorin
 
 ## Administrator  
 
-The Administrator profile includes full privileges to Operations Manager. No scoping of the Administrator profile is supported. The Administrator profile contains all of the privileges found in the Author, Advanced Operator, Operator, and Read-Only Operator profiles in addition to those listed below.  
+The Administrator profile includes full privileges to Operations Manager. No scoping of the Administrator profile is supported. The Administrator profile contains all the privileges found in the Author, Advanced Operator, Operator, and Read-Only Operator profiles in addition to those listed below.  
 
 -   Create a resolution state  
 
@@ -408,4 +408,4 @@ The Delegated administrator profile includes all the read privileges in Operatio
 
 ## Next steps
 
-- Review [Implementing User Roles](~/scom/manage-security-overview.md) to understand the profiles defined in Operations Manager to manage authorization and security, and configure user roles to perform administration and access to operational data in the management group.
+- To understand the profiles defined in Operations Manager to manage authorization and security, and configure user roles to perform administration and access to operational data in the management group, review [Implementing User Roles](~/scom/manage-security-overview.md).
