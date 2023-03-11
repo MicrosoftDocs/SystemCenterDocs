@@ -4,7 +4,7 @@ title: Authentication and Data Encryption in Operations Manager
 description: This article provides design guidance explaining how secure authentication occurs with Operations Manager and options available.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center

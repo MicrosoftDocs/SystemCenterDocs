@@ -4,7 +4,7 @@ title: Planning a Management Group Design
 description: This article provides an overview of the design decisions for consideration when planning a management group configuration for your Operations Manager 2016 deployment.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 01/09/2023
 ms.prod: system-center
 ms.technology: operations-manager
