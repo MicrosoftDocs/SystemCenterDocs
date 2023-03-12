@@ -4,7 +4,7 @@ description: Include file that shows the list of release builds for System Cente
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 11/24/2022
+ms.date: 03/12/2023
 ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
@@ -39,6 +39,7 @@ The following tables list the release history for Operations Manager 2022.
 |10.22.1019.0||March 2022 |1.6.9-0 |General Availability |
 |10.22.1024.0||May 2022 |1.6.9-2 |OMI Vulnerability Fix	|
 |10.22.1032.0||August 2022 |1.6.10-2 |OMI Vulnerability Fix	|
-|10.22.1039.0|[5020318](https://support.microsoft.com/kb/5020318)|December 2022|1.6.11-0|Update Rollup 1|
+|10.22.1039.0|[5020318](https://support.microsoft.com/kb/5020318)|December 2022 |1.6.11-0 |Update Rollup 1 |
+|10.22.1044.0|[5020318](https://support.microsoft.com/kb/5020318)|March 2023 |1.7.0.0 |Update Rollup 1 - OpenSSL 3.0 |
 
  \* *The other components include: Databases, Operations Consoles, Reporting, and Web Consoles.*
