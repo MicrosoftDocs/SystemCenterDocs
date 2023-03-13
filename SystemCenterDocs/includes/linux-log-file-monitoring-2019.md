@@ -27,7 +27,7 @@ Log file monitoring requires the following steps. The detailed information is pr
 Install  **Microsoft.Linux.Log.Monitoring**  management pack to enable Linux log file monitoring.
 
 > [!NOTE]
-> If you've the OMS agent configured and you try to uninstall UNIX and LINUX agent from the console, then OMS component won't be uninstalled from the agent.
+> If you have the OMS agent configured and you try to uninstall UNIX and LINUX agent from the console, then OMS component won't be uninstalled from the agent.
 
 
 ## Configure Linux log file monitoring
@@ -41,7 +41,7 @@ To configure Linux log file monitoring, do the following:
    Use the following commands:
 
    ```
-   wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard\_agent.sh
+   wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh
    sh onboard_agent.sh
 
    ```
@@ -100,10 +100,13 @@ To configure Linux log file monitoring, do the following:
 
 ## Generate new client certificate for Fluentd
 
-1. /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
+1. Generate the certificate and key to a folder: 
+   ```
+   /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
+   ```
 
    > [!NOTE]
-   > New certificate must be signed by the Management Server. To do this, copy to management server, sign the certificate using **scxcertconfig -sign**, and copy it back to the linux agent
+   > New certificate must be signed by the Management Server. To do this, copy to management server, sign the certificate using `scxcertconfig -sign`, and copy it back to the linux agent
 
 2. Rename the certificates on the Linux side:
 
@@ -326,7 +329,10 @@ The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/s
 
 ## Restart omsagent
 
+You can run the following command to restart the omsagent:
+```
 /opt/microsoft/omsagent/bin/service_control restart
+```
 
 > [!NOTE]
 > On the Management Server running the OMED service, ensure the firewall on port 8886 is open and that the intermediate certificate authorities cert store only contains intermediate certificate authorities.
