@@ -41,7 +41,7 @@ To configure Linux log file monitoring, do the following:
    Use the following commands:
 
    ```
-   wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard\_agent.sh
+   wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh
    sh onboard_agent.sh
 
    ```
