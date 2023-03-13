@@ -4,7 +4,7 @@ title: Change databases for gMSA in System Center Operations Manager
 description: This article provides information on how to create users, assign roles, and membership to the group Managed Service Accounts (gMSA), a new feature supported in Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 12/11/2020
 ms.prod: system-center
 monikerRange: '>=sc-om-2019'
@@ -78,4 +78,5 @@ Follow steps 1 to 5 from the previous procedure. Assign the roles by using the i
 |  | Report Server Temp Database | db\_owner, RSExecRole |
 
 ## Next steps
-  [Service-level changes](service-level-changes.md)
+
+[Service-level changes](service-level-changes.md)
