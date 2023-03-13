@@ -61,7 +61,7 @@ Ensure the following prerequisites:
 4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 11, Windows Server 2016, or later as the guest operating system.
 ::: moniker-end
 
-## Procedure - enable the enhanced console session
+## Enable the enhanced console session
 
 **Use the following steps**:
 

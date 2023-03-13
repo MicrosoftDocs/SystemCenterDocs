@@ -63,8 +63,8 @@ Here's what you need to do to set up SDN components in VMM with PowerShell.
 5. [Set up Active Directory security groups](sdn-controller.md#set-up-active-directory-groups). One for network controller management, and another for network controller clients. Each group will need at least one user account in it.
 6. [Set up a VMM library share](sdn-controller.md#create-a-library-share-for-logging). You can have an optional library file share for keeping diagnostics logs. This library share will be accessed by the network controller to store diagnostics information throughout its lifetime.
 7. [Set up a dedicated VMM host group](sdn-controller.md#set-up-host-groups) for all SDN Hyper-V hosts. 
-> [!NOTE]
-> Hosts must be running the latest version of applicable Windows Server version and have the Hyper-V role enabled.
+    > [!NOTE]
+    > Hosts must be running the latest version of applicable Windows Server version and have the Hyper-V role enabled.
 8. [Set up a certificate](sdn-controller.md#set-up-the-security-certificates). You need an SSL certificate for HTTPS communications between VMM and the network controller.
 9. [Download](https://github.com/manishmsft/SDN/tree/master/VMM/VMM%20SDN%20Express) and run the SDN scripts. There are three scripts:
 

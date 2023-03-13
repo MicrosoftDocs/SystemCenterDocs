@@ -50,8 +50,8 @@ By default, when you create a VM, an ISO attached as a virtual DVD drive is copi
 1. Specify an Active Directory domain account as the VMM service account on the VMM server.
 2. Grant the VMM service account read access on the VMM library share that stores the ISO image files. Grant the Hyper-V host machine account read access for the shared ISO location.
 3. Configure constrained delegation for each Hyper-V host. This ensures that each host presents delegated credentials for CIFS/SMB to the VMM server on which the library stores the ISO. To do this, in Active Directory, locate the host machine account and open the account properties. In the **Delegation** tab, select **Select this computer for delegation to specified services only** > **Use any authentication protocol** > **Add**. Add the VMM library server that contains the ISO you want to share. In **Add Services**, add **cifs**
-4. Now configure a virtual machine to share an ISO image.<br/>
-     a. In the VM properties > **Hardware Configuration**, in **Capture** mode > select **Existing image file** and browse to select the ISO image file in the library.<br/>
+4. Now configure a virtual machine to share an ISO image.<br>
+     a. In the VM properties > **Hardware Configuration**, in **Capture** mode > select **Existing image file** and browse to select the ISO image file in the library.<br>
      b. Select **Share image file instead of copying it**.
 
 

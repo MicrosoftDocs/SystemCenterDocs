@@ -9,7 +9,7 @@ ms.date: 08/25/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ---
 
 # Manage the VMM library
