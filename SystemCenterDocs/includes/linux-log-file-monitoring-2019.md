@@ -100,7 +100,7 @@ To configure Linux log file monitoring, do the following:
 
 ## Generate new client certificate for Fluentd
 
-1. Generate the certificate and key: 
+1. Generate the certificate and key to a folder: 
    ```
    /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
    ```
@@ -329,6 +329,7 @@ The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/s
 
 ## Restart omsagent
 
+You can run the following command to restart the omsagent:
 ```
 /opt/microsoft/omsagent/bin/service_control restart
 ```
