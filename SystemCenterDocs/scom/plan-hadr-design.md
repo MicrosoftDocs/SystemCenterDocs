@@ -4,7 +4,7 @@ title: Designing for High Availability and Disaster Recovery
 description: This article provides high availability and disaster recovery design guidance for an Operations Manager management group.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 01/19/2023
 ms.custom: engagement-fy23
 ms.prod: system-center
