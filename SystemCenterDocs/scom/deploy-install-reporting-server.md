@@ -57,7 +57,7 @@ SQL Server Reporting Services installed on this instance of SQL Server can be us
 Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation](/sql/database-engine/install-windows/install-sql-server).
 
 > [!NOTE]
-> Before you continue with this procedure, ensure that the account you plan to use for the Data Warehouse Write account has SQL Server logon rights and is an Administrator on the computers hosting both the operational database and the Reporting data warehouse database. Otherwise, the Setup fails, and all changes are rolled back, which might leave SQL Server Reporting Services in an inoperable state.
+> Before you continue with this procedure, ensure that the account that you are using to run the installer for the Operations Manager Reporting Role has [SA (sysadmin)](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions) on both the Operational Database (_OperationsManager_) and Reporting (_ReportServer_) SQL Instances. This will allow the installer to deploy all logins and permissions as required. The SA role can be safely removed from the account used for the installer after installation. Otherwise, the Setup fails, and all changes are rolled back, which may leave SQL Server Reporting Services in an inoperable state. If this happens you can attempt run a tool to reset SSRS to a working condition. The programs is: **ResetSRS.exe** which is an executable inside of the support tools folder on your Operations Manager installation media.
 
 ## Install Reporting Services on NTLM hardened enterprises
 
@@ -68,9 +68,9 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
 
 ### Prerequisites to disable NTLM
 
-- If SSRS and SQL both installed on remote servers, ensure SDK, SSRS, and SQL SPNs are set.
-- If SSRS is installed on remote server and SQL and Management Server are installed on the same server, SDK and SSRS SPNs are required.
-- If SQL installed on remote server and SSRS and Management Server are installed on the same server, ensure that SQL, SSRS, and SDK SPNs are set.
+- If SSRS and SQL both installed on remote servers, ensure [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns), [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server), and [SQL](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections) SPNs are set.
+- If SSRS is installed on remote server and SQL and Management Server are installed on the same server, [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns) and [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server) SPNs are required.
+- If SQL installed on remote server and SSRS and Management Server are installed on the same server, ensure that [SQL](/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections), [SSRS](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server), and [SDK](/troubleshoot/system-center/scom/http-500-error-connecting-to-web-console#register-the-sdk-spns) SPNs are set.
 
 #### To verify that Reporting Services is configured correctly
 
@@ -90,7 +90,7 @@ In Operations Manager 2016 and later, if NTLM is disabled as an organization pol
 
 8.  In the **Name** column, find the **SQL Server Agent** service and verify that its status reads **Started** and that its **Startup Type** is **Automatic**.
 
-9. Verify that the Report Server website is functioning and available by browsing to `http://\<servername>/reportserver/_<$instance>`. You should see a page with the `<servername>/ReportServer/_<$instance>` and the text, **Microsoft SQL Server Reporting Services Version** ##.#.####.## where the # is the version number of your SQL Server installation.
+9. Verify that the Report Server website is functioning and available by browsing to `http://<servername>/reportserver/_<$instance>`. You should see a page with the `<servername>/ReportServer/_<$instance>` and the text, **Microsoft SQL Server Reporting Services Version** ##.#.####.## where the # is the version number of your SQL Server installation.
 
 10. Verify that the Report Manager website is configured correctly by opening **Internet Explorer** and browsing to `http://<servername>/reports/_<$instance>`.
 

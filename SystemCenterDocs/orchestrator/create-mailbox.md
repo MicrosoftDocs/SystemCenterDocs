@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 9edd8363-704d-41dc-8cc6-0c168c27b901
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Mailbox
@@ -50,14 +50,14 @@ The following tables list the required properties, optional properties, and publ
 | Archive Database   | The Exchange database (GUID or database name) that contains the archive associated with the new mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Archive Domain   | The cloud-based services domain on which the archive for this mailbox exists. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Database   | The Exchange database (GUID or database name) that contains the new mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
-| Discovery   | Identifies the new mailbox as a Discovery mailbox. Discovery mailboxes are created as target mailboxes for Discovery searches. After being created or enabled, a Discovery mailbox cannot be repurposed or converted to another type of mailbox. Default is True, when selected.   | True, False   |
+| Discovery   | Identifies the new mailbox as a Discovery mailbox. Discovery mailboxes are created as target mailboxes for Discovery searches. After being created or enabled, a Discovery mailbox can't be repurposed or converted to another type of mailbox. Default is True, when selected.   | True, False   |
 | Display Name   | The display name for the new user that is created with this mailbox.   | String   |
 | Domain Controller   | The fully qualified domain name (FQDN) of the domain controller that writes this configuration change to Active Directory. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Equipment   | Identifies the new mailbox as equipment if this mailbox is a resource mailbox.   | True, False   |
-| Evict Live ID (Live@edu only)   | Specifies the activity to remove an unmanaged Windows Live ID from the cloud-based domain. An unmanaged Windows Live ID is an ID that was created in the domain before the domain was enrolled in the cloud-based service. The Evict Live ID property applies to cloud-based service. It is not available for on-premises deployments. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
+| Evict Live ID (Live@edu only)   | Specifies the activity to remove an unmanaged Windows Live ID from the cloud-based domain. An unmanaged Windows Live ID is an ID that was created in the domain before the domain was enrolled in the cloud-based service. The Evict Live ID property applies to cloud-based service. It isn't available for on-premises deployments. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
 | Federated Identity   | Associates an on-premises Active Directory user with a Microsoft Office user. This property applies to cloud-based service. It isn't available for on-premises deployments.   | String   |
 | First Name   | The first name of the new Active Directory user.   | String   |
-| Immutable ID   | Specifies a unique and immutable identifier in the form of an SMTP address for an Exchange mailbox which is used for federated delegation when requesting Security Assertion Markup Language (SAML) tokens.   | String   |
+| Immutable ID   | Specifies a unique and immutable identifier in the form of an SMTP address for an Exchange mailbox, which is used for federated delegation when requesting Security Assertion Markup Language (SAML) tokens.   | String   |
 | Import Live ID (Live@edu only)   | Imports an unmanaged Windows Live ID into the cloud-based domain. An unmanaged Windows Live ID was created in the domain before the domain was enrolled in the cloud-based service. This property applies to cloud-based service. It isn't available for on-premises deployments. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
 | Initials   | The initials of the new Active Directory user.   | String   |
 | Last Name   | The last name of the new Active Directory user.   | String   |
@@ -65,14 +65,14 @@ The following tables list the required properties, optional properties, and publ
 | Linked Domain Password   | Specifies password used to access the domain controller specified by the Linked Domain Controller property. This property is optional, even if when enabling a linked mailbox.   | String   |
 | Linked Domain User Name   | Specifies user name used to access the domain controller specified by the Linked Domain Controller property. This property is optional, even if when enabling a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Linked Master Account   | The master account in the forest where the user account resides. The master account is the account to link the mailbox to. The master account grants access to the mailbox. This property is required only for creating a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br> This property can be the following value types:<br>Alias <br>Canonical DN <br>Display Name <br>Distinguished Name (DN) <br>Domain\\Account <br>GUID <br>Immutable ID <br>Legacy Exchange DN <br>SMTP Address <br>User Principal Name <br> | String   |
-| Mailbox Plan   | The mailbox plan to associate with this mailbox. A mailbox plan specifies the permissions and features that are available to a mailbox user. The mailbox plan name must be included in the service plan of the organization in which this mailbox resides.<br>This property is available for multi-tenant deployments. This property applies to objects in the cloud-based service. It is not available for on-premises deployments.   | String   |
+| Mailbox Plan   | The mailbox plan to associate with this mailbox. A mailbox plan specifies the permissions and features that are available to a mailbox user. The mailbox plan name must be included in the service plan of the organization in which this mailbox resides.<br>This property is available for multi-tenant deployments. This property applies to objects in the cloud-based service. It isn't available for on-premises deployments.   | String   |
 | Managed Folder Mailbox Policy   | The name or identity of the managed folder mailbox policy to apply to the new mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Managed Folder Mailbox Policy Allowed | Indicates whether to bypass the warning that messaging records management (MRM) features aren't supported for email clients using versions of Microsoft Outlook earlier than Office Outlook 2007. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 | Microsoft Online Services ID   | ID that allows access to Microsoft Online Services. <br><br><strong>Note </strong><br> This property is available only in the Microsoft 365 environment. <br><br>   | String   |
 | Moderated By   | A comma-separated list of users who are responsible for moderating the messages sent to this mailbox.   | String   |
 | Moderation Enabled   | Indicates whether to enable moderation for the mailbox. Default is True, when selected.   | True, False   |
 | Office   | The Microsoft Office attribute for this mailbox   | String   |
-| Organization   | The organization in which this Create Mailbox action will be performed. This property is used for multi-tenant deployments. It is not available for on-premises deployments.   | String   |
+| Organization   | The organization in which this Create Mailbox action will be performed. This property is used for multi-tenant deployments. It isn't available for on-premises deployments.   | String   |
 | Organizational Unit   | The container where the user is created.   | String   |
 | Override Recipient Quotas   | Specifies that the recipient quotas for this mailbox can be overridden. Mailboxes that are part of a tenant organization will use the quotas defined in the tenant organization's service plan. Use this property to allow the command to skip the tenant-level recipient quotas check. This property is used for multi-tenant deployments. It isn't available for on-premises deployments. Default is True, when selected.   | True, False   |
 | Password   | The initial password for the newly created user. Not required when creating a linked mailbox, resource mailbox, or shared mailbox because the user account for these types of mailboxes is disabled.   | String   |
@@ -80,19 +80,19 @@ The following tables list the required properties, optional properties, and publ
 | Phone   | The user's telephone number for the new mailbox.   | String   |
 | Primary SMTP Address   | The primary SMTP address of the mailbox.   | String   |
 | Query Base DN Restriction Enabled   | Specifies whether to restrict a user's ability to view or search for other mailboxes in their organization. This property is used for multi-tenant deployments. It isn't available for on-premises deployments. Default is True, when selected.   | True, False   |
-| Remote Archive   | Specifies whether to disconnect the remote archive for this mailbox. A remote archive exists in a cloud-based service. This property cannot be used in conjunction with the Archive property. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
-| Remote Power Shell Enabled   | Specifies whether the user can use Remote PowerShell. Remote PowerShell is required in order to open the Exchange Management Shell or the Exchange Management Console on Mailbox, Hub Transport, Unified Messaging, and Client Access servers. Default is True, when selected.   | True, False   |
+| Remote Archive   | Specifies whether to disconnect the remote archive for this mailbox. A remote archive exists in a cloud-based service. This property can't be used with the Archive property. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
+| Remote PowerShell Enabled   | Specifies whether the user can use Remote PowerShell. Remote PowerShell is required in order to open the Exchange Management Shell or the Exchange Management Console on Mailbox, Hub Transport, Unified Messaging, and Client Access servers. Default is True, when selected.   | True, False   |
 | Reset Password On Next Logon   | Specifies whether the user must reset the password upon first logon to the new mailbox. Default is True, when selected.   | True, False   |
 | Resource Capacity   | Specifies capacity for a new resource mailbox. For example, for a room resource mailbox, specify the maximum occupancy of the room.   | Int32   |
 | Retention Policy   | The name or identity of a retention policy to be applied to the new mailbox. Retention policies consist of tags that are applied to mailbox folders and mail items to determine the period of time that the items should be retained. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
-| Role Assignment Policy   | The name or identity of the management role assignment policy to apply to the new mailbox. When this property is not configured, the Default Role Assignment Policy is used.   | String   |
+| Role Assignment Policy   | The name or identity of the management role assignment policy to apply to the new mailbox. When this property isn't configured, the Default Role Assignment Policy is used.   | String   |
 | Room   | Specifies a new resource mailbox as a room. Default is True, when selected.   | True, False   |
 | SAM Account Name   | The logon name used to support clients and servers running older versions of the operating system, such as Microsoft Windows NT 4.0, Windows 95, Windows 98, and LAN Manager. This attribute must be less than 20 characters in length in order to support older clients. If not specified, Active Directory automatically creates a SAMAccountName attribute based on the UPN. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Send Modification Notifications   | Specifies whether status notifications are to be sent to users when they send a message to the moderated mailbox. Default is blank.   | Always<br>Internal<br>Never |
-| Shared   | Specifies the new mailbox as a shared mailbox. A shared mailbox is a mailbox to which multiple users can log on. A shared mailbox is not specifically associated with any of the users that can log on. It's associated with a disabled user account. Default is True, when selected.   | True, False   |
+| Shared   | Specifies the new mailbox as a shared mailbox. A shared mailbox is a mailbox to which multiple users can sign in. A shared mailbox isn't specifically associated with any of the users that can sign in. It's associated with a disabled user account. Default is True, when selected.   | True, False   |
 | Sharing Policy   | The name or identity of the sharing policy applied to the new mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Throttling Policy   | The name or identity of the throttling policy to be applied to the new mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
-| Use Existing Live Id (Live@edu only)  | Specifies whether to use the Windows Live ID that already exists in the cloud-based domain. The specified Windows Live ID cannot have a mailbox associated with it. This property applies to cloud-based service. It is not available for on-premises deployments. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
+| Use Existing Live Id (Live@edu only)  | Specifies whether to use the Windows Live ID that already exists in the cloud-based domain. The specified Windows Live ID can't have a mailbox associated with it. This property applies to cloud-based service. It isn't available for on-premises deployments. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
 | Windows Live ID (Live@edu only)   | The Windows Live ID of the new mailbox. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | String   |
 
 ## Published data for the Create Mailbox activity
@@ -100,7 +100,7 @@ The following tables list the required properties, optional properties, and publ
 | **Element**   | **Description**   | **Value Type** |
 |:---|:---|:---|
 | Accept Messages Only From   | Mailbox users and mail-enabled contacts that can send email messages to this distribution group.   | String   |
-| Accept Messages Only From DL Members   | Distribution list that are allowed to send email messages to this mailbox.   | String   |
+| Accept Messages Only From DL Members   | Distribution list that is allowed to send email messages to this mailbox.   | String   |
 | Address Book Policy   | Address book policy for the mailbox.   | String   |
 | Address List Membership   | Address list IDs.   | String   |
 | Alias   | Mail nickname of the user.   | String   |
@@ -115,11 +115,11 @@ The following tables list the required properties, optional properties, and publ
 | Archive State   | Indicates the state of the mailbox archive. This property can be one of the following values:<br>HostedPending <br>HostedProvisioned <br>Local <br>None <br>OnPremise   | String   |
 | Archive Status   | Indicates archive status (Active or None).   | String   |
 | Archive Warning Quota   | Mailbox size at which a warning message is sent.   | String   |
-| Audit Admin   | List of admin operations which are logged. This property can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
-| Audit Delegate   | List of delegate options which are logged. This property can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
+| Audit Admin   | List of admin operations that are logged. This property can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
+| Audit Delegate   | List of delegate options that are logged. This property can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
 | Audit Enabled   | Indicates whether audit logging is enabled for the mailbox.   | String   |
 | Audit Log Age Limit   | Amount of time audit log entries are retained in the mailbox.   | String   |
-| Audit Owner   | List of owner operations which are logged. This property can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
+| Audit Owner   | List of owner operations that are logged. This property can be one of the following values: <br>Copy<br>Create<br>FolderBind<br>HardDelete<br>MessageBind<br>Move<br>MoveToDeletedItems<br>None<br>SendAs<br>SendOnBehalf<br>SoftDelete<br>Update   | String   |
 | Bypass Moderation From Senders Or Members   | List of senders for whom moderation is to be bypassed.   | String   |
 | Calendar Repair Disabled   | Indicates whether calendar items in this mailbox are to be repaired by the Calendar Repair Assistant.   | String   |
 | Calendar Version Store Disabled   | Indicates whether changes to calendar items are logged.   | String   |
@@ -155,7 +155,7 @@ The following tables list the required properties, optional properties, and publ
 | Exchange Server Host   | The connected Exchange server host machine.   | String   |
 | Exchange Server Port   | The connected Exchange server port.   | String   |
 | Exchange User Account Control   | A mask that is used to retrieve the user account control flags associated with this mailbox. This property can be one of the following values:<br>AccountDisabled <br>CannotChangePassword <br>DoNotExpirePassword <br>DoNotRequirePreauthentication <br>EncryptedTextPasswordAllowed <br>HomeDirectoryRequired <br>InterDomainTrustAccount <br>Lockout <br>MnsLogonAccount <br>None <br>NormalAccount <br>NotDelegated <br>PasswordExpired <br>PasswordNotRequired <br>Script <br>ServerTrustAccount <br>SmartCardRequired <br>TemporaryDuplicateAccount <br>TrustedForDelegation <br>TrustedToAuthenticateForDelegation <br>UseDesKeyOnly <br>WorkstationTrustAccount   | String   |
-| Exchange User Name   | Username that is used to log on to the Exchange server.   | String   |
+| Exchange User Name   | Username that is used to sign in to the Exchange server.   | String   |
 | Exchange Version   | Version of Microsoft Exchange that this object is associated with.   | String   |
 | ExtensionCustomAttribute1   | Extension custom attribute 1.   | String   |
 | ExtensionCustomAttribute2   | Extension custom attribute 2.   | String   |

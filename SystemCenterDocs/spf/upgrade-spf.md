@@ -9,7 +9,7 @@ ms.date: 02/21/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
-ms.custom: engagement-fy23
+ms.custom: UpdateFrequency2, engagement-fy23
 ---
 
 # Upgrade System Center Service Provider Foundation

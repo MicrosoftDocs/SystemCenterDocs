@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: cb690bb4-e07e-4a9f-9f19-2886c9a8fec4
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ---
 
 # Enable Remote Mailbox (Hybrid)
@@ -45,7 +45,7 @@ The following tables list the required properties, optional properties, and publ
 | Equipment              | Specifies the new mailbox as equipment if this mailbox is a resource mailbox.<br>Default is True, when selected.                                                                                                                                                                        | True, False      |
 | Primary SMTP Address   | Primary SMTP address for the mailbox.                                                                                                                                                                                                                                                   | String           |
 | Room                   | Specifies the new mailbox as a room, if this mailbox is a resource mailbox. Default is True, when selected.                                                                                                                                                                             | True, False      |
-| Remote Routing Address | Specifies the SMTP address of the mailbox in the service that this user is associated with.<br>If you have configured mail flow between the on-premises organization and the service, you do not need to specify this property. The remote routing address is calculated automatically. | String           |
+| Remote Routing Address | Specifies the SMTP address of the mailbox in the service that this user is associated with.<br>If you've configured mail flow between the on-premises organization and the service, you don't need to specify this property. The remote routing address is calculated automatically. | String           |
 
 ## Published data for Enable Remote Mailbox (Hybrid)
 
@@ -63,7 +63,7 @@ The following tables list the required properties, optional properties, and publ
 | Archive Quota   | The archive mailbox Quota parameter.   | String   |
 | Archive Status   | The archive status (Active or None).   | String   |
 | Archive Warning Quota   | Mailbox size at which a warning message is sent.   | String   |
-| Bypass Moderation From Senders Or Members   | Senders or list members whose messages are not subject to approval.   | String   |
+| Bypass Moderation From Senders Or Members   | Senders or list members whose messages aren't subject to approval.   | String   |
 | Calendar Version Store Disabled   | Indicates whether changes to calendar items are logged.   | String   |
 | Custom Attribute 1   | Custom attribute 1.   | String   |
 | Custom Attribute 10   | Custom attribute 10.   | String   |
@@ -88,13 +88,13 @@ The following tables list the required properties, optional properties, and publ
 | Email Address Policy Enabled   | Indicates whether the use of Address Policies is enabled.   | String   |
 | Email Addresses   | Collection of email addresses for the mailbox.   | String   |
 | End Date For Retention Hold   | End date of the Retention Hold period.   | Datetime   |
-| Exchange Environment   | Indicates the type of Exchange Server environment where this activity will be executed. Default is On-Premises.   | String   |
+| Exchange Environment   | Indicates the type of Exchange Server environment where this activity will be executed. Default is On-premises.   | String   |
 | Exchange GUID   | Unique identifier of the Microsoft Exchange installation.   | String   |
 | Exchange PowerShell Application   | The application name segment of the connection URI.   | String   |
 | Exchange Server Host   | The connected host Exchange Server.   | String   |
 | Exchange Server Port   | The connected Exchange Server port.   | String   |
 | Exchange User Account Control   | Specifies a mask that is used to retrieve the user account control flags associated with this mailbox. This can be one of the following values:<br>AccountDisabled <br>CannotChangePassword <br>DoNotExpirePassword <br>DoNotRequirePreauthentication <br>EncryptedTextPasswordAllowed <br>HomeDirectoryRequired <br>InterDomainTrustAccount <br>Lockout <br>MnsLogonAccount <br>None <br>NormalAccount <br>NotDelegated <br>PasswordExpired <br>PasswordNotRequired <br>Script <br>ServerTrustAccount <br>SmartCardRequired <br>TemporaryDuplicateAccount <br>TrustedForDelegation <br>TrustedToAuthenticateForDelegation <br>UseDesKeyOnly <br>WorkstationTrustAccount | String   |
-| Exchange User Name   | The username used to log on to the Exchange server.   | String   |
+| Exchange User Name   | The username used to sign in to the Exchange server.   | String   |
 | Exchange Version   | Version of the Exchange Server.   | String   |
 | Extension Custom Attribute 1   | Extension Custom Attribute 1.   | String   |
 | Extension Custom Attribute 2   | Extension Custom Attribute 2.   | String   |
@@ -166,7 +166,7 @@ The following tables list the required properties, optional properties, and publ
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |
 | User Principal Name   | Principal name for the mailbox user.   | String   |
 | When Changed   | Date and time when mailbox was changed.   | Datetime   |
-| When Changed UTC   | UTC date and time when mailbox was changed.   | Datetime   |
+| When Changed UTC   | UTC date and time when the mailbox was changed.   | Datetime   |
 | When Created   | Date and time when the mailbox was created.   | Datetime   |
 | When Created UTC   | UTC date and time when the mailbox was created.   | Datetime   |
 | When Mailbox Created   | Date and time when mailbox was created.   | Datetime   |
