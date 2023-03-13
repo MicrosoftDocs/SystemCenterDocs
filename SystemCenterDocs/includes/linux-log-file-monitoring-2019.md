@@ -27,7 +27,7 @@ Log file monitoring requires the following steps. The detailed information is pr
 Install  **Microsoft.Linux.Log.Monitoring**  management pack to enable Linux log file monitoring.
 
 > [!NOTE]
-> If you've the OMS agent configured and you try to uninstall UNIX and LINUX agent from the console, then OMS component won't be uninstalled from the agent.
+> If you have the OMS agent configured and you try to uninstall UNIX and LINUX agent from the console, then OMS component won't be uninstalled from the agent.
 
 
 ## Configure Linux log file monitoring
@@ -100,10 +100,13 @@ To configure Linux log file monitoring, do the following:
 
 ## Generate new client certificate for Fluentd
 
-1. /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
+1. Generate the certificates: 
+   ```
+   /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
+   ```
 
    > [!NOTE]
-   > New certificate must be signed by the Management Server. To do this, copy to management server, sign the certificate using **scxcertconfig -sign**, and copy it back to the linux agent
+   > New certificate must be signed by the Management Server. To do this, copy to management server, sign the certificate using `scxcertconfig -sign`, and copy it back to the linux agent
 
 2. Rename the certificates on the Linux side:
 
@@ -326,7 +329,9 @@ The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/s
 
 ## Restart omsagent
 
+```
 /opt/microsoft/omsagent/bin/service_control restart
+```
 
 > [!NOTE]
 > On the Management Server running the OMED service, ensure the firewall on port 8886 is open and that the intermediate certificate authorities cert store only contains intermediate certificate authorities.
