@@ -61,7 +61,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
 
 6.  Select **OK** to return to the **Discovery Criteria** page and continue with the wizard.  
 
-### To set an unprivileged credential with elevation by using an SSH key  
+### Set an unprivileged credential with elevation by using an SSH key  
 
 1.  On the **Credential Settings**page, select the **Default Credentials** tab, and then select the **SSH key** option.  
 
@@ -91,7 +91,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
 
 4.  Select **OK** to return to the **Discovery Criteria** page and continue with the wizard.  
 
-### To set an unprivileged credential with elevation by using a password  
+### Set an unprivileged credential with elevation by using a password  
 
 1.  On the **Credential Settings** page, select the **Default Credentials** tab, and then select the **Password** option.  
 
@@ -119,7 +119,7 @@ The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard
 
 3.  Select **Next** to continue with the wizard.  
 
-### To set an unprivileged credential with elevation for a monitoring account  
+### Set an unprivileged credential with elevation for a monitoring account  
 
 1.  On the **Account Credentials** page, enter a user name, a password, and the password confirmation.  
 
@@ -139,7 +139,7 @@ The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard
 
 5.  Select **Next** to continue with the wizard.  
 
-### To set an unprivileged credential by using an SSH key with elevation for an agent maintenance account  
+### Set an unprivileged credential by using an SSH key with elevation for an agent maintenance account  
 
 1.  On the **Account Credentials** page, select the **SSH key** option.  
 
@@ -197,7 +197,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
 
 6.  Select **OK** to return to the **Credentials** page and continue with the wizard.  
 
-### To set an unprivileged credential with elevation by using an SSH key  
+### Set an unprivileged credential with elevation by using an SSH key  
 
 1.  On the **Credential Settings** page, select the **SSH key** option.  
 
@@ -227,7 +227,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
 
 4.  Select **OK** to return to the **Credentials** page and continue with the wizard.  
 
-### To set an unprivileged credential with elevation by using a password  
+### Set an unprivileged credential with elevation by using a password  
 
 1.  On the **Credential Settings** page, select the **Password** option.  
 
@@ -259,7 +259,7 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard** on
 
 5.  Select **OK** to return to the **Credentials** page and continue with the wizard.  
 
-### To set an unprivileged credential with elevation by using an SSH key  
+### Set an unprivileged credential with elevation by using an SSH key  
 
 1.  On the **Credential Settings** page, select the **SSH key** option.  
 
@@ -287,7 +287,7 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard** on
 
 4.  Select **OK** to return to the **Credentials** page and continue with the wizard.  
 
-### To set an unprivileged credential with elevation by using a password  
+### Set an unprivileged credential with elevation by using a password  
 
 1.  On the **Credential Settings** page, select the **Password** option.  
 
