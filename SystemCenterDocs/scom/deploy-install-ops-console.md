@@ -63,7 +63,7 @@ You must ensure that the computer that will host the Operations console meets th
 3.  Change the path to where the Operations Manager setup.exe file is located, and run the following command.
 
     ```
-    setup.exe /silent /install /components:OMConsole /EnableErrorReporting:[Never|Queued|Always]/SendCEIPReports:[0|1] /UseMicrosoftUpdate: [0|1] /AcceptEndUserLicenseAgreement:[0|1]
+    setup.exe /silent /install /components:OMConsole /EnableErrorReporting:[Never|Queued|Always] /SendCEIPReports:[0|1] /UseMicrosoftUpdate: [0|1] /AcceptEndUserLicenseAgreement:[0|1]
     ```
 
 ## Next steps
