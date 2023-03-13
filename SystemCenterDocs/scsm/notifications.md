@@ -7,7 +7,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.prod: system-center
 keywords:
-ms.date: 03/09/2023
+ms.date: 03/13/2023
 ms.technology: service-manager
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
 ---
@@ -119,8 +119,6 @@ To create an Azure AD app, do the following:
       
       :::image type="Overview essentials" source="media/notifications/overview-essentials.png" alt-text="screenshot of overview essentials page.":::
 1. On the **Overview** page, under **Manage**, select **Authentication**, and do the following:
-    1. Ensure that the **Platform configurations** is set to **Mobile and desktop applications** with at least *https://login.microsoftonline.com/common/oauth2/nativeclient* as one of the Redirect URIs.
-         :::image type="Authentication" source="media/notifications/authentication-inline.png" alt-text="screenshot of authentication page." lightbox="media/notifications/authentication-expanded.png":::
     1. Under **Advanced settings**, ensure **Allow public client flows** is set to **Yes**.
          :::image type="Advanced settings" source="media/notifications/advanced-settings.png" alt-text="screenshot of advanced settings page.":::
 1. Select **Save**.
