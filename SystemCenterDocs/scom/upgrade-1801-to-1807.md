@@ -4,7 +4,7 @@ title: How to upgrade to Operations Manager version 1807
 description: This article describes how to perform an upgrade from System Center Operations Manager version 1801 to 1807.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 08/12/2019
 ms.custom: na
 ms.prod: system-center
@@ -42,7 +42,7 @@ This update is available from Microsoft Update in the following languages:
 - Swedish (SWE)
 - Turkish (TUR)
 
-Some components are multilanguage, and the updates for these components are not localized.
+Some components are multilanguage, and the updates for these components aren't localized.
 
 You must run this update as an administrator on the systems hosting the Operations Manager components and have System Administrator rights on the SQL Server instance hosting the Operations Manager databases and Reporting server role.
 
@@ -82,7 +82,7 @@ To obtain and install an update package from Microsoft Update, follow these step
 
 1.	Select **Start**, and then select **Control Panel**.
 
-2.	In Control Panel, double-click **Windows Update**.
+2.	In the Control Panel, double-click **Windows Update**.
 
 3.	In the Windows Update window, select **Check Online for updates from Microsoft Update**.
 
@@ -118,9 +118,9 @@ To download the update rollup package and extract the files that are contained i
 1. Download the update packages that Microsoft Update provides for each computer. Microsoft Update provides the appropriate updates according to the components that are installed on each computer. Or download from the Microsoft Update Catalog.
 Apply the appropriate MSP files on each computer.
 
-    >[!NOTE]
-    >Windows Installer patch (.MSP file) files are included in the update package. Apply all patch packages that relate to a specific computer. For example, if the Web console and Operations console role is installed on a management server, apply the .MSP files on the management server. Apply one patch package to a server for each specific feature that is installed on the server.
-    >
+   >[!NOTE]
+   > Windows Installer patch (.MSP file) files are included in the update package. Apply all patch packages that relate to a specific computer. For example, if the Web console and Operations console role is installed on a management server, apply the .MSP files on the management server. Apply one patch package to a server for each specific feature that's installed on the server.
+   >
 
 2. Execute the following SQL database SQL scripts located in the following location: `%SystemDrive%\Program Files\Microsoft System Center\Operations Manager\Server\SQL Script for Update Rollups`
 

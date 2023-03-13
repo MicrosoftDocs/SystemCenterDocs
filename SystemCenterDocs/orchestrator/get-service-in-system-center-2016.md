@@ -12,15 +12,15 @@ ms.topic: article
 ms.assetid: 48f31f2f-e4b8-4964-aae7-9c470827cc6a
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 monikerRange: '=sc-orch-2016'
 ---
 
 # Get Service in System Center 2016
 
-The Get Service activity is used in a runbook to return data on all of the services within the VMM management server. The published data is returned for each service.
+The Get Service activity is used in a runbook to return data on all the services within the VMM management server. The published data is returned for each service.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get Service Filters
 
