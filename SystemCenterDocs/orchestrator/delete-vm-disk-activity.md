@@ -57,7 +57,7 @@ The following procedure describes the steps required to configure a Delete VM Di
 
     2.  Select the VMware vSphere server connection that you want to use for this activity, and select **OK**.
 
-    3.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis **(...)** button next to the text box to browse for a value.
+    3.  In the **Properties** section, enter a value for each of the required properties and the applicable optional properties. If the property is Lookup-enabled, you can select the ellipsis button **(...)** next to the text box to browse for a value.
 
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
