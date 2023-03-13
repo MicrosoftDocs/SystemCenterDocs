@@ -28,7 +28,7 @@ The Operations Manager UNIX and Linux agent communicate with the Operations Mana
 
 When the SSL connection is first established for each request, the standard SSL protocol negotiates the encryption algorithm, known as a cipher for the connection to use. For Operations Manager, the management server always negotiates to use a high strength cipher so that strong encryption is used on the network connection between the management server and the UNIX or Linux computer.  
 
-The default SSL cipher configuration on UNIX or Linux computer is governed by the SSL package that is installed as part of the operating system. The SSL cipher configuration typically allows connections with a variety of ciphers, including older ciphers of lower strength. While Operations Manager doesn't use these lower strength ciphers, having port 1270 open with the possibility of using a lower strength cipher contradicts the security policy of some organizations.  
+The default SSL cipher configuration on UNIX or Linux computer is governed by the SSL package that is installed as part of the operating system. The SSL cipher configuration typically allows connections with various ciphers, including older ciphers of lower strength. While Operations Manager doesn't use these lower strength ciphers, having port 1270 open with the possibility of using a lower strength cipher contradicts the security policy of some organizations.  
 
 If the default SSL cipher configuration meets your organization's security policy, no action is needed.  
 
@@ -154,7 +154,7 @@ The following versions are supported for renegotiation only:
  - OpenSSL <= 1.0.2
  - OpenSSL >= 1.1.0h
 
-For OpenSSL versions 1.10 - 1.1.0g, you cannot disable renegotiation because OpenSSL doesn't support renegotiation.
+For OpenSSL versions 1.10 - 1.1.0g, you can't disable renegotiation because OpenSSL doesn't support renegotiation.
 
 ::: moniker-end
 

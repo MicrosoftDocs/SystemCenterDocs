@@ -38,7 +38,7 @@ A Run As account contains a single set of credentials, which are stored in the O
 
 ## Disable run as accounts
 
-With Operations Manager 2022, admins can manage the users credentials that are required to perform the tasks in the Operations Manager console.
+With Operations Manager 2022, admins can manage the users' credentials that are required to perform the tasks in the Operations Manager console.
 
 In earlier releases, by default, users with limited permissions have **Use the predefined Run As Account** option enabled. Admins can now disable this option. When disabled, all non-admin users will need to provide the credentials to execute the tasks using the console or the PowerShell cmd [Start-SCOMTask](/powershell/module/operationsmanager/start-scomtask?preserve-view=true&view=systemcenter-ps-2022).
 

@@ -45,4 +45,4 @@ When you run the Setup program for the Visio Add-in, your system is checked agai
 
 6.  Select **Close** when the installation is complete.  
 
-The next time you start Visio, you are asked if you want to install the Visio Add-in. Select **Install**. When the installation is complete, the Operations Manager command is available in the Visio ribbon.
+The next time you start Visio, you're asked if you want to install the Visio Add-in. Select **Install**. When the installation is complete, the Operations Manager command is available in the Visio ribbon.

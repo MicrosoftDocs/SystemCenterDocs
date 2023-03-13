@@ -1,7 +1,7 @@
 ---
 ms.assetid:
 title: How to create a dashboard with the PowerShell widget in the Web console
-description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the PowerShell widget.
+description: This article describes how to create a new HTML5 dashboard in System Center Operations Manager with the PowerShell widget.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -70,7 +70,7 @@ The script will typically use the Operations Manager cmdlets to retrieve informa
     }  
     ```
 
-10. Complete the configuration by providing a **Name**, **Description**, and **Widget reefresh interval** (default interval is 5 minutes) for the widget. Select **Save Widget** to save your new dashboard.  
+10. Complete the configuration by providing a **Name**, **Description**, and **Widget refresh interval** (default interval is 5 minutes) for the widget. Select **Save Widget** to save your new dashboard.  
 
 After the widget has been created, it displays the results of your script.  
 

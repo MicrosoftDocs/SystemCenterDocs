@@ -61,7 +61,7 @@ There are several limitations in this release of the Nano Server agent. The foll
 
 -   Using network discovery rules to discover devices that support ICMP.
 
--   Monitoring specific URL's on a Nano Server.
+-   Monitoring specific URLs on a Nano Server.
 
 -   Collecting data from the Application Log of a Nano Server.
 
@@ -109,7 +109,7 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 |Error Message|Possible Reason|Resolution|
 |-------------|-------------|-------------|
 |There was an error opening the firewall port|Insufficient permissions for setting the Remote Event Log Management firewall rule.|Ensure the account the script is running under has sufficient permissions to set the firewall rule.|
-|Agent directory already present in Nano Server. Please uninstall the agent using the uninstallation script and then try again.|If you ran the installation script already and it did not complete, the Agent directory might have been created already.|Run the uninstallation script as suggested by the error message.|
+|Agent directory already present in Nano Server. Uninstall the agent using the uninstallation script and then try again.|If you ran the installation script already and it didn't complete, the Agent directory might have been created already.|Run the uninstallation script as suggested by the error message.|
 |Setting up and importing the registry failed.|Insufficient permissions to edit the registry.|Ensure the account the script is running under has sufficient permissions to edit the registry and run the installation script again.|
 |Failed to install performance counters.|Insufficient permissions to edit the registry.|Ensure the account the script is running under has sufficient permissions to edit the registry and run the installation script again.|
 
@@ -157,9 +157,9 @@ If you encounter any difficulties with removing the Operations Manager Agent on 
 
 |Error Message|Possible Reason|Resolution|
 |-------------|-------------|-------------|
-|HealthService was not found on the Nano Server. Assuming previous uninstall didn't complete.|If the installation didn't complete, the HealthService might not have been set up. Another process could also be using the HealthService.|Ensure the HealthService isn't being used and run the uninstall script again.|
+|HealthService wasn't found on the Nano Server. Assuming previous uninstall didn't complete.|If the installation didn't complete, the HealthService might not have been set up. Another process could also be using the HealthService.|Ensure the HealthService isn't being used and run the uninstall script again.|
 |Unable to delete HealthService on Nano Server.|The HealthService may be busy or another process is using the HealthService.|Ensure the HealthService isn't in use and run the uninstall script again.|
-|Unable to kill the MonitoringHost(s) on the Nano Server.|The Operations Manager agent runs in the MonitoringHost process. If that process is active, the Uninstallation script won't be able to terminate it.|Ensure the MonitoringHost process is not running, and run the uninstall script again.|
+|Unable to kill the MonitoringHost(s) on the Nano Server.|The Operations Manager agent runs in the MonitoringHost process. If that process is active, the Uninstallation script won't be able to terminate it.|Ensure the MonitoringHost process isn't running, and run the uninstall script again.|
 |Unable to uninstall the performance counters.|Insufficient permissions to edit the registry.|Ensure the account the script is running under has sufficient permissions to edit the registry and run the uninstall script again.|
 |Unable to remove registry changes done by the Operations Manager agent on Nano Server.|Insufficient permissions to edit the registry.|Ensure the account the script is running under has sufficient permissions to edit the registry and run the Uninstallation script again.|
 |Unable to delete the agent directory.|Insufficient permissions to access the NanoAgent directory.|Ensure the account the script is running under has sufficient permissions to access the NanoAgent directory and run the uninstall script again.|
@@ -178,7 +178,7 @@ The Nano agent can be updated by one of the following methods:
 
 2. Manually install update
 
-    Updates to the Nano agent are available for download by following the instructions in the KB article and applying the update manually. You can install these downloaded updates on a Nano agent machine using the following Powershell script.  
+    Updates to the Nano agent are available for download by following the instructions in the KB article and applying the update manually. You can install these downloaded updates on a Nano agent machine using the following PowerShell script.  
 
     ```powershell
       .\UpdateNanoServerScomAgentOnline.ps1 -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder <<Path where the update .cab is already expanded OR path to one or more Nano-agent update .cab files> -IsCabExpanded <$true if BinaryFolder path is to an expanded .cab, $false if it is for a packed .cab file(s)> -RemoveBackup <$true to remove the previous binaries from the agent machine>

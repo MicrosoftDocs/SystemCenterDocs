@@ -1,7 +1,7 @@
 ---
 ms.assetid: d8bb718e-9ecc-4839-926f-1bc0df246bf6
 title: How to Set Credentials for Accessing UNIX and Linux Computers
-description: This article describes how to configure credentials required to securely manage UNIX and Linux comptuers with Operations Manager 2016.
+description: This article describes how to configure credentials required to securely manage UNIX and Linux computers with Operations Manager 2016.
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
@@ -61,7 +61,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
 
 6.  Select **OK** to return to the **Discovery Criteria** page and continue with the wizard.  
 
-### To set a unprivileged credential with elevation by using an SSH key  
+### To set an unprivileged credential with elevation by using an SSH key  
 
 1.  On the **Credential Settings**page, select the **Default Credentials** tab, and then select the **SSH key** option.  
 
@@ -197,7 +197,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
 
 6.  Select **OK** to return to the **Credentials** page and continue with the wizard.  
 
-### To set a unprivileged credential with elevation by using an SSH key  
+### To set an unprivileged credential with elevation by using an SSH key  
 
 1.  On the **Credential Settings** page, select the **SSH key** option.  
 
@@ -259,7 +259,7 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard** on
 
 5.  Select **OK** to return to the **Credentials** page and continue with the wizard.  
 
-### To set a unprivileged credential with elevation by using an SSH key  
+### To set an unprivileged credential with elevation by using an SSH key  
 
 1.  On the **Credential Settings** page, select the **SSH key** option.  
 

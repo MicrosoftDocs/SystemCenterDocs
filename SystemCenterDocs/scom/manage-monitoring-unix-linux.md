@@ -42,7 +42,7 @@ Before you can monitor UNIX and Linux computers, you must complete the following
 4. Create and [configure Run As accounts](manage-security-create-crossplat-credentials.md)
 5. Install agent on UNIX and Linux using the [Discovery Wizard](manage-deploy-crossplat-agent-console.md)  
 
-After you complete the steps above and successfully discover and deploy the agent to one or more UNIX and Linux computers, you should verify they are being monitored correctly. After an agent is deployed, the Run As accounts are used to perform discoveries running using the applicable discovery rules, and then start monitoring. After several minutes, under the Administration workspace, navigate to **Device Management/UNIX/Linux Computers**, and verify the computers aren't listed as **Unknown**. They should be discovered and showing the specific version of the OS and distro.
+After you complete the steps above and successfully discover and deploy the agent to one or more UNIX and Linux computers, you should verify they're being monitored correctly. After an agent is deployed, the Run As accounts are used to perform discoveries running using the applicable discovery rules, and then start monitoring. After several minutes, under the Administration workspace, navigate to **Device Management/UNIX/Linux Computers**, and verify the computers aren't listed as **Unknown**. They should be discovered and showing the specific version of the OS and distro.
 
 By default, Operations Manager monitors the following operating system objects:
 
@@ -86,7 +86,7 @@ If you see this error, do the following:
 The common name (CN) that is used in the certificate must match the fully qualified domain name (FQDN) that is resolved by Operations Manager. If the CN doesn't match, you will see the following error when you run the Discovery Wizard:  
 
 ```  
-The SSL certificate contains a common name (CN) that does not match the hostname  
+The SSL certificate contains a common name (CN) that doesn't match the hostname  
 ```  
 
 You can view the basic details of the certificate on the UNIX or Linux computer by entering the following command:  
@@ -205,7 +205,7 @@ This section describes how to enable logging and debug tools for troubleshooting
 ::: moniker-end
 
 ### Enable Operations Manager Module Logging  
-The Operations Manager Agents for UNIX and Linux maintain several log files that can be useful when troubleshooting client issues. These log files are located on the managed UNIX or Linux computer. The logging level for the agent log files can be configured as needed. More verbose logging can be useful in diagnosing an issue. For normal operation, log levels should not be set to a value more verbose than the default configurations (Intermediate) in order to prevent excessive log file growth. 
+The Operations Manager Agents for UNIX and Linux maintain several log files that can be useful when troubleshooting client issues. These log files are located on the managed UNIX or Linux computer. The logging level for the agent log files can be configured as needed. More verbose logging can be useful in diagnosing an issue. For normal operation, log levels shouldn't be set to a value more verbose than the default configurations (Intermediate) in order to prevent excessive log file growth. 
 
 > [!NOTE]  
 > Calls made outside of Windows Remote Management (WinRM) are made using SSH/SFTP. These components rely on a separate logging mechanism than Operations Manager.  
@@ -213,7 +213,7 @@ The Operations Manager Agents for UNIX and Linux maintain several log files that
 > [!NOTE]  
 > The logging level for the omiserver.log log file can't be changed from the default in this version of the Operations Manager Agents for UNIX and Linux.  
 
-1. Create a blank file named **EnableOpsmgrModuleLogging** in the Temp directory for the user account calling these modules by typing at a command-line or powershell prompt:
+1. Create a blank file named **EnableOpsmgrModuleLogging** in the Temp directory for the user account calling these modules by typing at a command-line or PowerShell prompt:
     ```
     COPY /Y NUL %windir%\TEMP\EnableOpsMgrModuleLogging
     ```
@@ -239,7 +239,7 @@ The following table lists the possible parameter values:
 |---------|---------------|  
 |Errors|Log only **Warning** or **Error** messages.|  
 |Intermediate|Log **Info**, **Warning** and **Error** messages.|  
-|Verbose|Log **Info**, **Warning**, and **Error** messages with debug logging. Note that This level of logging is likely to cause rapid growth in the size of the log files. It's strongly recommended that this option only be used for short periods of time to diagnose a specific issue.|  
+|Verbose|Log **Info**, **Warning**, and **Error** messages with debug logging. Note that This level of logging is likely to cause rapid growth in the size of the log files. It's recommended that this option only be used for short periods of time to diagnose a specific issue.|  
 
 ### Use DebugView to Troubleshoot Discovery Issues  
 DebugView is an alternative method to EnableOpsmgrModuleLogging for troubleshooting discovery issues.  

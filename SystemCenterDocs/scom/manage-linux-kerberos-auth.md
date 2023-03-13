@@ -41,9 +41,9 @@ Operations Manager can now support Kerberos authentication wherever the WS-Manag
 
 ## Prerequisites
 
-UNIX and Linux Monitoring with Operations Manager is [supported on a number of operating systems](./plan-supported-crossplat-os.md).
+UNIX and Linux Monitoring with Operations Manager is [supported on many operating systems](./plan-supported-crossplat-os.md).
 
-The following subset of those operating systems now support WS-Management communication over Kerberos: (Only the most recently released version of each distribution will be supported.)
+The following subset of those operating systems now supports WS-Management communication over Kerberos: (Only the most recently released version of each distribution will be supported.)
 
 ::: moniker range="<sc-om-2019"
 
@@ -108,7 +108,7 @@ The following subset of those operating systems now support WS-Management commun
 
 - Run as accounts must be configured to use domain-based accounts that are associated with the appropriate [Unix/Linux Run As Profile](./plan-security-crossplat-credentials.md).
 
-- Enabling Kerberos authentication assumes all UNIX and Linux agents communicating with the management server support Kerberos. Mixed mode authentication where some agents use basic authentication and others leverage Kerberos isn't supported. Instead use separate Resource Pools and Management Servers to achieve this.
+- Enabling Kerberos authentication assumes all UNIX and Linux agents communicating with the management server support Kerberos. Mixed mode authentication where some agents use basic authentication and others use Kerberos isn't supported. Instead use separate Resource Pools and Management Servers to achieve this.
 
 ## Enable or disable Kerberos Authentication on a management or a gateway server
 

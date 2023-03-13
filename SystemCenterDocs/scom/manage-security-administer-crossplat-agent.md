@@ -51,7 +51,7 @@ The tools for configuring the UNIX/Linux Agent are located in the directory:
 
 ## Scxadmin  
 
-The **scxadmin** tool is used to control the state of the UNIX/Linux agent (start, stop, or restart) as well as control logging performed by the agent. The usage of the tool can be displayed with the following command: `scxadmin -?`  
+The **scxadmin** tool is used to control the state of the UNIX/Linux agent (start, stop, or restart) and control logging performed by the agent. The usage of the tool can be displayed with the following command: `scxadmin -?`  
 
 ```  
 
@@ -97,7 +97,7 @@ cd /opt/microsoft/scx/bin/tools/
 
 ## scxsslconfig  
 
-The **scxsslconfig** tool is used to generate the certificate in `/etc/opt/Microsoft/scx/ssl/`. This tool is useful in correcting issues in which the fully-qualified domain name can't be determined from the UNIX or Linux host itself, or the FQDN known to the UNIX\/Linux host doesn't match the FQDN used by the management server to reach the host.  
+The **scxsslconfig** tool is used to generate the certificate in `/etc/opt/Microsoft/scx/ssl/`. This tool is useful in correcting issues in which the fully qualified domain name can't be determined from the UNIX or Linux host itself, or the FQDN known to the UNIX\/Linux host doesn't match the FQDN used by the management server to reach the host.  
 
 > [!NOTE]  
 > The generated certificate must be signed by Operations Manager management server in order to be used in WS-Management communication. Overwriting a previously signed certificate will require that the certificate be signed again.  
