@@ -37,7 +37,7 @@ Service Manager workflows use WF activities. To work smoothly with the Authoring
 
 ### Benefits of using the WorkflowActivityBase class
 
-Users can import WF activities from the Visual Studio activity library, and they can work with those activities in the Authoring Tool**Authoring** pane. However, those activities behave in the same way as they do in the Visual Studio Design environment. They don't have the customizations that are built into the Service Manager activity library.
+Users can import WF activities from the Visual Studio activity library, and they can work with those activities in the Authoring Tool **Authoring** pane. However, those activities behave in the same way as they do in the Visual Studio Design environment. They don't have the customizations that are built into the Service Manager activity library.
 
 > [!NOTE]
 > Not all Visual Studio WF activities have been tested for compatibility with the Authoring Tool, and some Visual Studio WF activities might not run correctly in the Authoring Tool.
