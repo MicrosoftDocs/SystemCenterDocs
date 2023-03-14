@@ -63,9 +63,9 @@ Ensure the following prerequisites are met:
 
     In the next step, paste the thumbprint of the certificate that you created.
 
-    :::image type="content" source="<./media/encrypt-networks/enable-encryption.png>" alt-text="<Screenshot of network encryption.>":::
+    :::image type="content" source="./media/encrypt-networks/enable-encryption.png" alt-text="Screenshot of network encryption.":::
 
-    :::image type="content" source="<./media/encrypt-networks/details-encrypted-network.png>" alt-text="<Screenshot of encryption details.>":::
+    :::image type="content" source="./media/encrypt-networks/details-encrypted-network.png" alt-text="Screenshot of encryption details.":::
 
 5.	Create two VMs on two separate physical hosts and connect them to the above subnet. [Learn more](sdn-controller.md#validate-the-deployment).
 6.	Attach any packet sniffing application on the two network interfaces of the two hosts where the tenant VMs are placed.
