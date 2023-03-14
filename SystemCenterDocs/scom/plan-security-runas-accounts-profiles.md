@@ -4,7 +4,7 @@ title: Run As Accounts and Profiles
 description: This article describes how to use run as accounts and profiles to securely monitor objects on agent-managed systems with Operations Manager 2016.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center
