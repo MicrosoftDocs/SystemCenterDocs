@@ -54,8 +54,7 @@ Use the following procedures to configure the VIPs to load balance the workload 
 
 1. In the VMM console, select **Fabric** > **VIP Templates**. Right-click and select **Create VIP Template**.
 
-    ![Screenshot of VIP template name.](media/sdn-load-balance-network-traffic/lb-template-name-image1.png)
-
+    :::image type="content" source="./media/sdn-load-balance-network-traffic/lb-template-name-image1.png" alt-text="Screenshot of VIP template name.":::
 2. In the **Name** page, provide the name and optional description. Specify the **Virtual IP Port** that will be used as front-end port for the network traffic. In the **Backend port**, specify the port on which the back-end workloads are hosted. Select **Next**.
 
     ![Screenshot of VIP template type.](media/sdn-load-balance-network-traffic/lb-template-type-image2.png)
