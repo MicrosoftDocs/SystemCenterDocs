@@ -4,7 +4,7 @@ title: Console-level changes for gMSA in System Center Operations Manager
 description: This article describes the console-level changes that are required to use group Managed Service Accounts (gMSAs) in Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 06/30/2022
 ms.prod: system-center
 monikerRange: '>=sc-om-2019'

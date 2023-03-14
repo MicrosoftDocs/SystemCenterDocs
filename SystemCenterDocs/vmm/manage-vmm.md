@@ -20,4 +20,4 @@ ms.technology: virtual-machine-manager
 
 ::: moniker-end
 
-The articles in this section describe how to configure and manage System Center Virtual Machine Manager (VMM) on a regular basis. They include information about setting up the compute, networking, and storage fabric, and describes how to deploy virtual machines and services.
+The articles in this section describe how to configure and manage System Center Virtual Machine Manager (VMM) on a regular basis. They include information about setting up the compute, networking, and storage fabric, and describe how to deploy virtual machines and services.
