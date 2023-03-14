@@ -4,7 +4,7 @@ manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
-ms.date: 03/09/2023
+ms.date: 03/14/2023
 title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -189,11 +189,11 @@ For issues fixed and the installation instructions for UR5, see the KB article.
 
 ### Support for SQL Server 2022
 
-DPM 2019 UR5 supports SQL Server 2022 both as a protected workload. Learn more.
+DPM 2019 UR5 supports backup of SQL Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
 
 ### Back up support for Windows Server 2022
 
-DPM 2019 UR5 support backup of Windows Server 2022. For more information on supported versions for Windows Servers, see system requirements.
+DPM 2019 UR5 supports backup of Windows Server 2022. [Learn more](/system-center/dpm/dpm-protection-matrix?view=sc-dpm-2019).
 
 ### End of support for vSphere 5.5
 
@@ -201,11 +201,7 @@ vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsph
 
 ### Support for vSphere 7.0
 
-DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. Learn more.
-
-### Limit enhancement for parallel online backup jobs
-
-With DPM 2019 UR5, there's an increase in the maximum parallel online backup jobs. Using a registry key, you can now have faster online backups, that is from eight to a configurable limit as per the hardware and network limitations. Learn more.
+DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019).
 
 ::: moniker-end
 
