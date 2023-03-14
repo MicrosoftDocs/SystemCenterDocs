@@ -63,7 +63,7 @@ Ensure the following prerequisites are met:
 
     In the next step, paste the thumbprint of the certificate that you created.
 
-    :::image type="content" source="<./media/encrypt-networks/enable-encryption.png>" alt-text="<Screenshot of network encryption.>":::
+    :::image type="content" source="<media/encrypt-networks/enable-encryption.png>" alt-text="<Screenshot of network encryption.>":::
 
     ![Screenshot of encryption details.](media/encrypt-networks/details-encrypted-network.png)
 
