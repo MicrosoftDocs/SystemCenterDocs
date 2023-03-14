@@ -9,6 +9,7 @@ ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency2
 ---
 
 # Monitor VMM

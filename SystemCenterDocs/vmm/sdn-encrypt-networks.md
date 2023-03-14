@@ -63,9 +63,10 @@ Ensure the following prerequisites are met:
 
     In the next step, paste the thumbprint of the certificate that you created.
 
-    ![Screenshot of network encryption.](media/encrypt-networks/enable-encryption.png)
+    :::image type="content" source="<./media/encrypt-networks/enable-encryption.png>" alt-text="<Screenshot of network encryption.>":::
 
     ![Screenshot of encryption details.](media/encrypt-networks/details-encrypted-network.png)
+
 5.	Create two VMs on two separate physical hosts and connect them to the above subnet. [Learn more](sdn-controller.md#validate-the-deployment).
 6.	Attach any packet sniffing application on the two network interfaces of the two hosts where the tenant VMs are placed.
 7.	Send traffic, ping, HTTP, or any other packets between the two hosts, and check the packets in the packet sniffing application. The packets shouldn't have any discernible plain text like the parameters of an HTTP request.
