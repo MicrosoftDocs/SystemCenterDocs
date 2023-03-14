@@ -2,7 +2,7 @@
 title: Form control properties
 description: Provides a reference for form control properties in the Service Manager Authoring Tool.
 manager: mkluck
-ms.custom: na, UpdateFrequency2
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
