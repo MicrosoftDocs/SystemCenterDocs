@@ -15,16 +15,27 @@ ms.technology:  operations-manager
 
 Log file monitoring requires the following steps. The detailed information is provided in the following sections:
 
-1. Import the latest Linux management pack.
+::: moniker range="sc-om-2019"
+
+1. Import the [latest SCOM 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208).
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+1. Import the [latest SCOM 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213).
+
+::: moniker-end
+
 2. Install the latest version of the Linux agent on each Linux computer to be monitored.
-3. Install latest OMSAgent on each Linux computer to be monitored.
+3. Install latest [OMSAgent](https://github.com/microsoft/OMS-Agent-for-Linux) on each Linux computer to be monitored.
 4. Create Fluentd configuration file to collect logs.
 5. Copy configuration file to Linux agents.
 6. Create rules and monitors using the sample management pack to collect events from the log and create alerts.
 
 ## Install the log monitoring management pack
 
-Install  **Microsoft.Linux.Log.Monitoring**  management pack to enable Linux log file monitoring.
+Install the **Microsoft.Linux.Log.Monitoring** management pack to enable Linux log file monitoring.
 
 > [!NOTE]
 > If you have the OMS agent configured and you try to uninstall UNIX and LINUX agent from the console, then OMS component won't be uninstalled from the agent.
@@ -34,48 +45,75 @@ Install  **Microsoft.Linux.Log.Monitoring**  management pack to enable Linux log
 
 To configure Linux log file monitoring, do the following:
 
-1. Import the latest Linux management pack using the standard process for installing a management pack.
-2. Install the new Linux agent on the Linux servers manually or by using Discovery wizard.
+::: moniker range="sc-om-2019"
+
+1. Import the [latest SCOM 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208) using the standard process for installing a management pack.
+
+::: moniker-end
+
+::: moniker range="sc-om-2022"
+
+1. Import the [latest SCOM 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213) using the standard process for installing a management pack.
+
+::: moniker-end
+
+2. Install the new Linux agent on the Linux servers manually or by [using Discovery wizard](/system-center/scom/manage-deploy-crossplat-agent-console).
 3. Install the latest OMSAgent on each Linux computer that you want to monitor.
 
    Use the following commands:
 
-   ```
+   ```bash
+   # Download latest OMS Agent from GitHub
    wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh
+   
+   # Run onboarding script
    sh onboard_agent.sh
-
    ```
 
    Do the following on the Linux agent:
 
- 4. Create the folders in the following paths:
+ 4. Create the folders in the following paths with the below commands:
 
-      - /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
-
-      - /etc/opt/microsoft/omsagent/scom/certs
-
-      - /var/opt/microsoft/omsagent/scom/log
-
-      - /var/opt/microsoft/omsagent/scom/run
-
-      - /var/opt/microsoft/omsagent/scom/state
-
-      - /var/opt/microsoft/omsagent/scom/tmp
-
-      - /home/omsagent/fluent-logging (used for log file position file)
-
+      ```bash
+      # Create omsagent.d folder
+      mkdir /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
+      
+      # Create certs folder
+      mkdir /etc/opt/microsoft/omsagent/scom/certs
+      
+      # Create certs folder
+      mkdir /var/opt/microsoft/omsagent/scom/log
+      
+      # Create run folder
+      mkdir /var/opt/microsoft/omsagent/scom/run
+      
+      # Create state folder
+      mkdir /var/opt/microsoft/omsagent/scom/state
+      
+      # Create tmp folder
+      mkdir /var/opt/microsoft/omsagent/scom/tmp
+      
+      # Create fluent-logging folder (used for log file position file)
+      mkdir /home/omsagent/fluent-logging
+      ```
+      
  5. Set ownership of each of the above to omsagent:omiusers
-
-      - chown omsagent:omiusers state
-
-      - chown omsagent:omiusers run
-
-      - chown omsagent:omiusers log
-
-      - chown omsagent:omiusers tmp
-
-      - chown omsagent:omiusers /home/omsagent/fluent-logging
-
+      ```bash
+      # Change owner of log folder
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/log
+      
+      # Change owner of run folder
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/run
+      
+      # Change owner of state folder
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/state
+      
+      # Change owner of tmp folder
+      chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/tmp
+      
+      # Change owner of fluent-logging folder
+      chown omsagent:omiusers /home/omsagent/fluent-logging
+      ```
          ![Screenshot of log file monitoring.](../scom/media/log-file-monitoring/log-file-monitoring.png)
 
 ## Enable the OMED service
@@ -92,42 +130,51 @@ To configure Linux log file monitoring, do the following:
 3. From **Tasks**, select **Health Service Tasks**>**Enable System Center OMED Server**.
 
 ### Enable the OMED service manually
+You have two options when enabling the OMED service manually.
 
+#### Set manually with services.msc
 1. Select **Start** in the **Start Search** box, enter **services.msc**, and then press **Enter**.
 2. In the details pane, right-click the service **System Center Operations Manager External DataSource Service**, and select **Properties**.
 3. On **General**, in **Startup** type, select **Automatic**, and select **OK**.
-4. In the details pane, right-click **Service** and select  **Start**.
+4. In the details pane, right-click **Service** and select **Start**.
+
+#### Set automatically with Powershell
+Run the following Powershell as Administrator to set the **System Center Operations Manager External DataSource Service** to start automatically and start running.
+```powershell
+Set-Service -Name OMED -StartupType Automatic -Status Running
+```
 
 ## Generate new client certificate for Fluentd
 
 1. Generate the certificate and key to a folder: 
-   ```
+   ```bash
    /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
    ```
 
    > [!NOTE]
    > New certificate must be signed by the Management Server. To do this, copy to management server, sign the certificate using `scxcertconfig -sign`, and copy it back to the linux agent
 
-2. Rename the certificates on the Linux side:
-
-   omi-host-server.domain.pem to scom-cert.pem
-
-   omikey.pem to scom-key.pem
-
+2. Rename the generated certificate on the Linux side:
+   ```bash
+   # Rename omi-host-server.domain.pem to scom-cert.pem
+   mv omi-host-server.domain.pem scom-cert.pem
+   
+   # Rename omikey.pem to scom-key.pem
+   mv omikey.pem scom-key.pem
+   ```
 3. Change ownership of the certificate file:
-
+   ```bash
    chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
-
    chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
-
+   ```
 
 ## Create Fluentd configuration file
 
 You configure Fluentd operation using a configuration file. For log monitoring, create a configuration file that includes information such as source log file name, path, and filters to define the data to collect.
 
-The master Fluentd configuration file **omsagent.conf** is located in **/etc/opt/microsoft/omsagent/scom/conf/**. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
+The master Fluentd configuration file **omsagent.conf** is located in `/etc/opt/microsoft/omsagent/scom/conf/`. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
 
-For example, if you created **logmonitoring.conf** in **/etc/opt/microsoft/omsagent/scom/conf/omsagent.d**, you would add one of the following lines to the **omsagent.d** file:
+For example, if you created **logmonitoring.conf** in `/etc/opt/microsoft/omsagent/scom/conf/omsagent.d`, you would add one of the following lines to the `omsagent.d` file:
 
 ```
 #Include all configuration files
@@ -325,7 +372,7 @@ enable_server_auth false
 
 ## Copy configuration file to agent
 
-The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/scom/conf/omsagent.d**  on all Linux computers you want to monitor. You must also add an @include directive in the master configuration file as described above.
+The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/scom/conf/omsagent.d** on all Linux computers you want to monitor. You must also add an @include directive in the master configuration file as described above.
 
 ## Restart omsagent
 
