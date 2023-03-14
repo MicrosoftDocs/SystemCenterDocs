@@ -203,10 +203,6 @@ vSphere 5.5 has reached [end of general support](https://blogs.vmware.com/vsph
 
 DPM 2019 UR5 support backups for VMware VMs on vSphere 7.0. [Learn more](/system-center/dpm/back-up-vmware?view=sc-dpm-2019).
 
-### Limit enhancement for parallel online backup jobs
-
-With DPM 2019 UR5, there's an increase in the maximum parallel online backup jobs. Using a registry key, you can now have faster online backups, that is from eight to a configurable limit as per the hardware and network limitations. Learn more.
-
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1807"
