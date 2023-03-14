@@ -11,6 +11,7 @@ ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 ms.author: jsuri
 monikerRange: '>=sc-dpm-2016'
+ms.custom: UpdateFrequency.5
 ---
 
 # System Center – Data Protection Manager build versions

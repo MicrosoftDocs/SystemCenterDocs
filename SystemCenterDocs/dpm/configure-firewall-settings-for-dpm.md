@@ -5,7 +5,7 @@ author: jyothisuri
 manager: vvithal
 ms.author: jsuri
 ms.date: 11/01/2017
-ms.custom: na
+ms.custom: na, UpdateFrequency2
 ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: article

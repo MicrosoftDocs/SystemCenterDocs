@@ -9,7 +9,7 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: data-protection-manager
-ms.custom: intro-deployment
+ms.custom: intro-deployment, UpdateFrequency2
 ---
 
 # Deploy and manage update rollups in Data Protection Manager

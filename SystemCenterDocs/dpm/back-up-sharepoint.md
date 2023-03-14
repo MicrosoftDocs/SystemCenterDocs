@@ -10,6 +10,7 @@ title: Back up SharePoint with DPM
 ms.technology: data-protection-manager
 ms.assetid: 3769bebe-3e5a-4b51-9c01-d07e94fc8c43
 ms.author: jsuri
+ms.custom: UpdateFrequency2
 ---
 
 # Back up SharePoint with DPM

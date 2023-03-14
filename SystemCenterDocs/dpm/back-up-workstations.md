@@ -10,6 +10,7 @@ title: Back up client computers with DPM
 ms.technology: data-protection-manager
 ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
 ms.author: jsuri
+ms.custom: UpdateFrequency2
 ---
 
 # Back up client computers with DPM

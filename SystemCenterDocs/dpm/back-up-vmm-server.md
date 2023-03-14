@@ -10,6 +10,7 @@ title: Back up and restore VMM servers
 ms.technology: data-protection-manager
 ms.assetid: e9ed546c-b12b-4a2c-9668-3dc23963114e
 ms.author: jsuri
+ms.custom: UpdateFrequency2
 ---
 
 # Back up and restore VMM servers
