@@ -4,7 +4,7 @@ description: This article describes how to install all Operations Manager roles 
 ms.custom: engagement-fy23, UpdateFrequency.5
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 12/30/2022
 ms.prod: system-center
 ms.technology: operations-manager

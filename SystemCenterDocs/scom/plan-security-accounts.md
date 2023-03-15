@@ -4,7 +4,7 @@ title: Service, User, and Security Accounts
 description: This article provides an overview of the security accounts required for initial setup of Operations Manager and for core features that may require a privileged account.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 06/08/2021
 ms.custom: na, UpdateFrequency3
 ms.prod: system-center

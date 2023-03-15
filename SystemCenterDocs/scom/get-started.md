@@ -4,7 +4,7 @@ title: Getting Started
 description: This article is the landing page covering all of the getting started guidance for Operations Manager 2016.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 10/22/2018
 ms.custom: na, intro-get-started, UpdateFrequency3
 ms.prod: system-center

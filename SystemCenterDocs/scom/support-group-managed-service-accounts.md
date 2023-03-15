@@ -4,7 +4,7 @@ title: Support for group managed service accounts in System Center Operations Ma
 description: This article details the group managed service accounts feature, supported in System Center Operations Manager.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 09/02/2020
 ms.prod: system-center
 monikerRange: '>=sc-om-2019'

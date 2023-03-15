@@ -4,7 +4,7 @@ title: Configure Antivirus for Operations Manager Components
 description: This article provides design guidance for anti-virus exclusions as they relate to Operations Manager agent and server roles.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/22/2022
 ms.custom: na, UpdateFrequency2
 ms.prod: system-center

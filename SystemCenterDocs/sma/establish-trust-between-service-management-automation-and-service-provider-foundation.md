@@ -9,6 +9,7 @@ keywords:
 ms.date: 01/22/2018
 title: Establish trust between Service Management Automation and Service Provider Foundation
 ms.technology: service-management-automation
+ms.custom: UpdateFrequency2
 ---
 
 # Establish trust between Service Management Automation and Service Provider Foundation

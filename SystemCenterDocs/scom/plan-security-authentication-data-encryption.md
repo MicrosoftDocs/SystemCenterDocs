@@ -4,7 +4,7 @@ title: Authentication and Data Encryption in Operations Manager
 description: This article provides design guidance explaining how secure authentication occurs with Operations Manager and options available.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 02/06/2018
 ms.custom: na, UpdateFrequency2
 ms.prod: system-center
@@ -113,7 +113,7 @@ The following outlines the relationship of the various account credentials, Run 
 
 2. Run As Profile: Data Warehouse SQL Server Authentication Account
    - Run As Account: Data Warehouse SQL Server Authentication
-   - Account credentials: Special account created by Operations Manager (do not change)
+   - Account credentials: Special account created by Operations Manager (don't change)
 
 #### Optional: SQL Server Authentication
 
@@ -137,7 +137,7 @@ Default: Windows Integrated Authentication
 1. Data Access Service and Config Service Account (defined during setup of Operations Manager)
    - Run As Profile: Reporting SDK SQL Server Authentication Account
    - Run As Account: Reporting SDK SQL Server Authentication Account
-   - Account credentials: Special account created by Operations Manager (do not change)
+   - Account credentials: Special account created by Operations Manager (don't change)
 
 2. Optional: SQL Server Authentication
    - Run As Profile: Data Warehouse SQL Server Authentication Account

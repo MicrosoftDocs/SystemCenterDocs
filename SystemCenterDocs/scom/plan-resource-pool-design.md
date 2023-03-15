@@ -4,7 +4,7 @@ title: Resource Pool Design Considerations
 description: This article provides an overview of the design decisions with resource pools  when planning a management group configuration for your Operations Manager deployment.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/29/2019
 ms.custom: na, UpdateFrequency3
 ms.prod: system-center
