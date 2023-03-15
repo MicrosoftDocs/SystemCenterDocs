@@ -74,4 +74,4 @@ The following is the build version for Orchestrator 1801.
 
 ## Next steps
 
-- See [What's new in System Center Orchestrator](../SystemCenterDocs-pr/SystemCenterDocs/orchestrator/whats-new-in-orch.md).
+- See [What's new in System Center Orchestrator](whats-new-in-orch.md).
