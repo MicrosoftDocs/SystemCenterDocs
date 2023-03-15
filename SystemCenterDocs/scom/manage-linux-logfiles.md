@@ -32,7 +32,7 @@ The basic operation of log file monitoring in Linux includes the following steps
 
 1. Record is written to a log on a Linux agent.
 2. Fluentd collects the record and creates an event on pattern match.
-3. Event is sent to OMED service on management server and logged to the **System Center OMED Service** Event Log.
+3. Event is sent to OMED service on management server and logged to the **System Center OMED Service** Event Log on the management server. (The **System Center OMED Service** Event Log is only created when an Event has been successfully sent from a Fluentd Agent)
 3. Rules and monitors in a custom management pack collect events and create alerts in Operations Manager.
 
 
