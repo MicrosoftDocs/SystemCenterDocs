@@ -51,7 +51,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 ::: moniker range="sc-om-2022"
 
-[!INCLUDE [install-om-crossplat-agent-cmdline-2019](../includes/install-om-crossplat-agent-cmdline-2022.md)]
+[!INCLUDE [install-om-crossplat-agent-cmdline-2022](../includes/install-om-crossplat-agent-cmdline-2022.md)]
 
 ::: moniker-end
 
