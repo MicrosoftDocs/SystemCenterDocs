@@ -28,7 +28,7 @@ This article lists Microsoft System Center 2022 - Orchestrator build versions. E
 ::: moniker-end
 
 
-::: moniker range="sc-om-2019"
+::: moniker range="sc-orch-2019"
 
 This article lists Microsoft System Center 2019 - Orchestrator build versions. Each update rollup (UR) release has a link to a support article describing the UR changes and links to the package downloads.
 
@@ -36,7 +36,7 @@ This article lists Microsoft System Center 2019 - Orchestrator build versions. E
 
 ::: moniker-end
 
-::: moniker range="sc-om-2016"
+::: moniker range="sc-orch-2016"
 
 This article lists Microsoft System Center 2016 - Orchestrator build versions. Each update rollup (UR) release has a link to a support article describing the UR changes and links to the package downloads.
 
@@ -44,7 +44,7 @@ This article lists Microsoft System Center 2016 - Orchestrator build versions. E
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
+::: moniker range="sc-orch-1807"
 
 This article lists Microsoft System Center 1807 - Orchestrator build versions.
 
@@ -58,7 +58,7 @@ The following table lists the release history for Orchestrator 1807.
 
 ::: moniker-end
 
-::: moniker range="sc-om-1801"
+::: moniker range="sc-orch-1801"
 
 The following table lists the release history for Orchestrator 1801.
 
