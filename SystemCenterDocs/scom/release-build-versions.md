@@ -9,6 +9,7 @@ ms.date: 03/12/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
+ms.custom: UpdateFrequency.5
 ---
 
 # System Center - Operations Manager build versions
