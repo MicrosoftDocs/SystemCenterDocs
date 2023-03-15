@@ -11,6 +11,7 @@ ms.technology: data-protection-manager
 ms.assetid: 579460ba-9c72-4682-bf9a-12c6d411bf3c
 ms.author: jsuri
 monikerRange: 'sc-dpm-2019'
+ms.custom: UpdateFrequency2
 ---
 
 

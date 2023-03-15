@@ -10,7 +10,7 @@ ms.date: 11/21/2022
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency.5
 ---
 
 # What's supported and what isn't for DPM?

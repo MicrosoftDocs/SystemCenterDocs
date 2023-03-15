@@ -9,6 +9,7 @@ ms.date: 05/22/2018
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
+ms.custom: UpdateFrequency2
 ---
 
 # Manage telemetry settings in Orchestrator

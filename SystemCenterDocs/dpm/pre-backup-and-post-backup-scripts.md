@@ -10,6 +10,7 @@ title: Use Pre-backup and Post-backup scripts
 ms.technology: data-protection-manager
 ms.assetid: 4d64ee84-fc7d-45a8-b337-fbef001b75a3
 ms.author: jsuri
+ms.custom: UpdateFrequency2
 ---
 
 # Pre-backup and Post-backup scripts for DPM

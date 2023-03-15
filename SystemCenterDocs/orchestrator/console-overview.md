@@ -12,6 +12,7 @@ ms.author: jsuri
 ms.date: 10/12/2016
 author: jyothisuri
 manager: carmonm
+ms.custom: UpdateFrequency2
 ---
 # Overview of the Orchestration console
 
