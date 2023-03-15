@@ -1,7 +1,7 @@
 ---
 title: Overview of Orchestration Console
 description: This article provides a summary of the administrative console for Orchestrator and basic functionality procedures.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -11,8 +11,7 @@ ms.topic: article
 ms.author: jsuri
 ms.date: 10/12/2016
 author: jyothisuri
-manager: carmonm
-ms.custom: UpdateFrequency2
+manager: mkluck
 ---
 # Overview of the Orchestration console
 
