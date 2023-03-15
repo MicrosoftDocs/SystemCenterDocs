@@ -60,11 +60,11 @@ The following table lists the release history for Orchestrator 1807.
 
 ::: moniker range="sc-orch-1801"
 
-The following table lists the release history for Orchestrator 1801.
+This article lists Microsoft System Center 1801 - Orchestrator build versions.
 
 ## Orchestrator 1801 build versions
 
-The following is the build version for Orchestrator 1801.
+The following table lists the release history for Orchestrator 1801
 
 |Build Number |KB |Release Date |Description |  
 |-------------|---|-------------|------------|   

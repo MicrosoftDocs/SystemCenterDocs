@@ -14,9 +14,9 @@ ms.topic: include
 ## Orchestrator 2019 build versions
 
 >[!NOTE]
->All System Center Orchestrator update rollups are cumulative. This means you don't need to apply them in order; you can always apply the latest update. If you've deployed System Center 2019 - Orchestrator and never applied an update rollup, you can proceed to install the latest one available.
+>All System Center - Orchestrator update rollups are cumulative. This means you don't need to apply them in order; you can always apply the latest update. If you've deployed System Center 2019 - Orchestrator and never applied an update rollup, you can proceed to install the latest one available.
 
-The following table list the release history for Orchestrator 2019.
+The following table lists the release history for Orchestrator 2019.
 
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
