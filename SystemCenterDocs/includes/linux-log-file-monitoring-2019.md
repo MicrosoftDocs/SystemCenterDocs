@@ -114,7 +114,7 @@ To configure Linux log file monitoring, do the following:
       # Change owner of fluent-logging folder
       chown omsagent:omiusers /home/omsagent/fluent-logging
       ```
-         ![Screenshot of log file monitoring.](../scom/media/log-file-monitoring/log-file-monitoring.png)
+      ![Screenshot of log file monitoring.](../scom/media/log-file-monitoring/log-file-monitoring.png)
 
 ## Enable the OMED service
    Enable the OMED service on each management server in the resource pool, managing the Linux agents.
@@ -132,22 +132,23 @@ To configure Linux log file monitoring, do the following:
 ### Enable the OMED service manually
 You have two options when enabling the OMED service manually.
 
-#### Set manually with services.msc
-1. Select **Start** in the **Start Search** box, enter **services.msc**, and then press **Enter**.
-2. In the details pane, right-click the service **System Center Operations Manager External DataSource Service**, and select **Properties**.
-3. On **General**, in **Startup** type, select **Automatic**, and select **OK**.
-4. In the details pane, right-click **Service** and select **Start**.
+1. #### Set manually with services.msc
+   1. Select **Start** in the **Start Search** box, enter **services.msc**, and then press **Enter**.
+   2. In the details pane, right-click the service **System Center Operations Manager External DataSource Service**, and select **Properties**.
+   3. On **General**, in **Startup** type, select **Automatic**, and select **OK**.
+   4. In the details pane, right-click **Service** and select **Start**.
 
-#### Set automatically with Powershell
-Run the following Powershell as Administrator to set the **System Center Operations Manager External DataSource Service** to start automatically and start running.
-```powershell
-Set-Service -Name OMED -StartupType Automatic -Status Running
-```
+2. #### Set automatically with Powershell
+   Run the following Powershell as Administrator to set the **System Center Operations Manager External DataSource Service** to automatically start, and to start running.
+   ```powershell
+   Set-Service -Name OMED -StartupType Automatic -Status Running
+   ```
 
 ## Generate new client certificate for Fluentd
 
-1. Generate the certificate and key to a folder: 
+1. Generate the certificate and key to the ***omsagent*** folder: 
    ```bash
+   # Generate Certificate to omsagent Folder
    /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
    ```
 
@@ -164,7 +165,10 @@ Set-Service -Name OMED -StartupType Automatic -Status Running
    ```
 3. Change ownership of the certificate file:
    ```bash
+   # Change owner of the scom-cert file
    chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
+   
+   # Change owner of the scom-key file
    chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
    ```
 
@@ -176,13 +180,13 @@ The master Fluentd configuration file **omsagent.conf** is located in `/etc/opt/
 
 For example, if you created **logmonitoring.conf** in `/etc/opt/microsoft/omsagent/scom/conf/omsagent.d`, you would add one of the following lines to the `omsagent.d` file:
 
-```
-#Include all configuration files
+```bash
+# Include all configuration files
 @include omsagent.d/*.conf
 ```
 or
-```
-#include single configuration file
+```bash
+# include single configuration file
 @include omsagent.d/logmonitoring.conf
 ```
 
