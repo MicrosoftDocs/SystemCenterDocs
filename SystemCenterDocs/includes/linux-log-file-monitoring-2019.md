@@ -376,7 +376,7 @@ The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/s
 ## Restart omsagent
 
 You can run the following command to restart the omsagent:
-```
+```bash
 /opt/microsoft/omsagent/bin/service_control restart
 ```
 
