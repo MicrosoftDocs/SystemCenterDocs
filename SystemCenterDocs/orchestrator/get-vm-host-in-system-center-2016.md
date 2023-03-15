@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: b1fe4adf-a477-4455-858f-0158685c23bb
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 monikerRange: '=sc-orch-2016'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: '=sc-orch-2016'
 
 The Get VM Host activity is used in a runbook to return all virtualization hosts on the VMM management server that meet the filter criteria.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get VM Host Required Properties
 
@@ -37,4 +37,4 @@ VM Host Name
 
 ## Get VM Host Published Data
 
-There is no published data for this activity.
+There's no published data for this activity.
