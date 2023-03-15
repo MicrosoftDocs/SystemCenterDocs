@@ -5,7 +5,7 @@ description: This include file details the Linux log file monitoring in Operatio
 author: jyothisuri
 ms.author: jsuri
 manager:  mkluck
-ms.date:  04/02/2020
+ms.date:  03/15/2023
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  operations-manager
@@ -17,15 +17,20 @@ Log file monitoring requires the following steps. The detailed information is pr
 
 ::: moniker range="sc-om-2019"
 1. Import the [latest SCOM 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208).
-::: moniker-end
-::: moniker range="sc-om-2022"
-1. Import the [latest SCOM 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213).
-::: moniker-end
 2. Install the latest version of the Linux agent on each Linux computer to be monitored.
 3. Install latest [OMSAgent](https://github.com/microsoft/OMS-Agent-for-Linux) on each Linux computer to be monitored.
 4. Create Fluentd configuration file to collect logs.
 5. Copy configuration file to Linux agents.
 6. Create rules and monitors using the sample management pack to collect events from the log and create alerts.
+::: moniker-end
+::: moniker range="sc-om-2022"
+1. Import the [latest SCOM 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213).
+2. Install the latest version of the Linux agent on each Linux computer to be monitored.
+3. Install latest [OMSAgent](https://github.com/microsoft/OMS-Agent-for-Linux) on each Linux computer to be monitored.
+4. Create Fluentd configuration file to collect logs.
+5. Copy configuration file to Linux agents.
+6. Create rules and monitors using the sample management pack to collect events from the log and create alerts.
+::: moniker-end
 
 ## Install the log monitoring management pack
 
@@ -41,12 +46,14 @@ To configure Linux log file monitoring, do the following:
 
 ::: moniker range="sc-om-2019"
 1. Import the [latest SCOM 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208) using the standard process for installing a management pack.
+2. Install the new Linux agent on the Linux servers manually or by [using Discovery wizard](/system-center/scom/manage-deploy-crossplat-agent-console).
+3. Install the latest OMSAgent on each Linux computer that you want to monitor.
 ::: moniker-end
 ::: moniker range="sc-om-2022"
 1. Import the [latest SCOM 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213) using the standard process for installing a management pack.
-::: moniker-end
 2. Install the new Linux agent on the Linux servers manually or by [using Discovery wizard](/system-center/scom/manage-deploy-crossplat-agent-console).
 3. Install the latest OMSAgent on each Linux computer that you want to monitor.
+::: moniker-end
 
    Use the following commands:
 
