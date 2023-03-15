@@ -9,7 +9,7 @@ ms.date: 11/15/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-overview
+ms.custom: intro-overview, UpdateFrequency3
 ---
 
 # About Arc-enabled System Center Virtual Machine Manager

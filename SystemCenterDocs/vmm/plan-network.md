@@ -9,6 +9,7 @@ ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency2
 ---
 
 
@@ -73,7 +74,7 @@ Use the following table to plan for the logical networks, VM networks, and IP ad
 
 In the VMM console, **Fabric** >**Networking** > **Logical networks**, you might see logical networks created by VMM by default. VMM creates these networks to ensure that when you add a host, you have at least one logical network for deploying virtual machines and services. No network sites are created automatically.
 
-To illustrate how these settings work, suppose that you haven't changed the settings and you add a Hyper-V host to VMM management. In this case, VMM automatically creates logical networks that match the first DNS suffix label of the connection-specific DNS suffix on each host network adapter. On the logical network, VMM also creates a VM network that is configured with “no isolation.” For example, if the DNS suffix for the host network adapter was corp.contoso.com, VMM would create a logical network named “corp,” and on it, a VM network named “corp” that is configured with no isolation.
+To illustrate how these settings work, suppose that you haven't changed the settings and you add a Hyper-V host to VMM management. In this case, VMM automatically creates logical networks that match the first DNS suffix label of the connection-specific DNS suffix on each host network adapter. On the logical network, VMM also creates a VM network that is configured with **no isolation**. For example, if the DNS suffix for the host network adapter was corp.contoso.com, VMM would create a logical network named **corp**, and on it, a VM network named “corp” that is configured with no isolation.
 
 ## Guidelines for network sites: VLAN and IP subnet settings
 The main guideline specifying VLANs and IP subnets for network sites is to reflect your network topology. For details, see the following table.

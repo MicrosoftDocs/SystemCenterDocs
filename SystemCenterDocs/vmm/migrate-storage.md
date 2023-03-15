@@ -9,7 +9,7 @@ ms.date: 08/20/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-migration
+ms.custom: intro-migration, UpdateFrequency3
 ---
 
 

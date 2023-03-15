@@ -108,10 +108,10 @@ In VMM, you can create generation 1 and generation 2 VMs.
 
 - You can add VM templates specifying either generation 1 or generation 2 to a service template. Properties will appear for the generation you choose.
 ::: moniker range="sc-vmm-2016"
-- Generation 2 VMs can only run on a host with a host operating system that supports them - Windows Server 2012 R2 onwards. For example, VMM won't place a generation 2 VM on a host running Windows Server 2012.
+- Generation 2 VMs can only run on a host with a host operating system that supports them - Windows Server 2012 R2 and later. For example, VMM won't place a generation 2 VM on a host running Windows Server 2012.
 ::: moniker-end
 ::: moniker range=">sc-vmm-2016"
-- Generation 2 VMs can only run on a host with a host operating system that supports them - Windows Server 2016 onwards. For example, VMM won't place a generation 2 VM on a host running Windows Server 2016.
+- Generation 2 VMs can only run on a host with a host operating system that supports them - Windows Server 2016 and later. For example, VMM won't place a generation 2 VM on a host running Windows Server 2016.
 ::: moniker-end
 - When you use a virtual hard disk in .vhd format for a VM or VM template, the VM is automatically generation 1 because .vhd doesn't support generation 2. If you use .vhdx, you can select which option you want to use.
 - If you use an existing virtual machine or virtual machine template as the starting point for a new virtual machine or virtual machine template, the generation is determined by the existing virtual machine or virtual machine template.
@@ -178,7 +178,7 @@ After you've set up a vCenter server and ESX/ESXi hosts, you can provision VMwar
 There are currently a couple of methods for converting VMware VMs to Hyper-V (V2V):
 
 - **Convert Virtual Machine Wizard**: In the VMM console, you can use this wizard. This method has many limitations:
-    - Supported for vSphere 4.1 onwards.
+    - Supported for vSphere 4.1 and later.
     - You can't convert VMware workstations.
     - You can't convert VMs with virtual hard disks connected to an IDE bus.
     - Online conversions aren't supported. You need to power off the VMware VMs.
