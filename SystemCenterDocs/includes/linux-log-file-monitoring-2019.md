@@ -16,17 +16,11 @@ ms.technology:  operations-manager
 Log file monitoring requires the following steps. The detailed information is provided in the following sections:
 
 ::: moniker range="sc-om-2019"
-
 1. Import the [latest SCOM 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208).
-
 ::: moniker-end
-
 ::: moniker range="sc-om-2022"
-
 1. Import the [latest SCOM 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213).
-
 ::: moniker-end
-
 2. Install the latest version of the Linux agent on each Linux computer to be monitored.
 3. Install latest [OMSAgent](https://github.com/microsoft/OMS-Agent-for-Linux) on each Linux computer to be monitored.
 4. Create Fluentd configuration file to collect logs.
@@ -46,17 +40,11 @@ Install the **Microsoft.Linux.Log.Monitoring** management pack to enable Linux l
 To configure Linux log file monitoring, do the following:
 
 ::: moniker range="sc-om-2019"
-
 1. Import the [latest SCOM 2019 Linux management pack](https://www.microsoft.com/download/details.aspx?id=58208) using the standard process for installing a management pack.
-
 ::: moniker-end
-
 ::: moniker range="sc-om-2022"
-
 1. Import the [latest SCOM 2022 Linux management pack](https://www.microsoft.com/download/details.aspx?id=104213) using the standard process for installing a management pack.
-
 ::: moniker-end
-
 2. Install the new Linux agent on the Linux servers manually or by [using Discovery wizard](/system-center/scom/manage-deploy-crossplat-agent-console).
 3. Install the latest OMSAgent on each Linux computer that you want to monitor.
 
