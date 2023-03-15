@@ -1,6 +1,6 @@
 ---
 description: This article describes logging in DPM.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

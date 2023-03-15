@@ -1,6 +1,6 @@
 ---
 description: This article describes what DPM protection groups consist of and why you should use them.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

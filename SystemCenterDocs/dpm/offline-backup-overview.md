@@ -1,6 +1,6 @@
 ---
 description: Learn about the components of offline backup in DPM
-manager: vvithal
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

@@ -1,6 +1,6 @@
 ---
 description: This article explains how to upgrade your DPM installation.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri

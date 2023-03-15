@@ -1,6 +1,6 @@
 ---
 description: This article explains the offline backup workflow for DPM.
-manager: vvithal
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

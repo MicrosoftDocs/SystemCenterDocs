@@ -1,7 +1,7 @@
 ---
 title: Add Service Certificate
 description: The Add Service Certificate activity is used in a runbook to add a certificate to a cloud service.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -47,6 +47,6 @@ There are no optional properties for this runbook activity.
 | Certificate File Path | The path to the certificate file.   | String   |
 | Service Name   | The name of the Windows Azure cloud service.   | String   |
 
-## See Also
+##  Next steps
 
 [Using Runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)

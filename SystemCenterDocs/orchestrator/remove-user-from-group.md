@@ -1,7 +1,7 @@
 ---
 title: Remove User From Group
 description: You can use the Remove User From Group activity in a runbook to remove a user from a group in the Microsoft Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 0df95529-c73f-4b20-941f-d7914707f7e7
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Remove User From Group

@@ -1,6 +1,6 @@
 ---
 description: You can back up a generic data source with DPM.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

@@ -1,7 +1,7 @@
 ---
 title: Create Cloud Service
 description: The Create Cloud Service activity creates a new cloud service in Azure.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
@@ -52,6 +52,6 @@ There are no optional properties for this runbook activity.
 | Location/Affinity Group Value | The location where the cloud service will be created, or the name of an existing affinity group associated with the subscription. | String   |
 
 
-##Other Resources
+## Next steps
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

@@ -1,7 +1,7 @@
 ---
 title: Get Group
 description: You can use the Get Group activity in a runbook to get the properties of a group in the Microsoft Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 9ede00a5-b836-4c85-ae05-ab4db8f864ab
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get Group

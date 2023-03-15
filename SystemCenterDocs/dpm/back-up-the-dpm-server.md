@@ -1,6 +1,6 @@
 ---
 description: This article helps you create a strategy for backing up the DPM server.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

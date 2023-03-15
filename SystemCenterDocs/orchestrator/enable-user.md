@@ -1,7 +1,7 @@
 ---
 title: Enable User
 description: You can use the Enable User activity in a runbook to enable a user in the Microsoft Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: a6a86852-db93-487a-8e9f-2e36c920980e
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 ---
 
 # Enable User

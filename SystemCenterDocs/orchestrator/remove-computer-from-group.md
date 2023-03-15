@@ -1,7 +1,7 @@
 ---
 title: Remove Computer From Group
 description: You can use the Remove Computer From Group activity in a runbook to remove a computer from a group in the Microsoft Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 4c5f2a00-b4bf-4315-b976-dd0a7005e47b
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Remove Computer From Group

@@ -1,6 +1,6 @@
 ---
 description: Use DPM to protect computers that are in untrusted domains or workgroups.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

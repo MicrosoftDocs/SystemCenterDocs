@@ -7,7 +7,8 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.date: 01/17/2018
-manager: carmonm
+manager: mkluck
+ms.custom: UpdateFrequency2
 ---
 # Control runbook activities
 
@@ -17,7 +18,7 @@ manager: carmonm
 
 ::: moniker-end
 
-You set the sequence of operations in runbooks by linking activities together in the **Runbook Designer**. These links are known as "smart links" because you can configure them to control the type of data passed from one activity to another. You can also control when the runbook completes activities by setting the logic for when those operations run with embedded loops. Finally, you can use text and numerical operations to manipulate data as it passes between activities, or to set conditions for the order of operations. This article describes how to control sequencing and manipulate data within your runbook.
+You set the sequence of operations in runbooks by linking activities together in the **Runbook Designer**. These links are known as **smart links** because you can configure them to control the type of data passed from one activity to another. You can also control when the runbook completes activities by setting the logic for when those operations run with embedded loops. Finally, you can use text and numerical operations to manipulate data as it passes between activities, or to set conditions for the order of operations. This article describes how to control sequencing and manipulate data within your runbook.
 
 ## Control activity sequence with smart links
 

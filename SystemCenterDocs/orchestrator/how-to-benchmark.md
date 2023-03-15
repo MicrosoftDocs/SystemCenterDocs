@@ -1,7 +1,7 @@
 ---
 title: How to create a benchmark runbook
 description: Describes how to create a benchmark runbook to evaluate performance of different logging options in a System Center 2016 - Orchestrator environment.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 0755be30-3648-47c0-a009-e2f0ff85040d
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # How to create a benchmark runbook
@@ -25,7 +25,7 @@ manager: evansma
 
 You will need to create a performance benchmark in order to optimize the performance for your Orchestrator runbook. As part of creating the benchmark you should analyze the activities in your runbook.
 
-Orchestrator runbook activities can be thought of as having two distinct types of code:  platform code and domain code. The term *domain code* is used to identify code within a runbook activity that is typically not associated with the Orchestrator platform itself \(with notable exceptions, such as **Invoke Runbook**, **Junction**, and others\). For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code \(the "plumbing" of the activity\) as well as domain code unique to invoking a SOAP\-based web service. The platform code will be very similar for most activities, since it is built on a common framework. However, there will potentially be great variation in domain code for different activities.  
+Orchestrator runbook activities can be thought of as having two distinct types of code:  platform code and domain code. The term *domain code* is used to identify code within a runbook activity that is typically not associated with the Orchestrator platform itself \(with notable exceptions, such as **Invoke Runbook**, **Junction**, and others\). For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code (the **plumbing** of the activity) as well as domain code unique to invoking a SOAP\-based web service. The platform code will be very similar for most activities, since it is built on a common framework. However, there will potentially be great variation in domain code for different activities.  
 
 ## Data Logging  
 Data logging has a major impact on runbook performance. For the purpose of understanding performance consider two logging configurations: Default logging and Common Published Data logging. Default logging results in approximately 524 bytes of data being written to the Orchestrator database each time an activity is run. Logging of common published data writes approximately 6,082 bytes of data \(12 times the default logging level\). There is a notable difference in performance between these logging levels.  

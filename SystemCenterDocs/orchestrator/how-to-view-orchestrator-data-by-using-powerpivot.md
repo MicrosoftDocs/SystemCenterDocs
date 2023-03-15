@@ -7,7 +7,8 @@ ms.technology: orchestrator
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
+ms.custom: UpdateFrequency3
 ---
 
 # View Orchestrator data using PowerPivot

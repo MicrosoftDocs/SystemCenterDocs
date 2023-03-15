@@ -1,6 +1,6 @@
 ---
 description: Describes how to manage and monitor DPM servers with Operations Manager.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

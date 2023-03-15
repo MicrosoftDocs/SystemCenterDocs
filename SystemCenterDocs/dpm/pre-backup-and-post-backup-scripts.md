@@ -1,6 +1,6 @@
 ---
 description: This article describes the  pre and post backup scripts for Data Protection Manager.
-manager: evansma
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

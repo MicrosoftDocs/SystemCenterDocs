@@ -1,7 +1,7 @@
 ---
 title: Add VM Data Disk
 description: The Add VM Data Disk activity adds a data disk to a virtual machine.
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency3
 ms.date: 1/27/2023
 ms.prod: system-center
 ms.reviewer: na
@@ -66,6 +66,6 @@ The activity publishes all the data from the required and optional properties in
 | Wait for Completion | Whether to wait for this operation to complete in Microsoft Azure before moving on to the next activity.   | Boolean   |
 | Request ID   | The unique identifier of the request to Microsoft Azure.   | String   |
 
-## See Also
+## Next steps
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

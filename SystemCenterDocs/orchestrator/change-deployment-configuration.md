@@ -1,7 +1,7 @@
 ---
 title: Change Deployment Configuration
 description: The Change Deployment Configuration activity initiates a change to the deployment configuration.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -66,6 +66,6 @@ There are no optional properties for this runbook activity.
 | Service Configuration File Path | The path to the service configuration file for the deployment.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Azure before moving on to the next activity. | Boolean   |
 
-## See Also
+## Next steps
 
 [Using Runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)

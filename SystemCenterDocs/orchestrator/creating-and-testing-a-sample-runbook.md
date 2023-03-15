@@ -1,7 +1,7 @@
 ---
 title: Creating and Testing a Sample Runbook
 description: This article describes how to create and test a simple runbook.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +12,7 @@ ms.assetid: 10b8d20a-7bf8-4af8-86fa-8b936319355b
 author: jyothisuri
 ms.author: jsuri
 ms.date: 10/12/2016
-manager: carmonm
+manager: mkluck
 ---
 
 # Creating and Testing a Sample Runbook

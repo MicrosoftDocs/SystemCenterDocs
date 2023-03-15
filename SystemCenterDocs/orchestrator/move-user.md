@@ -1,7 +1,7 @@
 ---
 title: Move User
 description: You can use the Move User activity in a runbook to move a user under a new parent path in the Microsoft Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 17575faf-3a92-453f-882f-e00f79b6f44e
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Move User

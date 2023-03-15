@@ -1,6 +1,6 @@
 ---
 description: This article describes how to create DPM reports using SQL Server Reporting Services.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

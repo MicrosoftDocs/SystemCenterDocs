@@ -1,6 +1,6 @@
 ---
 description: This article helps you identify data sources you want to protect with DPM.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center

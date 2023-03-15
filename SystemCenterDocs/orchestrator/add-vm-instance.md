@@ -1,7 +1,7 @@
 ---
 title: Add VM Instance
 description: The Add VM Instance activity adds a virtual machine to an existing deployment.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
@@ -88,6 +88,6 @@ There are no optional properties for this activity.
 | XML Configuration File Path   | The path to the configuration file to use to create the virtual machine.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Azure before moving on to the next activity. | True, False   |
 
-## See Also
+## Next steps
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
