@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 7e6ab64c-c752-4cee-9057-e4b4413e571d
+ms.custom: UpdateFrequency2
 ---
 
 # Configuration items in System Center - Service Manager
