@@ -22,7 +22,7 @@ The following table lists the release history for Orchestrator 2016.
 
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
-| ||September 2016 |2016 RTM|  
+| ||September 2016 |General Availability|  
 |7.3.164.0 |[3190603](https://support.microsoft.com/topic/update-rollup-1-for-microsoft-system-center-2016-orchestrator-a98ede60-038d-5be2-235a-90369113ff97) |October 2016 |Update Rollup 1 |  
 |N/A |N/A |N/A |Update Rollup 2 |  
 |N/A |N/A |N/A |Update Rollup 3|  
@@ -31,5 +31,3 @@ The following table lists the release history for Orchestrator 2016.
 |7.3.285.0 |[4465567](https://support.microsoft.com/topic/update-rollup-6-for-system-center-2016-orchestrator-99033b0e-d958-25a2-419d-8b2e104b27c6) |October 2018 |Update Rollup 6|
 |7.3.310.0 |[4496926](https://support.microsoft.com/topic/update-rollup-7-for-system-center-2016-orchestrator-22ee12c5-201c-8c4d-fba5-e8fb7ccc9599) |April 2019 |Update Rollup 7 |
 |7.3.327.0|[4518887](https://support.microsoft.com/topic/update-rollup-8-for-system-center-2016-orchestrator-b996c51a-922d-aa5c-88fd-c3d22115169a) |September 2019 |Update Rollup 8 |
-|N/A |N/A |N/A |Update Rollup 9 |
-|N/A |N/A |N/A |Update Rollup 10 |
