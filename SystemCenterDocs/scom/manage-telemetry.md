@@ -9,7 +9,7 @@ ms.date:  01/09/2023
 ms.topic:  article
 ms.prod:  system-center
 ms.technology: operations-manager
-ms.custom: engagement-fy23 
+ms.custom: engagement-fy23, UpdateFrequency3
 ---
 
 # Manage telemetry settings in Operations Manager

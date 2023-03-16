@@ -9,8 +9,7 @@ ms.date: 02/15/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: intro-overview
-monikerRange: '>=sc-vmm-2019'
+ms.custom: intro-overview, UpdateFrequency0.5
 ---
 
 # About Arc-enabled System Center Virtual Machine Manager

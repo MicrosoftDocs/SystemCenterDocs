@@ -10,6 +10,7 @@ keywords:
 ms.date: 05/11/2022
 ms.technology: service-manager
 ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
+ms.custom: UpdateFrequency3
 ---
 
 # Import data from Configuration Manager into Service Manager

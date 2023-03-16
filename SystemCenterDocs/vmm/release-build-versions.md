@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 monikerRange: '>=sc-vmm-2016'
+ms.custom: UpdateFrequency.5
 ---
 
 # System Center – Virtual Machine Manager build versions

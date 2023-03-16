@@ -10,6 +10,7 @@ ms.date: 10/12/2016
 title: Using Groups, Queues, and Lists in Service Manager
 ms.technology: service-manager
 ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
+ms.custom: UpdateFrequency3
 ---
 
 # Using Groups, Queues, and Lists in Service Manager
@@ -25,6 +26,7 @@ In Service Manager, you can use groups to manage configuration items, queues to 
 The **Library** pane in Service Manager contains items, such as groups, queues, and lists. You can use groups to manage configuration items, and you can use queues to manage work items. You can use lists to customize forms.
 
 ## Use groups to manage configuration items
+
 In Service Manager, groups contain objects. Typically, these objects are configuration items. Groups can include collections of objects of the same class or of different classes. For example, say you decide to create the **Exchange Servers** group. You've several methods to do this. You can create a static group, a dynamic group, or a combination of static and dynamic groups. A static group is defined by specific objects, such as "Exchange1" and "Exchange2". A dynamic group is defined by inclusion rules. Inclusion rules are based on comparing a formula to the actual property value of a configuration item. The following table shows samples of inclusion rules.
 
 |Class.Property|Operator|Value|
