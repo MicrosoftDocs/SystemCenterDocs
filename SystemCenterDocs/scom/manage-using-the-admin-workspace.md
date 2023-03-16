@@ -3,7 +3,7 @@ title: Configure a management group using the Administration workspace
 description: This article describes the functions you can perform from the Administration workspace in the Operations Manager console. In the System Center Operations Manager Operations console, the Administration workspace is the primary workspace for administrators.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 02/13/2018
 ms.custom: na
 ms.prod: system-center
@@ -22,7 +22,7 @@ ms.topic: article
 
 In the System Center Operations Manager Operations console, the Administration workspace is the primary workspace for administrators. You use the Administration workspace to configure a management group.  
 
-When you first open the Administration workspace or when you click **Administration** in the navigation pane, the Administration Overview opens, which displays task links for any required or optional configuration steps that have not been completed yet.  
+When you first open the Administration workspace or when you select **Administration** in the navigation pane, the Administration Overview opens, which displays task links for any required or optional configuration steps that haven't been completed yet.  
 
 The sections below describe the different options in the Administration workspace and link to more detailed information about the task or option.  
 
@@ -51,7 +51,7 @@ Under the  **Management Packs** node in the Administration workspace, you can pe
 |--------|-------|------------------------|  
 |Installed Management Packs | Lists all management packs imported into your management group.|[How to import, export, remove management packs](manage-mp-import-remove-delete.md)|
 |Tune Management Packs| Highlight the management packs and its workflows which generate a high volume of alerts.| [Data driven alert management](manage-alert-data-driven-management.md)|
-|Updates and Recommendations | Identify new technologies or workloads that are not monitored by Operations Manager or not monitored with the latest version of a management pack.| [MP Updates and Recommendations](manage-mp-mpassessment.md)
+|Updates and Recommendations | Identify new technologies or workloads that aren't monitored by Operations Manager or not monitored with the latest version of a management pack.| [MP Updates and Recommendations](manage-mp-mpassessment.md)
 
 For more information, see [Management pack overview](manage-overview-management-pack.md).  
 
@@ -65,18 +65,18 @@ You can use **Network Management** in the Administration workspace to discover n
 |Network Devices Pending Management|To retry or reject discovered network devices that are pending management|[How to Discover Network Devices in Operations Manager](manage-monitor-networkdevice-discover.md)|  
 
 ## Notifications  
-Notifications generate messages or run commands automatically when an alert is raised on a monitored system. By default, notifications for alerts are not configured. For Operations Manager users to be notified immediately when an alert is generated, you need to configure a channel for notifications, add subscribers, and then create a notification.  
+Notifications generate messages or run commands automatically when an alert is raised on a monitored system. By default, notifications for alerts aren't configured. For Operations Manager users to be notified immediately when an alert is generated, you need to configure a channel for notifications, add subscribers, and then create a notification.  
 
 In **Notifications** in the Administration workspace, you can create channels, subscribers, subscriptions, and modify the channels, subscribers, and subscriptions that you create. For more information, see [Subscribing to Alert Notifications](manage-notifications-alert-notifications.md).  
 
 ## Operations Management Suite
-Operations Manager can be connected to Log Analytics (formerly referred to as Operations Management Suite or OMS) to forward data from agent-managed systems you specify, and your management group to your Log Analytics workspace.  Integrating with Log Analytics allows for further data analysis leveraging its enhanced query language and visualizations.   
+Operations Manager can be connected to Log Analytics (formerly referred to as Operations Management Suite or OMS) to forward data from agent-managed systems you specify, and your management group to your Log Analytics workspace.  Integrating with Log Analytics allows for further data analysis, leveraging its enhanced query language and visualizations. 
 
 ## Operations Manager Products
-This section allows you to quickly inventory each of the Operations Manager roles that have been deployed in your management group, including specific details such as version, specific update release applied, SQL Server name and instance, date installed, etc.  
+This section allows you to quickly inventory each of the Operations Manager roles that have been deployed in your management group, including specific details such as version, specific update release applied, SQL Server name and instance, date installed, and so on.  
 
 ## Product Connectors  
-Product connectors are used to synchronize Operations Manager data with other management systems such as those that monitor non\-Windows computers or create trouble\-tickets. Product connectors can integrate a deployment of Operations Manager into another management platform or connect other management systems into a full Operations Manager management solution. Any product connectors that you integrate with Operations Manager will be displayed in this section of the Administration workspace.  
+Product connectors are used to synchronize Operations Manager data with other management systems such as those that monitor non-Windows computers or create trouble-tickets. Product connectors can integrate a deployment of Operations Manager into another management platform or connect other management systems into a full Operations Manager management solution. Any product connectors that you integrate with Operations Manager will be displayed in this section of the Administration workspace.  
 
 When you install Operations Manager, two internal product connectors are installed. These are used by Operations Manager.  
 
@@ -95,11 +95,11 @@ The following table summarizes the settings you can manage in **Settings** in th
 
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
-|Agent Heartbeat|Agents generate a heartbeat at specific intervals to ensure they are operating properly. You can adjust the interval.|[How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md)|  
+|Agent Heartbeat|Agents generate a heartbeat at specific intervals to ensure they're operating properly. You can adjust the interval.|[How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md)|  
 |Alerts|-   To configure alert resolution states.<br>-   To configure automatic alert resolution.|-   [How to Set Alert Resolution States](manage-alert-set-resolution-states.md)<br>-   [How to Configure Automatic Alert Resolution](manage-alert-configure-auto-resolution.md)|  
 |Database Grooming|To configure how long different types of data should be retained in the operational database.|[Maintenance of Operations Manager](manage-omdb-grooming-settings.md)|  
 |Privacy|To modify the settings for the following programs:<br><br>-   Customer Experience Improvement Program (CEIP)<br>-   Operational Data Reporting<br>-   Error Reporting|[Sending Data to Microsoft](manage-client-monitoring-using-aem.md) in the Deployment Guide|  
 |Reporting|Configure the path for the reporting server.|[Using the Reporting Workspace in Operations Manager](manage-reports-run-save-export.md)|  
 |Web Addresses|Designate web addresses for the Web console and online company knowledge.|[How to Connect to the Web Console](manage-consoles-how-to-connect.md#how-to-connect-to-the-web-console)|  
 |Server Heartbeat|Configure the number of missed heartbeats before the management server pings the agent-managed computer.|[How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md)|  
-|Server Security|Specify how the management server should handle manually-installed agents.|[Process Manual Agent Installations](manage-process-manual-agent-install.md)|
+|Server Security|Specify how the management server should handle manually installed agents.|[Process Manual Agent Installations](manage-process-manual-agent-install.md)|

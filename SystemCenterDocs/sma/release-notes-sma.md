@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: service-management-automation
 monikerRange: '>sc-sma-2016'
+ms.custom: UpdateFrequency2
 ---
 
 # Release notes for System Center - Service Management Automation

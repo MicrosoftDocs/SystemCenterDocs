@@ -8,6 +8,7 @@ ms.prod: system-center
 ms.date: 01/22/2018
 title: Child runbooks in Service Management Automation
 ms.technology: service-management-automation
+ms.custom: UpdateFrequency2
 ---
 
 # Child runbooks in Service Management Automation

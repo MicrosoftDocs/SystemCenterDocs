@@ -78,11 +78,11 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
 2.  To install the package, enter:
 
-    `sh ./scx-<version>.solaris.<version>.<arch>.sh –install`
+    `sh ./scx-<version>.solaris.<version>.<arch>.sh -install`
 
 3.  To verify that the package is installed, enter:
 
-    `pkginfo –l scx`
+    `pkginfo -l scx`
 
 4.  To verify that the Microsoft SCX CIM Server is running, enter:
 
@@ -102,7 +102,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
 4.  To verify that the Microsoft SCX CIM Server is running, enter:
 
-    `ps –ef|grep omi`
+    `ps -ef | grep omi`
 
     Look for the following process in the list:
 
@@ -122,7 +122,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
 4.  To verify that the Microsoft SCX CIM Server is running, enter:
 
-    `ps –ef|grep omi`
+    `ps -ef | grep omi`
 
     Look for the following process in the list:
 
@@ -153,7 +153,7 @@ You must have already manually installed an agent before you start this procedur
 
 6.  Securely copy or transfer the `scx_new.pem` file into the `/etc/opt/microsoft/scx/ssl` folder on the computer that is hosting the UNIX or Linux operating system. This replaces the `original scx-host-<hostname>.pem` file.
 
-7.  Restart the agent by entering `scxadmin –restart`.
+7.  Restart the agent by entering `scxadmin -restart`.
 
 ## Discovering computers after manual deployment
 
