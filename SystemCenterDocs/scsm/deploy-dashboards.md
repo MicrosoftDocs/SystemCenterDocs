@@ -2,7 +2,7 @@
 title: Create and deploy dashboards
 description: Explains how to create and deploy Service Manager dashboards.
 manager: mkluck
-ms.custom: na, UpdateFrequency3
+ms.custom: na, UpdateFrequency2
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

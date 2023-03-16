@@ -2,7 +2,7 @@
 title: Overview of OLAP cubes for advanced analytics
 description: Provides an overview of Service Manager OLAP cubes for advanced analytics.
 manager: mkluck
-ms.custom: na, UpdateFrequency5
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -61,7 +61,7 @@ To see how data warehouse cubes are represented in the Service Manager console, 
 
 The following illustration shows an image from SQL&nbsp;Server Business Intelligence Development Studio \(BIDS\) that depicts the main parts that are required for online analytical processing \(OLAP\) cubes. These parts are the data source, data source view, cubes, and dimensions. The following sections describe the OLAP cube parts and the actions that users can take using them.  
 
- ![Image of the cube architecture.](./media/olap-cubes-overview/ops-cubedimensions.png)  
+:::image type="content" source="media/olap-cubes-overview/ops-cubedimensions.png" alt-text="Image of the cube architecture.":::  
 
 ### Data source  
 
