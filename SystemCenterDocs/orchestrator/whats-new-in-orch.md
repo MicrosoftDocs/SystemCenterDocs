@@ -10,7 +10,7 @@ ms.date: 02/22/2023
 ms.technology: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: '>sc-orch-2016'
-ms.custom: engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # What's new in System Center Orchestrator

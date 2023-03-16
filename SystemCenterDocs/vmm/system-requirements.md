@@ -9,6 +9,7 @@ ms.date: 01/13/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency.5
 ---
 
 # System requirements for System Center Virtual Machine Manager
