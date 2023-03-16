@@ -2,7 +2,7 @@
 title: Prepare for disaster recovery
 description: This article describes the steps that you must take for Service Manager disaster recovery before problems occur.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency2
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

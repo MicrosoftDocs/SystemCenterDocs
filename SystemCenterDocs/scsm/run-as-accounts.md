@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/13/2020
 ms.technology: service-manager
 ms.assetid: 556f240e-d032-406a-ba10-2404fb591d04
+ms.custom: UpdateFrequency2
 ---
 
 # Manage Run As accounts in Service Manager
