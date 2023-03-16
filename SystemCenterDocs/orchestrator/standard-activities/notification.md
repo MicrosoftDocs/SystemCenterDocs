@@ -1,7 +1,7 @@
 ---
 title: Notification 
 description: This article describes the tasks that you can accomplish when using each Notification activity.
-ms.custom: ""
+ms.custom: UpdateFrequency5
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 56f23b57-6d16-4bed-8e04-91d44482d3a9
 caps.latest.revision: 7
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Notification
 

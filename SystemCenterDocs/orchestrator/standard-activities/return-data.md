@@ -1,7 +1,7 @@
 ---
 title: Return Data 
 description: This article describes the Return Data activity that allows you to return data from the current runbook to a runbook that invoked the runbook.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 60cdc2df-a0fe-49a8-aebf-ee1e2f9c60b9
 caps.latest.revision: 16
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Return Data
 

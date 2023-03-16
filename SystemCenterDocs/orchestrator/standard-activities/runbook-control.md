@@ -1,7 +1,7 @@
 ---
 title: Runbook Control
 description: This article describes the tasks that can be accomplished using the initialize data, return data, junction and invoke runbook activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: dcbc0186-947f-4cf5-af5e-720980a2c8c0
 caps.latest.revision: 9
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Runbook Control
 
