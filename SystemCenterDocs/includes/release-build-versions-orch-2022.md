@@ -21,4 +21,4 @@ The following table lists the release history for Orchestrator 2022.
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.22.2.0||April 2022 |2022 RTM |
-
+|10.22.6.1||January 2023 |Update Rollup 1 |
