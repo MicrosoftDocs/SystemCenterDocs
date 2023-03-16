@@ -15,10 +15,10 @@ ms.technology: operations-manager
 
 By default, all discoveries and monitors configured in [Management Pack for SQL Server](sql-server-management-pack-supported-configuration.md) use accounts defined in the **Default Action Account** Run As profile.
 
-If the default action account for the given system does not have necessary permissions to discover and monitor instances of SQL Server Analysis Services, those systems can be bound to more specific credentials in **Microsoft SQL Server** Run As profiles.
+If the default action account for the given system doesn't have the necessary permissions to discover and monitor instances of SQL Server Analysis Services, those systems can be bound to more specific credentials in **Microsoft SQL Server** Run As profiles.
 
 >[!NOTE]
->This management pack does not support least-privilege monitoring configurations and requires an action account to be a local administrator on SSAS servers.
+>This management pack doesn't support least-privilege monitoring configurations and requires an action account to be a local administrator on SSAS servers.
 
 ## Default Run As Profiles
 
@@ -107,7 +107,7 @@ After importing the management pack, the following default Run As profiles are c
 
 ## SQL Server and SQL Server Analysis Services Run As Profiles
 
-To use separate accounts for monitoring of DB Engine, SSRS, and SSAS, create 3 different Windows accounts, and configure each account in each Run As profile according to the following table.
+To use separate accounts for monitoring of DB Engine, SSRS, and SSAS, create three different Windows accounts, and configure each account in each Run As profile according to the following table.
 
 |Monitoring Account|[Association] Used for|
 |-|-|

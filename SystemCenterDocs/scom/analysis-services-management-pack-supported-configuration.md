@@ -13,7 +13,7 @@ ms.technology: operations-manager
 
 # Scope and Supported Configuration in Management Pack for SQL Server Analysis Services
 
-This section lists operating systems and features supported by Management Pack for SQL Server Analysis Services.
+This article lists operating systems and features supported by Management Pack for SQL Server Analysis Services.
 
 ## SQL Server Analysis Services Features
 
@@ -53,7 +53,7 @@ Management Pack for SQL Server Analysis Services supports the following versions
 - System Center Operations Manager 2019
 - System Center Operations Manager 2022
 
-A dedicated Operations Manager management group is not required for this management pack.
+A dedicated Operations Manager management group isn't required for this management pack.
 
 ## Operating Systems and Platforms
 

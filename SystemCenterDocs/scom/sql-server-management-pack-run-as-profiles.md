@@ -33,20 +33,20 @@ Management Pack for SQL Server provides the following Run As profiles:
 
   Management Pack for SQL Server needs an author set of privileges on the System Center Operations Manager SDK to create a management pack and store overrides in it.
 
-  If the default action account on System Center Operations Manager does not have these permissions, create such an account and map it to the Microsoft SQL Server SDK Run As Profile.
+  If the default action account on System Center Operations Manager doesn't have these permissions, create such an account and map it to the Microsoft SQL Server SDK Run As Profile.
 
 - **Microsoft SQL Server SQL Credentials Run As Profile**
 
   This profile is used for [agentless monitoring](sql-server-management-pack-monitoring-modes.md#configuring-agentless-monitoring-mode) mode only.
 
 >[!NOTE]
->Do not bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes as only a basic action account can be bound to this profile. Also, do not use a Windows account or non-basic account with this profile.
+>Don't bind accounts to the **Microsoft SQL Server SQL Credentials Run As Profile** if you monitor SQL Server in agent or mixed monitoring modes, as only a basic action account can be bound to this profile. Also, don't use a Windows account or non-basic account with this profile.
 
 When using agent or mixed monitoring mode, all discoveries, monitors, and tasks use accounts from the **Default Action Account** Run As profile.
 
-If the default action account for a given system does not have necessary permissions to discover and monitor instances of SQL Server, such systems can be bound to more specific credentials defined in **Microsoft SQL Server** Run As Profiles.
+If the default action account for a given system doesn't have the necessary permissions to discover and monitor instances of SQL Server, such systems can be bound to more specific credentials defined in **Microsoft SQL Server** Run As Profiles.
 
-For more information about Run As accounts, see [Managing Run As accounts and profiles](manage-security-maintain-runas-profiles.md)
+For more information about Run As accounts, see [Managing Run As accounts and profiles](manage-security-maintain-runas-profiles.md).
 
 ## Enabling Allow Log On Locally Security Policy
 
@@ -64,7 +64,7 @@ To configure Run As profiles, use one of the following scenarios:
 
 ### Action Account is Local Administrator and SA
 
-A System Center Operations Manager default action account is mapped to either local system account or any domain user account that is a member of the local administrators group on the monitored machines.
+A System Center Operations Manager default action account is mapped to either local system account or any domain user account that is a member of the local administrators' group on the monitored machines.
 
 The account that you use must be granted the SQL System Administrator (SA) rights on the monitored SQL Server instances.
 
@@ -74,15 +74,15 @@ Follow these steps to ensure that all requirements are met:
 
 - If you store SQL Server databases on an SMB file share, the default action account must have the rights, as described in [Low-Privilege Agent Monitoring](sql-server-management-pack-low-privilege-monitoring.md).
 
-- In cases when servers hosting Always On Availability Replicas (at least one of them) have a machine name consisting of more than 15 characters, make sure to perform the steps described in [Monitoring of AG on Windows Servers with Long Names](#monitoring-of-ag-on-windows-servers-with-long-names).
+- In cases when servers hosting Always On Availability Replicas (at least one of them) have a machine name consisting of more than 15 characters, ensure to perform the steps described in [Monitoring of AG on Windows Servers with Long Names](#monitoring-of-ag-on-windows-servers-with-long-names).
 
 ### Action Account is Local Administrator w/o SA
 
-A System Center Operations Manager default action account is mapped to either local system account or domain user account, but SA rights cannot be granted to this account due to security policies.
+A System Center Operations Manager default action account is mapped to either local system account or domain user account, but SA rights can't be granted to this account due to security policies.
 
 If the security policy allows granting SA rights to the separate domain user account used for launching SQL Server MP workflows only, perform the following steps:
 
-1. Create a new domain user account and add this account to the Local Administrators group on each monitored server.
+1. Create a new domain user account and add this account to the Local Administrators' group on each monitored server.
 
 2. Grant SA rights to this account on SQL Server.
 
@@ -96,7 +96,7 @@ If you store SQL Server databases on an SMB file share, the default action accou
 
 [This scenario is for agent monitoring mode only.]
 
-A System Center Operations Manager default action account is mapped to either local system account or domain user account, but SA rights cannot be granted to this account due to security policies that forbid access to SQL Server.
+A System Center Operations Manager default action account is mapped to either local system account or domain user account, but SA rights can't be granted to this account due to security policies that forbid access to SQL Server.
 
 You can grant SA or low privilege rights to System Center Operations Manager HealthService using its Service Security Identifier. For more information, see [SQL Server uses a service SID to provide service isolation](https://support.microsoft.com/help/2620201/sql-server-uses-a-service-sid-to-provide-service-isolation).
 
@@ -104,7 +104,7 @@ Follow these steps to configure the security configuration using SID:
 
 1. Configure a service SID for HealthService, as described in [Service SID](sql-server-management-pack-service-sid.md).
 
-2. If you have SQL Server cluster instances, perform the steps provided in [Service SID for SQL Server Cluster Instances and AG](sql-server-management-pack-service-sid.md).
+2. If you've SQL Server cluster instances, perform the steps provided in [Service SID for SQL Server Cluster Instances and AG](sql-server-management-pack-service-sid.md).
 
 ## Agentless Monitoring Mode
 
@@ -116,7 +116,7 @@ For more information on how to configure low privilege monitoring in agentless m
 
 Regardless of whether you use a local system account, domain user account, or rights assignment, permissions listed below are required.
 
-**Example**: You have three replicas in your Availability Group that are hosted on the following computers:
+**Example**: You've three replicas in your Availability Group that are hosted on the following computers:
 
 - Computer_1
 - Computer_2
@@ -139,33 +139,33 @@ To configure permissions for Always On workflows when server names exceed 15 cha
 
 3. Open the **COM Security** tab.
 
-4. In the **Launch and Activation Permissions** section, click **Edit Limits**.
+4. In the **Launch and Activation Permissions** section, select **Edit Limits**.
 
-    ![Editing limits for always on](./media/sql-server-management-pack/editing-limits.png)
+    ![Screenshot of Editing limits for always on.](./media/sql-server-management-pack/editing-limits.png)
 
 5. In the **Launch and Activation Permission** window, enable the following permissions for the remote machine account:
 
     - Remote Launch
     - Remote Activation
 
-    ![Enabling remote machine permissions](./media/sql-server-management-pack/remote-machine-account.png)
+    ![Screenshot of Enabling remote machine permissions.](./media/sql-server-management-pack/remote-machine-account.png)
 
-6. Open **WMI Control** snap-in properties, go to the **Security** tab, select the **Root\CIMV2** namespace, and click **Security**.
+6. Open **WMI Control** snap-in properties, go to the **Security** tab, select the **Root\CIMV2** namespace, and select **Security**.
 
 7. Allow the following permissions for the target computer:
 
     - Enable Account
     - Remote Enable
 
-    ![Enabling target machine permissions](./media/sql-server-management-pack/target-computer-permissions.png)
+    ![Screenshot of Enabling target machine permissions.](./media/sql-server-management-pack/target-computer-permissions.png)
 
-8. Click **Advanced**, select a target account, and click **Edit**.
+8. Select **Advanced**, select a target account, and select **Edit**.
 
-9. From the **Applies to** drop-down list, select **This namespace only**.
+9. From the **Applies to** dropdown list, select **This namespace only**.
 
 10. In the **Permissions** section, enable the following checkboxes:
 
     - Enable Account
     - Remote Enable
 
-    ![Configuring CIMV permissions](./media/sql-server-management-pack/permissions-cimv.png)
+    ![Screenshot showing Configuring CIMV permissions.](./media/sql-server-management-pack/permissions-cimv.png)

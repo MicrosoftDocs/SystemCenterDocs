@@ -9,6 +9,7 @@ ms.date: 11/22/2017
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency3
 ---
 
 # VMM server collate mapping
@@ -65,7 +66,7 @@ This article provides the code and associated details for the VMM server collate
 
 **Code** | **Details**
 --- | ---
-3076|Chinese (Hong Kong SAR, PRC
+3076|Chinese (Hong Kong SAR, PRC)
 136196|Chinese (Macau)
 1028|Chinese (Taiwan)
 5124|Chinese (Macao SAR)
@@ -162,7 +163,7 @@ This article provides the code and associated details for the VMM server collate
 
 **Code** | **Details**
 --- | ---
-1044 |Norwegian (Norwegian (Bokmål, Norway)
+1044 |Norwegian (Norwegian (Bokmål, Norway))
 2068|Norwegian (Nynorsk, Norway)
 
 
@@ -176,7 +177,7 @@ This article provides the code and associated details for the VMM server collate
 
 **Code** | **Details**
 --- | ---
-1055 |Turkish (Turkey)
+1055 |Turkish (Türkiye)
 
 
 **Collation Name = Hungarian_100_CI_AS**

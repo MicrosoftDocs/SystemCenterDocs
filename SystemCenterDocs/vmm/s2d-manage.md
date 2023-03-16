@@ -9,6 +9,7 @@ ms.date: 02/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency2
 ---
 
 # Manage Storage Spaces Direct clusters

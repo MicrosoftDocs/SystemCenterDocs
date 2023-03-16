@@ -5,17 +5,18 @@ description: This article explains a security configuration in Management Pack f
 author: Anastas1ya
 ms.author: v-asimanovic
 manager: evansma
-ms.date: 3/17/2021
+ms.date: 01/24/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
+ms.custom: engagement-fy23
 ---
 
 # Security Configuration
 
-Monitoring accounts, SQL accounts, and AAD principals used by this management pack for monitoring should have enough permissions to access each managed instance specified in your monitoring templates.
+Monitoring accounts, SQL accounts, and Azure Active Directory principles used by this management pack for monitoring should have enough permissions to access each managed instance specified in your monitoring templates.
 
-Every managed instance should have a login for the monitoring account. This login should be granted either of the following permissions:
+Every managed instance should have a sign-in for the monitoring account. This sign-in should be granted either of the following permissions:
 
 - Sysadmin rights
 
@@ -23,12 +24,12 @@ Every managed instance should have a login for the monitoring account. This logi
 
 To configure least-privilege monitoring, use the following scripts as an example.
 
-The following script should be run against every managed instance. When deploying new managed instances, make sure to run this script for each of these instances. You do not need to run the script for each new database that you have created after the initial execution. The script updates the **model** database so that later created databases will have the required user, but you need to run this script for every database that was attached or restored after the initial execution of this script.
+The following script should be run against every managed instance. When deploying new managed instances, ensure to run this script for each of these instances. You don't need to run the script for each new database that you've created after the initial execution. The script updates the **model** database so that later created databases will have the required user, but you need to run this script for every database that was attached or restored after the initial execution of this script.
 
 ```SQL
 --First script that:
 -- - Grants server-level permissions to the monitoring account.
--- - Creates a user and role in the master, msdb and model databases and grants the required permissions to it.
+-- - Creates a user and role in the master, msdb, and model databases and grants the required permissions to it.
 -- - Creates a user and role in all user databases.
 --Don't forget to replace 'YOURPASSWORD' with your value in @createLoginCommand variable.
 USE [master];
@@ -71,7 +72,7 @@ EXEC sp_addrolemember @rolename='db_owner', @membername='MILowPriv_role';
 EXEC sp_addrolemember @rolename='SQLAgentReaderRole', @membername='MILowPriv_role';
 ```
 
-This script adds the monitoring account to the **db_owner** role which may not be allowed. The **db owner** permissions are required to enable the management pack tasks to run DBCC checks. If you do not need these tasks, do not give these permissions.
+This script adds the monitoring account to the **db_owner** role, which may not be allowed. The **db owner** permissions are required to enable the management pack tasks to run DBCC checks. If you don't need these tasks, don't give these permissions.
 
 ```SQL
 --Second script that adds MILowPriv user to db_owner role for master, msdb, model, and all user databases.

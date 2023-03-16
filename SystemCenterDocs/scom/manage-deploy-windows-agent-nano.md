@@ -4,7 +4,7 @@ title: Install Agent on Nano Server
 description: This article describes how to install the Operations Manager agent on Nano Server.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/21/2022
 ms.custom: na, intro-installation
 ms.prod: system-center
@@ -19,7 +19,7 @@ Windows Server 2016 Nano Server is a new installation option introduced in Windo
 
 ## Nano Server monitoring capabilities
 
-With the release of Nano Server you can  monitor the basic operations of the Server by using the Windows Server Operating System Management Pack.  You can also monitor a Nano Server running the following workloads:
+With the release of Nano Server you can  monitor the basic operations of the Server by using the Windows Server Operating System Management Pack. You can also monitor a Nano Server running the following workloads:
 
 - Windows Failover Cluster  
 - Domain Name System (DNS) server
@@ -27,7 +27,7 @@ With the release of Nano Server you can  monitor the basic operations of the Ser
 
 You can download these management packs for Nano Server from the [Microsoft Download Center](https://www.microsoft.com/download).  
 
-Monitoring a Nano Server installation is similar to monitoring any other installation of Windows Server, however, there are some key differences in how you install the agent on a Nano Server.
+Monitoring a Nano Server installation is similar to monitoring any other installation of Windows Server; however, there are some key differences in how you install the agent on a Nano Server.
 
 You will need to follow the steps listed below to start monitoring a Nano Server.
 
@@ -39,15 +39,15 @@ You will need to follow the steps listed below to start monitoring a Nano Server
 
 4.  [Verify that you are monitoring your Nano Server](#verify-that-you-are-monitoring-your-nano-server).
 
-There are several limitations in this release of the Nano Server agent. The following operations are not supported in this release:
+There are several limitations in this release of the Nano Server agent. The following operations aren't supported in this release:
 
 -   Installing the Operations Manager Agent via an MSI package.
 
--   Monitoring a Nano Server that is not in the same domain as the Operations Manager Management Server.
+-   Monitoring a Nano Server that isn't in the same domain as the Operations Manager Management Server.
 
 -   Monitoring a Nano Server with a Management Pack written in VBScript or JScript.
 
--   Monitoring .Net applications running on a Nano Server.
+-   Monitoring .NET applications running on a Nano Server.
 
 -   Process Monitoring on the Nano Server.
 
@@ -61,7 +61,7 @@ There are several limitations in this release of the Nano Server agent. The foll
 
 -   Using network discovery rules to discover devices that support ICMP.
 
--   Monitoring specific URL's on a Nano Server.
+-   Monitoring specific URLs on a Nano Server.
 
 -   Collecting data from the Application Log of a Nano Server.
 
@@ -77,8 +77,8 @@ There are several limitations in this release of the Nano Server agent. The foll
 
 2.  Add the Microsoft-OneCore-ReverseForwarders package as described in the Getting Started with Nano Server topic.
 
-3.  Join the Nano Server to the same domain as the  Operations Manager Management Server.
-There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the following document [Discover and install agent on Windows](~/scom/manage-deploy-windows-agent-console.md).
+3.  Join the Nano Server to the same domain as the Operations Manager Management Server.
+There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the article [Discover and install agent on Windows](~/scom/manage-deploy-windows-agent-console.md).
 
 Use the following procedure to install the agent with a PowerShell script.   
 
@@ -95,7 +95,7 @@ Use the following procedure to install the agent with a PowerShell script.
    ```
 
    > [!NOTE]
-   > If the installation is successful you will see "Installation successful" in the Installlog.txt file which the installer will add to the NanoAgent\NanoServer directory on the Nano Server. You should not see any errors in that file.
+   > If the installation is successful, you will see **Installation successful** in the Installlog.txt file which the installer will add to the NanoAgent\NanoServer directory on the Nano Server. You shouldn't see any errors in that file.
 
 5. Run the following command on the Nano Server:
 
@@ -104,22 +104,22 @@ Use the following procedure to install the agent with a PowerShell script.
    ```
    ### Troubleshooting agent installation
 
-If you encounter any difficulties with setting up the Operations Manager Agent on a Nano Server you can follow the checklist below for possible solutions.
+If you encounter any difficulties with setting up the Operations Manager Agent on a Nano Server, you can follow the checklist below for possible solutions.
 
 |Error Message|Possible Reason|Resolution|
 |-------------|-------------|-------------|
-|There was an error opening the firewall port|Insufficient permissions for setting the Remote Event Log Management firewall rule.|Make sure the account the script is running under has sufficient permissions to set the firewall rule.|
-|Agent directory already present in Nano Server. Please uninstall the agent using the uninstallation script and then try again.|If you ran the installation script already and it did not complete, the Agent directory might have been created already.|Run the uninstallation script as suggested by the error message.|
-|Setting up and importing the registry failed.|Insufficient permissions to edit the registry.|Make sure the account the script is running under has sufficient permissions to edit the registry and run the installation script again.|
-|Failed to install performance counters.|Insufficient permissions to edit the registry.|Make sure the account the script is running under has sufficient permissions to edit the registry and run the installation script again.|
+|There was an error opening the firewall port|Insufficient permissions for setting the Remote Event Log Management firewall rule.|Ensure the account the script is running under has sufficient permissions to set the firewall rule.|
+|Agent directory already present in Nano Server. Uninstall the agent using the uninstallation script and then try again.|If you ran the installation script already and it didn't complete, the Agent directory might have been created already.|Run the uninstallation script as suggested by the error message.|
+|Setting up and importing the registry failed.|Insufficient permissions to edit the registry.|Ensure the account the script is running under has sufficient permissions to edit the registry and run the installation script again.|
+|Failed to install performance counters.|Insufficient permissions to edit the registry.|Ensure the account the script is running under has sufficient permissions to edit the registry and run the installation script again.|
 
 ### Validate that the Operations Manager agent has been successfully installed
 
-1.  Open the Services console on a computer joined to the same domain as the Nano Server by running the running the services.msc command.
+1.  Open the Services console on a computer joined to the same domain as the Nano Server by running the services.msc command.
 
 2.  Connect to the Nano Server in the Action panel by specifying the Fully Qualified Domain Name (FQDN) of the Nano Server.
 
-3.  Verify that the Status of the Microsoft Monitoring Agent Service is "Running".
+3.  Verify that the Status of the Microsoft Monitoring Agent Service is **Running**.
 
 ## Start Monitoring your Nano Server
 
@@ -149,22 +149,22 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
     ```
 
     > [!NOTE]
-    > You can  validate that the Operations Manager agent has been removed by checking that the uninstalllog.txt file in the \NanoAgent\NanoServer folder does not contain any errors and that  you see the message "Successfully un-installed the agent from Nano Server" in the log file.
+    > You can validate that the Operations Manager agent has been removed by checking that the uninstalllog.txt file in the \NanoAgent\NanoServer folder doesn't contain any errors and that  you see the message **Successfully un-installed the agent from Nano Server** in the log file.
 
 ## Troubleshooting agent uninstall
 
-If you encounter any difficulties with removing the Operations Manager Agent on a Nano Server you can follow the checklist below for possible solutions.
+If you encounter any difficulties with removing the Operations Manager Agent on a Nano Server, you can follow the checklist below for possible solutions.
 
 |Error Message|Possible Reason|Resolution|
 |-------------|-------------|-------------|
-|HealthService was not found on the Nano Server. Assuming previous uninstall didn't complete.|If the installation did not complete the HealthService might not have been setup. Another process could also be using the HealthService.|Make sure the HealthService is not being used and run the uninstall script again.|
-|Unable to delete HealthService on Nano Server.|The HealthService may be busy or another process is using the HealthService.|Make sure the HealthService is not in use and run the uninstall script again.|
-|Unable to kill the MonitoringHost(s) on the Nano Server.|The Operations Manager agent runs in the MonitoringHost process. If that process is active the Uninstallation script will not be able to terminate it.|Make sure the MonitoringHost process is not running, and run the uninstall script again.|
-|Unable to uninstall the performance counters.|Insufficient permissions to edit the registry.|Make sure the account the script is running under has sufficient permissions to edit the registry and run the uninstall script again.|
-|Unable to remove registry changes done by the Operations Manager agent on Nano Server.|Insufficient permissions to edit the registry.|Make sure the account the script is running under has sufficient permissions to edit the registry and run the Uninstallation script again.|
-|Unable to delete the agent directory.|Insufficient permissions to access the NanoAgent directory.|Make sure the account the script is running under has sufficient permissions to access the NanoAgent directory and run the uninstall script again.|
-|Unable to locate agent folder on the Nano Server.|Either the NanoAgent directory has been moved, or the account has insufficient permissions to access the NanoAgent directory.|Make sure the account the script is running under has sufficient permissions to access the NanoAgent directory and that the NanoAgent directory is present and run the uninstall script again.|
-|Unable to remove the agent directory. Try restarting the Nano Server and then re-running this script.|A process may be using the Operations Manager agent.|Make sure there are no processes attached to the Operations Manager agent and run the uninstall script again.|
+|HealthService wasn't found on the Nano Server. Assuming previous uninstall didn't complete.|If the installation didn't complete, the HealthService might not have been set up. Another process could also be using the HealthService.|Ensure the HealthService isn't being used and run the uninstall script again.|
+|Unable to delete HealthService on Nano Server.|The HealthService may be busy or another process is using the HealthService.|Ensure the HealthService isn't in use and run the uninstall script again.|
+|Unable to kill the MonitoringHost(s) on the Nano Server.|The Operations Manager agent runs in the MonitoringHost process. If that process is active, the Uninstallation script won't be able to terminate it.|Ensure the MonitoringHost process isn't running, and run the uninstall script again.|
+|Unable to uninstall the performance counters.|Insufficient permissions to edit the registry.|Ensure the account the script is running under has sufficient permissions to edit the registry and run the uninstall script again.|
+|Unable to remove registry changes done by the Operations Manager agent on Nano Server.|Insufficient permissions to edit the registry.|Ensure the account the script is running under has sufficient permissions to edit the registry and run the Uninstallation script again.|
+|Unable to delete the agent directory.|Insufficient permissions to access the NanoAgent directory.|Ensure the account the script is running under has sufficient permissions to access the NanoAgent directory and run the uninstall script again.|
+|Unable to locate agent folder on the Nano Server.|Either the NanoAgent directory has been moved, or the account has insufficient permissions to access the NanoAgent directory.|Ensure the account the script is running under has sufficient permissions to access the NanoAgent directory and that the NanoAgent directory is present and run the uninstall script again.|
+|Unable to remove the agent directory. Try restarting the Nano Server and then re-running this script.|A process may be using the Operations Manager agent.|Ensure there are no processes attached to the Operations Manager agent and run the uninstall script again.|
 
 ## Installing updates to the Nano agent
 
@@ -174,11 +174,11 @@ The Nano agent can be updated by one of the following methods:
 
     Updates are offered and installed automatically from Microsoft Update to an Operations Manager management server. With Operations Manager 2016, the management server updates will also include the updated files for Nano agent.  
 
-    After the management server is upgraded, the Nano agents will be placed in a pending management state, as described in the [process manual agent installations](~/scom/manage-deploy-windows-agent-manually.md) topic. After approving updates, the agents will receive and apply the update.  Alternatively, you can trigger repair from the Operations console on any Nano agent. This will cause the update to be pushed and installed on the Nano agent from the management server.
+    After the management server is upgraded, the Nano agents will be placed in a pending management state, as described in the [process manual agent installations](~/scom/manage-deploy-windows-agent-manually.md) article. After approving updates, the agents will receive and apply the update.  Alternatively, you can trigger repair from the Operations console on any Nano agent. This will cause the update to be pushed and installed on the Nano agent from the management server.
 
 2. Manually install update
 
-    Updates to the Nano agent are available for download by following the instructions in the KB article and applying the update manually. You can install these downloaded updates on a Nano agent machine using the following Powershell script.  
+    Updates to the Nano agent are available for download by following the instructions in the KB article and applying the update manually. You can install these downloaded updates on a Nano agent machine using the following PowerShell script.  
 
     ```powershell
       .\UpdateNanoServerScomAgentOnline.ps1 -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder <<Path where the update .cab is already expanded OR path to one or more Nano-agent update .cab files> -IsCabExpanded <$true if BinaryFolder path is to an expanded .cab, $false if it is for a packed .cab file(s)> -RemoveBackup <$true to remove the previous binaries from the agent machine>
@@ -188,8 +188,8 @@ The Nano agent can be updated by one of the following methods:
 
 ### Uninstalling updates from the Nano Agent
 
-Directly uninstalling the most recent update from the Nano agent is not supported. Instead, you should uninstall the agent completely and reinstall the agent with the desired set of updates.
+Directly uninstalling the most recent update from the Nano agent isn't supported. Instead, you should uninstall the agent completely and reinstall the agent with the desired set of updates.
 
 ## Next steps
 
-- After manually installing the Operations Manager agent on Windows and Nano Server, you need to [Process Manual Agent Installations](manage-deploy-windows-agent-manually.md)
+- After manually installing the Operations Manager agent on Windows and Nano Server, you need to [Process Manual Agent Installations](manage-deploy-windows-agent-manually.md).
