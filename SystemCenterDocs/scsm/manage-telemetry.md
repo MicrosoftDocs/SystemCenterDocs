@@ -9,6 +9,7 @@ ms.date: 05/15/2018
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
+ms.custom: UpdateFrequency.5
 ---
 
 # Manage telemetry settings in Service Manager
@@ -83,7 +84,7 @@ Use the following procedure:
  | Data related To | Data collected |
  | --- | --- |
  | **Censes and other settings** | Unique ID generated for the SM deployment <br /><br /> SM version <br /><br /> ID used for correlation with other System Center products <br /><br /> Default language for the installation<br /><br />Data warehouse management group ID <br /><br /> Identify that telemetry has been disabled <br /><br />Width and height of the screen|
- | **Usage** | Name of tasks used <br /><br /> Type of form used <br /><br /> Time taken to load forms <br /><br /> Name of views used <br /><br /> No. of rows fetched and loaded for each view <br /><br /> Time taken to load view <br /><br /> Cmdlets used <br /><br /> Parameters used in cmdlets <br /><br /> Time taken for execution<br /><br />Exception generated <br /><br />Reports being used<br /><br />Parameters used <br /><brTime to load reports<br /><br /> Time to load reports<br /><br />Total no. of clicks on a report<br /><br />Whether connected to the SDK service<br /><br />Whether Lync and (or) Skype is being used<br /><br />Whether Connector ECL Log is enabled or not<br /><br />Whether concurrent transactions setting is enabled or not|
+ | **Usage** | Name of tasks used <br /><br /> Type of form used <br /><br /> Time taken to load forms <br /><br /> Name of views used <br /><br /> No. of rows fetched and loaded for each view <br /><br /> Time taken to load view <br /><br /> Cmdlets used <br /><br /> Parameters used in cmdlets <br /><br /> Time taken for execution<br /><br />Exception generated <br /><br />Reports being used<br /><br />Parameters used <br /><br>Time to load reports<br /><br /> Time to load reports<br /><br />Total no. of clicks on a report<br /><br />Whether connected to the SDK service<br /><br />Whether Lync and (or) Skype is being used<br /><br />Whether Connector ECL Log is enabled or not<br /><br />Whether concurrent transactions setting is enabled or not|
 
 
 ## Next steps

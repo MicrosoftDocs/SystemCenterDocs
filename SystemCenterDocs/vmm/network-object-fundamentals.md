@@ -9,7 +9,7 @@ ms.date: 02/22/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency3
 ---
 
 # Virtual Machine Manager network object fundamentals

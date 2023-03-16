@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 21f877ab-f285-41e8-bba9-6e8ae3b3f338
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 monikerRange: '=sc-orch-2016'
 ---
 
@@ -41,4 +41,4 @@ VM Subnet Type
 
 ## Get VM Subnet Published Data
 
-There is no published data for this activity.
+There's no published data for this activity.

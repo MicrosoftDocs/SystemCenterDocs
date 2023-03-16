@@ -12,15 +12,15 @@ ms.topic: article
 ms.assetid: 86944300-dc58-41e7-b47b-715775ef04ab
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 monikerRange: '=sc-orch-2016'
 ---
 
 # Get User Role Quota in System Center 2016
 
-The Get User Role Quota activity is used in a runbook to return information about all user role quotas in a VMM management server.
+The Get User Role Quota activity is used in a runbook to return information about all the user role quotas in a VMM management server.
 
-The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
+The activity publishes all the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Get User Role Quota Required Properties
 
@@ -34,7 +34,7 @@ This activity has no optional properties.
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|
-| Actions Permitted   | The actions that members of a Self-Service User role can perform on their virtual machines or services. | AllowLocalAdmin, Author, CanShare, CanReceive, Checkpoint,CheckpointRestoreOnly, Create, CreateFromVHDOrTemplate, PauseAndResume, RemoteConnect, Remove, Save, Shutdown, Start, Stop, Store. |
+| Actions Permitted   | The actions that members of a Self-Service User role can perform on their virtual machines or services. | AllowLocalAdmin, Author, CanShare, CanReceive, Checkpoint, CheckpointRestoreOnly, Create, CreateFromVHDOrTemplate, PauseAndResume, RemoteConnect, Remove, Save, Shutdown, Start, Stop, Store. |
 | Cloud Names in Scope   | The cloud scope of a user role.   |   |
 | Host Group Names in Scope   | The host scope of a user role (not for Self-Service User Role).   |   |
 | Description   | An alphanumeric description of the user role.   |   |
