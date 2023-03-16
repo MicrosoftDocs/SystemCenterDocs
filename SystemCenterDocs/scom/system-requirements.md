@@ -9,6 +9,7 @@ ms.date: 12/06/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
+ms.custom: UpdateFrequency.5
 ---
 
 # System requirements for System Center Operations Manager

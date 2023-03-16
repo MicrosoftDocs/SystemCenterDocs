@@ -2,7 +2,7 @@
 title: Index non-English knowledge articles
 description: This article helps you resolve issues when you want to index non-English knowledge articles.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

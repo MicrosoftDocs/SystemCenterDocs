@@ -2,7 +2,7 @@
 title: Include dashboards and reports in custom views for the reports sample scenario
 description: Describes how you can include dashboards and reports in custom views for the Service Manager Authoring Tool reports sample scenario.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

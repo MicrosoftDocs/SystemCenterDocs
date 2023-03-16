@@ -9,6 +9,7 @@ ms.date: 05/09/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency3
 ---
 
 # Scenario - Deploy guarded hosts and shielded virtual machines in VMM

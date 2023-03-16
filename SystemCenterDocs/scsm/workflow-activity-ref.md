@@ -2,7 +2,7 @@
 title: Workflow activity reference
 description: Provides a reference for Service Manager Authoring Tool workflow activities.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency2
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
