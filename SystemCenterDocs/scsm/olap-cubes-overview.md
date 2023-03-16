@@ -61,7 +61,8 @@ To see how data warehouse cubes are represented in the Service Manager console, 
 
 The following illustration shows an image from SQL&nbsp;Server Business Intelligence Development Studio \(BIDS\) that depicts the main parts that are required for online analytical processing \(OLAP\) cubes. These parts are the data source, data source view, cubes, and dimensions. The following sections describe the OLAP cube parts and the actions that users can take using them.  
 
-:::image type="content" source="media/olap-cubes-overview/ops-cubedimensions.png" alt-text="Image of the cube architecture.":::  
+:::image type="content" source="media/olap-cubes-overview/ops-cubedimensions.png" alt-text="Screenshot of the cube architecture.":::  
+
 
 ### Data source  
 
