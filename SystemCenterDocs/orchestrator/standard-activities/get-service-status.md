@@ -1,7 +1,7 @@
 ---
 title: Get Service Status
 description: This article describes about the Get Service Status activity and its use to check the status of a service on any computer.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 212191ed-8156-45f1-bb09-0ccda3823d16
 caps.latest.revision: 14
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Get Service Status
 
