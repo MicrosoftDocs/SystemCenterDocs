@@ -9,6 +9,7 @@ ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency2
 ---
 
 
@@ -28,7 +29,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 - You can add vCenter and vSphere hosts to the VMM fabric.
 - VMM integrates directly with VMware vCenter Server. Through the VMM console, you can manage the day-to-day operations of VMware vSphere hosts and clusters, such as the discovery and management of hosts.
 - VMM provides the ability to create, manage, store, place, and deploy virtual machines on vSphere hosts. You can import VMware templates.
-- You can associate host adapters with VMM logical networks. More advanced management takes place on the vCenter Server, for example, configuring port groups, standard and distributed virtual switches (or “vSwitches”), vMotion, and Storage vMotion.
+- You can associate host adapters with VMM logical networks. More advanced management takes place on the vCenter Server, for example, configuring port groups, standard and distributed virtual switches (or **vSwitches**), vMotion, and Storage vMotion.
 - You can convert VMware VMs to Hyper-V.
 
 

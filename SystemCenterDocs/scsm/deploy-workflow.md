@@ -2,7 +2,7 @@
 title: Deploy a workflow to Service Manager
 description: Describes how to deploy a workflow to Service Manager using the Service Manager Authoring Tool.
 manager: mkluck
-ms.custom: na, intro-deployment
+ms.custom: na, intro-deployment, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
