@@ -8,6 +8,7 @@ ms.author: jsuri
 ms.date: 1/23/2017
 ms.technology: service-manager
 ms.topic: article
+ms.custom: UpdateFrequency2
 ---
 
 # Prepare a production environment for upgrade

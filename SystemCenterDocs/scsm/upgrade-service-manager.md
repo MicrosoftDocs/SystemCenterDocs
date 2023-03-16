@@ -9,6 +9,7 @@ ms.date: 05/25/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
+ms.custom: UpdateFrequency2
 ---
 
 # Upgrade System Center Service Manager

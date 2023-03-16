@@ -2,7 +2,7 @@
 title: Deploy additional Service Manager management servers
 description: Deploy additional Service Manager management servers to load-balance additional Service Manager consoles or to support your disaster recovery strategy.
 manager: mkluck
-ms.custom: na, intro-deployment
+ms.custom: na, intro-deployment, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
