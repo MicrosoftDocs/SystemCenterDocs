@@ -1,7 +1,7 @@
 ---
 title: Get Move Request Statistics
 description: You can use the Get Move Request Statistics activity to retrieve statistical information about existing move requests for an on-premises environment.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
