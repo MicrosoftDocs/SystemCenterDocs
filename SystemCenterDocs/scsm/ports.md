@@ -8,6 +8,7 @@ ms.author: jsuri
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article
+ms.custom: UpdateFrequency1
 ---
 
 # Port assignments for System Center - Service Manager

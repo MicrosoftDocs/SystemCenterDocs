@@ -9,6 +9,7 @@ ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency2
 ---
 
 
@@ -35,7 +36,7 @@ When Hyper-V hosts and clusters are added to the VMM fabric, VMM deploys an agen
   - HKEY LOCAL MACHINE\SYSTEM\CurrentControlSet\Control\MPDEV\MPIOSupportedDeviceList
   - HKEY LOCAL MACHINE\SYSTEM\CurrentControlSet\Services\msdsm\Parameters\DsmSupportedDeviceList
 
-After supported storage devices are added to the device list, VMM makes a "claim" on them, and a restart is required on the host. If you've added the host to VMM before deploying workloads on it, then this probably isn't an issue, but if workloads are already running on the host, this could cause interruptions. In an attempt to avoid potential outages, you can run a PowerShell script to prepopulate the MPIO registry keys on a host, before adding it to the VMM fabric. [Learn more](https://blogs.technet.microsoft.com/scvmm/2015/04/30/support-tip-virtual-machine-connections-to-storage-lost-when-adding-host-cluster-in-vmm-2012-r2/) about this script.
+After supported storage devices are added to the device list, VMM makes a **claim** on them, and a restart is required on the host. If you've added the host to VMM before deploying workloads on it, then this probably isn't an issue, but if workloads are already running on the host, this could cause interruptions. In an attempt to avoid potential outages, you can run a PowerShell script to prepopulate the MPIO registry keys on a host, before adding it to the VMM fabric. [Learn more](https://blogs.technet.microsoft.com/scvmm/2015/04/30/support-tip-virtual-machine-connections-to-storage-lost-when-adding-host-cluster-in-vmm-2012-r2/) about this script.
 
 
 ## Prevent VMM from claiming device IDs
