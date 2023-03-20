@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: bd4ce7ab-9e8f-4f83-a04a-f4385c2ac6b0
+ms.custom: UpdateFrequency3
 ---
 
 # User interface customization in Service Manager
