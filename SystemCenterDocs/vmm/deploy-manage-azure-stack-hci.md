@@ -253,21 +253,21 @@ Use Network migration functionality in VMM to migrate workloads from Hyper-V (Wi
 ## Step 9: Migrate VMware workloads to Azure Stack HCI cluster using SCVMM
 
 VMM offers a simple wizard-based experience for V2V (Virtual to Virtual) conversion. You can use the conversion tool to migrate workloads at scale from VMware infrastructure to Hyper-V infrastructure. 
-For the list of supported VMware servers, see [System requirements](/system-requirements?view=sc-vmm-2022#vmware-servers-in-the-vmm-fabric).
+For the list of supported VMware servers, see [System requirements](system-requirements.md).
 
 For prerequisites and limitations for the conversion, see [Convert a VMware VM to Hyper-V in the VMM fabric](vm-convert-vmware.md).
 
 1.	Create **Run as account** for vCenter Server Administrator role in VMM. These administrator credentials are used to manage vCenter server and ESXi hosts.
     :::image type="Create Run As account page" source="media/deploy-manage-azure-stack-hci/create-run-as-account.png" alt-text="Screenshot showing create Run As account page.":::   
 2.	In the VMM console, under **Fabric**, select **Servers** > **Add VMware vCenter Server**.
-    :::image type="Add VMware vCenter option" source="deploy-manage-azure-stack-hci/add-vmware-vcenter-inline.png" alt-text="Screenshot showing add VMware vCenter option." lightbox="deploy-manage-azure-stack-hci/add-vmware-vcenter-expanded.png":::
+    :::image type="Add VMware vCenter option" source="media/deploy-manage-azure-stack-hci/add-vmware-vcenter-inline.png" alt-text="Screenshot showing add VMware vCenter option." lightbox="media/deploy-manage-azure-stack-hci/add-vmware-vcenter-expanded.png":::
 3.	In the **Add VMware vCenter Server** page, do the following:
     1. **Computer name**: Specify the vCenter server name.
     1. **Run As account**: Select the Run As account created for vSphere administrator.   
        :::image type="Server information" source="media/deploy-manage-azure-stack-hci/server-info.png" alt-text="Screenshot showing server information.":::
 4.	Select **Finish**.
 5.	In the **Import Certificate** page, select **Import**.
-    :::image type="Import certificates option" source="deploy-manage-azure-stack-hci/import-certificate-inline.png" alt-text="Screenshot showing Import certificates option." lightbox="deploy-manage-azure-stack-hci/import-certificate-expanded.png":::
+    :::image type="Import certificates option" source="media/deploy-manage-azure-stack-hci/import-certificate-inline.png" alt-text="Screenshot showing Import certificates option." lightbox="media/deploy-manage-azure-stack-hci/import-certificate-expanded.png":::
 6.	After the successful addition of the vCenter server, all the ESXi hosts under the vCenter are migrated to VMM. 
  
 ### Add Hosts
@@ -276,13 +276,13 @@ For prerequisites and limitations for the conversion, see [Convert a VMware VM t
     :::image type="Add Host options" source="media/deploy-manage-azure-stack-hci/add-hosts.png" alt-text="Screenshot showing Add hosts option.":::
 2.	In the **Add Resource Wizard**, 
     1. Under **Credentials**, select the Run as account that is used for the port and select **Next**.
-       :::image type="Credentials tab" source="deploy-manage-azure-stack-hci/credentials-inline.png" alt-text="Screenshot showing credentials tab." lightbox="deploy-manage-azure-stack-hci/credentials-expanded.png":::
+       :::image type="Credentials tab" source="media/deploy-manage-azure-stack-hci/credentials-inline.png" alt-text="Screenshot showing credentials tab." lightbox="media/deploy-manage-azure-stack-hci/credentials-expanded.png":::
     1. Under **Target Resources**, select all the ESX clusters that need to be added to VMM and select **Next**. 
-       :::image type="Target resources tab" source="deploy-manage-azure-stack-hci/target-resources-inline.png" alt-text="Screenshot showing target resources tab." lightbox="deploy-manage-azure-stack-hci/target-resources-expanded.png":::
+       :::image type="Target resources tab" source="media/deploy-manage-azure-stack-hci/target-resources-inline.png" alt-text="Screenshot showing target resources tab." lightbox="media/deploy-manage-azure-stack-hci/target-resources-expanded.png":::
     1. Under **Host Settings**, select the location where you want to add the VMs and select **Next**.
        :::image type="Host settings tab" source="media/deploy-manage-azure-stack-hci/host-settings.png" alt-text="Screenshot showing host settings tab.":::
     1. Under **Summary**, review the settings and select **Finish**. Along with the hosts, associated VMs will also get added. 
-       :::image type="Summary tab" source="deploy-manage-azure-stack-hci/summary-inline.png" alt-text="Screenshot showing summary tab." lightbox="deploy-manage-azure-stack-hci/summary-expanded.png":::
+       :::image type="Summary tab" source="media/deploy-manage-azure-stack-hci/summary-inline.png" alt-text="Screenshot showing summary tab." lightbox="media/deploy-manage-azure-stack-hci/summary-expanded.png":::
 
 ### Verify the status of ESXi host
 
@@ -297,7 +297,7 @@ After you add the ESXi clusters, all the virtual machines running on the ESXi cl
    You can also manage the primary lifecycle operations of these virtual machines from VMM.  
     :::image type="ESXi hosts" source="media/deploy-manage-azure-stack-hci/esxi-hosts.png" alt-text="Screenshot showing ESXi hosts.":::
 2.	Right-click the VM and select **Power Off** (online migrations are not supported) that need to be migrated and uninstall VMware tools from the guest operating system.
-    :::image type="VM power off" source="deploy-manage-azure-stack-hci/vm-power-off-inline.png" alt-text="Screenshot showing VM power off option." lightbox="deploy-manage-azure-stack-hci/vm-power-off-expanded.png":::
+    :::image type="VM power off" source="media/deploy-manage-azure-stack-hci/vm-power-off-inline.png" alt-text="Screenshot showing VM power off option." lightbox="media/deploy-manage-azure-stack-hci/vm-power-off-expanded.png":::
 3.	Select **Home** > **Create Virtual Machines** > **Convert Virtual Machine**. 
 4.	In the **Convert Virtual Machine Wizard**,
     1. Under **Select Source**, select the VM running in ESXi server and select **Next**.
