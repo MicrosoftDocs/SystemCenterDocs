@@ -35,7 +35,7 @@ and optional properties and published data for this activity.
 ## Deploy Configuration Baseline required properties
 
 |**Element**|**Description**|**Valid Values**|
-|--------------------------------------------------|-------------------------------------------------------------------------------------------------|------------------|
+|----------------------------------|-------------------------------|------------------|
 |Deployment Name|The desired name for the new deployment that will be shown in the Configuration Manager console||    
 |Baseline|Performs a WMI query against Configuration Manager and returns the baseline information ||           
 |Baseline Value Type|The type of baseline value|ID or Name|
