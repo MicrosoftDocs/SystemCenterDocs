@@ -47,11 +47,11 @@ This article lists Microsoft System Center 2016 - Operations Manager build versi
 
 ::: moniker range="sc-om-1807"
 
-This article lists Microsoft System Center 1807 - Operations Manager build versions.
+The following table lists the release history for Operations Manager 1807.
 
 ## Operation Manager 1807 build versions
 
-The following table lists the release history for Operations Manager 1807.
+The following is the build version for Operations Manager 1807.
 
 |Build Number |KB |Release Date |Description |  
 |-------------|---|-------------|------------|   

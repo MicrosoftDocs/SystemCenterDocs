@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: b204c2fc-c65e-41f3-a650-e425060f61b3
+ms.custom: UpdateFrequency3
 ---
 
 # Configure workflows in Service Manager
