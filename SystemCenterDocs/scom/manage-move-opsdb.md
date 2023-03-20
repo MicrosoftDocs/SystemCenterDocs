@@ -100,15 +100,15 @@ After moving the Operations Manager operational database to a different SQL Serv
 In the below steps your database name may be different from the default. You may modify the query to your Operations Manager operational database name. 
 
 1. CLR must be enabled. To do this, run the following queries on the new SQL Server instance hosting the Operations Manager operational database:
-   ```
-    sp_configure 'show advanced options', 1;
-    GO
-    RECONFIGURE;
-    GO
-    sp_configure 'clr enabled', 1;
-    GO
-    RECONFIGURE;
-    GO
+   ```sql
+   sp_configure 'show advanced options', 1;
+   GO
+   RECONFIGURE;
+   GO
+   sp_configure 'clr enabled', 1;
+   GO
+   RECONFIGURE;
+   GO
    ```
 
 2. SQL Service Broker must be enabled. Run the following SQL query to check if it is enabled:
