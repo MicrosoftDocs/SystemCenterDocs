@@ -36,9 +36,9 @@ During the move, you need to stop services on your management servers, back up t
 ### Stop the Operations Manager services
 
 On all the management servers in the management group, stop the Operations Manager services:
-  - System Center Data Access
-  - Microsoft Monitoring Agent
-  - System Center Management Configuration
+  - System Center Data Access (omsdk)
+  - Microsoft Monitoring Agent (HealthService)
+  - System Center Management Configuration (cshost)
 
 ### Backup the Operational database on the old SQL Server instance
 
@@ -119,9 +119,9 @@ After moving the Operations Manager operational database to a different SQL Serv
 ###  Start the Operations Manager services
 
 1. On all the management servers in the management group, start the Operations Manager services:
-   - System Center Data Access.
-   - Microsoft Monitoring Agent.
-   - System Center Management Configuration.
+   - System Center Data Access (omsdk)
+   - Microsoft Monitoring Agent (HealthService)
+   - System Center Management Configuration (cshost)
 
 
 ### Update Service Principal Name for Kerberos Connections
