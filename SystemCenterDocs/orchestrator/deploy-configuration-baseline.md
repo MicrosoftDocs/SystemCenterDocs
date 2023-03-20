@@ -34,12 +34,12 @@ and optional properties and published data for this activity.
 
 ## Deploy Configuration Baseline required properties
 
-|**Element**|**Description**|**Valid Values**|
+|**Element**|**Description**|**Valid</br>Values**|
 |----------------------------------|-------------------------------|------------------|
-|Deployment Name|The desired name for the new deployment that will be shown in the Configuration Manager console||    
-|Baseline|Performs a WMI query against Configuration Manager and returns the baseline information ||           
+|Deployment Name|The desired name for the new deployment that will be shown in the Configuration Manager console| |
+|Baseline|Performs a WMI query against Configuration Manager and returns the baseline information | |
 |Baseline Value Type|The type of baseline value|ID or Name|
-|Collection|Performs a WMI query against Configuration Manager and returns the collection information||          
+|Collection|Performs a WMI query against Configuration Manager and returns the collection information| |
 |Collection Value Type|The type of collection value|ID or Name|
 |Remediate non-compliant rules when supported |Enables the remediation of non-compliant rules |True or False|
 |Allow Remediation outside of Maintenance Windows|Enables the remediation of non-compliant rules outside of the maintenance window |True or False|
