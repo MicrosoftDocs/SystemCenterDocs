@@ -95,7 +95,11 @@ After moving the Operations Manager operational database to a different SQL Serv
     > [!NOTE]
     > If the DAS/Configuration account uses the LocalSystem account, specify the computer account in the form \<domain\>\<computername>$.
 
-8. Run the following command on the new SQL Server instance hosting the Operations Manager operational database.  
+### Update SQL configuration on the new SQL Server instance hosting the operational database
+
+In the below steps your database name may be different from the default. You may modify the query to your Operations Manager operational database name. 
+
+1. CLR must be enabled. To do this, run the following queries on the new SQL Server instance hosting the Operations Manager operational database:
    ```
     sp_configure 'show advanced options', 1;
     GO
@@ -107,14 +111,29 @@ After moving the Operations Manager operational database to a different SQL Serv
     GO
    ```
 
-9. Run the following SQL query:
-   `SELECT is_broker_enabled FROM sys.databases WHERE name='OperationsManager'`
+2. SQL Service Broker must be enabled. Run the following SQL query to check if it is enabled:
+   ```sql
+   SELECT is_broker_enabled FROM sys.databases WHERE name='OperationsManager'
+   ```
 
     If the result of this query was an is_broker_enabled value of 1, skip this step. Otherwise, run the following SQL queries:
 
-    `ALTER DATABASE OperationsManager SET SINGLE_USER WITH ROLLBACK IMMEDIATE`  
-    `ALTER DATABASE OperationsManager SET ENABLE_BROKER`  
-    `ALTER DATABASE OperationsManager SET MULTI_USER`  
+    ```sql
+    ALTER DATABASE OperationsManager SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+    ALTER DATABASE OperationsManager SET ENABLE_BROKER
+    ALTER DATABASE OperationsManager SET MULTI_USER
+    ```
+    
+3. FullText must be enabled. Run the following SQL query to check if FullText is enabled:
+   ```sql
+   SELECT is_fulltext_enabled FROM sys.databases WHERE name='OperationsManager'
+   ```
+
+    If the result of this query was an is_fulltext_enabled value of 1, skip this step. Otherwise, run the following SQL queries:
+    ```sql
+    EXEC sp_fulltext_database 'enable'
+    ```
+   
 
 ###  Start the Operations Manager services
 
