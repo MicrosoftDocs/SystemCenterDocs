@@ -1,7 +1,7 @@
 ---
 title: Deploy Software Update activity
 description: Describes the configurable properties for the Deploy Software Update activity for Configuration Manager Integration Pack.
-ms.custom: na, intro-deployment
+ms.custom: na, intro-deployment, UpdateFrequency2
 ms.date: 03/15/2016
 ms.prod: system-center
 ms.reviewer: na

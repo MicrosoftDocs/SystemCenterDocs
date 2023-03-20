@@ -1,7 +1,7 @@
 ---
 title: Add Network Adapter Activity
 description: The Add Network Adapter activity is used in a runbook to add a virtual network adapter to a virtual machine controlled by the VMware vSphere server.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

@@ -8,7 +8,7 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: evansma
-ms.custom: intro-deployment
+ms.custom: intro-deployment, UpdateFrequency2
 monikerRange: '<=sc-orch-2019'
 ---
 

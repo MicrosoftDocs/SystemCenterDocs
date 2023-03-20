@@ -8,7 +8,8 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-robots: noinde
+robots: noindex
+ms.custom: UpdateFrequency3
 ---
 # Service Manager published data
 
