@@ -2,7 +2,7 @@
 title: Unbundle a bundled management pack
 description: Describes how to unbundle a bundled management pack for use with the Service Manager Authoring Tool.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

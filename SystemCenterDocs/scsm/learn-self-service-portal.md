@@ -2,7 +2,7 @@
 title: New Self-Service portal deployment scenarios and troubleshooting
 description: This article helps you understand what you need to know before you deploy the new Service Manager Self-Service portal, and troubleshoot its installation.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency1
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

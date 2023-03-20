@@ -2,7 +2,7 @@
 title: Search for information
 description: Describes how to search for information in Service Manager.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency5
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

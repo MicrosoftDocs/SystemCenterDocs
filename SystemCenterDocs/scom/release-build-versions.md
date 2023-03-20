@@ -9,6 +9,7 @@ ms.date: 03/12/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
+ms.custom: UpdateFrequency.5
 ---
 
 # System Center - Operations Manager build versions
@@ -46,7 +47,7 @@ This article lists Microsoft System Center 2016 - Operations Manager build versi
 
 ::: moniker range="sc-om-1807"
 
-This article lists Microsoft System Center 1807 - Operations Manager build versions.
+The following table lists the release history for Operations Manager 1807.
 
 ## Operation Manager 1807 build versions
 
@@ -54,13 +55,13 @@ The following is the build version for Operations Manager 1807.
 
 |Build Number |KB |Release Date |Description |  
 |-------------|---|-------------|------------|   
-|7.3.13261.0 |[KB4133779](https://support.microsoft.com/help/4133779/system-center-operations-manager-version-1807) |July 2018 |Version 1807|
+|7.3.13261.0 |[4133779](https://support.microsoft.com/help/4133779/system-center-operations-manager-version-1807) |July 2018 |Version 1807|
 
 ::: moniker-end
 
 ::: moniker range="sc-om-1801"
 
-This article lists Microsoft System Center 1801 - Operations Manager build versions.
+The following table lists the release history for Operations Manager 1801.
 
 ## Operation Manager 1801 build versions
 

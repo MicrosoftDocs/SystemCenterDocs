@@ -2,7 +2,7 @@
 title: Manage and use the analysis libraries
 description: Explains how to manage and use the analysis libraries in the Service Manager console.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri

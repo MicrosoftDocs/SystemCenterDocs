@@ -2,7 +2,7 @@
 title: Use and manage standard reports
 description: Explains how to use and manage standard reports in Service Manager.
 manager: mkluck
-ms.custom: na
+ms.custom: na, UpdateFrequency3
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -67,7 +67,7 @@ By default, all System Center - Service Manager users have access to reports thr
 
 4. Select **Edit Item Security**.  
 
-5.  The following message appears: "Item security is inherited from a parent item. Do you want to apply security settings for this item that are different from those of the Home parent item?"  
+5.  The following message appears: **Item security is inherited from a parent item. Do you want to apply security settings for this item that are different from those of the Home parent item?**
 
     Select **OK**.  
 
