@@ -3,6 +3,7 @@
 ## [What's new in Orchestrator](whats-new-in-orch.md)
 ## [Automate with runbooks](automate-runbooks.md)
 # Get started
+## [Orchestrator build versions](release-build-versions.md)
 ## [Install Orchestrator](install.md)
 ## [Work with runbooks in the Orchestrator console](console-overview.md)
 ## [Example runbook: Creating a runbook to monitor a folder](monitor-a-folder-within-a-runbook.md)
