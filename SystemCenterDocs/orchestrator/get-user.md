@@ -1,7 +1,7 @@
 ---
 title: Get User
 description: You can use the Get User activity in a runbook to get the properties of a user in the Microsoft Active Directory.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

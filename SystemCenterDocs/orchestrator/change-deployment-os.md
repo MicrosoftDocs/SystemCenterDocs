@@ -1,7 +1,7 @@
 ---
 title: Change Deployment OS
 description: The Change Deployment OS activity changes the underlying guest operating system of a deployment.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

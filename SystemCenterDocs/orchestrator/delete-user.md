@@ -1,7 +1,7 @@
 ---
 title: Delete User
 description: You can use the Delete User activity in a runbook to delete a user in the Microsoft Active Directory.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

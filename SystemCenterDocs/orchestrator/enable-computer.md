@@ -1,7 +1,7 @@
 ---
 title: Enable Computer
 description: You can use the Enable Computer activity in a runbook to enable a computer in the Microsoft Active Directory.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

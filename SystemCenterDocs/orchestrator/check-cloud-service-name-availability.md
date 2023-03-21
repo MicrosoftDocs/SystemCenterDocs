@@ -1,7 +1,7 @@
 ---
 title: Check Cloud Service Name Availability
 description: The Check Cloud Service Name Availability activity checks to see if the specified cloud service name is available, or if it has already been taken.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

@@ -1,7 +1,7 @@
 ---
 title: Copy Blob
 description: The Copy Blob activity copies a blob to a destination within the storage account.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
