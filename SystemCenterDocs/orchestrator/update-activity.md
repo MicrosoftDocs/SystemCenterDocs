@@ -1,7 +1,7 @@
 ---
 title: Update Activity
 description: The Update Activity activity is used to make changes to activity records for the selected activity class.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

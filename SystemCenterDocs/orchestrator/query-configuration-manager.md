@@ -1,7 +1,7 @@
 ---
 title: Query ConfigMgr activity
 description: Describes the configurable properties for the Query ConfigMgr activity for Configuration Manager Integration Pack.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

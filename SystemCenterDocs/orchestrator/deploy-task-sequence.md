@@ -1,7 +1,7 @@
 ---
 title: Deploy Task Sequence activity
 description: Describes the configurable properties for the Deploy Task Sequence activity for Configuration Manager Integration Pack.
-ms.custom: na, intro-deployment, UpdateFrequency3
+ms.custom: na, intro-deployment, UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

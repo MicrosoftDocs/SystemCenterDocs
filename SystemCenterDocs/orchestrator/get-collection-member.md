@@ -1,7 +1,7 @@
 ---
 title: Get Collection Member activity
 description: Describes the configurable properties for the Get Collection Member activity for Configuration Manager Integration Pack.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

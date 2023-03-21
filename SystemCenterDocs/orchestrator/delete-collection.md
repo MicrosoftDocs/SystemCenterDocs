@@ -1,7 +1,7 @@
 ---
 title: Delete Collection Activity
 description: This article provides guidance on how to configure the Delete Collection activity for System Center 2016 Configuration Manager.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 03/08/2017
 ms.prod: system-center
 ms.reviewer: na

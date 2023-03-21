@@ -1,7 +1,7 @@
 ---
 title: Create Object
 description: The Create Object is used to create a new Service Manager record associated with a specified class.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

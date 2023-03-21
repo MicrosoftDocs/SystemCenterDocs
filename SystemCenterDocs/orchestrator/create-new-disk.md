@@ -1,7 +1,7 @@
 ---
 title: Create New Disk
 description: The Create New Disk activity is used to create a new disk and add it to a virtual machine.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

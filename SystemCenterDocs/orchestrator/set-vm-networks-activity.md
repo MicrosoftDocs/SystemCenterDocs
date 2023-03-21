@@ -1,7 +1,7 @@
 ---
 title: Set VM Networks Activity
 description: The Set VM Networks activity is used in a runbook to replace the first virtual machine network switch with one that is specified.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

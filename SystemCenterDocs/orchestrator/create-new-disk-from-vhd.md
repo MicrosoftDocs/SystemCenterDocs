@@ -1,7 +1,7 @@
 ---
 title: Create New Disk from VHD
 description: The Create New Disk from VHD activity is used to create a new disk from a VHD and add the disk to an existing virtual machine.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

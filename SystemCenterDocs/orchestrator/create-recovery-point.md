@@ -1,7 +1,7 @@
 ---
 title: Create Recovery Point
 description: The Create Recovery Point activity is used to create a backup for a selected data source.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

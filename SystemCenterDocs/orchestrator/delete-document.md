@@ -1,7 +1,7 @@
 ---
 title: Delete Document
 description: The Delete Document activity is used in a runbook to delete a document from a Microsoft SharePoint document library.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

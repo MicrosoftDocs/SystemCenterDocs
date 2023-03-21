@@ -1,7 +1,7 @@
 ---
 title: Monitor Alert
 description: The Monitor Alert activity triggers a runbook when new Operations Manager alerts are generated, and when existing Operations Manager alerts are updated, according to filter criteria that you specify.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
