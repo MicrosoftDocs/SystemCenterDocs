@@ -5,7 +5,7 @@ description: This article details the release builds in Orchestrator
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 03/15/2023
+ms.date: 03/21/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
@@ -54,7 +54,7 @@ The following table lists the release history for Orchestrator 1807.
 
 |Build Number |KB |Release Date |Description |  
 |-------------|---|-------------|------------|   
-|7.4.188.0 |[4135040](https://support.microsoft.com/topic/system-center-orchestrator-version-1807-eebf98c3-0858-7e61-941e-5056b8a72c93) |July 2018 |Version 1807|
+|7.4.188.0 |[4135040](https://support.microsoft.com/kb/4135040) |July 2018 |Version 1807|
 
 ::: moniker-end
 
