@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 04/22/2022
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -82,8 +82,6 @@ To work around this issue, install the System Center 2016 or 1801 or 1807 - Oper
     /ManagementServer: <ManagementServerName>
 
     ```
-
-::: moniker-end
 
 ::: moniker range="<=sc-om-1807"
 
