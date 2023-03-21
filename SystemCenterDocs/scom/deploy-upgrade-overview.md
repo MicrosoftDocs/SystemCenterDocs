@@ -136,7 +136,7 @@ The following steps outline the process for upgrading a distributed management g
 
 5. Upgrade Console
 
-6. Push install to agent(s) / upgrade manually installed agents
+6. Push install to agent(s)/upgrade manually installed agents
 
 7. Upgrade Web Console
 
@@ -154,7 +154,7 @@ The following steps outline the process for upgrading a distributed management g
 
 The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center supported version environment is left intact. Agents that have been upgraded to System Center 2019 Operations Manager on your upgrade path are fully capable of working with native Operations Manager 2016, 1801, and 1807 functionality.  
 
-Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group. For more information, see [How to Upgrade Agents in a Parallel Deployment](/SystemCenterDocs/scom/deploy-upgrade-agents-parallel.md).
+Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group. For more information, see [How to Upgrade Agents in a Parallel Deployment](deploy-upgrade-agents-parallel.md).
 
 ::: moniker-end
 
@@ -164,7 +164,7 @@ Agents can be upgraded before the new Operations Manager management group is dep
 
 The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center supported version environment is left intact. Agents that have been upgraded to System Center 2022 Operations Manager on your upgrade path are fully capable of working with native Operations Manager 2019 functionality.
 
-Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group. For more information, see [How to Upgrade Agents in a Parallel Deployment](/SystemCenterDocs/scom/deploy-upgrade-agents-parallel.md#how-to-upgrade-agents-in-a-parallel-deployment).
+Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution, or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group. For more information, see [How to Upgrade Agents in a Parallel Deployment](deploy-upgrade-agents-parallel.md#how-to-upgrade-agents-in-a-parallel-deployment).
 
 ::: moniker-end
 
