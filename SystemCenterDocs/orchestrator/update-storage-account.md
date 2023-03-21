@@ -1,7 +1,7 @@
 ---
 title: Update Storage Account
 description: The Update Storage Account activity updates the label, the description, and enables or disables the geo-replication status for a storage account in Microsoft Azure.
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23, UpdateFrequency2
 ms.date: 01/30/2023
 ms.prod: system-center
 ms.reviewer: na

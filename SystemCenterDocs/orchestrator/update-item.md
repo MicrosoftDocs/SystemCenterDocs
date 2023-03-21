@@ -1,7 +1,7 @@
 ---
 title: Update Item
 description: The Update Item activity is used in a runbook to update an existing item.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 05/08/2019
 ms.prod: system-center
 ms.reviewer: na

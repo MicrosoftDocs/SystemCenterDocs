@@ -1,7 +1,7 @@
 ---
 title: Remove Remote Mailbox (Hybrid)
 description: You can use the Remove Remote Mailbox activity to delete an existing remote mailbox.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

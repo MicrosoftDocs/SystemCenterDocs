@@ -1,7 +1,7 @@
 ---
 title: Delete Cloud Service
 description: The Delete Cloud Service activity deletes the specified cloud service from Azure.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

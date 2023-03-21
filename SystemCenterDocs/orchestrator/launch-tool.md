@@ -1,7 +1,7 @@
 ---
 title: Launch Tool
 description: The Launch Tool activity is used in a runbook to run a specified command on a specified server.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

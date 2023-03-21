@@ -1,7 +1,7 @@
 ---
 title: Delete Management Certificate
 description: The Delete Management Certificate activity is used in a runbook to delete a certificate from the list of management certificates.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

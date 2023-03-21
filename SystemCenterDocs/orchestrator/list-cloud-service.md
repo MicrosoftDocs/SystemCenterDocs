@@ -1,7 +1,7 @@
 ---
 title: List Cloud Service
 description: The List Cloud Service activity lists the cloud services available under the current subscription.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

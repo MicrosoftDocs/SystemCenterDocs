@@ -1,7 +1,7 @@
 ---
 title: Reply To E-Mail
 description: The Reply To E-Mail activity is used in a runbook to reply to email messages.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

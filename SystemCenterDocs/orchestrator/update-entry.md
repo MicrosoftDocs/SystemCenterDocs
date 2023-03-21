@@ -1,7 +1,7 @@
 ---
 title: Update Entry
 description: The Update Entry activity is used in a runbook to modify the existing entries in HP Service Manager.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

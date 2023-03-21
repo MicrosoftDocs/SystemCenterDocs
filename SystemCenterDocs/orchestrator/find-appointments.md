@@ -1,7 +1,7 @@
 ---
 title: Find Appointments
 description: The Find Appointments activity is used in a runbook to find an existing appointment.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
