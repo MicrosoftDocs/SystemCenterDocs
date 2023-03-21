@@ -1,7 +1,7 @@
 ---
 title: Run VMM PowerShell Script
 description: The Run VMM PowerShell activity is used to call any PowerShell activity.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

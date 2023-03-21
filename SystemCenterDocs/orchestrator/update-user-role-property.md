@@ -1,7 +1,7 @@
 ---
 title: Update User Role Property
 description: Updates User Role Property
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

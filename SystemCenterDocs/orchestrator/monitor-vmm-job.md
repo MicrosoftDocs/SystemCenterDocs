@@ -8,7 +8,7 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ---
 # Monitor VMM Job activity
 

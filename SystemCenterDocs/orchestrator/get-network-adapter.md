@@ -1,7 +1,7 @@
 ---
 title: Get Network Adapter
 description: The Get Network Adapter activity is used to retrieve an existing Virtual Network Adapter based on the filters you specify.
-ms.custom: UpdateFrequency3
+ms.custom: UpdateFrequency2
 ms.date: 06/11/2018
 ms.prod: system-center
 ms.reviewer: na
