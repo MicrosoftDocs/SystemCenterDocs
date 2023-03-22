@@ -5,7 +5,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.manager: mkluck
 ms.date: 02/13/2018
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
