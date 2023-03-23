@@ -1,7 +1,7 @@
 ---
 title: Run SSH Command
 description: This articles describes the functionality of Run SSH Command activity.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""

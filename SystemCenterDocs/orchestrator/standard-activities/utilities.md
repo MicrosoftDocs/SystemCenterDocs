@@ -1,7 +1,7 @@
 ---
 title: Utilities
 description: This articles describes the tasks that can be accomplished  using the Utilities Activity.
-ms.custom: UpdateFrequency5
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""

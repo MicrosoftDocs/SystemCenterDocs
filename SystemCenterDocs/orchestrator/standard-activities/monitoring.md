@@ -1,7 +1,7 @@
 ---
 title: Monitoring 
 description: This article provides a brief description of tasks you can accomplish when using each Monitoring activity.
-ms.custom: UpdateFrequency5
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""

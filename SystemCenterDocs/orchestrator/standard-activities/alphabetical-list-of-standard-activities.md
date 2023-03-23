@@ -13,7 +13,7 @@ caps.latest.revision: 12
 author: "jyothisuri"
 ms.author: "jsuri"
 manager: manager
-ms.custom: engagement-fy23, UpdateFrequency5
+ms.custom: engagement-fy23, UpdateFrequency3
 ---
 # Alphabetical List of Standard Activities
 

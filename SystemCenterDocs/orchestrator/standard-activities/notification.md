@@ -1,7 +1,7 @@
 ---
 title: Notification 
 description: This article describes the tasks that you can accomplish when using each Notification activity.
-ms.custom: UpdateFrequency5
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
