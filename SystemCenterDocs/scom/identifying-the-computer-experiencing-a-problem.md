@@ -5,7 +5,7 @@ manager: mkluck
 description: This topic describes how to identify particular computers in your environment that have triggered an alert.
 ms.date: 08/29/2016
 ms.author: jsuri
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

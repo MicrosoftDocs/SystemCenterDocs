@@ -3,10 +3,10 @@ ms.assetid: cf56de7b-757b-4639-89b7-d819130d02fb
 title: Configure Authentication with the Web console
 description: This article describes how to configure Secure Sockets Layer (SSL) encryption for the web server running the Operations Manager Web Console.
 author: jyothisuri
-manager: evansma
+manager: mkluck
 ms.author: jsuri
 ms.date: 01/19/2023
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
