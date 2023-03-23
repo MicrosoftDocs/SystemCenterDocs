@@ -1,7 +1,7 @@
 ---
 title: Create Container
 description: The Create Container activity creates a new container under the specified account.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

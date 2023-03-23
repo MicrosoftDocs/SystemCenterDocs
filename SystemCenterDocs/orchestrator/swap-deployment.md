@@ -1,7 +1,7 @@
 ---
 title: Swap Deployment
 description: The Swap Deployment activity initiates a virtual IP swap between the staging and production deployment environments for a service.
-ms.custom: engagement-fy23, UpdateFrequency2
+ms.custom: engagement-fy23, UpdateFrequency3
 ms.date: 01/30/2023
 ms.prod: system-center
 ms.reviewer: na

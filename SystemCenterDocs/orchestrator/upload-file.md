@@ -1,7 +1,7 @@
 ---
 title: Upload File
 description: The Upload File activity is used in a runbook to upload files to an FTP server.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 05/08/2019
 ms.prod: system-center
 ms.reviewer: na

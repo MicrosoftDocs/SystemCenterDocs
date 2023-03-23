@@ -1,7 +1,7 @@
 ---
 title: Delete Storage Account
 description: The Delete Storage Account activity deletes the specified storage account from Azure.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

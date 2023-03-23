@@ -1,7 +1,7 @@
 ---
 title: Delete VM Instance
 description: The Delete VM Instance activity deletes the specified virtual machine.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

@@ -1,7 +1,7 @@
 ---
 title: Download Blob
 description: The Download Blob activity downloads a blob from the system.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
