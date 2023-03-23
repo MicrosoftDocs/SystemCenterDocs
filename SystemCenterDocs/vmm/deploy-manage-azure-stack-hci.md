@@ -235,6 +235,8 @@ In a hyper-converged topology, VMs can be directly deployed on the cluster. Thei
 > [!Important]
 > If the Azure Stack HCI cluster isn't registered with Azure or not connected to Azure for more than 30 days post registration, high availability virtual machine (HAVM) creation will be blocked on the cluster. Refer to step 4 & 5 for cluster registration.
 
+::: moniker range="sc-vmm-2022"
+
 ## Step 8: Migrate VMs from Windows Server to Azure Stack HCI cluster
 
 Use Network migration functionality in VMM to migrate workloads from Hyper-V (Windows Server 2019 & later) to Azure Stack HCI. 
@@ -307,6 +309,8 @@ After you add the ESXi clusters, all the virtual machines running on the ESXi cl
     :::image type="Select host" source="media/deploy-manage-azure-stack-hci/select-host.png" alt-text="Screenshot showing select host option.":::
 6.	Select a [virtual network](manage-networks.md) for the virtual machine and select **Create** to complete the migration.  
 The virtual machine running on the ESXi cluster is successfully migrated to Azure Stack HCI cluster. For automation, use [PowerShell commands](vm-convert-vmware.md#convert-using-powershell-cmdlets) for conversion. 
+
+::: moniker-end
 
 ## Next steps
 
