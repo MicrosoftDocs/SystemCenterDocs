@@ -10,7 +10,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.custom: UpdateFrequency3
-
+---
 # Apply Pending Service Update activity
 
 ::: moniker range=">= sc-orch-1801 <= sc-orch-1807"
