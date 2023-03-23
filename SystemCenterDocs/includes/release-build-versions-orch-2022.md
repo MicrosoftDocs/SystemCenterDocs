@@ -21,4 +21,4 @@ The following table lists the release history for Orchestrator 2022.
 |Build Number |KB |Release Date |Description |
 |-------------|---|-------------|------------|
 |10.22.2.0||April 2022 |General Availability |
-|10.22.6.1||January 2023 |Update Rollup 1 |
+|10.22.6.1|[5021420](https://support.microsoft.com/kb/5021420)|January 2023 |Update Rollup 1 |
