@@ -7,7 +7,8 @@ ms.technology: orchestrator
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
+ms.custom: UpdateFrequency3
 ---
 # Configure Service Deployment activity
 
