@@ -9,7 +9,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 robots: noindex
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ---
 # Service Manager published data
 

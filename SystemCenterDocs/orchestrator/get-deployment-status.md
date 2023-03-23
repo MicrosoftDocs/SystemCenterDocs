@@ -1,7 +1,7 @@
 ---
 title: Get Deployment Status activity
 description: Describes the configurable properties for the Get Deployment Status activity for Configuration Manager Integration Pack.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

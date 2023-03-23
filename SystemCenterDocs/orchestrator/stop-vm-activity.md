@@ -1,7 +1,7 @@
 ---
 title: Stop VM Activity
 description: The Stop VM activity is used in a runbook to stop a virtual machine that has already been added to a VMware vSphere server.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

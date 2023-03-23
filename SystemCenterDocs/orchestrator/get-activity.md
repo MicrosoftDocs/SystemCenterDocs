@@ -1,7 +1,7 @@
 ---
 title: Get Activity
 description: The Get Activity activity is used to query for activity records for the selected activity class.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

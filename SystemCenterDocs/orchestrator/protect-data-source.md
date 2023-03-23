@@ -1,7 +1,7 @@
 ---
 title: Protect Data Source
 description: The Protect Data Source activity is used to protect a workload by adding a data source to an existing protection group.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

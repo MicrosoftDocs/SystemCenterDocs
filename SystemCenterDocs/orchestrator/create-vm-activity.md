@@ -1,7 +1,7 @@
 ---
 title: Create VM Activity
 description: The Create VM activity is added to a runbook to create a new virtual machine.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

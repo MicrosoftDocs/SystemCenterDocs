@@ -1,7 +1,7 @@
 ---
 title: Monitor List Items
 description: The Monitor List Items activity is used in a runbook to monitor a Microsoft SharePoint list for new and/or modified items.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

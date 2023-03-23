@@ -1,7 +1,7 @@
 ---
 title: Get Cluster Properties Activity
 description: The Get Cluster Properties activity is used in a runbook to retrieve information about a virtual machine cluster in VMware vSphere.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

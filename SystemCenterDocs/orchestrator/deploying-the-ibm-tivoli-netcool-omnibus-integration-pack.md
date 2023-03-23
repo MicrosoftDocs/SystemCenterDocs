@@ -7,8 +7,8 @@ ms.technology: orchestrator
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
-ms.custom: intro-deployment, UpdateFrequency2
+manager: mkluck
+ms.custom: intro-deployment
 monikerRange: '<=sc-orch-2019'
 ---
 

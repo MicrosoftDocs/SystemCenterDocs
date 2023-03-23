@@ -1,7 +1,7 @@
 ---
 title: Get Attachments
 description: The Get Attachments activity is used in a runbook to retrieve details from the attachments of a list item.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

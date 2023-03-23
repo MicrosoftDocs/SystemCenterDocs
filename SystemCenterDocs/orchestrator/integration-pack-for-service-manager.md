@@ -8,7 +8,6 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.custom: UpdateFrequency2
 ---
 
 # Integration pack for System Center - Service Manager

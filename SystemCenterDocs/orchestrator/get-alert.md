@@ -1,7 +1,7 @@
 ---
 title: Get Alert
 description: The Get Alert activity is used in a runbook to retrieve alerts from Operations Manager that match the criteria that you specify.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

@@ -1,7 +1,7 @@
 ---
 title: Reset VM activity
 description: The Reset VM activity is used in a runbook to stop and restart a running virtual machine.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

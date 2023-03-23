@@ -8,7 +8,7 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ---
 # Service Manager activities
 
