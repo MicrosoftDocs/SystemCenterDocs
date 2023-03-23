@@ -10,6 +10,7 @@ keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: d968e937-59c1-4a9a-8786-8ff0bbf62db0
+ms.custom: UpdateFrequency3
 ---
 
 # Use a CSV file to import data into Service Manager
