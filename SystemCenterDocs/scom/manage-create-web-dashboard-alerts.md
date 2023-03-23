@@ -7,7 +7,7 @@ ms.author: jsuri
 manager: mkluck
 ms.date: 03/21/2022
 ms.custom: UpdateFrequency2
-gms.prod: system-center
+ms.prod: system-center
 monikerRange: '>sc-om-2016'
 ms.technology: operations-manager
 ms.topic: article
