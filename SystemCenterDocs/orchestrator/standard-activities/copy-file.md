@@ -1,7 +1,7 @@
 ---
 title: Copy File
 description: This article describes the functionality of Copy File activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 9f718d16-c8d9-48ba-8c84-907d3ec69437
 caps.latest.revision: 13
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Copy File
 

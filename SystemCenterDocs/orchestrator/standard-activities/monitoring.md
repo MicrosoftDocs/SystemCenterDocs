@@ -1,7 +1,7 @@
 ---
 title: Monitoring 
 description: This article provides a brief description of tasks you can accomplish when using each Monitoring activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: f7d2a4f1-97cf-4dc7-bf68-70c573b6fc08
 caps.latest.revision: 7
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Monitoring
 

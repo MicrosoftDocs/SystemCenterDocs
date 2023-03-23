@@ -1,7 +1,7 @@
 ---
 title: Delete Line
 description: This article describes the Delete Line activity and how to configure it.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""

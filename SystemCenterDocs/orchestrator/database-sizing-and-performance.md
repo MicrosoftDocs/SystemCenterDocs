@@ -2,7 +2,7 @@
 title: Database sizing and performance
 description: Provides guidance for sizing the System Center - Orchestrator database
 author: jyothisuri
-manager: carmonm
+manager: mkluck
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator

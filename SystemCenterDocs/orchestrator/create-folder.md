@@ -1,7 +1,7 @@
 ---
 title: Create Folder
 description: The Create Folder activity is used in a runbook to create a folder on an FTP server.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

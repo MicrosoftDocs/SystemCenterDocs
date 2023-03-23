@@ -1,7 +1,7 @@
 ---
 title: Move File
 description: This article provides the details about Move File activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 83c535d6-c827-4107-9b39-87d5716c6663
 caps.latest.revision: 13
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Move File
 

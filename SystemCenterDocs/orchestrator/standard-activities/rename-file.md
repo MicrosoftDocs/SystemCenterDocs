@@ -1,7 +1,7 @@
 ---
 title: Rename File
 description: This article describes the functionality of Rename File activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: c2f45811-c1de-4b38-b52d-e4f329c36868
 caps.latest.revision: 11
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Rename File
 
