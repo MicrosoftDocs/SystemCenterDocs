@@ -11,7 +11,6 @@ ms.date: 01/19/2021
 ms.technology: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: 'sc-orch-2016 || sc-orch-2019 || sc-orch-2022'
-ms.custom: UpdateFrequency2
 ---
 # TCP port requirements
 

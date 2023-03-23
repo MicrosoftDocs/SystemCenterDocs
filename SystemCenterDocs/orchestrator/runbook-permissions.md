@@ -1,7 +1,6 @@
 ---
 title: Runbook permissions
 description: This topic describes how to set permissions for users to access runbook properties.
-ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na

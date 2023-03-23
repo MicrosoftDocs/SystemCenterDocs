@@ -8,7 +8,6 @@ ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.author: jsuri
-ms.custom: UpdateFrequency2
 ---
 
 
