@@ -23,7 +23,7 @@ The following tables list the release history for Operations Manager 2022.
 |-------------|---|-------------|------------|
 |10.22.10118.0||March 2022 |General Availability |
 |10.22.10337.0|[5020318](https://support.microsoft.com/kb/5020318)|December 2022|Update Rollup 1|
-
+|10.22.10337.0|[5022455](https://support.microsoft.com/kb/5022455)|December 2022|Update Rollup 1 - Console Hotfix|
 
 
 ### Agent
