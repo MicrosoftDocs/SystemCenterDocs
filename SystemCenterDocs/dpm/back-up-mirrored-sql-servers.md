@@ -9,6 +9,7 @@ ms.date:  04/08/2021
 ms.topic:  article
 ms.prod:  system-center
 ms.technology: data-protection-manager
+ms.custom: UpdateFrequency2
 ---
 
 # Back up mirrored SQL servers with DPM

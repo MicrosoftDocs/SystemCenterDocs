@@ -1,7 +1,7 @@
 ---
 title: Change Deployment OS
 description: The Change Deployment OS activity changes the underlying guest operating system of a deployment.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
@@ -66,6 +66,6 @@ There are no optional properties for this runbook activity.
 | Label   | A friendly name for the cloud service.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Azure before moving on to the next activity. | Boolean   |
 
-## See Also
+## Next steps
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

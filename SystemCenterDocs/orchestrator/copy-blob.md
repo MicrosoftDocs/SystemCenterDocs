@@ -1,7 +1,7 @@
 ---
 title: Copy Blob
 description: The Copy Blob activity copies a blob to a destination within the storage account.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
@@ -53,6 +53,6 @@ The activity publishes all of the data from the required and optional properties
 | Destination Container Name | The name of the destination container. | String   |
 | Destination Blob Name   | The name of the destination blob.   | String   |
 
-## See Also
+## Next steps
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

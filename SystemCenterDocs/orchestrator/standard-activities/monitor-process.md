@@ -1,7 +1,7 @@
 ---
 title: Monitor Process
 description: This article describes the functionality of Monitor Process activity. 
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 1c97c68d-f3f5-4840-86b5-43501d575edf
 caps.latest.revision: 14
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Monitor Process
 

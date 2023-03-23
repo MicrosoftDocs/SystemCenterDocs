@@ -1,7 +1,7 @@
 ---
 title: Create Folder activity
 description: This article describes the Create Folder activity that creates a new folder on the local file system
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 8fdf738a-6dc7-4173-a940-406d9cb81729
 caps.latest.revision: 12
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Create folder activity
 
