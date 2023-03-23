@@ -5,7 +5,7 @@ description: This article describes how to set up an Azure Stack HCI cluster in 
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.date: 03/20/2023
+ms.date: 03/23/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -297,7 +297,6 @@ After you add the ESXi clusters, all the virtual machines running on the ESXi cl
    You can also manage the primary lifecycle operations of these virtual machines from VMM.  
     :::image type="ESXi hosts" source="media/deploy-manage-azure-stack-hci/esxi-hosts.png" alt-text="Screenshot showing ESXi hosts.":::
 2.	Right-click the VM and select **Power Off** (online migrations are not supported) that need to be migrated and uninstall VMware tools from the guest operating system.
-    :::image type="VM power off" source="media/deploy-manage-azure-stack-hci/vm-power-off-inline.png" alt-text="Screenshot showing VM power off option." lightbox="media/deploy-manage-azure-stack-hci/vm-power-off-expanded.png":::
 3.	Select **Home** > **Create Virtual Machines** > **Convert Virtual Machine**. 
 4.	In the **Convert Virtual Machine Wizard**,
     1. Under **Select Source**, select the VM running in ESXi server and select **Next**.
