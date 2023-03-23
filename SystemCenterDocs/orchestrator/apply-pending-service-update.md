@@ -8,7 +8,7 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.custom:
+ms.custom: UpdateFrequency3
 ---
 # Apply Pending Service Update activity
 
