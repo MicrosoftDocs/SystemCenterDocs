@@ -1,7 +1,7 @@
 ---
 title: Compare Values
 description: This article compares two text values or two numerical values and then determines whether or not they are equal.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 64c419e1-9169-4a2d-8c3d-cdbd9e4d7fe1
 caps.latest.revision: 12
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Compare Values
 

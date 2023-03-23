@@ -1,7 +1,7 @@
 ---
 title: Create Computer
 description: You can use the Create Computer activity in a runbook to create an entry for a computer in the Microsoft Active Directory.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 509fb603-b567-4497-85c7-4fbf4a1cec0f
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Create Computer

@@ -1,7 +1,7 @@
 ---
 title: Send Platform Event
 description: This article describes the Send Platform Event activity that creates an activity event with text that you specify.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 58d4359b-155b-4406-8978-8b40fc87f5d0
 caps.latest.revision: 15
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Send Platform Event
 
