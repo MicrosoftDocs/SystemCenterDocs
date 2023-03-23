@@ -10,7 +10,7 @@ title: What can System Center Data Protection Manager back up?
 ms.technology: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
 ms.author: jsuri
-ms.custom: engagement-fy23, UpdateFrequency1
+ms.custom: engagement-fy23, UpdateFrequency.5
 ---
 
 # What can DPM back up?
