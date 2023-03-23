@@ -9,6 +9,7 @@ ms.date: 11/22/2017
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+ms.custom: UpdateFrequency3
 ---
 
 # VMM server collate mapping

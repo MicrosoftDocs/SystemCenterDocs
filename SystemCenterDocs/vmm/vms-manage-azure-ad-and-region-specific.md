@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 monikerRange: '>= sc-vmm-1801 <= sc-vmm-1807'
+ms.custom: UpdateFrequency2
 ---
 
 # Manage VMs using Azure AD-based authentication & authorization and region-specific Azure subscriptions

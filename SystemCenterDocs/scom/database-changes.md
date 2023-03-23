@@ -10,6 +10,7 @@ ms.prod: system-center
 monikerRange: '>=sc-om-2019'
 ms.technology: operations-manager
 ms.topic: article
+ms.custom: UpdateFrequency2
 ---
 
 # Change databases
