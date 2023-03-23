@@ -1,7 +1,7 @@
 ---
 title: Connect-Disconnect Dial-up
 description: This article describes the Connect/Disconnect Dial-up activity.
-ms.custom: ""
+ms.custom: UpdateFrequency2
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: d1841bbc-7c36-4f3c-983f-db7c74a56cd5
 caps.latest.revision: 5
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Connect/Disconnect Dial-up
 

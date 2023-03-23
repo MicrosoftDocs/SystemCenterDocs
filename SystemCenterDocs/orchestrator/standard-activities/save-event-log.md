@@ -1,7 +1,7 @@
 ---
 title: Save Event Log
 description: This article describes the Save Event Log activity that is used to save entries from an event log.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: c3409b18-a952-48fd-8fbd-7d9d4ef44173
 caps.latest.revision: 16
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Save Event Log
 

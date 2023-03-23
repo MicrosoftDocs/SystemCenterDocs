@@ -1,7 +1,7 @@
 ---
 title: Map Published Data
 description: This article describes the functionality of Map Published Data activity.
-ms.custom: ""
+ms.custom: UpdateFrequency2
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: d9ddc895-bc37-4139-bf6d-87f21e064ade
 caps.latest.revision: 15
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Map Published Data
 

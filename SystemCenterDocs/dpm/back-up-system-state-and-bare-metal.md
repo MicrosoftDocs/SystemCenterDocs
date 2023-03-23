@@ -10,7 +10,7 @@ title: Back up system state and bare metal
 ms.technology: data-protection-manager
 ms.assetid: 7035095c-6d30-40aa-ae73-4159e305d7ea
 ms.author: jsuri
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency2
 ---
 
 # Back up system state and bare metal
