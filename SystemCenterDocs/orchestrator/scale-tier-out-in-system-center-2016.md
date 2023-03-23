@@ -1,7 +1,7 @@
 ---
 title: Scale Tier Out in System Center 2016
 description: The Scale Tier Out activity is used in a runbook to add one virtual machine instance to a specified service tier.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

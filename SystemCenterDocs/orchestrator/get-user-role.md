@@ -1,7 +1,7 @@
 ---
 title: Get User Role
 description: Returns data on all the user roles within the VMM server
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

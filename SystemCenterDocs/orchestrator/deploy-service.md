@@ -8,7 +8,7 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 manager: mkluck
-ms.custom: intro-deployment, UpdateFrequency2
+ms.custom: intro-deployment, UpdateFrequency3
 ---
 # Deploy Service activity
 

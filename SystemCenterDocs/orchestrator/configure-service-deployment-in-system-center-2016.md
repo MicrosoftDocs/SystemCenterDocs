@@ -1,7 +1,7 @@
 ---
 title: Configure Service Deployment in System Center 2016
 description: The Configure Service Deployment activity is used in a runbook to configure a VMM service for deployment.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

@@ -1,7 +1,7 @@
 ---
 title: Get Service in System Center 2016
 description: The Get Service activity is used in a runbook to return data on all of the services within the VMM management server. The filters are also listed.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

@@ -1,7 +1,7 @@
 ---
 title: Suspend VM
 description: The Suspend VM activity is used to suspend a virtual machine that is currently running.
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
