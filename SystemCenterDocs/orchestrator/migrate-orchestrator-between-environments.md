@@ -7,8 +7,8 @@ ms.topic: article
 author: jyothisuri
 ms.author: jsuri
 ms.date: 12/23/2020
-manager: evansma
-ms.custom: intro-migration
+manager: mkluck
+ms.custom: intro-migration, UpdateFrequency3
 ---
 
 # Migrate Orchestrator between environments

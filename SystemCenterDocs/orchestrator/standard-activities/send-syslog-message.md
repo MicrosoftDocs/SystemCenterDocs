@@ -1,7 +1,7 @@
 ---
 title: Send Syslog Message 
 description: This article provides information about the Send Syslog Message activity
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: e4531b9d-4434-4ad9-8f16-5497eb3e86e4
 caps.latest.revision: 12
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Send Syslog Message
 

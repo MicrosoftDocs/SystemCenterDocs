@@ -1,6 +1,6 @@
 ---
 description: You can use data deduplication in DPM storage to find and remove duplicated data in a volume to ensure that data remains correct and complete.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
