@@ -1,7 +1,7 @@
 ---
 title: Add Management Certificate
 description: The Add Management Certificate activity is used in a runbook to add a certificate to the list of management certificates.
-ms.custom: na
+ms.custom: UpdateFrequency
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: e63b5b72-d93e-44af-b021-5854baa4da27
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Add Management Certificate
@@ -46,6 +46,6 @@ There are no optional properties for this runbook activity.
 | Certificate File Path | The path to the management certificate file.   | String   |
 | Certificate File Type | The type of the management certificate file.   | String   |
 
-## See Also
+## Next steps
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

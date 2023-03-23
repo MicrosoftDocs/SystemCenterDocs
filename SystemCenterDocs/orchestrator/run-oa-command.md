@@ -1,7 +1,7 @@
 ---
 title: Run OA Command
 description: The Run OA Command activity is used in a runbook to run a command that can be used to perform management activities such as Add User, Enable User, and Show Server Status.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

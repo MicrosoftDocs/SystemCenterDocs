@@ -1,7 +1,7 @@
 ---
 title: FTP Integration Pack Activities
 description: The following configuration instructions apply to all activities in this integration pack. It also lists Activity properties.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: a5d82cba-a523-41e8-b7f6-165662bc5d8a
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # FTP Integration Pack Activities

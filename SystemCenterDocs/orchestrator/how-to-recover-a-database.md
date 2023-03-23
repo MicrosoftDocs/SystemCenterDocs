@@ -7,7 +7,7 @@ ms.technology: orchestrator
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Recover a database

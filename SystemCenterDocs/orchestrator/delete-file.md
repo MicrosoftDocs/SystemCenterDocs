@@ -1,7 +1,7 @@
 ---
 title: Delete File
 description: The Delete File activity is used in a runbook to delete a file on an FTP server.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

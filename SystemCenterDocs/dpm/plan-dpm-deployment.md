@@ -1,6 +1,6 @@
 ---
 description: Information to help you plan for and prepare to deploy DPM in your environment.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
