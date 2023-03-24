@@ -6,7 +6,7 @@ author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
 ms.date: 03/17/2023
-ms.custom: na
+ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article

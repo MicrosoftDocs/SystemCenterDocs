@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 04/25/2022
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency.5
 ms.prod: system-center
 monikerRange: ' sc-om-1801 || sc-om-2019 || sc-om-2022'
 ms.technology: operations-manager
