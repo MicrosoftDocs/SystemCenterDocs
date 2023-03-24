@@ -1,7 +1,7 @@
 ---
 title: Get Internet Application Status
 description: This article describes the functionality of Get Internet Application Status activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 83143603-d47b-4162-8932-f91eb9cac53b
 caps.latest.revision: 18
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Get Internet Application Status
 

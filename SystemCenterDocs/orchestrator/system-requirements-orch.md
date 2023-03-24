@@ -9,7 +9,7 @@ ms.date: 01/12/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency.5
 ---
 
 # System requirements for System Center Orchestrator

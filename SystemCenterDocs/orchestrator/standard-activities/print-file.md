@@ -1,7 +1,7 @@
 ---
 title: Print File
 description: This article describes the functionality of Print File Activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 1bec7174-4cf0-464b-aeb3-c179d52fb1dd
 caps.latest.revision: 13
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Print File
 

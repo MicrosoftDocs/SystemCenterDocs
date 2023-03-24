@@ -1,7 +1,7 @@
 ---
 title: Remove User Role
 description: Deletes a user role from the VMM server.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

@@ -10,6 +10,8 @@ title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
 ms.author: jsuri
+monikerRange: '>sc-dpm-2016'
+ms.custom: UpdateFrequency.5
 ---
 
 # Use DPM to back up and restore VMware virtual machines

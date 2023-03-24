@@ -1,7 +1,7 @@
 ---
 title: Search and Replace Text
 description: This article describes the functionality of Search and Replace Text Activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""

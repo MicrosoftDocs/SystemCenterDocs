@@ -1,7 +1,7 @@
 ---
 title: Add Collection Rule Activity
 description: This article provides instructions for configuring the Add Collection Rule activity for Configuration Manager Integration Pack.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 03/08/2017
 ms.prod: system-center
 ms.reviewer: na

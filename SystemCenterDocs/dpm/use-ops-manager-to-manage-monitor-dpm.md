@@ -1,6 +1,6 @@
 ---
 description: Describes how to manage and monitor DPM servers with Operations Manager.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
@@ -10,6 +10,7 @@ title: Manage and monitor DPM servers with System Center Operations Manager
 ms.technology: data-protection-manager
 ms.assetid: 97fd6656-af44-4e5c-bef8-dc57643b0181
 ms.author: jsuri
+ms.custom: UpdateFrequency2
 ---
 
 # Manage and monitor DPM servers with Operations Manager

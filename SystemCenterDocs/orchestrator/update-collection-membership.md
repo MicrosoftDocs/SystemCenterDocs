@@ -1,7 +1,7 @@
 ---
 title: Update Collection Membership activity
 description: Describes the configurable properties for the Update Collection Membership activity for Configuration Manager Integration Pack.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

@@ -1,7 +1,7 @@
 ---
 title: Restart System
 description: This article describes the functionality of Restart System activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: bc59b069-7bf0-4417-8f8b-d6fac34c8691
 caps.latest.revision: 15
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Restart System
 

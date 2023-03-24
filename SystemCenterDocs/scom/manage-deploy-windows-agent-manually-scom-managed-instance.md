@@ -5,8 +5,8 @@ description: This article describes how to manually install the Azure Monitor SC
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
-ms.date: 02/15/2023
-ms.custom: na
+ms.date: 02/13/2023
+ms.custom: UpdateFrequency.5
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article

@@ -5,7 +5,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 07/24/2017
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -114,8 +114,8 @@ SNMP trap rules aren't supported for SNMP v3 devices.
 > [!NOTE]  
 > Windows computers running SNMP are filtered out of discovery results if:  
 >   
-> -   The device type is "Host" and the vendor is "Microsoft"  
-> -   The sysDescription field contains "Microsoft"  
+> -   The device type is **Host** and the vendor is **Microsoft**  
+> -   The sysDescription field contains **Microsoft**  
 > -   The sysOid starts with .1.3.6.1.4.1.311.1.1.3.1  
 > -   The sysOid contains 1.3.6.1.4.1.199.1.1.3.11  
 

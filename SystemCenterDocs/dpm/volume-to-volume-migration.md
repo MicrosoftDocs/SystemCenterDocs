@@ -10,7 +10,7 @@ ms.technology: data-protection-manager
 ms.assetid: 6595b781-554d-4807-b035-d0eccd35deb3
 ms.author: jsuri
 monikerRange: sc-dpm-2019||sc-dpm-2016
-ms.custom: intro-migration
+ms.custom: intro-migration, UpdateFrequency2
 ---
 
 # Migrate data sources to new volumes

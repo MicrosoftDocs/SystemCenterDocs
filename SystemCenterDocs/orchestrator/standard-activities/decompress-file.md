@@ -1,7 +1,7 @@
 ---
 title: Decompress File
 description: This article describes the Decompress File activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: ca5b4132-d8bd-4052-95f3-d7df76ae426a
 caps.latest.revision: 12
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Decompress File
 

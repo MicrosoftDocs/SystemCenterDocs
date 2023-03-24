@@ -1,7 +1,7 @@
 ---
 title: Update VM Instance
 description: The Update VM Instance activity updates the specified virtual machine.
-ms.custom: engagement-fy23
+ms.custom: engagement-fy23, UpdateFrequency3
 ms.date: 01/30/2023
 ms.prod: system-center
 ms.reviewer: na

@@ -1,6 +1,6 @@
 ---
 description: This article describes how to create DPM reports using SQL Server Reporting Services.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
@@ -10,6 +10,7 @@ title: Generate DPM reports
 ms.technology: data-protection-manager
 ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8
 ms.author: jsuri
+ms.custom: UpdateFrequency2
 ---
 
 # Generate DPM reports
