@@ -5,7 +5,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 01/16/2018
-ms.custom: UpdateFrequency2, intro-installation
+ms.custom: UpdateFrequency5, intro-installation
 ms.prod: system-center
 monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
