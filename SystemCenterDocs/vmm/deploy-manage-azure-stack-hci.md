@@ -271,6 +271,7 @@ For prerequisites and limitations for the conversion, see [Convert a VMware VM t
 5.	In the **Import Certificate** page, select **Import**.
 
    :::image type="Import certificates option" source="media/deploy-manage-azure-stack-hci/import-certificate-inline.png" alt-text="Screenshot showing Import certificates option." lightbox="media/deploy-manage-azure-stack-hci/import-certificate-expanded.png":::
+   
 6.	After the successful addition of the vCenter server, all the ESXi hosts under the vCenter are migrated to VMM. 
  
 ### Add Hosts
@@ -285,6 +286,7 @@ For prerequisites and limitations for the conversion, see [Convert a VMware VM t
     1. Under **Host Settings**, select the location where you want to add the VMs and select **Next**.
        :::image type="Host settings tab" source="media/deploy-manage-azure-stack-hci/host-settings.png" alt-text="Screenshot showing host settings tab.":::
     1. Under **Summary**, review the settings and select **Finish**. Along with the hosts, associated VMs will also get added. 
+    
        :::image type="Summary tab" source="media/deploy-manage-azure-stack-hci/summary-inline.png" alt-text="Screenshot showing summary tab." lightbox="media/deploy-manage-azure-stack-hci/summary-expanded.png":::
 
 ### Verify the status of ESXi host
