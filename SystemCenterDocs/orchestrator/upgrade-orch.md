@@ -4,11 +4,12 @@ title: Upgrade information for System Center Orchestrator
 description: This article details the upgrade information and procedures for Orchestrator
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 09/07/2022
 ms.topic: article
 ms.prod: system-center
 ms.technology: orchestrator
+ms.custom: UpdateFrequency.5
 ---
 
 # Upgrade System Center Orchestrator

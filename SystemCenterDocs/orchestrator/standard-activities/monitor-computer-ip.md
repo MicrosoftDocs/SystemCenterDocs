@@ -1,7 +1,7 @@
 ---
 title: Monitor Computer-IP
 description: This article describes the functionality of Monitor Computer/IP activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: eee8ce17-c286-41ac-9736-00e96fa78f71
 caps.latest.revision: 16
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Monitor Computer/IP
 

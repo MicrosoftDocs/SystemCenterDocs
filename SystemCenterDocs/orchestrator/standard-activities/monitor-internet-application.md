@@ -1,7 +1,7 @@
 ---
 title: Monitor Internet Application
 description: This article provides the details about Monitor Internet Application activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 2cebdeb0-09dd-47b7-ae13-0b478fc77a6d
 caps.latest.revision: 17
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Monitor Internet Application
 
