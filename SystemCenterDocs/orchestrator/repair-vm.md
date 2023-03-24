@@ -1,7 +1,7 @@
 ---
 title: Repair VM
 description: The Repair VM activity is used to run a retry, an undo, or a dismiss action on a virtual machine that is currently not functioning correctly or optimally.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
