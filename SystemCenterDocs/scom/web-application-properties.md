@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
 monikerRange: '>=sc-om-2019'
-ms.custom: UpdateFrequency2
+ms.custom: UpdateFrequency3
 ---
 
 # Web Application Properties
