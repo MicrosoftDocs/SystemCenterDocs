@@ -1,7 +1,7 @@
 ---
 title: Active Directory Integration Pack for System Center - Orchestrator
 description: The Integration Pack for Active Directory is an add-on for System Center - Orchestrator that enables you to automate common Active Directory management functions.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 03/10/2022
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: bdb60820-2684-40c5-ae5a-b653acb7736c
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Active Directory Integration Pack for System Center - Orchestrator

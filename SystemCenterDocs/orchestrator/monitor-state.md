@@ -1,7 +1,7 @@
 ---
 title: Monitor State
 description: The Monitor State activity monitors the state of an Operations Manager object that you specify.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

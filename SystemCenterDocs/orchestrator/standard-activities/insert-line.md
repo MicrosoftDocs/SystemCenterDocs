@@ -1,7 +1,7 @@
 ---
 title: Insert Line 
 description: This article describes inserts lines into a text file on a line number that you specify.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""

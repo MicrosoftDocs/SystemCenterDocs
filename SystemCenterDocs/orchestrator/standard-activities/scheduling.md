@@ -1,7 +1,7 @@
 ---
 title: Scheduling 
 description: This article describes the tasks you can accomplish when using each Scheduling activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 550286d3-16ec-469f-b392-f262faca579b
 caps.latest.revision: 5
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Scheduling
 

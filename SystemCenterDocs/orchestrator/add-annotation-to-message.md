@@ -1,7 +1,7 @@
 ---
 title: Add Annotation to Message
 description: The Add Annotation to Message activity is used in a runbook to add an annotation to an existing message.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

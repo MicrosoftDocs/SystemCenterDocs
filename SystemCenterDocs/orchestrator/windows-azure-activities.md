@@ -1,7 +1,7 @@
 ---
 title: Windows Azure Activities
 description: The following configuration instructions apply to all runbook activities that are available in the Windows Azure integration pack.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 69fc38af-c6bf-43bd-85c6-06875a321561
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 robots: noindex
 ---
 # Windows Azure Activities
@@ -244,6 +244,6 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 - [Walk Upgrade Domain](walk-upgrade-domain.md)
 
-## Other Resources
+## Next steps
 
 [Using Runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)

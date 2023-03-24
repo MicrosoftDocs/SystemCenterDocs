@@ -1,6 +1,6 @@
 ---
 description: Information to help you identify your storage needs and to prepare the storage to support a DPM 2016 deployment.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.author: jsuri
@@ -10,6 +10,7 @@ ms.date: 03/04/2022
 title: Prepare data storage
 ms.technology: data-protection-manager
 ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
+ms.custom: UpdateFrequency2
 ---
 
 # Prepare data storage
