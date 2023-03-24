@@ -1,7 +1,7 @@
 ---
 title: Update Alert Activity
 description: The Update Alert activity updated an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

@@ -1,7 +1,7 @@
 ---
 title: Modify Counter
 description: This article describes the functionality of Modify Counter activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: a2c706ca-506b-4d9d-96e6-f17ac48e8fc1
 caps.latest.revision: 11
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Modify Counter
 

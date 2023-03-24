@@ -1,7 +1,7 @@
 ---
 title: View and configure Runbook properties
 description: This article describes how you can View and configure Runbook properties.
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -12,7 +12,7 @@ ms.assetid: 3bd4992a-badc-4d36-9e64-52e2a167f9e8
 ms.author: jsuri
 ms.date: 10/12/2016
 author: jyothisuri
-manager: evansma
+manager: mkluck
 ---
 # Runbook properties
 

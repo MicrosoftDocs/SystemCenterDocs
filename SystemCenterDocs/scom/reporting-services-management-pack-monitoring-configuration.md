@@ -5,7 +5,7 @@ description: This article explains the monitoring configuration in Management Pa
 manager: evansma
 author: epomortseva
 ms.author: v-ekaterinap
-ms.date: 01/12/2023
+ms.date: 03/23/2023
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -123,7 +123,7 @@ Management Pack for SQL Server Reporting Services supports the monitoring of Rep
 
 Management Pack for SQL Server Reporting Services supports monitoring of failed subscriptions and scheduled refresh plans and produces corresponding alerts when any of these are found.
 
-To determine whether you've such failed subscriptions or plans, the monitor scans the **LastStatus** column in the **Subscriptions** table. For more information about the statuses, see [this article](/sql/reporting-services/subscriptions/monitor-reporting-services-subscriptions).
+To determine whether you have failed subscriptions or plans, the monitor scans the **LastStatus** column in the **Subscriptions** table. For more information about the statuses, see [this article](/sql/reporting-services/subscriptions/monitor-reporting-services-subscriptions).
 
 Report subscriptions and scheduled refresh plans may fail due to various reasons. For more information on what caused the failure, see **My subscriptions** on the reporting portal and **Scheduled refresh** on the Power BI reporting portal.
 
@@ -220,6 +220,24 @@ ForEach-Object {
 ```
 
 The same should be done for each Operations Manager or Monitoring Agent where extended logging must be enabled. You don't need to restart any service; changes are applied automatically.
+
+## Disabling Debugging
+
+To disable debugging, delete the keys added above or use the following PowerShell script to disable debugging in automated mode:
+
+```PowerShell
+$MPDebugKey = 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\SQL Management Packs\EnableEvtLogDebugOutput\SQL Server Reporting Services MP'
+
+if (-not(Test-Path $MPDebugKey)) {
+    Write-Error 'The Microsoft Operations Manager or Monitoring Agent is not installed.' -ErrorAction Stop
+}
+
+(Get-Item -Path $MPDebugKey).property |
+Out-GridView -OutputMode Multiple | # Remove this line if there is no need for GUI
+ForEach-Object {
+    Remove-ItemProperty -LiteralPath $MPDebugKey -Name $_ -Force | Out-Null
+}
+```
 
 > [!NOTE]
 > Currently, you can enable extended logging for all SQL MP modules only. Extended logging of separate modules isn't supported yet.
