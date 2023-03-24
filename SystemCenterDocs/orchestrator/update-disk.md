@@ -1,7 +1,7 @@
 ---
 title: Update Disk
 description: The Update Disk activity is used to add more disk space and to change some of the properties of an existing disk.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

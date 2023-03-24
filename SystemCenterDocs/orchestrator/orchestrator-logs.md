@@ -1,7 +1,7 @@
 ---
 title: Orchestrator logs
 description: Provides information about common troubleshooting issues using log files.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
