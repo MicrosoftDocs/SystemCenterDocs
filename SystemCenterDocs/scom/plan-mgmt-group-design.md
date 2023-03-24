@@ -9,7 +9,7 @@ ms.date: 01/09/2023
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-ms.custom: engagement-fy23, UpdateFrequency3
+ms.custom: engagement-fy23, UpdateFrequency.5
 ---
 
 # Planning a Management Group Design

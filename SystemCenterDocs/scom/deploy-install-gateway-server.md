@@ -6,7 +6,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 03/06/2018
-ms.custom: na, intro-installation
+ms.custom: intro-installation
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

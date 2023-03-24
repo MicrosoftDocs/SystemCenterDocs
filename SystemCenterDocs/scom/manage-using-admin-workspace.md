@@ -5,7 +5,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 11/03/2017
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.assetid: 7b146b6d-d127-4b5c-9008-a4ed5b7ae760
 ms.technology: operations-manager
