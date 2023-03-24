@@ -4,9 +4,9 @@ title: How to Configure sudo Elevation and SSH Keys
 description: This article describes how to configure sudo and SSH keys for an unprivileged account and secure communication with Operations Manager 2016.
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ms.date: 04/23/2021
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article

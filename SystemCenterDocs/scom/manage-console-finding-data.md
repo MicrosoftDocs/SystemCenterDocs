@@ -5,7 +5,7 @@ author: jyothisuri
 ms.author: jsuri
 ms.manager: mkluck
 ms.date: 04/21/2022
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -38,11 +38,11 @@ The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter
 Changing the scope of the monitoring view enables you to view only those objects that meet a certain criteria, such as management servers. 
 
 ::: moniker range=">=sc-om-2016 <=sc-om-2019"
-For example, if you want to view only those computers in your environment that are running Windows server 2016, you can apply a scope that uses "Windows server 2016" as the criteria; no other computers are displayed.  
+For example, if you want to view only those computers in your environment that are running Windows server 2016, you can apply a scope that uses **Windows server 2016** as the criteria; no other computers are displayed.  
 ::: moniker-end
 
 ::: moniker range="sc-om-2022"
-For example, if you want to view only those computers in your environment that are running Windows server 2022, you can apply a scope that uses "Windows- server 2022" as the criteria; no other computers are displayed.  
+For example, if you want to view only those computers in your environment that are running Windows server 2022, you can apply a scope that uses **Windows server 2022** as the criteria; no other computers are displayed.  
 ::: moniker-end
 
 1.  In the Operations console, select **Monitoring** to display the objects in your monitoring environment.  
