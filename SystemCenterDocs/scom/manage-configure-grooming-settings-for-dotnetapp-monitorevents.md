@@ -5,7 +5,7 @@ author: jyothisuri
 ms.author: jsuri
 manager: mkluck
 ms.date: 06/06/2017
-ms.custom: na
+ms.custom: UpdateFrequency2
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
@@ -70,7 +70,7 @@ The Data Transfer rule lets you override time-based grooming for the Data Wareho
 > [!WARNING]  
 > Disabling this rule or overriding any other setting will have an adverse negative impact on the overall health, functionality, and consistency of the APM feature, the Data Warehouse, and Application Advisor reports, among other things.  
 
-The Operations Manager APM Data Transfer Rule is targeted to the Operations Manager APM Data Transfer Service object and has two overrides for those settings: for events and for counters. The setting for Events applies to events that hadn't been previously marked as "Deleted" or "By Design", for which grooming is controlled by Advisor, as described in the previous paragraph. If events have been left in status "New", then they will be retained in the Data Warehouse for as many days as this setting indicates.  
+The Operations Manager APM Data Transfer Rule is targeted to the Operations Manager APM Data Transfer Service object and has two overrides for those settings: for events and for counters. The setting for Events applies to events that hadn't been previously marked as **Deleted** or **By Design**, for which grooming is controlled by Advisor, as described in the previous paragraph. If events have been left in status **New**, then they will be retained in the Data Warehouse for as many days as this setting indicates.  
 
 The Performance Counter setting is intended for hourly performance aggregations, which potentially can take a lot of space. There's no configurable setting for daily performance aggregations. The default for this is 182. Typically, daily aggregations consume a lot less disk space.  
 

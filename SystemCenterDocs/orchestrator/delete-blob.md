@@ -1,7 +1,7 @@
 ---
 title: Delete Blob
 description: The Delete Blob marks the specified blob or snapshot for deletion.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

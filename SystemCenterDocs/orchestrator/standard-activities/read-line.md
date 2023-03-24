@@ -1,7 +1,7 @@
 ---
 title: Read Line
 description: This article describes the Read Line activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""

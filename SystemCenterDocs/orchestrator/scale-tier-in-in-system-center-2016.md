@@ -1,7 +1,7 @@
 ---
 title: Scale Tier In in System Center 2016
 description: This article describes how the Scale Tier In activity is used in a runbook to remove one virtual machine instance from a specified service tier.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na

@@ -1,7 +1,7 @@
 ---
 title: Disconnect Network Path
 description: This article describes the Disconnect Network Path activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: d697232c-7604-4e8e-bde9-1d8e55a1c220
 caps.latest.revision: 11
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Disconnect Network Path
 

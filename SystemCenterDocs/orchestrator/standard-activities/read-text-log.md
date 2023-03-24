@@ -1,7 +1,7 @@
 ---
 title: Read Text Log 
 description: This article describes the Read Text Log activity that will read lines in a structured text log file.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 4b1150e4-ef0c-4fba-a358-53db2106399e
 caps.latest.revision: 12
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Read Text Log
 

@@ -1,7 +1,7 @@
 ---
 title: Invoke Runbook
 description: This article describes the Invoke Runbook activity that launches a runbook that you have specified.
-ms.custom: ""
+ms.custom: UpdateFrequency2
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 78020370-0059-4788-9eed-2c1687aaf56e
 caps.latest.revision: 19
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Invoke Runbook
 

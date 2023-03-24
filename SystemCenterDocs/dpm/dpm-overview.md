@@ -10,7 +10,7 @@ title: Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: ee706e89-20fd-4883-82e3-75565a705751
 ms.author: jsuri
-ms.custom: UpdateFrequency2, engagement-fy23
+ms.custom: UpdateFrequency.5, engagement-fy23
 ---
 
 # Data Protection Manager

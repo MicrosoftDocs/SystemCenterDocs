@@ -5,8 +5,13 @@ description: This article describes how to migrate from Operations Manager on-pr
 author: v-pgaddala
 ms.author: v-pgaddala
 manager: jsuri
+<<<<<<< HEAD
 ms.date: 02/15/2023
 ms.custom: na
+=======
+ms.date: 02/13/2023
+ms.custom: UpdateFrequency.5
+>>>>>>> ed6e0d0e81fb9863880ed5724e461bdd92acf124
 ms.prod: system-center
 ms.technology: operations-manager-managed-instance
 ms.topic: article
