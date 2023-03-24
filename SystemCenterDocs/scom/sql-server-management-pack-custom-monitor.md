@@ -15,10 +15,16 @@ ms.technology: operations-manager
 
 If the set of default monitors in the management pack isn't enough to cover your workflows, you can create your monitor that targets the SQL Server DB Engine for Windows and Linux platforms.
 
-There are two types of monitors:
+During the monitor creation process, you will define how the monitor will determine the state after query results are received, it's called **conditions**.
+
+Conditions for the query-based monitors were realized with an approach similar to SQL Server policies. It means when the query result matches the condition, the monitor state will be healthy. If the result does not match the condition, the monitor becomes unhealthy and shows an alert.
+
+There are two types of unit monitors based on custom queries that can be created:
 
 - Two-state monitor
 - Three-state monitor
+
+An example of creating 3-states monitor conditions at the bottom of the page.
 
 ## Two-State Monitor
 
@@ -26,17 +32,17 @@ To create a new two-state custom query-based monitor, perform the following step
 
 1. In the System Center Operations Manager console, navigate to **Authoring | Management Pack Objects**, right-click **Monitors**, and select **Create a Monitor | Unit Monitor**.
 
-    ![Screenshot of creating a two-state unit monitor.](./media/sql-server-management-pack/creating-unit-monitor.png)
+    ![Screenshot of creating a two-state unit monitor.](./media/sql-server-management-pack/sql-creating-unit-monitor.png)
 
 2. At the **Monitor Type** step, select **Microsoft SQL Server | User-defined SQL Query Two State Monitor**.
 
 3. From the **Select destination management pack** dropdown list, select a management pack that you want to use or create a new one and select **Next**.
 
-    ![Screenshot of selecting a monitor type.](./media/sql-server-management-pack/selecting-monitor-type.png)
+    ![Screenshot of selecting a monitor type.](./media/sql-server-management-pack/sql-selecting-monitor-type.png)
 
 4. At the **General Properties** step, enter the monitor name and optional description, select **Monitor target** and **Parent monitor**, and select **Next**.
 
-    ![Screenshot of selecting a monitor name and description.](./media/sql-server-management-pack/custom-monitor-name-and-description.png)
+    ![Screenshot of selecting a monitor name and description.](./media/sql-server-management-pack/sql-custom-monitor-name-and-description.png)
 
     At this step, you can determine whether this **Monitor is enabled** by default or not.
 
@@ -44,7 +50,7 @@ To create a new two-state custom query-based monitor, perform the following step
 
     The default selected database is **master**.
 
-    ![Screenshot showing target database name and SQL query.](./media/sql-server-management-pack/unit-monitor-sql-query.png)
+    ![Screenshot showing target database name and SQL query.](./media/sql-server-management-pack/sql-unit-monitor-sql-query.png)
 
 6. At the **Conditions** step, add one or more **Conditions** to verify query results.
 
@@ -62,11 +68,18 @@ To create a new two-state custom query-based monitor, perform the following step
 
       Checks the scalar value in the specified cell of the result set. Only equal comparison is available at this moment. If you need complex logic, you may cover that with the query.
 
-    ![Screenshot showing test conditions.](./media/sql-server-management-pack/unit-monitor-conditions.png)
+    ![Screenshot showing test conditions.](./media/sql-server-management-pack/sql-unit-monitor-conditions.png)
 
     When you add a condition, you must specify **Friendly name** and **Configuration** required for a specific check to be performed.
 
-    ![Screenshot showing scalar values.](./media/sql-server-management-pack/editing-test-conditions.png)
+    ![Screenshot showing scalar values.](./media/sql-server-management-pack/sql-editing-test-conditions.png)
+
+    As an example in the screenshot above, the Scalar value can be used with two options:
+    - The first radio button **Is NULL** - True\False verification option. If False, the monitor is unhealthy, otherwise, the monitor becomes healthy.
+    - The second radio button **Equal to** - option to insert the specific value. If the result of the query matches the number value, the monitor becomes healthy, otherwise, the monitor becomes unhealthy.
+
+    >[!Warning]
+    > The 'Equal to' option is for single value only and can't parse a range of values.
 
     You can make more than one condition using the **OR** and **AND** operators. Any condition can be changed or deleted using the following buttons.
 
@@ -76,11 +89,11 @@ To create a new two-state custom query-based monitor, perform the following step
 
 7. At the **Schedule** page, configure a query execution schedule and synchronization time.
 
-    ![Screenshot of configuring schedule.](./media/sql-server-management-pack/unit-monitor-schedule.png)
+    ![Screenshot of configuring schedule.](./media/sql-server-management-pack/sql-unit-monitor-schedule.png)
 
 8. At the **Configure Health** step, select the health state that should be generated by the monitor and change the **Operational State** if needed.
 
-    ![Screenshot of configuring health.](./media/sql-server-management-pack/configure-health.png)  
+    ![Screenshot of configuring health.](./media/sql-server-management-pack/custom-monitor-configure-health.png)  
 
 9. At the **Configure Alerts** step, enable the generating alerts and edit the **Alert properties** if needed, and select **Create**.
 
@@ -88,16 +101,26 @@ To create a new two-state custom query-based monitor, perform the following step
 
     Use the `$Data/Context/Property[@Name=’Message’]$` placeholder to show the list of failed conditions in the alert description.
 
-   :::image type="content" source="./media/sql-server-management-pack/editing-alerts.png" alt-text="Screenshot of editing alerts." border="true"::: 
+    ![Screenshot of editing alerts.](./media/sql-server-management-pack/custom-monitor-editing-alerts.png)  
 
-> [!NOTE]
+> [!TIP]
 > By default, a custom query-based monitor will work for all SQL Server instances. If you only need to target a specific instance, override your monitor after creation.
 
 ## Three-State Monitor
 
 Creating a three-state custom query-based monitor is similar to a two-state monitor. The main difference is that you may specify the **Warning** and **Critical** conditions.
 
+> [!IMPORTANT]
+> A critical state has a higher priority than a warning in 3-state monitors, and it's verified first. If one or more critical conditions fail, the monitor will switch to the critical state, and warning conditions won't be verified.
+
 ![Screenshot showing a warning and a critical condition to three-states monitor.](./media/sql-server-management-pack/warning-and-critical-conditions.png)
 
-> [!IMPORTANT]
-> Critical conditions are verified first. If one or more critical conditions fail, the monitor will switch to the critical state, and warning conditions won't be verified.
+How to use the **Equal to condition** in the 3-state monitor:
+
+1. Use any desired value;
+2. Use conditions with unhealthy states that will be determined for the desired monitor's operational state;
+3. Keep in mind alerts priority - the Critical state verifies at first.
+
+**Example**: The expected value is a number in a range from 1 to 70, which is the healthy state of the monitor. The range 71-85 will be a warning state, and 86-100 will be a critical state. You need to create a condition for each value from the 71 to 85 range to specify the warning state and do the same for the 86-100 critical range.
+
+The check performs as follows: the result compares with all critical conditions, and if there are no matches, the result compares with warning conditions. Otherwise, the result will be in a healthy condition.

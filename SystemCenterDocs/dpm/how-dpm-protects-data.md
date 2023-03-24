@@ -10,6 +10,7 @@ ms.date: 11/01/2017
 title: How does DPM work?
 ms.technology: data-protection-manager
 ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
+ms.custom: UpdateFrequency.5
 ---
 # How does DPM work?
 

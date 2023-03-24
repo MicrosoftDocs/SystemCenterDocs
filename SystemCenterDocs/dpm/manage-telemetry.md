@@ -10,6 +10,7 @@ ms.topic:  article
 ms.prod:  system-center
 ms.technology: data-protection-manager
 MonikerRange: sc-dpm-2019||sc-dpm-2016||sc-dpm-2022
+ms.custom: UpdateFrequency2
 ---
 
 # Manage telemetry settings
