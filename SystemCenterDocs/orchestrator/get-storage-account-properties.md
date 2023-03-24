@@ -1,7 +1,7 @@
 ---
 title: Get Storage Account Properties
 description: The Get Storage Account Properties activity returns system properties for the specified storage account.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

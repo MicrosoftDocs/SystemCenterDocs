@@ -1,6 +1,6 @@
 ---
 description: This article describes what DPM protection groups consist of and why you should use them.
-manager: carmonm
+manager: mkluck
 ms.topic: article
 author: jyothisuri
 ms.prod: system-center
@@ -9,7 +9,7 @@ title: Deploy protection groups
 ms.technology: data-protection-manager
 ms.assetid: 2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
 ms.author: jsuri
-ms.custom: intro-deployment
+ms.custom: intro-deployment, UpdateFrequency2
 ---
 
 # Deploy protection groups

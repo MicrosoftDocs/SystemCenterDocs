@@ -1,7 +1,7 @@
 ---
 title: Check Schedule
 description: This article describes the check schedule activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: 3f949c61-c495-4639-aa71-d7ad0b197b74
 caps.latest.revision: 11
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Check Schedule
 

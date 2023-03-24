@@ -1,7 +1,7 @@
 ---
 title: Reboot Role Instance
 description: The Reboot Role Instance activity requests a reboot of a role instance that is running in a deployment.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
