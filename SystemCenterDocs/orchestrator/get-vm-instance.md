@@ -1,7 +1,7 @@
 ---
 title: Get VM instance
 description: The Get VM Instance activity retrieves the specified virtual machine.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na

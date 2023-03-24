@@ -1,7 +1,7 @@
 ---
 title: Get Counter Value
 description: This article describes the functionality of Get Counter Value activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: fe935ce1-871b-451b-8ce7-e2d3084463d6
 caps.latest.revision: 13
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Get Counter Value
 

@@ -1,7 +1,7 @@
 ---
 title: Update List Item
 description: The Update List Item activity is used in a runbook to update an item in a Microsoft SharePoint list.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na

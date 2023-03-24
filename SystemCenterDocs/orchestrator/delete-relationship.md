@@ -1,7 +1,7 @@
 ---
 title: Delete Relationship
 description: The Delete Relationship activity is used to remove an existing relationship between two entities.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 12/02/2016
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: bc24d516-db7f-4bb5-b435-34dd689626fc
 author: jyothisuri
 ms.author: jsuri
-manager: carmonm
+manager: mkluck
 robots: noindex
 ---
 # Delete Relationship

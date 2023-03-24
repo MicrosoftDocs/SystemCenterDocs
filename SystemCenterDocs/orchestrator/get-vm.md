@@ -1,7 +1,7 @@
 ---
 title: Get VM
 description: The Get VM activity is used to retrieve an existing VM based on the filters you specify.
-ms.custom: na
+ms.custom: UpdateFrequency3
 ms.date: 4/25/2017
 ms.prod: system-center
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: e7f27148-70cc-498d-b134-8b7e8c4a4ca9
 author: jyothisuri
 ms.author: jsuri
-manager: evansma
+manager: mkluck
 ---
 
 # Get VM

@@ -1,7 +1,7 @@
 ---
 title: Get Disk Space Status
 description: This article describes the Get Disk Space Status activity.
-ms.custom: ""
+ms.custom: UpdateFrequency3
 ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
@@ -17,7 +17,7 @@ ms.assetid: e092f55e-b9bd-4e78-8609-1bb5676b7dce
 caps.latest.revision: 13
 author: "jyothisuri"
 ms.author: "jsuri"
-manager: "evansma"
+manager: mkluck
 ---
 # Get Disk Space Status
 
