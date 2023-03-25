@@ -57,7 +57,7 @@ To configure Linux log file monitoring, do the following:
 
    Use the following commands:
 
-   ```bash
+   ```shell
    # Download latest OMS Agent from GitHub
    wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh
    
@@ -69,7 +69,7 @@ To configure Linux log file monitoring, do the following:
 
  4. Create the folders in the following paths with the below commands:
 
-      ```bash
+      ```shell
       # Create SCOM folder
       mkdir /etc/opt/microsoft/omsagent/scom
       
@@ -96,7 +96,7 @@ To configure Linux log file monitoring, do the following:
       ```
       
  5. Set ownership of each of the above to omsagent:omiusers
-      ```bash
+      ```shell
       # Change owner of scom folder
       chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom
       
@@ -148,7 +148,7 @@ You have two options when enabling the OMED service manually.
 ## Generate new client certificate for Fluentd
 
 1. Generate the certificate and key to the ***omsagent*** folder: 
-   ```bash
+   ```shell
    # Generate Certificate to omsagent Folder
    /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
    ```
@@ -157,7 +157,7 @@ You have two options when enabling the OMED service manually.
    > New certificate must be signed by the Management Server. To do this, copy to management server, sign the certificate using `scxcertconfig -sign`, and copy it back to the linux agent
 
 2. Rename the generated certificate on the Linux side:
-   ```bash
+   ```shell
    # Rename omi-host-server.domain.pem to scom-cert.pem
    mv omi-host-server.domain.pem scom-cert.pem
    
@@ -165,7 +165,7 @@ You have two options when enabling the OMED service manually.
    mv omikey.pem scom-key.pem
    ```
 3. Change ownership of the certificate file:
-   ```bash
+   ```shell
    # Change owner of the scom-cert file
    chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem
    
@@ -181,12 +181,12 @@ The master Fluentd configuration file **omsagent.conf** is located in `/etc/opt/
 
 For example, if you created **logmonitoring.conf** in `/etc/opt/microsoft/omsagent/scom/conf/omsagent.d`, you would add one of the following lines to the **omsagent.d** file:
 
-```bash
+```
 # Include all configuration files
 @include omsagent.d/*.conf
 ```
 or
-```bash
+```
 # include single configuration file
 @include omsagent.d/logmonitoring.conf
 ```
@@ -380,14 +380,14 @@ The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/s
 ## Restart omsagent
 
 You can run the following command to restart the omsagent:
-```bash
+```shell
 /opt/microsoft/omsagent/bin/service_control restart
 ```
 
 ## Check status of SCOM Workspace
 
 Run the following command to check the SCOM Workspace on the OMSAgent:
-```bash
+```shell
 sh /opt/microsoft/omsagent/bin/omsadmin.sh -l
 ```
 
