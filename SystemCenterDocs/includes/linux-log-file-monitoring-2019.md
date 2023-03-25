@@ -70,6 +70,9 @@ To configure Linux log file monitoring, do the following:
  4. Create the folders in the following paths with the below commands:
 
       ```bash
+      # Create SCOM folder
+      mkdir /etc/opt/microsoft/omsagent/scom
+      
       # Create omsagent.d folder
       mkdir /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
       
@@ -94,6 +97,9 @@ To configure Linux log file monitoring, do the following:
       
  5. Set ownership of each of the above to omsagent:omiusers
       ```bash
+      # Change owner of scom folder
+      chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom
+      
       # Change owner of log folder
       chown omsagent:omiusers /var/opt/microsoft/omsagent/scom/log
       
@@ -173,7 +179,7 @@ You configure Fluentd operation using a configuration file. For log monitoring, 
 
 The master Fluentd configuration file **omsagent.conf** is located in `/etc/opt/microsoft/omsagent/scom/conf/`. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
 
-For example, if you created **logmonitoring.conf** in `/etc/opt/microsoft/omsagent/scom/conf/omsagent.d`, you would add one of the following lines to the `omsagent.d` file:
+For example, if you created **logmonitoring.conf** in `/etc/opt/microsoft/omsagent/scom/conf/omsagent.d`, you would add one of the following lines to the **omsagent.d** file:
 
 ```bash
 # Include all configuration files
@@ -325,7 +331,7 @@ This example processes events with tags matching **scom.log.** \*\* and  **scom.
     log_level trace
     num_threads 5
 
-    # Size of the buffer chunk. If the top chunk exceeds this limit or the time limit flush\_interval, a new empty chunk is pushed to the top of the
+    # Size of the buffer chunk. If the top chunk exceeds this limit or the time limit flush_interval, a new empty chunk is pushed to the top of the
     queue and bottom chunk is written out.
     buffer_chunk_limit 5m
     flush_interval 15s
@@ -334,21 +340,21 @@ This example processes events with tags matching **scom.log.** \*\* and  **scom.
     buffer_type file
 
     # Specifies the file path for buffer. Fluentd must have write access to this directory.
-    buffer_path /var/opt/microsoft/omsagent/scom/state/out\_scom\_common\*.buffer
+    buffer_path /var/opt/microsoft/omsagent/scom/state/out_scom_common*.buffer
 
     # If queue length exceeds the specified limit, events are rejected.
     buffer_queue_limit 10
 
-    # Control the buffer behavior when the queue becomes full: exception, block, drop\_oldest\_chunk
+    # Control the buffer behavior when the queue becomes full: exception, block, drop_oldest_chunk
     buffer_queue_full_action drop_oldest_chunk
 
     # Number of times Fluentd will attempt to write the chunk if it fails.
     retry_limit 10
 
-    # If the bottom chunk fails to be written out, it will remain in the queue and Fluentd will retry after waiting retry\_wait seconds
+    # If the bottom chunk fails to be written out, it will remain in the queue and Fluentd will retry after waiting retry_wait seconds
     retry_wait 30s
 
-    # The retry wait time doubles each time until max\_retry\_wait.
+    # The retry wait time doubles each time until max_retry_wait.
     max_retry_wait 9m
 
 </match>
@@ -367,8 +373,6 @@ enable_server_auth false
 </match>
 ```
 
-
-
 ## Copy configuration file to agent
 
 The Fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/scom/conf/omsagent.d** on all Linux computers you want to monitor. You must also add an @include directive in the master configuration file as described above.
@@ -380,8 +384,19 @@ You can run the following command to restart the omsagent:
 /opt/microsoft/omsagent/bin/service_control restart
 ```
 
+## Check status of SCOM Workspace
+
+Run the following command to check the SCOM Workspace on the OMSAgent:
+```bash
+sh /opt/microsoft/omsagent/bin/omsadmin.sh -l
+```
+
 > [!NOTE]
 > On the Management Server running the OMED service, ensure the firewall on port 8886 is open and that the intermediate certificate authorities cert store only contains intermediate certificate authorities.
+
+## Event Log for System Center Operations Manager External DataSource Service
+
+The **System Center OMED Service** event log will be created only when there is a event sent successfully to the System Center Operations Manager External DataSource Service (OMED) Service.
 
 ## Create rules and monitors
 
