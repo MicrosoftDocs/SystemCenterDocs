@@ -2,7 +2,6 @@
 title: Woodgrove Bank customization sample scenario
 description: Provides an overview and the steps needed to complete the Woodgrove Bank customization sample scenario for the Service Manager Authoring Tool.
 manager: mkluck
-ms.custom: na
 ms.prod: system-center
 author: jyothisuri
 ms.author: jsuri
@@ -305,4 +304,4 @@ In this final step of the Woodgrove Bank customization scenario for System Cente
 
 ## Next steps
 
-- [Customize a column title in a view for the authoring views sample scenario](customize-column-title.md).
+[Customize a column title in a view for the authoring views sample scenario](customize-column-title.md).
