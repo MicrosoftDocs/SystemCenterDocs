@@ -103,7 +103,7 @@ To configure Linux log file monitoring, do the following:
       mkdir -p /home/omsagent/fluent-logging
       ```
       
- 5. Set ownership on each of the above folders to **omsagent:omiusers**:
+ 5. Set ownership on each of the above folders to `omsagent:omiusers`:
       ```bash
       # Change owner of scom folder
       chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom
@@ -134,7 +134,7 @@ To configure Linux log file monitoring, do the following:
       touch /etc/opt/microsoft/omsagent/scom/conf/omsagent.conf
       ```
       
- 7. Set ownership on each of the above files to **omsagent:omiusers**:
+ 7. Set ownership on each of the above files to `omsagent:omiusers`:
       ```bash
       # Change owner of omsadmin.conf file
       chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/conf/omsadmin.conf
