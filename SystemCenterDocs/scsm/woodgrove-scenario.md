@@ -42,7 +42,7 @@ To provide real-world context to the step-by-step procedures for the Service Man
  Ken saves the custom objects to the Automated Activity: Add Computer to AD Group management pack so that they can transfer these objects between the Service Manager console and the Service Manager Authoring Tool.  
 
 ## Use the customized process  
- Eventually, after Ken imports the custom management pack into Service Manager and completes the creation of all the necessary custom objects, they can use the new process for compliance change requests. They create a new compliance change request to add ADComputer1 computer to the GP_AUTHAPPS AD DS group. They can then monitor the process to confirm that the new computer is successfully added to the group.  
+ Eventually, after Ken imports the custom management pack into Service Manager and completes the creation of all the necessary custom objects. They can use the new process for compliance change requests. They create a new compliance change request to add ADComputer1 computer to the GP_AUTHAPPS AD DS group. They can then monitor the process to confirm that the new computer is successfully added to the group.  
 
 ## Prerequisites for the customization scenario
 
@@ -86,7 +86,7 @@ The primary goal of the Woodgrove Bank customization scenario is to create a new
 
 The second step in the Woodgrove Bank customization scenario is to customize the default Change Request form, which is Microsoft.EnterpriseManagement.ServiceManager.ChangeManagement.Forms.ChangeRequestForm. Ken wants to rearrange some fields on the form and then add the Woodgrove Bank logo. Before Ken starts, they view the fields in the form to see how the values change according to the properties that are selected.  
 
- Next, Ken opens the **ServiceManager.ChangeManagement.Library.mp** management pack file in the Service Manager Authoring Tool, he customizes the form, and then saves the management pack file. Later, they must import the customized management pack into the Service Manager console.  
+ Next, Ken opens the **ServiceManager.ChangeManagement.Library.mp** management pack file in the Service Manager Authoring Tool, they customize the form, and then save the management pack file. Later, they must import the customized management pack into the Service Manager console.  
 
 ### View the System.AddComputerForm form  
 
