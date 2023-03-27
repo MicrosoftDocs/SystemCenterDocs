@@ -131,7 +131,7 @@ To configure Linux log file monitoring, do the following:
 3. From **Tasks**, select **Health Service Tasks**>**Enable System Center OMED Server**.
 
 ### Enable the OMED service manually
-You have two options when enabling the OMED service manually.
+You have two options when enabling the OMED service manually on the management server.
 
 1. #### Set manually with services.msc
    1. Select **Start** in the **Start Search** box, enter **services.msc**, and then press **Enter**.
@@ -145,8 +145,22 @@ You have two options when enabling the OMED service manually.
    Set-Service -Name OMED -StartupType Automatic -Status Running
    ```
 
-## Generate new client certificate for Fluentd
+## Assign a Client Certificate for OMSAgent
 
+You have two options when assigning the client certificate for OMSAgent.
+
+1. [Link to the signed certificate](#LinkOMIAgentCertificate) from the OMI Agent.
+2. [Generate a client certificate manually](#GenerateOMSAgentCertificate) for the OMS Agent.
+
+### <a name="LinkOMIAgentCertificate"></a>1. Link OMI Agent Certificate to OMS Agent
+
+Run the following command on your Linux machine to set the OMS Agent Client Certificate to the OMI Certificate (*Operations Manager Linux Agent Certificate*):
+
+```bash
+sudo ln -s /etc/opt/omi/ssl/omi.pem /etc/opt/microsoft/omsagent/scom/certs/omi.pem
+```
+
+### <a name="GenerateOMSAgentCertificate"></a>2. Generate a Client Certificate for OMSAgent
 1. Generate the certificate and key to the ***omsagent*** folder: 
    ```bash
    # Generate Certificate to omsagent Folder
